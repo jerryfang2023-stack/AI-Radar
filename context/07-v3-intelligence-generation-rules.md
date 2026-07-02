@@ -131,6 +131,10 @@ High-value market-structure events are valid Business Signals when they are conc
 
 Enterprise AI transformation / 企业AI化 is a monitoring and frontstage interpretation lens, not a fourth `signal_card` type. It can help identify consulting-relevant evidence about FDE-style implementation, workflow change, governance, procurement, pilots, production rollout, and customer engineering capacity.
 
+Enterprise AI / FDE lens version `EAI-V1.2.0-raw-card-ingestion-boundary` follows the same ingestion boundary as Business Signals: English source-title translation and source-backed fact extraction must be captured or marked in Raw, Signal Card, or FDE Lens Pool assets before frontstage rendering. Missing or weak FDE title/fact fields are repaired in the asset generator; they must not become generic frontstage suppression rules that hide otherwise valid formal Signal Cards.
+
+This does not weaken FDE precision. Public FDE items still require concrete implementation evidence, a detail target, and source-bounded `demand`, `services`, and `result` analysis. If the source does not disclose final implementation results, the FDE item must state that boundary instead of inventing ROI or production success.
+
 FDE / Applied AI / Technical Deployment role pages are organization-capability signals only. They must stay in Raw / Pool diagnostics or supporting context unless a separate original source proves a product / service action, financing event, customer deployment, procurement event, or production rollout that passes the six Signal Card gates below.
 
 Generic FDE / applied-AI implementation pages are not Card evidence by default. Job posts, role explainers, consulting/service landing pages, and "what is FDE" articles cannot be used to fill routed Pool or Card quantity gaps unless the same original source has a concrete dated customer deployment, product/service launch, financing event, procurement event, partnership, or production rollout.

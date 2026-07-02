@@ -6,6 +6,7 @@ const root = process.cwd();
 const siteDataFile = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
 const fdeRoot = path.join(root, "01-SiteV2", "content", "09-fde");
 const signalCardsRoot = path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards");
+const enterpriseAiLensVersion = "EAI-V1.2.0-raw-card-ingestion-boundary";
 
 const args = new Map(
   process.argv.slice(2).map((arg) => {
@@ -185,6 +186,7 @@ const dailyBody = [
   "---",
   "type: enterprise_ai_fde_daily",
   `date: ${date}`,
+  `enterprise_ai_lens_version: ${enterpriseAiLensVersion}`,
   "status: synced",
   `source: ${yamlQuote("01-SiteV2/site/data/v3-data-observation-desk.json")}`,
   `item_count: ${enriched.length}`,
@@ -206,6 +208,10 @@ const dailyBody = [
       `- source_title: ${item.sourceTitle}`,
       `- source_url: ${item.sourceUrl}`,
       `- source_ref: ${item.sourceRef || "n/a"}`,
+      `- title_translation_status: ${item.detail.titleTranslationStatus || item.detail.title_translation_status || "not_recorded"}`,
+      `- title_translation_method: ${item.detail.titleTranslationMethod || item.detail.title_translation_method || "not_recorded"}`,
+      `- fact_extraction_status: ${item.detail.factExtractionStatus || item.detail.fact_extraction_status || "not_recorded"}`,
+      `- fact_extraction_method: ${item.detail.factExtractionMethod || item.detail.fact_extraction_method || "not_recorded"}`,
       `- raw_archive: ${rawLink}${rawJsonLink ? ` / ${rawJsonLink}` : ""}`,
       `- signal_card: ${cardLink}`,
       `- stage: ${item.stageLabel || item.stage || ""}`,
@@ -226,6 +232,7 @@ const indexBody = [
   "---",
   "type: enterprise_ai_fde_index",
   "status: current",
+  `enterprise_ai_lens_version: ${enterpriseAiLensVersion}`,
   `updated_at: ${new Date().toISOString()}`,
   "---",
   "",

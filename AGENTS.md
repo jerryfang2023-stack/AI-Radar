@@ -42,13 +42,13 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: SITE-V3.4.2.
+- Current stage: SITE-V3.4.3.
 - Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/weekly-ai-business-change-radar.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V1.2.1-quality-boundary.
 - Current First-Line Viewpoints column version: FLV-V1.0.2-supervision-idempotency.
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
-- Current Enterprise AI / FDE lens version: EAI-V1.1.0-fde-lens-pool.
+- Current Enterprise AI / FDE lens version: EAI-V1.2.0-raw-card-ingestion-boundary.
 - Current Reports Center / Intelligence Map column version: IMAP-V2.0.0-report-center-opportunity-system.
 - Current Business Signals data contract: V3.3.6.3 business source artifact aggregation.
 - Current tag taxonomy version: TAG-V1.1.0-v34-layered-taxonomy.
@@ -57,7 +57,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Product Goal
 
-SITE-V3.4.2 is an AI business intelligence asset system.
+SITE-V3.4.3 is an AI business intelligence asset system.
 
 Daily production should preserve and display all qualified Core Pool AI business signals that can become Cards across:
 
@@ -162,6 +162,8 @@ Rules:
 
 - FDE is an independent implementation lens, not a fourth Business Signal Card type.
 - Every public FDE item must include source-bounded demand / service / result analysis.
+- FDE follows the Raw/Card ingestion boundary: English title translation and source-backed fact extraction are recorded in Raw, Signal Card, or FDE Lens Pool assets before frontstage rendering.
+- Missing FDE title/fact fields are repaired in the Raw/Card/FDE asset generator, not by blocking an already generated formal Business Signal Card in the generic frontstage selector.
 - If the source does not disclose implementation results, state that explicitly instead of inventing ROI or production outcome.
 - FDE detail openability and `content/09-fde` sync are owned by the FDE skill, not by generic Business Signals Card repair.
 

@@ -3,15 +3,15 @@ name: guanlan-enterprise-ai-fde-monitor
 description: Use when supervising, running, repairing, or improving the WaveSight AI Enterprise AI / FDE lane. Covers FDE source discovery, independent Lens Pool selection, demand/service/result analysis, frontstage detail rendering, Obsidian 09-fde sync, and FDE-specific quality gates. Do not use for formal Business Signal Top10 selection, First-Line Viewpoints, Community Intelligence, or retired daily-observation outputs.
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.1.0"
     lane: "Enterprise AI / FDE"
     status: "current lane owner"
     order: 15
     responsibility: "Own the Enterprise AI / FDE lens: source-backed implementation evidence, independent FDE Lens Pool, demand/service/result analysis, public details, and Obsidian 09-fde sync."
     upstream: "Business Signals Raw / Pool evidence, FDE source-only discovery, Hermes inbox"
     downstream: "enterprise-ai-fde.json, Business Signals enterpriseAiTransformation lens, content/09-fde Obsidian archive, FDE quality gates"
-    gates: "FDE precision, source-title translation, detail-openability, demand/service/result completeness, Obsidian sync"
-    recent_learning: "FDE is an independent implementation lens, not a fourth Signal Card type; every public FDE item must explain demand, concrete service, and implementation result or explicitly state that the result is undisclosed."
+    gates: "FDE precision, raw/card title-fact ingestion boundary, detail-openability, demand/service/result completeness, Obsidian sync"
+    recent_learning: "FDE is an independent implementation lens, not a fourth Signal Card type. In EAI-V1.2.0, title translation and fact extraction are Raw/Card/FDE asset responsibilities, while the public FDE gate keeps precision, detail openability, and source-bounded demand/service/result analysis."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -48,14 +48,15 @@ For regression prevention, read `evals/enterprise-ai-fde-monitor-evals.md`. When
 2. Check whether `01-SiteV2/site/data/enterprise-ai-fde.json` is same-date and whether `meta.fdePoolCount` and `meta.itemCount` are non-zero when source supply exists.
 3. Confirm the FDE Lens Pool uses source-backed implementation evidence: FDE, forward-deployed work, customer-embedded delivery, technical scoping, procurement, pilot, production deployment, workflow rollout, or vertical customer workflow.
 4. For every public FDE item, require:
-   - original/source title translated directly into Chinese;
+   - a Chinese-facing title produced or recorded during Raw / Card / FDE Lens Pool generation;
    - a detail target that opens from the frontstage;
    - implementation analysis with `demand`, `services`, and `result`;
    - source-backed text in `sourceBasis` or the linked detail item.
-5. If result evidence is not in the source, state that the final implementation result is not disclosed; do not invent ROI, adoption, deployment success, or production metrics.
-6. Sync valid public items into `01-SiteV2/content/09-fde/` after the frontstage data gate passes.
-7. Repair the smallest responsible layer: source discovery, pool precision, analysis generation, frontstage detail rendering, gate, or Obsidian sync.
-8. Rerun the smallest relevant validation before publication.
+5. Treat missing title translation or weak fact extraction as an upstream asset-generation repair. Do not use the generic frontstage selector or source-title translation registry as the place to hide an otherwise generated formal Signal Card.
+6. If result evidence is not in the source, state that the final implementation result is not disclosed; do not invent ROI, adoption, deployment success, or production metrics.
+7. Sync valid public items into `01-SiteV2/content/09-fde/` after the frontstage data gate passes.
+8. Repair the smallest responsible layer: source discovery, title/fact ingestion, pool precision, analysis generation, frontstage detail rendering, gate, or Obsidian sync.
+9. Rerun the smallest relevant validation before publication.
 
 ## Boundaries
 
@@ -63,7 +64,7 @@ For regression prevention, read `evals/enterprise-ai-fde-monitor-evals.md`. When
 - Do not weaken Business Signals `product_service`, `funding`, or `case` card gates to make FDE display richer.
 - Do not use broad governance, research, benchmark, consumer app, platform-only, or generic enterprise AI articles unless they contain concrete implementation evidence.
 - Do not turn title or source-domain fragments into a subject.
-- Do not rewrite titles into boss-facing summaries; translate the original/source title only.
+- Do not rewrite titles into boss-facing summaries. Title repair belongs to Raw / Card / FDE Lens Pool asset generation, not frontstage fallback copy.
 - Do not publish an FDE item with empty detail, missing demand/service/result analysis, or a broken `详情` action.
 
 ## Reporting

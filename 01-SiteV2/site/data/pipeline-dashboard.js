@@ -1,6 +1,6 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
-    "generatedAt": "2026-07-02T04:49:27.243Z",
+    "generatedAt": "2026-07-02T08:32:24.309Z",
     "dateRange": {
       "start": "2025-10-13",
       "end": "2026-07-02"
@@ -15,10 +15,12 @@ window.WaveSightPipelineDashboard = {
       "raw": 147,
       "pool": 95,
       "assets": {
-        "case": 4,
-        "product-service": 4
+        "case": 10,
+        "funding": 4,
+        "product-service": 2,
+        "opinion": 6
       },
-      "cards": 8,
+      "cards": 22,
       "rawChannels": {
         "aihot": 61,
         "keyword_search": 55,
@@ -59,26 +61,35 @@ window.WaveSightPipelineDashboard = {
       },
       "assetStatus": {
         "case": {
+          "published": 10
+        },
+        "funding": {
           "published": 4
         },
         "product-service": {
-          "published": 4
+          "published": 2
         }
       },
       "assetLevels": {
         "case": {
+          "frontstage": 10
+        },
+        "funding": {
           "frontstage": 4
         },
         "product-service": {
-          "frontstage": 4
+          "frontstage": 2
         }
       },
       "assetEvidenceGates": {
         "case": {
+          "core_evidence_passed": 10
+        },
+        "funding": {
           "core_evidence_passed": 4
         },
         "product-service": {
-          "core_evidence_passed": 4
+          "core_evidence_passed": 2
         }
       },
       "assetCopyGates": {}
@@ -92,9 +103,9 @@ window.WaveSightPipelineDashboard = {
       "assets": {
         "case": 2,
         "product-service": 3,
-        "opinion": 15
+        "opinion": 44
       },
-      "cards": 20,
+      "cards": 49,
       "rawChannels": {
         "aihot": 65,
         "keyword_search": 82,
@@ -533,10 +544,12 @@ window.WaveSightPipelineDashboard = {
     "raw": 147,
     "pool": 95,
     "assets": {
-      "case": 4,
-      "product-service": 4
+      "case": 10,
+      "funding": 4,
+      "product-service": 2,
+      "opinion": 6
     },
-    "cards": 8,
+    "cards": 22,
     "rawChannels": {
       "aihot": 61,
       "keyword_search": 55,
@@ -577,26 +590,35 @@ window.WaveSightPipelineDashboard = {
     },
     "assetStatus": {
       "case": {
+        "published": 10
+      },
+      "funding": {
         "published": 4
       },
       "product-service": {
-        "published": 4
+        "published": 2
       }
     },
     "assetLevels": {
       "case": {
+        "frontstage": 10
+      },
+      "funding": {
         "frontstage": 4
       },
       "product-service": {
-        "frontstage": 4
+        "frontstage": 2
       }
     },
     "assetEvidenceGates": {
       "case": {
+        "core_evidence_passed": 10
+      },
+      "funding": {
         "core_evidence_passed": 4
       },
       "product-service": {
-        "core_evidence_passed": 4
+        "core_evidence_passed": 2
       }
     },
     "assetCopyGates": {}
@@ -605,23 +627,23 @@ window.WaveSightPipelineDashboard = {
     "raw": 6160,
     "pool": 3001,
     "assets": {
-      "case": 340,
-      "product-service": 269,
-      "opinion": 927,
-      "funding": 79,
+      "case": 346,
+      "funding": 83,
+      "product-service": 267,
+      "opinion": 962,
       "trend": 6,
       "scene": 3,
       "change": 14
     }
   },
   "opinionTimelines": {
-    "timelineFiles": 438,
+    "timelineFiles": 452,
     "people": 46,
-    "detailBlocks": 927
+    "detailBlocks": 962
   },
   "latestRelation": null,
   "engineQuality": {
-    "updatedAt": "2026-07-02T04:49:27.300Z",
+    "updatedAt": "2026-07-02T08:32:24.376Z",
     "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
     "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
     "rows": [

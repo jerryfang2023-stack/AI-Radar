@@ -32,4 +32,4 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 ## FDE Boundary
 
 - Enterprise AI / FDE is an independent implementation lens, not a fourth Business Signal Card type. FDE may share Business Signals Raw capture and Pool evidence, but its frontstage uses the independent `enterpriseAiFdePool` / `enterprise-ai-fde.json` lens pool.
-- FDE lens-only evidence must not weaken formal product / service, funding, or case Card gates. FDE lens entries must still hide backend fields and use direct Chinese translations of source/original titles.
+- FDE lens-only evidence must not weaken formal product / service, funding, or case Card gates. FDE lens entries must hide backend fields, keep concrete implementation evidence, and get Chinese-facing title/fact fields from Raw / Card / FDE asset generation rather than generic frontstage blocking.

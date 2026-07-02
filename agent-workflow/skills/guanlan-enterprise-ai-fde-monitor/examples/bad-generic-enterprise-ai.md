@@ -16,7 +16,7 @@ This example fails because it is not concrete FDE / implementation evidence.
 
 Why it fails:
 
-- The title is rewritten as a generic summary instead of a source-title translation.
+- The title is rewritten as a generic summary instead of being produced or recorded as a Chinese-facing asset title during Raw / Card / FDE Lens Pool generation.
 - The demand is not tied to a real customer workflow.
 - The service does not describe technical scoping, embedded engineering, deployment, procurement, pilot, or rollout work.
 - The result invents editorial judgment instead of saying what the source disclosed.

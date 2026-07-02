@@ -18,7 +18,7 @@ This example passes because it keeps the FDE item source-bounded and implementat
 
 Why it passes:
 
-- The title is a direct source-title translation.
+- The title is Chinese-facing and was produced or recorded during Raw / Card / FDE Lens Pool asset generation.
 - The detail answers demand, service, and result.
 - The result does not invent ROI or production success.
 - The item can be lens-only without becoming a fourth Signal Card type.

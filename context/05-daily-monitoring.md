@@ -104,6 +104,8 @@ Monitoring must cover:
 
 Enterprise AI transformation / 企业AI化 is an added monitoring lens for FDE-style implementation signals. It should capture evidence around discovery, technical scoping, system design, build, governance, procurement, pilots, production rollout, demonstrated value, and customer engineering capacity.
 
+Enterprise AI / FDE follows the Raw/Card ingestion boundary. English title translation and source-backed fact extraction should be recorded in Raw records, Signal Cards, or FDE Lens Pool assets before frontstage rendering. Missing title/fact fields are asset-generation repair items, not generic frontstage blockers.
+
 This lens does not create a fourth Signal Card type. FDE / Applied AI / Technical Deployment role pages may indicate organization capability or delivery model, but they cannot become formal business-signal facts unless separately supported by source-backed product / service, funding, customer deployment, procurement, or production rollout evidence.
 
 Generic FDE / applied-AI implementation pages are backend context by default. Job posts, role explainers, consulting/service landing pages, and "what is FDE" articles may remain in Raw / Pool diagnostics, but they must not satisfy routed Pool or Card quantity gates unless the same original source contains a concrete dated customer deployment, product/service launch, funding, procurement, partnership, or production rollout.

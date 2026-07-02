@@ -15,11 +15,11 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 
 ## Current Version Context
 
-- Current site version: `SITE-V3.4.1`.
+- Current site version: `SITE-V3.4.3`.
 - Current Hermes supervision contract: `V3.4.0-daily-problem-watchdog`.
 - Current Business Signals data contract: `V3.3.6.3-business-source-artifact-aggregation`.
 - Version ledger: `context/version-ledger.md`.
-- SITE-V3.4.1 keeps First-Line Viewpoints person / original-date Obsidian persistence with dry-run idempotency, Business Signals unified Signal Cards, source-artifact aggregation, peer Raw artifact channels, Raw / Pool / Card release override for provider-caused Raw shortfall, the Enterprise AI / FDE Lens Pool, Community Intelligence local-first collection with Waiting-vs-Problem publication separation, the Reports Center route, source-backed opportunity maps, and relation paths. Hermes now observes and records problems only; it does not run early handoff, bounded recovery, or automatic full-chain reruns.
+- SITE-V3.4.3 keeps First-Line Viewpoints person / original-date Obsidian persistence with dry-run idempotency, Business Signals unified Signal Cards, source-artifact aggregation, peer Raw artifact channels, Raw / Pool / Card release override for provider-caused Raw shortfall, the Enterprise AI / FDE Lens Pool at `EAI-V1.2.0-raw-card-ingestion-boundary`, Community Intelligence local-first collection with Waiting-vs-Problem publication separation, the Reports Center route, source-backed opportunity maps, and relation paths. Hermes now observes and records problems only; it does not run early handoff, bounded recovery, or automatic full-chain reruns.
 - Hermes must treat old month timeline files such as `YYYY-MM.md` as legacy / cleanup candidates, not as proof that current sync is healthy.
 - Do not judge Codex work by commit author name. In this repository Codex commits may use the configured Git identity.
 

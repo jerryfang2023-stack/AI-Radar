@@ -10,10 +10,10 @@ const outputFile = path.join(siteDataDir, "v3-data-observation-desk.json");
 const intelligenceGraphIndexFile = path.join(siteDataDir, "intelligence-graph-index.json");
 const enterpriseAiFdeFile = path.join(siteDataDir, "enterprise-ai-fde.json");
 const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
-const siteVersion = "SITE-V3.4.2";
+const siteVersion = "SITE-V3.4.3";
 const businessSignalsColumnVersion = "BSIG-V1.2.1-quality-boundary";
 const tagTaxonomyVersion = "TAG-V1.1.0-v34-layered-taxonomy";
-const enterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
+const enterpriseAiLensVersion = "EAI-V1.2.0-raw-card-ingestion-boundary";
 const intelligenceMapColumnVersion = "IMAP-V2.0.0-report-center-opportunity-system";
 
 const signalRoots = [
@@ -1202,8 +1202,8 @@ function publicFdeCandidateIsDisplayReady(card = {}) {
   if (!publicDisplayTitleIsReady(title)) return false;
   if (!card.sourceUrl) return false;
   if (!hasSourceBackedFrontstageFact(card)) return false;
-  if (!fact || publicContentNeedsTranslation(fact) || publicFactLooksLikeTemplateFallback(fact)) return false;
-  return true;
+  if (!fact) return false;
+  return !publicTextLooksGarbled(fact);
 }
 
 function subjectMatchesDisplayTitle(subject = "", title = "", originalTitle = "") {
@@ -2431,6 +2431,25 @@ function poolCandidateFactFromEvidence(section = "", title = "", sourceUrl = "")
   )) || "", 320);
 }
 
+function poolIngestionBoundaryFields(section = "", fact = "", title = "") {
+  const titleZh = poolValue(section, "title_zh");
+  const titleTranslationStatus = poolValue(section, "title_translation_status")
+    || (titleZh ? "translated" : (titleNeedsChineseTranslation(title) ? "needs_ingestion_translation" : "not_required"));
+  const titleTranslationMethod = poolValue(section, "title_translation_method")
+    || (titleZh ? "raw_ingestion" : "not_available_in_pool_snapshot");
+  const factExtractionStatus = poolValue(section, "fact_extraction_status")
+    || (fact ? "extracted_at_fde_lens_pool_build" : "missing_fde_lens_fact");
+  const factExtractionMethod = poolValue(section, "fact_extraction_method")
+    || "pool_key_excerpts_and_fde_implementation_analysis";
+  return {
+    titleZh,
+    titleTranslationStatus,
+    titleTranslationMethod,
+    factExtractionStatus,
+    factExtractionMethod,
+  };
+}
+
 
 function pooledCandidateQuality(item = {}) {
   let score = Number(item.frontstageRankScore) || 0;
@@ -2525,6 +2544,7 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
       const title = publicTitleCandidate(rawTitle, sourceUrl);
       const category = poolCandidateCategory(section);
       const fact = poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
+      const ingestionBoundary = poolIngestionBoundaryFields(section, fact, rawTitle);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
       const score = Number(poolValue(section, "score")) || 0;
       const poolRoutes = frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes")));
@@ -2571,6 +2591,7 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
         fromCorePool: poolRoutes.includes("core_pool"),
         enterpriseAiLensPriority: true,
         sourceRef: ref,
+        ...ingestionBoundary,
       };
       if (!hasSourceBackedFrontstageFact(item)) return null;
       return {
@@ -2593,6 +2614,7 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
       const card = cardsByUrl.get(canonicalUrl(sourceUrl));
       const category = poolCandidateCategory(section);
       const fact = poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
+      const ingestionBoundary = poolIngestionBoundaryFields(section, fact, rawTitle);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
       const score = Number(poolValue(section, "score")) || 0;
       const poolRoutes = frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes")));
@@ -2656,6 +2678,7 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
         fromCorePool: poolRoutes.includes("core_pool"),
         enterpriseAiLensPriority: true,
         sourceRef: ref,
+        ...ingestionBoundary,
       };
       if (!hasSourceBackedFrontstageFact(item)) return null;
       return {
