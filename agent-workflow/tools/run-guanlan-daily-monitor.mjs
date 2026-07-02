@@ -95,6 +95,7 @@ const businessSignalsDir = path.join(contentRoot, "04-business-signals");
 const keywordMonitoringPath = path.join(contentRoot, "11-databases", "keyword-monitoring-v2.json");
 const sourceRegistryPath = path.join(contentRoot, "11-databases", "source-registry-v2.json");
 const monitorQualityGatePath = path.join(contentRoot, "11-databases", "monitor-quality-gate-v2.json");
+const sourceTitleTranslationsPath = path.join(contentRoot, "11-databases", "source-title-translations.json");
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 const ensure = (dir) => fs.mkdirSync(dir, { recursive: true });
@@ -121,12 +122,53 @@ function readJson(file, fallback) {
   }
 }
 
+function hasCjk(value = "") {
+  return /[\u3400-\u9fff]/u.test(String(value || ""));
+}
+
+function titleTranslationKey(value = "") {
+  return String(value || "")
+    .replace(/\s+/gu, " ")
+    .replace(/\s+[|-]\s+[^|-]+$/u, "")
+    .trim()
+    .toLowerCase();
+}
+
+function loadSourceTitleTranslations() {
+  const payload = readJson(sourceTitleTranslationsPath, { translations: [] });
+  const entries = Array.isArray(payload) ? payload : (Array.isArray(payload.translations) ? payload.translations : []);
+  const map = new Map();
+  for (const entry of entries) {
+    const sourceTitle = String(entry?.sourceTitle || "").trim();
+    const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
+    if (!sourceTitle || !zhTitle || !hasCjk(zhTitle)) continue;
+    map.set(titleTranslationKey(sourceTitle), zhTitle);
+  }
+  return map;
+}
+
+function sourceTitleNeedsChineseTranslation(value = "") {
+  const text = String(value || "").trim();
+  if (!text || hasCjk(text)) return false;
+  return /[A-Za-z]{3}/u.test(text);
+}
+
+function rawTitleTranslationFor(item = {}) {
+  const title = String(item.title || "").trim();
+  if (!title) return { titleZh: "", status: "missing_source_title", method: "none" };
+  if (!sourceTitleNeedsChineseTranslation(title)) return { titleZh: title, status: "not_required", method: "source_title" };
+  const translated = sourceTitleTranslations.get(titleTranslationKey(title)) || "";
+  if (translated) return { titleZh: translated, status: "translated", method: "source_title_translation_db" };
+  return { titleZh: "", status: "needs_ingestion_translation", method: "missing_translation_db_entry" };
+}
+
 const keywordMonitoring = readJson(keywordMonitoringPath, {
   policy: { raw_max_theme_share: 0.35, warning_threshold_share: 0.4 },
   theme_groups: [],
 });
 const sourceRegistry = readJson(sourceRegistryPath, { sources: [] });
 const monitorQualityGate = readJson(monitorQualityGatePath, { hard_gates: {}, layered_search_requirements: {} });
+const sourceTitleTranslations = loadSourceTitleTranslations();
 const monitorHardGates = monitorQualityGate.hard_gates || {};
 const layeredSearchRequirements = monitorQualityGate.layered_search_requirements || {};
 const themeGroups = Array.isArray(keywordMonitoring.theme_groups) ? keywordMonitoring.theme_groups : [];
@@ -2417,6 +2459,9 @@ function buildMarkdownSnapshot(item, record) {
     `# ${item.title}`,
     "",
     `- raw_id: ${record.raw_id}`,
+    `- title_zh: ${record.title_zh || "needs_ingestion_translation"}`,
+    `- title_translation_status: ${record.title_translation_status}`,
+    `- title_translation_method: ${record.title_translation_method}`,
     `- original_url: ${record.original_url || "no-url"}`,
     `- source_name: ${record.source_name || "unknown"}`,
     `- collected_at: ${record.collected_at}`,
@@ -2437,6 +2482,9 @@ function buildMarkdownSnapshot(item, record) {
     `- extraction_quality: ${record.extraction_quality || "unknown"}`,
     "",
     "## key_excerpts",
+    "",
+    `- fact_extraction_status: ${record.fact_extraction_status}`,
+    `- fact_extraction_method: ${record.fact_extraction_method}`,
     "",
     ...record.key_excerpts.map((excerpt, index) => `${index + 1}. [${excerpt.type} / ${excerpt.supports.join(", ")} / ${excerpt.importance}] ${excerpt.text}`),
     "",
@@ -2459,6 +2507,7 @@ function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
   const canonical = canonicalUrl(item.url || "");
   const excerpts = structuredKeyExcerpts(item, snapshotText);
   const elements = extractBusinessElements(item, snapshotText);
+  const titleTranslation = rawTitleTranslationFor(item);
   const seed = evidenceSeed(item, elements, excerpts);
   const scores = guanlanScores(item, quality, elements, seed);
   const usable = usableFor(item, quality, scores, excerpts);
@@ -2471,6 +2520,9 @@ function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
     schema_version: "raw-evidence-v2",
     raw_id: id,
     title: item.title || "",
+    title_zh: titleTranslation.titleZh,
+    title_translation_status: titleTranslation.status,
+    title_translation_method: titleTranslation.method,
     original_url: item.url || "",
     canonical_url: canonical,
     source_name: item.source || "",
@@ -2533,6 +2585,9 @@ function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
     last_seen_at: collectedAt,
     update_detected: false,
     key_excerpts: excerpts,
+    fact_extraction_status: excerpts.length ? "extracted_at_raw_ingestion" : "missing_raw_facts",
+    fact_extraction_method: "structured_key_excerpts_and_business_elements",
+    fact_extraction_completed_at: collectedAt,
     business_elements: elements,
     evidence_seed: seed,
     guanlan_scores: scores,
@@ -4574,6 +4629,9 @@ function makeRawFiles(items, failures, runMeta = {}) {
       "schema_version: raw-evidence-v2",
       `raw_id: ${id}`,
       `title: ${JSON.stringify(record.title)}`,
+      `title_zh: ${JSON.stringify(record.title_zh)}`,
+      `title_translation_status: ${record.title_translation_status}`,
+      `title_translation_method: ${record.title_translation_method}`,
       `original_url: ${JSON.stringify(record.original_url)}`,
       `canonical_url: ${JSON.stringify(record.canonical_url)}`,
       `source_name: ${JSON.stringify(record.source_name)}`,
@@ -4641,6 +4699,9 @@ function makeRawFiles(items, failures, runMeta = {}) {
       `evidence_seed: ${JSON.stringify(record.evidence_seed)}`,
       `missing_information: ${JSON.stringify(record.missing_information)}`,
       `key_excerpts: ${JSON.stringify(record.key_excerpts)}`,
+      `fact_extraction_status: ${record.fact_extraction_status}`,
+      `fact_extraction_method: ${record.fact_extraction_method}`,
+      `fact_extraction_completed_at: ${record.fact_extraction_completed_at}`,
       `theme: ${item.theme || "uncategorized"}`,
       `keyword_group: ${item.keyword_group || "unknown"}`,
       "copyright_note: local research archive only",

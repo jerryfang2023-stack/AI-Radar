@@ -62,7 +62,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when source-first and frontstage regression run as separate late-stage checks after unrelated operations data has already been generated.
 
 15. `failure_category_router`
-    - Pass when every failed or warning morning check is classified as one of: `supervision_observability`, `no_run_or_stale_assets`, `raw_volume_shortfall`, `pool_mix_shortfall`, `core_supply_shortfall`, `frontstage_card_contract`, `translation_title`, or `publication`.
+    - Pass when every failed or warning morning check is classified as one of: `supervision_observability`, `no_run_or_stale_assets`, `raw_volume_shortfall`, `pool_mix_shortfall`, `core_supply_shortfall`, `frontstage_card_contract`, `raw_card_ingestion_fields`, or `publication`.
     - Pass when the repair targets the earliest responsible category and reruns the smallest relevant validation.
     - Fail when the same category causes more than one blind full-chain rerun without targeted repair.
 
@@ -94,11 +94,11 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when page navigation text such as `Back Start free trial`, `Contact Sales`, or language switcher blocks is rejected as public `translatedFact` and replaced by a source-title-derived fact.
     - Pass when a partially translated English source title that still trips the translation heuristic is discarded in favor of the already generated Chinese card title, not forced into public display.
     - Pass when a Chinese subject prefix plus Chinese colon does not exempt the remaining English title from translation, for example `Vendor：Introducing ...` or `Source：Applied AI Case Studies ...`.
-   - Pass when public titles are source-title translations only: translate the original/source title into Chinese without adding interpretation, extra commercial framing, inferred funding purpose, or a rewritten event summary.
-   - Fail when `title`, `displayTitle`, or generated public title falls back to model-generated Chinese wording because the English source title has no literal translation mapping.
-   - Fail when active-date Signal Cards cannot enter the public Card set because their English source titles have no approved entries in `source-title-translations.json`; repair the translation database or upstream title-translation step, not the source-first gate.
-    - Pass when public facts reject template filler such as `original source says`, `original AI event`, `specific AI business event`, `signal value is to observe`, or `need to continue verifying customer/product/business outcome`; cards cleaned down to no source-facing fact must be removed from the frontstage JSON before publication.
-    - Fail when the unified Business frontstage gate blocks on generic source subjects, untranslated display titles, or navigation fragments after Raw / Pool / Card gates already passed.
+   - Pass when English source-title translation is captured or marked during Raw / raw-to-card ingestion instead of being deferred to frontstage selection.
+   - Pass when `title`, `displayTitle`, or generated public title uses the formal Signal Card title after raw-to-card generation; missing literal translation mappings should trigger Card/generator repair, not frontstage suppression.
+   - Fail when active-date Signal Cards cannot enter the public Card set because their English source titles have no approved entries in `source-title-translations.json`; repair the Raw/Card translation field or upstream title-translation step, not the source-first gate.
+    - Pass when public facts come from Raw / Card extraction and template filler is repaired in the Card asset or generator.
+    - Fail when the unified Business frontstage gate blocks on generic source subjects, untranslated display titles, navigation fragments, weak fact support, or missing customer / ROI / before-after details after Raw / Pool / Card gates already passed.
 
 22. `enterprise_ai_fde_lens_precision`
     - Pass when `enterpriseAiTransformation` prioritizes source-backed FDE / customer-embedded delivery / production deployment / workflow rollout / procurement / pilot / technical-scoping evidence over broad governance or geopolitical AI-access stories.
@@ -118,15 +118,15 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when supervision asks for a blind Raw / Pool / Card rerun only because the latest workflow run is red, while same-date data and gates are already healthy.
 
 24. `targeted_repair_before_full_rerun`
-    - Pass when a Business repair records the pre-rerun checklist before starting a full chain: activeDate, public Card count, Raw count, Pool/routed Pool counts, cardable candidate count, source-artifact freshness by source/channel, missing source-title translations, PR/Pages state, and local dirty / fast-forward state.
-    - Pass when a deficient source lane triggers only the relevant source-artifact refill or retry refresh, and a translation-title shortage triggers only translation registry / frontstage rebuild work.
-    - Fail when Raw / Pool / Card generation is rerun before ruling out stale local checkout, healthy remote assets, source-title translation starvation, publication failure, or local sync blockage.
+    - Pass when a Business repair records the pre-rerun checklist before starting a full chain: activeDate, public Card count, Raw count, Pool/routed Pool counts, cardable candidate count, source-artifact freshness by source/channel, Raw/Card title-translation and fact-extraction status, PR/Pages state, and local dirty / fast-forward state.
+    - Pass when a deficient source lane triggers only the relevant source-artifact refill or retry refresh, and a title/fact ingestion shortage triggers only Raw/Card generator repair plus rebuild.
+    - Fail when Raw / Pool / Card generation is rerun before ruling out stale local checkout, healthy remote assets, Raw/Card title or fact extraction gaps, publication failure, or local sync blockage.
     - Fail when a report says "raw shortage" without naming which source/channel or downstream eligibility bucket is actually short.
 
 25. `weekly_repeated_failure_review`
     - Pass when two or more Business Hermes items with the same category in a seven-day window produce a weekly failure review report and a durable skill memory/eval update.
     - Pass when the review distinguishes true Business data failures from supervision observability, publication, and local-sync warnings.
-    - Fail when repeated `business_signals_frontstage_cards_missing` incidents are closed as same-day data fixes without identifying whether the root was stale assets, source-artifact retry, translation-title starvation, publication, or supervision classification.
+    - Fail when repeated `business_signals_frontstage_cards_missing` incidents are closed as same-day data fixes without identifying whether the root was stale assets, source-artifact retry, Raw/Card title-fact ingestion, publication, or supervision classification.
 
 26. `hermes_inbox_resolution_quality`
     - Pass when a resolved Business Hermes inbox item records the final fix commit or PR, exact validation command, and prevention artifact.

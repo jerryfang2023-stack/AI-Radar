@@ -197,7 +197,7 @@ function incidentCategories(lane) {
 
   if (/public card|frontstage\s*selected|selected count|frontstage card/iu.test(haystack)) categories.add("business_signals_frontstage_cards_missing");
   if (/source[_ -]?first|source_first|frontstage gate/iu.test(haystack)) categories.add("source_first_frontstage_gate");
-  if (/title|标题|mojibake|乱码|untranslated|未翻译|translation/iu.test(haystack)) categories.add("frontstage_title_translation");
+  if (/title|标题|mojibake|乱码|untranslated|未翻译|translation/iu.test(haystack)) categories.add("raw_card_ingestion_title_fact");
   if (/detail|详情|visible fragment|source-backed|内容不对|wrong content/iu.test(haystack)) categories.add("frontstage_detail_content");
   if (/quality gate|monitor|监测|workflow conclusion|failed|gate failed|manual dispatch|same-date .*run/iu.test(haystack)) categories.add("monitor_or_gate_failure");
   if (/obsidian|timeline|sync/iu.test(haystack)) categories.add("obsidian_sync");
@@ -213,7 +213,7 @@ function repairDataGenerated(lane) {
   if (lane.id === "skill_ops") return "not_applicable";
   const category = lane.evidence?.diagnosis?.category || "";
   if (category === "no_run_or_stale_assets") return "no_or_stale";
-  if (["translation_title", "frontstage_card_contract", "publication", "local_sync", "supervision_observability"].includes(category)) return "yes";
+  if (["raw_card_ingestion_fields", "frontstage_card_contract", "publication", "local_sync", "supervision_observability"].includes(category)) return "yes";
   if (lane.problems.some((item) => /date is|missing .*data file/iu.test(item.message))) return "no_or_stale";
   if (lane.problems.some((item) => /workflow is queued|workflow is in_progress|wait for/iu.test(item.message))) return "unknown";
   return "yes";
@@ -571,9 +571,9 @@ function buildBusinessSignalsLane() {
       evidence.diagnosis.reason = `activeDate is ${activeDate || "missing"}, expected ${date}`;
       evidence.diagnosis.neededAction = "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow";
     } else if (sameDateCards.length === 0 && titleTranslations.missingCount > 0) {
-      evidence.diagnosis.category = "translation_title";
-      evidence.diagnosis.reason = `${titleTranslations.missingCount} active-date Signal Card source title(s) lack approved Chinese translations`;
-      evidence.diagnosis.neededAction = "repair source-title translations or upstream title sync, rebuild Business frontstage JSON, rerun the unified Business gate only";
+      evidence.diagnosis.category = "raw_card_ingestion_fields";
+      evidence.diagnosis.reason = `${titleTranslations.missingCount} active-date Signal Card source title(s) need Raw/Card title-translation repair`;
+      evidence.diagnosis.neededAction = "repair Raw/Card title-translation or fact-extraction fields, rebuild affected Card/site JSON, rerun the unified Business gate only";
     } else if (sameDateCards.length === 0) {
       evidence.diagnosis.category = "frontstage_card_contract";
       evidence.diagnosis.reason = "no active-date public Cards";

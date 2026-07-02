@@ -134,7 +134,7 @@ function incidentCategories(text = "", fields = {}) {
     categories.add("source_first_frontstage_gate");
   }
   if (/title|标题|mojibake|乱码|untranslated|未翻译|translation/iu.test(haystack)) {
-    categories.add("frontstage_title_translation");
+    categories.add("raw_card_ingestion_title_fact");
   }
   if (/detail|详情|frontstage details|visible fragment|source-backed|内容不对|wrong content/iu.test(haystack)) {
     categories.add("frontstage_detail_content");

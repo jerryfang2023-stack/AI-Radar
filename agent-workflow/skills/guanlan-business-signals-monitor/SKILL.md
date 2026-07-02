@@ -11,7 +11,7 @@ metadata:
     upstream: "external source capture, daily persistent assets workflow, Hermes inbox"
     downstream: "Signal Cards, graph inputs, trend candidates, PR publication"
     gates: "monitor QC, post-monitor Raw / Pool gate, six-gate Card entry, Card generation, source-first, frontstage Card contract"
-    recent_learning: "The public Business Signals page no longer has Top10 versus candidate-pool modes. Repeated frontstage Card incidents must be split into stale assets, source-artifact retry, translation-title, publication/local-sync, and supervision-observability categories before any full rerun. Provider-caused Raw shortfall is diagnostic when Pool audit supply and Card supply are already sufficient. Blind full-chain reruns are forbidden when same-date artifacts can support a targeted repair and publication."
+    recent_learning: "The public Business Signals page no longer has Top10 versus candidate-pool modes. Repeated frontstage Card incidents must be split into stale assets, source-artifact retry, raw/card title-fact ingestion, publication/local-sync, and supervision-observability categories before any full rerun. Provider-caused Raw shortfall is diagnostic when Pool audit supply and Card supply are already sufficient. Blind full-chain reruns are forbidden when same-date artifacts can support a targeted repair and publication."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -76,9 +76,9 @@ When repairing repeated morning failures, also read `examples/good-failure-route
    - `pool_mix_shortfall`: importance lane coverage gap;
    - `card_supply_shortfall`: cardable Raw / Pool candidates or generated Cards below the frontstage contract;
    - `frontstage_card_contract`: public active-date Cards missing, stale, or not sorted by importance;
-   - `translation_title`: English/mixed/placeholder title or title-like subject;
+   - `raw_card_ingestion_fields`: English/mixed/placeholder title, title-like subject, or missing raw-to-card title/fact extraction fields;
    - `publication`: PR, merge, or Pages failure after valid assets.
-6. Before any full-chain rerun, record the pre-rerun checklist: activeDate, public Card count, Raw / Pool / routed Pool counts, cardable candidate count, source-artifact freshness by source/channel, missing source-title translations, PR / Pages state, and local dirty / fast-forward state. If the checklist shows same-date Pool audit supply and Card supply are sufficient, do not rerun Raw just because the Raw floor is short; use the existing artifacts and repair the downstream blocker.
+6. Before any full-chain rerun, record the pre-rerun checklist: activeDate, public Card count, Raw / Pool / routed Pool counts, cardable candidate count, source-artifact freshness by source/channel, raw/Card title-translation and fact-extraction status, PR / Pages state, and local dirty / fast-forward state. If the checklist shows same-date Pool audit supply and Card supply are sufficient, do not rerun Raw just because the Raw floor is short; use the existing artifacts and repair the downstream blocker.
 7. Repair the smallest script, rule, gate, or skill path needed for the failing category.
 8. Rerun the exact failed gate or the smallest relevant validation.
 9. Add or tighten an eval before adding long prose when the failure is recurring.
@@ -91,7 +91,7 @@ This is a hard requirement, not a preference.
 - Do not rerun the whole Business Signals workflow as the default response to a failure.
 - Start from the failed gate, report, run step, or published-data mismatch, then repair that specific stage.
 - If same-date Raw, Pool, Card, or frontstage artifacts already exist, reuse those artifacts for downstream repair and publication unless the failed stage proves they are corrupt or insufficient.
-- Do not regenerate Raw or rerun the full monitor when the defect belongs to Pool routing, Card eligibility, title translation, frontstage export, publication, or sync. Repair that stage and rerun only the smallest affected generator / gate.
+- Do not regenerate Raw or rerun the full monitor when the defect belongs to Pool routing, Card eligibility, raw/Card title or fact extraction, frontstage export, publication, or sync. Repair that stage and rerun only the smallest affected generator / gate.
 - If Pool audit supply and Card supply are already sufficient, do not restart source raw collection just because one provider, peer channel, or quota-dependent source is short.
 - If `raw_to_card_supply_release=true`, GDELT / keyword / RSS / AI HOT / Anysearch source-channel failures, `unrecovered_failed_sources_max`, keyword-only floors, AI-title ratio, off-topic raw-title counts, and Raw volume shortfall are diagnostic supply-risk notes, not release blockers, unless a real Pool coverage / Card gate is also failing.
 - After a targeted repair passes the smallest relevant validation, proceed to PR / merge / Pages publication from the repaired artifacts. Do not dispatch another full-chain run to "be safe".
@@ -140,7 +140,7 @@ Weekend monitor quantity floors may be lighter because source volume is lower, b
 - Do not restore daily observation, business brief, trend report, publiccopy, cardcopy, or copy-style blockers.
 - Do not lower Raw / Pool / Card gates to make a day look complete.
 - If routed Pool or cardable candidate supply is short, repair with targeted recent-event refill: launches, funding, customer deployments, production rollouts, procurement, pricing, regulatory, or vertical workflow cases.
-- If Raw is reported short, identify the deficient source/channel or downstream eligibility bucket before rerunning. Do not call a translation-title, stale local checkout, publication, or local-sync issue a Raw shortage. If Pool audit supply and Card supply are already enough, proceed downstream from the existing artifacts instead of starting another full Raw run.
+- If Raw is reported short, identify the deficient source/channel or downstream eligibility bucket before rerunning. Do not call a title/fact ingestion, stale local checkout, publication, or local-sync issue a Raw shortage. If Pool audit supply and Card supply are already enough, proceed downstream from the existing artifacts instead of starting another full Raw run.
 - Do not convert a downstream gate failure, publication failure, stale local checkout, or version mismatch into a full Raw / Pool / Card rerun. Fix the failing downstream stage and publish after validation.
 - Do not satisfy quantity gaps by promoting marketplace listings, directories, repo roots, package/model pages, generic guides, broad lists, funding roundups, generic funding commentary, interviews, old evergreen technical posts, or search snippets into Cards.
 - Funding title fallback is allowed only for confirmed single-company financing events where the original source title itself proves amount / round wording such as `raises <amount>`, `announcing our <amount> <round>`, `launches with <amount>`, or `emerged from stealth with <amount>`. Generic funding/list blockers should inspect source identity fields, not source-backed fact text or captured query tails.
