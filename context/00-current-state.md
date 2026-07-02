@@ -19,8 +19,8 @@ WaveSight AI is now in SITE-V3.4.2 Business Signals Quality Boundary Release.
 - The current public frontstage has four active columns: business signals, report center, first-line viewpoints, and community intelligence.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
-- The daily business-signal frontstage presents all qualified Core Pool business signals that can become Cards, sorted by importance / impact from high to low. It no longer separates a Top10 desk from a candidate pool.
-- SITE-V3.4.2 keeps the unified frontstage and Reports Center opportunity system, and hardens Business Signals quality boundaries for Core Pool promotion and public Card release.
+- The daily business-signal frontstage presents all qualified Raw / Pool business signals that pass raw-to-card cardability and can become Cards, sorted by importance / impact from high to low. Pool remains a backend audit index and repair surface, not a required manual selection layer.
+- SITE-V3.4.2 keeps the unified frontstage and Reports Center opportunity system, and hardens Business Signals quality boundaries for raw-to-card cardability and public Card release.
 - Current column versions: Business Signals `BSIG-V1.2.1-quality-boundary`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Reports Center `IMAP-V2.0.0-report-center-opportunity-system`.
 - Current tag taxonomy version: `TAG-V1.1.0-v34-layered-taxonomy`.
 

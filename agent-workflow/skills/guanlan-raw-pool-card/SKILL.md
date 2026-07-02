@@ -1,6 +1,6 @@
 ---
 name: guanlan-raw-pool-card
-description: Use when running, repairing, auditing, or changing WaveSight AI Raw to Pool to Core Pool to Signal Card to frontstage production. Covers daily Raw/Pool quantity targets, Core Pool qualification, Signal Card generation, unified frontstage Card display, and site/Obsidian handoff rules.
+description: Use when running, repairing, auditing, or changing WaveSight AI raw-to-card Signal Card and frontstage production. Covers daily Raw/Pool audit targets, cardability judgment, Signal Card generation, unified frontstage Card display, and site/Obsidian handoff rules.
 metadata:
   guanlan:
     version: "1.0.0"
@@ -22,11 +22,11 @@ This skill is the production route for WaveSight AI business-signal assets after
 
 Use it for:
 
-- Raw / Pool / Core Pool quantity and balance checks.
+- Raw / Pool audit quantity and balance checks.
 - Generating or repairing Signal Cards from Pool.
-- Deciding why a Core Pool candidate did or did not become a formal Signal Card.
+- Deciding why a Raw / Pool candidate did or did not become a formal Signal Card.
 - Updating the unified Business Signals frontstage Card view.
-- Auditing Core Pool coverage and non-large-company supply.
+- Auditing cardable coverage and large-company concentration.
 
 Do not use it for first-line builders viewpoints, opinion cards, daily observation articles, trend reports, or business briefs.
 
@@ -44,7 +44,7 @@ Read only what is needed:
    - `01-SiteV2/knowledge/01-Signal-Cards/`
    - `01-SiteV2/site/data/v3-data-observation-desk.json`
 
-For frontstage count and display rules, read `references/frontstage-core-pool-rules.md`.
+For frontstage count and display rules, read `references/frontstage-cardability-rules.md`.
 
 For self-improvement and regression prevention, read these only when relevant:
 
@@ -56,20 +56,20 @@ For self-improvement and regression prevention, read these only when relevant:
 
 1. Resolve the Asia/Shanghai production date unless the user gives another date.
 2. Confirm Raw / Pool exist and are not stale relative to Card/site data.
-3. Count Pool routes:
+3. Count audit supply:
    - total Pool;
    - routed Pool;
-   - `core_pool`;
-   - non-large-company `core_pool`;
-   - large-company `core_pool`.
+   - cardable Raw / Pool candidates;
+   - non-large-company cardable candidates;
+   - large-company cardable candidates.
    Pool must not be capped to a fixed top-N after Raw collection; all non-discard screened evidence should remain in the Pool file for audit and downstream repair.
 4. Generate Signal Cards with the existing script. Use manual override only when the user explicitly releases a blocked run:
 
 ```powershell
-node agent-workflow/tools/generate-asset-cards-from-pool.mjs --date=YYYY-MM-DD --signal-target=999 --require-final-qc=false --trend-candidates=false --manual-release-override=true --debug-auto-signals=true
+node agent-workflow/tools/generate-asset-cards-from-pool.mjs --date=YYYY-MM-DD --from-raw=true --signal-target=999 --require-final-qc=false --trend-candidates=false --manual-release-override=true --debug-auto-signals=true
 ```
 
-5. Treat the generator's semantic gate as authoritative for formal Signal Cards. If a `core_pool` item is rejected for stale source, generic list/report, index-only evidence, or user-feedback-only evidence, do not silently force it into `01-Signal-Cards`.
+5. Treat the generator's semantic gate as authoritative for formal Signal Cards. If a Raw / Pool candidate is rejected for stale source, generic list/report, index-only evidence, or user-feedback-only evidence, do not silently force it into `01-Signal-Cards`.
 6. Rebuild site data:
 
 ```powershell
@@ -88,14 +88,14 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 ## Current Frontstage Contract
 
 - Business Signals has one public Card view for the active date.
-- Every qualified Core Pool business signal that can become a Card should appear in that public Card set.
+- Every qualified Raw / Pool business signal that passes raw-to-card cardability and can become a Card should appear in that public Card set.
 - The public page must not split items into Top10 versus candidate-pool modes.
 - Cards are sorted by importance / impact from high to low.
 - The page must not display sorting reasons, selection tiers, or candidate-only labels.
 
 ## Card Boundary
 
-Formal Signal Cards are persistent knowledge assets. They must be source-backed and pass semantic gates. A Core Pool item that cannot pass Card display requirements may stay in backend Pool evidence, but it must not appear as a separate public candidate-pool item.
+Formal Signal Cards are persistent knowledge assets. They must be source-backed and pass semantic gates. A Raw / Pool item that cannot pass Card display requirements may stay in backend Pool evidence, but it must not appear as a separate public candidate-pool item.
 
 Besides product launches, funding rounds, and customer deployments, concrete AI commercial market-structure events can become Cards when source-backed: acquisitions / mergers, material partnerships, procurement / contracts, pricing or billing changes, regulatory approvals / antitrust actions, and material lawsuits / settlements. They must be normalized into the existing `case` or `product_service` Card types, not a fourth public type.
 
@@ -105,7 +105,7 @@ Public titles should come from source-title translations by default. A funding C
 
 Funding Card facts should preserve amount / round plus investor, use of proceeds, product direction, or deployment context when present in the original source. Generic funding/list blockers should inspect source identity fields, not source-backed fact text or captured query tails.
 
-Do not lower Card quality to satisfy a count. If many `core_pool` candidates fail the formal Card gate, repair Pool routing or collect better Raw evidence.
+Do not lower Card quality to satisfy a count. If many Raw / Pool candidates fail the formal Card gate, repair Pool routing or collect better Raw evidence.
 
 ## Self-Improvement Loop
 
@@ -118,9 +118,9 @@ Do not lower Card quality to satisfy a count. If many `core_pool` candidates fai
 
 When finishing, report:
 
-- Raw / Pool / Core Pool counts;
+- Raw / Pool audit counts;
 - Signal Card count;
 - public Card count;
-- rejected Core Pool candidates and gate reasons;
+- rejected Raw / Pool candidates and gate reasons;
 - gates run;
 - whether changes were committed and deployed.

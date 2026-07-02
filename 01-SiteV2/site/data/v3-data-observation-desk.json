@@ -6,9 +6,9 @@
     "tagTaxonomyVersion": "TAG-V1.1.0-v34-layered-taxonomy",
     "enterpriseAiLensVersion": "EAI-V1.1.0-fde-lens-pool",
     "intelligenceMapColumnVersion": "IMAP-V2.0.0-report-center-opportunity-system",
-    "generatedAt": "2026-07-02T05:53:51.738Z",
+    "generatedAt": "2026-07-02T07:22:12.625Z",
     "activeDate": "2026-07-02",
-    "cardCount": 7,
+    "cardCount": 14,
     "source": "Signal Cards",
     "tagPolicy": "formal_tags filtered by agent-workflow/product/tag-taxonomy.md",
     "tagLayerPolicy": {
@@ -44,45 +44,45 @@
     {
       "category": "case",
       "label": "案例",
-      "today": 2,
-      "last7": 7,
-      "last30": 70,
-      "total": 72,
+      "today": 3,
+      "last7": 8,
+      "last30": 71,
+      "total": 73,
       "topTags": [
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
+          "count": 3
+        },
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 2
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 2
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
           "count": 2
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
           "count": 2
-        },
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 1
-        },
-        {
-          "tag": "evidence-partnership-integration",
-          "label": "合作集成",
-          "count": 1
-        },
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 1
         }
       ]
     },
     {
       "category": "funding",
       "label": "融资",
-      "today": 4,
-      "last7": 8,
-      "last30": 25,
-      "total": 34,
+      "today": 6,
+      "last7": 10,
+      "last30": 27,
+      "total": 36,
       "topTags": [
         {
           "tag": "evidence-funding",
@@ -114,10 +114,10 @@
     {
       "category": "product-service",
       "label": "产品",
-      "today": 1,
-      "last7": 6,
-      "last30": 115,
-      "total": 115,
+      "today": 5,
+      "last7": 10,
+      "last30": 119,
+      "total": 119,
       "topTags": [
         {
           "tag": "evidence-partnership-integration",
@@ -153,7 +153,8 @@
       "sourceLevel": "A",
       "importanceScore": 5,
       "poolRoutes": [
-        "core_pool"
+        "core_pool",
+        "emerging_pool"
       ],
       "publishedAt": "2026-07-01T14:25:23.000Z",
       "tags": {
@@ -394,7 +395,8 @@
       "sourceLevel": "B",
       "importanceScore": 5,
       "poolRoutes": [
-        "core_pool"
+        "core_pool",
+        "emerging_pool"
       ],
       "publishedAt": "",
       "tags": {
@@ -567,7 +569,7 @@
       "frontstageSupplyFill": false
     },
     {
-      "id": "SIG-20260702-A07",
+      "id": "SIG-20260702-A14",
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
@@ -581,7 +583,8 @@
       "sourceLevel": "B",
       "importanceScore": 5,
       "poolRoutes": [
-        "core_pool"
+        "core_pool",
+        "emerging_pool"
       ],
       "publishedAt": "",
       "tags": {
@@ -807,6 +810,319 @@
         "指向平台能力、交付成本或生态合作变化"
       ],
       "frontstageValueDescription": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "frontstageQualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "cardSource": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "POOL-2026-07-02-P-069",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA",
+      "originalTitle": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA",
+      "sourceTitle": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA",
+      "displayTitle": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA",
+      "generatedTitle": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA",
+      "date": "2026-07-02",
+      "subject": "葡萄牙",
+      "source": "ithome.com",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/971/439.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "funding",
+          "label": "融资"
+        }
+      ],
+      "summary": "值得关注：涉及资金流向、预算规模或融资信号；影响 AI 落地的治理、合规或安全边界；指向平台能力、交付成本或生态合作变化。",
+      "translatedFact": "葡萄牙政府7月1日宣布开源大语言模型AMALIA正式发布，这是首个基于欧洲葡萄牙语开发的模型。由60余位研究人员历时18个月开发，先期投资550万欧元，使用了Deucalion、MareNostrum 5等算力基础设施。第一阶段利用约4万亿个葡语单词训练出9B规模模型，后续多模态升级后具备理解文本、图像、声音的能力。今年内还将新增22B版本并获得智能体能力，需追加150万欧元投资。",
+      "originalHighlights": [],
+      "visibleFragment": "葡萄牙政府7月1日宣布开源大语言模型AMALIA正式发布，这是首个基于欧洲葡萄牙语开发的模型。由60余位研究人员历时18个月开发，先期投资550万欧元，使用了Deucalion、MareNostrum 5等算力基础设施。第一阶段利用约4万亿个葡语单词训练出9B规模模型，后续多模态升级后具备理解文本、图像、声音的能力。今年内还将新增22B版本并获得智能体能力，需追加150万欧元投资。",
+      "sourceLinks": [
+        "https://www.ithome.com/0/971/439.htm"
+      ],
+      "status": "pooled",
+      "assetLevel": "core_pool",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 656,
+      "frontstageEditorialScore": 656,
+      "frontstageEvidenceScore": 52,
+      "frontstageSelectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "影响 AI 落地的治理、合规或安全边界",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "frontstageValueDescription": "值得关注：涉及资金流向、预算规模或融资信号；影响 AI 落地的治理、合规或安全边界；指向平台能力、交付成本或生态合作变化。",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-069",
+      "cardSource": "core_pool",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "SIG-20260702-A05",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Cloudflare 推出 Monetization Gateway 变现网关",
+      "originalTitle": "Cloudflare 推出 Monetization Gateway 变现网关",
+      "date": "2026-07-02",
+      "subject": "Cloudflare",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceUrl": "https://blog.cloudflare.com/monetization-gateway",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool",
+        "user_feedback_pool"
+      ],
+      "publishedAt": "2026-07-01T17:13:17.147Z",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-ai-coding",
+          "track-enterprise-data"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [
+          "scenario-knowledge-base"
+        ],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-coding",
+        "track-enterprise-data",
+        "function-engineering",
+        "scenario-knowledge-base",
+        "customer-developer-team",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-enterprise-data",
+          "label": "企业数据智能"
+        },
+        {
+          "id": "scenario-knowledge-base",
+          "label": "知识库问答"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "Cloudflare 推出 Monetization Gateway 变现网关 Cloudflare 推出 Monetization Gateway 变现网关 原始来源标题显示：Cloudflare 推出 Monetization Gateway 变现网关。",
+        "missingFields": [
+          "specific_task"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "finance_team",
+              "label": "Finance, billing, or accounting team"
+            },
+            {
+              "id": "it_security_team",
+              "label": "IT, security, governance, or platform team"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "finance",
+              "label": "Finance / accounting"
+            },
+            {
+              "id": "it_security",
+              "label": "IT / security / platform governance"
+            }
+          ],
+          "specific_task": [],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "product_launch",
+              "label": "Product, feature, model, API, or platform launch"
+            },
+            {
+              "id": "pricing_change",
+              "label": "Pricing, packaging, cost, usage-limit, or billing change"
+            }
+          ],
+          "product_form": [
+            {
+              "id": "api",
+              "label": "API, SDK, or developer-facing service"
+            },
+            {
+              "id": "model_gateway",
+              "label": "Model gateway, router, proxy, or inference control layer"
+            }
+          ],
+          "delivery_model": [
+            {
+              "id": "api_usage_based",
+              "label": "API or usage-based pricing"
+            },
+            {
+              "id": "enterprise_subscription",
+              "label": "Enterprise subscription"
+            }
+          ],
+          "pain_or_constraint": [
+            {
+              "id": "permission_boundary",
+              "label": "Permissions, data access, or responsibility boundary"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "deployment_scale",
+              "label": "Deployment scale, seats, locations, users, or volume disclosed"
+            }
+          ],
+          "source_evidence_type": [
+            {
+              "id": "technical_blog",
+              "label": "Technical blog, developer doc, or engineering post"
+            }
+          ]
+        },
+        "buyer_or_user": [
+          "finance_team",
+          "it_security_team"
+        ],
+        "buyerOrUser": [
+          "finance_team",
+          "it_security_team"
+        ],
+        "team_or_function": [
+          "finance",
+          "it_security"
+        ],
+        "teamOrFunction": [
+          "finance",
+          "it_security"
+        ],
+        "specific_task": [],
+        "specificTask": [],
+        "business_action": [
+          "customer_deployment",
+          "product_launch",
+          "pricing_change"
+        ],
+        "businessAction": [
+          "customer_deployment",
+          "product_launch",
+          "pricing_change"
+        ],
+        "product_form": [
+          "api",
+          "model_gateway"
+        ],
+        "productForm": [
+          "api",
+          "model_gateway"
+        ],
+        "delivery_model": [
+          "api_usage_based",
+          "enterprise_subscription"
+        ],
+        "deliveryModel": [
+          "api_usage_based",
+          "enterprise_subscription"
+        ],
+        "pain_or_constraint": [
+          "permission_boundary"
+        ],
+        "painOrConstraint": [
+          "permission_boundary"
+        ],
+        "adoption_evidence": [
+          "deployment_scale"
+        ],
+        "adoptionEvidence": [
+          "deployment_scale"
+        ],
+        "source_evidence_type": [
+          "technical_blog"
+        ],
+        "sourceEvidenceType": [
+          "technical_blog"
+        ]
+      },
+      "summary": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "translatedFact": "Cloudflare 宣布推出 Monetization Gateway，允许客户对受 Cloudflare 保护的网页、数据集、API 或 MCP 工具等任意资产收费。该网关提供统一控制面板管理支付策略和访问控制，在边缘处理支付验证和结算，保护源站免受高并发支付请求影响。结算采用基于 x402 协议的稳定币（如 Open USD 和 USDC），支持低于一美分的微支付，数秒内到账。此举旨在适应 AI 代理成为主流互联网用户后的按使用",
+      "originalHighlights": [],
+      "visibleFragment": "",
+      "sourceLinks": [
+        "https://blog.cloudflare.com/monetization-gateway"
+      ],
+      "sourceTitle": "Cloudflare 推出 Monetization Gateway 变现网关",
+      "status": "published",
+      "assetLevel": "frontstage",
+      "evidenceGate": "core_evidence_passed",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-ai-agent",
+      "generatedTitle": "Cloudflare 推出 Monetization Gateway 变现网关",
+      "displayTitle": "Cloudflare 推出 Monetization Gateway 变现网关",
+      "largeVendor": false,
+      "frontstageRankScore": 640,
+      "frontstageEditorialScore": 640,
+      "frontstageEvidenceScore": 40,
+      "frontstageSelectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
       "frontstageQualityWarnings": [
         "可见原文片段不足，已降权处理"
       ],
@@ -1190,7 +1506,7 @@
       "frontstageSupplyFill": false
     },
     {
-      "id": "SIG-20260702-A05",
+      "id": "SIG-20260702-A13",
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
@@ -1204,7 +1520,8 @@
       "sourceLevel": "S",
       "importanceScore": 5,
       "poolRoutes": [
-        "core_pool"
+        "core_pool",
+        "emerging_pool"
       ],
       "publishedAt": "2026-07-01T16:17:55.480Z",
       "tags": {
@@ -1431,7 +1748,72 @@
       "frontstageSupplyFill": false
     },
     {
-      "id": "SIG-20260702-A06",
+      "id": "POOL-2026-07-02-P-058",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投",
+      "originalTitle": "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投",
+      "sourceTitle": "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投",
+      "displayTitle": "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投",
+      "generatedTitle": "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投",
+      "date": "2026-07-02",
+      "subject": "快手可灵 AI",
+      "source": "ithome.com",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/971/440.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "funding",
+          "label": "融资"
+        }
+      ],
+      "summary": "值得关注：涉及资金流向、预算规模或融资信号；有较完整的原文事实支撑。",
+      "translatedFact": "IT之家 7 月 2 日消息，据《南华早报》1 日援引多名知情人士消息称，快手旗下可灵 AI 即将 完成一轮 30 亿美元（IT之家注：现汇率约合 204.",
+      "originalHighlights": [],
+      "visibleFragment": "IT之家 7 月 2 日消息，据《南华早报》1 日援引多名知情人士消息称，快手旗下可灵 AI 即将 完成一轮 30 亿美元（IT之家注：现汇率约合 204.",
+      "sourceLinks": [
+        "https://www.ithome.com/0/971/440.htm"
+      ],
+      "status": "pooled",
+      "assetLevel": "core_pool",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 622,
+      "frontstageEditorialScore": 622,
+      "frontstageEvidenceScore": 52,
+      "frontstageSelectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：涉及资金流向、预算规模或融资信号；有较完整的原文事实支撑。",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-058",
+      "cardSource": "core_pool",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "SIG-20260702-A15",
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
@@ -1639,6 +2021,266 @@
       "fromCorePool": true,
       "cardSource": "signal_card",
       "promotionStatus": "frontstage_card",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "POOL-2026-07-02-P-041",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+      "originalTitle": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+      "sourceTitle": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+      "displayTitle": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+      "generatedTitle": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+      "date": "2026-07-02",
+      "subject": "Cloudflare",
+      "source": "blog.cloudflare.com",
+      "sourceName": "blog.cloudflare.com",
+      "sourceUrl": "https://blog.cloudflare.com/making-ai-search-smarter",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "值得关注：指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "translatedFact": "Cloudflare 宣布推出两项新举措，以应对 AI 搜索重构网络生态带来的创作困境。在智能体时代，创作者既需要保持可发现性，又要确保作品获得合理报酬，这两项举措旨在帮助平衡二者的关系。具体细节尚未公布。",
+      "originalHighlights": [],
+      "visibleFragment": "Cloudflare 宣布推出两项新举措，以应对 AI 搜索重构网络生态带来的创作困境。在智能体时代，创作者既需要保持可发现性，又要确保作品获得合理报酬，这两项举措旨在帮助平衡二者的关系。具体细节尚未公布。",
+      "sourceLinks": [
+        "https://blog.cloudflare.com/making-ai-search-smarter"
+      ],
+      "status": "pooled",
+      "assetLevel": "core_pool",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 582,
+      "frontstageEditorialScore": 582,
+      "frontstageEvidenceScore": 52,
+      "frontstageSelectionReasons": [
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-041",
+      "cardSource": "core_pool",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "POOL-2026-07-02-P-043",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "GLM Coding Pro 发布：面向专业开发者的编码助手",
+      "originalTitle": "GLM Coding Pro 发布：面向专业开发者的编码助手",
+      "sourceTitle": "GLM Coding Pro 发布：面向专业开发者的编码助手",
+      "displayTitle": "GLM Coding Pro 发布：面向专业开发者的编码助手",
+      "generatedTitle": "GLM Coding Pro 发布：面向专业开发者的编码助手",
+      "date": "2026-07-02",
+      "subject": "GLM Coding Pro",
+      "source": "zcode.z.ai",
+      "sourceName": "zcode.z.ai",
+      "sourceUrl": "https://zcode.z.ai/en",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool",
+        "user_feedback_pool"
+      ],
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "值得关注：指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "translatedFact": "GLM Coding Pro 在 Lite 基础上提供 5 倍用量，针对中型代码库日常开发优化，包含精选 MCP 工具，可优先访问最新旗舰模型和功能，生成速度更快。",
+      "originalHighlights": [],
+      "visibleFragment": "GLM Coding Pro 在 Lite 基础上提供 5 倍用量，针对中型代码库日常开发优化，包含精选 MCP 工具，可优先访问最新旗舰模型和功能，生成速度更快。",
+      "sourceLinks": [
+        "https://zcode.z.ai/en"
+      ],
+      "status": "pooled",
+      "assetLevel": "core_pool",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
+      "evidenceGate": "user_feedback_signal",
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 582,
+      "frontstageEditorialScore": 582,
+      "frontstageEvidenceScore": 52,
+      "frontstageSelectionReasons": [
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-043",
+      "cardSource": "core_pool",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "POOL-2026-07-02-P-072",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "originalTitle": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "sourceTitle": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "displayTitle": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "generatedTitle": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "date": "2026-07-02",
+      "subject": "华为联合上海电信落地 5G-A×AI 大上行样板点",
+      "source": "ithome.com",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/971/407.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "值得关注：有较完整的原文事实支撑。",
+      "translatedFact": "IT之家 7 月 2 日消息，华为官昨日发文称，在 2026 年世界移动通信大会 · 上海启幕前夕，中国电信股份有限公司上海分公司联合华为在上海徐汇西岸美术馆打造了 5G-A×AI 大上行样板点。",
+      "originalHighlights": [],
+      "visibleFragment": "IT之家 7 月 2 日消息，华为官昨日发文称，在 2026 年世界移动通信大会 · 上海启幕前夕，中国电信股份有限公司上海分公司联合华为在上海徐汇西岸美术馆打造了 5G-A×AI 大上行样板点。",
+      "sourceLinks": [
+        "https://www.ithome.com/0/971/407.htm"
+      ],
+      "status": "pooled",
+      "assetLevel": "core_pool",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 570,
+      "frontstageEditorialScore": 570,
+      "frontstageEvidenceScore": 52,
+      "frontstageSelectionReasons": [
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：有较完整的原文事实支撑。",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-072",
+      "cardSource": "core_pool",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "POOL-2026-07-02-P-071",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "联合国专家组警告：AI 能力进步速度已超过科学认知",
+      "originalTitle": "联合国专家组警告：AI 能力进步速度已超过科学认知",
+      "sourceTitle": "联合国专家组警告：AI 能力进步速度已超过科学认知",
+      "displayTitle": "联合国专家组警告：AI 能力进步速度已超过科学认知",
+      "generatedTitle": "联合国专家组警告：AI 能力进步速度已超过科学认知",
+      "date": "2026-07-02",
+      "subject": "联合国专家组警告",
+      "source": "ithome.com",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/971/436.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "值得关注：有较完整的原文事实支撑。",
+      "translatedFact": "IT之家 7 月 2 日消息，联合国官网 1 日公报，由 40 名顶尖科学家和专家组成的联合国 AI 独立科学小组发布首份报告，警告 AI 快速发展在为全球各国和民众创造巨大机遇的同时，也带来了不容忽视的风险。",
+      "originalHighlights": [],
+      "visibleFragment": "IT之家 7 月 2 日消息，联合国官网 1 日公报，由 40 名顶尖科学家和专家组成的联合国 AI 独立科学小组发布首份报告，警告 AI 快速发展在为全球各国和民众创造巨大机遇的同时，也带来了不容忽视的风险。",
+      "sourceLinks": [
+        "https://www.ithome.com/0/971/436.htm"
+      ],
+      "status": "pooled",
+      "assetLevel": "core_pool",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 542,
+      "frontstageEditorialScore": 542,
+      "frontstageEvidenceScore": 52,
+      "frontstageSelectionReasons": [
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：有较完整的原文事实支撑。",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-071",
+      "cardSource": "core_pool",
       "frontstageSelectionTier": "core-signal-card",
       "frontstageSupplyFill": false
     },
@@ -49194,7 +49836,8 @@
       "sourceLevel": "A",
       "importanceScore": 5,
       "poolRoutes": [
-        "core_pool"
+        "core_pool",
+        "emerging_pool"
       ],
       "publishedAt": "2026-07-01T14:25:23.000Z",
       "tags": {
@@ -49435,7 +50078,8 @@
       "sourceLevel": "B",
       "importanceScore": 5,
       "poolRoutes": [
-        "core_pool"
+        "core_pool",
+        "emerging_pool"
       ],
       "publishedAt": "",
       "tags": {
@@ -49608,7 +50252,7 @@
       "frontstageSupplyFill": false
     },
     {
-      "id": "SIG-20260702-A07",
+      "id": "SIG-20260702-A14",
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
@@ -49622,7 +50266,8 @@
       "sourceLevel": "B",
       "importanceScore": 5,
       "poolRoutes": [
-        "core_pool"
+        "core_pool",
+        "emerging_pool"
       ],
       "publishedAt": "",
       "tags": {
@@ -49848,6 +50493,319 @@
         "指向平台能力、交付成本或生态合作变化"
       ],
       "frontstageValueDescription": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "frontstageQualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "cardSource": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "POOL-2026-07-02-P-069",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA",
+      "originalTitle": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA",
+      "sourceTitle": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA",
+      "displayTitle": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA",
+      "generatedTitle": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA",
+      "date": "2026-07-02",
+      "subject": "葡萄牙",
+      "source": "ithome.com",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/971/439.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "funding",
+          "label": "融资"
+        }
+      ],
+      "summary": "值得关注：涉及资金流向、预算规模或融资信号；影响 AI 落地的治理、合规或安全边界；指向平台能力、交付成本或生态合作变化。",
+      "translatedFact": "葡萄牙政府7月1日宣布开源大语言模型AMALIA正式发布，这是首个基于欧洲葡萄牙语开发的模型。由60余位研究人员历时18个月开发，先期投资550万欧元，使用了Deucalion、MareNostrum 5等算力基础设施。第一阶段利用约4万亿个葡语单词训练出9B规模模型，后续多模态升级后具备理解文本、图像、声音的能力。今年内还将新增22B版本并获得智能体能力，需追加150万欧元投资。",
+      "originalHighlights": [],
+      "visibleFragment": "葡萄牙政府7月1日宣布开源大语言模型AMALIA正式发布，这是首个基于欧洲葡萄牙语开发的模型。由60余位研究人员历时18个月开发，先期投资550万欧元，使用了Deucalion、MareNostrum 5等算力基础设施。第一阶段利用约4万亿个葡语单词训练出9B规模模型，后续多模态升级后具备理解文本、图像、声音的能力。今年内还将新增22B版本并获得智能体能力，需追加150万欧元投资。",
+      "sourceLinks": [
+        "https://www.ithome.com/0/971/439.htm"
+      ],
+      "status": "pooled",
+      "assetLevel": "core_pool",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 656,
+      "frontstageEditorialScore": 656,
+      "frontstageEvidenceScore": 52,
+      "frontstageSelectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "影响 AI 落地的治理、合规或安全边界",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "frontstageValueDescription": "值得关注：涉及资金流向、预算规模或融资信号；影响 AI 落地的治理、合规或安全边界；指向平台能力、交付成本或生态合作变化。",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-069",
+      "cardSource": "core_pool",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "SIG-20260702-A05",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Cloudflare 推出 Monetization Gateway 变现网关",
+      "originalTitle": "Cloudflare 推出 Monetization Gateway 变现网关",
+      "date": "2026-07-02",
+      "subject": "Cloudflare",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "sourceUrl": "https://blog.cloudflare.com/monetization-gateway",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool",
+        "user_feedback_pool"
+      ],
+      "publishedAt": "2026-07-01T17:13:17.147Z",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-ai-coding",
+          "track-enterprise-data"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [
+          "scenario-knowledge-base"
+        ],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-coding",
+        "track-enterprise-data",
+        "function-engineering",
+        "scenario-knowledge-base",
+        "customer-developer-team",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-enterprise-data",
+          "label": "企业数据智能"
+        },
+        {
+          "id": "scenario-knowledge-base",
+          "label": "知识库问答"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "Cloudflare 推出 Monetization Gateway 变现网关 Cloudflare 推出 Monetization Gateway 变现网关 原始来源标题显示：Cloudflare 推出 Monetization Gateway 变现网关。",
+        "missingFields": [
+          "specific_task"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "finance_team",
+              "label": "Finance, billing, or accounting team"
+            },
+            {
+              "id": "it_security_team",
+              "label": "IT, security, governance, or platform team"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "finance",
+              "label": "Finance / accounting"
+            },
+            {
+              "id": "it_security",
+              "label": "IT / security / platform governance"
+            }
+          ],
+          "specific_task": [],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "product_launch",
+              "label": "Product, feature, model, API, or platform launch"
+            },
+            {
+              "id": "pricing_change",
+              "label": "Pricing, packaging, cost, usage-limit, or billing change"
+            }
+          ],
+          "product_form": [
+            {
+              "id": "api",
+              "label": "API, SDK, or developer-facing service"
+            },
+            {
+              "id": "model_gateway",
+              "label": "Model gateway, router, proxy, or inference control layer"
+            }
+          ],
+          "delivery_model": [
+            {
+              "id": "api_usage_based",
+              "label": "API or usage-based pricing"
+            },
+            {
+              "id": "enterprise_subscription",
+              "label": "Enterprise subscription"
+            }
+          ],
+          "pain_or_constraint": [
+            {
+              "id": "permission_boundary",
+              "label": "Permissions, data access, or responsibility boundary"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "deployment_scale",
+              "label": "Deployment scale, seats, locations, users, or volume disclosed"
+            }
+          ],
+          "source_evidence_type": [
+            {
+              "id": "technical_blog",
+              "label": "Technical blog, developer doc, or engineering post"
+            }
+          ]
+        },
+        "buyer_or_user": [
+          "finance_team",
+          "it_security_team"
+        ],
+        "buyerOrUser": [
+          "finance_team",
+          "it_security_team"
+        ],
+        "team_or_function": [
+          "finance",
+          "it_security"
+        ],
+        "teamOrFunction": [
+          "finance",
+          "it_security"
+        ],
+        "specific_task": [],
+        "specificTask": [],
+        "business_action": [
+          "customer_deployment",
+          "product_launch",
+          "pricing_change"
+        ],
+        "businessAction": [
+          "customer_deployment",
+          "product_launch",
+          "pricing_change"
+        ],
+        "product_form": [
+          "api",
+          "model_gateway"
+        ],
+        "productForm": [
+          "api",
+          "model_gateway"
+        ],
+        "delivery_model": [
+          "api_usage_based",
+          "enterprise_subscription"
+        ],
+        "deliveryModel": [
+          "api_usage_based",
+          "enterprise_subscription"
+        ],
+        "pain_or_constraint": [
+          "permission_boundary"
+        ],
+        "painOrConstraint": [
+          "permission_boundary"
+        ],
+        "adoption_evidence": [
+          "deployment_scale"
+        ],
+        "adoptionEvidence": [
+          "deployment_scale"
+        ],
+        "source_evidence_type": [
+          "technical_blog"
+        ],
+        "sourceEvidenceType": [
+          "technical_blog"
+        ]
+      },
+      "summary": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "translatedFact": "Cloudflare 宣布推出 Monetization Gateway，允许客户对受 Cloudflare 保护的网页、数据集、API 或 MCP 工具等任意资产收费。该网关提供统一控制面板管理支付策略和访问控制，在边缘处理支付验证和结算，保护源站免受高并发支付请求影响。结算采用基于 x402 协议的稳定币（如 Open USD 和 USDC），支持低于一美分的微支付，数秒内到账。此举旨在适应 AI 代理成为主流互联网用户后的按使用",
+      "originalHighlights": [],
+      "visibleFragment": "",
+      "sourceLinks": [
+        "https://blog.cloudflare.com/monetization-gateway"
+      ],
+      "sourceTitle": "Cloudflare 推出 Monetization Gateway 变现网关",
+      "status": "published",
+      "assetLevel": "frontstage",
+      "evidenceGate": "core_evidence_passed",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-ai-agent",
+      "generatedTitle": "Cloudflare 推出 Monetization Gateway 变现网关",
+      "displayTitle": "Cloudflare 推出 Monetization Gateway 变现网关",
+      "largeVendor": false,
+      "frontstageRankScore": 640,
+      "frontstageEditorialScore": 640,
+      "frontstageEvidenceScore": 40,
+      "frontstageSelectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
       "frontstageQualityWarnings": [
         "可见原文片段不足，已降权处理"
       ],
@@ -50231,7 +51189,7 @@
       "frontstageSupplyFill": false
     },
     {
-      "id": "SIG-20260702-A05",
+      "id": "SIG-20260702-A13",
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
@@ -50245,7 +51203,8 @@
       "sourceLevel": "S",
       "importanceScore": 5,
       "poolRoutes": [
-        "core_pool"
+        "core_pool",
+        "emerging_pool"
       ],
       "publishedAt": "2026-07-01T16:17:55.480Z",
       "tags": {
@@ -50472,7 +51431,72 @@
       "frontstageSupplyFill": false
     },
     {
-      "id": "SIG-20260702-A06",
+      "id": "POOL-2026-07-02-P-058",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投",
+      "originalTitle": "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投",
+      "sourceTitle": "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投",
+      "displayTitle": "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投",
+      "generatedTitle": "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投",
+      "date": "2026-07-02",
+      "subject": "快手可灵 AI",
+      "source": "ithome.com",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/971/440.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "funding",
+          "label": "融资"
+        }
+      ],
+      "summary": "值得关注：涉及资金流向、预算规模或融资信号；有较完整的原文事实支撑。",
+      "translatedFact": "IT之家 7 月 2 日消息，据《南华早报》1 日援引多名知情人士消息称，快手旗下可灵 AI 即将 完成一轮 30 亿美元（IT之家注：现汇率约合 204.",
+      "originalHighlights": [],
+      "visibleFragment": "IT之家 7 月 2 日消息，据《南华早报》1 日援引多名知情人士消息称，快手旗下可灵 AI 即将 完成一轮 30 亿美元（IT之家注：现汇率约合 204.",
+      "sourceLinks": [
+        "https://www.ithome.com/0/971/440.htm"
+      ],
+      "status": "pooled",
+      "assetLevel": "core_pool",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 622,
+      "frontstageEditorialScore": 622,
+      "frontstageEvidenceScore": 52,
+      "frontstageSelectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：涉及资金流向、预算规模或融资信号；有较完整的原文事实支撑。",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-058",
+      "cardSource": "core_pool",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "SIG-20260702-A15",
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
@@ -50680,6 +51704,266 @@
       "fromCorePool": true,
       "cardSource": "signal_card",
       "promotionStatus": "frontstage_card",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "POOL-2026-07-02-P-041",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+      "originalTitle": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+      "sourceTitle": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+      "displayTitle": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+      "generatedTitle": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+      "date": "2026-07-02",
+      "subject": "Cloudflare",
+      "source": "blog.cloudflare.com",
+      "sourceName": "blog.cloudflare.com",
+      "sourceUrl": "https://blog.cloudflare.com/making-ai-search-smarter",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "值得关注：指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "translatedFact": "Cloudflare 宣布推出两项新举措，以应对 AI 搜索重构网络生态带来的创作困境。在智能体时代，创作者既需要保持可发现性，又要确保作品获得合理报酬，这两项举措旨在帮助平衡二者的关系。具体细节尚未公布。",
+      "originalHighlights": [],
+      "visibleFragment": "Cloudflare 宣布推出两项新举措，以应对 AI 搜索重构网络生态带来的创作困境。在智能体时代，创作者既需要保持可发现性，又要确保作品获得合理报酬，这两项举措旨在帮助平衡二者的关系。具体细节尚未公布。",
+      "sourceLinks": [
+        "https://blog.cloudflare.com/making-ai-search-smarter"
+      ],
+      "status": "pooled",
+      "assetLevel": "core_pool",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 582,
+      "frontstageEditorialScore": 582,
+      "frontstageEvidenceScore": 52,
+      "frontstageSelectionReasons": [
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-041",
+      "cardSource": "core_pool",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "POOL-2026-07-02-P-043",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "GLM Coding Pro 发布：面向专业开发者的编码助手",
+      "originalTitle": "GLM Coding Pro 发布：面向专业开发者的编码助手",
+      "sourceTitle": "GLM Coding Pro 发布：面向专业开发者的编码助手",
+      "displayTitle": "GLM Coding Pro 发布：面向专业开发者的编码助手",
+      "generatedTitle": "GLM Coding Pro 发布：面向专业开发者的编码助手",
+      "date": "2026-07-02",
+      "subject": "GLM Coding Pro",
+      "source": "zcode.z.ai",
+      "sourceName": "zcode.z.ai",
+      "sourceUrl": "https://zcode.z.ai/en",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool",
+        "user_feedback_pool"
+      ],
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "值得关注：指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "translatedFact": "GLM Coding Pro 在 Lite 基础上提供 5 倍用量，针对中型代码库日常开发优化，包含精选 MCP 工具，可优先访问最新旗舰模型和功能，生成速度更快。",
+      "originalHighlights": [],
+      "visibleFragment": "GLM Coding Pro 在 Lite 基础上提供 5 倍用量，针对中型代码库日常开发优化，包含精选 MCP 工具，可优先访问最新旗舰模型和功能，生成速度更快。",
+      "sourceLinks": [
+        "https://zcode.z.ai/en"
+      ],
+      "status": "pooled",
+      "assetLevel": "core_pool",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
+      "evidenceGate": "user_feedback_signal",
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 582,
+      "frontstageEditorialScore": 582,
+      "frontstageEvidenceScore": 52,
+      "frontstageSelectionReasons": [
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-043",
+      "cardSource": "core_pool",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "POOL-2026-07-02-P-072",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "originalTitle": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "sourceTitle": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "displayTitle": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "generatedTitle": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "date": "2026-07-02",
+      "subject": "华为联合上海电信落地 5G-A×AI 大上行样板点",
+      "source": "ithome.com",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/971/407.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "值得关注：有较完整的原文事实支撑。",
+      "translatedFact": "IT之家 7 月 2 日消息，华为官昨日发文称，在 2026 年世界移动通信大会 · 上海启幕前夕，中国电信股份有限公司上海分公司联合华为在上海徐汇西岸美术馆打造了 5G-A×AI 大上行样板点。",
+      "originalHighlights": [],
+      "visibleFragment": "IT之家 7 月 2 日消息，华为官昨日发文称，在 2026 年世界移动通信大会 · 上海启幕前夕，中国电信股份有限公司上海分公司联合华为在上海徐汇西岸美术馆打造了 5G-A×AI 大上行样板点。",
+      "sourceLinks": [
+        "https://www.ithome.com/0/971/407.htm"
+      ],
+      "status": "pooled",
+      "assetLevel": "core_pool",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 570,
+      "frontstageEditorialScore": 570,
+      "frontstageEvidenceScore": 52,
+      "frontstageSelectionReasons": [
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：有较完整的原文事实支撑。",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-072",
+      "cardSource": "core_pool",
+      "frontstageSelectionTier": "core-signal-card",
+      "frontstageSupplyFill": false
+    },
+    {
+      "id": "POOL-2026-07-02-P-071",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "联合国专家组警告：AI 能力进步速度已超过科学认知",
+      "originalTitle": "联合国专家组警告：AI 能力进步速度已超过科学认知",
+      "sourceTitle": "联合国专家组警告：AI 能力进步速度已超过科学认知",
+      "displayTitle": "联合国专家组警告：AI 能力进步速度已超过科学认知",
+      "generatedTitle": "联合国专家组警告：AI 能力进步速度已超过科学认知",
+      "date": "2026-07-02",
+      "subject": "联合国专家组警告",
+      "source": "ithome.com",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/971/436.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "值得关注：有较完整的原文事实支撑。",
+      "translatedFact": "IT之家 7 月 2 日消息，联合国官网 1 日公报，由 40 名顶尖科学家和专家组成的联合国 AI 独立科学小组发布首份报告，警告 AI 快速发展在为全球各国和民众创造巨大机遇的同时，也带来了不容忽视的风险。",
+      "originalHighlights": [],
+      "visibleFragment": "IT之家 7 月 2 日消息，联合国官网 1 日公报，由 40 名顶尖科学家和专家组成的联合国 AI 独立科学小组发布首份报告，警告 AI 快速发展在为全球各国和民众创造巨大机遇的同时，也带来了不容忽视的风险。",
+      "sourceLinks": [
+        "https://www.ithome.com/0/971/436.htm"
+      ],
+      "status": "pooled",
+      "assetLevel": "core_pool",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 542,
+      "frontstageEditorialScore": 542,
+      "frontstageEvidenceScore": 52,
+      "frontstageSelectionReasons": [
+        "有较完整的原文事实支撑"
+      ],
+      "frontstageValueDescription": "值得关注：有较完整的原文事实支撑。",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-071",
+      "cardSource": "core_pool",
       "frontstageSelectionTier": "core-signal-card",
       "frontstageSupplyFill": false
     },
@@ -98225,12 +99509,12 @@
   "frontstageSelection": [
     {
       "date": "2026-07-02",
-      "candidateCount": 7,
-      "coreCandidateCount": 7,
-      "qualifiedCount": 7,
-      "selectedCount": 7,
+      "candidateCount": 17,
+      "coreCandidateCount": 14,
+      "qualifiedCount": 14,
+      "selectedCount": 14,
       "supplyConstrained": false,
-      "largeCompanyCandidateCount": 2,
+      "largeCompanyCandidateCount": 4,
       "rejectedDuplicates": []
     },
     {
@@ -98567,7 +99851,7 @@
           "date": "2026-07-02"
         },
         {
-          "id": "SIG-20260702-A05",
+          "id": "SIG-20260702-A13",
           "title": "用 Genkit 构建智能体全栈应用",
           "subject": "Google Developers Blog",
           "categoryLabel": "案例",
@@ -98601,7 +99885,7 @@
       ],
       "supportingCards": [
         {
-          "id": "SIG-20260702-A06",
+          "id": "SIG-20260702-A15",
           "title": "Gemini Spark，Google 智能体助手，现已登陆 Mac",
           "subject": "",
           "categoryLabel": "产品",
@@ -98614,37 +99898,69 @@
   ],
   "relationshipGraph": {
     "date": "2026-07-02",
-    "nodeCount": 20,
-    "edgeCount": 25,
+    "nodeCount": 25,
+    "edgeCount": 34,
     "nodes": [
       {
         "id": "category:融资",
         "label": "融资",
         "type": "category",
-        "weight": 4,
+        "weight": 6,
         "category": "funding"
-      },
-      {
-        "id": "category:案例",
-        "label": "案例",
-        "type": "category",
-        "weight": 2,
-        "category": "case"
       },
       {
         "id": "category:产品",
         "label": "产品",
         "type": "category",
-        "weight": 1,
+        "weight": 5,
         "category": "product-service"
+      },
+      {
+        "id": "category:案例",
+        "label": "案例",
+        "type": "category",
+        "weight": 3,
+        "category": "case"
       },
       {
         "id": "subject:Cloudflare",
         "label": "Cloudflare",
         "type": "subject",
-        "weight": 1,
+        "weight": 3,
         "category": "case",
-        "sourceName": "Cloudflare Blog"
+        "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+      },
+      {
+        "id": "subject:华为联合上海电信落地-5G-A×AI-大上行样板点",
+        "label": "华为联合上海电信落地 5G-A×AI 大上行样板点",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "ithome.com"
+      },
+      {
+        "id": "subject:快手可灵-AI",
+        "label": "快手可灵 AI",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "ithome.com"
+      },
+      {
+        "id": "subject:联合国专家组警告",
+        "label": "联合国专家组警告",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "ithome.com"
+      },
+      {
+        "id": "subject:葡萄牙",
+        "label": "葡萄牙",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "ithome.com"
       },
       {
         "id": "subject:Engram",
@@ -98653,6 +99969,14 @@
         "weight": 1,
         "category": "funding",
         "sourceName": "theaiinsider.tech"
+      },
+      {
+        "id": "subject:GLM-Coding-Pro",
+        "label": "GLM Coding Pro",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "zcode.z.ai"
       },
       {
         "id": "subject:Google-Developers-Blog",
@@ -98719,8 +100043,22 @@
         "id": "signal:track-ai-coding",
         "label": "AI Coding",
         "type": "signal",
-        "weight": 2,
+        "weight": 3,
         "tag": "track-ai-coding"
+      },
+      {
+        "id": "signal:function-engineering",
+        "label": "工程研发",
+        "type": "signal",
+        "weight": 2,
+        "tag": "function-engineering"
+      },
+      {
+        "id": "signal:track-enterprise-data",
+        "label": "企业数据智能",
+        "type": "signal",
+        "weight": 2,
+        "tag": "track-enterprise-data"
       },
       {
         "id": "signal:evidence-product-launch",
@@ -98728,13 +100066,6 @@
         "type": "signal",
         "weight": 1,
         "tag": "evidence-product-launch"
-      },
-      {
-        "id": "signal:function-engineering",
-        "label": "工程研发",
-        "type": "signal",
-        "weight": 1,
-        "tag": "function-engineering"
       },
       {
         "id": "signal:evidence-partnership-integration",
@@ -98756,13 +100087,6 @@
         "type": "signal",
         "weight": 1,
         "tag": "evidence-customer-adoption"
-      },
-      {
-        "id": "signal:track-enterprise-data",
-        "label": "企业数据智能",
-        "type": "signal",
-        "weight": 1,
-        "tag": "track-enterprise-data"
       }
     ],
     "edges": [
@@ -98770,11 +100094,13 @@
         "from": "category:案例",
         "to": "subject:Cloudflare",
         "label": "案例",
-        "weight": 1,
+        "weight": 2,
         "cardIds": [
+          "SIG-20260702-A05",
           "SIG-20260702-A04"
         ],
         "titles": [
+          "Cloudflare 推出 Monetization Gateway 变现网关",
           "Cloudflare 推出全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面"
         ]
       },
@@ -98784,7 +100110,7 @@
         "label": "案例",
         "weight": 1,
         "cardIds": [
-          "SIG-20260702-A05"
+          "SIG-20260702-A13"
         ],
         "titles": [
           "用 Genkit 构建智能体全栈应用"
@@ -98796,10 +100122,58 @@
         "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260702-A06"
+          "SIG-20260702-A15"
         ],
         "titles": [
           "Gemini Spark，Google 智能体助手，现已登陆 Mac"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:Cloudflare",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "POOL-2026-07-02-P-041"
+        ],
+        "titles": [
+          "Cloudflare 推出两项新举措，让 AI 搜索更智能"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:GLM-Coding-Pro",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "POOL-2026-07-02-P-043"
+        ],
+        "titles": [
+          "GLM Coding Pro 发布：面向专业开发者的编码助手"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:华为联合上海电信落地-5G-A×AI-大上行样板点",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "POOL-2026-07-02-P-072"
+        ],
+        "titles": [
+          "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:联合国专家组警告",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "POOL-2026-07-02-P-071"
+        ],
+        "titles": [
+          "联合国专家组警告：AI 能力进步速度已超过科学认知"
         ]
       },
       {
@@ -98880,7 +100254,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260702-A07"
+          "SIG-20260702-A14"
         ],
         "titles": [
           "Engram 携 9800 万美元启动，打造真正了解组织的 AI"
@@ -98892,7 +100266,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260702-A07"
+          "SIG-20260702-A14"
         ],
         "titles": [
           "Engram 携 9800 万美元启动，打造真正了解组织的 AI"
@@ -98904,10 +100278,46 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260702-A07"
+          "SIG-20260702-A14"
         ],
         "titles": [
           "Engram 携 9800 万美元启动，打造真正了解组织的 AI"
+        ]
+      },
+      {
+        "from": "subject:Cloudflare",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260702-A05"
+        ],
+        "titles": [
+          "Cloudflare 推出 Monetization Gateway 变现网关"
+        ]
+      },
+      {
+        "from": "subject:Cloudflare",
+        "to": "signal:track-enterprise-data",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260702-A05"
+        ],
+        "titles": [
+          "Cloudflare 推出 Monetization Gateway 变现网关"
+        ]
+      },
+      {
+        "from": "subject:Cloudflare",
+        "to": "signal:function-engineering",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260702-A05"
+        ],
+        "titles": [
+          "Cloudflare 推出 Monetization Gateway 变现网关"
         ]
       },
       {
@@ -98952,7 +100362,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260702-A05"
+          "SIG-20260702-A13"
         ],
         "titles": [
           "用 Genkit 构建智能体全栈应用"
@@ -98964,7 +100374,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260702-A05"
+          "SIG-20260702-A13"
         ],
         "titles": [
           "用 Genkit 构建智能体全栈应用"
@@ -98976,7 +100386,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260702-A05"
+          "SIG-20260702-A13"
         ],
         "titles": [
           "用 Genkit 构建智能体全栈应用"
@@ -98988,7 +100398,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260702-A06"
+          "SIG-20260702-A15"
         ],
         "titles": [
           "Gemini Spark，Google 智能体助手，现已登陆 Mac"
@@ -99000,7 +100410,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260702-A06"
+          "SIG-20260702-A15"
         ],
         "titles": [
           "Gemini Spark，Google 智能体助手，现已登陆 Mac"
@@ -99012,7 +100422,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260702-A06"
+          "SIG-20260702-A15"
         ],
         "titles": [
           "Gemini Spark，Google 智能体助手，现已登陆 Mac"
@@ -99048,10 +100458,22 @@
         "label": "融资",
         "weight": 1,
         "cardIds": [
-          "SIG-20260702-A07"
+          "SIG-20260702-A14"
         ],
         "titles": [
           "Engram 携 9800 万美元启动，打造真正了解组织的 AI"
+        ]
+      },
+      {
+        "from": "category:融资",
+        "to": "subject:葡萄牙",
+        "label": "融资",
+        "weight": 1,
+        "cardIds": [
+          "POOL-2026-07-02-P-069"
+        ],
+        "titles": [
+          "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA"
         ]
       },
       {
@@ -99064,6 +100486,18 @@
         ],
         "titles": [
           "Together 获得 $800M C 轮 融资"
+        ]
+      },
+      {
+        "from": "category:融资",
+        "to": "subject:快手可灵-AI",
+        "label": "融资",
+        "weight": 1,
+        "cardIds": [
+          "POOL-2026-07-02-P-058"
+        ],
+        "titles": [
+          "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投"
         ]
       }
     ],
@@ -99110,7 +100544,7 @@
             "date": "2026-07-02"
           },
           {
-            "id": "SIG-20260702-A05",
+            "id": "SIG-20260702-A13",
             "title": "用 Genkit 构建智能体全栈应用",
             "subject": "Google Developers Blog",
             "categoryLabel": "案例",
@@ -99144,7 +100578,7 @@
         ],
         "supportingCards": [
           {
-            "id": "SIG-20260702-A06",
+            "id": "SIG-20260702-A15",
             "title": "Gemini Spark，Google 智能体助手，现已登陆 Mac",
             "subject": "",
             "categoryLabel": "产品",
@@ -99264,6 +100698,210 @@
       ]
     },
     {
+      "object": "customer-developer-team",
+      "label": "开发团队",
+      "todayCount": 3,
+      "last7Count": 6,
+      "last30Count": 91,
+      "subjects": [
+        {
+          "label": "Cloudflare",
+          "count": 1
+        },
+        {
+          "label": "Google Developers Blog",
+          "count": 1
+        },
+        {
+          "label": "Venice AI",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 2
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 3
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 3
+        },
+        {
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 2
+        },
+        {
+          "tag": "scenario-knowledge-base",
+          "label": "知识库问答",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "object": "evidence-customer-adoption",
+      "label": "客户采用",
+      "todayCount": 3,
+      "last7Count": 8,
+      "last30Count": 71,
+      "subjects": [
+        {
+          "label": "Cloudflare",
+          "count": 2
+        },
+        {
+          "label": "Google Developers Blog",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 3
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 2
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 2
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 2
+        },
+        {
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "object": "function-engineering",
+      "label": "工程研发",
+      "todayCount": 3,
+      "last7Count": 6,
+      "last30Count": 91,
+      "subjects": [
+        {
+          "label": "Cloudflare",
+          "count": 1
+        },
+        {
+          "label": "Google Developers Blog",
+          "count": 1
+        },
+        {
+          "label": "Venice AI",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 2
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 3
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 3
+        },
+        {
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 2
+        },
+        {
+          "tag": "scenario-knowledge-base",
+          "label": "知识库问答",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "object": "track-ai-coding",
+      "label": "AI Coding",
+      "todayCount": 3,
+      "last7Count": 6,
+      "last30Count": 91,
+      "subjects": [
+        {
+          "label": "Cloudflare",
+          "count": 1
+        },
+        {
+          "label": "Google Developers Blog",
+          "count": 1
+        },
+        {
+          "label": "Venice AI",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 2
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 3
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 3
+        },
+        {
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 2
+        },
+        {
+          "tag": "scenario-knowledge-base",
+          "label": "知识库问答",
+          "count": 2
+        }
+      ]
+    },
+    {
       "object": "track-ai-infra",
       "label": "AI 基础设施",
       "todayCount": 3,
@@ -99303,100 +100941,6 @@
         {
           "tag": "evidence-pricing-cost",
           "label": "价格成本",
-          "count": 1
-        },
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "object": "customer-developer-team",
-      "label": "开发团队",
-      "todayCount": 2,
-      "last7Count": 5,
-      "last30Count": 90,
-      "subjects": [
-        {
-          "label": "Google Developers Blog",
-          "count": 1
-        },
-        {
-          "label": "Venice AI",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 1
-        },
-        {
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 2
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 2
-        },
-        {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 1
-        },
-        {
-          "tag": "evidence-funding",
-          "label": "融资证据",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "object": "evidence-customer-adoption",
-      "label": "客户采用",
-      "todayCount": 2,
-      "last7Count": 7,
-      "last30Count": 70,
-      "subjects": [
-        {
-          "label": "Cloudflare",
-          "count": 1
-        },
-        {
-          "label": "Google Developers Blog",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 2
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "track-enterprise-workflow",
-          "label": "企业工作流",
-          "count": 2
-        },
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 1
-        },
-        {
-          "tag": "evidence-partnership-integration",
-          "label": "合作集成",
           "count": 1
         },
         {
@@ -99447,104 +100991,6 @@
         {
           "tag": "evidence-product-launch",
           "label": "产品发布",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "object": "function-engineering",
-      "label": "工程研发",
-      "todayCount": 2,
-      "last7Count": 5,
-      "last30Count": 90,
-      "subjects": [
-        {
-          "label": "Google Developers Blog",
-          "count": 1
-        },
-        {
-          "label": "Venice AI",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 1
-        },
-        {
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 2
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 2
-        },
-        {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 1
-        },
-        {
-          "tag": "evidence-funding",
-          "label": "融资证据",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "object": "track-ai-coding",
-      "label": "AI Coding",
-      "todayCount": 2,
-      "last7Count": 5,
-      "last30Count": 90,
-      "subjects": [
-        {
-          "label": "Google Developers Blog",
-          "count": 1
-        },
-        {
-          "label": "Venice AI",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 1
-        },
-        {
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 2
-        },
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 2
-        },
-        {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 1
-        },
-        {
-          "tag": "evidence-funding",
-          "label": "融资证据",
           "count": 1
         }
       ]
@@ -99915,6 +101361,14 @@
     },
     {
       "window": "7 天",
+      "object": "evidence-customer-adoption",
+      "label": "客户采用",
+      "cardCount": 8,
+      "lastSeen": "2026-07-02",
+      "filter": "evidence-customer-adoption"
+    },
+    {
+      "window": "7 天",
       "object": "evidence-funding",
       "label": "融资证据",
       "cardCount": 8,
@@ -99931,11 +101385,11 @@
     },
     {
       "window": "7 天",
-      "object": "evidence-customer-adoption",
-      "label": "客户采用",
-      "cardCount": 7,
+      "object": "customer-developer-team",
+      "label": "开发团队",
+      "cardCount": 6,
       "lastSeen": "2026-07-02",
-      "filter": "evidence-customer-adoption"
+      "filter": "customer-developer-team"
     },
     {
       "window": "7 天",
@@ -99947,17 +101401,9 @@
     },
     {
       "window": "7 天",
-      "object": "customer-developer-team",
-      "label": "开发团队",
-      "cardCount": 5,
-      "lastSeen": "2026-07-02",
-      "filter": "customer-developer-team"
-    },
-    {
-      "window": "7 天",
       "object": "function-engineering",
       "label": "工程研发",
-      "cardCount": 5,
+      "cardCount": 6,
       "lastSeen": "2026-07-02",
       "filter": "function-engineering"
     },
@@ -99965,7 +101411,7 @@
       "window": "7 天",
       "object": "track-ai-coding",
       "label": "AI Coding",
-      "cardCount": 5,
+      "cardCount": 6,
       "lastSeen": "2026-07-02",
       "filter": "track-ai-coding"
     },
@@ -99997,7 +101443,7 @@
       "window": "30 天",
       "object": "customer-developer-team",
       "label": "开发团队",
-      "cardCount": 90,
+      "cardCount": 91,
       "lastSeen": "2026-07-02",
       "filter": "customer-developer-team"
     },
@@ -100005,7 +101451,7 @@
       "window": "30 天",
       "object": "function-engineering",
       "label": "工程研发",
-      "cardCount": 90,
+      "cardCount": 91,
       "lastSeen": "2026-07-02",
       "filter": "function-engineering"
     },
@@ -100013,7 +101459,7 @@
       "window": "30 天",
       "object": "track-ai-coding",
       "label": "AI Coding",
-      "cardCount": 90,
+      "cardCount": 91,
       "lastSeen": "2026-07-02",
       "filter": "track-ai-coding"
     },
@@ -100021,7 +101467,7 @@
       "window": "30 天",
       "object": "evidence-customer-adoption",
       "label": "客户采用",
-      "cardCount": 70,
+      "cardCount": 71,
       "lastSeen": "2026-07-02",
       "filter": "evidence-customer-adoption"
     },
@@ -100029,7 +101475,7 @@
       "window": "30 天",
       "object": "track-enterprise-data",
       "label": "企业数据智能",
-      "cardCount": 48,
+      "cardCount": 49,
       "lastSeen": "2026-07-02",
       "filter": "track-enterprise-data"
     }

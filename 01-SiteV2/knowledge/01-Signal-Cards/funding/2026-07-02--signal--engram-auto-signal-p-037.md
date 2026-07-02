@@ -1,5 +1,5 @@
 ---
-id: SIG-20260702-A07
+id: SIG-20260702-A14
 type: signal_card
 signal_type: funding
 title: "Engram 携 9800 万美元启动，打造真正了解组织的 AI"
@@ -9,8 +9,8 @@ source_title: "Engram Launches with $98M to Build AI That Actually Knows Your Or
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-02T05:53:33.280Z
-updated_at: 2026-07-02T05:53:33.280Z
+created_at: 2026-07-02T07:21:56.472Z
+updated_at: 2026-07-02T07:21:56.472Z
 
 raw_refs: ["R-037"]
 pool_refs: ["P-037"]
@@ -25,6 +25,7 @@ primary_raw:
   has_full_text: true
   pool_routes:
     - core_pool
+    - emerging_pool
   raw_qc_decision: allow
   importance_type: important_funding
   importance_score: 5

@@ -9,8 +9,8 @@ source_title: "Announcing our $800M Series C to accelerate the shift to open-sou
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-02T05:53:33.280Z
-updated_at: 2026-07-02T05:53:33.280Z
+created_at: 2026-07-02T07:21:56.472Z
+updated_at: 2026-07-02T07:21:56.472Z
 
 raw_refs: ["R-048"]
 pool_refs: ["P-048"]

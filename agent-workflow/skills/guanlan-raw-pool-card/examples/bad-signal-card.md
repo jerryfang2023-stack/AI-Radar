@@ -40,7 +40,7 @@ Why it fails:
 - It uses title text as value analysis.
 - It invents confidence from keyword extraction rather than evidence.
 
-## Bad Core Pool Candidate
+## Bad Backend Candidate
 
 Candidate-only item:
 
@@ -53,5 +53,5 @@ Candidate-only item:
 
 Why it fails:
 
-- Candidate-only Core Pool evidence is visible to Hermes, so it must explain why it did not become a formal Card.
+- Candidate-only backend evidence is visible to Hermes, so it must explain why it did not become a formal Card.
 - Add `notPromotedReason`, `repairSuggestion`, and `promotePriority`.

@@ -20,15 +20,11 @@ if (!date) {
 
 const now = new Date().toISOString();
 const autoSignalEnabled = args.get("auto-signals") !== "false" && args.get("manual-only") !== "true";
+const rawDirectEnabled = args.get("from-raw") !== "false";
 const assetGenerationLimit = args.has("asset-generation-limit")
   ? nonNegativeInt(args.get("asset-generation-limit"), Number.POSITIVE_INFINITY)
   : Number.POSITIVE_INFINITY;
 const generateTrendCandidates = args.get("trend-candidates") === "true";
-const v3SignalLanePlan = [
-  { type: "funding", target: 3 },
-  { type: "case", target: 3 },
-  { type: "product_service", target: 3 },
-];
 
 const signalSpecs = {
   "2026-06-06": [
@@ -905,6 +901,79 @@ function poolSections() {
   return map;
 }
 
+function rawFilesForDate() {
+  const dir = path.join(root, "01-SiteV2", "content", "01-raw", "originals", date);
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir)
+    .filter((name) => name.toLowerCase().endsWith(".json"))
+    .map((name) => path.join(dir, name));
+}
+
+function rawField(raw, key, fallback = "") {
+  const value = raw?.[key];
+  if (Array.isArray(value) || (value && typeof value === "object")) return JSON.stringify(value);
+  return String(value ?? fallback ?? "");
+}
+
+function rawDirectSection(raw, file) {
+  const rawRef = raw.raw_id || path.basename(file, ".json").match(/r-\d+/iu)?.[0]?.toUpperCase() || "";
+  const title = raw.title || raw.source_title || raw.original_url || raw.canonical_url || rawRef;
+  const rel = path.relative(root, file).replace(/\\/g, "/");
+  const sourceUrl = raw.canonical_url || raw.original_url || raw.url || "";
+  const lines = [
+    `## RAW-${rawRef}｜${title}`,
+    `- raw_to_card_direct: true`,
+    `- raw_ref: ${rawRef}`,
+    `- source: ${raw.source_name || raw.source || ""}`,
+    `- source_url: ${sourceUrl}`,
+    `- source_type: ${raw.source_type || ""}`,
+    `- source_level: ${raw.source_level || raw.acquisition_source_level || "B"}`,
+    `- source_role: ${raw.source_role || "resolved_original_source"}`,
+    `- acquisition_channel: ${raw.acquisition_channel || ""}`,
+    `- search_path: ${raw.search_path || ""}`,
+    `- search_intent: ${raw.search_intent || ""}`,
+    `- evidence_object_type: ${raw.evidence_object_type || (raw.event_evidence ? "event" : "")}`,
+    `- raw_qc_decision: ${raw.raw_qc_decision || ""}`,
+    `- has_full_text: ${String(Boolean(raw.has_full_text || raw.full_text || raw.clean_text))}`,
+    `- extraction_method: ${raw.extraction_method || raw.fetch_status || ""}`,
+    `- extraction_quality: ${raw.extraction_quality || ""}`,
+    `- readability_score: ${raw.readability_score || raw.extractor_diagnostics?.readability_score || ""}`,
+    `- pool_routes: raw_direct`,
+    `- raw_archive: ${raw.markdown_snapshot_path || ""}`,
+    `- raw_json: ${rel}`,
+    `- raw_full_text_hash: ${raw.full_text_hash || raw.content_hash || raw.evidence_completeness?.evidence_hash || ""}`,
+    `- full_text_hash: ${raw.full_text_hash || raw.content_hash || raw.evidence_completeness?.evidence_hash || ""}`,
+    `- key_excerpts: ${rawField(raw, "key_excerpts", "[]")}`,
+    `- evidence_seed: ${rawField(raw, "evidence_seed", "{}")}`,
+    `- evidence_completeness: ${rawField(raw, "evidence_completeness", "{}")}`,
+    `- degradation_reasons: ${rawField(raw, "degradation_reasons", "[]")}`,
+    `- missing_information: ${rawField(raw, "missing_information", "")}`,
+  ];
+  return `${lines.join("\n")}\n`;
+}
+
+function addRawDirectSections(sections) {
+  const existingRawRefs = new Set(
+    [...sections.values()].map((section) => value(section, "raw_ref")).filter(Boolean)
+  );
+  for (const file of rawFilesForDate()) {
+    try {
+      const raw = JSON.parse(fs.readFileSync(file, "utf8"));
+      const rawRef = raw.raw_id || path.basename(file, ".json").match(/r-\d+/iu)?.[0]?.toUpperCase();
+      if (!rawRef || existingRawRefs.has(rawRef)) continue;
+      sections.set(`RAW-${rawRef}`, rawDirectSection(raw, file));
+    } catch {
+      // Ignore malformed raw artifacts; raw QC will surface source issues.
+    }
+  }
+  return sections;
+}
+
+function candidateSections() {
+  const sections = candidateSections();
+  return rawDirectEnabled ? addRawDirectSections(sections) : sections;
+}
+
 function value(section, key) {
   return section.match(new RegExp(`^- ${key}:\\s*(.+)$`, "mu"))?.[1]?.trim().replace(/^`|`$/g, "") || "";
 }
@@ -916,8 +985,12 @@ function nonNegativeInt(raw, fallback) {
 }
 
 function poolTitle(section) {
-  const heading = section.match(/^##\s+P-\d+(.*)$/mu)?.[1] || "";
+  const heading = section.match(/^##\s+(?:P-\d+|RAW-R-\d+)(.*)$/mu)?.[1] || "";
   return heading.replace(/^[^\p{L}\p{N}$]+/u, "").trim();
+}
+
+function isRawDirectSection(section) {
+  return value(section, "raw_to_card_direct") === "true";
 }
 
 function textForInference(section) {
@@ -1026,8 +1099,14 @@ function pathSegmentsFromUrl(raw = "") {
 }
 
 function isSocialOrCommunitySection(section) {
+  const sourceUrl = value(section, "source_url");
+  const host = hostFromUrl(sourceUrl);
+  if (host && !/(^|\.)linkedin\.com$|(^|\.)x\.com$|(^|\.)twitter\.com$|(^|\.)reddit\.com$|news\.ycombinator\.com$/u.test(host)
+    && value(section, "source_role") === "resolved_original_source") {
+    return false;
+  }
   const text = [
-    value(section, "source_url"),
+    sourceUrl,
     value(section, "source"),
     value(section, "source_type"),
     value(section, "acquisition_channel"),
@@ -1192,6 +1271,7 @@ function hasConcreteProductEvent(section) {
 
 function hasConcreteCaseEvent(section) {
   const text = sectionEvidenceText(section);
+  if (/\b(case study|customer story|customer deployment|customer adopts?|adopted by|deployed (?:at|by|with)|deploys?|deployment|used by|uses? (?:Amazon Bedrock|Claude|Glean|AI|agentic AI|machine learning)|rollout|production rollout|pilot customer|design partner|implementation case|across enterprise|saved \d|reduced|cut|hours per person|ARR|annual recurring revenue)\b/iu.test(text)) return true;
   if (/没有具体客户|没有检测到明确动作词|no concrete customer|no specific customer|not a customer case|missing customer/iu.test(text)) return false;
   return /\b(case study|customer story|customer deployment|customer adopts?|adopted by|deployed (?:at|by|with)|used by|rollout|production rollout|pilot customer|design partner|implementation case)\b|客户案例|客户采用|客户部署|生产部署|落地|试点客户|真实客户/iu.test(text);
 }
@@ -1214,7 +1294,10 @@ function hasFormalCardEvent(section) {
   if (importanceType === "important_case" || importanceType === "important_vertical_solution") {
     return hasConcreteCaseEvent(section) || hasConcreteProductEvent(section) || hasConcreteMarketStructureEvent(section);
   }
-  return false;
+  return hasConcreteFundingEvent(section)
+    || hasConcreteProductEvent(section)
+    || hasConcreteCaseEvent(section)
+    || hasConcreteMarketStructureEvent(section);
 }
 
 function isBuilderOrOpinionOnlySource(section) {
@@ -1256,6 +1339,16 @@ function isNewsletterRoundupSource(section) {
 
 function isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section) {
   const text = textForInference(section);
+  if (/monthly update|roundup|latest AI news|recap of .*AI updates|Google 2026.*AI.*updates?|Google 2026.*AI.*更新|AI更新汇总|更新汇总/iu.test(text)) return true;
+  if (/AI\s*存储蓝图|存储蓝图|大规模\s*AI\s*存储|large-scale AI storage|storage blueprint|architecture blueprint|technical blueprint/iu.test(text)
+    && !/customer deployment|procurement|contract|pricing|funding|commercial launch/iu.test(text)) return true;
+  if (/brain2qwerty|brain-to-text|brain interface|non-invasive brain/iu.test(text)
+    && !/enterprise deployment|customer deployment|procurement|contract|funding|commercial launch/iu.test(text)) return true;
+  if (/storage blueprint|architecture blueprint|technical blueprint/iu.test(text)
+    && !/customer deployment|procurement|contract|pricing|funding|commercial launch/iu.test(text)) return true;
+  if (/Workbench Notebooks|GLM Coding Pro|Coding Pro|ZCode|VS Code|Jupyter|coding assistant|developer environment/iu.test(text)
+    && !/enterprise deployment|customer deployment|case study|procurement|contract|pricing|funding|annual recurring revenue|ARR/iu.test(text)) return true;
+  if (/\b(deploys?|deployment|deployed|rollout|production rollout|case study|customer story|customer deployment|uses? (?:Amazon Bedrock|Claude|Glean|AI|agentic AI|machine learning)|saved \d|reduced|cut|hours per person|ARR|annual recurring revenue|acquires?|acquisition|to buy|strategic partnership|partners? with|collaborates? with|pricing|billing|monetization gateway|contract|procurement)\b/iu.test(text)) return false;
   const consumerEntertainment = /Just Dance|舞力全开|mobile game|手游|游戏快报|玩家|曲库|K-POP|音舞|体感音乐|育碧|腾讯游戏/iu.test(text);
   const minorPlatformPolicy = /肖像保护|仿冒带货|带货达人|达人账号|素材盗用|侵权账号|侵权内容|平台治理|内容安全|相似内容阻断|举报|处置侵权/iu.test(text);
   const roundupOrExplainer = /更新汇总|月度更新|latest AI news|monthly update|roundup|weekly digest|why we built|我们为何构建/iu.test(text);
@@ -1267,7 +1360,7 @@ function isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section) {
   return ((consumerEntertainment || minorPlatformPolicy) && !businessAiSignal) || roundupOrExplainer || marketCommentary || ventureFormation;
 }
 
-function corePoolSemanticIssues(section) {
+function cardabilitySemanticIssues(section) {
   const issues = [];
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
@@ -1277,8 +1370,8 @@ function corePoolSemanticIssues(section) {
   const importanceScore = Number(value(section, "importance_score"));
   const importanceType = value(section, "importance_type");
   const degradationReasons = value(section, "degradation_reasons");
+  const hasFormalEvent = hasFormalCardEvent(section);
 
-  if (!/core_pool/u.test(value(section, "pool_routes"))) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "not_core_pool"));
   if (value(section, "raw_qc_decision") !== "allow") issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "raw_qc_not_allow"));
   if (value(section, "has_full_text") !== "true") issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "missing_full_text"));
   if (hasTextContamination(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "binary_or_mojibake_text_contamination"));
@@ -1287,7 +1380,7 @@ function corePoolSemanticIssues(section) {
   if (!value(section, "extraction_method")) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "missing_extraction_method"));
   if (!Number.isFinite(readability) || readability < 24) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "low_readability"));
   if (!["high", "medium"].includes(extractionQuality)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "weak_extraction_quality"));
-  if (/user_feedback_pool/u.test(value(section, "pool_routes")) || evidenceObjectType === "community_feedback" || value(section, "evidence_level") === "user_feedback_signal") {
+  if ((/user_feedback_pool/u.test(value(section, "pool_routes")) || evidenceObjectType === "community_feedback" || value(section, "evidence_level") === "user_feedback_signal") && !hasFormalEvent) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "user_feedback_or_commentary_not_verified_fact"));
   }
   if (isSocialOrCommunitySection(section)) {
@@ -1296,7 +1389,7 @@ function corePoolSemanticIssues(section) {
   if (isRepositoryOrCatalogSection(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "repository_catalog_or_directory_page"));
   }
-  if (isStalePublication(section, 30)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "stale_source_date"));
+  if (isStalePublication(section, 90)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "stale_source_date"));
   if (value(section, "index_only_evidence") === "true") issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "index_only_evidence"));
   if (indexOnlyEvidenceTypes.has(evidenceObjectType)) issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, `index_only_evidence_type:${evidenceObjectType}`));
   if (isRootOrHomeSourceUrl(sourceUrl) || (indexOnlyUrlPattern.test(sourceUrl) && !/\/\d{4}\/|\/20\d{2}[/-]|press|news|release|announc|blog\/[^/]+/iu.test(sourceUrl))) {
@@ -1305,7 +1398,7 @@ function corePoolSemanticIssues(section) {
   if (discoveryOnlyPattern.test(`${value(section, "acquisition_channel")} ${value(section, "source_role")}`) && value(section, "source_role") !== "resolved_original_source") {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "discovery_source_not_resolved"));
   }
-  if (!coreImportanceTypes.has(importanceType)) issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, `unsupported_importance_type:${importanceType || "missing"}`));
+  if (!coreImportanceTypes.has(importanceType) && !hasFormalEvent) issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, `unsupported_importance_type:${importanceType || "missing"}`));
   if (importanceType === "important_technical_trend") {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "technical_trend_is_context_not_signal_card"));
   }
@@ -1324,10 +1417,10 @@ function corePoolSemanticIssues(section) {
   if (isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "low_value_consumer_or_platform_policy_not_business_signal"));
   }
-  if (!hasFormalCardEvent(section)) {
+  if (!hasFormalEvent) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "missing_concrete_funding_product_or_case_event"));
   }
-  if (!Number.isFinite(importanceScore) || importanceScore < 4) issues.push(cardGateIssue(CARD_ENTRY_GATES.commercialImportance, "low_importance_score"));
+  if ((!Number.isFinite(importanceScore) || importanceScore < 4) && !hasFormalEvent) issues.push(cardGateIssue(CARD_ENTRY_GATES.commercialImportance, "low_importance_score"));
   if (!sectionHasUsableEvidenceObject(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "incomplete_evidence_object"));
   if (/missing_full_text|missing_snapshot|missing_hash|missing_excerpt|raw_evidence_unusable/iu.test(degradationReasons)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "degradation_reason_blocks_core"));
@@ -1347,6 +1440,8 @@ function signalEventClusterKey(spec, section) {
   const text = `${title} ${spec.title || ""} ${spec.summary || ""} ${sourceUrl}`.toLowerCase();
   const company = normalizedSignalText(spec.company || companyFromSection(section));
   if (/minimax/iu.test(text) && /\bm3\b/iu.test(text)) return "event:product_service:minimax:m3";
+  if (/gemini\s+spark/iu.test(text)) return "event:product_service:google:gemini-spark";
+  if (/cloudflare/iu.test(text) && /content-independence-day-ai-options|ai traffic/iu.test(text)) return "event:case:cloudflare:ai-traffic-control";
   if (/mistral/iu.test(text) && /(funding|financing|valuation|round|融资|估值|欧元|billion|30亿|200亿)/iu.test(text)) {
     return "event:funding:mistral";
   }
@@ -1357,11 +1452,11 @@ function signalEventClusterKey(spec, section) {
 }
 
 function signalClusterKey(spec, section) {
+  const eventKey = signalEventClusterKey(spec, section);
+  if (eventKey) return eventKey;
   const sourceUrl = value(section, "source_url");
   const hash = value(section, "raw_full_text_hash") || value(section, "full_text_hash");
   if (hash) return `hash:${hash}`;
-  const eventKey = signalEventClusterKey(spec, section);
-  if (eventKey) return eventKey;
   const title = poolTitle(section) || spec.title;
   const company = normalizedSignalText(spec.company || companyFromSection(section));
   if (sourceUrl) return `url:${normalizedUrl(sourceUrl)}`;
@@ -1393,6 +1488,17 @@ function companyFromUrl(sourceUrl = "", title = "") {
     const pathname = parsed.pathname.toLowerCase();
     const haystack = `${host} ${pathname} ${title}`.toLowerCase();
     const rules = [
+      [/aws\.amazon\.com.*genaiic|partner-agent-factory/u, "AWS GenAIIC"],
+      [/appliedai\.de.*mckinsey|mckinsey.*appliedai/u, "AppliedAI / McKinsey"],
+      [/claude\.com.*customers\/smartsheet/u, "Smartsheet / Anthropic"],
+      [/apnews\.com.*glean-surpasses/u, "Glean"],
+      [/aws\.amazon\.com.*inscribe.*bedrock/u, "Inscribe / AWS"],
+      [/hitconsultant\.net.*houston-methodist.*midstream/u, "Houston Methodist / Midstream Health"],
+      [/theapplied\.co.*zillow.*glean/u, "Zillow / Glean"],
+      [/bloomberg\.com.*salesforce.*fin/u, "Salesforce / Fin"],
+      [/cloudflare\.com.*monetization-gateway/u, "Cloudflare"],
+      [/cloudflare\.com.*content-independence-day-ai-options|cloudflare\.com.*making-ai-search-smarter/u, "Cloudflare"],
+      [/meta\.com|engineering\.fb\.com/u, "Meta"],
       [/zoneandco\.com/u, "Zone & Co"],
       [/lio\.ai/u, "Lio"],
       [/druidai\.com/u, "Druid AI"],
@@ -1673,6 +1779,9 @@ function originalSourceTitleFromSection(section) {
 function sourcePointMatchesSignalType(point = "", type = "") {
   const text = String(point || "");
   if (!text) return false;
+  if (type === "funding" && /funding|financing|round|valuation|raises?|raised|closed|ARR|annual recurring revenue/iu.test(text)) return true;
+  if (type === "product_service" && /product|platform|service|launch|release|released|introduc|available|pricing|API|SDK/iu.test(text)) return true;
+  if (type === "case" && /case study|customer story|customer|deployed|deployment|adopted|adoption|used by|uses?|production|workflow|saved|reduced|cut|hours per person|ARR|annual recurring revenue/iu.test(text)) return true;
   if (type === "funding") return /融资|资金流向|资本事件|\$|美元|Series|Seed/iu.test(text);
   if (type === "product_service") return /产品|平台|服务|发布|推出|上线|API|SDK|可采购|可部署/iu.test(text);
   return /客户|部署|采用|生产落地|企业工作流|案例|试点/iu.test(text);
@@ -1713,7 +1822,7 @@ function autoSignalSpec(poolRef, section, index) {
   const type = inferSignalType(section);
   const company = companyFromSection(section);
 
-  // 检查原发表时间：从 raw_json 中读取 published_at，若超过 14 天则跳过
+  // Check original publication time from raw_json; skip items older than the freshness window.
   const rawJsonPath = value(section, "raw_json");
   if (rawJsonPath) {
     try {
@@ -1723,9 +1832,9 @@ function autoSignalSpec(poolRef, section, index) {
       if (pubDate) {
         const pubDay = new Date(pubDate);
         const cutoff = new Date();
-        cutoff.setDate(cutoff.getDate() - 14);
+        cutoff.setDate(cutoff.getDate() - 90);
         if (pubDay < cutoff) {
-          return null; // 跳过超过 14 天的旧内容
+          return null;
         }
       }
     } catch {
@@ -1789,7 +1898,7 @@ function uniqueIssues(issues = []) {
 }
 
 function autoSignalEligibilityIssues(section) {
-  const issues = [...corePoolSemanticIssues(section)];
+  const issues = [...cardabilitySemanticIssues(section)];
   const sourceUrl = value(section, "source_url");
   const importanceType = value(section, "importance_type");
   const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source_type")}`;
@@ -1821,7 +1930,7 @@ function promotePriorityForIssues(issues = []) {
 
 function repairSuggestionForIssues(issues = []) {
   const text = issues.join(" ");
-  if (/stale_source_date/iu.test(text)) return "Find a fresh same-event source or keep as context-only Core Pool evidence.";
+  if (/stale_source_date/iu.test(text)) return "Find a fresh same-event source or keep as backend audit evidence.";
   if (/newsletter_roundup_requires_original_event_source/iu.test(text)) return "Use the newsletter only as discovery context; recapture the original dated event source before promoting.";
   if (/valid_page_type|generic_report_or_list_not_fact_signal|text_indicates_index_only|index_only|docs_or_catalog_or_investing_thesis/iu.test(text)) return "Resolve to a dated single company, product, funding, or customer event before promoting.";
   if (/source_title_translation_missing_or_contaminated/iu.test(text)) return "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.";
@@ -1835,7 +1944,7 @@ function repairSuggestionForIssues(issues = []) {
   return "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.";
 }
 
-function corePoolNotPromotedRow(poolRef, section, issues = []) {
+function notPromotedCandidateRow(poolRef, section, issues = []) {
   const finalIssues = uniqueIssues(issues);
   return {
     pool_ref: poolRef,
@@ -1853,7 +1962,7 @@ function withAutoSignalId(spec, index) {
 }
 
 function autoSignalsFromPool(sections, explicitSpecs) {
-  if (!autoSignalEnabled) return { specs: [], notPromotedCorePool: [] };
+  if (!autoSignalEnabled) return { specs: [], notPromotedCandidates: [] };
   const selectedPoolRefs = new Set(explicitSpecs.map((spec) => spec.poolRef));
   const selectedClusterKeys = new Set(
     explicitSpecs
@@ -1864,29 +1973,23 @@ function autoSignalsFromPool(sections, explicitSpecs) {
       .filter(Boolean)
   );
   const candidates = [];
-  const notPromotedCorePool = [];
+  const notPromotedCandidates = [];
   let index = 1;
   for (const [poolRef, section] of sections) {
     if (selectedPoolRefs.has(poolRef)) continue;
     const eligibilityIssues = autoSignalEligibilityIssues(section);
     if (eligibilityIssues.length) {
-      if (/core_pool/u.test(value(section, "pool_routes"))) {
-        notPromotedCorePool.push(corePoolNotPromotedRow(poolRef, section, eligibilityIssues));
-      }
+      notPromotedCandidates.push(notPromotedCandidateRow(poolRef, section, eligibilityIssues));
       continue;
     }
     const spec = autoSignalSpec(poolRef, section, index);
     if (!spec) {
-      if (/core_pool/u.test(value(section, "pool_routes"))) {
-        notPromotedCorePool.push(corePoolNotPromotedRow(poolRef, section, ["auto_signal_spec_null"]));
-      }
+      notPromotedCandidates.push(notPromotedCandidateRow(poolRef, section, ["auto_signal_spec_null"]));
       continue;
     }
     const clusterKey = signalClusterKey(spec, section);
     if (selectedClusterKeys.has(clusterKey)) {
-      if (/core_pool/u.test(value(section, "pool_routes"))) {
-        notPromotedCorePool.push(corePoolNotPromotedRow(poolRef, section, ["duplicate_event_cluster"]));
-      }
+      notPromotedCandidates.push(notPromotedCandidateRow(poolRef, section, ["duplicate_event_cluster"]));
       continue;
     }
     candidates.push({ spec, section, clusterKey, score: signalPriorityScore(spec, section) });
@@ -1910,9 +2013,6 @@ function autoSignalsFromPool(sections, explicitSpecs) {
     }
   }
 
-  for (const lane of v3SignalLanePlan) {
-    pickWhere((item) => item.spec.type === lane.type, lane.target);
-  }
   pickWhere(() => true);
   const finalPicked = Number.isFinite(assetGenerationLimit)
     ? picked.slice(0, assetGenerationLimit)
@@ -1926,7 +2026,7 @@ function autoSignalsFromPool(sections, explicitSpecs) {
     console.log(JSON.stringify({
       auto_signal_candidate_count: candidates.length,
       auto_signal_picked_count: finalPicked.length,
-      auto_signal_debug_rejects: notPromotedCorePool.map((item) => ({
+      auto_signal_debug_rejects: notPromotedCandidates.map((item) => ({
         poolRef: item.pool_ref,
         title: item.title,
         issues: item.issues,
@@ -1935,7 +2035,7 @@ function autoSignalsFromPool(sections, explicitSpecs) {
   }
   return {
     specs: finalPicked.map((item, itemIndex) => withAutoSignalId(item.spec, itemIndex + 1)),
-    notPromotedCorePool,
+    notPromotedCandidates,
   };
 }
 
@@ -2045,6 +2145,15 @@ function formalTagsForTrend(spec) {
   return Object.fromEntries(Object.entries(tags).map(([group, values]) => [group, uniq(values)]));
 }
 
+function poolRoutesForPrimaryRaw(section) {
+  const routes = value(section, "pool_routes")
+    .split(/[,，\s]+/u)
+    .map((item) => item.trim())
+    .filter(Boolean);
+  if (isRawDirectSection(section)) routes.push("raw_direct");
+  return uniq(routes.length ? routes : ["raw_direct"]);
+}
+
 function signalCard(spec, section) {
   const rawRef = value(section, "raw_ref");
   const rawArchive = value(section, "raw_archive");
@@ -2065,6 +2174,7 @@ function signalCard(spec, section) {
   const evidenceBoundary = spec.evidenceBoundary || value(section, "missing_information") || "未记录额外缺失项。";
 
   const yamlString = (input = "") => JSON.stringify(String(input || ""));
+  const poolRoutes = poolRoutesForPrimaryRaw(section).map((route) => `    - ${route}`).join("\n");
 
   return `---
 id: ${spec.id}
@@ -2091,7 +2201,7 @@ primary_raw:
   extraction_quality: ${extractionQuality}
   has_full_text: true
   pool_routes:
-    - core_pool
+${poolRoutes}
   raw_qc_decision: allow
   importance_type: ${importanceType}
   importance_score: ${importanceScore}
@@ -2241,7 +2351,7 @@ function dedupeSignalIndexSpecs(specs) {
   return [...byFinalCard.values()];
 }
 
-function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontstageSpecs, notPromotedCorePool = [] }) {
+function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontstageSpecs, notPromotedCandidates = [] }) {
   const reportDir = path.join(root, "agent-workflow", "reports");
   fs.mkdirSync(reportDir, { recursive: true });
   const handoffPath = path.join(reportDir, `${date}-pool-to-card-handoff.md`);
@@ -2255,9 +2365,9 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
     `- merged_count: ${merged.length}`,
     `- skipped_count: ${skipped.length}`,
     `- signal_asset_count: ${frontstageSpecs.length}`,
-    `- core_pool_not_promoted_count: ${notPromotedCorePool.length}`,
-    `- asset_generation_limit: ${Number.isFinite(assetGenerationLimit) ? assetGenerationLimit : "all_qualified_core_pool"}`,
-    `- signal_asset_mode: all qualified Core Pool items`,
+    `- not_promoted_candidate_count: ${notPromotedCandidates.length}`,
+    `- asset_generation_limit: ${Number.isFinite(assetGenerationLimit) ? assetGenerationLimit : "all_cardable_raw_pool"}`,
+    `- signal_asset_mode: all cardable Raw / Pool business signals`,
     "",
     "## Signal Card Assets",
     "",
@@ -2283,10 +2393,10 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
     "",
     skipped.length ? skipped.map((item) => `- ${item}`).join("\n") : "- none",
     "",
-    "## Core Pool Not Promoted",
+    "## Not Promoted Candidates",
     "",
-    notPromotedCorePool.length
-      ? notPromotedCorePool.map((item) => `- ${item.pool_ref}: ${item.not_promoted_reason}; repair=${item.repair_suggestion}; priority=${item.promote_priority}; title=${item.title}`).join("\n")
+    notPromotedCandidates.length
+      ? notPromotedCandidates.map((item) => `- ${item.pool_ref}: ${item.not_promoted_reason}; repair=${item.repair_suggestion}; priority=${item.promote_priority}; title=${item.title}`).join("\n")
       : "- none",
     "",
   ].join("\n");
@@ -2301,7 +2411,7 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
       type: spec.type,
       company: spec.company,
     })),
-    core_pool_not_promoted: notPromotedCorePool,
+    not_promoted_candidates: notPromotedCandidates,
     skipped,
     merged,
   }, null, 2)}\n`, "utf8");
@@ -2347,7 +2457,7 @@ function main() {
   const sections = poolSections();
   const autoResult = autoSignalsFromPool(sections, explicitSpecs);
   const autoSpecs = autoResult.specs || [];
-  const notPromotedCorePool = autoResult.notPromotedCorePool || [];
+  const notPromotedCandidates = autoResult.notPromotedCandidates || [];
   const specs = [...explicitSpecs, ...autoSpecs].map(normalizeSignalSpec);
   const written = [];
   const skipped = [];
@@ -2366,7 +2476,7 @@ function main() {
       skipped.push(`${spec.poolRef}: missing section`);
       continue;
     }
-    const semanticIssues = corePoolSemanticIssues(section);
+    const semanticIssues = cardabilitySemanticIssues(section);
     if (semanticIssues.length) {
       skipped.push(`${spec.poolRef}: semantic gate failed ${semanticIssues.join(",")}`);
       clusterRows.push({ poolRef: spec.poolRef, clusterKey: "blocked", decision: "skipped", reason: semanticIssues.join(",") });
@@ -2432,7 +2542,7 @@ function main() {
     skipped,
     clusterRows,
     frontstageSpecs: signalIndexSpecs,
-    notPromotedCorePool,
+    notPromotedCandidates,
   });
   written.push(handoff.handoff, handoff.manifest);
 

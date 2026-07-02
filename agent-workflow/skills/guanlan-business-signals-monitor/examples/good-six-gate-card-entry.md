@@ -1,6 +1,6 @@
 # Good Six-Gate Card Entry
 
-Use this example when repairing Business Signals Core Pool -> Signal Card promotion.
+Use this example when repairing Business Signals raw-to-card promotion.
 
 ## Good Shape
 
@@ -21,7 +21,7 @@ Use this example when repairing Business Signals Core Pool -> Signal Card promot
 - The policy layer uses the six gates: `source_auditability`, `evidence_quality`, `business_signal_scope`, `valid_page_type`, `commercial_importance`, and `fact_type_constraints`.
 - Field-level details remain as diagnostics after the gate prefix.
 - The repair action targets the earliest broken stage, usually Raw recapture or Pool rerouting.
-- No gate is weakened just to fill the public Top10.
+- No gate is weakened just to fill the public Card count.
 
 ## Bad Pattern
 

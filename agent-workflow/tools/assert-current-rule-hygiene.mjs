@@ -58,6 +58,39 @@ const retiredAllowlist = new Set([
   "agent-workflow/tools/frontstage-regression-gate.mjs",
 ]);
 
+const rawToCardRuleFiles = [
+  "context/00-current-state.md",
+  "context/05-daily-monitoring.md",
+  "context/06-execution-harness.md",
+  "context/07-v3-intelligence-generation-rules.md",
+  "context/08-v3-3-automation.md",
+  "context/11-hermes-daily-supervision-instructions.md",
+  "context/frontstage-page-contracts.md",
+  ".github/workflows/daily-persistent-assets-pr.yml",
+  ".github/workflows/daily-production-chain-dry-run.yml",
+  "agent-workflow/automation-prompts/guanlan-daily-monitor.md",
+  "agent-workflow/tools/generate-asset-cards-from-pool.mjs",
+  "agent-workflow/skills/skill-registry.md",
+  "agent-workflow/skills/guanlan-raw-pool-card",
+  "agent-workflow/skills/guanlan-business-signals-monitor",
+  "agent-workflow/skills/guanlan-monitor-quality-gate/evals/monitor-quality-gate-evals.md",
+];
+
+const rawToCardForbiddenPatterns = [
+  { pattern: /frontstage-top10-target/u, term: "frontstage-top10-target" },
+  { pattern: /pool_core_supply_release/u, term: "pool_core_supply_release" },
+  { pattern: /all_qualified_core_pool/u, term: "all_qualified_core_pool" },
+  { pattern: /core_pool_not_promoted/u, term: "core_pool_not_promoted" },
+  { pattern: /all qualified Core Pool/iu, term: "all qualified Core Pool" },
+  { pattern: /qualified Core Pool items/iu, term: "qualified Core Pool items" },
+  { pattern: /usable `core_pool`/iu, term: "usable `core_pool`" },
+  { pattern: /`core_pool` must/iu, term: "`core_pool` must" },
+  { pattern: /Core Pool count/iu, term: "Core Pool count" },
+  { pattern: /non-large Core/iu, term: "non-large Core" },
+  { pattern: /Pool\/Core\/Top10/iu, term: "Pool/Core/Top10" },
+  { pattern: /Pool\/Core\/Card/iu, term: "Pool/Core/Card" },
+];
+
 const activeRoots = [
   "AGENTS.md",
   "context",
@@ -126,6 +159,41 @@ function scanFile(file, terms, kind) {
   return hits;
 }
 
+function scanFilePatterns(file, patterns, kind) {
+  const text = fs.readFileSync(file, "utf8");
+  const hits = [];
+  const lines = text.split(/\r?\n/u);
+  for (const item of patterns) {
+    lines.forEach((line, index) => {
+      if (item.pattern.test(line)) {
+        hits.push({ kind, file: rel(file), line: index + 1, term: item.term });
+      }
+    });
+  }
+  return hits;
+}
+
+function workflowRawToCardHits(file) {
+  const text = fs.readFileSync(file, "utf8");
+  if (!text.includes("generate-asset-cards-from-pool.mjs")) return [];
+  const lines = text.split(/\r?\n/u);
+  const hits = [];
+  lines.forEach((line, index) => {
+    if (!line.includes("generate-asset-cards-from-pool.mjs")) return;
+    if (/node\s+--check/u.test(line)) return;
+    const windowText = lines.slice(index, index + 8).join("\n");
+    if (!/--from-raw=true/u.test(windowText)) {
+      hits.push({
+        kind: "raw_to_card_rule_conflict",
+        file: rel(file),
+        line: index + 1,
+        term: "generate-asset-cards-from-pool without --from-raw=true",
+      });
+    }
+  });
+  return hits;
+}
+
 function isProtectiveRetiredLine(line) {
   const normalized = line.toLowerCase();
   return [
@@ -149,13 +217,20 @@ function isProtectiveRetiredLine(line) {
 
 function main() {
   const activeFiles = [...new Set([...activeRoots.flatMap(filesUnder), ...currentCardFiles()])];
+  const rawToCardRuleScanFiles = [...new Set(rawToCardRuleFiles.flatMap(filesUnder))];
   const dataFiles = [...new Set(currentRawPoolFiles())];
   const retiredHits = activeFiles
     .filter((file) => !retiredAllowlist.has(rel(file)))
     .flatMap((file) => scanFile(file, retiredTerms, "retired_term"));
   const retiredDataHits = dataFiles.flatMap((file) => scanFile(file, retiredDataTerms, "retired_data_term"));
   const mojibakeHits = [...activeFiles, ...dataFiles].flatMap((file) => scanFile(file, mojibakeMarkers, "text_contamination"));
-  const issues = [...retiredHits, ...retiredDataHits, ...mojibakeHits];
+  const rawToCardRuleHits = rawToCardRuleScanFiles
+    .filter((file) => !retiredAllowlist.has(rel(file)))
+    .flatMap((file) => scanFilePatterns(file, rawToCardForbiddenPatterns, "raw_to_card_rule_conflict"));
+  const workflowHits = rawToCardRuleScanFiles
+    .filter((file) => [".yml", ".yaml"].includes(path.extname(file)))
+    .flatMap(workflowRawToCardHits);
+  const issues = [...retiredHits, ...retiredDataHits, ...mojibakeHits, ...rawToCardRuleHits, ...workflowHits];
   const result = {
     ok: issues.length === 0,
     date,

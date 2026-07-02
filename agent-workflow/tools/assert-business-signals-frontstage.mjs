@@ -55,7 +55,7 @@ function classify(text = "") {
   if (/model-generated title|generic generated title|missing public title|missing source\/display title|public title/iu.test(text)) {
     categories.add("title_source");
   }
-  if (/weak news fact|source-derived|source-first|source backed|core pool candidate|missing selection reasons|not produced from core_pool/iu.test(text)) {
+  if (/weak news fact|source-derived|source-first|source backed|backend candidate|missing selection reasons|missing source URL references/iu.test(text)) {
     categories.add("source_first");
   }
   if (/retired_|navigation|version_mismatch|active_date_stale|regression/iu.test(text)) {

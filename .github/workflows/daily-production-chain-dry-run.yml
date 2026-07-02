@@ -83,7 +83,7 @@ jobs:
             echo "1. Run Daily Monitor with QC."
             echo "2. Confirm final active Raw / Pool post-dedupe counts and historical duplicate count."
             echo "3. Mark same-date downstream assets stale if Raw / Pool changed."
-            echo "4. Regenerate qualified business-signal Card assets in the runner workspace only; frontstage publishes Top10."
+            echo "4. Regenerate qualified business-signal Card assets in the runner workspace only; frontstage publishes the unified Card set."
             echo "5. Run Pool-to-Card duplicate gate."
             echo "6. Run trend candidate / no-decision shell."
             echo "7. Build Business Signals frontstage data and run the unified Business frontstage gate before operations data."
@@ -160,8 +160,8 @@ jobs:
           set -o pipefail
           node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
             --date="${RUN_DATE}" \
+            --from-raw=true \
             --require-final-qc=false \
-            --frontstage-top10-target=10 \
             --trend-candidates=false \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-assets.log"
 

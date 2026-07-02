@@ -12,7 +12,7 @@ priority: current
 
 # SITE-V3.4.1 Automation Loop
 
-SITE-V3.4.1 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists gated Builder viewpoints into Obsidian person / original-date timeline files and verifies sync dry-run idempotency, Business Signals runs on the V3.3.6.3 source-artifact aggregation contract with source-title gates, unified Core Signal Cards, peer source-artifact selection, Pool/Core release override for provider-caused Raw shortfall, and the Enterprise AI / FDE Lens Pool, Community Intelligence uses local logged-in collection before GitHub publication and separates Waiting publication states from repair Problems, Reports Center publishes monthly / weekly reports, source-backed opportunity maps, and relation paths. Hermes is now a problem monitor only: failed production runs are recorded by Daily Problem Watchdog into reports and inbox items for targeted Codex repair.
+SITE-V3.4.1 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists gated Builder viewpoints into Obsidian person / original-date timeline files and verifies sync dry-run idempotency, Business Signals runs on the V3.3.6.3 source-artifact aggregation contract with source-title gates, unified Signal Cards, peer source-artifact selection, Raw / Pool / Card release override for provider-caused Raw shortfall, and the Enterprise AI / FDE Lens Pool, Community Intelligence uses local logged-in collection before GitHub publication and separates Waiting publication states from repair Problems, Reports Center publishes monthly / weekly reports, source-backed opportunity maps, and relation paths. Hermes is now a problem monitor only: failed production runs are recorded by Daily Problem Watchdog into reports and inbox items for targeted Codex repair.
 
 ## Business Signals GitHub Chain
 
@@ -36,7 +36,7 @@ Current monitor parameter baseline:
 - `--snapshot-timeout-ms=16000`;
 - `--monitor-timeout-ms=900000`.
 
-The production PR workflow, dry-run workflow, Daily Problem Watchdog, and skill examples must stay aligned to this baseline. HN remains feedback-only discovery and should not be expanded to fix routed Pool or Core Pool shortages; those failures require better original-source capture and Pool routing.
+The production PR workflow, dry-run workflow, Daily Problem Watchdog, and skill examples must stay aligned to this baseline. HN remains feedback-only discovery and should not be expanded to fix routed Pool or cardable-signal shortages; those failures require better original-source capture and Pool routing.
 
 Execution order:
 
@@ -44,7 +44,7 @@ Execution order:
 2. Skip only the business-signal chain when the day's Raw / Pool / signal assets already exist on `main`.
 3. Run Daily Monitor with QC.
 4. Persist Raw / Pool assets.
-5. Generate Signal Card assets from all qualified Core Pool items, then publish the active-date unified frontstage Card set.
+5. Generate Signal Card assets from all cardable Raw / Pool business signals, then publish the active-date unified frontstage Card set.
 6. Run Pool-to-Card dedupe and gates.
 7. Build business-signal frontstage data first: `01-SiteV2/site/data/v3-data-observation-desk.json`, and the Hermes Agent intelligence entry: `01-SiteV2/site/data/intelligence-graph-index.json`.
 8. Run the unified Business frontstage gate: `agent-workflow/tools/assert-business-signals-frontstage.mjs --date=<date>`. This wraps source-first and frontstage regression, classifies failures as frontstage Card contract, translation, title/source, source-first, or regression, and must run before dashboard work.
@@ -58,7 +58,7 @@ Execution order:
 
 An existing `automation/business-signals-<date>` branch must not block a scheduled rerun. The workflow should update the same branch and PR instead of skipping, because a previous delayed or partial run may have left the branch stale.
 
-`intelligence-graph-index.json` is the stable machine-readable entry for Hermes Agent / data-officer analysis. It is generated from the same Card / Core Pool / relationship / trend-candidate dataset as the business-signal frontstage, and must be committed and deployed whenever `v3-data-observation-desk.json` is updated.
+`intelligence-graph-index.json` is the stable machine-readable entry for Hermes Agent / data-officer analysis. It is generated from the same Card / backend audit / relationship / trend-candidate dataset as the business-signal frontstage, and must be committed and deployed whenever `v3-data-observation-desk.json` is updated.
 
 ## Morning Production And Problem Monitoring
 
@@ -78,8 +78,8 @@ Operational rules:
 3. If a lane workflow is `queued` or `in_progress`, supervision waits for it instead of declaring missing data.
 4. Auto-merge skip is not automatically a data-generation failure. It means publication may require PR / repository-permission handling.
 5. All lanes must still publish through automation branch, PR, merge to `main`, then GitHub Pages. Direct `main` push is not the current policy.
-6. If Business Signals is blocked only by `raw_count_min`, a source-channel/provider quota note, keyword-only floor, AI-title ratio, or off-topic raw-title diagnostic while Pool / routed Pool / Core Pool / non-large Core / Card supply is sufficient, do not rerun Raw. Treat it as diagnostic and repair the exact downstream blocker.
-7. Watchlist aggregate material can guide source repair or Pool rerouting only. It is not direct Card evidence until source-backed entries pass the current Pool / Core Pool rules.
+6. If Business Signals is blocked only by `raw_count_min`, a source-channel/provider quota note, keyword-only floor, AI-title ratio, or off-topic raw-title diagnostic while Pool audit supply and Card supply are sufficient, do not rerun Raw. Treat it as diagnostic and repair the exact downstream blocker.
+7. Watchlist aggregate material can guide source repair or Pool rerouting only. It is not direct Card evidence until source-backed entries pass the current raw-to-card rules.
 8. Community Intelligence cannot be collected inside GitHub Actions because it depends on the local Chrome profile and logged-in community sessions. GitHub may publish already-validated community files, but missing local collector output remains a local / Codex repair handoff.
 9. Daily Problem Watchdog writes `agent-workflow/reports/<date>-daily-recovery-watchdog.json`, `.md`, and `agent-workflow/inbox/hermes-to-codex/<date>-<lane>-daily-problem-watchdog.md` for actionable problems.
 
@@ -97,7 +97,7 @@ Problem-monitoring rules:
 2. If no same-date run is active or successful, the watchdog writes `agent-workflow/reports/<date>-daily-recovery-watchdog.*` and, for actionable problems, `agent-workflow/inbox/hermes-to-codex/<date>-<lane>-daily-problem-watchdog.md`.
 3. It must not dispatch Business Signals, First-Line Viewpoints, Community Intelligence, or any Hermes recovery workflow.
 4. Community Intelligence collection still cannot run in GitHub Actions because it depends on the local Chrome profile and logged-in browser state.
-5. The expected follow-up is targeted diagnosis from the inbox report, reusing same-date artifacts whenever Pool/Core/Card or lane-specific healthy outputs are already sufficient.
+5. The expected follow-up is targeted diagnosis from the inbox report, reusing same-date artifacts whenever Pool audit supply, Card supply, or lane-specific healthy outputs are already sufficient.
 
 Manual command:
 

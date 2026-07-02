@@ -147,7 +147,7 @@ function assertMonitorReady({ minScore = 80, requireFinalQc = false } = {}) {
   const loopStatus = parseLineValue(loopText, "status");
   const manualIntervention = parseLineValue(loopText, "manual_intervention_required");
   const gateStatus = parseLineValue(gateText, "status").toLowerCase();
-  const poolCoreSupplyRelease = parseLineValue(gateText, "pool_core_supply_release").toLowerCase() === "true";
+  const rawToCardSupplyRelease = parseLineValue(gateText, "raw_to_card_supply_release").toLowerCase() === "true";
   const importanceGaps = parseLineValue(gateText, "importance_coverage_gaps");
   const poolImportanceGaps = parseLineValue(gateText, "pool_importance_coverage_gaps");
   const usableCoreEvidenceCount = parseNumberLine(gateText, "usable_core_evidence_count");
@@ -225,13 +225,13 @@ function assertMonitorReady({ minScore = 80, requireFinalQc = false } = {}) {
     finalQcFresh,
     supersededByFinalQc,
     supersededByCurrentGate,
-    poolCoreSupplyRelease,
+    rawToCardSupplyRelease,
     manualReleaseOverride,
     assetScope:
       command === "assets" && finalQcDecision === "allow_with_degradation"
-        ? "eligible_core_pool_only"
+        ? "degraded_raw_to_card_only"
         : command === "assets"
-          ? "eligible_core_pool"
+          ? "cardable_raw_pool"
           : "not_applicable",
   };
 }
@@ -254,7 +254,7 @@ function main() {
       final_qc_fresh: result.finalQcFresh,
       superseded_by_final_qc: result.supersededByFinalQc,
       superseded_by_current_gate: result.supersededByCurrentGate,
-      pool_core_supply_release: result.poolCoreSupplyRelease,
+      raw_to_card_supply_release: result.rawToCardSupplyRelease,
       manual_release_override: result.manualReleaseOverride,
       asset_scope: result.assetScope,
     });
@@ -270,7 +270,7 @@ function main() {
         final_qc_fresh: result.finalQcFresh,
         superseded_by_final_qc: result.supersededByFinalQc,
         superseded_by_current_gate: result.supersededByCurrentGate,
-        pool_core_supply_release: result.poolCoreSupplyRelease,
+        raw_to_card_supply_release: result.rawToCardSupplyRelease,
         manual_release_override: result.manualReleaseOverride,
           asset_scope: result.assetScope,
         },
@@ -294,7 +294,7 @@ function main() {
         final_qc_fresh: result.finalQcFresh,
         superseded_by_final_qc: result.supersededByFinalQc,
         superseded_by_current_gate: result.supersededByCurrentGate,
-        pool_core_supply_release: result.poolCoreSupplyRelease,
+        raw_to_card_supply_release: result.rawToCardSupplyRelease,
         manual_release_override: result.manualReleaseOverride,
         asset_scope: result.assetScope,
       },

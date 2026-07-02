@@ -9,8 +9,8 @@ source_title: "Agentic infrastructure startup Seltz raises $12.5M to help AI age
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-02T05:53:33.280Z
-updated_at: 2026-07-02T05:53:33.280Z
+created_at: 2026-07-02T07:21:56.472Z
+updated_at: 2026-07-02T07:21:56.472Z
 
 raw_refs: ["R-035"]
 pool_refs: ["P-035"]
@@ -25,6 +25,7 @@ primary_raw:
   has_full_text: true
   pool_routes:
     - core_pool
+    - emerging_pool
   raw_qc_decision: allow
   importance_type: important_funding
   importance_score: 5

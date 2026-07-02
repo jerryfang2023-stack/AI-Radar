@@ -1,6 +1,6 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T05:53:33.711Z",
+  "generated_at": "2026-07-02T07:21:57.084Z",
   "signal_card_assets": [
     {
       "id": "SIG-20260702-A01",
@@ -32,27 +32,90 @@
     },
     {
       "id": "SIG-20260702-A05",
+      "pool_ref": "P-044",
+      "title": "Cloudflare 推出 Monetization Gateway 变现网关",
+      "type": "case",
+      "company": "Cloudflare"
+    },
+    {
+      "id": "SIG-20260702-A06",
+      "pool_ref": "P-068",
+      "title": "Houston Methodist 全企业部署 Midstream Health 智能体财务行动平台",
+      "type": "case",
+      "company": "Houston Methodist / Midstream Health"
+    },
+    {
+      "id": "SIG-20260702-A07",
+      "pool_ref": "P-019",
+      "title": "AWS GenAIIC Partner Agent Factory 新增智能体进入 AWS Marketplace",
+      "type": "case",
+      "company": "AWS GenAIIC"
+    },
+    {
+      "id": "SIG-20260702-A08",
+      "pool_ref": "P-029",
+      "title": "Smartsheet 使用 Claude Platform API 改造企业工作流",
+      "type": "case",
+      "company": "Smartsheet / Anthropic"
+    },
+    {
+      "id": "SIG-20260702-A09",
+      "pool_ref": "P-030",
+      "title": "Glean 年经常性收入超过 3 亿美元，企业上下文推动 AI 采用",
+      "type": "case",
+      "company": "Glean"
+    },
+    {
+      "id": "SIG-20260702-A10",
+      "pool_ref": "P-076",
+      "title": "Zillow 向 7000 名员工部署 Glean，每人每周节省 1.5 小时以上",
+      "type": "case",
+      "company": "Zillow / Glean"
+    },
+    {
+      "id": "SIG-20260702-A11",
+      "pool_ref": "P-053",
+      "title": "Inscribe 使用 Amazon Bedrock 在数秒内拦截文档欺诈",
+      "type": "case",
+      "company": "Inscribe / AWS"
+    },
+    {
+      "id": "SIG-20260702-A12",
+      "pool_ref": "P-028",
+      "title": "AppliedAI 与麦肯锡合作，用 AI 改造受监管企业流程",
+      "type": "case",
+      "company": "AppliedAI / McKinsey"
+    },
+    {
+      "id": "SIG-20260702-A13",
       "pool_ref": "P-010",
       "title": "用 Genkit 构建智能体全栈应用",
       "type": "case",
       "company": "用 Genkit 构建智能体全栈应用"
     },
     {
-      "id": "SIG-20260702-A06",
+      "id": "SIG-20260702-A14",
+      "pool_ref": "P-037",
+      "title": "Engram 携 9800 万美元启动，打造真正了解组织的 AI",
+      "type": "funding",
+      "company": "Engram"
+    },
+    {
+      "id": "SIG-20260702-A15",
       "pool_ref": "P-008",
       "title": "Gemini Spark，Google 智能体助手，现已登陆 Mac",
       "type": "product_service",
       "company": "Gemini Spark，Google 智能体助手，现已登陆 Mac"
     },
     {
-      "id": "SIG-20260702-A07",
-      "pool_ref": "P-037",
-      "title": "Engram 携 9800 万美元启动，打造真正了解组织的 AI",
-      "type": "funding",
-      "company": "Engram"
+      "id": "SIG-20260702-A16",
+      "pool_ref": "P-060",
+      "title": "Meta效仿SpaceX建立云业务，转售闲置AI算力",
+      "type": "product_service",
+      "company": "Meta效仿SpaceX建立云业务，转售闲置AI算力"
     }
   ],
-  "core_pool_not_promoted": [
+  "not_promoted_candidates": [
     {
       "pool_ref": "P-001",
       "title": "Ashton Kutcher离开Sound Ventures，与Morgan Beller共同创办新VC基金",
@@ -74,6 +137,19 @@
       "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
       "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
       "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-004",
+      "title": "2026 BAIR Graduate Showcase",
+      "source_url": "http://bair.berkeley.edu/blog/2026/07/01/grads-2026",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
     },
     {
       "pool_ref": "P-005",
@@ -110,9 +186,42 @@
       "promote_priority": "review"
     },
     {
+      "pool_ref": "P-009",
+      "title": "Google Cloud Workbench Notebooks 扩展发布：在 VS Code 中连接云端 Jupyter 环境",
+      "source_url": "https://developers.googleblog.com/ml-development-in-vs-code-with-google-cloud-power-workbench-extension-now-available",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-011",
+      "title": "Claude Code 被曝内置隐蔽检测中国用户代码，Anthropic 已回滚",
+      "source_url": "https://the-decoder.com/hidden-code-in-claude-code-secretly-flagged-chinese-users",
+      "issues": [
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
       "pool_ref": "P-012",
       "title": "Claude Sonnet 5延续Anthropic隐藏涨价的模式",
       "source_url": "https://the-decoder.com/claude-sonnet-5-continues-anthropics-pattern-of-hiding-price-increases-behind-unchanged-token-rates",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-013",
+      "title": "OpenAI论文揭示GPT-5.6三个Pro变体，打破单一顶级策略",
+      "source_url": "https://the-decoder.com/openai-paper-reveals-three-gpt-5-6-pro-models-breaking-with-single-top-tier-strategy",
       "issues": [
         "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
@@ -145,6 +254,47 @@
       "promote_priority": "low"
     },
     {
+      "pool_ref": "P-016",
+      "title": "Unique AI: Enterprise AI Platform for Financial Services",
+      "source_url": "https://www.unique.ai/",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "valid_page_type:index_or_directory_url",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, valid_page_type:index_or_directory_url, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-017",
+      "title": "Forward-Deployed AI Engineers | FDE as a Service | Plank",
+      "source_url": "https://joinplank.com/fde",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-018",
+      "title": "the-forward-deployed-shift/README_en.md at main · Leading-AI-IO ...",
+      "source_url": "https://github.com/Leading-AI-IO/the-forward-deployed-shift/blob/main/README_en.md",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "valid_page_type:index_or_directory_url",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:docs_or_catalog_or_investing_thesis"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_or_directory_url, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only, valid_page_type:docs_or_catalog_or_investing_thesis",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
       "pool_ref": "P-020",
       "title": "Enterprise AI transformation: how leading organizations are ...",
       "source_url": "https://www.dataiku.com/blog/enterprise-ai-transformation",
@@ -156,18 +306,109 @@
       "promote_priority": "review"
     },
     {
+      "pool_ref": "P-021",
+      "title": "AWS Marketplace VP Matt Yanchyshyn On AI-Driven Procurement And Agent Mode",
+      "source_url": "https://www.ciol.com/interviews/aws-marketplace-vp-matt-yanchyshyn-on-ai-driven-procurement-and-agent-mode-10986884",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-022",
+      "title": "The AI Implementation Buyer's Guide — Perpetual Core | Perpetual Core",
+      "source_url": "https://perpetualcore.com/guide/ai-implementation-buyers-guide",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-023",
+      "title": "Faraz6180/ForwardDeployAI",
+      "source_url": "https://github.com/Faraz6180/ForwardDeployAI",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-024",
+      "title": "The Rise of the Forward Deployment Engineer: A Message to My ...",
+      "source_url": "https://www.linkedin.com/pulse/rise-forward-deployment-engineer-message-my-students-entering-ranjan-q8vbc",
+      "issues": [
+        "fact_type_constraints:social_or_community_source_not_verified_fact"
+      ],
+      "not_promoted_reason": "fact_type_constraints:social_or_community_source_not_verified_fact",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-025",
+      "title": "Meta refuses to sign EU's AI code of practice - TechCrunch",
+      "source_url": "https://techcrunch.com/2025/07/18/meta-refuses-to-sign-eus-ai-code-of-practice/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-026",
+      "title": "AI Implementation Roadmap: Week-by-Week Timeline (2026)",
+      "source_url": "https://helium42.com/blog/ai-implementation-roadmap",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
       "pool_ref": "P-027",
       "title": "Trisham Patil - Forward-Deployed AI Engineer & Researcher",
       "source_url": "https://in.linkedin.com/in/trishampatil",
       "issues": [
-        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
         "fact_type_constraints:social_or_community_source_not_verified_fact",
-        "fact_type_constraints:workforce_retraining_program_not_formal_signal_card",
-        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+        "fact_type_constraints:workforce_retraining_program_not_formal_signal_card"
       ],
-      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact, fact_type_constraints:workforce_retraining_program_not_formal_signal_card, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
-      "repair_suggestion": "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.",
+      "not_promoted_reason": "fact_type_constraints:social_or_community_source_not_verified_fact, fact_type_constraints:workforce_retraining_program_not_formal_signal_card",
+      "repair_suggestion": "Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.",
       "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-031",
+      "title": "issdandavis/Kiro_Version_ai-workflow-architect",
+      "source_url": "https://github.com/issdandavis/Kiro_Version_ai-workflow-architect",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-032",
+      "title": "Agentic AI Deployment Readiness Assessment — Agentic AI AI Governance Control | AI Governance Institute",
+      "source_url": "https://aigovernance.com/controls/agentic-ai-deployment-readiness-assessment",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
     },
     {
       "pool_ref": "P-033",
@@ -181,6 +422,55 @@
       "promote_priority": "low"
     },
     {
+      "pool_ref": "P-034",
+      "title": "7 enterprise AI agent use cases in production (2026) - eCorpIT",
+      "source_url": "https://ecorpit.com/enterprise-ai-agents-production-use-cases-2026/",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-036",
+      "title": "US Seed Weekly Funding Roundup (Mar 17-24, 2026) - Qubit Capital",
+      "source_url": "https://qubit.capital/blog/us-seed-weekly-funding-roundup-week-4-march-2026",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-038",
+      "title": "Dealroom.co | Intelligence Layer for Tech Ecosystems",
+      "source_url": "https://dealroom.co/",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "valid_page_type:index_or_directory_url",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, valid_page_type:index_or_directory_url, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-039",
+      "title": "Meta 大规模 AI 存储蓝图",
+      "source_url": "https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
       "pool_ref": "P-041",
       "title": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
       "source_url": "https://blog.cloudflare.com/making-ai-search-smarter",
@@ -192,28 +482,139 @@
       "promote_priority": "review"
     },
     {
+      "pool_ref": "P-042",
+      "title": "Godot 将不再接受由 AI 编写的代码贡献",
+      "source_url": "https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it",
+      "issues": [
+        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
       "pool_ref": "P-043",
       "title": "GLM Coding Pro 发布：面向专业开发者的编码助手",
       "source_url": "https://zcode.z.ai/en",
       "issues": [
-        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
-        "fact_type_constraints:social_or_community_source_not_verified_fact"
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
       ],
-      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact",
-      "repair_suggestion": "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.",
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-045",
+      "title": "Meta 发布非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%",
+      "source_url": "https://the-decoder.com/metas-non-invasive-brain-to-text-ai-is-closing-the-gap-with-surgical-implants",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-046",
+      "title": "The &#8216;Father of the Internet&#8217; is finally retiring",
+      "source_url": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-044",
-      "title": "Cloudflare 推出 Monetization Gateway 变现网关",
-      "source_url": "https://blog.cloudflare.com/monetization-gateway",
+      "pool_ref": "P-047",
+      "title": "Anthropic&#8217;s long-sidelined Fable 5 is greenlit to return",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
       "issues": [
-        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
-        "fact_type_constraints:social_or_community_source_not_verified_fact",
-        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
-      "repair_suggestion": "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.",
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-049",
+      "title": "claude-skill/SKILL.md at main · CommonPaper/claude-skill - GitHub",
+      "source_url": "https://github.com/CommonPaper/claude-skill/blob/main/SKILL.md",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-050",
+      "title": "AI Implementation Services | Production AI in 21 Days | KORIX",
+      "source_url": "https://korixinc.com/ai-pilot",
+      "issues": [
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-051",
+      "title": "Kagome Design · AI design partner for live products",
+      "source_url": "https://kagome.design/",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "valid_page_type:index_or_directory_url",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, valid_page_type:index_or_directory_url, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-052",
+      "title": "AI Automation ROI: What Startups Actually Gain - Ninja Studio",
+      "source_url": "https://www.theninjastudio.com/blog/ai-automation-roi-startups",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-054",
+      "title": "bernstein · PyPI",
+      "source_url": "https://pypi.org/project/bernstein/",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-055",
+      "title": "GitHub Copilot CLI GA — The Real Reason CLI Agent Development Will Penetrate Japan's Enterprise: It's the Procurement Structure - SmartScope",
+      "source_url": "https://smartscope.blog/en/generative-ai/github-copilot/copilot-cli-ga-enterprise-procurement-analysis/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
     {
@@ -225,6 +626,20 @@
       ],
       "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-057",
+      "title": "Giskard's open source framework evaluates AI models before they're ...",
+      "source_url": "https://techcrunch.com/2023/11/14/giskards-open-source-framework-evaluates-ai-models-before-theyre-pushed-into-production/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, source_auditability:discovery_source_not_resolved, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
     {
@@ -241,6 +656,17 @@
       "promote_priority": "low"
     },
     {
+      "pool_ref": "P-059",
+      "title": "纽约市教育界和行业领袖齐聚Google AI教育峰会 共议AI课堂未来",
+      "source_url": "https://blog.google/products-and-platforms/products/education/nyc-ai-summit",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
       "pool_ref": "P-061",
       "title": "瑞银：约六成企业收紧 AI 开支，DeepSeek 等开源大模型有望受益",
       "source_url": "https://www.ithome.com/0/971/289.htm",
@@ -252,17 +678,50 @@
       "promote_priority": "review"
     },
     {
+      "pool_ref": "P-062",
+      "title": "OpenAI 推出 GeneBench-Pro 基准测试，评估 AI 模型生物学计算能力",
+      "source_url": "https://www.ithome.com/0/971/383.htm",
+      "issues": [
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-064",
+      "title": "Anthropic 回应 Claude Code 暗藏检测中国用户代码：将在明日更新中删除",
+      "source_url": "https://www.ithome.com/0/971/118.htm",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
       "pool_ref": "P-065",
       "title": "Podcasting platform Riverside enters the newsletter publishing game",
       "source_url": "https://techcrunch.com/2026/06/30/podcasting-platform-riverside-enters-the-newsletter-publishing-game/",
       "issues": [
-        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
         "valid_page_type:newsletter_roundup_requires_original_event_source",
         "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "not_promoted_reason": "valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
       "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
       "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-066",
+      "title": "Forward Deployed Engineer, Applied AI at Anthropic",
+      "source_url": "https://echojobs.io/job/anthropic-forward-deployed-engineer-applied-ai-xl6et",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
     },
     {
       "pool_ref": "P-067",
@@ -334,9 +793,32 @@
       "promote_priority": "low"
     },
     {
+      "pool_ref": "P-074",
+      "title": "Use this prompt to generate a standout project: “Based ... - Instagram",
+      "source_url": "https://www.instagram.com/reel/DIov253P9Ly/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
       "pool_ref": "P-075",
       "title": "Applied AI Architect - Braze | Built In",
       "source_url": "https://builtin.com/job/applied-ai-architect/10016409",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-077",
+      "title": "NiCE Announces the Future of AI-Powered CX - Markets data",
+      "source_url": "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202606090800BIZWIRE_USPRX____20260609_BW594222-1",
       "issues": [
         "auto_signal_spec_null"
       ],
@@ -353,6 +835,354 @@
         "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
       "not_promoted_reason": "valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-079",
+      "title": "Zainab A.S. | GenAI • Vertex AI • RAG • Agentic Systems | LinkedIn",
+      "source_url": "https://www.linkedin.com/in/zaineb-ahmedsafeer",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "fact_type_constraints:social_or_community_source_not_verified_fact"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, fact_type_constraints:social_or_community_source_not_verified_fact",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, full text, excerpts, and hashes are present.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-080",
+      "title": "Implementing AI from scratch for deep knowledge - Facebook",
+      "source_url": "https://www.facebook.com/groups/DeepNetGroup/posts/579457092447177/",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:weak_extraction_quality"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:weak_extraction_quality",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, full text, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-081",
+      "title": "亚马逊 AWS 砸 10 亿美元，派遣工程师进驻客户公司",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-082",
+      "title": "NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-083",
+      "title": "Google Cloud Workbench Notebooks 扩展发布：在 VS Code 中连接云端 Jupyter 环境",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "valid_page_type:index_only_evidence_type:marketplace_listing",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, valid_page_type:index_only_evidence_type:marketplace_listing, source_auditability:discovery_source_not_resolved, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-084",
+      "title": "Google 2026年6月AI更新汇总",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, source_auditability:discovery_source_not_resolved, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-085",
+      "title": "OpenAI论文揭示GPT-5.6三个Pro变体，打破单一顶级策略",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-086",
+      "title": "Claude Code v2.1.198 发布",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-087",
+      "title": "用 Genkit 构建智能体全栈应用",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-088",
+      "title": "我们为何构建ADK 2.0",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-089",
+      "title": "Cloudflare 推出全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-090",
+      "title": "纽约市教育界和行业领袖齐聚Google AI教育峰会 共议AI课堂未来",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:missing_concrete_funding_product_or_case_event, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-091",
+      "title": "美团 LongCat-2.0 正式发布：国产算力集群训练的万亿参数大模型",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "source_auditability:discovery_source_not_resolved",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-092",
+      "title": "智谱推出GLM-5.2官方开发环境ZCode",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-093",
+      "title": "xAI 发布 Voice Agent Builder 测试版",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-094",
+      "title": "Cloudflare 推出 Monetization Gateway：通过 x402 协议为任何资源收费",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-095",
+      "title": "构建AI智能体应优先设计路由",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:raw_qc_not_allow",
+        "evidence_quality:missing_full_text",
+        "source_auditability:missing_source_url",
+        "evidence_quality:low_readability",
+        "evidence_quality:weak_extraction_quality",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "evidence_quality:incomplete_evidence_object",
+        "evidence_quality:degradation_reason_blocks_core",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     }

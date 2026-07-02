@@ -8,7 +8,7 @@ Run these pass/fail checks when editing or using the WaveSight AI monitor qualit
    - Pass when outputs state that script success is only `script_pre_gate=passed` and downstream remains `pending_qc` until `guanlan-daily-monitor-qc` returns `allow` or scoped `allow_with_degradation`.
 
 2. `v3_quantity_thresholds`
-   - Pass when automated reports check at least 150 active Raw candidates, at least 75 Pool items, at least 60 routed Pool items, and at least 30 usable `core_pool` items.
+   - Pass when automated reports check at least 150 active Raw candidates, at least 75 Pool items, at least 60 routed Pool items, and raw-to-card Card supply.
 
 3. `bounded_retry`
    - Pass when failed script thresholds trigger at most 3 bounded refetch cycles before `manual_intervention_required=true`.
@@ -26,8 +26,8 @@ Run these pass/fail checks when editing or using the WaveSight AI monitor qualit
    - Pass when blocked or pending status mentions Signal Cards, relationship graph inputs, trend candidates, and Business Signals frontstage data, not retired daily observations, trend reports, briefs, publiccopy, or cardcopy gates.
 
 8. `pool_core_release_diagnostics`
-   - Pass when Raw count, failed source-channel count, keyword-only floor, AI-relevant title ratio, and off-topic raw-title diagnostics remain visible but do not block release after Pool, routed Pool, Core Pool, non-large Core Pool, and downstream Top10/Card supply are sufficient.
-   - Fail when a provider quota note, one empty peer channel, or a Raw-title diagnostic causes a full monitor rerun while Pool/Core/Top10 supply is already healthy.
+   - Pass when Raw count, failed source-channel count, keyword-only floor, AI-relevant title ratio, and off-topic raw-title diagnostics remain visible but do not block release after Pool audit supply and downstream Card supply are sufficient.
+   - Fail when a provider quota note, one empty peer channel, or a Raw-title diagnostic causes a full monitor rerun while Pool audit supply and Card supply are already healthy.
 
 ## Repair Loop
 

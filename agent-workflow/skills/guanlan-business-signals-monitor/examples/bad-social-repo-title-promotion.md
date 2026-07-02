@@ -1,6 +1,6 @@
 # Bad Social / Repo Title Promotion Example
 
-Use this as a regression example for Business Signals Top10 and Core Pool candidate display.
+Use this as a regression example for Business Signals public Card and backend candidate display.
 
 ## Bad Output
 
@@ -20,4 +20,4 @@ Use this as a regression example for Business Signals Top10 and Core Pool candid
 
 - Block social/community, repo/catalog, marketplace, package/model, and generic list sources from formal Signal Card promotion unless recaptured through a dated source-backed event page.
 - Build public titles from source-backed event facts, not placeholder wording such as "purpose see original" or "original AI event".
-- Deduplicate the public candidate pool by event key, keeping the highest-quality source-backed item and treating the rest as supporting evidence.
+- Deduplicate backend candidates by event key, keeping the highest-quality source-backed item and treating the rest as supporting evidence.

@@ -1,5 +1,5 @@
 ---
-id: SIG-20260702-A06
+id: SIG-20260702-A15
 type: signal_card
 signal_type: product_service
 title: "Gemini Spark，Google 智能体助手，现已登陆 Mac"
@@ -9,8 +9,8 @@ source_title: "Gemini Spark，Google 智能体助手，现已登陆 Mac"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-02T05:53:33.280Z
-updated_at: 2026-07-02T05:53:33.280Z
+created_at: 2026-07-02T07:21:56.472Z
+updated_at: 2026-07-02T07:21:56.472Z
 
 raw_refs: ["R-008"]
 pool_refs: ["P-008"]

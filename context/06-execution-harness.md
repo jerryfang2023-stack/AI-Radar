@@ -64,7 +64,7 @@ Current business-signal Card types:
 - `funding`;
 - `case`.
 
-Default frontstage target: publish every qualified Core Pool business signal that can become a Card. Asset generation should cover all qualified Core Pool items; there is no public Top10 selector or candidate-pool split.
+Default frontstage target: publish every qualified Raw / Pool business signal that passes raw-to-card cardability and can become a Card. Asset generation should cover all cardable Raw / Pool items; Pool is an audit index and repair surface, not a required manual selection layer. There is no public Top10 selector or candidate-pool split.
 
 ### C. First-Line Viewpoints
 

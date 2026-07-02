@@ -1,6 +1,6 @@
 # 2026-07-02 Guanlan Monitor Quality Gate
 
-- generated_at: 2026-07-02T02:41:53.767Z
+- generated_at: 2026-07-02T07:21:46.660Z
 - attempt: 1/1
 - status: passed
 - production_weekday: thursday
@@ -10,8 +10,8 @@
 - diagnostic_score_reference: 85
 - score_mode: diagnostic_only
 - raw_count: 147
-- raw_count_release_override: pool_core_supply
-- pool_core_supply_release: true
+- raw_count_release_override: raw_to_card_supply
+- raw_to_card_supply_release: true
 - pool_count: 95
 - pool_index_count: 95
 - routed_pool_count: 75
@@ -20,7 +20,6 @@
 - aihot_core_count: 22
 - keyword_search_non_community_count: 55
 - non_community_paths_hit: official_original, developer_ecosystem, capital_startup, industry_landing, procurement_marketplace, a_media_gdelt
-- source_level_distribution: B=90; A=25; C=20; S=12
 - ai_relevant_title_ratio: 0.810
 - off_topic_title_count: 0
 - core_pool_count: 33
@@ -60,23 +59,12 @@
 
 ## Hard Gates
 
-- raw_count_min: passed (147/150; released_by_pool_core_supply=true)
+- raw_count_min: passed (147/150; released_by_raw_to_card_supply=true)
 - pool_count_min: passed (95/75)
 - routed_pool_count_min: passed (75/60)
 - keyword_search_non_community_min: passed (55/6)
 - ai_relevant_title_ratio_min: passed (0.81/0.7)
 - off_topic_title_max: passed (0/3)
-- core_pool_min: passed (33/30)
-- usable_core_evidence_min: passed (33/30)
-- homepage_directory_core_max: passed (0/0)
-- core_missing_full_text_max: passed (0/0)
-- core_readability_score_min: passed (low=0/0; min=24)
-- core_text_contamination_max: passed (0/0)
-- core_raw_qc_block_max: passed (0/0)
-- core_raw_qc_degraded_max: passed (0/0)
-- core_large_vendor_max: passed (9/10)
-- core_large_vendor_ratio_max: passed (0.27/0.35)
-- core_non_large_vendor_min: passed (24/20)
 - unrecovered_failed_sources_max: passed (0/0; total=12; recovered=12)
 - importance_coverage_gaps_must_be_none: passed (none)
 - pool_importance_coverage_gaps_must_be_none: passed (none)

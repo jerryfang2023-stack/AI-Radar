@@ -14,13 +14,13 @@ Use this when Business Signals has not cleanly published by the morning handoff 
    - `no_run_or_stale_assets`: no same-date run or activeDate is stale;
    - `raw_volume_shortfall`: Raw count below hard floor and downstream Card supply is insufficient;
    - `pool_mix_shortfall`: funding / case / product coverage gap;
-   - `core_supply_shortfall`: Core Pool or non-large Core Pool too thin;
+   - `card_supply_shortfall`: cardable Raw / Pool supply or generated Card supply too thin;
    - `frontstage_card_contract`: public Cards missing, stale, unsorted, or leaking backend fields;
    - `translation_title`: untranslated or placeholder public title;
    - `publication`: assets pass but PR/merge/Pages failed.
 3. Run the pre-rerun checklist before any full-chain repair:
    - compare local branch with `origin/main` so stale local checkout is not mistaken for missing data;
-   - inspect active Raw, Pool, routed Pool, Core Pool, and non-large Core Pool counts;
+   - inspect active Raw, Pool, routed Pool, cardable candidate count, and large-company concentration;
    - identify the deficient source/channel or downstream eligibility bucket before calling it a Raw shortage;
    - check source-artifact retry freshness;
    - list missing source-title translations when active-date Cards exist but public Cards are empty;

@@ -1,10 +1,10 @@
 # 2026-07-02 Daily Production Chain Readiness
 
-- generated_at: 2026-07-02T02:54:04.325Z
+- generated_at: 2026-07-02T07:23:02.019Z
 - stage: pre-commit
 - status: passed
 - final_active_raw_count: 147
-- raw_count_release_override: pool_core_supply
+- raw_count_release_override: raw_to_card_supply
 - final_active_pool_count: 95
 - logged_raw_count: 147
 - logged_pool_count: 95

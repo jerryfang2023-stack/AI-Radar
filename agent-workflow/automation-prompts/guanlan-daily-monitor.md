@@ -33,9 +33,9 @@ Homepage, directory, login, docs-index, tool-list, product catalog, package/mode
 
 ## Pool
 
-Pool is the evidence pool.
+Pool is the evidence audit pool.
 
-`core_pool` must have:
+Any Pool item that may support a Card must have:
 
 - original source link;
 - readable body text;
@@ -45,7 +45,7 @@ Pool is the evidence pool.
 - Raw QC allow;
 - clear importance reason.
 
-Pool does not decide Card type and does not write frontstage copy.
+Pool does not decide Card type, does not write frontstage copy, and is not a required manual middle layer before raw-to-card generation.
 
 ## Search Coverage
 
@@ -60,4 +60,3 @@ Large-company news is allowed, but it must not crowd out vertical cases and emer
 ## Paused Lanes
 
 The previous opinion / follow-builders lane is not part of V3 business-signal monitoring.
-

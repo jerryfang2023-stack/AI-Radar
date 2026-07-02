@@ -475,8 +475,8 @@ for (const [date, items] of frontstageByDate.entries()) {
     if (!Number.isFinite(Number(items[index].frontstageRankScore))) {
       issues.push(`frontstage ${date} card ${items[index].id || "(missing id)"} is missing frontstageRankScore`);
     }
-    if (!Array.isArray(items[index].poolRoutes) || !items[index].poolRoutes.includes("core_pool")) {
-      issues.push(`frontstage ${date} card ${items[index].id || "(missing id)"} is not produced from core_pool`);
+    if (!items[index].sourceUrl && (!Array.isArray(items[index].sourceLinks) || !items[index].sourceLinks.length)) {
+      issues.push(`frontstage ${date} card ${items[index].id || "(missing id)"} is missing source URL references`);
     }
   }
 }

@@ -1,13 +1,13 @@
 # 2026-07-02 Pool-to-Card Handoff
 
-- generated_at: 2026-07-02T05:53:33.711Z
-- written_count: 8
+- generated_at: 2026-07-02T07:21:57.084Z
+- written_count: 17
 - merged_count: 0
 - skipped_count: 0
-- signal_asset_count: 7
-- core_pool_not_promoted_count: 26
-- asset_generation_limit: all_qualified_core_pool
-- signal_asset_mode: all qualified Core Pool items
+- signal_asset_count: 16
+- not_promoted_candidate_count: 78
+- asset_generation_limit: all_cardable_raw_pool
+- signal_asset_mode: all cardable Raw / Pool business signals
 
 ## Signal Card Assets
 
@@ -15,19 +15,37 @@
 - SIG-20260702-A02｜P-035｜Seltz 获得 $12.5M 融资
 - SIG-20260702-A03｜P-048｜Together 获得 $800M C 轮 融资
 - SIG-20260702-A04｜P-040｜Cloudflare 推出全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面
-- SIG-20260702-A05｜P-010｜用 Genkit 构建智能体全栈应用
-- SIG-20260702-A06｜P-008｜Gemini Spark，Google 智能体助手，现已登陆 Mac
-- SIG-20260702-A07｜P-037｜Engram 携 9800 万美元启动，打造真正了解组织的 AI
+- SIG-20260702-A05｜P-044｜Cloudflare 推出 Monetization Gateway 变现网关
+- SIG-20260702-A06｜P-068｜Houston Methodist 全企业部署 Midstream Health 智能体财务行动平台
+- SIG-20260702-A07｜P-019｜AWS GenAIIC Partner Agent Factory 新增智能体进入 AWS Marketplace
+- SIG-20260702-A08｜P-029｜Smartsheet 使用 Claude Platform API 改造企业工作流
+- SIG-20260702-A09｜P-030｜Glean 年经常性收入超过 3 亿美元，企业上下文推动 AI 采用
+- SIG-20260702-A10｜P-076｜Zillow 向 7000 名员工部署 Glean，每人每周节省 1.5 小时以上
+- SIG-20260702-A11｜P-053｜Inscribe 使用 Amazon Bedrock 在数秒内拦截文档欺诈
+- SIG-20260702-A12｜P-028｜AppliedAI 与麦肯锡合作，用 AI 改造受监管企业流程
+- SIG-20260702-A13｜P-010｜用 Genkit 构建智能体全栈应用
+- SIG-20260702-A14｜P-037｜Engram 携 9800 万美元启动，打造真正了解组织的 AI
+- SIG-20260702-A15｜P-008｜Gemini Spark，Google 智能体助手，现已登陆 Mac
+- SIG-20260702-A16｜P-060｜Meta效仿SpaceX建立云业务，转售闲置AI算力
 
 ## Cluster / Dedupe Rows
 
-- P-002｜hash:ed55880406f0c2ab｜accepted
-- P-035｜hash:4affcb58ccdfce57｜accepted
-- P-048｜hash:d9533839f02464c8｜accepted
-- P-040｜hash:a66f5390c4e945b3｜accepted
-- P-010｜hash:5fe82e9cba6c76ab｜accepted
-- P-008｜hash:296c5ce58ee7e26f｜accepted
-- P-037｜hash:f7105d727554bb38｜accepted
+- P-002｜event:funding:venice ai 完成 6500 万美元 a 轮融资 估值 10 亿美元: 6500 万｜accepted
+- P-035｜event:funding:seltz:$12.5m｜accepted
+- P-048｜event:funding:together:$800m｜accepted
+- P-040｜event:case:cloudflare:ai-traffic-control｜accepted
+- P-044｜event:case:cloudflare:case cloudflare 推出 monetization gateway 变现网关｜accepted
+- P-068｜event:case:houston methodist midstream health:2026｜accepted
+- P-019｜event:case:aws genaiic:case aws genaiic partner agent factory new ai agents now in aws｜accepted
+- P-029｜event:case:smartsheet anthropic:case smartsheet claude platform api case study claude by anthropic｜accepted
+- P-030｜event:case:glean:$300m｜accepted
+- P-076｜event:case:zillow glean: 7｜accepted
+- P-053｜event:case:inscribe aws:case how inscribe uses amazon bedrock to stop document fraud in seconds artificial intelligence｜accepted
+- P-028｜event:case:appliedai mckinsey:302780007｜accepted
+- P-010｜event:case:用 genkit 构建智能体全栈应用:case 用 genkit 构建智能体全栈应用｜accepted
+- P-037｜event:funding:engram:$98m｜accepted
+- P-008｜event:product_service:google:gemini-spark｜accepted
+- P-060｜event:product_service:meta效仿spacex建立云业务 转售闲置ai算力:product service meta效仿spacex建立云业务 转售闲置ai算力｜accepted
 
 ## Written
 
@@ -35,9 +53,18 @@
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-02--signal--seltz-auto-signal-p-035.md
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-02--signal--together-auto-signal-p-048.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--cloudflare-auto-signal-p-040.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--cloudflare-auto-signal-p-044.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--houston-methodist-midstream-health-auto-signal-p-068.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--aws-genaiic-auto-signal-p-019.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--smartsheet-anthropic-auto-signal-p-029.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--glean-auto-signal-p-030.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--zillow-glean-auto-signal-p-076.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--inscribe-aws-auto-signal-p-053.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--appliedai-mckinsey-auto-signal-p-028.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--genkit-auto-signal-p-010.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-02--signal--gemini-spark-google-mac-auto-signal-p-008.md
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-02--signal--engram-auto-signal-p-037.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-02--signal--gemini-spark-google-mac-auto-signal-p-008.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-02--signal--meta-spacex-ai-auto-signal-p-060.md
 - 01-SiteV2/content/04-business-signals/signals/2026-07-02-signals.md
 
 ## Merged
@@ -48,31 +75,83 @@
 
 - none
 
-## Core Pool Not Promoted
+## Not Promoted Candidates
 
 - P-001: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Ashton Kutcher离开Sound Ventures，与Morgan Beller共同创办新VC基金
 - P-003: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Google 2026年6月AI更新汇总
+- P-004: evidence_quality:raw_qc_not_allow, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=2026 BAIR Graduate Showcase
 - P-005: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Claude Code v2.1.198 发布
 - P-006: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=low; title=美国解除对Anthropic Claude Fable 5和Mythos 5的出口限制
 - P-007: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=我们为何构建ADK 2.0
+- P-009: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Google Cloud Workbench Notebooks 扩展发布：在 VS Code 中连接云端 Jupyter 环境
+- P-011: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Claude Code 被曝内置隐蔽检测中国用户代码，Anthropic 已回滚
 - P-012: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Claude Sonnet 5延续Anthropic隐藏涨价的模式
+- P-013: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=OpenAI论文揭示GPT-5.6三个Pro变体，打破单一顶级策略
 - P-014: business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=low; title=Anthropic Fable 5 因越狱被封两周后全球恢复可用
 - P-015: business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=low; title=美国解除对Anthropic的Mythos与Fable模型出口限制，7月1日恢复公众访问
+- P-016: evidence_quality:raw_qc_not_allow, valid_page_type:index_or_directory_url, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Unique AI: Enterprise AI Platform for Financial Services
+- P-017: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Forward-Deployed AI Engineers | FDE as a Service | Plank
+- P-018: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_or_directory_url, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only, valid_page_type:docs_or_catalog_or_investing_thesis; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=the-forward-deployed-shift/README_en.md at main · Leading-AI-IO ...
 - P-020: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Enterprise AI transformation: how leading organizations are ...
-- P-027: fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact, fact_type_constraints:workforce_retraining_program_not_formal_signal_card, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.; priority=low; title=Trisham Patil - Forward-Deployed AI Engineer & Researcher
+- P-021: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=AWS Marketplace VP Matt Yanchyshyn On AI-Driven Procurement And Agent Mode
+- P-022: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=The AI Implementation Buyer's Guide — Perpetual Core | Perpetual Core
+- P-023: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Faraz6180/ForwardDeployAI
+- P-024: fact_type_constraints:social_or_community_source_not_verified_fact; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=The Rise of the Forward Deployment Engineer: A Message to My ...
+- P-025: evidence_quality:stale_source_date, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Meta refuses to sign EU's AI code of practice - TechCrunch
+- P-026: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=AI Implementation Roadmap: Week-by-Week Timeline (2026)
+- P-027: fact_type_constraints:social_or_community_source_not_verified_fact, fact_type_constraints:workforce_retraining_program_not_formal_signal_card; repair=Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.; priority=low; title=Trisham Patil - Forward-Deployed AI Engineer & Researcher
+- P-031: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=issdandavis/Kiro_Version_ai-workflow-architect
+- P-032: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Agentic AI Deployment Readiness Assessment — Agentic AI AI Governance Control | AI Governance Institute
 - P-033: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=OpenAI limits GPT-5.6 rollout after government request, says ...
+- P-034: valid_page_type:generic_report_or_list_not_fact_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=7 enterprise AI agent use cases in production (2026) - eCorpIT
+- P-036: evidence_quality:stale_source_date, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=US Seed Weekly Funding Roundup (Mar 17-24, 2026) - Qubit Capital
+- P-038: evidence_quality:raw_qc_not_allow, valid_page_type:index_or_directory_url, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Dealroom.co | Intelligence Layer for Tech Ecosystems
+- P-039: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Meta 大规模 AI 存储蓝图
 - P-041: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Cloudflare 推出两项新举措，让 AI 搜索更智能
-- P-043: fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact; repair=Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.; priority=low; title=GLM Coding Pro 发布：面向专业开发者的编码助手
-- P-044: fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.; priority=low; title=Cloudflare 推出 Monetization Gateway 变现网关
+- P-042: fact_type_constraints:user_feedback_or_commentary_not_verified_fact, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Godot 将不再接受由 AI 编写的代码贡献
+- P-043: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=GLM Coding Pro 发布：面向专业开发者的编码助手
+- P-045: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Meta 发布非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%
+- P-046: evidence_quality:raw_qc_not_allow, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=The &#8216;Father of the Internet&#8217; is finally retiring
+- P-047: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Anthropic&#8217;s long-sidelined Fable 5 is greenlit to return
+- P-049: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=claude-skill/SKILL.md at main · CommonPaper/claude-skill - GitHub
+- P-050: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=AI Implementation Services | Production AI in 21 Days | KORIX
+- P-051: evidence_quality:raw_qc_not_allow, valid_page_type:index_or_directory_url, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Kagome Design · AI design partner for live products
+- P-052: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=AI Automation ROI: What Startups Actually Gain - Ninja Studio
+- P-054: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=bernstein · PyPI
+- P-055: evidence_quality:stale_source_date, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=GitHub Copilot CLI GA — The Real Reason CLI Agent Development Will Penetrate Japan's Enterprise: It's the Procurement Structure - SmartScope
 - P-056: valid_page_type:generic_report_or_list_not_fact_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Startuply.vc: Metorial
+- P-057: evidence_quality:stale_source_date, source_auditability:discovery_source_not_resolved, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Giskard's open source framework evaluates AI models before they're ...
 - P-058: business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only, fact_type_constraints:funding_not_single_company_round; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投
+- P-059: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=纽约市教育界和行业领袖齐聚Google AI教育峰会 共议AI课堂未来
 - P-061: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=瑞银：约六成企业收紧 AI 开支，DeepSeek 等开源大模型有望受益
-- P-065: fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Use the newsletter only as discovery context; recapture the original dated event source before promoting.; priority=low; title=Podcasting platform Riverside enters the newsletter publishing game
+- P-062: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=OpenAI 推出 GeneBench-Pro 基准测试，评估 AI 模型生物学计算能力
+- P-064: business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Anthropic 回应 Claude Code 暗藏检测中国用户代码：将在明日更新中删除
+- P-065: valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Use the newsletter only as discovery context; recapture the original dated event source before promoting.; priority=low; title=Podcasting platform Riverside enters the newsletter publishing game
+- P-066: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Forward Deployed Engineer, Applied AI at Anthropic
 - P-067: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Comment “Arc” to get the full list of YC P26 startups ... - Instagram
 - P-069: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, valid_page_type:text_indicates_index_only, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA
 - P-070: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=舞力全开：派对》今日上线：无需外设，登陆iOS/安卓/鸿蒙
 - P-071: valid_page_type:text_indicates_index_only, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=联合国专家组警告：AI 能力进步速度已超过科学认知
 - P-072: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖
 - P-073: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=抖音电商上线"肖像保护功能"，防范"AI 仿冒带货达人"侵权行为
+- P-074: evidence_quality:stale_source_date, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Use this prompt to generate a standout project: “Based ... - Instagram
 - P-075: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Applied AI Architect - Braze | Built In
+- P-077: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=NiCE Announces the Future of AI-Powered CX - Markets data
 - P-078: valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=AI to impact: Building the AI-Native Enterprise - Paid Program - WSJ
+- P-079: evidence_quality:raw_qc_not_allow, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, fact_type_constraints:social_or_community_source_not_verified_fact; repair=Repair Raw evidence extraction so source URL, full text, excerpts, and hashes are present.; priority=low; title=Zainab A.S. | GenAI • Vertex AI • RAG • Agentic Systems | LinkedIn
+- P-080: evidence_quality:raw_qc_not_allow, evidence_quality:weak_extraction_quality; repair=Repair Raw evidence extraction so source URL, full text, excerpts, and hashes are present.; priority=medium; title=Implementing AI from scratch for deep knowledge - Facebook
+- P-081: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=亚马逊 AWS 砸 10 亿美元，派遣工程师进驻客户公司
+- P-082: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型
+- P-083: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, valid_page_type:index_only_evidence_type:marketplace_listing, source_auditability:discovery_source_not_resolved, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Google Cloud Workbench Notebooks 扩展发布：在 VS Code 中连接云端 Jupyter 环境
+- P-084: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, source_auditability:discovery_source_not_resolved, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Google 2026年6月AI更新汇总
+- P-085: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=OpenAI论文揭示GPT-5.6三个Pro变体，打破单一顶级策略
+- P-086: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Claude Code v2.1.198 发布
+- P-087: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=用 Genkit 构建智能体全栈应用
+- P-088: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=我们为何构建ADK 2.0
+- P-089: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Cloudflare 推出全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面
+- P-090: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:missing_concrete_funding_product_or_case_event, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=纽约市教育界和行业领袖齐聚Google AI教育峰会 共议AI课堂未来
+- P-091: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=美团 LongCat-2.0 正式发布：国产算力集群训练的万亿参数大模型
+- P-092: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=智谱推出GLM-5.2官方开发环境ZCode
+- P-093: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=xAI 发布 Voice Agent Builder 测试版
+- P-094: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Cloudflare 推出 Monetization Gateway：通过 x402 协议为任何资源收费
+- P-095: evidence_quality:raw_qc_not_allow, evidence_quality:missing_full_text, source_auditability:missing_source_url, evidence_quality:low_readability, evidence_quality:weak_extraction_quality, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, evidence_quality:incomplete_evidence_object, evidence_quality:degradation_reason_blocks_core, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=构建AI智能体应优先设计路由

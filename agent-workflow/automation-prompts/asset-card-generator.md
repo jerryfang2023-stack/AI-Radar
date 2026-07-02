@@ -32,16 +32,17 @@ Opinion cards are out of scope until a separate opinion-column rule is rebuilt.
 
 ## Daily Target
 
-Default output is 10 signal cards.
+Default output is every active-date item that passes raw-to-card cardability checks.
 
-Target mix:
+The generator should use this flow:
 
-- 2-3 funding cards;
-- 2-3 case / vertical deployment cards;
-- 2-3 product / service cards;
-- 1 best remaining qualified item.
+```text
+Raw -> dedupe / evidence quality check -> cardability judgment -> draft Card -> validation / publish
+```
 
-Include both large-company signals and smaller / vertical-market signals. Do not allow large-company product news to fill the whole day.
+Pool remains an audit index and repair surface. It is no longer a required intermediate selector, fixed quota, or Top-N buffer before Card generation.
+
+Include both large-company signals and smaller / vertical-market signals. Do not allow large-company product news to crowd out source-backed funding, case, acquisition, partnership, procurement, pricing, regulatory, or infrastructure signals.
 
 ## Evidence Rules
 
@@ -76,7 +77,7 @@ Card body fields:
 
 Never write naked-number fallback text such as "original key numbers include 54%".
 
-If source-derived frontstage content is missing, mark the gap and skip or downgrade. Do not show backend fields.
+If source-derived frontstage content is missing, mark the evidence-quality gap and skip or repair extraction. Do not downgrade a concrete funding, product/service, acquisition, partnership, pricing, procurement, or regulatory event merely because it lacks a named customer, adoption metric, or before/after workflow.
 
 ## Relationship And Trend Inputs
 
@@ -91,4 +92,3 @@ Every accepted Card should preserve:
 - missing information.
 
 Relationship graph and trend candidates read from Cards. They do not read old daily-observation, brief, trend-report, or opinion rules.
-

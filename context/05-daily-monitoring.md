@@ -53,11 +53,23 @@ Raw keeps source evidence:
 
 Homepage, directory, login, docs-index, tool-list, product catalog, package/model listing, marketplace listing, search result, SEO, and navigation pages are `index_only` unless the same page contains a dated concrete event.
 
+## Raw-To-Card Boundary
+
+Current Business Signals production uses this path:
+
+```text
+Raw -> dedupe / evidence quality check -> cardability judgment -> draft Card -> validation / publish
+```
+
+Pool remains the audit index and repair surface. It is not a required selection layer before a source-backed Raw item can become a Card.
+
+Missing named customers, adoption metrics, ROI, or before/after workflow details should be recorded as evidence boundaries. They must not automatically suppress concrete funding, product/service, acquisition, partnership, procurement, pricing, regulatory, lawsuit/settlement, infrastructure, or other AI commercial market-structure events.
+
 ## Pool Boundary
 
-Pool is screened evidence.
+Pool is screened evidence for audit and repair.
 
-`core_pool` requires:
+Any Pool item that is used as Card evidence requires:
 
 - original source link;
 - readable body text;
@@ -67,11 +79,11 @@ Pool is screened evidence.
 - Raw QC allow;
 - clear importance reason.
 
-Pool type is not Card type.
+Pool type is not Card type. Cardability is judged from source-backed Raw evidence first, with Pool as an audit index rather than a mandatory publication gate.
 
 `important_technical_trend` is monitored as context for source repair, relationship analysis, and trend-candidate work. It must not be used to fill formal Signal Card quantity unless the same source also proves a dated product/service launch, funding event, customer deployment, procurement, partnership, or production rollout.
 
-Signal Card promotion from Core Pool must use the six entry gates in `context/07-v3-intelligence-generation-rules.md`:
+Signal Card promotion must use the six entry gates in `context/07-v3-intelligence-generation-rules.md`:
 
 - `source_auditability`;
 - `evidence_quality`;
@@ -94,32 +106,32 @@ Enterprise AI transformation / 企业AI化 is an added monitoring lens for FDE-s
 
 This lens does not create a fourth Signal Card type. FDE / Applied AI / Technical Deployment role pages may indicate organization capability or delivery model, but they cannot become formal business-signal facts unless separately supported by source-backed product / service, funding, customer deployment, procurement, or production rollout evidence.
 
-Generic FDE / applied-AI implementation pages are non-core by default. Job posts, role explainers, consulting/service landing pages, and "what is FDE" articles may remain in Raw / Pool diagnostics, but they must not satisfy `core_pool`, routed Pool, or Card quantity gates unless the same original source contains a concrete dated customer deployment, product/service launch, funding, procurement, partnership, or production rollout.
+Generic FDE / applied-AI implementation pages are backend context by default. Job posts, role explainers, consulting/service landing pages, and "what is FDE" articles may remain in Raw / Pool diagnostics, but they must not satisfy routed Pool or Card quantity gates unless the same original source contains a concrete dated customer deployment, product/service launch, funding, procurement, partnership, or production rollout.
 
 Large-company items are allowed, but they cannot dominate the day.
 
 Current quantity gates:
 
 - daily production chain expects at least 150 active Raw candidates;
-- Raw shortfall caused by search-provider quota or temporary outage must not block release by itself when Pool, routed Pool, usable `core_pool`, non-large `core_pool`, and the downstream frontstage Card contract are sufficient; keep the shortfall visible as a diagnostic.
+- Raw shortfall caused by search-provider quota or temporary outage must not block release by itself when Pool audit supply and the downstream frontstage Card contract are sufficient; keep the shortfall visible as a diagnostic.
 - GDELT, keyword search, RSS, and AI HOT are peer source-artifact entrances for Raw. Raw selection should use balanced rotation across available peer channels, not a fixed priority order.
-- daily Pool gate expects at least 75 Pool items, at least 60 routed Pool items, and at least 30 usable `core_pool` items;
-- Pool generation must not cap the selected Pool at a fixed top-N / buffer count. After Raw collection, preserve all non-discard screened evidence in the Pool file so repairable high-value items remain visible for Core/Card processing and audit.
+- daily Pool audit gate expects at least 75 Pool items and at least 60 routed Pool items; Card release is decided by raw-to-card cardability, not by a separate core-pool quota;
+- Pool generation must not cap the selected Pool at a fixed top-N / buffer count. After Raw collection, preserve all non-discard screened evidence in the Pool file so repairable high-value items remain visible for Card processing and audit.
 - each required importance lane should keep at least 5 Pool candidates before downstream release;
-- frontstage Card presentation publishes all active-date qualified Core Pool items that pass the formal Card gate and public display requirements.
-- Signal Card assets should cover all qualified Core Pool items so relationship graph and trend-candidate modules can use the same eligible evidence set.
-- If `core_pool`, routed Pool, or non-large core supply is thin, targeted refill must search for recent concrete events: customer deployment, production rollout, product launch, funding, procurement, pricing, regulatory, or vertical workflow evidence. Do not repair supply by promoting marketplace listings, directories, generic guides, interviews, old technical posts, broad lists, funding roundups, or generic funding commentary into `core_pool`.
+- frontstage Card presentation publishes all active-date qualified Raw / Pool business signals that pass the formal Card gate and public display requirements.
+- Signal Card assets should cover all cardable Raw / Pool business signals so relationship graph and trend-candidate modules can use the same eligible evidence set.
+- If routed Pool or cardable supply is thin, targeted refill must search for recent concrete events: customer deployment, production rollout, product launch, funding, procurement, pricing, regulatory, or vertical workflow evidence. Do not repair supply by using marketplace listings, directories, generic guides, interviews, old technical posts, broad lists, funding roundups, or generic funding commentary as Card evidence.
 - Concrete acquisitions / mergers, material partnerships, procurement / tenders / contracts, pricing or billing changes, regulatory approvals / antitrust actions, and material lawsuits / settlements are high-value Business Signals when they are source-backed AI commercial events. They must be normalized into existing `case` or `product_service` Cards rather than creating a fourth public Card type.
-- `source_level` and `acquisition_source_level` remain traceability-only labels during refill. They must not boost, penalize, gate, or auto-downgrade Raw / Pool / Core Pool eligibility.
+- `source_level` and `acquisition_source_level` remain traceability-only labels during refill. They must not boost, penalize, gate, or auto-downgrade Raw / Pool / Card eligibility.
 
 Large-company boundary:
 
 - Raw can collect large-company evidence for coverage, but should not be used to fill quantity by repeating platform/lab product news;
-- Pool can keep large-company evidence, but usable `core_pool` should stay below 10 large-company items and below 35% of core evidence by default;
-- usable `core_pool` should include at least 20 non-large-company items by default;
+- Pool can keep large-company evidence, but the public Card set should not be dominated by repeated large-company product announcements;
+- cardable supply should include enough emerging-company funding, customer deployment, vertical workflow, pricing/procurement/regulatory, and non-platform infrastructure evidence to avoid a platform-news-only day;
 - frontstage Card order must be importance / impact descending, not category order;
-- if too few items pass the formal Card gate, increase Raw coverage and repair Pool/Core Pool balance instead of padding with repeated large-company news or low-value AI-adjacent items;
-- relationship graph and trend candidates use the full eligible Core Pool / Card asset set;
+- if too few items pass the formal Card gate, increase Raw coverage and repair source / Pool balance instead of padding with repeated large-company news or low-value AI-adjacent items;
+- relationship graph and trend candidates use the full eligible Card asset set plus backend audit evidence when needed;
 - when the limit is reached, prefer emerging-company financing, real customer deployment, vertical workflow case, pricing/procurement/regulatory signal, or non-platform infrastructure evidence.
 
 ## Output Paths

@@ -8,12 +8,12 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
    - Pass when Business Signals work routes through this skill before narrower Raw / Pool / Card skills.
 
 2. `daily_monitor_thresholds`
-   - Pass when active Raw is at least 150, Pool at least 75, routed Pool at least 60, and usable `core_pool` at least 30 unless the lane is explicitly blocked.
+   - Pass when active Raw is at least 150, Pool at least 75, routed Pool at least 60, and raw-to-card Card supply is sufficient unless the lane is explicitly blocked.
 
 3. `public_frontstage_card_contract`
    - Pass when `01-SiteV2/site/data/v3-data-observation-desk.json.frontstageCards` contains active-date public Cards sorted by importance / impact from high to low.
    - Pass when the public payload does not split Business Signals into `top10` and `corePoolCandidates` public modes.
-   - Pass when former Core Pool candidate items that satisfy display requirements are normalized into Cards rather than left in a separate public candidate pool.
+   - Pass when former candidate items that satisfy display requirements are normalized into Cards rather than left in a separate public candidate pool.
 
 4. `source_first_gate`
    - Pass when frontstage facts, titles, details, and source excerpts are traceable to original source text or accepted Raw / Pool evidence.
@@ -39,23 +39,23 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
    - Fail when a queued / in-progress same-date workflow is reported as `manual_required` instead of `waiting`.
 
 10. `six_gate_card_entry_contract`
-    - Pass when Core Pool -> Signal Card eligibility is expressed through exactly these grouped gates: `source_auditability`, `evidence_quality`, `business_signal_scope`, `valid_page_type`, `commercial_importance`, and `fact_type_constraints`.
+    - Pass when raw-to-card eligibility is expressed through exactly these grouped gates: `source_auditability`, `evidence_quality`, `business_signal_scope`, `valid_page_type`, `commercial_importance`, and `fact_type_constraints`.
     - Pass when detailed diagnostics such as missing full text, extraction method, source URL, source level, stale date, page type, evidence object, funding round shape, or user feedback are reported under one of those gates.
     - Fail when scattered field checks are treated as independent top-level Card policy, or when a repair lowers source-first evidence requirements to increase the public Card count.
 
 11. `technical_trend_context_boundary`
     - Pass when `important_technical_trend` is monitored only as context for source repair, relationship analysis, and trend-candidate work.
-    - Pass when the four formal Business Signals lanes are `important_case`, `important_funding`, `important_product_or_service`, and `important_vertical_solution`, and only those can enter `core_pool` / formal Signal Card quantity.
-    - Fail when targeted refill, Core Pool routing, or Card generation uses technical articles, builder/opinion posts, newsletters, workforce retraining / public-funding programs, docs, or generic guides as formal cards without a same-source dated funding, product/service, customer deployment, procurement, partnership, vertical rollout, or production implementation event.
+    - Pass when the four formal Business Signals lanes are `important_case`, `important_funding`, `important_product_or_service`, and `important_vertical_solution`, and only those can enter formal Signal Card quantity.
+    - Fail when targeted refill, Pool routing, or Card generation uses technical articles, builder/opinion posts, newsletters, workforce retraining / public-funding programs, docs, or generic guides as formal cards without a same-source dated funding, product/service, customer deployment, procurement, partnership, vertical rollout, or production implementation event.
 
 12. `frontstage_card_title_source_boundary`
     - Pass when frontstage Card titles name the actual company, product, funding round, release, customer, or workflow event and do not contain placeholder wording such as "original AI event", "purpose see original", or source-domain subjects like "linkedin financing" / "github original title".
     - Pass when LinkedIn/X/Reddit/Hacker News posts, GitHub repo root/tree/blob pages, package/model pages, marketplace listings, and generic funding/startup lists are excluded from formal Signal Cards unless recaptured through a dated source-backed event page.
-    - Pass when the public Core Pool candidate list is event-deduped so repeated pages about the same model release or financing round do not fill the candidate area.
+    - Pass when backend candidates are event-deduped so repeated pages about the same model release or financing round do not fill the candidate area.
 
 13. `single_frontstage_card_set`
     - Pass when the Business Signals page has one Card set for the active date and no visible Top10 / candidate-pool mode switch.
-    - Fail when public data or UI restores Top10 as a separate primary set or labels Core Pool items as public candidates instead of Cards.
+    - Fail when public data or UI restores Top10 as a separate primary set or labels backend candidates as public candidates instead of Cards.
 
 14. `morning_failure_fast_path`
     - Pass when Business Signals builds and validates the Business frontstage JSON before operations dashboard data, so frontstage Card, translation, and source-first failures stop early with a categorized report.
@@ -68,12 +68,12 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 
 16. `weekend_supply_policy`
     - Pass when weekend monitor-stage quantity floors are explicit and reported, while source-first and six-gate Card entry remain strict.
-    - Pass when weekend public Cards come only from Core Pool items that pass the same Card display gates.
+    - Pass when weekend public Cards come only from Raw / Pool items that pass the same Card display gates.
     - Fail when weekend recovery accepts social/community/builder material as direct Business Signal facts, or treats a lower monitor floor as permission to weaken frontstage quality.
 
 17. `supply_preflight_before_cards`
-    - Pass when Raw / Pool output is checked for active Raw count, Pool/routed Pool count, Core Pool count, non-large Core Pool count, lane coverage, and public Card readiness before Card generation and dashboard work.
-    - Fail when frontstage Card shortage or Core Pool shortage is discovered only after public frontstage data has already been built.
+    - Pass when Raw / Pool output is checked for active Raw count, Pool/routed Pool count, cardable candidate count, lane coverage, and public Card readiness before Card generation and dashboard work.
+    - Fail when frontstage Card shortage or cardable-signal shortage is discovered only after public frontstage data has already been built.
 
 18. `publication_closure_checkpoint`
     - Pass when the 10:50 supervision checkpoint records merged Business Signals PR state, GitHub Pages state, same-date Business data, public Card count, and local sync cleanliness / fast-forward status.
@@ -118,7 +118,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when supervision asks for a blind Raw / Pool / Card rerun only because the latest workflow run is red, while same-date data and gates are already healthy.
 
 24. `targeted_repair_before_full_rerun`
-    - Pass when a Business repair records the pre-rerun checklist before starting a full chain: activeDate, public Card count, Raw count, Pool/routed/Core/non-large Core counts, source-artifact freshness by source/channel, missing source-title translations, PR/Pages state, and local dirty / fast-forward state.
+    - Pass when a Business repair records the pre-rerun checklist before starting a full chain: activeDate, public Card count, Raw count, Pool/routed Pool counts, cardable candidate count, source-artifact freshness by source/channel, missing source-title translations, PR/Pages state, and local dirty / fast-forward state.
     - Pass when a deficient source lane triggers only the relevant source-artifact refill or retry refresh, and a translation-title shortage triggers only translation registry / frontstage rebuild work.
     - Fail when Raw / Pool / Card generation is rerun before ruling out stale local checkout, healthy remote assets, source-title translation starvation, publication failure, or local sync blockage.
     - Fail when a report says "raw shortage" without naming which source/channel or downstream eligibility bucket is actually short.
@@ -134,12 +134,12 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when a resolved item keeps `fix_commit=pending`, mixes contradictory resolution records, or omits the gate/eval/memory/context prevention artifact for a recurring failure.
 
 27. `provider_fallback_does_not_mask_supply`
-    - Pass when RSS HTTP 404 / 415 / 429 / 5xx, Anysearch quota exhaustion, or other search-provider temporary unavailable notes are classified as recovered after Pool, routed Pool, Core Pool, non-large Core, and importance coverage gates are already satisfied.
+    - Pass when RSS HTTP 404 / 415 / 429 / 5xx, Anysearch quota exhaustion, or other search-provider temporary unavailable notes are classified as recovered after Pool audit, Card supply, and importance coverage gates are already satisfied.
     - Pass when `raw_count_min` shortfall remains visible as `raw_count_release_override=pool_core_supply` instead of blocking the lane by itself.
-    - Pass when `unrecovered_failed_sources_max` does not block release under `pool_core_supply_release=true`, while the failed source-channel notes remain visible in the gate report for supply-risk review.
-    - Pass when keyword-only floors, AI-relevant title ratio, and off-topic raw-title count are visible diagnostics but do not block release under `pool_core_supply_release=true`.
+    - Pass when `unrecovered_failed_sources_max` does not block release under `raw_to_card_supply_release=true`, while the failed source-channel notes remain visible in the gate report for supply-risk review.
+    - Pass when keyword-only floors, AI-relevant title ratio, and off-topic raw-title count are visible diagnostics but do not block release under `raw_to_card_supply_release=true`.
     - Pass when source-artifact Raw selection rotates across GDELT, keyword search, RSS, and AI HOT as peer channels instead of consuming one fixed priority channel first.
-    - Fail when a transient provider note or Raw-only shortage blocks Card generation after Pool/Core supply and the frontstage Card contract are sufficient, or when provider recovery hides a true Pool/Core shortage.
+    - Fail when a transient provider note or Raw-only shortage blocks Card generation after Pool audit supply and the frontstage Card contract are sufficient, or when provider recovery hides a true Pool/Card shortage.
 
 ## Repair Loop
 
