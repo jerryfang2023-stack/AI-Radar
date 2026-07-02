@@ -1,0 +1,258 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-047
+title: "Anthropic&#8217;s long-sidelined Fable 5 is greenlit to return"
+original_url: "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back"
+canonical_url: "https://theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back"
+source_name: "The Verge AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-01T00:03:55.000Z"
+collected_at: 2026-07-02T02:28:35.387Z
+language: mixed
+full_text_hash: 6e586a2f736ab58d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-047-anthropic-8217-s-long-sidelined-fable-5-is-greenlit-to-return.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-047-anthropic-8217-s-long-sidelined-fable-5-is-greenlit-to-return.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":11829,"paragraph_count":32,"sentence_count":40,"boilerplate_hits":0,"symbol_ratio":0.0005,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 11829
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6e586a2f736ab58d","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: c65de3fe611f8aff
+content_hash: 6e586a2f736ab58d
+semantic_hash: 7c5f1a834f68c8cc
+duplicate_of: ""
+first_seen_at: "2026-07-01T00:03:55.000Z"
+last_seen_at: 2026-07-02T02:28:35.387Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["The Verge AI","OpenAI","Anthropic","Google","Microsoft","Amazon","AWS"],"products":["Claude","GPT-5"],"people":[],"industries":["法律 / 法务","企业服务"],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["8217","5","5 b","8230","5 m","4.8","99%","5.6"],"quotes":["trained an improved safety classifier that targets and blocks","continue to coordinate with the government to expand access to the broader set of domestic and international partners","pre‑release government access and evaluation,","rapid information sharing","significant jailbreaks or misuse patterns are identified."]}
+evidence_seed: {"company_actions":["Anthropic’s long-sidelined Fable 5 is greenlit to return After weeks of negotiating with the Trump administration, and Mythos 5’s conditional return, Anthropic’s consumer-facing Fable 5 model is back as well.","After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online.","Anthropic wrote: > We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"opinion","text":"After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. In a post on X, Anthropic said it plans to begin restoring access Wednesday to users globally on Claude platforms, and that the company would re-enable access on AWS, Google Cloud, and Microsoft [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Anthropic’s long-sidelined Fable 5 is greenlit to return After weeks of negotiating with the Trump administration, and Mythos 5’s conditional return, Anthropic’s consumer-facing Fable 5 model is back as well.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"In a post on X, Anthropic said it plans to begin restoring access Wednesday to users globally on Claude platforms, and that the company would re-enable access on AWS, Google Cloud, and Microsoft Foundry soon, but with no set timeline.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Anthropic wrote: > We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"> We’ll begin restoring access tomorrow, and will share an update soon.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"}]
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Anthropic&#8217;s long-sidelined Fable 5 is greenlit to return
+
+## clean_text
+
+Anthropic’s long-sidelined Fable 5 is greenlit to return
+After weeks of negotiating with the Trump administration, and Mythos 5’s conditional return, Anthropic’s consumer-facing Fable 5 model is back as well.
+After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. In a post on X, Anthropic said it plans to begin restoring access Wednesday to users globally on Claude platforms, and that the company would re-enable access on AWS, Google Cloud, and Microsoft Foundry soon, but with no set timeline.
+Anthropic wrote:
+> We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.
+> We’ll begin restoring access tomorrow, and will share an update soon.
+> We’re grateful to our users for their patience, and to everyone who worked with us on redeploying the models.
+The company also published a blog post on Tuesday evening detailing the lead-up to the events in question, its revised safeguards, new AI industry processes it’s working on, and new ways it plans to share information with the government, as well as prerelease testing for upcoming models.
+In early June, Anthropic sidelined Fable 5 — its consumer-facing model built from the same underlying technology as Anthropic’s Mythos 5, but with more safeguards — after a Friday evening ultimatum from the Trump administration. Due to concerns over potential jailbreaks of the technology, the government had slapped Anthropic with an export control directive, disallowing any foreign national (including non-US members of enterprise client companies and even many of Anthropic’s own employees) from using either Mythos 5 or Fable 5, i.e., both the models that Anthropic had spent the last week hyping.
+To address the jailbreak in question, which Amazon researchers had flagged and was largely responsible for setting the export control directive into motion, Anthropic said in the blog post that it had “trained an improved safety classifier that targets and blocks” that behavior, adding, “Users will be notified if a request to Fable 5 is blocked, and the request will instead be sent to Opus 4.8. The new classifier means that the specific technique described in the Amazon report is blocked in over 99% of cases.”
+The Trump administration recently greenlit the return of Mythos 5, but to a preapproved list of organizations only. Non-US members of those organizations, as well as Anthropic’s own foreign national employees, were allowed to regain access to the model. The decision came shortly after OpenAI unveiled GPT-5.6, which the Trump administration only allowed to debut under similar rules: a staggered rollout, initially to only a preapproved list of organizations and government departments.
+On Tuesday, Anthropic wrote that the company will “continue to coordinate with the government to expand access to the broader set of domestic and international partners” for Mythos 5. The company also included an entire section in its blog post on its new plan for working closely with the Trump administration — highlighting its many attempts to get back in the government’s good graces after months of public drama, lawsuits, and presidential action.
+The company wrote that it plans to offer “pre‑release government access and evaluation,” particularly for models relevant to national security capabilities, so that government partners can run independent evaluations about the models’ capabilities and test guardrails before broader release. (The government will also have access to Anthropic’s technical staff during those prerelease testing periods.) Anthropic said it also plans to introduce “rapid information sharing” when “significant jailbreaks or misuse patterns are identified.”
+It said it would work with the government and other leading AI labs to create a “shared, voluntary security and evaluation standard for frontier model providers.” Finally, Anthropic said it would “stand up dedicated Anthropic teams to work on shared government priorities, provide a significant compute allocation to support government testing and research, and make our safety and red‑teaming expertise available to help advance the state of the art in AI evaluation.”
+The initial export control directive by the Trump administration came at an inopportune time for Anthropic, as it’s preparing for an IPO and has been feuding with the government for months over a supply chain risk designation.
+The company highlighted in the blog post that there’s “currently no consensus in the AI industry” for deciding on a jailbreak’s severity, a problem that “will become more acute in the coming months, as more models with powerful cybersecurity (and other) capabilities are trained, assessed, and released.” So it said it partnered with Amazon, Microsoft, Google, and other enterprises that are part of its Project Glasswing program in order to draft a widely agreed upon framework for assessing AI jailbreaks, with four proposed categories: capability gain for the attacker, breadth of capability gain for the attacker, ease of weaponization more broadly, and discoverability (or how easy it may be for someone else to repeat it). Anthropic said it had also created a new team to “provide 24/7 monitoring of key jailbreak submission channels” and would also soon debut a HackerOne program for researchers to submit potential jailbreaks they have flagged for Fable 5.
+Anthropic also included a disclaimer in its blog post, writing that “it is probably impossible to make any AI model fully robust (that is, impervious) to jailbreaks. We expect that some jailbreaks will be found for our models, and that they will vary in severity: there will be many minor jailbreaks, some narrow harmful ones, and although no universal jailbreaks for Fable 5 have been discovered at the time of writing, expert safety researchers continue to red-team it.”
+Anthropic’s long-sidelined Fable 5 is greenlit to return
+After weeks of negotiating with the Trump administration, and Mythos 5’s conditional return, Anthropic’s consumer-facing Fable 5 model is back as well.
+After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. In a post on X, Anthropic said it plans to begin restoring access Wednesday to users globally on Claude platforms, and that the company would re-enable access on AWS, Google Cloud, and Microsoft Foundry soon, but with no set timeline.
+Anthropic wrote:
+> We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.
+> We’ll begin restoring access tomorrow, and will share an update soon.
+> We’re grateful to our users for their patience, and to everyone who worked with us on redeploying the models.
+The company also published a blog post on Tuesday evening detailing the lead-up to the events in question, its revised safeguards, new AI industry processes it’s working on, and new ways it plans to share information with the government, as well as prerelease testing for upcoming models.
+In early June, Anthropic sidelined Fable 5 — its consumer-facing model built from the same underlying technology as Anthropic’s Mythos 5, but with more safeguards — after a Friday evening ultimatum from the Trump administration. Due to concerns over potential jailbreaks of the technology, the government had slapped Anthropic with an export control directive, disallowing any foreign national (including non-US members of enterprise client companies and even many of Anthropic’s own employees) from using either Mythos 5 or Fable 5, i.e., both the models that Anthropic had spent the last week hyping.
+To address the jailbreak in question, which Amazon researchers had flagged and was largely responsible for setting the export control directive into motion, Anthropic said in the blog post that it had “trained an improved safety classifier that targets and blocks” that behavior, adding, “Users will be notified if a request to Fable 5 is blocked, and the request will instead be sent to Opus 4.8. The new classifier means that the specific technique described in the Amazon report is blocked in over 99% of cases.”
+The Trump administration recently greenlit the return of Mythos 5, but to a preapproved list of organizations only. Non-US members of those organizations, as well as Anthropic’s own foreign national employees, were allowed to regain access to the model. The decision came shortly after OpenAI unveiled GPT-5.6, which the Trump administration only allowed to debut under similar rules: a staggered rollout, initially to only a preapproved list of organizations and government departments.
+On Tuesday, Anthropic wrote that the company will “continue to coordinate with the government to expand access to the broader set of domestic and international partners” for Mythos 5. The company also included an entire section in its blog post on its new plan for working closely with the Trump administration — highlighting its many attempts to get back in the government’s good graces after months of public drama, lawsuits, and presidential action.
+The company wrote that it plans to offer “pre‑release government access and evaluation,” particularly for models relevant to national security capabilities, so that government partners can run independent evaluations about the models’ capabilities and test guardrails before broader release. (The government will also have access to Anthropic’s technical staff during those prerelease testing periods.) Anthropic said it also plans to introduce “rapid information sharing” when “significant jailbreaks or misuse patterns are identified.”
+It said it would work with the government and other leading AI labs to create a “shared, voluntary security and evaluation standard for frontier model providers.” Finally, Anthropic said it would “stand up dedicated Anthropic teams to work on shared government priorities, provide a significant compute allocation to support government testing and research, and make our safety and red‑teaming expertise available to help advance the state of the art in AI evaluation.”
+The initial export control directive by the Trump administration came at an inopportune time for Anthropic, as it’s preparing for an IPO and has been feuding with the government for months over a supply chain risk designation.
+The company highlighted in the blog post that there’s “currently no consensus in the AI industry” for deciding on a jailbreak’s severity, a problem that “will become more acute in the coming months, as more models with powerful cybersecurity (and other) capabilities are trained, assessed, and released.” So it said it partnered with Amazon, Microsoft, Google, and other enterprises that are part of its Project Glasswing program in order to draft a widely agreed upon framework for assessing AI jailbreaks, with four proposed categories: capability gain for the attacker, breadth of capability gain for the attacker, ease of weaponization more broadly, and discoverability (or how easy it may be for someone else to repeat it). Anthropic said it had also created a new team to “provide 24/7 monitoring of key jailbreak submission channels” and would also soon debut a HackerOne program for researchers to submit potential jailbreaks they have flagged for Fable 5.
+Anthropic also included a disclaimer in its blog post, writing that “it is probably impossible to make any AI model fully robust (that is, impervious) to jailbreaks. We expect that some jailbreaks will be found for our models, and that they will vary in severity: there will be many minor jailbreaks, some narrow harmful ones, and although no universal jailbreaks for Fable 5 have been discovered at the time of writing, expert safety researchers continue to red-team it.”
+
+## full_text
+
+Anthropic’s long-sidelined Fable 5 is greenlit to return
+After weeks of negotiating with the Trump administration, and Mythos 5’s conditional return, Anthropic’s consumer-facing Fable 5 model is back as well.
+After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. In a post on X, Anthropic said it plans to begin restoring access Wednesday to users globally on Claude platforms, and that the company would re-enable access on AWS, Google Cloud, and Microsoft Foundry soon, but with no set timeline.
+Anthropic wrote:
+> We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.
+> We’ll begin restoring access tomorrow, and will share an update soon.
+> We’re grateful to our users for their patience, and to everyone who worked with us on redeploying the models.
+The company also published a blog post on Tuesday evening detailing the lead-up to the events in question, its revised safeguards, new AI industry processes it’s working on, and new ways it plans to share information with the government, as well as prerelease testing for upcoming models.
+In early June, Anthropic sidelined Fable 5 — its consumer-facing model built from the same underlying technology as Anthropic’s Mythos 5, but with more safeguards — after a Friday evening ultimatum from the Trump administration. Due to concerns over potential jailbreaks of the technology, the government had slapped Anthropic with an export control directive, disallowing any foreign national (including non-US members of enterprise client companies and even many of Anthropic’s own employees) from using either Mythos 5 or Fable 5, i.e., both the models that Anthropic had spent the last week hyping.
+To address the jailbreak in question, which Amazon researchers had flagged and was largely responsible for setting the export control directive into motion, Anthropic said in the blog post that it had “trained an improved safety classifier that targets and blocks” that behavior, adding, “Users will be notified if a request to Fable 5 is blocked, and the request will instead be sent to Opus 4.8. The new classifier means that the specific technique described in the Amazon report is blocked in over 99% of cases.”
+The Trump administration recently greenlit the return of Mythos 5, but to a preapproved list of organizations only. Non-US members of those organizations, as well as Anthropic’s own foreign national employees, were allowed to regain access to the model. The decision came shortly after OpenAI unveiled GPT-5.6, which the Trump administration only allowed to debut under similar rules: a staggered rollout, initially to only a preapproved list of organizations and government departments.
+On Tuesday, Anthropic wrote that the company will “continue to coordinate with the government to expand access to the broader set of domestic and international partners” for Mythos 5. The company also included an entire section in its blog post on its new plan for working closely with the Trump administration — highlighting its many attempts to get back in the government’s good graces after months of public drama, lawsuits, and presidential action.
+The company wrote that it plans to offer “pre‑release government access and evaluation,” particularly for models relevant to national security capabilities, so that government partners can run independent evaluations about the models’ capabilities and test guardrails before broader release. (The government will also have access to Anthropic’s technical staff during those prerelease testing periods.) Anthropic said it also plans to introduce “rapid information sharing” when “significant jailbreaks or misuse patterns are identified.”
+It said it would work with the government and other leading AI labs to create a “shared, voluntary security and evaluation standard for frontier model providers.” Finally, Anthropic said it would “stand up dedicated Anthropic teams to work on shared government priorities, provide a significant compute allocation to support government testing and research, and make our safety and red‑teaming expertise available to help advance the state of the art in AI evaluation.”
+The initial export control directive by the Trump administration came at an inopportune time for Anthropic, as it’s preparing for an IPO and has been feuding with the government for months over a supply chain risk designation.
+The company highlighted in the blog post that there’s “currently no consensus in the AI industry” for deciding on a jailbreak’s severity, a problem that “will become more acute in the coming months, as more models with powerful cybersecurity (and other) capabilities are trained, assessed, and released.” So it said it partnered with Amazon, Microsoft, Google, and other enterprises that are part of its Project Glasswing program in order to draft a widely agreed upon framework for assessing AI jailbreaks, with four proposed categories: capability gain for the attacker, breadth of capability gain for the attacker, ease of weaponization more broadly, and discoverability (or how easy it may be for someone else to repeat it). Anthropic said it had also created a new team to “provide 24/7 monitoring of key jailbreak submission channels” and would also soon debut a HackerOne program for researchers to submit potential jailbreaks they have flagged for Fable 5.
+Anthropic also included a disclaimer in its blog post, writing that “it is probably impossible to make any AI model fully robust (that is, impervious) to jailbreaks. We expect that some jailbreaks will be found for our models, and that they will vary in severity: there will be many minor jailbreaks, some narrow harmful ones, and although no universal jailbreaks for Fable 5 have been discovered at the time of writing, expert safety researchers continue to red-team it.”
+Anthropic’s long-sidelined Fable 5 is greenlit to return
+After weeks of negotiating with the Trump administration, and Mythos 5’s conditional return, Anthropic’s consumer-facing Fable 5 model is back as well.
+After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. In a post on X, Anthropic said it plans to begin restoring access Wednesday to users globally on Claude platforms, and that the company would re-enable access on AWS, Google Cloud, and Microsoft Foundry soon, but with no set timeline.
+Anthropic wrote:
+> We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.
+> We’ll begin restoring access tomorrow, and will share an update soon.
+> We’re grateful to our users for their patience, and to everyone who worked with us on redeploying the models.
+The company also published a blog post on Tuesday evening detailing the lead-up to the events in question, its revised safeguards, new AI industry processes it’s working on, and new ways it plans to share information with the government, as well as prerelease testing for upcoming models.
+In early June, Anthropic sidelined Fable 5 — its consumer-facing model built from the same underlying technology as Anthropic’s Mythos 5, but with more safeguards — after a Friday evening ultimatum from the Trump administration. Due to concerns over potential jailbreaks of the technology, the government had slapped Anthropic with an export control directive, disallowing any foreign national (including non-US members of enterprise client companies and even many of Anthropic’s own employees) from using either Mythos 5 or Fable 5, i.e., both the models that Anthropic had spent the last week hyping.
+To address the jailbreak in question, which Amazon researchers had flagged and was largely responsible for setting the export control directive into motion, Anthropic said in the blog post that it had “trained an improved safety classifier that targets and blocks” that behavior, adding, “Users will be notified if a request to Fable 5 is blocked, and the request will instead be sent to Opus 4.8. The new classifier means that the specific technique described in the Amazon report is blocked in over 99% of cases.”
+The Trump administration recently greenlit the return of Mythos 5, but to a preapproved list of organizations only. Non-US members of those organizations, as well as Anthropic’s own foreign national employees, were allowed to regain access to the model. The decision came shortly after OpenAI unveiled GPT-5.6, which the Trump administration only allowed to debut under similar rules: a staggered rollout, initially to only a preapproved list of organizations and government departments.
+On Tuesday, Anthropic wrote that the company will “continue to coordinate with the government to expand access to the broader set of domestic and international partners” for Mythos 5. The company also included an entire section in its blog post on its new plan for working closely with the Trump administration — highlighting its many attempts to get back in the government’s good graces after months of public drama, lawsuits, and presidential action.
+The company wrote that it plans to offer “pre‑release government access and evaluation,” particularly for models relevant to national security capabilities, so that government partners can run independent evaluations about the models’ capabilities and test guardrails before broader release. (The government will also have access to Anthropic’s technical staff during those prerelease testing periods.) Anthropic said it also plans to introduce “rapid information sharing” when “significant jailbreaks or misuse patterns are identified.”
+It said it would work with the government and other leading AI labs to create a “shared, voluntary security and evaluation standard for frontier model providers.” Finally, Anthropic said it would “stand up dedicated Anthropic teams to work on shared government priorities, provide a significant compute allocation to support government testing and research, and make our safety and red‑teaming expertise available to help advance the state of the art in AI evaluation.”
+The initial export control directive by the Trump administration came at an inopportune time for Anthropic, as it’s preparing for an IPO and has been feuding with the government for months over a supply chain risk designation.
+The company highlighted in the blog post that there’s “currently no consensus in the AI industry” for deciding on a jailbreak’s severity, a problem that “will become more acute in the coming months, as more models with powerful cybersecurity (and other) capabilities are trained, assessed, and released.” So it said it partnered with Amazon, Microsoft, Google, and other enterprises that are part of its Project Glasswing program in order to draft a widely agreed upon framework for assessing AI jailbreaks, with four proposed categories: capability gain for the attacker, breadth of capability gain for the attacker, ease of weaponization more broadly, and discoverability (or how easy it may be for someone else to repeat it). Anthropic said it had also created a new team to “provide 24/7 monitoring of key jailbreak submission channels” and would also soon debut a HackerOne program for researchers to submit potential jailbreaks they have flagged for Fable 5.
+Anthropic also included a disclaimer in its blog post, writing that “it is probably impossible to make any AI model fully robust (that is, impervious) to jailbreaks. We expect that some jailbreaks will be found for our models, and that they will vary in severity: there will be many minor jailbreaks, some narrow harmful ones, and although no universal jailbreaks for Fable 5 have been discovered at the time of writing, expert safety researchers continue to red-team it.”
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":11829,"paragraph_count":32,"sentence_count":40,"boilerplate_hits":0,"symbol_ratio":0.0005,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. In a post on X, Anthropic said it plans to begin restoring access Wednesday to users globally on Claude platforms, and that the company would re-enable access on AWS, Google Cloud, and Microsoft [&#8230;]
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Anthropic’s long-sidelined Fable 5 is greenlit to return After weeks of negotiating with the Trump administration, and Mythos 5’s conditional return, Anthropic’s consumer-facing Fable 5 model is back as well.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online.
+
+4. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   In a post on X, Anthropic said it plans to begin restoring access Wednesday to users globally on Claude platforms, and that the company would re-enable access on AWS, Google Cloud, and Microsoft Foundry soon, but with no set timeline.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Anthropic wrote: > We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.
+
+6. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=high
+   > We’ll begin restoring access tomorrow, and will share an update soon.
+
+## business_elements
+
+- companies: The Verge AI, OpenAI, Anthropic, Google, Microsoft, Amazon, AWS
+- products: Claude, GPT-5
+- people: 暂无公开信息
+- industries: 法律 / 法务, 企业服务
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 销售 / 客服
+- numbers: 8217, 5, 5 b, 8230, 5 m, 4.8, 99%, 5.6
+- quotes: trained an improved safety classifier that targets and blocks / continue to coordinate with the government to expand access to the broader set of domestic and international partners / pre‑release government access and evaluation, / rapid information sharing / significant jailbreaks or misuse patterns are identified.
+
+## evidence_seed
+
+- company_actions: Anthropic’s long-sidelined Fable 5 is greenlit to return After weeks of negotiating with the Trump administration, and Mythos 5’s conditional return, Anthropic’s consumer-facing Fable 5 model is back as well. / After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. / Anthropic wrote: > We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. In a post on X, Anthropic said it plans to begin restoring access Wednesday to users globally on Claude platforms, and that the company would re-enable access on AWS, Google Cloud, and Microsoft [&#8230;]
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,338 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-006
+title: "美国解除对Anthropic Claude Fable 5和Mythos 5的出口限制"
+original_url: "https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release"
+canonical_url: "https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release"
+source_name: "Ars Technica：AI（RSS）"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-01T16:44:18.000Z"
+collected_at: 2026-07-02T02:28:35.153Z
+language: mixed
+full_text_hash: 483042ba9ea72627
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-006-美国解除对anthropic-claude-fable-5和mythos-5的出口限制.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-006-美国解除对anthropic-claude-fable-5和mythos-5的出口限制.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":11253,"paragraph_count":43,"sentence_count":56,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 11253
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"483042ba9ea72627","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"美国解除对Anthropic Claude Fable 5和Mythos 5的出口限制","discovery_summary":"美国解除对Anthropic最新Claude模型Fable 5和Mythos 5的出口限制。Fable 5即日起全球可用，Mythos 5自6月26日起恢复美国组织访问。此前Commerce Department于6月12日以国家安全风险为由要求Anthropic切断境外访问。Anthropic与政府合作加强安全措施：Fable 5已修复Amazon研究人员发现的越狱方法，目前99%以上案例被拦截，但加固安全可能屏蔽部分良性常规编码请求。Anthropic还建立红队测试和24/7内部监控团队，被屏蔽请求转至Opus 4.8。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release","discovered_at":"2026-07-02T02:12:32.516Z","rank_on_page":137,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 16b0f05d06086885
+content_hash: 483042ba9ea72627
+semantic_hash: d5a9c1a182cadd0f
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-01T16:44:18.000Z"
+last_seen_at: 2026-07-02T02:28:35.153Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Ars Technica","AI（RSS）","Anthropic","Google","Microsoft","Amazon"],"products":["Claude","GPT-5"],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算"],"numbers":["5","6","26","12","99%","24","7","4.8"],"quotes":["broader set of domestic and international partners in the Glasswing program.","no longer need a license for exports or in-country transfers of its Claude Mythos and Claude Fable AI models.","taken steps in close coordination with the US government to address the risks","reserves the right to re-evaluate the decisions","uniquely attractive to malicious actors who wish to misuse it in cyberattacks,"]}
+evidence_seed: {"company_actions":["As of today, Anthropic confirmed in a blog post , Fable 5 will be available globally, and US organizations have had access restored to Mythos 5 since June 26."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The US has lifted export curbs on Anthropic’s newest Claude models, Fable 5 and Mythos 5, about three weeks after the Trump administration flagged the models as national security risks .","” That program allows cybersecurity researchers at trusted companies to access Mythos for defensive purposes."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"美国解除对Anthropic最新Claude模型Fable 5和Mythos 5的出口限制。Fable 5即日起全球可用，Mythos 5自6月26日起恢复美国组织访问。此前Commerce Department于6月12日以国家安全风险为由要求Anthropic切断境外访问。Anthropic与政府合作加强安全措施：Fable 5已修复Amazon研究人员发现的越狱方法，目前99%以上案例被拦截，但加固安全可能屏蔽部分良性常规编码请求。Anthropic还建立红队测试和24/7内部监控团队，被屏蔽请求转至Opus 4.8。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The US has lifted export curbs on Anthropic’s newest Claude models, Fable 5 and Mythos 5, about three weeks after the Trump administration flagged the models as national security risks .","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As of today, Anthropic confirmed in a blog post , Fable 5 will be available globally, and US organizations have had access restored to Mythos 5 since June 26.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"Anthropic said it is now working with the government to expand Mythos access to a “broader set of domestic and international partners in the Glasswing program.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"” That program allows cybersecurity researchers at trusted companies to access Mythos for defensive purposes.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"opinion","text":"In a letter to Anthropic viewed by Reuters and The New York Times , Commerce Secretary Howard Lutnick said Anthropic would “no longer need a license for exports or in-country transfers of its Claude Mythos and Claude Fable AI models.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 美国解除对Anthropic Claude Fable 5和Mythos 5的出口限制
+
+## clean_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+The US has lifted export curbs on Anthropic’s newest Claude models, Fable 5 and Mythos 5, about three weeks after the Trump administration flagged the models as national security risks .
+As of today, Anthropic confirmed in a blog post , Fable 5 will be available globally, and US organizations have had access restored to Mythos 5 since June 26. Anthropic said it is now working with the government to expand Mythos access to a “broader set of domestic and international partners in the Glasswing program.” That program allows cybersecurity researchers at trusted companies to access Mythos for defensive purposes.
+In a letter to Anthropic viewed by Reuters and The New York Times , Commerce Secretary Howard Lutnick said Anthropic would “no longer need a license for exports or in-country transfers of its Claude Mythos and Claude Fable AI models.” The letter acknowledged that Anthropic had “taken steps in close coordination with the US government to address the risks” posed by the models.
+Facing a longer delay in its models’ releases, Lutnick said that Anthropic agreed to expand its partnership with the government. The company said it also set up a program to work with hackers to red-team its models, and there’s now a dedicated internal team to monitor reports of emerging jailbreak threats 24/7.
+In the letter, Lutnick reminded Anthropic that the US “reserves the right to re-evaluate the decisions” and reimpose export curbs at any point. But for now, Lutnick joined White House Chief of Staff Susie Wiles in celebrating Fable 5’s redeployment on X.
+“Over the past two weeks, we have worked closely with Anthropic to analyze and approve Fable 5 to ensure alignment across the US Government and strengthen America’s leadership in AI,” Lutnick said.
+Wiles did not directly mention Anthropic but claimed a win for Trump, writing that “the government and private sector have worked together in a way we have never seen before and this foundation of America First is unprecedented. Our shared priority remains: get the best tech deployed as quickly and safely as possible.”
+Trade-off: Fable 5 may block routine coding tasks
+On June 12, the Commerce Department ordered Anthropic to shut off access to its most advanced models for anyone outside the US. The order emerged from fears that China, Russia, or other countries of concern may exploit the models to attack US infrastructure, like the electric grid or the banking system. In response, Anthropic shut down all access, as it didn’t have a way to block users by country.
+In particular, Mythos was viewed as “uniquely attractive to malicious actors who wish to misuse it in cyberattacks,” Anthropic’s blog said. According to Anthropic, the model “can be used to find and exploit software vulnerabilities more effectively than any other model—and all but the most skilled human security experts,” and those “prodigious cybersecurity capabilities” could be used against the US.
+Fable 5 shares the “same underlying model,” Anthropic said, but unlike Mythos 5, it “provides no such unique offensive capabilities.” Designed for the general public, Fable 5 already had the strongest safeguards Anthropic has ever applied to a model, and Anthropic said those safeguards are now even stronger ahead of redeployment.
+After weeks of testing, Fable 5 is no longer vulnerable to a bypassing method discovered by Amazon researchers that identified several software vulnerabilities and triggered the export curbs. Most troublingly, Anthropic said, was a case in which the model was manipulated into producing code that demonstrated how a vulnerability could be exploited.
+According to Anthropic, testing confirmed that less advanced rival models on the market, like GPT-5.5 and Kimi K2.7, “could identify the same vulnerabilities as Fable 5 did in the report.” That confirmed that “the reported technique did not expose any unique Mythos-level cyber capabilities,” Anthropic said, and “only involved routine defensive cybersecurity work.”
+“Even so, we moved quickly to address the reported bypass,” Anthropic wrote. That jailbreak method is currently blocked in over 99 percent of cases, Anthropic said. However, tightening safeguards came with a “trade-off” that may cause some benign prompts to be blocked “during routine coding and debugging tasks,” the company acknowledged.
+“Working closely with the government, we trained an improved safety classifier that targets and blocks the behavior described in the report,” Anthropic said. “Users will be notified if a request to Fable 5 is blocked, and the request will instead be sent to Opus 4.8.”
+Of course, Anthropic’s new classifier, which helps avoid uniquely dangerous attacks on the models, can make “mistakes,” Anthropic said. The company has long maintained that it’s “probably impossible” to build a model fully “impervious” to jailbreaks, but by ramping up red-teaming, Anthropic hopes to “ensure that we and our safety partners will be the first to find major jailbreaks and fix them before malicious actors can use them for harm.”
+The attack Amazon flagged currently works only in a “very small fraction of cases,” where “the model may provide information that isn’t detailed enough to help a cyberattacker,” Anthropic said.
+By being “cautious,” Anthropic said that “the vast majority of jailbreaks will not successfully unblock dangerous behaviors” and will be “very costly and high-effort to produce.”
+“Even if a jailbreak is successful, our extra layers of defense”—which requires some blocking of benign requests—“provide additional mitigation,” the company said.
+Anthropic’s plan to score jailbreaks
+Anthropic’s blog post seems to downplay the threat that Amazon identified as less risky than what it considers the greatest threat to governments: universal jailbreaks that can unlock a wide range of vulnerabilities and enable unforeseeable attacks.
+To streamline the private-public partnership and ensure the most rapid response to the biggest risks, Anthropic said the AI industry’s goal should be categorizing risks to ensure proper interventions both internally and from the government.
+Currently, Anthropic is working with Amazon, Microsoft, Google, and other Glasswing partners to “draft a consensus framework for assessing the severity of AI jailbreaks and how AI developers should respond to them.”
+Other industry partners are welcome to join those talks, Anthropic said, even though the process is “imperfect” and focuses on establishing four criteria for scoring a jailbreak. Those include assessing how much capability the jailbreak provides, how many offensive tasks it enables, how easy it is for a human to weaponize a jailbreak (single-prompt jailbreaks are flagged as the riskiest), and whether it requires specialist knowledge to discover the jailbreak.
+Using this framework, Anthropic has built a team that will monitor jailbreak submission channels 24/7, the blog said. The AI firm also confirmed that it is launching a “a new HackerOne program through which security researchers can submit potential cyber jailbreaks they’ve discovered in Fable 5” to keep red-teaming a top priority.
+Anthropic deepens government ties
+For Anthropic, one outcome of government testing seems to be an improved relationship with the government after it sued the US over a national security risk designation that blacklisted the AI firm. Anthropic claimed the designation was retaliation after the company’s refusal to grant government access to models for the purposes of building autonomous weapons or conducting domestic mass surveillance.
+In its blog, Anthropic said it is expanding its commitments to working with government partners on pre-deployment testing and evaluation. Those efforts will include giving the government early access to frontier models, rapidly sharing information on new jailbreak methods, and dedicating resources to joint research that will “help advance the state of the art in AI evaluation,” Anthropic said.
+The collaboration offers “the beginnings of a template for effective global coordination on the risks and benefits of AI,” Anthropic said, while urging Congress to pass laws to ensure that all frontier model developers are on the same page.
+The government is moving too slowly for Anthropic’s comfort. Anthropic CEO Dario Amodei floated his legislative proposal earlier this month, making a Lord of the Rings reference to emphasize his point:
+In one of the side plots to The Lord of the Rings , two of the Hobbits attempt to rouse Treebeard—a wise but ponderous sentient tree—to defend his forest from an army that is cutting it down. The problem is that Treebeard operates at a very different speed than the Hobbits. It takes him a full day simply to say hello to another tree, so getting him and his peers to act fast enough is nearly impossible. The intersection of AI and our political institutions feels a bit like the Hobbits and Treebeard.
+Initially, Trump planned to be hands-off on AI regulations in an attempt to spur innovation. However, Anthropic’s Mythos release spooked Trump into requesting voluntary safety testing of frontier models in May. Since then, Trump is “still working on a framework for how companies should formally submit new AI models for review, and what standards they would be held to,” two people familiar with the discussions told the NYT.
+In his post, Amodei called on Congress to act quickly to reimagine safety regulations for a world in which “AI can go from an amusing toy” to a “full country of geniuses in a data center,” or else risk suffering “national strategic” consequences.
+However, Isaac Harris, executive director of Frontier Security Institute, a nonprofit focused on AI and national security, told Reuters that the “biggest question mark” after Anthropic’s deepened partnership with the government is “how equivalently dangerous capabilities coming from China with less guardrails will be handled by the administration in the US market.”
+Notably, Anthropic recently accused Chinese AI firm Alibaba of launching the largest cloning attack on Claude. In response, Anthropic urged Congress to pass laws that would punish Chinese firms found stealing US firms’ work. If not, malicious actors who can’t get their hands on Anthropic’s models might turn to Chinese models with lower safeguards and increasingly closer capabilities to launch attacks that blindside the US.
+Ashley Belanger
+Senior Policy Reporter
+Ashley Belanger
+Senior Policy Reporter
+Ashley is a senior policy reporter for Ars Technica, dedicated to tracking social impacts of emerging policies and new technologies. She is a Chicago-based journalist with 20 years of experience.
+38 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+Sony erases digital content from libraries; we're reminded we don’t own what we buy
+2.
+NASA inspector general suggests Boeing's Starliner will now be a decade late
+3.
+NASA may send a backup, nuclear-powered Mars rover to the Moon
+4.
+Reddit will require you to log in to use old.reddit.com
+5.
+Amazon blames piracy apps with malware for killing new Fire Stick sideloading
+Customize
+
+## full_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+The US has lifted export curbs on Anthropic’s newest Claude models, Fable 5 and Mythos 5, about three weeks after the Trump administration flagged the models as national security risks .
+As of today, Anthropic confirmed in a blog post , Fable 5 will be available globally, and US organizations have had access restored to Mythos 5 since June 26. Anthropic said it is now working with the government to expand Mythos access to a “broader set of domestic and international partners in the Glasswing program.” That program allows cybersecurity researchers at trusted companies to access Mythos for defensive purposes.
+In a letter to Anthropic viewed by Reuters and The New York Times , Commerce Secretary Howard Lutnick said Anthropic would “no longer need a license for exports or in-country transfers of its Claude Mythos and Claude Fable AI models.” The letter acknowledged that Anthropic had “taken steps in close coordination with the US government to address the risks” posed by the models.
+Facing a longer delay in its models’ releases, Lutnick said that Anthropic agreed to expand its partnership with the government. The company said it also set up a program to work with hackers to red-team its models, and there’s now a dedicated internal team to monitor reports of emerging jailbreak threats 24/7.
+In the letter, Lutnick reminded Anthropic that the US “reserves the right to re-evaluate the decisions” and reimpose export curbs at any point. But for now, Lutnick joined White House Chief of Staff Susie Wiles in celebrating Fable 5’s redeployment on X.
+“Over the past two weeks, we have worked closely with Anthropic to analyze and approve Fable 5 to ensure alignment across the US Government and strengthen America’s leadership in AI,” Lutnick said.
+Wiles did not directly mention Anthropic but claimed a win for Trump, writing that “the government and private sector have worked together in a way we have never seen before and this foundation of America First is unprecedented. Our shared priority remains: get the best tech deployed as quickly and safely as possible.”
+Trade-off: Fable 5 may block routine coding tasks
+On June 12, the Commerce Department ordered Anthropic to shut off access to its most advanced models for anyone outside the US. The order emerged from fears that China, Russia, or other countries of concern may exploit the models to attack US infrastructure, like the electric grid or the banking system. In response, Anthropic shut down all access, as it didn’t have a way to block users by country.
+In particular, Mythos was viewed as “uniquely attractive to malicious actors who wish to misuse it in cyberattacks,” Anthropic’s blog said. According to Anthropic, the model “can be used to find and exploit software vulnerabilities more effectively than any other model—and all but the most skilled human security experts,” and those “prodigious cybersecurity capabilities” could be used against the US.
+Fable 5 shares the “same underlying model,” Anthropic said, but unlike Mythos 5, it “provides no such unique offensive capabilities.” Designed for the general public, Fable 5 already had the strongest safeguards Anthropic has ever applied to a model, and Anthropic said those safeguards are now even stronger ahead of redeployment.
+After weeks of testing, Fable 5 is no longer vulnerable to a bypassing method discovered by Amazon researchers that identified several software vulnerabilities and triggered the export curbs. Most troublingly, Anthropic said, was a case in which the model was manipulated into producing code that demonstrated how a vulnerability could be exploited.
+According to Anthropic, testing confirmed that less advanced rival models on the market, like GPT-5.5 and Kimi K2.7, “could identify the same vulnerabilities as Fable 5 did in the report.” That confirmed that “the reported technique did not expose any unique Mythos-level cyber capabilities,” Anthropic said, and “only involved routine defensive cybersecurity work.”
+“Even so, we moved quickly to address the reported bypass,” Anthropic wrote. That jailbreak method is currently blocked in over 99 percent of cases, Anthropic said. However, tightening safeguards came with a “trade-off” that may cause some benign prompts to be blocked “during routine coding and debugging tasks,” the company acknowledged.
+“Working closely with the government, we trained an improved safety classifier that targets and blocks the behavior described in the report,” Anthropic said. “Users will be notified if a request to Fable 5 is blocked, and the request will instead be sent to Opus 4.8.”
+Of course, Anthropic’s new classifier, which helps avoid uniquely dangerous attacks on the models, can make “mistakes,” Anthropic said. The company has long maintained that it’s “probably impossible” to build a model fully “impervious” to jailbreaks, but by ramping up red-teaming, Anthropic hopes to “ensure that we and our safety partners will be the first to find major jailbreaks and fix them before malicious actors can use them for harm.”
+The attack Amazon flagged currently works only in a “very small fraction of cases,” where “the model may provide information that isn’t detailed enough to help a cyberattacker,” Anthropic said.
+By being “cautious,” Anthropic said that “the vast majority of jailbreaks will not successfully unblock dangerous behaviors” and will be “very costly and high-effort to produce.”
+“Even if a jailbreak is successful, our extra layers of defense”—which requires some blocking of benign requests—“provide additional mitigation,” the company said.
+Anthropic’s plan to score jailbreaks
+Anthropic’s blog post seems to downplay the threat that Amazon identified as less risky than what it considers the greatest threat to governments: universal jailbreaks that can unlock a wide range of vulnerabilities and enable unforeseeable attacks.
+To streamline the private-public partnership and ensure the most rapid response to the biggest risks, Anthropic said the AI industry’s goal should be categorizing risks to ensure proper interventions both internally and from the government.
+Currently, Anthropic is working with Amazon, Microsoft, Google, and other Glasswing partners to “draft a consensus framework for assessing the severity of AI jailbreaks and how AI developers should respond to them.”
+Other industry partners are welcome to join those talks, Anthropic said, even though the process is “imperfect” and focuses on establishing four criteria for scoring a jailbreak. Those include assessing how much capability the jailbreak provides, how many offensive tasks it enables, how easy it is for a human to weaponize a jailbreak (single-prompt jailbreaks are flagged as the riskiest), and whether it requires specialist knowledge to discover the jailbreak.
+Using this framework, Anthropic has built a team that will monitor jailbreak submission channels 24/7, the blog said. The AI firm also confirmed that it is launching a “a new HackerOne program through which security researchers can submit potential cyber jailbreaks they’ve discovered in Fable 5” to keep red-teaming a top priority.
+Anthropic deepens government ties
+For Anthropic, one outcome of government testing seems to be an improved relationship with the government after it sued the US over a national security risk designation that blacklisted the AI firm. Anthropic claimed the designation was retaliation after the company’s refusal to grant government access to models for the purposes of building autonomous weapons or conducting domestic mass surveillance.
+In its blog, Anthropic said it is expanding its commitments to working with government partners on pre-deployment testing and evaluation. Those efforts will include giving the government early access to frontier models, rapidly sharing information on new jailbreak methods, and dedicating resources to joint research that will “help advance the state of the art in AI evaluation,” Anthropic said.
+The collaboration offers “the beginnings of a template for effective global coordination on the risks and benefits of AI,” Anthropic said, while urging Congress to pass laws to ensure that all frontier model developers are on the same page.
+The government is moving too slowly for Anthropic’s comfort. Anthropic CEO Dario Amodei floated his legislative proposal earlier this month, making a Lord of the Rings reference to emphasize his point:
+In one of the side plots to The Lord of the Rings , two of the Hobbits attempt to rouse Treebeard—a wise but ponderous sentient tree—to defend his forest from an army that is cutting it down. The problem is that Treebeard operates at a very different speed than the Hobbits. It takes him a full day simply to say hello to another tree, so getting him and his peers to act fast enough is nearly impossible. The intersection of AI and our political institutions feels a bit like the Hobbits and Treebeard.
+Initially, Trump planned to be hands-off on AI regulations in an attempt to spur innovation. However, Anthropic’s Mythos release spooked Trump into requesting voluntary safety testing of frontier models in May. Since then, Trump is “still working on a framework for how companies should formally submit new AI models for review, and what standards they would be held to,” two people familiar with the discussions told the NYT.
+In his post, Amodei called on Congress to act quickly to reimagine safety regulations for a world in which “AI can go from an amusing toy” to a “full country of geniuses in a data center,” or else risk suffering “national strategic” consequences.
+However, Isaac Harris, executive director of Frontier Security Institute, a nonprofit focused on AI and national security, told Reuters that the “biggest question mark” after Anthropic’s deepened partnership with the government is “how equivalently dangerous capabilities coming from China with less guardrails will be handled by the administration in the US market.”
+Notably, Anthropic recently accused Chinese AI firm Alibaba of launching the largest cloning attack on Claude. In response, Anthropic urged Congress to pass laws that would punish Chinese firms found stealing US firms’ work. If not, malicious actors who can’t get their hands on Anthropic’s models might turn to Chinese models with lower safeguards and increasingly closer capabilities to launch attacks that blindside the US.
+Ashley Belanger
+Senior Policy Reporter
+Ashley Belanger
+Senior Policy Reporter
+Ashley is a senior policy reporter for Ars Technica, dedicated to tracking social impacts of emerging policies and new technologies. She is a Chicago-based journalist with 20 years of experience.
+38 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+Sony erases digital content from libraries; we're reminded we don’t own what we buy
+2.
+NASA inspector general suggests Boeing's Starliner will now be a decade late
+3.
+NASA may send a backup, nuclear-powered Mars rover to the Moon
+4.
+Reddit will require you to log in to use old.reddit.com
+5.
+Amazon blames piracy apps with malware for killing new Fire Stick sideloading
+Customize
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":11253,"paragraph_count":43,"sentence_count":56,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   美国解除对Anthropic最新Claude模型Fable 5和Mythos 5的出口限制。Fable 5即日起全球可用，Mythos 5自6月26日起恢复美国组织访问。此前Commerce Department于6月12日以国家安全风险为由要求Anthropic切断境外访问。Anthropic与政府合作加强安全措施：Fable 5已修复Amazon研究人员发现的越狱方法，目前99%以上案例被拦截，但加固安全可能屏蔽部分良性常规编码请求。Anthropic还建立红队测试和24/7内部监控团队，被屏蔽请求转至Opus 4.8。
+
+2. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=high
+   Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The US has lifted export curbs on Anthropic’s newest Claude models, Fable 5 and Mythos 5, about three weeks after the Trump administration flagged the models as national security risks .
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   As of today, Anthropic confirmed in a blog post , Fable 5 will be available globally, and US organizations have had access restored to Mythos 5 since June 26.
+
+4. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   Anthropic said it is now working with the government to expand Mythos access to a “broader set of domestic and international partners in the Glasswing program.
+
+5. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=high
+   ” That program allows cybersecurity researchers at trusted companies to access Mythos for defensive purposes.
+
+6. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   In a letter to Anthropic viewed by Reuters and The New York Times , Commerce Secretary Howard Lutnick said Anthropic would “no longer need a license for exports or in-country transfers of its Claude Mythos and Claude Fable AI models.
+
+## business_elements
+
+- companies: Ars Technica, AI（RSS）, Anthropic, Google, Microsoft, Amazon
+- products: Claude, GPT-5
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算
+- numbers: 5, 6, 26, 12, 99%, 24, 7, 4.8
+- quotes: broader set of domestic and international partners in the Glasswing program. / no longer need a license for exports or in-country transfers of its Claude Mythos and Claude Fable AI models. / taken steps in close coordination with the US government to address the risks / reserves the right to re-evaluate the decisions / uniquely attractive to malicious actors who wish to misuse it in cyberattacks,
+
+## evidence_seed
+
+- company_actions: As of today, Anthropic confirmed in a blog post , Fable 5 will be available globally, and US organizations have had access restored to Mythos 5 since June 26.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The US has lifted export curbs on Anthropic’s newest Claude models, Fable 5 and Mythos 5, about three weeks after the Trump administration flagged the models as national security risks . / ” That program allows cybersecurity researchers at trusted companies to access Mythos for defensive purposes.
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"美国解除对Anthropic Claude Fable 5和Mythos 5的出口限制","discovery_summary":"美国解除对Anthropic最新Claude模型Fable 5和Mythos 5的出口限制。Fable 5即日起全球可用，Mythos 5自6月26日起恢复美国组织访问。此前Commerce Department于6月12日以国家安全风险为由要求Anthropic切断境外访问。Anthropic与政府合作加强安全措施：Fable 5已修复Amazon研究人员发现的越狱方法，目前99%以上案例被拦截，但加固安全可能屏蔽部分良性常规编码请求。Anthropic还建立红队测试和24/7内部监控团队，被屏蔽请求转至Opus 4.8。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release","discovered_at":"2026-07-02T02:12:32.516Z","rank_on_page":137,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+美国解除对Anthropic最新Claude模型Fable 5和Mythos 5的出口限制。Fable 5即日起全球可用，Mythos 5自6月26日起恢复美国组织访问。此前Commerce Department于6月12日以国家安全风险为由要求Anthropic切断境外访问。Anthropic与政府合作加强安全措施：Fable 5已修复Amazon研究人员发现的越狱方法，目前99%以上案例被拦截，但加固安全可能屏蔽部分良性常规编码请求。Anthropic还建立红队测试和24/7内部监控团队，被屏蔽请求转至Opus 4.8。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

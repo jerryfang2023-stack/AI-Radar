@@ -445,6 +445,14 @@ function short(text = "", length = 180) {
   return clean.length > length ? `${clean.slice(0, length - 1)}...` : clean;
 }
 
+function shortPublicFact(text = "", length = 260) {
+  const clean = String(text || "").replace(/\s+/gu, " ").trim();
+  if (clean.length <= length) return clean;
+  const sentence = clean.split(/(?<=[。！？.!?])\s*/u).find((item) => item.length >= 36 && item.length <= length);
+  if (sentence) return sentence.trim();
+  return clean.slice(0, length).trim();
+}
+
 function normalizedComparableText(value = "") {
   return String(value || "")
     .toLowerCase()
@@ -1183,7 +1191,8 @@ function corePoolCandidateFillIsDisplayReady(card = {}) {
   const fact = String(card.translatedFact || card.visibleFragment || card.summary || "").trim();
   if (!title || !card.sourceUrl) return false;
   if (publicTextLooksGarbled(title) || isBadPublicDisplayTitle(title) || titleLooksLikeGeneratedTemplate(title)) return false;
-  if (!fact || publicTextLooksGarbled(fact) || publicContentNeedsTranslation(fact)) return false;
+  if (!fact || publicTextLooksGarbled(fact) || publicContentNeedsTranslation(fact) || publicFactLooksLikeTemplateFallback(fact)) return false;
+  if (!hasSourceBackedFrontstageFact(card)) return false;
   return true;
 }
 
@@ -1467,7 +1476,7 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
   if (match) return match[1];
   // Fallback: if the title already has Chinese content, use it as a basic fact
   const cjkChars = (text.match(/[\u4e00-\u9fff]/gu) || []).length;
-  if (cjkChars >= 8) return short(text, 320);
+  if (cjkChars >= 8) return shortPublicFact(text, 320);
   return fallbackChineseFactForEnglish(text, sourceUrl);
 }
 
@@ -1576,8 +1585,13 @@ function frontstageSubjectOverride(sourceUrl = "", title = "") {
   if (/^Vapi 融资/u.test(title)) return "Vapi";
   if (/^Google 开源水文/u.test(title)) return "Google Research";
   if (/^Anthropic 发布 Claude/u.test(title)) return "Anthropic / Claude";
+  if (/^消息称快手可灵\s*AI/u.test(title)) return "快手可灵 AI";
   if (/^不理解 AI 评测/u.test(title)) return "AI Evals";
   return "";
+}
+
+function isReleaseNoteOnlySourceUrl(sourceUrl = "") {
+  return /github\.com\/anthropics\/claude-code\/releases\//iu.test(String(sourceUrl || ""));
 }
 
 function frontstageCandidateSubject(sourceUrl = "", rawTitle = "", title = "", sourceName = "") {
@@ -2447,17 +2461,24 @@ function poolCandidateCategory(section = "") {
 
 function corePoolCandidateFact(section = "", title = "", sourceUrl = "") {
   const keyExcerpts = parseJsonLine(section, "key_excerpts") || [];
-  const excerpt = Array.isArray(keyExcerpts)
-    ? keyExcerpts.map((item) => translatedSourcePoint(item?.text || "", item?.type || "")).find(Boolean)
-    : "";
-  const urlFact = chineseFactFromSource(title, sourceUrl);
-  if (urlFact) return short(urlFact, 320);
-  return short(
-    excerpt
-      || chineseFactFromSource(title, sourceUrl)
-      || title,
-    320
-  );
+  const excerptCandidates = Array.isArray(keyExcerpts)
+    ? keyExcerpts.map((item) => translatedSourcePoint(item?.text || "", item?.type || ""))
+    : [];
+  const candidates = [
+    ...excerptCandidates,
+    sourceTitleDerivedFact(title, sourceUrl),
+    chineseFactFromSource(title, sourceUrl),
+    hasCjk(title) ? title : "",
+  ];
+  return shortPublicFact(candidates.find((item) => (
+    item &&
+    !publicContentNeedsTranslation(item) &&
+    !publicTextLooksGarbled(item) &&
+    !publicFactLooksLikeTemplateFallback(item) &&
+    !/\.\.\./u.test(item) &&
+    !isGenericSourceFallback(item) &&
+    !isSourceLinkOnlyFact(item)
+  )) || "", 320);
 }
 
 function frontstageManifestForDate(date = "") {
@@ -2600,6 +2621,7 @@ function supplementalCorePoolCandidateItems(existingItems = [], activeDate = "")
       const rawTitle = poolTitle(section);
       const title = corePoolPublicTitle(rawTitle, sourceUrl);
       if (!title || !sourceUrl) return null;
+      if (isReleaseNoteOnlySourceUrl(sourceUrl)) return null;
       if (isRepositoryOrCatalogSourceUrl(sourceUrl)) return null;
       if (isGenericFundingOrListSource({ title, originalTitle: title, sourceTitle: title, sourceUrl })) return null;
       const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
@@ -2668,6 +2690,7 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
     .filter((section) => {
       const sourceUrl = poolValue(section, "source_url");
       const title = poolTitle(section);
+      if (isReleaseNoteOnlySourceUrl(sourceUrl)) return false;
       if (isRepositoryOrCatalogSourceUrl(sourceUrl)) return false;
       if (isGenericFundingOrListSource({ title, originalTitle: title, sourceTitle: title, sourceUrl })) return false;
       return true;
@@ -4193,7 +4216,7 @@ const corePoolCandidates = dedupeCorePoolCandidateItems([
 ])
   .map((card) => (card.promotionStatus === "candidate_only" ? card : normalizeFrontstageDisplay(card, { strictPublic: false })))
   .filter((card) => (card.type === "core_pool_candidate" ? corePoolCandidateFillIsDisplayReady(card) : publicCardFillIsDisplayReady(card)))
-  .filter((card) => !isWeakSubject(card.subject));
+  .filter((card) => card.subject && !isWeakSubject(card.subject));
 const candidateOnlyCorePool = corePoolCandidates.filter((card) => card.promotionStatus === "candidate_only");
 const frontstageSelection = buildDailyFrontstageSelection([...cards, ...candidateOnlyCorePool]);
 const frontstageCards = frontstageSelection.cards;

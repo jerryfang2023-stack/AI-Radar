@@ -1,0 +1,292 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-031",
+  "title": "issdandavis/Kiro_Version_ai-workflow-architect",
+  "original_url": "https://github.com/issdandavis/Kiro_Version_ai-workflow-architect",
+  "canonical_url": "https://github.com/issdandavis/Kiro_Version_ai-workflow-architect",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "org_build",
+  "enterprise_ai_transformation_reason": "fde_or_applied_ai_org_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-02T02:28:35.285Z",
+  "language": "mixed",
+  "full_text": "This repository was archived by the owner on Apr 7, 2026. It is now read-only.\nissdandavis\nKiro_Version_ai-workflow-architect\nPublic archive\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n230 Commits\n230 Commits\n.github\n.github\n.idx\n.idx\n.vscode\n.vscode\nattached_assets\nattached_assets\nclient\nclient\ndata\ndata\ndocs\ndocs\nscript\nscript\nscripts/ ai-agents\nscripts/ ai-agents\nserver\nserver\nshared\nshared\nsrc\nsrc\ntests\ntests\n.env.example\n.env.example\n.env.test\n.env.test\n.gitignore\n.gitignore\n.npmrc\n.npmrc\nAI_COLLABORATOR_NOTES.md\nAI_COLLABORATOR_NOTES.md\nAPP_USAGE_GUIDE.md\nAPP_USAGE_GUIDE.md\nCHANGELOG.md\nCHANGELOG.md\nDEPLOYMENT_FIX_PLAN.md\nDEPLOYMENT_FIX_PLAN.md\nDEPLOYMENT_GUIDE.md\nDEPLOYMENT_GUIDE.md\nINFRASTRUCTURE_SETUP.md\nINFRASTRUCTURE_SETUP.md\nMARKET_ANALYSIS.md\nMARKET_ANALYSIS.md\nPRICING.md\nPRICING.md\nQUICK_REFERENCE.md\nQUICK_REFERENCE.md\nREADME.md\nREADME.md\ncommirall\ncommirall\ncomponents.json\ncomponents.json\ndrizzle.config.ts\ndrizzle.config.ts\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npackage.vercel.json\npackage.vercel.json\npostcss.config.js\npostcss.config.js\nrequirements.txt\nrequirements.txt\nshopify.app.toml\nshopify.app.toml\nstart-dev.bat\nstart-dev.bat\ntsconfig.json\ntsconfig.json\nurls.txt\nurls.txt\nvercel.json\nvercel.json\nvite-plugin-meta-images.ts\nvite-plugin-meta-images.ts\nvite.config.ts\nvite.config.ts\nView all files\nRepository files navigation\nAI Workflow Platform v2.0\nUniversal AI Orchestration Platform - Orchestrate. Automate. Self-Improve.\nA powerful, universally adaptable full-stack AI orchestration platform that coordinates multiple AI providers, manages integrations, and builds automated workflows. Features AI autonomy mode, self-improvement capabilities, and enterprise-grade security.\n🌟 What Makes This Special\nThis platform is designed for universal adaptability - whether you want to:\nSell it as SaaS - Multi-tenant ready with Stripe billing\nWhite-label it - Fully customizable branding via config\nSelf-host it - Deploy on any infrastructure\nEmbed it - Use as a component in larger applications\nLet AI improve it - Built-in developer mode for self-modification\n✨ Features\nCore Platform\nMulti-AI Orchestration - OpenAI, Anthropic Claude, Google Gemini, Groq, xAI Grok, Perplexity, and custom providers\nAI Roundtable - Multiple AI models discuss and collaborate on problems\nIntegration Hub - GitHub, Google Drive, Dropbox, Notion, Slack, Discord, Figma, and more\nWorkflow Automation - Build and run automated task sequences with triggers\nSecure Credential Vault - AES-256-GCM encrypted API key storage\nCost Tracking - Monitor AI usage, set budgets, get alerts\nEnterprise Security - RBAC, 2FA, audit logging, rate limiting\n📚 Living Document Review System (NEW)\nAutomated Research Ingestion - Fetch and catalog patents, papers, and repos\nTaxonomy System - Number-Letter-Symbol IDs for stable cross-referencing\nGitHub-Based Workflow - Automated issue creation and review tracking\nFirebase Sync - Real-time updates to Studio applications\nSee Living Document System Docs for details\n🤖 AI Autonomy Mode (NEW in v2.0)\nLet AI take control of the platform at your discretion:\nSupervised Mode - Review and approve each action before execution\nAutonomous Mode - Full AI control with configurable constraints\nGoal Execution - Describe what you want, AI figures out how\nAction History - Complete audit trail with rollback capability\n🛠️ Developer Mode (Self-Improvement)\nEdit the app's source code from within the app:\nIn-App Code Editor - Browse and modify source files\nAI Code Improvement - Let AI refactor and enhance code\nVersion Control - Track changes with rollback support\nCode Search - Find anything across the codebase\n💳 Monetization Ready\nStripe Integration - Subscriptions, one-time payments, usage billing\nPricing Tiers - Free, Starter, Pro, Enterprise (customizable)\nPromo Codes - Discount system built-in\nUsage Metering - Track and bill for AI usage\n🛒 E-Commerce\nShopify Integration - Full e-commerce capabilities\nProduct Management - Sync products and inventory\nOrder Processing - Automated order workflows\n🚀 Quick Start\nPrerequisites\nNode.js 18+\nPostgreSQL database (or use SQLite for development)\nInstallation\n# Clone the repository\ngit clone https://github.com/Kiro_Version_ai-workflow-architect/ai-workflow-platform.git\ncd ai-workflow-platform\n# Install dependencies\nnpm install\n# Copy environment template\ncp .env.example .env\nDatabase Options\nOption 1: Supabase (Recommended - Free Tier)\nCreate account at supabase.com\nCreate new project\nGo to Settings → Database → Connection string\nCopy the URI to .env as DATABASE_URL\nOption 2: Local PostgreSQL\ncreatedb ai_workflow_db\n# Update .env: DATABASE_URL=postgresql://postgres:password@localhost:5432/ai_workflow_db\nOption 3: SQLite (Development Only)\n# No DATABASE_URL needed - will use SQLite automatically\nInitialize Database\nnpm run db:push\nStart Development\n# Single command (recommended)\nnpm run dev\n# Or separate terminals:\nnpm run dev:client # Frontend on port 5000\nnpm run dev:server # Backend on port 3000\nVisit http://localhost:5000\n📁 Project Structure\nai-workflow-platform/\n├── client/ # React frontend (Vite + TypeScript)\n│ ├── src/\n│ │ ├── pages/ # Application pages (Dashboard, Autonomy, Developer, etc.)\n│ │ ├── components/ # Reusable UI components\n│ │ ├── hooks/ # Custom React hooks\n│ │ └── lib/ # Utilities and helpers\n├── server/ # Express backend\n│ ├── services/ # AI providers, orchestration, autonomy engine\n│ ├── middleware/ # Auth, rate limiting, cost governor\n│ ├── shopify/ # Shopify integration\n│ └── routes.ts # API endpoints (4500+ lines)\n├── shared/ # Shared types & configuration\n│ ├── schema.ts # Database schema (Drizzle ORM)\n│ └── config.ts # App configuration (branding, features, pricing)\n├── docs/ # Documentation\n└── tests/ # Test suites\n🎨 Customization\nBranding & Configuration\nAll customization is centralized in shared/config.ts :\nexport const APP_CONFIG = {\nname : \"Your Brand Name\" ,\ndescription : \"Your description\" ,\ntagline : \"Your tagline\" ,\ncompany : {\nname : \"Your Company\" ,\nwebsite : \"https://yoursite.com\" ,\n} ,\nfeatures : {\nenableAutonomyMode : true ,\nenableDeveloperMode : true ,\nenableShopify : true ,\n// ... toggle any feature\n} ,\npricing : {\nplans : {\nfree : { price : 0 , features : [ ... ] } ,\npro : { price : 49 , features : [ ... ] } ,\n// ... customize plans\n} ;\nEnvironment Variables\nVariable\nDescription\nRequired\nDATABASE_URL\nPostgreSQL connection string\nYes*\nSESSION_SECRET\nRandom 32+ character string\nProduction\nPORT\nServer port (default: 5000)\nNo\nAPP_ORIGIN\nYour domain URL\nProduction\n*Not required if using SQLite for development\nAI Provider Keys\nVariable\nProvider\nTier\nOPENAI_API_KEY\nOpenAI GPT-4o\nPremium\nANTHROPIC_API_KEY\nClaude 3.5\nPremium\nGOOGLE_AI_API_KEY\nGemini Pro\nStandard\nGROQ_API_KEY\nLlama 3.1\nFree\nXAI_API_KEY\nGrok\nPremium\nPERPLEXITY_API_KEY\nPerplexity\nStandard\n📡 API Reference\nAuthentication\nPOST /api/auth/signup - Create account\nPOST /api/auth/login - Login\nPOST /api/auth/logout - Logout\nPOST /api/auth/guest - Guest access\nGET /api/auth/me - Current user\nAI & Agents\nPOST /api/agents/run - Start AI task\nGET /api/agents/run/:id - Task status\nGET /api/agents/stream/:id - SSE stream\nGET /api/ai/providers - Available providers\nAutonomy Mode\nPOST /api/autonomy/start - Start session\nPOST /api/autonomy/stop - Stop session\nPOST /api/autonomy/goal - Execute goal\nGET /api/autonomy/status - Session status\nGET /api/autonomy/approvals - Pending approvals\nPOST /api/autonomy/approve - Approve/reject action\nGET /api/autonomy/history - Action history\nDeveloper Mode\nPOST /api/devmode/start - Activate\nPOST /api/devmode/stop - Deactivate\nGET /api/devmode/files - List files\nGET /api/devmode/file - Read file\nPOST /api/devmode/file - Write file\nPOST /api/devmode/file/create - Create file\nDELETE /api/devmode/file - Delete file\nPOST /api/devmode/ai/improve - AI improvement\nPOST /api/devmode/ai/apply - Apply changes\nPOST /api/devmode/rollback - Rollback change\nGET /api/devmode/search - Search code\nGET /api/devmode/tree - Project tree\nGET /api/devmode/history - Change history\nIntegrations & Workflows\nGET /api/integrations - List integrations\nPOST /api/integrations/connect - Connect\nGET /api/workflows - List workflows\nPOST /api/workflows - Create workflow\n🏗️ Deployment\nProduction Build\nnpm run build\nnpm run start\nDeploy Options\nPlatform\nNotes\nVercel\nvercel.json included, zero-config\nRailway\nConnect repo, auto-deploy\nRender\nStandard Node.js service\nAWS/GCP\nUse Docker or direct deployment\nSelf-hosted\nPM2 or systemd recommended\nDocker (Optional)\nFROM node:18-alpine\nWORKDIR /app\nCOPY . .\nRUN npm ci && npm run build\nEXPOSE 5000\nCMD [ \"npm\" , \"start\" ]\n🔒 Security\nPassword Hashing - bcrypt with configurable rounds\nSession Management - Secure HTTP-only cookies\nRate Limiting - Per-endpoint limits\nCORS Protection - Configurable origins\nHelmet Headers - Security headers enabled\nEncrypted Vault - AES-256-GCM for API keys\nAudit Logging - All sensitive operations logged\nRBAC - Owner, Admin, Member, Viewer roles\n2FA Support - TOTP-based authentication\n💰 Business Models\nThis platform supports multiple business models:\nSaaS - Multi-tenant with subscription billing\nWhite-Label - Rebrand and resell\nEnterprise License - On-premise deployment\nMarketplace - Sell as a product\nConsulting - Customize for clients\n🤝 Contributing\nContributions welcome! Please read our contributing guidelines.\n📄 License\nMIT License - Free to use, modify, and sell.\nBuilt with: React 19, Express, TypeScript, PostgreSQL, Drizzle ORM, TailwindCSS, Radix UI\nVersion: 2.0.0 | Last Updated: January 2026\nAbout\nFull-stack AI orchestration platform with autonomous AI control, self-improvement developer mode, and multi-provider support\nTopics\nportfolio-managed\ntier-public-sellable\nsurface-sellable\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n95.8%\nPython\n3.3%\nCSS\n0.4%\nJavaScript\n0.3%\nHTML\n0.2%\nBatchfile\n0.0%",
+  "clean_text": "This repository was archived by the owner on Apr 7, 2026. It is now read-only.\nissdandavis\nKiro_Version_ai-workflow-architect\nPublic archive\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n230 Commits\n230 Commits\n.github\n.github\n.idx\n.idx\n.vscode\n.vscode\nattached_assets\nattached_assets\nclient\nclient\ndata\ndata\ndocs\ndocs\nscript\nscript\nscripts/ ai-agents\nscripts/ ai-agents\nserver\nserver\nshared\nshared\nsrc\nsrc\ntests\ntests\n.env.example\n.env.example\n.env.test\n.env.test\n.gitignore\n.gitignore\n.npmrc\n.npmrc\nAI_COLLABORATOR_NOTES.md\nAI_COLLABORATOR_NOTES.md\nAPP_USAGE_GUIDE.md\nAPP_USAGE_GUIDE.md\nCHANGELOG.md\nCHANGELOG.md\nDEPLOYMENT_FIX_PLAN.md\nDEPLOYMENT_FIX_PLAN.md\nDEPLOYMENT_GUIDE.md\nDEPLOYMENT_GUIDE.md\nINFRASTRUCTURE_SETUP.md\nINFRASTRUCTURE_SETUP.md\nMARKET_ANALYSIS.md\nMARKET_ANALYSIS.md\nPRICING.md\nPRICING.md\nQUICK_REFERENCE.md\nQUICK_REFERENCE.md\nREADME.md\nREADME.md\ncommirall\ncommirall\ncomponents.json\ncomponents.json\ndrizzle.config.ts\ndrizzle.config.ts\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npackage.vercel.json\npackage.vercel.json\npostcss.config.js\npostcss.config.js\nrequirements.txt\nrequirements.txt\nshopify.app.toml\nshopify.app.toml\nstart-dev.bat\nstart-dev.bat\ntsconfig.json\ntsconfig.json\nurls.txt\nurls.txt\nvercel.json\nvercel.json\nvite-plugin-meta-images.ts\nvite-plugin-meta-images.ts\nvite.config.ts\nvite.config.ts\nView all files\nRepository files navigation\nAI Workflow Platform v2.0\nUniversal AI Orchestration Platform - Orchestrate. Automate. Self-Improve.\nA powerful, universally adaptable full-stack AI orchestration platform that coordinates multiple AI providers, manages integrations, and builds automated workflows. Features AI autonomy mode, self-improvement capabilities, and enterprise-grade security.\n🌟 What Makes This Special\nThis platform is designed for universal adaptability - whether you want to:\nSell it as SaaS - Multi-tenant ready with Stripe billing\nWhite-label it - Fully customizable branding via config\nSelf-host it - Deploy on any infrastructure\nEmbed it - Use as a component in larger applications\nLet AI improve it - Built-in developer mode for self-modification\n✨ Features\nCore Platform\nMulti-AI Orchestration - OpenAI, Anthropic Claude, Google Gemini, Groq, xAI Grok, Perplexity, and custom providers\nAI Roundtable - Multiple AI models discuss and collaborate on problems\nIntegration Hub - GitHub, Google Drive, Dropbox, Notion, Slack, Discord, Figma, and more\nWorkflow Automation - Build and run automated task sequences with triggers\nSecure Credential Vault - AES-256-GCM encrypted API key storage\nCost Tracking - Monitor AI usage, set budgets, get alerts\nEnterprise Security - RBAC, 2FA, audit logging, rate limiting\n📚 Living Document Review System (NEW)\nAutomated Research Ingestion - Fetch and catalog patents, papers, and repos\nTaxonomy System - Number-Letter-Symbol IDs for stable cross-referencing\nGitHub-Based Workflow - Automated issue creation and review tracking\nFirebase Sync - Real-time updates to Studio applications\nSee Living Document System Docs for details\n🤖 AI Autonomy Mode (NEW in v2.0)\nLet AI take control of the platform at your discretion:\nSupervised Mode - Review and approve each action before execution\nAutonomous Mode - Full AI control with configurable constraints\nGoal Execution - Describe what you want, AI figures out how\nAction History - Complete audit trail with rollback capability\n🛠️ Developer Mode (Self-Improvement)\nEdit the app's source code from within the app:\nIn-App Code Editor - Browse and modify source files\nAI Code Improvement - Let AI refactor and enhance code\nVersion Control - Track changes with rollback support\nCode Search - Find anything across the codebase\n💳 Monetization Ready\nStripe Integration - Subscriptions, one-time payments, usage billing\nPricing Tiers - Free, Starter, Pro, Enterprise (customizable)\nPromo Codes - Discount system built-in\nUsage Metering - Track and bill for AI usage\n🛒 E-Commerce\nShopify Integration - Full e-commerce capabilities\nProduct Management - Sync products and inventory\nOrder Processing - Automated order workflows\n🚀 Quick Start\nPrerequisites\nNode.js 18+\nPostgreSQL database (or use SQLite for development)\nInstallation\n# Clone the repository\ngit clone https://github.com/Kiro_Version_ai-workflow-architect/ai-workflow-platform.git\ncd ai-workflow-platform\n# Install dependencies\nnpm install\n# Copy environment template\ncp .env.example .env\nDatabase Options\nOption 1: Supabase (Recommended - Free Tier)\nCreate account at supabase.com\nCreate new project\nGo to Settings → Database → Connection string\nCopy the URI to .env as DATABASE_URL\nOption 2: Local PostgreSQL\ncreatedb ai_workflow_db\n# Update .env: DATABASE_URL=postgresql://postgres:password@localhost:5432/ai_workflow_db\nOption 3: SQLite (Development Only)\n# No DATABASE_URL needed - will use SQLite automatically\nInitialize Database\nnpm run db:push\nStart Development\n# Single command (recommended)\nnpm run dev\n# Or separate terminals:\nnpm run dev:client # Frontend on port 5000\nnpm run dev:server # Backend on port 3000\nVisit http://localhost:5000\n📁 Project Structure\nai-workflow-platform/\n├── client/ # React frontend (Vite + TypeScript)\n│ ├── src/\n│ │ ├── pages/ # Application pages (Dashboard, Autonomy, Developer, etc.)\n│ │ ├── components/ # Reusable UI components\n│ │ ├── hooks/ # Custom React hooks\n│ │ └── lib/ # Utilities and helpers\n├── server/ # Express backend\n│ ├── services/ # AI providers, orchestration, autonomy engine\n│ ├── middleware/ # Auth, rate limiting, cost governor\n│ ├── shopify/ # Shopify integration\n│ └── routes.ts # API endpoints (4500+ lines)\n├── shared/ # Shared types & configuration\n│ ├── schema.ts # Database schema (Drizzle ORM)\n│ └── config.ts # App configuration (branding, features, pricing)\n├── docs/ # Documentation\n└── tests/ # Test suites\n🎨 Customization\nBranding & Configuration\nAll customization is centralized in shared/config.ts :\nexport const APP_CONFIG = {\nname : \"Your Brand Name\" ,\ndescription : \"Your description\" ,\ntagline : \"Your tagline\" ,\ncompany : {\nname : \"Your Company\" ,\nwebsite : \"https://yoursite.com\" ,\n} ,\nfeatures : {\nenableAutonomyMode : true ,\nenableDeveloperMode : true ,\nenableShopify : true ,\n// ... toggle any feature\n} ,\npricing : {\nplans : {\nfree : { price : 0 , features : [ ... ] } ,\npro : { price : 49 , features : [ ... ] } ,\n// ... customize plans\n} ;\nEnvironment Variables\nVariable\nDescription\nRequired\nDATABASE_URL\nPostgreSQL connection string\nYes*\nSESSION_SECRET\nRandom 32+ character string\nProduction\nPORT\nServer port (default: 5000)\nNo\nAPP_ORIGIN\nYour domain URL\nProduction\n*Not required if using SQLite for development\nAI Provider Keys\nVariable\nProvider\nTier\nOPENAI_API_KEY\nOpenAI GPT-4o\nPremium\nANTHROPIC_API_KEY\nClaude 3.5\nPremium\nGOOGLE_AI_API_KEY\nGemini Pro\nStandard\nGROQ_API_KEY\nLlama 3.1\nFree\nXAI_API_KEY\nGrok\nPremium\nPERPLEXITY_API_KEY\nPerplexity\nStandard\n📡 API Reference\nAuthentication\nPOST /api/auth/signup - Create account\nPOST /api/auth/login - Login\nPOST /api/auth/logout - Logout\nPOST /api/auth/guest - Guest access\nGET /api/auth/me - Current user\nAI & Agents\nPOST /api/agents/run - Start AI task\nGET /api/agents/run/:id - Task status\nGET /api/agents/stream/:id - SSE stream\nGET /api/ai/providers - Available providers\nAutonomy Mode\nPOST /api/autonomy/start - Start session\nPOST /api/autonomy/stop - Stop session\nPOST /api/autonomy/goal - Execute goal\nGET /api/autonomy/status - Session status\nGET /api/autonomy/approvals - Pending approvals\nPOST /api/autonomy/approve - Approve/reject action\nGET /api/autonomy/history - Action history\nDeveloper Mode\nPOST /api/devmode/start - Activate\nPOST /api/devmode/stop - Deactivate\nGET /api/devmode/files - List files\nGET /api/devmode/file - Read file\nPOST /api/devmode/file - Write file\nPOST /api/devmode/file/create - Create file\nDELETE /api/devmode/file - Delete file\nPOST /api/devmode/ai/improve - AI improvement\nPOST /api/devmode/ai/apply - Apply changes\nPOST /api/devmode/rollback - Rollback change\nGET /api/devmode/search - Search code\nGET /api/devmode/tree - Project tree\nGET /api/devmode/history - Change history\nIntegrations & Workflows\nGET /api/integrations - List integrations\nPOST /api/integrations/connect - Connect\nGET /api/workflows - List workflows\nPOST /api/workflows - Create workflow\n🏗️ Deployment\nProduction Build\nnpm run build\nnpm run start\nDeploy Options\nPlatform\nNotes\nVercel\nvercel.json included, zero-config\nRailway\nConnect repo, auto-deploy\nRender\nStandard Node.js service\nAWS/GCP\nUse Docker or direct deployment\nSelf-hosted\nPM2 or systemd recommended\nDocker (Optional)\nFROM node:18-alpine\nWORKDIR /app\nCOPY . .\nRUN npm ci && npm run build\nEXPOSE 5000\nCMD [ \"npm\" , \"start\" ]\n🔒 Security\nPassword Hashing - bcrypt with configurable rounds\nSession Management - Secure HTTP-only cookies\nRate Limiting - Per-endpoint limits\nCORS Protection - Configurable origins\nHelmet Headers - Security headers enabled\nEncrypted Vault - AES-256-GCM for API keys\nAudit Logging - All sensitive operations logged\nRBAC - Owner, Admin, Member, Viewer roles\n2FA Support - TOTP-based authentication\n💰 Business Models\nThis platform supports multiple business models:\nSaaS - Multi-tenant with subscription billing\nWhite-Label - Rebrand and resell\nEnterprise License - On-premise deployment\nMarketplace - Sell as a product\nConsulting - Customize for clients\n🤝 Contributing\nContributions welcome! Please read our contributing guidelines.\n📄 License\nMIT License - Free to use, modify, and sell.\nBuilt with: React 19, Express, TypeScript, PostgreSQL, Drizzle ORM, TailwindCSS, Radix UI\nVersion: 2.0.0 | Last Updated: January 2026\nAbout\nFull-stack AI orchestration platform with autonomous AI control, self-improvement developer mode, and multi-provider support\nTopics\nportfolio-managed\ntier-public-sellable\nsurface-sellable\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n95.8%\nPython\n3.3%\nCSS\n0.4%\nJavaScript\n0.3%\nHTML\n0.2%\nBatchfile\n0.0%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-02/r-031-issdandavis-kiro-version-ai-workflow-architect.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-02/r-031-issdandavis-kiro-version-ai-workflow-architect.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 10446,
+    "paragraph_count": 182,
+    "sentence_count": 28,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.0068,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 10446,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "8aa7d37f03ce226d",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "0a39275915a45b1b",
+  "content_hash": "8aa7d37f03ce226d",
+  "full_text_hash": "8aa7d37f03ce226d",
+  "semantic_hash": "8995bbcc02718af7",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-02T02:28:35.285Z",
+  "last_seen_at": "2026-07-02T02:28:35.285Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Full-stack AI orchestration platform with autonomous AI control, self-improvement developer mode, and multi-provider support ... A powerful, universally adaptable full-stack AI orchestration platform that coordinates multiple AI providers, manages integrations, and builds automated workflows. Featur... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "This repository was archived by the owner on Apr 7, 2026.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It is now read-only.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "issdandavis Kiro_Version_ai-workflow-architect Public archive Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 230 Commits 230 Commits .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "vscode attached_assets attached_assets client client data data docs docs script script scripts/ ai-agents scripts/ ai-agents server server shared shared src src tests tests .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "npmrc AI_COLLABORATOR_NOTES.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "GitHub",
+      "Meta",
+      "AWS",
+      "Perplexity"
+    ],
+    "products": [
+      "agents",
+      "Claude",
+      "Gemini",
+      "Agents"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "7",
+      "2026",
+      "230",
+      "2.0",
+      "256",
+      "2",
+      "18",
+      "1"
+    ],
+    "quotes": [
+      "Your Brand Name",
+      "Your description",
+      "Your tagline",
+      "Your Company",
+      "https://yoursite.com"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "This repository was archived by the owner on Apr 7, 2026.",
+      "It is now read-only.",
+      "vscode attached_assets attached_assets client client data data docs docs script script scripts/ ai-agents scripts/ ai-agents server server shared shared src src tests tests ."
+    ],
+    "case_details": [
+      "Full-stack AI orchestration platform with autonomous AI control, self-improvement developer mode, and multi-provider support ... A powerful, universally adaptable full-stack AI orchestration platform that coordinates multiple AI providers, manages integrations, and builds automated workflows. Featur... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem"
+    ],
+    "workflow_changes": [
+      "issdandavis Kiro_Version_ai-workflow-architect Public archive Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 230 Commits 230 Commits ."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# issdandavis/Kiro_Version_ai-workflow-architect\n\n- raw_id: R-031\n- original_url: https://github.com/issdandavis/Kiro_Version_ai-workflow-architect\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-02T02:28:35.285Z\n\n## clean_text\n\nThis repository was archived by the owner on Apr 7, 2026. It is now read-only.\nissdandavis\nKiro_Version_ai-workflow-architect\nPublic archive\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n230 Commits\n230 Commits\n.github\n.github\n.idx\n.idx\n.vscode\n.vscode\nattached_assets\nattached_assets\nclient\nclient\ndata\ndata\ndocs\ndocs\nscript\nscript\nscripts/ ai-agents\nscripts/ ai-agents\nserver\nserver\nshared\nshared\nsrc\nsrc\ntests\ntests\n.env.example\n.env.example\n.env.test\n.env.test\n.gitignore\n.gitignore\n.npmrc\n.npmrc\nAI_COLLABORATOR_NOTES.md\nAI_COLLABORATOR_NOTES.md\nAPP_USAGE_GUIDE.md\nAPP_USAGE_GUIDE.md\nCHANGELOG.md\nCHANGELOG.md\nDEPLOYMENT_FIX_PLAN.md\nDEPLOYMENT_FIX_PLAN.md\nDEPLOYMENT_GUIDE.md\nDEPLOYMENT_GUIDE.md\nINFRASTRUCTURE_SETUP.md\nINFRASTRUCTURE_SETUP.md\nMARKET_ANALYSIS.md\nMARKET_ANALYSIS.md\nPRICING.md\nPRICING.md\nQUICK_REFERENCE.md\nQUICK_REFERENCE.md\nREADME.md\nREADME.md\ncommirall\ncommirall\ncomponents.json\ncomponents.json\ndrizzle.config.ts\ndrizzle.config.ts\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npackage.vercel.json\npackage.vercel.json\npostcss.config.js\npostcss.config.js\nrequirements.txt\nrequirements.txt\nshopify.app.toml\nshopify.app.toml\nstart-dev.bat\nstart-dev.bat\ntsconfig.json\ntsconfig.json\nurls.txt\nurls.txt\nvercel.json\nvercel.json\nvite-plugin-meta-images.ts\nvite-plugin-meta-images.ts\nvite.config.ts\nvite.config.ts\nView all files\nRepository files navigation\nAI Workflow Platform v2.0\nUniversal AI Orchestration Platform - Orchestrate. Automate. Self-Improve.\nA powerful, universally adaptable full-stack AI orchestration platform that coordinates multiple AI providers, manages integrations, and builds automated workflows. Features AI autonomy mode, self-improvement capabilities, and enterprise-grade security.\n🌟 What Makes This Special\nThis platform is designed for universal adaptability - whether you want to:\nSell it as SaaS - Multi-tenant ready with Stripe billing\nWhite-label it - Fully customizable branding via config\nSelf-host it - Deploy on any infrastructure\nEmbed it - Use as a component in larger applications\nLet AI improve it - Built-in developer mode for self-modification\n✨ Features\nCore Platform\nMulti-AI Orchestration - OpenAI, Anthropic Claude, Google Gemini, Groq, xAI Grok, Perplexity, and custom providers\nAI Roundtable - Multiple AI models discuss and collaborate on problems\nIntegration Hub - GitHub, Google Drive, Dropbox, Notion, Slack, Discord, Figma, and more\nWorkflow Automation - Build and run automated task sequences with triggers\nSecure Credential Vault - AES-256-GCM encrypted API key storage\nCost Tracking - Monitor AI usage, set budgets, get alerts\nEnterprise Security - RBAC, 2FA, audit logging, rate limiting\n📚 Living Document Review System (NEW)\nAutomated Research Ingestion - Fetch and catalog patents, papers, and repos\nTaxonomy System - Number-Letter-Symbol IDs for stable cross-referencing\nGitHub-Based Workflow - Automated issue creation and review tracking\nFirebase Sync - Real-time updates to Studio applications\nSee Living Document System Docs for details\n🤖 AI Autonomy Mode (NEW in v2.0)\nLet AI take control of the platform at your discretion:\nSupervised Mode - Review and approve each action before execution\nAutonomous Mode - Full AI control with configurable constraints\nGoal Execution - Describe what you want, AI figures out how\nAction History - Complete audit trail with rollback capability\n🛠️ Developer Mode (Self-Improvement)\nEdit the app's source code from within the app:\nIn-App Code Editor - Browse and modify source files\nAI Code Improvement - Let AI refactor and enhance code\nVersion Control - Track changes with rollback support\nCode Search - Find anything across the codebase\n💳 Monetization Ready\nStripe Integration - Subscriptions, one-time payments, usage billing\nPricing Tiers - Free, Starter, Pro, Enterprise (customizable)\nPromo Codes - Discount system built-in\nUsage Metering - Track and bill for AI usage\n🛒 E-Commerce\nShopify Integration - Full e-commerce capabilities\nProduct Management - Sync products and inventory\nOrder Processing - Automated order workflows\n🚀 Quick Start\nPrerequisites\nNode.js 18+\nPostgreSQL database (or use SQLite for development)\nInstallation\n# Clone the repository\ngit clone https://github.com/Kiro_Version_ai-workflow-architect/ai-workflow-platform.git\ncd ai-workflow-platform\n# Install dependencies\nnpm install\n# Copy environment template\ncp .env.example .env\nDatabase Options\nOption 1: Supabase (Recommended - Free Tier)\nCreate account at supabase.com\nCreate new project\nGo to Settings → Database → Connection string\nCopy the URI to .env as DATABASE_URL\nOption 2: Local PostgreSQL\ncreatedb ai_workflow_db\n# Update .env: DATABASE_URL=postgresql://postgres:password@localhost:5432/ai_workflow_db\nOption 3: SQLite (Development Only)\n# No DATABASE_URL needed - will use SQLite automatically\nInitialize Database\nnpm run db:push\nStart Development\n# Single command (recommended)\nnpm run dev\n# Or separate terminals:\nnpm run dev:client # Frontend on port 5000\nnpm run dev:server # Backend on port 3000\nVisit http://localhost:5000\n📁 Project Structure\nai-workflow-platform/\n├── client/ # React frontend (Vite + TypeScript)\n│ ├── src/\n│ │ ├── pages/ # Application pages (Dashboard, Autonomy, Developer, etc.)\n│ │ ├── components/ # Reusable UI components\n│ │ ├── hooks/ # Custom React hooks\n│ │ └── lib/ # Utilities and helpers\n├── server/ # Express backend\n│ ├── services/ # AI providers, orchestration, autonomy engine\n│ ├── middleware/ # Auth, rate limiting, cost governor\n│ ├── shopify/ # Shopify integration\n│ └── routes.ts # API endpoints (4500+ lines)\n├── shared/ # Shared types & configuration\n│ ├── schema.ts # Database schema (Drizzle ORM)\n│ └── config.ts # App configuration (branding, features, pricing)\n├── docs/ # Documentation\n└── tests/ # Test suites\n🎨 Customization\nBranding & Configuration\nAll customization is centralized in shared/config.ts :\nexport const APP_CONFIG = {\nname : \"Your Brand Name\" ,\ndescription : \"Your description\" ,\ntagline : \"Your tagline\" ,\ncompany : {\nname : \"Your Company\" ,\nwebsite : \"https://yoursite.com\" ,\n} ,\nfeatures : {\nenableAutonomyMode : true ,\nenableDeveloperMode : true ,\nenableShopify : true ,\n// ... toggle any feature\n} ,\npricing : {\nplans : {\nfree : { price : 0 , features : [ ... ] } ,\npro : { price : 49 , features : [ ... ] } ,\n// ... customize plans\n} ;\nEnvironment Variables\nVariable\nDescription\nRequired\nDATABASE_URL\nPostgreSQL connection string\nYes*\nSESSION_SECRET\nRandom 32+ character string\nProduction\nPORT\nServer port (default: 5000)\nNo\nAPP_ORIGIN\nYour domain URL\nProduction\n*Not required if using SQLite for development\nAI Provider Keys\nVariable\nProvider\nTier\nOPENAI_API_KEY\nOpenAI GPT-4o\nPremium\nANTHROPIC_API_KEY\nClaude 3.5\nPremium\nGOOGLE_AI_API_KEY\nGemini Pro\nStandard\nGROQ_API_KEY\nLlama 3.1\nFree\nXAI_API_KEY\nGrok\nPremium\nPERPLEXITY_API_KEY\nPerplexity\nStandard\n📡 API Reference\nAuthentication\nPOST /api/auth/signup - Create account\nPOST /api/auth/login - Login\nPOST /api/auth/logout - Logout\nPOST /api/auth/guest - Guest access\nGET /api/auth/me - Current user\nAI & Agents\nPOST /api/agents/run - Start AI task\nGET /api/agents/run/:id - Task status\nGET /api/agents/stream/:id - SSE stream\nGET /api/ai/providers - Available providers\nAutonomy Mode\nPOST /api/autonomy/start - Start session\nPOST /api/autonomy/stop - Stop session\nPOST /api/autonomy/goal - Execute goal\nGET /api/autonomy/status - Session status\nGET /api/autonomy/approvals - Pending approvals\nPOST /api/autonomy/approve - Approve/reject action\nGET /api/autonomy/history - Action history\nDeveloper Mode\nPOST /api/devmode/start - Activate\nPOST /api/devmode/stop - Deactivate\nGET /api/devmode/files - List files\nGET /api/devmode/file - Read file\nPOST /api/devmode/file - Write file\nPOST /api/devmode/file/create - Create file\nDELETE /api/devmode/file - Delete file\nPOST /api/devmode/ai/improve - AI improvement\nPOST /api/devmode/ai/apply - Apply changes\nPOST /api/devmode/rollback - Rollback change\nGET /api/devmode/search - Search code\nGET /api/devmode/tree - Project tree\nGET /api/devmode/history - Change history\nIntegrations & Workflows\nGET /api/integrations - List integrations\nPOST /api/integrations/connect - Connect\nGET /api/workflows - List workflows\nPOST /api/workflows - Create workflow\n🏗️ Deployment\nProduction Build\nnpm run build\nnpm run start\nDeploy Options\nPlatform\nNotes\nVercel\nvercel.json included, zero-config\nRailway\nConnect repo, auto-deploy\nRender\nStandard Node.js service\nAWS/GCP\nUse Docker or direct deployment\nSelf-hosted\nPM2 or systemd recommended\nDocker (Optional)\nFROM node:18-alpine\nWORKDIR /app\nCOPY . .\nRUN npm ci && npm run build\nEXPOSE 5000\nCMD [ \"npm\" , \"start\" ]\n🔒 Security\nPassword Hashing - bcrypt with configurable rounds\nSession Management - Secure HTTP-only cookies\nRate Limiting - Per-endpoint limits\nCORS Protection - Configurable origins\nHelmet Headers - Security headers enabled\nEncrypted Vault - AES-256-GCM for API keys\nAudit Logging - All sensitive operations logged\nRBAC - Owner, Admin, Member, Viewer roles\n2FA Support - TOTP-based authentication\n💰 Business Models\nThis platform supports multiple business models:\nSaaS - Multi-tenant with subscription billing\nWhite-Label - Rebrand and resell\nEnterprise License - On-premise deployment\nMarketplace - Sell as a product\nConsulting - Customize for clients\n🤝 Contributing\nContributions welcome! Please read our contributing guidelines.\n📄 License\nMIT License - Free to use, modify, and sell.\nBuilt with: React 19, Express, TypeScript, PostgreSQL, Drizzle ORM, TailwindCSS, Radix UI\nVersion: 2.0.0 | Last Updated: January 2026\nAbout\nFull-stack AI orchestration platform with autonomous AI control, self-improvement developer mode, and multi-provider support\nTopics\nportfolio-managed\ntier-public-sellable\nsurface-sellable\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n95.8%\nPython\n3.3%\nCSS\n0.4%\nJavaScript\n0.3%\nHTML\n0.2%\nBatchfile\n0.0%\n\n## full_text\n\nThis repository was archived by the owner on Apr 7, 2026. It is now read-only.\nissdandavis\nKiro_Version_ai-workflow-architect\nPublic archive\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n230 Commits\n230 Commits\n.github\n.github\n.idx\n.idx\n.vscode\n.vscode\nattached_assets\nattached_assets\nclient\nclient\ndata\ndata\ndocs\ndocs\nscript\nscript\nscripts/ ai-agents\nscripts/ ai-agents\nserver\nserver\nshared\nshared\nsrc\nsrc\ntests\ntests\n.env.example\n.env.example\n.env.test\n.env.test\n.gitignore\n.gitignore\n.npmrc\n.npmrc\nAI_COLLABORATOR_NOTES.md\nAI_COLLABORATOR_NOTES.md\nAPP_USAGE_GUIDE.md\nAPP_USAGE_GUIDE.md\nCHANGELOG.md\nCHANGELOG.md\nDEPLOYMENT_FIX_PLAN.md\nDEPLOYMENT_FIX_PLAN.md\nDEPLOYMENT_GUIDE.md\nDEPLOYMENT_GUIDE.md\nINFRASTRUCTURE_SETUP.md\nINFRASTRUCTURE_SETUP.md\nMARKET_ANALYSIS.md\nMARKET_ANALYSIS.md\nPRICING.md\nPRICING.md\nQUICK_REFERENCE.md\nQUICK_REFERENCE.md\nREADME.md\nREADME.md\ncommirall\ncommirall\ncomponents.json\ncomponents.json\ndrizzle.config.ts\ndrizzle.config.ts\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npackage.vercel.json\npackage.vercel.json\npostcss.config.js\npostcss.config.js\nrequirements.txt\nrequirements.txt\nshopify.app.toml\nshopify.app.toml\nstart-dev.bat\nstart-dev.bat\ntsconfig.json\ntsconfig.json\nurls.txt\nurls.txt\nvercel.json\nvercel.json\nvite-plugin-meta-images.ts\nvite-plugin-meta-images.ts\nvite.config.ts\nvite.config.ts\nView all files\nRepository files navigation\nAI Workflow Platform v2.0\nUniversal AI Orchestration Platform - Orchestrate. Automate. Self-Improve.\nA powerful, universally adaptable full-stack AI orchestration platform that coordinates multiple AI providers, manages integrations, and builds automated workflows. Features AI autonomy mode, self-improvement capabilities, and enterprise-grade security.\n🌟 What Makes This Special\nThis platform is designed for universal adaptability - whether you want to:\nSell it as SaaS - Multi-tenant ready with Stripe billing\nWhite-label it - Fully customizable branding via config\nSelf-host it - Deploy on any infrastructure\nEmbed it - Use as a component in larger applications\nLet AI improve it - Built-in developer mode for self-modification\n✨ Features\nCore Platform\nMulti-AI Orchestration - OpenAI, Anthropic Claude, Google Gemini, Groq, xAI Grok, Perplexity, and custom providers\nAI Roundtable - Multiple AI models discuss and collaborate on problems\nIntegration Hub - GitHub, Google Drive, Dropbox, Notion, Slack, Discord, Figma, and more\nWorkflow Automation - Build and run automated task sequences with triggers\nSecure Credential Vault - AES-256-GCM encrypted API key storage\nCost Tracking - Monitor AI usage, set budgets, get alerts\nEnterprise Security - RBAC, 2FA, audit logging, rate limiting\n📚 Living Document Review System (NEW)\nAutomated Research Ingestion - Fetch and catalog patents, papers, and repos\nTaxonomy System - Number-Letter-Symbol IDs for stable cross-referencing\nGitHub-Based Workflow - Automated issue creation and review tracking\nFirebase Sync - Real-time updates to Studio applications\nSee Living Document System Docs for details\n🤖 AI Autonomy Mode (NEW in v2.0)\nLet AI take control of the platform at your discretion:\nSupervised Mode - Review and approve each action before execution\nAutonomous Mode - Full AI control with configurable constraints\nGoal Execution - Describe what you want, AI figures out how\nAction History - Complete audit trail with rollback capability\n🛠️ Developer Mode (Self-Improvement)\nEdit the app's source code from within the app:\nIn-App Code Editor - Browse and modify source files\nAI Code Improvement - Let AI refactor and enhance code\nVersion Control - Track changes with rollback support\nCode Search - Find anything across the codebase\n💳 Monetization Ready\nStripe Integration - Subscriptions, one-time payments, usage billing\nPricing Tiers - Free, Starter, Pro, Enterprise (customizable)\nPromo Codes - Discount system built-in\nUsage Metering - Track and bill for AI usage\n🛒 E-Commerce\nShopify Integration - Full e-commerce capabilities\nProduct Management - Sync products and inventory\nOrder Processing - Automated order workflows\n🚀 Quick Start\nPrerequisites\nNode.js 18+\nPostgreSQL database (or use SQLite for development)\nInstallation\n# Clone the repository\ngit clone https://github.com/Kiro_Version_ai-workflow-architect/ai-workflow-platform.git\ncd ai-workflow-platform\n# Install dependencies\nnpm install\n# Copy environment template\ncp .env.example .env\nDatabase Options\nOption 1: Supabase (Recommended - Free Tier)\nCreate account at supabase.com\nCreate new project\nGo to Settings → Database → Connection string\nCopy the URI to .env as DATABASE_URL\nOption 2: Local PostgreSQL\ncreatedb ai_workflow_db\n# Update .env: DATABASE_URL=postgresql://postgres:password@localhost:5432/ai_workflow_db\nOption 3: SQLite (Development Only)\n# No DATABASE_URL needed - will use SQLite automatically\nInitialize Database\nnpm run db:push\nStart Development\n# Single command (recommended)\nnpm run dev\n# Or separate terminals:\nnpm run dev:client # Frontend on port 5000\nnpm run dev:server # Backend on port 3000\nVisit http://localhost:5000\n📁 Project Structure\nai-workflow-platform/\n├── client/ # React frontend (Vite + TypeScript)\n│ ├── src/\n│ │ ├── pages/ # Application pages (Dashboard, Autonomy, Developer, etc.)\n│ │ ├── components/ # Reusable UI components\n│ │ ├── hooks/ # Custom React hooks\n│ │ └── lib/ # Utilities and helpers\n├── server/ # Express backend\n│ ├── services/ # AI providers, orchestration, autonomy engine\n│ ├── middleware/ # Auth, rate limiting, cost governor\n│ ├── shopify/ # Shopify integration\n│ └── routes.ts # API endpoints (4500+ lines)\n├── shared/ # Shared types & configuration\n│ ├── schema.ts # Database schema (Drizzle ORM)\n│ └── config.ts # App configuration (branding, features, pricing)\n├── docs/ # Documentation\n└── tests/ # Test suites\n🎨 Customization\nBranding & Configuration\nAll customization is centralized in shared/config.ts :\nexport const APP_CONFIG = {\nname : \"Your Brand Name\" ,\ndescription : \"Your description\" ,\ntagline : \"Your tagline\" ,\ncompany : {\nname : \"Your Company\" ,\nwebsite : \"https://yoursite.com\" ,\n} ,\nfeatures : {\nenableAutonomyMode : true ,\nenableDeveloperMode : true ,\nenableShopify : true ,\n// ... toggle any feature\n} ,\npricing : {\nplans : {\nfree : { price : 0 , features : [ ... ] } ,\npro : { price : 49 , features : [ ... ] } ,\n// ... customize plans\n} ;\nEnvironment Variables\nVariable\nDescription\nRequired\nDATABASE_URL\nPostgreSQL connection string\nYes*\nSESSION_SECRET\nRandom 32+ character string\nProduction\nPORT\nServer port (default: 5000)\nNo\nAPP_ORIGIN\nYour domain URL\nProduction\n*Not required if using SQLite for development\nAI Provider Keys\nVariable\nProvider\nTier\nOPENAI_API_KEY\nOpenAI GPT-4o\nPremium\nANTHROPIC_API_KEY\nClaude 3.5\nPremium\nGOOGLE_AI_API_KEY\nGemini Pro\nStandard\nGROQ_API_KEY\nLlama 3.1\nFree\nXAI_API_KEY\nGrok\nPremium\nPERPLEXITY_API_KEY\nPerplexity\nStandard\n📡 API Reference\nAuthentication\nPOST /api/auth/signup - Create account\nPOST /api/auth/login - Login\nPOST /api/auth/logout - Logout\nPOST /api/auth/guest - Guest access\nGET /api/auth/me - Current user\nAI & Agents\nPOST /api/agents/run - Start AI task\nGET /api/agents/run/:id - Task status\nGET /api/agents/stream/:id - SSE stream\nGET /api/ai/providers - Available providers\nAutonomy Mode\nPOST /api/autonomy/start - Start session\nPOST /api/autonomy/stop - Stop session\nPOST /api/autonomy/goal - Execute goal\nGET /api/autonomy/status - Session status\nGET /api/autonomy/approvals - Pending approvals\nPOST /api/autonomy/approve - Approve/reject action\nGET /api/autonomy/history - Action history\nDeveloper Mode\nPOST /api/devmode/start - Activate\nPOST /api/devmode/stop - Deactivate\nGET /api/devmode/files - List files\nGET /api/devmode/file - Read file\nPOST /api/devmode/file - Write file\nPOST /api/devmode/file/create - Create file\nDELETE /api/devmode/file - Delete file\nPOST /api/devmode/ai/improve - AI improvement\nPOST /api/devmode/ai/apply - Apply changes\nPOST /api/devmode/rollback - Rollback change\nGET /api/devmode/search - Search code\nGET /api/devmode/tree - Project tree\nGET /api/devmode/history - Change history\nIntegrations & Workflows\nGET /api/integrations - List integrations\nPOST /api/integrations/connect - Connect\nGET /api/workflows - List workflows\nPOST /api/workflows - Create workflow\n🏗️ Deployment\nProduction Build\nnpm run build\nnpm run start\nDeploy Options\nPlatform\nNotes\nVercel\nvercel.json included, zero-config\nRailway\nConnect repo, auto-deploy\nRender\nStandard Node.js service\nAWS/GCP\nUse Docker or direct deployment\nSelf-hosted\nPM2 or systemd recommended\nDocker (Optional)\nFROM node:18-alpine\nWORKDIR /app\nCOPY . .\nRUN npm ci && npm run build\nEXPOSE 5000\nCMD [ \"npm\" , \"start\" ]\n🔒 Security\nPassword Hashing - bcrypt with configurable rounds\nSession Management - Secure HTTP-only cookies\nRate Limiting - Per-endpoint limits\nCORS Protection - Configurable origins\nHelmet Headers - Security headers enabled\nEncrypted Vault - AES-256-GCM for API keys\nAudit Logging - All sensitive operations logged\nRBAC - Owner, Admin, Member, Viewer roles\n2FA Support - TOTP-based authentication\n💰 Business Models\nThis platform supports multiple business models:\nSaaS - Multi-tenant with subscription billing\nWhite-Label - Rebrand and resell\nEnterprise License - On-premise deployment\nMarketplace - Sell as a product\nConsulting - Customize for clients\n🤝 Contributing\nContributions welcome! Please read our contributing guidelines.\n📄 License\nMIT License - Free to use, modify, and sell.\nBuilt with: React 19, Express, TypeScript, PostgreSQL, Drizzle ORM, TailwindCSS, Radix UI\nVersion: 2.0.0 | Last Updated: January 2026\nAbout\nFull-stack AI orchestration platform with autonomous AI control, self-improvement developer mode, and multi-provider support\nTopics\nportfolio-managed\ntier-public-sellable\nsurface-sellable\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n95.8%\nPython\n3.3%\nCSS\n0.4%\nJavaScript\n0.3%\nHTML\n0.2%\nBatchfile\n0.0%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 88\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Full-stack AI orchestration platform with autonomous AI control, self-improvement developer mode, and multi-provider support ... A powerful, universally adaptable full-stack AI orchestration platform that coordinates multiple AI providers, manages integrations, and builds automated workflows. Featur... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] This repository was archived by the owner on Apr 7, 2026.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] It is now read-only.\n4. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] issdandavis Kiro_Version_ai-workflow-architect Public archive Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 230 Commits 230 Commits .\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] vscode attached_assets attached_assets client client data data docs docs script script scripts/ ai-agents scripts/ ai-agents server server shared shared src src tests tests .\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] npmrc AI_COLLABORATOR_NOTES.\n"
+}

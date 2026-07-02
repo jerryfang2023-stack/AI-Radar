@@ -1,0 +1,22 @@
+{
+  "ok": false,
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T02:44:07.950Z",
+  "mode": "workflow_run",
+  "source_workflow": "WaveSight Business Signals PR",
+  "source_conclusion": "failure",
+  "source_run_id": "28559645419",
+  "lanes": [
+    "business_signals"
+  ],
+  "results": [
+    {
+      "lane": "business_signals",
+      "ok": false,
+      "action": "inbox_required",
+      "reason": "same-date healthy output is not visible after 2 failed attempt(s); record inbox and wait for targeted repair",
+      "failedAttempts": 2,
+      "maxAttempts": 4
+    }
+  ]
+}

@@ -48,6 +48,7 @@ const date = args.get("date") || shanghaiDate(args.get("source-created-at") || n
 const defaultMaxAttempts = Number.parseInt(args.get("max-attempts") || "0", 10);
 const requestedLanes = resolveRequestedLanes();
 const dryRun = args.get("dry-run") === "true";
+const inboxDir = path.join(root, "agent-workflow", "inbox", "hermes-to-codex");
 
 function shanghaiDate(value = new Date()) {
   const dateValue = value instanceof Date ? value : new Date(value);
@@ -147,12 +148,6 @@ function communityPublishReady(targetDate) {
   };
 }
 
-function dispatchWorkflow(config, targetDate) {
-  const commandArgs = ["workflow", "run", config.workflow, ...config.dispatchArgs(targetDate)];
-  if (dryRun) return `dry-run: gh ${commandArgs.join(" ")}`;
-  return run("gh", commandArgs);
-}
-
 function inspectLane(lane) {
   const config = WORKFLOWS[lane];
   if (!config) {
@@ -196,17 +191,28 @@ function inspectLane(lane) {
       lane,
       ok: false,
       action: "manual_required",
-      reason: `failed attempts ${failedAttempts} reached max ${maxAttempts}; not dispatching another loop`,
+      reason: `failed attempts ${failedAttempts} reached max ${maxAttempts}; daily problem watchdog will not dispatch recovery`,
+      failedAttempts,
+      maxAttempts,
     };
   }
 
-  const output = dispatchWorkflow(config, date);
+  if (failedAttempts > 0 || mode === "workflow_run") {
+    return {
+      lane,
+      ok: false,
+      action: "inbox_required",
+      reason: `same-date healthy output is not visible after ${failedAttempts} failed attempt(s); record inbox and wait for targeted repair`,
+      failedAttempts,
+      maxAttempts,
+    };
+  }
+
   return {
     lane,
     ok: true,
-    action: dryRun ? "dry_run_dispatch" : "dispatched",
-    reason: `dispatched ${config.workflow} for ${date}`,
-    output,
+    action: "observed",
+    reason: "no failed same-date run found; no recovery dispatch is allowed from this watchdog",
     failedAttempts,
     maxAttempts,
   };
@@ -220,7 +226,7 @@ function writeReports(payload) {
     `| ${item.lane} | ${item.action} | ${item.ok ? "yes" : "no"} | ${item.reason || ""} |`
   ));
   const md = [
-    `# WaveSight Daily Recovery Watchdog - ${date}`,
+    `# WaveSight Daily Problem Watchdog - ${date}`,
     "",
     `- generated_at: ${payload.generated_at}`,
     `- mode: ${payload.mode}`,
@@ -235,6 +241,60 @@ function writeReports(payload) {
   fs.writeFileSync(jsonFile, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   fs.writeFileSync(mdFile, `${md}\n`, "utf8");
   return { jsonFile, mdFile };
+}
+
+function priorityForLane(lane) {
+  return lane === "business_signals" ? "urgent" : "high";
+}
+
+function writeInbox(payload, reportPath) {
+  fs.mkdirSync(inboxDir, { recursive: true });
+  const created = [];
+  const problemResults = payload.results.filter((item) => !item.ok || ["manual_required", "inbox_required"].includes(item.action));
+
+  for (const item of problemResults) {
+    const file = path.join(inboxDir, `${date}-${item.lane}-daily-problem-watchdog.md`);
+    const laneConfig = WORKFLOWS[item.lane] || {};
+    const md = [
+      `status: open`,
+      `priority: ${priorityForLane(item.lane)}`,
+      `lane: ${item.lane}`,
+      `failed_gate: daily_problem_watchdog`,
+      `report_path: ${rel(reportPath)}`,
+      `data_generated: unknown`,
+      `needed_action: inspect failed production report and repair the smallest responsible stage; do not dispatch a full rerun from Hermes`,
+      `created_at: ${payload.generated_at}`,
+      `source: daily_problem_watchdog`,
+      `source_workflow: ${payload.source_workflow || laneConfig.workflowName || "unknown"}`,
+      `source_run_id: ${payload.source_run_id || "unknown"}`,
+      `source_conclusion: ${payload.source_conclusion || "unknown"}`,
+      "",
+      `# ${laneConfig.label || item.lane} Daily Problem Watchdog (${date})`,
+      "",
+      "## Evidence",
+      "",
+      `- action: ${item.action}`,
+      `- reason: ${item.reason || "unknown"}`,
+      `- failed_attempts: ${item.failedAttempts ?? "unknown"}`,
+      `- max_attempts_reference: ${item.maxAttempts ?? "unknown"}`,
+      `- source_workflow: ${payload.source_workflow || laneConfig.workflowName || "unknown"}`,
+      `- source_run_id: ${payload.source_run_id || "unknown"}`,
+      `- source_conclusion: ${payload.source_conclusion || "unknown"}`,
+      "",
+      "## Expected Codex Action",
+      "",
+      "1. Read the report_path and the failed production workflow artifact first.",
+      "2. Classify the earliest responsible stage before running anything.",
+      "3. Repair the smallest script, gate, rule, or data build path that caused the incident.",
+      "4. Rerun only the exact failed gate or the smallest relevant validation.",
+      "5. Close with `npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>`.",
+      "",
+    ].join("\n");
+    fs.writeFileSync(file, `${md}\n`, "utf8");
+    created.push(rel(file));
+  }
+
+  return created;
 }
 
 function main() {
@@ -252,16 +312,18 @@ function main() {
     results,
   };
   const reports = writeReports(payload);
+  const inboxFiles = writeInbox(payload, reports.mdFile);
   console.log(JSON.stringify({
-    ok: payload.ok,
+    ok: true,
+    problem_count: inboxFiles.length,
     date,
     reports: {
       json: rel(reports.jsonFile),
       markdown: rel(reports.mdFile),
     },
+    inbox: inboxFiles,
     results,
   }, null, 2));
-  if (!payload.ok) process.exit(1);
 }
 
 main();

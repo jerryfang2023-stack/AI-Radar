@@ -1,0 +1,294 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-002
+title: "Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元"
+original_url: "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off"
+canonical_url: "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off"
+source_name: "TechCrunch：AI（RSS）"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-01T14:25:23.000Z"
+collected_at: 2026-07-02T02:28:35.129Z
+language: mixed
+full_text_hash: ed55880406f0c2ab
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-002-venice-ai-完成-6500-万美元-a-轮融资-估值-10-亿美元.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-002-venice-ai-完成-6500-万美元-a-轮融资-估值-10-亿美元.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6506,"paragraph_count":34,"sentence_count":38,"boilerplate_hits":0,"symbol_ratio":0.0003,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 6506
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ed55880406f0c2ab","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元","discovery_summary":"Venice AI 获得由 Dragonfly 领投、Coinbase Ventures 等参投的 6500 万美元 A 轮融资，估值 10 亿美元。该平台提供 200 余个 AI 模型，注重隐私：用户输入加密且不存储数据，部分模型支持端到端加密（需付费订阅）。目前拥有 85 万独立访问用户、300 万活跃用户，日均 170 万次 API 调用，年化收入超 7000 万美元，已实现盈利。公司发行了 VVV 和 DIEM 两种加密代币，约 8% 用户使用加密支付。融资将用于购买 GPU 并自建数据中心。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off","discovered_at":"2026-07-02T02:12:32.526Z","rank_on_page":178,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 41cdbf30cbfd4eed
+content_hash: ed55880406f0c2ab
+semantic_hash: 5eac25573b7011d7
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-01T14:25:23.000Z"
+last_seen_at: 2026-07-02T02:28:35.129Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["TechCrunch","AI（RSS）","OpenAI","Anthropic"],"products":["ChatGPT"],"people":[],"industries":["金融 / 保险","医疗","开发者工具"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["6500 万","10 亿","200","85 万","300 万","170 万","7000 万","8%"],"quotes":["uncensored,","I don’t think people should have their identity recorded to catch an occasional criminal.","neutral tool or a neutral platform.","This is the same principle that you have in Bitcoin, where Bitcoin, as a neutral protocol, works the same way for all people,","characters"]}
+evidence_seed: {"company_actions":["Venice AI 获得由 Dragonfly 领投、Coinbase Ventures 等参投的 6500 万美元 A 轮融资，估值 10 亿美元。该平台提供 200 余个 AI 模型，注重隐私：用户输入加密且不存储数据，部分模型支持端到端加密（需付费订阅）。目前拥有 85 万独立访问用户、300 万活跃用户，日均 170 万次 API 调用，年化收入超 7000 万美元，已实现盈利。公司发行了 VVV 和 DIEM 两种加密代币，约 8% 用户使用加密支付。融资将用于购买 GPU 并自建数据中心。","Image Credits: Venice AI AI Venice AI becomes a unicorn with $65M Series A as its privacy-first AI platform takes off Ram Iyer 7:25 AM PDT · July 1, 2026 Concerns over the impact of AI chatbots on mental health , personal safety , harassment , and disinformation have forced AI developers to implement safeguards to better control how and what their AI models are allowed to respond or do.","But concerns and worries can’t erode demand."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":["And if they can preserve their privacy while they use AI models however they want, why not?","Venice AI , which offers access to more than 200 AI models while allowing users to retain their privacy, is raking it in thanks to that demand."]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"funding","text":"Venice AI 获得由 Dragonfly 领投、Coinbase Ventures 等参投的 6500 万美元 A 轮融资，估值 10 亿美元。该平台提供 200 余个 AI 模型，注重隐私：用户输入加密且不存储数据，部分模型支持端到端加密（需付费订阅）。目前拥有 85 万独立访问用户、300 万活跃用户，日均 170 万次 API 调用，年化收入超 7000 万美元，已实现盈利。公司发行了 VVV 和 DIEM 两种加密代币，约 8% 用户使用加密支付。融资将用于购买 GPU 并自建数据中心。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Image Credits: Venice AI AI Venice AI becomes a unicorn with $65M Series A as its privacy-first AI platform takes off Ram Iyer 7:25 AM PDT · July 1, 2026 Concerns over the impact of AI chatbots on mental health , personal safety , harassment , and disinformation have forced AI developers to implement safeguards to better control how and what their AI models are allowed to respond or do.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But concerns and worries can’t erode demand.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI offers a lot of promise, and people don’t want a faceless tech company to restrict their access to that potential.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"And if they can preserve their privacy while they use AI models however they want, why not?","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Venice AI , which offers access to more than 200 AI models while allowing users to retain their privacy, is raking it in thanks to that demand.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"}]
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元
+
+## clean_text
+
+Image Credits: Venice AI
+AI
+Venice AI becomes a unicorn with $65M Series A as its privacy-first AI platform takes off
+Ram Iyer
+7:25 AM PDT · July 1, 2026
+Concerns over the impact of AI chatbots on mental health , personal safety , harassment , and disinformation have forced AI developers to implement safeguards to better control how and what their AI models are allowed to respond or do.
+But concerns and worries can’t erode demand. AI offers a lot of promise, and people don’t want a faceless tech company to restrict their access to that potential. And if they can preserve their privacy while they use AI models however they want, why not?
+Venice AI , which offers access to more than 200 AI models while allowing users to retain their privacy, is raking it in thanks to that demand. Just two years in, the company already has more than 850,000 unique visitors to its website, and serves more than 3 million active users and an average of 1.7 million API calls per day.
+The startup hosts “uncensored,” open source models on its own data centers, and routes queries to closed-source models, such as those by OpenAI or Anthropic. All user input is encrypted and unencrypted client-side, and routed through an external proxy before it is processed and returned, with no data stored on Venice’s own systems. It also provides end-to-end encryption on some models, though you have to pay for a subscription to get that feature.
+The company is already profitable, with annualized run-rate revenues of over $70 million, its CEO Erik Voorhees (pictured above, in the center) told TechCrunch during an exclusive interview.
+Understandably, investors have flocked to get a piece of that traction. Venice AI on Wednesday said it had raised a $65 million Series A at a $1 billion valuation, its first external fundraise. The round was led by crypto-focused venture firm Dragonfly, with participation from Coinbase Ventures, North Island Ventures, and others.
+The overlap between Voorhees, Venice’s focus on privacy, and its new crypto investors is hard to miss, especially given the CEO’s background and past work. An early bitcoin advocate, Voorhees has founded a few crypto companies, including bitcoin gambling site Satoshi Dice and cryptocurrency exchange ShapeShift , and has long advocated in favor of preserving users’ privacy.
+In fact, when a Wall Street Journal investigation accused ShapeShift , which initially didn’t require its users to identify themselves, of processing millions of suspect funds, Voorhees reportedly said: “I don’t think people should have their identity recorded to catch an occasional criminal.”
+He struck a similar note when asked how Venice AI thinks about offering access to AI models in light of recent cases of AI psychosis and resulting harm, saying his team treats their service as a “neutral tool or a neutral platform.”
+“This is the same principle that you have in Bitcoin, where Bitcoin, as a neutral protocol, works the same way for all people,” he said. “I think it’s actually quite dangerous from a safety perspective, for the world to enter this next phase and have everyone be constantly watched. To me that is actually much more dangerous than any particular person asking a controversial question or something that might be considered bad.”
+There’s a considerable focus on giving users agency, too. Users can freely choose from AI models that can generate text, images, audio, and video — all of which vary in their performance, quality, and the amount of censorship applied. The website prominently features several AI “characters” that you can customize and chat with, and the company proudly states it offers an “uncensored” experience.
+“We’re optimizing for freedom and actually respecting users as adults, which is, I think, rare these days,” Voorhees said.
+The founder said Venice also works on some open models’ system prompts to instruct them to answer more openly, though it doesn’t add any restrictions to the models.
+Unsurprisingly, there are two crypto tokens associated with the effort. Venice launched a token called “VVV” in early January, in a bid to attract users, Voorhees said, and in August last year added another, called “DIEM.” Users can buy VVV and then stake it to mint DIEM, which generates $1 worth of AI credits per day that you can spend on Venice. However, Voorhees said only about 8% of the company’s users pay with crypto.
+The founder credited the company’s growth to the good performance of the crypto tokens, though he said the strongest driver was getting close to feature parity with ChatGPT. “When we launched, we were very far away from what ChatGPT could do, but people would use us because it was private. And today, we’re very close to what ChatGPT can do […] so as we’ve closed that gap, it’s become an increasingly compelling alternative,” he said.
+Looking forward, Venice AI wants to use the fresh cash to start buying GPUs and building its own data centers so it can stop leasing GPUs and increase its gross margins.
+Topics
+AI , ai censorship , Crypto , Dragonfly , erik voorhees , Exclusive , Fundraising , generative ai privacy concerns , Venice AI
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Ram Iyer
+Editor
+Ram is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.
+You can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Flipper Device’s new Busy Bar is a customizable display for productivity
+Ivan Mehta
+Ford rehires ‘gray beard’ engineers after AI falls short
+Anthony Ha
+Govee’s smart nugget ice maker makes every iced drink feel like a luxury
+Aisha Malik
+Instagram is testing more ways to customize ‘Your Algorithm’
+Anthony Ha
+Asian AI startups launch Mythos-like models as Anthropic’s export ban drags on
+Kate Park
+FTC gives Musk the OK to acquire SpaceX alumni startup Mesh
+Marina Temkin
+Corgi, the buzzy Y Combinator-backed insurance tech startup, says it didn’t steal an open source product
+Julie Bort
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Venice AI
+AI
+Venice AI becomes a unicorn with $65M Series A as its privacy-first AI platform takes off
+Ram Iyer
+7:25 AM PDT · July 1, 2026
+Concerns over the impact of AI chatbots on mental health , personal safety , harassment , and disinformation have forced AI developers to implement safeguards to better control how and what their AI models are allowed to respond or do.
+But concerns and worries can’t erode demand. AI offers a lot of promise, and people don’t want a faceless tech company to restrict their access to that potential. And if they can preserve their privacy while they use AI models however they want, why not?
+Venice AI , which offers access to more than 200 AI models while allowing users to retain their privacy, is raking it in thanks to that demand. Just two years in, the company already has more than 850,000 unique visitors to its website, and serves more than 3 million active users and an average of 1.7 million API calls per day.
+The startup hosts “uncensored,” open source models on its own data centers, and routes queries to closed-source models, such as those by OpenAI or Anthropic. All user input is encrypted and unencrypted client-side, and routed through an external proxy before it is processed and returned, with no data stored on Venice’s own systems. It also provides end-to-end encryption on some models, though you have to pay for a subscription to get that feature.
+The company is already profitable, with annualized run-rate revenues of over $70 million, its CEO Erik Voorhees (pictured above, in the center) told TechCrunch during an exclusive interview.
+Understandably, investors have flocked to get a piece of that traction. Venice AI on Wednesday said it had raised a $65 million Series A at a $1 billion valuation, its first external fundraise. The round was led by crypto-focused venture firm Dragonfly, with participation from Coinbase Ventures, North Island Ventures, and others.
+The overlap between Voorhees, Venice’s focus on privacy, and its new crypto investors is hard to miss, especially given the CEO’s background and past work. An early bitcoin advocate, Voorhees has founded a few crypto companies, including bitcoin gambling site Satoshi Dice and cryptocurrency exchange ShapeShift , and has long advocated in favor of preserving users’ privacy.
+In fact, when a Wall Street Journal investigation accused ShapeShift , which initially didn’t require its users to identify themselves, of processing millions of suspect funds, Voorhees reportedly said: “I don’t think people should have their identity recorded to catch an occasional criminal.”
+He struck a similar note when asked how Venice AI thinks about offering access to AI models in light of recent cases of AI psychosis and resulting harm, saying his team treats their service as a “neutral tool or a neutral platform.”
+“This is the same principle that you have in Bitcoin, where Bitcoin, as a neutral protocol, works the same way for all people,” he said. “I think it’s actually quite dangerous from a safety perspective, for the world to enter this next phase and have everyone be constantly watched. To me that is actually much more dangerous than any particular person asking a controversial question or something that might be considered bad.”
+There’s a considerable focus on giving users agency, too. Users can freely choose from AI models that can generate text, images, audio, and video — all of which vary in their performance, quality, and the amount of censorship applied. The website prominently features several AI “characters” that you can customize and chat with, and the company proudly states it offers an “uncensored” experience.
+“We’re optimizing for freedom and actually respecting users as adults, which is, I think, rare these days,” Voorhees said.
+The founder said Venice also works on some open models’ system prompts to instruct them to answer more openly, though it doesn’t add any restrictions to the models.
+Unsurprisingly, there are two crypto tokens associated with the effort. Venice launched a token called “VVV” in early January, in a bid to attract users, Voorhees said, and in August last year added another, called “DIEM.” Users can buy VVV and then stake it to mint DIEM, which generates $1 worth of AI credits per day that you can spend on Venice. However, Voorhees said only about 8% of the company’s users pay with crypto.
+The founder credited the company’s growth to the good performance of the crypto tokens, though he said the strongest driver was getting close to feature parity with ChatGPT. “When we launched, we were very far away from what ChatGPT could do, but people would use us because it was private. And today, we’re very close to what ChatGPT can do […] so as we’ve closed that gap, it’s become an increasingly compelling alternative,” he said.
+Looking forward, Venice AI wants to use the fresh cash to start buying GPUs and building its own data centers so it can stop leasing GPUs and increase its gross margins.
+Topics
+AI , ai censorship , Crypto , Dragonfly , erik voorhees , Exclusive , Fundraising , generative ai privacy concerns , Venice AI
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Ram Iyer
+Editor
+Ram is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.
+You can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Flipper Device’s new Busy Bar is a customizable display for productivity
+Ivan Mehta
+Ford rehires ‘gray beard’ engineers after AI falls short
+Anthony Ha
+Govee’s smart nugget ice maker makes every iced drink feel like a luxury
+Aisha Malik
+Instagram is testing more ways to customize ‘Your Algorithm’
+Anthony Ha
+Asian AI startups launch Mythos-like models as Anthropic’s export ban drags on
+Kate Park
+FTC gives Musk the OK to acquire SpaceX alumni startup Mesh
+Marina Temkin
+Corgi, the buzzy Y Combinator-backed insurance tech startup, says it didn’t steal an open source product
+Julie Bort
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6506,"paragraph_count":34,"sentence_count":38,"boilerplate_hits":0,"symbol_ratio":0.0003,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Venice AI 获得由 Dragonfly 领投、Coinbase Ventures 等参投的 6500 万美元 A 轮融资，估值 10 亿美元。该平台提供 200 余个 AI 模型，注重隐私：用户输入加密且不存储数据，部分模型支持端到端加密（需付费订阅）。目前拥有 85 万独立访问用户、300 万活跃用户，日均 170 万次 API 调用，年化收入超 7000 万美元，已实现盈利。公司发行了 VVV 和 DIEM 两种加密代币，约 8% 用户使用加密支付。融资将用于购买 GPU 并自建数据中心。
+
+2. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Image Credits: Venice AI AI Venice AI becomes a unicorn with $65M Series A as its privacy-first AI platform takes off Ram Iyer 7:25 AM PDT · July 1, 2026 Concerns over the impact of AI chatbots on mental health , personal safety , harassment , and disinformation have forced AI developers to implement safeguards to better control how and what their AI models are allowed to respond or do.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   But concerns and worries can’t erode demand.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   AI offers a lot of promise, and people don’t want a faceless tech company to restrict their access to that potential.
+
+5. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=high
+   And if they can preserve their privacy while they use AI models however they want, why not?
+
+6. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=high
+   Venice AI , which offers access to more than 200 AI models while allowing users to retain their privacy, is raking it in thanks to that demand.
+
+## business_elements
+
+- companies: TechCrunch, AI（RSS）, OpenAI, Anthropic
+- products: ChatGPT
+- people: 暂无公开信息
+- industries: 金融 / 保险, 医疗, 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: 6500 万, 10 亿, 200, 85 万, 300 万, 170 万, 7000 万, 8%
+- quotes: uncensored, / I don’t think people should have their identity recorded to catch an occasional criminal. / neutral tool or a neutral platform. / This is the same principle that you have in Bitcoin, where Bitcoin, as a neutral protocol, works the same way for all people, / characters
+
+## evidence_seed
+
+- company_actions: Venice AI 获得由 Dragonfly 领投、Coinbase Ventures 等参投的 6500 万美元 A 轮融资，估值 10 亿美元。该平台提供 200 余个 AI 模型，注重隐私：用户输入加密且不存储数据，部分模型支持端到端加密（需付费订阅）。目前拥有 85 万独立访问用户、300 万活跃用户，日均 170 万次 API 调用，年化收入超 7000 万美元，已实现盈利。公司发行了 VVV 和 DIEM 两种加密代币，约 8% 用户使用加密支付。融资将用于购买 GPU 并自建数据中心。 / Image Credits: Venice AI AI Venice AI becomes a unicorn with $65M Series A as its privacy-first AI platform takes off Ram Iyer 7:25 AM PDT · July 1, 2026 Concerns over the impact of AI chatbots on mental health , personal safety , harassment , and disinformation have forced AI developers to implement safeguards to better control how and what their AI models are allowed to respond or do. / But concerns and worries can’t erode demand.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: And if they can preserve their privacy while they use AI models however they want, why not? / Venice AI , which offers access to more than 200 AI models while allowing users to retain their privacy, is raking it in thanks to that demand.
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元","discovery_summary":"Venice AI 获得由 Dragonfly 领投、Coinbase Ventures 等参投的 6500 万美元 A 轮融资，估值 10 亿美元。该平台提供 200 余个 AI 模型，注重隐私：用户输入加密且不存储数据，部分模型支持端到端加密（需付费订阅）。目前拥有 85 万独立访问用户、300 万活跃用户，日均 170 万次 API 调用，年化收入超 7000 万美元，已实现盈利。公司发行了 VVV 和 DIEM 两种加密代币，约 8% 用户使用加密支付。融资将用于购买 GPU 并自建数据中心。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off","discovered_at":"2026-07-02T02:12:32.526Z","rank_on_page":178,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Venice AI 获得由 Dragonfly 领投、Coinbase Ventures 等参投的 6500 万美元 A 轮融资，估值 10 亿美元。该平台提供 200 余个 AI 模型，注重隐私：用户输入加密且不存储数据，部分模型支持端到端加密（需付费订阅）。目前拥有 85 万独立访问用户、300 万活跃用户，日均 170 万次 API 调用，年化收入超 7000 万美元，已实现盈利。公司发行了 VVV 和 DIEM 两种加密代币，约 8% 用户使用加密支付。融资将用于购买 GPU 并自建数据中心。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

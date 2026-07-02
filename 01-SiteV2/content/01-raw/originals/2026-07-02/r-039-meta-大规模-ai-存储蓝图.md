@@ -1,0 +1,368 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-039
+title: "Meta 大规模 AI 存储蓝图"
+original_url: "https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale"
+canonical_url: "https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale"
+source_name: "Meta Engineering Blog（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-01T16:00:36.000Z"
+collected_at: 2026-07-02T02:28:35.332Z
+language: mixed
+full_text_hash: 1202419fe2631aff
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-039-meta-大规模-ai-存储蓝图.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-039-meta-大规模-ai-存储蓝图.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":16289,"paragraph_count":75,"sentence_count":121,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 16289
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1202419fe2631aff","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Meta 大规模 AI 存储蓝图","discovery_summary":"Meta 运营数百 EB 级存储集群，基于 Tectonic 分层存储层构建 BLOB 存储架构，以应对两大挑战：最大化 GPU 利用率与研究迭代速度。传统 BLOB 架构的多层元数据查询可导致数百毫秒延迟，使 GPU 因 I/O 等待停顿。新架构将训练栈逐步迁移到 BLOB 存储接口上，利用闪存提供可预测的低 pMax 延迟，避免单 GPU 慢速拖慢整批任务。同时，统一的数据湖访问支持地理分布 GPU 间的数据高速注入与跨区移动，提升研究效率。","source_name":"Meta Engineering Blog（RSS）","origin_url":"https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale","discovered_at":"2026-07-02T02:12:32.518Z","rank_on_page":146,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 61bfc3a6b2fbcb6d
+content_hash: 1202419fe2631aff
+semantic_hash: cedb1dca271dfb44
+duplicate_of: ""
+first_seen_at: "2026-07-01T16:00:36.000Z"
+last_seen_at: 2026-07-02T02:28:35.332Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["Meta Engineering Blog（RSS）","Meta"],"products":[],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["1","2","3","80%","2 m","50","99","20%"],"quotes":["Training Llama: A Storage Perspective,","data hungry","/bucket/path","/bucket/path","/bucket/path"]}
+evidence_seed: {"company_actions":["Meta 运营数百 EB 级存储集群，基于 Tectonic 分层存储层构建 BLOB 存储架构，以应对两大挑战：最大化 GPU 利用率与研究迭代速度。传统 BLOB 架构的多层元数据查询可导致数百毫秒延迟，使 GPU 因 I/O 等待停顿。新架构将训练栈逐步迁移到 BLOB 存储接口上，利用闪存提供可预测的低 pMax 延迟，避免单 GPU 慢速拖慢整批任务。同时，统一的数据湖访问支持地理分布 GPU 间的数据高速注入与跨区移动，提升研究效率。","By Sidharth Bajaj , Venkatraghavan Srinivasan Over the past several years, model capabilities and training dataset sizes have experienced exponential growth.","During the past year or so, the time between new-frontier-model releases has gone down from months to weeks."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Meta 运营数百 EB 级存储集群，基于 Tectonic 分层存储层构建 BLOB 存储架构，以应对两大挑战：最大化 GPU 利用率与研究迭代速度。传统 BLOB 架构的多层元数据查询可导致数百毫秒延迟，使 GPU 因 I/O 等待停顿。新架构将训练栈逐步迁移到 BLOB 存储接口上，利用闪存提供可预测的低 pMax 延迟，避免单 GPU 慢速拖慢整批任务。同时，统一的数据湖访问支持地理分布 GPU 间的数据高速注入与跨区移动，提升研究效率。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"By Sidharth Bajaj , Venkatraghavan Srinivasan Over the past several years, model capabilities and training dataset sizes have experienced exponential growth.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"During the past year or so, the time between new-frontier-model releases has gone down from months to weeks.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reliable and fast access to storage is important to both the speed and computational cost of this AI innovation.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"If AI is the brain, storage is the memory: Capability and speed are highly dependent on the size of memory and speed of retrieval.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Yet while AI compute performance has roughly tripled every two years, storage and interconnect performance growth have been more modest.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Meta 大规模 AI 存储蓝图
+
+## clean_text
+
+By Sidharth Bajaj , Venkatraghavan Srinivasan
+Over the past several years, model capabilities and training dataset sizes have experienced exponential growth. During the past year or so, the time between new-frontier-model releases has gone down from months to weeks. Reliable and fast access to storage is important to both the speed and computational cost of this AI innovation. If AI is the brain, storage is the memory: Capability and speed are highly dependent on the size of memory and speed of retrieval.
+Yet while AI compute performance has roughly tripled every two years, storage and interconnect performance growth have been more modest. As a result, storage bottlenecks continue to be one of the primary contributors to GPU stalls for AI workloads, directly impacting expenditures and time to market. Aside from GPU utilization, storage architecture also directly impacts the speed of iteration in AI research; with GPUs increasingly becoming geo-distributed and dataset sizes increasingly becoming massive, researchers spend a significant amount of time ingesting and moving data across regions, thus impacting research velocity. In this blog post, we discuss how Meta’s BLOB-storage architecture evolved to address two primary challenges: maximizing GPU utilization and maximizing research velocity.
+Storage Architecture Overview
+Meta operates hundreds of exabyte-scale storage clusters that serve all of Meta’s external and internal products, including Facebook, Instagram, Reality Labs, Meta AI, Ads, Data Warehouse, and internal Databases. Our storage service exposes object storage, file systems, and block-device APIs, and these API abstractions are built on top of a horizontally scalable foundational block layer called Tectonic. The Tectonic layer is a regional, multi-tenant storage fabric that provides high durability and availability leveraging erasure-coding techniques, supports tiering across media types (e.g., HDD and flash), and manages smart placement of hot, cold, and warm data for efficient utilization of I/O across tenants. The BLOB-storage layers that operate on top of Tectonic expose a global, infinitely scalable storage fabric, and expose policies that let users make tradeoffs between durability and availability.
+In a previous @Scale talk titled, “Training Llama: A Storage Perspective,” we discussed how Meta trained Llama directly over the Tectonic block layer by exposing an NFS-like FileSystem interface on top of it. While this architecture continues to be used widely within Meta, our modern training stack has been migrating slowly on top of the BLOB-storage interface, as is the case across the industry. This transition is motivated by the need for unified storage access to massive data lakes in the BLOB-storage layer as well as the need for high performance.
+Maximizing GPU Utilization
+Modern AI workloads are “data hungry” and have very different workload characteristics than traditional web applications: bursty and sustained high throughput, predictable and bounded pMax latencies, and variable I/O patterns. The focus for BLOB storage, in recent years, has largely shifted to maximizing GPU utilization.
+Why Latency Matters
+To see why bounded and low-pMax latencies are important, let’s consider model training. During that training, hundreds of thousands of GPUs iterate over vast amounts of data in storage multiple times (i.e., over multiple epochs), and the GPUs train datasets in batches. Periodically, after every certain number of steps or batches, the GPUs synchronize their state among themselves. If one GPU is slow, this step will slow down all GPUs as well as the entire training.
+Figure 1 shows a data-loading pipeline across two GPUs. The dataloader in every GPU host prefetches the next dataset batch, while the GPU is processing the current batch for maximum compute or I/O overlap. In the case of GPU1, the storage-fetch latency is well within bounds, so the GPU is never stalled waiting on I/O. In the case of GPU2, there are two instances where storage fetch exhibits high latency, stalling GPU. As a result of these stalls, the overall step-completion time is delayed.
+Figure 1: Dataloading across two GPUs.
+Legacy BLOB-Storage Architecture Wasn’t AI-Ready
+Over the years, BLOB storage evolved organically, adding layers on top of layers in a true service-oriented fashion. Many of these layers were stateful and maintained their own metadata stores. While these metadata-access latencies typically weren’t the bottleneck for the traditional use cases served by global HDDs, they were showstoppers for AI workloads with millisecond access to data in flash. Figure 2 shows the request flow for a typical getObject(“/bucket/path”) API. After the request arrives at the API server, the server does many metadata lookups across the namelayer, volumeslayer, and containerlayer before resolving the path to a set of (blockId, offset, size) tuples. Some of these lookups can cross regions, and it’s not uncommon for latencies to add up to hundreds of milliseconds; one slow response from any of the lookups was sufficient. After the lookups, the API server proxies the data from the Tectonic layer to the client.
+Figure 2: Old request flow for getObject API.
+While this architecture served conventional workloads well, the foundational assumptions that dictated design tradeoffs have since shifted. Some of these are:
+Performance and latency: As discussed, while latency needs for conventional workloads were modest, AI workloads demand predictable and bounded latencies all the way up to pMax.
+Reliability and durability: The legacy architecture was designed to be highly durable and available, even in the face of region outages; data and metadata were globally replicated by default. While AI workloads demand very high availability, the global-by-default design choice no longer holds.
+Cost efficiency: Legacy stack was built on top of HDDs and highly optimized for cost per byte. The IOPS demands for AI workloads necessitate flash, and in addition, the computational cost of storage becomes negligible relative to the computational cost of GPUs.
+Power efficiency: With GPUs, datacenters are increasingly power constrained rather than space constrained. Every kilowatt of power spent on storage is power not spent on GPUs. This is a new constraint with AI workloads.
+In short, the tradeoff space has shifted enough for us to rethink the entire architecture.
+Rebuilding the Foundation
+As we set out to build the new foundation, we made the following major design choices:
+Unified metadata schema: We rewrote the metadata subsystem and collapsed the metadata spread across different layers into one unified and flat schema backed by ZippyDB . This paves the way for O(1) lookup to resolve paths to storage addresses, which is a step-function improvement.
+No dataplane proxy: We eliminated the dataplane proxy and built a fat client SDK that is capable of streaming bytes directly from storage servers to the clients. This helps with power-efficiency goals and also helps achieve higher throughput/lower latency.
+Regional deployment: The BLOB-storage stack is now lean with flexibility to be deployed as a regional or global service. We now deploy a regional BLOB-storage stack colocated with GPUs in every AI region.
+Figure 3: New request flow for getObject API.
+Figure 3 shows the new request flow for getObject(“/bucket/path”) . When the SDK on the client receives this API call, it now issues a getReadPlan(“/bucket/path”) request to the API server. The API server does O(1) lookup per chunk to the new metadata store to map the path to (blockId, offset, size) tuples. It then returns the ReadPlanResult to the SDK. The SDK has Tectonic BlockClient embedded within it, and so is now able to stream data from these blocks directly from Tectonic. With these changes, we have rebuilt the foundations and met the goal of adding zero overhead on top of Tectonic. By eliminating the data proxy, we also stay within budget for the power footprint.
+Dealing With Spikes and Hot Spots
+During data and checkpoint loading, AI workloads are known to access data concurrently across hundreds of GPUs. Subsets of data such as model weights are often “hot,” and events such as GPU restarts trigger sharp traffic spikes. With the foundations now fixed, our next problem was dealing with those spikes and hot spots. Luckily, the BLOB-storage layer has had experience dealing with hot spots over the years, so we adapted existing solutions to AI workloads here. Specifically, we employed two approaches:
+Distributed data cache: We leveraged the spare memory on the GPU hosts as a distributed data cache for frequently and concurrently accessed data. To achieve this, we reused components from Meta’s Owl subsystem : We integrated the peers in the Owl subsystem directly into the BLOB-storage client SDK so that all data access goes through this data cache.
+Readplan metadata cache: Readplan refers to the mapping from path to storage address. We now cache the read-plan for frequently accessed BLOBs in a distributed-memory store similar to memcache.
+In practice we observe an average cache hit rate of 80% on the distributed data cache, and the read-plan cache provides 1-2 ms access to metadata. In essence, these simple mechanisms do three things:
+Absorb the spikes and reduce the I/O requirements from storage.
+Solve the problem of metadata hot shards.
+Improve p50 and p99 latencies by serving from memory.
+Protocol Optimizations
+What we’ve discussed so far got us 80% of the way. We achieved the remaining 20% by identifying and fixing bottlenecks across the stack. Below are some noteworthy problems, though not an exhaustive list by any means:
+Laggards: One slow storage node contributing to tail latencies. This is a well-understood problem, and we resorted to hedged reads on the client side to mitigate this.
+Egress spikes: During checkpoint events, it is common for the client to create sharp egress spikes. This in turn can cause congestion, timeouts, and retries, eventually stalling GPUs. We resolved this by building dynamic concurrency control on the client SDK to automatically tune parallelism based on application-level congestion signals.
+With all of the above, the new BLOB-storage stack is now capable of serving AI workloads without causing GPU stalls, adding negligible overhead on top of the Tectonic layer. Our next focus shifted to research.
+Maximizing Research Velocity
+GPUs are scarce and increasingly becoming geo-distributed; at the same time, training workloads need data colocated with GPUs for performance reasons. This creates an interesting challenge for researchers: They are now on the hook for ingesting and moving datasets across regions.
+At Meta, a typical training-job submission involves the following:
+A researcher curates data from various sources, enriches them and persists them in BLOB storage.
+The researcher picks a region where they want to run the job.
+The researcher submits a data-ingestion job, which creates a snapshot of the training datasets onto the target region in a file format optimized for data loading from within the GPU host.
+The researcher then waits for ingestion to finish; depending on the dataset size, that can take hours.
+The researcher submits their training job and monitors their run.
+The researcher analyzes outputs, tweaks datasets, and iterates again, starting with Step 3.
+Steps 2 through 4 can take hours and directly impact the speed of iteration for researchers. Ideally, we like our researchers’ time to be spent on tuning models, not waiting for storage. Currently, researchers copy snapshots before starting their jobs to colocate data with GPUs, which results in the most optimal performance. While this optimization for performance makes sense for large-scale training jobs that span weeks or months, the vast majority of jobs are much smaller; the researchers owning these jobs are more than willing to trade off occasional performance degradation for iteration speed.
+And so, we needed a system where researchers are able to ingest data once and access data anywhere without thinking about regional boundaries. We needed a workflow that allows researchers to iterate in minutes and not hours. As we went back to the drawing board, the write-once, read-many characteristic of these datasets rang a bell. What if we think of storage as a disk in a planet-scale computer and borrow ideas from the operating-system world? When a Linux process running on a CPU core attempts to read a file from disk, the operating system transparently hydrates data on demand across the various layers of the cache—page cache in memory and L2 and L1 CPU caches. This intuition led to the architectural evolution in Figure 4:
+Figure 4: Dataloading architecture evolution.
+The core idea is to leverage the various on-host and off-host storage resources as a tiered cache with global BLOB-storage fabric backed by HDDs as the ultimate source of truth. Specifically, we leverage the memory and flash on the GPU host as L1 and L2 caches. And we leverage the regional BLOB-storage fabric backed by flash as the L3 cache dataloader continues to access storage through the familiar BLOB-storage SDK. To effectively hide latencies and to simplify the data life cycle, we rely on the following:
+Dataloader prefetch: Dataloaders prefetch the next batch of datasets into memory while processing the current batch. This prefetch will surface as a read operation at the BLOB-storage SDK level.
+Deep prefetch: We expose an explicit prefetch() API as part of the BLOB-storage SDK. The dataloader will trigger explicit prefetch of the data needed during the next few minutes by invoking the prefetch() API in the background. This API triggers hydration of data from remote storage onto the local region L3 cache and also prewarms the metadata cache.
+Automatic data life cycle: Data in the L3 regional disaggregated flash tier is typically held for a configured period of time to allow reuse across epochs in a training cycle. We support custom eviction policies, including TTL and LRU policies. The eviction policies are also capacity/quota aware.
+We saw rapid adoption of this new data-loading paradigm as soon as production rollout started, and we continue to support both of the data-loading paradigms in production today. To illustrate the impact in numbers, Figure 5 shows roughly the ingestion times before and after the rollout across all workloads:
+Figure 5: Ingestion times before and after the rollout.
+In a world where new frontier models get released in weeks, this shift in the data-loading paradigm is a much-needed change to move even faster.
+Key Takeaways
+Modern AI workloads are data hungry, and storage plays an important role in both the computational cost and speed of innovation. Storage bottlenecks directly impact GPU utilization and computational cost, and in a world with geo-distributed GPUs, time spent on cross-region data ingestion directly impacts the speed of iteration in research. The BLOB-storage architecture at Meta was built to serve Meta’s family of apps, and we needed a step-function improvement in performance to serve AI workloads. This led to rethinking the entire architecture. By rebuilding the metadata subsystem and by adopting a tiered caching architecture with prefetching/on-demand hydration, we are able to meet the needs of today’s workloads effectively.
+Future Work
+We are continuously evolving storage at Meta to keep up with hardware evolution and workload demands. Some future work in this area will include:
+Scaling storage to network limits.
+Supporting checkpointing without stalling GPUs at even higher scale.
+New challenges for inference workloads, which we are starting to tackle.
+Share this:
+Share on Facebook (Opens in new window)
+Facebook
+Share on Threads (Opens in new window)
+Threads
+Share on WhatsApp (Opens in new window)
+WhatsApp
+Share on LinkedIn (Opens in new window)
+LinkedIn
+Share on Reddit (Opens in new window)
+Reddit
+Share on X (Opens in new window)
+Share on Bluesky (Opens in new window)
+Bluesky
+Share on Mastodon (Opens in new window)
+Mastodon
+Share on Hacker News (Opens in new window)
+Hacker News
+Email a link to a friend (Opens in new window)
+Email
+Read More in Data Center Engineering
+View All
+
+## full_text
+
+By Sidharth Bajaj , Venkatraghavan Srinivasan
+Over the past several years, model capabilities and training dataset sizes have experienced exponential growth. During the past year or so, the time between new-frontier-model releases has gone down from months to weeks. Reliable and fast access to storage is important to both the speed and computational cost of this AI innovation. If AI is the brain, storage is the memory: Capability and speed are highly dependent on the size of memory and speed of retrieval.
+Yet while AI compute performance has roughly tripled every two years, storage and interconnect performance growth have been more modest. As a result, storage bottlenecks continue to be one of the primary contributors to GPU stalls for AI workloads, directly impacting expenditures and time to market. Aside from GPU utilization, storage architecture also directly impacts the speed of iteration in AI research; with GPUs increasingly becoming geo-distributed and dataset sizes increasingly becoming massive, researchers spend a significant amount of time ingesting and moving data across regions, thus impacting research velocity. In this blog post, we discuss how Meta’s BLOB-storage architecture evolved to address two primary challenges: maximizing GPU utilization and maximizing research velocity.
+Storage Architecture Overview
+Meta operates hundreds of exabyte-scale storage clusters that serve all of Meta’s external and internal products, including Facebook, Instagram, Reality Labs, Meta AI, Ads, Data Warehouse, and internal Databases. Our storage service exposes object storage, file systems, and block-device APIs, and these API abstractions are built on top of a horizontally scalable foundational block layer called Tectonic. The Tectonic layer is a regional, multi-tenant storage fabric that provides high durability and availability leveraging erasure-coding techniques, supports tiering across media types (e.g., HDD and flash), and manages smart placement of hot, cold, and warm data for efficient utilization of I/O across tenants. The BLOB-storage layers that operate on top of Tectonic expose a global, infinitely scalable storage fabric, and expose policies that let users make tradeoffs between durability and availability.
+In a previous @Scale talk titled, “Training Llama: A Storage Perspective,” we discussed how Meta trained Llama directly over the Tectonic block layer by exposing an NFS-like FileSystem interface on top of it. While this architecture continues to be used widely within Meta, our modern training stack has been migrating slowly on top of the BLOB-storage interface, as is the case across the industry. This transition is motivated by the need for unified storage access to massive data lakes in the BLOB-storage layer as well as the need for high performance.
+Maximizing GPU Utilization
+Modern AI workloads are “data hungry” and have very different workload characteristics than traditional web applications: bursty and sustained high throughput, predictable and bounded pMax latencies, and variable I/O patterns. The focus for BLOB storage, in recent years, has largely shifted to maximizing GPU utilization.
+Why Latency Matters
+To see why bounded and low-pMax latencies are important, let’s consider model training. During that training, hundreds of thousands of GPUs iterate over vast amounts of data in storage multiple times (i.e., over multiple epochs), and the GPUs train datasets in batches. Periodically, after every certain number of steps or batches, the GPUs synchronize their state among themselves. If one GPU is slow, this step will slow down all GPUs as well as the entire training.
+Figure 1 shows a data-loading pipeline across two GPUs. The dataloader in every GPU host prefetches the next dataset batch, while the GPU is processing the current batch for maximum compute or I/O overlap. In the case of GPU1, the storage-fetch latency is well within bounds, so the GPU is never stalled waiting on I/O. In the case of GPU2, there are two instances where storage fetch exhibits high latency, stalling GPU. As a result of these stalls, the overall step-completion time is delayed.
+Figure 1: Dataloading across two GPUs.
+Legacy BLOB-Storage Architecture Wasn’t AI-Ready
+Over the years, BLOB storage evolved organically, adding layers on top of layers in a true service-oriented fashion. Many of these layers were stateful and maintained their own metadata stores. While these metadata-access latencies typically weren’t the bottleneck for the traditional use cases served by global HDDs, they were showstoppers for AI workloads with millisecond access to data in flash. Figure 2 shows the request flow for a typical getObject(“/bucket/path”) API. After the request arrives at the API server, the server does many metadata lookups across the namelayer, volumeslayer, and containerlayer before resolving the path to a set of (blockId, offset, size) tuples. Some of these lookups can cross regions, and it’s not uncommon for latencies to add up to hundreds of milliseconds; one slow response from any of the lookups was sufficient. After the lookups, the API server proxies the data from the Tectonic layer to the client.
+Figure 2: Old request flow for getObject API.
+While this architecture served conventional workloads well, the foundational assumptions that dictated design tradeoffs have since shifted. Some of these are:
+Performance and latency: As discussed, while latency needs for conventional workloads were modest, AI workloads demand predictable and bounded latencies all the way up to pMax.
+Reliability and durability: The legacy architecture was designed to be highly durable and available, even in the face of region outages; data and metadata were globally replicated by default. While AI workloads demand very high availability, the global-by-default design choice no longer holds.
+Cost efficiency: Legacy stack was built on top of HDDs and highly optimized for cost per byte. The IOPS demands for AI workloads necessitate flash, and in addition, the computational cost of storage becomes negligible relative to the computational cost of GPUs.
+Power efficiency: With GPUs, datacenters are increasingly power constrained rather than space constrained. Every kilowatt of power spent on storage is power not spent on GPUs. This is a new constraint with AI workloads.
+In short, the tradeoff space has shifted enough for us to rethink the entire architecture.
+Rebuilding the Foundation
+As we set out to build the new foundation, we made the following major design choices:
+Unified metadata schema: We rewrote the metadata subsystem and collapsed the metadata spread across different layers into one unified and flat schema backed by ZippyDB . This paves the way for O(1) lookup to resolve paths to storage addresses, which is a step-function improvement.
+No dataplane proxy: We eliminated the dataplane proxy and built a fat client SDK that is capable of streaming bytes directly from storage servers to the clients. This helps with power-efficiency goals and also helps achieve higher throughput/lower latency.
+Regional deployment: The BLOB-storage stack is now lean with flexibility to be deployed as a regional or global service. We now deploy a regional BLOB-storage stack colocated with GPUs in every AI region.
+Figure 3: New request flow for getObject API.
+Figure 3 shows the new request flow for getObject(“/bucket/path”) . When the SDK on the client receives this API call, it now issues a getReadPlan(“/bucket/path”) request to the API server. The API server does O(1) lookup per chunk to the new metadata store to map the path to (blockId, offset, size) tuples. It then returns the ReadPlanResult to the SDK. The SDK has Tectonic BlockClient embedded within it, and so is now able to stream data from these blocks directly from Tectonic. With these changes, we have rebuilt the foundations and met the goal of adding zero overhead on top of Tectonic. By eliminating the data proxy, we also stay within budget for the power footprint.
+Dealing With Spikes and Hot Spots
+During data and checkpoint loading, AI workloads are known to access data concurrently across hundreds of GPUs. Subsets of data such as model weights are often “hot,” and events such as GPU restarts trigger sharp traffic spikes. With the foundations now fixed, our next problem was dealing with those spikes and hot spots. Luckily, the BLOB-storage layer has had experience dealing with hot spots over the years, so we adapted existing solutions to AI workloads here. Specifically, we employed two approaches:
+Distributed data cache: We leveraged the spare memory on the GPU hosts as a distributed data cache for frequently and concurrently accessed data. To achieve this, we reused components from Meta’s Owl subsystem : We integrated the peers in the Owl subsystem directly into the BLOB-storage client SDK so that all data access goes through this data cache.
+Readplan metadata cache: Readplan refers to the mapping from path to storage address. We now cache the read-plan for frequently accessed BLOBs in a distributed-memory store similar to memcache.
+In practice we observe an average cache hit rate of 80% on the distributed data cache, and the read-plan cache provides 1-2 ms access to metadata. In essence, these simple mechanisms do three things:
+Absorb the spikes and reduce the I/O requirements from storage.
+Solve the problem of metadata hot shards.
+Improve p50 and p99 latencies by serving from memory.
+Protocol Optimizations
+What we’ve discussed so far got us 80% of the way. We achieved the remaining 20% by identifying and fixing bottlenecks across the stack. Below are some noteworthy problems, though not an exhaustive list by any means:
+Laggards: One slow storage node contributing to tail latencies. This is a well-understood problem, and we resorted to hedged reads on the client side to mitigate this.
+Egress spikes: During checkpoint events, it is common for the client to create sharp egress spikes. This in turn can cause congestion, timeouts, and retries, eventually stalling GPUs. We resolved this by building dynamic concurrency control on the client SDK to automatically tune parallelism based on application-level congestion signals.
+With all of the above, the new BLOB-storage stack is now capable of serving AI workloads without causing GPU stalls, adding negligible overhead on top of the Tectonic layer. Our next focus shifted to research.
+Maximizing Research Velocity
+GPUs are scarce and increasingly becoming geo-distributed; at the same time, training workloads need data colocated with GPUs for performance reasons. This creates an interesting challenge for researchers: They are now on the hook for ingesting and moving datasets across regions.
+At Meta, a typical training-job submission involves the following:
+A researcher curates data from various sources, enriches them and persists them in BLOB storage.
+The researcher picks a region where they want to run the job.
+The researcher submits a data-ingestion job, which creates a snapshot of the training datasets onto the target region in a file format optimized for data loading from within the GPU host.
+The researcher then waits for ingestion to finish; depending on the dataset size, that can take hours.
+The researcher submits their training job and monitors their run.
+The researcher analyzes outputs, tweaks datasets, and iterates again, starting with Step 3.
+Steps 2 through 4 can take hours and directly impact the speed of iteration for researchers. Ideally, we like our researchers’ time to be spent on tuning models, not waiting for storage. Currently, researchers copy snapshots before starting their jobs to colocate data with GPUs, which results in the most optimal performance. While this optimization for performance makes sense for large-scale training jobs that span weeks or months, the vast majority of jobs are much smaller; the researchers owning these jobs are more than willing to trade off occasional performance degradation for iteration speed.
+And so, we needed a system where researchers are able to ingest data once and access data anywhere without thinking about regional boundaries. We needed a workflow that allows researchers to iterate in minutes and not hours. As we went back to the drawing board, the write-once, read-many characteristic of these datasets rang a bell. What if we think of storage as a disk in a planet-scale computer and borrow ideas from the operating-system world? When a Linux process running on a CPU core attempts to read a file from disk, the operating system transparently hydrates data on demand across the various layers of the cache—page cache in memory and L2 and L1 CPU caches. This intuition led to the architectural evolution in Figure 4:
+Figure 4: Dataloading architecture evolution.
+The core idea is to leverage the various on-host and off-host storage resources as a tiered cache with global BLOB-storage fabric backed by HDDs as the ultimate source of truth. Specifically, we leverage the memory and flash on the GPU host as L1 and L2 caches. And we leverage the regional BLOB-storage fabric backed by flash as the L3 cache dataloader continues to access storage through the familiar BLOB-storage SDK. To effectively hide latencies and to simplify the data life cycle, we rely on the following:
+Dataloader prefetch: Dataloaders prefetch the next batch of datasets into memory while processing the current batch. This prefetch will surface as a read operation at the BLOB-storage SDK level.
+Deep prefetch: We expose an explicit prefetch() API as part of the BLOB-storage SDK. The dataloader will trigger explicit prefetch of the data needed during the next few minutes by invoking the prefetch() API in the background. This API triggers hydration of data from remote storage onto the local region L3 cache and also prewarms the metadata cache.
+Automatic data life cycle: Data in the L3 regional disaggregated flash tier is typically held for a configured period of time to allow reuse across epochs in a training cycle. We support custom eviction policies, including TTL and LRU policies. The eviction policies are also capacity/quota aware.
+We saw rapid adoption of this new data-loading paradigm as soon as production rollout started, and we continue to support both of the data-loading paradigms in production today. To illustrate the impact in numbers, Figure 5 shows roughly the ingestion times before and after the rollout across all workloads:
+Figure 5: Ingestion times before and after the rollout.
+In a world where new frontier models get released in weeks, this shift in the data-loading paradigm is a much-needed change to move even faster.
+Key Takeaways
+Modern AI workloads are data hungry, and storage plays an important role in both the computational cost and speed of innovation. Storage bottlenecks directly impact GPU utilization and computational cost, and in a world with geo-distributed GPUs, time spent on cross-region data ingestion directly impacts the speed of iteration in research. The BLOB-storage architecture at Meta was built to serve Meta’s family of apps, and we needed a step-function improvement in performance to serve AI workloads. This led to rethinking the entire architecture. By rebuilding the metadata subsystem and by adopting a tiered caching architecture with prefetching/on-demand hydration, we are able to meet the needs of today’s workloads effectively.
+Future Work
+We are continuously evolving storage at Meta to keep up with hardware evolution and workload demands. Some future work in this area will include:
+Scaling storage to network limits.
+Supporting checkpointing without stalling GPUs at even higher scale.
+New challenges for inference workloads, which we are starting to tackle.
+Share this:
+Share on Facebook (Opens in new window)
+Facebook
+Share on Threads (Opens in new window)
+Threads
+Share on WhatsApp (Opens in new window)
+WhatsApp
+Share on LinkedIn (Opens in new window)
+LinkedIn
+Share on Reddit (Opens in new window)
+Reddit
+Share on X (Opens in new window)
+Share on Bluesky (Opens in new window)
+Bluesky
+Share on Mastodon (Opens in new window)
+Mastodon
+Share on Hacker News (Opens in new window)
+Hacker News
+Email a link to a friend (Opens in new window)
+Email
+Read More in Data Center Engineering
+View All
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":16289,"paragraph_count":75,"sentence_count":121,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Meta 运营数百 EB 级存储集群，基于 Tectonic 分层存储层构建 BLOB 存储架构，以应对两大挑战：最大化 GPU 利用率与研究迭代速度。传统 BLOB 架构的多层元数据查询可导致数百毫秒延迟，使 GPU 因 I/O 等待停顿。新架构将训练栈逐步迁移到 BLOB 存储接口上，利用闪存提供可预测的低 pMax 延迟，避免单 GPU 慢速拖慢整批任务。同时，统一的数据湖访问支持地理分布 GPU 间的数据高速注入与跨区移动，提升研究效率。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   By Sidharth Bajaj , Venkatraghavan Srinivasan Over the past several years, model capabilities and training dataset sizes have experienced exponential growth.
+
+3. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=high
+   During the past year or so, the time between new-frontier-model releases has gone down from months to weeks.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Reliable and fast access to storage is important to both the speed and computational cost of this AI innovation.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   If AI is the brain, storage is the memory: Capability and speed are highly dependent on the size of memory and speed of retrieval.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Yet while AI compute performance has roughly tripled every two years, storage and interconnect performance growth have been more modest.
+
+## business_elements
+
+- companies: Meta Engineering Blog（RSS）, Meta
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 1, 2, 3, 80%, 2 m, 50, 99, 20%
+- quotes: Training Llama: A Storage Perspective, / data hungry / /bucket/path / /bucket/path / /bucket/path
+
+## evidence_seed
+
+- company_actions: Meta 运营数百 EB 级存储集群，基于 Tectonic 分层存储层构建 BLOB 存储架构，以应对两大挑战：最大化 GPU 利用率与研究迭代速度。传统 BLOB 架构的多层元数据查询可导致数百毫秒延迟，使 GPU 因 I/O 等待停顿。新架构将训练栈逐步迁移到 BLOB 存储接口上，利用闪存提供可预测的低 pMax 延迟，避免单 GPU 慢速拖慢整批任务。同时，统一的数据湖访问支持地理分布 GPU 间的数据高速注入与跨区移动，提升研究效率。 / By Sidharth Bajaj , Venkatraghavan Srinivasan Over the past several years, model capabilities and training dataset sizes have experienced exponential growth. / During the past year or so, the time between new-frontier-model releases has gone down from months to weeks.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Meta 大规模 AI 存储蓝图","discovery_summary":"Meta 运营数百 EB 级存储集群，基于 Tectonic 分层存储层构建 BLOB 存储架构，以应对两大挑战：最大化 GPU 利用率与研究迭代速度。传统 BLOB 架构的多层元数据查询可导致数百毫秒延迟，使 GPU 因 I/O 等待停顿。新架构将训练栈逐步迁移到 BLOB 存储接口上，利用闪存提供可预测的低 pMax 延迟，避免单 GPU 慢速拖慢整批任务。同时，统一的数据湖访问支持地理分布 GPU 间的数据高速注入与跨区移动，提升研究效率。","source_name":"Meta Engineering Blog（RSS）","origin_url":"https://engineering.fb.com/2026/07/01/data-infrastructure/metas-ai-storage-blueprint-at-scale","discovered_at":"2026-07-02T02:12:32.518Z","rank_on_page":146,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Meta 运营数百 EB 级存储集群，基于 Tectonic 分层存储层构建 BLOB 存储架构，以应对两大挑战：最大化 GPU 利用率与研究迭代速度。传统 BLOB 架构的多层元数据查询可导致数百毫秒延迟，使 GPU 因 I/O 等待停顿。新架构将训练栈逐步迁移到 BLOB 存储接口上，利用闪存提供可预测的低 pMax 延迟，避免单 GPU 慢速拖慢整批任务。同时，统一的数据湖访问支持地理分布 GPU 间的数据高速注入与跨区移动，提升研究效率。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
