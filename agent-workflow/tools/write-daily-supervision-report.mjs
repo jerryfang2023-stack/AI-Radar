@@ -541,8 +541,8 @@ function buildBusinessSignalsLane() {
 
   if (gh.available) {
     if (!gh.latest_run && hasWindowPassed(date, "09:55")) {
-      addProblem(problems, "no same-date Business Signals GitHub run after 09:55 Hermes early handoff", "manual_required");
-      actions.push("run `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>` or dispatch `.github/workflows/daily-persistent-assets-pr.yml` for the production date");
+      addProblem(problems, "no same-date Business Signals GitHub run after the morning production window", "manual_required");
+      actions.push("inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-persistent-assets-pr.yml` only if targeted diagnosis proves no reusable same-date artifacts exist");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
       addProblem(problems, `Business Signals workflow is ${gh.latest_run.status}; downstream tasks should wait`, "waiting");
       actions.push("wait for Business Signals workflow completion before declaring data missing");
@@ -606,7 +606,7 @@ function buildBusinessSignalsLane() {
   return {
     id: "business_signals",
     label: "Business Signals / Intelligence Map / Dashboard",
-    schedule: "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55",
+    schedule: "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox",
     status: laneStatus(problems, warnings),
     evidence,
     problems,
@@ -655,8 +655,8 @@ function buildFirstLineLane() {
 
   if (gh.available && !localDataHealthy) {
     if (!gh.latest_run && hasWindowPassed(date, "09:30")) {
-      addProblem(problems, "no same-date First-Line Viewpoints RSS run after 09:30 Hermes handoff", "manual_required");
-      actions.push("run `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>` or dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` for the production date");
+      addProblem(problems, "no same-date First-Line Viewpoints RSS run after the morning production window", "manual_required");
+      actions.push("inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` only after targeted diagnosis");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
       addProblem(problems, `First-Line Viewpoints workflow is ${gh.latest_run.status}`, "waiting");
       actions.push("wait for First-Line Viewpoints workflow completion");
@@ -677,7 +677,7 @@ function buildFirstLineLane() {
   return {
     id: "first_line_viewpoints",
     label: "First-Line Viewpoints",
-    schedule: "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Hermes RSS handoff 09:30",
+    schedule: "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Daily Problem Watchdog records failures to Hermes inbox",
     status: laneStatus(problems, warnings),
     evidence,
     problems,
@@ -861,8 +861,8 @@ function buildCommunityLane() {
 
   if (gh.available) {
     if (!publicationReady && publishWindowPassed) {
-      addProblem(problems, "no same-date Community Intelligence publish workflow after 09:30 Hermes handoff", "manual_required");
-      actions.push("run `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>` or dispatch `.github/workflows/daily-community-intelligence-pr.yml` after local collection and archive pass");
+      addProblem(problems, "no same-date Community Intelligence publish workflow after the morning publication window", "manual_required");
+      actions.push("inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-community-intelligence-pr.yml` only after local collection and archive pass");
     } else if (!gh.latest_run && mergedPr) {
       warnings.push(`same-date Community Intelligence automation PR already merged: ${mergedPr.url}`);
     } else if (!gh.latest_run && openPr) {
@@ -895,7 +895,7 @@ function buildCommunityLane() {
   return {
     id: "community_intelligence",
     label: "Community Intelligence",
-    schedule: "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30",
+    schedule: "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox",
     status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,

@@ -25,7 +25,7 @@ This skill owns the Community Intelligence lane. It supervises local logged-in c
 - Local logged-in collection: 08:30 Asia/Shanghai via Windows task `WaveSight Community Intelligence Daily`.
 - Codex local fallback / repair window: about 09:00 Asia/Shanghai via automation `community-intelligence-daily-local`. It must first check same-date community data, archive, and gate; if they are healthy, report no-op instead of recollecting.
 - GitHub publish windows for already-collected data: 08:45 and 10:45 Asia/Shanghai.
-- Hermes publish handoff: 09:30 Asia/Shanghai, with follow-up checks at 09:45 and 09:55.
+- Daily Problem Watchdog records failed publish runs to Hermes inbox. It must not rerun local collection or dispatch recovery.
 - GitHub Actions can publish validated community files, but cannot replace local Chrome / logged-in collection.
 - Do not classify same-date data as missing before the first Community Intelligence check window. Before 08:45 Asia/Shanghai, stale data is normally yesterday's completed state unless a local collector failure log already exists.
 
@@ -91,10 +91,10 @@ Classify Community Intelligence failures by the earliest broken stage. Do not re
 The preferred before-10:00 path is:
 
 1. 08:30 local task runs collection, archive, gate, and local publish handoff in one local path.
-2. 08:45 Hermes checks only local output and gate presence. If missing, classify as local collection missing and hand off to Codex / human local repair.
+2. 08:45 supervision checks only local output and gate presence. If missing, classify as local collection missing and hand off to Codex / human local repair.
 3. About 09:00, Codex automation may run a local fallback / repair pass. It should skip recollection when same-date data, archive, and gate are already healthy.
-4. 09:30 Hermes checks publication. If local output exists but publish is missing, dispatch the GitHub publish workflow.
-5. 09:45 / 09:55 only re-check queued / in-progress / failed publish states. Do not retry the browser collector in GitHub.
+4. 09:30 supervision checks publication. If local output exists but publish is missing, record a targeted problem instead of rerunning collection.
+5. Daily Problem Watchdog records failed publish workflows to Hermes inbox and never retries the browser collector in GitHub.
 6. 10:50 confirms PR merge and Pages. If Pages is still running, report waiting rather than local failure.
 
 ## 2026-06-30 Publication Waiting Rule

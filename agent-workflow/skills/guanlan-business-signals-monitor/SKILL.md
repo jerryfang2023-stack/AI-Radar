@@ -28,8 +28,8 @@ Enterprise AI / FDE is now owned by `guanlan-enterprise-ai-fde-monitor`. Busines
 
 - GitHub primary production window: 08:57 Asia/Shanghai.
 - Conditional health dispatch: 09:27 Asia/Shanghai. It checks same-date Business Signals data and active/successful runs, then dispatches the primary workflow only when no healthy output and no active/successful same-date run exists.
-- Hermes three-lane early handoff: 09:45 and 09:55 Asia/Shanghai.
-- The old Business-only Hermes handoff workflow is manual compatibility only and must not be scheduled in parallel.
+- Daily Problem Watchdog: records failed production runs to Hermes inbox. It must not dispatch recovery or start a full-chain rerun.
+- Hermes morning recovery and early handoff workflows are retired and must not be recreated or used.
 
 ## Required Reads
 
@@ -52,7 +52,7 @@ For detailed chain work, load the narrower skill:
 - `agent-workflow/skills/guanlan-raw-pool-card/SKILL.md`
 - `agent-workflow/skills/guanlan-trend-candidate-writer/SKILL.md`
 
-For regression prevention, read `evals/business-signals-monitor-evals.md`. When repairing Top10, frontstage selection, or title-derived public fields, also read `examples/good-top10-contract.md` and `examples/bad-top10-missing.md`. When repairing Card eligibility or Core Pool promotion, also read `examples/good-six-gate-card-entry.md`. When repairing morning schedule / recovery delays, also read `examples/good-morning-handoff.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
+For regression prevention, read `evals/business-signals-monitor-evals.md`. When repairing Top10, frontstage selection, or title-derived public fields, also read `examples/good-top10-contract.md` and `examples/bad-top10-missing.md`. When repairing Card eligibility or Core Pool promotion, also read `examples/good-six-gate-card-entry.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
 When repairing repeated morning failures, also read `examples/good-failure-router.md` and the latest weekly failure review report.
 
 ## Workflow
@@ -120,7 +120,7 @@ Use this order:
 8. Build Business frontstage JSON.
 9. Run the unified Business frontstage gate immediately.
 10. Only after that gate passes, build operations dashboard, topic center, manifest, PR, merge, and Pages.
-11. At 09:45 / 09:55, Hermes should dispatch or hand off one categorized repair path rather than triggering overlapping full-chain reruns.
+11. After failed production runs, Daily Problem Watchdog should write one categorized inbox item for targeted repair. It must not dispatch another full-chain run.
 12. At 10:50, supervision should check the publication closure: merged PR, GitHub Pages success, same-date Business data, Top10 count, and whether local sync is blocked.
 
 ## Weekend Policy

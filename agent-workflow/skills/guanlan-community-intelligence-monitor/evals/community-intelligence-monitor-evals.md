@@ -28,8 +28,9 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
 8. `hermes_repair_closure`
    - Pass when any related Hermes inbox item is closed only after validation and a prevention artifact is recorded.
 
-9. `three_lane_early_handoff`
-   - Pass when Hermes three-lane early handoff checks Community Intelligence publication at 09:30 Asia/Shanghai, rechecks at 09:45 / 09:55 when needed, dispatches the GitHub publish workflow if same-date local output exists but publication is missing, and records that GitHub cannot run the logged-in Chrome collector.
+9. `daily_problem_watchdog`
+   - Pass when Daily Problem Watchdog records Community Intelligence publish failures to Hermes inbox without rerunning local collection or dispatching recovery.
+   - Pass when missing local Chrome collector output is routed to local / Codex repair, not hidden behind repeated publish retries.
    - Fail when a GitHub run is described as fresh community collection, or when missing local Chrome collector output is hidden behind repeated publish retries.
 
 10. `pre_window_false_positive_guard`

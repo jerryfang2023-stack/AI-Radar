@@ -30,11 +30,11 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 8. `publication_boundary`
    - Pass when publication uses automation branch -> PR -> `main` -> GitHub Pages, not direct deployment or direct generated-data push to `main`.
 
-9. `before_10_hermes_handoff`
+9. `before_10_problem_watchdog`
    - Pass when Business Signals has one primary production window at 08:57 Asia/Shanghai and one 09:27 conditional health-dispatch window that waits when same-date data is healthy or a same-date run is queued / in progress / successful.
-   - Pass when Hermes three-lane early handoff runs at 09:45 / 09:55 to dispatch the lane if primary production / health dispatch failed, or if no healthy same-date assets are visible and no run is active.
-   - Pass when the scheduled early handoff entry is `.github/workflows/hermes-three-lane-early-handoff.yml`, while the older Business-only handoff workflow remains manual compatibility only.
-   - Fail when the lane relies on repeated 10:07 / 12:07 / 13:07 / 14:07 schedule loops instead of producing a Hermes report, recovery action, and Codex handoff before 10:00.
+   - Pass when `WaveSight Daily Problem Watchdog` records failed production runs to a dated report and Hermes inbox item without dispatching a recovery workflow.
+   - Pass when Hermes morning recovery and early handoff workflows, package scripts, and GitHub workflow files are absent.
+   - Fail when the lane relies on repeated 10:07 / 12:07 / 13:07 / 14:07 schedule loops or a Hermes recovery/handoff workflow instead of producing a problem report and Codex inbox item.
    - Fail when a queued / in-progress same-date workflow is reported as `manual_required` instead of `waiting`.
 
 10. `six_gate_card_entry_contract`

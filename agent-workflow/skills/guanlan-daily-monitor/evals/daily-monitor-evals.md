@@ -28,12 +28,13 @@ Run these pass/fail checks when running, repairing, or updating the current Wave
 8. `qc_handoff_written`
    - Pass when monitor output includes a quality-gate report, quality-loop report, monitor log, failed sources, fallback used, and evidence gaps.
 
-9. `early_start_failure_handoff`
-   - Pass when startup or monitor-stage failures in the 08:57 primary Business Signals window or 09:27 conditional health dispatch are handed to Hermes early handoff before 10:00 with run URLs, failure count, dispatch action, and a Codex repair inbox item when bounded recovery cannot proceed.
-   - Fail when monitor startup failures are handled only by repeated late schedule windows without a dated Hermes report or skill eval / example prevention artifact.
+9. `early_start_problem_watchdog`
+   - Pass when startup or monitor-stage failures in the 08:57 primary Business Signals window or 09:27 conditional health dispatch are recorded by Daily Problem Watchdog with run URLs, failure count context, and a Codex repair inbox item.
+   - Pass when the watchdog does not dispatch recovery or start a full-chain rerun.
+   - Fail when monitor startup failures are handled by repeated late schedule windows, Hermes recovery / early handoff workflows, or any automatic full-chain rerun.
 
 10. `monitor_parameter_alignment`
-    - Pass when Business Signals PR, production-chain dry run, Hermes recovery dispatch, and manual skill examples share the same production monitor baseline: diagnostic reference `85`, `search-limit=200`, `search-path-query-limit=5`, `gdelt-query-limit=12`, `hn-limit=8`, `fetch-timeout-ms=20000`, `snapshot-timeout-ms=16000`, and `monitor-timeout-ms=900000`.
+    - Pass when Business Signals PR, production-chain dry run, problem watchdog, and manual skill examples share the same production monitor baseline: diagnostic reference `85`, `search-limit=200`, `search-path-query-limit=5`, `gdelt-query-limit=12`, `hn-limit=8`, `fetch-timeout-ms=20000`, `snapshot-timeout-ms=16000`, and `monitor-timeout-ms=900000`.
     - Pass when HN remains feedback-only and is not expanded as the primary fix for routed Pool / Core Pool shortages.
     - Fail when dry-run or skill examples keep lightweight historical parameters such as `search-limit=30`, `search-path-query-limit=1`, `gdelt-query-limit=4`, `hn-limit=20`, or diagnostic `pass-score=80`.
 

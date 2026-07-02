@@ -83,7 +83,7 @@ Primary route:
 
 - GitHub workflow: `.github/workflows/daily-persistent-assets-pr.yml` at 08:57 Asia/Shanghai.
 - Conditional health dispatch: `.github/workflows/business-signals-health-dispatch.yml` at 09:27 Asia/Shanghai. It dispatches the primary Business workflow only when same-date Business data is unhealthy and no same-date run is queued, in progress, or successful.
-- Hermes early handoff: `.github/workflows/hermes-three-lane-early-handoff.yml` at 09:45 / 09:55 Asia/Shanghai for Business Signals when the primary production / health dispatch path fails or no same-date success is visible.
+- Daily Problem Watchdog: `.github/workflows/daily-recovery-watchdog.yml` records Business Signals failures to Hermes inbox without dispatching recovery or rerunning the full chain.
 - Dry run workflow: `.github/workflows/daily-production-chain-dry-run.yml`.
 
 Reads:
@@ -290,7 +290,7 @@ Primary route:
 
 - Local Codex automation: `builder-observation-daily-sync` at 08:30 Asia/Shanghai. The local automation config stores this as `FREQ=DAILY;BYHOUR=0;BYMINUTE=30;BYSECOND=0` because the observed Codex scheduler interprets `rrule` hours as UTC. This is a collection-first task: fetch builder blog RSS, fetch builder podcast RSS, build `follow-builders-daily.json`, validate, then sync Obsidian.
 - GitHub fallback workflow: `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai.
-- Hermes RSS handoff: 09:30 Asia/Shanghai, after the 08:30 local collection/build/sync attempt and the single 09:17 GitHub fallback window.
+- Daily Problem Watchdog records First-Line Viewpoints failures to Hermes inbox after the 08:30 local collection/build/sync attempt and the single 09:17 GitHub fallback window.
 
 Reads:
 
