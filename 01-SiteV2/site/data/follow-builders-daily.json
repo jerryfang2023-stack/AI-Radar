@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-07-02T16:33:55.807Z",
+    "generatedAt": "2026-07-03T01:35:15.215Z",
     "feedGeneratedAt": "2026-07-02T07:27:19.511Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
-    "sourceRoute": "prepare-digest",
+    "sourceRoute": "remote-x+remote-podcasts",
     "sourceErrors": [],
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
     "builders": 20,
-    "remarks": 42,
-    "podcasts": 3,
+    "remarks": 43,
+    "podcasts": 1,
     "blogsBuilt": 4,
-    "trackedSources": 33,
+    "trackedSources": 0,
     "rawBuilders": 17,
     "rawTweets": 35
   },
@@ -22,7 +22,7 @@
       "name": "Simon Willison's Blog",
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 9
+      "count": 11
     },
     {
       "name": "Claude",
@@ -70,12 +70,6 @@
       "name": "Matt Turck",
       "handle": "mattturck",
       "role": "VC at FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
-      "count": 2
-    },
-    {
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 2
     },
     {
@@ -136,6 +130,12 @@
       "name": "Thariq",
       "handle": "trq212",
       "role": "Claude Code anthropicai.   prev YC W20, southpkcommons, medialab",
+      "count": 1
+    },
+    {
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 1
     }
   ],
@@ -297,16 +297,55 @@
       "replies": 0
     },
     {
-      "id": "https://tldr.tech/ai/2026-06-26",
+      "id": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
       "source": "blog",
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "text": "US vs. OpenAI 🏛️, state of AI economy 🤖, scaling laws 📈",
-      "content": "",
-      "contentTranslation": "",
-      "contentTranslationStatus": "unavailable",
-      "translation": "美国与OpenAI🏛️、AI经济状况🤖、扩展法律 📈",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
+      "content": "Research: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts One of this morning's AIE keynotes covered <a href=\"https://github.com/stanfordnlp/dspy\"",
+      "contentTranslation": "研究：使用DSPy评估和改进Datasette Agent的SQL系统提示今早的AIE主题演讲之一< a href = \"",
+      "contentTranslationStatus": "translated",
+      "translation": "使用DSPy评估和改进Datasette Agent的SQL系统提示",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "formalTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-02T18:25:00+00:00",
+      "date": "2026-07-03",
+      "url": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Understand to participate",
+      "content": "I saw Geoffrey Litt speak at AIE yesterday, and one framing he used particularly resonated with me: Understand to participate Geoffrey was talking about the challenge of collaborating with coding agents as they c",
+      "contentTranslation": "我昨天在AIE上看到了Geoffrey Litt的演讲，他使用的一个框架特别引起了我的共鸣：理解参与Geoffrey正在谈论与编码Agent合作的挑战，因为他们",
+      "contentTranslationStatus": "translated",
+      "translation": "理解参与",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "产品与创业",
@@ -328,9 +367,9 @@
         }
       ],
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Fri, 26 Jun 2026 00:00:00 GMT",
-      "date": "2026-06-26",
-      "url": "https://tldr.tech/ai/2026-06-26",
+      "createdAt": "2026-07-02T17:07:14+00:00",
+      "date": "2026-07-03",
+      "url": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -1698,27 +1737,11 @@
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
-      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
-      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
-    },
-    {
-      "source": "podcast",
-      "name": "Unsupervised Learning",
-      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
-      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
-      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
-    },
-    {
-      "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "AI Vibe Check: Lab Wars, Why APIs Might Vanish & Future Predictions",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ai-vibe-check-lab-wars-why-apis-might-vanish-future-predictions-sr_Mp2pR",
-      "publishedAt": "Fri, 12 Jun 2026 12:51:00 +0000",
-      "excerpt": "Six months after their last roundup, Jacob sits down with Ari Morcos (Datology AI CEO, former Meta AI researcher) and Rob Toews (Radical Ventures partner, Forbes AI columnist) to take stock of an AI landscape that has shifted dramatically: coding agents crossing the long-time-horizon threshold has turned engineers into managers of agents, near-frontier open weight AI looks like it may be disappearing as Meta and the Chinese labs pull back, and Anthropic's restrictions on its newly released Fable model have its biggest supporters questioning whether safety framing is masking competitive positioning. The conversation runs through the full state of the lab wars, including Rob doubling down on his Sam Altman ouster prediction and the Bret Taylor succession theory, why Google's structural advantages remain intact despite falling behind on coding, what xAI's Cursor acquisition is really for, and Ari'…"
+      "name": "AI & I by Every",
+      "title": "The AI Workflows Behind Every's Consulting Team",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "publishedAt": "2026-07-01T15:57:56.000Z",
+      "excerpt": ""
     }
   ]
 }
