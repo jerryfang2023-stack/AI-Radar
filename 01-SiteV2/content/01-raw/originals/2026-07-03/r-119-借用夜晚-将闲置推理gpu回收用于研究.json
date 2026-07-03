@@ -1,0 +1,259 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-119",
+  "title": "借用夜晚：将闲置推理GPU回收用于研究",
+  "title_zh": "借用夜晚：将闲置推理GPU回收用于研究",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "",
+  "canonical_url": "",
+  "source_name": "Runway：News（网页）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "official_index_or_directory",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": true,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-03T01:59:31.600Z",
+  "language": "mixed",
+  "full_text": "Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。控制器基于预计算的时间窗口（如工作日 8:30–12:30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20–60 分钟。利用排队论（Erlang‑C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。",
+  "clean_text": "Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。控制器基于预计算的时间窗口（如工作日 8:30–12:30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20–60 分钟。利用排队论（Erlang‑C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-03/r-119-借用夜晚-将闲置推理gpu回收用于研究.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-03/r-119-借用夜晚-将闲置推理gpu回收用于研究.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "no-url-summary-only",
+  "extraction_quality": "failed",
+  "extraction_method": "no_url_summary_fallback",
+  "readability_score": 0,
+  "extractor_diagnostics": {
+    "method": "no_url_summary_fallback"
+  },
+  "has_full_text": false,
+  "content_length": 261,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "missing",
+    "full_text_status": "missing_or_summary_only",
+    "snapshot_status": "missing_or_fetch_failed",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "a867978cf0633f3a",
+    "missing": [
+      "missing_original_url",
+      "missing_full_text",
+      "missing_snapshot"
+    ]
+  },
+  "raw_qc_decision": "block",
+  "raw_qc_downstream_use": "not_allowed",
+  "degradation_reasons": [
+    "index_only_or_directory_page",
+    "missing_full_text",
+    "missing_snapshot"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "summary_only",
+  "visible_range": "采集通道提供的标题与摘要",
+  "evidence_level": "discovery_only",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "借用夜晚：将闲置推理GPU回收用于研究",
+    "discovery_summary": "Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。控制器基于预计算的时间窗口（如工作日 8:30–12:30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20–60 分钟。利用排队论（Erlang‑C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。",
+    "source_name": "Runway：News（网页）",
+    "origin_url": "",
+    "discovered_at": "2026-07-03T01:49:50.176Z",
+    "rank_on_page": 24,
+    "discovery_status": "discovered"
+  },
+  "source_role": "discovery_source",
+  "origin_fetch_status": "summary_only",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "e3b0c44298fc1c14",
+  "content_hash": "a867978cf0633f3a",
+  "full_text_hash": "a867978cf0633f3a",
+  "semantic_hash": "1be844817bc75ae3",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-03T01:59:31.600Z",
+  "last_seen_at": "2026-07-03T01:59:31.600Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。控制器基于预计算的时间窗口（如工作日 8:30–12:30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20–60 分钟。利用排队论（Erlang‑C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "控制器基于预计算的时间窗口（如工作日 8:30–12:30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20–60 分钟。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "利用排队论（Erlang‑C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-03T01:59:31.600Z",
+  "business_elements": {
+    "companies": [
+      "Runway",
+      "News（网页）"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "法律 / 法务"
+    ],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "法务"
+    ],
+    "numbers": [
+      "9",
+      "8",
+      "30",
+      "12",
+      "20",
+      "60",
+      "85%",
+      "90%"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。",
+      "生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。",
+      "控制器基于预计算的时间窗口（如工作日 8:30–12:30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20–60 分钟。"
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 4,
+    "importance_reason": "technical trend or capability shift; rubric=4 concrete important change",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 2,
+    "case_richness": 4,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "疑似官网首页、产品目录或导航页，只能索引留存",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索",
+    "没有可用全文快照"
+  ],
+  "raw_status": "ignored",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 借用夜晚：将闲置推理GPU回收用于研究\n\n- raw_id: R-119\n- title_zh: 借用夜晚：将闲置推理GPU回收用于研究\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: no-url\n- source_name: Runway：News（网页）\n- collected_at: 2026-07-03T01:59:31.600Z\n\n## clean_text\n\nRunway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。控制器基于预计算的时间窗口（如工作日 8:30–12:30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20–60 分钟。利用排队论（Erlang‑C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。\n\n## full_text\n\nRunway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。控制器基于预计算的时间窗口（如工作日 8:30–12:30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20–60 分钟。利用排队论（Erlang‑C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。\n\n## extraction_diagnostics\n\n- extraction_method: no_url_summary_fallback\n- readability_score: 0\n- fetch_status: no-url-summary-only\n- extraction_quality: failed\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。控制器基于预计算的时间窗口（如工作日 8:30–12:30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20–60 分钟。利用排队论（Erlang‑C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 控制器基于预计算的时间窗口（如工作日 8:30–12:30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20–60 分钟。\n5. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 利用排队论（Erlang‑C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。\n"
+}

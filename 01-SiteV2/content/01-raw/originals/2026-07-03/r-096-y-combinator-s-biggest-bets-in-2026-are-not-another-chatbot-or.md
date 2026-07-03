@@ -1,0 +1,237 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-096
+title: "Y Combinator's biggest bets in 2026 are not another chatbot or ..."
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://www.instagram.com/reel/DYrswnNz0EM/?hl=en"
+canonical_url: "https://instagram.com/reel/DYrswnNz0EM/?hl=en"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-03T01:59:31.569Z
+language: mixed
+full_text_hash: d01f328b31f193e9
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-03/r-096-y-combinator-s-biggest-bets-in-2026-are-not-another-chatbot-or.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-03/r-096-y-combinator-s-biggest-bets-in-2026-are-not-another-chatbot-or.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: low
+extraction_method: "main"
+readability_score: 39
+extractor_diagnostics: {"readability_score":39,"text_length":459,"paragraph_count":6,"sentence_count":8,"boilerplate_hits":2,"symbol_ratio":0.0087,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 459
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d01f328b31f193e9","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 8b2cbc37800f0259
+content_hash: d01f328b31f193e9
+semantic_hash: 8395447d973e9992
+duplicate_of: ""
+first_seen_at: "2026-07-03T01:59:31.569Z"
+last_seen_at: 2026-07-03T01:59:31.569Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","adoption_context"],"novelty":3,"evidence_strength":3,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agents"],"people":[],"industries":[],"roles":["CIO / IT 负责人"],"workflows":[],"business_actions":["融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["2026","5","75\nM","23"],"quotes":[]}
+evidence_seed: {"company_actions":["Startup & AI updates daily YC, funding & founder lessons AI tools, agents & automation Trends worth paying attention to Follow for ... / query=AI workflow automation startup raises venture funding 2026 / intent=find_startups / path=capital_startup","Never miss a post from aditya_allin Sign up for Instagram to stay in the loop.","Sign up Log in aditya_allin • Follow aditya_allin 5w Y Combinator’s biggest bets in 2026 are not another chatbot or SaaS dashboard."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"funding","text":"Startup & AI updates daily YC, funding & founder lessons AI tools, agents & automation Trends worth paying attention to Follow for ... / query=AI workflow automation startup raises venture funding 2026 / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Never miss a post from aditya_allin Sign up for Instagram to stay in the loop.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Sign up Log in aditya_allin • Follow aditya_allin 5w Y Combinator’s biggest bets in 2026 are not another chatbot or SaaS dashboard.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Space infrastructure.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Semiconductor supply chains.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Physical world AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-03T01:59:31.569Z
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Y Combinator's biggest bets in 2026 are not another chatbot or ...
+
+## clean_text
+
+Never miss a post from aditya_allin Sign up for Instagram to stay in the loop.
+Sign up
+Log in
+aditya_allin
+• Follow
+aditya_allin
+5w
+Y Combinator’s biggest bets in 2026 are not another chatbot or SaaS dashboard.
+Defense tech. Space infrastructure. Semiconductor supply chains. Physical world AI.
+The next wave of startups is moving beyond the screen.
+mekartikesh
+5w
+❤️
+Like Reply
+75
+May 23
+Log in to like or comment.
+More posts from aditya_allin
+See more posts
+
+## full_text
+
+Never miss a post from aditya_allin Sign up for Instagram to stay in the loop.
+Sign up
+Log in
+aditya_allin
+• Follow
+aditya_allin
+5w
+Y Combinator’s biggest bets in 2026 are not another chatbot or SaaS dashboard.
+Defense tech. Space infrastructure. Semiconductor supply chains. Physical world AI.
+The next wave of startups is moving beyond the screen.
+mekartikesh
+5w
+❤️
+Like Reply
+75
+May 23
+Log in to like or comment.
+More posts from aditya_allin
+See more posts
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 39
+- fetch_status: fetched-readable-text-main
+- extraction_quality: low
+- diagnostics: {"readability_score":39,"text_length":459,"paragraph_count":6,"sentence_count":8,"boilerplate_hits":2,"symbol_ratio":0.0087,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=medium
+   Startup & AI updates daily YC, funding & founder lessons AI tools, agents & automation Trends worth paying attention to Follow for ... / query=AI workflow automation startup raises venture funding 2026 / intent=find_startups / path=capital_startup
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Never miss a post from aditya_allin Sign up for Instagram to stay in the loop.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Sign up Log in aditya_allin • Follow aditya_allin 5w Y Combinator’s biggest bets in 2026 are not another chatbot or SaaS dashboard.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Space infrastructure.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Semiconductor supply chains.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Physical world AI.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agents
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: CIO / IT 负责人
+- workflows: 暂无公开信息
+- business_actions: 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: 2026, 5, 75
+M, 23
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Startup & AI updates daily YC, funding & founder lessons AI tools, agents & automation Trends worth paying attention to Follow for ... / query=AI workflow automation startup raises venture funding 2026 / intent=find_startups / path=capital_startup / Never miss a post from aditya_allin Sign up for Instagram to stay in the loop. / Sign up Log in aditya_allin • Follow aditya_allin 5w Y Combinator’s biggest bets in 2026 are not another chatbot or SaaS dashboard.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,adoption_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Startup & AI updates daily YC, funding & founder lessons AI tools, agents & automation Trends worth paying attention to Follow for ... / query=AI workflow automation startup raises venture funding 2026 / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
