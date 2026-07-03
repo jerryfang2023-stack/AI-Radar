@@ -1,0 +1,212 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-085
+title: "Google 为 NotebookLM 引入 TikTok 风格短视频"
+title_zh: "Google 为 NotebookLM 引入 TikTok 风格短视频"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://the-decoder.com/google-brings-tiktok-style-video-shorts-to-notebooklm"
+canonical_url: "https://the-decoder.com/google-brings-tiktok-style-video-shorts-to-notebooklm"
+source_name: "The Decoder：AI News（RSS）"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-02T12:17:15.000Z"
+collected_at: 2026-07-03T01:59:31.552Z
+language: mixed
+full_text_hash: c99a46dd95b4ed3c
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-03/r-085-google-为-notebooklm-引入-tiktok-风格短视频.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-03/r-085-google-为-notebooklm-引入-tiktok-风格短视频.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: medium
+extraction_method: "json-ld"
+readability_score: 58
+extractor_diagnostics: {"readability_score":58,"text_length":1329,"paragraph_count":8,"sentence_count":8,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 1329
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c99a46dd95b4ed3c","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Google 为 NotebookLM 引入 TikTok 风格短视频","discovery_summary":"Google 为 NotebookLM 新增视频概览功能，可将上传的源文件转换为 60 秒竖屏短视频，分解特定主题。该功能目前正在移动端和网页端向 Google AI Ultra 和 Pro 订阅者推出，免费用户即将获得访问权限。NotebookLM 是 Google 的 AI 笔记工具，能分析多源内容并以不同格式重新打包。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/google-brings-tiktok-style-video-shorts-to-notebooklm","discovered_at":"2026-07-03T01:49:51.291Z","rank_on_page":178,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 819d2807062d6f01
+content_hash: c99a46dd95b4ed3c
+semantic_hash: 651a098845b5711c
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-02T12:17:15.000Z"
+last_seen_at: 2026-07-03T01:59:31.552Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":3,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":2}
+business_elements: {"companies":["The Decoder","AI News（RSS）","Google"],"products":[],"people":[],"industries":["开发者工具"],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["60"],"quotes":[]}
+evidence_seed: {"company_actions":["Google 为 NotebookLM 新增视频概览功能，可将上传的源文件转换为 60 秒竖屏短视频，分解特定主题。该功能目前正在移动端和网页端向 Google AI Ultra 和 Pro 订阅者推出，免费用户即将获得访问权限。NotebookLM 是 Google 的 AI 笔记工具，能分析多源内容并以不同格式重新打包。","Google brings TikTok-style video shorts to NotebookLM Google brings TikTok-style video shorts to NotebookLM Google has expanded NotebookLM to include video overviews in the short format commonly used on social media.","Google has expanded NotebookLM to include video overviews in the short format commonly used on social media."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"Google 为 NotebookLM 新增视频概览功能，可将上传的源文件转换为 60 秒竖屏短视频，分解特定主题。该功能目前正在移动端和网页端向 Google AI Ultra 和 Pro 订阅者推出，免费用户即将获得访问权限。NotebookLM 是 Google 的 AI 笔记工具，能分析多源内容并以不同格式重新打包。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Google brings TikTok-style video shorts to NotebookLM Google brings TikTok-style video shorts to NotebookLM Google has expanded NotebookLM to include video overviews in the short format commonly used on social media.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Google has expanded NotebookLM to include video overviews in the short format commonly used on social media.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"AI, Menschen, Wirtschaft AI, Menschen, Wirtschaft Maximilian Schreiner is Managing Editor at THE DECODER and has covered artificial intelligence for close to a decade, from new models and tools to their impact on businesses, media, and society.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"He brings that expertise to heise KI PRO, where he makes AI accessible for professionals in the DACH region - clear, critical, and practical.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"With a background in philosophy, one question keeps driving him: whether machines can truly think, or are just getting better at faking it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-03T01:59:31.552Z
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Google 为 NotebookLM 引入 TikTok 风格短视频
+
+## clean_text
+
+Google brings TikTok-style video shorts to NotebookLM
+Google brings TikTok-style video shorts to NotebookLM
+Google has expanded NotebookLM to include video overviews in the short format commonly used on social media.
+Google has expanded NotebookLM to include video overviews in the short format commonly used on social media.
+AI, Menschen, Wirtschaft
+AI, Menschen, Wirtschaft
+Maximilian Schreiner is Managing Editor at THE DECODER and has covered artificial intelligence for close to a decade, from new models and tools to their impact on businesses, media, and society. He brings that expertise to heise KI PRO, where he makes AI accessible for professionals in the DACH region - clear, critical, and practical. With a background in philosophy, one question keeps driving him: whether machines can truly think, or are just getting better at faking it.
+Maximilian Schreiner is Managing Editor at THE DECODER and has covered artificial intelligence for close to a decade, from new models and tools to their impact on businesses, media, and society. He brings that expertise to heise KI PRO, where he makes AI accessible for professionals in the DACH region - clear, critical, and practical. With a background in philosophy, one question keeps driving him: whether machines can truly think, or are just getting better at faking it.
+
+## full_text
+
+Google brings TikTok-style video shorts to NotebookLM
+Google brings TikTok-style video shorts to NotebookLM
+Google has expanded NotebookLM to include video overviews in the short format commonly used on social media.
+Google has expanded NotebookLM to include video overviews in the short format commonly used on social media.
+AI, Menschen, Wirtschaft
+AI, Menschen, Wirtschaft
+Maximilian Schreiner is Managing Editor at THE DECODER and has covered artificial intelligence for close to a decade, from new models and tools to their impact on businesses, media, and society. He brings that expertise to heise KI PRO, where he makes AI accessible for professionals in the DACH region - clear, critical, and practical. With a background in philosophy, one question keeps driving him: whether machines can truly think, or are just getting better at faking it.
+Maximilian Schreiner is Managing Editor at THE DECODER and has covered artificial intelligence for close to a decade, from new models and tools to their impact on businesses, media, and society. He brings that expertise to heise KI PRO, where he makes AI accessible for professionals in the DACH region - clear, critical, and practical. With a background in philosophy, one question keeps driving him: whether machines can truly think, or are just getting better at faking it.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 58
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: medium
+- diagnostics: {"readability_score":58,"text_length":1329,"paragraph_count":8,"sentence_count":8,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=medium
+   Google 为 NotebookLM 新增视频概览功能，可将上传的源文件转换为 60 秒竖屏短视频，分解特定主题。该功能目前正在移动端和网页端向 Google AI Ultra 和 Pro 订阅者推出，免费用户即将获得访问权限。NotebookLM 是 Google 的 AI 笔记工具，能分析多源内容并以不同格式重新打包。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Google brings TikTok-style video shorts to NotebookLM Google brings TikTok-style video shorts to NotebookLM Google has expanded NotebookLM to include video overviews in the short format commonly used on social media.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Google has expanded NotebookLM to include video overviews in the short format commonly used on social media.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   AI, Menschen, Wirtschaft AI, Menschen, Wirtschaft Maximilian Schreiner is Managing Editor at THE DECODER and has covered artificial intelligence for close to a decade, from new models and tools to their impact on businesses, media, and society.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   He brings that expertise to heise KI PRO, where he makes AI accessible for professionals in the DACH region - clear, critical, and practical.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   With a background in philosophy, one question keeps driving him: whether machines can truly think, or are just getting better at faking it.
+
+## business_elements
+
+- companies: The Decoder, AI News（RSS）, Google
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 60
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Google 为 NotebookLM 新增视频概览功能，可将上传的源文件转换为 60 秒竖屏短视频，分解特定主题。该功能目前正在移动端和网页端向 Google AI Ultra 和 Pro 订阅者推出，免费用户即将获得访问权限。NotebookLM 是 Google 的 AI 笔记工具，能分析多源内容并以不同格式重新打包。 / Google brings TikTok-style video shorts to NotebookLM Google brings TikTok-style video shorts to NotebookLM Google has expanded NotebookLM to include video overviews in the short format commonly used on social media. / Google has expanded NotebookLM to include video overviews in the short format commonly used on social media.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 3
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Google 为 NotebookLM 引入 TikTok 风格短视频","discovery_summary":"Google 为 NotebookLM 新增视频概览功能，可将上传的源文件转换为 60 秒竖屏短视频，分解特定主题。该功能目前正在移动端和网页端向 Google AI Ultra 和 Pro 订阅者推出，免费用户即将获得访问权限。NotebookLM 是 Google 的 AI 笔记工具，能分析多源内容并以不同格式重新打包。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/google-brings-tiktok-style-video-shorts-to-notebooklm","discovered_at":"2026-07-03T01:49:51.291Z","rank_on_page":178,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Google 为 NotebookLM 新增视频概览功能，可将上传的源文件转换为 60 秒竖屏短视频，分解特定主题。该功能目前正在移动端和网页端向 Google AI Ultra 和 Pro 订阅者推出，免费用户即将获得访问权限。NotebookLM 是 Google 的 AI 笔记工具，能分析多源内容并以不同格式重新打包。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
