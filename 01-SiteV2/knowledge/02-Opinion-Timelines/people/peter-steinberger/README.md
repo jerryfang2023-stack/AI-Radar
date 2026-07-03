@@ -1,12 +1,12 @@
 ---
 type: opinion_person_timeline
 person_name: "Peter Steinberger"
-opinion_count: 33
+opinion_count: 34
 latest_date: 2026-07-02
 ---
 
 # Peter Steinberger 观点时间线
-共 33 条观点，按人物 + 日期文件聚合。
+共 34 条观点，按人物 + 日期文件聚合。
 ## 日期
 
 - [2026-07-02](./2026-07-02.md)

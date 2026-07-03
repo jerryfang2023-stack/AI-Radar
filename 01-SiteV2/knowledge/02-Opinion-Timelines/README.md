@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 962
-generated_at: 2026-07-03T01:35:48.818Z
+opinion_count: 999
+generated_at: 2026-07-03T08:10:43.045Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -11,35 +11,35 @@ generated_at: 2026-07-03T01:35:48.818Z
 
 ## 人物
 
-- [Peter Yang](people/peter-yang/README.md) - 82 条 - 最新 2026-07-02
-- [Swyx](people/swyx/README.md) - 64 条 - 最新 2026-07-02
-- [Nikunj Kothari](people/nikunj-kothari/README.md) - 55 条 - 最新 2026-07-02
-- [Aaron Levie](people/aaron-levie/README.md) - 47 条 - 最新 2026-07-02
-- [Peter Steinberger](people/peter-steinberger/README.md) - 33 条 - 最新 2026-07-02
-- [Garry Tan](people/garry-tan/README.md) - 70 条 - 最新 2026-07-01
-- [Guillermo Rauch](people/guillermo-rauch/README.md) - 53 条 - 最新 2026-07-01
-- [Zara Zhang](people/zara-zhang/README.md) - 50 条 - 最新 2026-07-01
-- [Dan Shipper](people/dan-shipper/README.md) - 45 条 - 最新 2026-07-01
-- [Thibault Sottiaux](people/thibault-sottiaux/README.md) - 44 条 - 最新 2026-07-01
+- [Peter Yang](people/peter-yang/README.md) - 85 条 - 最新 2026-07-03
+- [Garry Tan](people/garry-tan/README.md) - 73 条 - 最新 2026-07-03
+- [Zara Zhang](people/zara-zhang/README.md) - 53 条 - 最新 2026-07-03
+- [Aaron Levie](people/aaron-levie/README.md) - 48 条 - 最新 2026-07-03
+- [Aditya Agarwal](people/aditya-agarwal/README.md) - 28 条 - 最新 2026-07-03
+- [Swyx](people/swyx/README.md) - 67 条 - 最新 2026-07-02
+- [Nikunj Kothari](people/nikunj-kothari/README.md) - 57 条 - 最新 2026-07-02
+- [Guillermo Rauch](people/guillermo-rauch/README.md) - 56 条 - 最新 2026-07-02
+- [Dan Shipper](people/dan-shipper/README.md) - 46 条 - 最新 2026-07-02
+- [Thibault Sottiaux](people/thibault-sottiaux/README.md) - 45 条 - 最新 2026-07-02
+- [Claude](people/claude/README.md) - 35 条 - 最新 2026-07-02
+- [Peter Steinberger](people/peter-steinberger/README.md) - 34 条 - 最新 2026-07-02
+- [Matt Turck](people/matt-turck/README.md) - 29 条 - 最新 2026-07-02
+- [Thariq](people/thariq/README.md) - 26 条 - 最新 2026-07-02
+- [Nan Yu](people/nan-yu/README.md) - 20 条 - 最新 2026-07-02
+- [Sam Altman](people/sam-altman/README.md) - 18 条 - 最新 2026-07-02
+- [Boris Cherny](people/boris-cherny/README.md) - 14 条 - 最新 2026-07-02
+- [Cat Wu](people/cat-wu/README.md) - 7 条 - 最新 2026-07-02
+- [No Priors](people/no-priors/README.md) - 4 条 - 最新 2026-07-02
 - [Amjad Masad](people/amjad-masad/README.md) - 36 条 - 最新 2026-07-01
-- [Claude](people/claude/README.md) - 32 条 - 最新 2026-07-01
-- [Matt Turck](people/matt-turck/README.md) - 27 条 - 最新 2026-07-01
-- [Aditya Agarwal](people/aditya-agarwal/README.md) - 26 条 - 最新 2026-07-01
-- [Thariq](people/thariq/README.md) - 24 条 - 最新 2026-07-01
 - [Google Labs](people/google-labs/README.md) - 14 条 - 最新 2026-07-01
 - [Alex Albert](people/alex-albert/README.md) - 4 条 - 最新 2026-07-01
-- [Nan Yu](people/nan-yu/README.md) - 18 条 - 最新 2026-06-30
-- [Boris Cherny](people/boris-cherny/README.md) - 13 条 - 最新 2026-06-30
 - [Madhu Guru](people/madhu-guru/README.md) - 10 条 - 最新 2026-06-30
 - [Anthropic Engineering](people/anthropic-engineering/README.md) - 4 条 - 最新 2026-06-30
 - [Training Data](people/training-data/README.md) - 3 条 - 最新 2026-06-30
 - [Ryo Lu](people/ryo-lu/README.md) - 14 条 - 最新 2026-06-29
-- [Sam Altman](people/sam-altman/README.md) - 17 条 - 最新 2026-06-26
 - [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 17 条 - 最新 2026-06-26
 - [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 6 条 - 最新 2026-06-26
-- [Cat Wu](people/cat-wu/README.md) - 5 条 - 最新 2026-06-26
 - [Dataiku Blog](people/dataiku-blog/README.md) - 5 条 - 最新 2026-06-26
-- [No Priors](people/no-priors/README.md) - 3 条 - 最新 2026-06-26
 - [The MAD Podcast with Matt Turck](people/the-mad-podcast-with-matt-turck/README.md) - 4 条 - 最新 2026-06-25
 - [Ben's Bites AI Newsletter](people/bens-bites-ai-newsletter/README.md) - 2 条 - 最新 2026-06-25
 - [Amanda Askell](people/amanda-askell/README.md) - 8 条 - 最新 2026-06-24
