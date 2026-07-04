@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "date": "2026-07-04",
+  "status": "passed",
+  "failure_categories": [],
+  "gates": [
+    {
+      "id": "source_first",
+      "label": "V3 source-first frontstage gate",
+      "script": "agent-workflow/tools/assert-v3-source-first-frontstage.mjs",
+      "status": "passed",
+      "exit_code": 0,
+      "parsed": {
+        "ok": true,
+        "status": "passed",
+        "checked_file": "01-SiteV2/site/data/v3-data-observation-desk.json",
+        "card_count": 320,
+        "frontstage_card_count": 320,
+        "issue_count": 0,
+        "issues": []
+      }
+    },
+    {
+      "id": "frontstage_regression",
+      "label": "Frontstage regression gate",
+      "script": "agent-workflow/tools/frontstage-regression-gate.mjs",
+      "status": "passed",
+      "exit_code": 0,
+      "parsed": {
+        "ok": true,
+        "status": "passed",
+        "issue_count": 0,
+        "report": "agent-workflow/reports/frontstage-regression-gate-20260704015708.md"
+      }
+    }
+  ],
+  "report": "agent-workflow/reports/2026-07-04-business-signals-frontstage-gate.md"
+}

@@ -1,0 +1,276 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-073",
+  "title": "How to Generate and Use Synthetic Data for Finetuning",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://eugeneyan.com//writing/synthetic/",
+  "canonical_url": "https://eugeneyan.com/writing/synthetic",
+  "source_name": "Eugene Yan's Blog",
+  "source_type": "builder",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "supporting_article",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-04T01:57:00.169Z",
+  "language": "mixed",
+  "full_text": "It is increasingly viable to use synthetic data for pretraining, instruction-tuning, and preference-tuning. Synthetic data refers to data generated via a model or simulated environment, instead of naturally occurring on the internet or annotated by humans.\nRelative to human annotation, it’s faster and cheaper to generate task-specific synthetic data. Furthermore, the quality and diversity of synthetic data often exceeds that of human annotators, leading to improved performance and generalization when models are finetuned on synthetic data. Finally, synthetic data sidesteps privacy and copyright concerns by avoiding reliance on user data or possibly copyrighted content.\nThere are two main approaches to generate synthetic data: Distillation from a stronger model or Self-improvement on the model’s own output. The synthetic data can then be used in pretraining, instruction-tuning, and preference-tuning.\nPretraining\nInstruction-tuning\nPreference-tuning\nDistillation\nTinyStories , Phi-1 (textbooks) , Phi-1.5\nUnnatural Instructions , Alpaca , Alpagaus , Vicuna , Orca , Orca2 , WizardLM\nCode : WizardCoder , MagicCoder , WaveCoder , Phi-1 (exercises)\nStarling-7B ,\nSelf-improvement\nAlphaGeometry , WRAP\nSelf-Instruct , SPIN , Instruction Backtranslation , $\\text {ReST}^{EM}$ , CAI (SFT)\nSteerLM , Self-Rewarding , CAI (RL)\nDistillation transfers knowledge and reasoning skills from a stronger teacher to a weaker but more efficient student, optimizing for response quality and computation efficiency. In contrast, self-improvement has the model learn from its responses via an iterative loop. It avoids external dependencies and contractual restrictions. Nonetheless, it limits the learning to the model’s initial abilities and can amplify biases and errors.\n(Aside: For large organizations, distilling external models or violating an API provider’s Terms of Service may carry reputation and legal risks. For example, the lead author of BERT at Google resigned after concerns that Bard was using data from ChatGPT . Similarly, ByteDance’s account was suspended after it used GPT data to train a model of its own.)\nSpecific to synthetic data, pretraining involves building the model’s base knowledge on generated data, or augmenting real-world datasets with model-generated data. For instruction-tuning, we build synthetic instruction-response pairs to improve the model’s comprehension of nuanced queries, as well as improve response precision. Preference tuning relies on a mix of positive and negative synthetic feedback to reward the model for desired behaviors, such as being helpful, honest, and harmless.\nWe’ll discuss two papers on distillation (Unnatural Instructions) and self-improvement (Self-Instruct). Then, we’ll summarize various distillation techniques before going through the details of some self-improvement approaches.\nSelf-Improvement vs. Distillation\nSelf-Instruct and Unnatural Instructions were published a day apart (in Dec 2022) but take very different approaches to generate synthetic data. The former bootstraps synthetic data from the model itself while the latter distills it from an external, stronger model.\nSelf-Instruct improves the instruction-following ability of a non-finetuned model (vanilla gpt-3) by bootstrapping off its own generations. First, they generate instructions, input context, and responses from the model. Then, they filter invalid or similar examples before using the remaining samples to finetune the original model.\nFor seed data, they start with 175 human-written tasks from the authors and their colleagues. Each task contains an instruction, optional context, and expected response.\n\"id\" : \"seed_task_0\" ,\n\"name\" : \"breakfast_suggestion\" ,\n\"instruction\" : \"Is there anything I can eat for a breakfast that doesn't include eggs,\nyet includes protein, and has roughly 700-1000 calories?\" ,\n\"instances\" : [\n\"input\" : \"\" ,\n\"output\" : \"Yes, you can have 1 oatmeal banana protein shake and 4 strips of bacon.\nThe oatmeal banana protein shake may contain 1/2 cup oatmeal, 60 grams\nwhey protein powder, 1/2 medium banana, 1tbsp flaxseed oil and 1/2 cup\nwater, totalling about 550 calories. The 4 strips of bacon contains\nabout 200 calories.\"\n],\n\"is_classification\" : false\n\"id\" : \"seed_task_1\" ,\n\"name\" : \"antonym_relation\" ,\n\"instruction\" : \"What is the relation between the given pairs?\" ,\n\"instances\" : [\n\"input\" : \"Night : Day :: Right : Left\" ,\n\"output\" : \"The relation between the given pairs is that they are opposites.\"\n],\n\"is_classification\" : false\n...\n\"id\" : \"seed_task_151\" ,\n\"name\" : \"toxic_sentence_detection\" ,\n\"instruction\" : \"Tell if the sentence contains toxic language.\" ,\n\"instances\" : [\n\"input\" : \"aw, no wonder she married you. you are a bastard.\" ,\n\"output\" : \"Yes\"\n],\n\"is_classification\" : true",
+  "clean_text": "It is increasingly viable to use synthetic data for pretraining, instruction-tuning, and preference-tuning. Synthetic data refers to data generated via a model or simulated environment, instead of naturally occurring on the internet or annotated by humans.\nRelative to human annotation, it’s faster and cheaper to generate task-specific synthetic data. Furthermore, the quality and diversity of synthetic data often exceeds that of human annotators, leading to improved performance and generalization when models are finetuned on synthetic data. Finally, synthetic data sidesteps privacy and copyright concerns by avoiding reliance on user data or possibly copyrighted content.\nThere are two main approaches to generate synthetic data: Distillation from a stronger model or Self-improvement on the model’s own output. The synthetic data can then be used in pretraining, instruction-tuning, and preference-tuning.\nPretraining\nInstruction-tuning\nPreference-tuning\nDistillation\nTinyStories , Phi-1 (textbooks) , Phi-1.5\nUnnatural Instructions , Alpaca , Alpagaus , Vicuna , Orca , Orca2 , WizardLM\nCode : WizardCoder , MagicCoder , WaveCoder , Phi-1 (exercises)\nStarling-7B ,\nSelf-improvement\nAlphaGeometry , WRAP\nSelf-Instruct , SPIN , Instruction Backtranslation , $\\text {ReST}^{EM}$ , CAI (SFT)\nSteerLM , Self-Rewarding , CAI (RL)\nDistillation transfers knowledge and reasoning skills from a stronger teacher to a weaker but more efficient student, optimizing for response quality and computation efficiency. In contrast, self-improvement has the model learn from its responses via an iterative loop. It avoids external dependencies and contractual restrictions. Nonetheless, it limits the learning to the model’s initial abilities and can amplify biases and errors.\n(Aside: For large organizations, distilling external models or violating an API provider’s Terms of Service may carry reputation and legal risks. For example, the lead author of BERT at Google resigned after concerns that Bard was using data from ChatGPT . Similarly, ByteDance’s account was suspended after it used GPT data to train a model of its own.)\nSpecific to synthetic data, pretraining involves building the model’s base knowledge on generated data, or augmenting real-world datasets with model-generated data. For instruction-tuning, we build synthetic instruction-response pairs to improve the model’s comprehension of nuanced queries, as well as improve response precision. Preference tuning relies on a mix of positive and negative synthetic feedback to reward the model for desired behaviors, such as being helpful, honest, and harmless.\nWe’ll discuss two papers on distillation (Unnatural Instructions) and self-improvement (Self-Instruct). Then, we’ll summarize various distillation techniques before going through the details of some self-improvement approaches.\nSelf-Improvement vs. Distillation\nSelf-Instruct and Unnatural Instructions were published a day apart (in Dec 2022) but take very different approaches to generate synthetic data. The former bootstraps synthetic data from the model itself while the latter distills it from an external, stronger model.\nSelf-Instruct improves the instruction-following ability of a non-finetuned model (vanilla gpt-3) by bootstrapping off its own generations. First, they generate instructions, input context, and responses from the model. Then, they filter invalid or similar examples before using the remaining samples to finetune the original model.\nFor seed data, they start with 175 human-written tasks from the authors and their colleagues. Each task contains an instruction, optional context, and expected response.\n\"id\" : \"seed_task_0\" ,\n\"name\" : \"breakfast_suggestion\" ,\n\"instruction\" : \"Is there anything I can eat for a breakfast that doesn't include eggs,\nyet includes protein, and has roughly 700-1000 calories?\" ,\n\"instances\" : [\n\"input\" : \"\" ,\n\"output\" : \"Yes, you can have 1 oatmeal banana protein shake and 4 strips of bacon.\nThe oatmeal banana protein shake may contain 1/2 cup oatmeal, 60 grams\nwhey protein powder, 1/2 medium banana, 1tbsp flaxseed oil and 1/2 cup\nwater, totalling about 550 calories. The 4 strips of bacon contains\nabout 200 calories.\"\n],\n\"is_classification\" : false\n\"id\" : \"seed_task_1\" ,\n\"name\" : \"antonym_relation\" ,\n\"instruction\" : \"What is the relation between the given pairs?\" ,\n\"instances\" : [\n\"input\" : \"Night : Day :: Right : Left\" ,\n\"output\" : \"The relation between the given pairs is that they are opposites.\"\n],\n\"is_classification\" : false\n...\n\"id\" : \"seed_task_151\" ,\n\"name\" : \"toxic_sentence_detection\" ,\n\"instruction\" : \"Tell if the sentence contains toxic language.\" ,\n\"instances\" : [\n\"input\" : \"aw, no wonder she married you. you are a bastard.\" ,\n\"output\" : \"Yes\"\n],\n\"is_classification\" : true",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-04/r-073-how-to-generate-and-use-synthetic-data-for-finetuning.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-04/r-073-how-to-generate-and-use-synthetic-data-for-finetuning.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 94,
+  "extractor_diagnostics": {
+    "readability_score": 94,
+    "text_length": 4779,
+    "paragraph_count": 38,
+    "sentence_count": 30,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0048,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 4779,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "fd606f4a0483184c",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "588c094f444f8e1d",
+  "content_hash": "fd606f4a0483184c",
+  "full_text_hash": "fd606f4a0483184c",
+  "semantic_hash": "e919e021477f5367",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-04T01:57:00.169Z",
+  "last_seen_at": "2026-07-04T01:57:00.169Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "Overcoming the bottleneck of human annotations in instruction-tuning, preference-tuning, and pretraining.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It is increasingly viable to use synthetic data for pretraining, instruction-tuning, and preference-tuning.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Synthetic data refers to data generated via a model or simulated environment, instead of naturally occurring on the internet or annotated by humans.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Relative to human annotation, it’s faster and cheaper to generate task-specific synthetic data.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Furthermore, the quality and diversity of synthetic data often exceeds that of human annotators, leading to improved performance and generalization when models are finetuned on synthetic data.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "Finally, synthetic data sidesteps privacy and copyright concerns by avoiding reliance on user data or possibly copyrighted content.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-04T01:57:00.169Z",
+  "business_elements": {
+    "companies": [
+      "Eugene Yan's Blog",
+      "Google"
+    ],
+    "products": [
+      "ChatGPT"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具"
+    ],
+    "roles": [
+      "法务 / 律师"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "法务"
+    ],
+    "numbers": [
+      "1",
+      "1.5",
+      "2",
+      "7B",
+      "2022",
+      "3",
+      "175",
+      "0"
+    ],
+    "quotes": [
+      "seed_task_0",
+      "breakfast_suggestion",
+      "instruction",
+      "Is there anything I can eat for a breakfast that doesn't include eggs,\nyet includes protein, and has roughly 700-1000 calories?",
+      "instances"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Overcoming the bottleneck of human annotations in instruction-tuning, preference-tuning, and pretraining.",
+      "It is increasingly viable to use synthetic data for pretraining, instruction-tuning, and preference-tuning.",
+      "Synthetic data refers to data generated via a model or simulated environment, instead of naturally occurring on the internet or annotated by humans."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "法务 / 律师"
+    ],
+    "risks_or_constraints": [
+      "Finally, synthetic data sidesteps privacy and copyright concerns by avoiding reliance on user data or possibly copyrighted content."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# How to Generate and Use Synthetic Data for Finetuning\n\n- raw_id: R-073\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://eugeneyan.com//writing/synthetic/\n- source_name: Eugene Yan's Blog\n- collected_at: 2026-07-04T01:57:00.169Z\n\n## clean_text\n\nIt is increasingly viable to use synthetic data for pretraining, instruction-tuning, and preference-tuning. Synthetic data refers to data generated via a model or simulated environment, instead of naturally occurring on the internet or annotated by humans.\nRelative to human annotation, it’s faster and cheaper to generate task-specific synthetic data. Furthermore, the quality and diversity of synthetic data often exceeds that of human annotators, leading to improved performance and generalization when models are finetuned on synthetic data. Finally, synthetic data sidesteps privacy and copyright concerns by avoiding reliance on user data or possibly copyrighted content.\nThere are two main approaches to generate synthetic data: Distillation from a stronger model or Self-improvement on the model’s own output. The synthetic data can then be used in pretraining, instruction-tuning, and preference-tuning.\nPretraining\nInstruction-tuning\nPreference-tuning\nDistillation\nTinyStories , Phi-1 (textbooks) , Phi-1.5\nUnnatural Instructions , Alpaca , Alpagaus , Vicuna , Orca , Orca2 , WizardLM\nCode : WizardCoder , MagicCoder , WaveCoder , Phi-1 (exercises)\nStarling-7B ,\nSelf-improvement\nAlphaGeometry , WRAP\nSelf-Instruct , SPIN , Instruction Backtranslation , $\\text {ReST}^{EM}$ , CAI (SFT)\nSteerLM , Self-Rewarding , CAI (RL)\nDistillation transfers knowledge and reasoning skills from a stronger teacher to a weaker but more efficient student, optimizing for response quality and computation efficiency. In contrast, self-improvement has the model learn from its responses via an iterative loop. It avoids external dependencies and contractual restrictions. Nonetheless, it limits the learning to the model’s initial abilities and can amplify biases and errors.\n(Aside: For large organizations, distilling external models or violating an API provider’s Terms of Service may carry reputation and legal risks. For example, the lead author of BERT at Google resigned after concerns that Bard was using data from ChatGPT . Similarly, ByteDance’s account was suspended after it used GPT data to train a model of its own.)\nSpecific to synthetic data, pretraining involves building the model’s base knowledge on generated data, or augmenting real-world datasets with model-generated data. For instruction-tuning, we build synthetic instruction-response pairs to improve the model’s comprehension of nuanced queries, as well as improve response precision. Preference tuning relies on a mix of positive and negative synthetic feedback to reward the model for desired behaviors, such as being helpful, honest, and harmless.\nWe’ll discuss two papers on distillation (Unnatural Instructions) and self-improvement (Self-Instruct). Then, we’ll summarize various distillation techniques before going through the details of some self-improvement approaches.\nSelf-Improvement vs. Distillation\nSelf-Instruct and Unnatural Instructions were published a day apart (in Dec 2022) but take very different approaches to generate synthetic data. The former bootstraps synthetic data from the model itself while the latter distills it from an external, stronger model.\nSelf-Instruct improves the instruction-following ability of a non-finetuned model (vanilla gpt-3) by bootstrapping off its own generations. First, they generate instructions, input context, and responses from the model. Then, they filter invalid or similar examples before using the remaining samples to finetune the original model.\nFor seed data, they start with 175 human-written tasks from the authors and their colleagues. Each task contains an instruction, optional context, and expected response.\n\"id\" : \"seed_task_0\" ,\n\"name\" : \"breakfast_suggestion\" ,\n\"instruction\" : \"Is there anything I can eat for a breakfast that doesn't include eggs,\nyet includes protein, and has roughly 700-1000 calories?\" ,\n\"instances\" : [\n\"input\" : \"\" ,\n\"output\" : \"Yes, you can have 1 oatmeal banana protein shake and 4 strips of bacon.\nThe oatmeal banana protein shake may contain 1/2 cup oatmeal, 60 grams\nwhey protein powder, 1/2 medium banana, 1tbsp flaxseed oil and 1/2 cup\nwater, totalling about 550 calories. The 4 strips of bacon contains\nabout 200 calories.\"\n],\n\"is_classification\" : false\n\"id\" : \"seed_task_1\" ,\n\"name\" : \"antonym_relation\" ,\n\"instruction\" : \"What is the relation between the given pairs?\" ,\n\"instances\" : [\n\"input\" : \"Night : Day :: Right : Left\" ,\n\"output\" : \"The relation between the given pairs is that they are opposites.\"\n],\n\"is_classification\" : false\n...\n\"id\" : \"seed_task_151\" ,\n\"name\" : \"toxic_sentence_detection\" ,\n\"instruction\" : \"Tell if the sentence contains toxic language.\" ,\n\"instances\" : [\n\"input\" : \"aw, no wonder she married you. you are a bastard.\" ,\n\"output\" : \"Yes\"\n],\n\"is_classification\" : true\n\n## full_text\n\nIt is increasingly viable to use synthetic data for pretraining, instruction-tuning, and preference-tuning. Synthetic data refers to data generated via a model or simulated environment, instead of naturally occurring on the internet or annotated by humans.\nRelative to human annotation, it’s faster and cheaper to generate task-specific synthetic data. Furthermore, the quality and diversity of synthetic data often exceeds that of human annotators, leading to improved performance and generalization when models are finetuned on synthetic data. Finally, synthetic data sidesteps privacy and copyright concerns by avoiding reliance on user data or possibly copyrighted content.\nThere are two main approaches to generate synthetic data: Distillation from a stronger model or Self-improvement on the model’s own output. The synthetic data can then be used in pretraining, instruction-tuning, and preference-tuning.\nPretraining\nInstruction-tuning\nPreference-tuning\nDistillation\nTinyStories , Phi-1 (textbooks) , Phi-1.5\nUnnatural Instructions , Alpaca , Alpagaus , Vicuna , Orca , Orca2 , WizardLM\nCode : WizardCoder , MagicCoder , WaveCoder , Phi-1 (exercises)\nStarling-7B ,\nSelf-improvement\nAlphaGeometry , WRAP\nSelf-Instruct , SPIN , Instruction Backtranslation , $\\text {ReST}^{EM}$ , CAI (SFT)\nSteerLM , Self-Rewarding , CAI (RL)\nDistillation transfers knowledge and reasoning skills from a stronger teacher to a weaker but more efficient student, optimizing for response quality and computation efficiency. In contrast, self-improvement has the model learn from its responses via an iterative loop. It avoids external dependencies and contractual restrictions. Nonetheless, it limits the learning to the model’s initial abilities and can amplify biases and errors.\n(Aside: For large organizations, distilling external models or violating an API provider’s Terms of Service may carry reputation and legal risks. For example, the lead author of BERT at Google resigned after concerns that Bard was using data from ChatGPT . Similarly, ByteDance’s account was suspended after it used GPT data to train a model of its own.)\nSpecific to synthetic data, pretraining involves building the model’s base knowledge on generated data, or augmenting real-world datasets with model-generated data. For instruction-tuning, we build synthetic instruction-response pairs to improve the model’s comprehension of nuanced queries, as well as improve response precision. Preference tuning relies on a mix of positive and negative synthetic feedback to reward the model for desired behaviors, such as being helpful, honest, and harmless.\nWe’ll discuss two papers on distillation (Unnatural Instructions) and self-improvement (Self-Instruct). Then, we’ll summarize various distillation techniques before going through the details of some self-improvement approaches.\nSelf-Improvement vs. Distillation\nSelf-Instruct and Unnatural Instructions were published a day apart (in Dec 2022) but take very different approaches to generate synthetic data. The former bootstraps synthetic data from the model itself while the latter distills it from an external, stronger model.\nSelf-Instruct improves the instruction-following ability of a non-finetuned model (vanilla gpt-3) by bootstrapping off its own generations. First, they generate instructions, input context, and responses from the model. Then, they filter invalid or similar examples before using the remaining samples to finetune the original model.\nFor seed data, they start with 175 human-written tasks from the authors and their colleagues. Each task contains an instruction, optional context, and expected response.\n\"id\" : \"seed_task_0\" ,\n\"name\" : \"breakfast_suggestion\" ,\n\"instruction\" : \"Is there anything I can eat for a breakfast that doesn't include eggs,\nyet includes protein, and has roughly 700-1000 calories?\" ,\n\"instances\" : [\n\"input\" : \"\" ,\n\"output\" : \"Yes, you can have 1 oatmeal banana protein shake and 4 strips of bacon.\nThe oatmeal banana protein shake may contain 1/2 cup oatmeal, 60 grams\nwhey protein powder, 1/2 medium banana, 1tbsp flaxseed oil and 1/2 cup\nwater, totalling about 550 calories. The 4 strips of bacon contains\nabout 200 calories.\"\n],\n\"is_classification\" : false\n\"id\" : \"seed_task_1\" ,\n\"name\" : \"antonym_relation\" ,\n\"instruction\" : \"What is the relation between the given pairs?\" ,\n\"instances\" : [\n\"input\" : \"Night : Day :: Right : Left\" ,\n\"output\" : \"The relation between the given pairs is that they are opposites.\"\n],\n\"is_classification\" : false\n...\n\"id\" : \"seed_task_151\" ,\n\"name\" : \"toxic_sentence_detection\" ,\n\"instruction\" : \"Tell if the sentence contains toxic language.\" ,\n\"instances\" : [\n\"input\" : \"aw, no wonder she married you. you are a bastard.\" ,\n\"output\" : \"Yes\"\n],\n\"is_classification\" : true\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 94\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Overcoming the bottleneck of human annotations in instruction-tuning, preference-tuning, and pretraining.\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] It is increasingly viable to use synthetic data for pretraining, instruction-tuning, and preference-tuning.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Synthetic data refers to data generated via a model or simulated environment, instead of naturally occurring on the internet or annotated by humans.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Relative to human annotation, it’s faster and cheaper to generate task-specific synthetic data.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Furthermore, the quality and diversity of synthetic data often exceeds that of human annotators, leading to improved performance and generalization when models are finetuned on synthetic data.\n6. [supporting_context / signal_card_candidate, relationship_graph_input / medium] Finally, synthetic data sidesteps privacy and copyright concerns by avoiding reliance on user data or possibly copyrighted content.\n"
+}

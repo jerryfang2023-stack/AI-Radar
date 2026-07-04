@@ -1,0 +1,284 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-041
+title: "Wayve launches $85M employee tender offer at $8.5B valuation"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation/"
+canonical_url: "https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation"
+source_name: "TechCrunch AI"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-07-04T01:56:59.885Z
+language: mixed
+full_text_hash: c5cb7cedcc9ab59c
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-041-wayve-launches-85m-employee-tender-offer-at-8-5b-valuation.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-041-wayve-launches-85m-employee-tender-offer-at-8-5b-valuation.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":4173,"paragraph_count":27,"sentence_count":23,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 4173
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c5cb7cedcc9ab59c","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 69d62894ca0cef5c
+content_hash: c5cb7cedcc9ab59c
+semantic_hash: c2b4b1786c07f4c6
+duplicate_of: ""
+first_seen_at: "2026-07-04T01:56:59.885Z"
+last_seen_at: 2026-07-04T01:56:59.885Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["TechCrunch AI","Microsoft","Nvidia"],"products":["agents"],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具","企业服务"],"roles":["开发者 / 工程团队","销售 / 客服"],"workflows":["采购 / 招投标"],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["$85M","$8.5B","7","04","30","2026","$85 million","$8.5 billion"],"quotes":["general-purpose"]}
+evidence_seed: {"company_actions":["Wayve’s offering is part of a growing trend of AI startups using employee tenders as a strategic tool to attract and retain talent.","5B valuation Marina Temkin 7:04 PM PDT · June 30, 2026 Wayve, a U.","-based self-driving tech startup, is allowing its employees to sell a portion of their vested equity."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Wayve’s offering is part of a growing trend of AI startups using employee tenders as a strategic tool to attract and retain talent.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"Image Credits: Wayve Transportation Wayve launches $85M employee tender offer at $8.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"5B valuation Marina Temkin 7:04 PM PDT · June 30, 2026 Wayve, a U.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"-based self-driving tech startup, is allowing its employees to sell a portion of their vested equity.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"The $85 million tender offer — essentially a structured opportunity for employees to sell shares back to investors — is being led by the company’s existing and new investors at the company’s latest valuation of $8.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"That valuation was set in February when the nine-year-old company raised a $1.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-04T01:56:59.885Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Wayve launches $85M employee tender offer at $8.5B valuation
+
+## clean_text
+
+Image Credits: Wayve
+Transportation
+Wayve launches $85M employee tender offer at $8.5B valuation
+Marina Temkin
+7:04 PM PDT · June 30, 2026
+Wayve, a U.K.-based self-driving tech startup, is allowing its employees to sell a portion of their vested equity. The $85 million tender offer — essentially a structured opportunity for employees to sell shares back to investors — is being led by the company’s existing and new investors at the company’s latest valuation of $8.5 billion .
+That valuation was set in February when the nine-year-old company raised a $1.2 billion Series D led by Eclipse, Balderton, and SoftBank Vision Fund 2, and included participation from Ontario Teachers’ Pension Plan, Baillie Gifford, Microsoft, Nvidia, and Uber.
+This is Wayve’s second employee liquidity event. The company previously held a tender offer alongside its $1.05 billion Series C funding round in May 2024.
+Wayve’s offering is part of a growing trend of AI startups. Rather than waiting years for an exit, companies are using tender offers as a retention tool, giving employees a reason to stick around rather than jump to a competitor — or start their own shop — the moment their options vest.
+Other startups that have recently completed employee tender offers include Decagon , which builds AI agents that handle customer service for enterprises like Duolingo and Hertz; ElevenLabs , the AI voice-generation company behind much of the internet’s synthetic speech and dubbing tools; Linear , a popular project-management platform built for software teams; and Clay , a sales and marketing automation tool that helps companies research and reach prospects. (Clay has run two tenders in the last nine months alone.)
+These startups are able to provide employee liquidity primarily because investors are eager to buy more of the equity in these high-growth companies, even at a premium, betting the businesses will be worth even more down the line.
+Wayve uses a self-learning approach to its autonomous driving. Instead of relying on the prebuilt, high-definition maps most self-driving programs use, its software is an end-to-end neural network that learns to drive purely from data — closer to how a human picks up driving through experience, its founders argue.
+In pursuit of a “general-purpose” AI driver — one that could, in theory, work across countries, cars, and road conditions — the company has more than doubled its headcount to 1,200 employees over the past year.
+Wayve is targeting robotaxi pilot launches in partnership with Uber later this year, while separately planning to integrate its AI software into Nissan’s next-generation driver-assist systems starting in 2027.
+Topics
+AI , liquidity , secondary offerings , Transportation , wayve
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Marina Temkin
+Reporter, Venture
+Marina Temkin is a venture capital and startups reporter at TechCrunch. Prior to joining TechCrunch, she wrote about VC for PitchBook and Venture Capital Journal. Earlier in her career, Marina was a financial analyst and earned a CFA charterholder designation.
+You can contact or verify outreach from Marina by emailing marina.temkin@techcrunch.com or via encrypted message at +1 347-683-3909 on Signal.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+After $18B IPO, Bending Spoons founder says success comes from minimizing luck
+Anna Heim
+The ‘Father of the Internet’ is finally retiring
+Tim Fernholz
+OpenClaw is finally available on Android and iOS
+Lucas Ropek
+Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role
+Julie Bort
+Flipper Device’s new Busy Bar is a customizable display for productivity
+Ivan Mehta
+Ford rehires ‘gray beard’ engineers after AI falls short
+Anthony Ha
+Govee’s smart nugget ice maker makes every iced drink feel like a luxury
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Wayve
+Transportation
+Wayve launches $85M employee tender offer at $8.5B valuation
+Marina Temkin
+7:04 PM PDT · June 30, 2026
+Wayve, a U.K.-based self-driving tech startup, is allowing its employees to sell a portion of their vested equity. The $85 million tender offer — essentially a structured opportunity for employees to sell shares back to investors — is being led by the company’s existing and new investors at the company’s latest valuation of $8.5 billion .
+That valuation was set in February when the nine-year-old company raised a $1.2 billion Series D led by Eclipse, Balderton, and SoftBank Vision Fund 2, and included participation from Ontario Teachers’ Pension Plan, Baillie Gifford, Microsoft, Nvidia, and Uber.
+This is Wayve’s second employee liquidity event. The company previously held a tender offer alongside its $1.05 billion Series C funding round in May 2024.
+Wayve’s offering is part of a growing trend of AI startups. Rather than waiting years for an exit, companies are using tender offers as a retention tool, giving employees a reason to stick around rather than jump to a competitor — or start their own shop — the moment their options vest.
+Other startups that have recently completed employee tender offers include Decagon , which builds AI agents that handle customer service for enterprises like Duolingo and Hertz; ElevenLabs , the AI voice-generation company behind much of the internet’s synthetic speech and dubbing tools; Linear , a popular project-management platform built for software teams; and Clay , a sales and marketing automation tool that helps companies research and reach prospects. (Clay has run two tenders in the last nine months alone.)
+These startups are able to provide employee liquidity primarily because investors are eager to buy more of the equity in these high-growth companies, even at a premium, betting the businesses will be worth even more down the line.
+Wayve uses a self-learning approach to its autonomous driving. Instead of relying on the prebuilt, high-definition maps most self-driving programs use, its software is an end-to-end neural network that learns to drive purely from data — closer to how a human picks up driving through experience, its founders argue.
+In pursuit of a “general-purpose” AI driver — one that could, in theory, work across countries, cars, and road conditions — the company has more than doubled its headcount to 1,200 employees over the past year.
+Wayve is targeting robotaxi pilot launches in partnership with Uber later this year, while separately planning to integrate its AI software into Nissan’s next-generation driver-assist systems starting in 2027.
+Topics
+AI , liquidity , secondary offerings , Transportation , wayve
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Marina Temkin
+Reporter, Venture
+Marina Temkin is a venture capital and startups reporter at TechCrunch. Prior to joining TechCrunch, she wrote about VC for PitchBook and Venture Capital Journal. Earlier in her career, Marina was a financial analyst and earned a CFA charterholder designation.
+You can contact or verify outreach from Marina by emailing marina.temkin@techcrunch.com or via encrypted message at +1 347-683-3909 on Signal.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+After $18B IPO, Bending Spoons founder says success comes from minimizing luck
+Anna Heim
+The ‘Father of the Internet’ is finally retiring
+Tim Fernholz
+OpenClaw is finally available on Android and iOS
+Lucas Ropek
+Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role
+Julie Bort
+Flipper Device’s new Busy Bar is a customizable display for productivity
+Ivan Mehta
+Ford rehires ‘gray beard’ engineers after AI falls short
+Anthony Ha
+Govee’s smart nugget ice maker makes every iced drink feel like a luxury
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":4173,"paragraph_count":27,"sentence_count":23,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Wayve’s offering is part of a growing trend of AI startups using employee tenders as a strategic tool to attract and retain talent.
+
+2. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Image Credits: Wayve Transportation Wayve launches $85M employee tender offer at $8.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   5B valuation Marina Temkin 7:04 PM PDT · June 30, 2026 Wayve, a U.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   -based self-driving tech startup, is allowing its employees to sell a portion of their vested equity.
+
+5. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   The $85 million tender offer — essentially a structured opportunity for employees to sell shares back to investors — is being led by the company’s existing and new investors at the company’s latest valuation of $8.
+
+6. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   That valuation was set in February when the nine-year-old company raised a $1.
+
+## business_elements
+
+- companies: TechCrunch AI, Microsoft, Nvidia
+- products: agents
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具, 企业服务
+- roles: 开发者 / 工程团队, 销售 / 客服
+- workflows: 采购 / 招投标
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 销售 / 客服
+- numbers: $85M, $8.5B, 7, 04, 30, 2026, $85 million, $8.5 billion
+- quotes: general-purpose
+
+## evidence_seed
+
+- company_actions: Wayve’s offering is part of a growing trend of AI startups using employee tenders as a strategic tool to attract and retain talent. / 5B valuation Marina Temkin 7:04 PM PDT · June 30, 2026 Wayve, a U. / -based self-driving tech startup, is allowing its employees to sell a portion of their vested equity.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Wayve’s offering is part of a growing trend of AI startups using employee tenders as a strategic tool to attract and retain talent.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
