@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.802Z
+collected_at: 2026-07-04T04:35:47.834Z
 language: mixed
 full_text_hash: c55dcd246ec31586
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-033-guardrails-ai-deploying-generative-ai-safely-with-ceo-shreya-rajpal.md"
@@ -58,8 +58,8 @@ url_hash: ba86ff2b94eb35f1
 content_hash: 6201b673fedc67d1
 semantic_hash: 62ff893e2cccff93
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.802Z"
-last_seen_at: 2026-07-04T01:56:59.802Z
+first_seen_at: "2026-07-04T04:35:47.834Z"
+last_seen_at: 2026-07-04T04:35:47.834Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"Today we're joined by Shreya Rajpal, Co-founder &amp; CEO of Guardrails AI for a conversation on the Guardrails platform, mitigating AI hallucinations and the role fine tuning and retrieval augmented generation play in that. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Guardrails AI: Deploying Generative AI Safely with CEO Shreya Rajpal The MAD Podcast with Matt Turck Sep 27, 2023 Share 00:00 52:01 Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro NVIDIA is a chip company.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So why does it put hundreds of researchers on building AI models — and then give them away for free?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bryan Catanzaro is VP of Applied Deep Learning Research at NVIDIA and one of the people whose work quietly underpins modern AI: he helped create cuDNN (NVIDIA's first deep learning product), co-invented DLSS, and named and built Megatron, the framework behind how much of the industry trains large models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Today he leads Nemotron, NVIDIA's family of open models — and Nemotron 3 Ultra, released just weeks ago, is one of the strongest open-weights models to come out of the US.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.802Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.834Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

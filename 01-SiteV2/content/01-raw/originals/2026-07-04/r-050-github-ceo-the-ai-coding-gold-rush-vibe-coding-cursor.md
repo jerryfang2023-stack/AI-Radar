@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.952Z
+collected_at: 2026-07-04T04:35:47.992Z
 language: mixed
 full_text_hash: d91fa11e76851c41
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-050-github-ceo-the-ai-coding-gold-rush-vibe-coding-cursor.md"
@@ -58,8 +58,8 @@ url_hash: 7098cb7f33e3ffe6
 content_hash: e21014bb9bb6013f
 semantic_hash: 4b18d04fcd67ac39
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.952Z"
-last_seen_at: 2026-07-04T01:56:59.952Z
+first_seen_at: "2026-07-04T04:35:47.992Z"
+last_seen_at: 2026-07-04T04:35:47.992Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"number","text":"AI coding is in full-blown gold-rush mode, and GitHub sits at the epicenter. In this episode, GitHub CEO Thomas Dohmke tells Matt Turck how a $7.5 B acquisition in 2018 became a $2 B ARR rocket ship, and reveals how Copilot was born from a secret AI strategy years before anyone else saw the opportunity.We dig into the dizzying pace of AI innovation: why developer tools are suddenly the fastest-growing startups in history, how GitHub’s multi-model approach (OpenAI, Anthropic Claude 4, Gemini 2.5,","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify GitHub CEO: The AI Coding Gold Rush, Vibe Coding & Cursor The MAD Podcast with Matt Turck Jun 12, 2025 Share 00:00 01:04:46 Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro NVIDIA is a chip company.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So why does it put hundreds of researchers on building AI models — and then give them away for free?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bryan Catanzaro is VP of Applied Deep Learning Research at NVIDIA and one of the people whose work quietly underpins modern AI: he helped create cuDNN (NVIDIA's first deep learning product), co-invented DLSS, and named and built Megatron, the framework behind how much of the industry trains large models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Today he leads Nemotron, NVIDIA's family of open models — and Nemotron 3 Ultra, released just weeks ago, is one of the strongest open-weights models to come out of the US.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.952Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.992Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

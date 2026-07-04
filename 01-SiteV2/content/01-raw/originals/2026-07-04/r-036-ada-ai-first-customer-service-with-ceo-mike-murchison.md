@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.838Z
+collected_at: 2026-07-04T04:35:47.871Z
 language: mixed
 full_text_hash: 9730a5282700643f
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-036-ada-ai-first-customer-service-with-ceo-mike-murchison.md"
@@ -58,8 +58,8 @@ url_hash: 98f558652708c9d7
 content_hash: 67993e5791534c35
 semantic_hash: 9d4adf96018b88b1
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.838Z"
-last_seen_at: 2026-07-04T01:56:59.838Z
+first_seen_at: "2026-07-04T04:35:47.871Z"
+last_seen_at: 2026-07-04T04:35:47.871Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: []
 key_excerpts: [{"type":"case_detail","text":"Today we're joined by Mike Murchison, Co-Founder &amp; CEO of AI-native customer service platform Ada, for a talk about about the Ada platform, reinventing customer service in the age of Generative AI, and how AI should be onboarded and trained like an employee. ]]>","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Listen on Spotify Available on Report content on Spotify Ada: AI-First Customer Service with CEO Mike Murchison The MAD Podcast with Matt Turck Jul 26, 2023 Share 00:00 47:14 Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro NVIDIA is a chip company.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"So why does it put hundreds of researchers on building AI models — and then give them away for free?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bryan Catanzaro is VP of Applied Deep Learning Research at NVIDIA and one of the people whose work quietly underpins modern AI: he helped create cuDNN (NVIDIA's first deep learning product), co-invented DLSS, and named and built Megatron, the framework behind how much of the industry trains large models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Today he leads Nemotron, NVIDIA's family of open models — and Nemotron 3 Ultra, released just weeks ago, is one of the strongest open-weights models to come out of the US.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.838Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.871Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

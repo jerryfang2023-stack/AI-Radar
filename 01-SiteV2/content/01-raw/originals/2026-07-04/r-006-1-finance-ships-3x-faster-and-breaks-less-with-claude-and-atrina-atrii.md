@@ -23,7 +23,7 @@ search_path: "official_original"
 search_path_label: "官方原始路径"
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.560Z
+collected_at: 2026-07-04T04:35:47.566Z
 language: mixed
 full_text_hash: 51efa7109c4f6822
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-006-1-finance-ships-3x-faster-and-breaks-less-with-claude-and-atrina-atrii.md"
@@ -58,8 +58,8 @@ url_hash: c45810378f8789ff
 content_hash: 51efa7109c4f6822
 semantic_hash: c7dea4a2fbcc4508
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.560Z"
-last_seen_at: 2026-07-04T01:56:59.560Z
+first_seen_at: "2026-07-04T04:35:47.566Z"
+last_seen_at: 2026-07-04T04:35:47.566Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: []
 key_excerpts: [{"type":"number","text":"1 Finance ships 3x faster and breaks less, with Claude and Atrina - Atriina Industry: Financial services (India) · Product: Claude Code, Claude for Teams/Enterprise · Partner: Atrina · Location: Asia Pacific A full-stack AI tax platform, live in 1.5 months instead of an estimated 6, roughly 4x fas..... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip links Skip to content Industry: Financial services (India) · Product: Claude Code, Claude for Teams/Enterprise · Partner: Atrina · Location: Asia Pacific PlanMyTax.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"5 months instead of an estimated 6, roughly 4x faster than the original timeline 3x faster development cycles across the wider engineering organisation, from three months down to about one 70% fewer rollbacks and 50%+ fewer production incidents , even as release speed went up QA pass rate up 80% , alongside 60% faster pull request turnaround From a monthly pilot to a signed annual contract , scaling to 75 developers before 1 Finance committed a core team of 30 to a long-term plan, trial spend converting to locked-i","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Behind that advisory business is an engineering team that ships product on a continuous basis.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"To scale Claude across that team without the usual pilot-then-plateau pattern, 1 Finance brought in Atrina to run its Claude adoption program as an external AI Center of Excellence.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"With Claude, 1 Finance: Took PlanMyTax.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.560Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.566Z
 theme: targeted-pool-gap-refill
 keyword_group: targeted-pool-gap-refill
 copyright_note: local research archive only

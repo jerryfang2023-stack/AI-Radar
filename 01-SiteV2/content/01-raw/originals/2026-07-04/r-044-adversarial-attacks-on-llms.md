@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.900Z
+collected_at: 2026-07-04T04:35:47.939Z
 language: mixed
 full_text_hash: 94707aaf4f4f4551
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-044-adversarial-attacks-on-llms.md"
@@ -58,8 +58,8 @@ url_hash: 7167a366360279f9
 content_hash: d9fcde9c29a5a346
 semantic_hash: 693d210e2b1710d0
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.900Z"
-last_seen_at: 2026-07-04T01:56:59.900Z
+first_seen_at: "2026-07-04T04:35:47.939Z"
+last_seen_at: 2026-07-04T04:35:47.939Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"workflow_change","text":"&lt;p&gt;The use of large language models in the real world has strongly accelerated by the launch of ChatGPT. We (including my team at OpenAI, shoutout to them) have invested a lot of effort to build default safe behavior into the model during the alignment process (e.g. via &lt;a href=&#34;https://openai.com/research/learning-to-summarize-with-human-feedback&#34;&gt;RLHF&lt;/a&gt;). However, adversarial attacks or jailbreak prompts could potentially trigger the model to output something undesi","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Adversarial Attacks on LLMs The use of large language models in the real world has strongly accelerated by the launch of ChatGPT.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"We (including my team at OpenAI, shoutout to them) have invested a lot of effort to build default safe behavior into the model during the alignment process (e.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"However, adversarial attacks or jailbreak prompts could potentially trigger the model to output something undesired.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"A large body of ground work on adversarial attacks is on images, and differently it operates in the continuous, high-dimensional space.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Attacks for discrete data like text have been considered to be a lot more challenging, due to lack of direct gradient signals.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.900Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.939Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

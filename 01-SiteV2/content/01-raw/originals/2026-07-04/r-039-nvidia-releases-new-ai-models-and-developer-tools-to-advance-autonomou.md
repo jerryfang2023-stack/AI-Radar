@@ -23,9 +23,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.875Z
+collected_at: 2026-07-04T04:35:47.915Z
 language: mixed
-full_text_hash: 3d483689760ee2a2
+full_text_hash: c2c6b9140a2f2bc7
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-039-nvidia-releases-new-ai-models-and-developer-tools-to-advance-autonomou.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-039-nvidia-releases-new-ai-models-and-developer-tools-to-advance-autonomou.json"
 html_snapshot_path: ""
@@ -34,14 +34,14 @@ fetch_status: fetched-readable-text-content-container
 extraction_quality: high
 extraction_method: "content-container"
 readability_score: 97
-extractor_diagnostics: {"readability_score":97,"text_length":6305,"paragraph_count":34,"sentence_count":32,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+extractor_diagnostics: {"readability_score":97,"text_length":6313,"paragraph_count":34,"sentence_count":32,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
 has_full_text: true
-content_length: 6305
+content_length: 6313
 fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3d483689760ee2a2","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c2c6b9140a2f2bc7","missing":[]}
 source_volatility: low
 community_name: ""
 capture_scope: article_text
@@ -55,11 +55,11 @@ paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: b3d4642872ace115
-content_hash: 3d483689760ee2a2
+content_hash: c2c6b9140a2f2bc7
 semantic_hash: b51b4a53c98c69b5
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.875Z"
-last_seen_at: 2026-07-04T01:56:59.875Z
+first_seen_at: "2026-07-04T04:35:47.915Z"
+last_seen_at: 2026-07-04T04:35:47.915Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"Autonomous vehicle (AV) stacks are evolving from many distinct models to a unified, end-to-end architecture that executes driving actions directly from sensor data. This transition to using larger models is drastically increasing the demand for high-quality, physically based sensor data for training, testing and validation. To help accelerate the development of next-generation AV architectures, NVIDIA [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Autonomous vehicle (AV ) stacks are evolving from many distinct models to a unified, end-to-end architecture that executes driving actions directly from sensor data.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"This transition to using larger models is drastically increasing the demand for high-quality, physically based sensor data for training, testing and validation.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"To help accelerate the development of next-generation AV architectures, NVIDIA today released NVIDIA Cosmos Predict-2 — a new world foundation model with improved future world state prediction capabilities for high-quality synthetic data generation — as well as new developers tools.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Cosmos Predict-2 is part of the NVIDIA Cosmos platform , which equips developers with technologies to tackle the most complex challenges in end-to-end AV development.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Industry leaders such as Oxa, Plus and Uber are using Cosmos models to rapidly scale synthetic data generation for AV development.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.875Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.915Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
@@ -129,7 +129,7 @@ Synthetic Data Generation
 Transportation
 Related News
 AI Infrastructure
-NVIDIA Unlocks AI Compute at Scale, Inviting Partners to Power the AI Infrastructure Buildout
+NVIDIA Unlocks AI Compute at Scale, Inviting Capital Partners to Power the AI Infrastructure Buildout
 Jul 1, 2026
 AI Infrastructure
 Claude Meets Blackwell Ultra: Anthropic’s Models Now Run on NVIDIA GB300 in Azure
@@ -192,7 +192,7 @@ Synthetic Data Generation
 Transportation
 Related News
 AI Infrastructure
-NVIDIA Unlocks AI Compute at Scale, Inviting Partners to Power the AI Infrastructure Buildout
+NVIDIA Unlocks AI Compute at Scale, Inviting Capital Partners to Power the AI Infrastructure Buildout
 Jul 1, 2026
 AI Infrastructure
 Claude Meets Blackwell Ultra: Anthropic’s Models Now Run on NVIDIA GB300 in Azure
@@ -214,7 +214,7 @@ Share on Mastodon
 - readability_score: 97
 - fetch_status: fetched-readable-text-content-container
 - extraction_quality: high
-- diagnostics: {"readability_score":97,"text_length":6305,"paragraph_count":34,"sentence_count":32,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+- diagnostics: {"readability_score":97,"text_length":6313,"paragraph_count":34,"sentence_count":32,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
 
 ## markdown_snapshot
 

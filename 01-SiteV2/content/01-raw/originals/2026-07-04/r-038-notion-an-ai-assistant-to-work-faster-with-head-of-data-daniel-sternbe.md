@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.863Z
+collected_at: 2026-07-04T04:35:47.903Z
 language: mixed
 full_text_hash: 3728099b7f4f8376
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-038-notion-an-ai-assistant-to-work-faster-with-head-of-data-daniel-sternbe.md"
@@ -58,8 +58,8 @@ url_hash: c37feb9dd15401dd
 content_hash: aa96bb1e5d5a84ba
 semantic_hash: 45b9ae5c6afa191e
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.863Z"
-last_seen_at: 2026-07-04T01:56:59.863Z
+first_seen_at: "2026-07-04T04:35:47.903Z"
+last_seen_at: 2026-07-04T04:35:47.903Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"workflow_change","text":"Today we're joined by Daniel Sternberg, Head of Data at Notion, for a conversation on the release of Notion AI and the infrastructure and processes needed to launch and integrate an AI product. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Notion: An AI Assistant to Work Faster with Head of Data Daniel Sternberg The MAD Podcast with Matt Turck Jun 07, 2023 Share 00:00 28:49 Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro NVIDIA is a chip company.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So why does it put hundreds of researchers on building AI models — and then give them away for free?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bryan Catanzaro is VP of Applied Deep Learning Research at NVIDIA and one of the people whose work quietly underpins modern AI: he helped create cuDNN (NVIDIA's first deep learning product), co-invented DLSS, and named and built Megatron, the framework behind how much of the industry trains large models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Today he leads Nemotron, NVIDIA's family of open models — and Nemotron 3 Ultra, released just weeks ago, is one of the strongest open-weights models to come out of the US.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.863Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.903Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

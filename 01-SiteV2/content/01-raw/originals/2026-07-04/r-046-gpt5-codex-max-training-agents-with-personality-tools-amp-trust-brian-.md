@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.917Z
+collected_at: 2026-07-04T04:35:47.956Z
 language: mixed
 full_text_hash: 4cb1c826b029f9f9
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-046-gpt5-codex-max-training-agents-with-personality-tools-amp-trust-brian-.md"
@@ -58,8 +58,8 @@ url_hash: c3c0c4395571c39d
 content_hash: 4cb1c826b029f9f9
 semantic_hash: b8fa39e0cffe25be
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.917Z"
-last_seen_at: 2026-07-04T01:56:59.917Z
+first_seen_at: "2026-07-04T04:35:47.956Z"
+last_seen_at: 2026-07-04T04:35:47.956Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"product_update","text":"From the frontlines of OpenAI’s Codex and GPT-5 training teams, Bryan and Bill are building the future of AI-powered coding—where agents don’t just autocomplete, they architect, refactor, and ship entire features while you sleep. We caught up with them at AI Engineer Conference right after the launch of Codex Max, OpenAI’s newest long-running coding agent designed to work for 24+ hours straight, manage its own context, and spawn sub-agents to parallelize work across your entire codebase.We sat d","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast ⚡️GPT5-Codex-Max: Training Agents with Personality, Tools & Trust — Brian Fioca + Bill Chen, OpenAI 1× 0:00 Current time: 0:00 / Total time: -27:45 -27:45 Audio playback is not supported on your browser.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"⚡️GPT5-Codex-Max: Training Agents with Personality, Tools & Trust — Brian Fioca + Bill Chen, OpenAI Dec 26, 2025 Share Transcript From the frontlines of OpenAI’s Codex and GPT-5 training teams, Bryan and Bill are building the future of AI-powered coding—where agents don’t just autocomplete, they architect, refactor, and ship entire features while you sleep.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"We caught up with them at AI Engineer Conference right after the launch of Codex Max , OpenAI’s newest long-running coding agent designed to work for 24+ hours straight, manage its own context, and spawn sub-agents to parallelize work across your entire codebase.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"We sat down with Bryan and Bill to dig into what it actually takes to train a model that developers trust —why personality, communication, and planning matter as much as raw capability, how Codex is trained with strong opinions about tools (it loves rg over grep, seriously), why the abstraction layer is moving from models to full-stack agents you can plug into VS Code or Zed, how OpenAI partners co-develop tool integrations and discover unexpected model habits (like renaming tools to match Codex’s internal training","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"We discuss: What Codex Max is: a long-running coding agent that can work 24+ hours, manage its own context window, and spawn sub-agents for parallel work Why the name “Max”: maximalist, maximization, speed and endurance—it’s simply better and faster for the same problems Training for personality : communication, planning, context gathering, and checking your work as behavioral characteristics, not just capabilities How Codex develops habits like preferring rg over grep, and why renaming tools to match its training ","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.917Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.956Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

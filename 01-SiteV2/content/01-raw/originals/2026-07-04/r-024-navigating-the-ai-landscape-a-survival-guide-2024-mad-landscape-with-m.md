@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.689Z
+collected_at: 2026-07-04T04:35:47.718Z
 language: mixed
 full_text_hash: cfbdc6ac774f9fac
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-024-navigating-the-ai-landscape-a-survival-guide-2024-mad-landscape-with-m.md"
@@ -58,8 +58,8 @@ url_hash: 1a3bdf18762f2897
 content_hash: ffb2cee0810ca6aa
 semantic_hash: 1c60d070c3c6914c
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.689Z"
-last_seen_at: 2026-07-04T01:56:59.689Z
+first_seen_at: "2026-07-04T04:35:47.718Z"
+last_seen_at: 2026-07-04T04:35:47.718Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"🔗 2024 MAD Landscape: https://mad.firstmark.com 📃 PDF: https://mattturck.com/landscape/mad2024.pdf 📃 Blog post: https://mattturck.com/mad2024/ In this episode, we delve into the 2024 machine learning, AI, and data scene (MAD), examining an evergrowing array of over 2011 logos, the meteoric rise of open-source AI, and the anticipated advancements in AI agents and edge AI technology. Gain valuable perspectives on the saturated AI market, the dilemmas and prospects open source AI presents, and","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Navigating the AI Landscape: A Survival Guide | 2024 MAD Landscape with Matt Turck and Aman Kabeer The MAD Podcast with Matt Turck Apr 26, 2024 Share 00:00 48:58 Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro NVIDIA is a chip company.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So why does it put hundreds of researchers on building AI models — and then give them away for free?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bryan Catanzaro is VP of Applied Deep Learning Research at NVIDIA and one of the people whose work quietly underpins modern AI: he helped create cuDNN (NVIDIA's first deep learning product), co-invented DLSS, and named and built Megatron, the framework behind how much of the industry trains large models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Today he leads Nemotron, NVIDIA's family of open models — and Nemotron 3 Ultra, released just weeks ago, is one of the strongest open-weights models to come out of the US.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.689Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.718Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

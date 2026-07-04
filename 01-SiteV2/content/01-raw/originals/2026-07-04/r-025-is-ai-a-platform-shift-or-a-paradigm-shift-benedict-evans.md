@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.702Z
+collected_at: 2026-07-04T04:35:47.731Z
 language: mixed
 full_text_hash: 5f84fac86deb70f1
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-025-is-ai-a-platform-shift-or-a-paradigm-shift-benedict-evans.md"
@@ -58,8 +58,8 @@ url_hash: 7e4c352272391aaa
 content_hash: 9144cd51537ebc51
 semantic_hash: 3106ef8afcfbb73f
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.702Z"
-last_seen_at: 2026-07-04T01:56:59.702Z
+first_seen_at: "2026-07-04T04:35:47.731Z"
+last_seen_at: 2026-07-04T04:35:47.731Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"In this episode, we sat down with Benedict Evans, a leading voice in the tech industry and a former partner at Andreessen Horowitz. Known for his sharp insights and forward-thinking analysis, Benedict shares his expert perspective on what generative AI means for the future of technology, business, and society at large. Specifically, we dive deep into the evolving landscapes of generative AI, augmented and virtual reality, and the critical issue of AI bias. Join us as Benedict Evans provides","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Is AI a platform shift or a paradigm shift?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"| Benedict Evans The MAD Podcast with Matt Turck Apr 10, 2024 Share 00:00 51:31 Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro NVIDIA is a chip company.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So why does it put hundreds of researchers on building AI models — and then give them away for free?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bryan Catanzaro is VP of Applied Deep Learning Research at NVIDIA and one of the people whose work quietly underpins modern AI: he helped create cuDNN (NVIDIA's first deep learning product), co-invented DLSS, and named and built Megatron, the framework behind how much of the industry trains large models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.702Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.731Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

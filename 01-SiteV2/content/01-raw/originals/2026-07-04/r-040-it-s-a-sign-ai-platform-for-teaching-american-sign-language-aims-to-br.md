@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.880Z
+collected_at: 2026-07-04T04:35:47.920Z
 language: mixed
 full_text_hash: 553c5b19b926d8ea
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-040-it-s-a-sign-ai-platform-for-teaching-american-sign-language-aims-to-br.md"
@@ -58,8 +58,8 @@ url_hash: d65e15eea4de9bf3
 content_hash: 553c5b19b926d8ea
 semantic_hash: 9ad09901090c0957
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.880Z"
-last_seen_at: 2026-07-04T01:56:59.880Z
+first_seen_at: "2026-07-04T04:35:47.920Z"
+last_seen_at: 2026-07-04T04:35:47.920Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例","没有变化前
 key_excerpts: [{"type":"company_action","text":"American Sign Language is the third most prevalent language in the United States — but there are vastly fewer AI tools developed with ASL data than data representing the country’s most common languages, English and Spanish. NVIDIA, the American Society for Deaf Children and creative agency Hello Monday are helping close this gap with Signs, [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content American Sign Language is the third most prevalent language in the United States — but there are vastly fewer AI tools developed with ASL data than data representing the country’s most common languages, English and Spanish.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"NVIDIA, the American Society for Deaf Children and creative agency Hello Monday are helping close this gap with Signs, an interactive web platform built to support ASL learning and the development of accessible AI applications.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Sign language learners can access the platform’s validated library of ASL signs to expand their vocabulary with the help of a 3D avatar that demonstrates signs — and use an AI tool that analyzes webcam footage to receive real-time feedback on their signing.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Signers of any skill level can contribute by signing specific words to help build a video dataset for ASL.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The dataset — which NVIDIA aims to grow to 400,000 video clips representing 1,000 signed words — is being validated by fluent ASL users and interpreters to ensure the accuracy of each sign, resulting in a high-quality visual dictionary and teaching tool.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.880Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.920Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

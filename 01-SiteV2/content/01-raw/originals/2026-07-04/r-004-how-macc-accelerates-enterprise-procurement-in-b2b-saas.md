@@ -23,7 +23,7 @@ search_path: "procurement_marketplace"
 search_path_label: "采购 / 招投标 / Marketplace 路径"
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.552Z
+collected_at: 2026-07-04T04:35:47.552Z
 language: mixed
 full_text_hash: 7acffee419fdaaaf
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-004-how-macc-accelerates-enterprise-procurement-in-b2b-saas.md"
@@ -58,8 +58,8 @@ url_hash: f7dcb352df9054ad
 content_hash: 7acffee419fdaaaf
 semantic_hash: 5690b4d515606116
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.552Z"
-last_seen_at: 2026-07-04T01:56:59.552Z
+first_seen_at: "2026-07-04T04:35:47.552Z"
+last_seen_at: 2026-07-04T04:35:47.552Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: []
 key_excerpts: [{"type":"case_detail","text":"How MACC accelerates enterprise procurement in B2B SaaS Trending searches What is product marketing? How to price a product: your complete guide What is positioning? Popular Try PMM-GPT Ask real questions and get the best answers, quicker. Resource topic All (0) All (0) All (0) Your sear... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=procurement_marketplace","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Content Hub > Sales Enablement How MACC accelerates enterprise procurement in B2B SaaS How MACC accelerates enterprise procurement in B2B SaaS Go-to-Market SaaS Ella Berylo May 13, 2026 2 min read Get a copy Follow us on LinkedIn Contents Enterprise software deals rarely fail because of product capability.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"More often, they slow down during procurement.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Security reviews, vendor onboarding, payment setup, and legal negotiations can extend purchasing cycles for months.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Even when a product team has already selected a solution, internal procurement processes can delay deployment.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"For companies selling to enterprises running on Microsoft infrastructure, Azure Marketplace, combined with Microsoft Azure Consumption Commitments (MACC), offers a significantly faster path from product evaluation to purchase.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.552Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.552Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only

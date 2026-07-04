@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.913Z
+collected_at: 2026-07-04T04:35:47.952Z
 language: mixed
 full_text_hash: e4fb2621ea6f4605
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-045-claude-code-for-finance-the-global-memory-shortage-doug-o-laughlin-sem.md"
@@ -58,8 +58,8 @@ url_hash: 11b5d5268c640101
 content_hash: e4fb2621ea6f4605
 semantic_hash: b4a2a2f234654987
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.913Z"
-last_seen_at: 2026-07-04T01:56:59.913Z
+first_seen_at: "2026-07-04T04:35:47.952Z"
+last_seen_at: 2026-07-04T04:35:47.952Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"product_update","text":"This is a free preview of a paid episode. To hear more, visit www.latent.spaceFirst speakers for AIE Europe and AIEi Miami have been announced. If you’re in Asia/Aus, come by Singapore and Melbourne. AI Engineering is going global!One year ago today, Anthropic launched Claude Code, to not much fanfare:The word of mouth was incredibly strong however, and so we were glad to be one of the first podcasts to invite Boris and Cat on in early May:As we discussed on the pod, all CC usage was API-based a","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast Claude Code for Finance + The Global Memory Shortage: Doug O'Laughlin, SemiAnalysis 14 1× Preview 0:00 Current time: 0:00 / Total time: -2:04:13 -2:04:13 Audio playback is not supported on your browser.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Claude Code for Finance + The Global Memory Shortage: Doug O'Laughlin, SemiAnalysis A special double pod on the 1 year anniversary of Claude Code: we chat with one of its most vocal fans, who thinks it will write 25-50% of all code on GitHub, plus get a breakdown on the memory crunch swyx (Shawn) Feb 24, 2026 ∙ Paid 14 Share First speakers for AIE Europe and AIEi Miami have been announced.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"If you’re in Asia/Aus, come by Singapore and Melbourne .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"AI Engineering is going global!","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"One year ago today , Anthropic launched Claude Code , to not much fanfare : The word of mouth was incredibly strong however, and so we were glad to be one of the first podcasts to invite Boris and Cat on in early May: Claude Code: Anthropic's Agent in Your Terminal May 7, 2025 Last few days for AI Engineer early bird tickets - most of the speakers have been announced!","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.913Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.952Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
