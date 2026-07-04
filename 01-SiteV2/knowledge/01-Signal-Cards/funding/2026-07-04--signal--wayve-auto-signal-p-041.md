@@ -1,5 +1,5 @@
 ---
-id: SIG-20260704-A02
+id: SIG-20260704-A03
 type: signal_card
 signal_type: funding
 title: "Wayve 获得 $85M 融资"
@@ -9,8 +9,8 @@ source_title: "Wayve launches $85M employee tender offer at $8.5B valuation"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-04T01:57:00.843Z
-updated_at: 2026-07-04T01:57:00.843Z
+created_at: 2026-07-04T04:35:48.644Z
+updated_at: 2026-07-04T04:35:48.644Z
 
 raw_refs: ["R-041"]
 pool_refs: ["P-041"]

@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.923Z
+collected_at: 2026-07-04T04:35:47.962Z
 language: mixed
 full_text_hash: a41a953ba33cc5cf
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-047-inside-github-s-ai-revolution-jared-palmer-reveals-agent-hq-amp-the-fu.md"
@@ -58,8 +58,8 @@ url_hash: a8651ae4781c26ec
 content_hash: a41a953ba33cc5cf
 semantic_hash: 977aa6548a9c0931
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.923Z"
-last_seen_at: 2026-07-04T01:56:59.923Z
+first_seen_at: "2026-07-04T04:35:47.962Z"
+last_seen_at: 2026-07-04T04:35:47.962Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: []
 key_excerpts: [{"type":"case_detail","text":"Jared Palmer, SVP at GitHub and VP of CoreAI at Microsoft, joins Latent Space for an in-depth look at the evolution of coding agents and modern developer tools. Recently joining after leading AI initiatives at Vercel, Palmer shares firsthand insights from behind the scenes at GitHub Universe, including the launch of Agent HQ which is a new collaboration hub for coding agents and developers.This episode traces Palmer’s journey from building Copilot inspired tools to pioneering the focused Next.js","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast ⚡ Inside GitHub’s AI Revolution: Jared Palmer Reveals Agent HQ & The Future of Coding Agents 1× 0:00 Current time: 0:00 / Total time: -35:51 -35:51 Audio playback is not supported on your browser.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"⚡ Inside GitHub’s AI Revolution: Jared Palmer Reveals Agent HQ & The Future of Coding Agents Nov 10, 2025 Share Transcript Jared Palmer , SVP at GitHub and VP of CoreAI at Microsoft , joins Latent Space for an in-depth look at the evolution of coding agents and modern developer tools.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Recently joining after leading AI initiatives at Vercel, Palmer shares firsthand insights from behind the scenes at GitHub Universe , including the launch of Agent HQ which is a new collaboration hub for coding agents and developers.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"This episode traces Palmer’s journey from building Copilot inspired tools to pioneering the focused Next.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"js coding agent, v0, and explores how platform constraints fostered rapid experimentation and a breakout success in AI-powered frontend development.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.923Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.962Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

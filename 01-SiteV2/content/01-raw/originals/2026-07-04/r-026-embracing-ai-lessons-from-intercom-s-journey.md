@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.714Z
+collected_at: 2026-07-04T04:35:47.744Z
 language: mixed
 full_text_hash: 7320d92667e8ee11
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-026-embracing-ai-lessons-from-intercom-s-journey.md"
@@ -58,8 +58,8 @@ url_hash: fbf3efce35cf899d
 content_hash: d7e0bcc7f701c973
 semantic_hash: 5d53f6e42e79a1e1
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.714Z"
-last_seen_at: 2026-07-04T01:56:59.714Z
+first_seen_at: "2026-07-04T04:35:47.744Z"
+last_seen_at: 2026-07-04T04:35:47.744Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: []
 key_excerpts: [{"type":"case_detail","text":"In this episode, we sat down with Des Traynor, co-founder of Intercom, to explore the seismic shift towards Artificial Intelligence in customer service software. Intercom has gone all-in to embrace AI as people&#39;s expectations of what chatbots can do started growing with the release of ChatGPT. Des shares the pivotal moments and strategic decisions that led to this transition, highlighting the urgency and vision that propelled Intercom to integrate AI into their core offerings. Des also del","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Embracing AI: Lessons from Intercom's Journey The MAD Podcast with Matt Turck Feb 29, 2024 Share 00:00 01:01:59 Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro NVIDIA is a chip company.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So why does it put hundreds of researchers on building AI models — and then give them away for free?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bryan Catanzaro is VP of Applied Deep Learning Research at NVIDIA and one of the people whose work quietly underpins modern AI: he helped create cuDNN (NVIDIA's first deep learning product), co-invented DLSS, and named and built Megatron, the framework behind how much of the industry trains large models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Today he leads Nemotron, NVIDIA's family of open models — and Nemotron 3 Ultra, released just weeks ago, is one of the strongest open-weights models to come out of the US.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.714Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.744Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

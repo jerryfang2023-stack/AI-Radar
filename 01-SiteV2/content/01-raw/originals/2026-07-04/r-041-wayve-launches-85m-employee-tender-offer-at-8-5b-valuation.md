@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.885Z
+collected_at: 2026-07-04T04:35:47.925Z
 language: mixed
 full_text_hash: c5cb7cedcc9ab59c
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-041-wayve-launches-85m-employee-tender-offer-at-8-5b-valuation.md"
@@ -58,8 +58,8 @@ url_hash: 69d62894ca0cef5c
 content_hash: c5cb7cedcc9ab59c
 semantic_hash: c2b4b1786c07f4c6
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.885Z"
-last_seen_at: 2026-07-04T01:56:59.885Z
+first_seen_at: "2026-07-04T04:35:47.925Z"
+last_seen_at: 2026-07-04T04:35:47.925Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"Wayve’s offering is part of a growing trend of AI startups using employee tenders as a strategic tool to attract and retain talent.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"Image Credits: Wayve Transportation Wayve launches $85M employee tender offer at $8.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"5B valuation Marina Temkin 7:04 PM PDT · June 30, 2026 Wayve, a U.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"-based self-driving tech startup, is allowing its employees to sell a portion of their vested equity.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"The $85 million tender offer — essentially a structured opportunity for employees to sell shares back to investors — is being led by the company’s existing and new investors at the company’s latest valuation of $8.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"That valuation was set in February when the nine-year-old company raised a $1.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.885Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.925Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

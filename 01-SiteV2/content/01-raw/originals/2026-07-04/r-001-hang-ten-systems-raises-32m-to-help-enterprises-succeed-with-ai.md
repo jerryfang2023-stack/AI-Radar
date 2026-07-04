@@ -23,7 +23,7 @@ search_path: "capital_startup"
 search_path_label: "资本与创业公司路径"
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.535Z
+collected_at: 2026-07-04T04:35:47.529Z
 language: mixed
 full_text_hash: 2f3ab64f96763d7b
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-001-hang-ten-systems-raises-32m-to-help-enterprises-succeed-with-ai.md"
@@ -58,8 +58,8 @@ url_hash: 9d61f491d8c24d5e
 content_hash: 2f3ab64f96763d7b
 semantic_hash: 5a7a193d77acb941
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.535Z"
-last_seen_at: 2026-07-04T01:56:59.535Z
+first_seen_at: "2026-07-04T04:35:47.529Z"
+last_seen_at: 2026-07-04T04:35:47.529Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: []
 key_excerpts: [{"type":"funding","text":"Hang Ten Systems Raises $32M to Help Enterprises Succeed With AI - Newsletter - AI Funding & Investment # Hang Ten Systems Raises $32M to Help Enterprises Succeed With AI - James Dargan - July 2, 2026 - 7 min read Insider Brief - Hang Ten Systems, an enterprise AI services company, has raised $... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Skip to content AI Funding & Investment Hang Ten Systems Raises $32M to Help Enterprises Succeed With AI James Dargan July 2, 2026 7 min read Insider Brief Hang Ten Systems , an enterprise AI services company, has raised $32 million in seed funding led by Mayfield , with strategic participation from Aramco Ventures , to help large enterprises move beyond AI experimentation and into production deployment using agentic code generation, a reusable skills library, and deep domain expertise.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The company is led by CEO Dr.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Vishal Sikka , formerly CEO of Infosys and Executive Board Member at SAP , and is already working with marquee customers including Siemens Gamesa Renewable Energy and Fresenius on AI-native project delivery across enterprise finance, HR, and new product development.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Hang Ten positions itself as an alternative to traditional enterprise software customization, offering an AI-native operating model that builds, changes, and runs business-critical software at a fraction of conventional cost and timelines, with an expert forward-deployed engineer bench supporting continuous delivery.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"PRESS RELEASE — Hang Ten Systems, an enterprise AI services company, has raised $32 million in seed funding.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.535Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.529Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only

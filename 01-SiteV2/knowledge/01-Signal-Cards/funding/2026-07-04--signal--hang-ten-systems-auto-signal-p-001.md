@@ -9,8 +9,8 @@ source_title: "Hang Ten Systems Raises $32M to Help Enterprises Succeed With AI"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-04T01:57:00.843Z
-updated_at: 2026-07-04T01:57:00.843Z
+created_at: 2026-07-04T04:35:48.644Z
+updated_at: 2026-07-04T04:35:48.644Z
 
 raw_refs: ["R-001"]
 pool_refs: ["P-001"]

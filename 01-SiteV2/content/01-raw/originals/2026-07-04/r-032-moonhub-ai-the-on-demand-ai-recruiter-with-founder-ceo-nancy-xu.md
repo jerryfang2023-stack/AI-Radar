@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.788Z
+collected_at: 2026-07-04T04:35:47.822Z
 language: mixed
 full_text_hash: 08be2face6a16e44
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-032-moonhub-ai-the-on-demand-ai-recruiter-with-founder-ceo-nancy-xu.md"
@@ -58,8 +58,8 @@ url_hash: 1193d10e824a8f4d
 content_hash: 3270f370e44fa0c7
 semantic_hash: 48f1de154c83f1b5
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.788Z"
-last_seen_at: 2026-07-04T01:56:59.788Z
+first_seen_at: "2026-07-04T04:35:47.822Z"
+last_seen_at: 2026-07-04T04:35:47.822Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"workflow_change","text":"Today we're joined by Nancy Xu, AI Investor and CEO and Founder of Moonhub AI, the AI recruiting platform helping companies shorten and speed up the recruiting process while also helping employers reach a more diverse&nbsp;pool of candidates. We dive into how the Moonhub platform operates, Nancy's thoughts on opportunities&nbsp;for AI startups, her journey as an investor, and interesting projects she has her eye on. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Moonhub AI: The On-Demand AI Recruiter with Founder & CEO Nancy Xu The MAD Podcast with Matt Turck Oct 18, 2023 Share 00:00 45:21 Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro NVIDIA is a chip company.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So why does it put hundreds of researchers on building AI models — and then give them away for free?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bryan Catanzaro is VP of Applied Deep Learning Research at NVIDIA and one of the people whose work quietly underpins modern AI: he helped create cuDNN (NVIDIA's first deep learning product), co-invented DLSS, and named and built Megatron, the framework behind how much of the industry trains large models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Today he leads Nemotron, NVIDIA's family of open models — and Nemotron 3 Ultra, released just weeks ago, is one of the strongest open-weights models to come out of the US.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.788Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.822Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

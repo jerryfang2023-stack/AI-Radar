@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-03T13:56:52.000Z"
-collected_at: 2026-07-04T01:56:59.892Z
+collected_at: 2026-07-04T04:35:47.931Z
 language: mixed
 full_text_hash: 6c9062426ff0f063
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-043-anthropic-wants-to-develop-its-own-drugs.md"
@@ -59,7 +59,7 @@ content_hash: 6c9062426ff0f063
 semantic_hash: abcf47eaef7a4abe
 duplicate_of: ""
 first_seen_at: "2026-07-03T13:56:52.000Z"
-last_seen_at: 2026-07-04T01:56:59.892Z
+last_seen_at: 2026-07-04T04:35:47.931Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例","没有变化前
 key_excerpts: [{"type":"quote","text":"At the event \"The Briefing: AI for Science\" earlier this week, Anthropic announced Claude Science, a new \"AI workbench for scientists\" that pulls fragmented tools and datasets into one environment, and generates figures and visuals. Anthropic, already dominating the industry with its popular coding tools and powerful AI models, framed the launch around what it [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Anthropic wants to develop its own drugs The AI drug boom has a long way to go before reaching patients.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"At the event “The Briefing: AI for Science” earlier this week, Anthropic announced Claude Science, a new “AI workbench for scientists” that pulls fragmented tools and datasets into one environment, and generates figures and visuals.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"quote","text":"Anthropic, already dominating the industry with its popular coding tools and powerful AI models, framed the launch around what it says is AI’s potential to “dramatically accelerate the pace of scientific discovery and the development of healthcare interventions,” and touted a long list of biotech and pharma customers already using Claude.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Anthropic also went a step further, saying it would develop drugs of its own.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"Head of life sciences Eric Kauderer-Abrams said the company will focus on discovering treatments for “neglected” diseases.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.892Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.931Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

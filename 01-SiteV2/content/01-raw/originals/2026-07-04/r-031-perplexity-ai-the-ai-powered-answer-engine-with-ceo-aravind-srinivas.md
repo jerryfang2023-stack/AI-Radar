@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.776Z
+collected_at: 2026-07-04T04:35:47.809Z
 language: mixed
 full_text_hash: 05a422bdc1dfe9ae
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-031-perplexity-ai-the-ai-powered-answer-engine-with-ceo-aravind-srinivas.md"
@@ -58,8 +58,8 @@ url_hash: 13f9a3c7dbb31f78
 content_hash: 7bd79cef3441251e
 semantic_hash: 2fccf863d25f6275
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.776Z"
-last_seen_at: 2026-07-04T01:56:59.776Z
+first_seen_at: "2026-07-04T04:35:47.809Z"
+last_seen_at: 2026-07-04T04:35:47.809Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"funding","text":"Today we're joined&nbsp;by Aravind Srinivas, CEO of Perplexity AI,&nbsp;a chatbot-style AI conversational engine that directly answers users' questions with sources and citations.&nbsp;Matt &amp; Aravind discuss Perplexity's founding story, the platform itself, and more.&nbsp;This session was recorded live at a recent Data Driven NYC, our in-person, monthly event series.&nbsp;If you are ever in New York, you can find us on Eventbrite by searching for \"FirstMark Capital\".&nbsp;Events run monthly","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Perplexity AI: The AI-Powered Answer Engine with CEO Aravind Srinivas The MAD Podcast with Matt Turck Nov 01, 2023 Share 00:00 41:09 Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro NVIDIA is a chip company.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So why does it put hundreds of researchers on building AI models — and then give them away for free?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bryan Catanzaro is VP of Applied Deep Learning Research at NVIDIA and one of the people whose work quietly underpins modern AI: he helped create cuDNN (NVIDIA's first deep learning product), co-invented DLSS, and named and built Megatron, the framework behind how much of the industry trains large models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Today he leads Nemotron, NVIDIA's family of open models — and Nemotron 3 Ultra, released just weeks ago, is one of the strongest open-weights models to come out of the US.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.776Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.809Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-07-04T01:56:59.939Z
+collected_at: 2026-07-04T04:35:47.978Z
 language: mixed
 full_text_hash: fa76fd00e299ac37
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-049-how-gpt-5-thinks-openai-vp-of-research-jerry-tworek.md"
@@ -58,8 +58,8 @@ url_hash: ec3b6fb791684ecb
 content_hash: 55f04a26031ac5b7
 semantic_hash: 2354be42e2b51fb4
 duplicate_of: ""
-first_seen_at: "2026-07-04T01:56:59.939Z"
-last_seen_at: 2026-07-04T01:56:59.939Z
+first_seen_at: "2026-07-04T04:35:47.978Z"
+last_seen_at: 2026-07-04T04:35:47.978Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -74,7 +74,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"quote","text":"What does it really mean when GPT-5 “thinks”? In this conversation, OpenAI’s VP of Research Jerry Tworek explains how modern reasoning models work in practice—why pretraining and reinforcement learning (RL/RLHF) are both essential, what that on-screen “thinking” actually does, and when extra test-time compute helps (or doesn’t). We trace the evolution from O1 (a tech demo good at puzzles) to O3 (the tool-use shift) to GPT-5 (Jerry calls it “03.1-ish”), and talk through verifiers, reward design,","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify How GPT-5 Thinks — OpenAI VP of Research Jerry Tworek The MAD Podcast with Matt Turck Oct 16, 2025 Share 00:00 01:16:04 Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro NVIDIA is a chip company.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So why does it put hundreds of researchers on building AI models — and then give them away for free?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bryan Catanzaro is VP of Applied Deep Learning Research at NVIDIA and one of the people whose work quietly underpins modern AI: he helped create cuDNN (NVIDIA's first deep learning product), co-invented DLSS, and named and built Megatron, the framework behind how much of the industry trains large models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Today he leads Nemotron, NVIDIA's family of open models — and Nemotron 3 Ultra, released just weeks ago, is one of the strongest open-weights models to come out of the US.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-04T01:56:59.939Z
+fact_extraction_completed_at: 2026-07-04T04:35:47.978Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
