@@ -2747,7 +2747,13 @@ function cardFromFile(file, category) {
   const rawDisplayTitle = sourceTitleForPublic;
   const sourceTitleCandidate = publicTitleCandidate(sourceTitleForPublic, sourceUrl);
   const generatedTitle = scalar(fm, "title") || nestedScalar(fm, "frontend", "displayTitle") || "";
-  const title = sourceTitleCandidate || publicFundingFallbackTitle(generatedTitle, sourceTitleForPublic, category);
+  const translatedTitle = publicTranslatedTitleFallback({
+    title: generatedTitle,
+    displayTitle: generatedTitle,
+    generatedTitle,
+    category,
+  }, sourceTitleForPublic);
+  const title = sourceTitleCandidate || publicFundingFallbackTitle(generatedTitle, sourceTitleForPublic, category) || translatedTitle;
   if (!title) return null;
   const titleFact = sourceTitleDerivedFact(sourceTitleForPublic, sourceUrl);
   let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl, [titleFact]);
@@ -2796,8 +2802,9 @@ function cardFromFile(file, category) {
     sourceName,
     sourceUrl,
     sourceLevel,
+    evidenceStrength: nestedScalar(fm, "primary_raw", "evidence_strength") || scalar(fm, "evidence_strength") || "",
     importanceScore,
-    poolRoutes: nestedList(fm, "primary_raw", "pool_routes"),
+    poolRoutes: frontstagePoolRoutes(nestedList(fm, "primary_raw", "pool_routes")),
     publishedAt: raw.publishedAt || scalar(fm, "published_at") || scalar(fm, "original_date") || "",
     tags,
     flatTags: allTags(tags),

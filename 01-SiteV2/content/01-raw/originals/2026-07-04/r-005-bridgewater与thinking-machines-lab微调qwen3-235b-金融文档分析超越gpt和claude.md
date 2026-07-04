@@ -1,0 +1,261 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-005
+title: "Bridgewater与Thinking Machines Lab微调Qwen3-235B，金融文档分析超越GPT和Claude"
+title_zh: "Bridgewater与Thinking Machines Lab微调Qwen3-235B，金融文档分析超越GPT和Claude"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://the-decoder.com/gpt-and-claude-failed-bridgewaters-finance-tests-because-the-right-answers-were-never-public"
+canonical_url: "https://the-decoder.com/gpt-and-claude-failed-bridgewaters-finance-tests-because-the-right-answers-were-never-public"
+source_name: "The Decoder：AI News（RSS）"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-03T11:16:42.000Z"
+collected_at: 2026-07-04T04:50:50.009Z
+language: mixed
+full_text_hash: dbebd972ede163f6
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-005-bridgewater与thinking-machines-lab微调qwen3-235b-金融文档分析超越gpt和claude.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-005-bridgewater与thinking-machines-lab微调qwen3-235b-金融文档分析超越gpt和claude.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 88
+extractor_diagnostics: {"readability_score":88,"text_length":4505,"paragraph_count":21,"sentence_count":42,"boilerplate_hits":3,"symbol_ratio":0.0011,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 4505
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dbebd972ede163f6","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Bridgewater与Thinking Machines Lab微调Qwen3-235B，金融文档分析超越GPT和Claude","discovery_summary":"对冲基金Bridgewater与Thinking Machines Lab微调开源模型Qwen3-235B用于金融文档分析。内部评测显示，微调模型准确率达84.7%，而最佳前沿模型（Gemini、Claude、GPT变体）仅为78.2%，且运行成本低近14倍。前沿模型在基础提示下准确率仅约50%，加入专家指令和三档评级系统也未能突破80%阈值。Bridgewater利用内部专家知识纠正承包商标签错误，通过Tinker平台训练。这表明企业可利用专有数据开发强大AI方案，无需与大型提供商共享敏感信息。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/gpt-and-claude-failed-bridgewaters-finance-tests-because-the-right-answers-were-never-public","discovered_at":"2026-07-04T03:11:32.678Z","rank_on_page":154,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: cb4fd868e5411374
+content_hash: dbebd972ede163f6
+semantic_hash: fa031060407c73c5
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-03T11:16:42.000Z"
+last_seen_at: 2026-07-04T04:50:50.009Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["The Decoder","AI News（RSS）","OpenAI"],"products":["Claude","Gemini"],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","部署 / 集成交付"],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算"],"numbers":["3","235B","84.7%","78.2%","14倍","50%","80%","2026"],"quotes":["relevant and interesting,","relevant but uninteresting,","irrelevant","AI Radar"]}
+evidence_seed: {"company_actions":["对冲基金Bridgewater与Thinking Machines Lab微调开源模型Qwen3-235B用于金融文档分析。内部评测显示，微调模型准确率达84.7%，而最佳前沿模型（Gemini、Claude、GPT变体）仅为78.2%，且运行成本低近14倍。前沿模型在基础提示下准确率仅约50%，加入专家指令和三档评级系统也未能突破80%阈值。Bridgewater利用内部专家知识纠正承包商标签错误，通过Tinker平台训练。这表明企业可利用专有数据开发强大AI方案，无需与大型提供商共享敏感信息。","Ad Skip to content GPT and Claude failed Bridgewater's finance tests because the right answers were never public Maximilian Schreiner View the LinkedIn Profile of Maximilian Schreiner Jul 3, 2026 Nano Banana Pro prompted by THE DECODER Key Points Bridgewater and Thinking Machines Lab have trained an open-source AI model for analyzing financial documents that outperforms leading commercial models.","The Qwen3-235B model, which has been fine-tuned using internal expert knowledge, achieves nearly 85 percent accuracy in tests and is 14 times cheaper to operate."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"对冲基金Bridgewater与Thinking Machines Lab微调开源模型Qwen3-235B用于金融文档分析。内部评测显示，微调模型准确率达84.7%，而最佳前沿模型（Gemini、Claude、GPT变体）仅为78.2%，且运行成本低近14倍。前沿模型在基础提示下准确率仅约50%，加入专家指令和三档评级系统也未能突破80%阈值。Bridgewater利用内部专家知识纠正承包商标签错误，通过Tinker平台训练。这表明企业可利用专有数据开发强大AI方案，无需与大型提供商共享敏感信息。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Ad Skip to content GPT and Claude failed Bridgewater's finance tests because the right answers were never public Maximilian Schreiner View the LinkedIn Profile of Maximilian Schreiner Jul 3, 2026 Nano Banana Pro prompted by THE DECODER Key Points Bridgewater and Thinking Machines Lab have trained an open-source AI model for analyzing financial documents that outperforms leading commercial models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The Qwen3-235B model, which has been fine-tuned using internal expert knowledge, achieves nearly 85 percent accuracy in tests and is 14 times cheaper to operate.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This demonstrates that companies can develop powerful AI solutions using their own data without having to share sensitive information with large providers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Hedge fund Bridgewater and Thinking Machines Lab say a fine-tuned open-weight model outperforms the strongest AI models at evaluating financial documents, at a fraction of the cost.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The numbers come from their own internal evaluation.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-04T04:50:50.009Z
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Bridgewater与Thinking Machines Lab微调Qwen3-235B，金融文档分析超越GPT和Claude
+
+## clean_text
+
+Ad
+Skip to content
+GPT and Claude failed Bridgewater's finance tests because the right answers were never public
+Maximilian Schreiner
+View the LinkedIn Profile of Maximilian Schreiner
+Jul 3, 2026
+Nano Banana Pro prompted by THE DECODER
+Key Points
+Bridgewater and Thinking Machines Lab have trained an open-source AI model for analyzing financial documents that outperforms leading commercial models.
+The Qwen3-235B model, which has been fine-tuned using internal expert knowledge, achieves nearly 85 percent accuracy in tests and is 14 times cheaper to operate.
+This demonstrates that companies can develop powerful AI solutions using their own data without having to share sensitive information with large providers.
+Hedge fund Bridgewater and Thinking Machines Lab say a fine-tuned open-weight model outperforms the strongest AI models at evaluating financial documents, at a fraction of the cost. The numbers come from their own internal evaluation.
+Investors get buried in news, analysis, corporate filings, and emails every day. According to a report from Bridgewater's AIA Labs and Thinking Machines Lab , the startup founded by former OpenAI CTO Mira Murati, reading isn't the real work. The real work is the constant stream of small, repeated judgment calls about what actually matters. That's the triage the researchers wanted to automate.
+They defined six tasks drawn from an investor's daily routine. One example: deciding whether a financial article is relevant to an executive. Another: whether a central bank document signals the direction of future rate changes. For investors, these calls are trivial, but they can barely put their reasoning into words. The report gives a telling example. A headline about Trump's claim to Greenland gets flagged as irrelevant, while Trump's threat of new China tariffs is highly relevant. Both touch on geopolitics and finance. Ad
+Frontier models failed in the authors' tests. Variants of Gemini, Claude, and GPT hit only about 50 percent accuracy with a basic prompt. Expert-written instructions and a three-tier rating system ("relevant and interesting," "relevant but uninteresting," "irrelevant") pushed accuracy into the mid-70s. That still fell short of the 80 percent threshold the authors set for trustworthy deployment. Ad
+DEC_D_Incontent-1
+When experts write the prompt, performance jumps sharply compared to a naive prompt. | Image: Thinking Machines
+Newer models barely improve per dollar, the report says. GPT 5.4 costs 43 percent more than 5.2 but is only marginally more accurate.
+The real value lives inside investors' heads
+The solution was fine-tuning, retraining an open-weight model on proprietary examples. The key ingredient was the Bridgewater investors' judgment: At first, cheap outside contractors labeled the documents, but many of those labels were wrong. To avoid having expensive professionals review everything, the researchers used a workaround. A first model learned from the flawed labels and re-evaluated the same documents. Wherever the model and the original label disagreed, there was likely an error. Only those disputed cases went to investors for correction. Ad
+Training ran on the Tinker platform from Thinking Machines Lab, built on top of the open model Qwen3-235B. In the team's own evaluation, the fine-tuned model hit 84.7 percent accuracy versus 78.2 percent for the best frontier model tested. It also cost nearly 14 times less to run. This isn't a truly independent comparison, of course. Both companies have a clear interest in selling their product.
+Still, the finding beyond the numbers is worth noting. It shows once again that the big labs like OpenAI haven't absorbed all the data out there. Huge pools of proprietary corporate data and untrained human expertise still exist, and they hold real room for improvement. That's especially true where companies deliberately keep their most valuable data private. Anyone who hands that data to a frontier lab risks competing against a product built on top of it. Ad
+DEC_D_Incontent-2
+Fine-tuning open models through tools like Tinker gives companies an alternative. They keep the weights, the data, and, depending on the setup, the GPUs themselves. Ad
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: ThinkingMachines
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## full_text
+
+Ad
+Skip to content
+GPT and Claude failed Bridgewater's finance tests because the right answers were never public
+Maximilian Schreiner
+View the LinkedIn Profile of Maximilian Schreiner
+Jul 3, 2026
+Nano Banana Pro prompted by THE DECODER
+Key Points
+Bridgewater and Thinking Machines Lab have trained an open-source AI model for analyzing financial documents that outperforms leading commercial models.
+The Qwen3-235B model, which has been fine-tuned using internal expert knowledge, achieves nearly 85 percent accuracy in tests and is 14 times cheaper to operate.
+This demonstrates that companies can develop powerful AI solutions using their own data without having to share sensitive information with large providers.
+Hedge fund Bridgewater and Thinking Machines Lab say a fine-tuned open-weight model outperforms the strongest AI models at evaluating financial documents, at a fraction of the cost. The numbers come from their own internal evaluation.
+Investors get buried in news, analysis, corporate filings, and emails every day. According to a report from Bridgewater's AIA Labs and Thinking Machines Lab , the startup founded by former OpenAI CTO Mira Murati, reading isn't the real work. The real work is the constant stream of small, repeated judgment calls about what actually matters. That's the triage the researchers wanted to automate.
+They defined six tasks drawn from an investor's daily routine. One example: deciding whether a financial article is relevant to an executive. Another: whether a central bank document signals the direction of future rate changes. For investors, these calls are trivial, but they can barely put their reasoning into words. The report gives a telling example. A headline about Trump's claim to Greenland gets flagged as irrelevant, while Trump's threat of new China tariffs is highly relevant. Both touch on geopolitics and finance. Ad
+Frontier models failed in the authors' tests. Variants of Gemini, Claude, and GPT hit only about 50 percent accuracy with a basic prompt. Expert-written instructions and a three-tier rating system ("relevant and interesting," "relevant but uninteresting," "irrelevant") pushed accuracy into the mid-70s. That still fell short of the 80 percent threshold the authors set for trustworthy deployment. Ad
+DEC_D_Incontent-1
+When experts write the prompt, performance jumps sharply compared to a naive prompt. | Image: Thinking Machines
+Newer models barely improve per dollar, the report says. GPT 5.4 costs 43 percent more than 5.2 but is only marginally more accurate.
+The real value lives inside investors' heads
+The solution was fine-tuning, retraining an open-weight model on proprietary examples. The key ingredient was the Bridgewater investors' judgment: At first, cheap outside contractors labeled the documents, but many of those labels were wrong. To avoid having expensive professionals review everything, the researchers used a workaround. A first model learned from the flawed labels and re-evaluated the same documents. Wherever the model and the original label disagreed, there was likely an error. Only those disputed cases went to investors for correction. Ad
+Training ran on the Tinker platform from Thinking Machines Lab, built on top of the open model Qwen3-235B. In the team's own evaluation, the fine-tuned model hit 84.7 percent accuracy versus 78.2 percent for the best frontier model tested. It also cost nearly 14 times less to run. This isn't a truly independent comparison, of course. Both companies have a clear interest in selling their product.
+Still, the finding beyond the numbers is worth noting. It shows once again that the big labs like OpenAI haven't absorbed all the data out there. Huge pools of proprietary corporate data and untrained human expertise still exist, and they hold real room for improvement. That's especially true where companies deliberately keep their most valuable data private. Anyone who hands that data to a frontier lab risks competing against a product built on top of it. Ad
+DEC_D_Incontent-2
+Fine-tuning open models through tools like Tinker gives companies an alternative. They keep the weights, the data, and, depending on the setup, the GPUs themselves. Ad
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: ThinkingMachines
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 88
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":88,"text_length":4505,"paragraph_count":21,"sentence_count":42,"boilerplate_hits":3,"symbol_ratio":0.0011,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   对冲基金Bridgewater与Thinking Machines Lab微调开源模型Qwen3-235B用于金融文档分析。内部评测显示，微调模型准确率达84.7%，而最佳前沿模型（Gemini、Claude、GPT变体）仅为78.2%，且运行成本低近14倍。前沿模型在基础提示下准确率仅约50%，加入专家指令和三档评级系统也未能突破80%阈值。Bridgewater利用内部专家知识纠正承包商标签错误，通过Tinker平台训练。这表明企业可利用专有数据开发强大AI方案，无需与大型提供商共享敏感信息。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Ad Skip to content GPT and Claude failed Bridgewater's finance tests because the right answers were never public Maximilian Schreiner View the LinkedIn Profile of Maximilian Schreiner Jul 3, 2026 Nano Banana Pro prompted by THE DECODER Key Points Bridgewater and Thinking Machines Lab have trained an open-source AI model for analyzing financial documents that outperforms leading commercial models.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The Qwen3-235B model, which has been fine-tuned using internal expert knowledge, achieves nearly 85 percent accuracy in tests and is 14 times cheaper to operate.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   This demonstrates that companies can develop powerful AI solutions using their own data without having to share sensitive information with large providers.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Hedge fund Bridgewater and Thinking Machines Lab say a fine-tuned open-weight model outperforms the strongest AI models at evaluating financial documents, at a fraction of the cost.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The numbers come from their own internal evaluation.
+
+## business_elements
+
+- companies: The Decoder, AI News（RSS）, OpenAI
+- products: Claude, Gemini
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算
+- numbers: 3, 235B, 84.7%, 78.2%, 14倍, 50%, 80%, 2026
+- quotes: relevant and interesting, / relevant but uninteresting, / irrelevant / AI Radar
+
+## evidence_seed
+
+- company_actions: 对冲基金Bridgewater与Thinking Machines Lab微调开源模型Qwen3-235B用于金融文档分析。内部评测显示，微调模型准确率达84.7%，而最佳前沿模型（Gemini、Claude、GPT变体）仅为78.2%，且运行成本低近14倍。前沿模型在基础提示下准确率仅约50%，加入专家指令和三档评级系统也未能突破80%阈值。Bridgewater利用内部专家知识纠正承包商标签错误，通过Tinker平台训练。这表明企业可利用专有数据开发强大AI方案，无需与大型提供商共享敏感信息。 / Ad Skip to content GPT and Claude failed Bridgewater's finance tests because the right answers were never public Maximilian Schreiner View the LinkedIn Profile of Maximilian Schreiner Jul 3, 2026 Nano Banana Pro prompted by THE DECODER Key Points Bridgewater and Thinking Machines Lab have trained an open-source AI model for analyzing financial documents that outperforms leading commercial models. / The Qwen3-235B model, which has been fine-tuned using internal expert knowledge, achieves nearly 85 percent accuracy in tests and is 14 times cheaper to operate.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Bridgewater与Thinking Machines Lab微调Qwen3-235B，金融文档分析超越GPT和Claude","discovery_summary":"对冲基金Bridgewater与Thinking Machines Lab微调开源模型Qwen3-235B用于金融文档分析。内部评测显示，微调模型准确率达84.7%，而最佳前沿模型（Gemini、Claude、GPT变体）仅为78.2%，且运行成本低近14倍。前沿模型在基础提示下准确率仅约50%，加入专家指令和三档评级系统也未能突破80%阈值。Bridgewater利用内部专家知识纠正承包商标签错误，通过Tinker平台训练。这表明企业可利用专有数据开发强大AI方案，无需与大型提供商共享敏感信息。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/gpt-and-claude-failed-bridgewaters-finance-tests-because-the-right-answers-were-never-public","discovered_at":"2026-07-04T03:11:32.678Z","rank_on_page":154,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+对冲基金Bridgewater与Thinking Machines Lab微调开源模型Qwen3-235B用于金融文档分析。内部评测显示，微调模型准确率达84.7%，而最佳前沿模型（Gemini、Claude、GPT变体）仅为78.2%，且运行成本低近14倍。前沿模型在基础提示下准确率仅约50%，加入专家指令和三档评级系统也未能突破80%阈值。Bridgewater利用内部专家知识纠正承包商标签错误，通过Tinker平台训练。这表明企业可利用专有数据开发强大AI方案，无需与大型提供商共享敏感信息。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

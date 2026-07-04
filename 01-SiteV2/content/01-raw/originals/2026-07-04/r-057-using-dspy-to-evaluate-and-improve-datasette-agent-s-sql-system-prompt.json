@@ -1,0 +1,271 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-057",
+  "title": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
+  "canonical_url": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts",
+  "source_name": "Simon Willison's Blog",
+  "source_type": "builder",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "research_or_report",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-02T18:25:00.000Z",
+  "collected_at": "2026-07-04T04:50:50.426Z",
+  "language": "mixed",
+  "full_text": "Research: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Sonar &mdash; Gartner just named Sonar a Leader in the 2026 Magic Quadrant™ for Technical Debt Management Tools. Read the report and learn how to measure and remediate technical debt across your codebase. Get the report\n2nd July 2026\nResearch\nUsing DSPy to evaluate and improve Datasette Agent's SQL system prompts\n&mdash; Leveraging the DSPy framework, this project evaluates and refines the core production system prompts used by Datasette Agent’s read-only SQL question answerer. The methodology involves a harness where DSPy agents invoke Datasette Agent’s actual tool implementations and prompts against a live in-process Datasette, and a gold-standard, auto-generated dataset provides rigorous evaluation via custom metrics.\nOne of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5:\nPip install the latest Datasette alpha and datasette-agent and dspy - then figure out how to use dspy to evaluate and improve the main system prompts used by Datasette Agent for the feature where it can execute read only SQL queries to answer user questions about data.\nFable chose to test using GPT 4.1 mini and nano, and identified several promising looking directions for improvements. I particularly like this one:\nThe schema listing gives only table names; the \"don't call describe_table if you already have the information\" advice caused column-name guessing (page_count, o.order_id, first_name) and error-retry loops in baseline traces. Either include column names in the prompt's schema listing or soften that advice.\nPosted 2nd July 2026 at 6:25 pm\nRecent articles\nHave your agent record video demos of its work with shot-scraper video - 30th June 2026\nPorting the Moebius 0.2B image inpainting model to run in the browser with Claude Code - 22nd June 2026\nsqlite-utils 4.0rc1 adds migrations and nested transactions - 21st June 2026\nThis is a beat by Simon Willison, posted on 2nd July 2026 .\nai\n2,101\ndatasette\n1,523\ngenerative-ai\n1,858\nllms\n1,825\nevals\n43\ndspy\ndatasette-agent\n18\nclaude-mythos-fable\n21\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "clean_text": "Research: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Sonar &mdash; Gartner just named Sonar a Leader in the 2026 Magic Quadrant™ for Technical Debt Management Tools. Read the report and learn how to measure and remediate technical debt across your codebase. Get the report\n2nd July 2026\nResearch\nUsing DSPy to evaluate and improve Datasette Agent's SQL system prompts\n&mdash; Leveraging the DSPy framework, this project evaluates and refines the core production system prompts used by Datasette Agent’s read-only SQL question answerer. The methodology involves a harness where DSPy agents invoke Datasette Agent’s actual tool implementations and prompts against a live in-process Datasette, and a gold-standard, auto-generated dataset provides rigorous evaluation via custom metrics.\nOne of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5:\nPip install the latest Datasette alpha and datasette-agent and dspy - then figure out how to use dspy to evaluate and improve the main system prompts used by Datasette Agent for the feature where it can execute read only SQL queries to answer user questions about data.\nFable chose to test using GPT 4.1 mini and nano, and identified several promising looking directions for improvements. I particularly like this one:\nThe schema listing gives only table names; the \"don't call describe_table if you already have the information\" advice caused column-name guessing (page_count, o.order_id, first_name) and error-retry loops in baseline traces. Either include column names in the prompt's schema listing or soften that advice.\nPosted 2nd July 2026 at 6:25 pm\nRecent articles\nHave your agent record video demos of its work with shot-scraper video - 30th June 2026\nPorting the Moebius 0.2B image inpainting model to run in the browser with Claude Code - 22nd June 2026\nsqlite-utils 4.0rc1 adds migrations and nested transactions - 21st June 2026\nThis is a beat by Simon Willison, posted on 2nd July 2026 .\nai\n2,101\ndatasette\n1,523\ngenerative-ai\n1,858\nllms\n1,825\nevals\n43\ndspy\ndatasette-agent\n18\nclaude-mythos-fable\n21\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-04/r-057-using-dspy-to-evaluate-and-improve-datasette-agent-s-sql-system-prompt.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-04/r-057-using-dspy-to-evaluate-and-improve-datasette-agent-s-sql-system-prompt.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 63,
+  "extractor_diagnostics": {
+    "readability_score": 63,
+    "text_length": 2649,
+    "paragraph_count": 16,
+    "sentence_count": 11,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0015,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 2649,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "fced8bbbd0b49b44",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "481b19745d66d642",
+  "content_hash": "fced8bbbd0b49b44",
+  "full_text_hash": "fced8bbbd0b49b44",
+  "semantic_hash": "383a4db73c320f93",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-02T18:25:00.000Z",
+  "last_seen_at": "2026-07-04T04:50:50.426Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "&lt;p&gt;&lt;strong&gt;Research:&lt;/strong&gt; &lt;a href=\"https://github.com/simonw/research/tree/main/dspy-datasette-agent-prompts#readme\"&gt;Using DSPy to evaluate and improve Datasette Agent&amp;#x27;s SQL system prompts&lt;/a&gt;&lt;/p&gt; &lt;p&gt;One of this morning's AIE keynotes covered &lt;a href=\"https://github.com/stanfordnlp/dspy\"&gt;dspy&lt;/a&gt;, which reminded me I've been meaning to see if it could help me improve the system prompt used by &lt;a href=\"https://agent.dat",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Research: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts Simon Willison’s Weblog Subscribe Sponsored by: Sonar &mdash; Gartner just named Sonar a Leader in the 2026 Magic Quadrant™ for Technical Debt Management Tools.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Read the report and learn how to measure and remediate technical debt across your codebase.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Get the report 2nd July 2026 Research Using DSPy to evaluate and improve Datasette Agent's SQL system prompts &mdash; Leveraging the DSPy framework, this project evaluates and refines the core production system prompts used by Datasette Agent’s read-only SQL question answerer.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "The methodology involves a harness where DSPy agents invoke Datasette Agent’s actual tool implementations and prompts against a live in-process Datasette, and a gold-standard, auto-generated dataset provides rigorous evaluation via custom metrics.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "One of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5: Pip install the latest Datasette alpha and datasette-agent and dspy - then figure out how to use dspy to evaluate and improve the main system prompts used by Datasette Agent for the feature where it can execute read only SQL queries to answer user questions about d",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-04T04:50:50.426Z",
+  "business_elements": {
+    "companies": [
+      "Simon Willison's Blog",
+      "GitHub"
+    ],
+    "products": [
+      "Agent",
+      "agent",
+      "agents",
+      "Claude",
+      "claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "27",
+      "2026 M",
+      "2",
+      "2026",
+      "5",
+      "4.1 m",
+      "6",
+      "25"
+    ],
+    "quotes": [
+      "https://github.com/simonw/research/tree/main/dspy-datasette-agent-prompts#readme",
+      "https://github.com/stanfordnlp/dspy",
+      "don't call describe_table if you already have the information"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Research: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts Simon Willison’s Weblog Subscribe Sponsored by: Sonar &mdash; Gartner just named Sonar a Leader in the 2026 Magic Quadrant™ for Technical Debt Management Tools.",
+      "Read the report and learn how to measure and remediate technical debt across your codebase.",
+      "Get the report 2nd July 2026 Research Using DSPy to evaluate and improve Datasette Agent's SQL system prompts &mdash; Leveraging the DSPy framework, this project evaluates and refines the core production system prompts used by Datasette Agent’s read-only SQL question answerer."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "The methodology involves a harness where DSPy agents invoke Datasette Agent’s actual tool implementations and prompts against a live in-process Datasette, and a gold-standard, auto-generated dataset provides rigorous evaluation via custom metrics."
+    ],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Using DSPy to evaluate and improve Datasette Agent's SQL system prompts\n\n- raw_id: R-057\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything\n- source_name: Simon Willison's Blog\n- collected_at: 2026-07-04T04:50:50.426Z\n\n## clean_text\n\nResearch: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Sonar &mdash; Gartner just named Sonar a Leader in the 2026 Magic Quadrant™ for Technical Debt Management Tools. Read the report and learn how to measure and remediate technical debt across your codebase. Get the report\n2nd July 2026\nResearch\nUsing DSPy to evaluate and improve Datasette Agent's SQL system prompts\n&mdash; Leveraging the DSPy framework, this project evaluates and refines the core production system prompts used by Datasette Agent’s read-only SQL question answerer. The methodology involves a harness where DSPy agents invoke Datasette Agent’s actual tool implementations and prompts against a live in-process Datasette, and a gold-standard, auto-generated dataset provides rigorous evaluation via custom metrics.\nOne of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5:\nPip install the latest Datasette alpha and datasette-agent and dspy - then figure out how to use dspy to evaluate and improve the main system prompts used by Datasette Agent for the feature where it can execute read only SQL queries to answer user questions about data.\nFable chose to test using GPT 4.1 mini and nano, and identified several promising looking directions for improvements. I particularly like this one:\nThe schema listing gives only table names; the \"don't call describe_table if you already have the information\" advice caused column-name guessing (page_count, o.order_id, first_name) and error-retry loops in baseline traces. Either include column names in the prompt's schema listing or soften that advice.\nPosted 2nd July 2026 at 6:25 pm\nRecent articles\nHave your agent record video demos of its work with shot-scraper video - 30th June 2026\nPorting the Moebius 0.2B image inpainting model to run in the browser with Claude Code - 22nd June 2026\nsqlite-utils 4.0rc1 adds migrations and nested transactions - 21st June 2026\nThis is a beat by Simon Willison, posted on 2nd July 2026 .\nai\n2,101\ndatasette\n1,523\ngenerative-ai\n1,858\nllms\n1,825\nevals\n43\ndspy\ndatasette-agent\n18\nclaude-mythos-fable\n21\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## full_text\n\nResearch: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Sonar &mdash; Gartner just named Sonar a Leader in the 2026 Magic Quadrant™ for Technical Debt Management Tools. Read the report and learn how to measure and remediate technical debt across your codebase. Get the report\n2nd July 2026\nResearch\nUsing DSPy to evaluate and improve Datasette Agent's SQL system prompts\n&mdash; Leveraging the DSPy framework, this project evaluates and refines the core production system prompts used by Datasette Agent’s read-only SQL question answerer. The methodology involves a harness where DSPy agents invoke Datasette Agent’s actual tool implementations and prompts against a live in-process Datasette, and a gold-standard, auto-generated dataset provides rigorous evaluation via custom metrics.\nOne of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5:\nPip install the latest Datasette alpha and datasette-agent and dspy - then figure out how to use dspy to evaluate and improve the main system prompts used by Datasette Agent for the feature where it can execute read only SQL queries to answer user questions about data.\nFable chose to test using GPT 4.1 mini and nano, and identified several promising looking directions for improvements. I particularly like this one:\nThe schema listing gives only table names; the \"don't call describe_table if you already have the information\" advice caused column-name guessing (page_count, o.order_id, first_name) and error-retry loops in baseline traces. Either include column names in the prompt's schema listing or soften that advice.\nPosted 2nd July 2026 at 6:25 pm\nRecent articles\nHave your agent record video demos of its work with shot-scraper video - 30th June 2026\nPorting the Moebius 0.2B image inpainting model to run in the browser with Claude Code - 22nd June 2026\nsqlite-utils 4.0rc1 adds migrations and nested transactions - 21st June 2026\nThis is a beat by Simon Willison, posted on 2nd July 2026 .\nai\n2,101\ndatasette\n1,523\ngenerative-ai\n1,858\nllms\n1,825\nevals\n43\ndspy\ndatasette-agent\n18\nclaude-mythos-fable\n21\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 63\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] &lt;p&gt;&lt;strong&gt;Research:&lt;/strong&gt; &lt;a href=\"https://github.com/simonw/research/tree/main/dspy-datasette-agent-prompts#readme\"&gt;Using DSPy to evaluate and improve Datasette Agent&amp;#x27;s SQL system prompts&lt;/a&gt;&lt;/p&gt; &lt;p&gt;One of this morning's AIE keynotes covered &lt;a href=\"https://github.com/stanfordnlp/dspy\"&gt;dspy&lt;/a&gt;, which reminded me I've been meaning to see if it could help me improve the system prompt used by &lt;a href=\"https://agent.dat\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Research: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts Simon Willison’s Weblog Subscribe Sponsored by: Sonar &mdash; Gartner just named Sonar a Leader in the 2026 Magic Quadrant™ for Technical Debt Management Tools.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Read the report and learn how to measure and remediate technical debt across your codebase.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Get the report 2nd July 2026 Research Using DSPy to evaluate and improve Datasette Agent's SQL system prompts &mdash; Leveraging the DSPy framework, this project evaluates and refines the core production system prompts used by Datasette Agent’s read-only SQL question answerer.\n5. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The methodology involves a harness where DSPy agents invoke Datasette Agent’s actual tool implementations and prompts against a live in-process Datasette, and a gold-standard, auto-generated dataset provides rigorous evaluation via custom metrics.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] One of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5: Pip install the latest Datasette alpha and datasette-agent and dspy - then figure out how to use dspy to evaluate and improve the main system prompts used by Datasette Agent for the feature where it can execute read only SQL queries to answer user questions about d\n"
+}

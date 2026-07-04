@@ -1,0 +1,274 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-024
+title: "Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://tldr.tech/ai/2026-07-03"
+canonical_url: "https://tldr.tech/ai/2026-07-03"
+source_name: "TLDR AI Newsletter"
+source_type: newsletter
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-07-04T04:50:50.193Z
+language: mixed
+full_text_hash: 8bc0b33e170b179c
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-024-meta-watermelon-anthropic-samsung-chips-autoresearch-in-practice.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-04/r-024-meta-watermelon-anthropic-samsung-chips-autoresearch-in-practice.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 79
+extractor_diagnostics: {"readability_score":79,"text_length":5393,"paragraph_count":33,"sentence_count":37,"boilerplate_hits":2,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 5393
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8bc0b33e170b179c","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 3ac232ade8c5b508
+content_hash: 8bc0b33e170b179c
+semantic_hash: 4956e2ae36ab3974
+duplicate_of: ""
+first_seen_at: "2026-07-04T04:50:50.193Z"
+last_seen_at: 2026-07-04T04:50:50.193Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["TLDR AI Newsletter","OpenAI","Anthropic","Google","Meta","Amazon","Nvidia","Cursor"],"products":["GPT-5","Claude","Agent","agent","agents","Cursor"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["2026","07","03\nM","5.5 B","3 m","5.5","2 m","13 m"],"quotes":["Startup Advisor"]}
+evidence_seed: {"company_actions":["Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-03 Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈 Meta's Watermelon Matches GPT-5.","5 on closely followed AI benchmarks.","Codenamed Watermelon, the model is still in training."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-03 Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈 Meta's Watermelon Matches GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"5 Benchmarks (3 minute read) Meta's superintelligence chief, Alexandr Wang, says that the company's upcoming model has caught up with OpenAI's GPT-5.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"5 on closely followed AI benchmarks.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Codenamed Watermelon, the model is still in training.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The model reportedly uses an order of magnitude more compute than Muse Spark.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Meta has not given a timeline for Watermelon.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-04T04:50:50.193Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈
+
+## clean_text
+
+Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈 TLDR
+Newsletters
+Advertise
+Blog
+TLDR
+TLDR AI 2026-07-03
+Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈
+Meta's Watermelon Matches GPT-5.5 Benchmarks (3 minute read)
+Meta's superintelligence chief, Alexandr Wang, says that the company's upcoming model has caught up with OpenAI's GPT-5.5 on closely followed AI benchmarks. Codenamed Watermelon, the model is still in training. The model reportedly uses an order of magnitude more compute than Muse Spark. Meta has not given a timeline for Watermelon.
+Anthropic Exploring a Samsung Chip Partnership (2 minute read)
+Anthropic reportedly discussed a custom AI chip collaboration with Samsung as it looked to diversify its compute stack. The company said chips from Google, Amazon, and Nvidia remained central to its hardware strategy.
+Autoresearch, Claude, and Constrained Optimization (13 minute read)
+Many folks claim to be able to use AI to do the work of dozens of people. This researcher used autoresearch to work on a problem where the path from unknown to success is a clear, gradient optimization. The researcher found the auto-research/loop style of work makes sense for problems with a robust, measurable, and well-constrained metric to optimize. However, finding a problem with these factors is often tricky.
+Agent-Assisted SGLang Development (18 minute read)
+The SGLang team outlined how agent workflows are being turned into reusable SKILL.md files, benchmark contracts, review loops, and production debugging playbooks. The post frames agent value around procedural engineering knowledge that can be executed, tested, and reviewed.
+Introducing Laguna XS 2.1 (5 minute read)
+Laguna XS 2.1 is a 33B parameter Mixture-of-Experts model optimized for agentic coding and long-horizon tasks, showing a 5.4-point improvement on SWE-bench Multilingual to 63.1%. It supports various platforms and offers three quantized checkpoints for resource-efficient deployment. Licensed under OpenMDW-1.1, it enables open model distribution and is available for download on Hugging Face or via API.
+Seed2.0 Model Card (72 minute read)
+Seed2.0 focused on long-tail knowledge, complex instruction following, reasoning, visual understanding, and search for real-world tasks. The model card described an evaluation-driven approach built around user needs and complex usage scenarios.
+Introducing Devin Security Swarm (3 minute read)
+Devin Security Swarm is a cost-effective and accurate way to find security vulnerabilities in complex codebases. It uses a new architecture for whole-codebase reasoning called Agentic MapReduce. Devin maps relevant signals across a repository, fans out focused agents over bounded shards, reduces their findings to one report, then verifies serious vulnerabilities in isolated sandboxes before marking them confirmed. Cognition has published extensive documentation and technical materials about Agentic MapReduce.
+Residual Context Diffusion Language Models (2 minute read)
+State-of-the-art block-wise Diffusion Large Language Models (dLLMs) rely on a remasking mechanism that decodes only the most confident tokens and discards the rest. Recycling computation from the discarded tokens is beneficial, as these tokens retain contextual information useful for subsequent decoding iterations. Residual Context Diffusion is a module that converts these discarded token representations into contextual residuals and injects them back for the next denoising step. It consistently improves frontier dLLMs in terms of accuracy with minimal extra computation overhead across a wide range of benchmarks.
+TLDR is hiring a curator for TLDR AI! (TLDR Curator, ~5 hrs/week)
+Over 1M subscribers read TLDR AI to stay on top of the latest in AI models, research, engineering, and more. If you work in AI and want to help curate it, send your LinkedIn or resume to ai@tldr.tech !
+Teaching AI to run with the turbines (22 minute read)
+Woodside Energy leverages AI to enhance operational efficiency by integrating agentic AI systems in complex industrial workflows, particularly in LNG plant startups through their "Startup Advisor". These AI tools, built upon years of investment in predictive analytics and machine learning, augment human expertise rather than replace it.
+The Hardware Coup: Why AI Hardware Just Changed Forever (3 minute read)
+In late June, AI hardware saw massive advancements with custom chips transitioning from concepts to actual products. OpenAI, Etched, Amazon, and SambaNova led these significant developments, marking a pivotal shift in the industry. These innovations promise to enhance AI processing capabilities and efficiency.
+The Ramanujan Challenge for AI (1 minute read)
+The Ramanujan Challenge for AI is designed to test whether AI systems can move from a concrete formula to a valid proof or symbolic derivation.
+CursorBench 3.1 (2 minute read)
+CursorBench evaluates agents on ambiguous, multi-file tasks from real Cursor sessions.
+New analytics and cost controls are available for Claude Enterprise (3 minute read)
+Claude Enterprise introduces enhanced admin analytics, model-level entitlements, and spend alerts to better manage usage and costs.
+Get the most interesting AI stories and breakthroughs delivered in a free daily email.
+Join 1,100,000 readers for one daily email
+Privacy Careers Advertise
+
+## full_text
+
+Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈 TLDR
+Newsletters
+Advertise
+Blog
+TLDR
+TLDR AI 2026-07-03
+Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈
+Meta's Watermelon Matches GPT-5.5 Benchmarks (3 minute read)
+Meta's superintelligence chief, Alexandr Wang, says that the company's upcoming model has caught up with OpenAI's GPT-5.5 on closely followed AI benchmarks. Codenamed Watermelon, the model is still in training. The model reportedly uses an order of magnitude more compute than Muse Spark. Meta has not given a timeline for Watermelon.
+Anthropic Exploring a Samsung Chip Partnership (2 minute read)
+Anthropic reportedly discussed a custom AI chip collaboration with Samsung as it looked to diversify its compute stack. The company said chips from Google, Amazon, and Nvidia remained central to its hardware strategy.
+Autoresearch, Claude, and Constrained Optimization (13 minute read)
+Many folks claim to be able to use AI to do the work of dozens of people. This researcher used autoresearch to work on a problem where the path from unknown to success is a clear, gradient optimization. The researcher found the auto-research/loop style of work makes sense for problems with a robust, measurable, and well-constrained metric to optimize. However, finding a problem with these factors is often tricky.
+Agent-Assisted SGLang Development (18 minute read)
+The SGLang team outlined how agent workflows are being turned into reusable SKILL.md files, benchmark contracts, review loops, and production debugging playbooks. The post frames agent value around procedural engineering knowledge that can be executed, tested, and reviewed.
+Introducing Laguna XS 2.1 (5 minute read)
+Laguna XS 2.1 is a 33B parameter Mixture-of-Experts model optimized for agentic coding and long-horizon tasks, showing a 5.4-point improvement on SWE-bench Multilingual to 63.1%. It supports various platforms and offers three quantized checkpoints for resource-efficient deployment. Licensed under OpenMDW-1.1, it enables open model distribution and is available for download on Hugging Face or via API.
+Seed2.0 Model Card (72 minute read)
+Seed2.0 focused on long-tail knowledge, complex instruction following, reasoning, visual understanding, and search for real-world tasks. The model card described an evaluation-driven approach built around user needs and complex usage scenarios.
+Introducing Devin Security Swarm (3 minute read)
+Devin Security Swarm is a cost-effective and accurate way to find security vulnerabilities in complex codebases. It uses a new architecture for whole-codebase reasoning called Agentic MapReduce. Devin maps relevant signals across a repository, fans out focused agents over bounded shards, reduces their findings to one report, then verifies serious vulnerabilities in isolated sandboxes before marking them confirmed. Cognition has published extensive documentation and technical materials about Agentic MapReduce.
+Residual Context Diffusion Language Models (2 minute read)
+State-of-the-art block-wise Diffusion Large Language Models (dLLMs) rely on a remasking mechanism that decodes only the most confident tokens and discards the rest. Recycling computation from the discarded tokens is beneficial, as these tokens retain contextual information useful for subsequent decoding iterations. Residual Context Diffusion is a module that converts these discarded token representations into contextual residuals and injects them back for the next denoising step. It consistently improves frontier dLLMs in terms of accuracy with minimal extra computation overhead across a wide range of benchmarks.
+TLDR is hiring a curator for TLDR AI! (TLDR Curator, ~5 hrs/week)
+Over 1M subscribers read TLDR AI to stay on top of the latest in AI models, research, engineering, and more. If you work in AI and want to help curate it, send your LinkedIn or resume to ai@tldr.tech !
+Teaching AI to run with the turbines (22 minute read)
+Woodside Energy leverages AI to enhance operational efficiency by integrating agentic AI systems in complex industrial workflows, particularly in LNG plant startups through their "Startup Advisor". These AI tools, built upon years of investment in predictive analytics and machine learning, augment human expertise rather than replace it.
+The Hardware Coup: Why AI Hardware Just Changed Forever (3 minute read)
+In late June, AI hardware saw massive advancements with custom chips transitioning from concepts to actual products. OpenAI, Etched, Amazon, and SambaNova led these significant developments, marking a pivotal shift in the industry. These innovations promise to enhance AI processing capabilities and efficiency.
+The Ramanujan Challenge for AI (1 minute read)
+The Ramanujan Challenge for AI is designed to test whether AI systems can move from a concrete formula to a valid proof or symbolic derivation.
+CursorBench 3.1 (2 minute read)
+CursorBench evaluates agents on ambiguous, multi-file tasks from real Cursor sessions.
+New analytics and cost controls are available for Claude Enterprise (3 minute read)
+Claude Enterprise introduces enhanced admin analytics, model-level entitlements, and spend alerts to better manage usage and costs.
+Get the most interesting AI stories and breakthroughs delivered in a free daily email.
+Join 1,100,000 readers for one daily email
+Privacy Careers Advertise
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 79
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":79,"text_length":5393,"paragraph_count":33,"sentence_count":37,"boilerplate_hits":2,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-03 Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈 Meta's Watermelon Matches GPT-5.
+
+2. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   5 Benchmarks (3 minute read) Meta's superintelligence chief, Alexandr Wang, says that the company's upcoming model has caught up with OpenAI's GPT-5.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   5 on closely followed AI benchmarks.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Codenamed Watermelon, the model is still in training.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The model reportedly uses an order of magnitude more compute than Muse Spark.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Meta has not given a timeline for Watermelon.
+
+## business_elements
+
+- companies: TLDR AI Newsletter, OpenAI, Anthropic, Google, Meta, Amazon, Nvidia, Cursor
+- products: GPT-5, Claude, Agent, agent, agents, Cursor
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 07, 03
+M, 5.5 B, 3 m, 5.5, 2 m, 13 m
+- quotes: Startup Advisor
+
+## evidence_seed
+
+- company_actions: Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-03 Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈 Meta's Watermelon Matches GPT-5. / 5 on closely followed AI benchmarks. / Codenamed Watermelon, the model is still in training.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+采集通道未提供摘要。
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

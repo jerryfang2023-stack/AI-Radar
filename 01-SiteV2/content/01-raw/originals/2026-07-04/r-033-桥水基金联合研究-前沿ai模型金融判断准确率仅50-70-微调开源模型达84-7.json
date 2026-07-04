@@ -1,0 +1,278 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-033",
+  "title": "桥水基金联合研究：前沿AI模型金融判断准确率仅50-70%，微调开源模型达84.7%",
+  "title_zh": "桥水基金联合研究：前沿AI模型金融判断准确率仅50-70%，微调开源模型达84.7%",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://www.ithome.com/0/972/445.htm",
+  "canonical_url": "https://ithome.com/0/972/445.htm",
+  "source_name": "IT之家（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-03T13:51:20.000Z",
+  "collected_at": "2026-07-04T04:50:50.249Z",
+  "language": "mixed",
+  "full_text": "IT之家 7 月 3 日消息，桥水基金旗下 AIA Labs 联合 OpenAI 前 CTO Mira Murati 创立的 Thinking Machines Lab 对包括 GPT、Claude 和 Gemini 在内的前沿大语言模型在基础金融信息筛选任务进行了测试，但结果表现不佳，而基于开源模型微调的自研模型在准确率和成本上均具有显著优势。\n研究团队从投资分析师的日常工作中提取了六项典型任务，包括判断一篇财经文章对高管层是否具有参考价值、判断央行文件是否预示未来利率变化方向等。\n报告指出，这些任务对专业投资者而言非常基础，但他们往往难以用语言清晰描述自己的判断逻辑。在前沿模型测试中，Gemini、Claude 和 GPT 各版本在使用基础提示词时平均准确率仅约 50%。\n即使经过专家撰写的详细提示词和三级分类体系（“相关且有趣”“相关但无趣”“不相关”）优化后，准确率提升至 70% 左右，仍未达到研究人员设定的 80% 可信部署门槛。\n报告还指出，模型迭代并未在该任务上带来显著进步，例如 GPT-5.4 比 GPT-5.2 价格高出 43%，但准确率仅略有提升。\n研究团队随后采用微调方案，以阿里开源模型 Qwen3-235B 为基座，通过 Thinking Machines Lab 的 Tinker 平台进行训练。训练数据集构建过程中，团队最初采购了非专业标注服务，但发现大量标签存在错误。由于专家标注成本高昂，团队设计了一套验证机制：先用有缺陷的标签训练模型，再让模型重新评估同一批数据，将模型判断与原始标签不一致的争议样本交由专家校正，以此在保证质量的同时控制成本。\n经过多轮训练优化 —— 包括交错批次训练、CISPO 损失函数与非对称裁剪、以及基于最佳验证准确率检查点的同策略蒸馏 —— 最终微调模型在测试中达到 84.7% 的准确率，优于测试中最佳前沿模型的 78.2%，错误率降低了 29.8%。同时，由于模型规模更小，推理成本仅为前沿模型的约十四分之一。\n报告指出，这一结果再次证明前沿模型并未囊括所有可用数据，大量专有企业数据和未编码的人类专业知识仍存在于大模型的知识盲区中，尤其是那些企业有意保持私密的数据。通过工具链微调开源模型，企业可以保留模型权重、数据乃至算力基础设施的控制权，避免将专有数据交给前沿实验室后成为其产品竞争的基础。桥水方面表示，该模型已投入日常使用，并认为这种针对特定组织需求定制的“差异化智能”将是未来方向。\n参考资料：\n《 Learning to Replicate Expert Judgment in Financial Tasks - Thinking Machines Lab 》\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
+  "clean_text": "IT之家 7 月 3 日消息，桥水基金旗下 AIA Labs 联合 OpenAI 前 CTO Mira Murati 创立的 Thinking Machines Lab 对包括 GPT、Claude 和 Gemini 在内的前沿大语言模型在基础金融信息筛选任务进行了测试，但结果表现不佳，而基于开源模型微调的自研模型在准确率和成本上均具有显著优势。\n研究团队从投资分析师的日常工作中提取了六项典型任务，包括判断一篇财经文章对高管层是否具有参考价值、判断央行文件是否预示未来利率变化方向等。\n报告指出，这些任务对专业投资者而言非常基础，但他们往往难以用语言清晰描述自己的判断逻辑。在前沿模型测试中，Gemini、Claude 和 GPT 各版本在使用基础提示词时平均准确率仅约 50%。\n即使经过专家撰写的详细提示词和三级分类体系（“相关且有趣”“相关但无趣”“不相关”）优化后，准确率提升至 70% 左右，仍未达到研究人员设定的 80% 可信部署门槛。\n报告还指出，模型迭代并未在该任务上带来显著进步，例如 GPT-5.4 比 GPT-5.2 价格高出 43%，但准确率仅略有提升。\n研究团队随后采用微调方案，以阿里开源模型 Qwen3-235B 为基座，通过 Thinking Machines Lab 的 Tinker 平台进行训练。训练数据集构建过程中，团队最初采购了非专业标注服务，但发现大量标签存在错误。由于专家标注成本高昂，团队设计了一套验证机制：先用有缺陷的标签训练模型，再让模型重新评估同一批数据，将模型判断与原始标签不一致的争议样本交由专家校正，以此在保证质量的同时控制成本。\n经过多轮训练优化 —— 包括交错批次训练、CISPO 损失函数与非对称裁剪、以及基于最佳验证准确率检查点的同策略蒸馏 —— 最终微调模型在测试中达到 84.7% 的准确率，优于测试中最佳前沿模型的 78.2%，错误率降低了 29.8%。同时，由于模型规模更小，推理成本仅为前沿模型的约十四分之一。\n报告指出，这一结果再次证明前沿模型并未囊括所有可用数据，大量专有企业数据和未编码的人类专业知识仍存在于大模型的知识盲区中，尤其是那些企业有意保持私密的数据。通过工具链微调开源模型，企业可以保留模型权重、数据乃至算力基础设施的控制权，避免将专有数据交给前沿实验室后成为其产品竞争的基础。桥水方面表示，该模型已投入日常使用，并认为这种针对特定组织需求定制的“差异化智能”将是未来方向。\n参考资料：\n《 Learning to Replicate Expert Judgment in Financial Tasks - Thinking Machines Lab 》\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-04/r-033-桥水基金联合研究-前沿ai模型金融判断准确率仅50-70-微调开源模型达84-7.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-04/r-033-桥水基金联合研究-前沿ai模型金融判断准确率仅50-70-微调开源模型达84-7.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "medium",
+  "extraction_method": "content-container",
+  "readability_score": 60,
+  "extractor_diagnostics": {
+    "readability_score": 60,
+    "text_length": 1204,
+    "paragraph_count": 10,
+    "sentence_count": 9,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 1204,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "31626052eb5dc7f4",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "桥水基金联合研究：前沿AI模型金融判断准确率仅50-70%，微调开源模型达84.7%",
+    "discovery_summary": "桥水基金旗下AIA Labs联合Thinking Machines Lab研究显示，GPT、Claude、Gemini等前沿模型在基础金融信息筛选任务中使用基础提示词平均准确率约50%，经专家优化后升至约70%，仍低于80%可信部署门槛。模型迭代进步有限，GPT-5.4比GPT-5.2贵43%但准确率仅略升。研究团队以阿里开源模型Qwen3-235B为基座，通过Tinker平台采用交错批次训练、CISPO损失函数及同策略蒸馏等方法微调，最终准确率达84.7%，优于最佳前沿模型的78.2%，错误率降低29.8%，推理成本仅为前沿模型的约十四分之一。研究认为企业通过微调开源模型可保留专有数据控制权，获得\"差异化智能\"。",
+    "source_name": "IT之家（RSS）",
+    "origin_url": "https://www.ithome.com/0/972/445.htm",
+    "discovered_at": "2026-07-04T03:11:32.673Z",
+    "rank_on_page": 131,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "7a9245270da06073",
+  "content_hash": "31626052eb5dc7f4",
+  "full_text_hash": "31626052eb5dc7f4",
+  "semantic_hash": "a52be6cbc6d2b3c1",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-03T13:51:20.000Z",
+  "last_seen_at": "2026-07-04T04:50:50.249Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "funding",
+      "text": "桥水基金旗下AIA Labs联合Thinking Machines Lab研究显示，GPT、Claude、Gemini等前沿模型在基础金融信息筛选任务中使用基础提示词平均准确率约50%，经专家优化后升至约70%，仍低于80%可信部署门槛。模型迭代进步有限，GPT-5.4比GPT-5.2贵43%但准确率仅略升。研究团队以阿里开源模型Qwen3-235B为基座，通过Tinker平台采用交错批次训练、CISPO损失函数及同策略蒸馏等方法微调，最终准确率达84.7%，优于最佳前沿模型的78.2%，错误率降低29.8%，推理成本仅为前沿模型的约十四分之一。研究认为企业通过微调开源模型可保留专有数据控制权，获得\"差异化智能\"。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "funding",
+      "text": "IT之家 7 月 3 日消息，桥水基金旗下 AIA Labs 联合 OpenAI 前 CTO Mira Murati 创立的 Thinking Machines Lab 对包括 GPT、Claude 和 Gemini 在内的前沿大语言模型在基础金融信息筛选任务进行了测试，但结果表现不佳，而基于开源模型微调的自研模型在准确率和成本上均具有显著优势。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "funding",
+      "text": "研究团队从投资分析师的日常工作中提取了六项典型任务，包括判断一篇财经文章对高管层是否具有参考价值、判断央行文件是否预示未来利率变化方向等。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "funding",
+      "text": "报告指出，这些任务对专业投资者而言非常基础，但他们往往难以用语言清晰描述自己的判断逻辑。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "在前沿模型测试中，Gemini、Claude 和 GPT 各版本在使用基础提示词时平均准确率仅约 50%。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "即使经过专家撰写的详细提示词和三级分类体系（“相关且有趣”“相关但无趣”“不相关”）优化后，准确率提升至 70% 左右，仍未达到研究人员设定的 80% 可信部署门槛。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-04T04:50:50.249Z",
+  "business_elements": {
+    "companies": [
+      "IT之家（RSS）",
+      "OpenAI"
+    ],
+    "products": [
+      "Claude",
+      "Gemini",
+      "GPT-5"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "采购负责人"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "采购 / 招投标",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "部署 / 上线",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "采购"
+    ],
+    "numbers": [
+      "50",
+      "70%",
+      "84.7%",
+      "50%",
+      "80%",
+      "5.4",
+      "5.2",
+      "43%"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "桥水基金旗下AIA Labs联合Thinking Machines Lab研究显示，GPT、Claude、Gemini等前沿模型在基础金融信息筛选任务中使用基础提示词平均准确率约50%，经专家优化后升至约70%，仍低于80%可信部署门槛。模型迭代进步有限，GPT-5.4比GPT-5.2贵43%但准确率仅略升。研究团队以阿里开源模型Qwen3-235B为基座，通过Tinker平台采用交错批次训练、CISPO损失函数及同策略蒸馏等方法微调，最终准确率达84.7%，优于最佳前沿模型的78.2%，错误率降低29.8%，推理成本仅为前沿模型的约十四分之一。研究认为企业通过微调开源模型可保留专有数据控制权，获得\"差异化智能\"。",
+      "IT之家 7 月 3 日消息，桥水基金旗下 AIA Labs 联合 OpenAI 前 CTO Mira Murati 创立的 Thinking Machines Lab 对包括 GPT、Claude 和 Gemini 在内的前沿大语言模型在基础金融信息筛选任务进行了测试，但结果表现不佳，而基于开源模型微调的自研模型在准确率和成本上均具有显著优势。",
+      "研究团队从投资分析师的日常工作中提取了六项典型任务，包括判断一篇财经文章对高管层是否具有参考价值、判断央行文件是否预示未来利率变化方向等。"
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "采购负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 桥水基金联合研究：前沿AI模型金融判断准确率仅50-70%，微调开源模型达84.7%\n\n- raw_id: R-033\n- title_zh: 桥水基金联合研究：前沿AI模型金融判断准确率仅50-70%，微调开源模型达84.7%\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.ithome.com/0/972/445.htm\n- source_name: IT之家（RSS）\n- collected_at: 2026-07-04T04:50:50.249Z\n\n## clean_text\n\nIT之家 7 月 3 日消息，桥水基金旗下 AIA Labs 联合 OpenAI 前 CTO Mira Murati 创立的 Thinking Machines Lab 对包括 GPT、Claude 和 Gemini 在内的前沿大语言模型在基础金融信息筛选任务进行了测试，但结果表现不佳，而基于开源模型微调的自研模型在准确率和成本上均具有显著优势。\n研究团队从投资分析师的日常工作中提取了六项典型任务，包括判断一篇财经文章对高管层是否具有参考价值、判断央行文件是否预示未来利率变化方向等。\n报告指出，这些任务对专业投资者而言非常基础，但他们往往难以用语言清晰描述自己的判断逻辑。在前沿模型测试中，Gemini、Claude 和 GPT 各版本在使用基础提示词时平均准确率仅约 50%。\n即使经过专家撰写的详细提示词和三级分类体系（“相关且有趣”“相关但无趣”“不相关”）优化后，准确率提升至 70% 左右，仍未达到研究人员设定的 80% 可信部署门槛。\n报告还指出，模型迭代并未在该任务上带来显著进步，例如 GPT-5.4 比 GPT-5.2 价格高出 43%，但准确率仅略有提升。\n研究团队随后采用微调方案，以阿里开源模型 Qwen3-235B 为基座，通过 Thinking Machines Lab 的 Tinker 平台进行训练。训练数据集构建过程中，团队最初采购了非专业标注服务，但发现大量标签存在错误。由于专家标注成本高昂，团队设计了一套验证机制：先用有缺陷的标签训练模型，再让模型重新评估同一批数据，将模型判断与原始标签不一致的争议样本交由专家校正，以此在保证质量的同时控制成本。\n经过多轮训练优化 —— 包括交错批次训练、CISPO 损失函数与非对称裁剪、以及基于最佳验证准确率检查点的同策略蒸馏 —— 最终微调模型在测试中达到 84.7% 的准确率，优于测试中最佳前沿模型的 78.2%，错误率降低了 29.8%。同时，由于模型规模更小，推理成本仅为前沿模型的约十四分之一。\n报告指出，这一结果再次证明前沿模型并未囊括所有可用数据，大量专有企业数据和未编码的人类专业知识仍存在于大模型的知识盲区中，尤其是那些企业有意保持私密的数据。通过工具链微调开源模型，企业可以保留模型权重、数据乃至算力基础设施的控制权，避免将专有数据交给前沿实验室后成为其产品竞争的基础。桥水方面表示，该模型已投入日常使用，并认为这种针对特定组织需求定制的“差异化智能”将是未来方向。\n参考资料：\n《 Learning to Replicate Expert Judgment in Financial Tasks - Thinking Machines Lab 》\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n\n## full_text\n\nIT之家 7 月 3 日消息，桥水基金旗下 AIA Labs 联合 OpenAI 前 CTO Mira Murati 创立的 Thinking Machines Lab 对包括 GPT、Claude 和 Gemini 在内的前沿大语言模型在基础金融信息筛选任务进行了测试，但结果表现不佳，而基于开源模型微调的自研模型在准确率和成本上均具有显著优势。\n研究团队从投资分析师的日常工作中提取了六项典型任务，包括判断一篇财经文章对高管层是否具有参考价值、判断央行文件是否预示未来利率变化方向等。\n报告指出，这些任务对专业投资者而言非常基础，但他们往往难以用语言清晰描述自己的判断逻辑。在前沿模型测试中，Gemini、Claude 和 GPT 各版本在使用基础提示词时平均准确率仅约 50%。\n即使经过专家撰写的详细提示词和三级分类体系（“相关且有趣”“相关但无趣”“不相关”）优化后，准确率提升至 70% 左右，仍未达到研究人员设定的 80% 可信部署门槛。\n报告还指出，模型迭代并未在该任务上带来显著进步，例如 GPT-5.4 比 GPT-5.2 价格高出 43%，但准确率仅略有提升。\n研究团队随后采用微调方案，以阿里开源模型 Qwen3-235B 为基座，通过 Thinking Machines Lab 的 Tinker 平台进行训练。训练数据集构建过程中，团队最初采购了非专业标注服务，但发现大量标签存在错误。由于专家标注成本高昂，团队设计了一套验证机制：先用有缺陷的标签训练模型，再让模型重新评估同一批数据，将模型判断与原始标签不一致的争议样本交由专家校正，以此在保证质量的同时控制成本。\n经过多轮训练优化 —— 包括交错批次训练、CISPO 损失函数与非对称裁剪、以及基于最佳验证准确率检查点的同策略蒸馏 —— 最终微调模型在测试中达到 84.7% 的准确率，优于测试中最佳前沿模型的 78.2%，错误率降低了 29.8%。同时，由于模型规模更小，推理成本仅为前沿模型的约十四分之一。\n报告指出，这一结果再次证明前沿模型并未囊括所有可用数据，大量专有企业数据和未编码的人类专业知识仍存在于大模型的知识盲区中，尤其是那些企业有意保持私密的数据。通过工具链微调开源模型，企业可以保留模型权重、数据乃至算力基础设施的控制权，避免将专有数据交给前沿实验室后成为其产品竞争的基础。桥水方面表示，该模型已投入日常使用，并认为这种针对特定组织需求定制的“差异化智能”将是未来方向。\n参考资料：\n《 Learning to Replicate Expert Judgment in Financial Tasks - Thinking Machines Lab 》\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 60\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: medium\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] 桥水基金旗下AIA Labs联合Thinking Machines Lab研究显示，GPT、Claude、Gemini等前沿模型在基础金融信息筛选任务中使用基础提示词平均准确率约50%，经专家优化后升至约70%，仍低于80%可信部署门槛。模型迭代进步有限，GPT-5.4比GPT-5.2贵43%但准确率仅略升。研究团队以阿里开源模型Qwen3-235B为基座，通过Tinker平台采用交错批次训练、CISPO损失函数及同策略蒸馏等方法微调，最终准确率达84.7%，优于最佳前沿模型的78.2%，错误率降低29.8%，推理成本仅为前沿模型的约十四分之一。研究认为企业通过微调开源模型可保留专有数据控制权，获得\"差异化智能\"。\n2. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] IT之家 7 月 3 日消息，桥水基金旗下 AIA Labs 联合 OpenAI 前 CTO Mira Murati 创立的 Thinking Machines Lab 对包括 GPT、Claude 和 Gemini 在内的前沿大语言模型在基础金融信息筛选任务进行了测试，但结果表现不佳，而基于开源模型微调的自研模型在准确率和成本上均具有显著优势。\n3. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] 研究团队从投资分析师的日常工作中提取了六项典型任务，包括判断一篇财经文章对高管层是否具有参考价值、判断央行文件是否预示未来利率变化方向等。\n4. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] 报告指出，这些任务对专业投资者而言非常基础，但他们往往难以用语言清晰描述自己的判断逻辑。\n5. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 在前沿模型测试中，Gemini、Claude 和 GPT 各版本在使用基础提示词时平均准确率仅约 50%。\n6. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 即使经过专家撰写的详细提示词和三级分类体系（“相关且有趣”“相关但无趣”“不相关”）优化后，准确率提升至 70% 左右，仍未达到研究人员设定的 80% 可信部署门槛。\n"
+}

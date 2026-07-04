@@ -1,0 +1,279 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-048",
+  "title": "Fable 的判断力：Simon Willison 从 Claude Code 团队获得的效率技巧",
+  "title_zh": "Fable 的判断力：Simon Willison 从 Claude Code 团队获得的效率技巧",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://simonwillison.net/2026/Jul/3/judgement",
+  "canonical_url": "https://simonwillison.net/2026/Jul/3/judgement",
+  "source_name": "Simon Willison 博客",
+  "source_type": "builder",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "supporting_article",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-03T18:51:06.000Z",
+  "collected_at": "2026-07-04T04:50:50.375Z",
+  "language": "mixed",
+  "full_text": "3rd July 2026\nOne of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work.\nThe example they gave was testing. You can tell Fable \"only use automated testing for larger features, don't update and run tests for small copy or design changes\" - but it's better to just tell Fable to use its own judgement when deciding to write tests instead.\nJesse Vincent just gave me a related tip to help avoid burning too many of those valuable Fable tokens in the few days we have left before the prices go up. Tell Fable to use other models for smaller tasks, applying its own judgement about which model to use.\nI prompted Claude Code just now with:\nFor all coding tasks use your judgement to decide an appropriate lower power model and run that in a subagent\nClaude saved this memory file in ~/.claude/projects/name-of-project/memory/delegate-coding-to-subagents.md :\n---\nname: delegate-coding-to-subagents\ndescription: Simon wants coding tasks delegated to subagents running an appropriately lower-power model\nmetadata:\nnode_type: memory\ntype: feedback\noriginSessionId: 30068d78-43a9-4fb1-bb29-9799e18c526a\n---\nStated by Simon on 2026-07-03: \"For all coding tasks use your judgement to\ndecide an appropriate lower power model and run that in a subagent.\"\nWhy: cost/efficiency — implementation work rarely needs the top-tier\nmodel; judgment, review, and synthesis stay with the main loop.\nHow to apply: when a task in this project is primarily writing/editing\ncode, spawn an Agent with a model override (sonnet for substantive\nimplementation, haiku for trivial/mechanical edits) and a self-contained\nprompt; review the result in the main loop before committing. Design,\nauditing, data synthesis, and anything judgment-heavy stays in the main\nmodel. See also [[project-goals]].\nSo far it seems to be working well. I'm getting a ton of work done and my Fable allowance is shrinking less quickly than before.",
+  "clean_text": "3rd July 2026\nOne of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work.\nThe example they gave was testing. You can tell Fable \"only use automated testing for larger features, don't update and run tests for small copy or design changes\" - but it's better to just tell Fable to use its own judgement when deciding to write tests instead.\nJesse Vincent just gave me a related tip to help avoid burning too many of those valuable Fable tokens in the few days we have left before the prices go up. Tell Fable to use other models for smaller tasks, applying its own judgement about which model to use.\nI prompted Claude Code just now with:\nFor all coding tasks use your judgement to decide an appropriate lower power model and run that in a subagent\nClaude saved this memory file in ~/.claude/projects/name-of-project/memory/delegate-coding-to-subagents.md :\n---\nname: delegate-coding-to-subagents\ndescription: Simon wants coding tasks delegated to subagents running an appropriately lower-power model\nmetadata:\nnode_type: memory\ntype: feedback\noriginSessionId: 30068d78-43a9-4fb1-bb29-9799e18c526a\n---\nStated by Simon on 2026-07-03: \"For all coding tasks use your judgement to\ndecide an appropriate lower power model and run that in a subagent.\"\nWhy: cost/efficiency — implementation work rarely needs the top-tier\nmodel; judgment, review, and synthesis stay with the main loop.\nHow to apply: when a task in this project is primarily writing/editing\ncode, spawn an Agent with a model override (sonnet for substantive\nimplementation, haiku for trivial/mechanical edits) and a self-contained\nprompt; review the result in the main loop before committing. Design,\nauditing, data synthesis, and anything judgment-heavy stays in the main\nmodel. See also [[project-goals]].\nSo far it seems to be working well. I'm getting a ton of work done and my Fable allowance is shrinking less quickly than before.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-04/r-048-fable-的判断力-simon-willison-从-claude-code-团队获得的效率技巧.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-04/r-048-fable-的判断力-simon-willison-从-claude-code-团队获得的效率技巧.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "medium",
+  "extraction_method": "content-container",
+  "readability_score": 75,
+  "extractor_diagnostics": {
+    "readability_score": 75,
+    "text_length": 2097,
+    "paragraph_count": 20,
+    "sentence_count": 11,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0029,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 2097,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "5f20913ad089faab",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Fable 的判断力：Simon Willison 从 Claude Code 团队获得的效率技巧",
+    "discovery_summary": "Simon Willison 在 AIE 上与 Claude Code 团队交流后建议，让 Fable（以及 Opus）用自己的判断力工作，而非硬性规定行为。例如，直接让 Fable 自行决定何时编写测试，比给出具体规则更好。为应对价格即将上涨、节省 Fable token，Jesse Vincent 的另一个技巧是告诉 Fable 将较小任务委托给较低功耗模型（Sonnet 用于实质性实现、Haiku 用于机械修改），主循环保留判断、审计和数据合成等任务。Willison 已将提示词存入 Claude Code 记忆文件，实际效果良好，Fable token 消耗速度明显下降。",
+    "source_name": "Simon Willison 博客",
+    "origin_url": "https://simonwillison.net/2026/Jul/3/judgement",
+    "discovered_at": "2026-07-04T03:11:32.653Z",
+    "rank_on_page": 74,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "e36be334d3482721",
+  "content_hash": "5f20913ad089faab",
+  "full_text_hash": "5f20913ad089faab",
+  "semantic_hash": "d9bc517f1335b105",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-03T18:51:06.000Z",
+  "last_seen_at": "2026-07-04T04:50:50.375Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "Simon Willison 在 AIE 上与 Claude Code 团队交流后建议，让 Fable（以及 Opus）用自己的判断力工作，而非硬性规定行为。例如，直接让 Fable 自行决定何时编写测试，比给出具体规则更好。为应对价格即将上涨、节省 Fable token，Jesse Vincent 的另一个技巧是告诉 Fable 将较小任务委托给较低功耗模型（Sonnet 用于实质性实现、Haiku 用于机械修改），主循环保留判断、审计和数据合成等任务。Willison 已将提示词存入 Claude Code 记忆文件，实际效果良好，Fable token 消耗速度明显下降。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "3rd July 2026 One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "The example they gave was testing.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "quote",
+      "text": "You can tell Fable \"only use automated testing for larger features, don't update and run tests for small copy or design changes\" - but it's better to just tell Fable to use its own judgement when deciding to write tests instead.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Jesse Vincent just gave me a related tip to help avoid burning too many of those valuable Fable tokens in the few days we have left before the prices go up.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Tell Fable to use other models for smaller tasks, applying its own judgement about which model to use.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-04T04:50:50.375Z",
+  "business_elements": {
+    "companies": [
+      "Simon Willison 博客"
+    ],
+    "products": [
+      "Claude",
+      "claude",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "3",
+      "2026",
+      "30068",
+      "78",
+      "43",
+      "9",
+      "4",
+      "1"
+    ],
+    "quotes": [
+      "only use automated testing for larger features, don't update and run tests for small copy or design changes",
+      "For all coding tasks use your judgement to\ndecide an appropriate lower power model and run that in a subagent."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Simon Willison 在 AIE 上与 Claude Code 团队交流后建议，让 Fable（以及 Opus）用自己的判断力工作，而非硬性规定行为。例如，直接让 Fable 自行决定何时编写测试，比给出具体规则更好。为应对价格即将上涨、节省 Fable token，Jesse Vincent 的另一个技巧是告诉 Fable 将较小任务委托给较低功耗模型（Sonnet 用于实质性实现、Haiku 用于机械修改），主循环保留判断、审计和数据合成等任务。Willison 已将提示词存入 Claude Code 记忆文件，实际效果良好，Fable token 消耗速度明显下降。",
+      "3rd July 2026 One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work.",
+      "The example they gave was testing."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Fable 的判断力：Simon Willison 从 Claude Code 团队获得的效率技巧\n\n- raw_id: R-048\n- title_zh: Fable 的判断力：Simon Willison 从 Claude Code 团队获得的效率技巧\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://simonwillison.net/2026/Jul/3/judgement\n- source_name: Simon Willison 博客\n- collected_at: 2026-07-04T04:50:50.375Z\n\n## clean_text\n\n3rd July 2026\nOne of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work.\nThe example they gave was testing. You can tell Fable \"only use automated testing for larger features, don't update and run tests for small copy or design changes\" - but it's better to just tell Fable to use its own judgement when deciding to write tests instead.\nJesse Vincent just gave me a related tip to help avoid burning too many of those valuable Fable tokens in the few days we have left before the prices go up. Tell Fable to use other models for smaller tasks, applying its own judgement about which model to use.\nI prompted Claude Code just now with:\nFor all coding tasks use your judgement to decide an appropriate lower power model and run that in a subagent\nClaude saved this memory file in ~/.claude/projects/name-of-project/memory/delegate-coding-to-subagents.md :\n---\nname: delegate-coding-to-subagents\ndescription: Simon wants coding tasks delegated to subagents running an appropriately lower-power model\nmetadata:\nnode_type: memory\ntype: feedback\noriginSessionId: 30068d78-43a9-4fb1-bb29-9799e18c526a\n---\nStated by Simon on 2026-07-03: \"For all coding tasks use your judgement to\ndecide an appropriate lower power model and run that in a subagent.\"\nWhy: cost/efficiency — implementation work rarely needs the top-tier\nmodel; judgment, review, and synthesis stay with the main loop.\nHow to apply: when a task in this project is primarily writing/editing\ncode, spawn an Agent with a model override (sonnet for substantive\nimplementation, haiku for trivial/mechanical edits) and a self-contained\nprompt; review the result in the main loop before committing. Design,\nauditing, data synthesis, and anything judgment-heavy stays in the main\nmodel. See also [[project-goals]].\nSo far it seems to be working well. I'm getting a ton of work done and my Fable allowance is shrinking less quickly than before.\n\n## full_text\n\n3rd July 2026\nOne of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work.\nThe example they gave was testing. You can tell Fable \"only use automated testing for larger features, don't update and run tests for small copy or design changes\" - but it's better to just tell Fable to use its own judgement when deciding to write tests instead.\nJesse Vincent just gave me a related tip to help avoid burning too many of those valuable Fable tokens in the few days we have left before the prices go up. Tell Fable to use other models for smaller tasks, applying its own judgement about which model to use.\nI prompted Claude Code just now with:\nFor all coding tasks use your judgement to decide an appropriate lower power model and run that in a subagent\nClaude saved this memory file in ~/.claude/projects/name-of-project/memory/delegate-coding-to-subagents.md :\n---\nname: delegate-coding-to-subagents\ndescription: Simon wants coding tasks delegated to subagents running an appropriately lower-power model\nmetadata:\nnode_type: memory\ntype: feedback\noriginSessionId: 30068d78-43a9-4fb1-bb29-9799e18c526a\n---\nStated by Simon on 2026-07-03: \"For all coding tasks use your judgement to\ndecide an appropriate lower power model and run that in a subagent.\"\nWhy: cost/efficiency — implementation work rarely needs the top-tier\nmodel; judgment, review, and synthesis stay with the main loop.\nHow to apply: when a task in this project is primarily writing/editing\ncode, spawn an Agent with a model override (sonnet for substantive\nimplementation, haiku for trivial/mechanical edits) and a self-contained\nprompt; review the result in the main loop before committing. Design,\nauditing, data synthesis, and anything judgment-heavy stays in the main\nmodel. See also [[project-goals]].\nSo far it seems to be working well. I'm getting a ton of work done and my Fable allowance is shrinking less quickly than before.\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 75\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: medium\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Simon Willison 在 AIE 上与 Claude Code 团队交流后建议，让 Fable（以及 Opus）用自己的判断力工作，而非硬性规定行为。例如，直接让 Fable 自行决定何时编写测试，比给出具体规则更好。为应对价格即将上涨、节省 Fable token，Jesse Vincent 的另一个技巧是告诉 Fable 将较小任务委托给较低功耗模型（Sonnet 用于实质性实现、Haiku 用于机械修改），主循环保留判断、审计和数据合成等任务。Willison 已将提示词存入 Claude Code 记忆文件，实际效果良好，Fable token 消耗速度明显下降。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 3rd July 2026 One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The example they gave was testing.\n4. [quote / signal_card_candidate, relationship_graph_input, viewpoint / high] You can tell Fable \"only use automated testing for larger features, don't update and run tests for small copy or design changes\" - but it's better to just tell Fable to use its own judgement when deciding to write tests instead.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Jesse Vincent just gave me a related tip to help avoid burning too many of those valuable Fable tokens in the few days we have left before the prices go up.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Tell Fable to use other models for smaller tasks, applying its own judgement about which model to use.\n"
+}

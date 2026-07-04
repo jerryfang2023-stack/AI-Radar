@@ -1,0 +1,291 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-061",
+  "title": "pxpipe：通过图像化压缩输入token降低Claude Code成本",
+  "title_zh": "pxpipe：通过图像化压缩输入token降低Claude Code成本",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://github.com/teamchong/pxpipe",
+  "canonical_url": "https://github.com/teamchong/pxpipe",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-03T19:19:45.726Z",
+  "collected_at": "2026-07-04T04:50:50.466Z",
+  "language": "mixed",
+  "full_text": "teamchong\npxpipe\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n25\nStar\n472\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n298 Commits\n298 Commits\n.github/ workflows\n.github/ workflows\nassets\nassets\nbench\nbench\nbin\nbin\ndemo\ndemo\ndocs\ndocs\neval\neval\nscripts\nscripts\nsrc\nsrc\ntests\ntests\n.gitignore\n.gitignore\n.npmrc\n.npmrc\nCHANGELOG.md\nCHANGELOG.md\nFINDINGS.md\nFINDINGS.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\ntsconfig.json\ntsconfig.json\nvitest.config.ts\nvitest.config.ts\nwrangler.toml\nwrangler.toml\nView all files\nRepository files navigation\npxpipe\nCut Claude Code's input tokens by rendering bulky context as images — the same system prompt, tool docs, and history, in a fraction of the tokens.\nAn image's token cost is fixed by its pixel dimensions, not by how much text\nis inside it. Dense content (code, JSON, tool output) packs ~3.1 chars per\nimage-token vs ~1 char per text-token on real Claude Code traffic. pxpipe is\na local proxy that exploits the gap: it rewrites the bulky parts of each\nrequest into compact PNGs before it leaves your machine. At current Fable\nlist prices that lands as a ~59–70% lower end-to-end bill — but prices\nmove and workloads differ, so the durable number is the token cut itself,\nmeasured per-request against a free count_tokens counterfactual in\n~/.pxpipe/events.jsonl .\nThis is what the model sees instead of text:\n~48k chars of system prompt + tool docs: ≈25k tokens as text, ≈2.7k image\ntokens as this page. Real pipeline output; the model reads renders like this\nat 100/100 (see benchmarks).\nDemo\nFable 5 (the default, 100/100 reader) — plain left, pxpipe right:\nFable-AB-Demo.mp4\npxpipe counts an exact token 10/10 across 39 imaged filler files\n(matches grep line-for-line), gets the multi-step ledger arithmetic right,\nand ends the session at $6.06 with context to spare (73.5k/1M) vs\n$42.21 at 96% full. One caveat visible in the clip: the pxpipe arm\nneeded a nudge to match the requested one-line output format.\nOpus 4.8 (disabled by default) — same layout:\nOpus-AB-Demo.mp4\nText needles read fine on both arms; the imaged phrase-count doesn't read on\nOpus — and pxpipe says so instead of fabricating a number . That misread\nrate is why Opus is opt-in.\nTry it (30 seconds)\nnpx pxpipe-proxy # proxy on 127.0.0.1:47821\nANTHROPIC_BASE_URL=http://127.0.0.1:47821 claude # point Claude Code at it\nDashboard at http://127.0.0.1:47821/ : tokens saved, every text→image\nconversion side by side, kill switch, live model chips. Responses stream\nnormally — pxpipe compresses the request only, never the model's output.\nRecent turns stay text; the system prompt, tool docs, and older bulk history\nare imaged.\nThe honest part\nIt is lossy. Exact 12-char hex strings in dense imaged content:\n13/15 on Fable 5, 0/15 on Opus — and misses are silent\nconfabulations , not errors. Byte-exact values (IDs, hashes, secrets)\nmust stay text; recent turns do. A dedicated verbatim-risk guard is not\nbuilt yet.\nEscape hatch: subagents on non-allowlisted models pass through as\ntext — route byte-exact work there\n( CLAUDE_CODE_SUBAGENT_MODEL=claude-sonnet-4-6 , or model: sonnet in\nagent frontmatter).\nReal work: SWE-bench Lite pilot 10/10 both arms at −65% request\nsize; SWE-bench Pro 14/19 ON vs 15/19 OFF at −60%, verdicts agree\n18/19, and the single split re-resolved 3/3 on replication — run-to-run\nvariance, not compression. Small n; receipts in eval/ .\nWorkload-dependent. Wins on token-dense content (~1 char/token),\nloses money on sparse prose (~3.5 chars/token); a profitability gate\n(calibrated on N=391 production rows) images only where the math wins.\nModel scope: default PXPIPE_MODELS=claude-fable-5,gpt-5.6 . Opus\n4.7/4.8 misread ~7% of renders and GPT 5.5 degrades on imaged context, so\nboth are opt-in via PXPIPE_MODELS or the dashboard chips.\nPXPIPE_MODELS=off disables imaging. Everything else passes through\nbyte-identical. On the GPT path, tool definitions stay native JSON and no\nAnthropic cache_control markers are used.\nBenchmarks (reproducible)\nMeasured with novel random-number problems the model cannot have memorized:\ntest\ntext\npxpipe (image)\ntokens\nnovel arithmetic, claude-fable-5\n100\n100%\n100%\n−38%\nnovel arithmetic, claude-opus-4-8\n100\n100%\n93%\n−38%\ngist recall A/B (decisions, values, paths, names, negations; with distractors; 15k-45k char sessions), Fable 5\n98/arm\n98/98\n98/98\nstate tracking (value mutated 3x, final/first/count), Fable 5\n18/arm\n18/18\n18/18\nconfabulation on never-stated facts (lower is better), Fable 5\n16/arm\n0/16\n0/16\nverbatim 12-char hex recall, dense render, Opus\n15\n15/15\n0/15\nverbatim 12-char hex recall, dense render, Fable 5\n15\n13/15\nSWE-bench run totals, receipts, and caveats:\neval/swe-bench/ ·\neval/swe-bench-pro/ ·\neval/needle-haystack/ ·\neval/gist-recall/ · analysis in\nFINDINGS.md . (GSM8K scored 96% imaged, but it's in training\ndata — memorized answers survive misreads — so we lead with the novel-number\nevals.)\nHow it works\ntool_result string ──► wrap at 1928px-wide columns ──► pack ~92,000 chars/page ──► PNG[]\nThe proxy intercepts /v1/messages , rewrites eligible bulk into image\nblocks, splices them back cache-friendly (static prefix preserved, prompt\ncaching keeps working), and forwards. A 1928×1928 image costs ≈4,761 vision\ntokens and holds ≈92,000 chars, so text wins only above ~19 chars/token —\nClaude Code traffic runs ~1.91 (N=391). A per-request estimator decides;\nsparse prose stays text. Events log to ~/.pxpipe/events.jsonl .\nLibrary use (no proxy)\nimport { renderTextToPngs , transformAnthropicMessages } from \"pxpipe\" ;\nconst imgs = await renderTextToPngs ( toolResultText ) ; // RenderedImage[]\nconst { body , applied , info } = await transformAnthropicMessages ( {\nbody : requestBytes ,\nmodel : \"claude-fable-5\" ,\n} ) ;\noptions.keepSharp(block) pins blocks as text; options.emitRecoverable\nreturns the originals of imaged blocks. Pure-JS runtime (Node and\nedge/Workers); @napi-rs/canvas is build-time only. Full API:\nsrc/core/index.ts .\nDevelopment\npnpm install && pnpm test\npnpm run build # regenerates dist/\nFAQ\nIs the headline end-to-end, or only on the requests you touched?\nEnd-to-end, the whole bill. Most compression tools report savings only on\nthe input slice they touched, which flatters the number. The end-to-end\ndenominator is every production request: the small ones pxpipe correctly\nleft untouched, all cache writes and reads, and all output tokens (which the\nproxy never compresses). On a 13,709-request snapshot that was 59% ($100 →\n~$41); a later 8,904-compressed-request trace measured ~70%. Compressed-only\nruns higher (~72–74%) and is quoted separately, never as the headline. The\nexact figure is workload-dependent — reproduce it on your own log.\nHow is the math measured?\nBoth sides of the same request, at the same moment. For every /v1/messages\nPOST the proxy fires a free count_tokens probe on the original uncompressed\nbody (the counterfactual) in parallel with the real forward, and reads\nAnthropic's actually-billed usage block off the response. Both land in the\nsame row of ~/.pxpipe/events.jsonl , so there is no turn-count or\nrun-to-run confound. Dollar conversion uses Fable 5 list ratios: input ×1.0,\ncache write ×1.25, cache read ×0.1, output ×5. Cache pricing is applied\nidentically to both sides, so the caching discount cancels and cannot be\ndouble-counted as \"savings\". Re-derive it yourself from the events log: the\nformula and field names are documented in src/core/baseline.ts .\nWhat does it actually compress?\nThree kinds of input blocks, each behind a profitability gate:\nlarge tool_result bodies (file reads, command output, logs) above\n~6k chars of token-dense content\nolder collapsed history: turns behind the live tail get re-rendered as\nimage pages, recent turns always stay text\nthe static system prompt + tool docs slab\nEverything else passes through byte-identical: your messages, recent turns,\nthe model's output (it is the response, the proxy never touches it), sparse\nprose, and anything too small to win. Models outside the allowlist pass\nthrough entirely — the default scope is Fable 5 and GPT 5.6 only. Opus 4.8\nand GPT 5.5 read imaged content measurably worse (FINDINGS.md 2026-06-16),\nso they are deliberately opt-in via the dashboard or PXPIPE_MODELS , never\nsilently imaged.\nHas it ever failed for real, outside the benchmarks?\nYes, once in weeks of daily use: the model recalled a person's name from\nimaged chat history and got it confidently wrong. No error, just a\nplausible wrong name. That is the documented failure mode: exact strings\nin imaged content are not byte-safe. Coding sessions tolerate this because\nthe agent re-reads files before editing; pure chat recall has no such check.\nThis failure mode is measured, not anecdotal:\nthe legibility audit quantifies\nexact-string recall off rendered pages (blind reads top out at 63% on dense\nidentifiers, with every miss predicted by a glyph-confusability matrix) and\ndocuments the shipped mitigations — page geometry clamped to the API's\nresample cap so billed pixels actually reach the vision encoder, and exact\nidentifiers (SHAs, numbers) riding alongside as text.\nWhy does the README read like an AI wrote it?\nBecause one did. Most of this repo's commits — the code and the docs — were\nauthored by Opus/Fable agent sessions running behind pxpipe itself, reading\ntheir own collapsed history as image pages while they worked.\nLimitations\nLossy (above); verbatim recall from images is unreliable.\nPNG encoding adds latency to large requests before they leave.\nASCII/Latin-1 well tested; CJK works but conservatively.\nRoadmap\nHypotheses, not claims — they ship as numbers with an n or they get cut:\nsharper glyph rendering ( eval/glyph-matrix/ , paused mid-run), whether\nimaged bulk stretches effective context (~2x the real content in the same\n1M window), and whether a smaller active context improves long-task\naccuracy.\nLicense\nMIT.\nAbout\ncut Fable 5 token usage by rendering text context as images\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n472\nstars\nWatchers\nwatching\nForks\n25\nforks\nReport repository\nReleases\nv0.7.1\nLatest\nJul 3, 2026\n+ 1 release\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n96.1%\nJavaScript\n1.8%\nShell\n1.1%\nPython\n1.0%",
+  "clean_text": "teamchong\npxpipe\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n25\nStar\n472\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n298 Commits\n298 Commits\n.github/ workflows\n.github/ workflows\nassets\nassets\nbench\nbench\nbin\nbin\ndemo\ndemo\ndocs\ndocs\neval\neval\nscripts\nscripts\nsrc\nsrc\ntests\ntests\n.gitignore\n.gitignore\n.npmrc\n.npmrc\nCHANGELOG.md\nCHANGELOG.md\nFINDINGS.md\nFINDINGS.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\ntsconfig.json\ntsconfig.json\nvitest.config.ts\nvitest.config.ts\nwrangler.toml\nwrangler.toml\nView all files\nRepository files navigation\npxpipe\nCut Claude Code's input tokens by rendering bulky context as images — the same system prompt, tool docs, and history, in a fraction of the tokens.\nAn image's token cost is fixed by its pixel dimensions, not by how much text\nis inside it. Dense content (code, JSON, tool output) packs ~3.1 chars per\nimage-token vs ~1 char per text-token on real Claude Code traffic. pxpipe is\na local proxy that exploits the gap: it rewrites the bulky parts of each\nrequest into compact PNGs before it leaves your machine. At current Fable\nlist prices that lands as a ~59–70% lower end-to-end bill — but prices\nmove and workloads differ, so the durable number is the token cut itself,\nmeasured per-request against a free count_tokens counterfactual in\n~/.pxpipe/events.jsonl .\nThis is what the model sees instead of text:\n~48k chars of system prompt + tool docs: ≈25k tokens as text, ≈2.7k image\ntokens as this page. Real pipeline output; the model reads renders like this\nat 100/100 (see benchmarks).\nDemo\nFable 5 (the default, 100/100 reader) — plain left, pxpipe right:\nFable-AB-Demo.mp4\npxpipe counts an exact token 10/10 across 39 imaged filler files\n(matches grep line-for-line), gets the multi-step ledger arithmetic right,\nand ends the session at $6.06 with context to spare (73.5k/1M) vs\n$42.21 at 96% full. One caveat visible in the clip: the pxpipe arm\nneeded a nudge to match the requested one-line output format.\nOpus 4.8 (disabled by default) — same layout:\nOpus-AB-Demo.mp4\nText needles read fine on both arms; the imaged phrase-count doesn't read on\nOpus — and pxpipe says so instead of fabricating a number . That misread\nrate is why Opus is opt-in.\nTry it (30 seconds)\nnpx pxpipe-proxy # proxy on 127.0.0.1:47821\nANTHROPIC_BASE_URL=http://127.0.0.1:47821 claude # point Claude Code at it\nDashboard at http://127.0.0.1:47821/ : tokens saved, every text→image\nconversion side by side, kill switch, live model chips. Responses stream\nnormally — pxpipe compresses the request only, never the model's output.\nRecent turns stay text; the system prompt, tool docs, and older bulk history\nare imaged.\nThe honest part\nIt is lossy. Exact 12-char hex strings in dense imaged content:\n13/15 on Fable 5, 0/15 on Opus — and misses are silent\nconfabulations , not errors. Byte-exact values (IDs, hashes, secrets)\nmust stay text; recent turns do. A dedicated verbatim-risk guard is not\nbuilt yet.\nEscape hatch: subagents on non-allowlisted models pass through as\ntext — route byte-exact work there\n( CLAUDE_CODE_SUBAGENT_MODEL=claude-sonnet-4-6 , or model: sonnet in\nagent frontmatter).\nReal work: SWE-bench Lite pilot 10/10 both arms at −65% request\nsize; SWE-bench Pro 14/19 ON vs 15/19 OFF at −60%, verdicts agree\n18/19, and the single split re-resolved 3/3 on replication — run-to-run\nvariance, not compression. Small n; receipts in eval/ .\nWorkload-dependent. Wins on token-dense content (~1 char/token),\nloses money on sparse prose (~3.5 chars/token); a profitability gate\n(calibrated on N=391 production rows) images only where the math wins.\nModel scope: default PXPIPE_MODELS=claude-fable-5,gpt-5.6 . Opus\n4.7/4.8 misread ~7% of renders and GPT 5.5 degrades on imaged context, so\nboth are opt-in via PXPIPE_MODELS or the dashboard chips.\nPXPIPE_MODELS=off disables imaging. Everything else passes through\nbyte-identical. On the GPT path, tool definitions stay native JSON and no\nAnthropic cache_control markers are used.\nBenchmarks (reproducible)\nMeasured with novel random-number problems the model cannot have memorized:\ntest\ntext\npxpipe (image)\ntokens\nnovel arithmetic, claude-fable-5\n100\n100%\n100%\n−38%\nnovel arithmetic, claude-opus-4-8\n100\n100%\n93%\n−38%\ngist recall A/B (decisions, values, paths, names, negations; with distractors; 15k-45k char sessions), Fable 5\n98/arm\n98/98\n98/98\nstate tracking (value mutated 3x, final/first/count), Fable 5\n18/arm\n18/18\n18/18\nconfabulation on never-stated facts (lower is better), Fable 5\n16/arm\n0/16\n0/16\nverbatim 12-char hex recall, dense render, Opus\n15\n15/15\n0/15\nverbatim 12-char hex recall, dense render, Fable 5\n15\n13/15\nSWE-bench run totals, receipts, and caveats:\neval/swe-bench/ ·\neval/swe-bench-pro/ ·\neval/needle-haystack/ ·\neval/gist-recall/ · analysis in\nFINDINGS.md . (GSM8K scored 96% imaged, but it's in training\ndata — memorized answers survive misreads — so we lead with the novel-number\nevals.)\nHow it works\ntool_result string ──► wrap at 1928px-wide columns ──► pack ~92,000 chars/page ──► PNG[]\nThe proxy intercepts /v1/messages , rewrites eligible bulk into image\nblocks, splices them back cache-friendly (static prefix preserved, prompt\ncaching keeps working), and forwards. A 1928×1928 image costs ≈4,761 vision\ntokens and holds ≈92,000 chars, so text wins only above ~19 chars/token —\nClaude Code traffic runs ~1.91 (N=391). A per-request estimator decides;\nsparse prose stays text. Events log to ~/.pxpipe/events.jsonl .\nLibrary use (no proxy)\nimport { renderTextToPngs , transformAnthropicMessages } from \"pxpipe\" ;\nconst imgs = await renderTextToPngs ( toolResultText ) ; // RenderedImage[]\nconst { body , applied , info } = await transformAnthropicMessages ( {\nbody : requestBytes ,\nmodel : \"claude-fable-5\" ,\n} ) ;\noptions.keepSharp(block) pins blocks as text; options.emitRecoverable\nreturns the originals of imaged blocks. Pure-JS runtime (Node and\nedge/Workers); @napi-rs/canvas is build-time only. Full API:\nsrc/core/index.ts .\nDevelopment\npnpm install && pnpm test\npnpm run build # regenerates dist/\nFAQ\nIs the headline end-to-end, or only on the requests you touched?\nEnd-to-end, the whole bill. Most compression tools report savings only on\nthe input slice they touched, which flatters the number. The end-to-end\ndenominator is every production request: the small ones pxpipe correctly\nleft untouched, all cache writes and reads, and all output tokens (which the\nproxy never compresses). On a 13,709-request snapshot that was 59% ($100 →\n~$41); a later 8,904-compressed-request trace measured ~70%. Compressed-only\nruns higher (~72–74%) and is quoted separately, never as the headline. The\nexact figure is workload-dependent — reproduce it on your own log.\nHow is the math measured?\nBoth sides of the same request, at the same moment. For every /v1/messages\nPOST the proxy fires a free count_tokens probe on the original uncompressed\nbody (the counterfactual) in parallel with the real forward, and reads\nAnthropic's actually-billed usage block off the response. Both land in the\nsame row of ~/.pxpipe/events.jsonl , so there is no turn-count or\nrun-to-run confound. Dollar conversion uses Fable 5 list ratios: input ×1.0,\ncache write ×1.25, cache read ×0.1, output ×5. Cache pricing is applied\nidentically to both sides, so the caching discount cancels and cannot be\ndouble-counted as \"savings\". Re-derive it yourself from the events log: the\nformula and field names are documented in src/core/baseline.ts .\nWhat does it actually compress?\nThree kinds of input blocks, each behind a profitability gate:\nlarge tool_result bodies (file reads, command output, logs) above\n~6k chars of token-dense content\nolder collapsed history: turns behind the live tail get re-rendered as\nimage pages, recent turns always stay text\nthe static system prompt + tool docs slab\nEverything else passes through byte-identical: your messages, recent turns,\nthe model's output (it is the response, the proxy never touches it), sparse\nprose, and anything too small to win. Models outside the allowlist pass\nthrough entirely — the default scope is Fable 5 and GPT 5.6 only. Opus 4.8\nand GPT 5.5 read imaged content measurably worse (FINDINGS.md 2026-06-16),\nso they are deliberately opt-in via the dashboard or PXPIPE_MODELS , never\nsilently imaged.\nHas it ever failed for real, outside the benchmarks?\nYes, once in weeks of daily use: the model recalled a person's name from\nimaged chat history and got it confidently wrong. No error, just a\nplausible wrong name. That is the documented failure mode: exact strings\nin imaged content are not byte-safe. Coding sessions tolerate this because\nthe agent re-reads files before editing; pure chat recall has no such check.\nThis failure mode is measured, not anecdotal:\nthe legibility audit quantifies\nexact-string recall off rendered pages (blind reads top out at 63% on dense\nidentifiers, with every miss predicted by a glyph-confusability matrix) and\ndocuments the shipped mitigations — page geometry clamped to the API's\nresample cap so billed pixels actually reach the vision encoder, and exact\nidentifiers (SHAs, numbers) riding alongside as text.\nWhy does the README read like an AI wrote it?\nBecause one did. Most of this repo's commits — the code and the docs — were\nauthored by Opus/Fable agent sessions running behind pxpipe itself, reading\ntheir own collapsed history as image pages while they worked.\nLimitations\nLossy (above); verbatim recall from images is unreliable.\nPNG encoding adds latency to large requests before they leave.\nASCII/Latin-1 well tested; CJK works but conservatively.\nRoadmap\nHypotheses, not claims — they ship as numbers with an n or they get cut:\nsharper glyph rendering ( eval/glyph-matrix/ , paused mid-run), whether\nimaged bulk stretches effective context (~2x the real content in the same\n1M window), and whether a smaller active context improves long-task\naccuracy.\nLicense\nMIT.\nAbout\ncut Fable 5 token usage by rendering text context as images\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n472\nstars\nWatchers\nwatching\nForks\n25\nforks\nReport repository\nReleases\nv0.7.1\nLatest\nJul 3, 2026\n+ 1 release\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n96.1%\nJavaScript\n1.8%\nShell\n1.1%\nPython\n1.0%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-04/r-061-pxpipe-通过图像化压缩输入token降低claude-code成本.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-04/r-061-pxpipe-通过图像化压缩输入token降低claude-code成本.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 10672,
+    "paragraph_count": 149,
+    "sentence_count": 80,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0047,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 10672,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "847298a0c2646e80",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "pxpipe：通过图像化压缩输入token降低Claude Code成本",
+    "discovery_summary": "pxpipe是一个本地代理，将系统提示、工具文档和历史记录等密集文本渲染为PNG图像，利用图像token成本取决于像素尺寸的特性压缩输入token。在Fable 5模型上，约25k文本token压缩为约2.7k图像token，端到端账单降低59-70%。SWE-bench Lite 10个实例全部通过，成本从$54降至$27；SWE-bench Pro 19对测试中18对判定一致，单次请求成本降低约60%。该方法有损（精确ID等需保持文本），默认仅处理`claude-fable-5`请求，可通过`PXPIPE_MODELS`变量控制。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://github.com/teamchong/pxpipe",
+    "discovered_at": "2026-07-04T03:11:32.649Z",
+    "rank_on_page": 70,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "1320ae46b426dee5",
+  "content_hash": "847298a0c2646e80",
+  "full_text_hash": "847298a0c2646e80",
+  "semantic_hash": "205e74f20bcea986",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-03T19:19:45.726Z",
+  "last_seen_at": "2026-07-04T04:50:50.466Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "pxpipe是一个本地代理，将系统提示、工具文档和历史记录等密集文本渲染为PNG图像，利用图像token成本取决于像素尺寸的特性压缩输入token。在Fable 5模型上，约25k文本token压缩为约2.7k图像token，端到端账单降低59-70%。SWE-bench Lite 10个实例全部通过，成本从$54降至$27；SWE-bench Pro 19对测试中18对判定一致，单次请求成本降低约60%。该方法有损（精确ID等需保持文本），默认仅处理`claude-fable-5`请求，可通过`PXPIPE_MODELS`变量控制。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "teamchong pxpipe Public Notifications You must be signed in to change notification settings Fork 25 Star 472 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 298 Commits 298 Commits .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows assets assets bench bench bin bin demo demo docs docs eval eval scripts scripts src src tests tests .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md LICENSE LICENSE README.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "yaml pnpm-workspace.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-04T04:50:50.466Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "Anthropic",
+      "GitHub"
+    ],
+    "products": [
+      "Claude",
+      "claude",
+      "agent",
+      "gpt-5"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "5",
+      "25",
+      "2.7",
+      "59",
+      "70%",
+      "10",
+      "$54",
+      "$27"
+    ],
+    "quotes": [
+      "claude-fable-5"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "teamchong pxpipe Public Notifications You must be signed in to change notification settings Fork 25 Star 472 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 298 Commits 298 Commits .",
+      "md LICENSE LICENSE README.",
+      "yaml pnpm-workspace."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "github/ workflows .",
+      "github/ workflows assets assets bench bench bin bin demo demo docs docs eval eval scripts scripts src src tests tests ."
+    ],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# pxpipe：通过图像化压缩输入token降低Claude Code成本\n\n- raw_id: R-061\n- title_zh: pxpipe：通过图像化压缩输入token降低Claude Code成本\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://github.com/teamchong/pxpipe\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-04T04:50:50.466Z\n\n## clean_text\n\nteamchong\npxpipe\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n25\nStar\n472\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n298 Commits\n298 Commits\n.github/ workflows\n.github/ workflows\nassets\nassets\nbench\nbench\nbin\nbin\ndemo\ndemo\ndocs\ndocs\neval\neval\nscripts\nscripts\nsrc\nsrc\ntests\ntests\n.gitignore\n.gitignore\n.npmrc\n.npmrc\nCHANGELOG.md\nCHANGELOG.md\nFINDINGS.md\nFINDINGS.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\ntsconfig.json\ntsconfig.json\nvitest.config.ts\nvitest.config.ts\nwrangler.toml\nwrangler.toml\nView all files\nRepository files navigation\npxpipe\nCut Claude Code's input tokens by rendering bulky context as images — the same system prompt, tool docs, and history, in a fraction of the tokens.\nAn image's token cost is fixed by its pixel dimensions, not by how much text\nis inside it. Dense content (code, JSON, tool output) packs ~3.1 chars per\nimage-token vs ~1 char per text-token on real Claude Code traffic. pxpipe is\na local proxy that exploits the gap: it rewrites the bulky parts of each\nrequest into compact PNGs before it leaves your machine. At current Fable\nlist prices that lands as a ~59–70% lower end-to-end bill — but prices\nmove and workloads differ, so the durable number is the token cut itself,\nmeasured per-request against a free count_tokens counterfactual in\n~/.pxpipe/events.jsonl .\nThis is what the model sees instead of text:\n~48k chars of system prompt + tool docs: ≈25k tokens as text, ≈2.7k image\ntokens as this page. Real pipeline output; the model reads renders like this\nat 100/100 (see benchmarks).\nDemo\nFable 5 (the default, 100/100 reader) — plain left, pxpipe right:\nFable-AB-Demo.mp4\npxpipe counts an exact token 10/10 across 39 imaged filler files\n(matches grep line-for-line), gets the multi-step ledger arithmetic right,\nand ends the session at $6.06 with context to spare (73.5k/1M) vs\n$42.21 at 96% full. One caveat visible in the clip: the pxpipe arm\nneeded a nudge to match the requested one-line output format.\nOpus 4.8 (disabled by default) — same layout:\nOpus-AB-Demo.mp4\nText needles read fine on both arms; the imaged phrase-count doesn't read on\nOpus — and pxpipe says so instead of fabricating a number . That misread\nrate is why Opus is opt-in.\nTry it (30 seconds)\nnpx pxpipe-proxy # proxy on 127.0.0.1:47821\nANTHROPIC_BASE_URL=http://127.0.0.1:47821 claude # point Claude Code at it\nDashboard at http://127.0.0.1:47821/ : tokens saved, every text→image\nconversion side by side, kill switch, live model chips. Responses stream\nnormally — pxpipe compresses the request only, never the model's output.\nRecent turns stay text; the system prompt, tool docs, and older bulk history\nare imaged.\nThe honest part\nIt is lossy. Exact 12-char hex strings in dense imaged content:\n13/15 on Fable 5, 0/15 on Opus — and misses are silent\nconfabulations , not errors. Byte-exact values (IDs, hashes, secrets)\nmust stay text; recent turns do. A dedicated verbatim-risk guard is not\nbuilt yet.\nEscape hatch: subagents on non-allowlisted models pass through as\ntext — route byte-exact work there\n( CLAUDE_CODE_SUBAGENT_MODEL=claude-sonnet-4-6 , or model: sonnet in\nagent frontmatter).\nReal work: SWE-bench Lite pilot 10/10 both arms at −65% request\nsize; SWE-bench Pro 14/19 ON vs 15/19 OFF at −60%, verdicts agree\n18/19, and the single split re-resolved 3/3 on replication — run-to-run\nvariance, not compression. Small n; receipts in eval/ .\nWorkload-dependent. Wins on token-dense content (~1 char/token),\nloses money on sparse prose (~3.5 chars/token); a profitability gate\n(calibrated on N=391 production rows) images only where the math wins.\nModel scope: default PXPIPE_MODELS=claude-fable-5,gpt-5.6 . Opus\n4.7/4.8 misread ~7% of renders and GPT 5.5 degrades on imaged context, so\nboth are opt-in via PXPIPE_MODELS or the dashboard chips.\nPXPIPE_MODELS=off disables imaging. Everything else passes through\nbyte-identical. On the GPT path, tool definitions stay native JSON and no\nAnthropic cache_control markers are used.\nBenchmarks (reproducible)\nMeasured with novel random-number problems the model cannot have memorized:\ntest\ntext\npxpipe (image)\ntokens\nnovel arithmetic, claude-fable-5\n100\n100%\n100%\n−38%\nnovel arithmetic, claude-opus-4-8\n100\n100%\n93%\n−38%\ngist recall A/B (decisions, values, paths, names, negations; with distractors; 15k-45k char sessions), Fable 5\n98/arm\n98/98\n98/98\nstate tracking (value mutated 3x, final/first/count), Fable 5\n18/arm\n18/18\n18/18\nconfabulation on never-stated facts (lower is better), Fable 5\n16/arm\n0/16\n0/16\nverbatim 12-char hex recall, dense render, Opus\n15\n15/15\n0/15\nverbatim 12-char hex recall, dense render, Fable 5\n15\n13/15\nSWE-bench run totals, receipts, and caveats:\neval/swe-bench/ ·\neval/swe-bench-pro/ ·\neval/needle-haystack/ ·\neval/gist-recall/ · analysis in\nFINDINGS.md . (GSM8K scored 96% imaged, but it's in training\ndata — memorized answers survive misreads — so we lead with the novel-number\nevals.)\nHow it works\ntool_result string ──► wrap at 1928px-wide columns ──► pack ~92,000 chars/page ──► PNG[]\nThe proxy intercepts /v1/messages , rewrites eligible bulk into image\nblocks, splices them back cache-friendly (static prefix preserved, prompt\ncaching keeps working), and forwards. A 1928×1928 image costs ≈4,761 vision\ntokens and holds ≈92,000 chars, so text wins only above ~19 chars/token —\nClaude Code traffic runs ~1.91 (N=391). A per-request estimator decides;\nsparse prose stays text. Events log to ~/.pxpipe/events.jsonl .\nLibrary use (no proxy)\nimport { renderTextToPngs , transformAnthropicMessages } from \"pxpipe\" ;\nconst imgs = await renderTextToPngs ( toolResultText ) ; // RenderedImage[]\nconst { body , applied , info } = await transformAnthropicMessages ( {\nbody : requestBytes ,\nmodel : \"claude-fable-5\" ,\n} ) ;\noptions.keepSharp(block) pins blocks as text; options.emitRecoverable\nreturns the originals of imaged blocks. Pure-JS runtime (Node and\nedge/Workers); @napi-rs/canvas is build-time only. Full API:\nsrc/core/index.ts .\nDevelopment\npnpm install && pnpm test\npnpm run build # regenerates dist/\nFAQ\nIs the headline end-to-end, or only on the requests you touched?\nEnd-to-end, the whole bill. Most compression tools report savings only on\nthe input slice they touched, which flatters the number. The end-to-end\ndenominator is every production request: the small ones pxpipe correctly\nleft untouched, all cache writes and reads, and all output tokens (which the\nproxy never compresses). On a 13,709-request snapshot that was 59% ($100 →\n~$41); a later 8,904-compressed-request trace measured ~70%. Compressed-only\nruns higher (~72–74%) and is quoted separately, never as the headline. The\nexact figure is workload-dependent — reproduce it on your own log.\nHow is the math measured?\nBoth sides of the same request, at the same moment. For every /v1/messages\nPOST the proxy fires a free count_tokens probe on the original uncompressed\nbody (the counterfactual) in parallel with the real forward, and reads\nAnthropic's actually-billed usage block off the response. Both land in the\nsame row of ~/.pxpipe/events.jsonl , so there is no turn-count or\nrun-to-run confound. Dollar conversion uses Fable 5 list ratios: input ×1.0,\ncache write ×1.25, cache read ×0.1, output ×5. Cache pricing is applied\nidentically to both sides, so the caching discount cancels and cannot be\ndouble-counted as \"savings\". Re-derive it yourself from the events log: the\nformula and field names are documented in src/core/baseline.ts .\nWhat does it actually compress?\nThree kinds of input blocks, each behind a profitability gate:\nlarge tool_result bodies (file reads, command output, logs) above\n~6k chars of token-dense content\nolder collapsed history: turns behind the live tail get re-rendered as\nimage pages, recent turns always stay text\nthe static system prompt + tool docs slab\nEverything else passes through byte-identical: your messages, recent turns,\nthe model's output (it is the response, the proxy never touches it), sparse\nprose, and anything too small to win. Models outside the allowlist pass\nthrough entirely — the default scope is Fable 5 and GPT 5.6 only. Opus 4.8\nand GPT 5.5 read imaged content measurably worse (FINDINGS.md 2026-06-16),\nso they are deliberately opt-in via the dashboard or PXPIPE_MODELS , never\nsilently imaged.\nHas it ever failed for real, outside the benchmarks?\nYes, once in weeks of daily use: the model recalled a person's name from\nimaged chat history and got it confidently wrong. No error, just a\nplausible wrong name. That is the documented failure mode: exact strings\nin imaged content are not byte-safe. Coding sessions tolerate this because\nthe agent re-reads files before editing; pure chat recall has no such check.\nThis failure mode is measured, not anecdotal:\nthe legibility audit quantifies\nexact-string recall off rendered pages (blind reads top out at 63% on dense\nidentifiers, with every miss predicted by a glyph-confusability matrix) and\ndocuments the shipped mitigations — page geometry clamped to the API's\nresample cap so billed pixels actually reach the vision encoder, and exact\nidentifiers (SHAs, numbers) riding alongside as text.\nWhy does the README read like an AI wrote it?\nBecause one did. Most of this repo's commits — the code and the docs — were\nauthored by Opus/Fable agent sessions running behind pxpipe itself, reading\ntheir own collapsed history as image pages while they worked.\nLimitations\nLossy (above); verbatim recall from images is unreliable.\nPNG encoding adds latency to large requests before they leave.\nASCII/Latin-1 well tested; CJK works but conservatively.\nRoadmap\nHypotheses, not claims — they ship as numbers with an n or they get cut:\nsharper glyph rendering ( eval/glyph-matrix/ , paused mid-run), whether\nimaged bulk stretches effective context (~2x the real content in the same\n1M window), and whether a smaller active context improves long-task\naccuracy.\nLicense\nMIT.\nAbout\ncut Fable 5 token usage by rendering text context as images\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n472\nstars\nWatchers\nwatching\nForks\n25\nforks\nReport repository\nReleases\nv0.7.1\nLatest\nJul 3, 2026\n+ 1 release\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n96.1%\nJavaScript\n1.8%\nShell\n1.1%\nPython\n1.0%\n\n## full_text\n\nteamchong\npxpipe\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n25\nStar\n472\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n298 Commits\n298 Commits\n.github/ workflows\n.github/ workflows\nassets\nassets\nbench\nbench\nbin\nbin\ndemo\ndemo\ndocs\ndocs\neval\neval\nscripts\nscripts\nsrc\nsrc\ntests\ntests\n.gitignore\n.gitignore\n.npmrc\n.npmrc\nCHANGELOG.md\nCHANGELOG.md\nFINDINGS.md\nFINDINGS.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\ntsconfig.json\ntsconfig.json\nvitest.config.ts\nvitest.config.ts\nwrangler.toml\nwrangler.toml\nView all files\nRepository files navigation\npxpipe\nCut Claude Code's input tokens by rendering bulky context as images — the same system prompt, tool docs, and history, in a fraction of the tokens.\nAn image's token cost is fixed by its pixel dimensions, not by how much text\nis inside it. Dense content (code, JSON, tool output) packs ~3.1 chars per\nimage-token vs ~1 char per text-token on real Claude Code traffic. pxpipe is\na local proxy that exploits the gap: it rewrites the bulky parts of each\nrequest into compact PNGs before it leaves your machine. At current Fable\nlist prices that lands as a ~59–70% lower end-to-end bill — but prices\nmove and workloads differ, so the durable number is the token cut itself,\nmeasured per-request against a free count_tokens counterfactual in\n~/.pxpipe/events.jsonl .\nThis is what the model sees instead of text:\n~48k chars of system prompt + tool docs: ≈25k tokens as text, ≈2.7k image\ntokens as this page. Real pipeline output; the model reads renders like this\nat 100/100 (see benchmarks).\nDemo\nFable 5 (the default, 100/100 reader) — plain left, pxpipe right:\nFable-AB-Demo.mp4\npxpipe counts an exact token 10/10 across 39 imaged filler files\n(matches grep line-for-line), gets the multi-step ledger arithmetic right,\nand ends the session at $6.06 with context to spare (73.5k/1M) vs\n$42.21 at 96% full. One caveat visible in the clip: the pxpipe arm\nneeded a nudge to match the requested one-line output format.\nOpus 4.8 (disabled by default) — same layout:\nOpus-AB-Demo.mp4\nText needles read fine on both arms; the imaged phrase-count doesn't read on\nOpus — and pxpipe says so instead of fabricating a number . That misread\nrate is why Opus is opt-in.\nTry it (30 seconds)\nnpx pxpipe-proxy # proxy on 127.0.0.1:47821\nANTHROPIC_BASE_URL=http://127.0.0.1:47821 claude # point Claude Code at it\nDashboard at http://127.0.0.1:47821/ : tokens saved, every text→image\nconversion side by side, kill switch, live model chips. Responses stream\nnormally — pxpipe compresses the request only, never the model's output.\nRecent turns stay text; the system prompt, tool docs, and older bulk history\nare imaged.\nThe honest part\nIt is lossy. Exact 12-char hex strings in dense imaged content:\n13/15 on Fable 5, 0/15 on Opus — and misses are silent\nconfabulations , not errors. Byte-exact values (IDs, hashes, secrets)\nmust stay text; recent turns do. A dedicated verbatim-risk guard is not\nbuilt yet.\nEscape hatch: subagents on non-allowlisted models pass through as\ntext — route byte-exact work there\n( CLAUDE_CODE_SUBAGENT_MODEL=claude-sonnet-4-6 , or model: sonnet in\nagent frontmatter).\nReal work: SWE-bench Lite pilot 10/10 both arms at −65% request\nsize; SWE-bench Pro 14/19 ON vs 15/19 OFF at −60%, verdicts agree\n18/19, and the single split re-resolved 3/3 on replication — run-to-run\nvariance, not compression. Small n; receipts in eval/ .\nWorkload-dependent. Wins on token-dense content (~1 char/token),\nloses money on sparse prose (~3.5 chars/token); a profitability gate\n(calibrated on N=391 production rows) images only where the math wins.\nModel scope: default PXPIPE_MODELS=claude-fable-5,gpt-5.6 . Opus\n4.7/4.8 misread ~7% of renders and GPT 5.5 degrades on imaged context, so\nboth are opt-in via PXPIPE_MODELS or the dashboard chips.\nPXPIPE_MODELS=off disables imaging. Everything else passes through\nbyte-identical. On the GPT path, tool definitions stay native JSON and no\nAnthropic cache_control markers are used.\nBenchmarks (reproducible)\nMeasured with novel random-number problems the model cannot have memorized:\ntest\ntext\npxpipe (image)\ntokens\nnovel arithmetic, claude-fable-5\n100\n100%\n100%\n−38%\nnovel arithmetic, claude-opus-4-8\n100\n100%\n93%\n−38%\ngist recall A/B (decisions, values, paths, names, negations; with distractors; 15k-45k char sessions), Fable 5\n98/arm\n98/98\n98/98\nstate tracking (value mutated 3x, final/first/count), Fable 5\n18/arm\n18/18\n18/18\nconfabulation on never-stated facts (lower is better), Fable 5\n16/arm\n0/16\n0/16\nverbatim 12-char hex recall, dense render, Opus\n15\n15/15\n0/15\nverbatim 12-char hex recall, dense render, Fable 5\n15\n13/15\nSWE-bench run totals, receipts, and caveats:\neval/swe-bench/ ·\neval/swe-bench-pro/ ·\neval/needle-haystack/ ·\neval/gist-recall/ · analysis in\nFINDINGS.md . (GSM8K scored 96% imaged, but it's in training\ndata — memorized answers survive misreads — so we lead with the novel-number\nevals.)\nHow it works\ntool_result string ──► wrap at 1928px-wide columns ──► pack ~92,000 chars/page ──► PNG[]\nThe proxy intercepts /v1/messages , rewrites eligible bulk into image\nblocks, splices them back cache-friendly (static prefix preserved, prompt\ncaching keeps working), and forwards. A 1928×1928 image costs ≈4,761 vision\ntokens and holds ≈92,000 chars, so text wins only above ~19 chars/token —\nClaude Code traffic runs ~1.91 (N=391). A per-request estimator decides;\nsparse prose stays text. Events log to ~/.pxpipe/events.jsonl .\nLibrary use (no proxy)\nimport { renderTextToPngs , transformAnthropicMessages } from \"pxpipe\" ;\nconst imgs = await renderTextToPngs ( toolResultText ) ; // RenderedImage[]\nconst { body , applied , info } = await transformAnthropicMessages ( {\nbody : requestBytes ,\nmodel : \"claude-fable-5\" ,\n} ) ;\noptions.keepSharp(block) pins blocks as text; options.emitRecoverable\nreturns the originals of imaged blocks. Pure-JS runtime (Node and\nedge/Workers); @napi-rs/canvas is build-time only. Full API:\nsrc/core/index.ts .\nDevelopment\npnpm install && pnpm test\npnpm run build # regenerates dist/\nFAQ\nIs the headline end-to-end, or only on the requests you touched?\nEnd-to-end, the whole bill. Most compression tools report savings only on\nthe input slice they touched, which flatters the number. The end-to-end\ndenominator is every production request: the small ones pxpipe correctly\nleft untouched, all cache writes and reads, and all output tokens (which the\nproxy never compresses). On a 13,709-request snapshot that was 59% ($100 →\n~$41); a later 8,904-compressed-request trace measured ~70%. Compressed-only\nruns higher (~72–74%) and is quoted separately, never as the headline. The\nexact figure is workload-dependent — reproduce it on your own log.\nHow is the math measured?\nBoth sides of the same request, at the same moment. For every /v1/messages\nPOST the proxy fires a free count_tokens probe on the original uncompressed\nbody (the counterfactual) in parallel with the real forward, and reads\nAnthropic's actually-billed usage block off the response. Both land in the\nsame row of ~/.pxpipe/events.jsonl , so there is no turn-count or\nrun-to-run confound. Dollar conversion uses Fable 5 list ratios: input ×1.0,\ncache write ×1.25, cache read ×0.1, output ×5. Cache pricing is applied\nidentically to both sides, so the caching discount cancels and cannot be\ndouble-counted as \"savings\". Re-derive it yourself from the events log: the\nformula and field names are documented in src/core/baseline.ts .\nWhat does it actually compress?\nThree kinds of input blocks, each behind a profitability gate:\nlarge tool_result bodies (file reads, command output, logs) above\n~6k chars of token-dense content\nolder collapsed history: turns behind the live tail get re-rendered as\nimage pages, recent turns always stay text\nthe static system prompt + tool docs slab\nEverything else passes through byte-identical: your messages, recent turns,\nthe model's output (it is the response, the proxy never touches it), sparse\nprose, and anything too small to win. Models outside the allowlist pass\nthrough entirely — the default scope is Fable 5 and GPT 5.6 only. Opus 4.8\nand GPT 5.5 read imaged content measurably worse (FINDINGS.md 2026-06-16),\nso they are deliberately opt-in via the dashboard or PXPIPE_MODELS , never\nsilently imaged.\nHas it ever failed for real, outside the benchmarks?\nYes, once in weeks of daily use: the model recalled a person's name from\nimaged chat history and got it confidently wrong. No error, just a\nplausible wrong name. That is the documented failure mode: exact strings\nin imaged content are not byte-safe. Coding sessions tolerate this because\nthe agent re-reads files before editing; pure chat recall has no such check.\nThis failure mode is measured, not anecdotal:\nthe legibility audit quantifies\nexact-string recall off rendered pages (blind reads top out at 63% on dense\nidentifiers, with every miss predicted by a glyph-confusability matrix) and\ndocuments the shipped mitigations — page geometry clamped to the API's\nresample cap so billed pixels actually reach the vision encoder, and exact\nidentifiers (SHAs, numbers) riding alongside as text.\nWhy does the README read like an AI wrote it?\nBecause one did. Most of this repo's commits — the code and the docs — were\nauthored by Opus/Fable agent sessions running behind pxpipe itself, reading\ntheir own collapsed history as image pages while they worked.\nLimitations\nLossy (above); verbatim recall from images is unreliable.\nPNG encoding adds latency to large requests before they leave.\nASCII/Latin-1 well tested; CJK works but conservatively.\nRoadmap\nHypotheses, not claims — they ship as numbers with an n or they get cut:\nsharper glyph rendering ( eval/glyph-matrix/ , paused mid-run), whether\nimaged bulk stretches effective context (~2x the real content in the same\n1M window), and whether a smaller active context improves long-task\naccuracy.\nLicense\nMIT.\nAbout\ncut Fable 5 token usage by rendering text context as images\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n472\nstars\nWatchers\nwatching\nForks\n25\nforks\nReport repository\nReleases\nv0.7.1\nLatest\nJul 3, 2026\n+ 1 release\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n96.1%\nJavaScript\n1.8%\nShell\n1.1%\nPython\n1.0%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] pxpipe是一个本地代理，将系统提示、工具文档和历史记录等密集文本渲染为PNG图像，利用图像token成本取决于像素尺寸的特性压缩输入token。在Fable 5模型上，约25k文本token压缩为约2.7k图像token，端到端账单降低59-70%。SWE-bench Lite 10个实例全部通过，成本从$54降至$27；SWE-bench Pro 19对测试中18对判定一致，单次请求成本降低约60%。该方法有损（精确ID等需保持文本），默认仅处理`claude-fable-5`请求，可通过`PXPIPE_MODELS`变量控制。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] teamchong pxpipe Public Notifications You must be signed in to change notification settings Fork 25 Star 472 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 298 Commits 298 Commits .\n3. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] github/ workflows .\n4. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] github/ workflows assets assets bench bench bin bin demo demo docs docs eval eval scripts scripts src src tests tests .\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] md LICENSE LICENSE README.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] yaml pnpm-workspace.\n"
+}

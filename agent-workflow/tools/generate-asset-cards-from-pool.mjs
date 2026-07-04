@@ -21,6 +21,7 @@ if (!date) {
 const now = new Date().toISOString();
 const autoSignalEnabled = args.get("auto-signals") !== "false" && args.get("manual-only") !== "true";
 const rawDirectEnabled = args.get("from-raw") !== "false";
+const includeBusinessObservations = args.get("include-business-observations") === "true";
 const assetGenerationLimit = args.has("asset-generation-limit")
   ? nonNegativeInt(args.get("asset-generation-limit"), Number.POSITIVE_INFINITY)
   : Number.POSITIVE_INFINITY;
@@ -1163,6 +1164,50 @@ function sectionHasUsableEvidenceObject(section) {
   );
 }
 
+function evidenceStrengthForSection(section) {
+  const sourceUrl = value(section, "source_url");
+  const evidenceObjectType = value(section, "evidence_object_type");
+  const extractionQuality = value(section, "extraction_quality");
+  const readability = Number(value(section, "readability_score"));
+  const degradationReasons = value(section, "degradation_reasons");
+  const rawQc = value(section, "raw_qc_decision");
+  const hasFullTextValue = value(section, "has_full_text") === "true";
+  const hasSource = Boolean(sourceUrl && sourceUrl !== "no-url");
+  const hasMaterial = Boolean(
+    value(section, "raw_archive")
+    && value(section, "raw_json")
+    && (value(section, "raw_full_text_hash") || value(section, "full_text_hash") || value(section, "raw_content_hash"))
+  );
+  const hasExcerpts = Boolean(
+    (value(section, "key_excerpts") && value(section, "key_excerpts") !== "[]")
+    || (value(section, "evidence_seed") && value(section, "evidence_seed") !== "{}")
+  );
+  const hardBlocked =
+    !hasSource
+    || rawQc === "block"
+    || hasTextContamination(textForInference(section))
+    || value(section, "index_only_evidence") === "true"
+    || indexOnlyEvidenceTypes.has(evidenceObjectType)
+    || /index_only_or_directory_page|raw_evidence_unusable|missing_snapshot|missing_hash|missing_excerpt/iu.test(degradationReasons);
+
+  if (hardBlocked || !hasMaterial || !hasExcerpts) return "blocked";
+
+  const extractionOk = ["high", "medium"].includes(extractionQuality);
+  const readabilityOk = Number.isFinite(readability) && readability >= 24;
+  if (rawQc === "allow" && hasFullTextValue && extractionOk && readabilityOk && sectionHasUsableEvidenceObject(section)) {
+    return "rich_evidence";
+  }
+  if (hasFullTextValue) return "source_backed_event";
+  return "traceable_summary";
+}
+
+function evidenceStrengthBlocksCard(section, hasCardableEvent) {
+  const strength = evidenceStrengthForSection(section);
+  if (strength === "blocked") return "missing_source_material";
+  if (!hasCardableEvent && strength === "traceable_summary") return "summary_without_formal_event";
+  return "";
+}
+
 function parsePublicationDate(value = "") {
   if (!value) return null;
   const parsed = new Date(value);
@@ -1300,6 +1345,28 @@ function hasFormalCardEvent(section) {
     || hasConcreteMarketStructureEvent(section);
 }
 
+function isBusinessObservationSignal(section) {
+  if (!includeBusinessObservations) return false;
+  const text = sectionEvidenceText(section);
+  if (isSocialOrCommunitySection(section) || isRepositoryOrCatalogSection(section) || isNewsletterRoundupSource(section)) return false;
+  if (value(section, "index_only_evidence") === "true" || indexOnlyEvidenceTypes.has(value(section, "evidence_object_type"))) return false;
+  const sourceIdentity = [
+    poolTitle(section),
+    value(section, "source"),
+    value(section, "source_url"),
+    value(section, "source_type"),
+  ].join(" ");
+  const observationFormat = /\b(ceo|founder|co-founder|interview|conversation|podcast|episode|simplecast)\b|CEO|创始人|访谈|采访|对谈|播客/iu.test(sourceIdentity);
+  const observationTopic = /\b(strategy|trend|future of|market|analysis|commercial|business model|pricing|gtm|go-to-market|sales|revenue|customer|enterprise|competition|valuation|daily active users|productivity tooling)\b|趋势|商业|收入|定价|客户|企业|市场/iu.test(text);
+  const aiContext = /\b(AI|GenAI|agent|agents|LLM|LLMs|model|enterprise AI|workflow|inference|developer platform|search|productivity tooling)\b|人工智能|模型|智能体|企业 AI|工作流/iu.test(text);
+  const traceable = evidenceStrengthForSection(section) !== "blocked";
+  return observationFormat && observationTopic && aiContext && traceable;
+}
+
+function allowsObservationSummaryEvidence(section) {
+  return isBusinessObservationSignal(section);
+}
+
 function isBuilderOrOpinionOnlySource(section) {
   const text = [
     value(section, "source_type"),
@@ -1365,22 +1432,19 @@ function cardabilitySemanticIssues(section) {
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const evidenceObjectType = value(section, "evidence_object_type");
-  const extractionQuality = value(section, "extraction_quality");
-  const readability = Number(value(section, "readability_score"));
   const importanceScore = Number(value(section, "importance_score"));
   const importanceType = value(section, "importance_type");
   const degradationReasons = value(section, "degradation_reasons");
   const hasFormalEvent = hasFormalCardEvent(section);
+  const observationSummaryEvidenceAllowed = allowsObservationSummaryEvidence(section);
+  const hasCardableEvent = hasFormalEvent || observationSummaryEvidenceAllowed;
+  const evidenceBlockReason = evidenceStrengthBlocksCard(section, hasCardableEvent);
 
-  if (value(section, "raw_qc_decision") !== "allow") issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "raw_qc_not_allow"));
-  if (value(section, "has_full_text") !== "true") issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "missing_full_text"));
-  if (hasTextContamination(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "binary_or_mojibake_text_contamination"));
+  if (evidenceBlockReason) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, evidenceBlockReason));
+  if (hasTextContamination(text)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "binary_or_mojibake_text_contamination"));
   if (isGenericReportOrListSection(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "generic_report_or_list_not_fact_signal"));
   if (!sourceUrl || sourceUrl === "no-url") issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "missing_source_url"));
-  if (!value(section, "extraction_method")) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "missing_extraction_method"));
-  if (!Number.isFinite(readability) || readability < 24) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "low_readability"));
-  if (!["high", "medium"].includes(extractionQuality)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "weak_extraction_quality"));
-  if ((/user_feedback_pool/u.test(value(section, "pool_routes")) || evidenceObjectType === "community_feedback" || value(section, "evidence_level") === "user_feedback_signal") && !hasFormalEvent) {
+  if ((/user_feedback_pool/u.test(value(section, "pool_routes")) || evidenceObjectType === "community_feedback" || value(section, "evidence_level") === "user_feedback_signal") && !hasCardableEvent) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "user_feedback_or_commentary_not_verified_fact"));
   }
   if (isSocialOrCommunitySection(section)) {
@@ -1398,14 +1462,14 @@ function cardabilitySemanticIssues(section) {
   if (discoveryOnlyPattern.test(`${value(section, "acquisition_channel")} ${value(section, "source_role")}`) && value(section, "source_role") !== "resolved_original_source") {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "discovery_source_not_resolved"));
   }
-  if (!coreImportanceTypes.has(importanceType) && !hasFormalEvent) issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, `unsupported_importance_type:${importanceType || "missing"}`));
-  if (importanceType === "important_technical_trend") {
+  if (!coreImportanceTypes.has(importanceType) && !hasCardableEvent) issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, `unsupported_importance_type:${importanceType || "missing"}`));
+  if (importanceType === "important_technical_trend" && !observationSummaryEvidenceAllowed) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "technical_trend_is_context_not_signal_card"));
   }
-  if (isBuilderOrOpinionOnlySource(section)) {
+  if (isBuilderOrOpinionOnlySource(section) && !observationSummaryEvidenceAllowed) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "builder_or_opinion_source_not_business_fact"));
   }
-  if (isTechnicalArticleWithoutBusinessEvent(section)) {
+  if (isTechnicalArticleWithoutBusinessEvent(section) && !observationSummaryEvidenceAllowed) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "technical_article_without_business_event"));
   }
   if (isWorkforceRetrainingProgram(section)) {
@@ -1417,13 +1481,12 @@ function cardabilitySemanticIssues(section) {
   if (isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "low_value_consumer_or_platform_policy_not_business_signal"));
   }
-  if (!hasFormalEvent) {
+  if (!hasCardableEvent) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "missing_concrete_funding_product_or_case_event"));
   }
-  if ((!Number.isFinite(importanceScore) || importanceScore < 4) && !hasFormalEvent) issues.push(cardGateIssue(CARD_ENTRY_GATES.commercialImportance, "low_importance_score"));
-  if (!sectionHasUsableEvidenceObject(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "incomplete_evidence_object"));
-  if (/missing_full_text|missing_snapshot|missing_hash|missing_excerpt|raw_evidence_unusable/iu.test(degradationReasons)) {
-    issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "degradation_reason_blocks_core"));
+  if ((!Number.isFinite(importanceScore) || importanceScore < 4) && !hasCardableEvent) issues.push(cardGateIssue(CARD_ENTRY_GATES.commercialImportance, "low_importance_score"));
+  if (/missing_snapshot|missing_hash|missing_excerpt|raw_evidence_unusable/iu.test(degradationReasons) && !issues.includes(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "missing_source_material"))) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "missing_source_material"));
   }
   if (/index_only_or_directory_page/iu.test(degradationReasons)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "degradation_reason_index_only"));
@@ -1560,7 +1623,7 @@ function domainLabelFromUrl(value = "") {
 
 function isWeakCompanyName(value = "") {
   const text = String(value || "").trim();
-  if (/buying criteria|adoption|startup ideas|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|introducing|top ai|complete guide|release notes agent|with quantization|brings enterprise|monetizing ai agents/iu.test(text)) return true;
+  if (/buying criteria|adoption|startup ideas|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|introducing|top ai|complete guide|release notes agent|with quantization|brings enterprise|monetizing ai agents|company is led by/iu.test(text)) return true;
   if (!text) return true;
   if (/^(?:Inc\.?|LLC|Ltd\.?|Corp\.?|Company|The company)$/iu.test(text)) return true;
   const hanChars = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
@@ -1587,6 +1650,12 @@ function companyFromSection(section) {
   for (const [pattern, company] of specialCases) {
     if (pattern.test(`${title} ${text} ${sourceUrl}`)) return company;
   }
+  const interviewCompany =
+    title.match(/\b([A-Z][A-Za-z0-9.& -]{1,50}?)\s+(?:Founder\/CEO|CEO|Co-?founder|Product\s*&\s*Eng\s+Leads?)\b/u)?.[1]
+    || title.match(/\b(?:Founder\/CEO|CEO|Co-?founder)\s+(?:of\s+)?([A-Z][A-Za-z0-9.& -]{1,50}?)(?:\s+[A-Z][a-z]+|\s+on\b|\s*$)/u)?.[1]
+    || text.match(/\b([A-Z][A-Za-z0-9.& -]{1,50}?)\s+(?:Founder\/CEO|CEO|Co-?founder)\b/u)?.[1];
+  const interviewCompanyClean = shortCompany(String(interviewCompany || "").replace(/^Ep\s+\d+:\s*/iu, ""));
+  if (interviewCompanyClean && !isWeakCompanyName(interviewCompanyClean)) return interviewCompanyClean;
   const patterns = [
     /\bstartup\s+([A-Z][A-Za-z0-9.&-]+)\s+(?:raises|raised|said|announced)\b/iu,
     /\bseed\s+for\s+([A-Z][A-Za-z0-9.&-]+)\s+to\b/iu,
@@ -1622,6 +1691,9 @@ function isSingleCompanyFundingSignal(section) {
   if (/(funding map|top ai pre-seed investors|pre-seed investors|top ai agent startups|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|funding tracker|ai agent startups insight partners funding|series-b-enterprise-ai-agents|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(sourceIdentity)) {
     return false;
   }
+  if (/\b(employee tender|tender offer|secondary sale|share buyback|commitment|committed capital|new operating business|deployment company|frontier company)\b/iu.test(haystack)) {
+    return false;
+  }
   const unconfirmedFundingPattern = /(?:rumou?red|reportedly|in talks to|plans to|may raise|could raise|is seeking|will complete|消息称|据悉|拟|将完成|有望完成|寻求融资|计划融资).{0,100}\b(?:funding|financing|investment|round|seed|series|valuation)\b|(?:消息称|据悉|拟|将完成|有望完成|寻求融资|计划融资).{0,100}(?:融资|投资|估值|轮)/iu;
   if (unconfirmedFundingPattern.test(haystack)) {
     return false;
@@ -1654,6 +1726,7 @@ function inferSignalType(section) {
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const importanceType = value(section, "importance_type");
+  if (allowsObservationSummaryEvidence(section)) return "product_service";
   if (isSingleCompanyFundingSignal(section)) return "funding";
   if (importanceType === "important_market_structure") {
     if (/\b(pricing|price|billing|rate limit)\b|定价|价格|计费/iu.test(text)) return "product_service";
@@ -1821,6 +1894,8 @@ function autoSignalSpec(poolRef, section, index) {
   const text = textForInference(section);
   const type = inferSignalType(section);
   const company = companyFromSection(section);
+  const summaryOperatorMaterial = evidenceStrengthForSection(section) === "traceable_summary"
+    && /\b(podcast|simplecast|interview|episode|ceo|founder|co-founder)\b|CEO|创始人|访谈|播客/iu.test(sectionEvidenceText(section));
 
   // Check original publication time from raw_json; skip items older than the freshness window.
   const rawJsonPath = value(section, "raw_json");
@@ -1829,7 +1904,7 @@ function autoSignalSpec(poolRef, section, index) {
       const rawPath = path.resolve(root, rawJsonPath.replace(/^`|`$/gu, ""));
       const rawData = JSON.parse(fs.readFileSync(rawPath, "utf8"));
       const pubDate = rawData.published_at;
-      if (pubDate) {
+      if (pubDate && !allowsObservationSummaryEvidence(section)) {
         const pubDay = new Date(pubDate);
         const cutoff = new Date();
         cutoff.setDate(cutoff.getDate() - 90);
@@ -1852,11 +1927,18 @@ function autoSignalSpec(poolRef, section, index) {
   if (!sourceTitle) return null;
   const sourceEventTitle = cleanSourceEventTitle(sourceTitle);
   if (!sourceEventTitle) return null;
-  const title = publicTitleForAutoSignal({ type, company, sourceEventTitle, amount });
+  let title = publicTitleForAutoSignal({ type, company, sourceEventTitle, amount });
+  if (!title && (allowsObservationSummaryEvidence(section) || summaryOperatorMaterial)) {
+    title = `${company || "AI 公司"} 的 AI 商业观察`;
+  }
   if (!title) return null;
   const sourcePoints = sourcePointsFromSection(section);
   const sourceExcerpt = sourceExcerptFromSection(section, sourcePoints);
-  const eventLine = sourcePoints.find((point) => sourcePointMatchesSignalType(point, type)) || sourcePoints[0] || sourceExcerpt;
+  const observationSummaryEvidenceAllowed = allowsObservationSummaryEvidence(section);
+  let eventLine = sourcePoints.find((point) => sourcePointMatchesSignalType(point, type)) || sourcePoints[0] || sourceExcerpt;
+  if (!sourcePointIsUsable(eventLine) && (observationSummaryEvidenceAllowed || summaryOperatorMaterial)) {
+    eventLine = `${company || "AI 公司"} 的公开访谈或趋势材料讨论 AI 商业化、产品方向、客户采用或市场结构变化：${sourceEventTitle}`;
+  }
   if (!sourcePointIsUsable(eventLine)) return null;
   return {
     id: prefix,
@@ -1868,8 +1950,8 @@ function autoSignalSpec(poolRef, section, index) {
     title,
     sourceTitle,
     eventLine,
-    whyWatch: sourcePoints[1] || sourcePoints[0] || "",
-    businessMeaning: sourcePoints[2] || sourcePoints[1] || sourcePoints[0] || "",
+    whyWatch: sourcePoints[1] || sourcePoints[0] || (observationSummaryEvidenceAllowed ? "该材料不是正式融资、产品发布或客户案例，但可作为 CEO / 经营者视角的商业观察线索。" : ""),
+    businessMeaning: sourcePoints[2] || sourcePoints[1] || sourcePoints[0] || (observationSummaryEvidenceAllowed ? "用于观察 AI 产品商业化、客户采用、推理成本、分发或市场结构变化，不能单独当作强事实事件。" : ""),
     evidenceBoundary: value(section, "missing_information") || "证据边界以 Raw / Pool 中保留的原文、摘录和缺失项为准。",
     watchWindow: "",
     sourcePoints,
@@ -1922,7 +2004,7 @@ function promotePriorityForIssues(issues = []) {
   if (issues.some((issue) => /valid_page_type|fact_type_constraints|stale_source_date|generic_report_or_list|index_only|user_feedback_not_fact_signal|text_indicates_index_only/iu.test(issue))) {
     return "low";
   }
-  if (issues.some((issue) => /source_auditability|evidence_quality|missing_full_text|missing_source_url|weak_extraction_quality|incomplete_evidence_object/iu.test(issue))) {
+  if (issues.some((issue) => /source_auditability|evidence_quality|missing_source_url|missing_source_material|summary_without_formal_event/iu.test(issue))) {
     return "medium";
   }
   return "review";
@@ -1937,7 +2019,8 @@ function repairSuggestionForIssues(issues = []) {
   if (/fact_type_constraints:.*user_feedback|user_feedback_not_fact_signal/iu.test(text)) return "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.";
   if (/workforce_retraining_program_not_formal_signal_card/iu.test(text)) return "Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.";
   if (/funding_not_single_company_round/iu.test(text)) return "Use a single-company funding announcement with amount, round, investor, and date.";
-  if (/source_auditability|evidence_quality|missing_full_text|missing_source_url|incomplete_evidence_object/iu.test(text)) return "Repair Raw evidence extraction so source URL, full text, excerpts, and hashes are present.";
+  if (/source_auditability|evidence_quality|missing_source_url|missing_source_material/iu.test(text)) return "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.";
+  if (/summary_without_formal_event/iu.test(text)) return "Keep as traceable summary unless it has a formal product, funding, case event, or the observation override is intentionally enabled.";
   if (/business_signal_scope/iu.test(text)) return "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.";
   if (/commercial_importance/iu.test(text)) return "Keep as Pool evidence unless the item has a clear commercial action, customer, funding, or deployment signal.";
   if (/duplicate_event_cluster/iu.test(text)) return "Keep as supporting evidence for the linked event instead of creating a duplicate Card.";
@@ -2162,6 +2245,8 @@ function signalCard(spec, section) {
   const sourceLevel = value(section, "source_level");
   const hash = value(section, "raw_full_text_hash");
   const extractionQuality = value(section, "extraction_quality");
+  const hasFullText = value(section, "has_full_text") === "true";
+  const evidenceStrength = evidenceStrengthForSection(section);
   const importanceType = value(section, "importance_type");
   const importanceScore = value(section, "importance_score");
   const sourcePoints = (spec.sourcePoints?.length ? spec.sourcePoints : sourcePointsFromSection(section)).slice(0, 6);
@@ -2199,7 +2284,8 @@ primary_raw:
   full_text_hash: ${yamlString(hash)}
   source_level: ${sourceLevel}
   extraction_quality: ${extractionQuality}
-  has_full_text: true
+  has_full_text: ${hasFullText}
+  evidence_strength: ${evidenceStrength}
   pool_routes:
 ${poolRoutes}
   raw_qc_decision: allow

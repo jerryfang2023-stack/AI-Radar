@@ -147,6 +147,22 @@ function parseLineInBlock(block = "", key = "") {
   return match ? match[1].trim() : "";
 }
 
+const evidenceStrengthOrder = ["blocked", "traceable_summary", "source_backed_event", "rich_evidence"];
+const usableEvidenceStrengths = new Set(["traceable_summary", "source_backed_event", "rich_evidence"]);
+
+function normalizeEvidenceStrength(value = "") {
+  const tier = String(value || "").trim().toLowerCase();
+  return evidenceStrengthOrder.includes(tier) ? tier : "unknown";
+}
+
+function formatEvidenceStrengthDistribution(distribution = {}) {
+  const ordered = evidenceStrengthOrder
+    .filter((key) => distribution[key])
+    .map((key) => `${key}=${distribution[key]}`);
+  const unknown = distribution.unknown ? [`unknown=${distribution.unknown}`] : [];
+  return [...ordered, ...unknown].join("; ") || "none";
+}
+
 function parsePoolItems(poolMarkdown = "") {
   return String(poolMarkdown || "")
     .split(/\r?\n##\s+/u)
@@ -166,6 +182,7 @@ function parsePoolItems(poolMarkdown = "") {
         sourceLevel: parseLineInBlock(block, "source_level"),
         acquisitionSourceLevel: parseLineInBlock(block, "acquisition_source_level"),
         evidenceObjectType: parseLineInBlock(block, "evidence_object_type"),
+        evidenceStrength: normalizeEvidenceStrength(parseLineInBlock(block, "evidence_strength")),
         evidenceObjectUsable: /^true$/iu.test(parseLineInBlock(block, "evidence_object_usable")),
         eventEvidence: /^true$/iu.test(parseLineInBlock(block, "event_evidence")),
         indexOnlyEvidence: /^true$/iu.test(parseLineInBlock(block, "index_only_evidence")),
@@ -228,17 +245,13 @@ function hasTextContamination(text = "") {
     || replacementCount / length > 0.003;
 }
 
-function isUsableCoreEvidenceItem(item = {}, readabilityMin = 24) {
+function isUsableCoreEvidenceItem(item = {}) {
   if (!item.routes?.includes("core_pool")) return false;
-  if (item.rawQcDecision && item.rawQcDecision !== "allow") return false;
-  if (!item.hasFullText || item.indexOnlyEvidence) return false;
+  if (item.rawQcDecision === "block") return false;
+  if (!usableEvidenceStrengths.has(normalizeEvidenceStrength(item.evidenceStrength))) return false;
+  if (item.indexOnlyEvidence) return false;
   if (hasTextContamination(item.text || item.keyExcerpts || "")) return false;
   if (/official_index_or_directory|repo_readme_or_index|ecosystem_package_or_model_index|marketplace_listing|search_result_or_tool_directory|low_quality_chinese_official_or_seo/iu.test(item.evidenceObjectType || "")) return false;
-  if (item.extractionQuality && !/^(high|medium)$/iu.test(item.extractionQuality)) return false;
-  if (item.readabilityScore < readabilityMin) return false;
-  if (!item.contentHash || /^none$/iu.test(item.contentHash)) return false;
-  if (!item.fullTextHash || /^none$/iu.test(item.fullTextHash)) return false;
-  if (!item.keyExcerpts || /^\[\]$|^none$/iu.test(item.keyExcerpts)) return false;
   return true;
 }
 
@@ -284,11 +297,6 @@ function ratio(part, total) {
 function safeObject(value) {
   return value && typeof value === "object" ? value : {};
 }
-
-const legacyRawCoverageLogKey = "signal" + "_coverage_gaps";
-const legacyPoolCoverageLogKey = "pool_" + legacyRawCoverageLogKey;
-const legacyRawCoverageGateKey = legacyRawCoverageLogKey + "_must_be_none";
-const legacyPoolCoverageGateKey = legacyPoolCoverageLogKey + "_must_be_none";
 
 function scoreToFixed(value) {
   return Number((value || 0).toFixed(2));
@@ -380,13 +388,13 @@ export function runGuanlanMonitorQualityGate({
   const nonCommunityPaths = (Array.isArray(keywordReq.non_community_paths) ? keywordReq.non_community_paths : [])
     .filter((pathId) => (pathDist[pathId] || 0) > 0);
 
-  const importanceCoverageValue = String(logBullets.importance_coverage_gaps || logBullets[legacyRawCoverageLogKey] || "unknown").trim().toLowerCase();
+  const importanceCoverageValue = String(logBullets.importance_coverage_gaps || "unknown").trim().toLowerCase();
   const coverageGapFlag = importanceCoverageValue !== "none";
   const themeConcentrationWarning = String(logBullets.theme_concentration_warning || "none").trim().toLowerCase();
   const themeConcentrationFlag = themeConcentrationWarning.startsWith("warning");
   const themeDist = parseDistribution(logBullets.theme_distribution || "");
   const outsideCoreCount = themeDist["outside-core-exploration"] || 0;
-  const poolImportanceCoverageValue = String(logBullets.pool_importance_coverage_gaps || logBullets[legacyPoolCoverageLogKey] || "unknown").trim().toLowerCase();
+  const poolImportanceCoverageValue = String(logBullets.pool_importance_coverage_gaps || "unknown").trim().toLowerCase();
   const poolCoverageGapFlag = poolImportanceCoverageValue !== "none";
   const poolItems = parsePoolItems(poolText);
   const poolRouteDist = poolItems.reduce((acc, item) => {
@@ -402,12 +410,17 @@ export function runGuanlanMonitorQualityGate({
   const aihotIndexOnlyCount = poolItems.filter((item) => item.acquisitionChannel === "aihot" && item.routes.includes("index_only")).length;
   const aihotCoreCount = poolItems.filter((item) => item.acquisitionChannel === "aihot" && item.routes.includes("core_pool")).length;
   const corePoolItems = poolItems.filter((item) => item.routes.includes("core_pool"));
-  const coreReadabilityScoreMin = Number(hard.core_readability_score_min ?? 24);
-  const coreLowReadabilityMax = Number(hard.core_low_readability_max ?? 0);
-  const usableCoreEvidenceCount = corePoolItems.filter((item) => isUsableCoreEvidenceItem(item, coreReadabilityScoreMin)).length;
+  const coreEvidenceStrengthDistribution = corePoolItems.reduce((acc, item) => {
+    const tier = normalizeEvidenceStrength(item.evidenceStrength);
+    acc[tier] = (acc[tier] || 0) + 1;
+    return acc;
+  }, {});
+  const coreBlockedEvidenceCount = coreEvidenceStrengthDistribution.blocked || 0;
+  const coreTraceableSummaryCount = coreEvidenceStrengthDistribution.traceable_summary || 0;
+  const coreSourceBackedEventCount = coreEvidenceStrengthDistribution.source_backed_event || 0;
+  const coreRichEvidenceCount = coreEvidenceStrengthDistribution.rich_evidence || 0;
+  const usableCoreEvidenceCount = corePoolItems.filter((item) => isUsableCoreEvidenceItem(item)).length;
   const homepageDirectoryCoreCount = poolItems.filter(isHomepageDirectoryCoreItem).length;
-  const coreMissingFullTextCount = poolItems.filter((item) => item.routes.includes("core_pool") && !item.hasFullText).length;
-  const coreLowReadabilityCount = corePoolItems.filter((item) => item.readabilityScore < coreReadabilityScoreMin).length;
   const coreTextContaminationCount = corePoolItems.filter((item) => hasTextContamination(item.text || item.keyExcerpts || "")).length;
   const coreRawQcBlockCount = corePoolItems.filter((item) => item.rawQcDecision === "block").length;
   const coreRawQcDegradedCount = corePoolItems.filter((item) => item.rawQcDecision === "allow_with_degradation").length;
@@ -426,15 +439,14 @@ export function runGuanlanMonitorQualityGate({
   const corePoolMinHard = Number(hard.core_pool_min || 5);
   const usableCoreEvidenceMinHard = Number(hard.usable_core_evidence_min || corePoolMinHard);
   const homepageDirectoryCoreMax = Number(hard.homepage_directory_core_max ?? 0);
-  const coreMissingFullTextMax = Number(hard.core_missing_full_text_max ?? 0);
   const coreRawQcBlockMax = Number(hard.core_raw_qc_block_max ?? 0);
   const coreRawQcDegradedMax = Number(hard.core_raw_qc_degraded_max ?? 0);
   const coreLargeVendorMax = Number(hard.core_large_vendor_max ?? 5);
   const coreLargeVendorRatioMax = Number(hard.core_large_vendor_ratio_max ?? 0.35);
   const coreNonLargeVendorMin = Number(hard.core_non_large_vendor_min ?? 0);
   const unrecoveredFailedSourcesMax = Number(hard.unrecovered_failed_sources_max ?? 0);
-  const importanceCoverageMustNone = hard.importance_coverage_gaps_must_be_none ?? hard[legacyRawCoverageGateKey] ?? true;
-  const poolImportanceCoverageMustNone = hard.pool_importance_coverage_gaps_must_be_none ?? hard[legacyPoolCoverageGateKey] ?? true;
+  const importanceCoverageMustNone = hard.importance_coverage_gaps_must_be_none ?? true;
+  const poolImportanceCoverageMustNone = hard.pool_importance_coverage_gaps_must_be_none ?? true;
   const nonCommunityPathMin = Number(keywordReq.non_community_paths_min || 2);
   const outsideCoreMin = Number(strategyReq.outside_core_exploration_min_raw || 3);
   const weekend = weekendPolicyState(config, targetDate);
@@ -582,10 +594,7 @@ export function runGuanlanMonitorQualityGate({
       poolCoverageGapFlag: poolCoverageGapFlag && !weekendPoolCoveragePassed,
       homepageDirectoryCoreCount,
       homepageDirectoryCoreMax,
-      coreMissingFullTextCount,
-      coreMissingFullTextMax,
-      coreLowReadabilityCount,
-      coreLowReadabilityMax,
+      coreBlockedEvidenceCount,
       coreTextContaminationCount,
       coreRawQcBlockCount,
       coreRawQcBlockMax,
@@ -622,8 +631,7 @@ export function runGuanlanMonitorQualityGate({
     importanceCoverageValue !== "none" ? `importance_coverage_gaps=${importanceCoverageValue}` : "",
     poolImportanceCoverageValue !== "none" ? `pool_importance_coverage_gaps=${poolImportanceCoverageValue}` : "",
     homepageDirectoryCoreCount ? `homepage_directory_core=${homepageDirectoryCoreCount}` : "",
-    coreMissingFullTextCount ? `core_missing_full_text=${coreMissingFullTextCount}` : "",
-    coreLowReadabilityCount ? `core_low_readability=${coreLowReadabilityCount}` : "",
+    coreBlockedEvidenceCount ? `core_blocked_evidence=${coreBlockedEvidenceCount}` : "",
     coreTextContaminationCount ? `core_text_contamination=${coreTextContaminationCount}` : "",
     coreRawQcBlockCount ? `core_raw_qc_block=${coreRawQcBlockCount}` : "",
     coreRawQcDegradedCount ? `core_raw_qc_degraded=${coreRawQcDegradedCount}` : "",
@@ -686,11 +694,13 @@ export function runGuanlanMonitorQualityGate({
     `- usable_core_evidence_count: ${usableCoreEvidenceCount}`,
     `- usable_core_evidence_min_effective: ${effectiveUsableCoreEvidenceMinHard}`,
     `- usable_core_evidence_min_default: ${usableCoreEvidenceMinHard}`,
+    `- core_evidence_strength_distribution: ${formatEvidenceStrengthDistribution(coreEvidenceStrengthDistribution)}`,
+    `- core_blocked_evidence_count: ${coreBlockedEvidenceCount}`,
+    `- core_traceable_summary_count: ${coreTraceableSummaryCount}`,
+    `- core_source_backed_event_count: ${coreSourceBackedEventCount}`,
+    `- core_rich_evidence_count: ${coreRichEvidenceCount}`,
     `- homepage_directory_core_count: ${homepageDirectoryCoreCount}`,
-    `- core_missing_full_text_count: ${coreMissingFullTextCount}`,
-    `- core_low_readability_count: ${coreLowReadabilityCount}`,
     `- core_text_contamination_count: ${coreTextContaminationCount}`,
-    `- core_readability_score_min: ${coreReadabilityScoreMin}`,
     `- core_raw_qc_block_count: ${coreRawQcBlockCount}`,
     `- core_raw_qc_degraded_count: ${coreRawQcDegradedCount}`,
     `- core_large_vendor_count: ${coreLargeVendorCount}`,
@@ -775,11 +785,13 @@ export function runGuanlanMonitorQualityGate({
       off_topic_title_count: offTopicCount,
       core_pool_count: corePoolCount,
       usable_core_evidence_count: usableCoreEvidenceCount,
+      core_evidence_strength_distribution: coreEvidenceStrengthDistribution,
+      core_blocked_evidence_count: coreBlockedEvidenceCount,
+      core_traceable_summary_count: coreTraceableSummaryCount,
+      core_source_backed_event_count: coreSourceBackedEventCount,
+      core_rich_evidence_count: coreRichEvidenceCount,
       homepage_directory_core_count: homepageDirectoryCoreCount,
-      core_missing_full_text_count: coreMissingFullTextCount,
-      core_low_readability_count: coreLowReadabilityCount,
       core_text_contamination_count: coreTextContaminationCount,
-      core_readability_score_min: coreReadabilityScoreMin,
       core_raw_qc_block_count: coreRawQcBlockCount,
       core_raw_qc_degraded_count: coreRawQcDegradedCount,
       core_large_vendor_count: coreLargeVendorCount,

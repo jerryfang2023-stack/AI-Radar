@@ -2129,7 +2129,7 @@ function limitRoutesByDegradation(routes = [], degradationReasons = [], rawQcDec
   routeSet.delete("core_pool");
   const reasons = new Set(degradationReasons || []);
   if (reasons.has("index_only_or_directory_page")) return ["index_only"];
-  if (reasons.has("missing_full_text") || reasons.has("missing_snapshot")) {
+  if (reasons.has("missing_snapshot")) {
     return [isAIHotDailySelected(item) ? "index_only" : "watchlist"];
   }
   if (reasons.has("missing_hash") || reasons.has("missing_excerpt")) {
@@ -2433,9 +2433,36 @@ function rawQcDecisionFor(item = {}, quality = "failed", gate = {}, completeness
 
   return {
     decision: "allow_with_degradation",
-    downstream_use: "index_watchlist_or_feedback_only",
+    downstream_use: missing.has("missing_full_text") && !missing.has("missing_snapshot") && !missing.has("missing_hash") && !missing.has("missing_excerpt")
+      ? "traceable_summary_or_observation_candidate"
+      : "index_watchlist_or_feedback_only",
     degradation_reasons: [...new Set(degradationReasons.length ? degradationReasons : ["insufficient_usable_evidence_object"])],
   };
+}
+
+function rawEvidenceStrengthTier(item = {}, quality = "failed", gate = {}, completeness = {}, rawQc = {}) {
+  const missing = new Set(completeness.missing || []);
+  if (
+    rawQc.decision === "block"
+    || !item.url
+    || gate.indexOnlyEvidence
+    || gate.directoryObservation
+    || missing.has("missing_snapshot")
+    || missing.has("missing_hash")
+    || missing.has("missing_excerpt")
+  ) {
+    return "blocked";
+  }
+  if (
+    rawQc.decision === "allow"
+    && hasFullText(item.snapshot)
+    && ["high", "medium"].includes(quality)
+    && gate.evidenceObjectUsable
+  ) {
+    return "rich_evidence";
+  }
+  if (hasFullText(item.snapshot)) return "source_backed_event";
+  return "traceable_summary";
 }
 
 function missingInformation(item, elements, seed, excerpts = []) {
@@ -2515,6 +2542,7 @@ function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
   const flags = accessFlags(item.snapshot);
   const completeness = evidenceCompleteness(item, originalPath, jsonPath, excerpts, fullText);
   const rawQc = rawQcDecisionFor(item, quality, gate, completeness);
+  const evidenceStrength = rawEvidenceStrengthTier(item, quality, gate, completeness, rawQc);
   const enterpriseAi = enterpriseAiTransformationProfileForItem(item, fullText);
   const record = {
     schema_version: "raw-evidence-v2",
@@ -2561,6 +2589,7 @@ function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
     content_length: fullText.length,
     fetch_error: item.snapshot?.error || "",
     evidence_completeness: completeness,
+    evidence_strength: evidenceStrength,
     raw_qc_decision: rawQc.decision,
     raw_qc_downstream_use: rawQc.downstream_use,
     degradation_reasons: rawQc.degradation_reasons,
@@ -4601,6 +4630,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
       `- evidence_object_usable: ${record.evidence_object_usable}`,
       `- event_evidence: ${record.event_evidence}`,
       `- index_only_evidence: ${record.index_only_evidence}`,
+      `- evidence_strength: ${record.evidence_strength}`,
       `- raw_qc_decision: ${record.raw_qc_decision}`,
       `- evidence_completeness: full_text=${record.evidence_completeness.full_text_status}; snapshot=${record.evidence_completeness.snapshot_status}; hash=${record.evidence_completeness.hash_status}; excerpt=${record.evidence_completeness.excerpt_status}`,
       `- degradation_reasons: ${record.degradation_reasons.join("；") || "none"}`,
@@ -4665,6 +4695,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
       `has_full_text: ${record.has_full_text}`,
       `content_length: ${record.content_length}`,
       `fetch_error: ${JSON.stringify(record.fetch_error)}`,
+      `evidence_strength: ${record.evidence_strength}`,
       `raw_qc_decision: ${record.raw_qc_decision}`,
       `raw_qc_downstream_use: ${record.raw_qc_downstream_use}`,
       `degradation_reasons: ${JSON.stringify(record.degradation_reasons)}`,
@@ -4852,6 +4883,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
       `- evidence_object_usable: ${item.raw_record?.evidence_object_usable || false}`,
       `- event_evidence: ${item.raw_record?.event_evidence || false}`,
       `- index_only_evidence: ${item.raw_record?.index_only_evidence || false}`,
+      `- evidence_strength: ${item.raw_record?.evidence_strength || "blocked"}`,
       `- raw_qc_decision: ${item.raw_record?.raw_qc_decision || "block"}`,
       `- raw_qc_downstream_use: ${item.raw_record?.raw_qc_downstream_use || "not_allowed"}`,
       `- acquisition_source_level: ${item.raw_record?.acquisition_source_level || "not_applicable"}`,

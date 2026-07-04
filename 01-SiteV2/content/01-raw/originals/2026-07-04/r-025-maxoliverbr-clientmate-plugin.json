@@ -1,0 +1,285 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-025",
+  "title": "maxoliverbr/clientmate-plugin",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://github.com/maxoliverbr/clientmate-plugin",
+  "canonical_url": "https://github.com/maxoliverbr/clientmate-plugin",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "pilot",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-04T04:50:50.200Z",
+  "language": "mixed",
+  "full_text": "maxoliverbr\nclientmate-plugin\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n1 Commit\n1 Commit\n.claude-plugin\n.claude-plugin\nassets\nassets\nskills\nskills\n.gitignore\n.gitignore\nINSTALL.md\nINSTALL.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ninstall.sh\ninstall.sh\nView all files\nRepository files navigation\nClientMate — Design-Partner & Early-Customer Toolkit\nA set of Claude Code Skills that turn your startup profile into a disciplined go-to-market motion for finding the right design partners and early customers — and screening out the ones that quietly kill startups.\nThe wrong early customer is as dangerous as no customer: the tire-kicker with no real pain, the champion with no budget authority, the whale who hijacks your roadmap, the free-pilot-forever logo that never converts, the vanity name that proves nothing because no one there actually uses the product. ClientMate is the bad-fit filter — and the engine for finding the partners who give you revenue, references, data, and learning.\nIt is the sibling of VCupid (fundraising) and Incubae (program evaluation), and reads the same STARTUP_PROFILE.md — maintain one profile, use all three toolkits.\nThe Workflow\nRun commands in this order to build and qualify your design-partner pipeline:\n# 0. Create your STARTUP_PROFILE.md (shared with VCupid and Incubae)\n# 1. Define who you should — and shouldn't — sell to\n/cmstrat\n# 2. Build the target account list\n/cmlist\n# 3. For each Tier 1 account — bad-fit check first:\n/cmposer <account name> # Will this relationship advance or bleed you? Drop if score < 40.\n# 4. For each account that passes (score 60+):\n/cmmatch <account name> # Map the deal, the champion, and the path in\n/cmvalue <account name> # What do they give you beyond revenue, net of cost to serve?\n# 5. Harden your pitch against a real buyer before any call:\n/cmdevil\n# 6. For each account with a /cmmatch \"Pursue\" verdict:\n/cmreach cmmatch-<account>.md # Draft outreach to the champion\n# 7. When a discovery call is booked:\n/cmprep cmmatch-<account>.md\nFile naming convention:\nFile\nPurpose\nSTARTUP_PROFILE.md\nYour startup data — shared across VCupid, Incubae, and ClientMate\ncmstrat.md\nStrategy — your Ideal Design Partner Profile, ICP, asks, anti-patterns\ncmlist.md\nMaster target account pipeline, tiered\ncmposer-<account>.md\nBad-fit check — pain, budget, velocity, roadmap, conversion\ncmmatch-<account>.md\nDeep fit analysis — 7-dimension score, champion map, deal shape\ncmvalue-<account>.md\nValue audit — commercial + strategic, netted against cost to serve\ncmreach-<account>.md\nOutreach to the champion — cold email, warm intro, LinkedIn\ncmprep-<account>.md\nDiscovery call prep + disqualify triggers\ncmdevil.md\nThe skeptical buyer — 10 deal-ending questions\nInstallation\nThese commands install as the clientmate Claude Code plugin (works in any project directory).\n1. Clone the plugin:\ngit clone https://github.com/maxoliverbr/clientmate-plugin.git ~/dev/clientmate\n2. Run the install script:\ncd ~/dev/clientmate && bash install.sh\nThe script registers the plugin in ~/.claude/plugins/installed_plugins.json and enables it in ~/.claude/settings.json . It is idempotent — safe to re-run after updates.\n3. Restart Claude Code. All /cm* commands become available in any directory that contains a STARTUP_PROFILE.md .\nManual installation\nRegister in ~/.claude/plugins/installed_plugins.json :\n\"clientmate@local\": [{\n\"scope\": \"user\",\n\"installPath\": \"/home/<you>/dev/clientmate\",\n\"version\": \"1.0.0\",\n\"installedAt\": \"<ISO timestamp>\",\n\"lastUpdated\": \"<ISO timestamp>\"\n}]\nEnable in ~/.claude/settings.json :\n\"enabledPlugins\": {\n\"clientmate@local\": true\nCommands\n/cmstrat — Design-Partner & Beachhead Strategy\nStart here. Defines the beachhead, a precise Ideal Design Partner Profile and ICP, how many partners to sign and in what order, exactly what to ask each for (with the terms that protect you), and the anti-patterns to refuse — the roadmap hijacker, the no-budget champion, the free-pilot-forever logo. Reads STARTUP_PROFILE.md (+ any cmlist.md , cmmatch-*.md , cmposer-*.md ). Saves cmstrat.md .\n/cmlist — Target Account List\nResearches the beachhead and produces a tiered list of 15–25 candidate accounts ranked by pain acuity, buyability, reference value, reachability, and beachhead fit — each with a likely champion and an entry angle. Saves cmlist.md .\n/cmposer — Bad-Fit Detector\nThe core filter. Eight evidence-based checks — Pain Acuity, Budget & Authority, Decision Velocity, Roadmap Alignment, Conversion Intent, Reference Value, Engagement Capacity, Counterparty Health — scored 0–100. Verdicts: Strong Fit (80–100) , Workable (60–79) , Caution (40–59) , Walk Away (0–39) . A dream logo with low pain can be a Walk Away. Saves cmposer-<account>.md .\ncmposer ≠ cmmatch. Bad-fit Score answers \"will this relationship advance or bleed us?\" cmmatch answers \"what's the deal, who's the champion, what do we propose?\" You need both.\n/cmmatch — Account Fit Analysis\nDeep research on a single account against your profile. Seven-dimension fit score (Pain–Solution 25, Buyability 20, Reference & Strategic Value 15, Champion Strength 15, Roadmap Fit 10, Data/Domain Access 10, Reachability 5), a champion map, the deal shape to propose (with a mandatory written success definition and conversion path), and a Pursue / Nurture / Pass verdict. Saves cmmatch-<account>.md .\n/cmvalue — Partner Value Audit\nWhat a partner is worth beyond the contract. Part A (commercial: contract, expansion, reference economics) and Part B (strategic: data & domain access, co-development, distribution, brand signal, learning) — then nets value against cost to serve (support burden, customization, discounts, founder time) for a verdict and a maximum-justified-concession number. The best design partner is often not the biggest payer. Saves cmvalue-<account>.md .\n/cmreach — Buyer Outreach Drafter\nTurns a cmmatch report into three outreach variants aimed at the champion — cold email, warm intro request, LinkedIn DM — each built on the account's sourced, specific pain with a low-friction first ask (a short call, never a contract). Stops if the verdict is Pass. Saves cmreach-<account>.md .\n/cmprep — Discovery Call Prep\nA timed agenda, the qualifying questions that confirm pain/budget/authority/timeline/success-criteria, a brief value story, objection handling (including \"we could build this ourselves\"), the deal shape and ask, and the disqualify triggers that tell you to walk. A fast, polite no protects your runway. Saves cmprep-<account>.md .\n/cmdevil — The Skeptical Buyer\nA burned-before enterprise VP asks the 10 hardest deal-ending questions — vendor survival, build-vs-buy, the pilot trap, security, lock-in. Run it before any call; the answers that run out before 30 seconds are the gaps to close. Saves cmdevil.md .\nTips\nKeep STARTUP_PROFILE.md current. As your ICP sharpens, re-run /cmstrat — the anti-patterns list is the most valuable thing it produces.\nRun /cmposer before /cmmatch . An account scoring under 40 is a no — don't invest the relationship time, however shiny the logo.\nNever sign a pilot without a written success definition and a conversion path. Every skill in this toolkit enforces this; it's the single most common early-stage trap.\nWeight design-partner value, not just contract size. /cmvalue exists because the best partner often pays little and teaches a lot.\nA fast, polite no is a win. /cmprep 's disqualify triggers are there to save your runway, not to close every deal.\nUpdate the plugin with new skills by adding SKILL.md files to skills/<name>/ and re-running install.sh .\nLicense\nMIT © 2026 3Flux\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nLicense\nView license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nShell\n100.0%",
+  "clean_text": "maxoliverbr\nclientmate-plugin\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n1 Commit\n1 Commit\n.claude-plugin\n.claude-plugin\nassets\nassets\nskills\nskills\n.gitignore\n.gitignore\nINSTALL.md\nINSTALL.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ninstall.sh\ninstall.sh\nView all files\nRepository files navigation\nClientMate — Design-Partner & Early-Customer Toolkit\nA set of Claude Code Skills that turn your startup profile into a disciplined go-to-market motion for finding the right design partners and early customers — and screening out the ones that quietly kill startups.\nThe wrong early customer is as dangerous as no customer: the tire-kicker with no real pain, the champion with no budget authority, the whale who hijacks your roadmap, the free-pilot-forever logo that never converts, the vanity name that proves nothing because no one there actually uses the product. ClientMate is the bad-fit filter — and the engine for finding the partners who give you revenue, references, data, and learning.\nIt is the sibling of VCupid (fundraising) and Incubae (program evaluation), and reads the same STARTUP_PROFILE.md — maintain one profile, use all three toolkits.\nThe Workflow\nRun commands in this order to build and qualify your design-partner pipeline:\n# 0. Create your STARTUP_PROFILE.md (shared with VCupid and Incubae)\n# 1. Define who you should — and shouldn't — sell to\n/cmstrat\n# 2. Build the target account list\n/cmlist\n# 3. For each Tier 1 account — bad-fit check first:\n/cmposer <account name> # Will this relationship advance or bleed you? Drop if score < 40.\n# 4. For each account that passes (score 60+):\n/cmmatch <account name> # Map the deal, the champion, and the path in\n/cmvalue <account name> # What do they give you beyond revenue, net of cost to serve?\n# 5. Harden your pitch against a real buyer before any call:\n/cmdevil\n# 6. For each account with a /cmmatch \"Pursue\" verdict:\n/cmreach cmmatch-<account>.md # Draft outreach to the champion\n# 7. When a discovery call is booked:\n/cmprep cmmatch-<account>.md\nFile naming convention:\nFile\nPurpose\nSTARTUP_PROFILE.md\nYour startup data — shared across VCupid, Incubae, and ClientMate\ncmstrat.md\nStrategy — your Ideal Design Partner Profile, ICP, asks, anti-patterns\ncmlist.md\nMaster target account pipeline, tiered\ncmposer-<account>.md\nBad-fit check — pain, budget, velocity, roadmap, conversion\ncmmatch-<account>.md\nDeep fit analysis — 7-dimension score, champion map, deal shape\ncmvalue-<account>.md\nValue audit — commercial + strategic, netted against cost to serve\ncmreach-<account>.md\nOutreach to the champion — cold email, warm intro, LinkedIn\ncmprep-<account>.md\nDiscovery call prep + disqualify triggers\ncmdevil.md\nThe skeptical buyer — 10 deal-ending questions\nInstallation\nThese commands install as the clientmate Claude Code plugin (works in any project directory).\n1. Clone the plugin:\ngit clone https://github.com/maxoliverbr/clientmate-plugin.git ~/dev/clientmate\n2. Run the install script:\ncd ~/dev/clientmate && bash install.sh\nThe script registers the plugin in ~/.claude/plugins/installed_plugins.json and enables it in ~/.claude/settings.json . It is idempotent — safe to re-run after updates.\n3. Restart Claude Code. All /cm* commands become available in any directory that contains a STARTUP_PROFILE.md .\nManual installation\nRegister in ~/.claude/plugins/installed_plugins.json :\n\"clientmate@local\": [{\n\"scope\": \"user\",\n\"installPath\": \"/home/<you>/dev/clientmate\",\n\"version\": \"1.0.0\",\n\"installedAt\": \"<ISO timestamp>\",\n\"lastUpdated\": \"<ISO timestamp>\"\n}]\nEnable in ~/.claude/settings.json :\n\"enabledPlugins\": {\n\"clientmate@local\": true\nCommands\n/cmstrat — Design-Partner & Beachhead Strategy\nStart here. Defines the beachhead, a precise Ideal Design Partner Profile and ICP, how many partners to sign and in what order, exactly what to ask each for (with the terms that protect you), and the anti-patterns to refuse — the roadmap hijacker, the no-budget champion, the free-pilot-forever logo. Reads STARTUP_PROFILE.md (+ any cmlist.md , cmmatch-*.md , cmposer-*.md ). Saves cmstrat.md .\n/cmlist — Target Account List\nResearches the beachhead and produces a tiered list of 15–25 candidate accounts ranked by pain acuity, buyability, reference value, reachability, and beachhead fit — each with a likely champion and an entry angle. Saves cmlist.md .\n/cmposer — Bad-Fit Detector\nThe core filter. Eight evidence-based checks — Pain Acuity, Budget & Authority, Decision Velocity, Roadmap Alignment, Conversion Intent, Reference Value, Engagement Capacity, Counterparty Health — scored 0–100. Verdicts: Strong Fit (80–100) , Workable (60–79) , Caution (40–59) , Walk Away (0–39) . A dream logo with low pain can be a Walk Away. Saves cmposer-<account>.md .\ncmposer ≠ cmmatch. Bad-fit Score answers \"will this relationship advance or bleed us?\" cmmatch answers \"what's the deal, who's the champion, what do we propose?\" You need both.\n/cmmatch — Account Fit Analysis\nDeep research on a single account against your profile. Seven-dimension fit score (Pain–Solution 25, Buyability 20, Reference & Strategic Value 15, Champion Strength 15, Roadmap Fit 10, Data/Domain Access 10, Reachability 5), a champion map, the deal shape to propose (with a mandatory written success definition and conversion path), and a Pursue / Nurture / Pass verdict. Saves cmmatch-<account>.md .\n/cmvalue — Partner Value Audit\nWhat a partner is worth beyond the contract. Part A (commercial: contract, expansion, reference economics) and Part B (strategic: data & domain access, co-development, distribution, brand signal, learning) — then nets value against cost to serve (support burden, customization, discounts, founder time) for a verdict and a maximum-justified-concession number. The best design partner is often not the biggest payer. Saves cmvalue-<account>.md .\n/cmreach — Buyer Outreach Drafter\nTurns a cmmatch report into three outreach variants aimed at the champion — cold email, warm intro request, LinkedIn DM — each built on the account's sourced, specific pain with a low-friction first ask (a short call, never a contract). Stops if the verdict is Pass. Saves cmreach-<account>.md .\n/cmprep — Discovery Call Prep\nA timed agenda, the qualifying questions that confirm pain/budget/authority/timeline/success-criteria, a brief value story, objection handling (including \"we could build this ourselves\"), the deal shape and ask, and the disqualify triggers that tell you to walk. A fast, polite no protects your runway. Saves cmprep-<account>.md .\n/cmdevil — The Skeptical Buyer\nA burned-before enterprise VP asks the 10 hardest deal-ending questions — vendor survival, build-vs-buy, the pilot trap, security, lock-in. Run it before any call; the answers that run out before 30 seconds are the gaps to close. Saves cmdevil.md .\nTips\nKeep STARTUP_PROFILE.md current. As your ICP sharpens, re-run /cmstrat — the anti-patterns list is the most valuable thing it produces.\nRun /cmposer before /cmmatch . An account scoring under 40 is a no — don't invest the relationship time, however shiny the logo.\nNever sign a pilot without a written success definition and a conversion path. Every skill in this toolkit enforces this; it's the single most common early-stage trap.\nWeight design-partner value, not just contract size. /cmvalue exists because the best partner often pays little and teaches a lot.\nA fast, polite no is a win. /cmprep 's disqualify triggers are there to save your runway, not to close every deal.\nUpdate the plugin with new skills by adding SKILL.md files to skills/<name>/ and re-running install.sh .\nLicense\nMIT © 2026 3Flux\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nLicense\nView license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nShell\n100.0%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-04/r-025-maxoliverbr-clientmate-plugin.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-04/r-025-maxoliverbr-clientmate-plugin.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 8222,
+    "paragraph_count": 78,
+    "sentence_count": 73,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0071,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 8222,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "a1c0426238bf98c3",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "9b4cfac9414198fe",
+  "content_hash": "a1c0426238bf98c3",
+  "full_text_hash": "a1c0426238bf98c3",
+  "semantic_hash": "bf497c23be0e7fb6",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-04T04:50:50.200Z",
+  "last_seen_at": "2026-07-04T04:50:50.200Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "# maxoliverbr/clientmate-plugin - Stars: 1 - Forks: 0 - Watchers: 1 - Open issues: 0 - License: Other - Default branch: main - Created: 2026-06-08T20:12:36Z ## Languages - Shell ## Top Contributors - maxoliverbr (1 contributions) --- ## README # ClientMate — Design-Partner & Early-Cus... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "maxoliverbr clientmate-plugin Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1 Commit 1 Commit .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "claude-plugin assets assets skills skills .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore INSTALL.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md LICENSE LICENSE README.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "sh View all files Repository files navigation ClientMate — Design-Partner & Early-Customer Toolkit A set of Claude Code Skills that turn your startup profile into a disciplined go-to-market motion for finding the right design partners and early customers — and screening out the ones that quietly kill startups.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-04T04:50:50.200Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub"
+    ],
+    "products": [
+      "claude",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "医疗",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "1",
+      "0",
+      "2026",
+      "06",
+      "08",
+      "20",
+      "12",
+      "36"
+    ],
+    "quotes": [
+      "clientmate@local",
+      "installPath",
+      "/home/<you>/dev/clientmate",
+      "installedAt",
+      "<ISO timestamp>"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "maxoliverbr clientmate-plugin Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1 Commit 1 Commit .",
+      "claude-plugin assets assets skills skills .",
+      "gitignore INSTALL."
+    ],
+    "case_details": [
+      "# maxoliverbr/clientmate-plugin - Stars: 1 - Forks: 0 - Watchers: 1 - Open issues: 0 - License: Other - Default branch: main - Created: 2026-06-08T20:12:36Z ## Languages - Shell ## Top Contributors - maxoliverbr (1 contributions) --- ## README # ClientMate — Design-Partner & Early-Cus... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem",
+      "sh View all files Repository files navigation ClientMate — Design-Partner & Early-Customer Toolkit A set of Claude Code Skills that turn your startup profile into a disciplined go-to-market motion for finding the right design partners and early customers — and screening out the ones that quietly kill startups."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# maxoliverbr/clientmate-plugin\n\n- raw_id: R-025\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://github.com/maxoliverbr/clientmate-plugin\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-04T04:50:50.200Z\n\n## clean_text\n\nmaxoliverbr\nclientmate-plugin\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n1 Commit\n1 Commit\n.claude-plugin\n.claude-plugin\nassets\nassets\nskills\nskills\n.gitignore\n.gitignore\nINSTALL.md\nINSTALL.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ninstall.sh\ninstall.sh\nView all files\nRepository files navigation\nClientMate — Design-Partner & Early-Customer Toolkit\nA set of Claude Code Skills that turn your startup profile into a disciplined go-to-market motion for finding the right design partners and early customers — and screening out the ones that quietly kill startups.\nThe wrong early customer is as dangerous as no customer: the tire-kicker with no real pain, the champion with no budget authority, the whale who hijacks your roadmap, the free-pilot-forever logo that never converts, the vanity name that proves nothing because no one there actually uses the product. ClientMate is the bad-fit filter — and the engine for finding the partners who give you revenue, references, data, and learning.\nIt is the sibling of VCupid (fundraising) and Incubae (program evaluation), and reads the same STARTUP_PROFILE.md — maintain one profile, use all three toolkits.\nThe Workflow\nRun commands in this order to build and qualify your design-partner pipeline:\n# 0. Create your STARTUP_PROFILE.md (shared with VCupid and Incubae)\n# 1. Define who you should — and shouldn't — sell to\n/cmstrat\n# 2. Build the target account list\n/cmlist\n# 3. For each Tier 1 account — bad-fit check first:\n/cmposer <account name> # Will this relationship advance or bleed you? Drop if score < 40.\n# 4. For each account that passes (score 60+):\n/cmmatch <account name> # Map the deal, the champion, and the path in\n/cmvalue <account name> # What do they give you beyond revenue, net of cost to serve?\n# 5. Harden your pitch against a real buyer before any call:\n/cmdevil\n# 6. For each account with a /cmmatch \"Pursue\" verdict:\n/cmreach cmmatch-<account>.md # Draft outreach to the champion\n# 7. When a discovery call is booked:\n/cmprep cmmatch-<account>.md\nFile naming convention:\nFile\nPurpose\nSTARTUP_PROFILE.md\nYour startup data — shared across VCupid, Incubae, and ClientMate\ncmstrat.md\nStrategy — your Ideal Design Partner Profile, ICP, asks, anti-patterns\ncmlist.md\nMaster target account pipeline, tiered\ncmposer-<account>.md\nBad-fit check — pain, budget, velocity, roadmap, conversion\ncmmatch-<account>.md\nDeep fit analysis — 7-dimension score, champion map, deal shape\ncmvalue-<account>.md\nValue audit — commercial + strategic, netted against cost to serve\ncmreach-<account>.md\nOutreach to the champion — cold email, warm intro, LinkedIn\ncmprep-<account>.md\nDiscovery call prep + disqualify triggers\ncmdevil.md\nThe skeptical buyer — 10 deal-ending questions\nInstallation\nThese commands install as the clientmate Claude Code plugin (works in any project directory).\n1. Clone the plugin:\ngit clone https://github.com/maxoliverbr/clientmate-plugin.git ~/dev/clientmate\n2. Run the install script:\ncd ~/dev/clientmate && bash install.sh\nThe script registers the plugin in ~/.claude/plugins/installed_plugins.json and enables it in ~/.claude/settings.json . It is idempotent — safe to re-run after updates.\n3. Restart Claude Code. All /cm* commands become available in any directory that contains a STARTUP_PROFILE.md .\nManual installation\nRegister in ~/.claude/plugins/installed_plugins.json :\n\"clientmate@local\": [{\n\"scope\": \"user\",\n\"installPath\": \"/home/<you>/dev/clientmate\",\n\"version\": \"1.0.0\",\n\"installedAt\": \"<ISO timestamp>\",\n\"lastUpdated\": \"<ISO timestamp>\"\n}]\nEnable in ~/.claude/settings.json :\n\"enabledPlugins\": {\n\"clientmate@local\": true\nCommands\n/cmstrat — Design-Partner & Beachhead Strategy\nStart here. Defines the beachhead, a precise Ideal Design Partner Profile and ICP, how many partners to sign and in what order, exactly what to ask each for (with the terms that protect you), and the anti-patterns to refuse — the roadmap hijacker, the no-budget champion, the free-pilot-forever logo. Reads STARTUP_PROFILE.md (+ any cmlist.md , cmmatch-*.md , cmposer-*.md ). Saves cmstrat.md .\n/cmlist — Target Account List\nResearches the beachhead and produces a tiered list of 15–25 candidate accounts ranked by pain acuity, buyability, reference value, reachability, and beachhead fit — each with a likely champion and an entry angle. Saves cmlist.md .\n/cmposer — Bad-Fit Detector\nThe core filter. Eight evidence-based checks — Pain Acuity, Budget & Authority, Decision Velocity, Roadmap Alignment, Conversion Intent, Reference Value, Engagement Capacity, Counterparty Health — scored 0–100. Verdicts: Strong Fit (80–100) , Workable (60–79) , Caution (40–59) , Walk Away (0–39) . A dream logo with low pain can be a Walk Away. Saves cmposer-<account>.md .\ncmposer ≠ cmmatch. Bad-fit Score answers \"will this relationship advance or bleed us?\" cmmatch answers \"what's the deal, who's the champion, what do we propose?\" You need both.\n/cmmatch — Account Fit Analysis\nDeep research on a single account against your profile. Seven-dimension fit score (Pain–Solution 25, Buyability 20, Reference & Strategic Value 15, Champion Strength 15, Roadmap Fit 10, Data/Domain Access 10, Reachability 5), a champion map, the deal shape to propose (with a mandatory written success definition and conversion path), and a Pursue / Nurture / Pass verdict. Saves cmmatch-<account>.md .\n/cmvalue — Partner Value Audit\nWhat a partner is worth beyond the contract. Part A (commercial: contract, expansion, reference economics) and Part B (strategic: data & domain access, co-development, distribution, brand signal, learning) — then nets value against cost to serve (support burden, customization, discounts, founder time) for a verdict and a maximum-justified-concession number. The best design partner is often not the biggest payer. Saves cmvalue-<account>.md .\n/cmreach — Buyer Outreach Drafter\nTurns a cmmatch report into three outreach variants aimed at the champion — cold email, warm intro request, LinkedIn DM — each built on the account's sourced, specific pain with a low-friction first ask (a short call, never a contract). Stops if the verdict is Pass. Saves cmreach-<account>.md .\n/cmprep — Discovery Call Prep\nA timed agenda, the qualifying questions that confirm pain/budget/authority/timeline/success-criteria, a brief value story, objection handling (including \"we could build this ourselves\"), the deal shape and ask, and the disqualify triggers that tell you to walk. A fast, polite no protects your runway. Saves cmprep-<account>.md .\n/cmdevil — The Skeptical Buyer\nA burned-before enterprise VP asks the 10 hardest deal-ending questions — vendor survival, build-vs-buy, the pilot trap, security, lock-in. Run it before any call; the answers that run out before 30 seconds are the gaps to close. Saves cmdevil.md .\nTips\nKeep STARTUP_PROFILE.md current. As your ICP sharpens, re-run /cmstrat — the anti-patterns list is the most valuable thing it produces.\nRun /cmposer before /cmmatch . An account scoring under 40 is a no — don't invest the relationship time, however shiny the logo.\nNever sign a pilot without a written success definition and a conversion path. Every skill in this toolkit enforces this; it's the single most common early-stage trap.\nWeight design-partner value, not just contract size. /cmvalue exists because the best partner often pays little and teaches a lot.\nA fast, polite no is a win. /cmprep 's disqualify triggers are there to save your runway, not to close every deal.\nUpdate the plugin with new skills by adding SKILL.md files to skills/<name>/ and re-running install.sh .\nLicense\nMIT © 2026 3Flux\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nLicense\nView license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nShell\n100.0%\n\n## full_text\n\nmaxoliverbr\nclientmate-plugin\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n1 Commit\n1 Commit\n.claude-plugin\n.claude-plugin\nassets\nassets\nskills\nskills\n.gitignore\n.gitignore\nINSTALL.md\nINSTALL.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ninstall.sh\ninstall.sh\nView all files\nRepository files navigation\nClientMate — Design-Partner & Early-Customer Toolkit\nA set of Claude Code Skills that turn your startup profile into a disciplined go-to-market motion for finding the right design partners and early customers — and screening out the ones that quietly kill startups.\nThe wrong early customer is as dangerous as no customer: the tire-kicker with no real pain, the champion with no budget authority, the whale who hijacks your roadmap, the free-pilot-forever logo that never converts, the vanity name that proves nothing because no one there actually uses the product. ClientMate is the bad-fit filter — and the engine for finding the partners who give you revenue, references, data, and learning.\nIt is the sibling of VCupid (fundraising) and Incubae (program evaluation), and reads the same STARTUP_PROFILE.md — maintain one profile, use all three toolkits.\nThe Workflow\nRun commands in this order to build and qualify your design-partner pipeline:\n# 0. Create your STARTUP_PROFILE.md (shared with VCupid and Incubae)\n# 1. Define who you should — and shouldn't — sell to\n/cmstrat\n# 2. Build the target account list\n/cmlist\n# 3. For each Tier 1 account — bad-fit check first:\n/cmposer <account name> # Will this relationship advance or bleed you? Drop if score < 40.\n# 4. For each account that passes (score 60+):\n/cmmatch <account name> # Map the deal, the champion, and the path in\n/cmvalue <account name> # What do they give you beyond revenue, net of cost to serve?\n# 5. Harden your pitch against a real buyer before any call:\n/cmdevil\n# 6. For each account with a /cmmatch \"Pursue\" verdict:\n/cmreach cmmatch-<account>.md # Draft outreach to the champion\n# 7. When a discovery call is booked:\n/cmprep cmmatch-<account>.md\nFile naming convention:\nFile\nPurpose\nSTARTUP_PROFILE.md\nYour startup data — shared across VCupid, Incubae, and ClientMate\ncmstrat.md\nStrategy — your Ideal Design Partner Profile, ICP, asks, anti-patterns\ncmlist.md\nMaster target account pipeline, tiered\ncmposer-<account>.md\nBad-fit check — pain, budget, velocity, roadmap, conversion\ncmmatch-<account>.md\nDeep fit analysis — 7-dimension score, champion map, deal shape\ncmvalue-<account>.md\nValue audit — commercial + strategic, netted against cost to serve\ncmreach-<account>.md\nOutreach to the champion — cold email, warm intro, LinkedIn\ncmprep-<account>.md\nDiscovery call prep + disqualify triggers\ncmdevil.md\nThe skeptical buyer — 10 deal-ending questions\nInstallation\nThese commands install as the clientmate Claude Code plugin (works in any project directory).\n1. Clone the plugin:\ngit clone https://github.com/maxoliverbr/clientmate-plugin.git ~/dev/clientmate\n2. Run the install script:\ncd ~/dev/clientmate && bash install.sh\nThe script registers the plugin in ~/.claude/plugins/installed_plugins.json and enables it in ~/.claude/settings.json . It is idempotent — safe to re-run after updates.\n3. Restart Claude Code. All /cm* commands become available in any directory that contains a STARTUP_PROFILE.md .\nManual installation\nRegister in ~/.claude/plugins/installed_plugins.json :\n\"clientmate@local\": [{\n\"scope\": \"user\",\n\"installPath\": \"/home/<you>/dev/clientmate\",\n\"version\": \"1.0.0\",\n\"installedAt\": \"<ISO timestamp>\",\n\"lastUpdated\": \"<ISO timestamp>\"\n}]\nEnable in ~/.claude/settings.json :\n\"enabledPlugins\": {\n\"clientmate@local\": true\nCommands\n/cmstrat — Design-Partner & Beachhead Strategy\nStart here. Defines the beachhead, a precise Ideal Design Partner Profile and ICP, how many partners to sign and in what order, exactly what to ask each for (with the terms that protect you), and the anti-patterns to refuse — the roadmap hijacker, the no-budget champion, the free-pilot-forever logo. Reads STARTUP_PROFILE.md (+ any cmlist.md , cmmatch-*.md , cmposer-*.md ). Saves cmstrat.md .\n/cmlist — Target Account List\nResearches the beachhead and produces a tiered list of 15–25 candidate accounts ranked by pain acuity, buyability, reference value, reachability, and beachhead fit — each with a likely champion and an entry angle. Saves cmlist.md .\n/cmposer — Bad-Fit Detector\nThe core filter. Eight evidence-based checks — Pain Acuity, Budget & Authority, Decision Velocity, Roadmap Alignment, Conversion Intent, Reference Value, Engagement Capacity, Counterparty Health — scored 0–100. Verdicts: Strong Fit (80–100) , Workable (60–79) , Caution (40–59) , Walk Away (0–39) . A dream logo with low pain can be a Walk Away. Saves cmposer-<account>.md .\ncmposer ≠ cmmatch. Bad-fit Score answers \"will this relationship advance or bleed us?\" cmmatch answers \"what's the deal, who's the champion, what do we propose?\" You need both.\n/cmmatch — Account Fit Analysis\nDeep research on a single account against your profile. Seven-dimension fit score (Pain–Solution 25, Buyability 20, Reference & Strategic Value 15, Champion Strength 15, Roadmap Fit 10, Data/Domain Access 10, Reachability 5), a champion map, the deal shape to propose (with a mandatory written success definition and conversion path), and a Pursue / Nurture / Pass verdict. Saves cmmatch-<account>.md .\n/cmvalue — Partner Value Audit\nWhat a partner is worth beyond the contract. Part A (commercial: contract, expansion, reference economics) and Part B (strategic: data & domain access, co-development, distribution, brand signal, learning) — then nets value against cost to serve (support burden, customization, discounts, founder time) for a verdict and a maximum-justified-concession number. The best design partner is often not the biggest payer. Saves cmvalue-<account>.md .\n/cmreach — Buyer Outreach Drafter\nTurns a cmmatch report into three outreach variants aimed at the champion — cold email, warm intro request, LinkedIn DM — each built on the account's sourced, specific pain with a low-friction first ask (a short call, never a contract). Stops if the verdict is Pass. Saves cmreach-<account>.md .\n/cmprep — Discovery Call Prep\nA timed agenda, the qualifying questions that confirm pain/budget/authority/timeline/success-criteria, a brief value story, objection handling (including \"we could build this ourselves\"), the deal shape and ask, and the disqualify triggers that tell you to walk. A fast, polite no protects your runway. Saves cmprep-<account>.md .\n/cmdevil — The Skeptical Buyer\nA burned-before enterprise VP asks the 10 hardest deal-ending questions — vendor survival, build-vs-buy, the pilot trap, security, lock-in. Run it before any call; the answers that run out before 30 seconds are the gaps to close. Saves cmdevil.md .\nTips\nKeep STARTUP_PROFILE.md current. As your ICP sharpens, re-run /cmstrat — the anti-patterns list is the most valuable thing it produces.\nRun /cmposer before /cmmatch . An account scoring under 40 is a no — don't invest the relationship time, however shiny the logo.\nNever sign a pilot without a written success definition and a conversion path. Every skill in this toolkit enforces this; it's the single most common early-stage trap.\nWeight design-partner value, not just contract size. /cmvalue exists because the best partner often pays little and teaches a lot.\nA fast, polite no is a win. /cmprep 's disqualify triggers are there to save your runway, not to close every deal.\nUpdate the plugin with new skills by adding SKILL.md files to skills/<name>/ and re-running install.sh .\nLicense\nMIT © 2026 3Flux\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nLicense\nView license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nShell\n100.0%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] # maxoliverbr/clientmate-plugin - Stars: 1 - Forks: 0 - Watchers: 1 - Open issues: 0 - License: Other - Default branch: main - Created: 2026-06-08T20:12:36Z ## Languages - Shell ## Top Contributors - maxoliverbr (1 contributions) --- ## README # ClientMate — Design-Partner & Early-Cus... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] maxoliverbr clientmate-plugin Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1 Commit 1 Commit .\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] claude-plugin assets assets skills skills .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] gitignore INSTALL.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] md LICENSE LICENSE README.\n6. [case_detail / signal_card_candidate, relationship_graph_input, case / high] sh View all files Repository files navigation ClientMate — Design-Partner & Early-Customer Toolkit A set of Claude Code Skills that turn your startup profile into a disciplined go-to-market motion for finding the right design partners and early customers — and screening out the ones that quietly kill startups.\n"
+}
