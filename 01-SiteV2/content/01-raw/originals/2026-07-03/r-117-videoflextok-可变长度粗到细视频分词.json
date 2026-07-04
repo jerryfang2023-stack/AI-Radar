@@ -1,0 +1,260 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-117",
+  "title": "VideoFlexTok：可变长度粗到细视频分词",
+  "title_zh": "VideoFlexTok：可变长度粗到细视频分词",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "",
+  "canonical_url": "",
+  "source_name": "Apple Machine Learning Research（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "official_index_or_directory",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": true,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-03T01:59:31.597Z",
+  "language": "mixed",
+  "full_text": "VideoFlexTok提出一种可变长度token序列的视频表示方法，采用粗到细结构——首个token捕捉语义和运动等抽象信息，后续token添加精细细节，生成流解码器支持任意token数量的视频重建。相比传统3D网格分词，该结构允许根据下游需求调整token数，在相同预算下编码更长视频。在类别和文本到视频生成任务中，VideoFlexTok以1.1B参数（5.2B的1/5）达到可比生成质量（gFVD和ViCLIP Score）。训练一个处理10秒81帧视频的文本到视频模型仅需672个token，比同等3D网格分词器少8倍。",
+  "clean_text": "VideoFlexTok提出一种可变长度token序列的视频表示方法，采用粗到细结构——首个token捕捉语义和运动等抽象信息，后续token添加精细细节，生成流解码器支持任意token数量的视频重建。相比传统3D网格分词，该结构允许根据下游需求调整token数，在相同预算下编码更长视频。在类别和文本到视频生成任务中，VideoFlexTok以1.1B参数（5.2B的1/5）达到可比生成质量（gFVD和ViCLIP Score）。训练一个处理10秒81帧视频的文本到视频模型仅需672个token，比同等3D网格分词器少8倍。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-03/r-117-videoflextok-可变长度粗到细视频分词.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-03/r-117-videoflextok-可变长度粗到细视频分词.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "no-url-summary-only",
+  "extraction_quality": "failed",
+  "extraction_method": "no_url_summary_fallback",
+  "readability_score": 0,
+  "extractor_diagnostics": {
+    "method": "no_url_summary_fallback"
+  },
+  "has_full_text": false,
+  "content_length": 265,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "missing",
+    "full_text_status": "missing_or_summary_only",
+    "snapshot_status": "missing_or_fetch_failed",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "8e3080fe92746331",
+    "missing": [
+      "missing_original_url",
+      "missing_full_text",
+      "missing_snapshot"
+    ]
+  },
+  "raw_qc_decision": "block",
+  "raw_qc_downstream_use": "not_allowed",
+  "degradation_reasons": [
+    "index_only_or_directory_page",
+    "missing_full_text",
+    "missing_snapshot"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "summary_only",
+  "visible_range": "采集通道提供的标题与摘要",
+  "evidence_level": "discovery_only",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "VideoFlexTok：可变长度粗到细视频分词",
+    "discovery_summary": "VideoFlexTok提出一种可变长度token序列的视频表示方法，采用粗到细结构——首个token捕捉语义和运动等抽象信息，后续token添加精细细节，生成流解码器支持任意token数量的视频重建。相比传统3D网格分词，该结构允许根据下游需求调整token数，在相同预算下编码更长视频。在类别和文本到视频生成任务中，VideoFlexTok以1.1B参数（5.2B的1/5）达到可比生成质量（gFVD和ViCLIP Score）。训练一个处理10秒81帧视频的文本到视频模型仅需672个token，比同等3D网格分词器少8倍。",
+    "source_name": "Apple Machine Learning Research（RSS）",
+    "origin_url": "",
+    "discovered_at": "2026-07-03T01:49:50.173Z",
+    "rank_on_page": 17,
+    "discovery_status": "discovered"
+  },
+  "source_role": "discovery_source",
+  "origin_fetch_status": "summary_only",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "e3b0c44298fc1c14",
+  "content_hash": "8e3080fe92746331",
+  "full_text_hash": "8e3080fe92746331",
+  "semantic_hash": "040a21bfc5552293",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-03T01:59:31.597Z",
+  "last_seen_at": "2026-07-03T01:59:31.597Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "VideoFlexTok提出一种可变长度token序列的视频表示方法，采用粗到细结构——首个token捕捉语义和运动等抽象信息，后续token添加精细细节，生成流解码器支持任意token数量的视频重建。相比传统3D网格分词，该结构允许根据下游需求调整token数，在相同预算下编码更长视频。在类别和文本到视频生成任务中，VideoFlexTok以1.1B参数（5.2B的1/5）达到可比生成质量（gFVD和ViCLIP Score）。训练一个处理10秒81帧视频的文本到视频模型仅需672个token，比同等3D网格分词器少8倍。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "case_detail",
+      "text": "VideoFlexTok提出一种可变长度token序列的视频表示方法，采用粗到细结构——首个token捕捉语义和运动等抽象信息，后续token添加精细细节，生成流解码器支持任意token数量的视频重建。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "相比传统3D网格分词，该结构允许根据下游需求调整token数，在相同预算下编码更长视频。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "在类别和文本到视频生成任务中，VideoFlexTok以1.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "2B的1/5）达到可比生成质量（gFVD和ViCLIP Score）。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "训练一个处理10秒81帧视频的文本到视频模型仅需672个token，比同等3D网格分词器少8倍。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-03T01:59:31.597Z",
+  "business_elements": {
+    "companies": [
+      "Apple Machine Learning Research（RSS）"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [],
+    "roles": [],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "3",
+      "1.1B",
+      "5.2B",
+      "1",
+      "5",
+      "10",
+      "81",
+      "672"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "相比传统3D网格分词，该结构允许根据下游需求调整token数，在相同预算下编码更长视频。",
+      "在类别和文本到视频生成任务中，VideoFlexTok以1.",
+      "2B的1/5）达到可比生成质量（gFVD和ViCLIP Score）。"
+    ],
+    "case_details": [
+      "VideoFlexTok提出一种可变长度token序列的视频表示方法，采用粗到细结构——首个token捕捉语义和运动等抽象信息，后续token添加精细细节，生成流解码器支持任意token数量的视频重建。"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 4,
+    "importance_reason": "technical trend or capability shift; rubric=4 concrete important change",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 2,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "疑似官网首页、产品目录或导航页，只能索引留存",
+    "没有可用全文快照"
+  ],
+  "raw_status": "ignored",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# VideoFlexTok：可变长度粗到细视频分词\n\n- raw_id: R-117\n- title_zh: VideoFlexTok：可变长度粗到细视频分词\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: no-url\n- source_name: Apple Machine Learning Research（RSS）\n- collected_at: 2026-07-03T01:59:31.597Z\n\n## clean_text\n\nVideoFlexTok提出一种可变长度token序列的视频表示方法，采用粗到细结构——首个token捕捉语义和运动等抽象信息，后续token添加精细细节，生成流解码器支持任意token数量的视频重建。相比传统3D网格分词，该结构允许根据下游需求调整token数，在相同预算下编码更长视频。在类别和文本到视频生成任务中，VideoFlexTok以1.1B参数（5.2B的1/5）达到可比生成质量（gFVD和ViCLIP Score）。训练一个处理10秒81帧视频的文本到视频模型仅需672个token，比同等3D网格分词器少8倍。\n\n## full_text\n\nVideoFlexTok提出一种可变长度token序列的视频表示方法，采用粗到细结构——首个token捕捉语义和运动等抽象信息，后续token添加精细细节，生成流解码器支持任意token数量的视频重建。相比传统3D网格分词，该结构允许根据下游需求调整token数，在相同预算下编码更长视频。在类别和文本到视频生成任务中，VideoFlexTok以1.1B参数（5.2B的1/5）达到可比生成质量（gFVD和ViCLIP Score）。训练一个处理10秒81帧视频的文本到视频模型仅需672个token，比同等3D网格分词器少8倍。\n\n## extraction_diagnostics\n\n- extraction_method: no_url_summary_fallback\n- readability_score: 0\n- fetch_status: no-url-summary-only\n- extraction_quality: failed\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] VideoFlexTok提出一种可变长度token序列的视频表示方法，采用粗到细结构——首个token捕捉语义和运动等抽象信息，后续token添加精细细节，生成流解码器支持任意token数量的视频重建。相比传统3D网格分词，该结构允许根据下游需求调整token数，在相同预算下编码更长视频。在类别和文本到视频生成任务中，VideoFlexTok以1.1B参数（5.2B的1/5）达到可比生成质量（gFVD和ViCLIP Score）。训练一个处理10秒81帧视频的文本到视频模型仅需672个token，比同等3D网格分词器少8倍。\n2. [case_detail / signal_card_candidate, relationship_graph_input, case / high] VideoFlexTok提出一种可变长度token序列的视频表示方法，采用粗到细结构——首个token捕捉语义和运动等抽象信息，后续token添加精细细节，生成流解码器支持任意token数量的视频重建。\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 相比传统3D网格分词，该结构允许根据下游需求调整token数，在相同预算下编码更长视频。\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 在类别和文本到视频生成任务中，VideoFlexTok以1.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 2B的1/5）达到可比生成质量（gFVD和ViCLIP Score）。\n6. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 训练一个处理10秒81帧视频的文本到视频模型仅需672个token，比同等3D网格分词器少8倍。\n"
+}

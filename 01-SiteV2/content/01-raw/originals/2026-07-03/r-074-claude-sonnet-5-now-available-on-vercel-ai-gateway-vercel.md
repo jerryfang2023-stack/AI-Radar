@@ -1,0 +1,239 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-074
+title: "Claude Sonnet 5 now available on Vercel AI Gateway - Vercel"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://vercel.com/changelog/claude-sonnet-5-ai-gateway"
+canonical_url: "https://vercel.com/changelog/claude-sonnet-5-ai-gateway"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: changelog_or_release
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-03T01:59:31.530Z
+language: mixed
+full_text_hash: c10ebb8aae44c23b
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-03/r-074-claude-sonnet-5-now-available-on-vercel-ai-gateway-vercel.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-03/r-074-claude-sonnet-5-now-available-on-vercel-ai-gateway-vercel.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: medium
+extraction_method: "article"
+readability_score: 70
+extractor_diagnostics: {"readability_score":70,"text_length":1708,"paragraph_count":17,"sentence_count":12,"boilerplate_hits":0,"symbol_ratio":0.0064,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 1708
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c10ebb8aae44c23b","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 1962571b33197f72
+content_hash: c10ebb8aae44c23b
+semantic_hash: 04c18cbc29ff314c
+duplicate_of: ""
+first_seen_at: "2026-07-03T01:59:31.530Z"
+last_seen_at: 2026-07-03T01:59:31.530Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","Anthropic"],"products":["Claude","claude"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["5","30","2026","4.6","$2","$10","31","$3"],"quotes":[]}
+evidence_seed: {"company_actions":["Claude Sonnet 5 from Anthropic is now available on AI Gateway .","Sonnet 5 improves on Sonnet 4.","6 across coding and agentic work, reaching outcomes on many tasks that previously needed an Opus model, at Sonnet pricing."],"case_details":["# Claude Sonnet 5 now available on Vercel AI Gateway Published: June 30, 2026 | Authors: Rohan Taneja, Jerilyn Zheng --- Claude Sonnet 5 from Anthropic is now available on AI Gateway. Sonnet 5 improves on Sonnet 4.6 across coding and agentic work, reaching outcomes on many tasks that previously n... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"# Claude Sonnet 5 now available on Vercel AI Gateway Published: June 30, 2026 | Authors: Rohan Taneja, Jerilyn Zheng --- Claude Sonnet 5 from Anthropic is now available on AI Gateway. Sonnet 5 improves on Sonnet 4.6 across coding and agentic work, reaching outcomes on many tasks that previously n... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Claude Sonnet 5 from Anthropic is now available on AI Gateway .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Sonnet 5 improves on Sonnet 4.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6 across coding and agentic work, reaching outcomes on many tasks that previously needed an Opus model, at Sonnet pricing.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"The model is more agentic and follows instructions more closely.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Document parsing and long-context memory use are also stronger.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-03T01:59:31.530Z
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Claude Sonnet 5 now available on Vercel AI Gateway - Vercel
+
+## clean_text
+
+Claude Sonnet 5 from Anthropic is now available on AI Gateway . Sonnet 5 improves on Sonnet 4.6 across coding and agentic work, reaching outcomes on many tasks that previously needed an Opus model, at Sonnet pricing.
+The model is more agentic and follows instructions more closely. Document parsing and long-context memory use are also stronger. Sonnet 5 also uses an updated tokenizer, like the recent Opus models, which can map the same input to more tokens.
+Launch pricing of $2 per million input tokens and $10 per million output tokens runs through August 31, 2026. Standard list price will be $3/M input tokens, $15/M output tokens.
+To use Sonnet 5, set model to anthropic/claude-sonnet-5 in the AI SDK :
+1 import { streamText } from 'ai' ;
+3 const result = streamText ( {
+4 model : 'anthropic/claude-sonnet-5' ,
+5 prompt : 'Refactor this module and add tests for the edge cases.' ,
+6 providerOptions : {
+7 anthropic : {
+8 thinking : { type : 'adaptive' } ,
+9 effort : 'medium' ,
+10 } ,
+11 } ,
+12 } ) ;
+You can also try Sonnet 5 in the model playground .
+AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , and more.
+AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests.
+AI Gateway: Track top AI models by usage
+The AI Gateway model leaderboard tracks the most popular models over time, ranking them by the total volume of tokens processed across all Gateway traffic.
+View the leaderboard
+
+## full_text
+
+Claude Sonnet 5 from Anthropic is now available on AI Gateway . Sonnet 5 improves on Sonnet 4.6 across coding and agentic work, reaching outcomes on many tasks that previously needed an Opus model, at Sonnet pricing.
+The model is more agentic and follows instructions more closely. Document parsing and long-context memory use are also stronger. Sonnet 5 also uses an updated tokenizer, like the recent Opus models, which can map the same input to more tokens.
+Launch pricing of $2 per million input tokens and $10 per million output tokens runs through August 31, 2026. Standard list price will be $3/M input tokens, $15/M output tokens.
+To use Sonnet 5, set model to anthropic/claude-sonnet-5 in the AI SDK :
+1 import { streamText } from 'ai' ;
+3 const result = streamText ( {
+4 model : 'anthropic/claude-sonnet-5' ,
+5 prompt : 'Refactor this module and add tests for the edge cases.' ,
+6 providerOptions : {
+7 anthropic : {
+8 thinking : { type : 'adaptive' } ,
+9 effort : 'medium' ,
+10 } ,
+11 } ,
+12 } ) ;
+You can also try Sonnet 5 in the model playground .
+AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , and more.
+AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests.
+AI Gateway: Track top AI models by usage
+The AI Gateway model leaderboard tracks the most popular models over time, ranking them by the total volume of tokens processed across all Gateway traffic.
+View the leaderboard
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 70
+- fetch_status: fetched-readable-text-article
+- extraction_quality: medium
+- diagnostics: {"readability_score":70,"text_length":1708,"paragraph_count":17,"sentence_count":12,"boilerplate_hits":0,"symbol_ratio":0.0064,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   # Claude Sonnet 5 now available on Vercel AI Gateway Published: June 30, 2026 | Authors: Rohan Taneja, Jerilyn Zheng --- Claude Sonnet 5 from Anthropic is now available on AI Gateway. Sonnet 5 improves on Sonnet 4.6 across coding and agentic work, reaching outcomes on many tasks that previously n... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   Claude Sonnet 5 from Anthropic is now available on AI Gateway .
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   Sonnet 5 improves on Sonnet 4.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   6 across coding and agentic work, reaching outcomes on many tasks that previously needed an Opus model, at Sonnet pricing.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   The model is more agentic and follows instructions more closely.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   Document parsing and long-context memory use are also stronger.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Anthropic
+- products: Claude, claude
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 5, 30, 2026, 4.6, $2, $10, 31, $3
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Claude Sonnet 5 from Anthropic is now available on AI Gateway . / Sonnet 5 improves on Sonnet 4. / 6 across coding and agentic work, reaching outcomes on many tasks that previously needed an Opus model, at Sonnet pricing.
+- case_details: # Claude Sonnet 5 now available on Vercel AI Gateway Published: June 30, 2026 | Authors: Rohan Taneja, Jerilyn Zheng --- Claude Sonnet 5 from Anthropic is now available on AI Gateway. Sonnet 5 improves on Sonnet 4.6 across coding and agentic work, reaching outcomes on many tasks that previously n... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+# Claude Sonnet 5 now available on Vercel AI Gateway Published: June 30, 2026 | Authors: Rohan Taneja, Jerilyn Zheng --- Claude Sonnet 5 from Anthropic is now available on AI Gateway. Sonnet 5 improves on Sonnet 4.6 across coding and agentic work, reaching outcomes on many tasks that previously n... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

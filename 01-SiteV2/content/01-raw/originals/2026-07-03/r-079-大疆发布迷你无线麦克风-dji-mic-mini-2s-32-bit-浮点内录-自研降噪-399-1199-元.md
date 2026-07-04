@@ -1,0 +1,226 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-079
+title: "大疆发布迷你无线麦克风 DJI Mic Mini 2S：32-bit 浮点内录、自研降噪，399-1199 元"
+title_zh: "大疆发布迷你无线麦克风 DJI Mic Mini 2S：32-bit 浮点内录、自研降噪，399-1199 元"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/971/886.htm"
+canonical_url: "https://ithome.com/0/971/886.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-02T12:00:00.000Z"
+collected_at: 2026-07-03T01:59:31.540Z
+language: mixed
+full_text_hash: c566691c38053288
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-03/r-079-大疆发布迷你无线麦克风-dji-mic-mini-2s-32-bit-浮点内录-自研降噪-399-1199-元.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-03/r-079-大疆发布迷你无线麦克风-dji-mic-mini-2s-32-bit-浮点内录-自研降噪-399-1199-元.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 61
+extractor_diagnostics: {"readability_score":61,"text_length":1440,"paragraph_count":15,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0.0014,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1440
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c566691c38053288","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"大疆发布迷你无线麦克风 DJI Mic Mini 2S：32-bit 浮点内录、自研降噪，399-1199 元","discovery_summary":"7月2日，大疆推出 DJI Mic Mini 2S 迷你无线麦克风。发射器重约12克，支持32-bit浮点内录和14.5GB存储（28小时循环内录），内置自研降噪模型，提供强、弱两级AI降噪。单次续航11小时，搭配充电盒总续航约40小时。接收器最多同时连接四个发射器，支持单声道、立体声和四声道模式，无线传输距离最远400米。发射器支持蓝牙直连手机，并可直连Osmo Pocket 4等DJI设备。一拖二套装（含充电盒）1199元，一拖一套装629元，手机版一拖一套装629元，单发射器399元。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/971/886.htm","discovered_at":"2026-07-03T01:49:51.291Z","rank_on_page":180,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: bbe7a59846924f89
+content_hash: c566691c38053288
+semantic_hash: bf8d62542e3b3893
+duplicate_of: ""
+first_seen_at: "2026-07-02T12:00:00.000Z"
+last_seen_at: 2026-07-03T01:59:31.540Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_market_structure","importance_score":4,"importance_reason":"market-structure commercial event; rubric=4 concrete important change","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["IT / 安全"],"numbers":["2","32","399","1199","7","12","14.5","28"],"quotes":[]}
+evidence_seed: {"company_actions":["7月2日，大疆推出 DJI Mic Mini 2S 迷你无线麦克风。发射器重约12克，支持32-bit浮点内录和14.5GB存储（28小时循环内录），内置自研降噪模型，提供强、弱两级AI降噪。单次续航11小时，搭配充电盒总续航约40小时。接收器最多同时连接四个发射器，支持单声道、立体声和四声道模式，无线传输距离最远400米。发射器支持蓝牙直连手机，并可直连Osmo Pocket 4等DJI设备。一拖二套装（含充电盒）1199元，一拖一套装629元，手机版一拖一套装629元，单发射器399元。","5GB 存储空间，在默认 24-bit 规格下支持长达 28 小时的循环内录。","同时，该发射器支持 32-bit 浮点内录，动态范围更宽，从低声细语到突发巨响，巨大声音落差均可完整留存。"],"case_details":["IT之家 7 月 2 日消息，大疆今天正式推出了全新四发内录迷你无线麦克风 DJI Mic Mini 2S，该产品主打 32-bit 浮点内录与 28 小时内录存储、四发一收混连叠加 DJI OsmoAudio 生态直连，同时内置了 DJI 自研降噪模型，IT之家整理价格如下： DJI Mic Mini 2S（一拖二，含充电盒）套装：售价 1199 元，内含 1 套 DJI Mic Mini 2S 多色磁吸前盖 DJI Mic Mini 2S（一拖一）套装：售价 629 元 DJI Mic Mini 2S（手机版一拖一，含充电盒）套装：售价 629 元 DJI Mic Mini 2S 发射器：售价 399 元 艺术家合作款 DJI Mic Mini 2S 时光系列磁吸前盖：售价 199 元 京东 大疆 DJI Mic Mini 2S 399-1199 元 直达链接 据官方介绍，DJI Mic Mini 2S 发射器重量约 12 克，磁吸背夹可拆卸、可旋转，磁吸前盖采用可拆设计，标配墨曜黑与云璃白两款经典配色，另有 8 种配色前盖及 5 种颜色防风毛套可选。"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有变化前后流程线索"]
+key_excerpts: [{"type":"product_update","text":"7月2日，大疆推出 DJI Mic Mini 2S 迷你无线麦克风。发射器重约12克，支持32-bit浮点内录和14.5GB存储（28小时循环内录），内置自研降噪模型，提供强、弱两级AI降噪。单次续航11小时，搭配充电盒总续航约40小时。接收器最多同时连接四个发射器，支持单声道、立体声和四声道模式，无线传输距离最远400米。发射器支持蓝牙直连手机，并可直连Osmo Pocket 4等DJI设备。一拖二套装（含充电盒）1199元，一拖一套装629元，手机版一拖一套装629元，单发射器399元。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"IT之家 7 月 2 日消息，大疆今天正式推出了全新四发内录迷你无线麦克风 DJI Mic Mini 2S，该产品主打 32-bit 浮点内录与 28 小时内录存储、四发一收混连叠加 DJI OsmoAudio 生态直连，同时内置了 DJI 自研降噪模型，IT之家整理价格如下： DJI Mic Mini 2S（一拖二，含充电盒）套装：售价 1199 元，内含 1 套 DJI Mic Mini 2S 多色磁吸前盖 DJI Mic Mini 2S（一拖一）套装：售价 629 元 DJI Mic Mini 2S（手机版一拖一，含充电盒）套装：售价 629 元 DJI Mic Mini 2S 发射器：售价 399 元 艺术家合作款 DJI Mic Mini 2S 时光系列磁吸前盖：售价 199 元 京东 大疆 DJI Mic Mini 2S 399-1199 元 直达链接 据官方介绍，DJI Mic Mini 2S 发射器重量约 12 克，磁吸背夹可拆卸、可旋转，磁吸前盖采用可拆设计，标配墨曜黑与云璃白两款经典配色，另有 8 种配色前盖及 5 种颜色防风毛套可选。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"5GB 存储空间，在默认 24-bit 规格下支持长达 28 小时的循环内录。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"同时，该发射器支持 32-bit 浮点内录，动态范围更宽，从低声细语到突发巨响，巨大声音落差均可完整留存。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"内录文件支持原始文件与处理文件两种模式，处理文件便于直出，原始文件为后期保留更大操作空间。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"此外，该发射器还可作为独立录音笔使用，随时记录会议访谈、课堂笔记或灵感片段。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-03T01:59:31.540Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 大疆发布迷你无线麦克风 DJI Mic Mini 2S：32-bit 浮点内录、自研降噪，399-1199 元
+
+## clean_text
+
+IT之家 7 月 2 日消息，大疆今天正式推出了全新四发内录迷你无线麦克风 DJI Mic Mini 2S，该产品主打 32-bit 浮点内录与 28 小时内录存储、四发一收混连叠加 DJI OsmoAudio 生态直连，同时内置了 DJI 自研降噪模型，IT之家整理价格如下：
+DJI Mic Mini 2S（一拖二，含充电盒）套装：售价 1199 元，内含 1 套 DJI Mic Mini 2S 多色磁吸前盖
+DJI Mic Mini 2S（一拖一）套装：售价 629 元
+DJI Mic Mini 2S（手机版一拖一，含充电盒）套装：售价 629 元
+DJI Mic Mini 2S 发射器：售价 399 元
+艺术家合作款 DJI Mic Mini 2S 时光系列磁吸前盖：售价 199 元
+京东 大疆 DJI Mic Mini 2S 399-1199 元 直达链接
+据官方介绍，DJI Mic Mini 2S 发射器重量约 12 克，磁吸背夹可拆卸、可旋转，磁吸前盖采用可拆设计，标配墨曜黑与云璃白两款经典配色，另有 8 种配色前盖及 5 种颜色防风毛套可选。发射器内置 14.5GB 存储空间，在默认 24-bit 规格下支持长达 28 小时的循环内录。
+同时，该发射器支持 32-bit 浮点内录，动态范围更宽，从低声细语到突发巨响，巨大声音落差均可完整留存。内录文件支持原始文件与处理文件两种模式，处理文件便于直出，原始文件为后期保留更大操作空间。
+此外，该发射器还可作为独立录音笔使用，随时记录会议访谈、课堂笔记或灵感片段。发射器无需外接接收器，即可直连 Osmo Pocket 4、Osmo 360、Osmo Nano、Osmo Action 6 等 DJI 影像设备。
+DJI Mic Mini 2S 的接收器最多可同时连接四个发射器（支持与初代 / Mini 2 发射器混连），支持单声道、立体声和四声道模式，选择四声道模式后，可实现四路音轨独立输出，为后期精细分轨与灵活混音提供更广阔空间。
+相应接收器兼容相机、手机、电脑及平板等多种终端，通过 DJI Mic 系列热靴转接件直连索尼相机时，可实现四路独立音轨数字收音，并支持相机为接收器供电及同步开关机 [1]。发射器还支持蓝牙直连手机，无需接收器即可适配第三方拍摄或直播软件。使用相机版接收器时，无线传输距离最远可达 400 米/
+官方同时强调，大疆 DJI Mic Mini 2S 搭载 DJI 自研降噪模型，可实现强、弱两级 AI 降噪精准剥离并抑制不同噪声，其中弱降噪适合室内较安静的环境，有效消减风扇、空调、混响等背景音；强降噪针对室外嘈杂环境，可大幅抑制车流声、汽笛声等噪声，帮助人声保持清晰通透。
+续航方面，DJI Mic Mini 2S 发射器单次续航可达 11 小时，接收器续航可达 10 小时，搭配满电充电盒可实现最长约 40 小时总续航，可覆盖长时间创作与直播需求。支持快速充电，充电仅 5 分钟即可续航约 1 小时。发射器未检测到接收器信号时自动休眠、检测到信号后自动唤醒，长时间穿戴无需频繁开关机；接收器连接手机时可由手机为其供电，通过 USB-C 接口连接外部电源时还可同时为手机充电，满足直播、多人播客等长时间使用需求。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 2 日消息，大疆今天正式推出了全新四发内录迷你无线麦克风 DJI Mic Mini 2S，该产品主打 32-bit 浮点内录与 28 小时内录存储、四发一收混连叠加 DJI OsmoAudio 生态直连，同时内置了 DJI 自研降噪模型，IT之家整理价格如下：
+DJI Mic Mini 2S（一拖二，含充电盒）套装：售价 1199 元，内含 1 套 DJI Mic Mini 2S 多色磁吸前盖
+DJI Mic Mini 2S（一拖一）套装：售价 629 元
+DJI Mic Mini 2S（手机版一拖一，含充电盒）套装：售价 629 元
+DJI Mic Mini 2S 发射器：售价 399 元
+艺术家合作款 DJI Mic Mini 2S 时光系列磁吸前盖：售价 199 元
+京东 大疆 DJI Mic Mini 2S 399-1199 元 直达链接
+据官方介绍，DJI Mic Mini 2S 发射器重量约 12 克，磁吸背夹可拆卸、可旋转，磁吸前盖采用可拆设计，标配墨曜黑与云璃白两款经典配色，另有 8 种配色前盖及 5 种颜色防风毛套可选。发射器内置 14.5GB 存储空间，在默认 24-bit 规格下支持长达 28 小时的循环内录。
+同时，该发射器支持 32-bit 浮点内录，动态范围更宽，从低声细语到突发巨响，巨大声音落差均可完整留存。内录文件支持原始文件与处理文件两种模式，处理文件便于直出，原始文件为后期保留更大操作空间。
+此外，该发射器还可作为独立录音笔使用，随时记录会议访谈、课堂笔记或灵感片段。发射器无需外接接收器，即可直连 Osmo Pocket 4、Osmo 360、Osmo Nano、Osmo Action 6 等 DJI 影像设备。
+DJI Mic Mini 2S 的接收器最多可同时连接四个发射器（支持与初代 / Mini 2 发射器混连），支持单声道、立体声和四声道模式，选择四声道模式后，可实现四路音轨独立输出，为后期精细分轨与灵活混音提供更广阔空间。
+相应接收器兼容相机、手机、电脑及平板等多种终端，通过 DJI Mic 系列热靴转接件直连索尼相机时，可实现四路独立音轨数字收音，并支持相机为接收器供电及同步开关机 [1]。发射器还支持蓝牙直连手机，无需接收器即可适配第三方拍摄或直播软件。使用相机版接收器时，无线传输距离最远可达 400 米/
+官方同时强调，大疆 DJI Mic Mini 2S 搭载 DJI 自研降噪模型，可实现强、弱两级 AI 降噪精准剥离并抑制不同噪声，其中弱降噪适合室内较安静的环境，有效消减风扇、空调、混响等背景音；强降噪针对室外嘈杂环境，可大幅抑制车流声、汽笛声等噪声，帮助人声保持清晰通透。
+续航方面，DJI Mic Mini 2S 发射器单次续航可达 11 小时，接收器续航可达 10 小时，搭配满电充电盒可实现最长约 40 小时总续航，可覆盖长时间创作与直播需求。支持快速充电，充电仅 5 分钟即可续航约 1 小时。发射器未检测到接收器信号时自动休眠、检测到信号后自动唤醒，长时间穿戴无需频繁开关机；接收器连接手机时可由手机为其供电，通过 USB-C 接口连接外部电源时还可同时为手机充电，满足直播、多人播客等长时间使用需求。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 61
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":61,"text_length":1440,"paragraph_count":15,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0.0014,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   7月2日，大疆推出 DJI Mic Mini 2S 迷你无线麦克风。发射器重约12克，支持32-bit浮点内录和14.5GB存储（28小时循环内录），内置自研降噪模型，提供强、弱两级AI降噪。单次续航11小时，搭配充电盒总续航约40小时。接收器最多同时连接四个发射器，支持单声道、立体声和四声道模式，无线传输距离最远400米。发射器支持蓝牙直连手机，并可直连Osmo Pocket 4等DJI设备。一拖二套装（含充电盒）1199元，一拖一套装629元，手机版一拖一套装629元，单发射器399元。
+
+2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   IT之家 7 月 2 日消息，大疆今天正式推出了全新四发内录迷你无线麦克风 DJI Mic Mini 2S，该产品主打 32-bit 浮点内录与 28 小时内录存储、四发一收混连叠加 DJI OsmoAudio 生态直连，同时内置了 DJI 自研降噪模型，IT之家整理价格如下： DJI Mic Mini 2S（一拖二，含充电盒）套装：售价 1199 元，内含 1 套 DJI Mic Mini 2S 多色磁吸前盖 DJI Mic Mini 2S（一拖一）套装：售价 629 元 DJI Mic Mini 2S（手机版一拖一，含充电盒）套装：售价 629 元 DJI Mic Mini 2S 发射器：售价 399 元 艺术家合作款 DJI Mic Mini 2S 时光系列磁吸前盖：售价 199 元 京东 大疆 DJI Mic Mini 2S 399-1199 元 直达链接 据官方介绍，DJI Mic Mini 2S 发射器重量约 12 克，磁吸背夹可拆卸、可旋转，磁吸前盖采用可拆设计，标配墨曜黑与云璃白两款经典配色，另有 8 种配色前盖及 5 种颜色防风毛套可选。
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   5GB 存储空间，在默认 24-bit 规格下支持长达 28 小时的循环内录。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   同时，该发射器支持 32-bit 浮点内录，动态范围更宽，从低声细语到突发巨响，巨大声音落差均可完整留存。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   内录文件支持原始文件与处理文件两种模式，处理文件便于直出，原始文件为后期保留更大操作空间。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   此外，该发射器还可作为独立录音笔使用，随时记录会议访谈、课堂笔记或灵感片段。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: IT / 安全
+- numbers: 2, 32, 399, 1199, 7, 12, 14.5, 28
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 7月2日，大疆推出 DJI Mic Mini 2S 迷你无线麦克风。发射器重约12克，支持32-bit浮点内录和14.5GB存储（28小时循环内录），内置自研降噪模型，提供强、弱两级AI降噪。单次续航11小时，搭配充电盒总续航约40小时。接收器最多同时连接四个发射器，支持单声道、立体声和四声道模式，无线传输距离最远400米。发射器支持蓝牙直连手机，并可直连Osmo Pocket 4等DJI设备。一拖二套装（含充电盒）1199元，一拖一套装629元，手机版一拖一套装629元，单发射器399元。 / 5GB 存储空间，在默认 24-bit 规格下支持长达 28 小时的循环内录。 / 同时，该发射器支持 32-bit 浮点内录，动态范围更宽，从低声细语到突发巨响，巨大声音落差均可完整留存。
+- case_details: IT之家 7 月 2 日消息，大疆今天正式推出了全新四发内录迷你无线麦克风 DJI Mic Mini 2S，该产品主打 32-bit 浮点内录与 28 小时内录存储、四发一收混连叠加 DJI OsmoAudio 生态直连，同时内置了 DJI 自研降噪模型，IT之家整理价格如下： DJI Mic Mini 2S（一拖二，含充电盒）套装：售价 1199 元，内含 1 套 DJI Mic Mini 2S 多色磁吸前盖 DJI Mic Mini 2S（一拖一）套装：售价 629 元 DJI Mic Mini 2S（手机版一拖一，含充电盒）套装：售价 629 元 DJI Mic Mini 2S 发射器：售价 399 元 艺术家合作款 DJI Mic Mini 2S 时光系列磁吸前盖：售价 199 元 京东 大疆 DJI Mic Mini 2S 399-1199 元 直达链接 据官方介绍，DJI Mic Mini 2S 发射器重量约 12 克，磁吸背夹可拆卸、可旋转，磁吸前盖采用可拆设计，标配墨曜黑与云璃白两款经典配色，另有 8 种配色前盖及 5 种颜色防风毛套可选。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_market_structure
+- importance_score: 4
+- importance_reason: market-structure commercial event; rubric=4 concrete important change
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"大疆发布迷你无线麦克风 DJI Mic Mini 2S：32-bit 浮点内录、自研降噪，399-1199 元","discovery_summary":"7月2日，大疆推出 DJI Mic Mini 2S 迷你无线麦克风。发射器重约12克，支持32-bit浮点内录和14.5GB存储（28小时循环内录），内置自研降噪模型，提供强、弱两级AI降噪。单次续航11小时，搭配充电盒总续航约40小时。接收器最多同时连接四个发射器，支持单声道、立体声和四声道模式，无线传输距离最远400米。发射器支持蓝牙直连手机，并可直连Osmo Pocket 4等DJI设备。一拖二套装（含充电盒）1199元，一拖一套装629元，手机版一拖一套装629元，单发射器399元。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/971/886.htm","discovered_at":"2026-07-03T01:49:51.291Z","rank_on_page":180,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+7月2日，大疆推出 DJI Mic Mini 2S 迷你无线麦克风。发射器重约12克，支持32-bit浮点内录和14.5GB存储（28小时循环内录），内置自研降噪模型，提供强、弱两级AI降噪。单次续航11小时，搭配充电盒总续航约40小时。接收器最多同时连接四个发射器，支持单声道、立体声和四声道模式，无线传输距离最远400米。发射器支持蓝牙直连手机，并可直连Osmo Pocket 4等DJI设备。一拖二套装（含充电盒）1199元，一拖一套装629元，手机版一拖一套装629元，单发射器399元。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

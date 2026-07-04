@@ -1,0 +1,350 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-033
+title: "借用夜晚：将闲置推理GPU回收用于研究"
+title_zh: "借用夜晚：将闲置推理GPU回收用于研究"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://runwayml.com/news/borrowing-the-night-reclaiming-idle-inference-gpus-for-research"
+canonical_url: "https://runwayml.com/news/borrowing-the-night-reclaiming-idle-inference-gpus-for-research"
+source_name: "Runway：News（网页）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-02T21:50:28.471Z"
+collected_at: 2026-07-03T01:59:31.218Z
+language: mixed
+full_text_hash: d3a28e601e6010b0
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-03/r-033-借用夜晚-将闲置推理gpu回收用于研究.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-03/r-033-借用夜晚-将闲置推理gpu回收用于研究.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":12159,"paragraph_count":62,"sentence_count":110,"boilerplate_hits":0,"symbol_ratio":0.0033,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 12159
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d3a28e601e6010b0","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"借用夜晚：将闲置推理GPU回收用于研究","discovery_summary":"Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。控制器基于预计算的时间窗口（如工作日 8：30-12：30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20-60 分钟。利用排队论（Erlang-C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。","source_name":"Runway：News（网页）","origin_url":"https://runwayml.com/news/borrowing-the-night-reclaiming-idle-inference-gpus-for-research","discovered_at":"2026-07-03T01:49:51.262Z","rank_on_page":66,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 1cd82f6b7768b415
+content_hash: d3a28e601e6010b0
+semantic_hash: 1456d69e569036bb
+duplicate_of: ""
+first_seen_at: "2026-07-02T21:50:28.471Z"
+last_seen_at: 2026-07-03T01:59:31.218Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["Runway","News（网页）","Amazon","AWS"],"products":[],"people":[],"industries":["法律 / 法务"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算"],"numbers":["9","8","30","12","20","60","85%","90%"],"quotes":["catch up","House of David"]}
+evidence_seed: {"company_actions":["Borrowing the Night: Reclaiming Idle Inference GPUs for Research July 2, 2026 by Runway Platform Team Production inference demand rises and falls in a daily wave.","We built a capacity controller that reallocates GPUs between production and research so production tracks demand without over-provisioning.","Using queueing theory we optimized allocations, leading to more GPUs for research overnight and shorter queue waits all day."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。控制器基于预计算的时间窗口（如工作日 8：30-12：30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20-60 分钟。利用排队论（Erlang-C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Borrowing the Night: Reclaiming Idle Inference GPUs for Research July 2, 2026 by Runway Platform Team Production inference demand rises and falls in a daily wave.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We built a capacity controller that reallocates GPUs between production and research so production tracks demand without over-provisioning.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Using queueing theory we optimized allocations, leading to more GPUs for research overnight and shorter queue waits all day.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In a previous post we described how we use Kueue to lend idle GPUs across research initiatives.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Here we focus on reclaiming production GPUs for research during off-peak hours, then returning them before the morning peak.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-03T01:59:31.218Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 借用夜晚：将闲置推理GPU回收用于研究
+
+## clean_text
+
+Borrowing the Night: Reclaiming Idle Inference GPUs for Research
+July 2, 2026
+by Runway Platform Team
+Production inference demand rises and falls in a daily wave. We built a capacity controller that reallocates GPUs between production and research so production tracks demand without over-provisioning. Using queueing theory we optimized allocations, leading to more GPUs for research overnight and shorter queue waits all day.
+In a previous post we described how we use Kueue to lend idle GPUs across research initiatives. Here we focus on reclaiming production GPUs for research during off-peak hours, then returning them before the morning peak.
+Production inference demand moves in cycles. Even with a global user base, traffic concentrates around North American working hours: it climbs through the morning, peaks around 9am ET and bottoms out around 8pm ET . The trough can be less than half the peak.
+That creates a familiar dilemma for every AI company. Provision for peak demand and most GPUs sit idle every night. Provision for trough demand and queues blow out every morning.
+Instead, the production fleet should follow the demand cycle: grow into the morning peak, shrink into the evening trough and lend whatever it isn't using to research.
+Production capacity follows demand up to the morning peak and releases the difference, the shaded area, to research overnight.
+We built a lightweight capacity controller to do this reallocation (internally called deckard , after the Blade Runner protagonist who relentlessly reclaims replicants). It is deliberately narrow, managing exactly two things:
+Workloads : the replica counts of our Kubernetes inference deployments (one bucket of GPUs per model).
+Compute : the size of the underlying cloud GPU node pools, so it can physically move nodes between production and research clusters.
+Rather than re-deciding allocations continuously, the controller applies a small set of time windows , each with its own pre-computed schedule:
+Five windows, each with its own pre-computed schedule. The high-traffic peak (8:30am–12:30pm ET on weekdays) is carved out as a sub-window so it can scale up harder than the rest of the day.
+Windows are coarse on purpose, because moving GPUs between clusters is expensive: draining and tearing a node down on one side and standing it back up on the other takes 20 to 60 minutes on our cloud provider.
+It's fair to ask why we make this hard for ourselves and shift capacity between clusters. If research and production shared one multi-tenant Kubernetes cluster, transferring a GPU allocation between them would be a scheduling decision rather than a physical transfer, much like Kueue already lends idle GPUs within a single cluster in the previous post .
+We keep the environments in separate clusters anyway. The isolation gives us:
+Blast-radius containment. A runaway research job, or a single overly broad ClusterRole , can't take down customer-facing inference.
+Independent infrastructure. Separate clusters can run different Kubernetes versions, GPU drivers and networking stacks, so we can test risky infra upgrades on research without exposing production. We've needed this when a driver or networking change broke on certain versions, or when we want to run a bleeding-edge PyTorch to take advantage of training performance improvements.
+Because transfers are slow, the controller predicts the wave for a given window and moves capacity ahead of demand.
+A Crash Course in Queueing Theory
+So how many GPUs do we need to service requests? One approach is to use queueing theory . The field predates digital computing. In 1909, the Danish mathematician Agner Krarup Erlang studied telephone switchboards to figure out how many circuits were needed so callers rarely hear a busy signal.
+Translating the definitions to our domain, there are four key variables:
+arrival_rate: how fast new generations arrive (requests / second).
+service_rate: how fast one GPU worker serves requests (requests / second). (So average runtime is 1 / service_rate .)
+num_servers: how many GPU workers we run.
+traffic_intensity: how "busy" the system is on average: traffic_intensity = arrival_rate / (num_servers * service_rate) .
+A motivating example: suppose one GPU worker completes 1 request/sec ( service_rate = 1 ) and you run 100 GPUs for arrival_rate = 95 , so traffic_intensity = 0.95 . Now say you get a short burst to 110 req/sec for a couple of minutes (or a few GPUs temporarily drain/restart). Backlog accumulates at ~10 req/sec during the burst. Even after demand returns to 95, you only "catch up" at 5 req/sec (100 served − 95 arriving), so that backlog can linger and inflate tail latency far longer than the burst itself.
+The queue remembers a burst long after it ends. Backlog builds at 10 req/sec during the burst but drains at only 5 req/sec afterward — the recovery takes twice as long as the burst itself.
+It gets worse the closer traffic intensity gets to 1. Write ρ for traffic_intensity . Under Erlang-C assumptions, once every GPU is busy each extra queued job is ρ times as likely as the one before it, so the expected backlog is the geometric series ρ + ρ² + ρ³ + ... = ρ / (1 − ρ) . As ρ approaches 1 the denominator vanishes and the backlog diverges.
+By Little's Law (jobs in system = arrival rate × time in system), waiting time carries the same factor: expected wait scales like 1 / (1 − ρ) times the service time. Headroom is 1 − ρ , so every halving of it doubles the wait: roughly 10× at 90% utilization, 20× at 95%, 50× at 98%.
+Wait time versus utilization. Past ~85% the curve goes nearly vertical, so a tiny demand spike turns into a huge queue. The headroom to the left of the cliff keeps tail latency bounded; it is not wasted.
+So we size capacity so that a high percentile of requests (we target the p98 ) stays within each queue's latency target. Once you can predict arrival_rate and measure service_rate , there are several ways to choose num_servers . We looked at three.
+1. Proportional scaling. Scale GPUs linearly with traffic: double the requests, double the GPUs. It's intuitive but wrong because it holds utilization constant across queues of every size. A big queue tolerates much higher utilization than a small one for the same tail latency.
+2. Square Root Staffing. A rule of thumb is to calculate num_servers ≈ offered_load + beta * sqrt(offered_load) , where offered_load = arrival_rate / service_rate and beta is a small safety factor.
+Why the square root? Arrivals over a short window are approximately Poisson, and a Poisson distribution's standard deviation is the square root of its mean. So the random fluctuation you need to buffer scales like sqrt(offered_load) .
+This also explains why large pools are more efficient than small ones . The buffer as a fraction of the mean shrinks like 1/sqrt(offered_load) , so small queues need proportionally more headroom to hit the same tail-latency goal.
+The same tail-latency target allows higher utilization as pools grow, because the burst buffer shrinks like 1/sqrt(offered_load). A flat utilization target (proportional scaling) is wrong in both directions at once.
+3. Marginal gain on top of Erlang-C. Square Root Staffing tells you how to size one queue, but we have many models sharing one finite reservation. The question becomes: which queue benefits most from the next GPU? Marginal gain answers it greedily: score every queue by how much one more GPU would shrink its p98 wait, hand the GPU to the biggest winner, then recompute and repeat. The effect is to pour capacity into whichever queue is closest to its latency cliff.
+One step of the greedy loop. Each queue is scored by how much p98 wait the next GPU would shave off; model A, closest to its latency cliff, wins this round. Scores are recomputed and the loop repeats until every queue clears its target.
+Inside the allocate Command
+To allocate capacity we built a simple CLI where a user or CI process can run deckard allocate . Running it turns all of this into the schedule files the controller applies — and because the output is just declarative YAML in git, the entire review is a plain git diff . For each time window it:
+Pulls demand. Fetch the last 7 days of per-minute SQS arrival counts from AWS CloudWatch for every queue and slice out the minutes belonging to that window. This is the observed arrival_rate .
+Grows each workload by marginal gain. A greedy loop repeatedly finds the workload whose queue is most urgent (biggest backlog, or worst p98 relative to its target) and gives it one more GPU's worth of replicas.
+Checks the SLO with a simulation. Go beyond closed-form M/M/c with a small discrete-event replay of the queue. The simulator replays minute-level arrivals across several random seeds and takes the worst case, modeling the two-priority discipline (priority requests jump the line). The loop stops as soon as every workload clears its p98 target.
+Optionally saturates. A --saturate mode keeps spending any leftover reserved (already-paid-for) headroom after SLOs are met, always feeding the workload with the thinnest safety cushion.
+The output is one declarative file per window, which CI applies on merge and hourly:
+# Generate every window's schedule from 7 days of real demand
+deckard allocate
+# Review what would change before anything is applied
+git diff live-schedules/
+# live-schedules/peak-weekday-day.yaml (generated)
+workloads:
+task-worker-2x-h100-<model>:
+prod-a: 48
+prod-b: 36
+compute:
+a3-megagpu-8g:
+us-region-1:
+prod-a:
+counts: [80, 64, 0]
+There are knobs for the real world, too. We can size against inflated demand for a known spike ( deckard allocate --scale-up 1.1 budgets for +10%), or override a single model's expected rate. That's how we pre-scaled capacity ahead of timed launches like our Gen:48 weekend competition.
+The full pipeline: observed demand in, declarative schedules out, applied automatically and the capacity it frees flows straight to research.
+Once we've determined the minimum capacity needed to meet our SLOs, the controller pulls GPUs out of production as demand falls toward the evening trough. That freed idle capacity is what the Kueue system lends to research and what it reclaims when the morning peak returns.
+That handoff doesn't impact large training jobs because research treats the swappable nodes as preemptible. Each node that can move carries a label marking it ephemeral ( runwayml.com/compute-shared-with-external-clusters=true ); the rest are static , a research-only floor the controller never touches.
+In Kueue, jobs on the shared queue fill the ephemeral nodes first and run there as preemptible tenants, while each team's reserved quota stays on static nodes. When production reclaims capacity, the reserved queues take their quota back, the ephemeral jobs are evicted and the node is drained (force-deleting pods so a long training job's PodDisruptionBudget can't hold the transfer hostage) before it is torn down and rebuilt on the production side. A slow transfer then costs research only an interrupted, requeued job instead of a corrupted run.
+There is no tradeoff : by sizing production tightly against real demand, we run with fewer GPUs in production and shorter queue waits for users. The night we first watched production drain an entire idle superblock down to zero GPUs, handing all of it to research, was a small celebration on the team.
+What We've Learned
+Coarse and reviewable beats continuous and clever, for now. Discrete time windows applied from CI have captured most of the available savings with far fewer failure modes than a fully autonomous controller. We'll reach for continuous rebalancing when the remaining gain clearly justifies the added risk.
+One top-down controller, many clusters. Operating across multiple clusters and clouds, a single controller that does the right thing globally beats a swarm of per-cluster autoscalers each with a partial view.
+Discover more
+News
+Runway Partners with Lionsgate
+Customer Stories
+How “House of David” Used Runway to Become Amazon’s Latest Hit Series
+News
+Exploring the Future of Filmmaking: Runway’s programming partnership with Tribeca Festival 2024
+
+## full_text
+
+Borrowing the Night: Reclaiming Idle Inference GPUs for Research
+July 2, 2026
+by Runway Platform Team
+Production inference demand rises and falls in a daily wave. We built a capacity controller that reallocates GPUs between production and research so production tracks demand without over-provisioning. Using queueing theory we optimized allocations, leading to more GPUs for research overnight and shorter queue waits all day.
+In a previous post we described how we use Kueue to lend idle GPUs across research initiatives. Here we focus on reclaiming production GPUs for research during off-peak hours, then returning them before the morning peak.
+Production inference demand moves in cycles. Even with a global user base, traffic concentrates around North American working hours: it climbs through the morning, peaks around 9am ET and bottoms out around 8pm ET . The trough can be less than half the peak.
+That creates a familiar dilemma for every AI company. Provision for peak demand and most GPUs sit idle every night. Provision for trough demand and queues blow out every morning.
+Instead, the production fleet should follow the demand cycle: grow into the morning peak, shrink into the evening trough and lend whatever it isn't using to research.
+Production capacity follows demand up to the morning peak and releases the difference, the shaded area, to research overnight.
+We built a lightweight capacity controller to do this reallocation (internally called deckard , after the Blade Runner protagonist who relentlessly reclaims replicants). It is deliberately narrow, managing exactly two things:
+Workloads : the replica counts of our Kubernetes inference deployments (one bucket of GPUs per model).
+Compute : the size of the underlying cloud GPU node pools, so it can physically move nodes between production and research clusters.
+Rather than re-deciding allocations continuously, the controller applies a small set of time windows , each with its own pre-computed schedule:
+Five windows, each with its own pre-computed schedule. The high-traffic peak (8:30am–12:30pm ET on weekdays) is carved out as a sub-window so it can scale up harder than the rest of the day.
+Windows are coarse on purpose, because moving GPUs between clusters is expensive: draining and tearing a node down on one side and standing it back up on the other takes 20 to 60 minutes on our cloud provider.
+It's fair to ask why we make this hard for ourselves and shift capacity between clusters. If research and production shared one multi-tenant Kubernetes cluster, transferring a GPU allocation between them would be a scheduling decision rather than a physical transfer, much like Kueue already lends idle GPUs within a single cluster in the previous post .
+We keep the environments in separate clusters anyway. The isolation gives us:
+Blast-radius containment. A runaway research job, or a single overly broad ClusterRole , can't take down customer-facing inference.
+Independent infrastructure. Separate clusters can run different Kubernetes versions, GPU drivers and networking stacks, so we can test risky infra upgrades on research without exposing production. We've needed this when a driver or networking change broke on certain versions, or when we want to run a bleeding-edge PyTorch to take advantage of training performance improvements.
+Because transfers are slow, the controller predicts the wave for a given window and moves capacity ahead of demand.
+A Crash Course in Queueing Theory
+So how many GPUs do we need to service requests? One approach is to use queueing theory . The field predates digital computing. In 1909, the Danish mathematician Agner Krarup Erlang studied telephone switchboards to figure out how many circuits were needed so callers rarely hear a busy signal.
+Translating the definitions to our domain, there are four key variables:
+arrival_rate: how fast new generations arrive (requests / second).
+service_rate: how fast one GPU worker serves requests (requests / second). (So average runtime is 1 / service_rate .)
+num_servers: how many GPU workers we run.
+traffic_intensity: how "busy" the system is on average: traffic_intensity = arrival_rate / (num_servers * service_rate) .
+A motivating example: suppose one GPU worker completes 1 request/sec ( service_rate = 1 ) and you run 100 GPUs for arrival_rate = 95 , so traffic_intensity = 0.95 . Now say you get a short burst to 110 req/sec for a couple of minutes (or a few GPUs temporarily drain/restart). Backlog accumulates at ~10 req/sec during the burst. Even after demand returns to 95, you only "catch up" at 5 req/sec (100 served − 95 arriving), so that backlog can linger and inflate tail latency far longer than the burst itself.
+The queue remembers a burst long after it ends. Backlog builds at 10 req/sec during the burst but drains at only 5 req/sec afterward — the recovery takes twice as long as the burst itself.
+It gets worse the closer traffic intensity gets to 1. Write ρ for traffic_intensity . Under Erlang-C assumptions, once every GPU is busy each extra queued job is ρ times as likely as the one before it, so the expected backlog is the geometric series ρ + ρ² + ρ³ + ... = ρ / (1 − ρ) . As ρ approaches 1 the denominator vanishes and the backlog diverges.
+By Little's Law (jobs in system = arrival rate × time in system), waiting time carries the same factor: expected wait scales like 1 / (1 − ρ) times the service time. Headroom is 1 − ρ , so every halving of it doubles the wait: roughly 10× at 90% utilization, 20× at 95%, 50× at 98%.
+Wait time versus utilization. Past ~85% the curve goes nearly vertical, so a tiny demand spike turns into a huge queue. The headroom to the left of the cliff keeps tail latency bounded; it is not wasted.
+So we size capacity so that a high percentile of requests (we target the p98 ) stays within each queue's latency target. Once you can predict arrival_rate and measure service_rate , there are several ways to choose num_servers . We looked at three.
+1. Proportional scaling. Scale GPUs linearly with traffic: double the requests, double the GPUs. It's intuitive but wrong because it holds utilization constant across queues of every size. A big queue tolerates much higher utilization than a small one for the same tail latency.
+2. Square Root Staffing. A rule of thumb is to calculate num_servers ≈ offered_load + beta * sqrt(offered_load) , where offered_load = arrival_rate / service_rate and beta is a small safety factor.
+Why the square root? Arrivals over a short window are approximately Poisson, and a Poisson distribution's standard deviation is the square root of its mean. So the random fluctuation you need to buffer scales like sqrt(offered_load) .
+This also explains why large pools are more efficient than small ones . The buffer as a fraction of the mean shrinks like 1/sqrt(offered_load) , so small queues need proportionally more headroom to hit the same tail-latency goal.
+The same tail-latency target allows higher utilization as pools grow, because the burst buffer shrinks like 1/sqrt(offered_load). A flat utilization target (proportional scaling) is wrong in both directions at once.
+3. Marginal gain on top of Erlang-C. Square Root Staffing tells you how to size one queue, but we have many models sharing one finite reservation. The question becomes: which queue benefits most from the next GPU? Marginal gain answers it greedily: score every queue by how much one more GPU would shrink its p98 wait, hand the GPU to the biggest winner, then recompute and repeat. The effect is to pour capacity into whichever queue is closest to its latency cliff.
+One step of the greedy loop. Each queue is scored by how much p98 wait the next GPU would shave off; model A, closest to its latency cliff, wins this round. Scores are recomputed and the loop repeats until every queue clears its target.
+Inside the allocate Command
+To allocate capacity we built a simple CLI where a user or CI process can run deckard allocate . Running it turns all of this into the schedule files the controller applies — and because the output is just declarative YAML in git, the entire review is a plain git diff . For each time window it:
+Pulls demand. Fetch the last 7 days of per-minute SQS arrival counts from AWS CloudWatch for every queue and slice out the minutes belonging to that window. This is the observed arrival_rate .
+Grows each workload by marginal gain. A greedy loop repeatedly finds the workload whose queue is most urgent (biggest backlog, or worst p98 relative to its target) and gives it one more GPU's worth of replicas.
+Checks the SLO with a simulation. Go beyond closed-form M/M/c with a small discrete-event replay of the queue. The simulator replays minute-level arrivals across several random seeds and takes the worst case, modeling the two-priority discipline (priority requests jump the line). The loop stops as soon as every workload clears its p98 target.
+Optionally saturates. A --saturate mode keeps spending any leftover reserved (already-paid-for) headroom after SLOs are met, always feeding the workload with the thinnest safety cushion.
+The output is one declarative file per window, which CI applies on merge and hourly:
+# Generate every window's schedule from 7 days of real demand
+deckard allocate
+# Review what would change before anything is applied
+git diff live-schedules/
+# live-schedules/peak-weekday-day.yaml (generated)
+workloads:
+task-worker-2x-h100-<model>:
+prod-a: 48
+prod-b: 36
+compute:
+a3-megagpu-8g:
+us-region-1:
+prod-a:
+counts: [80, 64, 0]
+There are knobs for the real world, too. We can size against inflated demand for a known spike ( deckard allocate --scale-up 1.1 budgets for +10%), or override a single model's expected rate. That's how we pre-scaled capacity ahead of timed launches like our Gen:48 weekend competition.
+The full pipeline: observed demand in, declarative schedules out, applied automatically and the capacity it frees flows straight to research.
+Once we've determined the minimum capacity needed to meet our SLOs, the controller pulls GPUs out of production as demand falls toward the evening trough. That freed idle capacity is what the Kueue system lends to research and what it reclaims when the morning peak returns.
+That handoff doesn't impact large training jobs because research treats the swappable nodes as preemptible. Each node that can move carries a label marking it ephemeral ( runwayml.com/compute-shared-with-external-clusters=true ); the rest are static , a research-only floor the controller never touches.
+In Kueue, jobs on the shared queue fill the ephemeral nodes first and run there as preemptible tenants, while each team's reserved quota stays on static nodes. When production reclaims capacity, the reserved queues take their quota back, the ephemeral jobs are evicted and the node is drained (force-deleting pods so a long training job's PodDisruptionBudget can't hold the transfer hostage) before it is torn down and rebuilt on the production side. A slow transfer then costs research only an interrupted, requeued job instead of a corrupted run.
+There is no tradeoff : by sizing production tightly against real demand, we run with fewer GPUs in production and shorter queue waits for users. The night we first watched production drain an entire idle superblock down to zero GPUs, handing all of it to research, was a small celebration on the team.
+What We've Learned
+Coarse and reviewable beats continuous and clever, for now. Discrete time windows applied from CI have captured most of the available savings with far fewer failure modes than a fully autonomous controller. We'll reach for continuous rebalancing when the remaining gain clearly justifies the added risk.
+One top-down controller, many clusters. Operating across multiple clusters and clouds, a single controller that does the right thing globally beats a swarm of per-cluster autoscalers each with a partial view.
+Discover more
+News
+Runway Partners with Lionsgate
+Customer Stories
+How “House of David” Used Runway to Become Amazon’s Latest Hit Series
+News
+Exploring the Future of Filmmaking: Runway’s programming partnership with Tribeca Festival 2024
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":12159,"paragraph_count":62,"sentence_count":110,"boilerplate_hits":0,"symbol_ratio":0.0033,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。控制器基于预计算的时间窗口（如工作日 8：30-12：30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20-60 分钟。利用排队论（Erlang-C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Borrowing the Night: Reclaiming Idle Inference GPUs for Research July 2, 2026 by Runway Platform Team Production inference demand rises and falls in a daily wave.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   We built a capacity controller that reallocates GPUs between production and research so production tracks demand without over-provisioning.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Using queueing theory we optimized allocations, leading to more GPUs for research overnight and shorter queue waits all day.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   In a previous post we described how we use Kueue to lend idle GPUs across research initiatives.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Here we focus on reclaiming production GPUs for research during off-peak hours, then returning them before the morning peak.
+
+## business_elements
+
+- companies: Runway, News（网页）, Amazon, AWS
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算
+- numbers: 9, 8, 30, 12, 20, 60, 85%, 90%
+- quotes: catch up / House of David
+
+## evidence_seed
+
+- company_actions: Borrowing the Night: Reclaiming Idle Inference GPUs for Research July 2, 2026 by Runway Platform Team Production inference demand rises and falls in a daily wave. / We built a capacity controller that reallocates GPUs between production and research so production tracks demand without over-provisioning. / Using queueing theory we optimized allocations, leading to more GPUs for research overnight and shorter queue waits all day.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"借用夜晚：将闲置推理GPU回收用于研究","discovery_summary":"Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。控制器基于预计算的时间窗口（如工作日 8：30-12：30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20-60 分钟。利用排队论（Erlang-C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。","source_name":"Runway：News（网页）","origin_url":"https://runwayml.com/news/borrowing-the-night-reclaiming-idle-inference-gpus-for-research","discovered_at":"2026-07-03T01:49:51.262Z","rank_on_page":66,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Runway 开发了名为 deckard 的容量控制器，在生产推理集群与研究集群间动态重分配 GPU。生产流量在北美工作日上午 9 点 ET 达峰，晚 8 点 ET 跌至不足一半。控制器基于预计算的时间窗口（如工作日 8：30-12：30 ET 高峰子窗口）提前扩容和回收，每次集群间转移耗时 20-60 分钟。利用排队论（Erlang-C、Little's Law）确定目标利用率，避免接近 85% 后的队列发散（90% 利用率下等待时间约为服务时间的 10 倍）。此方案使夜间闲置 GPU 回归研究、白天排队等待缩短。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

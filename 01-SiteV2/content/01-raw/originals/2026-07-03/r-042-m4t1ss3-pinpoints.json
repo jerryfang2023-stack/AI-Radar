@@ -1,0 +1,281 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-042",
+  "title": "M4T1SS3/pinpoints",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://github.com/M4T1SS3/pinpoints",
+  "canonical_url": "https://github.com/M4T1SS3/pinpoints",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "pilot",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-03T01:59:31.268Z",
+  "language": "mixed",
+  "full_text": "M4T1SS3\npinpoints\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmaster\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n32 Commits\n32 Commits\nresources\nresources\nsrc\nsrc\n.gitignore\n.gitignore\n.npmignore\n.npmignore\n.vscodeignore\n.vscodeignore\n.vscodeignore copy\n.vscodeignore copy\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\nPinPoints: The missing link between your UI and your AI\nPick UI elements and inject structured context directly into your AI coding agent — without full-page screenshots.\nOverview\nPinPoints is a VS Code extension that replaces the tedious \"screenshot → paste → explain\" workflow with instant, structured UI context capture. Hover over elements in a running web app, click to capture, and get AI-optimized context automatically injected into your chat.\nProblem it solves\nAvoids noisy screenshots by providing structured, DOM-aware UI context that reduces ambiguity and token usage.\nInstallation\n1) VS Code extension\nInstall PinPoints from the VS Code Marketplace:\nPinPoints on VS Code Marketplace\n2) Global CLI installation\nInstall the CLI globally:\nnpm install -g pinpoints\nThen run:\npinpoints start\nUsage\nHow It Works\nStart the picker : Run command PinPoints: Start Picker\nEnter URL : Type the localhost or external URL to inspect\nHover & click : Hover over elements in the browser; click to capture\nChat opens : Formatted context is automatically injected\nAdd your instruction : Type \"Make this button look like...\" and send\nClose Toolbar : Press Esc to toggle between Capture and Interact mode.\nCapture Modes\nQuick Fix (default)\nMinimal, fast capture for one-liner fixes.\nOutput:\n## UI Element Context\n** URL: ** http://localhost:3000\n** Selector: ** ` button[data-testid=\"submit\"] `\n** Role: ** button\n** Text: ** \"Submit Form\"\n### Element Structure\n< button data-testid = \" submit \" class = \" btn-primary \" >Submit Form</ button >\n### Key Styles\n- display: block\n- padding: 12px 24px\n- background-color: #3b82f6\n### Layout\n- Position: absolute, top: 100px, left: 200px\n- Size: 120px × 40px\n---\nLayout\nElement + parent HTML + layout-critical styles.\nCSS\nComputed style diff (what's explicitly set vs. inherited) + class list.\nVisual\nScreenshot + bbox + minimal metadata.\nArchitecture\nComponents\nExtension Host ( src/extension.ts )\nCommands, settings, status bar UI\nLifecycle management (cleanup on deactivate)\nBrowser Session Manager ( src/browser/ )\nPuppeteer-core Chrome launch with temp profile\nCleans up on exit (no profile pollution)\nExtraction Pipeline ( src/extraction/ )\nSelectorExtractor : Robust selectors with confidence scoring\nDomExtractor : Element + parent HTML (clean, truncated)\nStyleExtractor : Computed styles + parent diff\nLayoutExtractor : Bbox, viewport, scroll info\nScreenshotExtractor : Element screenshot via Puppeteer\nRedactor : Truncates text, strips data URLs, removes event handlers\nSchemas ( src/schemas/ )\nZod-validated MaxContext (internal format)\nMode-specific exporters (QuickFix, Layout, CSS, Visual)\nChat Injection ( src/export/ )\nContextFormatter : Markdown generation for AI agents\nDirect VS Code chat input injection via workbench.action.chat.open\nPicker Controller ( src/picker/ )\nOrchestrates extraction pipeline\nManages multi-element selection (Shift+click)\nHandles temp file cleanup\nTechnical Details\nBrowser Control\nPuppeteer-core (CDP) for robust element selection\nManaged Chrome instance (temp profile, auto-cleanup)\nOverlay hover effect + click detection\nScreenshots\nElement-level via elementHandle.screenshot()\nSaved to .pinpoint/temp/element-<timestamp>.png\nAuto-referenced in chat via @ mention\nAuto-deleted on extension close\nData Flow\nClick element →\nExtract selectors (robust priority order)\nExtract DOM (element + parents, cleaned)\nExtract styles (computed + parent diff)\nExtract layout (bbox, viewport, scroll)\nOptional: screenshot\nRedact sensitive data (truncate, strip URLs)\n→ Format as markdown\n→ Inject to VS Code chat\n→ User adds instruction + sends\nSelector Priority\ndata-testid , data-test , data-qa (explicit automation attributes)\nNon-UUID id (stable, semantic)\nrole + unique aria-label (accessibility)\nStable class combo (avoid utility classes)\nPosition-based (nth-of-type) fallback\nStyle Diff\nComputes parent styles, keeps only layout-critical properties:\nDisplay, position, dimensions (width, height)\nSpacing (margin, padding)\nFlexbox/Grid (flex-direction, justify-content, gap, etc.)\nOverflow, z-index\nAbout\nVS Code extension to capture structured, DOM-aware UI context instead of screenshots\nTopics\ndevtools\nvscode-extension\ngithub-copilot\nvibe-coding\nclaude-code\nagentic-engineering\nResources\nReadme\nLicense\nView license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n84.5%\nJavaScript\n14.0%\nHTML\n1.2%\nCSS\n0.3%",
+  "clean_text": "M4T1SS3\npinpoints\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmaster\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n32 Commits\n32 Commits\nresources\nresources\nsrc\nsrc\n.gitignore\n.gitignore\n.npmignore\n.npmignore\n.vscodeignore\n.vscodeignore\n.vscodeignore copy\n.vscodeignore copy\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\nPinPoints: The missing link between your UI and your AI\nPick UI elements and inject structured context directly into your AI coding agent — without full-page screenshots.\nOverview\nPinPoints is a VS Code extension that replaces the tedious \"screenshot → paste → explain\" workflow with instant, structured UI context capture. Hover over elements in a running web app, click to capture, and get AI-optimized context automatically injected into your chat.\nProblem it solves\nAvoids noisy screenshots by providing structured, DOM-aware UI context that reduces ambiguity and token usage.\nInstallation\n1) VS Code extension\nInstall PinPoints from the VS Code Marketplace:\nPinPoints on VS Code Marketplace\n2) Global CLI installation\nInstall the CLI globally:\nnpm install -g pinpoints\nThen run:\npinpoints start\nUsage\nHow It Works\nStart the picker : Run command PinPoints: Start Picker\nEnter URL : Type the localhost or external URL to inspect\nHover & click : Hover over elements in the browser; click to capture\nChat opens : Formatted context is automatically injected\nAdd your instruction : Type \"Make this button look like...\" and send\nClose Toolbar : Press Esc to toggle between Capture and Interact mode.\nCapture Modes\nQuick Fix (default)\nMinimal, fast capture for one-liner fixes.\nOutput:\n## UI Element Context\n** URL: ** http://localhost:3000\n** Selector: ** ` button[data-testid=\"submit\"] `\n** Role: ** button\n** Text: ** \"Submit Form\"\n### Element Structure\n< button data-testid = \" submit \" class = \" btn-primary \" >Submit Form</ button >\n### Key Styles\n- display: block\n- padding: 12px 24px\n- background-color: #3b82f6\n### Layout\n- Position: absolute, top: 100px, left: 200px\n- Size: 120px × 40px\n---\nLayout\nElement + parent HTML + layout-critical styles.\nCSS\nComputed style diff (what's explicitly set vs. inherited) + class list.\nVisual\nScreenshot + bbox + minimal metadata.\nArchitecture\nComponents\nExtension Host ( src/extension.ts )\nCommands, settings, status bar UI\nLifecycle management (cleanup on deactivate)\nBrowser Session Manager ( src/browser/ )\nPuppeteer-core Chrome launch with temp profile\nCleans up on exit (no profile pollution)\nExtraction Pipeline ( src/extraction/ )\nSelectorExtractor : Robust selectors with confidence scoring\nDomExtractor : Element + parent HTML (clean, truncated)\nStyleExtractor : Computed styles + parent diff\nLayoutExtractor : Bbox, viewport, scroll info\nScreenshotExtractor : Element screenshot via Puppeteer\nRedactor : Truncates text, strips data URLs, removes event handlers\nSchemas ( src/schemas/ )\nZod-validated MaxContext (internal format)\nMode-specific exporters (QuickFix, Layout, CSS, Visual)\nChat Injection ( src/export/ )\nContextFormatter : Markdown generation for AI agents\nDirect VS Code chat input injection via workbench.action.chat.open\nPicker Controller ( src/picker/ )\nOrchestrates extraction pipeline\nManages multi-element selection (Shift+click)\nHandles temp file cleanup\nTechnical Details\nBrowser Control\nPuppeteer-core (CDP) for robust element selection\nManaged Chrome instance (temp profile, auto-cleanup)\nOverlay hover effect + click detection\nScreenshots\nElement-level via elementHandle.screenshot()\nSaved to .pinpoint/temp/element-<timestamp>.png\nAuto-referenced in chat via @ mention\nAuto-deleted on extension close\nData Flow\nClick element →\nExtract selectors (robust priority order)\nExtract DOM (element + parents, cleaned)\nExtract styles (computed + parent diff)\nExtract layout (bbox, viewport, scroll)\nOptional: screenshot\nRedact sensitive data (truncate, strip URLs)\n→ Format as markdown\n→ Inject to VS Code chat\n→ User adds instruction + sends\nSelector Priority\ndata-testid , data-test , data-qa (explicit automation attributes)\nNon-UUID id (stable, semantic)\nrole + unique aria-label (accessibility)\nStable class combo (avoid utility classes)\nPosition-based (nth-of-type) fallback\nStyle Diff\nComputes parent styles, keeps only layout-critical properties:\nDisplay, position, dimensions (width, height)\nSpacing (margin, padding)\nFlexbox/Grid (flex-direction, justify-content, gap, etc.)\nOverflow, z-index\nAbout\nVS Code extension to capture structured, DOM-aware UI context instead of screenshots\nTopics\ndevtools\nvscode-extension\ngithub-copilot\nvibe-coding\nclaude-code\nagentic-engineering\nResources\nReadme\nLicense\nView license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n84.5%\nJavaScript\n14.0%\nHTML\n1.2%\nCSS\n0.3%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-03/r-042-m4t1ss3-pinpoints.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-03/r-042-m4t1ss3-pinpoints.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 5258,
+    "paragraph_count": 87,
+    "sentence_count": 19,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0021,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 5258,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "d1207bbe1707c963",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "5665d1b029d81abc",
+  "content_hash": "d1207bbe1707c963",
+  "full_text_hash": "d1207bbe1707c963",
+  "semantic_hash": "3c7183d9c3fbdcd8",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-03T01:59:31.268Z",
+  "last_seen_at": "2026-07-03T01:59:31.268Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "# Repository: M4T1SS3/pinpoints VS Code extension to capture structured, DOM-aware UI context instead of screenshots - Stars: 1 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: TypeScript - Languages: TypeScript (84.5%), JavaScript (14.0%), HTML (1.2%), CSS (0.3%) - License: Other (NO..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "M4T1SS3 pinpoints Public Notifications You must be signed in to change notification settings Fork Star master Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 32 Commits 32 Commits resources resources src src .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "vscodeignore copy .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "vscodeignore copy LICENSE LICENSE README.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "json package-lock.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "json View all files Repository files navigation PinPoints: The missing link between your UI and your AI Pick UI elements and inject structured context directly into your AI coding agent — without full-page screenshots.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-03T01:59:31.268Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub"
+    ],
+    "products": [
+      "agent",
+      "agents",
+      "copilot",
+      "claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "4",
+      "1",
+      "3",
+      "0",
+      "84.5%",
+      "14.0%",
+      "1.2%",
+      "0.3%"
+    ],
+    "quotes": [
+      "screenshot → paste → explain",
+      "Make this button look like...",
+      "] `\n** Role: ** button\n** Text: ** ",
+      "\n### Element Structure\n< button data-testid = ",
+      " class = "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "M4T1SS3 pinpoints Public Notifications You must be signed in to change notification settings Fork Star master Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 32 Commits 32 Commits resources resources src src .",
+      "vscodeignore copy .",
+      "vscodeignore copy LICENSE LICENSE README."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# M4T1SS3/pinpoints\n\n- raw_id: R-042\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://github.com/M4T1SS3/pinpoints\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-03T01:59:31.268Z\n\n## clean_text\n\nM4T1SS3\npinpoints\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmaster\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n32 Commits\n32 Commits\nresources\nresources\nsrc\nsrc\n.gitignore\n.gitignore\n.npmignore\n.npmignore\n.vscodeignore\n.vscodeignore\n.vscodeignore copy\n.vscodeignore copy\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\nPinPoints: The missing link between your UI and your AI\nPick UI elements and inject structured context directly into your AI coding agent — without full-page screenshots.\nOverview\nPinPoints is a VS Code extension that replaces the tedious \"screenshot → paste → explain\" workflow with instant, structured UI context capture. Hover over elements in a running web app, click to capture, and get AI-optimized context automatically injected into your chat.\nProblem it solves\nAvoids noisy screenshots by providing structured, DOM-aware UI context that reduces ambiguity and token usage.\nInstallation\n1) VS Code extension\nInstall PinPoints from the VS Code Marketplace:\nPinPoints on VS Code Marketplace\n2) Global CLI installation\nInstall the CLI globally:\nnpm install -g pinpoints\nThen run:\npinpoints start\nUsage\nHow It Works\nStart the picker : Run command PinPoints: Start Picker\nEnter URL : Type the localhost or external URL to inspect\nHover & click : Hover over elements in the browser; click to capture\nChat opens : Formatted context is automatically injected\nAdd your instruction : Type \"Make this button look like...\" and send\nClose Toolbar : Press Esc to toggle between Capture and Interact mode.\nCapture Modes\nQuick Fix (default)\nMinimal, fast capture for one-liner fixes.\nOutput:\n## UI Element Context\n** URL: ** http://localhost:3000\n** Selector: ** ` button[data-testid=\"submit\"] `\n** Role: ** button\n** Text: ** \"Submit Form\"\n### Element Structure\n< button data-testid = \" submit \" class = \" btn-primary \" >Submit Form</ button >\n### Key Styles\n- display: block\n- padding: 12px 24px\n- background-color: #3b82f6\n### Layout\n- Position: absolute, top: 100px, left: 200px\n- Size: 120px × 40px\n---\nLayout\nElement + parent HTML + layout-critical styles.\nCSS\nComputed style diff (what's explicitly set vs. inherited) + class list.\nVisual\nScreenshot + bbox + minimal metadata.\nArchitecture\nComponents\nExtension Host ( src/extension.ts )\nCommands, settings, status bar UI\nLifecycle management (cleanup on deactivate)\nBrowser Session Manager ( src/browser/ )\nPuppeteer-core Chrome launch with temp profile\nCleans up on exit (no profile pollution)\nExtraction Pipeline ( src/extraction/ )\nSelectorExtractor : Robust selectors with confidence scoring\nDomExtractor : Element + parent HTML (clean, truncated)\nStyleExtractor : Computed styles + parent diff\nLayoutExtractor : Bbox, viewport, scroll info\nScreenshotExtractor : Element screenshot via Puppeteer\nRedactor : Truncates text, strips data URLs, removes event handlers\nSchemas ( src/schemas/ )\nZod-validated MaxContext (internal format)\nMode-specific exporters (QuickFix, Layout, CSS, Visual)\nChat Injection ( src/export/ )\nContextFormatter : Markdown generation for AI agents\nDirect VS Code chat input injection via workbench.action.chat.open\nPicker Controller ( src/picker/ )\nOrchestrates extraction pipeline\nManages multi-element selection (Shift+click)\nHandles temp file cleanup\nTechnical Details\nBrowser Control\nPuppeteer-core (CDP) for robust element selection\nManaged Chrome instance (temp profile, auto-cleanup)\nOverlay hover effect + click detection\nScreenshots\nElement-level via elementHandle.screenshot()\nSaved to .pinpoint/temp/element-<timestamp>.png\nAuto-referenced in chat via @ mention\nAuto-deleted on extension close\nData Flow\nClick element →\nExtract selectors (robust priority order)\nExtract DOM (element + parents, cleaned)\nExtract styles (computed + parent diff)\nExtract layout (bbox, viewport, scroll)\nOptional: screenshot\nRedact sensitive data (truncate, strip URLs)\n→ Format as markdown\n→ Inject to VS Code chat\n→ User adds instruction + sends\nSelector Priority\ndata-testid , data-test , data-qa (explicit automation attributes)\nNon-UUID id (stable, semantic)\nrole + unique aria-label (accessibility)\nStable class combo (avoid utility classes)\nPosition-based (nth-of-type) fallback\nStyle Diff\nComputes parent styles, keeps only layout-critical properties:\nDisplay, position, dimensions (width, height)\nSpacing (margin, padding)\nFlexbox/Grid (flex-direction, justify-content, gap, etc.)\nOverflow, z-index\nAbout\nVS Code extension to capture structured, DOM-aware UI context instead of screenshots\nTopics\ndevtools\nvscode-extension\ngithub-copilot\nvibe-coding\nclaude-code\nagentic-engineering\nResources\nReadme\nLicense\nView license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n84.5%\nJavaScript\n14.0%\nHTML\n1.2%\nCSS\n0.3%\n\n## full_text\n\nM4T1SS3\npinpoints\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmaster\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n32 Commits\n32 Commits\nresources\nresources\nsrc\nsrc\n.gitignore\n.gitignore\n.npmignore\n.npmignore\n.vscodeignore\n.vscodeignore\n.vscodeignore copy\n.vscodeignore copy\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\nPinPoints: The missing link between your UI and your AI\nPick UI elements and inject structured context directly into your AI coding agent — without full-page screenshots.\nOverview\nPinPoints is a VS Code extension that replaces the tedious \"screenshot → paste → explain\" workflow with instant, structured UI context capture. Hover over elements in a running web app, click to capture, and get AI-optimized context automatically injected into your chat.\nProblem it solves\nAvoids noisy screenshots by providing structured, DOM-aware UI context that reduces ambiguity and token usage.\nInstallation\n1) VS Code extension\nInstall PinPoints from the VS Code Marketplace:\nPinPoints on VS Code Marketplace\n2) Global CLI installation\nInstall the CLI globally:\nnpm install -g pinpoints\nThen run:\npinpoints start\nUsage\nHow It Works\nStart the picker : Run command PinPoints: Start Picker\nEnter URL : Type the localhost or external URL to inspect\nHover & click : Hover over elements in the browser; click to capture\nChat opens : Formatted context is automatically injected\nAdd your instruction : Type \"Make this button look like...\" and send\nClose Toolbar : Press Esc to toggle between Capture and Interact mode.\nCapture Modes\nQuick Fix (default)\nMinimal, fast capture for one-liner fixes.\nOutput:\n## UI Element Context\n** URL: ** http://localhost:3000\n** Selector: ** ` button[data-testid=\"submit\"] `\n** Role: ** button\n** Text: ** \"Submit Form\"\n### Element Structure\n< button data-testid = \" submit \" class = \" btn-primary \" >Submit Form</ button >\n### Key Styles\n- display: block\n- padding: 12px 24px\n- background-color: #3b82f6\n### Layout\n- Position: absolute, top: 100px, left: 200px\n- Size: 120px × 40px\n---\nLayout\nElement + parent HTML + layout-critical styles.\nCSS\nComputed style diff (what's explicitly set vs. inherited) + class list.\nVisual\nScreenshot + bbox + minimal metadata.\nArchitecture\nComponents\nExtension Host ( src/extension.ts )\nCommands, settings, status bar UI\nLifecycle management (cleanup on deactivate)\nBrowser Session Manager ( src/browser/ )\nPuppeteer-core Chrome launch with temp profile\nCleans up on exit (no profile pollution)\nExtraction Pipeline ( src/extraction/ )\nSelectorExtractor : Robust selectors with confidence scoring\nDomExtractor : Element + parent HTML (clean, truncated)\nStyleExtractor : Computed styles + parent diff\nLayoutExtractor : Bbox, viewport, scroll info\nScreenshotExtractor : Element screenshot via Puppeteer\nRedactor : Truncates text, strips data URLs, removes event handlers\nSchemas ( src/schemas/ )\nZod-validated MaxContext (internal format)\nMode-specific exporters (QuickFix, Layout, CSS, Visual)\nChat Injection ( src/export/ )\nContextFormatter : Markdown generation for AI agents\nDirect VS Code chat input injection via workbench.action.chat.open\nPicker Controller ( src/picker/ )\nOrchestrates extraction pipeline\nManages multi-element selection (Shift+click)\nHandles temp file cleanup\nTechnical Details\nBrowser Control\nPuppeteer-core (CDP) for robust element selection\nManaged Chrome instance (temp profile, auto-cleanup)\nOverlay hover effect + click detection\nScreenshots\nElement-level via elementHandle.screenshot()\nSaved to .pinpoint/temp/element-<timestamp>.png\nAuto-referenced in chat via @ mention\nAuto-deleted on extension close\nData Flow\nClick element →\nExtract selectors (robust priority order)\nExtract DOM (element + parents, cleaned)\nExtract styles (computed + parent diff)\nExtract layout (bbox, viewport, scroll)\nOptional: screenshot\nRedact sensitive data (truncate, strip URLs)\n→ Format as markdown\n→ Inject to VS Code chat\n→ User adds instruction + sends\nSelector Priority\ndata-testid , data-test , data-qa (explicit automation attributes)\nNon-UUID id (stable, semantic)\nrole + unique aria-label (accessibility)\nStable class combo (avoid utility classes)\nPosition-based (nth-of-type) fallback\nStyle Diff\nComputes parent styles, keeps only layout-critical properties:\nDisplay, position, dimensions (width, height)\nSpacing (margin, padding)\nFlexbox/Grid (flex-direction, justify-content, gap, etc.)\nOverflow, z-index\nAbout\nVS Code extension to capture structured, DOM-aware UI context instead of screenshots\nTopics\ndevtools\nvscode-extension\ngithub-copilot\nvibe-coding\nclaude-code\nagentic-engineering\nResources\nReadme\nLicense\nView license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n84.5%\nJavaScript\n14.0%\nHTML\n1.2%\nCSS\n0.3%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] # Repository: M4T1SS3/pinpoints VS Code extension to capture structured, DOM-aware UI context instead of screenshots - Stars: 1 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: TypeScript - Languages: TypeScript (84.5%), JavaScript (14.0%), HTML (1.2%), CSS (0.3%) - License: Other (NO..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] M4T1SS3 pinpoints Public Notifications You must be signed in to change notification settings Fork Star master Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 32 Commits 32 Commits resources resources src src .\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] vscodeignore copy .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] vscodeignore copy LICENSE LICENSE README.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] json package-lock.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] json View all files Repository files navigation PinPoints: The missing link between your UI and your AI Pick UI elements and inject structured context directly into your AI coding agent — without full-page screenshots.\n"
+}

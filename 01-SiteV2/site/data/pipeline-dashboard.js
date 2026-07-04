@@ -1,13 +1,169 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
-    "generatedAt": "2026-07-02T08:32:24.309Z",
+    "generatedAt": "2026-07-04T04:35:57.038Z",
     "dateRange": {
       "start": "2025-10-13",
-      "end": "2026-07-02"
+      "end": "2026-07-04"
     },
     "source": "01-SiteV2/content + 01-SiteV2/knowledge"
   },
   "days": [
+    {
+      "date": "2026-07-04",
+      "label": "2026.07.04",
+      "shortLabel": "07.04",
+      "raw": 139,
+      "pool": 92,
+      "assets": {
+        "case": 1,
+        "funding": 3
+      },
+      "cards": 4,
+      "rawChannels": {
+        "aihot": 0,
+        "keyword_search": 19,
+        "follow_builders": 0
+      },
+      "poolRoutes": {
+        "core_pool": 21,
+        "emerging_pool": 15,
+        "watchlist": 61,
+        "user_feedback_pool": 4,
+        "index_only": 10
+      },
+      "evidenceLevels": {
+        "core_evidence_candidate": 74,
+        "community_signal": 4,
+        "supporting_evidence": 8,
+        "weak_signal": 6
+      },
+      "sourceLevels": {
+        "B": 45,
+        "C": 30,
+        "S": 7,
+        "A": 10
+      },
+      "sourceTypes": {
+        "web": 31,
+        "operators": 30,
+        "product": 4,
+        "analysis": 6,
+        "newsletter": 1,
+        "official": 1,
+        "media": 6,
+        "news": 4,
+        "builder": 9
+      },
+      "assetStatus": {
+        "case": {
+          "published": 1
+        },
+        "funding": {
+          "published": 3
+        }
+      },
+      "assetLevels": {
+        "case": {
+          "frontstage": 1
+        },
+        "funding": {
+          "frontstage": 3
+        }
+      },
+      "assetEvidenceGates": {
+        "case": {
+          "core_evidence_passed": 1
+        },
+        "funding": {
+          "core_evidence_passed": 3
+        }
+      },
+      "assetCopyGates": {}
+    },
+    {
+      "date": "2026-07-03",
+      "label": "2026.07.03",
+      "shortLabel": "07.03",
+      "raw": 136,
+      "pool": 125,
+      "assets": {
+        "case": 4,
+        "funding": 6,
+        "product-service": 5,
+        "opinion": 8
+      },
+      "cards": 23,
+      "rawChannels": {
+        "aihot": 73,
+        "keyword_search": 37,
+        "follow_builders": 0
+      },
+      "poolRoutes": {
+        "watchlist": 61,
+        "core_pool": 31,
+        "index_only": 32,
+        "emerging_pool": 19,
+        "user_feedback_pool": 3
+      },
+      "evidenceLevels": {
+        "core_evidence_candidate": 87,
+        "user_feedback_signal": 7,
+        "supporting_evidence": 3,
+        "weak_signal": 1,
+        "discovery_only": 27
+      },
+      "sourceLevels": {
+        "A": 14,
+        "B": 94,
+        "S": 10,
+        "C": 7
+      },
+      "sourceTypes": {
+        "news": 9,
+        "media": 5,
+        "web": 90,
+        "product": 1,
+        "developer": 6,
+        "operators": 7,
+        "official": 4,
+        "research": 1,
+        "builder": 2
+      },
+      "assetStatus": {
+        "case": {
+          "published": 4
+        },
+        "funding": {
+          "published": 6
+        },
+        "product-service": {
+          "published": 5
+        }
+      },
+      "assetLevels": {
+        "case": {
+          "frontstage": 4
+        },
+        "funding": {
+          "frontstage": 6
+        },
+        "product-service": {
+          "frontstage": 5
+        }
+      },
+      "assetEvidenceGates": {
+        "case": {
+          "core_evidence_passed": 4
+        },
+        "funding": {
+          "core_evidence_passed": 6
+        },
+        "product-service": {
+          "core_evidence_passed": 5
+        }
+      },
+      "assetCopyGates": {}
+    },
     {
       "date": "2026-07-02",
       "label": "2026.07.02",
@@ -18,9 +174,9 @@ window.WaveSightPipelineDashboard = {
         "case": 10,
         "funding": 4,
         "product-service": 2,
-        "opinion": 6
+        "opinion": 35
       },
-      "cards": 22,
+      "cards": 51,
       "rawChannels": {
         "aihot": 61,
         "keyword_search": 55,
@@ -398,252 +554,101 @@ window.WaveSightPipelineDashboard = {
         }
       },
       "assetCopyGates": {}
-    },
-    {
-      "date": "2026-06-27",
-      "label": "2026.06.27",
-      "shortLabel": "06.27",
-      "raw": 177,
-      "pool": 95,
-      "assets": {
-        "case": 9,
-        "funding": 3,
-        "product-service": 7,
-        "opinion": 6
-      },
-      "cards": 25,
-      "rawChannels": {
-        "aihot": 12,
-        "keyword_search": 53,
-        "follow_builders": 0
-      },
-      "poolRoutes": {
-        "emerging_pool": 24,
-        "watchlist": 49,
-        "core_pool": 30,
-        "user_feedback_pool": 3,
-        "index_only": 15,
-        "discard": 1
-      },
-      "evidenceLevels": {
-        "core_evidence_candidate": 76,
-        "community_signal": 3,
-        "index_only_evidence": 2,
-        "supporting_evidence": 2,
-        "discovery_only": 12
-      },
-      "sourceLevels": {
-        "B": 87,
-        "S": 4,
-        "A": 4
-      },
-      "sourceTypes": {
-        "web": 76,
-        "marketplace": 1,
-        "developer": 6,
-        "official": 3,
-        "funding": 1,
-        "industry": 1,
-        "product": 1,
-        "media": 3,
-        "news": 1,
-        "analysis": 2
-      },
-      "assetStatus": {
-        "case": {
-          "published": 9
-        },
-        "funding": {
-          "published": 3
-        },
-        "product-service": {
-          "published": 7
-        }
-      },
-      "assetLevels": {
-        "case": {
-          "frontstage": 9
-        },
-        "funding": {
-          "frontstage": 3
-        },
-        "product-service": {
-          "frontstage": 7
-        }
-      },
-      "assetEvidenceGates": {
-        "case": {
-          "core_evidence_passed": 9
-        },
-        "funding": {
-          "core_evidence_passed": 3
-        },
-        "product-service": {
-          "core_evidence_passed": 7
-        }
-      },
-      "assetCopyGates": {}
-    },
-    {
-      "date": "2026-06-26",
-      "label": "2026.06.26",
-      "shortLabel": "06.26",
-      "raw": 188,
-      "pool": 95,
-      "assets": {
-        "opinion": 43
-      },
-      "cards": 43,
-      "rawChannels": {
-        "aihot": 86,
-        "keyword_search": 102,
-        "follow_builders": 0
-      },
-      "poolRoutes": {
-        "watchlist": 71,
-        "core_pool": 23,
-        "index_only": 1,
-        "emerging_pool": 26,
-        "user_feedback_pool": 2
-      },
-      "evidenceLevels": {
-        "core_evidence_candidate": 61,
-        "supporting_evidence": 5,
-        "user_feedback_signal": 1,
-        "index_only_evidence": 2,
-        "community_signal": 2,
-        "discovery_only": 24
-      },
-      "sourceLevels": {
-        "A": 12,
-        "B": 73,
-        "S": 10
-      },
-      "sourceTypes": {
-        "news": 5,
-        "web": 60,
-        "media": 7,
-        "product": 1,
-        "funding": 1,
-        "developer": 8,
-        "marketplace": 4,
-        "official": 7,
-        "organization-capability": 1,
-        "industry": 1
-      },
-      "assetStatus": {},
-      "assetLevels": {},
-      "assetEvidenceGates": {},
-      "assetCopyGates": {}
     }
   ],
   "latest": {
-    "date": "2026-07-02",
-    "label": "2026.07.02",
-    "shortLabel": "07.02",
-    "raw": 147,
-    "pool": 95,
+    "date": "2026-07-04",
+    "label": "2026.07.04",
+    "shortLabel": "07.04",
+    "raw": 139,
+    "pool": 92,
     "assets": {
-      "case": 10,
-      "funding": 4,
-      "product-service": 2,
-      "opinion": 6
+      "case": 1,
+      "funding": 3
     },
-    "cards": 22,
+    "cards": 4,
     "rawChannels": {
-      "aihot": 61,
-      "keyword_search": 55,
+      "aihot": 0,
+      "keyword_search": 19,
       "follow_builders": 0
     },
     "poolRoutes": {
-      "core_pool": 33,
-      "emerging_pool": 23,
-      "index_only": 20,
-      "watchlist": 40,
-      "user_feedback_pool": 5
+      "core_pool": 21,
+      "emerging_pool": 15,
+      "watchlist": 61,
+      "user_feedback_pool": 4,
+      "index_only": 10
     },
     "evidenceLevels": {
-      "core_evidence_candidate": 72,
-      "supporting_evidence": 2,
-      "community_signal": 3,
-      "user_feedback_signal": 3,
-      "discovery_only": 15
+      "core_evidence_candidate": 74,
+      "community_signal": 4,
+      "supporting_evidence": 8,
+      "weak_signal": 6
     },
     "sourceLevels": {
-      "A": 19,
-      "S": 12,
-      "B": 60,
-      "C": 4
+      "B": 45,
+      "C": 30,
+      "S": 7,
+      "A": 10
     },
     "sourceTypes": {
-      "news": 9,
-      "product": 2,
-      "research": 1,
-      "developer": 6,
-      "media": 9,
-      "official": 8,
-      "web": 53,
-      "operators": 4,
-      "analysis": 1,
-      "industry": 1,
-      "marketplace": 1
+      "web": 31,
+      "operators": 30,
+      "product": 4,
+      "analysis": 6,
+      "newsletter": 1,
+      "official": 1,
+      "media": 6,
+      "news": 4,
+      "builder": 9
     },
     "assetStatus": {
       "case": {
-        "published": 10
+        "published": 1
       },
       "funding": {
-        "published": 4
-      },
-      "product-service": {
-        "published": 2
+        "published": 3
       }
     },
     "assetLevels": {
       "case": {
-        "frontstage": 10
+        "frontstage": 1
       },
       "funding": {
-        "frontstage": 4
-      },
-      "product-service": {
-        "frontstage": 2
+        "frontstage": 3
       }
     },
     "assetEvidenceGates": {
       "case": {
-        "core_evidence_passed": 10
+        "core_evidence_passed": 1
       },
       "funding": {
-        "core_evidence_passed": 4
-      },
-      "product-service": {
-        "core_evidence_passed": 2
+        "core_evidence_passed": 3
       }
     },
     "assetCopyGates": {}
   },
   "totals": {
-    "raw": 6160,
-    "pool": 3001,
+    "raw": 6435,
+    "pool": 3218,
     "assets": {
-      "case": 346,
-      "funding": 83,
-      "product-service": 267,
-      "opinion": 962,
+      "case": 351,
+      "funding": 92,
+      "product-service": 272,
+      "opinion": 999,
       "trend": 6,
       "scene": 3,
       "change": 14
     }
   },
   "opinionTimelines": {
-    "timelineFiles": 452,
+    "timelineFiles": 470,
     "people": 46,
-    "detailBlocks": 962
+    "detailBlocks": 999
   },
   "latestRelation": null,
   "engineQuality": {
-    "updatedAt": "2026-07-02T08:32:24.376Z",
+    "updatedAt": "2026-07-04T04:35:57.124Z",
     "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
     "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
     "rows": [
@@ -692,29 +697,29 @@ window.WaveSightPipelineDashboard = {
       {
         "id": "gdelt",
         "label": "GDELT",
-        "total": 626,
+        "total": 635,
         "freshKnown": 49,
         "fresh": 1,
         "duplicates": 92,
         "official": 6,
-        "convertible": 258,
+        "convertible": 261,
         "freshnessRate": 2,
-        "duplicateRate": 15,
+        "duplicateRate": 14,
         "officialRate": 1,
         "conversionRate": 41
       },
       {
         "id": "anysearch",
         "label": "AnySearch",
-        "total": 1510,
+        "total": 1570,
         "freshKnown": 0,
         "fresh": 0,
-        "duplicates": 141,
-        "official": 227,
-        "convertible": 824,
+        "duplicates": 147,
+        "official": 254,
+        "convertible": 857,
         "freshnessRate": null,
         "duplicateRate": 9,
-        "officialRate": 15,
+        "officialRate": 16,
         "conversionRate": 55
       },
       {
@@ -734,15 +739,15 @@ window.WaveSightPipelineDashboard = {
       {
         "id": "aihot",
         "label": "AI HOT",
-        "total": 3574,
-        "freshKnown": 2826,
-        "fresh": 2826,
+        "total": 3647,
+        "freshKnown": 2879,
+        "fresh": 2879,
         "duplicates": 6,
-        "official": 235,
-        "convertible": 1246,
+        "official": 236,
+        "convertible": 1269,
         "freshnessRate": 100,
         "duplicateRate": 0,
-        "officialRate": 7,
+        "officialRate": 6,
         "conversionRate": 35
       },
       {

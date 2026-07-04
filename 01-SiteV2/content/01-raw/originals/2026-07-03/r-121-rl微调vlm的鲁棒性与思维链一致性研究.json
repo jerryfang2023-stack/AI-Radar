@@ -1,0 +1,246 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-121",
+  "title": "RL微调VLM的鲁棒性与思维链一致性研究",
+  "title_zh": "RL微调VLM的鲁棒性与思维链一致性研究",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "",
+  "canonical_url": "",
+  "source_name": "Apple Machine Learning Research（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "official_index_or_directory",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": true,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-03T01:59:31.603Z",
+  "language": "mixed",
+  "full_text": "强化学习（RL）微调被扩展至视觉语言模型（VLM）。研究发现，简单的文本扰动——误导性标题或错误思维链（CoT）——会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。闭源模型呈现类似失败模式，但鲁棒性和推理一致性更强。进一步分析揭示准确性与忠实性的权衡：微调提升基准准确率，但同时侵蚀CoT的可靠性及对上下文变化的鲁棒性；对抗性增强可改善鲁棒性，却无法阻止忠实性漂移。引入忠实性感知奖励能恢复答案与推理的对齐，但与增强结合时训练易崩溃到捷径策略。这些发现强调需联合关注正确性、鲁棒性与视觉推理的忠实性。",
+  "clean_text": "强化学习（RL）微调被扩展至视觉语言模型（VLM）。研究发现，简单的文本扰动——误导性标题或错误思维链（CoT）——会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。闭源模型呈现类似失败模式，但鲁棒性和推理一致性更强。进一步分析揭示准确性与忠实性的权衡：微调提升基准准确率，但同时侵蚀CoT的可靠性及对上下文变化的鲁棒性；对抗性增强可改善鲁棒性，却无法阻止忠实性漂移。引入忠实性感知奖励能恢复答案与推理的对齐，但与增强结合时训练易崩溃到捷径策略。这些发现强调需联合关注正确性、鲁棒性与视觉推理的忠实性。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-03/r-121-rl微调vlm的鲁棒性与思维链一致性研究.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-03/r-121-rl微调vlm的鲁棒性与思维链一致性研究.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "no-url-summary-only",
+  "extraction_quality": "failed",
+  "extraction_method": "no_url_summary_fallback",
+  "readability_score": 0,
+  "extractor_diagnostics": {
+    "method": "no_url_summary_fallback"
+  },
+  "has_full_text": false,
+  "content_length": 252,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "missing",
+    "full_text_status": "missing_or_summary_only",
+    "snapshot_status": "missing_or_fetch_failed",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "083eec10020e3949",
+    "missing": [
+      "missing_original_url",
+      "missing_full_text",
+      "missing_snapshot"
+    ]
+  },
+  "raw_qc_decision": "block",
+  "raw_qc_downstream_use": "not_allowed",
+  "degradation_reasons": [
+    "index_only_or_directory_page",
+    "missing_full_text",
+    "missing_snapshot"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "summary_only",
+  "visible_range": "采集通道提供的标题与摘要",
+  "evidence_level": "discovery_only",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "RL微调VLM的鲁棒性与思维链一致性研究",
+    "discovery_summary": "强化学习（RL）微调被扩展至视觉语言模型（VLM）。研究发现，简单的文本扰动——误导性标题或错误思维链（CoT）——会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。闭源模型呈现类似失败模式，但鲁棒性和推理一致性更强。进一步分析揭示准确性与忠实性的权衡：微调提升基准准确率，但同时侵蚀CoT的可靠性及对上下文变化的鲁棒性；对抗性增强可改善鲁棒性，却无法阻止忠实性漂移。引入忠实性感知奖励能恢复答案与推理的对齐，但与增强结合时训练易崩溃到捷径策略。这些发现强调需联合关注正确性、鲁棒性与视觉推理的忠实性。",
+    "source_name": "Apple Machine Learning Research（RSS）",
+    "origin_url": "",
+    "discovered_at": "2026-07-03T01:49:50.172Z",
+    "rank_on_page": 16,
+    "discovery_status": "discovered"
+  },
+  "source_role": "discovery_source",
+  "origin_fetch_status": "summary_only",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "e3b0c44298fc1c14",
+  "content_hash": "083eec10020e3949",
+  "full_text_hash": "083eec10020e3949",
+  "semantic_hash": "1894230c1c9f2780",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-03T01:59:31.603Z",
+  "last_seen_at": "2026-07-03T01:59:31.603Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "强化学习（RL）微调被扩展至视觉语言模型（VLM）。研究发现，简单的文本扰动——误导性标题或错误思维链（CoT）——会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。闭源模型呈现类似失败模式，但鲁棒性和推理一致性更强。进一步分析揭示准确性与忠实性的权衡：微调提升基准准确率，但同时侵蚀CoT的可靠性及对上下文变化的鲁棒性；对抗性增强可改善鲁棒性，却无法阻止忠实性漂移。引入忠实性感知奖励能恢复答案与推理的对齐，但与增强结合时训练易崩溃到捷径策略。这些发现强调需联合关注正确性、鲁棒性与视觉推理的忠实性。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "强化学习（RL）微调被扩展至视觉语言模型（VLM）。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "研究发现，简单的文本扰动——误导性标题或错误思维链（CoT）——会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "闭源模型呈现类似失败模式，但鲁棒性和推理一致性更强。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "进一步分析揭示准确性与忠实性的权衡：微调提升基准准确率，但同时侵蚀CoT的可靠性及对上下文变化的鲁棒性；对抗性增强可改善鲁棒性，却无法阻止忠实性漂移。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "引入忠实性感知奖励能恢复答案与推理的对齐，但与增强结合时训练易崩溃到捷径策略。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-03T01:59:31.603Z",
+  "business_elements": {
+    "companies": [
+      "Apple Machine Learning Research（RSS）"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [],
+    "affected_departments": [],
+    "numbers": [],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "强化学习（RL）微调被扩展至视觉语言模型（VLM）。研究发现，简单的文本扰动——误导性标题或错误思维链（CoT）——会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。闭源模型呈现类似失败模式，但鲁棒性和推理一致性更强。进一步分析揭示准确性与忠实性的权衡：微调提升基准准确率，但同时侵蚀CoT的可靠性及对上下文变化的鲁棒性；对抗性增强可改善鲁棒性，却无法阻止忠实性漂移。引入忠实性感知奖励能恢复答案与推理的对齐，但与增强结合时训练易崩溃到捷径策略。这些发现强调需联合关注正确性、鲁棒性与视觉推理的忠实性。",
+      "强化学习（RL）微调被扩展至视觉语言模型（VLM）。",
+      "研究发现，简单的文本扰动——误导性标题或错误思维链（CoT）——会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。"
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 4,
+    "importance_reason": "technical trend or capability shift; rubric=4 concrete important change",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 1,
+    "case_richness": 1,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索",
+    "没有成本、收入、采用率或市场规模数字",
+    "没有可用全文快照"
+  ],
+  "raw_status": "ignored",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# RL微调VLM的鲁棒性与思维链一致性研究\n\n- raw_id: R-121\n- title_zh: RL微调VLM的鲁棒性与思维链一致性研究\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: no-url\n- source_name: Apple Machine Learning Research（RSS）\n- collected_at: 2026-07-03T01:59:31.603Z\n\n## clean_text\n\n强化学习（RL）微调被扩展至视觉语言模型（VLM）。研究发现，简单的文本扰动——误导性标题或错误思维链（CoT）——会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。闭源模型呈现类似失败模式，但鲁棒性和推理一致性更强。进一步分析揭示准确性与忠实性的权衡：微调提升基准准确率，但同时侵蚀CoT的可靠性及对上下文变化的鲁棒性；对抗性增强可改善鲁棒性，却无法阻止忠实性漂移。引入忠实性感知奖励能恢复答案与推理的对齐，但与增强结合时训练易崩溃到捷径策略。这些发现强调需联合关注正确性、鲁棒性与视觉推理的忠实性。\n\n## full_text\n\n强化学习（RL）微调被扩展至视觉语言模型（VLM）。研究发现，简单的文本扰动——误导性标题或错误思维链（CoT）——会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。闭源模型呈现类似失败模式，但鲁棒性和推理一致性更强。进一步分析揭示准确性与忠实性的权衡：微调提升基准准确率，但同时侵蚀CoT的可靠性及对上下文变化的鲁棒性；对抗性增强可改善鲁棒性，却无法阻止忠实性漂移。引入忠实性感知奖励能恢复答案与推理的对齐，但与增强结合时训练易崩溃到捷径策略。这些发现强调需联合关注正确性、鲁棒性与视觉推理的忠实性。\n\n## extraction_diagnostics\n\n- extraction_method: no_url_summary_fallback\n- readability_score: 0\n- fetch_status: no-url-summary-only\n- extraction_quality: failed\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 强化学习（RL）微调被扩展至视觉语言模型（VLM）。研究发现，简单的文本扰动——误导性标题或错误思维链（CoT）——会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。闭源模型呈现类似失败模式，但鲁棒性和推理一致性更强。进一步分析揭示准确性与忠实性的权衡：微调提升基准准确率，但同时侵蚀CoT的可靠性及对上下文变化的鲁棒性；对抗性增强可改善鲁棒性，却无法阻止忠实性漂移。引入忠实性感知奖励能恢复答案与推理的对齐，但与增强结合时训练易崩溃到捷径策略。这些发现强调需联合关注正确性、鲁棒性与视觉推理的忠实性。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 强化学习（RL）微调被扩展至视觉语言模型（VLM）。\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 研究发现，简单的文本扰动——误导性标题或错误思维链（CoT）——会显著降低模型鲁棒性和置信度，且开源模型衰退更明显。\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 闭源模型呈现类似失败模式，但鲁棒性和推理一致性更强。\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 进一步分析揭示准确性与忠实性的权衡：微调提升基准准确率，但同时侵蚀CoT的可靠性及对上下文变化的鲁棒性；对抗性增强可改善鲁棒性，却无法阻止忠实性漂移。\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 引入忠实性感知奖励能恢复答案与推理的对齐，但与增强结合时训练易崩溃到捷径策略。\n"
+}
