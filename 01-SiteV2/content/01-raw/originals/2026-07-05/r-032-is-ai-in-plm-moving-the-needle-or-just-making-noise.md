@@ -1,0 +1,303 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-032
+title: "Is AI in PLM moving the needle or just making noise ?"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://www.engineering.com/is-ai-in-plm-moving-the-needle-or-just-making-noise/"
+canonical_url: "https://engineering.com/is-ai-in-plm-moving-the-needle-or-just-making-noise"
+source_name: "engineering.com"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-29T19:15:00Z"
+collected_at: 2026-07-05T02:07:32.853Z
+language: mixed
+full_text_hash: 5be94e0dc361e2ff
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-05/r-032-is-ai-in-plm-moving-the-needle-or-just-making-noise.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-05/r-032-is-ai-in-plm-moving-the-needle-or-just-making-noise.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":17575,"paragraph_count":52,"sentence_count":130,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 17575
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5be94e0dc361e2ff","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 920c688836504e78
+content_hash: 5be94e0dc361e2ff
+semantic_hash: 15584c96c881a144
+duplicate_of: ""
+first_seen_at: "2026-06-29T19:15:00Z"
+last_seen_at: 2026-07-05T02:07:32.853Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["engineering.com"],"products":["agents"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["2026","06","29","19","15","00","28","5%"],"quotes":["aspirational.","trough of disillusionment","Strategic PLM Implementation: How to Avoid the Typical Ten Mistakes,","If you have a lousy process and you digitize it, you get a digital lousy process,","generative,"]}
+evidence_seed: {"company_actions":["2026-06-29T19:15:00Z","As with so many industry gatherings over the past two years, artificial intelligence (AI) dominated the conversation at the PLM Road Map and PDT North America 2026 conference, held in the Washington D.","The core question fixating for the industry is clear: Does AI actually move the needle in Product Lifecycle Management (PLM), or is it just adding to the noise?"],"case_details":[],"workflow_changes":["Let’s examine a few patterns identified by users implementing AI into PLM workflows."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"2026-06-29T19:15:00Z","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Let’s examine a few patterns identified by users implementing AI into PLM workflows.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As with so many industry gatherings over the past two years, artificial intelligence (AI) dominated the conversation at the PLM Road Map and PDT North America 2026 conference, held in the Washington D.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The core question fixating for the industry is clear: Does AI actually move the needle in Product Lifecycle Management (PLM), or is it just adding to the noise?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"This was underscored by three patterns that prevailed throughout the two-day event.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"These patterns have often been overlooked…hence the emphasis here.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-05T02:07:32.853Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Is AI in PLM moving the needle or just making noise ?
+
+## clean_text
+
+Let’s examine a few patterns identified by users implementing AI into PLM workflows.
+As with so many industry gatherings over the past two years, artificial intelligence (AI) dominated the conversation at the PLM Road Map and PDT North America 2026 conference, held in the Washington D.C. area in May. The core question fixating for the industry is clear: Does AI actually move the needle in Product Lifecycle Management (PLM), or is it just adding to the noise? This was underscored by three patterns that prevailed throughout the two-day event. These patterns have often been overlooked…hence the emphasis here.
+The first pattern, central to all 28 presentations, is that data serves as the foundation for both AI and PLM, yet for most organizations, it remains a massive mess. In their thought-leadership vignettes, PLM solution providers emphasized that data quality and completeness must be addressed first. Enterprise users, by contrast, contended that the inclusion of AI in PLM operations will be instrumental in solving their data problems.
+The second pattern is the AI validation gap, which divides solution providers from practitioners. Users commonly reported low confidence in their ability to validate AI outputs—sometimes as low as 5%. In contrast, solution providers pegged user confidence at an average of 33%, according to a recently published CIMdata research report. This 6-fold disconnect came up frequently during the conference sessions.
+The third pattern is the contrast between solution provider optimism and user caution. Many of the presentations aligned with PLM core concepts were “aspirational.”
+The conference brought together a wide variety PLM practitioners from Boeing, Cummins, Eaton, Massachusetts Institute of Technology (MIT) Lincoln Laboratory, the U.S. Navy, NASA, Denso Corporation, and others, as well as representatives from major PLM software providers, system integrators, and standards bodies.
+Critical presentation themes included:
+Data always needs a lot of work: whether that work is best done with AI or before AI’s implementation was a point of disagreement between users and solution providers.
+AI is augmentation, not replacement: standards, configuration management, and governance are the load-bearing back office.
+Cultural change and knowledge capture persist as barriers to AI’s use: the biggest constraints are in the workforce: lack of skills, lack of experience, misplaced dynamics and the loss of institutional knowledge due to retirements.
+In my conference opener, I stressed that AI in PLM is at a tipping point, early in what Gartner calls the hype cycle, with a “trough of disillusionment” likely before widespread, mature use. I pushed back on the narrative that AI will replace PLM wholesale, noting the complexity of PLM environments compared to the transaction-based systems AI is disrupting now. I pointed out that PLM environments embed decades of domain expertise and iterative innovation, all of which lack the codification that AI has typically relied on.
+Thus, the right framework for seeing AI in PLM is as Augmented Intelligence. Yes, AI delivers actionable insight to humans in the loop, freeing time for product developers to increase their employers’ bottom lines. Data quality and data governance are the gating issues, and without both, the rest is theater.
+The conference’s optimistic day-one tone received a sobering counterpoint from day two’s opening speaker, Professor Dr. Martin Eigner of Eigner Consult in Baden-Baden, Germany. In a keynote presentation titled “Strategic PLM Implementation: How to Avoid the Typical Ten Mistakes,” Dr. Eigner stated that 60% to 75% of PLM projects fail to achieve their original goals fully.
+“If you have a lousy process and you digitize it, you get a digital lousy process,” he said. The AI conversations everyone is excited about will hit the same walls that PLM runs into unless 10 foundational problems are addressed. His list includes weak executive sponsorship, vague key performance indicators (KPIs), unmanaged project scope, failures of change management, the absence of effective governance, undefined processes, allowing IT to frame the PLM project, over dependence on Excel spreadsheets, poor choices of vendors and solution providers, and weak or non-existent technology strategies.
+The Boeing Company’s chief AI & autonomy officer for Engineering, Test & Technology, Vishwa Uddanwadiker, presented updates on Boeing’s AI journey to help small- and medium-sized enterprise (SME) supply chain partners gain a better grasp of AI. Boeing’s diverse aerospace operations depend on an incredibly complex supply chain that includes many SMEs.
+In the real world, framing AI as “generative,” i.e., something of a high-IQ word-processor, must be questioned, said Uddanwadiker. Boeing uses a broad portfolio of AI as “tactical legs” aiding perception, computer vision, spatial awareness, and edge computing, as well as generative AI for engineering productivity. His presentation covered Boeing’s use of AI in a paint robot, drone inspection, parts-counting in warehouses, and detecting taxiing hazards on airport runways. These are real and practical, he observed, not “aspirational.”
+Additionally, he noted that in the A&D industry, AI cannot be “tested in production.” Boeing’s failure-rate baseline is 10-to-the-minus-9. The cost and effort curve of getting to 10-to-the-minus-9 is “exponential,” he said.
+Dr. Uyiosa Abusomwan, director of engineering digitalization and AI at Eaton’s Corporate CTO Office, opened his presentation with a defining statistic from McKinsey & SimScale: 78% of organizations claim to use AI, but only 3% of engineering leaders report substantial productivity gains. He discussed closing that gap through a corporate initiative that aims to double engineering throughput while driving toward zero lead time.
+Dr. Abusomwan also discussed two successful Eaton development projects, a supercharger and a transformer, which used fully orchestrated,orchestrated AI-driven workflows from RFQ through a validated CAD model and drawings. Nevertheless, he continued, “We save a million dollars here, US$1.5 million there. What is that really? Are we transforming how we do things? Can we really scale this?”
+Dr. Abusomwan then pivoted to the harder question: in an enterprise with US$26 billion in revenue and hundreds of thousands of products, why is the enterprise-level AI impact still hovering around 6%? His answer: data silos, immature governance, disjointed tool chains that resist integration, cultural resistance, AI “anxiety,” gaps in engineering training, and data security. CIMdata’s community is uniquely placed to address several of these, he noted.
+Dr. Abusomwan closed his presentation by providing the audience with four elements of enterprise AI strategy that amplify business impact, namely:
+Ensure AI pilots have integration intent.
+Invest in a shared data infrastructure with a unified schema and semantics.
+Deploy AI workflows that cut across the product lifecycle.
+Create a continuous feedback loop that ensures each new effort builds on prior successes.
+He concluded: “Embedding AI into the fabric of enterprise-wide product development processes and decision-making can unlock impactful, lasting transformation.”
+O. Scott Beard, principal technical architect for AI systems at Cummins Inc., his presentation “If I Only Had a Brain: How Cummins Is Engineering AI for PLM & Beyond.” In it, he characterized Cummins’ AI journey as a Wizard of Oz roadmap, i.e., that today’s AI tools are the scarecrow…intelligence without a brain.
+Cummins’ goal, Beard said, is to give the enterprise an actual brain, then heart (governance), then courage (agency). Industrial companies don’t lack AI tools, he pointed out; they lack the connected product knowledge to use them well.
+He noted that Cummins has built a working AI solution for a unified search and chat layer on top of their PLM. Among other benefits, Beard said, 13,000 engineers now have click-through to source documents with optical character recognition (OCR) on 10 million-plus engineering drawings. As one example, PFAS materials [per- and polyfluoroalkyl substances, a.k.a. “forever chemicals,” e.g., Teflon] and restricted chemicals can be found near-instantly. This was the ROI hook, Beard said, that unlocked the enterprise-scale, real-world compliance use that funds the program. Wicked witches, Beard’s name for change management resistance, are still ahead. They are real and not to be underestimated.
+Where AI stands now in relation to PLM was spelled out by Dr. Diego Tamburini, CIMdata’s Practice Director for AI in PLM. He presented findings from CIMdata’s groundbreaking, recent global AI-in-PLM adoption study. CIMdata surveyed industrial users as well as providers of software and services to directly compare supply and demand.
+The research study covered AI’s journey stage, Dr. Tamburini explained,explained where AI is being applied, deployment patterns, expected and realized benefits, blockers, governance, sourcing, and selection criteria. Particular attention was paid to the gaps between what users report and what software and service providers assume they report. Among the study’s conclusions: data and process foundations come first, integration is the dominant criterion for selecting solutions, and users should own AI governance rather than delegate it.
+A key finding of the ground-breaking CIMdata study is that most industrial users are still early in their AI journey and that their fear of falling behind their peers is largely unfounded, Dr. Tamburini said. Software providers are much further along, with most already shipping AI commercially, while most users are still piloting. AI adoption in PLM is notably uneven. Industrial users are building their own AI for general-purpose use cases like search and content generation, he added. Still, the PLM-specific domains (e.g., configuration management, BOMs, and engineering change) remain largely untouched. Those areas require integration with PLM solutions that users can’t easily build on their own. In them, users are still waiting for PLM providers.
+Finally, Dr. Tamburini noted that a new category is emerging: AI/PLM middleware providers that focus on digital thread enablement, RAG-type AI, and integration across the PLM ecosystem.
+The conference focus shifted to the needs of the U.S. Department of War with presentations by Daniel Hettema of the Office of the Under Secretary of War for Research and Engineering, Robert Lamanna of the U.S. Navy’s Sea Systems Command, and Denise Fitzgerald, a group leader at the MIT Lincoln Laboratory, a federally funded R&D center sponsored by the U.S. Air Force that also works with other areas of the U.S. military.
+In his keynote presentation, Daniel Hettema spoke on “Engineering at the Speed of Mission: The Next Era of Defense Systems.” Hettema is the director of Digital Engineering, Modeling & Simulation, a Pentagon unit that supports 150,000-plus engineers and is focused on accuracy and speed.
+He opened with a caution about accuracy: a misplaced decimal in the Titan IV launch software put a MilStar 3 military communications satellite into a useless orbit, costing taxpayers $2.4 billion (in today’s dollars). Three decades later, “it’s still drifting in space,” he said. “Better digital integration would have caught it.”
+Turning to the need for speed in aerospace engineering, he said that China “iterated” its Chengdu J-20 stealth fighter aircraft in a fraction of the time required for its U.S. counterpart, the Lockheed Martin F-35. “The Secretary of War would rather have an 85% solution in the hands of the warfighter than a 100% solution stuck in test,” Hettema said.
+Robert Lamanna serves several roles: Director of Model-Based Enterprise for the U.S. Navy’s Program Executive Office Integrated Warfare Systems (PEO IWS), Project Lead on the Industrial Base Cloud Hosting Environment (IB CHE), and Technical POC for the Naval Surface Warfare Center, Port Hueneme. His presentation was titled “The Navy’s Digital Evolution: Leveraging a Focused AI.”
+He noted that: Just as human DNA is the blueprint of life, PLM is the product’s DNA serving as its digital backbone with the supporting analytic, modeling, and simulation applications (MBSE, SLM, etc.) serving as the supporting “proteins” that constantly improve the PLM of that product throughout its lifecycle.
+Historically, Navy engineers have worked mostly from 2D drawings. To make the best use of PLM and AI, the Navy must convert that technical data from “analog” to digital so that a digital twin can be developed that incorporates both structured and unstructured data. He noted that the IB CHE team recently completed an analog-to-digital conversion of a system’s technical data package (TDP) using an AI model that converted 40,000 2D drawings into a PLM-compatible digital structure with 98% accuracy.
+Lamanna stated that from here, a “focused, semantic, agentic AI” can be used to provide contextual understanding, where semantic layers enable agents to grasp business meaning, relationships, and data context, reducing the need for complex manual SQL queries. As the Navy digitally evolves, this analog-to-digital push is enabling the eventual move to 3D model-based work.
+In a presentation titled “Democratizing PLM with Low Code Extensions that Enable AI Data Readiness,” Denise Fitzgerald of MIT’s Lincoln Laboratory stressed that future battlegrounds will operate at the speed of AI with autonomous swarms, human-robot collaboration, and decision-making driven by AI.
+Engineering has to match that battlefield pace and scope, she said, by reframing PLM as an operating system. With MIT Lincoln Laboratory handling about US$1.6 billion in applied research per year, including 600 to 700 programs sponsored by agencies across the federal government, she sees the need to treat the anticipated high speeds of future battlefields as urgent.
+The role of low-code extensions is to connect what enterprise tools can’t, Fitzgerald said. Given that AI will automate 30% to 70% of engineering tasks in the coming years, AI is a force multiplier, not a replacement, she commented. “AI handles the busyworkbusy work; humans steer.”
+Terry Hill of NASA started his presentation with a reality check to balance the conference’s overall AI optimism. In his keynote presentation, “NASA’s Digital Engineering Approach to AI: All that Glitters is Not Gold,” Hill pointed out that NASA’s AI stake is unusual and demanding because people die if a mission fails.
+As digital engineering program manager in NASA’s Office of Chief Engineer, Hill said the agency invests in AI for physics-aware, real-time, scalable, deeply integrated engineering tools. NASA’s tools have to be auditable in failure investigations, he added.
+Lessons-learned databases that get used before incidents, not just after, are the real ROI target at NASA, he observedNASA, and “quiet failure ” is the new failure mode. Highly complex AI-augmented systems can underperform without clear signals, he added, and this emerging risk pattern scares him: “the system isn’t broken, it’s just wrong, and you don’t know.”
+SAE International, the long-standing standards organization, has a digital transformation problem of its own. And it’s a challenging one, as explained by Leslie McKay, vice-chair of SAE’s Digital Standards Alliance, in her presentation, “Supporting the Digital Transformation of the Mobility Industry.”
+The Digital Standards Alliance was created to progress the digitization of technical standards. SAE alone publishes roughly 10,000 standards generated over the past 10 decades by 750-plus councils, committees, and task groups. Standards are written by industry volunteers and approved via consensus vote, typically within a committee framework.
+SAE is not alone in this standards struggle. The International Standards Organization (ISO) has over 25,000 standards, and the American Society for Testing and Materials (ASTM) has over 12,000. Worldwide, there are dozens of other standards bodies.
+Nearly all standards are written by committees, and nearly all have 2D illustrations. Today, most standards are published as PDF documents. Unfortunately, “standards are not written in a way that makes them easily read by machines,” McKay observed, which is the core requirement of digital transformation.
+As described, CIMdata’s 2026 PLM Road Map and PDT North America conference focused primarily on whether AI can meaningfully advance PLM or simply generate empty noise. The proceedings revealed a distinct disconnect between optimistic software providers and cautious enterprise users, specifically highlighting a major validation gap concerning AI outputs and the reality that baseline organizational data remains a massive mess. While industry giants like Boeing, Eaton, and Cummins demonstrated practical AI applications such as automated workflows and unified searches, they frequently cited systemic barriers like data silos, cultural resistance, and low enterprise-level productivity returns. Ultimately, insights from NASA, the U.S. Navy, and standards organizations like SAE International emphasized that AI must function as a strictly auditable mechanism of human augmentation, which depends heavily on a foundational push to convert legacy, analog data into machine-readable digital formats. Many of these topics will be addressed again during PLM Road Map and PDT EMEA to be held in Gothenburg, Sweden, on the 4th and 5th of November.
+You might also like
+
+## full_text
+
+Let’s examine a few patterns identified by users implementing AI into PLM workflows.
+As with so many industry gatherings over the past two years, artificial intelligence (AI) dominated the conversation at the PLM Road Map and PDT North America 2026 conference, held in the Washington D.C. area in May. The core question fixating for the industry is clear: Does AI actually move the needle in Product Lifecycle Management (PLM), or is it just adding to the noise? This was underscored by three patterns that prevailed throughout the two-day event. These patterns have often been overlooked…hence the emphasis here.
+The first pattern, central to all 28 presentations, is that data serves as the foundation for both AI and PLM, yet for most organizations, it remains a massive mess. In their thought-leadership vignettes, PLM solution providers emphasized that data quality and completeness must be addressed first. Enterprise users, by contrast, contended that the inclusion of AI in PLM operations will be instrumental in solving their data problems.
+The second pattern is the AI validation gap, which divides solution providers from practitioners. Users commonly reported low confidence in their ability to validate AI outputs—sometimes as low as 5%. In contrast, solution providers pegged user confidence at an average of 33%, according to a recently published CIMdata research report. This 6-fold disconnect came up frequently during the conference sessions.
+The third pattern is the contrast between solution provider optimism and user caution. Many of the presentations aligned with PLM core concepts were “aspirational.”
+The conference brought together a wide variety PLM practitioners from Boeing, Cummins, Eaton, Massachusetts Institute of Technology (MIT) Lincoln Laboratory, the U.S. Navy, NASA, Denso Corporation, and others, as well as representatives from major PLM software providers, system integrators, and standards bodies.
+Critical presentation themes included:
+Data always needs a lot of work: whether that work is best done with AI or before AI’s implementation was a point of disagreement between users and solution providers.
+AI is augmentation, not replacement: standards, configuration management, and governance are the load-bearing back office.
+Cultural change and knowledge capture persist as barriers to AI’s use: the biggest constraints are in the workforce: lack of skills, lack of experience, misplaced dynamics and the loss of institutional knowledge due to retirements.
+In my conference opener, I stressed that AI in PLM is at a tipping point, early in what Gartner calls the hype cycle, with a “trough of disillusionment” likely before widespread, mature use. I pushed back on the narrative that AI will replace PLM wholesale, noting the complexity of PLM environments compared to the transaction-based systems AI is disrupting now. I pointed out that PLM environments embed decades of domain expertise and iterative innovation, all of which lack the codification that AI has typically relied on.
+Thus, the right framework for seeing AI in PLM is as Augmented Intelligence. Yes, AI delivers actionable insight to humans in the loop, freeing time for product developers to increase their employers’ bottom lines. Data quality and data governance are the gating issues, and without both, the rest is theater.
+The conference’s optimistic day-one tone received a sobering counterpoint from day two’s opening speaker, Professor Dr. Martin Eigner of Eigner Consult in Baden-Baden, Germany. In a keynote presentation titled “Strategic PLM Implementation: How to Avoid the Typical Ten Mistakes,” Dr. Eigner stated that 60% to 75% of PLM projects fail to achieve their original goals fully.
+“If you have a lousy process and you digitize it, you get a digital lousy process,” he said. The AI conversations everyone is excited about will hit the same walls that PLM runs into unless 10 foundational problems are addressed. His list includes weak executive sponsorship, vague key performance indicators (KPIs), unmanaged project scope, failures of change management, the absence of effective governance, undefined processes, allowing IT to frame the PLM project, over dependence on Excel spreadsheets, poor choices of vendors and solution providers, and weak or non-existent technology strategies.
+The Boeing Company’s chief AI & autonomy officer for Engineering, Test & Technology, Vishwa Uddanwadiker, presented updates on Boeing’s AI journey to help small- and medium-sized enterprise (SME) supply chain partners gain a better grasp of AI. Boeing’s diverse aerospace operations depend on an incredibly complex supply chain that includes many SMEs.
+In the real world, framing AI as “generative,” i.e., something of a high-IQ word-processor, must be questioned, said Uddanwadiker. Boeing uses a broad portfolio of AI as “tactical legs” aiding perception, computer vision, spatial awareness, and edge computing, as well as generative AI for engineering productivity. His presentation covered Boeing’s use of AI in a paint robot, drone inspection, parts-counting in warehouses, and detecting taxiing hazards on airport runways. These are real and practical, he observed, not “aspirational.”
+Additionally, he noted that in the A&D industry, AI cannot be “tested in production.” Boeing’s failure-rate baseline is 10-to-the-minus-9. The cost and effort curve of getting to 10-to-the-minus-9 is “exponential,” he said.
+Dr. Uyiosa Abusomwan, director of engineering digitalization and AI at Eaton’s Corporate CTO Office, opened his presentation with a defining statistic from McKinsey & SimScale: 78% of organizations claim to use AI, but only 3% of engineering leaders report substantial productivity gains. He discussed closing that gap through a corporate initiative that aims to double engineering throughput while driving toward zero lead time.
+Dr. Abusomwan also discussed two successful Eaton development projects, a supercharger and a transformer, which used fully orchestrated,orchestrated AI-driven workflows from RFQ through a validated CAD model and drawings. Nevertheless, he continued, “We save a million dollars here, US$1.5 million there. What is that really? Are we transforming how we do things? Can we really scale this?”
+Dr. Abusomwan then pivoted to the harder question: in an enterprise with US$26 billion in revenue and hundreds of thousands of products, why is the enterprise-level AI impact still hovering around 6%? His answer: data silos, immature governance, disjointed tool chains that resist integration, cultural resistance, AI “anxiety,” gaps in engineering training, and data security. CIMdata’s community is uniquely placed to address several of these, he noted.
+Dr. Abusomwan closed his presentation by providing the audience with four elements of enterprise AI strategy that amplify business impact, namely:
+Ensure AI pilots have integration intent.
+Invest in a shared data infrastructure with a unified schema and semantics.
+Deploy AI workflows that cut across the product lifecycle.
+Create a continuous feedback loop that ensures each new effort builds on prior successes.
+He concluded: “Embedding AI into the fabric of enterprise-wide product development processes and decision-making can unlock impactful, lasting transformation.”
+O. Scott Beard, principal technical architect for AI systems at Cummins Inc., his presentation “If I Only Had a Brain: How Cummins Is Engineering AI for PLM & Beyond.” In it, he characterized Cummins’ AI journey as a Wizard of Oz roadmap, i.e., that today’s AI tools are the scarecrow…intelligence without a brain.
+Cummins’ goal, Beard said, is to give the enterprise an actual brain, then heart (governance), then courage (agency). Industrial companies don’t lack AI tools, he pointed out; they lack the connected product knowledge to use them well.
+He noted that Cummins has built a working AI solution for a unified search and chat layer on top of their PLM. Among other benefits, Beard said, 13,000 engineers now have click-through to source documents with optical character recognition (OCR) on 10 million-plus engineering drawings. As one example, PFAS materials [per- and polyfluoroalkyl substances, a.k.a. “forever chemicals,” e.g., Teflon] and restricted chemicals can be found near-instantly. This was the ROI hook, Beard said, that unlocked the enterprise-scale, real-world compliance use that funds the program. Wicked witches, Beard’s name for change management resistance, are still ahead. They are real and not to be underestimated.
+Where AI stands now in relation to PLM was spelled out by Dr. Diego Tamburini, CIMdata’s Practice Director for AI in PLM. He presented findings from CIMdata’s groundbreaking, recent global AI-in-PLM adoption study. CIMdata surveyed industrial users as well as providers of software and services to directly compare supply and demand.
+The research study covered AI’s journey stage, Dr. Tamburini explained,explained where AI is being applied, deployment patterns, expected and realized benefits, blockers, governance, sourcing, and selection criteria. Particular attention was paid to the gaps between what users report and what software and service providers assume they report. Among the study’s conclusions: data and process foundations come first, integration is the dominant criterion for selecting solutions, and users should own AI governance rather than delegate it.
+A key finding of the ground-breaking CIMdata study is that most industrial users are still early in their AI journey and that their fear of falling behind their peers is largely unfounded, Dr. Tamburini said. Software providers are much further along, with most already shipping AI commercially, while most users are still piloting. AI adoption in PLM is notably uneven. Industrial users are building their own AI for general-purpose use cases like search and content generation, he added. Still, the PLM-specific domains (e.g., configuration management, BOMs, and engineering change) remain largely untouched. Those areas require integration with PLM solutions that users can’t easily build on their own. In them, users are still waiting for PLM providers.
+Finally, Dr. Tamburini noted that a new category is emerging: AI/PLM middleware providers that focus on digital thread enablement, RAG-type AI, and integration across the PLM ecosystem.
+The conference focus shifted to the needs of the U.S. Department of War with presentations by Daniel Hettema of the Office of the Under Secretary of War for Research and Engineering, Robert Lamanna of the U.S. Navy’s Sea Systems Command, and Denise Fitzgerald, a group leader at the MIT Lincoln Laboratory, a federally funded R&D center sponsored by the U.S. Air Force that also works with other areas of the U.S. military.
+In his keynote presentation, Daniel Hettema spoke on “Engineering at the Speed of Mission: The Next Era of Defense Systems.” Hettema is the director of Digital Engineering, Modeling & Simulation, a Pentagon unit that supports 150,000-plus engineers and is focused on accuracy and speed.
+He opened with a caution about accuracy: a misplaced decimal in the Titan IV launch software put a MilStar 3 military communications satellite into a useless orbit, costing taxpayers $2.4 billion (in today’s dollars). Three decades later, “it’s still drifting in space,” he said. “Better digital integration would have caught it.”
+Turning to the need for speed in aerospace engineering, he said that China “iterated” its Chengdu J-20 stealth fighter aircraft in a fraction of the time required for its U.S. counterpart, the Lockheed Martin F-35. “The Secretary of War would rather have an 85% solution in the hands of the warfighter than a 100% solution stuck in test,” Hettema said.
+Robert Lamanna serves several roles: Director of Model-Based Enterprise for the U.S. Navy’s Program Executive Office Integrated Warfare Systems (PEO IWS), Project Lead on the Industrial Base Cloud Hosting Environment (IB CHE), and Technical POC for the Naval Surface Warfare Center, Port Hueneme. His presentation was titled “The Navy’s Digital Evolution: Leveraging a Focused AI.”
+He noted that: Just as human DNA is the blueprint of life, PLM is the product’s DNA serving as its digital backbone with the supporting analytic, modeling, and simulation applications (MBSE, SLM, etc.) serving as the supporting “proteins” that constantly improve the PLM of that product throughout its lifecycle.
+Historically, Navy engineers have worked mostly from 2D drawings. To make the best use of PLM and AI, the Navy must convert that technical data from “analog” to digital so that a digital twin can be developed that incorporates both structured and unstructured data. He noted that the IB CHE team recently completed an analog-to-digital conversion of a system’s technical data package (TDP) using an AI model that converted 40,000 2D drawings into a PLM-compatible digital structure with 98% accuracy.
+Lamanna stated that from here, a “focused, semantic, agentic AI” can be used to provide contextual understanding, where semantic layers enable agents to grasp business meaning, relationships, and data context, reducing the need for complex manual SQL queries. As the Navy digitally evolves, this analog-to-digital push is enabling the eventual move to 3D model-based work.
+In a presentation titled “Democratizing PLM with Low Code Extensions that Enable AI Data Readiness,” Denise Fitzgerald of MIT’s Lincoln Laboratory stressed that future battlegrounds will operate at the speed of AI with autonomous swarms, human-robot collaboration, and decision-making driven by AI.
+Engineering has to match that battlefield pace and scope, she said, by reframing PLM as an operating system. With MIT Lincoln Laboratory handling about US$1.6 billion in applied research per year, including 600 to 700 programs sponsored by agencies across the federal government, she sees the need to treat the anticipated high speeds of future battlefields as urgent.
+The role of low-code extensions is to connect what enterprise tools can’t, Fitzgerald said. Given that AI will automate 30% to 70% of engineering tasks in the coming years, AI is a force multiplier, not a replacement, she commented. “AI handles the busyworkbusy work; humans steer.”
+Terry Hill of NASA started his presentation with a reality check to balance the conference’s overall AI optimism. In his keynote presentation, “NASA’s Digital Engineering Approach to AI: All that Glitters is Not Gold,” Hill pointed out that NASA’s AI stake is unusual and demanding because people die if a mission fails.
+As digital engineering program manager in NASA’s Office of Chief Engineer, Hill said the agency invests in AI for physics-aware, real-time, scalable, deeply integrated engineering tools. NASA’s tools have to be auditable in failure investigations, he added.
+Lessons-learned databases that get used before incidents, not just after, are the real ROI target at NASA, he observedNASA, and “quiet failure ” is the new failure mode. Highly complex AI-augmented systems can underperform without clear signals, he added, and this emerging risk pattern scares him: “the system isn’t broken, it’s just wrong, and you don’t know.”
+SAE International, the long-standing standards organization, has a digital transformation problem of its own. And it’s a challenging one, as explained by Leslie McKay, vice-chair of SAE’s Digital Standards Alliance, in her presentation, “Supporting the Digital Transformation of the Mobility Industry.”
+The Digital Standards Alliance was created to progress the digitization of technical standards. SAE alone publishes roughly 10,000 standards generated over the past 10 decades by 750-plus councils, committees, and task groups. Standards are written by industry volunteers and approved via consensus vote, typically within a committee framework.
+SAE is not alone in this standards struggle. The International Standards Organization (ISO) has over 25,000 standards, and the American Society for Testing and Materials (ASTM) has over 12,000. Worldwide, there are dozens of other standards bodies.
+Nearly all standards are written by committees, and nearly all have 2D illustrations. Today, most standards are published as PDF documents. Unfortunately, “standards are not written in a way that makes them easily read by machines,” McKay observed, which is the core requirement of digital transformation.
+As described, CIMdata’s 2026 PLM Road Map and PDT North America conference focused primarily on whether AI can meaningfully advance PLM or simply generate empty noise. The proceedings revealed a distinct disconnect between optimistic software providers and cautious enterprise users, specifically highlighting a major validation gap concerning AI outputs and the reality that baseline organizational data remains a massive mess. While industry giants like Boeing, Eaton, and Cummins demonstrated practical AI applications such as automated workflows and unified searches, they frequently cited systemic barriers like data silos, cultural resistance, and low enterprise-level productivity returns. Ultimately, insights from NASA, the U.S. Navy, and standards organizations like SAE International emphasized that AI must function as a strictly auditable mechanism of human augmentation, which depends heavily on a foundational push to convert legacy, analog data into machine-readable digital formats. Many of these topics will be addressed again during PLM Road Map and PDT EMEA to be held in Gothenburg, Sweden, on the 4th and 5th of November.
+You might also like
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":17575,"paragraph_count":52,"sentence_count":130,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   2026-06-29T19:15:00Z
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Let’s examine a few patterns identified by users implementing AI into PLM workflows.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   As with so many industry gatherings over the past two years, artificial intelligence (AI) dominated the conversation at the PLM Road Map and PDT North America 2026 conference, held in the Washington D.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The core question fixating for the industry is clear: Does AI actually move the needle in Product Lifecycle Management (PLM), or is it just adding to the noise?
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   This was underscored by three patterns that prevailed throughout the two-day event.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   These patterns have often been overlooked…hence the emphasis here.
+
+## business_elements
+
+- companies: engineering.com
+- products: agents
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 06, 29, 19, 15, 00, 28, 5%
+- quotes: aspirational. / trough of disillusionment / Strategic PLM Implementation: How to Avoid the Typical Ten Mistakes, / If you have a lousy process and you digitize it, you get a digital lousy process, / generative,
+
+## evidence_seed
+
+- company_actions: 2026-06-29T19:15:00Z / As with so many industry gatherings over the past two years, artificial intelligence (AI) dominated the conversation at the PLM Road Map and PDT North America 2026 conference, held in the Washington D. / The core question fixating for the industry is clear: Does AI actually move the needle in Product Lifecycle Management (PLM), or is it just adding to the noise?
+- case_details: 暂无公开信息
+- workflow_changes: Let’s examine a few patterns identified by users implementing AI into PLM workflows.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+2026-06-29T19:15:00Z
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

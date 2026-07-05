@@ -1,0 +1,341 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-059
+title: "When the ability to smell goes away"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://arstechnica.com/science/2026/07/when-the-ability-to-smell-goes-away/"
+canonical_url: "https://arstechnica.com/science/2026/07/when-the-ability-to-smell-goes-away"
+source_name: "Ars Technica AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-07-05T02:07:32.988Z
+language: mixed
+full_text_hash: 0b817606733078cc
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-05/r-059-when-the-ability-to-smell-goes-away.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-05/r-059-when-the-ability-to-smell-goes-away.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":13538,"paragraph_count":39,"sentence_count":105,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 13538
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0b817606733078cc","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: b7127e00a1a5e8f1
+content_hash: 0b817606733078cc
+semantic_hash: 5b2ca51c0058d36f
+duplicate_of: ""
+first_seen_at: "2026-07-05T02:07:32.988Z"
+last_seen_at: 2026-07-05T02:07:32.988Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["Ars Technica AI","Meta"],"products":[],"people":[],"industries":["医疗","制造 / 工业","开发者工具"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究"],"business_actions":[],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["14","22","780 million","19","2019","2023","60","30"],"quotes":["After about six months of complete loss, I was just climbing the walls, and I did not feel like myself anymore,","the bestial sense.","Humans are actually quite good at smelling,","two little earthworms lying in their crypts,","These crypts have got little holes underneath, through which the olfactory nerves grow, like roots coming through the bottom of a pot in the garden,"]}
+evidence_seed: {"company_actions":["Disturbances in this critical sense are often linked to problems with brain health.","Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav About 14 years ago, Chrissi Kelly lost her sense of smell.","She had traveled to the Czech Republic to visit family and caught some virus."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Disturbances in this critical sense are often linked to problems with brain health.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav About 14 years ago, Chrissi Kelly lost her sense of smell.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"She had traveled to the Czech Republic to visit family and caught some virus.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Months later, when she still couldn’t smell, she made the rounds to doctors, including her general practitioner and an ear, nose and throat specialist, trying to find answers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"She was diagnosed with anosmia (smell loss), and like many patients with her condition, was told she’d have to learn to live with it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"But for her, the loss was catastrophic.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-05T02:07:32.988Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# When the ability to smell goes away
+
+## clean_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+About 14 years ago, Chrissi Kelly lost her sense of smell. She had traveled to the Czech Republic to visit family and caught some virus. Months later, when she still couldn’t smell, she made the rounds to doctors, including her general practitioner and an ear, nose and throat specialist, trying to find answers.
+She was diagnosed with anosmia (smell loss), and like many patients with her condition, was told she’d have to learn to live with it. But for her, the loss was catastrophic. “After about six months of complete loss, I was just climbing the walls, and I did not feel like myself anymore,” she says.
+Researchers estimate that up to 22 percent of the population lives with smell impairments , like hyposmia (partial smell loss) or anosmia (complete smell loss). And many others live with smell disorders like phantosmia, in which a person picks up phantom smells, or parosmia, where typically pleasant scents like coffee or shampoo begin to register as highly unpleasant (think feces or vomit). Yet the conditions have been poorly understood, underdiagnosed and often minimized by clinicians.
+The pandemic changed that. Covid brought unprecedented attention—and research interest — to the sense of smell . There have been 780 million reported cases of Covid-19 since December 2019 (and many more unreported), according to the World Health Organization, and smell loss is a well-known symptom. In one 2023 survey published in the journal Laryngoscope , 60 percent of individuals with Covid experienced smell loss, most temporarily, but some over the longer term.
+With Covid causing millions of noses worldwide to malfunction at roughly the same time, the virus spurred newfound appreciation for, and research into, this critical sense. As scientists learn more about the way that the sense of smell operates, evidence is mounting that smell is deeply tied not only to quality of life but also to brain health.
+The undervalued sense
+In the 19th century, French brain researcher Paul Broca argued that humans had traded a keen sense of smell for higher intellect, labeling olfaction “the bestial sense.” His ideas led to decades of scientific neglect. Modern research has proved him wrong. Smell enriches life and directs our behavior . It helps parents and children to bond , warns us of environmental dangers, and anchors emotional memory. “Humans are actually quite good at smelling,” says Swedish psychologist Jonas Olofsson, author of The Forgotten Sense: The New Science of Smell and the Extraordinary Power of the Nose .
+We smell by detecting airborne molecules that bind to specialized receptors in the nasal cavity. Millions of olfactory neurons in the upper nose detect these odorants, then send electrical impulses via the olfactory bulbs, which create a sensory map in the brain—basically, a system to identify, distinguish, and remember scents. Unlike vision or hearing, smell directly signals brain areas responsible for emotion (the amygdala ) and memory (the hippocampus), which could be why smells can strongly trigger memories.
+Furthermore, the olfactory bulbs are now known to be among the few brain regions that create new neurons during adulthood. This is thought to help the brain deal with constantly changing environments. The olfactory bulbs are also the most vulnerable part of the brain —a potential entry site for viruses, bacteria, toxins and perhaps even microplastics.
+After losing her sense of smell, Kelly searched for insight and commiseration. Finding neither, she founded two nonprofit patient groups . Along the way, she also became a community scientist, co-publishing more than 30 academic papers with researchers.
+Kelly describes our olfactory bulbs as “two little earthworms lying in their crypts,” located on the bottom surface of the brain’s frontal lobes, directly above the nasal cavity. “These crypts have got little holes underneath, through which the olfactory nerves grow, like roots coming through the bottom of a pot in the garden,” she says. Hair-like extensions from the olfactory nerves protrude into the inside of the nose’s mucous membrane. Olfactory support cells surround and nourish each nerve cell.
+Reasons for smell loss
+Some people lose their sense of smell for no known reason. Others lose it after a virus attacks the olfactory support cells. When the support cells regenerate (four to six weeks later, on average), smell returns. Smell loss can also be due to a head injury that damages the olfactory nerves or causes inflammation. Allergies and sinus infections can cause swelling and inflammation that lead to smell loss. Sometimes the problem clears when the inflammation does. Less fortunate folks, like Kelly, suffer assaults to their olfactory nerves that cause lasting damage.
+And sometimes, smell loss can be a harbinger of deeper trouble. Dave, a wine lover living in the Midwest who asked that his last name be withheld for privacy, says losing his sense of smell 20 years ago was an inconvenience, but he managed. “I faked it,” he says, of taking wine tours in the Napa and Sonoma Valleys with his wife, and on a cruise that kicked off with wine-filled days in Nice, France. After years of doctors telling him they couldn’t find anything wrong with him, he began to experience a slowed gait and tremors, and was diagnosed with Parkinson’s disease .
+There are a lot of unknowns about the earliest—or prodromal—stages of Parkinson’s, says Ethan G. Brown, a neurologist at the University of California, San Francisco’s Movement Disorders Clinic. “We don’t know when neurodegeneration actually starts,” he says.
+A defining feature of the disorder is a major loss of dopamine-producing cells in a brain region called the substantia nigra, and new imaging tools suggest the damage begins years before clear symptoms. Scientists suspect toxic proteins that damage the substantia nigra may first build up in the olfactory bulbs and create smell loss as one of the earliest signs of Parkinson’s.
+Loss of smell also can be an early sign of various other neurodegenerative diseases, including Alzheimer’s and Lewy body dementia, says Zara M. Patel, director of the Stanford Initiative to Cure Smell and Taste Loss . And it shows up in other conditions, too. “So, for example, people with depression have altered olfactory ability, people with schizophrenia have altered olfactory ability, people with autism have altered olfactory ability,” she says. Changes in all kinds of central nervous system processes can show up as a kind of olfactory dysfunction, Patel says.
+In fact, researchers have associated smell disorders with an astounding 139 neurological, physical, and congenital/hereditary conditions , from alcoholism to Zika/Guillain-Barré syndrome. The nature of these associations is not yet clear. Smell loss might be an early indicator of a condition that affects the olfactory bulbs as well as other parts of the brain, as appears to be the case for Parkinson’s. It’s also possible that smell loss contributes to some disorders. Researchers suspect that the olfactory system helps regulate higher brain functions involved in cognition, memory, and emotion, which are involved in many psychiatric disorders , and smell loss could exacerbate those conditions.
+Scientists are also exploring whether inflammation in the olfactory system may contribute to brain changes in schizophrenia . In any case, a lack of smell puts people at risk of missing environmental warnings, like smoke or spoiled food, leading some researchers to call smell loss a public health issue .
+Cracking the code
+Scientists estimate that humans can perceive millions—perhaps even a trillion—distinct odors. “We’re surrounded by molecules floating around us,” says Dmitry Rinberg, a neuroscientist at New York University’s Grossman School of Medicine. “But we still haven’t cracked the code of how the brain turns them into perception.”
+In the early 1990s, Linda Buck and Richard Axel discovered a vast family of around 1,000 different genes in mammals (making up a significant percentage of the genome) that produce an equivalent number of specialized olfactory receptors. This work won a Nobel Prize in 2004 and kicked off the modern age of smell research.
+We now know that olfaction initially bypasses the thalamus —the brain’s central relay station. While all other senses are filtered through the thalamus before reaching the cortex, olfactory signals travel directly into the limbic system (the amygdala and hippocampus). The brain interprets a unique code—or mosaic of activated receptors—to identify specific smells. Ongoing research is mapping how signals from these nasal receptors are systematically organized and sent to specific locations in the brain to evoke smells, memories, and behaviors.
+Another interesting tidbit: In processing odor information, “what’s coming in from your two nostrils doesn’t just become one big blob of activity in the brain,” says Naz Dikecligil, a postdoctoral researcher at the University of Pennsylvania who cowrote an in-depth overview of the human olfactory system in the 2024 Annual Review of Psychology . “They’re maintained as separate channels of information.” That means the brain may track which nostril detected an odor, helping to determine where a smell originates in space.
+Can the sense come back?
+For smell loss patients, the most pressing question is whether smell can be restored.
+Kelly first learned about olfactory training when a doctor mentioned it in passing. The method works sort of like physical therapy, but for smell. Someone practices smelling a set of familiar scents—traditionally lemon, rose, clove, and eucalyptus—twice daily, focusing on recognizing the labeled scents and remembering the smell. The goal is to use repetition and training to generate new receptor cells and harness neuroplasticity, the brain’s ability to rewire neurons for new tasks.
+For every cause of smell loss her team has studied, about 30 percent of patients improve after months of training, says Patel, who ran the first randomized controlled trial of olfactory training in the United States . In that study, 35 patients with loss of smell as measured by the field’s standard metric, called the University of Pennsylvania Smell Test, were randomized to olfactory training or a control group for six months.
+Only patients with loss of smell for more than a year, and whose loss was associated with post‐infectious or unknown causes, were included. Their baseline score was compared to their six‐month score, and an improvement of 10 percent or better was rated as significant; of 19 patients in the experimental group, six showed significant improvement, while only two of 16 control patients improved. In other studies, Patel and her colleagues have found that as much as 50 percent of patients see changes if they pair their training with a steroid sinus rinse.
+A 2024 meta-analysis of 36 olfactory training studies cited a “a notable and statistically significant positive impact of olfactory training on the enhancement of all domains of olfactory function.” Individual studies included in the meta-analysis found a range of improvements spanning 11 percent to 68 percent after 12 to 16 weeks, while one paper found that more people benefited with longer training (58 percent vs. 71 percent).
+Patel acknowledges that olfactory training isn’t a sure bet, but it appears to be effective for some people—and it’s simple and inexpensive. She’s developed easy-to-follow instructions for people to use on their own . There’s also early evidence that olfactory training may improve depression and cognitive functioning. UK researchers recently looked at 23 studies of people age 55 and older who participated in olfactory training for smell loss , concluding that it was associated with “measurable changes in olfactory function, improved cognitive function, specifically semantic verbal fluency and working memory, reduced depressive symptoms, and protection from cognitive decline.” But they say more studies are needed to draw firmer conclusions.
+Kelly credits olfactory therapy with giving her back some capacity to smell. About two years into her recovery, she was in the Austrian Alps when something shifted. She caught the scent of pine trees and sawdust from a nearby logging site. “There was this flutter in my stomach, this sort of quickening of my insides,” she says. “It was like, ‘I’m alive.’”
+Each new discovery about olfaction brings scientists closer to understanding how smell connects to the brain—and how this crucial sense might help reveal or even prevent disease. Kelly counts herself among the lucky ones. Her sense of smell isn’t completely back, but it’s there. And for patients like her, regaining smell isn’t just about detecting odors. It’s about returning to the world.
+This story originally appeared at Knowable Magazine .
+Knowable Magazine
+Knowable Magazine
+Knowable Magazine explores the real-world significance of scholarly work through a journalistic lens.
+49 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+Despite the darkness, I still see signs of hope in America
+2.
+When the ability to smell goes away
+3.
+A martian rock has lots of carbon on it, and it's not clear why
+4.
+Inside the Luddite festival harnessing Gen Z’s rage against Big Tech
+5.
+Review: Supergirl is not the disaster its low box office suggests
+Customize
+
+## full_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+About 14 years ago, Chrissi Kelly lost her sense of smell. She had traveled to the Czech Republic to visit family and caught some virus. Months later, when she still couldn’t smell, she made the rounds to doctors, including her general practitioner and an ear, nose and throat specialist, trying to find answers.
+She was diagnosed with anosmia (smell loss), and like many patients with her condition, was told she’d have to learn to live with it. But for her, the loss was catastrophic. “After about six months of complete loss, I was just climbing the walls, and I did not feel like myself anymore,” she says.
+Researchers estimate that up to 22 percent of the population lives with smell impairments , like hyposmia (partial smell loss) or anosmia (complete smell loss). And many others live with smell disorders like phantosmia, in which a person picks up phantom smells, or parosmia, where typically pleasant scents like coffee or shampoo begin to register as highly unpleasant (think feces or vomit). Yet the conditions have been poorly understood, underdiagnosed and often minimized by clinicians.
+The pandemic changed that. Covid brought unprecedented attention—and research interest — to the sense of smell . There have been 780 million reported cases of Covid-19 since December 2019 (and many more unreported), according to the World Health Organization, and smell loss is a well-known symptom. In one 2023 survey published in the journal Laryngoscope , 60 percent of individuals with Covid experienced smell loss, most temporarily, but some over the longer term.
+With Covid causing millions of noses worldwide to malfunction at roughly the same time, the virus spurred newfound appreciation for, and research into, this critical sense. As scientists learn more about the way that the sense of smell operates, evidence is mounting that smell is deeply tied not only to quality of life but also to brain health.
+The undervalued sense
+In the 19th century, French brain researcher Paul Broca argued that humans had traded a keen sense of smell for higher intellect, labeling olfaction “the bestial sense.” His ideas led to decades of scientific neglect. Modern research has proved him wrong. Smell enriches life and directs our behavior . It helps parents and children to bond , warns us of environmental dangers, and anchors emotional memory. “Humans are actually quite good at smelling,” says Swedish psychologist Jonas Olofsson, author of The Forgotten Sense: The New Science of Smell and the Extraordinary Power of the Nose .
+We smell by detecting airborne molecules that bind to specialized receptors in the nasal cavity. Millions of olfactory neurons in the upper nose detect these odorants, then send electrical impulses via the olfactory bulbs, which create a sensory map in the brain—basically, a system to identify, distinguish, and remember scents. Unlike vision or hearing, smell directly signals brain areas responsible for emotion (the amygdala ) and memory (the hippocampus), which could be why smells can strongly trigger memories.
+Furthermore, the olfactory bulbs are now known to be among the few brain regions that create new neurons during adulthood. This is thought to help the brain deal with constantly changing environments. The olfactory bulbs are also the most vulnerable part of the brain —a potential entry site for viruses, bacteria, toxins and perhaps even microplastics.
+After losing her sense of smell, Kelly searched for insight and commiseration. Finding neither, she founded two nonprofit patient groups . Along the way, she also became a community scientist, co-publishing more than 30 academic papers with researchers.
+Kelly describes our olfactory bulbs as “two little earthworms lying in their crypts,” located on the bottom surface of the brain’s frontal lobes, directly above the nasal cavity. “These crypts have got little holes underneath, through which the olfactory nerves grow, like roots coming through the bottom of a pot in the garden,” she says. Hair-like extensions from the olfactory nerves protrude into the inside of the nose’s mucous membrane. Olfactory support cells surround and nourish each nerve cell.
+Reasons for smell loss
+Some people lose their sense of smell for no known reason. Others lose it after a virus attacks the olfactory support cells. When the support cells regenerate (four to six weeks later, on average), smell returns. Smell loss can also be due to a head injury that damages the olfactory nerves or causes inflammation. Allergies and sinus infections can cause swelling and inflammation that lead to smell loss. Sometimes the problem clears when the inflammation does. Less fortunate folks, like Kelly, suffer assaults to their olfactory nerves that cause lasting damage.
+And sometimes, smell loss can be a harbinger of deeper trouble. Dave, a wine lover living in the Midwest who asked that his last name be withheld for privacy, says losing his sense of smell 20 years ago was an inconvenience, but he managed. “I faked it,” he says, of taking wine tours in the Napa and Sonoma Valleys with his wife, and on a cruise that kicked off with wine-filled days in Nice, France. After years of doctors telling him they couldn’t find anything wrong with him, he began to experience a slowed gait and tremors, and was diagnosed with Parkinson’s disease .
+There are a lot of unknowns about the earliest—or prodromal—stages of Parkinson’s, says Ethan G. Brown, a neurologist at the University of California, San Francisco’s Movement Disorders Clinic. “We don’t know when neurodegeneration actually starts,” he says.
+A defining feature of the disorder is a major loss of dopamine-producing cells in a brain region called the substantia nigra, and new imaging tools suggest the damage begins years before clear symptoms. Scientists suspect toxic proteins that damage the substantia nigra may first build up in the olfactory bulbs and create smell loss as one of the earliest signs of Parkinson’s.
+Loss of smell also can be an early sign of various other neurodegenerative diseases, including Alzheimer’s and Lewy body dementia, says Zara M. Patel, director of the Stanford Initiative to Cure Smell and Taste Loss . And it shows up in other conditions, too. “So, for example, people with depression have altered olfactory ability, people with schizophrenia have altered olfactory ability, people with autism have altered olfactory ability,” she says. Changes in all kinds of central nervous system processes can show up as a kind of olfactory dysfunction, Patel says.
+In fact, researchers have associated smell disorders with an astounding 139 neurological, physical, and congenital/hereditary conditions , from alcoholism to Zika/Guillain-Barré syndrome. The nature of these associations is not yet clear. Smell loss might be an early indicator of a condition that affects the olfactory bulbs as well as other parts of the brain, as appears to be the case for Parkinson’s. It’s also possible that smell loss contributes to some disorders. Researchers suspect that the olfactory system helps regulate higher brain functions involved in cognition, memory, and emotion, which are involved in many psychiatric disorders , and smell loss could exacerbate those conditions.
+Scientists are also exploring whether inflammation in the olfactory system may contribute to brain changes in schizophrenia . In any case, a lack of smell puts people at risk of missing environmental warnings, like smoke or spoiled food, leading some researchers to call smell loss a public health issue .
+Cracking the code
+Scientists estimate that humans can perceive millions—perhaps even a trillion—distinct odors. “We’re surrounded by molecules floating around us,” says Dmitry Rinberg, a neuroscientist at New York University’s Grossman School of Medicine. “But we still haven’t cracked the code of how the brain turns them into perception.”
+In the early 1990s, Linda Buck and Richard Axel discovered a vast family of around 1,000 different genes in mammals (making up a significant percentage of the genome) that produce an equivalent number of specialized olfactory receptors. This work won a Nobel Prize in 2004 and kicked off the modern age of smell research.
+We now know that olfaction initially bypasses the thalamus —the brain’s central relay station. While all other senses are filtered through the thalamus before reaching the cortex, olfactory signals travel directly into the limbic system (the amygdala and hippocampus). The brain interprets a unique code—or mosaic of activated receptors—to identify specific smells. Ongoing research is mapping how signals from these nasal receptors are systematically organized and sent to specific locations in the brain to evoke smells, memories, and behaviors.
+Another interesting tidbit: In processing odor information, “what’s coming in from your two nostrils doesn’t just become one big blob of activity in the brain,” says Naz Dikecligil, a postdoctoral researcher at the University of Pennsylvania who cowrote an in-depth overview of the human olfactory system in the 2024 Annual Review of Psychology . “They’re maintained as separate channels of information.” That means the brain may track which nostril detected an odor, helping to determine where a smell originates in space.
+Can the sense come back?
+For smell loss patients, the most pressing question is whether smell can be restored.
+Kelly first learned about olfactory training when a doctor mentioned it in passing. The method works sort of like physical therapy, but for smell. Someone practices smelling a set of familiar scents—traditionally lemon, rose, clove, and eucalyptus—twice daily, focusing on recognizing the labeled scents and remembering the smell. The goal is to use repetition and training to generate new receptor cells and harness neuroplasticity, the brain’s ability to rewire neurons for new tasks.
+For every cause of smell loss her team has studied, about 30 percent of patients improve after months of training, says Patel, who ran the first randomized controlled trial of olfactory training in the United States . In that study, 35 patients with loss of smell as measured by the field’s standard metric, called the University of Pennsylvania Smell Test, were randomized to olfactory training or a control group for six months.
+Only patients with loss of smell for more than a year, and whose loss was associated with post‐infectious or unknown causes, were included. Their baseline score was compared to their six‐month score, and an improvement of 10 percent or better was rated as significant; of 19 patients in the experimental group, six showed significant improvement, while only two of 16 control patients improved. In other studies, Patel and her colleagues have found that as much as 50 percent of patients see changes if they pair their training with a steroid sinus rinse.
+A 2024 meta-analysis of 36 olfactory training studies cited a “a notable and statistically significant positive impact of olfactory training on the enhancement of all domains of olfactory function.” Individual studies included in the meta-analysis found a range of improvements spanning 11 percent to 68 percent after 12 to 16 weeks, while one paper found that more people benefited with longer training (58 percent vs. 71 percent).
+Patel acknowledges that olfactory training isn’t a sure bet, but it appears to be effective for some people—and it’s simple and inexpensive. She’s developed easy-to-follow instructions for people to use on their own . There’s also early evidence that olfactory training may improve depression and cognitive functioning. UK researchers recently looked at 23 studies of people age 55 and older who participated in olfactory training for smell loss , concluding that it was associated with “measurable changes in olfactory function, improved cognitive function, specifically semantic verbal fluency and working memory, reduced depressive symptoms, and protection from cognitive decline.” But they say more studies are needed to draw firmer conclusions.
+Kelly credits olfactory therapy with giving her back some capacity to smell. About two years into her recovery, she was in the Austrian Alps when something shifted. She caught the scent of pine trees and sawdust from a nearby logging site. “There was this flutter in my stomach, this sort of quickening of my insides,” she says. “It was like, ‘I’m alive.’”
+Each new discovery about olfaction brings scientists closer to understanding how smell connects to the brain—and how this crucial sense might help reveal or even prevent disease. Kelly counts herself among the lucky ones. Her sense of smell isn’t completely back, but it’s there. And for patients like her, regaining smell isn’t just about detecting odors. It’s about returning to the world.
+This story originally appeared at Knowable Magazine .
+Knowable Magazine
+Knowable Magazine
+Knowable Magazine explores the real-world significance of scholarly work through a journalistic lens.
+49 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+Despite the darkness, I still see signs of hope in America
+2.
+When the ability to smell goes away
+3.
+A martian rock has lots of carbon on it, and it's not clear why
+4.
+Inside the Luddite festival harnessing Gen Z’s rage against Big Tech
+5.
+Review: Supergirl is not the disaster its low box office suggests
+Customize
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":13538,"paragraph_count":39,"sentence_count":105,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Disturbances in this critical sense are often linked to problems with brain health.
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav About 14 years ago, Chrissi Kelly lost her sense of smell.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   She had traveled to the Czech Republic to visit family and caught some virus.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Months later, when she still couldn’t smell, she made the rounds to doctors, including her general practitioner and an ear, nose and throat specialist, trying to find answers.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   She was diagnosed with anosmia (smell loss), and like many patients with her condition, was told she’d have to learn to live with it.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   But for her, the loss was catastrophic.
+
+## business_elements
+
+- companies: Ars Technica AI, Meta
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 医疗, 制造 / 工业, 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 14, 22, 780 million, 19, 2019, 2023, 60, 30
+- quotes: After about six months of complete loss, I was just climbing the walls, and I did not feel like myself anymore, / the bestial sense. / Humans are actually quite good at smelling, / two little earthworms lying in their crypts, / These crypts have got little holes underneath, through which the olfactory nerves grow, like roots coming through the bottom of a pot in the garden,
+
+## evidence_seed
+
+- company_actions: Disturbances in this critical sense are often linked to problems with brain health. / Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav About 14 years ago, Chrissi Kelly lost her sense of smell. / She had traveled to the Czech Republic to visit family and caught some virus.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Disturbances in this critical sense are often linked to problems with brain health.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
