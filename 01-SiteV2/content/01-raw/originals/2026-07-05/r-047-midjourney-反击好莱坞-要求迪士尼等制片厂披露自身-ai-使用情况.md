@@ -1,0 +1,220 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-047
+title: "Midjourney 反击好莱坞：要求迪士尼等制片厂披露自身 AI 使用情况"
+title_zh: "Midjourney 反击好莱坞：要求迪士尼等制片厂披露自身 AI 使用情况"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/972/681.htm"
+canonical_url: "https://ithome.com/0/972/681.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-04T23:09:24.000Z"
+collected_at: 2026-07-05T04:56:15.396Z
+language: mixed
+full_text_hash: 360887deec7915a3
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-05/r-047-midjourney-反击好莱坞-要求迪士尼等制片厂披露自身-ai-使用情况.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-05/r-047-midjourney-反击好莱坞-要求迪士尼等制片厂披露自身-ai-使用情况.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 59
+extractor_diagnostics: {"readability_score":59,"text_length":958,"paragraph_count":11,"sentence_count":11,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 958
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"360887deec7915a3","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Midjourney 反击好莱坞：要求迪士尼等制片厂披露自身 AI 使用情况","discovery_summary":"Midjourney 在与迪士尼、环球影业、华纳兄弟的版权诉讼中，申请强制三家影业披露自身 AI 使用情况。Midjourney 辩称其模型使用受版权保护的角色图像训练属于合理使用，并指出影业内部可能也存在类似未经授权下载素材训练 AI 的行为。此前法官裁定影业仅需提供面向消费者的 AI 生成内容，Midjourney 请求撤销该限制，要求影业交出所有在 Midjourney 平台使用过的提示词及对应生成图像。制片厂律师称该请求属于大范围证据搜寻。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/972/681.htm","discovered_at":"2026-07-05T04:46:18.986Z","rank_on_page":36,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: ea89e2e8c27348cf
+content_hash: 360887deec7915a3
+semantic_hash: 9606965a71414583
+duplicate_of: ""
+first_seen_at: "2026-07-04T23:09:24.000Z"
+last_seen_at: 2026-07-05T04:56:15.396Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":false,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_market_structure","importance_score":5,"importance_reason":"market-structure commercial event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":3,"case_richness":2,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":["法律 / 法务","企业服务"],"roles":["法务 / 律师"],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["7","5"],"quotes":[]}
+evidence_seed: {"company_actions":["IT之家 7 月 5 日消息，人工智能初创公司 Midjourney 正与三家好莱坞影业公司陷入持续的法律纠纷，该公司现申请强制要求这几家影业披露自身使用人工智能的相关情况。","IT之家注意到，去年，迪士尼与环球影业以涉嫌侵犯著作权为由起诉 Midjourney。","两家影业指出，这家图像生成 AI 企业的模型能够生成巴特 · 辛普森、达斯 · 维达等归属于影业旗下版权角色的图像。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["法务 / 律师"],"risks_or_constraints":["Midjourney 在与迪士尼、环球影业、华纳兄弟的版权诉讼中，申请强制三家影业披露自身 AI 使用情况。Midjourney 辩称其模型使用受版权保护的角色图像训练属于合理使用，并指出影业内部可能也存在类似未经授权下载素材训练 AI 的行为。此前法官裁定影业仅需提供面向消费者的 AI 生成内容，Midjourney 请求撤销该限制，要求影业交出所有在 Midjourney 平台使用过的提示词及对应生成图像。制片厂律师称该请求属于大范围证据搜寻。","数月后，华纳兄弟也对 Midjourney 提起了诉讼。"]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"supporting_context","text":"Midjourney 在与迪士尼、环球影业、华纳兄弟的版权诉讼中，申请强制三家影业披露自身 AI 使用情况。Midjourney 辩称其模型使用受版权保护的角色图像训练属于合理使用，并指出影业内部可能也存在类似未经授权下载素材训练 AI 的行为。此前法官裁定影业仅需提供面向消费者的 AI 生成内容，Midjourney 请求撤销该限制，要求影业交出所有在 Midjourney 平台使用过的提示词及对应生成图像。制片厂律师称该请求属于大范围证据搜寻。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 5 日消息，人工智能初创公司 Midjourney 正与三家好莱坞影业公司陷入持续的法律纠纷，该公司现申请强制要求这几家影业披露自身使用人工智能的相关情况。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家注意到，去年，迪士尼与环球影业以涉嫌侵犯著作权为由起诉 Midjourney。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"两家影业指出，这家图像生成 AI 企业的模型能够生成巴特 · 辛普森、达斯 · 维达等归属于影业旗下版权角色的图像。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"数月后，华纳兄弟也对 Midjourney 提起了诉讼。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"这家 AI 初创企业辩称，使用受版权保护的角色图像训练自身 AI 模型，属于合理使用范畴，具备合法性。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-05T04:56:15.396Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Midjourney 反击好莱坞：要求迪士尼等制片厂披露自身 AI 使用情况
+
+## clean_text
+
+IT之家 7 月 5 日消息，人工智能初创公司 Midjourney 正与三家好莱坞影业公司陷入持续的法律纠纷，该公司现申请强制要求这几家影业披露自身使用人工智能的相关情况。
+IT之家注意到，去年，迪士尼与环球影业以涉嫌侵犯著作权为由起诉 Midjourney。两家影业指出，这家图像生成 AI 企业的模型能够生成巴特 · 辛普森、达斯 · 维达等归属于影业旗下版权角色的图像。数月后，华纳兄弟也对 Midjourney 提起了诉讼。
+这家 AI 初创企业辩称，使用受版权保护的角色图像训练自身 AI 模型，属于合理使用范畴，具备合法性。
+本次争议的核心，是几家影业在证据开示阶段需要提交的书面材料。此前一名法官裁定，制片厂确实必须提供有关其生成式人工智能使用情况的信息，但仅限当这些使用行为产生了“面向消费者”的视频和图片时。
+Midjourney 在最新提交的法律文件中，请求撤销这一限制条款，称该裁定有失公允：几家制片厂可仅挑选对己方“市场受损”主张有利的材料，同时扣留 Midjourney 能为自身辩护提供支持的文件。
+Midjourney 进一步表示，各大电影公司刻意隐瞒的文件，恰恰能证明他们私下是否也在实施本次起诉中指控 Midjourney 的同类行为。
+该公司举例称，若几家影视制片厂内部正在研发图像生成 AI，用于影视分镜绘制、内容创意构思，这类证据足以说明：即便各大制片厂自身，也普遍存在下载无授权版权素材、用以训练 AI 的行业惯例。
+文件中还提出，制片厂应当提供所有在 Midjourney 平台使用过的提示词，以及对应的生成图像，而非仅提交生成涉嫌侵权图片的那部分提示词。
+制片厂方首席代理律师戴维 · 辛格此前称，Midjourney 索要上述材料属于无的放矢的大范围证据搜寻。
+他同时表示，制片厂方并非想要封禁 AI 技术，也无意关停 Midjourney 的业务，诉求很简单：要求 Midjourney 停止盗用旗下影视内容，不得未经授权复制旗下知名角色、创作衍生作品，更不能传播、公开展示、公开演绎包含这些版权角色的生成内容。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 5 日消息，人工智能初创公司 Midjourney 正与三家好莱坞影业公司陷入持续的法律纠纷，该公司现申请强制要求这几家影业披露自身使用人工智能的相关情况。
+IT之家注意到，去年，迪士尼与环球影业以涉嫌侵犯著作权为由起诉 Midjourney。两家影业指出，这家图像生成 AI 企业的模型能够生成巴特 · 辛普森、达斯 · 维达等归属于影业旗下版权角色的图像。数月后，华纳兄弟也对 Midjourney 提起了诉讼。
+这家 AI 初创企业辩称，使用受版权保护的角色图像训练自身 AI 模型，属于合理使用范畴，具备合法性。
+本次争议的核心，是几家影业在证据开示阶段需要提交的书面材料。此前一名法官裁定，制片厂确实必须提供有关其生成式人工智能使用情况的信息，但仅限当这些使用行为产生了“面向消费者”的视频和图片时。
+Midjourney 在最新提交的法律文件中，请求撤销这一限制条款，称该裁定有失公允：几家制片厂可仅挑选对己方“市场受损”主张有利的材料，同时扣留 Midjourney 能为自身辩护提供支持的文件。
+Midjourney 进一步表示，各大电影公司刻意隐瞒的文件，恰恰能证明他们私下是否也在实施本次起诉中指控 Midjourney 的同类行为。
+该公司举例称，若几家影视制片厂内部正在研发图像生成 AI，用于影视分镜绘制、内容创意构思，这类证据足以说明：即便各大制片厂自身，也普遍存在下载无授权版权素材、用以训练 AI 的行业惯例。
+文件中还提出，制片厂应当提供所有在 Midjourney 平台使用过的提示词，以及对应的生成图像，而非仅提交生成涉嫌侵权图片的那部分提示词。
+制片厂方首席代理律师戴维 · 辛格此前称，Midjourney 索要上述材料属于无的放矢的大范围证据搜寻。
+他同时表示，制片厂方并非想要封禁 AI 技术，也无意关停 Midjourney 的业务，诉求很简单：要求 Midjourney 停止盗用旗下影视内容，不得未经授权复制旗下知名角色、创作衍生作品，更不能传播、公开展示、公开演绎包含这些版权角色的生成内容。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 59
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":59,"text_length":958,"paragraph_count":11,"sentence_count":11,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=medium
+   Midjourney 在与迪士尼、环球影业、华纳兄弟的版权诉讼中，申请强制三家影业披露自身 AI 使用情况。Midjourney 辩称其模型使用受版权保护的角色图像训练属于合理使用，并指出影业内部可能也存在类似未经授权下载素材训练 AI 的行为。此前法官裁定影业仅需提供面向消费者的 AI 生成内容，Midjourney 请求撤销该限制，要求影业交出所有在 Midjourney 平台使用过的提示词及对应生成图像。制片厂律师称该请求属于大范围证据搜寻。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家 7 月 5 日消息，人工智能初创公司 Midjourney 正与三家好莱坞影业公司陷入持续的法律纠纷，该公司现申请强制要求这几家影业披露自身使用人工智能的相关情况。
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家注意到，去年，迪士尼与环球影业以涉嫌侵犯著作权为由起诉 Midjourney。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   两家影业指出，这家图像生成 AI 企业的模型能够生成巴特 · 辛普森、达斯 · 维达等归属于影业旗下版权角色的图像。
+
+5. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=medium
+   数月后，华纳兄弟也对 Midjourney 提起了诉讼。
+
+6. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   这家 AI 初创企业辩称，使用受版权保护的角色图像训练自身 AI 模型，属于合理使用范畴，具备合法性。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 企业服务
+- roles: 法务 / 律师
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 7, 5
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: IT之家 7 月 5 日消息，人工智能初创公司 Midjourney 正与三家好莱坞影业公司陷入持续的法律纠纷，该公司现申请强制要求这几家影业披露自身使用人工智能的相关情况。 / IT之家注意到，去年，迪士尼与环球影业以涉嫌侵犯著作权为由起诉 Midjourney。 / 两家影业指出，这家图像生成 AI 企业的模型能够生成巴特 · 辛普森、达斯 · 维达等归属于影业旗下版权角色的图像。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 法务 / 律师
+- risks_or_constraints: Midjourney 在与迪士尼、环球影业、华纳兄弟的版权诉讼中，申请强制三家影业披露自身 AI 使用情况。Midjourney 辩称其模型使用受版权保护的角色图像训练属于合理使用，并指出影业内部可能也存在类似未经授权下载素材训练 AI 的行为。此前法官裁定影业仅需提供面向消费者的 AI 生成内容，Midjourney 请求撤销该限制，要求影业交出所有在 Midjourney 平台使用过的提示词及对应生成图像。制片厂律师称该请求属于大范围证据搜寻。 / 数月后，华纳兄弟也对 Midjourney 提起了诉讼。
+
+## guanlan_scores
+
+- importance_type: important_market_structure
+- importance_score: 5
+- importance_reason: market-structure commercial event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 2
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Midjourney 反击好莱坞：要求迪士尼等制片厂披露自身 AI 使用情况","discovery_summary":"Midjourney 在与迪士尼、环球影业、华纳兄弟的版权诉讼中，申请强制三家影业披露自身 AI 使用情况。Midjourney 辩称其模型使用受版权保护的角色图像训练属于合理使用，并指出影业内部可能也存在类似未经授权下载素材训练 AI 的行为。此前法官裁定影业仅需提供面向消费者的 AI 生成内容，Midjourney 请求撤销该限制，要求影业交出所有在 Midjourney 平台使用过的提示词及对应生成图像。制片厂律师称该请求属于大范围证据搜寻。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/972/681.htm","discovered_at":"2026-07-05T04:46:18.986Z","rank_on_page":36,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Midjourney 在与迪士尼、环球影业、华纳兄弟的版权诉讼中，申请强制三家影业披露自身 AI 使用情况。Midjourney 辩称其模型使用受版权保护的角色图像训练属于合理使用，并指出影业内部可能也存在类似未经授权下载素材训练 AI 的行为。此前法官裁定影业仅需提供面向消费者的 AI 生成内容，Midjourney 请求撤销该限制，要求影业交出所有在 Midjourney 平台使用过的提示词及对应生成图像。制片厂律师称该请求属于大范围证据搜寻。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
