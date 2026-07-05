@@ -1,0 +1,294 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-035",
+  "title": "duongdang101010/heymate-skill",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://github.com/duongdang101010/heymate-skill",
+  "canonical_url": "https://github.com/duongdang101010/heymate-skill",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "pilot",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-05T04:56:15.312Z",
+  "language": "mixed",
+  "full_text": "duongdang101010\nheymate-skill\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n23 Commits\n23 Commits\nagents\nagents\nchecklists\nchecklists\ndocs\ndocs\nexamples\nexamples\nreferences/ heymate-product-designer-enterprise\nreferences/ heymate-product-designer-enterprise\nskills\nskills\ntemplates\ntemplates\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\nCOMMUNITY.md\nCOMMUNITY.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nROADMAP.md\nROADMAP.md\nView all files\nRepository files navigation\nHeyMate Skill (Tech & Product Design Team)\nOpen Source AI Tech & Product Design Team Skill\nHeyMate is an open-source AI skill framework for founders, CTOs, product managers, engineers, QA teams, designers, consultants, and AI coding agents.\nIt turns a generic AI coding agent into a context-aware technical partner that can handle product discovery, design governance, architecture review, implementation planning, QA, DevOps review, handoff, documentation, and customer-safe support behavior.\nThis repository is the HeyMate Skill Package , not the full HeyMate runtime/platform. It is designed to be used with Claude Code, Cursor, Codex, Windsurf, Roo Code, OpenHands, and other AI coding agents.\nCreated By\nDuong Dang\nFounder & CEO, Dotbase Technology & Solution\nEmail: duong@dotbase.vn\nTelegram: @duongdang\nWhat HeyMate Does\nHeyMate helps teams build better software through:\nAI CTO and multi-role technical governance\nProduct discovery, PRD, user stories, acceptance criteria, and MVP scope\nEnterprise product design workflow from idea to CTO/Codex handoff\nUX, information architecture, user flows, wireframes, design system, visual design, and design QA\nUI consistency and design system drift prevention\nArchitecture, backend, frontend, QA, security, DevOps, data, AI, CRM, ERP, POS, invoice, and e-contract perspectives\nKnowledge commands for docs, APIs, specs, UI, rules, stack, and context\nHandover, training, user guide, and documentation modes\nPermission-safe customer support behavior\nCommand Format\nAll HeyMate commands use the mate-* format:\nmate-{position}\nmate-{action}\nExamples:\nmate-cto\nmate-prod\nmate-design\nmate-qa\nmate-devops\nmate-audit\nmate-plan\nmate-review\nmate-handoff\nEvery command response should start with an identity banner:\nThis is Mate CTO.\nThis is Mate Design.\nThis is Mate Review.\nKey Commands\nPosition commands:\nmate-cto\nmate-prod\nmate-ux\nmate-design\nmate-designer\nmate-ds\nmate-figma\nmate-arch\nmate-be\nmate-fe\nmate-qa\nmate-sec\nmate-devops\nmate-ai\nAction commands:\nmate-audit\nmate-plan\nmate-spec\nmate-review\nmate-ui\nmate-test\nmate-edge\nmate-handoff\nmate-training\nmate-status\nmate-next\nmate-show-knowledge\nBootstrap command:\nmate-install\nmate-install checks for project instruction files such as CLAUDE.md , AGENTS.md , agent.md , agents/agent.md , and .cursor/rules/hey-mate.mdc . It creates a missing file or appends a marked HeyMate Project Handle block to an existing file.\nAfter that block exists, HeyMate is active by default for the project. Normal prompts and tasks are routed through Mate first, even when the user does not type mate-* .\nGuarded commands:\nmate-ship\nmate-deploy\nmate-rollback\nmate-learn\nmate-compact\nGuarded commands require explicit confirmation and a concrete target before action.\nMate Design\nmate-design integrates the former HeyMate Product Designer Enterprise workflow into the main HeyMate skill.\nThe full enterprise source package is preserved as reference material:\nreferences/heymate-product-designer-enterprise/\nThe main skill contains the compact operating layer. The reference folder keeps the detailed workflows, rules, templates, schemas, checks, Figma MCP conventions, examples, and CTO handoff contracts so the enterprise detail is not lost.\nPipeline:\nIdea Intake\n-> Discovery\n-> Product Spec / PRD\n-> UX Research\n-> Information Architecture\n-> User Flow\n-> Wireframe\n-> Design System\n-> Visual Design\n-> Figma MCP Build Plan\n-> Design QA\n-> CTO / Codex Handoff\nModes:\nmate-design autonomous\nmate-design guided\nmate-design figma\nmate-design review\nmate-design handoff\nmate-design owns product experience and design readiness. mate-cto owns architecture, implementation strategy, engineering risk, infrastructure, testing, and deployment safety.\nQuick Start\nClaude Code\nCopy the skill into your project root:\ncp skills/hey-mate.md CLAUDE.md\nThen start Claude Code and say:\nHey Mate\nUse commands:\nmate-install\nmate-audit\nmate-plan\nmate-design autonomous: CRM dashboard for a sales team\nmate-review-ui\nmate-handoff\nCursor\nmkdir -p .cursor/rules\ncp templates/CURSOR.mdc .cursor/rules/hey-mate.mdc\nCodex / Other Agents\ncp skills/hey-mate.md AGENTS.md\nThen run the installer prompt from:\ntemplates/MATE_INSTALL_PROMPT.md\nRecommended Workflow\nHey Mate\nmate-add-stack Laravel\nmate-add-stack PostgreSQL\nmate-add-docs ./README.md\nmate-add-spec ./docs/phase-2.md\nmate-add-ui ./ui/new-dashboard.html\nmate-add-rule \"Do not change existing database table names.\"\nmate-install\nmate-audit\nmate-plan\nmate-design guided: redesign onboarding flow\nmate-review\nmate-handoff\nRepository Structure\nskills/ Main HeyMate skill\nagents/ Role definitions\ndocs/ Usage docs and governance rules\ntemplates/ CLAUDE.md, AGENTS.md, Cursor rule templates\nexamples/ Example sessions and use cases\nchecklists/ UI, QA, and handover checklists\nreferences/ Full enterprise reference packages used by HeyMate modes\nLicense\nApache License 2.0. See LICENSE .\nFuture Roadmap\nThe community skill package is the first step. The future commercial/product direction is HeyMate OS: runtime, knowledge base, permission layer, integrations, multi-agent orchestration, and customer support channels.\nAbout\nHeyMate Skill (Tech & Product Design Team)\ndotbasesoft.com\nTopics\nopensource\nai\nfigma\nai-agents\nproductmanager\nproductdesign\nai-coding\naiskills\nfigmamcp\nheymate\nheymateskill\nai-cto-os\naicto\naictooperatingsystem\ncto-os\ncreativedesigner\nResources\nReadme\nLicense\nView license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\ntags\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n100.0%",
+  "clean_text": "duongdang101010\nheymate-skill\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n23 Commits\n23 Commits\nagents\nagents\nchecklists\nchecklists\ndocs\ndocs\nexamples\nexamples\nreferences/ heymate-product-designer-enterprise\nreferences/ heymate-product-designer-enterprise\nskills\nskills\ntemplates\ntemplates\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\nCOMMUNITY.md\nCOMMUNITY.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nROADMAP.md\nROADMAP.md\nView all files\nRepository files navigation\nHeyMate Skill (Tech & Product Design Team)\nOpen Source AI Tech & Product Design Team Skill\nHeyMate is an open-source AI skill framework for founders, CTOs, product managers, engineers, QA teams, designers, consultants, and AI coding agents.\nIt turns a generic AI coding agent into a context-aware technical partner that can handle product discovery, design governance, architecture review, implementation planning, QA, DevOps review, handoff, documentation, and customer-safe support behavior.\nThis repository is the HeyMate Skill Package , not the full HeyMate runtime/platform. It is designed to be used with Claude Code, Cursor, Codex, Windsurf, Roo Code, OpenHands, and other AI coding agents.\nCreated By\nDuong Dang\nFounder & CEO, Dotbase Technology & Solution\nEmail: duong@dotbase.vn\nTelegram: @duongdang\nWhat HeyMate Does\nHeyMate helps teams build better software through:\nAI CTO and multi-role technical governance\nProduct discovery, PRD, user stories, acceptance criteria, and MVP scope\nEnterprise product design workflow from idea to CTO/Codex handoff\nUX, information architecture, user flows, wireframes, design system, visual design, and design QA\nUI consistency and design system drift prevention\nArchitecture, backend, frontend, QA, security, DevOps, data, AI, CRM, ERP, POS, invoice, and e-contract perspectives\nKnowledge commands for docs, APIs, specs, UI, rules, stack, and context\nHandover, training, user guide, and documentation modes\nPermission-safe customer support behavior\nCommand Format\nAll HeyMate commands use the mate-* format:\nmate-{position}\nmate-{action}\nExamples:\nmate-cto\nmate-prod\nmate-design\nmate-qa\nmate-devops\nmate-audit\nmate-plan\nmate-review\nmate-handoff\nEvery command response should start with an identity banner:\nThis is Mate CTO.\nThis is Mate Design.\nThis is Mate Review.\nKey Commands\nPosition commands:\nmate-cto\nmate-prod\nmate-ux\nmate-design\nmate-designer\nmate-ds\nmate-figma\nmate-arch\nmate-be\nmate-fe\nmate-qa\nmate-sec\nmate-devops\nmate-ai\nAction commands:\nmate-audit\nmate-plan\nmate-spec\nmate-review\nmate-ui\nmate-test\nmate-edge\nmate-handoff\nmate-training\nmate-status\nmate-next\nmate-show-knowledge\nBootstrap command:\nmate-install\nmate-install checks for project instruction files such as CLAUDE.md , AGENTS.md , agent.md , agents/agent.md , and .cursor/rules/hey-mate.mdc . It creates a missing file or appends a marked HeyMate Project Handle block to an existing file.\nAfter that block exists, HeyMate is active by default for the project. Normal prompts and tasks are routed through Mate first, even when the user does not type mate-* .\nGuarded commands:\nmate-ship\nmate-deploy\nmate-rollback\nmate-learn\nmate-compact\nGuarded commands require explicit confirmation and a concrete target before action.\nMate Design\nmate-design integrates the former HeyMate Product Designer Enterprise workflow into the main HeyMate skill.\nThe full enterprise source package is preserved as reference material:\nreferences/heymate-product-designer-enterprise/\nThe main skill contains the compact operating layer. The reference folder keeps the detailed workflows, rules, templates, schemas, checks, Figma MCP conventions, examples, and CTO handoff contracts so the enterprise detail is not lost.\nPipeline:\nIdea Intake\n-> Discovery\n-> Product Spec / PRD\n-> UX Research\n-> Information Architecture\n-> User Flow\n-> Wireframe\n-> Design System\n-> Visual Design\n-> Figma MCP Build Plan\n-> Design QA\n-> CTO / Codex Handoff\nModes:\nmate-design autonomous\nmate-design guided\nmate-design figma\nmate-design review\nmate-design handoff\nmate-design owns product experience and design readiness. mate-cto owns architecture, implementation strategy, engineering risk, infrastructure, testing, and deployment safety.\nQuick Start\nClaude Code\nCopy the skill into your project root:\ncp skills/hey-mate.md CLAUDE.md\nThen start Claude Code and say:\nHey Mate\nUse commands:\nmate-install\nmate-audit\nmate-plan\nmate-design autonomous: CRM dashboard for a sales team\nmate-review-ui\nmate-handoff\nCursor\nmkdir -p .cursor/rules\ncp templates/CURSOR.mdc .cursor/rules/hey-mate.mdc\nCodex / Other Agents\ncp skills/hey-mate.md AGENTS.md\nThen run the installer prompt from:\ntemplates/MATE_INSTALL_PROMPT.md\nRecommended Workflow\nHey Mate\nmate-add-stack Laravel\nmate-add-stack PostgreSQL\nmate-add-docs ./README.md\nmate-add-spec ./docs/phase-2.md\nmate-add-ui ./ui/new-dashboard.html\nmate-add-rule \"Do not change existing database table names.\"\nmate-install\nmate-audit\nmate-plan\nmate-design guided: redesign onboarding flow\nmate-review\nmate-handoff\nRepository Structure\nskills/ Main HeyMate skill\nagents/ Role definitions\ndocs/ Usage docs and governance rules\ntemplates/ CLAUDE.md, AGENTS.md, Cursor rule templates\nexamples/ Example sessions and use cases\nchecklists/ UI, QA, and handover checklists\nreferences/ Full enterprise reference packages used by HeyMate modes\nLicense\nApache License 2.0. See LICENSE .\nFuture Roadmap\nThe community skill package is the first step. The future commercial/product direction is HeyMate OS: runtime, knowledge base, permission layer, integrations, multi-agent orchestration, and customer support channels.\nAbout\nHeyMate Skill (Tech & Product Design Team)\ndotbasesoft.com\nTopics\nopensource\nai\nfigma\nai-agents\nproductmanager\nproductdesign\nai-coding\naiskills\nfigmamcp\nheymate\nheymateskill\nai-cto-os\naicto\naictooperatingsystem\ncto-os\ncreativedesigner\nResources\nReadme\nLicense\nView license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\ntags\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n100.0%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-05/r-035-duongdang101010-heymate-skill.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-05/r-035-duongdang101010-heymate-skill.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 6508,
+    "paragraph_count": 75,
+    "sentence_count": 33,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.0026,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6508,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "241ac348cb85e766",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "7dc316f9402dca89",
+  "content_hash": "241ac348cb85e766",
+  "full_text_hash": "241ac348cb85e766",
+  "semantic_hash": "26560d0fd8220bdb",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-05T04:56:15.312Z",
+  "last_seen_at": "2026-07-05T04:56:15.312Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "# duongdang101010/heymate-skill HeyMate Skill (Tech & Product Design Team) - Stars: 0 - Forks: 0 - Watchers: 0 - Open issues: 0 - License: Other - Homepage: https://dotbasesoft.com - Default branch: main - Created: 2026-06-13T03:54:01Z ## Languages - Python ## Topics - ai - ai-agents - ai-codi... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "duongdang101010 heymate-skill Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 23 Commits 23 Commits agents agents checklists checklists docs docs examples examples references/ heymate-product-designer-enterprise references/ heymate-product-designer-enterprise skills skills templates templates .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore COMMUNITY.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md LICENSE LICENSE README.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md View all files Repository files navigation HeyMate Skill (Tech & Product Design Team) Open Source AI Tech & Product Design Team Skill HeyMate is an open-source AI skill framework for founders, CTOs, product managers, engineers, QA teams, designers, consultants, and AI coding agents.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "It turns a generic AI coding agent into a context-aware technical partner that can handle product discovery, design governance, architecture review, implementation planning, QA, DevOps review, handoff, documentation, and customer-safe support behavior.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-05T04:56:15.312Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Cursor"
+    ],
+    "products": [
+      "agents",
+      "agent",
+      "Claude",
+      "Cursor",
+      "Codex",
+      "CLAUDE",
+      "AGENTS",
+      "cursor",
+      "MCP",
+      "CURSOR"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "101010",
+      "0",
+      "2026",
+      "06",
+      "13",
+      "03",
+      "54",
+      "01"
+    ],
+    "quotes": [
+      "Do not change existing database table names."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "duongdang101010 heymate-skill Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 23 Commits 23 Commits agents agents checklists checklists docs docs examples examples references/ heymate-product-designer-enterprise references/ heymate-product-designer-enterprise skills skills templates templates .",
+      "gitignore COMMUNITY.",
+      "md LICENSE LICENSE README."
+    ],
+    "case_details": [
+      "# duongdang101010/heymate-skill HeyMate Skill (Tech & Product Design Team) - Stars: 0 - Forks: 0 - Watchers: 0 - Open issues: 0 - License: Other - Homepage: https://dotbasesoft.com - Default branch: main - Created: 2026-06-13T03:54:01Z ## Languages - Python ## Topics - ai - ai-agents - ai-codi... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem",
+      "It turns a generic AI coding agent into a context-aware technical partner that can handle product discovery, design governance, architecture review, implementation planning, QA, DevOps review, handoff, documentation, and customer-safe support behavior."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# duongdang101010/heymate-skill\n\n- raw_id: R-035\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://github.com/duongdang101010/heymate-skill\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-05T04:56:15.312Z\n\n## clean_text\n\nduongdang101010\nheymate-skill\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n23 Commits\n23 Commits\nagents\nagents\nchecklists\nchecklists\ndocs\ndocs\nexamples\nexamples\nreferences/ heymate-product-designer-enterprise\nreferences/ heymate-product-designer-enterprise\nskills\nskills\ntemplates\ntemplates\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\nCOMMUNITY.md\nCOMMUNITY.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nROADMAP.md\nROADMAP.md\nView all files\nRepository files navigation\nHeyMate Skill (Tech & Product Design Team)\nOpen Source AI Tech & Product Design Team Skill\nHeyMate is an open-source AI skill framework for founders, CTOs, product managers, engineers, QA teams, designers, consultants, and AI coding agents.\nIt turns a generic AI coding agent into a context-aware technical partner that can handle product discovery, design governance, architecture review, implementation planning, QA, DevOps review, handoff, documentation, and customer-safe support behavior.\nThis repository is the HeyMate Skill Package , not the full HeyMate runtime/platform. It is designed to be used with Claude Code, Cursor, Codex, Windsurf, Roo Code, OpenHands, and other AI coding agents.\nCreated By\nDuong Dang\nFounder & CEO, Dotbase Technology & Solution\nEmail: duong@dotbase.vn\nTelegram: @duongdang\nWhat HeyMate Does\nHeyMate helps teams build better software through:\nAI CTO and multi-role technical governance\nProduct discovery, PRD, user stories, acceptance criteria, and MVP scope\nEnterprise product design workflow from idea to CTO/Codex handoff\nUX, information architecture, user flows, wireframes, design system, visual design, and design QA\nUI consistency and design system drift prevention\nArchitecture, backend, frontend, QA, security, DevOps, data, AI, CRM, ERP, POS, invoice, and e-contract perspectives\nKnowledge commands for docs, APIs, specs, UI, rules, stack, and context\nHandover, training, user guide, and documentation modes\nPermission-safe customer support behavior\nCommand Format\nAll HeyMate commands use the mate-* format:\nmate-{position}\nmate-{action}\nExamples:\nmate-cto\nmate-prod\nmate-design\nmate-qa\nmate-devops\nmate-audit\nmate-plan\nmate-review\nmate-handoff\nEvery command response should start with an identity banner:\nThis is Mate CTO.\nThis is Mate Design.\nThis is Mate Review.\nKey Commands\nPosition commands:\nmate-cto\nmate-prod\nmate-ux\nmate-design\nmate-designer\nmate-ds\nmate-figma\nmate-arch\nmate-be\nmate-fe\nmate-qa\nmate-sec\nmate-devops\nmate-ai\nAction commands:\nmate-audit\nmate-plan\nmate-spec\nmate-review\nmate-ui\nmate-test\nmate-edge\nmate-handoff\nmate-training\nmate-status\nmate-next\nmate-show-knowledge\nBootstrap command:\nmate-install\nmate-install checks for project instruction files such as CLAUDE.md , AGENTS.md , agent.md , agents/agent.md , and .cursor/rules/hey-mate.mdc . It creates a missing file or appends a marked HeyMate Project Handle block to an existing file.\nAfter that block exists, HeyMate is active by default for the project. Normal prompts and tasks are routed through Mate first, even when the user does not type mate-* .\nGuarded commands:\nmate-ship\nmate-deploy\nmate-rollback\nmate-learn\nmate-compact\nGuarded commands require explicit confirmation and a concrete target before action.\nMate Design\nmate-design integrates the former HeyMate Product Designer Enterprise workflow into the main HeyMate skill.\nThe full enterprise source package is preserved as reference material:\nreferences/heymate-product-designer-enterprise/\nThe main skill contains the compact operating layer. The reference folder keeps the detailed workflows, rules, templates, schemas, checks, Figma MCP conventions, examples, and CTO handoff contracts so the enterprise detail is not lost.\nPipeline:\nIdea Intake\n-> Discovery\n-> Product Spec / PRD\n-> UX Research\n-> Information Architecture\n-> User Flow\n-> Wireframe\n-> Design System\n-> Visual Design\n-> Figma MCP Build Plan\n-> Design QA\n-> CTO / Codex Handoff\nModes:\nmate-design autonomous\nmate-design guided\nmate-design figma\nmate-design review\nmate-design handoff\nmate-design owns product experience and design readiness. mate-cto owns architecture, implementation strategy, engineering risk, infrastructure, testing, and deployment safety.\nQuick Start\nClaude Code\nCopy the skill into your project root:\ncp skills/hey-mate.md CLAUDE.md\nThen start Claude Code and say:\nHey Mate\nUse commands:\nmate-install\nmate-audit\nmate-plan\nmate-design autonomous: CRM dashboard for a sales team\nmate-review-ui\nmate-handoff\nCursor\nmkdir -p .cursor/rules\ncp templates/CURSOR.mdc .cursor/rules/hey-mate.mdc\nCodex / Other Agents\ncp skills/hey-mate.md AGENTS.md\nThen run the installer prompt from:\ntemplates/MATE_INSTALL_PROMPT.md\nRecommended Workflow\nHey Mate\nmate-add-stack Laravel\nmate-add-stack PostgreSQL\nmate-add-docs ./README.md\nmate-add-spec ./docs/phase-2.md\nmate-add-ui ./ui/new-dashboard.html\nmate-add-rule \"Do not change existing database table names.\"\nmate-install\nmate-audit\nmate-plan\nmate-design guided: redesign onboarding flow\nmate-review\nmate-handoff\nRepository Structure\nskills/ Main HeyMate skill\nagents/ Role definitions\ndocs/ Usage docs and governance rules\ntemplates/ CLAUDE.md, AGENTS.md, Cursor rule templates\nexamples/ Example sessions and use cases\nchecklists/ UI, QA, and handover checklists\nreferences/ Full enterprise reference packages used by HeyMate modes\nLicense\nApache License 2.0. See LICENSE .\nFuture Roadmap\nThe community skill package is the first step. The future commercial/product direction is HeyMate OS: runtime, knowledge base, permission layer, integrations, multi-agent orchestration, and customer support channels.\nAbout\nHeyMate Skill (Tech & Product Design Team)\ndotbasesoft.com\nTopics\nopensource\nai\nfigma\nai-agents\nproductmanager\nproductdesign\nai-coding\naiskills\nfigmamcp\nheymate\nheymateskill\nai-cto-os\naicto\naictooperatingsystem\ncto-os\ncreativedesigner\nResources\nReadme\nLicense\nView license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\ntags\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n100.0%\n\n## full_text\n\nduongdang101010\nheymate-skill\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n23 Commits\n23 Commits\nagents\nagents\nchecklists\nchecklists\ndocs\ndocs\nexamples\nexamples\nreferences/ heymate-product-designer-enterprise\nreferences/ heymate-product-designer-enterprise\nskills\nskills\ntemplates\ntemplates\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\nCOMMUNITY.md\nCOMMUNITY.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nROADMAP.md\nROADMAP.md\nView all files\nRepository files navigation\nHeyMate Skill (Tech & Product Design Team)\nOpen Source AI Tech & Product Design Team Skill\nHeyMate is an open-source AI skill framework for founders, CTOs, product managers, engineers, QA teams, designers, consultants, and AI coding agents.\nIt turns a generic AI coding agent into a context-aware technical partner that can handle product discovery, design governance, architecture review, implementation planning, QA, DevOps review, handoff, documentation, and customer-safe support behavior.\nThis repository is the HeyMate Skill Package , not the full HeyMate runtime/platform. It is designed to be used with Claude Code, Cursor, Codex, Windsurf, Roo Code, OpenHands, and other AI coding agents.\nCreated By\nDuong Dang\nFounder & CEO, Dotbase Technology & Solution\nEmail: duong@dotbase.vn\nTelegram: @duongdang\nWhat HeyMate Does\nHeyMate helps teams build better software through:\nAI CTO and multi-role technical governance\nProduct discovery, PRD, user stories, acceptance criteria, and MVP scope\nEnterprise product design workflow from idea to CTO/Codex handoff\nUX, information architecture, user flows, wireframes, design system, visual design, and design QA\nUI consistency and design system drift prevention\nArchitecture, backend, frontend, QA, security, DevOps, data, AI, CRM, ERP, POS, invoice, and e-contract perspectives\nKnowledge commands for docs, APIs, specs, UI, rules, stack, and context\nHandover, training, user guide, and documentation modes\nPermission-safe customer support behavior\nCommand Format\nAll HeyMate commands use the mate-* format:\nmate-{position}\nmate-{action}\nExamples:\nmate-cto\nmate-prod\nmate-design\nmate-qa\nmate-devops\nmate-audit\nmate-plan\nmate-review\nmate-handoff\nEvery command response should start with an identity banner:\nThis is Mate CTO.\nThis is Mate Design.\nThis is Mate Review.\nKey Commands\nPosition commands:\nmate-cto\nmate-prod\nmate-ux\nmate-design\nmate-designer\nmate-ds\nmate-figma\nmate-arch\nmate-be\nmate-fe\nmate-qa\nmate-sec\nmate-devops\nmate-ai\nAction commands:\nmate-audit\nmate-plan\nmate-spec\nmate-review\nmate-ui\nmate-test\nmate-edge\nmate-handoff\nmate-training\nmate-status\nmate-next\nmate-show-knowledge\nBootstrap command:\nmate-install\nmate-install checks for project instruction files such as CLAUDE.md , AGENTS.md , agent.md , agents/agent.md , and .cursor/rules/hey-mate.mdc . It creates a missing file or appends a marked HeyMate Project Handle block to an existing file.\nAfter that block exists, HeyMate is active by default for the project. Normal prompts and tasks are routed through Mate first, even when the user does not type mate-* .\nGuarded commands:\nmate-ship\nmate-deploy\nmate-rollback\nmate-learn\nmate-compact\nGuarded commands require explicit confirmation and a concrete target before action.\nMate Design\nmate-design integrates the former HeyMate Product Designer Enterprise workflow into the main HeyMate skill.\nThe full enterprise source package is preserved as reference material:\nreferences/heymate-product-designer-enterprise/\nThe main skill contains the compact operating layer. The reference folder keeps the detailed workflows, rules, templates, schemas, checks, Figma MCP conventions, examples, and CTO handoff contracts so the enterprise detail is not lost.\nPipeline:\nIdea Intake\n-> Discovery\n-> Product Spec / PRD\n-> UX Research\n-> Information Architecture\n-> User Flow\n-> Wireframe\n-> Design System\n-> Visual Design\n-> Figma MCP Build Plan\n-> Design QA\n-> CTO / Codex Handoff\nModes:\nmate-design autonomous\nmate-design guided\nmate-design figma\nmate-design review\nmate-design handoff\nmate-design owns product experience and design readiness. mate-cto owns architecture, implementation strategy, engineering risk, infrastructure, testing, and deployment safety.\nQuick Start\nClaude Code\nCopy the skill into your project root:\ncp skills/hey-mate.md CLAUDE.md\nThen start Claude Code and say:\nHey Mate\nUse commands:\nmate-install\nmate-audit\nmate-plan\nmate-design autonomous: CRM dashboard for a sales team\nmate-review-ui\nmate-handoff\nCursor\nmkdir -p .cursor/rules\ncp templates/CURSOR.mdc .cursor/rules/hey-mate.mdc\nCodex / Other Agents\ncp skills/hey-mate.md AGENTS.md\nThen run the installer prompt from:\ntemplates/MATE_INSTALL_PROMPT.md\nRecommended Workflow\nHey Mate\nmate-add-stack Laravel\nmate-add-stack PostgreSQL\nmate-add-docs ./README.md\nmate-add-spec ./docs/phase-2.md\nmate-add-ui ./ui/new-dashboard.html\nmate-add-rule \"Do not change existing database table names.\"\nmate-install\nmate-audit\nmate-plan\nmate-design guided: redesign onboarding flow\nmate-review\nmate-handoff\nRepository Structure\nskills/ Main HeyMate skill\nagents/ Role definitions\ndocs/ Usage docs and governance rules\ntemplates/ CLAUDE.md, AGENTS.md, Cursor rule templates\nexamples/ Example sessions and use cases\nchecklists/ UI, QA, and handover checklists\nreferences/ Full enterprise reference packages used by HeyMate modes\nLicense\nApache License 2.0. See LICENSE .\nFuture Roadmap\nThe community skill package is the first step. The future commercial/product direction is HeyMate OS: runtime, knowledge base, permission layer, integrations, multi-agent orchestration, and customer support channels.\nAbout\nHeyMate Skill (Tech & Product Design Team)\ndotbasesoft.com\nTopics\nopensource\nai\nfigma\nai-agents\nproductmanager\nproductdesign\nai-coding\naiskills\nfigmamcp\nheymate\nheymateskill\nai-cto-os\naicto\naictooperatingsystem\ncto-os\ncreativedesigner\nResources\nReadme\nLicense\nView license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\ntags\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n100.0%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 88\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] # duongdang101010/heymate-skill HeyMate Skill (Tech & Product Design Team) - Stars: 0 - Forks: 0 - Watchers: 0 - Open issues: 0 - License: Other - Homepage: https://dotbasesoft.com - Default branch: main - Created: 2026-06-13T03:54:01Z ## Languages - Python ## Topics - ai - ai-agents - ai-codi... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] duongdang101010 heymate-skill Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 23 Commits 23 Commits agents agents checklists checklists docs docs examples examples references/ heymate-product-designer-enterprise references/ heymate-product-designer-enterprise skills skills templates templates .\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] gitignore COMMUNITY.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] md LICENSE LICENSE README.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] md View all files Repository files navigation HeyMate Skill (Tech & Product Design Team) Open Source AI Tech & Product Design Team Skill HeyMate is an open-source AI skill framework for founders, CTOs, product managers, engineers, QA teams, designers, consultants, and AI coding agents.\n6. [case_detail / signal_card_candidate, relationship_graph_input, case / high] It turns a generic AI coding agent into a context-aware technical partner that can handle product discovery, design governance, architecture review, implementation planning, QA, DevOps review, handoff, documentation, and customer-safe support behavior.\n"
+}

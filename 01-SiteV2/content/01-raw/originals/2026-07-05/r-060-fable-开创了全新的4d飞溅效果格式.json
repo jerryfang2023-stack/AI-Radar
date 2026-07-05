@@ -1,0 +1,281 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-060",
+  "title": "《Fable》开创了全新的4D飞溅效果格式",
+  "title_zh": "《Fable》开创了全新的4D飞溅效果格式",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://adamraudonis.github.io/splats4D",
+  "canonical_url": "https://adamraudonis.github.io/splats4D",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "community_feedback",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-05T00:39:30.057Z",
+  "collected_at": "2026-07-05T04:56:15.457Z",
+  "language": "mixed",
+  "full_text": ".splat4d\nInteract\nLive preview, streamed and decoded in your browser: a 2-second dynamic scene as one 7.4 MB\n.splat4d file &mdash; 58&times; smaller than its 427 MB of raw .splat frames.\nPress Interact to take the camera: drag to orbit, ctrl-scroll to zoom.\nNeeds WebGPU (Chrome 113+, Safari 26+, Firefox 141+ on Windows) &mdash;\nopen the full demo for more scenes and live encoding controls.\nHow it works\nStatic / dynamic split\nIn a typical dynamic capture, most splats are background that never moves beyond the bound.\nThey are stored once &mdash; the entire background of a 1.6 GB sequence costs a few MB.\nClassification is exact: a splat is static iff a single quantized value satisfies the bound\nagainst its min and max over the whole clip.\nDeadband &ldquo;hold&rdquo; tracks\nA dynamic splat&rsquo;s stored value changes only when the true value would violate the bound against it.\nThis kills quantization flicker, makes temporal deltas mostly zero, and the check itself enforces\nthe guarantee before every emitted symbol.\nH.265-style closed GOPs\nKeyframe (absolute quantized values) every N frames, then P-frames of exact integer deltas.\nEvery GOP chunk decodes independently &rarr; seeking never touches other chunks.\nKey streams are laid out before delta streams inside each chunk, so a scrub can fetch\n~10% of a chunk and show the keyframe instantly.\nEntropy stack\nMorton-ordered splats, zigzag-coded integer deltas, byte-plane shuffle (Blosc-style), zstd per\nstream. Output lands at &asymp;100% of the order-0 entropy of its own symbol streams.\nInside the file\nA .splat4d file has three parts. A small header carries the bounds, the quantization\nsteps, and a chunk index with absolute byte ranges &mdash; everything a client needs to plan its\nfetches. The static section holds the per-splat masks and base values: fetch it once and the complete\nscene is on screen. The rest is one self-contained GOP chunk per ~1 s of video, with key streams\nlaid out before delta streams.\n\"SP4D\" + header JSON\nSTATIC section &rarr; full first view\nGOP chunk 0 [keys][deltas]\nGOP chunk 1 &hellip;\nError bounds\nEvery attribute of every splat in every decoded frame is within a user-chosen bound of the source &mdash;\nnot on average, not in PSNR: pointwise and deterministic.\nattribute bound default\nposition &plusmn; millimeters, L&infin; per axis &plusmn;2 mm\ncolor RGB &plusmn; 8-bit levels per channel &plusmn;4/255\nopacity &plusmn; 8-bit levels &plusmn;4/255\nrotation &plusmn; quaternion component (units of 1/128, up to sign) exact (&plusmn;0)\nscale &plusmn; relative %, per axis &plusmn;2%\nMechanism: SZ/ZFP-style error-bounded quantization (step = 2&times;bound &rArr; error &le; bound by\nconstruction). After quantization everything is integer math &mdash; temporal deltas can never drift, and the\nRust and JavaScript decoders reconstruct bit-identical values.\nStream from object store\nThe format is designed for plain HTTP Range requests against S3 / GCS / R2 / any static host &mdash;\nno server logic, no manifest files, no video container. A client needs exactly:\nbytes=0-262143 &rarr; magic + header JSON (all byte offsets are absolute)\none range for the STATIC section (a few MB) &rarr; complete first view on screen\none range per GOP chunk during playback / prefetch\non seek: the chunk-prefix range (TOC + keys) first &rarr; keyframe on screen in ~100&ndash;150 ms,\nthen the rest of the chunk &rarr; exact frame\nObject stores support this natively. For browser clients, set CORS to allow the\nRange header and expose Content-Range :\n[{ \"AllowedMethods\": [\"GET\", \"HEAD\"],\n\"AllowedOrigins\": [\"https://your-site\"],\n\"AllowedHeaders\": [\"Range\"],\n\"ExposeHeaders\": [\"Content-Range\", \"Content-Length\", \"Accept-Ranges\"] }]\nPayloads are already zstd-compressed inside the container, so store objects with no\nContent-Encoding &mdash; range math stays byte-exact and nothing double-compresses.\nBenchmarks\nEight sequences from three independent capture pipelines:\nDynamic 3D Gaussians (CMU Panoptic dome &mdash;\njuggle, boxes, softball, tennis), Neu3D cooking scenes via\nSpacetimeGaussians/ splaTV (flame = backyard\nBBQ, sear = kitchen chef), and Technicolor (birthday party, 659k splats) &mdash; all converted to\nper-frame antimatter15 .splat files (32 B/splat), 20 fps. splat4d encodes use default\nbounds (&plusmn;2 mm / &plusmn;4 color / exact rot / &plusmn;2% scale); gzip is per-frame -9 .\nFor context, the best generic lossless baseline (zstd-19 --long over the whole series)\nreaches only 2.5&times;. Full methodology and more baselines:\nBENCHMARKS.md .\nloading benchmarks.json&hellip;\nViewer\nRaw WebGPU, a line-by-line port of the\nantimatter15/splat renderer, pixel-verified against it.\nmetric local throttled 50 Mbps\nfull first view (header + static section) 141&ndash;157 ms 791 ms\nscrub into unbuffered region &rarr; keyframe visible &mdash; 145 ms\nplayback 60 fps @ 336k splats &middot; worker decode 2.5&ndash;27 ms/frame &middot; sort 1&ndash;25 ms\nUsing it\nA time series of antimatter15 .splat frames &rarr; one small, seekable file:\n# Python (pip install splats4d)\nsplat4d encode -i frames_dir -o out.splat4d\nMIT &middot; built on the shoulders of: antimatter15/splat (format), Dynamic 3D Gaussians (data),\nSZ/ZFP (error-bounded quantization), H.264/H.265 (GOP structure), SPZ/SOGS (attribute packing), zstd.",
+  "clean_text": ".splat4d\nInteract\nLive preview, streamed and decoded in your browser: a 2-second dynamic scene as one 7.4 MB\n.splat4d file &mdash; 58&times; smaller than its 427 MB of raw .splat frames.\nPress Interact to take the camera: drag to orbit, ctrl-scroll to zoom.\nNeeds WebGPU (Chrome 113+, Safari 26+, Firefox 141+ on Windows) &mdash;\nopen the full demo for more scenes and live encoding controls.\nHow it works\nStatic / dynamic split\nIn a typical dynamic capture, most splats are background that never moves beyond the bound.\nThey are stored once &mdash; the entire background of a 1.6 GB sequence costs a few MB.\nClassification is exact: a splat is static iff a single quantized value satisfies the bound\nagainst its min and max over the whole clip.\nDeadband &ldquo;hold&rdquo; tracks\nA dynamic splat&rsquo;s stored value changes only when the true value would violate the bound against it.\nThis kills quantization flicker, makes temporal deltas mostly zero, and the check itself enforces\nthe guarantee before every emitted symbol.\nH.265-style closed GOPs\nKeyframe (absolute quantized values) every N frames, then P-frames of exact integer deltas.\nEvery GOP chunk decodes independently &rarr; seeking never touches other chunks.\nKey streams are laid out before delta streams inside each chunk, so a scrub can fetch\n~10% of a chunk and show the keyframe instantly.\nEntropy stack\nMorton-ordered splats, zigzag-coded integer deltas, byte-plane shuffle (Blosc-style), zstd per\nstream. Output lands at &asymp;100% of the order-0 entropy of its own symbol streams.\nInside the file\nA .splat4d file has three parts. A small header carries the bounds, the quantization\nsteps, and a chunk index with absolute byte ranges &mdash; everything a client needs to plan its\nfetches. The static section holds the per-splat masks and base values: fetch it once and the complete\nscene is on screen. The rest is one self-contained GOP chunk per ~1 s of video, with key streams\nlaid out before delta streams.\n\"SP4D\" + header JSON\nSTATIC section &rarr; full first view\nGOP chunk 0 [keys][deltas]\nGOP chunk 1 &hellip;\nError bounds\nEvery attribute of every splat in every decoded frame is within a user-chosen bound of the source &mdash;\nnot on average, not in PSNR: pointwise and deterministic.\nattribute bound default\nposition &plusmn; millimeters, L&infin; per axis &plusmn;2 mm\ncolor RGB &plusmn; 8-bit levels per channel &plusmn;4/255\nopacity &plusmn; 8-bit levels &plusmn;4/255\nrotation &plusmn; quaternion component (units of 1/128, up to sign) exact (&plusmn;0)\nscale &plusmn; relative %, per axis &plusmn;2%\nMechanism: SZ/ZFP-style error-bounded quantization (step = 2&times;bound &rArr; error &le; bound by\nconstruction). After quantization everything is integer math &mdash; temporal deltas can never drift, and the\nRust and JavaScript decoders reconstruct bit-identical values.\nStream from object store\nThe format is designed for plain HTTP Range requests against S3 / GCS / R2 / any static host &mdash;\nno server logic, no manifest files, no video container. A client needs exactly:\nbytes=0-262143 &rarr; magic + header JSON (all byte offsets are absolute)\none range for the STATIC section (a few MB) &rarr; complete first view on screen\none range per GOP chunk during playback / prefetch\non seek: the chunk-prefix range (TOC + keys) first &rarr; keyframe on screen in ~100&ndash;150 ms,\nthen the rest of the chunk &rarr; exact frame\nObject stores support this natively. For browser clients, set CORS to allow the\nRange header and expose Content-Range :\n[{ \"AllowedMethods\": [\"GET\", \"HEAD\"],\n\"AllowedOrigins\": [\"https://your-site\"],\n\"AllowedHeaders\": [\"Range\"],\n\"ExposeHeaders\": [\"Content-Range\", \"Content-Length\", \"Accept-Ranges\"] }]\nPayloads are already zstd-compressed inside the container, so store objects with no\nContent-Encoding &mdash; range math stays byte-exact and nothing double-compresses.\nBenchmarks\nEight sequences from three independent capture pipelines:\nDynamic 3D Gaussians (CMU Panoptic dome &mdash;\njuggle, boxes, softball, tennis), Neu3D cooking scenes via\nSpacetimeGaussians/ splaTV (flame = backyard\nBBQ, sear = kitchen chef), and Technicolor (birthday party, 659k splats) &mdash; all converted to\nper-frame antimatter15 .splat files (32 B/splat), 20 fps. splat4d encodes use default\nbounds (&plusmn;2 mm / &plusmn;4 color / exact rot / &plusmn;2% scale); gzip is per-frame -9 .\nFor context, the best generic lossless baseline (zstd-19 --long over the whole series)\nreaches only 2.5&times;. Full methodology and more baselines:\nBENCHMARKS.md .\nloading benchmarks.json&hellip;\nViewer\nRaw WebGPU, a line-by-line port of the\nantimatter15/splat renderer, pixel-verified against it.\nmetric local throttled 50 Mbps\nfull first view (header + static section) 141&ndash;157 ms 791 ms\nscrub into unbuffered region &rarr; keyframe visible &mdash; 145 ms\nplayback 60 fps @ 336k splats &middot; worker decode 2.5&ndash;27 ms/frame &middot; sort 1&ndash;25 ms\nUsing it\nA time series of antimatter15 .splat frames &rarr; one small, seekable file:\n# Python (pip install splats4d)\nsplat4d encode -i frames_dir -o out.splat4d\nMIT &middot; built on the shoulders of: antimatter15/splat (format), Dynamic 3D Gaussians (data),\nSZ/ZFP (error-bounded quantization), H.264/H.265 (GOP structure), SPZ/SOGS (attribute packing), zstd.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-05/r-060-fable-开创了全新的4d飞溅效果格式.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-05/r-060-fable-开创了全新的4d飞溅效果格式.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 85,
+  "extractor_diagnostics": {
+    "readability_score": 85,
+    "text_length": 5315,
+    "paragraph_count": 78,
+    "sentence_count": 29,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0045,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 5315,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "2d52627569fa0b1b",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "《Fable》开创了全新的4D飞溅效果格式",
+    "discovery_summary": "splat4d 是一种动态3D高斯飞溅时间序列格式，将每帧.splat文件编码为单个可流式文件。它包含静态部分（基础场景）和按秒分组的GOP块（关键帧+增量帧），采用误差有界量化（位置±2mm、颜色±4/255、旋转精确、缩放±2%），确保逐点确定性误差。设计针对HTTP Range请求，可从S3/GCS/R2等对象存储流式传输，无需服务器逻辑或清单文件。Seek时通过块前缀快速获取关键帧，约100-150ms可见。默认误差下，无损基线zstd-19仅达2.5倍压缩比。提供Python编码工具（pip install splats4d）和WebGPU渲染器，支持60fps播放。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://adamraudonis.github.io/splats4D",
+    "discovered_at": "2026-07-05T04:46:18.981Z",
+    "rank_on_page": 20,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "b6dd871443c32e33",
+  "content_hash": "2d52627569fa0b1b",
+  "full_text_hash": "2d52627569fa0b1b",
+  "semantic_hash": "dfa17597ae4adae1",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-05T00:39:30.057Z",
+  "last_seen_at": "2026-07-05T04:56:15.457Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "splat4d 是一种动态3D高斯飞溅时间序列格式，将每帧.splat文件编码为单个可流式文件。它包含静态部分（基础场景）和按秒分组的GOP块（关键帧+增量帧），采用误差有界量化（位置±2mm、颜色±4/255、旋转精确、缩放±2%），确保逐点确定性误差。设计针对HTTP Range请求，可从S3/GCS/R2等对象存储流式传输，无需服务器逻辑或清单文件。Seek时通过块前缀快速获取关键帧，约100-150ms可见。默认误差下，无损基线zstd-19仅达2.5倍压缩比。提供Python编码工具（pip install splats4d）和WebGPU渲染器，支持60fps播放。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "splat4d Interact Live preview, streamed and decoded in your browser: a 2-second dynamic scene as one 7.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "splat4d file &mdash; 58&times; smaller than its 427 MB of raw .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Press Interact to take the camera: drag to orbit, ctrl-scroll to zoom.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Needs WebGPU (Chrome 113+, Safari 26+, Firefox 141+ on Windows) &mdash; open the full demo for more scenes and live encoding controls.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "How it works Static / dynamic split In a typical dynamic capture, most splats are background that never moves beyond the bound.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-05T04:56:15.457Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "4",
+      "3",
+      "2m",
+      "255",
+      "2%",
+      "2",
+      "100",
+      "150m"
+    ],
+    "quotes": [
+      "AllowedMethods",
+      "AllowedOrigins",
+      "https://your-site",
+      "AllowedHeaders",
+      "ExposeHeaders"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "splat4d Interact Live preview, streamed and decoded in your browser: a 2-second dynamic scene as one 7.",
+      "splat4d file &mdash; 58&times; smaller than its 427 MB of raw .",
+      "Press Interact to take the camera: drag to orbit, ctrl-scroll to zoom."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 4,
+    "importance_reason": "technical trend or capability shift; rubric=4 concrete important change",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 《Fable》开创了全新的4D飞溅效果格式\n\n- raw_id: R-060\n- title_zh: 《Fable》开创了全新的4D飞溅效果格式\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://adamraudonis.github.io/splats4D\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-05T04:56:15.457Z\n\n## clean_text\n\n.splat4d\nInteract\nLive preview, streamed and decoded in your browser: a 2-second dynamic scene as one 7.4 MB\n.splat4d file &mdash; 58&times; smaller than its 427 MB of raw .splat frames.\nPress Interact to take the camera: drag to orbit, ctrl-scroll to zoom.\nNeeds WebGPU (Chrome 113+, Safari 26+, Firefox 141+ on Windows) &mdash;\nopen the full demo for more scenes and live encoding controls.\nHow it works\nStatic / dynamic split\nIn a typical dynamic capture, most splats are background that never moves beyond the bound.\nThey are stored once &mdash; the entire background of a 1.6 GB sequence costs a few MB.\nClassification is exact: a splat is static iff a single quantized value satisfies the bound\nagainst its min and max over the whole clip.\nDeadband &ldquo;hold&rdquo; tracks\nA dynamic splat&rsquo;s stored value changes only when the true value would violate the bound against it.\nThis kills quantization flicker, makes temporal deltas mostly zero, and the check itself enforces\nthe guarantee before every emitted symbol.\nH.265-style closed GOPs\nKeyframe (absolute quantized values) every N frames, then P-frames of exact integer deltas.\nEvery GOP chunk decodes independently &rarr; seeking never touches other chunks.\nKey streams are laid out before delta streams inside each chunk, so a scrub can fetch\n~10% of a chunk and show the keyframe instantly.\nEntropy stack\nMorton-ordered splats, zigzag-coded integer deltas, byte-plane shuffle (Blosc-style), zstd per\nstream. Output lands at &asymp;100% of the order-0 entropy of its own symbol streams.\nInside the file\nA .splat4d file has three parts. A small header carries the bounds, the quantization\nsteps, and a chunk index with absolute byte ranges &mdash; everything a client needs to plan its\nfetches. The static section holds the per-splat masks and base values: fetch it once and the complete\nscene is on screen. The rest is one self-contained GOP chunk per ~1 s of video, with key streams\nlaid out before delta streams.\n\"SP4D\" + header JSON\nSTATIC section &rarr; full first view\nGOP chunk 0 [keys][deltas]\nGOP chunk 1 &hellip;\nError bounds\nEvery attribute of every splat in every decoded frame is within a user-chosen bound of the source &mdash;\nnot on average, not in PSNR: pointwise and deterministic.\nattribute bound default\nposition &plusmn; millimeters, L&infin; per axis &plusmn;2 mm\ncolor RGB &plusmn; 8-bit levels per channel &plusmn;4/255\nopacity &plusmn; 8-bit levels &plusmn;4/255\nrotation &plusmn; quaternion component (units of 1/128, up to sign) exact (&plusmn;0)\nscale &plusmn; relative %, per axis &plusmn;2%\nMechanism: SZ/ZFP-style error-bounded quantization (step = 2&times;bound &rArr; error &le; bound by\nconstruction). After quantization everything is integer math &mdash; temporal deltas can never drift, and the\nRust and JavaScript decoders reconstruct bit-identical values.\nStream from object store\nThe format is designed for plain HTTP Range requests against S3 / GCS / R2 / any static host &mdash;\nno server logic, no manifest files, no video container. A client needs exactly:\nbytes=0-262143 &rarr; magic + header JSON (all byte offsets are absolute)\none range for the STATIC section (a few MB) &rarr; complete first view on screen\none range per GOP chunk during playback / prefetch\non seek: the chunk-prefix range (TOC + keys) first &rarr; keyframe on screen in ~100&ndash;150 ms,\nthen the rest of the chunk &rarr; exact frame\nObject stores support this natively. For browser clients, set CORS to allow the\nRange header and expose Content-Range :\n[{ \"AllowedMethods\": [\"GET\", \"HEAD\"],\n\"AllowedOrigins\": [\"https://your-site\"],\n\"AllowedHeaders\": [\"Range\"],\n\"ExposeHeaders\": [\"Content-Range\", \"Content-Length\", \"Accept-Ranges\"] }]\nPayloads are already zstd-compressed inside the container, so store objects with no\nContent-Encoding &mdash; range math stays byte-exact and nothing double-compresses.\nBenchmarks\nEight sequences from three independent capture pipelines:\nDynamic 3D Gaussians (CMU Panoptic dome &mdash;\njuggle, boxes, softball, tennis), Neu3D cooking scenes via\nSpacetimeGaussians/ splaTV (flame = backyard\nBBQ, sear = kitchen chef), and Technicolor (birthday party, 659k splats) &mdash; all converted to\nper-frame antimatter15 .splat files (32 B/splat), 20 fps. splat4d encodes use default\nbounds (&plusmn;2 mm / &plusmn;4 color / exact rot / &plusmn;2% scale); gzip is per-frame -9 .\nFor context, the best generic lossless baseline (zstd-19 --long over the whole series)\nreaches only 2.5&times;. Full methodology and more baselines:\nBENCHMARKS.md .\nloading benchmarks.json&hellip;\nViewer\nRaw WebGPU, a line-by-line port of the\nantimatter15/splat renderer, pixel-verified against it.\nmetric local throttled 50 Mbps\nfull first view (header + static section) 141&ndash;157 ms 791 ms\nscrub into unbuffered region &rarr; keyframe visible &mdash; 145 ms\nplayback 60 fps @ 336k splats &middot; worker decode 2.5&ndash;27 ms/frame &middot; sort 1&ndash;25 ms\nUsing it\nA time series of antimatter15 .splat frames &rarr; one small, seekable file:\n# Python (pip install splats4d)\nsplat4d encode -i frames_dir -o out.splat4d\nMIT &middot; built on the shoulders of: antimatter15/splat (format), Dynamic 3D Gaussians (data),\nSZ/ZFP (error-bounded quantization), H.264/H.265 (GOP structure), SPZ/SOGS (attribute packing), zstd.\n\n## full_text\n\n.splat4d\nInteract\nLive preview, streamed and decoded in your browser: a 2-second dynamic scene as one 7.4 MB\n.splat4d file &mdash; 58&times; smaller than its 427 MB of raw .splat frames.\nPress Interact to take the camera: drag to orbit, ctrl-scroll to zoom.\nNeeds WebGPU (Chrome 113+, Safari 26+, Firefox 141+ on Windows) &mdash;\nopen the full demo for more scenes and live encoding controls.\nHow it works\nStatic / dynamic split\nIn a typical dynamic capture, most splats are background that never moves beyond the bound.\nThey are stored once &mdash; the entire background of a 1.6 GB sequence costs a few MB.\nClassification is exact: a splat is static iff a single quantized value satisfies the bound\nagainst its min and max over the whole clip.\nDeadband &ldquo;hold&rdquo; tracks\nA dynamic splat&rsquo;s stored value changes only when the true value would violate the bound against it.\nThis kills quantization flicker, makes temporal deltas mostly zero, and the check itself enforces\nthe guarantee before every emitted symbol.\nH.265-style closed GOPs\nKeyframe (absolute quantized values) every N frames, then P-frames of exact integer deltas.\nEvery GOP chunk decodes independently &rarr; seeking never touches other chunks.\nKey streams are laid out before delta streams inside each chunk, so a scrub can fetch\n~10% of a chunk and show the keyframe instantly.\nEntropy stack\nMorton-ordered splats, zigzag-coded integer deltas, byte-plane shuffle (Blosc-style), zstd per\nstream. Output lands at &asymp;100% of the order-0 entropy of its own symbol streams.\nInside the file\nA .splat4d file has three parts. A small header carries the bounds, the quantization\nsteps, and a chunk index with absolute byte ranges &mdash; everything a client needs to plan its\nfetches. The static section holds the per-splat masks and base values: fetch it once and the complete\nscene is on screen. The rest is one self-contained GOP chunk per ~1 s of video, with key streams\nlaid out before delta streams.\n\"SP4D\" + header JSON\nSTATIC section &rarr; full first view\nGOP chunk 0 [keys][deltas]\nGOP chunk 1 &hellip;\nError bounds\nEvery attribute of every splat in every decoded frame is within a user-chosen bound of the source &mdash;\nnot on average, not in PSNR: pointwise and deterministic.\nattribute bound default\nposition &plusmn; millimeters, L&infin; per axis &plusmn;2 mm\ncolor RGB &plusmn; 8-bit levels per channel &plusmn;4/255\nopacity &plusmn; 8-bit levels &plusmn;4/255\nrotation &plusmn; quaternion component (units of 1/128, up to sign) exact (&plusmn;0)\nscale &plusmn; relative %, per axis &plusmn;2%\nMechanism: SZ/ZFP-style error-bounded quantization (step = 2&times;bound &rArr; error &le; bound by\nconstruction). After quantization everything is integer math &mdash; temporal deltas can never drift, and the\nRust and JavaScript decoders reconstruct bit-identical values.\nStream from object store\nThe format is designed for plain HTTP Range requests against S3 / GCS / R2 / any static host &mdash;\nno server logic, no manifest files, no video container. A client needs exactly:\nbytes=0-262143 &rarr; magic + header JSON (all byte offsets are absolute)\none range for the STATIC section (a few MB) &rarr; complete first view on screen\none range per GOP chunk during playback / prefetch\non seek: the chunk-prefix range (TOC + keys) first &rarr; keyframe on screen in ~100&ndash;150 ms,\nthen the rest of the chunk &rarr; exact frame\nObject stores support this natively. For browser clients, set CORS to allow the\nRange header and expose Content-Range :\n[{ \"AllowedMethods\": [\"GET\", \"HEAD\"],\n\"AllowedOrigins\": [\"https://your-site\"],\n\"AllowedHeaders\": [\"Range\"],\n\"ExposeHeaders\": [\"Content-Range\", \"Content-Length\", \"Accept-Ranges\"] }]\nPayloads are already zstd-compressed inside the container, so store objects with no\nContent-Encoding &mdash; range math stays byte-exact and nothing double-compresses.\nBenchmarks\nEight sequences from three independent capture pipelines:\nDynamic 3D Gaussians (CMU Panoptic dome &mdash;\njuggle, boxes, softball, tennis), Neu3D cooking scenes via\nSpacetimeGaussians/ splaTV (flame = backyard\nBBQ, sear = kitchen chef), and Technicolor (birthday party, 659k splats) &mdash; all converted to\nper-frame antimatter15 .splat files (32 B/splat), 20 fps. splat4d encodes use default\nbounds (&plusmn;2 mm / &plusmn;4 color / exact rot / &plusmn;2% scale); gzip is per-frame -9 .\nFor context, the best generic lossless baseline (zstd-19 --long over the whole series)\nreaches only 2.5&times;. Full methodology and more baselines:\nBENCHMARKS.md .\nloading benchmarks.json&hellip;\nViewer\nRaw WebGPU, a line-by-line port of the\nantimatter15/splat renderer, pixel-verified against it.\nmetric local throttled 50 Mbps\nfull first view (header + static section) 141&ndash;157 ms 791 ms\nscrub into unbuffered region &rarr; keyframe visible &mdash; 145 ms\nplayback 60 fps @ 336k splats &middot; worker decode 2.5&ndash;27 ms/frame &middot; sort 1&ndash;25 ms\nUsing it\nA time series of antimatter15 .splat frames &rarr; one small, seekable file:\n# Python (pip install splats4d)\nsplat4d encode -i frames_dir -o out.splat4d\nMIT &middot; built on the shoulders of: antimatter15/splat (format), Dynamic 3D Gaussians (data),\nSZ/ZFP (error-bounded quantization), H.264/H.265 (GOP structure), SPZ/SOGS (attribute packing), zstd.\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 85\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] splat4d 是一种动态3D高斯飞溅时间序列格式，将每帧.splat文件编码为单个可流式文件。它包含静态部分（基础场景）和按秒分组的GOP块（关键帧+增量帧），采用误差有界量化（位置±2mm、颜色±4/255、旋转精确、缩放±2%），确保逐点确定性误差。设计针对HTTP Range请求，可从S3/GCS/R2等对象存储流式传输，无需服务器逻辑或清单文件。Seek时通过块前缀快速获取关键帧，约100-150ms可见。默认误差下，无损基线zstd-19仅达2.5倍压缩比。提供Python编码工具（pip install splats4d）和WebGPU渲染器，支持60fps播放。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] splat4d Interact Live preview, streamed and decoded in your browser: a 2-second dynamic scene as one 7.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] splat4d file &mdash; 58&times; smaller than its 427 MB of raw .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Press Interact to take the camera: drag to orbit, ctrl-scroll to zoom.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Needs WebGPU (Chrome 113+, Safari 26+, Firefox 141+ on Windows) &mdash; open the full demo for more scenes and live encoding controls.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] How it works Static / dynamic split In a typical dynamic capture, most splats are background that never moves beyond the bound.\n"
+}

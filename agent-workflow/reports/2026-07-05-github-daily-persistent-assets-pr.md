@@ -1,14 +1,14 @@
 # GitHub Business Signals PR
 
 - date: 2026-07-05
-- generated_at: 2026-07-05T09:47:46+08:00
+- generated_at: 2026-07-05T12:46:16+08:00
 - mode: business_signals_pr
-- trigger: workflow_dispatch
+- trigger: schedule
 - schedule: 08:57 Asia/Shanghai primary; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox
 - business_signal_skip: false
 - business_signal_skip_reason: not_applicable
 - existing_automation_branch: false
-- existing_signal_card_count: 0
+- existing_signal_card_count: 7
 - anysearch_secret: configured
 - tavily_secret: disabled
 - exa_secret: configured

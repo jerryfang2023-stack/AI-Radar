@@ -1,0 +1,215 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-073
+title: "特斯拉 Robotaxi 服务进军美国迈阿密，车内无安全员"
+title_zh: "特斯拉 Robotaxi 服务进军美国迈阿密，车内无安全员"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/972/678.htm"
+canonical_url: "https://ithome.com/0/972/678.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-04T22:51:09.000Z"
+collected_at: 2026-07-05T04:56:15.505Z
+language: mixed
+full_text_hash: 164e9964711c8f45
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-05/r-073-特斯拉-robotaxi-服务进军美国迈阿密-车内无安全员.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-05/r-073-特斯拉-robotaxi-服务进军美国迈阿密-车内无安全员.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 51
+extractor_diagnostics: {"readability_score":51,"text_length":788,"paragraph_count":8,"sentence_count":9,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 788
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"164e9964711c8f45","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"特斯拉 Robotaxi 服务进军美国迈阿密，车内无安全员","discovery_summary":"特斯拉官方在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域，同样避开繁忙市中心。X 平台部分网友分享已坐上无人监管的 Robotaxi，运营过程中未配备车内安全员。特斯拉早前在得克萨斯州奥斯汀推出服务时曾因安全员引发争议。其竞争对手 Waymo 已于今年 1 月进军迈阿密市场，Zoox 也计划在该地开始实地测试自动驾驶车队。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/972/678.htm","discovered_at":"2026-07-05T04:46:18.988Z","rank_on_page":42,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 9500253dbbb24758
+content_hash: 164e9964711c8f45
+semantic_hash: f79c46e13f6b0a89
+duplicate_of: ""
+first_seen_at: "2026-07-04T22:51:09.000Z"
+last_seen_at: 2026-07-05T04:56:15.505Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"automotive vertical rollout only; AI-adjacent but not a core WaveSight AI commercial signal","supporting_signals":["automotive_vertical_context","commercial_or_risk_context","market_shaping_risk_context"],"novelty":3,"evidence_strength":3,"case_richness":4,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":[],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["1","7","5","2025","11","2026","200","2023"],"quotes":[]}
+evidence_seed: {"company_actions":["IT之家 7 月 5 日消息，特斯拉官方前天在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域。","与今年早些时候在达拉斯和休斯敦推出 Robotaxi 时类似，特斯拉这次在迈阿密上线时，同样避开了繁忙的市中心区域。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["特斯拉官方在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域，同样避开繁忙市中心。X 平台部分网友分享已坐上无人监管的 Robotaxi，运营过程中未配备车内安全员。特斯拉早前在得克萨斯州奥斯汀推出服务时曾因安全员引发争议。其竞争对手 Waymo 已于今年 1 月进军迈阿密市场，Zoox 也计划在该地开始实地测试自动驾驶车队。","X 平台部分网友分享道，他们已经坐上了无人监管的 Robotaxi。","IT之家注意到， 迈阿密的 Robotaxi 在运营过程中并没有配备车内安全员 。"]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"supporting_context","text":"特斯拉官方在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域，同样避开繁忙市中心。X 平台部分网友分享已坐上无人监管的 Robotaxi，运营过程中未配备车内安全员。特斯拉早前在得克萨斯州奥斯汀推出服务时曾因安全员引发争议。其竞争对手 Waymo 已于今年 1 月进军迈阿密市场，Zoox 也计划在该地开始实地测试自动驾驶车队。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 5 日消息，特斯拉官方前天在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"与今年早些时候在达拉斯和休斯敦推出 Robotaxi 时类似，特斯拉这次在迈阿密上线时，同样避开了繁忙的市中心区域。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"X 平台部分网友分享道，他们已经坐上了无人监管的 Robotaxi。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"IT之家注意到， 迈阿密的 Robotaxi 在运营过程中并没有配备车内安全员 。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"而特斯拉最初在得克萨斯州奥斯汀推出自动驾驶网约车服务时，车内的安全员曾引发不少争议。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-05T04:56:15.505Z
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# 特斯拉 Robotaxi 服务进军美国迈阿密，车内无安全员
+
+## clean_text
+
+IT之家 7 月 5 日消息，特斯拉官方前天在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域。
+与今年早些时候在达拉斯和休斯敦推出 Robotaxi 时类似，特斯拉这次在迈阿密上线时，同样避开了繁忙的市中心区域。X 平台部分网友分享道，他们已经坐上了无人监管的 Robotaxi。
+IT之家注意到， 迈阿密的 Robotaxi 在运营过程中并没有配备车内安全员 。而特斯拉最初在得克萨斯州奥斯汀推出自动驾驶网约车服务时，车内的安全员曾引发不少争议。预计特斯拉将在未来，将 Robotaxi 服务扩大至迈阿密州更大区域。
+此外， 特斯拉 Robotaxi 的竞争对手 Waymo 早在今年 1 月就正式进军迈阿密市场 。而 Zoox 也计划进军该地，目前已经开始实地测试其自动驾驶车队。
+延伸阅读
+特斯拉 Robotaxi 服务于 2025 年 11 月确认，计划在未来数月内进驻包括迈阿密在内的五座美国城市。 根据特斯拉 2026 年 1 月的消息，其 Robotaxi 车队规模已达 200 辆，并同步推进无安全员测试。当时特斯拉计划将服务拓展至迈阿密、拉斯维加斯和休斯敦等多个地区。
+在得克萨斯州，特斯拉 Robotaxi 的运营模式存在差异。在奥斯汀，车辆不驶入高速公路时可在无驾驶座安全员的情况下运行；而在加州湾区，则需配备一名“安全监督员”坐于驾驶座。
+Waymo 是特斯拉 Robotaxi 的主要竞争对手之一。2023 年 8 月，加州监管部门已允许 Waymo 和 Cruise 在旧金山不受限制地运营全无人 Robotaxi，包括 7x24 小时、区域不限、可收费。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 5 日消息，特斯拉官方前天在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域。
+与今年早些时候在达拉斯和休斯敦推出 Robotaxi 时类似，特斯拉这次在迈阿密上线时，同样避开了繁忙的市中心区域。X 平台部分网友分享道，他们已经坐上了无人监管的 Robotaxi。
+IT之家注意到， 迈阿密的 Robotaxi 在运营过程中并没有配备车内安全员 。而特斯拉最初在得克萨斯州奥斯汀推出自动驾驶网约车服务时，车内的安全员曾引发不少争议。预计特斯拉将在未来，将 Robotaxi 服务扩大至迈阿密州更大区域。
+此外， 特斯拉 Robotaxi 的竞争对手 Waymo 早在今年 1 月就正式进军迈阿密市场 。而 Zoox 也计划进军该地，目前已经开始实地测试其自动驾驶车队。
+延伸阅读
+特斯拉 Robotaxi 服务于 2025 年 11 月确认，计划在未来数月内进驻包括迈阿密在内的五座美国城市。 根据特斯拉 2026 年 1 月的消息，其 Robotaxi 车队规模已达 200 辆，并同步推进无安全员测试。当时特斯拉计划将服务拓展至迈阿密、拉斯维加斯和休斯敦等多个地区。
+在得克萨斯州，特斯拉 Robotaxi 的运营模式存在差异。在奥斯汀，车辆不驶入高速公路时可在无驾驶座安全员的情况下运行；而在加州湾区，则需配备一名“安全监督员”坐于驾驶座。
+Waymo 是特斯拉 Robotaxi 的主要竞争对手之一。2023 年 8 月，加州监管部门已允许 Waymo 和 Cruise 在旧金山不受限制地运营全无人 Robotaxi，包括 7x24 小时、区域不限、可收费。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 51
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":51,"text_length":788,"paragraph_count":8,"sentence_count":9,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=medium
+   特斯拉官方在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域，同样避开繁忙市中心。X 平台部分网友分享已坐上无人监管的 Robotaxi，运营过程中未配备车内安全员。特斯拉早前在得克萨斯州奥斯汀推出服务时曾因安全员引发争议。其竞争对手 Waymo 已于今年 1 月进军迈阿密市场，Zoox 也计划在该地开始实地测试自动驾驶车队。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   IT之家 7 月 5 日消息，特斯拉官方前天在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域。
+
+3. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=medium
+   与今年早些时候在达拉斯和休斯敦推出 Robotaxi 时类似，特斯拉这次在迈阿密上线时，同样避开了繁忙的市中心区域。
+
+4. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=medium
+   X 平台部分网友分享道，他们已经坐上了无人监管的 Robotaxi。
+
+5. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=medium
+   IT之家注意到， 迈阿密的 Robotaxi 在运营过程中并没有配备车内安全员 。
+
+6. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=medium
+   而特斯拉最初在得克萨斯州奥斯汀推出自动驾驶网约车服务时，车内的安全员曾引发不少争议。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 1, 7, 5, 2025, 11, 2026, 200, 2023
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: IT之家 7 月 5 日消息，特斯拉官方前天在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域。 / 与今年早些时候在达拉斯和休斯敦推出 Robotaxi 时类似，特斯拉这次在迈阿密上线时，同样避开了繁忙的市中心区域。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 特斯拉官方在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域，同样避开繁忙市中心。X 平台部分网友分享已坐上无人监管的 Robotaxi，运营过程中未配备车内安全员。特斯拉早前在得克萨斯州奥斯汀推出服务时曾因安全员引发争议。其竞争对手 Waymo 已于今年 1 月进军迈阿密市场，Zoox 也计划在该地开始实地测试自动驾驶车队。 / X 平台部分网友分享道，他们已经坐上了无人监管的 Robotaxi。 / IT之家注意到， 迈阿密的 Robotaxi 在运营过程中并没有配备车内安全员 。
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: automotive vertical rollout only; AI-adjacent but not a core WaveSight AI commercial signal
+- supporting_signals: automotive_vertical_context,commercial_or_risk_context,market_shaping_risk_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 4
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"特斯拉 Robotaxi 服务进军美国迈阿密，车内无安全员","discovery_summary":"特斯拉官方在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域，同样避开繁忙市中心。X 平台部分网友分享已坐上无人监管的 Robotaxi，运营过程中未配备车内安全员。特斯拉早前在得克萨斯州奥斯汀推出服务时曾因安全员引发争议。其竞争对手 Waymo 已于今年 1 月进军迈阿密市场，Zoox 也计划在该地开始实地测试自动驾驶车队。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/972/678.htm","discovered_at":"2026-07-05T04:46:18.988Z","rank_on_page":42,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+特斯拉官方在 X 平台宣布，Robotaxi 自动驾驶网约车服务现已扩展至美国迈阿密西部一小块区域，同样避开繁忙市中心。X 平台部分网友分享已坐上无人监管的 Robotaxi，运营过程中未配备车内安全员。特斯拉早前在得克萨斯州奥斯汀推出服务时曾因安全员引发争议。其竞争对手 Waymo 已于今年 1 月进军迈阿密市场，Zoox 也计划在该地开始实地测试自动驾驶车队。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
