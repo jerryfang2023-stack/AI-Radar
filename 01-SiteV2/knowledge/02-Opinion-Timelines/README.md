@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 1038
-generated_at: 2026-07-04T08:11:19.600Z
+opinion_count: 1039
+generated_at: 2026-07-05T01:32:49.790Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -11,6 +11,7 @@ generated_at: 2026-07-04T08:11:19.600Z
 
 ## 人物
 
+- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 18 条 - 最新 2026-07-05
 - [Peter Yang](people/peter-yang/README.md) - 88 条 - 最新 2026-07-04
 - [Swyx](people/swyx/README.md) - 70 条 - 最新 2026-07-04
 - [Zara Zhang](people/zara-zhang/README.md) - 55 条 - 最新 2026-07-04
@@ -38,7 +39,6 @@ generated_at: 2026-07-04T08:11:19.600Z
 - [Anthropic Engineering](people/anthropic-engineering/README.md) - 4 条 - 最新 2026-06-30
 - [Training Data](people/training-data/README.md) - 3 条 - 最新 2026-06-30
 - [Ryo Lu](people/ryo-lu/README.md) - 14 条 - 最新 2026-06-29
-- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 17 条 - 最新 2026-06-26
 - [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 6 条 - 最新 2026-06-26
 - [Dataiku Blog](people/dataiku-blog/README.md) - 5 条 - 最新 2026-06-26
 - [Ben's Bites AI Newsletter](people/bens-bites-ai-newsletter/README.md) - 2 条 - 最新 2026-06-25
