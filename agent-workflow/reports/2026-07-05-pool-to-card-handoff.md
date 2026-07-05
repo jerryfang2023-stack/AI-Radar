@@ -1,31 +1,43 @@
 # 2026-07-05 Pool-to-Card Handoff
 
-- generated_at: 2026-07-05T03:32:16.353Z
-- written_count: 4
+- generated_at: 2026-07-05T04:15:39.612Z
+- written_count: 8
 - merged_count: 0
 - skipped_count: 0
-- signal_asset_count: 3
-- not_promoted_candidate_count: 108
+- signal_asset_count: 7
+- not_promoted_candidate_count: 104
 - asset_generation_limit: all_cardable_raw_pool
 - signal_asset_mode: all cardable Raw / Pool business signals
 
 ## Signal Card Assets
 
 - SIG-20260705-A01｜P-018｜Seltz 获得 $12.5M 种子轮 融资
-- SIG-20260705-A02｜P-005｜Pit 获得 $16M 融资
-- SIG-20260705-A03｜P-009｜Theaiinsider 获得 $20M 融资
+- SIG-20260705-A02｜P-011｜Pinecone Nexus 开放公开预览
+- SIG-20260705-A03｜P-025｜Visa 与欧洲银行推进智能体商业交易落地
+- SIG-20260705-A04｜P-028｜Bristol Myers 推进 AI 采购流程改造
+- SIG-20260705-A05｜P-029｜Adobe 扩展合作伙伴生态以交付智能体工作流
+- SIG-20260705-A06｜P-005｜Pit 获得 $16M 融资
+- SIG-20260705-A07｜P-009｜Ciridae 获得 $20M 融资
 
 ## Cluster / Dedupe Rows
 
 - P-018｜event:funding:seltz:$12.5m｜accepted
+- P-011｜event:case:pinecone nexus is now in public preview:case pinecone nexus is now in public preview pinecone｜accepted
+- P-025｜event:case:visa:3457328｜accepted
+- P-028｜event:case:inside bristol myers ai:822840｜accepted
+- P-029｜event:case:adobe:2026｜accepted
 - P-005｜event:funding:pit:$16m｜accepted
-- P-009｜event:funding:theaiinsider:$20m｜accepted
+- P-009｜event:funding:ciridae:$20m｜accepted
 
 ## Written
 
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-05--signal--seltz-auto-signal-p-018.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-05--signal--pinecone-nexus-is-now-in-public-preview-auto-signal-p-011.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-05--signal--visa-auto-signal-p-025.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-05--signal--inside-bristol-myers-ai-auto-signal-p-028.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-05--signal--adobe-auto-signal-p-029.md
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-05--signal--pit-auto-signal-p-005.md
-- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-05--signal--theaiinsider-auto-signal-p-009.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-05--signal--ciridae-auto-signal-p-009.md
 - 01-SiteV2/content/04-business-signals/signals/2026-07-05-signals.md
 
 ## Merged
@@ -45,8 +57,7 @@
 - P-006: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=What is an AI FDE? The open AI Forward Deployed Engineer, Lab0
 - P-007: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Conversational Analytics in BigQuery now GA | Google Cloud Blog
 - P-008: fact_type_constraints:social_or_community_source_not_verified_fact; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Forward Deployed Engineers in High Demand for AI Deployments
-- P-010: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Palantir Technologies - Forward Deployed AI Engineer
-- P-011: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Pinecone Nexus Is Now in Public Preview | Pinecone
+- P-010: valid_page_type:job_listing_not_formal_signal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Palantir Technologies - Forward Deployed AI Engineer
 - P-012: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=AI Use Case Library | Practical AI Ideas by Industry & Workflow
 - P-013: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=microsoft/d365cc-fde: Sharing experience from the real projects
 - P-014: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Snowflake in 2026 (A): All In On Enterprise AI
@@ -59,18 +70,15 @@
 - P-022: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Anthropic launches its own drug discovery programs to tackle diseases Big Pharma considers unprofitable
 - P-023: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)
 - P-024: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Amazon Tested 40 Voice AI Startups. This One Took 100%. - AI Biz Insider
-- P-025: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Visa and Banks Across Europe Reach the Next Phase of Agentic Commerce, Unlocking Secure Access to Merchants | Visa
 - P-026: fact_type_constraints:social_or_community_source_not_verified_fact; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Ivelina Dineva's Post - LinkedIn
 - P-027: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Find AI Agent Startup Founders (2026 Guide) - Origami
-- P-028: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Inside Bristol Myers’ AI-powered procurement overhaul | Supply Chain Dive
-- P-029: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Adobe Expands Partner Ecosystem to Deliver Frictionless Workflows ...
 - P-030: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=AI Agent Platform Comparison 2026: 12 Tools Ranked for ... - Totalum
 - P-031: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=The Home Depot and Google Cloud Launch Agentic AI Tools to ...
 - P-032: source_auditability:discovery_source_not_resolved; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=Is AI in PLM moving the needle or just making noise ?
 - P-033: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Why RL Won — Kyle Corbitt, OpenPipe (acq. CoreWeave)
 - P-034: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Open-source tool pxpipe hides text in PNGs to cut Claude Code and Fable 5 token costs up to 70%
 - P-035: business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Anthropic developer shares prompting tips for Fable 5 that focus on finding your own blind spots first
-- P-036: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Forward Deployed Engineer may become one of the most important ...
+- P-036: fact_type_constraints:social_or_community_source_not_verified_fact; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Forward Deployed Engineer may become one of the most important ...
 - P-037: fact_type_constraints:social_or_community_source_not_verified_fact, source_auditability:discovery_source_not_resolved; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=low; title=Ivelina Dineva's Post - LinkedIn
 - P-038: source_auditability:discovery_source_not_resolved; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=How memory tools can make AI models worse - TechCrunch
 - P-039: business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Giving Agents Computers — Ivan Burazin, Daytona
@@ -82,7 +90,7 @@
 - P-045: business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Mark Zuckerberg tells staff that AI agents haven&#8217;t progressed as quickly as he&#8217;d hoped
 - P-046: business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Jersey Mike&#8217;s IPO illustrates how bad the AI hype has become
 - P-047: business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=SpaceX has an AI device prototype, and it sure sounds phone-ish
-- P-048: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Builders Stage agenda revealed: Practical strategies for scaling startups at TechCrunch Disrupt 2026
+- P-048: valid_page_type:job_listing_not_formal_signal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Builders Stage agenda revealed: Practical strategies for scaling startups at TechCrunch Disrupt 2026
 - P-049: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=A 26,000-student study shows AI&#039;s hidden learning cost takes two full years to surface
 - P-050: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Ask an AI expert: What exactly is the full stack?
 - P-051: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=How we used Gemini to build Google I/O 2026
@@ -130,13 +138,13 @@
 - P-093: fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Policy Gradient Algorithms
 - P-094: fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=A (Long) Peek into Reinforcement Learning
 - P-095: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Object Detection for Dummies Part 3: R-CNN Family
-- P-096: source_auditability:discovery_source_not_resolved; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=Microsoft launches its own AI deployment company with $2.5 billion ...
+- P-096: fact_type_constraints:social_or_community_source_not_verified_fact, source_auditability:discovery_source_not_resolved; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=low; title=Microsoft launches its own AI deployment company with $2.5 billion ...
 - P-097: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=OpenAI cofounder envisions &quot;almost no interface&quot; future where nobody learns software anymore
 - P-098: fact_type_constraints:corporate_capex_or_community_investment_not_signal_card; repair=Keep corporate regional capex, data-center, or community investment announcements as Pool context unless a separate product, customer, or financing event is sourced.; priority=low; title=We’re strengthening our presence in Alabama through new investments and community support.
 - P-099: fact_type_constraints:workforce_retraining_program_not_formal_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:corporate_capex_or_community_investment_not_signal_card; repair=Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.; priority=low; title=Our new community investments in Virginia support local jobs and expand energy affordability.
 - P-100: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Take our I/O 2026 quiz, vibe coded in Google AI Studio.
 - P-101: business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Check out real-life AI prototypes from the Futures Lab.
-- P-102: fact_type_constraints:workforce_retraining_program_not_formal_signal_card, fact_type_constraints:corporate_capex_or_community_investment_not_signal_card; repair=Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.; priority=low; title=We’re announcing new community investments in Missouri.
+- P-102: fact_type_constraints:workforce_retraining_program_not_formal_signal_card, valid_page_type:job_listing_not_formal_signal_card, fact_type_constraints:corporate_capex_or_community_investment_not_signal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=We’re announcing new community investments in Missouri.
 - P-103: business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Quoting Anthropic
 - P-104: business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=The AI Compass
 - P-105: business_signal_scope:unsupported_importance_type:supporting_signal, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Quoting OpenAI

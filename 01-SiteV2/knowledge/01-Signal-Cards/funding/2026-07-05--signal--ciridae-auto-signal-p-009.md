@@ -1,5 +1,5 @@
 ---
-id: SIG-20260705-A03
+id: SIG-20260705-A07
 type: signal_card
 signal_type: funding
 title: "Ciridae 获得 $20M 融资"
@@ -9,8 +9,8 @@ source_title: "Ciridae Secures $20M Led by Accel to Bring AI Transformation to R
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-05T03:35:22.991Z
-updated_at: 2026-07-05T03:35:22.991Z
+created_at: 2026-07-05T04:15:38.611Z
+updated_at: 2026-07-05T04:15:38.611Z
 
 raw_refs: ["R-009"]
 pool_refs: ["P-009"]

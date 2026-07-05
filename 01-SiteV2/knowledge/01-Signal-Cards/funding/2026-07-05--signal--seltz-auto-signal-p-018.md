@@ -9,8 +9,8 @@ source_title: "Seltz Raises $12.5M Seed to Rebuild Web Search for AI Agents"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-05T02:07:33.536Z
-updated_at: 2026-07-05T02:07:33.536Z
+created_at: 2026-07-05T04:15:38.611Z
+updated_at: 2026-07-05T04:15:38.611Z
 
 raw_refs: ["R-018"]
 pool_refs: ["P-018"]
