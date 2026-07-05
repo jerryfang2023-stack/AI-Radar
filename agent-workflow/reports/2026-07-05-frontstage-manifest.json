@@ -1,0 +1,1365 @@
+{
+  "date": "2026-07-05",
+  "generated_at": "2026-07-05T03:35:23.615Z",
+  "signal_card_assets": [
+    {
+      "id": "SIG-20260705-A01",
+      "pool_ref": "P-018",
+      "title": "Seltz 获得 $12.5M 种子轮 融资",
+      "type": "funding",
+      "company": "Seltz"
+    },
+    {
+      "id": "SIG-20260705-A02",
+      "pool_ref": "P-005",
+      "title": "Pit 获得 $16M 融资",
+      "type": "funding",
+      "company": "Pit"
+    },
+    {
+      "id": "SIG-20260705-A03",
+      "pool_ref": "P-009",
+      "title": "Ciridae 获得 $20M 融资",
+      "type": "funding",
+      "company": "Ciridae"
+    }
+  ],
+  "not_promoted_candidates": [
+    {
+      "pool_ref": "P-001",
+      "title": "somerwalker/ai-transformation-playbook",
+      "source_url": "https://github.com/somerwalker/ai-transformation-playbook",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-002",
+      "title": "GitHub - archestra-ai/archestra: Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator · GitHub",
+      "source_url": "https://github.com/archestra-ai/archestra/tree/main",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "valid_page_type:index_only_evidence",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_only_evidence, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-003",
+      "title": "Clara Labs nabs $7M Series A as it positions its AI assistant to meet ...",
+      "source_url": "https://techcrunch.com/2017/07/19/claraseriesa/",
+      "issues": [
+        "evidence_quality:stale_source_date"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-004",
+      "title": "AI-powered Tender Management at Bechtle | PLANET AI",
+      "source_url": "https://planet-ai.com/customer-success-stories/tender-management-bechtle/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-006",
+      "title": "What is an AI FDE? The open AI Forward Deployed Engineer, Lab0",
+      "source_url": "https://lab0.ai/ai-fde",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-007",
+      "title": "Conversational Analytics in BigQuery now GA | Google Cloud Blog",
+      "source_url": "https://cloud.google.com/blog/products/data-analytics/conversational-analytics-in-bigquery-now-ga",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-008",
+      "title": "Forward Deployed Engineers in High Demand for AI Deployments",
+      "source_url": "https://www.linkedin.com/posts/vinniebandla_the-most-contested-hire-in-tech-right-now-activity-7475925789675491328-4tjJ",
+      "issues": [
+        "fact_type_constraints:social_or_community_source_not_verified_fact"
+      ],
+      "not_promoted_reason": "fact_type_constraints:social_or_community_source_not_verified_fact",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-010",
+      "title": "Palantir Technologies - Forward Deployed AI Engineer",
+      "source_url": "https://jobs.lever.co/palantir/ff1029bd-bb6d-4d78-a03e-5f9744d0b798",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-011",
+      "title": "Pinecone Nexus Is Now in Public Preview | Pinecone",
+      "source_url": "https://www.pinecone.io/blog/pinecone-nexus-public-preview/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-012",
+      "title": "AI Use Case Library | Practical AI Ideas by Industry & Workflow",
+      "source_url": "https://initializeai.com/ai-use-cases",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-013",
+      "title": "microsoft/d365cc-fde: Sharing experience from the real projects",
+      "source_url": "https://github.com/microsoft/d365cc-fde",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-014",
+      "title": "Snowflake in 2026 (A): All In On Enterprise AI",
+      "source_url": "https://www.gsb.stanford.edu/faculty-research/case-studies/snowflake-2026-all-enterprise-ai",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-015",
+      "title": "Canva - Customer Story | Relevance AI",
+      "source_url": "https://relevanceai.com/customers/canva",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-016",
+      "title": "Tech Startup Funding Rounds: Last 30 Days, Updated Weekly",
+      "source_url": "https://www.techbible.ai/learn/tech-startup-funding-rounds",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-017",
+      "title": "Investing in Convey | Andreessen Horowitz",
+      "source_url": "https://a16z.com/announcement/investing-in-convey/",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:funding_not_single_company_round"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:funding_not_single_company_round",
+      "repair_suggestion": "Use a single-company funding announcement with amount, round, investor, and date.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-019",
+      "title": "How Vertical AI is Making Legacy SaaS Obsolete: Key Data - Virtasant",
+      "source_url": "https://www.virtasant.com/ai-today/how-vertical-ai-is-making-legacy-saas-obsolete-key-data",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-020",
+      "title": "Claude Agent SDK Credits in 2026: What Changes June 15 for ...",
+      "source_url": "https://www.totalum.app/blog/claude-agent-sdk-credits-2026",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-021",
+      "title": "What is Mistral AI? Everything to know about the OpenAI competitor",
+      "source_url": "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-022",
+      "title": "Anthropic launches its own drug discovery programs to tackle diseases Big Pharma considers unprofitable",
+      "source_url": "https://the-decoder.com/anthropic-launches-its-own-drug-discovery-programs-to-tackle-diseases-big-pharma-considers-unprofitable/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-023",
+      "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+      "source_url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-024",
+      "title": "Amazon Tested 40 Voice AI Startups. This One Took 100%. - AI Biz Insider",
+      "source_url": "https://aibizinsider.com/2026/05/23/vapi-amazon-ring-voice-ai-500m-2026-05-23/",
+      "issues": [
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-025",
+      "title": "Visa and Banks Across Europe Reach the Next Phase of Agentic Commerce, Unlocking Secure Access to Merchants | Visa",
+      "source_url": "https://www.visa.co.uk/about-visa/newsroom/press-releases.3457328.html",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-026",
+      "title": "Ivelina Dineva's Post - LinkedIn",
+      "source_url": "https://www.linkedin.com/posts/ivelina-dineva-nft_startups-fundraising-funding-activity-7441461185515876352-zoQH",
+      "issues": [
+        "fact_type_constraints:social_or_community_source_not_verified_fact"
+      ],
+      "not_promoted_reason": "fact_type_constraints:social_or_community_source_not_verified_fact",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-027",
+      "title": "Find AI Agent Startup Founders (2026 Guide) - Origami",
+      "source_url": "https://origami.chat/blog/find-ai-agent-startup-founders",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-028",
+      "title": "Inside Bristol Myers’ AI-powered procurement overhaul | Supply Chain Dive",
+      "source_url": "https://www.supplychaindive.com/news/inside-bristol-myers-ai-powered-procurement-overhaul/822840/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-029",
+      "title": "Adobe Expands Partner Ecosystem to Deliver Frictionless Workflows ...",
+      "source_url": "https://news.adobe.com/news/2026/04/adobe-expands-partner-ecosystem",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-030",
+      "title": "AI Agent Platform Comparison 2026: 12 Tools Ranked for ... - Totalum",
+      "source_url": "https://www.totalum.app/blog/ai-agent-platform-totalum-2026",
+      "issues": [
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-031",
+      "title": "The Home Depot and Google Cloud Launch Agentic AI Tools to ...",
+      "source_url": "https://corporate.homedepot.com/news/partnerships/home-depot-and-google-cloud-launch-agentic-ai-tools-help-customers-and-associates",
+      "issues": [
+        "evidence_quality:stale_source_date"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-032",
+      "title": "Is AI in PLM moving the needle or just making noise ?",
+      "source_url": "https://www.engineering.com/is-ai-in-plm-moving-the-needle-or-just-making-noise/",
+      "issues": [
+        "source_auditability:discovery_source_not_resolved"
+      ],
+      "not_promoted_reason": "source_auditability:discovery_source_not_resolved",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-033",
+      "title": "Why RL Won — Kyle Corbitt, OpenPipe (acq. CoreWeave)",
+      "source_url": "https://www.latent.space/p/why-rl-won-kyle-corbitt-openpipe",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-034",
+      "title": "Open-source tool pxpipe hides text in PNGs to cut Claude Code and Fable 5 token costs up to 70%",
+      "source_url": "https://the-decoder.com/open-source-tool-pxpipe-hides-text-in-pngs-to-cut-claude-code-and-fable-5-token-costs-up-to-70/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-035",
+      "title": "Anthropic developer shares prompting tips for Fable 5 that focus on finding your own blind spots first",
+      "source_url": "https://the-decoder.com/anthropic-developer-shares-prompting-tips-for-fable-5-that-focus-on-finding-your-own-blind-spots-first/",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-036",
+      "title": "Forward Deployed Engineer may become one of the most important ...",
+      "source_url": "https://www.instagram.com/p/DZo9CEcEwzE/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-037",
+      "title": "Ivelina Dineva's Post - LinkedIn",
+      "source_url": "https://www.linkedin.com/posts/ivelina-dineva-nft_top-10-pre-seed-to-series-a-funding-rounds-activity-7474453583758016512-hqIF",
+      "issues": [
+        "fact_type_constraints:social_or_community_source_not_verified_fact",
+        "source_auditability:discovery_source_not_resolved"
+      ],
+      "not_promoted_reason": "fact_type_constraints:social_or_community_source_not_verified_fact, source_auditability:discovery_source_not_resolved",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-038",
+      "title": "How memory tools can make AI models worse - TechCrunch",
+      "source_url": "https://techcrunch.com/2026/06/10/how-memory-tools-can-make-ai-models-worse/",
+      "issues": [
+        "source_auditability:discovery_source_not_resolved"
+      ],
+      "not_promoted_reason": "source_auditability:discovery_source_not_resolved",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-039",
+      "title": "Giving Agents Computers — Ivan Burazin, Daytona",
+      "source_url": "https://www.latent.space/p/daytona",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-040",
+      "title": "METR’s Joel Becker on exponential Time Horizon Evals, Threat Models, and the Limits of AI Productivity",
+      "source_url": "https://www.latent.space/p/metr",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-041",
+      "title": "Mistral&#039;s open-source Leanstral 1.5 aces formal math benchmarks and catches real bugs in code",
+      "source_url": "https://the-decoder.com/mistrals-open-source-leanstral-1-5-aces-formal-math-benchmarks-and-catches-real-bugs-in-code/",
+      "issues": [
+        "business_signal_scope:technical_trend_is_context_not_signal_card"
+      ],
+      "not_promoted_reason": "business_signal_scope:technical_trend_is_context_not_signal_card",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-042",
+      "title": "Investing in Enterprise AI Startups: Why I'm Skeptical",
+      "source_url": "https://mergersandinquisitions.com/ai-startups/",
+      "issues": [
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-043",
+      "title": "New Google commercial imagines a Declaration of Independence written with help from AI",
+      "source_url": "https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:none",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-044",
+      "title": "Midjourney wants Hollywood studios to reveal the details of their AI usage",
+      "source_url": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/",
+      "issues": [
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-045",
+      "title": "Mark Zuckerberg tells staff that AI agents haven&#8217;t progressed as quickly as he&#8217;d hoped",
+      "source_url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:none",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-046",
+      "title": "Jersey Mike&#8217;s IPO illustrates how bad the AI hype has become",
+      "source_url": "https://techcrunch.com/2026/07/02/jersey-mikes-ipo-illustrates-how-bad-the-ai-hype-has-become/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-047",
+      "title": "SpaceX has an AI device prototype, and it sure sounds phone-ish",
+      "source_url": "https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-048",
+      "title": "Builders Stage agenda revealed: Practical strategies for scaling startups at TechCrunch Disrupt 2026",
+      "source_url": "https://techcrunch.com/2026/07/01/builders-stage-agenda-revealed-practical-strategies-for-scaling-startups-at-techcrunch-disrupt-2026/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-049",
+      "title": "A 26,000-student study shows AI&#039;s hidden learning cost takes two full years to surface",
+      "source_url": "https://the-decoder.com/a-26000-student-study-shows-ais-hidden-learning-cost-takes-two-full-years-to-surface/",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-050",
+      "title": "Ask an AI expert: What exactly is the full stack?",
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/full-stack-ai-explainer/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-051",
+      "title": "How we used Gemini to build Google I/O 2026",
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-052",
+      "title": "Catch up on 12 major I/O 2026 moments",
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-053",
+      "title": "OpenAI floats giving Trump administration 5 percent cut of AI boom",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/960588/openai-government-5-percent-stake-trump",
+      "issues": [
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-054",
+      "title": "Google built a great smart speaker, but Gemini isn’t ready for it",
+      "source_url": "https://www.theverge.com/tech/959503/google-home-speaker-review-gemini-for-home",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-055",
+      "title": "Netflix is using an AI-generated Gene Wilder voice in its Willy Wonka reality show",
+      "source_url": "https://www.theverge.com/streaming/959684/netflix-wonka-golden-ticket-gene-wilder",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-056",
+      "title": "Libby will filter out AI content, kind of",
+      "source_url": "https://www.theverge.com/column/959433/libby-ai-filter",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-057",
+      "title": "Meet the lawyer who beat Elon Musk — twice",
+      "source_url": "https://www.theverge.com/column/959270/elon-musk-open-ai-bill-savitt-twitter",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-058",
+      "title": "Review: Supergirl is not the disaster its low box office suggests",
+      "source_url": "https://arstechnica.com/culture/2026/07/review-supergirl-is-not-the-disaster-its-low-box-office-suggests/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-059",
+      "title": "When the ability to smell goes away",
+      "source_url": "https://arstechnica.com/science/2026/07/when-the-ability-to-smell-goes-away/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-060",
+      "title": "A martian rock has lots of carbon on it, and it's not clear why",
+      "source_url": "https://arstechnica.com/science/2026/07/a-martian-rock-has-lots-of-carbon-on-it-and-its-not-clear-why/",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-061",
+      "title": "Inside the Luddite festival harnessing Gen Z’s rage against Big Tech",
+      "source_url": "https://arstechnica.com/culture/2026/07/inside-the-luddite-festival-harnessing-gen-zs-rage-against-big-tech/",
+      "issues": [
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-062",
+      "title": "Despite the darkness, I still see signs of hope in America",
+      "source_url": "https://arstechnica.com/culture/2026/07/at-250-years-there-are-still-reasons-for-hope-in-america/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-063",
+      "title": "Visiting the stars (and planets, and telescopes) in VR",
+      "source_url": "https://arstechnica.com/culture/2026/07/smithsonian-starstruck-vr-exhibit-lets-you-stroll-through-the-stars/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-064",
+      "title": "Wing Commander IV and the FMV future that never quite was",
+      "source_url": "https://arstechnica.com/gaming/2026/07/wing-commander-iv-and-the-fmv-future-that-never-quite-was/",
+      "issues": [
+        "valid_page_type:technical_article_without_business_event"
+      ],
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-065",
+      "title": "FAA proposal: Supersonic airliners can fly over US cities if they’re quiet",
+      "source_url": "https://arstechnica.com/gadgets/2026/07/faa-proposal-supersonic-airliners-can-fly-over-us-cities-if-theyre-quiet/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:text_indicates_index_only",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-066",
+      "title": "Ars Live recap: When are the big rockets NASA desperately needs going to be ready?",
+      "source_url": "https://arstechnica.com/space/2026/07/ars-live-recap-when-are-the-big-rockets-nasa-desperately-needs-going-to-be-ready/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-067",
+      "title": "Africa CDC confirms Marburg case in Uganda as Ebola outbreak rages",
+      "source_url": "https://arstechnica.com/health/2026/07/africa-cdc-confirms-marburg-case-in-uganda-as-ebola-outbreak-rages/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-068",
+      "title": "Artificial cell manages a few rounds of cell division",
+      "source_url": "https://arstechnica.com/science/2026/07/artificial-cell-manages-a-few-rounds-of-cell-division/",
+      "issues": [
+        "business_signal_scope:technical_trend_is_context_not_signal_card"
+      ],
+      "not_promoted_reason": "business_signal_scope:technical_trend_is_context_not_signal_card",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-069",
+      "title": "Google loses long-running appeal of record EU fine, will have to cough up $4.7 billion",
+      "source_url": "https://arstechnica.com/gadgets/2026/07/google-loses-long-running-appeal-of-record-eu-fine-will-have-to-cough-up-4-7-billion/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-070",
+      "title": "Trump gets OpenAI to offer US 5% stake, far lower than Sanders’ target",
+      "source_url": "https://arstechnica.com/tech-policy/2026/07/openai-floats-giving-us-5-stake-to-win-over-ai-haters/",
+      "issues": [
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-071",
+      "title": "Tesla sales increase by 25% in Q2 2026",
+      "source_url": "https://arstechnica.com/cars/2026/07/tesla-sales-increase-by-25-in-q2-2026/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-072",
+      "title": "Woman's hip replacement disintegrates, causing severe metal poisoning",
+      "source_url": "https://arstechnica.com/health/2026/07/womans-puzzling-decline-turns-out-to-be-cobalt-poisoning-from-hip-replacement/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-073",
+      "title": "Google’s AI buildout drove 37% increase in electricity use in 2025",
+      "source_url": "https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025/",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:corporate_capex_or_community_investment_not_signal_card"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:corporate_capex_or_community_investment_not_signal_card",
+      "repair_suggestion": "Keep corporate regional capex, data-center, or community investment announcements as Pool context unless a separate product, customer, or financing event is sourced.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-074",
+      "title": "Scaling Laws, Carefully",
+      "source_url": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-075",
+      "title": "Why We Think",
+      "source_url": "https://lilianweng.github.io/posts/2025-05-01-thinking/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-076",
+      "title": "Some Math behind Neural Tangent Kernel",
+      "source_url": "https://lilianweng.github.io/posts/2022-09-08-ntk/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-077",
+      "title": "Generalized Visual Language Models",
+      "source_url": "https://lilianweng.github.io/posts/2022-06-09-vlm/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-078",
+      "title": "Learning with not Enough Data Part 1: Semi-Supervised Learning",
+      "source_url": "https://lilianweng.github.io/posts/2021-12-05-semi-supervised/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-079",
+      "title": "How to Train Really Large Models on Many GPUs?",
+      "source_url": "https://lilianweng.github.io/posts/2021-09-25-train-large/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-080",
+      "title": "Contrastive Representation Learning",
+      "source_url": "https://lilianweng.github.io/posts/2021-05-31-contrastive/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-081",
+      "title": "Reducing Toxicity in Language Models",
+      "source_url": "https://lilianweng.github.io/posts/2021-03-21-lm-toxicity/",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-082",
+      "title": "How to Build an Open-Domain Question Answering System?",
+      "source_url": "https://lilianweng.github.io/posts/2020-10-29-odqa/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-083",
+      "title": "The Transformer Family",
+      "source_url": "https://lilianweng.github.io/posts/2020-04-07-the-transformer-family/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-084",
+      "title": "Self-Supervised Representation Learning",
+      "source_url": "https://lilianweng.github.io/posts/2019-11-10-self-supervised/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-085",
+      "title": "Evolution Strategies",
+      "source_url": "https://lilianweng.github.io/posts/2019-09-05-evolution-strategies/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-086",
+      "title": "Meta Reinforcement Learning",
+      "source_url": "https://lilianweng.github.io/posts/2019-06-23-meta-rl/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-087",
+      "title": "Are Deep Neural Networks Dramatically Overfitted?",
+      "source_url": "https://lilianweng.github.io/posts/2019-03-14-overfit/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-088",
+      "title": "Generalized Language Models",
+      "source_url": "https://lilianweng.github.io/posts/2019-01-31-lm/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-089",
+      "title": "Object Detection Part 4: Fast Detection Models",
+      "source_url": "https://lilianweng.github.io/posts/2018-12-27-object-recognition-part-4/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-090",
+      "title": "Meta-Learning: Learning to Learn Fast",
+      "source_url": "https://lilianweng.github.io/posts/2018-11-30-meta-learning/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-091",
+      "title": "Flow-based Deep Generative Models",
+      "source_url": "https://lilianweng.github.io/posts/2018-10-13-flow-models/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-092",
+      "title": "From Autoencoder to Beta-VAE",
+      "source_url": "https://lilianweng.github.io/posts/2018-08-12-vae/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-093",
+      "title": "Policy Gradient Algorithms",
+      "source_url": "https://lilianweng.github.io/posts/2018-04-08-policy-gradient/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-094",
+      "title": "A (Long) Peek into Reinforcement Learning",
+      "source_url": "https://lilianweng.github.io/posts/2018-02-19-rl-overview/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-095",
+      "title": "Object Detection for Dummies Part 3: R-CNN Family",
+      "source_url": "https://lilianweng.github.io/posts/2017-12-31-object-recognition-part-3/",
+      "issues": [
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-096",
+      "title": "Microsoft launches its own AI deployment company with $2.5 billion ...",
+      "source_url": "https://www.instagram.com/p/DaU0VZdIHpX/",
+      "issues": [
+        "source_auditability:discovery_source_not_resolved"
+      ],
+      "not_promoted_reason": "source_auditability:discovery_source_not_resolved",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-097",
+      "title": "OpenAI cofounder envisions &quot;almost no interface&quot; future where nobody learns software anymore",
+      "source_url": "https://the-decoder.com/openai-cofounder-envisions-almost-no-interface-future-where-nobody-learns-software-anymore/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-098",
+      "title": "We’re strengthening our presence in Alabama through new investments and community support.",
+      "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/alabama-investment-june-2026/",
+      "issues": [
+        "fact_type_constraints:corporate_capex_or_community_investment_not_signal_card"
+      ],
+      "not_promoted_reason": "fact_type_constraints:corporate_capex_or_community_investment_not_signal_card",
+      "repair_suggestion": "Keep corporate regional capex, data-center, or community investment announcements as Pool context unless a separate product, customer, or financing event is sourced.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-099",
+      "title": "Our new community investments in Virginia support local jobs and expand energy affordability.",
+      "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
+      "issues": [
+        "fact_type_constraints:workforce_retraining_program_not_formal_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:corporate_capex_or_community_investment_not_signal_card"
+      ],
+      "not_promoted_reason": "fact_type_constraints:workforce_retraining_program_not_formal_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:corporate_capex_or_community_investment_not_signal_card",
+      "repair_suggestion": "Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-100",
+      "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-101",
+      "title": "Check out real-life AI prototypes from the Futures Lab.",
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:none",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-102",
+      "title": "We’re announcing new community investments in Missouri.",
+      "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
+      "issues": [
+        "fact_type_constraints:workforce_retraining_program_not_formal_signal_card",
+        "fact_type_constraints:corporate_capex_or_community_investment_not_signal_card"
+      ],
+      "not_promoted_reason": "fact_type_constraints:workforce_retraining_program_not_formal_signal_card, fact_type_constraints:corporate_capex_or_community_investment_not_signal_card",
+      "repair_suggestion": "Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-103",
+      "title": "Quoting Anthropic",
+      "source_url": "https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-104",
+      "title": "The AI Compass",
+      "source_url": "https://simonwillison.net/2026/Jun/30/the-ai-compass/#atom-everything",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-105",
+      "title": "Quoting OpenAI",
+      "source_url": "https://simonwillison.net/2026/Jun/26/openai/#atom-everything",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-106",
+      "title": "Using Hugging Face Inference API with Python - Facebook",
+      "source_url": "https://www.facebook.com/groups/533528128067776/posts/1216164569804125/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-107",
+      "title": "How Capital One built production multi-agent AI workflows to power enterprise use cases - Starthub Asia",
+      "source_url": "https://starthub.asia/how-capital-one-built-production-multi-agent-ai-workflows-to-power-enterprise-use-cases/",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-108",
+      "title": "How enterprises use AI for accurate decision making - Facebook",
+      "source_url": "https://www.facebook.com/FICODecisions/posts/most-enterprises-have-invested-in-ai-few-have-the-infrastructure-to-make-it-coun/1539185161551720/",
+      "issues": [
+        "source_auditability:discovery_source_not_resolved"
+      ],
+      "not_promoted_reason": "source_auditability:discovery_source_not_resolved",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-109",
+      "title": "Google just redesigned the search box for the first time in 25 years — here’s why it matters more than you think.",
+      "source_url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:none",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-110",
+      "title": "Unlock a new enterprise model built for the AI era. Run customer ...",
+      "source_url": "https://www.facebook.com/CreatioCompany/posts/unlock-a-new-enterprise-model-built-for-the-ai-era-run-customer-workflows-with-n/1343783367905932/",
+      "issues": [
+        "evidence_quality:summary_without_formal_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:summary_without_formal_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-111",
+      "title": "Bpifrance: How Bpifrance deployed agentic AI across 500 employees with Artefact and Dust | Dust Customer Story",
+      "source_url": "https://dust.tt/customers/how-bpifrance-deployed-agentic-ai-across-500-employees-with-artefact-and-dust",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    }
+  ],
+  "skipped": [],
+  "merged": []
+}

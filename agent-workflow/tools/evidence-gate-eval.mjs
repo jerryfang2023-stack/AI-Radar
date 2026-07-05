@@ -101,13 +101,23 @@ const cardFiles = cardDirs.flatMap((cardsDir) => (
 ));
 assert(cardFiles.length > 0, `no ${date} Signal Card files found`);
 let missingEvidenceStrength = 0;
+let corporateCapexFundingCards = 0;
+let publisherNamedFundingCards = 0;
 for (const file of cardFiles) {
   const body = fs.readFileSync(file, "utf8");
   if (!/\n  evidence_strength: (?:blocked|traceable_summary|source_backed_event|rich_evidence)\n/u.test(body)) {
     missingEvidenceStrength += 1;
   }
+  if (/signal_type:\s*funding/iu.test(body) && /blog\.google\/innovation-and-ai\/infrastructure-and-cloud\/global-network\/[^"\s]*investment/iu.test(body)) {
+    corporateCapexFundingCards += 1;
+  }
+  if (/signal_type:\s*funding/iu.test(body) && /\nsignal_owner:\s*"(?:Blog|Theaiinsider|Techcrunch|Fundraiseinsider)"\n/iu.test(body)) {
+    publisherNamedFundingCards += 1;
+  }
 }
 assert(missingEvidenceStrength === 0, `${missingEvidenceStrength} Signal Card file(s) are missing primary_raw.evidence_strength`);
+assert(corporateCapexFundingCards === 0, `${corporateCapexFundingCards} corporate capex/community investment item(s) were promoted as funding Cards`);
+assert(publisherNamedFundingCards === 0, `${publisherNamedFundingCards} funding Card(s) use publisher label Blog as signal_owner`);
 console.log(`[evidence-gate-eval] checked Signal Cards: ${cardFiles.length}`);
 
 if (!process.exitCode) {
