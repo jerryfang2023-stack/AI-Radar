@@ -3248,6 +3248,10 @@ const keywordSearchPaths = [
   },
 ];
 
+function pathConfigById(id = "") {
+  return keywordSearchPaths.find((pathConfig) => pathConfig.id === id) || keywordSearchPaths[0];
+}
+
 function selectQueriesForPath(allQueries, pathConfig) {
   const limit = Math.max(searchPathQueryLimit, 1);
   if (pathConfig.id === "industry_landing") {
@@ -3528,6 +3532,15 @@ async function collectAIHot() {
     }
   }
 
+  if (!items.length && failures.length) {
+    const fallback = await collectAIHotFallbackFromSearch();
+    items.push(...fallback.items);
+    failures.push(
+      `AI HOT API unavailable; used fallback source search (${fallback.items.length} item(s), ${fallback.filtered_count} filtered)`,
+      ...fallback.failures,
+    );
+  }
+
   return {
     items,
     failures,
@@ -3539,6 +3552,85 @@ async function collectAIHot() {
     mode: `daily+${aihotMode}`,
     since,
   };
+}
+
+async function collectAIHotFallbackFromSearch() {
+  const fallbackQueries = [
+    {
+      query: `AI agent startup raises funding announced ${date.slice(0, 4)}`,
+      query_theme: "aihot-fallback-funding",
+      keyword_group: "aihot-fallback-funding",
+      path_id: "capital_startup",
+    },
+    {
+      query: `enterprise AI agent product launch customer workflow announced ${date.slice(0, 4)}`,
+      query_theme: "aihot-fallback-product",
+      keyword_group: "aihot-fallback-product",
+      path_id: "official_original",
+    },
+    {
+      query: `AI platform customer deployment case study production rollout ${date.slice(0, 4)}`,
+      query_theme: "aihot-fallback-case",
+      keyword_group: "aihot-fallback-case",
+      path_id: "industry_landing",
+    },
+    {
+      query: `AI agent partnership acquisition procurement pricing enterprise ${date.slice(0, 4)}`,
+      query_theme: "aihot-fallback-market-structure",
+      keyword_group: "aihot-fallback-market-structure",
+      path_id: "a_media_gdelt",
+    },
+  ];
+  const items = [];
+  const failures = [];
+  let filteredCount = 0;
+  const seen = new Set();
+  const perQueryLimit = Math.max(3, Math.min(8, Math.ceil(aihotTarget / Math.max(1, fallbackQueries.length * 8))));
+
+  for (const queryConfig of fallbackQueries) {
+    const pathConfig = pathConfigById(queryConfig.path_id);
+    const query = [queryConfig.query, pathConfig.querySuffix || pathConfig.fallbackQuerySuffix || ""].filter(Boolean).join(" ");
+    try {
+      const results = await searchLayeredWeb(query, perQueryLimit);
+      for (const result of results) {
+        const key = result.url || result.id || result.title;
+        if (!key || seen.has(key)) continue;
+        seen.add(key);
+        if (isAIHotFallbackSearchNoise(result)) {
+          filteredCount += 1;
+          continue;
+        }
+        const gate = keywordSearchResultPreGate(result, queryConfig, pathConfig);
+        if (!gate.keep) {
+          filteredCount += 1;
+          continue;
+        }
+        items.push({
+          ...keywordSearchItem(result, queryConfig, pathConfig, { search_intent: inferSearchIntent(queryConfig.query) }),
+          acquisition_channel: "aihot",
+          aihot_lane: "fallback_search",
+          discovery_source: "AI HOT fallback search",
+          raw_entry_decision: "raw_candidate",
+          raw_entry_reason: `aihot_api_unavailable_fallback:${gate.reason}`,
+        });
+      }
+    } catch (error) {
+      failures.push(`AI HOT fallback ${queryConfig.path_id} ${queryConfig.query}: ${error.message}`);
+    }
+  }
+
+  return { items, failures, filtered_count: filteredCount };
+}
+
+function isAIHotFallbackSearchNoise(result = {}) {
+  const text = [
+    result.title,
+    result.snippet,
+    result.summary,
+    result.url,
+  ].filter(Boolean).join(" ");
+  if (/(funding tracker|top ai|ranked|startup funding news today|fundraising trends|sector snapshot|venture funding records|landscape|buyer'?s guide|complete guide|comparison|best ai agent|use cases|report|whitepaper|directory|ideas|reviews)\b/iu.test(text)) return true;
+  return !/\b(raises?|raised|secures?|secured|launch(?:es|ed)?|announc(?:es|ed|ing)?|public preview|partners? with|partnership|customer story|case study|deploy(?:s|ed|ment)?|rollout|procurement|contract|acquires?|acquisition)\b/iu.test(text);
 }
 
 async function collectHN() {

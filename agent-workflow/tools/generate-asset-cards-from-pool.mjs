@@ -579,7 +579,7 @@ function sourcePointLooksTemplate(value = "") {
 function sourcePointIsUsable(value = "") {
   const text = stripSourceNoise(value);
   if (!text || sourcePointLooksTemplate(text) || hasTextContamination(text)) return false;
-  return /AI|agent|agentic|LLM|model|enterprise|customer|workflow|deployment|platform|cloud|inference|funding|raises|raised|launched|announced|released|introduced|case study|融资|客户|部署|平台|模型|企业|美元|\$|\d/iu.test(text);
+  return /AI|agent|agentic|LLM|model|enterprise|customer|workflow|deployment|platform|cloud|inference|public preview|funding|raises|raised|launched|announced|released|introduced|case study|融资|客户|部署|平台|模型|企业|美元|\$|\d/iu.test(text);
 }
 
 function countHan(value = "") {
@@ -1102,7 +1102,7 @@ function pathSegmentsFromUrl(raw = "") {
 function isSocialOrCommunitySection(section) {
   const sourceUrl = value(section, "source_url");
   const host = hostFromUrl(sourceUrl);
-  if (host && !/(^|\.)linkedin\.com$|(^|\.)x\.com$|(^|\.)twitter\.com$|(^|\.)reddit\.com$|news\.ycombinator\.com$/u.test(host)
+  if (host && !/(^|\.)instagram\.com$|(^|\.)linkedin\.com$|(^|\.)x\.com$|(^|\.)twitter\.com$|(^|\.)reddit\.com$|news\.ycombinator\.com$/u.test(host)
     && value(section, "source_role") === "resolved_original_source") {
     return false;
   }
@@ -1113,7 +1113,7 @@ function isSocialOrCommunitySection(section) {
     value(section, "acquisition_channel"),
     value(section, "source_role"),
   ].join(" ").toLowerCase();
-  return /(^|\.)linkedin\.com|(^|\.)x\.com|(^|\.)twitter\.com|(^|\.)reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social/u.test(text);
+  return /(^|\.)instagram\.com|(^|\.)linkedin\.com|(^|\.)x\.com|(^|\.)twitter\.com|(^|\.)reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social/u.test(text);
 }
 
 function isRepositoryOrCatalogSection(section) {
@@ -1404,6 +1404,25 @@ function isNewsletterRoundupSource(section) {
   return /\btldr\.tech\b|TLDR AI Newsletter|newsletter|roundup|daily digest|weekly digest|briefing/iu.test(text);
 }
 
+function isJobListingSection(section) {
+  const titleUrl = [
+    poolTitle(section),
+    value(section, "source_url"),
+  ].join(" ");
+  if (/\b(jobs\.lever\.co|greenhouse\.io|workdayjobs|ashbyhq|apply for this job|job opening|job listing|forward deployed ai engineer)\b/iu.test(titleUrl)) {
+    return true;
+  }
+  const text = [
+    poolTitle(section),
+    value(section, "source"),
+    value(section, "source_url"),
+    value(section, "key_excerpts"),
+    value(section, "evidence_seed"),
+  ].join(" ");
+  return /\b(careers?|hiring)\b/iu.test(text)
+    && !/\b(customer deployment|case study|product launch|funding round|series\s+[a-z]|raises?|raised|secures?|secured|\$\s?\d|procurement|contract)\b/iu.test(text);
+}
+
 function isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section) {
   const text = textForInference(section);
   if (/monthly update|roundup|latest AI news|recap of .*AI updates|Google 2026.*AI.*updates?|Google 2026.*AI.*更新|AI更新汇总|更新汇总/iu.test(text)) return true;
@@ -1474,6 +1493,9 @@ function cardabilitySemanticIssues(section) {
   }
   if (isWorkforceRetrainingProgram(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "workforce_retraining_program_not_formal_signal_card"));
+  }
+  if (isJobListingSection(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "job_listing_not_formal_signal_card"));
   }
   if (isNewsletterRoundupSource(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "newsletter_roundup_requires_original_event_source"));
@@ -1831,7 +1853,17 @@ function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount }) {
     const round = chineseRound(sourceEventTitle);
     return `${company} 获得 ${amount}${round ? ` ${round}` : ""} 融资`;
   }
+  if ((type === "product_service" || type === "case") && sourceEventTitleCanBackAutoCard(sourceEventTitle)) {
+    return sourceEventTitle;
+  }
   return "";
+}
+
+function sourceEventTitleCanBackAutoCard(title = "") {
+  const text = cleanSourceTitleForPublicTitle(title);
+  if (!text || hasTextContamination(text)) return false;
+  if (/(roundup|guide|what is|how to|landscape|report|trends?|top \d+|ranked|list|directory|buyer'?s guide|comparison|ideas|use cases|may become|roles? in the ai era|job opening|job listing|careers?|hiring)\b/iu.test(text)) return false;
+  return /\b(launch(?:es|ed)?|announc(?:es|ed|ing)?|introduc(?:es|ed|ing)?|public preview|generally available|GA|available now|reach(?:es|ed)? the next phase|live transactions?|partners? with|partnership|procurement|contract|customer story|case study|deploy(?:s|ed|ment)?|rollout|adopt(?:s|ed|ion)?|expands?|unveils?)\b/iu.test(text);
 }
 
 function sourceTitleLineFromText(text = "") {
@@ -1870,8 +1902,8 @@ function sourcePointMatchesSignalType(point = "", type = "") {
   const text = String(point || "");
   if (!text) return false;
   if (type === "funding" && /funding|financing|round|valuation|raises?|raised|closed|ARR|annual recurring revenue/iu.test(text)) return true;
-  if (type === "product_service" && /product|platform|service|launch|release|released|introduc|available|pricing|API|SDK/iu.test(text)) return true;
-  if (type === "case" && /case study|customer story|customer|deployed|deployment|adopted|adoption|used by|uses?|production|workflow|saved|reduced|cut|hours per person|ARR|annual recurring revenue/iu.test(text)) return true;
+  if (type === "product_service" && /product|platform|service|launch|release|released|introduc|available|public preview|general availability|pricing|API|SDK|partnership|partners? with|integration/iu.test(text)) return true;
+  if (type === "case" && /case study|customer story|customer|deployed|deployment|adopted|adoption|used by|uses?|production|workflow|procurement|contract|partnership|partners? with|rollout|saved|reduced|cut|hours per person|ARR|annual recurring revenue/iu.test(text)) return true;
   if (type === "funding") return /融资|资金流向|资本事件|\$|美元|Series|Seed/iu.test(text);
   if (type === "product_service") return /产品|平台|服务|发布|推出|上线|API|SDK|可采购|可部署/iu.test(text);
   return /客户|部署|采用|生产落地|企业工作流|案例|试点/iu.test(text);
@@ -1953,6 +1985,9 @@ function autoSignalSpec(poolRef, section, index) {
   const sourceExcerpt = sourceExcerptFromSection(section, sourcePoints);
   const observationSummaryEvidenceAllowed = allowsObservationSummaryEvidence(section);
   let eventLine = sourcePoints.find((point) => sourcePointMatchesSignalType(point, type)) || sourcePoints[0] || sourceExcerpt;
+  if (!sourcePointIsUsable(eventLine) && sourceEventTitleCanBackAutoCard(sourceEventTitle) && hasFormalCardEvent(section)) {
+    eventLine = sourceEventTitle;
+  }
   if (!sourcePointIsUsable(eventLine) && (observationSummaryEvidenceAllowed || summaryOperatorMaterial)) {
     eventLine = `${company || "AI 公司"} 的公开访谈或趋势材料讨论 AI 商业化、产品方向、客户采用或市场结构变化：${sourceEventTitle}`;
   }

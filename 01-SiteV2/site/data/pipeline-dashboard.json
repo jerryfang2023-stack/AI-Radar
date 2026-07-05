@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-05T03:35:46.840Z",
+    "generatedAt": "2026-07-05T04:15:45.195Z",
     "dateRange": {
       "start": "2025-10-13",
       "end": "2026-07-05"
@@ -15,10 +15,11 @@
       "raw": 116,
       "pool": 111,
       "assets": {
+        "case": 4,
         "funding": 3,
         "opinion": 1
       },
-      "cards": 4,
+      "cards": 8,
       "rawChannels": {
         "aihot": 0,
         "keyword_search": 37,
@@ -58,16 +59,25 @@
         "product": 7
       },
       "assetStatus": {
+        "case": {
+          "published": 4
+        },
         "funding": {
           "published": 3
         }
       },
       "assetLevels": {
+        "case": {
+          "frontstage": 4
+        },
         "funding": {
           "frontstage": 3
         }
       },
       "assetEvidenceGates": {
+        "case": {
+          "core_evidence_passed": 4
+        },
         "funding": {
           "core_evidence_passed": 3
         }
@@ -568,10 +578,11 @@
     "raw": 116,
     "pool": 111,
     "assets": {
+      "case": 4,
       "funding": 3,
       "opinion": 1
     },
-    "cards": 4,
+    "cards": 8,
     "rawChannels": {
       "aihot": 0,
       "keyword_search": 37,
@@ -611,16 +622,25 @@
       "product": 7
     },
     "assetStatus": {
+      "case": {
+        "published": 4
+      },
       "funding": {
         "published": 3
       }
     },
     "assetLevels": {
+      "case": {
+        "frontstage": 4
+      },
       "funding": {
         "frontstage": 3
       }
     },
     "assetEvidenceGates": {
+      "case": {
+        "core_evidence_passed": 4
+      },
       "funding": {
         "core_evidence_passed": 3
       }
@@ -631,9 +651,9 @@
     "raw": 6643,
     "pool": 3364,
     "assets": {
+      "case": 358,
       "funding": 94,
       "opinion": 1039,
-      "case": 354,
       "product-service": 281,
       "trend": 6,
       "scene": 3,
@@ -647,7 +667,7 @@
   },
   "latestRelation": null,
   "engineQuality": {
-    "updatedAt": "2026-07-05T03:35:46.911Z",
+    "updatedAt": "2026-07-05T04:15:45.257Z",
     "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
     "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
     "rows": [
