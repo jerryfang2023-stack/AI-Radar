@@ -543,6 +543,47 @@ Codex handoff rules:
 
 The intended morning flow is: 08:57 primary production, 09:27 conditional health dispatch, 09:40 non-Hermes self-check / safe repair, 09:50 Codex handoff, and before-10:00 human-readable repair status. Do not move the self-check earlier than the point where the 09:27 health dispatch can be observed; otherwise it may misclassify a queued or in-progress run as missing data.
 
+## Data Observation Multi-Agent Review Trial
+
+The data observation agent layer is a one-week sidecar review for the whole observation desk. It does not replace the three production lanes or Reports Center, and it must not edit Raw, Pool, Cards, frontstage data, PRs, scheduled tasks, or deployment state.
+
+Run manually:
+
+```powershell
+npm run agentreview:data-observation -- --date=<YYYY-MM-DD>
+```
+
+Install the one-week local Windows scheduled task:
+
+```powershell
+npm run install:agent-review-task -- -At 10:05 -TrialStart <YYYY-MM-DD> -TrialDays 7
+```
+
+Default outputs:
+
+- `agent-workflow/reports/<date>-data-observation-agent-review.json`
+- `agent-workflow/reports/<date>-data-observation-agent-review.md`
+- `agent-workflow/reports/<date>-data-observation-agent-review-prompts.md`
+- `agent-workflow/reports/data-observation-agent-review-latest.*`
+
+The five agents are horizontal review roles, not lane owners:
+
+| Agent | Business Signals | First-Line Viewpoints | Community Intelligence | Reports Center |
+|---|---|---|---|---|
+| Source Scout | source coverage gaps, category gaps, source diversity | remarks / builder coverage | item / link coverage | relationship-map coverage |
+| Evidence Verifier | six Signal Card gates and source URL checks | original URL, translation, formal tags | lead evidence and URL presence | Card reference integrity |
+| Business Analyst | high-value commercial actions and priorities | light context only | high-value opportunity leads only | opportunity-signal readiness |
+| Trend / Graph Agent | same-direction Card clusters | viewpoint context only | community lead clusters only | relationship and trend candidate checks |
+| Red-Team QA | weak evidence, wrong type, duplicates, cross-lane contamination | untranslated / missing URL risks | lead-not-fact boundary | unsupported graph / trend references |
+
+Agent review gate:
+
+- `pass`: no blockers and no warnings;
+- `warning`: no blockers, but source diversity, opportunity-signal coverage, trend thinness, or lead evidence needs review;
+- `fail`: a public Business Card lacks source auditability, has invalid Card type, uses social/community/opinion material as direct evidence, or otherwise violates the current six-gate boundary.
+
+The agent review task should run after the morning production / self-repair window. It is scheduled at 10:05 by default so it can read same-date data, Codex self-repair results, and Reports Center artifacts without competing with production. A `fail` status in the agent review report is an analysis result, not a production rerun trigger. Repair still goes through the existing lane scripts, gates, and Codex handoff path.
+
 ## Monitor Skill Self-Improvement
 
 Each production lane has a current monitor skill:
