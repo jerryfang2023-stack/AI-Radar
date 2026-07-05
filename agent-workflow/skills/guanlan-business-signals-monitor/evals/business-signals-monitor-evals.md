@@ -32,7 +32,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
    - Pass when publication uses automation branch -> PR -> `main` -> GitHub Pages, not direct deployment or direct generated-data push to `main`.
 
 9. `before_10_problem_watchdog`
-   - Pass when Business Signals has one primary production window at 08:57 Asia/Shanghai and one 09:27 conditional health-dispatch window that waits when same-date data is healthy or a same-date run is queued / in progress / successful.
+   - Pass when Business Signals has one primary production window at 08:57 Asia/Shanghai, one 09:27 conditional health-dispatch window that waits when same-date data is healthy or a same-date run is queued / in progress / successful, a 09:40 no-Hermes self-check / safe-repair window, and a 09:50 no-Hermes Codex handoff window.
    - Pass when `WaveSight Daily Problem Watchdog` records failed production runs to a dated report and Hermes inbox item without dispatching a recovery workflow.
    - Pass when Hermes morning recovery and early handoff workflows, package scripts, and GitHub workflow files are absent.
    - Fail when the lane relies on repeated 10:07 / 12:07 / 13:07 / 14:07 schedule loops or a Hermes recovery/handoff workflow instead of producing a problem report and Codex inbox item.
@@ -76,7 +76,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when frontstage Card shortage or cardable-signal shortage is discovered only after public frontstage data has already been built.
 
 18. `publication_closure_checkpoint`
-    - Pass when the 10:50 supervision checkpoint records merged Business Signals PR state, GitHub Pages state, same-date Business data, public Card count, and local sync cleanliness / fast-forward status.
+    - Pass when the before-10:00 self-check / Codex handoff records same-date Business data or active-run waiting state, public Card count when available, unresolved repair tasks, and the smallest validation path; later publication checks may record merged Business Signals PR state, GitHub Pages state, and local sync cleanliness / fast-forward status.
     - Fail when publication is called complete without checking both PR / Pages state and same-date frontstage data.
 
 19. `provider_outage_pool_refill`

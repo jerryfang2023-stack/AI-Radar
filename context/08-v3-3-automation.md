@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-automation
-last_updated: 2026-07-02
+last_updated: 2026-07-05
 use_when:
   - github automation
   - daily monitoring
@@ -68,8 +68,10 @@ The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. I
 - Business Signals conditional health dispatch: 09:27 Asia/Shanghai. This is not a blind second production cron; it dispatches `.github/workflows/daily-persistent-assets-pr.yml` only when same-date Business Signals data is unhealthy and no same-date run is queued, in progress, or successful.
 - First-Line Viewpoints RSS primary production: 08:30 local Codex `builder-observation-daily-sync` for RSS collection, page-data build, and Obsidian sync; 09:17 GitHub fallback.
 - First-Line Viewpoints skill publish: local follow-builders skill at 16:10 Asia/Shanghai; supervision records it at 16:30.
-- Community Intelligence local collection: 08:30 Asia/Shanghai on the local Windows machine via Windows task `WaveSight Community Intelligence Daily`; Codex automation `community-intelligence-daily-local` runs at about 09:00 Asia/Shanghai as a local fallback / repair window and should first check whether same-date community data, archive, and gate are already healthy before recollecting. GitHub publish runs at 08:45 / 10:45 and can only publish already-collected data.
+- Community Intelligence local collection: 08:30 Asia/Shanghai on the local Windows machine via Windows task `WaveSight Community Intelligence Daily`; Codex automation `community-intelligence-daily-local` runs at about 09:00 Asia/Shanghai as a local fallback / repair window and should first check whether same-date community data, archive, and gate are already healthy before recollecting. GitHub publish runs at 08:45 / 09:35 and can only publish already-collected data.
 - Daily Problem Watchdog: observes failed production workflows and writes reports / Hermes inbox items. It must not dispatch recovery or start another full-chain run.
+- No-Hermes daily self-check: local Windows task `WaveSight Daily Self Repair` runs at 09:40 Asia/Shanghai, after the 09:27 Business health dispatch has had time to start, and writes `agent-workflow/reports/<date>-daily-self-check.*`.
+- No-Hermes Codex handoff: local Windows task `WaveSight Codex Self Repair Handoff` runs at 09:50 Asia/Shanghai, reads `codex_repair_tasks`, writes a Codex repair prompt / report, and can invoke `codex exec` only when installed with explicit invocation enabled.
 
 Operational rules:
 
@@ -82,6 +84,7 @@ Operational rules:
 7. Watchlist aggregate material can guide source repair or Pool rerouting only. It is not direct Card evidence until source-backed entries pass the current raw-to-card rules.
 8. Community Intelligence cannot be collected inside GitHub Actions because it depends on the local Chrome profile and logged-in community sessions. GitHub may publish already-validated community files, but missing local collector output remains a local / Codex repair handoff.
 9. Daily Problem Watchdog writes `agent-workflow/reports/<date>-daily-recovery-watchdog.json`, `.md`, and `agent-workflow/inbox/hermes-to-codex/<date>-<lane>-daily-problem-watchdog.md` for actionable problems.
+10. Local no-Hermes self-check and Codex handoff should complete before 10:00 when the production / health-dispatch state is observable. If a same-date workflow is still queued or in progress, classify the lane as waiting rather than failed.
 
 ## Daily Problem Watchdog
 
@@ -179,7 +182,7 @@ This skill lane does not write business-signal Cards, relationship graph data, t
 | Business Signals | GitHub Actions + `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | `.github/workflows/daily-persistent-assets-pr.yml` at 08:57 Asia/Shanghai; `.github/workflows/business-signals-health-dispatch.yml` at 09:27 for conditional dispatch; Daily Problem Watchdog records failures to inbox | monitor QC, post-monitor Raw / Pool gate, Card generation, dedupe, unified Business frontstage gate, pre-commit freshness | independent automation PR to `main` |
 | Reports Center / Opportunity Maps | GitHub Actions + `agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md` | follows the Business Signals Card chain for map evidence; report pages update through report page generator skills | unified Business frontstage gate from the business-signal chain + opportunity radar skill rules when map fields change + report page validation when report wiring changes | included in Business / report-center PRs depending on changed assets |
 | First-Line Viewpoints | Local Codex morning RSS collection/build/sync + GitHub Actions RSS fallback + local afternoon follow-builders skill lane | `builder-observation-daily-sync` at 08:30 Asia/Shanghai for morning RSS collection, page-data build, and Obsidian sync; `.github/workflows/daily-first-line-viewpoints-pr.yml` at 09:17 Asia/Shanghai for RSS fallback; `agent-workflow/tools/install-follow-builders-skill-task.ps1` at 16:10 Asia/Shanghai for the skill publish plus Obsidian sync; Daily Problem Watchdog records failures to inbox | `agent-workflow/tools/assert-follow-builders-data.mjs` + `agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs` idempotency for RSS and skill outputs; local publish report, Obsidian sync counts, and branch / PR for skill lane | independent automation PR to `main` after builders gate, Obsidian sync, and local skill publish pass |
-| Community Intelligence | Windows task `WaveSight Community Intelligence Daily` + Codex automation `community-intelligence-daily-local` + `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` + GitHub publish workflow | Windows local collection at 08:30 Asia/Shanghai; Codex local fallback / repair at about 09:00 Asia/Shanghai after checking same-date output health; `.github/workflows/daily-community-intelligence-pr.yml` at 08:45 / 10:45 for publication; Daily Problem Watchdog records failures to inbox | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files and archive, then independent community PR to `main` |
+| Community Intelligence | Windows task `WaveSight Community Intelligence Daily` + Codex automation `community-intelligence-daily-local` + `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` + GitHub publish workflow | Windows local collection at 08:30 Asia/Shanghai; Codex local fallback / repair at about 09:00 Asia/Shanghai after checking same-date output health; `.github/workflows/daily-community-intelligence-pr.yml` at 08:45 / 09:35 for publication; Daily Problem Watchdog records failures to inbox | `agent-workflow/tools/assert-community-intelligence-data.mjs` | local files and archive, then independent community PR to `main` |
 
 The lanes share the same public frontstage but do not share the same blocking conditions. A failure in Business Signals must not prevent First-Line Viewpoints from refreshing. Community Intelligence depends on local logged-in browser state and is supervised separately. Site-level publication remains unified through GitHub Pages after `main` updates.
 
@@ -460,6 +463,85 @@ Primary outputs:
 - matching `*-latest.*` report aliases.
 
 Weekly and monthly reports should produce a recommended action list. Codex performs any cleanup or code change after review; Hermes may use these reports to decide whether a recurring issue should become a gate, eval, or monitor skill memory update.
+
+## No-Hermes Daily Self Check And Safe Repair
+
+When the daily monitor should run without Hermes inbox, use the self-check wrapper. It calls daily supervision with `--hermes=off`, writes a non-Hermes repair report, and can run only deterministic safe repairs.
+
+Check only:
+
+```powershell
+npm run selfcheck:daily -- --date=<YYYY-MM-DD>
+```
+
+Check plus safe repairs:
+
+```powershell
+npm run selfrepair:daily -- --date=<YYYY-MM-DD>
+```
+
+Safe repair means:
+
+- rebuild stale skill registry;
+- rerun existing data gates when the source data already exists;
+- rerun Business Signals frontstage gate when frontstage data already exists;
+- write `agent-workflow/reports/<date>-daily-self-check.md/json` and `daily-self-check-latest.*`;
+- produce Codex repair tasks for unresolved problems.
+
+Safe repair must not:
+
+- lower evidence gates;
+- promote weak Business Signal evidence;
+- use First-Line Viewpoints or Community Intelligence as Business Signal facts;
+- run the full Business Signals production chain blindly;
+- force local sync over dirty worktrees;
+- deploy directly from an automation branch.
+
+To install a local Windows scheduled task:
+
+```powershell
+npm run install:self-repair-task -- -At 09:40 -RepairMode safe
+```
+
+The scheduled task is a monitor-and-repair wrapper, not a production runner. It should run after the 09:27 Business health-dispatch window has had time to start so it can repair missing gates or registry drift, then report larger production failures for Codex action before 10:00.
+
+## No-Hermes Codex Self Repair Handoff
+
+When the daily self-check leaves `codex_repair_tasks`, use the Codex handoff wrapper. It reruns the non-Hermes self-check, writes a task-specific prompt, and can optionally invoke the local Codex CLI through `codex exec`.
+
+Generate a prompt / report only:
+
+```powershell
+npm run codex:selfrepair -- --date=<YYYY-MM-DD>
+```
+
+Invoke Codex directly:
+
+```powershell
+npm run codex:selfrepair:invoke -- --date=<YYYY-MM-DD>
+```
+
+Install the local Windows scheduled task in prompt-only mode:
+
+```powershell
+npm run install:codex-self-repair-task -- -At 09:50
+```
+
+Install with direct Codex invocation only after the local `codex exec` route is confirmed for the machine:
+
+```powershell
+npm run install:codex-self-repair-task -- -At 09:50 -InvokeCodex
+```
+
+Codex handoff rules:
+
+- read `agent-workflow/reports/<date>-daily-self-check.*` and the linked daily supervision report;
+- handle only the unresolved `codex_repair_tasks`;
+- keep generated report artifacts out of the final diff unless they are required prevention artifacts;
+- block direct invocation on a dirty worktree unless `--allow-dirty=true` / `-AllowDirty` is intentionally set;
+- run the smallest relevant validation after a code, rule, gate, or skill repair.
+
+The intended morning flow is: 08:57 primary production, 09:27 conditional health dispatch, 09:40 non-Hermes self-check / safe repair, 09:50 Codex handoff, and before-10:00 human-readable repair status. Do not move the self-check earlier than the point where the 09:27 health dispatch can be observed; otherwise it may misclassify a queued or in-progress run as missing data.
 
 ## Monitor Skill Self-Improvement
 

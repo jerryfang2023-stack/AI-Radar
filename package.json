@@ -19,6 +19,10 @@
     "resolve:hermes": "node agent-workflow/tools/resolve-hermes-inbox.mjs",
     "supervise:daily": "node agent-workflow/tools/write-daily-supervision-report.mjs",
     "health:daily": "node agent-workflow/tools/write-daily-supervision-report.mjs",
+    "selfcheck:daily": "node agent-workflow/tools/run-daily-self-check.mjs --repair=off",
+    "selfrepair:daily": "node agent-workflow/tools/run-daily-self-check.mjs --repair=safe",
+    "codex:selfrepair": "node agent-workflow/tools/run-codex-self-repair.mjs",
+    "codex:selfrepair:invoke": "node agent-workflow/tools/run-codex-self-repair.mjs --invoke=on",
     "health:weekly": "node agent-workflow/tools/write-weekly-health-report.mjs",
     "health:monthly": "node agent-workflow/tools/write-monthly-maintenance-report.mjs",
     "problem:daily": "node agent-workflow/tools/dispatch-daily-recovery.mjs",
@@ -43,7 +47,9 @@
     "sync:enterprise-ai-fde": "node agent-workflow/tools/sync-enterprise-ai-fde-to-obsidian.mjs",
     "sync:data-lake": "node agent-workflow/tools/sync-light-data-lake.mjs",
     "sync:data-lake:local": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/sync-data-lake.ps1",
-    "install:data-lake-sync-task": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-data-lake-sync-task.ps1"
+    "install:data-lake-sync-task": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-data-lake-sync-task.ps1",
+    "install:self-repair-task": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-daily-self-check-task.ps1",
+    "install:codex-self-repair-task": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-codex-self-repair-task.ps1"
   },
   "repository": {
     "type": "git",

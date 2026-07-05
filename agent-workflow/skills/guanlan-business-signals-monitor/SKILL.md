@@ -28,6 +28,8 @@ Enterprise AI / FDE is now owned by `guanlan-enterprise-ai-fde-monitor`. Busines
 
 - GitHub primary production window: 08:57 Asia/Shanghai.
 - Conditional health dispatch: 09:27 Asia/Shanghai. It checks same-date Business Signals data and active/successful runs, then dispatches the primary workflow only when no healthy output and no active/successful same-date run exists.
+- No-Hermes local self-check: 09:40 Asia/Shanghai. It runs after the 09:27 health dispatch has had time to start, applies only safe deterministic repairs, and writes `agent-workflow/reports/<date>-daily-self-check.*`.
+- No-Hermes Codex handoff: 09:50 Asia/Shanghai. It reads `codex_repair_tasks`, writes `agent-workflow/reports/<date>-codex-self-repair.*`, and may invoke `codex exec` only when explicitly enabled.
 - Daily Problem Watchdog: records failed production runs to Hermes inbox. It must not dispatch recovery or start a full-chain rerun.
 - Hermes morning recovery and early handoff workflows are retired and must not be recreated or used.
 
@@ -121,7 +123,9 @@ Use this order:
 9. Run the unified Business frontstage gate immediately.
 10. Only after that gate passes, build operations dashboard, manifest, PR, merge, and Pages.
 11. After failed production runs, Daily Problem Watchdog should write one categorized inbox item for targeted repair. It must not dispatch another full-chain run.
-12. At 10:50, supervision should check the publication closure: merged PR, GitHub Pages success, same-date Business data, public Card count, and whether local sync is blocked.
+12. At 09:40, no-Hermes self-check should verify same-date data / active-run state and run safe repairs only. If the 09:27 health dispatch is queued or in progress, classify the lane as waiting rather than failed.
+13. At 09:50, no-Hermes Codex handoff should turn unresolved `codex_repair_tasks` into a task-specific prompt or explicit `codex exec` run.
+14. Before 10:00, report a human-readable repair status whenever production state is observable. Publication checks after this point should focus on PR, Pages, same-date Business data, public Card count, and local sync blockage.
 
 ## Weekend Policy
 

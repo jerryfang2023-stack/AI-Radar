@@ -17,6 +17,7 @@ const args = new Map(
 const date = args.get("date") || shanghaiDate();
 const githubMode = args.get("github") || "auto";
 const taskMode = args.get("scheduled-task") || "auto";
+const hermesMode = args.get("hermes") || args.get("write-hermes") || "auto";
 
 function shanghaiDate(value = new Date()) {
   const dateValue = value instanceof Date ? value : new Date(value);
@@ -247,6 +248,12 @@ function isTodayOrPast(targetDate) {
   return targetDate <= shanghaiDate();
 }
 
+function shouldWriteHermesInbox() {
+  if (["off", "false", "0", "no"].includes(String(hermesMode).toLowerCase())) return false;
+  if (["on", "true", "1", "yes"].includes(String(hermesMode).toLowerCase())) return true;
+  return date === shanghaiDate();
+}
+
 function hasWindowPassed(targetDate, hhmm) {
   if (targetDate < shanghaiDate()) return true;
   if (targetDate > shanghaiDate()) return false;
@@ -429,7 +436,7 @@ function buildBusinessSignalsLane() {
   const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
   const businessWorkflowActive = gh.latest_run?.status === "queued" || gh.latest_run?.status === "in_progress";
   const pagesActive = pages.latest_run?.status === "queued" || pages.latest_run?.status === "in_progress";
-  const publicationClosureWindowPassed = hasWindowPassed(date, "10:50");
+  const publicationClosureWindowPassed = hasWindowPassed(date, "09:58");
 
   evidence.activeDate = activeDate;
   evidence.generatedAt = data?.meta?.generatedAt || "";
@@ -445,7 +452,7 @@ function buildBusinessSignalsLane() {
   evidence.readinessReport = exists(readinessFile) ? rel(readinessFile) : "missing";
   evidence.github = gh;
   evidence.publicationClosure = {
-    checkpoint: "10:50",
+    checkpoint: "09:58",
     businessDataSameDate: activeDate === date,
     cardCount: selection?.selectedCount ?? sameDateCards.length,
     businessPrMerged: Boolean(mergedPr),
@@ -525,7 +532,7 @@ function buildBusinessSignalsLane() {
 
   if (publicationClosureWindowPassed) {
     if (gh.available && !evidence.publicationClosure.businessPrMerged && !gh.latest_run) {
-      warnings.push("10:50 publication closure found no merged Business Signals PR and no same-date workflow run");
+      warnings.push("09:58 publication closure found no merged Business Signals PR and no same-date workflow run");
     }
     if (pagesActive) {
       addProblem(problems, `GitHub Pages workflow is ${pages.latest_run.status}; publication closure should wait`, "waiting");
@@ -533,7 +540,7 @@ function buildBusinessSignalsLane() {
     } else if (pages.available && pages.latest_run?.conclusion && pages.latest_run.conclusion !== "success") {
       warnings.push(`latest same-date GitHub Pages workflow conclusion is ${pages.latest_run.conclusion}`);
     } else if (pages.available && !pages.latest_run) {
-      warnings.push("10:50 publication closure found no same-date GitHub Pages run");
+      warnings.push("09:58 publication closure found no same-date GitHub Pages run");
     }
     if (evidence.publicationClosure.localSync.available && !evidence.publicationClosure.localSync.clean) {
       warnings.push(`local Obsidian sync may be blocked by ${evidence.publicationClosure.localSync.dirtyFiles} dirty file(s)`);
@@ -896,7 +903,7 @@ function buildCommunityLane() {
   return {
     id: "community_intelligence",
     label: "Community Intelligence",
-    schedule: "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox",
+    schedule: "08:30 local collection; 08:45 / 09:35 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox",
     status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
@@ -1087,6 +1094,7 @@ function writeReports(payload) {
     `- status: ${payload.status}`,
     `- github_mode: ${githubMode}`,
     `- scheduled_task_mode: ${taskMode}`,
+    `- hermes_write: ${payload.hermes_write}`,
     "",
     "| Lane | Timeline | Status | Problems | Waiting | Warnings |",
     "|---|---|---|---:|---:|---:|",
@@ -1100,7 +1108,7 @@ function writeReports(payload) {
   fs.writeFileSync(mdPath, md, "utf8");
   fs.writeFileSync(latestJsonPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   fs.writeFileSync(latestMdPath, md, "utf8");
-  const inboxFiles = writeHermesInbox(payload, mdPath);
+  const inboxFiles = payload.hermes_write === "enabled" ? writeHermesInbox(payload, mdPath) : [];
   return { jsonPath, mdPath, inboxFiles };
 }
 
@@ -1119,6 +1127,8 @@ function main() {
     date,
     generated_at: new Date().toISOString(),
     timezone: "Asia/Shanghai",
+    hermes_mode: hermesMode,
+    hermes_write: shouldWriteHermesInbox() ? "enabled" : "disabled",
     lanes,
   };
   const { jsonPath, mdPath, inboxFiles } = writeReports(payload);

@@ -2,10 +2,10 @@ name: WaveSight Community Intelligence PR
 
 on:
   schedule:
-    # 08:45 / 10:45 Asia/Shanghai. GitHub only verifies and publishes
+    # 08:45 / 09:35 Asia/Shanghai. GitHub only verifies and publishes
     # local collector output; Chrome collection stays on the local scheduled task.
     - cron: "45 0 * * *"
-    - cron: "45 2 * * *"
+    - cron: "35 1 * * *"
   workflow_dispatch:
     inputs:
       date:
