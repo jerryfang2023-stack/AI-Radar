@@ -1657,12 +1657,12 @@ function companyFromSection(section) {
   const interviewCompanyClean = shortCompany(String(interviewCompany || "").replace(/^Ep\s+\d+:\s*/iu, ""));
   if (interviewCompanyClean && !isWeakCompanyName(interviewCompanyClean)) return interviewCompanyClean;
   const patterns = [
-    /\bstartup\s+([A-Z][A-Za-z0-9.&-]+)\s+(?:raises|raised|said|announced)\b/iu,
+    /\bstartup\s+([A-Z][A-Za-z0-9.&-]+)\s+(?:raises|raised|secures|secured|said|announced)\b/iu,
     /\bseed\s+for\s+([A-Z][A-Za-z0-9.&-]+)\s+to\b/iu,
-    /\b([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\s+(?:on\s+\w+\s+)?(?:today\s+)?(?:announced|said|revealed|has raised|raised|will use|pulls in|pitches)\b/u,
+    /\b([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\s+(?:on\s+\w+\s+)?(?:today\s+)?(?:announced|said|revealed|has raised|raised|secures|secured|will use|pulls in|pitches)\b/u,
     /\b([A-Z][A-Za-z0-9.&-]*(?:\.ai)?)(?:\s+Inc\.)?,\s+a\s+/u,
-    /#\s*([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\s+(?:raises|raised|pulls|launches|announces|deploys|uses)\b/iu,
-    /^(.+?)\s+(?:raises|raised|pulls in|launches|announces|deploys|uses|wins|partners)\b/iu,
+    /#\s*([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\s+(?:raises|raised|secures|secured|pulls|launches|announces|deploys|uses)\b/iu,
+    /^(.+?)\s+(?:raises|raised|secures|secured|pulls in|launches|announces|deploys|uses|wins|partners)\b/iu,
     /^AWS Marketplace:\s*(.+)$/iu,
   ];
   for (const pattern of patterns) {
@@ -1682,12 +1682,29 @@ function extractAmount(text) {
 const fundingAmountPattern = /(?:[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|K|m|b|k|million|billion)?|\d+(?:\.\d+)?\s?(?:million|billion|万美元|亿美元|万人民币|亿人民币|万元|亿元)|\d+(?:\.\d+)?\s?(?:\u4e07\u7f8e\u5143|\u4ebf\u7f8e\u5143|\u4e07\u4eba\u6c11\u5e01|\u4ebf\u4eba\u6c11\u5e01|\u4e07\u5143|\u4ebf\u5143))/iu;
 const fundingRoundPattern = /\b(?:pre[- ]seed|seed|series\s+[a-z]|debt financing|bridge round)\b|(?:\u79cd\u5b50|\u5929\u4f7f|[A-Ha-h]\s?\u8f6e|\u6218\u7565)\s?(?:\u8f6e|\u878d\u8d44)?/iu;
 
+function isCorporateCapexOrCommunityInvestment(section) {
+  const haystack = [
+    poolTitle(section),
+    value(section, "source"),
+    value(section, "source_url"),
+    value(section, "key_excerpts"),
+    value(section, "evidence_seed"),
+  ].join(" ");
+  const largeVendor = /\b(Google|Microsoft|Amazon|AWS|Meta|Apple|Oracle|NVIDIA|Nvidia|Salesforce|IBM)\b/iu.test(haystack);
+  const capexContext = /\b(strengthening our presence|new investments? and community support|community support|community investment|invest(?:ing|ment)? in (?:Alabama|Virginia|Ohio|Missouri|Texas|Iowa|Georgia|Tennessee|Nevada|Arizona|Oregon|region)|data centers?|cloud region|campus|office expansion|local jobs?|workforce development|infrastructure investment|economic development)\b/iu.test(haystack);
+  const financingContext = /\b(raises?|raised|lands?|landed|secures?|secured|closes?|closed|seed|pre[- ]seed|series\s+[a-z]|funding round|financing round|led by|participation from|investors?)\b/iu.test(haystack);
+  return largeVendor && capexContext && !financingContext;
+}
+
 function isSingleCompanyFundingSignal(section) {
   const title = poolTitle(section);
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const haystack = `${title} ${text} ${sourceUrl}`;
   const sourceIdentity = `${title} ${value(section, "source")} ${sourceUrl}`;
+  if (isCorporateCapexOrCommunityInvestment(section)) {
+    return false;
+  }
   if (/(funding map|top ai pre-seed investors|pre-seed investors|top ai agent startups|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|funding tracker|ai agent startups insight partners funding|series-b-enterprise-ai-agents|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(sourceIdentity)) {
     return false;
   }
@@ -1994,6 +2011,9 @@ function autoSignalEligibilityIssues(section) {
   if (isNonCommercialPolicyOrEthicsSignal(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "non_commercial_policy_or_ethics_signal"));
   }
+  if (isCorporateCapexOrCommunityInvestment(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "corporate_capex_or_community_investment_not_signal_card"));
+  }
   if (/(learn\.microsoft\.com|\/docs?\/|documentation|README|readme-ov-file|model page|product catalog)/iu.test(text) || /why we.*re investing/iu.test(text)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "docs_or_catalog_or_investing_thesis"));
   }
@@ -2018,6 +2038,7 @@ function repairSuggestionForIssues(issues = []) {
   if (/source_title_translation_missing_or_contaminated/iu.test(text)) return "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.";
   if (/fact_type_constraints:.*user_feedback|user_feedback_not_fact_signal/iu.test(text)) return "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.";
   if (/workforce_retraining_program_not_formal_signal_card/iu.test(text)) return "Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.";
+  if (/corporate_capex_or_community_investment_not_signal_card/iu.test(text)) return "Keep corporate regional capex, data-center, or community investment announcements as Pool context unless a separate product, customer, or financing event is sourced.";
   if (/funding_not_single_company_round/iu.test(text)) return "Use a single-company funding announcement with amount, round, investor, and date.";
   if (/source_auditability|evidence_quality|missing_source_url|missing_source_material/iu.test(text)) return "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.";
   if (/summary_without_formal_event/iu.test(text)) return "Keep as traceable summary unless it has a formal product, funding, case event, or the observation override is intentionally enabled.";
