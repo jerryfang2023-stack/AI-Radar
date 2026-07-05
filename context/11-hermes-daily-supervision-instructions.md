@@ -81,6 +81,19 @@ When the report status is `failed` or `manual_required`, the same command must c
 agent-workflow/inbox/hermes-to-codex/
 ```
 
+## Business Signals Data Reading Contract
+
+When Hermes checks Business Signals card counts, category mix, or funding presence, the canonical current-day source is the active-date public Card set:
+
+1. Primary frontstage source: `01-SiteV2/site/data/v3-data-observation-desk.json`.
+2. Resolve `activeDate` from `meta.activeDate`.
+3. Count only `frontstageCards.filter(card.date === activeDate)`.
+4. If using `01-SiteV2/site/data/intelligence-graph-index.json`, use `todayFrontstageCards` and `summary.todayFrontstageCards` for the current public set.
+5. Do not use `coreSignalCards` as the public count; it is only a relationship-analysis subset.
+6. Do not use top-level `cards` as the current-day count unless it is explicitly filtered by `activeDate`; top-level `cards` is a historical archive.
+7. Do not report funding for today from `dailyLens.categoryStats.last7`, `dailyLens.categoryStats.total`, historical `cards`, or previous reports. Funding presence for today is `active-date public cards where category === "funding"`.
+8. Normalize category aliases before analytics: `product-service` and `product_service` are the same product / service category.
+
 ## Timeline
 
 | Time | Lane | Hermes action |

@@ -3852,7 +3852,13 @@ function buildIntelligenceGraphIndex(payload = {}) {
       intendedReader: "Hermes Agent data officer",
       scope: "AI business-signal intelligence graph analysis",
       useAllCorePool: true,
-      publicCardSet: "all qualified Core Pool Signal Cards",
+      activePublicCardsField: "todayFrontstageCards",
+      historicalArchiveField: "cards",
+      analysisSubsetFields: ["coreSignalCards", "relationshipDirections", "tagAssociations", "trendSignals", "observationSeeds"],
+      aggregateFields: ["summary", "dailyLens.categoryStats"],
+      publicCardSet: "Use todayFrontstageCards for the active-date public Business Signals Card set. coreSignalCards is a relationship-analysis subset only; cards is the historical archive.",
+      cardCountRule: "For public Card count, count todayFrontstageCards. dailyLens.categoryStats has three category rows and must not be counted as Cards.",
+      categoryCanonicalization: "Normalize product-service to product_service for analytics. Funding counts must be computed only from active-date public cards.",
       excludedEvidence: ["follow-builders viewpoints", "opinion-only materials", "backend-only fields without source evidence"],
       recommendedOutputs: [
         "daily_high_value_relationships",
@@ -3885,6 +3891,7 @@ function buildIntelligenceGraphIndex(payload = {}) {
         .map((card) => ({ id: card.id, vendor: card.largeVendorKey, title: card.title })),
       categoryStats: payload.stats || [],
     },
+    todayFrontstageCards: todayFrontstageCards.map(graphIndexCard),
     cards: allCards.map(graphIndexCard),
     coreSignalCards: coreSignalCards.map(graphIndexCard),
     graph: {

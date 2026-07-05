@@ -141,6 +141,12 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when source-artifact Raw selection rotates across GDELT, keyword search, RSS, and AI HOT as peer channels instead of consuming one fixed priority channel first.
     - Fail when a transient provider note or Raw-only shortage blocks Card generation after Pool audit supply and the frontstage Card contract are sufficient, or when provider recovery hides a true Pool/Card shortage.
 
+28. `hermes_business_signal_data_entry_contract`
+    - Pass when Hermes / data-officer analysis counts active-date public Business Signal Cards from `v3-data-observation-desk.json.frontstageCards.filter(card.date === meta.activeDate)` or `intelligence-graph-index.json.todayFrontstageCards`.
+    - Pass when `intelligence-graph-index.json.summary.todayFrontstageCards` matches the active-date public Card count and funding presence is computed only from those active-date public Cards.
+    - Pass when `product-service` is normalized to `product_service` before category analytics.
+    - Fail when Hermes treats `coreSignalCards`, `relationshipDirections`, `observationSeeds`, `dailyLens.categoryStats.last7/total`, historical `cards`, or stale reports as today's frontstage Card set.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.

@@ -60,6 +60,8 @@ An existing `automation/business-signals-<date>` branch must not block a schedul
 
 `intelligence-graph-index.json` is the stable machine-readable entry for Hermes Agent / data-officer analysis. It is generated from the same Card / backend audit / relationship / trend-candidate dataset as the business-signal frontstage, and must be committed and deployed whenever `v3-data-observation-desk.json` is updated.
 
+Hermes must not infer the active public Business Signals set from the graph-analysis subsets. For current-day public Card count and category mix, read `v3-data-observation-desk.json.meta.activeDate` and `frontstageCards.filter(card.date === activeDate)`, or read `intelligence-graph-index.json.todayFrontstageCards` / `summary.todayFrontstageCards`. `intelligence-graph-index.json.cards` is a historical archive, and `coreSignalCards` is a relationship-analysis subset; neither is the current frontstage set. Normalize `product-service` to `product_service` for analytics, and compute funding counts only from active-date public Cards.
+
 ## Morning Production And Problem Monitoring
 
 The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. Its historical 08:00 failures should not restore the exact-hour schedule. Current morning schedule truth is:
