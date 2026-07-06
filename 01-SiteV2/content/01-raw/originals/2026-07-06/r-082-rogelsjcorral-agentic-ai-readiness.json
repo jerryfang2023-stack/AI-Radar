@@ -1,0 +1,282 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-082",
+  "title": "rogelsjcorral/agentic-ai-readiness",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://github.com/rogelsjcorral/agentic-ai-readiness",
+  "canonical_url": "https://github.com/rogelsjcorral/agentic-ai-readiness",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "production_rollout",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-06T02:21:27.150Z",
+  "language": "mixed",
+  "full_text": "rogelsjcorral\nagentic-ai-readiness\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n87 Commits\n87 Commits\n.github/ ISSUE_TEMPLATE\n.github/ ISSUE_TEMPLATE\nLICENSES\nLICENSES\nappendices\nappendices\nexamples\nexamples\npaper\npaper\n.gitignore\n.gitignore\nCHANGELOG.md\nCHANGELOG.md\nCITATION.cff\nCITATION.cff\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSTART_HERE.md\nSTART_HERE.md\nView all files\nRepository files navigation\nOperational Readiness Criteria for Tool-Using LLM Agents\nOperational readiness criteria for tool-using LLM agents: autonomy budgets, controls, metrics, and rollout gates for delegated autonomy.\nWhat this is\nThis repository contains a draft technical paper that proposes a practical readiness model for deploying tool-using LLM agents in real systems. It treats agentic AI as a deployment shift where model outputs can become state-changing actions through tools, credentials, and multi-step execution.\nWhat this is not\nThis is not a vendor comparison, not a policy manifesto, and not a claim that agentic AI is inherently unsafe. It is written as an operational field manual intended to be applied in production environments.\nDocument status\nDraft for community review. Feedback is welcomed, especially on:\nMissing failure modes or edge cases\nReadiness gates that are unrealistic in practice\nMetric definitions and better formulas\nTier 4 (multi-agent) operational controls\nWhy This Is On GitHub\nThis repository maintains an auditable, version-controlled history of the paper's evolution. All changes are tracked with commit history, enabling transparent development and community contribution.\nPaper\nThe paper is maintained under paper/ .\nLatest draft (PDF): paper/agentic-ai-readiness-v0.3.pdf\nLatest draft (source): paper/agentic-ai-readiness-v0.3.md\nLatest draft (tex): paper/main.tex\nRepository structure\npaper/\nCurrent paper drafts, appendices, figures, and reference notes\npaper/appendices/\nReusable templates and checklists (autonomy budget, scorecard, audit schema, scenarios, rollout checklist)\nexamples/\nWorked examples for budgets, audit events, and harness scaffolding\n.github/\nIssue and PR templates for community feedback\nHow to use the paper\nUse the document as an implementation sequence:\nIdentify relevant failure modes\nApply readiness gates by capability tier\nImplement enforceable control patterns\nAdd audit events and anomaly signals\nValidate using the evaluation harness and metrics\nRoll out by phase using the rollout ladder\nTier 2 and above is not eligible without rollback readiness and evidence capture for every permitted write action.\nflowchart TD\nA[\"Intent / Ticket\"] --> B[\"Enumerate Targets\"]\nB --> C[\"Plan (Structured Actions)\"]\nC --> D{\"Approval Required?\"}\nD -- \"No\" --> E[\"Mint Scoped Credentials\"]\nD -- \"Yes\" --> D1[\"Two-Channel Confirmation<br/>Targets + Diffs + Approval ID\"] --> E\nE --> F[\"Execute Tool Calls<br/>(Allowlisted + Schema-Validated)\"]\nF --> G[\"Emit Audit Events<br/>(Append-Only)\"]\nG --> H[\"Generate Evidence Record<br/>(Intent, Targets, Approvals, Calls, Outcomes)\"]\nH --> I{\"Anomaly or Injection Signal?\"}\nI -- \"Yes\" --> J[\"Lockdown Mode<br/>Revoke Credentials + Stop Queue\"] --> K[\"Human Takeover / Review\"]\nI -- \"No\" --> L[\"Verify Outcomes\"]\nL --> M{\"Rollback Needed?\"}\nM -- \"Yes\" --> N[\"Rollback + Verify\"] --> O[\"Close Task\"]\nM -- \"No\" --> O[\"Close Task\"]\nLoading\nLicense\nSee LICENSE .\nCitation\nVersion DOI (v1.0): https://doi.org/10.5281/zenodo.19211676\nConcept DOI (all versions): https://doi.org/10.5281/zenodo.19211667\nZenodo record: https://zenodo.org/records/19211667\nContributing\nSuggestions and corrections are welcome.\nUse Issues for problems, missing coverage, or proposed changes\nUse Pull Requests for concrete edits\nPlease keep contributions focused on operational deployability: controls, metrics, auditability, and recovery.\nContact\nRogel S.J. Corral (Independent Researcher)\nAbout\nOperational readiness criteria for tool-using LLM agents: autonomy budgets, controls, metrics, and rollout gates for delegated autonomy.\nResources\nReadme\nLicense\nView license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv1.0\nLatest\nMar 25, 2026\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTeX\n100.0%",
+  "clean_text": "rogelsjcorral\nagentic-ai-readiness\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n87 Commits\n87 Commits\n.github/ ISSUE_TEMPLATE\n.github/ ISSUE_TEMPLATE\nLICENSES\nLICENSES\nappendices\nappendices\nexamples\nexamples\npaper\npaper\n.gitignore\n.gitignore\nCHANGELOG.md\nCHANGELOG.md\nCITATION.cff\nCITATION.cff\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSTART_HERE.md\nSTART_HERE.md\nView all files\nRepository files navigation\nOperational Readiness Criteria for Tool-Using LLM Agents\nOperational readiness criteria for tool-using LLM agents: autonomy budgets, controls, metrics, and rollout gates for delegated autonomy.\nWhat this is\nThis repository contains a draft technical paper that proposes a practical readiness model for deploying tool-using LLM agents in real systems. It treats agentic AI as a deployment shift where model outputs can become state-changing actions through tools, credentials, and multi-step execution.\nWhat this is not\nThis is not a vendor comparison, not a policy manifesto, and not a claim that agentic AI is inherently unsafe. It is written as an operational field manual intended to be applied in production environments.\nDocument status\nDraft for community review. Feedback is welcomed, especially on:\nMissing failure modes or edge cases\nReadiness gates that are unrealistic in practice\nMetric definitions and better formulas\nTier 4 (multi-agent) operational controls\nWhy This Is On GitHub\nThis repository maintains an auditable, version-controlled history of the paper's evolution. All changes are tracked with commit history, enabling transparent development and community contribution.\nPaper\nThe paper is maintained under paper/ .\nLatest draft (PDF): paper/agentic-ai-readiness-v0.3.pdf\nLatest draft (source): paper/agentic-ai-readiness-v0.3.md\nLatest draft (tex): paper/main.tex\nRepository structure\npaper/\nCurrent paper drafts, appendices, figures, and reference notes\npaper/appendices/\nReusable templates and checklists (autonomy budget, scorecard, audit schema, scenarios, rollout checklist)\nexamples/\nWorked examples for budgets, audit events, and harness scaffolding\n.github/\nIssue and PR templates for community feedback\nHow to use the paper\nUse the document as an implementation sequence:\nIdentify relevant failure modes\nApply readiness gates by capability tier\nImplement enforceable control patterns\nAdd audit events and anomaly signals\nValidate using the evaluation harness and metrics\nRoll out by phase using the rollout ladder\nTier 2 and above is not eligible without rollback readiness and evidence capture for every permitted write action.\nflowchart TD\nA[\"Intent / Ticket\"] --> B[\"Enumerate Targets\"]\nB --> C[\"Plan (Structured Actions)\"]\nC --> D{\"Approval Required?\"}\nD -- \"No\" --> E[\"Mint Scoped Credentials\"]\nD -- \"Yes\" --> D1[\"Two-Channel Confirmation<br/>Targets + Diffs + Approval ID\"] --> E\nE --> F[\"Execute Tool Calls<br/>(Allowlisted + Schema-Validated)\"]\nF --> G[\"Emit Audit Events<br/>(Append-Only)\"]\nG --> H[\"Generate Evidence Record<br/>(Intent, Targets, Approvals, Calls, Outcomes)\"]\nH --> I{\"Anomaly or Injection Signal?\"}\nI -- \"Yes\" --> J[\"Lockdown Mode<br/>Revoke Credentials + Stop Queue\"] --> K[\"Human Takeover / Review\"]\nI -- \"No\" --> L[\"Verify Outcomes\"]\nL --> M{\"Rollback Needed?\"}\nM -- \"Yes\" --> N[\"Rollback + Verify\"] --> O[\"Close Task\"]\nM -- \"No\" --> O[\"Close Task\"]\nLoading\nLicense\nSee LICENSE .\nCitation\nVersion DOI (v1.0): https://doi.org/10.5281/zenodo.19211676\nConcept DOI (all versions): https://doi.org/10.5281/zenodo.19211667\nZenodo record: https://zenodo.org/records/19211667\nContributing\nSuggestions and corrections are welcome.\nUse Issues for problems, missing coverage, or proposed changes\nUse Pull Requests for concrete edits\nPlease keep contributions focused on operational deployability: controls, metrics, auditability, and recovery.\nContact\nRogel S.J. Corral (Independent Researcher)\nAbout\nOperational readiness criteria for tool-using LLM agents: autonomy budgets, controls, metrics, and rollout gates for delegated autonomy.\nResources\nReadme\nLicense\nView license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv1.0\nLatest\nMar 25, 2026\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTeX\n100.0%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-06/r-082-rogelsjcorral-agentic-ai-readiness.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-06/r-082-rogelsjcorral-agentic-ai-readiness.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 4744,
+    "paragraph_count": 62,
+    "sentence_count": 24,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0145,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 4744,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "7ba8c9bc46a95c45",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "9d1e8b6f72fdfc5d",
+  "content_hash": "7ba8c9bc46a95c45",
+  "full_text_hash": "7ba8c9bc46a95c45",
+  "semantic_hash": "0a1c5f3a249d06b3",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-06T02:21:27.150Z",
+  "last_seen_at": "2026-07-06T02:21:27.150Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "# Repository: rogelsjcorral/agentic-ai-readiness Operational readiness criteria for tool-using LLM agents: autonomy budgets, controls, metrics, and rollout gates for delegated autonomy. - Stars: 0 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: TeX - Languages: TeX - License: Other (..... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "rogelsjcorral agentic-ai-readiness Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 87 Commits 87 Commits .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "github/ ISSUE_TEMPLATE .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "github/ ISSUE_TEMPLATE LICENSES LICENSES appendices appendices examples examples paper paper .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore CHANGELOG.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "cff CODE_OF_CONDUCT.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-06T02:21:27.150Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub"
+    ],
+    "products": [
+      "agents",
+      "Agents",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "0",
+      "87",
+      "4",
+      "0.3",
+      "2",
+      "1",
+      "1.0",
+      "10.5281"
+    ],
+    "quotes": [
+      "Intent / Ticket",
+      "Enumerate Targets",
+      "Plan (Structured Actions)",
+      "Approval Required?",
+      "Mint Scoped Credentials"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "# Repository: rogelsjcorral/agentic-ai-readiness Operational readiness criteria for tool-using LLM agents: autonomy budgets, controls, metrics, and rollout gates for delegated autonomy. - Stars: 0 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: TeX - Languages: TeX - License: Other (..... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=developer_ecosystem",
+      "rogelsjcorral agentic-ai-readiness Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 87 Commits 87 Commits .",
+      "github/ ISSUE_TEMPLATE ."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# rogelsjcorral/agentic-ai-readiness\n\n- raw_id: R-082\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://github.com/rogelsjcorral/agentic-ai-readiness\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-06T02:21:27.150Z\n\n## clean_text\n\nrogelsjcorral\nagentic-ai-readiness\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n87 Commits\n87 Commits\n.github/ ISSUE_TEMPLATE\n.github/ ISSUE_TEMPLATE\nLICENSES\nLICENSES\nappendices\nappendices\nexamples\nexamples\npaper\npaper\n.gitignore\n.gitignore\nCHANGELOG.md\nCHANGELOG.md\nCITATION.cff\nCITATION.cff\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSTART_HERE.md\nSTART_HERE.md\nView all files\nRepository files navigation\nOperational Readiness Criteria for Tool-Using LLM Agents\nOperational readiness criteria for tool-using LLM agents: autonomy budgets, controls, metrics, and rollout gates for delegated autonomy.\nWhat this is\nThis repository contains a draft technical paper that proposes a practical readiness model for deploying tool-using LLM agents in real systems. It treats agentic AI as a deployment shift where model outputs can become state-changing actions through tools, credentials, and multi-step execution.\nWhat this is not\nThis is not a vendor comparison, not a policy manifesto, and not a claim that agentic AI is inherently unsafe. It is written as an operational field manual intended to be applied in production environments.\nDocument status\nDraft for community review. Feedback is welcomed, especially on:\nMissing failure modes or edge cases\nReadiness gates that are unrealistic in practice\nMetric definitions and better formulas\nTier 4 (multi-agent) operational controls\nWhy This Is On GitHub\nThis repository maintains an auditable, version-controlled history of the paper's evolution. All changes are tracked with commit history, enabling transparent development and community contribution.\nPaper\nThe paper is maintained under paper/ .\nLatest draft (PDF): paper/agentic-ai-readiness-v0.3.pdf\nLatest draft (source): paper/agentic-ai-readiness-v0.3.md\nLatest draft (tex): paper/main.tex\nRepository structure\npaper/\nCurrent paper drafts, appendices, figures, and reference notes\npaper/appendices/\nReusable templates and checklists (autonomy budget, scorecard, audit schema, scenarios, rollout checklist)\nexamples/\nWorked examples for budgets, audit events, and harness scaffolding\n.github/\nIssue and PR templates for community feedback\nHow to use the paper\nUse the document as an implementation sequence:\nIdentify relevant failure modes\nApply readiness gates by capability tier\nImplement enforceable control patterns\nAdd audit events and anomaly signals\nValidate using the evaluation harness and metrics\nRoll out by phase using the rollout ladder\nTier 2 and above is not eligible without rollback readiness and evidence capture for every permitted write action.\nflowchart TD\nA[\"Intent / Ticket\"] --> B[\"Enumerate Targets\"]\nB --> C[\"Plan (Structured Actions)\"]\nC --> D{\"Approval Required?\"}\nD -- \"No\" --> E[\"Mint Scoped Credentials\"]\nD -- \"Yes\" --> D1[\"Two-Channel Confirmation<br/>Targets + Diffs + Approval ID\"] --> E\nE --> F[\"Execute Tool Calls<br/>(Allowlisted + Schema-Validated)\"]\nF --> G[\"Emit Audit Events<br/>(Append-Only)\"]\nG --> H[\"Generate Evidence Record<br/>(Intent, Targets, Approvals, Calls, Outcomes)\"]\nH --> I{\"Anomaly or Injection Signal?\"}\nI -- \"Yes\" --> J[\"Lockdown Mode<br/>Revoke Credentials + Stop Queue\"] --> K[\"Human Takeover / Review\"]\nI -- \"No\" --> L[\"Verify Outcomes\"]\nL --> M{\"Rollback Needed?\"}\nM -- \"Yes\" --> N[\"Rollback + Verify\"] --> O[\"Close Task\"]\nM -- \"No\" --> O[\"Close Task\"]\nLoading\nLicense\nSee LICENSE .\nCitation\nVersion DOI (v1.0): https://doi.org/10.5281/zenodo.19211676\nConcept DOI (all versions): https://doi.org/10.5281/zenodo.19211667\nZenodo record: https://zenodo.org/records/19211667\nContributing\nSuggestions and corrections are welcome.\nUse Issues for problems, missing coverage, or proposed changes\nUse Pull Requests for concrete edits\nPlease keep contributions focused on operational deployability: controls, metrics, auditability, and recovery.\nContact\nRogel S.J. Corral (Independent Researcher)\nAbout\nOperational readiness criteria for tool-using LLM agents: autonomy budgets, controls, metrics, and rollout gates for delegated autonomy.\nResources\nReadme\nLicense\nView license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv1.0\nLatest\nMar 25, 2026\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTeX\n100.0%\n\n## full_text\n\nrogelsjcorral\nagentic-ai-readiness\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n87 Commits\n87 Commits\n.github/ ISSUE_TEMPLATE\n.github/ ISSUE_TEMPLATE\nLICENSES\nLICENSES\nappendices\nappendices\nexamples\nexamples\npaper\npaper\n.gitignore\n.gitignore\nCHANGELOG.md\nCHANGELOG.md\nCITATION.cff\nCITATION.cff\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSTART_HERE.md\nSTART_HERE.md\nView all files\nRepository files navigation\nOperational Readiness Criteria for Tool-Using LLM Agents\nOperational readiness criteria for tool-using LLM agents: autonomy budgets, controls, metrics, and rollout gates for delegated autonomy.\nWhat this is\nThis repository contains a draft technical paper that proposes a practical readiness model for deploying tool-using LLM agents in real systems. It treats agentic AI as a deployment shift where model outputs can become state-changing actions through tools, credentials, and multi-step execution.\nWhat this is not\nThis is not a vendor comparison, not a policy manifesto, and not a claim that agentic AI is inherently unsafe. It is written as an operational field manual intended to be applied in production environments.\nDocument status\nDraft for community review. Feedback is welcomed, especially on:\nMissing failure modes or edge cases\nReadiness gates that are unrealistic in practice\nMetric definitions and better formulas\nTier 4 (multi-agent) operational controls\nWhy This Is On GitHub\nThis repository maintains an auditable, version-controlled history of the paper's evolution. All changes are tracked with commit history, enabling transparent development and community contribution.\nPaper\nThe paper is maintained under paper/ .\nLatest draft (PDF): paper/agentic-ai-readiness-v0.3.pdf\nLatest draft (source): paper/agentic-ai-readiness-v0.3.md\nLatest draft (tex): paper/main.tex\nRepository structure\npaper/\nCurrent paper drafts, appendices, figures, and reference notes\npaper/appendices/\nReusable templates and checklists (autonomy budget, scorecard, audit schema, scenarios, rollout checklist)\nexamples/\nWorked examples for budgets, audit events, and harness scaffolding\n.github/\nIssue and PR templates for community feedback\nHow to use the paper\nUse the document as an implementation sequence:\nIdentify relevant failure modes\nApply readiness gates by capability tier\nImplement enforceable control patterns\nAdd audit events and anomaly signals\nValidate using the evaluation harness and metrics\nRoll out by phase using the rollout ladder\nTier 2 and above is not eligible without rollback readiness and evidence capture for every permitted write action.\nflowchart TD\nA[\"Intent / Ticket\"] --> B[\"Enumerate Targets\"]\nB --> C[\"Plan (Structured Actions)\"]\nC --> D{\"Approval Required?\"}\nD -- \"No\" --> E[\"Mint Scoped Credentials\"]\nD -- \"Yes\" --> D1[\"Two-Channel Confirmation<br/>Targets + Diffs + Approval ID\"] --> E\nE --> F[\"Execute Tool Calls<br/>(Allowlisted + Schema-Validated)\"]\nF --> G[\"Emit Audit Events<br/>(Append-Only)\"]\nG --> H[\"Generate Evidence Record<br/>(Intent, Targets, Approvals, Calls, Outcomes)\"]\nH --> I{\"Anomaly or Injection Signal?\"}\nI -- \"Yes\" --> J[\"Lockdown Mode<br/>Revoke Credentials + Stop Queue\"] --> K[\"Human Takeover / Review\"]\nI -- \"No\" --> L[\"Verify Outcomes\"]\nL --> M{\"Rollback Needed?\"}\nM -- \"Yes\" --> N[\"Rollback + Verify\"] --> O[\"Close Task\"]\nM -- \"No\" --> O[\"Close Task\"]\nLoading\nLicense\nSee LICENSE .\nCitation\nVersion DOI (v1.0): https://doi.org/10.5281/zenodo.19211676\nConcept DOI (all versions): https://doi.org/10.5281/zenodo.19211667\nZenodo record: https://zenodo.org/records/19211667\nContributing\nSuggestions and corrections are welcome.\nUse Issues for problems, missing coverage, or proposed changes\nUse Pull Requests for concrete edits\nPlease keep contributions focused on operational deployability: controls, metrics, auditability, and recovery.\nContact\nRogel S.J. Corral (Independent Researcher)\nAbout\nOperational readiness criteria for tool-using LLM agents: autonomy budgets, controls, metrics, and rollout gates for delegated autonomy.\nResources\nReadme\nLicense\nView license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv1.0\nLatest\nMar 25, 2026\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTeX\n100.0%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] # Repository: rogelsjcorral/agentic-ai-readiness Operational readiness criteria for tool-using LLM agents: autonomy budgets, controls, metrics, and rollout gates for delegated autonomy. - Stars: 0 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: TeX - Languages: TeX - License: Other (..... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] rogelsjcorral agentic-ai-readiness Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 87 Commits 87 Commits .\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] github/ ISSUE_TEMPLATE .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] github/ ISSUE_TEMPLATE LICENSES LICENSES appendices appendices examples examples paper paper .\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] gitignore CHANGELOG.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] cff CODE_OF_CONDUCT.\n"
+}

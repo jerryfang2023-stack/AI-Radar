@@ -1,0 +1,305 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-025",
+  "title": "frankxai/ai-architect",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://github.com/frankxai/ai-architect",
+  "canonical_url": "https://github.com/frankxai/ai-architect",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "repo_readme_or_index",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": true,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "org_build",
+  "enterprise_ai_transformation_reason": "fde_or_applied_ai_org_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-06T02:21:26.854Z",
+  "language": "mixed",
+  "full_text": "frankxai\nai-architect\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n9 Commits\n9 Commits\n.claude\n.claude\nagent-teams\nagent-teams\ncheatsheets\ncheatsheets\nconfig\nconfig\ndev-docs\ndev-docs\nexamples\nexamples\nknowledge-base\nknowledge-base\nmcp-servers\nmcp-servers\nprompts\nprompts\nsdk-examples\nsdk-examples\nskills\nskills\ntemplates\ntemplates\nworkflows\nworkflows\n.gitignore\n.gitignore\nAI-ARCHITECT-SYSTEM.md\nAI-ARCHITECT-SYSTEM.md\nCLAUDE.md\nCLAUDE.md\nREADME.md\nREADME.md\nView all files\nRepository files navigation\nAI Architect Command Center\nTransform Claude Code into your expert AI Architecture assistant specializing in Multi-Cloud AI solutions with Oracle Cloud Infrastructure focus.\nQuick Start\n# Clone and enter the repository\ncd claude-ai-architect\n# Start Claude Code with this as the working directory\nclaude\n# Use slash commands to get started\n/design-solution \" Customer support AI with RAG \"\n/deploy-genai\n/draw-architecture\nWhat This Repository Does\nThis repository configures Claude Code as an AI Architect with expertise in:\nOCI GenAI & Dedicated AI Clusters - Design, deploy, and optimize GenAI solutions\nMulti-Cloud AI Architecture - AWS, Azure, GCP, OCI workload placement\nRAG & Agent Systems - Knowledge bases, retrieval, multi-agent orchestration\nArchitecture Diagramming - Professional D2, Draw.io, Mermaid diagrams\nEnterprise AI Patterns - Security, governance, FinOps\nRepository Structure\nclaude-ai-architect/\n├── CLAUDE.md # Claude Code instructions\n├── README.md # This file\n├── knowledge-base/ # Domain expertise\n│ ├── oci-genai/ # OCI GenAI documentation\n│ ├── multi-cloud/ # Multi-cloud patterns\n│ └── ai-infrastructure/ # GPU and infrastructure\n├── skills/ # 14 specialized skills\n│ ├── architecture-diagramming/\n│ ├── genai-dac-specialist/\n│ ├── rag-expert/\n│ ├── enterprise-ai-patterns/\n│ └── ... (10 more)\n├── templates/\n│ ├── d2/ # D2 diagram templates\n│ ├── terraform/ # IaC modules\n│ │ ├── oci-genai-dac/\n│ │ ├── oci-rag-system/\n│ │ ├── ai-gateway/\n│ │ └── security-baseline/\n│ ├── cost-calculator.md\n│ └── discovery-questions.md\n├── prompts/ # Slash command definitions\n│ ├── design-solution.md\n│ ├── deploy-genai.md\n│ ├── build-rag.md\n│ ├── multi-cloud-setup.md\n│ ├── optimize-costs.md\n│ ├── security-review.md\n│ └── draw-architecture.md\n├── examples/ # Real-world solutions\n│ ├── customer-support-ai.md\n│ └── multi-cloud-analytics.md\n├── sdk-examples/ # Python code examples\n│ └── oci_genai_examples.py\n├── cheatsheets/ # Quick reference\n│ ├── OCI-GENAI-CHEATSHEET.md\n│ ├── D2-DIAGRAM-CHEATSHEET.md\n│ └── MODEL-COMPARISON-MATRIX.md\n├── mcp-servers/ # Custom MCP servers\n│ ├── oci-infrastructure/ # OCI operations\n│ └── terraform-ops/ # Terraform operations\n├── agent-teams/ # Agent organization\n├── workflows/ # Architecture workflows\n└── config/ # MCP server configs\nSlash Commands\nCommand\nDescription\n/design-solution\nEnd-to-end AI solution design\n/deploy-genai\nDeploy OCI GenAI Dedicated AI Cluster\n/build-rag\nBuild RAG system with knowledge bases\n/multi-cloud-setup\nConfigure multi-cloud AI architecture\n/optimize-costs\nCost optimization review\n/security-review\nSecurity assessment\n/draw-architecture\nGenerate architecture diagrams\nFeatures\n1. Knowledge Base\nComprehensive documentation on:\nOCI Dedicated AI Clusters (DACs)\nOCI GenAI Agents and RAG\nMulti-cloud AI patterns\nGPU infrastructure and training\n2. Terraform Modules\nReady-to-deploy infrastructure:\ncd templates/terraform/oci-genai-dac\nterraform init && terraform apply\n3. D2 Diagram Templates\nProfessional architecture diagrams:\nd2 --layout=tala templates/d2/oci-genai-rag.d2 output.svg\n4. Python SDK Examples\nWorking code for OCI GenAI:\n# See sdk-examples/oci_genai_examples.py\nfrom oci . generative_ai_inference import GenerativeAiInferenceClient\n5. MCP Servers\nCustom servers for Claude integration:\noci-infrastructure - OCI API operations\nterraform-ops - Terraform plan/apply/state\nInstallation\nPrerequisites\nClaude Code CLI installed\nOCI CLI configured (for OCI operations)\nTerraform installed (for IaC)\nD2 installed (for diagrams)\nInstall D2 (for diagrams)\n# macOS\nbrew install d2\n# Linux\ncurl -fsSL https://d2lang.com/install.sh | sh\n# Windows (PowerShell)\niwr -useb https://d2lang.com/install.ps1 | iex\nInstall MCP Servers\n# OCI Infrastructure Server\ncd mcp-servers/oci-infrastructure\npip install -r requirements.txt\n# Terraform Operations Server\ncd mcp-servers/terraform-ops\npip install -r requirements.txt\nConfigure MCP Servers\nAdd to ~/.claude/settings.json :\n\"mcpServers\" : {\n\"oci\" : {\n\"command\" : \" python \" ,\n\"args\" : [ \" /path/to/mcp-servers/oci-infrastructure/server.py \" ]\n},\n\"terraform\" : {\n\"command\" : \" python \" ,\n\"args\" : [ \" /path/to/mcp-servers/terraform-ops/server.py \" ]\nUsage Examples\nDesign a Solution\nUser: Design an AI solution for customer support\nClaude: I'll use the /design-solution workflow...\n[Generates architecture, D2 diagram, Terraform, cost estimate]\nDeploy GenAI Cluster\nUser: Deploy a production GenAI cluster\nClaude: I'll use the /deploy-genai workflow...\n[Recommends sizing, generates Terraform, provides validation steps]\nGenerate Diagram\nUser: Create an architecture diagram for our RAG system\nClaude: I'll generate a D2 diagram...\n[Creates professional diagram with OCI components]\nModel Comparison\nModel\nBest For\nCost\nCommand R+\nComplex reasoning, RAG\n$$$\nCommand R\nGeneral purpose\n$$\nCommand Light\nHigh volume, simple\nLlama 3.1 70B\nOpen source\n$$$\nGPT-4 Turbo\nBest capability\n$$$$\nClaude 3.5 Sonnet\nBest balance\n$$$\nSee cheatsheets/MODEL-COMPARISON-MATRIX.md for full comparison.\nCost Reference\nDAC Size\nUnits\nMonthly Est.\nDev/Test\n2-5\n$3-7.5K\nProduction\n5-15\n$7.5-22.5K\nHigh Volume\n15-30\n$22.5-45K\nEnterprise\n30-50\n$45-75K\nSee templates/cost-calculator.md for detailed scenarios.\nContributing\nAdd knowledge to knowledge-base/\nCreate skills in skills/\nAdd templates to templates/\nDocument in cheatsheets/\nResources\nOCI Documentation\nOCI GenAI\nDedicated AI Clusters\nGenAI Agents\nOCI Icons\nDiagramming\nD2 Language\nD2 Playground\nAgent Frameworks\nClaude Agent SDK\nOracle ADK\nMCP Protocol\nLicense\nMIT License - Use freely for your AI architecture projects.\nAI Architect Command Center - Design with excellence, diagram with clarity, deploy with confidence.\nAbout\nMOVED → github.com/oci-ai-architects/multi-cloud-ai-architect\ngithub.com/oci-ai-architects/multi-cloud-ai-architect\nTopics\narchitecture\noracle\nsystems-design\nenterprise-ai\nai-patterns\nai-architect\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n63.5%\nHCL\n23.4%\nD2\n13.1%",
+  "clean_text": "frankxai\nai-architect\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n9 Commits\n9 Commits\n.claude\n.claude\nagent-teams\nagent-teams\ncheatsheets\ncheatsheets\nconfig\nconfig\ndev-docs\ndev-docs\nexamples\nexamples\nknowledge-base\nknowledge-base\nmcp-servers\nmcp-servers\nprompts\nprompts\nsdk-examples\nsdk-examples\nskills\nskills\ntemplates\ntemplates\nworkflows\nworkflows\n.gitignore\n.gitignore\nAI-ARCHITECT-SYSTEM.md\nAI-ARCHITECT-SYSTEM.md\nCLAUDE.md\nCLAUDE.md\nREADME.md\nREADME.md\nView all files\nRepository files navigation\nAI Architect Command Center\nTransform Claude Code into your expert AI Architecture assistant specializing in Multi-Cloud AI solutions with Oracle Cloud Infrastructure focus.\nQuick Start\n# Clone and enter the repository\ncd claude-ai-architect\n# Start Claude Code with this as the working directory\nclaude\n# Use slash commands to get started\n/design-solution \" Customer support AI with RAG \"\n/deploy-genai\n/draw-architecture\nWhat This Repository Does\nThis repository configures Claude Code as an AI Architect with expertise in:\nOCI GenAI & Dedicated AI Clusters - Design, deploy, and optimize GenAI solutions\nMulti-Cloud AI Architecture - AWS, Azure, GCP, OCI workload placement\nRAG & Agent Systems - Knowledge bases, retrieval, multi-agent orchestration\nArchitecture Diagramming - Professional D2, Draw.io, Mermaid diagrams\nEnterprise AI Patterns - Security, governance, FinOps\nRepository Structure\nclaude-ai-architect/\n├── CLAUDE.md # Claude Code instructions\n├── README.md # This file\n├── knowledge-base/ # Domain expertise\n│ ├── oci-genai/ # OCI GenAI documentation\n│ ├── multi-cloud/ # Multi-cloud patterns\n│ └── ai-infrastructure/ # GPU and infrastructure\n├── skills/ # 14 specialized skills\n│ ├── architecture-diagramming/\n│ ├── genai-dac-specialist/\n│ ├── rag-expert/\n│ ├── enterprise-ai-patterns/\n│ └── ... (10 more)\n├── templates/\n│ ├── d2/ # D2 diagram templates\n│ ├── terraform/ # IaC modules\n│ │ ├── oci-genai-dac/\n│ │ ├── oci-rag-system/\n│ │ ├── ai-gateway/\n│ │ └── security-baseline/\n│ ├── cost-calculator.md\n│ └── discovery-questions.md\n├── prompts/ # Slash command definitions\n│ ├── design-solution.md\n│ ├── deploy-genai.md\n│ ├── build-rag.md\n│ ├── multi-cloud-setup.md\n│ ├── optimize-costs.md\n│ ├── security-review.md\n│ └── draw-architecture.md\n├── examples/ # Real-world solutions\n│ ├── customer-support-ai.md\n│ └── multi-cloud-analytics.md\n├── sdk-examples/ # Python code examples\n│ └── oci_genai_examples.py\n├── cheatsheets/ # Quick reference\n│ ├── OCI-GENAI-CHEATSHEET.md\n│ ├── D2-DIAGRAM-CHEATSHEET.md\n│ └── MODEL-COMPARISON-MATRIX.md\n├── mcp-servers/ # Custom MCP servers\n│ ├── oci-infrastructure/ # OCI operations\n│ └── terraform-ops/ # Terraform operations\n├── agent-teams/ # Agent organization\n├── workflows/ # Architecture workflows\n└── config/ # MCP server configs\nSlash Commands\nCommand\nDescription\n/design-solution\nEnd-to-end AI solution design\n/deploy-genai\nDeploy OCI GenAI Dedicated AI Cluster\n/build-rag\nBuild RAG system with knowledge bases\n/multi-cloud-setup\nConfigure multi-cloud AI architecture\n/optimize-costs\nCost optimization review\n/security-review\nSecurity assessment\n/draw-architecture\nGenerate architecture diagrams\nFeatures\n1. Knowledge Base\nComprehensive documentation on:\nOCI Dedicated AI Clusters (DACs)\nOCI GenAI Agents and RAG\nMulti-cloud AI patterns\nGPU infrastructure and training\n2. Terraform Modules\nReady-to-deploy infrastructure:\ncd templates/terraform/oci-genai-dac\nterraform init && terraform apply\n3. D2 Diagram Templates\nProfessional architecture diagrams:\nd2 --layout=tala templates/d2/oci-genai-rag.d2 output.svg\n4. Python SDK Examples\nWorking code for OCI GenAI:\n# See sdk-examples/oci_genai_examples.py\nfrom oci . generative_ai_inference import GenerativeAiInferenceClient\n5. MCP Servers\nCustom servers for Claude integration:\noci-infrastructure - OCI API operations\nterraform-ops - Terraform plan/apply/state\nInstallation\nPrerequisites\nClaude Code CLI installed\nOCI CLI configured (for OCI operations)\nTerraform installed (for IaC)\nD2 installed (for diagrams)\nInstall D2 (for diagrams)\n# macOS\nbrew install d2\n# Linux\ncurl -fsSL https://d2lang.com/install.sh | sh\n# Windows (PowerShell)\niwr -useb https://d2lang.com/install.ps1 | iex\nInstall MCP Servers\n# OCI Infrastructure Server\ncd mcp-servers/oci-infrastructure\npip install -r requirements.txt\n# Terraform Operations Server\ncd mcp-servers/terraform-ops\npip install -r requirements.txt\nConfigure MCP Servers\nAdd to ~/.claude/settings.json :\n\"mcpServers\" : {\n\"oci\" : {\n\"command\" : \" python \" ,\n\"args\" : [ \" /path/to/mcp-servers/oci-infrastructure/server.py \" ]\n},\n\"terraform\" : {\n\"command\" : \" python \" ,\n\"args\" : [ \" /path/to/mcp-servers/terraform-ops/server.py \" ]\nUsage Examples\nDesign a Solution\nUser: Design an AI solution for customer support\nClaude: I'll use the /design-solution workflow...\n[Generates architecture, D2 diagram, Terraform, cost estimate]\nDeploy GenAI Cluster\nUser: Deploy a production GenAI cluster\nClaude: I'll use the /deploy-genai workflow...\n[Recommends sizing, generates Terraform, provides validation steps]\nGenerate Diagram\nUser: Create an architecture diagram for our RAG system\nClaude: I'll generate a D2 diagram...\n[Creates professional diagram with OCI components]\nModel Comparison\nModel\nBest For\nCost\nCommand R+\nComplex reasoning, RAG\n$$$\nCommand R\nGeneral purpose\n$$\nCommand Light\nHigh volume, simple\nLlama 3.1 70B\nOpen source\n$$$\nGPT-4 Turbo\nBest capability\n$$$$\nClaude 3.5 Sonnet\nBest balance\n$$$\nSee cheatsheets/MODEL-COMPARISON-MATRIX.md for full comparison.\nCost Reference\nDAC Size\nUnits\nMonthly Est.\nDev/Test\n2-5\n$3-7.5K\nProduction\n5-15\n$7.5-22.5K\nHigh Volume\n15-30\n$22.5-45K\nEnterprise\n30-50\n$45-75K\nSee templates/cost-calculator.md for detailed scenarios.\nContributing\nAdd knowledge to knowledge-base/\nCreate skills in skills/\nAdd templates to templates/\nDocument in cheatsheets/\nResources\nOCI Documentation\nOCI GenAI\nDedicated AI Clusters\nGenAI Agents\nOCI Icons\nDiagramming\nD2 Language\nD2 Playground\nAgent Frameworks\nClaude Agent SDK\nOracle ADK\nMCP Protocol\nLicense\nMIT License - Use freely for your AI architecture projects.\nAI Architect Command Center - Design with excellence, diagram with clarity, deploy with confidence.\nAbout\nMOVED → github.com/oci-ai-architects/multi-cloud-ai-architect\ngithub.com/oci-ai-architects/multi-cloud-ai-architect\nTopics\narchitecture\noracle\nsystems-design\nenterprise-ai\nai-patterns\nai-architect\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n63.5%\nHCL\n23.4%\nD2\n13.1%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-06/r-025-frankxai-ai-architect.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-06/r-025-frankxai-ai-architect.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 6959,
+    "paragraph_count": 132,
+    "sentence_count": 25,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0034,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6959,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "3302801607506292",
+    "missing": []
+  },
+  "evidence_strength": "blocked",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "index_only_or_directory_page"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "index_only_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "60a2e65fd54eb9d3",
+  "content_hash": "3302801607506292",
+  "full_text_hash": "3302801607506292",
+  "semantic_hash": "7d4be22b35871613",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-06T02:21:26.854Z",
+  "last_seen_at": "2026-07-06T02:21:26.854Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "# frankxai/ai-architect MOVED → github.com/oci-ai-architects/multi-cloud-ai-architect - Stars: 1 - Forks: 0 - Watchers: 1 - Open issues: 0 - Default branch: main - Created: 2026-01-05T10:28:55Z ## Languages - D2 - HCL - Python ## Topics - ai-architect - ai-patterns - architecture - enterprise-... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "frankxai ai-architect Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 9 Commits 9 Commits .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "claude agent-teams agent-teams cheatsheets cheatsheets config config dev-docs dev-docs examples examples knowledge-base knowledge-base mcp-servers mcp-servers prompts prompts sdk-examples sdk-examples skills skills templates templates workflows workflows .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore AI-ARCHITECT-SYSTEM.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md AI-ARCHITECT-SYSTEM.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md View all files Repository files navigation AI Architect Command Center Transform Claude Code into your expert AI Architecture assistant specializing in Multi-Cloud AI solutions with Oracle Cloud Infrastructure focus.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-06T02:21:26.854Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub",
+      "AWS"
+    ],
+    "products": [
+      "claude",
+      "agent",
+      "mcp",
+      "CLAUDE",
+      "Claude",
+      "Agent",
+      "MCP",
+      "Agents",
+      "GPT-4"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "1",
+      "0",
+      "2026",
+      "01",
+      "05",
+      "10",
+      "28",
+      "55"
+    ],
+    "quotes": [
+      " Customer support AI with RAG ",
+      "mcpServers",
+      " python ",
+      " /path/to/mcp-servers/oci-infrastructure/server.py ",
+      "terraform"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "frankxai ai-architect Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 9 Commits 9 Commits .",
+      "gitignore AI-ARCHITECT-SYSTEM.",
+      "md AI-ARCHITECT-SYSTEM."
+    ],
+    "case_details": [
+      "# frankxai/ai-architect MOVED → github.com/oci-ai-architects/multi-cloud-ai-architect - Stars: 1 - Forks: 0 - Watchers: 1 - Open issues: 0 - Default branch: main - Created: 2026-01-05T10:28:55Z ## Languages - D2 - HCL - Python ## Topics - ai-architect - ai-patterns - architecture - enterprise-... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem"
+    ],
+    "workflow_changes": [
+      "claude agent-teams agent-teams cheatsheets cheatsheets config config dev-docs dev-docs examples examples knowledge-base knowledge-base mcp-servers mcp-servers prompts prompts sdk-examples sdk-examples skills skills templates templates workflows workflows ."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# frankxai/ai-architect\n\n- raw_id: R-025\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://github.com/frankxai/ai-architect\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-06T02:21:26.854Z\n\n## clean_text\n\nfrankxai\nai-architect\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n9 Commits\n9 Commits\n.claude\n.claude\nagent-teams\nagent-teams\ncheatsheets\ncheatsheets\nconfig\nconfig\ndev-docs\ndev-docs\nexamples\nexamples\nknowledge-base\nknowledge-base\nmcp-servers\nmcp-servers\nprompts\nprompts\nsdk-examples\nsdk-examples\nskills\nskills\ntemplates\ntemplates\nworkflows\nworkflows\n.gitignore\n.gitignore\nAI-ARCHITECT-SYSTEM.md\nAI-ARCHITECT-SYSTEM.md\nCLAUDE.md\nCLAUDE.md\nREADME.md\nREADME.md\nView all files\nRepository files navigation\nAI Architect Command Center\nTransform Claude Code into your expert AI Architecture assistant specializing in Multi-Cloud AI solutions with Oracle Cloud Infrastructure focus.\nQuick Start\n# Clone and enter the repository\ncd claude-ai-architect\n# Start Claude Code with this as the working directory\nclaude\n# Use slash commands to get started\n/design-solution \" Customer support AI with RAG \"\n/deploy-genai\n/draw-architecture\nWhat This Repository Does\nThis repository configures Claude Code as an AI Architect with expertise in:\nOCI GenAI & Dedicated AI Clusters - Design, deploy, and optimize GenAI solutions\nMulti-Cloud AI Architecture - AWS, Azure, GCP, OCI workload placement\nRAG & Agent Systems - Knowledge bases, retrieval, multi-agent orchestration\nArchitecture Diagramming - Professional D2, Draw.io, Mermaid diagrams\nEnterprise AI Patterns - Security, governance, FinOps\nRepository Structure\nclaude-ai-architect/\n├── CLAUDE.md # Claude Code instructions\n├── README.md # This file\n├── knowledge-base/ # Domain expertise\n│ ├── oci-genai/ # OCI GenAI documentation\n│ ├── multi-cloud/ # Multi-cloud patterns\n│ └── ai-infrastructure/ # GPU and infrastructure\n├── skills/ # 14 specialized skills\n│ ├── architecture-diagramming/\n│ ├── genai-dac-specialist/\n│ ├── rag-expert/\n│ ├── enterprise-ai-patterns/\n│ └── ... (10 more)\n├── templates/\n│ ├── d2/ # D2 diagram templates\n│ ├── terraform/ # IaC modules\n│ │ ├── oci-genai-dac/\n│ │ ├── oci-rag-system/\n│ │ ├── ai-gateway/\n│ │ └── security-baseline/\n│ ├── cost-calculator.md\n│ └── discovery-questions.md\n├── prompts/ # Slash command definitions\n│ ├── design-solution.md\n│ ├── deploy-genai.md\n│ ├── build-rag.md\n│ ├── multi-cloud-setup.md\n│ ├── optimize-costs.md\n│ ├── security-review.md\n│ └── draw-architecture.md\n├── examples/ # Real-world solutions\n│ ├── customer-support-ai.md\n│ └── multi-cloud-analytics.md\n├── sdk-examples/ # Python code examples\n│ └── oci_genai_examples.py\n├── cheatsheets/ # Quick reference\n│ ├── OCI-GENAI-CHEATSHEET.md\n│ ├── D2-DIAGRAM-CHEATSHEET.md\n│ └── MODEL-COMPARISON-MATRIX.md\n├── mcp-servers/ # Custom MCP servers\n│ ├── oci-infrastructure/ # OCI operations\n│ └── terraform-ops/ # Terraform operations\n├── agent-teams/ # Agent organization\n├── workflows/ # Architecture workflows\n└── config/ # MCP server configs\nSlash Commands\nCommand\nDescription\n/design-solution\nEnd-to-end AI solution design\n/deploy-genai\nDeploy OCI GenAI Dedicated AI Cluster\n/build-rag\nBuild RAG system with knowledge bases\n/multi-cloud-setup\nConfigure multi-cloud AI architecture\n/optimize-costs\nCost optimization review\n/security-review\nSecurity assessment\n/draw-architecture\nGenerate architecture diagrams\nFeatures\n1. Knowledge Base\nComprehensive documentation on:\nOCI Dedicated AI Clusters (DACs)\nOCI GenAI Agents and RAG\nMulti-cloud AI patterns\nGPU infrastructure and training\n2. Terraform Modules\nReady-to-deploy infrastructure:\ncd templates/terraform/oci-genai-dac\nterraform init && terraform apply\n3. D2 Diagram Templates\nProfessional architecture diagrams:\nd2 --layout=tala templates/d2/oci-genai-rag.d2 output.svg\n4. Python SDK Examples\nWorking code for OCI GenAI:\n# See sdk-examples/oci_genai_examples.py\nfrom oci . generative_ai_inference import GenerativeAiInferenceClient\n5. MCP Servers\nCustom servers for Claude integration:\noci-infrastructure - OCI API operations\nterraform-ops - Terraform plan/apply/state\nInstallation\nPrerequisites\nClaude Code CLI installed\nOCI CLI configured (for OCI operations)\nTerraform installed (for IaC)\nD2 installed (for diagrams)\nInstall D2 (for diagrams)\n# macOS\nbrew install d2\n# Linux\ncurl -fsSL https://d2lang.com/install.sh | sh\n# Windows (PowerShell)\niwr -useb https://d2lang.com/install.ps1 | iex\nInstall MCP Servers\n# OCI Infrastructure Server\ncd mcp-servers/oci-infrastructure\npip install -r requirements.txt\n# Terraform Operations Server\ncd mcp-servers/terraform-ops\npip install -r requirements.txt\nConfigure MCP Servers\nAdd to ~/.claude/settings.json :\n\"mcpServers\" : {\n\"oci\" : {\n\"command\" : \" python \" ,\n\"args\" : [ \" /path/to/mcp-servers/oci-infrastructure/server.py \" ]\n},\n\"terraform\" : {\n\"command\" : \" python \" ,\n\"args\" : [ \" /path/to/mcp-servers/terraform-ops/server.py \" ]\nUsage Examples\nDesign a Solution\nUser: Design an AI solution for customer support\nClaude: I'll use the /design-solution workflow...\n[Generates architecture, D2 diagram, Terraform, cost estimate]\nDeploy GenAI Cluster\nUser: Deploy a production GenAI cluster\nClaude: I'll use the /deploy-genai workflow...\n[Recommends sizing, generates Terraform, provides validation steps]\nGenerate Diagram\nUser: Create an architecture diagram for our RAG system\nClaude: I'll generate a D2 diagram...\n[Creates professional diagram with OCI components]\nModel Comparison\nModel\nBest For\nCost\nCommand R+\nComplex reasoning, RAG\n$$$\nCommand R\nGeneral purpose\n$$\nCommand Light\nHigh volume, simple\nLlama 3.1 70B\nOpen source\n$$$\nGPT-4 Turbo\nBest capability\n$$$$\nClaude 3.5 Sonnet\nBest balance\n$$$\nSee cheatsheets/MODEL-COMPARISON-MATRIX.md for full comparison.\nCost Reference\nDAC Size\nUnits\nMonthly Est.\nDev/Test\n2-5\n$3-7.5K\nProduction\n5-15\n$7.5-22.5K\nHigh Volume\n15-30\n$22.5-45K\nEnterprise\n30-50\n$45-75K\nSee templates/cost-calculator.md for detailed scenarios.\nContributing\nAdd knowledge to knowledge-base/\nCreate skills in skills/\nAdd templates to templates/\nDocument in cheatsheets/\nResources\nOCI Documentation\nOCI GenAI\nDedicated AI Clusters\nGenAI Agents\nOCI Icons\nDiagramming\nD2 Language\nD2 Playground\nAgent Frameworks\nClaude Agent SDK\nOracle ADK\nMCP Protocol\nLicense\nMIT License - Use freely for your AI architecture projects.\nAI Architect Command Center - Design with excellence, diagram with clarity, deploy with confidence.\nAbout\nMOVED → github.com/oci-ai-architects/multi-cloud-ai-architect\ngithub.com/oci-ai-architects/multi-cloud-ai-architect\nTopics\narchitecture\noracle\nsystems-design\nenterprise-ai\nai-patterns\nai-architect\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n63.5%\nHCL\n23.4%\nD2\n13.1%\n\n## full_text\n\nfrankxai\nai-architect\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n9 Commits\n9 Commits\n.claude\n.claude\nagent-teams\nagent-teams\ncheatsheets\ncheatsheets\nconfig\nconfig\ndev-docs\ndev-docs\nexamples\nexamples\nknowledge-base\nknowledge-base\nmcp-servers\nmcp-servers\nprompts\nprompts\nsdk-examples\nsdk-examples\nskills\nskills\ntemplates\ntemplates\nworkflows\nworkflows\n.gitignore\n.gitignore\nAI-ARCHITECT-SYSTEM.md\nAI-ARCHITECT-SYSTEM.md\nCLAUDE.md\nCLAUDE.md\nREADME.md\nREADME.md\nView all files\nRepository files navigation\nAI Architect Command Center\nTransform Claude Code into your expert AI Architecture assistant specializing in Multi-Cloud AI solutions with Oracle Cloud Infrastructure focus.\nQuick Start\n# Clone and enter the repository\ncd claude-ai-architect\n# Start Claude Code with this as the working directory\nclaude\n# Use slash commands to get started\n/design-solution \" Customer support AI with RAG \"\n/deploy-genai\n/draw-architecture\nWhat This Repository Does\nThis repository configures Claude Code as an AI Architect with expertise in:\nOCI GenAI & Dedicated AI Clusters - Design, deploy, and optimize GenAI solutions\nMulti-Cloud AI Architecture - AWS, Azure, GCP, OCI workload placement\nRAG & Agent Systems - Knowledge bases, retrieval, multi-agent orchestration\nArchitecture Diagramming - Professional D2, Draw.io, Mermaid diagrams\nEnterprise AI Patterns - Security, governance, FinOps\nRepository Structure\nclaude-ai-architect/\n├── CLAUDE.md # Claude Code instructions\n├── README.md # This file\n├── knowledge-base/ # Domain expertise\n│ ├── oci-genai/ # OCI GenAI documentation\n│ ├── multi-cloud/ # Multi-cloud patterns\n│ └── ai-infrastructure/ # GPU and infrastructure\n├── skills/ # 14 specialized skills\n│ ├── architecture-diagramming/\n│ ├── genai-dac-specialist/\n│ ├── rag-expert/\n│ ├── enterprise-ai-patterns/\n│ └── ... (10 more)\n├── templates/\n│ ├── d2/ # D2 diagram templates\n│ ├── terraform/ # IaC modules\n│ │ ├── oci-genai-dac/\n│ │ ├── oci-rag-system/\n│ │ ├── ai-gateway/\n│ │ └── security-baseline/\n│ ├── cost-calculator.md\n│ └── discovery-questions.md\n├── prompts/ # Slash command definitions\n│ ├── design-solution.md\n│ ├── deploy-genai.md\n│ ├── build-rag.md\n│ ├── multi-cloud-setup.md\n│ ├── optimize-costs.md\n│ ├── security-review.md\n│ └── draw-architecture.md\n├── examples/ # Real-world solutions\n│ ├── customer-support-ai.md\n│ └── multi-cloud-analytics.md\n├── sdk-examples/ # Python code examples\n│ └── oci_genai_examples.py\n├── cheatsheets/ # Quick reference\n│ ├── OCI-GENAI-CHEATSHEET.md\n│ ├── D2-DIAGRAM-CHEATSHEET.md\n│ └── MODEL-COMPARISON-MATRIX.md\n├── mcp-servers/ # Custom MCP servers\n│ ├── oci-infrastructure/ # OCI operations\n│ └── terraform-ops/ # Terraform operations\n├── agent-teams/ # Agent organization\n├── workflows/ # Architecture workflows\n└── config/ # MCP server configs\nSlash Commands\nCommand\nDescription\n/design-solution\nEnd-to-end AI solution design\n/deploy-genai\nDeploy OCI GenAI Dedicated AI Cluster\n/build-rag\nBuild RAG system with knowledge bases\n/multi-cloud-setup\nConfigure multi-cloud AI architecture\n/optimize-costs\nCost optimization review\n/security-review\nSecurity assessment\n/draw-architecture\nGenerate architecture diagrams\nFeatures\n1. Knowledge Base\nComprehensive documentation on:\nOCI Dedicated AI Clusters (DACs)\nOCI GenAI Agents and RAG\nMulti-cloud AI patterns\nGPU infrastructure and training\n2. Terraform Modules\nReady-to-deploy infrastructure:\ncd templates/terraform/oci-genai-dac\nterraform init && terraform apply\n3. D2 Diagram Templates\nProfessional architecture diagrams:\nd2 --layout=tala templates/d2/oci-genai-rag.d2 output.svg\n4. Python SDK Examples\nWorking code for OCI GenAI:\n# See sdk-examples/oci_genai_examples.py\nfrom oci . generative_ai_inference import GenerativeAiInferenceClient\n5. MCP Servers\nCustom servers for Claude integration:\noci-infrastructure - OCI API operations\nterraform-ops - Terraform plan/apply/state\nInstallation\nPrerequisites\nClaude Code CLI installed\nOCI CLI configured (for OCI operations)\nTerraform installed (for IaC)\nD2 installed (for diagrams)\nInstall D2 (for diagrams)\n# macOS\nbrew install d2\n# Linux\ncurl -fsSL https://d2lang.com/install.sh | sh\n# Windows (PowerShell)\niwr -useb https://d2lang.com/install.ps1 | iex\nInstall MCP Servers\n# OCI Infrastructure Server\ncd mcp-servers/oci-infrastructure\npip install -r requirements.txt\n# Terraform Operations Server\ncd mcp-servers/terraform-ops\npip install -r requirements.txt\nConfigure MCP Servers\nAdd to ~/.claude/settings.json :\n\"mcpServers\" : {\n\"oci\" : {\n\"command\" : \" python \" ,\n\"args\" : [ \" /path/to/mcp-servers/oci-infrastructure/server.py \" ]\n},\n\"terraform\" : {\n\"command\" : \" python \" ,\n\"args\" : [ \" /path/to/mcp-servers/terraform-ops/server.py \" ]\nUsage Examples\nDesign a Solution\nUser: Design an AI solution for customer support\nClaude: I'll use the /design-solution workflow...\n[Generates architecture, D2 diagram, Terraform, cost estimate]\nDeploy GenAI Cluster\nUser: Deploy a production GenAI cluster\nClaude: I'll use the /deploy-genai workflow...\n[Recommends sizing, generates Terraform, provides validation steps]\nGenerate Diagram\nUser: Create an architecture diagram for our RAG system\nClaude: I'll generate a D2 diagram...\n[Creates professional diagram with OCI components]\nModel Comparison\nModel\nBest For\nCost\nCommand R+\nComplex reasoning, RAG\n$$$\nCommand R\nGeneral purpose\n$$\nCommand Light\nHigh volume, simple\nLlama 3.1 70B\nOpen source\n$$$\nGPT-4 Turbo\nBest capability\n$$$$\nClaude 3.5 Sonnet\nBest balance\n$$$\nSee cheatsheets/MODEL-COMPARISON-MATRIX.md for full comparison.\nCost Reference\nDAC Size\nUnits\nMonthly Est.\nDev/Test\n2-5\n$3-7.5K\nProduction\n5-15\n$7.5-22.5K\nHigh Volume\n15-30\n$22.5-45K\nEnterprise\n30-50\n$45-75K\nSee templates/cost-calculator.md for detailed scenarios.\nContributing\nAdd knowledge to knowledge-base/\nCreate skills in skills/\nAdd templates to templates/\nDocument in cheatsheets/\nResources\nOCI Documentation\nOCI GenAI\nDedicated AI Clusters\nGenAI Agents\nOCI Icons\nDiagramming\nD2 Language\nD2 Playground\nAgent Frameworks\nClaude Agent SDK\nOracle ADK\nMCP Protocol\nLicense\nMIT License - Use freely for your AI architecture projects.\nAI Architect Command Center - Design with excellence, diagram with clarity, deploy with confidence.\nAbout\nMOVED → github.com/oci-ai-architects/multi-cloud-ai-architect\ngithub.com/oci-ai-architects/multi-cloud-ai-architect\nTopics\narchitecture\noracle\nsystems-design\nenterprise-ai\nai-patterns\nai-architect\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n63.5%\nHCL\n23.4%\nD2\n13.1%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] # frankxai/ai-architect MOVED → github.com/oci-ai-architects/multi-cloud-ai-architect - Stars: 1 - Forks: 0 - Watchers: 1 - Open issues: 0 - Default branch: main - Created: 2026-01-05T10:28:55Z ## Languages - D2 - HCL - Python ## Topics - ai-architect - ai-patterns - architecture - enterprise-... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] frankxai ai-architect Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 9 Commits 9 Commits .\n3. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] claude agent-teams agent-teams cheatsheets cheatsheets config config dev-docs dev-docs examples examples knowledge-base knowledge-base mcp-servers mcp-servers prompts prompts sdk-examples sdk-examples skills skills templates templates workflows workflows .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] gitignore AI-ARCHITECT-SYSTEM.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] md AI-ARCHITECT-SYSTEM.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] md View all files Repository files navigation AI Architect Command Center Transform Claude Code into your expert AI Architecture assistant specializing in Multi-Cloud AI solutions with Oracle Cloud Infrastructure focus.\n"
+}

@@ -1,0 +1,298 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-044",
+  "title": "Anthropic Claude Design 反向工程提示词开源更新",
+  "title_zh": "Anthropic Claude Design 反向工程提示词开源更新",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://github.com/Trystan-SA/claude-design-system-prompt",
+  "canonical_url": "https://github.com/Trystan-SA/claude-design-system-prompt",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "repo_readme_or_index",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": true,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-05T15:35:42.919Z",
+  "collected_at": "2026-07-06T02:21:26.975Z",
+  "language": "mixed",
+  "full_text": "Trystan-SA\nclaude-design-system-prompt\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n107\nStar\n861\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n5 Commits\n5 Commits\nclaude\nclaude\ncodex\ncodex\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nView all files\nRepository files navigation\nClaude Design System Prompt\nReverse-engineered system prompt of Claude Design from Anthropic.\nA system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.\nOpen source, MIT licensed. Drop the prompt into any LLM that supports system prompts (Claude, GPT, Gemini, local models) and pair with the procedural skills as needed.\nWhat this is\nMost \"design assistant\" prompts produce generic SaaS-template output — aggressive gradients, emoji decoration, rounded-corner-with-left-border cards, Inter-everywhere typography. This prompt explicitly rejects those patterns and replaces them with a complete design philosophy covering:\nContent discipline (no filler — every element earns its place)\nAesthetic discipline (avoid AI tropes, commit to a palette and tone)\nVisual hierarchy and rhythm (size, color, weight, position, density, spacing scales)\nAccessibility (WCAG, semantic HTML, keyboard navigation, focus rings, motion preferences)\nInteraction and feedback (hover, active, disabled, focus, loading, validation states)\nSystem thinking (components and tokens over one-off pages)\nRespecting the medium (real CSS Grid, oklch() , text-wrap: pretty , real interactive prototypes)\nQuality over quantity (depth over breadth, polish every detail)\nPlus 14 procedural skills the agent can invoke for production, extraction, and review work.\nWhat's included\nclaude-design-system-prompt/\n├── claude/ Claude Code / Claude.ai variant\n│ ├── system-prompt.md Main system prompt — 20 chapters\n│ └── skills/ 14 invokable skills\n│ ├── discovery-questions.md Kickoff question protocol\n│ ├── frontend-aesthetic-direction.md Commit to a look when no brand exists\n│ ├── wireframe.md Low-fi exploration, 3+ variations\n│ ├── make-a-deck.md Slide presentations in HTML\n│ ├── make-a-prototype.md Interactive clickable prototype\n│ ├── make-tweakable.md Floating tweak panel\n│ ├── generate-variations.md 3+ hi-fi variations across axes\n│ ├── design-system-extract.md Pull tokens from sources\n│ ├── component-extract.md Inventory reusable components\n│ ├── accessibility-audit.md WCAG, semantic, keyboard, motion\n│ ├── ai-slop-check.md Gradient / emoji / font / house-style trope detection\n│ ├── hierarchy-rhythm-review.md Size / weight / color + spacing scale\n│ ├── interaction-states-pass.md Hover / active / disabled / focus / loading\n│ └── polish-pass.md Umbrella final-gate review\n├── codex/ OpenAI Codex variant (single-loop, no subagents)\n│ ├── AGENTS.md Codex auto-discovered entry point\n│ ├── system-prompt.md Same prompt, adapted for Codex\n│ └── skills/ Same skills, sequential reviews instead of parallel agents\n├── README.md This file\n└── LICENSE MIT\nHow to use it\nUse the system prompt directly\nPaste the contents of system-prompt.md as the system prompt for any LLM that supports them. The agent will follow the design philosophy and reference the skills by name when tasks match.\nUse the skills as procedures\nEach skill in skills/ is a self-contained, phased procedure. The skill name is the trigger — when the user's request matches a skill description, the agent loads that skill and follows it.\nSkills group into three categories:\nProduction — build something\ndiscovery-questions · frontend-aesthetic-direction · wireframe · make-a-deck · make-a-prototype · make-tweakable · generate-variations\nSystem — extract structure\ndesign-system-extract · component-extract\nReview — audit and fix\naccessibility-audit · ai-slop-check · hierarchy-rhythm-review · interaction-states-pass · polish-pass\nSkills can be chained. A typical greenfield flow:\ndiscovery-questions → frontend-aesthetic-direction → wireframe → make-a-prototype → polish-pass\nA brand-aware flow:\ndesign-system-extract → generate-variations → make-tweakable → polish-pass\nAdapt for your platform\nThe prompt assumes an HTML-output design environment (similar to Claude.ai's design tool). If your target environment is different — a Figma plugin, a code-only assistant, a chat-only design coach — you'll need to adjust the workflow chapters and tool references. The principles (chapters 5–16) translate to any medium.\nModel calibration\nThe claude/ variant is calibrated for current Anthropic frontier models (Fable 5 and the Opus 4.7/4.8 lineage), which follow instructions more literally and need less aggressive prompting than earlier generations:\nConditions instead of quotas. No \"ask at least N questions\", no \"CRITICAL: YOU MUST\". Current models treat quotas as literal contracts and over-trigger on them; the prompt states the conditions under which to act, plus an autonomy clause for minor decisions (pick a reasonable option and note it, rather than asking).\nExplicit triggers for skills and subagents. These models under-reach for optional capabilities by default, so every skill description states when to invoke it, and verifier delegation has an explicit trigger (\"after every substantive visual change\").\nCoverage-first reviews. Review agents report everything with confidence/severity estimates and let the aggregation step filter. Current models follow \"only report important issues\" literally, which silently suppresses findings.\nHouse-style guard. The current models' default aesthetic (cream background, serif display type, terracotta/amber accents) is detected by ai-slop-check (rule 9) and pre-empted by frontend-aesthetic-direction 's four-directions protocol. Sampling parameters ( temperature ) no longer exist on these models, so visual variety must come from explicit per-variation specs, not randomness.\nOn older models (Claude Opus/Sonnet 4.6 and earlier, or non-Anthropic models), the calmer phrasing may under-trigger — restore stronger imperative language if you see the model skipping question rounds or reviews. The codex/ variant is maintained separately and is unaffected by these notes.\nDesign principles, in short\nThe 20 chapters in system-prompt.md cover:\nChapter\nIdentity and role\nWorkflow\nAsking questions first\nRooting designs in existing context\nContent principles — no filler\nAesthetic principles — purposeful visuals\nVisual hierarchy and rhythm\nTypography system\nColor system\n10\nAccessibility and inclusivity\n11\nInteraction and feedback\n12\nSimplicity and one clear CTA\n13\nSystem thinking\n14\nRespecting the medium\n15\nUnderstanding users\n16\nQuality over quantity\n17\nOutput principles\n18\nCollaboration and delivery\n19\nIP and content boundaries\n20\nAvailable skills\nContributing\nIssues and PRs welcome. Particularly useful contributions:\nAdditional review skills (e.g., copy review, motion review, dark-mode parity check)\nAdapted prompts for other environments (Figma, code-only, terminal-only)\nReal-world failure cases the prompt should defend against\nTranslations of the prompt into other languages\nPlease keep the same operational tone and avoid bloating the prompt — every chapter should earn its place, the same standard the prompt holds the agent to.\nLicense\nMIT — see LICENSE .\nYou can use, modify, and distribute this prompt and skill library for any purpose, including commercial use. No attribution required, but appreciated.\nAbout\nReverse-engineered system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n861\nstars\nWatchers\nwatching\nForks\n107\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .",
+  "clean_text": "Trystan-SA\nclaude-design-system-prompt\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n107\nStar\n861\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n5 Commits\n5 Commits\nclaude\nclaude\ncodex\ncodex\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nView all files\nRepository files navigation\nClaude Design System Prompt\nReverse-engineered system prompt of Claude Design from Anthropic.\nA system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.\nOpen source, MIT licensed. Drop the prompt into any LLM that supports system prompts (Claude, GPT, Gemini, local models) and pair with the procedural skills as needed.\nWhat this is\nMost \"design assistant\" prompts produce generic SaaS-template output — aggressive gradients, emoji decoration, rounded-corner-with-left-border cards, Inter-everywhere typography. This prompt explicitly rejects those patterns and replaces them with a complete design philosophy covering:\nContent discipline (no filler — every element earns its place)\nAesthetic discipline (avoid AI tropes, commit to a palette and tone)\nVisual hierarchy and rhythm (size, color, weight, position, density, spacing scales)\nAccessibility (WCAG, semantic HTML, keyboard navigation, focus rings, motion preferences)\nInteraction and feedback (hover, active, disabled, focus, loading, validation states)\nSystem thinking (components and tokens over one-off pages)\nRespecting the medium (real CSS Grid, oklch() , text-wrap: pretty , real interactive prototypes)\nQuality over quantity (depth over breadth, polish every detail)\nPlus 14 procedural skills the agent can invoke for production, extraction, and review work.\nWhat's included\nclaude-design-system-prompt/\n├── claude/ Claude Code / Claude.ai variant\n│ ├── system-prompt.md Main system prompt — 20 chapters\n│ └── skills/ 14 invokable skills\n│ ├── discovery-questions.md Kickoff question protocol\n│ ├── frontend-aesthetic-direction.md Commit to a look when no brand exists\n│ ├── wireframe.md Low-fi exploration, 3+ variations\n│ ├── make-a-deck.md Slide presentations in HTML\n│ ├── make-a-prototype.md Interactive clickable prototype\n│ ├── make-tweakable.md Floating tweak panel\n│ ├── generate-variations.md 3+ hi-fi variations across axes\n│ ├── design-system-extract.md Pull tokens from sources\n│ ├── component-extract.md Inventory reusable components\n│ ├── accessibility-audit.md WCAG, semantic, keyboard, motion\n│ ├── ai-slop-check.md Gradient / emoji / font / house-style trope detection\n│ ├── hierarchy-rhythm-review.md Size / weight / color + spacing scale\n│ ├── interaction-states-pass.md Hover / active / disabled / focus / loading\n│ └── polish-pass.md Umbrella final-gate review\n├── codex/ OpenAI Codex variant (single-loop, no subagents)\n│ ├── AGENTS.md Codex auto-discovered entry point\n│ ├── system-prompt.md Same prompt, adapted for Codex\n│ └── skills/ Same skills, sequential reviews instead of parallel agents\n├── README.md This file\n└── LICENSE MIT\nHow to use it\nUse the system prompt directly\nPaste the contents of system-prompt.md as the system prompt for any LLM that supports them. The agent will follow the design philosophy and reference the skills by name when tasks match.\nUse the skills as procedures\nEach skill in skills/ is a self-contained, phased procedure. The skill name is the trigger — when the user's request matches a skill description, the agent loads that skill and follows it.\nSkills group into three categories:\nProduction — build something\ndiscovery-questions · frontend-aesthetic-direction · wireframe · make-a-deck · make-a-prototype · make-tweakable · generate-variations\nSystem — extract structure\ndesign-system-extract · component-extract\nReview — audit and fix\naccessibility-audit · ai-slop-check · hierarchy-rhythm-review · interaction-states-pass · polish-pass\nSkills can be chained. A typical greenfield flow:\ndiscovery-questions → frontend-aesthetic-direction → wireframe → make-a-prototype → polish-pass\nA brand-aware flow:\ndesign-system-extract → generate-variations → make-tweakable → polish-pass\nAdapt for your platform\nThe prompt assumes an HTML-output design environment (similar to Claude.ai's design tool). If your target environment is different — a Figma plugin, a code-only assistant, a chat-only design coach — you'll need to adjust the workflow chapters and tool references. The principles (chapters 5–16) translate to any medium.\nModel calibration\nThe claude/ variant is calibrated for current Anthropic frontier models (Fable 5 and the Opus 4.7/4.8 lineage), which follow instructions more literally and need less aggressive prompting than earlier generations:\nConditions instead of quotas. No \"ask at least N questions\", no \"CRITICAL: YOU MUST\". Current models treat quotas as literal contracts and over-trigger on them; the prompt states the conditions under which to act, plus an autonomy clause for minor decisions (pick a reasonable option and note it, rather than asking).\nExplicit triggers for skills and subagents. These models under-reach for optional capabilities by default, so every skill description states when to invoke it, and verifier delegation has an explicit trigger (\"after every substantive visual change\").\nCoverage-first reviews. Review agents report everything with confidence/severity estimates and let the aggregation step filter. Current models follow \"only report important issues\" literally, which silently suppresses findings.\nHouse-style guard. The current models' default aesthetic (cream background, serif display type, terracotta/amber accents) is detected by ai-slop-check (rule 9) and pre-empted by frontend-aesthetic-direction 's four-directions protocol. Sampling parameters ( temperature ) no longer exist on these models, so visual variety must come from explicit per-variation specs, not randomness.\nOn older models (Claude Opus/Sonnet 4.6 and earlier, or non-Anthropic models), the calmer phrasing may under-trigger — restore stronger imperative language if you see the model skipping question rounds or reviews. The codex/ variant is maintained separately and is unaffected by these notes.\nDesign principles, in short\nThe 20 chapters in system-prompt.md cover:\nChapter\nIdentity and role\nWorkflow\nAsking questions first\nRooting designs in existing context\nContent principles — no filler\nAesthetic principles — purposeful visuals\nVisual hierarchy and rhythm\nTypography system\nColor system\n10\nAccessibility and inclusivity\n11\nInteraction and feedback\n12\nSimplicity and one clear CTA\n13\nSystem thinking\n14\nRespecting the medium\n15\nUnderstanding users\n16\nQuality over quantity\n17\nOutput principles\n18\nCollaboration and delivery\n19\nIP and content boundaries\n20\nAvailable skills\nContributing\nIssues and PRs welcome. Particularly useful contributions:\nAdditional review skills (e.g., copy review, motion review, dark-mode parity check)\nAdapted prompts for other environments (Figma, code-only, terminal-only)\nReal-world failure cases the prompt should defend against\nTranslations of the prompt into other languages\nPlease keep the same operational tone and avoid bloating the prompt — every chapter should earn its place, the same standard the prompt holds the agent to.\nLicense\nMIT — see LICENSE .\nYou can use, modify, and distribute this prompt and skill library for any purpose, including commercial use. No attribution required, but appreciated.\nAbout\nReverse-engineered system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n861\nstars\nWatchers\nwatching\nForks\n107\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-06/r-044-anthropic-claude-design-反向工程提示词开源更新.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-06/r-044-anthropic-claude-design-反向工程提示词开源更新.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 8012,
+    "paragraph_count": 90,
+    "sentence_count": 42,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 8012,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "7b5426f7e3412a27",
+    "missing": []
+  },
+  "evidence_strength": "blocked",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "index_only_or_directory_page"
+  ],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Anthropic Claude Design 反向工程提示词开源更新",
+    "discovery_summary": "Anthropic 旗下 Claude Design 的反向工程系统提示词在 GitHub 以 MIT 许可证开源，包含 20 章提示词和 14 项技能，覆盖内容纪律、美学、无障碍（WCAG、语义 HTML、键盘导航）、交互状态、系统思维等。近日针对 Fable 5/Opus 4.7+ 系列校准，新增自主决策条款：小决定直接执行记录而不询问。项目支持 Claude Code/Claude.ai 及 Codex 两种变体。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://github.com/Trystan-SA/claude-design-system-prompt",
+    "discovered_at": "2026-07-06T02:07:37.965Z",
+    "rank_on_page": 77,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "685b3e87a0b96587",
+  "content_hash": "7b5426f7e3412a27",
+  "full_text_hash": "7b5426f7e3412a27",
+  "semantic_hash": "e2bb026126a13a08",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-05T15:35:42.919Z",
+  "last_seen_at": "2026-07-06T02:21:26.975Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "Anthropic 旗下 Claude Design 的反向工程系统提示词在 GitHub 以 MIT 许可证开源，包含 20 章提示词和 14 项技能，覆盖内容纪律、美学、无障碍（WCAG、语义 HTML、键盘导航）、交互状态、系统思维等。近日针对 Fable 5/Opus 4.7+ 系列校准，新增自主决策条款：小决定直接执行记录而不询问。项目支持 Claude Code/Claude.ai 及 Codex 两种变体。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Trystan-SA claude-design-system-prompt Public Notifications You must be signed in to change notification settings Fork 107 Star 861 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 5 Commits 5 Commits claude claude codex codex LICENSE LICENSE README.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md View all files Repository files navigation Claude Design System Prompt Reverse-engineered system prompt of Claude Design from Anthropic.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "A system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Open source, MIT licensed.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Drop the prompt into any LLM that supports system prompts (Claude, GPT, Gemini, local models) and pair with the procedural skills as needed.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-06T02:21:26.975Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "OpenAI",
+      "Anthropic",
+      "GitHub"
+    ],
+    "products": [
+      "Claude",
+      "Codex",
+      "claude",
+      "codex",
+      "Gemini",
+      "agent",
+      "AGENTS",
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "20",
+      "14",
+      "5",
+      "4.7",
+      "107",
+      "861\nm",
+      "3",
+      "16"
+    ],
+    "quotes": [
+      "design assistant",
+      "ask at least N questions",
+      "CRITICAL: YOU MUST",
+      "after every substantive visual change",
+      "only report important issues"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Anthropic 旗下 Claude Design 的反向工程系统提示词在 GitHub 以 MIT 许可证开源，包含 20 章提示词和 14 项技能，覆盖内容纪律、美学、无障碍（WCAG、语义 HTML、键盘导航）、交互状态、系统思维等。近日针对 Fable 5/Opus 4.7+ 系列校准，新增自主决策条款：小决定直接执行记录而不询问。项目支持 Claude Code/Claude.ai 及 Codex 两种变体。",
+      "Trystan-SA claude-design-system-prompt Public Notifications You must be signed in to change notification settings Fork 107 Star 861 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 5 Commits 5 Commits claude claude codex codex LICENSE LICENSE README.",
+      "md View all files Repository files navigation Claude Design System Prompt Reverse-engineered system prompt of Claude Design from Anthropic."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Drop the prompt into any LLM that supports system prompts (Claude, GPT, Gemini, local models) and pair with the procedural skills as needed."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Anthropic Claude Design 反向工程提示词开源更新\n\n- raw_id: R-044\n- title_zh: Anthropic Claude Design 反向工程提示词开源更新\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://github.com/Trystan-SA/claude-design-system-prompt\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-06T02:21:26.975Z\n\n## clean_text\n\nTrystan-SA\nclaude-design-system-prompt\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n107\nStar\n861\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n5 Commits\n5 Commits\nclaude\nclaude\ncodex\ncodex\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nView all files\nRepository files navigation\nClaude Design System Prompt\nReverse-engineered system prompt of Claude Design from Anthropic.\nA system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.\nOpen source, MIT licensed. Drop the prompt into any LLM that supports system prompts (Claude, GPT, Gemini, local models) and pair with the procedural skills as needed.\nWhat this is\nMost \"design assistant\" prompts produce generic SaaS-template output — aggressive gradients, emoji decoration, rounded-corner-with-left-border cards, Inter-everywhere typography. This prompt explicitly rejects those patterns and replaces them with a complete design philosophy covering:\nContent discipline (no filler — every element earns its place)\nAesthetic discipline (avoid AI tropes, commit to a palette and tone)\nVisual hierarchy and rhythm (size, color, weight, position, density, spacing scales)\nAccessibility (WCAG, semantic HTML, keyboard navigation, focus rings, motion preferences)\nInteraction and feedback (hover, active, disabled, focus, loading, validation states)\nSystem thinking (components and tokens over one-off pages)\nRespecting the medium (real CSS Grid, oklch() , text-wrap: pretty , real interactive prototypes)\nQuality over quantity (depth over breadth, polish every detail)\nPlus 14 procedural skills the agent can invoke for production, extraction, and review work.\nWhat's included\nclaude-design-system-prompt/\n├── claude/ Claude Code / Claude.ai variant\n│ ├── system-prompt.md Main system prompt — 20 chapters\n│ └── skills/ 14 invokable skills\n│ ├── discovery-questions.md Kickoff question protocol\n│ ├── frontend-aesthetic-direction.md Commit to a look when no brand exists\n│ ├── wireframe.md Low-fi exploration, 3+ variations\n│ ├── make-a-deck.md Slide presentations in HTML\n│ ├── make-a-prototype.md Interactive clickable prototype\n│ ├── make-tweakable.md Floating tweak panel\n│ ├── generate-variations.md 3+ hi-fi variations across axes\n│ ├── design-system-extract.md Pull tokens from sources\n│ ├── component-extract.md Inventory reusable components\n│ ├── accessibility-audit.md WCAG, semantic, keyboard, motion\n│ ├── ai-slop-check.md Gradient / emoji / font / house-style trope detection\n│ ├── hierarchy-rhythm-review.md Size / weight / color + spacing scale\n│ ├── interaction-states-pass.md Hover / active / disabled / focus / loading\n│ └── polish-pass.md Umbrella final-gate review\n├── codex/ OpenAI Codex variant (single-loop, no subagents)\n│ ├── AGENTS.md Codex auto-discovered entry point\n│ ├── system-prompt.md Same prompt, adapted for Codex\n│ └── skills/ Same skills, sequential reviews instead of parallel agents\n├── README.md This file\n└── LICENSE MIT\nHow to use it\nUse the system prompt directly\nPaste the contents of system-prompt.md as the system prompt for any LLM that supports them. The agent will follow the design philosophy and reference the skills by name when tasks match.\nUse the skills as procedures\nEach skill in skills/ is a self-contained, phased procedure. The skill name is the trigger — when the user's request matches a skill description, the agent loads that skill and follows it.\nSkills group into three categories:\nProduction — build something\ndiscovery-questions · frontend-aesthetic-direction · wireframe · make-a-deck · make-a-prototype · make-tweakable · generate-variations\nSystem — extract structure\ndesign-system-extract · component-extract\nReview — audit and fix\naccessibility-audit · ai-slop-check · hierarchy-rhythm-review · interaction-states-pass · polish-pass\nSkills can be chained. A typical greenfield flow:\ndiscovery-questions → frontend-aesthetic-direction → wireframe → make-a-prototype → polish-pass\nA brand-aware flow:\ndesign-system-extract → generate-variations → make-tweakable → polish-pass\nAdapt for your platform\nThe prompt assumes an HTML-output design environment (similar to Claude.ai's design tool). If your target environment is different — a Figma plugin, a code-only assistant, a chat-only design coach — you'll need to adjust the workflow chapters and tool references. The principles (chapters 5–16) translate to any medium.\nModel calibration\nThe claude/ variant is calibrated for current Anthropic frontier models (Fable 5 and the Opus 4.7/4.8 lineage), which follow instructions more literally and need less aggressive prompting than earlier generations:\nConditions instead of quotas. No \"ask at least N questions\", no \"CRITICAL: YOU MUST\". Current models treat quotas as literal contracts and over-trigger on them; the prompt states the conditions under which to act, plus an autonomy clause for minor decisions (pick a reasonable option and note it, rather than asking).\nExplicit triggers for skills and subagents. These models under-reach for optional capabilities by default, so every skill description states when to invoke it, and verifier delegation has an explicit trigger (\"after every substantive visual change\").\nCoverage-first reviews. Review agents report everything with confidence/severity estimates and let the aggregation step filter. Current models follow \"only report important issues\" literally, which silently suppresses findings.\nHouse-style guard. The current models' default aesthetic (cream background, serif display type, terracotta/amber accents) is detected by ai-slop-check (rule 9) and pre-empted by frontend-aesthetic-direction 's four-directions protocol. Sampling parameters ( temperature ) no longer exist on these models, so visual variety must come from explicit per-variation specs, not randomness.\nOn older models (Claude Opus/Sonnet 4.6 and earlier, or non-Anthropic models), the calmer phrasing may under-trigger — restore stronger imperative language if you see the model skipping question rounds or reviews. The codex/ variant is maintained separately and is unaffected by these notes.\nDesign principles, in short\nThe 20 chapters in system-prompt.md cover:\nChapter\nIdentity and role\nWorkflow\nAsking questions first\nRooting designs in existing context\nContent principles — no filler\nAesthetic principles — purposeful visuals\nVisual hierarchy and rhythm\nTypography system\nColor system\n10\nAccessibility and inclusivity\n11\nInteraction and feedback\n12\nSimplicity and one clear CTA\n13\nSystem thinking\n14\nRespecting the medium\n15\nUnderstanding users\n16\nQuality over quantity\n17\nOutput principles\n18\nCollaboration and delivery\n19\nIP and content boundaries\n20\nAvailable skills\nContributing\nIssues and PRs welcome. Particularly useful contributions:\nAdditional review skills (e.g., copy review, motion review, dark-mode parity check)\nAdapted prompts for other environments (Figma, code-only, terminal-only)\nReal-world failure cases the prompt should defend against\nTranslations of the prompt into other languages\nPlease keep the same operational tone and avoid bloating the prompt — every chapter should earn its place, the same standard the prompt holds the agent to.\nLicense\nMIT — see LICENSE .\nYou can use, modify, and distribute this prompt and skill library for any purpose, including commercial use. No attribution required, but appreciated.\nAbout\nReverse-engineered system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n861\nstars\nWatchers\nwatching\nForks\n107\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\n\n## full_text\n\nTrystan-SA\nclaude-design-system-prompt\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n107\nStar\n861\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n5 Commits\n5 Commits\nclaude\nclaude\ncodex\ncodex\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nView all files\nRepository files navigation\nClaude Design System Prompt\nReverse-engineered system prompt of Claude Design from Anthropic.\nA system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.\nOpen source, MIT licensed. Drop the prompt into any LLM that supports system prompts (Claude, GPT, Gemini, local models) and pair with the procedural skills as needed.\nWhat this is\nMost \"design assistant\" prompts produce generic SaaS-template output — aggressive gradients, emoji decoration, rounded-corner-with-left-border cards, Inter-everywhere typography. This prompt explicitly rejects those patterns and replaces them with a complete design philosophy covering:\nContent discipline (no filler — every element earns its place)\nAesthetic discipline (avoid AI tropes, commit to a palette and tone)\nVisual hierarchy and rhythm (size, color, weight, position, density, spacing scales)\nAccessibility (WCAG, semantic HTML, keyboard navigation, focus rings, motion preferences)\nInteraction and feedback (hover, active, disabled, focus, loading, validation states)\nSystem thinking (components and tokens over one-off pages)\nRespecting the medium (real CSS Grid, oklch() , text-wrap: pretty , real interactive prototypes)\nQuality over quantity (depth over breadth, polish every detail)\nPlus 14 procedural skills the agent can invoke for production, extraction, and review work.\nWhat's included\nclaude-design-system-prompt/\n├── claude/ Claude Code / Claude.ai variant\n│ ├── system-prompt.md Main system prompt — 20 chapters\n│ └── skills/ 14 invokable skills\n│ ├── discovery-questions.md Kickoff question protocol\n│ ├── frontend-aesthetic-direction.md Commit to a look when no brand exists\n│ ├── wireframe.md Low-fi exploration, 3+ variations\n│ ├── make-a-deck.md Slide presentations in HTML\n│ ├── make-a-prototype.md Interactive clickable prototype\n│ ├── make-tweakable.md Floating tweak panel\n│ ├── generate-variations.md 3+ hi-fi variations across axes\n│ ├── design-system-extract.md Pull tokens from sources\n│ ├── component-extract.md Inventory reusable components\n│ ├── accessibility-audit.md WCAG, semantic, keyboard, motion\n│ ├── ai-slop-check.md Gradient / emoji / font / house-style trope detection\n│ ├── hierarchy-rhythm-review.md Size / weight / color + spacing scale\n│ ├── interaction-states-pass.md Hover / active / disabled / focus / loading\n│ └── polish-pass.md Umbrella final-gate review\n├── codex/ OpenAI Codex variant (single-loop, no subagents)\n│ ├── AGENTS.md Codex auto-discovered entry point\n│ ├── system-prompt.md Same prompt, adapted for Codex\n│ └── skills/ Same skills, sequential reviews instead of parallel agents\n├── README.md This file\n└── LICENSE MIT\nHow to use it\nUse the system prompt directly\nPaste the contents of system-prompt.md as the system prompt for any LLM that supports them. The agent will follow the design philosophy and reference the skills by name when tasks match.\nUse the skills as procedures\nEach skill in skills/ is a self-contained, phased procedure. The skill name is the trigger — when the user's request matches a skill description, the agent loads that skill and follows it.\nSkills group into three categories:\nProduction — build something\ndiscovery-questions · frontend-aesthetic-direction · wireframe · make-a-deck · make-a-prototype · make-tweakable · generate-variations\nSystem — extract structure\ndesign-system-extract · component-extract\nReview — audit and fix\naccessibility-audit · ai-slop-check · hierarchy-rhythm-review · interaction-states-pass · polish-pass\nSkills can be chained. A typical greenfield flow:\ndiscovery-questions → frontend-aesthetic-direction → wireframe → make-a-prototype → polish-pass\nA brand-aware flow:\ndesign-system-extract → generate-variations → make-tweakable → polish-pass\nAdapt for your platform\nThe prompt assumes an HTML-output design environment (similar to Claude.ai's design tool). If your target environment is different — a Figma plugin, a code-only assistant, a chat-only design coach — you'll need to adjust the workflow chapters and tool references. The principles (chapters 5–16) translate to any medium.\nModel calibration\nThe claude/ variant is calibrated for current Anthropic frontier models (Fable 5 and the Opus 4.7/4.8 lineage), which follow instructions more literally and need less aggressive prompting than earlier generations:\nConditions instead of quotas. No \"ask at least N questions\", no \"CRITICAL: YOU MUST\". Current models treat quotas as literal contracts and over-trigger on them; the prompt states the conditions under which to act, plus an autonomy clause for minor decisions (pick a reasonable option and note it, rather than asking).\nExplicit triggers for skills and subagents. These models under-reach for optional capabilities by default, so every skill description states when to invoke it, and verifier delegation has an explicit trigger (\"after every substantive visual change\").\nCoverage-first reviews. Review agents report everything with confidence/severity estimates and let the aggregation step filter. Current models follow \"only report important issues\" literally, which silently suppresses findings.\nHouse-style guard. The current models' default aesthetic (cream background, serif display type, terracotta/amber accents) is detected by ai-slop-check (rule 9) and pre-empted by frontend-aesthetic-direction 's four-directions protocol. Sampling parameters ( temperature ) no longer exist on these models, so visual variety must come from explicit per-variation specs, not randomness.\nOn older models (Claude Opus/Sonnet 4.6 and earlier, or non-Anthropic models), the calmer phrasing may under-trigger — restore stronger imperative language if you see the model skipping question rounds or reviews. The codex/ variant is maintained separately and is unaffected by these notes.\nDesign principles, in short\nThe 20 chapters in system-prompt.md cover:\nChapter\nIdentity and role\nWorkflow\nAsking questions first\nRooting designs in existing context\nContent principles — no filler\nAesthetic principles — purposeful visuals\nVisual hierarchy and rhythm\nTypography system\nColor system\n10\nAccessibility and inclusivity\n11\nInteraction and feedback\n12\nSimplicity and one clear CTA\n13\nSystem thinking\n14\nRespecting the medium\n15\nUnderstanding users\n16\nQuality over quantity\n17\nOutput principles\n18\nCollaboration and delivery\n19\nIP and content boundaries\n20\nAvailable skills\nContributing\nIssues and PRs welcome. Particularly useful contributions:\nAdditional review skills (e.g., copy review, motion review, dark-mode parity check)\nAdapted prompts for other environments (Figma, code-only, terminal-only)\nReal-world failure cases the prompt should defend against\nTranslations of the prompt into other languages\nPlease keep the same operational tone and avoid bloating the prompt — every chapter should earn its place, the same standard the prompt holds the agent to.\nLicense\nMIT — see LICENSE .\nYou can use, modify, and distribute this prompt and skill library for any purpose, including commercial use. No attribution required, but appreciated.\nAbout\nReverse-engineered system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n861\nstars\nWatchers\nwatching\nForks\n107\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 88\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Anthropic 旗下 Claude Design 的反向工程系统提示词在 GitHub 以 MIT 许可证开源，包含 20 章提示词和 14 项技能，覆盖内容纪律、美学、无障碍（WCAG、语义 HTML、键盘导航）、交互状态、系统思维等。近日针对 Fable 5/Opus 4.7+ 系列校准，新增自主决策条款：小决定直接执行记录而不询问。项目支持 Claude Code/Claude.ai 及 Codex 两种变体。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Trystan-SA claude-design-system-prompt Public Notifications You must be signed in to change notification settings Fork 107 Star 861 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 5 Commits 5 Commits claude claude codex codex LICENSE LICENSE README.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] md View all files Repository files navigation Claude Design System Prompt Reverse-engineered system prompt of Claude Design from Anthropic.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] A system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Open source, MIT licensed.\n6. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Drop the prompt into any LLM that supports system prompts (Claude, GPT, Gemini, local models) and pair with the procedural skills as needed.\n"
+}

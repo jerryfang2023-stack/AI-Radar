@@ -1,0 +1,396 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-022
+title: "AI Operations: How to Scope AI Projects That Actually Ship (2026)"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://justinmckelvey.com/blog/ai-operations-scoping-ai-projects"
+canonical_url: "https://justinmckelvey.com/blog/ai-operations-scoping-ai-projects"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-06T02:21:26.826Z
+language: mixed
+full_text_hash: bec441de10730835
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-06/r-022-ai-operations-how-to-scope-ai-projects-that-actually-ship-2026.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-06/r-022-ai-operations-how-to-scope-ai-projects-that-actually-ship-2026.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":20147,"paragraph_count":97,"sentence_count":229,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 20147
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"bec441de10730835","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 5a8c2903e8a601e7
+content_hash: 8aa253997c4bfafb
+semantic_hash: f2808c7fc76920f4
+duplicate_of: ""
+first_seen_at: "2026-07-06T02:21:26.826Z"
+last_seen_at: 2026-07-06T02:21:26.826Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","Google"],"products":["Claude","Gemini","ChatGPT"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["2026","15","50","$53M","11 m","27","02","3"],"quotes":["AI Operations","let's run a pilot.","we should use this.","We have customer data","we have 12,000 customer records spread across HubSpot and a Google Sheet, with 30% missing email and inconsistent name formatting"]}
+evidence_seed: {"company_actions":["Well-scoped projects ship in 4-12 weeks.","Note: this is different from AIOps, the IT infrastructure-monitoring category."],"case_details":[],"workflow_changes":["Most failed AI projects skipped Discovery and scoped from a demo instead of a workflow."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"# Justin McKelvey > Fractional Product & Tech Lead helping founders build go-to-market strategy, nail positioning, and ship products that actually grow. 15+ years building products, 50+ shipped, $53M+ revenue generated. ## About Justin McKelvey is a software consultant and product builder based i... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Justin McKelvey Fractional CTO &middot; 15 years, 50+ products shipped AI for Business &bull; 11 min read &bull; Published Apr 27, 2026 &bull; Updated Jul 02, 2026 AI Operations: How I Scope AI Projects That Actually Ship Quick Answer: AI operations is the discipline of scoping, integrating, and running AI inside a business — and the way to ship an AI project is a 3-phase plan: Discovery (weeks 1-2: define the workflow, one success metric, an honest data assessment), Build and Integrate (weeks 3-8, where 60-70% of ","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Well-scoped projects ship in 4-12 weeks.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"In 2026, a focused single-use-case implementation runs $15,000-$30,000; multi-stakeholder rollouts run $30,000-$75,000; anything quoted under $5,000 is an API wrapper, not an implementation.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Most failed AI projects skipped Discovery and scoped from a demo instead of a workflow.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Note: this is different from AIOps, the IT infrastructure-monitoring category.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-06T02:21:26.826Z
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# AI Operations: How to Scope AI Projects That Actually Ship (2026)
+
+## clean_text
+
+Justin McKelvey
+Fractional CTO &middot; 15 years, 50+ products shipped
+AI for Business
+&bull;
+11 min read
+&bull;
+Published Apr 27, 2026
+&bull;
+Updated Jul 02, 2026
+AI Operations: How I Scope AI Projects That Actually Ship
+Quick Answer: AI operations is the discipline of scoping, integrating, and running AI inside a business — and the way to ship an AI project is a 3-phase plan: Discovery (weeks 1-2: define the workflow, one success metric, an honest data assessment), Build and Integrate (weeks 3-8, where 60-70% of the work is integration plumbing, not AI), and Operate (a 30-day stabilization with daily monitoring). Well-scoped projects ship in 4-12 weeks. In 2026, a focused single-use-case implementation runs $15,000-$30,000; multi-stakeholder rollouts run $30,000-$75,000; anything quoted under $5,000 is an API wrapper, not an implementation. Most failed AI projects skipped Discovery and scoped from a demo instead of a workflow. Note: this is different from AIOps, the IT infrastructure-monitoring category.
+TL;DR: AI Operations in Three Phases
+Most AI projects fail before they start because they were scoped to impress, not to ship. AI operations — the discipline of selecting, scoping, integrating, and running AI inside a business — is where almost all the value (or wasted budget) lives. The model isn't the hard part anymore. The hard part is getting the AI output to actually be used by your team in a workflow that produces a measurable result. The 3-phase AI operations scoping framework: Discovery → Build & Integrate → Operate . Most successful AI projects ship in 4-12 weeks across these three phases. Most failed AI projects skipped Phase 1 and tried to start at Phase 2.
+What "AI Operations" Actually Means (And Why It's Different from AIOps)
+The term gets confused regularly, so let's separate the two cleanly.
+AIOps (one word) is the established enterprise IT category. Splunk, Dynatrace, Datadog, and similar players use "AIOps" to mean using AI to monitor and manage IT infrastructure — alerting, anomaly detection, log analysis. If you search for AIOps and you're not in IT operations, you're probably in the wrong category.
+AI operations (two words) is the broader business discipline. It's how any company — accounting firms, agencies, ecommerce shops, professional services — selects AI use cases, scopes projects, integrates the output into real workflows, and runs the resulting systems over time. It's the management layer around AI, not the AI itself.
+This post is about the second one. If you're an owner or operator at a profitable business trying to figure out how to actually use AI in your operations — not how to monitor your servers — keep reading.
+Why Most AI Projects Don't Ship
+I run an AI ops shop called SuperDupr where this is the work. Across the engagements I've scoped, the same failure patterns repeat. They're not technical failures. They're scoping failures.
+The demo trap. An owner sees an AI demo. The demo summarizes a contract in 30 seconds with one clean input and one perfect output. They back into a project that recreates the demo. Six months later, the project hasn't shipped because the real workflow involves 12 contract types, 4 systems of record, 3 stakeholders who need to review, and edge cases the demo never showed. The scope didn't account for any of that. It accounted for the demo.
+The pilot-as-stall. Stakeholders aren't convinced. Someone proposes "let's run a pilot." The pilot is scoped to prove AI works. It does prove that. Then everyone discusses the pilot for four months while no real implementation lands. The pilot becomes the project. AI operations gets confused with AI testing.
+The scope-from-tool, not from-problem. Someone reads about a new AI tool and decides "we should use this." A project is scoped around the tool. Halfway through, the team realizes the tool doesn't fit the problem. The project either fails or pivots to a different tool. Scope-from-tool is the most common mistake at companies under 100 people.
+The fix to all three is the same: a real scoping phase before anything gets built. That's what Phase 1 is for.
+The 3-Phase AI Project Plan I Use (Scoping AI Project Engagements That Ship)
+Scoping an AI project well is the single highest-leverage activity in this whole arc. Get the scoping right and the rest of the engagement runs cleanly. Get it wrong and no amount of model quality or engineering rescues it. The 3-phase AI project plan below is the structure I use on every engagement.
+Phase 1: Discovery (Weeks 1-2). Phase 2: Build & Integrate (Weeks 3-8). Phase 3: Operate (ongoing, with a 30-day stabilization). The phases aren't optional and they aren't in a different order. Discovery before building. Building before operating. The shape doesn't change; what changes is how big each phase is for the specific project.
+Phase 1: Discovery (Weeks 1-2)
+The job in Phase 1 is to define the workflow we're trying to change, the people whose work changes, the data that already exists, and what "success" looks like in measurable terms. No AI gets built. No tools get selected. The output is a one-page scoping doc that anyone in the business can read.
+Specifically, Phase 1 produces:
+The workflow being changed. Drawn out as a sequence — what happens today, who does it, where the data comes from, what the output looks like. If we can't draw the current state in under a page, the project isn't scoped tight enough yet. Keep narrowing.
+The success metric. One number. Time per task, error rate, throughput, customer turnaround, revenue per hour — whichever applies. Without one specific number, the project has no way to declare success and no way to declare failure. Vague projects don't ship.
+The data we have. Where it lives, what shape it's in, how clean it is, who owns access to it. Most AI projects break in Phase 2 because Phase 1 didn't honestly assess data. "We have customer data" isn't an assessment — "we have 12,000 customer records spread across HubSpot and a Google Sheet, with 30% missing email and inconsistent name formatting" is.
+The integration surface. Which tools the AI output has to flow into and out of. CRM, accounting system, ticketing tool, email — whatever's relevant. Each integration is a project unto itself; counting them honestly in Phase 1 prevents Phase 2 surprises.
+The risk of being wrong. If the AI output is wrong 10% of the time, what happens? For some workflows (drafting first-pass email replies for human review), 10% wrong is fine. For others (auto-categorizing transactions for tax purposes), 10% wrong is catastrophic. The tolerance for error is the most-skipped scoping question.
+Phase 2: Build & Integrate (Weeks 3-8)
+This phase varies most across projects. A focused use case with clean data and one integration is 3-4 weeks. A multi-stakeholder rollout with messy data and 3-5 integrations is 6-8 weeks. The shape, though, is consistent.
+Pick the model and the orchestration layer. Most projects don't need a custom model — a foundation model (Claude, GPT, Gemini) plus a thin orchestration layer (a small Rails or Node app, or a workflow tool) is sufficient. Reserve fine-tuning and custom models for cases where you've already proven the workflow works without them.
+Build the integration plumbing. Webhooks in, webhooks out. Auth. Error handling. Logging. The unglamorous engineering work that makes the AI output flow from where it's generated to where it gets used. This is where 60-70% of the actual build time goes — not on the AI.
+Run real data through it. Not synthetic test data. Real records from the business, with all their messiness. The first end-to-end run is almost always ugly. Phase 2 is partially about making the ugly parts less ugly through iteration on prompts, integration code, and edge-case handling.
+Build the human review/feedback loop. AI outputs need human eyes for the first 30-90 days at minimum, and often forever. Build the review interface as part of the project, not as an afterthought. The team using the AI needs to be able to flag bad outputs and have those flags actually train the next iteration.
+Phase 3: Operate (Ongoing, with 30-Day Stabilization)
+This is the phase most projects skip — and it's where AI operations actually lives. The first 30 days after launch are stabilization. Things will break. Edge cases will surface. The team will use the system in ways nobody anticipated. The job in Phase 3 is to absorb that signal and improve the system.
+What Phase 3 looks like in practice:
+Daily monitoring for the first 30 days. Output quality, error rates, usage rates. If the team isn't using the AI output, it doesn't matter how good the model is. Adoption is a metric.
+Weekly review of flagged outputs. Whatever the team flagged as wrong — review them, find the patterns, update prompts or rules accordingly. This is the loop that turns a 70%-accurate AI workflow into a 90%-accurate one over 8-12 weeks of operation.
+Quarterly scope reviews. What the AI does well, what it doesn't, what new use cases the team has surfaced. Most successful AI deployments find adjacent use cases within 3-6 months that weren't visible at scoping. Phase 3 is when those get evaluated honestly.
+What AI Implementation Actually Costs (AI Implementation Cost Ranges 2026)
+If you searched for "ai implementation cost," here are honest numbers — not vendor brochures. AI implementation cost ranges widely depending on scope, integration depth, and how clean your data is going in. The model itself is nearly free; the implementation around it is where every dollar goes.
+Here are real cost ranges I see across engagement sizes. Honest numbers, not vendor brochures.
+Focused single-use-case AI project (one workflow, one integration, one team): $15,000-$30,000 fixed price for a 4-6 week engagement. This is the right shape for most first-time AI projects at small/mid businesses. Get one use case shipping; learn from it; expand from there.
+Multi-stakeholder AI rollout (one workflow, 3-5 integrations, multiple teams): $30,000-$75,000 for an 8-12 week engagement. The cost driver isn't the AI; it's the integration count and the change management. Each stakeholder group adds friction.
+Enterprise AI platform build (custom orchestration, multiple use cases, ongoing operation): $75,000-$250,000+ over 6-12 months. Reserve this for businesses that have already shipped 2-3 focused use cases successfully and have a real platform need.
+If a vendor quotes you under $5K for an AI project: they're selling you an API call wrapper, not an implementation. The "AI part" of an AI project is genuinely cheap now. The work that produces business value is the scoping, integration, and operation around it — and that's never $5K.
+The Pilot-Project Trap (And How to Avoid It)
+Pilots get a bad rap because most of them are stalling tactics. But there's a real version of the AI pilot project that's worth running.
+A real pilot has a kill criterion. "If after 30 days the model's accuracy is below 80% on real data, we kill the project" is a real criterion. "Let's see how it goes" is not. Without a written kill criterion, the pilot will outlive its usefulness because nobody wants to be the person who "killed" it.
+A real pilot has a time box. 30 days, 60 days, 90 days. The clock starts when the pilot launches and stops on a specific calendar date. After that date, you decide: ship it, kill it, or extend with explicit rationale. No silent extensions.
+A real pilot has a single use case. Not "AI for our business." A specific workflow with a specific success metric. If the pilot scope drifts during the pilot, you're not running a pilot anymore — you're running a project with extra steps.
+If your proposed pilot doesn't have all three (kill criterion, time box, single use case), it's a stalling tactic. Either tighten it into a real pilot or skip the pilot phase and ship a small focused implementation directly.
+Who Should Own AI Operations Inside a Company
+Three rough thresholds based on the engagements I see.
+Under 50 people: the owner or COO owns AI operations as part of their broader role. They scope projects, prioritize use cases, and oversee outside support. A dedicated AI hire at this scale is premature; the work isn't 40 hours a week and the right shape is fractional or productized AI ops support.
+50 to 250 people: a designated lead — usually a head of operations or chief of staff — owns AI operations part-time, often 5-10 hours a week. Outside or fractional support handles the implementation work; the internal lead handles prioritization, stakeholder coordination, and adoption.
+250+ people: a dedicated role makes sense. Titles vary — Chief AI Officer , Head of AI Operations, AI Program Manager. The role manages a portfolio of AI projects across the company and increasingly owns the relationships with outside vendors and consultants.
+The wrong move at any scale is hiring a "Head of AI" too early, before the work is defined. Generic Head of AI hires often turn into expensive position-builders who write strategy decks for 6 months before any AI ships.
+How This Connects to My Work
+The 3-phase scoping framework is what we run at SuperDupr — that's the productized AI ops business I founded. SuperDupr handles the implementation: Phase 2 build + integration, Phase 3 operate + stabilize. The Phase 1 discovery work is included in every engagement because it's the part that makes the rest work.
+If you're trying to figure out whether AI operations are the right fit for your business right now, that's a different conversation — strategic advisory rather than productized implementation. Book a strategy call and I'll help you decide whether you're ready to scope a project, whether a pilot is appropriate, or whether you should hold off until your data and workflows are in better shape. If you've already scoped a project and want a productized implementation, that's what SuperDupr is built for.
+For the broader question of how to choose between an AI consultant, an AI agency, and a productized AI ops service, see AI Consultant vs Agency vs Productized AI Ops . For the related decision of whether to build AI yourself or buy it, see Build vs Buy AI: A Decision Framework . If your business is in the $1M–$50M range and you want a strategic engagement before scoping execution, see AI for Business Owners .
+If you're an SMB owner (5-50 employees) ready to install AI properly across your business — not just buying ChatGPT seats — see Claude for Small Business : a $497 DIY playbook or $4,500+ done-for-you install of Claude + 8 native connectors + a Business Brain context layer so the output sounds like your business instead of generic AI.
+Free Resource
+Get the Free AI Content Toolkit
+A curated selection of the only 3 AI tools you actually need to run a 6-figure consulting business.
+Frequently Asked Questions
+What is AI operations?
+AI operations means the discipline of running, scoping, and maintaining AI systems inside a business — selecting the right use cases, integrating them with existing tools, monitoring their output, and improving them over time. It's the management layer around AI implementation, not the AI itself. It's distinct from AIOps (one word), which is an enterprise IT category for using AI to monitor infrastructure. AI operations applies to any business deploying AI; AIOps is a narrower IT discipline.
+How is AI operations different from AIOps?
+AIOps (one word) is the established enterprise IT category — companies like Splunk, Dynatrace, and Datadog use 'AIOps' to mean using AI to monitor and manage IT infrastructure. AI operations (two words) is the broader business discipline: how a non-IT business runs AI projects from scoping through deployment to ongoing improvement. If you're hiring someone for AIOps, you want infrastructure monitoring expertise. If you're hiring for AI operations, you want someone who scopes business problems and ships AI solutions to them.
+How long does an AI project take to ship?
+A well-scoped AI project ships in 4 to 12 weeks. The variable is scope and integration depth. A focused use case with clean data and one integration ships in 4-6 weeks. A multi-stakeholder rollout with messy data and 3-5 integrations takes 8-12 weeks. Anything scoped to take more than 12 weeks at this stage of AI tooling maturity is almost always over-scoped — break it into phases that ship value every 4-6 weeks.
+How much does an AI implementation cost?
+AI implementation costs range from $5,000 for a focused single-use-case engagement to $150,000+ for enterprise rollouts. The honest mid-range for a profitable small or mid-sized business is $15,000 to $60,000 per scoped project. The number is less about model costs (which keep dropping) and more about discovery, integration, change management, and the human work of getting AI output to actually be used by the team. If a vendor is quoting you under $5K for an AI project, they're not scoping it; they're selling you a model API call.
+Should I run an AI pilot first?
+Sometimes. The right reason to run a pilot: you have a specific question about the use case (will the model output be accurate enough? will users actually adopt it?) that can only be answered by testing. The wrong reason: stakeholders aren't convinced and need to be convinced before approving a real project. Pilots aimed at convincing skeptics usually become permanent — they ship 'proof' that gets discussed for months while no real implementation ever lands. If you can't define what would make the pilot succeed (or fail) in advance, you're not running a pilot, you're stalling.
+Who should own AI operations inside a company?
+It depends on company size. Under 50 people: the owner or COO owns AI operations as part of their role; outside support handles scoping and implementation. 50 to 250 people: a designated lead — often a head of operations or a chief of staff — owns it part-time, with outside or fractional AI operations support. 250+ people: a dedicated role makes sense, often title
+
+## full_text
+
+Justin McKelvey
+Fractional CTO &middot; 15 years, 50+ products shipped
+AI for Business
+&bull;
+11 min read
+&bull;
+Published Apr 27, 2026
+&bull;
+Updated Jul 02, 2026
+AI Operations: How I Scope AI Projects That Actually Ship
+Quick Answer: AI operations is the discipline of scoping, integrating, and running AI inside a business — and the way to ship an AI project is a 3-phase plan: Discovery (weeks 1-2: define the workflow, one success metric, an honest data assessment), Build and Integrate (weeks 3-8, where 60-70% of the work is integration plumbing, not AI), and Operate (a 30-day stabilization with daily monitoring). Well-scoped projects ship in 4-12 weeks. In 2026, a focused single-use-case implementation runs $15,000-$30,000; multi-stakeholder rollouts run $30,000-$75,000; anything quoted under $5,000 is an API wrapper, not an implementation. Most failed AI projects skipped Discovery and scoped from a demo instead of a workflow. Note: this is different from AIOps, the IT infrastructure-monitoring category.
+TL;DR: AI Operations in Three Phases
+Most AI projects fail before they start because they were scoped to impress, not to ship. AI operations — the discipline of selecting, scoping, integrating, and running AI inside a business — is where almost all the value (or wasted budget) lives. The model isn't the hard part anymore. The hard part is getting the AI output to actually be used by your team in a workflow that produces a measurable result. The 3-phase AI operations scoping framework: Discovery → Build & Integrate → Operate . Most successful AI projects ship in 4-12 weeks across these three phases. Most failed AI projects skipped Phase 1 and tried to start at Phase 2.
+What "AI Operations" Actually Means (And Why It's Different from AIOps)
+The term gets confused regularly, so let's separate the two cleanly.
+AIOps (one word) is the established enterprise IT category. Splunk, Dynatrace, Datadog, and similar players use "AIOps" to mean using AI to monitor and manage IT infrastructure — alerting, anomaly detection, log analysis. If you search for AIOps and you're not in IT operations, you're probably in the wrong category.
+AI operations (two words) is the broader business discipline. It's how any company — accounting firms, agencies, ecommerce shops, professional services — selects AI use cases, scopes projects, integrates the output into real workflows, and runs the resulting systems over time. It's the management layer around AI, not the AI itself.
+This post is about the second one. If you're an owner or operator at a profitable business trying to figure out how to actually use AI in your operations — not how to monitor your servers — keep reading.
+Why Most AI Projects Don't Ship
+I run an AI ops shop called SuperDupr where this is the work. Across the engagements I've scoped, the same failure patterns repeat. They're not technical failures. They're scoping failures.
+The demo trap. An owner sees an AI demo. The demo summarizes a contract in 30 seconds with one clean input and one perfect output. They back into a project that recreates the demo. Six months later, the project hasn't shipped because the real workflow involves 12 contract types, 4 systems of record, 3 stakeholders who need to review, and edge cases the demo never showed. The scope didn't account for any of that. It accounted for the demo.
+The pilot-as-stall. Stakeholders aren't convinced. Someone proposes "let's run a pilot." The pilot is scoped to prove AI works. It does prove that. Then everyone discusses the pilot for four months while no real implementation lands. The pilot becomes the project. AI operations gets confused with AI testing.
+The scope-from-tool, not from-problem. Someone reads about a new AI tool and decides "we should use this." A project is scoped around the tool. Halfway through, the team realizes the tool doesn't fit the problem. The project either fails or pivots to a different tool. Scope-from-tool is the most common mistake at companies under 100 people.
+The fix to all three is the same: a real scoping phase before anything gets built. That's what Phase 1 is for.
+The 3-Phase AI Project Plan I Use (Scoping AI Project Engagements That Ship)
+Scoping an AI project well is the single highest-leverage activity in this whole arc. Get the scoping right and the rest of the engagement runs cleanly. Get it wrong and no amount of model quality or engineering rescues it. The 3-phase AI project plan below is the structure I use on every engagement.
+Phase 1: Discovery (Weeks 1-2). Phase 2: Build & Integrate (Weeks 3-8). Phase 3: Operate (ongoing, with a 30-day stabilization). The phases aren't optional and they aren't in a different order. Discovery before building. Building before operating. The shape doesn't change; what changes is how big each phase is for the specific project.
+Phase 1: Discovery (Weeks 1-2)
+The job in Phase 1 is to define the workflow we're trying to change, the people whose work changes, the data that already exists, and what "success" looks like in measurable terms. No AI gets built. No tools get selected. The output is a one-page scoping doc that anyone in the business can read.
+Specifically, Phase 1 produces:
+The workflow being changed. Drawn out as a sequence — what happens today, who does it, where the data comes from, what the output looks like. If we can't draw the current state in under a page, the project isn't scoped tight enough yet. Keep narrowing.
+The success metric. One number. Time per task, error rate, throughput, customer turnaround, revenue per hour — whichever applies. Without one specific number, the project has no way to declare success and no way to declare failure. Vague projects don't ship.
+The data we have. Where it lives, what shape it's in, how clean it is, who owns access to it. Most AI projects break in Phase 2 because Phase 1 didn't honestly assess data. "We have customer data" isn't an assessment — "we have 12,000 customer records spread across HubSpot and a Google Sheet, with 30% missing email and inconsistent name formatting" is.
+The integration surface. Which tools the AI output has to flow into and out of. CRM, accounting system, ticketing tool, email — whatever's relevant. Each integration is a project unto itself; counting them honestly in Phase 1 prevents Phase 2 surprises.
+The risk of being wrong. If the AI output is wrong 10% of the time, what happens? For some workflows (drafting first-pass email replies for human review), 10% wrong is fine. For others (auto-categorizing transactions for tax purposes), 10% wrong is catastrophic. The tolerance for error is the most-skipped scoping question.
+Phase 2: Build & Integrate (Weeks 3-8)
+This phase varies most across projects. A focused use case with clean data and one integration is 3-4 weeks. A multi-stakeholder rollout with messy data and 3-5 integrations is 6-8 weeks. The shape, though, is consistent.
+Pick the model and the orchestration layer. Most projects don't need a custom model — a foundation model (Claude, GPT, Gemini) plus a thin orchestration layer (a small Rails or Node app, or a workflow tool) is sufficient. Reserve fine-tuning and custom models for cases where you've already proven the workflow works without them.
+Build the integration plumbing. Webhooks in, webhooks out. Auth. Error handling. Logging. The unglamorous engineering work that makes the AI output flow from where it's generated to where it gets used. This is where 60-70% of the actual build time goes — not on the AI.
+Run real data through it. Not synthetic test data. Real records from the business, with all their messiness. The first end-to-end run is almost always ugly. Phase 2 is partially about making the ugly parts less ugly through iteration on prompts, integration code, and edge-case handling.
+Build the human review/feedback loop. AI outputs need human eyes for the first 30-90 days at minimum, and often forever. Build the review interface as part of the project, not as an afterthought. The team using the AI needs to be able to flag bad outputs and have those flags actually train the next iteration.
+Phase 3: Operate (Ongoing, with 30-Day Stabilization)
+This is the phase most projects skip — and it's where AI operations actually lives. The first 30 days after launch are stabilization. Things will break. Edge cases will surface. The team will use the system in ways nobody anticipated. The job in Phase 3 is to absorb that signal and improve the system.
+What Phase 3 looks like in practice:
+Daily monitoring for the first 30 days. Output quality, error rates, usage rates. If the team isn't using the AI output, it doesn't matter how good the model is. Adoption is a metric.
+Weekly review of flagged outputs. Whatever the team flagged as wrong — review them, find the patterns, update prompts or rules accordingly. This is the loop that turns a 70%-accurate AI workflow into a 90%-accurate one over 8-12 weeks of operation.
+Quarterly scope reviews. What the AI does well, what it doesn't, what new use cases the team has surfaced. Most successful AI deployments find adjacent use cases within 3-6 months that weren't visible at scoping. Phase 3 is when those get evaluated honestly.
+What AI Implementation Actually Costs (AI Implementation Cost Ranges 2026)
+If you searched for "ai implementation cost," here are honest numbers — not vendor brochures. AI implementation cost ranges widely depending on scope, integration depth, and how clean your data is going in. The model itself is nearly free; the implementation around it is where every dollar goes.
+Here are real cost ranges I see across engagement sizes. Honest numbers, not vendor brochures.
+Focused single-use-case AI project (one workflow, one integration, one team): $15,000-$30,000 fixed price for a 4-6 week engagement. This is the right shape for most first-time AI projects at small/mid businesses. Get one use case shipping; learn from it; expand from there.
+Multi-stakeholder AI rollout (one workflow, 3-5 integrations, multiple teams): $30,000-$75,000 for an 8-12 week engagement. The cost driver isn't the AI; it's the integration count and the change management. Each stakeholder group adds friction.
+Enterprise AI platform build (custom orchestration, multiple use cases, ongoing operation): $75,000-$250,000+ over 6-12 months. Reserve this for businesses that have already shipped 2-3 focused use cases successfully and have a real platform need.
+If a vendor quotes you under $5K for an AI project: they're selling you an API call wrapper, not an implementation. The "AI part" of an AI project is genuinely cheap now. The work that produces business value is the scoping, integration, and operation around it — and that's never $5K.
+The Pilot-Project Trap (And How to Avoid It)
+Pilots get a bad rap because most of them are stalling tactics. But there's a real version of the AI pilot project that's worth running.
+A real pilot has a kill criterion. "If after 30 days the model's accuracy is below 80% on real data, we kill the project" is a real criterion. "Let's see how it goes" is not. Without a written kill criterion, the pilot will outlive its usefulness because nobody wants to be the person who "killed" it.
+A real pilot has a time box. 30 days, 60 days, 90 days. The clock starts when the pilot launches and stops on a specific calendar date. After that date, you decide: ship it, kill it, or extend with explicit rationale. No silent extensions.
+A real pilot has a single use case. Not "AI for our business." A specific workflow with a specific success metric. If the pilot scope drifts during the pilot, you're not running a pilot anymore — you're running a project with extra steps.
+If your proposed pilot doesn't have all three (kill criterion, time box, single use case), it's a stalling tactic. Either tighten it into a real pilot or skip the pilot phase and ship a small focused implementation directly.
+Who Should Own AI Operations Inside a Company
+Three rough thresholds based on the engagements I see.
+Under 50 people: the owner or COO owns AI operations as part of their broader role. They scope projects, prioritize use cases, and oversee outside support. A dedicated AI hire at this scale is premature; the work isn't 40 hours a week and the right shape is fractional or productized AI ops support.
+50 to 250 people: a designated lead — usually a head of operations or chief of staff — owns AI operations part-time, often 5-10 hours a week. Outside or fractional support handles the implementation work; the internal lead handles prioritization, stakeholder coordination, and adoption.
+250+ people: a dedicated role makes sense. Titles vary — Chief AI Officer , Head of AI Operations, AI Program Manager. The role manages a portfolio of AI projects across the company and increasingly owns the relationships with outside vendors and consultants.
+The wrong move at any scale is hiring a "Head of AI" too early, before the work is defined. Generic Head of AI hires often turn into expensive position-builders who write strategy decks for 6 months before any AI ships.
+How This Connects to My Work
+The 3-phase scoping framework is what we run at SuperDupr — that's the productized AI ops business I founded. SuperDupr handles the implementation: Phase 2 build + integration, Phase 3 operate + stabilize. The Phase 1 discovery work is included in every engagement because it's the part that makes the rest work.
+If you're trying to figure out whether AI operations are the right fit for your business right now, that's a different conversation — strategic advisory rather than productized implementation. Book a strategy call and I'll help you decide whether you're ready to scope a project, whether a pilot is appropriate, or whether you should hold off until your data and workflows are in better shape. If you've already scoped a project and want a productized implementation, that's what SuperDupr is built for.
+For the broader question of how to choose between an AI consultant, an AI agency, and a productized AI ops service, see AI Consultant vs Agency vs Productized AI Ops . For the related decision of whether to build AI yourself or buy it, see Build vs Buy AI: A Decision Framework . If your business is in the $1M–$50M range and you want a strategic engagement before scoping execution, see AI for Business Owners .
+If you're an SMB owner (5-50 employees) ready to install AI properly across your business — not just buying ChatGPT seats — see Claude for Small Business : a $497 DIY playbook or $4,500+ done-for-you install of Claude + 8 native connectors + a Business Brain context layer so the output sounds like your business instead of generic AI.
+Free Resource
+Get the Free AI Content Toolkit
+A curated selection of the only 3 AI tools you actually need to run a 6-figure consulting business.
+Frequently Asked Questions
+What is AI operations?
+AI operations means the discipline of running, scoping, and maintaining AI systems inside a business — selecting the right use cases, integrating them with existing tools, monitoring their output, and improving them over time. It's the management layer around AI implementation, not the AI itself. It's distinct from AIOps (one word), which is an enterprise IT category for using AI to monitor infrastructure. AI operations applies to any business deploying AI; AIOps is a narrower IT discipline.
+How is AI operations different from AIOps?
+AIOps (one word) is the established enterprise IT category — companies like Splunk, Dynatrace, and Datadog use 'AIOps' to mean using AI to monitor and manage IT infrastructure. AI operations (two words) is the broader business discipline: how a non-IT business runs AI projects from scoping through deployment to ongoing improvement. If you're hiring someone for AIOps, you want infrastructure monitoring expertise. If you're hiring for AI operations, you want someone who scopes business problems and ships AI solutions to them.
+How long does an AI project take to ship?
+A well-scoped AI project ships in 4 to 12 weeks. The variable is scope and integration depth. A focused use case with clean data and one integration ships in 4-6 weeks. A multi-stakeholder rollout with messy data and 3-5 integrations takes 8-12 weeks. Anything scoped to take more than 12 weeks at this stage of AI tooling maturity is almost always over-scoped — break it into phases that ship value every 4-6 weeks.
+How much does an AI implementation cost?
+AI implementation costs range from $5,000 for a focused single-use-case engagement to $150,000+ for enterprise rollouts. The honest mid-range for a profitable small or mid-sized business is $15,000 to $60,000 per scoped project. The number is less about model costs (which keep dropping) and more about discovery, integration, change management, and the human work of getting AI output to actually be used by the team. If a vendor is quoting you under $5K for an AI project, they're not scoping it; they're selling you a model API call.
+Should I run an AI pilot first?
+Sometimes. The right reason to run a pilot: you have a specific question about the use case (will the model output be accurate enough? will users actually adopt it?) that can only be answered by testing. The wrong reason: stakeholders aren't convinced and need to be convinced before approving a real project. Pilots aimed at convincing skeptics usually become permanent — they ship 'proof' that gets discussed for months while no real implementation ever lands. If you can't define what would make the pilot succeed (or fail) in advance, you're not running a pilot, you're stalling.
+Who should own AI operations inside a company?
+It depends on company size. Under 50 people: the owner or COO owns AI operations as part of their role; outside support handles scoping and implementation. 50 to 250 people: a designated lead — often a head of operations or a chief of staff — owns it part-time, with outside or fractional AI operations support. 250+ people: a dedicated role makes sense, often titled Chief AI Officer or Head of AI Operations. Below that scale, hiring a full-time AI ops lead is premature; the work isn't yet 40 hours a week.
+What's the most common AI scoping mistake?
+Scoping for the demo, not for the workflow. Founders and ops leaders see an AI demo and back into a project that recreates the demo. The demo runs in 30 seconds with clean inputs and one happy-path test case. Real workflows have messy data, multiple stakeholders, edge cases, and integration with tools that don't have clean APIs. A project scoped from a demo systematically underestimates integration and change-management work — usually by 3-5x. Scope from the workflow you want to change, not from the demo that excited you.
+More on AI for Business
+Claude API vs OpenAI API for Developers (2026)
+Claude API vs OpenAI API for developers in 2026. Real pricing, tool-use reliability numbers from production logs, and the routing pattern most builders end up using.
+9 min
+Notion AI vs Claude for Business: Which AI Should Power Your Workspace?
+Notion AI vs Claude in 2026: pricing, reasoning depth, integrations, and when to use both. Real costs for 1-person and 5-person teams, plus what each one actually does.
+7 min
+Claude for Microsoft 365: Setup, Use Cases, and What Anthropic Ships (2026)
+How to use Claude with Microsoft 365 in 2026 — native connector setup, Outlook/Word/Excel/Teams/SharePoint workflows, Copilot comparison, gotchas, and the install path that actually works.
+9 min
+Copilot vs Claude for Business: Which AI in 2026
+Microsoft Copilot vs Claude in June 2026: Copilot wins if you're already on M365 E3/E5; Claude wins on writing, reasoning, long context, and price for non-Microsoft shops. Real pricing, decision guide.
+7 min
+Written by
+Justin McKelvey
+Fractional CTO & AI consultant in Austin, TX. 15 years building software, 50+ products shipped,
+$53M+ in client revenue generated. I help $1M&ndash;$50M founders ship production software and
+automate operations with AI &mdash; without hiring a full-time executive team.
+Work with me &rarr;
+If this was useful, here are two ways I can help:
+1) Get the free toolkit
+2) Book a strategy call
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":20147,"paragraph_count":97,"sentence_count":229,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   # Justin McKelvey > Fractional Product & Tech Lead helping founders build go-to-market strategy, nail positioning, and ship products that actually grow. 15+ years building products, 50+ shipped, $53M+ revenue generated. ## About Justin McKelvey is a software consultant and product builder based i... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=capital_startup
+
+2. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Justin McKelvey Fractional CTO &middot; 15 years, 50+ products shipped AI for Business &bull; 11 min read &bull; Published Apr 27, 2026 &bull; Updated Jul 02, 2026 AI Operations: How I Scope AI Projects That Actually Ship Quick Answer: AI operations is the discipline of scoping, integrating, and running AI inside a business — and the way to ship an AI project is a 3-phase plan: Discovery (weeks 1-2: define the workflow, one success metric, an honest data assessment), Build and Integrate (weeks 3-8, where 60-70% of 
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Well-scoped projects ship in 4-12 weeks.
+
+4. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   In 2026, a focused single-use-case implementation runs $15,000-$30,000; multi-stakeholder rollouts run $30,000-$75,000; anything quoted under $5,000 is an API wrapper, not an implementation.
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Most failed AI projects skipped Discovery and scoped from a demo instead of a workflow.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Note: this is different from AIOps, the IT infrastructure-monitoring category.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Google
+- products: Claude, Gemini, ChatGPT
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 15, 50, $53M, 11 m, 27, 02, 3
+- quotes: AI Operations / let's run a pilot. / we should use this. / We have customer data / we have 12,000 customer records spread across HubSpot and a Google Sheet, with 30% missing email and inconsistent name formatting
+
+## evidence_seed
+
+- company_actions: Well-scoped projects ship in 4-12 weeks. / Note: this is different from AIOps, the IT infrastructure-monitoring category.
+- case_details: 暂无公开信息
+- workflow_changes: Most failed AI projects skipped Discovery and scoped from a demo instead of a workflow.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+# Justin McKelvey > Fractional Product & Tech Lead helping founders build go-to-market strategy, nail positioning, and ship products that actually grow. 15+ years building products, 50+ shipped, $53M+ revenue generated. ## About Justin McKelvey is a software consultant and product builder based i... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,283 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-043
+title: "Amazon Mechanical Turk 将于 2026 年 7 月 30 日起停止接受新客户"
+title_zh: "Amazon Mechanical Turk 将于 2026 年 7 月 30 日起停止接受新客户"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk"
+canonical_url: "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk"
+source_name: "TechCrunch：AI（RSS）"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-05T17:43:36.000Z"
+collected_at: 2026-07-06T02:21:26.972Z
+language: mixed
+full_text_hash: 1b6709a20a513a93
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-06/r-043-amazon-mechanical-turk-将于-2026-年-7-月-30-日起停止接受新客户.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-06/r-043-amazon-mechanical-turk-将于-2026-年-7-月-30-日起停止接受新客户.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":3800,"paragraph_count":27,"sentence_count":22,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 3800
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1b6709a20a513a93","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Amazon Mechanical Turk 将于 2026 年 7 月 30 日起停止接受新客户","discovery_summary":"Amazon 宣布 Mechanical Turk 众包平台将于 2026 年 7 月 30 日起停止接受新客户，现有客户可继续使用，但不再引入新功能。该平台 2005 年上线，曾用于 CAPTCHA、情感分析等人工任务，后成为 SageMaker AI 服务的数据标注途径，也常被企业用来以人工冒充 AI。2023 年分析显示，平台上 33%-46% 的工人已使用大语言模型完成任务，引发数据可靠性和人类参与必要性的质疑。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk","discovered_at":"2026-07-06T02:07:37.962Z","rank_on_page":65,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: b66497cfee16056b
+content_hash: 1b6709a20a513a93
+semantic_hash: 5cbe9775bd40f02b
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-05T17:43:36.000Z"
+last_seen_at: 2026-07-06T02:21:26.972Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["TechCrunch","AI（RSS）","Amazon","AWS"],"products":["agents"],"people":[],"industries":["法律 / 法务","企业服务"],"roles":[],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["2026","7","30","2005","2023","33%","46%","10"],"quotes":["careful consideration,","years ago,","Someone at Amazon is going to decide keeping the Mturk servers running is a waste of time and resources and pull the plug entirely."]}
+evidence_seed: {"company_actions":[],"case_details":["Image Credits: Malte Mueller / Getty Images AI Amazon will stop accepting new customers for Mechanical Turk Anthony Ha 10:43 AM PDT · July 5, 2026 These may be the last days of Amazon’s Mechanical Turk.","An announcement on the Mechanical Turk website says that on July 30, 2026, the crowdsourcing service will close to new customers."],"workflow_changes":["” In other words, Amazon isn’t completely pulling the plug, but the service is very much on life support."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["AWS continues to invest in security and availability improvements for Mechanical Turk, but we do not plan to introduce new features."]}
+missing_information: []
+key_excerpts: [{"type":"number","text":"Amazon 宣布 Mechanical Turk 众包平台将于 2026 年 7 月 30 日起停止接受新客户，现有客户可继续使用，但不再引入新功能。该平台 2005 年上线，曾用于 CAPTCHA、情感分析等人工任务，后成为 SageMaker AI 服务的数据标注途径，也常被企业用来以人工冒充 AI。2023 年分析显示，平台上 33%-46% 的工人已使用大语言模型完成任务，引发数据可靠性和人类参与必要性的质疑。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Image Credits: Malte Mueller / Getty Images AI Amazon will stop accepting new customers for Mechanical Turk Anthony Ha 10:43 AM PDT · July 5, 2026 These may be the last days of Amazon’s Mechanical Turk.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"An announcement on the Mechanical Turk website says that on July 30, 2026, the crowdsourcing service will close to new customers.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"quote","text":"Amazon Web Services says the decision was made after “careful consideration,” adding, “Existing customers can continue to use the service as normal.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"AWS continues to invest in security and availability improvements for Mechanical Turk, but we do not plan to introduce new features.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"” In other words, Amazon isn’t completely pulling the plug, but the service is very much on life support.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-06T02:21:26.972Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Amazon Mechanical Turk 将于 2026 年 7 月 30 日起停止接受新客户
+
+## clean_text
+
+Image Credits: Malte Mueller / Getty Images
+AI
+Amazon will stop accepting new customers for Mechanical Turk
+Anthony Ha
+10:43 AM PDT · July 5, 2026
+These may be the last days of Amazon’s Mechanical Turk.
+An announcement on the Mechanical Turk website says that on July 30, 2026, the crowdsourcing service will close to new customers. Amazon Web Services says the decision was made after “careful consideration,” adding, “Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Mechanical Turk, but we do not plan to introduce new features.”
+In other words, Amazon isn’t completely pulling the plug, but the service is very much on life support.
+First launched in 2005, Mechanical Turk was a marketplace where people were paid tiny amounts to perform simple tasks that resisted full automation — things like completing CAPTCHA challenges or identifying the basic sentiment in a sentence.
+In its heyday, the service was at the center of debates around the ethics of crowdsourced labor , and it even played a small role in the early stages of the Facebook-Cambridge Analytica scandal.
+Beginning in 2018, Amazon began billing it as a way for companies to annotate data to train neural networks as part of its SageMaker AI service.
+Mechanical Turk has also been described as the hidden enabler for companies taking a fake-it-till-you-make-it approach to AI, where products marketed as AI are actually powered by the Mechanical Turk workforce — all the more fitting since the original Mechanical Turk was itself a hoax, with a hidden human chess player pretending to be a chess-playing machine.
+Over time, the relationship between Mechanical Turk and AI models grew even more complicated. In a snake-eating-its-own-tail irony , a 2023 analysis found that between 33% and 46% of workers on the platform were using large language models to complete their tasks, raising questions about the reliability of data annotated on the platform and also about whether humans needed to be in the loop at all.
+This week, after Amazon’s decision became public, one Reddit user suggested the platform died “years ago,” with workers and researchers abandoning it due to bots and fraud. The user predicted , “Someone at Amazon is going to decide keeping the Mturk servers running is a waste of time and resources and pull the plug entirely.”
+Topics
+AI , Amazon , Amazon Web Services , mechanical turk
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Anthony Ha
+Anthony Ha is TechCrunch’s weekend editor. Previously, he worked as a tech reporter at Adweek, a senior editor at VentureBeat, a local government reporter at the Hollister Free Lance, and vice president of content at a VC firm. He lives in New York City.
+You can contact or verify outreach from Anthony by emailing anthony.ha@techcrunch.com .
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Chevy built an all-American EV truck — why is nobody buying it?
+Tim De Chant
+Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped
+Lucas Ropek
+Jersey Mike’s IPO illustrates how bad the AI hype has become
+Julie Bort
+After $18B IPO, Bending Spoons founder says success comes from minimizing luck
+Anna Heim
+The ‘Father of the Internet’ is finally retiring
+Tim Fernholz
+OpenClaw is finally available on Android and iOS
+Lucas Ropek
+Flipper Device’s new Busy Bar is a customizable display for productivity
+Ivan Mehta
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Malte Mueller / Getty Images
+AI
+Amazon will stop accepting new customers for Mechanical Turk
+Anthony Ha
+10:43 AM PDT · July 5, 2026
+These may be the last days of Amazon’s Mechanical Turk.
+An announcement on the Mechanical Turk website says that on July 30, 2026, the crowdsourcing service will close to new customers. Amazon Web Services says the decision was made after “careful consideration,” adding, “Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Mechanical Turk, but we do not plan to introduce new features.”
+In other words, Amazon isn’t completely pulling the plug, but the service is very much on life support.
+First launched in 2005, Mechanical Turk was a marketplace where people were paid tiny amounts to perform simple tasks that resisted full automation — things like completing CAPTCHA challenges or identifying the basic sentiment in a sentence.
+In its heyday, the service was at the center of debates around the ethics of crowdsourced labor , and it even played a small role in the early stages of the Facebook-Cambridge Analytica scandal.
+Beginning in 2018, Amazon began billing it as a way for companies to annotate data to train neural networks as part of its SageMaker AI service.
+Mechanical Turk has also been described as the hidden enabler for companies taking a fake-it-till-you-make-it approach to AI, where products marketed as AI are actually powered by the Mechanical Turk workforce — all the more fitting since the original Mechanical Turk was itself a hoax, with a hidden human chess player pretending to be a chess-playing machine.
+Over time, the relationship between Mechanical Turk and AI models grew even more complicated. In a snake-eating-its-own-tail irony , a 2023 analysis found that between 33% and 46% of workers on the platform were using large language models to complete their tasks, raising questions about the reliability of data annotated on the platform and also about whether humans needed to be in the loop at all.
+This week, after Amazon’s decision became public, one Reddit user suggested the platform died “years ago,” with workers and researchers abandoning it due to bots and fraud. The user predicted , “Someone at Amazon is going to decide keeping the Mturk servers running is a waste of time and resources and pull the plug entirely.”
+Topics
+AI , Amazon , Amazon Web Services , mechanical turk
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Anthony Ha
+Anthony Ha is TechCrunch’s weekend editor. Previously, he worked as a tech reporter at Adweek, a senior editor at VentureBeat, a local government reporter at the Hollister Free Lance, and vice president of content at a VC firm. He lives in New York City.
+You can contact or verify outreach from Anthony by emailing anthony.ha@techcrunch.com .
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Chevy built an all-American EV truck — why is nobody buying it?
+Tim De Chant
+Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped
+Lucas Ropek
+Jersey Mike’s IPO illustrates how bad the AI hype has become
+Julie Bort
+After $18B IPO, Bending Spoons founder says success comes from minimizing luck
+Anna Heim
+The ‘Father of the Internet’ is finally retiring
+Tim Fernholz
+OpenClaw is finally available on Android and iOS
+Lucas Ropek
+Flipper Device’s new Busy Bar is a customizable display for productivity
+Ivan Mehta
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 94
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":3800,"paragraph_count":27,"sentence_count":22,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Amazon 宣布 Mechanical Turk 众包平台将于 2026 年 7 月 30 日起停止接受新客户，现有客户可继续使用，但不再引入新功能。该平台 2005 年上线，曾用于 CAPTCHA、情感分析等人工任务，后成为 SageMaker AI 服务的数据标注途径，也常被企业用来以人工冒充 AI。2023 年分析显示，平台上 33%-46% 的工人已使用大语言模型完成任务，引发数据可靠性和人类参与必要性的质疑。
+
+2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Image Credits: Malte Mueller / Getty Images AI Amazon will stop accepting new customers for Mechanical Turk Anthony Ha 10:43 AM PDT · July 5, 2026 These may be the last days of Amazon’s Mechanical Turk.
+
+3. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   An announcement on the Mechanical Turk website says that on July 30, 2026, the crowdsourcing service will close to new customers.
+
+4. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   Amazon Web Services says the decision was made after “careful consideration,” adding, “Existing customers can continue to use the service as normal.
+
+5. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=high
+   AWS continues to invest in security and availability improvements for Mechanical Turk, but we do not plan to introduce new features.
+
+6. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   ” In other words, Amazon isn’t completely pulling the plug, but the service is very much on life support.
+
+## business_elements
+
+- companies: TechCrunch, AI（RSS）, Amazon, AWS
+- products: agents
+- people: 暂无公开信息
+- industries: 法律 / 法务, 企业服务
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 7, 30, 2005, 2023, 33%, 46%, 10
+- quotes: careful consideration, / years ago, / Someone at Amazon is going to decide keeping the Mturk servers running is a waste of time and resources and pull the plug entirely.
+
+## evidence_seed
+
+- company_actions: 暂无公开信息
+- case_details: Image Credits: Malte Mueller / Getty Images AI Amazon will stop accepting new customers for Mechanical Turk Anthony Ha 10:43 AM PDT · July 5, 2026 These may be the last days of Amazon’s Mechanical Turk. / An announcement on the Mechanical Turk website says that on July 30, 2026, the crowdsourcing service will close to new customers.
+- workflow_changes: ” In other words, Amazon isn’t completely pulling the plug, but the service is very much on life support.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: AWS continues to invest in security and availability improvements for Mechanical Turk, but we do not plan to introduce new features.
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Amazon Mechanical Turk 将于 2026 年 7 月 30 日起停止接受新客户","discovery_summary":"Amazon 宣布 Mechanical Turk 众包平台将于 2026 年 7 月 30 日起停止接受新客户，现有客户可继续使用，但不再引入新功能。该平台 2005 年上线，曾用于 CAPTCHA、情感分析等人工任务，后成为 SageMaker AI 服务的数据标注途径，也常被企业用来以人工冒充 AI。2023 年分析显示，平台上 33%-46% 的工人已使用大语言模型完成任务，引发数据可靠性和人类参与必要性的质疑。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk","discovered_at":"2026-07-06T02:07:37.962Z","rank_on_page":65,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Amazon 宣布 Mechanical Turk 众包平台将于 2026 年 7 月 30 日起停止接受新客户，现有客户可继续使用，但不再引入新功能。该平台 2005 年上线，曾用于 CAPTCHA、情感分析等人工任务，后成为 SageMaker AI 服务的数据标注途径，也常被企业用来以人工冒充 AI。2023 年分析显示，平台上 33%-46% 的工人已使用大语言模型完成任务，引发数据可靠性和人类参与必要性的质疑。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,407 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-017
+title: "AI Development for Startups: Build, Skip, Timeline"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://foundry-5.com/resources/ai-development-for-startups-cost-timeline/"
+canonical_url: "https://foundry-5.com/resources/ai-development-for-startups-cost-timeline"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-06T02:21:26.782Z
+language: mixed
+full_text_hash: 71b0579028dcfcc6
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-06/r-017-ai-development-for-startups-build-skip-timeline.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-06/r-017-ai-development-for-startups-build-skip-timeline.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":17250,"paragraph_count":95,"sentence_count":193,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 17250
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"71b0579028dcfcc6","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 8e66437510bc9b9e
+content_hash: 71b0579028dcfcc6
+semantic_hash: c283c4c9b29557d4
+duplicate_of: ""
+first_seen_at: "2026-07-06T02:21:26.782Z"
+last_seen_at: 2026-07-06T02:21:26.782Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agent"],"people":[],"industries":["法律 / 法务","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["5","0203","1938","835","07","29","30%","2025"],"quotes":[]}
+evidence_seed: {"company_actions":["AI Development for Startups: Build, Skip, Timeline AI Development → Web Development → Mobile Apps → MVP Development → UX/UI Design → Custom Build → Let's Talk contact@foundry5.com| 0203 1938 835 London, UK07:29 AM Socials // FOUNDRY5 Development # AI Development for Startups: What to Bu... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=capital_startup","Table of Contents Why most startup AI projects die before launch What is AI development for startups, really?","What should a startup build first with AI?"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"AI Development for Startups: Build, Skip, Timeline AI Development → Web Development → Mobile Apps → MVP Development → UX/UI Design → Custom Build → Let's Talk contact@foundry5.com| 0203 1938 835 London, UK07:29 AM Socials // FOUNDRY5 Development # AI Development for Startups: What to Bu... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Table of Contents Why most startup AI projects die before launch What is AI development for startups, really?","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"What should a startup build first with AI?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"What should a startup skip for now?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"How long does AI development take for a startup?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"How much does it cost to build an AI product?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-06T02:21:26.782Z
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# AI Development for Startups: Build, Skip, Timeline
+
+## clean_text
+
+Table of Contents
+Why most startup AI projects die before launch
+What is AI development for startups, really?
+What should a startup build first with AI?
+What should a startup skip for now?
+How long does AI development take for a startup?
+How much does it cost to build an AI product?
+LLM, fine-tuning, or RAG: choosing the right foundation
+Building responsibly and briefing your developer
+Frequently Asked Questions
+Conclusion: build the smallest thing that proves the idea
+Quick answer: Foundry 5 approaches AI development for startups as a scoping problem first and a coding problem second: build one AI feature that a real user pays for, skip the rest, and expect a working MVP in eight to sixteen weeks. Gartner predicts at least 30% of generative AI projects are abandoned after proof of concept, almost always over scope, not the model.
+You have a demo that impressed three people and a Slack channel full of AI ideas. You also have a runway that shrinks every month and a board that wants to see something real. AI development for startups lives right on that fault line: build too much and you burn the runway, build too little and the demo never becomes a product.
+The pressure is not imaginary. Gartner predicts at least 30% of generative AI projects will be abandoned after proof of concept by the end of 2025, most of them for reasons that have nothing to do with the model and everything to do with unclear value and runaway scope. That is not a technology failure. It is a planning failure.
+Most of that waste is a decision problem, not an engineering problem, which is why the sharpest founders treat this as tech strategy for non-technical founders long before it becomes a codebase. This guide covers the three decisions that actually move the outcome: what to build, what to skip, and how long each realistic path takes.
+Why most startup AI projects die before launch
+Most startup AI projects do not fail at deployment. They fail at the whiteboard, where a founder confuses an impressive feature with a viable product. The pattern repeats across pre-seed and Series A teams: a broad AI vision, no single user who would pay for it, and a build that quietly balloons for six months.
+The data backs the pattern. CB Insights found that 42% of startups fail because there is no market need for what they built. Bolt an AI layer onto a product nobody wanted and you have not fixed the problem. You have made it more expensive to discover.
+Consider a two-founder team that raised £600,000 and spent five months training a custom model to summarize legal documents. It worked. It also served a workflow their target customers already handled with a junior paralegal and a template. The model was excellent. The demand was not there. That is the quiet crisis in startup AI: technically strong builds aimed at problems the market does not feel.
+The fix is not more caution. It is sharper sequencing: prove one painful problem, build the smallest thing that solves it, and only then decide what comes next. Build the machine that earns revenue, not the monument that earns compliments.
+What is AI development for startups, really?
+AI development for startups is the disciplined process of shipping a narrow, useful AI feature inside a real product, then improving it with live usage data. Foundry 5 defines AI development for startups by what it excludes as much as what it includes: one high-value use case, one measurable outcome, and one honest timeline, rather than a platform that tries to be everything on day one.
+This matters because the phrase gets stretched until it means nothing. For an early-stage team it is not research. It is not a science project. It is product work with a probabilistic component: a feature that reads, writes, classifies, or predicts, wrapped in the same engineering discipline as any other part of your stack.
+Picture the difference in practice. One startup says it is doing AI development because it added a chatbot that answers from a help doc. Another says the same because it is building an autonomous agent that negotiates contracts. Both are real work. Only one is a sensible first build for a company with eighteen months of runway.
+The best early AI work is boring on the surface and valuable underneath. It removes a specific manual step, saves a specific hour, or closes a specific gap. Everything else is a roadmap item, not a launch requirement.
+What should a startup build first with AI?
+A startup should build the single AI feature that a real user would pay for today, and nothing else in version one. In practice that means one of three things: an assistant that answers from your own data, a workflow that automates a repetitive task, or a prediction that improves a decision your users already make. Ship one. Measure it. Then expand.
+The mistake is treating AI as a feature buffet. Founders list twelve capabilities and try to build all of them thin. The result is a product that does many things badly and nothing well enough to charge for. Depth in one feature beats breadth across ten.
+The three AI features worth building early
+The strongest first builds share a shape: narrow scope, obvious value, and a metric you can watch move. A retrieval assistant grounded in your customer’s documents. An automation that turns a two-hour manual task into a two-minute review. A predictive score that ranks leads, flags churn risk, or estimates a delivery time. Each solves one problem completely.
+Whichever you pick, tie it to a number before a line of code is written. If the feature cannot name the hour it saves or the conversion it lifts, it is not ready to build. It is ready to interview more users.
+Integration or AI-native: which fits your stage?
+Most startups do not need to be AI-native on day one. They need to add intelligence to a product that already has users. The distinction between AI integration vs AI-native decides your architecture, your cost, and your timeline. If you already have traction, the fastest path is usually to add AI to an existing web app rather than rebuild the product around a model.
+Go AI-native only when the intelligence is the product, not a feature of it. A tool where the model is the core value, where every screen depends on it, earns a ground-up build. A CRM that adds smart summaries does not. Match the ambition to the stage, not to the pitch deck.
+What should a startup skip for now?
+Skip everything that does not shorten the path to a paying user. For most startups that means no custom foundation model, no fine-tuning in version one, no multi-agent orchestration, and no in-house ML infrastructure. These are real capabilities. They are also the fastest way to spend a year building plumbing instead of product.
+The temptation is understandable. Training your own model sounds like a moat. In reality, at seed stage it is usually a liability: expensive to build, expensive to maintain, and rarely better than a well-prompted commercial model for a narrow task. The moat is your data and your distribution, not your weights.
+Here is a candid concession. Some startups genuinely should build heavy infrastructure early: a team with rare proprietary data, deep ML expertise on staff, and a use case where accuracy is the entire business. If that is you, ignore this section. If it is not, and it usually is not, defer the hard infrastructure until a real bottleneck forces the decision.
+Use the table below as a first-pass filter. It is not a law. It is a way to keep version one honest.
+Build now
+Skip until it hurts
+One retrieval assistant grounded in your own data
+A custom foundation model trained from scratch
+A single automation that removes a manual task
+Multi-agent systems that coordinate autonomously
+A prediction that improves one existing decision
+Fine-tuning before you have real usage data
+Commercial LLM plus prompt engineering and guardrails
+In-house GPU infrastructure and MLOps tooling
+Analytics that prove the feature is used
+A general-purpose AI platform with ten features
+How long does AI development take for a startup?
+A focused AI feature takes a startup roughly eight to sixteen weeks to reach a usable MVP, assuming a clear use case and a commercial model rather than a custom one. AI development for startups moves fast when scope is narrow and slow when it is not: the timeline is set by decisions, integrations, and data readiness, not by how clever the model is.
+Break the clock into phases. Discovery and scoping take one to two weeks, and rushing this is where most overruns are born. A working prototype takes two to four weeks. Hardening it into something real, with evaluation, guardrails, and monitoring, takes another four to eight. Then you are live and learning.
+Compressed discovery does not save time. It moves the delay to a worse place: the middle of the build, where changing direction costs ten times more. Consider a team that skipped scoping to hit a demo date and spent the next month rebuilding a data pipeline they could have specified in an afternoon. Slow down at the start to speed up everywhere else.
+Realistic timelines by build type
+Build type
+Typical time to MVP
+Prompt-based assistant on existing data
+4 to 8 weeks
+Retrieval (RAG) feature with your documents
+8 to 12 weeks
+AI automation inside an existing product
+8 to 14 weeks
+Predictive model on your own dataset
+10 to 16 weeks
+Fine-tuned or AI-native product
+4 to 9 months
+These are ranges, not promises. Data quality is the single biggest swing factor: clean, accessible data can halve a timeline, and messy data can double it. The model is rarely the bottleneck. Your data almost always is.
+Already know the one feature you need to prove? You can start a scoping conversation with Foundry 5 now, or keep reading to size the budget and pick the right architecture.
+How much does it cost to build an AI product?
+Most startups spend between £30,000 and £150,000 to build a first AI product, with the number driven by scope, data work, and integrations rather than the model itself. A narrow feature on a commercial LLM sits at the low end. A data-heavy predictive system or an AI-native build sits at the high end. The cost of building an AI product tracks complexity, not ambition.
+The line items that move the budget are predictable: discovery and design, data preparation, the build itself, evaluation and guardrails, and the ongoing cost of running the model. That last one surprises founders. Inference is a recurring bill, not a one-time fee, and a chatty feature with no usage limits can quietly outgrow its own value.
+For a full breakdown by feature type, our guide on the cost of building an ai product walks through each line item with real ranges. The short version: budget for the second version, not just the first. The initial build is the cheap part.
+Watch the total cost of ownership, not the sticker price. A £40,000 build that costs £8,000 a month to run is a different decision than a £70,000 build that costs £1,500. For a concrete example of scope shaping spend, our AI fintech app development case study shows how a tightly defined feature stayed affordable at scale.
+LLM, fine-tuning, or RAG: choosing the right foundation
+The architecture decision is where startups either save six figures or lose them. Most early products need a base LLM with good prompting, some need retrieval, and very few need fine-tuning. Choosing wrong here is not a rounding error: it sets your cost, your timeline, and how easily you can change direction later.
+When a base LLM is enough
+Start with a commercial model and strong prompts. For most first features, a well-designed prompt with clear instructions and a few examples outperforms a rushed fine-tune, and it ships in days rather than months. If a base model gets you 80% of the way, that is your version one. The founders who ask LLM vs fine-tuned model early usually discover the base model was enough all along.
+When RAG beats fine-tuning
+When your product needs to answer from your own knowledge, reach for retrieval, not fine-tuning. Retrieval-augmented generation feeds the model your live documents at query time, so answers stay current and you avoid retraining every time your data changes. Our explainer on RAG architecture explained covers the mechanics, but the rule of thumb is simple: fine-tune to change how the model behaves, use RAG to change what it knows.
+Fine-tuning earns its place later, when you have real usage data and a specific behaviour the base model cannot reach. It is a version-three tool, not a version-one one. Reach for it when the evidence demands it, not when the pitch deck does.
+Get a straight answer on your AI build
+If the build, skip, and timeline calls above match what you are weighing, the next step is a short scoping call with Foundry 5, our London AI development studio : no pitch deck, no commitment, just a direct read on scope, cost, and feasibility. Book a free discovery call and it takes two minutes to schedule.
+Building responsibly and briefing your developer
+An AI feature that is fast, cheap, and reckless is not a shortcut. It is a lawsuit waiting for a trigger. Responsible AI development means naming, before launch, how the system can fail, who it can harm, and what happens when it is wrong. For a startup that is not bureaucracy. It is risk management on a budget.
+The stakes are real, and buyers now ask about them. McKinsey reports that 65% of organizations regularly use generative AI , which means your customers are also fielding questions about accuracy, privacy, and bias. A product that can answer those questions wins deals that a black box loses. Practical responsible AI development is a sales asset, not a tax.
+The other half of a good outcome is the brief. Vague inputs produce vague builds, and most AI overruns trace back to a founder who could not say precisely what success looked like. Learning how to brief an ai developer is the highest-leverage hour a non-technical founder can spend. Name the user, the task, the metric, and the failure you fear most.
+Ask any prospective partner five questions: How do you scope? How do you evaluate accuracy? What guardrails ship in version one? Who owns the data? What does support look like after launch? The answers reveal operating culture faster than any portfolio. Demand specifics, not reassurance.
+Frequently Asked Questions
+Is AI development for startups worth it before product-market fit?
+Usually not as a standalone bet, but often yes as a sharp feature inside a product users already want. Foundry 5 advises startups to use AI development for startups to deepen an existing value, not to manufacture demand that is not there. CB Insights found 42% of startups fail from no market need, so prove the need first, then add intelligence to it.
+Should a startup build its own AI model or use an existing one?
+Almost always use an existing commercial model first. Building a custom foundation model at seed stage is expensive, slow, and rarely more accurate than a well-prompted commercial model for a narrow task. Reserve custom or fine-tuned models for later, once real usage data proves the base model cannot reach the behaviour you need.
+How much should a first AI product cost?
+Most first AI products cost between £30,000 and £150,000, driven by scope, data work, and integrations rather than the model. A prompt-based feature sits at the low end and a data-heavy predictive or AI-native build sits at the high end. Always budget for the recurring cost of running the model, not just the one-time build.
+What is the difference between RAG and fine-tuning?
+RAG feeds a model your live documents at query time to change what it knows, while fine-tuning retrains the model to change how it behaves. Most startups need RAG, because their real need is answering from their own data. Fine-tuning is a later-stage tool for specific behaviours a base model cannot reach.
+How long does it take to launch an AI feature?
+A focused AI feature typically reaches a usable MVP in eight to sixteen weeks with a clear use case and a commercial model. Data quality is the biggest swing factor: clean data can halve the timeline and messy data can double it. Discovery and scoping should take one to two weeks and should never be skipped.
+Conclusion: build the smallest thing that proves the idea
+AI development for startups rewards restraint, not ambition. The teams that win pick one painful problem, build the smallest feature that solves it, and ship it in weeks rather than quarters. Foundry 5 builds AI development for startups on that principle: prove one thing, measure it, then earn the right to build the next thing.
+Remember the shape of the decision. Build the one feature a user would pay for. Skip the infrastructure that does not shorten the path to revenue. Expect eight to sixteen weeks and a budget that respects the second version, not just the first. The model is the easy part. The scope is the whole game.
+If you are a startup or growth-stage founder weighing an AI build and you want a partner who stays after launch, book a free 30-minute discovery call with Foundry 5 . No pitch deck. No pressure. Just a direct read on what to build, what to skip, and how long it takes.
+Build less. Prove more. Ship the machine, not the monument.
+
+## full_text
+
+Table of Contents
+Why most startup AI projects die before launch
+What is AI development for startups, really?
+What should a startup build first with AI?
+What should a startup skip for now?
+How long does AI development take for a startup?
+How much does it cost to build an AI product?
+LLM, fine-tuning, or RAG: choosing the right foundation
+Building responsibly and briefing your developer
+Frequently Asked Questions
+Conclusion: build the smallest thing that proves the idea
+Quick answer: Foundry 5 approaches AI development for startups as a scoping problem first and a coding problem second: build one AI feature that a real user pays for, skip the rest, and expect a working MVP in eight to sixteen weeks. Gartner predicts at least 30% of generative AI projects are abandoned after proof of concept, almost always over scope, not the model.
+You have a demo that impressed three people and a Slack channel full of AI ideas. You also have a runway that shrinks every month and a board that wants to see something real. AI development for startups lives right on that fault line: build too much and you burn the runway, build too little and the demo never becomes a product.
+The pressure is not imaginary. Gartner predicts at least 30% of generative AI projects will be abandoned after proof of concept by the end of 2025, most of them for reasons that have nothing to do with the model and everything to do with unclear value and runaway scope. That is not a technology failure. It is a planning failure.
+Most of that waste is a decision problem, not an engineering problem, which is why the sharpest founders treat this as tech strategy for non-technical founders long before it becomes a codebase. This guide covers the three decisions that actually move the outcome: what to build, what to skip, and how long each realistic path takes.
+Why most startup AI projects die before launch
+Most startup AI projects do not fail at deployment. They fail at the whiteboard, where a founder confuses an impressive feature with a viable product. The pattern repeats across pre-seed and Series A teams: a broad AI vision, no single user who would pay for it, and a build that quietly balloons for six months.
+The data backs the pattern. CB Insights found that 42% of startups fail because there is no market need for what they built. Bolt an AI layer onto a product nobody wanted and you have not fixed the problem. You have made it more expensive to discover.
+Consider a two-founder team that raised £600,000 and spent five months training a custom model to summarize legal documents. It worked. It also served a workflow their target customers already handled with a junior paralegal and a template. The model was excellent. The demand was not there. That is the quiet crisis in startup AI: technically strong builds aimed at problems the market does not feel.
+The fix is not more caution. It is sharper sequencing: prove one painful problem, build the smallest thing that solves it, and only then decide what comes next. Build the machine that earns revenue, not the monument that earns compliments.
+What is AI development for startups, really?
+AI development for startups is the disciplined process of shipping a narrow, useful AI feature inside a real product, then improving it with live usage data. Foundry 5 defines AI development for startups by what it excludes as much as what it includes: one high-value use case, one measurable outcome, and one honest timeline, rather than a platform that tries to be everything on day one.
+This matters because the phrase gets stretched until it means nothing. For an early-stage team it is not research. It is not a science project. It is product work with a probabilistic component: a feature that reads, writes, classifies, or predicts, wrapped in the same engineering discipline as any other part of your stack.
+Picture the difference in practice. One startup says it is doing AI development because it added a chatbot that answers from a help doc. Another says the same because it is building an autonomous agent that negotiates contracts. Both are real work. Only one is a sensible first build for a company with eighteen months of runway.
+The best early AI work is boring on the surface and valuable underneath. It removes a specific manual step, saves a specific hour, or closes a specific gap. Everything else is a roadmap item, not a launch requirement.
+What should a startup build first with AI?
+A startup should build the single AI feature that a real user would pay for today, and nothing else in version one. In practice that means one of three things: an assistant that answers from your own data, a workflow that automates a repetitive task, or a prediction that improves a decision your users already make. Ship one. Measure it. Then expand.
+The mistake is treating AI as a feature buffet. Founders list twelve capabilities and try to build all of them thin. The result is a product that does many things badly and nothing well enough to charge for. Depth in one feature beats breadth across ten.
+The three AI features worth building early
+The strongest first builds share a shape: narrow scope, obvious value, and a metric you can watch move. A retrieval assistant grounded in your customer’s documents. An automation that turns a two-hour manual task into a two-minute review. A predictive score that ranks leads, flags churn risk, or estimates a delivery time. Each solves one problem completely.
+Whichever you pick, tie it to a number before a line of code is written. If the feature cannot name the hour it saves or the conversion it lifts, it is not ready to build. It is ready to interview more users.
+Integration or AI-native: which fits your stage?
+Most startups do not need to be AI-native on day one. They need to add intelligence to a product that already has users. The distinction between AI integration vs AI-native decides your architecture, your cost, and your timeline. If you already have traction, the fastest path is usually to add AI to an existing web app rather than rebuild the product around a model.
+Go AI-native only when the intelligence is the product, not a feature of it. A tool where the model is the core value, where every screen depends on it, earns a ground-up build. A CRM that adds smart summaries does not. Match the ambition to the stage, not to the pitch deck.
+What should a startup skip for now?
+Skip everything that does not shorten the path to a paying user. For most startups that means no custom foundation model, no fine-tuning in version one, no multi-agent orchestration, and no in-house ML infrastructure. These are real capabilities. They are also the fastest way to spend a year building plumbing instead of product.
+The temptation is understandable. Training your own model sounds like a moat. In reality, at seed stage it is usually a liability: expensive to build, expensive to maintain, and rarely better than a well-prompted commercial model for a narrow task. The moat is your data and your distribution, not your weights.
+Here is a candid concession. Some startups genuinely should build heavy infrastructure early: a team with rare proprietary data, deep ML expertise on staff, and a use case where accuracy is the entire business. If that is you, ignore this section. If it is not, and it usually is not, defer the hard infrastructure until a real bottleneck forces the decision.
+Use the table below as a first-pass filter. It is not a law. It is a way to keep version one honest.
+Build now
+Skip until it hurts
+One retrieval assistant grounded in your own data
+A custom foundation model trained from scratch
+A single automation that removes a manual task
+Multi-agent systems that coordinate autonomously
+A prediction that improves one existing decision
+Fine-tuning before you have real usage data
+Commercial LLM plus prompt engineering and guardrails
+In-house GPU infrastructure and MLOps tooling
+Analytics that prove the feature is used
+A general-purpose AI platform with ten features
+How long does AI development take for a startup?
+A focused AI feature takes a startup roughly eight to sixteen weeks to reach a usable MVP, assuming a clear use case and a commercial model rather than a custom one. AI development for startups moves fast when scope is narrow and slow when it is not: the timeline is set by decisions, integrations, and data readiness, not by how clever the model is.
+Break the clock into phases. Discovery and scoping take one to two weeks, and rushing this is where most overruns are born. A working prototype takes two to four weeks. Hardening it into something real, with evaluation, guardrails, and monitoring, takes another four to eight. Then you are live and learning.
+Compressed discovery does not save time. It moves the delay to a worse place: the middle of the build, where changing direction costs ten times more. Consider a team that skipped scoping to hit a demo date and spent the next month rebuilding a data pipeline they could have specified in an afternoon. Slow down at the start to speed up everywhere else.
+Realistic timelines by build type
+Build type
+Typical time to MVP
+Prompt-based assistant on existing data
+4 to 8 weeks
+Retrieval (RAG) feature with your documents
+8 to 12 weeks
+AI automation inside an existing product
+8 to 14 weeks
+Predictive model on your own dataset
+10 to 16 weeks
+Fine-tuned or AI-native product
+4 to 9 months
+These are ranges, not promises. Data quality is the single biggest swing factor: clean, accessible data can halve a timeline, and messy data can double it. The model is rarely the bottleneck. Your data almost always is.
+Already know the one feature you need to prove? You can start a scoping conversation with Foundry 5 now, or keep reading to size the budget and pick the right architecture.
+How much does it cost to build an AI product?
+Most startups spend between £30,000 and £150,000 to build a first AI product, with the number driven by scope, data work, and integrations rather than the model itself. A narrow feature on a commercial LLM sits at the low end. A data-heavy predictive system or an AI-native build sits at the high end. The cost of building an AI product tracks complexity, not ambition.
+The line items that move the budget are predictable: discovery and design, data preparation, the build itself, evaluation and guardrails, and the ongoing cost of running the model. That last one surprises founders. Inference is a recurring bill, not a one-time fee, and a chatty feature with no usage limits can quietly outgrow its own value.
+For a full breakdown by feature type, our guide on the cost of building an ai product walks through each line item with real ranges. The short version: budget for the second version, not just the first. The initial build is the cheap part.
+Watch the total cost of ownership, not the sticker price. A £40,000 build that costs £8,000 a month to run is a different decision than a £70,000 build that costs £1,500. For a concrete example of scope shaping spend, our AI fintech app development case study shows how a tightly defined feature stayed affordable at scale.
+LLM, fine-tuning, or RAG: choosing the right foundation
+The architecture decision is where startups either save six figures or lose them. Most early products need a base LLM with good prompting, some need retrieval, and very few need fine-tuning. Choosing wrong here is not a rounding error: it sets your cost, your timeline, and how easily you can change direction later.
+When a base LLM is enough
+Start with a commercial model and strong prompts. For most first features, a well-designed prompt with clear instructions and a few examples outperforms a rushed fine-tune, and it ships in days rather than months. If a base model gets you 80% of the way, that is your version one. The founders who ask LLM vs fine-tuned model early usually discover the base model was enough all along.
+When RAG beats fine-tuning
+When your product needs to answer from your own knowledge, reach for retrieval, not fine-tuning. Retrieval-augmented generation feeds the model your live documents at query time, so answers stay current and you avoid retraining every time your data changes. Our explainer on RAG architecture explained covers the mechanics, but the rule of thumb is simple: fine-tune to change how the model behaves, use RAG to change what it knows.
+Fine-tuning earns its place later, when you have real usage data and a specific behaviour the base model cannot reach. It is a version-three tool, not a version-one one. Reach for it when the evidence demands it, not when the pitch deck does.
+Get a straight answer on your AI build
+If the build, skip, and timeline calls above match what you are weighing, the next step is a short scoping call with Foundry 5, our London AI development studio : no pitch deck, no commitment, just a direct read on scope, cost, and feasibility. Book a free discovery call and it takes two minutes to schedule.
+Building responsibly and briefing your developer
+An AI feature that is fast, cheap, and reckless is not a shortcut. It is a lawsuit waiting for a trigger. Responsible AI development means naming, before launch, how the system can fail, who it can harm, and what happens when it is wrong. For a startup that is not bureaucracy. It is risk management on a budget.
+The stakes are real, and buyers now ask about them. McKinsey reports that 65% of organizations regularly use generative AI , which means your customers are also fielding questions about accuracy, privacy, and bias. A product that can answer those questions wins deals that a black box loses. Practical responsible AI development is a sales asset, not a tax.
+The other half of a good outcome is the brief. Vague inputs produce vague builds, and most AI overruns trace back to a founder who could not say precisely what success looked like. Learning how to brief an ai developer is the highest-leverage hour a non-technical founder can spend. Name the user, the task, the metric, and the failure you fear most.
+Ask any prospective partner five questions: How do you scope? How do you evaluate accuracy? What guardrails ship in version one? Who owns the data? What does support look like after launch? The answers reveal operating culture faster than any portfolio. Demand specifics, not reassurance.
+Frequently Asked Questions
+Is AI development for startups worth it before product-market fit?
+Usually not as a standalone bet, but often yes as a sharp feature inside a product users already want. Foundry 5 advises startups to use AI development for startups to deepen an existing value, not to manufacture demand that is not there. CB Insights found 42% of startups fail from no market need, so prove the need first, then add intelligence to it.
+Should a startup build its own AI model or use an existing one?
+Almost always use an existing commercial model first. Building a custom foundation model at seed stage is expensive, slow, and rarely more accurate than a well-prompted commercial model for a narrow task. Reserve custom or fine-tuned models for later, once real usage data proves the base model cannot reach the behaviour you need.
+How much should a first AI product cost?
+Most first AI products cost between £30,000 and £150,000, driven by scope, data work, and integrations rather than the model. A prompt-based feature sits at the low end and a data-heavy predictive or AI-native build sits at the high end. Always budget for the recurring cost of running the model, not just the one-time build.
+What is the difference between RAG and fine-tuning?
+RAG feeds a model your live documents at query time to change what it knows, while fine-tuning retrains the model to change how it behaves. Most startups need RAG, because their real need is answering from their own data. Fine-tuning is a later-stage tool for specific behaviours a base model cannot reach.
+How long does it take to launch an AI feature?
+A focused AI feature typically reaches a usable MVP in eight to sixteen weeks with a clear use case and a commercial model. Data quality is the biggest swing factor: clean data can halve the timeline and messy data can double it. Discovery and scoping should take one to two weeks and should never be skipped.
+Conclusion: build the smallest thing that proves the idea
+AI development for startups rewards restraint, not ambition. The teams that win pick one painful problem, build the smallest feature that solves it, and ship it in weeks rather than quarters. Foundry 5 builds AI development for startups on that principle: prove one thing, measure it, then earn the right to build the next thing.
+Remember the shape of the decision. Build the one feature a user would pay for. Skip the infrastructure that does not shorten the path to revenue. Expect eight to sixteen weeks and a budget that respects the second version, not just the first. The model is the easy part. The scope is the whole game.
+If you are a startup or growth-stage founder weighing an AI build and you want a partner who stays after launch, book a free 30-minute discovery call with Foundry 5 . No pitch deck. No pressure. Just a direct read on what to build, what to skip, and how long it takes.
+Build less. Prove more. Ship the machine, not the monument.
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 97
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":17250,"paragraph_count":95,"sentence_count":193,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   AI Development for Startups: Build, Skip, Timeline AI Development → Web Development → Mobile Apps → MVP Development → UX/UI Design → Custom Build → Let's Talk contact@foundry5.com| 0203 1938 835 London, UK07:29 AM Socials // FOUNDRY5 Development # AI Development for Startups: What to Bu... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=capital_startup
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=high
+   Table of Contents Why most startup AI projects die before launch What is AI development for startups, really?
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   What should a startup build first with AI?
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   What should a startup skip for now?
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   How long does AI development take for a startup?
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   How much does it cost to build an AI product?
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 5, 0203, 1938, 835, 07, 29, 30%, 2025
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: AI Development for Startups: Build, Skip, Timeline AI Development → Web Development → Mobile Apps → MVP Development → UX/UI Design → Custom Build → Let's Talk contact@foundry5.com| 0203 1938 835 London, UK07:29 AM Socials // FOUNDRY5 Development # AI Development for Startups: What to Bu... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=capital_startup / Table of Contents Why most startup AI projects die before launch What is AI development for startups, really? / What should a startup build first with AI?
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+AI Development for Startups: Build, Skip, Timeline AI Development → Web Development → Mobile Apps → MVP Development → UX/UI Design → Custom Build → Let's Talk contact@foundry5.com| 0203 1938 835 London, UK07:29 AM Socials // FOUNDRY5 Development # AI Development for Startups: What to Bu... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
