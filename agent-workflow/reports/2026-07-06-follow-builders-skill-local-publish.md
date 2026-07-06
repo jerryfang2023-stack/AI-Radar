@@ -11,4 +11,13 @@
 - obsidian_sync_added: 25
 - obsidian_sync_groups: 17
 - obsidian_sync_files: 17
+- publish_status: published
+- publish_error: ""
+- pr_number: 218
+- pr_url: https://github.com/jerryfang2023-stack/AI-Radar/pull/218
+- merge_status: merged
+- merged_at: 2026-07-06T08:12:08Z
+- merge_commit: f48d2b7cff1cf11d1625e6ae096ba58ae0bf8f60
+- pages_run: https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28777389150
+- pages_status: success
 - hermes_record: agent-workflow/reports/2026-07-06-follow-builders-skill-local-publish.md
