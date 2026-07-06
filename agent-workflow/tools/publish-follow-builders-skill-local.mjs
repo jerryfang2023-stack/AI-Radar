@@ -141,7 +141,9 @@ function sameDatePublishAlreadyHealthy() {
     fields.obsidian_sync_files,
   ].every((value) => value !== undefined && Number.isFinite(Number(value)));
 
-  return fields.publish_status !== "failed"
+  return Boolean(fields.publish_status)
+    && fields.publish_status !== "failed"
+    && fields.publish_error !== undefined
     && reportCount > 0
     && outputCount > 0
     && reportCount === outputCount
@@ -316,6 +318,8 @@ function main() {
     `- obsidian_sync_added: ${obsidianSync.added ?? 0}`,
     `- obsidian_sync_groups: ${obsidianSync.groups ?? 0}`,
     `- obsidian_sync_files: ${Array.isArray(obsidianSync.files) ? obsidianSync.files.length : 0}`,
+    "- publish_status: generated",
+    '- publish_error: ""',
     `- hermes_record: ${rel(reportFile)}`,
   ]);
 
@@ -372,6 +376,19 @@ function main() {
   if (merge && !merged) {
     throw new Error(`follow-builders skill PR #${pr.number} was opened but not merged within ${pollSeconds}s: ${pr.url}`);
   }
+
+  appendReport([
+    "",
+    "## Publication Closure",
+    "",
+    `- publish_status: ${merge ? "published" : "generated"}`,
+    '- publish_error: ""',
+    `- pr_number: ${pr.number || ""}`,
+    `- pr_url: ${pr.url || ""}`,
+    `- merge_status: ${mergeStatus}`,
+    `- merged_at: ${merged?.mergedAt || ""}`,
+    `- merge_commit: ${merged?.mergeCommit?.oid || ""}`,
+  ]);
 
   if (merge && originalBranch === "main") {
     const status = run("git", ["status", "--porcelain"]);
