@@ -36,3 +36,9 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 
 - Enterprise AI / FDE is an independent implementation lens, not a fourth Business Signal Card type. FDE may share Business Signals Raw capture and Pool evidence, but its frontstage uses the independent `enterpriseAiFdePool` / `enterprise-ai-fde.json` lens pool.
 - FDE lens-only evidence must not weaken formal product / service, funding, or case Card gates. FDE lens entries must hide backend fields, keep concrete implementation evidence, and get Chinese-facing title/fact fields from Raw / Card / FDE asset generation rather than generic frontstage blocking.
+
+## AI Hardware Lens Boundary
+
+- AI hardware investment, scenario/service, and trend/innovation news should be monitored through a separate Business Signals lens (`aiHardwareSignals`) rather than being forced into the main active-date Card mix. Formal Cards remain limited to product / service, funding, and case.
+- Source-only hardware artifacts may feed the separate AI Hardware observation lens when they have source URL, title, and commercial-event evidence, but they must be marked `ai_hardware_lens_only` and must not bypass Raw / Pool / Card gates to become formal Cards.
+- Hardware queries must reject social/profile posts, broad company lists, market reports, forecasts, and generic rankings. Prefer single-company financing, customer deployment, procurement/contract, product availability, supply/capacity, data-center, server, chip, accelerator, HBM, packaging, cooling, edge-device, robotics, or manufacturing-capacity events.

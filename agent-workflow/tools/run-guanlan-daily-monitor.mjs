@@ -965,6 +965,17 @@ function importanceProfile(item = {}, bodyText = "") {
   if (/case study|customer story|customer case|customer adopts|customer adoption|design partner|pilot|production rollout|客户案例|客户采用|标杆客户|真实客户|试点|上线客户|行业客户/iu.test(text)) {
     add("important_case", /fortune|global 500|enterprise|银行|医院|制造|金融|医疗|法律|大型企业|头部客户/iu.test(text) ? 5 : 4, "real customer or adoption case");
   }
+  const aiHardwareSignal =
+    /\b(ai hardware|ai chip|ai accelerator|inference chip|gpu cluster|ai server|ai data center|ai factory|semiconductor|hbm|advanced packaging|liquid cooling|edge ai device|on-device ai hardware|robotics hardware|humanoid robot)\b|AI硬件|AI芯片|AI加速器|推理芯片|GPU集群|AI服务器|AI数据中心|AI工厂|半导体|高带宽内存|先进封装|液冷|端侧AI设备|机器人硬件|人形机器人/iu.test(text);
+  const aiHardwareCommercialEvent =
+    aiHardwareSignal
+    && /\b(raises?|raised|funding|financing|series|seed|investment|launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|customer|deployment|procurement|contract|partnership|manufacturing capacity|supply agreement|factory|data center|server|cluster)\b|融资|投资|发布|推出|客户|部署|采购|合同|合作|产能|供应|工厂|数据中心|服务器|集群/iu.test(text);
+  if (aiHardwareSignal) {
+    support("ai_hardware_lens");
+  }
+  if (aiHardwareCommercialEvent && /customer|deployment|procurement|contract|factory|warehouse|hospital|manufacturing|retail|industrial|客户|部署|采购|合同|工厂|仓储|医院|制造|零售|工业/iu.test(text)) {
+    add("important_vertical_solution", /production|enterprise|contract|procurement|data center|factory|客户|生产|企业|合同|采购|数据中心|工厂/iu.test(text) ? 5 : 4, "AI hardware scenario or service deployment");
+  }
   const automotiveRolloutOnly =
     /(tesla|特斯拉|fsd|autopilot|自动驾驶|智驾|robotaxi|汽车|车主|车辆|整车)/iu.test(text)
     && /(立陶宛|欧洲|欧盟|车型认证|型式认证|监管|推送|上线|订阅|车主|道路|驾驶员|l2)/iu.test(text)
@@ -985,17 +996,17 @@ function importanceProfile(item = {}, bodyText = "") {
   if (concreteFundingEvent && !oldFundingBackground && !fundingNoise) {
     add("important_funding", /\$|million|billion|估值|yc|y combinator|a16z|sequoia|benchmark|知名机构|亿美元|千万美元/iu.test(text) ? 5 : 4, "funding or investment event");
   }
-  if (/model release|new model|benchmark|evals?|inference|reasoning|multimodal|agent architecture|mcp|protocol|open[-\s]?source|paper|research|模型发布|新模型|基准|评测|推理|多模态|智能体架构|开源|论文|技术趋势/iu.test(text)) {
-    add("important_technical_trend", /breakthrough|state-of-the-art|sota|major|frontier|openai|anthropic|google|deepmind|meta|nvidia|突破|前沿|重大/iu.test(text) ? 5 : 4, "technical trend or capability shift");
+  if (/model release|new model|benchmark|evals?|inference|reasoning|multimodal|agent architecture|mcp|protocol|open[-\s]?source|paper|research|模型发布|新模型|基准|评测|推理|多模态|智能体架构|开源|论文|技术趋势/iu.test(text) || aiHardwareSignal) {
+    add("important_technical_trend", /breakthrough|state-of-the-art|sota|major|frontier|openai|anthropic|google|deepmind|meta|nvidia|AI hardware|AI chip|AI accelerator|GPU|HBM|semiconductor|突破|前沿|重大|AI硬件|AI芯片|AI加速器|半导体/iu.test(text) ? 5 : 4, aiHardwareSignal ? "AI hardware capability or supply shift" : "technical trend or capability shift");
   }
   if (/launch(?:es|ed|ing)?|release(?:s|d)?|introduc(?:e|es|ed|ing)|new product|new service|new api|sdk|platform|general availability|推出|发布|上线|新产品|新服务|新 api|平台|正式可用/iu.test(text)) {
     const teaserOnly = /(预告|将于|即将|亮相|teaser|coming soon|showcase|海报)/iu.test(text) && !/(customer|客户|production|部署|正式可用|general availability|api|sdk|pricing|定价|规格|benchmark|评测)/iu.test(text);
-    add("important_product_or_service", teaserOnly ? 3 : /openai|anthropic|google|microsoft|aws|nvidia|salesforce|servicenow|major|enterprise|developer platform|大厂|平台级|企业级/iu.test(text) ? 5 : 4, teaserOnly ? "product teaser without enough launch evidence" : "new product or service");
+    add("important_product_or_service", teaserOnly ? 3 : /openai|anthropic|google|microsoft|aws|nvidia|salesforce|servicenow|major|enterprise|developer platform|AI hardware|AI chip|AI accelerator|AI server|edge AI device|大厂|平台级|企业级|AI硬件|AI芯片|AI加速器|AI服务器/iu.test(text) ? 5 : 4, teaserOnly ? "product teaser without enough launch evidence" : (aiHardwareSignal ? "AI hardware product or service" : "new product or service"));
   }
   const marketStructureEvent =
     /\b(acquires?|acquired|acquisition|merger|buyout|strategic partnership|partners? with|collaborates? with|procurement|tender|rfp|contract|pricing|price increase|price cut|rate limit|billing change|regulatory approval|clearance|antitrust|lawsuit|settlement)\b|收购|并购|合并|战略合作|合作伙伴|采购|招标|投标|合同|签约|定价|价格|计费|监管批准|审批|反垄断|诉讼|和解/iu.test(text);
   const marketStructureBusinessContext =
-    /\b(AI|agent|agentic|model|platform|cloud|enterprise|customer|workflow|developer|API|SDK|SaaS|inference|data center|GPU)\b|人工智能|模型|平台|企业|客户|工作流|开发者|算力|数据中心/iu.test(text);
+    /\b(AI|agent|agentic|model|platform|cloud|enterprise|customer|workflow|developer|API|SDK|SaaS|inference|data center|GPU|AI hardware|AI chip|AI accelerator|semiconductor|server|cluster)\b|人工智能|模型|平台|企业|客户|工作流|开发者|算力|数据中心|AI硬件|AI芯片|AI加速器|半导体|服务器|集群/iu.test(text);
   const marketStructureNoise =
     /\b(opinion|analysis|analyst|market map|roundup|guide|tutorial|what is|why we built)\b|观点|评论|研报|指南|教程|清单|榜单/iu.test(text);
   if (marketStructureEvent && marketStructureBusinessContext && !marketStructureNoise) {
@@ -3225,6 +3236,13 @@ const keywordSearchPaths = [
     querySuffix: "(FDE OR \"forward deployed\" OR \"applied AI\" OR \"customer engineering\" OR \"technical scoping\" OR \"production rollout\" OR \"pilot customer\" OR \"customer story\" OR \"case study\")",
   },
   {
+    id: "ai_hardware_original",
+    label: "AI hardware original-source path",
+    role: "find AI hardware investment, scenario deployment and compute-infrastructure innovation from original or high-signal sources",
+    method: "ddg",
+    querySuffix: "(AI hardware OR AI chip OR accelerator OR GPU cluster OR AI server OR AI data center OR edge AI device OR robotics hardware OR semiconductor OR HBM OR launch OR funding OR customer OR deployment OR procurement)",
+  },
+  {
     id: "procurement_marketplace",
     label: "采购 / 招投标 / Marketplace 路径",
     role: "find procurement, marketplace, app store and job signal",
@@ -3263,6 +3281,12 @@ function selectQueriesForPath(allQueries, pathConfig) {
     const dedicated = fdeQueries.filter((query) => query.query_theme === "enterprise-ai-implementation-signal");
     const fallback = fdeQueries.filter((query) => query.query_theme !== "enterprise-ai-implementation-signal");
     if (fdeQueries.length) return [...dedicated, ...fallback].slice(0, limit);
+  }
+  if (pathConfig.id === "ai_hardware_original") {
+    const hardwareQueries = allQueries.filter((query) => /AI hardware|AI chip|AI accelerator|inference chip|GPU cluster|AI server|AI data center|AI factory|semiconductor|HBM|edge AI|on-device AI hardware|robotics hardware|humanoid robot/iu.test(query.query || ""));
+    const dedicated = hardwareQueries.filter((query) => /ai-hardware-/iu.test(query.query_theme || ""));
+    const fallback = hardwareQueries.filter((query) => !/ai-hardware-/iu.test(query.query_theme || ""));
+    if (hardwareQueries.length) return [...dedicated, ...fallback].slice(0, Math.min(limit, 3));
   }
   const byTheme = new Map();
   for (const query of allQueries) {
@@ -3303,6 +3327,12 @@ function keywordSearchResultPreGate(result = {}, queryConfig = {}, pathConfig = 
   const configuredNoise = Array.isArray(rawEntryPolicy.noise_terms) ? rawEntryPolicy.noise_terms : [];
   const noiseHit = configuredNoise.find((term) => text.includes(String(term).toLowerCase()));
   if (noiseHit && !trustedEnterpriseAiOrgSignal) return { keep: false, reason: `noise_term:${noiseHit}` };
+  if (/linkedin\.com|facebook\.com|instagram\.com|x\.com|twitter\.com/iu.test(url)) {
+    return { keep: false, reason: "social_or_profile_source" };
+  }
+  if (/\b(list of|top \d+|leading .* companies|best .* startups|market size|market report|forecast|tracker|roundup)\b|榜单|清单|市场规模|预测|报告/iu.test(text)) {
+    return { keep: false, reason: "broad_list_or_market_report" };
+  }
 
   if (/iciba\.com|youdao\.com|dict\.cn|dictionary|translation|pronunciation|是什么意思|翻译|音标|读音|例句/iu.test(text)) {
     return { keep: false, reason: "dictionary_or_translation_page" };

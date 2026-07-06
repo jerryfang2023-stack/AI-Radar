@@ -5,7 +5,7 @@
     "businessSignalsColumnVersion": "BSIG-V2",
     "enterpriseAiLensVersion": "EAI-V1.2.0-raw-card-ingestion-boundary",
     "intelligenceMapColumnVersion": "IMAP-V2.0.0-report-center-opportunity-system",
-    "generatedAt": "2026-07-06T04:35:45.329Z",
+    "generatedAt": "2026-07-06T05:39:23.965Z",
     "activeDate": "2026-07-06",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -55,6 +55,7 @@
     "relationshipEdges": 33,
     "relationshipClusters": 3,
     "enterpriseAiTransformation": 0,
+    "aiHardwareSignals": 5,
     "tagAssociations": 8,
     "trendLinks": 16,
     "trendCandidates": 0
@@ -80,6 +81,13 @@
       "SIG-20260706-A09"
     ],
     "enterpriseAiTransformationCardIds": [],
+    "aiHardwareSignalIds": [
+      "AIHW-2026-07-06-P-069",
+      "AIHW-2026-07-06-P-085",
+      "AIHW-SRC-2026-07-06-1",
+      "AIHW-SRC-2026-07-06-2",
+      "AIHW-SRC-2026-07-06-3"
+    ],
     "largeCompanyCards": [
       {
         "id": "SIG-20260706-A06",
@@ -975,6 +983,320 @@
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": false
+    }
+  ],
+  "aiHardwareSignals": [
+    {
+      "id": "AIHW-2026-07-06-P-069",
+      "type": "ai_hardware_lens_item",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "trend_innovation",
+      "hardwareTrackLabel": "趋势创新",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "HBM 之父金正浩：AI 核心竞争力正从 GPU 转向内存，未来将演进至 3D 复合架构",
+      "displayTitle": "HBM 之父金正浩：AI 核心竞争力正从 GPU 转向内存，未来将演进至 3D 复合架构",
+      "originalTitle": "",
+      "sourceTitle": "HBM 之父金正浩：AI 核心竞争力正从 GPU 转向内存，未来将演进至 3D 复合架构",
+      "date": "2026-07-06",
+      "subject": "HBM 之父金正浩",
+      "source": "ithome.com",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/972/872.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [
+        "track-ai-infra"
+      ],
+      "displayTags": [
+        {
+          "id": "ai-hardware",
+          "label": "AI Hardware"
+        },
+        {
+          "id": "trend_innovation",
+          "label": "趋势创新"
+        }
+      ],
+      "summary": "韩国科学技术院教授金正浩近日称，AI 核心竞争力正从 GPU 转向内存。GPU 在推理中利用率仅 10%-30%，因每次计算需从 HBM 读写数据。未来技术包括：堆叠 NAND 闪存的 HBF（10 年后需求超 HBM）、采用 SRAM 的 HBS（容量可达 1600GB），以及由 HBM、HBF、HBS 组合的约 100 层 3D 复合架构。",
+      "translatedFact": "韩国科学技术院教授金正浩近日称，AI 核心竞争力正从 GPU 转向内存。GPU 在推理中利用率仅 10%-30%，因每次计算需从 HBM 读写数据。未来技术包括：堆叠 NAND 闪存的 HBF（10 年后需求超 HBM）、采用 SRAM 的 HBS（容量可达 1600GB），以及由 HBM、HBF、HBS 组合的约 100 层 3D 复合架构。",
+      "originalHighlights": [
+        "韩国科学技术院教授金正浩近日称，AI 核心竞争力正从 GPU 转向内存。GPU 在推理中利用率仅 10%-30%，因每次计算需从 HBM 读写数据。未来技术包括：堆叠 NAND 闪存的 HBF（10 年后需求超 HBM）、采用 SRAM 的 HBS（容量可达 1600GB），以及由 HBM、HBF、HBS 组合的约 100 层 3D 复合架构。"
+      ],
+      "visibleFragment": "韩国科学技术院教授金正浩近日称，AI 核心竞争力正从 GPU 转向内存。GPU 在推理中利用率仅 10%-30%，因每次计算需从 HBM 读写数据。未来技术包括：堆叠 NAND 闪存的 HBF（10 年后需求超 HBM）、采用 SRAM 的 HBS（容量可达 1600GB），以及由 HBM、HBF、HBS 组合的约 100 层 3D 复合架构。",
+      "sourceLinks": [
+        "https://www.ithome.com/0/972/872.htm"
+      ],
+      "status": "pooled",
+      "promotionStatus": "ai_hardware_lens_only",
+      "evidenceGate": "core_evidence_candidate",
+      "poolRoutes": [
+        "watchlist"
+      ],
+      "frontstageRankScore": 1040,
+      "frontstageEditorialScore": 1040,
+      "frontstageEvidenceScore": 49,
+      "frontstageSelectionReasons": [
+        "AI hardware lens",
+        "趋势创新"
+      ],
+      "frontstageValueDescription": "AI hardware lens item preserved separately from the main Business Signals Card list.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "sourceRef": "P-069",
+      "titleZh": "",
+      "titleTranslationStatus": "not_required",
+      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis"
+    },
+    {
+      "id": "AIHW-2026-07-06-P-085",
+      "type": "ai_hardware_lens_item",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "trend_innovation",
+      "hardwareTrackLabel": "趋势创新",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "三星电子 Q2 营业利润预计同比暴涨 18 倍，AI 存储芯片需求持续引爆业绩",
+      "displayTitle": "三星电子 Q2 营业利润预计同比暴涨 18 倍，AI 存储芯片需求持续引爆业绩",
+      "originalTitle": "",
+      "sourceTitle": "三星电子 Q2 营业利润预计同比暴涨 18 倍，AI 存储芯片需求持续引爆业绩",
+      "date": "2026-07-06",
+      "subject": "未标注主体",
+      "source": "ithome.com",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/972/890.htm",
+      "sourceLevel": "B",
+      "importanceScore": 2,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [
+        "track-ai-infra"
+      ],
+      "displayTags": [
+        {
+          "id": "ai-hardware",
+          "label": "AI Hardware"
+        },
+        {
+          "id": "trend_innovation",
+          "label": "趋势创新"
+        }
+      ],
+      "summary": "受 AI 产业扩张拉动存储芯片供给紧张、价格走高，三星电子第二季度营业利润预计同比暴涨约 18 倍至 86 万亿韩元（约 3786.58 亿元人民币），连续三个季度刷新纪录。DRAM 和 NAND 闪存平均售价环比分别大涨 44% 和 53%。分析师提示奖金计提或影响业绩，AI 基础设施投资可持续性是最大隐患；摩根大通预计 AI 存储在云资本开支中占比今年达 52%，明年或超 70%。手机业务成本攀升，下半年大概率再度涨价。",
+      "translatedFact": "受 AI 产业扩张拉动存储芯片供给紧张、价格走高，三星电子第二季度营业利润预计同比暴涨约 18 倍至 86 万亿韩元（约 3786.58 亿元人民币），连续三个季度刷新纪录。DRAM 和 NAND 闪存平均售价环比分别大涨 44% 和 53%。分析师提示奖金计提或影响业绩，AI 基础设施投资可持续性是最大隐患；摩根大通预计 AI 存储在云资本开支中占比今年达 52%，明年或超 70%。手机业务成本攀升，下半年大概率再度涨价。",
+      "originalHighlights": [
+        "受 AI 产业扩张拉动存储芯片供给紧张、价格走高，三星电子第二季度营业利润预计同比暴涨约 18 倍至 86 万亿韩元（约 3786.58 亿元人民币），连续三个季度刷新纪录。DRAM 和 NAND 闪存平均售价环比分别大涨 44% 和 53%。分析师提示奖金计提或影响业绩，AI 基础设施投资可持续性是最大隐患；摩根大通预计 AI 存储在云资本开支中占比今年达 52%，明年或超 70%。手机业务成本攀升，下半年大概率再度涨价。"
+      ],
+      "visibleFragment": "受 AI 产业扩张拉动存储芯片供给紧张、价格走高，三星电子第二季度营业利润预计同比暴涨约 18 倍至 86 万亿韩元（约 3786.58 亿元人民币），连续三个季度刷新纪录。DRAM 和 NAND 闪存平均售价环比分别大涨 44% 和 53%。分析师提示奖金计提或影响业绩，AI 基础设施投资可持续性是最大隐患；摩根大通预计 AI 存储在云资本开支中占比今年达 52%，明年或超 70%。手机业务成本攀升，下半年大概率再度涨价。",
+      "sourceLinks": [
+        "https://www.ithome.com/0/972/890.htm"
+      ],
+      "status": "pooled",
+      "promotionStatus": "ai_hardware_lens_only",
+      "evidenceGate": "core_evidence_candidate",
+      "poolRoutes": [],
+      "frontstageRankScore": 580,
+      "frontstageEditorialScore": 580,
+      "frontstageEvidenceScore": 67,
+      "frontstageSelectionReasons": [
+        "AI hardware lens",
+        "趋势创新"
+      ],
+      "frontstageValueDescription": "AI hardware lens item preserved separately from the main Business Signals Card list.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "sourceRef": "P-085",
+      "titleZh": "",
+      "titleTranslationStatus": "not_required",
+      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis"
+    },
+    {
+      "id": "AIHW-SRC-2026-07-06-1",
+      "type": "ai_hardware_source_artifact_item",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "investment_funding",
+      "hardwareTrackLabel": "投资融资",
+      "category": "funding",
+      "categoryLabel": "投资融资",
+      "title": "Startup Oxmiq raises $35 million to build chip architecture to lower ...",
+      "displayTitle": "Startup Oxmiq raises $35 million to build chip architecture to lower ...",
+      "originalTitle": "Startup Oxmiq raises $35 million to build chip architecture to lower ...",
+      "sourceTitle": "Startup Oxmiq raises $35 million to build chip architecture to lower ...",
+      "date": "2026-07-06",
+      "subject": "Startup Oxmiq",
+      "source": "finance.yahoo.com",
+      "sourceName": "finance.yahoo.com",
+      "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/startup-oxmiq-raises-35-million-131735379.html",
+      "sourceLevel": "",
+      "importanceScore": 4,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [
+        "track-ai-infra"
+      ],
+      "displayTags": [
+        {
+          "id": "ai-hardware",
+          "label": "AI Hardware"
+        },
+        {
+          "id": "investment_funding",
+          "label": "投资融资"
+        }
+      ],
+      "summary": "Artificial intelligence startup Oxmiq said on Wednesday it raised $35 million from investors in order ‌to build chip design architecture and ... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=ai_hardware_original",
+      "translatedFact": "Artificial intelligence startup Oxmiq said on Wednesday it raised $35 million from investors in order ‌to build chip design architecture and ... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=ai_hardware_original",
+      "originalHighlights": [
+        "Artificial intelligence startup Oxmiq said on Wednesday it raised $35 million from investors in order ‌to build chip design architecture and ... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=ai_hardware_original"
+      ],
+      "visibleFragment": "Artificial intelligence startup Oxmiq said on Wednesday it raised $35 million from investors in order ‌to build chip design architecture and ... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=ai_hardware_original",
+      "sourceLinks": [
+        "https://finance.yahoo.com/technology/ai/articles/startup-oxmiq-raises-35-million-131735379.html"
+      ],
+      "status": "source_artifact",
+      "promotionStatus": "ai_hardware_lens_only",
+      "evidenceGate": "source_artifact_observation_only",
+      "poolRoutes": [],
+      "frontstageRankScore": 520,
+      "frontstageEditorialScore": 520,
+      "frontstageEvidenceScore": 30,
+      "frontstageSelectionReasons": [
+        "AI hardware source artifact",
+        "投资融资"
+      ],
+      "frontstageValueDescription": "AI hardware source-only item preserved for the separate hardware lens; not promoted to the main Card list.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "sourceRef": "source-artifact"
+    },
+    {
+      "id": "AIHW-SRC-2026-07-06-2",
+      "type": "ai_hardware_source_artifact_item",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "trend_innovation",
+      "hardwareTrackLabel": "趋势创新",
+      "category": "product-service",
+      "categoryLabel": "趋势创新",
+      "title": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch",
+      "displayTitle": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch",
+      "originalTitle": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch",
+      "sourceTitle": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch",
+      "date": "2026-07-06",
+      "subject": "Nvidia competitor Etched hits",
+      "source": "techcrunch.com",
+      "sourceName": "techcrunch.com",
+      "sourceUrl": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
+      "sourceLevel": "",
+      "importanceScore": 4,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [
+        "track-ai-infra"
+      ],
+      "displayTags": [
+        {
+          "id": "ai-hardware",
+          "label": "AI Hardware"
+        },
+        {
+          "id": "trend_innovation",
+          "label": "趋势创新"
+        }
+      ],
+      "summary": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch Image Credits:Etched AI Copy Share Link # Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip Julie Bort 11:13 AM PDT · June 30, 2026 Copy Share Link Nvidia AI chip competitor Etched issued a... / query=AI chip startup...",
+      "translatedFact": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch Image Credits:Etched AI Copy Share Link # Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip Julie Bort 11:13 AM PDT · June 30, 2026 Copy Share Link Nvidia AI chip competitor Etched issued a... / query=AI chip startup...",
+      "originalHighlights": [
+        "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch Image Credits:Etched AI Copy Share Link # Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip Julie Bort 11:13 AM PDT · June 30, 2026 Copy Share Link Nvidia AI chip competitor Etched issued a... / query=AI chip startup..."
+      ],
+      "visibleFragment": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch Image Credits:Etched AI Copy Share Link # Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip Julie Bort 11:13 AM PDT · June 30, 2026 Copy Share Link Nvidia AI chip competitor Etched issued a... / query=AI chip startup...",
+      "sourceLinks": [
+        "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/"
+      ],
+      "status": "source_artifact",
+      "promotionStatus": "ai_hardware_lens_only",
+      "evidenceGate": "source_artifact_observation_only",
+      "poolRoutes": [],
+      "frontstageRankScore": 519,
+      "frontstageEditorialScore": 519,
+      "frontstageEvidenceScore": 30,
+      "frontstageSelectionReasons": [
+        "AI hardware source artifact",
+        "趋势创新"
+      ],
+      "frontstageValueDescription": "AI hardware source-only item preserved for the separate hardware lens; not promoted to the main Card list.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "sourceRef": "source-artifact"
+    },
+    {
+      "id": "AIHW-SRC-2026-07-06-3",
+      "type": "ai_hardware_source_artifact_item",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "investment_funding",
+      "hardwareTrackLabel": "投资融资",
+      "category": "funding",
+      "categoryLabel": "投资融资",
+      "title": "Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund",
+      "displayTitle": "Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund",
+      "originalTitle": "Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund",
+      "sourceTitle": "Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund",
+      "date": "2026-07-06",
+      "subject": "Nvidia rival Etched",
+      "source": "thenextweb.com",
+      "sourceName": "thenextweb.com",
+      "sourceUrl": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+      "sourceLevel": "",
+      "importanceScore": 4,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [
+        "track-ai-infra"
+      ],
+      "displayTags": [
+        {
+          "id": "ai-hardware",
+          "label": "AI Hardware"
+        },
+        {
+          "id": "investment_funding",
+          "label": "投资融资"
+        }
+      ],
+      "summary": "Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund #### TL;DR AI chip startup Etched has raised $800M backed by Jane Street and a TSMC-linked fund, with one billion dollars in sales contracts and summer shipments planned. AI chip startup Etched has raised $800 m... / query=AI chip st...",
+      "translatedFact": "Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund #### TL;DR AI chip startup Etched has raised $800M backed by Jane Street and a TSMC-linked fund, with one billion dollars in sales contracts and summer shipments planned. AI chip startup Etched has raised $800 m... / query=AI chip st...",
+      "originalHighlights": [
+        "Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund #### TL;DR AI chip startup Etched has raised $800M backed by Jane Street and a TSMC-linked fund, with one billion dollars in sales contracts and summer shipments planned. AI chip startup Etched has raised $800 m... / query=AI chip st..."
+      ],
+      "visibleFragment": "Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund #### TL;DR AI chip startup Etched has raised $800M backed by Jane Street and a TSMC-linked fund, with one billion dollars in sales contracts and summer shipments planned. AI chip startup Etched has raised $800 m... / query=AI chip st...",
+      "sourceLinks": [
+        "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip"
+      ],
+      "status": "source_artifact",
+      "promotionStatus": "ai_hardware_lens_only",
+      "evidenceGate": "source_artifact_observation_only",
+      "poolRoutes": [],
+      "frontstageRankScore": 518,
+      "frontstageEditorialScore": 518,
+      "frontstageEvidenceScore": 30,
+      "frontstageSelectionReasons": [
+        "AI hardware source artifact",
+        "投资融资"
+      ],
+      "frontstageValueDescription": "AI hardware source-only item preserved for the separate hardware lens; not promoted to the main Card list.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "sourceRef": "source-artifact"
     }
   ],
   "cards": [

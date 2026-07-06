@@ -238,12 +238,27 @@
       ...(state.payload.cards || []),
       ...(state.payload.enterpriseAiFdePool || []),
       ...(state.payload.enterpriseAiLensCandidates || []),
+      ...(state.payload.aiHardwareSignals || []),
     ].find((item) => item.id === id || item.linkedCardId === id);
   }
 
   function findEnterpriseAiItem(id = "") {
     return enterpriseAiTransformationItems()
       .find((item) => item.id === id || item.cardId === id || item.linkedCardId === id);
+  }
+
+  function aiHardwareItems() {
+    const date = selectedDate();
+    const items = Array.isArray(state.payload?.aiHardwareSignals)
+      ? state.payload.aiHardwareSignals
+      : [];
+    return items
+      .filter((item) => item.date === date)
+      .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.id || "").localeCompare(String(b.id || "")));
+  }
+
+  function findAiHardwareItem(id = "") {
+    return aiHardwareItems().find((item) => item.id === id || item.linkedCardId === id);
   }
 
   function sourceText(card) {
@@ -492,6 +507,83 @@
         renderDetail(card);
         return;
       }
+    };
+  }
+
+  function renderAiHardwareDetail(item = {}) {
+    const root = $("[data-detail-content]");
+    const dialog = $("[data-detail-dialog]");
+    if (!root || !dialog) return;
+    root.innerHTML = `
+      <h2 class="detail-title">${safe(item.title || cardDisplayTitle(item))}</h2>
+      <div class="detail-source-row">
+        <span>${safe(item.hardwareTrackLabel || "AI Hardware")} · ${safe(fmtDate(item.date || selectedDate()))}</span>
+        <strong>${safe(item.subject || item.sourceName || "AI hardware signal")}</strong>
+        ${item.sourceUrl ? `<a href="${safe(item.sourceUrl)}" target="_blank" rel="noreferrer">查看原文</a>` : ""}
+      </div>
+      <div class="detail-fact-card">
+        <h3>硬件商业事件</h3>
+        <p>${safe(factText(item))}</p>
+      </div>
+      <div class="detail-main-grid">
+        <div class="detail-block">
+          <h3>观察分组</h3>
+          <p>${safe(item.hardwareTrackLabel || "趋势创新")}</p>
+        </div>
+        <div class="detail-block">
+          <h3>展示边界</h3>
+          <p>${safe(item.promotionStatus === "ai_hardware_lens_only" ? "该条保留在 AI 硬件观察模块，不进入当前正式 Card 混排。" : "该条已有正式 Card，同时被 AI 硬件观察模块引用。")}</p>
+        </div>
+        <div class="detail-block">
+          <h3>来源</h3>
+          <p>${safe(item.sourceName || item.sourceUrl || "公开来源")}</p>
+        </div>
+        <div class="detail-block">
+          <h3>证据片段</h3>
+          <p>${safe(visibleFragmentText(item, [factText(item)]) || item.visibleFragment || item.summary || "原文未提供更多可公开展示片段。")}</p>
+        </div>
+      </div>
+    `;
+    dialog.showModal();
+  }
+
+  function renderAiHardwareSignals() {
+    const root = $("[data-ai-hardware-signals]");
+    if (!root) return;
+    const items = aiHardwareItems();
+    const count = $("[data-ai-hardware-count]");
+    if (count) count.textContent = `${items.length} 条`;
+    root.innerHTML = items.length ? `
+      <div class="enterprise-ai-list-head" aria-hidden="true">
+        <span>事件</span>
+        <span>硬件线索</span>
+        <span>分组</span>
+        <span>入口</span>
+      </div>
+      ${items.map((item) => {
+        const fact = factText(item);
+        return `
+        <article class="enterprise-ai-card ai-hardware-card">
+          <div class="enterprise-ai-title-block">
+            <h3>${safe(item.title || cardDisplayTitle(item))}</h3>
+          </div>
+          <p class="enterprise-ai-cell" data-label="硬件线索">${safe(fact)}</p>
+          <div class="enterprise-ai-tag-list" data-label="分组">
+            <span class="enterprise-ai-stage">${safe(item.hardwareTrackLabel || "趋势创新")}</span>
+            <span>${safe(item.promotionStatus === "ai_hardware_lens_only" ? "独立观察" : "已关联 Card")}</span>
+          </div>
+          <div class="enterprise-ai-actions">
+            <button class="detail-link" type="button" data-open-ai-hardware-detail="${safe(item.id)}">详情</button>
+            ${item.sourceUrl ? `<a class="detail-link" href="${safe(item.sourceUrl)}" target="_blank" rel="noreferrer">原文</a>` : ""}
+          </div>
+        </article>
+      `}).join("")}
+    ` : "<div class=\"empty-state\">等待今日 AI 硬件投资、场景服务或趋势创新信号形成。</div>";
+    root.onclick = (event) => {
+      const detailButton = event.target.closest("[data-open-ai-hardware-detail]");
+      if (!detailButton) return;
+      const item = findAiHardwareItem(detailButton.dataset.openAiHardwareDetail);
+      if (item) renderAiHardwareDetail(item);
     };
   }
 
@@ -1868,6 +1960,7 @@
     renderStats();
     renderTable(cards);
     renderList(cards);
+    renderAiHardwareSignals();
     renderEnterpriseAiTransformation();
     renderRelationshipLinks();
     renderTrendCandidates();

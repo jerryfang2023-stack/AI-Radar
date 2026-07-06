@@ -9,6 +9,7 @@ const siteDataDir = path.join(root, "01-SiteV2", "site", "data");
 const outputFile = path.join(siteDataDir, "v3-data-observation-desk.json");
 const intelligenceGraphIndexFile = path.join(siteDataDir, "intelligence-graph-index.json");
 const enterpriseAiFdeFile = path.join(siteDataDir, "enterprise-ai-fde.json");
+const reportsRoot = path.join(root, "agent-workflow", "reports");
 const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
 const siteVersion = "SITE-V3.4.3";
 const businessSignalsColumnVersion = "BSIG-V2";
@@ -2708,6 +2709,242 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
     .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.sourceRef || a.id).localeCompare(String(b.sourceRef || b.id)));
 }
 
+function aiHardwareText(item = {}) {
+  return [
+    item.title,
+    item.displayTitle,
+    item.originalTitle,
+    item.sourceTitle,
+    item.rawTitle,
+    item.subject,
+    item.sourceName,
+    item.sourceUrl,
+    item.summary,
+    item.translatedFact,
+    item.visibleFragment,
+    ...(item.originalHighlights || []),
+  ].filter(Boolean).join(" ");
+}
+
+function isAiHardwareSignalText(text = "") {
+  return /\b(ai hardware|ai chip|ai accelerator|inference chip|gpu cluster|ai server|ai data center|ai factory|semiconductor|hbm|advanced packaging|liquid cooling|edge ai device|on-device ai hardware|robotics hardware|humanoid robot)\b|AI硬件|AI芯片|AI加速器|推理芯片|GPU集群|AI服务器|AI数据中心|AI工厂|半导体|高带宽内存|先进封装|液冷|端侧AI设备|机器人硬件|人形机器人/iu.test(text);
+}
+
+function hasAiHardwareCommercialEvidence(text = "") {
+  return isAiHardwareSignalText(text)
+    && /\b(raises?|raised|funding|financing|series|seed|investment|launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|customer|deployment|procurement|contract|partnership|manufacturing capacity|supply agreement|factory|data center|server|cluster)\b|融资|投资|发布|推出|客户|部署|采购|合同|合作|产能|供应|工厂|数据中心|服务器|集群/iu.test(text);
+}
+
+function aiHardwareTrack(text = "") {
+  if (/\b(profit|earnings|demand|supply|capacity|manufacturing|shipment|supply chain|hbm|memory|advanced packaging|liquid cooling)\b|利润|需求|供应|产能|制造|出货|供应链|高带宽内存|先进封装|液冷/iu.test(text)
+    && !/\b(raises?|raised|funding|financing|series|seed)\b|融资|种子轮|A轮|B轮/iu.test(text)) {
+    return { id: "trend_innovation", label: "趋势创新" };
+  }
+  if (/\b(raises?|raised|funding|financing|series|seed|investment|venture|capital)\b|融资|投资|种子轮|A轮|B轮/iu.test(text)) {
+    return { id: "investment_funding", label: "投资融资" };
+  }
+  if (/\b(customer|deployment|procurement|contract|case study|production|factory|warehouse|hospital|manufacturing|retail|industrial)\b|客户|部署|采购|合同|案例|生产|工厂|仓储|医院|制造|零售|工业/iu.test(text)) {
+    return { id: "scenario_service", label: "场景服务" };
+  }
+  return { id: "trend_innovation", label: "趋势创新" };
+}
+
+function aiHardwareSourceArtifactItems(activeDate = "") {
+  const sourceRoot = path.join(reportsRoot, "source-runs");
+  if (!fs.existsSync(sourceRoot)) return [];
+  const dirs = fs.readdirSync(sourceRoot, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && entry.name.startsWith(activeDate))
+    .map((entry) => path.join(sourceRoot, entry.name));
+  const items = [];
+  for (const dir of dirs) {
+    for (const file of fs.readdirSync(dir).filter((name) => /raw-source-candidates\.json$/iu.test(name))) {
+      let payload = {};
+      try {
+        payload = JSON.parse(read(path.join(dir, file)));
+      } catch {
+        payload = {};
+      }
+      const candidates = Array.isArray(payload.items) ? payload.items : Array.isArray(payload.candidates) ? payload.candidates : [];
+      items.push(...candidates);
+    }
+  }
+  return items;
+}
+
+function buildAiHardwareSignals(cards = [], activeDate = "") {
+  const cardItems = cards
+    .filter((card) => card.date === activeDate && hasAiHardwareCommercialEvidence(aiHardwareText(card)))
+    .map((card) => {
+      const track = aiHardwareTrack(aiHardwareText(card));
+      return {
+        ...card,
+        id: `AIHW-CARD-${card.id}`,
+        linkedCardId: card.id,
+        lensType: "ai_hardware",
+        hardwareTrack: track.id,
+        hardwareTrackLabel: track.label,
+        promotionStatus: card.promotionStatus || "promoted_to_signal_card",
+        sourceRef: card.sourceRef || "",
+        frontstageRankScore: (Number(card.frontstageRankScore) || 0) + 80,
+      };
+    });
+  const cardsByUrl = new Map(cardItems.map((item) => [canonicalUrl(item.sourceUrl), item]).filter(([url]) => url));
+  const poolItems = poolCandidateSectionsForDate(activeDate)
+    .filter((section) => {
+      if (poolValue(section, "raw_qc_decision") && poolValue(section, "raw_qc_decision") !== "allow") return false;
+      if (/community|social/iu.test(poolValue(section, "source_type"))) return false;
+      if (isSocialOrCommunitySourceUrl(poolValue(section, "source_url"))) return false;
+      const text = [
+        poolTitle(section),
+        poolValue(section, "source_url"),
+        poolValue(section, "source"),
+        poolValue(section, "search_path"),
+        poolValue(section, "search_intent"),
+        poolValue(section, "keyword_group"),
+        poolValue(section, "theme"),
+        poolValue(section, "key_excerpts"),
+        poolValue(section, "evidence_seed"),
+        poolValue(section, "missing_information"),
+      ].filter(Boolean).join(" ");
+      return hasAiHardwareCommercialEvidence(text);
+    })
+    .map((section) => {
+      const ref = poolRef(section);
+      const sourceUrl = poolValue(section, "source_url");
+      const card = cardsByUrl.get(canonicalUrl(sourceUrl));
+      if (card) return card;
+      const rawTitle = poolTitle(section);
+      const fact = poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
+      const title = publicTitleCandidate(rawTitle, sourceUrl);
+      const track = aiHardwareTrack([rawTitle, fact, sourceUrl].join(" "));
+      const importanceScore = Number(poolValue(section, "importance_score")) || 0;
+      const score = Number(poolValue(section, "score")) || 0;
+      const category = poolCandidateCategory(section);
+      const poolRoutes = frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes")));
+      const item = {
+        id: `AIHW-${activeDate}-${ref}`,
+        type: "ai_hardware_lens_item",
+        lensType: "ai_hardware",
+        hardwareTrack: track.id,
+        hardwareTrackLabel: track.label,
+        category,
+        categoryLabel: categoryLabels[category] || category,
+        title,
+        displayTitle: title,
+        originalTitle: rawTitle === title ? "" : rawTitle,
+        sourceTitle: rawTitle,
+        rawTitle,
+        date: activeDate,
+        subject: frontstageCandidateSubject(sourceUrl, rawTitle, title, poolValue(section, "source")),
+        source: domain(sourceUrl) || poolValue(section, "source"),
+        sourceName: domain(sourceUrl) || poolValue(section, "source"),
+        sourceUrl,
+        sourceLevel: poolValue(section, "source_level"),
+        importanceScore,
+        publishedAt: "",
+        tags: {},
+        flatTags: ["track-ai-infra"],
+        displayTags: sanitizeDisplayTags([{ id: "ai-hardware", label: "AI Hardware" }, { id: track.id, label: track.label }]),
+        summary: fact,
+        translatedFact: fact,
+        originalHighlights: [fact].filter(Boolean),
+        visibleFragment: fact,
+        sourceLinks: [sourceUrl].filter(Boolean),
+        status: "pooled",
+        promotionStatus: "ai_hardware_lens_only",
+        evidenceGate: poolValue(section, "evidence_level") || "ai_hardware_source_evidence",
+        poolRoutes,
+        frontstageRankScore: score * 100 + importanceScore * 10 + 220,
+        frontstageEditorialScore: score * 100 + importanceScore * 10 + 220,
+        frontstageEvidenceScore: Number(poolValue(section, "readability_score")) || 0,
+        frontstageSelectionReasons: ["AI hardware lens", track.label],
+        frontstageValueDescription: "AI hardware lens item preserved separately from the main Business Signals Card list.",
+        frontstageQualityWarnings: [],
+        frontstageGenericCandidate: false,
+        fromCorePool: poolRoutes.includes("core_pool"),
+        sourceRef: ref,
+        ...poolIngestionBoundaryFields(section, fact, rawTitle),
+      };
+      return hasSourceBackedFrontstageFact(item) ? item : null;
+    })
+    .filter(Boolean);
+  const sourceArtifactItems = aiHardwareSourceArtifactItems(activeDate)
+    .filter((candidate) => {
+      const text = [
+        candidate.title,
+        candidate.summary,
+        candidate.snippet,
+        candidate.url,
+        candidate.query_theme,
+        candidate.keyword_group,
+        candidate.search_path,
+      ].filter(Boolean).join(" ");
+      if (/linkedin\.com|facebook\.com|instagram\.com|x\.com|twitter\.com/iu.test(String(candidate.url || ""))) return false;
+      if (/\b(list of|top \d+|leading .* companies|best .* startups|market size|market report|forecast|tracker|roundup)\b|榜单|清单|市场规模|预测|报告/iu.test(text)) return false;
+      return hasAiHardwareCommercialEvidence(text);
+    })
+    .map((candidate, index) => {
+      const title = publicTitleCandidate(candidate.title || candidate.original_title || "", candidate.url || "")
+        || String(candidate.title || candidate.original_title || "").trim();
+      const fact = short([candidate.summary, candidate.snippet].filter(Boolean).join(" "), 320);
+      const track = aiHardwareTrack([candidate.title, fact, candidate.url].join(" "));
+      const item = {
+        id: `AIHW-SRC-${activeDate}-${index + 1}`,
+        type: "ai_hardware_source_artifact_item",
+        lensType: "ai_hardware",
+        hardwareTrack: track.id,
+        hardwareTrackLabel: track.label,
+        category: track.id === "investment_funding" ? "funding" : track.id === "scenario_service" ? "case" : "product-service",
+        categoryLabel: track.label,
+        title,
+        displayTitle: title,
+        originalTitle: candidate.title || "",
+        sourceTitle: candidate.title || "",
+        date: activeDate,
+        subject: frontstageCandidateSubject(candidate.url || "", candidate.title || "", title, candidate.source || ""),
+        source: domain(candidate.url || "") || candidate.source || "",
+        sourceName: domain(candidate.url || "") || candidate.source || "",
+        sourceUrl: candidate.url || "",
+        sourceLevel: candidate.source_level || "",
+        importanceScore: 4,
+        publishedAt: candidate.published_at || candidate.publishedAt || "",
+        tags: {},
+        flatTags: ["track-ai-infra"],
+        displayTags: sanitizeDisplayTags([{ id: "ai-hardware", label: "AI Hardware" }, { id: track.id, label: track.label }]),
+        summary: fact,
+        translatedFact: fact,
+        originalHighlights: [fact].filter(Boolean),
+        visibleFragment: fact,
+        sourceLinks: [candidate.url].filter(Boolean),
+        status: "source_artifact",
+        promotionStatus: "ai_hardware_lens_only",
+        evidenceGate: "source_artifact_observation_only",
+        poolRoutes: [],
+        frontstageRankScore: 520 - index,
+        frontstageEditorialScore: 520 - index,
+        frontstageEvidenceScore: 30,
+        frontstageSelectionReasons: ["AI hardware source artifact", track.label],
+        frontstageValueDescription: "AI hardware source-only item preserved for the separate hardware lens; not promoted to the main Card list.",
+        frontstageQualityWarnings: [],
+        frontstageGenericCandidate: false,
+        fromCorePool: false,
+        sourceRef: "source-artifact",
+      };
+      return title && item.sourceUrl && fact ? item : null;
+    })
+    .filter(Boolean);
+  const byKey = new Map();
+  for (const item of [...cardItems, ...poolItems, ...sourceArtifactItems]) {
+    const key = canonicalUrl(item.sourceUrl) || item.linkedCardId || item.id;
+    const current = byKey.get(key);
+    if (!current || (Number(item.frontstageRankScore) || 0) > (Number(current.frontstageRankScore) || 0)) byKey.set(key, item);
+  }
+  return [...byKey.values()]
+    .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.id).localeCompare(String(b.id)))
+    .slice(0, 8)
+    .map(({ rawTitle, ...item }) => item);
+}
+
 function cardFromFile(file, category) {
   const text = read(file);
   if (publicTextLooksGarbled(text)) return null;
@@ -3847,6 +4084,7 @@ function buildIntelligenceGraphIndex(payload = {}) {
   const frontstageCardIds = new Set(todayFrontstageCards.map((card) => card.id));
   const coreSignalCards = allCards.filter((card) => card.date === activeDate && (card.fromCorePool || (card.poolRoutes || []).includes("core_pool")));
   const enterpriseAiTransformation = payload.enterpriseAiTransformation || [];
+  const aiHardwareSignals = payload.aiHardwareSignals || [];
   const tagAssociations = payload.tagAssociations || [];
   const relationshipDirections = payload.relationshipDirections || [];
   const trendLinks = payload.trendLinks || [];
@@ -3895,6 +4133,7 @@ function buildIntelligenceGraphIndex(payload = {}) {
       relationshipEdges: payload.relationshipGraph?.edgeCount || payload.relationshipGraph?.edges?.length || 0,
       relationshipClusters: relationshipDirections.length,
       enterpriseAiTransformation: enterpriseAiTransformation.length,
+      aiHardwareSignals: aiHardwareSignals.length,
       tagAssociations: tagAssociations.length,
       trendLinks: trendLinks.length,
       trendCandidates: (payload.trendCandidates || []).length,
@@ -3903,12 +4142,14 @@ function buildIntelligenceGraphIndex(payload = {}) {
       frontstageCardIds: [...frontstageCardIds],
       coreSignalCardIds: coreSignalCards.map((card) => card.linkedCardId || card.id),
       enterpriseAiTransformationCardIds: enterpriseAiTransformation.map((item) => item.cardId).filter(Boolean),
+      aiHardwareSignalIds: aiHardwareSignals.map((item) => item.linkedCardId || item.id).filter(Boolean),
       largeCompanyCards: todayFrontstageCards
         .filter((card) => card.largeVendor)
         .map((card) => ({ id: card.id, vendor: card.largeVendorKey, title: card.title })),
       categoryStats: payload.stats || [],
     },
     todayFrontstageCards: todayFrontstageCards.map(graphIndexCard),
+    aiHardwareSignals,
     cards: allCards.map(graphIndexCard),
     coreSignalCards: coreSignalCards.map(graphIndexCard),
     graph: {
@@ -4006,6 +4247,7 @@ const enterpriseAiFdePool = buildEnterpriseAiFdePoolItems(cards, activeDate)
   .filter((card) => !isWeakSubject(card.subject));
 const enterpriseAiTransformation = buildEnterpriseAiTransformation(enterpriseAiFdePool, [], activeDate);
 const publicEnterpriseAiFdePool = enterpriseAiFdePool.map(({ rawTitle, ...item }) => item);
+const aiHardwareSignals = buildAiHardwareSignals(cards, activeDate);
 const trendAssets = buildTrendAssets(activeDate, allBusinessSignalCards);
 const payload = {
   meta: {
@@ -4039,6 +4281,7 @@ const payload = {
   enterpriseAiFdePool: publicEnterpriseAiFdePool,
   enterpriseAiLensCandidates,
   enterpriseAiTransformation,
+  aiHardwareSignals,
   frontstageSelection: frontstageSelection.reports,
   relationshipDirections: buildRelationshipDirections(allBusinessSignalCards, activeDate),
   relationshipGraph: buildRelationshipGraph(allBusinessSignalCards, activeDate),

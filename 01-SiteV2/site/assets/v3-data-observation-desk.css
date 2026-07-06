@@ -1566,6 +1566,24 @@ button {
   background: rgba(255, 255, 255, .76);
 }
 
+.ai-hardware-section {
+  border-color: rgba(45, 95, 120, .18);
+  background:
+    linear-gradient(135deg, rgba(229, 238, 232, .62), rgba(255, 255, 255, .82)),
+    var(--paper);
+}
+
+.ai-hardware-card {
+  background:
+    linear-gradient(90deg, rgba(228, 239, 236, .72), rgba(255, 255, 255, .82));
+}
+
+.ai-hardware-card .enterprise-ai-stage {
+  border-color: rgba(45, 95, 120, .24);
+  background: rgba(45, 95, 120, .10);
+  color: #244f5f;
+}
+
 .enterprise-ai-title-block {
   display: grid;
   min-width: 0;
