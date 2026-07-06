@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-07-02
+last_updated: 2026-07-06
 use_when:
   - task startup
   - page change
@@ -18,14 +18,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.4.3-fde-ingestion-boundary |
-| Version name | Enterprise AI / FDE Ingestion Boundary Release |
+| Current version | V3.4.4-ai-hardware-lens |
+| Version name | AI Hardware Lens Release |
 | Version layer | Major |
-| Release date | 2026-07-02 |
-| Last modified at | 2026-07-02T16:45:00+08:00 |
+| Release date | 2026-07-06 |
+| Last modified at | 2026-07-06T18:21:08+08:00 |
 | Product version | V3.4 |
-| Main website version | SITE-V3.4.3 |
-| Business Signals column version | BSIG-V2 |
+| Main website version | SITE-V3.4.4 |
+| Business Signals column version | BSIG-V2.1.0-ai-hardware-lens |
 | Tag taxonomy version | TAG-V1.1.0-v34-layered-taxonomy |
 | First-Line Viewpoints column version | FLV-V1.0.2-supervision-idempotency |
 | Community Intelligence column version | CINT-V1.0.2-publication-waiting-gate |
@@ -44,7 +44,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - WaveSight AI is now a unified intelligence frontstage, not a V2 four-column content site.
 - V3.4 public frontstage has four entries: Business Signals, Reports Center, First-Line Viewpoints, and Community Intelligence.
 - Business Signals uses the Raw / Pool / Card / Relationship Graph / Trend Candidate chain.
-- Business Signals is versioned as `BSIG-V2` in this release and depends on `TAG-V1.1.0-v34-layered-taxonomy` for formal tag display filtering, aggregation suppression, and `opportunity_signals` boundary rules. Its public page presents all qualified Raw / Pool business signals that pass raw-to-card cardability as Cards in one importance-sorted view, preserves the `EAI-V1.2.0-raw-card-ingestion-boundary` secondary lens, blocks `core_pool_not_promoted` / `notPromotedIssues` items, consumer entertainment, minor platform policy/enforcement notices, monthly update roundups, explainers, analyst commentary, unclosed VC-fund formation, generic FDE role/service pages, generic funding commentary, funding roundups, broad lists, stale sources, and search-query artifacts from formal Card promotion, keeps the six formal Signal Card entry gates unchanged, treats GDELT / keyword search / RSS / AI HOT as peer source-artifact channels, and treats provider-caused Raw shortfall as diagnostic when Raw / Pool / Card supply is sufficient.
+- Business Signals is versioned as `BSIG-V2.1.0-ai-hardware-lens` in this release and depends on `TAG-V1.1.0-v34-layered-taxonomy` for formal tag display filtering, aggregation suppression, and `opportunity_signals` boundary rules. Its public page presents all qualified Raw / Pool business signals that pass raw-to-card cardability as Cards in one importance-sorted view, preserves the `EAI-V1.2.0-raw-card-ingestion-boundary` secondary lens, adds `aiHardwareSignals` as a separate lens-only module, blocks `core_pool_not_promoted` / `notPromotedIssues` items, consumer entertainment, minor platform policy/enforcement notices, monthly update roundups, explainers, analyst commentary, unclosed VC-fund formation, generic FDE role/service pages, generic funding commentary, funding roundups, broad lists, stale sources, social/profile/forum-only hardware mentions, and search-query artifacts from formal Card promotion, keeps the six formal Signal Card entry gates unchanged, treats GDELT / keyword search / RSS / AI HOT as peer source-artifact channels, and treats provider-caused Raw shortfall as diagnostic when Raw / Pool / Card supply is sufficient.
 - First-Line Viewpoints is versioned as `FLV-V1.0.2-supervision-idempotency` in this release. It keeps the morning RSS page-data lane and afternoon local `follow-builders` publish lane independent, requires Obsidian person/date timeline sync idempotency, and separates healthy local data from publication-state warnings.
 - Community Intelligence is versioned as `CINT-V1.0.2-publication-waiting-gate` in this release. It keeps logged-in local collection as the only collection route, uses GitHub only to publish already-generated validated files, and treats open PR / queued workflow states after healthy same-date data as Waiting rather than repair Problems.
 - Enterprise AI / FDE is versioned as `EAI-V1.2.0-raw-card-ingestion-boundary`. It is a frontstage interpretation and monitoring lens backed by an independent FDE Lens Pool, not a fourth Card type. English title translation and source-backed fact extraction belong to Raw / Card / FDE Lens Pool asset generation before frontstage rendering; public FDE items still require concrete implementation evidence, detail openability, and source-bounded demand / service / result analysis.
@@ -61,7 +61,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Reports Center and Dashboard follow the Business Signals data chain.
 - Reports Center is versioned independently as `IMAP-V2.0.0-report-center-opportunity-system`. It leads with Monthly / Weekly reports, renders Entry Point Map and Product Pain Map as separate full-width opportunity maps from source-backed `opportunity_signals`, opens cell evidence in a modal, and keeps relation paths as a supporting exploration section after the maps.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
-- SITE-V3.4.3 keeps the V3.4 Reports Center opportunity system and Business Signals quality boundary, while upgrading the Enterprise AI / FDE lens to use the Raw/Card/FDE asset ingestion boundary for title translation and fact extraction.
+- SITE-V3.4.4 keeps the V3.4 Reports Center opportunity system, Business Signals quality boundary, and Enterprise AI / FDE Raw/Card/FDE asset ingestion boundary while adding the separate AI Hardware observation lens for hardware funding, scenario service, and trend innovation signals.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
@@ -72,9 +72,9 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Page | File | Current Role |
 |---|---|---|
-| Business Signals | `01-SiteV2/site/v3-data-observation.html` | SITE-V3.4.3 main public page for unified daily Cards, relationship graph, trend candidates, and the Enterprise AI / FDE secondary lens |
+| Business Signals | `01-SiteV2/site/v3-data-observation.html` | SITE-V3.4.4 main public page for unified daily Cards, the separate AI Hardware lens, relationship graph, trend candidates, and the Enterprise AI / FDE secondary lens |
 | Reports Center | `01-SiteV2/site/intelligence-map.html` | Monthly / weekly report entry, source-backed Entry Point Map and Product Pain Map, click-to-open evidence modals, and relation paths |
-| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page in the unified SITE-V3.4.3 frontstage |
+| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page in the unified SITE-V3.4.4 frontstage |
 | Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community Intelligence V1.0; logged-in community cases, AI tool tactics, business opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Data Observation operations governance backend |
 | Pipeline Dashboard | `01-SiteV2/site/pipeline-dashboard.html` | Production-chain dashboard, kept |
@@ -88,7 +88,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Scope | Version | Automation status | Source | Outputs |
 |---|---|---|---|---|
 | Operations Backend / 运营大后台 | `OPS-V1.2.3-content-factory-cleanout` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Data Observation governance loop navigation, issue center, task chain, data quality, version governance, independent Skill Store, settings, and backend-facing generated ops data. Topic Center, Content Factory, Publishing Queue, and AIP topic export are retired from the operations backend. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, version ledger |
-| Business Signals / 商业信号 column | `BSIG-V2` | Published through the main GitHub Pages frontstage; presents all qualified Raw / Pool business signals that pass raw-to-card cardability as Cards and keeps the 企业AI化 secondary lens | V3.3.6.3 Card data contract plus Enterprise AI lens rendering, source-first pipeline gate, peer source-artifact selection, Raw / Pool / Card release override for provider-caused Raw shortfall, and hard rejection of backend-only / low-value AI-adjacent items from public Cards | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
+| Business Signals / 商业信号 column | `BSIG-V2.1.0-ai-hardware-lens` | Published through the main GitHub Pages frontstage; presents all qualified Raw / Pool business signals that pass raw-to-card cardability as Cards, keeps the 企业AI化 secondary lens, and adds a separate AI Hardware lens-only module | V3.3.6.3 Card data contract plus Enterprise AI lens rendering, AI Hardware source-only lens rendering, source-first pipeline gate, peer source-artifact selection, Raw / Pool / Card release override for provider-caused Raw shortfall, and hard rejection of backend-only / low-value AI-adjacent items from public Cards | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
 | Reports Center / 报告中心 column | `IMAP-V2.0.0-report-center-opportunity-system` | Published through the main GitHub Pages frontstage. Reports lead the page; Entry Point Map and Product Pain Map render as separate full-width source-backed maps; cell evidence opens in a modal; relation paths remain a supporting section. | Business Signals source-backed opportunity_signals + Weekly Business Change Radar content + Monthly Business Structure Report content + Card-derived relation paths | `intelligence-map.html`, `reports.html`, `monthly-business-structure-2026-06.html`, `weekly-ai-business-change-radar.html`, `weekly-ai-business-change-radar-2026-06-15.html`, `agent-workflow/skills/guanlan-opportunity-radar-updater/`, `01-SiteV2/content/08-report/*.md`, `01-SiteV2/content/08-report/monthly/*.md` |
 
 ## Current Enterprise AI / FDE Version
@@ -144,6 +144,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `SITE-V3.4.4-freeze-ai-hardware-lens-20260706` | Business Signals / AI Hardware lens | 2026-07-06 | 2026-07-06T18:21:08+08:00 | SITE-V3.4.4 / BSIG-V2.1.0-ai-hardware-lens | AI hardware becoming a fourth formal Card type; AI hardware source-only items entering the main Card mix without Card evidence gates; social/profile/forum-only hardware mentions, broad market lists, and search-query artifacts displayed as high-value lens items; `query_theme` alone determining funding classification; main-site or Business Signals column version drift | keyword source-only hardware run + site data build + Business frontstage gate + syntax checks + skill registry/audit |
 | `SITE-V3.4.3-freeze-enterprise-ai-fde-ingestion-boundary-20260702` | Business Signals / Enterprise AI FDE lens / Raw-Card-FDE asset boundary | 2026-07-02 | 2026-07-02T16:22:12+08:00 | SITE-V3.4.3 / EAI-V1.2.0-raw-card-ingestion-boundary | FDE title/fact gaps handled as generic frontstage suppression; source-title translation registry absence blocking formal Signal Cards; weak fact support, missing customer, missing ROI, or missing before/after workflow used as a generic frontstage blocker after FDE assets have been generated; FDE precision weakened into generic enterprise AI | site data build + source-first gate + frontstage regression + Business Signals gate + current rule hygiene + FDE Obsidian dry-run + skill registry rebuild |
 | `SITE-V3.4.2-freeze-business-signal-quality-boundary-20260702` | Business Signals / Raw-Pool-Card / Enterprise AI public payload | 2026-07-02 | 2026-07-02T12:45:00+08:00 | SITE-V3.4.2 / BSIG-V1.2.1-quality-boundary | Consumer entertainment, minor platform policy/enforcement notices, monthly update roundups, explainers, analyst commentary, unclosed VC-fund formation, or `core_pool_not_promoted` items leaking into public Business Signal Cards or Enterprise AI public candidates; old Top10 fill logic lowering Card quality | source-first frontstage gate + frontstage regression + Business Signals frontstage gate + current rule hygiene + syntax quality gate + skill memory sync |
 | `ops-v1.2.3-freeze-content-factory-cleanout-20260701` | Dashboard / Operations Backend / Automation Rules | 2026-07-01 | 2026-07-01T21:45:00+08:00 | OPS-V1.2.3-content-factory-cleanout | Topic Center data/script artifacts, Hermes topic-table input, AIP daily topic export, NotebookLM content-factory generation APIs, or content-production modules returning inside the Data Observation operations backend | ops-console data build + syntax checks + current-rule scan + frontstage regression + GitHub Pages deploy |
@@ -184,7 +185,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| SITE-V3.4.3 / BSIG-V2 / EAI-V1.2.0-raw-card-ingestion-boundary | 2026-07-02T16:45:00+08:00 | Sets the Business Signals column version label to `BSIG-V2` while keeping the SITE-V3.4.3 frontstage and Enterprise AI / FDE ingestion-boundary behavior unchanged. | current |
+| SITE-V3.4.4 / BSIG-V2.1.0-ai-hardware-lens | 2026-07-06T18:21:08+08:00 | Adds a separate AI Hardware lens under Business Signals for hardware funding, scenario service, and trend innovation signals while preserving the three formal Card types and the Enterprise AI / FDE secondary lens. | current |
+| SITE-V3.4.3 / BSIG-V2 / EAI-V1.2.0-raw-card-ingestion-boundary | 2026-07-02T16:45:00+08:00 | Sets the Business Signals column version label to `BSIG-V2` while keeping the SITE-V3.4.3 frontstage and Enterprise AI / FDE ingestion-boundary behavior unchanged. | upgraded |
 | SITE-V3.4.3 / EAI-V1.2.0-raw-card-ingestion-boundary | 2026-07-02T16:22:12+08:00 | Upgrades the Enterprise AI / FDE lens to the Raw/Card/FDE asset ingestion boundary: English title translation and source-backed fact extraction are recorded before frontstage rendering, FDE sync preserves ingestion-status metadata, and FDE precision still requires concrete implementation evidence, detail openability, and source-bounded demand / service / result analysis. | upgraded |
 | SITE-V3.4.2 / BSIG-V1.2.1-quality-boundary | 2026-07-02T12:45:00+08:00 | Hardens Business Signals quality boundaries from Raw/Pool routing through Card generation and public frontstage export: `notPromotedIssues` block public promotion, low-value AI-adjacent consumer entertainment / platform policy / roundup / explainer / analyst commentary / unclosed VC-fund items stay backend-only unless same-source concrete business evidence exists, Enterprise AI public candidates reuse the same low-value filter, retired Top10 fill memory is removed from skills, and same-date artifacts are repaired without rerunning the monitor chain. | upgraded |
 | SITE-V3.4.0 / IMAP-V2.0.0-report-center-opportunity-system | 2026-07-01T13:10:03+08:00 | Upgrades the former Intelligence Map into the Reports Center opportunity system: report-first hero, Monthly / Weekly entry cards, separate full-width Entry Point Map and Product Pain Map, click-to-open evidence modal, lower-saturation report-style palette, and relation paths as a supporting section. | upgraded |

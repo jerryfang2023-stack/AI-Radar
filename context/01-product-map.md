@@ -1,7 +1,7 @@
 ---
 status: current
 scope: product-map
-last_updated: 2026-07-02
+last_updated: 2026-07-06
 use_when:
   - product planning
   - page or navigation decisions
@@ -9,13 +9,13 @@ use_when:
 priority: current
 ---
 
-# 01 Product Map - SITE-V3.4.3
+# 01 Product Map - SITE-V3.4.4
 
 ## Current Product Structure
 
 | Module | Role | Status |
 |---|---|---|
-| Business Signals | Daily product / service, funding, and case Cards | Active frontstage |
+| Business Signals | Daily product / service, funding, and case Cards plus separate AI Hardware lens | Active frontstage |
 | First-Line Viewpoints | Builders public viewpoints, translated and organized independently | Active frontstage |
 | Relationship Graph | Visual graph built from accepted business-signal Cards | Active analysis layer |
 | Trend Candidates | Potential trend patterns based on multiple same-direction business signals | Active analysis layer |
@@ -44,10 +44,11 @@ Monitor / Search / Source discovery
 -> knowledge base
 -> relationship graph
 -> trend candidate
--> SITE-V3.4.3 frontstage / operations data
+-> SITE-V3.4.4 frontstage / operations data
 ```
 
 First-line viewpoints are built by the builders route and displayed in `follow-builders.html`. They are not mixed into the asset flow above.
+AI Hardware lens items are rendered as `aiHardwareSignals` under Business Signals. They are not a fourth Card type and must not bypass product_service / funding / case Card gates.
 
 ## Asset Boundaries
 
@@ -89,4 +90,4 @@ A Card can enter the frontstage only when it has:
 
 ## Retired Outputs
 
-Legacy content-output routes, old four-column V2 website pages, and old opinion sidebar logic are not current SITE-V3.4.3 production goals.
+Legacy content-output routes, old four-column V2 website pages, and old opinion sidebar logic are not current SITE-V3.4.4 production goals.
