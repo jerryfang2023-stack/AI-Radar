@@ -29,6 +29,7 @@ Example:
 
 | Date | Week | File |
 |---|---|---|
+| 2026-07-06 | 2026-W27 | `2026-07-06--weekly-report--ai-business-change-radar.md` |
 | 2026-06-29 | 2026-W26 | `2026-06-29--weekly-report--ai-business-change-radar.md` |
 | 2026-06-22 | 2026-W25 | `2026-06-22--weekly-report--ai-business-change-radar.md` |
 | 2026-06-15 | 2026-W24 | `2026-06-15--weekly-report--ai-business-change-radar.md` |
