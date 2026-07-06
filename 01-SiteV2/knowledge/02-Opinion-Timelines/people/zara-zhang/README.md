@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Zara Zhang"
-opinion_count: 55
-latest_date: 2026-07-04
+opinion_count: 56
+latest_date: 2026-07-05
 ---
 
 # Zara Zhang 观点时间线
-共 55 条观点，按人物 + 日期文件聚合。
+共 56 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-05](./2026-07-05.md)
 - [2026-07-04](./2026-07-04.md)
 - [2026-07-03](./2026-07-03.md)
 - [2026-07-02](./2026-07-02.md)
