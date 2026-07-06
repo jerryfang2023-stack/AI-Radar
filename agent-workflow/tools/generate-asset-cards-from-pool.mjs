@@ -1386,6 +1386,76 @@ function isTechnicalArticleWithoutBusinessEvent(section) {
   return technicalArticle && !hasConcreteFundingEvent(section) && !hasConcreteProductEvent(section) && !hasConcreteCaseEvent(section);
 }
 
+function hasNamedCommercialDeploymentEvidence(section) {
+  const text = commercialEvidenceText(section);
+  return /\b(customer story|case study|customer deployment|customer adopts?|adopted by|deployed (?:at|by|with)|used by|uses? (?:Amazon Bedrock|Claude|Glean|AI|agentic AI|machine learning)|one of (?:the )?.{0,40}\b(?:bank|hospital|retailer|manufacturer|insurer|pharma|law firm)s?\b|paid enterprise|annual recurring revenue|ARR|saved \d|reduced \d|cut \d|Bristol Myers|Navien|Aon|7-Eleven|Morgan Stanley|Pooldoktor|Yp[eê]|Linkup)\b/iu.test(text);
+}
+
+function commercialEvidenceText(section) {
+  return [
+    poolTitle(section),
+    value(section, "source"),
+    value(section, "source_url"),
+    value(section, "source_type"),
+    value(section, "key_excerpts"),
+    value(section, "evidence_seed"),
+  ].join(" ")
+    .replace(/\/\s*query=[^"'\]}]+/giu, " ")
+    .replace(/"before_after_clues"\s*:\s*\[[^\]]*\]/giu, " ")
+    .replace(/"affected_roles"\s*:\s*\[[^\]]*\]/giu, " ")
+    .replace(/"search_path"\s*:\s*"[^"]*"/giu, " ")
+    .replace(/"search_intent"\s*:\s*"[^"]*"/giu, " ");
+}
+
+function isResearchBenchmarkContext(section) {
+  const text = commercialEvidenceText(section);
+  return value(section, "research_status") === "formal_report"
+    || /\b(benchmark|benchmarks|bench|evaluation|evals?|leaderboard|paper|research|technical report|dataset|arxiv|openreview|ACL|NeurIPS|ICML|ICLR|DiscoBench|OCR|OmniDocBench|retrieval benchmark)\b/iu.test(text);
+}
+
+function hasStrictMarketStructureEvent(section) {
+  const text = commercialEvidenceText(section);
+  return /\b(acquires?|acquired|acquisition|merger|buyout|strategic partnership|partners? with|collaborates? with|procurement contract|contract award(?:ed)?|signed (?:a )?contract|tender award(?:ed)?|rfp award(?:ed)?|pricing|price increase|price cut|billing change|regulatory approval|clearance|antitrust|lawsuit|settlement)\b|鏀惰喘|骞惰喘|鍚堝苟|鎴樼暐鍚堜綔|閲囪喘鍚堝悓|涓爣|绛剧害|瀹氫环|璁¤垂|鐩戠鎵瑰噯|鍙嶅瀯鏂瓅璇夎|鍜岃В/iu.test(text);
+}
+
+function hasStrongCommercialActionEvent(section) {
+  const text = commercialEvidenceText(section);
+  if (isResearchBenchmarkContext(section)) {
+    return hasConcreteFundingEvent(section)
+      || hasStrictMarketStructureEvent(section)
+      || hasNamedCommercialDeploymentEvidence(section);
+  }
+  const commercialProductEvent = hasConcreteProductEvent(section)
+    && /\b(product|platform|API|SDK|pricing|commercial|enterprise|customer|paid|general availability|GA)\b/iu.test(text);
+  return hasConcreteFundingEvent(section)
+    || hasStrictMarketStructureEvent(section)
+    || hasNamedCommercialDeploymentEvidence(section)
+    || commercialProductEvent;
+}
+
+function isResearchBenchmarkContextWithoutCommercialEvent(section) {
+  return isResearchBenchmarkContext(section) && !hasStrongCommercialActionEvent(section);
+}
+
+function isGenericFdeExplainerOrServicePage(section) {
+  const text = commercialEvidenceText(section);
+  const genericFde = /\b(forward[- ]deployed|FDE|field engineer|applied AI implementation|implementation services|consulting services|service landing|what is|guide|playbook|field guide|role explainer|hiring|job opening)\b/iu.test(text);
+  return genericFde
+    && !hasConcreteFundingEvent(section)
+    && !hasStrictMarketStructureEvent(section)
+    && !hasNamedCommercialDeploymentEvidence(section);
+}
+
+function isSustainabilityReportWithoutCommercialAiEvent(section) {
+  const text = commercialEvidenceText(section);
+  const sustainabilityContext = /\b(environment(?:al)? report|sustainability report|carbon emissions?|renewable energy|electricity demand|energy efficiency|data center energy|ESG)\b|环境报告|用电量|碳排放|可再生能源|能源效率|数据中心能耗/iu.test(text);
+  return sustainabilityContext
+    && !hasConcreteFundingEvent(section)
+    && !hasStrictMarketStructureEvent(section)
+    && !hasNamedCommercialDeploymentEvidence(section)
+    && !/\b(product launch|platform launch|commercial launch|customer deployment|procurement contract|contract awarded|pricing|billing change)\b/iu.test(text);
+}
+
 function isWorkforceRetrainingProgram(section) {
   const text = sectionEvidenceText(section);
   return /\b(retrain(?:ing)?|reskill(?:ing)?|workforce|jobs?|employment|worker|labor|training program)\b/iu.test(text)
@@ -1409,7 +1479,7 @@ function isJobListingSection(section) {
     poolTitle(section),
     value(section, "source_url"),
   ].join(" ");
-  if (/\b(jobs\.lever\.co|greenhouse\.io|workdayjobs|ashbyhq|apply for this job|job opening|job listing|forward deployed ai engineer)\b/iu.test(titleUrl)) {
+  if (/\b(jobs\.lever\.co|greenhouse\.io|workdayjobs|ashbyhq|builtin\.com\/job|apply for this job|job opening|job listing|solutions architect|forward deployed ai engineer)\b/iu.test(titleUrl)) {
     return true;
   }
   const text = [
@@ -1490,6 +1560,15 @@ function cardabilitySemanticIssues(section) {
   }
   if (isTechnicalArticleWithoutBusinessEvent(section) && !observationSummaryEvidenceAllowed) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "technical_article_without_business_event"));
+  }
+  if (isResearchBenchmarkContextWithoutCommercialEvent(section) && !observationSummaryEvidenceAllowed) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "research_benchmark_without_commercial_event"));
+  }
+  if (isGenericFdeExplainerOrServicePage(section) && !observationSummaryEvidenceAllowed) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "generic_fde_explainer_or_service_page_without_customer_event"));
+  }
+  if (isSustainabilityReportWithoutCommercialAiEvent(section) && !observationSummaryEvidenceAllowed) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "sustainability_report_without_commercial_ai_event"));
   }
   if (isWorkforceRetrainingProgram(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "workforce_retraining_program_not_formal_signal_card"));
@@ -1659,9 +1738,8 @@ function companyFromSection(section) {
   const title = poolTitle(section);
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
-  const urlCompany = companyFromUrl(sourceUrl, title);
-  if (urlCompany) return urlCompany;
   const specialCases = [
+    [/netris/iu, "Netris"],
     [/c-h-robinson|c\.h\.\s*robinson/iu, "C.H. Robinson"],
     [/bentocloud/iu, "BentoCloud"],
     [/aws\.amazon\.com\/marketplace\/solutions\/ai-agents-and-tools|aws-partner-guide-to-ai-agents-and-tools-in-aws-marketplace/iu, "AWS Marketplace"],
@@ -1672,6 +1750,8 @@ function companyFromSection(section) {
   for (const [pattern, company] of specialCases) {
     if (pattern.test(`${title} ${text} ${sourceUrl}`)) return company;
   }
+  const urlCompany = companyFromUrl(sourceUrl, title);
+  if (urlCompany) return urlCompany;
   const interviewCompany =
     title.match(/\b([A-Z][A-Za-z0-9.& -]{1,50}?)\s+(?:Founder\/CEO|CEO|Co-?founder|Product\s*&\s*Eng\s+Leads?)\b/u)?.[1]
     || title.match(/\b(?:Founder\/CEO|CEO|Co-?founder)\s+(?:of\s+)?([A-Z][A-Za-z0-9.& -]{1,50}?)(?:\s+[A-Z][a-z]+|\s+on\b|\s*$)/u)?.[1]
@@ -1727,7 +1807,7 @@ function isSingleCompanyFundingSignal(section) {
   if (isCorporateCapexOrCommunityInvestment(section)) {
     return false;
   }
-  if (/(funding map|top ai pre-seed investors|pre-seed investors|top ai agent startups|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|funding tracker|ai agent startups insight partners funding|series-b-enterprise-ai-agents|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(sourceIdentity)) {
+  if (/(funding map|top ai pre-seed investors|pre-seed investors|top ai agent startups|hottest ai startups|coolest ai startups|startup investment surge|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|funding tracker|ai agent startups insight partners funding|series-b-enterprise-ai-agents|crn\.com\/news\/ai\/2026\/the-10-hottest-ai-startups|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(sourceIdentity)) {
     return false;
   }
   if (/\b(employee tender|tender offer|secondary sale|share buyback|commitment|committed capital|new operating business|deployment company|frontier company)\b/iu.test(haystack)) {
@@ -2022,6 +2102,10 @@ function signalPriorityScore(spec, section) {
   let score = importance * 20 + capture;
   if (spec.type === "funding" && !isLargeVendorSignal(section)) score += 35;
   if (spec.type === "case" && value(section, "importance_type") === "important_vertical_solution") score += 25;
+  if (hasNamedCommercialDeploymentEvidence(section)) score += 35;
+  if (hasStrictMarketStructureEvent(section)) score += 25;
+  if (isResearchBenchmarkContextWithoutCommercialEvent(section)) score -= 60;
+  if (isGenericFdeExplainerOrServicePage(section)) score -= 60;
   if (spec.type === "product_service" && isLargeVendorSignal(section)) score -= 10;
   if (isLargeVendorSignal(section) && spec.type !== "product_service") score -= 5;
   return score;
@@ -2073,6 +2157,9 @@ function repairSuggestionForIssues(issues = []) {
   if (/source_title_translation_missing_or_contaminated/iu.test(text)) return "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.";
   if (/fact_type_constraints:.*user_feedback|user_feedback_not_fact_signal/iu.test(text)) return "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.";
   if (/workforce_retraining_program_not_formal_signal_card/iu.test(text)) return "Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.";
+  if (/research_benchmark_without_commercial_event/iu.test(text)) return "Keep research, benchmark, paper, dataset, or OCR material as backend technical context unless the same source proves a commercial launch, funding, customer deployment, procurement, or partnership event.";
+  if (/generic_fde_explainer_or_service_page_without_customer_event/iu.test(text)) return "Keep generic FDE, service, role, or implementation pages as backend context unless the same source names a concrete customer deployment, procurement, launch, financing, partnership, or production rollout.";
+  if (/sustainability_report_without_commercial_ai_event/iu.test(text)) return "Keep environmental, carbon, renewable-energy, or sustainability reports as backend market context unless the same source proves a commercial AI launch, customer deployment, procurement contract, financing, pricing, or partnership event.";
   if (/corporate_capex_or_community_investment_not_signal_card/iu.test(text)) return "Keep corporate regional capex, data-center, or community investment announcements as Pool context unless a separate product, customer, or financing event is sourced.";
   if (/funding_not_single_company_round/iu.test(text)) return "Use a single-company funding announcement with amount, round, investor, and date.";
   if (/source_auditability|evidence_quality|missing_source_url|missing_source_material/iu.test(text)) return "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.";

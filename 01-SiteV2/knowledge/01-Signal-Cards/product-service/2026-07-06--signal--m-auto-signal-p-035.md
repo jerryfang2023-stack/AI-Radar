@@ -1,5 +1,5 @@
 ---
-id: SIG-20260706-A11
+id: SIG-20260706-A07
 type: signal_card
 signal_type: product_service
 title: "M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation"
@@ -9,8 +9,8 @@ source_title: "M-Files Expands Agentic AI Capabilities with New Agents That Deli
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-06T02:21:27.416Z
-updated_at: 2026-07-06T02:21:27.416Z
+created_at: 2026-07-06T04:35:24.684Z
+updated_at: 2026-07-06T04:35:24.684Z
 
 raw_refs: ["R-035"]
 pool_refs: ["P-035"]
@@ -48,11 +48,11 @@ opportunity_signals:
   business_action: ["customer_deployment", "product_launch"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration"]
+  pain_or_constraint: ["workflow_integration", "data_silo"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation | M-Files M-Files Expands Agent..."
+  source_excerpt: "M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation | M-Files 原始来源标题显示：M-Files 扩展 A..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "M"
@@ -67,19 +67,19 @@ frontend:
 
 ## 新闻事实
 
-M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation
+原始来源标题显示：M-Files 扩展 Agentic AI 能力，推出上下文感知自动化 Agent。
 
 ## 原文要点
 
-- M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation
+- 原始来源标题显示：M-Files 扩展 Agentic AI 能力，推出上下文感知自动化 Agent。
 
 ## 价值描述
 
-M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation
+原始来源标题显示：M-Files 扩展 Agentic AI 能力，推出上下文感知自动化 Agent。
 
 ## 可见原文片段
 
-M-Files Expands Agentic AI Capabilities with New Agents That Deliver Context-Aware Automation
+原始来源标题显示：M-Files 扩展 Agentic AI 能力，推出上下文感知自动化 Agent。
 
 ## 证据边界
 

@@ -1,5 +1,5 @@
 ---
-id: SIG-20260706-A02
+id: SIG-20260706-A01
 type: signal_card
 signal_type: funding
 title: "Netris 获得 $15M A 轮 融资"
@@ -9,8 +9,8 @@ source_title: "Andreessen Horowitz Leads Netris' Series A to Accelerate Adoption
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-06T02:21:27.416Z
-updated_at: 2026-07-06T02:21:27.416Z
+created_at: 2026-07-06T04:35:24.684Z
+updated_at: 2026-07-06T04:35:24.684Z
 
 raw_refs: ["R-075"]
 pool_refs: ["P-075"]

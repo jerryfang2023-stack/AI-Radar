@@ -1,5 +1,5 @@
 ---
-id: SIG-20260706-A01
+id: SIG-20260706-A05
 type: signal_card
 signal_type: funding
 title: "Aligned 获得 $60M 融资"
@@ -9,8 +9,8 @@ source_title: "Aligned bags $60M in funding to build the AI-native sales executi
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-06T02:21:27.416Z
-updated_at: 2026-07-06T02:21:27.416Z
+created_at: 2026-07-06T04:35:24.684Z
+updated_at: 2026-07-06T04:35:24.684Z
 
 raw_refs: ["R-038"]
 pool_refs: ["P-038"]

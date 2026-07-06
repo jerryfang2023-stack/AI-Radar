@@ -147,6 +147,13 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when `product-service` is normalized to `product_service` before category analytics.
     - Fail when Hermes treats `coreSignalCards`, `relationshipDirections`, `observationSeeds`, `dailyLens.categoryStats.last7/total`, historical `cards`, or stale reports as today's frontstage Card set.
 
+29. `provider_recovery_and_card_quality_boundary`
+    - Pass when AIHOT recovery checks direct daily/all endpoint failures, fallback-search use, `source_item_count`, and `raw_candidate_count`; `status=collected` alone is not enough.
+    - Pass when Anysearch is considered usable if keyword source-only returns source items and raw candidates, while individual query fallback failures stay visible as diagnostics.
+    - Pass when Card eligibility ignores search query tails, search paths, before/after clue guesses, affected-role guesses, and provider fallback labels.
+    - Pass when research benchmarks, OCR/model papers, generic FDE explainers, job posts, ESG/environment reports, broad startup/funding lists, and duplicate media copies of the same financing event do not displace named customer deployments, procurement/contract cases, concrete product launches, or single-company funding events.
+    - Fail when weak technical/context pages enter public Cards while stronger same-date Signal Cards remain backend-only only because English source-title translations are missing.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.

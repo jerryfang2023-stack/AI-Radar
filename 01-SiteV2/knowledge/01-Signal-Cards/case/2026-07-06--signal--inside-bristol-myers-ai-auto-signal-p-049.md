@@ -1,5 +1,5 @@
 ---
-id: SIG-20260706-A10
+id: SIG-20260706-A04
 type: signal_card
 signal_type: case
 title: "Bristol Myers 推进 AI 采购流程改造"
@@ -9,8 +9,8 @@ source_title: "Inside Bristol Myers’ AI-powered procurement overhaul | Supply 
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-06T02:21:27.416Z
-updated_at: 2026-07-06T02:21:27.416Z
+created_at: 2026-07-06T04:35:24.684Z
+updated_at: 2026-07-06T04:35:24.684Z
 
 raw_refs: ["R-049"]
 pool_refs: ["P-049"]

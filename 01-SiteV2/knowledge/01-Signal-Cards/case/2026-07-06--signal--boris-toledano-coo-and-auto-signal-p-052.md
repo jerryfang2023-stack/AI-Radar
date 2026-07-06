@@ -1,16 +1,16 @@
 ---
-id: SIG-20260706-A08
+id: SIG-20260706-A03
 type: signal_card
 signal_type: case
-title: "Linkup - Case study: scaling 120+ AI agents in a top Middle East bank"
+title: "Linkup 帮助中东头部银行扩展 120+ 个 AI Agent"
 date: 2026-07-06
 status: published
 source_title: "Linkup - Case study: scaling 120+ AI agents in a top Middle East bank"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-06T02:21:27.416Z
-updated_at: 2026-07-06T02:21:27.416Z
+created_at: 2026-07-06T04:35:24.684Z
+updated_at: 2026-07-06T04:35:24.684Z
 
 raw_refs: ["R-052"]
 pool_refs: ["P-052"]
@@ -53,25 +53,26 @@ opportunity_signals:
   adoption_evidence: ["case_study", "usage_growth"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Linkup - Case study: scaling 120+ AI agents in a top Middle East bank Linkup - Case study: scaling 120+ AI agents in a top Middle East bank 原文称，Zero data retention: No queries or customer data were stored."
+  source_excerpt: "Linkup 帮助中东头部银行扩展 120+ 个 AI Agent Linkup - Case study: scaling 120+ AI agents in a top Middle East bank 原始来源标题显示：Linkup 帮助中东头部银行扩展 120+ 个 AI Agent。"
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Boris Toledano COO &"
 
 frontend:
-  displayTitle: "Linkup - Case study: scaling 120+ AI agents in a top Middle East bank"
+  displayTitle: "Linkup 帮助中东头部银行扩展 120+ 个 AI Agent"
   sourceLinks:
     - "https://www.linkup.so/case-studies/how-a-leading-middle-east-bank-powers-ai-agents-with-linkup"
 ---
 
-# Linkup - Case study: scaling 120+ AI agents in a top Middle East bank
+# Linkup 帮助中东头部银行扩展 120+ 个 AI Agent
 
 ## 新闻事实
 
-原文称，Zero data retention: No queries or customer data were stored.
+原始来源标题显示：Linkup 帮助中东头部银行扩展 120+ 个 AI Agent。
 
 ## 原文要点
 
+- 原文称，Zero data retention: No queries or customer data were stored.
 - 原文称，This was a mandatory requirement for deployment.
 
 ## 价值描述
@@ -80,7 +81,7 @@ frontend:
 
 ## 可见原文片段
 
-原文称，Zero data retention: No queries or customer data were stored.
+原始来源标题显示：Linkup 帮助中东头部银行扩展 120+ 个 AI Agent。
 
 ## 证据边界
 

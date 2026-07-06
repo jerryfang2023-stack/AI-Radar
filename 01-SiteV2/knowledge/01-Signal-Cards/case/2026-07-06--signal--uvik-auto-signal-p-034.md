@@ -1,5 +1,5 @@
 ---
-id: SIG-20260706-A20
+id: SIG-20260706-A11
 type: signal_card
 signal_type: case
 title: "AI Agent Platform for Finance Ops Case Study"
@@ -9,8 +9,8 @@ source_title: "AI Agent Platform for Finance Ops Case Study | Uvik Software"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-06T02:21:27.416Z
-updated_at: 2026-07-06T02:21:27.416Z
+created_at: 2026-07-06T04:35:24.684Z
+updated_at: 2026-07-06T04:35:24.684Z
 
 raw_refs: ["R-034"]
 pool_refs: ["P-034"]
@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: ["case_study", "enterprise_plan"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "AI Agent Platform for Finance Ops Case Study AI Agent Platform for Finance Ops Case Study | Uvik Software AI Agent Platform for Finance Ops Case Study none [{\"type\":\"case_detail\",\"text\":\"AI Agent Platform for Finance Op..."
+  source_excerpt: "AI Agent Platform for Finance Ops Case Study AI Agent Platform for Finance Ops Case Study | Uvik Software 原始来源标题显示：Uvik 财务运营 AI Agent 平台案例。"
   missing_fields: []
 
 signal_owner: "Uvik"
@@ -67,19 +67,19 @@ frontend:
 
 ## 新闻事实
 
-AI Agent Platform for Finance Ops Case Study
+原始来源标题显示：Uvik 财务运营 AI Agent 平台案例。
 
 ## 原文要点
 
-- AI Agent Platform for Finance Ops Case Study
+- 原始来源标题显示：Uvik 财务运营 AI Agent 平台案例。
 
 ## 价值描述
 
-AI Agent Platform for Finance Ops Case Study
+原始来源标题显示：Uvik 财务运营 AI Agent 平台案例。
 
 ## 可见原文片段
 
-AI Agent Platform for Finance Ops Case Study
+原始来源标题显示：Uvik 财务运营 AI Agent 平台案例。
 
 ## 证据边界
 

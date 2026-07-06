@@ -2216,12 +2216,27 @@ function frontstageEvidenceScore(card = {}) {
   return score;
 }
 
+function hasHighValueCommercialFrontstageEvent(card = {}) {
+  const text = frontstageText(card);
+  return card.category === "funding"
+    || /\b(customer story|case study|customer deployment|customer adopts?|adopted by|deployed (?:at|by|with)|production rollout|pilot customer|procurement|tender|rfp|contract|annual recurring revenue|ARR|saved \d|reduced \d|cut \d|bank|hospital|retailer|manufacturer|insurer|pharma|law firm|Bristol Myers|Navien|Aon|7-Eleven)\b|瀹㈡埛|妗堜緥|閮ㄧ讲|閲囪喘|鍚堝悓|绛剧害/iu.test(text);
+}
+
+function isLowCommercialValueFrontstageContext(card = {}) {
+  const text = frontstageText(card);
+  const lowValueContext = /\b(benchmark|benchmarks|bench|evaluation|evals?|leaderboard|paper|research|technical report|dataset|arxiv|openreview|DiscoBench|OCR|Mechanical Turk|forward[- ]deployed|FDE|what is|guide|playbook|field guide|role explainer|service landing|hiring|job opening)\b/iu.test(text);
+  return lowValueContext && !hasHighValueCommercialFrontstageEvent(card);
+}
+
 function businessImpactScore(card = {}) {
   const text = frontstageText(card);
   let score = 0;
   if (card.category === "funding") score += 24;
   if (card.category === "case") score += 20;
   if (card.category === "product-service") score += 10;
+  if (card.category === "funding" && !isLargeVendorCard(card)) score += 45;
+  if (hasHighValueCommercialFrontstageEvent(card)) score += 35;
+  if (/\b(procurement|tender|rfp|contract|pricing|billing|acquisition|acquired|strategic partnership)\b|閲囪喘|鎷涙爣|鎶曟爣|鍚堝悓|绛剧害|瀹氫环|鏀惰喘|鍚堜綔/iu.test(text)) score += 30;
   if (/\$ ?\d|\d+ ?(?:m|million|b|billion)\b|亿美元|百万|融资|seed|Series|funding|raises|commitment/iu.test(text)) score += 22;
   if (/police|court|legal|law|regulat|government|administration|equity stake|security|Lockdown|prompt injection|司法|法院|警察|监管|政府|合规|安全/iu.test(text)) score += 22;
   if (/equity stake|state stake|public stake|Trump|national interest|入股|持股|股权|特朗普|公共利益|国家利益/iu.test(text)) score += 75;
@@ -2235,6 +2250,7 @@ function genericFrontstagePenalty(card = {}) {
   const text = frontstageText(card);
   let penalty = 0;
   if (isGenericFrontstageCandidate(card)) penalty += 55;
+  if (isLowCommercialValueFrontstageContext(card)) penalty += 85;
   if (/top ai pre-seed investors|pre-seed investors|ranked by funding|monetizing ai agents|release notes agent|complete guide|market report|use cases|startup ideas|list|榜单|指南|报告|清单/iu.test(text)) penalty += 28;
   if (!card.translatedFact && !(card.originalHighlights || []).some(isSubstantiveSourceFragment)) penalty += 18;
   return penalty;
@@ -2283,6 +2299,7 @@ function annotateFrontstageCandidate(card = {}) {
   const rankScore = frontstageEditorialScore(annotated);
   const reasons = frontstageSelectionReasons(annotated);
   const qualityWarnings = [];
+  if (isLowCommercialValueFrontstageContext(annotated)) qualityWarnings.push("research, benchmark, generic FDE, job, or service context is downranked unless tied to a commercial event");
   if (isGenericFrontstageCandidate(annotated)) qualityWarnings.push("资料型、榜单型或工具型素材，默认不作为 Top 10 优先项");
   if (evidenceScore < 35) qualityWarnings.push("原文事实支撑偏弱，需优先补充 Raw/Pool 证据");
   if (!isSubstantiveSourceFragment(annotated.visibleFragment)) qualityWarnings.push("可见原文片段不足，已降权处理");
