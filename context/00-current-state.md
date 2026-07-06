@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in SITE-V3.4.3 Enterprise AI / FDE Ingestion Boundary Release.
+WaveSight AI is now in SITE-V3.4.4 AI Hardware Lens Release.
 
 ## Current Positioning
 
@@ -20,17 +20,17 @@ WaveSight AI is now in SITE-V3.4.3 Enterprise AI / FDE Ingestion Boundary Releas
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal frontstage presents all qualified Raw / Pool business signals that pass raw-to-card cardability and can become Cards, sorted by importance / impact from high to low. Pool remains a backend audit index and repair surface, not a required manual selection layer.
-- SITE-V3.4.3 keeps the unified frontstage, Reports Center opportunity system, and Business Signals quality boundary, while upgrading the Enterprise AI / FDE lens to use the Raw/Card ingestion boundary for title translation and fact extraction.
-- Current column versions: Business Signals `BSIG-V2`, Enterprise AI / FDE `EAI-V1.2.0-raw-card-ingestion-boundary`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Reports Center `IMAP-V2.0.0-report-center-opportunity-system`.
+- SITE-V3.4.4 keeps the unified frontstage, Reports Center opportunity system, Business Signals quality boundary, Enterprise AI / FDE ingestion boundary, and adds a separate AI Hardware observation lens under Business Signals.
+- Current column versions: Business Signals `BSIG-V2.1.0-ai-hardware-lens`, Enterprise AI / FDE `EAI-V1.2.0-raw-card-ingestion-boundary`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Reports Center `IMAP-V2.0.0-report-center-opportunity-system`.
 - Current tag taxonomy version: `TAG-V1.1.0-v34-layered-taxonomy`.
 
 ## Current Entries
 
 | Entry | File | Role |
 |---|---|---|
-| Business Signals | `01-SiteV2/site/v3-data-observation.html` | SITE-V3.4.3 main public page for unified daily Cards, relationship graph, trend candidates, and the Enterprise AI / FDE secondary lens |
+| Business Signals | `01-SiteV2/site/v3-data-observation.html` | SITE-V3.4.4 main public page for unified daily Cards, independent AI Hardware lens, relationship graph, trend candidates, and the Enterprise AI / FDE secondary lens |
 | Reports Center | `01-SiteV2/site/intelligence-map.html` | Monthly / weekly report entry, source-backed Entry Point Map and Product Pain Map, and relation paths |
-| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page in the unified SITE-V3.4.3 frontstage |
+| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page in the unified SITE-V3.4.4 frontstage |
 | Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Operations backend and production-chain dashboard |
 
@@ -48,7 +48,7 @@ External sources
 -> knowledge base
 -> relationship graph
 -> trend candidates
--> SITE-V3.4.3 frontstage + operations data
+-> SITE-V3.4.4 frontstage + operations data
 -> local DuckDB data-lake index
 -> GitHub PR / merge
 -> GitHub Pages
@@ -61,9 +61,9 @@ Community Intelligence uses the logged-in scys.com / aipoju.com collection route
 
 ## Paused / Retired
 
-Legacy content-output routes, old page modules, and legacy copy gates are not current SITE-V3.4.3 required outputs or execution truth.
+Legacy content-output routes, old page modules, and legacy copy gates are not current SITE-V3.4.4 required outputs or execution truth.
 
-Old V2 pages are retired. If old rules conflict with SITE-V3.4.3, remove or rebuild them instead of preserving compatibility.
+Old V2 pages are retired. If old rules conflict with SITE-V3.4.4, remove or rebuild them instead of preserving compatibility.
 
 ## Current Hard Rules
 

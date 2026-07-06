@@ -1,5 +1,5 @@
 ---
-id: SIG-20260706-A07
+id: SIG-20260706-A02
 type: signal_card
 signal_type: case
 title: "Multi-Agent Hospital Operations Platform | Healthcare AI Case Study"
@@ -9,8 +9,8 @@ source_title: "Multi-Agent Hospital Operations Platform | Healthcare AI Case Stu
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-06T02:21:27.416Z
-updated_at: 2026-07-06T02:21:27.416Z
+created_at: 2026-07-06T04:35:24.684Z
+updated_at: 2026-07-06T04:35:24.684Z
 
 raw_refs: ["R-033"]
 pool_refs: ["P-033"]
@@ -52,7 +52,7 @@ opportunity_signals:
   adoption_evidence: ["case_study"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Multi-Agent Hospital Operations Platform | Healthcare AI Case Study Multi-Agent Hospital Operations Platform | Healthcare AI Case Study | TechEniac Multi-Agent Hospital Operations Platform | Healthcare AI Case Study 证据边..."
+  source_excerpt: "Multi-Agent Hospital Operations Platform | Healthcare AI Case Study Multi-Agent Hospital Operations Platform | Healthcare AI Case Study | TechEniac 原始来源标题显示：TechEniac 多智能体医院运营平台案例。"
   missing_fields: ["delivery_model"]
 
 signal_owner: "Multi"
@@ -67,19 +67,19 @@ frontend:
 
 ## 新闻事实
 
-Multi-Agent Hospital Operations Platform | Healthcare AI Case Study
+原始来源标题显示：TechEniac 多智能体医院运营平台案例。
 
 ## 原文要点
 
-- Multi-Agent Hospital Operations Platform | Healthcare AI Case Study
+- 原始来源标题显示：TechEniac 多智能体医院运营平台案例。
 
 ## 价值描述
 
-Multi-Agent Hospital Operations Platform | Healthcare AI Case Study
+原始来源标题显示：TechEniac 多智能体医院运营平台案例。
 
 ## 可见原文片段
 
-Multi-Agent Hospital Operations Platform | Healthcare AI Case Study
+原始来源标题显示：TechEniac 多智能体医院运营平台案例。
 
 ## 证据边界
 

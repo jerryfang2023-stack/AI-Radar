@@ -1,16 +1,16 @@
 ---
-id: SIG-20260706-A19
+id: SIG-20260706-A10
 type: signal_card
 signal_type: case
-title: "Procurement Strategy For The Agentic Enterprise: Salesforce In ..."
+title: "Salesforce 与 AWS Marketplace 推进企业智能体采购路径"
 date: 2026-07-06
 status: published
 source_title: "Procurement Strategy For The Agentic Enterprise: Salesforce In ..."
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-06T02:21:27.416Z
-updated_at: 2026-07-06T02:21:27.416Z
+created_at: 2026-07-06T04:35:24.684Z
+updated_at: 2026-07-06T04:35:24.684Z
 
 raw_refs: ["R-004"]
 pool_refs: ["P-004"]
@@ -53,34 +53,34 @@ opportunity_signals:
   adoption_evidence: ["case_study", "procurement_contract", "third_party_report"]
   source_evidence_type: ["industry_report", "regulatory_or_procurement", "first_party_case"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Procurement Strategy For The Agentic Enterprise: Salesforce In ..."
+  source_excerpt: "Salesforce 与 AWS Marketplace 推进企业智能体采购路径 Procurement Strategy For The Agentic Enterprise: Salesforce In ..."
   missing_fields: ["specific_task", "product_form"]
 
 signal_owner: "Deel"
 
 frontend:
-  displayTitle: "Procurement Strategy For The Agentic Enterprise: Salesforce In ..."
+  displayTitle: "Salesforce 与 AWS Marketplace 推进企业智能体采购路径"
   sourceLinks:
     - "https://tei.forrester.com/go/salesforce/procurementawsmarketplacespotlight/"
 ---
 
-# Procurement Strategy For The Agentic Enterprise: Salesforce In ...
+# Salesforce 与 AWS Marketplace 推进企业智能体采购路径
 
 ## 新闻事实
 
-Procurement Strategy For The Agentic Enterprise: Salesforce In ...
+原始来源标题显示：Salesforce 与 AWS Marketplace 推进企业智能体采购路径。
 
 ## 原文要点
 
-- Procurement Strategy For The Agentic Enterprise: Salesforce In ...
+- 原始来源标题显示：Salesforce 与 AWS Marketplace 推进企业智能体采购路径。
 
 ## 价值描述
 
-Procurement Strategy For The Agentic Enterprise: Salesforce In ...
+原始来源标题显示：Salesforce 与 AWS Marketplace 推进企业智能体采购路径。
 
 ## 可见原文片段
 
-Procurement Strategy For The Agentic Enterprise: Salesforce In ...
+原始来源标题显示：Salesforce 与 AWS Marketplace 推进企业智能体采购路径。
 
 ## 证据边界
 

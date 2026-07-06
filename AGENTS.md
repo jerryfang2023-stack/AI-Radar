@@ -42,10 +42,10 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: SITE-V3.4.3.
+- Current stage: SITE-V3.4.4.
 - Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/weekly-ai-business-change-radar.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
-- Current Business Signals column version: BSIG-V2.
+- Current Business Signals column version: BSIG-V2.1.0-ai-hardware-lens.
 - Current First-Line Viewpoints column version: FLV-V1.0.2-supervision-idempotency.
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
 - Current Enterprise AI / FDE lens version: EAI-V1.2.0-raw-card-ingestion-boundary.
@@ -57,7 +57,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Product Goal
 
-SITE-V3.4.3 is an AI business intelligence asset system.
+SITE-V3.4.4 is an AI business intelligence asset system.
 
 Daily production should preserve and display all qualified Core Pool AI business signals that can become Cards across:
 
@@ -88,11 +88,11 @@ Business Signals, Reports Center, First-Line Viewpoints, and Community Intellige
 
 ## Retired Routes
 
-Legacy content-output routes, legacy publication templates, and legacy copy gates are not current SITE-V3.4.3 required outputs and must not be used as execution sources.
+Legacy content-output routes, legacy publication templates, and legacy copy gates are not current SITE-V3.4.4 required outputs and must not be used as execution sources.
 
 Follow-builders / builders viewpoints are active only as the independent First-Line Viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 
-If an old rule conflicts with SITE-V3.4.3, delete or rebuild it instead of preserving compatibility.
+If an old rule conflicts with SITE-V3.4.4, delete or rebuild it instead of preserving compatibility.
 
 ## Current Context
 
@@ -102,14 +102,14 @@ If an old rule conflicts with SITE-V3.4.3, delete or rebuild it instead of prese
 | `context/00-current-state.md` | current project state |
 | `context/version-ledger.md` | version baseline and freeze points |
 | `context/frontstage-page-contracts.md` | frontstage page contracts |
-| `context/01-product-map.md` | SITE-V3.4.3 product structure and data flow |
+| `context/01-product-map.md` | SITE-V3.4.4 product structure and data flow |
 | `context/02-vi-style.md` | VI, typography, visual rules |
 | `context/04-qc-rules.md` | general quality gates |
 | `context/05-daily-monitoring.md` | V3 Raw / Pool monitoring context |
 | `context/06-execution-harness.md` | high-risk execution harness |
 | `context/07-v3-intelligence-generation-rules.md` | Raw / Pool / Card / relation / trend-candidate truth source |
-| `context/08-v3-3-automation.md` | SITE-V3.4.3 GitHub / site / Obsidian sync automation loop |
-| `context/09-v3-3-current-action-index.md` | SITE-V3.4.3 current action registry |
+| `context/08-v3-3-automation.md` | SITE-V3.4.4 GitHub / site / Obsidian sync automation loop |
+| `context/09-v3-3-current-action-index.md` | SITE-V3.4.4 current action registry |
 | `context/10-v3-3-experience-automation.md` | action logging and retrospective automation |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes daily supervision and Codex repair handoff |
 | `context/context-index.md` | context router |

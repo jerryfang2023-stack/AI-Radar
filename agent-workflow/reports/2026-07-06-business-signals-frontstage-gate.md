@@ -1,6 +1,6 @@
 # 2026-07-06 Business Signals Frontstage Gate
 
-- generated_at: 2026-07-06T02:21:35.648Z
+- generated_at: 2026-07-06T10:25:49.364Z
 - status: passed
 - failure_categories: none
 
@@ -17,8 +17,8 @@
   "ok": true,
   "status": "passed",
   "checked_file": "01-SiteV2/site/data/v3-data-observation-desk.json",
-  "card_count": 441,
-  "frontstage_card_count": 441,
+  "card_count": 442,
+  "frontstage_card_count": 442,
   "issue_count": 0,
   "issues": []
 }
@@ -35,6 +35,6 @@
   "ok": true,
   "status": "passed",
   "issue_count": 0,
-  "report": "agent-workflow/reports/frontstage-regression-gate-20260706022135.md"
+  "report": "agent-workflow/reports/frontstage-regression-gate-20260706102549.md"
 }
 ```

@@ -33,6 +33,7 @@
       "capital_startup",
       "industry_landing",
       "fde_implementation",
+      "ai_hardware_original",
       "procurement_marketplace",
       "a_media_gdelt",
       "community_feedback"
@@ -453,6 +454,28 @@
       ]
     },
     {
+      "id": "ai-hardware-infrastructure",
+      "label": "AI Hardware / Compute Infrastructure",
+      "terms": [
+        "AI hardware",
+        "AI chip",
+        "AI accelerator",
+        "AI inference chip",
+        "GPU cluster",
+        "AI server",
+        "AI data center",
+        "AI factory",
+        "semiconductor AI",
+        "HBM",
+        "edge AI device",
+        "on-device AI hardware",
+        "AI robotics hardware",
+        "humanoid robot hardware",
+        "AI hardware startup",
+        "AI hardware funding"
+      ]
+    },
+    {
       "id": "enterprise-ai-transformation",
       "label": "企业AI化 / FDE式落地工程",
       "terms": [
@@ -470,9 +493,18 @@
         "production rollout",
         "design partner",
         "pilot customer",
-        "workflow automation",
-        "agent governance",
-        "RAG deployment",
+      "workflow automation",
+      "agent governance",
+      "AI hardware",
+      "AI chip",
+      "AI accelerator",
+      "AI server",
+      "GPU cluster",
+      "AI data center",
+      "edge AI device",
+      "robotics hardware",
+      "semiconductor",
+      "RAG deployment",
         "enterprise knowledge base",
         "permission control",
         "audit logging",
@@ -574,6 +606,23 @@
       "AI model infrastructure investment",
       "AI research spinout funding",
       "venture capital AI startup"
+    ],
+    "ai_hardware": [
+      "AI hardware startup funding",
+      "AI chip startup raises",
+      "AI accelerator investment",
+      "AI inference chip launch",
+      "GPU cluster procurement",
+      "AI server launch",
+      "AI data center investment",
+      "AI factory buildout",
+      "semiconductor AI partnership",
+      "HBM supply AI",
+      "edge AI device deployment",
+      "on-device AI hardware launch",
+      "robotics hardware customer deployment",
+      "humanoid robot funding",
+      "AI hardware manufacturing capacity"
     ],
     "enterprise_ai_transformation": [
       "enterprise AI transformation",
@@ -1160,6 +1209,179 @@
           "vertical AI deployment customer story",
           "financial services AI deployment case study",
           "healthcare AI deployment customer story"
+        ]
+      }
+    },
+    {
+      "id": "ai-hardware-investment-signal",
+      "label": "AI Hardware investment and financing",
+      "role": "Dedicated recall lane for AI hardware capital flows: AI chip, accelerator, robotics hardware, AI server, data-center and semiconductor startups. Keep funding facts single-company and source-backed.",
+      "keywords": [
+        "AI hardware startup funding",
+        "AI chip startup raises",
+        "AI accelerator startup funding",
+        "AI inference chip Series A",
+        "semiconductor AI startup investment",
+        "robotics hardware startup funding",
+        "humanoid robot startup raises",
+        "AI server startup funding",
+        "AI data center startup funding",
+        "edge AI hardware funding"
+      ],
+      "p0_coverage": [
+        "ai-hardware-infrastructure",
+        "infra-model-routing",
+        "model-capability-edge",
+        "robotics-ai-native",
+        "outside-core"
+      ],
+      "p1_coverage": [
+        "capital_market",
+        "ai_hardware",
+        "early"
+      ],
+      "lanes": {
+        "keyword_search": [
+          "AI chip startup raises funding Reuters TechCrunch",
+          "AI hardware startup raises Series A customers",
+          "AI accelerator startup funding data center customers",
+          "AI hardware startup funding customer deployment",
+          "AI chip startup raises inference customers",
+          "AI accelerator startup Series A data center",
+          "AI inference chip funding enterprise customers",
+          "semiconductor AI startup investment manufacturing capacity",
+          "robotics hardware startup funding commercial deployment",
+          "humanoid robot startup raises manufacturing customers",
+          "AI server startup funding GPU cluster customers",
+          "AI data center infrastructure startup funding",
+          "edge AI hardware startup funding on-device deployment"
+        ],
+        "hn": [
+          "AI hardware startup funding",
+          "AI chip startup raises",
+          "AI accelerator startup"
+        ],
+        "gdelt": [
+          "AI hardware startup funding",
+          "AI chip startup raises",
+          "AI accelerator startup investment",
+          "robotics hardware startup funding",
+          "AI data center infrastructure startup funding"
+        ]
+      }
+    },
+    {
+      "id": "ai-hardware-scenario-service-signal",
+      "label": "AI Hardware scenario and service",
+      "role": "Dedicated recall lane for AI hardware entering customer scenarios: edge devices, robotics, AI servers, GPU clusters, data centers, factory deployments, healthcare devices and industrial inspection. Must include customer, procurement, deployment, production or service evidence.",
+      "keywords": [
+        "AI hardware customer deployment",
+        "AI server customer deployment",
+        "GPU cluster procurement",
+        "AI data center customer contract",
+        "edge AI device deployment",
+        "on-device AI hardware launch",
+        "robotics hardware customer deployment",
+        "industrial AI camera deployment",
+        "medical AI device deployment",
+        "AI factory hardware rollout"
+      ],
+      "p0_coverage": [
+        "ai-hardware-infrastructure",
+        "infra-model-routing",
+        "model-capability-edge",
+        "robotics-ai-native",
+        "enterprise-ai-transformation"
+      ],
+      "p1_coverage": [
+        "ai_hardware",
+        "mature",
+        "enterprise_ai_transformation"
+      ],
+      "lanes": {
+        "keyword_search": [
+          "AI server procurement contract enterprise inference",
+          "GPU cluster customer contract AI workload",
+          "edge AI device customer deployment manufacturing",
+          "AI hardware customer deployment edge device",
+          "AI server customer deployment enterprise inference",
+          "GPU cluster procurement enterprise AI workload",
+          "AI data center customer contract inference service",
+          "edge AI device deployment retail manufacturing",
+          "on-device AI hardware launch enterprise customer",
+          "robotics hardware customer deployment warehouse manufacturing",
+          "industrial AI camera deployment factory inspection",
+          "medical AI device deployment hospital workflow",
+          "AI factory hardware rollout customer production"
+        ],
+        "hn": [
+          "edge AI device deployment",
+          "AI server customer deployment",
+          "robotics hardware deployment"
+        ],
+        "gdelt": [
+          "AI hardware customer deployment",
+          "GPU cluster procurement enterprise AI",
+          "AI data center customer contract",
+          "edge AI device deployment",
+          "robotics hardware customer deployment"
+        ]
+      }
+    },
+    {
+      "id": "ai-hardware-trend-innovation-signal",
+      "label": "AI Hardware trend and innovation",
+      "role": "Dedicated recall lane for commercially relevant AI hardware innovation: chips, accelerators, HBM, packaging, liquid cooling, inference appliances, edge AI modules and embodied AI hardware. Trend-only evidence stays context unless tied to launch, customer adoption, procurement, supply contract, capacity or funding.",
+      "keywords": [
+        "AI inference chip launch",
+        "AI accelerator launch",
+        "HBM supply AI data center",
+        "advanced packaging AI chip",
+        "liquid cooling AI data center",
+        "AI server product launch",
+        "AI inference appliance launch",
+        "edge AI module launch",
+        "AI robotics hardware innovation",
+        "AI hardware supply chain partnership"
+      ],
+      "p0_coverage": [
+        "ai-hardware-infrastructure",
+        "infra-model-routing",
+        "model-capability-edge",
+        "robotics-ai-native"
+      ],
+      "p1_coverage": [
+        "ai_hardware",
+        "technical_iteration",
+        "mature"
+      ],
+      "lanes": {
+        "keyword_search": [
+          "AI inference chip launch customer availability",
+          "AI accelerator supply agreement data center",
+          "AI hardware manufacturing capacity customer demand",
+          "AI inference chip launch enterprise customers",
+          "AI accelerator launch data center inference",
+          "HBM supply AI data center customer contract",
+          "advanced packaging AI chip manufacturing capacity",
+          "liquid cooling AI data center deployment",
+          "AI server product launch enterprise inference",
+          "AI inference appliance launch customer deployment",
+          "edge AI module launch industrial customers",
+          "AI robotics hardware innovation customer deployment",
+          "AI hardware supply chain partnership capacity"
+        ],
+        "hn": [
+          "AI inference chip launch",
+          "AI accelerator launch",
+          "edge AI module launch"
+        ],
+        "gdelt": [
+          "AI inference chip launch",
+          "AI accelerator launch data center",
+          "HBM supply AI data center",
+          "AI server product launch enterprise",
+          "AI hardware supply chain partnership"
         ]
       }
     },
