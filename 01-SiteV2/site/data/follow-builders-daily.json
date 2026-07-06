@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-07-05T16:33:28.474Z",
+    "generatedAt": "2026-07-06T01:31:52.782Z",
     "feedGeneratedAt": "2026-07-05T07:26:19.496Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
-    "sourceRoute": "prepare-digest",
+    "sourceRoute": "remote-x+remote-podcasts",
     "sourceErrors": [],
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
-    "builders": 18,
-    "remarks": 44,
-    "podcasts": 2,
-    "blogsBuilt": 5,
-    "trackedSources": 33,
+    "builders": 17,
+    "remarks": 41,
+    "podcasts": 1,
+    "blogsBuilt": 4,
+    "trackedSources": 0,
     "rawBuilders": 13,
     "rawTweets": 28
   },
@@ -22,7 +22,7 @@
       "name": "Simon Willison's Blog",
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 14
+      "count": 13
     },
     {
       "name": "Garry Tan",
@@ -73,12 +73,6 @@
       "count": 2
     },
     {
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "count": 2
-    },
-    {
       "name": "Amanda Askell",
       "handle": "AmandaAskell",
       "role": "Philosopher & ethicist trying to make AI be good AnthropicAI.",
@@ -94,12 +88,6 @@
       "name": "Guillermo Rauch",
       "handle": "rauchg",
       "role": "vercel CEO",
-      "count": 1
-    },
-    {
-      "name": "Interconnects (Nathan Lambert)",
-      "handle": "interconnects.ai",
-      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
       "count": 1
     },
     {
@@ -124,6 +112,12 @@
       "name": "Tigera Blog (Calico / AI Security)",
       "handle": "tigera.io",
       "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "count": 1
+    },
+    {
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 1
     }
   ],
@@ -202,84 +196,6 @@
       "createdAt": "Thu, 02 Jul 2026 13:04:04 GMT",
       "date": "2026-07-02",
       "url": "https://www.bensbites.com/p/fable-is-back",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside",
-      "source": "blog",
-      "name": "Interconnects (Nathan Lambert)",
-      "handle": "interconnects.ai",
-      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
-      "text": "Latest open artifacts (#22): Zyphra, Cohere, and Poolside are expanding the breadth of the ecosystem",
-      "content": "An assessment of the open ecosystem and the motivations behind releasing models",
-      "contentTranslation": "评估开放生态系统和发布模型背后的动机",
-      "contentTranslationStatus": "translated",
-      "translation": "最新开放式文物（ ＃ 22 ） ： Zyphra、Cohere和Poolside正在扩大生态系统的广度",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Sun, 28 Jun 2026 17:03:07 GMT",
-      "date": "2026-06-29",
-      "url": "https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://tldr.tech/ai/2026-06-29",
-      "source": "blog",
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "text": "GPT-5.6 preview ☀️, Grok 4.5 beta 🤖, Google limits Meta 🛑",
-      "content": "",
-      "contentTranslation": "",
-      "contentTranslationStatus": "unavailable",
-      "translation": "GPT-5.6预览版☀️， Grok 4.5测试版🤖， Google限制Meta 🛑",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Mon, 29 Jun 2026 00:00:00 GMT",
-      "date": "2026-06-29",
-      "url": "https://tldr.tech/ai/2026-06-29",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -1732,63 +1648,16 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Quoting Jon Udell",
-      "content": "Human Agent in the loop I dislike the phrase “human in the loop” because it cedes authority to the machines. Let’s flip the narrative. It’s",
-      "contentTranslation": "循环中的人类Agent我不喜欢“循环中的人类”这个短语，因为它将权力交给了机器。让我们翻转叙述。这是",
-      "contentTranslationStatus": "translated",
-      "translation": "引用Jon Udell的话",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-06-28T21:57:41+00:00",
-      "date": "2026-06-29",
-      "url": "https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
     }
   ],
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "AI Vibe Check: Lab Wars, Why APIs Might Vanish & Future Predictions",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ai-vibe-check-lab-wars-why-apis-might-vanish-future-predictions-sr_Mp2pR",
-      "publishedAt": "Fri, 12 Jun 2026 12:51:00 +0000",
-      "excerpt": "Six months after their last roundup, Jacob sits down with Ari Morcos (Datology AI CEO, former Meta AI researcher) and Rob Toews (Radical Ventures partner, Forbes AI columnist) to take stock of an AI landscape that has shifted dramatically: coding agents crossing the long-time-horizon threshold has turned engineers into managers of agents, near-frontier open weight AI looks like it may be disappearing as Meta and the Chinese labs pull back, and Anthropic's restrictions on its newly released Fable model have its biggest supporters questioning whether safety framing is masking competitive positioning. The conversation runs through the full state of the lab wars, including Rob doubling down on his Sam Altman ouster prediction and the Bret Taylor succession theory, why Google's structural advantages remain intact despite falling behind on coding, what xAI's Cursor acquisition is really for, and Ari'…"
-    },
-    {
-      "source": "podcast",
-      "name": "Unsupervised Learning",
-      "title": "AI Vibe Check: Lab Wars, Why APIs Might Vanish & Future Predictions",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ai-vibe-check-lab-wars-why-apis-might-vanish-future-predictions-sr_Mp2pR",
-      "publishedAt": "Fri, 12 Jun 2026 12:51:00 +0000",
-      "excerpt": "Six months after their last roundup, Jacob sits down with Ari Morcos (Datology AI CEO, former Meta AI researcher) and Rob Toews (Radical Ventures partner, Forbes AI columnist) to take stock of an AI landscape that has shifted dramatically: coding agents crossing the long-time-horizon threshold has turned engineers into managers of agents, near-frontier open weight AI looks like it may be disappearing as Meta and the Chinese labs pull back, and Anthropic's restrictions on its newly released Fable model have its biggest supporters questioning whether safety framing is masking competitive positioning. The conversation runs through the full state of the lab wars, including Rob doubling down on his Sam Altman ouster prediction and the Bret Taylor succession theory, why Google's structural advantages remain intact despite falling behind on coding, what xAI's Cursor acquisition is really for, and Ari'…"
+      "name": "The MAD Podcast with Matt Turck",
+      "title": "Cloudflare CEO: The Internet's Business Model Is Dead",
+      "url": "https://www.youtube.com/watch?v=UN47z_opfmo",
+      "publishedAt": "2026-06-25T11:30:00.000Z",
+      "excerpt": ""
     }
   ]
 }
