@@ -1,0 +1,269 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-030",
+  "title": "Kubernetes Operational Maturity: Why You Should Modernize Your Ingress with Gateway API",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://www.tigera.io/blog/kubernetes-operational-maturity-why-you-should-modernize-your-ingress-with-gateway-api/",
+  "canonical_url": "https://tigera.io/blog/kubernetes-operational-maturity-why-you-should-modernize-your-ingress-with-gateway-api",
+  "source_name": "Tigera Blog (Calico / AI Security)",
+  "source_type": "analysis",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-07T02:01:23.485Z",
+  "language": "mixed",
+  "full_text": "SIG Network introduced Ingress in 2015 as a minimal way to expose HTTP services from a cluster . That simplicity was an advantage at a time when most workloads were HTTP, clusters were single-tenant, and the occasional gap could be papered over with a vendor annotation. As adoption grew and Kubernetes started running serious production workloads across multi-tenant, multi-cluster, multi-protocol environments, the annotations multiplied into incompatible dialects, and most organizations outgrew what Ingress could handle on its own.\nThe Ingress-NGINX Controller retirement, and the migration conversations that followed, exposed these cracks, but they were never the full story. Ultimately, ingress needed to grow up and the arrival of Gateway API, with SIG Network freezing the Ingress at v1 in favor of this successor, was what that looked like.\nEven if migration has not been forced on your organization by the Ingress NGINX retirement, any team trying to reach Kubernetes operational maturity should be considering Gateway API as the next step on that journey.\nThree reasons why Gateway API is more than and Ingress replacement\nGateway API is not just a new and improved Ingress with a few additional features bolted on. It re-architects incoming traffic management in three key ways that are essential to any organization quickly growing beyond one or two teams operating a couple of clusters: it now supports common protocols beyond HTTP, it provides standardized schemas for advanced traffic routing and it has decoupled infrastructure from application traffic routing allowing separation management concerns.\nGateway API should be on the roadmap if any of the following use cases apply to your organization:\n1. You need expanded protocol support\nAre you running a diverse collection of AI workloads in your clusters? Do you host streaming services? Do your workloads need external database access?\nProtocols like gRPC, TLS, TCP, and UDP are now integrated as first-class resources rather than being treated as secondary extensions requiring complex annotations or vendor-specific workarounds. This isn’t a cosmetic change. When the Ingress API was designed, treating HTTP as the default was a reasonable assumption. In 2026, it isn’t. AI inference traffic is overwhelmingly gRPC. Real-time streaming, external database access, and edge workloads rely on TCP or UDP.\nManagement overhead increases and the attack surface expands with every cumbersome workaround that is required when an API fails to provide native support for these protocols. gRPC, TLS, TCP, and UDP should be treated as first class citizens, not as exceptions.\nRouting support for multiple protocols\n2. Your traffic routing needs to support complex scenarios such as weighted load balancing, cross-cluster failover, canary deployments and more\nIf your traffic management use cases go beyond the traditional host and path rules supplied by Ingress, Gateway API is the solution best suited for these complex scenarios. Rules for weighted load balancing, cross-cluster failover, and canary deployments are now built directly into the HTTPRoute specification, eliminating the need for annotations, external routing components or bespoke systems.\nIn addition to a reliance on annotations, traffic routing can live outside the layer. Maybe the platform team stands up a service mesh just for canary support or application teams write retry and failover logic into their services. Sometimes someone writes a homegrown traffic controller that runs on an old server under their desk. An organization with SLOs, revenue that depends on high availability or has compliance requirements should aim for a standardized rule schema that supports most, if not all, traffic routing use case.\nRules for advanced traffic management\n3. You have multiple application teams trying to ship services each with its own routing requirements\nWhen the Ingress API was designed, the cluster admin owning every routing rule was a reasonable design choice. As Kubernetes environments scale to thousands of nodes running countless services, this pattern becomes an obvious bottleneck. It is simply not possible, given the ratio of developers to infrastructure engineers in most organizations, for cluster operators to keep up with the deployment of new services and routing configurations.\nIn order to scale, an organization needs to empower teams to self-serve. It needs to separate the infrastructure layer from the routing layer and enforce security via RBAC. Gateway API provides this modularity with infrastructure teams managing GatewayClass for broad policies, platform teams oversee the Gateway as a shared network entry point, and application teams independently controlling specific routing rules with each team having access to only the resources they are responsible for.\nEmpower teams to manage what they own\nThe bottom line is that if your organization is planning to grow, you need your Kubernetes operations to mature and, consequently, you need to modernize the way you handle ingress. You need to adopt an architecture that treats multi-protocol routing as first-class, expresses traffic management as part of the spec, and gives each team in the chain the ownership it needs if you want the complexity that comes with scale to be manageable.\nHow mature is your ingress?\nMost teams can place themselves in one of these four stages within a sentence or two.\nBeginner. The Kubernetes Ingress API with annotation-driven customization. A single ingress controller managed by the cluster admin. No traffic splitting. Every new service or routing change goes through a ticket.\nIntermediate. Migrating to Gateway API, often by swapping the ingress controller for a Gateway API implementation. Basic HTTPRoute rules deployed. Application teams still depend on the cluster admin or platform team for Gateway-level changes.\nAdvanced. Full Gateway API adoption with role separation enforced through RBAC. Weighted traffic splitting and automatic failover working across clusters. Multi-protocol routing is live in production.\nOptimized. Gateway API integrated with CI/CD for progressive rollouts. Cross-cluster traffic management with automated canary analysis. Multi-protocol routing managed declaratively by application teams. The platform team is no longer in the path of routine deployments.\nMigration Should Be More Than a Simple Replacement\nThe Ingress NGINX retirement put ingress on the table for many organizations, but the real opportunity isn’t tied to that deadline. It’s the chance to rebuild an ingress layer that was designed for a different era of Kubernetes around the workloads and team structures most clusters run today. Teams that treat the migration as a chance to modernize come out with multi-protocol routing, declarative traffic management, and role-based ownership as platform capabilities. Teams that treat it as a controller swap come out with a new logo on the same architecture. The difference is the difference between a migration and a modernization.\nIngress is one of nine pillars in the operational maturity reference architecture. The full nine-pillar reference architecture, including the egress, microsegmentation, observability, and service mesh pillars that build directly on cluster mesh, is in our ebook Building Resilient Multi-Cluster Kubernetes . If you would rather work through it hands-on, our reference architecture workshop walks the first five pillars, the next steps on your operational maturity journey, in a working environment.\nRead our ebook, Building Resilient Multi-Cluster Kubernetes\nBest Practices\nJoin our mailing list\nGet updates on blog posts, workshops, certification programs, new releases, and more!",
+  "clean_text": "SIG Network introduced Ingress in 2015 as a minimal way to expose HTTP services from a cluster . That simplicity was an advantage at a time when most workloads were HTTP, clusters were single-tenant, and the occasional gap could be papered over with a vendor annotation. As adoption grew and Kubernetes started running serious production workloads across multi-tenant, multi-cluster, multi-protocol environments, the annotations multiplied into incompatible dialects, and most organizations outgrew what Ingress could handle on its own.\nThe Ingress-NGINX Controller retirement, and the migration conversations that followed, exposed these cracks, but they were never the full story. Ultimately, ingress needed to grow up and the arrival of Gateway API, with SIG Network freezing the Ingress at v1 in favor of this successor, was what that looked like.\nEven if migration has not been forced on your organization by the Ingress NGINX retirement, any team trying to reach Kubernetes operational maturity should be considering Gateway API as the next step on that journey.\nThree reasons why Gateway API is more than and Ingress replacement\nGateway API is not just a new and improved Ingress with a few additional features bolted on. It re-architects incoming traffic management in three key ways that are essential to any organization quickly growing beyond one or two teams operating a couple of clusters: it now supports common protocols beyond HTTP, it provides standardized schemas for advanced traffic routing and it has decoupled infrastructure from application traffic routing allowing separation management concerns.\nGateway API should be on the roadmap if any of the following use cases apply to your organization:\n1. You need expanded protocol support\nAre you running a diverse collection of AI workloads in your clusters? Do you host streaming services? Do your workloads need external database access?\nProtocols like gRPC, TLS, TCP, and UDP are now integrated as first-class resources rather than being treated as secondary extensions requiring complex annotations or vendor-specific workarounds. This isn’t a cosmetic change. When the Ingress API was designed, treating HTTP as the default was a reasonable assumption. In 2026, it isn’t. AI inference traffic is overwhelmingly gRPC. Real-time streaming, external database access, and edge workloads rely on TCP or UDP.\nManagement overhead increases and the attack surface expands with every cumbersome workaround that is required when an API fails to provide native support for these protocols. gRPC, TLS, TCP, and UDP should be treated as first class citizens, not as exceptions.\nRouting support for multiple protocols\n2. Your traffic routing needs to support complex scenarios such as weighted load balancing, cross-cluster failover, canary deployments and more\nIf your traffic management use cases go beyond the traditional host and path rules supplied by Ingress, Gateway API is the solution best suited for these complex scenarios. Rules for weighted load balancing, cross-cluster failover, and canary deployments are now built directly into the HTTPRoute specification, eliminating the need for annotations, external routing components or bespoke systems.\nIn addition to a reliance on annotations, traffic routing can live outside the layer. Maybe the platform team stands up a service mesh just for canary support or application teams write retry and failover logic into their services. Sometimes someone writes a homegrown traffic controller that runs on an old server under their desk. An organization with SLOs, revenue that depends on high availability or has compliance requirements should aim for a standardized rule schema that supports most, if not all, traffic routing use case.\nRules for advanced traffic management\n3. You have multiple application teams trying to ship services each with its own routing requirements\nWhen the Ingress API was designed, the cluster admin owning every routing rule was a reasonable design choice. As Kubernetes environments scale to thousands of nodes running countless services, this pattern becomes an obvious bottleneck. It is simply not possible, given the ratio of developers to infrastructure engineers in most organizations, for cluster operators to keep up with the deployment of new services and routing configurations.\nIn order to scale, an organization needs to empower teams to self-serve. It needs to separate the infrastructure layer from the routing layer and enforce security via RBAC. Gateway API provides this modularity with infrastructure teams managing GatewayClass for broad policies, platform teams oversee the Gateway as a shared network entry point, and application teams independently controlling specific routing rules with each team having access to only the resources they are responsible for.\nEmpower teams to manage what they own\nThe bottom line is that if your organization is planning to grow, you need your Kubernetes operations to mature and, consequently, you need to modernize the way you handle ingress. You need to adopt an architecture that treats multi-protocol routing as first-class, expresses traffic management as part of the spec, and gives each team in the chain the ownership it needs if you want the complexity that comes with scale to be manageable.\nHow mature is your ingress?\nMost teams can place themselves in one of these four stages within a sentence or two.\nBeginner. The Kubernetes Ingress API with annotation-driven customization. A single ingress controller managed by the cluster admin. No traffic splitting. Every new service or routing change goes through a ticket.\nIntermediate. Migrating to Gateway API, often by swapping the ingress controller for a Gateway API implementation. Basic HTTPRoute rules deployed. Application teams still depend on the cluster admin or platform team for Gateway-level changes.\nAdvanced. Full Gateway API adoption with role separation enforced through RBAC. Weighted traffic splitting and automatic failover working across clusters. Multi-protocol routing is live in production.\nOptimized. Gateway API integrated with CI/CD for progressive rollouts. Cross-cluster traffic management with automated canary analysis. Multi-protocol routing managed declaratively by application teams. The platform team is no longer in the path of routine deployments.\nMigration Should Be More Than a Simple Replacement\nThe Ingress NGINX retirement put ingress on the table for many organizations, but the real opportunity isn’t tied to that deadline. It’s the chance to rebuild an ingress layer that was designed for a different era of Kubernetes around the workloads and team structures most clusters run today. Teams that treat the migration as a chance to modernize come out with multi-protocol routing, declarative traffic management, and role-based ownership as platform capabilities. Teams that treat it as a controller swap come out with a new logo on the same architecture. The difference is the difference between a migration and a modernization.\nIngress is one of nine pillars in the operational maturity reference architecture. The full nine-pillar reference architecture, including the egress, microsegmentation, observability, and service mesh pillars that build directly on cluster mesh, is in our ebook Building Resilient Multi-Cluster Kubernetes . If you would rather work through it hands-on, our reference architecture workshop walks the first five pillars, the next steps on your operational maturity journey, in a working environment.\nRead our ebook, Building Resilient Multi-Cluster Kubernetes\nBest Practices\nJoin our mailing list\nGet updates on blog posts, workshops, certification programs, new releases, and more!",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-07/r-030-kubernetes-operational-maturity-why-you-should-modernize-your-ingress-.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-07/r-030-kubernetes-operational-maturity-why-you-should-modernize-your-ingress-.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 7719,
+    "paragraph_count": 32,
+    "sentence_count": 65,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 7719,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "5b15eaa86ad73280",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "7282a4d66ba1b525",
+  "content_hash": "5b15eaa86ad73280",
+  "full_text_hash": "5b15eaa86ad73280",
+  "semantic_hash": "5de3601175632ea3",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-07T02:01:23.485Z",
+  "last_seen_at": "2026-07-07T02:01:23.485Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "SIG Network introduced Ingress in 2015 as a minimal way to expose HTTP services from a cluster. That simplicity was an advantage at a time when most workloads were HTTP, clusters were single-tenant, and the... The post Kubernetes Operational Maturity: Why You Should Modernize Your Ingress with Gateway API appeared first on Tigera – Creator of Calico. ]]>",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "SIG Network introduced Ingress in 2015 as a minimal way to expose HTTP services from a cluster .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "That simplicity was an advantage at a time when most workloads were HTTP, clusters were single-tenant, and the occasional gap could be papered over with a vendor annotation.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "As adoption grew and Kubernetes started running serious production workloads across multi-tenant, multi-cluster, multi-protocol environments, the annotations multiplied into incompatible dialects, and most organizations outgrew what Ingress could handle on its own.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The Ingress-NGINX Controller retirement, and the migration conversations that followed, exposed these cracks, but they were never the full story.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Ultimately, ingress needed to grow up and the arrival of Gateway API, with SIG Network freezing the Ingress at v1 in favor of this successor, was what that looked like.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-07T02:01:23.485Z",
+  "business_elements": {
+    "companies": [
+      "Tigera Blog (Calico",
+      "AI Security)"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2015",
+      "1",
+      "2026",
+      "2",
+      "3"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "SIG Network introduced Ingress in 2015 as a minimal way to expose HTTP services from a cluster. That simplicity was an advantage at a time when most workloads were HTTP, clusters were single-tenant, and the... The post Kubernetes Operational Maturity: Why You Should Modernize Your Ingress with Gateway API appeared first on Tigera – Creator of Calico. ]]>",
+      "SIG Network introduced Ingress in 2015 as a minimal way to expose HTTP services from a cluster .",
+      "That simplicity was an advantage at a time when most workloads were HTTP, clusters were single-tenant, and the occasional gap could be papered over with a vendor annotation."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Kubernetes Operational Maturity: Why You Should Modernize Your Ingress with Gateway API\n\n- raw_id: R-030\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://www.tigera.io/blog/kubernetes-operational-maturity-why-you-should-modernize-your-ingress-with-gateway-api/\n- source_name: Tigera Blog (Calico / AI Security)\n- collected_at: 2026-07-07T02:01:23.485Z\n\n## clean_text\n\nSIG Network introduced Ingress in 2015 as a minimal way to expose HTTP services from a cluster . That simplicity was an advantage at a time when most workloads were HTTP, clusters were single-tenant, and the occasional gap could be papered over with a vendor annotation. As adoption grew and Kubernetes started running serious production workloads across multi-tenant, multi-cluster, multi-protocol environments, the annotations multiplied into incompatible dialects, and most organizations outgrew what Ingress could handle on its own.\nThe Ingress-NGINX Controller retirement, and the migration conversations that followed, exposed these cracks, but they were never the full story. Ultimately, ingress needed to grow up and the arrival of Gateway API, with SIG Network freezing the Ingress at v1 in favor of this successor, was what that looked like.\nEven if migration has not been forced on your organization by the Ingress NGINX retirement, any team trying to reach Kubernetes operational maturity should be considering Gateway API as the next step on that journey.\nThree reasons why Gateway API is more than and Ingress replacement\nGateway API is not just a new and improved Ingress with a few additional features bolted on. It re-architects incoming traffic management in three key ways that are essential to any organization quickly growing beyond one or two teams operating a couple of clusters: it now supports common protocols beyond HTTP, it provides standardized schemas for advanced traffic routing and it has decoupled infrastructure from application traffic routing allowing separation management concerns.\nGateway API should be on the roadmap if any of the following use cases apply to your organization:\n1. You need expanded protocol support\nAre you running a diverse collection of AI workloads in your clusters? Do you host streaming services? Do your workloads need external database access?\nProtocols like gRPC, TLS, TCP, and UDP are now integrated as first-class resources rather than being treated as secondary extensions requiring complex annotations or vendor-specific workarounds. This isn’t a cosmetic change. When the Ingress API was designed, treating HTTP as the default was a reasonable assumption. In 2026, it isn’t. AI inference traffic is overwhelmingly gRPC. Real-time streaming, external database access, and edge workloads rely on TCP or UDP.\nManagement overhead increases and the attack surface expands with every cumbersome workaround that is required when an API fails to provide native support for these protocols. gRPC, TLS, TCP, and UDP should be treated as first class citizens, not as exceptions.\nRouting support for multiple protocols\n2. Your traffic routing needs to support complex scenarios such as weighted load balancing, cross-cluster failover, canary deployments and more\nIf your traffic management use cases go beyond the traditional host and path rules supplied by Ingress, Gateway API is the solution best suited for these complex scenarios. Rules for weighted load balancing, cross-cluster failover, and canary deployments are now built directly into the HTTPRoute specification, eliminating the need for annotations, external routing components or bespoke systems.\nIn addition to a reliance on annotations, traffic routing can live outside the layer. Maybe the platform team stands up a service mesh just for canary support or application teams write retry and failover logic into their services. Sometimes someone writes a homegrown traffic controller that runs on an old server under their desk. An organization with SLOs, revenue that depends on high availability or has compliance requirements should aim for a standardized rule schema that supports most, if not all, traffic routing use case.\nRules for advanced traffic management\n3. You have multiple application teams trying to ship services each with its own routing requirements\nWhen the Ingress API was designed, the cluster admin owning every routing rule was a reasonable design choice. As Kubernetes environments scale to thousands of nodes running countless services, this pattern becomes an obvious bottleneck. It is simply not possible, given the ratio of developers to infrastructure engineers in most organizations, for cluster operators to keep up with the deployment of new services and routing configurations.\nIn order to scale, an organization needs to empower teams to self-serve. It needs to separate the infrastructure layer from the routing layer and enforce security via RBAC. Gateway API provides this modularity with infrastructure teams managing GatewayClass for broad policies, platform teams oversee the Gateway as a shared network entry point, and application teams independently controlling specific routing rules with each team having access to only the resources they are responsible for.\nEmpower teams to manage what they own\nThe bottom line is that if your organization is planning to grow, you need your Kubernetes operations to mature and, consequently, you need to modernize the way you handle ingress. You need to adopt an architecture that treats multi-protocol routing as first-class, expresses traffic management as part of the spec, and gives each team in the chain the ownership it needs if you want the complexity that comes with scale to be manageable.\nHow mature is your ingress?\nMost teams can place themselves in one of these four stages within a sentence or two.\nBeginner. The Kubernetes Ingress API with annotation-driven customization. A single ingress controller managed by the cluster admin. No traffic splitting. Every new service or routing change goes through a ticket.\nIntermediate. Migrating to Gateway API, often by swapping the ingress controller for a Gateway API implementation. Basic HTTPRoute rules deployed. Application teams still depend on the cluster admin or platform team for Gateway-level changes.\nAdvanced. Full Gateway API adoption with role separation enforced through RBAC. Weighted traffic splitting and automatic failover working across clusters. Multi-protocol routing is live in production.\nOptimized. Gateway API integrated with CI/CD for progressive rollouts. Cross-cluster traffic management with automated canary analysis. Multi-protocol routing managed declaratively by application teams. The platform team is no longer in the path of routine deployments.\nMigration Should Be More Than a Simple Replacement\nThe Ingress NGINX retirement put ingress on the table for many organizations, but the real opportunity isn’t tied to that deadline. It’s the chance to rebuild an ingress layer that was designed for a different era of Kubernetes around the workloads and team structures most clusters run today. Teams that treat the migration as a chance to modernize come out with multi-protocol routing, declarative traffic management, and role-based ownership as platform capabilities. Teams that treat it as a controller swap come out with a new logo on the same architecture. The difference is the difference between a migration and a modernization.\nIngress is one of nine pillars in the operational maturity reference architecture. The full nine-pillar reference architecture, including the egress, microsegmentation, observability, and service mesh pillars that build directly on cluster mesh, is in our ebook Building Resilient Multi-Cluster Kubernetes . If you would rather work through it hands-on, our reference architecture workshop walks the first five pillars, the next steps on your operational maturity journey, in a working environment.\nRead our ebook, Building Resilient Multi-Cluster Kubernetes\nBest Practices\nJoin our mailing list\nGet updates on blog posts, workshops, certification programs, new releases, and more!\n\n## full_text\n\nSIG Network introduced Ingress in 2015 as a minimal way to expose HTTP services from a cluster . That simplicity was an advantage at a time when most workloads were HTTP, clusters were single-tenant, and the occasional gap could be papered over with a vendor annotation. As adoption grew and Kubernetes started running serious production workloads across multi-tenant, multi-cluster, multi-protocol environments, the annotations multiplied into incompatible dialects, and most organizations outgrew what Ingress could handle on its own.\nThe Ingress-NGINX Controller retirement, and the migration conversations that followed, exposed these cracks, but they were never the full story. Ultimately, ingress needed to grow up and the arrival of Gateway API, with SIG Network freezing the Ingress at v1 in favor of this successor, was what that looked like.\nEven if migration has not been forced on your organization by the Ingress NGINX retirement, any team trying to reach Kubernetes operational maturity should be considering Gateway API as the next step on that journey.\nThree reasons why Gateway API is more than and Ingress replacement\nGateway API is not just a new and improved Ingress with a few additional features bolted on. It re-architects incoming traffic management in three key ways that are essential to any organization quickly growing beyond one or two teams operating a couple of clusters: it now supports common protocols beyond HTTP, it provides standardized schemas for advanced traffic routing and it has decoupled infrastructure from application traffic routing allowing separation management concerns.\nGateway API should be on the roadmap if any of the following use cases apply to your organization:\n1. You need expanded protocol support\nAre you running a diverse collection of AI workloads in your clusters? Do you host streaming services? Do your workloads need external database access?\nProtocols like gRPC, TLS, TCP, and UDP are now integrated as first-class resources rather than being treated as secondary extensions requiring complex annotations or vendor-specific workarounds. This isn’t a cosmetic change. When the Ingress API was designed, treating HTTP as the default was a reasonable assumption. In 2026, it isn’t. AI inference traffic is overwhelmingly gRPC. Real-time streaming, external database access, and edge workloads rely on TCP or UDP.\nManagement overhead increases and the attack surface expands with every cumbersome workaround that is required when an API fails to provide native support for these protocols. gRPC, TLS, TCP, and UDP should be treated as first class citizens, not as exceptions.\nRouting support for multiple protocols\n2. Your traffic routing needs to support complex scenarios such as weighted load balancing, cross-cluster failover, canary deployments and more\nIf your traffic management use cases go beyond the traditional host and path rules supplied by Ingress, Gateway API is the solution best suited for these complex scenarios. Rules for weighted load balancing, cross-cluster failover, and canary deployments are now built directly into the HTTPRoute specification, eliminating the need for annotations, external routing components or bespoke systems.\nIn addition to a reliance on annotations, traffic routing can live outside the layer. Maybe the platform team stands up a service mesh just for canary support or application teams write retry and failover logic into their services. Sometimes someone writes a homegrown traffic controller that runs on an old server under their desk. An organization with SLOs, revenue that depends on high availability or has compliance requirements should aim for a standardized rule schema that supports most, if not all, traffic routing use case.\nRules for advanced traffic management\n3. You have multiple application teams trying to ship services each with its own routing requirements\nWhen the Ingress API was designed, the cluster admin owning every routing rule was a reasonable design choice. As Kubernetes environments scale to thousands of nodes running countless services, this pattern becomes an obvious bottleneck. It is simply not possible, given the ratio of developers to infrastructure engineers in most organizations, for cluster operators to keep up with the deployment of new services and routing configurations.\nIn order to scale, an organization needs to empower teams to self-serve. It needs to separate the infrastructure layer from the routing layer and enforce security via RBAC. Gateway API provides this modularity with infrastructure teams managing GatewayClass for broad policies, platform teams oversee the Gateway as a shared network entry point, and application teams independently controlling specific routing rules with each team having access to only the resources they are responsible for.\nEmpower teams to manage what they own\nThe bottom line is that if your organization is planning to grow, you need your Kubernetes operations to mature and, consequently, you need to modernize the way you handle ingress. You need to adopt an architecture that treats multi-protocol routing as first-class, expresses traffic management as part of the spec, and gives each team in the chain the ownership it needs if you want the complexity that comes with scale to be manageable.\nHow mature is your ingress?\nMost teams can place themselves in one of these four stages within a sentence or two.\nBeginner. The Kubernetes Ingress API with annotation-driven customization. A single ingress controller managed by the cluster admin. No traffic splitting. Every new service or routing change goes through a ticket.\nIntermediate. Migrating to Gateway API, often by swapping the ingress controller for a Gateway API implementation. Basic HTTPRoute rules deployed. Application teams still depend on the cluster admin or platform team for Gateway-level changes.\nAdvanced. Full Gateway API adoption with role separation enforced through RBAC. Weighted traffic splitting and automatic failover working across clusters. Multi-protocol routing is live in production.\nOptimized. Gateway API integrated with CI/CD for progressive rollouts. Cross-cluster traffic management with automated canary analysis. Multi-protocol routing managed declaratively by application teams. The platform team is no longer in the path of routine deployments.\nMigration Should Be More Than a Simple Replacement\nThe Ingress NGINX retirement put ingress on the table for many organizations, but the real opportunity isn’t tied to that deadline. It’s the chance to rebuild an ingress layer that was designed for a different era of Kubernetes around the workloads and team structures most clusters run today. Teams that treat the migration as a chance to modernize come out with multi-protocol routing, declarative traffic management, and role-based ownership as platform capabilities. Teams that treat it as a controller swap come out with a new logo on the same architecture. The difference is the difference between a migration and a modernization.\nIngress is one of nine pillars in the operational maturity reference architecture. The full nine-pillar reference architecture, including the egress, microsegmentation, observability, and service mesh pillars that build directly on cluster mesh, is in our ebook Building Resilient Multi-Cluster Kubernetes . If you would rather work through it hands-on, our reference architecture workshop walks the first five pillars, the next steps on your operational maturity journey, in a working environment.\nRead our ebook, Building Resilient Multi-Cluster Kubernetes\nBest Practices\nJoin our mailing list\nGet updates on blog posts, workshops, certification programs, new releases, and more!\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] SIG Network introduced Ingress in 2015 as a minimal way to expose HTTP services from a cluster. That simplicity was an advantage at a time when most workloads were HTTP, clusters were single-tenant, and the... The post Kubernetes Operational Maturity: Why You Should Modernize Your Ingress with Gateway API appeared first on Tigera – Creator of Calico. ]]>\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] SIG Network introduced Ingress in 2015 as a minimal way to expose HTTP services from a cluster .\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] That simplicity was an advantage at a time when most workloads were HTTP, clusters were single-tenant, and the occasional gap could be papered over with a vendor annotation.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] As adoption grew and Kubernetes started running serious production workloads across multi-tenant, multi-cluster, multi-protocol environments, the annotations multiplied into incompatible dialects, and most organizations outgrew what Ingress could handle on its own.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The Ingress-NGINX Controller retirement, and the migration conversations that followed, exposed these cracks, but they were never the full story.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Ultimately, ingress needed to grow up and the arrival of Gateway API, with SIG Network freezing the Ingress at v1 in favor of this successor, was what that looked like.\n"
+}

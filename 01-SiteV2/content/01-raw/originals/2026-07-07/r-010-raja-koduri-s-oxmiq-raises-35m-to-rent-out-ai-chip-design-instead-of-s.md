@@ -1,0 +1,274 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-010
+title: "Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://thenextweb.com/news/oxmiq-35-million-oxcore-chip-architecture"
+canonical_url: "https://thenextweb.com/news/oxmiq-35-million-oxcore-chip-architecture"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "ai_hardware_original"
+search_path_label: "AI hardware original-source path"
+author: ""
+published_at: ""
+collected_at: 2026-07-07T02:01:23.360Z
+language: mixed
+full_text_hash: f114b3c991a5c6c6
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-010-raja-koduri-s-oxmiq-raises-35m-to-rent-out-ai-chip-design-instead-of-s.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-010-raja-koduri-s-oxmiq-raises-35m-to-rent-out-ai-chip-design-instead-of-s.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":8899,"paragraph_count":40,"sentence_count":56,"boilerplate_hits":2,"symbol_ratio":0.0004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 8899
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f114b3c991a5c6c6","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: b7543ce87aeb9664
+content_hash: f114b3c991a5c6c6
+semantic_hash: f23e4a29b92a0773
+duplicate_of: ""
+first_seen_at: "2026-07-07T02:01:23.360Z"
+last_seen_at: 2026-07-07T02:01:23.360Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["ai_hardware_lens","commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","Nvidia","Apple"],"products":[],"people":[],"industries":[],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理"],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["$35m","$60m"],"quotes":[]}
+evidence_seed: {"company_actions":["Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The rou.... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=ai_hardware_original","Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own.","The round brings the company’s total capital raised to $60m since its founding by veteran chip architect Raja Koduri."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The rou.... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The round brings the company’s total capital raised to $60m since its founding by veteran chip architect Raja Koduri.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The pitch is […] Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The pitch is straightforward even if the engineering underneath it is not.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-07T02:01:23.360Z
+theme: ai-hardware-investment-signal
+keyword_group: ai-hardware-investment-signal
+copyright_note: local research archive only
+---
+
+# Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips
+
+## clean_text
+
+Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips
+Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The round brings the company’s total capital raised to $60m since its founding by veteran chip architect Raja Koduri. The pitch is […]
+Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The round brings the company’s total capital raised to $60m since its founding by veteran chip architect Raja Koduri.
+The pitch is straightforward even if the engineering underneath it is not. Building an advanced AI chip from scratch typically costs hundreds of millions of dollars and takes years, a barrier that has kept custom silicon out of reach for all but the largest cloud providers and chipmakers.
+Oxmiq wants to sell the design itself as licensable IP, the way Arm licenses processor cores, rather than selling finished chips. OxCore is the product at the centre of that bet.
+It integrates three compute engines, a CUDA-compatible GPU engine, a tensor processing engine, and an orchestration engine that coordinates workloads across the system, functions typically split across separate chips.
+Oxmiq says the tighter coupling is built for near-memory compute, reducing the data movement that drives up both cost and energy use in AI workloads.
+The round was co-led by Fundomo and Samsung Catalyst Fund, with participation from MediaTek, Pegatron Venture Capital, Darwin Ventures, Morgan Creek Digital, and other strategic and financial investors named in the announcement.
+That mix, spanning a memory and foundry-adjacent giant in Samsung, a contract manufacturer in Pegatron, and a fabless chipmaker in MediaTek, suggests interest that goes beyond pure financial return.
+Perhaps the more interesting signal is who just joined the board. Jim Keller, the chip architect whose career runs through Apple, AMD’s Zen architecture and Tesla’s self-driving silicon before he became chief executive of Tenstorrent, has taken a board seat at Oxmiq.
+Former Intel process technology fellow Valluri “Bob” Rao has joined as an advisor. Neither appointment is disclosed as carrying an equity or compensation figure.
+Koduri’s own background gives the pitch some weight. He led graphics at AMD, then Apple, then spent years running Intel’s graphics and accelerated-computing efforts before striking out on his own, putting him among a small group of architects who have shipped GPU silicon at three of the industry’s largest companies.
+Oxmiq is headquartered in Campbell, California, with a development site in Hyderabad, India. The licensable-IP model itself is not new in chip design.
+Arm has run a version of it for decades, and RISC-V startups such as SiFive have built entire businesses on licensing processor cores rather than shipping finished silicon.
+What is less tested is applying that model to frontier AI accelerators, where the biggest buyers, Nvidia chief among them, have historically preferred to own their architecture outright rather than license someone else’s.
+Oxmiq’s bet is that enough semiconductor companies and system builders would rather pay for a proven, working core than gamble hundreds of millions of dollars and several years of engineering time building one from nothing.
+That calculation has become more attractive as AI infrastructure spending has ballooned and more companies want their own custom silicon rather than relying entirely on Nvidia or a hyperscaler’s in-house chip programme.
+The financing terms beyond the headline number were not disclosed. Oxmiq did not specify what stake its new investors took or what near-term revenue, if any, the company is generating from licensing deals already in place, leaving the commercial traction underlying the round largely unverified from the public record.
+Whether the bet pays off will depend less on the funding round than on whether any of Oxmiq’s backers actually put OxCore into silicon that ships.
+For now, the $35m buys the company runway and a board seat from one of the industry’s more credible names, which is its own kind of validation in a sector where trust in an unproven architecture is the scarcest resource of all.
+Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips
+Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The round brings the company’s total capital raised to $60m since its founding by veteran chip architect Raja Koduri. The pitch is […]
+Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The round brings the company’s total capital raised to $60m since its founding by veteran chip architect Raja Koduri.
+The pitch is straightforward even if the engineering underneath it is not. Building an advanced AI chip from scratch typically costs hundreds of millions of dollars and takes years, a barrier that has kept custom silicon out of reach for all but the largest cloud providers and chipmakers.
+Oxmiq wants to sell the design itself as licensable IP, the way Arm licenses processor cores, rather than selling finished chips. OxCore is the product at the centre of that bet.
+It integrates three compute engines, a CUDA-compatible GPU engine, a tensor processing engine, and an orchestration engine that coordinates workloads across the system, functions typically split across separate chips.
+Oxmiq says the tighter coupling is built for near-memory compute, reducing the data movement that drives up both cost and energy use in AI workloads.
+The round was co-led by Fundomo and Samsung Catalyst Fund, with participation from MediaTek, Pegatron Venture Capital, Darwin Ventures, Morgan Creek Digital, and other strategic and financial investors named in the announcement.
+That mix, spanning a memory and foundry-adjacent giant in Samsung, a contract manufacturer in Pegatron, and a fabless chipmaker in MediaTek, suggests interest that goes beyond pure financial return.
+Perhaps the more interesting signal is who just joined the board. Jim Keller, the chip architect whose career runs through Apple, AMD’s Zen architecture and Tesla’s self-driving silicon before he became chief executive of Tenstorrent, has taken a board seat at Oxmiq.
+Former Intel process technology fellow Valluri “Bob” Rao has joined as an advisor. Neither appointment is disclosed as carrying an equity or compensation figure.
+Koduri’s own background gives the pitch some weight. He led graphics at AMD, then Apple, then spent years running Intel’s graphics and accelerated-computing efforts before striking out on his own, putting him among a small group of architects who have shipped GPU silicon at three of the industry’s largest companies.
+Oxmiq is headquartered in Campbell, California, with a development site in Hyderabad, India. The licensable-IP model itself is not new in chip design.
+Arm has run a version of it for decades, and RISC-V startups such as SiFive have built entire businesses on licensing processor cores rather than shipping finished silicon.
+What is less tested is applying that model to frontier AI accelerators, where the biggest buyers, Nvidia chief among them, have historically preferred to own their architecture outright rather than license someone else’s.
+Oxmiq’s bet is that enough semiconductor companies and system builders would rather pay for a proven, working core than gamble hundreds of millions of dollars and several years of engineering time building one from nothing.
+That calculation has become more attractive as AI infrastructure spending has ballooned and more companies want their own custom silicon rather than relying entirely on Nvidia or a hyperscaler’s in-house chip programme.
+The financing terms beyond the headline number were not disclosed. Oxmiq did not specify what stake its new investors took or what near-term revenue, if any, the company is generating from licensing deals already in place, leaving the commercial traction underlying the round largely unverified from the public record.
+Whether the bet pays off will depend less on the funding round than on whether any of Oxmiq’s backers actually put OxCore into silicon that ships.
+For now, the $35m buys the company runway and a board seat from one of the industry’s more credible names, which is its own kind of validation in a sector where trust in an unproven architecture is the scarcest resource of all.
+
+## full_text
+
+Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips
+Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The round brings the company’s total capital raised to $60m since its founding by veteran chip architect Raja Koduri. The pitch is […]
+Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The round brings the company’s total capital raised to $60m since its founding by veteran chip architect Raja Koduri.
+The pitch is straightforward even if the engineering underneath it is not. Building an advanced AI chip from scratch typically costs hundreds of millions of dollars and takes years, a barrier that has kept custom silicon out of reach for all but the largest cloud providers and chipmakers.
+Oxmiq wants to sell the design itself as licensable IP, the way Arm licenses processor cores, rather than selling finished chips. OxCore is the product at the centre of that bet.
+It integrates three compute engines, a CUDA-compatible GPU engine, a tensor processing engine, and an orchestration engine that coordinates workloads across the system, functions typically split across separate chips.
+Oxmiq says the tighter coupling is built for near-memory compute, reducing the data movement that drives up both cost and energy use in AI workloads.
+The round was co-led by Fundomo and Samsung Catalyst Fund, with participation from MediaTek, Pegatron Venture Capital, Darwin Ventures, Morgan Creek Digital, and other strategic and financial investors named in the announcement.
+That mix, spanning a memory and foundry-adjacent giant in Samsung, a contract manufacturer in Pegatron, and a fabless chipmaker in MediaTek, suggests interest that goes beyond pure financial return.
+Perhaps the more interesting signal is who just joined the board. Jim Keller, the chip architect whose career runs through Apple, AMD’s Zen architecture and Tesla’s self-driving silicon before he became chief executive of Tenstorrent, has taken a board seat at Oxmiq.
+Former Intel process technology fellow Valluri “Bob” Rao has joined as an advisor. Neither appointment is disclosed as carrying an equity or compensation figure.
+Koduri’s own background gives the pitch some weight. He led graphics at AMD, then Apple, then spent years running Intel’s graphics and accelerated-computing efforts before striking out on his own, putting him among a small group of architects who have shipped GPU silicon at three of the industry’s largest companies.
+Oxmiq is headquartered in Campbell, California, with a development site in Hyderabad, India. The licensable-IP model itself is not new in chip design.
+Arm has run a version of it for decades, and RISC-V startups such as SiFive have built entire businesses on licensing processor cores rather than shipping finished silicon.
+What is less tested is applying that model to frontier AI accelerators, where the biggest buyers, Nvidia chief among them, have historically preferred to own their architecture outright rather than license someone else’s.
+Oxmiq’s bet is that enough semiconductor companies and system builders would rather pay for a proven, working core than gamble hundreds of millions of dollars and several years of engineering time building one from nothing.
+That calculation has become more attractive as AI infrastructure spending has ballooned and more companies want their own custom silicon rather than relying entirely on Nvidia or a hyperscaler’s in-house chip programme.
+The financing terms beyond the headline number were not disclosed. Oxmiq did not specify what stake its new investors took or what near-term revenue, if any, the company is generating from licensing deals already in place, leaving the commercial traction underlying the round largely unverified from the public record.
+Whether the bet pays off will depend less on the funding round than on whether any of Oxmiq’s backers actually put OxCore into silicon that ships.
+For now, the $35m buys the company runway and a board seat from one of the industry’s more credible names, which is its own kind of validation in a sector where trust in an unproven architecture is the scarcest resource of all.
+Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips
+Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The round brings the company’s total capital raised to $60m since its founding by veteran chip architect Raja Koduri. The pitch is […]
+Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The round brings the company’s total capital raised to $60m since its founding by veteran chip architect Raja Koduri.
+The pitch is straightforward even if the engineering underneath it is not. Building an advanced AI chip from scratch typically costs hundreds of millions of dollars and takes years, a barrier that has kept custom silicon out of reach for all but the largest cloud providers and chipmakers.
+Oxmiq wants to sell the design itself as licensable IP, the way Arm licenses processor cores, rather than selling finished chips. OxCore is the product at the centre of that bet.
+It integrates three compute engines, a CUDA-compatible GPU engine, a tensor processing engine, and an orchestration engine that coordinates workloads across the system, functions typically split across separate chips.
+Oxmiq says the tighter coupling is built for near-memory compute, reducing the data movement that drives up both cost and energy use in AI workloads.
+The round was co-led by Fundomo and Samsung Catalyst Fund, with participation from MediaTek, Pegatron Venture Capital, Darwin Ventures, Morgan Creek Digital, and other strategic and financial investors named in the announcement.
+That mix, spanning a memory and foundry-adjacent giant in Samsung, a contract manufacturer in Pegatron, and a fabless chipmaker in MediaTek, suggests interest that goes beyond pure financial return.
+Perhaps the more interesting signal is who just joined the board. Jim Keller, the chip architect whose career runs through Apple, AMD’s Zen architecture and Tesla’s self-driving silicon before he became chief executive of Tenstorrent, has taken a board seat at Oxmiq.
+Former Intel process technology fellow Valluri “Bob” Rao has joined as an advisor. Neither appointment is disclosed as carrying an equity or compensation figure.
+Koduri’s own background gives the pitch some weight. He led graphics at AMD, then Apple, then spent years running Intel’s graphics and accelerated-computing efforts before striking out on his own, putting him among a small group of architects who have shipped GPU silicon at three of the industry’s largest companies.
+Oxmiq is headquartered in Campbell, California, with a development site in Hyderabad, India. The licensable-IP model itself is not new in chip design.
+Arm has run a version of it for decades, and RISC-V startups such as SiFive have built entire businesses on licensing processor cores rather than shipping finished silicon.
+What is less tested is applying that model to frontier AI accelerators, where the biggest buyers, Nvidia chief among them, have historically preferred to own their architecture outright rather than license someone else’s.
+Oxmiq’s bet is that enough semiconductor companies and system builders would rather pay for a proven, working core than gamble hundreds of millions of dollars and several years of engineering time building one from nothing.
+That calculation has become more attractive as AI infrastructure spending has ballooned and more companies want their own custom silicon rather than relying entirely on Nvidia or a hyperscaler’s in-house chip programme.
+The financing terms beyond the headline number were not disclosed. Oxmiq did not specify what stake its new investors took or what near-term revenue, if any, the company is generating from licensing deals already in place, leaving the commercial traction underlying the round largely unverified from the public record.
+Whether the bet pays off will depend less on the funding round than on whether any of Oxmiq’s backers actually put OxCore into silicon that ships.
+For now, the $35m buys the company runway and a board seat from one of the industry’s more credible names, which is its own kind of validation in a sector where trust in an unproven architecture is the scarcest resource of all.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 91
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":8899,"paragraph_count":40,"sentence_count":56,"boilerplate_hits":2,"symbol_ratio":0.0004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The rou.... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=ai_hardware_original
+
+2. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own.
+
+3. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   The round brings the company’s total capital raised to $60m since its founding by veteran chip architect Raja Koduri.
+
+4. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   The pitch is […] Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The pitch is straightforward even if the engineering underneath it is not.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Nvidia, Apple
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: $35m, $60m
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The rou.... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=ai_hardware_original / Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. / The round brings the company’s total capital raised to $60m since its founding by veteran chip architect Raja Koduri.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: ai_hardware_lens,commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The rou.... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=ai_hardware_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
