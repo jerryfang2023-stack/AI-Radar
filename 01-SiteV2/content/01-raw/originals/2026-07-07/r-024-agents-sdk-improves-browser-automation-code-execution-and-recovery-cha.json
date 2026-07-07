@@ -1,0 +1,267 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-024",
+  "title": "Agents SDK improves browser automation, code execution, and recovery · Changelog",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://developers.cloudflare.com/changelog/post/2026-06-16-agents-sdk-v0161/",
+  "canonical_url": "https://developers.cloudflare.com/changelog/post/2026-06-16-agents-sdk-v0161",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-07T02:46:59.472Z",
+  "language": "mixed",
+  "full_text": "Changelog\nNew updates and improvements at Cloudflare.\nSubscribe to RSS View RSS feeds\n← Back to all posts\nAgents SDK improves browser automation, code execution, and recovery\nJun 16, 2026 Agents Workers\nThe latest release of the Agents SDK ↗ makes it easier to build agents that can safely interact with real systems and keep working through interruptions.\nAgents can now browse websites through Browser Run, write code against external tools through Code Mode, use client-provided tools when delegating to Think sub-agents, and recover more reliably from deploys, Durable Object evictions, and connection churn.\nSafer browser automation\nAgents can now use Browser Run through a single durable browser_execute tool. Instead of choosing from a fixed list of actions, the model writes code against the Chrome DevTools Protocol (CDP) and can inspect pages, capture screenshots, read rendered content, debug frontend behavior, and interact with live browser sessions.\nJavaScript\nTypeScript\nJavaScript const browserTools = createBrowserTools ( {\nctx : this . ctx ,\nbrowser : this . env . BROWSER ,\nloader : this . env . LOADER ,\nsession : { mode : \"dynamic\" },\n} ) ;\nTypeScript const browserTools = createBrowserTools ( {\nctx : this . ctx ,\nbrowser : this . env . BROWSER ,\nloader : this . env . LOADER ,\nsession : { mode : \"dynamic\" },\n} ) ;\nBrowser sessions can be one-time, reused, or promoted from one-time to persistent during a run. This is useful when an agent needs a human to log in, complete MFA, or approve a sensitive action. The run can pause, keep the same tabs and cookies, and resume after approval.\nThe browser tools also add Live View URLs, optional session recording, and quick actions such as browser_markdown , browser_extract , browser_links , and browser_scrape for one-shot browsing tasks.\nResumable code execution with approvals\nCode Mode now uses createCodemodeRuntime , connectors, and a durable execution log. This lets you give a model one codemode tool instead of a large prompt full of tool definitions. The model can discover the capabilities it needs, write code against typed globals, and reuse saved snippets.\nJavaScript\nTypeScript\nJavaScript const runtime = createCodemodeRuntime ( {\nctx : this . ctx ,\nexecutor : new DynamicWorkerExecutor ( { loader : this . env . LOADER } ) ,\nconnectors : [ new GithubConnector ( this . ctx , this . env , connection )] ,\n} ) ;\nconst result = streamText ( {\nmodel ,\nmessages ,\ntools : { codemode : runtime . tool () },\n} ) ;\nTypeScript const runtime = createCodemodeRuntime ( {\nctx : this . ctx ,\nexecutor : new DynamicWorkerExecutor ( { loader : this . env . LOADER } ) ,\nconnectors : [ new GithubConnector ( this . ctx , this . env , connection )] ,\n} ) ;\nconst result = streamText ( {\nmodel ,\nmessages ,\ntools : { codemode : runtime . tool () },\n} ) ;\nWhen the code reaches an approval-gated action, the runtime pauses execution and returns a pending approval. After approval, completed calls replay from the durable log, the approved action runs, and the same code continues. This makes it practical to build agents that create issues, update external systems, or perform other side effects without custom pause-and-resume logic for every tool.\nBetter Think delegation\nThink sub-agents can now use client-defined tools over the RPC chat() path. A parent agent can pass tool schemas with clientTools and resolve tool calls through onClientToolCall . This lets delegated agents use caller-provided capabilities without requiring a browser WebSocket.\nJavaScript\nTypeScript\nJavaScript await child . chat ( message , callback , {\nsignal ,\nclientTools : [\nname : \"get_user_timezone\" ,\ndescription : \"Get the caller's timezone\" ,\nparameters : { type : \"object\" },\n},\n] ,\nonClientToolCall : async ({ toolName , input }) => {\nreturn runClientTool ( toolName , input ) ;\n},\n} ) ;\n{ return runClientTool(toolName, input); },});\">\nTypeScript await child . chat ( message , callback , {\nsignal ,\nclientTools : [\nname : \"get_user_timezone\" ,\ndescription : \"Get the caller's timezone\" ,\nparameters : { type : \"object\" },\n},\n] ,\nonClientToolCall : async ({ toolName , input }) => {\nreturn runClientTool ( toolName , input ) ;\n},\n} ) ;\n{ return runClientTool(toolName, input); },});\">\nThink Workflows also improve step.prompt() . A prompt step now runs a full agentic turn before returning structured output, so the agent can call tools before producing the typed result. This makes Workflow steps more useful for durable triage, research, and approval flows.\nThe unified Think execute tool can also include cdp.* browser capabilities alongside state.* and tools.* when Browser Run is bound.\nVoice output device selection\nVoice clients can route assistant audio to a specific output device. Use outputDeviceId with useVoiceAgent , or call client.setOutputDevice() from the framework-agnostic client.\nJavaScript\nTypeScript\nJavaScript const voice = useVoiceAgent ( {\nagent : \"MyVoiceAgent\" ,\noutputDeviceId : selectedSpeakerId ,\n} ) ;\nTypeScript const voice = useVoiceAgent ( {\nagent : \"MyVoiceAgent\" ,\noutputDeviceId : selectedSpeakerId ,\n} ) ;\nBrowsers without speaker-selection support continue playing through the default output device and report a non-fatal outputDeviceError .\nReliability fixes\nThis release includes several fixes for production agents:\nuseAgent and AgentClient handle WebSocket replacement more reliably during reconnects and configuration changes.\nChat stream replay is more reliable after reconnects, deploys, and provider errors.\nFiber recovery continues across multi-pass scans and backs off when recovery hooks keep failing.\nAgent teardown continues even when the request that started teardown is canceled.\nLarge session histories use byte-budgeted reads to reduce memory pressure during startup.\nUpgrade\nTo update to the latest version:\nnpm yarn pnpm bun\nnpm i agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\nyarn add agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\npnpm add agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\nbun add agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\nRefer to the Code Mode documentation , Browser tools documentation , Think tools documentation , and Voice documentation for more information.",
+  "clean_text": "Changelog\nNew updates and improvements at Cloudflare.\nSubscribe to RSS View RSS feeds\n← Back to all posts\nAgents SDK improves browser automation, code execution, and recovery\nJun 16, 2026 Agents Workers\nThe latest release of the Agents SDK ↗ makes it easier to build agents that can safely interact with real systems and keep working through interruptions.\nAgents can now browse websites through Browser Run, write code against external tools through Code Mode, use client-provided tools when delegating to Think sub-agents, and recover more reliably from deploys, Durable Object evictions, and connection churn.\nSafer browser automation\nAgents can now use Browser Run through a single durable browser_execute tool. Instead of choosing from a fixed list of actions, the model writes code against the Chrome DevTools Protocol (CDP) and can inspect pages, capture screenshots, read rendered content, debug frontend behavior, and interact with live browser sessions.\nJavaScript\nTypeScript\nJavaScript const browserTools = createBrowserTools ( {\nctx : this . ctx ,\nbrowser : this . env . BROWSER ,\nloader : this . env . LOADER ,\nsession : { mode : \"dynamic\" },\n} ) ;\nTypeScript const browserTools = createBrowserTools ( {\nctx : this . ctx ,\nbrowser : this . env . BROWSER ,\nloader : this . env . LOADER ,\nsession : { mode : \"dynamic\" },\n} ) ;\nBrowser sessions can be one-time, reused, or promoted from one-time to persistent during a run. This is useful when an agent needs a human to log in, complete MFA, or approve a sensitive action. The run can pause, keep the same tabs and cookies, and resume after approval.\nThe browser tools also add Live View URLs, optional session recording, and quick actions such as browser_markdown , browser_extract , browser_links , and browser_scrape for one-shot browsing tasks.\nResumable code execution with approvals\nCode Mode now uses createCodemodeRuntime , connectors, and a durable execution log. This lets you give a model one codemode tool instead of a large prompt full of tool definitions. The model can discover the capabilities it needs, write code against typed globals, and reuse saved snippets.\nJavaScript\nTypeScript\nJavaScript const runtime = createCodemodeRuntime ( {\nctx : this . ctx ,\nexecutor : new DynamicWorkerExecutor ( { loader : this . env . LOADER } ) ,\nconnectors : [ new GithubConnector ( this . ctx , this . env , connection )] ,\n} ) ;\nconst result = streamText ( {\nmodel ,\nmessages ,\ntools : { codemode : runtime . tool () },\n} ) ;\nTypeScript const runtime = createCodemodeRuntime ( {\nctx : this . ctx ,\nexecutor : new DynamicWorkerExecutor ( { loader : this . env . LOADER } ) ,\nconnectors : [ new GithubConnector ( this . ctx , this . env , connection )] ,\n} ) ;\nconst result = streamText ( {\nmodel ,\nmessages ,\ntools : { codemode : runtime . tool () },\n} ) ;\nWhen the code reaches an approval-gated action, the runtime pauses execution and returns a pending approval. After approval, completed calls replay from the durable log, the approved action runs, and the same code continues. This makes it practical to build agents that create issues, update external systems, or perform other side effects without custom pause-and-resume logic for every tool.\nBetter Think delegation\nThink sub-agents can now use client-defined tools over the RPC chat() path. A parent agent can pass tool schemas with clientTools and resolve tool calls through onClientToolCall . This lets delegated agents use caller-provided capabilities without requiring a browser WebSocket.\nJavaScript\nTypeScript\nJavaScript await child . chat ( message , callback , {\nsignal ,\nclientTools : [\nname : \"get_user_timezone\" ,\ndescription : \"Get the caller's timezone\" ,\nparameters : { type : \"object\" },\n},\n] ,\nonClientToolCall : async ({ toolName , input }) => {\nreturn runClientTool ( toolName , input ) ;\n},\n} ) ;\n{ return runClientTool(toolName, input); },});\">\nTypeScript await child . chat ( message , callback , {\nsignal ,\nclientTools : [\nname : \"get_user_timezone\" ,\ndescription : \"Get the caller's timezone\" ,\nparameters : { type : \"object\" },\n},\n] ,\nonClientToolCall : async ({ toolName , input }) => {\nreturn runClientTool ( toolName , input ) ;\n},\n} ) ;\n{ return runClientTool(toolName, input); },});\">\nThink Workflows also improve step.prompt() . A prompt step now runs a full agentic turn before returning structured output, so the agent can call tools before producing the typed result. This makes Workflow steps more useful for durable triage, research, and approval flows.\nThe unified Think execute tool can also include cdp.* browser capabilities alongside state.* and tools.* when Browser Run is bound.\nVoice output device selection\nVoice clients can route assistant audio to a specific output device. Use outputDeviceId with useVoiceAgent , or call client.setOutputDevice() from the framework-agnostic client.\nJavaScript\nTypeScript\nJavaScript const voice = useVoiceAgent ( {\nagent : \"MyVoiceAgent\" ,\noutputDeviceId : selectedSpeakerId ,\n} ) ;\nTypeScript const voice = useVoiceAgent ( {\nagent : \"MyVoiceAgent\" ,\noutputDeviceId : selectedSpeakerId ,\n} ) ;\nBrowsers without speaker-selection support continue playing through the default output device and report a non-fatal outputDeviceError .\nReliability fixes\nThis release includes several fixes for production agents:\nuseAgent and AgentClient handle WebSocket replacement more reliably during reconnects and configuration changes.\nChat stream replay is more reliable after reconnects, deploys, and provider errors.\nFiber recovery continues across multi-pass scans and backs off when recovery hooks keep failing.\nAgent teardown continues even when the request that started teardown is canceled.\nLarge session histories use byte-budgeted reads to reduce memory pressure during startup.\nUpgrade\nTo update to the latest version:\nnpm yarn pnpm bun\nnpm i agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\nyarn add agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\npnpm add agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\nbun add agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\nRefer to the Code Mode documentation , Browser tools documentation , Think tools documentation , and Voice documentation for more information.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-07/r-024-agents-sdk-improves-browser-automation-code-execution-and-recovery-cha.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-07/r-024-agents-sdk-improves-browser-automation-code-execution-and-recovery-cha.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 6493,
+    "paragraph_count": 70,
+    "sentence_count": 55,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0128,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6493,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "f2cabeb74bb20314",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "5e39b12226a41d6f",
+  "content_hash": "f2cabeb74bb20314",
+  "full_text_hash": "f2cabeb74bb20314",
+  "semantic_hash": "26ffd168a60feaf0",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-07T02:46:59.472Z",
+  "last_seen_at": "2026-07-07T02:46:59.472Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "Agents SDK improves browser automation, code execution, and recovery · Changelog Skip to content # Changelog New updates and improvements at Cloudflare. Subscribe to RSS View RSS feeds ← Back to all posts ## Agents SDK improves browser automation, code execution, and recovery Jun 16, 2026 Th... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Changelog New updates and improvements at Cloudflare.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Subscribe to RSS View RSS feeds ← Back to all posts Agents SDK improves browser automation, code execution, and recovery Jun 16, 2026 Agents Workers The latest release of the Agents SDK ↗ makes it easier to build agents that can safely interact with real systems and keep working through interruptions.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Agents can now browse websites through Browser Run, write code against external tools through Code Mode, use client-provided tools when delegating to Think sub-agents, and recover more reliably from deploys, Durable Object evictions, and connection churn.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Safer browser automation Agents can now use Browser Run through a single durable browser_execute tool.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Instead of choosing from a fixed list of actions, the model writes code against the Chrome DevTools Protocol (CDP) and can inspect pages, capture screenshots, read rendered content, debug frontend behavior, and interact with live browser sessions.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-07T02:46:59.472Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch"
+    ],
+    "products": [
+      "Agents",
+      "agent",
+      "agents",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人"
+    ],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "16",
+      "2026"
+    ],
+    "quotes": [
+      "get_user_timezone",
+      "Get the caller's timezone",
+      ">\nTypeScript await child . chat ( message , callback , {\nsignal ,\nclientTools : [\nname : ",
+      " ,\ndescription : ",
+      " ,\nparameters : { type : "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Agents SDK improves browser automation, code execution, and recovery · Changelog Skip to content # Changelog New updates and improvements at Cloudflare. Subscribe to RSS View RSS feeds ← Back to all posts ## Agents SDK improves browser automation, code execution, and recovery Jun 16, 2026 Th... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original",
+      "Changelog New updates and improvements at Cloudflare.",
+      "Subscribe to RSS View RSS feeds ← Back to all posts Agents SDK improves browser automation, code execution, and recovery Jun 16, 2026 Agents Workers The latest release of the Agents SDK ↗ makes it easier to build agents that can safely interact with real systems and keep working through interruptions."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "CIO / IT 负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 2,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Agents SDK improves browser automation, code execution, and recovery · Changelog\n\n- raw_id: R-024\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://developers.cloudflare.com/changelog/post/2026-06-16-agents-sdk-v0161/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-07T02:46:59.472Z\n\n## clean_text\n\nChangelog\nNew updates and improvements at Cloudflare.\nSubscribe to RSS View RSS feeds\n← Back to all posts\nAgents SDK improves browser automation, code execution, and recovery\nJun 16, 2026 Agents Workers\nThe latest release of the Agents SDK ↗ makes it easier to build agents that can safely interact with real systems and keep working through interruptions.\nAgents can now browse websites through Browser Run, write code against external tools through Code Mode, use client-provided tools when delegating to Think sub-agents, and recover more reliably from deploys, Durable Object evictions, and connection churn.\nSafer browser automation\nAgents can now use Browser Run through a single durable browser_execute tool. Instead of choosing from a fixed list of actions, the model writes code against the Chrome DevTools Protocol (CDP) and can inspect pages, capture screenshots, read rendered content, debug frontend behavior, and interact with live browser sessions.\nJavaScript\nTypeScript\nJavaScript const browserTools = createBrowserTools ( {\nctx : this . ctx ,\nbrowser : this . env . BROWSER ,\nloader : this . env . LOADER ,\nsession : { mode : \"dynamic\" },\n} ) ;\nTypeScript const browserTools = createBrowserTools ( {\nctx : this . ctx ,\nbrowser : this . env . BROWSER ,\nloader : this . env . LOADER ,\nsession : { mode : \"dynamic\" },\n} ) ;\nBrowser sessions can be one-time, reused, or promoted from one-time to persistent during a run. This is useful when an agent needs a human to log in, complete MFA, or approve a sensitive action. The run can pause, keep the same tabs and cookies, and resume after approval.\nThe browser tools also add Live View URLs, optional session recording, and quick actions such as browser_markdown , browser_extract , browser_links , and browser_scrape for one-shot browsing tasks.\nResumable code execution with approvals\nCode Mode now uses createCodemodeRuntime , connectors, and a durable execution log. This lets you give a model one codemode tool instead of a large prompt full of tool definitions. The model can discover the capabilities it needs, write code against typed globals, and reuse saved snippets.\nJavaScript\nTypeScript\nJavaScript const runtime = createCodemodeRuntime ( {\nctx : this . ctx ,\nexecutor : new DynamicWorkerExecutor ( { loader : this . env . LOADER } ) ,\nconnectors : [ new GithubConnector ( this . ctx , this . env , connection )] ,\n} ) ;\nconst result = streamText ( {\nmodel ,\nmessages ,\ntools : { codemode : runtime . tool () },\n} ) ;\nTypeScript const runtime = createCodemodeRuntime ( {\nctx : this . ctx ,\nexecutor : new DynamicWorkerExecutor ( { loader : this . env . LOADER } ) ,\nconnectors : [ new GithubConnector ( this . ctx , this . env , connection )] ,\n} ) ;\nconst result = streamText ( {\nmodel ,\nmessages ,\ntools : { codemode : runtime . tool () },\n} ) ;\nWhen the code reaches an approval-gated action, the runtime pauses execution and returns a pending approval. After approval, completed calls replay from the durable log, the approved action runs, and the same code continues. This makes it practical to build agents that create issues, update external systems, or perform other side effects without custom pause-and-resume logic for every tool.\nBetter Think delegation\nThink sub-agents can now use client-defined tools over the RPC chat() path. A parent agent can pass tool schemas with clientTools and resolve tool calls through onClientToolCall . This lets delegated agents use caller-provided capabilities without requiring a browser WebSocket.\nJavaScript\nTypeScript\nJavaScript await child . chat ( message , callback , {\nsignal ,\nclientTools : [\nname : \"get_user_timezone\" ,\ndescription : \"Get the caller's timezone\" ,\nparameters : { type : \"object\" },\n},\n] ,\nonClientToolCall : async ({ toolName , input }) => {\nreturn runClientTool ( toolName , input ) ;\n},\n} ) ;\n{ return runClientTool(toolName, input); },});\">\nTypeScript await child . chat ( message , callback , {\nsignal ,\nclientTools : [\nname : \"get_user_timezone\" ,\ndescription : \"Get the caller's timezone\" ,\nparameters : { type : \"object\" },\n},\n] ,\nonClientToolCall : async ({ toolName , input }) => {\nreturn runClientTool ( toolName , input ) ;\n},\n} ) ;\n{ return runClientTool(toolName, input); },});\">\nThink Workflows also improve step.prompt() . A prompt step now runs a full agentic turn before returning structured output, so the agent can call tools before producing the typed result. This makes Workflow steps more useful for durable triage, research, and approval flows.\nThe unified Think execute tool can also include cdp.* browser capabilities alongside state.* and tools.* when Browser Run is bound.\nVoice output device selection\nVoice clients can route assistant audio to a specific output device. Use outputDeviceId with useVoiceAgent , or call client.setOutputDevice() from the framework-agnostic client.\nJavaScript\nTypeScript\nJavaScript const voice = useVoiceAgent ( {\nagent : \"MyVoiceAgent\" ,\noutputDeviceId : selectedSpeakerId ,\n} ) ;\nTypeScript const voice = useVoiceAgent ( {\nagent : \"MyVoiceAgent\" ,\noutputDeviceId : selectedSpeakerId ,\n} ) ;\nBrowsers without speaker-selection support continue playing through the default output device and report a non-fatal outputDeviceError .\nReliability fixes\nThis release includes several fixes for production agents:\nuseAgent and AgentClient handle WebSocket replacement more reliably during reconnects and configuration changes.\nChat stream replay is more reliable after reconnects, deploys, and provider errors.\nFiber recovery continues across multi-pass scans and backs off when recovery hooks keep failing.\nAgent teardown continues even when the request that started teardown is canceled.\nLarge session histories use byte-budgeted reads to reduce memory pressure during startup.\nUpgrade\nTo update to the latest version:\nnpm yarn pnpm bun\nnpm i agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\nyarn add agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\npnpm add agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\nbun add agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\nRefer to the Code Mode documentation , Browser tools documentation , Think tools documentation , and Voice documentation for more information.\n\n## full_text\n\nChangelog\nNew updates and improvements at Cloudflare.\nSubscribe to RSS View RSS feeds\n← Back to all posts\nAgents SDK improves browser automation, code execution, and recovery\nJun 16, 2026 Agents Workers\nThe latest release of the Agents SDK ↗ makes it easier to build agents that can safely interact with real systems and keep working through interruptions.\nAgents can now browse websites through Browser Run, write code against external tools through Code Mode, use client-provided tools when delegating to Think sub-agents, and recover more reliably from deploys, Durable Object evictions, and connection churn.\nSafer browser automation\nAgents can now use Browser Run through a single durable browser_execute tool. Instead of choosing from a fixed list of actions, the model writes code against the Chrome DevTools Protocol (CDP) and can inspect pages, capture screenshots, read rendered content, debug frontend behavior, and interact with live browser sessions.\nJavaScript\nTypeScript\nJavaScript const browserTools = createBrowserTools ( {\nctx : this . ctx ,\nbrowser : this . env . BROWSER ,\nloader : this . env . LOADER ,\nsession : { mode : \"dynamic\" },\n} ) ;\nTypeScript const browserTools = createBrowserTools ( {\nctx : this . ctx ,\nbrowser : this . env . BROWSER ,\nloader : this . env . LOADER ,\nsession : { mode : \"dynamic\" },\n} ) ;\nBrowser sessions can be one-time, reused, or promoted from one-time to persistent during a run. This is useful when an agent needs a human to log in, complete MFA, or approve a sensitive action. The run can pause, keep the same tabs and cookies, and resume after approval.\nThe browser tools also add Live View URLs, optional session recording, and quick actions such as browser_markdown , browser_extract , browser_links , and browser_scrape for one-shot browsing tasks.\nResumable code execution with approvals\nCode Mode now uses createCodemodeRuntime , connectors, and a durable execution log. This lets you give a model one codemode tool instead of a large prompt full of tool definitions. The model can discover the capabilities it needs, write code against typed globals, and reuse saved snippets.\nJavaScript\nTypeScript\nJavaScript const runtime = createCodemodeRuntime ( {\nctx : this . ctx ,\nexecutor : new DynamicWorkerExecutor ( { loader : this . env . LOADER } ) ,\nconnectors : [ new GithubConnector ( this . ctx , this . env , connection )] ,\n} ) ;\nconst result = streamText ( {\nmodel ,\nmessages ,\ntools : { codemode : runtime . tool () },\n} ) ;\nTypeScript const runtime = createCodemodeRuntime ( {\nctx : this . ctx ,\nexecutor : new DynamicWorkerExecutor ( { loader : this . env . LOADER } ) ,\nconnectors : [ new GithubConnector ( this . ctx , this . env , connection )] ,\n} ) ;\nconst result = streamText ( {\nmodel ,\nmessages ,\ntools : { codemode : runtime . tool () },\n} ) ;\nWhen the code reaches an approval-gated action, the runtime pauses execution and returns a pending approval. After approval, completed calls replay from the durable log, the approved action runs, and the same code continues. This makes it practical to build agents that create issues, update external systems, or perform other side effects without custom pause-and-resume logic for every tool.\nBetter Think delegation\nThink sub-agents can now use client-defined tools over the RPC chat() path. A parent agent can pass tool schemas with clientTools and resolve tool calls through onClientToolCall . This lets delegated agents use caller-provided capabilities without requiring a browser WebSocket.\nJavaScript\nTypeScript\nJavaScript await child . chat ( message , callback , {\nsignal ,\nclientTools : [\nname : \"get_user_timezone\" ,\ndescription : \"Get the caller's timezone\" ,\nparameters : { type : \"object\" },\n},\n] ,\nonClientToolCall : async ({ toolName , input }) => {\nreturn runClientTool ( toolName , input ) ;\n},\n} ) ;\n{ return runClientTool(toolName, input); },});\">\nTypeScript await child . chat ( message , callback , {\nsignal ,\nclientTools : [\nname : \"get_user_timezone\" ,\ndescription : \"Get the caller's timezone\" ,\nparameters : { type : \"object\" },\n},\n] ,\nonClientToolCall : async ({ toolName , input }) => {\nreturn runClientTool ( toolName , input ) ;\n},\n} ) ;\n{ return runClientTool(toolName, input); },});\">\nThink Workflows also improve step.prompt() . A prompt step now runs a full agentic turn before returning structured output, so the agent can call tools before producing the typed result. This makes Workflow steps more useful for durable triage, research, and approval flows.\nThe unified Think execute tool can also include cdp.* browser capabilities alongside state.* and tools.* when Browser Run is bound.\nVoice output device selection\nVoice clients can route assistant audio to a specific output device. Use outputDeviceId with useVoiceAgent , or call client.setOutputDevice() from the framework-agnostic client.\nJavaScript\nTypeScript\nJavaScript const voice = useVoiceAgent ( {\nagent : \"MyVoiceAgent\" ,\noutputDeviceId : selectedSpeakerId ,\n} ) ;\nTypeScript const voice = useVoiceAgent ( {\nagent : \"MyVoiceAgent\" ,\noutputDeviceId : selectedSpeakerId ,\n} ) ;\nBrowsers without speaker-selection support continue playing through the default output device and report a non-fatal outputDeviceError .\nReliability fixes\nThis release includes several fixes for production agents:\nuseAgent and AgentClient handle WebSocket replacement more reliably during reconnects and configuration changes.\nChat stream replay is more reliable after reconnects, deploys, and provider errors.\nFiber recovery continues across multi-pass scans and backs off when recovery hooks keep failing.\nAgent teardown continues even when the request that started teardown is canceled.\nLarge session histories use byte-budgeted reads to reduce memory pressure during startup.\nUpgrade\nTo update to the latest version:\nnpm yarn pnpm bun\nnpm i agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\nyarn add agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\npnpm add agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\nbun add agents@latest @cloudflare/think@latest @cloudflare/codemode@latest @cloudflare/ai-chat@latest @cloudflare/voice@latest\nRefer to the Code Mode documentation , Browser tools documentation , Think tools documentation , and Voice documentation for more information.\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Agents SDK improves browser automation, code execution, and recovery · Changelog Skip to content # Changelog New updates and improvements at Cloudflare. Subscribe to RSS View RSS feeds ← Back to all posts ## Agents SDK improves browser automation, code execution, and recovery Jun 16, 2026 Th... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Changelog New updates and improvements at Cloudflare.\n3. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Subscribe to RSS View RSS feeds ← Back to all posts Agents SDK improves browser automation, code execution, and recovery Jun 16, 2026 Agents Workers The latest release of the Agents SDK ↗ makes it easier to build agents that can safely interact with real systems and keep working through interruptions.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Agents can now browse websites through Browser Run, write code against external tools through Code Mode, use client-provided tools when delegating to Think sub-agents, and recover more reliably from deploys, Durable Object evictions, and connection churn.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Safer browser automation Agents can now use Browser Run through a single durable browser_execute tool.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Instead of choosing from a fixed list of actions, the model writes code against the Chrome DevTools Protocol (CDP) and can inspect pages, capture screenshots, read rendered content, debug frontend behavior, and interact with live browser sessions.\n"
+}

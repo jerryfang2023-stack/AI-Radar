@@ -1,0 +1,209 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-061
+title: "微软让步：Teams 会议中途支持关闭 Recap 等 AI 功能"
+title_zh: "微软让步：Teams 会议中途支持关闭 Recap 等 AI 功能"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/973/376.htm"
+canonical_url: "https://ithome.com/0/973/376.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-07T02:10:01.000Z"
+collected_at: 2026-07-07T02:46:59.878Z
+language: mixed
+full_text_hash: 9b91a14833d5f430
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-061-微软让步-teams-会议中途支持关闭-recap-等-ai-功能.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-061-微软让步-teams-会议中途支持关闭-recap-等-ai-功能.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 39
+extractor_diagnostics: {"readability_score":39,"text_length":585,"paragraph_count":6,"sentence_count":6,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 585
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9b91a14833d5f430","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"微软让步：Teams 会议中途支持关闭 Recap 等 AI 功能","discovery_summary":"微软在用户反对后让步，Teams 会议 AI 功能可在会议中途由用户自行启用或关闭，涉及 Intelligent Recap（智能回顾）、Facilitator（协作助手）及 Copilot。Recap 集中展示最近 30 天内的会议录制、文字转写与 AI 摘要；Facilitator 分析对话，识别未答问题并给出关联答案。企业 IT 管理员可通过租户策略完全关闭 Meeting AI 开关，或将控制权交给组织者与演示者。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/973/376.htm","discovered_at":"2026-07-07T02:33:49.105Z","rank_on_page":25,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: a943013d542a4f51
+content_hash: 9b91a14833d5f430
+semantic_hash: 564bc95489df8a78
+duplicate_of: ""
+first_seen_at: "2026-07-07T02:10:01.000Z"
+last_seen_at: 2026-07-07T02:46:59.878Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":3,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","Microsoft"],"products":["Copilot"],"people":[],"industries":["企业服务"],"roles":[],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["30","7","5"],"quotes":["Meeting AI"]}
+evidence_seed: {"company_actions":["其中 Recap 功能主要集中展示用户最近 30 天内的会议录制、文字转写与 AI 生成摘要等；而 Facilitator 主要在会议中分析对话内容，识别提问、未解答问题或不确定表达，并在会议聊天中给出与当前议题相关的答案。","在启用策略方面，企业内部的 IT 管理员可以根据需求，定制租户策略，管理员已通过策略关闭 Meeting AI，界面中不会出现该开关；若策略允许，组织者和演示者可直接控制会议中启用的 AI 功能。"],"case_details":["微软在用户反对后让步，Teams 会议 AI 功能可在会议中途由用户自行启用或关闭，涉及 Intelligent Recap（智能回顾）、Facilitator（协作助手）及 Copilot。Recap 集中展示最近 30 天内的会议录制、文字转写与 AI 摘要；Facilitator 分析对话，识别未答问题并给出关联答案。企业 IT 管理员可通过租户策略完全关闭 Meeting AI 开关，或将控制权交给组织者与演示者。","IT之家 7 月 7 日消息，科技媒体 Windows Latest 昨日（7 月 5 日）发布博文，报道称在遭到用户强烈反对后， 微软推进 Microsoft Teams 应用部署会议 AI 功能方面让步。","IT之家此前报道，微软针对会议场景，计划在 Microsoft Teams 引入 Facilitator（协作助手） 、 Intelligent Recap （智能回顾）以及 Copilot 功能。"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"微软在用户反对后让步，Teams 会议 AI 功能可在会议中途由用户自行启用或关闭，涉及 Intelligent Recap（智能回顾）、Facilitator（协作助手）及 Copilot。Recap 集中展示最近 30 天内的会议录制、文字转写与 AI 摘要；Facilitator 分析对话，识别未答问题并给出关联答案。企业 IT 管理员可通过租户策略完全关闭 Meeting AI 开关，或将控制权交给组织者与演示者。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"IT之家 7 月 7 日消息，科技媒体 Windows Latest 昨日（7 月 5 日）发布博文，报道称在遭到用户强烈反对后， 微软推进 Microsoft Teams 应用部署会议 AI 功能方面让步。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"IT之家此前报道，微软针对会议场景，计划在 Microsoft Teams 引入 Facilitator（协作助手） 、 Intelligent Recap （智能回顾）以及 Copilot 功能。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"其中 Recap 功能主要集中展示用户最近 30 天内的会议录制、文字转写与 AI 生成摘要等；而 Facilitator 主要在会议中分析对话内容，识别提问、未解答问题或不确定表达，并在会议聊天中给出与当前议题相关的答案。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"quote","text":"在微软预告上述两项功能之后，遭到了部分用户的强烈反对，对此微软通过该媒体澄清，Teams 会引入“Meeting AI”功能，用户可以根据自身需求，可以在会议中途启用或者禁用相关功能。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在启用策略方面，企业内部的 IT 管理员可以根据需求，定制租户策略，管理员已通过策略关闭 Meeting AI，界面中不会出现该开关；若策略允许，组织者和演示者可直接控制会议中启用的 AI 功能。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-07T02:46:59.878Z
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# 微软让步：Teams 会议中途支持关闭 Recap 等 AI 功能
+
+## clean_text
+
+IT之家 7 月 7 日消息，科技媒体 Windows Latest 昨日（7 月 5 日）发布博文，报道称在遭到用户强烈反对后， 微软推进 Microsoft Teams 应用部署会议 AI 功能方面让步。
+IT之家此前报道，微软针对会议场景，计划在 Microsoft Teams 引入 Facilitator（协作助手） 、 Intelligent Recap （智能回顾）以及 Copilot 功能。
+其中 Recap 功能主要集中展示用户最近 30 天内的会议录制、文字转写与 AI 生成摘要等；而 Facilitator 主要在会议中分析对话内容，识别提问、未解答问题或不确定表达，并在会议聊天中给出与当前议题相关的答案。
+在微软预告上述两项功能之后，遭到了部分用户的强烈反对，对此微软通过该媒体澄清，Teams 会引入“Meeting AI”功能，用户可以根据自身需求，可以在会议中途启用或者禁用相关功能。
+在启用策略方面，企业内部的 IT 管理员可以根据需求，定制租户策略，管理员已通过策略关闭 Meeting AI，界面中不会出现该开关；若策略允许，组织者和演示者可直接控制会议中启用的 AI 功能。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 7 日消息，科技媒体 Windows Latest 昨日（7 月 5 日）发布博文，报道称在遭到用户强烈反对后， 微软推进 Microsoft Teams 应用部署会议 AI 功能方面让步。
+IT之家此前报道，微软针对会议场景，计划在 Microsoft Teams 引入 Facilitator（协作助手） 、 Intelligent Recap （智能回顾）以及 Copilot 功能。
+其中 Recap 功能主要集中展示用户最近 30 天内的会议录制、文字转写与 AI 生成摘要等；而 Facilitator 主要在会议中分析对话内容，识别提问、未解答问题或不确定表达，并在会议聊天中给出与当前议题相关的答案。
+在微软预告上述两项功能之后，遭到了部分用户的强烈反对，对此微软通过该媒体澄清，Teams 会引入“Meeting AI”功能，用户可以根据自身需求，可以在会议中途启用或者禁用相关功能。
+在启用策略方面，企业内部的 IT 管理员可以根据需求，定制租户策略，管理员已通过策略关闭 Meeting AI，界面中不会出现该开关；若策略允许，组织者和演示者可直接控制会议中启用的 AI 功能。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 39
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":39,"text_length":585,"paragraph_count":6,"sentence_count":6,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   微软在用户反对后让步，Teams 会议 AI 功能可在会议中途由用户自行启用或关闭，涉及 Intelligent Recap（智能回顾）、Facilitator（协作助手）及 Copilot。Recap 集中展示最近 30 天内的会议录制、文字转写与 AI 摘要；Facilitator 分析对话，识别未答问题并给出关联答案。企业 IT 管理员可通过租户策略完全关闭 Meeting AI 开关，或将控制权交给组织者与演示者。
+
+2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   IT之家 7 月 7 日消息，科技媒体 Windows Latest 昨日（7 月 5 日）发布博文，报道称在遭到用户强烈反对后， 微软推进 Microsoft Teams 应用部署会议 AI 功能方面让步。
+
+3. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   IT之家此前报道，微软针对会议场景，计划在 Microsoft Teams 引入 Facilitator（协作助手） 、 Intelligent Recap （智能回顾）以及 Copilot 功能。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   其中 Recap 功能主要集中展示用户最近 30 天内的会议录制、文字转写与 AI 生成摘要等；而 Facilitator 主要在会议中分析对话内容，识别提问、未解答问题或不确定表达，并在会议聊天中给出与当前议题相关的答案。
+
+5. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   在微软预告上述两项功能之后，遭到了部分用户的强烈反对，对此微软通过该媒体澄清，Teams 会引入“Meeting AI”功能，用户可以根据自身需求，可以在会议中途启用或者禁用相关功能。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   在启用策略方面，企业内部的 IT 管理员可以根据需求，定制租户策略，管理员已通过策略关闭 Meeting AI，界面中不会出现该开关；若策略允许，组织者和演示者可直接控制会议中启用的 AI 功能。
+
+## business_elements
+
+- companies: IT之家（RSS）, Microsoft
+- products: Copilot
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 暂无公开信息
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 30, 7, 5
+- quotes: Meeting AI
+
+## evidence_seed
+
+- company_actions: 其中 Recap 功能主要集中展示用户最近 30 天内的会议录制、文字转写与 AI 生成摘要等；而 Facilitator 主要在会议中分析对话内容，识别提问、未解答问题或不确定表达，并在会议聊天中给出与当前议题相关的答案。 / 在启用策略方面，企业内部的 IT 管理员可以根据需求，定制租户策略，管理员已通过策略关闭 Meeting AI，界面中不会出现该开关；若策略允许，组织者和演示者可直接控制会议中启用的 AI 功能。
+- case_details: 微软在用户反对后让步，Teams 会议 AI 功能可在会议中途由用户自行启用或关闭，涉及 Intelligent Recap（智能回顾）、Facilitator（协作助手）及 Copilot。Recap 集中展示最近 30 天内的会议录制、文字转写与 AI 摘要；Facilitator 分析对话，识别未答问题并给出关联答案。企业 IT 管理员可通过租户策略完全关闭 Meeting AI 开关，或将控制权交给组织者与演示者。 / IT之家 7 月 7 日消息，科技媒体 Windows Latest 昨日（7 月 5 日）发布博文，报道称在遭到用户强烈反对后， 微软推进 Microsoft Teams 应用部署会议 AI 功能方面让步。 / IT之家此前报道，微软针对会议场景，计划在 Microsoft Teams 引入 Facilitator（协作助手） 、 Intelligent Recap （智能回顾）以及 Copilot 功能。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"微软让步：Teams 会议中途支持关闭 Recap 等 AI 功能","discovery_summary":"微软在用户反对后让步，Teams 会议 AI 功能可在会议中途由用户自行启用或关闭，涉及 Intelligent Recap（智能回顾）、Facilitator（协作助手）及 Copilot。Recap 集中展示最近 30 天内的会议录制、文字转写与 AI 摘要；Facilitator 分析对话，识别未答问题并给出关联答案。企业 IT 管理员可通过租户策略完全关闭 Meeting AI 开关，或将控制权交给组织者与演示者。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/973/376.htm","discovered_at":"2026-07-07T02:33:49.105Z","rank_on_page":25,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+微软在用户反对后让步，Teams 会议 AI 功能可在会议中途由用户自行启用或关闭，涉及 Intelligent Recap（智能回顾）、Facilitator（协作助手）及 Copilot。Recap 集中展示最近 30 天内的会议录制、文字转写与 AI 摘要；Facilitator 分析对话，识别未答问题并给出关联答案。企业 IT 管理员可通过租户策略完全关闭 Meeting AI 开关，或将控制权交给组织者与演示者。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

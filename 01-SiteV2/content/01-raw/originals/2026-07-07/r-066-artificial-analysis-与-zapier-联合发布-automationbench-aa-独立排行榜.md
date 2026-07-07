@@ -1,0 +1,200 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-066
+title: "Artificial Analysis 与 Zapier 联合发布 AutomationBench-AA 独立排行榜"
+title_zh: "Artificial Analysis 与 Zapier 联合发布 AutomationBench-AA 独立排行榜"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://x.com/ArtificialAnlys/status/2074194764510208230"
+canonical_url: "https://x.com/ArtificialAnlys/status/2074194764510208230"
+source_name: "X：Artificial Analysis (@ArtificialAnlys)"
+source_type: operators
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-06T18:12:23.000Z"
+collected_at: 2026-07-07T02:46:59.917Z
+language: mixed
+full_text_hash: 1148d7ddd2e40c6d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-066-artificial-analysis-与-zapier-联合发布-automationbench-aa-独立排行榜.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-066-artificial-analysis-与-zapier-联合发布-automationbench-aa-独立排行榜.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: timeout-fallback-visible-text
+extraction_quality: low
+extraction_method: "fetch_failed_summary_fallback"
+readability_score: 0
+extractor_diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+has_full_text: true
+content_length: 417
+fetch_error: "The operation was aborted due to timeout"
+evidence_strength: blocked
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["missing_snapshot"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1148d7ddd2e40c6d","missing":["missing_snapshot"]}
+source_volatility: high
+community_name: "X：Artificial Analysis (@ArtificialAnlys)"
+capture_scope: aihot_visible_text
+visible_range: "仅保留采集通道当时可见文本，未抓到原页面正文"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Artificial Analysis 与 Zapier 联合发布 AutomationBench-AA 独立排行榜","discovery_summary":"Artificial Analysis 与 Zapier 合作推出 AutomationBench-AA 排行榜，测试 AI 智能体在真实 SaaS 工作流中遵循业务规则的自动化能力。基准包含 657 项任务，覆盖财务、HR、销售等 6 部门，在 40 个模拟应用（Gmail、Slack、Salesforce 等）中运行。模型通过 REST API 自主发现端点，按近 12，000 条断言评分（目标达成+不违反护栏）。结果：Claude Fable 5 （max） 以 48.6% 领先，Opus 4.8 以 48.5% 紧随其后，Gemini 3.5 Flash 为 42.6%（$0.49/任务），GPT-5.5 （xhigh） 为 42.1%（$1.32/任务）。Fable 5 在约 18% 的任务中回退到 Opus。开放权重模型 GLM-5.2 （max） 最佳（27.8%）。所有模型均违反业务规则，金融任务难度最高。","source_name":"X：Artificial Analysis (@ArtificialAnlys)","origin_url":"https://x.com/ArtificialAnlys/status/2074194764510208230","discovered_at":"2026-07-07T02:33:49.168Z","rank_on_page":127,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "timeout"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 1294814a304a8220
+content_hash: 1148d7ddd2e40c6d
+semantic_hash: 94881c70eb8b542f
+duplicate_of: ""
+first_seen_at: "2026-07-06T18:12:23.000Z"
+last_seen_at: 2026-07-07T02:46:59.917Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":3,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["X","Artificial Analysis (@ArtificialAnlys)","Salesforce"],"products":["Claude","Gemini","GPT-5"],"people":[],"industries":["金融 / 保险"],"roles":["销售 / 客服"],"workflows":[],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["财务 / 预算","销售 / 客服"],"numbers":["657","6","40","12","000","5","48.6%","4.8"],"quotes":[]}
+evidence_seed: {"company_actions":["Artificial Analysis 与 Zapier 合作推出 AutomationBench-AA 排行榜，测试 AI 智能体在真实 SaaS 工作流中遵循业务规则的自动化能力。","模型通过 REST API 自主发现端点，按近 12，000 条断言评分（目标达成+不违反护栏）。","结果：Claude Fable 5 （max） 以 48."],"case_details":[],"workflow_changes":["基准包含 657 项任务，覆盖财务、HR、销售等 6 部门，在 40 个模拟应用（Gmail、Slack、Salesforce 等）中运行。"],"before_after_clues":[],"affected_roles":["销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"number","text":"Artificial Analysis 与 Zapier 合作推出 AutomationBench-AA 排行榜，测试 AI 智能体在真实 SaaS 工作流中遵循业务规则的自动化能力。基准包含 657 项任务，覆盖财务、HR、销售等 6 部门，在 40 个模拟应用（Gmail、Slack、Salesforce 等）中运行。模型通过 REST API 自主发现端点，按近 12，000 条断言评分（目标达成+不违反护栏）。结果：Claude Fable 5 （max） 以 48.6% 领先，Opus 4.8 以 48.5% 紧随其后，Gemini 3.5 Flash 为 42.6%（$0.49/任务），GPT-5.5 （xhigh） 为 42.1%（$1.32/任务）。Fable 5 在约 18% 的任务中回退到 Opus。开放权重模型 GLM-5.2 （max） 最佳（27.8%）。所有模型均违反业务规则，金融任务难度最高。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Artificial Analysis 与 Zapier 合作推出 AutomationBench-AA 排行榜，测试 AI 智能体在真实 SaaS 工作流中遵循业务规则的自动化能力。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"基准包含 657 项任务，覆盖财务、HR、销售等 6 部门，在 40 个模拟应用（Gmail、Slack、Salesforce 等）中运行。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"模型通过 REST API 自主发现端点，按近 12，000 条断言评分（目标达成+不违反护栏）。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"结果：Claude Fable 5 （max） 以 48.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"Fable 5 在约 18% 的任务中回退到 Opus。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-07T02:46:59.917Z
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Artificial Analysis 与 Zapier 联合发布 AutomationBench-AA 独立排行榜
+
+## clean_text
+
+Artificial Analysis 与 Zapier 合作推出 AutomationBench-AA 排行榜，测试 AI 智能体在真实 SaaS 工作流中遵循业务规则的自动化能力。基准包含 657 项任务，覆盖财务、HR、销售等 6 部门，在 40 个模拟应用（Gmail、Slack、Salesforce 等）中运行。模型通过 REST API 自主发现端点，按近 12，000 条断言评分（目标达成+不违反护栏）。结果：Claude Fable 5 （max） 以 48.6% 领先，Opus 4.8 以 48.5% 紧随其后，Gemini 3.5 Flash 为 42.6%（$0.49/任务），GPT-5.5 （xhigh） 为 42.1%（$1.32/任务）。Fable 5 在约 18% 的任务中回退到 Opus。开放权重模型 GLM-5.2 （max） 最佳（27.8%）。所有模型均违反业务规则，金融任务难度最高。
+
+## full_text
+
+Artificial Analysis 与 Zapier 合作推出 AutomationBench-AA 排行榜，测试 AI 智能体在真实 SaaS 工作流中遵循业务规则的自动化能力。基准包含 657 项任务，覆盖财务、HR、销售等 6 部门，在 40 个模拟应用（Gmail、Slack、Salesforce 等）中运行。模型通过 REST API 自主发现端点，按近 12，000 条断言评分（目标达成+不违反护栏）。结果：Claude Fable 5 （max） 以 48.6% 领先，Opus 4.8 以 48.5% 紧随其后，Gemini 3.5 Flash 为 42.6%（$0.49/任务），GPT-5.5 （xhigh） 为 42.1%（$1.32/任务）。Fable 5 在约 18% 的任务中回退到 Opus。开放权重模型 GLM-5.2 （max） 最佳（27.8%）。所有模型均违反业务规则，金融任务难度最高。
+
+## extraction_diagnostics
+
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- fetch_status: timeout-fallback-visible-text
+- extraction_quality: low
+- diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   Artificial Analysis 与 Zapier 合作推出 AutomationBench-AA 排行榜，测试 AI 智能体在真实 SaaS 工作流中遵循业务规则的自动化能力。基准包含 657 项任务，覆盖财务、HR、销售等 6 部门，在 40 个模拟应用（Gmail、Slack、Salesforce 等）中运行。模型通过 REST API 自主发现端点，按近 12，000 条断言评分（目标达成+不违反护栏）。结果：Claude Fable 5 （max） 以 48.6% 领先，Opus 4.8 以 48.5% 紧随其后，Gemini 3.5 Flash 为 42.6%（$0.49/任务），GPT-5.5 （xhigh） 为 42.1%（$1.32/任务）。Fable 5 在约 18% 的任务中回退到 Opus。开放权重模型 GLM-5.2 （max） 最佳（27.8%）。所有模型均违反业务规则，金融任务难度最高。
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   Artificial Analysis 与 Zapier 合作推出 AutomationBench-AA 排行榜，测试 AI 智能体在真实 SaaS 工作流中遵循业务规则的自动化能力。
+
+3. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   基准包含 657 项任务，覆盖财务、HR、销售等 6 部门，在 40 个模拟应用（Gmail、Slack、Salesforce 等）中运行。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   模型通过 REST API 自主发现端点，按近 12，000 条断言评分（目标达成+不违反护栏）。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   结果：Claude Fable 5 （max） 以 48.
+
+6. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   Fable 5 在约 18% 的任务中回退到 Opus。
+
+## business_elements
+
+- companies: X, Artificial Analysis (@ArtificialAnlys), Salesforce
+- products: Claude, Gemini, GPT-5
+- people: 暂无公开信息
+- industries: 金融 / 保险
+- roles: 销售 / 客服
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: 财务 / 预算, 销售 / 客服
+- numbers: 657, 6, 40, 12, 000, 5, 48.6%, 4.8
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Artificial Analysis 与 Zapier 合作推出 AutomationBench-AA 排行榜，测试 AI 智能体在真实 SaaS 工作流中遵循业务规则的自动化能力。 / 模型通过 REST API 自主发现端点，按近 12，000 条断言评分（目标达成+不违反护栏）。 / 结果：Claude Fable 5 （max） 以 48.
+- case_details: 暂无公开信息
+- workflow_changes: 基准包含 657 项任务，覆盖财务、HR、销售等 6 部门，在 40 个模拟应用（Gmail、Slack、Salesforce 等）中运行。
+- before_after_clues: 暂无公开信息
+- affected_roles: 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Artificial Analysis (@ArtificialAnlys)
+- capture_scope: aihot_visible_text
+- visible_range: 仅保留采集通道当时可见文本，未抓到原页面正文
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: timeout
+- discovery_record: {"discovery_title":"Artificial Analysis 与 Zapier 联合发布 AutomationBench-AA 独立排行榜","discovery_summary":"Artificial Analysis 与 Zapier 合作推出 AutomationBench-AA 排行榜，测试 AI 智能体在真实 SaaS 工作流中遵循业务规则的自动化能力。基准包含 657 项任务，覆盖财务、HR、销售等 6 部门，在 40 个模拟应用（Gmail、Slack、Salesforce 等）中运行。模型通过 REST API 自主发现端点，按近 12，000 条断言评分（目标达成+不违反护栏）。结果：Claude Fable 5 （max） 以 48.6% 领先，Opus 4.8 以 48.5% 紧随其后，Gemini 3.5 Flash 为 42.6%（$0.49/任务），GPT-5.5 （xhigh） 为 42.1%（$1.32/任务）。Fable 5 在约 18% 的任务中回退到 Opus。开放权重模型 GLM-5.2 （max） 最佳（27.8%）。所有模型均违反业务规则，金融任务难度最高。","source_name":"X：Artificial Analysis (@ArtificialAnlys)","origin_url":"https://x.com/ArtificialAnlys/status/2074194764510208230","discovered_at":"2026-07-07T02:33:49.168Z","rank_on_page":127,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Artificial Analysis 与 Zapier 合作推出 AutomationBench-AA 排行榜，测试 AI 智能体在真实 SaaS 工作流中遵循业务规则的自动化能力。基准包含 657 项任务，覆盖财务、HR、销售等 6 部门，在 40 个模拟应用（Gmail、Slack、Salesforce 等）中运行。模型通过 REST API 自主发现端点，按近 12，000 条断言评分（目标达成+不违反护栏）。结果：Claude Fable 5 （max） 以 48.6% 领先，Opus 4.8 以 48.5% 紧随其后，Gemini 3.5 Flash 为 42.6%（$0.49/任务），GPT-5.5 （xhigh） 为 42.1%（$1.32/任务）。Fable 5 在约 18% 的任务中回退到 Opus。开放权重模型 GLM-5.2 （max） 最佳（27.8%）。所有模型均违反业务规则，金融任务难度最高。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
