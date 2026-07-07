@@ -1,0 +1,303 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-023
+title: "Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://www.stellantis.com/en/news/press-releases/2026/april/stellantis-accelerates-ai-led-strategy-and-digital-transformation-through-strategic-collaboration-with-microsoft-to-enhance-customer-experiences"
+canonical_url: "https://stellantis.com/en/news/press-releases/2026/april/stellantis-accelerates-ai-led-strategy-and-digital-transformation-through-strategic-collaboration-with-microsoft-to-enhance-customer-experiences"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-07T02:46:59.455Z
+language: mixed
+full_text_hash: 124623755c4b93b3
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-023-stellantis-accelerates-ai-led-strategy-and-digital-transformation-thro.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-023-stellantis-accelerates-ai-led-strategy-and-digital-transformation-thro.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 85
+extractor_diagnostics: {"readability_score":85,"text_length":6680,"paragraph_count":34,"sentence_count":24,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 6680
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"124623755c4b93b3","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: d3a4ab6e4baffd85
+content_hash: 124623755c4b93b3
+semantic_hash: ef8b1399294712eb
+duplicate_of: ""
+first_seen_at: "2026-07-07T02:46:59.455Z"
+last_seen_at: 2026-07-07T02:46:59.455Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","Microsoft"],"products":["Copilot"],"people":[],"industries":["医疗","制造 / 工业","企业服务"],"roles":["开发者 / 工程团队","销售 / 客服"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["31","6","43","25","41","33","87","77"],"quotes":["At Stellantis, we have been inventing for more than 100 years with one goal in mind: creating products, services and experiences customers love,","Our work with Stellantis reflects a shared ambition to drive AI Transformation responsibly and securely across the automotive value chain,"]}
+evidence_seed: {"company_actions":["com Fernão SILVEIRA +31 6 43 25 43 41 fernao.","silveira@stellantis.","com Nathalie ROUSSEL +33 6 87 77 41 82 nathalie."],"case_details":["Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis ## Media communications@stellantis.com Fernão SILVEIRA+31 6 43 25 43 41 fernao.silveira@stellantis.com Nathalie ROUSSEL+33 6 87 77 41 82 n... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original","Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis Media communications@stellantis."],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis ## Media communications@stellantis.com Fernão SILVEIRA+31 6 43 25 43 41 fernao.silveira@stellantis.com Nathalie ROUSSEL+33 6 87 77 41 82 n... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis Media communications@stellantis.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com Fernão SILVEIRA +31 6 43 25 43 41 fernao.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"silveira@stellantis.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com Nathalie ROUSSEL +33 6 87 77 41 82 nathalie.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"roussel@stellantis.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-07T02:46:59.455Z
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis
+
+## clean_text
+
+Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis
+Media
+communications@stellantis.com
+Fernão SILVEIRA
++31 6 43 25 43 41
+fernao.silveira@stellantis.com
+Nathalie ROUSSEL
++33 6 87 77 41 82
+nathalie.roussel@stellantis.com
+Downloads
+Press Release
+Share
+April 16, 2026
+Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences
+Joint teams to co-develop more than 100 AI initiatives across sales, customer care and operations, driving innovation at a global scale
+Stellantis to strengthen global cyber defense center with AI‑driven analytics to help prevent cyberthreats and protect vehicles, customers and operations worldwide
+Scalable cloud modernization boosts agility, performance, and a more interconnected digital ecosystem, with a targeted 60% datacenter footprint reduction by 2029
+AMSTERDAM and REDMOND, Wash. – Stellantis and Microsoft today announced a five‑year strategic collaboration aimed at accelerating Stellantis’ digital transformation through the co‑development of advanced AI, cybersecurity and engineering capabilities.
+Building on a longstanding alliance, this collaboration will bring together Stellantis’ automotive engineering expertise, multi-brand scale and global operations with Microsoft’s cloud, AI and security capabilities to accelerate stronger, more agile, more connected digital processes across its ecosystem.
+“At Stellantis, we have been inventing for more than 100 years with one goal in mind: creating products, services and experiences customers love,” said Ned Curic , Stellantis Chief Engineering & Technology Officer. “As AI rapidly advances, we have been early adopters across our business, from engineering and manufacturing to design and customer interaction, embedding AI directly into our vehicles, from the new digital cabin to the core vehicle Operating System. Through our collaboration with Microsoft, we are accelerating our AI momentum across the enterprise, giving our teams the tools to innovate faster and deliver the products, services and experiences customers expect from us.”
+“Our work with Stellantis reflects a shared ambition to drive AI Transformation responsibly and securely across the automotive value chain,” said Judson Althoff , CEO of Microsoft’s Commercial Business. “By combining Stellantis’ global scale and engineering expertise with Microsoft’s trusted cloud, AI and security platforms, we are delivering real value for millions of drivers worldwide.”
+Faster, Smarter Innovation Through AI & Data
+As part of the collaboration, Stellantis and Microsoft are co‑developing more than 100 AI initiatives across customer care, product development and operations, including:
+AI‑powered product development and validation
+Predictive maintenance and testing
+Faster deployment of new digital features and services
+By leveraging AI‑driven insights from secure, encrypted data, Stellantis reaffirms its commitment to put customers at the center of everything it does. For example, Peugeot drivers may receive intelligent recommendations for more energy‑efficient driving in urban environments, along with proactive vehicle-health insights and feature updates designed to improve everyday usability.
+Stronger Cybersecurity Across Vehicles and Operations
+Stellantis will deploy and operate an AI‑driven global cyber defense center spanning its IT systems, connected vehicles, manufacturing sites, and digital products. This unified approach enables Stellantis to:
+Anticipate and detect cyberthreats faster with AI‑driven analytics
+Ensure consistent protection of connected services and customer data
+Strengthen resilience and response capabilities across global operations.
+With this end‑to‑end approach, cybersecurity will be further embedded into every digital vehicle experience, safeguarding interactions across mobile apps and in‑vehicle services. For example, Jeep ® drivers will benefit from reliable connectivity and protected data access even in remote terrain, ensuring confidence wherever their journey takes them.
+Cloud-Driven Reliability and Global Scale
+To deliver faster and more reliable digital experiences worldwide, Stellantis is modernizing its infrastructure using Microsoft Azure, targeting a 60% reduction in datacenter footprint by 2029. This cloud modernization will power a more interconnected and scalable digital ecosystem, supporting seamless delivery of digital and connected services for customers, and strengthening operational resilience across global manufacturing and logistics.
+Joint Resourcing to Accelerate Priority Programs
+Stellantis and Microsoft will continue to advance this collaboration over the coming years by working side‑by‑side and engaging Microsoft‑certified partners where specialized expertise is required. This collaborative model ensures sustained focus on Stellantis’ priority technology programs, while enabling future AI‑driven enhancements across engineering, manufacturing and supply‑chain operations.
+As part of the collaboration, Stellantis is equipping its global workforce with enterprise-grade AI tools to enhance productivity and collaboration. All employees currently have access to Copilot Chat, with an initial rollout of 20,000 licenses of Microsoft 365 Copilot supporting select roles. Deployment is supported by a Stellantis-dedicated training program, helping teams apply AI capabilities effectively in their daily work and deliver stronger outcomes for customers.
+About Microsoft
+Microsoft (Nasdaq “MSFT” @microsoft) creates platforms and tools powered by AI to deliver innovative solutions that meet the evolving needs of our customers. The technology company is committed to making AI available broadly and doing so responsibly, with a mission to empower every person and every organization on the planet to achieve more.
+About Stellantis
+Stellantis (NYSE: STLA / Euronext Milan: STLAM / Euronext Paris: STLAP) is a leading global automaker, dedicated to giving its customers the freedom to choose the way they move, embracing the latest technologies and creating value for all its stakeholders. Its unique portfolio of iconic and innovative brands includes Abarth, Alfa Romeo, Chrysler, Citroën, Dodge, DS Automobiles, FIAT, Jeep ® , Lancia, Maserati, Opel, Peugeot, Ram, Vauxhall, Free2move and Leasys. For more information, visit www.stellantis.com.
+Media
+communications@stellantis.com
+Fernão SILVEIRA
++31 6 43 25 43 41
+fernao.silveira@stellantis.com
+Nathalie ROUSSEL
++33 6 87 77 41 82
+nathalie.roussel@stellantis.com
+Downloads
+Press Release
+Share
+
+## full_text
+
+Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis
+Media
+communications@stellantis.com
+Fernão SILVEIRA
++31 6 43 25 43 41
+fernao.silveira@stellantis.com
+Nathalie ROUSSEL
++33 6 87 77 41 82
+nathalie.roussel@stellantis.com
+Downloads
+Press Release
+Share
+April 16, 2026
+Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences
+Joint teams to co-develop more than 100 AI initiatives across sales, customer care and operations, driving innovation at a global scale
+Stellantis to strengthen global cyber defense center with AI‑driven analytics to help prevent cyberthreats and protect vehicles, customers and operations worldwide
+Scalable cloud modernization boosts agility, performance, and a more interconnected digital ecosystem, with a targeted 60% datacenter footprint reduction by 2029
+AMSTERDAM and REDMOND, Wash. – Stellantis and Microsoft today announced a five‑year strategic collaboration aimed at accelerating Stellantis’ digital transformation through the co‑development of advanced AI, cybersecurity and engineering capabilities.
+Building on a longstanding alliance, this collaboration will bring together Stellantis’ automotive engineering expertise, multi-brand scale and global operations with Microsoft’s cloud, AI and security capabilities to accelerate stronger, more agile, more connected digital processes across its ecosystem.
+“At Stellantis, we have been inventing for more than 100 years with one goal in mind: creating products, services and experiences customers love,” said Ned Curic , Stellantis Chief Engineering & Technology Officer. “As AI rapidly advances, we have been early adopters across our business, from engineering and manufacturing to design and customer interaction, embedding AI directly into our vehicles, from the new digital cabin to the core vehicle Operating System. Through our collaboration with Microsoft, we are accelerating our AI momentum across the enterprise, giving our teams the tools to innovate faster and deliver the products, services and experiences customers expect from us.”
+“Our work with Stellantis reflects a shared ambition to drive AI Transformation responsibly and securely across the automotive value chain,” said Judson Althoff , CEO of Microsoft’s Commercial Business. “By combining Stellantis’ global scale and engineering expertise with Microsoft’s trusted cloud, AI and security platforms, we are delivering real value for millions of drivers worldwide.”
+Faster, Smarter Innovation Through AI & Data
+As part of the collaboration, Stellantis and Microsoft are co‑developing more than 100 AI initiatives across customer care, product development and operations, including:
+AI‑powered product development and validation
+Predictive maintenance and testing
+Faster deployment of new digital features and services
+By leveraging AI‑driven insights from secure, encrypted data, Stellantis reaffirms its commitment to put customers at the center of everything it does. For example, Peugeot drivers may receive intelligent recommendations for more energy‑efficient driving in urban environments, along with proactive vehicle-health insights and feature updates designed to improve everyday usability.
+Stronger Cybersecurity Across Vehicles and Operations
+Stellantis will deploy and operate an AI‑driven global cyber defense center spanning its IT systems, connected vehicles, manufacturing sites, and digital products. This unified approach enables Stellantis to:
+Anticipate and detect cyberthreats faster with AI‑driven analytics
+Ensure consistent protection of connected services and customer data
+Strengthen resilience and response capabilities across global operations.
+With this end‑to‑end approach, cybersecurity will be further embedded into every digital vehicle experience, safeguarding interactions across mobile apps and in‑vehicle services. For example, Jeep ® drivers will benefit from reliable connectivity and protected data access even in remote terrain, ensuring confidence wherever their journey takes them.
+Cloud-Driven Reliability and Global Scale
+To deliver faster and more reliable digital experiences worldwide, Stellantis is modernizing its infrastructure using Microsoft Azure, targeting a 60% reduction in datacenter footprint by 2029. This cloud modernization will power a more interconnected and scalable digital ecosystem, supporting seamless delivery of digital and connected services for customers, and strengthening operational resilience across global manufacturing and logistics.
+Joint Resourcing to Accelerate Priority Programs
+Stellantis and Microsoft will continue to advance this collaboration over the coming years by working side‑by‑side and engaging Microsoft‑certified partners where specialized expertise is required. This collaborative model ensures sustained focus on Stellantis’ priority technology programs, while enabling future AI‑driven enhancements across engineering, manufacturing and supply‑chain operations.
+As part of the collaboration, Stellantis is equipping its global workforce with enterprise-grade AI tools to enhance productivity and collaboration. All employees currently have access to Copilot Chat, with an initial rollout of 20,000 licenses of Microsoft 365 Copilot supporting select roles. Deployment is supported by a Stellantis-dedicated training program, helping teams apply AI capabilities effectively in their daily work and deliver stronger outcomes for customers.
+About Microsoft
+Microsoft (Nasdaq “MSFT” @microsoft) creates platforms and tools powered by AI to deliver innovative solutions that meet the evolving needs of our customers. The technology company is committed to making AI available broadly and doing so responsibly, with a mission to empower every person and every organization on the planet to achieve more.
+About Stellantis
+Stellantis (NYSE: STLA / Euronext Milan: STLAM / Euronext Paris: STLAP) is a leading global automaker, dedicated to giving its customers the freedom to choose the way they move, embracing the latest technologies and creating value for all its stakeholders. Its unique portfolio of iconic and innovative brands includes Abarth, Alfa Romeo, Chrysler, Citroën, Dodge, DS Automobiles, FIAT, Jeep ® , Lancia, Maserati, Opel, Peugeot, Ram, Vauxhall, Free2move and Leasys. For more information, visit www.stellantis.com.
+Media
+communications@stellantis.com
+Fernão SILVEIRA
++31 6 43 25 43 41
+fernao.silveira@stellantis.com
+Nathalie ROUSSEL
++33 6 87 77 41 82
+nathalie.roussel@stellantis.com
+Downloads
+Press Release
+Share
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 85
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":85,"text_length":6680,"paragraph_count":34,"sentence_count":24,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis ## Media communications@stellantis.com Fernão SILVEIRA+31 6 43 25 43 41 fernao.silveira@stellantis.com Nathalie ROUSSEL+33 6 87 77 41 82 n... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original
+
+2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis Media communications@stellantis.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   com Fernão SILVEIRA +31 6 43 25 43 41 fernao.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   silveira@stellantis.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   com Nathalie ROUSSEL +33 6 87 77 41 82 nathalie.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   roussel@stellantis.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Microsoft
+- products: Copilot
+- people: 暂无公开信息
+- industries: 医疗, 制造 / 工业, 企业服务
+- roles: 开发者 / 工程团队, 销售 / 客服
+- workflows: 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 31, 6, 43, 25, 41, 33, 87, 77
+- quotes: At Stellantis, we have been inventing for more than 100 years with one goal in mind: creating products, services and experiences customers love, / Our work with Stellantis reflects a shared ambition to drive AI Transformation responsibly and securely across the automotive value chain,
+
+## evidence_seed
+
+- company_actions: com Fernão SILVEIRA +31 6 43 25 43 41 fernao. / silveira@stellantis. / com Nathalie ROUSSEL +33 6 87 77 41 82 nathalie.
+- case_details: Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis ## Media communications@stellantis.com Fernão SILVEIRA+31 6 43 25 43 41 fernao.silveira@stellantis.com Nathalie ROUSSEL+33 6 87 77 41 82 n... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original / Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis Media communications@stellantis.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Stellantis Accelerates AI-led Strategy and Digital Transformation Through Strategic Collaboration with Microsoft to Enhance Customer Experiences | Stellantis ## Media communications@stellantis.com Fernão SILVEIRA+31 6 43 25 43 41 fernao.silveira@stellantis.com Nathalie ROUSSEL+33 6 87 77 41 82 n... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

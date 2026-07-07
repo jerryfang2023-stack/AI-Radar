@@ -1,25 +1,25 @@
 {
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T10:01:34+08:00",
-  "workflow_mode": "business_signals_pr",
+  "generated_at": "2026-07-07T03:25:26.972Z",
+  "workflow_mode": "local_business_signals_repair",
   "outcomes": {
-    "monitor": "success",
-    "monitor_readiness": "success",
-    "raw_pool_gate": "success",
-    "asset_generation": "success",
-    "pool_to_card_dedupe_gate": "success",
-    "business_frontstage_data": "success",
-    "business_frontstage_gate": "success",
-    "operations_data_sync": "success",
-    "pre_commit_gate": "success"
+    "monitor": "local_repair_completed",
+    "monitor_readiness": "passed",
+    "raw_pool_gate": "passed",
+    "asset_generation": "passed",
+    "pool_to_card_dedupe_gate": "passed",
+    "business_frontstage_data": "passed",
+    "business_frontstage_gate": "passed",
+    "operations_data_sync": "not_run_local_repair",
+    "pre_commit_gate": "passed"
   },
   "assets": {
     "raw_candidates": "present",
-    "source_raw_artifacts": "present",
+    "source_raw_artifacts": "missing",
     "raw_originals": "present",
     "pool_candidates": "present",
     "business_signals": "present",
-    "signal_card_files": 8,
+    "signal_card_files": 12,
     "v3_data_observation_desk": "present",
     "intelligence_graph_index": "present",
     "operations_dashboard_data": "present"

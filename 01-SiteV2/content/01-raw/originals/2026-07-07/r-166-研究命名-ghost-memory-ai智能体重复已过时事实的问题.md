@@ -1,0 +1,203 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-166
+title: "研究命名\"Ghost Memory\"：AI智能体重复已过时事实的问题"
+title_zh: "研究命名\"Ghost Memory\"：AI智能体重复已过时事实的问题"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://x.com/omarsar0/status/2074121191846261022"
+canonical_url: "https://x.com/omarsar0/status/2074121191846261022"
+source_name: "X：Elvis Saravia (@omarsar0, DAIR.AI)"
+source_type: operators
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-06T13:20:02.000Z"
+collected_at: 2026-07-07T02:47:00.642Z
+language: mixed
+full_text_hash: 4e193b5ec2b4689a
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-166-研究命名-ghost-memory-ai智能体重复已过时事实的问题.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-166-研究命名-ghost-memory-ai智能体重复已过时事实的问题.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: timeout-fallback-visible-text
+extraction_quality: failed
+extraction_method: "fetch_failed_summary_fallback"
+readability_score: 0
+extractor_diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+has_full_text: false
+content_length: 221
+fetch_error: "fetch failed (code=UND_ERR_CONNECT_TIMEOUT)"
+evidence_strength: blocked
+raw_qc_decision: block
+raw_qc_downstream_use: not_allowed
+degradation_reasons: ["missing_full_text","missing_snapshot"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4e193b5ec2b4689a","missing":["missing_full_text","missing_snapshot"]}
+source_volatility: high
+community_name: "X：Elvis Saravia (@omarsar0, DAIR.AI)"
+capture_scope: aihot_visible_text
+visible_range: "仅保留采集通道当时可见文本，未抓到原页面正文"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"研究命名\"Ghost Memory\"：AI智能体重复已过时事实的问题","discovery_summary":"长期运行的AI智能体会重复已过时的事实，新研究将此失效命名为\"ghost memory\"。旧事实、当前事实及过渡期记录同时存在记忆库中被检索，导致答案模型出错。研究提出A-TMA，一种状态感知覆盖层，保留被取代记录和过渡记录，构建与查询状态对应的证据包，并为QA步骤提供当前、历史和过渡标签。在冲突密集的LTP基准上，将A-TMA添加到Graphiti后，冲突准确率提升0.240绝对百分点。研究建议对持久化助手的记忆库、检索和答案分别评估。","source_name":"X：Elvis Saravia (@omarsar0, DAIR.AI)","origin_url":"https://x.com/omarsar0/status/2074121191846261022","discovered_at":"2026-07-07T02:33:49.210Z","rank_on_page":186,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "timeout"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 526b673abee1580c
+content_hash: 4e193b5ec2b4689a
+semantic_hash: b4ae6453d7d97aec
+duplicate_of: ""
+first_seen_at: "2026-07-06T13:20:02.000Z"
+last_seen_at: 2026-07-07T02:47:00.642Z
+update_detected: false
+raw_status: ignored
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["discard"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":4,"importance_reason":"technical trend or capability shift; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":2,"case_richness":2,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["X","Elvis Saravia (@omarsar0","DAIR.AI)"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["0.240"],"quotes":["Ghost Memory","ghost memory","ghost memory"]}
+evidence_seed: {"company_actions":["旧事实、当前事实及过渡期记录同时存在记忆库中被检索，导致答案模型出错。","研究提出A-TMA，一种状态感知覆盖层，保留被取代记录和过渡记录，构建与查询状态对应的证据包，并为QA步骤提供当前、历史和过渡标签。","在冲突密集的LTP基准上，将A-TMA添加到Graphiti后，冲突准确率提升0."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索","没有可用全文快照"]
+key_excerpts: [{"type":"quote","text":"长期运行的AI智能体会重复已过时的事实，新研究将此失效命名为\"ghost memory\"。旧事实、当前事实及过渡期记录同时存在记忆库中被检索，导致答案模型出错。研究提出A-TMA，一种状态感知覆盖层，保留被取代记录和过渡记录，构建与查询状态对应的证据包，并为QA步骤提供当前、历史和过渡标签。在冲突密集的LTP基准上，将A-TMA添加到Graphiti后，冲突准确率提升0.240绝对百分点。研究建议对持久化助手的记忆库、检索和答案分别评估。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"quote","text":"长期运行的AI智能体会重复已过时的事实，新研究将此失效命名为\"ghost memory\"。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"旧事实、当前事实及过渡期记录同时存在记忆库中被检索，导致答案模型出错。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"研究提出A-TMA，一种状态感知覆盖层，保留被取代记录和过渡记录，构建与查询状态对应的证据包，并为QA步骤提供当前、历史和过渡标签。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在冲突密集的LTP基准上，将A-TMA添加到Graphiti后，冲突准确率提升0.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"研究建议对持久化助手的记忆库、检索和答案分别评估。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-07T02:47:00.642Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 研究命名"Ghost Memory"：AI智能体重复已过时事实的问题
+
+## clean_text
+
+长期运行的AI智能体会重复已过时的事实，新研究将此失效命名为"ghost memory"。旧事实、当前事实及过渡期记录同时存在记忆库中被检索，导致答案模型出错。研究提出A-TMA，一种状态感知覆盖层，保留被取代记录和过渡记录，构建与查询状态对应的证据包，并为QA步骤提供当前、历史和过渡标签。在冲突密集的LTP基准上，将A-TMA添加到Graphiti后，冲突准确率提升0.240绝对百分点。研究建议对持久化助手的记忆库、检索和答案分别评估。
+
+## full_text
+
+长期运行的AI智能体会重复已过时的事实，新研究将此失效命名为"ghost memory"。旧事实、当前事实及过渡期记录同时存在记忆库中被检索，导致答案模型出错。研究提出A-TMA，一种状态感知覆盖层，保留被取代记录和过渡记录，构建与查询状态对应的证据包，并为QA步骤提供当前、历史和过渡标签。在冲突密集的LTP基准上，将A-TMA添加到Graphiti后，冲突准确率提升0.240绝对百分点。研究建议对持久化助手的记忆库、检索和答案分别评估。
+
+## extraction_diagnostics
+
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- fetch_status: timeout-fallback-visible-text
+- extraction_quality: failed
+- diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   长期运行的AI智能体会重复已过时的事实，新研究将此失效命名为"ghost memory"。旧事实、当前事实及过渡期记录同时存在记忆库中被检索，导致答案模型出错。研究提出A-TMA，一种状态感知覆盖层，保留被取代记录和过渡记录，构建与查询状态对应的证据包，并为QA步骤提供当前、历史和过渡标签。在冲突密集的LTP基准上，将A-TMA添加到Graphiti后，冲突准确率提升0.240绝对百分点。研究建议对持久化助手的记忆库、检索和答案分别评估。
+
+2. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   长期运行的AI智能体会重复已过时的事实，新研究将此失效命名为"ghost memory"。
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   旧事实、当前事实及过渡期记录同时存在记忆库中被检索，导致答案模型出错。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   研究提出A-TMA，一种状态感知覆盖层，保留被取代记录和过渡记录，构建与查询状态对应的证据包，并为QA步骤提供当前、历史和过渡标签。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   在冲突密集的LTP基准上，将A-TMA添加到Graphiti后，冲突准确率提升0.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   研究建议对持久化助手的记忆库、检索和答案分别评估。
+
+## business_elements
+
+- companies: X, Elvis Saravia (@omarsar0, DAIR.AI)
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 0.240
+- quotes: Ghost Memory / ghost memory / ghost memory
+
+## evidence_seed
+
+- company_actions: 旧事实、当前事实及过渡期记录同时存在记忆库中被检索，导致答案模型出错。 / 研究提出A-TMA，一种状态感知覆盖层，保留被取代记录和过渡记录，构建与查询状态对应的证据包，并为QA步骤提供当前、历史和过渡标签。 / 在冲突密集的LTP基准上，将A-TMA添加到Graphiti后，冲突准确率提升0.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 4
+- importance_reason: technical trend or capability shift; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 2
+- case_richness: 2
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- discard
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Elvis Saravia (@omarsar0, DAIR.AI)
+- capture_scope: aihot_visible_text
+- visible_range: 仅保留采集通道当时可见文本，未抓到原页面正文
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: timeout
+- discovery_record: {"discovery_title":"研究命名\"Ghost Memory\"：AI智能体重复已过时事实的问题","discovery_summary":"长期运行的AI智能体会重复已过时的事实，新研究将此失效命名为\"ghost memory\"。旧事实、当前事实及过渡期记录同时存在记忆库中被检索，导致答案模型出错。研究提出A-TMA，一种状态感知覆盖层，保留被取代记录和过渡记录，构建与查询状态对应的证据包，并为QA步骤提供当前、历史和过渡标签。在冲突密集的LTP基准上，将A-TMA添加到Graphiti后，冲突准确率提升0.240绝对百分点。研究建议对持久化助手的记忆库、检索和答案分别评估。","source_name":"X：Elvis Saravia (@omarsar0, DAIR.AI)","origin_url":"https://x.com/omarsar0/status/2074121191846261022","discovered_at":"2026-07-07T02:33:49.210Z","rank_on_page":186,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+长期运行的AI智能体会重复已过时的事实，新研究将此失效命名为"ghost memory"。旧事实、当前事实及过渡期记录同时存在记忆库中被检索，导致答案模型出错。研究提出A-TMA，一种状态感知覆盖层，保留被取代记录和过渡记录，构建与查询状态对应的证据包，并为QA步骤提供当前、历史和过渡标签。在冲突密集的LTP基准上，将A-TMA添加到Graphiti后，冲突准确率提升0.240绝对百分点。研究建议对持久化助手的记忆库、检索和答案分别评估。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

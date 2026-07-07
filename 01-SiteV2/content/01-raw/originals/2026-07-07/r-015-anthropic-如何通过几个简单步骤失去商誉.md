@@ -1,0 +1,331 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-015
+title: "Anthropic 如何通过几个简单步骤失去商誉"
+title_zh: "Anthropic 如何通过几个简单步骤失去商誉"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://raheeljunaid.com/blog/anthropics-method-to-losing-goodwill-in-a-few-easy-steps"
+canonical_url: "https://raheeljunaid.com/blog/anthropics-method-to-losing-goodwill-in-a-few-easy-steps"
+source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: changelog_or_release
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-06T14:31:53.531Z"
+collected_at: 2026-07-07T02:46:59.335Z
+language: mixed
+full_text_hash: 7e2c9ad9d8219dcc
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-015-anthropic-如何通过几个简单步骤失去商誉.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-015-anthropic-如何通过几个简单步骤失去商誉.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":10546,"paragraph_count":59,"sentence_count":87,"boilerplate_hits":1,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 10546
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7e2c9ad9d8219dcc","missing":[]}
+source_volatility: high
+community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: user_feedback_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Anthropic 如何通过几个简单步骤失去商誉","discovery_summary":"Anthropic 因 API 不稳定、厂商锁定及价格调整引发用户不满。其 Claude Code CLI 约有 9100 个未解决 GitHub issue，订阅用户无法在 OpenCode 等第三方工具使用 Claude 订阅。自 6 月 15 日起，Anthropic 将订阅计费分为第一方与第三方两个独立池，新增\"Agent SDK credit\"（Pro 20 美元，Max 5x 100 美元，Max 20x 200 美元），超出后按标准 API 费率计费。此前订阅用户使用代理工具可获约 15-30 倍补贴，新政策使第三方及自动化调用成本大幅上升。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://raheeljunaid.com/blog/anthropics-method-to-losing-goodwill-in-a-few-easy-steps","discovered_at":"2026-07-07T02:33:49.200Z","rank_on_page":172,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: d060896984475962
+content_hash: 7e2c9ad9d8219dcc
+semantic_hash: a6c32a8cdea93277
+duplicate_of: ""
+first_seen_at: "2026-07-06T14:31:53.531Z"
+last_seen_at: 2026-07-07T02:46:59.335Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["emerging_pool","user_feedback_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":4}
+business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","OpenAI","Anthropic","Google","GitHub","AWS"],"products":["Claude","Agent","agent","claude","agents","Copilot","MCP","Gemini"],"people":[],"industries":["金融 / 保险","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["9100","6","15","20 美元","5x","100 美元","20x","200 美元"],"quotes":["Agent SDK credit","Extra usage","Agent SDK credit","coding is solved","automate away"]}
+evidence_seed: {"company_actions":["Invidious Musings [PSA] Anthropic's Method to Losing Goodwill in a Few Easy Steps Published on July 6, 2026 Edit: This was a hit on HackerNews and I received a ton of valuable feedback.","I’ve put markers for the amendments I’ve made Recently, I had the rare opportunity to test several agent harnesses, LLMs, and AI gateways in my daily tasks and greenfield projects.","Each discovery befuddled me on the popular sentiment for agentic development."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"Anthropic 因 API 不稳定、厂商锁定及价格调整引发用户不满。其 Claude Code CLI 约有 9100 个未解决 GitHub issue，订阅用户无法在 OpenCode 等第三方工具使用 Claude 订阅。自 6 月 15 日起，Anthropic 将订阅计费分为第一方与第三方两个独立池，新增\"Agent SDK credit\"（Pro 20 美元，Max 5x 100 美元，Max 20x 200 美元），超出后按标准 API 费率计费。此前订阅用户使用代理工具可获约 15-30 倍补贴，新政策使第三方及自动化调用成本大幅上升。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Invidious Musings [PSA] Anthropic's Method to Losing Goodwill in a Few Easy Steps Published on July 6, 2026 Edit: This was a hit on HackerNews and I received a ton of valuable feedback.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"I’ve put markers for the amendments I’ve made Recently, I had the rare opportunity to test several agent harnesses, LLMs, and AI gateways in my daily tasks and greenfield projects.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Each discovery befuddled me on the popular sentiment for agentic development.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"I learned that in the past two weeks, Anthropic has diminished in value for coding with their enshittification, vendor lock in, consumer malpractice, and price gouging, all while open source models are more competitive than ever.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"API Reliability Claude’s API is notoriously unstable, yet it’s the only API provider that is compatible with a Claude subscription.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-07T02:46:59.335Z
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Anthropic 如何通过几个简单步骤失去商誉
+
+## clean_text
+
+Invidious Musings
+[PSA] Anthropic's Method to Losing Goodwill in a Few Easy Steps
+Published on July 6, 2026
+Edit: This was a hit on HackerNews and I received a ton of valuable feedback. I’ve put markers for the amendments I’ve made
+Recently, I had the rare opportunity to test several agent harnesses, LLMs, and AI gateways in my daily tasks and greenfield projects. Each discovery befuddled me on the popular sentiment for agentic development.
+I learned that in the past two weeks, Anthropic has diminished in value for coding with their enshittification, vendor lock in, consumer malpractice, and price gouging, all while open source models are more competitive than ever.
+API Reliability
+Claude’s API is notoriously unstable, yet it’s the only API provider that is compatible with a Claude subscription.
+Edit: When I began writing this article, it was mid May which is why the screenshot is out of date. As of July, Claude's reliability has increased somewhat
+Other API providers like Vertex AI, AWS Bedrock, and Azure only serve the pricier Anthropic API credits. If you want to subscribe to Claude, you’re stuck with Anthropic’s servers.
+If you’re debugging an incident at work and are using Claude to help, pray that it stays up because you’re only productive when Claude is online.
+Claude Code
+Claude Code is Anthropic’s primary consumer-facing engineering interface, and once you’re in, you’re locked in. Your Claude subscription—which is a cheaper version of the Anthropic API—is restricted to use with the Claude Code CLI/Desktop, Claude CoWork, or @Claude in Slack.
+Edit: You can also use the Agent SDK
+But that isn’t a bad thing! In fact, Claude Code is the most popular and the best agent harness. It’s backed by a large company at the forefront of agentic software development. As of writing, Claude Code CLI only has around 9100 open Github issues , with small unresolved issues like it completely freezing for the last 6+ months or a screen flickering issue open for more than a year. Each changelog entry has a bug fix in almost every release , which is a sign of reliable and stable software!
+For those who don’t get it, Anthropic is using Claude Code to write itself, and it shows in its quality. Because they restrict you to their ecosystem, it justifies falling behind better coding harnesses.
+For reference, here is what the Claude Code CLI looks like:
+And here is what the OpenCode CLI looks like:
+I would take OpenCode’s interface any day over Anthropic’s, but I am prohibited from applying my Claude subscription to OpenCode.
+Extra Usage
+There are FOSS projects to circumvent Anthropic’s policies, which allow you to use your Claude subscription instead of an expensive Anthropic API Key. A notable example is the Pi Coding Agent , which comes with built-in support for Claude OAuth.
+However, you’ll notice this message at the bottom when you attempt to authenticate with your Claude account:
+Warning: Anthropic subscription auth is active. Third-party harness usage draws from extra usage and is billed per token, not your Claude plan limits.
+Manage extra usage at https://claude.ai/settings/usage.
+“Extra usage” is Anthropic’s answer to their plan limits. When you exceed your five hour session or weekly limit, you’re billed through the Anthropic API. This requires consent by the user on their plan and is good for those with long-running AI sessions. When I authenticate with Claude in Pi Coding Agent, it bills from Extra Usage, meaning my subscription doesn’t save me any money. Fine.
+It’s a completely different thing when I’m using the tool they force me to use, and they still retract extra usage before I reach my rate limit.
+Here is a confusing announcement from Claude’s Twitter account on May 13th. 2026:
+For the confused, here is the no bullshit summary from Zed’s blog :
+Starting June 15, Anthropic is splitting Claude subscription billing into two pools : one for using Claude through Anthropic's first-party tools (such as chat, or the official Claude Code CLI), and another for third-party agent and SDK usage (anything running through ACP, claude -p, or other third-party tools). If you use Claude Code through ACP (in Zed or anywhere else), that usage will no longer draw from your Claude Pro or Max subscription limits. Instead, it draws from a new monthly "Agent SDK credit" that Anthropic is adding to each plan: $20 for Pro, $100 for Max 5x, $200 for Max 20x.
+Once the credit runs out, continued usage bills at standard API rates if you have extra usage enabled. If you don't, requests stop until your credit resets next billing cycle.
+What this means in practice: For anyone using agents heavily, this is a major cost increase. Claude subscriptions previously subsidized agent usage at roughly 15-30x compared to API pricing , and the new credits are billed at full API rates.
+Side note: claude -p is a first party tool offered with the claude cli. If I wanted to use the Claude Code CLI and invoke it in my automations, I have to pay more outside of my subscription. So the extra usage ISN’T extra at all! Users didn’t discover this by having their claude -p invocations stop working, but by looking at their billing page and seeing the charges!
+Edit: It looks like they rolled this back from consumer backlash
+Recommended viewing: Louis Rossman has made a few videos on Anthropic’s predatory pricing changes.
+This isn’t the first time Anthropic has decimated their goodwill. They also charged extra usage when they “thought” you might be using a third-party tool, even if you weren’t. They did this by detecting if a file with a certain name was present in your session directory .
+Anthropic then restricted their API contracts, and proxy tools that aim to restore compatibility for Claude subscriptions with third-party harnesses started charging extra usage overnight, with no change to their own query mechanisms.
+Dario needs capital, not because inference is expensive, but because model training is . Once you stop training models, you lose the race to AGI. All this self-flagellation wasn’t even for the product, it was for training the next one! That’s like if majority of your college tuition went to the head coach of the football team (which it usually does).
+To put it bluntly, they have us by the balls.
+Vibe Coding
+But why do they have us by the balls? Dario and Boris have us convinced that “coding is solved” with their loops . But microwaves didn’t solve cooking.
+The flood of AI hype through LinkedIn—preaching from executives with lots of money and power to “automate away” engineers through vibecoding software—perpetuates the attitude that code and developers are dispensable and unimportant. It makes us focus on quantity—of what I would generously call “prototypes”—over quality.
+These leaders need advanced models so they can vibecode with less friction, and Anthropic serves those models for a “cheap” $200 USD per month. (This subsidized price will increase once profitability becomes a priority again.) So Claude is good for those who can’t or don’t code, and the more vibecoders, the more market share Anthropic gets, and the more people they have by the balls.
+I leaned into vibecoding during the brief “tokenmaxxing” era, but when Claude went down, I went down. My “agent-driven development” led to skill degradation and a drift in understanding of my own code.
+To regain my sanity, I returned to what AI coding used to be with Github Copilot: autocomplete. That’s all an LLM is after you strip away the tool calls, subagents, MCP servers, etc. I understand most of what I want to do, and for any gaps, I ask AI to “autocomplete” my understanding/plan/code. That way, the AI can think/plan/code like me, making it easy to review changes. My workflow is now agent-assisted development, not agent-driven.
+But are the alternatives besides GPT or Gemini?
+Open Source Models
+To be clear, I’m not anti-AI. I’m only against unethical companies with anti-consumer practices, and the perpetrators behind them.
+If you want to autocomplete, like I do, you don’t need Fable, or even Opus; Sonnet works fine. But if you want to use FOSS trusted tools like Zed, OpenCode, Pi, Nanocoder, etc. unchained by a degrading and restrictive ecosystem, you’re looking for other models.
+Ever since Ollama, open source models have ranked far below proprietary models released by Google, OpenAI, and Anthropic. This is due to them having less corporate backing and training parameters. Only recently have we seen competition from foreign models like Deepseek, GLM, Kimi, Qwen, Minimax, Xiaomi, Stepfun, etc.
+Coding comparison of Sonnet 5, GLM 5.2, and Qwen 3.7 Max on OpenRouter
+I’ve used Qwen and GLM and both replaced Sonnet in my OpenCode workflow. With an AI Gateway like OpenRouter, Requesty, Portkey, or Vercel, I can choose any open source model, and it will route my request to the cheapest and most available backend API provider. I can also tweak the providers to optimize for zero data retention, omit sensitive data leaks from my prompts, and restrict more expensive models.
+Cost comparison of GLM 5.2, Qwen 3.7 Max, and Sonnet 5 on OpenRouter
+Some models are great for research, but horrible for documentation. Other models are great for coding, but horrible for research.
+With the right harness, subagents, and models (chosen with experimentation), a developer has the tools they need to develop high quality software and not break the bank. 1
+In my head, this is what we should be striving for: open, configurable, and repairable systems. We shouldn’t be using security as an excuse for restricting our models and ignoring customer protections.
+Conclusion
+In my opinion (which may be in the minority), it’s unethical to:
+lock in your customers to a closed system for maximum market gain
+put down the competition when they pose a risk to your product
+make hypocritical claims on how your product increases quality when your own software sucks
+artificially restrict one’s own product as a fear-mongering marketing stunt
+test dynamic pricing on your users to see how much more they’ll pay for less
+change the terms of your product after the sale without notifying your user base
+And this is just one of the three giant AI labs. I could write another piece on OpenAI .
+Anthropic is trying to match the cutthroat and anti-consumer practices of big-tech because the line must go up. Like I did for big-tech, I’ll be taking my business elsewhere, and I encourage you to do the same.
+Today, I use Qwen and GLM for orchestration, Deepseek for searching, and Minimax for file editing ↩
+
+## full_text
+
+Invidious Musings
+[PSA] Anthropic's Method to Losing Goodwill in a Few Easy Steps
+Published on July 6, 2026
+Edit: This was a hit on HackerNews and I received a ton of valuable feedback. I’ve put markers for the amendments I’ve made
+Recently, I had the rare opportunity to test several agent harnesses, LLMs, and AI gateways in my daily tasks and greenfield projects. Each discovery befuddled me on the popular sentiment for agentic development.
+I learned that in the past two weeks, Anthropic has diminished in value for coding with their enshittification, vendor lock in, consumer malpractice, and price gouging, all while open source models are more competitive than ever.
+API Reliability
+Claude’s API is notoriously unstable, yet it’s the only API provider that is compatible with a Claude subscription.
+Edit: When I began writing this article, it was mid May which is why the screenshot is out of date. As of July, Claude's reliability has increased somewhat
+Other API providers like Vertex AI, AWS Bedrock, and Azure only serve the pricier Anthropic API credits. If you want to subscribe to Claude, you’re stuck with Anthropic’s servers.
+If you’re debugging an incident at work and are using Claude to help, pray that it stays up because you’re only productive when Claude is online.
+Claude Code
+Claude Code is Anthropic’s primary consumer-facing engineering interface, and once you’re in, you’re locked in. Your Claude subscription—which is a cheaper version of the Anthropic API—is restricted to use with the Claude Code CLI/Desktop, Claude CoWork, or @Claude in Slack.
+Edit: You can also use the Agent SDK
+But that isn’t a bad thing! In fact, Claude Code is the most popular and the best agent harness. It’s backed by a large company at the forefront of agentic software development. As of writing, Claude Code CLI only has around 9100 open Github issues , with small unresolved issues like it completely freezing for the last 6+ months or a screen flickering issue open for more than a year. Each changelog entry has a bug fix in almost every release , which is a sign of reliable and stable software!
+For those who don’t get it, Anthropic is using Claude Code to write itself, and it shows in its quality. Because they restrict you to their ecosystem, it justifies falling behind better coding harnesses.
+For reference, here is what the Claude Code CLI looks like:
+And here is what the OpenCode CLI looks like:
+I would take OpenCode’s interface any day over Anthropic’s, but I am prohibited from applying my Claude subscription to OpenCode.
+Extra Usage
+There are FOSS projects to circumvent Anthropic’s policies, which allow you to use your Claude subscription instead of an expensive Anthropic API Key. A notable example is the Pi Coding Agent , which comes with built-in support for Claude OAuth.
+However, you’ll notice this message at the bottom when you attempt to authenticate with your Claude account:
+Warning: Anthropic subscription auth is active. Third-party harness usage draws from extra usage and is billed per token, not your Claude plan limits.
+Manage extra usage at https://claude.ai/settings/usage.
+“Extra usage” is Anthropic’s answer to their plan limits. When you exceed your five hour session or weekly limit, you’re billed through the Anthropic API. This requires consent by the user on their plan and is good for those with long-running AI sessions. When I authenticate with Claude in Pi Coding Agent, it bills from Extra Usage, meaning my subscription doesn’t save me any money. Fine.
+It’s a completely different thing when I’m using the tool they force me to use, and they still retract extra usage before I reach my rate limit.
+Here is a confusing announcement from Claude’s Twitter account on May 13th. 2026:
+For the confused, here is the no bullshit summary from Zed’s blog :
+Starting June 15, Anthropic is splitting Claude subscription billing into two pools : one for using Claude through Anthropic's first-party tools (such as chat, or the official Claude Code CLI), and another for third-party agent and SDK usage (anything running through ACP, claude -p, or other third-party tools). If you use Claude Code through ACP (in Zed or anywhere else), that usage will no longer draw from your Claude Pro or Max subscription limits. Instead, it draws from a new monthly "Agent SDK credit" that Anthropic is adding to each plan: $20 for Pro, $100 for Max 5x, $200 for Max 20x.
+Once the credit runs out, continued usage bills at standard API rates if you have extra usage enabled. If you don't, requests stop until your credit resets next billing cycle.
+What this means in practice: For anyone using agents heavily, this is a major cost increase. Claude subscriptions previously subsidized agent usage at roughly 15-30x compared to API pricing , and the new credits are billed at full API rates.
+Side note: claude -p is a first party tool offered with the claude cli. If I wanted to use the Claude Code CLI and invoke it in my automations, I have to pay more outside of my subscription. So the extra usage ISN’T extra at all! Users didn’t discover this by having their claude -p invocations stop working, but by looking at their billing page and seeing the charges!
+Edit: It looks like they rolled this back from consumer backlash
+Recommended viewing: Louis Rossman has made a few videos on Anthropic’s predatory pricing changes.
+This isn’t the first time Anthropic has decimated their goodwill. They also charged extra usage when they “thought” you might be using a third-party tool, even if you weren’t. They did this by detecting if a file with a certain name was present in your session directory .
+Anthropic then restricted their API contracts, and proxy tools that aim to restore compatibility for Claude subscriptions with third-party harnesses started charging extra usage overnight, with no change to their own query mechanisms.
+Dario needs capital, not because inference is expensive, but because model training is . Once you stop training models, you lose the race to AGI. All this self-flagellation wasn’t even for the product, it was for training the next one! That’s like if majority of your college tuition went to the head coach of the football team (which it usually does).
+To put it bluntly, they have us by the balls.
+Vibe Coding
+But why do they have us by the balls? Dario and Boris have us convinced that “coding is solved” with their loops . But microwaves didn’t solve cooking.
+The flood of AI hype through LinkedIn—preaching from executives with lots of money and power to “automate away” engineers through vibecoding software—perpetuates the attitude that code and developers are dispensable and unimportant. It makes us focus on quantity—of what I would generously call “prototypes”—over quality.
+These leaders need advanced models so they can vibecode with less friction, and Anthropic serves those models for a “cheap” $200 USD per month. (This subsidized price will increase once profitability becomes a priority again.) So Claude is good for those who can’t or don’t code, and the more vibecoders, the more market share Anthropic gets, and the more people they have by the balls.
+I leaned into vibecoding during the brief “tokenmaxxing” era, but when Claude went down, I went down. My “agent-driven development” led to skill degradation and a drift in understanding of my own code.
+To regain my sanity, I returned to what AI coding used to be with Github Copilot: autocomplete. That’s all an LLM is after you strip away the tool calls, subagents, MCP servers, etc. I understand most of what I want to do, and for any gaps, I ask AI to “autocomplete” my understanding/plan/code. That way, the AI can think/plan/code like me, making it easy to review changes. My workflow is now agent-assisted development, not agent-driven.
+But are the alternatives besides GPT or Gemini?
+Open Source Models
+To be clear, I’m not anti-AI. I’m only against unethical companies with anti-consumer practices, and the perpetrators behind them.
+If you want to autocomplete, like I do, you don’t need Fable, or even Opus; Sonnet works fine. But if you want to use FOSS trusted tools like Zed, OpenCode, Pi, Nanocoder, etc. unchained by a degrading and restrictive ecosystem, you’re looking for other models.
+Ever since Ollama, open source models have ranked far below proprietary models released by Google, OpenAI, and Anthropic. This is due to them having less corporate backing and training parameters. Only recently have we seen competition from foreign models like Deepseek, GLM, Kimi, Qwen, Minimax, Xiaomi, Stepfun, etc.
+Coding comparison of Sonnet 5, GLM 5.2, and Qwen 3.7 Max on OpenRouter
+I’ve used Qwen and GLM and both replaced Sonnet in my OpenCode workflow. With an AI Gateway like OpenRouter, Requesty, Portkey, or Vercel, I can choose any open source model, and it will route my request to the cheapest and most available backend API provider. I can also tweak the providers to optimize for zero data retention, omit sensitive data leaks from my prompts, and restrict more expensive models.
+Cost comparison of GLM 5.2, Qwen 3.7 Max, and Sonnet 5 on OpenRouter
+Some models are great for research, but horrible for documentation. Other models are great for coding, but horrible for research.
+With the right harness, subagents, and models (chosen with experimentation), a developer has the tools they need to develop high quality software and not break the bank. 1
+In my head, this is what we should be striving for: open, configurable, and repairable systems. We shouldn’t be using security as an excuse for restricting our models and ignoring customer protections.
+Conclusion
+In my opinion (which may be in the minority), it’s unethical to:
+lock in your customers to a closed system for maximum market gain
+put down the competition when they pose a risk to your product
+make hypocritical claims on how your product increases quality when your own software sucks
+artificially restrict one’s own product as a fear-mongering marketing stunt
+test dynamic pricing on your users to see how much more they’ll pay for less
+change the terms of your product after the sale without notifying your user base
+And this is just one of the three giant AI labs. I could write another piece on OpenAI .
+Anthropic is trying to match the cutthroat and anti-consumer practices of big-tech because the line must go up. Like I did for big-tech, I’ll be taking my business elsewhere, and I encourage you to do the same.
+Today, I use Qwen and GLM for orchestration, Deepseek for searching, and Minimax for file editing ↩
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 94
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":10546,"paragraph_count":59,"sentence_count":87,"boilerplate_hits":1,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Anthropic 因 API 不稳定、厂商锁定及价格调整引发用户不满。其 Claude Code CLI 约有 9100 个未解决 GitHub issue，订阅用户无法在 OpenCode 等第三方工具使用 Claude 订阅。自 6 月 15 日起，Anthropic 将订阅计费分为第一方与第三方两个独立池，新增"Agent SDK credit"（Pro 20 美元，Max 5x 100 美元，Max 20x 200 美元），超出后按标准 API 费率计费。此前订阅用户使用代理工具可获约 15-30 倍补贴，新政策使第三方及自动化调用成本大幅上升。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Invidious Musings [PSA] Anthropic's Method to Losing Goodwill in a Few Easy Steps Published on July 6, 2026 Edit: This was a hit on HackerNews and I received a ton of valuable feedback.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   I’ve put markers for the amendments I’ve made Recently, I had the rare opportunity to test several agent harnesses, LLMs, and AI gateways in my daily tasks and greenfield projects.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Each discovery befuddled me on the popular sentiment for agentic development.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   I learned that in the past two weeks, Anthropic has diminished in value for coding with their enshittification, vendor lock in, consumer malpractice, and price gouging, all while open source models are more competitive than ever.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   API Reliability Claude’s API is notoriously unstable, yet it’s the only API provider that is compatible with a Claude subscription.
+
+## business_elements
+
+- companies: Hacker News 热门（buzzing.cc 中文翻译）, OpenAI, Anthropic, Google, GitHub, AWS
+- products: Claude, Agent, agent, claude, agents, Copilot, MCP, Gemini
+- people: 暂无公开信息
+- industries: 金融 / 保险, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 9100, 6, 15, 20 美元, 5x, 100 美元, 20x, 200 美元
+- quotes: Agent SDK credit / Extra usage / Agent SDK credit / coding is solved / automate away
+
+## evidence_seed
+
+- company_actions: Invidious Musings [PSA] Anthropic's Method to Losing Goodwill in a Few Easy Steps Published on July 6, 2026 Edit: This was a hit on HackerNews and I received a ton of valuable feedback. / I’ve put markers for the amendments I’ve made Recently, I had the rare opportunity to test several agent harnesses, LLMs, and AI gateways in my daily tasks and greenfield projects. / Each discovery befuddled me on the popular sentiment for agentic development.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: true
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- user_feedback_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: user_feedback_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Anthropic 如何通过几个简单步骤失去商誉","discovery_summary":"Anthropic 因 API 不稳定、厂商锁定及价格调整引发用户不满。其 Claude Code CLI 约有 9100 个未解决 GitHub issue，订阅用户无法在 OpenCode 等第三方工具使用 Claude 订阅。自 6 月 15 日起，Anthropic 将订阅计费分为第一方与第三方两个独立池，新增\"Agent SDK credit\"（Pro 20 美元，Max 5x 100 美元，Max 20x 200 美元），超出后按标准 API 费率计费。此前订阅用户使用代理工具可获约 15-30 倍补贴，新政策使第三方及自动化调用成本大幅上升。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://raheeljunaid.com/blog/anthropics-method-to-losing-goodwill-in-a-few-easy-steps","discovered_at":"2026-07-07T02:33:49.200Z","rank_on_page":172,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Anthropic 因 API 不稳定、厂商锁定及价格调整引发用户不满。其 Claude Code CLI 约有 9100 个未解决 GitHub issue，订阅用户无法在 OpenCode 等第三方工具使用 Claude 订阅。自 6 月 15 日起，Anthropic 将订阅计费分为第一方与第三方两个独立池，新增"Agent SDK credit"（Pro 20 美元，Max 5x 100 美元，Max 20x 200 美元），超出后按标准 API 费率计费。此前订阅用户使用代理工具可获约 15-30 倍补贴，新政策使第三方及自动化调用成本大幅上升。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
