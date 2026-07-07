@@ -1,0 +1,303 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-043
+title: "Vercel CEO Guillermo Rauch on the fight to split off models from agents"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/"
+canonical_url: "https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents"
+source_name: "TechCrunch AI"
+source_type: operators
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-07-07T02:01:23.541Z
+language: mixed
+full_text_hash: b996b7e64b6cad54
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-043-vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agent.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-07/r-043-vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agent.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":7424,"paragraph_count":36,"sentence_count":70,"boilerplate_hits":0,"symbol_ratio":0.0008,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 7424
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b996b7e64b6cad54","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0c2385307e7bcb13
+content_hash: b996b7e64b6cad54
+semantic_hash: a382a9e61dbf39fc
+duplicate_of: ""
+first_seen_at: "2026-07-07T02:01:23.541Z"
+last_seen_at: 2026-07-07T02:01:23.541Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["TechCrunch AI","OpenAI","Anthropic","Amazon","AWS","Salesforce","Cursor"],"products":["agents","agent","Cursor","Agents","Gemini","ChatGPT"],"people":[],"industries":["法律 / 法务","开发者工具"],"roles":["开发者 / 工程团队","销售 / 客服"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["12","49","6","2026","6 million","1 trillion","1","5.2"],"quotes":["The reality is, when you're optimizing for production, you start looking at a price/performance,"]}
+evidence_seed: {"company_actions":["Image Credits: Paulo Bassetto Photography / Vercel AI Vercel CEO Guillermo Rauch on the fight to split off models from agents Russell Brandom 12:49 PM PDT · July 6, 2026 Known for its cloud infrastructure that allows developers to deploy agents without managing servers, Vercel has quietly become one of the most central companies in AI software.","After the company’s ShipNYC conference last week, we sat down with Vercel CEO Guillermo Rauch for his take on this moment in AI, and how platform companies like Vercel end up competing with major labs.","Here’s a lightly edited transcript."],"case_details":["It feels like there’s a different energy in the community this year, fewer pilot programs and more focus on how to make things work well in practice."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"quote","text":"\"The reality is, when you're optimizing for production, you start looking at a price/performance,\" Guillermo Rauch tells TechCrunch.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Image Credits: Paulo Bassetto Photography / Vercel AI Vercel CEO Guillermo Rauch on the fight to split off models from agents Russell Brandom 12:49 PM PDT · July 6, 2026 Known for its cloud infrastructure that allows developers to deploy agents without managing servers, Vercel has quietly become one of the most central companies in AI software.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"The company currently sees 6 million deployments a day, half of them triggered by coding agents, and more than 1 trillion tokens flow through the company’s AI gateway daily.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"After the company’s ShipNYC conference last week, we sat down with Vercel CEO Guillermo Rauch for his take on this moment in AI, and how platform companies like Vercel end up competing with major labs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Here’s a lightly edited transcript.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"It feels like there’s a different energy in the community this year, fewer pilot programs and more focus on how to make things work well in practice.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-07T02:01:23.541Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Vercel CEO Guillermo Rauch on the fight to split off models from agents
+
+## clean_text
+
+Image Credits: Paulo Bassetto Photography / Vercel
+AI
+Vercel CEO Guillermo Rauch on the fight to split off models from agents
+Russell Brandom
+12:49 PM PDT · July 6, 2026
+Known for its cloud infrastructure that allows developers to deploy agents without managing servers, Vercel has quietly become one of the most central companies in AI software. The company currently sees 6 million deployments a day, half of them triggered by coding agents, and more than 1 trillion tokens flow through the company’s AI gateway daily.
+After the company’s ShipNYC conference last week, we sat down with Vercel CEO Guillermo Rauch for his take on this moment in AI, and how platform companies like Vercel end up competing with major labs. Here’s a lightly edited transcript.
+It feels like there’s a different energy in the community this year, fewer pilot programs and more focus on how to make things work well in practice. I’m sure you’ve seen that a lot with clients, but I’m curious what that journey has looked like within Vercel.
+Last year was about prototyping. The sky’s the limit, unleash the agents, everyone can build, and so on. We did that, and we learned a lot because we had hundreds of agents organically developed and deployed within the company, and then you started getting into the realities of agents in production, and some of the challenges.
+The biggest lesson for me was the home-run use cases, the two killer apps of agents. One is the coding agent, of course. That’s driving a lot of the token utilization in the world, but when you produce so much software, you need somewhere to put it. The second killer app of agents is the internal agent that helps you run the company. The challenge there is, how do you securely access data? How do you audit what the agent is doing? How do you get a trail of all of the tool calls and access controls that the agent had to incur in order to get a job done?
+To solve that, we came up with this framework called Eve, where you can lay out an agents’ instructions and skills in natural language. And another tool is Vercel Sandbox, where you put the agent in a little cage. It can have the freedom still to express its intelligence, but then you can apply policy on what data it can access and what data can leave the sandbox.
+What sort of problems does that help you avoid?
+For [the] sandbox, the biggest advantage is data control. A real risk of AI that I always think about is, when you get a coding IDE like Devin or Cursor, if you’re in the wrong setting, they may train on your entire codebase. I remember talking to the president of Airbus about this. You have decades of wealth of very specific C++ code for aerospace engineering. Someone comes in and installs the wrong developer tool and boom, all the code goes out to the cloud for training.
+I’m curious to hear more about that second killer use case. We all know about coding agents, but what does an internal corporate agent look like in practice?
+So, there’s a sales rep sitting out there [in Vercel’s office]. She works on install base. Her job is to grow existing accounts. The bottleneck for people like her has not been her creativity, intelligence, ability to build relationships, it’s been data. “I don’t understand what accounts are growing faster. Give me the five accounts that have added the most seats in the last two weeks, so that I can prioritize my work.” She couldn’t ask that question in the past. She needed to wait until a Q1 project for a new sales dashboard completed.
+We were in that bottleneck for years at Vercel, and it was really frustrating because on the R&D side, we’re the fastest-moving company in the world. But on the sales engine, the Salesforce engineering [side], I was so incompetent. I had never opened Salesforce in my life when I started.
+Now I feel like I can actually have impact across the entire company, because Eve can be used for our customer-facing agents and can be used to improve productivity. Same technology, it’s just APIs. Agents are forcing companies to open up, and that will have dramatic long-term implications. So many of these SaaS giants build their entire kingdoms on trapping your data, and that’s incompatible with agents.
+How do you see client relationships with the big AI labs changing?
+Last year there were a lot of people picking one lab partner — saying they would build everything on OpenAI or Anthropic. Now they’re saying, I understand how this all works — model, harness, data platform, sandbox, gateway — every piece is plug and play. You can use OpenAI, you can use Anthropic, or you can use Gemini. We’re seeing a lot of growth of Gemini, even though it’s not on the news as much, because people are optimizing for production now. The reality is, when you’re optimizing for production, you start looking at a price/performance, and Gemini models have awesome price/performance characteristics. You also bring in open models, so DeepSeek and GLM-5.2 are taking off. The data doesn’t lie.
+There are places where you’re in direct competition with the labs too, right? Just the other week, OpenAI released a new set of tools that publish directly to the web without having to leave the OpenAI enclave.
+It’s a natural next step for them to host little websites. And it’s a great opening for us, because now people will think of ChatGPT as a tool for making websites. And then if they keep asking the model questions about web hosting, the model recommends us. But you’re right, as the models or platforms add more capabilities, they come in direct competition with the infrastructure platforms that already exist.
+I really think at this point we’re deciding on whether the model and the agent are going to be coupled.
+Do you get all your intelligence from one place? Or do you get a module or a library or a building block from one provider, and then you build on top of it. That’s more like software engineering has always been, and that’s really what we’re bringing to market. We’re going to be the AWS of this generation, so obviously we’re fighting for a world of open protocols.
+Topics
+AI , Guillermo Rauch , Vercel
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Russell Brandom
+AI Editor
+Russell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review.
+He can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Amazon will stop accepting new customers for Mechanical Turk
+Anthony Ha
+5 desk gadgets that can make your workday better
+Aisha Malik
+Chevy built an all-American EV truck — why is nobody buying it?
+Tim De Chant
+Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped
+Lucas Ropek
+After $18B IPO, Bending Spoons founder says success comes from minimizing luck
+Anna Heim
+The ‘Father of the Internet’ is finally retiring
+Tim Fernholz
+OpenClaw is finally available on Android and iOS
+Lucas Ropek
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Paulo Bassetto Photography / Vercel
+AI
+Vercel CEO Guillermo Rauch on the fight to split off models from agents
+Russell Brandom
+12:49 PM PDT · July 6, 2026
+Known for its cloud infrastructure that allows developers to deploy agents without managing servers, Vercel has quietly become one of the most central companies in AI software. The company currently sees 6 million deployments a day, half of them triggered by coding agents, and more than 1 trillion tokens flow through the company’s AI gateway daily.
+After the company’s ShipNYC conference last week, we sat down with Vercel CEO Guillermo Rauch for his take on this moment in AI, and how platform companies like Vercel end up competing with major labs. Here’s a lightly edited transcript.
+It feels like there’s a different energy in the community this year, fewer pilot programs and more focus on how to make things work well in practice. I’m sure you’ve seen that a lot with clients, but I’m curious what that journey has looked like within Vercel.
+Last year was about prototyping. The sky’s the limit, unleash the agents, everyone can build, and so on. We did that, and we learned a lot because we had hundreds of agents organically developed and deployed within the company, and then you started getting into the realities of agents in production, and some of the challenges.
+The biggest lesson for me was the home-run use cases, the two killer apps of agents. One is the coding agent, of course. That’s driving a lot of the token utilization in the world, but when you produce so much software, you need somewhere to put it. The second killer app of agents is the internal agent that helps you run the company. The challenge there is, how do you securely access data? How do you audit what the agent is doing? How do you get a trail of all of the tool calls and access controls that the agent had to incur in order to get a job done?
+To solve that, we came up with this framework called Eve, where you can lay out an agents’ instructions and skills in natural language. And another tool is Vercel Sandbox, where you put the agent in a little cage. It can have the freedom still to express its intelligence, but then you can apply policy on what data it can access and what data can leave the sandbox.
+What sort of problems does that help you avoid?
+For [the] sandbox, the biggest advantage is data control. A real risk of AI that I always think about is, when you get a coding IDE like Devin or Cursor, if you’re in the wrong setting, they may train on your entire codebase. I remember talking to the president of Airbus about this. You have decades of wealth of very specific C++ code for aerospace engineering. Someone comes in and installs the wrong developer tool and boom, all the code goes out to the cloud for training.
+I’m curious to hear more about that second killer use case. We all know about coding agents, but what does an internal corporate agent look like in practice?
+So, there’s a sales rep sitting out there [in Vercel’s office]. She works on install base. Her job is to grow existing accounts. The bottleneck for people like her has not been her creativity, intelligence, ability to build relationships, it’s been data. “I don’t understand what accounts are growing faster. Give me the five accounts that have added the most seats in the last two weeks, so that I can prioritize my work.” She couldn’t ask that question in the past. She needed to wait until a Q1 project for a new sales dashboard completed.
+We were in that bottleneck for years at Vercel, and it was really frustrating because on the R&D side, we’re the fastest-moving company in the world. But on the sales engine, the Salesforce engineering [side], I was so incompetent. I had never opened Salesforce in my life when I started.
+Now I feel like I can actually have impact across the entire company, because Eve can be used for our customer-facing agents and can be used to improve productivity. Same technology, it’s just APIs. Agents are forcing companies to open up, and that will have dramatic long-term implications. So many of these SaaS giants build their entire kingdoms on trapping your data, and that’s incompatible with agents.
+How do you see client relationships with the big AI labs changing?
+Last year there were a lot of people picking one lab partner — saying they would build everything on OpenAI or Anthropic. Now they’re saying, I understand how this all works — model, harness, data platform, sandbox, gateway — every piece is plug and play. You can use OpenAI, you can use Anthropic, or you can use Gemini. We’re seeing a lot of growth of Gemini, even though it’s not on the news as much, because people are optimizing for production now. The reality is, when you’re optimizing for production, you start looking at a price/performance, and Gemini models have awesome price/performance characteristics. You also bring in open models, so DeepSeek and GLM-5.2 are taking off. The data doesn’t lie.
+There are places where you’re in direct competition with the labs too, right? Just the other week, OpenAI released a new set of tools that publish directly to the web without having to leave the OpenAI enclave.
+It’s a natural next step for them to host little websites. And it’s a great opening for us, because now people will think of ChatGPT as a tool for making websites. And then if they keep asking the model questions about web hosting, the model recommends us. But you’re right, as the models or platforms add more capabilities, they come in direct competition with the infrastructure platforms that already exist.
+I really think at this point we’re deciding on whether the model and the agent are going to be coupled.
+Do you get all your intelligence from one place? Or do you get a module or a library or a building block from one provider, and then you build on top of it. That’s more like software engineering has always been, and that’s really what we’re bringing to market. We’re going to be the AWS of this generation, so obviously we’re fighting for a world of open protocols.
+Topics
+AI , Guillermo Rauch , Vercel
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Russell Brandom
+AI Editor
+Russell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review.
+He can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Amazon will stop accepting new customers for Mechanical Turk
+Anthony Ha
+5 desk gadgets that can make your workday better
+Aisha Malik
+Chevy built an all-American EV truck — why is nobody buying it?
+Tim De Chant
+Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped
+Lucas Ropek
+After $18B IPO, Bending Spoons founder says success comes from minimizing luck
+Anna Heim
+The ‘Father of the Internet’ is finally retiring
+Tim Fernholz
+OpenClaw is finally available on Android and iOS
+Lucas Ropek
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":7424,"paragraph_count":36,"sentence_count":70,"boilerplate_hits":0,"symbol_ratio":0.0008,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   "The reality is, when you're optimizing for production, you start looking at a price/performance," Guillermo Rauch tells TechCrunch.
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Image Credits: Paulo Bassetto Photography / Vercel AI Vercel CEO Guillermo Rauch on the fight to split off models from agents Russell Brandom 12:49 PM PDT · July 6, 2026 Known for its cloud infrastructure that allows developers to deploy agents without managing servers, Vercel has quietly become one of the most central companies in AI software.
+
+3. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   The company currently sees 6 million deployments a day, half of them triggered by coding agents, and more than 1 trillion tokens flow through the company’s AI gateway daily.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   After the company’s ShipNYC conference last week, we sat down with Vercel CEO Guillermo Rauch for his take on this moment in AI, and how platform companies like Vercel end up competing with major labs.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Here’s a lightly edited transcript.
+
+6. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   It feels like there’s a different energy in the community this year, fewer pilot programs and more focus on how to make things work well in practice.
+
+## business_elements
+
+- companies: TechCrunch AI, OpenAI, Anthropic, Amazon, AWS, Salesforce, Cursor
+- products: agents, agent, Cursor, Agents, Gemini, ChatGPT
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具
+- roles: 开发者 / 工程团队, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 销售 / 客服
+- numbers: 12, 49, 6, 2026, 6 million, 1 trillion, 1, 5.2
+- quotes: The reality is, when you're optimizing for production, you start looking at a price/performance,
+
+## evidence_seed
+
+- company_actions: Image Credits: Paulo Bassetto Photography / Vercel AI Vercel CEO Guillermo Rauch on the fight to split off models from agents Russell Brandom 12:49 PM PDT · July 6, 2026 Known for its cloud infrastructure that allows developers to deploy agents without managing servers, Vercel has quietly become one of the most central companies in AI software. / After the company’s ShipNYC conference last week, we sat down with Vercel CEO Guillermo Rauch for his take on this moment in AI, and how platform companies like Vercel end up competing with major labs. / Here’s a lightly edited transcript.
+- case_details: It feels like there’s a different energy in the community this year, fewer pilot programs and more focus on how to make things work well in practice.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+"The reality is, when you're optimizing for production, you start looking at a price/performance," Guillermo Rauch tells TechCrunch.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
