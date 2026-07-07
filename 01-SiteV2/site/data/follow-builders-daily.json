@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-07-06T16:33:43.241Z",
+    "generatedAt": "2026-07-07T01:39:37.227Z",
     "feedGeneratedAt": "2026-07-06T07:52:35.228Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
-    "sourceRoute": "prepare-digest",
+    "sourceRoute": "remote-x+remote-podcasts",
     "sourceErrors": [],
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
     "builders": 17,
-    "remarks": 39,
-    "podcasts": 2,
+    "remarks": 37,
+    "podcasts": 1,
     "blogsBuilt": 4,
-    "trackedSources": 33,
+    "trackedSources": 0,
     "rawBuilders": 14,
     "rawTweets": 25
   },
@@ -22,7 +22,7 @@
       "name": "Simon Willison's Blog",
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 12
+      "count": 10
     },
     {
       "name": "Garry Tan",
@@ -1498,102 +1498,16 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/29/html-table-extractor/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "HTML table extractor",
-      "content": "Tool: HTML table extractor Yet another in my growing collection of paste-conversion tools. This one accepts pasted rich text from browsers (with embedded HTML tables) and converts every detected tab",
-      "contentTranslation": "工具： HTML表格提取器是我不断增长的粘贴转换工具集合中的另一个。此选项接受从浏览器粘贴的富文本（带有嵌入式HTML表格） ，并转换每个检测到的选项卡",
-      "contentTranslationStatus": "translated",
-      "translation": "表提取程序",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-06-29T23:38:21+00:00",
-      "date": "2026-06-30",
-      "url": "https://simonwillison.net/2026/Jun/29/html-table-extractor/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Count the number of Safari tabs",
-      "content": "Tiniest TIL, using AppleScript to count the number of open browser tabs in Safari: osascript -e 'tell application \"Safari\" to count tabs of every window' <img alt=\"I ran it in a terminal window and got back 370.\" src=\"https://static.simonwillison.net/static/2026/ta",
-      "contentTranslation": "最小的TIL ，使用AppleScript计算Safari中打开的浏览器选项卡的数量： osascript -e '告诉应用程序“Safari”计算每个窗口的选项卡' < img alt = \"我在终端窗口中运行它，然后返回370。\" src = \"",
-      "contentTranslationStatus": "translated",
-      "translation": "统计Safari标签页的数量",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-06-29T18:36:18+00:00",
-      "date": "2026-06-30",
-      "url": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
     }
   ],
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "AI Vibe Check: Lab Wars, Why APIs Might Vanish & Future Predictions",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ai-vibe-check-lab-wars-why-apis-might-vanish-future-predictions-sr_Mp2pR",
-      "publishedAt": "Fri, 12 Jun 2026 12:51:00 +0000",
-      "excerpt": "Six months after their last roundup, Jacob sits down with Ari Morcos (Datology AI CEO, former Meta AI researcher) and Rob Toews (Radical Ventures partner, Forbes AI columnist) to take stock of an AI landscape that has shifted dramatically: coding agents crossing the long-time-horizon threshold has turned engineers into managers of agents, near-frontier open weight AI looks like it may be disappearing as Meta and the Chinese labs pull back, and Anthropic's restrictions on its newly released Fable model have its biggest supporters questioning whether safety framing is masking competitive positioning. The conversation runs through the full state of the lab wars, including Rob doubling down on his Sam Altman ouster prediction and the Bret Taylor succession theory, why Google's structural advantages remain intact despite falling behind on coding, what xAI's Cursor acquisition is really for, and Ari'…"
-    },
-    {
-      "source": "podcast",
-      "name": "Unsupervised Learning",
-      "title": "AI Vibe Check: Lab Wars, Why APIs Might Vanish & Future Predictions",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ai-vibe-check-lab-wars-why-apis-might-vanish-future-predictions-sr_Mp2pR",
-      "publishedAt": "Fri, 12 Jun 2026 12:51:00 +0000",
-      "excerpt": "Six months after their last roundup, Jacob sits down with Ari Morcos (Datology AI CEO, former Meta AI researcher) and Rob Toews (Radical Ventures partner, Forbes AI columnist) to take stock of an AI landscape that has shifted dramatically: coding agents crossing the long-time-horizon threshold has turned engineers into managers of agents, near-frontier open weight AI looks like it may be disappearing as Meta and the Chinese labs pull back, and Anthropic's restrictions on its newly released Fable model have its biggest supporters questioning whether safety framing is masking competitive positioning. The conversation runs through the full state of the lab wars, including Rob doubling down on his Sam Altman ouster prediction and the Bret Taylor succession theory, why Google's structural advantages remain intact despite falling behind on coding, what xAI's Cursor acquisition is really for, and Ari'…"
+      "name": "No Priors",
+      "title": "Really Big Test-Time Compute in AI Changes Benchmarks, Safety and Research with OpenAI Research Scientist Noam Brown",
+      "url": "https://www.youtube.com/watch?v=AZrU6y3pUcU",
+      "publishedAt": "2026-06-26T10:13:00.000Z",
+      "excerpt": ""
     }
   ]
 }
