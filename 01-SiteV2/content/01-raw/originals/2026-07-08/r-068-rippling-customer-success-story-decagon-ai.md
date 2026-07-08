@@ -1,0 +1,299 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-068
+title: "Rippling Customer Success Story | Decagon AI"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://decagon.ai/case-studies/rippling"
+canonical_url: "https://decagon.ai/case-studies/rippling"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-08T04:39:25.936Z
+language: mixed
+full_text_hash: dbf418d0a1ae1753
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-068-rippling-customer-success-story-decagon-ai.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-068-rippling-customer-success-story-decagon-ai.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":7232,"paragraph_count":36,"sentence_count":41,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 7232
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dbf418d0a1ae1753","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: a510af0f333ae921
+content_hash: dbf418d0a1ae1753
+semantic_hash: 36db422abd89ae18
+duplicate_of: ""
+first_seen_at: "2026-07-08T04:39:25.936Z"
+last_seen_at: 2026-07-08T04:39:25.936Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agent","Agent","agents"],"people":[],"industries":["金融 / 保险","医疗"],"roles":["开发者 / 工程团队","销售 / 客服"],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["32%","12","2026","400","000","2","10","38%"],"quotes":["W-2 issue"]}
+evidence_seed: {"company_actions":["\"Rippling has a very broad surface area with distinct products that require unique treatments — we brought this problem statement to Decagon and they delivered.","We are very happy with our results and are looking forward to partnering further with Decagon."],"case_details":["We are able to tailor the experience and responses to customers to not only deliver strong deflection results, but also enhance the customer experience along the way.","\" Husam Najib VP, Customer Support Overview Rippling eliminates the friction from running a business by combining HR, IT, and Finance apps on a unified platform."],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"number","text":"Rippling Customer Success Story | Decagon AI Introducing Duet Autopilot. Learn more Case Studies / How Rippling supports many user types with Decagon # How Rippling supports many user types with Decagon 32%increase in deflection ##### Key metrics 32%increase in deflection 12+product lines ... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Case Studies / How Rippling supports many user types with Decagon How Rippling supports many user types with Decagon 32% increase in deflection Key metrics 32% increase in deflection 12+ product lines supported 400,000 users supported Featuring Husam Najib VP, Customer Support Industry Financial Services Technology Products Chat Email Share to Copy link Table of contents Example h2 Subscribe to our Newsletter Get exclusive monthly updates on the best tools and productivity tips for asynchronous remote work.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"\"Rippling has a very broad surface area with distinct products that require unique treatments — we brought this problem statement to Decagon and they delivered.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"We are able to tailor the experience and responses to customers to not only deliver strong deflection results, but also enhance the customer experience along the way.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We are very happy with our results and are looking forward to partnering further with Decagon.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"\" Husam Najib VP, Customer Support Overview Rippling eliminates the friction from running a business by combining HR, IT, and Finance apps on a unified platform.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-08T04:39:25.936Z
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Rippling Customer Success Story | Decagon AI
+
+## clean_text
+
+Case Studies /
+How Rippling supports many user types with Decagon
+How Rippling supports many user types with Decagon
+32% increase in deflection
+Key metrics 32% increase in deflection
+12+ product lines supported
+400,000 users supported
+Featuring Husam Najib
+VP, Customer Support
+Industry Financial Services
+Technology
+Products Chat
+Email
+Share to
+Copy link
+Table of contents
+Example h2
+Subscribe to our Newsletter
+Get exclusive monthly updates on the best tools and productivity tips for asynchronous remote work.
+"Rippling has a very broad surface area with distinct products that require unique treatments — we brought this problem statement to Decagon and they delivered. We are able to tailor the experience and responses to customers to not only deliver strong deflection results, but also enhance the customer experience along the way. We are very happy with our results and are looking forward to partnering further with Decagon."
+Husam Najib
+VP, Customer Support
+Overview
+Rippling eliminates the friction from running a business by combining HR, IT, and Finance apps on a unified platform. There are over 10,000 customers across various industries that use Rippling as their company’s single source of truth for employee data. With over 400,000 users to support, Rippling needed a robust AI agent solution to accurately and quickly address their users’ complex questions and situations.
+The Problem
+Prior to Decagon, Rippling was using a solution that relied on a decision-tree-based platform. This type of product requires heavier manual human oversight and management, effectively limiting how well Rippling could scale and differentiate its support operations for an ever-growing and diversified customer base. When the Rippling team decided to find a new solution, they needed one that could provide:
+More Accurate Responses: Rippling has complex products (HR, Payroll, IT management) requiring specific, time-sensitive responses. For instance, termination flows vary in complexity based on company policies. Their previous solution couldn't provide in-depth, dynamic, human-like responses tailored to customer processes.
+Conversational Flexibility: The previous solution, relying on decision trees and pre-scripted answers, struggled with vague questions (e.g., "W-2 issue"). This led to incorrect workflows and delayed issue resolution.
+Complex Tagging and Routing Workflows: Accurate ticket routing is crucial for directing questions to specialized teams, especially for Rippling's multiple, complex products. The previous AI solution often routed to the wrong teams, causing delays in customer support.
+Dedicated Engineering Capacity: Building a customizable AI Agent is complex. Rippling needed a partner with engineering resources to drive custom API workflows, allowing their team to focus on product development.
+As a result, Rippling found it difficult to provide customers with the right support experience. Customers were only able to self-serve their issues around 38% of the time in chat and had no access to AI agents in email. With this in mind, the Rippling team decided to look for an AI solution that would enable them to provide higher-quality support responses in seconds.
+The Solution
+Rippling approached the Decagon team with a clear list of criteria that were missing from their previous solution. They ultimately chose Decagon’s AI agents because we outperformed other solutions on several axes:
+Higher Response Accuracy Rates: In addition to learning from existing knowledge bases and past tickets, Decagon also connects to Rippling's internal APIs to generate human-like responses that take into account the user's specific situation. For example, if an admin is asking about an employee's healthcare enrollment status, Decagon can pull in that information from Rippling and answer that question directly with higher accuracy and no human intervention. This increased chat deflection from 38% to over 50%.
+More Conversational Flexibility: Using generative AI, Decagon's AI agents can understand the customer's question and respond contextually, all in a timely and efficient manner. Decagon will also ask clarifying questions to make sure it's understanding the user correctly and take actions on behalf of the user, leading to faster resolution times.
+Complex Tagging, Routing, and Escalation Workflows: With over 12 core products, creating a scalable tagging and routing system was necessary to accurately direct conversations to the right subject-matter experts. Rippling collaborated closely with Decagon's engineering team to identify 75+ tags, apply the appropriate routing, and identify scenarios where escalation was required. This led to an immediate 7% improvement in customer conversation routing.
+Forward-Deployed Engineering Support: With direct access to Decagon's world-class engineering team, Rippling is now able to build out custom API workflows and quickly address customer issues. In one instance, Rippling had to quickly deprecate an existing product — within a day, Decagon was able to replace that tool with our Agent Assist product and immediately incorporate Rippling's brand tone.
+“The Decagon team’s commitment, responsiveness, and on-the-ground engineering support were crucial to the successful rollout of our AI agents. Their ability to quickly deploy solutions, build custom workflows, and integrate seamlessly with our systems has played a significant role in our mutual success. Working with them to elevate our customer support has been a truly positive experience.” says Gage Bartholomew, Support Operations Manager.
+The Result
+With Decagon’s support, the Rippling team saw an immediate ability to scale and differentiate their customer support operations while also improving deflection rates. These deflection numbers continue to improve thanks to the custom workflows, API integrations, and other enhancements Decagon and Rippling have built to streamline their customer support operations.
+“Our team has deepened our chat support capabilities, launched AI-enabled email deflection, improved our ticket routing, and leveraged AI Assist tooling to maintain quality support responses from our agents,” says Jonathan Fisher, Support Operations Program Manager. “Needless to say, we’re seeing a huge impact from Decagon in being able to scale to an ever-growing Rippling customer base. All thanks to Decagon’s generative AI approach and their extremely collaborative team. I’m excited to continue working with the team to keep raising the bar for our customers!”
+Want to scale your customer support operations with a customizable AI agent? Reach out to the Decagon team at sales@decagon.ai .
+More Case Studies
+How 1-800-Flowers.com® delivers customer care during life’s most meaningful moments
+How 1-800-Flowers.com® delivers customer care during life’s most meaningful moments
+How Mercado Libre is delivering 24/7 concierge customer experiences across LATAM
+How Mercado Libre is delivering 24/7 concierge customer experiences across LATAM
+How SimplePractice uses Duet to accelerate agent building
+How SimplePractice is transforming customer support into product intelligence with Decagon Duet
+Deliver the concierge experiences your customers deserve
+Get a demo
+
+## full_text
+
+Case Studies /
+How Rippling supports many user types with Decagon
+How Rippling supports many user types with Decagon
+32% increase in deflection
+Key metrics 32% increase in deflection
+12+ product lines supported
+400,000 users supported
+Featuring Husam Najib
+VP, Customer Support
+Industry Financial Services
+Technology
+Products Chat
+Email
+Share to
+Copy link
+Table of contents
+Example h2
+Subscribe to our Newsletter
+Get exclusive monthly updates on the best tools and productivity tips for asynchronous remote work.
+"Rippling has a very broad surface area with distinct products that require unique treatments — we brought this problem statement to Decagon and they delivered. We are able to tailor the experience and responses to customers to not only deliver strong deflection results, but also enhance the customer experience along the way. We are very happy with our results and are looking forward to partnering further with Decagon."
+Husam Najib
+VP, Customer Support
+Overview
+Rippling eliminates the friction from running a business by combining HR, IT, and Finance apps on a unified platform. There are over 10,000 customers across various industries that use Rippling as their company’s single source of truth for employee data. With over 400,000 users to support, Rippling needed a robust AI agent solution to accurately and quickly address their users’ complex questions and situations.
+The Problem
+Prior to Decagon, Rippling was using a solution that relied on a decision-tree-based platform. This type of product requires heavier manual human oversight and management, effectively limiting how well Rippling could scale and differentiate its support operations for an ever-growing and diversified customer base. When the Rippling team decided to find a new solution, they needed one that could provide:
+More Accurate Responses: Rippling has complex products (HR, Payroll, IT management) requiring specific, time-sensitive responses. For instance, termination flows vary in complexity based on company policies. Their previous solution couldn't provide in-depth, dynamic, human-like responses tailored to customer processes.
+Conversational Flexibility: The previous solution, relying on decision trees and pre-scripted answers, struggled with vague questions (e.g., "W-2 issue"). This led to incorrect workflows and delayed issue resolution.
+Complex Tagging and Routing Workflows: Accurate ticket routing is crucial for directing questions to specialized teams, especially for Rippling's multiple, complex products. The previous AI solution often routed to the wrong teams, causing delays in customer support.
+Dedicated Engineering Capacity: Building a customizable AI Agent is complex. Rippling needed a partner with engineering resources to drive custom API workflows, allowing their team to focus on product development.
+As a result, Rippling found it difficult to provide customers with the right support experience. Customers were only able to self-serve their issues around 38% of the time in chat and had no access to AI agents in email. With this in mind, the Rippling team decided to look for an AI solution that would enable them to provide higher-quality support responses in seconds.
+The Solution
+Rippling approached the Decagon team with a clear list of criteria that were missing from their previous solution. They ultimately chose Decagon’s AI agents because we outperformed other solutions on several axes:
+Higher Response Accuracy Rates: In addition to learning from existing knowledge bases and past tickets, Decagon also connects to Rippling's internal APIs to generate human-like responses that take into account the user's specific situation. For example, if an admin is asking about an employee's healthcare enrollment status, Decagon can pull in that information from Rippling and answer that question directly with higher accuracy and no human intervention. This increased chat deflection from 38% to over 50%.
+More Conversational Flexibility: Using generative AI, Decagon's AI agents can understand the customer's question and respond contextually, all in a timely and efficient manner. Decagon will also ask clarifying questions to make sure it's understanding the user correctly and take actions on behalf of the user, leading to faster resolution times.
+Complex Tagging, Routing, and Escalation Workflows: With over 12 core products, creating a scalable tagging and routing system was necessary to accurately direct conversations to the right subject-matter experts. Rippling collaborated closely with Decagon's engineering team to identify 75+ tags, apply the appropriate routing, and identify scenarios where escalation was required. This led to an immediate 7% improvement in customer conversation routing.
+Forward-Deployed Engineering Support: With direct access to Decagon's world-class engineering team, Rippling is now able to build out custom API workflows and quickly address customer issues. In one instance, Rippling had to quickly deprecate an existing product — within a day, Decagon was able to replace that tool with our Agent Assist product and immediately incorporate Rippling's brand tone.
+“The Decagon team’s commitment, responsiveness, and on-the-ground engineering support were crucial to the successful rollout of our AI agents. Their ability to quickly deploy solutions, build custom workflows, and integrate seamlessly with our systems has played a significant role in our mutual success. Working with them to elevate our customer support has been a truly positive experience.” says Gage Bartholomew, Support Operations Manager.
+The Result
+With Decagon’s support, the Rippling team saw an immediate ability to scale and differentiate their customer support operations while also improving deflection rates. These deflection numbers continue to improve thanks to the custom workflows, API integrations, and other enhancements Decagon and Rippling have built to streamline their customer support operations.
+“Our team has deepened our chat support capabilities, launched AI-enabled email deflection, improved our ticket routing, and leveraged AI Assist tooling to maintain quality support responses from our agents,” says Jonathan Fisher, Support Operations Program Manager. “Needless to say, we’re seeing a huge impact from Decagon in being able to scale to an ever-growing Rippling customer base. All thanks to Decagon’s generative AI approach and their extremely collaborative team. I’m excited to continue working with the team to keep raising the bar for our customers!”
+Want to scale your customer support operations with a customizable AI agent? Reach out to the Decagon team at sales@decagon.ai .
+More Case Studies
+How 1-800-Flowers.com® delivers customer care during life’s most meaningful moments
+How 1-800-Flowers.com® delivers customer care during life’s most meaningful moments
+How Mercado Libre is delivering 24/7 concierge customer experiences across LATAM
+How Mercado Libre is delivering 24/7 concierge customer experiences across LATAM
+How SimplePractice uses Duet to accelerate agent building
+How SimplePractice is transforming customer support into product intelligence with Decagon Duet
+Deliver the concierge experiences your customers deserve
+Get a demo
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 91
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":7232,"paragraph_count":36,"sentence_count":41,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Rippling Customer Success Story | Decagon AI Introducing Duet Autopilot. Learn more Case Studies / How Rippling supports many user types with Decagon # How Rippling supports many user types with Decagon 32%increase in deflection ##### Key metrics 32%increase in deflection 12+product lines ... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original
+
+2. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Case Studies / How Rippling supports many user types with Decagon How Rippling supports many user types with Decagon 32% increase in deflection Key metrics 32% increase in deflection 12+ product lines supported 400,000 users supported Featuring Husam Najib VP, Customer Support Industry Financial Services Technology Products Chat Email Share to Copy link Table of contents Example h2 Subscribe to our Newsletter Get exclusive monthly updates on the best tools and productivity tips for asynchronous remote work.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   "Rippling has a very broad surface area with distinct products that require unique treatments — we brought this problem statement to Decagon and they delivered.
+
+4. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   We are able to tailor the experience and responses to customers to not only deliver strong deflection results, but also enhance the customer experience along the way.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   We are very happy with our results and are looking forward to partnering further with Decagon.
+
+6. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   " Husam Najib VP, Customer Support Overview Rippling eliminates the friction from running a business by combining HR, IT, and Finance apps on a unified platform.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agent, Agent, agents
+- people: 暂无公开信息
+- industries: 金融 / 保险, 医疗
+- roles: 开发者 / 工程团队, 销售 / 客服
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 32%, 12, 2026, 400, 000, 2, 10, 38%
+- quotes: W-2 issue
+
+## evidence_seed
+
+- company_actions: "Rippling has a very broad surface area with distinct products that require unique treatments — we brought this problem statement to Decagon and they delivered. / We are very happy with our results and are looking forward to partnering further with Decagon.
+- case_details: We are able to tailor the experience and responses to customers to not only deliver strong deflection results, but also enhance the customer experience along the way. / " Husam Najib VP, Customer Support Overview Rippling eliminates the friction from running a business by combining HR, IT, and Finance apps on a unified platform.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Rippling Customer Success Story | Decagon AI Introducing Duet Autopilot. Learn more Case Studies / How Rippling supports many user types with Decagon # How Rippling supports many user types with Decagon 32%increase in deflection ##### Key metrics 32%increase in deflection 12+product lines ... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

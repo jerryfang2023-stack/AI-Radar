@@ -1,0 +1,229 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-083
+title: "Anthropic 论文发现 Claude 内部存在类似人脑的\"全局工作空间\"结构"
+title_zh: "Anthropic 论文发现 Claude 内部存在类似人脑的\"全局工作空间\"结构"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/973/522.htm"
+canonical_url: "https://ithome.com/0/973/522.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-07T06:41:52.000Z"
+collected_at: 2026-07-08T04:39:26.079Z
+language: mixed
+full_text_hash: 5cccdc70fb954fbd
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-083-anthropic-论文发现-claude-内部存在类似人脑的-全局工作空间-结构.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-083-anthropic-论文发现-claude-内部存在类似人脑的-全局工作空间-结构.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 60
+extractor_diagnostics: {"readability_score":60,"text_length":1067,"paragraph_count":14,"sentence_count":13,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1067
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5cccdc70fb954fbd","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Anthropic 论文发现 Claude 内部存在类似人脑的\"全局工作空间\"结构","discovery_summary":"Anthropic 最新论文《大语言模型中的全局工作空间》在 Claude 模型中发现类似神经科学\"全局工作空间理论\"的结构，命名为 J-space。借助数学分析工具 J-lens，研究者观察到四项证据：Claude 可通过 J-space 集中关注特定概念、有意将\"公平\"等概念拖入并持久化、在国际象棋等复杂任务中 J-space 充当草稿本且其内容改变影响输出、进入 J-space 的概念可被模型其他部分共享利用。该结构非预设，是训练中自行出现，Anthropic 借\"趋同演化\"描述人脑与 AI 因效率需求独立演化出类似结构。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/973/522.htm","discovered_at":"2026-07-08T04:23:58.445Z","rank_on_page":288,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 258c999f6b430e93
+content_hash: 5cccdc70fb954fbd
+semantic_hash: 32182c48b7dd06b0
+duplicate_of: ""
+first_seen_at: "2026-07-07T06:41:52.000Z"
+last_seen_at: 2026-07-08T04:39:26.079Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":2,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","Anthropic"],"products":["Claude"],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["7","4"],"quotes":["结构\nAnthropic 最新论文《大语言模型中的全局工作空间》在 Claude 模型中发现类似神经科学","的结构，命名为 J-space。借助数学分析工具 J-lens，研究者观察到四项证据：Claude 可通过 J-space 集中关注特定概念、有意将","等概念拖入并持久化、在国际象棋等复杂任务中 J-space 充当草稿本且其内容改变影响输出、进入 J-space 的概念可被模型其他部分共享利用。该结构非预设，是训练中自行出现，Anthropic 借","描述人脑与 AI 因效率需求独立演化出类似结构。\nIT之家 7 月 7 日消息，Anthropic 今天（7 月 7 日）在 X 平台发布推文，称最新研究表明 Claude 模型拥有“灵魂","全局工作空间理论"]}
+evidence_seed: {"company_actions":["IT之家 7 月 7 日消息，Anthropic 今天（7 月 7 日）在 X 平台发布推文，称最新研究表明 Claude 模型拥有“灵魂”， 且相关证据表明 AI 和人脑之间存在“趋同进化”（Convergent Evolution）。","该理论常用于解释注意、意识访问和复杂推理中的信息整合过程。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"quote","text":"Anthropic 最新论文《大语言模型中的全局工作空间》在 Claude 模型中发现类似神经科学\"全局工作空间理论\"的结构，命名为 J-space。借助数学分析工具 J-lens，研究者观察到四项证据：Claude 可通过 J-space 集中关注特定概念、有意将\"公平\"等概念拖入并持久化、在国际象棋等复杂任务中 J-space 充当草稿本且其内容改变影响输出、进入 J-space 的概念可被模型其他部分共享利用。该结构非预设，是训练中自行出现，Anthropic 借\"趋同演化\"描述人脑与 AI 因效率需求独立演化出类似结构。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 7 日消息，Anthropic 今天（7 月 7 日）在 X 平台发布推文，称最新研究表明 Claude 模型拥有“灵魂”， 且相关证据表明 AI 和人脑之间存在“趋同进化”（Convergent Evolution）。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"quote","text":"该论文主题为《大语言模型中的全局工作空间》，在 Claude 模型中发现类似神经科学中的“全局工作空间理论”（global workspace theory）的结构，并命名为 J-space。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"IT之家注：在神经科学领域中，全局工作空间理论认为大量脑内活动处于后台自动运行状态，只有进入可被广泛共享的“工作空间”的信息，才会成为可描述、可保持、可推理的内容。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该理论常用于解释注意、意识访问和复杂推理中的信息整合过程。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"在最新论文中，Anthropic 认为 Claude 模型内部也存在相应结构，信息进入一个可向全脑广播的特权空间后，才会变得可被有意识访问，官方将其命名为 J-space。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-08T04:39:26.079Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Anthropic 论文发现 Claude 内部存在类似人脑的"全局工作空间"结构
+
+## clean_text
+
+IT之家 7 月 7 日消息，Anthropic 今天（7 月 7 日）在 X 平台发布推文，称最新研究表明 Claude 模型拥有“灵魂”， 且相关证据表明 AI 和人脑之间存在“趋同进化”（Convergent Evolution）。
+该论文主题为《大语言模型中的全局工作空间》，在 Claude 模型中发现类似神经科学中的“全局工作空间理论”（global workspace theory）的结构，并命名为 J-space。
+IT之家注：在神经科学领域中，全局工作空间理论认为大量脑内活动处于后台自动运行状态，只有进入可被广泛共享的“工作空间”的信息，才会成为可描述、可保持、可推理的内容。该理论常用于解释注意、意识访问和复杂推理中的信息整合过程。
+在最新论文中，Anthropic 认为 Claude 模型内部也存在相应结构，信息进入一个可向全脑广播的特权空间后，才会变得可被有意识访问，官方将其命名为 J-space。
+在论文中，Anthropic 还介绍了名为 J-lens（全称 Jacobian Lens）工具，这是一种数学分析方法，用于弱化模型后台任务的干扰，并聚焦 Claude 在特定时刻关注的概念。
+为验证 J-space 的存在，Anthropic 列出了 4 项观察结果：
+在任意给定时间内，询问 Claude 正在思考什么，然后使用 J-lens 查看当时其 J-space 中存在哪些“概念”。
+要求 Claude 牢记公平，然后观察它有意地将公平的概念拖到 J-space，以及是否能持久化。
+在解决像国际象棋这样复杂的问题时，J-space 就像一个草稿本，当研究人员改变其内容时，克劳德的最终输出也会随之改变。
+当一个概念被拖入 J-space 后，Claude 的任何其他部分，即使正在做完全不同的事情，仍然能够看到该概念，然后在自己的任务中利用它。
+Anthropic 在论文中表示，这种结构并非 Claude 架构中预先设计的组成部分，而是在训练过程中自行出现，“推测原因是这种方式有助于组织计算”。
+官方还借用“趋同演化”概念说明这一现象，该概念原本属于生物学概念，指不同物种在相似环境压力下，独立演化出相似特征。
+本文中，Anthropic 借用该概念描述人脑与 AI 模型可能因处理复杂信息的效率需求，而出现功能上相似的结构设计。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 7 日消息，Anthropic 今天（7 月 7 日）在 X 平台发布推文，称最新研究表明 Claude 模型拥有“灵魂”， 且相关证据表明 AI 和人脑之间存在“趋同进化”（Convergent Evolution）。
+该论文主题为《大语言模型中的全局工作空间》，在 Claude 模型中发现类似神经科学中的“全局工作空间理论”（global workspace theory）的结构，并命名为 J-space。
+IT之家注：在神经科学领域中，全局工作空间理论认为大量脑内活动处于后台自动运行状态，只有进入可被广泛共享的“工作空间”的信息，才会成为可描述、可保持、可推理的内容。该理论常用于解释注意、意识访问和复杂推理中的信息整合过程。
+在最新论文中，Anthropic 认为 Claude 模型内部也存在相应结构，信息进入一个可向全脑广播的特权空间后，才会变得可被有意识访问，官方将其命名为 J-space。
+在论文中，Anthropic 还介绍了名为 J-lens（全称 Jacobian Lens）工具，这是一种数学分析方法，用于弱化模型后台任务的干扰，并聚焦 Claude 在特定时刻关注的概念。
+为验证 J-space 的存在，Anthropic 列出了 4 项观察结果：
+在任意给定时间内，询问 Claude 正在思考什么，然后使用 J-lens 查看当时其 J-space 中存在哪些“概念”。
+要求 Claude 牢记公平，然后观察它有意地将公平的概念拖到 J-space，以及是否能持久化。
+在解决像国际象棋这样复杂的问题时，J-space 就像一个草稿本，当研究人员改变其内容时，克劳德的最终输出也会随之改变。
+当一个概念被拖入 J-space 后，Claude 的任何其他部分，即使正在做完全不同的事情，仍然能够看到该概念，然后在自己的任务中利用它。
+Anthropic 在论文中表示，这种结构并非 Claude 架构中预先设计的组成部分，而是在训练过程中自行出现，“推测原因是这种方式有助于组织计算”。
+官方还借用“趋同演化”概念说明这一现象，该概念原本属于生物学概念，指不同物种在相似环境压力下，独立演化出相似特征。
+本文中，Anthropic 借用该概念描述人脑与 AI 模型可能因处理复杂信息的效率需求，而出现功能上相似的结构设计。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 60
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":60,"text_length":1067,"paragraph_count":14,"sentence_count":13,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   Anthropic 最新论文《大语言模型中的全局工作空间》在 Claude 模型中发现类似神经科学"全局工作空间理论"的结构，命名为 J-space。借助数学分析工具 J-lens，研究者观察到四项证据：Claude 可通过 J-space 集中关注特定概念、有意将"公平"等概念拖入并持久化、在国际象棋等复杂任务中 J-space 充当草稿本且其内容改变影响输出、进入 J-space 的概念可被模型其他部分共享利用。该结构非预设，是训练中自行出现，Anthropic 借"趋同演化"描述人脑与 AI 因效率需求独立演化出类似结构。
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   IT之家 7 月 7 日消息，Anthropic 今天（7 月 7 日）在 X 平台发布推文，称最新研究表明 Claude 模型拥有“灵魂”， 且相关证据表明 AI 和人脑之间存在“趋同进化”（Convergent Evolution）。
+
+3. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   该论文主题为《大语言模型中的全局工作空间》，在 Claude 模型中发现类似神经科学中的“全局工作空间理论”（global workspace theory）的结构，并命名为 J-space。
+
+4. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   IT之家注：在神经科学领域中，全局工作空间理论认为大量脑内活动处于后台自动运行状态，只有进入可被广泛共享的“工作空间”的信息，才会成为可描述、可保持、可推理的内容。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   该理论常用于解释注意、意识访问和复杂推理中的信息整合过程。
+
+6. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   在最新论文中，Anthropic 认为 Claude 模型内部也存在相应结构，信息进入一个可向全脑广播的特权空间后，才会变得可被有意识访问，官方将其命名为 J-space。
+
+## business_elements
+
+- companies: IT之家（RSS）, Anthropic
+- products: Claude
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 7, 4
+- quotes: 结构
+Anthropic 最新论文《大语言模型中的全局工作空间》在 Claude 模型中发现类似神经科学 / 的结构，命名为 J-space。借助数学分析工具 J-lens，研究者观察到四项证据：Claude 可通过 J-space 集中关注特定概念、有意将 / 等概念拖入并持久化、在国际象棋等复杂任务中 J-space 充当草稿本且其内容改变影响输出、进入 J-space 的概念可被模型其他部分共享利用。该结构非预设，是训练中自行出现，Anthropic 借 / 描述人脑与 AI 因效率需求独立演化出类似结构。
+IT之家 7 月 7 日消息，Anthropic 今天（7 月 7 日）在 X 平台发布推文，称最新研究表明 Claude 模型拥有“灵魂 / 全局工作空间理论
+
+## evidence_seed
+
+- company_actions: IT之家 7 月 7 日消息，Anthropic 今天（7 月 7 日）在 X 平台发布推文，称最新研究表明 Claude 模型拥有“灵魂”， 且相关证据表明 AI 和人脑之间存在“趋同进化”（Convergent Evolution）。 / 该理论常用于解释注意、意识访问和复杂推理中的信息整合过程。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 2
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Anthropic 论文发现 Claude 内部存在类似人脑的\"全局工作空间\"结构","discovery_summary":"Anthropic 最新论文《大语言模型中的全局工作空间》在 Claude 模型中发现类似神经科学\"全局工作空间理论\"的结构，命名为 J-space。借助数学分析工具 J-lens，研究者观察到四项证据：Claude 可通过 J-space 集中关注特定概念、有意将\"公平\"等概念拖入并持久化、在国际象棋等复杂任务中 J-space 充当草稿本且其内容改变影响输出、进入 J-space 的概念可被模型其他部分共享利用。该结构非预设，是训练中自行出现，Anthropic 借\"趋同演化\"描述人脑与 AI 因效率需求独立演化出类似结构。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/973/522.htm","discovered_at":"2026-07-08T04:23:58.445Z","rank_on_page":288,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Anthropic 最新论文《大语言模型中的全局工作空间》在 Claude 模型中发现类似神经科学"全局工作空间理论"的结构，命名为 J-space。借助数学分析工具 J-lens，研究者观察到四项证据：Claude 可通过 J-space 集中关注特定概念、有意将"公平"等概念拖入并持久化、在国际象棋等复杂任务中 J-space 充当草稿本且其内容改变影响输出、进入 J-space 的概念可被模型其他部分共享利用。该结构非预设，是训练中自行出现，Anthropic 借"趋同演化"描述人脑与 AI 因效率需求独立演化出类似结构。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

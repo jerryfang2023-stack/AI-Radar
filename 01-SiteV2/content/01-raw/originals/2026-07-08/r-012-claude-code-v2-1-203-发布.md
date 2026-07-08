@@ -1,0 +1,341 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-012
+title: "Claude Code v2.1.203 发布"
+title_zh: "Claude Code v2.1.203 发布"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.203"
+canonical_url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.203"
+source_name: "Claude Code：GitHub Releases（RSS）"
+source_type: developer
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: changelog_or_release
+evidence_object_usable: false
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-07T21:06:12.000Z"
+collected_at: 2026-07-08T04:39:25.393Z
+language: mixed
+full_text_hash: 8cfd70ad309ecb50
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-012-claude-code-v2-1-203-发布.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-012-claude-code-v2-1-203-发布.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 85
+extractor_diagnostics: {"readability_score":85,"text_length":4880,"paragraph_count":44,"sentence_count":11,"boilerplate_hits":4,"symbol_ratio":0.0041,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 4880
+fetch_error: ""
+evidence_strength: blocked
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["index_only_or_directory_page"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8cfd70ad309ecb50","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Claude Code v2.1.203 发布","discovery_summary":"本次更新新增登录过期警告和手动权限模式标记，并将附加工作目录加入 MCP roots/list。修复了 macOS 下因内存检测误报导致后台会话卡顿 15-20 秒（回归自 2.1.196）、后台会话因 token 过期永久不可用（现自动恢复）、交互式会话中上下文指示器每轮重分析整个对话导致 CPU 和内存回归等问题。同时改进了长响应流时的实时预览性能，并降低了子代理重新委托任务的倾向。二进制体积减少约 7 MB，启动内存减少约 7 MB。左侧箭头不再关闭后台任务/差异/工作流详情视图，改为 Esc。","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.203","discovered_at":"2026-07-08T04:23:58.386Z","rank_on_page":98,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: aa3c9fe0f3678a1e
+content_hash: 8cfd70ad309ecb50
+semantic_hash: 3bc5624c0e7404c2
+duplicate_of: ""
+first_seen_at: "2026-07-07T21:06:12.000Z"
+last_seen_at: 2026-07-08T04:39:25.393Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "homepage_or_directory_observation"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Claude Code","GitHub Releases（RSS）"],"products":["Claude","MCP","claude","agent","agents"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["2.1","203","15","20","196","7 M","22","137"],"quotes":["argument list too long","Needs input","exit_with_message","claude command missing or broken","Enable Remote Control for all sessions"]}
+evidence_seed: {"company_actions":["本次更新新增登录过期警告和手动权限模式标记，并将附加工作目录加入 MCP roots/list。修复了 macOS 下因内存检测误报导致后台会话卡顿 15-20 秒（回归自 2.1.196）、后台会话因 token 过期永久不可用（现自动恢复）、交互式会话中上下文指示器每轮重分析整个对话导致 CPU 和内存回归等问题。同时改进了长响应流时的实时预览性能，并降低了子代理重新委托任务的倾向。二进制体积减少约 7 MB，启动内存减少约 7 MB。左侧箭头不再关闭后台任务/差异/工作流详情视图，改为 Esc。","There was an error while loading.","Please reload this page ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","疑似官网首页、产品目录或导航页，只能索引留存","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"本次更新新增登录过期警告和手动权限模式标记，并将附加工作目录加入 MCP roots/list。修复了 macOS 下因内存检测误报导致后台会话卡顿 15-20 秒（回归自 2.1.196）、后台会话因 token 过期永久不可用（现自动恢复）、交互式会话中上下文指示器每轮重分析整个对话导致 CPU 和内存回归等问题。同时改进了长响应流时的实时预览性能，并降低了子代理重新委托任务的倾向。二进制体积减少约 7 MB，启动内存减少约 7 MB。左侧箭头不再关闭后台任务/差异/工作流详情视图，改为 Esc。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There was an error while loading.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Please reload this page .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 22k Star 137k v2.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"203 Compare Choose a tag to compare Sorry, something went wrong.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Filter Loading Sorry, something went wrong.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-08T04:39:25.393Z
+theme: technical-iteration-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Claude Code v2.1.203 发布
+
+## clean_text
+
+Uh oh!
+There was an error while loading. Please reload this page .
+anthropics
+claude-code
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+22k
+Star
+137k
+v2.1.203
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading. Please reload this page .
+No results found
+View all tags
+ashwin-ant
+released this
+07 Jul 21:06
+v2.1.203
+00ea292
+What's changed
+Added a warning when your login is about to expire, so you can re-authenticate before background sessions are interrupted
+Added a grey ⏸ badge to the footer when in manual permission mode, making the active mode always visible
+Added the session's additional working directories to MCP roots/list , with notifications/roots/list_changed sent when the set changes
+Fixed opening or switching background agent sessions on macOS stalling for 15–20 seconds due to a false low-memory detection (regression in 2.1.196)
+Fixed background sessions becoming permanently unresponsive to attach, replies, and stop when the daemon's session token went stale — the session now recovers automatically
+Fixed returning to claude agents silently stopping running subagents and re-running the prompt from scratch — their work now carries over
+Fixed a memory and per-turn CPU regression in interactive sessions: the context-usage indicator no longer re-analyzes the entire transcript after every turn
+Fixed background agents inheriting a stale PATH from the daemon instead of the dispatching shell, causing missing tools on Windows
+Fixed background and agent-view sessions dropping a shell-exported ANTHROPIC_BASE_URL , which sent API keys to the default endpoint and failed with 401
+Fixed Bash failing with "argument list too long" in repos with many git worktrees
+Fixed worktree-isolated subagents sometimes running shell commands in the parent checkout instead of their own worktree
+Fixed worktree creation rejecting nested repositories in multi-repo workspaces, leaving background sessions unable to isolate and edit
+Fixed background agents crash-looping when their working directory was deleted, replaced by a file, or became an invalid path — they now fail once with a clear error
+Fixed a background daemon auto-upgrade failure silently killing all running background sessions
+Fixed TaskStop and TaskOutput failing to find background agents spawned by another agent — errors now list running agents by id and description
+Fixed the claude agents composer discarding your typed message when a slash command isn't available there
+Fixed the agent list crashing when opening a stopped session whose conversation was already open in another session
+Fixed background sessions showing "Needs input" in the agent list after the question was already answered
+Fixed background agent startup failures showing only "exit_with_message" instead of the actual error
+Fixed background sessions ignoring effortLevel changes in settings.json when forked through the daemon
+Fixed attached background sessions ignoring CLAUDE_CODE_DISABLE_MOUSE and CLAUDE_CODE_DISABLE_MOUSE_CLICKS opt-outs
+Fixed /exit incorrectly warning about running background agents after all named agents had completed
+Fixed background sessions started from a non-git directory unable to edit files when a WorktreeCreate hook was configured
+Fixed the @ directory picker in claude agents not showing registered git worktrees
+Fixed background task output on Windows being permanently replaced by an empty file after /clear
+Fixed content jumping when scrolling up through long transcript history
+Fixed the terminal flickering and jumping while typing in bash mode when a shell-history suggestion was shown
+Fixed literal ^[[I / ^[[O escape codes being printed when reattaching to a background session
+Fixed LSP-only plugins being incorrectly flagged for disuse when their language servers deliver diagnostics or answer navigation requests
+Improved responsiveness while long responses stream: live-preview updates no longer re-render the whole screen
+Improved subagent behavior: agents are now less likely to re-delegate their entire task to another subagent
+Reduced binary size by ~7 MB and startup memory by ~7 MB by loading a large bundled dependency lazily instead of inlining it
+Changed left arrow to no longer close the background tasks, diff, and workflow detail views — press Esc instead
+Changed the empty claude agents view to always show the organized sections (Needs input / Working / Completed) with descriptions
+Removed the startup "claude command missing or broken" warnings — they now appear in /doctor and /status instead
+Removed a redundant navigation hint from the claude agents footer
+[VSCode] Added a Settings toggle for "Enable Remote Control for all sessions"
+Assets
+12
+Loading
+Uh oh!
+There was an error while loading. Please reload this page .
+14 people reacted
+
+## full_text
+
+Uh oh!
+There was an error while loading. Please reload this page .
+anthropics
+claude-code
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+22k
+Star
+137k
+v2.1.203
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading. Please reload this page .
+No results found
+View all tags
+ashwin-ant
+released this
+07 Jul 21:06
+v2.1.203
+00ea292
+What's changed
+Added a warning when your login is about to expire, so you can re-authenticate before background sessions are interrupted
+Added a grey ⏸ badge to the footer when in manual permission mode, making the active mode always visible
+Added the session's additional working directories to MCP roots/list , with notifications/roots/list_changed sent when the set changes
+Fixed opening or switching background agent sessions on macOS stalling for 15–20 seconds due to a false low-memory detection (regression in 2.1.196)
+Fixed background sessions becoming permanently unresponsive to attach, replies, and stop when the daemon's session token went stale — the session now recovers automatically
+Fixed returning to claude agents silently stopping running subagents and re-running the prompt from scratch — their work now carries over
+Fixed a memory and per-turn CPU regression in interactive sessions: the context-usage indicator no longer re-analyzes the entire transcript after every turn
+Fixed background agents inheriting a stale PATH from the daemon instead of the dispatching shell, causing missing tools on Windows
+Fixed background and agent-view sessions dropping a shell-exported ANTHROPIC_BASE_URL , which sent API keys to the default endpoint and failed with 401
+Fixed Bash failing with "argument list too long" in repos with many git worktrees
+Fixed worktree-isolated subagents sometimes running shell commands in the parent checkout instead of their own worktree
+Fixed worktree creation rejecting nested repositories in multi-repo workspaces, leaving background sessions unable to isolate and edit
+Fixed background agents crash-looping when their working directory was deleted, replaced by a file, or became an invalid path — they now fail once with a clear error
+Fixed a background daemon auto-upgrade failure silently killing all running background sessions
+Fixed TaskStop and TaskOutput failing to find background agents spawned by another agent — errors now list running agents by id and description
+Fixed the claude agents composer discarding your typed message when a slash command isn't available there
+Fixed the agent list crashing when opening a stopped session whose conversation was already open in another session
+Fixed background sessions showing "Needs input" in the agent list after the question was already answered
+Fixed background agent startup failures showing only "exit_with_message" instead of the actual error
+Fixed background sessions ignoring effortLevel changes in settings.json when forked through the daemon
+Fixed attached background sessions ignoring CLAUDE_CODE_DISABLE_MOUSE and CLAUDE_CODE_DISABLE_MOUSE_CLICKS opt-outs
+Fixed /exit incorrectly warning about running background agents after all named agents had completed
+Fixed background sessions started from a non-git directory unable to edit files when a WorktreeCreate hook was configured
+Fixed the @ directory picker in claude agents not showing registered git worktrees
+Fixed background task output on Windows being permanently replaced by an empty file after /clear
+Fixed content jumping when scrolling up through long transcript history
+Fixed the terminal flickering and jumping while typing in bash mode when a shell-history suggestion was shown
+Fixed literal ^[[I / ^[[O escape codes being printed when reattaching to a background session
+Fixed LSP-only plugins being incorrectly flagged for disuse when their language servers deliver diagnostics or answer navigation requests
+Improved responsiveness while long responses stream: live-preview updates no longer re-render the whole screen
+Improved subagent behavior: agents are now less likely to re-delegate their entire task to another subagent
+Reduced binary size by ~7 MB and startup memory by ~7 MB by loading a large bundled dependency lazily instead of inlining it
+Changed left arrow to no longer close the background tasks, diff, and workflow detail views — press Esc instead
+Changed the empty claude agents view to always show the organized sections (Needs input / Working / Completed) with descriptions
+Removed the startup "claude command missing or broken" warnings — they now appear in /doctor and /status instead
+Removed a redundant navigation hint from the claude agents footer
+[VSCode] Added a Settings toggle for "Enable Remote Control for all sessions"
+Assets
+12
+Loading
+Uh oh!
+There was an error while loading. Please reload this page .
+14 people reacted
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 85
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":85,"text_length":4880,"paragraph_count":44,"sentence_count":11,"boilerplate_hits":4,"symbol_ratio":0.0041,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=high
+   本次更新新增登录过期警告和手动权限模式标记，并将附加工作目录加入 MCP roots/list。修复了 macOS 下因内存检测误报导致后台会话卡顿 15-20 秒（回归自 2.1.196）、后台会话因 token 过期永久不可用（现自动恢复）、交互式会话中上下文指示器每轮重分析整个对话导致 CPU 和内存回归等问题。同时改进了长响应流时的实时预览性能，并降低了子代理重新委托任务的倾向。二进制体积减少约 7 MB，启动内存减少约 7 MB。左侧箭头不再关闭后台任务/差异/工作流详情视图，改为 Esc。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   There was an error while loading.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Please reload this page .
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 22k Star 137k v2.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   203 Compare Choose a tag to compare Sorry, something went wrong.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Filter Loading Sorry, something went wrong.
+
+## business_elements
+
+- companies: Claude Code, GitHub Releases（RSS）
+- products: Claude, MCP, claude, agent, agents
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 2.1, 203, 15, 20, 196, 7 M, 22, 137
+- quotes: argument list too long / Needs input / exit_with_message / claude command missing or broken / Enable Remote Control for all sessions
+
+## evidence_seed
+
+- company_actions: 本次更新新增登录过期警告和手动权限模式标记，并将附加工作目录加入 MCP roots/list。修复了 macOS 下因内存检测误报导致后台会话卡顿 15-20 秒（回归自 2.1.196）、后台会话因 token 过期永久不可用（现自动恢复）、交互式会话中上下文指示器每轮重分析整个对话导致 CPU 和内存回归等问题。同时改进了长响应流时的实时预览性能，并降低了子代理重新委托任务的倾向。二进制体积减少约 7 MB，启动内存减少约 7 MB。左侧箭头不再关闭后台任务/差异/工作流详情视图，改为 Esc。 / There was an error while loading. / Please reload this page .
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 疑似官网首页、产品目录或导航页，只能索引留存
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Claude Code v2.1.203 发布","discovery_summary":"本次更新新增登录过期警告和手动权限模式标记，并将附加工作目录加入 MCP roots/list。修复了 macOS 下因内存检测误报导致后台会话卡顿 15-20 秒（回归自 2.1.196）、后台会话因 token 过期永久不可用（现自动恢复）、交互式会话中上下文指示器每轮重分析整个对话导致 CPU 和内存回归等问题。同时改进了长响应流时的实时预览性能，并降低了子代理重新委托任务的倾向。二进制体积减少约 7 MB，启动内存减少约 7 MB。左侧箭头不再关闭后台任务/差异/工作流详情视图，改为 Esc。","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.203","discovered_at":"2026-07-08T04:23:58.386Z","rank_on_page":98,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+本次更新新增登录过期警告和手动权限模式标记，并将附加工作目录加入 MCP roots/list。修复了 macOS 下因内存检测误报导致后台会话卡顿 15-20 秒（回归自 2.1.196）、后台会话因 token 过期永久不可用（现自动恢复）、交互式会话中上下文指示器每轮重分析整个对话导致 CPU 和内存回归等问题。同时改进了长响应流时的实时预览性能，并降低了子代理重新委托任务的倾向。二进制体积减少约 7 MB，启动内存减少约 7 MB。左侧箭头不再关闭后台任务/差异/工作流详情视图，改为 Esc。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

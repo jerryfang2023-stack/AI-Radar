@@ -1,0 +1,580 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-039
+title: "originaonxi/b2b-funding-scanner"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://github.com/originaonxi/b2b-funding-scanner"
+canonical_url: "https://github.com/originaonxi/b2b-funding-scanner"
+source_name: "keyword search / Anysearch"
+source_type: developer
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event_on_official_page
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "developer_ecosystem"
+search_path_label: "开发生态路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-08T04:39:25.679Z
+language: mixed
+full_text_hash: d220c5f3521c4599
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-039-originaonxi-b2b-funding-scanner.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-039-originaonxi-b2b-funding-scanner.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 88
+extractor_diagnostics: {"readability_score":88,"text_length":6686,"paragraph_count":99,"sentence_count":39,"boilerplate_hits":3,"symbol_ratio":0.0061,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 6686
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d220c5f3521c4599","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 671d939faae02fcf
+content_hash: d220c5f3521c4599
+semantic_hash: a1285093983a70a1
+duplicate_of: ""
+first_seen_at: "2026-07-08T04:39:25.679Z"
+last_seen_at: 2026-07-08T04:39:25.679Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":false,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: false
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"AI hardware product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["ai_hardware_lens","commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","Google"],"products":["agent"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["2b","2B","1","0","2","30 m","5","100M"],"quotes":[" // Apollo.io API key\n},\n","sender_email"," , // Gmail address\n"," , // Gmail App Password (not your login password)\n"," team@company.com "]}
+evidence_seed: {"company_actions":["# Repository: originaonxi/b2b-funding-scanner Real-time B2B seed funding scanner — monitors Crunchbase, TechCrunch, PR Newswire for newly funded startups. Email alerts on match. - Stars: 1 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: Python - Languages: Python - Topics: automation..... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=developer_ecosystem","originaonxi b2b-funding-scanner Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 2 Commits 2 Commits .","md b2b-funding-scanner."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"# Repository: originaonxi/b2b-funding-scanner Real-time B2B seed funding scanner — monitors Crunchbase, TechCrunch, PR Newswire for newly funded startups. Email alerts on match. - Stars: 1 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: Python - Languages: Python - Topics: automation..... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=developer_ecosystem","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"originaonxi b2b-funding-scanner Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 2 Commits 2 Commits .","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"md b2b-funding-scanner.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"py View all files Repository files navigation FundingScanner Real-time B2B seed funding intelligence agent.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Scrapes TechCrunch, Crunchbase News, PR Newswire, Business Wire, and Google News every 30 minutes, extracts funding details, enriches company and CEO data via Apollo.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-08T04:39:25.679Z
+theme: ai-hardware-investment-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# originaonxi/b2b-funding-scanner
+
+## clean_text
+
+originaonxi
+b2b-funding-scanner
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+Star
+main
+Branches Tags
+Go to file
+Code Open more actions menu
+Folders and files
+Name Name Last commit message
+Last commit date
+Latest commit
+History
+2 Commits
+2 Commits
+.gitignore
+.gitignore
+README.md
+README.md
+b2b-funding-scanner.md
+b2b-funding-scanner.md
+scanner.py
+scanner.py
+View all files
+Repository files navigation
+FundingScanner
+Real-time B2B seed funding intelligence agent. Scrapes TechCrunch, Crunchbase News, PR Newswire, Business Wire, and Google News every 30 minutes, extracts funding details, enriches company and CEO data via Apollo.io, deduplicates across runs with MD5 hashing, and fires off a formatted HTML email alert the moment new companies surface. Built for Aonxi to feed 100M+ daily B2B signals and surface newly funded companies as high-intent sales targets within hours of announcement.
+How It Works
+┌─────────────────────────────────┐
+│ scheduler.py │
+│ (every 30 min / cron) │
+└────────────┬────────────────────┘
+┌──────────────────────────────────────────────────────────────────────┐
+│ scanner.py │
+│ │
+│ ┌─────────────┐ ┌──────────────┐ ┌────────────┐ ┌───────────┐ │
+│ │ TechCrunch │ │ Crunchbase │ │ PR Newswire│ │ Business │ │
+│ │ (HTML) │ │ News (HTML) │ │ (RSS/XML) │ │ Wire │ │
+│ └──────┬───────┘ └──────┬───────┘ └─────┬──────┘ │ (RSS/XML)│ │
+│ │ │ │ └─────┬─────┘ │
+│ │ ┌────────────┘ │ │ │
+│ │ │ ┌───────────────────────┘ │ │
+│ │ │ │ ┌──────────────────────────────────┘ │
+│ ▼ ▼ ▼ ▼ │
+│ ┌──────────────────────┐ ┌──────────────────┐ │
+│ │ Google News (RSS) │ │ Funding Relevance │ │
+│ │ (3 query variants) │ │ Filter + Company │ │
+│ └──────────┬───────────┘ │ Name Extraction │ │
+│ │ └────────┬──────────┘ │
+│ └────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌───────────────────────┐ │
+│ │ Deduplication │ │
+│ │ (MD5 → seen.json) │──── skip if already sent │
+│ └───────────┬───────────┘ │
+│ │ new companies only │
+│ ▼ │
+│ ┌───────────────────────┐ │
+│ │ Apollo.io Enrichment│ │
+│ │ CEO, LinkedIn, URL │ │
+│ └───────────┬───────────┘ │
+│ │ │
+│ ┌──────┴──────┐ │
+│ ▼ ▼ │
+│ ┌──────────────┐ ┌──────────────────┐ │
+│ │ HTML Email │ │ Daily JSON │ │
+│ │ via Gmail │ │ Archive │ │
+│ │ SMTP │ │ data/archive/ │ │
+│ └──────────────┘ └──────────────────┘ │
+└──────────────────────────────────────────────────────────────────────┘
+Tech Stack
+Layer
+Tool
+Language
+Python 3.6+
+Scraping
+requests + beautifulsoup4 (lxml parser)
+Enrichment
+Apollo.io /v1/mixed_people/api_search
+Deduplication
+hashlib (MD5) → data/seen.json
+Email
+smtplib over TLS (Gmail SMTP, port 587)
+Scheduling
+schedule library / cron
+Storage
+Flat JSON files — one per day
+Logging
+Python logging → logs/scanner.log + stdout
+No database. No framework. One file does the work.
+Setup
+git clone < repo-url > && cd FundingScanner
+# Install dependencies
+pip install requests beautifulsoup4 lxml schedule
+# Configure
+cp config.json config.json # edit with your keys (see Configuration below)
+# Create required directories
+mkdir -p data/archive logs
+# Run once
+python3 scanner.py
+# Run on a 30-minute loop
+python3 scheduler.py
+# Run in background (production)
+nohup python3 scheduler.py > logs/scheduler.log 2>&1 &
+Configuration
+All config lives in config.json :
+"apollo" : {
+"api_key" : " " // Apollo.io API key
+},
+"gmail" : {
+"sender_email" : " " , // Gmail address
+"app_password" : " " , // Gmail App Password (not your login password)
+"recipients" : [ " team@company.com " ] // Who gets the alerts
+},
+"scanning" : {
+"interval_minutes" : 30 , // How often to scan
+"max_results_per_run" : 50 , // Cap enrichment calls per cycle
+"lookback_hours" : 2
+},
+"filters" : {
+"country" : " USA " ,
+"funding_stages" : [ " seed " , " pre-seed " , " angel " ],
+"business_type" : " B2B " ,
+"exclude_keywords" : [ " consumer " , " B2C " , " gaming " , " crypto " ],
+"b2b_keywords" : [ " SaaS " , " platform " , " enterprise " , " API " , " analytics " , ... ]
+},
+"sources" : {
+"techcrunch" : true ,
+"crunchbase_news" : true ,
+"pr_newswire" : true ,
+"business_wire" : true ,
+"linkedin_news" : true
+Gmail App Password: Go to Google Account → Security → App Passwords . Generate one for "Mail". Do not use your regular password.
+How Deduplication Works
+Every company name gets normalized (lowercased, stripped) and hashed via MD5:
+"Acme Corp" → "acme corp" → MD5 → "a7b70e61a237dd9f4c92174afd0dfdd9"
+The hash is checked against data/seen.json — a flat dictionary of every company ever processed:
+"a7b70e61a237dd9f4c92174afd0dfdd9" : {
+"name" : " Acme Corp " ,
+"seen_at" : " 2026-03-02T03:12:40.424494 " ,
+"source" : " TechCrunch "
+If the hash exists, the company is skipped. If it's new, it gets enriched, emailed, archived, and added to the seen database. This persists across runs — a company announced on Monday will never be sent again on Tuesday.
+The seen database currently tracks 1,000+ unique companies .
+Output
+Email: HTML table with columns for Company, CEO, Amount Raised, Website, CEO LinkedIn, Company LinkedIn, and Source. Sent via Gmail the moment new results are found.
+Archive: Daily JSON files at data/archive/YYYY-MM-DD.json containing every enriched record. Append-only — multiple runs in a day accumulate into the same file.
+Logs: Structured logs at logs/scanner.log with source-level scrape counts, enrichment results, and error details.
+Why This Matters
+Most B2B sales teams find out about seed rounds days or weeks after they happen — buried in newsletters, Twitter threads, or Crunchbase alerts they forgot to set up. By then, every other SDR has already emailed the founder.
+This agent closes that gap to hours . A company announces a $4M seed round on TechCrunch at 9am. By 9:30am, the scanner has scraped it, confirmed it's B2B, enriched the CEO's LinkedIn and email via Apollo, and dropped a formatted alert into your inbox. Your team is reaching out before the founder has finished their PR cycle.
+Seed-funded companies are the highest-intent B2B leads that exist: they have budget, urgency to build, and a mandate to move fast. This tool exists to find them first.
+Built by @anmolsam for Aonxi.
+About
+Real-time B2B seed funding scanner — monitors Crunchbase, TechCrunch, PR Newswire for newly funded startups. Email alerts on match.
+Topics
+python
+funding
+automation
+scanner
+startup
+b2b
+crunchbase
+lead-generation
+Resources
+Readme
+Uh oh!
+There was an error while loading. Please reload this page .
+Activity
+Stars
+star
+Watchers
+watching
+Forks
+forks
+Report repository
+Releases
+No releases published
+Packages
+Uh oh!
+There was an error while loading. Please reload this page .
+Contributors
+Uh oh!
+There was an error while loading. Please reload this page .
+Languages
+Python
+100.0%
+
+## full_text
+
+originaonxi
+b2b-funding-scanner
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+Star
+main
+Branches Tags
+Go to file
+Code Open more actions menu
+Folders and files
+Name Name Last commit message
+Last commit date
+Latest commit
+History
+2 Commits
+2 Commits
+.gitignore
+.gitignore
+README.md
+README.md
+b2b-funding-scanner.md
+b2b-funding-scanner.md
+scanner.py
+scanner.py
+View all files
+Repository files navigation
+FundingScanner
+Real-time B2B seed funding intelligence agent. Scrapes TechCrunch, Crunchbase News, PR Newswire, Business Wire, and Google News every 30 minutes, extracts funding details, enriches company and CEO data via Apollo.io, deduplicates across runs with MD5 hashing, and fires off a formatted HTML email alert the moment new companies surface. Built for Aonxi to feed 100M+ daily B2B signals and surface newly funded companies as high-intent sales targets within hours of announcement.
+How It Works
+┌─────────────────────────────────┐
+│ scheduler.py │
+│ (every 30 min / cron) │
+└────────────┬────────────────────┘
+┌──────────────────────────────────────────────────────────────────────┐
+│ scanner.py │
+│ │
+│ ┌─────────────┐ ┌──────────────┐ ┌────────────┐ ┌───────────┐ │
+│ │ TechCrunch │ │ Crunchbase │ │ PR Newswire│ │ Business │ │
+│ │ (HTML) │ │ News (HTML) │ │ (RSS/XML) │ │ Wire │ │
+│ └──────┬───────┘ └──────┬───────┘ └─────┬──────┘ │ (RSS/XML)│ │
+│ │ │ │ └─────┬─────┘ │
+│ │ ┌────────────┘ │ │ │
+│ │ │ ┌───────────────────────┘ │ │
+│ │ │ │ ┌──────────────────────────────────┘ │
+│ ▼ ▼ ▼ ▼ │
+│ ┌──────────────────────┐ ┌──────────────────┐ │
+│ │ Google News (RSS) │ │ Funding Relevance │ │
+│ │ (3 query variants) │ │ Filter + Company │ │
+│ └──────────┬───────────┘ │ Name Extraction │ │
+│ │ └────────┬──────────┘ │
+│ └────────────────────────┘ │
+│ │ │
+│ ▼ │
+│ ┌───────────────────────┐ │
+│ │ Deduplication │ │
+│ │ (MD5 → seen.json) │──── skip if already sent │
+│ └───────────┬───────────┘ │
+│ │ new companies only │
+│ ▼ │
+│ ┌───────────────────────┐ │
+│ │ Apollo.io Enrichment│ │
+│ │ CEO, LinkedIn, URL │ │
+│ └───────────┬───────────┘ │
+│ │ │
+│ ┌──────┴──────┐ │
+│ ▼ ▼ │
+│ ┌──────────────┐ ┌──────────────────┐ │
+│ │ HTML Email │ │ Daily JSON │ │
+│ │ via Gmail │ │ Archive │ │
+│ │ SMTP │ │ data/archive/ │ │
+│ └──────────────┘ └──────────────────┘ │
+└──────────────────────────────────────────────────────────────────────┘
+Tech Stack
+Layer
+Tool
+Language
+Python 3.6+
+Scraping
+requests + beautifulsoup4 (lxml parser)
+Enrichment
+Apollo.io /v1/mixed_people/api_search
+Deduplication
+hashlib (MD5) → data/seen.json
+Email
+smtplib over TLS (Gmail SMTP, port 587)
+Scheduling
+schedule library / cron
+Storage
+Flat JSON files — one per day
+Logging
+Python logging → logs/scanner.log + stdout
+No database. No framework. One file does the work.
+Setup
+git clone < repo-url > && cd FundingScanner
+# Install dependencies
+pip install requests beautifulsoup4 lxml schedule
+# Configure
+cp config.json config.json # edit with your keys (see Configuration below)
+# Create required directories
+mkdir -p data/archive logs
+# Run once
+python3 scanner.py
+# Run on a 30-minute loop
+python3 scheduler.py
+# Run in background (production)
+nohup python3 scheduler.py > logs/scheduler.log 2>&1 &
+Configuration
+All config lives in config.json :
+"apollo" : {
+"api_key" : " " // Apollo.io API key
+},
+"gmail" : {
+"sender_email" : " " , // Gmail address
+"app_password" : " " , // Gmail App Password (not your login password)
+"recipients" : [ " team@company.com " ] // Who gets the alerts
+},
+"scanning" : {
+"interval_minutes" : 30 , // How often to scan
+"max_results_per_run" : 50 , // Cap enrichment calls per cycle
+"lookback_hours" : 2
+},
+"filters" : {
+"country" : " USA " ,
+"funding_stages" : [ " seed " , " pre-seed " , " angel " ],
+"business_type" : " B2B " ,
+"exclude_keywords" : [ " consumer " , " B2C " , " gaming " , " crypto " ],
+"b2b_keywords" : [ " SaaS " , " platform " , " enterprise " , " API " , " analytics " , ... ]
+},
+"sources" : {
+"techcrunch" : true ,
+"crunchbase_news" : true ,
+"pr_newswire" : true ,
+"business_wire" : true ,
+"linkedin_news" : true
+Gmail App Password: Go to Google Account → Security → App Passwords . Generate one for "Mail". Do not use your regular password.
+How Deduplication Works
+Every company name gets normalized (lowercased, stripped) and hashed via MD5:
+"Acme Corp" → "acme corp" → MD5 → "a7b70e61a237dd9f4c92174afd0dfdd9"
+The hash is checked against data/seen.json — a flat dictionary of every company ever processed:
+"a7b70e61a237dd9f4c92174afd0dfdd9" : {
+"name" : " Acme Corp " ,
+"seen_at" : " 2026-03-02T03:12:40.424494 " ,
+"source" : " TechCrunch "
+If the hash exists, the company is skipped. If it's new, it gets enriched, emailed, archived, and added to the seen database. This persists across runs — a company announced on Monday will never be sent again on Tuesday.
+The seen database currently tracks 1,000+ unique companies .
+Output
+Email: HTML table with columns for Company, CEO, Amount Raised, Website, CEO LinkedIn, Company LinkedIn, and Source. Sent via Gmail the moment new results are found.
+Archive: Daily JSON files at data/archive/YYYY-MM-DD.json containing every enriched record. Append-only — multiple runs in a day accumulate into the same file.
+Logs: Structured logs at logs/scanner.log with source-level scrape counts, enrichment results, and error details.
+Why This Matters
+Most B2B sales teams find out about seed rounds days or weeks after they happen — buried in newsletters, Twitter threads, or Crunchbase alerts they forgot to set up. By then, every other SDR has already emailed the founder.
+This agent closes that gap to hours . A company announces a $4M seed round on TechCrunch at 9am. By 9:30am, the scanner has scraped it, confirmed it's B2B, enriched the CEO's LinkedIn and email via Apollo, and dropped a formatted alert into your inbox. Your team is reaching out before the founder has finished their PR cycle.
+Seed-funded companies are the highest-intent B2B leads that exist: they have budget, urgency to build, and a mandate to move fast. This tool exists to find them first.
+Built by @anmolsam for Aonxi.
+About
+Real-time B2B seed funding scanner — monitors Crunchbase, TechCrunch, PR Newswire for newly funded startups. Email alerts on match.
+Topics
+python
+funding
+automation
+scanner
+startup
+b2b
+crunchbase
+lead-generation
+Resources
+Readme
+Uh oh!
+There was an error while loading. Please reload this page .
+Activity
+Stars
+star
+Watchers
+watching
+Forks
+forks
+Report repository
+Releases
+No releases published
+Packages
+Uh oh!
+There was an error while loading. Please reload this page .
+Contributors
+Uh oh!
+There was an error while loading. Please reload this page .
+Languages
+Python
+100.0%
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 88
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":88,"text_length":6686,"paragraph_count":99,"sentence_count":39,"boilerplate_hits":3,"symbol_ratio":0.0061,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   # Repository: originaonxi/b2b-funding-scanner Real-time B2B seed funding scanner — monitors Crunchbase, TechCrunch, PR Newswire for newly funded startups. Email alerts on match. - Stars: 1 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: Python - Languages: Python - Topics: automation..... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=developer_ecosystem
+
+2. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   originaonxi b2b-funding-scanner Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 2 Commits 2 Commits .
+
+3. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   md b2b-funding-scanner.
+
+4. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   py View all files Repository files navigation FundingScanner Real-time B2B seed funding intelligence agent.
+
+5. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Scrapes TechCrunch, Crunchbase News, PR Newswire, Business Wire, and Google News every 30 minutes, extracts funding details, enriches company and CEO data via Apollo.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Google
+- products: agent
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 2b, 2B, 1, 0, 2, 30 m, 5, 100M
+- quotes:  // Apollo.io API key
+},
+ / sender_email /  , // Gmail address
+ /  , // Gmail App Password (not your login password)
+ /  team@company.com 
+
+## evidence_seed
+
+- company_actions: # Repository: originaonxi/b2b-funding-scanner Real-time B2B seed funding scanner — monitors Crunchbase, TechCrunch, PR Newswire for newly funded startups. Email alerts on match. - Stars: 1 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: Python - Languages: Python - Topics: automation..... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=developer_ecosystem / originaonxi b2b-funding-scanner Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 2 Commits 2 Commits . / md b2b-funding-scanner.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: AI hardware product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: ai_hardware_lens,commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: false
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+# Repository: originaonxi/b2b-funding-scanner Real-time B2B seed funding scanner — monitors Crunchbase, TechCrunch, PR Newswire for newly funded startups. Email alerts on match. - Stars: 1 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: Python - Languages: Python - Topics: automation..... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_startups / path=developer_ecosystem
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

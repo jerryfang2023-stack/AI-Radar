@@ -1,0 +1,271 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-024",
+  "title": "From invisibility cloaks to AI chips: Neurophos raises $110M to build ...",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://techcrunch.com/2026/01/22/from-invisibility-cloaks-to-ai-chips-neurophos-raises-110m-to-build-tiny-optical-processors-for-inferencing/",
+  "canonical_url": "https://techcrunch.com/2026/01/22/from-invisibility-cloaks-to-ai-chips-neurophos-raises-110m-to-build-tiny-optical-processors-for-inferencing",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "news",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_market_trend",
+  "search_path": "a_media_gdelt",
+  "search_path_label": "A 级媒体 / GDELT 路径",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-08T04:39:25.485Z",
+  "language": "mixed",
+  "full_text": "Image Credits: Neurophos\nFundraising\nFrom invisibility cloaks to AI chips: Neurophos raises $110M to build tiny optical processors for inferencing\nRam Iyer\n7:00 AM PST · January 22, 2026\nTwenty years ago, a Duke University professor, David R. Smith , used artificial composite materials called “ metamaterials ” to make a real-life invisibility cloak . While this cloak didn’t really work like Harry Potter’s, exhibiting limited ability to conceal objects from the light of a single microwave length, those advances in material science did eventually trickle down to electromagnetism research.\nToday, Austin-based Neurophos , a photonics startup spun out of Duke University and Metacept (an incubator run by Smith), is taking that research further to solve what may be the biggest problem facing AI labs and hyperscalers: how to scale computing power while keeping power consumption in check.\nThe startup has come up with a “metasurface modulator” with optical properties that enable it to serve as a tensor core processor for doing matrix vector multiplication — math that is at the heart of a lot of AI work (particularly inferencing), currently performed by specialized GPUs and TPUs that use traditional silicon gates and transistors. By fitting thousands of these modulators on a chip, Neurophos claims, its “optical processing unit” is significantly faster than the silicon GPUs currently used en masse at AI data centers, and far more efficient at inferencing (running trained models), which can be a fairly expensive task.\nTo fund the development of its chips, Neurophos has just raised $110 million in a Series A round led by Gates Frontier (Bill Gates’ venture firm), with participation from Microsoft’s M12, Carbon Direct, Aramco Ventures, Bosch Ventures, Tectonic Ventures, Space Capital, and others.\nNow, photonic chips are nothing new . In theory, photonic chips offer higher performance than traditional silicon because light produces less heat than electricity, it can travel faster, and is far less susceptible to changes in temperature and electromagnetic fields.\nBut optical components tend to be much larger than their silicon counterparts, and can be difficult to mass-produce. And they also need converters to transform data from digital to analog and back, which can be large and take up a lot of power.\nNeurophos, however, posits that the metasurface it has developed can solve all of those problems in one swoop because it is about “10,000 times” smaller than traditional optical transistors. The small size, the startup claims, enables it to fit thousands of units on a chip, which results in far more efficiency than traditional silicon because the chip can do many more calculations at once.\n“When you shrink the optical transistor, you can do way more math in the optics domain before you have to do that conversion back to the electronics domain,” Dr. Patrick Bowen, CEO and co-founder of Neurophos, told TechCrunch. “If you want to go fast, you have to solve the energy efficiency problem first. Because if you’re going to take a chip and make it 100 times faster, it burns 100 times more power. So you get the privilege of going fast after you solve the energy efficiency problem.”\nThe result, Neurophos claims, is an optical processing unit that can wildly outperform Nvidia’s B200 AI GPU. The startup says its chip can run at 56 GHz, yielding a peak 235 Peta Operations per Second (POPS) and consuming 675 watts, compared to the B200, which can deliver 9 POPS at 1,000 watts.\nBowen says Neurophos has already signed multiple customers (though he declined to name any), and companies including Microsoft are “looking very closely” at the startup’s products.\nStill, the startup is entering a crowded market that’s dominated by Nvidia, the world’s most valuable public company , whose products have more or less underpinned the entire AI boom. There are also other companies working on photonics, though some, like Lightmatter, have pivoted to focusing on interconnects. And Neurophos is still a few years away from production, expecting its first chips to hit the market by mid-2028.\nBut Bowen is confident the performance and efficiency advances provided by its metasurface modulators will prove a sufficient moat.\n“What everyone else is doing is, and this includes Nvidia, in terms of the fundamental physics of the silicon, it’s really evolutionary rather than revolutionary, and it’s tied to the progress of TSMC. If you look at the improvement of TSMC nodes, on average, they improve in energy efficiency about 15%, and that takes a couple years,” he said.\n“Even if we chart out Nvidia’s improvement in architecture over the years, by the time we come out in 2028, we still have massive advantages over everyone else in the market because we’re starting with a 50x over Blackwell in both energy efficiency and raw speed.”\nAnd to address the mass-manufacturing issues optical chips have traditionally faced, Neurophos says its chips can be made with standard silicon foundry materials, tools, and processes.\nThe fresh funding will be used for the development of the company’s first integrated photonic compute system, including data center-ready OPU modules, a full software stack, and early-access developer hardware. The company is also opening a San Francisco engineering site and expanding its HQ in Austin, Texas.\n“Modern AI inference demands monumental amounts of power and compute,” Dr. Marc Tremblay, corporate vice president and technical fellow of core AI infrastructure at Microsoft, said in a statement. “We need a breakthrough in compute on par with the leaps we’ve seen in AI models themselves, which is what Neurophos’ technology and high-talent density team is developing.”\nTopics\nAI , Fundraising , Hardware , M12 , metamaterials , Neurophos , photonics , Startups\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nRam Iyer\nEditor\nRam is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.\nYou can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .\nView Bio\nNovember 4\nBoston\nLast chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.\nSavings end June 26, 11:59 p.m. PT .\nREGISTER NOW\nMost Popular\nReddit is using LLMs to solve a problem LLMs largely created\nAmanda Silberling\nAmazon will stop accepting new customers for Mechanical Turk\nAnthony Ha\n5 desk gadgets that can make your workday better\nAisha Malik\nChevy built an all-American EV truck — why is nobody buying it?\nTim De Chant\nMark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped\nLucas Ropek\nJersey Mike’s IPO illustrates how bad the AI hype has become\nJulie Bort\nAfter $18B IPO, Bending Spoons founder says success comes from minimizing luck\nAnna Heim\nLoading the next article\nError loading the next article",
+  "clean_text": "Image Credits: Neurophos\nFundraising\nFrom invisibility cloaks to AI chips: Neurophos raises $110M to build tiny optical processors for inferencing\nRam Iyer\n7:00 AM PST · January 22, 2026\nTwenty years ago, a Duke University professor, David R. Smith , used artificial composite materials called “ metamaterials ” to make a real-life invisibility cloak . While this cloak didn’t really work like Harry Potter’s, exhibiting limited ability to conceal objects from the light of a single microwave length, those advances in material science did eventually trickle down to electromagnetism research.\nToday, Austin-based Neurophos , a photonics startup spun out of Duke University and Metacept (an incubator run by Smith), is taking that research further to solve what may be the biggest problem facing AI labs and hyperscalers: how to scale computing power while keeping power consumption in check.\nThe startup has come up with a “metasurface modulator” with optical properties that enable it to serve as a tensor core processor for doing matrix vector multiplication — math that is at the heart of a lot of AI work (particularly inferencing), currently performed by specialized GPUs and TPUs that use traditional silicon gates and transistors. By fitting thousands of these modulators on a chip, Neurophos claims, its “optical processing unit” is significantly faster than the silicon GPUs currently used en masse at AI data centers, and far more efficient at inferencing (running trained models), which can be a fairly expensive task.\nTo fund the development of its chips, Neurophos has just raised $110 million in a Series A round led by Gates Frontier (Bill Gates’ venture firm), with participation from Microsoft’s M12, Carbon Direct, Aramco Ventures, Bosch Ventures, Tectonic Ventures, Space Capital, and others.\nNow, photonic chips are nothing new . In theory, photonic chips offer higher performance than traditional silicon because light produces less heat than electricity, it can travel faster, and is far less susceptible to changes in temperature and electromagnetic fields.\nBut optical components tend to be much larger than their silicon counterparts, and can be difficult to mass-produce. And they also need converters to transform data from digital to analog and back, which can be large and take up a lot of power.\nNeurophos, however, posits that the metasurface it has developed can solve all of those problems in one swoop because it is about “10,000 times” smaller than traditional optical transistors. The small size, the startup claims, enables it to fit thousands of units on a chip, which results in far more efficiency than traditional silicon because the chip can do many more calculations at once.\n“When you shrink the optical transistor, you can do way more math in the optics domain before you have to do that conversion back to the electronics domain,” Dr. Patrick Bowen, CEO and co-founder of Neurophos, told TechCrunch. “If you want to go fast, you have to solve the energy efficiency problem first. Because if you’re going to take a chip and make it 100 times faster, it burns 100 times more power. So you get the privilege of going fast after you solve the energy efficiency problem.”\nThe result, Neurophos claims, is an optical processing unit that can wildly outperform Nvidia’s B200 AI GPU. The startup says its chip can run at 56 GHz, yielding a peak 235 Peta Operations per Second (POPS) and consuming 675 watts, compared to the B200, which can deliver 9 POPS at 1,000 watts.\nBowen says Neurophos has already signed multiple customers (though he declined to name any), and companies including Microsoft are “looking very closely” at the startup’s products.\nStill, the startup is entering a crowded market that’s dominated by Nvidia, the world’s most valuable public company , whose products have more or less underpinned the entire AI boom. There are also other companies working on photonics, though some, like Lightmatter, have pivoted to focusing on interconnects. And Neurophos is still a few years away from production, expecting its first chips to hit the market by mid-2028.\nBut Bowen is confident the performance and efficiency advances provided by its metasurface modulators will prove a sufficient moat.\n“What everyone else is doing is, and this includes Nvidia, in terms of the fundamental physics of the silicon, it’s really evolutionary rather than revolutionary, and it’s tied to the progress of TSMC. If you look at the improvement of TSMC nodes, on average, they improve in energy efficiency about 15%, and that takes a couple years,” he said.\n“Even if we chart out Nvidia’s improvement in architecture over the years, by the time we come out in 2028, we still have massive advantages over everyone else in the market because we’re starting with a 50x over Blackwell in both energy efficiency and raw speed.”\nAnd to address the mass-manufacturing issues optical chips have traditionally faced, Neurophos says its chips can be made with standard silicon foundry materials, tools, and processes.\nThe fresh funding will be used for the development of the company’s first integrated photonic compute system, including data center-ready OPU modules, a full software stack, and early-access developer hardware. The company is also opening a San Francisco engineering site and expanding its HQ in Austin, Texas.\n“Modern AI inference demands monumental amounts of power and compute,” Dr. Marc Tremblay, corporate vice president and technical fellow of core AI infrastructure at Microsoft, said in a statement. “We need a breakthrough in compute on par with the leaps we’ve seen in AI models themselves, which is what Neurophos’ technology and high-talent density team is developing.”\nTopics\nAI , Fundraising , Hardware , M12 , metamaterials , Neurophos , photonics , Startups\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nRam Iyer\nEditor\nRam is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.\nYou can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .\nView Bio\nNovember 4\nBoston\nLast chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.\nSavings end June 26, 11:59 p.m. PT .\nREGISTER NOW\nMost Popular\nReddit is using LLMs to solve a problem LLMs largely created\nAmanda Silberling\nAmazon will stop accepting new customers for Mechanical Turk\nAnthony Ha\n5 desk gadgets that can make your workday better\nAisha Malik\nChevy built an all-American EV truck — why is nobody buying it?\nTim De Chant\nMark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped\nLucas Ropek\nJersey Mike’s IPO illustrates how bad the AI hype has become\nJulie Bort\nAfter $18B IPO, Bending Spoons founder says success comes from minimizing luck\nAnna Heim\nLoading the next article\nError loading the next article",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-08/r-024-from-invisibility-cloaks-to-ai-chips-neurophos-raises-110m-to-build.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-08/r-024-from-invisibility-cloaks-to-ai-chips-neurophos-raises-110m-to-build.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 7147,
+    "paragraph_count": 35,
+    "sentence_count": 41,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 7147,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "60bfbc818481c32b",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "85276fbdd3501a95",
+  "content_hash": "60bfbc818481c32b",
+  "full_text_hash": "60bfbc818481c32b",
+  "semantic_hash": "77d000f1776e805d",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-08T04:39:25.485Z",
+  "last_seen_at": "2026-07-08T04:39:25.485Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "funding",
+      "text": "To fund the development of its chips, Neurophos has just raised $110 ... The startup says its chip can run at 56 GHz, yielding a peak ... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_market_trend / path=a_media_gdelt",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "funding",
+      "text": "Image Credits: Neurophos Fundraising From invisibility cloaks to AI chips: Neurophos raises $110M to build tiny optical processors for inferencing Ram Iyer 7:00 AM PST · January 22, 2026 Twenty years ago, a Duke University professor, David R.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "quote",
+      "text": "Smith , used artificial composite materials called “ metamaterials ” to make a real-life invisibility cloak .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "While this cloak didn’t really work like Harry Potter’s, exhibiting limited ability to conceal objects from the light of a single microwave length, those advances in material science did eventually trickle down to electromagnetism research.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Today, Austin-based Neurophos , a photonics startup spun out of Duke University and Metacept (an incubator run by Smith), is taking that research further to solve what may be the biggest problem facing AI labs and hyperscalers: how to scale computing power while keeping power consumption in check.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "quote",
+      "text": "The startup has come up with a “metasurface modulator” with optical properties that enable it to serve as a tensor core processor for doing matrix vector multiplication — math that is at the heart of a lot of AI work (particularly inferencing), currently performed by specialized GPUs and TPUs that use traditional silicon gates and transistors.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-08T04:39:25.485Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Microsoft",
+      "Amazon",
+      "Nvidia"
+    ],
+    "products": [
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "制造 / 工业",
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [],
+    "business_actions": [
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "$110M",
+      "$110",
+      "56",
+      "7",
+      "00",
+      "22",
+      "2026",
+      "$110 million"
+    ],
+    "quotes": [
+      " metamaterials ",
+      "metasurface modulator",
+      "optical processing unit",
+      "10,000 times",
+      "When you shrink the optical transistor, you can do way more math in the optics domain before you have to do that conversion back to the electronics domain,"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "To fund the development of its chips, Neurophos has just raised $110 ... The startup says its chip can run at 56 GHz, yielding a peak ... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_market_trend / path=a_media_gdelt",
+      "Image Credits: Neurophos Fundraising From invisibility cloaks to AI chips: Neurophos raises $110M to build tiny optical processors for inferencing Ram Iyer 7:00 AM PST · January 22, 2026 Twenty years ago, a Duke University professor, David R.",
+      "While this cloak didn’t really work like Harry Potter’s, exhibiting limited ability to conceal objects from the light of a single microwave length, those advances in material science did eventually trickle down to electromagnetism research."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_funding",
+    "importance_score": 5,
+    "importance_reason": "funding or investment event; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "ai_hardware_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# From invisibility cloaks to AI chips: Neurophos raises $110M to build ...\n\n- raw_id: R-024\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://techcrunch.com/2026/01/22/from-invisibility-cloaks-to-ai-chips-neurophos-raises-110m-to-build-tiny-optical-processors-for-inferencing/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-08T04:39:25.485Z\n\n## clean_text\n\nImage Credits: Neurophos\nFundraising\nFrom invisibility cloaks to AI chips: Neurophos raises $110M to build tiny optical processors for inferencing\nRam Iyer\n7:00 AM PST · January 22, 2026\nTwenty years ago, a Duke University professor, David R. Smith , used artificial composite materials called “ metamaterials ” to make a real-life invisibility cloak . While this cloak didn’t really work like Harry Potter’s, exhibiting limited ability to conceal objects from the light of a single microwave length, those advances in material science did eventually trickle down to electromagnetism research.\nToday, Austin-based Neurophos , a photonics startup spun out of Duke University and Metacept (an incubator run by Smith), is taking that research further to solve what may be the biggest problem facing AI labs and hyperscalers: how to scale computing power while keeping power consumption in check.\nThe startup has come up with a “metasurface modulator” with optical properties that enable it to serve as a tensor core processor for doing matrix vector multiplication — math that is at the heart of a lot of AI work (particularly inferencing), currently performed by specialized GPUs and TPUs that use traditional silicon gates and transistors. By fitting thousands of these modulators on a chip, Neurophos claims, its “optical processing unit” is significantly faster than the silicon GPUs currently used en masse at AI data centers, and far more efficient at inferencing (running trained models), which can be a fairly expensive task.\nTo fund the development of its chips, Neurophos has just raised $110 million in a Series A round led by Gates Frontier (Bill Gates’ venture firm), with participation from Microsoft’s M12, Carbon Direct, Aramco Ventures, Bosch Ventures, Tectonic Ventures, Space Capital, and others.\nNow, photonic chips are nothing new . In theory, photonic chips offer higher performance than traditional silicon because light produces less heat than electricity, it can travel faster, and is far less susceptible to changes in temperature and electromagnetic fields.\nBut optical components tend to be much larger than their silicon counterparts, and can be difficult to mass-produce. And they also need converters to transform data from digital to analog and back, which can be large and take up a lot of power.\nNeurophos, however, posits that the metasurface it has developed can solve all of those problems in one swoop because it is about “10,000 times” smaller than traditional optical transistors. The small size, the startup claims, enables it to fit thousands of units on a chip, which results in far more efficiency than traditional silicon because the chip can do many more calculations at once.\n“When you shrink the optical transistor, you can do way more math in the optics domain before you have to do that conversion back to the electronics domain,” Dr. Patrick Bowen, CEO and co-founder of Neurophos, told TechCrunch. “If you want to go fast, you have to solve the energy efficiency problem first. Because if you’re going to take a chip and make it 100 times faster, it burns 100 times more power. So you get the privilege of going fast after you solve the energy efficiency problem.”\nThe result, Neurophos claims, is an optical processing unit that can wildly outperform Nvidia’s B200 AI GPU. The startup says its chip can run at 56 GHz, yielding a peak 235 Peta Operations per Second (POPS) and consuming 675 watts, compared to the B200, which can deliver 9 POPS at 1,000 watts.\nBowen says Neurophos has already signed multiple customers (though he declined to name any), and companies including Microsoft are “looking very closely” at the startup’s products.\nStill, the startup is entering a crowded market that’s dominated by Nvidia, the world’s most valuable public company , whose products have more or less underpinned the entire AI boom. There are also other companies working on photonics, though some, like Lightmatter, have pivoted to focusing on interconnects. And Neurophos is still a few years away from production, expecting its first chips to hit the market by mid-2028.\nBut Bowen is confident the performance and efficiency advances provided by its metasurface modulators will prove a sufficient moat.\n“What everyone else is doing is, and this includes Nvidia, in terms of the fundamental physics of the silicon, it’s really evolutionary rather than revolutionary, and it’s tied to the progress of TSMC. If you look at the improvement of TSMC nodes, on average, they improve in energy efficiency about 15%, and that takes a couple years,” he said.\n“Even if we chart out Nvidia’s improvement in architecture over the years, by the time we come out in 2028, we still have massive advantages over everyone else in the market because we’re starting with a 50x over Blackwell in both energy efficiency and raw speed.”\nAnd to address the mass-manufacturing issues optical chips have traditionally faced, Neurophos says its chips can be made with standard silicon foundry materials, tools, and processes.\nThe fresh funding will be used for the development of the company’s first integrated photonic compute system, including data center-ready OPU modules, a full software stack, and early-access developer hardware. The company is also opening a San Francisco engineering site and expanding its HQ in Austin, Texas.\n“Modern AI inference demands monumental amounts of power and compute,” Dr. Marc Tremblay, corporate vice president and technical fellow of core AI infrastructure at Microsoft, said in a statement. “We need a breakthrough in compute on par with the leaps we’ve seen in AI models themselves, which is what Neurophos’ technology and high-talent density team is developing.”\nTopics\nAI , Fundraising , Hardware , M12 , metamaterials , Neurophos , photonics , Startups\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nRam Iyer\nEditor\nRam is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.\nYou can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .\nView Bio\nNovember 4\nBoston\nLast chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.\nSavings end June 26, 11:59 p.m. PT .\nREGISTER NOW\nMost Popular\nReddit is using LLMs to solve a problem LLMs largely created\nAmanda Silberling\nAmazon will stop accepting new customers for Mechanical Turk\nAnthony Ha\n5 desk gadgets that can make your workday better\nAisha Malik\nChevy built an all-American EV truck — why is nobody buying it?\nTim De Chant\nMark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped\nLucas Ropek\nJersey Mike’s IPO illustrates how bad the AI hype has become\nJulie Bort\nAfter $18B IPO, Bending Spoons founder says success comes from minimizing luck\nAnna Heim\nLoading the next article\nError loading the next article\n\n## full_text\n\nImage Credits: Neurophos\nFundraising\nFrom invisibility cloaks to AI chips: Neurophos raises $110M to build tiny optical processors for inferencing\nRam Iyer\n7:00 AM PST · January 22, 2026\nTwenty years ago, a Duke University professor, David R. Smith , used artificial composite materials called “ metamaterials ” to make a real-life invisibility cloak . While this cloak didn’t really work like Harry Potter’s, exhibiting limited ability to conceal objects from the light of a single microwave length, those advances in material science did eventually trickle down to electromagnetism research.\nToday, Austin-based Neurophos , a photonics startup spun out of Duke University and Metacept (an incubator run by Smith), is taking that research further to solve what may be the biggest problem facing AI labs and hyperscalers: how to scale computing power while keeping power consumption in check.\nThe startup has come up with a “metasurface modulator” with optical properties that enable it to serve as a tensor core processor for doing matrix vector multiplication — math that is at the heart of a lot of AI work (particularly inferencing), currently performed by specialized GPUs and TPUs that use traditional silicon gates and transistors. By fitting thousands of these modulators on a chip, Neurophos claims, its “optical processing unit” is significantly faster than the silicon GPUs currently used en masse at AI data centers, and far more efficient at inferencing (running trained models), which can be a fairly expensive task.\nTo fund the development of its chips, Neurophos has just raised $110 million in a Series A round led by Gates Frontier (Bill Gates’ venture firm), with participation from Microsoft’s M12, Carbon Direct, Aramco Ventures, Bosch Ventures, Tectonic Ventures, Space Capital, and others.\nNow, photonic chips are nothing new . In theory, photonic chips offer higher performance than traditional silicon because light produces less heat than electricity, it can travel faster, and is far less susceptible to changes in temperature and electromagnetic fields.\nBut optical components tend to be much larger than their silicon counterparts, and can be difficult to mass-produce. And they also need converters to transform data from digital to analog and back, which can be large and take up a lot of power.\nNeurophos, however, posits that the metasurface it has developed can solve all of those problems in one swoop because it is about “10,000 times” smaller than traditional optical transistors. The small size, the startup claims, enables it to fit thousands of units on a chip, which results in far more efficiency than traditional silicon because the chip can do many more calculations at once.\n“When you shrink the optical transistor, you can do way more math in the optics domain before you have to do that conversion back to the electronics domain,” Dr. Patrick Bowen, CEO and co-founder of Neurophos, told TechCrunch. “If you want to go fast, you have to solve the energy efficiency problem first. Because if you’re going to take a chip and make it 100 times faster, it burns 100 times more power. So you get the privilege of going fast after you solve the energy efficiency problem.”\nThe result, Neurophos claims, is an optical processing unit that can wildly outperform Nvidia’s B200 AI GPU. The startup says its chip can run at 56 GHz, yielding a peak 235 Peta Operations per Second (POPS) and consuming 675 watts, compared to the B200, which can deliver 9 POPS at 1,000 watts.\nBowen says Neurophos has already signed multiple customers (though he declined to name any), and companies including Microsoft are “looking very closely” at the startup’s products.\nStill, the startup is entering a crowded market that’s dominated by Nvidia, the world’s most valuable public company , whose products have more or less underpinned the entire AI boom. There are also other companies working on photonics, though some, like Lightmatter, have pivoted to focusing on interconnects. And Neurophos is still a few years away from production, expecting its first chips to hit the market by mid-2028.\nBut Bowen is confident the performance and efficiency advances provided by its metasurface modulators will prove a sufficient moat.\n“What everyone else is doing is, and this includes Nvidia, in terms of the fundamental physics of the silicon, it’s really evolutionary rather than revolutionary, and it’s tied to the progress of TSMC. If you look at the improvement of TSMC nodes, on average, they improve in energy efficiency about 15%, and that takes a couple years,” he said.\n“Even if we chart out Nvidia’s improvement in architecture over the years, by the time we come out in 2028, we still have massive advantages over everyone else in the market because we’re starting with a 50x over Blackwell in both energy efficiency and raw speed.”\nAnd to address the mass-manufacturing issues optical chips have traditionally faced, Neurophos says its chips can be made with standard silicon foundry materials, tools, and processes.\nThe fresh funding will be used for the development of the company’s first integrated photonic compute system, including data center-ready OPU modules, a full software stack, and early-access developer hardware. The company is also opening a San Francisco engineering site and expanding its HQ in Austin, Texas.\n“Modern AI inference demands monumental amounts of power and compute,” Dr. Marc Tremblay, corporate vice president and technical fellow of core AI infrastructure at Microsoft, said in a statement. “We need a breakthrough in compute on par with the leaps we’ve seen in AI models themselves, which is what Neurophos’ technology and high-talent density team is developing.”\nTopics\nAI , Fundraising , Hardware , M12 , metamaterials , Neurophos , photonics , Startups\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nRam Iyer\nEditor\nRam is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.\nYou can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .\nView Bio\nNovember 4\nBoston\nLast chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.\nSavings end June 26, 11:59 p.m. PT .\nREGISTER NOW\nMost Popular\nReddit is using LLMs to solve a problem LLMs largely created\nAmanda Silberling\nAmazon will stop accepting new customers for Mechanical Turk\nAnthony Ha\n5 desk gadgets that can make your workday better\nAisha Malik\nChevy built an all-American EV truck — why is nobody buying it?\nTim De Chant\nMark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped\nLucas Ropek\nJersey Mike’s IPO illustrates how bad the AI hype has become\nJulie Bort\nAfter $18B IPO, Bending Spoons founder says success comes from minimizing luck\nAnna Heim\nLoading the next article\nError loading the next article\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] To fund the development of its chips, Neurophos has just raised $110 ... The startup says its chip can run at 56 GHz, yielding a peak ... / query=AI chip startup raises funding Reuters TechCrunch / intent=find_market_trend / path=a_media_gdelt\n2. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] Image Credits: Neurophos Fundraising From invisibility cloaks to AI chips: Neurophos raises $110M to build tiny optical processors for inferencing Ram Iyer 7:00 AM PST · January 22, 2026 Twenty years ago, a Duke University professor, David R.\n3. [quote / signal_card_candidate, relationship_graph_input, viewpoint / high] Smith , used artificial composite materials called “ metamaterials ” to make a real-life invisibility cloak .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] While this cloak didn’t really work like Harry Potter’s, exhibiting limited ability to conceal objects from the light of a single microwave length, those advances in material science did eventually trickle down to electromagnetism research.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Today, Austin-based Neurophos , a photonics startup spun out of Duke University and Metacept (an incubator run by Smith), is taking that research further to solve what may be the biggest problem facing AI labs and hyperscalers: how to scale computing power while keeping power consumption in check.\n6. [quote / signal_card_candidate, relationship_graph_input, viewpoint / high] The startup has come up with a “metasurface modulator” with optical properties that enable it to serve as a tensor core processor for doing matrix vector multiplication — math that is at the heart of a lot of AI work (particularly inferencing), currently performed by specialized GPUs and TPUs that use traditional silicon gates and transistors.\n"
+}

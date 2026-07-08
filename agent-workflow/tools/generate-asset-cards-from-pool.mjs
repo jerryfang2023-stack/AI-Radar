@@ -1490,7 +1490,7 @@ function isJobListingSection(section) {
     value(section, "evidence_seed"),
   ].join(" ");
   return /\b(careers?|hiring)\b/iu.test(text)
-    && !/\b(customer deployment|case study|product launch|funding round|series\s+[a-z]|raises?|raised|secures?|secured|\$\s?\d|procurement|contract)\b/iu.test(text);
+    && !/\b(customer deployment|customer story|case study|product launch|funding round|series\s+[a-z]|raises?|raised|secures?|secured|\$\s?\d|procurement|contract|saves? \d|saved \d|hours annually)\b/iu.test(text);
 }
 
 function isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section) {
@@ -1610,8 +1610,13 @@ function signalEventClusterKey(spec, section) {
     return "event:funding:mistral";
   }
   const amount = text.match(/(?:\$|€|eur|usd)?\s?\d+(?:\.\d+)?\s?(?:m|b|million|billion|亿|万)?/iu)?.[0] || "";
+  const normalizedAmount = (text.match(/\$?\s?\d+(?:\.\d+)?\s?(?:m|b|million|billion)\b/iu)?.[0] || amount)
+    .replace(/\s+/gu, "")
+    .replace(/million$/iu, "m")
+    .replace(/billion$/iu, "b")
+    .toLowerCase();
   const normalizedTitle = normalizedSignalText(`${spec.type} ${title}`).slice(0, 96);
-  if (company && (amount || normalizedTitle)) return `event:${spec.type}:${company}:${amount || normalizedTitle}`;
+  if (company && (normalizedAmount || normalizedTitle)) return `event:${spec.type}:${company}:${normalizedAmount || normalizedTitle}`;
   return "";
 }
 
@@ -1638,6 +1643,7 @@ function slugify(value) {
 
 function shortCompany(value) {
   return String(value || "")
+    .replace(/\s+case\s+study$/iu, "")
     .replace(/^the\s+/iu, "")
     .replace(/\s+\|\s+.*$/u, "")
     .replace(/\s+-\s+.*$/u, "")
@@ -1690,6 +1696,18 @@ function companyFromUrl(sourceUrl = "", title = "") {
       [/upbound\.io/u, "Upbound"],
       [/pfizer/iu, "Pfizer"],
       [/sentara|infosys.*sentara/iu, "Infosys / Sentara"],
+      [/oxmiq/iu, "OXMIQ"],
+      [/savi(?:-|%20|\s)?security|savis-app/iu, "Savi Security"],
+      [/rocketlane/iu, "Rocketlane"],
+      [/bespoke(?:-|%20|\s)?labs/iu, "Bespoke Labs"],
+      [/\bnorm(?:-|%20|\s)?ai\b|\bnorm-ai\b|\bnorm\b.*(?:raises?|raised|funding|financing|series|120\s?m|\$120)/iu, "Norm AI"],
+      [/\bornn\b/iu, "Ornn"],
+      [/withone\.ai|\bone\b.*(?:pre-seed|ai recruiter)/iu, "One"],
+      [/together\.ai|together-ai|neocloud-together-ai/iu, "Together AI"],
+      [/sigmanticai|sigmantic-ai/iu, "SigmanticAI"],
+      [/zeiss/iu, "ZEISS"],
+      [/amgen/iu, "Amgen"],
+      [/peraton/iu, "Peraton"],
     ];
     const match = rules.find(([pattern]) => pattern.test(haystack));
     if (match) return match[1];
@@ -1726,10 +1744,12 @@ function isWeakCompanyName(value = "") {
   const text = String(value || "").trim();
   if (/buying criteria|adoption|startup ideas|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|introducing|top ai|complete guide|release notes agent|with quantization|brings enterprise|monetizing ai agents|company is led by/iu.test(text)) return true;
   if (!text) return true;
-  if (/^(?:Inc\.?|LLC|Ltd\.?|Corp\.?|Company|The company)$/iu.test(text)) return true;
+  if (/^(?:Inc\.?|LLC|Ltd\.?|Corp\.?|Company|The company|TechCrunch|Prnewswire|PR Newswire|EdgarFiling|Ithome|IT之家|Marktechpost|Arstechnica|Ars Technica|Labs|Medicine|Shares)$/iu.test(text)) return true;
   const hanChars = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   return text.length > 42
     || hanChars > 18
+    || /\b(launch YC|case study|google'?s pixel|first autonomous ground vehicles|deepseek.*seeking|it daily|morning briefing)\b/iu.test(text)
+    || /发布会|首批自主地面车辆|乌克兰参战|寻求.*融资|计划.*融资|消息称.*融资|早报/iu.test(text)
     || /[？?。；;！!]/u.test(text)
     || /(发布|推出|扩大|承诺|帮助|被叫停|可能|入股|渲染|升级|调整|增强|开始探索|押注|欲打破|将|支付|获取|聚焦|是 AIScraping|报告|榜单|指南|清单|研究|论文|引用|大型语言模型|替代的搜索引擎|right answers|state of)/iu.test(text);
 }
@@ -1759,6 +1779,8 @@ function companyFromSection(section) {
   const interviewCompanyClean = shortCompany(String(interviewCompany || "").replace(/^Ep\s+\d+:\s*/iu, ""));
   if (interviewCompanyClean && !isWeakCompanyName(interviewCompanyClean)) return interviewCompanyClean;
   const patterns = [
+    /\b([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})(?:'s|&#8217;s|&rsquo;s|鈥檚)\s+(?:app|platform|product|tool|agent|service)\b/iu,
+    /\b([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\s+(?:unveils?|launches?|introduces?|debuts?|announces?)\s+[A-Z][A-Za-z0-9.[\]&™-]+/iu,
     /\bstartup\s+([A-Z][A-Za-z0-9.&-]+)\s+(?:raises|raised|secures|secured|said|announced)\b/iu,
     /\bseed\s+for\s+([A-Z][A-Za-z0-9.&-]+)\s+to\b/iu,
     /\b([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\s+(?:on\s+\w+\s+)?(?:today\s+)?(?:announced|said|revealed|has raised|raised|secures|secured|will use|pulls in|pitches)\b/u,
@@ -1827,6 +1849,26 @@ function isSingleCompanyFundingSignal(section) {
     || /(?:\u5b8c\u6210|\u83b7\u5f97|\u83b7|\u5ba3\u5e03).{0,120}(?:\u878d\u8d44|\u6295\u8d44|\u4f30\u503c|\u8f6e)/iu.test(haystack);
   const directRaiseAmount = /\b(?:raises?|raised|lands?|landed|secures?|secured|closes?|closed|snags?|bags?|pulls in|gets|receives)\b.{0,140}(?:[$€£]\s?\d|\d+(?:\.\d+)?\s?(?:million|billion))/iu.test(haystack);
   return directRoundAnnouncement || directRaiseAmount || (action && fundingTerm && (amount || round));
+}
+
+function hasStrictFundingAnnouncement(section, sourceEventTitle = "") {
+  const haystack = [
+    sourceEventTitle,
+    poolTitle(section),
+    value(section, "source"),
+    value(section, "source_url"),
+    value(section, "key_excerpts"),
+    value(section, "evidence_seed"),
+  ].join(" ");
+  if (/\b(contract|procurement|tender|vehicle|autonomous ground vehicles|war|military|defense contract|export curbs?|chips?|self-developed chip|stake|equity stake|capital expenditure|capex|data center|investment plan|is seeking|seeks to raise|plans to raise|reportedly|rumou?red|in talks)\b|乌克兰|参战|车辆|芯片|出口管制|寻求融资|计划融资|消息称|据悉|入股/iu.test(haystack)) {
+    return false;
+  }
+  const amountOrRound = fundingAmountPattern.test(haystack) || fundingRoundPattern.test(haystack);
+  const announcedRound = /\b(?:raises?|raised|lands?|landed|secures?|secured|closes?|closed|snags?|bags?|pulls in|receives|announces?|announced|launched with|launches with|emerged from stealth with|emerges from stealth with)\b.{0,180}\b(?:funding|financing|investment|round|seed|pre[- ]seed|series\s+[a-z])\b/iu.test(haystack)
+    || /\b(?:funding|financing|investment|round|seed|pre[- ]seed|series\s+[a-z])\b.{0,180}\b(?:led by|participation from|investors?|valuation|raises?|raised|secured|closed)\b/iu.test(haystack)
+    || /(?:完成|获得|获|宣布|拿到).{0,120}(?:融资|投资|轮|领投|参投)/iu.test(haystack);
+  const directAmountRaise = /\b(?:raises?|raised|lands?|landed|secures?|secured|closes?|closed|snags?|bags?|pulls in|receives)\b.{0,160}(?:\$\s?\d|\d+(?:\.\d+)?\s?(?:million|billion))/iu.test(haystack);
+  return amountOrRound && (announcedRound || directAmountRaise);
 }
 
 function scenarioFromText(text) {
@@ -1926,6 +1968,17 @@ function sourceTitleDisplayTitle(title = "") {
 
 const sourceTitleTranslations = loadSourceTitleTranslations();
 
+function compactLaunchTitle(company = "", title = "") {
+  const cleanCompany = shortCompany(company);
+  const text = cleanSourceTitleForPublicTitle(title);
+  if (!cleanCompany || !text) return "";
+  const escapedCompany = cleanCompany.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+  const pattern = new RegExp(`^${escapedCompany}\\s+(?:unveils?|launches?|introduces?|debuts?|announces?)\\s+(.+?)(?:[:：]|\\s+-\\s+|\\s+for\\s+|\\s+to\\s+|$)`, "iu");
+  const product = shortCompany(text.match(pattern)?.[1] || "");
+  if (!product || isWeakCompanyName(product)) return "";
+  return `${cleanCompany} 发布 ${product}`;
+}
+
 function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount }) {
   const translated = sourceTitleDisplayTitle(sourceEventTitle);
   if (translated) return translated;
@@ -1934,6 +1987,8 @@ function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount }) {
     return `${company} 获得 ${amount}${round ? ` ${round}` : ""} 融资`;
   }
   if ((type === "product_service" || type === "case") && sourceEventTitleCanBackAutoCard(sourceEventTitle)) {
+    const compact = compactLaunchTitle(company, sourceEventTitle);
+    if (compact) return compact;
     return sourceEventTitle;
   }
   return "";
@@ -1942,7 +1997,7 @@ function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount }) {
 function sourceEventTitleCanBackAutoCard(title = "") {
   const text = cleanSourceTitleForPublicTitle(title);
   if (!text || hasTextContamination(text)) return false;
-  if (/(roundup|guide|what is|how to|landscape|report|trends?|top \d+|ranked|list|directory|buyer'?s guide|comparison|ideas|use cases|may become|roles? in the ai era|job opening|job listing|careers?|hiring)\b/iu.test(text)) return false;
+  if (/(roundup|guide|what is|what'?s real|how to|landscape|report|trends?|top \d+|ranked|list|directory|buyer'?s guide|comparison|ideas|use cases|may become|roles? in the ai era|job opening|job listing|careers?|hiring)\b/iu.test(text)) return false;
   return /\b(launch(?:es|ed)?|announc(?:es|ed|ing)?|introduc(?:es|ed|ing)?|public preview|generally available|GA|available now|reach(?:es|ed)? the next phase|live transactions?|partners? with|partnership|procurement|contract|customer story|case study|deploy(?:s|ed|ment)?|rollout|adopt(?:s|ed|ion)?|expands?|unveils?)\b/iu.test(text);
 }
 
@@ -2002,6 +2057,10 @@ function cleanSourceEventTitle(title = "") {
 }
 
 function isNonCommercialPolicyOrEthicsSignal(section) {
+  const hasCommercialAction = hasConcreteProductEvent(section)
+    || hasConcreteCaseEvent(section)
+    || hasStrictMarketStructureEvent(section);
+  const purePolicyConflict = /\b(ban|banned|prohibit|controversy)\b|绂佷护|绂佹|浜夎/iu;
   const text = [
     poolTitle(section),
     value(section, "source"),
@@ -2009,6 +2068,7 @@ function isNonCommercialPolicyOrEthicsSignal(section) {
     value(section, "key_excerpts"),
     value(section, "evidence_seed"),
   ].join(" ");
+  if (hasCommercialAction && !purePolicyConflict.test(text)) return false;
   if (/\b(government|ban|banned|prohibit|national security|policy|regulat(?:ion|or)|controversy)\b|政府|禁令|禁止|国家安全|政策|监管|争议/iu.test(text)) {
     return true;
   }
@@ -2056,6 +2116,8 @@ function autoSignalSpec(poolRef, section, index) {
   if (!sourceTitle) return null;
   const sourceEventTitle = cleanSourceEventTitle(sourceTitle);
   if (!sourceEventTitle) return null;
+  if (isWeakCompanyName(company)) return null;
+  if (type === "funding" && !hasStrictFundingAnnouncement(section, sourceEventTitle)) return null;
   let title = publicTitleForAutoSignal({ type, company, sourceEventTitle, amount });
   if (!title && (allowsObservationSummaryEvidence(section) || summaryOperatorMaterial)) {
     title = `${company || "AI 公司"} 的 AI 商业观察`;
@@ -2119,7 +2181,14 @@ function autoSignalEligibilityIssues(section) {
   const issues = [...cardabilitySemanticIssues(section)];
   const sourceUrl = value(section, "source_url");
   const importanceType = value(section, "importance_type");
+  const poolRoutes = value(section, "pool_routes");
   const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source_type")}`;
+  if (/\bindex_only\b/iu.test(poolRoutes)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "pool_route_index_only_not_formal_card"));
+  }
+  if (!coreImportanceTypes.has(importanceType) && !allowsObservationSummaryEvidence(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, `unsupported_importance_type:${importanceType || "missing"}`));
+  }
   if (inferSignalType(section) === "funding" && importanceType === "important_funding" && !isSingleCompanyFundingSignal(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "funding_not_single_company_round"));
   }
@@ -2132,6 +2201,9 @@ function autoSignalEligibilityIssues(section) {
   }
   if (isCorporateCapexOrCommunityInvestment(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "corporate_capex_or_community_investment_not_signal_card"));
+  }
+  if (/aws\.amazon\.com\/marketplace|AWS Marketplace/iu.test(text)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "marketplace_directory_not_signal_card"));
   }
   if (/(learn\.microsoft\.com|\/docs?\/|documentation|README|readme-ov-file|model page|product catalog)/iu.test(text) || /why we.*re investing/iu.test(text)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "docs_or_catalog_or_investing_thesis"));

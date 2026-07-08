@@ -1,0 +1,287 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-051",
+  "title": "ayushozha/switchboard-ai",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://github.com/Ayush10/switchboard-ai",
+  "canonical_url": "https://github.com/Ayush10/switchboard-ai",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "procurement_marketplace",
+  "search_path_label": "采购 / 招投标 / Marketplace 路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-08T04:39:25.818Z",
+  "language": "mixed",
+  "full_text": "ayushozha\nswitchboard-ai\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n36 Commits\n36 Commits\n.claude\n.claude\nagents\nagents\ndocs\ndocs\nfinal\nfinal\nfrontend\nfrontend\nimportant-context\nimportant-context\nlinkedin-profiles-text\nlinkedin-profiles-text\nscripts\nscripts\nsponsor-services\nsponsor-services\n.dockerignore\n.dockerignore\n.gitignore\n.gitignore\nCLAUDE.md\nCLAUDE.md\nDockerfile\nDockerfile\nHACKATHON_REPORT.md\nHACKATHON_REPORT.md\nLOCAL_SETUP.md\nLOCAL_SETUP.md\nPROCUREPILOT-BLUEPRINT.md\nPROCUREPILOT-BLUEPRINT.md\nREADME.md\nREADME.md\ndocker-compose.yml\ndocker-compose.yml\nenv.production.example\nenv.production.example\nprocurepilot-architecture.svg\nprocurepilot-architecture.svg\nprocurepilot_trust_architecture_final.svg\nprocurepilot_trust_architecture_final.svg\nprocurepilot_trust_architecture_updated.svg\nprocurepilot_trust_architecture_updated.svg\nprocurepilot_trust_architecture_with_governance.svg\nprocurepilot_trust_architecture_with_governance.svg\nsupervisord.conf\nsupervisord.conf\nView all files\nRepository files navigation\nSwitchBoard AI\nAutonomous procurement and compliance layer for AI agent marketplaces.\nSwitchBoard AI is an always-on buyer-operator and compliance layer that discovers marketplace sellers, runs paid micro-trials, scores output quality and trust signals, selects vendors, purchases finalized outputs, assembles buyer-ready deliverables, and exposes a human-readable audit trail - all autonomously.\nBuilt in 22 hours at the Nevermined Autonomous Business Hackathon (March 2026, AWS Builder Loft, San Francisco).\nLive: switchboardai.ayushojha.com\nHow It Works\nClient request\nProcurePilot (buyer engine)\n|--- discovers vendors in Nevermined marketplace\n|--- runs paid micro-trials via x402 tokens\n|--- scores quality, latency, trust\n|--- selects winner (or falls back to in-house)\n|--- assembles final deliverable\nDelivered brief + full audit trail\nEvery step is metered, logged, and visible in the dashboard.\nArchitecture\nSwitchBoard AI runs as an autonomous procurement and compliance layer with a 7-agent execution flow:\nDiscovery Agent finds candidate sellers and marketplace categories\nPurchaser Agent acquires plans and runs paid vendor trials\nScorer Agent evaluates quality, freshness, latency, and cost-efficiency\nSwitcher Agent compares outcomes and selects the best supplier stack\nAssembler Agent composes the final buyer-ready packet\nDataForge Web executes structured extraction tasks\nDataForge Search executes semantic research tasks\nTrustScore sits across the flow as the governance and compliance overlay, while the dashboard exposes the human-readable audit layer for judges and operators.\nOne Docker container, five services under supervisord:\nService\nPort\nRole\nDashboard\n8000\nAPI gateway, React frontend, organizer surfaces\nProcurePilot\n8001\nAutonomous buyer engine and run control\nDataForge Web\n8002\nStructured web extraction (seller)\nDataForge Search\n8003\nSemantic research (seller)\nTrustScore\n8010\nTrust scoring, disputes, refunds, reputation\nBrowser --> Dashboard (8000)\n|--proxy--> ProcurePilot / Orchestrator\n| |-- Discovery Agent\n| |-- Purchaser Agent\n| |-- Scorer Agent\n| |-- Switcher Agent\n| |-- Assembler Agent\n| |-- executes --> DataForge Web / DataForge Search / External Sellers\n|--proxy--> TrustScore (quality gates, disputes, refunds, compliance)\n|--serve--> React frontend (demo, marketplace, ledger views)\nProduction Architecture Diagram\nDownload the architecture diagram with sponsor integrations (SVG)\nWhat It Does\nAs a Seller\nSells fully assembled market research briefs via Nevermined\nDataForge Web: structured extraction from any URL\nDataForge Search: semantic research with citations\nAs a Buyer\nDiscovers and evaluates marketplace vendors autonomously\nRuns budget-gated paid trials before committing\nSwitches vendors based on quality/cost/reliability scoring\nFalls back to in-house capability when vendors fail\nTrust & Governance\nPre-buy quality gates before final purchase\nPost-buy output review before assembly\nDispute lifecycle: open, refund request, honor/deny\nFull trust ledger per run with signed evidence\nAPI Surfaces\nEndpoint\nDescription\nGET /health\nService health\nGET /snapshot\nOrganizer summary (counters, trust economics)\nGET /ledger\nHuman-readable transaction ledger\nGET /timeline\nGlobal event timeline\nGET /vendors\nVendor scoring rows\nGET /runs\nActive and completed runs\nPOST /api/procurepilot/procure\nSubmit a procurement request\nPOST /api/dataforge-web/scrape\nWeb extraction (x402 payment required)\nPOST /api/dataforge-search/search\nResearch search (x402 payment required)\nGET /api/trustscore/reputation\nVendor reputation data\nPOST /api/trustscore/disputes/open\nOpen a trust dispute\nNevermined Integration\nAll transactions flow through Nevermined infrastructure:\nPlan registration: Each seller agent has a registered credit plan\nx402 payments: Buyers get access tokens and attach them as payment-signature headers\nCredit metering: Every API call burns credits from the buyer's purchased plan\nMarketplace discovery: Agents are discoverable via Nevermined's shared marketplace\nRegistered Agents\nAgent\nType\nDataForge Web\nSeller — web extraction\nDataForge Search\nSeller — semantic research\nProcurePilot\nSeller — full procurement orchestration\nTech Stack\nBackend: Python, FastAPI, supervisord\nFrontend: React, TypeScript, Vite, TailwindCSS\nPayments: Nevermined SDK (x402 protocol)\nLLM: OpenAI (task decomposition, quality scoring)\nData: Exa (search), Apify (web scraping)\nDeploy: Docker, Coolify, Hostinger VPS\nLocal Development\n# Clone\ngit clone https://github.com/Ayush10/switchboard-ai.git\ncd switchboard-ai\n# Create .env from example\ncp env.production.example .env\n# Fill in your API keys (NVM_API_KEY, OPENAI_API_KEY, etc.)\n# Build and run\ndocker build -t switchboard-ai .\ndocker run --env-file .env -p 8000:8000 -v $( pwd ) /storage:/app/storage switchboard-ai\nThe app will be available at http://localhost:8000 .\nProject Structure\nagents/\ndashboard/ # API gateway + frontend serving\nprocure-pilot/ # Autonomous buyer engine\ndataforge-web/ # Web extraction seller\ndataforge-search/ # Search seller\norchestrator/ # Workflow orchestration\ntrustscore-api/ # Trust, disputes, refunds\nstorage/ # Runtime store utilities\nfrontend/ # React app (Vite + TypeScript)\nscripts/ # Deployment and testing scripts\ndocs/ # Architecture docs and vendor analysis\nLicense\nMIT\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n53.1%\nTypeScript\n37.0%\nHTML\n6.4%\nShell\n1.8%\nCSS\n1.4%\nDockerfile\n0.2%\nJavaScript\n0.1%",
+  "clean_text": "ayushozha\nswitchboard-ai\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n36 Commits\n36 Commits\n.claude\n.claude\nagents\nagents\ndocs\ndocs\nfinal\nfinal\nfrontend\nfrontend\nimportant-context\nimportant-context\nlinkedin-profiles-text\nlinkedin-profiles-text\nscripts\nscripts\nsponsor-services\nsponsor-services\n.dockerignore\n.dockerignore\n.gitignore\n.gitignore\nCLAUDE.md\nCLAUDE.md\nDockerfile\nDockerfile\nHACKATHON_REPORT.md\nHACKATHON_REPORT.md\nLOCAL_SETUP.md\nLOCAL_SETUP.md\nPROCUREPILOT-BLUEPRINT.md\nPROCUREPILOT-BLUEPRINT.md\nREADME.md\nREADME.md\ndocker-compose.yml\ndocker-compose.yml\nenv.production.example\nenv.production.example\nprocurepilot-architecture.svg\nprocurepilot-architecture.svg\nprocurepilot_trust_architecture_final.svg\nprocurepilot_trust_architecture_final.svg\nprocurepilot_trust_architecture_updated.svg\nprocurepilot_trust_architecture_updated.svg\nprocurepilot_trust_architecture_with_governance.svg\nprocurepilot_trust_architecture_with_governance.svg\nsupervisord.conf\nsupervisord.conf\nView all files\nRepository files navigation\nSwitchBoard AI\nAutonomous procurement and compliance layer for AI agent marketplaces.\nSwitchBoard AI is an always-on buyer-operator and compliance layer that discovers marketplace sellers, runs paid micro-trials, scores output quality and trust signals, selects vendors, purchases finalized outputs, assembles buyer-ready deliverables, and exposes a human-readable audit trail - all autonomously.\nBuilt in 22 hours at the Nevermined Autonomous Business Hackathon (March 2026, AWS Builder Loft, San Francisco).\nLive: switchboardai.ayushojha.com\nHow It Works\nClient request\nProcurePilot (buyer engine)\n|--- discovers vendors in Nevermined marketplace\n|--- runs paid micro-trials via x402 tokens\n|--- scores quality, latency, trust\n|--- selects winner (or falls back to in-house)\n|--- assembles final deliverable\nDelivered brief + full audit trail\nEvery step is metered, logged, and visible in the dashboard.\nArchitecture\nSwitchBoard AI runs as an autonomous procurement and compliance layer with a 7-agent execution flow:\nDiscovery Agent finds candidate sellers and marketplace categories\nPurchaser Agent acquires plans and runs paid vendor trials\nScorer Agent evaluates quality, freshness, latency, and cost-efficiency\nSwitcher Agent compares outcomes and selects the best supplier stack\nAssembler Agent composes the final buyer-ready packet\nDataForge Web executes structured extraction tasks\nDataForge Search executes semantic research tasks\nTrustScore sits across the flow as the governance and compliance overlay, while the dashboard exposes the human-readable audit layer for judges and operators.\nOne Docker container, five services under supervisord:\nService\nPort\nRole\nDashboard\n8000\nAPI gateway, React frontend, organizer surfaces\nProcurePilot\n8001\nAutonomous buyer engine and run control\nDataForge Web\n8002\nStructured web extraction (seller)\nDataForge Search\n8003\nSemantic research (seller)\nTrustScore\n8010\nTrust scoring, disputes, refunds, reputation\nBrowser --> Dashboard (8000)\n|--proxy--> ProcurePilot / Orchestrator\n| |-- Discovery Agent\n| |-- Purchaser Agent\n| |-- Scorer Agent\n| |-- Switcher Agent\n| |-- Assembler Agent\n| |-- executes --> DataForge Web / DataForge Search / External Sellers\n|--proxy--> TrustScore (quality gates, disputes, refunds, compliance)\n|--serve--> React frontend (demo, marketplace, ledger views)\nProduction Architecture Diagram\nDownload the architecture diagram with sponsor integrations (SVG)\nWhat It Does\nAs a Seller\nSells fully assembled market research briefs via Nevermined\nDataForge Web: structured extraction from any URL\nDataForge Search: semantic research with citations\nAs a Buyer\nDiscovers and evaluates marketplace vendors autonomously\nRuns budget-gated paid trials before committing\nSwitches vendors based on quality/cost/reliability scoring\nFalls back to in-house capability when vendors fail\nTrust & Governance\nPre-buy quality gates before final purchase\nPost-buy output review before assembly\nDispute lifecycle: open, refund request, honor/deny\nFull trust ledger per run with signed evidence\nAPI Surfaces\nEndpoint\nDescription\nGET /health\nService health\nGET /snapshot\nOrganizer summary (counters, trust economics)\nGET /ledger\nHuman-readable transaction ledger\nGET /timeline\nGlobal event timeline\nGET /vendors\nVendor scoring rows\nGET /runs\nActive and completed runs\nPOST /api/procurepilot/procure\nSubmit a procurement request\nPOST /api/dataforge-web/scrape\nWeb extraction (x402 payment required)\nPOST /api/dataforge-search/search\nResearch search (x402 payment required)\nGET /api/trustscore/reputation\nVendor reputation data\nPOST /api/trustscore/disputes/open\nOpen a trust dispute\nNevermined Integration\nAll transactions flow through Nevermined infrastructure:\nPlan registration: Each seller agent has a registered credit plan\nx402 payments: Buyers get access tokens and attach them as payment-signature headers\nCredit metering: Every API call burns credits from the buyer's purchased plan\nMarketplace discovery: Agents are discoverable via Nevermined's shared marketplace\nRegistered Agents\nAgent\nType\nDataForge Web\nSeller — web extraction\nDataForge Search\nSeller — semantic research\nProcurePilot\nSeller — full procurement orchestration\nTech Stack\nBackend: Python, FastAPI, supervisord\nFrontend: React, TypeScript, Vite, TailwindCSS\nPayments: Nevermined SDK (x402 protocol)\nLLM: OpenAI (task decomposition, quality scoring)\nData: Exa (search), Apify (web scraping)\nDeploy: Docker, Coolify, Hostinger VPS\nLocal Development\n# Clone\ngit clone https://github.com/Ayush10/switchboard-ai.git\ncd switchboard-ai\n# Create .env from example\ncp env.production.example .env\n# Fill in your API keys (NVM_API_KEY, OPENAI_API_KEY, etc.)\n# Build and run\ndocker build -t switchboard-ai .\ndocker run --env-file .env -p 8000:8000 -v $( pwd ) /storage:/app/storage switchboard-ai\nThe app will be available at http://localhost:8000 .\nProject Structure\nagents/\ndashboard/ # API gateway + frontend serving\nprocure-pilot/ # Autonomous buyer engine\ndataforge-web/ # Web extraction seller\ndataforge-search/ # Search seller\norchestrator/ # Workflow orchestration\ntrustscore-api/ # Trust, disputes, refunds\nstorage/ # Runtime store utilities\nfrontend/ # React app (Vite + TypeScript)\nscripts/ # Deployment and testing scripts\ndocs/ # Architecture docs and vendor analysis\nLicense\nMIT\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n53.1%\nTypeScript\n37.0%\nHTML\n6.4%\nShell\n1.8%\nCSS\n1.4%\nDockerfile\n0.2%\nJavaScript\n0.1%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-08/r-051-ayushozha-switchboard-ai.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-08/r-051-ayushozha-switchboard-ai.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 7011,
+    "paragraph_count": 118,
+    "sentence_count": 17,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0076,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 7011,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "c7dc4f34485d794b",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "a28bf8a175e025e9",
+  "content_hash": "c7dc4f34485d794b",
+  "full_text_hash": "c7dc4f34485d794b",
+  "semantic_hash": "e95d7da878fb7a4e",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-08T04:39:25.818Z",
+  "last_seen_at": "2026-07-08T04:39:25.818Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "# Repository: ayushozha/switchboard-ai - Stars: 0 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: Python - Languages: Python (53.1%), TypeScript (37.0%), HTML (6.4%), Shell (1.8%), CSS (1.4%), Dockerfile (0.2%), JavaScript - Default branch: main - Created: 2026-03-06T00:30:21Z - Last .... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=procurement_marketplace",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "ayushozha switchboard-ai Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 36 Commits 36 Commits .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "claude agents agents docs docs final final frontend frontend important-context important-context linkedin-profiles-text linkedin-profiles-text scripts scripts sponsor-services sponsor-services .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md Dockerfile Dockerfile HACKATHON_REPORT.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md HACKATHON_REPORT.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "md PROCUREPILOT-BLUEPRINT.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-08T04:39:25.818Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "GitHub",
+      "AWS"
+    ],
+    "products": [
+      "agent",
+      "claude",
+      "agents",
+      "CLAUDE",
+      "Agent",
+      "Agents"
+    ],
+    "people": [],
+    "industries": [
+      "医疗",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "采购负责人"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "采购 / 招投标",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "采购"
+    ],
+    "numbers": [
+      "0",
+      "53.1%",
+      "37.0%",
+      "6.4%",
+      "1.8%",
+      "1.4%",
+      "0.2%",
+      "2026"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "ayushozha switchboard-ai Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 36 Commits 36 Commits .",
+      "claude agents agents docs docs final final frontend frontend important-context important-context linkedin-profiles-text linkedin-profiles-text scripts scripts sponsor-services sponsor-services .",
+      "md Dockerfile Dockerfile HACKATHON_REPORT."
+    ],
+    "case_details": [
+      "md PROCUREPILOT-BLUEPRINT."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "采购负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# ayushozha/switchboard-ai\n\n- raw_id: R-051\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://github.com/Ayush10/switchboard-ai\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-08T04:39:25.818Z\n\n## clean_text\n\nayushozha\nswitchboard-ai\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n36 Commits\n36 Commits\n.claude\n.claude\nagents\nagents\ndocs\ndocs\nfinal\nfinal\nfrontend\nfrontend\nimportant-context\nimportant-context\nlinkedin-profiles-text\nlinkedin-profiles-text\nscripts\nscripts\nsponsor-services\nsponsor-services\n.dockerignore\n.dockerignore\n.gitignore\n.gitignore\nCLAUDE.md\nCLAUDE.md\nDockerfile\nDockerfile\nHACKATHON_REPORT.md\nHACKATHON_REPORT.md\nLOCAL_SETUP.md\nLOCAL_SETUP.md\nPROCUREPILOT-BLUEPRINT.md\nPROCUREPILOT-BLUEPRINT.md\nREADME.md\nREADME.md\ndocker-compose.yml\ndocker-compose.yml\nenv.production.example\nenv.production.example\nprocurepilot-architecture.svg\nprocurepilot-architecture.svg\nprocurepilot_trust_architecture_final.svg\nprocurepilot_trust_architecture_final.svg\nprocurepilot_trust_architecture_updated.svg\nprocurepilot_trust_architecture_updated.svg\nprocurepilot_trust_architecture_with_governance.svg\nprocurepilot_trust_architecture_with_governance.svg\nsupervisord.conf\nsupervisord.conf\nView all files\nRepository files navigation\nSwitchBoard AI\nAutonomous procurement and compliance layer for AI agent marketplaces.\nSwitchBoard AI is an always-on buyer-operator and compliance layer that discovers marketplace sellers, runs paid micro-trials, scores output quality and trust signals, selects vendors, purchases finalized outputs, assembles buyer-ready deliverables, and exposes a human-readable audit trail - all autonomously.\nBuilt in 22 hours at the Nevermined Autonomous Business Hackathon (March 2026, AWS Builder Loft, San Francisco).\nLive: switchboardai.ayushojha.com\nHow It Works\nClient request\nProcurePilot (buyer engine)\n|--- discovers vendors in Nevermined marketplace\n|--- runs paid micro-trials via x402 tokens\n|--- scores quality, latency, trust\n|--- selects winner (or falls back to in-house)\n|--- assembles final deliverable\nDelivered brief + full audit trail\nEvery step is metered, logged, and visible in the dashboard.\nArchitecture\nSwitchBoard AI runs as an autonomous procurement and compliance layer with a 7-agent execution flow:\nDiscovery Agent finds candidate sellers and marketplace categories\nPurchaser Agent acquires plans and runs paid vendor trials\nScorer Agent evaluates quality, freshness, latency, and cost-efficiency\nSwitcher Agent compares outcomes and selects the best supplier stack\nAssembler Agent composes the final buyer-ready packet\nDataForge Web executes structured extraction tasks\nDataForge Search executes semantic research tasks\nTrustScore sits across the flow as the governance and compliance overlay, while the dashboard exposes the human-readable audit layer for judges and operators.\nOne Docker container, five services under supervisord:\nService\nPort\nRole\nDashboard\n8000\nAPI gateway, React frontend, organizer surfaces\nProcurePilot\n8001\nAutonomous buyer engine and run control\nDataForge Web\n8002\nStructured web extraction (seller)\nDataForge Search\n8003\nSemantic research (seller)\nTrustScore\n8010\nTrust scoring, disputes, refunds, reputation\nBrowser --> Dashboard (8000)\n|--proxy--> ProcurePilot / Orchestrator\n| |-- Discovery Agent\n| |-- Purchaser Agent\n| |-- Scorer Agent\n| |-- Switcher Agent\n| |-- Assembler Agent\n| |-- executes --> DataForge Web / DataForge Search / External Sellers\n|--proxy--> TrustScore (quality gates, disputes, refunds, compliance)\n|--serve--> React frontend (demo, marketplace, ledger views)\nProduction Architecture Diagram\nDownload the architecture diagram with sponsor integrations (SVG)\nWhat It Does\nAs a Seller\nSells fully assembled market research briefs via Nevermined\nDataForge Web: structured extraction from any URL\nDataForge Search: semantic research with citations\nAs a Buyer\nDiscovers and evaluates marketplace vendors autonomously\nRuns budget-gated paid trials before committing\nSwitches vendors based on quality/cost/reliability scoring\nFalls back to in-house capability when vendors fail\nTrust & Governance\nPre-buy quality gates before final purchase\nPost-buy output review before assembly\nDispute lifecycle: open, refund request, honor/deny\nFull trust ledger per run with signed evidence\nAPI Surfaces\nEndpoint\nDescription\nGET /health\nService health\nGET /snapshot\nOrganizer summary (counters, trust economics)\nGET /ledger\nHuman-readable transaction ledger\nGET /timeline\nGlobal event timeline\nGET /vendors\nVendor scoring rows\nGET /runs\nActive and completed runs\nPOST /api/procurepilot/procure\nSubmit a procurement request\nPOST /api/dataforge-web/scrape\nWeb extraction (x402 payment required)\nPOST /api/dataforge-search/search\nResearch search (x402 payment required)\nGET /api/trustscore/reputation\nVendor reputation data\nPOST /api/trustscore/disputes/open\nOpen a trust dispute\nNevermined Integration\nAll transactions flow through Nevermined infrastructure:\nPlan registration: Each seller agent has a registered credit plan\nx402 payments: Buyers get access tokens and attach them as payment-signature headers\nCredit metering: Every API call burns credits from the buyer's purchased plan\nMarketplace discovery: Agents are discoverable via Nevermined's shared marketplace\nRegistered Agents\nAgent\nType\nDataForge Web\nSeller — web extraction\nDataForge Search\nSeller — semantic research\nProcurePilot\nSeller — full procurement orchestration\nTech Stack\nBackend: Python, FastAPI, supervisord\nFrontend: React, TypeScript, Vite, TailwindCSS\nPayments: Nevermined SDK (x402 protocol)\nLLM: OpenAI (task decomposition, quality scoring)\nData: Exa (search), Apify (web scraping)\nDeploy: Docker, Coolify, Hostinger VPS\nLocal Development\n# Clone\ngit clone https://github.com/Ayush10/switchboard-ai.git\ncd switchboard-ai\n# Create .env from example\ncp env.production.example .env\n# Fill in your API keys (NVM_API_KEY, OPENAI_API_KEY, etc.)\n# Build and run\ndocker build -t switchboard-ai .\ndocker run --env-file .env -p 8000:8000 -v $( pwd ) /storage:/app/storage switchboard-ai\nThe app will be available at http://localhost:8000 .\nProject Structure\nagents/\ndashboard/ # API gateway + frontend serving\nprocure-pilot/ # Autonomous buyer engine\ndataforge-web/ # Web extraction seller\ndataforge-search/ # Search seller\norchestrator/ # Workflow orchestration\ntrustscore-api/ # Trust, disputes, refunds\nstorage/ # Runtime store utilities\nfrontend/ # React app (Vite + TypeScript)\nscripts/ # Deployment and testing scripts\ndocs/ # Architecture docs and vendor analysis\nLicense\nMIT\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n53.1%\nTypeScript\n37.0%\nHTML\n6.4%\nShell\n1.8%\nCSS\n1.4%\nDockerfile\n0.2%\nJavaScript\n0.1%\n\n## full_text\n\nayushozha\nswitchboard-ai\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n36 Commits\n36 Commits\n.claude\n.claude\nagents\nagents\ndocs\ndocs\nfinal\nfinal\nfrontend\nfrontend\nimportant-context\nimportant-context\nlinkedin-profiles-text\nlinkedin-profiles-text\nscripts\nscripts\nsponsor-services\nsponsor-services\n.dockerignore\n.dockerignore\n.gitignore\n.gitignore\nCLAUDE.md\nCLAUDE.md\nDockerfile\nDockerfile\nHACKATHON_REPORT.md\nHACKATHON_REPORT.md\nLOCAL_SETUP.md\nLOCAL_SETUP.md\nPROCUREPILOT-BLUEPRINT.md\nPROCUREPILOT-BLUEPRINT.md\nREADME.md\nREADME.md\ndocker-compose.yml\ndocker-compose.yml\nenv.production.example\nenv.production.example\nprocurepilot-architecture.svg\nprocurepilot-architecture.svg\nprocurepilot_trust_architecture_final.svg\nprocurepilot_trust_architecture_final.svg\nprocurepilot_trust_architecture_updated.svg\nprocurepilot_trust_architecture_updated.svg\nprocurepilot_trust_architecture_with_governance.svg\nprocurepilot_trust_architecture_with_governance.svg\nsupervisord.conf\nsupervisord.conf\nView all files\nRepository files navigation\nSwitchBoard AI\nAutonomous procurement and compliance layer for AI agent marketplaces.\nSwitchBoard AI is an always-on buyer-operator and compliance layer that discovers marketplace sellers, runs paid micro-trials, scores output quality and trust signals, selects vendors, purchases finalized outputs, assembles buyer-ready deliverables, and exposes a human-readable audit trail - all autonomously.\nBuilt in 22 hours at the Nevermined Autonomous Business Hackathon (March 2026, AWS Builder Loft, San Francisco).\nLive: switchboardai.ayushojha.com\nHow It Works\nClient request\nProcurePilot (buyer engine)\n|--- discovers vendors in Nevermined marketplace\n|--- runs paid micro-trials via x402 tokens\n|--- scores quality, latency, trust\n|--- selects winner (or falls back to in-house)\n|--- assembles final deliverable\nDelivered brief + full audit trail\nEvery step is metered, logged, and visible in the dashboard.\nArchitecture\nSwitchBoard AI runs as an autonomous procurement and compliance layer with a 7-agent execution flow:\nDiscovery Agent finds candidate sellers and marketplace categories\nPurchaser Agent acquires plans and runs paid vendor trials\nScorer Agent evaluates quality, freshness, latency, and cost-efficiency\nSwitcher Agent compares outcomes and selects the best supplier stack\nAssembler Agent composes the final buyer-ready packet\nDataForge Web executes structured extraction tasks\nDataForge Search executes semantic research tasks\nTrustScore sits across the flow as the governance and compliance overlay, while the dashboard exposes the human-readable audit layer for judges and operators.\nOne Docker container, five services under supervisord:\nService\nPort\nRole\nDashboard\n8000\nAPI gateway, React frontend, organizer surfaces\nProcurePilot\n8001\nAutonomous buyer engine and run control\nDataForge Web\n8002\nStructured web extraction (seller)\nDataForge Search\n8003\nSemantic research (seller)\nTrustScore\n8010\nTrust scoring, disputes, refunds, reputation\nBrowser --> Dashboard (8000)\n|--proxy--> ProcurePilot / Orchestrator\n| |-- Discovery Agent\n| |-- Purchaser Agent\n| |-- Scorer Agent\n| |-- Switcher Agent\n| |-- Assembler Agent\n| |-- executes --> DataForge Web / DataForge Search / External Sellers\n|--proxy--> TrustScore (quality gates, disputes, refunds, compliance)\n|--serve--> React frontend (demo, marketplace, ledger views)\nProduction Architecture Diagram\nDownload the architecture diagram with sponsor integrations (SVG)\nWhat It Does\nAs a Seller\nSells fully assembled market research briefs via Nevermined\nDataForge Web: structured extraction from any URL\nDataForge Search: semantic research with citations\nAs a Buyer\nDiscovers and evaluates marketplace vendors autonomously\nRuns budget-gated paid trials before committing\nSwitches vendors based on quality/cost/reliability scoring\nFalls back to in-house capability when vendors fail\nTrust & Governance\nPre-buy quality gates before final purchase\nPost-buy output review before assembly\nDispute lifecycle: open, refund request, honor/deny\nFull trust ledger per run with signed evidence\nAPI Surfaces\nEndpoint\nDescription\nGET /health\nService health\nGET /snapshot\nOrganizer summary (counters, trust economics)\nGET /ledger\nHuman-readable transaction ledger\nGET /timeline\nGlobal event timeline\nGET /vendors\nVendor scoring rows\nGET /runs\nActive and completed runs\nPOST /api/procurepilot/procure\nSubmit a procurement request\nPOST /api/dataforge-web/scrape\nWeb extraction (x402 payment required)\nPOST /api/dataforge-search/search\nResearch search (x402 payment required)\nGET /api/trustscore/reputation\nVendor reputation data\nPOST /api/trustscore/disputes/open\nOpen a trust dispute\nNevermined Integration\nAll transactions flow through Nevermined infrastructure:\nPlan registration: Each seller agent has a registered credit plan\nx402 payments: Buyers get access tokens and attach them as payment-signature headers\nCredit metering: Every API call burns credits from the buyer's purchased plan\nMarketplace discovery: Agents are discoverable via Nevermined's shared marketplace\nRegistered Agents\nAgent\nType\nDataForge Web\nSeller — web extraction\nDataForge Search\nSeller — semantic research\nProcurePilot\nSeller — full procurement orchestration\nTech Stack\nBackend: Python, FastAPI, supervisord\nFrontend: React, TypeScript, Vite, TailwindCSS\nPayments: Nevermined SDK (x402 protocol)\nLLM: OpenAI (task decomposition, quality scoring)\nData: Exa (search), Apify (web scraping)\nDeploy: Docker, Coolify, Hostinger VPS\nLocal Development\n# Clone\ngit clone https://github.com/Ayush10/switchboard-ai.git\ncd switchboard-ai\n# Create .env from example\ncp env.production.example .env\n# Fill in your API keys (NVM_API_KEY, OPENAI_API_KEY, etc.)\n# Build and run\ndocker build -t switchboard-ai .\ndocker run --env-file .env -p 8000:8000 -v $( pwd ) /storage:/app/storage switchboard-ai\nThe app will be available at http://localhost:8000 .\nProject Structure\nagents/\ndashboard/ # API gateway + frontend serving\nprocure-pilot/ # Autonomous buyer engine\ndataforge-web/ # Web extraction seller\ndataforge-search/ # Search seller\norchestrator/ # Workflow orchestration\ntrustscore-api/ # Trust, disputes, refunds\nstorage/ # Runtime store utilities\nfrontend/ # React app (Vite + TypeScript)\nscripts/ # Deployment and testing scripts\ndocs/ # Architecture docs and vendor analysis\nLicense\nMIT\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n53.1%\nTypeScript\n37.0%\nHTML\n6.4%\nShell\n1.8%\nCSS\n1.4%\nDockerfile\n0.2%\nJavaScript\n0.1%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] # Repository: ayushozha/switchboard-ai - Stars: 0 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: Python - Languages: Python (53.1%), TypeScript (37.0%), HTML (6.4%), Shell (1.8%), CSS (1.4%), Dockerfile (0.2%), JavaScript - Default branch: main - Created: 2026-03-06T00:30:21Z - Last .... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=procurement_marketplace\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] ayushozha switchboard-ai Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 36 Commits 36 Commits .\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] claude agents agents docs docs final final frontend frontend important-context important-context linkedin-profiles-text linkedin-profiles-text scripts scripts sponsor-services sponsor-services .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] md Dockerfile Dockerfile HACKATHON_REPORT.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] md HACKATHON_REPORT.\n6. [case_detail / signal_card_candidate, relationship_graph_input, case / high] md PROCUREPILOT-BLUEPRINT.\n"
+}

@@ -1,0 +1,289 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-063",
+  "title": "dot-do/startups.do",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://github.com/dot-do/startups.do",
+  "canonical_url": "https://github.com/dot-do/startups.do",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "pilot",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-08T04:39:25.892Z",
+  "language": "mixed",
+  "full_text": "Uh oh!\nThere was an error while loading. Please reload this page .\ndot-do\nstartups.do\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n184 Commits\n184 Commits\n.github/ workflows\n.github/ workflows\napp\napp\ncomponents\ncomponents\ndatasets\ndatasets\nlib\nlib\npublic\npublic\nscripts\nscripts\nstartups\nstartups\ntypes\ntypes\n.eslintrc.json\n.eslintrc.json\n.gitignore\n.gitignore\nREADME.md\nREADME.md\nROADMAP.md\nROADMAP.md\nTODO.md\nTODO.md\ncomponents.json\ncomponents.json\njsrepo.json\njsrepo.json\nmiddleware.ts\nmiddleware.ts\nnext.config.ts\nnext.config.ts\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npostcss.config.mjs\npostcss.config.mjs\ntsconfig.json\ntsconfig.json\nvitest.config.ts\nvitest.config.ts\nView all files\nRepository files navigation\nStartups.do\nGenerate, evaluate, and assemble AI service companies at industrial scale— with Devin and the .do platform\nImagine Devin NOT just building software, but building real businesses defined in this repo.\nStartups.do turns Industries × Occupations into production-ready startups—complete with Functions, Workflows, Agents, and assets.\nVision — Business-as-Code: define the company in code; build & run the rest with AI.\nOutput — MDX at scale: startups/{name}.mdx sites with YAML frontmatter.\nEngine — AI workflows: research, score, design, and assemble startup artifacts.\nAutomation — Devin-ready: assign implementation to Devin via API and auto-generate the business.\nMetrics — Built-in evals: market sizing, unit economics, KPI targets per startup.\nLinks:\nSee ROADMAP: ./ROADMAP.md\nSee TODO backlog: ./TODO.md\nCore Concepts\nFunctions: Code, Generative, Agentic, Human\nWorkflows: Deterministic and AI-driven steps that compose Functions\nAgents: Orchestrate research, generation, scoring, and iteration\nBusiness-as-Code: Declarative (Vision/Mission/Purpose, OKRs) + Imperative (Workflows), combined as code\nArchitecture Overview\nFramework: Next.js (App Router)\nContent model: startups/{name}.mdx rendered at runtime using next-mdx-remote-client\nFrontmatter: YAML stores structured generated objects:\nLean Canvas\nVision/Mission/Purpose (VMV)\nObjectives and Key Results (OKRs)\nHypotheses and Experiments\nVariants\nName/Brand/Domain (including builder domains/subdomains/mcp)\nStoryBrand\nBranding (style/theme/fonts/color/logo)\nLanding pages (template/def/types/mdxui)\nStripe pricing and checkout\nPRD\nMVP scope/plan\nComponents (to be added in components/ ): Hero, Problem, Solution, Features, Steps\nIf a component or the MDX file does not exist, default props are generated from YAML frontmatter\nWorkflow\nEnumerate Occupations + NAICS codes\nResearch jobs, functions, and workflows for agentic automation\nScore feasibility:\nCan it be done remotely by a human on a laptop?\nCapability for current models\nGenerate artifacts:\nLean Canvas\nVision/Mission/Purpose\nOKRs\nHypotheses and Experiments\nVariants\nName/Brand/Domain\nStoryBrand\nBranding (style/theme/fonts/color/logo)\nLanding pages (template/def/types/mdxui)\nStripe pricing and checkout pages\nPRD\nMVP scope/plan\nAssign to Devin via Devin API to build functions/services\nCode → Functions → Workflow → Service → Business\nGenerate decks/slides\nSave outputs to YAML frontmatter; render the site from MDX\nMDX Format\nLocation: startups/{name}.mdx\nRendering: loaded at runtime via next-mdx-remote-client\nDefault export: a page composed from components (Hero/Problem/Solution/Features/Steps)\nFrontmatter: YAML schema holds all structured business artifacts\nFrontmatter Schema (excerpt)\n---\nname : Acme Auto Claims AI\nslug : acme-claims\ndomain : acmeclaims.ai\nscore :\nremote_on_laptop : 0.9\nmodel_capability : 0.8\noverall : 0.85\nvmv :\nvision : \" Zero-touch auto claims in minutes. \"\nmission : \" Automate FNOL to payout with AI and human-in-the-loop. \"\npurpose : \" Faster, fairer claim experiences. \"\nleanCanvas :\nproblem : [\"Slow claims\", \"Fraud risk\", \"Manual reviews\"]\nsolution : [\"End-to-end agentic workflow\"]\nuniqueValueProp : \" Claims in minutes, not weeks \"\nunfairAdvantage : \" Proprietary datasets + insurer integrations \"\ncustomerSegments : [\"Auto insurers\", \"TPAs\"]\nchannels : [\"Broker partnerships\", \"Direct\"]\nrevenueStreams : [\"Per-claim\", \"SaaS\"]\ncostStructure : [\"LLM\", \"Infra\", \"Integrations\"]\nkeyMetrics : [\"Time-to-payout\", \"Fraud rate\", \"CSAT\"]\nokrs :\n- objective : \" Reduce average claim cycle time \"\nkeyResults :\n- metric : \" Cycle time \"\ntarget : \" ≤ 5 minutes \"\nstoryBrand :\ncharacter : \" Claims leaders \"\nproblem : \" Backlogs and leakage \"\nguide : \" Agentic copilot \"\nplan : \" Pilot → Integrate → Scale \"\ncallToAction : \" Start a pilot \"\nsuccess : \" Minutes to payout \"\nfailure : \" Status quo delays \"\nbranding :\nnameIdeas : [\"ClaimSpark\", \"Adjustly\"]\ncolors : { primary: \"#0A84FF\", secondary: \"#111827\" }\nfonts : { heading: \"Geist\", body: \"Inter\" }\nlogoPrompt : \" Simple spark + shield logo \"\npricing :\nplans :\n- id : startup\nprice : 199\ninterval : monthly\nfeatures : [\"Up to 1k claims/mo\"]\nstripe :\nproductId : \" \"\npriceIds : {}\nprd :\nsummary : \" Automate FNOL → triage → adjudication → payout \"\nscopeMVP : [\"Intake\", \"Doc parsing\", \"Risk scoring\", \"Human review\"]\nexperiments :\n- hypothesis : \" Automated triage reduces cycle time by 50% \"\nmetric : \" Cycle time \"\nvariantCount : 3\nvariants :\n- name : \" Self-serve insurers \"\nchanges : [\"No human-in-loop\"]\n---\nComponents Contract\nHero: { title, subtitle, ctaText, ctaHref }\nProblem: { bullets[] }\nSolution: { bullets[] }\nFeatures: { items[] }\nSteps: { steps[] }\nIf a component or props are missing, defaults derive from YAML frontmatter.\nIntegrations\nMDX loading: next-mdx-remote-client\nAI generation: Vercel AI SDK ( @vercel/ai ) to generate/transform objects, persisted to frontmatter\nPayments: Stripe pricing and checkout pages\nAutomation: Devin API to build initial AI services / functions & MVP\nLocal Development\nInstall dependencies and run:\npnpm install\npnpm dev\n# build/start/lint as needed\npnpm build\npnpm start\npnpm lint\nThis is a Next.js App Router project. Start with app/page.tsx or add MDX files in startups/ and components in components/ as you implement the roadmap.\nAbout\nDo Business-as-Code and autonomously build, launch, experiment, and iterate on startups\nstartups.do\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nMDX\n98.7%\nTypeScript\n1.3%",
+  "clean_text": "Uh oh!\nThere was an error while loading. Please reload this page .\ndot-do\nstartups.do\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n184 Commits\n184 Commits\n.github/ workflows\n.github/ workflows\napp\napp\ncomponents\ncomponents\ndatasets\ndatasets\nlib\nlib\npublic\npublic\nscripts\nscripts\nstartups\nstartups\ntypes\ntypes\n.eslintrc.json\n.eslintrc.json\n.gitignore\n.gitignore\nREADME.md\nREADME.md\nROADMAP.md\nROADMAP.md\nTODO.md\nTODO.md\ncomponents.json\ncomponents.json\njsrepo.json\njsrepo.json\nmiddleware.ts\nmiddleware.ts\nnext.config.ts\nnext.config.ts\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npostcss.config.mjs\npostcss.config.mjs\ntsconfig.json\ntsconfig.json\nvitest.config.ts\nvitest.config.ts\nView all files\nRepository files navigation\nStartups.do\nGenerate, evaluate, and assemble AI service companies at industrial scale— with Devin and the .do platform\nImagine Devin NOT just building software, but building real businesses defined in this repo.\nStartups.do turns Industries × Occupations into production-ready startups—complete with Functions, Workflows, Agents, and assets.\nVision — Business-as-Code: define the company in code; build & run the rest with AI.\nOutput — MDX at scale: startups/{name}.mdx sites with YAML frontmatter.\nEngine — AI workflows: research, score, design, and assemble startup artifacts.\nAutomation — Devin-ready: assign implementation to Devin via API and auto-generate the business.\nMetrics — Built-in evals: market sizing, unit economics, KPI targets per startup.\nLinks:\nSee ROADMAP: ./ROADMAP.md\nSee TODO backlog: ./TODO.md\nCore Concepts\nFunctions: Code, Generative, Agentic, Human\nWorkflows: Deterministic and AI-driven steps that compose Functions\nAgents: Orchestrate research, generation, scoring, and iteration\nBusiness-as-Code: Declarative (Vision/Mission/Purpose, OKRs) + Imperative (Workflows), combined as code\nArchitecture Overview\nFramework: Next.js (App Router)\nContent model: startups/{name}.mdx rendered at runtime using next-mdx-remote-client\nFrontmatter: YAML stores structured generated objects:\nLean Canvas\nVision/Mission/Purpose (VMV)\nObjectives and Key Results (OKRs)\nHypotheses and Experiments\nVariants\nName/Brand/Domain (including builder domains/subdomains/mcp)\nStoryBrand\nBranding (style/theme/fonts/color/logo)\nLanding pages (template/def/types/mdxui)\nStripe pricing and checkout\nPRD\nMVP scope/plan\nComponents (to be added in components/ ): Hero, Problem, Solution, Features, Steps\nIf a component or the MDX file does not exist, default props are generated from YAML frontmatter\nWorkflow\nEnumerate Occupations + NAICS codes\nResearch jobs, functions, and workflows for agentic automation\nScore feasibility:\nCan it be done remotely by a human on a laptop?\nCapability for current models\nGenerate artifacts:\nLean Canvas\nVision/Mission/Purpose\nOKRs\nHypotheses and Experiments\nVariants\nName/Brand/Domain\nStoryBrand\nBranding (style/theme/fonts/color/logo)\nLanding pages (template/def/types/mdxui)\nStripe pricing and checkout pages\nPRD\nMVP scope/plan\nAssign to Devin via Devin API to build functions/services\nCode → Functions → Workflow → Service → Business\nGenerate decks/slides\nSave outputs to YAML frontmatter; render the site from MDX\nMDX Format\nLocation: startups/{name}.mdx\nRendering: loaded at runtime via next-mdx-remote-client\nDefault export: a page composed from components (Hero/Problem/Solution/Features/Steps)\nFrontmatter: YAML schema holds all structured business artifacts\nFrontmatter Schema (excerpt)\n---\nname : Acme Auto Claims AI\nslug : acme-claims\ndomain : acmeclaims.ai\nscore :\nremote_on_laptop : 0.9\nmodel_capability : 0.8\noverall : 0.85\nvmv :\nvision : \" Zero-touch auto claims in minutes. \"\nmission : \" Automate FNOL to payout with AI and human-in-the-loop. \"\npurpose : \" Faster, fairer claim experiences. \"\nleanCanvas :\nproblem : [\"Slow claims\", \"Fraud risk\", \"Manual reviews\"]\nsolution : [\"End-to-end agentic workflow\"]\nuniqueValueProp : \" Claims in minutes, not weeks \"\nunfairAdvantage : \" Proprietary datasets + insurer integrations \"\ncustomerSegments : [\"Auto insurers\", \"TPAs\"]\nchannels : [\"Broker partnerships\", \"Direct\"]\nrevenueStreams : [\"Per-claim\", \"SaaS\"]\ncostStructure : [\"LLM\", \"Infra\", \"Integrations\"]\nkeyMetrics : [\"Time-to-payout\", \"Fraud rate\", \"CSAT\"]\nokrs :\n- objective : \" Reduce average claim cycle time \"\nkeyResults :\n- metric : \" Cycle time \"\ntarget : \" ≤ 5 minutes \"\nstoryBrand :\ncharacter : \" Claims leaders \"\nproblem : \" Backlogs and leakage \"\nguide : \" Agentic copilot \"\nplan : \" Pilot → Integrate → Scale \"\ncallToAction : \" Start a pilot \"\nsuccess : \" Minutes to payout \"\nfailure : \" Status quo delays \"\nbranding :\nnameIdeas : [\"ClaimSpark\", \"Adjustly\"]\ncolors : { primary: \"#0A84FF\", secondary: \"#111827\" }\nfonts : { heading: \"Geist\", body: \"Inter\" }\nlogoPrompt : \" Simple spark + shield logo \"\npricing :\nplans :\n- id : startup\nprice : 199\ninterval : monthly\nfeatures : [\"Up to 1k claims/mo\"]\nstripe :\nproductId : \" \"\npriceIds : {}\nprd :\nsummary : \" Automate FNOL → triage → adjudication → payout \"\nscopeMVP : [\"Intake\", \"Doc parsing\", \"Risk scoring\", \"Human review\"]\nexperiments :\n- hypothesis : \" Automated triage reduces cycle time by 50% \"\nmetric : \" Cycle time \"\nvariantCount : 3\nvariants :\n- name : \" Self-serve insurers \"\nchanges : [\"No human-in-loop\"]\n---\nComponents Contract\nHero: { title, subtitle, ctaText, ctaHref }\nProblem: { bullets[] }\nSolution: { bullets[] }\nFeatures: { items[] }\nSteps: { steps[] }\nIf a component or props are missing, defaults derive from YAML frontmatter.\nIntegrations\nMDX loading: next-mdx-remote-client\nAI generation: Vercel AI SDK ( @vercel/ai ) to generate/transform objects, persisted to frontmatter\nPayments: Stripe pricing and checkout pages\nAutomation: Devin API to build initial AI services / functions & MVP\nLocal Development\nInstall dependencies and run:\npnpm install\npnpm dev\n# build/start/lint as needed\npnpm build\npnpm start\npnpm lint\nThis is a Next.js App Router project. Start with app/page.tsx or add MDX files in startups/ and components in components/ as you implement the roadmap.\nAbout\nDo Business-as-Code and autonomously build, launch, experiment, and iterate on startups\nstartups.do\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nMDX\n98.7%\nTypeScript\n1.3%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-08/r-063-dot-do-startups-do.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-08/r-063-dot-do-startups-do.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 6716,
+    "paragraph_count": 104,
+    "sentence_count": 26,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0082,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6716,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "4d7fca2c64c95303",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "ddc213d69361faef",
+  "content_hash": "4d7fca2c64c95303",
+  "full_text_hash": "4d7fca2c64c95303",
+  "semantic_hash": "317a79a2963cbc25",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-08T04:39:25.892Z",
+  "last_seen_at": "2026-07-08T04:39:25.892Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "# Repository: dot-do/startups.do Do Business-as-Code and autonomously build, launch, experiment, and iterate on startups - Stars: 4 - Forks: 1 - Watchers: 4 - Open issues: 117 - Primary language: MDX - Languages: MDX (98.6%), TypeScript (1.3%), CSS, JavaScript - Default branch: main - Homepage: ht..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "do Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 184 Commits 184 Commits .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows app app components components datasets datasets lib lib public public scripts scripts startups startups types types .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-08T04:39:25.892Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub"
+    ],
+    "products": [
+      "Agents",
+      "mcp",
+      "copilot"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "4",
+      "1",
+      "117",
+      "98.6%",
+      "1.3%",
+      "184",
+      "0.9\nm",
+      "0.8"
+    ],
+    "quotes": [
+      " Zero-touch auto claims in minutes. ",
+      " Automate FNOL to payout with AI and human-in-the-loop. ",
+      " Faster, fairer claim experiences. ",
+      "Slow claims",
+      "Fraud risk"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "There was an error while loading.",
+      "Please reload this page .",
+      "do Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 184 Commits 184 Commits ."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "github/ workflows .",
+      "github/ workflows app app components components datasets datasets lib lib public public scripts scripts startups startups types types ."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 4,
+    "importance_reason": "real customer or adoption case; rubric=4 concrete important change",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# dot-do/startups.do\n\n- raw_id: R-063\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://github.com/dot-do/startups.do\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-08T04:39:25.892Z\n\n## clean_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\ndot-do\nstartups.do\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n184 Commits\n184 Commits\n.github/ workflows\n.github/ workflows\napp\napp\ncomponents\ncomponents\ndatasets\ndatasets\nlib\nlib\npublic\npublic\nscripts\nscripts\nstartups\nstartups\ntypes\ntypes\n.eslintrc.json\n.eslintrc.json\n.gitignore\n.gitignore\nREADME.md\nREADME.md\nROADMAP.md\nROADMAP.md\nTODO.md\nTODO.md\ncomponents.json\ncomponents.json\njsrepo.json\njsrepo.json\nmiddleware.ts\nmiddleware.ts\nnext.config.ts\nnext.config.ts\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npostcss.config.mjs\npostcss.config.mjs\ntsconfig.json\ntsconfig.json\nvitest.config.ts\nvitest.config.ts\nView all files\nRepository files navigation\nStartups.do\nGenerate, evaluate, and assemble AI service companies at industrial scale— with Devin and the .do platform\nImagine Devin NOT just building software, but building real businesses defined in this repo.\nStartups.do turns Industries × Occupations into production-ready startups—complete with Functions, Workflows, Agents, and assets.\nVision — Business-as-Code: define the company in code; build & run the rest with AI.\nOutput — MDX at scale: startups/{name}.mdx sites with YAML frontmatter.\nEngine — AI workflows: research, score, design, and assemble startup artifacts.\nAutomation — Devin-ready: assign implementation to Devin via API and auto-generate the business.\nMetrics — Built-in evals: market sizing, unit economics, KPI targets per startup.\nLinks:\nSee ROADMAP: ./ROADMAP.md\nSee TODO backlog: ./TODO.md\nCore Concepts\nFunctions: Code, Generative, Agentic, Human\nWorkflows: Deterministic and AI-driven steps that compose Functions\nAgents: Orchestrate research, generation, scoring, and iteration\nBusiness-as-Code: Declarative (Vision/Mission/Purpose, OKRs) + Imperative (Workflows), combined as code\nArchitecture Overview\nFramework: Next.js (App Router)\nContent model: startups/{name}.mdx rendered at runtime using next-mdx-remote-client\nFrontmatter: YAML stores structured generated objects:\nLean Canvas\nVision/Mission/Purpose (VMV)\nObjectives and Key Results (OKRs)\nHypotheses and Experiments\nVariants\nName/Brand/Domain (including builder domains/subdomains/mcp)\nStoryBrand\nBranding (style/theme/fonts/color/logo)\nLanding pages (template/def/types/mdxui)\nStripe pricing and checkout\nPRD\nMVP scope/plan\nComponents (to be added in components/ ): Hero, Problem, Solution, Features, Steps\nIf a component or the MDX file does not exist, default props are generated from YAML frontmatter\nWorkflow\nEnumerate Occupations + NAICS codes\nResearch jobs, functions, and workflows for agentic automation\nScore feasibility:\nCan it be done remotely by a human on a laptop?\nCapability for current models\nGenerate artifacts:\nLean Canvas\nVision/Mission/Purpose\nOKRs\nHypotheses and Experiments\nVariants\nName/Brand/Domain\nStoryBrand\nBranding (style/theme/fonts/color/logo)\nLanding pages (template/def/types/mdxui)\nStripe pricing and checkout pages\nPRD\nMVP scope/plan\nAssign to Devin via Devin API to build functions/services\nCode → Functions → Workflow → Service → Business\nGenerate decks/slides\nSave outputs to YAML frontmatter; render the site from MDX\nMDX Format\nLocation: startups/{name}.mdx\nRendering: loaded at runtime via next-mdx-remote-client\nDefault export: a page composed from components (Hero/Problem/Solution/Features/Steps)\nFrontmatter: YAML schema holds all structured business artifacts\nFrontmatter Schema (excerpt)\n---\nname : Acme Auto Claims AI\nslug : acme-claims\ndomain : acmeclaims.ai\nscore :\nremote_on_laptop : 0.9\nmodel_capability : 0.8\noverall : 0.85\nvmv :\nvision : \" Zero-touch auto claims in minutes. \"\nmission : \" Automate FNOL to payout with AI and human-in-the-loop. \"\npurpose : \" Faster, fairer claim experiences. \"\nleanCanvas :\nproblem : [\"Slow claims\", \"Fraud risk\", \"Manual reviews\"]\nsolution : [\"End-to-end agentic workflow\"]\nuniqueValueProp : \" Claims in minutes, not weeks \"\nunfairAdvantage : \" Proprietary datasets + insurer integrations \"\ncustomerSegments : [\"Auto insurers\", \"TPAs\"]\nchannels : [\"Broker partnerships\", \"Direct\"]\nrevenueStreams : [\"Per-claim\", \"SaaS\"]\ncostStructure : [\"LLM\", \"Infra\", \"Integrations\"]\nkeyMetrics : [\"Time-to-payout\", \"Fraud rate\", \"CSAT\"]\nokrs :\n- objective : \" Reduce average claim cycle time \"\nkeyResults :\n- metric : \" Cycle time \"\ntarget : \" ≤ 5 minutes \"\nstoryBrand :\ncharacter : \" Claims leaders \"\nproblem : \" Backlogs and leakage \"\nguide : \" Agentic copilot \"\nplan : \" Pilot → Integrate → Scale \"\ncallToAction : \" Start a pilot \"\nsuccess : \" Minutes to payout \"\nfailure : \" Status quo delays \"\nbranding :\nnameIdeas : [\"ClaimSpark\", \"Adjustly\"]\ncolors : { primary: \"#0A84FF\", secondary: \"#111827\" }\nfonts : { heading: \"Geist\", body: \"Inter\" }\nlogoPrompt : \" Simple spark + shield logo \"\npricing :\nplans :\n- id : startup\nprice : 199\ninterval : monthly\nfeatures : [\"Up to 1k claims/mo\"]\nstripe :\nproductId : \" \"\npriceIds : {}\nprd :\nsummary : \" Automate FNOL → triage → adjudication → payout \"\nscopeMVP : [\"Intake\", \"Doc parsing\", \"Risk scoring\", \"Human review\"]\nexperiments :\n- hypothesis : \" Automated triage reduces cycle time by 50% \"\nmetric : \" Cycle time \"\nvariantCount : 3\nvariants :\n- name : \" Self-serve insurers \"\nchanges : [\"No human-in-loop\"]\n---\nComponents Contract\nHero: { title, subtitle, ctaText, ctaHref }\nProblem: { bullets[] }\nSolution: { bullets[] }\nFeatures: { items[] }\nSteps: { steps[] }\nIf a component or props are missing, defaults derive from YAML frontmatter.\nIntegrations\nMDX loading: next-mdx-remote-client\nAI generation: Vercel AI SDK ( @vercel/ai ) to generate/transform objects, persisted to frontmatter\nPayments: Stripe pricing and checkout pages\nAutomation: Devin API to build initial AI services / functions & MVP\nLocal Development\nInstall dependencies and run:\npnpm install\npnpm dev\n# build/start/lint as needed\npnpm build\npnpm start\npnpm lint\nThis is a Next.js App Router project. Start with app/page.tsx or add MDX files in startups/ and components in components/ as you implement the roadmap.\nAbout\nDo Business-as-Code and autonomously build, launch, experiment, and iterate on startups\nstartups.do\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nMDX\n98.7%\nTypeScript\n1.3%\n\n## full_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\ndot-do\nstartups.do\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n184 Commits\n184 Commits\n.github/ workflows\n.github/ workflows\napp\napp\ncomponents\ncomponents\ndatasets\ndatasets\nlib\nlib\npublic\npublic\nscripts\nscripts\nstartups\nstartups\ntypes\ntypes\n.eslintrc.json\n.eslintrc.json\n.gitignore\n.gitignore\nREADME.md\nREADME.md\nROADMAP.md\nROADMAP.md\nTODO.md\nTODO.md\ncomponents.json\ncomponents.json\njsrepo.json\njsrepo.json\nmiddleware.ts\nmiddleware.ts\nnext.config.ts\nnext.config.ts\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npostcss.config.mjs\npostcss.config.mjs\ntsconfig.json\ntsconfig.json\nvitest.config.ts\nvitest.config.ts\nView all files\nRepository files navigation\nStartups.do\nGenerate, evaluate, and assemble AI service companies at industrial scale— with Devin and the .do platform\nImagine Devin NOT just building software, but building real businesses defined in this repo.\nStartups.do turns Industries × Occupations into production-ready startups—complete with Functions, Workflows, Agents, and assets.\nVision — Business-as-Code: define the company in code; build & run the rest with AI.\nOutput — MDX at scale: startups/{name}.mdx sites with YAML frontmatter.\nEngine — AI workflows: research, score, design, and assemble startup artifacts.\nAutomation — Devin-ready: assign implementation to Devin via API and auto-generate the business.\nMetrics — Built-in evals: market sizing, unit economics, KPI targets per startup.\nLinks:\nSee ROADMAP: ./ROADMAP.md\nSee TODO backlog: ./TODO.md\nCore Concepts\nFunctions: Code, Generative, Agentic, Human\nWorkflows: Deterministic and AI-driven steps that compose Functions\nAgents: Orchestrate research, generation, scoring, and iteration\nBusiness-as-Code: Declarative (Vision/Mission/Purpose, OKRs) + Imperative (Workflows), combined as code\nArchitecture Overview\nFramework: Next.js (App Router)\nContent model: startups/{name}.mdx rendered at runtime using next-mdx-remote-client\nFrontmatter: YAML stores structured generated objects:\nLean Canvas\nVision/Mission/Purpose (VMV)\nObjectives and Key Results (OKRs)\nHypotheses and Experiments\nVariants\nName/Brand/Domain (including builder domains/subdomains/mcp)\nStoryBrand\nBranding (style/theme/fonts/color/logo)\nLanding pages (template/def/types/mdxui)\nStripe pricing and checkout\nPRD\nMVP scope/plan\nComponents (to be added in components/ ): Hero, Problem, Solution, Features, Steps\nIf a component or the MDX file does not exist, default props are generated from YAML frontmatter\nWorkflow\nEnumerate Occupations + NAICS codes\nResearch jobs, functions, and workflows for agentic automation\nScore feasibility:\nCan it be done remotely by a human on a laptop?\nCapability for current models\nGenerate artifacts:\nLean Canvas\nVision/Mission/Purpose\nOKRs\nHypotheses and Experiments\nVariants\nName/Brand/Domain\nStoryBrand\nBranding (style/theme/fonts/color/logo)\nLanding pages (template/def/types/mdxui)\nStripe pricing and checkout pages\nPRD\nMVP scope/plan\nAssign to Devin via Devin API to build functions/services\nCode → Functions → Workflow → Service → Business\nGenerate decks/slides\nSave outputs to YAML frontmatter; render the site from MDX\nMDX Format\nLocation: startups/{name}.mdx\nRendering: loaded at runtime via next-mdx-remote-client\nDefault export: a page composed from components (Hero/Problem/Solution/Features/Steps)\nFrontmatter: YAML schema holds all structured business artifacts\nFrontmatter Schema (excerpt)\n---\nname : Acme Auto Claims AI\nslug : acme-claims\ndomain : acmeclaims.ai\nscore :\nremote_on_laptop : 0.9\nmodel_capability : 0.8\noverall : 0.85\nvmv :\nvision : \" Zero-touch auto claims in minutes. \"\nmission : \" Automate FNOL to payout with AI and human-in-the-loop. \"\npurpose : \" Faster, fairer claim experiences. \"\nleanCanvas :\nproblem : [\"Slow claims\", \"Fraud risk\", \"Manual reviews\"]\nsolution : [\"End-to-end agentic workflow\"]\nuniqueValueProp : \" Claims in minutes, not weeks \"\nunfairAdvantage : \" Proprietary datasets + insurer integrations \"\ncustomerSegments : [\"Auto insurers\", \"TPAs\"]\nchannels : [\"Broker partnerships\", \"Direct\"]\nrevenueStreams : [\"Per-claim\", \"SaaS\"]\ncostStructure : [\"LLM\", \"Infra\", \"Integrations\"]\nkeyMetrics : [\"Time-to-payout\", \"Fraud rate\", \"CSAT\"]\nokrs :\n- objective : \" Reduce average claim cycle time \"\nkeyResults :\n- metric : \" Cycle time \"\ntarget : \" ≤ 5 minutes \"\nstoryBrand :\ncharacter : \" Claims leaders \"\nproblem : \" Backlogs and leakage \"\nguide : \" Agentic copilot \"\nplan : \" Pilot → Integrate → Scale \"\ncallToAction : \" Start a pilot \"\nsuccess : \" Minutes to payout \"\nfailure : \" Status quo delays \"\nbranding :\nnameIdeas : [\"ClaimSpark\", \"Adjustly\"]\ncolors : { primary: \"#0A84FF\", secondary: \"#111827\" }\nfonts : { heading: \"Geist\", body: \"Inter\" }\nlogoPrompt : \" Simple spark + shield logo \"\npricing :\nplans :\n- id : startup\nprice : 199\ninterval : monthly\nfeatures : [\"Up to 1k claims/mo\"]\nstripe :\nproductId : \" \"\npriceIds : {}\nprd :\nsummary : \" Automate FNOL → triage → adjudication → payout \"\nscopeMVP : [\"Intake\", \"Doc parsing\", \"Risk scoring\", \"Human review\"]\nexperiments :\n- hypothesis : \" Automated triage reduces cycle time by 50% \"\nmetric : \" Cycle time \"\nvariantCount : 3\nvariants :\n- name : \" Self-serve insurers \"\nchanges : [\"No human-in-loop\"]\n---\nComponents Contract\nHero: { title, subtitle, ctaText, ctaHref }\nProblem: { bullets[] }\nSolution: { bullets[] }\nFeatures: { items[] }\nSteps: { steps[] }\nIf a component or props are missing, defaults derive from YAML frontmatter.\nIntegrations\nMDX loading: next-mdx-remote-client\nAI generation: Vercel AI SDK ( @vercel/ai ) to generate/transform objects, persisted to frontmatter\nPayments: Stripe pricing and checkout pages\nAutomation: Devin API to build initial AI services / functions & MVP\nLocal Development\nInstall dependencies and run:\npnpm install\npnpm dev\n# build/start/lint as needed\npnpm build\npnpm start\npnpm lint\nThis is a Next.js App Router project. Start with app/page.tsx or add MDX files in startups/ and components in components/ as you implement the roadmap.\nAbout\nDo Business-as-Code and autonomously build, launch, experiment, and iterate on startups\nstartups.do\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nMDX\n98.7%\nTypeScript\n1.3%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] # Repository: dot-do/startups.do Do Business-as-Code and autonomously build, launch, experiment, and iterate on startups - Stars: 4 - Forks: 1 - Watchers: 4 - Open issues: 117 - Primary language: MDX - Languages: MDX (98.6%), TypeScript (1.3%), CSS, JavaScript - Default branch: main - Homepage: ht..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] There was an error while loading.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Please reload this page .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] do Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 184 Commits 184 Commits .\n5. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] github/ workflows .\n6. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] github/ workflows app app components components datasets datasets lib lib public public scripts scripts startups startups types types .\n"
+}

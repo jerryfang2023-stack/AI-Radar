@@ -1,13 +1,271 @@
 {
   "meta": {
     "version": "EAI-V1.2.0-raw-card-ingestion-boundary",
-    "generatedAt": "2026-07-07T03:24:07.053Z",
-    "activeDate": "2026-07-07",
+    "generatedAt": "2026-07-08T04:56:41.671Z",
+    "activeDate": "2026-07-08",
     "source": "01-SiteV2/site/data/v3-data-observation-desk.json",
-    "fdePoolCount": 0,
-    "itemCount": 0,
+    "fdePoolCount": 1,
+    "itemCount": 1,
     "boundary": "FDE is an Enterprise AI lens pool, not a fourth Business Signals Card type."
   },
-  "fdePool": [],
-  "items": []
+  "fdePool": [
+    {
+      "id": "FDE-2026-07-08-P-053",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "ZEISS Case Study: Document Extraction with Dapr Agents",
+      "originalTitle": "ZEISS Case Study: Document Extraction with Dapr Agents | Diagrid",
+      "date": "2026-07-08",
+      "subject": "ZEISS",
+      "source": "diagrid.io",
+      "sourceName": "diagrid.io",
+      "sourceUrl": "https://www.diagrid.io/case-studies/zeiss-vision-document-extraction",
+      "sourceLevel": "B",
+      "evidenceStrength": "rich_evidence",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "watchlist"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "ZEISS Case Study: Document Extraction with Dapr Agents ZEISS Case Study: Document Extraction with Dapr Agents | Diagrid 原文称，But raw model capability wasn't enough to ship to production.",
+        "missingFields": [
+          "product_form",
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            },
+            {
+              "id": "healthcare_provider",
+              "label": "Hospital, clinic, payer, or healthcare operator"
+            },
+            {
+              "id": "sales_team",
+              "label": "Sales or revenue team"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "healthcare_operations",
+              "label": "Healthcare operations"
+            },
+            {
+              "id": "sales",
+              "label": "Sales / revenue operations"
+            }
+          ],
+          "specific_task": [
+            {
+              "id": "medical_documentation",
+              "label": "Clinical documentation, imaging, or healthcare workflow"
+            },
+            {
+              "id": "sales_lead_research",
+              "label": "Lead research, account research, or pipeline enrichment"
+            }
+          ],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            }
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "pain_or_constraint": [
+            {
+              "id": "context_management",
+              "label": "Context, memory, or state management"
+            },
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "case_study",
+              "label": "Case study, customer story, or deployment write-up"
+            },
+            {
+              "id": "third_party_report",
+              "label": "Third-party report, industry report, or analyst evidence"
+            }
+          ],
+          "source_evidence_type": [
+            {
+              "id": "first_party_case",
+              "label": "First-party case study or customer story"
+            }
+          ]
+        },
+        "buyer_or_user": [
+          "enterprise_ai_owner",
+          "healthcare_provider",
+          "sales_team"
+        ],
+        "buyerOrUser": [
+          "enterprise_ai_owner",
+          "healthcare_provider",
+          "sales_team"
+        ],
+        "team_or_function": [
+          "healthcare_operations",
+          "sales"
+        ],
+        "teamOrFunction": [
+          "healthcare_operations",
+          "sales"
+        ],
+        "specific_task": [
+          "medical_documentation",
+          "sales_lead_research"
+        ],
+        "specificTask": [
+          "medical_documentation",
+          "sales_lead_research"
+        ],
+        "business_action": [
+          "customer_deployment"
+        ],
+        "businessAction": [
+          "customer_deployment"
+        ],
+        "product_form": [],
+        "productForm": [],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [
+          "context_management",
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "context_management",
+          "workflow_integration"
+        ],
+        "adoption_evidence": [
+          "case_study",
+          "third_party_report"
+        ],
+        "adoptionEvidence": [
+          "case_study",
+          "third_party_report"
+        ],
+        "source_evidence_type": [
+          "first_party_case"
+        ],
+        "sourceEvidenceType": [
+          "first_party_case"
+        ]
+      },
+      "summary": "diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "translatedFact": "diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "originalHighlights": [],
+      "visibleFragment": "diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "sourceLinks": [
+        "https://www.diagrid.io/case-studies/zeiss-vision-document-extraction"
+      ],
+      "sourceTitle": "ZEISS Case Study: Document Extraction with Dapr Agents | Diagrid",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-ai-agent",
+      "generatedTitle": "ZEISS Case Study: Document Extraction with Dapr Agents",
+      "displayTitle": "ZEISS Case Study: Document Extraction with Dapr Agents",
+      "largeVendor": false,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "linkedCardId": "SIG-20260708-A01",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-053",
+      "titleZh": "",
+      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "factExtractionStatus": "missing_fde_lens_fact",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "发现的需求是企业采购、供应商选择和合规校验流程需要自动化，减少人工检索、比价、审批和合同处理中的摩擦。",
+        "services": "提供的服务是面向采购流程自动化与合规校验的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
+        "sourceBasis": "diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "enterprise-ai:SIG-20260708-A01",
+      "cardId": "SIG-20260708-A01",
+      "date": "2026-07-08",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "ZEISS Case Study: Document Extraction with Dapr Agents",
+      "subject": "ZEISS",
+      "sourceName": "diagrid.io",
+      "sourceUrl": "https://www.diagrid.io/case-studies/zeiss-vision-document-extraction",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "采购与供应链",
+      "workflow": "采购流程自动化与合规校验",
+      "evidenceBoundary": "已确认：diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "发现的需求是企业采购、供应商选择和合规校验流程需要自动化，减少人工检索、比价、审批和合同处理中的摩擦。",
+        "services": "提供的服务是面向采购流程自动化与合规校验的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
+        "sourceBasis": "diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。"
+      }
+    }
+  ]
 }

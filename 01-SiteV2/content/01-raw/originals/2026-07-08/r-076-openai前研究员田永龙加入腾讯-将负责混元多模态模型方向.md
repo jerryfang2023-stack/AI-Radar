@@ -1,0 +1,359 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-076
+title: "OpenAI前研究员田永龙加入腾讯，将负责混元多模态模型方向"
+title_zh: "OpenAI前研究员田永龙加入腾讯，将负责混元多模态模型方向"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/973/892.htm"
+canonical_url: "https://ithome.com/0/973/892.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-08T02:57:08.000Z"
+collected_at: 2026-07-08T04:39:26.026Z
+language: mixed
+full_text_hash: 3a2d04432a066c43
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-076-openai前研究员田永龙加入腾讯-将负责混元多模态模型方向.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-076-openai前研究员田永龙加入腾讯-将负责混元多模态模型方向.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: medium
+extraction_method: "body-visible-text"
+readability_score: 58
+extractor_diagnostics: {"readability_score":58,"text_length":2435,"paragraph_count":21,"sentence_count":12,"boilerplate_hits":3,"symbol_ratio":0.0008,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 2435
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3a2d04432a066c43","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI前研究员田永龙加入腾讯，将负责混元多模态模型方向","discovery_summary":"OpenAI前研究员田永龙（Yonglong Tian）已于近期加入腾讯，据称将出任混元多模态模型方向负责人，参与VLM研发。他本科毕业于清华，港中文硕士师从汤晓鸥和王晓刚，MIT博士师从Phillip Isola，2022年毕业。曾任职于Google Research、Google DeepMind、OpenAI。代表作包括有监督对比学习和自回归文本到图像生成模型Fluid 10.5B。其Google Scholar引用数达28，778次，h-index为35，2026年引用3，436次。这是继姚顺雨之后又一位从OpenAI核心团队转投腾讯混元的研究员。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/973/892.htm","discovered_at":"2026-07-08T04:23:58.329Z","rank_on_page":42,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: fa9543e2fa02a45e
+content_hash: 3a2d04432a066c43
+semantic_hash: c1aedeb8bd48610d
+duplicate_of: ""
+first_seen_at: "2026-07-08T02:57:08.000Z"
+last_seen_at: 2026-07-08T04:39:26.026Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","OpenAI","Anthropic","Google"],"products":["ChatGPT"],"people":[],"industries":["法律 / 法务","企业服务"],"roles":["CIO / IT 负责人"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["IT / 安全","法务"],"numbers":["2022","10.5B","28","778次","35","2026","3","436次"],"quotes":["CEO / 总裁办公室","虚拟团队、资源分散"]}
+evidence_seed: {"company_actions":["IT之家 7 月 8 日消息，据雷峰网昨日报道，OpenAI 前研究员 Yonglong Tian（田永龙）已于近期加入腾讯。","若顺利成行，这将是继姚顺雨之后，又一位从 OpenAI 核心研究团队转投腾讯混元的研究人员。","田永龙与姚顺雨的渊源可追溯至 OpenAI 共事时期。"],"case_details":["姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人 2026/7/8 10:57:08 来源： IT之家 作者： 问舟 责编： 问舟 评论： 感谢IT之家网友 Skyraver 的线索投递！"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"opinion","text":"OpenAI前研究员田永龙（Yonglong Tian）已于近期加入腾讯，据称将出任混元多模态模型方向负责人，参与VLM研发。他本科毕业于清华，港中文硕士师从汤晓鸥和王晓刚，MIT博士师从Phillip Isola，2022年毕业。曾任职于Google Research、Google DeepMind、OpenAI。代表作包括有监督对比学习和自回归文本到图像生成模型Fluid 10.5B。其Google Scholar引用数达28，778次，h-index为35，2026年引用3，436次。这是继姚顺雨之后又一位从OpenAI核心团队转投腾讯混元的研究员。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人 2026/7/8 10:57:08 来源： IT之家 作者： 问舟 责编： 问舟 评论： 感谢IT之家网友 Skyraver 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 8 日消息，据雷峰网昨日报道，OpenAI 前研究员 Yonglong Tian（田永龙）已于近期加入腾讯。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"据称，田永龙将成为腾讯混元多模态模型方向的负责人，其后续或将参与 VLM（视觉语言模型）相关研发。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"若顺利成行，这将是继姚顺雨之后，又一位从 OpenAI 核心研究团队转投腾讯混元的研究人员。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"田永龙与姚顺雨的渊源可追溯至 OpenAI 共事时期。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-08T04:39:26.026Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# OpenAI前研究员田永龙加入腾讯，将负责混元多模态模型方向
+
+## clean_text
+
+姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > IT资讯 > 人物
+姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人
+2026/7/8 10:57:08
+来源： IT之家
+作者： 问舟
+责编： 问舟
+评论：
+感谢IT之家网友 Skyraver 的线索投递！
+IT之家 7 月 8 日消息，据雷峰网昨日报道，OpenAI 前研究员 Yonglong Tian（田永龙）已于近期加入腾讯。
+据称，田永龙将成为腾讯混元多模态模型方向的负责人，其后续或将参与 VLM（视觉语言模型）相关研发。不过，这笔人事变动尚未最终落定。若顺利成行，这将是继姚顺雨之后，又一位从 OpenAI 核心研究团队转投腾讯混元的研究人员。
+田永龙与姚顺雨的渊源可追溯至 OpenAI 共事时期。2025 年 9 月，28 岁的姚顺雨从 OpenAI 离职，加入腾讯担任“CEO / 总裁办公室”首席 AI 科学家，直接向总裁刘炽平汇报。在 OpenAI 期间，田永龙与姚顺雨在同一时期效力于研究团队，亲历了 GPT 系列与多模态技术的快速迭代。
+田永龙的学术履历遵循了中国计算机视觉领域顶尖人才的典型路径。他本科毕业于清华大学，随后在香港中文大学获得研究硕士学位，师从计算机视觉领域知名学者汤晓鸥和王晓刚。在港中文 MMLab 期间，他打下了视觉识别与深度学习的基础。之后，他进入麻省理工学院 EECS 系，在生成模型领域学者 Phillip Isola 指导下攻读博士学位，于 2022 年毕业。在 MIT 期间，他的研究重心逐渐从传统视觉识别转向生成模型和表征学习。其 Google Scholar 引用数已达 28,778 次，h-index 为 35，仅 2026 年就有 3,436 次引用。
+博士毕业后，田永龙于 2022 年底加入位于剑桥的 Google Research 担任高级研究科学家，随后于 2024 年 5 月转入 Google DeepMind。IT之家注意到，在 DeepMind 期间，他专注于视觉感知与生成的基础研究。此后，他转投 OpenAI 担任 Member of Technical Staff，研究方向聚焦于计算机视觉、视觉表征学习以及生成式模型。
+田永龙在学术界最具影响力的工作之一是 Supervised Contrastive Learning（有监督对比学习）。该研究将对比学习框架推广到监督场景，通过将同类样本在表示空间中聚集，显著提升了视觉表示的质量，影响了 SimCLR、MoCo 等后续视觉预训练模型的设计思路。
+2024 年 10 月，他发表了关于自回归文本到图像生成模型规模化的研究 Fluid。该研究发现，在视觉领域使用连续 token 而非离散 token 的自回归模型在视觉质量上显著更优，同时随机生成顺序相比固定光栅顺序能获得更好效果。团队基于这些发现训练了 Fluid 10.5B 模型。
+此外，他还参与了 Autoregressive Image Generation without Vector Quantization（与何恺明、Tianhong Li 合作）、Learning Vision from Models Rivals Learning Vision from Data（CVPR 2024）以及 Scaling Laws of Synthetic Images for Model Training（CVPR 2024）等研究工作。
+田永龙的加入，是腾讯混元多模态团队近一年来一系列人事调整的最新一环。2024 年底，原负责多模态统筹的腾讯混元大模型技术负责人之一刘威从腾讯离职，创办公司主攻视频生成。刘威离职后，多模态方向一度由腾讯副总裁蒋杰直接负责。
+2025 年 4 月，腾讯在技术工程事业群（TEG）体系内正式成立大语言模型部与多模态模型部，试图从组织架构上解决此前“虚拟团队、资源分散”的问题。此后，腾讯在多模态方向持续引入人才：2025 年初，前微软亚洲研究院视觉计算组首席研究员胡瀚加入腾讯，负责多模态大模型研发；2025 年 7 月，原阿里通义实验室应用视觉团队负责人薄列峰加入混元团队；2026 年 1 月，清华大学计算机系博士庞天宇加盟，负责多模态强化学习前沿算法探索。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 腾讯混元 ， 田永龙 ， OpenAI ， 姚顺雨
+减少对外依赖：微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic
+成本优势显著，中国 AI 大模型正逐渐获得美国企业青睐
+微信 AI 小程序成长计划加码：再叠 10 亿 Token 免费额度，AI 生图从 1 万张提升至 10 万张
+研究员发现 ChatGPT 暗藏漏洞，可通过提示词注入绕过文件访问限制
+腾讯元宝接入混元 Hy3 模型，支持免费做文件
+腾讯发布并开源混元 Hy3 模型，宣称效果比肩国内外更大尺寸旗舰模型
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## full_text
+
+姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > IT资讯 > 人物
+姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人
+2026/7/8 10:57:08
+来源： IT之家
+作者： 问舟
+责编： 问舟
+评论：
+感谢IT之家网友 Skyraver 的线索投递！
+IT之家 7 月 8 日消息，据雷峰网昨日报道，OpenAI 前研究员 Yonglong Tian（田永龙）已于近期加入腾讯。
+据称，田永龙将成为腾讯混元多模态模型方向的负责人，其后续或将参与 VLM（视觉语言模型）相关研发。不过，这笔人事变动尚未最终落定。若顺利成行，这将是继姚顺雨之后，又一位从 OpenAI 核心研究团队转投腾讯混元的研究人员。
+田永龙与姚顺雨的渊源可追溯至 OpenAI 共事时期。2025 年 9 月，28 岁的姚顺雨从 OpenAI 离职，加入腾讯担任“CEO / 总裁办公室”首席 AI 科学家，直接向总裁刘炽平汇报。在 OpenAI 期间，田永龙与姚顺雨在同一时期效力于研究团队，亲历了 GPT 系列与多模态技术的快速迭代。
+田永龙的学术履历遵循了中国计算机视觉领域顶尖人才的典型路径。他本科毕业于清华大学，随后在香港中文大学获得研究硕士学位，师从计算机视觉领域知名学者汤晓鸥和王晓刚。在港中文 MMLab 期间，他打下了视觉识别与深度学习的基础。之后，他进入麻省理工学院 EECS 系，在生成模型领域学者 Phillip Isola 指导下攻读博士学位，于 2022 年毕业。在 MIT 期间，他的研究重心逐渐从传统视觉识别转向生成模型和表征学习。其 Google Scholar 引用数已达 28,778 次，h-index 为 35，仅 2026 年就有 3,436 次引用。
+博士毕业后，田永龙于 2022 年底加入位于剑桥的 Google Research 担任高级研究科学家，随后于 2024 年 5 月转入 Google DeepMind。IT之家注意到，在 DeepMind 期间，他专注于视觉感知与生成的基础研究。此后，他转投 OpenAI 担任 Member of Technical Staff，研究方向聚焦于计算机视觉、视觉表征学习以及生成式模型。
+田永龙在学术界最具影响力的工作之一是 Supervised Contrastive Learning（有监督对比学习）。该研究将对比学习框架推广到监督场景，通过将同类样本在表示空间中聚集，显著提升了视觉表示的质量，影响了 SimCLR、MoCo 等后续视觉预训练模型的设计思路。
+2024 年 10 月，他发表了关于自回归文本到图像生成模型规模化的研究 Fluid。该研究发现，在视觉领域使用连续 token 而非离散 token 的自回归模型在视觉质量上显著更优，同时随机生成顺序相比固定光栅顺序能获得更好效果。团队基于这些发现训练了 Fluid 10.5B 模型。
+此外，他还参与了 Autoregressive Image Generation without Vector Quantization（与何恺明、Tianhong Li 合作）、Learning Vision from Models Rivals Learning Vision from Data（CVPR 2024）以及 Scaling Laws of Synthetic Images for Model Training（CVPR 2024）等研究工作。
+田永龙的加入，是腾讯混元多模态团队近一年来一系列人事调整的最新一环。2024 年底，原负责多模态统筹的腾讯混元大模型技术负责人之一刘威从腾讯离职，创办公司主攻视频生成。刘威离职后，多模态方向一度由腾讯副总裁蒋杰直接负责。
+2025 年 4 月，腾讯在技术工程事业群（TEG）体系内正式成立大语言模型部与多模态模型部，试图从组织架构上解决此前“虚拟团队、资源分散”的问题。此后，腾讯在多模态方向持续引入人才：2025 年初，前微软亚洲研究院视觉计算组首席研究员胡瀚加入腾讯，负责多模态大模型研发；2025 年 7 月，原阿里通义实验室应用视觉团队负责人薄列峰加入混元团队；2026 年 1 月，清华大学计算机系博士庞天宇加盟，负责多模态强化学习前沿算法探索。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 腾讯混元 ， 田永龙 ， OpenAI ， 姚顺雨
+减少对外依赖：微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic
+成本优势显著，中国 AI 大模型正逐渐获得美国企业青睐
+微信 AI 小程序成长计划加码：再叠 10 亿 Token 免费额度，AI 生图从 1 万张提升至 10 万张
+研究员发现 ChatGPT 暗藏漏洞，可通过提示词注入绕过文件访问限制
+腾讯元宝接入混元 Hy3 模型，支持免费做文件
+腾讯发布并开源混元 Hy3 模型，宣称效果比肩国内外更大尺寸旗舰模型
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 58
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- diagnostics: {"readability_score":58,"text_length":2435,"paragraph_count":21,"sentence_count":12,"boilerplate_hits":3,"symbol_ratio":0.0008,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   OpenAI前研究员田永龙（Yonglong Tian）已于近期加入腾讯，据称将出任混元多模态模型方向负责人，参与VLM研发。他本科毕业于清华，港中文硕士师从汤晓鸥和王晓刚，MIT博士师从Phillip Isola，2022年毕业。曾任职于Google Research、Google DeepMind、OpenAI。代表作包括有监督对比学习和自回归文本到图像生成模型Fluid 10.5B。其Google Scholar引用数达28，778次，h-index为35，2026年引用3，436次。这是继姚顺雨之后又一位从OpenAI核心团队转投腾讯混元的研究员。
+
+2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人 2026/7/8 10:57:08 来源： IT之家 作者： 问舟 责编： 问舟 评论： 感谢IT之家网友 Skyraver 的线索投递！
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家 7 月 8 日消息，据雷峰网昨日报道，OpenAI 前研究员 Yonglong Tian（田永龙）已于近期加入腾讯。
+
+4. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   据称，田永龙将成为腾讯混元多模态模型方向的负责人，其后续或将参与 VLM（视觉语言模型）相关研发。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   若顺利成行，这将是继姚顺雨之后，又一位从 OpenAI 核心研究团队转投腾讯混元的研究人员。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   田永龙与姚顺雨的渊源可追溯至 OpenAI 共事时期。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI, Anthropic, Google
+- products: ChatGPT
+- people: 暂无公开信息
+- industries: 法律 / 法务, 企业服务
+- roles: CIO / IT 负责人
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: IT / 安全, 法务
+- numbers: 2022, 10.5B, 28, 778次, 35, 2026, 3, 436次
+- quotes: CEO / 总裁办公室 / 虚拟团队、资源分散
+
+## evidence_seed
+
+- company_actions: IT之家 7 月 8 日消息，据雷峰网昨日报道，OpenAI 前研究员 Yonglong Tian（田永龙）已于近期加入腾讯。 / 若顺利成行，这将是继姚顺雨之后，又一位从 OpenAI 核心研究团队转投腾讯混元的研究人员。 / 田永龙与姚顺雨的渊源可追溯至 OpenAI 共事时期。
+- case_details: 姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人 2026/7/8 10:57:08 来源： IT之家 作者： 问舟 责编： 问舟 评论： 感谢IT之家网友 Skyraver 的线索投递！
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI前研究员田永龙加入腾讯，将负责混元多模态模型方向","discovery_summary":"OpenAI前研究员田永龙（Yonglong Tian）已于近期加入腾讯，据称将出任混元多模态模型方向负责人，参与VLM研发。他本科毕业于清华，港中文硕士师从汤晓鸥和王晓刚，MIT博士师从Phillip Isola，2022年毕业。曾任职于Google Research、Google DeepMind、OpenAI。代表作包括有监督对比学习和自回归文本到图像生成模型Fluid 10.5B。其Google Scholar引用数达28，778次，h-index为35，2026年引用3，436次。这是继姚顺雨之后又一位从OpenAI核心团队转投腾讯混元的研究员。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/973/892.htm","discovered_at":"2026-07-08T04:23:58.329Z","rank_on_page":42,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenAI前研究员田永龙（Yonglong Tian）已于近期加入腾讯，据称将出任混元多模态模型方向负责人，参与VLM研发。他本科毕业于清华，港中文硕士师从汤晓鸥和王晓刚，MIT博士师从Phillip Isola，2022年毕业。曾任职于Google Research、Google DeepMind、OpenAI。代表作包括有监督对比学习和自回归文本到图像生成模型Fluid 10.5B。其Google Scholar引用数达28，778次，h-index为35，2026年引用3，436次。这是继姚顺雨之后又一位从OpenAI核心团队转投腾讯混元的研究员。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

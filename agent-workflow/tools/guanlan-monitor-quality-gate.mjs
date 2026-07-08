@@ -89,7 +89,7 @@ function parseFailedSources(text = "") {
 }
 
 function isDiagnosticSourceNote(value = "") {
-  return /pre-gate filtered|targeted pool\/core refill cycle \d+ added|(?:noise_term|missing_ai_anchor_in_result|job_or_salary_page):?[^=]*=\d+|(?:routed_pool|core_pool|core_non_large)=\d+\/\d+/iu.test(String(value || ""));
+  return /pre-gate filtered|targeted (?:pool\/core|raw-volume) refill cycle \d+ added|Historical Raw dedupe removed|Search cross-entry dedupe removed|(?:noise_term|missing_ai_anchor_in_result|job_or_salary_page|broad_list_or_market_report|directory_or_search_page|social_or_profile_source):?[^=]*=\d+|(?:raw_count|routed_pool|core_pool|core_non_large)=\d+\/\d+/iu.test(String(value || ""));
 }
 
 function splitSourceFailureRecovery(items = [], fallbackRecovered = false) {
@@ -409,6 +409,16 @@ export function runGuanlanMonitorQualityGate({
   const indexOnlyPoolCount = poolItems.filter((item) => item.routes.includes("index_only")).length;
   const aihotIndexOnlyCount = poolItems.filter((item) => item.acquisitionChannel === "aihot" && item.routes.includes("index_only")).length;
   const aihotCoreCount = poolItems.filter((item) => item.acquisitionChannel === "aihot" && item.routes.includes("core_pool")).length;
+  const aihotResolvedEvidenceItems = poolItems.filter((item) =>
+    item.acquisitionChannel === "aihot" &&
+    item.originFetchStatus === "success" &&
+    item.hasFullText &&
+    ["high", "medium"].includes(String(item.extractionQuality || "").toLowerCase()) &&
+    item.evidenceObjectUsable &&
+    item.rawQcDecision === "allow"
+  );
+  const aihotResolvedEvidenceCount = aihotResolvedEvidenceItems.length;
+  const aihotResolvedCoreCount = aihotResolvedEvidenceItems.filter((item) => item.routes.includes("core_pool")).length;
   const corePoolItems = poolItems.filter((item) => item.routes.includes("core_pool"));
   const coreEvidenceStrengthDistribution = corePoolItems.reduce((acc, item) => {
     const tier = normalizeEvidenceStrength(item.evidenceStrength);
@@ -708,6 +718,8 @@ export function runGuanlanMonitorQualityGate({
     `- core_non_large_vendor_min_effective: ${effectiveCoreNonLargeVendorMin}`,
     `- core_non_large_vendor_min_default: ${coreNonLargeVendorMin}`,
     `- core_large_vendor_ratio: ${coreLargeVendorRatio.toFixed(3)}`,
+    `- aihot_resolved_evidence_count: ${aihotResolvedEvidenceCount}`,
+    `- aihot_resolved_core_count: ${aihotResolvedCoreCount}`,
     `- importance_coverage_gaps: ${importanceCoverageValue}`,
     `- pool_importance_coverage_gaps: ${poolImportanceCoverageValue}`,
     `- recovered_failed_sources_count: ${recoveredFailedSources.length}`,
@@ -797,6 +809,8 @@ export function runGuanlanMonitorQualityGate({
       core_large_vendor_count: coreLargeVendorCount,
       core_non_large_vendor_count: coreNonLargeVendorCount,
       core_large_vendor_ratio: coreLargeVendorRatio,
+      aihot_resolved_evidence_count: aihotResolvedEvidenceCount,
+      aihot_resolved_core_count: aihotResolvedCoreCount,
       failed_sources_count: failedSources.length,
       recovered_failed_sources_count: recoveredFailedSources.length,
       unrecovered_failed_sources_count: unrecoveredFailedSources.length,

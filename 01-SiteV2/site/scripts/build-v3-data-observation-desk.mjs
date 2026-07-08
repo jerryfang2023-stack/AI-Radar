@@ -613,6 +613,7 @@ function isGenericFundingOrListSource(card = {}) {
 }
 
 function isPublicBusinessSignalEligible(card = {}) {
+  if (card.type === "signal_card" && card.status === "published") return true;
   if (isSocialOrCommunitySourceUrl(card.sourceUrl)) return false;
   if (isRepositoryOrCatalogSourceUrl(card.sourceUrl)) return false;
   if (isGenericFundingOrListSource(card)) return false;
@@ -1166,6 +1167,12 @@ function publicDisplayTitleIsReady(title = "") {
 
 function publicSignalCardIsDisplayReady(card = {}) {
   if (!card.title || !card.displayTitle) return false;
+  if (card.type === "signal_card" && card.status === "published" && card.sourceUrl) {
+    return !/\b(?:AI business signal|Artificialintelligence-News|Ltd\.)\b/iu.test(card.title)
+      && !/\b(?:AI business signal|Artificialintelligence-News|Ltd\.)\b/iu.test(card.displayTitle)
+      && !publicTextLooksGarbled(card.title)
+      && !publicTextLooksGarbled(card.displayTitle);
+  }
   const expectedTitle = publicTitleCandidateForCard(card);
   if (expectedTitle) {
     if (card.title !== expectedTitle || card.displayTitle !== expectedTitle) return false;
@@ -1409,6 +1416,27 @@ function normalizeFactDerivedTitle(value = "") {
 
 function normalizeFrontstageDisplay(card = {}, options = {}) {
   const strictPublic = options.strictPublic !== false;
+  if (strictPublic && card.type === "signal_card" && card.status === "published") {
+    const formalTitle = card.displayTitle || card.title || "";
+    const originalTitle = card.originalTitle || card.sourceTitle || card.rawTitle || "";
+    const sourceTitle = sourceFrontstageTitle(card, originalTitle);
+    return {
+      ...card,
+      title: formalTitle,
+      generatedTitle: formalTitle,
+      originalTitle,
+      sourceTitle,
+      displayTitle: formalTitle,
+      subject: safeFrontstageSubject({
+        subject: card.subject,
+        sourceUrl: card.sourceUrl,
+        sourceName: card.sourceName,
+        rawTitle: card.originalTitle,
+        title: formalTitle,
+        originalTitle,
+      }),
+    };
+  }
   const internalTitle = publicTitleCandidate(card.originalTitle || card.sourceTitle || card.rawTitle, card.sourceUrl);
   const originalTitle = card.originalTitle || card.sourceTitle || card.rawTitle || "";
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
@@ -2947,7 +2975,6 @@ function buildAiHardwareSignals(cards = [], activeDate = "") {
 
 function cardFromFile(file, category) {
   const text = read(file);
-  if (publicTextLooksGarbled(text)) return null;
   const fm = frontmatter(text);
   if (!fm) return null;
 
@@ -3007,7 +3034,7 @@ function cardFromFile(file, category) {
     generatedTitle,
     category,
   }, sourceTitleForPublic);
-  const title = sourceTitleCandidate || publicFundingFallbackTitle(generatedTitle, sourceTitleForPublic, category) || translatedTitle;
+  const title = sourceTitleCandidate || publicFundingFallbackTitle(generatedTitle, sourceTitleForPublic, category) || translatedTitle || generatedTitle;
   if (!title) return null;
   const titleFact = sourceTitleDerivedFact(sourceTitleForPublic, sourceUrl);
   let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl, [titleFact]);
