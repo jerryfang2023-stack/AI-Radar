@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-07T01:39:34.836Z",
+  "generatedAt": "2026-07-08T01:43:55.465Z",
   "stats": {
-    "blogsBuilt": 4,
+    "blogsBuilt": 5,
     "totalItems": 26,
     "sourceCount": 8,
     "errors": [
@@ -14,6 +14,56 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
+          "text": "sqlite-utils 4.0, now with database schema migrations",
+          "summary": "<p>This morning I released <a href=\"https://sqlite-utils.datasette.io/en/stable/changelog.html#v4-0\">sqlite-utils 4.0</a>, the 124th release of that project and the first major version bump since <a href=\"https://sqlite-utils.datasette.io/en/stable/changelog.html#v3-0\">3.0</a> in November 2020. In a",
+          "createdAt": "2026-07-07T19:32:57+00:00",
+          "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/7/sqlite-migrate/#atom-everything",
+          "text": "sqlite-migrate 0.2",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/sqlite-migrate/releases/tag/0.2\">sqlite-migrate 0.2</a></p>\n        <p>The version that retires the library, instead implementing a compatibility shim against the new sqlite-utils 4.0 dependency.</p>\n    \n    \n        <p>Tags: <a href=\"",
+          "createdAt": "2026-07-07T16:33:55+00:00",
+          "url": "https://simonwillison.net/2026/Jul/7/sqlite-migrate/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything",
+          "text": "github-code Web Component",
+          "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/github-code-component\">github-code Web Component</a></p>\n        <p>An experimental Web Component built using GPT-5.5 and <a href=\"https://gist.github.com/simonw/0e3db21947b5ae7e29e8a4f69a0b0617\">the following prompt</a>:</p>\n<blockq",
+          "createdAt": "2026-07-07T16:18:16+00:00",
+          "url": "https://simonwillison.net/2026/Jul/7/github-code-component/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/7/sqlite-utils/#atom-everything",
+          "text": "sqlite-utils 4.0",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/sqlite-utils/releases/tag/4.0\">sqlite-utils 4.0</a></p>\n        <p>See <a href=\"https://simonwillison.net/2026/Jul/7/sqlite-utils-4/\">sqlite-utils 4.0, now with database schema migrations</a> for details.</p>\n    \n    \n        <p>Tags: ",
+          "createdAt": "2026-07-07T15:42:43+00:00",
+          "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/7/sqlite-utils-2/#atom-everything",
+          "text": "sqlite-utils 4.0rc4",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/sqlite-utils/releases/tag/4.0rc4\">sqlite-utils 4.0rc4</a></p>\n        <p>The last RC before the 4.0 stable release. Mainly <a href=\"https://github.com/simonw/sqlite-utils/issues/769#issuecomment-4900034150\">implements feedback</a> from ",
+          "createdAt": "2026-07-07T05:36:15+00:00",
+          "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-2/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Jul/6/hy3/#atom-everything",
           "text": "tencent/Hy3",
@@ -143,63 +193,20 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
+        }
+      ]
+    },
+    {
+      "name": "Lilian Weng's Blog (OpenAI)",
+      "handle": "lilianweng.github.io",
+      "bio": "AI research deep-dives, LLM architectures, agent systems, multimodal, alignment, safety.",
+      "tweets": [
         {
-          "id": "https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything",
-          "text": "Quoting Anthropic",
-          "summary": "<blockquote cite=\"https://twitter.com/anthropicai/status/2072106151890809341\"><p>We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.</p>\n<p>We'll begin restoring access tomorrow, and will share an update soon.</p></blockquote>\n<p class=\"ci",
-          "createdAt": "2026-06-30T23:58:15+00:00",
-          "url": "https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/30/nano-banana-2-lite/#atom-everything",
-          "text": "Nano Banana 2 Lite",
-          "summary": "<p><strong><a href=\"https://deepmind.google/models/gemini-image/flash-lite/\">Nano Banana 2 Lite</a></strong></p>\nAlso known as Gemini 3.1 Flash Lite Image (<code>gemini-3.1-flash-lite-image</code> <a href=\"https://ai.google.dev/gemini-api/docs/image-generation\">in their API</a>), this is the \"fastes",
-          "createdAt": "2026-06-30T22:15:35+00:00",
-          "url": "https://simonwillison.net/2026/Jun/30/nano-banana-2-lite/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
-          "text": "What's new in Claude Sonnet 5",
-          "summary": "<p><strong><a href=\"https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5\">What's new in Claude Sonnet 5</a></strong></p>\nClaude Sonnet 5 came out <a href=\"https://www.anthropic.com/news/claude-sonnet-5\">this morning</a>. I always head straight for the \"what's new\" developer doc",
-          "createdAt": "2026-06-30T21:23:02+00:00",
-          "url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/30/the-ai-compass/#atom-everything",
-          "text": "The AI Compass",
-          "summary": "<p><strong><a href=\"https://bambamramfan.github.io/ai-compass/\">The AI Compass</a></strong></p>\nThis political compass style quiz <a href=\"https://bambamramfan.tumblr.com/post/820505178072580096/the-ai-compass\">by bambamramfan</a> is pretty neat - answer 29 questions about AI and AI ethics to see wh",
-          "createdAt": "2026-06-30T17:39:23+00:00",
-          "url": "https://simonwillison.net/2026/Jun/30/the-ai-compass/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything",
-          "text": "Have your agent record video demos of its work with shot-scraper video",
-          "summary": "<p><a href=\"https://shot-scraper.datasette.io/en/stable/video.html\">shot-scraper video</a> is a new command introduced in today's <a href=\"https://github.com/simonw/shot-scraper/releases/tag/1.10\">shot-scraper 1.10</a> release which accepts a <code>storyboard.yml</code> file defining a routine to ru",
-          "createdAt": "2026-06-30T16:54:26+00:00",
-          "url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/30/shot-scraper/#atom-everything",
-          "text": "shot-scraper 1.10",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/shot-scraper/releases/tag/1.10\">shot-scraper 1.10</a></p>\n        <p>The big new feature is <code>shot-scraper video storyboard.yml</code>, described in detail in <a href=\"https://simonwillison.net/2026/Jun/30/shot-scraper-video/\">Have ",
-          "createdAt": "2026-06-30T15:10:14+00:00",
-          "url": "https://simonwillison.net/2026/Jun/30/shot-scraper/#atom-everything",
+          "id": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+          "text": "Harness Engineering for Self-Improvement",
+          "summary": "The concept of recursive self-improvement (RSI) dates back to I. J. Good (1965), where he defined an &ldquo;ultraintelligent machine&rdquo; as a system that can surpass humans in all intellectual activities and design better machines to improve itself. Yudkowsky (2008) used the phrase &ldquo;recursi",
+          "createdAt": "Sat, 04 Jul 2026 00:00:00 +0000",
+          "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -212,21 +219,21 @@
       "bio": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
       "tweets": [
         {
-          "id": "https://www.bensbites.com/p/fable-is-back",
-          "text": "Fable is back",
-          "summary": "and there's a new sonnet",
-          "createdAt": "Thu, 02 Jul 2026 13:04:04 GMT",
-          "url": "https://www.bensbites.com/p/fable-is-back",
+          "id": "https://www.bensbites.com/p/my-thoughts-on-fable",
+          "text": "My thoughts on Fable",
+          "summary": "what I want from a harness",
+          "createdAt": "Tue, 07 Jul 2026 13:04:10 GMT",
+          "url": "https://www.bensbites.com/p/my-thoughts-on-fable",
           "likes": 0,
           "retweets": 0,
           "replies": 0
         },
         {
-          "id": "https://www.bensbites.com/p/gpt-56-is-here-but",
-          "text": "GPT-5.6 is here but...",
-          "summary": "plus the insanity of inference",
-          "createdAt": "Tue, 30 Jun 2026 15:02:46 GMT",
-          "url": "https://www.bensbites.com/p/gpt-56-is-here-but",
+          "id": "https://www.bensbites.com/p/fable-is-back",
+          "text": "Fable is back",
+          "summary": "and there's a new sonnet",
+          "createdAt": "Thu, 02 Jul 2026 13:04:04 GMT",
+          "url": "https://www.bensbites.com/p/fable-is-back",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -238,6 +245,16 @@
       "handle": "tldr.tech",
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
+        {
+          "id": "https://tldr.tech/ai/2026-07-07",
+          "text": "Anthropic J-space research 🧠, Apple + Broadcom ⚡, continual agent learning 🤖",
+          "summary": "",
+          "createdAt": "Tue, 07 Jul 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-07-07",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://tldr.tech/ai/2026-07-06",
           "text": "Seedance 2.5 🎥, guide to Fable ✨, OpenAI preps GPT-5.6 🚀",
@@ -264,16 +281,6 @@
           "summary": "",
           "createdAt": "Thu, 02 Jul 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-07-02",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-07-01",
-          "text": "Claude Sonnet 5 🎭, Fable approved 🚀, Nano Banana 2 Lite 🍌",
-          "summary": "",
-          "createdAt": "Wed, 01 Jul 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-07-01",
           "likes": 0,
           "retweets": 0,
           "replies": 0
