@@ -112,7 +112,7 @@ The run may continue only after repair or with explicit downgrade notes:
 
 - `core_pool` contains items with vague titles and no business action.
 - `index_only` materials are over-promoted to Pool.
-- AI HOT source items are present but original URLs were not fetched.
+- AI HOT / RSS / search source items are present but original URLs were not fetched.
 - follow-builders items lack original post text, timestamp, author identity, or capture boundary.
 - Important keyword groups have no coverage and no explanation.
 - Raw duplicates inflate count.
@@ -131,7 +131,7 @@ Treat channels separately from facts:
 | A | Reuters, Bloomberg, FT, WSJ, The Information, TechCrunch, VentureBeat, CNBC, Axios, Sifted, top analyst/research sources | Historical label only; can be core evidence only if content and original-evidence gates pass |
 | B | VC post, funding database, Product Hunt, GitHub repo, vertical newsletter, ecosystem report | Historical label only; frontstage core claims need source-backed original evidence |
 | C/D | Low-signal media, SEO page, repost, forum rumor, tool directory, weak blog | Historical label only; do not auto-downgrade if content and original-evidence gates pass |
-| M | AI HOT, follow-builders, HN, X, Reddit, RSS, search aggregator | Discovery only; must回源 before factual use |
+| M | AI HOT, follow-builders, HN, X, Reddit, RSS, search aggregator | Acquisition label only; must回源 before factual use, then judge by original evidence |
 
 Important: `M` belongs in `acquisition_source_level`, not `source_level`; neither label decides fact eligibility. A discovery channel can support factual use only after original evidence is captured.
 
@@ -168,7 +168,7 @@ Only override this when the page itself proves a specific change, for example: a
 
 For each Raw item, verify:
 
-- `full_text` exists and is not just navigation, cookie text, footer text, title-only text, or AI HOT summary.
+- `full_text` exists and is not just navigation, cookie text, footer text, title-only text, or unresolved aggregation summary.
 - `clean_text` is derived from available evidence, not invented.
 - Markdown snapshot and JSON evidence object exist when the item is used downstream.
 - `full_text_hash` or equivalent content hash exists for downstream-worthy items.
@@ -188,7 +188,7 @@ clear business change
 
 Check whether the day used the three monitoring lanes:
 
-1. AI HOT recent 24h / all-mode as discovery.
+1. AI HOT recent 24h / all-mode as candidate discovery, followed by original-source resolution.
 2. follow-builders full daily scan as viewpoint/frontier signal intake.
 3. Keyword monitoring and web search for source-backed original evidence and topic coverage.
 
@@ -327,7 +327,7 @@ Write a direct prompt for the next agent or automation rerun. Include exact file
 When blocked, require one or more actions:
 
 - Refetch original URL and save `full_text`.
-- Replace AI HOT/follow-builders summary with original source Raw.
+- Replace aggregation or follow-builders summary with original source Raw.
 - Downgrade homepage/tool/directory/search-result materials to `index_only`.
 - Delete or quarantine duplicate/noise Raw entries.
 - Add source-backed original evidence for the main theme.

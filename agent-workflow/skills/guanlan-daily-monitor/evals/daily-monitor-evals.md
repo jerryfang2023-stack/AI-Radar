@@ -17,7 +17,7 @@ Run these pass/fail checks when running, repairing, or updating the current Wave
    - Pass when downstream-worthy items preserve original URL, readable text or fallback explanation, extraction diagnostics, content hash, and missing-information notes.
 
 5. `discovery_channel_boundary`
-   - Pass when AI HOT, HN, X, Reddit, RSS, newsletters, and search aggregators are discovery only unless original sources were captured.
+   - Pass when AI HOT, HN, X, Reddit, RSS, newsletters, and search aggregators are treated as acquisition labels until original sources are captured, and post-capture eligibility is judged from original evidence rather than channel label.
 
 6. `page_type_downgrade`
    - Pass when homepage, directory, login, docs-index, catalog, marketplace, search-result, SEO, and navigation pages are downgraded unless they contain a dated concrete event.

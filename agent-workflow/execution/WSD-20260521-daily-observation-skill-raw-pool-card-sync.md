@@ -95,7 +95,7 @@ C:\Users\86186\.skill-store\guanlan-daily-observation-qc\SKILL.md
 - `allow_with_degradation` 只能按 Daily Monitor QC 明确范围使用。
 - `block` 不得使用。
 - `index_only` 不得写成事实判断。
-- AI HOT daily selected 只是精选入口，不是事实证据。
+- AI HOT daily selected 的渠道标签不是事实证据；必须回到原文后按统一证据门槛判定。
 - follow-builders / 社区材料只能证明“谁说了什么 / 社区如何反馈”，不能证明公司动作、客户采用、融资、收入或市场规模。
 - failed provider text、搜索摘要、入口摘要、工具目录、官网首页和导航页不得作为事实主证据。
 

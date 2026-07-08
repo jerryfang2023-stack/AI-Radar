@@ -77,7 +77,7 @@ Do not create a trend candidate from:
 - One company announcement.
 - One vendor case page.
 - One opinion thread.
-- One AI HOT summary.
+- One unresolved aggregation summary.
 - Search results, index pages, directories, SEO pages, or failed provider text.
 - A funding event without wider commercial pattern.
 - A "three trends" article that only aggregates claims without new evidence.

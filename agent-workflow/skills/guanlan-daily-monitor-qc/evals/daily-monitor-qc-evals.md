@@ -17,7 +17,7 @@ Do not use numeric self-scores without observable evidence. Each check must be `
    - Pass when `source_level` / `acquisition_source_level` are logged for traceability but are not used as hard gates, ranking boosts, ranking penalties, or automatic downgrade reasons.
 
 4. `discovery_channel_separation`
-   - Pass when AI HOT, follow-builders, HN, X, Reddit, RSS, and search aggregation text are treated as discovery only unless the original source was captured.
+   - Pass when AI HOT, follow-builders, HN, X, Reddit, RSS, and search aggregation text are treated as acquisition labels until the original source is captured, and post-capture eligibility is judged from original evidence rather than channel label.
 
 5. `index_page_downgrade`
    - Pass when homepage, directory, login, docs index, product catalog, marketplace, SEO, and search-result pages are downgraded unless the page itself contains a dated concrete event.

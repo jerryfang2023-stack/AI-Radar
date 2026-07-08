@@ -100,7 +100,7 @@ The script `--pass-score` is a diagnostic reference, not a release gate. Hard th
 The monitor must reflect the current V3 production rules:
 
 - Raw-first / Evidence-first.
-- AI HOT, follow-builders, HN, X, Reddit, RSS and search aggregators are discovery channels, not fact sources.
+- AI HOT, follow-builders, HN, X, Reddit, RSS and search aggregators are acquisition labels until original-source capture; after capture, fact eligibility is judged from original evidence rather than channel label.
 - Source/channel labels, if present in backend Raw / Pool data, are traceability diagnostics only.
 - `source_level` / `acquisition_source_level` must not be used as `core_pool` gates, Card gates, ranking boosts, ranking penalties, quality scores, or automatic downgrade reasons.
 - Raw target is at least 150 active candidates in the daily production chain.

@@ -59,9 +59,9 @@ Intelligence Engine 判断来源时，重点不是“来源越多越好”，而
 
 典型边界：
 
-- AI HOT / follow-builders 多为发现入口，不自动等于事实主证据。
-- HN / X / Reddit 多为社区反馈或观点线索，不单独作为事实依据。
-- GDELT / Anysearch / Tavily / Exa 多为搜索、发现和验证入口，不直接作为主证据；NewsAPI 已退出当前活跃链路。
+- AI HOT、RSS、关键词搜索、GDELT、Anysearch、Tavily / Exa 等 acquisition channel 只说明线索从哪里被发现；回到原文后，事实主证据资格只由原文证据、页面类型和 Raw / Pool / Card 门槛决定。
+- follow-builders、HN、X / Reddit 多为观点或社区反馈入口；涉及公司动作、客户采用、融资、收入或市场规模等事实主张时，仍需回到原文或可信报道重新判定。
+- NewsAPI 已退出当前活跃链路。
 - 官网、官方博客、changelog、GitHub release、客户案例等可以成为事实主证据，但必须是具体变化页，不是首页、目录页或泛产品页。
 - 媒体报道可作为辅助证据，重要信息应尽量追溯到一手来源。
 - VC / research / developer 文章多为观点线索或趋势解释，必须区分事实与判断。
@@ -111,7 +111,7 @@ Intelligence Engine 判断来源时，重点不是“来源越多越好”，而
 - 进入下游的事实素材必须可追溯到原始来源，并有可检查的证据文本。
 - `core_pool` 必须通过 Raw QC，不能包含 `raw_qc_decision=block` 或 `allow_with_degradation`。
 - 官网首页、产品目录、文档目录、工具导航、搜索结果页、SEO 页默认不能进入核心素材。
-- AI HOT、follow-builders、HN、X、Reddit、Anysearch、Tavily、Exa、GDELT 等入口不能直接等同于事实主证据。
+- AI HOT、RSS、关键词搜索、GDELT、Anysearch、Tavily、Exa 等入口不能直接等同于事实主证据，也不能因入口身份被自动限制在 `index_only` / `watchlist`；必须回到原文后按统一证据门槛判定。
 - 每个 Card 资产都有来源、证据、缺口、边界和可关联对象。
 - 每个前沿观点卡都有 `opinion_tier`、`display_lane`、`selection_reason`、`opinion_rating_score`、`opinion_rating_version` 和 `publish_status`；只有 `feature` / `sidebar` 能交给前台。
 - 六类 `importance_type` 的覆盖和缺口必须被记录，不能用弱页面硬填。

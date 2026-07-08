@@ -66,7 +66,7 @@ The script `--pass-score` is a diagnostic score reference only. It is not final 
 
 ## Operating Rules
 
-- Search providers, AI HOT, HN, X, Reddit, newsletters, RSS, and aggregators are discovery channels until original sources are captured.
+- Search providers, AI HOT, HN, X, Reddit, newsletters, RSS, and aggregators are acquisition/discovery labels until original sources are captured; after capture, factual eligibility is judged from the original evidence, not the channel label.
 - Source level belongs to the captured original source. Acquisition channel `M` belongs only to discovery routes.
 - Homepage, directory, login, docs-index, product catalog, marketplace, search-result, SEO, and generic navigation pages are `index_only` unless the page itself contains a dated concrete event.
 - Historical duplicates must not count toward active Raw / Pool quantity.

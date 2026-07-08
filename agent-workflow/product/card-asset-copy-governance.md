@@ -51,7 +51,7 @@ owner: intelligence-engine / experience-editorial / build-release
 
 ## 3. 生成门槛
 
-资产只能从 Daily Monitor QC 放行范围内生成。当日 QC 为 `allow_with_degradation` 时，资产链只能使用 QC 明确允许的 eligible `core_pool`，并继续排除 failed provider text、index-only AI HOT、community / frontier opinion 等弱材料。
+资产只能从 Daily Monitor QC 放行范围内生成。当日 QC 为 `allow_with_degradation` 时，资产链只能使用 QC 明确允许的 eligible `core_pool`，并继续排除 failed provider text、未回源的聚合标题 / 摘要 / 热度、community / frontier opinion 等弱材料。
 
 ### 每日默认生成量
 
@@ -197,7 +197,7 @@ feature/sidebar 必须有已完成中文翻译
 以下材料不得生成正式卡片，也不得作为公司事实证据：
 
 - failed provider text、搜索结果摘要、采集失败 fallback 文本。
-- index-only AI HOT、AI HOT 标题 / 摘要 / 热度。
+- 未回到原文的聚合标题 / 摘要 / 热度 / 榜单线索，或任何 `index_only` discovery artifact。
 - 官网首页、产品目录、文档目录、README、包页、模型页、Marketplace listing、控制台 / 登录页、SEO 页。
 - 只有 community / frontier opinion、follow-builders 转述、HN / Reddit / X 讨论的材料。
 - 无 `raw_ref`、`raw_archive`、`raw_json`、`source_url`、`full_text_hash`、`key_excerpts` 或 `evidence_seed` 的 Pool 条目。

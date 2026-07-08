@@ -95,7 +95,7 @@ node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=2026-05-2
 - Core Pool 每类最多 3，不强行填满。
 - 通用搜索只作 fallback discovery，不能直接成为事实主证据。
 - Tavily / Exa / NewsAPI 只提供发现或新闻线索；进入 `core_pool` 仍必须回源、Raw QC allow、非 index page、`importance_score >= 4`。
-- AI HOT daily selected 全量保留在 Raw / Pool index，但不得自动进入 `core_pool`。
+- AI HOT daily selected 全量保留在 Raw / Pool 审计范围，但不得自动进入 `core_pool`，也不得因渠道身份自动降级；必须回到原文后按统一证据门槛判定。
 - follow-builders 是 Builder 观点入口，不是事实主证据。
 - `S/A/B/C/D/M` 只作为来源类型、证据角色和使用边界，不作为内容价值加分。
 - 不得恢复五类信号、`required_signal_classes` 或旧 commercial-value scoring。

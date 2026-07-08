@@ -17,7 +17,7 @@ priority: execution
 
 - Daily Monitor QC 必须是 `allow`，或明确 `allow_with_degradation` 且给出 eligible `core_pool` 范围。
 - 资产链只能使用 eligible `core_pool` 作为事实主证据。
-- failed provider text、index-only AI HOT、community / frontier opinion 不得作为公司事实证据。
+- failed provider text、未回源的聚合标题 / 摘要 / 热度、community / frontier opinion 不得作为公司事实证据。
 - 实际运行资产链或生成卡片前，必须先运行 readiness；不通过时只写 blocked 说明。
 
 ## 2. 入库前检查

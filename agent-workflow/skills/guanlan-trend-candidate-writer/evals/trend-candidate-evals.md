@@ -14,7 +14,7 @@ Run these pass/fail checks after creating, updating, or auditing a WaveSight AI 
    - Pass when evidence comes from at least 2 source types or evidence contexts, not one source family.
 
 4. `single_item_block`
-   - Pass when no candidate is created from one article, one opinion, one company announcement, one funding event, one AI HOT summary, or one index/search/directory page.
+   - Pass when no candidate is created from one article, one opinion, one company announcement, one funding event, one unresolved aggregation summary, or one index/search/directory page.
 
 5. `builders_isolated`
    - Pass when first-line builders viewpoints and opinion cards are not used as business-signal evidence.

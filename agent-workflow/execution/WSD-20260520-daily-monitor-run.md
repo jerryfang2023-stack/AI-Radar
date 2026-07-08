@@ -66,7 +66,7 @@ node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=2026-05-2
 - Raw 正常目标：80-150；低信号或来源失败日可降级为 50-80，并写清原因。
 - Pool 目标：20-40。
 - Raw 和 Pool 覆盖六类 `importance_type`。
-- AI HOT daily selected 全量进入 Raw / Pool index，但不能自动进入 `core_pool`。
+- AI HOT daily selected 全量进入 Raw / Pool 审计范围，但不能自动进入 `core_pool`，也不能因渠道身份自动降级；必须回到原文后按统一证据门槛判定。
 - follow-builders 是 Builder 观点入口，不是事实主证据。
 - `S/A/B/C/D/M` 只作为来源类型、证据角色和使用边界，不作为内容价值加分。
 - `core_pool` 必须通过 Raw QC，不能包含 `raw_qc_decision=block` 或 `allow_with_degradation`。
@@ -116,4 +116,3 @@ closeout 必须说明：
 ```text
 收口：agent-workflow/reports/WSD-20260520-daily-monitor-run-closeout.md
 ```
-

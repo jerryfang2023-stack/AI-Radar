@@ -117,6 +117,7 @@ Current quantity gates:
 - daily production chain expects at least 150 active Raw candidates;
 - Raw shortfall caused by search-provider quota or temporary outage must not block release by itself when Pool audit supply and the downstream frontstage Card contract are sufficient; keep the shortfall visible as a diagnostic.
 - GDELT, keyword search, RSS, and AI HOT are peer source-artifact entrances for Raw. Raw selection should use balanced rotation across available peer channels, not a fixed priority order.
+- AI HOT, RSS, keyword search, GDELT, Anysearch, Tavily, Exa, or any other discovery label is not a Core Pool decision. Every candidate must be resolved to the original source, then judged by the original page's evidence quality, page type, freshness, commercial importance, and formal Card gates.
 - daily Pool audit gate expects at least 75 Pool items and at least 60 routed Pool items; Card release is decided by raw-to-card cardability, not by a separate core-pool quota;
 - Pool generation must not cap the selected Pool at a fixed top-N / buffer count. After Raw collection, preserve all non-discard screened evidence in the Pool file so repairable high-value items remain visible for Card processing and audit.
 - each required importance lane should keep at least 5 Pool candidates before downstream release;
