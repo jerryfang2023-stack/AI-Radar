@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 1126
-generated_at: 2026-07-08T01:44:41.233Z
+opinion_count: 1127
+generated_at: 2026-07-08T08:10:38.265Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -18,6 +18,7 @@ generated_at: 2026-07-08T01:44:41.233Z
 - [Zara Zhang](people/zara-zhang/README.md) - 59 条 - 最新 2026-07-07
 - [Peter Steinberger](people/peter-steinberger/README.md) - 43 条 - 最新 2026-07-07
 - [Amjad Masad](people/amjad-masad/README.md) - 41 条 - 最新 2026-07-07
+- [Training Data](people/training-data/README.md) - 4 条 - 最新 2026-07-07
 - [Nikunj Kothari](people/nikunj-kothari/README.md) - 66 条 - 最新 2026-07-06
 - [Dan Shipper](people/dan-shipper/README.md) - 55 条 - 最新 2026-07-06
 - [Thibault Sottiaux](people/thibault-sottiaux/README.md) - 51 条 - 最新 2026-07-06
@@ -38,7 +39,6 @@ generated_at: 2026-07-08T01:44:41.233Z
 - [Alex Albert](people/alex-albert/README.md) - 4 条 - 最新 2026-07-01
 - [Madhu Guru](people/madhu-guru/README.md) - 10 条 - 最新 2026-06-30
 - [Anthropic Engineering](people/anthropic-engineering/README.md) - 4 条 - 最新 2026-06-30
-- [Training Data](people/training-data/README.md) - 3 条 - 最新 2026-06-30
 - [Ryo Lu](people/ryo-lu/README.md) - 14 条 - 最新 2026-06-29
 - [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 6 条 - 最新 2026-06-26
 - [Dataiku Blog](people/dataiku-blog/README.md) - 5 条 - 最新 2026-06-26
