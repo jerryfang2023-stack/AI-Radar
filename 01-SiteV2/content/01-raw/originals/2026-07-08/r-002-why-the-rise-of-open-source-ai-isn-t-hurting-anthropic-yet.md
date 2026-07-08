@@ -1,0 +1,291 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-002
+title: "Why the rise of open source AI isn't hurting Anthropic ... yet"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/"
+canonical_url: "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet"
+source_name: "keyword search / Anysearch"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_market_trend"
+search_path: "a_media_gdelt"
+search_path_label: "A 级媒体 / GDELT 路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-08T02:16:36.079Z
+language: mixed
+full_text_hash: ebe57f93cf810eeb
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-002-why-the-rise-of-open-source-ai-isn-t-hurting-anthropic-yet.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-002-why-the-rise-of-open-source-ai-isn-t-hurting-anthropic-yet.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5383,"paragraph_count":30,"sentence_count":35,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 5383
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ebe57f93cf810eeb","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: e38c77a32a54204a
+content_hash: ebe57f93cf810eeb
+semantic_hash: b399a39a299fcdd8
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-08T02:16:36.079Z"
+last_seen_at: 2026-07-08T02:16:36.079Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Anthropic","GitHub","Amazon","Nvidia"],"products":["agent","agents"],"people":[],"industries":["企业服务"],"roles":[],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","部署 / 集成交付"],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["1","04","7","2026","5.2 m","4","5.3 trillion","4.8"],"quotes":["Everyone is wrong about open source AI in the enterprise.","The frontier labs will keep owning discovery. Open source will increasingly own production.","GPT wrapper"]}
+evidence_seed: {"company_actions":["Open source models' success isn't coming at the expense of frontier labs. Instead, they each seem to capture two phases of the same life ... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt","Image Credits: Krisztian Bocsi/Bloomberg / Getty Images AI Why the rise of open source AI isn’t hurting Anthropic … yet Russell Brandom 1:04 PM PDT · July 7, 2026 On Monday, Decagon CEO Jesse Zhang published a provocative new theory, posted under the title “Everyone is wrong about open source AI in the enterprise.","But the overall spend on expensive state-of-the-art models has barely budged."],"case_details":["” The post grapples with one of the most interesting contradictions of today’s AI economy: More mature AI deployments are switching to lighter models, he says, even at his own company."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"company_action","text":"Open source models' success isn't coming at the expense of frontier labs. Instead, they each seem to capture two phases of the same life ... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Image Credits: Krisztian Bocsi/Bloomberg / Getty Images AI Why the rise of open source AI isn’t hurting Anthropic … yet Russell Brandom 1:04 PM PDT · July 7, 2026 On Monday, Decagon CEO Jesse Zhang published a provocative new theory, posted under the title “Everyone is wrong about open source AI in the enterprise.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"” The post grapples with one of the most interesting contradictions of today’s AI economy: More mature AI deployments are switching to lighter models, he says, even at his own company.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But the overall spend on expensive state-of-the-art models has barely budged.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It’s a new way to think about the relationship between frontier and open source models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In Zhang’s telling, they aren’t competitors, and open source models’ success isn’t coming at the expense of frontier labs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-08T02:16:36.079Z
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Why the rise of open source AI isn't hurting Anthropic ... yet
+
+## clean_text
+
+Image Credits: Krisztian Bocsi/Bloomberg / Getty Images
+AI
+Why the rise of open source AI isn’t hurting Anthropic … yet
+Russell Brandom
+1:04 PM PDT · July 7, 2026
+On Monday, Decagon CEO Jesse Zhang published a provocative new theory, posted under the title “Everyone is wrong about open source AI in the enterprise.” The post grapples with one of the most interesting contradictions of today’s AI economy: More mature AI deployments are switching to lighter models, he says, even at his own company. But the overall spend on expensive state-of-the-art models has barely budged.
+It’s a new way to think about the relationship between frontier and open source models. In Zhang’s telling, they aren’t competitors, and open source models’ success isn’t coming at the expense of frontier labs. Instead, they’re two phases of the same life cycle, with expensive frontier models being used to prove out use cases that can be passed along to cheaper open source alternatives as they mature.
+As more mature use cases switch to lighter models , new use cases keep arising — and the overall spend on frontier models barely goes down.
+Zhang doesn’t give much data to support the point, but the data isn’t hard to find. Vercel’s AI gateway dashboard shows that, in just the past week, DeepSeek has surged into the lead for token volumes, now processing just over a third of the tokens passing through the company’s infrastructure. Z.ai — the lab behind the popular GLM-5.2 model — jumped into a respectable fourth place over the same period.
+But if you scroll down to overall token spend, you’ll see Anthropic still accounts for more than half of the overall AI spend on the platform. Given that much of the recent change comes from Anthropic’s own rising prices, the share has dropped slightly over the past month, but not significantly.
+Image Credits: Vercel dashboard / data export
+OpenRouter tells a similar story, capturing a much larger (but slightly less enterprise-y) segment of the market. DeepSeek V4 Flash is the main winner on overall usage, processing 5.3 trillion tokens weekly. The most popular frontier model, Opus 4.8, handles just over 2 trillion. OpenRouter doesn’t rank models by total spend, but it registers the average token cost for Opus 4.8 as roughly 23x higher than V4 Flash ($1.37 per million tokens, compared to just 6 cents), which would mean Opus was still probably capturing the lion’s share of spending.
+Those figures don’t even capture the newest arrival, Nvidia’s Nemotron, which is poised to leap to the front of the pack by virtue of Nvidia’s strong connections and the model’s own extreme adaptability.
+Those figures don’t fully prove Zhang’s point about the AI life cycles, but they do show frontier labs like Anthropic aren’t suffering too much from the rise of open source — at least not yet. One explanation is that the market of AI-addressable tasks is growing so fast that the top models are able to maintain their position just by dominating early-stage deployments. As Zhang puts it, “The frontier labs will keep owning discovery. Open source will increasingly own production.” Another explanation might be that, even as clients move to open source, many use cases are so difficult that they can’t be entirely replaced with cheaper alternatives.
+Either way, this two-tiered economy of models may become a relatively stable feature of the AI economy.
+As recently as last September, I was writing about the possibility that foundation labs would end up selling coffee beans to Starbucks — that is, serving as commodity inputs while the application layer reaped the benefits. Some parts of that prediction came true: Vertical AI plays switched to lighter models, for one, and the economics of “GPT wrapper” startups have remained mostly stable.
+But we’re also seeing that, token for token, frontier providers have been able to hold on to the most desirable part of the marketplace — the premium token price. And that doesn’t seem likely to change any time soon.
+Topics
+AI , Anthropic , Decagon , Enterprise
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Russell Brandom
+AI Editor
+Russell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review.
+He can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Reddit is using LLMs to solve a problem LLMs largely created
+Amanda Silberling
+Amazon will stop accepting new customers for Mechanical Turk
+Anthony Ha
+5 desk gadgets that can make your workday better
+Aisha Malik
+Chevy built an all-American EV truck — why is nobody buying it?
+Tim De Chant
+Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped
+Lucas Ropek
+Jersey Mike’s IPO illustrates how bad the AI hype has become
+Julie Bort
+After $18B IPO, Bending Spoons founder says success comes from minimizing luck
+Anna Heim
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Krisztian Bocsi/Bloomberg / Getty Images
+AI
+Why the rise of open source AI isn’t hurting Anthropic … yet
+Russell Brandom
+1:04 PM PDT · July 7, 2026
+On Monday, Decagon CEO Jesse Zhang published a provocative new theory, posted under the title “Everyone is wrong about open source AI in the enterprise.” The post grapples with one of the most interesting contradictions of today’s AI economy: More mature AI deployments are switching to lighter models, he says, even at his own company. But the overall spend on expensive state-of-the-art models has barely budged.
+It’s a new way to think about the relationship between frontier and open source models. In Zhang’s telling, they aren’t competitors, and open source models’ success isn’t coming at the expense of frontier labs. Instead, they’re two phases of the same life cycle, with expensive frontier models being used to prove out use cases that can be passed along to cheaper open source alternatives as they mature.
+As more mature use cases switch to lighter models , new use cases keep arising — and the overall spend on frontier models barely goes down.
+Zhang doesn’t give much data to support the point, but the data isn’t hard to find. Vercel’s AI gateway dashboard shows that, in just the past week, DeepSeek has surged into the lead for token volumes, now processing just over a third of the tokens passing through the company’s infrastructure. Z.ai — the lab behind the popular GLM-5.2 model — jumped into a respectable fourth place over the same period.
+But if you scroll down to overall token spend, you’ll see Anthropic still accounts for more than half of the overall AI spend on the platform. Given that much of the recent change comes from Anthropic’s own rising prices, the share has dropped slightly over the past month, but not significantly.
+Image Credits: Vercel dashboard / data export
+OpenRouter tells a similar story, capturing a much larger (but slightly less enterprise-y) segment of the market. DeepSeek V4 Flash is the main winner on overall usage, processing 5.3 trillion tokens weekly. The most popular frontier model, Opus 4.8, handles just over 2 trillion. OpenRouter doesn’t rank models by total spend, but it registers the average token cost for Opus 4.8 as roughly 23x higher than V4 Flash ($1.37 per million tokens, compared to just 6 cents), which would mean Opus was still probably capturing the lion’s share of spending.
+Those figures don’t even capture the newest arrival, Nvidia’s Nemotron, which is poised to leap to the front of the pack by virtue of Nvidia’s strong connections and the model’s own extreme adaptability.
+Those figures don’t fully prove Zhang’s point about the AI life cycles, but they do show frontier labs like Anthropic aren’t suffering too much from the rise of open source — at least not yet. One explanation is that the market of AI-addressable tasks is growing so fast that the top models are able to maintain their position just by dominating early-stage deployments. As Zhang puts it, “The frontier labs will keep owning discovery. Open source will increasingly own production.” Another explanation might be that, even as clients move to open source, many use cases are so difficult that they can’t be entirely replaced with cheaper alternatives.
+Either way, this two-tiered economy of models may become a relatively stable feature of the AI economy.
+As recently as last September, I was writing about the possibility that foundation labs would end up selling coffee beans to Starbucks — that is, serving as commodity inputs while the application layer reaped the benefits. Some parts of that prediction came true: Vertical AI plays switched to lighter models, for one, and the economics of “GPT wrapper” startups have remained mostly stable.
+But we’re also seeing that, token for token, frontier providers have been able to hold on to the most desirable part of the marketplace — the premium token price. And that doesn’t seem likely to change any time soon.
+Topics
+AI , Anthropic , Decagon , Enterprise
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Russell Brandom
+AI Editor
+Russell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review.
+He can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Reddit is using LLMs to solve a problem LLMs largely created
+Amanda Silberling
+Amazon will stop accepting new customers for Mechanical Turk
+Anthony Ha
+5 desk gadgets that can make your workday better
+Aisha Malik
+Chevy built an all-American EV truck — why is nobody buying it?
+Tim De Chant
+Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped
+Lucas Ropek
+Jersey Mike’s IPO illustrates how bad the AI hype has become
+Julie Bort
+After $18B IPO, Bending Spoons founder says success comes from minimizing luck
+Anna Heim
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5383,"paragraph_count":30,"sentence_count":35,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Open source models' success isn't coming at the expense of frontier labs. Instead, they each seem to capture two phases of the same life ... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Image Credits: Krisztian Bocsi/Bloomberg / Getty Images AI Why the rise of open source AI isn’t hurting Anthropic … yet Russell Brandom 1:04 PM PDT · July 7, 2026 On Monday, Decagon CEO Jesse Zhang published a provocative new theory, posted under the title “Everyone is wrong about open source AI in the enterprise.
+
+3. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   ” The post grapples with one of the most interesting contradictions of today’s AI economy: More mature AI deployments are switching to lighter models, he says, even at his own company.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   But the overall spend on expensive state-of-the-art models has barely budged.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   It’s a new way to think about the relationship between frontier and open source models.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   In Zhang’s telling, they aren’t competitors, and open source models’ success isn’t coming at the expense of frontier labs.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Anthropic, GitHub, Amazon, Nvidia
+- products: agent, agents
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 暂无公开信息
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 1, 04, 7, 2026, 5.2 m, 4, 5.3 trillion, 4.8
+- quotes: Everyone is wrong about open source AI in the enterprise. / The frontier labs will keep owning discovery. Open source will increasingly own production. / GPT wrapper
+
+## evidence_seed
+
+- company_actions: Open source models' success isn't coming at the expense of frontier labs. Instead, they each seem to capture two phases of the same life ... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt / Image Credits: Krisztian Bocsi/Bloomberg / Getty Images AI Why the rise of open source AI isn’t hurting Anthropic … yet Russell Brandom 1:04 PM PDT · July 7, 2026 On Monday, Decagon CEO Jesse Zhang published a provocative new theory, posted under the title “Everyone is wrong about open source AI in the enterprise. / But the overall spend on expensive state-of-the-art models has barely budged.
+- case_details: ” The post grapples with one of the most interesting contradictions of today’s AI economy: More mature AI deployments are switching to lighter models, he says, even at his own company.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Open source models' success isn't coming at the expense of frontier labs. Instead, they each seem to capture two phases of the same life ... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

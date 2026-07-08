@@ -1,0 +1,325 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-046
+title: "The billion-dollar infrastructure deals powering the AI boom"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://techcrunch.com/2026/02/28/billion-dollar-infrastructure-deals-ai-boom-data-centers-openai-oracle-nvidia-microsoft-google-meta/"
+canonical_url: "https://techcrunch.com/2026/02/28/billion-dollar-infrastructure-deals-ai-boom-data-centers-openai-oracle-nvidia-microsoft-google-meta"
+source_name: "keyword search / Anysearch"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_market_trend"
+search_path: "a_media_gdelt"
+search_path_label: "A 级媒体 / GDELT 路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-08T02:16:36.328Z
+language: mixed
+full_text_hash: 46ad11c62f0c1a0a
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-046-the-billion-dollar-infrastructure-deals-powering-the-ai-boom.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-046-the-billion-dollar-infrastructure-deals-powering-the-ai-boom.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":10661,"paragraph_count":45,"sentence_count":73,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 10661
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"46ad11c62f0c1a0a","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 6dff57c4c57f43d8
+content_hash: 46ad11c62f0c1a0a
+semantic_hash: 20c29a3a50371529
+duplicate_of: ""
+first_seen_at: "2026-07-08T02:16:36.328Z"
+last_seen_at: 2026-07-08T02:16:36.328Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Google","Microsoft","Meta","Amazon","Nvidia"],"products":["agents"],"people":[],"industries":["金融 / 保险","企业服务"],"roles":["采购负责人","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","采购 / 招投标"],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","采购","销售 / 客服"],"numbers":["12","41","28","2026","$3 trillion","$4 trillion","2019","$1 billion"],"quotes":["primary computing partners,","Stargate","the largest AI infrastructure project in history.","Capital expenditures"]}
+evidence_seed: {"company_actions":["Image Credits: Mikhail Konoplev / Getty Images AI The billion-dollar infrastructure deals powering the AI boom Russell Brandom 12:41 PM PST · February 28, 2026 It takes a lot of computing power to run an AI product — and as the tech industry races to tap the power of AI models, there’s a parallel race underway to build the infrastructure that will power them.","Along the way, they’re placing immense strain on power grids and pushing the industry’s building capacity to its limit.","Below, we’ve laid out everything we know about the biggest AI infrastructure projects, including major spending from Meta, Oracle, Microsoft, Google, and OpenAI."],"case_details":[],"workflow_changes":["Below, we've laid out everything we know about the biggest AI infrastructure projects, including major spending from Meta, Oracle, Microsoft, ... / query=AI server procurement contract enterprise inference / intent=find_market_trend / path=a_media_gdelt"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"Below, we've laid out everything we know about the biggest AI infrastructure projects, including major spending from Meta, Oracle, Microsoft, ... / query=AI server procurement contract enterprise inference / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Image Credits: Mikhail Konoplev / Getty Images AI The billion-dollar infrastructure deals powering the AI boom Russell Brandom 12:41 PM PST · February 28, 2026 It takes a lot of computing power to run an AI product — and as the tech industry races to tap the power of AI models, there’s a parallel race underway to build the infrastructure that will power them.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"On a recent earnings call , Nvidia CEO Jensen Huang estimated that between $3 trillion and $4 trillion will be spent on AI infrastructure by the end of the decade — with much of that money coming from AI companies.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, they’re placing immense strain on power grids and pushing the industry’s building capacity to its limit.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Below, we’ve laid out everything we know about the biggest AI infrastructure projects, including major spending from Meta, Oracle, Microsoft, Google, and OpenAI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"We’ll keep it updated as the boom continues and the numbers climb even higher.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-08T02:16:36.328Z
+theme: ai-hardware-scenario-service-signal
+keyword_group: ai-hardware-scenario-service-signal
+copyright_note: local research archive only
+---
+
+# The billion-dollar infrastructure deals powering the AI boom
+
+## clean_text
+
+Image Credits: Mikhail Konoplev / Getty Images
+AI
+The billion-dollar infrastructure deals powering the AI boom
+Russell Brandom
+12:41 PM PST · February 28, 2026
+It takes a lot of computing power to run an AI product — and as the tech industry races to tap the power of AI models, there’s a parallel race underway to build the infrastructure that will power them. On a recent earnings call , Nvidia CEO Jensen Huang estimated that between $3 trillion and $4 trillion will be spent on AI infrastructure by the end of the decade — with much of that money coming from AI companies. Along the way, they’re placing immense strain on power grids and pushing the industry’s building capacity to its limit.
+Below, we’ve laid out everything we know about the biggest AI infrastructure projects, including major spending from Meta, Oracle, Microsoft, Google, and OpenAI. We’ll keep it updated as the boom continues and the numbers climb even higher.
+Microsoft’s 2019 investment in OpenAI
+This is arguably the deal that kicked off the whole contemporary AI boom: In 2019 , Microsoft made a $1 billion investment in a buzzy non-profit called OpenAI, known mostly for its association with Elon Musk. Crucially, the deal made Microsoft the exclusive cloud provider for OpenAI — and as the demands of model training became more intense, more of Microsoft’s investment started to come in the form of Azure cloud credit rather than cash.
+It was a great deal for both sides: Microsoft was able to claim more Azure sales, and OpenAI got more money for its biggest single expense. In the years that followed, Microsoft would build its investment up to nearly $14 billion — a move that is set to pay off enormously when OpenAI converts into a for-profit company.
+The partnership between the two companies has unwound more recently. Last year, OpenAI announced it would no longer be using Microsoft’s cloud exclusively , instead giving the company a right of first refusal on future infrastructure demands but pursuing others if Azure couldn’t meet their needs. Microsoft has also begun exploring other foundation models to power its AI products, establishing even more independence from the AI giant.
+OpenAI’s arrangement with Microsoft was so successful that it’s become a common practice for AI services to sign on with a particular cloud provider. Anthropic has received $8 billion in investment from Amazon, while making kernel-level modifications on the company’s hardware to make it better suited for AI training. Google Cloud has also signed on smaller AI companies like Lovable and Windsurf as “primary computing partners,” although those deals did not involve any investment. And even OpenAI has gone back to the well, receiving a $100 billion investment from Nvidia in September , giving it capacity to buy even more of the company’s GPUs.
+The rise of Oracle
+On June 30, 2025, Oracle revealed in an SEC filing that it had signed a $30 billion cloud services deal with an unnamed partner; this is more than the company’s cloud revenues for all of the previous fiscal year. OpenAI was eventually revealed as the partner, securing Oracle a spot alongside Google as one of OpenAI’s string of post-Microsoft hosting partners. Unsurprisingly, the company’s stock went shooting up.
+A few months later, it happened again. On September 10 , Oracle revealed a five-year, $300 billion deal for compute power, set to begin in 2027. Oracle’s stock climbed even higher , briefly making founder Larry Ellison the richest man in the world. The sheer scale of the deal is stunning: OpenAI does not have $300 billion to spend, so the figure presumes immense growth for both companies, and more than a little faith.
+But before a single dollar is spent, the deal has already cemented Oracle as one of the leading AI infrastructure providers — and a financial force to be reckoned with.
+Nvidia’s investment spree
+As AI labs scramble to build infrastructure, they’re mostly buying GPUs from one company: Nvidia. That trade has made Nvidia flush with cash — and it’s been investing that cash back into the industry in increasingly unconventional ways. In September 2025, Nvidia bought a 4% stake in rival Intel for $5 billion — but even more surprising has been the deals with its own customers. One week after the Intel deal was revealed, the company announced a $100 billion investment in OpenAI , paid for with GPUs that would be used in OpenAI’s ongoing data center projects. Nvidia has since announced a similar deal with Elon Musk’s xAI, and OpenAI launched a separate GPU-for-stock arrangement with AMD.
+If that seems circular, it’s because it is. Nvidia’s GPUs are valuable because they’re so scarce — and by trading them directly into an ever-inflating data center scheme, Nvidia is making sure they stay that way. You could say the same thing about OpenAI’s privately held stock, which is all the more valuable because it can’t be obtained through public markets. For now, OpenAI and Nvidia are riding high and nobody seems too worried — but if the momentum starts to flag, this sort of arrangement will get a lot more scrutiny.
+Building tomorrow’s hyperscale data centers
+For companies like Meta that already have significant legacy infrastructure , the story is more complicated — although equally expensive. Meta CEO Mark Zuckerberg has said that the company plans to spend $600 billion on U.S. infrastructure through the end of 2028 .
+In the first half of 2025, the company spent $30 billion more than the previous year, driven largely by the company’s growing AI ambitions. Some of that spending goes toward big ticket cloud contracts, like a recent $10 billion deal with Google Cloud , but even more resources are being poured into two massive new data centers.
+A new 2,250-acre site in Louisiana, dubbed Hyperion , will cost an estimated $10 billion to build out and provide an estimated 5 gigawatts of compute power . Notably, the site includes an arrangement with a local nuclear power plant to handle the increased energy load. A smaller site in Ohio, called Prometheus, is expected to come online in 2026, powered by natural gas.
+That kind of buildout comes with real environmental costs. Elon Musk’s xAI built its own hybrid data center and power-generation plant in South Memphis, Tennessee. The plant has quickly become one of the county’s largest emitters of smog-producing chemicals, thanks to a string of natural gas turbines that experts say violate the Clean Air Act .
+The Stargate moonshot
+Just two days after his second inauguration last January, President Trump announced a joint venture between SoftBank, OpenAI, and Oracle, meant to spend $500 billion building AI infrastructure in the United States. Named “Stargate” after the 1994 film, the project arrived with incredible amounts of hype, with Trump calling it “the largest AI infrastructure project in history.” OpenAI’s Sam Altman seemed to agree, saying, ​​”I think this will be the most important project of this era.”
+In broad strokes, the plan was for SoftBank to provide the funding, with Oracle handling the buildout with input from OpenAI. Overseeing it all was Trump, who promised to clear away any regulatory hurdles that might slow down the build. But there were doubts from the beginning, including from Elon Musk, Altman’s business rival, who claimed the project did not have the available funds.
+As the hype has died down, the project has lost some momentum. In August , Bloomberg reported that the partners were failing to reach consensus. Nonetheless, the project has moved forward with the construction of eight data centers in Abilene, Texas , with construction on the final building set to be finished by the end of 2026.
+The capex crunch
+“Capital expenditures” are usually a pretty dry metric, referring to a company’s spending on physical assets. But as tech companies lined up to report their capex plans for 2026, the rush of data center spending made the figures a lot more interesting — and a lot bigger.
+Amazon was the capex leader, projecting $200 billion in 2026 spending (up from $131 billion in 2025), while Google was a close second with an estimate between $175 billion and $185 billion (up from $91 billion in 2025). Meta estimated $115 billion to $135 billion (up from $71 billion the previous year), although that figure is a little deceptive because a lot of the data center projects have been kept off their books entirely . All told, hyperscalers are planning to spend nearly $700 billion on data center projects in 2026 alone .
+It was enough money to spook some investors. The companies were mostly undeterred, however, explaining that AI infrastructure was vital to their companies’ future. It’s set up a strange dynamic. As you might expect, tech executives are more bullish on AI than their Wall Street counterparts — and the more tech companies spend, the more nervous their bankers get. Add in the huge amounts of debt many companies are taking on to fund those buildouts, and you start to hear CFOs across the valley grinding their teeth.
+That hasn’t put a damper on AI spending yet, but it will soon — unless of course, hyperscalers show they can make those investments pay off.
+This article was first published on September 22, 2025.
+Topics
+AI , evergreens , Meta , Microsoft , nvidia , oracle , Softbank , stargate
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Russell Brandom
+AI Editor
+Russell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review.
+He can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Reddit is using LLMs to solve a problem LLMs largely created
+Amanda Silberling
+Amazon will stop accepting new customers for Mechanical Turk
+Anthony Ha
+5 desk gadgets that can make your workday better
+Aisha Malik
+Chevy built an all-American EV truck — why is nobody buying it?
+Tim De Chant
+Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped
+Lucas Ropek
+Jersey Mike’s IPO illustrates how bad the AI hype has become
+Julie Bort
+After $18B IPO, Bending Spoons founder says success comes from minimizing luck
+Anna Heim
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Mikhail Konoplev / Getty Images
+AI
+The billion-dollar infrastructure deals powering the AI boom
+Russell Brandom
+12:41 PM PST · February 28, 2026
+It takes a lot of computing power to run an AI product — and as the tech industry races to tap the power of AI models, there’s a parallel race underway to build the infrastructure that will power them. On a recent earnings call , Nvidia CEO Jensen Huang estimated that between $3 trillion and $4 trillion will be spent on AI infrastructure by the end of the decade — with much of that money coming from AI companies. Along the way, they’re placing immense strain on power grids and pushing the industry’s building capacity to its limit.
+Below, we’ve laid out everything we know about the biggest AI infrastructure projects, including major spending from Meta, Oracle, Microsoft, Google, and OpenAI. We’ll keep it updated as the boom continues and the numbers climb even higher.
+Microsoft’s 2019 investment in OpenAI
+This is arguably the deal that kicked off the whole contemporary AI boom: In 2019 , Microsoft made a $1 billion investment in a buzzy non-profit called OpenAI, known mostly for its association with Elon Musk. Crucially, the deal made Microsoft the exclusive cloud provider for OpenAI — and as the demands of model training became more intense, more of Microsoft’s investment started to come in the form of Azure cloud credit rather than cash.
+It was a great deal for both sides: Microsoft was able to claim more Azure sales, and OpenAI got more money for its biggest single expense. In the years that followed, Microsoft would build its investment up to nearly $14 billion — a move that is set to pay off enormously when OpenAI converts into a for-profit company.
+The partnership between the two companies has unwound more recently. Last year, OpenAI announced it would no longer be using Microsoft’s cloud exclusively , instead giving the company a right of first refusal on future infrastructure demands but pursuing others if Azure couldn’t meet their needs. Microsoft has also begun exploring other foundation models to power its AI products, establishing even more independence from the AI giant.
+OpenAI’s arrangement with Microsoft was so successful that it’s become a common practice for AI services to sign on with a particular cloud provider. Anthropic has received $8 billion in investment from Amazon, while making kernel-level modifications on the company’s hardware to make it better suited for AI training. Google Cloud has also signed on smaller AI companies like Lovable and Windsurf as “primary computing partners,” although those deals did not involve any investment. And even OpenAI has gone back to the well, receiving a $100 billion investment from Nvidia in September , giving it capacity to buy even more of the company’s GPUs.
+The rise of Oracle
+On June 30, 2025, Oracle revealed in an SEC filing that it had signed a $30 billion cloud services deal with an unnamed partner; this is more than the company’s cloud revenues for all of the previous fiscal year. OpenAI was eventually revealed as the partner, securing Oracle a spot alongside Google as one of OpenAI’s string of post-Microsoft hosting partners. Unsurprisingly, the company’s stock went shooting up.
+A few months later, it happened again. On September 10 , Oracle revealed a five-year, $300 billion deal for compute power, set to begin in 2027. Oracle’s stock climbed even higher , briefly making founder Larry Ellison the richest man in the world. The sheer scale of the deal is stunning: OpenAI does not have $300 billion to spend, so the figure presumes immense growth for both companies, and more than a little faith.
+But before a single dollar is spent, the deal has already cemented Oracle as one of the leading AI infrastructure providers — and a financial force to be reckoned with.
+Nvidia’s investment spree
+As AI labs scramble to build infrastructure, they’re mostly buying GPUs from one company: Nvidia. That trade has made Nvidia flush with cash — and it’s been investing that cash back into the industry in increasingly unconventional ways. In September 2025, Nvidia bought a 4% stake in rival Intel for $5 billion — but even more surprising has been the deals with its own customers. One week after the Intel deal was revealed, the company announced a $100 billion investment in OpenAI , paid for with GPUs that would be used in OpenAI’s ongoing data center projects. Nvidia has since announced a similar deal with Elon Musk’s xAI, and OpenAI launched a separate GPU-for-stock arrangement with AMD.
+If that seems circular, it’s because it is. Nvidia’s GPUs are valuable because they’re so scarce — and by trading them directly into an ever-inflating data center scheme, Nvidia is making sure they stay that way. You could say the same thing about OpenAI’s privately held stock, which is all the more valuable because it can’t be obtained through public markets. For now, OpenAI and Nvidia are riding high and nobody seems too worried — but if the momentum starts to flag, this sort of arrangement will get a lot more scrutiny.
+Building tomorrow’s hyperscale data centers
+For companies like Meta that already have significant legacy infrastructure , the story is more complicated — although equally expensive. Meta CEO Mark Zuckerberg has said that the company plans to spend $600 billion on U.S. infrastructure through the end of 2028 .
+In the first half of 2025, the company spent $30 billion more than the previous year, driven largely by the company’s growing AI ambitions. Some of that spending goes toward big ticket cloud contracts, like a recent $10 billion deal with Google Cloud , but even more resources are being poured into two massive new data centers.
+A new 2,250-acre site in Louisiana, dubbed Hyperion , will cost an estimated $10 billion to build out and provide an estimated 5 gigawatts of compute power . Notably, the site includes an arrangement with a local nuclear power plant to handle the increased energy load. A smaller site in Ohio, called Prometheus, is expected to come online in 2026, powered by natural gas.
+That kind of buildout comes with real environmental costs. Elon Musk’s xAI built its own hybrid data center and power-generation plant in South Memphis, Tennessee. The plant has quickly become one of the county’s largest emitters of smog-producing chemicals, thanks to a string of natural gas turbines that experts say violate the Clean Air Act .
+The Stargate moonshot
+Just two days after his second inauguration last January, President Trump announced a joint venture between SoftBank, OpenAI, and Oracle, meant to spend $500 billion building AI infrastructure in the United States. Named “Stargate” after the 1994 film, the project arrived with incredible amounts of hype, with Trump calling it “the largest AI infrastructure project in history.” OpenAI’s Sam Altman seemed to agree, saying, ​​”I think this will be the most important project of this era.”
+In broad strokes, the plan was for SoftBank to provide the funding, with Oracle handling the buildout with input from OpenAI. Overseeing it all was Trump, who promised to clear away any regulatory hurdles that might slow down the build. But there were doubts from the beginning, including from Elon Musk, Altman’s business rival, who claimed the project did not have the available funds.
+As the hype has died down, the project has lost some momentum. In August , Bloomberg reported that the partners were failing to reach consensus. Nonetheless, the project has moved forward with the construction of eight data centers in Abilene, Texas , with construction on the final building set to be finished by the end of 2026.
+The capex crunch
+“Capital expenditures” are usually a pretty dry metric, referring to a company’s spending on physical assets. But as tech companies lined up to report their capex plans for 2026, the rush of data center spending made the figures a lot more interesting — and a lot bigger.
+Amazon was the capex leader, projecting $200 billion in 2026 spending (up from $131 billion in 2025), while Google was a close second with an estimate between $175 billion and $185 billion (up from $91 billion in 2025). Meta estimated $115 billion to $135 billion (up from $71 billion the previous year), although that figure is a little deceptive because a lot of the data center projects have been kept off their books entirely . All told, hyperscalers are planning to spend nearly $700 billion on data center projects in 2026 alone .
+It was enough money to spook some investors. The companies were mostly undeterred, however, explaining that AI infrastructure was vital to their companies’ future. It’s set up a strange dynamic. As you might expect, tech executives are more bullish on AI than their Wall Street counterparts — and the more tech companies spend, the more nervous their bankers get. Add in the huge amounts of debt many companies are taking on to fund those buildouts, and you start to hear CFOs across the valley grinding their teeth.
+That hasn’t put a damper on AI spending yet, but it will soon — unless of course, hyperscalers show they can make those investments pay off.
+This article was first published on September 22, 2025.
+Topics
+AI , evergreens , Meta , Microsoft , nvidia , oracle , Softbank , stargate
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Russell Brandom
+AI Editor
+Russell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review.
+He can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Reddit is using LLMs to solve a problem LLMs largely created
+Amanda Silberling
+Amazon will stop accepting new customers for Mechanical Turk
+Anthony Ha
+5 desk gadgets that can make your workday better
+Aisha Malik
+Chevy built an all-American EV truck — why is nobody buying it?
+Tim De Chant
+Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped
+Lucas Ropek
+Jersey Mike’s IPO illustrates how bad the AI hype has become
+Julie Bort
+After $18B IPO, Bending Spoons founder says success comes from minimizing luck
+Anna Heim
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":10661,"paragraph_count":45,"sentence_count":73,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Below, we've laid out everything we know about the biggest AI infrastructure projects, including major spending from Meta, Oracle, Microsoft, ... / query=AI server procurement contract enterprise inference / intent=find_market_trend / path=a_media_gdelt
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Image Credits: Mikhail Konoplev / Getty Images AI The billion-dollar infrastructure deals powering the AI boom Russell Brandom 12:41 PM PST · February 28, 2026 It takes a lot of computing power to run an AI product — and as the tech industry races to tap the power of AI models, there’s a parallel race underway to build the infrastructure that will power them.
+
+3. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   On a recent earnings call , Nvidia CEO Jensen Huang estimated that between $3 trillion and $4 trillion will be spent on AI infrastructure by the end of the decade — with much of that money coming from AI companies.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Along the way, they’re placing immense strain on power grids and pushing the industry’s building capacity to its limit.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Below, we’ve laid out everything we know about the biggest AI infrastructure projects, including major spending from Meta, Oracle, Microsoft, Google, and OpenAI.
+
+6. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   We’ll keep it updated as the boom continues and the numbers climb even higher.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Google, Microsoft, Meta, Amazon, Nvidia
+- products: agents
+- people: 暂无公开信息
+- industries: 金融 / 保险, 企业服务
+- roles: 采购负责人, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 采购 / 招投标
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 采购, 销售 / 客服
+- numbers: 12, 41, 28, 2026, $3 trillion, $4 trillion, 2019, $1 billion
+- quotes: primary computing partners, / Stargate / the largest AI infrastructure project in history. / Capital expenditures
+
+## evidence_seed
+
+- company_actions: Image Credits: Mikhail Konoplev / Getty Images AI The billion-dollar infrastructure deals powering the AI boom Russell Brandom 12:41 PM PST · February 28, 2026 It takes a lot of computing power to run an AI product — and as the tech industry races to tap the power of AI models, there’s a parallel race underway to build the infrastructure that will power them. / Along the way, they’re placing immense strain on power grids and pushing the industry’s building capacity to its limit. / Below, we’ve laid out everything we know about the biggest AI infrastructure projects, including major spending from Meta, Oracle, Microsoft, Google, and OpenAI.
+- case_details: 暂无公开信息
+- workflow_changes: Below, we've laid out everything we know about the biggest AI infrastructure projects, including major spending from Meta, Oracle, Microsoft, ... / query=AI server procurement contract enterprise inference / intent=find_market_trend / path=a_media_gdelt
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 采购负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Below, we've laid out everything we know about the biggest AI infrastructure projects, including major spending from Meta, Oracle, Microsoft, ... / query=AI server procurement contract enterprise inference / intent=find_market_trend / path=a_media_gdelt
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
