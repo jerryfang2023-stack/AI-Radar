@@ -1,0 +1,397 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-098
+title: "LLM-powered Biographies"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://eugeneyan.com//writing/llm-bio/"
+canonical_url: "https://eugeneyan.com/writing/llm-bio"
+source_name: "Eugene Yan's Blog"
+source_type: builder
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-07-08T02:16:36.756Z
+language: mixed
+full_text_hash: c9eea3608596fd52
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-098-llm-powered-biographies.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-098-llm-powered-biographies.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 85
+extractor_diagnostics: {"readability_score":85,"text_length":14154,"paragraph_count":80,"sentence_count":110,"boilerplate_hits":0,"symbol_ratio":0.0014,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 14154
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c9eea3608596fd52","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: d0b131b1d1c139c4
+content_hash: c9eea3608596fd52
+semantic_hash: b16acee386ae251d
+duplicate_of: ""
+first_seen_at: "2026-07-08T02:16:36.756Z"
+last_seen_at: 2026-07-08T02:16:36.756Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["Eugene Yan's Blog","Anthropic","Google","Microsoft","Amazon"],"products":["gpt-4","claude"],"people":[],"industries":["医疗"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["11 m","4","1.2","3.5","2023","03","20","2"],"quotes":[]}
+evidence_seed: {"company_actions":["Asking LLMs to generate biographies to get a sense of how they memorize and regurgitate.","LLM-powered Biographies eugeneyan Start Here Writing Speaking Prototyping About LLM-powered Biographies llm misc · 11 min read Inspired by Linus’ tweet and out of curiosity, I asked some LLMs to write a biography of me.","It seemed like a fun way to learn what these large language models (LLMs) are trained on and how they perform."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"Asking LLMs to generate biographies to get a sense of how they memorize and regurgitate.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"LLM-powered Biographies eugeneyan Start Here Writing Speaking Prototyping About LLM-powered Biographies llm misc · 11 min read Inspired by Linus’ tweet and out of curiosity, I asked some LLMs to write a biography of me.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It seemed like a fun way to learn what these large language models (LLMs) are trained on and how they perform.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Here are the results from gpt-4 , claude-v1.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"2 , cohere-xlarge , etc.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"While they’re not perfect, how each model improves over the previous is apparent.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-08T02:16:36.756Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# LLM-powered Biographies
+
+## clean_text
+
+LLM-powered Biographies
+eugeneyan
+Start Here
+Writing
+Speaking
+Prototyping
+About
+LLM-powered Biographies
+llm
+misc
+· 11 min read
+Inspired by Linus’ tweet and out of curiosity, I asked some LLMs to write a biography of me. It seemed like a fun way to learn what these large language models (LLMs) are trained on and how they perform. Here are the results from gpt-4 , claude-v1.2 , cohere-xlarge , etc. While they’re not perfect, how each model improves over the previous is apparent. Also, it’s intriguing how some models memorize and regurgitate more than others.
+Prompt: Please write me a detailed biography of Eugene Yan, who goes by @eugeneyan.
+Overall, gpt3.5/4 performed the best—they got the gist right though erred on the details. The Blurry JPEG analogy may be helpful in gaining more intuition on why this happens.
+Note: These LLMs can’t access the internet so this is based on their training data.
+gpt-4 (2023-03-20)
+Slightly better than GPT-3.5 though still many factual errors.
+Education: My Bachelor’s is in Psychology & Organization Behavior (Singapore Management University) and my Master’s is in Computer Science (Georgia Tech).
+Career: Only the first 2 roles are correct. The rest are wrong.
+Eugene Yan is a data scientist, writer, and speaker, known for his work in applied machine learning and data science. He is active on social media, particularly on Twitter, where he goes by the handle @eugeneyan.
+Education:
+Eugene holds a Bachelor’s degree in Psychology from the National University of Singapore and a Master’s degree in Social and Organizational Psychology from the London School of Economics and Political Science. He also earned a Master of Science in Business Analytics from the New York University Stern School of Business.
+Career:
+Eugene has extensive experience working in data science and machine learning across various industries. Some notable roles include:
+Data Science Lead at Lazada (Alibaba Group) - Eugene led a team of data scientists to develop and implement machine learning models, focusing on search and recommendation systems for the e-commerce platform.
+Applied Scientist at Amazon - As an applied scientist, Eugene worked on machine learning projects related to Amazon’s search and recommendation systems, improving the shopping experience for customers.
+Head of Data Science at Shopee - Eugene was responsible for leading the data science team at Shopee, a leading e-commerce platform in Southeast Asia and Taiwan. He worked on search, recommendation, and personalization systems to enhance user experience.
+Machine Learning Engineer at ThoughtWorks - Eugene worked as a consultant, helping clients build and deploy machine learning models to solve business problems.
+Currently, Eugene works as a Senior Data Scientist at Shopify, where he focuses on data-driven solutions to improve the user experience on the platform.
+Writing and Speaking:
+Eugene is a prolific writer and speaker in the data science and machine learning community. He shares his knowledge and insights on his personal blog (https://eugeneyan.com/) and has given talks at various conferences and events. His writing covers topics such as machine learning, data science, career advice, and productivity.
+Community Engagement:
+Eugene is passionate about fostering a strong data science community. He is an organizer and mentor for the Data Science Global Impact Challenge, a competition that encourages participants to use data science techniques to address pressing global issues. He is also involved in the AI Singapore initiative, which aims to promote AI and data science in Singapore.
+In summary, Eugene Yan is an experienced data scientist and machine learning practitioner known for his work in search and recommendation systems. Through his various roles, writing, and speaking engagements,and mentorship, he has contributed significantly to the field of data science and continues to share his knowledge with the community.
+gpt-3.5-turbo-0301 (2023-03-19)
+The overall theme seems correct, though it got many details wrong, including:
+Entrepreneur: Not an entrepreneur (unless it’s predicting the future?!)
+Education: My Bachelor’s is in Psychology & Organization Behavior (Singapore Management University) and my Master’s is in Computer Science (Georgia Tech).
+Career: While I didn’t start a startup in 2016, I joined one (Lazada) at around that time. It did eventually get acquired by Alibaba. Have never worked for Google.
+The rest: Flattering though somewhat exaggerated.
+Eugene Yan, also known as @eugeneyan, is a data scientist, writer, and entrepreneur based in Singapore. He is widely recognized for his contributions to the data science community, including his popular blog, eugeneyan.com, where he shares insights on data science, machine learning, and personal growth.
+Eugene holds a Bachelor’s degree in Electrical and Electronic Engineering from the National University of Singapore, as well as a Master’s degree in Management Science and Engineering from Stanford University. After completing his studies, he worked at several tech companies, including Google, where he served as a software engineer.
+In 2016, Eugene founded his own startup, Axon, which aimed to help companies harness the power of machine learning to improve their operations. The startup was eventually acquired by a larger company, but Eugene continued to work on machine learning projects and began to share his knowledge and experience through his blog and other channels.
+Eugene is known for his ability to break down complex concepts in data science and machine learning into easy-to-understand explanations. He has written extensively on topics such as deep learning, natural language processing, and reinforcement learning, as well as on the personal and professional skills needed to succeed in the field of data science.
+In addition to his writing, Eugene is also a sought-after speaker and teacher. He has given talks and workshops on data science and machine learning at conferences and events around the world, including the Strata Data Conference and the Global AI Conference.
+Eugene is deeply committed to the idea of lifelong learning and personal growth. He is a proponent of the Growth Mindset philosophy, which emphasizes the belief that intelligence and abilities can be developed through hard work and dedication. He encourages others to embrace this philosophy and to continually seek out new challenges and opportunities for learning and growth.
+Overall, Eugene Yan is a highly respected figure in the data science community, known for his technical expertise, his ability to communicate complex concepts clearly, and his dedication to helping others succeed in the field.
+text-davinci-003 (2023-03-19)
+So many errors that I don’t even know where to begin.
+Eugene Yan is a Canadian entrepreneur, investor, and public speaker. He is the founder and CEO of the venture capital firm, YAN Capital, and the co-founder of the venture studio, YAN Ventures. He is also the co-founder of the venture-backed startup, YAN Technologies.
+Eugene was born in Toronto, Canada, and grew up in the city’s East End. He attended the University of Toronto, where he earned a Bachelor of Science degree in Computer Science. After graduating, he worked as a software engineer at a number of tech companies, including Microsoft, Oracle, and IBM.
+In 2011, Eugene founded YAN Capital, a venture capital firm that invests in early-stage technology companies. Since then, the firm has invested in over 50 companies, including the likes of Uber, Slack, and Dropbox.
+In 2014, Eugene co-founded YAN Ventures, a venture studio that helps entrepreneurs build and launch their own companies. The studio has launched over 20 companies, including the likes of Instacart, ClassPass, and Thumbtack.
+In 2016, Eugene co-founded YAN Technologies, a venture-backed startup that develops software for the healthcare industry. The company
+davinci (2021-03-19)
+Creepy. Probably need to work on the prompt. But this negative example also shows how much these LLMs have improved.
+I would like to know about his background, his education, his work experience, his interests, his family, his hobbies, his friends, his favorite books, his favorite movies, his favorite music, his favorite sports, his favorite teams, his favorite restaurants, his favorite vacation spots, his favorite websites, his favorite quotes, his favorite sayings, his favorite quotations, his favorite jokes, his favorite anecdotes, his favorite memories, his favorite dreams, his favorite aspirations, his favorite goals, his favorite achievements, his favorite failures, his favorite disappointments, his favorite frustrations, his favorite fears, his favorite joys, his favorite sorrows, his favorite loves, his favorite hates, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his
+claude-v1.2 (2023-03-20)
+Doesn’t seem like it has much data. All the details other than the twitter handle are wrong.
+Unfortunately I do not have enough information to write a full, detailed biography of Eugene Yan with a high degree of accuracy. I know only the following general information:
+• Eugene Yan is the co-founder of Anthropic, PBC, an AI safety startup based in San Francisco.
+• Prior to Anthropic, Yan was the Head of Engineering at Drive.ai from 2016 to 2019.
+• Yan received his bachelor’s degree from the University of Southern California in 2016.
+• He is widely published in AI safety and serves on the Steering Committee of the AI Alignment Forum.
+• Yan is active on Twitter at @eugeneyan and posts about AI, engineering, and productivity tips.
+Beyond these sparse and general facts, I do not have access to much more information about Eugene Yan’s life history, personal details, or career evolution. Apologies that I cannot provide a fuller biography at this point with high factual accuracy. Let me know if there is any other information I can look into.
+co:here command-xlarge-nightly (2023-03-20)
+I think this is Eugene Yan g or a completely different person.
+Eugene Yan is a Chinese-American travel photographer, content creator, and drone pilot. He is best known for his landscape and aerial photography of off-the-beaten-path destinations. Through his visual storytelling, Yan aims to encourage people to explore the world and care for nature.
+Yan was born and raised in the San Francisco Bay Area, where he developed a love for nature and the outdoors. He has always been fascinated by the beauty of the natural world and the diversity of cultures around the globe.
+Yan began his career in the tech industry, but he eventually left to pursue his passion for photography and travel. He has since traveled to over 50 countries and photographed some of the most remote and breathtaking places on earth.
+Yan is also an accomplished drone pilot and has been featured in various publications for his aerial photography. He is a firm believer in the power of drone photography to capture the beauty of the world from a new perspective and to tell stories in a unique and impactful way.
+In addition to his photography work, Yan is also a content creator and has worked with brands such as Sony, DJI, and Adobe. He is also a photography educator and has led workshops and given talks on landscape and drone photography.
+Yan currently lives in the San Francisco Bay Area with his wife and two children. He is passionate about sharing his love for photography and travel with others and is always looking for new adventures and exciting destinations to explore.
+Eugene Yan is a Chinese-American travel photographer, content creator, and drone pilot. He is best known for his landscape and aerial photography of off-the-beaten-path destinations. Through his visual storytelling, Yan aims to encourage people to explore the world and care for nature.
+Yan was born and raised in the San Francisco Bay Area, where he developed a love for nature and the outdoors. He has always been fascinated by the beauty of the natural world and the diversity of cultures around the globe.
+Yan began his career in the tech industry, but he eventually left to pursue his passion for photography and travel. He has since traveled to over 50 countries and photographed some of the most remote and breathtaking places on earth.
+Yan is also an accomplished drone pilot and has been featured in various publications for his aerial photography. He is a firm believer in the power of drone photography to capture the beauty of the world from a new perspective and to tell stories in a unique and impactful way.
+In addition to his photography work, Yan is also a content creator and has worked with brands such as Sony, DJI, and Adobe. He is also a photography educator and has led workshops and given talks on landscape and drone photography.
+Yan currently lives in the San Francisco Bay Area with his wife and two children. He is passionate about sharing his love for photography and travel with others and is always looking for new adventures and exciting destinations to explore.
+If you found this useful, please cite this write-up as:
+Yan, Ziyou. (Mar 2023). LLM-powered Biographies. eugeneyan.com.
+https://eugeneyan.com/writing/llm-bio/.
+or
+@article{yan2023biography,
+title = {LLM-powered Biographies},
+author = {Yan, Ziyou},
+journal = {eugeneyan.com},
+year = {2023},
+month = {Mar},
+url = {https://eugeneyan.com/writing/llm-bio/}
+Share on:
+Browse related tags: [
+llm
+misc
+or Search
+&laquo; How to Write Data Labeling/Annotation Guidelines
+Experimenting with LLMs to Research, Reflect, and Plan &raquo;
+Join 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.
+
+## full_text
+
+LLM-powered Biographies
+eugeneyan
+Start Here
+Writing
+Speaking
+Prototyping
+About
+LLM-powered Biographies
+llm
+misc
+· 11 min read
+Inspired by Linus’ tweet and out of curiosity, I asked some LLMs to write a biography of me. It seemed like a fun way to learn what these large language models (LLMs) are trained on and how they perform. Here are the results from gpt-4 , claude-v1.2 , cohere-xlarge , etc. While they’re not perfect, how each model improves over the previous is apparent. Also, it’s intriguing how some models memorize and regurgitate more than others.
+Prompt: Please write me a detailed biography of Eugene Yan, who goes by @eugeneyan.
+Overall, gpt3.5/4 performed the best—they got the gist right though erred on the details. The Blurry JPEG analogy may be helpful in gaining more intuition on why this happens.
+Note: These LLMs can’t access the internet so this is based on their training data.
+gpt-4 (2023-03-20)
+Slightly better than GPT-3.5 though still many factual errors.
+Education: My Bachelor’s is in Psychology & Organization Behavior (Singapore Management University) and my Master’s is in Computer Science (Georgia Tech).
+Career: Only the first 2 roles are correct. The rest are wrong.
+Eugene Yan is a data scientist, writer, and speaker, known for his work in applied machine learning and data science. He is active on social media, particularly on Twitter, where he goes by the handle @eugeneyan.
+Education:
+Eugene holds a Bachelor’s degree in Psychology from the National University of Singapore and a Master’s degree in Social and Organizational Psychology from the London School of Economics and Political Science. He also earned a Master of Science in Business Analytics from the New York University Stern School of Business.
+Career:
+Eugene has extensive experience working in data science and machine learning across various industries. Some notable roles include:
+Data Science Lead at Lazada (Alibaba Group) - Eugene led a team of data scientists to develop and implement machine learning models, focusing on search and recommendation systems for the e-commerce platform.
+Applied Scientist at Amazon - As an applied scientist, Eugene worked on machine learning projects related to Amazon’s search and recommendation systems, improving the shopping experience for customers.
+Head of Data Science at Shopee - Eugene was responsible for leading the data science team at Shopee, a leading e-commerce platform in Southeast Asia and Taiwan. He worked on search, recommendation, and personalization systems to enhance user experience.
+Machine Learning Engineer at ThoughtWorks - Eugene worked as a consultant, helping clients build and deploy machine learning models to solve business problems.
+Currently, Eugene works as a Senior Data Scientist at Shopify, where he focuses on data-driven solutions to improve the user experience on the platform.
+Writing and Speaking:
+Eugene is a prolific writer and speaker in the data science and machine learning community. He shares his knowledge and insights on his personal blog (https://eugeneyan.com/) and has given talks at various conferences and events. His writing covers topics such as machine learning, data science, career advice, and productivity.
+Community Engagement:
+Eugene is passionate about fostering a strong data science community. He is an organizer and mentor for the Data Science Global Impact Challenge, a competition that encourages participants to use data science techniques to address pressing global issues. He is also involved in the AI Singapore initiative, which aims to promote AI and data science in Singapore.
+In summary, Eugene Yan is an experienced data scientist and machine learning practitioner known for his work in search and recommendation systems. Through his various roles, writing, and speaking engagements,and mentorship, he has contributed significantly to the field of data science and continues to share his knowledge with the community.
+gpt-3.5-turbo-0301 (2023-03-19)
+The overall theme seems correct, though it got many details wrong, including:
+Entrepreneur: Not an entrepreneur (unless it’s predicting the future?!)
+Education: My Bachelor’s is in Psychology & Organization Behavior (Singapore Management University) and my Master’s is in Computer Science (Georgia Tech).
+Career: While I didn’t start a startup in 2016, I joined one (Lazada) at around that time. It did eventually get acquired by Alibaba. Have never worked for Google.
+The rest: Flattering though somewhat exaggerated.
+Eugene Yan, also known as @eugeneyan, is a data scientist, writer, and entrepreneur based in Singapore. He is widely recognized for his contributions to the data science community, including his popular blog, eugeneyan.com, where he shares insights on data science, machine learning, and personal growth.
+Eugene holds a Bachelor’s degree in Electrical and Electronic Engineering from the National University of Singapore, as well as a Master’s degree in Management Science and Engineering from Stanford University. After completing his studies, he worked at several tech companies, including Google, where he served as a software engineer.
+In 2016, Eugene founded his own startup, Axon, which aimed to help companies harness the power of machine learning to improve their operations. The startup was eventually acquired by a larger company, but Eugene continued to work on machine learning projects and began to share his knowledge and experience through his blog and other channels.
+Eugene is known for his ability to break down complex concepts in data science and machine learning into easy-to-understand explanations. He has written extensively on topics such as deep learning, natural language processing, and reinforcement learning, as well as on the personal and professional skills needed to succeed in the field of data science.
+In addition to his writing, Eugene is also a sought-after speaker and teacher. He has given talks and workshops on data science and machine learning at conferences and events around the world, including the Strata Data Conference and the Global AI Conference.
+Eugene is deeply committed to the idea of lifelong learning and personal growth. He is a proponent of the Growth Mindset philosophy, which emphasizes the belief that intelligence and abilities can be developed through hard work and dedication. He encourages others to embrace this philosophy and to continually seek out new challenges and opportunities for learning and growth.
+Overall, Eugene Yan is a highly respected figure in the data science community, known for his technical expertise, his ability to communicate complex concepts clearly, and his dedication to helping others succeed in the field.
+text-davinci-003 (2023-03-19)
+So many errors that I don’t even know where to begin.
+Eugene Yan is a Canadian entrepreneur, investor, and public speaker. He is the founder and CEO of the venture capital firm, YAN Capital, and the co-founder of the venture studio, YAN Ventures. He is also the co-founder of the venture-backed startup, YAN Technologies.
+Eugene was born in Toronto, Canada, and grew up in the city’s East End. He attended the University of Toronto, where he earned a Bachelor of Science degree in Computer Science. After graduating, he worked as a software engineer at a number of tech companies, including Microsoft, Oracle, and IBM.
+In 2011, Eugene founded YAN Capital, a venture capital firm that invests in early-stage technology companies. Since then, the firm has invested in over 50 companies, including the likes of Uber, Slack, and Dropbox.
+In 2014, Eugene co-founded YAN Ventures, a venture studio that helps entrepreneurs build and launch their own companies. The studio has launched over 20 companies, including the likes of Instacart, ClassPass, and Thumbtack.
+In 2016, Eugene co-founded YAN Technologies, a venture-backed startup that develops software for the healthcare industry. The company
+davinci (2021-03-19)
+Creepy. Probably need to work on the prompt. But this negative example also shows how much these LLMs have improved.
+I would like to know about his background, his education, his work experience, his interests, his family, his hobbies, his friends, his favorite books, his favorite movies, his favorite music, his favorite sports, his favorite teams, his favorite restaurants, his favorite vacation spots, his favorite websites, his favorite quotes, his favorite sayings, his favorite quotations, his favorite jokes, his favorite anecdotes, his favorite memories, his favorite dreams, his favorite aspirations, his favorite goals, his favorite achievements, his favorite failures, his favorite disappointments, his favorite frustrations, his favorite fears, his favorite joys, his favorite sorrows, his favorite loves, his favorite hates, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his favorite loves, his
+claude-v1.2 (2023-03-20)
+Doesn’t seem like it has much data. All the details other than the twitter handle are wrong.
+Unfortunately I do not have enough information to write a full, detailed biography of Eugene Yan with a high degree of accuracy. I know only the following general information:
+• Eugene Yan is the co-founder of Anthropic, PBC, an AI safety startup based in San Francisco.
+• Prior to Anthropic, Yan was the Head of Engineering at Drive.ai from 2016 to 2019.
+• Yan received his bachelor’s degree from the University of Southern California in 2016.
+• He is widely published in AI safety and serves on the Steering Committee of the AI Alignment Forum.
+• Yan is active on Twitter at @eugeneyan and posts about AI, engineering, and productivity tips.
+Beyond these sparse and general facts, I do not have access to much more information about Eugene Yan’s life history, personal details, or career evolution. Apologies that I cannot provide a fuller biography at this point with high factual accuracy. Let me know if there is any other information I can look into.
+co:here command-xlarge-nightly (2023-03-20)
+I think this is Eugene Yan g or a completely different person.
+Eugene Yan is a Chinese-American travel photographer, content creator, and drone pilot. He is best known for his landscape and aerial photography of off-the-beaten-path destinations. Through his visual storytelling, Yan aims to encourage people to explore the world and care for nature.
+Yan was born and raised in the San Francisco Bay Area, where he developed a love for nature and the outdoors. He has always been fascinated by the beauty of the natural world and the diversity of cultures around the globe.
+Yan began his career in the tech industry, but he eventually left to pursue his passion for photography and travel. He has since traveled to over 50 countries and photographed some of the most remote and breathtaking places on earth.
+Yan is also an accomplished drone pilot and has been featured in various publications for his aerial photography. He is a firm believer in the power of drone photography to capture the beauty of the world from a new perspective and to tell stories in a unique and impactful way.
+In addition to his photography work, Yan is also a content creator and has worked with brands such as Sony, DJI, and Adobe. He is also a photography educator and has led workshops and given talks on landscape and drone photography.
+Yan currently lives in the San Francisco Bay Area with his wife and two children. He is passionate about sharing his love for photography and travel with others and is always looking for new adventures and exciting destinations to explore.
+Eugene Yan is a Chinese-American travel photographer, content creator, and drone pilot. He is best known for his landscape and aerial photography of off-the-beaten-path destinations. Through his visual storytelling, Yan aims to encourage people to explore the world and care for nature.
+Yan was born and raised in the San Francisco Bay Area, where he developed a love for nature and the outdoors. He has always been fascinated by the beauty of the natural world and the diversity of cultures around the globe.
+Yan began his career in the tech industry, but he eventually left to pursue his passion for photography and travel. He has since traveled to over 50 countries and photographed some of the most remote and breathtaking places on earth.
+Yan is also an accomplished drone pilot and has been featured in various publications for his aerial photography. He is a firm believer in the power of drone photography to capture the beauty of the world from a new perspective and to tell stories in a unique and impactful way.
+In addition to his photography work, Yan is also a content creator and has worked with brands such as Sony, DJI, and Adobe. He is also a photography educator and has led workshops and given talks on landscape and drone photography.
+Yan currently lives in the San Francisco Bay Area with his wife and two children. He is passionate about sharing his love for photography and travel with others and is always looking for new adventures and exciting destinations to explore.
+If you found this useful, please cite this write-up as:
+Yan, Ziyou. (Mar 2023). LLM-powered Biographies. eugeneyan.com.
+https://eugeneyan.com/writing/llm-bio/.
+or
+@article{yan2023biography,
+title = {LLM-powered Biographies},
+author = {Yan, Ziyou},
+journal = {eugeneyan.com},
+year = {2023},
+month = {Mar},
+url = {https://eugeneyan.com/writing/llm-bio/}
+Share on:
+Browse related tags: [
+llm
+misc
+or Search
+&laquo; How to Write Data Labeling/Annotation Guidelines
+Experimenting with LLMs to Research, Reflect, and Plan &raquo;
+Join 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 85
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":85,"text_length":14154,"paragraph_count":80,"sentence_count":110,"boilerplate_hits":0,"symbol_ratio":0.0014,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Asking LLMs to generate biographies to get a sense of how they memorize and regurgitate.
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   LLM-powered Biographies eugeneyan Start Here Writing Speaking Prototyping About LLM-powered Biographies llm misc · 11 min read Inspired by Linus’ tweet and out of curiosity, I asked some LLMs to write a biography of me.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   It seemed like a fun way to learn what these large language models (LLMs) are trained on and how they perform.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Here are the results from gpt-4 , claude-v1.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   2 , cohere-xlarge , etc.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   While they’re not perfect, how each model improves over the previous is apparent.
+
+## business_elements
+
+- companies: Eugene Yan's Blog, Anthropic, Google, Microsoft, Amazon
+- products: gpt-4, claude
+- people: 暂无公开信息
+- industries: 医疗
+- roles: 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: 11 m, 4, 1.2, 3.5, 2023, 03, 20, 2
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Asking LLMs to generate biographies to get a sense of how they memorize and regurgitate. / LLM-powered Biographies eugeneyan Start Here Writing Speaking Prototyping About LLM-powered Biographies llm misc · 11 min read Inspired by Linus’ tweet and out of curiosity, I asked some LLMs to write a biography of me. / It seemed like a fun way to learn what these large language models (LLMs) are trained on and how they perform.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Asking LLMs to generate biographies to get a sense of how they memorize and regurgitate.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

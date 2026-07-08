@@ -1,0 +1,247 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-099
+title: "The Metagame of Applying Machine Learning"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://eugeneyan.com//writing/machine-learning-metagame/"
+canonical_url: "https://eugeneyan.com/writing/machine-learning-metagame"
+source_name: "Eugene Yan's Blog"
+source_type: builder
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-07-08T02:16:36.765Z
+language: mixed
+full_text_hash: 54c1c928eec45678
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-099-the-metagame-of-applying-machine-learning.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-08/r-099-the-metagame-of-applying-machine-learning.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":7866,"paragraph_count":25,"sentence_count":69,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 7866
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"54c1c928eec45678","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: d7405979191a9fd0
+content_hash: 54c1c928eec45678
+semantic_hash: 9aba9b5c6783d793
+duplicate_of: ""
+first_seen_at: "2026-07-08T02:16:36.765Z"
+last_seen_at: 2026-07-08T02:16:36.765Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":2}
+business_elements: {"companies":["Eugene Yan's Blog","Amazon"],"products":[],"people":[],"industries":["金融 / 保险"],"roles":["CIO / IT 负责人"],"workflows":["计费 / 预算管理"],"business_actions":[],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["$700","000","2","3","4","5","6","$2 million"],"quotes":["rolls down","roll down weeks","here’s how a decision tree splits","the decision tree ranker we shipped increased CTR and conversion by x%","Could we boost the rank of products that are Fulfilled By Lazada (FBL)?"]}
+evidence_seed: {"company_actions":["How to go from knowing machine learning to applying it at work to drive impact.","The metagame is the game about/beyond the game, where you use external knowledge or factors to your advantage.","For example, if you were playing rock-paper-scissors with a random stranger, knowing that males tend to throw rock and females tend to throw scissors tilts the game in your favor."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"How to go from knowing machine learning to applying it at work to drive impact.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The metagame is the game about/beyond the game, where you use external knowledge or factors to your advantage.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"For example, if you were playing rock-paper-scissors with a random stranger, knowing that males tend to throw rock and females tend to throw scissors tilts the game in your favor.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"For StarCraft, studying your opponent’s past gameplay for preferred build and play styles helps with preparing counterstrategy.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"Or for the Massachusetts State Lottery, exploiting the rules allowed a syndicate to profit $700,000 in one week.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Under the lottery (Cash WinFall) rules, players can win by matching 2, 3, 4, 5, or 6 of the six drawn numbers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-08T02:16:36.765Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# The Metagame of Applying Machine Learning
+
+## clean_text
+
+The metagame is the game about/beyond the game, where you use external knowledge or factors to your advantage. For example, if you were playing rock-paper-scissors with a random stranger, knowing that males tend to throw rock and females tend to throw scissors tilts the game in your favor. For StarCraft, studying your opponent’s past gameplay for preferred build and play styles helps with preparing counterstrategy.
+Or for the Massachusetts State Lottery, exploiting the rules allowed a syndicate to profit $700,000 in one week. Under the lottery (Cash WinFall) rules, players can win by matching 2, 3, 4, 5, or 6 of the six drawn numbers. And when the jackpot hits $2 million and no one wins it, the prize money “rolls down” to the smaller prizes (i.e., matching 2 - 5 of six drawn numbers). When this happens, picking 5 out of 6 numbers can lead to prize money 10x higher than the $4,000 in a regular week.
+For six years, three syndicates milked Cash WinFall on “roll down weeks”. They bought a large number of tickets ( 312,000 by one syndicate leader’s account ) and shifted the statistics in their favor, letting them win more than they lose. In a ballsy move, one syndicate from MIT bought 700,000 tickets—in a single week—to “push” the jackpot over $2 million earlier than expected—they made off with nearly the entire jackpot and pocketed $700,000 in profit.
+How does this relate to machine learning? As an applied scientist, machine learning is the game, applying it in industry is the metagame. When I first started, I found a large gap between knowing machine learning (“here’s how a decision tree splits”) and applying it at work (“the decision tree ranker we shipped increased CTR and conversion by x%”).
+While I don’t claim to be good at the game, let alone the metagame, here’s some tips on applying ML at work. Also see Vicki Boykis’ great post on the ghosts in the data .
+Start from the problem (not the tech)
+Choosing the right problem is half the battle won. Don’t solve problems that don’t matter to customers or the business, no matter how exciting the tech is. What matters to the business? Usually, it’s increased revenue or reduced cost, or capabilities that allow the business to solve other problems.
+Identifying the right problem sometimes involves peeling the onion. In a previous role, someone from the logistics team had this request: “Could we boost the rank of products that are Fulfilled By Lazada (FBL)?” The request made business sense—I thought they wanted to improve the rank of FBL products to incentivize merchants to use FBL. Nonetheless, I asked, “Why?”
+“Because FBL products are delivered faster.” Now it’s clearer how this benefits customers; they get products faster! Nonetheless, I asked “Why?” again.
+“Because when it’s delivered faster, we get fewer complaints about late deliveries.” Ah, now the root problem emerges. But late deliveries wasn’t a ranking problem—it was a delivery forecasting (and logistics) problem. To solve this problem, we should reduce the occurrence of underestimations in our delivery forecasting algorithm.
+How we frame the problem is important too. To identify fraud we can either flag fraudulent transactions or greenlight safe transactions. To detect abuse on social networks, we can frame it as a supervised or unsupervised problem. As an unsupervised problem, we can adopt outlier detection (e.g., isolation forests) or network analysis (e.g., graph clustering). As a supervised problem, we’ll need to focus on collecting labelled data and having human-in-the-loop. Having the right frame often leads to outsized returns.
+More system & training data design, less model design
+I’ve often found the overall system design to matter more than model architecture (most people refer to figure 1 in this tired paper ). Also, model performance depends less on the model than the data we feed the model. Beyond data quality and quantity, how we design training data to teach our models makes the biggest difference.
+When designing systems, less is more. With three key components (e.g., Spark, SageMaker, Airflow) and a team of three people, each person can take ownership of one component and gain in-depth knowledge of it. They even have bandwidth to shadow each other. With six components (e.g., adding Kafka, Redis, Lambda), it becomes harder for each person to learn and operate what they’re tasked with, and you certainly won’t have redundancy. Also, simple designs ship faster and are easier to maintain.
+Monzo Bank’s feature store is a great example. They had a problem of serving features from their analytics store in production and designed the simplest solution to solve it—they periodically dumped features from their analytics store (BigQuery) into their production feature store (Cassandra). No need for real-time feature processing. Anything more would have been excess ops burden that would slow them down in the long run.
+I didn’t want the feature store to become a replacement for things that already existed, or a behemoth that is owned by my (small) team. Instead, I learned about what we needed by looking for patterns in the machine learning models that we were shipping. — Neal Lathia , Monzo Bank
+How we design training data can also make a difference. In natural language processing (NLP), Word2Vec and self-attention have led to breakthroughs on many NLP tasks. To benefit from this, companies have found innovative ways to shape user behavior data into sequences and fit the NLP paradigm. This has enhanced our ability to model entities (e.g., items, customers, queries) via embeddings. Plus, it’s all self-supervised!
+A key part of training data design is creating negative samples—sometimes, it’s more an art than a science. For their search model, Facebook found that using impressed-but-not-clicked as negative samples led to 55% less recall (relative to using random samples). In contrast, Amazon found that using non-click impressions and accounting for it in their loss function led to better results. JD found that using a 1:1 ratio of random negatives and batch negatives led to optimal results. Clearly, there’s no one size fits all approach.
+When designing models, multiple modular models usually work better than an all-in-one model. When all-in-one models fail, they fail badly and are nearly impossible to debug. It’s easier to have a few smaller models with distinct objectives and implementation. For example, most industry recommenders have a two-stage approach: Retrieval which is fast but coarse and focuses on recall, and ranking which is slower but more precise and focuses on precision. This also allows multiple teams to work independently and in parallel.
+Real-time recommendation architecture for Instagram ( source )
+(Nonetheless, I’ve noticed a trend of companies shifting from modular to all-in-one. For example, Baidu found that having separate retrieval and ranking steps were suboptimal and combined them into a single step . TenCent reaped gains by going multi-task with their video recommender, training it to optimize click, watch, and share events simultaneously. That said, most of the time, it makes sense to use modular models, unless you’re certain you’ve squeezed all the juice from them.)
+Be clear about your objectives and measurements
+Don’t confuse a lower model loss with a better product. How often has a model excelled in offline validation but flopped in an A/B test? (The reverse keeps me up at night—how often have I prematurely killed good models because they didn’t have the best result offline?) AFAIK, having an experimentation pipeline that lets you quickly iterate through A/B tests is the best way to assess models.
+If I had an hour to build a model, I’d spend 55 minutes building a fast and unambiguous evaluation procedure and 5 minutes trying out models.
+&mdash; Sean J. Taylor (@seanjtaylor) April 10, 2021
+
+## full_text
+
+The metagame is the game about/beyond the game, where you use external knowledge or factors to your advantage. For example, if you were playing rock-paper-scissors with a random stranger, knowing that males tend to throw rock and females tend to throw scissors tilts the game in your favor. For StarCraft, studying your opponent’s past gameplay for preferred build and play styles helps with preparing counterstrategy.
+Or for the Massachusetts State Lottery, exploiting the rules allowed a syndicate to profit $700,000 in one week. Under the lottery (Cash WinFall) rules, players can win by matching 2, 3, 4, 5, or 6 of the six drawn numbers. And when the jackpot hits $2 million and no one wins it, the prize money “rolls down” to the smaller prizes (i.e., matching 2 - 5 of six drawn numbers). When this happens, picking 5 out of 6 numbers can lead to prize money 10x higher than the $4,000 in a regular week.
+For six years, three syndicates milked Cash WinFall on “roll down weeks”. They bought a large number of tickets ( 312,000 by one syndicate leader’s account ) and shifted the statistics in their favor, letting them win more than they lose. In a ballsy move, one syndicate from MIT bought 700,000 tickets—in a single week—to “push” the jackpot over $2 million earlier than expected—they made off with nearly the entire jackpot and pocketed $700,000 in profit.
+How does this relate to machine learning? As an applied scientist, machine learning is the game, applying it in industry is the metagame. When I first started, I found a large gap between knowing machine learning (“here’s how a decision tree splits”) and applying it at work (“the decision tree ranker we shipped increased CTR and conversion by x%”).
+While I don’t claim to be good at the game, let alone the metagame, here’s some tips on applying ML at work. Also see Vicki Boykis’ great post on the ghosts in the data .
+Start from the problem (not the tech)
+Choosing the right problem is half the battle won. Don’t solve problems that don’t matter to customers or the business, no matter how exciting the tech is. What matters to the business? Usually, it’s increased revenue or reduced cost, or capabilities that allow the business to solve other problems.
+Identifying the right problem sometimes involves peeling the onion. In a previous role, someone from the logistics team had this request: “Could we boost the rank of products that are Fulfilled By Lazada (FBL)?” The request made business sense—I thought they wanted to improve the rank of FBL products to incentivize merchants to use FBL. Nonetheless, I asked, “Why?”
+“Because FBL products are delivered faster.” Now it’s clearer how this benefits customers; they get products faster! Nonetheless, I asked “Why?” again.
+“Because when it’s delivered faster, we get fewer complaints about late deliveries.” Ah, now the root problem emerges. But late deliveries wasn’t a ranking problem—it was a delivery forecasting (and logistics) problem. To solve this problem, we should reduce the occurrence of underestimations in our delivery forecasting algorithm.
+How we frame the problem is important too. To identify fraud we can either flag fraudulent transactions or greenlight safe transactions. To detect abuse on social networks, we can frame it as a supervised or unsupervised problem. As an unsupervised problem, we can adopt outlier detection (e.g., isolation forests) or network analysis (e.g., graph clustering). As a supervised problem, we’ll need to focus on collecting labelled data and having human-in-the-loop. Having the right frame often leads to outsized returns.
+More system & training data design, less model design
+I’ve often found the overall system design to matter more than model architecture (most people refer to figure 1 in this tired paper ). Also, model performance depends less on the model than the data we feed the model. Beyond data quality and quantity, how we design training data to teach our models makes the biggest difference.
+When designing systems, less is more. With three key components (e.g., Spark, SageMaker, Airflow) and a team of three people, each person can take ownership of one component and gain in-depth knowledge of it. They even have bandwidth to shadow each other. With six components (e.g., adding Kafka, Redis, Lambda), it becomes harder for each person to learn and operate what they’re tasked with, and you certainly won’t have redundancy. Also, simple designs ship faster and are easier to maintain.
+Monzo Bank’s feature store is a great example. They had a problem of serving features from their analytics store in production and designed the simplest solution to solve it—they periodically dumped features from their analytics store (BigQuery) into their production feature store (Cassandra). No need for real-time feature processing. Anything more would have been excess ops burden that would slow them down in the long run.
+I didn’t want the feature store to become a replacement for things that already existed, or a behemoth that is owned by my (small) team. Instead, I learned about what we needed by looking for patterns in the machine learning models that we were shipping. — Neal Lathia , Monzo Bank
+How we design training data can also make a difference. In natural language processing (NLP), Word2Vec and self-attention have led to breakthroughs on many NLP tasks. To benefit from this, companies have found innovative ways to shape user behavior data into sequences and fit the NLP paradigm. This has enhanced our ability to model entities (e.g., items, customers, queries) via embeddings. Plus, it’s all self-supervised!
+A key part of training data design is creating negative samples—sometimes, it’s more an art than a science. For their search model, Facebook found that using impressed-but-not-clicked as negative samples led to 55% less recall (relative to using random samples). In contrast, Amazon found that using non-click impressions and accounting for it in their loss function led to better results. JD found that using a 1:1 ratio of random negatives and batch negatives led to optimal results. Clearly, there’s no one size fits all approach.
+When designing models, multiple modular models usually work better than an all-in-one model. When all-in-one models fail, they fail badly and are nearly impossible to debug. It’s easier to have a few smaller models with distinct objectives and implementation. For example, most industry recommenders have a two-stage approach: Retrieval which is fast but coarse and focuses on recall, and ranking which is slower but more precise and focuses on precision. This also allows multiple teams to work independently and in parallel.
+Real-time recommendation architecture for Instagram ( source )
+(Nonetheless, I’ve noticed a trend of companies shifting from modular to all-in-one. For example, Baidu found that having separate retrieval and ranking steps were suboptimal and combined them into a single step . TenCent reaped gains by going multi-task with their video recommender, training it to optimize click, watch, and share events simultaneously. That said, most of the time, it makes sense to use modular models, unless you’re certain you’ve squeezed all the juice from them.)
+Be clear about your objectives and measurements
+Don’t confuse a lower model loss with a better product. How often has a model excelled in offline validation but flopped in an A/B test? (The reverse keeps me up at night—how often have I prematurely killed good models because they didn’t have the best result offline?) AFAIK, having an experimentation pipeline that lets you quickly iterate through A/B tests is the best way to assess models.
+If I had an hour to build a model, I’d spend 55 minutes building a fast and unambiguous evaluation procedure and 5 minutes trying out models.
+&mdash; Sean J. Taylor (@seanjtaylor) April 10, 2021
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":7866,"paragraph_count":25,"sentence_count":69,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   How to go from knowing machine learning to applying it at work to drive impact.
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The metagame is the game about/beyond the game, where you use external knowledge or factors to your advantage.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   For example, if you were playing rock-paper-scissors with a random stranger, knowing that males tend to throw rock and females tend to throw scissors tilts the game in your favor.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   For StarCraft, studying your opponent’s past gameplay for preferred build and play styles helps with preparing counterstrategy.
+
+5. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Or for the Massachusetts State Lottery, exploiting the rules allowed a syndicate to profit $700,000 in one week.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Under the lottery (Cash WinFall) rules, players can win by matching 2, 3, 4, 5, or 6 of the six drawn numbers.
+
+## business_elements
+
+- companies: Eugene Yan's Blog, Amazon
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 金融 / 保险
+- roles: CIO / IT 负责人
+- workflows: 计费 / 预算管理
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: $700, 000, 2, 3, 4, 5, 6, $2 million
+- quotes: rolls down / roll down weeks / here’s how a decision tree splits / the decision tree ranker we shipped increased CTR and conversion by x% / Could we boost the rank of products that are Fulfilled By Lazada (FBL)?
+
+## evidence_seed
+
+- company_actions: How to go from knowing machine learning to applying it at work to drive impact. / The metagame is the game about/beyond the game, where you use external knowledge or factors to your advantage. / For example, if you were playing rock-paper-scissors with a random stranger, knowing that males tend to throw rock and females tend to throw scissors tilts the game in your favor.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+How to go from knowing machine learning to applying it at work to drive impact.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
