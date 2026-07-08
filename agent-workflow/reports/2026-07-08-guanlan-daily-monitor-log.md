@@ -15,6 +15,10 @@
 - anysearch_configured: true
 - anysearch_disabled_for_run: false
 - provider_fallback_notes: Anysearch business fallback for query "AI platform launch enterprise customers (site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)": Anysearch Search service temporarily unavailable.; Historical Raw dedupe removed 445 URL duplicate candidate(s) before Raw selection.; Search cross-entry dedupe removed 29 duplicate provider hits before Raw selection.; Historical Raw dedupe removed 84 fetched hash duplicate candidate(s) before Raw writing.; Anysearch business fallback for query "AI agent startup raises seed Series A funding 2026 (startup OR funding OR seed OR pre-seed OR YC OR venture OR Crunchbase OR Dealroom OR PitchBook OR Tracxn)": The operation was aborted due to timeout; Historical Raw dedupe removed 44 URL duplicate candidate(s) before Raw selection.; Historical Raw dedupe removed 1 fetched hash duplicate candidate(s) before Raw writing.
+- source_provider_recovery_status: recovered_by_fallback
+- source_provider_failure_count: 23
+- recovered_failed_sources_count: 23
+- unrecovered_failed_sources_count: 0
 - source_artifacts_used: false
 - source_artifact_files: 
 - historical_dedupe_enabled: true
@@ -49,8 +53,10 @@
 - core_non_large_vendor_target: 20
 - non_core_pool_count: 54
 - index_only_pool_count: 39
-- aihot_index_only_count: 19
-- aihot_core_count: 0
+- aihot_index_only_count: 27
+- aihot_core_count: 11
+- aihot_daily_index_only_count: 19
+- aihot_daily_core_count: 0
 - importance_coverage_gaps: none
 - pool_importance_coverage_gaps: none
 - daily_selected_change_card_theme_gate: default max 2 per theme; max 3 only when theme_day=true and daily log explains why.

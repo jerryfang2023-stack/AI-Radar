@@ -187,6 +187,30 @@ function numericConfig(value, fallback) {
   return Number.isFinite(numeric) ? numeric : fallback;
 }
 
+function isDiagnosticSourceNote(value = "") {
+  return /pre-gate filtered|targeted (?:pool\/core|raw-volume) refill cycle \d+ added|Historical Raw dedupe removed|Search cross-entry dedupe removed|(?:noise_term|missing_ai_anchor_in_result|job_or_salary_page|broad_list_or_market_report|directory_or_search_page|social_or_profile_source):?[^=]*=\d+|(?:raw_count|routed_pool|core_pool|core_non_large)=\d+\/\d+/iu.test(String(value || ""));
+}
+
+function splitSourceFailureRecovery(items = [], fallbackRecovered = false) {
+  const recovered = [];
+  const unrecovered = [];
+  for (const item of items) {
+    if (isDiagnosticSourceNote(item) || fallbackRecovered) {
+      recovered.push(item);
+    } else {
+      unrecovered.push(item);
+    }
+  }
+  return { recovered, unrecovered };
+}
+
+function parseSourceFailureNotes(items = []) {
+  return items
+    .flatMap((item) => String(item || "").split(";"))
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
 const poolMinTarget = numericConfig(monitorHardGates.pool_count_min, 75);
 const routedPoolMinTarget = numericConfig(monitorHardGates.routed_pool_count_min, 60);
 const corePoolMinTarget = numericConfig(monitorHardGates.core_pool_min, 30);
@@ -5102,8 +5126,25 @@ function makeRawFiles(items, failures, runMeta = {}) {
     const routes = item.raw_record?.pool_routes || ["index_only"];
     return routes.some((route) => ["core_pool", "emerging_pool", "user_feedback_pool", "watchlist"].includes(route));
   }).length;
-  const aihotIndexOnlyCount = poolItems.filter((item) => isAIHotDailySelected(item) && (item.raw_record?.pool_routes || []).includes("index_only")).length;
-  const aihotCoreCount = poolItems.filter((item) => isAIHotDailySelected(item) && (item.raw_record?.pool_routes || []).includes("core_pool")).length;
+  const isAIHotPoolItem = (item) => item.acquisition_channel === "aihot" || item.raw_record?.acquisition_channel === "aihot";
+  const aihotDailyIndexOnlyCount = poolItems.filter((item) => isAIHotDailySelected(item) && (item.raw_record?.pool_routes || []).includes("index_only")).length;
+  const aihotDailyCoreCount = poolItems.filter((item) => isAIHotDailySelected(item) && (item.raw_record?.pool_routes || []).includes("core_pool")).length;
+  const aihotIndexOnlyCount = poolItems.filter((item) => isAIHotPoolItem(item) && (item.raw_record?.pool_routes || []).includes("index_only")).length;
+  const aihotCoreCount = poolItems.filter((item) => isAIHotPoolItem(item) && (item.raw_record?.pool_routes || []).includes("core_pool")).length;
+  const rawCoverageClear = !Array.isArray(runMeta.importance_coverage_gaps) || runMeta.importance_coverage_gaps.length === 0;
+  const poolCoverageClear = poolImportanceGaps.length === 0;
+  const sourceFallbackRecovered =
+    poolItems.length >= poolMinTarget &&
+    routedPoolCount >= routedPoolMinTarget &&
+    rawCoverageClear &&
+    poolCoverageClear;
+  const sourceFailureNotes = parseSourceFailureNotes(failures);
+  const sourceFailureRecovery = splitSourceFailureRecovery(sourceFailureNotes, sourceFallbackRecovered);
+  const recoveredFailedSources = sourceFailureRecovery.recovered;
+  const unrecoveredFailedSources = sourceFailureRecovery.unrecovered;
+  const sourceProviderRecoveryStatus = sourceFailureNotes.length
+    ? (unrecoveredFailedSources.length ? "unrecovered" : "recovered_by_fallback")
+    : "none";
   const bySnapshotStatus = items.reduce((acc, item) => {
     const key = item.snapshot?.status || "not-attempted";
     acc[key] = (acc[key] || 0) + 1;
@@ -5128,6 +5169,10 @@ function makeRawFiles(items, failures, runMeta = {}) {
     `- anysearch_configured: ${runMeta.anysearch_configured ? "true" : "false"}`,
     `- anysearch_disabled_for_run: ${runMeta.anysearch_disabled_for_run ? "true" : "false"}`,
     `- provider_fallback_notes: ${Array.isArray(runMeta.provider_fallback_notes) && runMeta.provider_fallback_notes.length ? runMeta.provider_fallback_notes.join("; ") : "none"}`,
+    `- source_provider_recovery_status: ${sourceProviderRecoveryStatus}`,
+    `- source_provider_failure_count: ${sourceFailureNotes.length}`,
+    `- recovered_failed_sources_count: ${recoveredFailedSources.length}`,
+    `- unrecovered_failed_sources_count: ${unrecoveredFailedSources.length}`,
     `- source_artifacts_used: ${runMeta.source_artifacts_used ? "true" : "false"}`,
     `- source_artifact_files: ${Array.isArray(runMeta.source_artifact_files) ? runMeta.source_artifact_files.join(", ") : ""}`,
     `- historical_dedupe_enabled: ${runMeta.historical_dedupe_enabled ? "true" : "false"}`,
@@ -5163,6 +5208,8 @@ function makeRawFiles(items, failures, runMeta = {}) {
     `- index_only_pool_count: ${byPoolIndexRoute.index_only || 0}`,
     `- aihot_index_only_count: ${aihotIndexOnlyCount}`,
     `- aihot_core_count: ${aihotCoreCount}`,
+    `- aihot_daily_index_only_count: ${aihotDailyIndexOnlyCount}`,
+    `- aihot_daily_core_count: ${aihotDailyCoreCount}`,
     `- importance_coverage_gaps: ${coverageGapText(runMeta.importance_coverage_gaps)}`,
     `- pool_importance_coverage_gaps: ${coverageGapText(poolImportanceGaps)}`,
     `- daily_selected_change_card_theme_gate: default max 2 per theme; max 3 only when theme_day=true and daily log explains why.`,

@@ -150,6 +150,8 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 29. `provider_recovery_and_card_quality_boundary`
     - Pass when AIHOT recovery checks direct daily/all endpoint failures, fallback-search use, `source_item_count`, and `raw_candidate_count`; `status=collected` alone is not enough.
     - Pass when Anysearch is considered usable if keyword source-only returns source items and raw candidates, while individual query fallback failures stay visible as diagnostics.
+    - Pass when the daily monitor log reports all-AIHot `aihot_core_count` / `aihot_index_only_count` separately from `aihot_daily_*` diagnostics, because original-source eligibility is channel-neutral after discovery.
+    - Pass when recovered provider failures are reported as `source_provider_recovery_status=recovered_by_fallback` plus recovered/unrecovered counts, and appear in recovered diagnostics rather than remaining risks when Pool/Core/Card supply gates pass.
     - Pass when Card eligibility ignores search query tails, search paths, before/after clue guesses, affected-role guesses, and provider fallback labels.
     - Pass when research benchmarks, OCR/model papers, generic FDE explainers, job posts, ESG/environment reports, broad startup/funding lists, and duplicate media copies of the same financing event do not displace named customer deployments, procurement/contract cases, concrete product launches, or single-company funding events.
     - Fail when weak technical/context pages enter public Cards while stronger same-date Signal Cards remain backend-only only because English source-title translations are missing.

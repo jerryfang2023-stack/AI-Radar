@@ -1,6 +1,6 @@
 # 2026-07-08 Guanlan Monitor Quality Gate
 
-- generated_at: 2026-07-08T04:55:54.313Z
+- generated_at: 2026-07-08T07:46:17.003Z
 - attempt: 1/1
 - status: passed
 - production_weekday: wednesday
@@ -46,6 +46,7 @@
 - aihot_resolved_core_count: 11
 - importance_coverage_gaps: none
 - pool_importance_coverage_gaps: none
+- source_provider_recovery_status: recovered_by_fallback
 - recovered_failed_sources_count: 23
 - unrecovered_failed_sources_count: 0
 - failed_sources: keyword-search pre-gate filtered 68 result(s): missing_ai_anchor_in_result=25; social_or_profile_source=22; broad_list_or_market_report=5; job_or_salary_page=5; noise_term:career=5; noise_term:hiring=2; noise_term:avatar=1; noise_term:compensation=1; noise_term:job description=1; noise_term:jobs at=1; Search cross-entry dedupe removed 1 duplicate provider hits before Raw selection.; Anysearch business fallback for query "enterprise AI transformation production rollout customer deployment (site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)": Anysearch Search service temporarily unavailable.; Anysearch fallback for query "forward deployed engineer AI customer deployment (FDE OR "forward deployed" OR "applied AI" OR "customer engineering" OR "technical scoping" OR "production rollout" OR "pilot customer" OR "customer story" OR "case study")": fetch failed; Anysearch business fallback for query "AI implementation customer engineering production deployment (site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)": Anysearch Search service temporarily unavailable.; RSS latent-space-podcast: fetch failed; RSS mad-podcast: fetch failed; RSS ai-and-i-podcast: fetch failed; RSS dataiku-blog: HTTP 404; targeted-refill pre-gate filtered 4 result(s): broad_list_or_market_report=2; directory_or_search_page=1; noise_term:career=1; targeted pool/core refill cycle 1 added 6 item(s) for core_pool=27/30; core_non_large=17/20
@@ -75,7 +76,11 @@
 
 ## Risks
 
-- recovered_source_failures=23
+- none
+
+## Recovered Diagnostics
+
+- recovered_source_failures=23; status=recovered_by_fallback
 
 ## Skill Feedback
 

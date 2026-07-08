@@ -503,6 +503,9 @@ export function runGuanlanMonitorQualityGate({
   const sourceFailureRecovery = splitSourceFailureRecovery(failedSources, sourceFallbackRecovered);
   const recoveredFailedSources = sourceFailureRecovery.recovered;
   const unrecoveredFailedSources = sourceFailureRecovery.unrecovered;
+  const sourceProviderRecoveryStatus = failedSources.length
+    ? (unrecoveredFailedSources.length ? "unrecovered" : "recovered_by_fallback")
+    : "none";
 
   const hardChecks = [
     { key: "raw_count_min", passed: rawCount >= effectiveRawMinHard || rawCountReleaseByRawToCard, value: `${rawCount}/${effectiveRawMinHard}${weekend.active ? `; default=${rawMinHard}` : ""}${rawCountReleaseByRawToCard ? "; released_by_raw_to_card_supply=true" : ""}` },
@@ -636,7 +639,6 @@ export function runGuanlanMonitorQualityGate({
     hardFailed.length ? `hard_gates_failed=${hardFailed.map((item) => item.key).join(", ")}` : "",
     routedPoolCount < routedPoolMinHard ? `routed_pool_insufficient=${routedPoolCount}/${routedPoolMinHard}` : "",
     unrecoveredFailedSources.length ? `unrecovered_failed_sources=${unrecoveredFailedSources.length}` : "",
-    failedSources.length && !unrecoveredFailedSources.length ? `recovered_source_failures=${recoveredFailedSources.length}` : "",
     themeConcentrationFlag ? `theme_concentration_warning=${logBullets.theme_concentration_warning}` : "",
     importanceCoverageValue !== "none" ? `importance_coverage_gaps=${importanceCoverageValue}` : "",
     poolImportanceCoverageValue !== "none" ? `pool_importance_coverage_gaps=${poolImportanceCoverageValue}` : "",
@@ -649,6 +651,11 @@ export function runGuanlanMonitorQualityGate({
       ? `core_large_vendor=${coreLargeVendorCount}/${coreLargeVendorMax}; ratio=${coreLargeVendorRatio.toFixed(2)}/${coreLargeVendorRatioMax}`
       : "",
     weekend.active ? `weekend_policy=${status}; weekday=${weekend.weekday}; pool_gap_min=${weekendPoolGapMin || "none"}` : "",
+  ].filter(Boolean);
+  const recoveredDiagnostics = [
+    failedSources.length && !unrecoveredFailedSources.length
+      ? `recovered_source_failures=${recoveredFailedSources.length}; status=${sourceProviderRecoveryStatus}`
+      : "",
   ].filter(Boolean);
 
   const skillFeedback = [];
@@ -722,6 +729,7 @@ export function runGuanlanMonitorQualityGate({
     `- aihot_resolved_core_count: ${aihotResolvedCoreCount}`,
     `- importance_coverage_gaps: ${importanceCoverageValue}`,
     `- pool_importance_coverage_gaps: ${poolImportanceCoverageValue}`,
+    `- source_provider_recovery_status: ${sourceProviderRecoveryStatus}`,
     `- recovered_failed_sources_count: ${recoveredFailedSources.length}`,
     `- unrecovered_failed_sources_count: ${unrecoveredFailedSources.length}`,
     `- failed_sources: ${failedSources.length ? failedSources.join("; ") : "none"}`,
@@ -744,6 +752,10 @@ export function runGuanlanMonitorQualityGate({
     "## Risks",
     "",
     ...(keyRisks.length ? keyRisks.map((risk) => `- ${risk}`) : ["- none"]),
+    "",
+    "## Recovered Diagnostics",
+    "",
+    ...(recoveredDiagnostics.length ? recoveredDiagnostics.map((item) => `- ${item}`) : ["- none"]),
     "",
     "## Skill Feedback",
     "",
@@ -811,6 +823,7 @@ export function runGuanlanMonitorQualityGate({
       core_large_vendor_ratio: coreLargeVendorRatio,
       aihot_resolved_evidence_count: aihotResolvedEvidenceCount,
       aihot_resolved_core_count: aihotResolvedCoreCount,
+      source_provider_recovery_status: sourceProviderRecoveryStatus,
       failed_sources_count: failedSources.length,
       recovered_failed_sources_count: recoveredFailedSources.length,
       unrecovered_failed_sources_count: unrecoveredFailedSources.length,
