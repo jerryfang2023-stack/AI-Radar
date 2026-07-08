@@ -1,5 +1,5 @@
 ---
-id: SIG-20260708-A08
+id: SIG-20260708-A13
 type: signal_card
 signal_type: funding
 title: "Bespoke Labs 获得 $40M 融资"
@@ -9,8 +9,8 @@ source_title: "Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs rais
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-08T04:49:06.480Z
-updated_at: 2026-07-08T04:49:06.480Z
+created_at: 2026-07-08T06:10:03.935Z
+updated_at: 2026-07-08T06:10:03.935Z
 
 raw_refs: ["R-059"]
 pool_refs: ["P-059"]

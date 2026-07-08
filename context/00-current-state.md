@@ -21,7 +21,7 @@ WaveSight AI is now in SITE-V3.4.4 AI Hardware Lens Release.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal frontstage presents all qualified Raw / Pool business signals that pass raw-to-card cardability and can become Cards, sorted by importance / impact from high to low. Pool remains a backend audit index and repair surface, not a required manual selection layer.
 - SITE-V3.4.4 keeps the unified frontstage, Reports Center opportunity system, Business Signals quality boundary, Enterprise AI / FDE ingestion boundary, and adds a separate AI Hardware observation lens under Business Signals.
-- Current column versions: Business Signals `BSIG-V2.1.0-ai-hardware-lens`, Enterprise AI / FDE `EAI-V1.2.0-raw-card-ingestion-boundary`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Reports Center `IMAP-V2.0.0-report-center-opportunity-system`.
+- Current column versions: Business Signals `BSIG-V2.1.1-channel-neutral-card-supply`, Enterprise AI / FDE `EAI-V1.2.0-raw-card-ingestion-boundary`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Reports Center `IMAP-V2.0.0-report-center-opportunity-system`.
 - Current tag taxonomy version: `TAG-V1.1.0-v34-layered-taxonomy`.
 
 ## Current Entries

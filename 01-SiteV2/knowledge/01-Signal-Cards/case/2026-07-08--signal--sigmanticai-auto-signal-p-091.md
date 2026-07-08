@@ -1,5 +1,5 @@
 ---
-id: SIG-20260708-A09
+id: SIG-20260708-A14
 type: signal_card
 signal_type: case
 title: "Launch YC: SigmanticAI - The Cursor for Hardware Design"
@@ -9,8 +9,8 @@ source_title: "Launch YC: SigmanticAI - The Cursor for Hardware Design | Y Combi
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-08T04:49:06.480Z
-updated_at: 2026-07-08T04:49:06.480Z
+created_at: 2026-07-08T06:10:03.935Z
+updated_at: 2026-07-08T06:10:03.935Z
 
 raw_refs: ["R-091"]
 pool_refs: ["P-091"]

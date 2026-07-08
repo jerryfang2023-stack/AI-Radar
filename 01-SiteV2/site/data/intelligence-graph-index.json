@@ -2,10 +2,10 @@
   "meta": {
     "version": "V3.3.6.3-business-source-artifact-aggregation",
     "siteVersion": "SITE-V3.4.4",
-    "businessSignalsColumnVersion": "BSIG-V2.1.0-ai-hardware-lens",
+    "businessSignalsColumnVersion": "BSIG-V2.1.1-channel-neutral-card-supply",
     "enterpriseAiLensVersion": "EAI-V1.2.0-raw-card-ingestion-boundary",
     "intelligenceMapColumnVersion": "IMAP-V2.0.0-report-center-opportunity-system",
-    "generatedAt": "2026-07-08T04:56:41.671Z",
+    "generatedAt": "2026-07-08T06:10:29.558Z",
     "activeDate": "2026-07-08",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -47,43 +47,54 @@
   },
   "summary": {
     "activeDate": "2026-07-08",
-    "totalCards": 466,
-    "todayCards": 9,
-    "todayFrontstageCards": 9,
-    "coreSignalCards": 8,
-    "relationshipNodes": 17,
-    "relationshipEdges": 23,
+    "totalCards": 471,
+    "todayCards": 14,
+    "todayFrontstageCards": 14,
+    "coreSignalCards": 13,
+    "relationshipNodes": 23,
+    "relationshipEdges": 36,
     "relationshipClusters": 1,
-    "enterpriseAiTransformation": 1,
+    "enterpriseAiTransformation": 2,
     "aiHardwareSignals": 8,
-    "tagAssociations": 3,
+    "tagAssociations": 6,
     "trendLinks": 16,
     "trendCandidates": 0
   },
   "dailyLens": {
     "frontstageCardIds": [
+      "SIG-20260708-A11",
       "SIG-20260708-A07",
-      "SIG-20260708-A05",
       "SIG-20260708-A03",
+      "SIG-20260708-A12",
+      "SIG-20260708-A05",
+      "SIG-20260708-A06",
       "SIG-20260708-A04",
       "SIG-20260708-A02",
+      "SIG-20260708-A10",
       "SIG-20260708-A01",
+      "SIG-20260708-A13",
+      "SIG-20260708-A09",
       "SIG-20260708-A08",
-      "SIG-20260708-A06",
-      "SIG-20260708-A09"
+      "SIG-20260708-A14"
     ],
     "coreSignalCardIds": [
+      "SIG-20260708-A11",
       "SIG-20260708-A07",
-      "SIG-20260708-A05",
       "SIG-20260708-A03",
+      "SIG-20260708-A12",
+      "SIG-20260708-A05",
+      "SIG-20260708-A06",
       "SIG-20260708-A04",
       "SIG-20260708-A02",
+      "SIG-20260708-A10",
+      "SIG-20260708-A13",
+      "SIG-20260708-A09",
       "SIG-20260708-A08",
-      "SIG-20260708-A06",
-      "SIG-20260708-A09"
+      "SIG-20260708-A14"
     ],
     "enterpriseAiTransformationCardIds": [
-      "SIG-20260708-A01"
+      "SIG-20260708-A01",
+      "SIG-20260708-A10"
     ],
     "aiHardwareSignalIds": [
       "AIHW-2026-07-08-P-008",
@@ -97,7 +108,7 @@
     ],
     "largeCompanyCards": [
       {
-        "id": "SIG-20260708-A08",
+        "id": "SIG-20260708-A13",
         "vendor": "anthropic",
         "title": "Bespoke Labs 获得 $40M 融资"
       }
@@ -106,35 +117,50 @@
       {
         "category": "case",
         "label": "案例",
-        "today": 4,
-        "last7": 36,
-        "last30": 163,
-        "total": 193,
+        "today": 6,
+        "last7": 38,
+        "last30": 165,
+        "total": 195,
         "topTags": [
           {
             "tag": "evidence-customer-adoption",
             "label": "客户采用",
-            "count": 4
+            "count": 6
           },
           {
             "tag": "track-enterprise-workflow",
             "label": "企业工作流",
-            "count": 3
+            "count": 4
+          },
+          {
+            "tag": "function-customer-service",
+            "label": "客服售后",
+            "count": 1
+          },
+          {
+            "tag": "scenario-customer-ticket",
+            "label": "工单与质检",
+            "count": 1
+          },
+          {
+            "tag": "track-ai-customer-service",
+            "label": "AI 客服",
+            "count": 1
           }
         ]
       },
       {
         "category": "funding",
         "label": "融资",
-        "today": 5,
-        "last7": 24,
-        "last30": 55,
-        "total": 72,
+        "today": 8,
+        "last7": 27,
+        "last30": 58,
+        "total": 75,
         "topTags": [
           {
             "tag": "evidence-funding",
             "label": "融资证据",
-            "count": 5
+            "count": 8
           },
           {
             "tag": "evidence-pricing-cost",
@@ -197,7 +223,7 @@
   },
   "todayFrontstageCards": [
     {
-      "id": "SIG-20260708-A07",
+      "id": "SIG-20260708-A11",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "funding",
@@ -286,7 +312,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A05",
+      "id": "SIG-20260708-A07",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "funding",
@@ -362,7 +388,7 @@
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "Rocketlane 获得 $60 m 融资",
+      "title": "Rocketlane 获得战略投资",
       "subject": "Rocketlane",
       "sourceName": "prnewswire.com",
       "sourceUrl": "https://www.prnewswire.com/news-releases/atlassian-ventures-makes-strategic-investment-in-rocketlane-backing-the-next-era-of-professional-services-delivery-302819530.html",
@@ -410,7 +436,7 @@
           "label": "融资证据"
         }
       ],
-      "fact": "Rocketlane宣布完成6000万美元C 轮融资。",
+      "fact": "Rocketlane 获得战略投资。",
       "evidencePoints": [
         "prnewswire 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -426,7 +452,147 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A04",
+      "id": "SIG-20260708-A12",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "Together AI 获得 $800M 融资",
+      "subject": "Together AI",
+      "sourceName": "techcrunch.com",
+      "sourceUrl": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "rankScore": 726,
+      "evidenceScore": 24,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "evidence-funding",
+        "stage-rising"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        }
+      ],
+      "fact": "Neocloud Together AI 获得 $800M 融资。",
+      "evidencePoints": [
+        "Together AI宣布完成8亿美元融资。",
+        "techcrunch 获得$800M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A05",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "Ornn 获得 $33M 融资",
+      "subject": "Ornn",
+      "sourceName": "siliconangle.com",
+      "sourceUrl": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 714,
+      "evidenceScore": 24,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "evidence-funding",
+        "stage-rising"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        }
+      ],
+      "fact": "Ornn 获得 $33M 融资。",
+      "evidencePoints": [
+        "Ornn宣布完成3300万美元融资。",
+        "SiliconANGLE 获得$33M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A06",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "funding",
@@ -489,6 +655,75 @@
         "涉及资金流向、预算规模或融资信号"
       ],
       "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A04",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "OXMIQ 获得 $35 M 融资",
+      "subject": "OXMIQ",
+      "sourceName": "oxmiq.ai",
+      "sourceUrl": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 702,
+      "evidenceScore": 30,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "evidence-funding",
+        "stage-rising"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        }
+      ],
+      "fact": "OXMIQ宣布完成3500万美元A 轮融资。",
+      "evidencePoints": [
+        "OXMIQ宣布完成融资，用于建设custom AI silicon without a full chip program。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -566,6 +801,81 @@
       "fromCorePool": true
     },
     {
+      "id": "SIG-20260708-A10",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "subject": "Eliza",
+      "sourceName": "eliza.com",
+      "sourceUrl": "https://eliza.com/case-studies/global-internal-automation-agents-for-a-50bn-cpg",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 676,
+      "evidenceScore": 58,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "evidencePoints": [
+        "Eliza 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "SIG-20260708-A01",
       "date": "2026-07-08",
       "type": "signal_card",
@@ -637,7 +947,7 @@
       "fromCorePool": false
     },
     {
-      "id": "SIG-20260708-A08",
+      "id": "SIG-20260708-A13",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "funding",
@@ -709,7 +1019,85 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A06",
+      "id": "SIG-20260708-A09",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions",
+      "subject": "Axis Max Life",
+      "sourceName": "techcircle.in",
+      "sourceUrl": "https://www.techcircle.in/2026/07/07/axis-max-life-uses-voice-ai-to-analyse-6-lakh-customer-calls-boosts-conversions",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 624,
+      "evidenceScore": 36,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-ai-customer-service"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-customer-ticket"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-customer-ticket",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "techcircle 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "evidencePoints": [],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A08",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "case",
@@ -783,7 +1171,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A09",
+      "id": "SIG-20260708-A14",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "case",
@@ -1364,7 +1752,7 @@
   ],
   "cards": [
     {
-      "id": "SIG-20260708-A07",
+      "id": "SIG-20260708-A11",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "funding",
@@ -1453,7 +1841,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A05",
+      "id": "SIG-20260708-A07",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "funding",
@@ -1529,7 +1917,7 @@
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "Rocketlane 获得 $60 m 融资",
+      "title": "Rocketlane 获得战略投资",
       "subject": "Rocketlane",
       "sourceName": "prnewswire.com",
       "sourceUrl": "https://www.prnewswire.com/news-releases/atlassian-ventures-makes-strategic-investment-in-rocketlane-backing-the-next-era-of-professional-services-delivery-302819530.html",
@@ -1577,7 +1965,7 @@
           "label": "融资证据"
         }
       ],
-      "fact": "Rocketlane宣布完成6000万美元C 轮融资。",
+      "fact": "Rocketlane 获得战略投资。",
       "evidencePoints": [
         "prnewswire 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -1593,7 +1981,147 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A04",
+      "id": "SIG-20260708-A12",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "Together AI 获得 $800M 融资",
+      "subject": "Together AI",
+      "sourceName": "techcrunch.com",
+      "sourceUrl": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "rankScore": 726,
+      "evidenceScore": 24,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "evidence-funding",
+        "stage-rising"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        }
+      ],
+      "fact": "Neocloud Together AI 获得 $800M 融资。",
+      "evidencePoints": [
+        "Together AI宣布完成8亿美元融资。",
+        "techcrunch 获得$800M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A05",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "Ornn 获得 $33M 融资",
+      "subject": "Ornn",
+      "sourceName": "siliconangle.com",
+      "sourceUrl": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 714,
+      "evidenceScore": 24,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "evidence-funding",
+        "stage-rising"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        }
+      ],
+      "fact": "Ornn 获得 $33M 融资。",
+      "evidencePoints": [
+        "Ornn宣布完成3300万美元融资。",
+        "SiliconANGLE 获得$33M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A06",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "funding",
@@ -1656,6 +2184,75 @@
         "涉及资金流向、预算规模或融资信号"
       ],
       "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A04",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "OXMIQ 获得 $35 M 融资",
+      "subject": "OXMIQ",
+      "sourceName": "oxmiq.ai",
+      "sourceUrl": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 702,
+      "evidenceScore": 30,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "evidence-funding",
+        "stage-rising"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        }
+      ],
+      "fact": "OXMIQ宣布完成3500万美元A 轮融资。",
+      "evidencePoints": [
+        "OXMIQ宣布完成融资，用于建设custom AI silicon without a full chip program。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -1733,6 +2330,81 @@
       "fromCorePool": true
     },
     {
+      "id": "SIG-20260708-A10",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "subject": "Eliza",
+      "sourceName": "eliza.com",
+      "sourceUrl": "https://eliza.com/case-studies/global-internal-automation-agents-for-a-50bn-cpg",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 676,
+      "evidenceScore": 58,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "evidencePoints": [
+        "Eliza 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "SIG-20260708-A01",
       "date": "2026-07-08",
       "type": "signal_card",
@@ -1804,7 +2476,7 @@
       "fromCorePool": false
     },
     {
-      "id": "SIG-20260708-A08",
+      "id": "SIG-20260708-A13",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "funding",
@@ -1876,7 +2548,85 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A06",
+      "id": "SIG-20260708-A09",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions",
+      "subject": "Axis Max Life",
+      "sourceName": "techcircle.in",
+      "sourceUrl": "https://www.techcircle.in/2026/07/07/axis-max-life-uses-voice-ai-to-analyse-6-lakh-customer-calls-boosts-conversions",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 624,
+      "evidenceScore": 36,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-ai-customer-service"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-customer-ticket"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-customer-ticket",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "techcircle 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "evidencePoints": [],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A08",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "case",
@@ -1950,7 +2700,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A09",
+      "id": "SIG-20260708-A14",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "case",
@@ -40978,7 +41728,7 @@
   ],
   "coreSignalCards": [
     {
-      "id": "SIG-20260708-A07",
+      "id": "SIG-20260708-A11",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "funding",
@@ -41067,7 +41817,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A05",
+      "id": "SIG-20260708-A07",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "funding",
@@ -41143,7 +41893,7 @@
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "Rocketlane 获得 $60 m 融资",
+      "title": "Rocketlane 获得战略投资",
       "subject": "Rocketlane",
       "sourceName": "prnewswire.com",
       "sourceUrl": "https://www.prnewswire.com/news-releases/atlassian-ventures-makes-strategic-investment-in-rocketlane-backing-the-next-era-of-professional-services-delivery-302819530.html",
@@ -41191,7 +41941,7 @@
           "label": "融资证据"
         }
       ],
-      "fact": "Rocketlane宣布完成6000万美元C 轮融资。",
+      "fact": "Rocketlane 获得战略投资。",
       "evidencePoints": [
         "prnewswire 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -41207,7 +41957,147 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A04",
+      "id": "SIG-20260708-A12",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "Together AI 获得 $800M 融资",
+      "subject": "Together AI",
+      "sourceName": "techcrunch.com",
+      "sourceUrl": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "rankScore": 726,
+      "evidenceScore": 24,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "evidence-funding",
+        "stage-rising"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        }
+      ],
+      "fact": "Neocloud Together AI 获得 $800M 融资。",
+      "evidencePoints": [
+        "Together AI宣布完成8亿美元融资。",
+        "techcrunch 获得$800M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A05",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "Ornn 获得 $33M 融资",
+      "subject": "Ornn",
+      "sourceName": "siliconangle.com",
+      "sourceUrl": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 714,
+      "evidenceScore": 24,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "evidence-funding",
+        "stage-rising"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        }
+      ],
+      "fact": "Ornn 获得 $33M 融资。",
+      "evidencePoints": [
+        "Ornn宣布完成3300万美元融资。",
+        "SiliconANGLE 获得$33M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A06",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "funding",
@@ -41270,6 +42160,75 @@
         "涉及资金流向、预算规模或融资信号"
       ],
       "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A04",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "OXMIQ 获得 $35 M 融资",
+      "subject": "OXMIQ",
+      "sourceName": "oxmiq.ai",
+      "sourceUrl": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 702,
+      "evidenceScore": 30,
+      "poolRoutes": [
+        "core_pool",
+        "emerging_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "evidence-funding",
+        "stage-rising"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        }
+      ],
+      "fact": "OXMIQ宣布完成3500万美元A 轮融资。",
+      "evidencePoints": [
+        "OXMIQ宣布完成融资，用于建设custom AI silicon without a full chip program。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -41347,7 +42306,82 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A08",
+      "id": "SIG-20260708-A10",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "subject": "Eliza",
+      "sourceName": "eliza.com",
+      "sourceUrl": "https://eliza.com/case-studies/global-internal-automation-agents-for-a-50bn-cpg",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 676,
+      "evidenceScore": 58,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "evidencePoints": [
+        "Eliza 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A13",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "funding",
@@ -41419,7 +42453,85 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A06",
+      "id": "SIG-20260708-A09",
+      "date": "2026-07-08",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions",
+      "subject": "Axis Max Life",
+      "sourceName": "techcircle.in",
+      "sourceUrl": "https://www.techcircle.in/2026/07/07/axis-max-life-uses-voice-ai-to-analyse-6-lakh-customer-calls-boosts-conversions",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 624,
+      "evidenceScore": 36,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-ai-customer-service"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-customer-ticket"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-customer-ticket",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "techcircle 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "evidencePoints": [],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260708-A08",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "case",
@@ -41493,7 +42605,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260708-A09",
+      "id": "SIG-20260708-A14",
       "date": "2026-07-08",
       "type": "signal_card",
       "category": "case",
@@ -41563,14 +42675,14 @@
         "id": "category:融资",
         "label": "融资",
         "type": "category",
-        "weight": 5,
+        "weight": 8,
         "category": "funding"
       },
       {
         "id": "category:案例",
         "label": "案例",
         "type": "category",
-        "weight": 4,
+        "weight": 6,
         "category": "case"
       },
       {
@@ -41580,6 +42692,22 @@
         "weight": 1,
         "category": "case",
         "sourceName": "intuitionlabs.ai"
+      },
+      {
+        "id": "subject:Axis-Max-Life",
+        "label": "Axis Max Life",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "techcircle.in"
+      },
+      {
+        "id": "subject:Eliza",
+        "label": "Eliza",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "eliza.com"
       },
       {
         "id": "subject:Norm-AI",
@@ -41596,6 +42724,22 @@
         "weight": 1,
         "category": "funding",
         "sourceName": "withone.ai"
+      },
+      {
+        "id": "subject:Ornn",
+        "label": "Ornn",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "siliconangle.com"
+      },
+      {
+        "id": "subject:OXMIQ",
+        "label": "OXMIQ",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "oxmiq.ai"
       },
       {
         "id": "subject:Peraton",
@@ -41638,6 +42782,14 @@
         "sourceName": "techfundingnews.com"
       },
       {
+        "id": "subject:Together-AI",
+        "label": "Together AI",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "techcrunch.com"
+      },
+      {
         "id": "subject:ZEISS",
         "label": "ZEISS",
         "type": "subject",
@@ -41646,39 +42798,46 @@
         "sourceName": "diagrid.io"
       },
       {
-        "id": "signal:evidence-customer-adoption",
-        "label": "客户采用",
-        "type": "signal",
-        "weight": 4,
-        "tag": "evidence-customer-adoption"
-      },
-      {
         "id": "signal:evidence-funding",
         "label": "融资证据",
         "type": "signal",
-        "weight": 4,
+        "weight": 7,
         "tag": "evidence-funding"
+      },
+      {
+        "id": "signal:evidence-customer-adoption",
+        "label": "客户采用",
+        "type": "signal",
+        "weight": 5,
+        "tag": "evidence-customer-adoption"
       },
       {
         "id": "signal:track-enterprise-workflow",
         "label": "企业工作流",
         "type": "signal",
-        "weight": 3,
+        "weight": 4,
         "tag": "track-enterprise-workflow"
       },
       {
         "id": "signal:function-customer-service",
         "label": "客服售后",
         "type": "signal",
-        "weight": 1,
+        "weight": 2,
         "tag": "function-customer-service"
       },
       {
         "id": "signal:track-ai-customer-service",
         "label": "AI 客服",
         "type": "signal",
-        "weight": 1,
+        "weight": 2,
         "tag": "track-ai-customer-service"
+      },
+      {
+        "id": "signal:scenario-customer-ticket",
+        "label": "工单与质检",
+        "type": "signal",
+        "weight": 1,
+        "tag": "scenario-customer-ticket"
       },
       {
         "id": "signal:track-ai-governance",
@@ -41703,6 +42862,18 @@
       },
       {
         "from": "category:案例",
+        "to": "subject:Eliza",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A10"
+        ],
+        "titles": [
+          "Global Internal Automation Agents for a $50BN CPG - Eliza"
+        ]
+      },
+      {
+        "from": "category:案例",
         "to": "subject:ZEISS",
         "label": "案例",
         "weight": 1,
@@ -41715,11 +42886,23 @@
       },
       {
         "from": "category:案例",
+        "to": "subject:Axis-Max-Life",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A09"
+        ],
+        "titles": [
+          "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions"
+        ]
+      },
+      {
+        "from": "category:案例",
         "to": "subject:Peraton",
         "label": "案例",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A06"
+          "SIG-20260708-A08"
         ],
         "titles": [
           "Peraton 发布 Peraton[x]™"
@@ -41731,7 +42914,7 @@
         "label": "案例",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A09"
+          "SIG-20260708-A14"
         ],
         "titles": [
           "Launch YC: SigmanticAI - The Cursor for Hardware Design"
@@ -41743,7 +42926,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A07"
+          "SIG-20260708-A11"
         ],
         "titles": [
           "Savi Security 发布反 AI 诈骗 App，抵御语音/短信/电话骗局（如绑架勒索）"
@@ -41755,7 +42938,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A07"
+          "SIG-20260708-A11"
         ],
         "titles": [
           "Savi Security 发布反 AI 诈骗 App，抵御语音/短信/电话骗局（如绑架勒索）"
@@ -41767,7 +42950,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A07"
+          "SIG-20260708-A11"
         ],
         "titles": [
           "Savi Security 发布反 AI 诈骗 App，抵御语音/短信/电话骗局（如绑架勒索）"
@@ -41779,7 +42962,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A05"
+          "SIG-20260708-A07"
         ],
         "titles": [
           "Norm AI 获得 $120M 融资"
@@ -41794,7 +42977,31 @@
           "SIG-20260708-A03"
         ],
         "titles": [
-          "Rocketlane 获得 $60 m 融资"
+          "Rocketlane 获得战略投资"
+        ]
+      },
+      {
+        "from": "subject:Together-AI",
+        "to": "signal:evidence-funding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A12"
+        ],
+        "titles": [
+          "Together AI 获得 $800M 融资"
+        ]
+      },
+      {
+        "from": "subject:Ornn",
+        "to": "signal:evidence-funding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A05"
+        ],
+        "titles": [
+          "Ornn 获得 $33M 融资"
         ]
       },
       {
@@ -41803,10 +43010,22 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A04"
+          "SIG-20260708-A06"
         ],
         "titles": [
           "One 获得 $4M 融资"
+        ]
+      },
+      {
+        "from": "subject:OXMIQ",
+        "to": "signal:evidence-funding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A04"
+        ],
+        "titles": [
+          "OXMIQ 获得 $35 M 融资"
         ]
       },
       {
@@ -41831,6 +43050,30 @@
         ],
         "titles": [
           "Enterprise AI Rollout Case Study: Amgen's 20,000 Users"
+        ]
+      },
+      {
+        "from": "subject:Eliza",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A10"
+        ],
+        "titles": [
+          "Global Internal Automation Agents for a $50BN CPG - Eliza"
+        ]
+      },
+      {
+        "from": "subject:Eliza",
+        "to": "signal:evidence-customer-adoption",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A10"
+        ],
+        "titles": [
+          "Global Internal Automation Agents for a $50BN CPG - Eliza"
         ]
       },
       {
@@ -41863,10 +43106,46 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A08"
+          "SIG-20260708-A13"
         ],
         "titles": [
           "Bespoke Labs 获得 $40M 融资"
+        ]
+      },
+      {
+        "from": "subject:Axis-Max-Life",
+        "to": "signal:track-ai-customer-service",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A09"
+        ],
+        "titles": [
+          "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions"
+        ]
+      },
+      {
+        "from": "subject:Axis-Max-Life",
+        "to": "signal:function-customer-service",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A09"
+        ],
+        "titles": [
+          "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions"
+        ]
+      },
+      {
+        "from": "subject:Axis-Max-Life",
+        "to": "signal:scenario-customer-ticket",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A09"
+        ],
+        "titles": [
+          "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions"
         ]
       },
       {
@@ -41875,7 +43154,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A06"
+          "SIG-20260708-A08"
         ],
         "titles": [
           "Peraton 发布 Peraton[x]™"
@@ -41887,7 +43166,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A06"
+          "SIG-20260708-A08"
         ],
         "titles": [
           "Peraton 发布 Peraton[x]™"
@@ -41899,7 +43178,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A09"
+          "SIG-20260708-A14"
         ],
         "titles": [
           "Launch YC: SigmanticAI - The Cursor for Hardware Design"
@@ -41911,7 +43190,7 @@
         "label": "融资",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A07"
+          "SIG-20260708-A11"
         ],
         "titles": [
           "Savi Security 发布反 AI 诈骗 App，抵御语音/短信/电话骗局（如绑架勒索）"
@@ -41923,7 +43202,7 @@
         "label": "融资",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A05"
+          "SIG-20260708-A07"
         ],
         "titles": [
           "Norm AI 获得 $120M 融资"
@@ -41938,7 +43217,31 @@
           "SIG-20260708-A03"
         ],
         "titles": [
-          "Rocketlane 获得 $60 m 融资"
+          "Rocketlane 获得战略投资"
+        ]
+      },
+      {
+        "from": "category:融资",
+        "to": "subject:Together-AI",
+        "label": "融资",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A12"
+        ],
+        "titles": [
+          "Together AI 获得 $800M 融资"
+        ]
+      },
+      {
+        "from": "category:融资",
+        "to": "subject:Ornn",
+        "label": "融资",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A05"
+        ],
+        "titles": [
+          "Ornn 获得 $33M 融资"
         ]
       },
       {
@@ -41947,10 +43250,22 @@
         "label": "融资",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A04"
+          "SIG-20260708-A06"
         ],
         "titles": [
           "One 获得 $4M 融资"
+        ]
+      },
+      {
+        "from": "category:融资",
+        "to": "subject:OXMIQ",
+        "label": "融资",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260708-A04"
+        ],
+        "titles": [
+          "OXMIQ 获得 $35 M 融资"
         ]
       },
       {
@@ -41959,7 +43274,7 @@
         "label": "融资",
         "weight": 1,
         "cardIds": [
-          "SIG-20260708-A08"
+          "SIG-20260708-A13"
         ],
         "titles": [
           "Bespoke Labs 获得 $40M 融资"
@@ -41969,22 +43284,26 @@
     "clusters": [
       {
         "id": "agent-workflow-enterprise",
-        "title": "Amgen、Peraton 记录 Agent 进入采购、数据连接和企业流程",
+        "title": "Amgen、Eliza 记录 Agent 进入采购、数据连接和企业流程",
         "direction": "企业工作流",
         "relation": [
           "AI Agent",
           "企业工作流",
           "大中型企业"
         ],
-        "summary": "intuitionlabs 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 Peraton 发布 Peraton[x]™",
-        "evidenceMeta": "素材：Amgen / Peraton / ZEISS",
-        "detailFocus": "intuitionlabs 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 Peraton 发布 Peraton[x]™",
-        "todayCount": 3,
-        "last7Count": 27,
-        "last30Count": 109,
+        "summary": "intuitionlabs 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 Eliza 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。 diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+        "evidenceMeta": "素材：Amgen / Eliza / Peraton",
+        "detailFocus": "intuitionlabs 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 Eliza 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。 diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+        "todayCount": 4,
+        "last7Count": 28,
+        "last30Count": 110,
         "subjects": [
           {
             "label": "Amgen",
+            "count": 1
+          },
+          {
+            "label": "Eliza",
             "count": 1
           },
           {
@@ -41999,7 +43318,7 @@
         "categories": [
           {
             "label": "案例",
-            "count": 3
+            "count": 4
           }
         ],
         "supportingCards": [
@@ -42013,6 +43332,15 @@
             "date": "2026-07-08"
           },
           {
+            "id": "SIG-20260708-A10",
+            "title": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+            "subject": "Eliza",
+            "categoryLabel": "案例",
+            "sourceName": "eliza.com",
+            "sourceUrl": "https://eliza.com/case-studies/global-internal-automation-agents-for-a-50bn-cpg",
+            "date": "2026-07-08"
+          },
+          {
             "id": "SIG-20260708-A01",
             "title": "ZEISS Case Study: Document Extraction with Dapr Agents",
             "subject": "ZEISS",
@@ -42022,7 +43350,7 @@
             "date": "2026-07-08"
           },
           {
-            "id": "SIG-20260708-A06",
+            "id": "SIG-20260708-A08",
             "title": "Peraton 发布 Peraton[x]™",
             "subject": "Peraton",
             "categoryLabel": "案例",
@@ -42037,22 +43365,26 @@
   "relationshipDirections": [
     {
       "id": "agent-workflow-enterprise",
-      "title": "Amgen、Peraton 记录 Agent 进入采购、数据连接和企业流程",
+      "title": "Amgen、Eliza 记录 Agent 进入采购、数据连接和企业流程",
       "direction": "企业工作流",
       "relation": [
         "AI Agent",
         "企业工作流",
         "大中型企业"
       ],
-      "summary": "intuitionlabs 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 Peraton 发布 Peraton[x]™",
-      "evidenceMeta": "素材：Amgen / Peraton / ZEISS",
-      "detailFocus": "intuitionlabs 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 Peraton 发布 Peraton[x]™",
-      "todayCount": 3,
-      "last7Count": 27,
-      "last30Count": 109,
+      "summary": "intuitionlabs 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 Eliza 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。 diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "evidenceMeta": "素材：Amgen / Eliza / Peraton",
+      "detailFocus": "intuitionlabs 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 Eliza 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。 diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "todayCount": 4,
+      "last7Count": 28,
+      "last30Count": 110,
       "subjects": [
         {
           "label": "Amgen",
+          "count": 1
+        },
+        {
+          "label": "Eliza",
           "count": 1
         },
         {
@@ -42067,7 +43399,7 @@
       "categories": [
         {
           "label": "案例",
-          "count": 3
+          "count": 4
         }
       ],
       "supportingCards": [
@@ -42081,6 +43413,15 @@
           "date": "2026-07-08"
         },
         {
+          "id": "SIG-20260708-A10",
+          "title": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+          "subject": "Eliza",
+          "categoryLabel": "案例",
+          "sourceName": "eliza.com",
+          "sourceUrl": "https://eliza.com/case-studies/global-internal-automation-agents-for-a-50bn-cpg",
+          "date": "2026-07-08"
+        },
+        {
           "id": "SIG-20260708-A01",
           "title": "ZEISS Case Study: Document Extraction with Dapr Agents",
           "subject": "ZEISS",
@@ -42090,7 +43431,7 @@
           "date": "2026-07-08"
         },
         {
-          "id": "SIG-20260708-A06",
+          "id": "SIG-20260708-A08",
           "title": "Peraton 发布 Peraton[x]™",
           "subject": "Peraton",
           "categoryLabel": "案例",
@@ -42105,9 +43446,9 @@
     {
       "object": "evidence-funding",
       "label": "融资证据",
-      "todayCount": 5,
-      "last7Count": 24,
-      "last30Count": 55,
+      "todayCount": 8,
+      "last7Count": 27,
+      "last30Count": 58,
       "subjects": [
         {
           "label": "Norm AI",
@@ -42118,14 +43459,14 @@
           "count": 1
         },
         {
-          "label": "Rocketlane",
+          "label": "Ornn",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "融资",
-          "count": 5
+          "count": 8
         }
       ],
       "coTags": [
@@ -42154,20 +43495,69 @@
     {
       "object": "evidence-customer-adoption",
       "label": "客户采用",
-      "todayCount": 4,
-      "last7Count": 36,
-      "last30Count": 163,
+      "todayCount": 6,
+      "last7Count": 38,
+      "last30Count": 165,
       "subjects": [
         {
           "label": "Amgen",
           "count": 1
         },
         {
-          "label": "Peraton",
+          "label": "Axis Max Life",
           "count": 1
         },
         {
-          "label": "SigmanticAI",
+          "label": "Eliza",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 6
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 4
+        },
+        {
+          "tag": "function-customer-service",
+          "label": "客服售后",
+          "count": 1
+        },
+        {
+          "tag": "scenario-customer-ticket",
+          "label": "工单与质检",
+          "count": 1
+        },
+        {
+          "tag": "track-ai-customer-service",
+          "label": "AI 客服",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "object": "track-enterprise-workflow",
+      "label": "企业工作流",
+      "todayCount": 4,
+      "last7Count": 43,
+      "last30Count": 221,
+      "subjects": [
+        {
+          "label": "Amgen",
+          "count": 1
+        },
+        {
+          "label": "Eliza",
+          "count": 1
+        },
+        {
+          "label": "Peraton",
           "count": 1
         }
       ],
@@ -42179,43 +43569,156 @@
       ],
       "coTags": [
         {
-          "tag": "track-enterprise-workflow",
-          "label": "企业工作流",
-          "count": 3
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 4
         }
       ]
     },
     {
-      "object": "track-enterprise-workflow",
-      "label": "企业工作流",
-      "todayCount": 3,
-      "last7Count": 42,
-      "last30Count": 220,
+      "object": "function-customer-service",
+      "label": "客服售后",
+      "todayCount": 2,
+      "last7Count": 8,
+      "last30Count": 23,
       "subjects": [
         {
-          "label": "Amgen",
+          "label": "Axis Max Life",
           "count": 1
         },
         {
-          "label": "Peraton",
-          "count": 1
-        },
-        {
-          "label": "ZEISS",
+          "label": "Savi Security",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 3
+          "count": 1
+        },
+        {
+          "label": "融资",
+          "count": 1
         }
       ],
       "coTags": [
         {
+          "tag": "scenario-customer-ticket",
+          "label": "工单与质检",
+          "count": 2
+        },
+        {
+          "tag": "track-ai-customer-service",
+          "label": "AI 客服",
+          "count": 2
+        },
+        {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 3
+          "count": 1
+        },
+        {
+          "tag": "evidence-funding",
+          "label": "融资证据",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "object": "scenario-customer-ticket",
+      "label": "工单与质检",
+      "todayCount": 2,
+      "last7Count": 8,
+      "last30Count": 23,
+      "subjects": [
+        {
+          "label": "Axis Max Life",
+          "count": 1
+        },
+        {
+          "label": "Savi Security",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 1
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "function-customer-service",
+          "label": "客服售后",
+          "count": 2
+        },
+        {
+          "tag": "track-ai-customer-service",
+          "label": "AI 客服",
+          "count": 2
+        },
+        {
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 1
+        },
+        {
+          "tag": "evidence-funding",
+          "label": "融资证据",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "object": "track-ai-customer-service",
+      "label": "AI 客服",
+      "todayCount": 2,
+      "last7Count": 8,
+      "last30Count": 23,
+      "subjects": [
+        {
+          "label": "Axis Max Life",
+          "count": 1
+        },
+        {
+          "label": "Savi Security",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 1
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "function-customer-service",
+          "label": "客服售后",
+          "count": 2
+        },
+        {
+          "tag": "scenario-customer-ticket",
+          "label": "工单与质检",
+          "count": 2
+        },
+        {
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 1
+        },
+        {
+          "tag": "evidence-funding",
+          "label": "融资证据",
+          "count": 1
         }
       ]
     }
@@ -42580,7 +44083,7 @@
         "window": "7 天",
         "object": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 42,
+        "cardCount": 43,
         "lastSeen": "2026-07-08",
         "filter": "track-enterprise-workflow"
       },
@@ -42588,7 +44091,7 @@
         "window": "7 天",
         "object": "evidence-customer-adoption",
         "label": "客户采用",
-        "cardCount": 36,
+        "cardCount": 38,
         "lastSeen": "2026-07-08",
         "filter": "evidence-customer-adoption"
       },
@@ -42610,19 +44113,19 @@
       },
       {
         "window": "7 天",
+        "object": "evidence-funding",
+        "label": "融资证据",
+        "cardCount": 27,
+        "lastSeen": "2026-07-08",
+        "filter": "evidence-funding"
+      },
+      {
+        "window": "7 天",
         "object": "customer-developer-team",
         "label": "开发团队",
         "cardCount": 24,
         "lastSeen": "2026-07-07",
         "filter": "customer-developer-team"
-      },
-      {
-        "window": "7 天",
-        "object": "evidence-funding",
-        "label": "融资证据",
-        "cardCount": 24,
-        "lastSeen": "2026-07-08",
-        "filter": "evidence-funding"
       },
       {
         "window": "7 天",
@@ -42644,7 +44147,7 @@
         "window": "30 天",
         "object": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 220,
+        "cardCount": 221,
         "lastSeen": "2026-07-08",
         "filter": "track-enterprise-workflow"
       },
@@ -42652,7 +44155,7 @@
         "window": "30 天",
         "object": "evidence-customer-adoption",
         "label": "客户采用",
-        "cardCount": 163,
+        "cardCount": 165,
         "lastSeen": "2026-07-08",
         "filter": "evidence-customer-adoption"
       },
@@ -42713,9 +44216,9 @@
       "title": "企业工作流",
       "date": "2026-07-08",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 220,
+      "evidenceCount": 221,
       "window": "30 天",
-      "summary": "企业工作流 has 220 linked cards in the 30 天 window.",
+      "summary": "企业工作流 has 221 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42724,9 +44227,9 @@
       "title": "客户采用",
       "date": "2026-07-08",
       "signal": "evidence-customer-adoption",
-      "evidenceCount": 163,
+      "evidenceCount": 165,
       "window": "30 天",
-      "summary": "客户采用 has 163 linked cards in the 30 天 window.",
+      "summary": "客户采用 has 165 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42801,9 +44304,9 @@
       "title": "企业工作流",
       "date": "2026-07-08",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 42,
+      "evidenceCount": 43,
       "window": "7 天",
-      "summary": "企业工作流 has 42 linked cards in the 7 天 window.",
+      "summary": "企业工作流 has 43 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42812,9 +44315,9 @@
       "title": "客户采用",
       "date": "2026-07-08",
       "signal": "evidence-customer-adoption",
-      "evidenceCount": 36,
+      "evidenceCount": 38,
       "window": "7 天",
-      "summary": "客户采用 has 36 linked cards in the 7 天 window.",
+      "summary": "客户采用 has 38 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42840,6 +44343,17 @@
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
+      "id": "trend-link:7 天:evidence-funding",
+      "type": "trend_link",
+      "title": "融资证据",
+      "date": "2026-07-08",
+      "signal": "evidence-funding",
+      "evidenceCount": 27,
+      "window": "7 天",
+      "summary": "融资证据 has 27 linked cards in the 7 天 window.",
+      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
+    },
+    {
       "id": "trend-link:7 天:customer-developer-team",
       "type": "trend_link",
       "title": "开发团队",
@@ -42848,17 +44362,6 @@
       "evidenceCount": 24,
       "window": "7 天",
       "summary": "开发团队 has 24 linked cards in the 7 天 window.",
-      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
-    },
-    {
-      "id": "trend-link:7 天:evidence-funding",
-      "type": "trend_link",
-      "title": "融资证据",
-      "date": "2026-07-08",
-      "signal": "evidence-funding",
-      "evidenceCount": 24,
-      "window": "7 天",
-      "summary": "融资证据 has 24 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42889,8 +44392,8 @@
       "title": "融资证据",
       "date": "2026-07-08",
       "signal": "evidence-funding",
-      "evidenceCount": 5,
-      "windowCount": 55,
+      "evidenceCount": 8,
+      "windowCount": 58,
       "subjects": [
         {
           "label": "Norm AI",
@@ -42901,14 +44404,14 @@
           "count": 1
         },
         {
-          "label": "Rocketlane",
+          "label": "Ornn",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "融资",
-          "count": 5
+          "count": 8
         }
       ],
       "coTags": [
@@ -42933,7 +44436,7 @@
           "count": 1
         }
       ],
-      "summary": "融资证据 appears in 5 same-day cards and 55 cards in the 30-day window.",
+      "summary": "融资证据 appears in 8 same-day cards and 58 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -42942,11 +44445,68 @@
       "title": "客户采用",
       "date": "2026-07-08",
       "signal": "evidence-customer-adoption",
-      "evidenceCount": 4,
-      "windowCount": 163,
+      "evidenceCount": 6,
+      "windowCount": 165,
       "subjects": [
         {
           "label": "Amgen",
+          "count": 1
+        },
+        {
+          "label": "Axis Max Life",
+          "count": 1
+        },
+        {
+          "label": "Eliza",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 6
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 4
+        },
+        {
+          "tag": "function-customer-service",
+          "label": "客服售后",
+          "count": 1
+        },
+        {
+          "tag": "scenario-customer-ticket",
+          "label": "工单与质检",
+          "count": 1
+        },
+        {
+          "tag": "track-ai-customer-service",
+          "label": "AI 客服",
+          "count": 1
+        }
+      ],
+      "summary": "客户采用 appears in 6 same-day cards and 165 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "relationship:agent-workflow-enterprise",
+      "type": "relationship_cluster",
+      "title": "Amgen、Eliza 记录 Agent 进入采购、数据连接和企业流程",
+      "date": "2026-07-08",
+      "signal": "企业工作流",
+      "evidenceCount": 4,
+      "windowCount": 110,
+      "subjects": [
+        {
+          "label": "Amgen",
+          "count": 1
+        },
+        {
+          "label": "Eliza",
           "count": 1
         },
         {
@@ -42954,7 +44514,45 @@
           "count": 1
         },
         {
-          "label": "SigmanticAI",
+          "label": "ZEISS",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 4
+        }
+      ],
+      "tags": [],
+      "supportingCardIds": [
+        "SIG-20260708-A02",
+        "SIG-20260708-A10",
+        "SIG-20260708-A01",
+        "SIG-20260708-A08"
+      ],
+      "summary": "intuitionlabs 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 Eliza 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。 diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "whyUseful": "Use this when looking for cross-card commercial relationships."
+    },
+    {
+      "id": "tag:track-enterprise-workflow",
+      "type": "tag_association",
+      "title": "企业工作流",
+      "date": "2026-07-08",
+      "signal": "track-enterprise-workflow",
+      "evidenceCount": 4,
+      "windowCount": 221,
+      "subjects": [
+        {
+          "label": "Amgen",
+          "count": 1
+        },
+        {
+          "label": "Eliza",
+          "count": 1
+        },
+        {
+          "label": "Peraton",
           "count": 1
         }
       ],
@@ -42966,87 +44564,171 @@
       ],
       "coTags": [
         {
-          "tag": "track-enterprise-workflow",
-          "label": "企业工作流",
-          "count": 3
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 4
         }
       ],
-      "summary": "客户采用 appears in 4 same-day cards and 163 cards in the 30-day window.",
+      "summary": "企业工作流 appears in 4 same-day cards and 221 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
-      "id": "relationship:agent-workflow-enterprise",
-      "type": "relationship_cluster",
-      "title": "Amgen、Peraton 记录 Agent 进入采购、数据连接和企业流程",
-      "date": "2026-07-08",
-      "signal": "企业工作流",
-      "evidenceCount": 3,
-      "windowCount": 109,
-      "subjects": [
-        {
-          "label": "Amgen",
-          "count": 1
-        },
-        {
-          "label": "Peraton",
-          "count": 1
-        },
-        {
-          "label": "ZEISS",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 3
-        }
-      ],
-      "tags": [],
-      "supportingCardIds": [
-        "SIG-20260708-A02",
-        "SIG-20260708-A01",
-        "SIG-20260708-A06"
-      ],
-      "summary": "intuitionlabs 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。 Peraton 发布 Peraton[x]™",
-      "whyUseful": "Use this when looking for cross-card commercial relationships."
-    },
-    {
-      "id": "tag:track-enterprise-workflow",
+      "id": "tag:function-customer-service",
       "type": "tag_association",
-      "title": "企业工作流",
+      "title": "客服售后",
       "date": "2026-07-08",
-      "signal": "track-enterprise-workflow",
-      "evidenceCount": 3,
-      "windowCount": 220,
+      "signal": "function-customer-service",
+      "evidenceCount": 2,
+      "windowCount": 23,
       "subjects": [
         {
-          "label": "Amgen",
+          "label": "Axis Max Life",
           "count": 1
         },
         {
-          "label": "Peraton",
-          "count": 1
-        },
-        {
-          "label": "ZEISS",
+          "label": "Savi Security",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 3
+          "count": 1
+        },
+        {
+          "label": "融资",
+          "count": 1
         }
       ],
       "coTags": [
         {
+          "tag": "scenario-customer-ticket",
+          "label": "工单与质检",
+          "count": 2
+        },
+        {
+          "tag": "track-ai-customer-service",
+          "label": "AI 客服",
+          "count": 2
+        },
+        {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 3
+          "count": 1
+        },
+        {
+          "tag": "evidence-funding",
+          "label": "融资证据",
+          "count": 1
         }
       ],
-      "summary": "企业工作流 appears in 3 same-day cards and 220 cards in the 30-day window.",
+      "summary": "客服售后 appears in 2 same-day cards and 23 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:scenario-customer-ticket",
+      "type": "tag_association",
+      "title": "工单与质检",
+      "date": "2026-07-08",
+      "signal": "scenario-customer-ticket",
+      "evidenceCount": 2,
+      "windowCount": 23,
+      "subjects": [
+        {
+          "label": "Axis Max Life",
+          "count": 1
+        },
+        {
+          "label": "Savi Security",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 1
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "function-customer-service",
+          "label": "客服售后",
+          "count": 2
+        },
+        {
+          "tag": "track-ai-customer-service",
+          "label": "AI 客服",
+          "count": 2
+        },
+        {
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 1
+        },
+        {
+          "tag": "evidence-funding",
+          "label": "融资证据",
+          "count": 1
+        }
+      ],
+      "summary": "工单与质检 appears in 2 same-day cards and 23 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:track-ai-customer-service",
+      "type": "tag_association",
+      "title": "AI 客服",
+      "date": "2026-07-08",
+      "signal": "track-ai-customer-service",
+      "evidenceCount": 2,
+      "windowCount": 23,
+      "subjects": [
+        {
+          "label": "Axis Max Life",
+          "count": 1
+        },
+        {
+          "label": "Savi Security",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 1
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "function-customer-service",
+          "label": "客服售后",
+          "count": 2
+        },
+        {
+          "tag": "scenario-customer-ticket",
+          "label": "工单与质检",
+          "count": 2
+        },
+        {
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 1
+        },
+        {
+          "tag": "evidence-funding",
+          "label": "融资证据",
+          "count": 1
+        }
+      ],
+      "summary": "AI 客服 appears in 2 same-day cards and 23 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     }
   ]

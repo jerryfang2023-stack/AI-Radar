@@ -1,11 +1,11 @@
 # 2026-07-08 Pool-to-Card Handoff
 
-- generated_at: 2026-07-08T04:49:07.079Z
-- written_count: 10
+- generated_at: 2026-07-08T06:10:04.606Z
+- written_count: 15
 - merged_count: 0
 - skipped_count: 0
-- signal_asset_count: 9
-- not_promoted_candidate_count: 113
+- signal_asset_count: 14
+- not_promoted_candidate_count: 108
 - asset_generation_limit: all_cardable_raw_pool
 - signal_asset_mode: all cardable Raw / Pool business signals
 
@@ -13,23 +13,33 @@
 
 - SIG-20260708-A01｜P-053｜ZEISS Case Study: Document Extraction with Dapr Agents
 - SIG-20260708-A02｜P-041｜Enterprise AI Rollout Case Study: Amgen's 20,000 Users
-- SIG-20260708-A03｜P-019｜Rocketlane 获得 $60 m 融资
-- SIG-20260708-A04｜P-034｜One 获得 $4M 融资
-- SIG-20260708-A05｜P-086｜Norm AI 获得 $120M 融资
-- SIG-20260708-A06｜P-060｜Peraton 发布 Peraton[x]™
-- SIG-20260708-A07｜P-004｜Savi Security 发布反 AI 诈骗 App，抵御语音/短信/电话骗局（如绑架勒索）
-- SIG-20260708-A08｜P-059｜Bespoke Labs 获得 $40M 融资
-- SIG-20260708-A09｜P-091｜Launch YC: SigmanticAI - The Cursor for Hardware Design
+- SIG-20260708-A03｜P-019｜Rocketlane 获得战略投资
+- SIG-20260708-A04｜P-020｜OXMIQ 获得 $35 M 融资
+- SIG-20260708-A05｜P-029｜Ornn 获得 $33M 融资
+- SIG-20260708-A06｜P-034｜One 获得 $4M 融资
+- SIG-20260708-A07｜P-086｜Norm AI 获得 $120M 融资
+- SIG-20260708-A08｜P-060｜Peraton 发布 Peraton[x]™
+- SIG-20260708-A09｜P-066｜Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions
+- SIG-20260708-A10｜P-088｜Global Internal Automation Agents for a $50BN CPG - Eliza
+- SIG-20260708-A11｜P-004｜Savi Security 发布反 AI 诈骗 App，抵御语音/短信/电话骗局（如绑架勒索）
+- SIG-20260708-A12｜P-043｜Together AI 获得 $800M 融资
+- SIG-20260708-A13｜P-059｜Bespoke Labs 获得 $40M 融资
+- SIG-20260708-A14｜P-091｜Launch YC: SigmanticAI - The Cursor for Hardware Design
 
 ## Cluster / Dedupe Rows
 
 - P-053｜event:case:zeiss:case zeiss case study document extraction with dapr agents diagrid｜accepted
 - P-041｜event:case:amgen:20｜accepted
-- P-019｜event:funding:rocketlane:$60m｜accepted
+- P-019｜event:funding:rocketlane:302819530｜accepted
+- P-020｜event:funding:oxmiq:$35m｜accepted
+- P-029｜event:funding:ornn:$33m｜accepted
 - P-034｜event:funding:one:$4m｜accepted
 - P-086｜event:funding:norm ai:$120m｜accepted
 - P-060｜event:case:peraton:20260707777574｜accepted
+- P-066｜event:case:axis max life:6｜accepted
+- P-088｜event:case:eliza:$50b｜accepted
 - P-004｜event:funding:savi security:2026｜accepted
+- P-043｜event:funding:together ai:$800m｜accepted
 - P-059｜event:funding:bespoke:$40m｜accepted
 - P-091｜event:case:sigmanticai:case launch yc sigmanticai the cursor for hardware design y combinator｜accepted
 
@@ -38,10 +48,15 @@
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-08--signal--zeiss-auto-signal-p-053.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-08--signal--amgen-auto-signal-p-041.md
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-08--signal--rocketlane-auto-signal-p-019.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-08--signal--oxmiq-auto-signal-p-020.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-08--signal--ornn-auto-signal-p-029.md
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-08--signal--one-auto-signal-p-034.md
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-08--signal--norm-ai-auto-signal-p-086.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-08--signal--peraton-auto-signal-p-060.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-08--signal--axis-max-life-auto-signal-p-066.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-08--signal--eliza-auto-signal-p-088.md
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-08--signal--savi-security-auto-signal-p-004.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-08--signal--together-ai-auto-signal-p-043.md
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-08--signal--bespoke-labs-auto-signal-p-059.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-08--signal--sigmanticai-auto-signal-p-091.md
 - 01-SiteV2/content/04-business-signals/signals/2026-07-08-signals.md
@@ -73,7 +88,6 @@
 - P-016: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=OpenAI 发布 gpt-realtime-2.1 和 gpt-realtime-2.1-mini 低延迟语音模型
 - P-017: valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:unsupported_importance_type:supporting_signal; repair=Use the newsletter only as discovery context; recapture the original dated event source before promoting.; priority=low; title=ContraVault AI raises USD 3.1M led by Chiratae Ventures with Titan Capital Winners Fund to build the future of AI-powered procurement intelligence – indiabriefings
 - P-018: fact_type_constraints:workforce_retraining_program_not_formal_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.; priority=low; title=The Rise of the Forward-Deployed Engineer: 2026's Hottest AI Role | Blog | Perspective AI
-- P-020: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ
 - P-021: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=AI chipmaker Hailo raises $136M as it doubles down ... - TechCrunch
 - P-022: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_or_directory_url, business_signal_scope:unsupported_importance_type:supporting_signal, valid_page_type:marketplace_directory_not_signal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=AWS Marketplace: TrueFoundry AI Deploy
 - P-023: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Palantir FDE Bootcamp: Prove Value in 5 Days
@@ -82,7 +96,6 @@
 - P-026: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_or_directory_url, valid_page_type:marketplace_directory_not_signal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=AWS Marketplace: Accenture AI / Agentic AI Enterprise Process Reinvention Services
 - P-027: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_or_directory_url, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:docs_or_catalog_or_investing_thesis; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=the-forward-deployed-shift_EN.md - GitHub
 - P-028: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=AI chip startup Ricursive hits $4B valuation 2 months after launch | TechCrunch
-- P-029: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Ornn raises $33M to help companies buy and sell AI compute as a commodity like oil - SiliconANGLE
 - P-030: valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:supporting_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Accenture Edge and Google Cloud Bring Scalable Agentic AI Solutions to Mid-Market Companies
 - P-031: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Datakult0r/Forward-Deployed-AI-at-Institutional-Scale - GitHub
 - P-032: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=articles/cerebras-2026-04-17.md
@@ -94,7 +107,6 @@
 - P-039: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=originaonxi/b2b-funding-scanner
 - P-040: valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:supporting_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Axe Compute wins $260M, 36‑month AI GPU contract | AGPU 8-K Filing
 - P-042: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:funding_not_single_company_round; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=articles/cognition-2026-07-01.md at main · gautammanak1/ai-tech-daily
-- P-043: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Neocloud Together AI raises $800M, leaps to $8.3B valuation | TechCrunch
 - P-044: evidence_quality:stale_source_date; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Nebius signs new AI infrastructure agreement with Meta; deal to accelerate growth of Nebius’s core business in AI cloud
 - P-045: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=microsoft/Deploy-Your-AI-Application-In-Production
 - P-046: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_or_directory_url, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:text_indicates_index_only, business_signal_scope:unsupported_importance_type:important_technical_trend, valid_page_type:docs_or_catalog_or_investing_thesis; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=packages/inference/README.md at main · huggingface/huggingface.js
@@ -113,7 +125,6 @@
 - P-063: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=dot-do/startups.do
 - P-064: evidence_quality:stale_source_date, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=YC-Backed GitLab Is Like GitHub But For Enterprise - TechCrunch
 - P-065: business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Enterprise managed-settings.json is generally available - GitHub Changelog
-- P-066: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions
 - P-067: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Study Finds AI Voice Agents Increased Specialty Care Program Enrollment Rates 340% in Real-World Clinical Setting
 - P-068: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:supporting_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Rippling Customer Success Story | Decagon AI
 - P-069: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=huggingface/huggingface-inference-toolkit
@@ -134,7 +145,6 @@
 - P-084: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Q1 2026 Innovation Graph update: Open source collaboration is accelerating worldwide
 - P-085: evidence_quality:missing_source_material, valid_page_type:index_or_directory_url, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Archestra | Enterprise MCP Platform for AI Agents
 - P-087: valid_page_type:marketplace_directory_not_signal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Introducing AI agents and tools in AWS Marketplace - AWS
-- P-088: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Global Internal Automation Agents for a $50BN CPG - Eliza
 - P-089: evidence_quality:stale_source_date, source_auditability:discovery_source_not_resolved, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Meet the former Apple designer building a new AI interface at Hark
 - P-090: evidence_quality:stale_source_date, source_auditability:discovery_source_not_resolved, fact_type_constraints:workforce_retraining_program_not_formal_signal_card; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=The AI services transformation may be harder than VCs think
 - P-092: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Claude Code v2.1.204 发布

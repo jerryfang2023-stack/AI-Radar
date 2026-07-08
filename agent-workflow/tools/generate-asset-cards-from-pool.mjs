@@ -579,6 +579,7 @@ function sourcePointLooksTemplate(value = "") {
 function sourcePointIsUsable(value = "") {
   const text = stripSourceNoise(value);
   if (!text || sourcePointLooksTemplate(text) || hasTextContamination(text)) return false;
+  if (/strategic investment|战略投资/iu.test(text)) return true;
   return /AI|agent|agentic|LLM|model|enterprise|customer|workflow|deployment|platform|cloud|inference|public preview|funding|raises|raised|launched|announced|released|introduced|case study|融资|客户|部署|平台|模型|企业|美元|\$|\d/iu.test(text);
 }
 
@@ -727,6 +728,11 @@ function sourceBackedChineseFact(raw = "", context = {}) {
 function translatedSourcePoint(raw = "", type = "", context = {}) {
   const text = stripSourceNoise(raw);
   if (!text) return "";
+  if (context.strategicInvestment && /\bstrategic investment\b/iu.test(text)) {
+    const investor = text.match(/\bstrategic investment from\s+([^.;]+?)(?:\.|$)/iu)?.[1]?.replace(/\s+/gu, " ").trim() || "";
+    return `${context.company || "AI 公司"} 获得${investor ? ` ${investor} ` : ""}战略投资。`;
+  }
+  if (context.strategicInvestment && /\b(?:series\s+[a-z]|funding|financing|total capital|has raised|raised|raises?|led by)\b|[$€£]\s?\d/iu.test(text) && !/\bstrategic investment\b/iu.test(text)) return "";
   if (/[\u4e00-\u9fff]/u.test(text)) return text.length > 220 ? `${text.slice(0, 219)}...` : text;
   if (type === "funding") {
     const amount = extractAmount(text);
@@ -745,6 +751,7 @@ function sourcePointsFromSection(section) {
   const context = {
     company: companyFromSection(section),
     scenario: scenarioFromText(textForInference(section)),
+    strategicInvestment: isConfirmedStrategicInvestment(section, originalSourceTitleFromSection(section)),
   };
   const keyExcerpts = Array.isArray(raw.key_excerpts)
     ? raw.key_excerpts
@@ -771,6 +778,7 @@ function sourceExcerptFromSection(section, points = []) {
   const context = {
     company: companyFromSection(section),
     scenario: scenarioFromText(textForInference(section)),
+    strategicInvestment: isConfirmedStrategicInvestment(section, originalSourceTitleFromSection(section)),
   };
   const firstRaw = sourceSentences(raw.full_text || raw.clean_text || "")
     .map((item) => translatedSourcePoint(item, "", context))
@@ -1316,7 +1324,7 @@ function hasConcreteProductEvent(section) {
 
 function hasConcreteCaseEvent(section) {
   const text = sectionEvidenceText(section);
-  if (/\b(case study|customer story|customer deployment|customer adopts?|adopted by|deployed (?:at|by|with)|deploys?|deployment|used by|uses? (?:Amazon Bedrock|Claude|Glean|AI|agentic AI|machine learning)|rollout|production rollout|pilot customer|design partner|implementation case|across enterprise|saved \d|reduced|cut|hours per person|ARR|annual recurring revenue)\b/iu.test(text)) return true;
+  if (/\b(case study|customer story|customer deployment|customer adopts?|adopted by|deployed (?:at|by|with)|deploys?|deployment|used by|uses? (?:Amazon Bedrock|Claude|Glean|AI|agentic AI|machine learning|voice AI|AI voice)|rollout|production rollout|pilot customer|design partner|implementation case|internal automation agents|across enterprise|saved \d|reduced|cut|boosts?|increas(?:es|ed)|improv(?:es|ed)|hours per person|ARR|annual recurring revenue)\b/iu.test(text)) return true;
   if (/没有具体客户|没有检测到明确动作词|no concrete customer|no specific customer|not a customer case|missing customer/iu.test(text)) return false;
   return /\b(case study|customer story|customer deployment|customer adopts?|adopted by|deployed (?:at|by|with)|used by|rollout|production rollout|pilot customer|design partner|implementation case)\b|客户案例|客户采用|客户部署|生产部署|落地|试点客户|真实客户/iu.test(text);
 }
@@ -1852,14 +1860,17 @@ function isSingleCompanyFundingSignal(section) {
 }
 
 function hasStrictFundingAnnouncement(section, sourceEventTitle = "") {
-  const haystack = [
+  const identityHaystack = [
     sourceEventTitle,
     poolTitle(section),
     value(section, "source"),
     value(section, "source_url"),
+  ].join(" ");
+  const evidenceHaystack = [
     value(section, "key_excerpts"),
     value(section, "evidence_seed"),
-  ].join(" ");
+  ].map(stripSourceNoise).join(" ");
+  const haystack = `${identityHaystack} ${evidenceHaystack}`.replace(/\b(?:chips?|data centers?|data center)\b/giu, "");
   if (/\b(contract|procurement|tender|vehicle|autonomous ground vehicles|war|military|defense contract|export curbs?|chips?|self-developed chip|stake|equity stake|capital expenditure|capex|data center|investment plan|is seeking|seeks to raise|plans to raise|reportedly|rumou?red|in talks)\b|乌克兰|参战|车辆|芯片|出口管制|寻求融资|计划融资|消息称|据悉|入股/iu.test(haystack)) {
     return false;
   }
@@ -1868,7 +1879,24 @@ function hasStrictFundingAnnouncement(section, sourceEventTitle = "") {
     || /\b(?:funding|financing|investment|round|seed|pre[- ]seed|series\s+[a-z])\b.{0,180}\b(?:led by|participation from|investors?|valuation|raises?|raised|secured|closed)\b/iu.test(haystack)
     || /(?:完成|获得|获|宣布|拿到).{0,120}(?:融资|投资|轮|领投|参投)/iu.test(haystack);
   const directAmountRaise = /\b(?:raises?|raised|lands?|landed|secures?|secured|closes?|closed|snags?|bags?|pulls in|receives)\b.{0,160}(?:\$\s?\d|\d+(?:\.\d+)?\s?(?:million|billion))/iu.test(haystack);
-  return amountOrRound && (announcedRound || directAmountRaise);
+  const confirmedStrategicInvestment = isConfirmedStrategicInvestment(section, sourceEventTitle);
+  return (amountOrRound && (announcedRound || directAmountRaise)) || confirmedStrategicInvestment;
+}
+
+function isConfirmedStrategicInvestment(section, sourceEventTitle = "") {
+  const haystack = [
+    sourceEventTitle,
+    poolTitle(section),
+    value(section, "source"),
+    value(section, "source_url"),
+    stripSourceNoise(value(section, "key_excerpts")),
+    stripSourceNoise(value(section, "evidence_seed")),
+  ].join(" ");
+  return /\b(?:announces?|announced|makes?|made)\b.{0,180}\bstrategic investment\b|\bstrategic investment\b.{0,180}\b(?:from|by)\b.{0,100}\b(?:ventures?|capital|partners?|investors?)\b/iu.test(haystack);
+}
+
+function titleHasFundingAmountOrRound(title = "") {
+  return fundingAmountPattern.test(title) || fundingRoundPattern.test(title);
 }
 
 function scenarioFromText(text) {
@@ -1998,7 +2026,7 @@ function sourceEventTitleCanBackAutoCard(title = "") {
   const text = cleanSourceTitleForPublicTitle(title);
   if (!text || hasTextContamination(text)) return false;
   if (/(roundup|guide|what is|what'?s real|how to|landscape|report|trends?|top \d+|ranked|list|directory|buyer'?s guide|comparison|ideas|use cases|may become|roles? in the ai era|job opening|job listing|careers?|hiring)\b/iu.test(text)) return false;
-  return /\b(launch(?:es|ed)?|announc(?:es|ed|ing)?|introduc(?:es|ed|ing)?|public preview|generally available|GA|available now|reach(?:es|ed)? the next phase|live transactions?|partners? with|partnership|procurement|contract|customer story|case study|deploy(?:s|ed|ment)?|rollout|adopt(?:s|ed|ion)?|expands?|unveils?)\b/iu.test(text);
+  return /\b(launch(?:es|ed)?|announc(?:es|ed|ing)?|introduc(?:es|ed|ing)?|public preview|generally available|GA|available now|reach(?:es|ed)? the next phase|live transactions?|partners? with|partnership|procurement|contract|customer story|case study|deploy(?:s|ed|ment)?|rollout|adopt(?:s|ed|ion)?|uses?|used by|boosts?|increas(?:es|ed)|reduc(?:es|ed)|cuts?|saves?|improv(?:es|ed)|internal automation agents|expands?|unveils?)\b/iu.test(text);
 }
 
 function sourceTitleLineFromText(text = "") {
@@ -2039,7 +2067,7 @@ function sourcePointMatchesSignalType(point = "", type = "") {
   if (type === "funding" && /funding|financing|round|valuation|raises?|raised|closed|ARR|annual recurring revenue/iu.test(text)) return true;
   if (type === "product_service" && /product|platform|service|launch|release|released|introduc|available|public preview|general availability|pricing|API|SDK|partnership|partners? with|integration/iu.test(text)) return true;
   if (type === "case" && /case study|customer story|customer|deployed|deployment|adopted|adoption|used by|uses?|production|workflow|procurement|contract|partnership|partners? with|rollout|saved|reduced|cut|hours per person|ARR|annual recurring revenue/iu.test(text)) return true;
-  if (type === "funding") return /融资|资金流向|资本事件|\$|美元|Series|Seed/iu.test(text);
+  if (type === "funding") return /融资|资金流向|资本事件|战略投资|\$|美元|Series|Seed/iu.test(text);
   if (type === "product_service") return /产品|平台|服务|发布|推出|上线|API|SDK|可采购|可部署/iu.test(text);
   return /客户|部署|采用|生产落地|企业工作流|案例|试点/iu.test(text);
 }
@@ -2110,7 +2138,7 @@ function autoSignalSpec(poolRef, section, index) {
   if (/^(BentoCloud|Microsoft Foundry)$/u.test(company)) {
     scenario = "模型部署和算力调用";
   }
-  const amount = extractAmount(text);
+  let amount = extractAmount(text);
   const prefix = `SIG-${date.replaceAll("-", "")}-A${String(index).padStart(2, "0")}`;
   const sourceTitle = originalSourceTitleFromSection(section);
   if (!sourceTitle) return null;
@@ -2118,7 +2146,12 @@ function autoSignalSpec(poolRef, section, index) {
   if (!sourceEventTitle) return null;
   if (isWeakCompanyName(company)) return null;
   if (type === "funding" && !hasStrictFundingAnnouncement(section, sourceEventTitle)) return null;
+  const strategicInvestment = isConfirmedStrategicInvestment(section, sourceEventTitle);
+  if (strategicInvestment && !titleHasFundingAmountOrRound(sourceEventTitle)) amount = "";
   let title = publicTitleForAutoSignal({ type, company, sourceEventTitle, amount });
+  if (!title && type === "funding" && strategicInvestment) {
+    title = `${company} 获得战略投资`;
+  }
   if (!title && (allowsObservationSummaryEvidence(section) || summaryOperatorMaterial)) {
     title = `${company || "AI 公司"} 的 AI 商业观察`;
   }

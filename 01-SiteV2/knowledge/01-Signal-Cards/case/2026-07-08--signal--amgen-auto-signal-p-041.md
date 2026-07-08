@@ -9,8 +9,8 @@ source_title: "Enterprise AI Rollout Case Study: Amgen's 20,000 Users | Intuitio
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-08T04:49:06.480Z
-updated_at: 2026-07-08T04:49:06.480Z
+created_at: 2026-07-08T06:10:03.935Z
+updated_at: 2026-07-08T06:10:03.935Z
 
 raw_refs: ["R-041"]
 pool_refs: ["P-041"]

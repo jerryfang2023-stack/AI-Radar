@@ -1,5 +1,5 @@
 ---
-id: SIG-20260708-A05
+id: SIG-20260708-A07
 type: signal_card
 signal_type: funding
 title: "Norm AI 获得 $120M 融资"
@@ -9,8 +9,8 @@ source_title: "AI law startup Norm raises $120M, hits unicorn valuation | TechCr
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-08T04:49:06.480Z
-updated_at: 2026-07-08T04:49:06.480Z
+created_at: 2026-07-08T06:10:03.935Z
+updated_at: 2026-07-08T06:10:03.935Z
 
 raw_refs: ["R-086"]
 pool_refs: ["P-086"]

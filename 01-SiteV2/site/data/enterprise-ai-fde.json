@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "EAI-V1.2.0-raw-card-ingestion-boundary",
-    "generatedAt": "2026-07-08T04:56:41.671Z",
+    "generatedAt": "2026-07-08T06:10:29.558Z",
     "activeDate": "2026-07-08",
     "source": "01-SiteV2/site/data/v3-data-observation-desk.json",
-    "fdePoolCount": 1,
-    "itemCount": 1,
+    "fdePoolCount": 2,
+    "itemCount": 2,
     "boundary": "FDE is an Enterprise AI lens pool, not a fourth Business Signals Card type."
   },
   "fdePool": [
@@ -242,6 +242,247 @@
         "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
         "sourceBasis": "diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。"
       }
+    },
+    {
+      "id": "FDE-2026-07-08-P-088",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "originalTitle": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "date": "2026-07-08",
+      "subject": "Eliza",
+      "source": "eliza.com",
+      "sourceName": "eliza.com",
+      "sourceUrl": "https://eliza.com/case-studies/global-internal-automation-agents-for-a-50bn-cpg",
+      "sourceLevel": "B",
+      "evidenceStrength": "rich_evidence",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": []
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "Global Internal Automation Agents for a $50BN CPG - Eliza Global Internal Automation Agents for a $50BN CPG - Eliza Global Internal Automation Agents for a $50BN CPG - Eliza 证据边界：缺失项作为内部复核线索保留；公开判断只采用原文标题、摘录和来源链接。",
+        "missingFields": [
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "finance_team",
+              "label": "Finance, billing, or accounting team"
+            },
+            {
+              "id": "operations_team",
+              "label": "Operations, logistics, supply-chain, or back-office team"
+            },
+            {
+              "id": "sales_team",
+              "label": "Sales or revenue team"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "finance",
+              "label": "Finance / accounting"
+            },
+            {
+              "id": "operations",
+              "label": "Operations / supply chain / back office"
+            },
+            {
+              "id": "sales",
+              "label": "Sales / revenue operations"
+            }
+          ],
+          "specific_task": [
+            {
+              "id": "logistics_coordination",
+              "label": "Shipment, logistics, dispatch, inventory, or supply-chain coordination"
+            },
+            {
+              "id": "sales_lead_research",
+              "label": "Lead research, account research, or pipeline enrichment"
+            }
+          ],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            }
+          ],
+          "product_form": [
+            {
+              "id": "model_gateway",
+              "label": "Model gateway, router, proxy, or inference control layer"
+            },
+            {
+              "id": "vertical_saas",
+              "label": "Vertical SaaS application for a named industry or function"
+            }
+          ],
+          "delivery_model": [],
+          "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [
+            {
+              "id": "customer_metric",
+              "label": "Customer outcome metric, usage number, or quantified result"
+            },
+            {
+              "id": "deployment_scale",
+              "label": "Deployment scale, seats, locations, users, or volume disclosed"
+            }
+          ],
+          "source_evidence_type": []
+        },
+        "buyer_or_user": [
+          "finance_team",
+          "operations_team",
+          "sales_team"
+        ],
+        "buyerOrUser": [
+          "finance_team",
+          "operations_team",
+          "sales_team"
+        ],
+        "team_or_function": [
+          "finance",
+          "operations",
+          "sales"
+        ],
+        "teamOrFunction": [
+          "finance",
+          "operations",
+          "sales"
+        ],
+        "specific_task": [
+          "logistics_coordination",
+          "sales_lead_research"
+        ],
+        "specificTask": [
+          "logistics_coordination",
+          "sales_lead_research"
+        ],
+        "business_action": [
+          "customer_deployment"
+        ],
+        "businessAction": [
+          "customer_deployment"
+        ],
+        "product_form": [
+          "model_gateway",
+          "vertical_saas"
+        ],
+        "productForm": [
+          "model_gateway",
+          "vertical_saas"
+        ],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "workflow_integration"
+        ],
+        "adoption_evidence": [
+          "customer_metric",
+          "deployment_scale"
+        ],
+        "adoptionEvidence": [
+          "customer_metric",
+          "deployment_scale"
+        ],
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
+      },
+      "summary": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "translatedFact": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "originalHighlights": [
+        "Eliza 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "visibleFragment": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "sourceLinks": [
+        "https://eliza.com/case-studies/global-internal-automation-agents-for-a-50bn-cpg"
+      ],
+      "sourceTitle": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-ai-agent",
+      "generatedTitle": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "displayTitle": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "largeVendor": false,
+      "frontstageRankScore": 580,
+      "frontstageEditorialScore": 580,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260708-A10",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-088",
+      "titleZh": "",
+      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "factExtractionStatus": "missing_fde_lens_fact",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是面向把 Agent 或模型接入业务系统的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
+        "sourceBasis": "Eliza 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      }
     }
   ],
   "items": [
@@ -265,6 +506,28 @@
         "services": "提供的服务是面向采购流程自动化与合规校验的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
         "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
         "sourceBasis": "diagrid 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260708-A10",
+      "cardId": "SIG-20260708-A10",
+      "date": "2026-07-08",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "subject": "Eliza",
+      "sourceName": "eliza.com",
+      "sourceUrl": "https://eliza.com/case-studies/global-internal-automation-agents-for-a-50bn-cpg",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "企业工作流",
+      "workflow": "把 Agent 或模型接入业务系统",
+      "evidenceBoundary": "已确认：Eliza 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是面向把 Agent 或模型接入业务系统的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
+        "sourceBasis": "Eliza 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       }
     }
   ]
