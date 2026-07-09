@@ -10,6 +10,11 @@ const args = new Map(
 );
 const jsonPath = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
 const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
+const signalCardRoots = [
+  path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "funding"),
+  path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "case"),
+  path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "product-service"),
+];
 const expectedDate = args.get("date") || "";
 
 const forbiddenKeys = new Set([
@@ -70,6 +75,39 @@ function loadSourceTitleTranslations() {
 }
 
 const sourceTitleTranslations = loadSourceTitleTranslations();
+
+function listMarkdownFiles(dir) {
+  if (!fs.existsSync(dir)) return [];
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  return entries.flatMap((entry) => {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) return listMarkdownFiles(full);
+    return entry.isFile() && entry.name.endsWith(".md") ? [full] : [];
+  });
+}
+
+function frontmatterBlock(markdown = "") {
+  return String(markdown || "").match(/^---\r?\n([\s\S]*?)\r?\n---/u)?.[1] || "";
+}
+
+function frontmatterScalar(fm = "", key = "") {
+  const match = String(fm || "").match(new RegExp(`^${key}:\\s*(.+)$`, "mu"));
+  if (!match) return "";
+  const raw = match[1].trim();
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return raw.replace(/^["']|["']$/gu, "").trim();
+  }
+}
+
+function assetHasRequiredSourceTitleTranslation(fm = "") {
+  const sourceTitle = frontmatterScalar(fm, "source_title");
+  if (!sourceTitle || !sourceTitleNeedsChineseTranslation(sourceTitle)) return true;
+  const titleZh = frontmatterScalar(fm, "title_zh");
+  if (titleZh && hasCjk(titleZh) && !publicTextLooksGarbled(titleZh)) return true;
+  return Boolean(sourceTitleTranslations.get(titleTranslationKey(sourceTitle)));
+}
 
 function normalizedComparableText(value = "") {
   return String(value || "")
@@ -153,6 +191,19 @@ const publicAssetIds = new Set(cards.map((card) => card.id).filter(Boolean));
 const activeDate = payload.meta?.activeDate || "";
 if (expectedDate && activeDate !== expectedDate) {
   issues.push(`payload activeDate is ${activeDate || "(missing)"}, expected ${expectedDate}`);
+}
+const assetDateForTranslationCheck = expectedDate || activeDate;
+if (assetDateForTranslationCheck) {
+  for (const file of signalCardRoots.flatMap(listMarkdownFiles)) {
+    const fm = frontmatterBlock(fs.readFileSync(file, "utf8"));
+    if (!fm) continue;
+    if (frontmatterScalar(fm, "type") !== "signal_card") continue;
+    if (frontmatterScalar(fm, "date") !== assetDateForTranslationCheck) continue;
+    if (frontmatterScalar(fm, "status") !== "published") continue;
+    if (!assetHasRequiredSourceTitleTranslation(fm)) {
+      issues.push(`${rel(file)} has English source_title but no title_zh or exact source-title translation entry`);
+    }
+  }
 }
 
 const largeVendorPatterns = [
@@ -375,6 +426,7 @@ function confirmedFundingSourceTitle(title = "") {
 function fundingFallbackTitleBackedByOriginalSource(card = {}, title = "") {
   const cleanTitle = cleanOriginalTitle(title);
   if (card.category !== "funding" || !cleanTitle) return false;
+  if ([card.sourceTitle, card.originalTitle].some((value) => sourceTitleNeedsChineseTranslation(value))) return false;
   if (publicTextLooksGarbled(cleanTitle) || titleLooksLikeGeneratedTemplate(cleanTitle)) return false;
   if (/来源标题|原始来源|公开材料显示|商业信号/iu.test(cleanTitle)) return false;
   if (/押注|资金流向|业务信号|基础设施能力|可用于观察|值得关注/u.test(cleanTitle)) return false;
@@ -433,6 +485,9 @@ function checkPublicCardContract(card = {}, label = "public card") {
   }
   if (isActiveDateItem && publicTitleIsGeneric(card.title)) {
     issues.push(`${label} ${id} exposes generic generated title: ${card.title}`);
+  }
+  if (isActiveDateItem && !titleBackedByOriginalSource(card)) {
+    issues.push(`${label} ${id} public title is not backed by original source title translation: ${card.title}`);
   }
 }
 

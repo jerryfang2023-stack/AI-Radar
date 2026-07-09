@@ -2,7 +2,7 @@
 id: SIG-20260709-A01
 type: signal_card
 signal_type: funding
-title: "SambaNova Systems 获得 $1B 融资"
+title: "AI 芯片公司 SambaNova 以 110 亿美元估值完成 10 亿美元 Series F 首次交割"
 date: 2026-07-09
 status: published
 source_title: "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round | TechCrunch"
@@ -10,7 +10,7 @@ asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
 created_at: 2026-07-09T04:02:05.832Z
-updated_at: 2026-07-09T04:02:05.832Z
+updated_at: "2026-07-09T13:38:00+08:00"
 
 raw_refs: ["R-011"]
 pool_refs: ["P-011"]
@@ -53,39 +53,39 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "SambaNova Systems 获得 $1B 融资 AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round | TechCrunch AI chip maker SambaNova 获得 $1B 融资。"
-  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "SambaNova Systems has raised   source_excerpt:  billion at an   source_excerpt: 1 billion valuation led by General Atlantic in a first close of its Series F round."
+  missing_fields: []
 
 signal_owner: "SambaNova Systems"
 
 frontend:
-  displayTitle: "SambaNova Systems 获得 $1B 融资"
+  displayTitle: "AI 芯片公司 SambaNova 以 110 亿美元估值完成 10 亿美元 Series F 首次交割"
   sourceLinks:
     - "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/"
 ---
 
-# SambaNova Systems 获得 $1B 融资
+# AI 芯片公司 SambaNova 以 110 亿美元估值完成 10 亿美元 Series F 首次交割
 
 ## 新闻事实
 
-AI chip maker SambaNova 获得 $1B 融资。
+SambaNova Systems 完成 Series F 首次交割，融资 10 亿美元，估值 110 亿美元，由 General Atlantic 领投，更多投资方预计随后加入。公司表示资金将用于扩展业务，并保障供应链以满足未来 12 个月交付需求。
 
 ## 原文要点
 
-- SambaNova Systems宣布完成10亿美元F 轮融资。
-- SambaNova Systems宣布完成3.50亿美元E 轮融资。
-- SambaNova Systems宣布完成10亿美元融资。
-- SambaNova Systems宣布完成E 轮融资。
-- SambaNova Systems宣布完成C 轮融资。
+- 原始标题：AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round。
+- 产品/服务说明：SambaNova 提供面向大型模型推理的 AI 芯片和系统，包括 SN40L、SN50 与 SambaRack SN50，用于安全、本地化和高性能推理基础设施。
+- 原文称 JPMorganChase 选择 SambaNova 作为 inference-infrastructure partner，将用 SN40L 和 SN50 支撑银行的安全本地推理。
+- TechCrunch 还提到 SambaNova 5 个月前发布 SN50，并完成 3.5 亿美元 Series E；Intel 是其 Series C 以来的投资方，并与 SambaNova 联合开发和销售产品。
+- 其他参投方包括 Seligman Ventures、T. Rowe Price Associates、Capital Group、Battery Ventures、BlackRock、QIA、Vista Equity Partners 等。
 
 ## 价值描述
 
-SambaNova Systems宣布完成3.50亿美元E 轮融资。
+这是 AI 推理基础设施融资信号：SambaNova 的融资、JPMorganChase 采用和 Intel 合作共同说明，企业和金融机构正在为本地、安全、异构推理基础设施投入资金。
 
 ## 可见原文片段
 
-AI chip maker SambaNova 获得 $1B 融资。
+AI chip company SambaNova Systems has raised $1 billion at an $11 billion valuation led by General Atlantic, in a first close of its Series F round.
 
 ## 证据边界
 
-证据边界：缺失项作为内部复核线索保留；公开判断只采用原文标题、摘录和来源链接。
+原文披露融资、估值、部分投资方、客户/合作方和资金用途，但未披露 JPMorganChase 的采购金额、部署规模或 SambaNova 当前收入。
