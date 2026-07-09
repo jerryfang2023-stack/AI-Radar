@@ -2142,7 +2142,7 @@ function autoSignalSpec(poolRef, section, index) {
   if (type === "funding" && !hasStrictFundingAnnouncement(section, sourceEventTitle)) return null;
   const strategicInvestment = isConfirmedStrategicInvestment(section, sourceEventTitle);
   if (strategicInvestment && !titleHasFundingAmountOrRound(sourceEventTitle)) amount = "";
-  const translatedTitle = rawTitleZhFromSection(section) || sourceTitleDisplayTitle(sourceTitle) || sourceTitleDisplayTitle(sourceEventTitle);
+  const translatedTitle = rawTitleZhFromSection(section) || sourceTitleDisplayTitle(sourceTitle);
   let title = publicTitleForAutoSignal({ type, company, sourceEventTitle, amount, translatedTitle });
   if (!title && type === "funding" && strategicInvestment && !sourceTitleNeedsChineseTranslation(sourceEventTitle)) {
     title = `${company} 获得战略投资`;
@@ -2512,6 +2512,8 @@ title: ${yamlString(spec.title)}
 date: ${date}
 status: published
 ${spec.sourceTitle ? `source_title: ${yamlString(spec.sourceTitle)}\n` : ""}asset_level: frontstage
+${sourceTitleNeedsChineseTranslation(spec.sourceTitle) ? `title_zh: ${yamlString(spec.title)}\n` : ""}title_translation_status: ${sourceTitleNeedsChineseTranslation(spec.sourceTitle) ? "translated" : "not_required"}
+title_translation_method: ${sourceTitleNeedsChineseTranslation(spec.sourceTitle) ? "raw_or_source_title_translation_db" : "source_title"}
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
 created_at: ${now}
