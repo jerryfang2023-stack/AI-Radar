@@ -10,9 +10,9 @@ use_when:
 priority: current
 ---
 
-# SITE-V3.4.4 Automation Loop
+# SITE-V3.4.5 Automation Loop
 
-SITE-V3.4.4 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists gated Builder viewpoints into Obsidian person / original-date timeline files and verifies sync dry-run idempotency, Business Signals runs on the V3.3.6.3 source-artifact aggregation contract with raw/card title-translation and fact-extraction ingestion fields, unified Signal Cards, separate AI Hardware lens, peer source-artifact selection, Raw / Pool / Card release override for provider-caused Raw shortfall, and the Enterprise AI / FDE Lens Pool at `EAI-V1.2.0-raw-card-ingestion-boundary`, Community Intelligence uses local logged-in collection before GitHub publication and separates Waiting publication states from repair Problems, Reports Center publishes monthly / weekly reports, source-backed opportunity maps, and relation paths. Hermes is now a problem monitor only: failed production runs are recorded by Daily Problem Watchdog into reports and inbox items for targeted Codex repair.
+SITE-V3.4.5 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists gated Builder viewpoints into Obsidian person / original-date timeline files and verifies sync dry-run idempotency, Business Signals runs on the V3.3.6.3 source-artifact aggregation contract with raw/card title-translation and fact-extraction ingestion fields, unified Signal Cards, separate AI Hardware lens, peer source-artifact selection, V3-only release gate cleanup, Raw / Pool diagnostic targets after healthy Card/frontstage supply, and the Enterprise AI / FDE Lens Pool at `EAI-V1.2.0-raw-card-ingestion-boundary`, Community Intelligence uses local logged-in collection before GitHub publication and separates Waiting publication states from repair Problems, Reports Center publishes monthly / weekly reports, source-backed opportunity maps, and relation paths. Hermes is now a problem monitor only: failed production runs are recorded by Daily Problem Watchdog into reports and inbox items for targeted Codex repair.
 
 ## Business Signals GitHub Chain
 

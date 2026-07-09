@@ -59,7 +59,7 @@ Read these only when a finding depends on the detail:
 - `agent-workflow/product/raw-evidence-schema.md` for Raw field, full text, snapshot, or hash judgment when schema details are needed.
 - `agent-workflow/product/pool-routing-rules.md` for route, downgrade, `core_pool`, or `index_only` judgment only when it does not conflict with current V3 context.
 - `01-SiteV2/content/README.md` for directory or write-path judgment.
-- `source-registry-v2.json`, `keyword-monitoring-v2.json`, and `monitor-quality-gate-v2.json` for executable configuration conflicts.
+- `source-registry-v2.json`, `keyword-monitoring-v2.json`, and `business-signals-gate-v3.json` for executable configuration conflicts.
 
 This skill is stricter than a numeric pass alone. A run can have a high score and still be blocked if it uses low-value pages as core evidence or lacks source-backed original evidence coverage for its main topics.
 

@@ -9,7 +9,7 @@ use_when:
 priority: current
 ---
 
-# 01 Product Map - SITE-V3.4.4
+# 01 Product Map - SITE-V3.4.5
 
 ## Current Product Structure
 
@@ -44,7 +44,7 @@ Monitor / Search / Source discovery
 -> knowledge base
 -> relationship graph
 -> trend candidate
--> SITE-V3.4.4 frontstage / operations data
+-> SITE-V3.4.5 frontstage / operations data
 ```
 
 First-line viewpoints are built by the builders route and displayed in `follow-builders.html`. They are not mixed into the asset flow above.
@@ -90,4 +90,4 @@ A Card can enter the frontstage only when it has:
 
 ## Retired Outputs
 
-Legacy content-output routes, old four-column V2 website pages, and old opinion sidebar logic are not current SITE-V3.4.4 production goals.
+Legacy content-output routes, old four-column V2 website pages, and old opinion sidebar logic are not current SITE-V3.4.5 production goals.
