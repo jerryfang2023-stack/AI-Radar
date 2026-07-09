@@ -3,6 +3,7 @@ import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import crypto from "node:crypto";
+import { resolveSourceTitleTranslation } from "./source-title-translation-generator.mjs";
 
 const root = process.cwd();
 const execFileAsync = promisify(execFile);
@@ -61,6 +62,8 @@ if (args.has("help") || args.has("h")) {
       "  --source-only=aihot|keyword|gdelt|rss",
       "  --use-source-artifacts=true",
       "  --source-artifact-dir=agent-workflow/reports/source-runs/YYYY-MM-DD",
+      "  --title-translation-provider=auto|openai|business-rule|mymemory|none",
+      "  --disable-title-translation=true",
       "  --dry-run=true",
       "",
     ].join("\n")
@@ -96,6 +99,9 @@ const keywordMonitoringPath = path.join(contentRoot, "11-databases", "keyword-mo
 const sourceRegistryPath = path.join(contentRoot, "11-databases", "source-registry-v2.json");
 const monitorQualityGatePath = path.join(contentRoot, "11-databases", "business-signals-gate-v3.json");
 const sourceTitleTranslationsPath = path.join(contentRoot, "11-databases", "source-title-translations.json");
+const titleTranslationProvider = args.get("title-translation-provider") || process.env.TITLE_TRANSLATION_PROVIDER || "auto";
+const titleTranslationTimeoutMs = Number(args.get("title-translation-timeout-ms") || process.env.TITLE_TRANSLATION_TIMEOUT_MS || 12000);
+const titleTranslationDisabled = args.get("disable-title-translation") === "true" || process.env.TITLE_TRANSLATION_DISABLED === "true";
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 const ensure = (dir) => fs.mkdirSync(dir, { recursive: true });
@@ -122,44 +128,15 @@ function readJson(file, fallback) {
   }
 }
 
-function hasCjk(value = "") {
-  return /[\u3400-\u9fff]/u.test(String(value || ""));
-}
-
-function titleTranslationKey(value = "") {
-  return String(value || "")
-    .replace(/\s+/gu, " ")
-    .replace(/\s+[|-]\s+[^|-]+$/u, "")
-    .trim()
-    .toLowerCase();
-}
-
-function loadSourceTitleTranslations() {
-  const payload = readJson(sourceTitleTranslationsPath, { translations: [] });
-  const entries = Array.isArray(payload) ? payload : (Array.isArray(payload.translations) ? payload.translations : []);
-  const map = new Map();
-  for (const entry of entries) {
-    const sourceTitle = String(entry?.sourceTitle || "").trim();
-    const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
-    if (!sourceTitle || !zhTitle || !hasCjk(zhTitle)) continue;
-    map.set(titleTranslationKey(sourceTitle), zhTitle);
-  }
-  return map;
-}
-
-function sourceTitleNeedsChineseTranslation(value = "") {
-  const text = String(value || "").trim();
-  if (!text || hasCjk(text)) return false;
-  return /[A-Za-z]{3}/u.test(text);
-}
-
-function rawTitleTranslationFor(item = {}) {
+async function rawTitleTranslationFor(item = {}) {
   const title = String(item.title || "").trim();
-  if (!title) return { titleZh: "", status: "missing_source_title", method: "none" };
-  if (!sourceTitleNeedsChineseTranslation(title)) return { titleZh: title, status: "not_required", method: "source_title" };
-  const translated = sourceTitleTranslations.get(titleTranslationKey(title)) || "";
-  if (translated) return { titleZh: translated, status: "translated", method: "source_title_translation_db" };
-  return { titleZh: "", status: "needs_ingestion_translation", method: "missing_translation_db_entry" };
+  return resolveSourceTitleTranslation(title, {
+    translationFile: sourceTitleTranslationsPath,
+    sourceUrl: item.url || "",
+    provider: titleTranslationProvider,
+    timeoutMs: titleTranslationTimeoutMs,
+    allowNetwork: !titleTranslationDisabled,
+  });
 }
 
 const keywordMonitoring = readJson(keywordMonitoringPath, {
@@ -168,7 +145,6 @@ const keywordMonitoring = readJson(keywordMonitoringPath, {
 });
 const sourceRegistry = readJson(sourceRegistryPath, { sources: [] });
 const monitorQualityGate = readJson(monitorQualityGatePath, { hard_gates: {}, layered_search_requirements: {} });
-const sourceTitleTranslations = loadSourceTitleTranslations();
 const monitorHardGates = monitorQualityGate.hard_gates || {};
 const monitorDiagnosticTargets = monitorQualityGate.diagnostic_targets || {};
 const layeredSearchRequirements = monitorQualityGate.layered_search_requirements || {};
@@ -2562,7 +2538,7 @@ function rawStatusFor(item, quality, isPooled, gate = commercialSignalHardGate(i
   return "indexed";
 }
 
-function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
+async function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
   const collectedAt = new Date().toISOString();
   const snapshotText = item.snapshot?.text || item.summary || "未抓到正文。";
   const fullText = item.snapshot?.full_text || snapshotText;
@@ -2570,7 +2546,7 @@ function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
   const canonical = canonicalUrl(item.url || "");
   const excerpts = structuredKeyExcerpts(item, snapshotText);
   const elements = extractBusinessElements(item, snapshotText);
-  const titleTranslation = rawTitleTranslationFor(item);
+  const titleTranslation = await rawTitleTranslationFor(item);
   const seed = evidenceSeed(item, elements, excerpts);
   const scores = guanlanScores(item, quality, elements, seed);
   const usable = usableFor(item, quality, scores, excerpts);
@@ -4717,7 +4693,7 @@ function selectMonitorPoolItems(items) {
   return selected.map((meta) => meta.item);
 }
 
-function makeRawFiles(items, failures, runMeta = {}) {
+async function makeRawFiles(items, failures, runMeta = {}) {
   resetGeneratedDir(originalDir, path.join(rawDir, "originals"));
   const poolItemsPre = selectMonitorPoolItems(items);
   const poolKeySet = new Set(poolItemsPre.map(poolKeyFor));
@@ -4766,13 +4742,13 @@ function makeRawFiles(items, failures, runMeta = {}) {
     "",
   ];
 
-  items.forEach((item, index) => {
+  for (const [index, item] of items.entries()) {
     const id = `R-${String(index + 1).padStart(3, "0")}`;
     const originalName = `${id.toLowerCase()}-${slugify(item.title)}.md`;
     const originalPath = path.join(originalDir, originalName);
     const jsonPath = path.join(originalDir, `${originalName.replace(/\.md$/u, "")}.json`);
     const isPooled = poolKeySet.has(poolKeyFor(item));
-    const record = buildRawRecord(item, id, originalPath, jsonPath, isPooled);
+    const record = await buildRawRecord(item, id, originalPath, jsonPath, isPooled);
     item.raw_id = id;
     item.raw_archive_path = rel(originalPath);
     item.raw_json_path = rel(jsonPath);
@@ -4992,7 +4968,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
     ].join("\n");
     writeFile(originalPath, original);
     writeFile(jsonPath, `${JSON.stringify(record, null, 2)}\n`);
-  });
+  }
 
   writeFile(path.join(rawDir, `${date}-raw-candidates.md`), rawLines.join("\n"));
 
@@ -5315,7 +5291,7 @@ async function main() {
   coverageGaps = importanceCoverageGaps(items);
 
   if (!dryRun) {
-    makeRawFiles(items, failures, {
+    await makeRawFiles(items, failures, {
       aihot_mode: aihot.mode,
       aihot_since: aihot.since,
       aihot_discovered_count: aihot.discovered_count,

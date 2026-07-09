@@ -95,10 +95,12 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when page navigation text such as `Back Start free trial`, `Contact Sales`, or language switcher blocks is rejected as public `translatedFact` and replaced by a source-title-derived fact.
     - Pass when a partially translated English source title that still trips the translation heuristic is discarded in favor of the already generated Chinese card title, not forced into public display.
     - Pass when a Chinese subject prefix plus Chinese colon does not exempt the remaining English title from translation, for example `Vendor：Introducing ...` or `Source：Applied AI Case Studies ...`.
-   - Pass when English source-title translation is captured or marked during Raw / raw-to-card ingestion instead of being deferred to frontstage selection.
-   - Pass when `title` and `displayTitle` are backed by the original source title itself or an approved `source-title-translations.json` entry for that exact original title.
-   - Pass when an active-date English funding source title without `title_zh` / translation-db coverage is blocked before publication and routed to Raw/Card translation repair.
-   - Fail when a confirmed funding event with an English original title can publish by falling back to a generated `company + amount + round` title such as `X 获得 $Y 融资`.
+    - Pass when English source-title translation is captured or marked during Raw / raw-to-card ingestion instead of being deferred to frontstage selection.
+    - Pass when Raw ingestion uses a real title-translation generator after an exact `source-title-translations.json` miss, writes generated Chinese `title_zh`, and persists the exact original `sourceTitle -> zhTitle` entry for later deterministic reuse.
+    - Pass when `title` and `displayTitle` are backed by the original source title itself or an approved `source-title-translations.json` entry for that exact original title.
+    - Pass when an active-date English funding source title without `title_zh` / translation-db coverage is blocked before publication and routed to Raw/Card translation repair.
+    - Fail when Raw ingestion detects an English source title, only checks the translation DB, records `missing_translation_db_entry`, and continues without attempting generation.
+    - Fail when a confirmed funding event with an English original title can publish by falling back to a generated `company + amount + round` title such as `X 获得 $Y 融资`.
     - Pass when public facts come from Raw / Card extraction and template filler is repaired in the Card asset or generator.
     - Fail when the unified Business frontstage gate blocks on generic source subjects, untranslated display titles, navigation fragments, weak fact support, or missing customer / ROI / before-after details after Raw / Pool / Card gates already passed.
 
