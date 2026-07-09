@@ -1,6 +1,6 @@
 ---
 name: guanlan-first-line-viewpoints-monitor
-description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.3 First-Line Viewpoints lane. Covers builders / follow-builders data refresh, Chinese translation gate, original URL and tag checks, fallback safety, Obsidian person/date timeline sync, idempotent morning/afternoon publication checks, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals, Signal Cards, relationship graph evidence, trend candidates, or Community Intelligence.
+description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.5 First-Line Viewpoints lane. Covers builders / follow-builders data refresh, Chinese translation gate, original URL and tag checks, fallback safety, Obsidian person/date timeline sync, idempotent morning/afternoon publication checks, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals, Signal Cards, relationship graph evidence, trend candidates, or Community Intelligence.
 metadata:
   guanlan:
     version: "1.0.3"

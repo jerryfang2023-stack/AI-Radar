@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-memory
-last_updated: 2026-07-02
+last_updated: 2026-07-09
 use_when:
   - project startup
   - agent handoff
@@ -31,7 +31,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - Do not restore legacy copy gates as publication blockers.
 - Builders / First-Line Viewpoints must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 - Community posts are demand signals unless recaptured through source-backed business evidence.
-- If an old rule conflicts with current SITE-V3.4.3 context, rebuild or delete the old route instead of preserving compatibility.
+- If an old rule conflicts with current SITE-V3.4.5 context, rebuild or delete the old route instead of preserving compatibility.
 
 ## Operating Model
 

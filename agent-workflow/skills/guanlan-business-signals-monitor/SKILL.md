@@ -1,13 +1,13 @@
 ---
 name: guanlan-business-signals-monitor
-description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.3 / BSIG-V2 Business Signals lane. Covers daily Raw / Pool audit / unified frontstage Signal Cards / Reports Center map inputs / trend-candidate inputs, source-first gates, raw-to-card release behavior, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for First-Line Viewpoints, Community Intelligence, direct deployment, or retired daily observation / brief / trend-report outputs.
+description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.5 / BSIG-V2.1.2-v3-gate-cleanout Business Signals lane. Covers daily Raw / Pool audit / unified frontstage Signal Cards / separate AI Hardware lens / Reports Center map inputs / trend-candidate inputs, source-first gates, raw-to-card release behavior, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for First-Line Viewpoints, Community Intelligence, direct deployment, or retired daily observation / brief / trend-report outputs.
 metadata:
   guanlan:
-    version: "1.0.3"
+    version: "1.0.5"
     lane: "Business Signals"
     status: "current lane owner"
     order: 10
-    responsibility: "Own Business Signals daily supervision and repair: Raw, Pool, unified frontstage Signal Cards, Reports Center map inputs, and trend-candidate inputs."
+    responsibility: "Own Business Signals daily supervision and repair: Raw, Pool, unified frontstage Signal Cards, separate AI Hardware lens, V3 release gate cleanup, Reports Center map inputs, and trend-candidate inputs."
     upstream: "external source capture, daily persistent assets workflow, Hermes inbox"
     downstream: "Signal Cards, graph inputs, trend candidates, PR publication"
     gates: "monitor QC, post-monitor Raw / Pool gate, six-gate Card entry, Card generation, source-first, frontstage Card contract"
