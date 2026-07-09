@@ -2,15 +2,15 @@
 id: SIG-20260708-A10
 type: signal_card
 signal_type: case
-title: "Global Internal Automation Agents for a $50BN CPG - Eliza"
+title: "Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents"
 date: 2026-07-08
 status: published
 source_title: "Global Internal Automation Agents for a $50BN CPG - Eliza"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-08T06:10:03.935Z
-updated_at: 2026-07-08T06:10:03.935Z
+created_at: 2026-07-09T04:04:06.912Z
+updated_at: 2026-07-09T04:04:06.912Z
 
 raw_refs: ["R-088"]
 pool_refs: ["P-088"]
@@ -52,34 +52,34 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Global Internal Automation Agents for a $50BN CPG - Eliza Global Internal Automation Agents for a $50BN CPG - Eliza Global Internal Automation Agents for a $50BN CPG - Eliza 证据边界：缺失项作为内部复核线索保留；公开判断只采用原文标题、摘录和来源链接。"
+  source_excerpt: "Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents Global Internal Automation Agents for a $50BN CPG - Eliza 原始来源标题显示：Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents。"
   missing_fields: ["delivery_model"]
 
 signal_owner: "Eliza"
 
 frontend:
-  displayTitle: "Global Internal Automation Agents for a $50BN CPG - Eliza"
+  displayTitle: "Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents"
   sourceLinks:
     - "https://eliza.com/case-studies/global-internal-automation-agents-for-a-50bn-cpg"
 ---
 
-# Global Internal Automation Agents for a $50BN CPG - Eliza
+# Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents
 
 ## 新闻事实
 
-Global Internal Automation Agents for a $50BN CPG - Eliza
+原始来源标题显示：Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents。
 
 ## 原文要点
 
-- Global Internal Automation Agents for a $50BN CPG - Eliza
+- 原始来源标题显示：Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents。
 
 ## 价值描述
 
-Global Internal Automation Agents for a $50BN CPG - Eliza
+原始来源标题显示：Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents。
 
 ## 可见原文片段
 
-Global Internal Automation Agents for a $50BN CPG - Eliza
+原始来源标题显示：Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents。
 
 ## 证据边界
 

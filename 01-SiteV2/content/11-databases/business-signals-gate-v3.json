@@ -1,0 +1,150 @@
+{
+  "schema_version": "v3.4.4-business-signals-gate-1.0",
+  "updated_at": "2026-07-09",
+  "owner": "Business Signals / Build & Release Agent",
+  "purpose": "Current V3 Business Signals release gate. It protects the Raw -> Pool -> Card -> Frontstage chain without preserving V1/V2 Top10, public-copy, or fixed-volume release semantics.",
+  "diagnostic_score_reference": 85,
+  "score_mode": "diagnostic_only",
+  "score_release_gate": false,
+  "final_qc_required": false,
+  "final_qc_skill": "guanlan-daily-monitor-qc",
+  "final_qc_report_pattern": "agent-workflow/reports/<YYYY-MM-DD>-guanlan-daily-monitor-qc.md",
+  "final_qc_freshness_required": false,
+  "downstream_release_rule": "Release is decided by V3 monitor hard gates plus Card generation, Pool-to-Card duplicate/freshness gate, source-first frontstage gate, frontstage regression gate, operations-data sync, and same-date freshness. Raw volume, channel breadth, importance-lane coverage, score, and final QC are diagnostics unless they expose a true Card or frontstage evidence failure.",
+  "deprecated_blockers_removed": [
+    "Top10 exactly 10 cards",
+    "active-date top10 public JSON field",
+    "Raw count as a release blocker after Card supply is healthy",
+    "Pool target 75 as a release blocker after V3 gate records raw_to_card_supply_release=true",
+    "source-channel transient failures after peer source artifacts satisfy Card supply",
+    "forced daily presence of every old importance lane",
+    "final QC report freshness as a required asset-chain blocker"
+  ],
+  "release_blockers": [
+    "missing Raw or Pool files",
+    "Pool has too little routed evidence to attempt Card generation",
+    "no usable Core Pool evidence is available for Card generation",
+    "index, directory, homepage, or contaminated text is promoted to Core Pool",
+    "blocked or degraded Raw QC item remains in Core Pool",
+    "unrecovered source-provider failure leaves Pool/Card supply below release minimum",
+    "Pool-to-Card duplicate, stale-source, title-source, source-first, or frontstage regression gate fails"
+  ],
+  "weights": {
+    "source_integrity": 25,
+    "content_quality": 20,
+    "coverage_scope": 15,
+    "keyword_compliance": 15,
+    "strategic_alignment": 15,
+    "importance_readiness": 10
+  },
+  "hard_gates": {
+    "pool_count_min": 15,
+    "routed_pool_count_min": 10,
+    "core_pool_min": 1,
+    "usable_core_evidence_min": 1,
+    "homepage_directory_core_max": 0,
+    "core_text_contamination_max": 0,
+    "core_raw_qc_block_max": 0,
+    "core_raw_qc_degraded_max": 0,
+    "unrecovered_failed_sources_max": 0
+  },
+  "diagnostic_targets": {
+    "raw_count_min": 150,
+    "pool_count_target": 75,
+    "routed_pool_count_target": 60,
+    "core_pool_target": 30,
+    "usable_core_evidence_target": 30,
+    "keyword_search_non_community_min": 6,
+    "ai_relevant_title_ratio_min": 0.7,
+    "off_topic_title_max": 3,
+    "importance_coverage_gaps_target": "none",
+    "pool_importance_coverage_gaps_target": "none",
+    "core_non_large_vendor_target": 20,
+    "core_large_vendor_count_target_max": 10,
+    "core_large_vendor_ratio_target_max": 0.35
+  },
+  "diagnostic_release_overrides": [
+    "raw_count_min",
+    "pool_count_target",
+    "routed_pool_count_target",
+    "keyword_search_non_community_min",
+    "ai_relevant_title_ratio_min",
+    "off_topic_title_max",
+    "importance_coverage_gaps_target",
+    "pool_importance_coverage_gaps_target",
+    "core_non_large_vendor_target",
+    "core_large_vendor_ratio_target_max"
+  ],
+  "pool_route_definitions": {
+    "core_pool": "Full evidence candidate only: original URL, readable full text, extraction method, usable evidence object, content hash, key excerpts, Raw QC allow, and a formal business-signal Card route.",
+    "emerging_pool": "Trackable early signal with usable evidence but incomplete Card proof.",
+    "user_feedback_pool": "Community, issue, forum, HN, Reddit, or X feedback. It proves discussion or friction only, not company facts.",
+    "watchlist": "Named subject or direction worth tracking but missing full Card evidence.",
+    "index_only": "Homepage, directory, product display, docs index, README, package/model page, marketplace listing, search result, SEO page, or curated entrance record kept only for indexing.",
+    "discard": "Blocked, unusable, no URL/no usable snapshot, obvious noise, or Raw QC block."
+  },
+  "formal_card_types": [
+    "product_service",
+    "funding",
+    "case"
+  ],
+  "keyword_requirements": {
+    "non_community_paths_min": 6,
+    "non_community_paths": [
+      "official_original",
+      "developer_ecosystem",
+      "capital_startup",
+      "industry_landing",
+      "procurement_marketplace",
+      "a_media_gdelt"
+    ]
+  },
+  "strategy_requirements": {
+    "required_card_types": [
+      "product_service",
+      "funding",
+      "case"
+    ],
+    "old_importance_lanes_not_release_blockers": [
+      "important_vertical_solution",
+      "important_technical_trend",
+      "important_viewpoint_or_article"
+    ],
+    "outside_core_exploration_min_raw": 5,
+    "max_theme_concentration": 0.4,
+    "core_pool_force_fill_for_empty_lane": false
+  },
+  "off_topic_patterns": [
+    "dictionary",
+    "translation",
+    "manga",
+    "comic",
+    "html <pre",
+    "<pre",
+    "tag-pre",
+    "runoob",
+    "mdn",
+    "w3school",
+    "iciba",
+    "youdao",
+    "pronunciation",
+    "definition",
+    "tool directory"
+  ],
+  "retry_tuning": {
+    "search_limit_step": 80,
+    "search_path_query_limit_step": 3,
+    "gdelt_query_limit_step": 6,
+    "hn_limit_step": 0,
+    "raw_dedupe_buffer_base": 140,
+    "raw_dedupe_buffer_step": 20,
+    "raw_dedupe_buffer_max": 180,
+    "raw_max_base": 360,
+    "raw_max_step": 30,
+    "raw_max_max": 420,
+    "search_limit_max": 360,
+    "search_path_query_limit_max": 11,
+    "gdelt_query_limit_max": 24,
+    "hn_limit_max": 8
+  }
+}

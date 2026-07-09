@@ -1,0 +1,283 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-046",
+  "title": "How General Intelligence used agents to build an agent platform on Vercel - Vercel",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://vercel.com/blog/how-general-intelligence-used-agents-to-build-an-agent-platform-on-vercel",
+  "canonical_url": "https://vercel.com/blog/how-general-intelligence-used-agents-to-build-an-agent-platform-on-vercel",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "production_rollout",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-09T03:05:45.053Z",
+  "language": "mixed",
+  "full_text": "Copy link to heading General Intelligence on Vercel\n8-person team (5 engineers) shipping 10 PRs and 70+ commits per engineer, per day\n4,000+ preview branches with ~100 parallel app versions running at any moment\n90% of SRE work automated through Vercel and their own agent (Cofounder)\nCofounder launches with a managed Vercel account for every customer\nGeneral Intelligence is building a platform that lets any founder run a company entirely with AI agents. Their vision is the one-person, billion-dollar company where every department is driven by agents.\nTheir flagship product, Cofounder, gives founders a full team of agents that cover engineering, marketing, SEO, finance, sales, customer support, and operations.\nGeneral Intelligence is an 8-person company with 5 engineers. To ship a platform that lets their customers run agentic companies, they had to operate as one themselves. They wanted to use Cofounder's CTO agent to build out other agentic business functions, and their developers quickly learned that was an infrastructure problem, not an agent problem.\nFor a complex, multi-tenant platform, the requirement was total programmatic control: every action a human could take on the underlying cloud platform had to be available to a coding agent through a CLI or APIs. That meant killing deployments, changing DNS, managing billing, editing configs, all of it. Most cloud providers failed that test, and that's why General Intelligence migrated to Vercel.\n“ If you want to make a system where an agent drives all of your infrastructure, you should probably be using Vercel. If you want to make a system where an agent drives all of your infrastructure, you should probably be using Vercel. ”\nAndrew Pignanelli CEO\nCopy link to heading Agents need infrastructure built for agents\nA coding agent runs dozens of processes in parallel. It queries logs as data, parses errors as input, and treats every dashboard click as a missing API. The bottleneck stops being how fast the agent can write code and becomes how much of the cloud it can actually reach.\nMost clouds aren't shaped for that pattern. They're built for human developers: dashboards to click, consoles to read, APIs that cover some operations but stop short of others. The closer an agent gets to running development end-to-end, the more those gaps stack up.\nGeneral Intelligence started out hosting on Render. It worked for the early product, but provisioning preview environments for the full stack was painful from day one.\nWhen they started building Cofounder's CTO agent, that pain became a blocker. The platform had to be reachable end-to-end through code, and Render's Python support couldn't keep up with what the agent needed.\n\"There are vendors that let an agent do 5% of the work, and vendors that let an agent do 50%,\" explained Pignanelli. \"We needed a platform that would let an agent do 100%.\" They evaluated vendors against that bar and made the choice to migrate to Vercel.\nCopy link to heading How five engineers ship like a hundred\nMigrating to Vercel changed how General Intelligence builds software, and their engineers don't develop locally anymore. Every change Cofounder's CTO agent makes goes straight to a Git branch, spins up a preview environment, and gets tested end-to-end by a browser agent on the live URL.\n“ We don't configure local development at all. Each branch has a preview environment, and within 30 seconds I'm using that version of the app. That just doesn't exist on other platforms. We don't configure local development at all. Each branch has a preview environment, and within 30 seconds I'm using that version of the app. That just doesn't exist on other platforms. ”\nAndrew Pignanelli CEO\nGeneral Intelligence has over 4,000 branches in flight. At any moment during a workday, around 100 versions of their app are running on Vercel, each on its own preview environment with a coding agent or browser agent operating it. Earlier this year, Fluid compute grew 6.5x month-over-month, and most of that growth was internal engineering work: coding agents building business agents in Cofounder.\nToday, engineers ships an average of 10 PRs a day with 70+ commits each, on a token budget of $5,000 per engineer per month.\nCopy link to heading Migrating Cofounder's Python backend to Vercel\nGeneral Intelligence runs a Python backend, and they were one of the first teams to migrate a complex full stack app Vercel . They did it deliberately, because the agent had to drive deployments, configs, and compute across the whole stack, not just the frontend.\nUnifying on one platform shrank the surface area for the team and the agent to one CLI, one API, and one observability layer. When something breaks, the agent and the developers have the full picture in one place.\nCopy link to heading Running Cofounder as a multi-tenant app on Vercel\nWhen a founder spins up a company on Cofounder, they get more than a set of agents, they get a real GitHub repository and a managed Vercel deployment, provisioned automatically through Vercel for Platforms . Each company also gets its own domain, with SSL and DNS handled automatically.\nThe engineering agent inside the customer's company is Cofounder's CTO, the same product General Intelligence uses internally. It runs the same workflow: branches, preview environments, browser agents testing the live URL.\nCopy link to heading What's next\nGeneral Intelligence will keep building their own company on the same products they ship to customers. As they add new departments and agents, Pignanelli says Vercel allows them to focus on the customer, not configuring the cloud underneath.\n“ We don't want to worry about infrastructure for our users. We want them to be able to say 'make my app go' and have it work, and Vercel is the answer. We don't want to worry about infrastructure for our users. We want them to be able to say 'make my app go' and have it work, and Vercel is the answer. ”\nAndrew Pignanelli CEO\nGeneral Intelligence is building Cofounder , the first full-stack agent company platform.",
+  "clean_text": "Copy link to heading General Intelligence on Vercel\n8-person team (5 engineers) shipping 10 PRs and 70+ commits per engineer, per day\n4,000+ preview branches with ~100 parallel app versions running at any moment\n90% of SRE work automated through Vercel and their own agent (Cofounder)\nCofounder launches with a managed Vercel account for every customer\nGeneral Intelligence is building a platform that lets any founder run a company entirely with AI agents. Their vision is the one-person, billion-dollar company where every department is driven by agents.\nTheir flagship product, Cofounder, gives founders a full team of agents that cover engineering, marketing, SEO, finance, sales, customer support, and operations.\nGeneral Intelligence is an 8-person company with 5 engineers. To ship a platform that lets their customers run agentic companies, they had to operate as one themselves. They wanted to use Cofounder's CTO agent to build out other agentic business functions, and their developers quickly learned that was an infrastructure problem, not an agent problem.\nFor a complex, multi-tenant platform, the requirement was total programmatic control: every action a human could take on the underlying cloud platform had to be available to a coding agent through a CLI or APIs. That meant killing deployments, changing DNS, managing billing, editing configs, all of it. Most cloud providers failed that test, and that's why General Intelligence migrated to Vercel.\n“ If you want to make a system where an agent drives all of your infrastructure, you should probably be using Vercel. If you want to make a system where an agent drives all of your infrastructure, you should probably be using Vercel. ”\nAndrew Pignanelli CEO\nCopy link to heading Agents need infrastructure built for agents\nA coding agent runs dozens of processes in parallel. It queries logs as data, parses errors as input, and treats every dashboard click as a missing API. The bottleneck stops being how fast the agent can write code and becomes how much of the cloud it can actually reach.\nMost clouds aren't shaped for that pattern. They're built for human developers: dashboards to click, consoles to read, APIs that cover some operations but stop short of others. The closer an agent gets to running development end-to-end, the more those gaps stack up.\nGeneral Intelligence started out hosting on Render. It worked for the early product, but provisioning preview environments for the full stack was painful from day one.\nWhen they started building Cofounder's CTO agent, that pain became a blocker. The platform had to be reachable end-to-end through code, and Render's Python support couldn't keep up with what the agent needed.\n\"There are vendors that let an agent do 5% of the work, and vendors that let an agent do 50%,\" explained Pignanelli. \"We needed a platform that would let an agent do 100%.\" They evaluated vendors against that bar and made the choice to migrate to Vercel.\nCopy link to heading How five engineers ship like a hundred\nMigrating to Vercel changed how General Intelligence builds software, and their engineers don't develop locally anymore. Every change Cofounder's CTO agent makes goes straight to a Git branch, spins up a preview environment, and gets tested end-to-end by a browser agent on the live URL.\n“ We don't configure local development at all. Each branch has a preview environment, and within 30 seconds I'm using that version of the app. That just doesn't exist on other platforms. We don't configure local development at all. Each branch has a preview environment, and within 30 seconds I'm using that version of the app. That just doesn't exist on other platforms. ”\nAndrew Pignanelli CEO\nGeneral Intelligence has over 4,000 branches in flight. At any moment during a workday, around 100 versions of their app are running on Vercel, each on its own preview environment with a coding agent or browser agent operating it. Earlier this year, Fluid compute grew 6.5x month-over-month, and most of that growth was internal engineering work: coding agents building business agents in Cofounder.\nToday, engineers ships an average of 10 PRs a day with 70+ commits each, on a token budget of $5,000 per engineer per month.\nCopy link to heading Migrating Cofounder's Python backend to Vercel\nGeneral Intelligence runs a Python backend, and they were one of the first teams to migrate a complex full stack app Vercel . They did it deliberately, because the agent had to drive deployments, configs, and compute across the whole stack, not just the frontend.\nUnifying on one platform shrank the surface area for the team and the agent to one CLI, one API, and one observability layer. When something breaks, the agent and the developers have the full picture in one place.\nCopy link to heading Running Cofounder as a multi-tenant app on Vercel\nWhen a founder spins up a company on Cofounder, they get more than a set of agents, they get a real GitHub repository and a managed Vercel deployment, provisioned automatically through Vercel for Platforms . Each company also gets its own domain, with SSL and DNS handled automatically.\nThe engineering agent inside the customer's company is Cofounder's CTO, the same product General Intelligence uses internally. It runs the same workflow: branches, preview environments, browser agents testing the live URL.\nCopy link to heading What's next\nGeneral Intelligence will keep building their own company on the same products they ship to customers. As they add new departments and agents, Pignanelli says Vercel allows them to focus on the customer, not configuring the cloud underneath.\n“ We don't want to worry about infrastructure for our users. We want them to be able to say 'make my app go' and have it work, and Vercel is the answer. We don't want to worry about infrastructure for our users. We want them to be able to say 'make my app go' and have it work, and Vercel is the answer. ”\nAndrew Pignanelli CEO\nGeneral Intelligence is building Cofounder , the first full-stack agent company platform.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-09/r-046-how-general-intelligence-used-agents-to-build-an-agent-platform-on-ver.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-09/r-046-how-general-intelligence-used-agents-to-build-an-agent-platform-on-ver.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 6051,
+    "paragraph_count": 34,
+    "sentence_count": 50,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0002,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 6051,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "96c714ad9143722e",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "0f308b662a21daf0",
+  "content_hash": "96c714ad9143722e",
+  "full_text_hash": "96c714ad9143722e",
+  "semantic_hash": "fd5f704b4bd287fe",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-09T03:05:45.053Z",
+  "last_seen_at": "2026-07-09T03:05:45.053Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "# How General Intelligence used agents to build an agent platform on Vercel Published: May 4, 2026 | Authors: Eric Dodds | Category: Customer stories --- ### General Intelligence on Vercel - 8-person team (5 engineers) shipping 10 PRs and 70+ commits per engineer, per day - 4,000+ preview branch... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "Copy link to heading General Intelligence on Vercel 8-person team (5 engineers) shipping 10 PRs and 70+ commits per engineer, per day 4,000+ preview branches with ~100 parallel app versions running at any moment 90% of SRE work automated through Vercel and their own agent (Cofounder) Cofounder launches with a managed Vercel account for every customer General Intelligence is building a platform that lets any founder run a company entirely with AI agents.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Their vision is the one-person, billion-dollar company where every department is driven by agents.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Their flagship product, Cofounder, gives founders a full team of agents that cover engineering, marketing, SEO, finance, sales, customer support, and operations.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "General Intelligence is an 8-person company with 5 engineers.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "To ship a platform that lets their customers run agentic companies, they had to operate as one themselves.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-09T03:05:45.053Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub"
+    ],
+    "products": [
+      "agents",
+      "agent",
+      "Agents"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险",
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "4",
+      "2026",
+      "8",
+      "5",
+      "10",
+      "70",
+      "000",
+      "100"
+    ],
+    "quotes": [
+      "There are vendors that let an agent do 5% of the work, and vendors that let an agent do 50%,",
+      "We needed a platform that would let an agent do 100%."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Their vision is the one-person, billion-dollar company where every department is driven by agents.",
+      "General Intelligence is an 8-person company with 5 engineers."
+    ],
+    "case_details": [
+      "# How General Intelligence used agents to build an agent platform on Vercel Published: May 4, 2026 | Authors: Eric Dodds | Category: Customer stories --- ### General Intelligence on Vercel - 8-person team (5 engineers) shipping 10 PRs and 70+ commits per engineer, per day - 4,000+ preview branch... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original",
+      "Their flagship product, Cofounder, gives founders a full team of agents that cover engineering, marketing, SEO, finance, sales, customer support, and operations.",
+      "To ship a platform that lets their customers run agentic companies, they had to operate as one themselves."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# How General Intelligence used agents to build an agent platform on Vercel - Vercel\n\n- raw_id: R-046\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://vercel.com/blog/how-general-intelligence-used-agents-to-build-an-agent-platform-on-vercel\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-09T03:05:45.053Z\n\n## clean_text\n\nCopy link to heading General Intelligence on Vercel\n8-person team (5 engineers) shipping 10 PRs and 70+ commits per engineer, per day\n4,000+ preview branches with ~100 parallel app versions running at any moment\n90% of SRE work automated through Vercel and their own agent (Cofounder)\nCofounder launches with a managed Vercel account for every customer\nGeneral Intelligence is building a platform that lets any founder run a company entirely with AI agents. Their vision is the one-person, billion-dollar company where every department is driven by agents.\nTheir flagship product, Cofounder, gives founders a full team of agents that cover engineering, marketing, SEO, finance, sales, customer support, and operations.\nGeneral Intelligence is an 8-person company with 5 engineers. To ship a platform that lets their customers run agentic companies, they had to operate as one themselves. They wanted to use Cofounder's CTO agent to build out other agentic business functions, and their developers quickly learned that was an infrastructure problem, not an agent problem.\nFor a complex, multi-tenant platform, the requirement was total programmatic control: every action a human could take on the underlying cloud platform had to be available to a coding agent through a CLI or APIs. That meant killing deployments, changing DNS, managing billing, editing configs, all of it. Most cloud providers failed that test, and that's why General Intelligence migrated to Vercel.\n“ If you want to make a system where an agent drives all of your infrastructure, you should probably be using Vercel. If you want to make a system where an agent drives all of your infrastructure, you should probably be using Vercel. ”\nAndrew Pignanelli CEO\nCopy link to heading Agents need infrastructure built for agents\nA coding agent runs dozens of processes in parallel. It queries logs as data, parses errors as input, and treats every dashboard click as a missing API. The bottleneck stops being how fast the agent can write code and becomes how much of the cloud it can actually reach.\nMost clouds aren't shaped for that pattern. They're built for human developers: dashboards to click, consoles to read, APIs that cover some operations but stop short of others. The closer an agent gets to running development end-to-end, the more those gaps stack up.\nGeneral Intelligence started out hosting on Render. It worked for the early product, but provisioning preview environments for the full stack was painful from day one.\nWhen they started building Cofounder's CTO agent, that pain became a blocker. The platform had to be reachable end-to-end through code, and Render's Python support couldn't keep up with what the agent needed.\n\"There are vendors that let an agent do 5% of the work, and vendors that let an agent do 50%,\" explained Pignanelli. \"We needed a platform that would let an agent do 100%.\" They evaluated vendors against that bar and made the choice to migrate to Vercel.\nCopy link to heading How five engineers ship like a hundred\nMigrating to Vercel changed how General Intelligence builds software, and their engineers don't develop locally anymore. Every change Cofounder's CTO agent makes goes straight to a Git branch, spins up a preview environment, and gets tested end-to-end by a browser agent on the live URL.\n“ We don't configure local development at all. Each branch has a preview environment, and within 30 seconds I'm using that version of the app. That just doesn't exist on other platforms. We don't configure local development at all. Each branch has a preview environment, and within 30 seconds I'm using that version of the app. That just doesn't exist on other platforms. ”\nAndrew Pignanelli CEO\nGeneral Intelligence has over 4,000 branches in flight. At any moment during a workday, around 100 versions of their app are running on Vercel, each on its own preview environment with a coding agent or browser agent operating it. Earlier this year, Fluid compute grew 6.5x month-over-month, and most of that growth was internal engineering work: coding agents building business agents in Cofounder.\nToday, engineers ships an average of 10 PRs a day with 70+ commits each, on a token budget of $5,000 per engineer per month.\nCopy link to heading Migrating Cofounder's Python backend to Vercel\nGeneral Intelligence runs a Python backend, and they were one of the first teams to migrate a complex full stack app Vercel . They did it deliberately, because the agent had to drive deployments, configs, and compute across the whole stack, not just the frontend.\nUnifying on one platform shrank the surface area for the team and the agent to one CLI, one API, and one observability layer. When something breaks, the agent and the developers have the full picture in one place.\nCopy link to heading Running Cofounder as a multi-tenant app on Vercel\nWhen a founder spins up a company on Cofounder, they get more than a set of agents, they get a real GitHub repository and a managed Vercel deployment, provisioned automatically through Vercel for Platforms . Each company also gets its own domain, with SSL and DNS handled automatically.\nThe engineering agent inside the customer's company is Cofounder's CTO, the same product General Intelligence uses internally. It runs the same workflow: branches, preview environments, browser agents testing the live URL.\nCopy link to heading What's next\nGeneral Intelligence will keep building their own company on the same products they ship to customers. As they add new departments and agents, Pignanelli says Vercel allows them to focus on the customer, not configuring the cloud underneath.\n“ We don't want to worry about infrastructure for our users. We want them to be able to say 'make my app go' and have it work, and Vercel is the answer. We don't want to worry about infrastructure for our users. We want them to be able to say 'make my app go' and have it work, and Vercel is the answer. ”\nAndrew Pignanelli CEO\nGeneral Intelligence is building Cofounder , the first full-stack agent company platform.\n\n## full_text\n\nCopy link to heading General Intelligence on Vercel\n8-person team (5 engineers) shipping 10 PRs and 70+ commits per engineer, per day\n4,000+ preview branches with ~100 parallel app versions running at any moment\n90% of SRE work automated through Vercel and their own agent (Cofounder)\nCofounder launches with a managed Vercel account for every customer\nGeneral Intelligence is building a platform that lets any founder run a company entirely with AI agents. Their vision is the one-person, billion-dollar company where every department is driven by agents.\nTheir flagship product, Cofounder, gives founders a full team of agents that cover engineering, marketing, SEO, finance, sales, customer support, and operations.\nGeneral Intelligence is an 8-person company with 5 engineers. To ship a platform that lets their customers run agentic companies, they had to operate as one themselves. They wanted to use Cofounder's CTO agent to build out other agentic business functions, and their developers quickly learned that was an infrastructure problem, not an agent problem.\nFor a complex, multi-tenant platform, the requirement was total programmatic control: every action a human could take on the underlying cloud platform had to be available to a coding agent through a CLI or APIs. That meant killing deployments, changing DNS, managing billing, editing configs, all of it. Most cloud providers failed that test, and that's why General Intelligence migrated to Vercel.\n“ If you want to make a system where an agent drives all of your infrastructure, you should probably be using Vercel. If you want to make a system where an agent drives all of your infrastructure, you should probably be using Vercel. ”\nAndrew Pignanelli CEO\nCopy link to heading Agents need infrastructure built for agents\nA coding agent runs dozens of processes in parallel. It queries logs as data, parses errors as input, and treats every dashboard click as a missing API. The bottleneck stops being how fast the agent can write code and becomes how much of the cloud it can actually reach.\nMost clouds aren't shaped for that pattern. They're built for human developers: dashboards to click, consoles to read, APIs that cover some operations but stop short of others. The closer an agent gets to running development end-to-end, the more those gaps stack up.\nGeneral Intelligence started out hosting on Render. It worked for the early product, but provisioning preview environments for the full stack was painful from day one.\nWhen they started building Cofounder's CTO agent, that pain became a blocker. The platform had to be reachable end-to-end through code, and Render's Python support couldn't keep up with what the agent needed.\n\"There are vendors that let an agent do 5% of the work, and vendors that let an agent do 50%,\" explained Pignanelli. \"We needed a platform that would let an agent do 100%.\" They evaluated vendors against that bar and made the choice to migrate to Vercel.\nCopy link to heading How five engineers ship like a hundred\nMigrating to Vercel changed how General Intelligence builds software, and their engineers don't develop locally anymore. Every change Cofounder's CTO agent makes goes straight to a Git branch, spins up a preview environment, and gets tested end-to-end by a browser agent on the live URL.\n“ We don't configure local development at all. Each branch has a preview environment, and within 30 seconds I'm using that version of the app. That just doesn't exist on other platforms. We don't configure local development at all. Each branch has a preview environment, and within 30 seconds I'm using that version of the app. That just doesn't exist on other platforms. ”\nAndrew Pignanelli CEO\nGeneral Intelligence has over 4,000 branches in flight. At any moment during a workday, around 100 versions of their app are running on Vercel, each on its own preview environment with a coding agent or browser agent operating it. Earlier this year, Fluid compute grew 6.5x month-over-month, and most of that growth was internal engineering work: coding agents building business agents in Cofounder.\nToday, engineers ships an average of 10 PRs a day with 70+ commits each, on a token budget of $5,000 per engineer per month.\nCopy link to heading Migrating Cofounder's Python backend to Vercel\nGeneral Intelligence runs a Python backend, and they were one of the first teams to migrate a complex full stack app Vercel . They did it deliberately, because the agent had to drive deployments, configs, and compute across the whole stack, not just the frontend.\nUnifying on one platform shrank the surface area for the team and the agent to one CLI, one API, and one observability layer. When something breaks, the agent and the developers have the full picture in one place.\nCopy link to heading Running Cofounder as a multi-tenant app on Vercel\nWhen a founder spins up a company on Cofounder, they get more than a set of agents, they get a real GitHub repository and a managed Vercel deployment, provisioned automatically through Vercel for Platforms . Each company also gets its own domain, with SSL and DNS handled automatically.\nThe engineering agent inside the customer's company is Cofounder's CTO, the same product General Intelligence uses internally. It runs the same workflow: branches, preview environments, browser agents testing the live URL.\nCopy link to heading What's next\nGeneral Intelligence will keep building their own company on the same products they ship to customers. As they add new departments and agents, Pignanelli says Vercel allows them to focus on the customer, not configuring the cloud underneath.\n“ We don't want to worry about infrastructure for our users. We want them to be able to say 'make my app go' and have it work, and Vercel is the answer. We don't want to worry about infrastructure for our users. We want them to be able to say 'make my app go' and have it work, and Vercel is the answer. ”\nAndrew Pignanelli CEO\nGeneral Intelligence is building Cofounder , the first full-stack agent company platform.\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 97\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] # How General Intelligence used agents to build an agent platform on Vercel Published: May 4, 2026 | Authors: Eric Dodds | Category: Customer stories --- ### General Intelligence on Vercel - 8-person team (5 engineers) shipping 10 PRs and 70+ commits per engineer, per day - 4,000+ preview branch... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original\n2. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] Copy link to heading General Intelligence on Vercel 8-person team (5 engineers) shipping 10 PRs and 70+ commits per engineer, per day 4,000+ preview branches with ~100 parallel app versions running at any moment 90% of SRE work automated through Vercel and their own agent (Cofounder) Cofounder launches with a managed Vercel account for every customer General Intelligence is building a platform that lets any founder run a company entirely with AI agents.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Their vision is the one-person, billion-dollar company where every department is driven by agents.\n4. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Their flagship product, Cofounder, gives founders a full team of agents that cover engineering, marketing, SEO, finance, sales, customer support, and operations.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] General Intelligence is an 8-person company with 5 engineers.\n6. [case_detail / signal_card_candidate, relationship_graph_input, case / high] To ship a platform that lets their customers run agentic companies, they had to operate as one themselves.\n"
+}

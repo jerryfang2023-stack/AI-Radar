@@ -1984,7 +1984,7 @@ function sourceTitleNeedsChineseTranslation(title = "") {
   const text = String(title || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
-  return text.length > 12 && hanCount < 4 && latinWords.length >= 3;
+  return text.length > 12 && hanCount < 4 && latinWords.length >= 2;
 }
 
 function sourceTitleDisplayTitle(title = "") {
@@ -1995,6 +1995,13 @@ function sourceTitleDisplayTitle(title = "") {
 }
 
 const sourceTitleTranslations = loadSourceTitleTranslations();
+
+function rawTitleZhFromSection(section) {
+  const raw = readRawJson(section);
+  const title = cleanSourceTitleForPublicTitle(raw.title_zh || raw.titleZh || "");
+  if (!title || hasTextContamination(title) || !hasCjk(title)) return "";
+  return title;
+}
 
 function compactLaunchTitle(company = "", title = "") {
   const cleanCompany = shortCompany(company);
@@ -2007,14 +2014,15 @@ function compactLaunchTitle(company = "", title = "") {
   return `${cleanCompany} 发布 ${product}`;
 }
 
-function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount }) {
-  const translated = sourceTitleDisplayTitle(sourceEventTitle);
+function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount, translatedTitle = "" }) {
+  const translated = translatedTitle || sourceTitleDisplayTitle(sourceEventTitle);
   if (translated) return translated;
   if (type === "funding" && company && amount && !hasTextContamination(company)) {
     const round = chineseRound(sourceEventTitle);
     return `${company} 获得 ${amount}${round ? ` ${round}` : ""} 融资`;
   }
   if ((type === "product_service" || type === "case") && sourceEventTitleCanBackAutoCard(sourceEventTitle)) {
+    if (sourceTitleNeedsChineseTranslation(sourceEventTitle)) return "";
     const compact = compactLaunchTitle(company, sourceEventTitle);
     if (compact) return compact;
     return sourceEventTitle;
@@ -2114,24 +2122,9 @@ function autoSignalSpec(poolRef, section, index) {
   const summaryOperatorMaterial = evidenceStrengthForSection(section) === "traceable_summary"
     && /\b(podcast|simplecast|interview|episode|ceo|founder|co-founder)\b|CEO|创始人|访谈|播客/iu.test(sectionEvidenceText(section));
 
-  // Check original publication time from raw_json; skip items older than the freshness window.
-  const rawJsonPath = value(section, "raw_json");
-  if (rawJsonPath) {
-    try {
-      const rawPath = path.resolve(root, rawJsonPath.replace(/^`|`$/gu, ""));
-      const rawData = JSON.parse(fs.readFileSync(rawPath, "utf8"));
-      const pubDate = rawData.published_at;
-      if (pubDate && !allowsObservationSummaryEvidence(section)) {
-        const pubDay = new Date(pubDate);
-        const cutoff = new Date();
-        cutoff.setDate(cutoff.getDate() - 90);
-        if (pubDay < cutoff) {
-          return null;
-        }
-      }
-    } catch {
-      // raw_json 读取失败 → 不阻断流程，继续
-    }
+  if (!allowsObservationSummaryEvidence(section)) {
+    const maxAgeDays = type === "product_service" ? 14 : 180;
+    if (isStalePublication(section, maxAgeDays)) return null;
   }
 
   let scenario = scenarioFromText(text);
@@ -2148,7 +2141,8 @@ function autoSignalSpec(poolRef, section, index) {
   if (type === "funding" && !hasStrictFundingAnnouncement(section, sourceEventTitle)) return null;
   const strategicInvestment = isConfirmedStrategicInvestment(section, sourceEventTitle);
   if (strategicInvestment && !titleHasFundingAmountOrRound(sourceEventTitle)) amount = "";
-  let title = publicTitleForAutoSignal({ type, company, sourceEventTitle, amount });
+  const translatedTitle = rawTitleZhFromSection(section) || sourceTitleDisplayTitle(sourceTitle) || sourceTitleDisplayTitle(sourceEventTitle);
+  let title = publicTitleForAutoSignal({ type, company, sourceEventTitle, amount, translatedTitle });
   if (!title && type === "funding" && strategicInvestment) {
     title = `${company} 获得战略投资`;
   }

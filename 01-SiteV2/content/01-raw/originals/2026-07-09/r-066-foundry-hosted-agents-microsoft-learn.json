@@ -1,0 +1,293 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-066",
+  "title": "Foundry Hosted Agents | Microsoft Learn",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://learn.microsoft.com/en-us/agent-framework/hosting/foundry-hosted-agent",
+  "canonical_url": "https://learn.microsoft.com/en-us/agent-framework/hosting/foundry-hosted-agent",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "official",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "ai_transformation",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-09T03:05:45.188Z",
+  "language": "mixed",
+  "full_text": "Foundry Hosted Agents | Microsoft Learn\nTable of contents\nExit editor mode\nAsk Learn\nAsk Learn\nReading mode\nTable of contents\nRead in English\nAdd\nAdd to plan\nEdit\nCopy Markdown\nPrint\nNote\nAccess to this page requires authorization. You can try signing in or changing directories .\nAccess to this page requires authorization. You can try changing directories .\nFoundry Hosted Agents\nFeedback\nSummarize this article for me\nHosted agents in Microsoft Foundry Agent Service let you deploy Agent Framework agents as containerized applications to Microsoft-managed infrastructure. The platform handles scaling, session state persistence, security, and lifecycle management so you can focus on your agent's logic.\nWith the Agent Framework hosting integration, you can take any Agent or workflow and expose it through the Foundry Responses or Invocations protocol with minimal code.\nWhen to use hosted agents\nChoose Foundry hosted agents when you want:\nManaged infrastructure — no need to configure containers, web servers, or scaling rules yourself.\nBuilt-in session management — the platform persists $HOME and uploaded files across turns and idle periods.\nDedicated agent identity — every deployed agent gets its own Entra identity for secure access to models, tools, and downstream services.\nOpenAI-compatible endpoints — clients can interact with your agent using any OpenAI-compatible SDK through the Responses protocol.\nNote\nFoundry hosted agents are currently in preview. See the Foundry hosted agents documentation for the latest availability, limits, and pricing.\nPrerequisites\nAn Azure subscription\nAzure Developer CLI ( azd ) with the AI agent extension: azd ext install azure.ai.agents\nFor local testing, you also need:\nA Microsoft Foundry project with a model deployment (for example, gpt-4o )\nAzure CLI installed and authenticated ( az login )\n.NET 10 SDK or later\nInstall the hosting NuGet package:\ndotnet add package Microsoft.Agents.AI.Foundry.Hosting --prerelease\ndotnet add package Azure.AI.Projects --prerelease\nPython 3.10 or later\nInstall the hosting Python package:\npip install agent-framework agent-framework-foundry-hosting\nResponses protocol\nThe Responses protocol is the recommended starting point for most agents. It exposes an OpenAI-compatible /responses endpoint, and the platform manages conversation history, streaming, and session lifecycle automatically.\nusing Azure.AI.AgentServer.Core;\nusing Azure.AI.Projects;\nusing Azure.Identity;\nusing Microsoft.Agents.AI;\nusing Microsoft.Agents.AI.Foundry.Hosting;\nvar projectEndpoint = new Uri(Environment.GetEnvironmentVariable(\"FOUNDRY_PROJECT_ENDPOINT\")\n?? throw new InvalidOperationException(\"FOUNDRY_PROJECT_ENDPOINT is not set.\"));\nvar deployment = Environment.GetEnvironmentVariable(\"AZURE_AI_MODEL_DEPLOYMENT_NAME\") ?? \"gpt-4o\";\nAIAgent agent = new AIProjectClient(projectEndpoint, new DefaultAzureCredential())\n.AsAIAgent(\nmodel: deployment,\ninstructions: \"You are a helpful AI assistant.\",\nname: \"my-agent\");\nvar builder = AgentHost.CreateBuilder(args);\nbuilder.Services.AddFoundryResponses(agent);\nbuilder.RegisterProtocol(\"responses\", endpoints => endpoints.MapFoundryResponses());\nvar app = builder.Build();\napp.Run();\nThe AgentHost.CreateBuilder creates an application host preconfigured for the Foundry hosting environment. AddFoundryResponses registers your agent with the Responses protocol handler, and MapFoundryResponses maps the /responses HTTP endpoint.\nimport os\nfrom agent_framework import Agent\nfrom agent_framework.foundry import FoundryChatClient\nfrom agent_framework_foundry_hosting import ResponsesHostServer\nfrom azure.identity import DefaultAzureCredential\nclient = FoundryChatClient(\nproject_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\nmodel=os.environ[\"AZURE_AI_MODEL_DEPLOYMENT_NAME\"],\ncredential=DefaultAzureCredential(),\nagent = Agent(\nclient=client,\ninstructions=\"You are a helpful AI assistant.\",\ndefault_options={\"store\": False},\nserver = ResponsesHostServer(agent)\nserver.run()\nThe ResponsesHostServer wraps your agent and exposes it through the Foundry Responses protocol. Setting store to False in default_options avoids duplicating conversation history, since the hosting infrastructure manages history automatically.\nInvocations protocol\nThe Invocations protocol gives you full control over the HTTP request and response. Use it when you need custom payloads, non-conversational processing, or streaming protocols that aren't OpenAI-compatible.\nWith the Invocations protocol in C#, you implement a custom InvocationHandler to process incoming requests:\nusing Azure.AI.AgentServer.Core;\nusing Azure.AI.AgentServer.Invocations;\nusing Microsoft.Agents.AI;\nvar builder = AgentHost.CreateBuilder(args);\nbuilder.Services.AddSingleton<AIAgent, MyAgent>();\nbuilder.Services.AddInvocationsServer();\nbuilder.Services.AddScoped<InvocationHandler, MyInvocationHandler>();\nbuilder.RegisterProtocol(\"invocations\", endpoints => endpoints.MapInvocationsServer());\nvar app = builder.Build();\napp.Run();\nThe AddInvocationsServer method registers the Invocations protocol services. You implement InvocationHandler to define how your agent processes each request.\nFor a lightweight setup, use InvocationsHostServer from the agent_framework_foundry_hosting package. It wraps your agent similarly to ResponsesHostServer and handles session management automatically:\nimport os\nfrom agent_framework import Agent\nfrom agent_framework.foundry import FoundryChatClient\nfrom agent_framework_foundry_hosting import InvocationsHostServer\nfrom azure.identity import DefaultAzureCredential\nclient = FoundryChatClient(\nproject_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\nmodel=os.environ[\"AZURE_AI_MODEL_DEPLOYMENT_NAME\"],\ncredential=DefaultAzureCredential(),\nagent = Agent(\nclient=client,\ninstructions=\"You are a friendly assistant. Keep your answers brief.\",\ndefault_options={\"store\": False},\nserver = InvocationsHostServer(agent)\nserver.run()\nFor full control over request handling, use InvocationAgentServerHost from the azure.ai.agentserver.invocations package directly and implement your own invoke handler:\nimport os\nfrom collections.abc import AsyncGenerator\nfrom agent_framework import Agent, AgentSession\nfrom agent_framework.foundry import FoundryChatClient\nfrom azure.ai.agentserver.invocations import InvocationAgentServerHost\nfrom azure.identity import DefaultAzureCredential\nfrom starlette.requests import Request\nfrom starlette.responses import JSONResponse, Response, StreamingResponse\n_sessions: dict[str, AgentSession] = {}\nclient = FoundryChatClient(\nproject_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\nmodel=os.environ[\"AZURE_AI_MODEL_DEPLOYMENT_NAME\"],\ncredential=DefaultAzureCredential(),\nagent = Agent(\nclient=client,\ninstructions=\"You are a friendly assistant. Keep your answers brief.\",\ndefault_options={\"store\": False},\napp = InvocationAgentServerHost()\n@app.invoke_handler\nasync def handle_invoke(request: Request):\n\"\"\"Handle streaming multi-turn chat.\"\"\"\ndata = await request.json()\nsession_id = request.state.session_id\nstream = data.get(\"stream\", False)\nuser_message = data.get(\"message\", None)\nif user_message is None:\nreturn Response(content=\"Missing 'message' in request\", status_code=400)\nsession = _sessions.setdefault(session_id, AgentSession(session_id=session_id))\nif stream:\nasync def stream_response() -> AsyncGenerator[str]:\nasync for update in agent.run(user_message, session=session, stream=True):\nyield update.text\nreturn StreamingResponse(\nstream_response(),\nmedia_type=\"text/event-stream\",\nheaders={\"Cache-Control\": \"no-cache\", \"Connection\": \"keep-alive\"},\nresponse = await agent.run([user_message], session=session, stream=stream)\nreturn JSONResponse({\"response\": response.text})\nif __name__ == \"__main__\":\napp.run()\nWarning\nThe in-memory session store in the custom handler example is lost on restart. Use durable storage (for example, Cosmos DB) in production.\nTip\nRefer the Python samples or the C# samples for examples of a hosted agent project. Or use the azd ai agent init command to scaffold a new hosted agent project from scratch. Refer to this quickstart guide for step-by-step instructions.\nRunning locally\nThe Azure Developer CLI ( azd ) provides the easiest way to run and test your hosted agent locally.\nInitialize a project\nCreate a new folder and initialize from a sample manifest:\nmkdir my-hosted-agent && cd my-hosted-agent\nazd ai agent init -m <path-to-agent.manifest.yaml>\nTip\nThe manifest can be a path to a local YAML file or a URL to a remote manifest.\nSet environment variables\nexport FOUNDRY_PROJECT_ENDPOINT=\"https://<account>.services.ai.azure.com/api/projects/<project>\"\nexport AZURE_AI_MODEL_DEPLOYMENT_NAME=\"<your-model-deployment>\"\nRun the agent host\nazd ai agent run\nThe agent host starts on http://localhost:8088 .\nInvoke the agent\nazd ai agent invoke --local \"Hello!\"\nOr use curl :\ncurl -X POST http://localhost:8088/responses \\\n-H \"Content-Type: application/json\" \\\n-d '{\"input\": \"Hello!\"}'\nOr in PowerShell:\n(Invoke-WebRequest -Uri http://localhost:8088/responses -Method POST -ContentType \"application/json\" -Body '{\"input\": \"Hello!\"}').Content\nDeploying to Foundry\nOnce you've verified your agent locally, deploy it to Microsoft Foundry:\nProvision resources (if you don't already have a Foundry project):\nazd provision\nThis creates a resource group with a Foundry instance, project, model deployment, Application Insights, and a container registry.\nDeploy the agent:\nazd deploy\nThis packages your agent as a container image, pushes it to Azure Container Registry, and deploys it to Foundry Agent Service.\nThe Foundry hosting infrastructure automatically injects the following environment variables into your agent container at runtime:\nVariable\nDescription\nFOUNDRY_PROJECT_ENDPOINT\nThe endpoint URL for the Foundry project.\nAZURE_AI_MODEL_DEPLOYMENT_NAME\nThe model deployment name (configured during azd ai agent init ).\nAPPLICATIONINSIGHTS_CONNECTION_STRING\nThe Application Insights connection string for telemetry.\nOnce deployed, your agent is accessible through its dedicated Foundry endpoint and can also be tested from the Foundry portal.\nNext steps\nHosted agents concepts\nDeploy a hosted agent with the Foundry SDK\nManage hosted agents\nDurable Extension hosting\nA2A Hosting\nPython samples\nC# samples\nFeedback\nWas this page helpful?\nYes\nNo\nNo\nNeed help with this topic?\nWant to try using Ask Learn to clarify or guide you through this topic?\nAsk Learn\nAsk Learn\nSuggest a fix?\nAdditional resources\nLast updated on\n2026-05-01",
+  "clean_text": "Foundry Hosted Agents | Microsoft Learn\nTable of contents\nExit editor mode\nAsk Learn\nAsk Learn\nReading mode\nTable of contents\nRead in English\nAdd\nAdd to plan\nEdit\nCopy Markdown\nPrint\nNote\nAccess to this page requires authorization. You can try signing in or changing directories .\nAccess to this page requires authorization. You can try changing directories .\nFoundry Hosted Agents\nFeedback\nSummarize this article for me\nHosted agents in Microsoft Foundry Agent Service let you deploy Agent Framework agents as containerized applications to Microsoft-managed infrastructure. The platform handles scaling, session state persistence, security, and lifecycle management so you can focus on your agent's logic.\nWith the Agent Framework hosting integration, you can take any Agent or workflow and expose it through the Foundry Responses or Invocations protocol with minimal code.\nWhen to use hosted agents\nChoose Foundry hosted agents when you want:\nManaged infrastructure — no need to configure containers, web servers, or scaling rules yourself.\nBuilt-in session management — the platform persists $HOME and uploaded files across turns and idle periods.\nDedicated agent identity — every deployed agent gets its own Entra identity for secure access to models, tools, and downstream services.\nOpenAI-compatible endpoints — clients can interact with your agent using any OpenAI-compatible SDK through the Responses protocol.\nNote\nFoundry hosted agents are currently in preview. See the Foundry hosted agents documentation for the latest availability, limits, and pricing.\nPrerequisites\nAn Azure subscription\nAzure Developer CLI ( azd ) with the AI agent extension: azd ext install azure.ai.agents\nFor local testing, you also need:\nA Microsoft Foundry project with a model deployment (for example, gpt-4o )\nAzure CLI installed and authenticated ( az login )\n.NET 10 SDK or later\nInstall the hosting NuGet package:\ndotnet add package Microsoft.Agents.AI.Foundry.Hosting --prerelease\ndotnet add package Azure.AI.Projects --prerelease\nPython 3.10 or later\nInstall the hosting Python package:\npip install agent-framework agent-framework-foundry-hosting\nResponses protocol\nThe Responses protocol is the recommended starting point for most agents. It exposes an OpenAI-compatible /responses endpoint, and the platform manages conversation history, streaming, and session lifecycle automatically.\nusing Azure.AI.AgentServer.Core;\nusing Azure.AI.Projects;\nusing Azure.Identity;\nusing Microsoft.Agents.AI;\nusing Microsoft.Agents.AI.Foundry.Hosting;\nvar projectEndpoint = new Uri(Environment.GetEnvironmentVariable(\"FOUNDRY_PROJECT_ENDPOINT\")\n?? throw new InvalidOperationException(\"FOUNDRY_PROJECT_ENDPOINT is not set.\"));\nvar deployment = Environment.GetEnvironmentVariable(\"AZURE_AI_MODEL_DEPLOYMENT_NAME\") ?? \"gpt-4o\";\nAIAgent agent = new AIProjectClient(projectEndpoint, new DefaultAzureCredential())\n.AsAIAgent(\nmodel: deployment,\ninstructions: \"You are a helpful AI assistant.\",\nname: \"my-agent\");\nvar builder = AgentHost.CreateBuilder(args);\nbuilder.Services.AddFoundryResponses(agent);\nbuilder.RegisterProtocol(\"responses\", endpoints => endpoints.MapFoundryResponses());\nvar app = builder.Build();\napp.Run();\nThe AgentHost.CreateBuilder creates an application host preconfigured for the Foundry hosting environment. AddFoundryResponses registers your agent with the Responses protocol handler, and MapFoundryResponses maps the /responses HTTP endpoint.\nimport os\nfrom agent_framework import Agent\nfrom agent_framework.foundry import FoundryChatClient\nfrom agent_framework_foundry_hosting import ResponsesHostServer\nfrom azure.identity import DefaultAzureCredential\nclient = FoundryChatClient(\nproject_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\nmodel=os.environ[\"AZURE_AI_MODEL_DEPLOYMENT_NAME\"],\ncredential=DefaultAzureCredential(),\nagent = Agent(\nclient=client,\ninstructions=\"You are a helpful AI assistant.\",\ndefault_options={\"store\": False},\nserver = ResponsesHostServer(agent)\nserver.run()\nThe ResponsesHostServer wraps your agent and exposes it through the Foundry Responses protocol. Setting store to False in default_options avoids duplicating conversation history, since the hosting infrastructure manages history automatically.\nInvocations protocol\nThe Invocations protocol gives you full control over the HTTP request and response. Use it when you need custom payloads, non-conversational processing, or streaming protocols that aren't OpenAI-compatible.\nWith the Invocations protocol in C#, you implement a custom InvocationHandler to process incoming requests:\nusing Azure.AI.AgentServer.Core;\nusing Azure.AI.AgentServer.Invocations;\nusing Microsoft.Agents.AI;\nvar builder = AgentHost.CreateBuilder(args);\nbuilder.Services.AddSingleton<AIAgent, MyAgent>();\nbuilder.Services.AddInvocationsServer();\nbuilder.Services.AddScoped<InvocationHandler, MyInvocationHandler>();\nbuilder.RegisterProtocol(\"invocations\", endpoints => endpoints.MapInvocationsServer());\nvar app = builder.Build();\napp.Run();\nThe AddInvocationsServer method registers the Invocations protocol services. You implement InvocationHandler to define how your agent processes each request.\nFor a lightweight setup, use InvocationsHostServer from the agent_framework_foundry_hosting package. It wraps your agent similarly to ResponsesHostServer and handles session management automatically:\nimport os\nfrom agent_framework import Agent\nfrom agent_framework.foundry import FoundryChatClient\nfrom agent_framework_foundry_hosting import InvocationsHostServer\nfrom azure.identity import DefaultAzureCredential\nclient = FoundryChatClient(\nproject_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\nmodel=os.environ[\"AZURE_AI_MODEL_DEPLOYMENT_NAME\"],\ncredential=DefaultAzureCredential(),\nagent = Agent(\nclient=client,\ninstructions=\"You are a friendly assistant. Keep your answers brief.\",\ndefault_options={\"store\": False},\nserver = InvocationsHostServer(agent)\nserver.run()\nFor full control over request handling, use InvocationAgentServerHost from the azure.ai.agentserver.invocations package directly and implement your own invoke handler:\nimport os\nfrom collections.abc import AsyncGenerator\nfrom agent_framework import Agent, AgentSession\nfrom agent_framework.foundry import FoundryChatClient\nfrom azure.ai.agentserver.invocations import InvocationAgentServerHost\nfrom azure.identity import DefaultAzureCredential\nfrom starlette.requests import Request\nfrom starlette.responses import JSONResponse, Response, StreamingResponse\n_sessions: dict[str, AgentSession] = {}\nclient = FoundryChatClient(\nproject_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\nmodel=os.environ[\"AZURE_AI_MODEL_DEPLOYMENT_NAME\"],\ncredential=DefaultAzureCredential(),\nagent = Agent(\nclient=client,\ninstructions=\"You are a friendly assistant. Keep your answers brief.\",\ndefault_options={\"store\": False},\napp = InvocationAgentServerHost()\n@app.invoke_handler\nasync def handle_invoke(request: Request):\n\"\"\"Handle streaming multi-turn chat.\"\"\"\ndata = await request.json()\nsession_id = request.state.session_id\nstream = data.get(\"stream\", False)\nuser_message = data.get(\"message\", None)\nif user_message is None:\nreturn Response(content=\"Missing 'message' in request\", status_code=400)\nsession = _sessions.setdefault(session_id, AgentSession(session_id=session_id))\nif stream:\nasync def stream_response() -> AsyncGenerator[str]:\nasync for update in agent.run(user_message, session=session, stream=True):\nyield update.text\nreturn StreamingResponse(\nstream_response(),\nmedia_type=\"text/event-stream\",\nheaders={\"Cache-Control\": \"no-cache\", \"Connection\": \"keep-alive\"},\nresponse = await agent.run([user_message], session=session, stream=stream)\nreturn JSONResponse({\"response\": response.text})\nif __name__ == \"__main__\":\napp.run()\nWarning\nThe in-memory session store in the custom handler example is lost on restart. Use durable storage (for example, Cosmos DB) in production.\nTip\nRefer the Python samples or the C# samples for examples of a hosted agent project. Or use the azd ai agent init command to scaffold a new hosted agent project from scratch. Refer to this quickstart guide for step-by-step instructions.\nRunning locally\nThe Azure Developer CLI ( azd ) provides the easiest way to run and test your hosted agent locally.\nInitialize a project\nCreate a new folder and initialize from a sample manifest:\nmkdir my-hosted-agent && cd my-hosted-agent\nazd ai agent init -m <path-to-agent.manifest.yaml>\nTip\nThe manifest can be a path to a local YAML file or a URL to a remote manifest.\nSet environment variables\nexport FOUNDRY_PROJECT_ENDPOINT=\"https://<account>.services.ai.azure.com/api/projects/<project>\"\nexport AZURE_AI_MODEL_DEPLOYMENT_NAME=\"<your-model-deployment>\"\nRun the agent host\nazd ai agent run\nThe agent host starts on http://localhost:8088 .\nInvoke the agent\nazd ai agent invoke --local \"Hello!\"\nOr use curl :\ncurl -X POST http://localhost:8088/responses \\\n-H \"Content-Type: application/json\" \\\n-d '{\"input\": \"Hello!\"}'\nOr in PowerShell:\n(Invoke-WebRequest -Uri http://localhost:8088/responses -Method POST -ContentType \"application/json\" -Body '{\"input\": \"Hello!\"}').Content\nDeploying to Foundry\nOnce you've verified your agent locally, deploy it to Microsoft Foundry:\nProvision resources (if you don't already have a Foundry project):\nazd provision\nThis creates a resource group with a Foundry instance, project, model deployment, Application Insights, and a container registry.\nDeploy the agent:\nazd deploy\nThis packages your agent as a container image, pushes it to Azure Container Registry, and deploys it to Foundry Agent Service.\nThe Foundry hosting infrastructure automatically injects the following environment variables into your agent container at runtime:\nVariable\nDescription\nFOUNDRY_PROJECT_ENDPOINT\nThe endpoint URL for the Foundry project.\nAZURE_AI_MODEL_DEPLOYMENT_NAME\nThe model deployment name (configured during azd ai agent init ).\nAPPLICATIONINSIGHTS_CONNECTION_STRING\nThe Application Insights connection string for telemetry.\nOnce deployed, your agent is accessible through its dedicated Foundry endpoint and can also be tested from the Foundry portal.\nNext steps\nHosted agents concepts\nDeploy a hosted agent with the Foundry SDK\nManage hosted agents\nDurable Extension hosting\nA2A Hosting\nPython samples\nC# samples\nFeedback\nWas this page helpful?\nYes\nNo\nNo\nNeed help with this topic?\nWant to try using Ask Learn to clarify or guide you through this topic?\nAsk Learn\nAsk Learn\nSuggest a fix?\nAdditional resources\nLast updated on\n2026-05-01",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-09/r-066-foundry-hosted-agents-microsoft-learn.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-09/r-066-foundry-hosted-agents-microsoft-learn.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 10510,
+    "paragraph_count": 150,
+    "sentence_count": 46,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0184,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 10510,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "bcc5cb541361b3e3",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "487130ebce064554",
+  "content_hash": "bcc5cb541361b3e3",
+  "full_text_hash": "bcc5cb541361b3e3",
+  "semantic_hash": "9bddd12142684785",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-09T03:05:45.188Z",
+  "last_seen_at": "2026-07-09T03:05:45.188Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "workflow_change",
+      "text": "Foundry Hosted Agents | Microsoft Learn Ask Learn Ask Learn # Foundry Hosted Agents Choose a programming language C# Python Hosted agents in Microsoft Foundry Agent Service let you deploy Agent Framework agents as containerized applications to Microsoft-managed infrastructure. The platform ha... / query=AI platform launches agent workflow automation service 2026 / intent=find_original_source / path=official_original",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Foundry Hosted Agents | Microsoft Learn Table of contents Exit editor mode Ask Learn Ask Learn Reading mode Table of contents Read in English Add Add to plan Edit Copy Markdown Print Note Access to this page requires authorization.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "You can try signing in or changing directories .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Access to this page requires authorization.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "You can try changing directories .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Foundry Hosted Agents Feedback Summarize this article for me Hosted agents in Microsoft Foundry Agent Service let you deploy Agent Framework agents as containerized applications to Microsoft-managed infrastructure.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-09T03:05:45.188Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Microsoft"
+    ],
+    "products": [
+      "Agents",
+      "agents",
+      "Agent",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2026",
+      "4",
+      "10",
+      "3.10",
+      "400",
+      "8088",
+      "2",
+      "05"
+    ],
+    "quotes": [
+      "FOUNDRY_PROJECT_ENDPOINT",
+      "FOUNDRY_PROJECT_ENDPOINT is not set.",
+      "AZURE_AI_MODEL_DEPLOYMENT_NAME",
+      ";\nAIAgent agent = new AIProjectClient(projectEndpoint, new DefaultAzureCredential())\n.AsAIAgent(\nmodel: deployment,\ninstructions: ",
+      ",\nname: "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Foundry Hosted Agents | Microsoft Learn Table of contents Exit editor mode Ask Learn Ask Learn Reading mode Table of contents Read in English Add Add to plan Edit Copy Markdown Print Note Access to this page requires authorization.",
+      "You can try signing in or changing directories .",
+      "Access to this page requires authorization."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Foundry Hosted Agents | Microsoft Learn Ask Learn Ask Learn # Foundry Hosted Agents Choose a programming language C# Python Hosted agents in Microsoft Foundry Agent Service let you deploy Agent Framework agents as containerized applications to Microsoft-managed infrastructure. The platform ha... / query=AI platform launches agent workflow automation service 2026 / intent=find_original_source / path=official_original"
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Foundry Hosted Agents | Microsoft Learn\n\n- raw_id: R-066\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://learn.microsoft.com/en-us/agent-framework/hosting/foundry-hosted-agent\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-09T03:05:45.188Z\n\n## clean_text\n\nFoundry Hosted Agents | Microsoft Learn\nTable of contents\nExit editor mode\nAsk Learn\nAsk Learn\nReading mode\nTable of contents\nRead in English\nAdd\nAdd to plan\nEdit\nCopy Markdown\nPrint\nNote\nAccess to this page requires authorization. You can try signing in or changing directories .\nAccess to this page requires authorization. You can try changing directories .\nFoundry Hosted Agents\nFeedback\nSummarize this article for me\nHosted agents in Microsoft Foundry Agent Service let you deploy Agent Framework agents as containerized applications to Microsoft-managed infrastructure. The platform handles scaling, session state persistence, security, and lifecycle management so you can focus on your agent's logic.\nWith the Agent Framework hosting integration, you can take any Agent or workflow and expose it through the Foundry Responses or Invocations protocol with minimal code.\nWhen to use hosted agents\nChoose Foundry hosted agents when you want:\nManaged infrastructure — no need to configure containers, web servers, or scaling rules yourself.\nBuilt-in session management — the platform persists $HOME and uploaded files across turns and idle periods.\nDedicated agent identity — every deployed agent gets its own Entra identity for secure access to models, tools, and downstream services.\nOpenAI-compatible endpoints — clients can interact with your agent using any OpenAI-compatible SDK through the Responses protocol.\nNote\nFoundry hosted agents are currently in preview. See the Foundry hosted agents documentation for the latest availability, limits, and pricing.\nPrerequisites\nAn Azure subscription\nAzure Developer CLI ( azd ) with the AI agent extension: azd ext install azure.ai.agents\nFor local testing, you also need:\nA Microsoft Foundry project with a model deployment (for example, gpt-4o )\nAzure CLI installed and authenticated ( az login )\n.NET 10 SDK or later\nInstall the hosting NuGet package:\ndotnet add package Microsoft.Agents.AI.Foundry.Hosting --prerelease\ndotnet add package Azure.AI.Projects --prerelease\nPython 3.10 or later\nInstall the hosting Python package:\npip install agent-framework agent-framework-foundry-hosting\nResponses protocol\nThe Responses protocol is the recommended starting point for most agents. It exposes an OpenAI-compatible /responses endpoint, and the platform manages conversation history, streaming, and session lifecycle automatically.\nusing Azure.AI.AgentServer.Core;\nusing Azure.AI.Projects;\nusing Azure.Identity;\nusing Microsoft.Agents.AI;\nusing Microsoft.Agents.AI.Foundry.Hosting;\nvar projectEndpoint = new Uri(Environment.GetEnvironmentVariable(\"FOUNDRY_PROJECT_ENDPOINT\")\n?? throw new InvalidOperationException(\"FOUNDRY_PROJECT_ENDPOINT is not set.\"));\nvar deployment = Environment.GetEnvironmentVariable(\"AZURE_AI_MODEL_DEPLOYMENT_NAME\") ?? \"gpt-4o\";\nAIAgent agent = new AIProjectClient(projectEndpoint, new DefaultAzureCredential())\n.AsAIAgent(\nmodel: deployment,\ninstructions: \"You are a helpful AI assistant.\",\nname: \"my-agent\");\nvar builder = AgentHost.CreateBuilder(args);\nbuilder.Services.AddFoundryResponses(agent);\nbuilder.RegisterProtocol(\"responses\", endpoints => endpoints.MapFoundryResponses());\nvar app = builder.Build();\napp.Run();\nThe AgentHost.CreateBuilder creates an application host preconfigured for the Foundry hosting environment. AddFoundryResponses registers your agent with the Responses protocol handler, and MapFoundryResponses maps the /responses HTTP endpoint.\nimport os\nfrom agent_framework import Agent\nfrom agent_framework.foundry import FoundryChatClient\nfrom agent_framework_foundry_hosting import ResponsesHostServer\nfrom azure.identity import DefaultAzureCredential\nclient = FoundryChatClient(\nproject_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\nmodel=os.environ[\"AZURE_AI_MODEL_DEPLOYMENT_NAME\"],\ncredential=DefaultAzureCredential(),\nagent = Agent(\nclient=client,\ninstructions=\"You are a helpful AI assistant.\",\ndefault_options={\"store\": False},\nserver = ResponsesHostServer(agent)\nserver.run()\nThe ResponsesHostServer wraps your agent and exposes it through the Foundry Responses protocol. Setting store to False in default_options avoids duplicating conversation history, since the hosting infrastructure manages history automatically.\nInvocations protocol\nThe Invocations protocol gives you full control over the HTTP request and response. Use it when you need custom payloads, non-conversational processing, or streaming protocols that aren't OpenAI-compatible.\nWith the Invocations protocol in C#, you implement a custom InvocationHandler to process incoming requests:\nusing Azure.AI.AgentServer.Core;\nusing Azure.AI.AgentServer.Invocations;\nusing Microsoft.Agents.AI;\nvar builder = AgentHost.CreateBuilder(args);\nbuilder.Services.AddSingleton<AIAgent, MyAgent>();\nbuilder.Services.AddInvocationsServer();\nbuilder.Services.AddScoped<InvocationHandler, MyInvocationHandler>();\nbuilder.RegisterProtocol(\"invocations\", endpoints => endpoints.MapInvocationsServer());\nvar app = builder.Build();\napp.Run();\nThe AddInvocationsServer method registers the Invocations protocol services. You implement InvocationHandler to define how your agent processes each request.\nFor a lightweight setup, use InvocationsHostServer from the agent_framework_foundry_hosting package. It wraps your agent similarly to ResponsesHostServer and handles session management automatically:\nimport os\nfrom agent_framework import Agent\nfrom agent_framework.foundry import FoundryChatClient\nfrom agent_framework_foundry_hosting import InvocationsHostServer\nfrom azure.identity import DefaultAzureCredential\nclient = FoundryChatClient(\nproject_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\nmodel=os.environ[\"AZURE_AI_MODEL_DEPLOYMENT_NAME\"],\ncredential=DefaultAzureCredential(),\nagent = Agent(\nclient=client,\ninstructions=\"You are a friendly assistant. Keep your answers brief.\",\ndefault_options={\"store\": False},\nserver = InvocationsHostServer(agent)\nserver.run()\nFor full control over request handling, use InvocationAgentServerHost from the azure.ai.agentserver.invocations package directly and implement your own invoke handler:\nimport os\nfrom collections.abc import AsyncGenerator\nfrom agent_framework import Agent, AgentSession\nfrom agent_framework.foundry import FoundryChatClient\nfrom azure.ai.agentserver.invocations import InvocationAgentServerHost\nfrom azure.identity import DefaultAzureCredential\nfrom starlette.requests import Request\nfrom starlette.responses import JSONResponse, Response, StreamingResponse\n_sessions: dict[str, AgentSession] = {}\nclient = FoundryChatClient(\nproject_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\nmodel=os.environ[\"AZURE_AI_MODEL_DEPLOYMENT_NAME\"],\ncredential=DefaultAzureCredential(),\nagent = Agent(\nclient=client,\ninstructions=\"You are a friendly assistant. Keep your answers brief.\",\ndefault_options={\"store\": False},\napp = InvocationAgentServerHost()\n@app.invoke_handler\nasync def handle_invoke(request: Request):\n\"\"\"Handle streaming multi-turn chat.\"\"\"\ndata = await request.json()\nsession_id = request.state.session_id\nstream = data.get(\"stream\", False)\nuser_message = data.get(\"message\", None)\nif user_message is None:\nreturn Response(content=\"Missing 'message' in request\", status_code=400)\nsession = _sessions.setdefault(session_id, AgentSession(session_id=session_id))\nif stream:\nasync def stream_response() -> AsyncGenerator[str]:\nasync for update in agent.run(user_message, session=session, stream=True):\nyield update.text\nreturn StreamingResponse(\nstream_response(),\nmedia_type=\"text/event-stream\",\nheaders={\"Cache-Control\": \"no-cache\", \"Connection\": \"keep-alive\"},\nresponse = await agent.run([user_message], session=session, stream=stream)\nreturn JSONResponse({\"response\": response.text})\nif __name__ == \"__main__\":\napp.run()\nWarning\nThe in-memory session store in the custom handler example is lost on restart. Use durable storage (for example, Cosmos DB) in production.\nTip\nRefer the Python samples or the C# samples for examples of a hosted agent project. Or use the azd ai agent init command to scaffold a new hosted agent project from scratch. Refer to this quickstart guide for step-by-step instructions.\nRunning locally\nThe Azure Developer CLI ( azd ) provides the easiest way to run and test your hosted agent locally.\nInitialize a project\nCreate a new folder and initialize from a sample manifest:\nmkdir my-hosted-agent && cd my-hosted-agent\nazd ai agent init -m <path-to-agent.manifest.yaml>\nTip\nThe manifest can be a path to a local YAML file or a URL to a remote manifest.\nSet environment variables\nexport FOUNDRY_PROJECT_ENDPOINT=\"https://<account>.services.ai.azure.com/api/projects/<project>\"\nexport AZURE_AI_MODEL_DEPLOYMENT_NAME=\"<your-model-deployment>\"\nRun the agent host\nazd ai agent run\nThe agent host starts on http://localhost:8088 .\nInvoke the agent\nazd ai agent invoke --local \"Hello!\"\nOr use curl :\ncurl -X POST http://localhost:8088/responses \\\n-H \"Content-Type: application/json\" \\\n-d '{\"input\": \"Hello!\"}'\nOr in PowerShell:\n(Invoke-WebRequest -Uri http://localhost:8088/responses -Method POST -ContentType \"application/json\" -Body '{\"input\": \"Hello!\"}').Content\nDeploying to Foundry\nOnce you've verified your agent locally, deploy it to Microsoft Foundry:\nProvision resources (if you don't already have a Foundry project):\nazd provision\nThis creates a resource group with a Foundry instance, project, model deployment, Application Insights, and a container registry.\nDeploy the agent:\nazd deploy\nThis packages your agent as a container image, pushes it to Azure Container Registry, and deploys it to Foundry Agent Service.\nThe Foundry hosting infrastructure automatically injects the following environment variables into your agent container at runtime:\nVariable\nDescription\nFOUNDRY_PROJECT_ENDPOINT\nThe endpoint URL for the Foundry project.\nAZURE_AI_MODEL_DEPLOYMENT_NAME\nThe model deployment name (configured during azd ai agent init ).\nAPPLICATIONINSIGHTS_CONNECTION_STRING\nThe Application Insights connection string for telemetry.\nOnce deployed, your agent is accessible through its dedicated Foundry endpoint and can also be tested from the Foundry portal.\nNext steps\nHosted agents concepts\nDeploy a hosted agent with the Foundry SDK\nManage hosted agents\nDurable Extension hosting\nA2A Hosting\nPython samples\nC# samples\nFeedback\nWas this page helpful?\nYes\nNo\nNo\nNeed help with this topic?\nWant to try using Ask Learn to clarify or guide you through this topic?\nAsk Learn\nAsk Learn\nSuggest a fix?\nAdditional resources\nLast updated on\n2026-05-01\n\n## full_text\n\nFoundry Hosted Agents | Microsoft Learn\nTable of contents\nExit editor mode\nAsk Learn\nAsk Learn\nReading mode\nTable of contents\nRead in English\nAdd\nAdd to plan\nEdit\nCopy Markdown\nPrint\nNote\nAccess to this page requires authorization. You can try signing in or changing directories .\nAccess to this page requires authorization. You can try changing directories .\nFoundry Hosted Agents\nFeedback\nSummarize this article for me\nHosted agents in Microsoft Foundry Agent Service let you deploy Agent Framework agents as containerized applications to Microsoft-managed infrastructure. The platform handles scaling, session state persistence, security, and lifecycle management so you can focus on your agent's logic.\nWith the Agent Framework hosting integration, you can take any Agent or workflow and expose it through the Foundry Responses or Invocations protocol with minimal code.\nWhen to use hosted agents\nChoose Foundry hosted agents when you want:\nManaged infrastructure — no need to configure containers, web servers, or scaling rules yourself.\nBuilt-in session management — the platform persists $HOME and uploaded files across turns and idle periods.\nDedicated agent identity — every deployed agent gets its own Entra identity for secure access to models, tools, and downstream services.\nOpenAI-compatible endpoints — clients can interact with your agent using any OpenAI-compatible SDK through the Responses protocol.\nNote\nFoundry hosted agents are currently in preview. See the Foundry hosted agents documentation for the latest availability, limits, and pricing.\nPrerequisites\nAn Azure subscription\nAzure Developer CLI ( azd ) with the AI agent extension: azd ext install azure.ai.agents\nFor local testing, you also need:\nA Microsoft Foundry project with a model deployment (for example, gpt-4o )\nAzure CLI installed and authenticated ( az login )\n.NET 10 SDK or later\nInstall the hosting NuGet package:\ndotnet add package Microsoft.Agents.AI.Foundry.Hosting --prerelease\ndotnet add package Azure.AI.Projects --prerelease\nPython 3.10 or later\nInstall the hosting Python package:\npip install agent-framework agent-framework-foundry-hosting\nResponses protocol\nThe Responses protocol is the recommended starting point for most agents. It exposes an OpenAI-compatible /responses endpoint, and the platform manages conversation history, streaming, and session lifecycle automatically.\nusing Azure.AI.AgentServer.Core;\nusing Azure.AI.Projects;\nusing Azure.Identity;\nusing Microsoft.Agents.AI;\nusing Microsoft.Agents.AI.Foundry.Hosting;\nvar projectEndpoint = new Uri(Environment.GetEnvironmentVariable(\"FOUNDRY_PROJECT_ENDPOINT\")\n?? throw new InvalidOperationException(\"FOUNDRY_PROJECT_ENDPOINT is not set.\"));\nvar deployment = Environment.GetEnvironmentVariable(\"AZURE_AI_MODEL_DEPLOYMENT_NAME\") ?? \"gpt-4o\";\nAIAgent agent = new AIProjectClient(projectEndpoint, new DefaultAzureCredential())\n.AsAIAgent(\nmodel: deployment,\ninstructions: \"You are a helpful AI assistant.\",\nname: \"my-agent\");\nvar builder = AgentHost.CreateBuilder(args);\nbuilder.Services.AddFoundryResponses(agent);\nbuilder.RegisterProtocol(\"responses\", endpoints => endpoints.MapFoundryResponses());\nvar app = builder.Build();\napp.Run();\nThe AgentHost.CreateBuilder creates an application host preconfigured for the Foundry hosting environment. AddFoundryResponses registers your agent with the Responses protocol handler, and MapFoundryResponses maps the /responses HTTP endpoint.\nimport os\nfrom agent_framework import Agent\nfrom agent_framework.foundry import FoundryChatClient\nfrom agent_framework_foundry_hosting import ResponsesHostServer\nfrom azure.identity import DefaultAzureCredential\nclient = FoundryChatClient(\nproject_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\nmodel=os.environ[\"AZURE_AI_MODEL_DEPLOYMENT_NAME\"],\ncredential=DefaultAzureCredential(),\nagent = Agent(\nclient=client,\ninstructions=\"You are a helpful AI assistant.\",\ndefault_options={\"store\": False},\nserver = ResponsesHostServer(agent)\nserver.run()\nThe ResponsesHostServer wraps your agent and exposes it through the Foundry Responses protocol. Setting store to False in default_options avoids duplicating conversation history, since the hosting infrastructure manages history automatically.\nInvocations protocol\nThe Invocations protocol gives you full control over the HTTP request and response. Use it when you need custom payloads, non-conversational processing, or streaming protocols that aren't OpenAI-compatible.\nWith the Invocations protocol in C#, you implement a custom InvocationHandler to process incoming requests:\nusing Azure.AI.AgentServer.Core;\nusing Azure.AI.AgentServer.Invocations;\nusing Microsoft.Agents.AI;\nvar builder = AgentHost.CreateBuilder(args);\nbuilder.Services.AddSingleton<AIAgent, MyAgent>();\nbuilder.Services.AddInvocationsServer();\nbuilder.Services.AddScoped<InvocationHandler, MyInvocationHandler>();\nbuilder.RegisterProtocol(\"invocations\", endpoints => endpoints.MapInvocationsServer());\nvar app = builder.Build();\napp.Run();\nThe AddInvocationsServer method registers the Invocations protocol services. You implement InvocationHandler to define how your agent processes each request.\nFor a lightweight setup, use InvocationsHostServer from the agent_framework_foundry_hosting package. It wraps your agent similarly to ResponsesHostServer and handles session management automatically:\nimport os\nfrom agent_framework import Agent\nfrom agent_framework.foundry import FoundryChatClient\nfrom agent_framework_foundry_hosting import InvocationsHostServer\nfrom azure.identity import DefaultAzureCredential\nclient = FoundryChatClient(\nproject_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\nmodel=os.environ[\"AZURE_AI_MODEL_DEPLOYMENT_NAME\"],\ncredential=DefaultAzureCredential(),\nagent = Agent(\nclient=client,\ninstructions=\"You are a friendly assistant. Keep your answers brief.\",\ndefault_options={\"store\": False},\nserver = InvocationsHostServer(agent)\nserver.run()\nFor full control over request handling, use InvocationAgentServerHost from the azure.ai.agentserver.invocations package directly and implement your own invoke handler:\nimport os\nfrom collections.abc import AsyncGenerator\nfrom agent_framework import Agent, AgentSession\nfrom agent_framework.foundry import FoundryChatClient\nfrom azure.ai.agentserver.invocations import InvocationAgentServerHost\nfrom azure.identity import DefaultAzureCredential\nfrom starlette.requests import Request\nfrom starlette.responses import JSONResponse, Response, StreamingResponse\n_sessions: dict[str, AgentSession] = {}\nclient = FoundryChatClient(\nproject_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\nmodel=os.environ[\"AZURE_AI_MODEL_DEPLOYMENT_NAME\"],\ncredential=DefaultAzureCredential(),\nagent = Agent(\nclient=client,\ninstructions=\"You are a friendly assistant. Keep your answers brief.\",\ndefault_options={\"store\": False},\napp = InvocationAgentServerHost()\n@app.invoke_handler\nasync def handle_invoke(request: Request):\n\"\"\"Handle streaming multi-turn chat.\"\"\"\ndata = await request.json()\nsession_id = request.state.session_id\nstream = data.get(\"stream\", False)\nuser_message = data.get(\"message\", None)\nif user_message is None:\nreturn Response(content=\"Missing 'message' in request\", status_code=400)\nsession = _sessions.setdefault(session_id, AgentSession(session_id=session_id))\nif stream:\nasync def stream_response() -> AsyncGenerator[str]:\nasync for update in agent.run(user_message, session=session, stream=True):\nyield update.text\nreturn StreamingResponse(\nstream_response(),\nmedia_type=\"text/event-stream\",\nheaders={\"Cache-Control\": \"no-cache\", \"Connection\": \"keep-alive\"},\nresponse = await agent.run([user_message], session=session, stream=stream)\nreturn JSONResponse({\"response\": response.text})\nif __name__ == \"__main__\":\napp.run()\nWarning\nThe in-memory session store in the custom handler example is lost on restart. Use durable storage (for example, Cosmos DB) in production.\nTip\nRefer the Python samples or the C# samples for examples of a hosted agent project. Or use the azd ai agent init command to scaffold a new hosted agent project from scratch. Refer to this quickstart guide for step-by-step instructions.\nRunning locally\nThe Azure Developer CLI ( azd ) provides the easiest way to run and test your hosted agent locally.\nInitialize a project\nCreate a new folder and initialize from a sample manifest:\nmkdir my-hosted-agent && cd my-hosted-agent\nazd ai agent init -m <path-to-agent.manifest.yaml>\nTip\nThe manifest can be a path to a local YAML file or a URL to a remote manifest.\nSet environment variables\nexport FOUNDRY_PROJECT_ENDPOINT=\"https://<account>.services.ai.azure.com/api/projects/<project>\"\nexport AZURE_AI_MODEL_DEPLOYMENT_NAME=\"<your-model-deployment>\"\nRun the agent host\nazd ai agent run\nThe agent host starts on http://localhost:8088 .\nInvoke the agent\nazd ai agent invoke --local \"Hello!\"\nOr use curl :\ncurl -X POST http://localhost:8088/responses \\\n-H \"Content-Type: application/json\" \\\n-d '{\"input\": \"Hello!\"}'\nOr in PowerShell:\n(Invoke-WebRequest -Uri http://localhost:8088/responses -Method POST -ContentType \"application/json\" -Body '{\"input\": \"Hello!\"}').Content\nDeploying to Foundry\nOnce you've verified your agent locally, deploy it to Microsoft Foundry:\nProvision resources (if you don't already have a Foundry project):\nazd provision\nThis creates a resource group with a Foundry instance, project, model deployment, Application Insights, and a container registry.\nDeploy the agent:\nazd deploy\nThis packages your agent as a container image, pushes it to Azure Container Registry, and deploys it to Foundry Agent Service.\nThe Foundry hosting infrastructure automatically injects the following environment variables into your agent container at runtime:\nVariable\nDescription\nFOUNDRY_PROJECT_ENDPOINT\nThe endpoint URL for the Foundry project.\nAZURE_AI_MODEL_DEPLOYMENT_NAME\nThe model deployment name (configured during azd ai agent init ).\nAPPLICATIONINSIGHTS_CONNECTION_STRING\nThe Application Insights connection string for telemetry.\nOnce deployed, your agent is accessible through its dedicated Foundry endpoint and can also be tested from the Foundry portal.\nNext steps\nHosted agents concepts\nDeploy a hosted agent with the Foundry SDK\nManage hosted agents\nDurable Extension hosting\nA2A Hosting\nPython samples\nC# samples\nFeedback\nWas this page helpful?\nYes\nNo\nNo\nNeed help with this topic?\nWant to try using Ask Learn to clarify or guide you through this topic?\nAsk Learn\nAsk Learn\nSuggest a fix?\nAdditional resources\nLast updated on\n2026-05-01\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Foundry Hosted Agents | Microsoft Learn Ask Learn Ask Learn # Foundry Hosted Agents Choose a programming language C# Python Hosted agents in Microsoft Foundry Agent Service let you deploy Agent Framework agents as containerized applications to Microsoft-managed infrastructure. The platform ha... / query=AI platform launches agent workflow automation service 2026 / intent=find_original_source / path=official_original\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Foundry Hosted Agents | Microsoft Learn Table of contents Exit editor mode Ask Learn Ask Learn Reading mode Table of contents Read in English Add Add to plan Edit Copy Markdown Print Note Access to this page requires authorization.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] You can try signing in or changing directories .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Access to this page requires authorization.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] You can try changing directories .\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Foundry Hosted Agents Feedback Summarize this article for me Hosted agents in Microsoft Foundry Agent Service let you deploy Agent Framework agents as containerized applications to Microsoft-managed infrastructure.\n"
+}

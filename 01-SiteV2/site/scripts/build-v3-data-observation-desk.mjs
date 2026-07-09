@@ -1305,7 +1305,7 @@ function titleNeedsChineseTranslation(title = "") {
   const text = String(title || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
-  return text.length > 12 && hanCount < 4 && latinWords.length >= 3;
+  return text.length > 12 && hanCount < 4 && latinWords.length >= 2;
 }
 
 function sourceTitleDisplayFromOriginal(title = "") {

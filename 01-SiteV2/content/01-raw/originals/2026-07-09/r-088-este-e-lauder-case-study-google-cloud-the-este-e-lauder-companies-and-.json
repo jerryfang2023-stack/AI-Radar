@@ -1,0 +1,279 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-088",
+  "title": "Estée Lauder case study | Google Cloud # The Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI Get started for free Google Cloud results Launched a conversational, AI-powered digital experience Maps natural language to deep scent expertise for bespoke fragrance... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://cloud.google.com/customers/elc",
+  "canonical_url": "https://cloud.google.com/customers/elc",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "official",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-09T03:05:45.304Z",
+  "language": "mixed",
+  "full_text": "Estée Lauder case study | Google Cloud\nThe Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI\nGet started for free\nGoogle Cloud results\nLaunched a conversational, AI-powered digital experience\nMaps natural language to deep scent expertise for bespoke fragrance recommendations\nConversion rates doubled for Scent Advisor users\nImproved overall customer satisfaction\nThe Estée Lauder Companies and Jo Malone London help customers discover their perfect fragrance online with Google Cloud's AI.\nBringing a personal touch to\nonline beauty discovery\nThe major challenge in digital commerce really comes down to subjectivity, the unique individual needs that our customers have for expressing their personal beauty.\nChris Curro\nPrincipal Machine Learning Engineer, The Estée Lauder Companies Inc.\nPrestige beauty leader The Estée Lauder Companies has long been a champion of creativity and innovation, defying industry expectations to deliver game-changing products and consumer experiences. However, continuing this legacy means successfully bringing the hands-on, sensory beauty discovery process to the digital world.\n\"The major challenge in digital commerce really comes down to subjectivity—the unique individual needs that our customers have for expressing their personal beauty,\" explains Chris Curro, principal machine learning engineer at The Estée Lauder Companies.\nJo Malone London , the iconic British fragrance and lifestyle brand The Estée Lauder Companies, understands these stakes more keenly than most. Shopping for fragrance online is notoriously difficult, and without the sensory cues of in-store experiences, many consumers—especially first-time buyers—struggle to select a scent confidently.\nTo bridge this gap, Jo Malone London has focused on creating trustworthy, reliable, and realistic online discovery experiences. This digital innovation journey has included initiatives like a scent layering tool and a social media fragrance filter, which translate its extensive library of scents into simple, descriptive words to help consumers make the right choice.\nNow, the fragrance powerhouse is tackling its latest milestone: Digitally recreating its signature in-store consultation experience.\nUsing Google's Gemini models and Gemini Enterprise Agent Platform, The Estée Lauder Companies and Jo Malone London created the Jo Malone London AI Scent Advisor—a new AI-powered experience that provides expert, personalized guidance online to help customers discover their perfect fragrance.\n3:18\nConnecting curiosity and confidence\nJo Malone London's scent stylists are experts at helping customers to find a fragrance that perfectly suits their personality, mood, or the season. In store, they employ a \"Tell, Explain, Describe\" (TED) framework, asking open-ended questions to help customers connect with and visualize different scent families and olfactory notes.\nThe AI Scent Advisor replicates this experience, allowing customers to describe what they're looking for in their own words and mapping them to Jo Malone London's complex olfactory data attributes to generate bespoke, expert-informed fragrance recommendations.\nThe way a fragrance expert speaks is not necessarily the way a typical consumer speaks. Instead, we have to figure out how to bridge that gap, and that's where a broader agentic system comes into play, powered by Google Gemini.\nChris Curro\nPrincipal Machine Learning Engineer, The Estée Lauder Companies Inc.\n\"Our taxonomy is developed by our master stylist, our master perfumers, but the way a fragrance expert speaks is not necessarily the way a typical consumer speaks,\" says Curro. \"Instead, we have to figure out how to bridge that gap, and that's where a broader agentic system comes into play, powered by Google Gemini.\"\nThe core of the system is an interactive AI agent that uses Gemini's reasoning and multimodal capabilities to evoke necessary points of inquiry by asking about a customer's memories, sensory experiences, and the identity they want to express through scent. The agent then translates this subjective language (that is, \"a scent that reminds me of a vintage library\") into a structured query format that is fed into a ranking engine, built on Agent Platform, to select the best fragrance candidates. Finally, the agent crafts a personalized response explaining why these scents are a match.\nGoogle Cloud forms the backbone of the AI Scent Advisor: Cloud Run services and worker pools, along with Pub/Sub, enable continuous data processing at scale. Firestore and BigQuery serve as a powerful operational and analytical data foundation, with Agent Platform and Gemini providing the core AI logic and conversational flow. Gemini's controlled generation also made it possible to define a precise format and structure for AI responses, ensuring reliable, readily usable outputs that could be easily integrated into the AI Scent Advisor's complex reasoning workflows.\nCrucially, Google Security, including Model Armor, has enabled Jo Malone London to implement and enforce safety policies that can handle nuanced terminology like \"nude\" for discussing skin tone or foundation that might be problematic in non-beauty contexts.\n\"Google Cloud knows how to make you feel like you're customer number one,\" says Curro. \"No matter what we need on whatever timeline it may be, our Google Cloud team has been there making sure that we get everything we need to deliver the business value that is critical to any company trying to lead the charge in technology, in AI.\"\nBuilding an AI stylist that speaks the brand's language\nWe were able to extract the key vernacular, really hone in on the key factors that make the Jo Malone London stylist 'tell, explain, describe' framework work, and bring that into the Jo Malone London AI Scent Advisor.\nChris Curro\nPrincipal Machine Learning Engineer, The Estée Lauder Companies Inc.\nFor the AI Scent Advisor to work, Jo Malone London needed to translate the way customers naturally speak about fragrances into the olfactive taxonomy used by experts—all while capturing the unique playful Britishness that's so key to the brand's identity.\nFrom the start, The Estée Lauder Companies' AI team collaborated closely with brand experts and stylists to define its olfactive taxonomy, encompassing all the notes, subnotes, and scent families of its distinctive fragrance collections—and how they layer on top of each other. They also conducted numerous interviews, where real stylists worked with volunteers to find out how they speak when assisting customers with choosing signature scents or picking out a gift.\n\"To do systematic analysis, distill out the key techniques, we turn to Google Gemini to make that a scalable process,\" says Curro. \"We were able to extract the key vernacular, really hone in on the key factors that make the Jo Malone London stylist 'tell, explain, describe' framework work, and bring that into the Jo Malone London AI Scent Advisor.\"\nWith Gemini, the team was able to then codify and simulate a voice that captures the same spirit of curiosity and creativity of real stylists while providing expert-level, personalized guidance.\n\"The metrics have been fantastic. We've been driving conversion. We know customers are really, really satisfied with it,\" says Curro. In addition, Jo Malone London's research has shown that customers are going into physical stores to discuss and try the recommendations they received, demonstrating the potential of digital investment to enhance the overall brand experience.\nThe Jo Malone London AI Scent Advisor is not only setting a new bar for online fragrance discovery, it's also fueling the brand's future innovation pipeline. Using proprietary natural language analytics, built on Google Cloud, Jo Malone London is gaining deeper insights into consumers and their preferences to deliver products and experiences that help customers express their personal beauty—in a way that is uniquely their own.\nJo Malone London has been creating a palette of exquisitely simple, elegant scents and curating a world where every sense is indulged since 1994. Acquired by prestige beauty leader The Estée Lauder Companies Inc. in 1999, today the brand is internationally known for its unexpected fragrances and distinctly British character.\nIndustry: Retail\nLocation: UK\nThe Estée Lauder Companies Inc. (ELC) is one of the world's leading manufacturers, marketers, and sellers of quality skin care, makeup, fragrance, and hair care products, and is a steward of luxury and prestige brands globally. The company's products are sold in approximately 150 countries and territories under brand names, including Estée Lauder, Aramis, Clinique, Lab Series, Origins, M·A·C, La Mer, Bobbi Brown Cosmetics, Aveda, Jo Malone London, and more.\nIndustry: Retail\nLocation: United States\nProducts: Gemini , Gemini Enterprise Agent Platform , Cloud Run , Pub/Sub , Firestore , BigQuery , Model Armor",
+  "clean_text": "Estée Lauder case study | Google Cloud\nThe Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI\nGet started for free\nGoogle Cloud results\nLaunched a conversational, AI-powered digital experience\nMaps natural language to deep scent expertise for bespoke fragrance recommendations\nConversion rates doubled for Scent Advisor users\nImproved overall customer satisfaction\nThe Estée Lauder Companies and Jo Malone London help customers discover their perfect fragrance online with Google Cloud's AI.\nBringing a personal touch to\nonline beauty discovery\nThe major challenge in digital commerce really comes down to subjectivity, the unique individual needs that our customers have for expressing their personal beauty.\nChris Curro\nPrincipal Machine Learning Engineer, The Estée Lauder Companies Inc.\nPrestige beauty leader The Estée Lauder Companies has long been a champion of creativity and innovation, defying industry expectations to deliver game-changing products and consumer experiences. However, continuing this legacy means successfully bringing the hands-on, sensory beauty discovery process to the digital world.\n\"The major challenge in digital commerce really comes down to subjectivity—the unique individual needs that our customers have for expressing their personal beauty,\" explains Chris Curro, principal machine learning engineer at The Estée Lauder Companies.\nJo Malone London , the iconic British fragrance and lifestyle brand The Estée Lauder Companies, understands these stakes more keenly than most. Shopping for fragrance online is notoriously difficult, and without the sensory cues of in-store experiences, many consumers—especially first-time buyers—struggle to select a scent confidently.\nTo bridge this gap, Jo Malone London has focused on creating trustworthy, reliable, and realistic online discovery experiences. This digital innovation journey has included initiatives like a scent layering tool and a social media fragrance filter, which translate its extensive library of scents into simple, descriptive words to help consumers make the right choice.\nNow, the fragrance powerhouse is tackling its latest milestone: Digitally recreating its signature in-store consultation experience.\nUsing Google's Gemini models and Gemini Enterprise Agent Platform, The Estée Lauder Companies and Jo Malone London created the Jo Malone London AI Scent Advisor—a new AI-powered experience that provides expert, personalized guidance online to help customers discover their perfect fragrance.\n3:18\nConnecting curiosity and confidence\nJo Malone London's scent stylists are experts at helping customers to find a fragrance that perfectly suits their personality, mood, or the season. In store, they employ a \"Tell, Explain, Describe\" (TED) framework, asking open-ended questions to help customers connect with and visualize different scent families and olfactory notes.\nThe AI Scent Advisor replicates this experience, allowing customers to describe what they're looking for in their own words and mapping them to Jo Malone London's complex olfactory data attributes to generate bespoke, expert-informed fragrance recommendations.\nThe way a fragrance expert speaks is not necessarily the way a typical consumer speaks. Instead, we have to figure out how to bridge that gap, and that's where a broader agentic system comes into play, powered by Google Gemini.\nChris Curro\nPrincipal Machine Learning Engineer, The Estée Lauder Companies Inc.\n\"Our taxonomy is developed by our master stylist, our master perfumers, but the way a fragrance expert speaks is not necessarily the way a typical consumer speaks,\" says Curro. \"Instead, we have to figure out how to bridge that gap, and that's where a broader agentic system comes into play, powered by Google Gemini.\"\nThe core of the system is an interactive AI agent that uses Gemini's reasoning and multimodal capabilities to evoke necessary points of inquiry by asking about a customer's memories, sensory experiences, and the identity they want to express through scent. The agent then translates this subjective language (that is, \"a scent that reminds me of a vintage library\") into a structured query format that is fed into a ranking engine, built on Agent Platform, to select the best fragrance candidates. Finally, the agent crafts a personalized response explaining why these scents are a match.\nGoogle Cloud forms the backbone of the AI Scent Advisor: Cloud Run services and worker pools, along with Pub/Sub, enable continuous data processing at scale. Firestore and BigQuery serve as a powerful operational and analytical data foundation, with Agent Platform and Gemini providing the core AI logic and conversational flow. Gemini's controlled generation also made it possible to define a precise format and structure for AI responses, ensuring reliable, readily usable outputs that could be easily integrated into the AI Scent Advisor's complex reasoning workflows.\nCrucially, Google Security, including Model Armor, has enabled Jo Malone London to implement and enforce safety policies that can handle nuanced terminology like \"nude\" for discussing skin tone or foundation that might be problematic in non-beauty contexts.\n\"Google Cloud knows how to make you feel like you're customer number one,\" says Curro. \"No matter what we need on whatever timeline it may be, our Google Cloud team has been there making sure that we get everything we need to deliver the business value that is critical to any company trying to lead the charge in technology, in AI.\"\nBuilding an AI stylist that speaks the brand's language\nWe were able to extract the key vernacular, really hone in on the key factors that make the Jo Malone London stylist 'tell, explain, describe' framework work, and bring that into the Jo Malone London AI Scent Advisor.\nChris Curro\nPrincipal Machine Learning Engineer, The Estée Lauder Companies Inc.\nFor the AI Scent Advisor to work, Jo Malone London needed to translate the way customers naturally speak about fragrances into the olfactive taxonomy used by experts—all while capturing the unique playful Britishness that's so key to the brand's identity.\nFrom the start, The Estée Lauder Companies' AI team collaborated closely with brand experts and stylists to define its olfactive taxonomy, encompassing all the notes, subnotes, and scent families of its distinctive fragrance collections—and how they layer on top of each other. They also conducted numerous interviews, where real stylists worked with volunteers to find out how they speak when assisting customers with choosing signature scents or picking out a gift.\n\"To do systematic analysis, distill out the key techniques, we turn to Google Gemini to make that a scalable process,\" says Curro. \"We were able to extract the key vernacular, really hone in on the key factors that make the Jo Malone London stylist 'tell, explain, describe' framework work, and bring that into the Jo Malone London AI Scent Advisor.\"\nWith Gemini, the team was able to then codify and simulate a voice that captures the same spirit of curiosity and creativity of real stylists while providing expert-level, personalized guidance.\n\"The metrics have been fantastic. We've been driving conversion. We know customers are really, really satisfied with it,\" says Curro. In addition, Jo Malone London's research has shown that customers are going into physical stores to discuss and try the recommendations they received, demonstrating the potential of digital investment to enhance the overall brand experience.\nThe Jo Malone London AI Scent Advisor is not only setting a new bar for online fragrance discovery, it's also fueling the brand's future innovation pipeline. Using proprietary natural language analytics, built on Google Cloud, Jo Malone London is gaining deeper insights into consumers and their preferences to deliver products and experiences that help customers express their personal beauty—in a way that is uniquely their own.\nJo Malone London has been creating a palette of exquisitely simple, elegant scents and curating a world where every sense is indulged since 1994. Acquired by prestige beauty leader The Estée Lauder Companies Inc. in 1999, today the brand is internationally known for its unexpected fragrances and distinctly British character.\nIndustry: Retail\nLocation: UK\nThe Estée Lauder Companies Inc. (ELC) is one of the world's leading manufacturers, marketers, and sellers of quality skin care, makeup, fragrance, and hair care products, and is a steward of luxury and prestige brands globally. The company's products are sold in approximately 150 countries and territories under brand names, including Estée Lauder, Aramis, Clinique, Lab Series, Origins, M·A·C, La Mer, Bobbi Brown Cosmetics, Aveda, Jo Malone London, and more.\nIndustry: Retail\nLocation: United States\nProducts: Gemini , Gemini Enterprise Agent Platform , Cloud Run , Pub/Sub , Firestore , BigQuery , Model Armor",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-09/r-088-este-e-lauder-case-study-google-cloud-the-este-e-lauder-companies-and-.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-09/r-088-este-e-lauder-case-study-google-cloud-the-este-e-lauder-companies-and-.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 85,
+  "extractor_diagnostics": {
+    "readability_score": 85,
+    "text_length": 8954,
+    "paragraph_count": 42,
+    "sentence_count": 46,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0001,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 8954,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "0928755b439eb681",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "20817376f69675db",
+  "content_hash": "0928755b439eb681",
+  "full_text_hash": "0928755b439eb681",
+  "semantic_hash": "f83cc521a6cc949b",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-09T03:05:45.304Z",
+  "last_seen_at": "2026-07-09T03:05:45.304Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Estée Lauder case study | Google Cloud # The Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI Get started for free Google Cloud results Launched a conversational, AI-powered digital experience Maps natural language to deep scent expertise for bespoke fragrance... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Estée Lauder case study | Google Cloud The Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI Get started for free Google Cloud results Launched a conversational, AI-powered digital experience Maps natural language to deep scent expertise for bespoke fragrance recommendations Conversion rates doubled for Scent Advisor users Improved overall customer satisfaction The Estée Lauder Companies and Jo Malone London help customers discover their perfect fragrance online with Google Cloud's",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Bringing a personal touch to online beauty discovery The major challenge in digital commerce really comes down to subjectivity, the unique individual needs that our customers have for expressing their personal beauty.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Chris Curro Principal Machine Learning Engineer, The Estée Lauder Companies Inc.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Prestige beauty leader The Estée Lauder Companies has long been a champion of creativity and innovation, defying industry expectations to deliver game-changing products and consumer experiences.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "However, continuing this legacy means successfully bringing the hands-on, sensory beauty discovery process to the digital world.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-09T03:05:45.304Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Google"
+    ],
+    "products": [
+      "agent",
+      "Gemini",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "制造 / 工业",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2026",
+      "3",
+      "18",
+      "1994",
+      "1999",
+      "150"
+    ],
+    "quotes": [
+      "Tell, Explain, Describe",
+      " says Curro. ",
+      "a scent that reminds me of a vintage library",
+      " for discussing skin tone or foundation that might be problematic in non-beauty contexts.\n",
+      " says Curro. "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Chris Curro Principal Machine Learning Engineer, The Estée Lauder Companies Inc.",
+      "Prestige beauty leader The Estée Lauder Companies has long been a champion of creativity and innovation, defying industry expectations to deliver game-changing products and consumer experiences."
+    ],
+    "case_details": [
+      "Estée Lauder case study | Google Cloud # The Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI Get started for free Google Cloud results Launched a conversational, AI-powered digital experience Maps natural language to deep scent expertise for bespoke fragrance... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original",
+      "Estée Lauder case study | Google Cloud The Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI Get started for free Google Cloud results Launched a conversational, AI-powered digital experience Maps natural language to deep scent expertise for bespoke fragrance recommendations Conversion rates doubled for Scent Advisor users Improved overall customer satisfaction The Estée Lauder Companies and Jo Malone London help customers discover their perfect fragrance online with Google Cloud's",
+      "Bringing a personal touch to online beauty discovery The major challenge in digital commerce really comes down to subjectivity, the unique individual needs that our customers have for expressing their personal beauty."
+    ],
+    "workflow_changes": [
+      "However, continuing this legacy means successfully bringing the hands-on, sensory beauty discovery process to the digital world."
+    ],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Estée Lauder case study | Google Cloud # The Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI Get started for free Google Cloud results Launched a conversational, AI-powered digital experience Maps natural language to deep scent expertise for bespoke fragrance... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original\n\n- raw_id: R-088\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://cloud.google.com/customers/elc\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-09T03:05:45.304Z\n\n## clean_text\n\nEstée Lauder case study | Google Cloud\nThe Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI\nGet started for free\nGoogle Cloud results\nLaunched a conversational, AI-powered digital experience\nMaps natural language to deep scent expertise for bespoke fragrance recommendations\nConversion rates doubled for Scent Advisor users\nImproved overall customer satisfaction\nThe Estée Lauder Companies and Jo Malone London help customers discover their perfect fragrance online with Google Cloud's AI.\nBringing a personal touch to\nonline beauty discovery\nThe major challenge in digital commerce really comes down to subjectivity, the unique individual needs that our customers have for expressing their personal beauty.\nChris Curro\nPrincipal Machine Learning Engineer, The Estée Lauder Companies Inc.\nPrestige beauty leader The Estée Lauder Companies has long been a champion of creativity and innovation, defying industry expectations to deliver game-changing products and consumer experiences. However, continuing this legacy means successfully bringing the hands-on, sensory beauty discovery process to the digital world.\n\"The major challenge in digital commerce really comes down to subjectivity—the unique individual needs that our customers have for expressing their personal beauty,\" explains Chris Curro, principal machine learning engineer at The Estée Lauder Companies.\nJo Malone London , the iconic British fragrance and lifestyle brand The Estée Lauder Companies, understands these stakes more keenly than most. Shopping for fragrance online is notoriously difficult, and without the sensory cues of in-store experiences, many consumers—especially first-time buyers—struggle to select a scent confidently.\nTo bridge this gap, Jo Malone London has focused on creating trustworthy, reliable, and realistic online discovery experiences. This digital innovation journey has included initiatives like a scent layering tool and a social media fragrance filter, which translate its extensive library of scents into simple, descriptive words to help consumers make the right choice.\nNow, the fragrance powerhouse is tackling its latest milestone: Digitally recreating its signature in-store consultation experience.\nUsing Google's Gemini models and Gemini Enterprise Agent Platform, The Estée Lauder Companies and Jo Malone London created the Jo Malone London AI Scent Advisor—a new AI-powered experience that provides expert, personalized guidance online to help customers discover their perfect fragrance.\n3:18\nConnecting curiosity and confidence\nJo Malone London's scent stylists are experts at helping customers to find a fragrance that perfectly suits their personality, mood, or the season. In store, they employ a \"Tell, Explain, Describe\" (TED) framework, asking open-ended questions to help customers connect with and visualize different scent families and olfactory notes.\nThe AI Scent Advisor replicates this experience, allowing customers to describe what they're looking for in their own words and mapping them to Jo Malone London's complex olfactory data attributes to generate bespoke, expert-informed fragrance recommendations.\nThe way a fragrance expert speaks is not necessarily the way a typical consumer speaks. Instead, we have to figure out how to bridge that gap, and that's where a broader agentic system comes into play, powered by Google Gemini.\nChris Curro\nPrincipal Machine Learning Engineer, The Estée Lauder Companies Inc.\n\"Our taxonomy is developed by our master stylist, our master perfumers, but the way a fragrance expert speaks is not necessarily the way a typical consumer speaks,\" says Curro. \"Instead, we have to figure out how to bridge that gap, and that's where a broader agentic system comes into play, powered by Google Gemini.\"\nThe core of the system is an interactive AI agent that uses Gemini's reasoning and multimodal capabilities to evoke necessary points of inquiry by asking about a customer's memories, sensory experiences, and the identity they want to express through scent. The agent then translates this subjective language (that is, \"a scent that reminds me of a vintage library\") into a structured query format that is fed into a ranking engine, built on Agent Platform, to select the best fragrance candidates. Finally, the agent crafts a personalized response explaining why these scents are a match.\nGoogle Cloud forms the backbone of the AI Scent Advisor: Cloud Run services and worker pools, along with Pub/Sub, enable continuous data processing at scale. Firestore and BigQuery serve as a powerful operational and analytical data foundation, with Agent Platform and Gemini providing the core AI logic and conversational flow. Gemini's controlled generation also made it possible to define a precise format and structure for AI responses, ensuring reliable, readily usable outputs that could be easily integrated into the AI Scent Advisor's complex reasoning workflows.\nCrucially, Google Security, including Model Armor, has enabled Jo Malone London to implement and enforce safety policies that can handle nuanced terminology like \"nude\" for discussing skin tone or foundation that might be problematic in non-beauty contexts.\n\"Google Cloud knows how to make you feel like you're customer number one,\" says Curro. \"No matter what we need on whatever timeline it may be, our Google Cloud team has been there making sure that we get everything we need to deliver the business value that is critical to any company trying to lead the charge in technology, in AI.\"\nBuilding an AI stylist that speaks the brand's language\nWe were able to extract the key vernacular, really hone in on the key factors that make the Jo Malone London stylist 'tell, explain, describe' framework work, and bring that into the Jo Malone London AI Scent Advisor.\nChris Curro\nPrincipal Machine Learning Engineer, The Estée Lauder Companies Inc.\nFor the AI Scent Advisor to work, Jo Malone London needed to translate the way customers naturally speak about fragrances into the olfactive taxonomy used by experts—all while capturing the unique playful Britishness that's so key to the brand's identity.\nFrom the start, The Estée Lauder Companies' AI team collaborated closely with brand experts and stylists to define its olfactive taxonomy, encompassing all the notes, subnotes, and scent families of its distinctive fragrance collections—and how they layer on top of each other. They also conducted numerous interviews, where real stylists worked with volunteers to find out how they speak when assisting customers with choosing signature scents or picking out a gift.\n\"To do systematic analysis, distill out the key techniques, we turn to Google Gemini to make that a scalable process,\" says Curro. \"We were able to extract the key vernacular, really hone in on the key factors that make the Jo Malone London stylist 'tell, explain, describe' framework work, and bring that into the Jo Malone London AI Scent Advisor.\"\nWith Gemini, the team was able to then codify and simulate a voice that captures the same spirit of curiosity and creativity of real stylists while providing expert-level, personalized guidance.\n\"The metrics have been fantastic. We've been driving conversion. We know customers are really, really satisfied with it,\" says Curro. In addition, Jo Malone London's research has shown that customers are going into physical stores to discuss and try the recommendations they received, demonstrating the potential of digital investment to enhance the overall brand experience.\nThe Jo Malone London AI Scent Advisor is not only setting a new bar for online fragrance discovery, it's also fueling the brand's future innovation pipeline. Using proprietary natural language analytics, built on Google Cloud, Jo Malone London is gaining deeper insights into consumers and their preferences to deliver products and experiences that help customers express their personal beauty—in a way that is uniquely their own.\nJo Malone London has been creating a palette of exquisitely simple, elegant scents and curating a world where every sense is indulged since 1994. Acquired by prestige beauty leader The Estée Lauder Companies Inc. in 1999, today the brand is internationally known for its unexpected fragrances and distinctly British character.\nIndustry: Retail\nLocation: UK\nThe Estée Lauder Companies Inc. (ELC) is one of the world's leading manufacturers, marketers, and sellers of quality skin care, makeup, fragrance, and hair care products, and is a steward of luxury and prestige brands globally. The company's products are sold in approximately 150 countries and territories under brand names, including Estée Lauder, Aramis, Clinique, Lab Series, Origins, M·A·C, La Mer, Bobbi Brown Cosmetics, Aveda, Jo Malone London, and more.\nIndustry: Retail\nLocation: United States\nProducts: Gemini , Gemini Enterprise Agent Platform , Cloud Run , Pub/Sub , Firestore , BigQuery , Model Armor\n\n## full_text\n\nEstée Lauder case study | Google Cloud\nThe Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI\nGet started for free\nGoogle Cloud results\nLaunched a conversational, AI-powered digital experience\nMaps natural language to deep scent expertise for bespoke fragrance recommendations\nConversion rates doubled for Scent Advisor users\nImproved overall customer satisfaction\nThe Estée Lauder Companies and Jo Malone London help customers discover their perfect fragrance online with Google Cloud's AI.\nBringing a personal touch to\nonline beauty discovery\nThe major challenge in digital commerce really comes down to subjectivity, the unique individual needs that our customers have for expressing their personal beauty.\nChris Curro\nPrincipal Machine Learning Engineer, The Estée Lauder Companies Inc.\nPrestige beauty leader The Estée Lauder Companies has long been a champion of creativity and innovation, defying industry expectations to deliver game-changing products and consumer experiences. However, continuing this legacy means successfully bringing the hands-on, sensory beauty discovery process to the digital world.\n\"The major challenge in digital commerce really comes down to subjectivity—the unique individual needs that our customers have for expressing their personal beauty,\" explains Chris Curro, principal machine learning engineer at The Estée Lauder Companies.\nJo Malone London , the iconic British fragrance and lifestyle brand The Estée Lauder Companies, understands these stakes more keenly than most. Shopping for fragrance online is notoriously difficult, and without the sensory cues of in-store experiences, many consumers—especially first-time buyers—struggle to select a scent confidently.\nTo bridge this gap, Jo Malone London has focused on creating trustworthy, reliable, and realistic online discovery experiences. This digital innovation journey has included initiatives like a scent layering tool and a social media fragrance filter, which translate its extensive library of scents into simple, descriptive words to help consumers make the right choice.\nNow, the fragrance powerhouse is tackling its latest milestone: Digitally recreating its signature in-store consultation experience.\nUsing Google's Gemini models and Gemini Enterprise Agent Platform, The Estée Lauder Companies and Jo Malone London created the Jo Malone London AI Scent Advisor—a new AI-powered experience that provides expert, personalized guidance online to help customers discover their perfect fragrance.\n3:18\nConnecting curiosity and confidence\nJo Malone London's scent stylists are experts at helping customers to find a fragrance that perfectly suits their personality, mood, or the season. In store, they employ a \"Tell, Explain, Describe\" (TED) framework, asking open-ended questions to help customers connect with and visualize different scent families and olfactory notes.\nThe AI Scent Advisor replicates this experience, allowing customers to describe what they're looking for in their own words and mapping them to Jo Malone London's complex olfactory data attributes to generate bespoke, expert-informed fragrance recommendations.\nThe way a fragrance expert speaks is not necessarily the way a typical consumer speaks. Instead, we have to figure out how to bridge that gap, and that's where a broader agentic system comes into play, powered by Google Gemini.\nChris Curro\nPrincipal Machine Learning Engineer, The Estée Lauder Companies Inc.\n\"Our taxonomy is developed by our master stylist, our master perfumers, but the way a fragrance expert speaks is not necessarily the way a typical consumer speaks,\" says Curro. \"Instead, we have to figure out how to bridge that gap, and that's where a broader agentic system comes into play, powered by Google Gemini.\"\nThe core of the system is an interactive AI agent that uses Gemini's reasoning and multimodal capabilities to evoke necessary points of inquiry by asking about a customer's memories, sensory experiences, and the identity they want to express through scent. The agent then translates this subjective language (that is, \"a scent that reminds me of a vintage library\") into a structured query format that is fed into a ranking engine, built on Agent Platform, to select the best fragrance candidates. Finally, the agent crafts a personalized response explaining why these scents are a match.\nGoogle Cloud forms the backbone of the AI Scent Advisor: Cloud Run services and worker pools, along with Pub/Sub, enable continuous data processing at scale. Firestore and BigQuery serve as a powerful operational and analytical data foundation, with Agent Platform and Gemini providing the core AI logic and conversational flow. Gemini's controlled generation also made it possible to define a precise format and structure for AI responses, ensuring reliable, readily usable outputs that could be easily integrated into the AI Scent Advisor's complex reasoning workflows.\nCrucially, Google Security, including Model Armor, has enabled Jo Malone London to implement and enforce safety policies that can handle nuanced terminology like \"nude\" for discussing skin tone or foundation that might be problematic in non-beauty contexts.\n\"Google Cloud knows how to make you feel like you're customer number one,\" says Curro. \"No matter what we need on whatever timeline it may be, our Google Cloud team has been there making sure that we get everything we need to deliver the business value that is critical to any company trying to lead the charge in technology, in AI.\"\nBuilding an AI stylist that speaks the brand's language\nWe were able to extract the key vernacular, really hone in on the key factors that make the Jo Malone London stylist 'tell, explain, describe' framework work, and bring that into the Jo Malone London AI Scent Advisor.\nChris Curro\nPrincipal Machine Learning Engineer, The Estée Lauder Companies Inc.\nFor the AI Scent Advisor to work, Jo Malone London needed to translate the way customers naturally speak about fragrances into the olfactive taxonomy used by experts—all while capturing the unique playful Britishness that's so key to the brand's identity.\nFrom the start, The Estée Lauder Companies' AI team collaborated closely with brand experts and stylists to define its olfactive taxonomy, encompassing all the notes, subnotes, and scent families of its distinctive fragrance collections—and how they layer on top of each other. They also conducted numerous interviews, where real stylists worked with volunteers to find out how they speak when assisting customers with choosing signature scents or picking out a gift.\n\"To do systematic analysis, distill out the key techniques, we turn to Google Gemini to make that a scalable process,\" says Curro. \"We were able to extract the key vernacular, really hone in on the key factors that make the Jo Malone London stylist 'tell, explain, describe' framework work, and bring that into the Jo Malone London AI Scent Advisor.\"\nWith Gemini, the team was able to then codify and simulate a voice that captures the same spirit of curiosity and creativity of real stylists while providing expert-level, personalized guidance.\n\"The metrics have been fantastic. We've been driving conversion. We know customers are really, really satisfied with it,\" says Curro. In addition, Jo Malone London's research has shown that customers are going into physical stores to discuss and try the recommendations they received, demonstrating the potential of digital investment to enhance the overall brand experience.\nThe Jo Malone London AI Scent Advisor is not only setting a new bar for online fragrance discovery, it's also fueling the brand's future innovation pipeline. Using proprietary natural language analytics, built on Google Cloud, Jo Malone London is gaining deeper insights into consumers and their preferences to deliver products and experiences that help customers express their personal beauty—in a way that is uniquely their own.\nJo Malone London has been creating a palette of exquisitely simple, elegant scents and curating a world where every sense is indulged since 1994. Acquired by prestige beauty leader The Estée Lauder Companies Inc. in 1999, today the brand is internationally known for its unexpected fragrances and distinctly British character.\nIndustry: Retail\nLocation: UK\nThe Estée Lauder Companies Inc. (ELC) is one of the world's leading manufacturers, marketers, and sellers of quality skin care, makeup, fragrance, and hair care products, and is a steward of luxury and prestige brands globally. The company's products are sold in approximately 150 countries and territories under brand names, including Estée Lauder, Aramis, Clinique, Lab Series, Origins, M·A·C, La Mer, Bobbi Brown Cosmetics, Aveda, Jo Malone London, and more.\nIndustry: Retail\nLocation: United States\nProducts: Gemini , Gemini Enterprise Agent Platform , Cloud Run , Pub/Sub , Firestore , BigQuery , Model Armor\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 85\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Estée Lauder case study | Google Cloud # The Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI Get started for free Google Cloud results Launched a conversational, AI-powered digital experience Maps natural language to deep scent expertise for bespoke fragrance... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original\n2. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Estée Lauder case study | Google Cloud The Estée Lauder Companies and Jo Malone London: Giving signature scents a spritz of AI Get started for free Google Cloud results Launched a conversational, AI-powered digital experience Maps natural language to deep scent expertise for bespoke fragrance recommendations Conversion rates doubled for Scent Advisor users Improved overall customer satisfaction The Estée Lauder Companies and Jo Malone London help customers discover their perfect fragrance online with Google Cloud's\n3. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Bringing a personal touch to online beauty discovery The major challenge in digital commerce really comes down to subjectivity, the unique individual needs that our customers have for expressing their personal beauty.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Chris Curro Principal Machine Learning Engineer, The Estée Lauder Companies Inc.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Prestige beauty leader The Estée Lauder Companies has long been a champion of creativity and innovation, defying industry expectations to deliver game-changing products and consumer experiences.\n6. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] However, continuing this legacy means successfully bringing the hands-on, sensory beauty discovery process to the digital world.\n"
+}

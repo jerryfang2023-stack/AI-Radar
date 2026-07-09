@@ -1,0 +1,305 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-107
+title: "Nanonets gets Accel's backing to improve AI-based workflow automation | TechCrunch"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://techcrunch.com/2024/03/12/nanonets-funding-accel-india/"
+canonical_url: "https://techcrunch.com/2024/03/12/nanonets-funding-accel-india"
+source_name: "keyword search / Anysearch"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_market_trend"
+search_path: "a_media_gdelt"
+search_path_label: "A 级媒体 / GDELT 路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-09T03:05:45.397Z
+language: mixed
+full_text_hash: 09c882710b28fe12
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-09/r-107-nanonets-gets-accel-s-backing-to-improve-ai-based-workflow-automation-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-09/r-107-nanonets-gets-accel-s-backing-to-improve-ai-based-workflow-automation-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":8016,"paragraph_count":37,"sentence_count":56,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 8016
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"09c882710b28fe12","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 3a63ae748809af29
+content_hash: 09c882710b28fe12
+semantic_hash: 4ab1c7ae4415bed2
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-09T03:05:45.397Z"
+last_seen_at: 2026-07-09T03:05:45.397Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Google","Amazon"],"products":["agents"],"people":[],"industries":["金融 / 保险","医疗","制造 / 工业","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["计费 / 预算管理","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["5","01","12","2024","$29 million","15 m","100","$42 million"],"quotes":["more adjacent processes,","We win deals primarily because of accuracy, user experience and the quality of our integrations,"]}
+evidence_seed: {"company_actions":["Nanonets gets Accel's backing to improve AI-based workflow automation | TechCrunch Image Credits:Nanonets AI Copy Share Link # Nanonets gets Accel’s backing to improve AI-based workflow automation Jagmeet Singh 5:01 AM PDT · March 12, 2024 Copy Share Link Nanonets, a startup using AI to auto... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt","Image Credits: Nanonets AI Nanonets gets Accel’s backing to improve AI-based workflow automation Jagmeet Singh 5:01 AM PDT · March 12, 2024 Nanonets, a startup using AI to automate back-office processes, has raised $29 million in a new funding round led by Accel as it seeks to improve the accuracy of automation processes that involve large amounts of unstructured data.","A Y Combinator alum, the startup has built an AI platform through which it offers no-code solutions that, according to the company, can help businesses extract information from documents, emails, tickets, databases and the like, and convert them into actionable insights."],"case_details":[],"workflow_changes":["Processing unstructured data from documents like invoices, receipts and purchase orders often involves repetitive tasks and a lot of human resources.","Nanonets, which primarily targets the financial services sector, says its AI platform aims to improve the efficiency of these processes and make them cost-effective."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Nanonets gets Accel's backing to improve AI-based workflow automation | TechCrunch Image Credits:Nanonets AI Copy Share Link # Nanonets gets Accel’s backing to improve AI-based workflow automation Jagmeet Singh 5:01 AM PDT · March 12, 2024 Copy Share Link Nanonets, a startup using AI to auto... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Image Credits: Nanonets AI Nanonets gets Accel’s backing to improve AI-based workflow automation Jagmeet Singh 5:01 AM PDT · March 12, 2024 Nanonets, a startup using AI to automate back-office processes, has raised $29 million in a new funding round led by Accel as it seeks to improve the accuracy of automation processes that involve large amounts of unstructured data.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Processing unstructured data from documents like invoices, receipts and purchase orders often involves repetitive tasks and a lot of human resources.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Nanonets, which primarily targets the financial services sector, says its AI platform aims to improve the efficiency of these processes and make them cost-effective.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"A Y Combinator alum, the startup has built an AI platform through which it offers no-code solutions that, according to the company, can help businesses extract information from documents, emails, tickets, databases and the like, and convert them into actionable insights.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The company’s AI platform uses machine learning architectures to analyze unstructured data from uploaded documents and extract useful information.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-09T03:05:45.397Z
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Nanonets gets Accel's backing to improve AI-based workflow automation | TechCrunch
+
+## clean_text
+
+Image Credits: Nanonets
+AI
+Nanonets gets Accel’s backing to improve AI-based workflow automation
+Jagmeet Singh
+5:01 AM PDT · March 12, 2024
+Nanonets, a startup using AI to automate back-office processes, has raised $29 million in a new funding round led by Accel as it seeks to improve the accuracy of automation processes that involve large amounts of unstructured data.
+Processing unstructured data from documents like invoices, receipts and purchase orders often involves repetitive tasks and a lot of human resources. Nanonets, which primarily targets the financial services sector, says its AI platform aims to improve the efficiency of these processes and make them cost-effective.
+A Y Combinator alum, the startup has built an AI platform through which it offers no-code solutions that, according to the company, can help businesses extract information from documents, emails, tickets, databases and the like, and convert them into actionable insights. The company’s AI platform uses machine learning architectures to analyze unstructured data from uploaded documents and extract useful information. Its no-code AI agents can be plugged into ERP platforms like QuickBooks, Xero, Sage and NetSuite to automate accounts payable processes, optimize supply chains by taking historical data from Square and Tableau, and summarize health reports from patient management systems.
+Nanonets claims that while an invoice typically takes 15 minutes to process manually, its automated finance solutions can reduce the time taken to less than a minute. These solutions can work for processes like accounts payable, reconciliation, accounts receivable and expense management.
+The startup intends to use the fresh funding for R&D to improve the accuracy of its system and invest in sales and marketing. It has about 100 employees, which includes most of its engineering team that’s based in India. The company also will use the new funding to increase its headcount.
+The all-equity Series B round saw participation from Nanonets’ existing investors Elevation Capital and Y Combinator. It brings the startup’s total funding raised to $42 million, including its $10 million Series A round in 2022.
+Prathamesh Juvatkar, co-founder and CTO at Nanonets, told TechCrunch that the startup initially used convolutional neural networks (neural network architectures used in computer vision for image classification and object recognition) to examine images and detect featured objects. The startup later considered deploying graph neural networks, but eventually moved to transformers and embraced multimodal architectures after it saw that they were more accurate than existing machine learning technologies.
+“Right now, in the back end, we have multiple architectures. Whenever we get a new customer, we train all of these models on the customer data and see which one gets better accuracy,” he said in an interview.
+IIT Gandhinagar alumni Juvatkar and Sarthak Jain (CEO) co-founded Nanonets after selling Cubeit, a machine-learning platform that turned web pages into sharable mobile cards, to fashion portal Myntra in 2016.
+Unlike many other AI startups that rely on large language models (LLMs) and GPTs, Nanonets prefers transformers to circumvent the issue of hallucinations, which occur when an AI system generates information that is not present in the given documents, but is generated based on the LLM’s knowledge.
+Even though the machine learning architectures that Nanonets use are document-agnostic, the startup is targeting the financial services space because about 50%-55% of its customers are from that domain. It has offered a range of integrations to streamline finance operations. However, the company is gradually expanding to “more adjacent processes,” and has also started serving customers in healthcare and manufacturing, Juvatkar said.
+Nanonets is not alone in the global market for AI-based workflow automation. The market is crowded with traditional optical character recognition (OCR) platforms as well as startups, such as Rossum AI and Hyperscience. Bigger companies like UiPath also offer workflow automation, but with structured data. Still, Juvatkar said Nanonets takes on the competition by offering a record 90% straight-through processing rate — the percentage of data processed without manual intervention.
+“We win deals primarily because of accuracy, user experience and the quality of our integrations,” he said.
+Nanonets offers its solutions in three different pricing tiers: Starter, Pro and Enterprise. Of these tiers, Juvatkar told TechCrunch, the Pro and Enterprise are the most significant contributors to the startup’s annual recurring revenue, with an equal split. The startup also offers tools to convert PDFs to Excel spreadsheets, CSV, JSON, XML and text, image to text and image to Excel. These converters have helped gain the attention of businesses that require automation and reach more than 34% of the global Fortune 500 companies over the last two years, the company said. Additionally, the startup has expanded its user base by four times over the previous 12 months, and currently has over 10,000 customers globally.
+Nanonets has users across the world, but the U.S. accounts for about 40% of its revenues, followed by Europe, which contributes 30% to 35%, Juvatkar said.
+Juvatkar told TechCrunch, without disclosing the numbers, that since the 2022 round, Nanonets’ revenue has consistently increased by three times per year. The startup aims to expand its top line by 2x to 3x this year, too.
+Consistent revenue growth is one reason investors have been investing in AI startups despite the slowdown in global markets. Funding to AI startups soared to $21 billion in 2023 from $10 billion in 2022, while the number of deals dropped by 61 to 399 last year, per Tracxn. AI startups in the U.S. receive the most investments, followed by companies in China, U.K., Israel and India.
+“We are thrilled to partner with Nanonets in their mission to revolutionize back-office operations with AI. Sarthak and his team have been dedicated to getting to the bottom of customer pain points and have built a powerful solution that fully automates business processes end-to-end. Nanonets stood out to us due to its comprehensive platform and its capability for Straight Through Processing (STP) — these qualities set Nanonets apart in the field of automation and have already demonstrated their positive impact to customers,” said Abhinav Chaturvedi, partner at Accel, in a prepared statement.
+Note: This story was updated to reflect a change to Accel’s name following a request for clarification from the firm.
+Topics
+Accel , AI , AI , India , Nanonets , Startups , United States , workflow automation
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Jagmeet Singh
+Reporter
+Jagmeet covers startups, tech policy-related updates, and all other major tech-centric developments from India for TechCrunch. He previously worked as a principal correspondent at NDTV.
+You can contact or verify outreach from Jagmeet by emailing mail@journalistjagmeet.com .
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+If you use Google, you’re training its AI. Here’s how to opt out.
+Sarah Perez
+Reddit is using LLMs to solve a problem LLMs largely created
+Amanda Silberling
+Amazon will stop accepting new customers for Mechanical Turk
+Anthony Ha
+5 desk gadgets that can make your workday better
+Aisha Malik
+Chevy built an all-American EV truck — why is nobody buying it?
+Tim De Chant
+Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped
+Lucas Ropek
+Jersey Mike’s IPO illustrates how bad the AI hype has become
+Julie Bort
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Nanonets
+AI
+Nanonets gets Accel’s backing to improve AI-based workflow automation
+Jagmeet Singh
+5:01 AM PDT · March 12, 2024
+Nanonets, a startup using AI to automate back-office processes, has raised $29 million in a new funding round led by Accel as it seeks to improve the accuracy of automation processes that involve large amounts of unstructured data.
+Processing unstructured data from documents like invoices, receipts and purchase orders often involves repetitive tasks and a lot of human resources. Nanonets, which primarily targets the financial services sector, says its AI platform aims to improve the efficiency of these processes and make them cost-effective.
+A Y Combinator alum, the startup has built an AI platform through which it offers no-code solutions that, according to the company, can help businesses extract information from documents, emails, tickets, databases and the like, and convert them into actionable insights. The company’s AI platform uses machine learning architectures to analyze unstructured data from uploaded documents and extract useful information. Its no-code AI agents can be plugged into ERP platforms like QuickBooks, Xero, Sage and NetSuite to automate accounts payable processes, optimize supply chains by taking historical data from Square and Tableau, and summarize health reports from patient management systems.
+Nanonets claims that while an invoice typically takes 15 minutes to process manually, its automated finance solutions can reduce the time taken to less than a minute. These solutions can work for processes like accounts payable, reconciliation, accounts receivable and expense management.
+The startup intends to use the fresh funding for R&D to improve the accuracy of its system and invest in sales and marketing. It has about 100 employees, which includes most of its engineering team that’s based in India. The company also will use the new funding to increase its headcount.
+The all-equity Series B round saw participation from Nanonets’ existing investors Elevation Capital and Y Combinator. It brings the startup’s total funding raised to $42 million, including its $10 million Series A round in 2022.
+Prathamesh Juvatkar, co-founder and CTO at Nanonets, told TechCrunch that the startup initially used convolutional neural networks (neural network architectures used in computer vision for image classification and object recognition) to examine images and detect featured objects. The startup later considered deploying graph neural networks, but eventually moved to transformers and embraced multimodal architectures after it saw that they were more accurate than existing machine learning technologies.
+“Right now, in the back end, we have multiple architectures. Whenever we get a new customer, we train all of these models on the customer data and see which one gets better accuracy,” he said in an interview.
+IIT Gandhinagar alumni Juvatkar and Sarthak Jain (CEO) co-founded Nanonets after selling Cubeit, a machine-learning platform that turned web pages into sharable mobile cards, to fashion portal Myntra in 2016.
+Unlike many other AI startups that rely on large language models (LLMs) and GPTs, Nanonets prefers transformers to circumvent the issue of hallucinations, which occur when an AI system generates information that is not present in the given documents, but is generated based on the LLM’s knowledge.
+Even though the machine learning architectures that Nanonets use are document-agnostic, the startup is targeting the financial services space because about 50%-55% of its customers are from that domain. It has offered a range of integrations to streamline finance operations. However, the company is gradually expanding to “more adjacent processes,” and has also started serving customers in healthcare and manufacturing, Juvatkar said.
+Nanonets is not alone in the global market for AI-based workflow automation. The market is crowded with traditional optical character recognition (OCR) platforms as well as startups, such as Rossum AI and Hyperscience. Bigger companies like UiPath also offer workflow automation, but with structured data. Still, Juvatkar said Nanonets takes on the competition by offering a record 90% straight-through processing rate — the percentage of data processed without manual intervention.
+“We win deals primarily because of accuracy, user experience and the quality of our integrations,” he said.
+Nanonets offers its solutions in three different pricing tiers: Starter, Pro and Enterprise. Of these tiers, Juvatkar told TechCrunch, the Pro and Enterprise are the most significant contributors to the startup’s annual recurring revenue, with an equal split. The startup also offers tools to convert PDFs to Excel spreadsheets, CSV, JSON, XML and text, image to text and image to Excel. These converters have helped gain the attention of businesses that require automation and reach more than 34% of the global Fortune 500 companies over the last two years, the company said. Additionally, the startup has expanded its user base by four times over the previous 12 months, and currently has over 10,000 customers globally.
+Nanonets has users across the world, but the U.S. accounts for about 40% of its revenues, followed by Europe, which contributes 30% to 35%, Juvatkar said.
+Juvatkar told TechCrunch, without disclosing the numbers, that since the 2022 round, Nanonets’ revenue has consistently increased by three times per year. The startup aims to expand its top line by 2x to 3x this year, too.
+Consistent revenue growth is one reason investors have been investing in AI startups despite the slowdown in global markets. Funding to AI startups soared to $21 billion in 2023 from $10 billion in 2022, while the number of deals dropped by 61 to 399 last year, per Tracxn. AI startups in the U.S. receive the most investments, followed by companies in China, U.K., Israel and India.
+“We are thrilled to partner with Nanonets in their mission to revolutionize back-office operations with AI. Sarthak and his team have been dedicated to getting to the bottom of customer pain points and have built a powerful solution that fully automates business processes end-to-end. Nanonets stood out to us due to its comprehensive platform and its capability for Straight Through Processing (STP) — these qualities set Nanonets apart in the field of automation and have already demonstrated their positive impact to customers,” said Abhinav Chaturvedi, partner at Accel, in a prepared statement.
+Note: This story was updated to reflect a change to Accel’s name following a request for clarification from the firm.
+Topics
+Accel , AI , AI , India , Nanonets , Startups , United States , workflow automation
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Jagmeet Singh
+Reporter
+Jagmeet covers startups, tech policy-related updates, and all other major tech-centric developments from India for TechCrunch. He previously worked as a principal correspondent at NDTV.
+You can contact or verify outreach from Jagmeet by emailing mail@journalistjagmeet.com .
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+If you use Google, you’re training its AI. Here’s how to opt out.
+Sarah Perez
+Reddit is using LLMs to solve a problem LLMs largely created
+Amanda Silberling
+Amazon will stop accepting new customers for Mechanical Turk
+Anthony Ha
+5 desk gadgets that can make your workday better
+Aisha Malik
+Chevy built an all-American EV truck — why is nobody buying it?
+Tim De Chant
+Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped
+Lucas Ropek
+Jersey Mike’s IPO illustrates how bad the AI hype has become
+Julie Bort
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":8016,"paragraph_count":37,"sentence_count":56,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Nanonets gets Accel's backing to improve AI-based workflow automation | TechCrunch Image Credits:Nanonets AI Copy Share Link # Nanonets gets Accel’s backing to improve AI-based workflow automation Jagmeet Singh 5:01 AM PDT · March 12, 2024 Copy Share Link Nanonets, a startup using AI to auto... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt
+
+2. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Image Credits: Nanonets AI Nanonets gets Accel’s backing to improve AI-based workflow automation Jagmeet Singh 5:01 AM PDT · March 12, 2024 Nanonets, a startup using AI to automate back-office processes, has raised $29 million in a new funding round led by Accel as it seeks to improve the accuracy of automation processes that involve large amounts of unstructured data.
+
+3. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Processing unstructured data from documents like invoices, receipts and purchase orders often involves repetitive tasks and a lot of human resources.
+
+4. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Nanonets, which primarily targets the financial services sector, says its AI platform aims to improve the efficiency of these processes and make them cost-effective.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   A Y Combinator alum, the startup has built an AI platform through which it offers no-code solutions that, according to the company, can help businesses extract information from documents, emails, tickets, databases and the like, and convert them into actionable insights.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The company’s AI platform uses machine learning architectures to analyze unstructured data from uploaded documents and extract useful information.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Google, Amazon
+- products: agents
+- people: 暂无公开信息
+- industries: 金融 / 保险, 医疗, 制造 / 工业, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 5, 01, 12, 2024, $29 million, 15 m, 100, $42 million
+- quotes: more adjacent processes, / We win deals primarily because of accuracy, user experience and the quality of our integrations,
+
+## evidence_seed
+
+- company_actions: Nanonets gets Accel's backing to improve AI-based workflow automation | TechCrunch Image Credits:Nanonets AI Copy Share Link # Nanonets gets Accel’s backing to improve AI-based workflow automation Jagmeet Singh 5:01 AM PDT · March 12, 2024 Copy Share Link Nanonets, a startup using AI to auto... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt / Image Credits: Nanonets AI Nanonets gets Accel’s backing to improve AI-based workflow automation Jagmeet Singh 5:01 AM PDT · March 12, 2024 Nanonets, a startup using AI to automate back-office processes, has raised $29 million in a new funding round led by Accel as it seeks to improve the accuracy of automation processes that involve large amounts of unstructured data. / A Y Combinator alum, the startup has built an AI platform through which it offers no-code solutions that, according to the company, can help businesses extract information from documents, emails, tickets, databases and the like, and convert them into actionable insights.
+- case_details: 暂无公开信息
+- workflow_changes: Processing unstructured data from documents like invoices, receipts and purchase orders often involves repetitive tasks and a lot of human resources. / Nanonets, which primarily targets the financial services sector, says its AI platform aims to improve the efficiency of these processes and make them cost-effective.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Nanonets gets Accel's backing to improve AI-based workflow automation | TechCrunch Image Credits:Nanonets AI Copy Share Link # Nanonets gets Accel’s backing to improve AI-based workflow automation Jagmeet Singh 5:01 AM PDT · March 12, 2024 Copy Share Link Nanonets, a startup using AI to auto... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

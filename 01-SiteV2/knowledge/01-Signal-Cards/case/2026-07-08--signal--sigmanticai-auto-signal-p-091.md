@@ -2,15 +2,15 @@
 id: SIG-20260708-A14
 type: signal_card
 signal_type: case
-title: "Launch YC: SigmanticAI - The Cursor for Hardware Design"
+title: "YC 发布 SigmanticAI：面向硬件设计的 Cursor"
 date: 2026-07-08
 status: published
 source_title: "Launch YC: SigmanticAI - The Cursor for Hardware Design | Y Combinator"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-08T06:10:03.935Z
-updated_at: 2026-07-08T06:10:03.935Z
+created_at: 2026-07-09T04:04:06.912Z
+updated_at: 2026-07-09T04:04:06.912Z
 
 raw_refs: ["R-091"]
 pool_refs: ["P-091"]
@@ -53,22 +53,22 @@ opportunity_signals:
   adoption_evidence: ["pilot_or_poc"]
   source_evidence_type: ["first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Launch YC: SigmanticAI - The Cursor for Hardware Design Launch YC: SigmanticAI - The Cursor for Hardware Design | Y Combinator 原文称，Launch YC: SigmanticAI - The Cursor for Hardware Design 原文称，Launch YC: SigmanticAI - The..."
+  source_excerpt: "YC 发布 SigmanticAI：面向硬件设计的 Cursor Launch YC: SigmanticAI - The Cursor for Hardware Design | Y Combinator 原始来源标题显示：YC 发布 SigmanticAI：面向硬件设计的 Cursor。"
   missing_fields: ["buyer_or_user", "specific_task", "product_form"]
 
 signal_owner: "SigmanticAI"
 
 frontend:
-  displayTitle: "Launch YC: SigmanticAI - The Cursor for Hardware Design"
+  displayTitle: "YC 发布 SigmanticAI：面向硬件设计的 Cursor"
   sourceLinks:
     - "https://www.ycombinator.com/launches/NzI-sigmanticai-the-cursor-for-hardware-design"
 ---
 
-# Launch YC: SigmanticAI - The Cursor for Hardware Design
+# YC 发布 SigmanticAI：面向硬件设计的 Cursor
 
 ## 新闻事实
 
-原文称，Launch YC: SigmanticAI - The Cursor for Hardware Design
+原始来源标题显示：YC 发布 SigmanticAI：面向硬件设计的 Cursor。
 
 ## 原文要点
 
@@ -80,7 +80,7 @@ frontend:
 
 ## 可见原文片段
 
-原文称，Launch YC: SigmanticAI - The Cursor for Hardware Design
+原始来源标题显示：YC 发布 SigmanticAI：面向硬件设计的 Cursor。
 
 ## 证据边界
 

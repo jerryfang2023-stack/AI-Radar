@@ -1,0 +1,257 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-045
+title: "How Okara runs CMO agents for 120,000 companies on Vercel - Vercel"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://vercel.com/blog/how-okara-runs-cmo-agents-for-120000-companies-on-vercel"
+canonical_url: "https://vercel.com/blog/how-okara-runs-cmo-agents-for-120000-companies-on-vercel"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-09T03:05:45.050Z
+language: mixed
+full_text_hash: 4e33357c6f073387
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-09/r-045-how-okara-runs-cmo-agents-for-120-000-companies-on-vercel-vercel.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-09/r-045-how-okara-runs-cmo-agents-for-120-000-companies-on-vercel-vercel.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5551,"paragraph_count":30,"sentence_count":55,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 5551
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4e33357c6f073387","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 8f027b2b3ff8df1c
+content_hash: 4e33357c6f073387
+semantic_hash: db3f992088768b26
+duplicate_of: ""
+first_seen_at: "2026-07-09T03:05:45.050Z"
+last_seen_at: 2026-07-09T03:05:45.050Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agents","agent"],"people":[],"industries":["医疗","开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["120","000","11","2026","4 billion","$15","000 m"],"quotes":["You can build something in a weekend and spend months trying to get anyone to notice."]}
+evidence_seed: {"company_actions":["Give Okara your website URL, and the AI CMO builds a marketing strategy, develops a brand voice, and activates agents across SEO, content, and social media to drive awareness and pipeline without a single marketing hire.","As Fatima Rizwan, Okara's founder, puts it: \"You can build something in a weekend and spend months trying to get anyone to notice."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"# How Okara runs CMO agents for 120,000 companies on Vercel Published: June 11, 2026 | Authors: Susan Aziz, Eric Dodds | Category: Customer stories --- ### Okara on Vercel - 4 billion tokens processed daily across a multi-provider AI stack on Vercel - AI CMOs actively managing growth for 120,000... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Copy link to heading Okara on Vercel 4 billion tokens processed daily across a multi-provider AI stack on Vercel AI CMOs actively managing growth for 120,000+ businesses Eight sub-agents handling SEO, GEO, social, content, Reddit, and Hacker News New AI models available to users the same day they ship Okara is an AI CMO that directs a team of specialized sub-agents to drive marketing, so founders don't have to.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Give Okara your website URL, and the AI CMO builds a marketing strategy, develops a brand voice, and activates agents across SEO, content, and social media to drive awareness and pipeline without a single marketing hire.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As Fatima Rizwan, Okara's founder, puts it: \"You can build something in a weekend and spend months trying to get anyone to notice.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"\" Distribution, she argues, is stuck in the pre-AI era: fragmented across subscriptions and agencies that cost over $15,000 a month before a single dollar comes back.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Okara is built by a team of four and processes 4 billion tokens a day.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-09T03:05:45.050Z
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# How Okara runs CMO agents for 120,000 companies on Vercel - Vercel
+
+## clean_text
+
+Copy link to heading Okara on Vercel
+4 billion tokens processed daily across a multi-provider AI stack on Vercel
+AI CMOs actively managing growth for 120,000+ businesses
+Eight sub-agents handling SEO, GEO, social, content, Reddit, and Hacker News
+New AI models available to users the same day they ship
+Okara is an AI CMO that directs a team of specialized sub-agents to drive marketing, so founders don't have to. Give Okara your website URL, and the AI CMO builds a marketing strategy, develops a brand voice, and activates agents across SEO, content, and social media to drive awareness and pipeline without a single marketing hire.
+As Fatima Rizwan, Okara's founder, puts it: "You can build something in a weekend and spend months trying to get anyone to notice." Distribution, she argues, is stuck in the pre-AI era: fragmented across subscriptions and agencies that cost over $15,000 a month before a single dollar comes back.
+Okara is built by a team of four and processes 4 billion tokens a day. The company operates on the new model for startups: a small team building a platform that handles growth for thousands of other companies. Fatima quickly learned that serving hundreds of thousands of companies with four people meant infrastructure had to be invisible. Any time spent on it was time not spent building.
+“ We're four people building for hundreds of thousands of companies. We can't afford to build infrastructure and not product. Vercel gives us the foundation to move as fast as we need to. We're four people building for hundreds of thousands of companies. We can't afford to build infrastructure and not product. Vercel gives us the foundation to move as fast as we need to. ”
+— Fatima Rizwan Founder & CEO @ Okara
+Copy link to heading Using AI Gateway to integrate multiple providers with one API key
+Copy link to heading The friction of managing individual provider SDKs
+Okara's backend originally talked to eight model providers through separate SDKs, each with its own key management, image handling, and edge cases. When they expanded to open-source models, the approach broke down completely. Every new model meant an engineer stopped shipping product and wrote an adapter instead. Retry logic, fallback routing, and provider health monitoring all lived in Okara's codebase, maintained by hand.
+Most AI infrastructure would have required Okara to keep living with that friction. That's why they moved to Vercel AI Gateway.
+“ Before AI Gateway, every new model provider meant new keys, new dashboards, new billing. The overhead was constant and it had nothing to do with actually building. Vercel changed that. Before AI Gateway, every new model provider meant new keys, new dashboards, new billing. The overhead was constant and it had nothing to do with actually building. Vercel changed that. ”
+Boney Hernandez Full Stack Developer @ Okara
+Copy link to heading One endpoint, every provider
+AI Gateway replaced every custom integration with a single configuration. Retry logic and fallback handling moved out of Okara's codebase and into Vercel's routing layer entirely, including zero-data retention support for Okara's privacy-sensitive secure chat.
+The day a new model ships, Okara's team can make it available to users immediately through Gateway. No adapter, no edge case testing, no deploy cycle.
+“ With AI Gateway, everything is in one place. We can configure any provider on the spot and ship the same day. What used to take days now takes minutes. With AI Gateway, everything is in one place. We can configure any provider on the spot and ship the same day. What used to take days now takes minutes. ”
+Boney Fernandez Full Stack Developer @ Okara
+Copy link to heading Running agent workflows in Vercel Sandboxes
+Okara's SEO agent can scan for problems and write the code that fixes them. When the agent finds a technical issue on a user's site, it spins up a Vercel Sandbox and runs the analysis in an isolated environment. The findings are passed to a coding agent, which opens a pull request with the fix, ready for the developer to review and merge. Detection, analysis, code change: the entire loop runs automatically, with a human making the final call before anything goes live.
+Okara adopted Vercel Sandboxes the day they launched. Rizwan saw the announcement on X and the team started building immediately.
+“ We evaluated other options, but the answer was always Vercel Sandbox. It spins up instantly and just works. We evaluated other options, but the answer was always Vercel Sandbox. It spins up instantly and just works. ”
+Boney Fernandez Full Stack Developer
+Copy link to heading What's next
+120,000 websites are now using Okara's AI CMO. The team ships to production six or seven times a day, and every improvement lands for customers the same day it ships. A solo founder using Okara gets the same distribution muscle as a team ten times their size, without the headcount or the $15,000 monthly agency bill.
+Okara is expanding its agent suite and moving upmarket to serve larger teams. As the product grows, so does the infrastructure demand. More users, more agents, more tokens. When you're four people handling growth for 120,000 companies, you can't afford for infrastructure to be a distraction. With Vercel, it isn't.
+About Okara: Okara is an AI CMO that directs a team of specialized sub-agents to handle SEO, content, and social media for founders and small teams. It connects to your website, develops a brand voice, and manages distribution across eight channels without a marketing hire.
+
+## full_text
+
+Copy link to heading Okara on Vercel
+4 billion tokens processed daily across a multi-provider AI stack on Vercel
+AI CMOs actively managing growth for 120,000+ businesses
+Eight sub-agents handling SEO, GEO, social, content, Reddit, and Hacker News
+New AI models available to users the same day they ship
+Okara is an AI CMO that directs a team of specialized sub-agents to drive marketing, so founders don't have to. Give Okara your website URL, and the AI CMO builds a marketing strategy, develops a brand voice, and activates agents across SEO, content, and social media to drive awareness and pipeline without a single marketing hire.
+As Fatima Rizwan, Okara's founder, puts it: "You can build something in a weekend and spend months trying to get anyone to notice." Distribution, she argues, is stuck in the pre-AI era: fragmented across subscriptions and agencies that cost over $15,000 a month before a single dollar comes back.
+Okara is built by a team of four and processes 4 billion tokens a day. The company operates on the new model for startups: a small team building a platform that handles growth for thousands of other companies. Fatima quickly learned that serving hundreds of thousands of companies with four people meant infrastructure had to be invisible. Any time spent on it was time not spent building.
+“ We're four people building for hundreds of thousands of companies. We can't afford to build infrastructure and not product. Vercel gives us the foundation to move as fast as we need to. We're four people building for hundreds of thousands of companies. We can't afford to build infrastructure and not product. Vercel gives us the foundation to move as fast as we need to. ”
+— Fatima Rizwan Founder & CEO @ Okara
+Copy link to heading Using AI Gateway to integrate multiple providers with one API key
+Copy link to heading The friction of managing individual provider SDKs
+Okara's backend originally talked to eight model providers through separate SDKs, each with its own key management, image handling, and edge cases. When they expanded to open-source models, the approach broke down completely. Every new model meant an engineer stopped shipping product and wrote an adapter instead. Retry logic, fallback routing, and provider health monitoring all lived in Okara's codebase, maintained by hand.
+Most AI infrastructure would have required Okara to keep living with that friction. That's why they moved to Vercel AI Gateway.
+“ Before AI Gateway, every new model provider meant new keys, new dashboards, new billing. The overhead was constant and it had nothing to do with actually building. Vercel changed that. Before AI Gateway, every new model provider meant new keys, new dashboards, new billing. The overhead was constant and it had nothing to do with actually building. Vercel changed that. ”
+Boney Hernandez Full Stack Developer @ Okara
+Copy link to heading One endpoint, every provider
+AI Gateway replaced every custom integration with a single configuration. Retry logic and fallback handling moved out of Okara's codebase and into Vercel's routing layer entirely, including zero-data retention support for Okara's privacy-sensitive secure chat.
+The day a new model ships, Okara's team can make it available to users immediately through Gateway. No adapter, no edge case testing, no deploy cycle.
+“ With AI Gateway, everything is in one place. We can configure any provider on the spot and ship the same day. What used to take days now takes minutes. With AI Gateway, everything is in one place. We can configure any provider on the spot and ship the same day. What used to take days now takes minutes. ”
+Boney Fernandez Full Stack Developer @ Okara
+Copy link to heading Running agent workflows in Vercel Sandboxes
+Okara's SEO agent can scan for problems and write the code that fixes them. When the agent finds a technical issue on a user's site, it spins up a Vercel Sandbox and runs the analysis in an isolated environment. The findings are passed to a coding agent, which opens a pull request with the fix, ready for the developer to review and merge. Detection, analysis, code change: the entire loop runs automatically, with a human making the final call before anything goes live.
+Okara adopted Vercel Sandboxes the day they launched. Rizwan saw the announcement on X and the team started building immediately.
+“ We evaluated other options, but the answer was always Vercel Sandbox. It spins up instantly and just works. We evaluated other options, but the answer was always Vercel Sandbox. It spins up instantly and just works. ”
+Boney Fernandez Full Stack Developer
+Copy link to heading What's next
+120,000 websites are now using Okara's AI CMO. The team ships to production six or seven times a day, and every improvement lands for customers the same day it ships. A solo founder using Okara gets the same distribution muscle as a team ten times their size, without the headcount or the $15,000 monthly agency bill.
+Okara is expanding its agent suite and moving upmarket to serve larger teams. As the product grows, so does the infrastructure demand. More users, more agents, more tokens. When you're four people handling growth for 120,000 companies, you can't afford for infrastructure to be a distraction. With Vercel, it isn't.
+About Okara: Okara is an AI CMO that directs a team of specialized sub-agents to handle SEO, content, and social media for founders and small teams. It connects to your website, develops a brand voice, and manages distribution across eight channels without a marketing hire.
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 97
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5551,"paragraph_count":30,"sentence_count":55,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   # How Okara runs CMO agents for 120,000 companies on Vercel Published: June 11, 2026 | Authors: Susan Aziz, Eric Dodds | Category: Customer stories --- ### Okara on Vercel - 4 billion tokens processed daily across a multi-provider AI stack on Vercel - AI CMOs actively managing growth for 120,000... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original
+
+2. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Copy link to heading Okara on Vercel 4 billion tokens processed daily across a multi-provider AI stack on Vercel AI CMOs actively managing growth for 120,000+ businesses Eight sub-agents handling SEO, GEO, social, content, Reddit, and Hacker News New AI models available to users the same day they ship Okara is an AI CMO that directs a team of specialized sub-agents to drive marketing, so founders don't have to.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Give Okara your website URL, and the AI CMO builds a marketing strategy, develops a brand voice, and activates agents across SEO, content, and social media to drive awareness and pipeline without a single marketing hire.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   As Fatima Rizwan, Okara's founder, puts it: "You can build something in a weekend and spend months trying to get anyone to notice.
+
+5. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   " Distribution, she argues, is stuck in the pre-AI era: fragmented across subscriptions and agencies that cost over $15,000 a month before a single dollar comes back.
+
+6. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Okara is built by a team of four and processes 4 billion tokens a day.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agents, agent
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 120, 000, 11, 2026, 4 billion, $15, 000 m
+- quotes: You can build something in a weekend and spend months trying to get anyone to notice.
+
+## evidence_seed
+
+- company_actions: Give Okara your website URL, and the AI CMO builds a marketing strategy, develops a brand voice, and activates agents across SEO, content, and social media to drive awareness and pipeline without a single marketing hire. / As Fatima Rizwan, Okara's founder, puts it: "You can build something in a weekend and spend months trying to get anyone to notice.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+# How Okara runs CMO agents for 120,000 companies on Vercel Published: June 11, 2026 | Authors: Susan Aziz, Eric Dodds | Category: Customer stories --- ### Okara on Vercel - 4 billion tokens processed daily across a multi-provider AI stack on Vercel - AI CMOs actively managing growth for 120,000... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

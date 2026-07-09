@@ -1,18 +1,18 @@
 {
   "date": "2026-07-08",
-  "generated_at": "2026-07-08T06:10:04.606Z",
+  "generated_at": "2026-07-09T04:04:07.982Z",
   "signal_card_assets": [
     {
       "id": "SIG-20260708-A01",
       "pool_ref": "P-053",
-      "title": "ZEISS Case Study: Document Extraction with Dapr Agents",
+      "title": "ZEISS 使用 Dapr Agents 处理文档提取案例",
       "type": "case",
       "company": "ZEISS"
     },
     {
       "id": "SIG-20260708-A02",
       "pool_ref": "P-041",
-      "title": "Enterprise AI Rollout Case Study: Amgen's 20,000 Users",
+      "title": "Amgen 2 万名用户的企业 AI 推广案例",
       "type": "case",
       "company": "Amgen"
     },
@@ -54,21 +54,21 @@
     {
       "id": "SIG-20260708-A08",
       "pool_ref": "P-060",
-      "title": "Peraton 发布 Peraton[x]™",
+      "title": "Peraton 发布 Peraton[x]：面向关键任务运营的企业级 Agentic AI 平台",
       "type": "case",
       "company": "Peraton"
     },
     {
       "id": "SIG-20260708-A09",
       "pool_ref": "P-066",
-      "title": "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions",
+      "title": "Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化",
       "type": "case",
       "company": "Axis Max Life"
     },
     {
       "id": "SIG-20260708-A10",
       "pool_ref": "P-088",
-      "title": "Global Internal Automation Agents for a $50BN CPG - Eliza",
+      "title": "Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents",
       "type": "case",
       "company": "Eliza"
     },
@@ -96,9 +96,16 @@
     {
       "id": "SIG-20260708-A14",
       "pool_ref": "P-091",
-      "title": "Launch YC: SigmanticAI - The Cursor for Hardware Design",
+      "title": "YC 发布 SigmanticAI：面向硬件设计的 Cursor",
       "type": "case",
       "company": "SigmanticAI"
+    },
+    {
+      "id": "SIG-20260708-A15",
+      "pool_ref": "P-092",
+      "title": "Claude Code v2.1.204 发布",
+      "type": "product_service",
+      "company": "GitHub"
     }
   ],
   "not_promoted_candidates": [
@@ -1067,17 +1074,6 @@
       "not_promoted_reason": "evidence_quality:stale_source_date, source_auditability:discovery_source_not_resolved, fact_type_constraints:workforce_retraining_program_not_formal_signal_card",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
-    },
-    {
-      "pool_ref": "P-092",
-      "title": "Claude Code v2.1.204 发布",
-      "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.204",
-      "issues": [
-        "auto_signal_spec_null"
-      ],
-      "not_promoted_reason": "auto_signal_spec_null",
-      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
-      "promote_priority": "review"
     },
     {
       "pool_ref": "P-093",
