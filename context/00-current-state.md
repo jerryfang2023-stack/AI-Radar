@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in SITE-V3.4.5 V3 Gate Cleanout Release.
+WaveSight AI is now in SITE-V3.4.5 Raw Card Rule Cleanout Release.
 
 ## Current Positioning
 
