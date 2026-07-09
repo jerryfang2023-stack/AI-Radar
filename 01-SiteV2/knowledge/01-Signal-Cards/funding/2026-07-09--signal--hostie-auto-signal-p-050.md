@@ -2,7 +2,7 @@
 id: SIG-20260709-A07
 type: signal_card
 signal_type: funding
-title: "Hostie 获得 $12M A 轮 融资"
+title: "Hostie 完成 1200 万美元 A 轮融资，扩展餐厅 AI 虚拟礼宾平台"
 date: 2026-07-09
 status: published
 source_title: "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality"
@@ -10,7 +10,7 @@ asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
 created_at: 2026-07-09T04:02:05.832Z
-updated_at: 2026-07-09T04:02:05.832Z
+updated_at: "2026-07-09T13:38:00+08:00"
 
 raw_refs: ["R-050"]
 pool_refs: ["P-050"]
@@ -53,37 +53,38 @@ opportunity_signals:
   adoption_evidence: ["customer_metric"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Hostie 获得 $12M A 轮 融资 Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality Hostie宣布完成1200万美元A 轮融资。"
+  source_excerpt: "Hostie announced a   source_excerpt: 2 million Series A funding round led by Obvious Ventures, bringing total funding to   source_excerpt: 6 million."
   missing_fields: []
 
 signal_owner: "Hostie"
 
 frontend:
-  displayTitle: "Hostie 获得 $12M A 轮 融资"
+  displayTitle: "Hostie 完成 1200 万美元 A 轮融资，扩展餐厅 AI 虚拟礼宾平台"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html"
 ---
 
-# Hostie 获得 $12M A 轮 融资
+# Hostie 完成 1200 万美元 A 轮融资，扩展餐厅 AI 虚拟礼宾平台
 
 ## 新闻事实
 
-Hostie宣布完成1200万美元A 轮融资。
+Hostie 宣布完成 1200 万美元 A 轮融资，由 Obvious Ventures 领投，Gradient、Scribble Ventures、Burst Capital、Behind Genius Ventures 参投，公司累计融资达到 1600 万美元；本轮还包括多位餐饮运营者投资人。Hostie 表示资金将用于加速产品开发和扩充领导团队。
 
 ## 原文要点
 
-- SAN FRANCISCO 获得 $12 m Series A 融资。
-- Hostie宣布完成融资。
-- 原文称，That combination of exceptional product and customer obsession is incredibly rare.
+- 原始标题：Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality。
+- 产品/服务说明：Hostie 是面向餐厅的 AI 虚拟礼宾平台，帮助运营方处理电话、短信、订位、外卖咨询、私人活动询问和顾客问题。
+- 原文披露 Hostie 过去一年收入增长 10 倍，服务数百家餐厅伙伴，处理超过 200 万次顾客对话和 2400 万条消息，并预订超过 40 万个餐位。
+- 客户/伙伴包括 Flour + Water Hospitality Group、Riviera Dining Group、Bacchus Management Group、Cactus Club Cafe 等餐饮集团。
 
 ## 价值描述
 
-Hostie宣布完成融资。
+这是一条垂直行业 AI 融资信号：Hostie 把语音、短信和订位沟通自动化落到餐饮运营，融资与明确的使用量、客户群和产品扩张相互印证。
 
 ## 可见原文片段
 
-Hostie宣布完成1200万美元A 轮融资。
+Hostie, the AI-powered virtual concierge for restaurants, today announced a $12 million Series A funding round led by Obvious Ventures.
 
 ## 证据边界
 
-证据边界：缺失项作为内部复核线索保留；公开判断只采用原文标题、摘录和来源链接。
+原文披露收入增长、使用量和客户样例，但未披露 ARR 绝对值、客户合同金额或续约指标。

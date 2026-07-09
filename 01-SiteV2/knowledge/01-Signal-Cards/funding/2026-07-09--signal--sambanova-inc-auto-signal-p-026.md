@@ -4,13 +4,13 @@ type: signal_card
 signal_type: funding
 title: "SambaNova Inc. 获得 $11B 融资"
 date: 2026-07-09
-status: published
+status: duplicate_supporting
 source_title: "Inference chip startup SambaNova valued at $11B in $1B funding round - SiliconANGLE"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
 created_at: 2026-07-09T04:02:05.832Z
-updated_at: 2026-07-09T04:02:05.832Z
+updated_at: "2026-07-09T13:38:00+08:00"
 
 raw_refs: ["R-026"]
 pool_refs: ["P-026"]
@@ -62,6 +62,8 @@ frontend:
   displayTitle: "SambaNova Inc. 获得 $11B 融资"
   sourceLinks:
     - "https://siliconangle.com/2026/07/08/inference-chip-startup-sambanova-valued-11b-1b-funding-round/"
+duplicate_of: "SIG-20260709-A01"
+duplicate_reason: "Same SambaNova $1B Series F / $11B valuation event as TechCrunch primary card; keep SiliconANGLE as supporting evidence, not a second public funding Card."
 ---
 
 # SambaNova Inc. 获得 $11B 融资

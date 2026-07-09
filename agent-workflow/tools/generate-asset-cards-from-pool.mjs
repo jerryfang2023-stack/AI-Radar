@@ -2017,6 +2017,7 @@ function compactLaunchTitle(company = "", title = "") {
 function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount, translatedTitle = "" }) {
   const translated = translatedTitle || sourceTitleDisplayTitle(sourceEventTitle);
   if (translated) return translated;
+  if (sourceTitleNeedsChineseTranslation(sourceEventTitle)) return "";
   if (type === "funding" && company && amount && !hasTextContamination(company)) {
     const round = chineseRound(sourceEventTitle);
     return `${company} 获得 ${amount}${round ? ` ${round}` : ""} 融资`;
@@ -2143,7 +2144,7 @@ function autoSignalSpec(poolRef, section, index) {
   if (strategicInvestment && !titleHasFundingAmountOrRound(sourceEventTitle)) amount = "";
   const translatedTitle = rawTitleZhFromSection(section) || sourceTitleDisplayTitle(sourceTitle) || sourceTitleDisplayTitle(sourceEventTitle);
   let title = publicTitleForAutoSignal({ type, company, sourceEventTitle, amount, translatedTitle });
-  if (!title && type === "funding" && strategicInvestment) {
+  if (!title && type === "funding" && strategicInvestment && !sourceTitleNeedsChineseTranslation(sourceEventTitle)) {
     title = `${company} 获得战略投资`;
   }
   if (!title && (allowsObservationSummaryEvidence(section) || summaryOperatorMaterial)) {

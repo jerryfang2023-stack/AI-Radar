@@ -375,6 +375,7 @@ function confirmedFundingSourceTitle(title = "") {
 function fundingFallbackTitleBackedByOriginalSource(card = {}, title = "") {
   const cleanTitle = cleanOriginalTitle(title);
   if (card.category !== "funding" || !cleanTitle) return false;
+  if ([card.sourceTitle, card.originalTitle].some((value) => sourceTitleNeedsChineseTranslation(value))) return false;
   if (publicTextLooksGarbled(cleanTitle) || titleLooksLikeGeneratedTemplate(cleanTitle)) return false;
   if (/来源标题|原始来源|公开材料显示|商业信号/iu.test(cleanTitle)) return false;
   if (/押注|资金流向|业务信号|基础设施能力|可用于观察|值得关注/u.test(cleanTitle)) return false;
@@ -433,6 +434,9 @@ function checkPublicCardContract(card = {}, label = "public card") {
   }
   if (isActiveDateItem && publicTitleIsGeneric(card.title)) {
     issues.push(`${label} ${id} exposes generic generated title: ${card.title}`);
+  }
+  if (isActiveDateItem && !titleBackedByOriginalSource(card)) {
+    issues.push(`${label} ${id} public title is not backed by original source title translation: ${card.title}`);
   }
 }
 
