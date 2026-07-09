@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Sam Altman"
-opinion_count: 21
-latest_date: 2026-07-05
+opinion_count: 24
+latest_date: 2026-07-09
 ---
 
 # Sam Altman 观点时间线
-共 21 条观点，按人物 + 日期文件聚合。
+共 24 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-09](./2026-07-09.md)
 - [2026-07-05](./2026-07-05.md)
 - [2026-07-02](./2026-07-02.md)
 - [2026-06-26](./2026-06-26.md)
