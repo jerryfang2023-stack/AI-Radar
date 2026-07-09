@@ -31,7 +31,6 @@ This file is the reading router. Do not use old closeout files as current truth.
 | `context/09-v3-3-current-action-index.md` | SITE-V3.4.5 current action registry | Action dispatch, current automation recovery, replacing historical action lists |
 | `context/10-v3-3-experience-automation.md` | Action logging and retrospective automation | Record meaningful actions, summarize mistakes and lessons |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes daily supervision instructions | Daily monitoring supervision, Codex repair handoff |
-| `context/08-card-asset-qc-checklist.md` | Card asset QC checklist | Before Card acceptance or frontstage sync |
 
 ## Current Inboxes
 

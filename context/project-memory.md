@@ -46,7 +46,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 
 - GitHub Actions schedule can be delayed or skipped during busy periods; Hermes must use staged checks instead of waiting blindly.
 - Business Signals should not fail only because one source lane failed; source artifacts should isolate source-lane failures behind unified quality gates.
-- Business Signals can regress when Core Pool depth is too small, source titles are untranslated, or duplicate candidates crowd out Top 10.
+- Business Signals can regress when cardable Raw / Pool supply is too small, source titles are untranslated before Card promotion, or duplicate candidates crowd out qualified Cards.
 - First-Line Viewpoints must keep morning RSS collection and afternoon follow-builders skill publishing separate.
 - Community Intelligence depends on local logged-in collection; GitHub can publish already collected data but cannot replace the logged-in local collector.
 - Weekly report content should be sourced from `01-SiteV2/content/08-report/` before site generation.

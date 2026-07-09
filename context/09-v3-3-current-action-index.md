@@ -34,7 +34,7 @@ Only these actions are `current` for SITE-V3.4.5:
 
 | Action | Status | Current Role |
 |---|---|---|
-| Daily business-signal production | `current` | Produce qualified business-signal Card assets and publish the day's 10 most important frontstage signals. |
+| Daily business-signal production | `current` | Produce qualified business-signal Card assets and publish the active-date unified frontstage Card set. |
 | AI Hardware lens | `current` | Surface hardware funding, scenario service, and trend innovation signals as separate `aiHardwareSignals`; it does not create a fourth Card type or bypass formal Card gates. |
 | Enterprise AI / FDE lens | `current` | Independent FDE lens skill surfaces consulting-relevant implementation signals, uses the `EAI-V1.2.0-raw-card-ingestion-boundary` for title/fact assets, requires demand / service / result details, syncs `content/09-fde`, and does not create a fourth Card type. |
 | Column monitor skills | `current` | Run and improve independent Business Signals, First-Line Viewpoints, and Community Intelligence monitoring skills. |
@@ -78,7 +78,7 @@ Manual/archive material can explain why a current rule exists. It cannot overrid
 
 Purpose:
 
-- Produce qualified business-signal Card assets, then publish the day's 10 most important business signals for the Business Signals frontstage.
+- Produce qualified business-signal Card assets, then publish every active-date business signal that passes raw-to-card cardability for the Business Signals frontstage.
 
 Primary route:
 
@@ -180,7 +180,7 @@ Outputs:
 
 Boundaries:
 
-- Do not use near-duplicate articles to inflate daily Top 10.
+- Do not use near-duplicate articles to inflate the active-date public Card set.
 - Do not split one company action into multiple Cards unless the source-backed business actions are clearly different.
 
 ### 5. Relationship Graph Build
@@ -372,7 +372,7 @@ Outputs:
 
 Boundaries:
 
-- Business Signals keeps daily Top 10 as the primary view.
+- Business Signals keeps one active-date unified Card set as the primary view.
 - Reports Center maps follow the Business Signals Card chain. Report pages can update through report-center page work.
 - First-Line Viewpoints keeps the same topbar height and structure.
 - First-Line Viewpoints data must be produced and gated by its independent workflow, not by the Business Signals PR.

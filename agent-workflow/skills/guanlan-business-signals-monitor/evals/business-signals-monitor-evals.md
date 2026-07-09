@@ -102,7 +102,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when Raw ingestion detects an English source title, only checks the translation DB, records `missing_translation_db_entry`, and continues without attempting generation.
     - Fail when a confirmed funding event with an English original title can publish by falling back to a generated `company + amount + round` title such as `X 获得 $Y 融资`.
     - Pass when public facts come from Raw / Card extraction and template filler is repaired in the Card asset or generator.
-    - Fail when the unified Business frontstage gate blocks on generic source subjects, untranslated display titles, navigation fragments, weak fact support, or missing customer / ROI / before-after details after Raw / Pool / Card gates already passed.
+    - Fail when the frontstage selector silently hides Cards or rewrites titles on generic source subjects, untranslated display titles, navigation fragments, weak fact support, or missing customer / ROI / before-after details after Raw / Pool / Card gates already passed. Missing title/fact ingestion fields should instead fail the unified pre-publication Business gate and route to Raw/Card repair.
 
 22. `enterprise_ai_fde_lens_precision`
     - Pass when `enterpriseAiTransformation` prioritizes source-backed FDE / customer-embedded delivery / production deployment / workflow rollout / procurement / pilot / technical-scoping evidence over broad governance or geopolitical AI-access stories.

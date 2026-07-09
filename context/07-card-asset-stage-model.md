@@ -20,7 +20,7 @@ Current daily production separates:
 - Raw source material;
 - Pool evidence;
 - qualified Signal Card assets;
-- active-date frontstage Top10 selection;
+- active-date unified frontstage Card set;
 - relationship graph input;
 - trend candidates.
 

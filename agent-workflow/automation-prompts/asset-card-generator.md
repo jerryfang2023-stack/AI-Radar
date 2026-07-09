@@ -46,7 +46,7 @@ Include both large-company signals and smaller / vertical-market signals. Do not
 
 ## Evidence Rules
 
-Use only eligible Pool items with source-backed evidence:
+Use only eligible Raw / Pool items with source-backed evidence:
 
 - original source URL;
 - readable body text;
