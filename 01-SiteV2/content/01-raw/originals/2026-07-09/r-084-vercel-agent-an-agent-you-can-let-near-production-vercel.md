@@ -1,0 +1,289 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-084
+title: "Vercel Agent: An agent you can let near production - Vercel"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://vercel.com/blog/vercel-agent"
+canonical_url: "https://vercel.com/blog/vercel-agent"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-09T03:05:45.278Z
+language: mixed
+full_text_hash: f258c652d0c40c78
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-09/r-084-vercel-agent-an-agent-you-can-let-near-production-vercel.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-09/r-084-vercel-agent-an-agent-you-can-let-near-production-vercel.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":7724,"paragraph_count":45,"sentence_count":84,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 7724
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f258c652d0c40c78","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 1eb4e1f7c68f870e
+content_hash: f258c652d0c40c78
+semantic_hash: c6f205d231052280
+duplicate_of: ""
+first_seen_at: "2026-07-09T03:05:45.278Z"
+last_seen_at: 2026-07-09T03:05:45.278Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","GitHub"],"products":["Agent","agent","agents"],"people":[],"industries":["开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["2026","07","08","06","00","8","11","500"],"quotes":[]}
+evidence_seed: {"company_actions":["Today we're expanding Vercel Agent .","It started by triaging alerts and reviewing your pull requests.","Now it has a home in your dashboard, where it can investigate production, answer questions about your projects, and take action once you approve it."],"case_details":["# Vercel Agent: An agent you can let near production - Vercel Author: Amelia Charles Published: 2026-07-08T06:00:00+00:00 Source: vercel.com (vercel.com) Language: en ## Story # Vercel Agent: An agent you can let near production Published: July 8, 2026 | Authors: Amelia Charles | Category: Compa... / query=AI agent pilot customer production rollout case study 2026 / intent=find_original_source / path=official_original","It autonomously investigates your logs, metrics, and deployments, finds the root cause, and proposes a fix, before you've opened your laptop."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"# Vercel Agent: An agent you can let near production - Vercel Author: Amelia Charles Published: 2026-07-08T06:00:00+00:00 Source: vercel.com (vercel.com) Language: en ## Story # Vercel Agent: An agent you can let near production Published: July 8, 2026 | Authors: Amelia Charles | Category: Compa... / query=AI agent pilot customer production rollout case study 2026 / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Today we're expanding Vercel Agent .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It started by triaging alerts and reviewing your pull requests.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Now it has a home in your dashboard, where it can investigate production, answer questions about your projects, and take action once you approve it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Because Vercel Agent is built into the platform that deploys and runs your app, when something changes in production, it's your first responder.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"It autonomously investigates your logs, metrics, and deployments, finds the root cause, and proposes a fix, before you've opened your laptop.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-09T03:05:45.278Z
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Vercel Agent: An agent you can let near production - Vercel
+
+## clean_text
+
+Today we're expanding Vercel Agent . It started by triaging alerts and reviewing your pull requests. Now it has a home in your dashboard, where it can investigate production, answer questions about your projects, and take action once you approve it.
+Because Vercel Agent is built into the platform that deploys and runs your app, when something changes in production, it's your first responder. It autonomously investigates your logs, metrics, and deployments, finds the root cause, and proposes a fix, before you've opened your laptop.
+Vercel Agent works under its own identity and is read-only by default. You can reach it through the Vercel Dashboard, GitHub, and the CLI.
+Copy link to heading What Vercel Agent does for you
+We've been running Vercel Agent on our production deployments for months. This is what a typical investigation looks like.
+A bad deploy ships at 11pm and the checkout endpoint starts throwing 500s. By the time the on-call engineer logs in, Vercel Agent has already traced the errors to the deploy that shipped four minutes earlier, and recommends an instant rollback. The engineer approves the plan. With permission, Vercel Agent rolls back to the previous production deployment and begins working on a PR to fix the endpoint.
+The time from alert to mitigated: less than three minutes.
+Copy link to heading What you can do with Vercel Agent
+You can also direct Vercel Agent yourself. Hand it a task and it does the legwork, then either answers your question or hands you a fix to approve. It never changes production on its own. For example:
+Review a pull request. Tell it to look at a PR and it flags performance regressions and risky changes that a passing CI run won’t show.
+Trace a cost increase. Ask why your bill jumped and it finds the culprit, like a code change that server-renders a page on every request instead of caching. With approval, it writes the fix and opens a PR.
+Fix a broken build. Point Vercel Agent at a failed deployment and it reads the logs, finds the failing config, asks permission to update it, and tests the build in a sandbox.
+Check if you're clear to ship. Ask about a feature flag and it reads the code and live metrics, then tells you whether it's safe to roll out.
+Copy link to heading A new security model for agents in production
+An agent that can fix your app can also break it. So for any agent you let near production, the first question is: how is it safe to let it deploy, change your config, or touch your data? The answer, for most agents today, is that it isn't.
+That's because they inherit your full permissions. One bad prompt from you or a confused sub-agent has the same blast radius as you. The choice has been read-only or standing access, careful-but-limited or capable-but-dangerous.
+Vercel Agent implements a new permissions model, built on three things: who the agent is, what it's allowed to do, and where its code can run.
+Copy link to heading Vercel Agent has its own identity
+Most agents act as you. Connect one, and it acts with your identity and your access for the whole session. There's no line between what the agent can do and what you can do.
+Vercel Agent runs as its own principal, vercel-agent . This matters for two reasons:
+Attribution: The agent's actions are always distinguishable from yours. Every change records who asked for it, who approved it, and that Vercel Agent carried it out. Nothing it does is untraceable.
+Authority: A separate identity doesn't mean separate power. The agent doesn't inherit your access; it gets only what plan approval explicitly grants, and never more than the person directing it already has.
+Copy link to heading The plan is the permission
+Integrating agents into your SDLC usually starts the same way, by granting them broad access up front, more than they need and for longer than they need it. But anyone who can prompt the agent can reach whatever that access touches. The permissions you grant are the exposure you accept.
+Vercel Agent is read-only by default. To do something more, like rolling back a deploy, changing a config, or clearing a cache, it proposes a plan and requests access scoped specifically to that plan. You approve it, the agent does the work, then drops back to read-only as soon as the plan is completed.
+When you approve a plan, the agent gets a short-lived capability for exactly the tasks it named, and nothing else. Every call it makes has to pass three checks: that capability, the token's scope, and your team's existing permissions. It runs only where all three allow it, and those checks live in the platform, so they hold no matter what the model does.
+We call this the plan-to-permission prompt model. It's least privilege, by design. Even if something goes wrong, Vercel Agent can only act inside the plan you approved. It's an agent capable enough to fix production, and contained enough to actually let it.
+Copy link to heading Generated code runs in a sandbox
+The plan-to-permission prompt model controls what the agent is allowed to do. But any agent that writes code faces a second problem: there’s no way to know the code works until you run it.
+The code Vercel Agent generates runs in Vercel Sandbox , an ephemeral Firecracker microVM. Inside the sandbox, that code is isolated from your live systems and the host environment.
+The sandbox is a real copy of your project, so the agent runs generated code against your actual build, tests, and linters, and only surfaces what passes. Say the agent needs to fix a failing config. It writes the change, runs it in the sandbox to confirm it passes, and surfaces it in a PR.
+The agent can write and run code freely, and still can't put anything broken in front of you or into production.
+Copy link to heading Anti-fragile infrastructure
+The agent era will be defined by two ceilings. One is what the model can do; the other is how much of that you'll let it do. As models improve, the first matters less and the second is what counts. It all comes down to trust.
+A better model is wrong less frequently, but it is still non-deterministic, and non-deterministic systems fail non-deterministically. A safety story can’t rest on an agent getting it right every time. The trust has to live in the system, and the system is judged by what a mistake costs.
+We have spent years driving that number down. Immutable deployments mean every deploy is preserved and a bad one is a rollback away. We didn’t build that for agents initially, but it’s exactly the guardrail an autonomous system needs.
+When safety is built into the infrastructure itself, agent mistakes are contained and human mistakes are less costly.
+This is what we mean by anti-fragile infrastructure. You can give an autonomous system real power without betting on it being right, because the foundation holds when it's wrong. Power stops requiring trust.
+The agent does the work, you stay in control of what reaches production, and when something goes wrong, by the agent or by you, you can take it back. That's the ground the agent era needs, and with Vercel, you're already standing on it.
+Copy link to heading What’s next
+Today, Vercel Agent can investigate anomalies, open PRs, and answer questions about your apps and agents in production. Soon, it will delegate to specialists on demand, like deep security review across your codebase, or design and UX review of your frontend.
+Copy link to heading Get started
+Vercel Agent is rolling out gradually to teams on Pro and Enterprise. Request access , or enable it in the "Agent" section of your dashboard sidebar once it's available to your team.
+Explore Vercel Agent
+Learn what Vercel Agent does, and how to set up Code Review, Investigation, Chat, Installation, and more.
+Read the guide
+
+## full_text
+
+Today we're expanding Vercel Agent . It started by triaging alerts and reviewing your pull requests. Now it has a home in your dashboard, where it can investigate production, answer questions about your projects, and take action once you approve it.
+Because Vercel Agent is built into the platform that deploys and runs your app, when something changes in production, it's your first responder. It autonomously investigates your logs, metrics, and deployments, finds the root cause, and proposes a fix, before you've opened your laptop.
+Vercel Agent works under its own identity and is read-only by default. You can reach it through the Vercel Dashboard, GitHub, and the CLI.
+Copy link to heading What Vercel Agent does for you
+We've been running Vercel Agent on our production deployments for months. This is what a typical investigation looks like.
+A bad deploy ships at 11pm and the checkout endpoint starts throwing 500s. By the time the on-call engineer logs in, Vercel Agent has already traced the errors to the deploy that shipped four minutes earlier, and recommends an instant rollback. The engineer approves the plan. With permission, Vercel Agent rolls back to the previous production deployment and begins working on a PR to fix the endpoint.
+The time from alert to mitigated: less than three minutes.
+Copy link to heading What you can do with Vercel Agent
+You can also direct Vercel Agent yourself. Hand it a task and it does the legwork, then either answers your question or hands you a fix to approve. It never changes production on its own. For example:
+Review a pull request. Tell it to look at a PR and it flags performance regressions and risky changes that a passing CI run won’t show.
+Trace a cost increase. Ask why your bill jumped and it finds the culprit, like a code change that server-renders a page on every request instead of caching. With approval, it writes the fix and opens a PR.
+Fix a broken build. Point Vercel Agent at a failed deployment and it reads the logs, finds the failing config, asks permission to update it, and tests the build in a sandbox.
+Check if you're clear to ship. Ask about a feature flag and it reads the code and live metrics, then tells you whether it's safe to roll out.
+Copy link to heading A new security model for agents in production
+An agent that can fix your app can also break it. So for any agent you let near production, the first question is: how is it safe to let it deploy, change your config, or touch your data? The answer, for most agents today, is that it isn't.
+That's because they inherit your full permissions. One bad prompt from you or a confused sub-agent has the same blast radius as you. The choice has been read-only or standing access, careful-but-limited or capable-but-dangerous.
+Vercel Agent implements a new permissions model, built on three things: who the agent is, what it's allowed to do, and where its code can run.
+Copy link to heading Vercel Agent has its own identity
+Most agents act as you. Connect one, and it acts with your identity and your access for the whole session. There's no line between what the agent can do and what you can do.
+Vercel Agent runs as its own principal, vercel-agent . This matters for two reasons:
+Attribution: The agent's actions are always distinguishable from yours. Every change records who asked for it, who approved it, and that Vercel Agent carried it out. Nothing it does is untraceable.
+Authority: A separate identity doesn't mean separate power. The agent doesn't inherit your access; it gets only what plan approval explicitly grants, and never more than the person directing it already has.
+Copy link to heading The plan is the permission
+Integrating agents into your SDLC usually starts the same way, by granting them broad access up front, more than they need and for longer than they need it. But anyone who can prompt the agent can reach whatever that access touches. The permissions you grant are the exposure you accept.
+Vercel Agent is read-only by default. To do something more, like rolling back a deploy, changing a config, or clearing a cache, it proposes a plan and requests access scoped specifically to that plan. You approve it, the agent does the work, then drops back to read-only as soon as the plan is completed.
+When you approve a plan, the agent gets a short-lived capability for exactly the tasks it named, and nothing else. Every call it makes has to pass three checks: that capability, the token's scope, and your team's existing permissions. It runs only where all three allow it, and those checks live in the platform, so they hold no matter what the model does.
+We call this the plan-to-permission prompt model. It's least privilege, by design. Even if something goes wrong, Vercel Agent can only act inside the plan you approved. It's an agent capable enough to fix production, and contained enough to actually let it.
+Copy link to heading Generated code runs in a sandbox
+The plan-to-permission prompt model controls what the agent is allowed to do. But any agent that writes code faces a second problem: there’s no way to know the code works until you run it.
+The code Vercel Agent generates runs in Vercel Sandbox , an ephemeral Firecracker microVM. Inside the sandbox, that code is isolated from your live systems and the host environment.
+The sandbox is a real copy of your project, so the agent runs generated code against your actual build, tests, and linters, and only surfaces what passes. Say the agent needs to fix a failing config. It writes the change, runs it in the sandbox to confirm it passes, and surfaces it in a PR.
+The agent can write and run code freely, and still can't put anything broken in front of you or into production.
+Copy link to heading Anti-fragile infrastructure
+The agent era will be defined by two ceilings. One is what the model can do; the other is how much of that you'll let it do. As models improve, the first matters less and the second is what counts. It all comes down to trust.
+A better model is wrong less frequently, but it is still non-deterministic, and non-deterministic systems fail non-deterministically. A safety story can’t rest on an agent getting it right every time. The trust has to live in the system, and the system is judged by what a mistake costs.
+We have spent years driving that number down. Immutable deployments mean every deploy is preserved and a bad one is a rollback away. We didn’t build that for agents initially, but it’s exactly the guardrail an autonomous system needs.
+When safety is built into the infrastructure itself, agent mistakes are contained and human mistakes are less costly.
+This is what we mean by anti-fragile infrastructure. You can give an autonomous system real power without betting on it being right, because the foundation holds when it's wrong. Power stops requiring trust.
+The agent does the work, you stay in control of what reaches production, and when something goes wrong, by the agent or by you, you can take it back. That's the ground the agent era needs, and with Vercel, you're already standing on it.
+Copy link to heading What’s next
+Today, Vercel Agent can investigate anomalies, open PRs, and answer questions about your apps and agents in production. Soon, it will delegate to specialists on demand, like deep security review across your codebase, or design and UX review of your frontend.
+Copy link to heading Get started
+Vercel Agent is rolling out gradually to teams on Pro and Enterprise. Request access , or enable it in the "Agent" section of your dashboard sidebar once it's available to your team.
+Explore Vercel Agent
+Learn what Vercel Agent does, and how to set up Code Review, Investigation, Chat, Installation, and more.
+Read the guide
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 97
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":7724,"paragraph_count":45,"sentence_count":84,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   # Vercel Agent: An agent you can let near production - Vercel Author: Amelia Charles Published: 2026-07-08T06:00:00+00:00 Source: vercel.com (vercel.com) Language: en ## Story # Vercel Agent: An agent you can let near production Published: July 8, 2026 | Authors: Amelia Charles | Category: Compa... / query=AI agent pilot customer production rollout case study 2026 / intent=find_original_source / path=official_original
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Today we're expanding Vercel Agent .
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   It started by triaging alerts and reviewing your pull requests.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Now it has a home in your dashboard, where it can investigate production, answer questions about your projects, and take action once you approve it.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Because Vercel Agent is built into the platform that deploys and runs your app, when something changes in production, it's your first responder.
+
+6. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   It autonomously investigates your logs, metrics, and deployments, finds the root cause, and proposes a fix, before you've opened your laptop.
+
+## business_elements
+
+- companies: keyword search, Anysearch, GitHub
+- products: Agent, agent, agents
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 2026, 07, 08, 06, 00, 8, 11, 500
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Today we're expanding Vercel Agent . / It started by triaging alerts and reviewing your pull requests. / Now it has a home in your dashboard, where it can investigate production, answer questions about your projects, and take action once you approve it.
+- case_details: # Vercel Agent: An agent you can let near production - Vercel Author: Amelia Charles Published: 2026-07-08T06:00:00+00:00 Source: vercel.com (vercel.com) Language: en ## Story # Vercel Agent: An agent you can let near production Published: July 8, 2026 | Authors: Amelia Charles | Category: Compa... / query=AI agent pilot customer production rollout case study 2026 / intent=find_original_source / path=official_original / It autonomously investigates your logs, metrics, and deployments, finds the root cause, and proposes a fix, before you've opened your laptop.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+# Vercel Agent: An agent you can let near production - Vercel Author: Amelia Charles Published: 2026-07-08T06:00:00+00:00 Source: vercel.com (vercel.com) Language: en ## Story # Vercel Agent: An agent you can let near production Published: July 8, 2026 | Authors: Amelia Charles | Category: Compa... / query=AI agent pilot customer production rollout case study 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -94,7 +94,7 @@ const poolDir = path.join(contentRoot, "02-pool");
 const businessSignalsDir = path.join(contentRoot, "04-business-signals");
 const keywordMonitoringPath = path.join(contentRoot, "11-databases", "keyword-monitoring-v2.json");
 const sourceRegistryPath = path.join(contentRoot, "11-databases", "source-registry-v2.json");
-const monitorQualityGatePath = path.join(contentRoot, "11-databases", "monitor-quality-gate-v2.json");
+const monitorQualityGatePath = path.join(contentRoot, "11-databases", "business-signals-gate-v3.json");
 const sourceTitleTranslationsPath = path.join(contentRoot, "11-databases", "source-title-translations.json");
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
@@ -170,6 +170,7 @@ const sourceRegistry = readJson(sourceRegistryPath, { sources: [] });
 const monitorQualityGate = readJson(monitorQualityGatePath, { hard_gates: {}, layered_search_requirements: {} });
 const sourceTitleTranslations = loadSourceTitleTranslations();
 const monitorHardGates = monitorQualityGate.hard_gates || {};
+const monitorDiagnosticTargets = monitorQualityGate.diagnostic_targets || {};
 const layeredSearchRequirements = monitorQualityGate.layered_search_requirements || {};
 const themeGroups = Array.isArray(keywordMonitoring.theme_groups) ? keywordMonitoring.theme_groups : [];
 const themeOrder = themeGroups.map((group) => group.id);
@@ -211,11 +212,11 @@ function parseSourceFailureNotes(items = []) {
     .filter(Boolean);
 }
 
-const poolMinTarget = numericConfig(monitorHardGates.pool_count_min, 75);
-const routedPoolMinTarget = numericConfig(monitorHardGates.routed_pool_count_min, 60);
-const corePoolMinTarget = numericConfig(monitorHardGates.core_pool_min, 30);
-const coreNonLargeVendorMinTarget = numericConfig(monitorHardGates.core_non_large_vendor_min, 20);
-const coreLargeVendorMaxTarget = numericConfig(monitorHardGates.core_large_vendor_max, 10);
+const poolMinTarget = numericConfig(monitorDiagnosticTargets.pool_count_target, numericConfig(monitorHardGates.pool_count_min, 75));
+const routedPoolMinTarget = numericConfig(monitorDiagnosticTargets.routed_pool_count_target, numericConfig(monitorHardGates.routed_pool_count_min, 60));
+const corePoolMinTarget = numericConfig(monitorDiagnosticTargets.core_pool_target, numericConfig(monitorHardGates.core_pool_min, 30));
+const coreNonLargeVendorMinTarget = numericConfig(monitorDiagnosticTargets.core_non_large_vendor_target, numericConfig(monitorHardGates.core_non_large_vendor_min, 20));
+const coreLargeVendorMaxTarget = numericConfig(monitorDiagnosticTargets.core_large_vendor_max, numericConfig(monitorHardGates.core_large_vendor_max, 10));
 const corePoolMaxPerImportanceType = numericConfig(layeredSearchRequirements.core_pool_max_per_importance_type, 8);
 const poolSelectionBufferTarget = numericConfig(layeredSearchRequirements.pool_selection_buffer, 20);
 

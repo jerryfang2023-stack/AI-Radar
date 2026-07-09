@@ -9,8 +9,8 @@ source_title: "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMI
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-08T06:10:03.935Z
-updated_at: 2026-07-08T06:10:03.935Z
+created_at: 2026-07-09T04:04:06.912Z
+updated_at: 2026-07-09T04:04:06.912Z
 
 raw_refs: ["R-020"]
 pool_refs: ["P-020"]

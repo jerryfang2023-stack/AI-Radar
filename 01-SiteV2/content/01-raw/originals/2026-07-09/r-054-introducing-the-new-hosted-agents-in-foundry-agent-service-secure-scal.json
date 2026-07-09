@@ -1,0 +1,299 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-054",
+  "title": "Introducing the new hosted agents in Foundry Agent Service: secure, scalable compute built for agents | Microsoft Foundry Blog",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "missing_translation_db_entry",
+  "original_url": "https://devblogs.microsoft.com/foundry/introducing-the-new-hosted-agents-in-foundry-agent-service-secure-scalable-compute-built-for-agents/",
+  "canonical_url": "https://devblogs.microsoft.com/foundry/introducing-the-new-hosted-agents-in-foundry-agent-service-secure-scalable-compute-built-for-agents",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "official",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "ai_transformation",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-09T03:05:45.104Z",
+  "language": "mixed",
+  "full_text": "Takuto\njeffhollan\nLakshmi\nAgents are already transforming how developers solve problems. Whether it’s a coding agent that refactors your repo overnight, a research agent that synthesizes hundreds of documents into a brief, or an ops agent that monitors and remediates infrastructure — the pattern is clear. Developers are building agents that don’t just answer questions, they go do things.\nAgents of today don’t just execute from a list of tools. They access the underlying file system, write and execute code, and persist files and memories for long running and complex tasks.\nToday, it is easy to build agents locally. But how do you take that same power and patterns, and deploy it across an enterprise? How do you make it serve thousands of customer conversations securely? How do you give it an identity, govern its access, and observe what it’s doing at scale?\nThat’s what Microsoft Foundry is releasing today. Today we’re announcing hosted agents in Foundry Agent Service , now in public preview. This brings agent-optimized compute and services designed for production-grade enterprise agents. We first previewed hosted agents last year at Microsoft Ignite, but this refresh is a fundamentally different experience: secure per-session sandboxes with filesystem persistence, integrated identity, and scale-to-zero economics.\nWhat we’re shipping\nHosted agents gives every single agent session its own dedicated, isolated sandbox with a persistent file system. Not process isolation. Not a code execution-only sandbox. Production-proven hypervisor isolation, at cloud scale.\nCore Capabilities:\nPredictable cold starts — spin up agent sessions and harnesses in your custom environment virtually instantly\nScale to zero — pay nothing while your agent is idle, with an agent that will scale down on its own during inactivity\nResume with filesystem intact — files, disk state, and session identity persist across scale-to-zero events. Your agent restarts with its full working directory exactly where it left off\nPer-session isolation is automatic — Every single agent session its own VM-isolated sandbox with persistent session state. Use isolation keys to easily manage and namespace your end users’ sessions\nBYO VNet Support – drive your agents’ outbound traffic via your VNet\nProduction-ready agent endpoints – built-in agent versioning with stable endpoints for easy integration, weighted rollouts across versions\nMultiple protocols out of the box – OpenResponses protocol support with automatic mapping to/from Activity Protocol for one-click publish to Microsoft 365. Flexible Invocations protocol for custom application integrations, AG-UI support\nA platform built for agents\nThe problem with traditional compute is that it wasn’t designed for this pattern. Containers, web apps, serverless functions – these were built for web services and APIs where multiple users share the same instance. That’s fine for web apps, but doesn’t work for agents.\nWhen Customer A and Customer B are both calling the same agent — and that agent is writing files, executing code, and accessing credentials on a shared instance — you have a security and isolation nightmare. Agent harnesses need to read and write state. They execute arbitrary code. They hold sensitive context. Sharing a container across sessions isn’t just inefficient, it’s unsafe.\nThe hard part is no longer writing the agent. The hard part is making it enterprise-ready at scale — with real isolation, real identity, and real governance. That’s our focus with Microsoft Foundry.\nTraditional Compute\nHosted Agents\nIsolation\nMultiple sessions share a container\nEvery session gets a dedicated sandbox\nCold starts\nSeconds to minutes (high variance)\nSeconds (low variance, predictable)\nIdle cost\nAlways-on billing or slow scale-from-zero\nScale to zero with filesystem-preserving resume\nState persistence\nYou build it (databases, external storage)\nBuilt in — files and disk state survive scale-to-zero\nIdentity\nShared service account\nPer-agent Entra Agent ID + per-user context via Toolbox OBO (interactive scenarios)\nObservability\nYou build it\nBuilt in (agent, session, fleet)\nBring any harness, any framework, any environment\nRather than locking you into a specific harness or runtime, Foundry lets you bring whatever works best for your agent. Use LangGraph, Microsoft Agent Framework, Claude Agent SDK, OpenAI Agents SDK, the GitHub Copilot SDK — any framework you want. Define the optimal environment for your agent with a Dockerfile, so it has exactly the tools and dependencies it needs to get the job done. Deploy in one command (azd deploy). Microsoft Foundry will take care of running your agent at scale.\nThis flexibility is the point. Unlike platforms that force one model and one harness, Foundry is multi-model and multi-harness by design. Run models from OpenAI, Anthropic, Meta, Mistral, and more. Bring any orchestration framework. No lock-in.\nMore than compute — a complete agent platform\nHosted agents aren’t just infrastructure. They’re integrated with the full Microsoft Foundry platform, including announcements we’re making alongside this refresh:\nToolbox (public preview) — a unified way to configure and manage tools across any framework – using progressive disclosure to preserve context and tokens. Build once, connect any MCP client to the same endpoint. Built-in auth handling, OAuth identity passthrough, and observability for every tool call.\nMemory (preview) — managed long-term memory built directly into Foundry Agent Service. Agents remember context across sessions — no external databases to provision. Now natively integrated with Microsoft Agent Framework and LangGraph.\nMicrosoft Agent Framework v1.0 — the stable, production-ready agent framework that unifies the foundations of Semantic Kernel and AutoGen. Build locally, deploy to hosted agents seamlessly.\nObservability — end-to-end tracing based on OpenTelemetry, AI Red Teaming Agent for adversarial testing, and continuous evaluation — all in one platform.\nAnd the enterprise capabilities that make this production-ready:\nIdentity : Every hosted agent gets its own Entra Agent ID, providing a dedicated, auditable identity for each agent. When agents are invoked through user-facing entry points (e.g., Teams or Microsoft 365), Toolbox supports OAuth 2.0 On-Behalf-Of (OBO) flows to propagate user context to downstream services. For autonomous or background workloads where no user token is present, agents authenticate using their Managed Identity.\nGovernance : DLP policies, Responsible AI guardrails, and with VNet integration\nContext : Agents connect to Work IQ (M365 data), Fabric IQ (business data), and Foundry IQ (curated knowledge and search). Helping you bring your enterprise context graph to any agent with ease.\nDistribution : Publish agents directly to Teams and M365 Copilot — where your users already work.\nThis is the combination that only Microsoft Foundry can offer: agent-optimized compute and services, integrated with thousands of tools, any model, any harness — all with secure sandboxing, persistence, and enterprise identity.\nWhat’s next\nThe foundation is in place: agent-optimized compute, secure sandboxes, filesystem persistence, enterprise identity, and deep platform integration. But we’re just getting started.\nYour meeting-prep agent shouldn’t start from scratch every Monday. The 10th briefing it writes should build on the previous 9 — already knowing which metrics your VP cares about, which format she prefers, which data sources matter. Context should compound automatically. We’re investing deeply in making agents self-optimizing and long-running — agents that persist state, accumulate context, and improve across every interaction, all in a secure environment that’s enterprise-ready. More to come here soon.\nWe’re working hard to get this preview into General Availability soon. And we’ll keep building the platform that makes every agent — regardless of model, framework, or harness — production-ready for the enterprise.\nGet Started\nStart building your own intelligent agents today with Foundry Agent Service\nQuickstart : azd deploy — deploy a hosted agent and see it run\nRead this blog for the end-to-end developer journey and the latest updates across Microsoft Foundry\nWatch the 12-minute Microsoft Mechanics episode\nJoin our live “Host your agents on Foundry” series to learn how to deploy production-ready AI agents using Microsoft Agent Framework or LangGraph and hosted agents.\nKeep the conversation going in GitHub and Discord !\n31\nCategory\nAgent Framework\nFoundry Agent Service\nMCP\nMicrosoft Foundry\nTopics\nFoundry Agent Service\nMicrosoft Foundry\nShare\nAuthor\nTakuto Higuchi\nSr Product Marketing Manager\nSenior Product Marketing Manager at Microsoft, leading product marketing and GTM strategy for Foundry's agentic platform — including Foundry Agent Service and Microsoft Agent Framework. He's passionate about bridging the gap between developer experience and enterprise-grade AI.\njeffhollan\nPartner Director of Product\nJeff Hollan is the Partner Director of Product for Microsoft Foundry agent service. His team is responsible for the platform to simplify how enterprises can go from experimentation to production for agents in Foundry.\nLakshmi Ramakrishnan\nPartner, Software Engineer\nLakshmi Ramakrishnan is a Partner Software Engineer in Microsoft’s CoreAI organization. His focus is on Foundry Agents where he designs scalable platform architectures for agent-based systems. He works on APIs, orchestration, identity, and improving developer experience for complex AI applications\n2 comments\nDiscussion is closed. Login to edit/delete existing comments.\nSort by :\nNewest\nNewest\nPopular\nOldest\nVery exciting news indeed.\nQuestion – Would hosted agent BYO network option support pulling docker images from customer’s azure container registry through private endpoint?\nSoon! Right now, docker image retrieval isn’t using vnet, we are working on it!\nRead next\nMay 12, 2026\nWhat’s new in Microsoft Foundry | April 2026\nNick Brady\nMay 12, 2026\nFoundry Local 1.1: Live Transcription, Embeddings, and Responses API\nsamkemp\nStay informed\nGet notified when new posts are published.\nFollow this blog\nAre you sure you wish to delete this\ncomment?\nOK\nCancel",
+  "clean_text": "Takuto\njeffhollan\nLakshmi\nAgents are already transforming how developers solve problems. Whether it’s a coding agent that refactors your repo overnight, a research agent that synthesizes hundreds of documents into a brief, or an ops agent that monitors and remediates infrastructure — the pattern is clear. Developers are building agents that don’t just answer questions, they go do things.\nAgents of today don’t just execute from a list of tools. They access the underlying file system, write and execute code, and persist files and memories for long running and complex tasks.\nToday, it is easy to build agents locally. But how do you take that same power and patterns, and deploy it across an enterprise? How do you make it serve thousands of customer conversations securely? How do you give it an identity, govern its access, and observe what it’s doing at scale?\nThat’s what Microsoft Foundry is releasing today. Today we’re announcing hosted agents in Foundry Agent Service , now in public preview. This brings agent-optimized compute and services designed for production-grade enterprise agents. We first previewed hosted agents last year at Microsoft Ignite, but this refresh is a fundamentally different experience: secure per-session sandboxes with filesystem persistence, integrated identity, and scale-to-zero economics.\nWhat we’re shipping\nHosted agents gives every single agent session its own dedicated, isolated sandbox with a persistent file system. Not process isolation. Not a code execution-only sandbox. Production-proven hypervisor isolation, at cloud scale.\nCore Capabilities:\nPredictable cold starts — spin up agent sessions and harnesses in your custom environment virtually instantly\nScale to zero — pay nothing while your agent is idle, with an agent that will scale down on its own during inactivity\nResume with filesystem intact — files, disk state, and session identity persist across scale-to-zero events. Your agent restarts with its full working directory exactly where it left off\nPer-session isolation is automatic — Every single agent session its own VM-isolated sandbox with persistent session state. Use isolation keys to easily manage and namespace your end users’ sessions\nBYO VNet Support – drive your agents’ outbound traffic via your VNet\nProduction-ready agent endpoints – built-in agent versioning with stable endpoints for easy integration, weighted rollouts across versions\nMultiple protocols out of the box – OpenResponses protocol support with automatic mapping to/from Activity Protocol for one-click publish to Microsoft 365. Flexible Invocations protocol for custom application integrations, AG-UI support\nA platform built for agents\nThe problem with traditional compute is that it wasn’t designed for this pattern. Containers, web apps, serverless functions – these were built for web services and APIs where multiple users share the same instance. That’s fine for web apps, but doesn’t work for agents.\nWhen Customer A and Customer B are both calling the same agent — and that agent is writing files, executing code, and accessing credentials on a shared instance — you have a security and isolation nightmare. Agent harnesses need to read and write state. They execute arbitrary code. They hold sensitive context. Sharing a container across sessions isn’t just inefficient, it’s unsafe.\nThe hard part is no longer writing the agent. The hard part is making it enterprise-ready at scale — with real isolation, real identity, and real governance. That’s our focus with Microsoft Foundry.\nTraditional Compute\nHosted Agents\nIsolation\nMultiple sessions share a container\nEvery session gets a dedicated sandbox\nCold starts\nSeconds to minutes (high variance)\nSeconds (low variance, predictable)\nIdle cost\nAlways-on billing or slow scale-from-zero\nScale to zero with filesystem-preserving resume\nState persistence\nYou build it (databases, external storage)\nBuilt in — files and disk state survive scale-to-zero\nIdentity\nShared service account\nPer-agent Entra Agent ID + per-user context via Toolbox OBO (interactive scenarios)\nObservability\nYou build it\nBuilt in (agent, session, fleet)\nBring any harness, any framework, any environment\nRather than locking you into a specific harness or runtime, Foundry lets you bring whatever works best for your agent. Use LangGraph, Microsoft Agent Framework, Claude Agent SDK, OpenAI Agents SDK, the GitHub Copilot SDK — any framework you want. Define the optimal environment for your agent with a Dockerfile, so it has exactly the tools and dependencies it needs to get the job done. Deploy in one command (azd deploy). Microsoft Foundry will take care of running your agent at scale.\nThis flexibility is the point. Unlike platforms that force one model and one harness, Foundry is multi-model and multi-harness by design. Run models from OpenAI, Anthropic, Meta, Mistral, and more. Bring any orchestration framework. No lock-in.\nMore than compute — a complete agent platform\nHosted agents aren’t just infrastructure. They’re integrated with the full Microsoft Foundry platform, including announcements we’re making alongside this refresh:\nToolbox (public preview) — a unified way to configure and manage tools across any framework – using progressive disclosure to preserve context and tokens. Build once, connect any MCP client to the same endpoint. Built-in auth handling, OAuth identity passthrough, and observability for every tool call.\nMemory (preview) — managed long-term memory built directly into Foundry Agent Service. Agents remember context across sessions — no external databases to provision. Now natively integrated with Microsoft Agent Framework and LangGraph.\nMicrosoft Agent Framework v1.0 — the stable, production-ready agent framework that unifies the foundations of Semantic Kernel and AutoGen. Build locally, deploy to hosted agents seamlessly.\nObservability — end-to-end tracing based on OpenTelemetry, AI Red Teaming Agent for adversarial testing, and continuous evaluation — all in one platform.\nAnd the enterprise capabilities that make this production-ready:\nIdentity : Every hosted agent gets its own Entra Agent ID, providing a dedicated, auditable identity for each agent. When agents are invoked through user-facing entry points (e.g., Teams or Microsoft 365), Toolbox supports OAuth 2.0 On-Behalf-Of (OBO) flows to propagate user context to downstream services. For autonomous or background workloads where no user token is present, agents authenticate using their Managed Identity.\nGovernance : DLP policies, Responsible AI guardrails, and with VNet integration\nContext : Agents connect to Work IQ (M365 data), Fabric IQ (business data), and Foundry IQ (curated knowledge and search). Helping you bring your enterprise context graph to any agent with ease.\nDistribution : Publish agents directly to Teams and M365 Copilot — where your users already work.\nThis is the combination that only Microsoft Foundry can offer: agent-optimized compute and services, integrated with thousands of tools, any model, any harness — all with secure sandboxing, persistence, and enterprise identity.\nWhat’s next\nThe foundation is in place: agent-optimized compute, secure sandboxes, filesystem persistence, enterprise identity, and deep platform integration. But we’re just getting started.\nYour meeting-prep agent shouldn’t start from scratch every Monday. The 10th briefing it writes should build on the previous 9 — already knowing which metrics your VP cares about, which format she prefers, which data sources matter. Context should compound automatically. We’re investing deeply in making agents self-optimizing and long-running — agents that persist state, accumulate context, and improve across every interaction, all in a secure environment that’s enterprise-ready. More to come here soon.\nWe’re working hard to get this preview into General Availability soon. And we’ll keep building the platform that makes every agent — regardless of model, framework, or harness — production-ready for the enterprise.\nGet Started\nStart building your own intelligent agents today with Foundry Agent Service\nQuickstart : azd deploy — deploy a hosted agent and see it run\nRead this blog for the end-to-end developer journey and the latest updates across Microsoft Foundry\nWatch the 12-minute Microsoft Mechanics episode\nJoin our live “Host your agents on Foundry” series to learn how to deploy production-ready AI agents using Microsoft Agent Framework or LangGraph and hosted agents.\nKeep the conversation going in GitHub and Discord !\n31\nCategory\nAgent Framework\nFoundry Agent Service\nMCP\nMicrosoft Foundry\nTopics\nFoundry Agent Service\nMicrosoft Foundry\nShare\nAuthor\nTakuto Higuchi\nSr Product Marketing Manager\nSenior Product Marketing Manager at Microsoft, leading product marketing and GTM strategy for Foundry's agentic platform — including Foundry Agent Service and Microsoft Agent Framework. He's passionate about bridging the gap between developer experience and enterprise-grade AI.\njeffhollan\nPartner Director of Product\nJeff Hollan is the Partner Director of Product for Microsoft Foundry agent service. His team is responsible for the platform to simplify how enterprises can go from experimentation to production for agents in Foundry.\nLakshmi Ramakrishnan\nPartner, Software Engineer\nLakshmi Ramakrishnan is a Partner Software Engineer in Microsoft’s CoreAI organization. His focus is on Foundry Agents where he designs scalable platform architectures for agent-based systems. He works on APIs, orchestration, identity, and improving developer experience for complex AI applications\n2 comments\nDiscussion is closed. Login to edit/delete existing comments.\nSort by :\nNewest\nNewest\nPopular\nOldest\nVery exciting news indeed.\nQuestion – Would hosted agent BYO network option support pulling docker images from customer’s azure container registry through private endpoint?\nSoon! Right now, docker image retrieval isn’t using vnet, we are working on it!\nRead next\nMay 12, 2026\nWhat’s new in Microsoft Foundry | April 2026\nNick Brady\nMay 12, 2026\nFoundry Local 1.1: Live Transcription, Embeddings, and Responses API\nsamkemp\nStay informed\nGet notified when new posts are published.\nFollow this blog\nAre you sure you wish to delete this\ncomment?\nOK\nCancel",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-09/r-054-introducing-the-new-hosted-agents-in-foundry-agent-service-secure-scal.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-09/r-054-introducing-the-new-hosted-agents-in-foundry-agent-service-secure-scal.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 10256,
+    "paragraph_count": 68,
+    "sentence_count": 83,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0001,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 10256,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "e4342f7eefa33566",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "f5861bb1ffee0ea6",
+  "content_hash": "e4342f7eefa33566",
+  "full_text_hash": "e4342f7eefa33566",
+  "semantic_hash": "426b250706913b31",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-09T03:05:45.104Z",
+  "last_seen_at": "2026-07-09T03:05:45.104Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "workflow_change",
+      "text": "Introducing the new hosted agents in Foundry Agent Service: secure, scalable compute built for agents | Microsoft Foundry Blog Skip to main content Takuto, jeffhollan, Lakshmi May 12, 2026 ### What’s new in Microsoft Foundry | April 2026 https://devblogs.microsoft.com/foundry/whats-new-in-mic... / query=AI platform launches agent workflow automation service 2026 / intent=find_original_source / path=official_original",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Takuto jeffhollan Lakshmi Agents are already transforming how developers solve problems.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Whether it’s a coding agent that refactors your repo overnight, a research agent that synthesizes hundreds of documents into a brief, or an ops agent that monitors and remediates infrastructure — the pattern is clear.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Developers are building agents that don’t just answer questions, they go do things.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Agents of today don’t just execute from a list of tools.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "They access the underlying file system, write and execute code, and persist files and memories for long running and complex tasks.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-09T03:05:45.104Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic",
+      "Microsoft",
+      "GitHub",
+      "Meta",
+      "Mistral"
+    ],
+    "products": [
+      "agents",
+      "Agent",
+      "agent",
+      "Agents",
+      "Claude",
+      "Copilot",
+      "MCP"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "12",
+      "2026",
+      "365",
+      "1.0",
+      "2.0",
+      "10",
+      "9",
+      "31"
+    ],
+    "quotes": [
+      "Host your agents on Foundry"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Takuto jeffhollan Lakshmi Agents are already transforming how developers solve problems.",
+      "Whether it’s a coding agent that refactors your repo overnight, a research agent that synthesizes hundreds of documents into a brief, or an ops agent that monitors and remediates infrastructure — the pattern is clear.",
+      "Developers are building agents that don’t just answer questions, they go do things."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Introducing the new hosted agents in Foundry Agent Service: secure, scalable compute built for agents | Microsoft Foundry Blog Skip to main content Takuto, jeffhollan, Lakshmi May 12, 2026 ### What’s new in Microsoft Foundry | April 2026 https://devblogs.microsoft.com/foundry/whats-new-in-mic... / query=AI platform launches agent workflow automation service 2026 / intent=find_original_source / path=official_original"
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Introducing the new hosted agents in Foundry Agent Service: secure, scalable compute built for agents | Microsoft Foundry Blog\n\n- raw_id: R-054\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: missing_translation_db_entry\n- original_url: https://devblogs.microsoft.com/foundry/introducing-the-new-hosted-agents-in-foundry-agent-service-secure-scalable-compute-built-for-agents/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-09T03:05:45.104Z\n\n## clean_text\n\nTakuto\njeffhollan\nLakshmi\nAgents are already transforming how developers solve problems. Whether it’s a coding agent that refactors your repo overnight, a research agent that synthesizes hundreds of documents into a brief, or an ops agent that monitors and remediates infrastructure — the pattern is clear. Developers are building agents that don’t just answer questions, they go do things.\nAgents of today don’t just execute from a list of tools. They access the underlying file system, write and execute code, and persist files and memories for long running and complex tasks.\nToday, it is easy to build agents locally. But how do you take that same power and patterns, and deploy it across an enterprise? How do you make it serve thousands of customer conversations securely? How do you give it an identity, govern its access, and observe what it’s doing at scale?\nThat’s what Microsoft Foundry is releasing today. Today we’re announcing hosted agents in Foundry Agent Service , now in public preview. This brings agent-optimized compute and services designed for production-grade enterprise agents. We first previewed hosted agents last year at Microsoft Ignite, but this refresh is a fundamentally different experience: secure per-session sandboxes with filesystem persistence, integrated identity, and scale-to-zero economics.\nWhat we’re shipping\nHosted agents gives every single agent session its own dedicated, isolated sandbox with a persistent file system. Not process isolation. Not a code execution-only sandbox. Production-proven hypervisor isolation, at cloud scale.\nCore Capabilities:\nPredictable cold starts — spin up agent sessions and harnesses in your custom environment virtually instantly\nScale to zero — pay nothing while your agent is idle, with an agent that will scale down on its own during inactivity\nResume with filesystem intact — files, disk state, and session identity persist across scale-to-zero events. Your agent restarts with its full working directory exactly where it left off\nPer-session isolation is automatic — Every single agent session its own VM-isolated sandbox with persistent session state. Use isolation keys to easily manage and namespace your end users’ sessions\nBYO VNet Support – drive your agents’ outbound traffic via your VNet\nProduction-ready agent endpoints – built-in agent versioning with stable endpoints for easy integration, weighted rollouts across versions\nMultiple protocols out of the box – OpenResponses protocol support with automatic mapping to/from Activity Protocol for one-click publish to Microsoft 365. Flexible Invocations protocol for custom application integrations, AG-UI support\nA platform built for agents\nThe problem with traditional compute is that it wasn’t designed for this pattern. Containers, web apps, serverless functions – these were built for web services and APIs where multiple users share the same instance. That’s fine for web apps, but doesn’t work for agents.\nWhen Customer A and Customer B are both calling the same agent — and that agent is writing files, executing code, and accessing credentials on a shared instance — you have a security and isolation nightmare. Agent harnesses need to read and write state. They execute arbitrary code. They hold sensitive context. Sharing a container across sessions isn’t just inefficient, it’s unsafe.\nThe hard part is no longer writing the agent. The hard part is making it enterprise-ready at scale — with real isolation, real identity, and real governance. That’s our focus with Microsoft Foundry.\nTraditional Compute\nHosted Agents\nIsolation\nMultiple sessions share a container\nEvery session gets a dedicated sandbox\nCold starts\nSeconds to minutes (high variance)\nSeconds (low variance, predictable)\nIdle cost\nAlways-on billing or slow scale-from-zero\nScale to zero with filesystem-preserving resume\nState persistence\nYou build it (databases, external storage)\nBuilt in — files and disk state survive scale-to-zero\nIdentity\nShared service account\nPer-agent Entra Agent ID + per-user context via Toolbox OBO (interactive scenarios)\nObservability\nYou build it\nBuilt in (agent, session, fleet)\nBring any harness, any framework, any environment\nRather than locking you into a specific harness or runtime, Foundry lets you bring whatever works best for your agent. Use LangGraph, Microsoft Agent Framework, Claude Agent SDK, OpenAI Agents SDK, the GitHub Copilot SDK — any framework you want. Define the optimal environment for your agent with a Dockerfile, so it has exactly the tools and dependencies it needs to get the job done. Deploy in one command (azd deploy). Microsoft Foundry will take care of running your agent at scale.\nThis flexibility is the point. Unlike platforms that force one model and one harness, Foundry is multi-model and multi-harness by design. Run models from OpenAI, Anthropic, Meta, Mistral, and more. Bring any orchestration framework. No lock-in.\nMore than compute — a complete agent platform\nHosted agents aren’t just infrastructure. They’re integrated with the full Microsoft Foundry platform, including announcements we’re making alongside this refresh:\nToolbox (public preview) — a unified way to configure and manage tools across any framework – using progressive disclosure to preserve context and tokens. Build once, connect any MCP client to the same endpoint. Built-in auth handling, OAuth identity passthrough, and observability for every tool call.\nMemory (preview) — managed long-term memory built directly into Foundry Agent Service. Agents remember context across sessions — no external databases to provision. Now natively integrated with Microsoft Agent Framework and LangGraph.\nMicrosoft Agent Framework v1.0 — the stable, production-ready agent framework that unifies the foundations of Semantic Kernel and AutoGen. Build locally, deploy to hosted agents seamlessly.\nObservability — end-to-end tracing based on OpenTelemetry, AI Red Teaming Agent for adversarial testing, and continuous evaluation — all in one platform.\nAnd the enterprise capabilities that make this production-ready:\nIdentity : Every hosted agent gets its own Entra Agent ID, providing a dedicated, auditable identity for each agent. When agents are invoked through user-facing entry points (e.g., Teams or Microsoft 365), Toolbox supports OAuth 2.0 On-Behalf-Of (OBO) flows to propagate user context to downstream services. For autonomous or background workloads where no user token is present, agents authenticate using their Managed Identity.\nGovernance : DLP policies, Responsible AI guardrails, and with VNet integration\nContext : Agents connect to Work IQ (M365 data), Fabric IQ (business data), and Foundry IQ (curated knowledge and search). Helping you bring your enterprise context graph to any agent with ease.\nDistribution : Publish agents directly to Teams and M365 Copilot — where your users already work.\nThis is the combination that only Microsoft Foundry can offer: agent-optimized compute and services, integrated with thousands of tools, any model, any harness — all with secure sandboxing, persistence, and enterprise identity.\nWhat’s next\nThe foundation is in place: agent-optimized compute, secure sandboxes, filesystem persistence, enterprise identity, and deep platform integration. But we’re just getting started.\nYour meeting-prep agent shouldn’t start from scratch every Monday. The 10th briefing it writes should build on the previous 9 — already knowing which metrics your VP cares about, which format she prefers, which data sources matter. Context should compound automatically. We’re investing deeply in making agents self-optimizing and long-running — agents that persist state, accumulate context, and improve across every interaction, all in a secure environment that’s enterprise-ready. More to come here soon.\nWe’re working hard to get this preview into General Availability soon. And we’ll keep building the platform that makes every agent — regardless of model, framework, or harness — production-ready for the enterprise.\nGet Started\nStart building your own intelligent agents today with Foundry Agent Service\nQuickstart : azd deploy — deploy a hosted agent and see it run\nRead this blog for the end-to-end developer journey and the latest updates across Microsoft Foundry\nWatch the 12-minute Microsoft Mechanics episode\nJoin our live “Host your agents on Foundry” series to learn how to deploy production-ready AI agents using Microsoft Agent Framework or LangGraph and hosted agents.\nKeep the conversation going in GitHub and Discord !\n31\nCategory\nAgent Framework\nFoundry Agent Service\nMCP\nMicrosoft Foundry\nTopics\nFoundry Agent Service\nMicrosoft Foundry\nShare\nAuthor\nTakuto Higuchi\nSr Product Marketing Manager\nSenior Product Marketing Manager at Microsoft, leading product marketing and GTM strategy for Foundry's agentic platform — including Foundry Agent Service and Microsoft Agent Framework. He's passionate about bridging the gap between developer experience and enterprise-grade AI.\njeffhollan\nPartner Director of Product\nJeff Hollan is the Partner Director of Product for Microsoft Foundry agent service. His team is responsible for the platform to simplify how enterprises can go from experimentation to production for agents in Foundry.\nLakshmi Ramakrishnan\nPartner, Software Engineer\nLakshmi Ramakrishnan is a Partner Software Engineer in Microsoft’s CoreAI organization. His focus is on Foundry Agents where he designs scalable platform architectures for agent-based systems. He works on APIs, orchestration, identity, and improving developer experience for complex AI applications\n2 comments\nDiscussion is closed. Login to edit/delete existing comments.\nSort by :\nNewest\nNewest\nPopular\nOldest\nVery exciting news indeed.\nQuestion – Would hosted agent BYO network option support pulling docker images from customer’s azure container registry through private endpoint?\nSoon! Right now, docker image retrieval isn’t using vnet, we are working on it!\nRead next\nMay 12, 2026\nWhat’s new in Microsoft Foundry | April 2026\nNick Brady\nMay 12, 2026\nFoundry Local 1.1: Live Transcription, Embeddings, and Responses API\nsamkemp\nStay informed\nGet notified when new posts are published.\nFollow this blog\nAre you sure you wish to delete this\ncomment?\nOK\nCancel\n\n## full_text\n\nTakuto\njeffhollan\nLakshmi\nAgents are already transforming how developers solve problems. Whether it’s a coding agent that refactors your repo overnight, a research agent that synthesizes hundreds of documents into a brief, or an ops agent that monitors and remediates infrastructure — the pattern is clear. Developers are building agents that don’t just answer questions, they go do things.\nAgents of today don’t just execute from a list of tools. They access the underlying file system, write and execute code, and persist files and memories for long running and complex tasks.\nToday, it is easy to build agents locally. But how do you take that same power and patterns, and deploy it across an enterprise? How do you make it serve thousands of customer conversations securely? How do you give it an identity, govern its access, and observe what it’s doing at scale?\nThat’s what Microsoft Foundry is releasing today. Today we’re announcing hosted agents in Foundry Agent Service , now in public preview. This brings agent-optimized compute and services designed for production-grade enterprise agents. We first previewed hosted agents last year at Microsoft Ignite, but this refresh is a fundamentally different experience: secure per-session sandboxes with filesystem persistence, integrated identity, and scale-to-zero economics.\nWhat we’re shipping\nHosted agents gives every single agent session its own dedicated, isolated sandbox with a persistent file system. Not process isolation. Not a code execution-only sandbox. Production-proven hypervisor isolation, at cloud scale.\nCore Capabilities:\nPredictable cold starts — spin up agent sessions and harnesses in your custom environment virtually instantly\nScale to zero — pay nothing while your agent is idle, with an agent that will scale down on its own during inactivity\nResume with filesystem intact — files, disk state, and session identity persist across scale-to-zero events. Your agent restarts with its full working directory exactly where it left off\nPer-session isolation is automatic — Every single agent session its own VM-isolated sandbox with persistent session state. Use isolation keys to easily manage and namespace your end users’ sessions\nBYO VNet Support – drive your agents’ outbound traffic via your VNet\nProduction-ready agent endpoints – built-in agent versioning with stable endpoints for easy integration, weighted rollouts across versions\nMultiple protocols out of the box – OpenResponses protocol support with automatic mapping to/from Activity Protocol for one-click publish to Microsoft 365. Flexible Invocations protocol for custom application integrations, AG-UI support\nA platform built for agents\nThe problem with traditional compute is that it wasn’t designed for this pattern. Containers, web apps, serverless functions – these were built for web services and APIs where multiple users share the same instance. That’s fine for web apps, but doesn’t work for agents.\nWhen Customer A and Customer B are both calling the same agent — and that agent is writing files, executing code, and accessing credentials on a shared instance — you have a security and isolation nightmare. Agent harnesses need to read and write state. They execute arbitrary code. They hold sensitive context. Sharing a container across sessions isn’t just inefficient, it’s unsafe.\nThe hard part is no longer writing the agent. The hard part is making it enterprise-ready at scale — with real isolation, real identity, and real governance. That’s our focus with Microsoft Foundry.\nTraditional Compute\nHosted Agents\nIsolation\nMultiple sessions share a container\nEvery session gets a dedicated sandbox\nCold starts\nSeconds to minutes (high variance)\nSeconds (low variance, predictable)\nIdle cost\nAlways-on billing or slow scale-from-zero\nScale to zero with filesystem-preserving resume\nState persistence\nYou build it (databases, external storage)\nBuilt in — files and disk state survive scale-to-zero\nIdentity\nShared service account\nPer-agent Entra Agent ID + per-user context via Toolbox OBO (interactive scenarios)\nObservability\nYou build it\nBuilt in (agent, session, fleet)\nBring any harness, any framework, any environment\nRather than locking you into a specific harness or runtime, Foundry lets you bring whatever works best for your agent. Use LangGraph, Microsoft Agent Framework, Claude Agent SDK, OpenAI Agents SDK, the GitHub Copilot SDK — any framework you want. Define the optimal environment for your agent with a Dockerfile, so it has exactly the tools and dependencies it needs to get the job done. Deploy in one command (azd deploy). Microsoft Foundry will take care of running your agent at scale.\nThis flexibility is the point. Unlike platforms that force one model and one harness, Foundry is multi-model and multi-harness by design. Run models from OpenAI, Anthropic, Meta, Mistral, and more. Bring any orchestration framework. No lock-in.\nMore than compute — a complete agent platform\nHosted agents aren’t just infrastructure. They’re integrated with the full Microsoft Foundry platform, including announcements we’re making alongside this refresh:\nToolbox (public preview) — a unified way to configure and manage tools across any framework – using progressive disclosure to preserve context and tokens. Build once, connect any MCP client to the same endpoint. Built-in auth handling, OAuth identity passthrough, and observability for every tool call.\nMemory (preview) — managed long-term memory built directly into Foundry Agent Service. Agents remember context across sessions — no external databases to provision. Now natively integrated with Microsoft Agent Framework and LangGraph.\nMicrosoft Agent Framework v1.0 — the stable, production-ready agent framework that unifies the foundations of Semantic Kernel and AutoGen. Build locally, deploy to hosted agents seamlessly.\nObservability — end-to-end tracing based on OpenTelemetry, AI Red Teaming Agent for adversarial testing, and continuous evaluation — all in one platform.\nAnd the enterprise capabilities that make this production-ready:\nIdentity : Every hosted agent gets its own Entra Agent ID, providing a dedicated, auditable identity for each agent. When agents are invoked through user-facing entry points (e.g., Teams or Microsoft 365), Toolbox supports OAuth 2.0 On-Behalf-Of (OBO) flows to propagate user context to downstream services. For autonomous or background workloads where no user token is present, agents authenticate using their Managed Identity.\nGovernance : DLP policies, Responsible AI guardrails, and with VNet integration\nContext : Agents connect to Work IQ (M365 data), Fabric IQ (business data), and Foundry IQ (curated knowledge and search). Helping you bring your enterprise context graph to any agent with ease.\nDistribution : Publish agents directly to Teams and M365 Copilot — where your users already work.\nThis is the combination that only Microsoft Foundry can offer: agent-optimized compute and services, integrated with thousands of tools, any model, any harness — all with secure sandboxing, persistence, and enterprise identity.\nWhat’s next\nThe foundation is in place: agent-optimized compute, secure sandboxes, filesystem persistence, enterprise identity, and deep platform integration. But we’re just getting started.\nYour meeting-prep agent shouldn’t start from scratch every Monday. The 10th briefing it writes should build on the previous 9 — already knowing which metrics your VP cares about, which format she prefers, which data sources matter. Context should compound automatically. We’re investing deeply in making agents self-optimizing and long-running — agents that persist state, accumulate context, and improve across every interaction, all in a secure environment that’s enterprise-ready. More to come here soon.\nWe’re working hard to get this preview into General Availability soon. And we’ll keep building the platform that makes every agent — regardless of model, framework, or harness — production-ready for the enterprise.\nGet Started\nStart building your own intelligent agents today with Foundry Agent Service\nQuickstart : azd deploy — deploy a hosted agent and see it run\nRead this blog for the end-to-end developer journey and the latest updates across Microsoft Foundry\nWatch the 12-minute Microsoft Mechanics episode\nJoin our live “Host your agents on Foundry” series to learn how to deploy production-ready AI agents using Microsoft Agent Framework or LangGraph and hosted agents.\nKeep the conversation going in GitHub and Discord !\n31\nCategory\nAgent Framework\nFoundry Agent Service\nMCP\nMicrosoft Foundry\nTopics\nFoundry Agent Service\nMicrosoft Foundry\nShare\nAuthor\nTakuto Higuchi\nSr Product Marketing Manager\nSenior Product Marketing Manager at Microsoft, leading product marketing and GTM strategy for Foundry's agentic platform — including Foundry Agent Service and Microsoft Agent Framework. He's passionate about bridging the gap between developer experience and enterprise-grade AI.\njeffhollan\nPartner Director of Product\nJeff Hollan is the Partner Director of Product for Microsoft Foundry agent service. His team is responsible for the platform to simplify how enterprises can go from experimentation to production for agents in Foundry.\nLakshmi Ramakrishnan\nPartner, Software Engineer\nLakshmi Ramakrishnan is a Partner Software Engineer in Microsoft’s CoreAI organization. His focus is on Foundry Agents where he designs scalable platform architectures for agent-based systems. He works on APIs, orchestration, identity, and improving developer experience for complex AI applications\n2 comments\nDiscussion is closed. Login to edit/delete existing comments.\nSort by :\nNewest\nNewest\nPopular\nOldest\nVery exciting news indeed.\nQuestion – Would hosted agent BYO network option support pulling docker images from customer’s azure container registry through private endpoint?\nSoon! Right now, docker image retrieval isn’t using vnet, we are working on it!\nRead next\nMay 12, 2026\nWhat’s new in Microsoft Foundry | April 2026\nNick Brady\nMay 12, 2026\nFoundry Local 1.1: Live Transcription, Embeddings, and Responses API\nsamkemp\nStay informed\nGet notified when new posts are published.\nFollow this blog\nAre you sure you wish to delete this\ncomment?\nOK\nCancel\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Introducing the new hosted agents in Foundry Agent Service: secure, scalable compute built for agents | Microsoft Foundry Blog Skip to main content Takuto, jeffhollan, Lakshmi May 12, 2026 ### What’s new in Microsoft Foundry | April 2026 https://devblogs.microsoft.com/foundry/whats-new-in-mic... / query=AI platform launches agent workflow automation service 2026 / intent=find_original_source / path=official_original\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Takuto jeffhollan Lakshmi Agents are already transforming how developers solve problems.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Whether it’s a coding agent that refactors your repo overnight, a research agent that synthesizes hundreds of documents into a brief, or an ops agent that monitors and remediates infrastructure — the pattern is clear.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Developers are building agents that don’t just answer questions, they go do things.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Agents of today don’t just execute from a list of tools.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] They access the underlying file system, write and execute code, and persist files and memories for long running and complex tasks.\n"
+}

@@ -15,7 +15,7 @@ const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const configPath =
   args.get("quality-config") ||
-  path.join(root, "01-SiteV2", "content", "11-databases", "monitor-quality-gate-v2.json");
+  path.join(root, "01-SiteV2", "content", "11-databases", "business-signals-gate-v3.json");
 const config = (() => {
   try {
     return JSON.parse(fs.readFileSync(configPath, "utf8"));

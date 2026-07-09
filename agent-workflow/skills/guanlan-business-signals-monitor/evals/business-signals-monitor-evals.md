@@ -8,7 +8,8 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
    - Pass when Business Signals work routes through this skill before narrower Raw / Pool / Card skills.
 
 2. `daily_monitor_thresholds`
-   - Pass when active Raw is at least 150, Pool at least 75, routed Pool at least 60, and raw-to-card Card supply is sufficient unless the lane is explicitly blocked.
+   - Pass when Raw / Pool / routed Pool / Core supply targets remain visible as diagnostics, while V3 release blockers are limited to minimal Card supply, evidence integrity, source recovery, and downstream Card/frontstage gates.
+   - Fail when Raw >=150, Pool >=75, routed Pool >=60, or any old Top10 supply rule is required after `raw_to_card_supply_release=true`.
 
 3. `public_frontstage_card_contract`
    - Pass when `01-SiteV2/site/data/v3-data-observation-desk.json.frontstageCards` contains active-date public Cards sorted by importance / impact from high to low.
@@ -44,9 +45,9 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when scattered field checks are treated as independent top-level Card policy, or when a repair lowers source-first evidence requirements to increase the public Card count.
 
 11. `technical_trend_context_boundary`
-    - Pass when `important_technical_trend` is monitored only as context for source repair, relationship analysis, and trend-candidate work.
-    - Pass when the four formal Business Signals lanes are `important_case`, `important_funding`, `important_product_or_service`, and `important_vertical_solution`, and only those can enter formal Signal Card quantity.
-    - Fail when targeted refill, Pool routing, or Card generation uses technical articles, builder/opinion posts, newsletters, workforce retraining / public-funding programs, docs, or generic guides as formal cards without a same-source dated funding, product/service, customer deployment, procurement, partnership, vertical rollout, or production implementation event.
+   - Pass when `important_technical_trend` is monitored only as context for source repair, relationship analysis, and trend-candidate work.
+   - Pass when formal public Card types are only `case`, `funding`, and `product_service`; vertical deployment material enters as `case` when it has a named customer, deployment, procurement, partnership, rollout, or production implementation event.
+   - Fail when targeted refill, Pool routing, or Card generation uses technical articles, builder/opinion posts, newsletters, workforce retraining / public-funding programs, docs, or generic guides as formal cards without a same-source dated funding, product/service, customer deployment, procurement, partnership, vertical rollout, or production implementation event.
 
 12. `frontstage_card_title_source_boundary`
     - Pass when frontstage Card titles name the actual company, product, funding round, release, customer, or workflow event and do not contain placeholder wording such as "original AI event", "purpose see original", or source-domain subjects like "linkedin financing" / "github original title".
@@ -134,8 +135,8 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when a resolved item keeps `fix_commit=pending`, mixes contradictory resolution records, or omits the gate/eval/memory/context prevention artifact for a recurring failure.
 
 27. `provider_fallback_does_not_mask_supply`
-    - Pass when RSS HTTP 404 / 415 / 429 / 5xx, Anysearch quota exhaustion, or other search-provider temporary unavailable notes are classified as recovered after Pool audit, Card supply, and importance coverage gates are already satisfied.
-    - Pass when `raw_count_min` shortfall remains visible as `raw_count_release_override=pool_core_supply` instead of blocking the lane by itself.
+   - Pass when RSS HTTP 404 / 415 / 429 / 5xx, Anysearch quota exhaustion, or other search-provider temporary unavailable notes are classified as recovered after Pool audit, Card supply, and importance coverage gates are already satisfied.
+    - Pass when `raw_count_min` shortfall remains visible as `raw_count_release_override=raw_to_card_supply` instead of blocking the lane by itself.
     - Pass when `unrecovered_failed_sources_max` does not block release under `raw_to_card_supply_release=true`, while the failed source-channel notes remain visible in the gate report for supply-risk review.
     - Pass when keyword-only floors, AI-relevant title ratio, and off-topic raw-title count are visible diagnostics but do not block release under `raw_to_card_supply_release=true`.
     - Pass when source-artifact Raw selection rotates across GDELT, keyword search, RSS, and AI HOT as peer channels instead of consuming one fixed priority channel first.
@@ -151,7 +152,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when AIHOT recovery checks direct daily/all endpoint failures, fallback-search use, `source_item_count`, and `raw_candidate_count`; `status=collected` alone is not enough.
     - Pass when Anysearch is considered usable if keyword source-only returns source items and raw candidates, while individual query fallback failures stay visible as diagnostics.
     - Pass when the daily monitor log reports all-AIHot `aihot_core_count` / `aihot_index_only_count` separately from `aihot_daily_*` diagnostics, because original-source eligibility is channel-neutral after discovery.
-    - Pass when recovered provider failures are reported as `source_provider_recovery_status=recovered_by_fallback` plus recovered/unrecovered counts, and appear in recovered diagnostics rather than remaining risks when Pool/Core/Card supply gates pass.
+    - Pass when recovered provider failures are reported as `source_provider_recovery_status=recovered_by_fallback` plus recovered/unrecovered counts, and appear in recovered diagnostics rather than remaining risks when V3 Card supply gates pass.
     - Pass when Card eligibility ignores search query tails, search paths, before/after clue guesses, affected-role guesses, and provider fallback labels.
     - Pass when research benchmarks, OCR/model papers, generic FDE explainers, job posts, ESG/environment reports, broad startup/funding lists, and duplicate media copies of the same financing event do not displace named customer deployments, procurement/contract cases, concrete product launches, or single-company funding events.
     - Fail when weak technical/context pages enter public Cards while stronger same-date Signal Cards remain backend-only only because English source-title translations are missing.

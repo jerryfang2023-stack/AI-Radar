@@ -11,7 +11,7 @@ const args = new Map(
 
 const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const defaultConfigPath = path.join(root, "01-SiteV2", "content", "11-databases", "monitor-quality-gate-v2.json");
+const defaultConfigPath = path.join(root, "01-SiteV2", "content", "11-databases", "business-signals-gate-v3.json");
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 const clamp = (value, min = 0, max = 1) => Math.max(min, Math.min(max, value));
@@ -304,9 +304,15 @@ function scoreToFixed(value) {
 
 function buildDownstreamRecommendation(metrics, hardFailed) {
   const reasons = [];
-  if (metrics.rawCount < metrics.rawMinHard) reasons.push("Raw < hard minimum");
+  if (metrics.rawCount < metrics.rawMinHard) reasons.push("Raw below diagnostic target");
   if (metrics.poolCount < metrics.poolMinHard) reasons.push("Pool < hard minimum");
   if (metrics.routedPoolCount < metrics.routedPoolMinHard) reasons.push("Routed Pool < hard minimum");
+  if (metrics.corePoolCount < metrics.corePoolMinHard) reasons.push("Core Pool < release minimum");
+  if (metrics.usableCoreEvidenceCount < metrics.usableCoreEvidenceMinHard) reasons.push("usable Core evidence < release minimum");
+  if (metrics.homepageDirectoryCoreCount > metrics.homepageDirectoryCoreMax) reasons.push("index or directory page promoted to Core Pool");
+  if (metrics.coreTextContaminationCount > metrics.coreTextContaminationMax) reasons.push("Core Pool text contamination remains");
+  if (metrics.coreRawQcBlockCount > metrics.coreRawQcBlockMax) reasons.push("blocked Raw QC item remains in Core Pool");
+  if (metrics.coreRawQcDegradedCount > metrics.coreRawQcDegradedMax) reasons.push("degraded Raw QC item remains in Core Pool");
   if (metrics.nonCommunityCount < metrics.nonCommunityMinHard) reasons.push("keyword-search non-community evidence insufficient");
   if (metrics.aiRelevantRatio < metrics.aiRelevantMinHard) reasons.push("AI relevance insufficient");
   if (metrics.offTopicCount > metrics.offTopicMaxHard) reasons.push("too many off-topic items");
@@ -325,12 +331,14 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
   }
 
   const severeReasons = new Set([
-    "Raw < hard minimum",
     "Pool < hard minimum",
     "Routed Pool < hard minimum",
-    "keyword-search non-community evidence insufficient",
-    "Raw importance coverage gaps remain",
-    "Pool importance coverage gaps remain",
+    "Core Pool < release minimum",
+    "usable Core evidence < release minimum",
+    "index or directory page promoted to Core Pool",
+    "Core Pool text contamination remains",
+    "blocked Raw QC item remains in Core Pool",
+    "degraded Raw QC item remains in Core Pool",
     "unrecovered failed source paths",
   ]);
   const severe = reasons.some((item) => severeReasons.has(item));
@@ -358,6 +366,7 @@ export function runGuanlanMonitorQualityGate({
   const config = readJson(configPath, {});
   const weights = safeObject(config.weights);
   const hard = safeObject(config.hard_gates);
+  const diagnosticTargets = safeObject(config.diagnostic_targets);
   const keywordReq = safeObject(config.keyword_requirements);
   const strategyReq = safeObject(config.strategy_requirements);
   const offTopicPatterns = Array.isArray(config.off_topic_patterns) ? config.off_topic_patterns : [];
@@ -440,19 +449,20 @@ export function runGuanlanMonitorQualityGate({
 
   const failedSources = parseFailedSources(logBullets.failed_sources || "");
 
-  const rawMinHard = Number(hard.raw_count_min || 50);
+  const rawMinHard = Number(diagnosticTargets.raw_count_min ?? hard.raw_count_min ?? 150);
   const poolMinHard = Number(hard.pool_count_min || 15);
   const routedPoolMinHard = Number(hard.routed_pool_count_min || 15);
-  const nonCommunityMinHard = Number(hard.keyword_search_non_community_min || 1);
-  const aiRelevantMinHard = Number(hard.ai_relevant_title_ratio_min || 0.7);
-  const offTopicMaxHard = Number(hard.off_topic_title_max || 3);
+  const nonCommunityMinHard = Number(diagnosticTargets.keyword_search_non_community_min ?? hard.keyword_search_non_community_min ?? 1);
+  const aiRelevantMinHard = Number(diagnosticTargets.ai_relevant_title_ratio_min ?? hard.ai_relevant_title_ratio_min ?? 0.7);
+  const offTopicMaxHard = Number(diagnosticTargets.off_topic_title_max ?? hard.off_topic_title_max ?? 3);
   const corePoolMinHard = Number(hard.core_pool_min || 5);
   const usableCoreEvidenceMinHard = Number(hard.usable_core_evidence_min || corePoolMinHard);
   const homepageDirectoryCoreMax = Number(hard.homepage_directory_core_max ?? 0);
+  const coreTextContaminationMax = Number(hard.core_text_contamination_max ?? 0);
   const coreRawQcBlockMax = Number(hard.core_raw_qc_block_max ?? 0);
   const coreRawQcDegradedMax = Number(hard.core_raw_qc_degraded_max ?? 0);
-  const coreLargeVendorMax = Number(hard.core_large_vendor_max ?? 5);
-  const coreLargeVendorRatioMax = Number(hard.core_large_vendor_ratio_max ?? 0.35);
+  const coreLargeVendorMax = Number(diagnosticTargets.core_large_vendor_count_target_max ?? hard.core_large_vendor_max ?? 10);
+  const coreLargeVendorRatioMax = Number(diagnosticTargets.core_large_vendor_ratio_target_max ?? hard.core_large_vendor_ratio_max ?? 0.35);
   const coreNonLargeVendorMin = Number(hard.core_non_large_vendor_min ?? 0);
   const unrecoveredFailedSourcesMax = Number(hard.unrecovered_failed_sources_max ?? 0);
   const importanceCoverageMustNone = hard.importance_coverage_gaps_must_be_none ?? true;
@@ -493,8 +503,12 @@ export function runGuanlanMonitorQualityGate({
   const rawToCardSupplyRelease =
     poolCount >= poolMinHard &&
     routedPoolCount >= routedPoolMinHard &&
-    (!importanceCoverageMustNone || !coverageGapFlag || coverageGapAcceptable) &&
-    (!poolImportanceCoverageMustNone || !poolCoverageGapFlag || poolCoverageGapAcceptable);
+    corePoolCount >= effectiveCorePoolMinHard &&
+    usableCoreEvidenceCount >= effectiveUsableCoreEvidenceMinHard &&
+    homepageDirectoryCoreCount <= homepageDirectoryCoreMax &&
+    coreTextContaminationCount <= coreTextContaminationMax &&
+    coreRawQcBlockCount <= coreRawQcBlockMax &&
+    coreRawQcDegradedCount <= coreRawQcDegradedMax;
   const rawCountReleaseByRawToCard = rawCount < effectiveRawMinHard && rawToCardSupplyRelease;
   const rawChannelDiagnosticsReleasedByRawToCard = rawToCardSupplyRelease;
   // Once combined Pool audit and raw-to-card supply is healthy, peer source-channel failures are
@@ -507,10 +521,8 @@ export function runGuanlanMonitorQualityGate({
     ? (unrecoveredFailedSources.length ? "unrecovered" : "recovered_by_fallback")
     : "none";
 
-  const hardChecks = [
+  const diagnosticChecks = [
     { key: "raw_count_min", passed: rawCount >= effectiveRawMinHard || rawCountReleaseByRawToCard, value: `${rawCount}/${effectiveRawMinHard}${weekend.active ? `; default=${rawMinHard}` : ""}${rawCountReleaseByRawToCard ? "; released_by_raw_to_card_supply=true" : ""}` },
-    { key: "pool_count_min", passed: poolCount >= poolMinHard, value: `${poolCount}/${poolMinHard}` },
-    { key: "routed_pool_count_min", passed: routedPoolCount >= routedPoolMinHard, value: `${routedPoolCount}/${routedPoolMinHard}` },
     {
       key: "keyword_search_non_community_min",
       passed: keywordNonCommunityCount >= nonCommunityMinHard || rawChannelDiagnosticsReleasedByRawToCard,
@@ -526,17 +538,27 @@ export function runGuanlanMonitorQualityGate({
       passed: offTopicCount <= offTopicMaxHard || rawChannelDiagnosticsReleasedByRawToCard,
       value: `${offTopicCount}/${offTopicMaxHard}${rawChannelDiagnosticsReleasedByRawToCard && offTopicCount > offTopicMaxHard ? "; diagnostic_released_by_raw_to_card_supply=true" : ""}`,
     },
-    { key: "unrecovered_failed_sources_max", passed: unrecoveredFailedSources.length <= unrecoveredFailedSourcesMax, value: `${unrecoveredFailedSources.length}/${unrecoveredFailedSourcesMax}; total=${failedSources.length}; recovered=${recoveredFailedSources.length}` },
     {
-      key: "importance_coverage_gaps_must_be_none",
-      passed: importanceCoverageMustNone ? !coverageGapFlag || coverageGapAcceptable : true,
+      key: "importance_coverage_gaps",
+      passed: !coverageGapFlag || coverageGapAcceptable,
       value: `${importanceCoverageValue}${coverageGapAcceptable ? `; raw_sufficient=${rawCount}` : ""}`,
     },
     {
-      key: "pool_importance_coverage_gaps_must_be_none",
-      passed: poolImportanceCoverageMustNone ? !poolCoverageGapFlag || poolCoverageGapAcceptable : true,
+      key: "pool_importance_coverage_gaps",
+      passed: !poolCoverageGapFlag || poolCoverageGapAcceptable,
       value: `${poolImportanceCoverageValue}${poolCoverageGapAcceptable ? `; raw_sufficient=${rawCount}` : ""}`,
     },
+  ];
+  const hardChecks = [
+    { key: "pool_count_min", passed: poolCount >= poolMinHard, value: `${poolCount}/${poolMinHard}` },
+    { key: "routed_pool_count_min", passed: routedPoolCount >= routedPoolMinHard, value: `${routedPoolCount}/${routedPoolMinHard}` },
+    { key: "core_pool_min", passed: corePoolCount >= effectiveCorePoolMinHard, value: `${corePoolCount}/${effectiveCorePoolMinHard}${weekend.active ? `; default=${corePoolMinHard}` : ""}` },
+    { key: "usable_core_evidence_min", passed: usableCoreEvidenceCount >= effectiveUsableCoreEvidenceMinHard, value: `${usableCoreEvidenceCount}/${effectiveUsableCoreEvidenceMinHard}${weekend.active ? `; default=${usableCoreEvidenceMinHard}` : ""}` },
+    { key: "homepage_directory_core_max", passed: homepageDirectoryCoreCount <= homepageDirectoryCoreMax, value: `${homepageDirectoryCoreCount}/${homepageDirectoryCoreMax}` },
+    { key: "core_text_contamination_max", passed: coreTextContaminationCount <= coreTextContaminationMax, value: `${coreTextContaminationCount}/${coreTextContaminationMax}` },
+    { key: "core_raw_qc_block_max", passed: coreRawQcBlockCount <= coreRawQcBlockMax, value: `${coreRawQcBlockCount}/${coreRawQcBlockMax}` },
+    { key: "core_raw_qc_degraded_max", passed: coreRawQcDegradedCount <= coreRawQcDegradedMax, value: `${coreRawQcDegradedCount}/${coreRawQcDegradedMax}` },
+    { key: "unrecovered_failed_sources_max", passed: unrecoveredFailedSources.length <= unrecoveredFailedSourcesMax, value: `${unrecoveredFailedSources.length}/${unrecoveredFailedSourcesMax}; total=${failedSources.length}; recovered=${recoveredFailedSources.length}` },
   ];
   const hardFailed = hardChecks.filter((check) => !check.passed);
 
@@ -609,6 +631,7 @@ export function runGuanlanMonitorQualityGate({
       homepageDirectoryCoreMax,
       coreBlockedEvidenceCount,
       coreTextContaminationCount,
+      coreTextContaminationMax,
       coreRawQcBlockCount,
       coreRawQcBlockMax,
       coreRawQcDegradedCount,
@@ -749,6 +772,10 @@ export function runGuanlanMonitorQualityGate({
     "",
     ...hardChecks.map((check) => `- ${check.key}: ${check.passed ? "passed" : "failed"} (${check.value})`),
     "",
+    "## Diagnostics",
+    "",
+    ...diagnosticChecks.map((check) => `- ${check.key}: ${check.passed ? "passed" : "warning"} (${check.value})`),
+    "",
     "## Risks",
     "",
     ...(keyRisks.length ? keyRisks.map((risk) => `- ${risk}`) : ["- none"]),
@@ -787,6 +814,7 @@ export function runGuanlanMonitorQualityGate({
     score_mode: scoreMode,
     hard_failed: hardFailed,
     hard_checks: hardChecks,
+    diagnostic_checks: diagnosticChecks,
     skill_feedback: skillFeedback,
     risks: keyRisks,
     downstream,

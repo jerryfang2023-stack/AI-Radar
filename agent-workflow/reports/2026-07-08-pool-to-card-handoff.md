@@ -1,30 +1,31 @@
 # 2026-07-08 Pool-to-Card Handoff
 
-- generated_at: 2026-07-08T06:10:04.606Z
-- written_count: 15
+- generated_at: 2026-07-09T04:04:07.982Z
+- written_count: 16
 - merged_count: 0
 - skipped_count: 0
-- signal_asset_count: 14
-- not_promoted_candidate_count: 108
+- signal_asset_count: 15
+- not_promoted_candidate_count: 107
 - asset_generation_limit: all_cardable_raw_pool
 - signal_asset_mode: all cardable Raw / Pool business signals
 
 ## Signal Card Assets
 
-- SIG-20260708-A01｜P-053｜ZEISS Case Study: Document Extraction with Dapr Agents
-- SIG-20260708-A02｜P-041｜Enterprise AI Rollout Case Study: Amgen's 20,000 Users
+- SIG-20260708-A01｜P-053｜ZEISS 使用 Dapr Agents 处理文档提取案例
+- SIG-20260708-A02｜P-041｜Amgen 2 万名用户的企业 AI 推广案例
 - SIG-20260708-A03｜P-019｜Rocketlane 获得战略投资
 - SIG-20260708-A04｜P-020｜OXMIQ 获得 $35 M 融资
 - SIG-20260708-A05｜P-029｜Ornn 获得 $33M 融资
 - SIG-20260708-A06｜P-034｜One 获得 $4M 融资
 - SIG-20260708-A07｜P-086｜Norm AI 获得 $120M 融资
-- SIG-20260708-A08｜P-060｜Peraton 发布 Peraton[x]™
-- SIG-20260708-A09｜P-066｜Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions
-- SIG-20260708-A10｜P-088｜Global Internal Automation Agents for a $50BN CPG - Eliza
+- SIG-20260708-A08｜P-060｜Peraton 发布 Peraton[x]：面向关键任务运营的企业级 Agentic AI 平台
+- SIG-20260708-A09｜P-066｜Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化
+- SIG-20260708-A10｜P-088｜Eliza 为 500 亿美元 CPG 企业部署内部自动化 Agents
 - SIG-20260708-A11｜P-004｜Savi Security 发布反 AI 诈骗 App，抵御语音/短信/电话骗局（如绑架勒索）
 - SIG-20260708-A12｜P-043｜Together AI 获得 $800M 融资
 - SIG-20260708-A13｜P-059｜Bespoke Labs 获得 $40M 融资
-- SIG-20260708-A14｜P-091｜Launch YC: SigmanticAI - The Cursor for Hardware Design
+- SIG-20260708-A14｜P-091｜YC 发布 SigmanticAI：面向硬件设计的 Cursor
+- SIG-20260708-A15｜P-092｜Claude Code v2.1.204 发布
 
 ## Cluster / Dedupe Rows
 
@@ -42,6 +43,7 @@
 - P-043｜event:funding:together ai:$800m｜accepted
 - P-059｜event:funding:bespoke:$40m｜accepted
 - P-091｜event:case:sigmanticai:case launch yc sigmanticai the cursor for hardware design y combinator｜accepted
+- P-092｜event:product_service:github:2.1｜accepted
 
 ## Written
 
@@ -59,6 +61,7 @@
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-08--signal--together-ai-auto-signal-p-043.md
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-08--signal--bespoke-labs-auto-signal-p-059.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-08--signal--sigmanticai-auto-signal-p-091.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-08--signal--github-auto-signal-p-092.md
 - 01-SiteV2/content/04-business-signals/signals/2026-07-08-signals.md
 
 ## Merged
@@ -147,7 +150,6 @@
 - P-087: valid_page_type:marketplace_directory_not_signal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Introducing AI agents and tools in AWS Marketplace - AWS
 - P-089: evidence_quality:stale_source_date, source_auditability:discovery_source_not_resolved, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Meet the former Apple designer building a new AI interface at Hark
 - P-090: evidence_quality:stale_source_date, source_auditability:discovery_source_not_resolved, fact_type_constraints:workforce_retraining_program_not_formal_signal_card; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=The AI services transformation may be harder than VCs think
-- P-092: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Claude Code v2.1.204 发布
 - P-093: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=科沃斯首款开源机器人"八界"发布，49990 元
 - P-094: business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=三星量产 PM1763 企业级 SSD：最高 16TB，能效提升 1.8 倍、顺序读取 28400 MB/s
 - P-095: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=消息称美机构采用 Anthropic Mythos 模型对政府软件开展安全审计，已排查出大量安全漏洞

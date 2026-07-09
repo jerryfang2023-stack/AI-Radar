@@ -1,0 +1,374 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-064
+title: "Partner-built agents available in Gemini Enterprise | Google Cloud Blog"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: missing_translation_db_entry
+original_url: "https://cloud.google.com/blog/products/ai-machine-learning/partner-built-agents-available-in-gemini-enterprise"
+canonical_url: "https://cloud.google.com/blog/products/ai-machine-learning/partner-built-agents-available-in-gemini-enterprise"
+source_name: "keyword search / Anysearch"
+source_type: official
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-09T03:05:45.167Z
+language: mixed
+full_text_hash: 2f89c2b840f7f3a4
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-09/r-064-partner-built-agents-available-in-gemini-enterprise-google-cloud-blog.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-09/r-064-partner-built-agents-available-in-gemini-enterprise-google-cloud-blog.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":24910,"paragraph_count":100,"sentence_count":167,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 24910
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2f89c2b840f7f3a4","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: d93dd95a25f14352
+content_hash: 451c8eda4a1f8fab
+semantic_hash: b91f32683f7ec109
+duplicate_of: ""
+first_seen_at: "2026-07-09T03:05:45.167Z"
+last_seen_at: 2026-07-09T03:05:45.167Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Google","Salesforce","ServiceNow","Deloitte"],"products":["agents","Gemini","agent","Agent","Agents"],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算","采购","销售 / 客服"],"numbers":["23","2026","22","$750 million","$460 billion","50%","112%","30"],"quotes":["Google Cloud Ready - Gemini Enterprise"]}
+evidence_seed: {"company_actions":["AI & Machine Learning Enabling the agentic enterprise: business and industry agents arrive in Gemini Enterprise April 22, 2026 Satish Thomas VP, Applied AI and Platform Ecosystem, Google Cloud Try Gemini Enterprise Business Edition today The front door to AI in the workplace Try now We are officially moving past the era of one-size-fits-all AI.","What's new : Today, we’re bringing partner-built agents from our Agent Marketplace directly into the Agent Gallery inside the Gemini Enterprise app."],"case_details":[],"workflow_changes":["Partner-built agents available in Gemini Enterprise | Google Cloud Blog AI & Machine Learning # Enabling the agentic enterprise: business and industry agents arrive in Gemini Enterprise April 23, 2026 ##### Satish Thomas VP, Applied AI and Platform Ecosystem, Google Cloud ##### Try Gemini Ente... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original","This creates a powerful, centrally governed hub for discovering and managing specialized AI from partners like Accenture, Adobe, Atlassian, Deloitte, Lovable, Oracle, Palo Alto Networks, Replit, S&P Global, Salesforce, ServiceNow, Workday, and more.","Why this matters for your business: With millions of paid seats across thousands of companies, the Gemini Enterprise app allows organizations to automate complex, end-to-end workflows in a single, unified environment."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":["Enterprises today require highly specialized, role-specific tools to drive real productivity — but they cannot afford to sacrifice security, oversight, or control to get there."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"Partner-built agents available in Gemini Enterprise | Google Cloud Blog AI & Machine Learning # Enabling the agentic enterprise: business and industry agents arrive in Gemini Enterprise April 23, 2026 ##### Satish Thomas VP, Applied AI and Platform Ecosystem, Google Cloud ##### Try Gemini Ente... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI & Machine Learning Enabling the agentic enterprise: business and industry agents arrive in Gemini Enterprise April 22, 2026 Satish Thomas VP, Applied AI and Platform Ecosystem, Google Cloud Try Gemini Enterprise Business Edition today The front door to AI in the workplace Try now We are officially moving past the era of one-size-fits-all AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Enterprises today require highly specialized, role-specific tools to drive real productivity — but they cannot afford to sacrifice security, oversight, or control to get there.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"company_action","text":"What's new : Today, we’re bringing partner-built agents from our Agent Marketplace directly into the Agent Gallery inside the Gemini Enterprise app.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"This creates a powerful, centrally governed hub for discovering and managing specialized AI from partners like Accenture, Adobe, Atlassian, Deloitte, Lovable, Oracle, Palo Alto Networks, Replit, S&P Global, Salesforce, ServiceNow, Workday, and more.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Why this matters for your business: With millions of paid seats across thousands of companies, the Gemini Enterprise app allows organizations to automate complex, end-to-end workflows in a single, unified environment.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-09T03:05:45.167Z
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Partner-built agents available in Gemini Enterprise | Google Cloud Blog
+
+## clean_text
+
+AI & Machine Learning
+Enabling the agentic enterprise: business and industry agents arrive in Gemini Enterprise
+April 22, 2026
+Satish Thomas VP, Applied AI and Platform Ecosystem, Google Cloud
+Try Gemini Enterprise Business Edition today The front door to AI in the workplace
+Try now
+We are officially moving past the era of one-size-fits-all AI. Enterprises today require highly specialized, role-specific tools to drive real productivity — but they cannot afford to sacrifice security, oversight, or control to get there.
+What's new : Today, we’re bringing partner-built agents from our Agent Marketplace directly into the Agent Gallery inside the Gemini Enterprise app. This creates a powerful, centrally governed hub for discovering and managing specialized AI from partners like Accenture, Adobe, Atlassian, Deloitte, Lovable, Oracle, Palo Alto Networks, Replit, S&P Global, Salesforce, ServiceNow, Workday, and more.
+Why this matters for your business: With millions of paid seats across thousands of companies, the Gemini Enterprise app allows organizations to automate complex, end-to-end workflows in a single, unified environment. Five key benefits include:
+Move beyond agentic overclaims: The market is flooded with passive chatbots and rigid workflows. Our featured Marketplace partners deliver true autonomous agents capable of executing complex, end-to-end tasks. They achieve this by combining deep context and memory, intelligent orchestration, and safe tool use.
+High-caliber agents: Every featured agent earns the "Google Cloud Ready - Gemini Enterprise" designation only after passing a strict four-step evaluation for basic functionality, output accuracy, autonomous execution, and enterprise standards.
+Built-in safeguards: Gemini Enterprise Agent Platform assigns every agent a cryptographically secure identity for a clear audit trail, while our Agent Gateway and Model Armor actively screen traffic to guarantee your data is never used for model training.
+Strong IT governance: To balance workforce productivity with strict organizational oversight, we've built Agent Gallery around a secure, two-step governance model. Employees can browse the gallery and submit procurement or access requests for the agents that fit their needs, while IT remains firmly in the driver's seat. Administrators review all incoming requests to approve or deny deployments, retaining granular control over exactly who can interact with each agent across the organization.
+A unified ecosystem breaking down silos: Typically, purchasing third-party AI means bolting on disconnected platforms. Our approach eliminates that friction. These partner agents are built to natively run within Gemini Enterprise Agent Platform. This means third-party agents and internal custom builds live side-by-side in a single, cohesive ecosystem, allowing your organization to scale its AI capabilities infinitely without ever fracturing your infrastructure.
+Go-to-market opportunity for Partners: Today, we announced a $750 million partner fund for agentic development. In addition, partners can tap into a $460 billion plus backlog of committed enterprise spend and reach millions of Gemini Enterprise users directly in their daily workflows. We are turning everyday user discovery into a procurement flow for IT, standardizing contracts and accelerating purchasing cycles by up to 50% . With Google sales reps incentivized to work with you, and Marketplace vendors closing deals 112% larger , there has never been a better time to build with Google Cloud.
+Where you can get started:
+For customers: Discover these agents directly via the Agent Gallery in the Gemini Enterprise app . Start your 30-day trial today.
+For partners: Take advantage of our rapid agent deployment framework, which provides a clear path to onboard, commercialize, and make agents discoverable to Gemini Enterprise users. Apply for our AI Agents Program now.
+In addition, we’re launching the Google for Startups AI Agents Challenge today, including a track dedicated to startups with agents that can be primed for use in Gemini Enterprise.
+Meet the agents your organization can start using today
+A sampling of featured partner-built agents from Agent Marketplace accessible via the Agent Gallery in the Gemini Enterprise app
+Acalvio: ShadowPlex Preemptive Cyberdefense Agent deploys honeytokens in Cloud IAM and in cloud workloads to disrupt agentic AI attacks at the reconnaissance phase. This helps secure cloud workloads from malicious or unsafe agent actions in real time.
+Accenture: The Supply Chain Inventory Intelligent Advisor agent is an agentic AI-powered decision support system designed to optimize inventory planning and tracking efficiently. Using real-time Data and AI, it delivers actionable insights to balance service levels and minimize excess inventory.
+Adobe: Adobe Marketing Agent for Gemini Enterprise connects natural language queries to Adobe's Customer Experience agentic capabilities. It enables instant insights on campaign performance, target audiences and journey monitoring powered by Adobe, helping teams work smarter without leaving their workflow.
+Alteryx: Alteryx AI Insights Agent delivers analyst-curated insights inside Gemini Enterprise. Built on Alteryx One, analysts define trusted datasets while business users simply ask questions to receive governed, repeatable answers. Requires an Alteryx One subscription.
+Ambiguous AI: Ambiguous Recruiting Coworker manages candidate communication, multi-round scheduling, and pipeline tracking from application to offer. It works natively across Gmail, Google Calendar, Google Sheets, Google Drive, and more, while looping you in for key decisions.
+Amdocs: The Telco Customer Experience Agent autonomously resolves complex customer service issues across digital and contact center channels. Combining Amdocs Cognitive Core with Gemini Enterprise for CX, it reasons, orchestrates, and executes end‑to‑end telco processes, improving resolution speed, cost efficiency, and customer satisfaction.
+AODocs: AODocs AI Agent provides instant, trustworthy answers grounded exclusively in the latest validated versions of controlled documents. It supports diverse use cases including standard operating procedures (SOPs), engineering specs, legal policies, and risk management procedures.
+Articul8 AI: Articul8 Table Understanding Agent converts complex documents into analytics-ready table data. It reconstructs hierarchical layouts and relationships missed by traditional OCR for accurate analysis. Articul8 Diagram Understanding Agent turns complex diagrams into structured data, interpreting symbols and spatial relationships for automated analysis and seamless workflow integration.
+Ascendo: Ascendo AI Agent helps critical infrastructure teams automate workflows, improve diagnostics, and reduce field escalations. By ingesting logs, telemetry, and service manuals, it recommends optimal actions to support faster, accurate decision-making in complex service environments.
+Atlassian: Rovo is an AI teammate seamlessly integrated across Jira, Confluence, and your tool stack. Built on Atlassian’s Teamwork Graph, it surfaces knowledge, automates tasks, and takes intelligent actions to help teams pull context, move faster and stay aligned.
+AutoCIO: Portfolio managers and investment teams use the AutoCIO Financial Forecasting Agent to design, optimize, and manage portfolios. It automates end-to-end workflows, delivers predictive signals across 50,000+ securities, and enables real-time, hyper-customized strategies via natural language prompts.
+Avalara: Avi Agent is an AI-powered gateway for tax and compliance automation. Built on Avalara’s Agentic platform, it smartly coordinates between external systems and compliance agents to instantly and securely calculate taxes, file returns, and manage invoicing.
+Backstory: Backstory Revenue Answers Agent tells revenue leaders what's happening on any account, identifies deal risks, and suggests actions. It achieves this by synthesizing CRM data, engagement activity, stakeholder relationships, and public company news into actionable insights.
+Botcopy: TrueQ is an AI analyst for government contact centers, enabling supervisors to understand and improve conversational AI performance in the Gemini Enterprise app. It identifies conversation patterns, escalation triggers, and knowledge gaps to improve automation, strengthen governance, and reduce support costs.
+Carto: Carto Site Selection AI Agent helps enterprises analyze and visualize prospective commercial locations using spatial analytics. Users ask conversational questions about foot traffic, demographics, or competitors, and results automatically fuel a comprehensive location analysis.
+Corvic AI: Corvic AI Agent connects to your enterprise data and delivers production-ready decision intelligence — no pipelines and no data engineering required. Use cases include turning competitive signals and market trend data into actionable intelligence, root cause analysis and customer support automation.
+Cotality: The Cotality Payoff Analysis Agent helps mortgage lenders improve customer retention and reduce loan runoff. By analyzing loan originations and payoffs, it delivers actionable intelligence to understand recapture performance, borrower behavior, and competitive insights.
+Crescendo Lab Ltd.: DAAC AI Agent transforms complex data into actionable growth strategies for marketing and sales. Using natural language, it delivers instant conversational insights and automated dashboards, effectively eliminating manual reporting and guesswork.
+Deloitte: Tariff Management Agentic Suite automates customs regulatory workflows via sub-agents that ingest documentation, extract attributes, and reconcile tariffs against filings. It flags discrepancies to ensure full audit coverage, eliminate manual effort, and recover unnoticed costs.
+Devoteam: Demand Sensing Agent helps leaders improve forecast accuracy and optimize inventory. It analyzes sales and real-time market signals to provide immediate demand insights, enabling proactive adjustments. Request for Proposal Agent helps sales teams draft proposals, leveraging centralized knowledge to rapidly generate tailored and compliant proposal drafts.
+Dun & Bradstreet: The Dun & Bradstreet Business Verification Agent enables trusted business verification in the Gemini Enterprise app. Powered by Dun & Bradstreet’s trusted data, it resolves businesses to a D-U-N-S® Number and validates identity attributes, enabling front-line teams to move faster and focus on exceptions.
+Dynatrace: Dynatrace for Gemini Enterprise integrates AI agents with Dynatrace observability data via Gemini Enterprise Agent Platform and A2A protocol. This enables real-time insights into performance, infrastructure, and user experience, seamlessly enhancing AI workflows while ensuring enterprise-grade security and compliance.
+Enigma: Enigma KYB Agent gives compliance teams instant, AI-driven business verification backed by ground-truth business identity from 100M+ registrations and authoritative government records, plus sanctions watchlists and real-time transaction signals.
+Eon: Eon AI Agent empowers cloud infrastructure teams to streamline data protection operations. It connects Google Cloud accounts, triggers resource discovery, monitors protected resources, tracks backup jobs, and inspects restore status — all through natural conversation, replacing manual console workflows.
+EPAM: Creative Conductor Marketing Agent turns creative briefs into polished promotional videos. It coordinates specialized sub-agents for visuals, voiceover, and music, assembling assets into a final MP4 to deliver fast, scalable, high-quality marketing content.
+Exa AI: Exa Agent gives workers a live web view, turning it into a searchable database of code, people, and companies. It searches billions of pages to accelerate tasks like developer tooling, recruiting, and market mapping.
+Foxtrot Communications: Forge - AI Agent helps teams eliminate manual ETL pipeline development. Connect any API, and Forge autonomously delivers clean, normalized, analytics-ready datasets, reducing time-to-insight to minutes and freeing engineers to focus on strategic initiatives.
+Genpact (UK) Ltd: Genpact Finance One – Revenue Lens and PnL Agents are a suite of agents built on Google ADK and the A2A protocol, enabling finance users to gain actionable insights from revenue and profit & loss data through natural language conversations in Gemini Enterprise.
+Genspark: Genspark AI Agent turns multi-step work into finished outputs with one prompt by combining search, web interaction, content generation, and media creation. It helps users execute research, create documents, and automate workflows through a single agent built for real work.
+HCLTech: HCLTech ITOps Agent is built on Google Cloud and the HCLTech AI Force platform and enables autonomous IT operations within ServiceNow. Using natural language, it triages incidents, surfaces relevant SOPs, and drives guided remediation to improve overall efficiency, consistency, and operational performance.
+Invideo: Invideo empowers marketing teams to scale video production while maintaining consistency. By leveraging brand guidelines and assets, it delivers production-ready ads and short films with built-in quality controls and output in 50+ languages.
+Iron Mountain, Inc.: The Iron Mountain InSight® DXP AI Agent bridges Gemini Enterprise and your managed content for unified search and AI-powered Q&A. Its intended purpose is to accelerate results and reduce hours of manual document review to seconds of conversational inquiry.
+Lilt: LILT Assist empowers global content managers to transition from manual tasks to autonomous orchestration, managing end-to-end multilingual production and brand governance. Assist scales global content volumes with AI while ensuring enterprise-grade consistency and compliance.
+Lovable: Lovable empowers anyone to build real apps and websites by chatting with AI. Teams across product, design, marketing, sales and operations can turn ideas into real, working software.
+LTM: LTM Video Intelligence Agent is based on Google Cloud AI technology and converts recorded videos into BDD test cases in a standard format for faster time-to-test and improved productivity.
+LumApps: The LumApps AI Agent helps organizations retrieve company knowledge and announcements, trigger workflows, and complete tasks across enterprise systems.
+Manhattan: Manhattan Active Agents are AI digital teammates for warehouse management , transportation management , order management , and platform operations . These agents help monitor work, resolve exceptions, guide users, automate tasks, and recommend actions to reduce manual effort; improving speed and accuracy, increasing utilization, and delivering better operational resilience.
+Menlo Security: The Menlo Security Orchestrator for Gemini Enterprise reduces mean time to repair (MTTR) from hours to milliseconds. Command global policy and perform deep threat reporting through natural conversation in the Gemini Enterprise app.
+monday.com: monday.com agent in Gemini Enterprise turns planning into execution. Teams can quickly build boards, summarize updates, and trigger automations without leaving their workspace—keeping everyone aligned, tracking progress, and driving measurable results.
+Nativeorange: LexAI Agent streamlines property and casualty (P&C) underwriting and operations. It ingests submissions, extracts data, and automates risk evaluation, delivering actionable insights on classification and offering next steps to improve speed, accuracy, and decision consistency.
+Neo4j: Neo4j Agent translates natural language into Cypher, enabling applications to read from and write to the Neo4j database. Integrated with Gemini Enterprise, it can be used to build agents grounded with GraphRAG and connected enterprise knowledge.
+Obin AI: Obin Financial Agent helps private markets and commercial lending teams run financial analysis from Gemini Enterprise. Users submit model spreadsheets and deal-related documents with a scenario description in plain-language. The agent then extracts relevant data and computes financial metrics across modeling assumptions.
+Onix: The Onix Risk & Compliance Intelligence Agent automates compliance reviews and risk assessments across regulated industries. It reduces review times from weeks to minutes, proactively identifies regulatory risks, and creates detailed audit trails with citations.
+OpenText: OpenText™ Content Aviator™ is a generative AI assistant that enhances content search and productivity. Built on Gemini Enterprise Agent Platform, it allows users to perform natural language searches and efficiently summarize enterprise documents.
+Oracle: Oracle AI Database Agent lets you query Oracle data directly from Gemini Enterprise. Available via Google Cloud Marketplace, it delivers fast, enterprise-grade answers without requiring custom chatbots or NL-to-SQL maintenance.
+Orion by Gravity: Orion by Gravity is an AI analyst that connects to Looker, BigQuery, and more to proactively hunt for insights. It empowers data teams to identify anomalies and recommend actions that uncover 'unknown-unknowns' in analytics-rich industries.
+Palo Alto Networks: Prisma AIRS Model Security agent scans over 35 model formats to eliminate malicious code hidden deep within model layers. This proactive defense goes beyond standard scanning to ensure neural integrity, detecting poisoned weights and backdoors to prevent unauthorized data exfiltration and model hijacking.
+Pendo: The Pendo Agent connects your product intelligence to Gemini Enterprise. Query usage trends across SaaS and AI tools, surface adoption gaps, and understand the impact of your AI investments without leaving the Gemini Enterprise app.
+Persistent Systems: Ethical Content Auditor Agent helps editors at publishing houses audit political and social content for potential biases and r
+
+## full_text
+
+AI & Machine Learning
+Enabling the agentic enterprise: business and industry agents arrive in Gemini Enterprise
+April 22, 2026
+Satish Thomas VP, Applied AI and Platform Ecosystem, Google Cloud
+Try Gemini Enterprise Business Edition today The front door to AI in the workplace
+Try now
+We are officially moving past the era of one-size-fits-all AI. Enterprises today require highly specialized, role-specific tools to drive real productivity — but they cannot afford to sacrifice security, oversight, or control to get there.
+What's new : Today, we’re bringing partner-built agents from our Agent Marketplace directly into the Agent Gallery inside the Gemini Enterprise app. This creates a powerful, centrally governed hub for discovering and managing specialized AI from partners like Accenture, Adobe, Atlassian, Deloitte, Lovable, Oracle, Palo Alto Networks, Replit, S&P Global, Salesforce, ServiceNow, Workday, and more.
+Why this matters for your business: With millions of paid seats across thousands of companies, the Gemini Enterprise app allows organizations to automate complex, end-to-end workflows in a single, unified environment. Five key benefits include:
+Move beyond agentic overclaims: The market is flooded with passive chatbots and rigid workflows. Our featured Marketplace partners deliver true autonomous agents capable of executing complex, end-to-end tasks. They achieve this by combining deep context and memory, intelligent orchestration, and safe tool use.
+High-caliber agents: Every featured agent earns the "Google Cloud Ready - Gemini Enterprise" designation only after passing a strict four-step evaluation for basic functionality, output accuracy, autonomous execution, and enterprise standards.
+Built-in safeguards: Gemini Enterprise Agent Platform assigns every agent a cryptographically secure identity for a clear audit trail, while our Agent Gateway and Model Armor actively screen traffic to guarantee your data is never used for model training.
+Strong IT governance: To balance workforce productivity with strict organizational oversight, we've built Agent Gallery around a secure, two-step governance model. Employees can browse the gallery and submit procurement or access requests for the agents that fit their needs, while IT remains firmly in the driver's seat. Administrators review all incoming requests to approve or deny deployments, retaining granular control over exactly who can interact with each agent across the organization.
+A unified ecosystem breaking down silos: Typically, purchasing third-party AI means bolting on disconnected platforms. Our approach eliminates that friction. These partner agents are built to natively run within Gemini Enterprise Agent Platform. This means third-party agents and internal custom builds live side-by-side in a single, cohesive ecosystem, allowing your organization to scale its AI capabilities infinitely without ever fracturing your infrastructure.
+Go-to-market opportunity for Partners: Today, we announced a $750 million partner fund for agentic development. In addition, partners can tap into a $460 billion plus backlog of committed enterprise spend and reach millions of Gemini Enterprise users directly in their daily workflows. We are turning everyday user discovery into a procurement flow for IT, standardizing contracts and accelerating purchasing cycles by up to 50% . With Google sales reps incentivized to work with you, and Marketplace vendors closing deals 112% larger , there has never been a better time to build with Google Cloud.
+Where you can get started:
+For customers: Discover these agents directly via the Agent Gallery in the Gemini Enterprise app . Start your 30-day trial today.
+For partners: Take advantage of our rapid agent deployment framework, which provides a clear path to onboard, commercialize, and make agents discoverable to Gemini Enterprise users. Apply for our AI Agents Program now.
+In addition, we’re launching the Google for Startups AI Agents Challenge today, including a track dedicated to startups with agents that can be primed for use in Gemini Enterprise.
+Meet the agents your organization can start using today
+A sampling of featured partner-built agents from Agent Marketplace accessible via the Agent Gallery in the Gemini Enterprise app
+Acalvio: ShadowPlex Preemptive Cyberdefense Agent deploys honeytokens in Cloud IAM and in cloud workloads to disrupt agentic AI attacks at the reconnaissance phase. This helps secure cloud workloads from malicious or unsafe agent actions in real time.
+Accenture: The Supply Chain Inventory Intelligent Advisor agent is an agentic AI-powered decision support system designed to optimize inventory planning and tracking efficiently. Using real-time Data and AI, it delivers actionable insights to balance service levels and minimize excess inventory.
+Adobe: Adobe Marketing Agent for Gemini Enterprise connects natural language queries to Adobe's Customer Experience agentic capabilities. It enables instant insights on campaign performance, target audiences and journey monitoring powered by Adobe, helping teams work smarter without leaving their workflow.
+Alteryx: Alteryx AI Insights Agent delivers analyst-curated insights inside Gemini Enterprise. Built on Alteryx One, analysts define trusted datasets while business users simply ask questions to receive governed, repeatable answers. Requires an Alteryx One subscription.
+Ambiguous AI: Ambiguous Recruiting Coworker manages candidate communication, multi-round scheduling, and pipeline tracking from application to offer. It works natively across Gmail, Google Calendar, Google Sheets, Google Drive, and more, while looping you in for key decisions.
+Amdocs: The Telco Customer Experience Agent autonomously resolves complex customer service issues across digital and contact center channels. Combining Amdocs Cognitive Core with Gemini Enterprise for CX, it reasons, orchestrates, and executes end‑to‑end telco processes, improving resolution speed, cost efficiency, and customer satisfaction.
+AODocs: AODocs AI Agent provides instant, trustworthy answers grounded exclusively in the latest validated versions of controlled documents. It supports diverse use cases including standard operating procedures (SOPs), engineering specs, legal policies, and risk management procedures.
+Articul8 AI: Articul8 Table Understanding Agent converts complex documents into analytics-ready table data. It reconstructs hierarchical layouts and relationships missed by traditional OCR for accurate analysis. Articul8 Diagram Understanding Agent turns complex diagrams into structured data, interpreting symbols and spatial relationships for automated analysis and seamless workflow integration.
+Ascendo: Ascendo AI Agent helps critical infrastructure teams automate workflows, improve diagnostics, and reduce field escalations. By ingesting logs, telemetry, and service manuals, it recommends optimal actions to support faster, accurate decision-making in complex service environments.
+Atlassian: Rovo is an AI teammate seamlessly integrated across Jira, Confluence, and your tool stack. Built on Atlassian’s Teamwork Graph, it surfaces knowledge, automates tasks, and takes intelligent actions to help teams pull context, move faster and stay aligned.
+AutoCIO: Portfolio managers and investment teams use the AutoCIO Financial Forecasting Agent to design, optimize, and manage portfolios. It automates end-to-end workflows, delivers predictive signals across 50,000+ securities, and enables real-time, hyper-customized strategies via natural language prompts.
+Avalara: Avi Agent is an AI-powered gateway for tax and compliance automation. Built on Avalara’s Agentic platform, it smartly coordinates between external systems and compliance agents to instantly and securely calculate taxes, file returns, and manage invoicing.
+Backstory: Backstory Revenue Answers Agent tells revenue leaders what's happening on any account, identifies deal risks, and suggests actions. It achieves this by synthesizing CRM data, engagement activity, stakeholder relationships, and public company news into actionable insights.
+Botcopy: TrueQ is an AI analyst for government contact centers, enabling supervisors to understand and improve conversational AI performance in the Gemini Enterprise app. It identifies conversation patterns, escalation triggers, and knowledge gaps to improve automation, strengthen governance, and reduce support costs.
+Carto: Carto Site Selection AI Agent helps enterprises analyze and visualize prospective commercial locations using spatial analytics. Users ask conversational questions about foot traffic, demographics, or competitors, and results automatically fuel a comprehensive location analysis.
+Corvic AI: Corvic AI Agent connects to your enterprise data and delivers production-ready decision intelligence — no pipelines and no data engineering required. Use cases include turning competitive signals and market trend data into actionable intelligence, root cause analysis and customer support automation.
+Cotality: The Cotality Payoff Analysis Agent helps mortgage lenders improve customer retention and reduce loan runoff. By analyzing loan originations and payoffs, it delivers actionable intelligence to understand recapture performance, borrower behavior, and competitive insights.
+Crescendo Lab Ltd.: DAAC AI Agent transforms complex data into actionable growth strategies for marketing and sales. Using natural language, it delivers instant conversational insights and automated dashboards, effectively eliminating manual reporting and guesswork.
+Deloitte: Tariff Management Agentic Suite automates customs regulatory workflows via sub-agents that ingest documentation, extract attributes, and reconcile tariffs against filings. It flags discrepancies to ensure full audit coverage, eliminate manual effort, and recover unnoticed costs.
+Devoteam: Demand Sensing Agent helps leaders improve forecast accuracy and optimize inventory. It analyzes sales and real-time market signals to provide immediate demand insights, enabling proactive adjustments. Request for Proposal Agent helps sales teams draft proposals, leveraging centralized knowledge to rapidly generate tailored and compliant proposal drafts.
+Dun & Bradstreet: The Dun & Bradstreet Business Verification Agent enables trusted business verification in the Gemini Enterprise app. Powered by Dun & Bradstreet’s trusted data, it resolves businesses to a D-U-N-S® Number and validates identity attributes, enabling front-line teams to move faster and focus on exceptions.
+Dynatrace: Dynatrace for Gemini Enterprise integrates AI agents with Dynatrace observability data via Gemini Enterprise Agent Platform and A2A protocol. This enables real-time insights into performance, infrastructure, and user experience, seamlessly enhancing AI workflows while ensuring enterprise-grade security and compliance.
+Enigma: Enigma KYB Agent gives compliance teams instant, AI-driven business verification backed by ground-truth business identity from 100M+ registrations and authoritative government records, plus sanctions watchlists and real-time transaction signals.
+Eon: Eon AI Agent empowers cloud infrastructure teams to streamline data protection operations. It connects Google Cloud accounts, triggers resource discovery, monitors protected resources, tracks backup jobs, and inspects restore status — all through natural conversation, replacing manual console workflows.
+EPAM: Creative Conductor Marketing Agent turns creative briefs into polished promotional videos. It coordinates specialized sub-agents for visuals, voiceover, and music, assembling assets into a final MP4 to deliver fast, scalable, high-quality marketing content.
+Exa AI: Exa Agent gives workers a live web view, turning it into a searchable database of code, people, and companies. It searches billions of pages to accelerate tasks like developer tooling, recruiting, and market mapping.
+Foxtrot Communications: Forge - AI Agent helps teams eliminate manual ETL pipeline development. Connect any API, and Forge autonomously delivers clean, normalized, analytics-ready datasets, reducing time-to-insight to minutes and freeing engineers to focus on strategic initiatives.
+Genpact (UK) Ltd: Genpact Finance One – Revenue Lens and PnL Agents are a suite of agents built on Google ADK and the A2A protocol, enabling finance users to gain actionable insights from revenue and profit & loss data through natural language conversations in Gemini Enterprise.
+Genspark: Genspark AI Agent turns multi-step work into finished outputs with one prompt by combining search, web interaction, content generation, and media creation. It helps users execute research, create documents, and automate workflows through a single agent built for real work.
+HCLTech: HCLTech ITOps Agent is built on Google Cloud and the HCLTech AI Force platform and enables autonomous IT operations within ServiceNow. Using natural language, it triages incidents, surfaces relevant SOPs, and drives guided remediation to improve overall efficiency, consistency, and operational performance.
+Invideo: Invideo empowers marketing teams to scale video production while maintaining consistency. By leveraging brand guidelines and assets, it delivers production-ready ads and short films with built-in quality controls and output in 50+ languages.
+Iron Mountain, Inc.: The Iron Mountain InSight® DXP AI Agent bridges Gemini Enterprise and your managed content for unified search and AI-powered Q&A. Its intended purpose is to accelerate results and reduce hours of manual document review to seconds of conversational inquiry.
+Lilt: LILT Assist empowers global content managers to transition from manual tasks to autonomous orchestration, managing end-to-end multilingual production and brand governance. Assist scales global content volumes with AI while ensuring enterprise-grade consistency and compliance.
+Lovable: Lovable empowers anyone to build real apps and websites by chatting with AI. Teams across product, design, marketing, sales and operations can turn ideas into real, working software.
+LTM: LTM Video Intelligence Agent is based on Google Cloud AI technology and converts recorded videos into BDD test cases in a standard format for faster time-to-test and improved productivity.
+LumApps: The LumApps AI Agent helps organizations retrieve company knowledge and announcements, trigger workflows, and complete tasks across enterprise systems.
+Manhattan: Manhattan Active Agents are AI digital teammates for warehouse management , transportation management , order management , and platform operations . These agents help monitor work, resolve exceptions, guide users, automate tasks, and recommend actions to reduce manual effort; improving speed and accuracy, increasing utilization, and delivering better operational resilience.
+Menlo Security: The Menlo Security Orchestrator for Gemini Enterprise reduces mean time to repair (MTTR) from hours to milliseconds. Command global policy and perform deep threat reporting through natural conversation in the Gemini Enterprise app.
+monday.com: monday.com agent in Gemini Enterprise turns planning into execution. Teams can quickly build boards, summarize updates, and trigger automations without leaving their workspace—keeping everyone aligned, tracking progress, and driving measurable results.
+Nativeorange: LexAI Agent streamlines property and casualty (P&C) underwriting and operations. It ingests submissions, extracts data, and automates risk evaluation, delivering actionable insights on classification and offering next steps to improve speed, accuracy, and decision consistency.
+Neo4j: Neo4j Agent translates natural language into Cypher, enabling applications to read from and write to the Neo4j database. Integrated with Gemini Enterprise, it can be used to build agents grounded with GraphRAG and connected enterprise knowledge.
+Obin AI: Obin Financial Agent helps private markets and commercial lending teams run financial analysis from Gemini Enterprise. Users submit model spreadsheets and deal-related documents with a scenario description in plain-language. The agent then extracts relevant data and computes financial metrics across modeling assumptions.
+Onix: The Onix Risk & Compliance Intelligence Agent automates compliance reviews and risk assessments across regulated industries. It reduces review times from weeks to minutes, proactively identifies regulatory risks, and creates detailed audit trails with citations.
+OpenText: OpenText™ Content Aviator™ is a generative AI assistant that enhances content search and productivity. Built on Gemini Enterprise Agent Platform, it allows users to perform natural language searches and efficiently summarize enterprise documents.
+Oracle: Oracle AI Database Agent lets you query Oracle data directly from Gemini Enterprise. Available via Google Cloud Marketplace, it delivers fast, enterprise-grade answers without requiring custom chatbots or NL-to-SQL maintenance.
+Orion by Gravity: Orion by Gravity is an AI analyst that connects to Looker, BigQuery, and more to proactively hunt for insights. It empowers data teams to identify anomalies and recommend actions that uncover 'unknown-unknowns' in analytics-rich industries.
+Palo Alto Networks: Prisma AIRS Model Security agent scans over 35 model formats to eliminate malicious code hidden deep within model layers. This proactive defense goes beyond standard scanning to ensure neural integrity, detecting poisoned weights and backdoors to prevent unauthorized data exfiltration and model hijacking.
+Pendo: The Pendo Agent connects your product intelligence to Gemini Enterprise. Query usage trends across SaaS and AI tools, surface adoption gaps, and understand the impact of your AI investments without leaving the Gemini Enterprise app.
+Persistent Systems: Ethical Content Auditor Agent helps editors at publishing houses audit political and social content for potential biases and risks. Editorial Assistant Agent enables efficient manuscript evaluation by reading and understanding long manuscripts, analyzing market trends and providing data-backed summaries and recommendations.
+Pluto7: Pluto7’s Planning in a Box - Pi Agent orchestrates 50+ sub-agents for supply chain and manufacturing teams. This enables self-healing, autonomous supply chains that optimize demand and production in real-time.
+Product Genius: Product Genius brings AI-powered ecommerce intelligence directly into Gemini Enterprise. Share your website URL to get instant insights, actionable policies, and a conversational analyst that helps you optimize your store—no code install required.
+Quantum Metric: Felix Agentic for Gemini Enterprise delivers instant insight, contextualized in business objectives, to digital leaders and analytics teams. Leveraging Gemini models, Felix continuously analyzes your digital experience to explain what changed, why it matters, and where it’s costing you.
+Red Hat, LLC: Red Hat Lightspeed Agent for Google Cloud helps SREs and admins manage Red Hat Enterprise Linux infrastructure on Google Cloud via natural language. Built on A2A and Gemini, it securely connects with Red Hat Lightspeed services to streamline enterprise IT operations on Google Cloud.
+Replit: Replit Agent enables business users to build enterprise-grade applications using natural language. With no coding knowledge required, users turn complex requirements—like a BigQuery-backed customer health dashboard—into functional custom tools in minutes.
+S&P Global: The S&P Global Data Retrieval Agent by Kensho enables financial professionals to access cited data from S&P Global's proprietary datasets. It allows analysts and portfolio managers to analyze earnings calls, conduct market research, and instantly retrieve specific financial metrics.
+Salesforce: Agentforce Sales for Gemini Enterprise can engage leads, create meeting briefs, surface deal risks and guidance, and manage pipeline and CRM updates — securely and in real-time — without leaving Gemini Enterprise. With the agent handling the grind of manual tasks, sellers can focus on relationship building and strategic selling to win.
+Sana from Workday: Sana Self-Service Agent instantly finds and summarizes information from Workday and other knowledge sources, providing personalized answers and assistance with tasks. With over 300 skills across areas like pay, time, and absence, the agent handles everyday HR and finance tasks globally, reducing support tickets and allowing teams to focus on high-value work.
+Saviynt: Identity Security for AI enables continuous discovery and inventory of agents, identifying their functions, access, and risks. It treats agents as first-class identities with defined purposes and accountable owners. This blend of posture visibility and enforced accountability converts opaque automation into governable, enterprise-ready identities.
+ServiceNow: Now Assist for IT Operations Management operates inside the ServiceNow AI Platform, harnessing the power of GenAI to elevate operational intelligence and automation across IT environments. It introduces a suite of AI-driven capabilities designed to optimize every stage of alert and incident management.
+Sheetgo: Sheetgo is an AI-ready data execution platform that transforms spreadsheet-driven operations into governed, reliable pipelines for BigQuery and Gemini Enterprise.
+Skyflow: The Skyflow Runtime Data Security Agent helps teams securely deploy agents on Gemini Enterprise Agent Platform. It provides expert guidance and on-demand data protection with fine-grained access controls, enabling enterprises to meet compliance without risking privacy.
+Supermetrics: The Supermetrics Marketing Intelligence Agent delivers live, cross-channel performance insights directly in Gemini Enterprise. Connecting to 175+ sources like Google Ads and GA4, it provides fast, hallucination-free analysis using simple natural language prompts.
+Synthpop Inc.: The Synthpop Patient Journey Orchestration Agent turns unstructured referrals into validated, payer-ready orders in real time by executing intake and patient-facing workflows. These flows help payers save time as part of Synthpop’s coordinated, production-grade administrative backbone.
+Tech Mahindra: Frontline agents use Order Assist to resolve complex orders and service cases faster. By delivering real-time, contextual intelligence through conversation, it reduces handling time, improves first-contact resolution, and enables consistent, data-driven responses.
+Teradata: Data Analyst AI Agent enables natural-language analytics on enterprise data in Google Cloud. It translates business questions into governed SQL and Python workflows on Teradata, delivering faster, secure insights without requiring data movement.
+Typeface: Typeface Agent acts as a seamless bridge to creative campaigns. It enables instant access to Typeface teams, brand assets, and campaigns via natural language from Gemini Enterprise. Users can trigger high-quality, brand-aligned content creation workflows, streamlining the journey from ideation to production.
+UKG: Agentic People Assist — HR Service Delivery elevates the agentic capabilities of the UKG Workforce Operating Platform by empowering employees and managers with knowledge and connected agents to turn intent into action. It orchestrates workflows across time, pay, and HR to deliver real-time, personalized, and measurable outcomes.
+WRITER: WRITER Agent is autonomous AI for Fortune 500 enterprises. Built for high-stakes enterprise workflows, it safely plans and executes autonomous work across data and tools based on company context, from brand standards to repeatable playbooks.
+XM Cyber: XM Cyber’s PostureAI agent serves as an autonomous posture specialist, providing continuous assessment of Google Workspace applications against security best practices. It is part of a broader Continuous Exposure Management offering that allows organizations to safely adopt AI and secure their critical business processes.
+Together, we are creating the world's largest ecosystem of agents — one that will redefine every industry, supercharge every function, and accelerate every business process. I cannot wait to see what we all achieve together.
+Posted in AI & Machine Learning
+Partners
+Google Cloud Next
+Related articles
+Developers & Practitioners
+A developer's guide to publishing agents in Gemini Enterprise and Google Cloud Marketplace
+By Sunny Walia • 12-minute read
+Compute
+Report: 83% of organizations need to upgrade their infrastructure to support agentic AI
+By Drew Bradstock • 6-minute read
+AI & Machine Learning
+20 questions for the Agentic Enterprise (and how Agent Platform can help)
+By Kanchana Patlolla • 15-minute read
+Security & Identity
+Drive proactive security, prioritize risks with Google Threat Intelligence and Wiz ASM
+By Megan DeBlois • 3-minute read
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 97
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":24910,"paragraph_count":100,"sentence_count":167,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Partner-built agents available in Gemini Enterprise | Google Cloud Blog AI & Machine Learning # Enabling the agentic enterprise: business and industry agents arrive in Gemini Enterprise April 23, 2026 ##### Satish Thomas VP, Applied AI and Platform Ecosystem, Google Cloud ##### Try Gemini Ente... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   AI & Machine Learning Enabling the agentic enterprise: business and industry agents arrive in Gemini Enterprise April 22, 2026 Satish Thomas VP, Applied AI and Platform Ecosystem, Google Cloud Try Gemini Enterprise Business Edition today The front door to AI in the workplace Try now We are officially moving past the era of one-size-fits-all AI.
+
+3. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=high
+   Enterprises today require highly specialized, role-specific tools to drive real productivity — but they cannot afford to sacrifice security, oversight, or control to get there.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   What's new : Today, we’re bringing partner-built agents from our Agent Marketplace directly into the Agent Gallery inside the Gemini Enterprise app.
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   This creates a powerful, centrally governed hub for discovering and managing specialized AI from partners like Accenture, Adobe, Atlassian, Deloitte, Lovable, Oracle, Palo Alto Networks, Replit, S&P Global, Salesforce, ServiceNow, Workday, and more.
+
+6. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Why this matters for your business: With millions of paid seats across thousands of companies, the Gemini Enterprise app allows organizations to automate complex, end-to-end workflows in a single, unified environment.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Google, Salesforce, ServiceNow, Deloitte
+- products: agents, Gemini, agent, Agent, Agents
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 采购负责人, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 采购, 销售 / 客服
+- numbers: 23, 2026, 22, $750 million, $460 billion, 50%, 112%, 30
+- quotes: Google Cloud Ready - Gemini Enterprise
+
+## evidence_seed
+
+- company_actions: AI & Machine Learning Enabling the agentic enterprise: business and industry agents arrive in Gemini Enterprise April 22, 2026 Satish Thomas VP, Applied AI and Platform Ecosystem, Google Cloud Try Gemini Enterprise Business Edition today The front door to AI in the workplace Try now We are officially moving past the era of one-size-fits-all AI. / What's new : Today, we’re bringing partner-built agents from our Agent Marketplace directly into the Agent Gallery inside the Gemini Enterprise app.
+- case_details: 暂无公开信息
+- workflow_changes: Partner-built agents available in Gemini Enterprise | Google Cloud Blog AI & Machine Learning # Enabling the agentic enterprise: business and industry agents arrive in Gemini Enterprise April 23, 2026 ##### Satish Thomas VP, Applied AI and Platform Ecosystem, Google Cloud ##### Try Gemini Ente... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original / This creates a powerful, centrally governed hub for discovering and managing specialized AI from partners like Accenture, Adobe, Atlassian, Deloitte, Lovable, Oracle, Palo Alto Networks, Replit, S&P Global, Salesforce, ServiceNow, Workday, and more. / Why this matters for your business: With millions of paid seats across thousands of companies, the Gemini Enterprise app allows organizations to automate complex, end-to-end workflows in a single, unified environment.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 采购负责人, 销售 / 客服
+- risks_or_constraints: Enterprises today require highly specialized, role-specific tools to drive real productivity — but they cannot afford to sacrifice security, oversight, or control to get there.
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Partner-built agents available in Gemini Enterprise | Google Cloud Blog AI & Machine Learning # Enabling the agentic enterprise: business and industry agents arrive in Gemini Enterprise April 23, 2026 ##### Satish Thomas VP, Applied AI and Platform Ecosystem, Google Cloud ##### Try Gemini Ente... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -2,15 +2,15 @@
 id: SIG-20260708-A08
 type: signal_card
 signal_type: case
-title: "Peraton 发布 Peraton[x]™"
+title: "Peraton 发布 Peraton[x]：面向关键任务运营的企业级 Agentic AI 平台"
 date: 2026-07-08
 status: published
 source_title: "Peraton Unveils Peraton[x]™: The First True Enterprise Agentic AI Platform Built for the Nation’s Most Critical Operations and Missions"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-08T06:10:03.935Z
-updated_at: 2026-07-08T06:10:03.935Z
+created_at: 2026-07-09T04:04:06.912Z
+updated_at: 2026-07-09T04:04:06.912Z
 
 raw_refs: ["R-060"]
 pool_refs: ["P-060"]
@@ -52,34 +52,34 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Peraton 发布 Peraton[x]™ Peraton Unveils Peraton[x]™: The First True Enterprise Agentic AI Platform Built for the Nation’s Most Critical Operations and Missions Peraton Unveils Peraton[x]™: The First True Enterprise Agent..."
+  source_excerpt: "Peraton 发布 Peraton[x]：面向关键任务运营的企业级 Agentic AI 平台 Peraton Unveils Peraton[x]™: The First True Enterprise Agentic AI Platform Built for the Nation’s Most Critical Operations and Missions 原始来源标题显示：Peraton 发布 Peraton[x]：面向关..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Peraton"
 
 frontend:
-  displayTitle: "Peraton 发布 Peraton[x]™"
+  displayTitle: "Peraton 发布 Peraton[x]：面向关键任务运营的企业级 Agentic AI 平台"
   sourceLinks:
     - "https://www.businesswire.com/news/home/20260707777574/en/Peraton-Unveils-Peratonx-The-First-True-Enterprise-Agentic-AI-Platform-Built-for-the-Nations-Most-Critical-Operations-and-Missions"
 ---
 
-# Peraton 发布 Peraton[x]™
+# Peraton 发布 Peraton[x]：面向关键任务运营的企业级 Agentic AI 平台
 
 ## 新闻事实
 
-Peraton 发布 Peraton[x]™
+原始来源标题显示：Peraton 发布 Peraton[x]：面向关键任务运营的企业级 Agentic AI 平台。
 
 ## 原文要点
 
-- Peraton 发布 Peraton[x]™
+- 原始来源标题显示：Peraton 发布 Peraton[x]：面向关键任务运营的企业级 Agentic AI 平台。
 
 ## 价值描述
 
-Peraton Unveils Peraton[x]™: The First True Enterprise Agentic AI Platform Built for the Nation’s Most Critical Operatio
+原始来源标题显示：Peraton 发布 Peraton[x]：面向关键任务运营的企业级 Agentic AI 平台。
 
 ## 可见原文片段
 
-Peraton 发布 Peraton[x]™
+原始来源标题显示：Peraton 发布 Peraton[x]：面向关键任务运营的企业级 Agentic AI 平台。
 
 ## 证据边界
 

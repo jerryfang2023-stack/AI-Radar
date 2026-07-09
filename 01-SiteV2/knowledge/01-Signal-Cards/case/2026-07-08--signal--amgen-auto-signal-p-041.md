@@ -2,15 +2,15 @@
 id: SIG-20260708-A02
 type: signal_card
 signal_type: case
-title: "Enterprise AI Rollout Case Study: Amgen's 20,000 Users"
+title: "Amgen 2 万名用户的企业 AI 推广案例"
 date: 2026-07-08
 status: published
 source_title: "Enterprise AI Rollout Case Study: Amgen's 20,000 Users | IntuitionLabs"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-08T06:10:03.935Z
-updated_at: 2026-07-08T06:10:03.935Z
+created_at: 2026-07-09T04:04:06.912Z
+updated_at: 2026-07-09T04:04:06.912Z
 
 raw_refs: ["R-041"]
 pool_refs: ["P-041"]
@@ -48,38 +48,38 @@ opportunity_signals:
   business_action: ["customer_deployment", "governance_requirement"]
   product_form: ["copilot"]
   delivery_model: ["project_based_service"]
-  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["case_study", "customer_metric", "deployment_scale"]
   source_evidence_type: ["first_party_case", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Enterprise AI Rollout Case Study: Amgen's 20,000 Users Enterprise AI Rollout Case Study: Amgen's 20,000 Users | IntuitionLabs Enterprise AI Rollout Case Study: Amgen's 20,000 Users none [{\"type\":\"case_detail\",\"text\":\"Ba..."
+  source_excerpt: "Amgen 2 万名用户的企业 AI 推广案例 Enterprise AI Rollout Case Study: Amgen's 20,000 Users | IntuitionLabs 原始来源标题显示：Amgen 2 万名用户的企业 AI 推广案例。"
   missing_fields: ["specific_task"]
 
 signal_owner: "Amgen"
 
 frontend:
-  displayTitle: "Enterprise AI Rollout Case Study: Amgen's 20,000 Users"
+  displayTitle: "Amgen 2 万名用户的企业 AI 推广案例"
   sourceLinks:
     - "https://intuitionlabs.ai/articles/enterprise-ai-rollout-case-study-amgen"
 ---
 
-# Enterprise AI Rollout Case Study: Amgen's 20,000 Users
+# Amgen 2 万名用户的企业 AI 推广案例
 
 ## 新闻事实
 
-Enterprise AI Rollout Case Study: Amgen's 20,000 Users
+原始来源标题显示：Amgen 2 万名用户的企业 AI 推广案例。
 
 ## 原文要点
 
-- Enterprise AI Rollout Case Study: Amgen's 20,000 Users
+- 原始来源标题显示：Amgen 2 万名用户的企业 AI 推广案例。
 
 ## 价值描述
 
-Enterprise AI Rollout Case Study: Amgen's 20,000 Users
+原始来源标题显示：Amgen 2 万名用户的企业 AI 推广案例。
 
 ## 可见原文片段
 
-Enterprise AI Rollout Case Study: Amgen's 20,000 Users
+原始来源标题显示：Amgen 2 万名用户的企业 AI 推广案例。
 
 ## 证据边界
 

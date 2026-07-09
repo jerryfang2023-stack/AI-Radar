@@ -13,7 +13,7 @@ on:
         required: false
         type: string
       pass_score:
-        description: "Daily Monitor diagnostic score reference. Hard gates and final QC still decide release."
+        description: "Daily Monitor diagnostic score reference. V3 Card/frontstage gates decide release; final QC is diagnostic support."
         required: false
         default: "85"
         type: string
@@ -93,9 +93,9 @@ jobs:
           fi
 
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            if [ -f "$raw_file" ] && [ -f "$pool_file" ] && [ -f "$signal_file" ] && [ "$signal_card_count" -ge 10 ]; then
+            if [ -f "$raw_file" ] && [ -f "$pool_file" ] && [ -f "$signal_file" ] && [ "$signal_card_count" -ge 1 ]; then
               skip=true
-              reason="same-date business-signal assets and signal cards already exist on main"
+              reason="same-date V3 business-signal assets and signal cards already exist on main"
             fi
           fi
 
@@ -129,7 +129,7 @@ jobs:
             echo "- openai_or_deepseek_required: false"
             echo
             echo "This V3.3 workflow commits Raw / Pool / business-signal Card assets, business-signal frontstage data, intelligence map data, and operations dashboard data to an automation branch, opens or updates a PR, and auto-merges the PR after all gates pass."
-            echo "Raw / Pool are persisted after monitor gates pass. Card assets are persisted after asset generation. Site data is persisted only after frontstage gates pass."
+            echo "Raw / Pool are persisted after V3 monitor hard gates pass. Card assets are persisted after asset generation. Site data is persisted only after Card/source-first/frontstage gates pass."
             echo "Business Signals monitor now defaults to source artifact aggregation: AI HOT, keyword, GDELT, and RSS are collected as independent source artifacts before the unified Raw / Pool chain runs."
             echo "First-line viewpoints are produced by .github/workflows/daily-first-line-viewpoints-pr.yml and are not part of this business-signal PR."
             echo "It never pushes directly to main. GitHub Pages deploys automatically after the PR merge updates main."

@@ -62,7 +62,20 @@ function arrayField(text = "", name) {
 }
 
 function normalize(value = "") {
-  return String(value || "")
+  const raw = String(value || "").trim();
+  try {
+    const url = new URL(raw);
+    const host = url.hostname.replace(/^www\./u, "").toLowerCase();
+    const dockey = /(^|\.)markets\.ft\.com$/iu.test(host) ? url.searchParams.get("dockey") : "";
+    return `${host} ${url.pathname}${dockey ? ` dockey ${dockey}` : ""}`
+      .toLowerCase()
+      .replace(/[^a-z0-9\u4e00-\u9fff]+/gu, " ")
+      .trim()
+      .replace(/\s+/gu, " ");
+  } catch {
+    // Non-URL values are normalized as text below.
+  }
+  return raw
     .toLowerCase()
     .replace(/https?:\/\/(www\.)?/u, "")
     .replace(/[?#].*$/u, "")

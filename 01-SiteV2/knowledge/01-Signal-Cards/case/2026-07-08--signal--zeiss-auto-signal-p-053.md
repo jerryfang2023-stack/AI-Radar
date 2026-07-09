@@ -2,15 +2,15 @@
 id: SIG-20260708-A01
 type: signal_card
 signal_type: case
-title: "ZEISS Case Study: Document Extraction with Dapr Agents"
+title: "ZEISS 使用 Dapr Agents 处理文档提取案例"
 date: 2026-07-08
 status: published
 source_title: "ZEISS Case Study: Document Extraction with Dapr Agents | Diagrid"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-08T06:10:03.935Z
-updated_at: 2026-07-08T06:10:03.935Z
+created_at: 2026-07-09T04:04:06.912Z
+updated_at: 2026-07-09T04:04:06.912Z
 
 raw_refs: ["R-053"]
 pool_refs: ["P-053"]
@@ -52,22 +52,22 @@ opportunity_signals:
   adoption_evidence: ["case_study", "third_party_report"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "ZEISS Case Study: Document Extraction with Dapr Agents ZEISS Case Study: Document Extraction with Dapr Agents | Diagrid 原文称，But raw model capability wasn't enough to ship to production."
+  source_excerpt: "ZEISS 使用 Dapr Agents 处理文档提取案例 ZEISS Case Study: Document Extraction with Dapr Agents | Diagrid 原始来源标题显示：ZEISS 使用 Dapr Agents 处理文档提取案例。"
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "ZEISS"
 
 frontend:
-  displayTitle: "ZEISS Case Study: Document Extraction with Dapr Agents"
+  displayTitle: "ZEISS 使用 Dapr Agents 处理文档提取案例"
   sourceLinks:
     - "https://www.diagrid.io/case-studies/zeiss-vision-document-extraction"
 ---
 
-# ZEISS Case Study: Document Extraction with Dapr Agents
+# ZEISS 使用 Dapr Agents 处理文档提取案例
 
 ## 新闻事实
 
-原文称，But raw model capability wasn't enough to ship to production.
+原始来源标题显示：ZEISS 使用 Dapr Agents 处理文档提取案例。
 
 ## 原文要点
 
@@ -79,7 +79,7 @@ frontend:
 
 ## 可见原文片段
 
-原文称，But raw model capability wasn't enough to ship to production.
+原始来源标题显示：ZEISS 使用 Dapr Agents 处理文档提取案例。
 
 ## 证据边界
 

@@ -2,15 +2,15 @@
 id: SIG-20260708-A09
 type: signal_card
 signal_type: case
-title: "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions"
+title: "Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化"
 date: 2026-07-08
 status: published
 source_title: "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-08T06:10:03.935Z
-updated_at: 2026-07-08T06:10:03.935Z
+created_at: 2026-07-09T04:04:06.912Z
+updated_at: 2026-07-09T04:04:06.912Z
 
 raw_refs: ["R-066"]
 pool_refs: ["P-066"]
@@ -35,7 +35,7 @@ formal_tags:
   function: ["function-customer-service"]
   scenario: ["scenario-customer-ticket"]
   customer: []
-  evidence: ["evidence-customer-adoption"]
+  evidence: ["evidence-customer-metric", "evidence-customer-adoption"]
   stage: []
   region: []
   source: []
@@ -49,37 +49,37 @@ opportunity_signals:
   product_form: []
   delivery_model: []
   pain_or_constraint: []
-  adoption_evidence: []
+  adoption_evidence: ["customer_metric"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions Axis Max Life uses Voice AI to analyse 6 lakh customer ca..."
-  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+  source_excerpt: "Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化 Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions 原始来源标题显示：Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化。"
+  missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Axis Max Life"
 
 frontend:
-  displayTitle: "Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions"
+  displayTitle: "Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化"
   sourceLinks:
     - "https://www.techcircle.in/2026/07/07/axis-max-life-uses-voice-ai-to-analyse-6-lakh-customer-calls-boosts-conversions"
 ---
 
-# Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions
+# Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化
 
 ## 新闻事实
 
-Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions
+原始来源标题显示：Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化。
 
 ## 原文要点
 
-- Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions
+- 原始来源标题显示：Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化。
 
 ## 价值描述
 
-Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions
+原始来源标题显示：Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化。
 
 ## 可见原文片段
 
-Axis Max Life uses Voice AI to analyse 6 lakh customer calls, boosts conversions
+原始来源标题显示：Axis Max Life 用语音 AI 分析 60 万通客户来电并提升转化。
 
 ## 证据边界
 
