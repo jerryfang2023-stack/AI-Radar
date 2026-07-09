@@ -173,7 +173,7 @@ function writeReport(runs) {
     "",
     "## Current Scope",
     "",
-    "- SITE-V3.4.4 only.",
+    "- SITE-V3.4.5 only.",
     "- Retired V1/V2 daily observation, business brief, publiccopy, cardcopy, writer-style, V2 typography, and V2 raw/source gates are not active quality gates.",
     "- Use Business Signals V3 monitor hard gates plus Card, source-first, frontstage, and freshness gates for the current production lane.",
     "",

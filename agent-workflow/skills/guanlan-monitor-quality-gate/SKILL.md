@@ -67,7 +67,7 @@ For standalone debugging or threshold changes, read only the specific file neede
 
 - Daily monitor rule conflict: `context/05-daily-monitoring.md`
 - Final QC handoff conflict: `C:\Users\86186\.skill-store\guanlan-daily-monitor-qc\SKILL.md`
-- Script threshold or scoring conflict: `01-SiteV2/content/11-databases/monitor-quality-gate-v2.json`
+- Script threshold or scoring conflict: `01-SiteV2/content/11-databases/business-signals-gate-v3.json`
 - Script implementation bug: `agent-workflow/tools/guanlan-monitor-quality-gate.mjs`
 - Retry wrapper bug: `agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs`
 - Score explanation conflict: `C:\Users\86186\.skill-store\guanlan-monitor-quality-gate\references\scorecard.md`
