@@ -2,7 +2,7 @@
 type: opinion_timelines_index
 people_count: 46
 opinion_count: 1127
-generated_at: 2026-07-08T08:10:38.265Z
+generated_at: 2026-07-09T01:42:28.735Z
 ---
 
 # 前沿观点 - 人物时间线目录
