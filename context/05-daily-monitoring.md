@@ -135,7 +135,7 @@ Large-company boundary:
 - frontstage Card order must be importance / impact descending, not category order;
 - if too few items pass the formal Card gate, increase Raw coverage and repair source / Pool balance instead of padding with repeated large-company news or low-value AI-adjacent items;
 - relationship graph and trend candidates use the full eligible Card asset set plus backend audit evidence when needed;
-- when the limit is reached, prefer emerging-company financing, real customer deployment, vertical workflow case, pricing/procurement/regulatory signal, or non-platform infrastructure evidence.
+- when cardable supply is abundant and ordering or repair priority is needed, prefer emerging-company financing, real customer deployment, vertical workflow case, pricing/procurement/regulatory signal, or non-platform infrastructure evidence.
 
 ## Output Paths
 

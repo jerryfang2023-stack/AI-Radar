@@ -1,6 +1,6 @@
----
+﻿---
 name: guanlan-daily-monitor
-description: Use when running, repairing, or updating the WaveSight AI current SITE-V3.4.5 / BSIG-V2.1.3-raw-title-translation-generator daily monitor source-capture layer for the Business Signals lane. It collects Raw candidates, captures original source evidence, routes Pool evidence, writes monitor logs, and hands off to monitor quality gates. It does not generate Cards, write frontstage copy, run First-Line Viewpoints, run Community Intelligence, or produce retired daily observation / brief / trend-report outputs.
+description: Use when running, repairing, or updating the WaveSight AI current SITE-V3.4.5 / BSIG-V2.1.4-raw-card-rule-cleanout daily monitor source-capture layer for the Business Signals lane. It collects Raw candidates, captures original source evidence, routes Pool evidence, writes monitor logs, and hands off to monitor quality gates. It does not generate Cards, write frontstage copy, run First-Line Viewpoints, run Community Intelligence, or produce retired daily observation / brief / trend-report outputs.
 metadata:
   guanlan:
     version: "1.0.0"
@@ -11,7 +11,7 @@ metadata:
     upstream: "external monitoring sources"
     downstream: "Raw / Pool outputs and daily reports"
     gates: "source capture, pool thresholds, quality gating"
-    recent_learning: "Keep workflow, dry-run, and manual monitor parameters aligned with current Raw / Pool / Core thresholds; Core Pool failures usually need better source routing, not more HN."
+    recent_learning: "Keep workflow, dry-run, and manual monitor parameters aligned with current Raw / Pool diagnostic thresholds and raw-to-card supply checks; cardable supply gaps usually need better source routing, not more HN."
     mirrored_in_skill_store: true
     memory_required: false
 ---

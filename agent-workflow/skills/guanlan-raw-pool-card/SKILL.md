@@ -89,8 +89,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 - Business Signals has one public Card view for the active date.
 - Every qualified Raw / Pool business signal that passes raw-to-card cardability and can become a Card should appear in that public Card set.
-- Frontstage must consume formal Signal Cards. It must not re-run title-translation, fact-quality, support-sufficiency, customer-detail, ROI, or before/after-workflow blockers after the Card has been generated.
-- English source-title translation and source-backed fact extraction belong to raw-to-card ingestion. If those fields are weak, repair the Card asset or generator; do not suppress a formal Card in the frontstage selector.
+- Frontstage must consume formal Signal Cards. It must not re-run semantic cardability, support-sufficiency, customer-detail, ROI, or before/after-workflow blockers after the Card has been generated.
+- English source-title translation and source-backed fact extraction belong to raw-to-card ingestion. Missing or weak title/fact fields must fail before publication and route to the Card asset or generator; do not suppress a formal Card or replace its title in the frontstage selector.
 - The public page must not split items into Top10 versus candidate-pool modes.
 - Cards are sorted by importance / impact from high to low.
 - The page must not display sorting reasons, selection tiers, or candidate-only labels.
@@ -103,7 +103,7 @@ Besides product launches, funding rounds, and customer deployments, concrete AI 
 
 Funding recognition must cover English and Chinese financing expressions, including `raises`, `closes`, `announcing our <amount> <round>`, `launches with <amount>`, `emerged from stealth with <amount>`, and `完成/获得/宣布 <amount> <round> 融资`. Rumors, future-tense items such as `将完成`, funding trackers, broad lists, and generic funding commentary stay backend-only.
 
-Public titles should be resolved during raw-to-card ingestion. English articles should enter the Card asset with a Chinese event title; the frontstage builder should not block the formal Card because a separate frontstage translation lookup is missing. A funding Card may use a generated factual title only when the original source title itself confirms a single-company financing event with amount / round wording such as `raises <amount>`, `announcing our <amount> <round>`, `launches with <amount>`, or `emerged from stealth with <amount>`. Do not use this exception for rumors, future-tense financing claims, funding trackers, broad lists, or commentary.
+Public titles should be resolved during raw-to-card ingestion. English articles should enter the Card asset with a Chinese event title or an exact approved source-title translation entry. The unified pre-publication Business gate may block missing translation fields and route them to Raw/Card repair, but the frontstage builder must not silently hide a formal Card or replace its title because a separate frontstage lookup is missing. The Raw/Card title translation generator may produce a factual funding-title translation only when the original source title itself confirms a single-company financing event with amount / round wording such as `raises <amount>`, `announcing our <amount> <round>`, `launches with <amount>`, or `emerged from stealth with <amount>`. Do not use this exception for rumors, future-tense financing claims, funding trackers, broad lists, or commentary.
 
 Funding Card facts should preserve amount / round plus investor, use of proceeds, product direction, or deployment context when present in the original source. Generic funding/list blockers should inspect source identity fields, not source-backed fact text or captured query tails.
 

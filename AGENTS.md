@@ -45,7 +45,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current stage: SITE-V3.4.5.
 - Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/weekly-ai-business-change-radar.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
-- Current Business Signals column version: BSIG-V2.1.3-raw-title-translation-generator.
+- Current Business Signals column version: BSIG-V2.1.4-raw-card-rule-cleanout.
 - Current First-Line Viewpoints column version: FLV-V1.0.2-supervision-idempotency.
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
 - Current Enterprise AI / FDE lens version: EAI-V1.2.0-raw-card-ingestion-boundary.
@@ -59,7 +59,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 SITE-V3.4.5 is an AI business intelligence asset system.
 
-Daily production should preserve and display all qualified Core Pool AI business signals that can become Cards across:
+Daily production should preserve and display all qualified Raw / Pool AI business signals that can become Cards across:
 
 - product / service;
 - funding;
