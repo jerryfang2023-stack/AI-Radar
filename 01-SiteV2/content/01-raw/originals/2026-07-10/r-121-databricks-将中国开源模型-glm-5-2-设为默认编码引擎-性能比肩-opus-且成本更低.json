@@ -1,0 +1,261 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-121",
+  "title": "Databricks 将中国开源模型 GLM 5.2 设为默认编码引擎，性能比肩 Opus 且成本更低",
+  "title_zh": "Databricks 将中国开源模型 GLM 5.2 设为默认编码引擎，性能比肩 Opus 且成本更低",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://the-decoder.com/databricks-makes-chinese-open-source-model-glm-5-2-its-default-coding-engine-after-it-matched-opus-at-lower-cost",
+  "canonical_url": "https://the-decoder.com/databricks-makes-chinese-open-source-model-glm-5-2-its-default-coding-engine-after-it-matched-opus-at-lower-cost",
+  "source_name": "The Decoder：AI News（RSS）",
+  "source_type": "media",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-09T11:03:39.000Z",
+  "collected_at": "2026-07-10T02:00:12.311Z",
+  "language": "mixed",
+  "full_text": "Databricks 内部基准测试显示，中国开源模型 GLM 5.2 在其百万行级代码库上的编程表现与 Anthropic 的 Opus 4.8 统计持平，但每任务成本仅 $1.28（Opus 为 $1.94）。公司计划将其作为开发者日常编码模型。测试基于真实 pull request 构建，避免公开数据集的数据泄露和模型作弊。三个性能层级中，顶级（82-90% 通过率）包括 Opus 4.8、GLM 5.2 及特定配置的 GPT 5.5；中间层（71-82%）含 Sonnet 4.6、Sonnet 5 和 GPT 5.4 等。Databricks 还发现 token 价格与实际任务成本不等价，token 效率因软件环境差异巨大。Coinbase、Lindy、Snowflake 等公司也已转向中国模型以大幅降低成本。",
+  "clean_text": "Databricks 内部基准测试显示，中国开源模型 GLM 5.2 在其百万行级代码库上的编程表现与 Anthropic 的 Opus 4.8 统计持平，但每任务成本仅 $1.28（Opus 为 $1.94）。公司计划将其作为开发者日常编码模型。测试基于真实 pull request 构建，避免公开数据集的数据泄露和模型作弊。三个性能层级中，顶级（82-90% 通过率）包括 Opus 4.8、GLM 5.2 及特定配置的 GPT 5.5；中间层（71-82%）含 Sonnet 4.6、Sonnet 5 和 GPT 5.4 等。Databricks 还发现 token 价格与实际任务成本不等价，token 效率因软件环境差异巨大。Coinbase、Lindy、Snowflake 等公司也已转向中国模型以大幅降低成本。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-10/r-121-databricks-将中国开源模型-glm-5-2-设为默认编码引擎-性能比肩-opus-且成本更低.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-10/r-121-databricks-将中国开源模型-glm-5-2-设为默认编码引擎-性能比肩-opus-且成本更低.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "timeout-fallback-visible-text",
+  "extraction_quality": "failed",
+  "extraction_method": "fetch_failed_summary_fallback",
+  "readability_score": 0,
+  "extractor_diagnostics": {
+    "method": "fetch_failed_summary_fallback",
+    "error_type": "timeout"
+  },
+  "has_full_text": false,
+  "content_length": 363,
+  "fetch_error": "fetch failed (code=UND_ERR_CONNECT_TIMEOUT)",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "missing_or_summary_only",
+    "snapshot_status": "missing_or_fetch_failed",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "e23f1c54f2bc2fd4",
+    "missing": [
+      "missing_full_text",
+      "missing_snapshot"
+    ]
+  },
+  "evidence_strength": "blocked",
+  "raw_qc_decision": "block",
+  "raw_qc_downstream_use": "not_allowed",
+  "degradation_reasons": [
+    "missing_full_text",
+    "missing_snapshot"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "aihot_visible_text",
+  "visible_range": "仅保留采集通道当时可见文本，未抓到原页面正文",
+  "evidence_level": "discovery_only",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Databricks 将中国开源模型 GLM 5.2 设为默认编码引擎，性能比肩 Opus 且成本更低",
+    "discovery_summary": "Databricks 内部基准测试显示，中国开源模型 GLM 5.2 在其百万行级代码库上的编程表现与 Anthropic 的 Opus 4.8 统计持平，但每任务成本仅 $1.28（Opus 为 $1.94）。公司计划将其作为开发者日常编码模型。测试基于真实 pull request 构建，避免公开数据集的数据泄露和模型作弊。三个性能层级中，顶级（82-90% 通过率）包括 Opus 4.8、GLM 5.2 及特定配置的 GPT 5.5；中间层（71-82%）含 Sonnet 4.6、Sonnet 5 和 GPT 5.4 等。Databricks 还发现 token 价格与实际任务成本不等价，token 效率因软件环境差异巨大。Coinbase、Lindy、Snowflake 等公司也已转向中国模型以大幅降低成本。",
+    "source_name": "The Decoder：AI News（RSS）",
+    "origin_url": "https://the-decoder.com/databricks-makes-chinese-open-source-model-glm-5-2-its-default-coding-engine-after-it-matched-opus-at-lower-cost",
+    "discovered_at": "2026-07-10T01:50:23.535Z",
+    "rank_on_page": 329,
+    "discovery_status": "discovered"
+  },
+  "source_role": "discovery_source",
+  "origin_fetch_status": "timeout",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "0c6e3f71f1278004",
+  "content_hash": "e23f1c54f2bc2fd4",
+  "full_text_hash": "e23f1c54f2bc2fd4",
+  "semantic_hash": "d991dc52df7f553f",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-09T11:03:39.000Z",
+  "last_seen_at": "2026-07-10T02:00:12.311Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Databricks 内部基准测试显示，中国开源模型 GLM 5.2 在其百万行级代码库上的编程表现与 Anthropic 的 Opus 4.8 统计持平，但每任务成本仅 $1.28（Opus 为 $1.94）。公司计划将其作为开发者日常编码模型。测试基于真实 pull request 构建，避免公开数据集的数据泄露和模型作弊。三个性能层级中，顶级（82-90% 通过率）包括 Opus 4.8、GLM 5.2 及特定配置的 GPT 5.5；中间层（71-82%）含 Sonnet 4.6、Sonnet 5 和 GPT 5.4 等。Databricks 还发现 token 价格与实际任务成本不等价，token 效率因软件环境差异巨大。Coinbase、Lindy、Snowflake 等公司也已转向中国模型以大幅降低成本。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Databricks 内部基准测试显示，中国开源模型 GLM 5.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "2 在其百万行级代码库上的编程表现与 Anthropic 的 Opus 4.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "8 统计持平，但每任务成本仅 $1.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "公司计划将其作为开发者日常编码模型。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "测试基于真实 pull request 构建，避免公开数据集的数据泄露和模型作弊。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-10T02:00:12.311Z",
+  "business_elements": {
+    "companies": [
+      "The Decoder",
+      "AI News（RSS）",
+      "Anthropic"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [],
+    "affected_departments": [],
+    "numbers": [
+      "5.2",
+      "4.8",
+      "$1.28",
+      "$1.94",
+      "82",
+      "90%",
+      "5.5",
+      "71"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Databricks 内部基准测试显示，中国开源模型 GLM 5.",
+      "2 在其百万行级代码库上的编程表现与 Anthropic 的 Opus 4.",
+      "公司计划将其作为开发者日常编码模型。"
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 2,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "discard"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有可用全文快照"
+  ],
+  "raw_status": "ignored",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Databricks 将中国开源模型 GLM 5.2 设为默认编码引擎，性能比肩 Opus 且成本更低\n\n- raw_id: R-121\n- title_zh: Databricks 将中国开源模型 GLM 5.2 设为默认编码引擎，性能比肩 Opus 且成本更低\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://the-decoder.com/databricks-makes-chinese-open-source-model-glm-5-2-its-default-coding-engine-after-it-matched-opus-at-lower-cost\n- source_name: The Decoder：AI News（RSS）\n- collected_at: 2026-07-10T02:00:12.311Z\n\n## clean_text\n\nDatabricks 内部基准测试显示，中国开源模型 GLM 5.2 在其百万行级代码库上的编程表现与 Anthropic 的 Opus 4.8 统计持平，但每任务成本仅 $1.28（Opus 为 $1.94）。公司计划将其作为开发者日常编码模型。测试基于真实 pull request 构建，避免公开数据集的数据泄露和模型作弊。三个性能层级中，顶级（82-90% 通过率）包括 Opus 4.8、GLM 5.2 及特定配置的 GPT 5.5；中间层（71-82%）含 Sonnet 4.6、Sonnet 5 和 GPT 5.4 等。Databricks 还发现 token 价格与实际任务成本不等价，token 效率因软件环境差异巨大。Coinbase、Lindy、Snowflake 等公司也已转向中国模型以大幅降低成本。\n\n## full_text\n\nDatabricks 内部基准测试显示，中国开源模型 GLM 5.2 在其百万行级代码库上的编程表现与 Anthropic 的 Opus 4.8 统计持平，但每任务成本仅 $1.28（Opus 为 $1.94）。公司计划将其作为开发者日常编码模型。测试基于真实 pull request 构建，避免公开数据集的数据泄露和模型作弊。三个性能层级中，顶级（82-90% 通过率）包括 Opus 4.8、GLM 5.2 及特定配置的 GPT 5.5；中间层（71-82%）含 Sonnet 4.6、Sonnet 5 和 GPT 5.4 等。Databricks 还发现 token 价格与实际任务成本不等价，token 效率因软件环境差异巨大。Coinbase、Lindy、Snowflake 等公司也已转向中国模型以大幅降低成本。\n\n## extraction_diagnostics\n\n- extraction_method: fetch_failed_summary_fallback\n- readability_score: 0\n- fetch_status: timeout-fallback-visible-text\n- extraction_quality: failed\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] Databricks 内部基准测试显示，中国开源模型 GLM 5.2 在其百万行级代码库上的编程表现与 Anthropic 的 Opus 4.8 统计持平，但每任务成本仅 $1.28（Opus 为 $1.94）。公司计划将其作为开发者日常编码模型。测试基于真实 pull request 构建，避免公开数据集的数据泄露和模型作弊。三个性能层级中，顶级（82-90% 通过率）包括 Opus 4.8、GLM 5.2 及特定配置的 GPT 5.5；中间层（71-82%）含 Sonnet 4.6、Sonnet 5 和 GPT 5.4 等。Databricks 还发现 token 价格与实际任务成本不等价，token 效率因软件环境差异巨大。Coinbase、Lindy、Snowflake 等公司也已转向中国模型以大幅降低成本。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Databricks 内部基准测试显示，中国开源模型 GLM 5.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 2 在其百万行级代码库上的编程表现与 Anthropic 的 Opus 4.\n4. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 8 统计持平，但每任务成本仅 $1.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 公司计划将其作为开发者日常编码模型。\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 测试基于真实 pull request 构建，避免公开数据集的数据泄露和模型作弊。\n"
+}

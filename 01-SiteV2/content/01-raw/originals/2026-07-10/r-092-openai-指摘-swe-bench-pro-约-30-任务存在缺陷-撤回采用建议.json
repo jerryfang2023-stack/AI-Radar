@@ -1,0 +1,270 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-092",
+  "title": "OpenAI 指摘 SWE-Bench Pro 约 30% 任务存在缺陷，撤回采用建议",
+  "title_zh": "OpenAI 指摘 SWE-Bench Pro 约 30% 任务存在缺陷，撤回采用建议",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://www.ithome.com/0/974/531.htm",
+  "canonical_url": "https://ithome.com/0/974/531.htm",
+  "source_name": "IT之家（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-09T07:44:27.000Z",
+  "collected_at": "2026-07-10T02:00:08.536Z",
+  "language": "mixed",
+  "full_text": "IT之家 7 月 9 日消息，OpenAI 昨日（7 月 8 日）发布博文， 挑战行业权威评测基准 SWE-Bench Pro，认为在 731 个公开测试任务中，约 30% 存在评测缺陷。\nIT之家注：SWE-Bench Pro 是由 Scale AI 推出的大语言模型与 AI 智能体编程能力评测基准，因高度贴近实际企业级开发且具备极高的防作弊标准，现已成为 AI 软件工程领域的行业权威基准。\nOpenAI 在博文中指出，在 731 个公开测试任务中，前沿模型在 8 个月内通过率从 23.3% 升至 80.3%，认为该基准已无法有效评估模型的软件开发能力。\nOpenAI 介绍称，其数据点分析流程标记出 200 个失效任务，占全部 731 个公开任务的 27.4%；并行开展的人工标注活动识别出 249 个失效任务，占 34.1%。基于上述两条审查路径，OpenAI 预估 WE-Bench Pro 约 30% 的任务存在缺陷。\n在问题类型方面，OpenAI 将其划分为 4 类：\n测试过严，把题面未写明的实现方式也列为硬性要求\n提示不充分，隐藏测试执行未写明、且无法合理推断的要求\n测试范围过窄，不完整修复也可能通过。\n提示具有误导性，指向与测试要求不一致的行为\nOpenAI 还披露一个典型问题，题面要求把内容转为 Markdown 时，行首加入 1 个空格，但隐藏测试却要求 2 个空格，导致模型按说明编写代码仍被判错。\n基于这次分析，OpenAI 撤回此前对 SWE-Bench Pro 的采用建议，并称后续需要由资深软件开发者专门为 AI 评测设计新的基准。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
+  "clean_text": "IT之家 7 月 9 日消息，OpenAI 昨日（7 月 8 日）发布博文， 挑战行业权威评测基准 SWE-Bench Pro，认为在 731 个公开测试任务中，约 30% 存在评测缺陷。\nIT之家注：SWE-Bench Pro 是由 Scale AI 推出的大语言模型与 AI 智能体编程能力评测基准，因高度贴近实际企业级开发且具备极高的防作弊标准，现已成为 AI 软件工程领域的行业权威基准。\nOpenAI 在博文中指出，在 731 个公开测试任务中，前沿模型在 8 个月内通过率从 23.3% 升至 80.3%，认为该基准已无法有效评估模型的软件开发能力。\nOpenAI 介绍称，其数据点分析流程标记出 200 个失效任务，占全部 731 个公开任务的 27.4%；并行开展的人工标注活动识别出 249 个失效任务，占 34.1%。基于上述两条审查路径，OpenAI 预估 WE-Bench Pro 约 30% 的任务存在缺陷。\n在问题类型方面，OpenAI 将其划分为 4 类：\n测试过严，把题面未写明的实现方式也列为硬性要求\n提示不充分，隐藏测试执行未写明、且无法合理推断的要求\n测试范围过窄，不完整修复也可能通过。\n提示具有误导性，指向与测试要求不一致的行为\nOpenAI 还披露一个典型问题，题面要求把内容转为 Markdown 时，行首加入 1 个空格，但隐藏测试却要求 2 个空格，导致模型按说明编写代码仍被判错。\n基于这次分析，OpenAI 撤回此前对 SWE-Bench Pro 的采用建议，并称后续需要由资深软件开发者专门为 AI 评测设计新的基准。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-10/r-092-openai-指摘-swe-bench-pro-约-30-任务存在缺陷-撤回采用建议.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-10/r-092-openai-指摘-swe-bench-pro-约-30-任务存在缺陷-撤回采用建议.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "low",
+  "extraction_method": "content-container",
+  "readability_score": 55,
+  "extractor_diagnostics": {
+    "readability_score": 55,
+    "text_length": 763,
+    "paragraph_count": 11,
+    "sentence_count": 8,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 763,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "06ec8305adb2c85c",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "OpenAI 指摘 SWE-Bench Pro 约 30% 任务存在缺陷，撤回采用建议",
+    "discovery_summary": "OpenAI 在 7 月 8 日博文中称，Scale AI 的编程评测基准 SWE-Bench Pro 约 30% 任务存在缺陷，包括测试过严、提示不充分等。前沿模型通过率 8 个月内从 23.3% 升至 80.3%，OpenAI 认为基准已失效。其分析标记出 200-249 个失效任务。OpenAI 撤回采用建议，呼吁资深开发者设计新基准。",
+    "source_name": "IT之家（RSS）",
+    "origin_url": "https://www.ithome.com/0/974/531.htm",
+    "discovered_at": "2026-07-10T01:50:23.545Z",
+    "rank_on_page": 369,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "e55bfda6fe89a63c",
+  "content_hash": "06ec8305adb2c85c",
+  "full_text_hash": "06ec8305adb2c85c",
+  "semantic_hash": "9d90597563462fdd",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-09T07:44:27.000Z",
+  "last_seen_at": "2026-07-10T02:00:08.536Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "OpenAI 在 7 月 8 日博文中称，Scale AI 的编程评测基准 SWE-Bench Pro 约 30% 任务存在缺陷，包括测试过严、提示不充分等。前沿模型通过率 8 个月内从 23.3% 升至 80.3%，OpenAI 认为基准已失效。其分析标记出 200-249 个失效任务。OpenAI 撤回采用建议，呼吁资深开发者设计新基准。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "IT之家 7 月 9 日消息，OpenAI 昨日（7 月 8 日）发布博文， 挑战行业权威评测基准 SWE-Bench Pro，认为在 731 个公开测试任务中，约 30% 存在评测缺陷。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "product_update",
+      "text": "IT之家注：SWE-Bench Pro 是由 Scale AI 推出的大语言模型与 AI 智能体编程能力评测基准，因高度贴近实际企业级开发且具备极高的防作弊标准，现已成为 AI 软件工程领域的行业权威基准。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "OpenAI 在博文中指出，在 731 个公开测试任务中，前沿模型在 8 个月内通过率从 23.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "3%，认为该基准已无法有效评估模型的软件开发能力。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "workflow_change",
+      "text": "OpenAI 介绍称，其数据点分析流程标记出 200 个失效任务，占全部 731 个公开任务的 27.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-10T02:00:08.536Z",
+  "business_elements": {
+    "companies": [
+      "IT之家（RSS）",
+      "OpenAI"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "30%",
+      "7",
+      "8",
+      "23.3%",
+      "80.3%",
+      "200",
+      "249",
+      "9"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "IT之家注：SWE-Bench Pro 是由 Scale AI 推出的大语言模型与 AI 智能体编程能力评测基准，因高度贴近实际企业级开发且具备极高的防作弊标准，现已成为 AI 软件工程领域的行业权威基准。",
+      "OpenAI 在博文中指出，在 731 个公开测试任务中，前沿模型在 8 个月内通过率从 23."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "OpenAI 介绍称，其数据点分析流程标记出 200 个失效任务，占全部 731 个公开任务的 27."
+    ],
+    "before_after_clues": [],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 3,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# OpenAI 指摘 SWE-Bench Pro 约 30% 任务存在缺陷，撤回采用建议\n\n- raw_id: R-092\n- title_zh: OpenAI 指摘 SWE-Bench Pro 约 30% 任务存在缺陷，撤回采用建议\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.ithome.com/0/974/531.htm\n- source_name: IT之家（RSS）\n- collected_at: 2026-07-10T02:00:08.536Z\n\n## clean_text\n\nIT之家 7 月 9 日消息，OpenAI 昨日（7 月 8 日）发布博文， 挑战行业权威评测基准 SWE-Bench Pro，认为在 731 个公开测试任务中，约 30% 存在评测缺陷。\nIT之家注：SWE-Bench Pro 是由 Scale AI 推出的大语言模型与 AI 智能体编程能力评测基准，因高度贴近实际企业级开发且具备极高的防作弊标准，现已成为 AI 软件工程领域的行业权威基准。\nOpenAI 在博文中指出，在 731 个公开测试任务中，前沿模型在 8 个月内通过率从 23.3% 升至 80.3%，认为该基准已无法有效评估模型的软件开发能力。\nOpenAI 介绍称，其数据点分析流程标记出 200 个失效任务，占全部 731 个公开任务的 27.4%；并行开展的人工标注活动识别出 249 个失效任务，占 34.1%。基于上述两条审查路径，OpenAI 预估 WE-Bench Pro 约 30% 的任务存在缺陷。\n在问题类型方面，OpenAI 将其划分为 4 类：\n测试过严，把题面未写明的实现方式也列为硬性要求\n提示不充分，隐藏测试执行未写明、且无法合理推断的要求\n测试范围过窄，不完整修复也可能通过。\n提示具有误导性，指向与测试要求不一致的行为\nOpenAI 还披露一个典型问题，题面要求把内容转为 Markdown 时，行首加入 1 个空格，但隐藏测试却要求 2 个空格，导致模型按说明编写代码仍被判错。\n基于这次分析，OpenAI 撤回此前对 SWE-Bench Pro 的采用建议，并称后续需要由资深软件开发者专门为 AI 评测设计新的基准。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n\n## full_text\n\nIT之家 7 月 9 日消息，OpenAI 昨日（7 月 8 日）发布博文， 挑战行业权威评测基准 SWE-Bench Pro，认为在 731 个公开测试任务中，约 30% 存在评测缺陷。\nIT之家注：SWE-Bench Pro 是由 Scale AI 推出的大语言模型与 AI 智能体编程能力评测基准，因高度贴近实际企业级开发且具备极高的防作弊标准，现已成为 AI 软件工程领域的行业权威基准。\nOpenAI 在博文中指出，在 731 个公开测试任务中，前沿模型在 8 个月内通过率从 23.3% 升至 80.3%，认为该基准已无法有效评估模型的软件开发能力。\nOpenAI 介绍称，其数据点分析流程标记出 200 个失效任务，占全部 731 个公开任务的 27.4%；并行开展的人工标注活动识别出 249 个失效任务，占 34.1%。基于上述两条审查路径，OpenAI 预估 WE-Bench Pro 约 30% 的任务存在缺陷。\n在问题类型方面，OpenAI 将其划分为 4 类：\n测试过严，把题面未写明的实现方式也列为硬性要求\n提示不充分，隐藏测试执行未写明、且无法合理推断的要求\n测试范围过窄，不完整修复也可能通过。\n提示具有误导性，指向与测试要求不一致的行为\nOpenAI 还披露一个典型问题，题面要求把内容转为 Markdown 时，行首加入 1 个空格，但隐藏测试却要求 2 个空格，导致模型按说明编写代码仍被判错。\n基于这次分析，OpenAI 撤回此前对 SWE-Bench Pro 的采用建议，并称后续需要由资深软件开发者专门为 AI 评测设计新的基准。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 55\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: low\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] OpenAI 在 7 月 8 日博文中称，Scale AI 的编程评测基准 SWE-Bench Pro 约 30% 任务存在缺陷，包括测试过严、提示不充分等。前沿模型通过率 8 个月内从 23.3% 升至 80.3%，OpenAI 认为基准已失效。其分析标记出 200-249 个失效任务。OpenAI 撤回采用建议，呼吁资深开发者设计新基准。\n2. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] IT之家 7 月 9 日消息，OpenAI 昨日（7 月 8 日）发布博文， 挑战行业权威评测基准 SWE-Bench Pro，认为在 731 个公开测试任务中，约 30% 存在评测缺陷。\n3. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] IT之家注：SWE-Bench Pro 是由 Scale AI 推出的大语言模型与 AI 智能体编程能力评测基准，因高度贴近实际企业级开发且具备极高的防作弊标准，现已成为 AI 软件工程领域的行业权威基准。\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] OpenAI 在博文中指出，在 731 个公开测试任务中，前沿模型在 8 个月内通过率从 23.\n5. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 3%，认为该基准已无法有效评估模型的软件开发能力。\n6. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] OpenAI 介绍称，其数据点分析流程标记出 200 个失效任务，占全部 731 个公开任务的 27.\n"
+}

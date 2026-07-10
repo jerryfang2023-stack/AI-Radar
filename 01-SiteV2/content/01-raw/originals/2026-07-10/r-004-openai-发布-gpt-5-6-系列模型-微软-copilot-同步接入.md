@@ -1,0 +1,323 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-004
+title: "OpenAI 发布 GPT-5.6 系列模型，微软 Copilot 同步接入"
+title_zh: "OpenAI 发布 GPT-5.6 系列模型，微软 Copilot 同步接入"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/974/795.htm"
+canonical_url: "https://ithome.com/0/974/795.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-09T23:27:32.000Z"
+collected_at: 2026-07-10T01:59:44.094Z
+language: mixed
+full_text_hash: 079dd66ce482f7a3
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-10/r-004-openai-发布-gpt-5-6-系列模型-微软-copilot-同步接入.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-10/r-004-openai-发布-gpt-5-6-系列模型-微软-copilot-同步接入.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 76
+extractor_diagnostics: {"readability_score":76,"text_length":4649,"paragraph_count":63,"sentence_count":3,"boilerplate_hits":3,"symbol_ratio":0.0131,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 4649
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"079dd66ce482f7a3","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI 发布 GPT-5.6 系列模型，微软 Copilot 同步接入","discovery_summary":"OpenAI 于 7 月 10 日发布 GPT-5.6 系列模型，已在 ChatGPT、Codex 及 API 中上线。微软 CEO 纳德拉称 Copilot 将同步接入该系列模型。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/974/795.htm","discovered_at":"2026-07-10T01:50:23.465Z","rank_on_page":70,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: c1758bfacf6528a5
+content_hash: 079dd66ce482f7a3
+semantic_hash: c298fdaac2d0e316
+duplicate_of: ""
+first_seen_at: "2026-07-09T23:27:32.000Z"
+last_seen_at: 2026-07-10T01:59:44.094Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["ai_hardware_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","OpenAI"],"products":["GPT-5","Copilot","ChatGPT","Codex","Agent"],"people":[],"industries":["金融 / 保险","制造 / 工业","开发者工具","企业服务"],"roles":["采购负责人","销售 / 客服"],"workflows":["计费 / 预算管理","权限 / 安全治理","采购 / 招投标"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","采购","销售 / 客服"],"numbers":["5.6","7","10","2026","1","2","3","4"],"quotes":["因机构维护，账单暂时无法查看","智能可变大空间 SUV ","智能可变大空间 SUV","看起来 SUV，坐进去 MPV","买到车的人很多，买到空间的人很少"]}
+evidence_seed: {"company_actions":["“IT早报”时间，大家好，现在是 2026 年 7 月 10 日星期五，今天的重要科技资讯有： 1、OpenAI 最强 AI 模型：GPT-5.",">> 查看详情 3、小米澎程首款 SUV 内外饰首秀：前排座椅能旋转，车内直接搭“吧台” 该车支持多形态可变空间，三排启用仍能放下 7 个行李箱，可变身工作室、会客厅等场景，目前已开启预约咨询。"],"case_details":["OpenAI 于 7 月 10 日发布 GPT-5.6 系列模型，已在 ChatGPT、Codex 及 API 中上线。微软 CEO 纳德拉称 Copilot 将同步接入该系列模型。","6 系列正式上线，纳德拉称微软 Copilot 同步接入 OpenAI 公司 7 月 10 日发布公告，宣布在 ChatGPT（聊天机器人）、Codex（主打编程 AI Agent，目前朝通用 Agent 方向）以及 API 中上线 GPT-5.",">> 查看详情 4、华为李文广回应友商智驾兜底，确认明年技术上实现高速 L3、特别欢迎特斯拉 FSD 入华 李文广透露，从技术上来讲，明年起码在高速场景就可以进入 L3 自动驾驶时代，今年要做一些试点，试点完就会做常态化准入。"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"OpenAI 于 7 月 10 日发布 GPT-5.6 系列模型，已在 ChatGPT、Codex 及 API 中上线。微软 CEO 纳德拉称 Copilot 将同步接入该系列模型。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"“IT早报”时间，大家好，现在是 2026 年 7 月 10 日星期五，今天的重要科技资讯有： 1、OpenAI 最强 AI 模型：GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"6 系列正式上线，纳德拉称微软 Copilot 同步接入 OpenAI 公司 7 月 10 日发布公告，宣布在 ChatGPT（聊天机器人）、Codex（主打编程 AI Agent，目前朝通用 Agent 方向）以及 API 中上线 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"quote","text":">> 查看详情 2、支付宝客服就花呗服务问题致歉：系统升级已完成，还款有三天宽限期 根据用户上传的截图显示，点开花呗页面会出现“网络繁忙”或在账单页面显示“因机构维护，账单暂时无法查看”。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":">> 查看详情 3、小米澎程首款 SUV 内外饰首秀：前排座椅能旋转，车内直接搭“吧台” 该车支持多形态可变空间，三排启用仍能放下 7 个行李箱，可变身工作室、会客厅等场景，目前已开启预约咨询。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":">> 查看详情 4、华为李文广回应友商智驾兜底，确认明年技术上实现高速 L3、特别欢迎特斯拉 FSD 入华 李文广透露，从技术上来讲，明年起码在高速场景就可以进入 L3 自动驾驶时代，今年要做一些试点，试点完就会做常态化准入。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-10T01:59:44.094Z
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# OpenAI 发布 GPT-5.6 系列模型，微软 Copilot 同步接入
+
+## clean_text
+
+“IT早报”时间，大家好，现在是 2026 年 7 月 10 日星期五，今天的重要科技资讯有：
+1、OpenAI 最强 AI 模型：GPT-5.6 系列正式上线，纳德拉称微软 Copilot 同步接入
+OpenAI 公司 7 月 10 日发布公告，宣布在 ChatGPT（聊天机器人）、Codex（主打编程 AI Agent，目前朝通用 Agent 方向）以及 API 中上线 GPT-5.6 系列模型。>> 查看详情
+2、支付宝客服就花呗服务问题致歉：系统升级已完成，还款有三天宽限期
+根据用户上传的截图显示，点开花呗页面会出现“网络繁忙”或在账单页面显示“因机构维护，账单暂时无法查看”。>> 查看详情
+3、小米澎程首款 SUV 内外饰首秀：前排座椅能旋转，车内直接搭“吧台”
+该车支持多形态可变空间，三排启用仍能放下 7 个行李箱，可变身工作室、会客厅等场景，目前已开启预约咨询。>> 查看详情
+4、华为李文广回应友商智驾兜底，确认明年技术上实现高速 L3、特别欢迎特斯拉 FSD 入华
+李文广透露，从技术上来讲，明年起码在高速场景就可以进入 L3 自动驾驶时代，今年要做一些试点，试点完就会做常态化准入。此外，今年下半年发布的部分高端车型，将为高速 L3 进行硬件预埋。>> 查看详情
+5、影石 11 周年，官宣造“机器人”了
+影石官方展望了一款 Cameraman 摄影机器人，已储备中枢大脑、眼睛、耳朵、脖子、躯干相关技术。>> 查看详情
+6、小米汽车官宣全新产品系列：SkyNomad 小米澎程智能可变大空间 SUV
+7 月 9 日上午，小米公司官微发文宣布，SkyNomad 小米澎程将推出智能可变大空间 SUV，这也是小米汽车旗下的全新产品系列。>> 查看详情
+7、曝华为 Pura X Max 系列横阔折手机销量已破 50 万台，新机售价 10999 元起
+长期关注国内手机市场份额的博主 @RD观测 7 月 9 日分享了华为折叠屏手机的销量情况：截至 2026 W26（ IT之家 注：6 月 22 日-6 月 28 日），华为 Pura X Max 约 23.54 万台、华为 Pura X Max 典藏版约 28.09 万台。>> 查看详情
+8、因电池容量提升，消息称苹果 iPhone 18 Pro Max 手机厚度将达 9mm
+对比前代 iPhone 17 Pro Max ，厚度重量均增加，对应电池容量大幅提升，不同版本电池容量存在差异。>> 查看详情
+9、消息称特斯拉三代擎天柱人形机器人初步定型，马斯克放话达不成产能目标就开掉整个采购团队
+多位特斯拉供应链人士透露，特斯拉近期终于下发具体的 Optimus 零件采购指引，要求供应商在今年 9 月将产能提到 1000 台 / 周，随后在年底提升到 2000-2500 台 / 周。>> 查看详情
+10、拼多多刚在雄安购房，又在上海陆家嘴买了一栋楼
+互联网头部企业拼多多在上海浦东新区买了一栋楼。报道称，拼多多本次收购的物业，是位于陆家嘴的星展银行大厦。>> 查看详情
+11、李想官宣理想 i9 汽车：系列首台家庭纯电旗舰 SUV，9 月见
+在车身尺寸方面，i9 的车长达到了 5225mm，配合高达 3168mm 的长轴距。>> 查看详情
+12、蔚来 ES8 大五座版纯电 SUV 上市：全域 900V 高压架构，整车购买 38.28 万元起
+蔚来 ES8 大五座版 7 月 9 日晚正式发布，起售价 38.28 万元。新车车长超 5.2 米，轴距 3.13 米，是目前中国市场尺寸最大的纯电 SUV 之一。搭载全域 900V 高压架构，CLTC 续航 655km，并配备了双零重力座椅、21.4 英寸天空屏、自研芯片等豪华科技配置。>> 查看详情
+13、雷军没忍住“开闸”爆料，小米澎程 SkyNomad 新车更多亮点公布
+7 月 9 日，小米澎程 SkyNomad 官微预热了旗下首款 SUV 车型。小米创办人、董事长兼 CEO 雷军 7 月 9 日没忍住，在评论区中与网友频频互动，曝光了这款新车很多信息。新车第一排可以旋转，采用大七座设计，第二排还有大电视。>> 查看详情
+14、小米澎程 SkyNomad 开启预约咨询，定位“智能可变大空间 SUV ”
+小米汽车全新产品系列 SkyNomad 小米澎程已开启预约咨询，定位“智能可变大空间 SUV”。新车通过纯平地板与长滑轨设计，实现空间灵活切换，可变为工作室、咖啡馆、会客厅或游乐场。据爆料，它将是小米本月两大新品之一。>> 查看详情
+15、小米澎程 SkyNomad 预热车内“可变大空间”：工作室、咖啡馆、会客厅、游乐场都能“变”
+小米澎程 SkyNomad 官微继续预热旗下首款 SUV 车型，这次则是围绕车内的“可变大空间”展开。官方表示，新车“看起来 SUV，坐进去 MPV”“买到车的人很多，买到空间的人很少”。>> 查看详情
+16、赵长江：我们为智界 RX 规划了超 20 种车色，会把最受欢迎的颜色给大家选择
+7 月 9 日上午，智界汽车执行董事及执行副总裁赵长江在微博发文透露：“我们为智界 RX 规划了超 20 种车色，经过多轮调研会把最受欢迎的颜色给大家选择。”>> 查看详情
+17、消息称苹果 iPhone 18 Pro 的 A20 Pro 芯片沿用 LPDDR5X 架构，升级 6 通道 96-bit 位宽
+科技媒体 Wccftech 7 月 8 日发布博文，报道称苹果 iPhone 18 Pro 和 iPhone 18 Pro Max 上装备的 A20 Pro 芯片不会升级至 LPDDR6，会继续采用 LPDDR5X 内存，但会升级内存性能。>> 查看详情
+18、小米澎程 SkyNomad 首款新车外观公布，消息称系小米本月“两大新品”之一
+小米汽车全新品牌“小米澎程”正式官宣，首款 SUV 侧面外观首次公开。新车定位“智能可变大空间 SUV”，主打车内空间的灵活切换，旨在打造移动的“第 N 空间”。据爆料，该车与 Redmi Note 17 Pro 将是小米本月两大新品。>> 查看详情
+19、科创板第二大 IPO：国产 DRAM 龙头长鑫科技 7 月 16 日新股申购，拟募资 295 亿元
+长鑫科技正式启动科创板 IPO 发行，申购日定于 7 月 16 日。作为国内最大的 DRAM 厂商，本次拟募资 295 亿元用于技术升级与研发，有望成为科创板史上第二大 IPO。公司 2026 年一季度业绩已实现扭亏为盈，增长迅猛。>> 查看详情
+20、国内 70 万以上超豪华轿车 6 月上险量数据曝光，鸿蒙智行尊界 S800 以 593 台位列第一
+汽车销量数据追踪和分析团队 ECC 情报局的博主 @嗨大星_ECC 7 月 9 日分享了 70 万以上超豪华轿车 6 月上险量。 鸿蒙 智行尊界 S800 以 593 台的成绩位列第一。>> 查看详情
+21、双杀韩国 LCK 赛区，BLG 战队 3:1 战胜 HLE 挺进《英雄联盟》2026 MSI 决赛
+在 2026 MSI 胜者组决赛中，LPL 赛区的 BLG 战队以 3:1 战胜韩国 LCK 赛区的 HLE 战队，队史第三次晋级 MSI 决赛。此前 BLG 已战胜 T1，完成对 LCK 赛区的“双杀”。7 月 12 日，BLG 将迎战败者组对手，争夺最终冠军。>> 查看详情
+22、“国产 GPU 四小龙”之一，证监会同意燧原科技科创板 IPO 注册申请
+证监会正式批复同意上海燧原科技股份有限公司在科创板首次公开发行股票注册。作为“国产 GPU 四小龙”之一，燧原科技拟募资 60 亿元，用于五代、六代 AI 芯片的研发及产业化。公司预计 2026 年上半年营收将实现大幅增长。>> 查看详情
+23、小米澎程 SkyNomad 新车主打“可变大空间”，雷军透露预热图展示的场景只是其中一部分
+7 月 9 日，小米澎程 SkyNomad 预热了旗下首款 SUV 车型。小米创办人、董事长兼 CEO 雷军 7 月 9 日透露，预热图展示的场景只是 SkyNomad 智能可变大空间的一部分。这意味着，该车还将拥有更多玩法。>> 查看详情
+24、中国邮政 EMS：高考录取通知书邮件 7 月 9 日起可查，保持电话通畅
+中国邮政 EMS 宣布高考录取通知书邮件已可查询，考生可通过官方公众号、支付宝、App 等多种渠道输入邮件号或准考证号查询。签收时需严格核验身份，考生需出示身份证和准考证，代收人也需提供证件。邮件全程开辟绿色通道，使用专用大红封套，确保安全送达。>> 查看详情
+25、雷军：小米 REDMI Note 17 Pro 手机首销免费送五年电池升级保
+小米创办人、董事长兼 CEO 雷军 7 月 9 日宣布，REDMI Note 17 Pro 首销免费送五年电池升级保：四年内电池健康度低于 80%，免费换电池；第五年健康度低于 80%，可免费升级大电池。>> 查看详情
+26、零跑汽车：全新 C10/C11/C16 均采用国内一线动力电池品牌电芯
+零跑汽车 7 月 9 日发布全新 C10/C11/C16 答网友热门问题第一期。据其介绍，全新 C10、C11、C16 电池设计均提前满足 2026 年 7 月 1 日起实施的新国标标准，均采用国内一线动力电池品牌电芯。>> 查看详情
+27、比亚迪王朝网首款 D 级旗舰轿车，“大汉”红银双拼色实车曝光
+“大汉”的长宽高分别为 5256/1999/1510mm，轴距 3130mm。其整备质量 2505kg，总质量达到 2955kg，最高车速 270km/h。纯电版提供单电机、双电机两款车型，前者功率为 370kW，后者功率为 200/370kW。插混版依旧搭载 1.5T 发动机，电机最大功率 200kW。>> 查看详情
+28、CounterPoint：苹果 iPhone 18 Pro Max 硬件成本比上一代大涨近 300 美元，2nm A20 Pro 芯片与存储涨价成主因
+Counterpoint 报告显示， iPhone 18 Pro Max 硬件成本相比前代上涨近 300 美元，主要受内存芯片价格飙升和全新 2nm A20 Pro 芯片成本高昂影响。苹果或采取差异化定价策略来维持利润。>> 查看详情
+29、汽车经销商巨头兰天集团董事长汤国华否认暴雷传闻，目前没有落地“末尾淘汰制”相关计划
+“现金流完全没有问题。”汤国华表示，目前集团燃油车业务占比 80%，新能源占 20%，计划下半年新能源销售占比提升至 40%，明年追平行业平均水平。>> 查看详情
+30、印度取消部分手机及电子设备零部件进口关税，利好苹果、小米等厂商
+印度宣布取消部分手机及电子设备零部件的进口关税，涉及无线充电模块、汽车显示屏等关键部件，免税政策将持续至 2029 年 3 月 31 日。此举旨在提升本土制造业成本竞争力，吸引投资，助力实现 2030 年 5000 亿美元电子制造业目标。>> 查看详情
+今天就先聊到这里，IT早报，咱们明天见。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+“IT早报”时间，大家好，现在是 2026 年 7 月 10 日星期五，今天的重要科技资讯有：
+1、OpenAI 最强 AI 模型：GPT-5.6 系列正式上线，纳德拉称微软 Copilot 同步接入
+OpenAI 公司 7 月 10 日发布公告，宣布在 ChatGPT（聊天机器人）、Codex（主打编程 AI Agent，目前朝通用 Agent 方向）以及 API 中上线 GPT-5.6 系列模型。>> 查看详情
+2、支付宝客服就花呗服务问题致歉：系统升级已完成，还款有三天宽限期
+根据用户上传的截图显示，点开花呗页面会出现“网络繁忙”或在账单页面显示“因机构维护，账单暂时无法查看”。>> 查看详情
+3、小米澎程首款 SUV 内外饰首秀：前排座椅能旋转，车内直接搭“吧台”
+该车支持多形态可变空间，三排启用仍能放下 7 个行李箱，可变身工作室、会客厅等场景，目前已开启预约咨询。>> 查看详情
+4、华为李文广回应友商智驾兜底，确认明年技术上实现高速 L3、特别欢迎特斯拉 FSD 入华
+李文广透露，从技术上来讲，明年起码在高速场景就可以进入 L3 自动驾驶时代，今年要做一些试点，试点完就会做常态化准入。此外，今年下半年发布的部分高端车型，将为高速 L3 进行硬件预埋。>> 查看详情
+5、影石 11 周年，官宣造“机器人”了
+影石官方展望了一款 Cameraman 摄影机器人，已储备中枢大脑、眼睛、耳朵、脖子、躯干相关技术。>> 查看详情
+6、小米汽车官宣全新产品系列：SkyNomad 小米澎程智能可变大空间 SUV
+7 月 9 日上午，小米公司官微发文宣布，SkyNomad 小米澎程将推出智能可变大空间 SUV，这也是小米汽车旗下的全新产品系列。>> 查看详情
+7、曝华为 Pura X Max 系列横阔折手机销量已破 50 万台，新机售价 10999 元起
+长期关注国内手机市场份额的博主 @RD观测 7 月 9 日分享了华为折叠屏手机的销量情况：截至 2026 W26（ IT之家 注：6 月 22 日-6 月 28 日），华为 Pura X Max 约 23.54 万台、华为 Pura X Max 典藏版约 28.09 万台。>> 查看详情
+8、因电池容量提升，消息称苹果 iPhone 18 Pro Max 手机厚度将达 9mm
+对比前代 iPhone 17 Pro Max ，厚度重量均增加，对应电池容量大幅提升，不同版本电池容量存在差异。>> 查看详情
+9、消息称特斯拉三代擎天柱人形机器人初步定型，马斯克放话达不成产能目标就开掉整个采购团队
+多位特斯拉供应链人士透露，特斯拉近期终于下发具体的 Optimus 零件采购指引，要求供应商在今年 9 月将产能提到 1000 台 / 周，随后在年底提升到 2000-2500 台 / 周。>> 查看详情
+10、拼多多刚在雄安购房，又在上海陆家嘴买了一栋楼
+互联网头部企业拼多多在上海浦东新区买了一栋楼。报道称，拼多多本次收购的物业，是位于陆家嘴的星展银行大厦。>> 查看详情
+11、李想官宣理想 i9 汽车：系列首台家庭纯电旗舰 SUV，9 月见
+在车身尺寸方面，i9 的车长达到了 5225mm，配合高达 3168mm 的长轴距。>> 查看详情
+12、蔚来 ES8 大五座版纯电 SUV 上市：全域 900V 高压架构，整车购买 38.28 万元起
+蔚来 ES8 大五座版 7 月 9 日晚正式发布，起售价 38.28 万元。新车车长超 5.2 米，轴距 3.13 米，是目前中国市场尺寸最大的纯电 SUV 之一。搭载全域 900V 高压架构，CLTC 续航 655km，并配备了双零重力座椅、21.4 英寸天空屏、自研芯片等豪华科技配置。>> 查看详情
+13、雷军没忍住“开闸”爆料，小米澎程 SkyNomad 新车更多亮点公布
+7 月 9 日，小米澎程 SkyNomad 官微预热了旗下首款 SUV 车型。小米创办人、董事长兼 CEO 雷军 7 月 9 日没忍住，在评论区中与网友频频互动，曝光了这款新车很多信息。新车第一排可以旋转，采用大七座设计，第二排还有大电视。>> 查看详情
+14、小米澎程 SkyNomad 开启预约咨询，定位“智能可变大空间 SUV ”
+小米汽车全新产品系列 SkyNomad 小米澎程已开启预约咨询，定位“智能可变大空间 SUV”。新车通过纯平地板与长滑轨设计，实现空间灵活切换，可变为工作室、咖啡馆、会客厅或游乐场。据爆料，它将是小米本月两大新品之一。>> 查看详情
+15、小米澎程 SkyNomad 预热车内“可变大空间”：工作室、咖啡馆、会客厅、游乐场都能“变”
+小米澎程 SkyNomad 官微继续预热旗下首款 SUV 车型，这次则是围绕车内的“可变大空间”展开。官方表示，新车“看起来 SUV，坐进去 MPV”“买到车的人很多，买到空间的人很少”。>> 查看详情
+16、赵长江：我们为智界 RX 规划了超 20 种车色，会把最受欢迎的颜色给大家选择
+7 月 9 日上午，智界汽车执行董事及执行副总裁赵长江在微博发文透露：“我们为智界 RX 规划了超 20 种车色，经过多轮调研会把最受欢迎的颜色给大家选择。”>> 查看详情
+17、消息称苹果 iPhone 18 Pro 的 A20 Pro 芯片沿用 LPDDR5X 架构，升级 6 通道 96-bit 位宽
+科技媒体 Wccftech 7 月 8 日发布博文，报道称苹果 iPhone 18 Pro 和 iPhone 18 Pro Max 上装备的 A20 Pro 芯片不会升级至 LPDDR6，会继续采用 LPDDR5X 内存，但会升级内存性能。>> 查看详情
+18、小米澎程 SkyNomad 首款新车外观公布，消息称系小米本月“两大新品”之一
+小米汽车全新品牌“小米澎程”正式官宣，首款 SUV 侧面外观首次公开。新车定位“智能可变大空间 SUV”，主打车内空间的灵活切换，旨在打造移动的“第 N 空间”。据爆料，该车与 Redmi Note 17 Pro 将是小米本月两大新品。>> 查看详情
+19、科创板第二大 IPO：国产 DRAM 龙头长鑫科技 7 月 16 日新股申购，拟募资 295 亿元
+长鑫科技正式启动科创板 IPO 发行，申购日定于 7 月 16 日。作为国内最大的 DRAM 厂商，本次拟募资 295 亿元用于技术升级与研发，有望成为科创板史上第二大 IPO。公司 2026 年一季度业绩已实现扭亏为盈，增长迅猛。>> 查看详情
+20、国内 70 万以上超豪华轿车 6 月上险量数据曝光，鸿蒙智行尊界 S800 以 593 台位列第一
+汽车销量数据追踪和分析团队 ECC 情报局的博主 @嗨大星_ECC 7 月 9 日分享了 70 万以上超豪华轿车 6 月上险量。 鸿蒙 智行尊界 S800 以 593 台的成绩位列第一。>> 查看详情
+21、双杀韩国 LCK 赛区，BLG 战队 3:1 战胜 HLE 挺进《英雄联盟》2026 MSI 决赛
+在 2026 MSI 胜者组决赛中，LPL 赛区的 BLG 战队以 3:1 战胜韩国 LCK 赛区的 HLE 战队，队史第三次晋级 MSI 决赛。此前 BLG 已战胜 T1，完成对 LCK 赛区的“双杀”。7 月 12 日，BLG 将迎战败者组对手，争夺最终冠军。>> 查看详情
+22、“国产 GPU 四小龙”之一，证监会同意燧原科技科创板 IPO 注册申请
+证监会正式批复同意上海燧原科技股份有限公司在科创板首次公开发行股票注册。作为“国产 GPU 四小龙”之一，燧原科技拟募资 60 亿元，用于五代、六代 AI 芯片的研发及产业化。公司预计 2026 年上半年营收将实现大幅增长。>> 查看详情
+23、小米澎程 SkyNomad 新车主打“可变大空间”，雷军透露预热图展示的场景只是其中一部分
+7 月 9 日，小米澎程 SkyNomad 预热了旗下首款 SUV 车型。小米创办人、董事长兼 CEO 雷军 7 月 9 日透露，预热图展示的场景只是 SkyNomad 智能可变大空间的一部分。这意味着，该车还将拥有更多玩法。>> 查看详情
+24、中国邮政 EMS：高考录取通知书邮件 7 月 9 日起可查，保持电话通畅
+中国邮政 EMS 宣布高考录取通知书邮件已可查询，考生可通过官方公众号、支付宝、App 等多种渠道输入邮件号或准考证号查询。签收时需严格核验身份，考生需出示身份证和准考证，代收人也需提供证件。邮件全程开辟绿色通道，使用专用大红封套，确保安全送达。>> 查看详情
+25、雷军：小米 REDMI Note 17 Pro 手机首销免费送五年电池升级保
+小米创办人、董事长兼 CEO 雷军 7 月 9 日宣布，REDMI Note 17 Pro 首销免费送五年电池升级保：四年内电池健康度低于 80%，免费换电池；第五年健康度低于 80%，可免费升级大电池。>> 查看详情
+26、零跑汽车：全新 C10/C11/C16 均采用国内一线动力电池品牌电芯
+零跑汽车 7 月 9 日发布全新 C10/C11/C16 答网友热门问题第一期。据其介绍，全新 C10、C11、C16 电池设计均提前满足 2026 年 7 月 1 日起实施的新国标标准，均采用国内一线动力电池品牌电芯。>> 查看详情
+27、比亚迪王朝网首款 D 级旗舰轿车，“大汉”红银双拼色实车曝光
+“大汉”的长宽高分别为 5256/1999/1510mm，轴距 3130mm。其整备质量 2505kg，总质量达到 2955kg，最高车速 270km/h。纯电版提供单电机、双电机两款车型，前者功率为 370kW，后者功率为 200/370kW。插混版依旧搭载 1.5T 发动机，电机最大功率 200kW。>> 查看详情
+28、CounterPoint：苹果 iPhone 18 Pro Max 硬件成本比上一代大涨近 300 美元，2nm A20 Pro 芯片与存储涨价成主因
+Counterpoint 报告显示， iPhone 18 Pro Max 硬件成本相比前代上涨近 300 美元，主要受内存芯片价格飙升和全新 2nm A20 Pro 芯片成本高昂影响。苹果或采取差异化定价策略来维持利润。>> 查看详情
+29、汽车经销商巨头兰天集团董事长汤国华否认暴雷传闻，目前没有落地“末尾淘汰制”相关计划
+“现金流完全没有问题。”汤国华表示，目前集团燃油车业务占比 80%，新能源占 20%，计划下半年新能源销售占比提升至 40%，明年追平行业平均水平。>> 查看详情
+30、印度取消部分手机及电子设备零部件进口关税，利好苹果、小米等厂商
+印度宣布取消部分手机及电子设备零部件的进口关税，涉及无线充电模块、汽车显示屏等关键部件，免税政策将持续至 2029 年 3 月 31 日。此举旨在提升本土制造业成本竞争力，吸引投资，助力实现 2030 年 5000 亿美元电子制造业目标。>> 查看详情
+今天就先聊到这里，IT早报，咱们明天见。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 76
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":76,"text_length":4649,"paragraph_count":63,"sentence_count":3,"boilerplate_hits":3,"symbol_ratio":0.0131,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   OpenAI 于 7 月 10 日发布 GPT-5.6 系列模型，已在 ChatGPT、Codex 及 API 中上线。微软 CEO 纳德拉称 Copilot 将同步接入该系列模型。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   “IT早报”时间，大家好，现在是 2026 年 7 月 10 日星期五，今天的重要科技资讯有： 1、OpenAI 最强 AI 模型：GPT-5.
+
+3. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   6 系列正式上线，纳德拉称微软 Copilot 同步接入 OpenAI 公司 7 月 10 日发布公告，宣布在 ChatGPT（聊天机器人）、Codex（主打编程 AI Agent，目前朝通用 Agent 方向）以及 API 中上线 GPT-5.
+
+4. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   >> 查看详情 2、支付宝客服就花呗服务问题致歉：系统升级已完成，还款有三天宽限期 根据用户上传的截图显示，点开花呗页面会出现“网络繁忙”或在账单页面显示“因机构维护，账单暂时无法查看”。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   >> 查看详情 3、小米澎程首款 SUV 内外饰首秀：前排座椅能旋转，车内直接搭“吧台” 该车支持多形态可变空间，三排启用仍能放下 7 个行李箱，可变身工作室、会客厅等场景，目前已开启预约咨询。
+
+6. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   >> 查看详情 4、华为李文广回应友商智驾兜底，确认明年技术上实现高速 L3、特别欢迎特斯拉 FSD 入华 李文广透露，从技术上来讲，明年起码在高速场景就可以进入 L3 自动驾驶时代，今年要做一些试点，试点完就会做常态化准入。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI
+- products: GPT-5, Copilot, ChatGPT, Codex, Agent
+- people: 暂无公开信息
+- industries: 金融 / 保险, 制造 / 工业, 开发者工具, 企业服务
+- roles: 采购负责人, 销售 / 客服
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 采购, 销售 / 客服
+- numbers: 5.6, 7, 10, 2026, 1, 2, 3, 4
+- quotes: 因机构维护，账单暂时无法查看 / 智能可变大空间 SUV  / 智能可变大空间 SUV / 看起来 SUV，坐进去 MPV / 买到车的人很多，买到空间的人很少
+
+## evidence_seed
+
+- company_actions: “IT早报”时间，大家好，现在是 2026 年 7 月 10 日星期五，今天的重要科技资讯有： 1、OpenAI 最强 AI 模型：GPT-5. / >> 查看详情 3、小米澎程首款 SUV 内外饰首秀：前排座椅能旋转，车内直接搭“吧台” 该车支持多形态可变空间，三排启用仍能放下 7 个行李箱，可变身工作室、会客厅等场景，目前已开启预约咨询。
+- case_details: OpenAI 于 7 月 10 日发布 GPT-5.6 系列模型，已在 ChatGPT、Codex 及 API 中上线。微软 CEO 纳德拉称 Copilot 将同步接入该系列模型。 / 6 系列正式上线，纳德拉称微软 Copilot 同步接入 OpenAI 公司 7 月 10 日发布公告，宣布在 ChatGPT（聊天机器人）、Codex（主打编程 AI Agent，目前朝通用 Agent 方向）以及 API 中上线 GPT-5. / >> 查看详情 4、华为李文广回应友商智驾兜底，确认明年技术上实现高速 L3、特别欢迎特斯拉 FSD 入华 李文广透露，从技术上来讲，明年起码在高速场景就可以进入 L3 自动驾驶时代，今年要做一些试点，试点完就会做常态化准入。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 采购负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: ai_hardware_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI 发布 GPT-5.6 系列模型，微软 Copilot 同步接入","discovery_summary":"OpenAI 于 7 月 10 日发布 GPT-5.6 系列模型，已在 ChatGPT、Codex 及 API 中上线。微软 CEO 纳德拉称 Copilot 将同步接入该系列模型。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/974/795.htm","discovered_at":"2026-07-10T01:50:23.465Z","rank_on_page":70,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenAI 于 7 月 10 日发布 GPT-5.6 系列模型，已在 ChatGPT、Codex 及 API 中上线。微软 CEO 纳德拉称 Copilot 将同步接入该系列模型。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
