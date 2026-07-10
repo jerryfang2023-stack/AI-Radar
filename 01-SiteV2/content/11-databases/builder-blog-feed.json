@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T16:32:23.335Z",
+  "generatedAt": "2026-07-10T01:38:41.893Z",
   "stats": {
     "blogsBuilt": 5,
     "totalItems": 33,
@@ -15,11 +15,51 @@
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
         {
+          "id": "https://simonwillison.net/2026/Jul/10/openai/#atom-everything",
+          "text": "Quoting OpenAI",
+          "summary": "<blockquote cite=\"https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex\"><p>[...] Work on web and mobile runs in the cloud. Work in the desktop app can also use local files and desktop apps with your permission. At launch, cloud Work conversations do not appear in desktop Work; desktop",
+          "createdAt": "2026-07-10T01:05:57+00:00",
+          "url": "https://simonwillison.net/2026/Jul/10/openai/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+          "text": "The new GPT-5.6 family: Luna, Terra, Sol",
+          "summary": "<p>OpenAI's latest flagship model <a href=\"https://openai.com/index/gpt-5-6/\">hit general availability this morning</a>, and comes in three sizes: Luna, Terra, and Sol (from smallest to largest).</p>\r\n<p>The new models are priced per 1M input/output tokens as Luna $1/$6, Terra $2.50/$15, Sol $5/$30.",
+          "createdAt": "2026-07-09T19:46:38+00:00",
+          "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything",
           "text": "Introducing Muse Spark 1.1",
           "summary": "<p><strong><a href=\"https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/\">Introducing Muse Spark 1.1</a></strong></p>\nFollowing <a href=\"https://simonwillison.net/2026/Apr/8/muse-spark/\">Muse Spark in April</a>, here's Muse Spark 1.1 - the first Spark model to offer an API. Meta claim sig",
           "createdAt": "2026-07-09T16:24:09+00:00",
           "url": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/9/llm-meta-ai/#atom-everything",
+          "text": "llm-meta-ai 0.1",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-meta-ai/releases/tag/0.1\">llm-meta-ai 0.1</a></p>\n        <p>Let's LLM run prompts against the new <a href=\"https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/\">muse-spark-1.1</a> model.</p>\n    \n    \n        <p>Tags: <a",
+          "createdAt": "2026-07-09T16:12:20+00:00",
+          "url": "https://simonwillison.net/2026/Jul/9/llm-meta-ai/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/9/llm/#atom-everything",
+          "text": "llm 0.31.1",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.31.1\">llm 0.31.1</a></p>\n        <blockquote>\n<ul>\n<li>Fix for a bug with OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers. <a href=\"https://gith",
+          "createdAt": "2026-07-09T16:06:15+00:00",
+          "url": "https://simonwillison.net/2026/Jul/9/llm/#atom-everything",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -203,36 +243,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
-          "text": "llm-coding-agent 0.1a0",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm-coding-agent/releases/tag/0.1a0\">llm-coding-agent 0.1a0</a></p>\n        <p>Another Fable 5 experiment. Now that my <a href=\"https://llm.datasette.io/\">LLM library</a> has evolved into more of an agent framework it's time to see what",
-          "createdAt": "2026-07-02T19:33:12+00:00",
-          "url": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
-          "text": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
-          "summary": "<p><strong>Research:</strong> <a href=\"https://github.com/simonw/research/tree/main/dspy-datasette-agent-prompts#readme\">Using DSPy to evaluate and improve Datasette Agent's SQL system prompts</a></p>\n        <p>One of this morning's AIE keynotes covered <a href=\"https://github.com/stanfordnlp/dspy\"",
-          "createdAt": "2026-07-02T18:25:00+00:00",
-          "url": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
-          "text": "Understand to participate",
-          "summary": "<p>I saw Geoffrey Litt speak at <a href=\"https://www.ai.engineer/worldsfair/2026\">AIE</a> yesterday, and one framing he used particularly resonated with me:</p>\n<p><strong>Understand to participate</strong></p>\n<p>Geoffrey was talking about the challenge of collaborating with coding agents as they c",
-          "createdAt": "2026-07-02T17:07:14+00:00",
-          "url": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -321,16 +331,6 @@
           "summary": "",
           "createdAt": "Mon, 06 Jul 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-07-06",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-07-03",
-          "text": "Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈",
-          "summary": "",
-          "createdAt": "Fri, 03 Jul 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-07-03",
           "likes": 0,
           "retweets": 0,
           "replies": 0
