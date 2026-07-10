@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-07-09T16:33:19.274Z",
+    "generatedAt": "2026-07-10T01:38:44.380Z",
     "feedGeneratedAt": "2026-07-09T07:28:29.483Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
-    "sourceRoute": "prepare-digest",
+    "sourceRoute": "remote-x+remote-podcasts",
     "sourceErrors": [],
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
     "builders": 25,
-    "remarks": 55,
-    "podcasts": 3,
+    "remarks": 53,
+    "podcasts": 1,
     "blogsBuilt": 5,
-    "trackedSources": 33,
+    "trackedSources": 0,
     "rawBuilders": 20,
     "rawTweets": 40
   },
@@ -22,7 +22,7 @@
       "name": "Simon Willison's Blog",
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 11
+      "count": 10
     },
     {
       "name": "Boris Cherny",
@@ -46,12 +46,6 @@
       "name": "Tigera Blog (Calico / AI Security)",
       "handle": "tigera.io",
       "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "count": 3
-    },
-    {
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 3
     },
     {
@@ -106,6 +100,12 @@
       "name": "Thibault Sottiaux",
       "handle": "thsottiaux",
       "role": "Codex & ChatGPT OpenAI",
+      "count": 2
+    },
+    {
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 2
     },
     {
@@ -444,16 +444,16 @@
       "replies": 0
     },
     {
-      "id": "https://tldr.tech/ai/2026-07-03",
+      "id": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
       "source": "blog",
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "text": "Meta Watermelon 🍉, Anthropic Samsung chips 🤝, autoresearch in practice 📈",
-      "content": "",
-      "contentTranslation": "",
-      "contentTranslationStatus": "unavailable",
-      "translation": "Meta西瓜🍉， Anthropic Samsung芯片🤝，实践中的自动研究 📈",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "The new GPT-5.6 family: Luna, Terra, Sol",
+      "content": "OpenAI's latest flagship model hit general availability this morning , and comes in three sizes: Luna, Terra, and Sol (from smallest to largest). The new models are priced per 1M input/output tokens as Luna $1/$6, Terra $2.50/$15, Sol $5/$30.",
+      "contentTranslation": "OpenAI的最新旗舰机型今天早上正式上市，有三种尺寸： Luna、Terra和Sol （从最小到最大）。新型号每100万个输入/输出代币的价格为LUNA $ 1/$ 6 ， TERRA $ 2.50/$ 15 ， SOL $ 5/$ 30。",
+      "contentTranslationStatus": "translated",
+      "translation": "全新GPT-5.6系列： Luna、Terra、Sol",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "产品与创业",
@@ -475,9 +475,9 @@
         }
       ],
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Fri, 03 Jul 2026 00:00:00 GMT",
-      "date": "2026-07-03",
-      "url": "https://tldr.tech/ai/2026-07-03",
+      "createdAt": "2026-07-09T19:46:38+00:00",
+      "date": "2026-07-10",
+      "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -2128,110 +2128,16 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
-      "content": "Research: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts One of this morning's AIE keynotes covered <a href=\"https://github.com/stanfordnlp/dspy\"",
-      "contentTranslation": "研究：使用DSPy评估和改进Datasette Agent的SQL系统提示今早的AIE主题演讲之一< a href = \"",
-      "contentTranslationStatus": "translated",
-      "translation": "使用DSPy评估和改进Datasette Agent的SQL系统提示",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "Agent",
-      "formalTags": [
-        {
-          "id": "opinion-agent-workflow",
-          "name": "Agent 工作流观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
-      "createdAt": "2026-07-02T18:25:00+00:00",
-      "date": "2026-07-03",
-      "url": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Understand to participate",
-      "content": "I saw Geoffrey Litt speak at AIE yesterday, and one framing he used particularly resonated with me: Understand to participate Geoffrey was talking about the challenge of collaborating with coding agents as they c",
-      "contentTranslation": "我昨天在AIE上看到了Geoffrey Litt的演讲，他使用的一个框架特别引起了我的共鸣：理解参与Geoffrey正在谈论与编码Agent合作的挑战，因为他们",
-      "contentTranslationStatus": "translated",
-      "translation": "理解参与",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-02T17:07:14+00:00",
-      "date": "2026-07-03",
-      "url": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
     }
   ],
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "Ep 90: AI Pioneer Jürgen Schmidhuber on the State of AI Today",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-90-ai-pioneer-jurgen-schmidhuber-on-the-state-of-ai-today-yero2ugh",
-      "publishedAt": "Thu, 9 Jul 2026 13:00:00 +0000",
-      "excerpt": "Dr. Jürgen Schmidhuber, a renowned scientist and AI researcher widely regarded as one of the pioneers in the field, originated key ideas behind today's transformers, LSTMs, and recursive self-improvement through his lab's work. He argues that true AGI remains bottlenecked by physical hardware, that today's AI data center investments are headed for a correction as open-source keeps pace with closed labs, and that the path to general intelligence runs through artificial curiosity and self-generated experimentation rather than internet data. He closes by reconsidering mainstream AI safety arguments and offers a sweeping vision of self-replicating robot societies eventually colonizing the solar system. (0:00) Intro (1:24) How Close Is Superhuman AI? (2:27) Why ChatGPT Didn't Surprise Him (3:21) The Path to Recursive Self-Improvement (9:01) Will AI Takeoff…"
-    },
-    {
-      "source": "podcast",
-      "name": "Unsupervised Learning",
-      "title": "Ep 90: AI Pioneer Jürgen Schmidhuber on the State of AI Today",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-90-ai-pioneer-jurgen-schmidhuber-on-the-state-of-ai-today-yero2ugh",
-      "publishedAt": "Thu, 9 Jul 2026 13:00:00 +0000",
-      "excerpt": "Dr. Jürgen Schmidhuber, a renowned scientist and AI researcher widely regarded as one of the pioneers in the field, originated key ideas behind today's transformers, LSTMs, and recursive self-improvement through his lab's work. He argues that true AGI remains bottlenecked by physical hardware, that today's AI data center investments are headed for a correction as open-source keeps pace with closed labs, and that the path to general intelligence runs through artificial curiosity and self-generated experimentation rather than internet data. He closes by reconsidering mainstream AI safety arguments and offers a sweeping vision of self-replicating robot societies eventually colonizing the solar system. (0:00) Intro (1:24) How Close Is Superhuman AI? (2:27) Why ChatGPT Didn't Surprise Him (3:21) The Path to Recursive Self-Improvement (9:01) Will AI Takeoff…"
-    },
-    {
-      "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "AI Vibe Check: Lab Wars, Why APIs Might Vanish & Future Predictions",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ai-vibe-check-lab-wars-why-apis-might-vanish-future-predictions-sr_Mp2pR",
-      "publishedAt": "Fri, 12 Jun 2026 12:51:00 +0000",
-      "excerpt": "Six months after their last roundup, Jacob sits down with Ari Morcos (Datology AI CEO, former Meta AI researcher) and Rob Toews (Radical Ventures partner, Forbes AI columnist) to take stock of an AI landscape that has shifted dramatically: coding agents crossing the long-time-horizon threshold has turned engineers into managers of agents, near-frontier open weight AI looks like it may be disappearing as Meta and the Chinese labs pull back, and Anthropic's restrictions on its newly released Fable model have its biggest supporters questioning whether safety framing is masking competitive positioning. The conversation runs through the full state of the lab wars, including Rob doubling down on his Sam Altman ouster prediction and the Bret Taylor succession theory, why Google's structural advantages remain intact despite falling behind on coding, what xAI's Cursor acquisition is really for, and Ari'…"
+      "name": "AI & I by Every",
+      "title": "How a Writer Uses AI Without Losing His Voice",
+      "url": "https://www.youtube.com/watch?v=7ND0lQmLJlA",
+      "publishedAt": "2026-07-08T14:49:06.000Z",
+      "excerpt": ""
     }
   ]
 }
