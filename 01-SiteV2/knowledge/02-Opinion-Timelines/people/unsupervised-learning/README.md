@@ -1,14 +1,13 @@
 ---
 type: opinion_person_timeline
 person_name: "Unsupervised Learning"
-opinion_count: 1
-latest_date: 2026-05-22
+opinion_count: 2
+latest_date: 2026-07-09
 ---
 
-# Unsupervised Learning Opinion Timeline
+# Unsupervised Learning 观点时间线
+共 2 条观点，按人物 + 日期文件聚合。
+## 日期
 
-Total opinions: 1. Entries are grouped by person and date files for daily sync.
-
-## Dates
-
-- [2026-05-22](./2026-05-22.md) - 1 opinions
+- [2026-07-09](./2026-07-09.md)
+- [2026-05-22](./2026-05-22.md)

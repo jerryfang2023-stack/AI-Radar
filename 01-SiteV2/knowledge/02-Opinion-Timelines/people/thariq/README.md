@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Thariq"
-opinion_count: 37
-latest_date: 2026-07-08
+opinion_count: 39
+latest_date: 2026-07-09
 ---
 
 # Thariq 观点时间线
-共 37 条观点，按人物 + 日期文件聚合。
+共 39 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-09](./2026-07-09.md)
 - [2026-07-08](./2026-07-08.md)
 - [2026-07-07](./2026-07-07.md)
 - [2026-07-06](./2026-07-06.md)
