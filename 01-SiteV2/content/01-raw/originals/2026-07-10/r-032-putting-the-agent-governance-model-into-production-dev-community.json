@@ -1,0 +1,281 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-032",
+  "title": "Putting the agent governance model into production - DEV Community",
+  "title_zh": "将代理治理模型投入生产-开发社区",
+  "title_translation_status": "translated",
+  "title_translation_method": "mymemory_title_translation",
+  "original_url": "https://dev.to/stepbysteptocloud/putting-the-agent-governance-model-into-production-1p33",
+  "canonical_url": "https://dev.to/stepbysteptocloud/putting-the-agent-governance-model-into-production-1p33",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "procurement_marketplace",
+  "search_path_label": "采购 / 招投标 / Marketplace 路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-10T01:59:49.387Z",
+  "language": "mixed",
+  "full_text": "This article is part of a multi-part series on Microsoft Entra Agent ID governance. For the full sequence and recommended reading order, start from the Governing AI agents with Microsoft Entra Agent ID and Agent 365\nBy this point, the governance design is no longer theoretical. The organisation has a defined path for discovering agents, classifying them, assigning accountability, applying custom security attributes, designing Conditional Access policies, governing access through access packages, maintaining sponsor continuity, and monitoring risk.\nThe final step is to turn these design areas into a practical production rollout plan.\nThis is where many governance efforts fail. The architecture may be sound, but if the rollout is too broad, too manual, or unclear to operational teams, it becomes difficult to sustain. The goal should be a phased rollout that proves the model with a small controlled set of agents before expanding to the wider estate.\nStart with a pilot, not the full estate\nDo not try to govern every agent on day one.\nStart with a representative pilot group that includes different agent types and governance states. The pilot should include a mix of:\nOne or more Microsoft Entra Agent ID-backed agents\nA few approved production agents\nA few agents with missing owner or sponsor\nOne or two unknown or ReviewRequired agents\nAn agent with higher sensitivity or business criticality\nIf available, a third-party or registry-synced agent for comparison\nThis helps validate whether the governance model works across real scenarios. It also helps confirm where controls apply cleanly and where additional validation is required.\nDefine rollout phases clearly\nA practical rollout can be structured into phases.\nPhase\nFocus\nOutcome\nPhase 1\nInventory and classification\nAgents visible and grouped by source, identity model, owner, sponsor, and access pattern\nPhase 2\nAccountability cleanup\nMissing owners, sponsors, orphaned agents, and unknown agents identified and actioned\nPhase 3\nCustom security attributes\nApproved schema created and pilot agents tagged with governance metadata\nPhase 4\nConditional Access report-only\nAgent policies tested without enforcement\nPhase 5\nAccess package pilot\nApproved agents receive governed, time-bound access\nPhase 6\nLifecycle workflow pilot\nSponsor transition scenarios validated\nPhase 7\nMonitoring and operations\nRisk review, access expiry, attribute drift, and ownership hygiene become recurring checks\nPhase 8\nWider enforcement\nControls expanded from pilot to production cohorts\nThis phased approach avoids accidental blocking and gives the customer confidence before enforcement.\nDefine decision gates\nEach phase should have a decision gate. A decision gate is a simple checkpoint that confirms whether the customer is ready to move to the next stage.\nFor example:\nGate\nQuestion to answer\nInventory gate\nDo we know what agents exist and where they came from?\nClassification gate\nDo we know which agents are Agent ID-backed, legacy, third-party, shadow, system-generated, or unknown?\nAccountability gate\nDo production agents have valid owners and sponsors?\nMetadata gate\nAre required custom security attributes populated?\nPolicy gate\nHave Conditional Access policies been tested in report-only mode?\nAccess gate\nAre access packages designed only for approved agents with clear business purpose?\nLifecycle gate\nDo sponsor transition workflows have reliable manager and lifecycle data?\nMonitoring gate\nIs there a recurring process to review risky agents, orphaned agents, and stale access?\nThis keeps the rollout controlled and measurable.\nRecommended minimum production baseline\nBefore an agent is considered production-ready, it should meet a minimum governance baseline.\nRequirement\nWhy it matters\nAgent is inventoried\nEstablishes visibility\nSource platform is known\nDetermines governance path\nIdentity model is known\nConfirms which controls apply\nAccess pattern is known\nDetermines Conditional Access model\nOwner is assigned\nProvides technical accountability\nSponsor is assigned\nProvides business accountability\nBusiness purpose is documented\nConfirms why agent exists\nData sensitivity is classified\nHelps define risk posture\nApproval status is populated\nLets policies distinguish approved and unapproved agents\nLifecycle state is known\nSupports review, retirement, and monitoring\nIf these values are missing, the agent should remain in ReviewRequired state.\nRollout should be policy-light at first\nInitial rollout should avoid creating too many policies.\nStart with a small number of meaningful controls:\nA report-only Conditional Access policy for approved autonomous agents\nA block or review policy for rejected or unknown agents\nA risk-based policy for high-risk agent identities\nOne or two access packages for common approved access patterns\nOne lifecycle workflow for sponsor leave or role-change scenarios\nOne drift report for missing owner, sponsor, or required attributes\nThis gives the customer a working governance model without creating unnecessary policy sprawl.\nKeep exception handling explicit\nEvery governance model needs an exception path.\nSome agents may not fully fit the target design immediately. Some may be legacy. Some may be third-party. Some may not yet support the preferred identity model. The important point is that exceptions are visible, approved, time-bound, and reviewed.\nGood exception handling should include:\nException ID\nAgent name\nBusiness justification\nOwner\nSponsor\nRisk accepted by\nExpiry date\nReview date\nCompensating controls\nFinal disposition\nAvoid permanent exceptions wherever possible.\nDefine operational ownership\nProduction governance needs clear ownership across teams.\nArea\nPrimary owner\nInventory reporting\nIAM, platform team, or AI governance team\nOwner and sponsor cleanup\nBusiness sponsors, platform owners, identity governance team\nCustom security attribute schema\nIAM or Entra governance team\nAttribute assignment process\nIAM operations, automation team, or delegated governance team\nConditional Access policies\nIAM / security team\nAccess packages\nIdentity governance team with resource owners\nLifecycle workflows\nIdentity governance team\nRisk review\nSecurity operations / identity protection team\nAgent retirement\nPlatform owner, sponsor, and IAM team\nThis prevents the common problem where central IT becomes responsible for every business decision about every agent.\nProduction rollout checklist\nUse this checklist before scaling wider.\nAgent inventory completed\nClassification model agreed\nOwner and sponsor model agreed\nOrphaned agent process defined\nCustom security attribute schema approved\nAttribute assignment owner identified\nInitial attributes populated for pilot agents\nConditional Access policies created in report-only mode\nSign-in and policy impact reviewed\nAccess package model validated\nSponsor request or approval process validated\nLifecycle workflow pilot validated\nHigh-risk agent review process defined\nMonitoring cadence agreed\nException process documented\nRollout ring model approved\nSuggested rollout rings\nRoll out in rings rather than one broad change.\nRing\nScope\nRing 0\nLab or test agents\nRing 1\nSmall pilot group of approved agents\nRing 2\nProduction agents with complete metadata\nRing 3\nWider agent estate\nRing 4\nEnforcement for unknown, rejected, or unmanaged agents\nThis lets the organisation move from visibility to enforcement safely.\nWhat success looks like\nA mature production rollout should result in:\nEvery agent has a known governance state\nProduction agents have owners and sponsors\nUnknown agents are not silently trusted\nCustom security attributes support policy targeting and reporting\nConditional Access policies are scoped using trusted metadata\nAccess packages provide approved, time-bound access\nSponsor lifecycle changes do not create orphaned agents\nRisky agents are reviewed and actioned\nExceptions are documented and time-bound\nGovernance is repeatable for new agents, not just existing ones\nWrap-up\nThe production rollout is where the governance model becomes real. Do not move directly from design to broad enforcement. Start with a pilot, define decision gates, use report-only policies, validate access packages, test lifecycle workflows, and build monitoring into regular operations.\nThe goal is not to create the most complex governance design. The goal is to create a model the customer can operate repeatedly: every agent known, classified, accountable, approved, governed, monitored, and eventually retired when no longer needed.\nFor further actions, you may consider blocking this person and/or reporting abuse\nWe're a place where coders share, stay up-to-date and grow their careers.\nLog in\nCreate account",
+  "clean_text": "This article is part of a multi-part series on Microsoft Entra Agent ID governance. For the full sequence and recommended reading order, start from the Governing AI agents with Microsoft Entra Agent ID and Agent 365\nBy this point, the governance design is no longer theoretical. The organisation has a defined path for discovering agents, classifying them, assigning accountability, applying custom security attributes, designing Conditional Access policies, governing access through access packages, maintaining sponsor continuity, and monitoring risk.\nThe final step is to turn these design areas into a practical production rollout plan.\nThis is where many governance efforts fail. The architecture may be sound, but if the rollout is too broad, too manual, or unclear to operational teams, it becomes difficult to sustain. The goal should be a phased rollout that proves the model with a small controlled set of agents before expanding to the wider estate.\nStart with a pilot, not the full estate\nDo not try to govern every agent on day one.\nStart with a representative pilot group that includes different agent types and governance states. The pilot should include a mix of:\nOne or more Microsoft Entra Agent ID-backed agents\nA few approved production agents\nA few agents with missing owner or sponsor\nOne or two unknown or ReviewRequired agents\nAn agent with higher sensitivity or business criticality\nIf available, a third-party or registry-synced agent for comparison\nThis helps validate whether the governance model works across real scenarios. It also helps confirm where controls apply cleanly and where additional validation is required.\nDefine rollout phases clearly\nA practical rollout can be structured into phases.\nPhase\nFocus\nOutcome\nPhase 1\nInventory and classification\nAgents visible and grouped by source, identity model, owner, sponsor, and access pattern\nPhase 2\nAccountability cleanup\nMissing owners, sponsors, orphaned agents, and unknown agents identified and actioned\nPhase 3\nCustom security attributes\nApproved schema created and pilot agents tagged with governance metadata\nPhase 4\nConditional Access report-only\nAgent policies tested without enforcement\nPhase 5\nAccess package pilot\nApproved agents receive governed, time-bound access\nPhase 6\nLifecycle workflow pilot\nSponsor transition scenarios validated\nPhase 7\nMonitoring and operations\nRisk review, access expiry, attribute drift, and ownership hygiene become recurring checks\nPhase 8\nWider enforcement\nControls expanded from pilot to production cohorts\nThis phased approach avoids accidental blocking and gives the customer confidence before enforcement.\nDefine decision gates\nEach phase should have a decision gate. A decision gate is a simple checkpoint that confirms whether the customer is ready to move to the next stage.\nFor example:\nGate\nQuestion to answer\nInventory gate\nDo we know what agents exist and where they came from?\nClassification gate\nDo we know which agents are Agent ID-backed, legacy, third-party, shadow, system-generated, or unknown?\nAccountability gate\nDo production agents have valid owners and sponsors?\nMetadata gate\nAre required custom security attributes populated?\nPolicy gate\nHave Conditional Access policies been tested in report-only mode?\nAccess gate\nAre access packages designed only for approved agents with clear business purpose?\nLifecycle gate\nDo sponsor transition workflows have reliable manager and lifecycle data?\nMonitoring gate\nIs there a recurring process to review risky agents, orphaned agents, and stale access?\nThis keeps the rollout controlled and measurable.\nRecommended minimum production baseline\nBefore an agent is considered production-ready, it should meet a minimum governance baseline.\nRequirement\nWhy it matters\nAgent is inventoried\nEstablishes visibility\nSource platform is known\nDetermines governance path\nIdentity model is known\nConfirms which controls apply\nAccess pattern is known\nDetermines Conditional Access model\nOwner is assigned\nProvides technical accountability\nSponsor is assigned\nProvides business accountability\nBusiness purpose is documented\nConfirms why agent exists\nData sensitivity is classified\nHelps define risk posture\nApproval status is populated\nLets policies distinguish approved and unapproved agents\nLifecycle state is known\nSupports review, retirement, and monitoring\nIf these values are missing, the agent should remain in ReviewRequired state.\nRollout should be policy-light at first\nInitial rollout should avoid creating too many policies.\nStart with a small number of meaningful controls:\nA report-only Conditional Access policy for approved autonomous agents\nA block or review policy for rejected or unknown agents\nA risk-based policy for high-risk agent identities\nOne or two access packages for common approved access patterns\nOne lifecycle workflow for sponsor leave or role-change scenarios\nOne drift report for missing owner, sponsor, or required attributes\nThis gives the customer a working governance model without creating unnecessary policy sprawl.\nKeep exception handling explicit\nEvery governance model needs an exception path.\nSome agents may not fully fit the target design immediately. Some may be legacy. Some may be third-party. Some may not yet support the preferred identity model. The important point is that exceptions are visible, approved, time-bound, and reviewed.\nGood exception handling should include:\nException ID\nAgent name\nBusiness justification\nOwner\nSponsor\nRisk accepted by\nExpiry date\nReview date\nCompensating controls\nFinal disposition\nAvoid permanent exceptions wherever possible.\nDefine operational ownership\nProduction governance needs clear ownership across teams.\nArea\nPrimary owner\nInventory reporting\nIAM, platform team, or AI governance team\nOwner and sponsor cleanup\nBusiness sponsors, platform owners, identity governance team\nCustom security attribute schema\nIAM or Entra governance team\nAttribute assignment process\nIAM operations, automation team, or delegated governance team\nConditional Access policies\nIAM / security team\nAccess packages\nIdentity governance team with resource owners\nLifecycle workflows\nIdentity governance team\nRisk review\nSecurity operations / identity protection team\nAgent retirement\nPlatform owner, sponsor, and IAM team\nThis prevents the common problem where central IT becomes responsible for every business decision about every agent.\nProduction rollout checklist\nUse this checklist before scaling wider.\nAgent inventory completed\nClassification model agreed\nOwner and sponsor model agreed\nOrphaned agent process defined\nCustom security attribute schema approved\nAttribute assignment owner identified\nInitial attributes populated for pilot agents\nConditional Access policies created in report-only mode\nSign-in and policy impact reviewed\nAccess package model validated\nSponsor request or approval process validated\nLifecycle workflow pilot validated\nHigh-risk agent review process defined\nMonitoring cadence agreed\nException process documented\nRollout ring model approved\nSuggested rollout rings\nRoll out in rings rather than one broad change.\nRing\nScope\nRing 0\nLab or test agents\nRing 1\nSmall pilot group of approved agents\nRing 2\nProduction agents with complete metadata\nRing 3\nWider agent estate\nRing 4\nEnforcement for unknown, rejected, or unmanaged agents\nThis lets the organisation move from visibility to enforcement safely.\nWhat success looks like\nA mature production rollout should result in:\nEvery agent has a known governance state\nProduction agents have owners and sponsors\nUnknown agents are not silently trusted\nCustom security attributes support policy targeting and reporting\nConditional Access policies are scoped using trusted metadata\nAccess packages provide approved, time-bound access\nSponsor lifecycle changes do not create orphaned agents\nRisky agents are reviewed and actioned\nExceptions are documented and time-bound\nGovernance is repeatable for new agents, not just existing ones\nWrap-up\nThe production rollout is where the governance model becomes real. Do not move directly from design to broad enforcement. Start with a pilot, define decision gates, use report-only policies, validate access packages, test lifecycle workflows, and build monitoring into regular operations.\nThe goal is not to create the most complex governance design. The goal is to create a model the customer can operate repeatedly: every agent known, classified, accountable, approved, governed, monitored, and eventually retired when no longer needed.\nFor further actions, you may consider blocking this person and/or reporting abuse\nWe're a place where coders share, stay up-to-date and grow their careers.\nLog in\nCreate account",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-10/r-032-putting-the-agent-governance-model-into-production-dev-community.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-10/r-032-putting-the-agent-governance-model-into-production-dev-community.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 8684,
+    "paragraph_count": 136,
+    "sentence_count": 46,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 8684,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "2ddeaded98cb7f01",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "b420b82b03fd9bd2",
+  "content_hash": "2ddeaded98cb7f01",
+  "full_text_hash": "2ddeaded98cb7f01",
+  "semantic_hash": "79b64f6fbb4f089a",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-10T01:59:49.387Z",
+  "last_seen_at": "2026-07-10T01:59:49.387Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "workflow_change",
+      "text": "# Putting the agent governance model into production - DEV Community Published: 2026-07-09T15:17:58+00:00 Source: dev.to (dev.to) Language: en ## Story Putting the agent governance model into production - DEV Community Skip to content Navigation menu [![DEV Community](https://media2.dev.to/dyn... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "funding",
+      "text": "This article is part of a multi-part series on Microsoft Entra Agent ID governance.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "For the full sequence and recommended reading order, start from the Governing AI agents with Microsoft Entra Agent ID and Agent 365 By this point, the governance design is no longer theoretical.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "The organisation has a defined path for discovering agents, classifying them, assigning accountability, applying custom security attributes, designing Conditional Access policies, governing access through access packages, maintaining sponsor continuity, and monitoring risk.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The final step is to turn these design areas into a practical production rollout plan.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "This is where many governance efforts fail.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-10T01:59:49.387Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Microsoft"
+    ],
+    "products": [
+      "agent",
+      "Agent",
+      "agents",
+      "Agents"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "采购负责人"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "权限 / 安全治理",
+      "采购 / 招投标"
+    ],
+    "business_actions": [
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "采购",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2026",
+      "07",
+      "09",
+      "15",
+      "17",
+      "58",
+      "00",
+      "2"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "This article is part of a multi-part series on Microsoft Entra Agent ID governance.",
+      "For the full sequence and recommended reading order, start from the Governing AI agents with Microsoft Entra Agent ID and Agent 365 By this point, the governance design is no longer theoretical.",
+      "The final step is to turn these design areas into a practical production rollout plan."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "# Putting the agent governance model into production - DEV Community Published: 2026-07-09T15:17:58+00:00 Source: dev.to (dev.to) Language: en ## Story Putting the agent governance model into production - DEV Community Skip to content Navigation menu [![DEV Community](https://media2.dev.to/dyn... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace"
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "采购负责人"
+    ],
+    "risks_or_constraints": [
+      "The organisation has a defined path for discovering agents, classifying them, assigning accountability, applying custom security attributes, designing Conditional Access policies, governing access through access packages, maintaining sponsor continuity, and monitoring risk."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Putting the agent governance model into production - DEV Community\n\n- raw_id: R-032\n- title_zh: 将代理治理模型投入生产-开发社区\n- title_translation_status: translated\n- title_translation_method: mymemory_title_translation\n- original_url: https://dev.to/stepbysteptocloud/putting-the-agent-governance-model-into-production-1p33\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-10T01:59:49.387Z\n\n## clean_text\n\nThis article is part of a multi-part series on Microsoft Entra Agent ID governance. For the full sequence and recommended reading order, start from the Governing AI agents with Microsoft Entra Agent ID and Agent 365\nBy this point, the governance design is no longer theoretical. The organisation has a defined path for discovering agents, classifying them, assigning accountability, applying custom security attributes, designing Conditional Access policies, governing access through access packages, maintaining sponsor continuity, and monitoring risk.\nThe final step is to turn these design areas into a practical production rollout plan.\nThis is where many governance efforts fail. The architecture may be sound, but if the rollout is too broad, too manual, or unclear to operational teams, it becomes difficult to sustain. The goal should be a phased rollout that proves the model with a small controlled set of agents before expanding to the wider estate.\nStart with a pilot, not the full estate\nDo not try to govern every agent on day one.\nStart with a representative pilot group that includes different agent types and governance states. The pilot should include a mix of:\nOne or more Microsoft Entra Agent ID-backed agents\nA few approved production agents\nA few agents with missing owner or sponsor\nOne or two unknown or ReviewRequired agents\nAn agent with higher sensitivity or business criticality\nIf available, a third-party or registry-synced agent for comparison\nThis helps validate whether the governance model works across real scenarios. It also helps confirm where controls apply cleanly and where additional validation is required.\nDefine rollout phases clearly\nA practical rollout can be structured into phases.\nPhase\nFocus\nOutcome\nPhase 1\nInventory and classification\nAgents visible and grouped by source, identity model, owner, sponsor, and access pattern\nPhase 2\nAccountability cleanup\nMissing owners, sponsors, orphaned agents, and unknown agents identified and actioned\nPhase 3\nCustom security attributes\nApproved schema created and pilot agents tagged with governance metadata\nPhase 4\nConditional Access report-only\nAgent policies tested without enforcement\nPhase 5\nAccess package pilot\nApproved agents receive governed, time-bound access\nPhase 6\nLifecycle workflow pilot\nSponsor transition scenarios validated\nPhase 7\nMonitoring and operations\nRisk review, access expiry, attribute drift, and ownership hygiene become recurring checks\nPhase 8\nWider enforcement\nControls expanded from pilot to production cohorts\nThis phased approach avoids accidental blocking and gives the customer confidence before enforcement.\nDefine decision gates\nEach phase should have a decision gate. A decision gate is a simple checkpoint that confirms whether the customer is ready to move to the next stage.\nFor example:\nGate\nQuestion to answer\nInventory gate\nDo we know what agents exist and where they came from?\nClassification gate\nDo we know which agents are Agent ID-backed, legacy, third-party, shadow, system-generated, or unknown?\nAccountability gate\nDo production agents have valid owners and sponsors?\nMetadata gate\nAre required custom security attributes populated?\nPolicy gate\nHave Conditional Access policies been tested in report-only mode?\nAccess gate\nAre access packages designed only for approved agents with clear business purpose?\nLifecycle gate\nDo sponsor transition workflows have reliable manager and lifecycle data?\nMonitoring gate\nIs there a recurring process to review risky agents, orphaned agents, and stale access?\nThis keeps the rollout controlled and measurable.\nRecommended minimum production baseline\nBefore an agent is considered production-ready, it should meet a minimum governance baseline.\nRequirement\nWhy it matters\nAgent is inventoried\nEstablishes visibility\nSource platform is known\nDetermines governance path\nIdentity model is known\nConfirms which controls apply\nAccess pattern is known\nDetermines Conditional Access model\nOwner is assigned\nProvides technical accountability\nSponsor is assigned\nProvides business accountability\nBusiness purpose is documented\nConfirms why agent exists\nData sensitivity is classified\nHelps define risk posture\nApproval status is populated\nLets policies distinguish approved and unapproved agents\nLifecycle state is known\nSupports review, retirement, and monitoring\nIf these values are missing, the agent should remain in ReviewRequired state.\nRollout should be policy-light at first\nInitial rollout should avoid creating too many policies.\nStart with a small number of meaningful controls:\nA report-only Conditional Access policy for approved autonomous agents\nA block or review policy for rejected or unknown agents\nA risk-based policy for high-risk agent identities\nOne or two access packages for common approved access patterns\nOne lifecycle workflow for sponsor leave or role-change scenarios\nOne drift report for missing owner, sponsor, or required attributes\nThis gives the customer a working governance model without creating unnecessary policy sprawl.\nKeep exception handling explicit\nEvery governance model needs an exception path.\nSome agents may not fully fit the target design immediately. Some may be legacy. Some may be third-party. Some may not yet support the preferred identity model. The important point is that exceptions are visible, approved, time-bound, and reviewed.\nGood exception handling should include:\nException ID\nAgent name\nBusiness justification\nOwner\nSponsor\nRisk accepted by\nExpiry date\nReview date\nCompensating controls\nFinal disposition\nAvoid permanent exceptions wherever possible.\nDefine operational ownership\nProduction governance needs clear ownership across teams.\nArea\nPrimary owner\nInventory reporting\nIAM, platform team, or AI governance team\nOwner and sponsor cleanup\nBusiness sponsors, platform owners, identity governance team\nCustom security attribute schema\nIAM or Entra governance team\nAttribute assignment process\nIAM operations, automation team, or delegated governance team\nConditional Access policies\nIAM / security team\nAccess packages\nIdentity governance team with resource owners\nLifecycle workflows\nIdentity governance team\nRisk review\nSecurity operations / identity protection team\nAgent retirement\nPlatform owner, sponsor, and IAM team\nThis prevents the common problem where central IT becomes responsible for every business decision about every agent.\nProduction rollout checklist\nUse this checklist before scaling wider.\nAgent inventory completed\nClassification model agreed\nOwner and sponsor model agreed\nOrphaned agent process defined\nCustom security attribute schema approved\nAttribute assignment owner identified\nInitial attributes populated for pilot agents\nConditional Access policies created in report-only mode\nSign-in and policy impact reviewed\nAccess package model validated\nSponsor request or approval process validated\nLifecycle workflow pilot validated\nHigh-risk agent review process defined\nMonitoring cadence agreed\nException process documented\nRollout ring model approved\nSuggested rollout rings\nRoll out in rings rather than one broad change.\nRing\nScope\nRing 0\nLab or test agents\nRing 1\nSmall pilot group of approved agents\nRing 2\nProduction agents with complete metadata\nRing 3\nWider agent estate\nRing 4\nEnforcement for unknown, rejected, or unmanaged agents\nThis lets the organisation move from visibility to enforcement safely.\nWhat success looks like\nA mature production rollout should result in:\nEvery agent has a known governance state\nProduction agents have owners and sponsors\nUnknown agents are not silently trusted\nCustom security attributes support policy targeting and reporting\nConditional Access policies are scoped using trusted metadata\nAccess packages provide approved, time-bound access\nSponsor lifecycle changes do not create orphaned agents\nRisky agents are reviewed and actioned\nExceptions are documented and time-bound\nGovernance is repeatable for new agents, not just existing ones\nWrap-up\nThe production rollout is where the governance model becomes real. Do not move directly from design to broad enforcement. Start with a pilot, define decision gates, use report-only policies, validate access packages, test lifecycle workflows, and build monitoring into regular operations.\nThe goal is not to create the most complex governance design. The goal is to create a model the customer can operate repeatedly: every agent known, classified, accountable, approved, governed, monitored, and eventually retired when no longer needed.\nFor further actions, you may consider blocking this person and/or reporting abuse\nWe're a place where coders share, stay up-to-date and grow their careers.\nLog in\nCreate account\n\n## full_text\n\nThis article is part of a multi-part series on Microsoft Entra Agent ID governance. For the full sequence and recommended reading order, start from the Governing AI agents with Microsoft Entra Agent ID and Agent 365\nBy this point, the governance design is no longer theoretical. The organisation has a defined path for discovering agents, classifying them, assigning accountability, applying custom security attributes, designing Conditional Access policies, governing access through access packages, maintaining sponsor continuity, and monitoring risk.\nThe final step is to turn these design areas into a practical production rollout plan.\nThis is where many governance efforts fail. The architecture may be sound, but if the rollout is too broad, too manual, or unclear to operational teams, it becomes difficult to sustain. The goal should be a phased rollout that proves the model with a small controlled set of agents before expanding to the wider estate.\nStart with a pilot, not the full estate\nDo not try to govern every agent on day one.\nStart with a representative pilot group that includes different agent types and governance states. The pilot should include a mix of:\nOne or more Microsoft Entra Agent ID-backed agents\nA few approved production agents\nA few agents with missing owner or sponsor\nOne or two unknown or ReviewRequired agents\nAn agent with higher sensitivity or business criticality\nIf available, a third-party or registry-synced agent for comparison\nThis helps validate whether the governance model works across real scenarios. It also helps confirm where controls apply cleanly and where additional validation is required.\nDefine rollout phases clearly\nA practical rollout can be structured into phases.\nPhase\nFocus\nOutcome\nPhase 1\nInventory and classification\nAgents visible and grouped by source, identity model, owner, sponsor, and access pattern\nPhase 2\nAccountability cleanup\nMissing owners, sponsors, orphaned agents, and unknown agents identified and actioned\nPhase 3\nCustom security attributes\nApproved schema created and pilot agents tagged with governance metadata\nPhase 4\nConditional Access report-only\nAgent policies tested without enforcement\nPhase 5\nAccess package pilot\nApproved agents receive governed, time-bound access\nPhase 6\nLifecycle workflow pilot\nSponsor transition scenarios validated\nPhase 7\nMonitoring and operations\nRisk review, access expiry, attribute drift, and ownership hygiene become recurring checks\nPhase 8\nWider enforcement\nControls expanded from pilot to production cohorts\nThis phased approach avoids accidental blocking and gives the customer confidence before enforcement.\nDefine decision gates\nEach phase should have a decision gate. A decision gate is a simple checkpoint that confirms whether the customer is ready to move to the next stage.\nFor example:\nGate\nQuestion to answer\nInventory gate\nDo we know what agents exist and where they came from?\nClassification gate\nDo we know which agents are Agent ID-backed, legacy, third-party, shadow, system-generated, or unknown?\nAccountability gate\nDo production agents have valid owners and sponsors?\nMetadata gate\nAre required custom security attributes populated?\nPolicy gate\nHave Conditional Access policies been tested in report-only mode?\nAccess gate\nAre access packages designed only for approved agents with clear business purpose?\nLifecycle gate\nDo sponsor transition workflows have reliable manager and lifecycle data?\nMonitoring gate\nIs there a recurring process to review risky agents, orphaned agents, and stale access?\nThis keeps the rollout controlled and measurable.\nRecommended minimum production baseline\nBefore an agent is considered production-ready, it should meet a minimum governance baseline.\nRequirement\nWhy it matters\nAgent is inventoried\nEstablishes visibility\nSource platform is known\nDetermines governance path\nIdentity model is known\nConfirms which controls apply\nAccess pattern is known\nDetermines Conditional Access model\nOwner is assigned\nProvides technical accountability\nSponsor is assigned\nProvides business accountability\nBusiness purpose is documented\nConfirms why agent exists\nData sensitivity is classified\nHelps define risk posture\nApproval status is populated\nLets policies distinguish approved and unapproved agents\nLifecycle state is known\nSupports review, retirement, and monitoring\nIf these values are missing, the agent should remain in ReviewRequired state.\nRollout should be policy-light at first\nInitial rollout should avoid creating too many policies.\nStart with a small number of meaningful controls:\nA report-only Conditional Access policy for approved autonomous agents\nA block or review policy for rejected or unknown agents\nA risk-based policy for high-risk agent identities\nOne or two access packages for common approved access patterns\nOne lifecycle workflow for sponsor leave or role-change scenarios\nOne drift report for missing owner, sponsor, or required attributes\nThis gives the customer a working governance model without creating unnecessary policy sprawl.\nKeep exception handling explicit\nEvery governance model needs an exception path.\nSome agents may not fully fit the target design immediately. Some may be legacy. Some may be third-party. Some may not yet support the preferred identity model. The important point is that exceptions are visible, approved, time-bound, and reviewed.\nGood exception handling should include:\nException ID\nAgent name\nBusiness justification\nOwner\nSponsor\nRisk accepted by\nExpiry date\nReview date\nCompensating controls\nFinal disposition\nAvoid permanent exceptions wherever possible.\nDefine operational ownership\nProduction governance needs clear ownership across teams.\nArea\nPrimary owner\nInventory reporting\nIAM, platform team, or AI governance team\nOwner and sponsor cleanup\nBusiness sponsors, platform owners, identity governance team\nCustom security attribute schema\nIAM or Entra governance team\nAttribute assignment process\nIAM operations, automation team, or delegated governance team\nConditional Access policies\nIAM / security team\nAccess packages\nIdentity governance team with resource owners\nLifecycle workflows\nIdentity governance team\nRisk review\nSecurity operations / identity protection team\nAgent retirement\nPlatform owner, sponsor, and IAM team\nThis prevents the common problem where central IT becomes responsible for every business decision about every agent.\nProduction rollout checklist\nUse this checklist before scaling wider.\nAgent inventory completed\nClassification model agreed\nOwner and sponsor model agreed\nOrphaned agent process defined\nCustom security attribute schema approved\nAttribute assignment owner identified\nInitial attributes populated for pilot agents\nConditional Access policies created in report-only mode\nSign-in and policy impact reviewed\nAccess package model validated\nSponsor request or approval process validated\nLifecycle workflow pilot validated\nHigh-risk agent review process defined\nMonitoring cadence agreed\nException process documented\nRollout ring model approved\nSuggested rollout rings\nRoll out in rings rather than one broad change.\nRing\nScope\nRing 0\nLab or test agents\nRing 1\nSmall pilot group of approved agents\nRing 2\nProduction agents with complete metadata\nRing 3\nWider agent estate\nRing 4\nEnforcement for unknown, rejected, or unmanaged agents\nThis lets the organisation move from visibility to enforcement safely.\nWhat success looks like\nA mature production rollout should result in:\nEvery agent has a known governance state\nProduction agents have owners and sponsors\nUnknown agents are not silently trusted\nCustom security attributes support policy targeting and reporting\nConditional Access policies are scoped using trusted metadata\nAccess packages provide approved, time-bound access\nSponsor lifecycle changes do not create orphaned agents\nRisky agents are reviewed and actioned\nExceptions are documented and time-bound\nGovernance is repeatable for new agents, not just existing ones\nWrap-up\nThe production rollout is where the governance model becomes real. Do not move directly from design to broad enforcement. Start with a pilot, define decision gates, use report-only policies, validate access packages, test lifecycle workflows, and build monitoring into regular operations.\nThe goal is not to create the most complex governance design. The goal is to create a model the customer can operate repeatedly: every agent known, classified, accountable, approved, governed, monitored, and eventually retired when no longer needed.\nFor further actions, you may consider blocking this person and/or reporting abuse\nWe're a place where coders share, stay up-to-date and grow their careers.\nLog in\nCreate account\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] # Putting the agent governance model into production - DEV Community Published: 2026-07-09T15:17:58+00:00 Source: dev.to (dev.to) Language: en ## Story Putting the agent governance model into production - DEV Community Skip to content Navigation menu [![DEV Community](https://media2.dev.to/dyn... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace\n2. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] This article is part of a multi-part series on Microsoft Entra Agent ID governance.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] For the full sequence and recommended reading order, start from the Governing AI agents with Microsoft Entra Agent ID and Agent 365 By this point, the governance design is no longer theoretical.\n4. [supporting_context / signal_card_candidate, relationship_graph_input / high] The organisation has a defined path for discovering agents, classifying them, assigning accountability, applying custom security attributes, designing Conditional Access policies, governing access through access packages, maintaining sponsor continuity, and monitoring risk.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The final step is to turn these design areas into a practical production rollout plan.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] This is where many governance efforts fail.\n"
+}

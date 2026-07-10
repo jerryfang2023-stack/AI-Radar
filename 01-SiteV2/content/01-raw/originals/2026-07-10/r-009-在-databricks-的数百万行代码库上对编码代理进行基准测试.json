@@ -1,0 +1,285 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-009",
+  "title": "在 Databricks 的数百万行代码库上对编码代理进行基准测试",
+  "title_zh": "在 Databricks 的数百万行代码库上对编码代理进行基准测试",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase",
+  "canonical_url": "https://databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "formal_report",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-09T21:46:21.211Z",
+  "collected_at": "2026-07-10T01:59:44.118Z",
+  "language": "mixed",
+  "full_text": "At Databricks, the way we build software is changing quickly as we aggressively adopt AI for engineering. The landscape of models and harnesses for code authoring has rapidly expanded in the last year, giving developers more choices than ever. With more options, it has become increasingly important to understand which coding agents offer the best performance on real-world coding tasks as well as understanding how task-performance varies with price.\nThis article shares the results and methodology of the internal coding benchmark we built at Databricks, which evaluates tools on actual coding tasks our engineers performed on the Databricks codebase. Tasks featured edits against a multi-million line codebase covering many popular languages (Python, Go, Typescript, Scala, etc.) and both tasks and solutions were carefully reviewed to ensure accuracy. This isn't meant to be comprehensive, but the exercise surfaced insights that have already made our engineering team meaningfully more efficient with coding agents. Below, you can see how models and harnesses scored on the overall benchmark:\nFigure 1: Cost vs. Performance on our benchmark\nThe main conclusions from our analysis were:\nThe Pareto frontier for coding tasks (i.e. best quality for a given cost) includes models from OpenAI, Anthropic, and open source. This means today, only a mix of tools can provide frontier performance.\nOpen models, and GLM 5.2 in particular, are now able to handle even the highest level of task difficulty.\nThe token price of a model is a poor indicator of actual costs incurred on end-to-end tasks. Larger models can be far more token efficient and have lower overall costs.\nThe harness a model is called from dramatically impacts cost and quality. In many cases, simple harnesses like Pi performed best on our workloads.\nLet’s dive a bit deeper on each one.\nModels cluster into rough “capability tiers”\nSpecific results being a couple points off can often even out in real world tasks. We focused more on the thematic patterns that help us reason about which models to use for various tasks. In fact, the results showed clear clustering of the models and harnesses into 3 capability tiers.\nFigure 2: Three distinct capability tiers emerged in our overall results, with nuance in which models were effective in each group\nAt the upper end of performance, we see that the most intelligent models are very effective at solving all kinds of problems, but they’re very expensive. Medium and lower intelligence models are still highly effective at the common tasks, and in many cases, they’re also significantly cheaper.\nDay to day, engineers do a lot of different things that vary significantly in complexity: common operational tasks like flipping a flag or updating configs don’t require extremely intelligent models, but deeper design explorations do. However, in the past, our default models were always the most expensive ones. Based on this analysis we determined we should push more work to the Haiku and GPT 5.4 Mini class of models.\nOpen models are here for coding\nThere’s been a lot of excitement about GLM 5.2, and our results showed evidence that GLM can be a daily driver model for a lot of our developers. It landed in the top capability tier, statistically tied with Opus 4.8 on quality, but costing $1.28/task against Opus’s $1.94.\nThe GLM quality scores are consistent with qualitative feedback we’ve gotten from internal developers who have been piloting GLM for daily development. Because of its great performance for everyday coding tasks, we’ve been focused on serving GLM with the best performance , and the evidence shows it’s time to start deploying these as daily drivers for coding.\nPrice-per-task vs price-per-token\nDevelopers often eyeball token costs to determine how expensive a model will be when completing coding tasks. We found, however, that token costs are often a poor indicator of overall task costs, due to variance in reasoning efficiency amongst models. This underscores the need for task-level benchmarking, since task shape and complexity may be different in different contexts.\nAs an example, Sonnet 5 is ~1.7x cheaper per token than Opus 4.8, but, on our tasks, we found that Sonnet cost $2.09/task vs Opus’s $1.94, while scoring six points lower on task completion (81% vs 87%). This was mostly because Sonnet 5 worked longer and read more to get there, consuming 1.9x more tokens.\nHarnesses have a major impact on efficiency\nWhen we ran the same model with the same thinking effort through two different harnesses (Claude Code/Codex vs Pi), we observed that the cost per task differed significantly (more than 2x in some cases), while quality remained the same. The main difference came down to how much context each harness fed the model on each turn.\nPi sent about 3x less context per turn. It managed context better, keeping a tighter working set and finishing the tasks in fewer runs.\nThe lesson here isn’t that one harness is always cheaper or that native harnesses are worse. Instead, model choice is only one piece of the puzzle. Establishing this flexibility is why we invested in Omnigent to make mode-and-harness swaps seamless.\nWhy build your own benchmark?\nPublic benchmarks like SWE-Bench and TerminalBench are useful, but they can’t answer the questions we had. There are a few reasons for this:\nThe tasks are public, so the solutions leak into training data over time.\nWe found the results weren’t representative for our codebase, which spans 10+ languages and many services written in Scala, Go, Rust, Java and Python, Bazel, Protobuf, and more.\nBy building a benchmark on our own PRs, we can make these decisions with higher confidence that we won’t hamper our developers by rolling out optimizations.\nHow we built the benchmark\nWe used Unity AI Gateway to capture logs of all our coding interactions, which enabled us to analyze the complexity of the tasks engineers tackle using coding agents. There was a significant diversity in the task complexity, and about a quarter were tagged as low-complexity work and ~60% as medium complexity.\nHowever, expensive models are the default models engineers use, so there was clearly a huge opportunity for improving efficiency.\nTask Construction\nOur engineers merge thousands of code changes a day, so we already have a great dataset to build off. A good pull request is a rich artifact, with commits that show iteration from the developer, review by humans, and tests that help verify a code change is faithful to its intent. However, we needed several quality checks and filters to construct a high-quality benchmark out of them:\nRecency: We pull from recent history so the tasks reflect how we build today, including the frameworks, patterns, and conventions currently in use.\nHuman written: Bot commits, service accounts, fully AI generated changes, and auto-generated changes were filtered.\nAssociated high quality test suite: We filtered for PRs that included high-quality tests for validating the code changes.\nSelf-contained: The changes were confined to a few modules.\nRepresentative of typical tasks: We selected PRs from a distribution of tasks across the full stack: Scala backend services, Rust systems code, the React and TypeScript frontend, protobuf and gRPC contracts, and Bazel configs.\nOnce we had candidate PRs, we focused on constructing well-specified tasks by:\nGleaning the intent and summarizing it as a prompt. We read the PR to understand what it was actually for and then describe the outcome we want. Usually, that meant rewriting the PR description by stating the problem or goal, naming any constraints, and removing the description of the solution. It’s important to remove, for example, explanations of why a bug fix is the right one, since that makes the task too easy.\nSplitting out the relevant tests. The non-test files were the change the model has to reproduce on its own, so we set the test files aside and ensured we could compile that. Our build system can already determine which tests depend on the files that were touched in the original PR, so we ran all those test targets in full.\nWhat came out of this exercise was a single task in the benchmark. Here’s a simplified example:",
+  "clean_text": "At Databricks, the way we build software is changing quickly as we aggressively adopt AI for engineering. The landscape of models and harnesses for code authoring has rapidly expanded in the last year, giving developers more choices than ever. With more options, it has become increasingly important to understand which coding agents offer the best performance on real-world coding tasks as well as understanding how task-performance varies with price.\nThis article shares the results and methodology of the internal coding benchmark we built at Databricks, which evaluates tools on actual coding tasks our engineers performed on the Databricks codebase. Tasks featured edits against a multi-million line codebase covering many popular languages (Python, Go, Typescript, Scala, etc.) and both tasks and solutions were carefully reviewed to ensure accuracy. This isn't meant to be comprehensive, but the exercise surfaced insights that have already made our engineering team meaningfully more efficient with coding agents. Below, you can see how models and harnesses scored on the overall benchmark:\nFigure 1: Cost vs. Performance on our benchmark\nThe main conclusions from our analysis were:\nThe Pareto frontier for coding tasks (i.e. best quality for a given cost) includes models from OpenAI, Anthropic, and open source. This means today, only a mix of tools can provide frontier performance.\nOpen models, and GLM 5.2 in particular, are now able to handle even the highest level of task difficulty.\nThe token price of a model is a poor indicator of actual costs incurred on end-to-end tasks. Larger models can be far more token efficient and have lower overall costs.\nThe harness a model is called from dramatically impacts cost and quality. In many cases, simple harnesses like Pi performed best on our workloads.\nLet’s dive a bit deeper on each one.\nModels cluster into rough “capability tiers”\nSpecific results being a couple points off can often even out in real world tasks. We focused more on the thematic patterns that help us reason about which models to use for various tasks. In fact, the results showed clear clustering of the models and harnesses into 3 capability tiers.\nFigure 2: Three distinct capability tiers emerged in our overall results, with nuance in which models were effective in each group\nAt the upper end of performance, we see that the most intelligent models are very effective at solving all kinds of problems, but they’re very expensive. Medium and lower intelligence models are still highly effective at the common tasks, and in many cases, they’re also significantly cheaper.\nDay to day, engineers do a lot of different things that vary significantly in complexity: common operational tasks like flipping a flag or updating configs don’t require extremely intelligent models, but deeper design explorations do. However, in the past, our default models were always the most expensive ones. Based on this analysis we determined we should push more work to the Haiku and GPT 5.4 Mini class of models.\nOpen models are here for coding\nThere’s been a lot of excitement about GLM 5.2, and our results showed evidence that GLM can be a daily driver model for a lot of our developers. It landed in the top capability tier, statistically tied with Opus 4.8 on quality, but costing $1.28/task against Opus’s $1.94.\nThe GLM quality scores are consistent with qualitative feedback we’ve gotten from internal developers who have been piloting GLM for daily development. Because of its great performance for everyday coding tasks, we’ve been focused on serving GLM with the best performance , and the evidence shows it’s time to start deploying these as daily drivers for coding.\nPrice-per-task vs price-per-token\nDevelopers often eyeball token costs to determine how expensive a model will be when completing coding tasks. We found, however, that token costs are often a poor indicator of overall task costs, due to variance in reasoning efficiency amongst models. This underscores the need for task-level benchmarking, since task shape and complexity may be different in different contexts.\nAs an example, Sonnet 5 is ~1.7x cheaper per token than Opus 4.8, but, on our tasks, we found that Sonnet cost $2.09/task vs Opus’s $1.94, while scoring six points lower on task completion (81% vs 87%). This was mostly because Sonnet 5 worked longer and read more to get there, consuming 1.9x more tokens.\nHarnesses have a major impact on efficiency\nWhen we ran the same model with the same thinking effort through two different harnesses (Claude Code/Codex vs Pi), we observed that the cost per task differed significantly (more than 2x in some cases), while quality remained the same. The main difference came down to how much context each harness fed the model on each turn.\nPi sent about 3x less context per turn. It managed context better, keeping a tighter working set and finishing the tasks in fewer runs.\nThe lesson here isn’t that one harness is always cheaper or that native harnesses are worse. Instead, model choice is only one piece of the puzzle. Establishing this flexibility is why we invested in Omnigent to make mode-and-harness swaps seamless.\nWhy build your own benchmark?\nPublic benchmarks like SWE-Bench and TerminalBench are useful, but they can’t answer the questions we had. There are a few reasons for this:\nThe tasks are public, so the solutions leak into training data over time.\nWe found the results weren’t representative for our codebase, which spans 10+ languages and many services written in Scala, Go, Rust, Java and Python, Bazel, Protobuf, and more.\nBy building a benchmark on our own PRs, we can make these decisions with higher confidence that we won’t hamper our developers by rolling out optimizations.\nHow we built the benchmark\nWe used Unity AI Gateway to capture logs of all our coding interactions, which enabled us to analyze the complexity of the tasks engineers tackle using coding agents. There was a significant diversity in the task complexity, and about a quarter were tagged as low-complexity work and ~60% as medium complexity.\nHowever, expensive models are the default models engineers use, so there was clearly a huge opportunity for improving efficiency.\nTask Construction\nOur engineers merge thousands of code changes a day, so we already have a great dataset to build off. A good pull request is a rich artifact, with commits that show iteration from the developer, review by humans, and tests that help verify a code change is faithful to its intent. However, we needed several quality checks and filters to construct a high-quality benchmark out of them:\nRecency: We pull from recent history so the tasks reflect how we build today, including the frameworks, patterns, and conventions currently in use.\nHuman written: Bot commits, service accounts, fully AI generated changes, and auto-generated changes were filtered.\nAssociated high quality test suite: We filtered for PRs that included high-quality tests for validating the code changes.\nSelf-contained: The changes were confined to a few modules.\nRepresentative of typical tasks: We selected PRs from a distribution of tasks across the full stack: Scala backend services, Rust systems code, the React and TypeScript frontend, protobuf and gRPC contracts, and Bazel configs.\nOnce we had candidate PRs, we focused on constructing well-specified tasks by:\nGleaning the intent and summarizing it as a prompt. We read the PR to understand what it was actually for and then describe the outcome we want. Usually, that meant rewriting the PR description by stating the problem or goal, naming any constraints, and removing the description of the solution. It’s important to remove, for example, explanations of why a bug fix is the right one, since that makes the task too easy.\nSplitting out the relevant tests. The non-test files were the change the model has to reproduce on its own, so we set the test files aside and ensured we could compile that. Our build system can already determine which tests depend on the files that were touched in the original PR, so we ran all those test targets in full.\nWhat came out of this exercise was a single task in the benchmark. Here’s a simplified example:",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-10/r-009-在-databricks-的数百万行代码库上对编码代理进行基准测试.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-10/r-009-在-databricks-的数百万行代码库上对编码代理进行基准测试.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 8220,
+    "paragraph_count": 42,
+    "sentence_count": 63,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0002,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 8220,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "e66b08b59b9ebcb3",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "在 Databricks 的数百万行代码库上对编码代理进行基准测试",
+    "discovery_summary": "Databricks 基于内部数百万行代码库（Python、Go、TypeScript、Scala 等）构建编码代理基准，评估真实编码任务的性能与成本。结果显示，性能前沿包含 OpenAI、Anthropic 及开源模型；GLM 5.2 进入最高能力层，质量与 Opus 4.8 持平，但每任务成本仅 $1.28（Opus 4.8 为 $1.94）。Sonnet 5 每 token 更便宜，但消耗更多 token 导致总成本更高。不同 harness（如 Claude Code/Codex 与 Pi）可带来超 2 倍成本差异。模型 token 价格并非实际任务成本的良好指标。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase",
+    "discovered_at": "2026-07-10T01:50:23.480Z",
+    "rank_on_page": 118,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "2e75c1cafdd44faf",
+  "content_hash": "e66b08b59b9ebcb3",
+  "full_text_hash": "e66b08b59b9ebcb3",
+  "semantic_hash": "e8856f6cc037aab1",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-09T21:46:21.211Z",
+  "last_seen_at": "2026-07-10T01:59:44.118Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Databricks 基于内部数百万行代码库（Python、Go、TypeScript、Scala 等）构建编码代理基准，评估真实编码任务的性能与成本。结果显示，性能前沿包含 OpenAI、Anthropic 及开源模型；GLM 5.2 进入最高能力层，质量与 Opus 4.8 持平，但每任务成本仅 $1.28（Opus 4.8 为 $1.94）。Sonnet 5 每 token 更便宜，但消耗更多 token 导致总成本更高。不同 harness（如 Claude Code/Codex 与 Pi）可带来超 2 倍成本差异。模型 token 价格并非实际任务成本的良好指标。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "At Databricks, the way we build software is changing quickly as we aggressively adopt AI for engineering.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The landscape of models and harnesses for code authoring has rapidly expanded in the last year, giving developers more choices than ever.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "With more options, it has become increasingly important to understand which coding agents offer the best performance on real-world coding tasks as well as understanding how task-performance varies with price.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "This article shares the results and methodology of the internal coding benchmark we built at Databricks, which evaluates tools on actual coding tasks our engineers performed on the Databricks codebase.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Tasks featured edits against a multi-million line codebase covering many popular languages (Python, Go, Typescript, Scala, etc.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-10T01:59:44.118Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "products": [
+      "Claude",
+      "Codex",
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "5.2",
+      "4.8",
+      "$1.28",
+      "$1.94",
+      "5",
+      "2 倍",
+      "1",
+      "3"
+    ],
+    "quotes": [
+      "capability tiers"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "At Databricks, the way we build software is changing quickly as we aggressively adopt AI for engineering.",
+      "The landscape of models and harnesses for code authoring has rapidly expanded in the last year, giving developers more choices than ever.",
+      "With more options, it has become increasingly important to understand which coding agents offer the best performance on real-world coding tasks as well as understanding how task-performance varies with price."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": false,
+    "emerging_pool": true,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 在 Databricks 的数百万行代码库上对编码代理进行基准测试\n\n- raw_id: R-009\n- title_zh: 在 Databricks 的数百万行代码库上对编码代理进行基准测试\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-10T01:59:44.118Z\n\n## clean_text\n\nAt Databricks, the way we build software is changing quickly as we aggressively adopt AI for engineering. The landscape of models and harnesses for code authoring has rapidly expanded in the last year, giving developers more choices than ever. With more options, it has become increasingly important to understand which coding agents offer the best performance on real-world coding tasks as well as understanding how task-performance varies with price.\nThis article shares the results and methodology of the internal coding benchmark we built at Databricks, which evaluates tools on actual coding tasks our engineers performed on the Databricks codebase. Tasks featured edits against a multi-million line codebase covering many popular languages (Python, Go, Typescript, Scala, etc.) and both tasks and solutions were carefully reviewed to ensure accuracy. This isn't meant to be comprehensive, but the exercise surfaced insights that have already made our engineering team meaningfully more efficient with coding agents. Below, you can see how models and harnesses scored on the overall benchmark:\nFigure 1: Cost vs. Performance on our benchmark\nThe main conclusions from our analysis were:\nThe Pareto frontier for coding tasks (i.e. best quality for a given cost) includes models from OpenAI, Anthropic, and open source. This means today, only a mix of tools can provide frontier performance.\nOpen models, and GLM 5.2 in particular, are now able to handle even the highest level of task difficulty.\nThe token price of a model is a poor indicator of actual costs incurred on end-to-end tasks. Larger models can be far more token efficient and have lower overall costs.\nThe harness a model is called from dramatically impacts cost and quality. In many cases, simple harnesses like Pi performed best on our workloads.\nLet’s dive a bit deeper on each one.\nModels cluster into rough “capability tiers”\nSpecific results being a couple points off can often even out in real world tasks. We focused more on the thematic patterns that help us reason about which models to use for various tasks. In fact, the results showed clear clustering of the models and harnesses into 3 capability tiers.\nFigure 2: Three distinct capability tiers emerged in our overall results, with nuance in which models were effective in each group\nAt the upper end of performance, we see that the most intelligent models are very effective at solving all kinds of problems, but they’re very expensive. Medium and lower intelligence models are still highly effective at the common tasks, and in many cases, they’re also significantly cheaper.\nDay to day, engineers do a lot of different things that vary significantly in complexity: common operational tasks like flipping a flag or updating configs don’t require extremely intelligent models, but deeper design explorations do. However, in the past, our default models were always the most expensive ones. Based on this analysis we determined we should push more work to the Haiku and GPT 5.4 Mini class of models.\nOpen models are here for coding\nThere’s been a lot of excitement about GLM 5.2, and our results showed evidence that GLM can be a daily driver model for a lot of our developers. It landed in the top capability tier, statistically tied with Opus 4.8 on quality, but costing $1.28/task against Opus’s $1.94.\nThe GLM quality scores are consistent with qualitative feedback we’ve gotten from internal developers who have been piloting GLM for daily development. Because of its great performance for everyday coding tasks, we’ve been focused on serving GLM with the best performance , and the evidence shows it’s time to start deploying these as daily drivers for coding.\nPrice-per-task vs price-per-token\nDevelopers often eyeball token costs to determine how expensive a model will be when completing coding tasks. We found, however, that token costs are often a poor indicator of overall task costs, due to variance in reasoning efficiency amongst models. This underscores the need for task-level benchmarking, since task shape and complexity may be different in different contexts.\nAs an example, Sonnet 5 is ~1.7x cheaper per token than Opus 4.8, but, on our tasks, we found that Sonnet cost $2.09/task vs Opus’s $1.94, while scoring six points lower on task completion (81% vs 87%). This was mostly because Sonnet 5 worked longer and read more to get there, consuming 1.9x more tokens.\nHarnesses have a major impact on efficiency\nWhen we ran the same model with the same thinking effort through two different harnesses (Claude Code/Codex vs Pi), we observed that the cost per task differed significantly (more than 2x in some cases), while quality remained the same. The main difference came down to how much context each harness fed the model on each turn.\nPi sent about 3x less context per turn. It managed context better, keeping a tighter working set and finishing the tasks in fewer runs.\nThe lesson here isn’t that one harness is always cheaper or that native harnesses are worse. Instead, model choice is only one piece of the puzzle. Establishing this flexibility is why we invested in Omnigent to make mode-and-harness swaps seamless.\nWhy build your own benchmark?\nPublic benchmarks like SWE-Bench and TerminalBench are useful, but they can’t answer the questions we had. There are a few reasons for this:\nThe tasks are public, so the solutions leak into training data over time.\nWe found the results weren’t representative for our codebase, which spans 10+ languages and many services written in Scala, Go, Rust, Java and Python, Bazel, Protobuf, and more.\nBy building a benchmark on our own PRs, we can make these decisions with higher confidence that we won’t hamper our developers by rolling out optimizations.\nHow we built the benchmark\nWe used Unity AI Gateway to capture logs of all our coding interactions, which enabled us to analyze the complexity of the tasks engineers tackle using coding agents. There was a significant diversity in the task complexity, and about a quarter were tagged as low-complexity work and ~60% as medium complexity.\nHowever, expensive models are the default models engineers use, so there was clearly a huge opportunity for improving efficiency.\nTask Construction\nOur engineers merge thousands of code changes a day, so we already have a great dataset to build off. A good pull request is a rich artifact, with commits that show iteration from the developer, review by humans, and tests that help verify a code change is faithful to its intent. However, we needed several quality checks and filters to construct a high-quality benchmark out of them:\nRecency: We pull from recent history so the tasks reflect how we build today, including the frameworks, patterns, and conventions currently in use.\nHuman written: Bot commits, service accounts, fully AI generated changes, and auto-generated changes were filtered.\nAssociated high quality test suite: We filtered for PRs that included high-quality tests for validating the code changes.\nSelf-contained: The changes were confined to a few modules.\nRepresentative of typical tasks: We selected PRs from a distribution of tasks across the full stack: Scala backend services, Rust systems code, the React and TypeScript frontend, protobuf and gRPC contracts, and Bazel configs.\nOnce we had candidate PRs, we focused on constructing well-specified tasks by:\nGleaning the intent and summarizing it as a prompt. We read the PR to understand what it was actually for and then describe the outcome we want. Usually, that meant rewriting the PR description by stating the problem or goal, naming any constraints, and removing the description of the solution. It’s important to remove, for example, explanations of why a bug fix is the right one, since that makes the task too easy.\nSplitting out the relevant tests. The non-test files were the change the model has to reproduce on its own, so we set the test files aside and ensured we could compile that. Our build system can already determine which tests depend on the files that were touched in the original PR, so we ran all those test targets in full.\nWhat came out of this exercise was a single task in the benchmark. Here’s a simplified example:\n\n## full_text\n\nAt Databricks, the way we build software is changing quickly as we aggressively adopt AI for engineering. The landscape of models and harnesses for code authoring has rapidly expanded in the last year, giving developers more choices than ever. With more options, it has become increasingly important to understand which coding agents offer the best performance on real-world coding tasks as well as understanding how task-performance varies with price.\nThis article shares the results and methodology of the internal coding benchmark we built at Databricks, which evaluates tools on actual coding tasks our engineers performed on the Databricks codebase. Tasks featured edits against a multi-million line codebase covering many popular languages (Python, Go, Typescript, Scala, etc.) and both tasks and solutions were carefully reviewed to ensure accuracy. This isn't meant to be comprehensive, but the exercise surfaced insights that have already made our engineering team meaningfully more efficient with coding agents. Below, you can see how models and harnesses scored on the overall benchmark:\nFigure 1: Cost vs. Performance on our benchmark\nThe main conclusions from our analysis were:\nThe Pareto frontier for coding tasks (i.e. best quality for a given cost) includes models from OpenAI, Anthropic, and open source. This means today, only a mix of tools can provide frontier performance.\nOpen models, and GLM 5.2 in particular, are now able to handle even the highest level of task difficulty.\nThe token price of a model is a poor indicator of actual costs incurred on end-to-end tasks. Larger models can be far more token efficient and have lower overall costs.\nThe harness a model is called from dramatically impacts cost and quality. In many cases, simple harnesses like Pi performed best on our workloads.\nLet’s dive a bit deeper on each one.\nModels cluster into rough “capability tiers”\nSpecific results being a couple points off can often even out in real world tasks. We focused more on the thematic patterns that help us reason about which models to use for various tasks. In fact, the results showed clear clustering of the models and harnesses into 3 capability tiers.\nFigure 2: Three distinct capability tiers emerged in our overall results, with nuance in which models were effective in each group\nAt the upper end of performance, we see that the most intelligent models are very effective at solving all kinds of problems, but they’re very expensive. Medium and lower intelligence models are still highly effective at the common tasks, and in many cases, they’re also significantly cheaper.\nDay to day, engineers do a lot of different things that vary significantly in complexity: common operational tasks like flipping a flag or updating configs don’t require extremely intelligent models, but deeper design explorations do. However, in the past, our default models were always the most expensive ones. Based on this analysis we determined we should push more work to the Haiku and GPT 5.4 Mini class of models.\nOpen models are here for coding\nThere’s been a lot of excitement about GLM 5.2, and our results showed evidence that GLM can be a daily driver model for a lot of our developers. It landed in the top capability tier, statistically tied with Opus 4.8 on quality, but costing $1.28/task against Opus’s $1.94.\nThe GLM quality scores are consistent with qualitative feedback we’ve gotten from internal developers who have been piloting GLM for daily development. Because of its great performance for everyday coding tasks, we’ve been focused on serving GLM with the best performance , and the evidence shows it’s time to start deploying these as daily drivers for coding.\nPrice-per-task vs price-per-token\nDevelopers often eyeball token costs to determine how expensive a model will be when completing coding tasks. We found, however, that token costs are often a poor indicator of overall task costs, due to variance in reasoning efficiency amongst models. This underscores the need for task-level benchmarking, since task shape and complexity may be different in different contexts.\nAs an example, Sonnet 5 is ~1.7x cheaper per token than Opus 4.8, but, on our tasks, we found that Sonnet cost $2.09/task vs Opus’s $1.94, while scoring six points lower on task completion (81% vs 87%). This was mostly because Sonnet 5 worked longer and read more to get there, consuming 1.9x more tokens.\nHarnesses have a major impact on efficiency\nWhen we ran the same model with the same thinking effort through two different harnesses (Claude Code/Codex vs Pi), we observed that the cost per task differed significantly (more than 2x in some cases), while quality remained the same. The main difference came down to how much context each harness fed the model on each turn.\nPi sent about 3x less context per turn. It managed context better, keeping a tighter working set and finishing the tasks in fewer runs.\nThe lesson here isn’t that one harness is always cheaper or that native harnesses are worse. Instead, model choice is only one piece of the puzzle. Establishing this flexibility is why we invested in Omnigent to make mode-and-harness swaps seamless.\nWhy build your own benchmark?\nPublic benchmarks like SWE-Bench and TerminalBench are useful, but they can’t answer the questions we had. There are a few reasons for this:\nThe tasks are public, so the solutions leak into training data over time.\nWe found the results weren’t representative for our codebase, which spans 10+ languages and many services written in Scala, Go, Rust, Java and Python, Bazel, Protobuf, and more.\nBy building a benchmark on our own PRs, we can make these decisions with higher confidence that we won’t hamper our developers by rolling out optimizations.\nHow we built the benchmark\nWe used Unity AI Gateway to capture logs of all our coding interactions, which enabled us to analyze the complexity of the tasks engineers tackle using coding agents. There was a significant diversity in the task complexity, and about a quarter were tagged as low-complexity work and ~60% as medium complexity.\nHowever, expensive models are the default models engineers use, so there was clearly a huge opportunity for improving efficiency.\nTask Construction\nOur engineers merge thousands of code changes a day, so we already have a great dataset to build off. A good pull request is a rich artifact, with commits that show iteration from the developer, review by humans, and tests that help verify a code change is faithful to its intent. However, we needed several quality checks and filters to construct a high-quality benchmark out of them:\nRecency: We pull from recent history so the tasks reflect how we build today, including the frameworks, patterns, and conventions currently in use.\nHuman written: Bot commits, service accounts, fully AI generated changes, and auto-generated changes were filtered.\nAssociated high quality test suite: We filtered for PRs that included high-quality tests for validating the code changes.\nSelf-contained: The changes were confined to a few modules.\nRepresentative of typical tasks: We selected PRs from a distribution of tasks across the full stack: Scala backend services, Rust systems code, the React and TypeScript frontend, protobuf and gRPC contracts, and Bazel configs.\nOnce we had candidate PRs, we focused on constructing well-specified tasks by:\nGleaning the intent and summarizing it as a prompt. We read the PR to understand what it was actually for and then describe the outcome we want. Usually, that meant rewriting the PR description by stating the problem or goal, naming any constraints, and removing the description of the solution. It’s important to remove, for example, explanations of why a bug fix is the right one, since that makes the task too easy.\nSplitting out the relevant tests. The non-test files were the change the model has to reproduce on its own, so we set the test files aside and ensured we could compile that. Our build system can already determine which tests depend on the files that were touched in the original PR, so we ran all those test targets in full.\nWhat came out of this exercise was a single task in the benchmark. Here’s a simplified example:\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] Databricks 基于内部数百万行代码库（Python、Go、TypeScript、Scala 等）构建编码代理基准，评估真实编码任务的性能与成本。结果显示，性能前沿包含 OpenAI、Anthropic 及开源模型；GLM 5.2 进入最高能力层，质量与 Opus 4.8 持平，但每任务成本仅 $1.28（Opus 4.8 为 $1.94）。Sonnet 5 每 token 更便宜，但消耗更多 token 导致总成本更高。不同 harness（如 Claude Code/Codex 与 Pi）可带来超 2 倍成本差异。模型 token 价格并非实际任务成本的良好指标。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] At Databricks, the way we build software is changing quickly as we aggressively adopt AI for engineering.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The landscape of models and harnesses for code authoring has rapidly expanded in the last year, giving developers more choices than ever.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] With more options, it has become increasingly important to understand which coding agents offer the best performance on real-world coding tasks as well as understanding how task-performance varies with price.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] This article shares the results and methodology of the internal coding benchmark we built at Databricks, which evaluates tools on actual coding tasks our engineers performed on the Databricks codebase.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Tasks featured edits against a multi-million line codebase covering many popular languages (Python, Go, Typescript, Scala, etc.\n"
+}

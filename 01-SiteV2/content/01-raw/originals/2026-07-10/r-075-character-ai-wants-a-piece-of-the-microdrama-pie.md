@@ -1,0 +1,270 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-075
+title: "Character.AI wants a piece of the microdrama pie"
+title_zh: "Character.AI想要一块微剧馅饼"
+title_translation_status: translated
+title_translation_method: mymemory_title_translation
+original_url: "https://www.theverge.com/entertainment/962897/character-ai-series-microdrama-vertical-video"
+canonical_url: "https://theverge.com/entertainment/962897/character-ai-series-microdrama-vertical-video"
+source_name: "The Verge AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-09T13:11:53.000Z"
+collected_at: 2026-07-10T02:00:00.732Z
+language: mixed
+full_text_hash: 3e9dd5afd1b0671d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-10/r-075-character-ai-wants-a-piece-of-the-microdrama-pie.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-10/r-075-character-ai-wants-a-piece-of-the-microdrama-pie.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":12833,"paragraph_count":36,"sentence_count":68,"boilerplate_hits":0,"symbol_ratio":0.0012,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 12833
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3e9dd5afd1b0671d","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: d2a913b7e983bef5
+content_hash: 3e9dd5afd1b0671d
+semantic_hash: cd4ef89ec85b4f88
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-09T13:11:53.000Z"
+last_seen_at: 2026-07-10T02:00:00.732Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["The Verge AI"],"products":[],"people":[],"industries":[],"roles":["CIO / IT 负责人"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["8230","$26 billion","10","2","2026","07","3","90"],"quotes":["using AI as part of the production workflow.","Microdramas are a continuation of that broader arc of becoming a broader storytelling and entertainment platform that we’ve been on,","six months ago by hitting three buttons,","fantastic team of Hollywood screenwriters","Our models make it easier for us to ensure visual and tonal consistency for characters across different scenes."]}
+evidence_seed: {"company_actions":["Character.AI's plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas. Today, the company announced the debut of c.ai Series - short-form, episodic videos designed to be watched and interacted with - on your phone. Unlike traditional microdrama services that feature cheaply produced, live-action shows starring [&#8230;]","AI wants a piece of the microdrama pie Interactivity is the big thing that sets Character.","ai’s Series apart from other players in the vertical video space."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"funding","text":"Character.AI's plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas. Today, the company announced the debut of c.ai Series - short-form, episodic videos designed to be watched and interacted with - on your phone. Unlike traditional microdrama services that feature cheaply produced, live-action shows starring [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI wants a piece of the microdrama pie Interactivity is the big thing that sets Character.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"funding","text":"ai’s Series apart from other players in the vertical video space.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI’s plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Today, the company announced the debut of c.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"funding","text":"ai Series — short-form, episodic videos designed to be watched and interacted with — on your phone.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-10T02:00:00.732Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Character.AI wants a piece of the microdrama pie
+
+## clean_text
+
+Character.AI wants a piece of the microdrama pie
+Interactivity is the big thing that sets Character.ai’s Series apart from other players in the vertical video space.
+Character.AI’s plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas. Today, the company announced the debut of c.ai Series — short-form, episodic videos designed to be watched and interacted with — on your phone.
+Unlike traditional microdrama services that feature cheaply produced, live-action shows starring human performers, c.ai Series are animated and almost entirely made with generative AI. The company’s interest in getting into the microdrama space isn’t surprising considering that it’s projected to become a $26 billion industry in the next few years. And even though some young people have begun to take a stance against gen AI, that might not be an issue for the folks already using Character.AI.
+Each of Character.AI’s microdramas revolves around a different set of characters being thrust into adventures that map neatly onto popular genres like romance, horror, and sci-fi. You can already find plenty of that kind of stuff on other microdrama apps like ReelShort and DramaBox. But what sets c.ai Series apart is the way that viewers will be able to chat with characters after they’ve finished watching an episode.
+Character.AI is kicking off this new initiative with three projects. Last Summer tells a story about secret admirers while leaning into an anime aesthetic, The Nighttime Game — which resembles Netflix’s Entergalactic — focuses on friends playing a deadly card game, and Eden Fall follows a group of elite MMO players into a Ready Player One-style virtual reality that looks a bit like Genshin Impact. The three Series will all debut with 10 episodes that clock in at under two minutes each. The first eight episodes of each Series will be free to watch for all Character.AI users, but the final two will be behind paywalls.
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/c.ai-Series-3.jpg?quality=90&strip=all]
+Character.AI says that this first batch of Series were all developed by a human-led, in-house studio team “using AI as part of the production workflow.” But in the future, it plans to let creators produce original microdramas of their own using the company’s AI tools.
+At a glance, Character.AI’s foray into microdramas seems very much like the company following in the footsteps of TV networks like Fox, Bravo, and BET that have already hopped onto the vertical video bandwagon. But when I recently spoke with Character.AI CEO Karandeep Anand, he insisted that microdramas are an organic next step for the platform.
+“Microdramas are a continuation of that broader arc of becoming a broader storytelling and entertainment platform that we’ve been on,” Anand told me. “This isn’t just a one-off thing we’re doing because microdramas are the next cool thing; it’s a very natural extension of what our users are already doing and it opens up another massive gateway into our community.”
+Though Character.AI could have launched Series “six months ago by hitting three buttons,” Anand said that he did not want to rush the feature’s release because he isn’t interested in putting out video slop. Rather than leading with shows that were wholly made with gen AI, the company enlisted a “fantastic team of Hollywood screenwriters” to develop scripts with a small group of creators who penned extensive bibles detailing each story’s lore. Those scripts were then fed into Character.AI’s proprietary, agentic pipeline to generate visuals and audio that were edited together with traditional post-production software.
+Development on these first three Series took a few weeks, which puts their production timelines on par with other microdrama platforms’ live-action offerings. The process might have been faster if Character.AI utilized third- party video generation models, but Anand wanted to keep things in-house in order to maintain visual consistency.
+“The amount of innovation that has happened with text-focused LLMs has been exceptional, but there haven’t been equivalent advancements in the multimodal image and models,” Andand explained. “Our models make it easier for us to ensure visual and tonal consistency for characters across different scenes.”
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/c.ai-Series-4.jpg?quality=90&strip=all]
+Watching Character.AI’s microdramas, you can definitely see that they’re more polished than most of the AI animations floating around the internet today. Scenes flow with a clear sense of direction that makes them feel like they were crafted by a person with a basic sense of visual storytelling. The occasional bit of leaden dialogue and stiff facial expressions make it clear that these characters aren’t being voiced by actual actors. But when you compare these shows to the low-budget absurdity of most live-action microdramas, it’s easy to imagine Character.AI’s user base giving them a shot — if only to play around with the interactive features.
+Similar to Character.AI’s regular chatbots, people will be able to roleplay or simply talk to characters from their favorite Series. One of the major differences, though, is that each episode is powered by a unique LLM that’s designed to only provide information that has been previously established on screen. This, Anand explained, is meant to prevent the chatbots from spoiling users with details about things they haven’t seen yet. These bots are supposed to be fun, which is also part of the reason why Character.AI is barring its underage users from interacting with them.
+When I brought up Character.AI’s history of getting caught up in scandals regarding children being encouraged to self-harm by its chatbots, Anand was adamant that the company has taken the necessary steps like implementing hard age verification to make itself a safer place. At launch, Series will only be available to users over 18, and while younger viewers will eventually be able to watch the shows, they won’t be allowed to chat with Series-focused bots.
+Character.AI made a name for itself by creating a space where fandom-obsessed people could insert themselves into fictional worlds, and Stories really do seem like the sort of thing that could resonate with this audience if the company can get them hooked.
+Character.AI wants a piece of the microdrama pie
+Interactivity is the big thing that sets Character.ai’s Series apart from other players in the vertical video space.
+Character.AI’s plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas. Today, the company announced the debut of c.ai Series — short-form, episodic videos designed to be watched and interacted with — on your phone.
+Unlike traditional microdrama services that feature cheaply produced, live-action shows starring human performers, c.ai Series are animated and almost entirely made with generative AI. The company’s interest in getting into the microdrama space isn’t surprising considering that it’s projected to become a $26 billion industry in the next few years. And even though some young people have begun to take a stance against gen AI, that might not be an issue for the folks already using Character.AI.
+Each of Character.AI’s microdramas revolves around a different set of characters being thrust into adventures that map neatly onto popular genres like romance, horror, and sci-fi. You can already find plenty of that kind of stuff on other microdrama apps like ReelShort and DramaBox. But what sets c.ai Series apart is the way that viewers will be able to chat with characters after they’ve finished watching an episode.
+Character.AI is kicking off this new initiative with three projects. Last Summer tells a story about secret admirers while leaning into an anime aesthetic, The Nighttime Game — which resembles Netflix’s Entergalactic — focuses on friends playing a deadly card game, and Eden Fall follows a group of elite MMO players into a Ready Player One-style virtual reality that looks a bit like Genshin Impact. The three Series will all debut with 10 episodes that clock in at under two minutes each. The first eight episodes of each Series will be free to watch for all Character.AI users, but the final two will be behind paywalls.
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/c.ai-Series-3.jpg?quality=90&strip=all]
+Character.AI says that this first batch of Series were all developed by a human-led, in-house studio team “using AI as part of the production workflow.” But in the future, it plans to let creators produce original microdramas of their own using the company’s AI tools.
+At a glance, Character.AI’s foray into microdramas seems very much like the company following in the footsteps of TV networks like Fox, Bravo, and BET that have already hopped onto the vertical video bandwagon. But when I recently spoke with Character.AI CEO Karandeep Anand, he insisted that microdramas are an organic next step for the platform.
+“Microdramas are a continuation of that broader arc of becoming a broader storytelling and entertainment platform that we’ve been on,” Anand told me. “This isn’t just a one-off thing we’re doing because microdramas are the next cool thing; it’s a very natural extension of what our users are already doing and it opens up another massive gateway into our community.”
+Though Character.AI could have launched Series “six months ago by hitting three buttons,” Anand said that he did not want to rush the feature’s release because he isn’t interested in putting out video slop. Rather than leading with shows that were wholly made with gen AI, the company enlisted a “fantastic team of Hollywood screenwriters” to develop scripts with a small group of creators who penned extensive bibles detailing each story’s lore. Those scripts were then fed into Character.AI’s proprietary, agentic pipeline to generate visuals and audio that were edited together with traditional post-production software.
+Development on these first three Series took a few weeks, which puts their production timelines on par with other microdrama platforms’ live-action offerings. The process might have been faster if Character.AI utilized third- party video generation models, but Anand wanted to keep things in-house in order to maintain visual consistency.
+“The amount of innovation that has happened with text-focused LLMs has been exceptional, but there haven’t been equivalent advancements in the multimodal image and models,” Andand explained. “Our models make it easier for us to ensure visual and tonal consistency for characters across different scenes.”
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/c.ai-Series-4.jpg?quality=90&strip=all]
+Watching Character.AI’s microdramas, you can definitely see that they’re more polished than most of the AI animations floating around the internet today. Scenes flow with a clear sense of direction that makes them feel like they were crafted by a person with a basic sense of visual storytelling. The occasional bit of leaden dialogue and stiff facial expressions make it clear that these characters aren’t being voiced by actual actors. But when you compare these shows to the low-budget absurdity of most live-action microdramas, it’s easy to imagine Character.AI’s user base giving them a shot — if only to play around with the interactive features.
+Similar to Character.AI’s regular chatbots, people will be able to roleplay or simply talk to characters from their favorite Series. One of the major differences, though, is that each episode is powered by a unique LLM that’s designed to only provide information that has been previously established on screen. This, Anand explained, is meant to prevent the chatbots from spoiling users with details about things they haven’t seen yet. These bots are supposed to be fun, which is also part of the reason why Character.AI is barring its underage users from interacting with them.
+When I brought up Character.AI’s history of getting caught up in scandals regarding children being encouraged to self-harm by its chatbots, Anand was adamant that the company has taken the necessary steps like implementing hard age verification to make itself a safer place. At launch, Series will only be available to users over 18, and while younger viewers will eventually be able to watch the shows, they won’t be allowed to chat with Series-focused bots.
+Character.AI made a name for itself by creating a space where fandom-obsessed people could insert themselves into fictional worlds, and Stories really do seem like the sort of thing that could resonate with this audience if the company can get them hooked.
+
+## full_text
+
+Character.AI wants a piece of the microdrama pie
+Interactivity is the big thing that sets Character.ai’s Series apart from other players in the vertical video space.
+Character.AI’s plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas. Today, the company announced the debut of c.ai Series — short-form, episodic videos designed to be watched and interacted with — on your phone.
+Unlike traditional microdrama services that feature cheaply produced, live-action shows starring human performers, c.ai Series are animated and almost entirely made with generative AI. The company’s interest in getting into the microdrama space isn’t surprising considering that it’s projected to become a $26 billion industry in the next few years. And even though some young people have begun to take a stance against gen AI, that might not be an issue for the folks already using Character.AI.
+Each of Character.AI’s microdramas revolves around a different set of characters being thrust into adventures that map neatly onto popular genres like romance, horror, and sci-fi. You can already find plenty of that kind of stuff on other microdrama apps like ReelShort and DramaBox. But what sets c.ai Series apart is the way that viewers will be able to chat with characters after they’ve finished watching an episode.
+Character.AI is kicking off this new initiative with three projects. Last Summer tells a story about secret admirers while leaning into an anime aesthetic, The Nighttime Game — which resembles Netflix’s Entergalactic — focuses on friends playing a deadly card game, and Eden Fall follows a group of elite MMO players into a Ready Player One-style virtual reality that looks a bit like Genshin Impact. The three Series will all debut with 10 episodes that clock in at under two minutes each. The first eight episodes of each Series will be free to watch for all Character.AI users, but the final two will be behind paywalls.
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/c.ai-Series-3.jpg?quality=90&strip=all]
+Character.AI says that this first batch of Series were all developed by a human-led, in-house studio team “using AI as part of the production workflow.” But in the future, it plans to let creators produce original microdramas of their own using the company’s AI tools.
+At a glance, Character.AI’s foray into microdramas seems very much like the company following in the footsteps of TV networks like Fox, Bravo, and BET that have already hopped onto the vertical video bandwagon. But when I recently spoke with Character.AI CEO Karandeep Anand, he insisted that microdramas are an organic next step for the platform.
+“Microdramas are a continuation of that broader arc of becoming a broader storytelling and entertainment platform that we’ve been on,” Anand told me. “This isn’t just a one-off thing we’re doing because microdramas are the next cool thing; it’s a very natural extension of what our users are already doing and it opens up another massive gateway into our community.”
+Though Character.AI could have launched Series “six months ago by hitting three buttons,” Anand said that he did not want to rush the feature’s release because he isn’t interested in putting out video slop. Rather than leading with shows that were wholly made with gen AI, the company enlisted a “fantastic team of Hollywood screenwriters” to develop scripts with a small group of creators who penned extensive bibles detailing each story’s lore. Those scripts were then fed into Character.AI’s proprietary, agentic pipeline to generate visuals and audio that were edited together with traditional post-production software.
+Development on these first three Series took a few weeks, which puts their production timelines on par with other microdrama platforms’ live-action offerings. The process might have been faster if Character.AI utilized third- party video generation models, but Anand wanted to keep things in-house in order to maintain visual consistency.
+“The amount of innovation that has happened with text-focused LLMs has been exceptional, but there haven’t been equivalent advancements in the multimodal image and models,” Andand explained. “Our models make it easier for us to ensure visual and tonal consistency for characters across different scenes.”
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/c.ai-Series-4.jpg?quality=90&strip=all]
+Watching Character.AI’s microdramas, you can definitely see that they’re more polished than most of the AI animations floating around the internet today. Scenes flow with a clear sense of direction that makes them feel like they were crafted by a person with a basic sense of visual storytelling. The occasional bit of leaden dialogue and stiff facial expressions make it clear that these characters aren’t being voiced by actual actors. But when you compare these shows to the low-budget absurdity of most live-action microdramas, it’s easy to imagine Character.AI’s user base giving them a shot — if only to play around with the interactive features.
+Similar to Character.AI’s regular chatbots, people will be able to roleplay or simply talk to characters from their favorite Series. One of the major differences, though, is that each episode is powered by a unique LLM that’s designed to only provide information that has been previously established on screen. This, Anand explained, is meant to prevent the chatbots from spoiling users with details about things they haven’t seen yet. These bots are supposed to be fun, which is also part of the reason why Character.AI is barring its underage users from interacting with them.
+When I brought up Character.AI’s history of getting caught up in scandals regarding children being encouraged to self-harm by its chatbots, Anand was adamant that the company has taken the necessary steps like implementing hard age verification to make itself a safer place. At launch, Series will only be available to users over 18, and while younger viewers will eventually be able to watch the shows, they won’t be allowed to chat with Series-focused bots.
+Character.AI made a name for itself by creating a space where fandom-obsessed people could insert themselves into fictional worlds, and Stories really do seem like the sort of thing that could resonate with this audience if the company can get them hooked.
+Character.AI wants a piece of the microdrama pie
+Interactivity is the big thing that sets Character.ai’s Series apart from other players in the vertical video space.
+Character.AI’s plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas. Today, the company announced the debut of c.ai Series — short-form, episodic videos designed to be watched and interacted with — on your phone.
+Unlike traditional microdrama services that feature cheaply produced, live-action shows starring human performers, c.ai Series are animated and almost entirely made with generative AI. The company’s interest in getting into the microdrama space isn’t surprising considering that it’s projected to become a $26 billion industry in the next few years. And even though some young people have begun to take a stance against gen AI, that might not be an issue for the folks already using Character.AI.
+Each of Character.AI’s microdramas revolves around a different set of characters being thrust into adventures that map neatly onto popular genres like romance, horror, and sci-fi. You can already find plenty of that kind of stuff on other microdrama apps like ReelShort and DramaBox. But what sets c.ai Series apart is the way that viewers will be able to chat with characters after they’ve finished watching an episode.
+Character.AI is kicking off this new initiative with three projects. Last Summer tells a story about secret admirers while leaning into an anime aesthetic, The Nighttime Game — which resembles Netflix’s Entergalactic — focuses on friends playing a deadly card game, and Eden Fall follows a group of elite MMO players into a Ready Player One-style virtual reality that looks a bit like Genshin Impact. The three Series will all debut with 10 episodes that clock in at under two minutes each. The first eight episodes of each Series will be free to watch for all Character.AI users, but the final two will be behind paywalls.
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/c.ai-Series-3.jpg?quality=90&strip=all]
+Character.AI says that this first batch of Series were all developed by a human-led, in-house studio team “using AI as part of the production workflow.” But in the future, it plans to let creators produce original microdramas of their own using the company’s AI tools.
+At a glance, Character.AI’s foray into microdramas seems very much like the company following in the footsteps of TV networks like Fox, Bravo, and BET that have already hopped onto the vertical video bandwagon. But when I recently spoke with Character.AI CEO Karandeep Anand, he insisted that microdramas are an organic next step for the platform.
+“Microdramas are a continuation of that broader arc of becoming a broader storytelling and entertainment platform that we’ve been on,” Anand told me. “This isn’t just a one-off thing we’re doing because microdramas are the next cool thing; it’s a very natural extension of what our users are already doing and it opens up another massive gateway into our community.”
+Though Character.AI could have launched Series “six months ago by hitting three buttons,” Anand said that he did not want to rush the feature’s release because he isn’t interested in putting out video slop. Rather than leading with shows that were wholly made with gen AI, the company enlisted a “fantastic team of Hollywood screenwriters” to develop scripts with a small group of creators who penned extensive bibles detailing each story’s lore. Those scripts were then fed into Character.AI’s proprietary, agentic pipeline to generate visuals and audio that were edited together with traditional post-production software.
+Development on these first three Series took a few weeks, which puts their production timelines on par with other microdrama platforms’ live-action offerings. The process might have been faster if Character.AI utilized third- party video generation models, but Anand wanted to keep things in-house in order to maintain visual consistency.
+“The amount of innovation that has happened with text-focused LLMs has been exceptional, but there haven’t been equivalent advancements in the multimodal image and models,” Andand explained. “Our models make it easier for us to ensure visual and tonal consistency for characters across different scenes.”
+[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/c.ai-Series-4.jpg?quality=90&strip=all]
+Watching Character.AI’s microdramas, you can definitely see that they’re more polished than most of the AI animations floating around the internet today. Scenes flow with a clear sense of direction that makes them feel like they were crafted by a person with a basic sense of visual storytelling. The occasional bit of leaden dialogue and stiff facial expressions make it clear that these characters aren’t being voiced by actual actors. But when you compare these shows to the low-budget absurdity of most live-action microdramas, it’s easy to imagine Character.AI’s user base giving them a shot — if only to play around with the interactive features.
+Similar to Character.AI’s regular chatbots, people will be able to roleplay or simply talk to characters from their favorite Series. One of the major differences, though, is that each episode is powered by a unique LLM that’s designed to only provide information that has been previously established on screen. This, Anand explained, is meant to prevent the chatbots from spoiling users with details about things they haven’t seen yet. These bots are supposed to be fun, which is also part of the reason why Character.AI is barring its underage users from interacting with them.
+When I brought up Character.AI’s history of getting caught up in scandals regarding children being encouraged to self-harm by its chatbots, Anand was adamant that the company has taken the necessary steps like implementing hard age verification to make itself a safer place. At launch, Series will only be available to users over 18, and while younger viewers will eventually be able to watch the shows, they won’t be allowed to chat with Series-focused bots.
+Character.AI made a name for itself by creating a space where fandom-obsessed people could insert themselves into fictional worlds, and Stories really do seem like the sort of thing that could resonate with this audience if the company can get them hooked.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":12833,"paragraph_count":36,"sentence_count":68,"boilerplate_hits":0,"symbol_ratio":0.0012,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Character.AI's plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas. Today, the company announced the debut of c.ai Series - short-form, episodic videos designed to be watched and interacted with - on your phone. Unlike traditional microdrama services that feature cheaply produced, live-action shows starring [&#8230;]
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   AI wants a piece of the microdrama pie Interactivity is the big thing that sets Character.
+
+3. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   ai’s Series apart from other players in the vertical video space.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   AI’s plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas.
+
+5. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   Today, the company announced the debut of c.
+
+6. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   ai Series — short-form, episodic videos designed to be watched and interacted with — on your phone.
+
+## business_elements
+
+- companies: The Verge AI
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: CIO / IT 负责人
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 8230, $26 billion, 10, 2, 2026, 07, 3, 90
+- quotes: using AI as part of the production workflow. / Microdramas are a continuation of that broader arc of becoming a broader storytelling and entertainment platform that we’ve been on, / six months ago by hitting three buttons, / fantastic team of Hollywood screenwriters / Our models make it easier for us to ensure visual and tonal consistency for characters across different scenes.
+
+## evidence_seed
+
+- company_actions: Character.AI's plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas. Today, the company announced the debut of c.ai Series - short-form, episodic videos designed to be watched and interacted with - on your phone. Unlike traditional microdrama services that feature cheaply produced, live-action shows starring [&#8230;] / AI wants a piece of the microdrama pie Interactivity is the big thing that sets Character. / ai’s Series apart from other players in the vertical video space.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Character.AI's plan to become more than just an LLM-powered chatbot platform is going beyond interactive books, comics, and audio dramas. Today, the company announced the debut of c.ai Series - short-form, episodic videos designed to be watched and interacted with - on your phone. Unlike traditional microdrama services that feature cheaply produced, live-action shows starring [&#8230;]
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

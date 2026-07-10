@@ -1,0 +1,349 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-061
+title: "OpenAI 应用业务 CEO 菲吉·西莫因慢性病严重恶化，转任兼职顾问"
+title_zh: "OpenAI 应用业务 CEO 菲吉·西莫因慢性病严重恶化，转任兼职顾问"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/974/797.htm"
+canonical_url: "https://ithome.com/0/974/797.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-09T23:40:31.000Z"
+collected_at: 2026-07-10T02:00:00.703Z
+language: mixed
+full_text_hash: 9abf5a3912b91674
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-10/r-061-openai-应用业务-ceo-菲吉-西莫因慢性病严重恶化-转任兼职顾问.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-10/r-061-openai-应用业务-ceo-菲吉-西莫因慢性病严重恶化-转任兼职顾问.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: medium
+extraction_method: "body-visible-text"
+readability_score: 43
+extractor_diagnostics: {"readability_score":43,"text_length":1332,"paragraph_count":16,"sentence_count":8,"boilerplate_hits":3,"symbol_ratio":0.0023,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 1332
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9abf5a3912b91674","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI 应用业务 CEO 菲吉·西莫因慢性病严重恶化，转任兼职顾问","discovery_summary":"OpenAI 应用程序业务 CEO 菲吉·西莫（Fidji Simo）在 X 平台宣布卸任全职岗位，转为兼职顾问。三个月前，她因慢性疾病严重恶化开始休病假，并意识到康复之路漫长复杂，决定全身心投入恢复健康。西莫曾拒绝 Facebook 提出的一年医疗假期，如今表示后悔未听取扎克伯格\"放长远目光\"的建议。OpenAI CEO Sam Altman 回应称感到难过，感谢西莫的贡献并祝愿她早日康复。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/974/797.htm","discovered_at":"2026-07-10T01:50:23.463Z","rank_on_page":64,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 3afe2875c7b07ccf
+content_hash: 9abf5a3912b91674
+semantic_hash: 36894df24838275b
+duplicate_of: ""
+first_seen_at: "2026-07-09T23:40:31.000Z"
+last_seen_at: 2026-07-10T02:00:00.703Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","OpenAI"],"products":["GPT-5","ChatGPT","Copilot"],"people":[],"industries":["医疗"],"roles":[],"workflows":[],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["5","10","11","2026","7","40","31","5.6"],"quotes":["真希望我当时能听取他的建议","我真的感到非常难过，由衷感谢西莫为 OpenAI 所做的一切。同时，我也感激能够与她成为朋友，更倾佩她个人所展现出的品格，我们所有人都衷心祝愿她早日康复"]}
+evidence_seed: {"company_actions":["IT之家 7 月 10 日消息，OpenAI 应用程序业务 CEO 菲吉・西莫（Fidji Simo）今天在 X 平台发表长文，宣布自己决定卸任 OpenAI 的全职岗位，转为担任兼职顾问。","在那段时间里，她逐步意识到，她的康复之路将比想象中更加复杂、漫长， 因此她必须全身心投入到恢复健康之中 。","过去几年，西莫的医生、朋友和同事都劝过她放慢脚步。"],"case_details":["健康在先：OpenAI 应用业务 CEO 菲吉・西莫因慢性病严重恶化，转任兼职顾问 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 健康在先：OpenAI 应用业务 CEO 菲吉・西莫因慢性病严重恶化，转任兼职顾问 2026/7/10 7:40:31 来源： IT之家 作者： 潞源（实习） 责编： 潞源 评论： 感谢IT之家网友 Nuc_F 的线索投递！"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有变化前后流程线索"]
+key_excerpts: [{"type":"opinion","text":"OpenAI 应用程序业务 CEO 菲吉·西莫（Fidji Simo）在 X 平台宣布卸任全职岗位，转为兼职顾问。三个月前，她因慢性疾病严重恶化开始休病假，并意识到康复之路漫长复杂，决定全身心投入恢复健康。西莫曾拒绝 Facebook 提出的一年医疗假期，如今表示后悔未听取扎克伯格\"放长远目光\"的建议。OpenAI CEO Sam Altman 回应称感到难过，感谢西莫的贡献并祝愿她早日康复。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"健康在先：OpenAI 应用业务 CEO 菲吉・西莫因慢性病严重恶化，转任兼职顾问 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 健康在先：OpenAI 应用业务 CEO 菲吉・西莫因慢性病严重恶化，转任兼职顾问 2026/7/10 7:40:31 来源： IT之家 作者： 潞源（实习） 责编： 潞源 评论： 感谢IT之家网友 Nuc_F 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 10 日消息，OpenAI 应用程序业务 CEO 菲吉・西莫（Fidji Simo）今天在 X 平台发表长文，宣布自己决定卸任 OpenAI 的全职岗位，转为担任兼职顾问。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"菲吉・西莫表示， 她在三个月前由于慢性疾病严重恶化 ，不得不开始休病假。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在那段时间里，她逐步意识到，她的康复之路将比想象中更加复杂、漫长， 因此她必须全身心投入到恢复健康之中 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"过去几年，西莫的医生、朋友和同事都劝过她放慢脚步。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-10T02:00:00.703Z
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# OpenAI 应用业务 CEO 菲吉·西莫因慢性病严重恶化，转任兼职顾问
+
+## clean_text
+
+健康在先：OpenAI 应用业务 CEO 菲吉・西莫因慢性病严重恶化，转任兼职顾问 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > IT资讯 > 人物
+健康在先：OpenAI 应用业务 CEO 菲吉・西莫因慢性病严重恶化，转任兼职顾问
+2026/7/10 7:40:31
+来源： IT之家
+作者： 潞源（实习）
+责编： 潞源
+评论：
+感谢IT之家网友 Nuc_F 的线索投递！
+IT之家 7 月 10 日消息，OpenAI 应用程序业务 CEO 菲吉・西莫（Fidji Simo）今天在 X 平台发表长文，宣布自己决定卸任 OpenAI 的全职岗位，转为担任兼职顾问。
+菲吉・西莫表示， 她在三个月前由于慢性疾病严重恶化 ，不得不开始休病假。在那段时间里，她逐步意识到，她的康复之路将比想象中更加复杂、漫长， 因此她必须全身心投入到恢复健康之中 。
+过去几年，西莫的医生、朋友和同事都劝过她放慢脚步。在她生病两年后，Facebook 曾提出让她休一年医疗假期，但她最终连考虑都没有就拒绝了。 当时扎克伯格对她说 ， 要把目光放长远 ，而西莫在回忆这段经历时则表示：“真希望我当时能听取他的建议”。
+不过她如今已经决定， 先为自己的事业按下暂停键 ， 并照顾好自己的身体 ，让未来的自己持续创造价值。
+OpenAI 首席执行官萨姆 · 奥尔特曼（IT之家注：Sam Altman）对此回应道：“我真的感到非常难过，由衷感谢西莫为 OpenAI 所做的一切。同时，我也感激能够与她成为朋友，更倾佩她个人所展现出的品格，我们所有人都衷心祝愿她早日康复”。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： OpenAI ， 萨姆 · 奥尔特曼 ， 菲吉・西莫
+奥尔特曼：GPT-5.6 Sol 是 OpenAI 最好 AI 模型，同等 / 更优性能下 Token 效率提高 54%
+OpenAI 推出 ChatGPT Work 智能体：GPT-5.6 支持，可驾驭长时间、多步骤任务
+OpenAI 旗下桌面浏览器 ChatGPT Atlas 即将被砍，部分功能会整合进其他产品
+OpenAI 最强 AI 模型：GPT-5.6 系列正式上线，纳德拉称微软 Copilot 同步接入
+SpaceX 与 AI 公司排队造富，私人飞机行业意外先被新贵们带火了
+OpenAI 挑战 AI 评测基准 SWE-Bench Pro：约 30% 存在评测缺陷
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## full_text
+
+健康在先：OpenAI 应用业务 CEO 菲吉・西莫因慢性病严重恶化，转任兼职顾问 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > IT资讯 > 人物
+健康在先：OpenAI 应用业务 CEO 菲吉・西莫因慢性病严重恶化，转任兼职顾问
+2026/7/10 7:40:31
+来源： IT之家
+作者： 潞源（实习）
+责编： 潞源
+评论：
+感谢IT之家网友 Nuc_F 的线索投递！
+IT之家 7 月 10 日消息，OpenAI 应用程序业务 CEO 菲吉・西莫（Fidji Simo）今天在 X 平台发表长文，宣布自己决定卸任 OpenAI 的全职岗位，转为担任兼职顾问。
+菲吉・西莫表示， 她在三个月前由于慢性疾病严重恶化 ，不得不开始休病假。在那段时间里，她逐步意识到，她的康复之路将比想象中更加复杂、漫长， 因此她必须全身心投入到恢复健康之中 。
+过去几年，西莫的医生、朋友和同事都劝过她放慢脚步。在她生病两年后，Facebook 曾提出让她休一年医疗假期，但她最终连考虑都没有就拒绝了。 当时扎克伯格对她说 ， 要把目光放长远 ，而西莫在回忆这段经历时则表示：“真希望我当时能听取他的建议”。
+不过她如今已经决定， 先为自己的事业按下暂停键 ， 并照顾好自己的身体 ，让未来的自己持续创造价值。
+OpenAI 首席执行官萨姆 · 奥尔特曼（IT之家注：Sam Altman）对此回应道：“我真的感到非常难过，由衷感谢西莫为 OpenAI 所做的一切。同时，我也感激能够与她成为朋友，更倾佩她个人所展现出的品格，我们所有人都衷心祝愿她早日康复”。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： OpenAI ， 萨姆 · 奥尔特曼 ， 菲吉・西莫
+奥尔特曼：GPT-5.6 Sol 是 OpenAI 最好 AI 模型，同等 / 更优性能下 Token 效率提高 54%
+OpenAI 推出 ChatGPT Work 智能体：GPT-5.6 支持，可驾驭长时间、多步骤任务
+OpenAI 旗下桌面浏览器 ChatGPT Atlas 即将被砍，部分功能会整合进其他产品
+OpenAI 最强 AI 模型：GPT-5.6 系列正式上线，纳德拉称微软 Copilot 同步接入
+SpaceX 与 AI 公司排队造富，私人飞机行业意外先被新贵们带火了
+OpenAI 挑战 AI 评测基准 SWE-Bench Pro：约 30% 存在评测缺陷
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 43
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- diagnostics: {"readability_score":43,"text_length":1332,"paragraph_count":16,"sentence_count":8,"boilerplate_hits":3,"symbol_ratio":0.0023,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   OpenAI 应用程序业务 CEO 菲吉·西莫（Fidji Simo）在 X 平台宣布卸任全职岗位，转为兼职顾问。三个月前，她因慢性疾病严重恶化开始休病假，并意识到康复之路漫长复杂，决定全身心投入恢复健康。西莫曾拒绝 Facebook 提出的一年医疗假期，如今表示后悔未听取扎克伯格"放长远目光"的建议。OpenAI CEO Sam Altman 回应称感到难过，感谢西莫的贡献并祝愿她早日康复。
+
+2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   健康在先：OpenAI 应用业务 CEO 菲吉・西莫因慢性病严重恶化，转任兼职顾问 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 健康在先：OpenAI 应用业务 CEO 菲吉・西莫因慢性病严重恶化，转任兼职顾问 2026/7/10 7:40:31 来源： IT之家 作者： 潞源（实习） 责编： 潞源 评论： 感谢IT之家网友 Nuc_F 的线索投递！
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家 7 月 10 日消息，OpenAI 应用程序业务 CEO 菲吉・西莫（Fidji Simo）今天在 X 平台发表长文，宣布自己决定卸任 OpenAI 的全职岗位，转为担任兼职顾问。
+
+4. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   菲吉・西莫表示， 她在三个月前由于慢性疾病严重恶化 ，不得不开始休病假。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   在那段时间里，她逐步意识到，她的康复之路将比想象中更加复杂、漫长， 因此她必须全身心投入到恢复健康之中 。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   过去几年，西莫的医生、朋友和同事都劝过她放慢脚步。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI
+- products: GPT-5, ChatGPT, Copilot
+- people: 暂无公开信息
+- industries: 医疗
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 5, 10, 11, 2026, 7, 40, 31, 5.6
+- quotes: 真希望我当时能听取他的建议 / 我真的感到非常难过，由衷感谢西莫为 OpenAI 所做的一切。同时，我也感激能够与她成为朋友，更倾佩她个人所展现出的品格，我们所有人都衷心祝愿她早日康复
+
+## evidence_seed
+
+- company_actions: IT之家 7 月 10 日消息，OpenAI 应用程序业务 CEO 菲吉・西莫（Fidji Simo）今天在 X 平台发表长文，宣布自己决定卸任 OpenAI 的全职岗位，转为担任兼职顾问。 / 在那段时间里，她逐步意识到，她的康复之路将比想象中更加复杂、漫长， 因此她必须全身心投入到恢复健康之中 。 / 过去几年，西莫的医生、朋友和同事都劝过她放慢脚步。
+- case_details: 健康在先：OpenAI 应用业务 CEO 菲吉・西莫因慢性病严重恶化，转任兼职顾问 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 健康在先：OpenAI 应用业务 CEO 菲吉・西莫因慢性病严重恶化，转任兼职顾问 2026/7/10 7:40:31 来源： IT之家 作者： 潞源（实习） 责编： 潞源 评论： 感谢IT之家网友 Nuc_F 的线索投递！
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI 应用业务 CEO 菲吉·西莫因慢性病严重恶化，转任兼职顾问","discovery_summary":"OpenAI 应用程序业务 CEO 菲吉·西莫（Fidji Simo）在 X 平台宣布卸任全职岗位，转为兼职顾问。三个月前，她因慢性疾病严重恶化开始休病假，并意识到康复之路漫长复杂，决定全身心投入恢复健康。西莫曾拒绝 Facebook 提出的一年医疗假期，如今表示后悔未听取扎克伯格\"放长远目光\"的建议。OpenAI CEO Sam Altman 回应称感到难过，感谢西莫的贡献并祝愿她早日康复。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/974/797.htm","discovered_at":"2026-07-10T01:50:23.463Z","rank_on_page":64,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenAI 应用程序业务 CEO 菲吉·西莫（Fidji Simo）在 X 平台宣布卸任全职岗位，转为兼职顾问。三个月前，她因慢性疾病严重恶化开始休病假，并意识到康复之路漫长复杂，决定全身心投入恢复健康。西莫曾拒绝 Facebook 提出的一年医疗假期，如今表示后悔未听取扎克伯格"放长远目光"的建议。OpenAI CEO Sam Altman 回应称感到难过，感谢西莫的贡献并祝愿她早日康复。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

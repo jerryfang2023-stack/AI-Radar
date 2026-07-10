@@ -1,0 +1,281 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-028",
+  "title": "60-Person Consulting Firm Recovers $1.16M in Lost Productivity with AI Knowledge Base | AffixedAI Case Study",
+  "title_zh": "60人咨询公司利用人工智能知识库收回了116万$的生产力损失| AffixedAI案例研究",
+  "title_translation_status": "translated",
+  "title_translation_method": "mymemory_title_translation",
+  "original_url": "https://affixed.ai/case-studies/consulting-firm-knowledge-management-ai",
+  "canonical_url": "https://affixed.ai/case-studies/consulting-firm-knowledge-management-ai",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "industry_landing",
+  "search_path_label": "行业落地路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "org_build",
+  "enterprise_ai_transformation_reason": "fde_or_applied_ai_org_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-10T01:59:47.898Z",
+  "language": "mixed",
+  "full_text": "All Case Studies Department OS Engagement Professional Services\n60-Person Consulting Firm Recovers $1.16M in Lost Productivity with AI Knowledge Base\nA management consulting firm deployed AI-powered knowledge management across 6,000+ documents. Search time dropped 77%, proposal win rate improved from 31% to 44%. $96,900 investment → $1.16M annual impact.\nResults: 77% Search Time Reduction, 1,102% ROI\n77%\nSearch time reduction\nFrom 6.2 hours/week to 1.4 hours/week per consultant\n31% → 44%\nProposal win rate\nProposals now reference specific past engagements automatically\n75% faster\nNew consultant ramp time\nFrom 4-6 months to 6-8 weeks\n94%\nWeekly active usage\n8.3 queries per consultant per day firm-wide\nChallenge\nConsultants spent 6.2 hours/week searching across 4+ systems. 35% deliverable duplication rate. New hires took 4-6 months to become productive. Knowledge left when senior partners departed.\nSolution\nBuilt 3-component system: Knowledge Ingestion Pipeline indexing 180,000+ chunks from 6,000+ documents, Knowledge Assistant Agent for natural-language queries with source citations, and Proactive Knowledge Agent that monitors engagements and surfaces relevant past work.\nTimeline\n3 months (Department OS install)\nBackground\nA 60-person management consulting firm with expertise in operational transformation was sitting on a gold mine of institutional knowledge — 8 years of engagement reports, frameworks, client deliverables, and industry analyses — but couldn't access it efficiently. Consultants spent an average of 6.2 hours per week searching for past work, recreating deliverables that already existed, and asking colleagues for information that was documented somewhere but impossible to find.\nThe firm had tried SharePoint, Confluence, and a custom-built wiki. Each became a “document graveyard” within 6 months — content was uploaded but never maintained, search was keyword-based and unreliable, and new consultants had no way to discover relevant past work without asking senior partners directly.\nThe Challenge\nThe knowledge management problem was costing the firm an estimated $890K annually in lost productivity and duplicated effort:\nSearch inefficiency: Consultants averaging 6.2 hours/week searching for information across 4+ systems (SharePoint, email, Slack, local drives). At average billing rates of $275/hour, that's $890K in lost capacity across the firm\nDeliverable duplication: An estimated 35% of new deliverables substantially overlapped with existing work. Teams were recreating frameworks, analyses, and recommendations that had been built for previous clients\nOnboarding drag: New consultants took 4–6 months to become fully productive because institutional knowledge was locked in senior partners' heads and scattered across systems\nKnowledge attrition: When two senior partners left the previous year, their accumulated expertise — client relationships, industry insights, framework refinements — left with them\nProposal quality: Business development teams couldn't quickly find relevant past engagements, resulting in generic proposals that didn't leverage the firm's actual track record\nThe Solution\nAffixedAI built an AI-powered knowledge management system through a Department OS install — $75K one-time plus $7,500/month embedded ops covering system architecture, knowledge ingestion, agent deployment, and team training.\nThe system has three core components:\n1. Knowledge Ingestion Pipeline\nConnected to all existing knowledge sources: SharePoint (4,200 documents), Confluence (1,800 pages), email archives (tagged engagement correspondence), Slack channels (industry-specific discussion threads), and a structured database of 340 past engagements. Every document was chunked, embedded, and indexed with automatic metadata extraction (client industry, engagement type, framework used, date range, team members involved).\n2. Knowledge Assistant Agent\nA natural-language interface that any consultant can query. Instead of keyword search, consultants ask questions like “What frameworks have we used for supply chain optimization in manufacturing?” or “Show me every engagement where we helped a client reduce operational costs by more than 20%.” The agent synthesizes answers from multiple sources and cites every claim to its original document.\n3. Proactive Knowledge Agent\nMonitors active engagements and proactively surfaces relevant past work. When a consultant starts a new project in the healthcare sector, the agent automatically provides: relevant past healthcare engagements, applicable frameworks, industry benchmarks from previous analyses, and contact information for colleagues with healthcare expertise. Reduces the “cold start” problem for every new engagement.\nImplementation Timeline\nWeek 1–2: Source audit, API integrations, document pipeline architecture\nWeek 3–4: Knowledge ingestion (4,200 SharePoint docs + 1,800 Confluence pages). Quality validation on sample queries\nWeek 5–6: Knowledge Assistant deployed to pilot group of 12 consultants. Feedback loop established\nWeek 7–8: Proactive Knowledge Agent deployed. Integration with project management system for automatic engagement detection\nWeek 9–12: Full firm rollout, training workshops, optimization. Added email and Slack as knowledge sources\nTechnology Stack\nAI Models: Claude Opus for complex synthesis queries, Claude Sonnet for routine lookups and proactive suggestions\nKnowledge Base: Vector database (Supabase + pgvector) with 180,000+ chunks from 6,000+ documents\nSearch: Hybrid retrieval (semantic vector search + keyword BM25), re-ranked by relevance and recency\nIntegrations: SharePoint API, Confluence API, Slack, Gmail, custom engagement database\nChannels: Slack bot (primary), web dashboard, email digest\nInfrastructure: $1,200/month (Supabase Pro, AI API costs, integration hosting)\nResults\nAfter 90 days of firm-wide deployment:\nSearch time reduction: 6.2 hours/week per consultant → 1.4 hours/week (77% reduction). Consultants find relevant past work in under 2 minutes instead of 45+ minutes\nDeliverable reuse: 35% duplication rate → estimated 12%. Consultants now start from existing frameworks and adapt rather than recreating\nNew consultant ramp time: 4–6 months → 6–8 weeks. New hires query the knowledge base instead of waiting for senior partners to be available\nProposal win rate: 31% → 44%. Proposals now reference specific past engagements, relevant metrics, and applicable frameworks — all surfaced automatically\nKnowledge preservation: When a senior consultant left during the pilot, the team reported zero knowledge loss. All of their past analyses, frameworks, and client notes were fully accessible through the system\nAgent usage: 94% weekly active usage across the firm. Average of 8.3 queries per consultant per day. The Slack bot became the most-used integration in the firm's workspace\nROI Analysis\nItem Amount\nAffixedAI Growth engagement (3 months) $37,500\nOngoing advisory (9 months at $5K/mo) $45,000\nInfrastructure costs (12 months) $14,400\nTotal Year 1 investment $96,900\nRecovered billable capacity (search time) $580,000\nReduced deliverable duplication $165,000\nImproved proposal win rate (attributed revenue) $420,000\nTotal Year 1 impact $1,165,000\nYear 1 ROI 1,102%\nWhat the Client Says\n“We had 8 years of brilliant work locked in SharePoint folders that nobody could find. Now any consultant can ask a question in Slack and get a synthesized answer with source citations in 30 seconds. Our proposal win rate went from 31% to 44% because we actually leverage our track record instead of starting from scratch every time. This is the single highest-ROI technology investment we've made.”\n— Managing Director, 60-Person Management Consulting Firm\n“ We had 8 years of brilliant work locked in SharePoint folders that nobody could find. Now any consultant can ask a question in Slack and get a synthesized answer with source citations in 30 seconds. ”\nManaging Director\n60-Person Management Consulting Firm\nMore Case Studies\nHow a Regional Law Firm Deployed AI Document Analysis in 10 Days\nLegal Services · Strategy · 6.1x ROI in Year One\nE-Commerce Brand Cuts Customer Service Costs 62% with Multi-Agent AI\nE-Commerce / Retail · Department OS · 62% Cost Reduction, Higher CSAT\nB2B SaaS Company Boosts Onboarding Completion from 68% to 89% with AI Agent Team\nSaaS / Technology · Department OS · 89% Onboarding Completion, 198% ROI\nDermatology Practice Cuts Patient Wait Times 82% with HIPAA-Compliant AI Intake\nHealthcare · Sprint · 92% Data Entry Reduction, 1,334% ROI\nReady for similar results?\nStart with a free assessment and we'll show you projected ROI for your specific business before you commit.\nFree AI Assessment Schedule a Call",
+  "clean_text": "All Case Studies Department OS Engagement Professional Services\n60-Person Consulting Firm Recovers $1.16M in Lost Productivity with AI Knowledge Base\nA management consulting firm deployed AI-powered knowledge management across 6,000+ documents. Search time dropped 77%, proposal win rate improved from 31% to 44%. $96,900 investment → $1.16M annual impact.\nResults: 77% Search Time Reduction, 1,102% ROI\n77%\nSearch time reduction\nFrom 6.2 hours/week to 1.4 hours/week per consultant\n31% → 44%\nProposal win rate\nProposals now reference specific past engagements automatically\n75% faster\nNew consultant ramp time\nFrom 4-6 months to 6-8 weeks\n94%\nWeekly active usage\n8.3 queries per consultant per day firm-wide\nChallenge\nConsultants spent 6.2 hours/week searching across 4+ systems. 35% deliverable duplication rate. New hires took 4-6 months to become productive. Knowledge left when senior partners departed.\nSolution\nBuilt 3-component system: Knowledge Ingestion Pipeline indexing 180,000+ chunks from 6,000+ documents, Knowledge Assistant Agent for natural-language queries with source citations, and Proactive Knowledge Agent that monitors engagements and surfaces relevant past work.\nTimeline\n3 months (Department OS install)\nBackground\nA 60-person management consulting firm with expertise in operational transformation was sitting on a gold mine of institutional knowledge — 8 years of engagement reports, frameworks, client deliverables, and industry analyses — but couldn't access it efficiently. Consultants spent an average of 6.2 hours per week searching for past work, recreating deliverables that already existed, and asking colleagues for information that was documented somewhere but impossible to find.\nThe firm had tried SharePoint, Confluence, and a custom-built wiki. Each became a “document graveyard” within 6 months — content was uploaded but never maintained, search was keyword-based and unreliable, and new consultants had no way to discover relevant past work without asking senior partners directly.\nThe Challenge\nThe knowledge management problem was costing the firm an estimated $890K annually in lost productivity and duplicated effort:\nSearch inefficiency: Consultants averaging 6.2 hours/week searching for information across 4+ systems (SharePoint, email, Slack, local drives). At average billing rates of $275/hour, that's $890K in lost capacity across the firm\nDeliverable duplication: An estimated 35% of new deliverables substantially overlapped with existing work. Teams were recreating frameworks, analyses, and recommendations that had been built for previous clients\nOnboarding drag: New consultants took 4–6 months to become fully productive because institutional knowledge was locked in senior partners' heads and scattered across systems\nKnowledge attrition: When two senior partners left the previous year, their accumulated expertise — client relationships, industry insights, framework refinements — left with them\nProposal quality: Business development teams couldn't quickly find relevant past engagements, resulting in generic proposals that didn't leverage the firm's actual track record\nThe Solution\nAffixedAI built an AI-powered knowledge management system through a Department OS install — $75K one-time plus $7,500/month embedded ops covering system architecture, knowledge ingestion, agent deployment, and team training.\nThe system has three core components:\n1. Knowledge Ingestion Pipeline\nConnected to all existing knowledge sources: SharePoint (4,200 documents), Confluence (1,800 pages), email archives (tagged engagement correspondence), Slack channels (industry-specific discussion threads), and a structured database of 340 past engagements. Every document was chunked, embedded, and indexed with automatic metadata extraction (client industry, engagement type, framework used, date range, team members involved).\n2. Knowledge Assistant Agent\nA natural-language interface that any consultant can query. Instead of keyword search, consultants ask questions like “What frameworks have we used for supply chain optimization in manufacturing?” or “Show me every engagement where we helped a client reduce operational costs by more than 20%.” The agent synthesizes answers from multiple sources and cites every claim to its original document.\n3. Proactive Knowledge Agent\nMonitors active engagements and proactively surfaces relevant past work. When a consultant starts a new project in the healthcare sector, the agent automatically provides: relevant past healthcare engagements, applicable frameworks, industry benchmarks from previous analyses, and contact information for colleagues with healthcare expertise. Reduces the “cold start” problem for every new engagement.\nImplementation Timeline\nWeek 1–2: Source audit, API integrations, document pipeline architecture\nWeek 3–4: Knowledge ingestion (4,200 SharePoint docs + 1,800 Confluence pages). Quality validation on sample queries\nWeek 5–6: Knowledge Assistant deployed to pilot group of 12 consultants. Feedback loop established\nWeek 7–8: Proactive Knowledge Agent deployed. Integration with project management system for automatic engagement detection\nWeek 9–12: Full firm rollout, training workshops, optimization. Added email and Slack as knowledge sources\nTechnology Stack\nAI Models: Claude Opus for complex synthesis queries, Claude Sonnet for routine lookups and proactive suggestions\nKnowledge Base: Vector database (Supabase + pgvector) with 180,000+ chunks from 6,000+ documents\nSearch: Hybrid retrieval (semantic vector search + keyword BM25), re-ranked by relevance and recency\nIntegrations: SharePoint API, Confluence API, Slack, Gmail, custom engagement database\nChannels: Slack bot (primary), web dashboard, email digest\nInfrastructure: $1,200/month (Supabase Pro, AI API costs, integration hosting)\nResults\nAfter 90 days of firm-wide deployment:\nSearch time reduction: 6.2 hours/week per consultant → 1.4 hours/week (77% reduction). Consultants find relevant past work in under 2 minutes instead of 45+ minutes\nDeliverable reuse: 35% duplication rate → estimated 12%. Consultants now start from existing frameworks and adapt rather than recreating\nNew consultant ramp time: 4–6 months → 6–8 weeks. New hires query the knowledge base instead of waiting for senior partners to be available\nProposal win rate: 31% → 44%. Proposals now reference specific past engagements, relevant metrics, and applicable frameworks — all surfaced automatically\nKnowledge preservation: When a senior consultant left during the pilot, the team reported zero knowledge loss. All of their past analyses, frameworks, and client notes were fully accessible through the system\nAgent usage: 94% weekly active usage across the firm. Average of 8.3 queries per consultant per day. The Slack bot became the most-used integration in the firm's workspace\nROI Analysis\nItem Amount\nAffixedAI Growth engagement (3 months) $37,500\nOngoing advisory (9 months at $5K/mo) $45,000\nInfrastructure costs (12 months) $14,400\nTotal Year 1 investment $96,900\nRecovered billable capacity (search time) $580,000\nReduced deliverable duplication $165,000\nImproved proposal win rate (attributed revenue) $420,000\nTotal Year 1 impact $1,165,000\nYear 1 ROI 1,102%\nWhat the Client Says\n“We had 8 years of brilliant work locked in SharePoint folders that nobody could find. Now any consultant can ask a question in Slack and get a synthesized answer with source citations in 30 seconds. Our proposal win rate went from 31% to 44% because we actually leverage our track record instead of starting from scratch every time. This is the single highest-ROI technology investment we've made.”\n— Managing Director, 60-Person Management Consulting Firm\n“ We had 8 years of brilliant work locked in SharePoint folders that nobody could find. Now any consultant can ask a question in Slack and get a synthesized answer with source citations in 30 seconds. ”\nManaging Director\n60-Person Management Consulting Firm\nMore Case Studies\nHow a Regional Law Firm Deployed AI Document Analysis in 10 Days\nLegal Services · Strategy · 6.1x ROI in Year One\nE-Commerce Brand Cuts Customer Service Costs 62% with Multi-Agent AI\nE-Commerce / Retail · Department OS · 62% Cost Reduction, Higher CSAT\nB2B SaaS Company Boosts Onboarding Completion from 68% to 89% with AI Agent Team\nSaaS / Technology · Department OS · 89% Onboarding Completion, 198% ROI\nDermatology Practice Cuts Patient Wait Times 82% with HIPAA-Compliant AI Intake\nHealthcare · Sprint · 92% Data Entry Reduction, 1,334% ROI\nReady for similar results?\nStart with a free assessment and we'll show you projected ROI for your specific business before you commit.\nFree AI Assessment Schedule a Call",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-10/r-028-60-person-consulting-firm-recovers-1-16m-in-lost-productivity-with-ai-.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-10/r-028-60-person-consulting-firm-recovers-1-16m-in-lost-productivity-with-ai-.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 8712,
+    "paragraph_count": 72,
+    "sentence_count": 43,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 8712,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "e86e0a1d4fc047af",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "1415bc2f0d1bf5ea",
+  "content_hash": "e86e0a1d4fc047af",
+  "full_text_hash": "e86e0a1d4fc047af",
+  "semantic_hash": "a8730617d16d2c78",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-10T01:59:47.898Z",
+  "last_seen_at": "2026-07-10T01:59:47.898Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "60-Person Consulting Firm Recovers $1.16M in Lost Productivity with AI Knowledge Base | AffixedAI Case Study All Case Studies Department OS EngagementProfessional Services # 60-Person Consulting Firm Recovers $1.16M in Lost Productivity with AI Knowledge Base A management consulting firm deploye... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=industry_landing",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "All Case Studies Department OS Engagement Professional Services 60-Person Consulting Firm Recovers $1.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "16M in Lost Productivity with AI Knowledge Base A management consulting firm deployed AI-powered knowledge management across 6,000+ documents.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "Search time dropped 77%, proposal win rate improved from 31% to 44%.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "$96,900 investment → $1.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "16M annual impact.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-10T01:59:47.898Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch"
+    ],
+    "products": [
+      "Agent",
+      "agent",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "医疗",
+      "制造 / 工业",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "法务 / 律师"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "合作 / 联盟",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "60",
+      "$1.16M",
+      "6",
+      "000",
+      "77%",
+      "31%",
+      "44%",
+      "$96"
+    ],
+    "quotes": [
+      "document graveyard",
+      "What frameworks have we used for supply chain optimization in manufacturing?",
+      "Show me every engagement where we helped a client reduce operational costs by more than 20%.",
+      "cold start"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "16M in Lost Productivity with AI Knowledge Base A management consulting firm deployed AI-powered knowledge management across 6,000+ documents.",
+      "16M annual impact."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "法务 / 律师"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 60-Person Consulting Firm Recovers $1.16M in Lost Productivity with AI Knowledge Base | AffixedAI Case Study\n\n- raw_id: R-028\n- title_zh: 60人咨询公司利用人工智能知识库收回了116万$的生产力损失| AffixedAI案例研究\n- title_translation_status: translated\n- title_translation_method: mymemory_title_translation\n- original_url: https://affixed.ai/case-studies/consulting-firm-knowledge-management-ai\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-10T01:59:47.898Z\n\n## clean_text\n\nAll Case Studies Department OS Engagement Professional Services\n60-Person Consulting Firm Recovers $1.16M in Lost Productivity with AI Knowledge Base\nA management consulting firm deployed AI-powered knowledge management across 6,000+ documents. Search time dropped 77%, proposal win rate improved from 31% to 44%. $96,900 investment → $1.16M annual impact.\nResults: 77% Search Time Reduction, 1,102% ROI\n77%\nSearch time reduction\nFrom 6.2 hours/week to 1.4 hours/week per consultant\n31% → 44%\nProposal win rate\nProposals now reference specific past engagements automatically\n75% faster\nNew consultant ramp time\nFrom 4-6 months to 6-8 weeks\n94%\nWeekly active usage\n8.3 queries per consultant per day firm-wide\nChallenge\nConsultants spent 6.2 hours/week searching across 4+ systems. 35% deliverable duplication rate. New hires took 4-6 months to become productive. Knowledge left when senior partners departed.\nSolution\nBuilt 3-component system: Knowledge Ingestion Pipeline indexing 180,000+ chunks from 6,000+ documents, Knowledge Assistant Agent for natural-language queries with source citations, and Proactive Knowledge Agent that monitors engagements and surfaces relevant past work.\nTimeline\n3 months (Department OS install)\nBackground\nA 60-person management consulting firm with expertise in operational transformation was sitting on a gold mine of institutional knowledge — 8 years of engagement reports, frameworks, client deliverables, and industry analyses — but couldn't access it efficiently. Consultants spent an average of 6.2 hours per week searching for past work, recreating deliverables that already existed, and asking colleagues for information that was documented somewhere but impossible to find.\nThe firm had tried SharePoint, Confluence, and a custom-built wiki. Each became a “document graveyard” within 6 months — content was uploaded but never maintained, search was keyword-based and unreliable, and new consultants had no way to discover relevant past work without asking senior partners directly.\nThe Challenge\nThe knowledge management problem was costing the firm an estimated $890K annually in lost productivity and duplicated effort:\nSearch inefficiency: Consultants averaging 6.2 hours/week searching for information across 4+ systems (SharePoint, email, Slack, local drives). At average billing rates of $275/hour, that's $890K in lost capacity across the firm\nDeliverable duplication: An estimated 35% of new deliverables substantially overlapped with existing work. Teams were recreating frameworks, analyses, and recommendations that had been built for previous clients\nOnboarding drag: New consultants took 4–6 months to become fully productive because institutional knowledge was locked in senior partners' heads and scattered across systems\nKnowledge attrition: When two senior partners left the previous year, their accumulated expertise — client relationships, industry insights, framework refinements — left with them\nProposal quality: Business development teams couldn't quickly find relevant past engagements, resulting in generic proposals that didn't leverage the firm's actual track record\nThe Solution\nAffixedAI built an AI-powered knowledge management system through a Department OS install — $75K one-time plus $7,500/month embedded ops covering system architecture, knowledge ingestion, agent deployment, and team training.\nThe system has three core components:\n1. Knowledge Ingestion Pipeline\nConnected to all existing knowledge sources: SharePoint (4,200 documents), Confluence (1,800 pages), email archives (tagged engagement correspondence), Slack channels (industry-specific discussion threads), and a structured database of 340 past engagements. Every document was chunked, embedded, and indexed with automatic metadata extraction (client industry, engagement type, framework used, date range, team members involved).\n2. Knowledge Assistant Agent\nA natural-language interface that any consultant can query. Instead of keyword search, consultants ask questions like “What frameworks have we used for supply chain optimization in manufacturing?” or “Show me every engagement where we helped a client reduce operational costs by more than 20%.” The agent synthesizes answers from multiple sources and cites every claim to its original document.\n3. Proactive Knowledge Agent\nMonitors active engagements and proactively surfaces relevant past work. When a consultant starts a new project in the healthcare sector, the agent automatically provides: relevant past healthcare engagements, applicable frameworks, industry benchmarks from previous analyses, and contact information for colleagues with healthcare expertise. Reduces the “cold start” problem for every new engagement.\nImplementation Timeline\nWeek 1–2: Source audit, API integrations, document pipeline architecture\nWeek 3–4: Knowledge ingestion (4,200 SharePoint docs + 1,800 Confluence pages). Quality validation on sample queries\nWeek 5–6: Knowledge Assistant deployed to pilot group of 12 consultants. Feedback loop established\nWeek 7–8: Proactive Knowledge Agent deployed. Integration with project management system for automatic engagement detection\nWeek 9–12: Full firm rollout, training workshops, optimization. Added email and Slack as knowledge sources\nTechnology Stack\nAI Models: Claude Opus for complex synthesis queries, Claude Sonnet for routine lookups and proactive suggestions\nKnowledge Base: Vector database (Supabase + pgvector) with 180,000+ chunks from 6,000+ documents\nSearch: Hybrid retrieval (semantic vector search + keyword BM25), re-ranked by relevance and recency\nIntegrations: SharePoint API, Confluence API, Slack, Gmail, custom engagement database\nChannels: Slack bot (primary), web dashboard, email digest\nInfrastructure: $1,200/month (Supabase Pro, AI API costs, integration hosting)\nResults\nAfter 90 days of firm-wide deployment:\nSearch time reduction: 6.2 hours/week per consultant → 1.4 hours/week (77% reduction). Consultants find relevant past work in under 2 minutes instead of 45+ minutes\nDeliverable reuse: 35% duplication rate → estimated 12%. Consultants now start from existing frameworks and adapt rather than recreating\nNew consultant ramp time: 4–6 months → 6–8 weeks. New hires query the knowledge base instead of waiting for senior partners to be available\nProposal win rate: 31% → 44%. Proposals now reference specific past engagements, relevant metrics, and applicable frameworks — all surfaced automatically\nKnowledge preservation: When a senior consultant left during the pilot, the team reported zero knowledge loss. All of their past analyses, frameworks, and client notes were fully accessible through the system\nAgent usage: 94% weekly active usage across the firm. Average of 8.3 queries per consultant per day. The Slack bot became the most-used integration in the firm's workspace\nROI Analysis\nItem Amount\nAffixedAI Growth engagement (3 months) $37,500\nOngoing advisory (9 months at $5K/mo) $45,000\nInfrastructure costs (12 months) $14,400\nTotal Year 1 investment $96,900\nRecovered billable capacity (search time) $580,000\nReduced deliverable duplication $165,000\nImproved proposal win rate (attributed revenue) $420,000\nTotal Year 1 impact $1,165,000\nYear 1 ROI 1,102%\nWhat the Client Says\n“We had 8 years of brilliant work locked in SharePoint folders that nobody could find. Now any consultant can ask a question in Slack and get a synthesized answer with source citations in 30 seconds. Our proposal win rate went from 31% to 44% because we actually leverage our track record instead of starting from scratch every time. This is the single highest-ROI technology investment we've made.”\n— Managing Director, 60-Person Management Consulting Firm\n“ We had 8 years of brilliant work locked in SharePoint folders that nobody could find. Now any consultant can ask a question in Slack and get a synthesized answer with source citations in 30 seconds. ”\nManaging Director\n60-Person Management Consulting Firm\nMore Case Studies\nHow a Regional Law Firm Deployed AI Document Analysis in 10 Days\nLegal Services · Strategy · 6.1x ROI in Year One\nE-Commerce Brand Cuts Customer Service Costs 62% with Multi-Agent AI\nE-Commerce / Retail · Department OS · 62% Cost Reduction, Higher CSAT\nB2B SaaS Company Boosts Onboarding Completion from 68% to 89% with AI Agent Team\nSaaS / Technology · Department OS · 89% Onboarding Completion, 198% ROI\nDermatology Practice Cuts Patient Wait Times 82% with HIPAA-Compliant AI Intake\nHealthcare · Sprint · 92% Data Entry Reduction, 1,334% ROI\nReady for similar results?\nStart with a free assessment and we'll show you projected ROI for your specific business before you commit.\nFree AI Assessment Schedule a Call\n\n## full_text\n\nAll Case Studies Department OS Engagement Professional Services\n60-Person Consulting Firm Recovers $1.16M in Lost Productivity with AI Knowledge Base\nA management consulting firm deployed AI-powered knowledge management across 6,000+ documents. Search time dropped 77%, proposal win rate improved from 31% to 44%. $96,900 investment → $1.16M annual impact.\nResults: 77% Search Time Reduction, 1,102% ROI\n77%\nSearch time reduction\nFrom 6.2 hours/week to 1.4 hours/week per consultant\n31% → 44%\nProposal win rate\nProposals now reference specific past engagements automatically\n75% faster\nNew consultant ramp time\nFrom 4-6 months to 6-8 weeks\n94%\nWeekly active usage\n8.3 queries per consultant per day firm-wide\nChallenge\nConsultants spent 6.2 hours/week searching across 4+ systems. 35% deliverable duplication rate. New hires took 4-6 months to become productive. Knowledge left when senior partners departed.\nSolution\nBuilt 3-component system: Knowledge Ingestion Pipeline indexing 180,000+ chunks from 6,000+ documents, Knowledge Assistant Agent for natural-language queries with source citations, and Proactive Knowledge Agent that monitors engagements and surfaces relevant past work.\nTimeline\n3 months (Department OS install)\nBackground\nA 60-person management consulting firm with expertise in operational transformation was sitting on a gold mine of institutional knowledge — 8 years of engagement reports, frameworks, client deliverables, and industry analyses — but couldn't access it efficiently. Consultants spent an average of 6.2 hours per week searching for past work, recreating deliverables that already existed, and asking colleagues for information that was documented somewhere but impossible to find.\nThe firm had tried SharePoint, Confluence, and a custom-built wiki. Each became a “document graveyard” within 6 months — content was uploaded but never maintained, search was keyword-based and unreliable, and new consultants had no way to discover relevant past work without asking senior partners directly.\nThe Challenge\nThe knowledge management problem was costing the firm an estimated $890K annually in lost productivity and duplicated effort:\nSearch inefficiency: Consultants averaging 6.2 hours/week searching for information across 4+ systems (SharePoint, email, Slack, local drives). At average billing rates of $275/hour, that's $890K in lost capacity across the firm\nDeliverable duplication: An estimated 35% of new deliverables substantially overlapped with existing work. Teams were recreating frameworks, analyses, and recommendations that had been built for previous clients\nOnboarding drag: New consultants took 4–6 months to become fully productive because institutional knowledge was locked in senior partners' heads and scattered across systems\nKnowledge attrition: When two senior partners left the previous year, their accumulated expertise — client relationships, industry insights, framework refinements — left with them\nProposal quality: Business development teams couldn't quickly find relevant past engagements, resulting in generic proposals that didn't leverage the firm's actual track record\nThe Solution\nAffixedAI built an AI-powered knowledge management system through a Department OS install — $75K one-time plus $7,500/month embedded ops covering system architecture, knowledge ingestion, agent deployment, and team training.\nThe system has three core components:\n1. Knowledge Ingestion Pipeline\nConnected to all existing knowledge sources: SharePoint (4,200 documents), Confluence (1,800 pages), email archives (tagged engagement correspondence), Slack channels (industry-specific discussion threads), and a structured database of 340 past engagements. Every document was chunked, embedded, and indexed with automatic metadata extraction (client industry, engagement type, framework used, date range, team members involved).\n2. Knowledge Assistant Agent\nA natural-language interface that any consultant can query. Instead of keyword search, consultants ask questions like “What frameworks have we used for supply chain optimization in manufacturing?” or “Show me every engagement where we helped a client reduce operational costs by more than 20%.” The agent synthesizes answers from multiple sources and cites every claim to its original document.\n3. Proactive Knowledge Agent\nMonitors active engagements and proactively surfaces relevant past work. When a consultant starts a new project in the healthcare sector, the agent automatically provides: relevant past healthcare engagements, applicable frameworks, industry benchmarks from previous analyses, and contact information for colleagues with healthcare expertise. Reduces the “cold start” problem for every new engagement.\nImplementation Timeline\nWeek 1–2: Source audit, API integrations, document pipeline architecture\nWeek 3–4: Knowledge ingestion (4,200 SharePoint docs + 1,800 Confluence pages). Quality validation on sample queries\nWeek 5–6: Knowledge Assistant deployed to pilot group of 12 consultants. Feedback loop established\nWeek 7–8: Proactive Knowledge Agent deployed. Integration with project management system for automatic engagement detection\nWeek 9–12: Full firm rollout, training workshops, optimization. Added email and Slack as knowledge sources\nTechnology Stack\nAI Models: Claude Opus for complex synthesis queries, Claude Sonnet for routine lookups and proactive suggestions\nKnowledge Base: Vector database (Supabase + pgvector) with 180,000+ chunks from 6,000+ documents\nSearch: Hybrid retrieval (semantic vector search + keyword BM25), re-ranked by relevance and recency\nIntegrations: SharePoint API, Confluence API, Slack, Gmail, custom engagement database\nChannels: Slack bot (primary), web dashboard, email digest\nInfrastructure: $1,200/month (Supabase Pro, AI API costs, integration hosting)\nResults\nAfter 90 days of firm-wide deployment:\nSearch time reduction: 6.2 hours/week per consultant → 1.4 hours/week (77% reduction). Consultants find relevant past work in under 2 minutes instead of 45+ minutes\nDeliverable reuse: 35% duplication rate → estimated 12%. Consultants now start from existing frameworks and adapt rather than recreating\nNew consultant ramp time: 4–6 months → 6–8 weeks. New hires query the knowledge base instead of waiting for senior partners to be available\nProposal win rate: 31% → 44%. Proposals now reference specific past engagements, relevant metrics, and applicable frameworks — all surfaced automatically\nKnowledge preservation: When a senior consultant left during the pilot, the team reported zero knowledge loss. All of their past analyses, frameworks, and client notes were fully accessible through the system\nAgent usage: 94% weekly active usage across the firm. Average of 8.3 queries per consultant per day. The Slack bot became the most-used integration in the firm's workspace\nROI Analysis\nItem Amount\nAffixedAI Growth engagement (3 months) $37,500\nOngoing advisory (9 months at $5K/mo) $45,000\nInfrastructure costs (12 months) $14,400\nTotal Year 1 investment $96,900\nRecovered billable capacity (search time) $580,000\nReduced deliverable duplication $165,000\nImproved proposal win rate (attributed revenue) $420,000\nTotal Year 1 impact $1,165,000\nYear 1 ROI 1,102%\nWhat the Client Says\n“We had 8 years of brilliant work locked in SharePoint folders that nobody could find. Now any consultant can ask a question in Slack and get a synthesized answer with source citations in 30 seconds. Our proposal win rate went from 31% to 44% because we actually leverage our track record instead of starting from scratch every time. This is the single highest-ROI technology investment we've made.”\n— Managing Director, 60-Person Management Consulting Firm\n“ We had 8 years of brilliant work locked in SharePoint folders that nobody could find. Now any consultant can ask a question in Slack and get a synthesized answer with source citations in 30 seconds. ”\nManaging Director\n60-Person Management Consulting Firm\nMore Case Studies\nHow a Regional Law Firm Deployed AI Document Analysis in 10 Days\nLegal Services · Strategy · 6.1x ROI in Year One\nE-Commerce Brand Cuts Customer Service Costs 62% with Multi-Agent AI\nE-Commerce / Retail · Department OS · 62% Cost Reduction, Higher CSAT\nB2B SaaS Company Boosts Onboarding Completion from 68% to 89% with AI Agent Team\nSaaS / Technology · Department OS · 89% Onboarding Completion, 198% ROI\nDermatology Practice Cuts Patient Wait Times 82% with HIPAA-Compliant AI Intake\nHealthcare · Sprint · 92% Data Entry Reduction, 1,334% ROI\nReady for similar results?\nStart with a free assessment and we'll show you projected ROI for your specific business before you commit.\nFree AI Assessment Schedule a Call\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 60-Person Consulting Firm Recovers $1.16M in Lost Productivity with AI Knowledge Base | AffixedAI Case Study All Case Studies Department OS EngagementProfessional Services # 60-Person Consulting Firm Recovers $1.16M in Lost Productivity with AI Knowledge Base A management consulting firm deploye... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=industry_landing\n2. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] All Case Studies Department OS Engagement Professional Services 60-Person Consulting Firm Recovers $1.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 16M in Lost Productivity with AI Knowledge Base A management consulting firm deployed AI-powered knowledge management across 6,000+ documents.\n4. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] Search time dropped 77%, proposal win rate improved from 31% to 44%.\n5. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] $96,900 investment → $1.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 16M annual impact.\n"
+}
