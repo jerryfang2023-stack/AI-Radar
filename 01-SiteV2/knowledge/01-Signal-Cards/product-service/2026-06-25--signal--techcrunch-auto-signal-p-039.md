@@ -33,12 +33,8 @@ formal_tags:
   track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering", "function-sales"]
   scenario: ["scenario-sales-briefing"]
-  customer: ["customer-developer-team", "customer-enterprise"]
+  customer: ["customer-developer-team"]
   evidence: ["evidence-partnership-integration", "evidence-product-launch"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["customer_support_team", "engineering_team", "sales_team"]

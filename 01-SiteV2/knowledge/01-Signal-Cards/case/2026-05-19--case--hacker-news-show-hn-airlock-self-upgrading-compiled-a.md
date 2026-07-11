@@ -38,16 +38,11 @@ business_model: 暂无公开信息
 same_or_adjacent_cases: "暂未监测到明确同行或相邻案例"
 related_case_status: needs_research
 formal_tags:
-  track: ["track-ai-coding", "track-ai-agent"]
+  track: ["track-ai-coding"]
   function: ["function-engineering"]
   scenario: ["scenario-knowledge-base", "scenario-logistics-supply-chain"]
   customer: ["customer-developer-team"]
-  evidence: ["source-industry-data", "evidence-pricing-cost"]
-  stage: []
-  region: ["region-global"]
-  source: ["source-industry-data"]
-  opinion: []
-
+  evidence: ["evidence-pricing-cost"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]

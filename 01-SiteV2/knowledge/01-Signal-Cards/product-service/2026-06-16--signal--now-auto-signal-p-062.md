@@ -32,13 +32,9 @@ primary_raw:
 formal_tags:
   track: ["track-enterprise-data", "track-ai-infra"]
   function: ["function-procurement-bidding"]
-  scenario: ["scenario-knowledge-base", "scenario-bidding-response", "scenario-construction-real-estate"]
+  scenario: ["scenario-knowledge-base", "scenario-bidding-response"]
   customer: []
-  evidence: ["evidence-partnership-integration", "evidence-pricing-cost", "evidence-product-launch"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
+  evidence: ["evidence-partnership-integration", "evidence-pricing-cost"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner"]

@@ -52,13 +52,8 @@ formal_tags:
   track: ["track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: []
-  customer: ["customer-enterprise"]
-  evidence: ["evidence-funding", "evidence-pricing-cost", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
+  customer: []
+  evidence: ["evidence-funding", "evidence-pricing-cost"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner"]

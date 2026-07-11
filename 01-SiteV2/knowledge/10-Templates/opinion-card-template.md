@@ -88,18 +88,11 @@ opinion_tendency:
 opinion_status:
 triggers_change_candidate: false
 
-# Tags 使用 agent-workflow/product/tag-taxonomy.md 的正式 tag_id
-formal_tags:
+# 栏目私有分类；来源类型是元数据，不是标签
+source_type:
+column_tags:
   track: []
-  function: []
-  scenario: []
-  customer: []
-  evidence: []
-  stage: []
-  region: []
-  source: []
   opinion: []
-
 # 关联资产
 related_change_cards: []
 related_case_cards: []

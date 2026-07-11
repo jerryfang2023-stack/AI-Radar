@@ -49,16 +49,11 @@ frontend:
     - "https://www.prnewswire.com/news-releases/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets-302712238.html"
 
 formal_tags:
-  track: ["track-ai-marketing", "track-ai-infra", "track-enterprise-workflow"]
+  track: ["track-ai-marketing", "track-ai-infra"]
   function: ["function-marketing", "function-procurement-bidding"]
-  scenario: ["scenario-bidding-response", "scenario-logistics-supply-chain", "scenario-revenue-operations"]
-  customer: ["customer-enterprise"]
+  scenario: ["scenario-bidding-response", "scenario-logistics-supply-chain"]
+  customer: []
   evidence: ["evidence-funding", "evidence-partnership-integration"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "healthcare_provider"]

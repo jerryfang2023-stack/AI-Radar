@@ -49,16 +49,11 @@ frontend:
     - "https://raising.fi/news/sycamore-labs-seed-march-2026"
 
 formal_tags:
-  track: ["track-ai-governance", "track-ai-infra", "track-enterprise-workflow"]
+  track: ["track-ai-governance", "track-ai-infra"]
   function: ["function-legal-compliance"]
   scenario: ["scenario-agent-governance"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-funding"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]

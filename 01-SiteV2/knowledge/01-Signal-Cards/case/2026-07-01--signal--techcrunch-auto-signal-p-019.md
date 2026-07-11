@@ -30,15 +30,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-enterprise-data", "track-ai-governance", "track-ai-infra"]
+  track: ["track-enterprise-data", "track-ai-governance"]
   function: []
   scenario: ["scenario-knowledge-base", "scenario-agent-governance"]
   customer: []
   evidence: ["evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["engineering_team", "enterprise_ai_owner", "sales_team"]

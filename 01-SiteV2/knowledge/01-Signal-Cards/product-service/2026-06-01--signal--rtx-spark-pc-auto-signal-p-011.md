@@ -36,11 +36,6 @@ formal_tags:
   scenario: ["scenario-local-ai-dev"]
   customer: ["customer-developer-team"]
   evidence: ["evidence-product-launch", "evidence-pricing-cost"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-  opinion: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["engineering_team", "enterprise_ai_owner", "insurance_team"]

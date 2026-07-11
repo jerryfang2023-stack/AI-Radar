@@ -1,19 +1,31 @@
 import fs from "node:fs";
 import path from "node:path";
 
-export const tagGroups = [
+export const formalTagGroups = [
   "track",
   "function",
   "scenario",
   "customer",
   "evidence",
-  "stage",
-  "region",
-  "source",
-  "opinion",
 ];
 
+export const privateTagGroups = ["opinion"];
+
+export const tagGroups = [...formalTagGroups, ...privateTagGroups];
+
+export const deprecatedTagIds = new Set(["customer-enterprise"]);
+export const deprecatedTagPrefixes = ["stage-", "region-", "source-"];
+
 export const tagIdPattern = new RegExp(`\\b(?:${tagGroups.join("|")})-[a-z0-9-]+\\b`, "gu");
+
+export const deprecatedTagIdPattern = new RegExp(
+  `\\b(?:${deprecatedTagPrefixes.map((prefix) => prefix.slice(0, -1)).join("|")})-[a-z0-9-]+\\b|\\bcustomer-enterprise\\b`,
+  "gu",
+);
+
+export function isDeprecatedTagId(value = "") {
+  return deprecatedTagIds.has(value) || deprecatedTagPrefixes.some((prefix) => value.startsWith(prefix));
+}
 
 const taxonomyRelativePath = path.join("agent-workflow", "product", "tag-taxonomy.md");
 

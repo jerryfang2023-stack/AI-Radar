@@ -31,16 +31,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-customer-service", "track-ai-infra", "track-enterprise-workflow"]
+  track: ["track-ai-customer-service", "track-ai-infra"]
   function: ["function-customer-service", "function-sales"]
-  scenario: ["scenario-customer-ticket", "scenario-sales-briefing", "scenario-revenue-operations"]
-  customer: ["customer-enterprise"]
-  evidence: ["evidence-customer-adoption", "evidence-partnership-integration", "evidence-pricing-cost", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-first-party"]
-  opinion: []
-
+  scenario: ["scenario-customer-ticket", "scenario-sales-briefing"]
+  customer: []
+  evidence: ["evidence-customer-adoption", "evidence-partnership-integration"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["customer_support_team", "enterprise_ai_owner", "sales_team"]

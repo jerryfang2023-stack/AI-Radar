@@ -58,13 +58,8 @@ formal_tags:
   track: ["track-enterprise-workflow"]
   function: ["function-procurement-bidding", "function-operations"]
   scenario: ["scenario-bidding-response", "scenario-logistics-supply-chain"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-funding", "evidence-partnership-integration"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "procurement_team"]

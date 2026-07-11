@@ -36,10 +36,6 @@ formal_tags:
   scenario: []
   customer: []
   evidence: ["evidence-funding"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["finance_team", "it_security_team"]

@@ -33,12 +33,8 @@ formal_tags:
   track: ["track-ai-governance", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-agent-governance"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-customer-metric", "evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]

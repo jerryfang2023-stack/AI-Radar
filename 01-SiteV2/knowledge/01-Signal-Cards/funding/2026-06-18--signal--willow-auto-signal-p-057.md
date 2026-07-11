@@ -35,10 +35,6 @@ formal_tags:
   scenario: ["scenario-sales-briefing"]
   customer: []
   evidence: ["evidence-funding"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["engineering_team", "finance_team", "sales_team"]

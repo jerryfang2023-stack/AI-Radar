@@ -50,16 +50,11 @@ frontend:
     - "https://www.druidai.com/case-studies/ai-voice-agents-healthcare-group-transforms-patient-experience"
 
 formal_tags:
-  track: ["track-medical-ai", "track-ai-customer-service", "track-enterprise-workflow"]
+  track: ["track-medical-ai", "track-ai-customer-service"]
   function: ["function-customer-service", "function-operations"]
-  scenario: ["scenario-clinical-imaging", "scenario-customer-ticket", "scenario-insurance-claims", "scenario-healthcare-operations"]
-  customer: ["customer-enterprise", "customer-healthcare-provider"]
-  evidence: ["evidence-customer-adoption", "evidence-partnership-integration", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
+  scenario: ["scenario-clinical-imaging", "scenario-customer-ticket"]
+  customer: ["customer-healthcare-provider"]
+  evidence: ["evidence-customer-adoption", "evidence-partnership-integration"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["healthcare_provider"]

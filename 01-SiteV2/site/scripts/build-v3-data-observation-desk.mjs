@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { readTagTaxonomy } from "../../../agent-workflow/tools/tag-taxonomy-utils.mjs";
+import { formalTagGroups, readTagTaxonomy } from "../../../agent-workflow/tools/tag-taxonomy-utils.mjs";
 import { OPPORTUNITY_SIGNAL_FIELDS, opportunitySignalLabel } from "../../../agent-workflow/tools/opportunity-signals-utils.mjs";
 
 const root = process.cwd();
@@ -13,7 +13,7 @@ const reportsRoot = path.join(root, "agent-workflow", "reports");
 const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
 const siteVersion = "SITE-V3.4.5";
 const businessSignalsColumnVersion = "BSIG-V2.2.0-pipeline-stage-ownership";
-const tagTaxonomyVersion = "TAG-V1.1.0-v34-layered-taxonomy";
+const tagTaxonomyVersion = "TAG-V2.0.0-semantic-boundaries";
 const enterpriseAiLensVersion = "EAI-V1.2.0-raw-card-ingestion-boundary";
 const intelligenceMapColumnVersion = "IMAP-V2.0.0-report-center-opportunity-system";
 
@@ -34,12 +34,12 @@ const categoryLabels = {
   "product-service": "产品",
 };
 
-const tagGroups = ["track", "function", "scenario", "customer", "evidence", "stage", "region", "source"];
+const tagGroups = formalTagGroups;
 const tagDictionary = loadTagDictionary();
 const allowedTagIds = new Set(tagDictionary.keys());
-const internalFrontstageTagIds = new Set(["stage-watch", "core-pool"]);
+const internalFrontstageTagIds = new Set(["core-pool"]);
 const internalFrontstageTagLabels = new Set(["core pool"]);
-const frontstageAggregateMutedTagIds = new Set(["track-ai-agent", "customer-enterprise"]);
+const frontstageAggregateMutedTagIds = new Set();
 const frontstageDisplayTagLimit = 3;
 const opportunitySignalFrontstageLimit = 3;
 const opportunitySignalValuePriority = {
@@ -2172,7 +2172,6 @@ function frontstageImportanceScore(card = {}) {
   if (tags.has("evidence-partnership-integration")) score += 8;
   if (tags.has("evidence-pricing-cost")) score += 6;
   if (tags.has("evidence-product-launch")) score += 6;
-  if (tags.has("customer-enterprise")) score += 8;
   if (/vertical|procurement|health|finance|manufacturing|retail|legal|case|deployment|客户|案例|部署|采购/iu.test([
     card.title,
     card.translatedFact,
@@ -2612,7 +2611,7 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
         poolRoutes,
         publishedAt: "",
         tags: {},
-        flatTags: ["track-enterprise-workflow", "customer-enterprise"],
+        flatTags: [],
         displayTags: sanitizeDisplayTags([{ id: category, label: categoryLabels[category] || category }]),
         summary: fact,
         translatedFact: fact,
@@ -2694,7 +2693,7 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
         importanceScore,
         publishedAt: "",
         tags: {},
-        flatTags: ["track-enterprise-workflow", "customer-enterprise"],
+        flatTags: [],
         displayTags: sanitizeDisplayTags([{ id: category, label: categoryLabels[category] || category }]),
         summary: fact,
         translatedFact: fact,
@@ -3470,9 +3469,9 @@ const relationshipSpecs = [
     id: "agent-workflow-enterprise",
     title: "Agent 的企业落点正在从聊天入口转向销售、客服和工作流",
     direction: "企业工作流",
-    relation: ["AI Agent", "企业工作流", "大中型企业"],
+    relation: ["Agentic AI", "企业工作流"],
     categories: ["case"],
-    all: ["track-enterprise-workflow", "customer-enterprise", "evidence-customer-adoption"],
+    all: ["track-enterprise-workflow", "evidence-customer-adoption"],
     summary: "这些企业案例的共性不是发布新模型，而是把 Agent 放进销售、客服和企业工作流这些可交付流程；关系重点从“会不会对话”转向“能不能进入组织流程并产生结果”。",
     detailFocus: "内在关联：这些材料都把 Agent 从“会话能力”推向企业内部的流程节点，关注点转向流程结果、服务效率和客户采用。",
   },
@@ -3938,7 +3937,6 @@ function enterpriseTransformationScore(card = {}) {
   if (card.category === "product-service") score += 16;
   if (card.category === "funding") score += 8;
   if (tags.has("track-enterprise-workflow")) score += 24;
-  if (tags.has("customer-enterprise")) score += 18;
   if (tags.has("evidence-customer-adoption")) score += 18;
   if (tags.has("evidence-customer-metric")) score += 12;
   if (tags.has("evidence-product-launch")) score += 8;

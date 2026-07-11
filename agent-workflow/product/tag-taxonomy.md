@@ -1,306 +1,185 @@
 # Tag Taxonomy｜标签体系
 
-更新时间：2026-07-01
-version：TAG-V1.1.0-v34-layered-taxonomy
+更新时间：2026-07-11
+version：TAG-V2.0.0-semantic-boundaries
 owner：Intelligence Engine / Experience & Editorial
 状态：current
 
-## 1. 定位
+## 1. 唯一定位
 
-Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛选、关系网络和资产复盘，帮助用户按赛道、职能、场景、证据、客户类型和来源理解 WaveSight AI 的商业信号资产。
+标签用于连接可复用的商业语义，不承载来源追踪、流程状态、地域元数据或前台栏目结构。
 
-当前标签体系服务以下资产：
+当前体系分成四个互不替代的层：
 
-- 商业信号卡：`signal_card`
-- 一线观点：`first_line_viewpoint`
-- 关系图谱：`relationship_graph`
-- 趋势候选：`trend_candidate`
-
-旧机会中心、旧观点栏目、变化候选、场景候选、趋势报告和商业内参只作为历史兼容来源，不再作为当前标签分组、前台栏目名或 V3.3 执行目标。
-
-## 2. 标签分层
-
-V3.4 标签体系拆成三层，三层可以互相参照，但不能互相替代：
-
-| layer | 字段 / 位置 | 服务对象 | 前台规则 |
+| layer | 字段 | 作用 | 边界 |
 |---|---|---|---|
-| 正式标签 | `formal_tags` | 检索、筛选、关系图谱辅助、趋势候选上下文 | 保留完整结构，但 Business Signals 前台只展示少量高判断价值标签 |
-| 机会信号 | `opportunity_signals` | Reports Center / Opportunity System / 机会地图 | 继续替代旧 `formal_tags` 聚合做机会地图；必须贴近来源，不做宽泛主题标签 |
-| 栏目私有标签 | 栏目数据字段 | First-Line Viewpoints 和 Community Intelligence 的栏目内筛选 | 不混进 Business Signals；不作为商业信号事实证据 |
+| 商业语义标签 | `formal_tags` | Signal Card 检索、筛选、关系图辅助、趋势候选上下文 | 只允许 `track / function / scenario / customer / evidence` |
+| 机会信号 | `opportunity_signals` | Reports Center 的 Entry Point Map / Product Pain Map | 必须贴近来源；不从标签推导 |
+| 结构化元数据 | `source_type`、`market_regions`、`trend_state` | 来源追踪、地域、趋势状态 | 不进入 `formal_tags`，不参与标签聚合 |
+| 栏目私有分类 | `column_tags` 或栏目自有字段 | First-Line Viewpoints、Community Intelligence 内部筛选 | 不作为 Business Signals 事实、关系边或趋势证据 |
 
-职责边界：
+`tag_id` 是稳定机器键；`name` 是中文显示名；`aliases` 只负责输入归一化。禁止把显示名当作迁移目标。
 
-- `formal_tags` 用于后端检索、筛选、关系图辅助和趋势候选上下文，不再作为 Reports Center 机会地图的主聚合字段。
-- `opportunity_signals` 是 V3.4 Reports Center / Opportunity System 的机会地图字段，字段值必须能回到原始来源或卡片来源摘录。
-- First-Line Viewpoints 的栏目私有标签只使用 `opinion` / `track` / `source`，用于观点页筛选和观点时间线。
-- Community Intelligence 的栏目私有标签使用 `scene` / `industry` / `tools` / `monetization`，用于社群需求和实操线索的栏目内聚合。
-- First-Line Viewpoints 和 Community Intelligence 只能用于解释、需求互证或候选观察；除非另行进入 Raw / Pool / Card 链路，否则不能进入 Business Signals 的 `formal_tags`、关系图证据或趋势候选证据。
+## 2. 正式标签规则
 
-正式标签分为 9 类：
+### 2.1 允许分组与数量
 
-| group | 用途 | 建议使用 |
+| group | 回答的问题 | Signal Card 规则 |
 |---|---|---|
-| `track` | 赛道 / 技术方向 | 核心内容必填 |
-| `function` | 业务职能 | 商业信号建议补充；关系图谱重要输入 |
-| `scenario` | 应用场景 | 案例、垂直部署和关系图谱建议补充 |
-| `customer` | 客户类型 | 案例、融资和垂直部署建议补充 |
-| `evidence` | 证据类型 | 商业信号、趋势候选建议必填 |
-| `stage` | 阶段 / 成熟度 | 只用于趋势候选或确有阶段判断的资产 |
-| `region` | 地域 / 市场适配 | 只在来源明确指向区域时使用 |
-| `source` | 来源类型 | 商业信号和一线观点建议补充；不作为前台主视觉标签 |
-| `opinion` | 一线观点主题 | 只用于 First-Line Viewpoints |
+| `track` | 发生在哪个 AI 商业方向？ | 必填 1 个，最多 2 个 |
+| `function` | 影响哪个组织职能？ | 有明确职能才写，最多 2 个 |
+| `scenario` | 落在哪个具体工作流或部署场景？ | 有来源证据才写，最多 2 个 |
+| `customer` | 明确服务哪类客户或使用者？ | 有明确对象才写，最多 2 个 |
+| `evidence` | 来源证明了哪类商业事件？ | 必填 1 个，最多 2 个 |
 
-## 3. Tag 数据结构
+硬规则：
 
-```json
-{
-  "tag_id": "track-ai-agent",
-  "name": "AI Agent",
-  "group": "track",
-  "aliases": ["AI-Agent", "智能体"],
-  "description": "围绕自主执行、多步骤任务、工具调用和企业流程执行的 AI 系统。",
-  "status": "active",
-  "merge_to": null
-}
-```
+- 每个标签都必须能由标题、来源正文、证据摘录或 Card 事实字段直接支持。
+- 不因正文出现单个宽泛词就打标签；`AI`、`enterprise`、`agent`、`customer` 不能单独触发标签。
+- `track-ai-agent` 只有在自主执行、工具调用或多步骤代理是产品核心时使用；与更具体赛道共存时，只在 Agent 机制本身对商业判断不可替代时保留。
+- 不写默认客户标签。无法从来源确认客户类型时，`customer` 留空。
+- `evidence` 描述已发生、可核验的事件，不描述推测、热度或编辑判断。
+- 单个分组超过上限时优先保留更具体、与来源事实更接近的标签。
 
-## 4. 第一版正式标签字典
+## 3. 正式标签字典
 
 ### track
 
 | tag_id | name | aliases | description |
 |---|---|---|---|
-| `track-ai-agent` | AI Agent | AI-Agent、智能体 | 多步骤任务、工具调用、企业流程执行 |
-| `track-ai-coding` | AI Coding | AI-Coding、AI 编程 | 编码助手、开发者工具、软件生成 |
-| `track-enterprise-workflow` | 企业工作流 | 企业 AI 工作流、工作流自动化 | 企业流程、审批、跨系统自动化 |
-| `track-enterprise-data` | 企业数据智能 | 企业数据、RAG、企业知识库 | 企业数据、知识库、RAG、数据控制面 |
-| `track-ai-marketing` | AI 营销 | AI 增长、销售赋能 | 营销、增长、销售、线索和客户运营 |
+| `track-ai-agent` | Agentic AI | AI Agent、AI-Agent、智能体 | 以自主执行、工具调用或多步骤代理为核心的产品与系统 |
+| `track-ai-models` | 模型与能力 | 基础模型、大模型、多模态模型 | 模型发布、能力迭代、训练与模型商业化 |
+| `track-ai-applications` | AI 应用与平台 | AI 应用、AI 平台、通用 AI 产品 | 不属于更具体垂直赛道的应用层产品和平台 |
+| `track-ai-coding` | AI Coding | AI-Coding、AI编程、开发者 AI | 编码助手、软件生成和开发者工具 |
+| `track-enterprise-workflow` | 企业工作流 | 企业 AI 工作流、工作流自动化 | 明确进入组织流程、审批或跨系统执行的 AI 产品 |
+| `track-enterprise-data` | 企业数据智能 | 企业数据、RAG、企业知识库 | 企业数据、知识库、检索增强和数据控制面 |
+| `track-ai-marketing` | AI 营销 | AI 增长、销售赋能 | 营销、增长、销售和客户运营产品 |
 | `track-ai-customer-service` | AI 客服 | Voice AI、语音客服 | 客服、售后、质检、工单和语音分流 |
 | `track-ai-governance` | AI 治理 | Agent 治理、权限审计 | 权限、审计、合规、安全和治理 |
-| `track-ai-infra` | AI 基础设施 | AI Infra、模型基础设施 | 推理、托管、评测、记忆层和基础设施 |
-| `track-embodied-ai` | 具身智能 | 机器人、无人系统 | 机器人、物流、无人系统、物理任务执行 |
-| `track-medical-ai` | 医疗 AI | 临床 AI、影像 AI | 医疗影像、临床辅助、医疗工作流 |
-| `track-professional-services-ai` | 专业服务 AI | 法务 AI、咨询 AI、专家知识 Agent | 专业服务、知识工作和专家判断 |
+| `track-ai-infra` | AI 基础设施 | AI Infra、模型基础设施 | 算力、推理、托管、评测和基础设施 |
+| `track-embodied-ai` | 具身智能 | 机器人、无人系统 | 机器人、物流、无人系统和物理任务执行 |
+| `track-medical-ai` | 医疗 AI | 临床 AI、影像 AI | 医疗影像、临床辅助和医疗工作流 |
+| `track-professional-services-ai` | 专业服务 AI | 法务 AI、咨询 AI、专家知识 Agent | 专业服务和专家知识交付 |
+| `track-creative-media-ai` | 创意媒体 AI | 生成式媒体、视频 AI、设计 AI | 视频、设计、广告和内容生产工具 |
+| `track-ai-science-research` | 科学研究 AI | AI for Science、科研 AI | 科学发现、化学、生物和研究智能体 |
 
 ### function
 
-| tag_id | name | aliases |
-|---|---|---|
-| `function-sales` | 销售 | 销售赋能、CRM |
-| `function-marketing` | 市场营销 | 增长、投放 |
-| `function-customer-service` | 客服售后 | 客服、售后、质检 |
-| `function-operations` | 运营流程 | 运营、流程 |
-| `function-finance` | 财务 | 票据、报销、财务流程 |
-| `function-legal-compliance` | 法务合规 | 合规、审计 |
-| `function-procurement-bidding` | 采购投标 | 招投标、采购 |
-| `function-engineering` | 工程研发 | 开发、仿真、工程 |
+| tag_id | name | aliases | description |
+|---|---|---|---|
+| `function-sales` | 销售 | 销售赋能、CRM | 获客、销售执行和客户转化 |
+| `function-marketing` | 市场营销 | 增长、投放 | 品牌、内容、增长和广告投放 |
+| `function-customer-service` | 客服售后 | 客服、售后、质检 | 服务、工单、质检和客户成功 |
+| `function-operations` | 运营流程 | 运营、流程 | 组织运营和跨系统流程 |
+| `function-finance` | 财务 | 票据、报销、财务流程 | 财务核算、报销、支付和分析 |
+| `function-legal-compliance` | 法务合规 | 合规、审计 | 法务、合规、风险和审计 |
+| `function-procurement-bidding` | 采购投标 | 招投标、采购 | 采购、招标和供应商流程 |
+| `function-engineering` | 工程研发 | 开发、仿真、工程 | 软件、产品和工程研发 |
 
 ### scenario
 
-| tag_id | name | aliases |
-|---|---|---|
-| `scenario-document-workflow` | 文档流程 | 文档处理、合同提取 |
-| `scenario-knowledge-base` | 知识库问答 | RAG、企业知识库 |
-| `scenario-customer-ticket` | 工单与质检 | 工单、质检、智能派单 |
-| `scenario-sales-briefing` | 销售日报 | 销售周报、线索跟进 |
-| `scenario-bidding-response` | 标书响应 | 标书解析、应标响应 |
-| `scenario-clinical-imaging` | 临床影像辅助 | 影像诊断 |
-| `scenario-agent-governance` | Agent 权限治理 | 审计、权限、风险控制 |
-| `scenario-manufacturing-ops` | 制造运营 | 工厂、产线、工业运营 |
-| `scenario-model-deployment` | 模型部署 | 模型上线、边缘部署、算力部署 |
-| `scenario-coding-agent` | 编码 Agent | 开发者 Agent、代码代理 |
-| `scenario-payments` | 支付流程 | 企业支付、付款、结算 |
-| `scenario-local-ai-dev` | 本地 AI 开发 | 本地模型、AI PC、本地开发环境 |
-| `scenario-healthcare-operations` | 医疗运营 | 排班、护理、病患运营、医疗流程 |
-| `scenario-insurance-claims` | 保险理赔 | 理赔通知、审核、赔付流程 |
-| `scenario-logistics-supply-chain` | 物流供应链 | 物流、配送、供应链、库存 |
-| `scenario-construction-real-estate` | 建筑地产 | 建筑、地产、工程贷款、项目管理 |
-| `scenario-revenue-operations` | 收入运营 | RevOps、销售运营、商业大脑 |
+| tag_id | name | aliases | description |
+|---|---|---|---|
+| `scenario-document-workflow` | 文档流程 | 文档处理、合同提取 | 文档生成、提取、审核和流转 |
+| `scenario-knowledge-base` | 知识库问答 | RAG、企业知识库 | 企业检索、问答和知识管理 |
+| `scenario-customer-ticket` | 工单与质检 | 工单、质检、智能派单 | 客服工单、质检与分流 |
+| `scenario-sales-briefing` | 销售情报与跟进 | 销售日报、销售周报、线索跟进 | 销售准备、线索跟进和情报汇总 |
+| `scenario-bidding-response` | 标书响应 | 标书解析、应标响应 | 招投标材料解析与生成 |
+| `scenario-clinical-imaging` | 临床影像辅助 | 影像诊断 | 医疗影像分析和辅助诊断 |
+| `scenario-agent-governance` | Agent 权限治理 | 审计、权限、风险控制 | Agent 权限、审计与运行治理 |
+| `scenario-manufacturing-ops` | 制造运营 | 工厂、产线、工业运营 | 工厂、产线和工业运营 |
+| `scenario-model-deployment` | 模型部署 | 模型上线、边缘部署、算力部署 | 模型上线、服务和边缘部署 |
+| `scenario-coding-agent` | 编码 Agent | 开发者 Agent、代码代理 | 代码生成、修改、测试和工程代理 |
+| `scenario-payments` | 支付流程 | 企业支付、付款、结算 | 支付、付款与结算 |
+| `scenario-local-ai-dev` | 本地 AI 开发 | 本地模型、AI PC、本地开发环境 | 本地模型和端侧开发环境 |
+| `scenario-healthcare-operations` | 医疗运营 | 排班、护理、病患运营、医疗流程 | 医疗机构运营流程 |
+| `scenario-insurance-claims` | 保险理赔 | 理赔通知、审核、赔付流程 | 理赔审核与赔付 |
+| `scenario-logistics-supply-chain` | 物流供应链 | 物流、配送、供应链、库存 | 配送、库存和供应链流程 |
+| `scenario-construction-real-estate` | 建筑地产 | 建筑、地产、工程贷款、项目管理 | 建筑、地产和项目管理 |
+| `scenario-revenue-operations` | 收入运营 | RevOps、销售运营、商业大脑 | 收入流程和商业运营 |
 
 ### customer
 
-| tag_id | name | aliases |
-|---|---|---|
-| `customer-smb` | 中小企业 | SMB、中小商家 |
-| `customer-enterprise` | 大中型企业 | 企业客户 |
-| `customer-public-sector` | 政府 / 国企 | 政府、央国企 |
-| `customer-developer-team` | 开发团队 | 工程团队 |
-| `customer-healthcare-provider` | 医疗机构 | 医院、诊所 |
-| `customer-heavy-industry` | 重资产行业 | 能源、电力、制造、建筑 |
+| tag_id | name | aliases | description |
+|---|---|---|---|
+| `customer-smb` | 中小企业 | SMB、中小商家 | 明确面向中小企业或商户 |
+| `customer-public-sector` | 政府 / 公共部门 | 政府、央国企、公共部门 | 明确面向政府或公共部门 |
+| `customer-developer-team` | 开发团队 | 工程团队 | 明确面向开发者或工程团队 |
+| `customer-healthcare-provider` | 医疗机构 | 医院、诊所 | 明确面向医疗服务机构 |
+| `customer-heavy-industry` | 重资产行业 | 能源、电力、制造、建筑 | 明确面向重资产行业客户 |
 
 ### evidence
 
-| tag_id | name | aliases |
-|---|---|---|
-| `evidence-funding` | 融资证据 | 投资、种子轮 |
-| `evidence-customer-adoption` | 客户采用 | 部署、上线、合作 |
-| `evidence-product-launch` | 产品发布 | 功能发布、平台发布 |
-| `evidence-revenue` | 收入增长 | ARR、营收 |
-| `evidence-regulation` | 监管政策 | 政策、合规 |
-| `evidence-procurement` | 招投标 / 采购 | 招标、政府采购 |
-| `evidence-partnership-integration` | 合作集成 | 合作、集成、平台接入 |
-| `evidence-acquisition` | 收购并购 | 收购、并购、团队收编 |
-| `evidence-pricing-cost` | 价格成本 | 定价、用量、限额、推理成本 |
-| `evidence-customer-metric` | 客户指标 | 效率、收入、处理量、节省成本 |
+| tag_id | name | aliases | description |
+|---|---|---|---|
+| `evidence-funding` | 融资 | 投资、种子轮 | 已披露的融资或投资事件 |
+| `evidence-customer-adoption` | 客户采用 | 部署、上线 | 已披露的客户采用、部署或上线 |
+| `evidence-product-launch` | 产品发布 | 功能发布、平台发布 | 已发布的产品、服务或功能 |
+| `evidence-revenue` | 收入增长 | ARR、营收 | 已披露的收入或商业增长指标 |
+| `evidence-regulation` | 监管政策 | 政策、合规 | 已发布的监管、执法或政策动作 |
+| `evidence-procurement` | 采购合同 | 招投标、政府采购、合同 | 已披露的采购、招标或合同事件 |
+| `evidence-partnership-integration` | 合作集成 | 合作、集成、平台接入 | 已宣布的合作、集成或渠道接入 |
+| `evidence-acquisition` | 收购并购 | 收购、并购、团队收编 | 已发生或已宣布的并购事件 |
+| `evidence-pricing-cost` | 定价与成本 | 定价、用量、限额、推理成本 | 已披露的定价、计费或成本变化 |
+| `evidence-customer-metric` | 客户结果指标 | 效率、处理量、节省成本 | 来源披露的客户结果或运营指标 |
 
-### stage
+## 4. First-Line Viewpoints 私有字典
 
-| tag_id | name | aliases |
-|---|---|---|
-| `stage-emerging` | 新出现 | emerging |
-| `stage-rising` | 升温 | rising |
-| `stage-splitting` | 分化 | splitting |
-| `stage-mature` | 成熟化 | mature |
-| `stage-risk` | 风险变量 | risk |
-| `stage-watch` | 观察 | watch |
-
-### region
-
-| tag_id | name | aliases |
-|---|---|---|
-| `region-global` | 全球 | 海外 |
-| `region-china` | 中国适配 | 中国、本土 |
-| `region-us` | 美国 | US |
-| `region-eu` | 欧洲 | EU |
-| `region-asia` | 亚洲 | 亚太、APAC |
-
-### source
-
-| tag_id | name | aliases |
-|---|---|---|
-| `source-first-party` | 一手来源 | 官网、官方博客 |
-| `source-business-media` | 商业媒体 | 高质量媒体 |
-| `source-industry-data` | 产业数据 | 数据库、招投标 |
-| `source-social` | 社媒线索 | X、社区 |
-| `source-podcast` | 播客 | YouTube、访谈 |
-| `source-blog` | 技术博客 | Blog |
+观点使用 `column_tags`，只允许 `track` 与 `opinion`。来源写入 `source_type`，不再生成 `source-*` 标签。
 
 ### opinion
 
-| tag_id | name | aliases |
-|---|---|---|
-| `opinion-ai-coding` | AI Coding 观点 | 编程、开发者工具 |
-| `opinion-agent-workflow` | Agent 工作流观点 | 多 Agent、工作流 |
-| `opinion-model-infra` | 模型基础设施观点 | Infra、推理、记忆 |
-| `opinion-product-strategy` | 产品策略观点 | PM、产品 |
-| `opinion-ai-safety-governance` | AI 安全治理观点 | 安全、权限、治理 |
-
-## 5. 合并与别名规则
-
-| 原标签 | 归并到 |
-|---|---|
-| `AI-Agent` | `AI Agent` |
-| `AI编程` | `AI Coding` |
-| `AI-Coding` | `AI Coding` |
-| `AI增长` | `AI 营销` |
-| `Voice-AI` | `AI 客服` |
-| `企业知识库` | `企业数据智能` |
-| 旧观点栏目 | `opinion-*` 主题标签 |
-| 旧机会中心 | 历史兼容来源，不进入 V3.4 active taxonomy |
-
-`AI创业机会` 不再作为唯一标签使用，仅保留为历史兼容标签。新商业信号至少应包含 `track` 和 `evidence`；`function`、`scenario`、`customer`、`source` 按事实补充。
-
-## 6. 准入规则
-
-新标签必须满足至少一项：
-
-- 能连接 3 条以上商业信号、一线观点、关系图谱节点或趋势候选。
-- 是 Product Commander 明确确认的重点赛道或商业化方向。
-- 能显著提升搜索、筛选或关系网络价值。
-- 是自动化质量报告中连续出现的高价值关键词。
-
-不允许新增：
-
-- 只有一次出现的随手词。
-- 公司名标签。
-- 纯情绪标签。
-- 过宽泛标签，如“AI”“创业”“科技”。
-- 与现有标签只是大小写、连字符或中英文差异的重复词。
-
-## 7. 内容类型标签要求
-
-### signal_card
-
-- 至少 1 个 `track`
-- 至少 1 个 `evidence`
-- 可选 `function` / `scenario` / `customer` / `source`
-- 不应默认使用 `stage-watch`；阶段标签只在确有阶段判断时使用。
-
-### first_line_viewpoint
-
-- 至少 1 个 `opinion`
-- 至少 1 个 `track`
-- 至少 1 个 `source`
-- 不使用 `scenario-frontier-opinion` 或 `evidence-frontier-opinion` 表示观点。
-- 标签不能替代观点质量判断；前台展示仍必须保留来源、人物、原文语境和发布时间。
-
-### trend_candidate
-
-- 至少 1 个 `track`
-- 至少 1 个 `stage`
-- 可选 `evidence` / `scenario`
-
-## 8. 自动化生成规则
-
-- `asset-card-generator` 生成资产时必须按本文件从别名归并到正式标签。
-- `asset-card-generator` 不得默认写入 `stage-watch`；无法判断阶段时留空。
-- `follow-builders` 生成 First-Line Viewpoints 时，必须同步写入 `formal_tags`；最小要求为 1 个 `track`、1 个 `source`、1 个 `opinion`。
-- 一线观点不得以人物姓名作为 tag；人物进入 `speaker` / `person` / `source_name` 字段。
-- 若发现新观点主题，不直接新建 tag，先写入候选主题或运行报告。
-- 同步脚本不新增标签，只解析已有标签。
-- 自动化不得用标签数量、人物热度或主题命中替代四档评级。
-- 如果自动化无法确定标签，写 `needs_tag_review` 到报告，不要编造标签。
-
-## 9. 前台应用规则
-
-Tags 不进入一线导航。
-
-前台可用于：
-
-- 商业信号筛选。
-- 一线观点筛选。
-- 趋势候选相关内容聚合。
-- 详情页“相关内容”。
-- 未来标签网络图。
-
-前台不应展示：
-
-- 长标签墙。
-- 内部 `tag_id`。
-- 低价值泛标签。
-- 未复核候选标签。
-
-## 10. 治理节奏
-
-每日自动化报告记录未知标签和候选标签。
-
-每周输出：
-
-```text
-agent-workflow/reports/tag-quality-weekly-YYYY-WW.md
-```
-
-内容：
-
-- 高频标签。
-- 低价值标签。
-- 新增候选标签。
-- 合并建议。
-- 未知标签。
-- 标签到商业信号、一线观点、关系图谱和趋势候选的覆盖率。
-
-下一步：
-
-1. Build & Release 后续可增加 `check-tags.mjs`。
-2. Intelligence Engine 每周输出 tag-quality 报告。
-3. Experience & Editorial 后续设计标签筛选，不做标签墙。
-4. 前台不显示内部 `tag_id`。
-
-## 11. 候选标签
-
-以下标签先作为候选观察，不进入 active taxonomy。连续连接 3 条以上正式商业信号后，再转入对应正式分组。
-
-| candidate_tag_id | name | group | 进入条件 |
+| tag_id | name | aliases | description |
 |---|---|---|---|
-| `track-ai-science-research` | 科学研究 AI | `track` | 科学发现、化学、生物、研究智能体连续形成正式商业信号 |
-| `track-creative-media-ai` | 创意媒体 AI | `track` | 视频、设计、内容生产工具连续形成正式商业信号 |
+| `opinion-ai-coding` | AI Coding 观点 | 编程、开发者工具 | 对 AI 编程与软件工程的判断 |
+| `opinion-agent-workflow` | Agent 工作流观点 | 多 Agent、工作流 | 对 Agent 机制与组织工作流的判断 |
+| `opinion-model-infra` | 模型基础设施观点 | Infra、推理、记忆 | 对模型、推理和基础设施的判断 |
+| `opinion-product-strategy` | 产品策略观点 | PM、产品 | 对产品、创业和市场策略的判断 |
+| `opinion-ai-safety-governance` | AI 安全治理观点 | 安全、权限、治理 | 对安全、治理和风险的判断 |
+
+First-Line Viewpoints 最少 1 个 `opinion`；`track` 有明确主题时再写，最多各 2 个。人物姓名、热度和来源平台都不是标签。
+
+## 5. 结构化元数据枚举
+
+- `source_type`：`first_party / business_media / industry_data / social / podcast / blog / research / regulatory`
+- `market_regions`：ISO 国家或区域值；仅来源明确时填写，不写默认 `global`
+- `trend_state`：`emerging / rising / splitting / mature / risk / watch`；只允许趋势候选使用
+
+这些值没有 tag_id，不进入标签字典、标签统计、关系边或前台标签墙。
+
+## 6. 历史清理与迁移
+
+| 旧值 | 当前处理 |
+|---|---|
+| `source-*` | 从 `formal_tags` 删除；迁移到 `source_type` 或已有来源字段 |
+| `region-*` | 从 `formal_tags` 删除；明确地域迁移到 `market_regions`；`region-global` 直接删除 |
+| `stage-*` | Signal Card 直接删除；趋势候选迁移到 `trend_state` |
+| `customer-enterprise` | 删除，不设默认替代值 |
+| `track-ai-agent` 与更具体 track 共存 | Agent 机制非核心时删除；清理器默认保留更具体 track |
+| `AI创业机会`、旧机会中心标签 | 删除；机会判断进入 `opportunity_signals` |
+| 旧观点栏目、人物名标签 | 删除；观点主题进入 `column_tags.opinion` |
+
+历史版本不做兼容回填。生成器、校验器、前台和资产都必须使用当前合同。
+
+## 7. 新标签准入与退役
+
+新增标签必须同时满足：
+
+1. 维度唯一，不与现有标签、元数据或机会信号重复；
+2. 已连接至少 3 条正式资产，或由 Product Commander 明确批准为战略观察方向；
+3. 能提升检索、筛选或关系分析，而不是复述标题；
+4. 有明确正例、反例和触发边界。
+
+以下情况禁止新增：公司名、人物名、一次性事件词、纯情绪词、流程状态、来源平台、宽泛词（如“AI”“创业”“科技”）以及中英文/大小写重复词。
+
+标签满足任一条件应进入退役审查：连续 90 天零使用；覆盖率长期过高而不具区分力；与结构化字段重复；无法稳定由来源事实支持。退役必须提供 `remove / merge_to / move_to_field` 之一，不允许静默改义。
+
+## 8. 自动化与质量门
+
+- 生成器先判断 Card 事实类型，再按本字典打标签；不得为满足数量补默认标签。
+- Signal Card 缺 `track` 或 `evidence` 时进入 `needs_tag_review`，不得编造。
+- 同步脚本只解析已有标签，不创建标签。
+- 质量门必须阻止：未知标签、退役标签、错误分组、超出数量上限、Signal Card 缺必填组、非趋势资产使用 `trend_state`、栏目私有标签进入 Business Signals。
+- 每周审计覆盖率、低频标签、共现泛化、未知值和待审候选；候选在批准前不得进入 active taxonomy。
+
+前台最多展示 3 个高判断价值标签，不显示 tag_id、来源元数据、趋势状态或内部诊断字段。

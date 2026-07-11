@@ -39,10 +39,6 @@ formal_tags:
   scenario: []
   customer: []
   evidence: ["evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["customer_support_team", "healthcare_provider", "enterprise_ai_owner"]

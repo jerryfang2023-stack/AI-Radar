@@ -51,14 +51,9 @@ frontend:
 formal_tags:
   track: ["track-enterprise-data", "track-ai-infra"]
   function: ["function-procurement-bidding"]
-  scenario: ["scenario-knowledge-base", "scenario-bidding-response", "scenario-logistics-supply-chain", "scenario-revenue-operations"]
+  scenario: ["scenario-knowledge-base", "scenario-bidding-response"]
   customer: ["customer-heavy-industry"]
-  evidence: ["evidence-funding", "evidence-partnership-integration", "evidence-pricing-cost", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
+  evidence: ["evidence-funding", "evidence-partnership-integration"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["finance_team"]

@@ -49,16 +49,11 @@ frontend:
     - "https://www.cnbc.com/2026/02/05/open-ai-frontier-enterprise-customers.html"
 
 formal_tags:
-  track: ["track-ai-governance", "track-ai-infra", "track-enterprise-workflow"]
+  track: ["track-ai-governance", "track-ai-infra"]
   function: ["function-procurement-bidding", "function-legal-compliance"]
-  scenario: ["scenario-bidding-response", "scenario-agent-governance", "scenario-logistics-supply-chain"]
-  customer: ["customer-enterprise"]
-  evidence: ["evidence-product-launch", "evidence-pricing-cost", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
+  scenario: ["scenario-bidding-response", "scenario-agent-governance"]
+  customer: []
+  evidence: ["evidence-product-launch", "evidence-pricing-cost"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "it_security_team", "procurement_team"]

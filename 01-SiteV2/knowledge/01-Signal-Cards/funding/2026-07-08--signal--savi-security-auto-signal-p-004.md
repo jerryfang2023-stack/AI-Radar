@@ -31,15 +31,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-customer-service", "track-ai-governance"]
+  track: ["track-ai-customer-service", "track-ai-governance"]
   function: ["function-customer-service"]
   scenario: ["scenario-customer-ticket", "scenario-agent-governance"]
   customer: []
   evidence: ["evidence-pricing-cost", "evidence-funding"]
-  stage: ["stage-rising"]
-  region: []
-  source: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["sales_team"]

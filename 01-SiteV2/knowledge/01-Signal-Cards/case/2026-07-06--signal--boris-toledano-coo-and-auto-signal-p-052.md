@@ -32,15 +32,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-enterprise-data"]
   function: ["function-customer-service"]
   scenario: ["scenario-knowledge-base", "scenario-customer-ticket"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["sales_team", "finance_team", "enterprise_ai_owner"]

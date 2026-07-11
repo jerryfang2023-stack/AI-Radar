@@ -2478,23 +2478,26 @@ function uniq(items) {
 
 function inferredTagsFromText(text = "") {
   const tags = {
-    track: ["track-ai-agent"],
+    track: [],
     function: [],
     scenario: [],
     customer: [],
     evidence: [],
-    stage: [],
-    region: [],
-    source: [],
   };
   const add = (group, ...ids) => tags[group].push(...ids);
   const has = (pattern) => pattern.test(text);
 
   if (has(/coding|code|developer|github|sdk|api|工程|开发|编程/iu)) add("track", "track-ai-coding"), add("function", "function-engineering"), add("customer", "customer-developer-team");
-  if (has(/workflow|agent|智能体|流程|enterprise|企业/iu)) add("track", "track-enterprise-workflow"), add("customer", "customer-enterprise");
+  if (has(/agentic|tool[ -]?use|multi[- ]?step|autonomous agent|智能体|自主执行|工具调用/iu)) add("track", "track-ai-agent");
+  if (has(/workflow|business process|process automation|工作流|业务流程|流程自动化|审批/iu)) add("track", "track-enterprise-workflow");
+  if (has(/foundation model|large language model|multimodal model|大模型|基础模型|多模态模型/iu)) add("track", "track-ai-models");
+  if (has(/ai app|ai application|ai platform|assistant|copilot|ai 应用|ai 平台|助手/iu)) add("track", "track-ai-applications");
   if (has(/data|snowflake|rag|知识库|数据/iu)) add("track", "track-enterprise-data"), add("scenario", "scenario-knowledge-base");
   if (has(/infra|inference|temporal|模型|推理|基础设施|算力/iu)) add("track", "track-ai-infra");
   if (has(/health|medical|clinical|医疗|医院|临床/iu)) add("track", "track-medical-ai"), add("customer", "customer-healthcare-provider"), add("scenario", "scenario-healthcare-operations");
+  if (has(/robot|robotics|autonomous vehicle|embodied|机器人|具身|无人系统/iu)) add("track", "track-embodied-ai");
+  if (has(/video generation|image generation|creative|design tool|视频生成|图像生成|创意|设计工具/iu)) add("track", "track-creative-media-ai");
+  if (has(/ai for science|scientific discovery|drug discovery|biology|chemistry|科学发现|科研|药物发现|生物|化学/iu)) add("track", "track-ai-science-research");
   if (has(/imaging|影像|诊断/iu)) add("scenario", "scenario-clinical-imaging");
   if (has(/procurement|bidding|采购|投标|招标/iu)) add("function", "function-procurement-bidding"), add("scenario", "scenario-bidding-response");
   if (has(/finance|财务|贷款|理赔|保险/iu)) add("function", "function-finance");
@@ -2521,16 +2524,12 @@ function formalTagsYaml(tags) {
     `  scenario: ${yamlList(tags.scenario)}`,
     `  customer: ${yamlList(tags.customer)}`,
     `  evidence: ${yamlList(tags.evidence)}`,
-    `  stage: ${yamlList(tags.stage)}`,
-    `  region: ${yamlList(tags.region)}`,
-    `  source: ${yamlList(tags.source)}`,
   ].join("\n");
 }
 
 function formalTagsForSignal(spec) {
   const tags = inferredTagsFromText(`${spec.title} ${spec.eventLine} ${(spec.sourcePoints || []).join(" ")} ${spec.company}`);
   tags.evidence.push(spec.type === "funding" ? "evidence-funding" : spec.type === "case" ? "evidence-customer-adoption" : "evidence-product-launch");
-  if (spec.type === "funding") tags.stage.push("stage-rising");
   return Object.fromEntries(Object.entries(tags).map(([group, values]) => [group, uniq(values)]));
 }
 
@@ -2565,7 +2564,6 @@ function formalTagsForScene(spec) {
 function formalTagsForTrend(spec) {
   const tags = inferredTagsFromText(`${spec.title} ${spec.hypothesis} ${spec.sourceTypes?.join(" ") || ""}`);
   tags.evidence.push("evidence-customer-adoption");
-  tags.stage.push("stage-rising");
   return Object.fromEntries(Object.entries(tags).map(([group, values]) => [group, uniq(values)]));
 }
 
@@ -2733,6 +2731,7 @@ trend_hypothesis: "${spec.hypothesis}"
 supporting_changes: []
 supporting_scenes: ["SCN-20260520-01", "SCN-20260521-01"]
 source_types: ${yamlList(spec.sourceTypes)}
+trend_state: rising
 risk_boundary: "${spec.riskBoundary}"
 follow_up_variables: "${spec.followUpVariables}"
 related_signal_cards: ${yamlList(spec.relatedSignals)}

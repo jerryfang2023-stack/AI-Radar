@@ -35,10 +35,6 @@ formal_tags:
   scenario: ["scenario-clinical-imaging"]
   customer: []
   evidence: ["evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["engineering_team", "healthcare_provider", "sales_team"]

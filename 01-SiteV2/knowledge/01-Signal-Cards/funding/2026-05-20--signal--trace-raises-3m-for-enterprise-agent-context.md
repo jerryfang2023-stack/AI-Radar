@@ -49,16 +49,11 @@ frontend:
     - "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/"
 
 formal_tags:
-  track: ["track-ai-governance", "track-ai-infra", "track-enterprise-workflow"]
+  track: ["track-ai-governance", "track-ai-infra"]
   function: ["function-legal-compliance"]
   scenario: ["scenario-agent-governance"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-funding", "evidence-partnership-integration"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-  opinion: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]

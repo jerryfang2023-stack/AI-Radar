@@ -105,10 +105,7 @@ const tagCatalog = {
   "track-ai-agent": { id: "track-ai-agent", name: "AI Agent", group: "track" },
   "track-ai-coding": { id: "track-ai-coding", name: "AI Coding", group: "track" },
   "track-ai-infra": { id: "track-ai-infra", name: "AI 基础设施", group: "track" },
-  "track-enterprise-workflow": { id: "track-enterprise-workflow", name: "企业工作流", group: "track" },
-  "source-social": { id: "source-social", name: "社媒线索", group: "source" },
-  "source-podcast": { id: "source-podcast", name: "播客", group: "source" },
-  "source-blog": { id: "source-blog", name: "技术博客", group: "source" },
+  "track-ai-applications": { id: "track-ai-applications", name: "AI 应用与平台", group: "track" },
 };
 
 function tagFromTaxonomy(id) {
@@ -116,22 +113,14 @@ function tagFromTaxonomy(id) {
   return tag ? { id: tag.id, name: tag.name, group: tag.group } : tagCatalog[id] || null;
 }
 
-function tagsForTopic(topic, source = "x") {
+function tagsForTopic(topic) {
   const topicTags = {
     "Agent": ["opinion-agent-workflow", "track-ai-agent"],
     "AI 编程": ["opinion-ai-coding", "track-ai-coding"],
     "AI 基础设施": ["opinion-model-infra", "track-ai-infra"],
-    "产品与创业": ["opinion-product-strategy", "track-enterprise-workflow"],
+    "产品与创业": ["opinion-product-strategy", "track-ai-applications"],
   };
-  const sourceTags = {
-    x: "source-social",
-    podcast: "source-podcast",
-    blog: "source-blog",
-  };
-  const ids = [
-    ...(topicTags[topic] || topicTags[fallbackTopic]),
-    sourceTags[source] || "source-social",
-  ];
+  const ids = topicTags[topic] || topicTags[fallbackTopic];
   return [...new Set(ids)].map(tagFromTaxonomy).filter(Boolean);
 }
 
@@ -348,7 +337,8 @@ async function normalize(feed, trackedSources) {
         translationStatus: translated.status,
         translationMethod: translated.method,
         topic,
-        formalTags: tagsForTopic(topic, "x"),
+        columnTags: tagsForTopic(topic),
+        sourceType: "social",
         observation: observationForTopic(topic),
         createdAt: tweet.createdAt,
         date: remarkDate(tweet.createdAt),
@@ -403,7 +393,8 @@ async function normalize(feed, trackedSources) {
         translationStatus: "translated",
         translationMethod: titleTranslation.method,
         topic,
-        formalTags: tagsForTopic(topic, "blog"),
+        columnTags: tagsForTopic(topic),
+        sourceType: "blog",
         observation: observationForTopic(topic),
         createdAt: item.createdAt,
         date: remarkDate(item.createdAt),

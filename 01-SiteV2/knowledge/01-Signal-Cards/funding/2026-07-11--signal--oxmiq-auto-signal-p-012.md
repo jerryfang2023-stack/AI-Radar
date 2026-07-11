@@ -34,15 +34,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding"]
+  track: ["track-ai-coding"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team"]
   evidence: ["evidence-customer-metric", "evidence-funding"]
-  stage: ["stage-rising"]
-  region: []
-  source: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["sales_team", "engineering_team"]

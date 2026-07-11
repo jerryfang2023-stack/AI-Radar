@@ -33,12 +33,8 @@ formal_tags:
   track: ["track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-logistics-supply-chain", "scenario-sales-briefing"]
-  customer: ["customer-enterprise"]
-  evidence: ["evidence-pricing-cost", "evidence-customer-metric", "evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
+  customer: []
+  evidence: ["evidence-pricing-cost", "evidence-customer-metric"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "operations_team", "sales_team"]

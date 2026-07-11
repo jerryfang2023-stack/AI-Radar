@@ -33,12 +33,8 @@ formal_tags:
   track: ["track-medical-ai", "track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-healthcare-operations", "scenario-sales-briefing"]
-  customer: ["customer-enterprise", "customer-healthcare-provider"]
+  customer: ["customer-healthcare-provider"]
   evidence: ["evidence-acquisition", "evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "healthcare_provider", "sales_team"]

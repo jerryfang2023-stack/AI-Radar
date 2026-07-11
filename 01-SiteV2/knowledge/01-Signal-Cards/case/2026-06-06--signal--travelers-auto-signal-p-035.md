@@ -30,15 +30,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-customer-service", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-customer-service", "track-ai-coding"]
   function: ["function-engineering", "function-customer-service"]
   scenario: ["scenario-insurance-claims", "scenario-customer-ticket"]
-  customer: ["customer-developer-team", "customer-enterprise"]
+  customer: ["customer-developer-team"]
   evidence: ["evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["insurance_team", "sales_team"]

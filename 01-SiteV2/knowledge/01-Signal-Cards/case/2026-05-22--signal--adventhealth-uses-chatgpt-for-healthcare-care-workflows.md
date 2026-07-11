@@ -50,16 +50,11 @@ frontend:
     - "https://openai.com/index/adventhealth/"
 
 formal_tags:
-  track: ["track-medical-ai", "track-ai-governance", "track-enterprise-workflow"]
+  track: ["track-medical-ai", "track-ai-governance"]
   function: ["function-operations", "function-legal-compliance"]
-  scenario: ["scenario-clinical-imaging", "scenario-agent-governance", "scenario-insurance-claims", "scenario-healthcare-operations"]
-  customer: ["customer-enterprise", "customer-healthcare-provider"]
+  scenario: ["scenario-clinical-imaging", "scenario-agent-governance"]
+  customer: ["customer-healthcare-provider"]
   evidence: ["evidence-customer-adoption", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-first-party"]
-  opinion: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "healthcare_provider", "it_security_team"]

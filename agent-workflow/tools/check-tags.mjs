@@ -1,6 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
-import { readTagTaxonomy, tagGroups, tagIdPattern } from "./tag-taxonomy-utils.mjs";
+import {
+  deprecatedTagIdPattern,
+  formalTagGroups,
+  isDeprecatedTagId,
+  readTagTaxonomy,
+  tagGroups,
+  tagIdPattern,
+} from "./tag-taxonomy-utils.mjs";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
@@ -30,6 +37,7 @@ const scriptNonTagLiterals = new Set([
   "opinion-intake",
   "opinion-translation",
   "source-artifact-dir",
+  "source-artifact",
   "source-artifacts",
   "source-backed-fill",
   "source-elastic-agrees-to-buy-crv-backed-deductiveai",
@@ -60,8 +68,13 @@ function tagIdsIn(text) {
   return unique(String(text || "").match(tagIdPattern) || []);
 }
 
+function deprecatedTagIdsIn(text) {
+  deprecatedTagIdPattern.lastIndex = 0;
+  return unique(String(text || "").match(deprecatedTagIdPattern) || []);
+}
+
 function quotedTagIdsIn(text) {
-  const pattern = new RegExp(`["'\`]((?:${tagGroups.join("|")})-[a-z0-9-]+)["'\`]`, "gu");
+  const pattern = /["'`]((?:track|function|scenario|customer|evidence|opinion|stage|region|source)-[a-z0-9-]+)["'`]/gu;
   return unique([...String(text || "").matchAll(pattern)].map((match) => match[1]));
 }
 
@@ -82,7 +95,7 @@ function scanScriptTags(knownIds) {
         file: target,
         line: lineFor(text, tag),
         tag,
-        known: knownIds.has(tag),
+        known: knownIds.has(tag) && !isDeprecatedTagId(tag),
       });
     }
   }
@@ -107,7 +120,12 @@ function extractNamedBlock(frontmatter, name) {
 }
 
 function hasFormalTags(frontmatter) {
-  return /^formal_tags:\s*$/mu.test(frontmatter) || /^tags:\s*\[/mu.test(frontmatter);
+  return /^formal_tags:\s*$/mu.test(frontmatter);
+}
+
+function groupValues(block, group) {
+  const line = String(block || "").match(new RegExp(`^\\s{2}${group}:\\s*(.*)$`, "mu"))?.[1] || "";
+  return tagIdsIn(line);
 }
 
 function frontmatterValue(frontmatter, key) {
@@ -118,10 +136,10 @@ function scanMarkdownTags(knownIds) {
   const files = markdownRoots.flatMap((dir) => walk(path.join(root, dir), (file) => file.endsWith(".md")));
   const rows = [];
   const missingFormalTags = [];
+  const contractViolations = [];
   const candidateTags = [];
   const formalRequiredTypes = new Set([
     "signal_card",
-    "opinion_card",
     "trend_candidate",
   ]);
 
@@ -131,16 +149,17 @@ function scanMarkdownTags(knownIds) {
     if (!frontmatter) continue;
 
     const type = frontmatterValue(frontmatter, "type") || frontmatterValue(frontmatter, "asset_type");
+    const isTemplate = rel(file).includes("/10-Templates/");
     const formalBlock = extractNamedBlock(frontmatter, "formal_tags");
     const genericTags = frontmatter.match(/^tags:\s*(.+)$/mu)?.[1] || "";
-    const formalIds = tagIdsIn(`${formalBlock}\n${genericTags}`);
+    const formalIds = unique([...tagIdsIn(`${formalBlock}\n${genericTags}`), ...deprecatedTagIdsIn(formalBlock)]);
 
     for (const tag of formalIds) {
       rows.push({
         file: rel(file),
         line: lineFor(text, tag),
         tag,
-        known: knownIds.has(tag),
+        known: knownIds.has(tag) && !isDeprecatedTagId(tag),
       });
     }
 
@@ -155,16 +174,41 @@ function scanMarkdownTags(knownIds) {
       });
     }
 
-    if (formalRequiredTypes.has(type) && !hasFormalTags(frontmatter)) {
+    if (!isTemplate && formalRequiredTypes.has(type) && !hasFormalTags(frontmatter)) {
       missingFormalTags.push({ file: rel(file), type });
+    }
+    if (formalBlock) {
+      for (const legacyGroup of ["stage", "region", "source", "opinion"]) {
+        if (new RegExp(`^\\s{2}${legacyGroup}:`, "mu").test(formalBlock)) {
+          contractViolations.push({ file: rel(file), issue: `retired formal_tags group: ${legacyGroup}` });
+        }
+      }
+      for (const group of formalTagGroups) {
+        const values = groupValues(formalBlock, group);
+        if (values.length > 2) contractViolations.push({ file: rel(file), issue: `${group} exceeds 2 tags` });
+        for (const tag of values) {
+          if (!tag.startsWith(`${group}-`)) contractViolations.push({ file: rel(file), issue: `${tag} stored under ${group}` });
+        }
+      }
+      if (!isTemplate && type === "signal_card") {
+        for (const required of ["track", "evidence"]) {
+          if (!groupValues(formalBlock, required).length) contractViolations.push({ file: rel(file), issue: `signal_card missing ${required}` });
+        }
+      }
+    }
+    if (!isTemplate && type === "opinion_card") {
+      const columnBlock = extractNamedBlock(frontmatter, "column_tags");
+      if (!columnBlock || !groupValues(columnBlock, "opinion").length) {
+        contractViolations.push({ file: rel(file), issue: "opinion_card missing column_tags.opinion" });
+      }
     }
   }
 
-  return { rows, missingFormalTags, candidateTags };
+  return { rows, missingFormalTags, candidateTags, contractViolations };
 }
 
 function isTagId(value = "") {
-  return typeof value === "string" && tagGroups.some((group) => value.startsWith(`${group}-`));
+  return typeof value === "string" && (tagGroups.some((group) => value.startsWith(`${group}-`)) || isDeprecatedTagId(value));
 }
 
 function collectSiteTags(value, rows = [], pathParts = []) {
@@ -203,7 +247,7 @@ function scanCurrentSiteData(knownIds) {
       file: rel(file),
       path: row.path,
       tag: row.tag,
-      known: knownIds.has(row.tag),
+      known: knownIds.has(row.tag) && !isDeprecatedTagId(row.tag),
     })));
   }
   return rows;
@@ -237,6 +281,8 @@ function main() {
     ...unknownScriptTags.map((row) => `script unknown tag: ${row.tag} (${row.file}:${row.line})`),
     ...unknownFormalTags.map((row) => `formal_tags unknown tag: ${row.tag} (${row.file}:${row.line})`),
     ...unknownSiteTags.map((row) => `current site data unknown tag: ${row.tag} (${row.file}:${row.path})`),
+    ...markdown.missingFormalTags.map((row) => `formal asset missing formal_tags: ${row.type} (${row.file})`),
+    ...markdown.contractViolations.map((row) => `${row.issue} (${row.file})`),
   ];
 
   const status = failed.length ? "failed" : "passed";
@@ -253,7 +299,8 @@ Generated at: ${now.toLocaleString("zh-CN", { hour12: false })}
 - Markdown formal_tags unknown tags: ${unknownFormalTags.length}
 - Current site data unknown tags: ${unknownSiteTags.length}
 - Unregistered candidate_tags: ${unknownCandidateTags.length} (reported only)
-- Formal assets missing formal_tags: ${markdown.missingFormalTags.length} (reported only)
+- Formal assets missing formal_tags: ${markdown.missingFormalTags.length}
+- Tag contract violations: ${markdown.contractViolations.length}
 
 ## Script Unknown Tags
 
@@ -274,6 +321,10 @@ ${table(["file", "line", "tag"], unknownCandidateTags.slice(0, 80))}
 ## Formal Assets Missing formal_tags
 
 ${table(["file", "type"], markdown.missingFormalTags.slice(0, 120))}
+
+## Tag Contract Violations
+
+${table(["file", "issue"], markdown.contractViolations.slice(0, 160))}
 `;
 
   fs.mkdirSync(reportsDir, { recursive: true });

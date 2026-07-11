@@ -40,14 +40,9 @@ related_case_status: needs_research
 formal_tags:
   track: ["track-ai-coding", "track-ai-governance"]
   function: ["function-engineering"]
-  scenario: ["scenario-knowledge-base", "scenario-logistics-supply-chain", "scenario-construction-real-estate"]
+  scenario: ["scenario-knowledge-base", "scenario-logistics-supply-chain"]
   customer: ["customer-developer-team"]
-  evidence: ["source-industry-data", "evidence-pricing-cost", "evidence-customer-metric"]
-  stage: []
-  region: ["region-global"]
-  source: ["source-industry-data"]
-  opinion: []
-
+  evidence: ["evidence-pricing-cost", "evidence-customer-metric"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: []

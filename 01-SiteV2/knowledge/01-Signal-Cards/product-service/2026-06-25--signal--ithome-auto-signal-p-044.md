@@ -34,11 +34,7 @@ formal_tags:
   function: []
   scenario: []
   customer: []
-  evidence: ["evidence-pricing-cost", "evidence-customer-metric", "evidence-product-launch"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
+  evidence: ["evidence-pricing-cost", "evidence-customer-metric"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: []

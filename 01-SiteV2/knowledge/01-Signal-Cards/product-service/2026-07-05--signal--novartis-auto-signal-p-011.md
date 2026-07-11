@@ -31,15 +31,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra", "track-medical-ai"]
+  track: ["track-medical-ai", "track-ai-infra"]
   function: []
   scenario: ["scenario-healthcare-operations"]
   customer: ["customer-healthcare-provider"]
   evidence: ["evidence-product-launch"]
-  stage: []
-  region: []
-  source: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["sales_team", "engineering_team", "healthcare_provider"]

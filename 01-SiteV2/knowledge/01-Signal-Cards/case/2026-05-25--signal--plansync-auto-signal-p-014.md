@@ -31,16 +31,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-coding", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-ai-coding", "track-enterprise-data"]
   function: ["function-engineering", "function-sales"]
-  scenario: ["scenario-knowledge-base", "scenario-sales-briefing", "scenario-construction-real-estate"]
-  customer: ["customer-developer-team", "customer-enterprise"]
-  evidence: ["evidence-customer-adoption", "evidence-partnership-integration", "evidence-pricing-cost"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
+  scenario: ["scenario-knowledge-base", "scenario-sales-briefing"]
+  customer: ["customer-developer-team"]
+  evidence: ["evidence-customer-adoption", "evidence-partnership-integration"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "sales_team"]

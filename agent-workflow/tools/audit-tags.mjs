@@ -1,22 +1,22 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { readTagTaxonomy } from "./tag-taxonomy-utils.mjs";
+import { formalTagGroups, isDeprecatedTagId, readTagTaxonomy } from "./tag-taxonomy-utils.mjs";
 import { OPPORTUNITY_SIGNAL_FIELDS } from "./opportunity-signals-utils.mjs";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const reportMd = path.join(reportsDir, "tag-v34-audit-latest.md");
-const reportJson = path.join(reportsDir, "tag-v34-audit-latest.json");
+const reportMd = path.join(reportsDir, "tag-system-audit-latest.md");
+const reportJson = path.join(reportsDir, "tag-system-audit-latest.json");
 const taxonomyFile = path.join(root, "agent-workflow", "product", "tag-taxonomy.md");
 const signalRoots = [
   path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "case"),
   path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "funding"),
   path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "product-service"),
 ];
-const frontstageAggregateMutedTagIds = new Set(["track-ai-agent", "customer-enterprise"]);
+const frontstageAggregateMutedTagIds = new Set();
 const frontstageDisplayTagLimit = 3;
-const firstLineAllowedGroups = new Set(["opinion", "track", "source"]);
+const firstLineAllowedGroups = new Set(["opinion", "track"]);
 const communityPrivateFields = ["scene", "industry", "tools", "monetization"];
 const communityBusinessTagFields = ["formalTags", "formal_tags", "flatTags", "displayTags", "tags"];
 
@@ -118,7 +118,7 @@ function topEntries(map, limit = 30) {
 }
 
 function isBackendOnlyTag(tag = "") {
-  return /^(source|region|stage)-/u.test(tag) || frontstageAggregateMutedTagIds.has(tag);
+  return isDeprecatedTagId(tag) || frontstageAggregateMutedTagIds.has(tag);
 }
 
 function isOpinionLikeTag(tag = "") {
@@ -145,9 +145,12 @@ function loadSignalCards() {
     const fm = frontmatter(text);
     if (!fm || scalar(fm, "type") !== "signal_card") continue;
     const tags = {};
-    for (const group of ["track", "function", "scenario", "customer", "evidence", "stage", "region", "source"]) {
+    for (const group of formalTagGroups) {
       tags[group] = nestedList(fm, "formal_tags", group);
     }
+    const deprecatedTags = ["stage", "region", "source"]
+      .flatMap((group) => nestedList(fm, "formal_tags", group))
+      .concat(Object.values(tags).flat().filter(isDeprecatedTagId));
     const opportunitySignals = {};
     for (const field of OPPORTUNITY_SIGNAL_FIELDS) {
       opportunitySignals[field] = nestedList(fm, "opportunity_signals", field);
@@ -162,6 +165,7 @@ function loadSignalCards() {
       title: scalar(fm, "title"),
       date: scalar(fm, "date"),
       tags,
+      deprecatedTags,
       opportunitySignals,
     });
   }
@@ -171,6 +175,8 @@ function loadSignalCards() {
 function preferredTrack(tags = []) {
   const priority = [
     "track-professional-services-ai",
+    "track-ai-science-research",
+    "track-creative-media-ai",
     "track-medical-ai",
     "track-embodied-ai",
     "track-ai-customer-service",
@@ -179,6 +185,8 @@ function preferredTrack(tags = []) {
     "track-enterprise-data",
     "track-ai-governance",
     "track-ai-infra",
+    "track-ai-models",
+    "track-ai-applications",
     "track-enterprise-workflow",
     "track-ai-agent",
   ];
@@ -200,11 +208,11 @@ function signalCardAudit(cards) {
     }
     if (!card.tags.track.length) missing.track += 1;
     if (!card.tags.evidence.length) missing.evidence += 1;
-    if (card.tags.track.length >= 4) multiTrack.push(card);
-    if (card.tags.stage.length) stageOnSignalCards.push(card);
-    if (card.tags.track.length > 3 || (card.tags.track.includes("track-ai-agent") && card.tags.track.length > 1)) {
+    if (card.tags.track.length > 2) multiTrack.push(card);
+    if (card.deprecatedTags.length) stageOnSignalCards.push(card);
+    if (card.tags.track.length > 2 || (card.tags.track.includes("track-ai-agent") && card.tags.track.length > 1)) {
       const primary = preferredTrack(card.tags.track);
-      const suggested = [primary, ...card.tags.track.filter((tag) => tag !== primary && tag !== "track-ai-agent")].slice(0, 3);
+      const suggested = [primary, ...card.tags.track.filter((tag) => tag !== primary && tag !== "track-ai-agent")].slice(0, 2);
       if (suggested.length && suggested.join("|") !== card.tags.track.join("|")) {
         trackTrimDryRun.push({
           file: card.file,
@@ -239,7 +247,7 @@ function signalCardAudit(cards) {
       file: card.file,
       id: card.id,
       title: card.title,
-      stage: card.tags.stage.join(", "),
+      stage: card.deprecatedTags.join(", "),
     })),
     trackTrimDryRunCount: trackTrimDryRun.length,
     trackTrimDryRun: trackTrimDryRun.slice(0, 80),
@@ -354,7 +362,7 @@ function followBuildersAudit() {
   for (const remark of data.remarks || []) {
     const groups = new Set();
     const invalidTags = [];
-    for (const tag of remark.formalTags || []) {
+    for (const tag of remark.columnTags || []) {
       increment(counts, tag.id || tag.name || "");
       if (tag.group) groups.add(tag.group);
       if (!firstLineAllowedGroups.has(tag.group)) invalidTags.push(`${tag.group}:${tag.id || tag.name || ""}`);
@@ -367,7 +375,7 @@ function followBuildersAudit() {
         invalidTags: invalidTags.join(", "),
       });
     }
-    const missing = [...firstLineAllowedGroups].filter((group) => !groups.has(group));
+    const missing = ["opinion"].filter((group) => !groups.has(group));
     if (missing.length) {
       missingRequiredRows.push({
         id: remark.id,
@@ -453,7 +461,7 @@ function renderMarkdown(payload) {
     count: row.count,
     coverage: `${Math.round(row.coverage * 100)}%`,
   }));
-  return `# V3.4 Tag System Audit
+  return `# Tag System Audit
 
 Generated at: ${payload.generatedAt}
 
@@ -463,7 +471,7 @@ Generated at: ${payload.generatedAt}
 - Taxonomy version: ${payload.taxonomy.version}
 - Signal Cards audited: ${payload.signalCards.total}
 - Multi-track Signal Cards: ${payload.signalCards.multiTrackCount}
-- Signal Cards carrying stage tags: ${payload.signalCards.stageOnSignalCardsCount}
+- Signal Cards carrying deprecated tags: ${payload.signalCards.stageOnSignalCardsCount}
 - Track cleanup dry-run rows: ${payload.signalCards.trackTrimDryRunCount}
 - Opportunity rows with overly broad fields: ${payload.opportunitySignals.broadRowsCount}
 - Frontstage display tag violations: ${payload.currentSite.displayTagViolationsCount || 0}
@@ -484,7 +492,7 @@ ${table(["group", "count"], Object.entries(payload.signalCards.missing).map(([gr
 
 ${table(["file", "id", "title", "tracks"], payload.signalCards.multiTrackSamples)}
 
-## Stage Tags On Signal Cards
+## Deprecated Tags On Signal Cards
 
 ${table(["file", "id", "title", "stage"], payload.signalCards.stageOnSignalCardsSamples)}
 
@@ -556,11 +564,11 @@ ${table(["id", "title", "fields"], payload.community.businessTagLeakRows || [])}
 
 ## Recommended Cleanup Policy
 
-- Treat track-ai-agent as domain background when it appears with a more specific track.
-- Keep no more than 3 track tags per Signal Card; prefer the most specific vertical or workflow track.
-- Keep stage tags out of ordinary Signal Card frontstage display and aggregation.
+- Keep track-ai-agent only when the agent mechanism is commercially material; remove it beside a more specific track when it is background context.
+- Keep no more than 2 tags per formal group and prefer source-near, specific labels.
+- Keep source, region, and trend state in structured fields instead of formal_tags.
 - Keep Reports Center opportunity maps on source-backed opportunity_signals, not formal_tags.
-- Keep First-Line Viewpoints on private opinion / track / source tags.
+- Keep First-Line Viewpoints on private columnTags (opinion / track) plus sourceType metadata.
 - Keep Community Intelligence on private scene / industry / tools / monetization labels.
 - Review opportunity rows with more than 3 values in any field before using them for map cells.
 `;

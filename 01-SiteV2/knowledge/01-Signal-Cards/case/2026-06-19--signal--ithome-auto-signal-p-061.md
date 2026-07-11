@@ -30,15 +30,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-coding", "track-ai-governance", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-governance"]
   function: ["function-engineering"]
   scenario: ["scenario-agent-governance"]
-  customer: ["customer-developer-team", "customer-enterprise"]
-  evidence: ["evidence-pricing-cost", "evidence-customer-metric", "evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
+  customer: ["customer-developer-team"]
+  evidence: ["evidence-pricing-cost", "evidence-customer-metric"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]

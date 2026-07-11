@@ -32,13 +32,9 @@ primary_raw:
 formal_tags:
   track: ["track-enterprise-data", "track-enterprise-workflow"]
   function: ["function-finance", "function-sales"]
-  scenario: ["scenario-knowledge-base", "scenario-insurance-claims", "scenario-sales-briefing"]
-  customer: ["customer-enterprise"]
+  scenario: ["scenario-knowledge-base", "scenario-insurance-claims"]
+  customer: []
   evidence: ["evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "insurance_team", "sales_team"]

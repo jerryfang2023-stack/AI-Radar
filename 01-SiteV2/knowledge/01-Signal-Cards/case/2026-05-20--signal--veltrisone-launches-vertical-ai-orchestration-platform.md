@@ -51,14 +51,9 @@ frontend:
 formal_tags:
   track: ["track-medical-ai", "track-enterprise-workflow"]
   function: ["function-finance"]
-  scenario: ["scenario-clinical-imaging", "scenario-insurance-claims", "scenario-healthcare-operations"]
-  customer: ["customer-enterprise", "customer-healthcare-provider"]
-  evidence: ["evidence-customer-adoption", "evidence-partnership-integration", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
+  scenario: ["scenario-clinical-imaging", "scenario-insurance-claims"]
+  customer: ["customer-healthcare-provider"]
+  evidence: ["evidence-customer-adoption", "evidence-partnership-integration"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "healthcare_provider", "insurance_team"]
