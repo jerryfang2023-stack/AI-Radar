@@ -139,11 +139,12 @@ if (payload) {
     }
     if (!remark?.observation) problems.push(`${prefix} missing observation`);
 
-    const tags = Array.isArray(remark?.formalTags) ? remark.formalTags : [];
+    const tags = Array.isArray(remark?.columnTags) ? remark.columnTags : [];
     const groups = tagGroups(tags);
-    for (const requiredGroup of ["opinion", "track", "source"]) {
+    for (const requiredGroup of ["opinion"]) {
       if (!groups.has(requiredGroup)) problems.push(`${prefix} missing ${requiredGroup} tag`);
     }
+    if (!remark?.sourceType) problems.push(`${prefix} missing sourceType metadata`);
     for (const tag of tags) {
       const active = tagIndex.byId.get(tag.id);
       if (!active) {

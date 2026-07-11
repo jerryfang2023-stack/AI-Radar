@@ -49,16 +49,11 @@ frontend:
     - "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies"
 
 formal_tags:
-  track: ["track-ai-coding", "track-ai-governance", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-governance"]
   function: ["function-engineering", "function-legal-compliance"]
   scenario: ["scenario-agent-governance"]
-  customer: ["customer-developer-team", "customer-enterprise"]
+  customer: ["customer-developer-team"]
   evidence: ["evidence-funding", "evidence-partnership-integration"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]

@@ -55,7 +55,7 @@
         item.text,
         item.translation,
         item.topic,
-        ...(item.formalTags || []).flatMap((tag) => [tag.name, tag.group]),
+        ...(item.columnTags || []).flatMap((tag) => [tag.name, tag.group]),
       ].join(" ").toLowerCase();
       if (!options.ignoreBuilder && state.activeBuilder !== "all" && item.handle !== state.activeBuilder) return false;
       if (state.filters.date !== "all" && canonicalDate(item) !== state.filters.date) return false;
@@ -208,7 +208,7 @@
   }
 
   function tagChips(item, limit = 4) {
-    const tags = (item.formalTags || []).filter((tag) => tag?.name).slice(0, limit);
+    const tags = (item.columnTags || []).filter((tag) => tag?.name).slice(0, limit);
     if (!tags.length) return "";
     return `
       <div class="formal-tag-row" aria-label="观澜标签">

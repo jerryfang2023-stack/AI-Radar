@@ -24,16 +24,13 @@ frontend:
 related_signal_cards: ["SIG-20260520-01", "SIG-20260520-02", "SIG-20260521-02", "SIG-20260521-05", "SIG-20260521-07"]
 related_opinion_cards: ["OPN-20260520-01", "OPN-20260521-01"]
 
+trend_state: rising
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data", "track-ai-infra", "track-ai-governance"]
+  track: ["track-enterprise-data", "track-ai-governance"]
   function: ["function-operations", "function-legal-compliance"]
   scenario: ["scenario-knowledge-base", "scenario-agent-governance"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-customer-adoption"]
-  stage: ["stage-watch", "stage-rising"]
-  region: []
-  source: []
-  opinion: []
 ---
 
 # 企业 Agent 的预算和工作流信号开始积累

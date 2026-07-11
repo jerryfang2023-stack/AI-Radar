@@ -30,15 +30,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-medical-ai"]
+  track: ["track-medical-ai", "track-enterprise-workflow"]
   function: ["function-finance"]
   scenario: ["scenario-healthcare-operations"]
-  customer: ["customer-enterprise", "customer-healthcare-provider"]
-  evidence: ["evidence-partnership-integration", "evidence-customer-metric", "evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: []
-
+  customer: ["customer-healthcare-provider"]
+  evidence: ["evidence-partnership-integration", "evidence-customer-metric"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["finance_team", "healthcare_provider", "operations_team"]

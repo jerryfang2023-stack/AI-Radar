@@ -33,12 +33,8 @@ formal_tags:
   track: ["track-ai-customer-service", "track-enterprise-workflow"]
   function: ["function-customer-service"]
   scenario: ["scenario-customer-ticket"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-product-launch"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner"]

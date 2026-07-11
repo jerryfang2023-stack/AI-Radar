@@ -53,13 +53,8 @@ formal_tags:
   track: ["track-enterprise-workflow"]
   function: ["function-finance", "function-operations"]
   scenario: ["scenario-construction-real-estate", "scenario-revenue-operations"]
-  customer: ["customer-enterprise"]
-  evidence: ["evidence-customer-adoption", "evidence-pricing-cost", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
+  customer: []
+  evidence: ["evidence-customer-adoption", "evidence-pricing-cost"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: []

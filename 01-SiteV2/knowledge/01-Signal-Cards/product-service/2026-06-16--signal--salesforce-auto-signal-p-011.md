@@ -30,15 +30,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-customer-service", "track-ai-infra", "track-enterprise-workflow"]
+  track: ["track-ai-customer-service", "track-ai-infra"]
   function: ["function-customer-service", "function-sales"]
   scenario: ["scenario-customer-ticket", "scenario-sales-briefing"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-acquisition", "evidence-product-launch"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["customer_support_team", "engineering_team", "sales_team"]

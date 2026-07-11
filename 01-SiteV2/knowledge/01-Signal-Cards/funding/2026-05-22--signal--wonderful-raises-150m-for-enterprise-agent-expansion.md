@@ -51,14 +51,9 @@ frontend:
 formal_tags:
   track: ["track-ai-marketing", "track-enterprise-workflow"]
   function: ["function-marketing", "function-procurement-bidding"]
-  scenario: ["scenario-bidding-response", "scenario-logistics-supply-chain", "scenario-revenue-operations"]
-  customer: ["customer-enterprise"]
-  evidence: ["evidence-funding", "evidence-partnership-integration", "evidence-pricing-cost"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
+  scenario: ["scenario-bidding-response", "scenario-logistics-supply-chain"]
+  customer: []
+  evidence: ["evidence-funding", "evidence-partnership-integration"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "healthcare_provider"]

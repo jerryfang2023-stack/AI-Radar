@@ -33,12 +33,8 @@ formal_tags:
   track: ["track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: []
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-partnership-integration", "evidence-product-launch"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: []

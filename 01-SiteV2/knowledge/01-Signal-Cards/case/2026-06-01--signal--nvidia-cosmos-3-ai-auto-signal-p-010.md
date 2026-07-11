@@ -34,13 +34,8 @@ formal_tags:
   track: ["track-ai-infra"]
   function: ["function-engineering"]
   scenario: ["scenario-model-deployment", "scenario-logistics-supply-chain"]
-  customer: ["customer-developer-team", "customer-enterprise"]
+  customer: ["customer-developer-team"]
   evidence: ["evidence-product-launch", "evidence-partnership-integration"]
-  stage: []
-  region: []
-  source: ["source-first-party"]
-  opinion: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "operations_team", "sales_team"]

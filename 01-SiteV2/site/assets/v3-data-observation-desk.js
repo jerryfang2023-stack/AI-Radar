@@ -354,7 +354,6 @@
         if (card.category === "case") score += 28;
         if (card.category === "product-service") score += 16;
         if (tags.includes("track-enterprise-workflow")) score += 24;
-        if (tags.includes("customer-enterprise")) score += 18;
         if (tags.includes("evidence-customer-adoption")) score += 18;
         if (/FDE|forward deployed|customer-embedded|domain operator|production environment|regulated payer workflow|implementation|workflow|deployment|rollout|customer adoption|business process|技术实施|客户嵌入|生产环境|业务流程|实施|部署|落地/iu.test(text)) score += 48;
         if (/enterprise|workflow|customer|deployment|procurement|governance|integration|automation|企业|流程|客户|部署|采购|治理|集成|自动化/iu.test(text)) score += 24;

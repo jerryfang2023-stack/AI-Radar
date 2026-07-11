@@ -27,10 +27,6 @@ formal_tags:
   scenario: []
   customer: []
   evidence: []
-  stage: []
-  region: []
-  source: []
-  opinion: []
 ---
 
 # {{title}}

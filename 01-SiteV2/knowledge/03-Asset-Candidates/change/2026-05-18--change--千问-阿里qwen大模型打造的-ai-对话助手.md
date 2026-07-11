@@ -57,15 +57,11 @@ technical_route_business_meaning: "方法变化在于把模型放进连续流程
 same_or_adjacent_cases: "关联案例：`CASE-20260518-03`。"
 related_case_status: linked
 formal_tags:
-  track: ["track-ai-coding", "track-ai-agent"]
+  track: ["track-ai-coding"]
   function: ["function-engineering"]
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-developer-team"]
-  evidence: ["source-industry-data"]
-  stage: ["stage-watch"]
-  region: ["region-global"]
-  source: ["source-industry-data"]
-  opinion: []
+  evidence: []
 related_case_cards: ["CASE-20260518-03"]
 related_opinion_cards: []
 related_trend_cards: []

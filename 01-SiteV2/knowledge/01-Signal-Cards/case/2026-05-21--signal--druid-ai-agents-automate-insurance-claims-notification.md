@@ -50,16 +50,11 @@ frontend:
     - "https://www.druidai.com/case-studies/insurer-automates-claims-with-druid-ai-agents"
 
 formal_tags:
-  track: ["track-enterprise-data", "track-ai-governance", "track-enterprise-workflow"]
-  function: ["function-finance", "function-sales", "function-operations", "function-legal-compliance"]
-  scenario: ["scenario-knowledge-base", "scenario-sales-briefing", "scenario-agent-governance", "scenario-insurance-claims", "scenario-revenue-operations"]
-  customer: ["customer-enterprise"]
+  track: ["track-enterprise-data", "track-ai-governance"]
+  function: ["function-finance", "function-sales"]
+  scenario: ["scenario-knowledge-base", "scenario-sales-briefing"]
+  customer: []
   evidence: ["evidence-customer-adoption", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "insurance_team", "sales_team"]

@@ -34,13 +34,8 @@ formal_tags:
   track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering", "function-finance"]
   scenario: ["scenario-coding-agent", "scenario-payments"]
-  customer: ["customer-enterprise"]
-  evidence: ["evidence-customer-adoption", "evidence-partnership-integration", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-  opinion: []
-
+  customer: []
+  evidence: ["evidence-customer-adoption", "evidence-partnership-integration"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["engineering_team", "finance_team", "sales_team"]

@@ -50,15 +50,10 @@ frontend:
 
 formal_tags:
   track: ["track-enterprise-workflow"]
-  function: ["function-procurement-bidding", "function-finance", "function-operations"]
-  scenario: ["scenario-bidding-response", "scenario-logistics-supply-chain", "scenario-revenue-operations", "scenario-healthcare-operations"]
-  customer: ["customer-enterprise"]
+  function: ["function-procurement-bidding", "function-finance"]
+  scenario: ["scenario-bidding-response", "scenario-logistics-supply-chain"]
+  customer: []
   evidence: ["evidence-customer-adoption", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-first-party"]
-  opinion: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["finance_team", "procurement_team", "sales_team"]

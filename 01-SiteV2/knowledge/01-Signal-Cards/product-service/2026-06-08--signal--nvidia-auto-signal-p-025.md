@@ -35,10 +35,6 @@ formal_tags:
   scenario: ["scenario-construction-real-estate"]
   customer: []
   evidence: ["evidence-partnership-integration", "evidence-product-launch"]
-  stage: []
-  region: []
-  source: ["source-first-party"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner"]

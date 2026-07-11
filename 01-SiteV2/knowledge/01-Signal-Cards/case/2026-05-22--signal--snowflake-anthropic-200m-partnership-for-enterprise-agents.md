@@ -49,16 +49,11 @@ frontend:
     - "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership"
 
 formal_tags:
-  track: ["track-ai-coding", "track-enterprise-data", "track-ai-infra"]
-  function: ["function-engineering", "function-procurement-bidding", "function-sales"]
-  scenario: ["scenario-knowledge-base", "scenario-bidding-response", "scenario-sales-briefing", "scenario-logistics-supply-chain", "scenario-construction-real-estate", "scenario-revenue-operations"]
-  customer: ["customer-developer-team", "customer-enterprise"]
-  evidence: ["evidence-customer-adoption", "evidence-partnership-integration", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-first-party"]
-  opinion: []
-
+  track: ["track-ai-coding", "track-enterprise-data"]
+  function: ["function-engineering", "function-procurement-bidding"]
+  scenario: ["scenario-knowledge-base", "scenario-bidding-response"]
+  customer: ["customer-developer-team"]
+  evidence: ["evidence-customer-adoption", "evidence-partnership-integration"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["engineering_team", "enterprise_ai_owner", "sales_team"]

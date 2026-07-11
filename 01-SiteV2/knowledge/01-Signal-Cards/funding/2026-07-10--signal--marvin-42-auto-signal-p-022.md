@@ -35,15 +35,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: []
   scenario: []
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
-  region: []
-  source: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["insurance_team"]

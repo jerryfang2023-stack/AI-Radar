@@ -33,12 +33,8 @@ formal_tags:
   track: ["track-ai-customer-service", "track-enterprise-workflow"]
   function: ["function-customer-service"]
   scenario: ["scenario-logistics-supply-chain", "scenario-customer-ticket"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["healthcare_provider", "operations_team", "sales_team"]

@@ -57,15 +57,11 @@ technical_route_business_meaning: "方法变化在于把模型放进连续流程
 same_or_adjacent_cases: "暂未监测到同类案例"
 related_case_status: needs_research
 formal_tags:
-  track: ["track-ai-coding", "track-ai-agent"]
+  track: ["track-ai-coding"]
   function: ["function-engineering"]
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-developer-team"]
-  evidence: ["source-business-media"]
-  stage: ["stage-watch"]
-  region: ["region-global"]
-  source: ["source-business-media"]
-  opinion: []
+  evidence: []
 related_case_cards: []
 related_opinion_cards: []
 related_trend_cards: []

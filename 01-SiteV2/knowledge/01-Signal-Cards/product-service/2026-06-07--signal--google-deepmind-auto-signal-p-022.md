@@ -35,10 +35,6 @@ formal_tags:
   scenario: []
   customer: []
   evidence: ["evidence-product-launch"]
-  stage: []
-  region: []
-  source: ["source-first-party"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner"]

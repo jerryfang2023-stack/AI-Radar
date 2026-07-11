@@ -30,15 +30,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: ["function-finance"]
   scenario: []
   customer: []
   evidence: ["evidence-product-launch"]
-  stage: []
-  region: []
-  source: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["sales_team", "finance_team"]

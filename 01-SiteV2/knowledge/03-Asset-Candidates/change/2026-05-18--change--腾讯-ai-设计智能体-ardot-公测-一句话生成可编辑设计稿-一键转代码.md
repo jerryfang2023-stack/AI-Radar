@@ -57,15 +57,11 @@ technical_route_business_meaning: "商业含义不是多一个技术名词，而
 same_or_adjacent_cases: "暂未监测到同类案例"
 related_case_status: needs_research
 formal_tags:
-  track: ["track-ai-coding", "track-ai-agent", "track-ai-governance"]
+  track: ["track-ai-coding", "track-ai-governance"]
   function: ["function-engineering"]
   scenario: ["scenario-agent-governance"]
-  customer: ["customer-enterprise"]
-  evidence: ["source-industry-data"]
-  stage: ["stage-watch"]
-  region: ["region-global"]
-  source: ["source-industry-data"]
-  opinion: []
+  customer: []
+  evidence: []
 related_case_cards: []
 related_opinion_cards: []
 related_trend_cards: []

@@ -30,15 +30,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-customer-service", "track-ai-coding", "track-enterprise-data"]
+  track: ["track-ai-customer-service", "track-ai-coding"]
   function: ["function-engineering", "function-customer-service"]
-  scenario: ["scenario-knowledge-base", "scenario-construction-real-estate", "scenario-customer-ticket"]
-  customer: ["customer-developer-team", "customer-enterprise"]
-  evidence: ["evidence-partnership-integration", "evidence-pricing-cost", "evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
+  scenario: ["scenario-knowledge-base", "scenario-construction-real-estate"]
+  customer: ["customer-developer-team"]
+  evidence: ["evidence-partnership-integration", "evidence-pricing-cost"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["it_security_team"]

@@ -35,10 +35,6 @@ formal_tags:
   scenario: []
   customer: []
   evidence: ["evidence-funding"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["insurance_team", "sales_team"]

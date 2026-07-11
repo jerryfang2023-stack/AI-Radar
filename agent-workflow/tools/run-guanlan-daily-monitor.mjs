@@ -268,33 +268,23 @@ function themeLabel(themeId) {
 }
 
 const themeTagHints = {
-  "mature-commercial-signal": ["stage-mature", "evidence-customer-adoption", "track-enterprise-workflow"],
-  "early-direction-signal": ["stage-rising", "evidence-funding"],
-  "technical-iteration-signal": ["track-ai-infra", "track-ai-governance", "stage-watch"],
-  "developer-ecosystem-signal": ["track-ai-coding", "track-ai-infra", "stage-watch"],
-  "outside-core-exploration": ["stage-watch"],
+  "mature-commercial-signal": ["evidence-customer-adoption", "track-enterprise-workflow"],
+  "early-direction-signal": ["evidence-funding"],
+  "technical-iteration-signal": ["track-ai-infra", "track-ai-governance"],
+  "developer-ecosystem-signal": ["track-ai-coding", "track-ai-infra"],
+  "outside-core-exploration": [],
   "enterprise-agent-governance": ["track-ai-agent", "track-ai-governance", "track-enterprise-workflow"],
-  "model-capability-cost": ["track-ai-infra", "stage-watch"],
+  "model-capability-cost": ["track-ai-models", "track-ai-infra"],
   "infra-devtools-open-source": ["track-ai-coding", "track-ai-infra"],
-  "vertical-customer-adoption": ["customer-enterprise", "evidence-customer-adoption"],
-  "funding-vc-market": ["evidence-funding", "stage-rising"],
-  "risk-regulation-counterevidence": ["stage-risk", "evidence-regulation"],
-  "china-local-market": ["region-china", "stage-watch"],
+  "vertical-customer-adoption": ["evidence-customer-adoption"],
+  "funding-vc-market": ["evidence-funding"],
+  "risk-regulation-counterevidence": ["evidence-regulation"],
+  "china-local-market": [],
 };
-
-function sourceTagForItem(item) {
-  if (["funding", "marketplace", "industry", "web"].includes(item.source_type)) return "source-industry-data";
-  if (["official", "registry"].includes(item.source_type)) return "source-first-party";
-  if (["media", "research"].includes(item.source_type)) return "source-business-media";
-  if (["blog", "podcast"].includes(item.source_type)) return `source-${item.source_type}`;
-  return "source-social";
-}
 
 function tagHintsForItem(item) {
   const tags = [
-    ...(themeTagHints[item.theme] || ["track-ai-agent"]),
-    "stage-watch",
-    sourceTagForItem(item),
+    ...(themeTagHints[item.theme] || []),
   ];
   return [...new Set(tags)];
 }
@@ -340,41 +330,26 @@ function opinionFormalTagsForItem(item = {}) {
     add("opinion", "opinion-product-strategy");
   }
 
-  if (!track.length) track.push("track-ai-agent");
-  if (!opinion.length) opinion.push("opinion-product-strategy");
-
-  const source = /podcast|youtube|spotify|apple podcasts/iu.test(text)
-    ? ["source-podcast"]
+  const sourceType = /podcast|youtube|spotify|apple podcasts/iu.test(text)
+    ? "podcast"
     : /blog/iu.test(text)
-      ? ["source-blog"]
-      : ["source-social"];
+      ? "blog"
+      : "social";
 
   return {
     track,
-    function: [],
-    scenario: [],
-    customer: [],
-    evidence: [],
-    stage: [],
-    region: [],
-    source,
     opinion,
+    sourceType,
   };
 }
 
 function opinionFormalTagsBlock(item = {}) {
   const formalTags = opinionFormalTagsForItem(item);
   return [
-    "formal_tags:",
+    "column_tags:",
     `  track: ${tagArray(formalTags.track)}`,
-    `  function: ${tagArray(formalTags.function)}`,
-    `  scenario: ${tagArray(formalTags.scenario)}`,
-    `  customer: ${tagArray(formalTags.customer)}`,
-    `  evidence: ${tagArray(formalTags.evidence)}`,
-    `  stage: ${tagArray(formalTags.stage)}`,
-    `  region: ${tagArray(formalTags.region)}`,
-    `  source: ${tagArray(formalTags.source)}`,
     `  opinion: ${tagArray(formalTags.opinion)}`,
+    `source_type: ${JSON.stringify(formalTags.sourceType)}`,
   ];
 }
 

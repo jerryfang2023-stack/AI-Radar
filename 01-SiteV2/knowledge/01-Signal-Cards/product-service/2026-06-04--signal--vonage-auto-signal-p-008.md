@@ -37,16 +37,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-medical-ai", "track-ai-infra", "track-enterprise-workflow"]
+  track: ["track-medical-ai", "track-ai-infra"]
   function: ["function-sales"]
-  scenario: ["scenario-clinical-imaging", "scenario-sales-briefing", "scenario-revenue-operations", "scenario-healthcare-operations"]
-  customer: ["customer-enterprise", "customer-healthcare-provider"]
-  evidence: ["evidence-product-launch", "evidence-partnership-integration", "evidence-pricing-cost"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-  opinion: []
-
+  scenario: ["scenario-clinical-imaging", "scenario-sales-briefing"]
+  customer: ["customer-healthcare-provider"]
+  evidence: ["evidence-product-launch", "evidence-partnership-integration"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "healthcare_provider", "sales_team"]

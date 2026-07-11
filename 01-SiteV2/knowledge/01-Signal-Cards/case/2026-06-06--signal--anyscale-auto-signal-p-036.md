@@ -32,13 +32,9 @@ primary_raw:
 formal_tags:
   track: ["track-ai-customer-service", "track-enterprise-data"]
   function: ["function-customer-service"]
-  scenario: ["scenario-knowledge-base", "scenario-construction-real-estate", "scenario-customer-ticket"]
+  scenario: ["scenario-knowledge-base", "scenario-construction-real-estate"]
   customer: []
   evidence: ["evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["customer_support_team", "engineering_team", "sales_team"]

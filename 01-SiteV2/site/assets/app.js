@@ -1202,8 +1202,7 @@ function isBuilderPoint(point) {
   if (user) return true;
   const path = String(point?.sourcePath || point?.source_path || "");
   if (/follow-builders/i.test(path)) return true;
-  const tags = (point?.tags || []).map((t) => t.id || t.name || "").join(" ");
-  return /source-social|builder/i.test(tags);
+  return false;
 }
 
 function isFollowBuilderPoint(point) {
@@ -1395,8 +1394,6 @@ const signalTagFilterIds = [
   "track-ai-agent",
   "track-enterprise-workflow",
   "evidence-customer-adoption",
-  "source-first-party",
-  "stage-risk",
   "opinion-agent-workflow",
 ];
 

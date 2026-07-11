@@ -34,13 +34,8 @@ formal_tags:
   track: ["track-ai-infra", "track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing", "scenario-revenue-operations"]
-  customer: ["customer-enterprise"]
-  evidence: ["evidence-product-launch", "evidence-partnership-integration", "evidence-pricing-cost"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-  opinion: []
-
+  customer: []
+  evidence: ["evidence-product-launch", "evidence-partnership-integration"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "sales_team"]

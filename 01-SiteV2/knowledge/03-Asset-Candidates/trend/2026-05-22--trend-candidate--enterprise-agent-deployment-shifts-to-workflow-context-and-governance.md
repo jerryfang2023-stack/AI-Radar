@@ -24,16 +24,13 @@ frontend:
 related_signal_cards: ["SIG-20260522-02", "SIG-20260522-04", "SIG-20260522-05", "SIG-20260522-06", "SIG-20260522-07"]
 related_opinion_cards: ["OPN-20260522-01"]
 
+trend_state: rising
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data", "track-ai-infra", "track-ai-governance"]
+  track: ["track-enterprise-data", "track-ai-governance"]
   function: ["function-legal-compliance"]
   scenario: ["scenario-knowledge-base", "scenario-agent-governance"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-customer-adoption"]
-  stage: ["stage-watch", "stage-rising"]
-  region: []
-  source: []
-  opinion: []
 ---
 
 # 企业 Agent 部署问题转向流程上下文和治理

@@ -30,15 +30,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-customer-service", "track-ai-infra", "track-enterprise-workflow"]
+  track: ["track-ai-customer-service", "track-ai-infra"]
   function: ["function-procurement-bidding", "function-customer-service"]
   scenario: ["scenario-bidding-response", "scenario-customer-ticket"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-customer-metric", "evidence-product-launch"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner"]

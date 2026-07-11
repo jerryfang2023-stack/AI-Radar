@@ -34,11 +34,7 @@ formal_tags:
   function: []
   scenario: ["scenario-agent-governance"]
   customer: []
-  evidence: ["evidence-pricing-cost", "evidence-customer-metric", "evidence-product-launch"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-
+  evidence: ["evidence-pricing-cost", "evidence-customer-metric"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner"]

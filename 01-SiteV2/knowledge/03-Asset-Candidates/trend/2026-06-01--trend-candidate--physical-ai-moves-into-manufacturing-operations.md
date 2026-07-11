@@ -26,16 +26,14 @@ frontend:
 related_signal_cards: ["SIG-20260601-A10", "SIG-20260601-A03"]
 related_opinion_cards: []
 
+trend_state: rising
+market_regions: ["asia"]
 formal_tags:
   track: ["track-ai-infra", "track-enterprise-workflow"]
   function: ["function-operations", "function-engineering"]
   scenario: ["scenario-manufacturing-ops", "scenario-model-deployment"]
-  customer: ["customer-enterprise", "customer-developer-team"]
+  customer: ["customer-developer-team"]
   evidence: ["evidence-product-launch", "evidence-customer-adoption"]
-  stage: ["stage-watch", "stage-rising"]
-  region: ["region-asia"]
-  source: ["source-first-party"]
-  opinion: []
 ---
 
 # 物理 AI 开始从模型发布进入制造现场

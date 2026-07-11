@@ -51,7 +51,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current Enterprise AI / FDE lens version: EAI-V1.2.0-raw-card-ingestion-boundary.
 - Current Reports Center / Intelligence Map column version: IMAP-V2.0.0-report-center-opportunity-system.
 - Current Business Signals data contract: V3.3.6.3 business source artifact aggregation.
-- Current tag taxonomy version: TAG-V1.1.0-v34-layered-taxonomy.
+- Current tag taxonomy version: TAG-V2.0.0-semantic-boundaries.
 - Current core rule source: `context/07-v3-intelligence-generation-rules.md`.
 - V2 website pages and old four-column output rules are retired.
 

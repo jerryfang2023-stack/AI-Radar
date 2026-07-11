@@ -53,13 +53,8 @@ formal_tags:
   track: ["track-enterprise-workflow"]
   function: ["function-operations"]
   scenario: ["scenario-logistics-supply-chain"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-first-party"]
-  opinion: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["operations_team"]

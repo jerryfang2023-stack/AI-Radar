@@ -50,16 +50,11 @@ frontend:
     - "https://adoption.microsoft.com/en-us/ai-transformation-stories/ltm/"
 
 formal_tags:
-  track: ["track-enterprise-data", "track-ai-infra", "track-enterprise-workflow"]
+  track: ["track-enterprise-data", "track-ai-infra"]
   function: ["function-sales", "function-operations"]
-  scenario: ["scenario-knowledge-base", "scenario-sales-briefing", "scenario-revenue-operations"]
-  customer: ["customer-enterprise"]
-  evidence: ["evidence-customer-adoption", "evidence-partnership-integration", "evidence-customer-metric"]
-  stage: []
-  region: []
-  source: ["source-first-party"]
-  opinion: []
-
+  scenario: ["scenario-knowledge-base", "scenario-sales-briefing"]
+  customer: []
+  evidence: ["evidence-customer-adoption", "evidence-partnership-integration"]
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "sales_team"]

@@ -23,16 +23,13 @@ boundary_notes: []
 next_observation:
 missing_information: []
 
+trend_state: watch
 formal_tags:
   track: []
   function: []
   scenario: []
   customer: []
   evidence: []
-  stage: []
-  region: []
-  source: []
-  opinion: []
 ---
 
 # {{title}}

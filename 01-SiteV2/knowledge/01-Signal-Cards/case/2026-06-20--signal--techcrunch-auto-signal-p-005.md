@@ -30,15 +30,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-medical-ai", "track-ai-infra", "track-enterprise-workflow"]
+  track: ["track-medical-ai", "track-ai-infra"]
   function: []
   scenario: ["scenario-healthcare-operations"]
-  customer: ["customer-enterprise", "customer-healthcare-provider"]
+  customer: ["customer-healthcare-provider"]
   evidence: ["evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-business-media"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "healthcare_provider", "smb_owner"]

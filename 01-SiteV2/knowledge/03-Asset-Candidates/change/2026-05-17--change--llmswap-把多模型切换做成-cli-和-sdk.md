@@ -60,15 +60,11 @@ technical_route_business_meaning: "商业含义不是多一个技术名词，而
 same_or_adjacent_cases: "关联案例：`CASE-20260517-01`。"
 related_case_status: linked
 formal_tags:
-  track: ["track-ai-coding", "track-ai-agent"]
+  track: ["track-ai-coding"]
   function: ["function-engineering"]
   scenario: ["scenario-knowledge-base"]
-  customer: ["customer-enterprise"]
-  evidence: ["source-industry-data"]
-  stage: ["stage-watch"]
-  region: ["region-global"]
-  source: ["source-industry-data"]
-  opinion: []
+  customer: []
+  evidence: []
 related_case_cards: ["CASE-20260517-01"]
 related_opinion_cards: []
 related_trend_cards: []

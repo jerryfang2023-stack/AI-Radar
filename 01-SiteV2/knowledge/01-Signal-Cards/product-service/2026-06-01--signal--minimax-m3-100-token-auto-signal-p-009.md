@@ -36,11 +36,6 @@ formal_tags:
   scenario: ["scenario-coding-agent", "scenario-construction-real-estate"]
   customer: ["customer-developer-team"]
   evidence: ["evidence-product-launch", "evidence-pricing-cost"]
-  stage: []
-  region: ["region-china"]
-  source: ["source-industry-data"]
-  opinion: []
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]

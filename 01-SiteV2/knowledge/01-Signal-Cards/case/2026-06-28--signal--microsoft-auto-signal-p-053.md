@@ -33,12 +33,8 @@ formal_tags:
   track: ["track-enterprise-workflow"]
   function: []
   scenario: ["scenario-insurance-claims"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-customer-adoption"]
-  stage: []
-  region: []
-  source: ["source-first-party"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "insurance_team"]

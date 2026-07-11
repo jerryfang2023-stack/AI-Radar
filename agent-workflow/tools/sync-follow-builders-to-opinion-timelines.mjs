@@ -174,7 +174,8 @@ function collectPointRecords() {
       contentTranslation: body,
       snapshotDate,
       snapshotHash: `points-file:${path.basename(absolutePointsFile)}`,
-      formalTags: [{ name: "follow-builders skill" }],
+      columnTags: [],
+      sourceType: "social",
     });
   }
   records.sort((a, b) => {
@@ -268,9 +269,9 @@ function loadSnapshot(commit) {
   return Array.isArray(payload.remarks) ? payload.remarks : [];
 }
 
-function formalTags(record) {
-  if (!Array.isArray(record.formalTags)) return "未标注";
-  const names = record.formalTags.map((tag) => tag?.name).filter(Boolean);
+function columnTags(record) {
+  if (!Array.isArray(record.columnTags)) return "未标注";
+  const names = record.columnTags.map((tag) => tag?.name).filter(Boolean);
   return names.length ? names.join(" / ") : "未标注";
 }
 
@@ -294,7 +295,7 @@ function entryMarkdown(record) {
     `- 同步来源: follow-builders-daily.json @ ${record.snapshotDate} / ${record.snapshotHash.slice(0, 7)}`,
     "- 当前档位: intake / first_line_viewpoint",
     `- 来源标记: ${sourceLabel(record)}`,
-    `- 观澜标签: ${formalTags(record)}`,
+    `- 观澜标签: ${columnTags(record)}`,
     "<!-- opinion-card-detail:start -->",
     "#### 观点详情",
     "",
@@ -467,8 +468,8 @@ function readableBlockquote(value) {
 }
 
 function readableFormalTags(record) {
-  if (!Array.isArray(record.formalTags)) return "未标注";
-  const names = record.formalTags.map((tag) => tag?.name).filter(Boolean);
+  if (!Array.isArray(record.columnTags)) return "未标注";
+  const names = record.columnTags.map((tag) => tag?.name).filter(Boolean);
   return names.length ? names.join(" / ") : "未标注";
 }
 

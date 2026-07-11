@@ -30,15 +30,11 @@ primary_raw:
   importance_score: 4
 
 formal_tags:
-  track: ["track-ai-governance", "track-ai-infra", "track-enterprise-workflow"]
+  track: ["track-ai-governance", "track-ai-infra"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing", "scenario-agent-governance"]
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-product-launch"]
-  stage: []
-  region: []
-  source: ["source-industry-data"]
-
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["enterprise_ai_owner", "sales_team"]
