@@ -14,3 +14,18 @@
 - publish_status: generated
 - publish_error: ""
 - hermes_record: agent-workflow/reports/2026-07-10-follow-builders-skill-local-publish.md
+
+## Publication Closure
+
+- publish_status: published
+- publish_error: ""
+- pr_number: 242
+- pr_url: https://github.com/jerryfang2023-stack/AI-Radar/pull/242
+- merge_status: auto_or_merged
+- merged_at: 2026-07-10T08:11:46Z
+- merge_commit: 493c9a9969230814b6bf70643c5070c0bd5c36a5
+
+## Local Pull Skipped
+
+- local_pull_status: skipped_dirty_worktree
+- local_pull_reason: publish succeeded from isolated worktree; current workspace kept existing dirty files intact.
