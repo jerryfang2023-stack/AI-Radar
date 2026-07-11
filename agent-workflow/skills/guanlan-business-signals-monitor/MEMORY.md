@@ -2,6 +2,11 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
+## 2026-07-11 Editorial Gate Must Be Release-Blocking
+
+- Source-first structure checks do not prove editorial quality. The unified Business gate must also block stale or undated events, summary-only evidence, title-as-fact output, and duplicated public detail fields.
+- Recall and precision must be tested together on real incidents: confirmed IPOs, lawsuits, shutdowns, and deployments must survive while old launches, company profiles, explainers, and failed extractions remain backend-only.
+
 ## 2026-07-02 Core Signal Cards Contract
 
 - BSIG-V1.2.0 removes the retired public ranked-list versus candidate-pool split. The public Business Signals page renders one active-date Card set: every qualified Raw / Pool business signal that can become a Card, sorted by importance / impact from high to low.

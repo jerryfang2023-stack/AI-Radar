@@ -2,6 +2,12 @@
 
 Keep this file short. Add only durable lessons that improve the skill itself. Do not copy command output, daily counts, or one-off production details.
 
+## 2026-07-11 Editorial Quality Boundary
+
+- Daily Card freshness follows the actual source event, not the inferred Card type: product lifecycle events use a 14-day window; funding and customer cases use 30 days; undated sources stay backend-only until repaired.
+- Formal Cards require readable source bodies and Chinese-facing fact material. A launch-like title or `traceable_summary` cannot compensate for failed extraction, and title/fact/value/excerpt fields must remain substantively distinct.
+- Event blockers must inspect source identity narrowly. Do not let unrelated evidence text, query tails, or excerpt labels such as `opinion` suppress confirmed IPOs, lawsuits, shutdowns, or customer deployments.
+
 ## 2026-07-02
 
 - `not_promoted_candidates`, `notPromotedReason`, and non-empty `notPromotedIssues` are hard blockers for public Cards. They may stay as backend Pool evidence, but must not be normalized into frontstage Cards, relationship graph inputs, or public Enterprise AI lens entries.

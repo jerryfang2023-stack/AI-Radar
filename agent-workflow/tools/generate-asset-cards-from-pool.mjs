@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 import { inferOpportunitySignals, opportunitySignalsYaml } from "./opportunity-signals-utils.mjs";
 
@@ -560,7 +561,7 @@ function sourceSentences(raw = "") {
   const text = stripSourceNoise(raw);
   if (!text) return [];
   return text
-    .split(/(?<=[.!?。！？])\s+|\n+/u)
+    .split(/(?<=[!?。！？])\s*|(?<=\.)\s+|\n+/u)
     .map(stripSourceNoise)
     .filter((item) => item.length >= 28)
     .filter((item) => !/Navigation Menu|Sign in|Search or jump to|Saved searches|Provide feedback|Appearance settings|Twitter|Facebook|LinkedIn|Email Updates/iu.test(item))
@@ -693,7 +694,7 @@ function sourceBackedChineseFact(raw = "", context = {}) {
     ].filter(Boolean);
     return `${owner}宣布完成${amount ? amount : ""}${round ? `${round}` : ""}融资${details.length ? `，${details.join("，")}` : ""}。`.replace(/完成融资/u, "完成融资");
   }
-  const investorLine = chineseInvestorLine(text);
+  const investorLine = context.type === "funding" ? chineseInvestorLine(text) : "";
   if (investorLine) return investorLine;
   if (/\bstrategic collaboration with\s+([A-Z][A-Za-z0-9.&' -]{1,80})/iu.test(text)) {
     const partner = text.match(/\bstrategic collaboration with\s+([A-Z][A-Za-z0-9.&' -]{1,80})/iu)?.[1]?.trim() || "";
@@ -751,26 +752,32 @@ function sourcePointsFromSection(section) {
   const context = {
     company: companyFromSection(section),
     scenario: scenarioFromText(textForInference(section)),
+    type: inferSignalType(section),
     strategicInvestment: isConfirmedStrategicInvestment(section, originalSourceTitleFromSection(section)),
   };
   const keyExcerpts = Array.isArray(raw.key_excerpts)
     ? raw.key_excerpts
     : parseJsonValue(section, "key_excerpts", []);
   const evidenceSeed = raw.evidence_seed || parseJsonValue(section, "evidence_seed", {});
+  const translatedFacts = Array.isArray(raw.fact_translation_zh) ? raw.fact_translation_zh : [];
   const seedItems = [
     ...(Array.isArray(evidenceSeed.company_actions) ? evidenceSeed.company_actions : []),
     ...(Array.isArray(evidenceSeed.case_details) ? evidenceSeed.case_details : []),
     ...(Array.isArray(evidenceSeed.workflow_changes) ? evidenceSeed.workflow_changes : []),
     ...(Array.isArray(evidenceSeed.risks_or_constraints) ? evidenceSeed.risks_or_constraints : []),
   ];
-  const excerptItems = Array.isArray(keyExcerpts) ? keyExcerpts.map((item) => ({ text: item?.text || "", type: item?.type || "" })) : [];
+  const excerptItems = Array.isArray(keyExcerpts)
+    ? keyExcerpts.flatMap((item) => sourceSentences(item?.text || "").map((text) => ({ text, type: item?.type || "" })))
+    : [];
   const titleFact = sourceTitleFactFromSection(section);
   const fromExcerpts = excerptItems.map((item) => translatedSourcePoint(item.text, item.type, context)).filter(sourcePointReadyForPublic);
   const fromSeed = seedItems.map((item) => translatedSourcePoint(item, "", context)).filter(sourcePointReadyForPublic);
   const fromFullText = sourceSentences(raw.full_text || raw.clean_text || "")
     .map((item) => translatedSourcePoint(item, "", context))
     .filter(sourcePointReadyForPublic);
-  return [...new Set([titleFact, ...fromExcerpts, ...fromSeed, ...fromFullText].filter(sourcePointReadyForPublic))].slice(0, 6);
+  const fromTranslatedFacts = translatedFacts.map(stripSourceNoise).filter(sourcePointReadyForPublic);
+  const substantive = [...new Set([...fromTranslatedFacts, ...fromExcerpts, ...fromSeed, ...fromFullText].filter(sourcePointReadyForPublic))];
+  return [...substantive, ...(titleFact ? [titleFact] : [])].slice(0, 6);
 }
 
 function sourceExcerptFromSection(section, points = []) {
@@ -778,12 +785,45 @@ function sourceExcerptFromSection(section, points = []) {
   const context = {
     company: companyFromSection(section),
     scenario: scenarioFromText(textForInference(section)),
+    type: inferSignalType(section),
     strategicInvestment: isConfirmedStrategicInvestment(section, originalSourceTitleFromSection(section)),
   };
   const firstRaw = sourceSentences(raw.full_text || raw.clean_text || "")
     .map((item) => translatedSourcePoint(item, "", context))
     .find(sourcePointReadyForPublic);
   return points.find(sourcePointReadyForPublic) || firstRaw || sourceTitleFactFromSection(section) || "";
+}
+
+function rawVisibleExcerptFromSection(section, excluded = []) {
+  const raw = readRawJson(section);
+  const excludedKeys = excluded.map(normalizedSignalText).filter(Boolean);
+  const isTooSimilar = (item) => {
+    const normalized = normalizedSignalText(item);
+    return excludedKeys.some((excludedKey) => {
+      if (normalized === excludedKey) return true;
+      const prefixLength = Math.min(90, normalized.length, excludedKey.length);
+      return prefixLength >= 48 && normalized.slice(0, prefixLength) === excludedKey.slice(0, prefixLength);
+    });
+  };
+  const rawExcerpts = Array.isArray(raw.key_excerpts)
+    ? raw.key_excerpts.map((item) => stripSourceNoise(item?.text || ""))
+    : [];
+  const candidates = [
+    ...rawExcerpts,
+    ...sourceSentences(raw.full_text || raw.clean_text || ""),
+  ]
+    .map((item) => String(item || "").replace(/\s+/gu, " ").trim())
+    .filter((item) => item.length >= 36 && item.length <= 420)
+    .filter((item) => !hasTextContamination(item))
+    .filter((item) => !isTooSimilar(item));
+  return candidates[0] || originalSourceTitleFromSection(section) || "";
+}
+
+function generatedCommercialValue(spec) {
+  const company = spec.company || "该公司";
+  if (spec.type === "funding") return `${company} 的资本事件显示，资金正在流向可形成产品、产能或客户交付能力的 AI 商业基础设施。`;
+  if (spec.type === "product_service") return `${company} 的产品动作体现了 AI 能力从技术展示走向可调用、可部署或可采购的服务形态。`;
+  return `${company} 的案例为企业评估 AI 在真实流程中的部署方式、成本边界和结果指标提供了可核查样本。`;
 }
 
 function isSameSourcePoint(a = "", b = "") {
@@ -1172,6 +1212,14 @@ function sectionHasUsableEvidenceObject(section) {
   );
 }
 
+function hasChineseFactMaterial(section) {
+  const raw = readRawJson(section);
+  const translatedFacts = Array.isArray(raw.fact_translation_zh) ? raw.fact_translation_zh : [];
+  if (translatedFacts.some((item) => countHan(item) >= 12 && sourcePointIsUsable(item))) return true;
+  const excerpts = Array.isArray(raw.key_excerpts) ? raw.key_excerpts : [];
+  return excerpts.some((item) => countHan(item?.text || "") >= 18 && sourcePointIsUsable(item?.text || ""));
+}
+
 function evidenceStrengthForSection(section) {
   const sourceUrl = value(section, "source_url");
   const evidenceObjectType = value(section, "evidence_object_type");
@@ -1212,7 +1260,7 @@ function evidenceStrengthForSection(section) {
 function evidenceStrengthBlocksCard(section, hasCardableEvent) {
   const strength = evidenceStrengthForSection(section);
   if (strength === "blocked") return "missing_source_material";
-  if (!hasCardableEvent && strength === "traceable_summary") return "summary_without_formal_event";
+  if (strength === "traceable_summary") return hasCardableEvent ? "missing_source_material" : "summary_without_formal_event";
   return "";
 }
 
@@ -1229,7 +1277,10 @@ function dateFromUrl(value = "") {
 }
 
 function dateFromText(value = "") {
-  const match = String(value || "").slice(0, 2000).match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(20\d{2})\b/iu);
+  const text = String(value || "").slice(0, 4000);
+  const iso = text.match(/\b(20\d{2})-(\d{2})-(\d{2})(?:T|\b)/u);
+  if (iso) return new Date(Date.UTC(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3])));
+  const match = text.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(20\d{2})\b/iu);
   if (!match) return null;
   const month = monthNames.get(match[1].toLowerCase());
   if (month === undefined) return null;
@@ -1243,14 +1294,16 @@ function rawPublicationDate(section) {
     try {
       const rawPath = path.resolve(root, rawJsonPath.replace(/^`|`$/gu, ""));
       const rawData = JSON.parse(fs.readFileSync(rawPath, "utf8"));
-      return parsePublicationDate(rawData.published_at)
+      const rawDate = parsePublicationDate(rawData.published_at)
         || dateFromUrl(rawData.canonical_url || rawData.original_url || sourceUrl)
         || dateFromText(rawData.full_text || rawData.clean_text || "");
+      if (rawDate) return rawDate;
     } catch {
       // Fall through to URL-only parsing below.
     }
   }
-  return dateFromUrl(sourceUrl);
+  return dateFromUrl(sourceUrl)
+    || dateFromText(`${value(section, "key_excerpts")} ${value(section, "evidence_seed")}`);
 }
 
 function isStalePublication(section, maxAgeDays = 30) {
@@ -1259,6 +1312,33 @@ function isStalePublication(section, maxAgeDays = 30) {
   const runDate = new Date(`${date}T12:00:00Z`);
   const ageMs = runDate.getTime() - published.getTime();
   return ageMs > maxAgeDays * 24 * 60 * 60 * 1000;
+}
+
+function cardFreshnessDays(section) {
+  const importanceType = value(section, "importance_type");
+  if (importanceType === "important_funding") return 30;
+  if (importanceType === "important_market_structure") return 14;
+  if (hasConcreteProductEvent(section)) return 14;
+  if (hasConcreteCaseEvent(section)) return 30;
+  return 14;
+}
+
+function isCompanyProfileWithoutDatedEvent(section) {
+  return /ycombinator\.com\/companies\//iu.test(value(section, "source_url")) && !rawPublicationDate(section);
+}
+
+function isExplainerWithoutCommercialEvent(section) {
+  const identity = [poolTitle(section), value(section, "source"), value(section, "source_url")].join(" ");
+  const explainer = /\b(staffer maps out|employee explains?|which .{0,80} fits|reasoning levels? fits|guide to|how to choose)\b|员工详解|员工解释|适用场景|如何选择/iu.test(identity);
+  const datedAction = /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:es|ed)?|available now|general availability|acquires?|lawsuit|settlement|raises?|funding)\b|发布|推出|上线|收购|诉讼|和解|融资/iu.test(identity);
+  return explainer && !datedAction;
+}
+
+function isResearchPrototypeWithoutCommercialEvent(section) {
+  const text = sectionEvidenceText(section);
+  const researchPrototype = /\b(IEEE|JSAP|researchers?|university|prototype|theoretical peak|paper)\b|联合研发|研究团队|理论峰值|研讨会|论文/iu.test(text);
+  const commercialEvent = /\b(generally available|available now|commercial launch|customer deployment|procurement|contract|funding|raises?|acquires?)\b|正式可用|商业发布|客户部署|采购|合同|融资|收购/iu.test(text);
+  return researchPrototype && !commercialEvent;
 }
 
 function isGenericReportOrListSection(section) {
@@ -1316,9 +1396,11 @@ function hasConcreteFundingEvent(section) {
 
 function hasConcreteProductEvent(section) {
   const text = sectionEvidenceText(section);
+  const sourceIdentity = [poolTitle(section), value(section, "source"), value(section, "source_url")].join(" ");
   if (isWorkforceRetrainingProgram(section)) return false;
   if (isNewsletterRoundupSource(section)) return false;
-  return /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:es|ed)?|general availability|GA|new API|new SDK|new platform|new product|pricing|available now)\b|发布|推出|上线|正式可用|开放|定价/iu.test(text)
+  if (/\b(shuts? down|discontinues?|kills?|folds? .{0,60} into)\b|关停|下线|并入/iu.test(sourceIdentity)) return true;
+  return /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:es|ed)?|general availability|GA|new API|new SDK|new platform|new product|pricing|available now|shuts? down|discontinues?|kills?|folds? .{0,60} into)\b|发布|推出|上线|正式可用|开放|定价|关停|下线|并入/iu.test(text)
     && !/guide|tutorial|how to|core concepts|scaling dimensions|architecture overview|field guide|glossary|market map|roundup|list|指南|教程|概念|综述|清单|榜单/iu.test(text);
 }
 
@@ -1335,7 +1417,8 @@ function hasConcreteMarketStructureEvent(section) {
   if (isNewsletterRoundupSource(section) || isBuilderOrOpinionOnlySource(section)) return false;
   const action = /\b(acquires?|acquired|acquisition|merger|buyout|strategic partnership|partners? with|collaborates? with|procurement|tender|rfp|contract|pricing|price increase|price cut|rate limit|billing change|regulatory approval|clearance|antitrust|lawsuit|settlement)\b|收购|并购|合并|战略合作|合作伙伴|采购|招标|投标|合同|签约|定价|价格|计费|监管批准|审批|反垄断|诉讼|和解/iu.test(text);
   const businessAiContext = /\b(AI|agent|agentic|model|platform|cloud|enterprise|customer|workflow|developer|API|SDK|SaaS|inference|data center|GPU)\b|人工智能|模型|平台|企业|客户|工作流|开发者|算力|数据中心/iu.test(text);
-  const commentaryOnly = /\b(opinion|analysis|analyst|market map|roundup|guide|tutorial|what is|why we built)\b|观点|评论|研报|指南|教程|清单|榜单/iu.test(text);
+  const sourceIdentity = [poolTitle(section), value(section, "source"), value(section, "source_url")].join(" ");
+  const commentaryOnly = /\b(opinion|analysis|analyst|market map|roundup|guide|tutorial|what is|why we built)\b|观点|评论|研报|指南|教程|清单|榜单/iu.test(sourceIdentity);
   return action && businessAiContext && !commentaryOnly;
 }
 
@@ -1550,7 +1633,14 @@ function cardabilitySemanticIssues(section) {
   if (isRepositoryOrCatalogSection(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "repository_catalog_or_directory_page"));
   }
-  if (isStalePublication(section, 90)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "stale_source_date"));
+  if (!rawPublicationDate(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "missing_source_date"));
+  else if (isStalePublication(section, cardFreshnessDays(section))) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "stale_source_date"));
+  if (sourceTitleNeedsChineseTranslation(originalSourceTitleFromSection(section)) && !hasChineseFactMaterial(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "missing_chinese_fact_translation"));
+  }
+  if (isCompanyProfileWithoutDatedEvent(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "company_profile_without_dated_event"));
+  if (isExplainerWithoutCommercialEvent(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "explainer_without_commercial_event"));
+  if (isResearchPrototypeWithoutCommercialEvent(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "research_prototype_without_commercial_event"));
   if (value(section, "index_only_evidence") === "true") issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "index_only_evidence"));
   if (indexOnlyEvidenceTypes.has(evidenceObjectType)) issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, `index_only_evidence_type:${evidenceObjectType}`));
   if (isRootOrHomeSourceUrl(sourceUrl) || (indexOnlyUrlPattern.test(sourceUrl) && !/\/\d{4}\/|\/20\d{2}[/-]|press|news|release|announc|blog\/[^/]+/iu.test(sourceUrl))) {
@@ -1767,6 +1857,15 @@ function companyFromSection(section) {
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const specialCases = [
+    [/\bOXMIQ\b/iu, "OXMIQ"],
+    [/\bSK Hynix\b|SK 海力士/iu, "SK Hynix"],
+    [/\bKTern\.AI\b/iu, "KTern.AI"],
+    [/\bSunrun\b/iu, "Sunrun"],
+    [/Apple.{0,20}(?:sues|lawsuit|起诉).{0,20}OpenAI/iu, "Apple / OpenAI"],
+    [/OpenAI.{0,30}(?:Atlas|关停)/iu, "OpenAI"],
+    [/腾讯.{0,20}(?:Manus|收购)/iu, "腾讯 / Manus"],
+    [/\bBun\b.{0,40}(?:Claude|Zig|Rust)/iu, "Bun"],
+    [/Claude Code/iu, "Anthropic / Claude Code"],
     [/netris/iu, "Netris"],
     [/c-h-robinson|c\.h\.\s*robinson/iu, "C.H. Robinson"],
     [/bentocloud/iu, "BentoCloud"],
@@ -1870,8 +1969,8 @@ function hasStrictFundingAnnouncement(section, sourceEventTitle = "") {
     value(section, "key_excerpts"),
     value(section, "evidence_seed"),
   ].map(stripSourceNoise).join(" ");
-  const haystack = `${identityHaystack} ${evidenceHaystack}`.replace(/\b(?:chips?|data centers?|data center)\b/giu, "");
-  if (/\b(contract|procurement|tender|vehicle|autonomous ground vehicles|war|military|defense contract|export curbs?|chips?|self-developed chip|stake|equity stake|capital expenditure|capex|data center|investment plan|is seeking|seeks to raise|plans to raise|reportedly|rumou?red|in talks)\b|乌克兰|参战|车辆|芯片|出口管制|寻求融资|计划融资|消息称|据悉|入股/iu.test(haystack)) {
+  const haystack = `${identityHaystack} ${evidenceHaystack}`;
+  if (/\b(contract|procurement|tender|vehicle|autonomous ground vehicles|war|military|defense contract|export curbs?|self-developed chip|stake|equity stake|capital expenditure|capex|data center|investment plan|is seeking|seeks to raise|plans to raise|reportedly|rumou?red|in talks)\b|乌克兰|参战|车辆|出口管制|寻求融资|计划融资|消息称|据悉|入股/iu.test(identityHaystack)) {
     return false;
   }
   const amountOrRound = fundingAmountPattern.test(haystack) || fundingRoundPattern.test(haystack);
@@ -1915,12 +2014,14 @@ function inferSignalType(section) {
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const importanceType = value(section, "importance_type");
+  const sourceIdentity = [poolTitle(section), value(section, "source"), sourceUrl].join(" ");
   if (allowsObservationSummaryEvidence(section)) return "product_service";
   if (isSingleCompanyFundingSignal(section)) return "funding";
   if (importanceType === "important_market_structure") {
     if (/\b(pricing|price|billing|rate limit)\b|定价|价格|计费/iu.test(text)) return "product_service";
     return "case";
   }
+  if (/\b(unveils?|launches?|introduces?|announces?|released?|available now|general availability)\b|发布|推出|上线|正式可用/iu.test(sourceIdentity)) return "product_service";
   if (importanceType === "important_case" || importanceType === "important_vertical_solution") return "case";
   if (importanceType === "important_funding" && /\b(pivoted?|renamed|compute cluster|infrastructure|platform|deploy|deployment|service|product|business|AI biz)\b|转型|更名|托管计算|基础设施|部署|产品|业务/iu.test(`${text} ${sourceUrl}`)) return "product_service";
   if (importanceType === "important_funding") return "funding";
@@ -2036,7 +2137,7 @@ function sourceEventTitleCanBackAutoCard(title = "") {
   const text = cleanSourceTitleForPublicTitle(title);
   if (!text || hasTextContamination(text)) return false;
   if (/(roundup|guide|what is|what'?s real|how to|landscape|report|trends?|top \d+|ranked|list|directory|buyer'?s guide|comparison|ideas|use cases|may become|roles? in the ai era|job opening|job listing|careers?|hiring)\b/iu.test(text)) return false;
-  return /\b(launch(?:es|ed)?|announc(?:es|ed|ing)?|introduc(?:es|ed|ing)?|public preview|generally available|GA|available now|reach(?:es|ed)? the next phase|live transactions?|partners? with|partnership|procurement|contract|customer story|case study|deploy(?:s|ed|ment)?|rollout|adopt(?:s|ed|ion)?|uses?|used by|boosts?|increas(?:es|ed)|reduc(?:es|ed)|cuts?|saves?|improv(?:es|ed)|internal automation agents|expands?|unveils?)\b/iu.test(text);
+  return /\b(launch(?:es|ed)?|announc(?:es|ed|ing)?|introduc(?:es|ed|ing)?|public preview|generally available|GA|available now|reach(?:es|ed)? the next phase|live transactions?|partners? with|partnership|procurement|contract|customer story|case study|deploy(?:s|ed|ment)?|rollout|adopt(?:s|ed|ion)?|uses?|used by|boosts?|increas(?:es|ed)|reduc(?:es|ed)|cuts?|saves?|improv(?:es|ed)|internal automation agents|expands?|unveils?|shuts? down|discontinues?|kills?|folds?)\b|关停|下线|并入/iu.test(text);
 }
 
 function sourceTitleLineFromText(text = "") {
@@ -2063,8 +2164,25 @@ function sourceTitleLineFromText(text = "") {
 function originalSourceTitleFromSection(section) {
   const raw = readRawJson(section);
   const rawTitle = cleanSourceTitleForPublicTitle(raw.title || "");
-  if (rawTitle && !hasTextContamination(rawTitle) && !/AI\s*business signal|来源材料显示|公开材料显示/iu.test(rawTitle)) {
+  const genericPublisherTitle = /^HPCwire\s*-\s*Since 1987|Covering the Fastest Computers in the World/iu.test(rawTitle);
+  if (rawTitle && !genericPublisherTitle && !hasTextContamination(rawTitle) && !/AI\s*business signal|来源材料显示|公开材料显示/iu.test(rawTitle)) {
     return rawTitle;
+  }
+  if (genericPublisherTitle) {
+    const lines = String(raw.full_text || raw.clean_text || "")
+      .split(/\r?\n/u)
+      .map((line) => line.replace(/\s+/gu, " ").trim())
+      .filter(Boolean);
+    const urlHint = String(raw.canonical_url || raw.original_url || value(section, "source_url"))
+      .split("/")
+      .filter(Boolean)
+      .at(-1)
+      ?.split("-")
+      .find((token) => token.length >= 4 && !/^(raises?|funding|launches?|announces?)$/iu.test(token));
+    const eventPattern = /\b(?:raises?|raised|secures?|secured|closes?|closed|funding|financing|acquires?|launches?|announces?)\b/iu;
+    const eventLine = lines.find((line) => urlHint && new RegExp(`\\b${urlHint}\\b`, "iu").test(line) && eventPattern.test(line))
+      || lines.find((line) => /^.{1,80}\b(?:raises?|raised|secures?|secured|closes?|closed|funding|financing|acquires?|launches?|announces?)\b/iu.test(line));
+    if (eventLine && !hasTextContamination(eventLine)) return cleanSourceTitleForPublicTitle(eventLine);
   }
   const fullTextTitle = sourceTitleLineFromText(raw.full_text || raw.clean_text || "");
   if (fullTextTitle) return fullTextTitle;
@@ -2124,10 +2242,7 @@ function autoSignalSpec(poolRef, section, index) {
   const summaryOperatorMaterial = evidenceStrengthForSection(section) === "traceable_summary"
     && /\b(podcast|simplecast|interview|episode|ceo|founder|co-founder)\b|CEO|创始人|访谈|播客/iu.test(sectionEvidenceText(section));
 
-  if (!allowsObservationSummaryEvidence(section)) {
-    const maxAgeDays = type === "product_service" ? 14 : 180;
-    if (isStalePublication(section, maxAgeDays)) return null;
-  }
+  if (!allowsObservationSummaryEvidence(section) && isStalePublication(section, cardFreshnessDays(section))) return null;
 
   let scenario = scenarioFromText(text);
   if (/^(BentoCloud|Microsoft Foundry)$/u.test(company)) {
@@ -2494,12 +2609,16 @@ function signalCard(spec, section) {
   const importanceType = value(section, "importance_type");
   const importanceScore = value(section, "importance_score");
   const sourcePoints = (spec.sourcePoints?.length ? spec.sourcePoints : sourcePointsFromSection(section)).slice(0, 6);
-  const sourceExcerpt = spec.sourceExcerpt || sourceExcerptFromSection(section, sourcePoints);
-  const sourceFact = sourcePoints[0] || spec.title;
-  const originalPoints = sourcePoints.filter((item, index) => index > 0 && !isSameSourcePoint(item, sourceFact));
+  const sourceFact = sourcePoints.find((item) => !isSameSourcePoint(item, spec.title)) || sourcePoints[0] || spec.title;
+  const titleFact = sourceTitleFactFromSection(section);
   const valueSummary =
-    [spec.businessMeaning, ...originalPoints].find((item) => item && !isSameSourcePoint(item, sourceFact)) ||
-    generatedValueSummary(spec, section);
+    [spec.businessMeaning, spec.whyWatch, ...sourcePoints]
+      .find((item) => item && !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, spec.title) && !isSameSourcePoint(item, titleFact)) ||
+    generatedCommercialValue(spec);
+  const originalPoints = sourcePoints
+    .filter((item) => !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, valueSummary) && !isSameSourcePoint(item, spec.title))
+    .slice(0, 4);
+  const sourceExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, ...originalPoints]);
   const evidenceBoundary = spec.evidenceBoundary || value(section, "missing_information") || "未记录额外缺失项。";
 
   const yamlString = (input = "") => JSON.stringify(String(input || ""));
@@ -2881,4 +3000,66 @@ function main() {
   console.log(JSON.stringify({ ok: true, date, written, merged, skipped, handoff }, null, 2));
 }
 
-main();
+function cardDetailSections(markdown = "") {
+  const detail = {};
+  for (const heading of ["新闻事实", "原文要点", "价值描述", "可见原文片段"]) {
+    const match = String(markdown).match(new RegExp(`## ${heading}\\s*\\n\\n?([\\s\\S]*?)(?=\\n## |$)`, "u"));
+    detail[heading] = String(match?.[1] || "").replace(/^[-*]\s*/gmu, "").trim();
+  }
+  return detail;
+}
+
+function normalizedDetail(value = "") {
+  return normalizedSignalText(String(value).replace(/原文称，|原始来源标题显示：/gu, ""));
+}
+
+function runQualityRegressionFixtures() {
+  assert.equal(date, "2026-07-11", "quality fixtures are pinned to the audited 2026-07-11 artifact");
+  const sections = poolSections();
+  const section = (poolRef) => {
+    const found = sections.get(poolRef);
+    assert.ok(found, `missing fixture ${poolRef}`);
+    return found;
+  };
+  const specFor = (poolRef, index = 1) => autoSignalSpec(poolRef, section(poolRef), index);
+  const issuesFor = (poolRef) => autoSignalEligibilityIssues(section(poolRef));
+
+  for (const poolRef of ["P-001", "P-002", "P-012", "P-015", "P-026", "P-043"]) {
+    assert.deepEqual(issuesFor(poolRef), [], `${poolRef} should pass the six Card-entry gates`);
+    assert.ok(specFor(poolRef), `${poolRef} should produce a formal Signal Card spec`);
+  }
+  assert.equal(specFor("P-001").type, "funding", "SK Hynix IPO must remain a funding/capital event");
+  assert.equal(specFor("P-012").type, "funding", "OXMIQ round must remain a funding event");
+  assert.equal(specFor("P-015").type, "case", "KTern SAP deployment must remain a customer/vertical case");
+  assert.equal(specFor("P-026").type, "case", "Sunrun distributed-compute pilot must remain a case");
+
+  const rejected = {
+    "P-017": "stale_source_date",
+    "P-033": "stale_source_date",
+    "P-035": "company_profile_without_dated_event",
+    "P-042": "explainer_without_commercial_event",
+    "P-055": "research_prototype_without_commercial_event",
+    "P-056": "missing_source_material",
+  };
+  for (const [poolRef, expectedIssue] of Object.entries(rejected)) {
+    assert.ok(
+      issuesFor(poolRef).some((issue) => issue.includes(expectedIssue)),
+      `${poolRef} should be rejected with ${expectedIssue}; got ${issuesFor(poolRef).join(", ")}`,
+    );
+  }
+
+  for (const poolRef of ["P-001", "P-002", "P-012", "P-015", "P-026", "P-043"]) {
+    const spec = normalizeSignalSpec(specFor(poolRef));
+    const markdown = signalCard(spec, section(poolRef));
+    const details = cardDetailSections(markdown);
+    const normalized = Object.values(details).map(normalizedDetail);
+    assert.ok(normalized.every(Boolean), `${poolRef} must render all four public detail fields`);
+    assert.equal(new Set(normalized).size, normalized.length, `${poolRef} public detail fields must be distinct: ${JSON.stringify(details)}`);
+    assert.notEqual(normalizedDetail(details["新闻事实"]), normalizedDetail(spec.title), `${poolRef} news fact must not repeat the title`);
+  }
+
+  console.log(JSON.stringify({ ok: true, date, fixture: "business-signal-card-editorial-quality" }, null, 2));
+}
+
+if (args.get("quality-regression-fixtures") === "true") runQualityRegressionFixtures();
+else main();

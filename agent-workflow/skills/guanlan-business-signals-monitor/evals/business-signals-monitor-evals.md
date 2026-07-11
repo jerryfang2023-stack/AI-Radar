@@ -170,6 +170,12 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when hardware track classification is based on source title/fact/URL, not query theme metadata, so demand/profit/supply-chain items do not become investment/funding just because they came from an investment query.
     - Fail when a fourth formal Card type is introduced for AI hardware, or when query-derived AI hardware items bypass source-first Card eligibility.
 
+31. `editorial_quality_gate_is_release_blocking`
+    - Pass when the unified Business frontstage gate runs `assert-signal-card-editorial-quality.mjs` before publication.
+    - Pass when the gate blocks stale or undated events, failed/summary-only source extraction, title-as-fact output, and repeated fact / points / value / excerpt fields.
+    - Pass when the 2026-07-11 regression fixture preserves confirmed IPO, lawsuit, product-shutdown, customer-deployment, and distributed-compute pilot recall while rejecting old launches, company profiles, explainers, and weak evidence.
+    - Fail when source-first and frontstage-regression gates pass despite editorial detail duplication or when routed Pool thresholds silently fall below the current contract.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.

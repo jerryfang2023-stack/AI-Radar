@@ -22,7 +22,7 @@ search_intent: "find_original_source"
 search_path: "industry_landing"
 search_path_label: "行业落地路径"
 author: ""
-published_at: ""
+published_at: "2026-07-10T07:23:25-08:00"
 collected_at: 2026-07-11T04:06:33.342Z
 language: mixed
 full_text_hash: f1adcde9ebe3df1d
