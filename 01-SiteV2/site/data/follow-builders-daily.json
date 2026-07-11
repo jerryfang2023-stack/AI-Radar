@@ -1,23 +1,29 @@
 {
   "meta": {
-    "generatedAt": "2026-07-11T01:33:47.847Z",
+    "generatedAt": "2026-07-10T16:32:59.918Z",
     "feedGeneratedAt": "2026-07-10T07:27:50.773Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
-    "sourceRoute": "remote-x+remote-podcasts",
+    "sourceRoute": "prepare-digest",
     "sourceErrors": [],
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
-    "builders": 18,
-    "remarks": 39,
-    "podcasts": 1,
-    "blogsBuilt": 4,
-    "trackedSources": 0,
+    "builders": 23,
+    "remarks": 54,
+    "podcasts": 3,
+    "blogsBuilt": 5,
+    "trackedSources": 33,
     "rawBuilders": 19,
     "rawTweets": 44
   },
   "builders": [
+    {
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "count": 8
+    },
     {
       "name": "Amjad Masad",
       "handle": "amasad",
@@ -58,6 +64,12 @@
       "name": "Thibault Sottiaux",
       "handle": "thsottiaux",
       "role": "Codex & ChatGPT OpenAI",
+      "count": 3
+    },
+    {
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
       "count": 3
     },
     {
@@ -103,6 +115,18 @@
       "count": 2
     },
     {
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "count": 2
+    },
+    {
+      "name": "Ben's Bites AI Newsletter",
+      "handle": "bensbites.com",
+      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
+      "count": 1
+    },
+    {
       "name": "Garry Tan",
       "handle": "garrytan",
       "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
@@ -112,6 +136,12 @@
       "name": "Josh Woodward",
       "handle": "joshwoodward",
       "role": "VP, Google GoogleLabs GeminiApp GoogleAIStudio",
+      "count": 1
+    },
+    {
+      "name": "Lilian Weng's Blog (OpenAI)",
+      "handle": "lilianweng.github.io",
+      "role": "AI research deep-dives, LLM architectures, agent systems, multimodal, alignment, safety.",
       "count": 1
     },
     {
@@ -128,6 +158,279 @@
     }
   ],
   "remarks": [
+    {
+      "id": "https://www.tigera.io/blog/save-the-address-save-the-cloud-kubevirt-vm-migration-story/",
+      "source": "blog",
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "text": "Save the Address, Save the Cloud (KubeVirt VM Migration Story)",
+      "content": "Kubernetes is built for containers, and it&#8217;s been doing that since it used to run docker as an engine for its containers. But what if you want to add VMs to the mix? After all,... The post Save the Address, Save the Cloud (KubeVirt VM Migration Story) appeared first on Tigera – Creator of Cali",
+      "contentTranslation": "Kubernetes是为容器构建的，自从它曾经将docker作为容器的引擎运行以来，它一直在这样做。但是，如果您想将虚拟机添加到组合中，该怎么办？毕竟，...帖子Save the Address, Save the Cloud （ KubeVirt虚拟机迁移故事）首先出现在Tigera – Cali的创建者",
+      "contentTranslationStatus": "translated",
+      "translation": "保存地址，保存云（ KubeVirt虚拟机迁移故事）",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Wed, 08 Jul 2026 20:45:58 +0000",
+      "date": "2026-07-09",
+      "url": "https://www.tigera.io/blog/save-the-address-save-the-cloud-kubevirt-vm-migration-story/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.bensbites.com/p/my-thoughts-on-fable",
+      "source": "blog",
+      "name": "Ben's Bites AI Newsletter",
+      "handle": "bensbites.com",
+      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
+      "text": "My thoughts on Fable",
+      "content": "what I want from a harness",
+      "contentTranslation": "我想从线束中得到什么",
+      "contentTranslationStatus": "translated",
+      "translation": "我对寓言的看法",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Tue, 07 Jul 2026 13:04:10 GMT",
+      "date": "2026-07-07",
+      "url": "https://www.bensbites.com/p/my-thoughts-on-fable",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-07-07",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Anthropic J-space research 🧠, Apple + Broadcom ⚡, continual agent learning 🤖",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "Anthropic J-space研究🧠， Apple + Broadcom ⚡，持续Agent学习 🤖",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "formalTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "Tue, 07 Jul 2026 00:00:00 GMT",
+      "date": "2026-07-07",
+      "url": "https://tldr.tech/ai/2026-07-07",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.tigera.io/blog/save-the-address-save-the-cloud-a-hands-on-kubevirt-live-migration-workshop/",
+      "source": "blog",
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "text": "Save the Address, Save the Cloud: A Hands-on KubeVirt Live Migration Workshop",
+      "content": "In the previous post in this series, we covered why Virtual Machine (VM) Live Migration in Kubernetes is difficult: a VM&#8217;s IP is its identity, and the “new” VM on the destination node has to... The post Save the Address, Save the Cloud: A Hands-on KubeVirt Live Migration Workshop appeared firs",
+      "contentTranslation": "在本系列的上一篇文章中，我们介绍了为什么Kubernetes中的虚拟机（ VM ）实时迁移很困难：虚拟机的IP是其身份，目标节点上的“新”虚拟机必须...",
+      "contentTranslationStatus": "translated",
+      "translation": "保存地址，保存云： KubeVirt实时迁移实践工作坊",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Thu, 09 Jul 2026 13:58:26 +0000",
+      "date": "2026-07-09",
+      "url": "https://www.tigera.io/blog/save-the-address-save-the-cloud-a-hands-on-kubevirt-live-migration-workshop/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+      "source": "blog",
+      "name": "Lilian Weng's Blog (OpenAI)",
+      "handle": "lilianweng.github.io",
+      "role": "AI research deep-dives, LLM architectures, agent systems, multimodal, alignment, safety.",
+      "text": "Harness Engineering for Self-Improvement",
+      "content": "The concept of recursive self-improvement (RSI) dates back to I. J. Good (1965), where he defined an &ldquo;ultraintelligent machine&rdquo; as a system that can surpass humans in all intellectual activities and design better machines to improve itself. Yudkowsky (2008) used the phrase &ldquo;recursi",
+      "contentTranslation": "递归自我提升（ RSI ）的概念可以追溯到I. J. Good （ 1965 ） ，他将“超智能机器”定义为能够在所有智力活动中超越人类并设计更好的机器来提升自身的系统。Yudkowsky （ 2008 ）使用了短语“recursi",
+      "contentTranslationStatus": "translated",
+      "translation": "自我提升的线束工程",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Sat, 04 Jul 2026 00:00:00 +0000",
+      "date": "2026-07-04",
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-07-06",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Seedance 2.5 🎥, guide to Fable ✨, OpenAI preps GPT-5.6 🚀",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "Seedance 2.5 🎥，寓言指南✨， OpenAI准备GPT-5.6 🚀",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Mon, 06 Jul 2026 00:00:00 GMT",
+      "date": "2026-07-06",
+      "url": "https://tldr.tech/ai/2026-07-06",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.tigera.io/blog/six-ai-agent-sdks-for-enterprise-kubernetes-compared/",
+      "source": "blog",
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "text": "Six AI agent SDKs for enterprise Kubernetes, compared",
+      "content": "There&#8217;s a question we hear constantly from platform and engineering leaders right now, &#8220;which agent SDK should we standardize on for our Kubernetes clusters?&#8221; The honest answer is that the question is slightly wrong, and... The post Six AI agent SDKs for enterprise Kubernetes, comp",
+      "contentTranslation": "我们现在经常从平台和工程领导那里听到一个问题， “我们应该为我们的Kubernetes集群标准化哪个AgentSDK ？“老实说，问题有点不对劲，而且……企业Kubernetes发布的Six AI agent SDK ，",
+      "contentTranslationStatus": "translated",
+      "translation": "六个用于企业Kubernetes的AIAgentSDK ，比较",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "formalTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "Fri, 03 Jul 2026 20:44:49 +0000",
+      "date": "2026-07-04",
+      "url": "https://www.tigera.io/blog/six-ai-agent-sdks-for-enterprise-kubernetes-compared/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
     {
       "id": "2075452680760443190",
       "source": "x",
@@ -1531,16 +1834,344 @@
       "likes": 1058,
       "retweets": 65,
       "replies": 153
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Rewriting Bun in Rust",
+      "content": "Rewriting Bun in Rust Jarred Sumner has been promising this blog post ( since May 9th ) about his Zig to Rust rewrite of Bun for significantly longer than it took",
+      "contentTranslation": "Rewriting Bun in Rust Jarred Sumner一直承诺这篇博客文章（自5月9日起）关于他的Zig to Rust重写Bun的时间远远超过",
+      "contentTranslationStatus": "translated",
+      "translation": "在Rust中重写Bun",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-08T23:57:21+00:00",
+      "date": "2026-07-09",
+      "url": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Introducing GPT‑Live",
+      "content": "Introducing GPT‑Live OpenAI finally upgraded the model used by ChatGPT voice mode! I've had preview access for a few weeks in the iPhone app, and the new model is very impressive. It also has the abi",
+      "contentTranslation": "隆重推出GPT ‑ Live OpenAI终于升级了ChatGPT语音模式使用的模式！我已经在iPhone应用程序中预览了几周，新型号非常令人印象深刻。它也有abi",
+      "contentTranslationStatus": "translated",
+      "translation": "隆重推出GPT-Live",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-08T23:20:48+00:00",
+      "date": "2026-07-09",
+      "url": "https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "sqlite-utils 4.0, now with database schema migrations",
+      "content": "This morning I released sqlite-utils 4.0 , the 124th release of that project and the first major version bump since 3.0 in November 2020. In a",
+      "contentTranslation": "今天早上我发布了sqlite-utils 4.0 ，这是该项目的第124个版本，也是自2020年11月3.0以来的第一个主要版本升级。",
+      "contentTranslationStatus": "translated",
+      "translation": "sqlite-utils 4.0 ，现在带有数据库架构迁移",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-07T19:32:57+00:00",
+      "date": "2026-07-08",
+      "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+      "content": "I wrote about the sqlite-utils 4.0rc1 release a couple of weeks ago. Since we only have Claude Fable on our Max subscriptions for a few more days, I decided to see if it could help me get to a 4.0 stable release that I felt t",
+      "contentTranslation": "几周前，我写了关于sqlite-utils 4.0rc1版本的文章。由于我们的Max订阅只有Claude Fable几天，所以我决定看看它是否能帮助我获得一个我觉得",
+      "contentTranslationStatus": "translated",
+      "translation": "sqlite-utils 4.0rc2 ，主要由Claude Fable编写（约149.25 $ ）",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-05T01:00:48+00:00",
+      "date": "2026-07-05",
+      "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Building a World Map with only 500 bytes",
+      "content": "Building a World Map with only 500 bytes Iwo Kadziela (assisted by Codex) figured out a way to generate a credible ASCII world map using 445 bytes of data: <img alt=\"A map of the",
+      "contentTranslation": "构建仅有500个字节的世界地图Iwo Kadziela （在Codex的协助下）找到了一种方法，可以使用445个字节的数据生成可信的ASCII世界地图： < img alt = \"",
+      "contentTranslationStatus": "translated",
+      "translation": "构建仅包含500字节的世界地图",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-04T23:09:02+00:00",
+      "date": "2026-07-05",
+      "url": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Better Models: Worse Tools",
+      "content": "Better Models: Worse Tools Armin reports on a weird problem he ran into while hacking on Pi: The short version is that newer Claude models sometimes call Pi’s edit tool with extra,",
+      "contentTranslation": "更好的模型：更糟糕的工具Armin报告了他在黑客攻击Pi时遇到的一个奇怪的问题：简短的版本是，较新的Claude模型有时会额外调用Pi的编辑工具，",
+      "contentTranslationStatus": "translated",
+      "translation": "更好的模型：更糟糕的工具",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-04T22:53:52+00:00",
+      "date": "2026-07-05",
+      "url": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Open Source AI Gap Map",
+      "content": "Open Source AI Gap Map Current AI is \"a global partnership building a public option for AI\", founded as a non-profit at the AI Action Summit in Paris in February 2025 and backed by serious capital",
+      "contentTranslation": "开源AI差距图当前AI是“建立AI公共选择的全球合作伙伴关系” ，于2025年2月在巴黎举行的AI行动峰会上作为非营利组织成立，并得到了重要资本的支持",
+      "contentTranslationStatus": "translated",
+      "translation": "开源AI差距图",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-03T22:04:31+00:00",
+      "date": "2026-07-04",
+      "url": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/3/judgement/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Fable's judgement",
+      "content": "One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and",
+      "contentTranslation": "我从周三在AIE与Claude Code团队的Cat Wu和Thariq Shihipar主持的炉边谈话中得到的最有趣的提示之一是让Fable （和",
+      "contentTranslationStatus": "translated",
+      "translation": "寓言的判断",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-03T18:51:06+00:00",
+      "date": "2026-07-04",
+      "url": "https://simonwillison.net/2026/Jul/3/judgement/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
     }
   ],
   "podcasts": [
     {
       "source": "podcast",
+      "name": "Unsupervised Learning (Redpoint)",
+      "title": "Ep 90: AI Pioneer Jürgen Schmidhuber on the State of AI Today",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-90-ai-pioneer-jurgen-schmidhuber-on-the-state-of-ai-today-yero2ugh",
+      "publishedAt": "Thu, 9 Jul 2026 13:00:00 +0000",
+      "excerpt": "Dr. Jürgen Schmidhuber, a renowned scientist and AI researcher widely regarded as one of the pioneers in the field, originated key ideas behind today's transformers, LSTMs, and recursive self-improvement through his lab's work. He argues that true AGI remains bottlenecked by physical hardware, that today's AI data center investments are headed for a correction as open-source keeps pace with closed labs, and that the path to general intelligence runs through artificial curiosity and self-generated experimentation rather than internet data. He closes by reconsidering mainstream AI safety arguments and offers a sweeping vision of self-replicating robot societies eventually colonizing the solar system. (0:00) Intro (1:24) How Close Is Superhuman AI? (2:27) Why ChatGPT Didn't Surprise Him (3:21) The Path to Recursive Self-Improvement (9:01) Will AI Takeoff…"
+    },
+    {
+      "source": "podcast",
       "name": "Unsupervised Learning",
       "title": "Ep 90: AI Pioneer Jürgen Schmidhuber on the State of AI Today",
-      "url": "https://www.youtube.com/watch?v=RKjR8DQ40po",
-      "publishedAt": "2026-07-09T13:00:00.000Z",
-      "excerpt": ""
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-90-ai-pioneer-jurgen-schmidhuber-on-the-state-of-ai-today-yero2ugh",
+      "publishedAt": "Thu, 9 Jul 2026 13:00:00 +0000",
+      "excerpt": "Dr. Jürgen Schmidhuber, a renowned scientist and AI researcher widely regarded as one of the pioneers in the field, originated key ideas behind today's transformers, LSTMs, and recursive self-improvement through his lab's work. He argues that true AGI remains bottlenecked by physical hardware, that today's AI data center investments are headed for a correction as open-source keeps pace with closed labs, and that the path to general intelligence runs through artificial curiosity and self-generated experimentation rather than internet data. He closes by reconsidering mainstream AI safety arguments and offers a sweeping vision of self-replicating robot societies eventually colonizing the solar system. (0:00) Intro (1:24) How Close Is Superhuman AI? (2:27) Why ChatGPT Didn't Surprise Him (3:21) The Path to Recursive Self-Improvement (9:01) Will AI Takeoff…"
+    },
+    {
+      "source": "podcast",
+      "name": "Unsupervised Learning (Redpoint)",
+      "title": "AI Vibe Check: Lab Wars, Why APIs Might Vanish & Future Predictions",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ai-vibe-check-lab-wars-why-apis-might-vanish-future-predictions-sr_Mp2pR",
+      "publishedAt": "Fri, 12 Jun 2026 12:51:00 +0000",
+      "excerpt": "Six months after their last roundup, Jacob sits down with Ari Morcos (Datology AI CEO, former Meta AI researcher) and Rob Toews (Radical Ventures partner, Forbes AI columnist) to take stock of an AI landscape that has shifted dramatically: coding agents crossing the long-time-horizon threshold has turned engineers into managers of agents, near-frontier open weight AI looks like it may be disappearing as Meta and the Chinese labs pull back, and Anthropic's restrictions on its newly released Fable model have its biggest supporters questioning whether safety framing is masking competitive positioning. The conversation runs through the full state of the lab wars, including Rob doubling down on his Sam Altman ouster prediction and the Bret Taylor succession theory, why Google's structural advantages remain intact despite falling behind on coding, what xAI's Cursor acquisition is really for, and Ari'…"
     }
   ]
 }
