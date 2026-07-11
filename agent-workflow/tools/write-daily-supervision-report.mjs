@@ -409,6 +409,7 @@ function scheduledTaskStateName(value) {
 
 function buildBusinessSignalsLane() {
   const problems = [];
+  const waiting = [];
   const warnings = [];
   const evidence = {};
   const actions = [];
@@ -535,7 +536,7 @@ function buildBusinessSignalsLane() {
       warnings.push("09:58 publication closure found no merged Business Signals PR and no same-date workflow run");
     }
     if (pagesActive) {
-      addProblem(problems, `GitHub Pages workflow is ${pages.latest_run.status}; publication closure should wait`, "waiting");
+      addWaiting(waiting, `GitHub Pages workflow is ${pages.latest_run.status}; publication closure should wait`);
       actions.push("wait for GitHub Pages workflow completion before declaring publication missing");
     } else if (pages.available && pages.latest_run?.conclusion && pages.latest_run.conclusion !== "success") {
       warnings.push(`latest same-date GitHub Pages workflow conclusion is ${pages.latest_run.conclusion}`);
@@ -552,7 +553,7 @@ function buildBusinessSignalsLane() {
       addProblem(problems, "no same-date Business Signals GitHub run after the morning production window", "manual_required");
       actions.push("inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-persistent-assets-pr.yml` only if targeted diagnosis proves no reusable same-date artifacts exist");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
-      addProblem(problems, `Business Signals workflow is ${gh.latest_run.status}; downstream tasks should wait`, "waiting");
+      addWaiting(waiting, `Business Signals workflow is ${gh.latest_run.status}; downstream tasks should wait`);
       actions.push("wait for Business Signals workflow completion before declaring data missing");
     } else if (gh.latest_run?.conclusion && gh.latest_run.conclusion !== "success") {
       if (mergedPr) {
@@ -599,7 +600,7 @@ function buildBusinessSignalsLane() {
       evidence.diagnosis.neededAction = "clean or isolate local sync blockers; do not rerun Business generated assets";
     }
   } else if (
-    problems.some((item) => /workflow is queued|workflow is in_progress|Pages workflow is/iu.test(item.message))
+    waiting.some((item) => /workflow is queued|workflow is in_progress|Pages workflow is/iu.test(item.message))
     || warnings.some((item) => /workflow conclusion|Pages|publication|manifest|Obsidian|dirty/iu.test(item))
   ) {
     evidence.diagnosis.category = warnings.some((item) => /Obsidian|dirty/iu.test(item)) ? "local_sync" : "publication";
@@ -615,9 +616,10 @@ function buildBusinessSignalsLane() {
     id: "business_signals",
     label: "Business Signals / Intelligence Map / Dashboard",
     schedule: "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox",
-    status: laneStatus(problems, warnings),
+    status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
+    waiting,
     warnings,
     actions: [...new Set(actions)],
   };

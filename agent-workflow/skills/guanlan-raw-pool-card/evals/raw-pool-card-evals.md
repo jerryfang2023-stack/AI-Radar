@@ -54,6 +54,8 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 
 11. `translated_frontstage_titles`
    - Pass when frontstage titles are complete and Chinese-facing unless the original product/company name must remain English.
+   - Pass when title-translation keys normalize repeated publisher/customer suffixes consistently across Card generation, frontstage build, and the source-first gate.
+   - Pass when an English product proper name followed by an explicit Chinese event action such as `发布` remains a valid localized title without a redundant translation lookup.
 
 12. `internal_language_block`
    - Pass when frontstage and Hermes JSON do not expose internal production phrases such as `index_only`, `not_fact_signal`, `auto_signal_spec_null`, `fallback`, `backend field`, or stale V2 module names.
