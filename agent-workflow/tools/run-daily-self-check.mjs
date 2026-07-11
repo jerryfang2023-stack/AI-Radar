@@ -135,6 +135,7 @@ function hasLaneWarning(report, laneId, pattern = /./u) {
 function runSafeRepairs(report) {
   const attempts = [];
   if (!["safe", "on", "true", "1"].includes(String(repairMode).toLowerCase())) return attempts;
+  const businessLane = (report?.lanes || []).find((lane) => lane.id === "business_signals");
 
   if (hasLaneProblem(report, "skill_ops", /skill-registry|registry|skill ops|skill-store|drift/iu)) {
     attempts.push(runNpm("repair skill registry", "build:skill-registry", [], 120000));
@@ -161,8 +162,10 @@ function runSafeRepairs(report) {
     }
   }
 
-  if (hasLaneProblem(report, "business_signals", /frontstage|public Card|source-first|regression|gate|activeDate|signal Card/iu)
-    || hasLaneWarning(report, "business_signals", /frontstage|public Card|source-first|regression|gate/iu)) {
+  if (businessLane?.status !== "waiting" && (
+    hasLaneProblem(report, "business_signals", /frontstage|public Card|source-first|regression|gate|activeDate|signal Card/iu)
+    || hasLaneWarning(report, "business_signals", /frontstage|public Card|source-first|regression|gate/iu)
+  )) {
     if (exists("01-SiteV2/site/data/v3-data-observation-desk.json")) {
       attempts.push(runNpm("rerun Business Signals frontstage gate", "assert:business-frontstage", [`--date=${date}`], 120000));
     }
@@ -279,12 +282,14 @@ function main() {
     ? "failed"
     : blockingIssues.length || repairAttempts.some((attempt) => !attempt.ok)
       ? "repair_required"
+      : report.status === "waiting"
+        ? "waiting"
       : issues.some((issue) => issue.kind === "warning")
         ? "warning"
         : "passed";
 
   const payload = {
-    ok: status === "passed" || status === "warning",
+    ok: status === "passed" || status === "warning" || status === "waiting",
     status,
     date,
     generated_at: new Date().toISOString(),

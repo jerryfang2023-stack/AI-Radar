@@ -61,7 +61,7 @@ function cleanScalar(value) {
 }
 
 export function parseFrontmatter(content) {
-  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  const match = content.match(/^\uFEFF?---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) return { raw: "", name: "", description: "", metadata: {} };
   const raw = match[1];
   const result = { raw, name: "", description: "", license: "", metadata: { guanlan: {} } };

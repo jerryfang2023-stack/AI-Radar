@@ -1,4 +1,4 @@
-﻿---
+---
 name: guanlan-daily-monitor
 description: Use when running, repairing, or updating the WaveSight AI current SITE-V3.4.5 / BSIG-V2.1.4-raw-card-rule-cleanout daily monitor source-capture layer for the Business Signals lane. It collects Raw candidates, captures original source evidence, routes Pool evidence, writes monitor logs, and hands off to monitor quality gates. It does not generate Cards, write frontstage copy, run First-Line Viewpoints, run Community Intelligence, or produce retired daily observation / brief / trend-report outputs.
 metadata:

@@ -38,6 +38,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
    - Pass when Hermes morning recovery and early handoff workflows, package scripts, and GitHub workflow files are absent.
    - Fail when the lane relies on repeated 10:07 / 12:07 / 13:07 / 14:07 schedule loops or a Hermes recovery/handoff workflow instead of producing a problem report and Codex inbox item.
    - Fail when a queued / in-progress same-date workflow is reported as `manual_required` instead of `waiting`.
+   - Fail when safe self-repair runs the active-date frontstage gate against stale local data while the same-date Business workflow is queued or in progress.
 
 10. `six_gate_card_entry_contract`
     - Pass when raw-to-card eligibility is expressed through exactly these grouped gates: `source_auditability`, `evidence_quality`, `business_signal_scope`, `valid_page_type`, `commercial_importance`, and `fact_type_constraints`.
@@ -101,6 +102,8 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when an active-date English funding source title without `title_zh` / translation-db coverage is blocked before publication and routed to Raw/Card translation repair.
     - Fail when Raw ingestion detects an English source title, only checks the translation DB, records `missing_translation_db_entry`, and continues without attempting generation.
     - Fail when a confirmed funding event with an English original title can publish by falling back to a generated `company + amount + round` title such as `X 获得 $Y 融资`.
+    - Pass when the source-first gate and frontstage builder normalize repeated publisher/customer title suffixes to the same translation key.
+    - Pass when a mixed title consisting of an English product proper name plus an explicit Chinese event action such as `发布` is treated as already localized rather than sent through a second translation lookup.
     - Pass when public facts come from Raw / Card extraction and template filler is repaired in the Card asset or generator.
     - Fail when the frontstage selector silently hides Cards or rewrites titles on generic source subjects, untranslated display titles, navigation fragments, weak fact support, or missing customer / ROI / before-after details after Raw / Pool / Card gates already passed. Missing title/fact ingestion fields should instead fail the unified pre-publication Business gate and route to Raw/Card repair.
 
