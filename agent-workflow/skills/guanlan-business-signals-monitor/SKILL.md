@@ -1,6 +1,6 @@
 ---
 name: guanlan-business-signals-monitor
-description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.5 / BSIG-V2.1.4-raw-card-rule-cleanout Business Signals lane. Covers daily Raw / Pool audit / unified frontstage Signal Cards / separate AI Hardware lens / Reports Center map inputs / trend-candidate inputs, source-first gates, raw-to-card release behavior, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for First-Line Viewpoints, Community Intelligence, direct deployment, or retired daily observation / brief / trend-report outputs.
+description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.5 / BSIG-V2.2.0-pipeline-stage-ownership Business Signals lane. Covers daily Raw / Pool audit / unified frontstage Signal Cards / separate AI Hardware lens / Reports Center map inputs / trend-candidate inputs, source-first gates, raw-to-card release behavior, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for First-Line Viewpoints, Community Intelligence, direct deployment, or retired daily observation / brief / trend-report outputs.
 metadata:
   guanlan:
     version: "1.1.0"
