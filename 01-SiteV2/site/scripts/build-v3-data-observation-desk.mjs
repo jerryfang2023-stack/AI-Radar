@@ -4207,6 +4207,7 @@ const rawCards = [
   ...signalRoots.flatMap((rootItem) => walkMarkdown(rootItem.dir).map((file) => cardFromFile(file, rootItem.category))),
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const activeDate = rawCards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
+syncSourceTitleTranslationsFromCards(rawCards, activeDate);
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPublicBusinessSignalEligible))
   .map((card) => normalizeFrontstageDisplay(card, { strictPublic: card.date === activeDate }))
   .filter((card) => card.title && card.date && card.sourceName)

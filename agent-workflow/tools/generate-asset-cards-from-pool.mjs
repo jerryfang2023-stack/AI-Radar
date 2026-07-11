@@ -2143,7 +2143,7 @@ function autoSignalSpec(poolRef, section, index) {
   if (type === "funding" && !hasStrictFundingAnnouncement(section, sourceEventTitle)) return null;
   const strategicInvestment = isConfirmedStrategicInvestment(section, sourceEventTitle);
   if (strategicInvestment && !titleHasFundingAmountOrRound(sourceEventTitle)) amount = "";
-  const translatedTitle = rawTitleZhFromSection(section) || sourceTitleDisplayTitle(sourceTitle);
+  const translatedTitle = sourceTitleDisplayTitle(sourceTitle) || rawTitleZhFromSection(section);
   let title = publicTitleForAutoSignal({ type, company, sourceEventTitle, amount, translatedTitle });
   if (!title && type === "funding" && strategicInvestment && !sourceTitleNeedsChineseTranslation(sourceEventTitle)) {
     title = `${company} 获得战略投资`;

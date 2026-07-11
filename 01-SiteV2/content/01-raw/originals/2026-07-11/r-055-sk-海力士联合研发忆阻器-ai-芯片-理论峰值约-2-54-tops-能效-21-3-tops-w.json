@@ -1,0 +1,268 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-055",
+  "title": "SK 海力士联合研发忆阻器 AI 芯片：理论峰值约 2.54 TOPS，能效 21.3 TOPS/W",
+  "title_zh": "SK 海力士联合研发忆阻器 AI 芯片：理论峰值约 2.54 TOPS，能效 21.3 TOPS/W",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://www.ithome.com/0/975/403.htm",
+  "canonical_url": "https://ithome.com/0/975/403.htm",
+  "source_name": "IT之家（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-11T02:20:30.000Z",
+  "collected_at": "2026-07-11T04:06:41.353Z",
+  "language": "mixed",
+  "full_text": "IT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称 SK 海力士携手 TetraMem、南加州大学， 为提升边缘 AI 设备神经网络推理能效，联合开发忆阻器（memristor）存内计算 SoC。\nIT之家注：忆阻器是一种电阻状态可按历史电流或电压变化而改变并保留的非易失性器件，可同时承担存储与计算相关功能。在 AI 芯片中，忆阻器常用于构成交叉阵列，以直接存放神经网络权重，适用于低功耗推理、边缘计算与新型存算一体架构研究。\n存内计算指把部分计算直接放在存储阵列内部完成，而非在处理器与存储器之间反复搬运数据。该方式可显著降低数据移动带来的延迟与功耗，常见于神经网络矩阵乘法、卷积推理、边缘 AI 加速器，以及对能效要求较高的嵌入式场景。\n本次三方联合研发的 SoC 面向轻量模型，采用嵌入式 RISC-V 处理器调度任务，集成 10 个神经处理单元（NPU），理论最佳情况下总算力约 2.54 TOPS。\n其中 1 个 NPU 专门用于深度卷积，另外 9 个执行逐点卷积与稠密运算。专用深度卷积 NPU 采用 8 个 252 × 28 锯齿形交叉阵列模块，保留 DAC 与 ADC 设计。\n9 个标准 NPU 各配备 1 组 256 × 256 忆阻器交叉阵列、256 个 8 位 DAC、256 个 8 位 ADC 及配套控制电路。\n单个忆阻器器件的有效编程精度仅略高于 2 位，因此设计采用双子阵列补偿技术，将有效权重精度提升至约 4 位。实测端到端推理准确率为 80.36%，与对应 4 位软件模型一致。\n性能方面，单个 NPU 峰值吞吐为 0.254 TOPS，在 100 MHz 下能效为 21.3 TOPS/W，在 400 MHz 下为 11.9 TOPS/W。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
+  "clean_text": "IT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称 SK 海力士携手 TetraMem、南加州大学， 为提升边缘 AI 设备神经网络推理能效，联合开发忆阻器（memristor）存内计算 SoC。\nIT之家注：忆阻器是一种电阻状态可按历史电流或电压变化而改变并保留的非易失性器件，可同时承担存储与计算相关功能。在 AI 芯片中，忆阻器常用于构成交叉阵列，以直接存放神经网络权重，适用于低功耗推理、边缘计算与新型存算一体架构研究。\n存内计算指把部分计算直接放在存储阵列内部完成，而非在处理器与存储器之间反复搬运数据。该方式可显著降低数据移动带来的延迟与功耗，常见于神经网络矩阵乘法、卷积推理、边缘 AI 加速器，以及对能效要求较高的嵌入式场景。\n本次三方联合研发的 SoC 面向轻量模型，采用嵌入式 RISC-V 处理器调度任务，集成 10 个神经处理单元（NPU），理论最佳情况下总算力约 2.54 TOPS。\n其中 1 个 NPU 专门用于深度卷积，另外 9 个执行逐点卷积与稠密运算。专用深度卷积 NPU 采用 8 个 252 × 28 锯齿形交叉阵列模块，保留 DAC 与 ADC 设计。\n9 个标准 NPU 各配备 1 组 256 × 256 忆阻器交叉阵列、256 个 8 位 DAC、256 个 8 位 ADC 及配套控制电路。\n单个忆阻器器件的有效编程精度仅略高于 2 位，因此设计采用双子阵列补偿技术，将有效权重精度提升至约 4 位。实测端到端推理准确率为 80.36%，与对应 4 位软件模型一致。\n性能方面，单个 NPU 峰值吞吐为 0.254 TOPS，在 100 MHz 下能效为 21.3 TOPS/W，在 400 MHz 下为 11.9 TOPS/W。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-11/r-055-sk-海力士联合研发忆阻器-ai-芯片-理论峰值约-2-54-tops-能效-21-3-tops-w.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-11/r-055-sk-海力士联合研发忆阻器-ai-芯片-理论峰值约-2-54-tops-能效-21-3-tops-w.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "low",
+  "extraction_method": "content-container",
+  "readability_score": 54,
+  "extractor_diagnostics": {
+    "readability_score": 54,
+    "text_length": 847,
+    "paragraph_count": 9,
+    "sentence_count": 9,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 847,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "e9aac67fc71f2484",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "SK 海力士联合研发忆阻器 AI 芯片：理论峰值约 2.54 TOPS，能效 21.3 TOPS/W",
+    "discovery_summary": "SK 海力士携手 TetraMem、南加州大学，联合开发了一款面向边缘 AI 推理的忆阻器存内计算 SoC。该芯片采用嵌入式 RISC-V 处理器调度任务，集成 10 个神经处理单元（NPU），理论最佳总算力约 2.54 TOPS。其中 1 个 NPU 专用于深度卷积，其余 9 个执行逐点卷积与稠密运算。通过双子阵列补偿技术将有效权重精度提升至约 4 位，实测端到端推理准确率达 80.36%。单个 NPU 在 100 MHz 下能效为 21.3 TOPS/W，在 400 MHz 下为 11.9 TOPS/W。",
+    "source_name": "IT之家（RSS）",
+    "origin_url": "https://www.ithome.com/0/975/403.htm",
+    "discovered_at": "2026-07-11T03:57:21.639Z",
+    "rank_on_page": 28,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "e7e592b93aae632a",
+  "content_hash": "e9aac67fc71f2484",
+  "full_text_hash": "e9aac67fc71f2484",
+  "semantic_hash": "70cf777e2870dc78",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-11T02:20:30.000Z",
+  "last_seen_at": "2026-07-11T04:06:41.353Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "SK 海力士携手 TetraMem、南加州大学，联合开发了一款面向边缘 AI 推理的忆阻器存内计算 SoC。该芯片采用嵌入式 RISC-V 处理器调度任务，集成 10 个神经处理单元（NPU），理论最佳总算力约 2.54 TOPS。其中 1 个 NPU 专用于深度卷积，其余 9 个执行逐点卷积与稠密运算。通过双子阵列补偿技术将有效权重精度提升至约 4 位，实测端到端推理准确率达 80.36%。单个 NPU 在 100 MHz 下能效为 21.3 TOPS/W，在 400 MHz 下为 11.9 TOPS/W。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "product_update",
+      "text": "IT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称 SK 海力士携手 TetraMem、南加州大学， 为提升边缘 AI 设备神经网络推理能效，联合开发忆阻器（memristor）存内计算 SoC。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "IT之家注：忆阻器是一种电阻状态可按历史电流或电压变化而改变并保留的非易失性器件，可同时承担存储与计算相关功能。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "在 AI 芯片中，忆阻器常用于构成交叉阵列，以直接存放神经网络权重，适用于低功耗推理、边缘计算与新型存算一体架构研究。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "存内计算指把部分计算直接放在存储阵列内部完成，而非在处理器与存储器之间反复搬运数据。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "该方式可显著降低数据移动带来的延迟与功耗，常见于神经网络矩阵乘法、卷积推理、边缘 AI 加速器，以及对能效要求较高的嵌入式场景。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-11T04:06:41.353Z",
+  "business_elements": {
+    "companies": [
+      "IT之家（RSS）"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2.54",
+      "21.3",
+      "10",
+      "1",
+      "9",
+      "4",
+      "80.36%",
+      "100 M"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "IT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称 SK 海力士携手 TetraMem、南加州大学， 为提升边缘 AI 设备神经网络推理能效，联合开发忆阻器（memristor）存内计算 SoC。",
+      "IT之家注：忆阻器是一种电阻状态可按历史电流或电压变化而改变并保留的非易失性器件，可同时承担存储与计算相关功能。",
+      "在 AI 芯片中，忆阻器常用于构成交叉阵列，以直接存放神经网络权重，适用于低功耗推理、边缘计算与新型存算一体架构研究。"
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 4,
+    "importance_reason": "new product or service; rubric=4 concrete important change",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 3,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# SK 海力士联合研发忆阻器 AI 芯片：理论峰值约 2.54 TOPS，能效 21.3 TOPS/W\n\n- raw_id: R-055\n- title_zh: SK 海力士联合研发忆阻器 AI 芯片：理论峰值约 2.54 TOPS，能效 21.3 TOPS/W\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.ithome.com/0/975/403.htm\n- source_name: IT之家（RSS）\n- collected_at: 2026-07-11T04:06:41.353Z\n\n## clean_text\n\nIT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称 SK 海力士携手 TetraMem、南加州大学， 为提升边缘 AI 设备神经网络推理能效，联合开发忆阻器（memristor）存内计算 SoC。\nIT之家注：忆阻器是一种电阻状态可按历史电流或电压变化而改变并保留的非易失性器件，可同时承担存储与计算相关功能。在 AI 芯片中，忆阻器常用于构成交叉阵列，以直接存放神经网络权重，适用于低功耗推理、边缘计算与新型存算一体架构研究。\n存内计算指把部分计算直接放在存储阵列内部完成，而非在处理器与存储器之间反复搬运数据。该方式可显著降低数据移动带来的延迟与功耗，常见于神经网络矩阵乘法、卷积推理、边缘 AI 加速器，以及对能效要求较高的嵌入式场景。\n本次三方联合研发的 SoC 面向轻量模型，采用嵌入式 RISC-V 处理器调度任务，集成 10 个神经处理单元（NPU），理论最佳情况下总算力约 2.54 TOPS。\n其中 1 个 NPU 专门用于深度卷积，另外 9 个执行逐点卷积与稠密运算。专用深度卷积 NPU 采用 8 个 252 × 28 锯齿形交叉阵列模块，保留 DAC 与 ADC 设计。\n9 个标准 NPU 各配备 1 组 256 × 256 忆阻器交叉阵列、256 个 8 位 DAC、256 个 8 位 ADC 及配套控制电路。\n单个忆阻器器件的有效编程精度仅略高于 2 位，因此设计采用双子阵列补偿技术，将有效权重精度提升至约 4 位。实测端到端推理准确率为 80.36%，与对应 4 位软件模型一致。\n性能方面，单个 NPU 峰值吞吐为 0.254 TOPS，在 100 MHz 下能效为 21.3 TOPS/W，在 400 MHz 下为 11.9 TOPS/W。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n\n## full_text\n\nIT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称 SK 海力士携手 TetraMem、南加州大学， 为提升边缘 AI 设备神经网络推理能效，联合开发忆阻器（memristor）存内计算 SoC。\nIT之家注：忆阻器是一种电阻状态可按历史电流或电压变化而改变并保留的非易失性器件，可同时承担存储与计算相关功能。在 AI 芯片中，忆阻器常用于构成交叉阵列，以直接存放神经网络权重，适用于低功耗推理、边缘计算与新型存算一体架构研究。\n存内计算指把部分计算直接放在存储阵列内部完成，而非在处理器与存储器之间反复搬运数据。该方式可显著降低数据移动带来的延迟与功耗，常见于神经网络矩阵乘法、卷积推理、边缘 AI 加速器，以及对能效要求较高的嵌入式场景。\n本次三方联合研发的 SoC 面向轻量模型，采用嵌入式 RISC-V 处理器调度任务，集成 10 个神经处理单元（NPU），理论最佳情况下总算力约 2.54 TOPS。\n其中 1 个 NPU 专门用于深度卷积，另外 9 个执行逐点卷积与稠密运算。专用深度卷积 NPU 采用 8 个 252 × 28 锯齿形交叉阵列模块，保留 DAC 与 ADC 设计。\n9 个标准 NPU 各配备 1 组 256 × 256 忆阻器交叉阵列、256 个 8 位 DAC、256 个 8 位 ADC 及配套控制电路。\n单个忆阻器器件的有效编程精度仅略高于 2 位，因此设计采用双子阵列补偿技术，将有效权重精度提升至约 4 位。实测端到端推理准确率为 80.36%，与对应 4 位软件模型一致。\n性能方面，单个 NPU 峰值吞吐为 0.254 TOPS，在 100 MHz 下能效为 21.3 TOPS/W，在 400 MHz 下为 11.9 TOPS/W。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 54\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: low\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] SK 海力士携手 TetraMem、南加州大学，联合开发了一款面向边缘 AI 推理的忆阻器存内计算 SoC。该芯片采用嵌入式 RISC-V 处理器调度任务，集成 10 个神经处理单元（NPU），理论最佳总算力约 2.54 TOPS。其中 1 个 NPU 专用于深度卷积，其余 9 个执行逐点卷积与稠密运算。通过双子阵列补偿技术将有效权重精度提升至约 4 位，实测端到端推理准确率达 80.36%。单个 NPU 在 100 MHz 下能效为 21.3 TOPS/W，在 400 MHz 下为 11.9 TOPS/W。\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] IT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称 SK 海力士携手 TetraMem、南加州大学， 为提升边缘 AI 设备神经网络推理能效，联合开发忆阻器（memristor）存内计算 SoC。\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] IT之家注：忆阻器是一种电阻状态可按历史电流或电压变化而改变并保留的非易失性器件，可同时承担存储与计算相关功能。\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 在 AI 芯片中，忆阻器常用于构成交叉阵列，以直接存放神经网络权重，适用于低功耗推理、边缘计算与新型存算一体架构研究。\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 存内计算指把部分计算直接放在存储阵列内部完成，而非在处理器与存储器之间反复搬运数据。\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 该方式可显著降低数据移动带来的延迟与功耗，常见于神经网络矩阵乘法、卷积推理、边缘 AI 加速器，以及对能效要求较高的嵌入式场景。\n"
+}
