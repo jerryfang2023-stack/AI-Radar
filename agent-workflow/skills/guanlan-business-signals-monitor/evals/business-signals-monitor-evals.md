@@ -64,7 +64,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when source-first and frontstage regression run as separate late-stage checks after unrelated operations data has already been generated.
 
 15. `failure_category_router`
-    - Pass when every failed or warning morning check is classified as one of: `supervision_observability`, `no_run_or_stale_assets`, `raw_volume_shortfall`, `pool_mix_shortfall`, `core_supply_shortfall`, `frontstage_card_contract`, `raw_card_ingestion_fields`, or `publication`.
+    - Pass when every failed or warning morning check is classified as one of: `supervision_observability`, `no_run_or_stale_assets`, `evidence_supply`, `card_generation`, `card_editorial_quality`, `frontstage_contract`, `raw_card_ingestion_fields`, or `publication`.
     - Pass when the repair targets the earliest responsible category and reruns the smallest relevant validation.
     - Fail when the same category causes more than one blind full-chain rerun without targeted repair.
 
@@ -83,8 +83,8 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 
 19. `provider_outage_pool_refill`
     - Pass when search-provider gateway/auth/domain failures are treated as provider unavailability and the monitor continues through source-backed fallback discovery instead of lowering coverage gates.
-    - Pass when post-fetch Pool importance gaps trigger targeted refill for the missing importance types before Card generation.
-    - Fail when an Exa `site:` domain restriction, Tavily 401, or Anysearch gateway outage can leave `importance_coverage_gaps_must_be_none` / `pool_importance_coverage_gaps_must_be_none` failing without a targeted refill attempt.
+    - Pass when a failed hard evidence-supply bucket can trigger at most one targeted refill before Card generation.
+    - Fail when an Exa, Tavily, Anysearch, RSS or peer-channel failure triggers repeated whole-monitor collection while minimum evidence supply is already healthy.
 
 20. `case_title_source_precedence`
     - Pass when case Signal Card generation prefers the original/source event title over generated scenario templates.
@@ -143,7 +143,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 27. `provider_fallback_does_not_mask_supply`
    - Pass when RSS HTTP 404 / 415 / 429 / 5xx, Anysearch quota exhaustion, or other search-provider temporary unavailable notes are classified as recovered after Pool audit, Card supply, and importance coverage gates are already satisfied.
     - Pass when `raw_count_min` shortfall remains visible as `raw_count_release_override=raw_to_card_supply` instead of blocking the lane by itself.
-    - Pass when `unrecovered_failed_sources_max` does not block release under `raw_to_card_supply_release=true`, while the failed source-channel notes remain visible in the gate report for supply-risk review.
+    - Pass when provider/source failures are absent from executable hard gates and remain visible in the gate report for supply-risk review.
     - Pass when keyword-only floors, AI-relevant title ratio, and off-topic raw-title count are visible diagnostics but do not block release under `raw_to_card_supply_release=true`.
     - Pass when source-artifact Raw selection rotates across GDELT, keyword search, RSS, and AI HOT as peer channels instead of consuming one fixed priority channel first.
     - Fail when a transient provider note or Raw-only shortage blocks Card generation after Pool audit supply and the frontstage Card contract are sufficient, or when provider recovery hides a true Pool/Card shortage.
@@ -173,8 +173,15 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 31. `editorial_quality_gate_is_release_blocking`
     - Pass when the unified Business frontstage gate runs `assert-signal-card-editorial-quality.mjs` before publication.
     - Pass when the gate blocks stale or undated events, failed/summary-only source extraction, title-as-fact output, and repeated fact / points / value / excerpt fields.
+    - Pass when zero active-date formal Cards fails at the Card editorial stage before frontstage build.
     - Pass when the 2026-07-11 regression fixture preserves confirmed IPO, lawsuit, product-shutdown, customer-deployment, and distributed-compute pilot recall while rejecting old launches, company profiles, explainers, and weak evidence.
     - Fail when source-first and frontstage-regression gates pass despite editorial detail duplication or when routed Pool thresholds silently fall below the current contract.
+
+32. `single_attempt_stage_machine`
+    - Pass when the production path is exactly evidence capture/gate -> Card generation/dedupe/editorial gate -> frontstage contract -> publication.
+    - Pass when the monitor runs once, Raw-volume refill is disabled, and a hard evidence-supply gap permits at most one targeted refill.
+    - Pass when PR conflicts and open automation branches are classified as `publication_waiting` and cannot dispatch another full monitor run.
+    - Fail when duplicate readiness gates parse the same monitor report, when Business dry run generates another column, or when publication failure is reported as monitor failure.
 
 ## Repair Loop
 

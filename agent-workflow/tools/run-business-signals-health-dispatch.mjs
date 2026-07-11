@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 
 const root = process.cwd();
@@ -65,12 +66,20 @@ function businessAssets() {
   const cards = Array.isArray(data.frontstageCards) ? data.frontstageCards : (Array.isArray(data.cards) ? data.cards : []);
   const sameDateCards = cards.filter((item) => !item?.date || item.date === date);
   const badTitleCount = sameDateCards.filter((item) => badBusinessTitle(item.title || item.displayTitle || "")).length;
+  const rawFile = path.join(root, "01-SiteV2", "content", "01-raw", `${date}-raw-candidates.md`);
+  const poolFile = path.join(root, "01-SiteV2", "content", "02-pool", `${date}-pool-candidates.md`);
+  const frontstageGate = runOptional(process.execPath, ["agent-workflow/tools/assert-business-signals-frontstage.mjs", `--date=${date}`]);
+  const chainGate = runOptional(process.execPath, ["agent-workflow/tools/assert-daily-production-chain.mjs", `--date=${date}`, "--stage=pre-commit", "--block-stale=true"]);
   return {
-    ready: activeDate === date && sameDateCards.length > 0 && badTitleCount === 0,
+    ready: fs.existsSync(rawFile) && fs.existsSync(poolFile) && activeDate === date && sameDateCards.length > 0 && badTitleCount === 0 && frontstageGate.ok && chainGate.ok,
     file: rel(file),
+    rawFile: rel(rawFile),
+    poolFile: rel(poolFile),
     activeDate,
     cards: sameDateCards.length,
     badTitleCount,
+    frontstageGatePassed: frontstageGate.ok,
+    chainGatePassed: chainGate.ok,
     generatedAt: data?.meta?.generatedAt || "",
   };
 }
@@ -107,6 +116,64 @@ function workflowRuns() {
       sameDateRuns: [],
     };
   }
+}
+
+function publicationState() {
+  const branch = `automation/business-signals-${date}`;
+  const prResult = runOptional("gh", [
+    "pr", "list", "--base", "main", "--head", branch, "--state", "open",
+    "--json", "number,url,mergeStateStatus,isDraft",
+  ]);
+  let pullRequest = null;
+  if (prResult.ok) {
+    try {
+      pullRequest = JSON.parse(prResult.stdout || "[]")[0] || null;
+    } catch {
+      pullRequest = null;
+    }
+  }
+  const branchResult = runOptional("git", ["ls-remote", "--exit-code", "--heads", "origin", branch]);
+  return {
+    branch,
+    branch_exists: branchResult.ok,
+    pull_request: pullRequest,
+    waiting: Boolean(pullRequest || branchResult.ok),
+  };
+}
+
+export function decideHealthState({ runsAvailable, runsError = "", assetsReady, activeRun, publication, successfulRun }) {
+  if (!runsAvailable) return { ok: false, action: "failed", reason: `GitHub run inspection failed: ${runsError}`, dispatchRequired: false };
+  if (assetsReady) return { ok: true, action: "skipped", reason: "same-date Business Signals assets are already healthy", dispatchRequired: false };
+  if (activeRun) return { ok: true, action: "waiting", reason: `same-date Business Signals workflow is already ${activeRun.status}`, dispatchRequired: false };
+  if (publication?.waiting) {
+    return {
+      ok: true,
+      action: "publication_waiting",
+      reason: publication.pull_request
+        ? `same-date production branch has open PR ${publication.pull_request.url}; repair or merge publication without rerunning collection`
+        : `same-date production branch ${publication.branch} exists without healthy main assets; repair publication without rerunning collection`,
+      dispatchRequired: false,
+    };
+  }
+  if (successfulRun) {
+    return {
+      ok: true,
+      action: "publication_waiting",
+      reason: `same-date production run succeeded but main assets are not healthy yet; inspect publication state instead of rerunning collection: ${successfulRun.url}`,
+      dispatchRequired: false,
+    };
+  }
+  return { ok: true, action: "dispatch_required", reason: "no healthy same-date assets and no active/successful/publication-waiting run", dispatchRequired: true };
+}
+
+function runPolicyFixtures() {
+  const base = { runsAvailable: true, runsError: "", assetsReady: false, activeRun: null, publication: { waiting: false }, successfulRun: null };
+  assert.equal(decideHealthState({ ...base, assetsReady: true }).action, "skipped");
+  assert.equal(decideHealthState({ ...base, activeRun: { status: "in_progress" } }).action, "waiting");
+  assert.equal(decideHealthState({ ...base, publication: { waiting: true, branch: "automation/business-signals-fixture", pull_request: { url: "https://example.test/pr/1" } } }).action, "publication_waiting");
+  assert.equal(decideHealthState({ ...base, successfulRun: { url: "https://example.test/run/1" } }).action, "publication_waiting");
+  assert.equal(decideHealthState(base).dispatchRequired, true);
+  console.log(JSON.stringify({ ok: true, fixture: "business-signals-health-state" }, null, 2));
 }
 
 function dispatchWorkflow() {
@@ -147,6 +214,7 @@ function writeReports(payload) {
     `- assets: \`${JSON.stringify(payload.assets)}\``,
     `- active_run: ${payload.active_run?.url || "none"}`,
     `- successful_run: ${payload.successful_run?.url || "none"}`,
+    `- publication: \`${JSON.stringify(payload.publication)}\``,
     `- dispatch_output: ${payload.dispatch_output || "none"}`,
     "",
   ].join("\n");
@@ -161,26 +229,21 @@ function main() {
   if (!date) throw new Error("Unable to resolve production date.");
   const assets = businessAssets();
   const runs = workflowRuns();
+  const publication = publicationState();
   const activeRun = runs.sameDateRuns.find((run) => run.status === "queued" || run.status === "in_progress") || null;
   const successfulRun = runs.sameDateRuns.find((run) => run.conclusion === "success") || null;
-  let action = "skipped";
-  let reason = "same-date Business Signals assets are already healthy";
-  let ok = true;
+  const decision = decideHealthState({
+    runsAvailable: runs.available,
+    runsError: runs.error,
+    assetsReady: assets.ready,
+    activeRun,
+    publication,
+    successfulRun,
+  });
+  let { action, reason, ok } = decision;
   let dispatch = null;
 
-  if (!runs.available) {
-    action = "failed";
-    reason = `GitHub run inspection failed: ${runs.error}`;
-    ok = false;
-  } else if (assets.ready) {
-    action = "skipped";
-  } else if (activeRun) {
-    action = "waiting";
-    reason = `same-date Business Signals workflow is already ${activeRun.status}`;
-  } else if (successfulRun) {
-    action = "skipped";
-    reason = `same-date successful Business Signals workflow already exists: ${successfulRun.url}`;
-  } else {
+  if (decision.dispatchRequired) {
     dispatch = dispatchWorkflow();
     ok = dispatch.ok;
     action = dryRun ? "dry_run_dispatch" : dispatch.ok ? "dispatched" : "dispatch_failed";
@@ -201,6 +264,7 @@ function main() {
     assets,
     active_run: activeRun,
     successful_run: successfulRun,
+    publication,
     same_date_runs: runs.sameDateRuns,
     dispatch_output: dispatch?.output || "",
   };
@@ -216,4 +280,5 @@ function main() {
   if (!ok) process.exit(1);
 }
 
-main();
+if (args.get("policy-fixtures") === "true") runPolicyFixtures();
+else main();

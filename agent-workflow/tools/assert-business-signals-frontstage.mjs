@@ -12,6 +12,7 @@ const args = new Map(
 );
 
 const date = args.get("date") || process.env.RUN_DATE || new Date().toISOString().slice(0, 10);
+const skipEditorial = args.get("skip-editorial") === "true";
 const reportsDir = path.join(root, "agent-workflow", "reports");
 
 function rel(file) {
@@ -47,13 +48,16 @@ function runGate(id, label, script, extraArgs = []) {
 function classify(text = "") {
   const categories = new Set();
   if (/v3_active_date_has_no_cards|no public Cards|public Card count is 0|frontstage .* has no public Cards/iu.test(text)) {
-    categories.add("frontstage_card_contract");
+    categories.add("frontstage_contract");
   }
   if (/untranslated|translation|needs translation|has untranslated/iu.test(text)) {
-    categories.add("translation");
+    categories.add("raw_card_ingestion_fields");
   }
   if (/model-generated title|generic generated title|missing public title|missing source\/display title|public title/iu.test(text)) {
-    categories.add("title_source");
+    categories.add("raw_card_ingestion_fields");
+  }
+  if (/stale source|missing source publication date|news fact repeats title|duplicate .+\/.+|missing public detail field|formal Card lacks readable source body/iu.test(text)) {
+    categories.add("card_editorial_quality");
   }
   if (/weak news fact|source-derived|source-first|source backed|backend candidate|missing selection reasons|missing source URL references/iu.test(text)) {
     categories.add("source_first");
@@ -71,7 +75,7 @@ function markdownCode(text = "") {
 
 const gateArgs = [`--date=${date}`];
 const gates = [
-  runGate("editorial_quality", "Signal Card editorial quality gate", "agent-workflow/tools/assert-signal-card-editorial-quality.mjs", gateArgs),
+  ...(!skipEditorial ? [runGate("editorial_quality", "Signal Card editorial quality gate", "agent-workflow/tools/assert-signal-card-editorial-quality.mjs", gateArgs)] : []),
   runGate("source_first", "V3 source-first frontstage gate", "agent-workflow/tools/assert-v3-source-first-frontstage.mjs", gateArgs),
   runGate("frontstage_regression", "Frontstage regression gate", "agent-workflow/tools/frontstage-regression-gate.mjs", gateArgs),
 ];

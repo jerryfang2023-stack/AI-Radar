@@ -2,6 +2,11 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
+## 2026-07-11 Single-Attempt Stage Ownership
+
+- Business Signals production has four owning stages: evidence supply, Card/editorial quality, frontstage contract, and publication. The monitor runs once; provider/volume/mix diagnostics cannot trigger another full collection, and a failed hard evidence bucket permits at most one targeted refill.
+- Open automation PRs and merge conflicts are `publication_waiting`. Health dispatch must repair or merge publication instead of recollecting Raw / Pool / Cards.
+
 ## 2026-07-11 Editorial Gate Must Be Release-Blocking
 
 - Source-first structure checks do not prove editorial quality. The unified Business gate must also block stale or undated events, summary-only evidence, title-as-fact output, and duplicated public detail fields.

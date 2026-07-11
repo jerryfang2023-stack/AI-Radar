@@ -114,13 +114,13 @@ Large-company items are allowed, but they cannot dominate the day.
 
 Current quantity gates:
 
-- daily production chain expects at least 150 active Raw candidates;
+- daily production chain keeps 150 active Raw candidates as a coverage target, not an independent release blocker;
 - Raw shortfall caused by search-provider quota or temporary outage must not block release by itself when Pool audit supply and the downstream frontstage Card contract are sufficient; keep the shortfall visible as a diagnostic.
 - GDELT, keyword search, RSS, and AI HOT are peer source-artifact entrances for Raw. Raw selection should use balanced rotation across available peer channels, not a fixed priority order.
 - AI HOT, RSS, keyword search, GDELT, Anysearch, Tavily, Exa, or any other discovery label is not a Core Pool decision. Every candidate must be resolved to the original source, then judged by the original page's evidence quality, page type, freshness, commercial importance, and formal Card gates.
 - daily Pool audit gate expects at least 75 Pool items and at least 60 routed Pool items; Card release is decided by raw-to-card cardability, not by a separate core-pool quota;
 - Pool generation must not cap the selected Pool at a fixed top-N / buffer count. After Raw collection, preserve all non-discard screened evidence in the Pool file so repairable high-value items remain visible for Card processing and audit.
-- each required importance lane should keep at least 5 Pool candidates before downstream release;
+- each required importance lane should target at least 5 Pool candidates for coverage diagnostics; a lane gap does not independently block a healthy Card/frontstage set;
 - frontstage Card presentation publishes all active-date qualified Raw / Pool business signals that pass the formal Card gate and public display requirements.
 - Signal Card assets should cover all cardable Raw / Pool business signals so relationship graph and trend-candidate modules can use the same eligible evidence set.
 - If routed Pool or cardable supply is thin, targeted refill must search for recent concrete events: customer deployment, production rollout, product launch, funding, procurement, pricing, regulatory, or vertical workflow evidence. Do not repair supply by using marketplace listings, directories, generic guides, interviews, old technical posts, broad lists, funding roundups, or generic funding commentary as Card evidence.

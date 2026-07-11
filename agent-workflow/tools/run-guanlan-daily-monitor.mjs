@@ -193,6 +193,10 @@ const routedPoolMinTarget = numericConfig(monitorDiagnosticTargets.routed_pool_c
 const corePoolMinTarget = numericConfig(monitorDiagnosticTargets.core_pool_target, numericConfig(monitorHardGates.core_pool_min, 30));
 const coreNonLargeVendorMinTarget = numericConfig(monitorDiagnosticTargets.core_non_large_vendor_target, numericConfig(monitorHardGates.core_non_large_vendor_min, 20));
 const coreLargeVendorMaxTarget = numericConfig(monitorDiagnosticTargets.core_large_vendor_max, numericConfig(monitorHardGates.core_large_vendor_max, 10));
+const poolSupplyMin = numericConfig(monitorHardGates.pool_count_min, 15);
+const routedPoolSupplyMin = numericConfig(monitorHardGates.routed_pool_count_min, 10);
+const corePoolSupplyMin = numericConfig(monitorHardGates.core_pool_min, 1);
+const targetedSupplyRefillCycles = numericConfig(monitorGateConfig.pipeline_policy?.targeted_supply_refill_cycles, 1);
 const corePoolMaxPerImportanceType = numericConfig(layeredSearchRequirements.core_pool_max_per_importance_type, 8);
 const poolSelectionBufferTarget = numericConfig(layeredSearchRequirements.pool_selection_buffer, 20);
 
@@ -4336,22 +4340,22 @@ function coreSupplyGaps(items) {
   return {
     coreCount: coreMetas.length,
     routedCount: routedMetas.length,
+    poolCount: poolItems.length,
     nonLargeCoreCount: nonLargeCoreMetas.length,
     gaps: [
-      routedMetas.length < routedPoolMinTarget ? `routed_pool=${routedMetas.length}/${routedPoolMinTarget}` : "",
-      coreMetas.length < corePoolMinTarget ? `core_pool=${coreMetas.length}/${corePoolMinTarget}` : "",
-      nonLargeCoreMetas.length < coreNonLargeVendorMinTarget ? `core_non_large=${nonLargeCoreMetas.length}/${coreNonLargeVendorMinTarget}` : "",
+      poolItems.length < poolSupplyMin ? `pool=${poolItems.length}/${poolSupplyMin}` : "",
+      routedMetas.length < routedPoolSupplyMin ? `routed_pool=${routedMetas.length}/${routedPoolSupplyMin}` : "",
+      coreMetas.length < corePoolSupplyMin ? `core_pool=${coreMetas.length}/${corePoolSupplyMin}` : "",
     ].filter(Boolean),
   };
 }
 
-function refillRequestsForPoolState(poolGaps, supplyGaps) {
-  if (poolGaps.length) return poolGaps;
+function refillRequestsForPoolState(supplyGaps) {
   if (!supplyGaps.gaps.length) return [];
   const needed = Math.max(
-    routedPoolMinTarget - supplyGaps.routedCount,
-    corePoolMinTarget - supplyGaps.coreCount,
-    coreNonLargeVendorMinTarget - supplyGaps.nonLargeCoreCount,
+    poolSupplyMin - supplyGaps.poolCount,
+    routedPoolSupplyMin - supplyGaps.routedCount,
+    corePoolSupplyMin - supplyGaps.coreCount,
     1
   );
   return targetedCoreRefillImportanceOrder.map((importanceType) => ({
@@ -4426,10 +4430,10 @@ async function refillPoolImportanceGaps(items, failures) {
     }
     return { added, current: prioritizeAfterFetch([...baseItems, ...added]) };
   };
-  for (let cycle = 1; cycle <= 3; cycle += 1) {
+  for (let cycle = 1; cycle <= targetedSupplyRefillCycles; cycle += 1) {
     const poolGaps = importanceCoverageGaps(selectMonitorPoolItems(current), "pool");
     const supplyGaps = coreSupplyGaps(current);
-    const refillRequests = refillRequestsForPoolState(poolGaps, supplyGaps);
+    const refillRequests = refillRequestsForPoolState(supplyGaps);
     if (!refillRequests.length) break;
     const refill = await collectTargetedImportanceRefill(refillRequests, current);
     failures.push(...refill.failures);
@@ -4446,27 +4450,6 @@ async function refillPoolImportanceGaps(items, failures) {
     const added = result.added;
     current = result.current;
     failures.push(`targeted pool/core refill cycle ${cycle} added ${added.length} item(s) for ${gapText}`);
-    if (!added.length) break;
-  }
-  for (let cycle = 1; current.length < rawMinTarget && cycle <= 2; cycle += 1) {
-    const needed = rawMinTarget - current.length;
-    const perLane = Math.max(1, Math.ceil(needed / targetedCoreRefillImportanceOrder.length));
-    const refillRequests = targetedCoreRefillImportanceOrder.map((importanceType) => ({
-      importanceType,
-      count: 0,
-      min: perLane,
-    }));
-    const refill = await collectTargetedImportanceRefill(refillRequests, current);
-    failures.push(...refill.failures);
-    if (!refill.items.length) {
-      failures.push(`targeted raw-volume refill cycle ${cycle} returned 0 usable result(s) for raw_count=${current.length}/${rawMinTarget}`);
-      break;
-    }
-    const enrichedRefill = await normalizeRefillItems(refill.items);
-    const result = appendUnique(current, enrichedRefill);
-    const added = result.added;
-    current = result.current;
-    failures.push(`targeted raw-volume refill cycle ${cycle} added ${added.length} item(s) for raw_count=${current.length}/${rawMinTarget}`);
     if (!added.length) break;
   }
   return current;
@@ -5272,8 +5255,7 @@ async function main() {
     || gdeltQueryLimit > 0
     || normalizedItems.length < rawMinTarget
     || coverageGaps.length;
-  const sourceArtifactsNeedSupplement = useSourceArtifacts && (normalizedItems.length < rawMinTarget || coverageGaps.length);
-  if ((!useSourceArtifacts && shouldRunExternalSearch) || sourceArtifactsNeedSupplement) {
+  if (!useSourceArtifacts && shouldRunExternalSearch) {
     searchActivated = true;
     [keywordSearch, gdelt, rss] = await Promise.all([
       collectKeywordSearch(),

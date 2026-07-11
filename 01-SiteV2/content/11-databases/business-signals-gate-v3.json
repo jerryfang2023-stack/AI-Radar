@@ -1,6 +1,6 @@
 {
-  "schema_version": "v3.4.4-business-signals-gate-1.0",
-  "updated_at": "2026-07-09",
+  "schema_version": "v3.4.5-business-signals-gate-2.0",
+  "updated_at": "2026-07-11",
   "owner": "Business Signals / Build & Release Agent",
   "purpose": "Current V3 Business Signals release gate. It protects the Raw -> Pool -> Card -> Frontstage chain without preserving V1/V2 Top10, public-copy, or fixed-volume release semantics.",
   "diagnostic_score_reference": 85,
@@ -10,7 +10,15 @@
   "final_qc_skill": "guanlan-daily-monitor-qc",
   "final_qc_report_pattern": "agent-workflow/reports/<YYYY-MM-DD>-guanlan-daily-monitor-qc.md",
   "final_qc_freshness_required": false,
-  "downstream_release_rule": "Release is decided by V3 monitor hard gates plus Card generation, Pool-to-Card duplicate/freshness gate, source-first frontstage gate, frontstage regression gate, operations-data sync, and same-date freshness. Raw volume, channel breadth, importance-lane coverage, score, and final QC are diagnostics unless they expose a true Card or frontstage evidence failure.",
+  "downstream_release_rule": "Release is decided in four stages: evidence supply, Card generation/editorial quality, frontstage contract, and publication. Raw volume, channel breadth, provider availability, importance-lane coverage, score, and optional semantic QC are diagnostics unless the evidence-supply or Card/frontstage gates also fail.",
+  "pipeline_policy": {
+    "monitor_attempts": 1,
+    "targeted_supply_refill_cycles": 1,
+    "raw_volume_refill": false,
+    "provider_failures": "diagnostic_unless_evidence_supply_fails",
+    "semantic_qc": "on_demand_diagnostic",
+    "publication_conflict": "publication_waiting"
+  },
   "deprecated_blockers_removed": [
     "Top10 exactly 10 cards",
     "active-date top10 public JSON field",
@@ -26,7 +34,7 @@
     "no usable Core Pool evidence is available for Card generation",
     "index, directory, homepage, or contaminated text is promoted to Core Pool",
     "blocked or degraded Raw QC item remains in Core Pool",
-    "unrecovered source-provider failure leaves Pool/Card supply below release minimum",
+    "source-provider failure leaves the evidence-supply minimum unmet",
     "Pool-to-Card duplicate, stale-source, title-source, source-first, or frontstage regression gate fails"
   ],
   "weights": {
@@ -45,8 +53,7 @@
     "homepage_directory_core_max": 0,
     "core_text_contamination_max": 0,
     "core_raw_qc_block_max": 0,
-    "core_raw_qc_degraded_max": 0,
-    "unrecovered_failed_sources_max": 0
+    "core_raw_qc_degraded_max": 0
   },
   "diagnostic_targets": {
     "raw_count_min": 150,
@@ -131,20 +138,12 @@
     "definition",
     "tool directory"
   ],
-  "retry_tuning": {
-    "search_limit_step": 80,
-    "search_path_query_limit_step": 3,
-    "gdelt_query_limit_step": 6,
-    "hn_limit_step": 0,
-    "raw_dedupe_buffer_base": 140,
-    "raw_dedupe_buffer_step": 20,
-    "raw_dedupe_buffer_max": 180,
-    "raw_max_base": 360,
-    "raw_max_step": 30,
-    "raw_max_max": 420,
-    "search_limit_max": 360,
-    "search_path_query_limit_max": 11,
-    "gdelt_query_limit_max": 24,
-    "hn_limit_max": 8
+  "monitor_limits": {
+    "search_limit": 200,
+    "search_path_query_limit": 5,
+    "gdelt_query_limit": 12,
+    "hn_limit": 8,
+    "raw_dedupe_buffer": 140,
+    "raw_max": 360
   }
 }
