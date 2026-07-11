@@ -1,0 +1,219 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-039
+title: "AI 内存 V-Die 方案亮相：侧立放置 DRAM 吞吐 540 tokens/s，较 HBM4 高 82.43%"
+title_zh: "AI 内存 V-Die 方案亮相：侧立放置 DRAM 吞吐 540 tokens/s，较 HBM4 高 82.43%"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/975/397.htm"
+canonical_url: "https://ithome.com/0/975/397.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-11T01:52:35.000Z"
+collected_at: 2026-07-11T04:06:39.248Z
+language: mixed
+full_text_hash: a9e5ebb90c21ec20
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-11/r-039-ai-内存-v-die-方案亮相-侧立放置-dram-吞吐-540-tokens-s-较-hbm4-高-82-43.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-11/r-039-ai-内存-v-die-方案亮相-侧立放置-dram-吞吐-540-tokens-s-较-hbm4-高-82-43.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 60
+extractor_diagnostics: {"readability_score":60,"text_length":1079,"paragraph_count":11,"sentence_count":12,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1079
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a9e5ebb90c21ec20","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"AI 内存 V-Die 方案亮相：侧立放置 DRAM 吞吐 540 tokens/s，较 HBM4 高 82.43%","discovery_summary":"韩国UNIST在IEEE/JSAP研讨会上提出V-Die方案，将DRAM侧立放置并取消TSV，改用底边I/O连接，相邻裸片间加入液冷通道。与HBM4等容量对比下，V-Die在GPT-3规模工作负载中达540 tokens/s，HBM4为296 tokens/s，高出82.43%。底边连接间距20微米，连接数量可达HBM4的4倍，内存读取时间下降37%。16层堆叠仿真中首Token时延降低32%（约24毫秒），微流体冷却可将堆叠温度维持在约45°C。东京大学牵头团队提出的MOSAIC方案采用正交裸片堆叠与无接触裸片互连，原型接口速率最高达4 Gbps/通道，可实现HBM4级容量的2倍。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/397.htm","discovered_at":"2026-07-11T03:57:21.641Z","rank_on_page":34,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 471e0822fd6c9872
+content_hash: a9e5ebb90c21ec20
+semantic_hash: d9fd0c8811082c0c
+duplicate_of: ""
+first_seen_at: "2026-07-11T01:52:35.000Z"
+last_seen_at: 2026-07-11T04:06:39.248Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_market_structure","importance_score":5,"importance_reason":"market-structure commercial event; rubric=5 major/platform/industry-shaping","supporting_signals":["ai_hardware_lens","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":["制造 / 工业"],"roles":[],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["540","4","82.43%","3","296","20","4倍","37%"],"quotes":[]}
+evidence_seed: {"company_actions":["IT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称在 6 月召开的 IEEE / JSAP 超大规模集成电路技术研讨会上， 针对 AI 加速器的内存散热与带宽瓶颈，研究团队提出 V-Die 与 MOSAIC 两种 HBM 集成方案。","IT之家注：高带宽内存（HBM）是面向高性能计算与 AI 加速器的近封装内存技术，通过多层 DRAM 堆叠，并借助超宽总线与处理器近距离互连，以较短数据路径提供极高带宽。","典型应用包括 GPU、AI 训练与推理加速器、超级计算节点等高吞吐场景。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"韩国UNIST在IEEE/JSAP研讨会上提出V-Die方案，将DRAM侧立放置并取消TSV，改用底边I/O连接，相邻裸片间加入液冷通道。与HBM4等容量对比下，V-Die在GPT-3规模工作负载中达540 tokens/s，HBM4为296 tokens/s，高出82.43%。底边连接间距20微米，连接数量可达HBM4的4倍，内存读取时间下降37%。16层堆叠仿真中首Token时延降低32%（约24毫秒），微流体冷却可将堆叠温度维持在约45°C。东京大学牵头团队提出的MOSAIC方案采用正交裸片堆叠与无接触裸片互连，原型接口速率最高达4 Gbps/通道，可实现HBM4级容量的2倍。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称在 6 月召开的 IEEE / JSAP 超大规模集成电路技术研讨会上， 针对 AI 加速器的内存散热与带宽瓶颈，研究团队提出 V-Die 与 MOSAIC 两种 HBM 集成方案。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家注：高带宽内存（HBM）是面向高性能计算与 AI 加速器的近封装内存技术，通过多层 DRAM 堆叠，并借助超宽总线与处理器近距离互连，以较短数据路径提供极高带宽。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"典型应用包括 GPU、AI 训练与推理加速器、超级计算节点等高吞吐场景。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"图源：AMD 为了缓解 AI 加速器 HBM 内存散热与带宽瓶颈，韩国蔚山国立科学技术院（UNIST）研究人员提出 V-Die 解决方案，而日本东京大学牵头团队提出 MOSAIC 两种解决方案。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"两者共同思路是将 DRAM 芯片由传统向上堆叠，改为侧立放置，以缓解更高堆叠带来的散热压力。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-11T04:06:39.248Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# AI 内存 V-Die 方案亮相：侧立放置 DRAM 吞吐 540 tokens/s，较 HBM4 高 82.43%
+
+## clean_text
+
+IT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称在 6 月召开的 IEEE / JSAP 超大规模集成电路技术研讨会上， 针对 AI 加速器的内存散热与带宽瓶颈，研究团队提出 V-Die 与 MOSAIC 两种 HBM 集成方案。
+IT之家注：高带宽内存（HBM）是面向高性能计算与 AI 加速器的近封装内存技术，通过多层 DRAM 堆叠，并借助超宽总线与处理器近距离互连，以较短数据路径提供极高带宽。典型应用包括 GPU、AI 训练与推理加速器、超级计算节点等高吞吐场景。
+图源：AMD 为了缓解 AI 加速器 HBM 内存散热与带宽瓶颈，韩国蔚山国立科学技术院（UNIST）研究人员提出 V-Die 解决方案，而日本东京大学牵头团队提出 MOSAIC 两种解决方案。
+两者共同思路是将 DRAM 芯片由传统向上堆叠，改为侧立放置，以缓解更高堆叠带来的散热压力。
+V-Die 竖直放置 DRAM Die 芯片，取消 TSV（硅通孔），改用每片裸片底边 I/O 连接，并在相邻裸片间加入液冷通道。
+研究团队称，在与 HBM4 等容量对比下， V-Die 在 GPT-3 规模工作负载中达到 540 tokens/s，而 HBM4 为 296 tokens/s，前者高出 82.43%。 V-Die 底边连接间距为 20 微米，连接数量可达 HBM4 的 4 倍，内存读取时间下降 37%。
+在一组与 H100 级硬件匹配的 16 层堆叠仿真中，该方案将首 Token 时延降低 32%，约 24 毫秒。散热方面，团队称微流体冷却可将堆叠温度维持在约 45°C，低于高密度 HBM 系统常见的 80°C 以上区间。
+MOSAIC 方案由东京大学牵头团队提出，重点在于提升侧立堆叠的可制造性。该方案采用正交裸片堆叠与无接触裸片互连，用微型感应线圈替代严格对准的金属信号接触。
+研究人员称，该原型接口速率最高达 4 Gbps / 通道，并可在 DRAM-on-GPU 结构中实现 HBM4 级容量的 2 倍。
+另一组相关的 bump-MOSAIC 硬件演示在 ECTC 会议披露，采用 100 微米间距微凸点，X 射线 CT 验证堆叠对准误差控制在 6 微米以内。研究团队称，该配置热导率达到传统堆叠的 3 倍，并可额外增加最高 30% 内存容量。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称在 6 月召开的 IEEE / JSAP 超大规模集成电路技术研讨会上， 针对 AI 加速器的内存散热与带宽瓶颈，研究团队提出 V-Die 与 MOSAIC 两种 HBM 集成方案。
+IT之家注：高带宽内存（HBM）是面向高性能计算与 AI 加速器的近封装内存技术，通过多层 DRAM 堆叠，并借助超宽总线与处理器近距离互连，以较短数据路径提供极高带宽。典型应用包括 GPU、AI 训练与推理加速器、超级计算节点等高吞吐场景。
+图源：AMD 为了缓解 AI 加速器 HBM 内存散热与带宽瓶颈，韩国蔚山国立科学技术院（UNIST）研究人员提出 V-Die 解决方案，而日本东京大学牵头团队提出 MOSAIC 两种解决方案。
+两者共同思路是将 DRAM 芯片由传统向上堆叠，改为侧立放置，以缓解更高堆叠带来的散热压力。
+V-Die 竖直放置 DRAM Die 芯片，取消 TSV（硅通孔），改用每片裸片底边 I/O 连接，并在相邻裸片间加入液冷通道。
+研究团队称，在与 HBM4 等容量对比下， V-Die 在 GPT-3 规模工作负载中达到 540 tokens/s，而 HBM4 为 296 tokens/s，前者高出 82.43%。 V-Die 底边连接间距为 20 微米，连接数量可达 HBM4 的 4 倍，内存读取时间下降 37%。
+在一组与 H100 级硬件匹配的 16 层堆叠仿真中，该方案将首 Token 时延降低 32%，约 24 毫秒。散热方面，团队称微流体冷却可将堆叠温度维持在约 45°C，低于高密度 HBM 系统常见的 80°C 以上区间。
+MOSAIC 方案由东京大学牵头团队提出，重点在于提升侧立堆叠的可制造性。该方案采用正交裸片堆叠与无接触裸片互连，用微型感应线圈替代严格对准的金属信号接触。
+研究人员称，该原型接口速率最高达 4 Gbps / 通道，并可在 DRAM-on-GPU 结构中实现 HBM4 级容量的 2 倍。
+另一组相关的 bump-MOSAIC 硬件演示在 ECTC 会议披露，采用 100 微米间距微凸点，X 射线 CT 验证堆叠对准误差控制在 6 微米以内。研究团队称，该配置热导率达到传统堆叠的 3 倍，并可额外增加最高 30% 内存容量。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 60
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":60,"text_length":1079,"paragraph_count":11,"sentence_count":12,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   韩国UNIST在IEEE/JSAP研讨会上提出V-Die方案，将DRAM侧立放置并取消TSV，改用底边I/O连接，相邻裸片间加入液冷通道。与HBM4等容量对比下，V-Die在GPT-3规模工作负载中达540 tokens/s，HBM4为296 tokens/s，高出82.43%。底边连接间距20微米，连接数量可达HBM4的4倍，内存读取时间下降37%。16层堆叠仿真中首Token时延降低32%（约24毫秒），微流体冷却可将堆叠温度维持在约45°C。东京大学牵头团队提出的MOSAIC方案采用正交裸片堆叠与无接触裸片互连，原型接口速率最高达4 Gbps/通道，可实现HBM4级容量的2倍。
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   IT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称在 6 月召开的 IEEE / JSAP 超大规模集成电路技术研讨会上， 针对 AI 加速器的内存散热与带宽瓶颈，研究团队提出 V-Die 与 MOSAIC 两种 HBM 集成方案。
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家注：高带宽内存（HBM）是面向高性能计算与 AI 加速器的近封装内存技术，通过多层 DRAM 堆叠，并借助超宽总线与处理器近距离互连，以较短数据路径提供极高带宽。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   典型应用包括 GPU、AI 训练与推理加速器、超级计算节点等高吞吐场景。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   图源：AMD 为了缓解 AI 加速器 HBM 内存散热与带宽瓶颈，韩国蔚山国立科学技术院（UNIST）研究人员提出 V-Die 解决方案，而日本东京大学牵头团队提出 MOSAIC 两种解决方案。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   两者共同思路是将 DRAM 芯片由传统向上堆叠，改为侧立放置，以缓解更高堆叠带来的散热压力。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 制造 / 工业
+- roles: 暂无公开信息
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 540, 4, 82.43%, 3, 296, 20, 4倍, 37%
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: IT之家 7 月 11 日消息，科技媒体 Tom's Hardware 昨日（7 月 10 日）发布博文，报道称在 6 月召开的 IEEE / JSAP 超大规模集成电路技术研讨会上， 针对 AI 加速器的内存散热与带宽瓶颈，研究团队提出 V-Die 与 MOSAIC 两种 HBM 集成方案。 / IT之家注：高带宽内存（HBM）是面向高性能计算与 AI 加速器的近封装内存技术，通过多层 DRAM 堆叠，并借助超宽总线与处理器近距离互连，以较短数据路径提供极高带宽。 / 典型应用包括 GPU、AI 训练与推理加速器、超级计算节点等高吞吐场景。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_market_structure
+- importance_score: 5
+- importance_reason: market-structure commercial event; rubric=5 major/platform/industry-shaping
+- supporting_signals: ai_hardware_lens,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"AI 内存 V-Die 方案亮相：侧立放置 DRAM 吞吐 540 tokens/s，较 HBM4 高 82.43%","discovery_summary":"韩国UNIST在IEEE/JSAP研讨会上提出V-Die方案，将DRAM侧立放置并取消TSV，改用底边I/O连接，相邻裸片间加入液冷通道。与HBM4等容量对比下，V-Die在GPT-3规模工作负载中达540 tokens/s，HBM4为296 tokens/s，高出82.43%。底边连接间距20微米，连接数量可达HBM4的4倍，内存读取时间下降37%。16层堆叠仿真中首Token时延降低32%（约24毫秒），微流体冷却可将堆叠温度维持在约45°C。东京大学牵头团队提出的MOSAIC方案采用正交裸片堆叠与无接触裸片互连，原型接口速率最高达4 Gbps/通道，可实现HBM4级容量的2倍。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/397.htm","discovered_at":"2026-07-11T03:57:21.641Z","rank_on_page":34,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+韩国UNIST在IEEE/JSAP研讨会上提出V-Die方案，将DRAM侧立放置并取消TSV，改用底边I/O连接，相邻裸片间加入液冷通道。与HBM4等容量对比下，V-Die在GPT-3规模工作负载中达540 tokens/s，HBM4为296 tokens/s，高出82.43%。底边连接间距20微米，连接数量可达HBM4的4倍，内存读取时间下降37%。16层堆叠仿真中首Token时延降低32%（约24毫秒），微流体冷却可将堆叠温度维持在约45°C。东京大学牵头团队提出的MOSAIC方案采用正交裸片堆叠与无接触裸片互连，原型接口速率最高达4 Gbps/通道，可实现HBM4级容量的2倍。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

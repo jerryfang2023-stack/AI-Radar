@@ -1,0 +1,259 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-019
+title: "Introducing Genie One, Genie Agents, and Genie Ontology | Databricks Blog"
+title_zh: "Genie One、Genie Agents和Genie Ontology简介| Databricks博客"
+title_translation_status: translated
+title_translation_method: mymemory_title_translation
+original_url: "https://www.databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents"
+canonical_url: "https://databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-11T04:06:34.620Z
+language: mixed
+full_text_hash: b0ddabef98a1907c
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-11/r-019-introducing-genie-one-genie-agents-and-genie-ontology-databricks-blog.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-11/r-019-introducing-genie-one-genie-agents-and-genie-ontology-databricks-blog.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":8413,"paragraph_count":30,"sentence_count":59,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 8413
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b0ddabef98a1907c","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: dbb04cf2eee82731
+content_hash: b0ddabef98a1907c
+semantic_hash: 399ce7f0ec65961c
+duplicate_of: ""
+first_seen_at: "2026-07-11T04:06:34.620Z"
+last_seen_at: 2026-07-11T04:06:34.620Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Microsoft"],"products":["Agents","MCP","agent","agents","Agent"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["2026","84.5%","52.4%","25%","2","28"],"quotes":[]}
+evidence_seed: {"company_actions":["Despite the progress in LLMs and consumer chat agents, most enterprise teams still struggle to put AI to work on real business questions.","The reason is that getting insights out of data - the ground truth of the business - is hard even with the latest generations of models and agents.","The reason for this is that the business context required to use data is scattered across dashboards, queries, pipelines, wikis, tickets, documents, and chat threads."],"case_details":[],"workflow_changes":["Introducing Genie One, Genie Agents, and Genie Ontology | Databricks Blog Summary - Genie One is the data-smart AI coworker for business users, expanding Genie beyond conversational analytics, with agentic actions, skills, integrations across Slack, Microsoft Teams, mobile apps, and MCP-based assi..... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original","The current generation of agents often go through a process of iterative probing that is extremely slow and costly, and forcing a compromise in quality."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"Introducing Genie One, Genie Agents, and Genie Ontology | Databricks Blog Summary - Genie One is the data-smart AI coworker for business users, expanding Genie beyond conversational analytics, with agentic actions, skills, integrations across Slack, Microsoft Teams, mobile apps, and MCP-based assi..... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Despite the progress in LLMs and consumer chat agents, most enterprise teams still struggle to put AI to work on real business questions.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The reason is that getting insights out of data - the ground truth of the business - is hard even with the latest generations of models and agents.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The reason for this is that the business context required to use data is scattered across dashboards, queries, pipelines, wikis, tickets, documents, and chat threads.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"When AI doesn’t easily find the information it needs, it fills in the gaps with inference, producing answers that are generic at best and wrong at worst.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The current generation of agents often go through a process of iterative probing that is extremely slow and costly, and forcing a compromise in quality.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-11T04:06:34.620Z
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Introducing Genie One, Genie Agents, and Genie Ontology | Databricks Blog
+
+## clean_text
+
+Despite the progress in LLMs and consumer chat agents, most enterprise teams still struggle to put AI to work on real business questions. The reason is that getting insights out of data - the ground truth of the business - is hard even with the latest generations of models and agents.
+The reason for this is that the business context required to use data is scattered across dashboards, queries, pipelines, wikis, tickets, documents, and chat threads. When AI doesn’t easily find the information it needs, it fills in the gaps with inference, producing answers that are generic at best and wrong at worst. The current generation of agents often go through a process of iterative probing that is extremely slow and costly, and forcing a compromise in quality. This has resulted in unacceptably poor performance for truly data-driven decision making and actions.
+Today, we are announcing our solution to this problem:
+Genie One: a data-smart AI coworker that works across all of your data,
+Genie Agents: a way for everyone to create dedicated agents to automate work, and
+Genie Ontology: an automatic and secure context store that enables agents to achieve superior accuracy and performance.
+Genie One: The data-smart AI coworker for every team
+Genie began as a conversational analytics assistant in Databricks AI/BI. Genie One is the next step: a data-smart AI coworker designed to help users move from insight to action.
+For all of your apps and data. Genie One connects insights from across your entire data estate through a rich ecosystem of native connectors. Through Lakehouse federation , Lakeflow Connect , and new two-way integrations to everyday business tools (e.g., Gmail, Slack, Teams), Genie One can extract insights and orchestrate actions with any system you may have.
+Full co-work capabilities. Genie One provides a full suite of agentic-cowork capabilities, including schedules and alerts, monitoring, document creation, custom skills, and custom MCP support. Sales leaders can ask Genie to prepare a daily brief for all their customer meetings, combining the context from their calendar, email, and hard data from their Lakehouse and other connected systems. General managers can simply paste in last month’s business review document, and ask Genie to update it with the latest information from their inventory systems, along with the transcripts from their team discussions. The possibilities are endless.
+Because enterprise work happens across a full stack of tools and surfaces, we’re bringing Genie to everywhere work happens—starting by embedding it natively into Slack and Microsoft Teams . Users can simply @mention Genie in any conversation to ask questions in natural language and get accurate answers in seconds. Genie can also be used in public channels and threads, helping teams collaborate without switching context. Every response is governed, secure, and tailored to what each user is authorized to access.
+For users on the go, we’re launching new iOS and Android apps that put Genie in your pocket. Users can ask questions, get alerts, and take action on insights grounded in your company data, from anywhere.
+And for organizations who have adopted an existing AI agent or developed their own, we’re also announcing the Genie MCP App, which allows those users to benefit from Genie without having to change their workflows.
+Our investment in building the Uplight Data Platform on top of Databricks is paying off in powerful new ways. By bringing Genie One capabilities to our data, we’re enabling teams across Uplight to explore, discover, and innovate with more speed, confidence, and creativity than ever before. This is the promise of data democratization - enabling a culture where curiosity, data-informed decision-making, and innovation can happen at every level of the company. —Micaela Christopher, Director of Data Science and Engineering, Uplight
+Genie Agents: from a single prompt to an autonomous agent
+Databricks customers have created more than a million Genie Spaces—curated, governed chat experiences scoped to specific topics, with verified logic and benchmarks. Now, Genie Spaces is evolving into Genie Agents : curated, domain-specific AI agents that:
+Take autonomous action. Genie Agents use the same tools Genie One does—MCP connections, scheduled tasks, document and artifact generation, and writes to external systems—to complete multi-step workflows without need for oversight or intervention.
+Reason over unstructured data, not just tables and views. Agents can be grounded in documents, files, and knowledge sources alongside structured data, covering the full context of a real business problem.
+Best of all, creating an agent is as simple as describing what you want: spin up a Genie Agent from a single prompt in Genie One or Genie Code, scope it, benchmark it, and share it for teammates to use or customize. Genie Agents let domain experts scale their expertise by turning trusted rules, data, and workflows into coworkers the whole team can rely on.
+At Foot Locker, Genie Agents are transforming how we lead. They provide our executives and business teams with a centralized space to harness AI-driven insights across every North American banner we operate. As we scale Genie to the enterprise, it's reshaping the way our business interacts with data and makes the decisions that matter most. Genie isn't just a tool; it's the engine driving self-service insights across our organization —Matt Giunipero, VP of Data & Analytics and Krish Lakshminarayanan, VP, AI, Data & Analytics, Enterprise Architecture, Foot Locker
+Genie Ontology: a living context graph for your business
+Genie One and Genie Agents are powered by Genie Ontology , an automatic context layer. Genie Ontology automatically extracts snippets of knowledge from tables, queries, dashboards, pipelines, and connected apps, and organizes that knowledge into a living graph of how a company works and what the data inside actually means. Genie has context about where to look, what to trust, and how to answer in a way that reflects how the company actually uses its data. That includes metric definitions, business terms, unique calculations, and the relationships between concepts, metrics, tables, and teams.
+One key innovation of Genie Ontology is its approach to determining authority. Using an approach similar to PageRank, Genie Ontology weighs where a definition came from, the relative authority of that source’s author, how often people rely on it, how closely it ties to certified and widely-used assets, and how fresh it is. Then, Genie answers from the sources that carry the most weight. It also enforces the permissions of each source by only showing you the content that you actually have permissions to see. The result is that Genie solves the context problem, without asking your teams to hand-curate it or manage a separate permissions system.
+Our internal benchmark of real-world enterprise data analysis tasks have shown that Genie Ontology significantly improves agent performance on complex, enterprise data questions. In our testing, Genie answered 84.5% of questions correctly on the first attempt, while the strongest general-purpose coding agent managed just 52.4% — and the weakest only 25% . And Genie doesn’t trade off accuracy for speed. Genie delivers high accuracy and low latency, 2× faster than the strongest coding agent.
+Source: internal Databricks benchmark — 28-question real-world data-analysis suite, June 2026. Competing coding agents are anonymized.
+Governed and secure by design
+To roll out any AI tool across a company, leaders and IT teams need confidence that it’s governed, secure, and ready to scale. That’s why Genie One includes a full suite of admin governance tools designed to help organizations deploy AI across their teams.
+Like every Databricks product, governance and security sit at the heart of Genie. Permissions are enforced by default on every answer through source-native ACLs or Unity Catalog. MCP, tools and costs are governed by the Unity AI Gateway , providing a single pane of governance for admins.
+Getting started
+Genie One is the data-smart AI coworker every business user needs: it understands enterprise context, works across the tools where work happens, and is governed by design.
+To try Genie One, see our documentation , install the mobile app for iOS or Android , or contact your Databricks account team.
+
+## full_text
+
+Despite the progress in LLMs and consumer chat agents, most enterprise teams still struggle to put AI to work on real business questions. The reason is that getting insights out of data - the ground truth of the business - is hard even with the latest generations of models and agents.
+The reason for this is that the business context required to use data is scattered across dashboards, queries, pipelines, wikis, tickets, documents, and chat threads. When AI doesn’t easily find the information it needs, it fills in the gaps with inference, producing answers that are generic at best and wrong at worst. The current generation of agents often go through a process of iterative probing that is extremely slow and costly, and forcing a compromise in quality. This has resulted in unacceptably poor performance for truly data-driven decision making and actions.
+Today, we are announcing our solution to this problem:
+Genie One: a data-smart AI coworker that works across all of your data,
+Genie Agents: a way for everyone to create dedicated agents to automate work, and
+Genie Ontology: an automatic and secure context store that enables agents to achieve superior accuracy and performance.
+Genie One: The data-smart AI coworker for every team
+Genie began as a conversational analytics assistant in Databricks AI/BI. Genie One is the next step: a data-smart AI coworker designed to help users move from insight to action.
+For all of your apps and data. Genie One connects insights from across your entire data estate through a rich ecosystem of native connectors. Through Lakehouse federation , Lakeflow Connect , and new two-way integrations to everyday business tools (e.g., Gmail, Slack, Teams), Genie One can extract insights and orchestrate actions with any system you may have.
+Full co-work capabilities. Genie One provides a full suite of agentic-cowork capabilities, including schedules and alerts, monitoring, document creation, custom skills, and custom MCP support. Sales leaders can ask Genie to prepare a daily brief for all their customer meetings, combining the context from their calendar, email, and hard data from their Lakehouse and other connected systems. General managers can simply paste in last month’s business review document, and ask Genie to update it with the latest information from their inventory systems, along with the transcripts from their team discussions. The possibilities are endless.
+Because enterprise work happens across a full stack of tools and surfaces, we’re bringing Genie to everywhere work happens—starting by embedding it natively into Slack and Microsoft Teams . Users can simply @mention Genie in any conversation to ask questions in natural language and get accurate answers in seconds. Genie can also be used in public channels and threads, helping teams collaborate without switching context. Every response is governed, secure, and tailored to what each user is authorized to access.
+For users on the go, we’re launching new iOS and Android apps that put Genie in your pocket. Users can ask questions, get alerts, and take action on insights grounded in your company data, from anywhere.
+And for organizations who have adopted an existing AI agent or developed their own, we’re also announcing the Genie MCP App, which allows those users to benefit from Genie without having to change their workflows.
+Our investment in building the Uplight Data Platform on top of Databricks is paying off in powerful new ways. By bringing Genie One capabilities to our data, we’re enabling teams across Uplight to explore, discover, and innovate with more speed, confidence, and creativity than ever before. This is the promise of data democratization - enabling a culture where curiosity, data-informed decision-making, and innovation can happen at every level of the company. —Micaela Christopher, Director of Data Science and Engineering, Uplight
+Genie Agents: from a single prompt to an autonomous agent
+Databricks customers have created more than a million Genie Spaces—curated, governed chat experiences scoped to specific topics, with verified logic and benchmarks. Now, Genie Spaces is evolving into Genie Agents : curated, domain-specific AI agents that:
+Take autonomous action. Genie Agents use the same tools Genie One does—MCP connections, scheduled tasks, document and artifact generation, and writes to external systems—to complete multi-step workflows without need for oversight or intervention.
+Reason over unstructured data, not just tables and views. Agents can be grounded in documents, files, and knowledge sources alongside structured data, covering the full context of a real business problem.
+Best of all, creating an agent is as simple as describing what you want: spin up a Genie Agent from a single prompt in Genie One or Genie Code, scope it, benchmark it, and share it for teammates to use or customize. Genie Agents let domain experts scale their expertise by turning trusted rules, data, and workflows into coworkers the whole team can rely on.
+At Foot Locker, Genie Agents are transforming how we lead. They provide our executives and business teams with a centralized space to harness AI-driven insights across every North American banner we operate. As we scale Genie to the enterprise, it's reshaping the way our business interacts with data and makes the decisions that matter most. Genie isn't just a tool; it's the engine driving self-service insights across our organization —Matt Giunipero, VP of Data & Analytics and Krish Lakshminarayanan, VP, AI, Data & Analytics, Enterprise Architecture, Foot Locker
+Genie Ontology: a living context graph for your business
+Genie One and Genie Agents are powered by Genie Ontology , an automatic context layer. Genie Ontology automatically extracts snippets of knowledge from tables, queries, dashboards, pipelines, and connected apps, and organizes that knowledge into a living graph of how a company works and what the data inside actually means. Genie has context about where to look, what to trust, and how to answer in a way that reflects how the company actually uses its data. That includes metric definitions, business terms, unique calculations, and the relationships between concepts, metrics, tables, and teams.
+One key innovation of Genie Ontology is its approach to determining authority. Using an approach similar to PageRank, Genie Ontology weighs where a definition came from, the relative authority of that source’s author, how often people rely on it, how closely it ties to certified and widely-used assets, and how fresh it is. Then, Genie answers from the sources that carry the most weight. It also enforces the permissions of each source by only showing you the content that you actually have permissions to see. The result is that Genie solves the context problem, without asking your teams to hand-curate it or manage a separate permissions system.
+Our internal benchmark of real-world enterprise data analysis tasks have shown that Genie Ontology significantly improves agent performance on complex, enterprise data questions. In our testing, Genie answered 84.5% of questions correctly on the first attempt, while the strongest general-purpose coding agent managed just 52.4% — and the weakest only 25% . And Genie doesn’t trade off accuracy for speed. Genie delivers high accuracy and low latency, 2× faster than the strongest coding agent.
+Source: internal Databricks benchmark — 28-question real-world data-analysis suite, June 2026. Competing coding agents are anonymized.
+Governed and secure by design
+To roll out any AI tool across a company, leaders and IT teams need confidence that it’s governed, secure, and ready to scale. That’s why Genie One includes a full suite of admin governance tools designed to help organizations deploy AI across their teams.
+Like every Databricks product, governance and security sit at the heart of Genie. Permissions are enforced by default on every answer through source-native ACLs or Unity Catalog. MCP, tools and costs are governed by the Unity AI Gateway , providing a single pane of governance for admins.
+Getting started
+Genie One is the data-smart AI coworker every business user needs: it understands enterprise context, works across the tools where work happens, and is governed by design.
+To try Genie One, see our documentation , install the mobile app for iOS or Android , or contact your Databricks account team.
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":8413,"paragraph_count":30,"sentence_count":59,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Introducing Genie One, Genie Agents, and Genie Ontology | Databricks Blog Summary - Genie One is the data-smart AI coworker for business users, expanding Genie beyond conversational analytics, with agentic actions, skills, integrations across Slack, Microsoft Teams, mobile apps, and MCP-based assi..... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Despite the progress in LLMs and consumer chat agents, most enterprise teams still struggle to put AI to work on real business questions.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The reason is that getting insights out of data - the ground truth of the business - is hard even with the latest generations of models and agents.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The reason for this is that the business context required to use data is scattered across dashboards, queries, pipelines, wikis, tickets, documents, and chat threads.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   When AI doesn’t easily find the information it needs, it fills in the gaps with inference, producing answers that are generic at best and wrong at worst.
+
+6. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The current generation of agents often go through a process of iterative probing that is extremely slow and costly, and forcing a compromise in quality.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Microsoft
+- products: Agents, MCP, agent, agents, Agent
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 84.5%, 52.4%, 25%, 2, 28
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Despite the progress in LLMs and consumer chat agents, most enterprise teams still struggle to put AI to work on real business questions. / The reason is that getting insights out of data - the ground truth of the business - is hard even with the latest generations of models and agents. / The reason for this is that the business context required to use data is scattered across dashboards, queries, pipelines, wikis, tickets, documents, and chat threads.
+- case_details: 暂无公开信息
+- workflow_changes: Introducing Genie One, Genie Agents, and Genie Ontology | Databricks Blog Summary - Genie One is the data-smart AI coworker for business users, expanding Genie beyond conversational analytics, with agentic actions, skills, integrations across Slack, Microsoft Teams, mobile apps, and MCP-based assi..... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original / The current generation of agents often go through a process of iterative probing that is extremely slow and costly, and forcing a compromise in quality.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Introducing Genie One, Genie Agents, and Genie Ontology | Databricks Blog Summary - Genie One is the data-smart AI coworker for business users, expanding Genie beyond conversational analytics, with agentic actions, skills, integrations across Slack, Microsoft Teams, mobile apps, and MCP-based assi..... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

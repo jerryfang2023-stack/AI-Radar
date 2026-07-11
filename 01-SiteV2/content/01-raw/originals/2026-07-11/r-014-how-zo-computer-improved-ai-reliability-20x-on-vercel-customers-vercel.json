@@ -1,0 +1,281 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-014",
+  "title": "How Zo Computer improved AI reliability 20x on Vercel | Customers | Vercel - Vercel",
+  "title_zh": "Zo Computer如何在Vercel上将AI可靠性提高20倍|客户| Vercel - Vercel",
+  "title_translation_status": "translated",
+  "title_translation_method": "mymemory_title_translation",
+  "original_url": "https://vercel.com/customers/how-zo-computer-improved-ai-reliability-20x-on-vercel",
+  "canonical_url": "https://vercel.com/customers/how-zo-computer-improved-ai-reliability-20x-on-vercel",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "production_rollout",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-11T04:06:33.020Z",
+  "language": "mixed",
+  "full_text": "Zo Computer on Vercel\n20x reduction in retry rate (7.5% → 0.34%)\n99.93% chat success rate (up from 98%)\nP99 latency cut 38% (131s → 81s)\nNew models added in less than 1 minute\nEvery company has servers that store data, run services, and do work around the clock. Consumers just have apps. Rob Cheung, co-founder of Zo Computer, is closing that gap. Zo is a personal AI cloud: your own servers and data that power an always-on agent.\n\"Cloud is one of the best computing models of all time, and consumers have zero direct access because it's so complicated,\" explained Rob Cheung, co-founder and CEO of Zo. \"Now, with AI, it's finally possible for all of us to have cloud computers.\"\nZo is a full computing environment, not just a chatbot. Rob laughs about his mom running servers and databases without knowing it. People use Zo to manage small businesses, do research, organize finances, and track health data.\nThe 8-person company is two and a half years old and they have an ambitious goal: to onboard one million new users to personal cloud computing in 2026. That means millions of AI model calls every day, and when Zo users text their agent like a friend, they expect the same responsiveness.\n“We’re building a new model of personal cloud computing that's always-on, elastic, and private by default for every user. Vercel gives us the AI infrastructure to make it possible.”\nRob Cheung co-founder and CEO @ Zo Computer\nDeath by a thousand adapters\nZo gives users access to any model they want, and supports bring-your-own-key. That means their backend has to talk to every major provider: OpenAI, Anthropic, MiniMax, GLM, Fireworks, and more.\nBefore they moved to Vercel, that meant custom adapter code for each model. Every provider required different handling for images, different key management, and different edge cases. On top of the code complexity, Zo's team was managing retries, provider routing, and fallback logic themselves.\nEvery time a provider shipped a new model, an engineer had to write a new adapter, test the edge cases, and run the deployment pipeline. With new models released weekly, it was a constant drag on a small team building a consumer product, and their users felt it.\nZo's baseline for AI model calls was a 98% success rate with a 7.5% retry rate. That means 1 in 50 messages failed or retried, adding up to tens of thousands of model fallbacks every day.\n“We didn't even know what we were missing until after we switched to Vercel's AI Gateway. The revelation came through the numbers. We just had so many failures previously.”\nRob Cheung co-founder and CEO @ Zo Computer\nAI SDK + AI Gateway: two layers, one integration\nZo moved to Vercel's AI SDK and AI Gateway, which solved two distinct problems.\nAI SDK replaced the custom adapter code. Instead of per-provider implementations with bespoke edge case handling, Zo's engineers got a unified interface for every model, from image support to response format normalization.\nAI Gateway replaced the infrastructure-level complexity. Retries, fallback routing, provider health monitoring, and uptime were all handled at the routing layer in Vercel instead of in Zo's codebase.\nRob's co-founder built APIs at Stripe, where developer experience was the product. He describes the combined effect of AI SDK and AI Gateway the same way: everything just works, and the pieces you don't see matter most.\n“Moving to the gateway is just so ergonomic. We get references to model names, and then rely on you to do the correct implementations and handle the edge cases.”\nBen Guo co-founder @ Zo Computer\nNew model support went from an hour-long, multi-file code change to adding a config string in 30 seconds. The day MiniMax shipped M2.7, Zo had it live for users immediately. No adapter code, no edge case testing, no deploy cycle.\nFor an 8-person team focusing on onboarding their first million users to personal cloud computing, cutting out interruptions for model support has been a huge relief.\n20x improvement in reliability\nDuring the rollout, Zo ran Vercel and non-Vercel routes simultaneously, creating a live A/B comparison under identical production conditions.\nThe results:\nPeriod\nRoute\nPOST error\nChat success\nRetry rate\nAvg attempts\nBefore switch\nNon-Vercel\n4.59%\n99.73%\n7.52%\n1.12\nAfter switch\nNon-Vercel\n10.38%\n97.86%\n17.07%\n1.29\nAfter switch\nVercel\n0.45%\n99.93%\n0.34%\n1.00\nThe non-Vercel route actually degraded during the same period that Vercel held steady. Retry rate dropped from 7.5% to 0.34%, a 20x improvement. Average attempts per chat hit 1.00, meaning virtually every request succeeded on the first try.\nOn MiniMax M2.5, Zo's most-used model, the latency improvement was significant. In an apples-to-apples comparison over the same window, Vercel handled 18,139 chats versus 21,105 on non-Vercel and still performed better across the board:\nAverage latency improved 25.7%\nP95: 46s → 34s (25% improvement)\nP99: 131s → 81s (38% improvement)\nFor Zo's users, the P99 number matters most because they text their agents constantly throughout the day. A 131-second worst-case wait breaks that experience completely, but now 99% of requests complete in under 81 seconds.\n“131 seconds to wait for something is just terrible. Now we can get 99% of our requests in under 80, which is huge.”\nRob Cheung co-founder and CEO @ Zo Computer\nBy the end of the test, 91.88% of Zo's traffic routed through Vercel, handling 3.3x larger context windows (42,500 average input tokens vs. 12,700) at a lower error rate than the non-Vercel path.\nScaling to a million personal cloud owners\nVercel handles Zo's AI layer through AI SDK and AI Gateway and hosts their public-facing marketing site. With reliable AI infrastructure and no adapter code to maintain, the team can focus on the product instead of the plumbing.\nWith the pace of model developments in AI, Rob used to worry about the work required to keep up. “Now I don’t worry about it,” he said, “because with Vercel, the infrastructure just works.”\n“We're a tiny team, so we want to spend our effort in the right ways. It's really nice to lean on Vercel and trust that we can add hundreds of times more traffic.”\nRob Cheung co-founder and CEO @ Zo Computer\nZo Computer is a personal AI cloud platform that gives every user their own cloud computer, housing data, services, and a personal agent. Users interact through a conversational interfaces like iMessage, or log in and use the environment directly. Founded two and a half years ago, Zo is an 8-person team based in New York City. Learn more at zo.computer .",
+  "clean_text": "Zo Computer on Vercel\n20x reduction in retry rate (7.5% → 0.34%)\n99.93% chat success rate (up from 98%)\nP99 latency cut 38% (131s → 81s)\nNew models added in less than 1 minute\nEvery company has servers that store data, run services, and do work around the clock. Consumers just have apps. Rob Cheung, co-founder of Zo Computer, is closing that gap. Zo is a personal AI cloud: your own servers and data that power an always-on agent.\n\"Cloud is one of the best computing models of all time, and consumers have zero direct access because it's so complicated,\" explained Rob Cheung, co-founder and CEO of Zo. \"Now, with AI, it's finally possible for all of us to have cloud computers.\"\nZo is a full computing environment, not just a chatbot. Rob laughs about his mom running servers and databases without knowing it. People use Zo to manage small businesses, do research, organize finances, and track health data.\nThe 8-person company is two and a half years old and they have an ambitious goal: to onboard one million new users to personal cloud computing in 2026. That means millions of AI model calls every day, and when Zo users text their agent like a friend, they expect the same responsiveness.\n“We’re building a new model of personal cloud computing that's always-on, elastic, and private by default for every user. Vercel gives us the AI infrastructure to make it possible.”\nRob Cheung co-founder and CEO @ Zo Computer\nDeath by a thousand adapters\nZo gives users access to any model they want, and supports bring-your-own-key. That means their backend has to talk to every major provider: OpenAI, Anthropic, MiniMax, GLM, Fireworks, and more.\nBefore they moved to Vercel, that meant custom adapter code for each model. Every provider required different handling for images, different key management, and different edge cases. On top of the code complexity, Zo's team was managing retries, provider routing, and fallback logic themselves.\nEvery time a provider shipped a new model, an engineer had to write a new adapter, test the edge cases, and run the deployment pipeline. With new models released weekly, it was a constant drag on a small team building a consumer product, and their users felt it.\nZo's baseline for AI model calls was a 98% success rate with a 7.5% retry rate. That means 1 in 50 messages failed or retried, adding up to tens of thousands of model fallbacks every day.\n“We didn't even know what we were missing until after we switched to Vercel's AI Gateway. The revelation came through the numbers. We just had so many failures previously.”\nRob Cheung co-founder and CEO @ Zo Computer\nAI SDK + AI Gateway: two layers, one integration\nZo moved to Vercel's AI SDK and AI Gateway, which solved two distinct problems.\nAI SDK replaced the custom adapter code. Instead of per-provider implementations with bespoke edge case handling, Zo's engineers got a unified interface for every model, from image support to response format normalization.\nAI Gateway replaced the infrastructure-level complexity. Retries, fallback routing, provider health monitoring, and uptime were all handled at the routing layer in Vercel instead of in Zo's codebase.\nRob's co-founder built APIs at Stripe, where developer experience was the product. He describes the combined effect of AI SDK and AI Gateway the same way: everything just works, and the pieces you don't see matter most.\n“Moving to the gateway is just so ergonomic. We get references to model names, and then rely on you to do the correct implementations and handle the edge cases.”\nBen Guo co-founder @ Zo Computer\nNew model support went from an hour-long, multi-file code change to adding a config string in 30 seconds. The day MiniMax shipped M2.7, Zo had it live for users immediately. No adapter code, no edge case testing, no deploy cycle.\nFor an 8-person team focusing on onboarding their first million users to personal cloud computing, cutting out interruptions for model support has been a huge relief.\n20x improvement in reliability\nDuring the rollout, Zo ran Vercel and non-Vercel routes simultaneously, creating a live A/B comparison under identical production conditions.\nThe results:\nPeriod\nRoute\nPOST error\nChat success\nRetry rate\nAvg attempts\nBefore switch\nNon-Vercel\n4.59%\n99.73%\n7.52%\n1.12\nAfter switch\nNon-Vercel\n10.38%\n97.86%\n17.07%\n1.29\nAfter switch\nVercel\n0.45%\n99.93%\n0.34%\n1.00\nThe non-Vercel route actually degraded during the same period that Vercel held steady. Retry rate dropped from 7.5% to 0.34%, a 20x improvement. Average attempts per chat hit 1.00, meaning virtually every request succeeded on the first try.\nOn MiniMax M2.5, Zo's most-used model, the latency improvement was significant. In an apples-to-apples comparison over the same window, Vercel handled 18,139 chats versus 21,105 on non-Vercel and still performed better across the board:\nAverage latency improved 25.7%\nP95: 46s → 34s (25% improvement)\nP99: 131s → 81s (38% improvement)\nFor Zo's users, the P99 number matters most because they text their agents constantly throughout the day. A 131-second worst-case wait breaks that experience completely, but now 99% of requests complete in under 81 seconds.\n“131 seconds to wait for something is just terrible. Now we can get 99% of our requests in under 80, which is huge.”\nRob Cheung co-founder and CEO @ Zo Computer\nBy the end of the test, 91.88% of Zo's traffic routed through Vercel, handling 3.3x larger context windows (42,500 average input tokens vs. 12,700) at a lower error rate than the non-Vercel path.\nScaling to a million personal cloud owners\nVercel handles Zo's AI layer through AI SDK and AI Gateway and hosts their public-facing marketing site. With reliable AI infrastructure and no adapter code to maintain, the team can focus on the product instead of the plumbing.\nWith the pace of model developments in AI, Rob used to worry about the work required to keep up. “Now I don’t worry about it,” he said, “because with Vercel, the infrastructure just works.”\n“We're a tiny team, so we want to spend our effort in the right ways. It's really nice to lean on Vercel and trust that we can add hundreds of times more traffic.”\nRob Cheung co-founder and CEO @ Zo Computer\nZo Computer is a personal AI cloud platform that gives every user their own cloud computer, housing data, services, and a personal agent. Users interact through a conversational interfaces like iMessage, or log in and use the environment directly. Founded two and a half years ago, Zo is an 8-person team based in New York City. Learn more at zo.computer .",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-11/r-014-how-zo-computer-improved-ai-reliability-20x-on-vercel-customers-vercel.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-11/r-014-how-zo-computer-improved-ai-reliability-20x-on-vercel-customers-vercel.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 6548,
+    "paragraph_count": 44,
+    "sentence_count": 52,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6548,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "d58900430234b8cd",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "6b701a3b1008a0a6",
+  "content_hash": "d58900430234b8cd",
+  "full_text_hash": "d58900430234b8cd",
+  "semantic_hash": "316f7e65e95eaea3",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-11T04:06:33.020Z",
+  "last_seen_at": "2026-07-11T04:06:33.020Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "How Zo Computer improved AI reliability 20x on Vercel | Customers | Vercel - Vercel Skip to content ### Zo Computer on Vercel 20x reduction in retry rate (7.5% → 0.34%) 99.93% chat success rate (up from 98%) P99 latency cut 38% (131s → 81s) New models added in less than 1 minute --- Every co... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "Zo Computer on Vercel 20x reduction in retry rate (7.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "93% chat success rate (up from 98%) P99 latency cut 38% (131s → 81s) New models added in less than 1 minute Every company has servers that store data, run services, and do work around the clock.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Consumers just have apps.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Rob Cheung, co-founder of Zo Computer, is closing that gap.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Zo is a personal AI cloud: your own servers and data that power an always-on agent.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-11T04:06:33.020Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "products": [
+      "agent",
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险",
+      "医疗",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "20x",
+      "7.5%",
+      "0.34%",
+      "99.93%",
+      "98%",
+      "99",
+      "38%",
+      "131"
+    ],
+    "quotes": [
+      "Cloud is one of the best computing models of all time, and consumers have zero direct access because it's so complicated,",
+      "Now, with AI, it's finally possible for all of us to have cloud computers.",
+      "Moving to the gateway is just so ergonomic. We get references to model names, and then rely on you to do the correct implementations and handle the edge cases.",
+      "131 seconds to wait for something is just terrible. Now we can get 99% of our requests in under 80, which is huge.",
+      "Now I don’t worry about it,"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Consumers just have apps.",
+      "Rob Cheung, co-founder of Zo Computer, is closing that gap.",
+      "Zo is a personal AI cloud: your own servers and data that power an always-on agent."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "enterprise AI implementation case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# How Zo Computer improved AI reliability 20x on Vercel | Customers | Vercel - Vercel\n\n- raw_id: R-014\n- title_zh: Zo Computer如何在Vercel上将AI可靠性提高20倍|客户| Vercel - Vercel\n- title_translation_status: translated\n- title_translation_method: mymemory_title_translation\n- original_url: https://vercel.com/customers/how-zo-computer-improved-ai-reliability-20x-on-vercel\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-11T04:06:33.020Z\n\n## clean_text\n\nZo Computer on Vercel\n20x reduction in retry rate (7.5% → 0.34%)\n99.93% chat success rate (up from 98%)\nP99 latency cut 38% (131s → 81s)\nNew models added in less than 1 minute\nEvery company has servers that store data, run services, and do work around the clock. Consumers just have apps. Rob Cheung, co-founder of Zo Computer, is closing that gap. Zo is a personal AI cloud: your own servers and data that power an always-on agent.\n\"Cloud is one of the best computing models of all time, and consumers have zero direct access because it's so complicated,\" explained Rob Cheung, co-founder and CEO of Zo. \"Now, with AI, it's finally possible for all of us to have cloud computers.\"\nZo is a full computing environment, not just a chatbot. Rob laughs about his mom running servers and databases without knowing it. People use Zo to manage small businesses, do research, organize finances, and track health data.\nThe 8-person company is two and a half years old and they have an ambitious goal: to onboard one million new users to personal cloud computing in 2026. That means millions of AI model calls every day, and when Zo users text their agent like a friend, they expect the same responsiveness.\n“We’re building a new model of personal cloud computing that's always-on, elastic, and private by default for every user. Vercel gives us the AI infrastructure to make it possible.”\nRob Cheung co-founder and CEO @ Zo Computer\nDeath by a thousand adapters\nZo gives users access to any model they want, and supports bring-your-own-key. That means their backend has to talk to every major provider: OpenAI, Anthropic, MiniMax, GLM, Fireworks, and more.\nBefore they moved to Vercel, that meant custom adapter code for each model. Every provider required different handling for images, different key management, and different edge cases. On top of the code complexity, Zo's team was managing retries, provider routing, and fallback logic themselves.\nEvery time a provider shipped a new model, an engineer had to write a new adapter, test the edge cases, and run the deployment pipeline. With new models released weekly, it was a constant drag on a small team building a consumer product, and their users felt it.\nZo's baseline for AI model calls was a 98% success rate with a 7.5% retry rate. That means 1 in 50 messages failed or retried, adding up to tens of thousands of model fallbacks every day.\n“We didn't even know what we were missing until after we switched to Vercel's AI Gateway. The revelation came through the numbers. We just had so many failures previously.”\nRob Cheung co-founder and CEO @ Zo Computer\nAI SDK + AI Gateway: two layers, one integration\nZo moved to Vercel's AI SDK and AI Gateway, which solved two distinct problems.\nAI SDK replaced the custom adapter code. Instead of per-provider implementations with bespoke edge case handling, Zo's engineers got a unified interface for every model, from image support to response format normalization.\nAI Gateway replaced the infrastructure-level complexity. Retries, fallback routing, provider health monitoring, and uptime were all handled at the routing layer in Vercel instead of in Zo's codebase.\nRob's co-founder built APIs at Stripe, where developer experience was the product. He describes the combined effect of AI SDK and AI Gateway the same way: everything just works, and the pieces you don't see matter most.\n“Moving to the gateway is just so ergonomic. We get references to model names, and then rely on you to do the correct implementations and handle the edge cases.”\nBen Guo co-founder @ Zo Computer\nNew model support went from an hour-long, multi-file code change to adding a config string in 30 seconds. The day MiniMax shipped M2.7, Zo had it live for users immediately. No adapter code, no edge case testing, no deploy cycle.\nFor an 8-person team focusing on onboarding their first million users to personal cloud computing, cutting out interruptions for model support has been a huge relief.\n20x improvement in reliability\nDuring the rollout, Zo ran Vercel and non-Vercel routes simultaneously, creating a live A/B comparison under identical production conditions.\nThe results:\nPeriod\nRoute\nPOST error\nChat success\nRetry rate\nAvg attempts\nBefore switch\nNon-Vercel\n4.59%\n99.73%\n7.52%\n1.12\nAfter switch\nNon-Vercel\n10.38%\n97.86%\n17.07%\n1.29\nAfter switch\nVercel\n0.45%\n99.93%\n0.34%\n1.00\nThe non-Vercel route actually degraded during the same period that Vercel held steady. Retry rate dropped from 7.5% to 0.34%, a 20x improvement. Average attempts per chat hit 1.00, meaning virtually every request succeeded on the first try.\nOn MiniMax M2.5, Zo's most-used model, the latency improvement was significant. In an apples-to-apples comparison over the same window, Vercel handled 18,139 chats versus 21,105 on non-Vercel and still performed better across the board:\nAverage latency improved 25.7%\nP95: 46s → 34s (25% improvement)\nP99: 131s → 81s (38% improvement)\nFor Zo's users, the P99 number matters most because they text their agents constantly throughout the day. A 131-second worst-case wait breaks that experience completely, but now 99% of requests complete in under 81 seconds.\n“131 seconds to wait for something is just terrible. Now we can get 99% of our requests in under 80, which is huge.”\nRob Cheung co-founder and CEO @ Zo Computer\nBy the end of the test, 91.88% of Zo's traffic routed through Vercel, handling 3.3x larger context windows (42,500 average input tokens vs. 12,700) at a lower error rate than the non-Vercel path.\nScaling to a million personal cloud owners\nVercel handles Zo's AI layer through AI SDK and AI Gateway and hosts their public-facing marketing site. With reliable AI infrastructure and no adapter code to maintain, the team can focus on the product instead of the plumbing.\nWith the pace of model developments in AI, Rob used to worry about the work required to keep up. “Now I don’t worry about it,” he said, “because with Vercel, the infrastructure just works.”\n“We're a tiny team, so we want to spend our effort in the right ways. It's really nice to lean on Vercel and trust that we can add hundreds of times more traffic.”\nRob Cheung co-founder and CEO @ Zo Computer\nZo Computer is a personal AI cloud platform that gives every user their own cloud computer, housing data, services, and a personal agent. Users interact through a conversational interfaces like iMessage, or log in and use the environment directly. Founded two and a half years ago, Zo is an 8-person team based in New York City. Learn more at zo.computer .\n\n## full_text\n\nZo Computer on Vercel\n20x reduction in retry rate (7.5% → 0.34%)\n99.93% chat success rate (up from 98%)\nP99 latency cut 38% (131s → 81s)\nNew models added in less than 1 minute\nEvery company has servers that store data, run services, and do work around the clock. Consumers just have apps. Rob Cheung, co-founder of Zo Computer, is closing that gap. Zo is a personal AI cloud: your own servers and data that power an always-on agent.\n\"Cloud is one of the best computing models of all time, and consumers have zero direct access because it's so complicated,\" explained Rob Cheung, co-founder and CEO of Zo. \"Now, with AI, it's finally possible for all of us to have cloud computers.\"\nZo is a full computing environment, not just a chatbot. Rob laughs about his mom running servers and databases without knowing it. People use Zo to manage small businesses, do research, organize finances, and track health data.\nThe 8-person company is two and a half years old and they have an ambitious goal: to onboard one million new users to personal cloud computing in 2026. That means millions of AI model calls every day, and when Zo users text their agent like a friend, they expect the same responsiveness.\n“We’re building a new model of personal cloud computing that's always-on, elastic, and private by default for every user. Vercel gives us the AI infrastructure to make it possible.”\nRob Cheung co-founder and CEO @ Zo Computer\nDeath by a thousand adapters\nZo gives users access to any model they want, and supports bring-your-own-key. That means their backend has to talk to every major provider: OpenAI, Anthropic, MiniMax, GLM, Fireworks, and more.\nBefore they moved to Vercel, that meant custom adapter code for each model. Every provider required different handling for images, different key management, and different edge cases. On top of the code complexity, Zo's team was managing retries, provider routing, and fallback logic themselves.\nEvery time a provider shipped a new model, an engineer had to write a new adapter, test the edge cases, and run the deployment pipeline. With new models released weekly, it was a constant drag on a small team building a consumer product, and their users felt it.\nZo's baseline for AI model calls was a 98% success rate with a 7.5% retry rate. That means 1 in 50 messages failed or retried, adding up to tens of thousands of model fallbacks every day.\n“We didn't even know what we were missing until after we switched to Vercel's AI Gateway. The revelation came through the numbers. We just had so many failures previously.”\nRob Cheung co-founder and CEO @ Zo Computer\nAI SDK + AI Gateway: two layers, one integration\nZo moved to Vercel's AI SDK and AI Gateway, which solved two distinct problems.\nAI SDK replaced the custom adapter code. Instead of per-provider implementations with bespoke edge case handling, Zo's engineers got a unified interface for every model, from image support to response format normalization.\nAI Gateway replaced the infrastructure-level complexity. Retries, fallback routing, provider health monitoring, and uptime were all handled at the routing layer in Vercel instead of in Zo's codebase.\nRob's co-founder built APIs at Stripe, where developer experience was the product. He describes the combined effect of AI SDK and AI Gateway the same way: everything just works, and the pieces you don't see matter most.\n“Moving to the gateway is just so ergonomic. We get references to model names, and then rely on you to do the correct implementations and handle the edge cases.”\nBen Guo co-founder @ Zo Computer\nNew model support went from an hour-long, multi-file code change to adding a config string in 30 seconds. The day MiniMax shipped M2.7, Zo had it live for users immediately. No adapter code, no edge case testing, no deploy cycle.\nFor an 8-person team focusing on onboarding their first million users to personal cloud computing, cutting out interruptions for model support has been a huge relief.\n20x improvement in reliability\nDuring the rollout, Zo ran Vercel and non-Vercel routes simultaneously, creating a live A/B comparison under identical production conditions.\nThe results:\nPeriod\nRoute\nPOST error\nChat success\nRetry rate\nAvg attempts\nBefore switch\nNon-Vercel\n4.59%\n99.73%\n7.52%\n1.12\nAfter switch\nNon-Vercel\n10.38%\n97.86%\n17.07%\n1.29\nAfter switch\nVercel\n0.45%\n99.93%\n0.34%\n1.00\nThe non-Vercel route actually degraded during the same period that Vercel held steady. Retry rate dropped from 7.5% to 0.34%, a 20x improvement. Average attempts per chat hit 1.00, meaning virtually every request succeeded on the first try.\nOn MiniMax M2.5, Zo's most-used model, the latency improvement was significant. In an apples-to-apples comparison over the same window, Vercel handled 18,139 chats versus 21,105 on non-Vercel and still performed better across the board:\nAverage latency improved 25.7%\nP95: 46s → 34s (25% improvement)\nP99: 131s → 81s (38% improvement)\nFor Zo's users, the P99 number matters most because they text their agents constantly throughout the day. A 131-second worst-case wait breaks that experience completely, but now 99% of requests complete in under 81 seconds.\n“131 seconds to wait for something is just terrible. Now we can get 99% of our requests in under 80, which is huge.”\nRob Cheung co-founder and CEO @ Zo Computer\nBy the end of the test, 91.88% of Zo's traffic routed through Vercel, handling 3.3x larger context windows (42,500 average input tokens vs. 12,700) at a lower error rate than the non-Vercel path.\nScaling to a million personal cloud owners\nVercel handles Zo's AI layer through AI SDK and AI Gateway and hosts their public-facing marketing site. With reliable AI infrastructure and no adapter code to maintain, the team can focus on the product instead of the plumbing.\nWith the pace of model developments in AI, Rob used to worry about the work required to keep up. “Now I don’t worry about it,” he said, “because with Vercel, the infrastructure just works.”\n“We're a tiny team, so we want to spend our effort in the right ways. It's really nice to lean on Vercel and trust that we can add hundreds of times more traffic.”\nRob Cheung co-founder and CEO @ Zo Computer\nZo Computer is a personal AI cloud platform that gives every user their own cloud computer, housing data, services, and a personal agent. Users interact through a conversational interfaces like iMessage, or log in and use the environment directly. Founded two and a half years ago, Zo is an 8-person team based in New York City. Learn more at zo.computer .\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] How Zo Computer improved AI reliability 20x on Vercel | Customers | Vercel - Vercel Skip to content ### Zo Computer on Vercel 20x reduction in retry rate (7.5% → 0.34%) 99.93% chat success rate (up from 98%) P99 latency cut 38% (131s → 81s) New models added in less than 1 minute --- Every co... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original\n2. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] Zo Computer on Vercel 20x reduction in retry rate (7.\n3. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 93% chat success rate (up from 98%) P99 latency cut 38% (131s → 81s) New models added in less than 1 minute Every company has servers that store data, run services, and do work around the clock.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Consumers just have apps.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Rob Cheung, co-founder of Zo Computer, is closing that gap.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Zo is a personal AI cloud: your own servers and data that power an always-on agent.\n"
+}
