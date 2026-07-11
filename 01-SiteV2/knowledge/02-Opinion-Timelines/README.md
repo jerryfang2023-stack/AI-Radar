@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 1250
-generated_at: 2026-07-11T01:34:46.120Z
+opinion_count: 1251
+generated_at: 2026-07-11T08:10:07.980Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -29,6 +29,7 @@ generated_at: 2026-07-11T01:34:46.120Z
 - [Josh Woodward](people/josh-woodward/README.md) - 20 条 - 最新 2026-07-09
 - [Madhu Guru](people/madhu-guru/README.md) - 14 条 - 最新 2026-07-09
 - [Amanda Askell](people/amanda-askell/README.md) - 12 条 - 最新 2026-07-09
+- [The MAD Podcast with Matt Turck](people/the-mad-podcast-with-matt-turck/README.md) - 6 条 - 最新 2026-07-09
 - [Alex Albert](people/alex-albert/README.md) - 5 条 - 最新 2026-07-09
 - [Unsupervised Learning](people/unsupervised-learning/README.md) - 2 条 - 最新 2026-07-09
 - [Zara Zhang](people/zara-zhang/README.md) - 63 条 - 最新 2026-07-08
@@ -42,7 +43,6 @@ generated_at: 2026-07-11T01:34:46.120Z
 - [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 8 条 - 最新 2026-07-07
 - [Training Data](people/training-data/README.md) - 4 条 - 最新 2026-07-07
 - [Ben's Bites AI Newsletter](people/bens-bites-ai-newsletter/README.md) - 3 条 - 最新 2026-07-07
-- [The MAD Podcast with Matt Turck](people/the-mad-podcast-with-matt-turck/README.md) - 5 条 - 最新 2026-07-02
 - [No Priors](people/no-priors/README.md) - 4 条 - 最新 2026-07-02
 - [Google Labs](people/google-labs/README.md) - 14 条 - 最新 2026-07-01
 - [Anthropic Engineering](people/anthropic-engineering/README.md) - 4 条 - 最新 2026-06-30
