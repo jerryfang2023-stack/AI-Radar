@@ -2465,7 +2465,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "BSIG",
         "label": "Business Signals",
-        "value": "BSIG-V2.1.2-v3-gate-cleanout"
+        "value": "BSIG-V2.2.0-pipeline-stage-ownership"
       },
       {
         "key": "IMAP",
