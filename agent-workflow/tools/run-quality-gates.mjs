@@ -40,6 +40,7 @@ const syntaxCommands = [
   [node, ["--check", "agent-workflow/tools/generate-asset-cards-from-pool.mjs"], "asset card generation syntax"],
   [node, ["--check", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"], "pool-to-card dedupe syntax"],
   [node, ["--check", "agent-workflow/tools/assert-business-signals-frontstage.mjs"], "business frontstage gate syntax"],
+  [node, ["--check", "agent-workflow/tools/assert-signal-card-editorial-quality.mjs"], "signal Card editorial gate syntax"],
   [node, ["--check", "agent-workflow/tools/assert-v3-source-first-frontstage.mjs"], "source-first frontstage syntax"],
   [node, ["--check", "agent-workflow/tools/frontstage-regression-gate.mjs"], "frontstage regression syntax"],
   [node, ["--check", "agent-workflow/tools/assert-current-rule-hygiene.mjs"], "current rule hygiene syntax"],
@@ -70,6 +71,7 @@ const commandSets = {
     [node, ["--check", "agent-workflow/tools/generate-asset-cards-from-pool.mjs"], "asset card generation syntax"],
     [node, ["--check", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"], "pool-to-card dedupe syntax"],
     [node, ["--check", "agent-workflow/tools/assert-business-signals-frontstage.mjs"], "business frontstage gate syntax"],
+    [node, ["--check", "agent-workflow/tools/assert-signal-card-editorial-quality.mjs"], "signal Card editorial gate syntax"],
     [node, ["--check", "agent-workflow/tools/frontstage-regression-gate.mjs"], "frontstage regression syntax"],
   ],
   business: [
@@ -77,6 +79,7 @@ const commandSets = {
     [node, ["agent-workflow/tools/assert-daily-production-chain.mjs", `--date=${date}`, "--stage=pre-commit", "--raw-min=150", "--pool-min=75", "--block-stale=true"], "run daily production chain pre-commit gate"],
   ],
   regression: [
+    [node, ["agent-workflow/tools/generate-asset-cards-from-pool.mjs", "--date=2026-07-11", "--quality-regression-fixtures=true"], "run Business Signal Card editorial regression fixtures"],
     [node, ["agent-workflow/tools/frontstage-regression-gate.mjs", `--date=${date}`], "run frontstage regression gate"],
   ],
   tags: [

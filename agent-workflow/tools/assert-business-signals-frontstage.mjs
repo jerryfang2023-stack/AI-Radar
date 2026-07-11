@@ -71,6 +71,7 @@ function markdownCode(text = "") {
 
 const gateArgs = [`--date=${date}`];
 const gates = [
+  runGate("editorial_quality", "Signal Card editorial quality gate", "agent-workflow/tools/assert-signal-card-editorial-quality.mjs", gateArgs),
   runGate("source_first", "V3 source-first frontstage gate", "agent-workflow/tools/assert-v3-source-first-frontstage.mjs", gateArgs),
   runGate("frontstage_regression", "Frontstage regression gate", "agent-workflow/tools/frontstage-regression-gate.mjs", gateArgs),
 ];

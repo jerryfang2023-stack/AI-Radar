@@ -48,6 +48,8 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 
 9. `no_detail_duplication`
    - Pass when `news fact`, `original points`, `value`, and `visible source excerpt` do not simply repeat the same sentence.
+   - Pass when the Card generator and unified Business gate compare normalized content, reject shared long prefixes, and block title-as-news-fact fallbacks.
+   - Fail when a Card passes only because one duplicated field is truncated or prefixed with `原文称` / `原始来源标题显示`.
 
 10. `no_title_subject_leak`
    - Pass when `subject` is a company, organization, product, customer, or institution, not a truncated title or headline phrase.
@@ -68,6 +70,11 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 
 15. `hermes_contract`
    - Pass when `site/data/intelligence-graph-index.json` is valid JSON and states that the public Card set uses all qualified raw-to-card Cards.
+
+16. `daily_editorial_freshness_and_recall`
+   - Pass when product lifecycle events are no older than 14 days and funding / customer cases are no older than 30 days, using Raw publication metadata, dated URLs, or source-backed page dates.
+   - Pass when undated company profiles, explainers, and weak `traceable_summary` captures remain backend-only until dated original evidence and Chinese fact material are repaired.
+   - Pass when confirmed IPOs, material AI lawsuits, product shutdowns, and `How X built/deployed Y` customer cases can produce Cards without being hidden by unrelated words or excerpt metadata labels.
 
 ## Repair Loop
 
