@@ -1,0 +1,279 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-035
+title: "A new programming model for durable execution - Vercel"
+title_zh: "持久执行的新编程模型--Vercel"
+title_translation_status: translated
+title_translation_method: mymemory_title_translation
+original_url: "https://vercel.com/blog/a-new-programming-model-for-durable-execution"
+canonical_url: "https://vercel.com/blog/a-new-programming-model-for-durable-execution"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-11T04:43:05.705Z
+language: mixed
+full_text_hash: 0ca5be2837accea9
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-11/r-035-a-new-programming-model-for-durable-execution-vercel.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-11/r-035-a-new-programming-model-for-durable-execution-vercel.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5047,"paragraph_count":36,"sentence_count":43,"boilerplate_hits":0,"symbol_ratio":0.0034,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 5047
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0ca5be2837accea9","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0a6614c4f619febc
+content_hash: 0ca5be2837accea9
+semantic_hash: 4d4a2422d9825f85
+duplicate_of: ""
+first_seen_at: "2026-07-11T04:43:05.705Z"
+last_seen_at: 2026-07-11T04:43:05.705Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agents","agent","Agents"],"people":[],"industries":["医疗","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["16","2026","2025","100 million","500 million","1","500","200"],"quotes":["use workflow","use step","use workflow","use step","use step"]}
+evidence_seed: {"company_actions":["The gap between prototypes and production-ready systems is huge.","Code that's trivial to run locally falls apart the moment it needs to handle failures, restarts, and real traffic.","Framework defined infrastructure solved this for web applications."],"case_details":[],"workflow_changes":["# A new programming model for durable execution Published: April 16, 2026 | Authors: Pranay Prakash Vercel Workflows is the easiest way to write long-running, durable, reliable, and observable agents and backends. --- The gap between prototypes and production-ready systems is huge. Code that's t... / query=AI platform launches agent workflow automation service 2026 / intent=find_original_source / path=official_original","Vercel Workflows is the easiest way to write long-running, durable, reliable, and observable agents and backends."],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"# A new programming model for durable execution Published: April 16, 2026 | Authors: Pranay Prakash Vercel Workflows is the easiest way to write long-running, durable, reliable, and observable agents and backends. --- The gap between prototypes and production-ready systems is huge. Code that's t... / query=AI platform launches agent workflow automation service 2026 / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Vercel Workflows is the easiest way to write long-running, durable, reliable, and observable agents and backends.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The gap between prototypes and production-ready systems is huge.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Code that's trivial to run locally falls apart the moment it needs to handle failures, restarts, and real traffic.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Framework defined infrastructure solved this for web applications.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"When you deploy, Vercel infers the right configuration from the app itself.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-11T04:43:05.705Z
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# A new programming model for durable execution - Vercel
+
+## clean_text
+
+Vercel Workflows is the easiest way to write long-running, durable, reliable, and observable agents and backends.
+The gap between prototypes and production-ready systems is huge. Code that's trivial to run locally falls apart the moment it needs to handle failures, restarts, and real traffic.
+Framework defined infrastructure solved this for web applications. When you deploy, Vercel infers the right configuration from the app itself. Workflows extends that model to long-running systems. Instead of managing a separate codebase for orchestration, durable workflows are an extension of your application code.
+Since launching in beta in October 2025, Workflows has processed over 100 million runs and over 500 million steps across more than 1,500 customers, with more than 200K npm downloads every week.
+Today, Vercel Workflows is generally available.
+The built in observability dashboard for Workflow SDK on Vercel.
+Copy link to heading Built for agents, backends, and long-running workloads
+Workflows is built for any workload that doesn’t fit in a single request.
+Agents : Deep integration with the AI SDK enables infinitely long running durable agents that can maintain state, tools, and handle external events or interruptions. AI SDK v7 is taking this further with WorkflowAgent.
+Backends : Workflow SDK proved this programming model in TypeScript codebases, and we're bringing it to a new language. The Workflow Python SDK is now in beta.
+Long-running workloads : Workflows can be used for any function that needs to execute reliably, including multi-step onboarding flows, payment processing, ETL pipelines, or any backend work that would otherwise require you to wire up your own queues and retry logic.
+Copy link to heading How it works
+Shipping a reliable long-running process to production typically means splitting your code across queues, workers, status tables, retry logic, and monitoring. Dedicated orchestration services add yet another layer with long-lived background processes you run in Kubernetes, scale horizontally, and dedicate engineering time to keep healthy. They are distributed systems you pay for on top of your core application compute.
+Workflows eliminates the orchestrator entirely. All coordination runs in your application code, not a separate service. The infrastructure is built on three components:
+Event log : records every step input, output, stream chunk, sleep, hook, and error in a run. It is the single source of truth for execution state and history.
+Your functions on Fluid compute : each step runs as its own function invocation on Fluid compute. The workflow library inside each function handles dequeueing, state loading, encryption, execution, and handoff to the next step.
+Vercel Queues : each function enqueues the next step automatically. Queues run automatically on Vercel, in your own Postgres, or in-memory locally.
+Because there is no separate orchestration service, you only pay for the compute your steps actually use when functions are running.
+Copy link to heading The programming model: your code is the orchestrator
+Workflows lets you write long-running functions in TypeScript or Python using normal control flow and a small API surface.
+In TypeScript you create a workflow with "use workflow" , and isolate units of work with "use step" . Workflows handles everything underneath: queues, retries, step isolation, observability, durable state, and streaming.
+export async function createSite ( input : { userId : string } ) {
+"use workflow"
+const profile = await fetchUserProfile ( input . userId )
+const plan = await generateSitePlan ( profile )
+const site = await buildSite ( plan )
+return site
+async function fetchUserProfile ( userId : string ) {
+"use step"
+return db . user . findUnique ( { where : { id : userId } } )
+async function generateSitePlan ( profile : unknown ) {
+"use step"
+return callModel ( { prompt : ` Generate a site plan for ${ JSON . stringify ( profile ) } ` } )
+async function buildSite ( plan : unknown ) {
+"use step"
+return provisionSite ( plan )
+A workflow that creates a site in three durable steps. "use workflow" marks the function as a workflow, and "use step" isolates each unit of work with automatic retries, persistence, and observability.
+At first glance, this looks like one function calling another, and that is exactly the point. Each step gets isolation, retries, persistence, observability, and durable continuation automatically. The orchestration lives in the application code, not in a separate system.
+A Next.js app with the Workflow SDK installed runs the same way locally as it does in production at scale, with the same code, real guarantees, and no separate orchestration tooling to configure.
+Copy link to heading Vercel Workflows in action: Guillermo's infinite chess game
+One of the best examples from beta testing is Guillermo's infinite chess game . It continuously pits models against each other, feeding them the current board state, validating moves, rendering the game, and running matches indefinitely, turn after turn.
+
+## full_text
+
+Vercel Workflows is the easiest way to write long-running, durable, reliable, and observable agents and backends.
+The gap between prototypes and production-ready systems is huge. Code that's trivial to run locally falls apart the moment it needs to handle failures, restarts, and real traffic.
+Framework defined infrastructure solved this for web applications. When you deploy, Vercel infers the right configuration from the app itself. Workflows extends that model to long-running systems. Instead of managing a separate codebase for orchestration, durable workflows are an extension of your application code.
+Since launching in beta in October 2025, Workflows has processed over 100 million runs and over 500 million steps across more than 1,500 customers, with more than 200K npm downloads every week.
+Today, Vercel Workflows is generally available.
+The built in observability dashboard for Workflow SDK on Vercel.
+Copy link to heading Built for agents, backends, and long-running workloads
+Workflows is built for any workload that doesn’t fit in a single request.
+Agents : Deep integration with the AI SDK enables infinitely long running durable agents that can maintain state, tools, and handle external events or interruptions. AI SDK v7 is taking this further with WorkflowAgent.
+Backends : Workflow SDK proved this programming model in TypeScript codebases, and we're bringing it to a new language. The Workflow Python SDK is now in beta.
+Long-running workloads : Workflows can be used for any function that needs to execute reliably, including multi-step onboarding flows, payment processing, ETL pipelines, or any backend work that would otherwise require you to wire up your own queues and retry logic.
+Copy link to heading How it works
+Shipping a reliable long-running process to production typically means splitting your code across queues, workers, status tables, retry logic, and monitoring. Dedicated orchestration services add yet another layer with long-lived background processes you run in Kubernetes, scale horizontally, and dedicate engineering time to keep healthy. They are distributed systems you pay for on top of your core application compute.
+Workflows eliminates the orchestrator entirely. All coordination runs in your application code, not a separate service. The infrastructure is built on three components:
+Event log : records every step input, output, stream chunk, sleep, hook, and error in a run. It is the single source of truth for execution state and history.
+Your functions on Fluid compute : each step runs as its own function invocation on Fluid compute. The workflow library inside each function handles dequeueing, state loading, encryption, execution, and handoff to the next step.
+Vercel Queues : each function enqueues the next step automatically. Queues run automatically on Vercel, in your own Postgres, or in-memory locally.
+Because there is no separate orchestration service, you only pay for the compute your steps actually use when functions are running.
+Copy link to heading The programming model: your code is the orchestrator
+Workflows lets you write long-running functions in TypeScript or Python using normal control flow and a small API surface.
+In TypeScript you create a workflow with "use workflow" , and isolate units of work with "use step" . Workflows handles everything underneath: queues, retries, step isolation, observability, durable state, and streaming.
+export async function createSite ( input : { userId : string } ) {
+"use workflow"
+const profile = await fetchUserProfile ( input . userId )
+const plan = await generateSitePlan ( profile )
+const site = await buildSite ( plan )
+return site
+async function fetchUserProfile ( userId : string ) {
+"use step"
+return db . user . findUnique ( { where : { id : userId } } )
+async function generateSitePlan ( profile : unknown ) {
+"use step"
+return callModel ( { prompt : ` Generate a site plan for ${ JSON . stringify ( profile ) } ` } )
+async function buildSite ( plan : unknown ) {
+"use step"
+return provisionSite ( plan )
+A workflow that creates a site in three durable steps. "use workflow" marks the function as a workflow, and "use step" isolates each unit of work with automatic retries, persistence, and observability.
+At first glance, this looks like one function calling another, and that is exactly the point. Each step gets isolation, retries, persistence, observability, and durable continuation automatically. The orchestration lives in the application code, not in a separate system.
+A Next.js app with the Workflow SDK installed runs the same way locally as it does in production at scale, with the same code, real guarantees, and no separate orchestration tooling to configure.
+Copy link to heading Vercel Workflows in action: Guillermo's infinite chess game
+One of the best examples from beta testing is Guillermo's infinite chess game . It continuously pits models against each other, feeding them the current board state, validating moves, rendering the game, and running matches indefinitely, turn after turn.
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 97
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5047,"paragraph_count":36,"sentence_count":43,"boilerplate_hits":0,"symbol_ratio":0.0034,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   # A new programming model for durable execution Published: April 16, 2026 | Authors: Pranay Prakash Vercel Workflows is the easiest way to write long-running, durable, reliable, and observable agents and backends. --- The gap between prototypes and production-ready systems is huge. Code that's t... / query=AI platform launches agent workflow automation service 2026 / intent=find_original_source / path=official_original
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Vercel Workflows is the easiest way to write long-running, durable, reliable, and observable agents and backends.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The gap between prototypes and production-ready systems is huge.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Code that's trivial to run locally falls apart the moment it needs to handle failures, restarts, and real traffic.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Framework defined infrastructure solved this for web applications.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   When you deploy, Vercel infers the right configuration from the app itself.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agents, agent, Agents
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 16, 2026, 2025, 100 million, 500 million, 1, 500, 200
+- quotes: use workflow / use step / use workflow / use step / use step
+
+## evidence_seed
+
+- company_actions: The gap between prototypes and production-ready systems is huge. / Code that's trivial to run locally falls apart the moment it needs to handle failures, restarts, and real traffic. / Framework defined infrastructure solved this for web applications.
+- case_details: 暂无公开信息
+- workflow_changes: # A new programming model for durable execution Published: April 16, 2026 | Authors: Pranay Prakash Vercel Workflows is the easiest way to write long-running, durable, reliable, and observable agents and backends. --- The gap between prototypes and production-ready systems is huge. Code that's t... / query=AI platform launches agent workflow automation service 2026 / intent=find_original_source / path=official_original / Vercel Workflows is the easiest way to write long-running, durable, reliable, and observable agents and backends.
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+# A new programming model for durable execution Published: April 16, 2026 | Authors: Pranay Prakash Vercel Workflows is the easiest way to write long-running, durable, reliable, and observable agents and backends. --- The gap between prototypes and production-ready systems is huge. Code that's t... / query=AI platform launches agent workflow automation service 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

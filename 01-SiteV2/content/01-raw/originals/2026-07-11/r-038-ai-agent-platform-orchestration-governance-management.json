@@ -1,0 +1,294 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-038",
+  "title": "AI Agent Platform: Orchestration, Governance & Management",
+  "title_zh": "人工智能代理平台：编排、治理和管理",
+  "title_translation_status": "translated",
+  "title_translation_method": "mymemory_title_translation",
+  "original_url": "https://www.clarista.io/platform/ai-agent-platform",
+  "canonical_url": "https://clarista.io/platform/ai-agent-platform",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "capital_startup",
+  "search_path_label": "资本与创业公司路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-11T04:43:06.662Z",
+  "language": "mixed",
+  "full_text": "AI Agent Platform: Orchestration, Governance & Management\nHome › Platform › AI Agent Platform\n2-4 weeks\nFrom spec to production agent\n50+\nPre-built tools & connectors\nAny LLM\nBring Anthropic, OpenAI, Bedrock, Llama\nSOC 2\nType II + ISO 27001 + HIPAA-ready\nWhat an AI agent platform should do — and what Clarista delivers\nA production AI agent is more than an LLM and a tool list. It's a governed system with orchestration, memory, evaluation, observability, and security. Here's what Clarista handles out of the box.\nAgent orchestration\nPlan-and-execute loops, multi-agent coordination, conditional branching, retries, timeouts. Built on a tested orchestration engine — you don't reinvent ReAct or LangGraph patterns.\nTool calling & connectors\n50+ pre-built tools: SQL, REST APIs, Slack, Salesforce, Google Drive, S3, Snowflake, Jira, Confluence, custom MCP servers. Add your own in minutes with the SDK.\nMemory & retrieval\nShort-term conversation memory, long-term vector memory, hybrid retrieval, automatic re-ranking. Bring your own vector store or use the managed one.\nEvaluation & testing\nAgent-level evals, prompt regression tests, golden datasets, LLM-as-judge scoring. Run before every release — catch regressions before they hit production.\nObservability & debugging\nTrace every agent run end-to-end. See the plan, every tool call, every token, every retry. Replay any session. Click into any step.\nCost & rate controls\nPer-agent and per-tenant token budgets. Hard caps. Real-time cost dashboards. Automatic cheaper-model fallback. You see the bill before it surprises you.\nSecurity & governance\nSSO (Okta, Azure AD), RBAC, audit logs, PII detection, prompt injection guards, data-residency controls. SOC 2 Type II + ISO 27001 baseline.\nDeployment\nOne-click deploy to your AWS, Azure, GCP, or on-prem. Your data never leaves your perimeter. Air-gapped option available.\nBring-your-own LLM\nAnthropic, OpenAI, Azure OpenAI, AWS Bedrock, Google Vertex, on-prem Llama, custom fine-tunes. Routing across multiple models per agent.\nAI agent platforms in 2026 — how Clarista compares\nThe agent platform market has split into three camps: managed SaaS suites, open-source frameworks, and enterprise platforms. Quick comparison of what each does well.\nPlatform Best for Hosted? Enterprise governance\nClarista Enterprise agents on your data Your cloud SOC 2 + ISO 27001 + RBAC + audit baked in\nMicrosoft Copilot Studio Microsoft-shop standardization Microsoft cloud Strong inside the Microsoft graph\nSalesforce Agentforce CRM-native agents Salesforce cloud Strong inside Salesforce data\nLangChain Platform / LangGraph Developer-first teams Hosted or self-host You build governance yourself\nCrewAI Enterprise Multi-agent orchestration Hosted Mid — improving\nAutoGen / Semantic Kernel Open-source builders You host You build governance yourself\nVellum / Humanloop Prompt-ops focus Hosted Limited — eval/observability focus\nOpenAI Assistants / GPTs Quick prototypes OpenAI cloud Limited — data goes to OpenAI\nThe pattern: managed SaaS platforms (Copilot Studio, Agentforce) lock you to a vendor stack. Frameworks (LangChain, AutoGen) give flexibility but make you build the platform around them. Clarista sits in the middle — managed platform behavior, deployed in your cloud, on your data, with any LLM.\nWhat teams build on Clarista's agent platform\nCustomer support copilots\nTriage tickets, draft replies, pull policy docs, escalate edge cases. Trained on your knowledge base, not the public internet.\nInternal research agents\nCross-source question-answering over Confluence, SharePoint, Slack, Notion, Google Drive. With citations.\nSales research agents\nPre-call account briefings — pull CRM, news, LinkedIn, financials, prior calls. Generate a one-page brief.\nCompliance & contract review\nFlag risky clauses, summarize obligations, compare against playbook. Audit trail of every decision.\nRFP / proposal agents\nAnswer RFP questions from past wins, internal docs, and playbooks. Draft proposals 10x faster.\nData analysis agents\nNatural-language queries against your warehouse. Generate SQL, run it, summarize, chart. With row-level security.\nAn AI agent orchestration platform and AI agent governance platform in one\nMost agent tools handle one of these two things. Clarista handles both — because in production, neither matters without the other.\nAI agent orchestration platform\nSingle-agent tools work fine for narrow tasks. Real enterprise work needs multiple agents handing off to each other — a research agent feeds an analyst agent feeds a writer agent feeds a reviewer agent. Clarista's AI agent orchestration platform manages the state, retries, escalation paths, and observability across the full chain. Define the workflow in plain language; Clarista handles routing, memory, and coordination. Built on industry-standard patterns (LangGraph-style state machines under the hood, exposed as a configuration layer your team actually owns).\nAI agent governance platform\nGovernance is the difference between a pilot and a production system. Clarista's AI agent governance platform adds the controls that regulated industries require: scope restrictions on what data and tools each agent can touch, approval gates on high-stakes decisions, cost caps to prevent runaway LLM spend, kill switches to disable agents instantly, full audit trails of every action, and bias monitoring on outcomes. SOC 2 + ISO 27001 + HIPAA-ready by default — not as a paid add-on.\nAn AI agent management platform that scales with you\nBeyond orchestration and governance, the third layer most platforms miss is management: how do you operate dozens of agents in production? Clarista's AI agent management platform provides a single pane of glass — every agent's current state, cost burn, latency, hallucination rate, and approval queue. Teams running 10+ agents in production stop being able to manage them by tab-switching between dashboards; the unified view is what makes scale tractable.\nWhy these three things have to be one platform\nOrchestration without governance ships agents that take dangerous actions. Governance without orchestration limits you to single-agent toy demos. Management without either gives you a dashboard for tools you can't actually control. The reason Clarista bundles all three: in production, separating them creates integration burden that exceeds the value of any individual piece.\nShip a production AI agent in weeks, not quarters.\n20-minute demo: bring a real agent use case. We'll wireframe how it ships on Clarista, on your data, with your governance.\nBook a demo →\nFrequently asked questions about AI agent platforms\nWhat is an AI agent platform?\nSoftware that lets enterprises build, deploy, orchestrate, monitor, and govern AI agents — autonomous LLM-powered systems that plan, call tools, retrieve data, and take actions. Good platforms ship orchestration, memory, tool calling, evals, observability, cost tracking, and security so teams focus on agent logic, not infrastructure.\nHow is an agent platform different from a framework like LangChain?\nFrameworks are code libraries — you still build deployment, observability, governance, and security. A platform like Clarista wraps the framework with managed orchestration, hosted memory, SSO, audit logs, cost dashboards, eval harnesses, and compliance controls. Frameworks ship code; platforms ship production agents.\nWhich AI agent platform is best for enterprises in 2026?\nFor enterprises with security + compliance + data-residency requirements: Clarista (governed, on your data, BYO LLM), Copilot Studio (Microsoft-shop), Agentforce (CRM-native). For developer-first teams without compliance constraints: LangChain Platform, CrewAI, Vellum. Choose based on data sensitivity and how much governance you need built-in.\nCan I run AI agents on my own data without exposing it to OpenAI or Anthropic?\nYes — Clarista runs in your AWS, Azure, GCP, or on-prem. Your data never leaves your perimeter. Bring your own LLM (Anthropic, OpenAI, Bedrock, Azure OpenAI, on-prem Llama, custom fine-tunes). Audit logs capture every prompt and tool call for compliance.\nHow much does an enterprise AI agent platform cost?\nTypically $50K-$500K per year depending on agent count, traffic, and support tier. Open-source frameworks are free but add hidden costs for hosting, observability, security, and engineering time (often $200K-$500K equivalent for a real production deployment). See /pricing for Clarista bands.\nWhat kinds of agents can I build?\nCustomer support copilots, internal knowledge agents, sales research, compliance review, contract review, RFP responses, code review, data analysis, multi-step workflows, and vertical agents for accounting, medical billing, recruiting, and more. Any agent that needs to plan, retrieve, call tools, and take actions on enterprise data.\nWe value your privacy\nWe use cookies and similar tracking technologies to operate our site, analyze usage, deliver advertising, and improve your experience. See our Cookie Policy for details. You can accept all, reject non-essential, or customize your choices.\nAccept all\nReject non-essential\nCustomize\nCookie preferences\nChoose which categories of cookies and tracking technologies you allow. Strictly necessary cookies cannot be disabled. Read our full Cookie Policy .\nStrictly necessary Required for security, authentication, fraud prevention, load balancing, and storing your consent preferences. Always on.\nFunctional & preferences Remember choices you make to provide a personalized experience (language, region, theme, saved filters).\nAnalytics & performance Help us understand how the site is used (Google Analytics, Vercel Analytics, Microsoft Clarity, etc.).\nMarketing & advertising Used for conversion tracking, retargeting, and personalized ads (LinkedIn, Meta, Google Ads, Bing, etc.).\nSave preferences\nAccept all\nReject non-essential\n🍪",
+  "clean_text": "AI Agent Platform: Orchestration, Governance & Management\nHome › Platform › AI Agent Platform\n2-4 weeks\nFrom spec to production agent\n50+\nPre-built tools & connectors\nAny LLM\nBring Anthropic, OpenAI, Bedrock, Llama\nSOC 2\nType II + ISO 27001 + HIPAA-ready\nWhat an AI agent platform should do — and what Clarista delivers\nA production AI agent is more than an LLM and a tool list. It's a governed system with orchestration, memory, evaluation, observability, and security. Here's what Clarista handles out of the box.\nAgent orchestration\nPlan-and-execute loops, multi-agent coordination, conditional branching, retries, timeouts. Built on a tested orchestration engine — you don't reinvent ReAct or LangGraph patterns.\nTool calling & connectors\n50+ pre-built tools: SQL, REST APIs, Slack, Salesforce, Google Drive, S3, Snowflake, Jira, Confluence, custom MCP servers. Add your own in minutes with the SDK.\nMemory & retrieval\nShort-term conversation memory, long-term vector memory, hybrid retrieval, automatic re-ranking. Bring your own vector store or use the managed one.\nEvaluation & testing\nAgent-level evals, prompt regression tests, golden datasets, LLM-as-judge scoring. Run before every release — catch regressions before they hit production.\nObservability & debugging\nTrace every agent run end-to-end. See the plan, every tool call, every token, every retry. Replay any session. Click into any step.\nCost & rate controls\nPer-agent and per-tenant token budgets. Hard caps. Real-time cost dashboards. Automatic cheaper-model fallback. You see the bill before it surprises you.\nSecurity & governance\nSSO (Okta, Azure AD), RBAC, audit logs, PII detection, prompt injection guards, data-residency controls. SOC 2 Type II + ISO 27001 baseline.\nDeployment\nOne-click deploy to your AWS, Azure, GCP, or on-prem. Your data never leaves your perimeter. Air-gapped option available.\nBring-your-own LLM\nAnthropic, OpenAI, Azure OpenAI, AWS Bedrock, Google Vertex, on-prem Llama, custom fine-tunes. Routing across multiple models per agent.\nAI agent platforms in 2026 — how Clarista compares\nThe agent platform market has split into three camps: managed SaaS suites, open-source frameworks, and enterprise platforms. Quick comparison of what each does well.\nPlatform Best for Hosted? Enterprise governance\nClarista Enterprise agents on your data Your cloud SOC 2 + ISO 27001 + RBAC + audit baked in\nMicrosoft Copilot Studio Microsoft-shop standardization Microsoft cloud Strong inside the Microsoft graph\nSalesforce Agentforce CRM-native agents Salesforce cloud Strong inside Salesforce data\nLangChain Platform / LangGraph Developer-first teams Hosted or self-host You build governance yourself\nCrewAI Enterprise Multi-agent orchestration Hosted Mid — improving\nAutoGen / Semantic Kernel Open-source builders You host You build governance yourself\nVellum / Humanloop Prompt-ops focus Hosted Limited — eval/observability focus\nOpenAI Assistants / GPTs Quick prototypes OpenAI cloud Limited — data goes to OpenAI\nThe pattern: managed SaaS platforms (Copilot Studio, Agentforce) lock you to a vendor stack. Frameworks (LangChain, AutoGen) give flexibility but make you build the platform around them. Clarista sits in the middle — managed platform behavior, deployed in your cloud, on your data, with any LLM.\nWhat teams build on Clarista's agent platform\nCustomer support copilots\nTriage tickets, draft replies, pull policy docs, escalate edge cases. Trained on your knowledge base, not the public internet.\nInternal research agents\nCross-source question-answering over Confluence, SharePoint, Slack, Notion, Google Drive. With citations.\nSales research agents\nPre-call account briefings — pull CRM, news, LinkedIn, financials, prior calls. Generate a one-page brief.\nCompliance & contract review\nFlag risky clauses, summarize obligations, compare against playbook. Audit trail of every decision.\nRFP / proposal agents\nAnswer RFP questions from past wins, internal docs, and playbooks. Draft proposals 10x faster.\nData analysis agents\nNatural-language queries against your warehouse. Generate SQL, run it, summarize, chart. With row-level security.\nAn AI agent orchestration platform and AI agent governance platform in one\nMost agent tools handle one of these two things. Clarista handles both — because in production, neither matters without the other.\nAI agent orchestration platform\nSingle-agent tools work fine for narrow tasks. Real enterprise work needs multiple agents handing off to each other — a research agent feeds an analyst agent feeds a writer agent feeds a reviewer agent. Clarista's AI agent orchestration platform manages the state, retries, escalation paths, and observability across the full chain. Define the workflow in plain language; Clarista handles routing, memory, and coordination. Built on industry-standard patterns (LangGraph-style state machines under the hood, exposed as a configuration layer your team actually owns).\nAI agent governance platform\nGovernance is the difference between a pilot and a production system. Clarista's AI agent governance platform adds the controls that regulated industries require: scope restrictions on what data and tools each agent can touch, approval gates on high-stakes decisions, cost caps to prevent runaway LLM spend, kill switches to disable agents instantly, full audit trails of every action, and bias monitoring on outcomes. SOC 2 + ISO 27001 + HIPAA-ready by default — not as a paid add-on.\nAn AI agent management platform that scales with you\nBeyond orchestration and governance, the third layer most platforms miss is management: how do you operate dozens of agents in production? Clarista's AI agent management platform provides a single pane of glass — every agent's current state, cost burn, latency, hallucination rate, and approval queue. Teams running 10+ agents in production stop being able to manage them by tab-switching between dashboards; the unified view is what makes scale tractable.\nWhy these three things have to be one platform\nOrchestration without governance ships agents that take dangerous actions. Governance without orchestration limits you to single-agent toy demos. Management without either gives you a dashboard for tools you can't actually control. The reason Clarista bundles all three: in production, separating them creates integration burden that exceeds the value of any individual piece.\nShip a production AI agent in weeks, not quarters.\n20-minute demo: bring a real agent use case. We'll wireframe how it ships on Clarista, on your data, with your governance.\nBook a demo →\nFrequently asked questions about AI agent platforms\nWhat is an AI agent platform?\nSoftware that lets enterprises build, deploy, orchestrate, monitor, and govern AI agents — autonomous LLM-powered systems that plan, call tools, retrieve data, and take actions. Good platforms ship orchestration, memory, tool calling, evals, observability, cost tracking, and security so teams focus on agent logic, not infrastructure.\nHow is an agent platform different from a framework like LangChain?\nFrameworks are code libraries — you still build deployment, observability, governance, and security. A platform like Clarista wraps the framework with managed orchestration, hosted memory, SSO, audit logs, cost dashboards, eval harnesses, and compliance controls. Frameworks ship code; platforms ship production agents.\nWhich AI agent platform is best for enterprises in 2026?\nFor enterprises with security + compliance + data-residency requirements: Clarista (governed, on your data, BYO LLM), Copilot Studio (Microsoft-shop), Agentforce (CRM-native). For developer-first teams without compliance constraints: LangChain Platform, CrewAI, Vellum. Choose based on data sensitivity and how much governance you need built-in.\nCan I run AI agents on my own data without exposing it to OpenAI or Anthropic?\nYes — Clarista runs in your AWS, Azure, GCP, or on-prem. Your data never leaves your perimeter. Bring your own LLM (Anthropic, OpenAI, Bedrock, Azure OpenAI, on-prem Llama, custom fine-tunes). Audit logs capture every prompt and tool call for compliance.\nHow much does an enterprise AI agent platform cost?\nTypically $50K-$500K per year depending on agent count, traffic, and support tier. Open-source frameworks are free but add hidden costs for hosting, observability, security, and engineering time (often $200K-$500K equivalent for a real production deployment). See /pricing for Clarista bands.\nWhat kinds of agents can I build?\nCustomer support copilots, internal knowledge agents, sales research, compliance review, contract review, RFP responses, code review, data analysis, multi-step workflows, and vertical agents for accounting, medical billing, recruiting, and more. Any agent that needs to plan, retrieve, call tools, and take actions on enterprise data.\nWe value your privacy\nWe use cookies and similar tracking technologies to operate our site, analyze usage, deliver advertising, and improve your experience. See our Cookie Policy for details. You can accept all, reject non-essential, or customize your choices.\nAccept all\nReject non-essential\nCustomize\nCookie preferences\nChoose which categories of cookies and tracking technologies you allow. Strictly necessary cookies cannot be disabled. Read our full Cookie Policy .\nStrictly necessary Required for security, authentication, fraud prevention, load balancing, and storing your consent preferences. Always on.\nFunctional & preferences Remember choices you make to provide a personalized experience (language, region, theme, saved filters).\nAnalytics & performance Help us understand how the site is used (Google Analytics, Vercel Analytics, Microsoft Clarity, etc.).\nMarketing & advertising Used for conversion tracking, retargeting, and personalized ads (LinkedIn, Meta, Google Ads, Bing, etc.).\nSave preferences\nAccept all\nReject non-essential\n🍪",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-11/r-038-ai-agent-platform-orchestration-governance-management.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-11/r-038-ai-agent-platform-orchestration-governance-management.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 67,
+  "extractor_diagnostics": {
+    "readability_score": 67,
+    "text_length": 9889,
+    "paragraph_count": 81,
+    "sentence_count": 100,
+    "boilerplate_hits": 6,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 9889,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "73bc8453c0e5e6f1",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "4968603438436401",
+  "content_hash": "73bc8453c0e5e6f1",
+  "full_text_hash": "73bc8453c0e5e6f1",
+  "semantic_hash": "faa26ad340913f1a",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-11T04:43:06.662Z",
+  "last_seen_at": "2026-07-11T04:43:06.662Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "AI Agent Platform: Orchestration, Governance & Management 2-4 weeks From spec to production agent 50+ Pre-built tools & connectors Any LLM Bring Anthropic, OpenAI, Bedrock, Llama SOC 2 Type II + ISO 27001 + HIPAA-ready ## What an AI agent platform should do — and what Clarista delivers A p... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=capital_startup",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "AI Agent Platform: Orchestration, Governance & Management Home › Platform › AI Agent Platform 2-4 weeks From spec to production agent 50+ Pre-built tools & connectors Any LLM Bring Anthropic, OpenAI, Bedrock, Llama SOC 2 Type II + ISO 27001 + HIPAA-ready What an AI agent platform should do — and what Clarista delivers A production AI agent is more than an LLM and a tool list.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "It's a governed system with orchestration, memory, evaluation, observability, and security.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Here's what Clarista handles out of the box.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Agent orchestration Plan-and-execute loops, multi-agent coordination, conditional branching, retries, timeouts.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Built on a tested orchestration engine — you don't reinvent ReAct or LangGraph patterns.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-11T04:43:06.662Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "Microsoft",
+      "Meta",
+      "AWS",
+      "Salesforce"
+    ],
+    "products": [
+      "Agent",
+      "agent",
+      "MCP",
+      "agents",
+      "Copilot"
+    ],
+    "people": [],
+    "industries": [
+      "医疗",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2",
+      "4",
+      "50",
+      "27001",
+      "3",
+      "27001 b",
+      "2026",
+      "10x"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "AI Agent Platform: Orchestration, Governance & Management 2-4 weeks From spec to production agent 50+ Pre-built tools & connectors Any LLM Bring Anthropic, OpenAI, Bedrock, Llama SOC 2 Type II + ISO 27001 + HIPAA-ready ## What an AI agent platform should do — and what Clarista delivers A p... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=capital_startup",
+      "AI Agent Platform: Orchestration, Governance & Management Home › Platform › AI Agent Platform 2-4 weeks From spec to production agent 50+ Pre-built tools & connectors Any LLM Bring Anthropic, OpenAI, Bedrock, Llama SOC 2 Type II + ISO 27001 + HIPAA-ready What an AI agent platform should do — and what Clarista delivers A production AI agent is more than an LLM and a tool list.",
+      "Here's what Clarista handles out of the box."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": [
+      "It's a governed system with orchestration, memory, evaluation, observability, and security."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# AI Agent Platform: Orchestration, Governance & Management\n\n- raw_id: R-038\n- title_zh: 人工智能代理平台：编排、治理和管理\n- title_translation_status: translated\n- title_translation_method: mymemory_title_translation\n- original_url: https://www.clarista.io/platform/ai-agent-platform\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-11T04:43:06.662Z\n\n## clean_text\n\nAI Agent Platform: Orchestration, Governance & Management\nHome › Platform › AI Agent Platform\n2-4 weeks\nFrom spec to production agent\n50+\nPre-built tools & connectors\nAny LLM\nBring Anthropic, OpenAI, Bedrock, Llama\nSOC 2\nType II + ISO 27001 + HIPAA-ready\nWhat an AI agent platform should do — and what Clarista delivers\nA production AI agent is more than an LLM and a tool list. It's a governed system with orchestration, memory, evaluation, observability, and security. Here's what Clarista handles out of the box.\nAgent orchestration\nPlan-and-execute loops, multi-agent coordination, conditional branching, retries, timeouts. Built on a tested orchestration engine — you don't reinvent ReAct or LangGraph patterns.\nTool calling & connectors\n50+ pre-built tools: SQL, REST APIs, Slack, Salesforce, Google Drive, S3, Snowflake, Jira, Confluence, custom MCP servers. Add your own in minutes with the SDK.\nMemory & retrieval\nShort-term conversation memory, long-term vector memory, hybrid retrieval, automatic re-ranking. Bring your own vector store or use the managed one.\nEvaluation & testing\nAgent-level evals, prompt regression tests, golden datasets, LLM-as-judge scoring. Run before every release — catch regressions before they hit production.\nObservability & debugging\nTrace every agent run end-to-end. See the plan, every tool call, every token, every retry. Replay any session. Click into any step.\nCost & rate controls\nPer-agent and per-tenant token budgets. Hard caps. Real-time cost dashboards. Automatic cheaper-model fallback. You see the bill before it surprises you.\nSecurity & governance\nSSO (Okta, Azure AD), RBAC, audit logs, PII detection, prompt injection guards, data-residency controls. SOC 2 Type II + ISO 27001 baseline.\nDeployment\nOne-click deploy to your AWS, Azure, GCP, or on-prem. Your data never leaves your perimeter. Air-gapped option available.\nBring-your-own LLM\nAnthropic, OpenAI, Azure OpenAI, AWS Bedrock, Google Vertex, on-prem Llama, custom fine-tunes. Routing across multiple models per agent.\nAI agent platforms in 2026 — how Clarista compares\nThe agent platform market has split into three camps: managed SaaS suites, open-source frameworks, and enterprise platforms. Quick comparison of what each does well.\nPlatform Best for Hosted? Enterprise governance\nClarista Enterprise agents on your data Your cloud SOC 2 + ISO 27001 + RBAC + audit baked in\nMicrosoft Copilot Studio Microsoft-shop standardization Microsoft cloud Strong inside the Microsoft graph\nSalesforce Agentforce CRM-native agents Salesforce cloud Strong inside Salesforce data\nLangChain Platform / LangGraph Developer-first teams Hosted or self-host You build governance yourself\nCrewAI Enterprise Multi-agent orchestration Hosted Mid — improving\nAutoGen / Semantic Kernel Open-source builders You host You build governance yourself\nVellum / Humanloop Prompt-ops focus Hosted Limited — eval/observability focus\nOpenAI Assistants / GPTs Quick prototypes OpenAI cloud Limited — data goes to OpenAI\nThe pattern: managed SaaS platforms (Copilot Studio, Agentforce) lock you to a vendor stack. Frameworks (LangChain, AutoGen) give flexibility but make you build the platform around them. Clarista sits in the middle — managed platform behavior, deployed in your cloud, on your data, with any LLM.\nWhat teams build on Clarista's agent platform\nCustomer support copilots\nTriage tickets, draft replies, pull policy docs, escalate edge cases. Trained on your knowledge base, not the public internet.\nInternal research agents\nCross-source question-answering over Confluence, SharePoint, Slack, Notion, Google Drive. With citations.\nSales research agents\nPre-call account briefings — pull CRM, news, LinkedIn, financials, prior calls. Generate a one-page brief.\nCompliance & contract review\nFlag risky clauses, summarize obligations, compare against playbook. Audit trail of every decision.\nRFP / proposal agents\nAnswer RFP questions from past wins, internal docs, and playbooks. Draft proposals 10x faster.\nData analysis agents\nNatural-language queries against your warehouse. Generate SQL, run it, summarize, chart. With row-level security.\nAn AI agent orchestration platform and AI agent governance platform in one\nMost agent tools handle one of these two things. Clarista handles both — because in production, neither matters without the other.\nAI agent orchestration platform\nSingle-agent tools work fine for narrow tasks. Real enterprise work needs multiple agents handing off to each other — a research agent feeds an analyst agent feeds a writer agent feeds a reviewer agent. Clarista's AI agent orchestration platform manages the state, retries, escalation paths, and observability across the full chain. Define the workflow in plain language; Clarista handles routing, memory, and coordination. Built on industry-standard patterns (LangGraph-style state machines under the hood, exposed as a configuration layer your team actually owns).\nAI agent governance platform\nGovernance is the difference between a pilot and a production system. Clarista's AI agent governance platform adds the controls that regulated industries require: scope restrictions on what data and tools each agent can touch, approval gates on high-stakes decisions, cost caps to prevent runaway LLM spend, kill switches to disable agents instantly, full audit trails of every action, and bias monitoring on outcomes. SOC 2 + ISO 27001 + HIPAA-ready by default — not as a paid add-on.\nAn AI agent management platform that scales with you\nBeyond orchestration and governance, the third layer most platforms miss is management: how do you operate dozens of agents in production? Clarista's AI agent management platform provides a single pane of glass — every agent's current state, cost burn, latency, hallucination rate, and approval queue. Teams running 10+ agents in production stop being able to manage them by tab-switching between dashboards; the unified view is what makes scale tractable.\nWhy these three things have to be one platform\nOrchestration without governance ships agents that take dangerous actions. Governance without orchestration limits you to single-agent toy demos. Management without either gives you a dashboard for tools you can't actually control. The reason Clarista bundles all three: in production, separating them creates integration burden that exceeds the value of any individual piece.\nShip a production AI agent in weeks, not quarters.\n20-minute demo: bring a real agent use case. We'll wireframe how it ships on Clarista, on your data, with your governance.\nBook a demo →\nFrequently asked questions about AI agent platforms\nWhat is an AI agent platform?\nSoftware that lets enterprises build, deploy, orchestrate, monitor, and govern AI agents — autonomous LLM-powered systems that plan, call tools, retrieve data, and take actions. Good platforms ship orchestration, memory, tool calling, evals, observability, cost tracking, and security so teams focus on agent logic, not infrastructure.\nHow is an agent platform different from a framework like LangChain?\nFrameworks are code libraries — you still build deployment, observability, governance, and security. A platform like Clarista wraps the framework with managed orchestration, hosted memory, SSO, audit logs, cost dashboards, eval harnesses, and compliance controls. Frameworks ship code; platforms ship production agents.\nWhich AI agent platform is best for enterprises in 2026?\nFor enterprises with security + compliance + data-residency requirements: Clarista (governed, on your data, BYO LLM), Copilot Studio (Microsoft-shop), Agentforce (CRM-native). For developer-first teams without compliance constraints: LangChain Platform, CrewAI, Vellum. Choose based on data sensitivity and how much governance you need built-in.\nCan I run AI agents on my own data without exposing it to OpenAI or Anthropic?\nYes — Clarista runs in your AWS, Azure, GCP, or on-prem. Your data never leaves your perimeter. Bring your own LLM (Anthropic, OpenAI, Bedrock, Azure OpenAI, on-prem Llama, custom fine-tunes). Audit logs capture every prompt and tool call for compliance.\nHow much does an enterprise AI agent platform cost?\nTypically $50K-$500K per year depending on agent count, traffic, and support tier. Open-source frameworks are free but add hidden costs for hosting, observability, security, and engineering time (often $200K-$500K equivalent for a real production deployment). See /pricing for Clarista bands.\nWhat kinds of agents can I build?\nCustomer support copilots, internal knowledge agents, sales research, compliance review, contract review, RFP responses, code review, data analysis, multi-step workflows, and vertical agents for accounting, medical billing, recruiting, and more. Any agent that needs to plan, retrieve, call tools, and take actions on enterprise data.\nWe value your privacy\nWe use cookies and similar tracking technologies to operate our site, analyze usage, deliver advertising, and improve your experience. See our Cookie Policy for details. You can accept all, reject non-essential, or customize your choices.\nAccept all\nReject non-essential\nCustomize\nCookie preferences\nChoose which categories of cookies and tracking technologies you allow. Strictly necessary cookies cannot be disabled. Read our full Cookie Policy .\nStrictly necessary Required for security, authentication, fraud prevention, load balancing, and storing your consent preferences. Always on.\nFunctional & preferences Remember choices you make to provide a personalized experience (language, region, theme, saved filters).\nAnalytics & performance Help us understand how the site is used (Google Analytics, Vercel Analytics, Microsoft Clarity, etc.).\nMarketing & advertising Used for conversion tracking, retargeting, and personalized ads (LinkedIn, Meta, Google Ads, Bing, etc.).\nSave preferences\nAccept all\nReject non-essential\n🍪\n\n## full_text\n\nAI Agent Platform: Orchestration, Governance & Management\nHome › Platform › AI Agent Platform\n2-4 weeks\nFrom spec to production agent\n50+\nPre-built tools & connectors\nAny LLM\nBring Anthropic, OpenAI, Bedrock, Llama\nSOC 2\nType II + ISO 27001 + HIPAA-ready\nWhat an AI agent platform should do — and what Clarista delivers\nA production AI agent is more than an LLM and a tool list. It's a governed system with orchestration, memory, evaluation, observability, and security. Here's what Clarista handles out of the box.\nAgent orchestration\nPlan-and-execute loops, multi-agent coordination, conditional branching, retries, timeouts. Built on a tested orchestration engine — you don't reinvent ReAct or LangGraph patterns.\nTool calling & connectors\n50+ pre-built tools: SQL, REST APIs, Slack, Salesforce, Google Drive, S3, Snowflake, Jira, Confluence, custom MCP servers. Add your own in minutes with the SDK.\nMemory & retrieval\nShort-term conversation memory, long-term vector memory, hybrid retrieval, automatic re-ranking. Bring your own vector store or use the managed one.\nEvaluation & testing\nAgent-level evals, prompt regression tests, golden datasets, LLM-as-judge scoring. Run before every release — catch regressions before they hit production.\nObservability & debugging\nTrace every agent run end-to-end. See the plan, every tool call, every token, every retry. Replay any session. Click into any step.\nCost & rate controls\nPer-agent and per-tenant token budgets. Hard caps. Real-time cost dashboards. Automatic cheaper-model fallback. You see the bill before it surprises you.\nSecurity & governance\nSSO (Okta, Azure AD), RBAC, audit logs, PII detection, prompt injection guards, data-residency controls. SOC 2 Type II + ISO 27001 baseline.\nDeployment\nOne-click deploy to your AWS, Azure, GCP, or on-prem. Your data never leaves your perimeter. Air-gapped option available.\nBring-your-own LLM\nAnthropic, OpenAI, Azure OpenAI, AWS Bedrock, Google Vertex, on-prem Llama, custom fine-tunes. Routing across multiple models per agent.\nAI agent platforms in 2026 — how Clarista compares\nThe agent platform market has split into three camps: managed SaaS suites, open-source frameworks, and enterprise platforms. Quick comparison of what each does well.\nPlatform Best for Hosted? Enterprise governance\nClarista Enterprise agents on your data Your cloud SOC 2 + ISO 27001 + RBAC + audit baked in\nMicrosoft Copilot Studio Microsoft-shop standardization Microsoft cloud Strong inside the Microsoft graph\nSalesforce Agentforce CRM-native agents Salesforce cloud Strong inside Salesforce data\nLangChain Platform / LangGraph Developer-first teams Hosted or self-host You build governance yourself\nCrewAI Enterprise Multi-agent orchestration Hosted Mid — improving\nAutoGen / Semantic Kernel Open-source builders You host You build governance yourself\nVellum / Humanloop Prompt-ops focus Hosted Limited — eval/observability focus\nOpenAI Assistants / GPTs Quick prototypes OpenAI cloud Limited — data goes to OpenAI\nThe pattern: managed SaaS platforms (Copilot Studio, Agentforce) lock you to a vendor stack. Frameworks (LangChain, AutoGen) give flexibility but make you build the platform around them. Clarista sits in the middle — managed platform behavior, deployed in your cloud, on your data, with any LLM.\nWhat teams build on Clarista's agent platform\nCustomer support copilots\nTriage tickets, draft replies, pull policy docs, escalate edge cases. Trained on your knowledge base, not the public internet.\nInternal research agents\nCross-source question-answering over Confluence, SharePoint, Slack, Notion, Google Drive. With citations.\nSales research agents\nPre-call account briefings — pull CRM, news, LinkedIn, financials, prior calls. Generate a one-page brief.\nCompliance & contract review\nFlag risky clauses, summarize obligations, compare against playbook. Audit trail of every decision.\nRFP / proposal agents\nAnswer RFP questions from past wins, internal docs, and playbooks. Draft proposals 10x faster.\nData analysis agents\nNatural-language queries against your warehouse. Generate SQL, run it, summarize, chart. With row-level security.\nAn AI agent orchestration platform and AI agent governance platform in one\nMost agent tools handle one of these two things. Clarista handles both — because in production, neither matters without the other.\nAI agent orchestration platform\nSingle-agent tools work fine for narrow tasks. Real enterprise work needs multiple agents handing off to each other — a research agent feeds an analyst agent feeds a writer agent feeds a reviewer agent. Clarista's AI agent orchestration platform manages the state, retries, escalation paths, and observability across the full chain. Define the workflow in plain language; Clarista handles routing, memory, and coordination. Built on industry-standard patterns (LangGraph-style state machines under the hood, exposed as a configuration layer your team actually owns).\nAI agent governance platform\nGovernance is the difference between a pilot and a production system. Clarista's AI agent governance platform adds the controls that regulated industries require: scope restrictions on what data and tools each agent can touch, approval gates on high-stakes decisions, cost caps to prevent runaway LLM spend, kill switches to disable agents instantly, full audit trails of every action, and bias monitoring on outcomes. SOC 2 + ISO 27001 + HIPAA-ready by default — not as a paid add-on.\nAn AI agent management platform that scales with you\nBeyond orchestration and governance, the third layer most platforms miss is management: how do you operate dozens of agents in production? Clarista's AI agent management platform provides a single pane of glass — every agent's current state, cost burn, latency, hallucination rate, and approval queue. Teams running 10+ agents in production stop being able to manage them by tab-switching between dashboards; the unified view is what makes scale tractable.\nWhy these three things have to be one platform\nOrchestration without governance ships agents that take dangerous actions. Governance without orchestration limits you to single-agent toy demos. Management without either gives you a dashboard for tools you can't actually control. The reason Clarista bundles all three: in production, separating them creates integration burden that exceeds the value of any individual piece.\nShip a production AI agent in weeks, not quarters.\n20-minute demo: bring a real agent use case. We'll wireframe how it ships on Clarista, on your data, with your governance.\nBook a demo →\nFrequently asked questions about AI agent platforms\nWhat is an AI agent platform?\nSoftware that lets enterprises build, deploy, orchestrate, monitor, and govern AI agents — autonomous LLM-powered systems that plan, call tools, retrieve data, and take actions. Good platforms ship orchestration, memory, tool calling, evals, observability, cost tracking, and security so teams focus on agent logic, not infrastructure.\nHow is an agent platform different from a framework like LangChain?\nFrameworks are code libraries — you still build deployment, observability, governance, and security. A platform like Clarista wraps the framework with managed orchestration, hosted memory, SSO, audit logs, cost dashboards, eval harnesses, and compliance controls. Frameworks ship code; platforms ship production agents.\nWhich AI agent platform is best for enterprises in 2026?\nFor enterprises with security + compliance + data-residency requirements: Clarista (governed, on your data, BYO LLM), Copilot Studio (Microsoft-shop), Agentforce (CRM-native). For developer-first teams without compliance constraints: LangChain Platform, CrewAI, Vellum. Choose based on data sensitivity and how much governance you need built-in.\nCan I run AI agents on my own data without exposing it to OpenAI or Anthropic?\nYes — Clarista runs in your AWS, Azure, GCP, or on-prem. Your data never leaves your perimeter. Bring your own LLM (Anthropic, OpenAI, Bedrock, Azure OpenAI, on-prem Llama, custom fine-tunes). Audit logs capture every prompt and tool call for compliance.\nHow much does an enterprise AI agent platform cost?\nTypically $50K-$500K per year depending on agent count, traffic, and support tier. Open-source frameworks are free but add hidden costs for hosting, observability, security, and engineering time (often $200K-$500K equivalent for a real production deployment). See /pricing for Clarista bands.\nWhat kinds of agents can I build?\nCustomer support copilots, internal knowledge agents, sales research, compliance review, contract review, RFP responses, code review, data analysis, multi-step workflows, and vertical agents for accounting, medical billing, recruiting, and more. Any agent that needs to plan, retrieve, call tools, and take actions on enterprise data.\nWe value your privacy\nWe use cookies and similar tracking technologies to operate our site, analyze usage, deliver advertising, and improve your experience. See our Cookie Policy for details. You can accept all, reject non-essential, or customize your choices.\nAccept all\nReject non-essential\nCustomize\nCookie preferences\nChoose which categories of cookies and tracking technologies you allow. Strictly necessary cookies cannot be disabled. Read our full Cookie Policy .\nStrictly necessary Required for security, authentication, fraud prevention, load balancing, and storing your consent preferences. Always on.\nFunctional & preferences Remember choices you make to provide a personalized experience (language, region, theme, saved filters).\nAnalytics & performance Help us understand how the site is used (Google Analytics, Vercel Analytics, Microsoft Clarity, etc.).\nMarketing & advertising Used for conversion tracking, retargeting, and personalized ads (LinkedIn, Meta, Google Ads, Bing, etc.).\nSave preferences\nAccept all\nReject non-essential\n🍪\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 67\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] AI Agent Platform: Orchestration, Governance & Management 2-4 weeks From spec to production agent 50+ Pre-built tools & connectors Any LLM Bring Anthropic, OpenAI, Bedrock, Llama SOC 2 Type II + ISO 27001 + HIPAA-ready ## What an AI agent platform should do — and what Clarista delivers A p... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=capital_startup\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] AI Agent Platform: Orchestration, Governance & Management Home › Platform › AI Agent Platform 2-4 weeks From spec to production agent 50+ Pre-built tools & connectors Any LLM Bring Anthropic, OpenAI, Bedrock, Llama SOC 2 Type II + ISO 27001 + HIPAA-ready What an AI agent platform should do — and what Clarista delivers A production AI agent is more than an LLM and a tool list.\n3. [supporting_context / signal_card_candidate, relationship_graph_input / medium] It's a governed system with orchestration, memory, evaluation, observability, and security.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Here's what Clarista handles out of the box.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Agent orchestration Plan-and-execute loops, multi-agent coordination, conditional branching, retries, timeouts.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Built on a tested orchestration engine — you don't reinvent ReAct or LangGraph patterns.\n"
+}

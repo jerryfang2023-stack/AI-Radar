@@ -1,0 +1,561 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-036
+title: "ai-boost/awesome-harness-engineering - GitHub"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://github.com/ai-boost/awesome-harness-engineering"
+canonical_url: "https://github.com/ai-boost/awesome-harness-engineering"
+source_name: "keyword search / Anysearch"
+source_type: developer
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "developer_ecosystem"
+search_path_label: "开发生态路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-11T04:43:06.070Z
+language: mixed
+full_text_hash: 1f30975b6240f09b
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-11/r-036-ai-boost-awesome-harness-engineering-github.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-11/r-036-ai-boost-awesome-harness-engineering-github.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 79
+extractor_diagnostics: {"readability_score":79,"text_length":60000,"paragraph_count":179,"sentence_count":310,"boilerplate_hits":6,"symbol_ratio":0.0006,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 60000
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1f30975b6240f09b","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 95e2f11879a290a0
+content_hash: dcd88cc3d382146c
+semantic_hash: b2ac67457d00170d
+duplicate_of: ""
+first_seen_at: "2026-07-11T04:43:06.070Z"
+last_seen_at: 2026-07-11T04:43:06.070Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Google","Microsoft","GitHub","Meta"],"products":["agent","MCP","AGENTS","CLAUDE","Agent","Codex","agents","Agents","Claude"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["2975","307","25","94","3","183","5","6"],"quotes":["humans on the loop","context rot","agentic engineering platform","Intent Met","agent = model + harness"]}
+evidence_seed: {"company_actions":["ai-boost awesome-harness-engineering Public Notifications You must be signed in to change notification settings Fork 307 Star 3k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 183 Commits 183 Commits assets assets templates templates .","md LICENSE LICENSE README.","py View all files Repository files navigation Awesome Harness Engineering Curated resources, patterns, and templates for building reliable AI agent harnesses."],"case_details":["# Repository: ai-boost/awesome-harness-engineering Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration. - Stars: 2975 - Forks: 307 - Watchers: 25 - Open issues: 94 - Primary language: Python - Languages: Python - License..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"# Repository: ai-boost/awesome-harness-engineering Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration. - Stars: 2975 - Forks: 307 - Watchers: 25 - Open issues: 94 - Primary language: Python - Languages: Python - License..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"ai-boost awesome-harness-engineering Public Notifications You must be signed in to change notification settings Fork 307 Star 3k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 183 Commits 183 Commits assets assets templates templates .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"md LICENSE LICENSE README.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"py View all files Repository files navigation Awesome Harness Engineering Curated resources, patterns, and templates for building reliable AI agent harnesses.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Deutsch | English | Español | Français | 日本語 | 한국어 | Português | Русский | 中文 Harness engineering is the discipline of designing the scaffolding — context delivery, tool interfaces, planning artifacts, verification loops, memory systems, and sandboxes — that surrounds an AI agent and determines whether it succeeds or fails on real tasks.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"This list focuses on the harness , not the model.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-11T04:43:06.070Z
+theme: early-direction-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# ai-boost/awesome-harness-engineering - GitHub
+
+## clean_text
+
+ai-boost
+awesome-harness-engineering
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+307
+Star
+3k
+main
+Branches Tags
+Go to file
+Code Open more actions menu
+Folders and files
+Name Name Last commit message
+Last commit date
+Latest commit
+History
+183 Commits
+183 Commits
+assets
+assets
+templates
+templates
+.gitignore
+.gitignore
+AGENTS.md
+AGENTS.md
+CLAUDE.md
+CLAUDE.md
+CONTRIBUTING.md
+CONTRIBUTING.md
+LICENSE
+LICENSE
+README.md
+README.md
+verify_urls.py
+verify_urls.py
+View all files
+Repository files navigation
+Awesome Harness Engineering
+Curated resources, patterns, and templates for building reliable AI agent harnesses.
+Deutsch |
+English |
+Español |
+Français |
+日本語 |
+한국어 |
+Português |
+Русский |
+中文
+Harness engineering is the discipline of designing the scaffolding — context delivery, tool interfaces, planning artifacts, verification loops, memory systems, and sandboxes — that surrounds an AI agent and determines whether it succeeds or fails on real tasks.
+This list focuses on the harness , not the model. Every component here exists because the model can't do it alone — and the best harnesses are designed knowing those components will become unnecessary as models improve.
+Contents
+📐 Foundations
+🧩 Design Primitives
+🔄 Agent Loop
+🗺️ Planning & Task Decomposition
+📦 Context Delivery & Compaction
+🔧 Tool Design
+🔌 Skills & MCP
+🛡️ Permissions & Authorization
+🧠 Memory & State
+⚙️ Task Runners & Orchestration
+✔️ Verification & CI Integration
+👁️ Observability & Tracing
+🐛 Debugging & Developer Experience
+🧑‍💼 Human-in-the-Loop
+🔍 Reference Implementations
+🎓 Tutorials & Educational
+🏭 Generators & Meta-Harnesses
+🧪 Demo Harnesses
+🗂️ Adjacent Collections
+🔒 Security, Sandbox & Permissions
+✅ Evals & Verification
+📋 Templates
+📚 Related Awesome Lists
+🤝 Contributing
+Foundations
+Canonical essays that define what harness engineering is and why it matters.
+Harness Engineering — OpenAI's framing of harness engineering as a discipline: how to design the scaffolding that lets Codex and similar agents operate reliably in an agent-first world.
+Unrolling the Codex Agent Loop — OpenAI's detailed breakdown of the Codex agent loop, exposing each harness component and where it can be improved.
+Run Long-Horizon Tasks with Codex — OpenAI's practice guide for long-horizon task planning: introduces Plan.md, Implement.md, Documentation.md as reusable harness artifacts.
+Building Effective Agents — Anthropic's foundational guide on agent architecture, covering when to use workflows vs. agents and how to compose primitives.
+Harness Design for Long-Running Application Development — Anthropic's engineering blog on designing harnesses for sustained, multi-session development tasks. Key insight: every harness component assumes the model can't do something; those assumptions expire.
+Writing Effective Tools for Agents — Anthropic's guide on tool interface design: naming, schemas, error surfaces, and the principle that tool design is agent UX.
+Beyond Permission Prompts — Anthropic on building structured permission and authorization systems into agent harnesses instead of relying on natural-language permission text.
+Demystifying Evals for AI Agents — Anthropic's framework for evaluating agent behavior: what to measure, how to build eval harnesses, and why unit-test-style evals fail for agents.
+What is an AI Agent? — IBM's definitional piece, useful for anchoring harness design decisions to a clear model of what an agent actually is.
+Agent Development Kit: Making it easy to build multi-agent applications — Google's announcement and design rationale for ADK: explains the multi-agent topology, tool registration model, and eval pipeline that shaped their framework. Complements the Anthropic/OpenAI framing with Google's production perspective.
+Harness Engineering — Martin Fowler's synthesis of what harness engineering practice looks like: three interlocking systems — context engineering (curating what the agent knows), architectural constraints (deterministic linters and structural tests), and entropy management (periodic agents that repair documentation drift). The "humans on the loop" framing — harness engineers who design and maintain agent environments rather than inspecting individual outputs — is the clearest conceptual map of what the discipline actually entails.
+The Anatomy of an Agent Harness — LangChain's structural breakdown of the five primitives that compose a harness: filesystem (durable state + agent collaboration surface), code execution (autonomous problem-solving without pre-designed solutions), sandbox (isolation + verification), memory (cross-session persistence), and context management (compaction against "context rot"). The co-evolution warning — models trained with specific harnesses can become overfitted to those designs — explains why harness architecture choices have lasting consequences beyond the immediate task.
+Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned — The first systematic practitioner paper on terminal-native coding agent harness design: eager-construction scaffolding (pre-build all components before the first message to eliminate first-call latency and race conditions), compound multi-model architecture (different model instances for execution, reasoning, critique, and vision tasks), 5-layer defense-in-depth safety, and schema-filtered planning subagents (enforce behavioral constraints via tool schema rather than runtime permission checks). The five lessons distilled from building OpenDev apply to any server-side agent harness.
+Natural-Language Agent Harnesses — Proposes externalizing agent control logic as portable natural-language artifacts (NLAHs) executed by a shared Intelligent Harness Runtime, enabling harness design to be studied, transferred, and reproduced rather than buried in bespoke controller code. Directly addresses the root cause of harness fragility: control logic scattered across framework defaults and hard-coded controller logic that can't be inspected, versioned, or transferred.
+Ranking Engineer Agent (REA): Meta's Autonomous AI System for Ads Ranking — Meta's production harness for multi-day ML pipeline automation with hibernate-and-wake checkpointing for resuming interrupted 6-hour tasks without losing context. Demonstrates harness design for scientific workflows where individual turns can exceed model context limits but the overall pipeline must maintain coherence across days.
+Supercharge Your AI Agents: The New ADK Integrations Ecosystem — Google's 2026 update to Agent Development Kit expanding the ecosystem integrations (Hugging Face, GitHub, Daytona, Notion, etc.) and providing reference patterns for how orchestration harnesses wire external services without losing determinism or state coherence.
+2026 Agentic Coding Trends Report — Anthropic's industry benchmark identifying infrastructure configuration as a first-class optimization variable: harness setup alone can swing benchmarks by 5+ percentage points. Documents the shift from single-agent to orchestrated multi-agent teams and introduces the "agentic engineering platform" category, bridging the gap between agent frameworks and production deployment infrastructure.
+How We Build Azure SRE Agent with Agentic Workflows — Architecture walkthrough of Microsoft's agent that has handled 35,000+ production incidents autonomously, reducing Azure App Service time-to-mitigation from 40.5 hours to 3 minutes. Documents the integration of MCP tools, telemetry, code repositories, and incident management platforms into a single agent harness with human-in-the-loop governance. The most data-backed production harness case study published in 2026.
+Context Engineering for Reliable AI Agents: Lessons from Building Azure SRE Agent — Microsoft's account of shifting from 100+ bespoke tools and a prescriptive prompt to a filesystem-based context engineering system for their SRE agent. Key finding: exposing everything (source code, runbooks, query schemas, past investigation notes) as files and letting the agent use read_file , grep , find , and shell outperformed specialized tooling — "Intent Met" score rose from 45% to 75% on novel incidents.
+Harness Engineering: Structured Workflows for AI-Assisted Development — Red Hat's enterprise perspective on harness engineering (April 7, 2026): AI writes better code when you design the environment it works in. Emphasizes structured context over free-form tickets, expanding the agent's toolbox through MCP integrations (CI status, deployment logs, runtime metrics) as real data sources, and a four-pillar model (vibes, specs, skills, agents) for organizing how humans and agents collaborate.
+Harness engineering for coding agent users — Birgitta Böckeler's systematic mental model (April 2026) for coding-agent harnesses, framing them as feedforward guides plus feedback sensors that self-correct before output reaches human eyes. Distinguishes computational controls (linters, tests) from inferential ones (LLM-as-judge), and argues that harnessability should become a first-class criterion in technology and architecture decisions.
+A Practical Guide to Building AI Agents — OpenAI's April 2026 comprehensive guide distilling production deployment patterns into actionable best practices: single-agent vs. multi-agent orchestration (manager vs. decentralized handoffs), tool design for many-to-many agent-tool relationships, and layered guardrail patterns combining input validation, output filtering, tool-risk ratings, and human-intervention triggers.
+An Update on Recent Claude Code Quality Reports — Anthropic's transparent April 2026 postmortem tracing Claude Code quality degradation to three independent harness-level changes: a default reasoning-effort downgrade, a caching-optimization bug that continuously dropped thinking history from stale sessions, and an overly aggressive verbosity-limiting system prompt. Essential reading for understanding how seemingly minor harness adjustments — prompt wording, cache headers, and default parameters — can compound into visible agent regressions, and for the rigorous diagnostic process required to isolate them.
+Agent Harness Design: 3 Patterns for Harnessing Claude's Intelligence — Anthropic's April 2026 design guide distilling harness engineering into three actionable patterns: build on tools Claude already knows, remove harness assumptions as capabilities improve, and set UX/cost/safety boundaries carefully. A practical complement to the "agent = model + harness" framing that helps teams decide what scaffolding to keep, add, or remove over time.
+Code as Agent Harness — May 2026 survey framing code as the basis for agent infrastructure rather than merely output: it unifies harness interface, mechanisms, and multi-agent scaling through shared code artifacts, and surfaces open challenges from verification under incomplete feedback to regression-free improvement.
+Harness Engineering: How to Build Reliable AI Agents by Engineering the System, Not the Model — deepset's May 2026 synthesis of agent reliability as a harness problem: a failure-classification framework (context, constraint, verification, planning failures) that maps each failure mode to the right harness component, and a concrete demonstration that harness-only changes can move agents 20+ ranking positions without swapping the model.
+What makes a harness a harness: necessary and sufficient conditions for an agent harness — June 2026 constitutive definition of an agent harness as a runtime layer with four necessary and sufficient elements: an agent loop, a tool interface, context management, and control mechanisms. Applied to Claude Code, Codex CLI, Aider, Cline, OpenHands, and SWE-agent, it provides a rigorous inclusion test for distinguishing harnesses from generators, guardrails, or plain tool wrappers.
+Architectural Design Decisions in AI Agent Harnesses — April 2026 empirical study of 70 public agent systems across five recurring dimensions (subagent architecture, context management, tool systems, safety mechanisms, orchestration) that synthesizes five architectural patterns. The comparative research package turns harness selection from a framework popularity contest into a reasoned comparison of design trade-offs.
+RUCAIBox/awesome-agent-harness — RUCAIBox's survey paper and curated reading list on Agent Systems with Harness Engineering , mapping harness design across agent workflows, memory systems, skill libraries, and multi-agent orchestration with 500+ references. The clearest academic complement to vendor-specific harness engineering posts.
+Design Primitives
+Harness components organized by the problem they solve, not by vendor.
+Agent Loop
+ReAct: Synergizing Reasoning and Acting in Language Models — The foundational paper defining the Thought/Action/Observation loop structure that underlies virtually every agent harness. Required reading for understanding why the loop is structured the way it is and where each harness component maps onto the reasoning-acting cycle.
+Unrolling the Codex Agent Loop — The canonical decomposition of what happens inside one agent loop iteration: observe, plan, act, verify.
+LangGraph — Low Level Concepts — Models the agent loop explicitly as a directed graph with typed state, conditional edges, and checkpointing. The most concrete engineering treatment of loop control flow: how to implement termination conditions, branch on tool results, and persist mid-loop state for resumption.
+Unlocking the Codex Harness: How We Built the App Server — OpenAI's engineering deep-dive into the Item/Turn/Thread protocol (JSON-RPC/JSONL over stdio) that exposes the Codex harness to every client surface. The most direct first-party account of why approval flows, streaming diffs, and thread persistence demand a purpose-built protocol — and why MCP's tool-oriented model proved insufficient for these requirements.
+Hooks – Codex — OpenAI's lifecycle-hook framework for Codex: inject deterministic scripts at SessionStart , PreToolUse , PostToolUse , and other loop events to enforce guardrails, audit actions, and customize agent behavior without relying on prompt-level trust. A concrete reference for programmable harness governance.
+Extended Thinking — Claude API Docs — The harness-critical reference for integrating extended thinking into agent loops: budget_tokens controls reasoning depth per turn, thinking blocks must be preserved when passing tool results back (omitting them silently breaks multi-step reasoning), and thinking mode cannot change mid-turn. Essential before wiring extended thinking into any tool-use loop.
+Getting started with loops — Anthropic's June 2026 practical taxonomy of agent loops: turn-based, goal-based ( /goal ), time-based ( /loop , /schedule ), and proactive loops. The framework for matching loop primitive to task shape — and the emphasis on deterministic stop conditions and token budgets — makes it a concise reference for choosing the right loop abstraction instead of defaulting to a single conversational turn cycle.
+Improving Deep Agents with Harness Engineering — LangChain's case study showing harness-only changes moved their coding agent from rank 30 to top 5 on Terminal Bench 2.0 with no model swap: structured verification loops, context injection (directory maps + time budget warnings), loop-detection middleware, and a "reasoning sandwich" concentrating maximum thinking at planning and verification phases. The most concrete published demonstration that harness design is the primary performance lever, not model capability.
+Life-Harness — Official implementation of a lifecycle-aware runtime harness that improves frozen LLM agents by adapting the model-environment interface across four layers: environment contract, procedural skills, action realization, and trajectory regulation. The key result is that harness-side adaptation transfers across 18 model backbones, proving that many agent failures are interface mismatches rather than reasoning deficits.
+How Middleware Lets You Customize Your Agent Harness — Introduces AgentMiddleware: six composable hooks ( before_agent , before_model , wrap_model_call , wrap_tool_call , after_model , after_agent ) that intercept every stage of the agent loop. Enables deterministic policy enforcement (PII redaction that can't be trusted to prompts), dynamic tool injection, mid-task model swapping, and production patterns (retry, fallback, HITL interrupts) without modifying core agent logic — the reference design for cross-cutting harness concerns that shouldn't be baked into individual agents.
+Agents Learn Their Runtime: Interpreter Persistence as Training-Time Semantics — Controlled experiment isolating interpreter state persistence as an independent training variable. The harness finding: mismatching your runtime persistence mode to the model's training-time semantics produces either 80% missing-variable errors (model expects state that doesn't persist) or 3.5× token overhead (model redundantly recomputes state it expects to already have). Persistence is a learned semantic that must be honored at deployment, not a free runtime choice.
+Real-Time Deadlines Reveal Temporal Awareness Failures in LLM Strategic Reasoning — Demonstrates that temporal awareness (handling deadlines and time constraints) appears orthogonal to reasoning capability: explicit temporal feedback in the agent loop significantly improves LLM performance on deadline-constrained tasks. Indicates temporal semantics as a learned behavior that must be integrated into harness-level context (current time, deadlines, time budgets) rather than assumed from capability alone.
+A Scheduler-Theoretic Framework for LLM Agent Execution — April 2026 systematic analysis of 70 open-source LLM agent projects showing 60% adopt the Agent Loop pattern. Proposes a formal scheduler framework that maps execution patterns (Agent Loop, Event-driven, State-machine, Graph/flow, Hybrid) onto a
+
+## full_text
+
+ai-boost
+awesome-harness-engineering
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+307
+Star
+3k
+main
+Branches Tags
+Go to file
+Code Open more actions menu
+Folders and files
+Name Name Last commit message
+Last commit date
+Latest commit
+History
+183 Commits
+183 Commits
+assets
+assets
+templates
+templates
+.gitignore
+.gitignore
+AGENTS.md
+AGENTS.md
+CLAUDE.md
+CLAUDE.md
+CONTRIBUTING.md
+CONTRIBUTING.md
+LICENSE
+LICENSE
+README.md
+README.md
+verify_urls.py
+verify_urls.py
+View all files
+Repository files navigation
+Awesome Harness Engineering
+Curated resources, patterns, and templates for building reliable AI agent harnesses.
+Deutsch |
+English |
+Español |
+Français |
+日本語 |
+한국어 |
+Português |
+Русский |
+中文
+Harness engineering is the discipline of designing the scaffolding — context delivery, tool interfaces, planning artifacts, verification loops, memory systems, and sandboxes — that surrounds an AI agent and determines whether it succeeds or fails on real tasks.
+This list focuses on the harness , not the model. Every component here exists because the model can't do it alone — and the best harnesses are designed knowing those components will become unnecessary as models improve.
+Contents
+📐 Foundations
+🧩 Design Primitives
+🔄 Agent Loop
+🗺️ Planning & Task Decomposition
+📦 Context Delivery & Compaction
+🔧 Tool Design
+🔌 Skills & MCP
+🛡️ Permissions & Authorization
+🧠 Memory & State
+⚙️ Task Runners & Orchestration
+✔️ Verification & CI Integration
+👁️ Observability & Tracing
+🐛 Debugging & Developer Experience
+🧑‍💼 Human-in-the-Loop
+🔍 Reference Implementations
+🎓 Tutorials & Educational
+🏭 Generators & Meta-Harnesses
+🧪 Demo Harnesses
+🗂️ Adjacent Collections
+🔒 Security, Sandbox & Permissions
+✅ Evals & Verification
+📋 Templates
+📚 Related Awesome Lists
+🤝 Contributing
+Foundations
+Canonical essays that define what harness engineering is and why it matters.
+Harness Engineering — OpenAI's framing of harness engineering as a discipline: how to design the scaffolding that lets Codex and similar agents operate reliably in an agent-first world.
+Unrolling the Codex Agent Loop — OpenAI's detailed breakdown of the Codex agent loop, exposing each harness component and where it can be improved.
+Run Long-Horizon Tasks with Codex — OpenAI's practice guide for long-horizon task planning: introduces Plan.md, Implement.md, Documentation.md as reusable harness artifacts.
+Building Effective Agents — Anthropic's foundational guide on agent architecture, covering when to use workflows vs. agents and how to compose primitives.
+Harness Design for Long-Running Application Development — Anthropic's engineering blog on designing harnesses for sustained, multi-session development tasks. Key insight: every harness component assumes the model can't do something; those assumptions expire.
+Writing Effective Tools for Agents — Anthropic's guide on tool interface design: naming, schemas, error surfaces, and the principle that tool design is agent UX.
+Beyond Permission Prompts — Anthropic on building structured permission and authorization systems into agent harnesses instead of relying on natural-language permission text.
+Demystifying Evals for AI Agents — Anthropic's framework for evaluating agent behavior: what to measure, how to build eval harnesses, and why unit-test-style evals fail for agents.
+What is an AI Agent? — IBM's definitional piece, useful for anchoring harness design decisions to a clear model of what an agent actually is.
+Agent Development Kit: Making it easy to build multi-agent applications — Google's announcement and design rationale for ADK: explains the multi-agent topology, tool registration model, and eval pipeline that shaped their framework. Complements the Anthropic/OpenAI framing with Google's production perspective.
+Harness Engineering — Martin Fowler's synthesis of what harness engineering practice looks like: three interlocking systems — context engineering (curating what the agent knows), architectural constraints (deterministic linters and structural tests), and entropy management (periodic agents that repair documentation drift). The "humans on the loop" framing — harness engineers who design and maintain agent environments rather than inspecting individual outputs — is the clearest conceptual map of what the discipline actually entails.
+The Anatomy of an Agent Harness — LangChain's structural breakdown of the five primitives that compose a harness: filesystem (durable state + agent collaboration surface), code execution (autonomous problem-solving without pre-designed solutions), sandbox (isolation + verification), memory (cross-session persistence), and context management (compaction against "context rot"). The co-evolution warning — models trained with specific harnesses can become overfitted to those designs — explains why harness architecture choices have lasting consequences beyond the immediate task.
+Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned — The first systematic practitioner paper on terminal-native coding agent harness design: eager-construction scaffolding (pre-build all components before the first message to eliminate first-call latency and race conditions), compound multi-model architecture (different model instances for execution, reasoning, critique, and vision tasks), 5-layer defense-in-depth safety, and schema-filtered planning subagents (enforce behavioral constraints via tool schema rather than runtime permission checks). The five lessons distilled from building OpenDev apply to any server-side agent harness.
+Natural-Language Agent Harnesses — Proposes externalizing agent control logic as portable natural-language artifacts (NLAHs) executed by a shared Intelligent Harness Runtime, enabling harness design to be studied, transferred, and reproduced rather than buried in bespoke controller code. Directly addresses the root cause of harness fragility: control logic scattered across framework defaults and hard-coded controller logic that can't be inspected, versioned, or transferred.
+Ranking Engineer Agent (REA): Meta's Autonomous AI System for Ads Ranking — Meta's production harness for multi-day ML pipeline automation with hibernate-and-wake checkpointing for resuming interrupted 6-hour tasks without losing context. Demonstrates harness design for scientific workflows where individual turns can exceed model context limits but the overall pipeline must maintain coherence across days.
+Supercharge Your AI Agents: The New ADK Integrations Ecosystem — Google's 2026 update to Agent Development Kit expanding the ecosystem integrations (Hugging Face, GitHub, Daytona, Notion, etc.) and providing reference patterns for how orchestration harnesses wire external services without losing determinism or state coherence.
+2026 Agentic Coding Trends Report — Anthropic's industry benchmark identifying infrastructure configuration as a first-class optimization variable: harness setup alone can swing benchmarks by 5+ percentage points. Documents the shift from single-agent to orchestrated multi-agent teams and introduces the "agentic engineering platform" category, bridging the gap between agent frameworks and production deployment infrastructure.
+How We Build Azure SRE Agent with Agentic Workflows — Architecture walkthrough of Microsoft's agent that has handled 35,000+ production incidents autonomously, reducing Azure App Service time-to-mitigation from 40.5 hours to 3 minutes. Documents the integration of MCP tools, telemetry, code repositories, and incident management platforms into a single agent harness with human-in-the-loop governance. The most data-backed production harness case study published in 2026.
+Context Engineering for Reliable AI Agents: Lessons from Building Azure SRE Agent — Microsoft's account of shifting from 100+ bespoke tools and a prescriptive prompt to a filesystem-based context engineering system for their SRE agent. Key finding: exposing everything (source code, runbooks, query schemas, past investigation notes) as files and letting the agent use read_file , grep , find , and shell outperformed specialized tooling — "Intent Met" score rose from 45% to 75% on novel incidents.
+Harness Engineering: Structured Workflows for AI-Assisted Development — Red Hat's enterprise perspective on harness engineering (April 7, 2026): AI writes better code when you design the environment it works in. Emphasizes structured context over free-form tickets, expanding the agent's toolbox through MCP integrations (CI status, deployment logs, runtime metrics) as real data sources, and a four-pillar model (vibes, specs, skills, agents) for organizing how humans and agents collaborate.
+Harness engineering for coding agent users — Birgitta Böckeler's systematic mental model (April 2026) for coding-agent harnesses, framing them as feedforward guides plus feedback sensors that self-correct before output reaches human eyes. Distinguishes computational controls (linters, tests) from inferential ones (LLM-as-judge), and argues that harnessability should become a first-class criterion in technology and architecture decisions.
+A Practical Guide to Building AI Agents — OpenAI's April 2026 comprehensive guide distilling production deployment patterns into actionable best practices: single-agent vs. multi-agent orchestration (manager vs. decentralized handoffs), tool design for many-to-many agent-tool relationships, and layered guardrail patterns combining input validation, output filtering, tool-risk ratings, and human-intervention triggers.
+An Update on Recent Claude Code Quality Reports — Anthropic's transparent April 2026 postmortem tracing Claude Code quality degradation to three independent harness-level changes: a default reasoning-effort downgrade, a caching-optimization bug that continuously dropped thinking history from stale sessions, and an overly aggressive verbosity-limiting system prompt. Essential reading for understanding how seemingly minor harness adjustments — prompt wording, cache headers, and default parameters — can compound into visible agent regressions, and for the rigorous diagnostic process required to isolate them.
+Agent Harness Design: 3 Patterns for Harnessing Claude's Intelligence — Anthropic's April 2026 design guide distilling harness engineering into three actionable patterns: build on tools Claude already knows, remove harness assumptions as capabilities improve, and set UX/cost/safety boundaries carefully. A practical complement to the "agent = model + harness" framing that helps teams decide what scaffolding to keep, add, or remove over time.
+Code as Agent Harness — May 2026 survey framing code as the basis for agent infrastructure rather than merely output: it unifies harness interface, mechanisms, and multi-agent scaling through shared code artifacts, and surfaces open challenges from verification under incomplete feedback to regression-free improvement.
+Harness Engineering: How to Build Reliable AI Agents by Engineering the System, Not the Model — deepset's May 2026 synthesis of agent reliability as a harness problem: a failure-classification framework (context, constraint, verification, planning failures) that maps each failure mode to the right harness component, and a concrete demonstration that harness-only changes can move agents 20+ ranking positions without swapping the model.
+What makes a harness a harness: necessary and sufficient conditions for an agent harness — June 2026 constitutive definition of an agent harness as a runtime layer with four necessary and sufficient elements: an agent loop, a tool interface, context management, and control mechanisms. Applied to Claude Code, Codex CLI, Aider, Cline, OpenHands, and SWE-agent, it provides a rigorous inclusion test for distinguishing harnesses from generators, guardrails, or plain tool wrappers.
+Architectural Design Decisions in AI Agent Harnesses — April 2026 empirical study of 70 public agent systems across five recurring dimensions (subagent architecture, context management, tool systems, safety mechanisms, orchestration) that synthesizes five architectural patterns. The comparative research package turns harness selection from a framework popularity contest into a reasoned comparison of design trade-offs.
+RUCAIBox/awesome-agent-harness — RUCAIBox's survey paper and curated reading list on Agent Systems with Harness Engineering , mapping harness design across agent workflows, memory systems, skill libraries, and multi-agent orchestration with 500+ references. The clearest academic complement to vendor-specific harness engineering posts.
+Design Primitives
+Harness components organized by the problem they solve, not by vendor.
+Agent Loop
+ReAct: Synergizing Reasoning and Acting in Language Models — The foundational paper defining the Thought/Action/Observation loop structure that underlies virtually every agent harness. Required reading for understanding why the loop is structured the way it is and where each harness component maps onto the reasoning-acting cycle.
+Unrolling the Codex Agent Loop — The canonical decomposition of what happens inside one agent loop iteration: observe, plan, act, verify.
+LangGraph — Low Level Concepts — Models the agent loop explicitly as a directed graph with typed state, conditional edges, and checkpointing. The most concrete engineering treatment of loop control flow: how to implement termination conditions, branch on tool results, and persist mid-loop state for resumption.
+Unlocking the Codex Harness: How We Built the App Server — OpenAI's engineering deep-dive into the Item/Turn/Thread protocol (JSON-RPC/JSONL over stdio) that exposes the Codex harness to every client surface. The most direct first-party account of why approval flows, streaming diffs, and thread persistence demand a purpose-built protocol — and why MCP's tool-oriented model proved insufficient for these requirements.
+Hooks – Codex — OpenAI's lifecycle-hook framework for Codex: inject deterministic scripts at SessionStart , PreToolUse , PostToolUse , and other loop events to enforce guardrails, audit actions, and customize agent behavior without relying on prompt-level trust. A concrete reference for programmable harness governance.
+Extended Thinking — Claude API Docs — The harness-critical reference for integrating extended thinking into agent loops: budget_tokens controls reasoning depth per turn, thinking blocks must be preserved when passing tool results back (omitting them silently breaks multi-step reasoning), and thinking mode cannot change mid-turn. Essential before wiring extended thinking into any tool-use loop.
+Getting started with loops — Anthropic's June 2026 practical taxonomy of agent loops: turn-based, goal-based ( /goal ), time-based ( /loop , /schedule ), and proactive loops. The framework for matching loop primitive to task shape — and the emphasis on deterministic stop conditions and token budgets — makes it a concise reference for choosing the right loop abstraction instead of defaulting to a single conversational turn cycle.
+Improving Deep Agents with Harness Engineering — LangChain's case study showing harness-only changes moved their coding agent from rank 30 to top 5 on Terminal Bench 2.0 with no model swap: structured verification loops, context injection (directory maps + time budget warnings), loop-detection middleware, and a "reasoning sandwich" concentrating maximum thinking at planning and verification phases. The most concrete published demonstration that harness design is the primary performance lever, not model capability.
+Life-Harness — Official implementation of a lifecycle-aware runtime harness that improves frozen LLM agents by adapting the model-environment interface across four layers: environment contract, procedural skills, action realization, and trajectory regulation. The key result is that harness-side adaptation transfers across 18 model backbones, proving that many agent failures are interface mismatches rather than reasoning deficits.
+How Middleware Lets You Customize Your Agent Harness — Introduces AgentMiddleware: six composable hooks ( before_agent , before_model , wrap_model_call , wrap_tool_call , after_model , after_agent ) that intercept every stage of the agent loop. Enables deterministic policy enforcement (PII redaction that can't be trusted to prompts), dynamic tool injection, mid-task model swapping, and production patterns (retry, fallback, HITL interrupts) without modifying core agent logic — the reference design for cross-cutting harness concerns that shouldn't be baked into individual agents.
+Agents Learn Their Runtime: Interpreter Persistence as Training-Time Semantics — Controlled experiment isolating interpreter state persistence as an independent training variable. The harness finding: mismatching your runtime persistence mode to the model's training-time semantics produces either 80% missing-variable errors (model expects state that doesn't persist) or 3.5× token overhead (model redundantly recomputes state it expects to already have). Persistence is a learned semantic that must be honored at deployment, not a free runtime choice.
+Real-Time Deadlines Reveal Temporal Awareness Failures in LLM Strategic Reasoning — Demonstrates that temporal awareness (handling deadlines and time constraints) appears orthogonal to reasoning capability: explicit temporal feedback in the agent loop significantly improves LLM performance on deadline-constrained tasks. Indicates temporal semantics as a learned behavior that must be integrated into harness-level context (current time, deadlines, time budgets) rather than assumed from capability alone.
+A Scheduler-Theoretic Framework for LLM Agent Execution — April 2026 systematic analysis of 70 open-source LLM agent projects showing 60% adopt the Agent Loop pattern. Proposes a formal scheduler framework that maps execution patterns (Agent Loop, Event-driven, State-machine, Graph/flow, Hybrid) onto a unified control model, making the controllability/expressiveness/implementability trade-offs explicit. Essential reading for choosing the right loop architecture rather than defaulting to the simplest pattern.
+Confucius Code Agent (CCA) — February 2026 production-grade coding agent from Meta/Harvard built on the Confucius SDK, which structures harness design around three perspectives: Agent Experience (AX), User Experience (UX), and Developer Experience (DX). Features a unified orchestrator with advanced context management, persistent note-taking for cross-session learning, and a meta-agent that automates build-test-improve cycles. Achieves 59% Resolve@1 on SWE-Bench-Pro, exceeding prior research and commercial baselines.
+The Design Space of Today's and Future AI Agent Systems — April 2026 reverse-engineering of Claude Code's architecture revealing five-stage progressive compaction (budget reduction → snip → microcompact → context collapse → auto-compact), subagent isolation with rebuilt permission contexts, and a 27-event-type hook pipeline. The most detailed public analysis of a production agent loop's internal design decisions — essential for understanding how context pressure, safety, and delegation are handled at scale.
+deepclaude — Ports Claude Code's full agent loop to DeepSeek V4 Pro and other Anthropic-compatible backends while preserving the same UX. The strongest practical evidence that loop architecture — not model identity — determines agent behavior, and a concrete starting point for building backend-agnostic harnesses.
+The Coding Harness Behind GitHub Copilot in VS Code — VS Code team's breakdown of the coding harness behind GitHub Copilot: three core loop responsibilities (context assembly, tool exposure, tool execution), multi-provider model routing across Anthropic, Google, OpenAI, xAI, and Mistral, and the VSC-Bench eval suite with PR-gated assessment. The clearest published account of how a major product treats harness changes as first-class code review criteria — "the model is the engine, the harness is the car."
+statewright — State machine guardrails that constrain which tools an agent can call in each phase of a workflow, turning open-ended loops into deterministic state transitions. The research result is striking: local models went from 2/10 to 10/10 passing on a SWE-bench subset purely by shrinking the tool space, proving that loop structure — not model size — is the binding constraint.
+Introducing dynamic workflows in Claude Code — Anthropic's May 2026 introduction to dynamic parallel subagent orchestration: Claude generates JavaScript orchestration scripts that fan out work to tens or hundreds of parallel subagents with adversarial verification, converging on answers for tasks like the 750k-line Bun Zig-to-Rust port. The key harness insight is that the plan lives in executable code rather than the model's context window, scaling the agent loop to work that would otherwise exceed a single context window.
+AgentSPEX — UIUC's open-source specification and execution language for LLM-agent workflows: declarative YAML with typed steps, branching, loops, and explicit state management, backed by a Docker sandbox with 50+ MCP tools, checkpointing, and trajectory logging. A concrete reference for turning ad-hoc agent loops into version-controlled, reproducible harness artifacts.
+Planning & Task Decomposition
+Run Long-Horizon Tasks with Codex — Introduces milestone-based planning artifacts (Plan.md, Implement.md) as harness-level state.
+Harness Design for Long-Running Application Development — Multi-session planning, progress tracking, and the role of persistent planning documents.
+Plan-and-Execute Agents — The canonical engineering write-up separating planning from execution as distinct harness layers: a planner LLM generates the step list once; an executor agent works through it, replanning only when needed. Defines the pattern that most modern task-decomposition harnesses follow.
+microsoft/TaskWeaver — Code-first task decomposition framework with a planner/executor split and a plugin system for injecting domain knowledge into the planning layer. The most complete reference implementation of plan-then-execute with stateful task tracking.
+LATS: Language Agent Tree Search — Unifies reasoning, acting, and planning via Monte Carlo Tree Search over agent trajectories. Directly informs harness design: external tool feedback as tree-search signals, trajectory backtracking on failure, and depth-bounded exploration make this the most actionable planning research for harnesses with real environment interaction.
+Agyn: A Multi-Agent System for Team-Based Autonomous Software Engineering — Demonstrates specialized harness patterns for coordinating heterogeneous agent teams (planner, coder, reviewer, executor) on software engineering tasks. Shows how role-specific agents with different model sizes and tool access produce better outcomes than single-agent approaches, with concrete metrics on task decomposition effectiveness.
+Plan-and-Act: Improving Planning of Agents for Long-Horizon Tasks — Modular framework separating high-level planning from low-level execution through synthetic data generation and explicit structured planning. Achieves 57.58% success on WebArena-Lite and 81.36% on WebVoyager. The key harness insight is that planner and executor can be specialized independently — different model sizes, tool access, and reasoning budgets for each layer — improving overall reliability on tasks exceeding context window limits.
+Choosing the Right Multi-Agent Architecture — Decision framework for four multi-agent patterns (subagents, skills, handoffs, router) with concrete performance data: subagents process 67% fewer tokens than skills in multi-domain scenarios because context isolation prevents cross-domain bloat. The five-dimension matching table (distributed development, parallelization, multi-hop, user interaction, latency) is the most actionable published guide for deciding when a topology change — not a model change — is the right lever for a performance problem.
+Multi-Agent Workflows Often Fail. Here's How to Engineer Ones That Don't. — GitHub's February 24, 2026 distillation of a failure pattern most harnesses eventually rediscover: multi-agent systems behave like distributed systems, so every handoff needs typed schemas, constrained action schemas, and explicit boundary validation. Worth including because it turns "add more agents" from a vibe into an interface design problem you can actually reason about.
+Effective Harnesses for Long-Running Agents — Anthropic's pattern for maintaining agent progress across multiple context windows: an initializer agent sets up the environment once and hands off to a coding agent that makes incremental progress each session. The structured handoff mechanism — feature lists, git commits, and test gates as cross-session state — is the reference design for any harness where a task exceeds a single context window and naïve restarts lose accumulated progress.
+Task-Adaptive Multi-Agent Orchestration (AdaptOrch) — February 2026 framework that dynamically selects orchestration topology (parallel, sequential, hierarchical, or hybrid) based on task dependency graphs rather than fixed pipeline architecture. Demonstrates that topology choice is a harness-level lever that can improve performance 12–23% over model selection alone.
+Task-Decoupled Planning for Long-Horizon Agents (TDP) — January 2026 planning framework that combines task decomposition with modular agent design: a Supervisor decomposes tasks into a dependency graph, Planner & Executor agents solve each decoupled sub-task node independently, and a Self-Revision module updates the graph after execution. The key harness insight is that decoupling planning from execution at the sub-task level enables localized replanning without cascading failures across the entire task chain.
+Context Delivery & Compaction
+Harness Engineering — How to structure context windows for agents: what to include, what to exclude, and how context shape affects agent behavior.
+Effective Context Engineering for AI Agents — Anthropic's systematic guide to managing the full context state—system prompts, tools, MCP, and message history—as a finite, curated resource. Reframes harness design as "what configuration of context produces the desired behavior?" rather than just prompt wording.
+Compaction — Claude API Docs — Anthropic's reference for server-side context compaction: automatically summarizes older context when approaching the window limit. Reduced token consumption by 84% in a 100-turn web search eval while allowing agents to complete workflows that would otherwise hit context limits.
+LLMLingua — Microsoft Research's prompt compression toolkit (up to 20x compression, minimal performance loss) that can be embedded as a preprocessing step in the context delivery layer. LLMLingua-2 adds 3–6x speed gains, making it viable for latency-sensitive agent loops.
+Prompt Caching — Claude API Docs — The most effective harness-level cost lever: cache repeated system prompts, tool definitions, and long documents across requests. Explains where to place cache_control breakpoints for maximum reuse across multi-turn agent sessions.
+Autonomous Context Compression — Shifts context compression from harness-controlled (compacting at a fixed token threshold) to agent-controlled: agents call a dedicated tool to trigger compression when strategically appropriate — between tasks or before consuming large inputs. Eliminates the failure mode where reactive-at-limit compaction interrupts agents mid-subtask and corrupts in-flight reasoning state.
+Active Context Compression: Autonomous Memory Management in LLM Agents — Proposes a "Focus Agent" architecture where the agent autonomously decides when to consolidate interaction history into a persistent Knowledge block and prune raw context — shifting compression from a harness-enforced policy to a model-controlled action. Produces 22.7% token reduction with no accuracy loss on long-horizon tasks; the core contribution is making the compression unit semantically coherent (the agent decides what knowledge is worth preserving) rather than mechanically token-budget-driven.
+context-mode — MCP server that intercepts raw tool output before it enters the context window, sandboxing bulky data (Playwright snapshots, GitHub issues, logs) outside the LLM and retrieving only relevant fragments via BM25 when needed. The "think in code" paradigm — replacing ten file-read tool calls with one script execution — is a concrete harness pattern for turning context pressure into a programming problem rather than a compression problem.
+Making Agent-Friendly Pages with Content Negotiation — Vercel's February 3, 2026 implementation guide for serving text/markdown when agents request it via Accept: text/markdown , while preserving the same human-facing HTML URL. This is a real harness primitive, not just a docs trick: it removes boilerplate before it ever enters the context window and gives agents cleaner, cheaper inputs without custom scrapers.
+A-RAG: Scaling Agentic Retrieval-Augmented Generation via Hierarchical Retrieval Interfaces — Reframes RAG as a harness tool-design problem: instead of injecting retrieved documents into context at pipeline time, expose three retrieval tools (keyword search, semantic search, chunk read) and let the agent pull information incrementally as each reasoning step requires it. The key harness decision is architectural — retrieval becomes a tool call in the agent loop, not a preprocessing step — which means the agent's reasoning can adaptively narrow scope rather than processing everything injected upfront.
+LLM Readiness Harness: Evaluation, Observability, and CI Gates for LLM/RAG Applications — Structured framework for building production-grade evaluation harnesses: evaluation gates that block deployment, observability instrumentation that tracks all agent decisions, and CI integration patterns that catch regressions before they reach users. Essential reading for organizations deploying multiple agents in parallel where a single harness failure can cascade.
+ByteRover: Agent-Native Memory Through LLM-Curated Hierarchical Context — LLM-curated hierarchical context management for agents where the model itself learns to weight information importance across multiple hierarchy levels. Reduces token overhead through learned relevance filtering without sacrificing comprehension. Directly applicable to any harness where context budget is the limiting factor — letting the model curate what belongs in active memory vs. what can be retrieved on-demand.
+Claude Code Compaction: How Context Compression Works — March 2026 deep-dive into Claude Code's automatic compaction mechanism: what survives (current task, recent errors, file names) vs. what gets lost (initial instructions, intermediate decisions, style rules). Key harness insight: never rely on compaction for critical rules — move them to CLAUDE.md where they live in the system prompt and survive any compression. Essential practical guidance for anyone running long-session agents.
+Token Savior — MCP server that indexes codebases by symbol (functions, classes, call graphs) so agents navigate by pointer instead of reading whole files, cutting active tokens by 77% and benchmark wall time by 76%. Demonstrates that context delivery for coding agents is a navigation problem, not just a compression problem.
+Trellis — Replaces the bloated CLAUDE.md pattern with a progressive spec system: agents load only the standards, task PRDs, and session journals relevant to the current step. The cross-platform adapter layer turns vendor-specific harness configuration into a portable team practice rather than a per-tool hack.
+OpenViking — ByteDance's context database for AI agents that unifies memory, resources, and skills through a filesystem paradigm, enabling hierarchical context delivery where agents pull only the paths they need instead of receiving bloated monolithic prompts. The self-evolving layer that restructures context based on usage patterns makes it a rare example of context infrastructure that improves autonomously rather than requiring constant manual curation.
+DESIGN.md — Google Labs' specification for describing visual identity systems to coding agents: machine-readable design tokens (YAML front matter) combined with human-readable design rationale (markdown prose) give agents a persistent, structured understanding of design constraints without requiring custom tool chains.
+codebase-memory-mcp — High-performance code intelligence MCP server that full-indexes repositories into a persistent knowledge graph via tree-sitter AST analysis across 66 languages. Replaces dozens of file-read/grep cycles with sub-millisecond structured queries, cutting active tokens by 120× and turning codebase navigation from a context-pressure problem into a pointer-chasing problem.
+Mirage — Mounts S3, Slack, Gmail, GitHub, and Redis side-by-side as a single virtual filesystem so agents interact with every backend through familiar bash commands instead of learning N distinct APIs. The key harness insight: LLMs are already fluent in grep , cat , and cp — leveraging that vocabulary eliminates tool-schema bloat and makes cross-service pipelines compose as naturally as local shell scripts.
+dirac — Coding agent harness optimized for surgical context curation and API cost reduction: Hash Anchored edits, massively parallel operations, and AST manipulation combine to cut costs 50–80% while improving code quality. Demonstrates that precise context delivery — not just bulk compression — is the right lever for efficient coding agents.
+MinishLab/semble — Code search primitive that replaces grep+read cycles with natural-language retrieval, cutting active tokens by ~98% while keeping 99% of a transformer-based retriever's accuracy. Ships as an MCP server and CLI, runs on CPU with zero external dependencies — the right drop-in for any coding agent harness struggling with context pressure.
+harness-experimental — Repository-level operating harness that turns any software repo into an agent-ready workspace: structured AGENTS.md , HARNESS.md , and FEATURE_INTAKE.md give agents the missing project context — where to start, what the product contract says, how risky the change is, and which decisions future agents should inherit. The most concrete open-source implementation of "coding agents need better repositories, not just better prompts."
+headroom — Compresses tool outputs, logs, files, and RAG chunks before they enter the context window, cutting active tokens by 60–95% without changing answers. Ships as a library, proxy, and MCP server — the right drop-in layer for any harness where bulky tool returns are the primary context pressure source.
+Context7 — MCP server and CLI that injects up-to-date, version-specific library documentation directly into agent context, eliminating hallucinated APIs and outdated code examples caused by stale training data. Ships as both a ctx7 command-line tool and an MCP server with resolve-library-id and query-docs tools.
+Context Pruning for Coding Agents via Multi-Rubric Latent Reasoning — Decomposes code relevance into two interpretable dimensions — semantic evidence and dependency support — rather than collapsing all retention decisions into a single score. Saves up to 31% more tokens on multi-turn coding agent tasks while improving Exact Match by up to +3.5, demonstrating that coding-agent context pruning needs domain-specific rubrics rather than generic compression.
+Tool Design
+Writing Effective Tools for Agents — Tool naming, schema design, error messages, and return value conventions that make agents more reliable.
+Tool Use — Claude API Docs — Authoritative reference for client vs. server tool execution models, strict schema enforcement, and tool_result error signaling. The distinction between client-side and server-side tool execution is a foundational harness architecture decision.
+Function Calling — OpenAI Docs — Defines the de facto industry-standard JSON Schema conventions for tool definitions and parallel function calling. Essential reading before designing a tool interface that needs to work across multiple models.
+Tool Annotations as Risk Vocabulary — The MCP team's definitive post on the four tool annotation hints ( readOnlyHint , destructiveHint , idempotentHint , openWorldHint ) as inputs to harness permission decisions, not enforced contracts. The "lethal trifecta" — private data access + untrusted content exposure + external communication — is the most actionable framing for why single-tool safety analysis misses the risk that emerges from tool combinations .
+outlines — Constrains token sampling via regex/CFG/JSON Schema at the decoding layer, guaranteeing structured output without model fine-tuning. The right solution when you need OpenAI Structured Outputs-equivalent reliability from a locally deployed or open-weight model.
+instructor — Maps Pydantic models directly to structured LLM extraction with built-in retry and validation-error feedback loops. Turns tool call output parsing from ad-hoc JSON handling into type-safe data models, eliminating an entire class of harness parsing bugs.
+SkillTester: Benchmarking Utility and Security of Agent Skills — Framework for evaluating agent skills on three dimensions (capability, robustness, security) before deployment. Directly addresses the harness problem of skill sprawl: as agents gain access to more tools, the combinatorial explosion of failure modes becomes unmanageable without systematic verification. The 86-task benchmark across 11 domains provides reference metrics for skill quality.
+AutoHarness: Improving LLM Agents by Automatically Synthesizing a Code Harness — Google DeepMind technique that uses code synthesis to auto-generate runtime constraint harnesses from tool schemas and task specifications. Gemini-2.5-Flash + AutoHarness outperforms Gemini-2.5-Pro and GPT-5.2-High on TextArena games by eliminating illegal moves through learned harness policies. Shifts constraint enforcement from static (schema validation) to dynamic (synthesized code guards) — a reference pattern for learning-based behavioral guardrails.
+Scaling Parallel Tool Calling for Efficient Deep Research — February 2026 analysis of how parallel tool calling reduces latency in multi-step agent workflows. Demonstrates that concurrent tool execution (rather than sequential observe→act loops) is the key efficiency lever for deep-research harnesses where each step may invoke search, browse, and compute tools simultaneously. Essential for designing low-latency agent loops without sacrificing reasoning depth.
+EigentSearch-Q+ — April 2026 framework for deep-research agents using dedicated reasoning tools (plan_next_searches, select_query_and_search, extract_relevant_details, analyze_search_progress) that externalize intermediate decisions as typed tool arguments. Inspired by Anthropic's think-tool paradigm, Q+ makes cognitive scaffolding explicit and auditable — bridging classic information-retrieval strategies with structured model-driven tool invocations.
+TopoCurate: Modeling Interaction Topology for Tool-Use Agent Training — March 2026 framework that models interaction topology — the structural patterns of how agents invoke, chain, and conditionally branch between tools — as a first-class training signal. Rather than treating tool use as isolated function calls, TopoCurate learns topological priors from expert trajectories, improving generalization to novel tool combinations and multi-step orchestration patterns. Directly applicable to harnesses where tool topology (not just tool availability) determines task success.
+Design Patterns for Deploying AI Agents with Model Context Protocol — March 2026 field report from an enterprise MCP deployment identifying three protocol-level gaps that break production: missing identity propagation (who is the request for?), absent adaptive tool budgeting, and unstructured error semantics. The concrete mitigation patterns — JWT-enriched tool calls, per-tool timeout contracts, and standardized error-action mappings — are essential before betting on MCP as your primary tool-integration layer.
+tui-use — Expands the agent tool surface beyond non-interactive commands: programmable TUI interaction for REPLs, debuggers, and ncurses apps that standard bash can't reach. A concrete harness primitive for any agent that needs to operate interactive CLI tools without building a custom wrapper per program.
+CLI-Anything — Generates agent-native CLI harnesses for any software, giving agents structured JSON access to applications that were never designed for automation. The CLI-Hub registry and auto-generated SKILL.md files turn tool expansion into a package-manager experience — solving the "long tail" of agent tool coverage without a custom wrapper per program.
+zerolang — Experimental graph-first programming language where agents inspect and edit code through a compiler-derived ProgramGraph (node IDs, graph hashes, types, effects, ownership) instead of fragile text patches. Collapses the typical agent loop of edit-format-reparse-check-fix into a single compiler-validated semantic operation — a reference design for making code manipulation a structured tool interface rather than a guesswork-driven text transformation.
+Skills & MCP
+Model Context Protocol — Anthropic's open protocol for connecting agents to external tools, data sources, and services in a standardized way.
+modelcontextprotocol/servers — Anthropic's official reference MCP server implementations (GitHub, Slack, Postgres, Puppeteer, etc.). The authoritative source for understanding correct MCP server structure before building your own.
+microsoft/playwright-mcp — Browser automation via accessibility tree snapshots rather than screenshots, dramatically reducing token cost. The canonical example of structured tool output design in an MCP server.
+Chrome DevTools MCP — Official Google MCP server that exposes live Chrome debugging surfaces — network analysis, performance profiling, console messages, memory snapshots, and Lighthouse audits — as structured agent tools. The clearest reference for turning browser inspection into a first-class tool interface rather than relying solely on screenshot-driven automation.
+agent-device — MCP-native control layer for iOS and Android devices: snapshots, semantic targeting, typed client access, diagnostics, and replayable workflows. Fills a critical gap in the mobile-agent harness stack — most tool design assumes desktop or browser surfaces, but real-world agents increasingly need to interact with native mobile apps.
+A2A Protocol — Google's open Agent-to-Agent protocol: JSON-RPC over HTTP(S)/SSE with Agent Card service discovery and a task/message/artifact communication model. The emerging standard for cross-framework agent interoperability in multi-agent harnesses.
+Announcing the Agentic Resource Discovery specification — Google's June 2026 open specification for publishing, discovering, and verifying AI capabilities across the web via domain-owned catalogs and searchable registries. Adds the missing discovery layer that lets agents find MCP servers, A2A agents, and OpenAPI tools at runtime rather than relying on hardcoded integrations, with trust manifests and namespaced URNs for governance.
+MCP Inspector — Interactive debugging UI for MCP servers: inspect tool definitions, send test calls, and validate responses without wiring up a full agent. The essential development tool for anyone building or integrating MCP servers into a harness.
+Shell + Skills + Compaction: Tips for Long-Running Agents — OpenAI's engineering guide to three production harness primitives: versioned Skill bundles (SKILL.md manifest; routing accuracy improved 73%→85% by adding negative examples), a managed shell container for durable tool execution, and server-side compaction via explicit /responses/compact endpoint. The most concrete first-party documentation of skills-based routing and compaction published in 2026.
+Composio — Wraps 250+ SaaS APIs (GitHub, Slack, Linear, Notion, etc.) as agent-ready actions with managed OAuth, so tool integration becomes a one-line import rather than a custom harness component per service. The fastest path from "the agent needs to call an external API" to a production-grade, authenticated tool.
+MCP Streamable HTTP Transport — The transport that replaced HTTP+SSE in the 2025-11-25 spec, enabling MCP servers to run as remote services rather than local processes. Servers handle multiple client connections using HTTP POST (for client→server messages) and optional GET (for server→client SSE streams). The key harness architecture decision: Streamable HTTP unlocks remote MCP deployment but introduces session management complexity — stateful Mcp-Session-Id headers fight with load balancers and horizontal scaling, which the 2026 roadmap aims to resolve by decoupling sessions from the transport layer.
+The 2026 MCP Roadmap — The MCP team's roadmap for the next spec cycle: horizontal-scaling transport without stateful session constraints, .well-known discovery for capability advertisement without live connections, Tasks primitive with retry/expiry semantics, and enterprise extensions (audit trails, SSO, gateway behavior). Essential reading before investing heavily in MCP server infrastructure — the transport and discovery changes in particular affect how clients locate and connect to servers.
+The 2026-07-28 MCP Specification Release Candidate — The largest revision of MCP since launch: a stateless protocol core drops the initialize handshake and Mcp-Session-Id , the new ext-* extension framework formalizes Tasks and MCP Apps, and a twelve-month deprecation policy gives harness builders a stable target. Essential reading before designing remote MCP server infrastructure that must survive load balancers and horizontal scaling.
+Developer's Guide to AI Agent Protocols — Google's survey of six standardized agent interoperability protocols, each solving a distinct harness integration problem: MCP (tool/data connectivity), A2A (inter-agent routing via Agent Card discovery at well-known URLs), UCP (commerce workflows), AP2 (payment authorization with spend limits), A2UI (agent-driven dynamic UIs), AG-UI (streaming event format). The most practical map of which protocol to choose when an agent needs to cross a system boundary.
+AG-UI — Lightweight event-driven protocol standardizing how AI agents connect to frontend applications: streaming state updates, tool call rendering, and HITL interrupts over a shared event bus. Fills the layer between MCP (tool access) and A2A (agent-to-agent) — it's the missing protocol for real-time agent-to-UI communication that neither MCP nor A2A was designed to address.
+Code Execution with MCP: Building More Efficient Agents — Anthropic's engineering account of reducing tool-call token overhead by having agents write code to interact with MCP servers rather than calling tools directly: up to 98.7% token reduction in experiments. Broadly applicable to any harness where tool schema overhead and intermediate results are consuming context — the pattern is to wrap multi-step tool interaction in a code execution primitive rather than exposing each operation as a discrete tool call.
+Microsoft Skills Framework — Standardized framework for defining, versioning, and distributing agent skills. Enables skill reuse across Claude Code, Copilot, VS Code, Gemini, and other platforms — a harness-level abstraction that makes skills first-class deployment artifacts rather than ad-hoc tool definitions.
+SkillNet & SkillsBench: Infrastructure for AI Agent Skills at Scale — Comprehensive framework for creating, evaluating, and sharing agent skills with 86-task benchmark across 11 domains. Demonstrates the harness problem of skill fragmentation and provides infrastructure for standardized skill evaluation across frameworks.
+AWS Bedrock AgentCore with WebRTC Support — Adds peer-to-peer, UDP-based WebRTC bidirectional streaming to Bedrock Agents for real-time voice interactions. Complements existing WebSocket support with lower latency and better resilience for poor network conditions. Essential harness-level transport choice for agents targeting sub-800ms Total Turn-Around Time voice interactions.
+Hermes Agent: Unified Streaming for Real-Time Agent Workflows — Token-by-token streaming delivery system enabling real-time agent responses; sub-second decision loops on streaming events vs. batch-refreshed data. Critical infrastructure for harnesses where latency (not just throughput) is the constraint — agents must react to events as they arrive, not wait for batch completions.
+Google Developers: Closing the Knowledge Gap with Agent Skills — Google ADK expansion with evaluation harness (117 prompts) for assessing skill performance across agentic coding, chatbots, document processing. Provides reference patterns and benchmark datasets for skill evaluation, complementing the Microsoft Skills Framework with Google's evaluation methodology.
+What's New with GitHub Copilot Coding Agent — GitHub's February 26, 2026 update is worth including for one specific reason: it makes .github/agents/ custom agent files, self-review, built-in security scanning, and CLI handoff concrete as harness primitives rather than abstract ideas. Useful as a current reference for how repository-scoped agent definitions and security checks are being productized in a real coding-agent control plane.
+Announcing Official MCP Support for Google Services — Google's 2026 rollout of managed MCP endpoints is a useful counterpoint to self-hosted MCP servers: discovery, IAM, audit logging, and Model Armor are provided as platform primitives instead of being rebuilt per server. Worth including because it shows what "enterprise MCP" looks like when the transport, auth, and governance layers are treated as product surface rather than glue code.
+Dataverse Skills: Your Coding Agent Now Speaks Dataverse — Microsoft's April 1, 2026 release is a strong concrete example of domain-specific skills done properly: the agent learns when to use MCP, when to drop to a Python SDK, and when to call a raw API, while the user stays in natural language. Worth adding because it shows that "skills" are not just prompt snippets, but curated execution strategies that hide a multi-tool integration stack behind intent.
+You can't whisper at an AI agent — Stripe's May 2026 study of how agents actually consume SDK and CLI guidance: passive documentation is ignored, while hard steering signals placed in the loaded context — skill files, error messages, CLI prompts — reliably change behavior. The "if your guidance wasn't in the loaded context, it didn't happen" principle is a practical design rule for any skill, tool, or SDK that agents are expected to use.
+Agent Toolkit for AWS — Official AWS-supported MCP servers, skills, and plugins that let AI agents provision, query, and manage AWS resources through a standardized protocol interface. Worth including as the reference for how a major cloud provider productizes infrastructure access into agent-ready harness primitives rather than leaving teams to hand-roll IAM-scoped tool definitions.
+agentic-stack — Portable .agent/ folder that externalizes memory, skills, and protocols from any specific coding agent into a cross-tool harness layer. Adapters translate the same configuration into Claude Code's CLAUDE.md , Cursor's rules, OpenCode's AGENTS.md , and more — the first practical answer to harness vendor lock-in at the configuration level.
+mcp-agent — Production-grade framework for building agents with MCP: composable workflows, built-in observability, and provider-agnostic model routing. The clearest reference for turning MCP servers from isolated utilities into a coherent agent harness.
+vurb.ts — TypeScript framework for building production MCP servers with a "Presenter" perception layer that strips undeclared fields, redacts PII, and gates tool visibility by workflow state. Fills a critical gap in the MCP ecosystem: most tooling focuses on consuming servers, while vurb.ts addresses the harness engineering of authoring servers that are safe, governable, and context-aware by default.
+SkillOpt — Microsoft's skill optimizer that trains reusable natural-language skills for frozen LLM agents through trajectory-driven edits and validation-gated updates, producing deployable best_skill.md artifacts. The key harness insight is that skills should be treated as optimizable parameters that improve with execution feedback, not static prompt fragments written once and forgotten.
+superpowers — Agentic skills framework and software-development methodology with automatically-triggered, mandatory skills that work across Claude Code, Cursor, Codex, Gemini CLI, and Copilot CLI. Demonstrates how to package cross-harness workflows — TDD, subagent-driven development, review gates — as reusable skills with an eval harness.
+Antigravity Awesome Skills — Installable library of 1,400+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, and more. The largest community-driven skill catalog with an npm installer and role-based bundles — a concrete reference for treating skills as versioned harness artifacts rather than ad-hoc prompts.
+agentgateway — Open-source agentic proxy that unifies LLM gateway, MCP gateway, and A2A gateway into a single control plane for managing multi-agent, multi-tool connectivity at scale. Provides drop-in security, observability, and governance for agent-to-LLM, agent-to-tool, and agent-to-agent communication — the missing infrastructure layer between agents and the services they touch.
+AIP: A Graph Representation for Learning and Governing Agent Skills — June 2026 proposal to replace free-form skill prose with directed execution graphs: discrete steps as nodes backed by deterministic scripts or natural-language descriptions, connected by explicit typed input/output edges and governed by a schema-validated YAML spec. Compiling skills to AIP improved Claude Sonnet's pass rate from 53% to 67% while making skills queryable, auditable, and repairable at the script level — the key harness advance is turning skill improvement from a prose rewrite into a measurable tuning loop.
+Permissions & Authorization
+Beyond Permission Prompts — Structured authorization patterns for agents: how to give agents the right permissions without relying on prompt-level trust.
+OWASP LLM06:2025 — Excessive Agency — OWASP's authoritative definition of the "excessive agency" risk: over-provisioned functions, unnecessary permissions, and missing approval mechanisms. The standard checklist for auditing harness permission scope against principle of least privilege.
+GitHub Enterprise — Governing Agents — April 2026 GitHub official guide for enterprise agent governance: MCP server registry curation with ruleset-protected configurations, agent environment standardization via copilot-setup-steps.yml , ephemeral runner enforcement, and cloud-agent firewall allowlisting. The most concrete published reference for governing agent fleets at scale without creating bottlenecks.
+Claude Code Auto Mode: A Safer Way to Skip Permissions — Anthropic's engineering post on replacing approval fatigue (users approve 93% of prompts, making approvals meaningless) with a two-stage classifier: fast single-token gate first, chain-of-thought reasoning only on flagged actions. The design decisions — stripping assistant messages to prevent the agent from rationalizing dangerous actions, deny-and-continue recovery instead of halt — are the reference design for safe-by-default headless agent permissions.
+Claude Agent SDK — Configure Permissions — The most concrete reference for harness permission architecture: five-layer evaluation order (hooks → deny rules → permission mode → allow rules → canUseTool), allowedTools / disallowedTools declarative scoping, and four permission modes including dontAsk (deny-by-default for headless agents). The subagent inheritance warning for bypassPermissions alone is worth reading before any multi-agent deployment.
+Two Different Types of Agent Authorization — Distinguishes on-behalf-of authorization (agent uses end-user credentials, requires cross-channel identity mapping and per-user memory isolation) from fixed-credential authorization (agent owns its own account, requires human-in-the-loop guardrails on high-risk actions). The two models have fundamentally different threat surfaces and determine where authorization enforcement lives in the harness.
+Authorization and Governance for AI Agents: Runtime Authorization Beyond Identity at Scale — Microsoft Security's reusable Authorization Fabric combining a Policy Enforcement Point (PEP) and Policy Decision Point (PDP) as a Microsoft Entra-protected endpoint. Every agent calls this fabric before tool execution, receiving a deterministic decision: ALLOW / DENY / REQUIRE_APPROVAL / MASK. Addresses the gap that identity alone (who is this agent?) doesn't answer whether a specific action should be executed now, by this agent, for this user, under the current business and regulatory context.
+IETF draft-klrc-aiagent-auth: AI Agent Authentication and Authorization — The first IETF standards-track specification for AI agent authentication (March 2026, authors from AWS, OpenAI, Zscaler, Ping Identity, Defakto Security). Builds on WIMSE (Workload Identity in Multi-System Environments) and OAuth 2.0 rather than inventing new protocols — agents get SPIFFE-style identifiers, with delegation via OAuth Token Exchange and DPoP for token binding. Essential reference for any harness that needs to authenticate agents across trust domains.
+Nango: Pre-Built Authentication for AI Agents — Open-source platform providing pre-built OAuth and API key authentication for 700+ APIs across 30 categories. Automatically refreshes access tokens, provides webhooks when credentials break, and stores tokens securely so agent code never touches secrets. Solves the "agent needs to call an authenticated API" problem at scale — the authentication layer that complements Composio's tool wrapping.
+AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security — Three-dimensional risk taxonomy (source/failure-mode/consequence) with fine-grained agentic safety benchmark (ATBench) and diagnostic guardrail models (4B–8B parameters) achieving 91.8% accuracy. Shifts safety monitoring from binary safe/unsafe checks to root-cause diagnosis: why did an action violate constraints? Where did the violation originate? What are the downstream consequences? Essential for production harnesses where transparency into safety decisions is required for audit trails.
+Open Agent Passport (OAP): Deterministic Pre-Action Authorization for Autonomous AI Agents — March 2026 open specification and reference implementation that intercepts tool calls synchronously before execution, evaluates them against a declarative policy, and produces a cryptographically signed audit record. Enforces authorization in a median of 53ms; in a live adversarial testbed ($5,000 bounty), restrictive OAP policy achieved 0% attack success vs. 74.6% under permissive policies. Distinguishes pre-action authorization from sandboxed execution and model-based screening as complementary but distinct harness layers.
+nah — Deterministic permission guard that maps tool calls to an intent taxonomy ( filesystem_delete , network_outbound , lang_exec , etc.) rather than relying on command-name allow/deny lists. The key insight for harness design: the same binary can be benign or destructive depending on its arguments, so intent-level enforcement is the only reproducible safety layer.
+Memory & State
+Building Effective Agents — Covers in-context, external, and procedural memory patterns as harness-level concerns.
+Letta (MemGPT) — The refer
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 79
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":79,"text_length":60000,"paragraph_count":179,"sentence_count":310,"boilerplate_hits":6,"symbol_ratio":0.0006,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   # Repository: ai-boost/awesome-harness-engineering Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration. - Stars: 2975 - Forks: 307 - Watchers: 25 - Open issues: 94 - Primary language: Python - Languages: Python - License..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   ai-boost awesome-harness-engineering Public Notifications You must be signed in to change notification settings Fork 307 Star 3k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 183 Commits 183 Commits assets assets templates templates .
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   md LICENSE LICENSE README.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   py View all files Repository files navigation Awesome Harness Engineering Curated resources, patterns, and templates for building reliable AI agent harnesses.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Deutsch | English | Español | Français | 日本語 | 한국어 | Português | Русский | 中文 Harness engineering is the discipline of designing the scaffolding — context delivery, tool interfaces, planning artifacts, verification loops, memory systems, and sandboxes — that surrounds an AI agent and determines whether it succeeds or fails on real tasks.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   This list focuses on the harness , not the model.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Google, Microsoft, GitHub, Meta
+- products: agent, MCP, AGENTS, CLAUDE, Agent, Codex, agents, Agents, Claude
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 2975, 307, 25, 94, 3, 183, 5, 6
+- quotes: humans on the loop / context rot / agentic engineering platform / Intent Met / agent = model + harness
+
+## evidence_seed
+
+- company_actions: ai-boost awesome-harness-engineering Public Notifications You must be signed in to change notification settings Fork 307 Star 3k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 183 Commits 183 Commits assets assets templates templates . / md LICENSE LICENSE README. / py View all files Repository files navigation Awesome Harness Engineering Curated resources, patterns, and templates for building reliable AI agent harnesses.
+- case_details: # Repository: ai-boost/awesome-harness-engineering Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration. - Stars: 2975 - Forks: 307 - Watchers: 25 - Open issues: 94 - Primary language: Python - Languages: Python - License..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+# Repository: ai-boost/awesome-harness-engineering Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration. - Stars: 2975 - Forks: 307 - Watchers: 25 - Open issues: 94 - Primary language: Python - Languages: Python - License..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

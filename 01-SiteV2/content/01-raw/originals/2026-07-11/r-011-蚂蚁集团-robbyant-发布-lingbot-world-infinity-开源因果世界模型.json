@@ -1,0 +1,287 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-011",
+  "title": "蚂蚁集团 Robbyant 发布 LingBot-World-Infinity：开源因果世界模型",
+  "title_zh": "蚂蚁集团 Robbyant 发布 LingBot-World-Infinity：开源因果世界模型",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://www.marktechpost.com/2026/07/09/meet-lingbot-world-infinity-an-open-causal-world-model-with-an-agentic-harness",
+  "canonical_url": "https://marktechpost.com/2026/07/09/meet-lingbot-world-infinity-an-open-causal-world-model-with-an-agentic-harness",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-10T04:38:20.000Z",
+  "collected_at": "2026-07-11T04:42:58.963Z",
+  "language": "mixed",
+  "full_text": "Editors Pick\nAgentic AI\nArtificial Intelligence\nAI Infrastructure\nTech News\nAI Paper Summary\nTechnology\nAI Shorts\nApplications\nLanguage Model\nLarge Language Model\nMachine Learning\nNew Releases\nOpen Source\nPhysical AI\nPromote\nSoftware Engineering\nSponsored\nStaff\nVision Language Model\nRobbyant, Ant Group’s embodied-intelligence unit, has released LingBot-World-Infinity (LingBot-World 2.0) . It is a causal video generation model that behaves as an interactive world simulator. It is how the team attacks two failure modes: long-horizon drift and interactive latency.\nWhat is LingBot-World-Infinity?\nAn interactive world model generates video frame by frame , conditioned on a stream of user actions. Each state depends only on past frames and current input. The research team formalizes this as a causal factorization:\nCopy Code Copied Use a different Browser\np_θ(x_1:T | a_1:T) = Π_t p_θ(x_t | x_<t, a_≤t)\nHere x_t is the visual state at time t. The action a_t combines a camera pose and a text prompt. Camera pose uses Plücker embeddings, injected through adaptive layer normalization (AdaLN). Text enters as chunk-wise prompts through cross-attention.\nThe research team claims four upgrades over LingBot-World:\nAn unbounded interaction horizon with consistent output quality.\nA distilled real-time variant sufficient to drive 720p video streams at 60 fps.\nA broader action space, including attacking, archery, spell-casting, and shooting.\nAn agentic harness pairing a pilot agent with a director agent.\nThe primary model is 14B. A lightweight 1.3B counterpart is described as deployable on a single GPU.\nThe Architecture: MoBA and Two-Stage Training\nThe core contribution is the Mixture of Bidirectional and Autoregressive (MoBA) Attention Mask . It explains the drift.\nStandard autoregressive video training uses a teacher forcing mask. Each noisy frame attends to itself and its clean context. The research team found a failure here. As context grows, the model leans on that context instead of predicting future frames. The result is overfitting and visual quality degradation.\nMoBA appends a bidirectional full-attention block to the teacher forcing mask. That block acts as a regularizer. It also helps the model handle flexible-length generation.\nThe cross-attention mask mirrors the split. The autoregressive component attends to a background prompt along with chunk-wise prompts in a lower-triangular pattern. That prevents future semantics from leaking backward. The bidirectional component attends to one global prompt.\nPre-training optimizes a conditional flow-matching objective with rectified-flow interpolation. Post-training then compresses the multi-step teacher into a few-step student:\nConsistency distillation: Latents on the same teacher probability-flow ODE (PF-ODE) trajectory must map to identical predictions.\nDistribution matching distillation (DMD): The generator follows the KL gradient between noised student and noised data distributions.\nThe important detail sits in the DMD. The research team applies it over long self-rollout trajectories, not only teacher-forced states. The student is therefore optimized on the state distribution its own predictions induce. That is the stated mechanism behind anti-drift.\nThe Agentic Harness: The Feature Worth Taking Seriously\nA frame predictor does not play itself. The Robbyant research team wraps the generator in a Director-Pilot Co-Simulation Framework .\nAs described in the research paper, a Vision-Language Model is the Director . It governs macroscopic semantic rules and causal reasoning. The Diffusion Transformer video generator is the Pilot. It simulates low-level physical dynamics and renders transitions.\nThe harness exposes two interaction modes:\nMode A: Direct Semantic Interaction. The VLM reads the current frame and generates event cards. No object masks are required.\nMode B: Tracking-Assisted Object Interaction. A SAM-based (Segment Anything Model) action-proposal loop tracks objects across chunks. Users select a tracked object and trigger actions. The research paper shows door-opening and ball-rotating rollouts.\nUsers can also intervene textually. Global state shifts change time of day or weather. L ocal entity injection spawns creatures, and the VLM picks plausible entry points.\nThe interface follows game conventions. WASD drives movement, IJKL controls view. Space triggers a jump; P triggers a wing glide. Keys U and O carry VLM-proposed character actions. Keys F and G carry environmental events. Numeric keys are user-registered event slots.\nHands-On: What Ships and What Doesn’t\nExpectations need calibration here.\nThe codebase is built on Wan2.2. Only lingbot-world-v2-14b-causal-fast is downloadable today. The causal-pretrained 14B, the bidirectional 14B, and both 1.3B variants are marked TODO.\nCopy Code Copied Use a different Browser\ngit clone https://github.com/robbyant/lingbot-world-v2.git\ncd lingbot-world-v2\npip install -r requirements.txt # torch >= 2.4.0\npip install flash-attn --no-build-isolation\nhuggingface-cli download robbyant/lingbot-world-v2-14b-causal-fast \\\n--local-dir ./lingbot-world-v2-14b-causal-fast\nThe provided generate.py runs causal inference with KV caching. It processes frames chunk-by-chunk rather than all at once. The reference command is eight-GPU and 480P:\nCopy Code Copied Use a different Browser\ntorchrun --nproc_per_node=8 generate.py \\\n--task i2v-A14B --size 480*832 \\\n--ckpt_dir lingbot-world-v2-14b-causal-fast \\\n--image examples/03/image.jpg --action_path examples/03 \\\n--dit_fsdp --t5_fsdp --ulysses_size 8 \\\n--frame_num 361 --local_attn_size 18 --sink_size 6 \\\n--prompt \"A serene lakeside scene with a lone tree standing in calm water...\"\nThe released reference script is 480×832 across eight GPUs. The 60 fps figure describes the deployed stream, which passes a spatio-temporal refiner. That refiner upsamples decoded frames, then synthesizes intermediate frames for a higher frame rate. Both stages compile into TensorRT engines.\nA Diffusers checkpoint also exists:\nCopy Code Copied Use a different Browser\nimport torch\nfrom diffusers import DiffusionPipeline\nfrom diffusers.utils import load_image, export_to_video\npipe = DiffusionPipeline.from_pretrained(\n\"robbyant/lingbot-world-v2-14b-causal-fast\",\ndtype=torch.bfloat16, device_map=\"cuda\")\nframes = pipe(image=load_image(\"seed.png\"), prompt=\"...\").frames[0]\nexport_to_video(frames, \"output.mp4\")\nFor a hosted path, Reactor serves the model as reactor/lingbot-world-2. Its docs list 48 fps at 1664×960. Sessions are command-driven and stateful:\nCopy Code Copied Use a different Browser\nfrom reactor_sdk import Reactor, ReactorStatus\nreactor = Reactor(model_name=\"reactor/lingbot-world-2\", api_key=KEY)\n@reactor.on_status(ReactorStatus.READY)\nasync def on_ready(status):\nref = await reactor.upload_file(\"seed.jpg\")\nawait reactor.send_command(\"set_image\", {\"image\": ref})\nawait reactor.send_command(\"set_prompt\", {\"prompt\": \"A misty alpine valley.\"})\nawait reactor.send_command(\"start\", {})\nMovement is persistent state, not a pulse. set_move_longitudinal: “forward” drives until you send “idle”. Commands land at the next chunk boundary.\nComparison\nThe research paper’s comparison is qualitative. Every superiority claim rests on side-by-side frame grids.\nProperty M-G 3.0 D-W LingBot-World HappyOyster Genie 3 LingBot-World-Infinity\nGeneration duration Minutes Minutes Minutes Minutes Minutes Hours (Infinite)\nSemantic interaction None None None Few Few Infinite\nDomain Game General General General General General\nDynamic degree Medium Medium High Medium Medium High\nReal-time Yes Yes Yes Yes Yes Yes\nOpen-source Yes Yes Yes No No Yes\nUse Cases\nGame and level prototyping: Seed an image of a canal town. Hot-swap the prompt to summon a snowstorm. Iterate on mood before any asset pipeline exists.\nEmbodied simulation: Generate first-person rollouts under scripted camera poses. Feed frames to a policy learner without authoring an Unreal Engine scene.\nSynthetic data for video understanding: Chunk-wise prompts produce temporally localized events. Each chunk carries its own caption by construction.\nAgent evaluation harnesses: Let the Director agent propose events, then score how a downstream agent reacts. The paper’s own analogy is a coding scaffold such as Codex.\nPrevisualization: Drive set_camera_pose for directed agent camera moves. Restyle the world mid-stream without losing the reference image.\nKey Takeaways\nLingBot-World-Infinity (LingBot-World 2.0) is Robbyant’s open causal world model, released with one 14B checkpoint.\nMoBA attention plus DMD over self-rollout is the real contribution — it targets long-horizon drift directly.\nA Director (VLM) and Pilot (DiT generator) harness turns the frame predictor into an interactive simulator.\nThe 720p/60 fps headline needs the unreleased deployment stack; the public script runs 480×832 on eight GPUs.\nComparison is qualitative: one 60-minute rollout, no VBench or FVD, and a non-commercial CC BY-NC-SA 4.0 license.\nInteractive Explainer\nCheck out the Paper , GitHub Repo , Project Page and Model Weights . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\nNote:Thanks to the Ant Research team for the thought leadership/ Resources for this article. Ant Research team has supported this content/article for promotion.",
+  "clean_text": "Editors Pick\nAgentic AI\nArtificial Intelligence\nAI Infrastructure\nTech News\nAI Paper Summary\nTechnology\nAI Shorts\nApplications\nLanguage Model\nLarge Language Model\nMachine Learning\nNew Releases\nOpen Source\nPhysical AI\nPromote\nSoftware Engineering\nSponsored\nStaff\nVision Language Model\nRobbyant, Ant Group’s embodied-intelligence unit, has released LingBot-World-Infinity (LingBot-World 2.0) . It is a causal video generation model that behaves as an interactive world simulator. It is how the team attacks two failure modes: long-horizon drift and interactive latency.\nWhat is LingBot-World-Infinity?\nAn interactive world model generates video frame by frame , conditioned on a stream of user actions. Each state depends only on past frames and current input. The research team formalizes this as a causal factorization:\nCopy Code Copied Use a different Browser\np_θ(x_1:T | a_1:T) = Π_t p_θ(x_t | x_<t, a_≤t)\nHere x_t is the visual state at time t. The action a_t combines a camera pose and a text prompt. Camera pose uses Plücker embeddings, injected through adaptive layer normalization (AdaLN). Text enters as chunk-wise prompts through cross-attention.\nThe research team claims four upgrades over LingBot-World:\nAn unbounded interaction horizon with consistent output quality.\nA distilled real-time variant sufficient to drive 720p video streams at 60 fps.\nA broader action space, including attacking, archery, spell-casting, and shooting.\nAn agentic harness pairing a pilot agent with a director agent.\nThe primary model is 14B. A lightweight 1.3B counterpart is described as deployable on a single GPU.\nThe Architecture: MoBA and Two-Stage Training\nThe core contribution is the Mixture of Bidirectional and Autoregressive (MoBA) Attention Mask . It explains the drift.\nStandard autoregressive video training uses a teacher forcing mask. Each noisy frame attends to itself and its clean context. The research team found a failure here. As context grows, the model leans on that context instead of predicting future frames. The result is overfitting and visual quality degradation.\nMoBA appends a bidirectional full-attention block to the teacher forcing mask. That block acts as a regularizer. It also helps the model handle flexible-length generation.\nThe cross-attention mask mirrors the split. The autoregressive component attends to a background prompt along with chunk-wise prompts in a lower-triangular pattern. That prevents future semantics from leaking backward. The bidirectional component attends to one global prompt.\nPre-training optimizes a conditional flow-matching objective with rectified-flow interpolation. Post-training then compresses the multi-step teacher into a few-step student:\nConsistency distillation: Latents on the same teacher probability-flow ODE (PF-ODE) trajectory must map to identical predictions.\nDistribution matching distillation (DMD): The generator follows the KL gradient between noised student and noised data distributions.\nThe important detail sits in the DMD. The research team applies it over long self-rollout trajectories, not only teacher-forced states. The student is therefore optimized on the state distribution its own predictions induce. That is the stated mechanism behind anti-drift.\nThe Agentic Harness: The Feature Worth Taking Seriously\nA frame predictor does not play itself. The Robbyant research team wraps the generator in a Director-Pilot Co-Simulation Framework .\nAs described in the research paper, a Vision-Language Model is the Director . It governs macroscopic semantic rules and causal reasoning. The Diffusion Transformer video generator is the Pilot. It simulates low-level physical dynamics and renders transitions.\nThe harness exposes two interaction modes:\nMode A: Direct Semantic Interaction. The VLM reads the current frame and generates event cards. No object masks are required.\nMode B: Tracking-Assisted Object Interaction. A SAM-based (Segment Anything Model) action-proposal loop tracks objects across chunks. Users select a tracked object and trigger actions. The research paper shows door-opening and ball-rotating rollouts.\nUsers can also intervene textually. Global state shifts change time of day or weather. L ocal entity injection spawns creatures, and the VLM picks plausible entry points.\nThe interface follows game conventions. WASD drives movement, IJKL controls view. Space triggers a jump; P triggers a wing glide. Keys U and O carry VLM-proposed character actions. Keys F and G carry environmental events. Numeric keys are user-registered event slots.\nHands-On: What Ships and What Doesn’t\nExpectations need calibration here.\nThe codebase is built on Wan2.2. Only lingbot-world-v2-14b-causal-fast is downloadable today. The causal-pretrained 14B, the bidirectional 14B, and both 1.3B variants are marked TODO.\nCopy Code Copied Use a different Browser\ngit clone https://github.com/robbyant/lingbot-world-v2.git\ncd lingbot-world-v2\npip install -r requirements.txt # torch >= 2.4.0\npip install flash-attn --no-build-isolation\nhuggingface-cli download robbyant/lingbot-world-v2-14b-causal-fast \\\n--local-dir ./lingbot-world-v2-14b-causal-fast\nThe provided generate.py runs causal inference with KV caching. It processes frames chunk-by-chunk rather than all at once. The reference command is eight-GPU and 480P:\nCopy Code Copied Use a different Browser\ntorchrun --nproc_per_node=8 generate.py \\\n--task i2v-A14B --size 480*832 \\\n--ckpt_dir lingbot-world-v2-14b-causal-fast \\\n--image examples/03/image.jpg --action_path examples/03 \\\n--dit_fsdp --t5_fsdp --ulysses_size 8 \\\n--frame_num 361 --local_attn_size 18 --sink_size 6 \\\n--prompt \"A serene lakeside scene with a lone tree standing in calm water...\"\nThe released reference script is 480×832 across eight GPUs. The 60 fps figure describes the deployed stream, which passes a spatio-temporal refiner. That refiner upsamples decoded frames, then synthesizes intermediate frames for a higher frame rate. Both stages compile into TensorRT engines.\nA Diffusers checkpoint also exists:\nCopy Code Copied Use a different Browser\nimport torch\nfrom diffusers import DiffusionPipeline\nfrom diffusers.utils import load_image, export_to_video\npipe = DiffusionPipeline.from_pretrained(\n\"robbyant/lingbot-world-v2-14b-causal-fast\",\ndtype=torch.bfloat16, device_map=\"cuda\")\nframes = pipe(image=load_image(\"seed.png\"), prompt=\"...\").frames[0]\nexport_to_video(frames, \"output.mp4\")\nFor a hosted path, Reactor serves the model as reactor/lingbot-world-2. Its docs list 48 fps at 1664×960. Sessions are command-driven and stateful:\nCopy Code Copied Use a different Browser\nfrom reactor_sdk import Reactor, ReactorStatus\nreactor = Reactor(model_name=\"reactor/lingbot-world-2\", api_key=KEY)\n@reactor.on_status(ReactorStatus.READY)\nasync def on_ready(status):\nref = await reactor.upload_file(\"seed.jpg\")\nawait reactor.send_command(\"set_image\", {\"image\": ref})\nawait reactor.send_command(\"set_prompt\", {\"prompt\": \"A misty alpine valley.\"})\nawait reactor.send_command(\"start\", {})\nMovement is persistent state, not a pulse. set_move_longitudinal: “forward” drives until you send “idle”. Commands land at the next chunk boundary.\nComparison\nThe research paper’s comparison is qualitative. Every superiority claim rests on side-by-side frame grids.\nProperty M-G 3.0 D-W LingBot-World HappyOyster Genie 3 LingBot-World-Infinity\nGeneration duration Minutes Minutes Minutes Minutes Minutes Hours (Infinite)\nSemantic interaction None None None Few Few Infinite\nDomain Game General General General General General\nDynamic degree Medium Medium High Medium Medium High\nReal-time Yes Yes Yes Yes Yes Yes\nOpen-source Yes Yes Yes No No Yes\nUse Cases\nGame and level prototyping: Seed an image of a canal town. Hot-swap the prompt to summon a snowstorm. Iterate on mood before any asset pipeline exists.\nEmbodied simulation: Generate first-person rollouts under scripted camera poses. Feed frames to a policy learner without authoring an Unreal Engine scene.\nSynthetic data for video understanding: Chunk-wise prompts produce temporally localized events. Each chunk carries its own caption by construction.\nAgent evaluation harnesses: Let the Director agent propose events, then score how a downstream agent reacts. The paper’s own analogy is a coding scaffold such as Codex.\nPrevisualization: Drive set_camera_pose for directed agent camera moves. Restyle the world mid-stream without losing the reference image.\nKey Takeaways\nLingBot-World-Infinity (LingBot-World 2.0) is Robbyant’s open causal world model, released with one 14B checkpoint.\nMoBA attention plus DMD over self-rollout is the real contribution — it targets long-horizon drift directly.\nA Director (VLM) and Pilot (DiT generator) harness turns the frame predictor into an interactive simulator.\nThe 720p/60 fps headline needs the unreleased deployment stack; the public script runs 480×832 on eight GPUs.\nComparison is qualitative: one 60-minute rollout, no VBench or FVD, and a non-commercial CC BY-NC-SA 4.0 license.\nInteractive Explainer\nCheck out the Paper , GitHub Repo , Project Page and Model Weights . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\nNote:Thanks to the Ant Research team for the thought leadership/ Resources for this article. Ant Research team has supported this content/article for promotion.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-11/r-011-蚂蚁集团-robbyant-发布-lingbot-world-infinity-开源因果世界模型.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-11/r-011-蚂蚁集团-robbyant-发布-lingbot-world-infinity-开源因果世界模型.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 9563,
+    "paragraph_count": 94,
+    "sentence_count": 100,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0072,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 9563,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "3cca14a0e7c87401",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "蚂蚁集团 Robbyant 发布 LingBot-World-Infinity：开源因果世界模型",
+    "discovery_summary": "蚂蚁集团具身智能团队 Robbyant 发布 LingBot-World-Infinity（LingBot-World 2.0），一个因果视频生成模型，可作为交互式世界模拟器运行。该模型通过 MoBA 注意力机制和 DMD 自 rollout 训练，解决长程漂移和交互延迟问题。模型采用因果分解架构，每帧仅依赖过去帧和当前动作输入。团队同时发布 14B 参数开源 checkpoint，采用 CC BY-NC-SA 4.0 许可。公开推理脚本在 8 张 GPU 上运行 480×832 分辨率；部署版流式输出可达 60 fps，经 TensorRT 引擎编译。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/07/09/meet-lingbot-world-infinity-an-open-causal-world-model-with-an-agentic-harness",
+    "discovered_at": "2026-07-11T04:33:00.857Z",
+    "rank_on_page": 295,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "c995e3bbc19084a9",
+  "content_hash": "3cca14a0e7c87401",
+  "full_text_hash": "3cca14a0e7c87401",
+  "semantic_hash": "43e7c62bbbcc5db5",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-10T04:38:20.000Z",
+  "last_seen_at": "2026-07-11T04:42:58.963Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "蚂蚁集团具身智能团队 Robbyant 发布 LingBot-World-Infinity（LingBot-World 2.0），一个因果视频生成模型，可作为交互式世界模拟器运行。该模型通过 MoBA 注意力机制和 DMD 自 rollout 训练，解决长程漂移和交互延迟问题。模型采用因果分解架构，每帧仅依赖过去帧和当前动作输入。团队同时发布 14B 参数开源 checkpoint，采用 CC BY-NC-SA 4.0 许可。公开推理脚本在 8 张 GPU 上运行 480×832 分辨率；部署版流式输出可达 60 fps，经 TensorRT 引擎编译。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Editors Pick Agentic AI Artificial Intelligence AI Infrastructure Tech News AI Paper Summary Technology AI Shorts Applications Language Model Large Language Model Machine Learning New Releases Open Source Physical AI Promote Software Engineering Sponsored Staff Vision Language Model Robbyant, Ant Group’s embodied-intelligence unit, has released LingBot-World-Infinity (LingBot-World 2.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It is a causal video generation model that behaves as an interactive world simulator.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It is how the team attacks two failure modes: long-horizon drift and interactive latency.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "What is LingBot-World-Infinity?",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "An interactive world model generates video frame by frame , conditioned on a stream of user actions.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-11T04:42:58.963Z",
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "GitHub"
+    ],
+    "products": [
+      "agent",
+      "Agent",
+      "Codex"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2.0",
+      "14B",
+      "4.0",
+      "8",
+      "480",
+      "832",
+      "60",
+      "1"
+    ],
+    "quotes": [
+      "A serene lakeside scene with a lone tree standing in calm water...",
+      "robbyant/lingbot-world-v2-14b-causal-fast",
+      ")\nframes = pipe(image=load_image(",
+      "), prompt=",
+      ").frames[0]\nexport_to_video(frames, "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Editors Pick Agentic AI Artificial Intelligence AI Infrastructure Tech News AI Paper Summary Technology AI Shorts Applications Language Model Large Language Model Machine Learning New Releases Open Source Physical AI Promote Software Engineering Sponsored Staff Vision Language Model Robbyant, Ant Group’s embodied-intelligence unit, has released LingBot-World-Infinity (LingBot-World 2.",
+      "It is a causal video generation model that behaves as an interactive world simulator.",
+      "It is how the team attacks two failure modes: long-horizon drift and interactive latency."
+    ],
+    "case_details": [
+      "蚂蚁集团具身智能团队 Robbyant 发布 LingBot-World-Infinity（LingBot-World 2.0），一个因果视频生成模型，可作为交互式世界模拟器运行。该模型通过 MoBA 注意力机制和 DMD 自 rollout 训练，解决长程漂移和交互延迟问题。模型采用因果分解架构，每帧仅依赖过去帧和当前动作输入。团队同时发布 14B 参数开源 checkpoint，采用 CC BY-NC-SA 4.0 许可。公开推理脚本在 8 张 GPU 上运行 480×832 分辨率；部署版流式输出可达 60 fps，经 TensorRT 引擎编译。"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 蚂蚁集团 Robbyant 发布 LingBot-World-Infinity：开源因果世界模型\n\n- raw_id: R-011\n- title_zh: 蚂蚁集团 Robbyant 发布 LingBot-World-Infinity：开源因果世界模型\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.marktechpost.com/2026/07/09/meet-lingbot-world-infinity-an-open-causal-world-model-with-an-agentic-harness\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-07-11T04:42:58.963Z\n\n## clean_text\n\nEditors Pick\nAgentic AI\nArtificial Intelligence\nAI Infrastructure\nTech News\nAI Paper Summary\nTechnology\nAI Shorts\nApplications\nLanguage Model\nLarge Language Model\nMachine Learning\nNew Releases\nOpen Source\nPhysical AI\nPromote\nSoftware Engineering\nSponsored\nStaff\nVision Language Model\nRobbyant, Ant Group’s embodied-intelligence unit, has released LingBot-World-Infinity (LingBot-World 2.0) . It is a causal video generation model that behaves as an interactive world simulator. It is how the team attacks two failure modes: long-horizon drift and interactive latency.\nWhat is LingBot-World-Infinity?\nAn interactive world model generates video frame by frame , conditioned on a stream of user actions. Each state depends only on past frames and current input. The research team formalizes this as a causal factorization:\nCopy Code Copied Use a different Browser\np_θ(x_1:T | a_1:T) = Π_t p_θ(x_t | x_<t, a_≤t)\nHere x_t is the visual state at time t. The action a_t combines a camera pose and a text prompt. Camera pose uses Plücker embeddings, injected through adaptive layer normalization (AdaLN). Text enters as chunk-wise prompts through cross-attention.\nThe research team claims four upgrades over LingBot-World:\nAn unbounded interaction horizon with consistent output quality.\nA distilled real-time variant sufficient to drive 720p video streams at 60 fps.\nA broader action space, including attacking, archery, spell-casting, and shooting.\nAn agentic harness pairing a pilot agent with a director agent.\nThe primary model is 14B. A lightweight 1.3B counterpart is described as deployable on a single GPU.\nThe Architecture: MoBA and Two-Stage Training\nThe core contribution is the Mixture of Bidirectional and Autoregressive (MoBA) Attention Mask . It explains the drift.\nStandard autoregressive video training uses a teacher forcing mask. Each noisy frame attends to itself and its clean context. The research team found a failure here. As context grows, the model leans on that context instead of predicting future frames. The result is overfitting and visual quality degradation.\nMoBA appends a bidirectional full-attention block to the teacher forcing mask. That block acts as a regularizer. It also helps the model handle flexible-length generation.\nThe cross-attention mask mirrors the split. The autoregressive component attends to a background prompt along with chunk-wise prompts in a lower-triangular pattern. That prevents future semantics from leaking backward. The bidirectional component attends to one global prompt.\nPre-training optimizes a conditional flow-matching objective with rectified-flow interpolation. Post-training then compresses the multi-step teacher into a few-step student:\nConsistency distillation: Latents on the same teacher probability-flow ODE (PF-ODE) trajectory must map to identical predictions.\nDistribution matching distillation (DMD): The generator follows the KL gradient between noised student and noised data distributions.\nThe important detail sits in the DMD. The research team applies it over long self-rollout trajectories, not only teacher-forced states. The student is therefore optimized on the state distribution its own predictions induce. That is the stated mechanism behind anti-drift.\nThe Agentic Harness: The Feature Worth Taking Seriously\nA frame predictor does not play itself. The Robbyant research team wraps the generator in a Director-Pilot Co-Simulation Framework .\nAs described in the research paper, a Vision-Language Model is the Director . It governs macroscopic semantic rules and causal reasoning. The Diffusion Transformer video generator is the Pilot. It simulates low-level physical dynamics and renders transitions.\nThe harness exposes two interaction modes:\nMode A: Direct Semantic Interaction. The VLM reads the current frame and generates event cards. No object masks are required.\nMode B: Tracking-Assisted Object Interaction. A SAM-based (Segment Anything Model) action-proposal loop tracks objects across chunks. Users select a tracked object and trigger actions. The research paper shows door-opening and ball-rotating rollouts.\nUsers can also intervene textually. Global state shifts change time of day or weather. L ocal entity injection spawns creatures, and the VLM picks plausible entry points.\nThe interface follows game conventions. WASD drives movement, IJKL controls view. Space triggers a jump; P triggers a wing glide. Keys U and O carry VLM-proposed character actions. Keys F and G carry environmental events. Numeric keys are user-registered event slots.\nHands-On: What Ships and What Doesn’t\nExpectations need calibration here.\nThe codebase is built on Wan2.2. Only lingbot-world-v2-14b-causal-fast is downloadable today. The causal-pretrained 14B, the bidirectional 14B, and both 1.3B variants are marked TODO.\nCopy Code Copied Use a different Browser\ngit clone https://github.com/robbyant/lingbot-world-v2.git\ncd lingbot-world-v2\npip install -r requirements.txt # torch >= 2.4.0\npip install flash-attn --no-build-isolation\nhuggingface-cli download robbyant/lingbot-world-v2-14b-causal-fast \\\n--local-dir ./lingbot-world-v2-14b-causal-fast\nThe provided generate.py runs causal inference with KV caching. It processes frames chunk-by-chunk rather than all at once. The reference command is eight-GPU and 480P:\nCopy Code Copied Use a different Browser\ntorchrun --nproc_per_node=8 generate.py \\\n--task i2v-A14B --size 480*832 \\\n--ckpt_dir lingbot-world-v2-14b-causal-fast \\\n--image examples/03/image.jpg --action_path examples/03 \\\n--dit_fsdp --t5_fsdp --ulysses_size 8 \\\n--frame_num 361 --local_attn_size 18 --sink_size 6 \\\n--prompt \"A serene lakeside scene with a lone tree standing in calm water...\"\nThe released reference script is 480×832 across eight GPUs. The 60 fps figure describes the deployed stream, which passes a spatio-temporal refiner. That refiner upsamples decoded frames, then synthesizes intermediate frames for a higher frame rate. Both stages compile into TensorRT engines.\nA Diffusers checkpoint also exists:\nCopy Code Copied Use a different Browser\nimport torch\nfrom diffusers import DiffusionPipeline\nfrom diffusers.utils import load_image, export_to_video\npipe = DiffusionPipeline.from_pretrained(\n\"robbyant/lingbot-world-v2-14b-causal-fast\",\ndtype=torch.bfloat16, device_map=\"cuda\")\nframes = pipe(image=load_image(\"seed.png\"), prompt=\"...\").frames[0]\nexport_to_video(frames, \"output.mp4\")\nFor a hosted path, Reactor serves the model as reactor/lingbot-world-2. Its docs list 48 fps at 1664×960. Sessions are command-driven and stateful:\nCopy Code Copied Use a different Browser\nfrom reactor_sdk import Reactor, ReactorStatus\nreactor = Reactor(model_name=\"reactor/lingbot-world-2\", api_key=KEY)\n@reactor.on_status(ReactorStatus.READY)\nasync def on_ready(status):\nref = await reactor.upload_file(\"seed.jpg\")\nawait reactor.send_command(\"set_image\", {\"image\": ref})\nawait reactor.send_command(\"set_prompt\", {\"prompt\": \"A misty alpine valley.\"})\nawait reactor.send_command(\"start\", {})\nMovement is persistent state, not a pulse. set_move_longitudinal: “forward” drives until you send “idle”. Commands land at the next chunk boundary.\nComparison\nThe research paper’s comparison is qualitative. Every superiority claim rests on side-by-side frame grids.\nProperty M-G 3.0 D-W LingBot-World HappyOyster Genie 3 LingBot-World-Infinity\nGeneration duration Minutes Minutes Minutes Minutes Minutes Hours (Infinite)\nSemantic interaction None None None Few Few Infinite\nDomain Game General General General General General\nDynamic degree Medium Medium High Medium Medium High\nReal-time Yes Yes Yes Yes Yes Yes\nOpen-source Yes Yes Yes No No Yes\nUse Cases\nGame and level prototyping: Seed an image of a canal town. Hot-swap the prompt to summon a snowstorm. Iterate on mood before any asset pipeline exists.\nEmbodied simulation: Generate first-person rollouts under scripted camera poses. Feed frames to a policy learner without authoring an Unreal Engine scene.\nSynthetic data for video understanding: Chunk-wise prompts produce temporally localized events. Each chunk carries its own caption by construction.\nAgent evaluation harnesses: Let the Director agent propose events, then score how a downstream agent reacts. The paper’s own analogy is a coding scaffold such as Codex.\nPrevisualization: Drive set_camera_pose for directed agent camera moves. Restyle the world mid-stream without losing the reference image.\nKey Takeaways\nLingBot-World-Infinity (LingBot-World 2.0) is Robbyant’s open causal world model, released with one 14B checkpoint.\nMoBA attention plus DMD over self-rollout is the real contribution — it targets long-horizon drift directly.\nA Director (VLM) and Pilot (DiT generator) harness turns the frame predictor into an interactive simulator.\nThe 720p/60 fps headline needs the unreleased deployment stack; the public script runs 480×832 on eight GPUs.\nComparison is qualitative: one 60-minute rollout, no VBench or FVD, and a non-commercial CC BY-NC-SA 4.0 license.\nInteractive Explainer\nCheck out the Paper , GitHub Repo , Project Page and Model Weights . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\nNote:Thanks to the Ant Research team for the thought leadership/ Resources for this article. Ant Research team has supported this content/article for promotion.\n\n## full_text\n\nEditors Pick\nAgentic AI\nArtificial Intelligence\nAI Infrastructure\nTech News\nAI Paper Summary\nTechnology\nAI Shorts\nApplications\nLanguage Model\nLarge Language Model\nMachine Learning\nNew Releases\nOpen Source\nPhysical AI\nPromote\nSoftware Engineering\nSponsored\nStaff\nVision Language Model\nRobbyant, Ant Group’s embodied-intelligence unit, has released LingBot-World-Infinity (LingBot-World 2.0) . It is a causal video generation model that behaves as an interactive world simulator. It is how the team attacks two failure modes: long-horizon drift and interactive latency.\nWhat is LingBot-World-Infinity?\nAn interactive world model generates video frame by frame , conditioned on a stream of user actions. Each state depends only on past frames and current input. The research team formalizes this as a causal factorization:\nCopy Code Copied Use a different Browser\np_θ(x_1:T | a_1:T) = Π_t p_θ(x_t | x_<t, a_≤t)\nHere x_t is the visual state at time t. The action a_t combines a camera pose and a text prompt. Camera pose uses Plücker embeddings, injected through adaptive layer normalization (AdaLN). Text enters as chunk-wise prompts through cross-attention.\nThe research team claims four upgrades over LingBot-World:\nAn unbounded interaction horizon with consistent output quality.\nA distilled real-time variant sufficient to drive 720p video streams at 60 fps.\nA broader action space, including attacking, archery, spell-casting, and shooting.\nAn agentic harness pairing a pilot agent with a director agent.\nThe primary model is 14B. A lightweight 1.3B counterpart is described as deployable on a single GPU.\nThe Architecture: MoBA and Two-Stage Training\nThe core contribution is the Mixture of Bidirectional and Autoregressive (MoBA) Attention Mask . It explains the drift.\nStandard autoregressive video training uses a teacher forcing mask. Each noisy frame attends to itself and its clean context. The research team found a failure here. As context grows, the model leans on that context instead of predicting future frames. The result is overfitting and visual quality degradation.\nMoBA appends a bidirectional full-attention block to the teacher forcing mask. That block acts as a regularizer. It also helps the model handle flexible-length generation.\nThe cross-attention mask mirrors the split. The autoregressive component attends to a background prompt along with chunk-wise prompts in a lower-triangular pattern. That prevents future semantics from leaking backward. The bidirectional component attends to one global prompt.\nPre-training optimizes a conditional flow-matching objective with rectified-flow interpolation. Post-training then compresses the multi-step teacher into a few-step student:\nConsistency distillation: Latents on the same teacher probability-flow ODE (PF-ODE) trajectory must map to identical predictions.\nDistribution matching distillation (DMD): The generator follows the KL gradient between noised student and noised data distributions.\nThe important detail sits in the DMD. The research team applies it over long self-rollout trajectories, not only teacher-forced states. The student is therefore optimized on the state distribution its own predictions induce. That is the stated mechanism behind anti-drift.\nThe Agentic Harness: The Feature Worth Taking Seriously\nA frame predictor does not play itself. The Robbyant research team wraps the generator in a Director-Pilot Co-Simulation Framework .\nAs described in the research paper, a Vision-Language Model is the Director . It governs macroscopic semantic rules and causal reasoning. The Diffusion Transformer video generator is the Pilot. It simulates low-level physical dynamics and renders transitions.\nThe harness exposes two interaction modes:\nMode A: Direct Semantic Interaction. The VLM reads the current frame and generates event cards. No object masks are required.\nMode B: Tracking-Assisted Object Interaction. A SAM-based (Segment Anything Model) action-proposal loop tracks objects across chunks. Users select a tracked object and trigger actions. The research paper shows door-opening and ball-rotating rollouts.\nUsers can also intervene textually. Global state shifts change time of day or weather. L ocal entity injection spawns creatures, and the VLM picks plausible entry points.\nThe interface follows game conventions. WASD drives movement, IJKL controls view. Space triggers a jump; P triggers a wing glide. Keys U and O carry VLM-proposed character actions. Keys F and G carry environmental events. Numeric keys are user-registered event slots.\nHands-On: What Ships and What Doesn’t\nExpectations need calibration here.\nThe codebase is built on Wan2.2. Only lingbot-world-v2-14b-causal-fast is downloadable today. The causal-pretrained 14B, the bidirectional 14B, and both 1.3B variants are marked TODO.\nCopy Code Copied Use a different Browser\ngit clone https://github.com/robbyant/lingbot-world-v2.git\ncd lingbot-world-v2\npip install -r requirements.txt # torch >= 2.4.0\npip install flash-attn --no-build-isolation\nhuggingface-cli download robbyant/lingbot-world-v2-14b-causal-fast \\\n--local-dir ./lingbot-world-v2-14b-causal-fast\nThe provided generate.py runs causal inference with KV caching. It processes frames chunk-by-chunk rather than all at once. The reference command is eight-GPU and 480P:\nCopy Code Copied Use a different Browser\ntorchrun --nproc_per_node=8 generate.py \\\n--task i2v-A14B --size 480*832 \\\n--ckpt_dir lingbot-world-v2-14b-causal-fast \\\n--image examples/03/image.jpg --action_path examples/03 \\\n--dit_fsdp --t5_fsdp --ulysses_size 8 \\\n--frame_num 361 --local_attn_size 18 --sink_size 6 \\\n--prompt \"A serene lakeside scene with a lone tree standing in calm water...\"\nThe released reference script is 480×832 across eight GPUs. The 60 fps figure describes the deployed stream, which passes a spatio-temporal refiner. That refiner upsamples decoded frames, then synthesizes intermediate frames for a higher frame rate. Both stages compile into TensorRT engines.\nA Diffusers checkpoint also exists:\nCopy Code Copied Use a different Browser\nimport torch\nfrom diffusers import DiffusionPipeline\nfrom diffusers.utils import load_image, export_to_video\npipe = DiffusionPipeline.from_pretrained(\n\"robbyant/lingbot-world-v2-14b-causal-fast\",\ndtype=torch.bfloat16, device_map=\"cuda\")\nframes = pipe(image=load_image(\"seed.png\"), prompt=\"...\").frames[0]\nexport_to_video(frames, \"output.mp4\")\nFor a hosted path, Reactor serves the model as reactor/lingbot-world-2. Its docs list 48 fps at 1664×960. Sessions are command-driven and stateful:\nCopy Code Copied Use a different Browser\nfrom reactor_sdk import Reactor, ReactorStatus\nreactor = Reactor(model_name=\"reactor/lingbot-world-2\", api_key=KEY)\n@reactor.on_status(ReactorStatus.READY)\nasync def on_ready(status):\nref = await reactor.upload_file(\"seed.jpg\")\nawait reactor.send_command(\"set_image\", {\"image\": ref})\nawait reactor.send_command(\"set_prompt\", {\"prompt\": \"A misty alpine valley.\"})\nawait reactor.send_command(\"start\", {})\nMovement is persistent state, not a pulse. set_move_longitudinal: “forward” drives until you send “idle”. Commands land at the next chunk boundary.\nComparison\nThe research paper’s comparison is qualitative. Every superiority claim rests on side-by-side frame grids.\nProperty M-G 3.0 D-W LingBot-World HappyOyster Genie 3 LingBot-World-Infinity\nGeneration duration Minutes Minutes Minutes Minutes Minutes Hours (Infinite)\nSemantic interaction None None None Few Few Infinite\nDomain Game General General General General General\nDynamic degree Medium Medium High Medium Medium High\nReal-time Yes Yes Yes Yes Yes Yes\nOpen-source Yes Yes Yes No No Yes\nUse Cases\nGame and level prototyping: Seed an image of a canal town. Hot-swap the prompt to summon a snowstorm. Iterate on mood before any asset pipeline exists.\nEmbodied simulation: Generate first-person rollouts under scripted camera poses. Feed frames to a policy learner without authoring an Unreal Engine scene.\nSynthetic data for video understanding: Chunk-wise prompts produce temporally localized events. Each chunk carries its own caption by construction.\nAgent evaluation harnesses: Let the Director agent propose events, then score how a downstream agent reacts. The paper’s own analogy is a coding scaffold such as Codex.\nPrevisualization: Drive set_camera_pose for directed agent camera moves. Restyle the world mid-stream without losing the reference image.\nKey Takeaways\nLingBot-World-Infinity (LingBot-World 2.0) is Robbyant’s open causal world model, released with one 14B checkpoint.\nMoBA attention plus DMD over self-rollout is the real contribution — it targets long-horizon drift directly.\nA Director (VLM) and Pilot (DiT generator) harness turns the frame predictor into an interactive simulator.\nThe 720p/60 fps headline needs the unreleased deployment stack; the public script runs 480×832 on eight GPUs.\nComparison is qualitative: one 60-minute rollout, no VBench or FVD, and a non-commercial CC BY-NC-SA 4.0 license.\nInteractive Explainer\nCheck out the Paper , GitHub Repo , Project Page and Model Weights . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\nNote:Thanks to the Ant Research team for the thought leadership/ Resources for this article. Ant Research team has supported this content/article for promotion.\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 91\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] 蚂蚁集团具身智能团队 Robbyant 发布 LingBot-World-Infinity（LingBot-World 2.0），一个因果视频生成模型，可作为交互式世界模拟器运行。该模型通过 MoBA 注意力机制和 DMD 自 rollout 训练，解决长程漂移和交互延迟问题。模型采用因果分解架构，每帧仅依赖过去帧和当前动作输入。团队同时发布 14B 参数开源 checkpoint，采用 CC BY-NC-SA 4.0 许可。公开推理脚本在 8 张 GPU 上运行 480×832 分辨率；部署版流式输出可达 60 fps，经 TensorRT 引擎编译。\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Editors Pick Agentic AI Artificial Intelligence AI Infrastructure Tech News AI Paper Summary Technology AI Shorts Applications Language Model Large Language Model Machine Learning New Releases Open Source Physical AI Promote Software Engineering Sponsored Staff Vision Language Model Robbyant, Ant Group’s embodied-intelligence unit, has released LingBot-World-Infinity (LingBot-World 2.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] It is a causal video generation model that behaves as an interactive world simulator.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] It is how the team attacks two failure modes: long-horizon drift and interactive latency.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] What is LingBot-World-Infinity?\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] An interactive world model generates video frame by frame , conditioned on a stream of user actions.\n"
+}

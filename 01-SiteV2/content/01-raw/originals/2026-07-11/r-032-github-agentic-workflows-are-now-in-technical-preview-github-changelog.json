@@ -1,0 +1,289 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-032",
+  "title": "GitHub Agentic Workflows are now in technical preview - GitHub Changelog",
+  "title_zh": "GitHub Agentic工作流现已进入技术预览- GitHub更新日志",
+  "title_translation_status": "translated",
+  "title_translation_method": "mymemory_title_translation",
+  "original_url": "https://github.blog/changelog/2026-02-13-github-agentic-workflows-are-now-in-technical-preview/",
+  "canonical_url": "https://github.blog/changelog/2026-02-13-github-agentic-workflows-are-now-in-technical-preview",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-11T04:43:04.628Z",
+  "language": "mixed",
+  "full_text": "Back to changelog\nGitHub Agentic Workflows let you automate repository tasks using AI agents that run within GitHub Actions. Write workflows in plain Markdown instead of complex YAML, and let AI handle intelligent decision-making for issue triage, pull request reviews, CI failure analysis, and repository maintenance.\nBy adding Markdown files to .github/workflows/ , you can describe automation goals in natural language. The gh aw CLI converts these into standard GitHub Actions workflows that execute using GitHub Copilot CLI or other coding agents. Workflows run with read-only permissions by default and use preapproved &ldquo;safe outputs&rdquo; for write operations.\nThe feature is available in technical preview through the gh aw CLI extension.\nDemo\nKey benefits\nNatural language workflows : Write automation in Markdown instead of YAML. Describe what you want in natural language, and the AI agent figures out how to do it.\nSecurity-first design : Read-only by default with sandboxed execution, network isolation, SHA-pinned dependencies, and sanitized write operations through safe outputs.\nMultiple coding agents : Works with GitHub Copilot CLI (default) or other AI coding agents. Same workflow format across all engines.\nDeep GitHub integration : Native access to repositories, issues, pull requests, actions, and security through the GitHub MCP Server. Additional tools for browser automation, web search, and custom MCPs.\nFlexible triggers : Respond to issues and pull request events, run on schedules, dispatch manually, or invoke via commands in comments.\nEasy to start : Install the CLI extension, create a Markdown file, compile, and commit. They run as standard GitHub Actions.\nAgentic authoring : Create, edit, debug, and optimize workflows using AI agents in VS Code, github.com, or your preferred coding agent.\nOpen source : Fully open source on GitHub under the MIT license. Community contributions are welcome.\nExamples\nImagine repository automation that automatically triages incoming issues, investigates root causes of CI failures, maintains documentation, improves test coverage, monitors compliance, and even boosts team morale. With agentic workflows, you define these behaviors in simple Markdown files.\nNot sure where to begin? Check out Peli&rsquo;s Agent Factory which showcases over 50 specialized agentic workflows for different use cases.\nGetting started\nLearn more by reading the GitHub Agentic Workflows documentation . See what others are building, join the discussion and share your thoughts and feedback in the Community and in the GitHub Next Discord .\nGitHub Agentic Workflows are a collaboration among GitHub Next, Microsoft Research, and Azure Core Upstream. The implementation is open source on GitHub in the gh-aw repository .\nRead more on the GitHub Blog post introducing Agentic Workflows .\nRelated Posts\nJul.09 Release\nNew pull requests dashboard is now generally available\ncollaboration tools\nJul.09 Release\nOpenAI’s GPT-5.6 Sol, Terra, and Luna are now available in GitHub Copilot\ncopilot\nJul.09 Release\nAsk Copilot for a repository overview\ncopilot\nJul.08 Release\nEnterprise-managed OpenTelemetry export for VS Code and CLI\nclient apps\ncopilot\nenterprise management tools\n...\n+2\nJul.08 Release\nDeploy managed Copilot settings via MDM in VS Code and CLI\nclient apps\ncopilot\nenterprise management tools\n...\n+2\nJul.08 Release\nGitHub Copilot in Visual Studio Code, June 2026 releases\ncopilot\nJul.08 Release\nsetup-java v5.5.0: signature verification, Kona JDK, and Maven fixes\nactions\nJul.07 Improvement\nAdd review cycles and time to adoption phases in the usage API\naccount management\ncopilot\nenterprise management tools\n...\n+2\nJul.07 Improvement\nCodex as agent provider and agentic enhancements in JetBrains IDEs\ncopilot\nSubscribe to our developer newsletter\nDiscover tips, technical guides, and best practices in our biweekly newsletter just for devs.\nBack to top",
+  "clean_text": "Back to changelog\nGitHub Agentic Workflows let you automate repository tasks using AI agents that run within GitHub Actions. Write workflows in plain Markdown instead of complex YAML, and let AI handle intelligent decision-making for issue triage, pull request reviews, CI failure analysis, and repository maintenance.\nBy adding Markdown files to .github/workflows/ , you can describe automation goals in natural language. The gh aw CLI converts these into standard GitHub Actions workflows that execute using GitHub Copilot CLI or other coding agents. Workflows run with read-only permissions by default and use preapproved &ldquo;safe outputs&rdquo; for write operations.\nThe feature is available in technical preview through the gh aw CLI extension.\nDemo\nKey benefits\nNatural language workflows : Write automation in Markdown instead of YAML. Describe what you want in natural language, and the AI agent figures out how to do it.\nSecurity-first design : Read-only by default with sandboxed execution, network isolation, SHA-pinned dependencies, and sanitized write operations through safe outputs.\nMultiple coding agents : Works with GitHub Copilot CLI (default) or other AI coding agents. Same workflow format across all engines.\nDeep GitHub integration : Native access to repositories, issues, pull requests, actions, and security through the GitHub MCP Server. Additional tools for browser automation, web search, and custom MCPs.\nFlexible triggers : Respond to issues and pull request events, run on schedules, dispatch manually, or invoke via commands in comments.\nEasy to start : Install the CLI extension, create a Markdown file, compile, and commit. They run as standard GitHub Actions.\nAgentic authoring : Create, edit, debug, and optimize workflows using AI agents in VS Code, github.com, or your preferred coding agent.\nOpen source : Fully open source on GitHub under the MIT license. Community contributions are welcome.\nExamples\nImagine repository automation that automatically triages incoming issues, investigates root causes of CI failures, maintains documentation, improves test coverage, monitors compliance, and even boosts team morale. With agentic workflows, you define these behaviors in simple Markdown files.\nNot sure where to begin? Check out Peli&rsquo;s Agent Factory which showcases over 50 specialized agentic workflows for different use cases.\nGetting started\nLearn more by reading the GitHub Agentic Workflows documentation . See what others are building, join the discussion and share your thoughts and feedback in the Community and in the GitHub Next Discord .\nGitHub Agentic Workflows are a collaboration among GitHub Next, Microsoft Research, and Azure Core Upstream. The implementation is open source on GitHub in the gh-aw repository .\nRead more on the GitHub Blog post introducing Agentic Workflows .\nRelated Posts\nJul.09 Release\nNew pull requests dashboard is now generally available\ncollaboration tools\nJul.09 Release\nOpenAI’s GPT-5.6 Sol, Terra, and Luna are now available in GitHub Copilot\ncopilot\nJul.09 Release\nAsk Copilot for a repository overview\ncopilot\nJul.08 Release\nEnterprise-managed OpenTelemetry export for VS Code and CLI\nclient apps\ncopilot\nenterprise management tools\n...\n+2\nJul.08 Release\nDeploy managed Copilot settings via MDM in VS Code and CLI\nclient apps\ncopilot\nenterprise management tools\n...\n+2\nJul.08 Release\nGitHub Copilot in Visual Studio Code, June 2026 releases\ncopilot\nJul.08 Release\nsetup-java v5.5.0: signature verification, Kona JDK, and Maven fixes\nactions\nJul.07 Improvement\nAdd review cycles and time to adoption phases in the usage API\naccount management\ncopilot\nenterprise management tools\n...\n+2\nJul.07 Improvement\nCodex as agent provider and agentic enhancements in JetBrains IDEs\ncopilot\nSubscribe to our developer newsletter\nDiscover tips, technical guides, and best practices in our biweekly newsletter just for devs.\nBack to top",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-11/r-032-github-agentic-workflows-are-now-in-technical-preview-github-changelog.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-11/r-032-github-agentic-workflows-are-now-in-technical-preview-github-changelog.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 86,
+  "extractor_diagnostics": {
+    "readability_score": 86,
+    "text_length": 3916,
+    "paragraph_count": 30,
+    "sentence_count": 32,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3916,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "3004eb3939623335",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "24080c989af920e3",
+  "content_hash": "3004eb3939623335",
+  "full_text_hash": "3004eb3939623335",
+  "semantic_hash": "341ff1dedba1bf02",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-11T04:43:04.628Z",
+  "last_seen_at": "2026-07-11T04:43:04.628Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "GitHub Agentic Workflows are now in technical preview - GitHub Changelog Back to changelog GitHub Agentic Workflows let you automate repository tasks using AI agents that run within GitHub Actions. Write workflows in plain Markdown instead of complex YAML, and let AI handle intelligent decision-ma..... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Back to changelog GitHub Agentic Workflows let you automate repository tasks using AI agents that run within GitHub Actions.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Write workflows in plain Markdown instead of complex YAML, and let AI handle intelligent decision-making for issue triage, pull request reviews, CI failure analysis, and repository maintenance.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "By adding Markdown files to .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/workflows/ , you can describe automation goals in natural language.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "The gh aw CLI converts these into standard GitHub Actions workflows that execute using GitHub Copilot CLI or other coding agents.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-11T04:43:04.628Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Microsoft",
+      "GitHub"
+    ],
+    "products": [
+      "agents",
+      "agent",
+      "Copilot",
+      "MCP",
+      "Agent",
+      "GPT-5",
+      "copilot",
+      "Codex"
+    ],
+    "people": [],
+    "industries": [
+      "制造 / 工业",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "50",
+      "09",
+      "5.6",
+      "08",
+      "2",
+      "2026",
+      "5.5",
+      "0"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "By adding Markdown files to ."
+    ],
+    "case_details": [
+      "GitHub Agentic Workflows are now in technical preview - GitHub Changelog Back to changelog GitHub Agentic Workflows let you automate repository tasks using AI agents that run within GitHub Actions. Write workflows in plain Markdown instead of complex YAML, and let AI handle intelligent decision-ma..... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original",
+      "The gh aw CLI converts these into standard GitHub Actions workflows that execute using GitHub Copilot CLI or other coding agents."
+    ],
+    "workflow_changes": [
+      "Back to changelog GitHub Agentic Workflows let you automate repository tasks using AI agents that run within GitHub Actions.",
+      "Write workflows in plain Markdown instead of complex YAML, and let AI handle intelligent decision-making for issue triage, pull request reviews, CI failure analysis, and repository maintenance.",
+      "github/workflows/ , you can describe automation goals in natural language."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# GitHub Agentic Workflows are now in technical preview - GitHub Changelog\n\n- raw_id: R-032\n- title_zh: GitHub Agentic工作流现已进入技术预览- GitHub更新日志\n- title_translation_status: translated\n- title_translation_method: mymemory_title_translation\n- original_url: https://github.blog/changelog/2026-02-13-github-agentic-workflows-are-now-in-technical-preview/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-11T04:43:04.628Z\n\n## clean_text\n\nBack to changelog\nGitHub Agentic Workflows let you automate repository tasks using AI agents that run within GitHub Actions. Write workflows in plain Markdown instead of complex YAML, and let AI handle intelligent decision-making for issue triage, pull request reviews, CI failure analysis, and repository maintenance.\nBy adding Markdown files to .github/workflows/ , you can describe automation goals in natural language. The gh aw CLI converts these into standard GitHub Actions workflows that execute using GitHub Copilot CLI or other coding agents. Workflows run with read-only permissions by default and use preapproved &ldquo;safe outputs&rdquo; for write operations.\nThe feature is available in technical preview through the gh aw CLI extension.\nDemo\nKey benefits\nNatural language workflows : Write automation in Markdown instead of YAML. Describe what you want in natural language, and the AI agent figures out how to do it.\nSecurity-first design : Read-only by default with sandboxed execution, network isolation, SHA-pinned dependencies, and sanitized write operations through safe outputs.\nMultiple coding agents : Works with GitHub Copilot CLI (default) or other AI coding agents. Same workflow format across all engines.\nDeep GitHub integration : Native access to repositories, issues, pull requests, actions, and security through the GitHub MCP Server. Additional tools for browser automation, web search, and custom MCPs.\nFlexible triggers : Respond to issues and pull request events, run on schedules, dispatch manually, or invoke via commands in comments.\nEasy to start : Install the CLI extension, create a Markdown file, compile, and commit. They run as standard GitHub Actions.\nAgentic authoring : Create, edit, debug, and optimize workflows using AI agents in VS Code, github.com, or your preferred coding agent.\nOpen source : Fully open source on GitHub under the MIT license. Community contributions are welcome.\nExamples\nImagine repository automation that automatically triages incoming issues, investigates root causes of CI failures, maintains documentation, improves test coverage, monitors compliance, and even boosts team morale. With agentic workflows, you define these behaviors in simple Markdown files.\nNot sure where to begin? Check out Peli&rsquo;s Agent Factory which showcases over 50 specialized agentic workflows for different use cases.\nGetting started\nLearn more by reading the GitHub Agentic Workflows documentation . See what others are building, join the discussion and share your thoughts and feedback in the Community and in the GitHub Next Discord .\nGitHub Agentic Workflows are a collaboration among GitHub Next, Microsoft Research, and Azure Core Upstream. The implementation is open source on GitHub in the gh-aw repository .\nRead more on the GitHub Blog post introducing Agentic Workflows .\nRelated Posts\nJul.09 Release\nNew pull requests dashboard is now generally available\ncollaboration tools\nJul.09 Release\nOpenAI’s GPT-5.6 Sol, Terra, and Luna are now available in GitHub Copilot\ncopilot\nJul.09 Release\nAsk Copilot for a repository overview\ncopilot\nJul.08 Release\nEnterprise-managed OpenTelemetry export for VS Code and CLI\nclient apps\ncopilot\nenterprise management tools\n...\n+2\nJul.08 Release\nDeploy managed Copilot settings via MDM in VS Code and CLI\nclient apps\ncopilot\nenterprise management tools\n...\n+2\nJul.08 Release\nGitHub Copilot in Visual Studio Code, June 2026 releases\ncopilot\nJul.08 Release\nsetup-java v5.5.0: signature verification, Kona JDK, and Maven fixes\nactions\nJul.07 Improvement\nAdd review cycles and time to adoption phases in the usage API\naccount management\ncopilot\nenterprise management tools\n...\n+2\nJul.07 Improvement\nCodex as agent provider and agentic enhancements in JetBrains IDEs\ncopilot\nSubscribe to our developer newsletter\nDiscover tips, technical guides, and best practices in our biweekly newsletter just for devs.\nBack to top\n\n## full_text\n\nBack to changelog\nGitHub Agentic Workflows let you automate repository tasks using AI agents that run within GitHub Actions. Write workflows in plain Markdown instead of complex YAML, and let AI handle intelligent decision-making for issue triage, pull request reviews, CI failure analysis, and repository maintenance.\nBy adding Markdown files to .github/workflows/ , you can describe automation goals in natural language. The gh aw CLI converts these into standard GitHub Actions workflows that execute using GitHub Copilot CLI or other coding agents. Workflows run with read-only permissions by default and use preapproved &ldquo;safe outputs&rdquo; for write operations.\nThe feature is available in technical preview through the gh aw CLI extension.\nDemo\nKey benefits\nNatural language workflows : Write automation in Markdown instead of YAML. Describe what you want in natural language, and the AI agent figures out how to do it.\nSecurity-first design : Read-only by default with sandboxed execution, network isolation, SHA-pinned dependencies, and sanitized write operations through safe outputs.\nMultiple coding agents : Works with GitHub Copilot CLI (default) or other AI coding agents. Same workflow format across all engines.\nDeep GitHub integration : Native access to repositories, issues, pull requests, actions, and security through the GitHub MCP Server. Additional tools for browser automation, web search, and custom MCPs.\nFlexible triggers : Respond to issues and pull request events, run on schedules, dispatch manually, or invoke via commands in comments.\nEasy to start : Install the CLI extension, create a Markdown file, compile, and commit. They run as standard GitHub Actions.\nAgentic authoring : Create, edit, debug, and optimize workflows using AI agents in VS Code, github.com, or your preferred coding agent.\nOpen source : Fully open source on GitHub under the MIT license. Community contributions are welcome.\nExamples\nImagine repository automation that automatically triages incoming issues, investigates root causes of CI failures, maintains documentation, improves test coverage, monitors compliance, and even boosts team morale. With agentic workflows, you define these behaviors in simple Markdown files.\nNot sure where to begin? Check out Peli&rsquo;s Agent Factory which showcases over 50 specialized agentic workflows for different use cases.\nGetting started\nLearn more by reading the GitHub Agentic Workflows documentation . See what others are building, join the discussion and share your thoughts and feedback in the Community and in the GitHub Next Discord .\nGitHub Agentic Workflows are a collaboration among GitHub Next, Microsoft Research, and Azure Core Upstream. The implementation is open source on GitHub in the gh-aw repository .\nRead more on the GitHub Blog post introducing Agentic Workflows .\nRelated Posts\nJul.09 Release\nNew pull requests dashboard is now generally available\ncollaboration tools\nJul.09 Release\nOpenAI’s GPT-5.6 Sol, Terra, and Luna are now available in GitHub Copilot\ncopilot\nJul.09 Release\nAsk Copilot for a repository overview\ncopilot\nJul.08 Release\nEnterprise-managed OpenTelemetry export for VS Code and CLI\nclient apps\ncopilot\nenterprise management tools\n...\n+2\nJul.08 Release\nDeploy managed Copilot settings via MDM in VS Code and CLI\nclient apps\ncopilot\nenterprise management tools\n...\n+2\nJul.08 Release\nGitHub Copilot in Visual Studio Code, June 2026 releases\ncopilot\nJul.08 Release\nsetup-java v5.5.0: signature verification, Kona JDK, and Maven fixes\nactions\nJul.07 Improvement\nAdd review cycles and time to adoption phases in the usage API\naccount management\ncopilot\nenterprise management tools\n...\n+2\nJul.07 Improvement\nCodex as agent provider and agentic enhancements in JetBrains IDEs\ncopilot\nSubscribe to our developer newsletter\nDiscover tips, technical guides, and best practices in our biweekly newsletter just for devs.\nBack to top\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 86\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] GitHub Agentic Workflows are now in technical preview - GitHub Changelog Back to changelog GitHub Agentic Workflows let you automate repository tasks using AI agents that run within GitHub Actions. Write workflows in plain Markdown instead of complex YAML, and let AI handle intelligent decision-ma..... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original\n2. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Back to changelog GitHub Agentic Workflows let you automate repository tasks using AI agents that run within GitHub Actions.\n3. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Write workflows in plain Markdown instead of complex YAML, and let AI handle intelligent decision-making for issue triage, pull request reviews, CI failure analysis, and repository maintenance.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] By adding Markdown files to .\n5. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] github/workflows/ , you can describe automation goals in natural language.\n6. [case_detail / signal_card_candidate, relationship_graph_input, case / high] The gh aw CLI converts these into standard GitHub Actions workflows that execute using GitHub Copilot CLI or other coding agents.\n"
+}
