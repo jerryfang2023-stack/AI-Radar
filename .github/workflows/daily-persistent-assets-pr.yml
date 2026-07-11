@@ -13,7 +13,7 @@ on:
         required: false
         type: string
       pass_score:
-        description: "Daily Monitor diagnostic score reference. V3 Card/frontstage gates decide release; final QC is diagnostic support."
+        description: "Daily Monitor diagnostic score reference. Evidence-supply, Card/editorial and frontstage gates decide release."
         required: false
         default: "85"
         type: string
@@ -94,8 +94,15 @@ jobs:
 
           if [ "${{ github.event_name }}" = "schedule" ]; then
             if [ -f "$raw_file" ] && [ -f "$pool_file" ] && [ -f "$signal_file" ] && [ "$signal_card_count" -ge 1 ]; then
-              skip=true
-              reason="same-date V3 business-signal assets and signal cards already exist on main"
+              if node agent-workflow/tools/assert-business-signals-frontstage.mjs --date="${RUN_DATE}" >/tmp/business-frontstage-health.log 2>&1 \
+                && node agent-workflow/tools/assert-daily-production-chain.mjs --date="${RUN_DATE}" --stage=pre-commit --block-stale=true >/tmp/business-chain-health.log 2>&1; then
+                skip=true
+                reason="same-date V3 business-signal assets exist on main and current gates pass"
+              else
+                reason="same-date files exist but current gates do not pass; continue targeted production"
+                cat /tmp/business-frontstage-health.log 2>/dev/null || true
+                cat /tmp/business-chain-health.log 2>/dev/null || true
+              fi
             fi
           fi
 
@@ -140,12 +147,13 @@ jobs:
             echo "3. Confirm final active Raw / Pool post-dedupe counts and historical duplicate count."
             echo "4. Regenerate business-signal Card assets in the runner workspace."
             echo "5. Run Pool-to-Card duplicate gate."
-            echo "6. Build Business Signals frontstage data and immediately run the unified Business frontstage gate."
-            echo "7. Build operations dashboard data only after the Business frontstage gate passes."
-            echo "8. Confirm same-date downstream assets are no longer stale."
-            echo "9. Write a persistent asset manifest."
-            echo "10. Commit generated assets to an automation branch and open or update a PR."
-            echo "11. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
+            echo "6. Run Signal Card editorial quality gate."
+            echo "7. Build Business Signals frontstage data and immediately run the source-first/regression gate."
+            echo "8. Build operations dashboard data only after the Business frontstage gate passes."
+            echo "9. Confirm same-date downstream assets are no longer stale."
+            echo "10. Write a persistent asset manifest."
+            echo "11. Commit generated assets to an automation branch and open or update a PR."
+            echo "12. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
             echo
             echo "Skipped by design:"
             echo "- Trend candidate / no-decision shell."
@@ -159,11 +167,12 @@ jobs:
         run: |
           node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
           node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
-          node --check agent-workflow/tools/assert-guanlan-automation-readiness.mjs
           node --check agent-workflow/tools/assert-daily-production-chain.mjs
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/assert-business-signals-frontstage.mjs
+          node --check agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
+          node --check agent-workflow/tools/classify-business-signals-production-state.mjs
           node --check agent-workflow/tools/assert-v3-source-first-frontstage.mjs
           node --check agent-workflow/tools/frontstage-regression-gate.mjs
           node --check agent-workflow/tools/assert-community-intelligence-data.mjs
@@ -234,7 +243,7 @@ jobs:
           node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs \
             --date="${RUN_DATE}" \
             --pass-score="${{ github.event.inputs.pass_score || '85' }}" \
-            --max-cycles=3 \
+            --max-cycles=1 \
             --search-limit=200 \
             --search-path-query-limit=5 \
             --gdelt-query-limit=12 \
@@ -248,18 +257,6 @@ jobs:
             --source-refresh-timeout-ms=900000 \
             --monitor-timeout-ms=900000 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-monitor-run.log"
-
-      - name: Check monitor readiness
-        id: monitor-readiness
-        if: always() && steps.existing-assets.outputs.skip != 'true'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/assert-guanlan-automation-readiness.mjs \
-            --command=monitor \
-            --date="${RUN_DATE}" \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-monitor-readiness.log"
 
       - name: Confirm Raw / Pool post-dedupe counts
         id: persistent-assets-post-monitor
@@ -282,7 +279,7 @@ jobs:
 
       - name: Regenerate business-signal Card assets
         id: assets
-        if: steps.monitor.outcome == 'success' && steps.monitor-readiness.outcome == 'success' && steps.persistent-assets-post-monitor.outcome == 'success'
+        if: steps.monitor.outcome == 'success' && steps.persistent-assets-post-monitor.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -290,7 +287,6 @@ jobs:
           node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
             --date="${RUN_DATE}" \
             --from-raw=true \
-            --require-final-qc=false \
             --trend-candidates=false \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-assets.log"
 
@@ -305,9 +301,20 @@ jobs:
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-pool-to-card-dedupe.log"
 
+      - name: Run Signal Card editorial quality gate
+        id: card-editorial-gate
+        if: steps.pool-to-card-dedupe.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-signal-card-editorial-quality.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-card-editorial-gate.log"
+
       - name: Build Business Signals frontstage data
         id: business-frontstage-data
-        if: steps.pool-to-card-dedupe.outcome == 'success'
+        if: steps.card-editorial-gate.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -324,6 +331,7 @@ jobs:
           set -o pipefail
           node agent-workflow/tools/assert-business-signals-frontstage.mjs \
             --date="${RUN_DATE}" \
+            --skip-editorial=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-business-frontstage-gate.log"
 
       - name: Sync operations data after frontstage gates pass
@@ -385,10 +393,10 @@ jobs:
           - generated_at: $(date -Is)
           - workflow_mode: business_signals_pr
           - monitor: ${{ steps.monitor.outcome }}
-          - monitor_readiness: ${{ steps.monitor-readiness.outcome }}
           - raw_pool_gate: ${{ steps.persistent-assets-post-monitor.outcome }}
           - asset_generation: ${{ steps.assets.outcome }}
           - pool_to_card_dedupe_gate: ${{ steps.pool-to-card-dedupe.outcome }}
+          - card_editorial_gate: ${{ steps.card-editorial-gate.outcome }}
           - business_frontstage_data: ${{ steps.business-frontstage-data.outcome }}
           - business_frontstage_gate: ${{ steps.business-frontstage-gate.outcome }}
           - operations_data_sync: ${{ steps.operations-data.outcome }}
@@ -413,7 +421,7 @@ jobs:
           Raw / Pool must be committed once monitor and post-monitor gates pass.
           Card assets must be committed once asset generation runs.
           Business frontstage data is built and gated before operations dashboard data is generated.
-          Site data must be committed only when dedupe, Business frontstage gate, operations data sync and pre-commit gates pass.
+          Site data must be committed only when dedupe, Card editorial quality, Business frontstage gate, operations data sync and pre-commit gates pass.
           First-line viewpoints data is produced by the independent first-line workflow.
           EOF
 
@@ -424,10 +432,10 @@ jobs:
             "workflow_mode": "business_signals_pr",
             "outcomes": {
               "monitor": "${{ steps.monitor.outcome }}",
-              "monitor_readiness": "${{ steps.monitor-readiness.outcome }}",
               "raw_pool_gate": "${{ steps.persistent-assets-post-monitor.outcome }}",
               "asset_generation": "${{ steps.assets.outcome }}",
               "pool_to_card_dedupe_gate": "${{ steps.pool-to-card-dedupe.outcome }}",
+              "card_editorial_gate": "${{ steps.card-editorial-gate.outcome }}",
               "business_frontstage_data": "${{ steps.business-frontstage-data.outcome }}",
               "business_frontstage_gate": "${{ steps.business-frontstage-gate.outcome }}",
               "operations_data_sync": "${{ steps.operations-data.outcome }}",
@@ -665,13 +673,21 @@ jobs:
 
           if grep -Eqi "auto-merge.*disabled|not enabled for this repository|GraphQL:.*auto.?merge" auto-merge-error.log; then
             echo "Repository auto-merge is not available; attempting immediate merge after gates passed."
-            gh pr merge "$pr_number" \
+            if gh pr merge "$pr_number" \
               --squash \
               --delete-branch \
               --subject "Persist business signals for ${RUN_DATE}" \
-              --body "$merge_body"
-            echo "status=merged" >> "$GITHUB_OUTPUT"
-            exit 0
+              --body "$merge_body" 2>immediate-merge-error.log; then
+              echo "status=merged" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            cat immediate-merge-error.log >&2
+            if grep -Eqi "merge conflicts|not mergeable|mergePullRequest" immediate-merge-error.log; then
+              echo "status=publication_waiting" >> "$GITHUB_OUTPUT"
+              echo "Production and quality gates passed; PR #${pr_number} is waiting for publication conflict repair." >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+            exit 1
           fi
 
           echo "status=failed" >> "$GITHUB_OUTPUT"
@@ -681,75 +697,21 @@ jobs:
         if: always()
         shell: bash
         run: |
-          fail=0
-
-          if [ "${{ steps.existing-assets.outputs.skip }}" = "true" ]; then
-            echo "Business-signal chain skipped: ${{ steps.existing-assets.outputs.reason }}"
-            echo "Business Signals scheduled PR run passed without changes because same-date assets already exist on main."
-            exit 0
-          fi
-
-          require_success() {
-            local label="$1"
-            local outcome="$2"
-            if [ "$outcome" != "success" ]; then
-              echo "${label} did not pass: ${outcome}" >&2
-              fail=1
-            fi
-          }
-
-          business_fail=0
-          require_business_success() {
-            local label="$1"
-            local outcome="$2"
-            if [ "$outcome" != "success" ]; then
-              echo "${label} did not pass: ${outcome}" >&2
-              business_fail=1
-            fi
-          }
-
-          if [ "${{ steps.existing-assets.outputs.skip }}" != "true" ]; then
-            require_business_success "Daily Monitor with QC" "${{ steps.monitor.outcome }}"
-            require_business_success "Monitor readiness" "${{ steps.monitor-readiness.outcome }}"
-            require_business_success "Raw / Pool post-dedupe gate" "${{ steps.persistent-assets-post-monitor.outcome }}"
-            require_business_success "Business-signal Card regeneration" "${{ steps.assets.outcome }}"
-            require_business_success "Pool-to-Card duplicate gate" "${{ steps.pool-to-card-dedupe.outcome }}"
-          fi
-
-          if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
-            require_business_success "Business frontstage data build" "${{ steps.business-frontstage-data.outcome }}"
-            require_business_success "Unified Business frontstage gate" "${{ steps.business-frontstage-gate.outcome }}"
-            require_business_success "Operations data sync" "${{ steps.operations-data.outcome }}"
-            require_business_success "Site freshness gate" "${{ steps.pre-commit-gate.outcome }}"
-          else
-            business_fail=1
-            echo "Business-signal frontstage data was not fully persisted." >&2
-          fi
-          require_success "Commit business signals" "${{ steps.commit.outcome }}"
-
-          if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
-            require_success "Open or update PR" "${{ steps.pr.outcome }}"
-            if [ "${{ steps.pr.outputs.status }}" = "manual_required" ]; then
-              echo "Business Signals gates passed, and the automation branch was pushed."
-              echo "Manual PR is required because repository settings block GitHub Actions PR creation:"
-              echo "${{ steps.pr.outputs.manual_url }}"
-              # Auto-merge is expected to be skipped when repo settings block it
-            else
-              require_success "Auto-merge PR" "${{ steps.auto-merge.outcome }}"
-            fi
-          fi
-
-          if [ "${{ steps.existing-assets.outputs.skip }}" != "true" ] && [ "${{ steps.pre-commit-gate.outcome }}" != "success" ]; then
-            echo "Business-signal frontstage data was not persisted because one or more business-signal gates did not fully pass." >&2
-          fi
-
-          if [ "$business_fail" -ne 0 ]; then
-            echo "Business-signal chain did not fully pass in this run." >&2
-          fi
-
-          if [ "$fail" -ne 0 ]; then
-            echo "Business Signals scheduled PR run did not pass. Inspect the PR branch and uploaded artifacts. Nothing was pushed directly to main or deployed from the automation branch." >&2
-            exit 1
-          fi
-
-          echo "Business Signals scheduled PR run passed. The PR was merged or auto-merge was enabled; GitHub Pages will deploy after main updates."
+          node agent-workflow/tools/classify-business-signals-production-state.mjs \
+            --skip="${{ steps.existing-assets.outputs.skip }}" \
+            --skipReason="${{ steps.existing-assets.outputs.reason }}" \
+            --monitor="${{ steps.monitor.outcome }}" \
+            --evidenceGate="${{ steps.persistent-assets-post-monitor.outcome }}" \
+            --cards="${{ steps.assets.outcome }}" \
+            --dedupe="${{ steps.pool-to-card-dedupe.outcome }}" \
+            --cardEditorial="${{ steps.card-editorial-gate.outcome }}" \
+            --frontstageData="${{ steps.business-frontstage-data.outcome }}" \
+            --frontstageGate="${{ steps.business-frontstage-gate.outcome }}" \
+            --operations="${{ steps.operations-data.outcome }}" \
+            --freshness="${{ steps.pre-commit-gate.outcome }}" \
+            --commit="${{ steps.commit.outcome }}" \
+            --changed="${{ steps.commit.outputs.changed }}" \
+            --pr="${{ steps.pr.outcome }}" \
+            --prStatus="${{ steps.pr.outputs.status }}" \
+            --merge="${{ steps.auto-merge.outcome }}" \
+            --mergeStatus="${{ steps.auto-merge.outputs.status }}"

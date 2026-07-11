@@ -1,98 +1,97 @@
 ---
 name: guanlan-daily-monitor
-description: Use when running, repairing, or updating the WaveSight AI current SITE-V3.4.5 / BSIG-V2.1.4-raw-card-rule-cleanout daily monitor source-capture layer for the Business Signals lane. It collects Raw candidates, captures original source evidence, routes Pool evidence, writes monitor logs, and hands off to monitor quality gates. It does not generate Cards, write frontstage copy, run First-Line Viewpoints, run Community Intelligence, or produce retired daily observation / brief / trend-report outputs.
+description: Use when running, repairing, or updating the WaveSight AI current SITE-V3.4.5 daily Business Signals source-capture layer. It collects peer source artifacts once, normalizes Raw, preserves Pool audit evidence, writes monitor diagnostics, and hands off to the evidence-supply gate. It does not generate Cards or other columns.
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.1.0"
     lane: "Business Signals"
     status: "current sub-skill"
     order: 40
-    responsibility: "Run and repair the narrow Business Signals Raw / Pool monitoring chain."
+    responsibility: "Run the narrow Business Signals Raw / Pool source-capture stage once per production attempt."
     upstream: "external monitoring sources"
-    downstream: "Raw / Pool outputs and daily reports"
-    gates: "source capture, pool thresholds, quality gating"
-    recent_learning: "Keep workflow, dry-run, and manual monitor parameters aligned with current Raw / Pool diagnostic thresholds and raw-to-card supply checks; cardable supply gaps usually need better source routing, not more HN."
+    downstream: "Raw / Pool outputs and evidence-supply report"
+    gates: "source capture, evidence integrity, minimum evidence supply"
+    recent_learning: "Raw, channel and importance targets are diagnostics. Do not recollect all sources or pad Raw after the minimum evidence supply is healthy."
     mirrored_in_skill_store: true
     memory_required: false
 ---
 
 # Guanlan Daily Monitor
 
-This skill is the lower-level source-capture route for the Business Signals lane. The lane owner is `guanlan-business-signals-monitor`; this skill only handles Raw / Pool monitoring work.
+This skill owns only Business Signals source capture and Raw / Pool persistence. The lane owner is `guanlan-business-signals-monitor`.
 
 ## Required Reads
-
-Read only what is needed:
 
 1. `AGENTS.md`
 2. `context/05-daily-monitoring.md`
 3. `context/07-v3-intelligence-generation-rules.md`
 4. `context/08-v3-3-automation.md`
 5. `agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md`
-6. `agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md`
+6. `evals/daily-monitor-evals.md` when changing the monitor.
 
-For regression prevention, read `evals/daily-monitor-evals.md` when running, repairing, or updating this skill. When checking threshold or evidence-shape regressions, also read `examples/good-monitor-run.md` and `examples/bad-old-thresholds.md`.
+## Current Flow
 
-## Mission
+```text
+aihot + keyword + gdelt + rss source artifacts
+-> one unified normalize/enrich/dedupe pass
+-> at most one targeted refill when the hard evidence-supply minimum is missing
+-> Raw / Pool files and monitor diagnostics
+-> evidence-supply gate
+```
 
-Produce the Business Signals monitoring base:
-
-- at least 150 active Raw candidates unless the run is explicitly blocked;
-- at least 75 Pool items;
-- at least 60 routed Pool items;
-- at least 30 usable `core_pool` items;
-- original URLs, readable source text or fallback explanation, source snapshots / archives, hashes, extraction diagnostics, and missing-information notes;
-- monitor logs covering source distribution, failures, fallback, theme concentration, Pool routes, and evidence gaps;
-- a QC handoff for downstream Signal Card generation.
+The production wrapper runs one monitor attempt. It must not refresh every source lane and rerun the whole monitor because a diagnostic target, provider note, keyword mix, or Raw count is below target.
 
 ## Execution
 
-Run the current monitor + pre-gate loop from the project root:
-
 ```powershell
-node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=85 --max-cycles=3 --search-limit=200 --search-path-query-limit=5 --gdelt-query-limit=12 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000 --monitor-timeout-ms=900000
+node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=85 --max-cycles=1 --search-limit=200 --search-path-query-limit=5 --gdelt-query-limit=12 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000 --monitor-timeout-ms=900000
 ```
 
-Use the Asia/Shanghai date unless the user gives another date.
+`--max-cycles` is retained for command compatibility but the current policy permits one production attempt only.
 
-The script `--pass-score` is a diagnostic score reference only. It is not final downstream permission and does not override hard gates. Final permission comes from hard gates plus `guanlan-daily-monitor-qc`.
+## Targets Versus Blockers
 
-## Release Gate
+Diagnostic targets remain visible:
 
-- `guanlan-monitor-quality-gate` is a script pre-gate.
-- `guanlan-daily-monitor-qc` is the downstream release gate and must output `allow`, scoped `allow_with_degradation`, or `block`.
-- Any QC P0 blocks downstream Signal Cards, relationship graph inputs, trend candidates, and Business Signals frontstage data even when the numeric pre-gate score is high.
-- Do not ask card generators to use thin, community-only, homepage-only, builder-only, or unverified Raw / Pool material.
+- Raw 150;
+- Pool 75;
+- routed Pool 60;
+- Core evidence 30;
+- channel, keyword, importance-lane and large-company balance.
+
+They are not independent release blockers. The monitor blocks only when the configured minimum evidence supply or evidence integrity fails: missing Raw/Pool artifacts, too little Pool/routed/Core evidence to attempt Card generation, index/contaminated/blocked evidence in Core, or no usable original evidence.
+
+Provider and channel failures remain diagnostics. They become actionable supply failures only when the combined evidence supply is also below the hard minimum.
 
 ## Operating Rules
 
-- Search providers, AI HOT, HN, X, Reddit, newsletters, RSS, and aggregators are acquisition/discovery labels until original sources are captured; after capture, factual eligibility is judged from the original evidence, not the channel label.
-- Source level belongs to the captured original source. Acquisition channel `M` belongs only to discovery routes.
-- Homepage, directory, login, docs-index, product catalog, marketplace, search-result, SEO, and generic navigation pages are `index_only` unless the page itself contains a dated concrete event.
-- Historical duplicates must not count toward active Raw / Pool quantity.
-- `core_pool` requires original source link, readable body text or enough excerpt, content hash, Raw QC allow, and concrete business action.
-- Do not promote weak evidence to `core_pool` just to hit quantity targets.
-- Do not collect or stage First-Line Viewpoints or Community Intelligence outputs from this skill.
+- Resolve discovery results to original sources before factual use.
+- Preserve original URL, readable text or fallback boundary, extraction diagnostics, hashes, excerpts and missing information.
+- Keep homepage, directory, login, docs-index, catalog, marketplace, search-result, SEO and navigation pages `index_only` unless the page contains a dated concrete event.
+- Historical duplicates do not count as active supply.
+- Do not refill solely to reach Raw 150 or an old importance-lane quota.
+- Do not stage First-Line Viewpoints, Community Intelligence, Cards or frontstage data from this skill.
 
-## Output Paths
+## Failure Routing
 
-Write only monitoring outputs:
+- Collection command or evidence-supply failure: stop once, record the deficient evidence bucket, and hand off targeted repair.
+- Provider unavailable but evidence supply healthy: continue and keep a diagnostic note.
+- Card or frontstage failure: reuse Raw / Pool; do not rerun this skill.
+- PR, merge or Pages failure: route to publication repair; do not rerun this skill.
+
+## Outputs
 
 ```text
 01-SiteV2/content/01-raw/
 01-SiteV2/content/01-raw/originals/
 01-SiteV2/content/02-pool/
-agent-workflow/reports/
+agent-workflow/reports/<date>-guanlan-daily-monitor-*.md
 ```
 
 ## Verification
 
-At minimum run:
-
 ```powershell
+node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
 node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
-node --check agent-workflow/tools/guanlan-monitor-quality-gate.mjs
-node agent-workflow/tools/run-quality-gates.mjs syntax
+node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
 ```
-
-If any check cannot run, state why and whether it blocks downstream tasks.

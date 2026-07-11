@@ -1,14 +1,15 @@
-# Good Pre-Gate Block Example
+# Good Evidence-Supply Block Example
 
 ```yaml
-script_pre_gate: failed
-score: 76
-failed_thresholds:
-  - core_pool_below_floor
-  - missing_keyword_path_diversity
-  - weak_non_community_evidence
-action: rerun_with_bounded_refetch
-downstream_status: blocked_pending_qc
+evidence_supply_gate: failed
+diagnostic_score: 82
+hard_failed:
+  - routed_pool_count_min
+  - usable_core_evidence_min
+provider_diagnostics:
+  - rss_http_415
+action: repair_the_missing_original_evidence_bucket
+monitor_rerun: false
 ```
 
-Why it passes: the pre-gate blocks weak monitor output and routes repair before the Markdown QC and downstream Card chain.
+Why it passes: the report names the actual missing evidence supply, keeps provider details diagnostic, and stops for targeted repair instead of starting another full monitor cycle.

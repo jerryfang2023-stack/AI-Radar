@@ -1,7 +1,7 @@
 # Current Quality Gates
 
 Status: current
-Updated: 2026-07-02
+Updated: 2026-07-11
 
 This governance note lists active SITE-V3.4.0 checks only. Retired V1/V2 daily observation, business brief, publiccopy, cardcopy, writer-style, V2 typography, V2 raw evidence, and V2 source gates are not active release gates.
 
@@ -35,15 +35,15 @@ Daily monitoring is a high-risk production flow. Read `context/06-execution-harn
 node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
 node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
 node --check agent-workflow/tools/guanlan-monitor-quality-gate.mjs
-node --check agent-workflow/tools/assert-guanlan-automation-readiness.mjs
-node agent-workflow/tools/assert-guanlan-automation-readiness.mjs --command=assets --date=YYYY-MM-DD
+node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
+node agent-workflow/tools/assert-daily-production-chain.mjs --date=YYYY-MM-DD --stage=post-monitor
 ```
 
 ## Business Signals Release Rule
 
-Raw channel diagnostics must not block release when Pool, routed Pool, Core Pool, non-large Core Pool, and Top10/Card supply are healthy. GDELT, keyword search, RSS, AI HOT, and quota-backed provider notes are peer source diagnostics, not priority lanes.
+Raw channel diagnostics must not block release when the configured minimum Pool/routed/Core evidence supply is healthy. GDELT, keyword search, RSS, AI HOT, and quota-backed provider notes are peer source diagnostics, not priority lanes or standalone hard gates.
 
-Do not rerun the full monitor chain to satisfy a Raw-only diagnostic. Repair the failing stage and publish after the smallest relevant validation passes.
+Production runs one monitor attempt and at most one targeted refill for a failed hard evidence-supply bucket. Do not rerun the full monitor chain to satisfy a Raw-only diagnostic. Repair the failing evidence, Card, frontstage, or publication stage and rerun only its validation.
 
 ## Publication Checks
 

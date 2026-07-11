@@ -97,7 +97,6 @@ Reads:
 Runs:
 
 - `agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs`.
-- `agent-workflow/tools/assert-guanlan-automation-readiness.mjs`.
 - `agent-workflow/tools/assert-daily-production-chain.mjs`.
 - `agent-workflow/tools/generate-asset-cards-from-pool.mjs`.
 
@@ -107,6 +106,8 @@ Outputs:
 - Pool candidates.
 - qualified Signal Card assets plus the active-date unified frontstage Card set.
 - production-chain reports.
+
+Current stage order: one source-capture/evidence-supply attempt -> Card generation/dedupe/editorial quality -> frontstage contract -> publication. Provider and diagnostic quantity notes do not start another full monitor attempt.
 
 Boundaries:
 

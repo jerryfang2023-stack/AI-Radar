@@ -66,7 +66,9 @@ function cardFiles() {
 }
 
 const problems = [];
-for (const file of cardFiles()) {
+const files = cardFiles();
+if (!files.length) problems.push(`no formal Signal Cards generated for ${date}`);
+for (const file of files) {
   const markdown = fs.readFileSync(file, "utf8");
   const relative = path.relative(root, file).replace(/\\/gu, "/");
   const title = scalar(markdown, "title");
@@ -111,6 +113,6 @@ for (const file of cardFiles()) {
   if (/\b(staffer maps out|employee explains?|which .{0,80} fits)\b|员工详解|适用场景/iu.test(sourceTitle)) problems.push(`${relative}: explainer is not a commercial event`);
 }
 
-const result = { ok: problems.length === 0, date, card_count: cardFiles().length, problems };
+const result = { ok: problems.length === 0, date, card_count: files.length, problems };
 console.log(JSON.stringify(result, null, 2));
 if (!result.ok) process.exit(1);

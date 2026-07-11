@@ -64,7 +64,7 @@ Raw does not make content judgments, give recommendations, or write market concl
 
 Raw quantity is for evidence coverage, not frontstage balance:
 
-- automation target / gate: keep at least 150 active Raw candidates in the daily production chain;
+- diagnostic coverage target: keep at least 150 active Raw candidates when available; do not refill solely to reach this number;
 - if search-provider quota or temporary outage prevents the Raw floor from being filled, Raw shortfall is diagnostic rather than blocking once Pool audit supply and downstream Card gates are sufficient;
 - source artifact Raw selection treats GDELT, keyword search, RSS, and AI HOT as peer discovery channels. There is no fixed priority order among them; any peer channel can satisfy Raw supply as long as it produces source-backed Raw artifacts and the downstream raw-to-card gates are healthy;
 - acquisition channel labels such as AI HOT, RSS, keyword search, GDELT, Anysearch, Tavily, or Exa must not automatically downgrade an item to `index_only` / `watchlist` or promote it to `core_pool`. Resolve the original source first; Pool / Core / Card eligibility is decided only by original-page evidence, page type, freshness, commercial importance, and formal fact-type gates;
@@ -109,7 +109,7 @@ Pool quantity and balance:
 - automation gate: keep at least 75 Pool items, with at least 60 routed Pool items as audit coverage; Card release is decided by raw-to-card cardability, not by a separate core-pool quota;
 - Pool selection must not use a fixed top-N / buffer cap after Raw has been collected. The Pool file should preserve all non-discard screened evidence, including backend `index_only` diagnostics, so high-value repairable items are not hidden by a selection ceiling.
 - required business-signal lanes must cover funding, product/service, customer/case, and vertical deployment; technical trend remains Pool / trend-candidate context and must not fill formal Signal Card quantity;
-- each required importance lane should keep at least 5 Pool candidates before downstream release;
+- each required importance lane should target at least 5 Pool candidates for coverage review; the target is not an independent release blocker;
 - large-company items may enter Pool as evidence, but the public Card set must not be dominated by repeated large-company product news;
 - when cardable supply is short, fix source supply with targeted searches for recent concrete actions. Valid refill targets include launches, releases, funding, acquisitions, partnerships, customer deployments, production rollouts, procurement, pricing, regulatory, and vertical workflow cases.
 - Refill must not use marketplace listings, directories, docs indexes, repo roots, package/model pages, generic guides, broad startup/funding lists, funding roundups, generic funding commentary, interviews, old evergreen technical posts, or search snippets as Card evidence just to satisfy counts.

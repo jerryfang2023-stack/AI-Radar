@@ -7,7 +7,8 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 ## Required Checks
 
 1. `raw_pool_counts`
-   - Pass when the active date has at least 150 active Raw candidates, at least 75 Pool items, at least 60 routed Pool items, and enough raw-to-card Card supply unless the run is explicitly marked blocked.
+   - Pass when Raw 150, Pool 75 and routed Pool 60 remain visible coverage targets, while executable release uses the configured minimum evidence supply plus generated Card/editorial/frontstage gates.
+   - Fail when a diagnostic quantity target blocks an otherwise healthy Card set or triggers weak-evidence padding.
    - Pass only when Pool generation preserves all non-discard screened Raw evidence instead of truncating to a fixed top-N / buffer cap.
 
 2. `frontstage_unified_cards`

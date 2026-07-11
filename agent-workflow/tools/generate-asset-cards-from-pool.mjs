@@ -1,7 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
 import assert from "node:assert/strict";
-import { spawnSync } from "node:child_process";
 import { inferOpportunitySignals, opportunitySignalsYaml } from "./opportunity-signals-utils.mjs";
 
 const root = process.cwd();
@@ -440,23 +439,6 @@ const candidateSpecs = {
     },
   },
 };
-
-function runReadiness() {
-  const result = spawnSync(process.execPath, [
-    "agent-workflow/tools/assert-guanlan-automation-readiness.mjs",
-    "--command=assets",
-    `--date=${date}`,
-    `--require-final-qc=${args.get("require-final-qc") || "true"}`,
-    ...(args.get("repair-allow-degraded-assets") === "true" ? ["--repair-allow-degraded-assets=true"] : []),
-    ...(args.get("manual-release-override") === "true" ? ["--manual-release-override=true"] : []),
-  ], { cwd: root, encoding: "utf8" });
-  if (result.status !== 0) {
-    process.stdout.write(result.stdout || "");
-    process.stderr.write(result.stderr || "");
-    process.exit(result.status || 2);
-  }
-  process.stdout.write(result.stdout || "");
-}
 
 function ensureDir(file) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -2901,7 +2883,6 @@ function cleanSignalCardsForDate() {
 }
 
 function main() {
-  runReadiness();
 
   const explicitSpecs = signalSpecs[date] || [];
   const candidates = candidateSpecs[date] || {};

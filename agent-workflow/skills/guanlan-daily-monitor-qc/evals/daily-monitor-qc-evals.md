@@ -1,36 +1,19 @@
 # Daily Monitor QC Evals
 
-Run these pass/fail checks when auditing a WaveSight AI current V3 daily monitor run or editing this skill.
+1. `on_demand_only`
+   - Pass when semantic QC runs only for an anomaly or explicit audit request and is not required by every publication.
 
-Do not use numeric self-scores without observable evidence. Each check must be `pass` or `fail` and cite the file, field, or report section that proves it.
+2. `no_duplicate_release_gate`
+   - Pass when the audit cites executable evidence/Card/frontstage gates instead of inventing P0 quantity rules.
 
-## Required Checks
+3. `traceability_and_integrity`
+   - Pass when original URL, full-text/snapshot/hash, excerpts, extraction quality and missing-information boundaries are checked.
 
-1. `v3_context_loaded`
-   - Pass when the audit uses `context/07-v3-intelligence-generation-rules.md` and `context/05-daily-monitoring.md` as the current rule source.
+4. `index_and_discovery_boundary`
+   - Pass when index-like pages and unresolved discovery text are not approved as facts.
 
-2. `raw_pool_quantity_gate`
-   - Pass when the report checks at least 150 active Raw candidates, at least 75 Pool items, at least 60 routed Pool items, and at least 30 usable `core_pool` items unless the run is explicitly blocked.
+5. `stage_owned_findings`
+   - Pass when every finding maps to source capture, evidence supply, Card/editorial quality, frontstage contract or publication.
 
-3. `source_label_traceability_only`
-   - Pass when every downstream-worthy item has original URL, acquisition channel, full-text status, extraction quality, content hash, and missing-information notes where applicable.
-   - Pass when `source_level` / `acquisition_source_level` are logged for traceability but are not used as hard gates, ranking boosts, ranking penalties, or automatic downgrade reasons.
-
-4. `discovery_channel_separation`
-   - Pass when AI HOT, follow-builders, HN, X, Reddit, RSS, and search aggregation text are treated as acquisition labels until the original source is captured, and post-capture eligibility is judged from original evidence rather than channel label.
-
-5. `index_page_downgrade`
-   - Pass when homepage, directory, login, docs index, product catalog, marketplace, SEO, and search-result pages are downgraded unless the page itself contains a dated concrete event.
-
-6. `large_company_concentration`
-   - Pass when the report exposes large-company concentration in usable `core_pool` and recommends repair rather than lowering frontstage caps.
-
-7. `builders_boundary`
-   - Pass when builders viewpoints are not approved as business-signal facts, relationship graph evidence, or trend-candidate evidence.
-
-8. `downstream_decision_current`
-   - Pass when the report uses only `allow`, `allow_with_degradation`, or `block` for Signal Cards, relationship graph inputs, trend candidates, and Business Signals frontstage data.
-
-## Repair Loop
-
-When a check fails, repair the earliest responsible stage: Raw capture, Pool routing, monitor log, source refetch, or QC report wording. Rerun this eval list after repair.
+6. `no_full_chain_rerun`
+   - Pass when the audit recommends the smallest targeted repair and validation.

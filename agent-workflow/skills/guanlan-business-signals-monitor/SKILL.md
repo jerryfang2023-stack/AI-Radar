@@ -3,7 +3,7 @@ name: guanlan-business-signals-monitor
 description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.5 / BSIG-V2.1.4-raw-card-rule-cleanout Business Signals lane. Covers daily Raw / Pool audit / unified frontstage Signal Cards / separate AI Hardware lens / Reports Center map inputs / trend-candidate inputs, source-first gates, raw-to-card release behavior, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for First-Line Viewpoints, Community Intelligence, direct deployment, or retired daily observation / brief / trend-report outputs.
 metadata:
   guanlan:
-    version: "1.0.5"
+    version: "1.1.0"
     lane: "Business Signals"
     status: "current lane owner"
     order: 10
@@ -11,7 +11,7 @@ metadata:
     upstream: "external source capture, daily persistent assets workflow, Hermes inbox"
     downstream: "Signal Cards, graph inputs, trend candidates, PR publication"
     gates: "monitor QC, post-monitor Raw / Pool gate, six-gate Card entry, Card generation, source-first, frontstage Card contract"
-    recent_learning: "The public Business Signals page no longer has Top10 versus candidate-pool modes. Repeated frontstage Card incidents must be split into stale assets, source-artifact retry, raw/card title-fact ingestion, publication/local-sync, and supervision-observability categories before any full rerun. Provider-caused Raw shortfall is diagnostic when Pool audit supply and Card supply are already sufficient. Blind full-chain reruns are forbidden when same-date artifacts can support a targeted repair and publication."
+    recent_learning: "Production is a single-attempt four-stage state machine: evidence supply, Card/editorial quality, frontstage contract, and publication. Provider/volume/mix diagnostics never trigger whole-chain recollection, and publication waiting is not a monitor failure."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -74,10 +74,10 @@ When repairing repeated morning failures, also read `examples/good-failure-route
 5. Classify the failure before rerunning:
    - `supervision_observability`: GitHub lookup/report visibility warning only;
    - `no_run_or_stale_assets`: no active same-date run or public activeDate is stale;
-   - `raw_volume_shortfall`: Raw count below minimum;
-   - `pool_mix_shortfall`: importance lane coverage gap;
-   - `card_supply_shortfall`: cardable Raw / Pool candidates or generated Cards below the frontstage contract;
-   - `frontstage_card_contract`: public active-date Cards missing, stale, or not sorted by importance;
+   - `evidence_supply`: Raw / Pool artifacts or minimum routed source-backed evidence are missing or corrupt;
+   - `card_generation`: eligible evidence does not produce valid formal Cards;
+   - `card_editorial_quality`: generated Cards are stale, duplicated, weakly sourced, or repeat public detail fields;
+   - `frontstage_contract`: public active-date Cards are missing, stale, or not sorted by importance;
    - `raw_card_ingestion_fields`: English/mixed/placeholder title, title-like subject, or missing raw-to-card title/fact extraction fields;
    - `publication`: PR, merge, or Pages failure after valid assets.
 6. Before any full-chain rerun, record the pre-rerun checklist: activeDate, public Card count, Raw / Pool / routed Pool counts, cardable candidate count, source-artifact freshness by source/channel, raw/Card title-translation and fact-extraction status, PR / Pages state, and local dirty / fast-forward state. If the checklist shows same-date Pool audit supply and Card supply are sufficient, do not rerun Raw just because the Raw floor is short; use the existing artifacts and repair the downstream blocker.
@@ -95,7 +95,7 @@ This is a hard requirement, not a preference.
 - If same-date Raw, Pool, Card, or frontstage artifacts already exist, reuse those artifacts for downstream repair and publication unless the failed stage proves they are corrupt or insufficient.
 - Do not regenerate Raw or rerun the full monitor when the defect belongs to Pool routing, Card eligibility, raw/Card title or fact extraction, frontstage export, publication, or sync. Repair that stage and rerun only the smallest affected generator / gate.
 - If Pool audit supply and Card supply are already sufficient, do not restart source raw collection just because one provider, peer channel, or quota-dependent source is short.
-- If `raw_to_card_supply_release=true`, GDELT / keyword / RSS / AI HOT / Anysearch source-channel failures, `unrecovered_failed_sources_max`, keyword-only floors, AI-title ratio, off-topic raw-title counts, and Raw volume shortfall are diagnostic supply-risk notes, not release blockers, unless a real Pool coverage / Card gate is also failing.
+- GDELT / keyword / RSS / AI HOT / Anysearch source-channel failures, keyword-only floors, AI-title ratio, off-topic raw-title counts, importance balance and Raw volume shortfall are diagnostic supply-risk notes, not independent release blockers. Provider failures are absent from executable hard gates and matter only when the combined minimum evidence supply also fails.
 - After a targeted repair passes the smallest relevant validation, proceed to PR / merge / Pages publication from the repaired artifacts. Do not dispatch another full-chain run to "be safe".
 - If a full-chain rerun is still necessary, first write the checklist result and the specific missing or corrupt artifact that makes artifact reuse impossible.
 

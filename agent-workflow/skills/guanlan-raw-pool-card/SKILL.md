@@ -3,7 +3,7 @@ name: guanlan-raw-pool-card
 description: Use when running, repairing, auditing, or changing WaveSight AI raw-to-card Signal Card and frontstage production. Covers daily Raw/Pool audit targets, cardability judgment, Signal Card generation, unified frontstage Card display, and site/Obsidian handoff rules.
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.0.1"
     lane: "Business Signals"
     status: "current sub-skill"
     order: 70
@@ -63,10 +63,10 @@ For self-improvement and regression prevention, read these only when relevant:
    - non-large-company cardable candidates;
    - large-company cardable candidates.
    Pool must not be capped to a fixed top-N after Raw collection; all non-discard screened evidence should remain in the Pool file for audit and downstream repair.
-4. Generate Signal Cards with the existing script. Use manual override only when the user explicitly releases a blocked run:
+4. After the evidence-supply gate passes, generate Signal Cards with the existing script:
 
 ```powershell
-node agent-workflow/tools/generate-asset-cards-from-pool.mjs --date=YYYY-MM-DD --from-raw=true --signal-target=999 --require-final-qc=false --trend-candidates=false --manual-release-override=true --debug-auto-signals=true
+node agent-workflow/tools/generate-asset-cards-from-pool.mjs --date=YYYY-MM-DD --from-raw=true --signal-target=999 --trend-candidates=false --debug-auto-signals=true
 ```
 
 5. Treat the generator's semantic gate as authoritative for formal Signal Cards. If a Raw / Pool candidate is rejected for stale source, generic list/report, index-only evidence, or user-feedback-only evidence, do not silently force it into `01-Signal-Cards`.

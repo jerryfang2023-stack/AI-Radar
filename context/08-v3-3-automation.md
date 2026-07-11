@@ -26,8 +26,8 @@ Second-stage source aggregation is the default Business Signals production path.
 
 Current monitor parameter baseline:
 
-- diagnostic score reference: `85` only as report context; hard gates and final QC decide release;
-- `--max-cycles=3`;
+- diagnostic score reference: `85` only as report context; evidence-supply, Card/editorial and frontstage gates decide release;
+- `--max-cycles=1`; production does not recollect every source lane or rerun the full monitor automatically;
 - `--search-limit=200`;
 - `--search-path-query-limit=5`;
 - `--gdelt-query-limit=12`;
@@ -42,7 +42,7 @@ Execution order:
 
 1. Resolve the Beijing date.
 2. Skip only the business-signal chain when the day's Raw / Pool / signal assets already exist on `main`.
-3. Run Daily Monitor with QC.
+3. Run one Daily Monitor attempt and the executable evidence-supply gate.
 4. Persist Raw / Pool assets.
 5. Generate Signal Card assets from all cardable Raw / Pool business signals, then publish the active-date unified frontstage Card set.
 6. Run Pool-to-Card dedupe and gates.
@@ -55,6 +55,8 @@ Execution order:
 13. Create or update the PR.
 14. Auto-merge or enable auto-merge after gates pass.
 15. Deploy through GitHub Pages after `main` updates.
+
+The four production states are `evidence_supply`, `card_quality`, `frontstage_contract`, and `publication`. A failure must be owned by exactly one state. Publication conflict or an open automation PR is `publication_waiting`; it must not dispatch another monitor run.
 
 An existing `automation/business-signals-<date>` branch must not block a scheduled rerun. The workflow should update the same branch and PR instead of skipping, because a previous delayed or partial run may have left the branch stale.
 

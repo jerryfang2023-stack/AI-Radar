@@ -318,7 +318,7 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
   if (metrics.offTopicCount > metrics.offTopicMaxHard) reasons.push("too many off-topic items");
   if (metrics.coverageGapFlag) reasons.push("Raw importance coverage gaps remain");
   if (metrics.poolCoverageGapFlag) reasons.push("Pool importance coverage gaps remain");
-  if (metrics.unrecoveredFailedSourcesCount > metrics.unrecoveredFailedSourcesMax) reasons.push("unrecovered failed source paths");
+  if (metrics.unrecoveredFailedSourcesCount) reasons.push("source-provider failures remain visible as supply diagnostics");
 
   if (!hardFailed.length) {
     return {
@@ -339,7 +339,6 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
     "Core Pool text contamination remains",
     "blocked Raw QC item remains in Core Pool",
     "degraded Raw QC item remains in Core Pool",
-    "unrecovered failed source paths",
   ]);
   const severe = reasons.some((item) => severeReasons.has(item));
   if (severe) {
@@ -464,9 +463,6 @@ export function runGuanlanMonitorQualityGate({
   const coreLargeVendorMax = Number(diagnosticTargets.core_large_vendor_count_target_max ?? hard.core_large_vendor_max ?? 10);
   const coreLargeVendorRatioMax = Number(diagnosticTargets.core_large_vendor_ratio_target_max ?? hard.core_large_vendor_ratio_max ?? 0.35);
   const coreNonLargeVendorMin = Number(hard.core_non_large_vendor_min ?? 0);
-  const unrecoveredFailedSourcesMax = Number(hard.unrecovered_failed_sources_max ?? 0);
-  const importanceCoverageMustNone = hard.importance_coverage_gaps_must_be_none ?? true;
-  const poolImportanceCoverageMustNone = hard.pool_importance_coverage_gaps_must_be_none ?? true;
   const nonCommunityPathMin = Number(keywordReq.non_community_paths_min || 2);
   const outsideCoreMin = Number(strategyReq.outside_core_exploration_min_raw || 3);
   const weekend = weekendPolicyState(config, targetDate);
@@ -558,7 +554,6 @@ export function runGuanlanMonitorQualityGate({
     { key: "core_text_contamination_max", passed: coreTextContaminationCount <= coreTextContaminationMax, value: `${coreTextContaminationCount}/${coreTextContaminationMax}` },
     { key: "core_raw_qc_block_max", passed: coreRawQcBlockCount <= coreRawQcBlockMax, value: `${coreRawQcBlockCount}/${coreRawQcBlockMax}` },
     { key: "core_raw_qc_degraded_max", passed: coreRawQcDegradedCount <= coreRawQcDegradedMax, value: `${coreRawQcDegradedCount}/${coreRawQcDegradedMax}` },
-    { key: "unrecovered_failed_sources_max", passed: unrecoveredFailedSources.length <= unrecoveredFailedSourcesMax, value: `${unrecoveredFailedSources.length}/${unrecoveredFailedSourcesMax}; total=${failedSources.length}; recovered=${recoveredFailedSources.length}` },
   ];
   const hardFailed = hardChecks.filter((check) => !check.passed);
 
@@ -653,7 +648,6 @@ export function runGuanlanMonitorQualityGate({
       failedSourcesCount: failedSources.length,
       recoveredFailedSourcesCount: recoveredFailedSources.length,
       unrecoveredFailedSourcesCount: unrecoveredFailedSources.length,
-      unrecoveredFailedSourcesMax,
     },
     hardFailed
   );
@@ -695,7 +689,7 @@ export function runGuanlanMonitorQualityGate({
     skillFeedback.push("Repair Pool importance coverage before downstream assets; each required importance type needs the configured Pool minimum.");
   }
   if (unrecoveredFailedSources.length) {
-    skillFeedback.push("Repair unrecovered failed sources before downstream use.");
+    skillFeedback.push("Keep provider failures diagnostic; repair the deficient evidence-supply bucket through any available source channel.");
   } else if (failedSources.length) {
     skillFeedback.push("Source-provider failures were recovered by fallback coverage; keep them in Hermes supply-risk review without blocking release.");
   }
@@ -755,6 +749,7 @@ export function runGuanlanMonitorQualityGate({
     `- source_provider_recovery_status: ${sourceProviderRecoveryStatus}`,
     `- recovered_failed_sources_count: ${recoveredFailedSources.length}`,
     `- unrecovered_failed_sources_count: ${unrecoveredFailedSources.length}`,
+    "- source_provider_failures_block_release: false",
     `- failed_sources: ${failedSources.length ? failedSources.join("; ") : "none"}`,
     `- evidence_gaps: ${logBullets.evidence_gaps || "unknown"}`,
     `- fallback_used: ${logBullets.fallback_used || "unknown"}`,
@@ -855,7 +850,7 @@ export function runGuanlanMonitorQualityGate({
       failed_sources_count: failedSources.length,
       recovered_failed_sources_count: recoveredFailedSources.length,
       unrecovered_failed_sources_count: unrecoveredFailedSources.length,
-      unrecovered_failed_sources_max: unrecoveredFailedSourcesMax,
+      source_provider_failures_block_release: false,
       importance_coverage_gaps: importanceCoverageValue,
       pool_importance_coverage_gaps: poolImportanceCoverageValue,
     },
