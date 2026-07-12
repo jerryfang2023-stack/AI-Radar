@@ -1675,10 +1675,21 @@ function cardabilitySemanticIssues(section) {
   if (/index_only_or_directory_page/iu.test(degradationReasons)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "degradation_reason_index_only"));
   }
-  if (/官网首页|产品目录|文档目录|README|包页|模型页|搜索结果|SEO|工具导航|目录页|首页|category page|directory|search result/iu.test(text)) {
+  if (sectionSourceIdentityIndicatesIndexOnly(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "text_indicates_index_only"));
   }
   return issues;
+}
+
+function sectionSourceIdentityIndicatesIndexOnly(section) {
+  const sourceIdentity = [
+    poolTitle(section),
+    value(section, "source_url"),
+    value(section, "source"),
+    value(section, "evidence_object_type"),
+    value(section, "degradation_reasons"),
+  ].join(" ");
+  return /官网首页|产品目录|文档目录|README|包页|模型页|搜索结果|SEO|工具导航|目录页|首页|category page|directory|search result/iu.test(sourceIdentity);
 }
 
 function signalEventClusterKey(spec, section) {
@@ -3018,6 +3029,26 @@ function runQualityRegressionFixtures() {
     "- key_excerpts: OpenAI 正在招聘一名家庭产品经理。",
   ].join("\n");
   assert.equal(isJobListingSection(chineseHiringFixture), true, "Chinese recruitment stories must remain backend-only");
+
+  const articleWithNavigationFixture = [
+    "## P-998｜Google Voice 推出企业通话新功能",
+    "- source_url: https://www.ithome.com/0/000/001.htm",
+    "- source: IT之家 RSS",
+    "- evidence_object_type: event",
+    "- key_excerpts: 正文页导航包含首页；报道主体是 Google Voice 推出企业通话新功能。",
+  ].join("\n");
+  assert.equal(
+    sectionSourceIdentityIndicatesIndexOnly(articleWithNavigationFixture),
+    false,
+    "navigation words inside article evidence must not turn a dated article into an index page",
+  );
+  const actualDirectoryFixture = [
+    "## P-997｜AI 产品目录首页",
+    "- source_url: https://example.com/products",
+    "- source: Example directory",
+    "- evidence_object_type: official_index_or_directory",
+  ].join("\n");
+  assert.equal(sectionSourceIdentityIndicatesIndexOnly(actualDirectoryFixture), true, "actual directory identity must remain blocked");
 
   for (const poolRef of ["P-001", "P-002", "P-012", "P-015", "P-026", "P-043"]) {
     assert.deepEqual(issuesFor(poolRef), [], `${poolRef} should pass the six Card-entry gates`);

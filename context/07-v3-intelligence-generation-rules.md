@@ -65,6 +65,7 @@ Raw does not make content judgments, give recommendations, or write market concl
 Raw quantity is for evidence coverage, not frontstage balance:
 
 - diagnostic coverage target: keep at least 150 active Raw candidates when available; do not refill solely to reach this number;
+- after the initial balanced fetch batch, if historical URL/content-hash dedupe leaves fewer than 150 active Raw candidates, expand in balanced batches from the same already collected source-artifact candidate pool until the target, candidate exhaustion, or the configured adaptive fetch limit. This is one capture attempt, not source-provider recollection or permission to admit weak/index evidence;
 - if search-provider quota or temporary outage prevents the Raw floor from being filled, Raw shortfall is diagnostic rather than blocking once Pool audit supply and downstream Card gates are sufficient;
 - source artifact Raw selection treats GDELT, keyword search, RSS, and AI HOT as peer discovery channels. There is no fixed priority order among them; any peer channel can satisfy Raw supply as long as it produces source-backed Raw artifacts and the downstream raw-to-card gates are healthy;
 - acquisition channel labels such as AI HOT, RSS, keyword search, GDELT, Anysearch, Tavily, or Exa must not automatically downgrade an item to `index_only` / `watchlist` or promote it to `core_pool`. Resolve the original source first; Pool / Core / Card eligibility is decided only by original-page evidence, page type, freshness, commercial importance, and formal fact-type gates;

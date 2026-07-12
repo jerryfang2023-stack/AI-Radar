@@ -43,3 +43,8 @@
 12. `raw_funding_evidence_recall`
    - Pass when strict funding confirmation reads Raw structured excerpts and evidence seeds, even if Pool trace metadata truncates a serialized excerpt.
    - Fail when a dated official funding announcement with amount, round, investors, and valuation becomes `auto_signal_spec_null` despite complete Raw evidence.
+
+13. `adaptive_post_fetch_dedupe_expansion`
+   - Pass when post-fetch URL/content-hash dedupe below the Raw coverage target causes additional balanced batches to be consumed from the same already collected source-artifact candidate pool until the target, candidate exhaustion, or adaptive fetch limit.
+   - Pass when a first batch that survives above target does not expand.
+   - Fail when the monitor always stops at the fixed initial batch, recollects providers, or pads Raw with weak/index evidence.

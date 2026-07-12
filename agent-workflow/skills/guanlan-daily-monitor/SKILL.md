@@ -3,7 +3,7 @@ name: guanlan-daily-monitor
 description: Use when running, repairing, or updating the WaveSight AI current SITE-V3.4.5 daily Business Signals source-capture layer. It collects peer source artifacts once, normalizes Raw, preserves Pool audit evidence, writes monitor diagnostics, and hands off to the evidence-supply gate. It does not generate Cards or other columns.
 metadata:
   guanlan:
-    version: "1.1.0"
+    version: "1.1.1"
     lane: "Business Signals"
     status: "current sub-skill"
     order: 40
@@ -11,7 +11,7 @@ metadata:
     upstream: "external monitoring sources"
     downstream: "Raw / Pool outputs and evidence-supply report"
     gates: "source capture, evidence integrity, minimum evidence supply"
-    recent_learning: "Raw, channel and importance targets are diagnostics. Do not recollect all sources or pad Raw after the minimum evidence supply is healthy."
+    recent_learning: "After post-fetch hash dedupe, expand adaptively within the same collected source-artifact candidate pool; do not recollect providers or pad Raw with weak evidence."
     mirrored_in_skill_store: true
     memory_required: false
 ---
@@ -33,7 +33,8 @@ This skill owns only Business Signals source capture and Raw / Pool persistence.
 
 ```text
 aihot + keyword + gdelt + rss source artifacts
--> one unified normalize/enrich/dedupe pass
+-> one unified normalize stage
+-> enrich an initial balanced batch, then expand the same candidate pool adaptively when post-fetch hash dedupe leaves Raw below target
 -> at most one targeted refill when the hard evidence-supply minimum is missing
 -> Raw / Pool files and monitor diagnostics
 -> evidence-supply gate
@@ -69,6 +70,8 @@ Provider and channel failures remain diagnostics. They become actionable supply 
 - Preserve original URL, readable text or fallback boundary, extraction diagnostics, hashes, excerpts and missing information.
 - Keep homepage, directory, login, docs-index, catalog, marketplace, search-result, SEO and navigation pages `index_only` unless the page contains a dated concrete event.
 - Historical duplicates do not count as active supply.
+- Start from the configured balanced Raw batch. If post-fetch content-hash dedupe leaves fewer than the Raw coverage target, consume additional balanced batches from the already collected source-artifact candidate pool until the target, candidate-pool exhaustion, or the adaptive fetch limit is reached.
+- Same-attempt adaptive candidate expansion is part of capture and is not provider recollection or weak-evidence Raw padding. It must not call source providers again.
 - Do not refill solely to reach Raw 150 or an old importance-lane quota.
 - Do not stage First-Line Viewpoints, Community Intelligence, Cards or frontstage data from this skill.
 

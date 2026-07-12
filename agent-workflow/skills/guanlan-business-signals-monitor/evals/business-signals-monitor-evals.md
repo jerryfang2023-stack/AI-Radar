@@ -179,7 +179,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 
 32. `single_attempt_stage_machine`
     - Pass when the production path is exactly evidence capture/gate -> Card generation/dedupe/editorial gate -> frontstage contract -> publication.
-    - Pass when the monitor runs once, Raw-volume refill is disabled, and a hard evidence-supply gap permits at most one targeted refill.
+    - Pass when the monitor runs once, provider recollection / weak-evidence Raw padding is disabled, post-fetch hash dedupe can expand only within the same collected source-artifact candidate pool, and a hard evidence-supply gap permits at most one targeted refill.
     - Pass when PR conflicts and open automation branches are classified as `publication_waiting` and cannot dispatch another full monitor run.
     - Fail when duplicate readiness gates parse the same monitor report, when Business dry run generates another column, or when publication failure is reported as monitor failure.
 

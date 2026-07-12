@@ -42,6 +42,12 @@ const monitorMetadataFixture = spawnSync(
   { cwd: root, encoding: "utf8" }
 );
 const monitorMetadataOutput = `${monitorMetadataFixture.stdout || ""}\n${monitorMetadataFixture.stderr || ""}`;
+const monitorAdaptiveRawFixture = spawnSync(
+  process.execPath,
+  [path.join(root, "agent-workflow", "tools", "run-guanlan-daily-monitor.mjs"), "--adaptive-raw-regression-fixtures=true"],
+  { cwd: root, encoding: "utf8" }
+);
+const monitorAdaptiveRawOutput = `${monitorAdaptiveRawFixture.stdout || ""}\n${monitorAdaptiveRawFixture.stderr || ""}`;
 
 if (!monitorStartupOutput.includes("Unknown --source-only=invalid")) {
   const firstFailureLine = monitorStartupOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
@@ -50,6 +56,10 @@ if (!monitorStartupOutput.includes("Unknown --source-only=invalid")) {
 if (monitorMetadataFixture.status !== 0 || !monitorMetadataOutput.includes('"fixture": "source-publication-metadata"')) {
   const firstFailureLine = monitorMetadataOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
   problems.push(`daily monitor publication-metadata fixture failed: ${firstFailureLine}`);
+}
+if (monitorAdaptiveRawFixture.status !== 0 || !monitorAdaptiveRawOutput.includes('"fixture": "adaptive-post-fetch-raw-expansion"')) {
+  const firstFailureLine = monitorAdaptiveRawOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
+  problems.push(`daily monitor adaptive Raw expansion fixture failed: ${firstFailureLine}`);
 }
 
 if (Number(policy.monitor_attempts) !== 1) problems.push("pipeline_policy.monitor_attempts must be 1");

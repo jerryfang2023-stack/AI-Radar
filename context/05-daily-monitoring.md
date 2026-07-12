@@ -115,6 +115,7 @@ Large-company items are allowed, but they cannot dominate the day.
 Current quantity gates:
 
 - daily production chain keeps 150 active Raw candidates as a coverage target, not an independent release blocker;
+- Raw capture starts from the configured balanced batch. When post-fetch historical content-hash dedupe leaves fewer than 150 active candidates, it must consume additional balanced batches from the same already collected source-artifact candidate pool until 150, candidate-pool exhaustion, or the configured adaptive fetch limit. This same-attempt expansion must not recollect providers or weaken page/evidence gates;
 - Raw shortfall caused by search-provider quota or temporary outage must not block release by itself when Pool audit supply and the downstream frontstage Card contract are sufficient; keep the shortfall visible as a diagnostic.
 - GDELT, keyword search, RSS, and AI HOT are peer source-artifact entrances for Raw. Raw selection should use balanced rotation across available peer channels, not a fixed priority order.
 - AI HOT, RSS, keyword search, GDELT, Anysearch, Tavily, Exa, or any other discovery label is not a Core Pool decision. Every candidate must be resolved to the original source, then judged by the original page's evidence quality, page type, freshness, commercial importance, and formal Card gates.

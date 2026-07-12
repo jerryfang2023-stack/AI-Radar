@@ -2,6 +2,11 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
+## 2026-07-12 Adaptive Raw Candidate Expansion
+
+- A fixed pre-fetch batch can collapse after historical content-hash dedupe on high-repeat days. Start with the balanced configured batch, then consume additional batches from the same collected source-artifact candidate pool until the active Raw target, candidate exhaustion, or an explicit adaptive limit.
+- This is single-attempt capture, not a second provider collection and not permission to weaken evidence gates. Record candidate-pool size, batches, fetched candidates, expansion count, and post-fetch duplicates in the monitor log.
+
 ## 2026-07-11 Single-Attempt Stage Ownership
 
 - Business Signals production has four owning stages: evidence supply, Card/editorial quality, frontstage contract, and publication. The monitor runs once; provider/volume/mix diagnostics cannot trigger another full collection, and a failed hard evidence bucket permits at most one targeted refill.

@@ -83,9 +83,11 @@ const rawMinTarget = Number(args.get("raw-min") || 150);
 const rawMaxTarget = Number(args.get("raw-max") || 220);
 const historicalDedupeEnabled = args.get("historical-dedupe") !== "false";
 const rawDedupeBuffer = Number(args.get("raw-dedupe-buffer") || 40);
+const adaptiveRawFetchLimit = Number(args.get("adaptive-raw-fetch-limit") || Math.max(rawMaxTarget * 2, rawMinTarget + rawDedupeBuffer));
 const dryRun = args.get("dry-run") === "true";
 const sourceOnlyMode = String(args.get("source-only") || "").trim().toLowerCase();
 const metadataFixtureMode = args.get("metadata-regression-fixtures") === "true";
+const adaptiveRawFixtureMode = args.get("adaptive-raw-regression-fixtures") === "true";
 const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
 const fetchTimeoutMs = Number(args.get("fetch-timeout-ms") || 20000);
 const snapshotTimeoutMs = Number(args.get("snapshot-timeout-ms") || 16000);
@@ -205,6 +207,11 @@ let historicalRawIndexCache = null;
 let historicalDedupePreFetchRemoved = 0;
 let historicalDedupePostFetchRemoved = 0;
 let historicalDedupeRecordsChecked = 0;
+let sameRunDedupePostFetchRemoved = 0;
+let adaptiveRawFetchBatches = 0;
+let adaptiveRawFetchedCandidates = 0;
+let adaptiveRawExpansionCandidates = 0;
+let adaptiveRawCandidatePoolCount = 0;
 const providerFallbackNotes = [];
 let anysearchDisabledForRun = false;
 let tavilyDisabledForRun = tavilyDisabledByConfig;
@@ -1750,20 +1757,41 @@ function filterHistoricalDuplicatesBeforeRaw(items = []) {
   return kept;
 }
 
-function filterHistoricalDuplicatesAfterFetch(items = []) {
-  if (!historicalDedupeEnabled) return items;
+function filterHistoricalDuplicatesAfterFetch(items = [], options = {}) {
   const kept = [];
   let removed = 0;
+  let sameRunRemoved = 0;
+  const seenUrls = options.seenUrls;
+  const seenHashes = options.seenHashes;
   for (const item of items) {
-    if (historicalDuplicateMatchFor(item, true)) {
+    const url = canonicalUrl(item.canonical_url || item.original_url || item.source_url || item.url || item.raw_original_id || "").toLowerCase();
+    const hashes = [
+      item.content_hash,
+      item.full_text_hash,
+      item.snapshot?.hash,
+      item.snapshot?.full_text_hash,
+    ].filter(Boolean).map((hash) => String(hash).toLowerCase());
+    if (historicalDedupeEnabled && historicalDuplicateMatchFor(item, true)) {
       removed += 1;
       continue;
     }
+    if ((url && seenUrls?.has(url)) || hashes.some((hash) => seenHashes?.has(hash))) {
+      sameRunRemoved += 1;
+      continue;
+    }
     kept.push(item);
+    if (url) seenUrls?.add(url);
+    for (const hash of hashes) seenHashes?.add(hash);
   }
-  historicalDedupePostFetchRemoved = removed;
-  if (removed) {
+  historicalDedupePostFetchRemoved = options.accumulate
+    ? historicalDedupePostFetchRemoved + removed
+    : removed;
+  if (removed && options.report !== false) {
     providerFallbackNotes.push(`Historical Raw dedupe removed ${removed} fetched hash duplicate candidate(s) before Raw writing.`);
+  }
+  sameRunDedupePostFetchRemoved += sameRunRemoved;
+  if (sameRunRemoved && options.report !== false) {
+    providerFallbackNotes.push(`Same-run Raw dedupe removed ${sameRunRemoved} duplicate candidate(s) before Raw writing.`);
   }
   return kept;
 }
@@ -4488,7 +4516,7 @@ async function refillPoolImportanceGaps(items, failures) {
   return current;
 }
 
-function normalize(items) {
+function normalizeCandidates(items) {
   const prepared = items
     .filter((item) => item.title || item.url)
     .filter((item) => shouldIncludeInRawCandidates(item))
@@ -4509,19 +4537,24 @@ function normalize(items) {
       };
     });
   const historicallyUnique = filterHistoricalDuplicatesBeforeRaw(prepared);
-  const normalized = dedupeSearchItems(historicallyUnique)
+  return dedupeSearchItems(historicallyUnique)
     .map((item) => ({ ...item, score: score(item) }))
     .sort((a, b) => b.score - a.score);
+}
 
-  const picked = [];
-  const pickedKeys = new Set();
+function initialRawFetchTarget(normalized = []) {
   const dailySelectedCount = normalized.filter(isAIHotDailySelected).length;
   const baseTarget = rawTargetOverride
     ? Math.min(Math.max(rawTargetOverride, dailySelectedCount), normalized.length)
     : Math.min(Math.max(rawMinTarget, dailySelectedCount), rawMaxTarget, normalized.length);
-  const target = rawTargetOverride
+  return rawTargetOverride
     ? baseTarget
     : Math.min(Math.max(baseTarget + rawDedupeBuffer, baseTarget), rawMaxTarget, normalized.length);
+}
+
+function selectNormalizedCandidates(normalized = [], target = initialRawFetchTarget(normalized)) {
+  const picked = [];
+  const pickedKeys = new Set();
 
   const pushUnique = (item) => {
     const key = item.url || `${item.title}-${item.source}`;
@@ -4564,6 +4597,108 @@ function normalize(items) {
   }
 
   return diversifyByTheme(picked.sort((a, b) => b.score - a.score));
+}
+
+function normalize(items) {
+  const normalized = normalizeCandidates(items);
+  return selectNormalizedCandidates(normalized);
+}
+
+function nextAdaptiveFetchEnd(cursor, initialTarget, batchSize, fetchLimit) {
+  if (cursor >= fetchLimit) return cursor;
+  return Math.min(fetchLimit, cursor === 0 ? initialTarget : cursor + batchSize);
+}
+
+function adaptiveCandidateOrder(normalizedCandidates = [], initialTarget = initialRawFetchTarget(normalizedCandidates)) {
+  const initialBatch = selectNormalizedCandidates(normalizedCandidates, initialTarget);
+  const initialKeys = new Set(initialBatch.map((item) => item.url || `${item.title}-${item.source}`));
+  const expansionPool = selectNormalizedCandidates(normalizedCandidates, normalizedCandidates.length)
+    .filter((item) => !initialKeys.has(item.url || `${item.title}-${item.source}`));
+  return [...initialBatch, ...expansionPool];
+}
+
+async function enrichSnapshotsAdaptively(normalizedCandidates = []) {
+  const initialTarget = initialRawFetchTarget(normalizedCandidates);
+  const ordered = adaptiveCandidateOrder(normalizedCandidates, initialTarget);
+  const batchSize = Math.max(20, rawDedupeBuffer);
+  const fetchLimit = Math.min(ordered.length, Math.max(initialTarget, adaptiveRawFetchLimit));
+  const kept = [];
+  const seenUrls = new Set();
+  const seenHashes = new Set();
+  let cursor = 0;
+  const removedBefore = historicalDedupePostFetchRemoved;
+  adaptiveRawCandidatePoolCount = ordered.length;
+
+  while (cursor < fetchLimit) {
+    const end = nextAdaptiveFetchEnd(cursor, initialTarget, batchSize, fetchLimit);
+    if (end <= cursor) break;
+    const batch = ordered.slice(cursor, end);
+    const enriched = await enrichSnapshots(batch);
+    const unique = filterHistoricalDuplicatesAfterFetch(enriched, {
+      accumulate: true,
+      report: false,
+      seenUrls,
+      seenHashes,
+    });
+    kept.push(...unique);
+    adaptiveRawFetchBatches += 1;
+    adaptiveRawFetchedCandidates += batch.length;
+    if (cursor > 0) adaptiveRawExpansionCandidates += batch.length;
+    cursor = end;
+    if (kept.length >= rawMinTarget) break;
+  }
+
+  const removed = historicalDedupePostFetchRemoved - removedBefore;
+  if (removed) {
+    providerFallbackNotes.push(`Historical Raw dedupe removed ${removed} fetched hash duplicate candidate(s) before Raw writing.`);
+  }
+  if (sameRunDedupePostFetchRemoved) {
+    providerFallbackNotes.push(`Same-run Raw dedupe removed ${sameRunDedupePostFetchRemoved} duplicate candidate(s) before Raw writing.`);
+  }
+  if (adaptiveRawExpansionCandidates) {
+    providerFallbackNotes.push(`Adaptive Raw fetch expanded by ${adaptiveRawExpansionCandidates} candidate(s) across ${adaptiveRawFetchBatches} batch(es) after post-fetch dedupe left active Raw below ${rawMinTarget}.`);
+  }
+  if (kept.length < rawMinTarget) {
+    const stopReason = cursor >= ordered.length ? "candidate pool exhausted" : `adaptive fetch limit ${fetchLimit} reached`;
+    providerFallbackNotes.push(`Adaptive Raw fetch stopped with ${kept.length}/${rawMinTarget} active candidate(s): ${stopReason}.`);
+  }
+  return prioritizeAfterFetch(kept).slice(0, rawMaxTarget);
+}
+
+async function runAdaptiveRawRegressionFixtures() {
+  const simulate = (survivors) => {
+    const ends = [];
+    let cursor = 0;
+    let unique = 0;
+    for (const survivorCount of survivors) {
+      if (unique >= 150 || cursor >= 720) break;
+      cursor = nextAdaptiveFetchEnd(cursor, 290, 140, 720);
+      ends.push(cursor);
+      unique += survivorCount;
+    }
+    return { ends, unique };
+  };
+  const expanded = simulate([62, 80, 30]);
+  const noExpansion = simulate([160, 80]);
+  const candidates = Array.from({ length: 16 }, (_, index) => ({
+    title: `fixture ${index}`,
+    url: `https://example.com/${index}`,
+    source: `source ${index}`,
+    acquisition_channel: ["aihot", "keyword-search", "gdelt", "rss"][index % 4],
+    score: 100 - index,
+  }));
+  const originalInitialBatch = selectNormalizedCandidates(candidates, 8).map((item) => item.url);
+  const adaptiveInitialBatch = adaptiveCandidateOrder(candidates, 8).slice(0, 8).map((item) => item.url);
+  if (JSON.stringify(expanded.ends) !== JSON.stringify([290, 430, 570]) || expanded.unique !== 172) {
+    throw new Error(`adaptive Raw expansion fixture failed: ${JSON.stringify(expanded)}`);
+  }
+  if (JSON.stringify(noExpansion.ends) !== JSON.stringify([290]) || noExpansion.unique !== 160) {
+    throw new Error(`adaptive Raw no-expansion fixture failed: ${JSON.stringify(noExpansion)}`);
+  }
+  if (JSON.stringify(adaptiveInitialBatch) !== JSON.stringify(originalInitialBatch)) {
+    throw new Error(`adaptive Raw changed the configured initial batch: ${JSON.stringify({ originalInitialBatch, adaptiveInitialBatch })}`);
+  }
+  console.log(JSON.stringify({ ok: true, fixture: "adaptive-post-fetch-raw-expansion" }, null, 2));
 }
 
 function isXSourceItem(item = {}) {
@@ -5172,7 +5307,13 @@ async function makeRawFiles(items, failures, runMeta = {}) {
     `- historical_raw_records_checked: ${runMeta.historical_raw_records_checked ?? 0}`,
     `- historical_duplicates_removed_before_fetch: ${runMeta.historical_duplicates_removed_before_fetch ?? 0}`,
     `- historical_duplicates_removed_after_fetch: ${runMeta.historical_duplicates_removed_after_fetch ?? 0}`,
+    `- same_run_duplicates_removed_after_fetch: ${runMeta.same_run_duplicates_removed_after_fetch ?? 0}`,
     `- raw_dedupe_buffer: ${rawDedupeBuffer}`,
+    `- adaptive_raw_candidate_pool_count: ${runMeta.adaptive_raw_candidate_pool_count ?? 0}`,
+    `- adaptive_raw_fetch_limit: ${adaptiveRawFetchLimit}`,
+    `- adaptive_raw_fetch_batches: ${runMeta.adaptive_raw_fetch_batches ?? 0}`,
+    `- adaptive_raw_fetched_candidates: ${runMeta.adaptive_raw_fetched_candidates ?? 0}`,
+    `- adaptive_raw_expansion_candidates: ${runMeta.adaptive_raw_expansion_candidates ?? 0}`,
     `- aihot_count: ${items.filter((item) => item.acquisition_channel === "aihot").length}`,
     `- keyword_search_count: ${items.filter((item) => item.acquisition_channel === "keyword-search").length}`,
     `- keyword_search_non_community_count: ${keywordNonCommunity}`,
@@ -5280,7 +5421,8 @@ async function main() {
   let gdelt = { items: [], failures: [] };
   let rss = { items: [], failures: [], rss_source_count: 0 };
   let searchActivated = false;
-  let normalizedItems = normalize(primaryItems);
+  let normalizedCandidatePool = normalizeCandidates(primaryItems);
+  let normalizedItems = selectNormalizedCandidates(normalizedCandidatePool);
   let coverageGaps = importanceCoverageGaps(normalizedItems);
   const shouldRunExternalSearch =
     searchTarget > 0
@@ -5295,13 +5437,14 @@ async function main() {
       collectGDELT(),
       collectRSSFeeds(),
     ]);
-    normalizedItems = normalize([...primaryItems, ...keywordSearch.items, ...hn.items, ...gdelt.items, ...rss.items]);
+    normalizedCandidatePool = normalizeCandidates([...primaryItems, ...keywordSearch.items, ...hn.items, ...gdelt.items, ...rss.items]);
+    normalizedItems = selectNormalizedCandidates(normalizedCandidatePool);
     coverageGaps = importanceCoverageGaps(normalizedItems);
   }
   const failures = [...sourceArtifacts.failures, ...aihot.failures, ...keywordSearch.failures, ...hn.failures, ...gdelt.failures, ...rss.failures];
   let items = dryRun
     ? normalizedItems
-    : prioritizeAfterFetch(filterHistoricalDuplicatesAfterFetch(await enrichSnapshots(normalizedItems)));
+    : await enrichSnapshotsAdaptively(normalizedCandidatePool);
   items = await refillPoolImportanceGaps(items, failures);
   coverageGaps = importanceCoverageGaps(items);
 
@@ -5320,6 +5463,11 @@ async function main() {
       historical_raw_records_checked: historicalDedupeRecordsChecked,
       historical_duplicates_removed_before_fetch: historicalDedupePreFetchRemoved,
       historical_duplicates_removed_after_fetch: historicalDedupePostFetchRemoved,
+      same_run_duplicates_removed_after_fetch: sameRunDedupePostFetchRemoved,
+      adaptive_raw_candidate_pool_count: adaptiveRawCandidatePoolCount,
+      adaptive_raw_fetch_batches: adaptiveRawFetchBatches,
+      adaptive_raw_fetched_candidates: adaptiveRawFetchedCandidates,
+      adaptive_raw_expansion_candidates: adaptiveRawExpansionCandidates,
       source_artifacts_used: useSourceArtifacts,
       source_artifact_files: sourceArtifacts.files,
       source_artifact_runs: sourceArtifacts.sourceRuns,
@@ -5359,6 +5507,12 @@ async function main() {
         historical_raw_records_checked: historicalDedupeRecordsChecked,
         historical_duplicates_removed_before_fetch: historicalDedupePreFetchRemoved,
         historical_duplicates_removed_after_fetch: historicalDedupePostFetchRemoved,
+        same_run_duplicates_removed_after_fetch: sameRunDedupePostFetchRemoved,
+        adaptive_raw_candidate_pool_count: adaptiveRawCandidatePoolCount,
+        adaptive_raw_fetch_limit: adaptiveRawFetchLimit,
+        adaptive_raw_fetch_batches: adaptiveRawFetchBatches,
+        adaptive_raw_fetched_candidates: adaptiveRawFetchedCandidates,
+        adaptive_raw_expansion_candidates: adaptiveRawExpansionCandidates,
         importance_coverage_gaps: coverageGaps,
         aihot_count: items.filter((item) => item.acquisition_channel === "aihot").length,
         keyword_search_count: items.filter((item) => item.acquisition_channel === "keyword-search").length,
@@ -5398,7 +5552,13 @@ async function main() {
   );
 }
 
-(metadataFixtureMode ? runMetadataRegressionFixtures() : sourceOnlyMode ? runSourceOnly() : main()).catch((error) => {
+(adaptiveRawFixtureMode
+  ? runAdaptiveRawRegressionFixtures()
+  : metadataFixtureMode
+    ? runMetadataRegressionFixtures()
+    : sourceOnlyMode
+      ? runSourceOnly()
+      : main()).catch((error) => {
   console.error(error);
   process.exit(1);
 });
