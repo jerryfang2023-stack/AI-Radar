@@ -1,0 +1,263 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-036",
+  "title": "How to Update a GitHub Profile README Automatically",
+  "title_zh": "如何自动更新GitHub配置文件README",
+  "title_translation_status": "translated",
+  "title_translation_method": "mymemory_title_translation",
+  "original_url": "https://eugeneyan.com//writing/how-to-update-github-profile-readme-automatically/",
+  "canonical_url": "https://eugeneyan.com/writing/how-to-update-github-profile-readme-automatically",
+  "source_name": "Eugene Yan's Blog",
+  "source_type": "builder",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "supporting_article",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2020-07-11T00:00:00.000Z",
+  "collected_at": "2026-07-12T09:55:30.088Z",
+  "language": "mixed",
+  "full_text": "How to Update a GitHub Profile README Automatically\neugeneyan\nStart Here\nWriting\nSpeaking\nPrototyping\nAbout\nHow to Update a GitHub Profile README Automatically\nengineering\npython\ntil\n· 3 min read\nToday I learnt how to set up my GitHub profile README to automatically update with the latest writing from this site. It’s now set to run every day at midnight.\nIt’s nothing too complex. Simon Willison shared how to do this with GitHub Actions and it seemed like a fun afternoon project (and it was). And I thought an hour or two of work would save hours of future manual updates.\nFirst, Pull From Your Site’s Feed\nThis site is set up with an Atom feed that RSS readers (e.g., Feedly ) can aggregate with. Getting the latest writing with Python’s feedparser is simple. Based on how your dates are formatted, you might need to update the regular expression.\nimport feedparser\ndef fetch_writing ():\nentries = feedparser . parse ( 'https://eugeneyan.com/feed' )[ 'entries' ][: 5 ]\nreturn [\n'title' : entry [ 'title' ],\n'url' : entry [ 'link' ]. split ( '#' )[ 0 ],\n'published' : re . findall ( r '(.*?)\\s00:00' , entry [ 'published' ])[ 0 ]\nfor entry in entries\nNext, Update The README Sections\nMy README has a section for “📝 Recent Writing” which I update with the results from fetch_writing() . This is done by searching for comment blocks for “writing” (e.g., <!-- writing starts --> ) and replacing everything between them.\nimport re\ndef replace_chunk ( content , marker , chunk , inline = False ):\nr = re . compile (\nr '<!\\-\\- {} starts \\-\\->.*<!\\-\\- {} ends \\-\\->' . format ( marker , marker ),\nre . DOTALL ,\nif not inline :\nchunk = ' \\n {} \\n ' . format ( chunk )\nchunk = '<!-- {} starts -->{}<!-- {} ends -->' . format ( marker , chunk , marker )\nreturn r . sub ( chunk , content )\nSo far, running both methods will update the README file.\nFinally, Set Up GitHub Actions\nWe’ll want to set up GitHub Actions to run this workflow automatically. Currently, it runs with each push and at midnight daily. There’s also the ability for one-click build (which is pretty cool).\nname : Build README\non :\npush :\nworkflow_dispatch :\nschedule :\n- cron : ' 0 0 * * *'\njobs :\nbuild :\nruns-on : ubuntu-latest\nsteps :\n- name : Check out repo\nuses : actions/checkout@v2\n- name : Set up Python\nuses : actions/setup-python@v2\nwith :\npython-version : 3.8\narchitecture : x64\n- name : Install dependencies\nrun : python -m pip install -r requirements.txt\n- name : Update README\nrun : |-\npython build_readme.py\ncat README.md\n- name : Commit and push if changed\nrun : |-\ngit diff\ngit config --global user.email \" [email protected] \"\ngit config --global user.name \"README-bot\"\ngit add -A\ngit commit -m \"Updated content\" || exit 0\ngit push\nChill and Let Automation Take Over\nNow that it’s set up, no more manual updating of the README with each new post. Here’s how it looks like now, without this current post.\nMy profile now; if it's the same when you visit it, my effort in this post failed.\nBy the time you visit my GitHub profile , the “📝 Recent Writing” section will be updated to include this post, or (if you’re visiting it more than a month from now) be updated with a new set of recent posts.\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Jul 2020). How to Update a GitHub Profile README Automatically. eugeneyan.com.\nhttps://eugeneyan.com/writing/how-to-update-github-profile-readme-automatically/.\nor\n@article{yan2020github,\ntitle = {How to Update a GitHub Profile README Automatically},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2020},\nmonth = {Jul},\nurl = {https://eugeneyan.com/writing/how-to-update-github-profile-readme-automatically/}\nShare on:\nBrowse related tags: [\nengineering\npython\ntil\nor Search\n&laquo; The 85% Rule: When Giving It Your 100% Gets You Less than 85%\nWhat I Do During A Data Science Project To Deliver Success &raquo;\nJoin 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.",
+  "clean_text": "How to Update a GitHub Profile README Automatically\neugeneyan\nStart Here\nWriting\nSpeaking\nPrototyping\nAbout\nHow to Update a GitHub Profile README Automatically\nengineering\npython\ntil\n· 3 min read\nToday I learnt how to set up my GitHub profile README to automatically update with the latest writing from this site. It’s now set to run every day at midnight.\nIt’s nothing too complex. Simon Willison shared how to do this with GitHub Actions and it seemed like a fun afternoon project (and it was). And I thought an hour or two of work would save hours of future manual updates.\nFirst, Pull From Your Site’s Feed\nThis site is set up with an Atom feed that RSS readers (e.g., Feedly ) can aggregate with. Getting the latest writing with Python’s feedparser is simple. Based on how your dates are formatted, you might need to update the regular expression.\nimport feedparser\ndef fetch_writing ():\nentries = feedparser . parse ( 'https://eugeneyan.com/feed' )[ 'entries' ][: 5 ]\nreturn [\n'title' : entry [ 'title' ],\n'url' : entry [ 'link' ]. split ( '#' )[ 0 ],\n'published' : re . findall ( r '(.*?)\\s00:00' , entry [ 'published' ])[ 0 ]\nfor entry in entries\nNext, Update The README Sections\nMy README has a section for “📝 Recent Writing” which I update with the results from fetch_writing() . This is done by searching for comment blocks for “writing” (e.g., <!-- writing starts --> ) and replacing everything between them.\nimport re\ndef replace_chunk ( content , marker , chunk , inline = False ):\nr = re . compile (\nr '<!\\-\\- {} starts \\-\\->.*<!\\-\\- {} ends \\-\\->' . format ( marker , marker ),\nre . DOTALL ,\nif not inline :\nchunk = ' \\n {} \\n ' . format ( chunk )\nchunk = '<!-- {} starts -->{}<!-- {} ends -->' . format ( marker , chunk , marker )\nreturn r . sub ( chunk , content )\nSo far, running both methods will update the README file.\nFinally, Set Up GitHub Actions\nWe’ll want to set up GitHub Actions to run this workflow automatically. Currently, it runs with each push and at midnight daily. There’s also the ability for one-click build (which is pretty cool).\nname : Build README\non :\npush :\nworkflow_dispatch :\nschedule :\n- cron : ' 0 0 * * *'\njobs :\nbuild :\nruns-on : ubuntu-latest\nsteps :\n- name : Check out repo\nuses : actions/checkout@v2\n- name : Set up Python\nuses : actions/setup-python@v2\nwith :\npython-version : 3.8\narchitecture : x64\n- name : Install dependencies\nrun : python -m pip install -r requirements.txt\n- name : Update README\nrun : |-\npython build_readme.py\ncat README.md\n- name : Commit and push if changed\nrun : |-\ngit diff\ngit config --global user.email \" [email protected] \"\ngit config --global user.name \"README-bot\"\ngit add -A\ngit commit -m \"Updated content\" || exit 0\ngit push\nChill and Let Automation Take Over\nNow that it’s set up, no more manual updating of the README with each new post. Here’s how it looks like now, without this current post.\nMy profile now; if it's the same when you visit it, my effort in this post failed.\nBy the time you visit my GitHub profile , the “📝 Recent Writing” section will be updated to include this post, or (if you’re visiting it more than a month from now) be updated with a new set of recent posts.\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Jul 2020). How to Update a GitHub Profile README Automatically. eugeneyan.com.\nhttps://eugeneyan.com/writing/how-to-update-github-profile-readme-automatically/.\nor\n@article{yan2020github,\ntitle = {How to Update a GitHub Profile README Automatically},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2020},\nmonth = {Jul},\nurl = {https://eugeneyan.com/writing/how-to-update-github-profile-readme-automatically/}\nShare on:\nBrowse related tags: [\nengineering\npython\ntil\nor Search\n&laquo; The 85% Rule: When Giving It Your 100% Gets You Less than 85%\nWhat I Do During A Data Science Project To Deliver Success &raquo;\nJoin 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-036-how-to-update-a-github-profile-readme-automatically.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-036-how-to-update-a-github-profile-readme-automatically.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 83,
+  "extractor_diagnostics": {
+    "readability_score": 83,
+    "text_length": 3958,
+    "paragraph_count": 53,
+    "sentence_count": 33,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0184,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 3958,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "1d44de2756e07108",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "3b0e3e435cc15d30",
+  "content_hash": "1d44de2756e07108",
+  "full_text_hash": "1d44de2756e07108",
+  "semantic_hash": "40923fec6264cdfa",
+  "duplicate_of": "",
+  "first_seen_at": "2020-07-11T00:00:00.000Z",
+  "last_seen_at": "2026-07-12T09:55:30.088Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "I wanted to add my recent writing to my GitHub Profile README but was too lazy to do manual updates.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "How to Update a GitHub Profile README Automatically eugeneyan Start Here Writing Speaking Prototyping About How to Update a GitHub Profile README Automatically engineering python til · 3 min read Today I learnt how to set up my GitHub profile README to automatically update with the latest writing from this site.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It’s now set to run every day at midnight.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It’s nothing too complex.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Simon Willison shared how to do this with GitHub Actions and it seemed like a fun afternoon project (and it was).",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "And I thought an hour or two of work would save hours of future manual updates.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-12T09:55:30.088Z",
+  "business_elements": {
+    "companies": [
+      "Eugene Yan's Blog",
+      "GitHub"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "3 m",
+      "5",
+      "0",
+      "00",
+      "2",
+      "3.8",
+      "64",
+      "2020"
+    ],
+    "quotes": [
+      "📝 Recent Writing",
+      " [email protected] ",
+      "README-bot",
+      "Updated content",
+      "📝 Recent Writing"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "I wanted to add my recent writing to my GitHub Profile README but was too lazy to do manual updates.",
+      "How to Update a GitHub Profile README Automatically eugeneyan Start Here Writing Speaking Prototyping About How to Update a GitHub Profile README Automatically engineering python til · 3 min read Today I learnt how to set up my GitHub profile README to automatically update with the latest writing from this site.",
+      "It’s now set to run every day at midnight."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "supporting commercial context only",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# How to Update a GitHub Profile README Automatically\n\n- raw_id: R-036\n- title_zh: 如何自动更新GitHub配置文件README\n- title_translation_status: translated\n- title_translation_method: mymemory_title_translation\n- original_url: https://eugeneyan.com//writing/how-to-update-github-profile-readme-automatically/\n- source_name: Eugene Yan's Blog\n- collected_at: 2026-07-12T09:55:30.088Z\n\n## clean_text\n\nHow to Update a GitHub Profile README Automatically\neugeneyan\nStart Here\nWriting\nSpeaking\nPrototyping\nAbout\nHow to Update a GitHub Profile README Automatically\nengineering\npython\ntil\n· 3 min read\nToday I learnt how to set up my GitHub profile README to automatically update with the latest writing from this site. It’s now set to run every day at midnight.\nIt’s nothing too complex. Simon Willison shared how to do this with GitHub Actions and it seemed like a fun afternoon project (and it was). And I thought an hour or two of work would save hours of future manual updates.\nFirst, Pull From Your Site’s Feed\nThis site is set up with an Atom feed that RSS readers (e.g., Feedly ) can aggregate with. Getting the latest writing with Python’s feedparser is simple. Based on how your dates are formatted, you might need to update the regular expression.\nimport feedparser\ndef fetch_writing ():\nentries = feedparser . parse ( 'https://eugeneyan.com/feed' )[ 'entries' ][: 5 ]\nreturn [\n'title' : entry [ 'title' ],\n'url' : entry [ 'link' ]. split ( '#' )[ 0 ],\n'published' : re . findall ( r '(.*?)\\s00:00' , entry [ 'published' ])[ 0 ]\nfor entry in entries\nNext, Update The README Sections\nMy README has a section for “📝 Recent Writing” which I update with the results from fetch_writing() . This is done by searching for comment blocks for “writing” (e.g., <!-- writing starts --> ) and replacing everything between them.\nimport re\ndef replace_chunk ( content , marker , chunk , inline = False ):\nr = re . compile (\nr '<!\\-\\- {} starts \\-\\->.*<!\\-\\- {} ends \\-\\->' . format ( marker , marker ),\nre . DOTALL ,\nif not inline :\nchunk = ' \\n {} \\n ' . format ( chunk )\nchunk = '<!-- {} starts -->{}<!-- {} ends -->' . format ( marker , chunk , marker )\nreturn r . sub ( chunk , content )\nSo far, running both methods will update the README file.\nFinally, Set Up GitHub Actions\nWe’ll want to set up GitHub Actions to run this workflow automatically. Currently, it runs with each push and at midnight daily. There’s also the ability for one-click build (which is pretty cool).\nname : Build README\non :\npush :\nworkflow_dispatch :\nschedule :\n- cron : ' 0 0 * * *'\njobs :\nbuild :\nruns-on : ubuntu-latest\nsteps :\n- name : Check out repo\nuses : actions/checkout@v2\n- name : Set up Python\nuses : actions/setup-python@v2\nwith :\npython-version : 3.8\narchitecture : x64\n- name : Install dependencies\nrun : python -m pip install -r requirements.txt\n- name : Update README\nrun : |-\npython build_readme.py\ncat README.md\n- name : Commit and push if changed\nrun : |-\ngit diff\ngit config --global user.email \" [email protected] \"\ngit config --global user.name \"README-bot\"\ngit add -A\ngit commit -m \"Updated content\" || exit 0\ngit push\nChill and Let Automation Take Over\nNow that it’s set up, no more manual updating of the README with each new post. Here’s how it looks like now, without this current post.\nMy profile now; if it's the same when you visit it, my effort in this post failed.\nBy the time you visit my GitHub profile , the “📝 Recent Writing” section will be updated to include this post, or (if you’re visiting it more than a month from now) be updated with a new set of recent posts.\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Jul 2020). How to Update a GitHub Profile README Automatically. eugeneyan.com.\nhttps://eugeneyan.com/writing/how-to-update-github-profile-readme-automatically/.\nor\n@article{yan2020github,\ntitle = {How to Update a GitHub Profile README Automatically},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2020},\nmonth = {Jul},\nurl = {https://eugeneyan.com/writing/how-to-update-github-profile-readme-automatically/}\nShare on:\nBrowse related tags: [\nengineering\npython\ntil\nor Search\n&laquo; The 85% Rule: When Giving It Your 100% Gets You Less than 85%\nWhat I Do During A Data Science Project To Deliver Success &raquo;\nJoin 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.\n\n## full_text\n\nHow to Update a GitHub Profile README Automatically\neugeneyan\nStart Here\nWriting\nSpeaking\nPrototyping\nAbout\nHow to Update a GitHub Profile README Automatically\nengineering\npython\ntil\n· 3 min read\nToday I learnt how to set up my GitHub profile README to automatically update with the latest writing from this site. It’s now set to run every day at midnight.\nIt’s nothing too complex. Simon Willison shared how to do this with GitHub Actions and it seemed like a fun afternoon project (and it was). And I thought an hour or two of work would save hours of future manual updates.\nFirst, Pull From Your Site’s Feed\nThis site is set up with an Atom feed that RSS readers (e.g., Feedly ) can aggregate with. Getting the latest writing with Python’s feedparser is simple. Based on how your dates are formatted, you might need to update the regular expression.\nimport feedparser\ndef fetch_writing ():\nentries = feedparser . parse ( 'https://eugeneyan.com/feed' )[ 'entries' ][: 5 ]\nreturn [\n'title' : entry [ 'title' ],\n'url' : entry [ 'link' ]. split ( '#' )[ 0 ],\n'published' : re . findall ( r '(.*?)\\s00:00' , entry [ 'published' ])[ 0 ]\nfor entry in entries\nNext, Update The README Sections\nMy README has a section for “📝 Recent Writing” which I update with the results from fetch_writing() . This is done by searching for comment blocks for “writing” (e.g., <!-- writing starts --> ) and replacing everything between them.\nimport re\ndef replace_chunk ( content , marker , chunk , inline = False ):\nr = re . compile (\nr '<!\\-\\- {} starts \\-\\->.*<!\\-\\- {} ends \\-\\->' . format ( marker , marker ),\nre . DOTALL ,\nif not inline :\nchunk = ' \\n {} \\n ' . format ( chunk )\nchunk = '<!-- {} starts -->{}<!-- {} ends -->' . format ( marker , chunk , marker )\nreturn r . sub ( chunk , content )\nSo far, running both methods will update the README file.\nFinally, Set Up GitHub Actions\nWe’ll want to set up GitHub Actions to run this workflow automatically. Currently, it runs with each push and at midnight daily. There’s also the ability for one-click build (which is pretty cool).\nname : Build README\non :\npush :\nworkflow_dispatch :\nschedule :\n- cron : ' 0 0 * * *'\njobs :\nbuild :\nruns-on : ubuntu-latest\nsteps :\n- name : Check out repo\nuses : actions/checkout@v2\n- name : Set up Python\nuses : actions/setup-python@v2\nwith :\npython-version : 3.8\narchitecture : x64\n- name : Install dependencies\nrun : python -m pip install -r requirements.txt\n- name : Update README\nrun : |-\npython build_readme.py\ncat README.md\n- name : Commit and push if changed\nrun : |-\ngit diff\ngit config --global user.email \" [email protected] \"\ngit config --global user.name \"README-bot\"\ngit add -A\ngit commit -m \"Updated content\" || exit 0\ngit push\nChill and Let Automation Take Over\nNow that it’s set up, no more manual updating of the README with each new post. Here’s how it looks like now, without this current post.\nMy profile now; if it's the same when you visit it, my effort in this post failed.\nBy the time you visit my GitHub profile , the “📝 Recent Writing” section will be updated to include this post, or (if you’re visiting it more than a month from now) be updated with a new set of recent posts.\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Jul 2020). How to Update a GitHub Profile README Automatically. eugeneyan.com.\nhttps://eugeneyan.com/writing/how-to-update-github-profile-readme-automatically/.\nor\n@article{yan2020github,\ntitle = {How to Update a GitHub Profile README Automatically},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2020},\nmonth = {Jul},\nurl = {https://eugeneyan.com/writing/how-to-update-github-profile-readme-automatically/}\nShare on:\nBrowse related tags: [\nengineering\npython\ntil\nor Search\n&laquo; The 85% Rule: When Giving It Your 100% Gets You Less than 85%\nWhat I Do During A Data Science Project To Deliver Success &raquo;\nJoin 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 83\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] I wanted to add my recent writing to my GitHub Profile README but was too lazy to do manual updates.\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] How to Update a GitHub Profile README Automatically eugeneyan Start Here Writing Speaking Prototyping About How to Update a GitHub Profile README Automatically engineering python til · 3 min read Today I learnt how to set up my GitHub profile README to automatically update with the latest writing from this site.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] It’s now set to run every day at midnight.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] It’s nothing too complex.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Simon Willison shared how to do this with GitHub Actions and it seemed like a fun afternoon project (and it was).\n6. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] And I thought an hour or two of work would save hours of future manual updates.\n"
+}

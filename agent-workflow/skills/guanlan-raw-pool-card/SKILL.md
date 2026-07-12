@@ -3,7 +3,7 @@ name: guanlan-raw-pool-card
 description: Use when running, repairing, auditing, or changing WaveSight AI raw-to-card Signal Card and frontstage production. Covers daily Raw/Pool audit targets, cardability judgment, Signal Card generation, unified frontstage Card display, and site/Obsidian handoff rules.
 metadata:
   guanlan:
-    version: "1.0.1"
+    version: "1.0.2"
     lane: "Business Signals"
     status: "current sub-skill"
     order: 70
@@ -11,7 +11,7 @@ metadata:
     upstream: "eligible Raw / Pool items"
     downstream: "Signal Cards and card examples"
     gates: "source-backed details, type contract, field discipline"
-    recent_learning: "Card frontstage details must come from original source text, not old summaries or backend fallbacks."
+    recent_learning: "Card regeneration must record and verify the exact Raw / Pool input snapshot before publication; an isolated replay count is not a production input until persisted."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -56,6 +56,7 @@ For self-improvement and regression prevention, read these only when relevant:
 
 1. Resolve the Asia/Shanghai production date unless the user gives another date.
 2. Confirm Raw / Pool exist and are not stale relative to Card/site data.
+   - For a manual backfill or replay, pass `--expected-raw-count=<persisted-count>` to Card generation and verify the handoff records matching `raw_input_count` / `pool_input_count` before publication.
 3. Count audit supply:
    - total Pool;
    - routed Pool;

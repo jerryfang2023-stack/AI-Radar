@@ -1,0 +1,239 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-023
+title: "特斯拉正开发 Grok 语音控制 FSD 功能"
+title_zh: "特斯拉正开发 Grok 语音控制 FSD 功能"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/975/658.htm"
+canonical_url: "https://ithome.com/0/975/658.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: false
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-12T01:56:15.000Z"
+collected_at: 2026-07-12T09:55:28.269Z
+language: mixed
+full_text_hash: ef04ca428ac22782
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-12/r-023-特斯拉正开发-grok-语音控制-fsd-功能.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-12/r-023-特斯拉正开发-grok-语音控制-fsd-功能.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 55
+extractor_diagnostics: {"readability_score":55,"text_length":1671,"paragraph_count":20,"sentence_count":17,"boilerplate_hits":5,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1671
+fetch_error: ""
+evidence_strength: blocked
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["index_only_or_directory_page"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ef04ca428ac22782","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"特斯拉正开发 Grok 语音控制 FSD 功能","discovery_summary":"特斯拉 AI 负责人 Ashok Elluswamy 确认，利用 Grok 语音控制 FSD 的功能正在开发中。该功能旨在让用户通过自然语言指挥车辆，如指定驶入哪个车道或哪户人家的车道，并让车辆记住停车位置。Grok 已于去年夏天接入特斯拉车机，支持语音添加导航途经点、修改路线及基于地点的提醒。马斯克上月表示该功能预计\"大约三个月内\"推出。未来 Grok 还可能进一步接管车窗、空调等车内功能。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/658.htm","discovered_at":"2026-07-12T06:01:47.589Z","rank_on_page":33,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 97cc87bbf409330e
+content_hash: ef04ca428ac22782
+semantic_hash: 2aec85d15364087d
+duplicate_of: ""
+first_seen_at: "2026-07-12T01:56:15.000Z"
+last_seen_at: 2026-07-12T09:55:28.269Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "homepage_or_directory_observation"
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"automotive vertical rollout only; AI-adjacent but not a core WaveSight AI commercial signal","supporting_signals":["automotive_vertical_context"],"novelty":3,"evidence_strength":4,"case_richness":3,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":[],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["7","12","2026","14.1"],"quotes":["如果我能像对司机说话一样，直接告诉 FSD 要驶入哪一个车道、哪一户人家的车道，那么 FSD 在住宅区的实用性至少能提升一倍。","正在开发中（Working on it）。","回家后提醒我把健身包从后备箱拿出来。","前面停止标志左转，不要直行。","导航去 Costco，并把车停在离其他车辆远一点的位置。"]}
+evidence_seed: {"company_actions":["特斯拉 AI 负责人 Ashok Elluswamy 确认，利用 Grok 语音控制 FSD 的功能正在开发中。该功能旨在让用户通过自然语言指挥车辆，如指定驶入哪个车道或哪户人家的车道，并让车辆记住停车位置。Grok 已于去年夏天接入特斯拉车机，支持语音添加导航途经点、修改路线及基于地点的提醒。马斯克上月表示该功能预计\"大约三个月内\"推出。未来 Grok 还可能进一步接管车窗、空调等车内功能。","IT之家 7 月 12 日消息，与汽车交流的方式，即将变得更像与一位专属司机对话，而不再只是生硬地下达语音指令。","随着特斯拉不断将人工智能引入车内，下一步的发展重点将是让 Grok AI 聊天机器人与车辆的自动驾驶系统深度结合，使 AI 不仅能聊天，还能真正影响车辆驾驶行为。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","疑似官网首页、产品目录或导航页，只能索引留存","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"特斯拉 AI 负责人 Ashok Elluswamy 确认，利用 Grok 语音控制 FSD 的功能正在开发中。该功能旨在让用户通过自然语言指挥车辆，如指定驶入哪个车道或哪户人家的车道，并让车辆记住停车位置。Grok 已于去年夏天接入特斯拉车机，支持语音添加导航途经点、修改路线及基于地点的提醒。马斯克上月表示该功能预计\"大约三个月内\"推出。未来 Grok 还可能进一步接管车窗、空调等车内功能。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 12 日消息，与汽车交流的方式，即将变得更像与一位专属司机对话，而不再只是生硬地下达语音指令。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"随着特斯拉不断将人工智能引入车内，下一步的发展重点将是让 Grok AI 聊天机器人与车辆的自动驾驶系统深度结合，使 AI 不仅能聊天，还能真正影响车辆驾驶行为。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家注意到，近日，科技记者兼特斯拉车主 @ChrissGPT 在 X 平台分享了自己对 FSD（Full Self-Driving）的使用体验。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"他表示：“如果我能像对司机说话一样，直接告诉 FSD 要驶入哪一个车道、哪一户人家的车道，那么 FSD 在住宅区的实用性至少能提升一倍。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"” 他还举例称，如果自己只需告诉车辆“就是那栋房子”，FSD 就能准确驶到门前，并记住这个位置，供以后再次使用，那体验将会好得多。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-12T09:55:28.269Z
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# 特斯拉正开发 Grok 语音控制 FSD 功能
+
+## clean_text
+
+IT之家 7 月 12 日消息，与汽车交流的方式，即将变得更像与一位专属司机对话，而不再只是生硬地下达语音指令。
+随着特斯拉不断将人工智能引入车内，下一步的发展重点将是让 Grok AI 聊天机器人与车辆的自动驾驶系统深度结合，使 AI 不仅能聊天，还能真正影响车辆驾驶行为。
+IT之家注意到，近日，科技记者兼特斯拉车主 @ChrissGPT 在 X 平台分享了自己对 FSD（Full Self-Driving）的使用体验。他表示：“如果我能像对司机说话一样，直接告诉 FSD 要驶入哪一个车道、哪一户人家的车道，那么 FSD 在住宅区的实用性至少能提升一倍。”
+他还举例称，如果自己只需告诉车辆“就是那栋房子”，FSD 就能准确驶到门前，并记住这个位置，供以后再次使用，那体验将会好得多。
+对此，特斯拉 AI 负责人 Ashok Elluswamy 回复了一句简短的话：“正在开发中（Working on it）。”
+这也意味着，利用自然语言直接控制 FSD 的功能已经进入研发阶段。
+随着 Grok 接入特斯拉车机，车辆已经具备了更强的 AI 能力。Grok 去年夏天首次登陆特斯拉汽车，用户可以通过自然语言与 AI 对话，例如：提出开放式问题；查询知识信息；获取新闻事件摘要等。
+随后，特斯拉不断扩展 Grok 的功能。例如：支持通过语音添加导航途经点；在行驶过程中修改导航路线。
+而在 2026 年春季更新中，特斯拉又加入了基于地点的提醒功能。例如，用户可以直接说：“回家后提醒我把健身包从后备箱拿出来。”
+如今，Grok 与 FSD 自动驾驶系统进一步融合，也被认为是这一 AI 生态发展的自然下一步。
+这一消息也印证了埃隆 · 马斯克此前透露的时间表。上个月，马斯克表示：Grok 语音控制 FSD 功能预计将在“大约三个月内”推出。如果进展顺利，该功能最快有望于 2026 年秋季上线。
+事实上，今年年初，马斯克就曾确认，利用 Grok 控制 FSD 已被列入开发计划。而如今 Ashok Elluswamy 的回应，则说明该项目正在按计划推进。
+目前，车主如果希望 FSD 在路口选择不同路线，有时只能通过提前打开转向灯来进行一定程度的引导。未来接入 Grok 后，驾驶员只需直接说：“前面停止标志左转，不要直行。”“导航去 Costco，并把车停在离其他车辆远一点的位置。”FSD 就有望理解并执行这些自然语言指令。
+这项功能最大的意义之一，就是改善 FSD 在行程最后阶段的表现。虽然 FSD v14.1 已新增“到达目的地停车（Parking at Destination）”功能，但目前仍存在不少限制。例如：很难准确停到指定门口；接送乘客时停车位置仍显生硬。
+近年来，特斯拉一直在持续优化 FSD 在这一环节的表现。如果未来乘客能够直接告诉车辆：“停到右边第二栋房子的车道口。”那么 FSD 的实用性将得到大幅提升。
+此外，马斯克此前还透露，未来 FSD 将能够记住用户在家、公司等常去地点的停车习惯，包括：喜欢停在哪个位置；停车朝向；停车方式等。
+这项能力未来还可能成为 Robotaxi 服务的重要功能。例如，乘客可以直接通过语音：增加新的停靠点；更改行驶路线；告诉车辆准确停在哪栋建筑门前。整个过程无需手动修改导航。
+目前，这项功能尚未公布正式上线时间。虽然马斯克提出的“三个月”时间表一向存在所谓的“Elon Time（马斯克时间）”—— 即发布时间可能推迟，但此次特斯拉 AI 团队公开确认项目正在推进，也意味着相关软件框架已经进入实际验证阶段。
+当 Grok 能够直接控制 FSD 后，下一步的发展方向很可能就是进一步接管车内功能。届时，车主或许只需用日常语言就能完成各种操作，例如：打开或关闭车窗；开启宠物模式（Pet Mode）；调节空调和温度等。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 12 日消息，与汽车交流的方式，即将变得更像与一位专属司机对话，而不再只是生硬地下达语音指令。
+随着特斯拉不断将人工智能引入车内，下一步的发展重点将是让 Grok AI 聊天机器人与车辆的自动驾驶系统深度结合，使 AI 不仅能聊天，还能真正影响车辆驾驶行为。
+IT之家注意到，近日，科技记者兼特斯拉车主 @ChrissGPT 在 X 平台分享了自己对 FSD（Full Self-Driving）的使用体验。他表示：“如果我能像对司机说话一样，直接告诉 FSD 要驶入哪一个车道、哪一户人家的车道，那么 FSD 在住宅区的实用性至少能提升一倍。”
+他还举例称，如果自己只需告诉车辆“就是那栋房子”，FSD 就能准确驶到门前，并记住这个位置，供以后再次使用，那体验将会好得多。
+对此，特斯拉 AI 负责人 Ashok Elluswamy 回复了一句简短的话：“正在开发中（Working on it）。”
+这也意味着，利用自然语言直接控制 FSD 的功能已经进入研发阶段。
+随着 Grok 接入特斯拉车机，车辆已经具备了更强的 AI 能力。Grok 去年夏天首次登陆特斯拉汽车，用户可以通过自然语言与 AI 对话，例如：提出开放式问题；查询知识信息；获取新闻事件摘要等。
+随后，特斯拉不断扩展 Grok 的功能。例如：支持通过语音添加导航途经点；在行驶过程中修改导航路线。
+而在 2026 年春季更新中，特斯拉又加入了基于地点的提醒功能。例如，用户可以直接说：“回家后提醒我把健身包从后备箱拿出来。”
+如今，Grok 与 FSD 自动驾驶系统进一步融合，也被认为是这一 AI 生态发展的自然下一步。
+这一消息也印证了埃隆 · 马斯克此前透露的时间表。上个月，马斯克表示：Grok 语音控制 FSD 功能预计将在“大约三个月内”推出。如果进展顺利，该功能最快有望于 2026 年秋季上线。
+事实上，今年年初，马斯克就曾确认，利用 Grok 控制 FSD 已被列入开发计划。而如今 Ashok Elluswamy 的回应，则说明该项目正在按计划推进。
+目前，车主如果希望 FSD 在路口选择不同路线，有时只能通过提前打开转向灯来进行一定程度的引导。未来接入 Grok 后，驾驶员只需直接说：“前面停止标志左转，不要直行。”“导航去 Costco，并把车停在离其他车辆远一点的位置。”FSD 就有望理解并执行这些自然语言指令。
+这项功能最大的意义之一，就是改善 FSD 在行程最后阶段的表现。虽然 FSD v14.1 已新增“到达目的地停车（Parking at Destination）”功能，但目前仍存在不少限制。例如：很难准确停到指定门口；接送乘客时停车位置仍显生硬。
+近年来，特斯拉一直在持续优化 FSD 在这一环节的表现。如果未来乘客能够直接告诉车辆：“停到右边第二栋房子的车道口。”那么 FSD 的实用性将得到大幅提升。
+此外，马斯克此前还透露，未来 FSD 将能够记住用户在家、公司等常去地点的停车习惯，包括：喜欢停在哪个位置；停车朝向；停车方式等。
+这项能力未来还可能成为 Robotaxi 服务的重要功能。例如，乘客可以直接通过语音：增加新的停靠点；更改行驶路线；告诉车辆准确停在哪栋建筑门前。整个过程无需手动修改导航。
+目前，这项功能尚未公布正式上线时间。虽然马斯克提出的“三个月”时间表一向存在所谓的“Elon Time（马斯克时间）”—— 即发布时间可能推迟，但此次特斯拉 AI 团队公开确认项目正在推进，也意味着相关软件框架已经进入实际验证阶段。
+当 Grok 能够直接控制 FSD 后，下一步的发展方向很可能就是进一步接管车内功能。届时，车主或许只需用日常语言就能完成各种操作，例如：打开或关闭车窗；开启宠物模式（Pet Mode）；调节空调和温度等。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 55
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":55,"text_length":1671,"paragraph_count":20,"sentence_count":17,"boilerplate_hits":5,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   特斯拉 AI 负责人 Ashok Elluswamy 确认，利用 Grok 语音控制 FSD 的功能正在开发中。该功能旨在让用户通过自然语言指挥车辆，如指定驶入哪个车道或哪户人家的车道，并让车辆记住停车位置。Grok 已于去年夏天接入特斯拉车机，支持语音添加导航途经点、修改路线及基于地点的提醒。马斯克上月表示该功能预计"大约三个月内"推出。未来 Grok 还可能进一步接管车窗、空调等车内功能。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家 7 月 12 日消息，与汽车交流的方式，即将变得更像与一位专属司机对话，而不再只是生硬地下达语音指令。
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   随着特斯拉不断将人工智能引入车内，下一步的发展重点将是让 Grok AI 聊天机器人与车辆的自动驾驶系统深度结合，使 AI 不仅能聊天，还能真正影响车辆驾驶行为。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家注意到，近日，科技记者兼特斯拉车主 @ChrissGPT 在 X 平台分享了自己对 FSD（Full Self-Driving）的使用体验。
+
+5. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   他表示：“如果我能像对司机说话一样，直接告诉 FSD 要驶入哪一个车道、哪一户人家的车道，那么 FSD 在住宅区的实用性至少能提升一倍。
+
+6. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   ” 他还举例称，如果自己只需告诉车辆“就是那栋房子”，FSD 就能准确驶到门前，并记住这个位置，供以后再次使用，那体验将会好得多。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 7, 12, 2026, 14.1
+- quotes: 如果我能像对司机说话一样，直接告诉 FSD 要驶入哪一个车道、哪一户人家的车道，那么 FSD 在住宅区的实用性至少能提升一倍。 / 正在开发中（Working on it）。 / 回家后提醒我把健身包从后备箱拿出来。 / 前面停止标志左转，不要直行。 / 导航去 Costco，并把车停在离其他车辆远一点的位置。
+
+## evidence_seed
+
+- company_actions: 特斯拉 AI 负责人 Ashok Elluswamy 确认，利用 Grok 语音控制 FSD 的功能正在开发中。该功能旨在让用户通过自然语言指挥车辆，如指定驶入哪个车道或哪户人家的车道，并让车辆记住停车位置。Grok 已于去年夏天接入特斯拉车机，支持语音添加导航途经点、修改路线及基于地点的提醒。马斯克上月表示该功能预计"大约三个月内"推出。未来 Grok 还可能进一步接管车窗、空调等车内功能。 / IT之家 7 月 12 日消息，与汽车交流的方式，即将变得更像与一位专属司机对话，而不再只是生硬地下达语音指令。 / 随着特斯拉不断将人工智能引入车内，下一步的发展重点将是让 Grok AI 聊天机器人与车辆的自动驾驶系统深度结合，使 AI 不仅能聊天，还能真正影响车辆驾驶行为。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: automotive vertical rollout only; AI-adjacent but not a core WaveSight AI commercial signal
+- supporting_signals: automotive_vertical_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 3
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 疑似官网首页、产品目录或导航页，只能索引留存
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"特斯拉正开发 Grok 语音控制 FSD 功能","discovery_summary":"特斯拉 AI 负责人 Ashok Elluswamy 确认，利用 Grok 语音控制 FSD 的功能正在开发中。该功能旨在让用户通过自然语言指挥车辆，如指定驶入哪个车道或哪户人家的车道，并让车辆记住停车位置。Grok 已于去年夏天接入特斯拉车机，支持语音添加导航途经点、修改路线及基于地点的提醒。马斯克上月表示该功能预计\"大约三个月内\"推出。未来 Grok 还可能进一步接管车窗、空调等车内功能。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/658.htm","discovered_at":"2026-07-12T06:01:47.589Z","rank_on_page":33,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+特斯拉 AI 负责人 Ashok Elluswamy 确认，利用 Grok 语音控制 FSD 的功能正在开发中。该功能旨在让用户通过自然语言指挥车辆，如指定驶入哪个车道或哪户人家的车道，并让车辆记住停车位置。Grok 已于去年夏天接入特斯拉车机，支持语音添加导航途经点、修改路线及基于地点的提醒。马斯克上月表示该功能预计"大约三个月内"推出。未来 Grok 还可能进一步接管车窗、空调等车内功能。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

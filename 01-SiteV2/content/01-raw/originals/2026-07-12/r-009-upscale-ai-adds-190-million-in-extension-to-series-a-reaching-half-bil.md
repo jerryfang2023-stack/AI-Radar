@@ -4,7 +4,7 @@ raw_id: R-009
 title: "Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding"
 title_zh: "Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元"
 title_translation_status: translated
-title_translation_method: source_backed_manual_repair
+title_translation_method: source_title_translation_db
 original_url: "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1"
 canonical_url: "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1"
 source_name: "keyword search / Anysearch"
@@ -23,7 +23,7 @@ search_path: "ai_hardware_original"
 search_path_label: "AI hardware original-source path"
 author: ""
 published_at: "2026-06-22T00:00:00.000Z"
-collected_at: 2026-07-12T06:10:44.865Z
+collected_at: 2026-07-12T09:55:25.096Z
 language: mixed
 full_text_hash: 23145edb5fdd8d69
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-12/r-009-upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-bil.md"
@@ -59,12 +59,12 @@ url_hash: 7dcdc22c0b1702bf
 content_hash: 23145edb5fdd8d69
 semantic_hash: 13ff84975b6d1fd2
 duplicate_of: ""
-first_seen_at: "2026-07-12T06:10:44.865Z"
-last_seen_at: 2026-07-12T06:10:44.865Z
+first_seen_at: "2026-06-22T00:00:00.000Z"
+last_seen_at: 2026-07-12T09:55:25.096Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
-pool_routes: ["core_pool"]
+pool_routes: ["watchlist"]
 change_action_detected: true
 evidence_eligibility: eligible
 evidence_block_reason: ""
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"funding","text":"Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Resource center Press Releases Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Press Releases # Upscale AI Adds $190 Million in Extension t... / query=AI hardware startup raises Series A customers / intent=find_startups / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Resource center Press Releases Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Press Releases Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Table of contents Link H2 Link H3 Link H4 Link H5 Link H6 Author Santa Clara Calif A pure-play AI networking infrastructure company, today announced it has raised $190 million in Series A-1 financing.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"This latest investment brings the company’s total funding to $500 million, and its current valuation to $2 billion, reflecting strong investor conviction in the AI networking market and Upscale AI’s unique innovation in driving open-standards solutions for it.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The Series A-1 round was led by Premji Invest , and included funding from new investors, NVIDIA , Salesforce Ventures, Seligman Ventures, and Temasek as well as participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Upscale AI is reimagining networking for the AI era with a full-stack portfolio spanning silicon, systems, and software.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Through a unified, open-standard AI fabric, the company connects accelerators, memory, and storage into a single high-performance AI engine purpose-built to eliminate network bottlenecks across large-scale, synchronized AI workloads, including training and inference of frontier models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-12T06:10:44.865Z
+fact_extraction_completed_at: 2026-07-12T09:55:25.096Z
 theme: ai-hardware-investment-signal
 keyword_group: ai-hardware-investment-signal
 copyright_note: local research archive only
@@ -304,7 +304,7 @@ Book a demo
 
 ## pool_routes
 
-- core_pool
+- watchlist
 
 ## missing_information
 

@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T00:44:43.000Z"
-collected_at: 2026-07-12T06:10:44.082Z
+collected_at: 2026-07-12T09:55:23.628Z
 language: mixed
 full_text_hash: 7a411771f8855aec
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-12/r-003-openai-gpt-5-6-sol-ultra-一小时证明-50-年图论猜想.md"
@@ -60,7 +60,7 @@ content_hash: 7a411771f8855aec
 semantic_hash: 7233614d4196491e
 duplicate_of: ""
 first_seen_at: "2026-07-12T00:44:43.000Z"
-last_seen_at: 2026-07-12T06:10:44.082Z
+last_seen_at: 2026-07-12T09:55:23.628Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":true,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["证据对象不可用：疑似索引页、目录页、薄
 key_excerpts: [{"type":"quote","text":"OpenAI 宣布其 GPT-5.6 Sol Ultra 模型在不到一小时内生成了图论难题\"循环双覆盖猜想\"的完整证明。该猜想由数学家 George Szekeres 和 Paul Seymour 于 1970 年代提出，悬而未决超过 50 年。模型通过调用 64 个并行子智能体及对抗智能体，在预留的 8 小时计算时间内仅用约 1 小时完成证明。OpenAI 已将证明及提示词以 PDF 形式发布。该证明尚未经同行评审，也未使用 Lean 等形式化工具验证。若通过验证，这将是 LLM 首次独立解决维基百科\"未解决数学问题\"列表中的难题。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"仅用一小时，OpenAI GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"6 Sol Ultra 证明了一个已有 50 年历史的数学猜想 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 仅用一小时，OpenAI GPT-5.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"6 Sol Ultra 证明了一个已有 50 年历史的数学猜想 2026/7/12 8:44:43 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 Nuc_F 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"IT之家 7 月 12 日消息，OpenAI 于 7 月 10 日宣布，旗下 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"6 Sol Ultra 模型在不到 1 小时内，成功生成了“循环双覆盖猜想”（Cycle Double Cover Conjecture）的完整证明。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-12T06:10:44.082Z
+fact_extraction_completed_at: 2026-07-12T09:55:23.628Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only

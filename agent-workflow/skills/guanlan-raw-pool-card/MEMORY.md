@@ -2,6 +2,11 @@
 
 Keep this file short. Add only durable lessons that improve the skill itself. Do not copy command output, daily counts, or one-off production details.
 
+## 2026-07-12 Card Input Snapshot Boundary
+
+- A Raw replay result is not a production Card input until the same Raw originals and Pool file are persisted in the publishing worktree. Manual Card regeneration must verify the persisted Raw count before asset cleanup or generation.
+- The Card handoff and manifest must record Raw / Pool input counts, and manual backfills should use the expected-count guard so stale same-date Raw cannot silently produce a valid-looking Card release.
+
 ## 2026-07-11 Editorial Quality Boundary
 
 - Daily Card freshness follows the actual source event, not the inferred Card type: product lifecycle events use a 14-day window; funding and customer cases use 30 days; undated sources stay backend-only until repaired.
