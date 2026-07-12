@@ -1483,7 +1483,7 @@ function commercialEvidenceText(section) {
 function isResearchBenchmarkContext(section) {
   const text = commercialEvidenceText(section);
   return value(section, "research_status") === "formal_report"
-    || /\b(benchmark|benchmarks|bench|evaluation|evals?|leaderboard|paper|research|technical report|dataset|arxiv|openreview|ACL|NeurIPS|ICML|ICLR|DiscoBench|OCR|OmniDocBench|retrieval benchmark)\b/iu.test(text);
+    || /\b(benchmark|benchmarks|bench|evaluation|evals?|leaderboard|paper|research|technical report|dataset|arxiv|openreview|ACL|NeurIPS|ICML|ICLR|DiscoBench|OCR|OmniDocBench|retrieval benchmark)\b|内部评估|内部测试|评估套件|研究人员|研究结果|研究论文|基准测试|后训练方案/iu.test(text);
 }
 
 function hasStrictMarketStructureEvent(section) {
@@ -1571,6 +1571,10 @@ function isJobListingSection(section) {
 
 function isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section) {
   const text = textForInference(section);
+  const factualText = text.replace(/"type"\s*:\s*"[^"]*"/giu, " ");
+  const interpersonalDispute = /隔空.{0,16}(?:掐架|争论|互怼)|口水战|骂战|转发.{0,24}(?:帖文|截图).{0,40}(?:指责|嘲讽|诈骗)|(?:CEO|创始人).{0,24}(?:指责|嘲讽|互怼)/iu.test(factualText);
+  const separateCommercialEvent = /融资|收购|并购|客户部署|生产部署|采购|合同|签约|定价|正式发布.{0,24}(?:产品|平台|API|SDK)|funding|raises?|acquisition|customer deployment|production rollout|procurement|contract|pricing|commercial launch/iu.test(factualText);
+  if (interpersonalDispute && !separateCommercialEvent) return true;
   if (/monthly update|roundup|latest AI news|recap of .*AI updates|Google 2026.*AI.*updates?|Google 2026.*AI.*更新|AI更新汇总|更新汇总/iu.test(text)) return true;
   if (/AI\s*存储蓝图|存储蓝图|大规模\s*AI\s*存储|large-scale AI storage|storage blueprint|architecture blueprint|technical blueprint/iu.test(text)
     && !/customer deployment|procurement|contract|pricing|funding|commercial launch/iu.test(text)) return true;
@@ -3049,6 +3053,32 @@ function runQualityRegressionFixtures() {
     "- evidence_object_type: official_index_or_directory",
   ].join("\n");
   assert.equal(sectionSourceIdentityIndicatesIndexOnly(actualDirectoryFixture), true, "actual directory identity must remain blocked");
+
+  const interpersonalDisputeFixture = [
+    "## P-996｜GPT-5.6 上线之际，两名 AI 公司 CEO 隔空掐架",
+    "- source_url: https://example.com/ceo-dispute",
+    "- source: Example News",
+    "- importance_type: important_product_or_service",
+    "- key_excerpts: [{\"type\":\"funding\",\"text\":\"一名 CEO 转发帖文指责对方诈骗，另一名 CEO 回应并嘲讽。\"}]",
+  ].join("\n");
+  assert.equal(
+    isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(interpersonalDisputeFixture),
+    true,
+    "interpersonal executive disputes without a separate commercial event must remain backend-only",
+  );
+
+  const internalResearchFixture = [
+    "## P-995｜模型可化身研究员，后训练较小模型",
+    "- source_url: https://example.com/internal-research",
+    "- source: Example Research News",
+    "- research_status: not_research",
+    "- key_excerpts: 研究人员在内部评估套件中测试后训练方案，分数提高 16.2 个百分点。",
+  ].join("\n");
+  assert.equal(
+    isResearchBenchmarkContextWithoutCommercialEvent(internalResearchFixture),
+    true,
+    "internal research and benchmark results without a commercial event must remain backend-only",
+  );
 
   for (const poolRef of ["P-001", "P-002", "P-012", "P-015", "P-026", "P-043"]) {
     assert.deepEqual(issuesFor(poolRef), [], `${poolRef} should pass the six Card-entry gates`);
