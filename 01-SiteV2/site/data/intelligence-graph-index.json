@@ -5,7 +5,7 @@
     "businessSignalsColumnVersion": "BSIG-V2.2.0-pipeline-stage-ownership",
     "enterpriseAiLensVersion": "EAI-V1.2.0-raw-card-ingestion-boundary",
     "intelligenceMapColumnVersion": "IMAP-V2.0.0-report-center-opportunity-system",
-    "generatedAt": "2026-07-12T09:58:56.360Z",
+    "generatedAt": "2026-07-12T10:25:04.034Z",
     "activeDate": "2026-07-12",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -47,29 +47,38 @@
   },
   "summary": {
     "activeDate": "2026-07-12",
-    "totalCards": 524,
-    "todayCards": 4,
-    "todayFrontstageCards": 4,
-    "coreSignalCards": 2,
-    "relationshipNodes": 15,
-    "relationshipEdges": 16,
+    "totalCards": 530,
+    "todayCards": 10,
+    "todayFrontstageCards": 10,
+    "coreSignalCards": 5,
+    "relationshipNodes": 26,
+    "relationshipEdges": 36,
     "relationshipClusters": 1,
     "enterpriseAiTransformation": 0,
     "aiHardwareSignals": 8,
-    "tagAssociations": 5,
+    "tagAssociations": 8,
     "trendLinks": 16,
     "trendCandidates": 0
   },
   "dailyLens": {
     "frontstageCardIds": [
-      "SIG-20260712-A03",
-      "SIG-20260712-A02",
       "SIG-20260712-A04",
-      "SIG-20260712-A01"
+      "SIG-20260712-A02",
+      "SIG-20260712-A06",
+      "SIG-20260712-A03",
+      "SIG-20260712-A01",
+      "SIG-20260712-A05",
+      "SIG-20260712-A08",
+      "SIG-20260712-A07",
+      "SIG-20260712-A10",
+      "SIG-20260712-A09"
     ],
     "coreSignalCardIds": [
       "SIG-20260712-A02",
-      "SIG-20260712-A01"
+      "SIG-20260712-A03",
+      "SIG-20260712-A01",
+      "SIG-20260712-A05",
+      "SIG-20260712-A07"
     ],
     "enterpriseAiTransformationCardIds": [],
     "aiHardwareSignalIds": [
@@ -84,7 +93,7 @@
     ],
     "largeCompanyCards": [
       {
-        "id": "SIG-20260712-A04",
+        "id": "SIG-20260712-A06",
         "vendor": "anthropic",
         "title": "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun"
       },
@@ -92,6 +101,16 @@
         "id": "SIG-20260712-A01",
         "vendor": "openai",
         "title": "苹果起诉OpenAI，指控其通过挖角员工窃取未发布产品商业机密"
+      },
+      {
+        "id": "SIG-20260712-A05",
+        "vendor": "google",
+        "title": "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放"
+      },
+      {
+        "id": "SIG-20260712-A10",
+        "vendor": "meta",
+        "title": "Meta 发布 Muse Spark 1.1 模型"
       }
     ],
     "categoryStats": [
@@ -163,35 +182,35 @@
       {
         "category": "product-service",
         "label": "产品",
-        "today": 2,
-        "last7": 17,
-        "last30": 155,
-        "total": 212,
+        "today": 8,
+        "last7": 23,
+        "last30": 161,
+        "total": 218,
         "topTags": [
           {
             "tag": "evidence-product-launch",
             "label": "产品发布",
-            "count": 2
-          },
-          {
-            "tag": "customer-developer-team",
-            "label": "开发团队",
-            "count": 1
+            "count": 8
           },
           {
             "tag": "evidence-pricing-cost",
             "label": "定价与成本",
-            "count": 1
+            "count": 4
+          },
+          {
+            "tag": "track-ai-infra",
+            "label": "AI 基础设施",
+            "count": 4
+          },
+          {
+            "tag": "customer-developer-team",
+            "label": "开发团队",
+            "count": 3
           },
           {
             "tag": "function-engineering",
             "label": "工程研发",
-            "count": 1
-          },
-          {
-            "tag": "scenario-knowledge-base",
-            "label": "知识库问答",
-            "count": 1
+            "count": 3
           }
         ]
       }
@@ -199,7 +218,7 @@
   },
   "todayFrontstageCards": [
     {
-      "id": "SIG-20260712-A03",
+      "id": "SIG-20260712-A04",
       "date": "2026-07-12",
       "type": "signal_card",
       "category": "funding",
@@ -359,7 +378,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260712-A04",
+      "id": "SIG-20260712-A06",
       "date": "2026-07-12",
       "type": "signal_card",
       "category": "case",
@@ -444,6 +463,81 @@
       "fromCorePool": false
     },
     {
+      "id": "SIG-20260712-A03",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等",
+      "subject": "Tesla",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/661.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 632,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-pricing-cost",
+          "evidence-customer-metric",
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "evidence-pricing-cost",
+        "evidence-customer-metric",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-pricing-cost",
+          "label": "定价与成本"
+        },
+        {
+          "id": "evidence-customer-metric",
+          "label": "客户结果指标"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "特斯拉在《2025 年影响力报告》中披露了 Cybercab 自动驾驶出租车更多硬件与制造细节。",
+      "evidencePoints": [
+        "IT之家 7 月 12 日消息，特斯拉日前发布了 《2025 年影响力报告（Impact Report）》，其中披露了大量有关即将推出的 Cybercab 自动驾驶出租车的新细节。",
+        "这款专为 Robotaxi 打造的车型将重新定义共享出行，此次报告首次较为完整地介绍了 Cybercab 所采用的硬件配置以及全新的制造工艺。",
+        "根据特斯拉披露的信息，这款双座车型将依靠全新的动力系统、4680 电池以及革命性的制造工艺，实现极低成本和超高效率。",
+        "特斯拉表示，Cybercab 将基于全新的下一代平台打造。",
+        "报告写道：“Cybercab 将采用我们的下一代平台，搭载预计可实现至少每千瓦时行驶 6."
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "SIG-20260712-A01",
       "date": "2026-07-12",
       "type": "signal_card",
@@ -519,6 +613,400 @@
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260712-A05",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放",
+      "subject": "Google Voice",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/573.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 606,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "google",
+      "tags": {
+        "track": [
+          "track-ai-customer-service"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-customer-ticket"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-customer-ticket",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "谷歌云电话服务 Google Voice 首次面向个人用户推出付费订阅套餐，打破长期\"个人免费、企业付费\"模式。",
+      "evidencePoints": [
+        "谷歌 Voice 十年来最大调整告别“纯免费”：个人订阅每月 10 美元起，Gemini 纪要功能首次下放 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资...",
+        "IT之家 7 月 11 日消息，谷歌旗下云电话服务 Google Voice 迎来重大调整，首次面向个人用户推出两款付费订阅套餐，为用户提供更多增强功能，并承诺号码即便长期闲置也不会被回收。",
+        "这一变化打破了该服务长期以来“个人免费、企业付费”的固有模式，被视为 Google 对这一已有近二十年历史的服务罕见投入的信号。",
+        "在此之前，Google Voice 主要提供两种选择：针对个人账户的免费服务，以及作为 Google Workspace 附加组件面向企业及机构销售的多用户付费方案。",
+        "即便是上月刚刚推出的 Gemini 智能通话纪要功能，也仅限 Workspace 付费用户使用。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260712-A08",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式",
+      "subject": "月之暗面 / Kimi",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/619.htm",
+      "sourceLevel": "B",
+      "importanceScore": 4,
+      "rankScore": 532,
+      "evidenceScore": 34,
+      "poolRoutes": [],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-coding",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-pricing-cost",
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-coding",
+        "track-ai-infra",
+        "function-engineering",
+        "customer-developer-team",
+        "evidence-pricing-cost",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        }
+      ],
+      "fact": "月之暗面宣布 K2.7 Code 高速版结束 Beta，成为常驻可选模式。",
+      "evidencePoints": [
+        "IT之家 7 月 11 日消息，月之暗面官方昨晚宣布， K2.",
+        "订阅 Allegretto 及以上会员计划的用户，在 Kimi Code CLI 或其他工具中使用 Coding Plan 进行编程时，无需任何申请，可以直接调用 K2.",
+        "7 Code HighSpeed 在 Coding Plan 中的用量消耗是普通版模型的 3 倍 。",
+        "用户可以根据实际任务需求和当前用量，选择是否开启高速模式。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": false
+    },
+    {
+      "id": "SIG-20260712-A07",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "阶跃星辰发布 Step Edge 端侧模型全家桶",
+      "subject": "阶跃星辰",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/681.htm",
+      "sourceLevel": "B",
+      "importanceScore": 4,
+      "rankScore": 524,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-models",
+          "track-enterprise-data",
+          "track-ai-infra",
+          "track-ai-customer-service"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-knowledge-base",
+          "scenario-customer-ticket"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-models",
+        "track-enterprise-data",
+        "track-ai-infra",
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-knowledge-base",
+        "scenario-customer-ticket",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-models",
+          "label": "模型与能力"
+        },
+        {
+          "id": "track-enterprise-data",
+          "label": "企业数据智能"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        }
+      ],
+      "fact": "阶跃星辰推出 Step Edge 端侧模型全家桶，包含 Step Edge 基础模型、Step Edge Audio、Step Edge GUI 和 Step Edge Gen 四款产品，面向手机、汽车等终端场景。",
+      "evidencePoints": [
+        "IT之家了解到，这四款模型面向手机、汽车等终端场景，旨在让 Agent 不只停留在云端，而是能够真正进入终端，在本地更快响应、更好保护隐私，并通过端云协同完成更复杂的任务。",
+        "同时，Step Edge 具备三大核心亮点： 超低本地延迟： 支持低至 0.",
+        "1 秒 的端侧本地 toolcall 执行，简单、高频任务可在本地实时响应，减少对云端链路的依赖。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260712-A10",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Meta 发布 Muse Spark 1.1 模型",
+      "subject": "Meta",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceUrl": "https://the-decoder.com/metas-muse-spark-1-1-outperforms-glm-5-2-in-coding-and-costs-slightly-less",
+      "sourceLevel": "A",
+      "importanceScore": 2,
+      "rankScore": 308,
+      "evidenceScore": 40,
+      "poolRoutes": [
+        "watchlist"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "meta",
+      "tags": {
+        "track": [
+          "track-ai-coding",
+          "track-enterprise-data",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [
+          "scenario-knowledge-base"
+        ],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-pricing-cost",
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-coding",
+        "track-enterprise-data",
+        "track-ai-infra",
+        "function-engineering",
+        "scenario-knowledge-base",
+        "customer-developer-team",
+        "evidence-pricing-cost",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-enterprise-data",
+          "label": "企业数据智能"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        }
+      ],
+      "fact": "据 Artificial Analysis 数据，该模型在 Intelligence Index 上得分 51，与 GLM-5.2、GPT-5.4 和 GPT-5.6 Luna 持平；Coding Index 得分 71.3，领先 GLM-5.2（68.8），略低于 GPT-5.6 Luna（71.4）。",
+      "evidencePoints": [],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": false
+    },
+    {
+      "id": "SIG-20260712-A09",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新",
+      "subject": "Tesla",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/655.htm",
+      "sourceLevel": "B",
+      "importanceScore": 2,
+      "rankScore": 294,
+      "evidenceScore": 62,
+      "poolRoutes": [],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "特斯拉 FSD（Supervised）v14 Lite 已开始在美国以外市场推送，韩国成为全球首个获得该更新的海外市场。",
+      "evidencePoints": [
+        "IT之家 7 月 12 日消息，根据特斯拉韩国官方 X 账号 @tesla_korea 公布的消息，FSD（Supervised）v14 Lite 已开始在美国以外的市场首次推送。",
+        "那些担心因 HW3 硬件较旧而被“抛弃”的车主，终于迎来了体验最新版 FSD 的机会。",
+        "IT之家注意到，韩国正式成为全球首个获得 FSD v14 Lite 更新的海外市场。",
+        "这一安排颇为特殊，因为以往加拿大通常都会紧随美国之后率先获得特斯拉的软件更新。",
+        "但这一次，加拿大用户仍在等待，韩国反而成为 FSD v14 Lite 全球推广的第一站。"
+      ],
+      "value": "值得关注：有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": false
     }
   ],
   "aiHardwareSignals": [
@@ -1012,7 +1500,7 @@
   ],
   "cards": [
     {
-      "id": "SIG-20260712-A03",
+      "id": "SIG-20260712-A04",
       "date": "2026-07-12",
       "type": "signal_card",
       "category": "funding",
@@ -1172,7 +1660,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260712-A04",
+      "id": "SIG-20260712-A06",
       "date": "2026-07-12",
       "type": "signal_card",
       "category": "case",
@@ -1257,6 +1745,81 @@
       "fromCorePool": false
     },
     {
+      "id": "SIG-20260712-A03",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等",
+      "subject": "Tesla",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/661.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 632,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-pricing-cost",
+          "evidence-customer-metric",
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "evidence-pricing-cost",
+        "evidence-customer-metric",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-pricing-cost",
+          "label": "定价与成本"
+        },
+        {
+          "id": "evidence-customer-metric",
+          "label": "客户结果指标"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "特斯拉在《2025 年影响力报告》中披露了 Cybercab 自动驾驶出租车更多硬件与制造细节。",
+      "evidencePoints": [
+        "IT之家 7 月 12 日消息，特斯拉日前发布了 《2025 年影响力报告（Impact Report）》，其中披露了大量有关即将推出的 Cybercab 自动驾驶出租车的新细节。",
+        "这款专为 Robotaxi 打造的车型将重新定义共享出行，此次报告首次较为完整地介绍了 Cybercab 所采用的硬件配置以及全新的制造工艺。",
+        "根据特斯拉披露的信息，这款双座车型将依靠全新的动力系统、4680 电池以及革命性的制造工艺，实现极低成本和超高效率。",
+        "特斯拉表示，Cybercab 将基于全新的下一代平台打造。",
+        "报告写道：“Cybercab 将采用我们的下一代平台，搭载预计可实现至少每千瓦时行驶 6."
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "SIG-20260712-A01",
       "date": "2026-07-12",
       "type": "signal_card",
@@ -1332,6 +1895,400 @@
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260712-A05",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放",
+      "subject": "Google Voice",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/573.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 606,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "google",
+      "tags": {
+        "track": [
+          "track-ai-customer-service"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-customer-ticket"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-customer-ticket",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "谷歌云电话服务 Google Voice 首次面向个人用户推出付费订阅套餐，打破长期\"个人免费、企业付费\"模式。",
+      "evidencePoints": [
+        "谷歌 Voice 十年来最大调整告别“纯免费”：个人订阅每月 10 美元起，Gemini 纪要功能首次下放 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资...",
+        "IT之家 7 月 11 日消息，谷歌旗下云电话服务 Google Voice 迎来重大调整，首次面向个人用户推出两款付费订阅套餐，为用户提供更多增强功能，并承诺号码即便长期闲置也不会被回收。",
+        "这一变化打破了该服务长期以来“个人免费、企业付费”的固有模式，被视为 Google 对这一已有近二十年历史的服务罕见投入的信号。",
+        "在此之前，Google Voice 主要提供两种选择：针对个人账户的免费服务，以及作为 Google Workspace 附加组件面向企业及机构销售的多用户付费方案。",
+        "即便是上月刚刚推出的 Gemini 智能通话纪要功能，也仅限 Workspace 付费用户使用。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260712-A08",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式",
+      "subject": "月之暗面 / Kimi",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/619.htm",
+      "sourceLevel": "B",
+      "importanceScore": 4,
+      "rankScore": 532,
+      "evidenceScore": 34,
+      "poolRoutes": [],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-coding",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-pricing-cost",
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-coding",
+        "track-ai-infra",
+        "function-engineering",
+        "customer-developer-team",
+        "evidence-pricing-cost",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        }
+      ],
+      "fact": "月之暗面宣布 K2.7 Code 高速版结束 Beta，成为常驻可选模式。",
+      "evidencePoints": [
+        "IT之家 7 月 11 日消息，月之暗面官方昨晚宣布， K2.",
+        "订阅 Allegretto 及以上会员计划的用户，在 Kimi Code CLI 或其他工具中使用 Coding Plan 进行编程时，无需任何申请，可以直接调用 K2.",
+        "7 Code HighSpeed 在 Coding Plan 中的用量消耗是普通版模型的 3 倍 。",
+        "用户可以根据实际任务需求和当前用量，选择是否开启高速模式。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": false
+    },
+    {
+      "id": "SIG-20260712-A07",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "阶跃星辰发布 Step Edge 端侧模型全家桶",
+      "subject": "阶跃星辰",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/681.htm",
+      "sourceLevel": "B",
+      "importanceScore": 4,
+      "rankScore": 524,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-models",
+          "track-enterprise-data",
+          "track-ai-infra",
+          "track-ai-customer-service"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-knowledge-base",
+          "scenario-customer-ticket"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-models",
+        "track-enterprise-data",
+        "track-ai-infra",
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-knowledge-base",
+        "scenario-customer-ticket",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-models",
+          "label": "模型与能力"
+        },
+        {
+          "id": "track-enterprise-data",
+          "label": "企业数据智能"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        }
+      ],
+      "fact": "阶跃星辰推出 Step Edge 端侧模型全家桶，包含 Step Edge 基础模型、Step Edge Audio、Step Edge GUI 和 Step Edge Gen 四款产品，面向手机、汽车等终端场景。",
+      "evidencePoints": [
+        "IT之家了解到，这四款模型面向手机、汽车等终端场景，旨在让 Agent 不只停留在云端，而是能够真正进入终端，在本地更快响应、更好保护隐私，并通过端云协同完成更复杂的任务。",
+        "同时，Step Edge 具备三大核心亮点： 超低本地延迟： 支持低至 0.",
+        "1 秒 的端侧本地 toolcall 执行，简单、高频任务可在本地实时响应，减少对云端链路的依赖。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260712-A10",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Meta 发布 Muse Spark 1.1 模型",
+      "subject": "Meta",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceUrl": "https://the-decoder.com/metas-muse-spark-1-1-outperforms-glm-5-2-in-coding-and-costs-slightly-less",
+      "sourceLevel": "A",
+      "importanceScore": 2,
+      "rankScore": 308,
+      "evidenceScore": 40,
+      "poolRoutes": [
+        "watchlist"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "meta",
+      "tags": {
+        "track": [
+          "track-ai-coding",
+          "track-enterprise-data",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [
+          "scenario-knowledge-base"
+        ],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-pricing-cost",
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-coding",
+        "track-enterprise-data",
+        "track-ai-infra",
+        "function-engineering",
+        "scenario-knowledge-base",
+        "customer-developer-team",
+        "evidence-pricing-cost",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-enterprise-data",
+          "label": "企业数据智能"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        }
+      ],
+      "fact": "据 Artificial Analysis 数据，该模型在 Intelligence Index 上得分 51，与 GLM-5.2、GPT-5.4 和 GPT-5.6 Luna 持平；Coding Index 得分 71.3，领先 GLM-5.2（68.8），略低于 GPT-5.6 Luna（71.4）。",
+      "evidencePoints": [],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": false
+    },
+    {
+      "id": "SIG-20260712-A09",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新",
+      "subject": "Tesla",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/655.htm",
+      "sourceLevel": "B",
+      "importanceScore": 2,
+      "rankScore": 294,
+      "evidenceScore": 62,
+      "poolRoutes": [],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "特斯拉 FSD（Supervised）v14 Lite 已开始在美国以外市场推送，韩国成为全球首个获得该更新的海外市场。",
+      "evidencePoints": [
+        "IT之家 7 月 12 日消息，根据特斯拉韩国官方 X 账号 @tesla_korea 公布的消息，FSD（Supervised）v14 Lite 已开始在美国以外的市场首次推送。",
+        "那些担心因 HW3 硬件较旧而被“抛弃”的车主，终于迎来了体验最新版 FSD 的机会。",
+        "IT之家注意到，韩国正式成为全球首个获得 FSD v14 Lite 更新的海外市场。",
+        "这一安排颇为特殊，因为以往加拿大通常都会紧随美国之后率先获得特斯拉的软件更新。",
+        "但这一次，加拿大用户仍在等待，韩国反而成为 FSD v14 Lite 全球推广的第一站。"
+      ],
+      "value": "值得关注：有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": false
     },
     {
       "id": "SIG-20260711-A01",
@@ -41024,6 +41981,81 @@
       "fromCorePool": true
     },
     {
+      "id": "SIG-20260712-A03",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等",
+      "subject": "Tesla",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/661.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 632,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-pricing-cost",
+          "evidence-customer-metric",
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "evidence-pricing-cost",
+        "evidence-customer-metric",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-pricing-cost",
+          "label": "定价与成本"
+        },
+        {
+          "id": "evidence-customer-metric",
+          "label": "客户结果指标"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "特斯拉在《2025 年影响力报告》中披露了 Cybercab 自动驾驶出租车更多硬件与制造细节。",
+      "evidencePoints": [
+        "IT之家 7 月 12 日消息，特斯拉日前发布了 《2025 年影响力报告（Impact Report）》，其中披露了大量有关即将推出的 Cybercab 自动驾驶出租车的新细节。",
+        "这款专为 Robotaxi 打造的车型将重新定义共享出行，此次报告首次较为完整地介绍了 Cybercab 所采用的硬件配置以及全新的制造工艺。",
+        "根据特斯拉披露的信息，这款双座车型将依靠全新的动力系统、4680 电池以及革命性的制造工艺，实现极低成本和超高效率。",
+        "特斯拉表示，Cybercab 将基于全新的下一代平台打造。",
+        "报告写道：“Cybercab 将采用我们的下一代平台，搭载预计可实现至少每千瓦时行驶 6."
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "SIG-20260712-A01",
       "date": "2026-07-12",
       "type": "signal_card",
@@ -41099,6 +42131,174 @@
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260712-A05",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放",
+      "subject": "Google Voice",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/573.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 606,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "google",
+      "tags": {
+        "track": [
+          "track-ai-customer-service"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-customer-ticket"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-customer-ticket",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "谷歌云电话服务 Google Voice 首次面向个人用户推出付费订阅套餐，打破长期\"个人免费、企业付费\"模式。",
+      "evidencePoints": [
+        "谷歌 Voice 十年来最大调整告别“纯免费”：个人订阅每月 10 美元起，Gemini 纪要功能首次下放 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资...",
+        "IT之家 7 月 11 日消息，谷歌旗下云电话服务 Google Voice 迎来重大调整，首次面向个人用户推出两款付费订阅套餐，为用户提供更多增强功能，并承诺号码即便长期闲置也不会被回收。",
+        "这一变化打破了该服务长期以来“个人免费、企业付费”的固有模式，被视为 Google 对这一已有近二十年历史的服务罕见投入的信号。",
+        "在此之前，Google Voice 主要提供两种选择：针对个人账户的免费服务，以及作为 Google Workspace 附加组件面向企业及机构销售的多用户付费方案。",
+        "即便是上月刚刚推出的 Gemini 智能通话纪要功能，也仅限 Workspace 付费用户使用。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260712-A07",
+      "date": "2026-07-12",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "阶跃星辰发布 Step Edge 端侧模型全家桶",
+      "subject": "阶跃星辰",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/681.htm",
+      "sourceLevel": "B",
+      "importanceScore": 4,
+      "rankScore": 524,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-models",
+          "track-enterprise-data",
+          "track-ai-infra",
+          "track-ai-customer-service"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-knowledge-base",
+          "scenario-customer-ticket"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-models",
+        "track-enterprise-data",
+        "track-ai-infra",
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-knowledge-base",
+        "scenario-customer-ticket",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-models",
+          "label": "模型与能力"
+        },
+        {
+          "id": "track-enterprise-data",
+          "label": "企业数据智能"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        }
+      ],
+      "fact": "阶跃星辰推出 Step Edge 端侧模型全家桶，包含 Step Edge 基础模型、Step Edge Audio、Step Edge GUI 和 Step Edge Gen 四款产品，面向手机、汽车等终端场景。",
+      "evidencePoints": [
+        "IT之家了解到，这四款模型面向手机、汽车等终端场景，旨在让 Agent 不只停留在云端，而是能够真正进入终端，在本地更快响应、更好保护隐私，并通过端云协同完成更复杂的任务。",
+        "同时，Step Edge 具备三大核心亮点： 超低本地延迟： 支持低至 0.",
+        "1 秒 的端侧本地 toolcall 执行，简单、高频任务可在本地实时响应，减少对云端链路的依赖。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
     }
   ],
   "graph": {
@@ -41108,7 +42308,7 @@
         "id": "category:产品",
         "label": "产品",
         "type": "category",
-        "weight": 2,
+        "weight": 8,
         "category": "product-service"
       },
       {
@@ -41126,6 +42326,30 @@
         "category": "funding"
       },
       {
+        "id": "subject:Tesla",
+        "label": "Tesla",
+        "type": "subject",
+        "weight": 2,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
+        "id": "subject:阶跃星辰",
+        "label": "阶跃星辰",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
+        "id": "subject:月之暗面-/-Kimi",
+        "label": "月之暗面 / Kimi",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
         "id": "subject:Apple-/-OpenAI",
         "label": "Apple / OpenAI",
         "type": "subject",
@@ -41140,6 +42364,22 @@
         "weight": 1,
         "category": "case",
         "sourceName": "IT之家（RSS）"
+      },
+      {
+        "id": "subject:Google-Voice",
+        "label": "Google Voice",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
+        "id": "subject:Meta",
+        "label": "Meta",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "The Decoder：AI News（RSS）"
       },
       {
         "id": "subject:Orca",
@@ -41161,22 +42401,57 @@
         "id": "signal:track-ai-infra",
         "label": "AI 基础设施",
         "type": "signal",
-        "weight": 3,
+        "weight": 6,
         "tag": "track-ai-infra"
-      },
-      {
-        "id": "signal:function-engineering",
-        "label": "工程研发",
-        "type": "signal",
-        "weight": 2,
-        "tag": "function-engineering"
       },
       {
         "id": "signal:track-ai-coding",
         "label": "AI Coding",
         "type": "signal",
-        "weight": 2,
+        "weight": 4,
         "tag": "track-ai-coding"
+      },
+      {
+        "id": "signal:function-engineering",
+        "label": "工程研发",
+        "type": "signal",
+        "weight": 3,
+        "tag": "function-engineering"
+      },
+      {
+        "id": "signal:track-enterprise-data",
+        "label": "企业数据智能",
+        "type": "signal",
+        "weight": 3,
+        "tag": "track-enterprise-data"
+      },
+      {
+        "id": "signal:evidence-product-launch",
+        "label": "产品发布",
+        "type": "signal",
+        "weight": 2,
+        "tag": "evidence-product-launch"
+      },
+      {
+        "id": "signal:track-ai-models",
+        "label": "模型与能力",
+        "type": "signal",
+        "weight": 2,
+        "tag": "track-ai-models"
+      },
+      {
+        "id": "signal:evidence-pricing-cost",
+        "label": "定价与成本",
+        "type": "signal",
+        "weight": 1,
+        "tag": "evidence-pricing-cost"
+      },
+      {
+        "id": "signal:scenario-customer-ticket",
+        "label": "工单与质检",
+        "type": "signal",
+        "weight": 1,
+        "tag": "scenario-customer-ticket"
       },
       {
         "id": "signal:customer-developer-team",
@@ -41186,18 +42461,18 @@
         "tag": "customer-developer-team"
       },
       {
-        "id": "signal:track-ai-models",
-        "label": "模型与能力",
+        "id": "signal:function-customer-service",
+        "label": "客服售后",
         "type": "signal",
         "weight": 1,
-        "tag": "track-ai-models"
+        "tag": "function-customer-service"
       },
       {
-        "id": "signal:track-enterprise-data",
-        "label": "企业数据智能",
+        "id": "signal:evidence-customer-metric",
+        "label": "客户结果指标",
         "type": "signal",
         "weight": 1,
-        "tag": "track-enterprise-data"
+        "tag": "evidence-customer-metric"
       },
       {
         "id": "signal:function-sales",
@@ -41212,16 +42487,51 @@
         "type": "signal",
         "weight": 1,
         "tag": "scenario-sales-briefing"
+      },
+      {
+        "id": "signal:track-ai-customer-service",
+        "label": "AI 客服",
+        "type": "signal",
+        "weight": 1,
+        "tag": "track-ai-customer-service"
       }
     ],
     "edges": [
+      {
+        "from": "category:产品",
+        "to": "subject:Tesla",
+        "label": "产品",
+        "weight": 2,
+        "cardIds": [
+          "SIG-20260712-A03",
+          "SIG-20260712-A09"
+        ],
+        "titles": [
+          "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等",
+          "特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新"
+        ]
+      },
+      {
+        "from": "subject:Tesla",
+        "to": "signal:evidence-product-launch",
+        "label": "关联",
+        "weight": 2,
+        "cardIds": [
+          "SIG-20260712-A03",
+          "SIG-20260712-A09"
+        ],
+        "titles": [
+          "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等",
+          "特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新"
+        ]
+      },
       {
         "from": "category:案例",
         "to": "subject:Bun",
         "label": "案例",
         "weight": 1,
         "cardIds": [
-          "SIG-20260712-A04"
+          "SIG-20260712-A06"
         ],
         "titles": [
           "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun"
@@ -41252,12 +42562,60 @@
         ]
       },
       {
+        "from": "category:产品",
+        "to": "subject:Google-Voice",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A05"
+        ],
+        "titles": [
+          "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:月之暗面-/-Kimi",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A08"
+        ],
+        "titles": [
+          "月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:阶跃星辰",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A07"
+        ],
+        "titles": [
+          "阶跃星辰发布 Step Edge 端侧模型全家桶"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:Meta",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A10"
+        ],
+        "titles": [
+          "Meta 发布 Muse Spark 1.1 模型"
+        ]
+      },
+      {
         "from": "subject:Upscale",
         "to": "signal:track-ai-infra",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260712-A03"
+          "SIG-20260712-A04"
         ],
         "titles": [
           "Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元"
@@ -41269,7 +42627,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260712-A03"
+          "SIG-20260712-A04"
         ],
         "titles": [
           "Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元"
@@ -41281,7 +42639,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260712-A03"
+          "SIG-20260712-A04"
         ],
         "titles": [
           "Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元"
@@ -41329,7 +42687,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260712-A04"
+          "SIG-20260712-A06"
         ],
         "titles": [
           "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun"
@@ -41341,7 +42699,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260712-A04"
+          "SIG-20260712-A06"
         ],
         "titles": [
           "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun"
@@ -41353,10 +42711,34 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260712-A04"
+          "SIG-20260712-A06"
         ],
         "titles": [
           "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun"
+        ]
+      },
+      {
+        "from": "subject:Tesla",
+        "to": "signal:evidence-pricing-cost",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A03"
+        ],
+        "titles": [
+          "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等"
+        ]
+      },
+      {
+        "from": "subject:Tesla",
+        "to": "signal:evidence-customer-metric",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A03"
+        ],
+        "titles": [
+          "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等"
         ]
       },
       {
@@ -41396,12 +42778,156 @@
         ]
       },
       {
+        "from": "subject:Google-Voice",
+        "to": "signal:track-ai-customer-service",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A05"
+        ],
+        "titles": [
+          "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放"
+        ]
+      },
+      {
+        "from": "subject:Google-Voice",
+        "to": "signal:function-customer-service",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A05"
+        ],
+        "titles": [
+          "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放"
+        ]
+      },
+      {
+        "from": "subject:Google-Voice",
+        "to": "signal:scenario-customer-ticket",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A05"
+        ],
+        "titles": [
+          "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放"
+        ]
+      },
+      {
+        "from": "subject:月之暗面-/-Kimi",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A08"
+        ],
+        "titles": [
+          "月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式"
+        ]
+      },
+      {
+        "from": "subject:月之暗面-/-Kimi",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A08"
+        ],
+        "titles": [
+          "月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式"
+        ]
+      },
+      {
+        "from": "subject:月之暗面-/-Kimi",
+        "to": "signal:function-engineering",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A08"
+        ],
+        "titles": [
+          "月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式"
+        ]
+      },
+      {
+        "from": "subject:阶跃星辰",
+        "to": "signal:track-ai-models",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A07"
+        ],
+        "titles": [
+          "阶跃星辰发布 Step Edge 端侧模型全家桶"
+        ]
+      },
+      {
+        "from": "subject:阶跃星辰",
+        "to": "signal:track-enterprise-data",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A07"
+        ],
+        "titles": [
+          "阶跃星辰发布 Step Edge 端侧模型全家桶"
+        ]
+      },
+      {
+        "from": "subject:阶跃星辰",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A07"
+        ],
+        "titles": [
+          "阶跃星辰发布 Step Edge 端侧模型全家桶"
+        ]
+      },
+      {
+        "from": "subject:Meta",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A10"
+        ],
+        "titles": [
+          "Meta 发布 Muse Spark 1.1 模型"
+        ]
+      },
+      {
+        "from": "subject:Meta",
+        "to": "signal:track-enterprise-data",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A10"
+        ],
+        "titles": [
+          "Meta 发布 Muse Spark 1.1 模型"
+        ]
+      },
+      {
+        "from": "subject:Meta",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260712-A10"
+        ],
+        "titles": [
+          "Meta 发布 Muse Spark 1.1 模型"
+        ]
+      },
+      {
         "from": "category:融资",
         "to": "subject:Upscale",
         "label": "融资",
         "weight": 1,
         "cardIds": [
-          "SIG-20260712-A03"
+          "SIG-20260712-A04"
         ],
         "titles": [
           "Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元"
@@ -41411,33 +42937,41 @@
     "clusters": [
       {
         "id": "product-launch-vs-adoption",
-        "title": "Apple / OpenAI、Orca 同日出现在企业 AI 产品发布里",
+        "title": "Tesla、阶跃星辰 同日出现在企业 AI 产品发布里",
         "direction": "产品发布",
         "relation": [
           "产品发布",
           "客户采用",
           "商业验证"
         ],
-        "summary": "北京智源人工智能研究院（BAAI）发布世界基础模型 Orca，该模型不预测下一个 token、视频帧或机器人动作，而是通过抽象内部表征建模世界下一状态。 苹果在加州联邦法院起诉OpenAI，指控其通过挖角员工实施\"协同行动\"窃取未发布产品的商业机密。",
-        "evidenceMeta": "素材：Apple / OpenAI / Orca",
-        "detailFocus": "北京智源人工智能研究院（BAAI）发布世界基础模型 Orca，该模型不预测下一个 token、视频帧或机器人动作，而是通过抽象内部表征建模世界下一状态。 苹果在加州联邦法院起诉OpenAI，指控其通过挖角员工实施\"协同行动\"窃取未发布产品的商业机密。",
-        "todayCount": 2,
-        "last7Count": 16,
-        "last30Count": 148,
+        "summary": "北京智源人工智能研究院（BAAI）发布世界基础模型 Orca，该模型不预测下一个 token、视频帧或机器人动作，而是通过抽象内部表征建模世界下一状态。 特斯拉在《2025 年影响力报告》中披露了 Cybercab 自动驾驶出租车更多硬件与制造细节。 苹果在加州联邦法院起诉OpenAI，指控其通过挖角员工实施\"协同行动\"窃取未发布产品的商业机密。",
+        "evidenceMeta": "素材：Tesla / 阶跃星辰 / 月之暗面 / Kimi",
+        "detailFocus": "北京智源人工智能研究院（BAAI）发布世界基础模型 Orca，该模型不预测下一个 token、视频帧或机器人动作，而是通过抽象内部表征建模世界下一状态。 特斯拉在《2025 年影响力报告》中披露了 Cybercab 自动驾驶出租车更多硬件与制造细节。 苹果在加州联邦法院起诉OpenAI，指控其通过挖角员工实施\"协同行动\"窃取未发布产品的商业机密。",
+        "todayCount": 8,
+        "last7Count": 22,
+        "last30Count": 154,
         "subjects": [
           {
-            "label": "Apple / OpenAI",
+            "label": "Tesla",
+            "count": 2
+          },
+          {
+            "label": "阶跃星辰",
             "count": 1
           },
           {
-            "label": "Orca",
+            "label": "月之暗面 / Kimi",
+            "count": 1
+          },
+          {
+            "label": "Apple / OpenAI",
             "count": 1
           }
         ],
         "categories": [
           {
             "label": "产品",
-            "count": 2
+            "count": 8
           }
         ],
         "supportingCards": [
@@ -41451,12 +42985,30 @@
             "date": "2026-07-12"
           },
           {
+            "id": "SIG-20260712-A03",
+            "title": "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等",
+            "subject": "Tesla",
+            "categoryLabel": "产品",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://www.ithome.com/0/975/661.htm",
+            "date": "2026-07-12"
+          },
+          {
             "id": "SIG-20260712-A01",
             "title": "苹果起诉OpenAI，指控其通过挖角员工窃取未发布产品商业机密",
             "subject": "Apple / OpenAI",
             "categoryLabel": "产品",
             "sourceName": "The Decoder：AI News（RSS）",
             "sourceUrl": "https://the-decoder.com/apple-sues-openai-for-allegedly-running-a-coordinated-campaign-to-steal-trade-secrets-through-poached-employees",
+            "date": "2026-07-12"
+          },
+          {
+            "id": "SIG-20260712-A05",
+            "title": "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放",
+            "subject": "Google Voice",
+            "categoryLabel": "产品",
+            "sourceName": "IT之家（RSS）",
+            "sourceUrl": "https://www.ithome.com/0/975/573.htm",
             "date": "2026-07-12"
           }
         ]
@@ -41466,33 +43018,41 @@
   "relationshipDirections": [
     {
       "id": "product-launch-vs-adoption",
-      "title": "Apple / OpenAI、Orca 同日出现在企业 AI 产品发布里",
+      "title": "Tesla、阶跃星辰 同日出现在企业 AI 产品发布里",
       "direction": "产品发布",
       "relation": [
         "产品发布",
         "客户采用",
         "商业验证"
       ],
-      "summary": "北京智源人工智能研究院（BAAI）发布世界基础模型 Orca，该模型不预测下一个 token、视频帧或机器人动作，而是通过抽象内部表征建模世界下一状态。 苹果在加州联邦法院起诉OpenAI，指控其通过挖角员工实施\"协同行动\"窃取未发布产品的商业机密。",
-      "evidenceMeta": "素材：Apple / OpenAI / Orca",
-      "detailFocus": "北京智源人工智能研究院（BAAI）发布世界基础模型 Orca，该模型不预测下一个 token、视频帧或机器人动作，而是通过抽象内部表征建模世界下一状态。 苹果在加州联邦法院起诉OpenAI，指控其通过挖角员工实施\"协同行动\"窃取未发布产品的商业机密。",
-      "todayCount": 2,
-      "last7Count": 16,
-      "last30Count": 148,
+      "summary": "北京智源人工智能研究院（BAAI）发布世界基础模型 Orca，该模型不预测下一个 token、视频帧或机器人动作，而是通过抽象内部表征建模世界下一状态。 特斯拉在《2025 年影响力报告》中披露了 Cybercab 自动驾驶出租车更多硬件与制造细节。 苹果在加州联邦法院起诉OpenAI，指控其通过挖角员工实施\"协同行动\"窃取未发布产品的商业机密。",
+      "evidenceMeta": "素材：Tesla / 阶跃星辰 / 月之暗面 / Kimi",
+      "detailFocus": "北京智源人工智能研究院（BAAI）发布世界基础模型 Orca，该模型不预测下一个 token、视频帧或机器人动作，而是通过抽象内部表征建模世界下一状态。 特斯拉在《2025 年影响力报告》中披露了 Cybercab 自动驾驶出租车更多硬件与制造细节。 苹果在加州联邦法院起诉OpenAI，指控其通过挖角员工实施\"协同行动\"窃取未发布产品的商业机密。",
+      "todayCount": 8,
+      "last7Count": 22,
+      "last30Count": 154,
       "subjects": [
         {
-          "label": "Apple / OpenAI",
+          "label": "Tesla",
+          "count": 2
+        },
+        {
+          "label": "阶跃星辰",
           "count": 1
         },
         {
-          "label": "Orca",
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        },
+        {
+          "label": "Apple / OpenAI",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "产品",
-          "count": 2
+          "count": 8
         }
       ],
       "supportingCards": [
@@ -41506,6 +43066,15 @@
           "date": "2026-07-12"
         },
         {
+          "id": "SIG-20260712-A03",
+          "title": "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等",
+          "subject": "Tesla",
+          "categoryLabel": "产品",
+          "sourceName": "IT之家（RSS）",
+          "sourceUrl": "https://www.ithome.com/0/975/661.htm",
+          "date": "2026-07-12"
+        },
+        {
           "id": "SIG-20260712-A01",
           "title": "苹果起诉OpenAI，指控其通过挖角员工窃取未发布产品商业机密",
           "subject": "Apple / OpenAI",
@@ -41513,38 +43082,96 @@
           "sourceName": "The Decoder：AI News（RSS）",
           "sourceUrl": "https://the-decoder.com/apple-sues-openai-for-allegedly-running-a-coordinated-campaign-to-steal-trade-secrets-through-poached-employees",
           "date": "2026-07-12"
+        },
+        {
+          "id": "SIG-20260712-A05",
+          "title": "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放",
+          "subject": "Google Voice",
+          "categoryLabel": "产品",
+          "sourceName": "IT之家（RSS）",
+          "sourceUrl": "https://www.ithome.com/0/975/573.htm",
+          "date": "2026-07-12"
         }
       ]
     }
   ],
   "tagAssociations": [
     {
-      "object": "track-ai-infra",
-      "label": "AI 基础设施",
-      "todayCount": 3,
-      "last7Count": 14,
-      "last30Count": 110,
+      "object": "evidence-product-launch",
+      "label": "产品发布",
+      "todayCount": 8,
+      "last7Count": 22,
+      "last30Count": 147,
       "subjects": [
         {
-          "label": "Bun",
+          "label": "Tesla",
+          "count": 2
+        },
+        {
+          "label": "阶跃星辰",
           "count": 1
         },
         {
-          "label": "Orca",
-          "count": 1
-        },
-        {
-          "label": "Upscale",
+          "label": "月之暗面 / Kimi",
           "count": 1
         }
       ],
       "categories": [
         {
-          "label": "案例",
+          "label": "产品",
+          "count": 8
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "evidence-pricing-cost",
+          "label": "定价与成本",
+          "count": 4
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 4
+        },
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 3
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "object": "track-ai-infra",
+      "label": "AI 基础设施",
+      "todayCount": 6,
+      "last7Count": 17,
+      "last30Count": 113,
+      "subjects": [
+        {
+          "label": "阶跃星辰",
           "count": 1
         },
         {
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        },
+        {
+          "label": "Bun",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
           "label": "产品",
+          "count": 4
+        },
+        {
+          "label": "案例",
           "count": 1
         },
         {
@@ -41554,34 +43181,38 @@
       ],
       "coTags": [
         {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 4
+        },
+        {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 1
+          "count": 3
         },
         {
-          "tag": "evidence-acquisition",
-          "label": "收购并购",
-          "count": 1
+          "tag": "evidence-pricing-cost",
+          "label": "定价与成本",
+          "count": 3
         },
         {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 1
-        },
-        {
-          "tag": "evidence-funding",
-          "label": "融资",
-          "count": 1
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 3
         }
       ]
     },
     {
       "object": "customer-developer-team",
       "label": "开发团队",
-      "todayCount": 2,
-      "last7Count": 17,
-      "last30Count": 138,
+      "todayCount": 4,
+      "last7Count": 19,
+      "last30Count": 140,
       "subjects": [
+        {
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        },
         {
           "label": "Apple / OpenAI",
           "count": 1
@@ -41593,11 +43224,11 @@
       ],
       "categories": [
         {
-          "label": "案例",
-          "count": 1
+          "label": "产品",
+          "count": 3
         },
         {
-          "label": "产品",
+          "label": "案例",
           "count": 1
         }
       ],
@@ -41605,34 +43236,38 @@
         {
           "tag": "function-engineering",
           "label": "工程研发",
-          "count": 2
+          "count": 4
         },
         {
           "tag": "track-ai-coding",
           "label": "AI Coding",
-          "count": 2
+          "count": 4
         },
         {
-          "tag": "evidence-acquisition",
-          "label": "收购并购",
-          "count": 1
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 3
         },
         {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 1
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
         }
       ]
     },
     {
-      "object": "evidence-product-launch",
-      "label": "产品发布",
-      "todayCount": 2,
-      "last7Count": 16,
-      "last30Count": 141,
+      "object": "evidence-pricing-cost",
+      "label": "定价与成本",
+      "todayCount": 4,
+      "last7Count": 8,
+      "last30Count": 36,
       "subjects": [
         {
-          "label": "Apple / OpenAI",
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        },
+        {
+          "label": "Meta",
           "count": 1
         },
         {
@@ -41643,39 +43278,43 @@
       "categories": [
         {
           "label": "产品",
-          "count": 2
+          "count": 4
         }
       ],
       "coTags": [
         {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 1
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 4
         },
         {
-          "tag": "evidence-pricing-cost",
-          "label": "定价与成本",
-          "count": 1
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
+        },
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 2
         },
         {
           "tag": "function-engineering",
           "label": "工程研发",
-          "count": 1
-        },
-        {
-          "tag": "scenario-knowledge-base",
-          "label": "知识库问答",
-          "count": 1
+          "count": 2
         }
       ]
     },
     {
       "object": "function-engineering",
       "label": "工程研发",
-      "todayCount": 2,
-      "last7Count": 17,
-      "last30Count": 138,
+      "todayCount": 4,
+      "last7Count": 19,
+      "last30Count": 140,
       "subjects": [
+        {
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        },
         {
           "label": "Apple / OpenAI",
           "count": 1
@@ -41687,11 +43326,11 @@
       ],
       "categories": [
         {
-          "label": "案例",
-          "count": 1
+          "label": "产品",
+          "count": 3
         },
         {
-          "label": "产品",
+          "label": "案例",
           "count": 1
         }
       ],
@@ -41699,32 +43338,36 @@
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 2
+          "count": 4
         },
         {
           "tag": "track-ai-coding",
           "label": "AI Coding",
-          "count": 2
+          "count": 4
         },
         {
-          "tag": "evidence-acquisition",
-          "label": "收购并购",
-          "count": 1
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 3
         },
         {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 1
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
         }
       ]
     },
     {
       "object": "track-ai-coding",
       "label": "AI Coding",
-      "todayCount": 2,
-      "last7Count": 17,
-      "last30Count": 138,
+      "todayCount": 4,
+      "last7Count": 19,
+      "last30Count": 140,
       "subjects": [
+        {
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        },
         {
           "label": "Apple / OpenAI",
           "count": 1
@@ -41736,11 +43379,11 @@
       ],
       "categories": [
         {
-          "label": "案例",
-          "count": 1
+          "label": "产品",
+          "count": 3
         },
         {
-          "label": "产品",
+          "label": "案例",
           "count": 1
         }
       ],
@@ -41748,22 +43391,120 @@
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 2
+          "count": 4
         },
         {
           "tag": "function-engineering",
           "label": "工程研发",
+          "count": 4
+        },
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 3
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "object": "scenario-knowledge-base",
+      "label": "知识库问答",
+      "todayCount": 3,
+      "last7Count": 12,
+      "last30Count": 64,
+      "subjects": [
+        {
+          "label": "阶跃星辰",
+          "count": 1
+        },
+        {
+          "label": "Meta",
+          "count": 1
+        },
+        {
+          "label": "Orca",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 3
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 3
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
+        },
+        {
+          "tag": "track-enterprise-data",
+          "label": "企业数据智能",
+          "count": 3
+        },
+        {
+          "tag": "evidence-pricing-cost",
+          "label": "定价与成本",
           "count": 2
-        },
+        }
+      ]
+    },
+    {
+      "object": "track-enterprise-data",
+      "label": "企业数据智能",
+      "todayCount": 3,
+      "last7Count": 12,
+      "last30Count": 63,
+      "subjects": [
         {
-          "tag": "evidence-acquisition",
-          "label": "收购并购",
+          "label": "阶跃星辰",
           "count": 1
         },
         {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
+          "label": "Meta",
           "count": 1
+        },
+        {
+          "label": "Orca",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 3
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 3
+        },
+        {
+          "tag": "scenario-knowledge-base",
+          "label": "知识库问答",
+          "count": 3
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
+        },
+        {
+          "tag": "evidence-pricing-cost",
+          "label": "定价与成本",
+          "count": 2
         }
       ]
     }
@@ -42113,9 +43854,17 @@
       },
       {
         "window": "7 天",
+        "object": "evidence-product-launch",
+        "label": "产品发布",
+        "cardCount": 22,
+        "lastSeen": "2026-07-12",
+        "filter": "evidence-product-launch"
+      },
+      {
+        "window": "7 天",
         "object": "customer-developer-team",
         "label": "开发团队",
-        "cardCount": 17,
+        "cardCount": 19,
         "lastSeen": "2026-07-12",
         "filter": "customer-developer-team"
       },
@@ -42123,7 +43872,7 @@
         "window": "7 天",
         "object": "function-engineering",
         "label": "工程研发",
-        "cardCount": 17,
+        "cardCount": 19,
         "lastSeen": "2026-07-12",
         "filter": "function-engineering"
       },
@@ -42131,17 +43880,9 @@
         "window": "7 天",
         "object": "track-ai-coding",
         "label": "AI Coding",
-        "cardCount": 17,
+        "cardCount": 19,
         "lastSeen": "2026-07-12",
         "filter": "track-ai-coding"
-      },
-      {
-        "window": "7 天",
-        "object": "evidence-product-launch",
-        "label": "产品发布",
-        "cardCount": 16,
-        "lastSeen": "2026-07-12",
-        "filter": "evidence-product-launch"
       },
       {
         "window": "30 天",
@@ -42163,7 +43904,7 @@
         "window": "30 天",
         "object": "evidence-product-launch",
         "label": "产品发布",
-        "cardCount": 141,
+        "cardCount": 147,
         "lastSeen": "2026-07-12",
         "filter": "evidence-product-launch"
       },
@@ -42171,7 +43912,7 @@
         "window": "30 天",
         "object": "customer-developer-team",
         "label": "开发团队",
-        "cardCount": 138,
+        "cardCount": 140,
         "lastSeen": "2026-07-12",
         "filter": "customer-developer-team"
       },
@@ -42179,7 +43920,7 @@
         "window": "30 天",
         "object": "function-engineering",
         "label": "工程研发",
-        "cardCount": 138,
+        "cardCount": 140,
         "lastSeen": "2026-07-12",
         "filter": "function-engineering"
       },
@@ -42187,7 +43928,7 @@
         "window": "30 天",
         "object": "track-ai-coding",
         "label": "AI Coding",
-        "cardCount": 138,
+        "cardCount": 140,
         "lastSeen": "2026-07-12",
         "filter": "track-ai-coding"
       },
@@ -42195,17 +43936,17 @@
         "window": "30 天",
         "object": "track-ai-infra",
         "label": "AI 基础设施",
-        "cardCount": 110,
+        "cardCount": 113,
         "lastSeen": "2026-07-12",
         "filter": "track-ai-infra"
       },
       {
         "window": "30 天",
-        "object": "evidence-funding",
-        "label": "融资",
-        "cardCount": 62,
+        "object": "scenario-knowledge-base",
+        "label": "知识库问答",
+        "cardCount": 64,
         "lastSeen": "2026-07-12",
-        "filter": "evidence-funding"
+        "filter": "scenario-knowledge-base"
       }
     ]
   },
@@ -42238,9 +43979,9 @@
       "title": "产品发布",
       "date": "2026-07-12",
       "signal": "evidence-product-launch",
-      "evidenceCount": 141,
+      "evidenceCount": 147,
       "window": "30 天",
-      "summary": "产品发布 has 141 linked cards in the 30 天 window.",
+      "summary": "产品发布 has 147 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42249,9 +43990,9 @@
       "title": "开发团队",
       "date": "2026-07-12",
       "signal": "customer-developer-team",
-      "evidenceCount": 138,
+      "evidenceCount": 140,
       "window": "30 天",
-      "summary": "开发团队 has 138 linked cards in the 30 天 window.",
+      "summary": "开发团队 has 140 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42260,9 +44001,9 @@
       "title": "工程研发",
       "date": "2026-07-12",
       "signal": "function-engineering",
-      "evidenceCount": 138,
+      "evidenceCount": 140,
       "window": "30 天",
-      "summary": "工程研发 has 138 linked cards in the 30 天 window.",
+      "summary": "工程研发 has 140 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42271,9 +44012,9 @@
       "title": "AI Coding",
       "date": "2026-07-12",
       "signal": "track-ai-coding",
-      "evidenceCount": 138,
+      "evidenceCount": 140,
       "window": "30 天",
-      "summary": "AI Coding has 138 linked cards in the 30 天 window.",
+      "summary": "AI Coding has 140 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42282,20 +44023,20 @@
       "title": "AI 基础设施",
       "date": "2026-07-12",
       "signal": "track-ai-infra",
-      "evidenceCount": 110,
+      "evidenceCount": 113,
       "window": "30 天",
-      "summary": "AI 基础设施 has 110 linked cards in the 30 天 window.",
+      "summary": "AI 基础设施 has 113 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
-      "id": "trend-link:30 天:evidence-funding",
+      "id": "trend-link:30 天:scenario-knowledge-base",
       "type": "trend_link",
-      "title": "融资",
+      "title": "知识库问答",
       "date": "2026-07-12",
-      "signal": "evidence-funding",
-      "evidenceCount": 62,
+      "signal": "scenario-knowledge-base",
+      "evidenceCount": 64,
       "window": "30 天",
-      "summary": "融资 has 62 linked cards in the 30 天 window.",
+      "summary": "知识库问答 has 64 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42343,14 +44084,25 @@
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
+      "id": "trend-link:7 天:evidence-product-launch",
+      "type": "trend_link",
+      "title": "产品发布",
+      "date": "2026-07-12",
+      "signal": "evidence-product-launch",
+      "evidenceCount": 22,
+      "window": "7 天",
+      "summary": "产品发布 has 22 linked cards in the 7 天 window.",
+      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
+    },
+    {
       "id": "trend-link:7 天:customer-developer-team",
       "type": "trend_link",
       "title": "开发团队",
       "date": "2026-07-12",
       "signal": "customer-developer-team",
-      "evidenceCount": 17,
+      "evidenceCount": 19,
       "window": "7 天",
-      "summary": "开发团队 has 17 linked cards in the 7 天 window.",
+      "summary": "开发团队 has 19 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42359,9 +44111,9 @@
       "title": "工程研发",
       "date": "2026-07-12",
       "signal": "function-engineering",
-      "evidenceCount": 17,
+      "evidenceCount": 19,
       "window": "7 天",
-      "summary": "工程研发 has 17 linked cards in the 7 天 window.",
+      "summary": "工程研发 has 19 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42370,167 +44122,52 @@
       "title": "AI Coding",
       "date": "2026-07-12",
       "signal": "track-ai-coding",
-      "evidenceCount": 17,
+      "evidenceCount": 19,
       "window": "7 天",
-      "summary": "AI Coding has 17 linked cards in the 7 天 window.",
+      "summary": "AI Coding has 19 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
-    },
-    {
-      "id": "trend-link:7 天:evidence-product-launch",
-      "type": "trend_link",
-      "title": "产品发布",
-      "date": "2026-07-12",
-      "signal": "evidence-product-launch",
-      "evidenceCount": 16,
-      "window": "7 天",
-      "summary": "产品发布 has 16 linked cards in the 7 天 window.",
-      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
-    },
-    {
-      "id": "tag:track-ai-infra",
-      "type": "tag_association",
-      "title": "AI 基础设施",
-      "date": "2026-07-12",
-      "signal": "track-ai-infra",
-      "evidenceCount": 3,
-      "windowCount": 110,
-      "subjects": [
-        {
-          "label": "Bun",
-          "count": 1
-        },
-        {
-          "label": "Orca",
-          "count": 1
-        },
-        {
-          "label": "Upscale",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 1
-        },
-        {
-          "label": "产品",
-          "count": 1
-        },
-        {
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 1
-        },
-        {
-          "tag": "evidence-acquisition",
-          "label": "收购并购",
-          "count": 1
-        },
-        {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 1
-        },
-        {
-          "tag": "evidence-funding",
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "summary": "AI 基础设施 appears in 3 same-day cards and 110 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
       "id": "relationship:product-launch-vs-adoption",
       "type": "relationship_cluster",
-      "title": "Apple / OpenAI、Orca 同日出现在企业 AI 产品发布里",
+      "title": "Tesla、阶跃星辰 同日出现在企业 AI 产品发布里",
       "date": "2026-07-12",
       "signal": "产品发布",
-      "evidenceCount": 2,
-      "windowCount": 148,
+      "evidenceCount": 8,
+      "windowCount": 154,
       "subjects": [
         {
-          "label": "Apple / OpenAI",
+          "label": "Tesla",
+          "count": 2
+        },
+        {
+          "label": "阶跃星辰",
           "count": 1
         },
         {
-          "label": "Orca",
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        },
+        {
+          "label": "Apple / OpenAI",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "产品",
-          "count": 2
+          "count": 8
         }
       ],
       "tags": [],
       "supportingCardIds": [
         "SIG-20260712-A02",
-        "SIG-20260712-A01"
+        "SIG-20260712-A03",
+        "SIG-20260712-A01",
+        "SIG-20260712-A05"
       ],
-      "summary": "北京智源人工智能研究院（BAAI）发布世界基础模型 Orca，该模型不预测下一个 token、视频帧或机器人动作，而是通过抽象内部表征建模世界下一状态。 苹果在加州联邦法院起诉OpenAI，指控其通过挖角员工实施\"协同行动\"窃取未发布产品的商业机密。",
+      "summary": "北京智源人工智能研究院（BAAI）发布世界基础模型 Orca，该模型不预测下一个 token、视频帧或机器人动作，而是通过抽象内部表征建模世界下一状态。 特斯拉在《2025 年影响力报告》中披露了 Cybercab 自动驾驶出租车更多硬件与制造细节。 苹果在加州联邦法院起诉OpenAI，指控其通过挖角员工实施\"协同行动\"窃取未发布产品的商业机密。",
       "whyUseful": "Use this when looking for cross-card commercial relationships."
-    },
-    {
-      "id": "tag:customer-developer-team",
-      "type": "tag_association",
-      "title": "开发团队",
-      "date": "2026-07-12",
-      "signal": "customer-developer-team",
-      "evidenceCount": 2,
-      "windowCount": 138,
-      "subjects": [
-        {
-          "label": "Apple / OpenAI",
-          "count": 1
-        },
-        {
-          "label": "Bun",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 1
-        },
-        {
-          "label": "产品",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 2
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 2
-        },
-        {
-          "tag": "evidence-acquisition",
-          "label": "收购并购",
-          "count": 1
-        },
-        {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 1
-        }
-      ],
-      "summary": "开发团队 appears in 2 same-day cards and 138 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
       "id": "tag:evidence-product-launch",
@@ -42538,11 +44175,186 @@
       "title": "产品发布",
       "date": "2026-07-12",
       "signal": "evidence-product-launch",
-      "evidenceCount": 2,
-      "windowCount": 141,
+      "evidenceCount": 8,
+      "windowCount": 147,
       "subjects": [
         {
+          "label": "Tesla",
+          "count": 2
+        },
+        {
+          "label": "阶跃星辰",
+          "count": 1
+        },
+        {
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 8
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "evidence-pricing-cost",
+          "label": "定价与成本",
+          "count": 4
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 4
+        },
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 3
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 3
+        }
+      ],
+      "summary": "产品发布 appears in 8 same-day cards and 147 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:track-ai-infra",
+      "type": "tag_association",
+      "title": "AI 基础设施",
+      "date": "2026-07-12",
+      "signal": "track-ai-infra",
+      "evidenceCount": 6,
+      "windowCount": 113,
+      "subjects": [
+        {
+          "label": "阶跃星辰",
+          "count": 1
+        },
+        {
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        },
+        {
+          "label": "Bun",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 4
+        },
+        {
+          "label": "案例",
+          "count": 1
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 4
+        },
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 3
+        },
+        {
+          "tag": "evidence-pricing-cost",
+          "label": "定价与成本",
+          "count": 3
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 3
+        }
+      ],
+      "summary": "AI 基础设施 appears in 6 same-day cards and 113 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:customer-developer-team",
+      "type": "tag_association",
+      "title": "开发团队",
+      "date": "2026-07-12",
+      "signal": "customer-developer-team",
+      "evidenceCount": 4,
+      "windowCount": 140,
+      "subjects": [
+        {
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        },
+        {
           "label": "Apple / OpenAI",
+          "count": 1
+        },
+        {
+          "label": "Bun",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 3
+        },
+        {
+          "label": "案例",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 4
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 4
+        },
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 3
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
+        }
+      ],
+      "summary": "开发团队 appears in 4 same-day cards and 140 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:evidence-pricing-cost",
+      "type": "tag_association",
+      "title": "定价与成本",
+      "date": "2026-07-12",
+      "signal": "evidence-pricing-cost",
+      "evidenceCount": 4,
+      "windowCount": 36,
+      "subjects": [
+        {
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        },
+        {
+          "label": "Meta",
           "count": 1
         },
         {
@@ -42553,32 +44365,32 @@
       "categories": [
         {
           "label": "产品",
-          "count": 2
+          "count": 4
         }
       ],
       "coTags": [
         {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 1
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 4
         },
         {
-          "tag": "evidence-pricing-cost",
-          "label": "定价与成本",
-          "count": 1
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
+        },
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 2
         },
         {
           "tag": "function-engineering",
           "label": "工程研发",
-          "count": 1
-        },
-        {
-          "tag": "scenario-knowledge-base",
-          "label": "知识库问答",
-          "count": 1
+          "count": 2
         }
       ],
-      "summary": "产品发布 appears in 2 same-day cards and 141 cards in the 30-day window.",
+      "summary": "定价与成本 appears in 4 same-day cards and 36 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -42587,9 +44399,13 @@
       "title": "工程研发",
       "date": "2026-07-12",
       "signal": "function-engineering",
-      "evidenceCount": 2,
-      "windowCount": 138,
+      "evidenceCount": 4,
+      "windowCount": 140,
       "subjects": [
+        {
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        },
         {
           "label": "Apple / OpenAI",
           "count": 1
@@ -42601,11 +44417,11 @@
       ],
       "categories": [
         {
-          "label": "案例",
-          "count": 1
+          "label": "产品",
+          "count": 3
         },
         {
-          "label": "产品",
+          "label": "案例",
           "count": 1
         }
       ],
@@ -42613,25 +44429,25 @@
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 2
+          "count": 4
         },
         {
           "tag": "track-ai-coding",
           "label": "AI Coding",
-          "count": 2
+          "count": 4
         },
         {
-          "tag": "evidence-acquisition",
-          "label": "收购并购",
-          "count": 1
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 3
         },
         {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 1
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
         }
       ],
-      "summary": "工程研发 appears in 2 same-day cards and 138 cards in the 30-day window.",
+      "summary": "工程研发 appears in 4 same-day cards and 140 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -42640,9 +44456,13 @@
       "title": "AI Coding",
       "date": "2026-07-12",
       "signal": "track-ai-coding",
-      "evidenceCount": 2,
-      "windowCount": 138,
+      "evidenceCount": 4,
+      "windowCount": 140,
       "subjects": [
+        {
+          "label": "月之暗面 / Kimi",
+          "count": 1
+        },
         {
           "label": "Apple / OpenAI",
           "count": 1
@@ -42654,11 +44474,11 @@
       ],
       "categories": [
         {
-          "label": "案例",
-          "count": 1
+          "label": "产品",
+          "count": 3
         },
         {
-          "label": "产品",
+          "label": "案例",
           "count": 1
         }
       ],
@@ -42666,25 +44486,131 @@
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 2
+          "count": 4
         },
         {
           "tag": "function-engineering",
           "label": "工程研发",
-          "count": 2
+          "count": 4
         },
         {
-          "tag": "evidence-acquisition",
-          "label": "收购并购",
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 3
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
+        }
+      ],
+      "summary": "AI Coding appears in 4 same-day cards and 140 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:scenario-knowledge-base",
+      "type": "tag_association",
+      "title": "知识库问答",
+      "date": "2026-07-12",
+      "signal": "scenario-knowledge-base",
+      "evidenceCount": 3,
+      "windowCount": 64,
+      "subjects": [
+        {
+          "label": "阶跃星辰",
           "count": 1
         },
         {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
+          "label": "Meta",
+          "count": 1
+        },
+        {
+          "label": "Orca",
           "count": 1
         }
       ],
-      "summary": "AI Coding appears in 2 same-day cards and 138 cards in the 30-day window.",
+      "categories": [
+        {
+          "label": "产品",
+          "count": 3
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 3
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
+        },
+        {
+          "tag": "track-enterprise-data",
+          "label": "企业数据智能",
+          "count": 3
+        },
+        {
+          "tag": "evidence-pricing-cost",
+          "label": "定价与成本",
+          "count": 2
+        }
+      ],
+      "summary": "知识库问答 appears in 3 same-day cards and 64 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:track-enterprise-data",
+      "type": "tag_association",
+      "title": "企业数据智能",
+      "date": "2026-07-12",
+      "signal": "track-enterprise-data",
+      "evidenceCount": 3,
+      "windowCount": 63,
+      "subjects": [
+        {
+          "label": "阶跃星辰",
+          "count": 1
+        },
+        {
+          "label": "Meta",
+          "count": 1
+        },
+        {
+          "label": "Orca",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 3
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 3
+        },
+        {
+          "tag": "scenario-knowledge-base",
+          "label": "知识库问答",
+          "count": 3
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
+        },
+        {
+          "tag": "evidence-pricing-cost",
+          "label": "定价与成本",
+          "count": 2
+        }
+      ],
+      "summary": "企业数据智能 appears in 3 same-day cards and 63 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     }
   ]

@@ -3,7 +3,7 @@ name: guanlan-raw-pool-card
 description: Use when running, repairing, auditing, or changing WaveSight AI raw-to-card Signal Card and frontstage production. Covers daily Raw/Pool audit targets, cardability judgment, Signal Card generation, unified frontstage Card display, and site/Obsidian handoff rules.
 metadata:
   guanlan:
-    version: "1.0.2"
+    version: "1.0.3"
     lane: "Business Signals"
     status: "current sub-skill"
     order: 70
@@ -11,7 +11,7 @@ metadata:
     upstream: "eligible Raw / Pool items"
     downstream: "Signal Cards and card examples"
     gates: "source-backed details, type contract, field discipline"
-    recent_learning: "Card regeneration must record and verify the exact Raw / Pool input snapshot before publication; an isolated replay count is not a production input until persisted."
+    recent_learning: "Card release must test recall as well as precision: confirmed source-backed events override stale Pool route/importance labels, while rumors, viewpoints, disputes, and research-only results need explicit rejection reasons."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -71,6 +71,13 @@ node agent-workflow/tools/generate-asset-cards-from-pool.mjs --date=YYYY-MM-DD -
 ```
 
 5. Treat the generator's semantic gate as authoritative for formal Signal Cards. If a Raw / Pool candidate is rejected for stale source, generic list/report, index-only evidence, or user-feedback-only evidence, do not silently force it into `01-Signal-Cards`.
+   - A historical `index_only` route or non-core importance label is not itself authoritative when the same Raw evidence is a readable, dated, confirmed commercial event. Re-evaluate the evidence object and formal event; do not let stale routing suppress a valid Card.
+   - Run the pinned Core/high-value recall fixture after changing Card eligibility or Pool evidence classification:
+
+```powershell
+node agent-workflow/tools/generate-asset-cards-from-pool.mjs --date=2026-07-12 --core-recall-regression-fixtures=true
+node agent-workflow/tools/run-guanlan-daily-monitor.mjs --evidence-object-regression-fixtures=true
+```
 6. Rebuild site data:
 
 ```powershell

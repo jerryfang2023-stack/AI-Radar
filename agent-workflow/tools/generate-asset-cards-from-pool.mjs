@@ -539,7 +539,20 @@ function stripSourceNoise(raw = "") {
     .replace(/\s*\/\s*path=.*$/iu, "")
     .replace(/^Skip to Main Content\s*/iu, "")
     .replace(/\s+/gu, " ")
+    .replace(/\b([A-Za-z]*\d+)\.\s+(\d+\b)/gu, "$1.$2")
     .trim();
+}
+
+function sourcePointLooksPageChrome(value = "") {
+  const text = String(value || "");
+  return /IT之家\s+首页\s+IT圈|首页.{0,80}设置.{0,80}投稿.{0,80}订阅|软媒应用.{0,80}App客户端|Skip to content|Navigation Menu|Search or jump to|Saved searches|Appearance settings/iu.test(text);
+}
+
+function sourcePointLooksSplitFragment(value = "") {
+  const text = String(value || "").trim();
+  return /\d+\.$/u.test(text)
+    || /^\d+\s+/u.test(text)
+    || /^\d+(?:\.\d+)?\s*(?:万|亿)?(?:美元|元|人民币|%)\s*[，,]/u.test(text);
 }
 
 function sourceSentences(raw = "") {
@@ -549,7 +562,8 @@ function sourceSentences(raw = "") {
     .split(/(?<=[!?。！？])\s*|(?<=\.)\s+|\n+/u)
     .map(stripSourceNoise)
     .filter((item) => item.length >= 28)
-    .filter((item) => !/Navigation Menu|Sign in|Search or jump to|Saved searches|Provide feedback|Appearance settings|Twitter|Facebook|LinkedIn|Email Updates/iu.test(item))
+    .filter((item) => !sourcePointLooksPageChrome(item))
+    .filter((item) => !/Sign in|Provide feedback|Twitter|Facebook|LinkedIn|Email Updates/iu.test(item))
     .slice(0, 16);
 }
 
@@ -580,6 +594,8 @@ function countLatinWords(value = "") {
 function sourcePointReadyForPublic(value = "") {
   const text = stripSourceNoise(value);
   if (!sourcePointIsUsable(text)) return false;
+  if (sourcePointLooksPageChrome(text)) return false;
+  if (sourcePointLooksSplitFragment(text)) return false;
   const han = countHan(text);
   const latin = countLatinWords(text);
   if (text.length > 90 && latin >= 10 && han < 18) return false;
@@ -800,6 +816,8 @@ function rawVisibleExcerptFromSection(section, excluded = []) {
     .map((item) => String(item || "").replace(/\s+/gu, " ").trim())
     .filter((item) => item.length >= 36 && item.length <= 420)
     .filter((item) => !hasTextContamination(item))
+    .filter((item) => !sourcePointLooksPageChrome(item))
+    .filter((item) => !sourcePointLooksSplitFragment(item))
     .filter((item) => !isTooSimilar(item));
   return candidates[0] || originalSourceTitleFromSection(section) || "";
 }
@@ -1321,7 +1339,7 @@ function isExplainerWithoutCommercialEvent(section) {
 
 function isResearchPrototypeWithoutCommercialEvent(section) {
   const text = sectionEvidenceText(section);
-  const researchPrototype = /\b(IEEE|JSAP|researchers?|university|prototype|theoretical peak|paper)\b|联合研发|研究团队|理论峰值|研讨会|论文/iu.test(text);
+  const researchPrototype = /\b(IEEE|JSAP|researchers?|university|prototype|theoretical peak|paper|peer review|formal verification|mathematical proof|theorem|conjecture)\b|联合研发|研究团队|理论峰值|研讨会|论文|同行评审|形式化验证|数学证明|图论|猜想|定理/iu.test(text);
   const commercialEvent = /\b(generally available|available now|commercial launch|customer deployment|procurement|contract|funding|raises?|acquires?)\b|正式可用|商业发布|客户部署|采购|合同|融资|收购/iu.test(text);
   return researchPrototype && !commercialEvent;
 }
@@ -1379,11 +1397,27 @@ function hasConcreteFundingEvent(section) {
   return isSingleCompanyFundingSignal(section);
 }
 
+function isViewpointWithoutConfirmedCommercialEvent(section) {
+  const title = poolTitle(section);
+  const viewpoint = /(?:谈|发文称|认为|表示|观点|解读).{0,80}(?:AI|智能体|模型|产品|市场)|(?:CEO|创始人|总裁).{0,40}(?:称|谈|认为|表示)/u.test(title);
+  const confirmedInTitle = /(?:正式)?(?:发布|推出|上线|开放|定价|签约|部署|收购|完成融资)/u.test(title);
+  return viewpoint && !confirmedInTitle;
+}
+
+function isUnconfirmedProductRumorOrPlan(section) {
+  const title = poolTitle(section);
+  const rumorIdentity = /^(?:消息称|据悉|传闻|爆料)|(?:或将|有望|暂定|计划|正开发|正在考虑)/u.test(title);
+  const confirmedInTitle = /(?:正式)?(?:发布|推出|上线|开放|定价|签约|部署)/u.test(title)
+    && !/(?:将|拟|计划|有望|或将).{0,12}(?:发布|推出|上线|开放)/u.test(title);
+  return rumorIdentity && !confirmedInTitle;
+}
+
 function hasConcreteProductEvent(section) {
   const text = sectionEvidenceText(section);
   const sourceIdentity = [poolTitle(section), value(section, "source"), value(section, "source_url")].join(" ");
   if (isWorkforceRetrainingProgram(section)) return false;
   if (isNewsletterRoundupSource(section)) return false;
+  if (isViewpointWithoutConfirmedCommercialEvent(section) || isUnconfirmedProductRumorOrPlan(section)) return false;
   if (/\b(shuts? down|discontinues?|kills?|folds? .{0,60} into)\b|关停|下线|并入/iu.test(sourceIdentity)) return true;
   return /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:es|ed)?|general availability|GA|new API|new SDK|new platform|new product|pricing|available now|shuts? down|discontinues?|kills?|folds? .{0,60} into)\b|发布|推出|上线|正式可用|开放|定价|关停|下线|并入/iu.test(text)
     && !/guide|tutorial|how to|core concepts|scaling dimensions|architecture overview|field guide|glossary|market map|roundup|list|指南|教程|概念|综述|清单|榜单/iu.test(text);
@@ -1599,6 +1633,13 @@ function isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section) {
   return ((consumerEntertainment || minorPlatformPolicy) && !businessAiSignal) || roundupOrExplainer || marketCommentary || ventureFormation;
 }
 
+function isExecutiveDisputeWithoutCommercialEvent(section) {
+  const text = textForInference(section).replace(/"type"\s*:\s*"[^"]*"/giu, " ");
+  const dispute = /隔空.{0,16}(?:掐架|争论|互怼)|口水战|骂战|转发.{0,24}(?:帖文|截图).{0,40}(?:指责|嘲讽|诈骗)|(?:CEO|创始人).{0,24}(?:指责|嘲讽|互怼)/iu.test(text);
+  const separateCommercialEvent = /融资|收购|并购|客户部署|生产部署|采购|合同|签约|定价|正式发布.{0,24}(?:产品|平台|API|SDK)|funding|raises?|acquisition|customer deployment|production rollout|procurement|contract|pricing|commercial launch/iu.test(text);
+  return dispute && !separateCommercialEvent;
+}
+
 function cardabilitySemanticIssues(section) {
   const issues = [];
   const text = textForInference(section);
@@ -1665,6 +1706,15 @@ function cardabilitySemanticIssues(section) {
   }
   if (isJobListingSection(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "job_listing_not_formal_signal_card"));
+  }
+  if (isViewpointWithoutConfirmedCommercialEvent(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "viewpoint_without_confirmed_commercial_event"));
+  }
+  if (isUnconfirmedProductRumorOrPlan(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "unconfirmed_product_rumor_or_plan"));
+  }
+  if (isExecutiveDisputeWithoutCommercialEvent(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "executive_dispute_without_commercial_event"));
   }
   if (isNewsletterRoundupSource(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "newsletter_roundup_requires_original_event_source"));
@@ -1860,6 +1910,10 @@ function companyFromSection(section) {
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const specialCases = [
+    [/谷歌\s*Voice|Google\s*Voice/iu, "Google Voice"],
+    [/特斯拉|\bTesla\b/iu, "Tesla"],
+    [/阶跃星辰|Step\s*Edge/iu, "阶跃星辰"],
+    [/月之暗面|Kimi\s*(?:Code|K2)/iu, "月之暗面 / Kimi"],
     [/\bOXMIQ\b/iu, "OXMIQ"],
     [/\bSK Hynix\b|SK 海力士/iu, "SK Hynix"],
     [/\bKTern\.AI\b/iu, "KTern.AI"],
@@ -1904,6 +1958,10 @@ function companyFromSection(section) {
     const company = shortCompany(found);
     if (company && !isWeakCompanyName(company) && !/^(Former|Exclusive|UPDATED|Image Credits|Source|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$/iu.test(company)) return company;
   }
+  const chineseActor = shortCompany(
+    title.match(/^(.{2,30}?)(?:正式)?(?:发布|推出|披露|上线|开放|定价|签约|部署|收购|完成融资)/u)?.[1] || "",
+  );
+  if (chineseActor && !isWeakCompanyName(chineseActor)) return chineseActor;
   const fallback = shortCompany(title.split(/[:|｜-]/u)[0] || "");
   if (!isWeakCompanyName(fallback)) return fallback;
   return domainLabelFromUrl(sourceUrl) || "Unknown";
@@ -2029,7 +2087,7 @@ function inferSignalType(section) {
     if (/\b(pricing|price|billing|rate limit)\b|定价|价格|计费/iu.test(text)) return "product_service";
     return "case";
   }
-  if (/\b(unveils?|launches?|introduces?|announces?|released?|available now|general availability)\b|发布|推出|上线|正式可用/iu.test(sourceIdentity)) return "product_service";
+  if (/\b(unveils?|launches?|introduces?|announces?|released?|available now|general availability)\b|发布|推出|披露|上线|正式登陆|正式可用/iu.test(sourceIdentity)) return "product_service";
   if (importanceType === "important_case" || importanceType === "important_vertical_solution") return "case";
   if (importanceType === "important_funding" && /\b(pivoted?|renamed|compute cluster|infrastructure|platform|deploy|deployment|service|product|business|AI biz)\b|转型|更名|托管计算|基础设施|部署|产品|业务/iu.test(`${text} ${sourceUrl}`)) return "product_service";
   if (importanceType === "important_funding") return "funding";
@@ -2243,14 +2301,18 @@ function isEligibleAutoSignal(section) {
   return autoSignalEligibilityIssues(section).length === 0;
 }
 
-function autoSignalSpec(poolRef, section, index) {
+function autoSignalSpec(poolRef, section, index, diagnostics = null) {
+  const reject = (reason) => {
+    if (diagnostics) diagnostics.reason = reason;
+    return null;
+  };
   const text = textForInference(section);
   const type = inferSignalType(section);
   const company = companyFromSection(section);
   const summaryOperatorMaterial = evidenceStrengthForSection(section) === "traceable_summary"
     && /\b(podcast|simplecast|interview|episode|ceo|founder|co-founder)\b|CEO|创始人|访谈|播客/iu.test(sectionEvidenceText(section));
 
-  if (!allowsObservationSummaryEvidence(section) && isStalePublication(section, cardFreshnessDays(section))) return null;
+  if (!allowsObservationSummaryEvidence(section) && isStalePublication(section, cardFreshnessDays(section))) return reject("stale_source_date");
 
   let scenario = scenarioFromText(text);
   if (/^(BentoCloud|Microsoft Foundry)$/u.test(company)) {
@@ -2259,11 +2321,11 @@ function autoSignalSpec(poolRef, section, index) {
   let amount = extractAmount(text);
   const prefix = `SIG-${date.replaceAll("-", "")}-A${String(index).padStart(2, "0")}`;
   const sourceTitle = originalSourceTitleFromSection(section);
-  if (!sourceTitle) return null;
+  if (!sourceTitle) return reject("original_source_title_missing");
   const sourceEventTitle = cleanSourceEventTitle(sourceTitle);
-  if (!sourceEventTitle) return null;
-  if (isWeakCompanyName(company)) return null;
-  if (type === "funding" && !hasStrictFundingAnnouncement(section, sourceEventTitle)) return null;
+  if (!sourceEventTitle) return reject("source_event_title_unusable");
+  if (isWeakCompanyName(company)) return reject("company_name_unusable");
+  if (type === "funding" && !hasStrictFundingAnnouncement(section, sourceEventTitle)) return reject("funding_announcement_unconfirmed");
   const strategicInvestment = isConfirmedStrategicInvestment(section, sourceEventTitle);
   if (strategicInvestment && !titleHasFundingAmountOrRound(sourceEventTitle)) amount = "";
   const translatedTitle = sourceTitleDisplayTitle(sourceTitle) || rawTitleZhFromSection(section);
@@ -2274,7 +2336,7 @@ function autoSignalSpec(poolRef, section, index) {
   if (!title && (allowsObservationSummaryEvidence(section) || summaryOperatorMaterial)) {
     title = `${company || "AI 公司"} 的 AI 商业观察`;
   }
-  if (!title) return null;
+  if (!title) return reject("public_title_unavailable");
   const sourcePoints = sourcePointsFromSection(section);
   const sourceExcerpt = sourceExcerptFromSection(section, sourcePoints);
   const observationSummaryEvidenceAllowed = allowsObservationSummaryEvidence(section);
@@ -2285,13 +2347,15 @@ function autoSignalSpec(poolRef, section, index) {
   if (!sourcePointIsUsable(eventLine) && (observationSummaryEvidenceAllowed || summaryOperatorMaterial)) {
     eventLine = `${company || "AI 公司"} 的公开访谈或趋势材料讨论 AI 商业化、产品方向、客户采用或市场结构变化：${sourceEventTitle}`;
   }
-  if (!sourcePointIsUsable(eventLine)) return null;
+  if (!sourcePointIsUsable(eventLine)) return reject("source_event_line_unusable");
+  const companySlug = slugify(company);
+  const sourceSlug = slugify(sourceEventTitle);
   return {
     id: prefix,
     poolRef,
     type,
     dir: dirForSignalType(type),
-    slug: `${slugify(company)}-${slugify(scenario)}-${poolRef.toLowerCase()}`,
+    slug: `${companySlug === "auto-signal" ? sourceSlug : companySlug}-${slugify(scenario)}-${poolRef.toLowerCase()}`,
     company,
     title,
     sourceTitle,
@@ -2335,10 +2399,14 @@ function autoSignalEligibilityIssues(section) {
   const importanceType = value(section, "importance_type");
   const poolRoutes = value(section, "pool_routes");
   const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source_type")}`;
-  if (/\bindex_only\b/iu.test(poolRoutes)) {
+  const hasFormalEvent = hasFormalCardEvent(section);
+  const identityIsIndexOnly = sectionSourceIdentityIndicatesIndexOnly(section)
+    || value(section, "index_only_evidence") === "true"
+    || isRootOrHomeSourceUrl(sourceUrl);
+  if (/\bindex_only\b/iu.test(poolRoutes) && (!hasFormalEvent || identityIsIndexOnly)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "pool_route_index_only_not_formal_card"));
   }
-  if (!coreImportanceTypes.has(importanceType) && !allowsObservationSummaryEvidence(section)) {
+  if (!coreImportanceTypes.has(importanceType) && !allowsObservationSummaryEvidence(section) && !hasFormalEvent) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, `unsupported_importance_type:${importanceType || "missing"}`));
   }
   if (inferSignalType(section) === "funding" && importanceType === "important_funding" && !isSingleCompanyFundingSignal(section)) {
@@ -2432,9 +2500,10 @@ function autoSignalsFromPool(sections, explicitSpecs) {
       notPromotedCandidates.push(notPromotedCandidateRow(poolRef, section, eligibilityIssues));
       continue;
     }
-    const spec = autoSignalSpec(poolRef, section, index);
+    const diagnostics = {};
+    const spec = autoSignalSpec(poolRef, section, index, diagnostics);
     if (!spec) {
-      notPromotedCandidates.push(notPromotedCandidateRow(poolRef, section, ["auto_signal_spec_null"]));
+      notPromotedCandidates.push(notPromotedCandidateRow(poolRef, section, [`auto_signal_spec_null:${diagnostics.reason || "unknown"}`]));
       continue;
     }
     const clusterKey = signalClusterKey(spec, section);
@@ -3131,5 +3200,52 @@ function runQualityRegressionFixtures() {
   console.log(JSON.stringify({ ok: true, date, fixture: "business-signal-card-editorial-quality" }, null, 2));
 }
 
-if (args.get("quality-regression-fixtures") === "true") runQualityRegressionFixtures();
+function runCoreRecallRegressionFixtures() {
+  assert.equal(date, "2026-07-12", "core recall fixtures are pinned to the 2026-07-12 production Pool");
+  const sections = poolSections();
+  const section = (poolRef) => {
+    const found = sections.get(poolRef);
+    assert.ok(found, `${poolRef} must exist in the production Pool fixture`);
+    return found;
+  };
+  const issuesFor = (poolRef) => autoSignalEligibilityIssues(section(poolRef));
+  const specFor = (poolRef) => {
+    const diagnostics = {};
+    const spec = autoSignalSpec(poolRef, section(poolRef), Number(poolRef.replace("P-", "")), diagnostics);
+    return { spec, diagnostics };
+  };
+
+  const positiveFailures = [];
+  for (const poolRef of ["P-019", "P-020", "P-033", "P-056", "P-060"]) {
+    const issues = issuesFor(poolRef);
+    const { spec, diagnostics } = specFor(poolRef);
+    if (issues.length || !spec) positiveFailures.push(`${poolRef}: ${issues.join(", ") || diagnostics.reason || "unknown"}`);
+    if (spec?.sourcePoints?.some(sourcePointLooksPageChrome)) positiveFailures.push(`${poolRef}: source points contain page navigation chrome`);
+    if (poolRef === "P-060" && spec?.sourcePoints?.some(sourcePointLooksSplitFragment)) positiveFailures.push(`${poolRef}: model version was split across source points`);
+  }
+  assert.deepEqual(positiveFailures, [], `confirmed high-value product events must be recalled:\n${positiveFailures.join("\n")}`);
+
+  const bunSpec = normalizeSignalSpec(autoSignalSpec("P-051", section("P-051"), 51));
+  const bunDetails = cardDetailSections(signalCard(bunSpec, section("P-051")));
+  assert.ok(!sourcePointLooksSplitFragment(bunDetails["可见原文片段"]), "P-051 visible excerpt must not begin at a split decimal/currency fragment");
+  assert.ok(!sourcePointLooksPageChrome(bunDetails["可见原文片段"]), "P-051 visible excerpt must not contain page navigation chrome");
+
+  const rejected = {
+    "P-003": /research_prototype_without_commercial_event/iu,
+    "P-021": /job_listing_not_formal_signal_card/iu,
+    "P-022": /viewpoint_without_confirmed_commercial_event/iu,
+    "P-024": /executive_dispute_without_commercial_event/iu,
+    "P-025": /unconfirmed_product_rumor_or_plan/iu,
+    "P-054": /research_benchmark_without_commercial_event/iu,
+  };
+  for (const [poolRef, expectedIssue] of Object.entries(rejected)) {
+    const issues = issuesFor(poolRef);
+    assert.ok(issues.some((issue) => expectedIssue.test(issue)), `${poolRef} must remain backend-only; got ${issues.join(", ")}`);
+  }
+
+  console.log(JSON.stringify({ ok: true, date, fixture: "business-signal-core-recall" }, null, 2));
+}
+
+if (args.get("core-recall-regression-fixtures") === "true") runCoreRecallRegressionFixtures();
+else if (args.get("quality-regression-fixtures") === "true") runQualityRegressionFixtures();
 else main();
