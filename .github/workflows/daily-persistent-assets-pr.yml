@@ -171,7 +171,7 @@ jobs:
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/assert-business-signals-frontstage.mjs
-          node --check agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
+          node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
           node --check agent-workflow/tools/classify-business-signals-production-state.mjs
           node --check agent-workflow/tools/assert-v3-source-first-frontstage.mjs
           node --check agent-workflow/tools/frontstage-regression-gate.mjs

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 
 const root = process.cwd();
 
@@ -29,6 +30,17 @@ const dailyEvals = read("agent-workflow/skills/guanlan-daily-monitor/evals/daily
 
 const problems = [];
 const policy = config.pipeline_policy || {};
+const monitorStartup = spawnSync(
+  process.execPath,
+  [path.join(root, "agent-workflow", "tools", "run-guanlan-daily-monitor.mjs"), "--source-only=invalid", "--dry-run=true"],
+  { cwd: root, encoding: "utf8" }
+);
+const monitorStartupOutput = `${monitorStartup.stdout || ""}\n${monitorStartup.stderr || ""}`;
+
+if (!monitorStartupOutput.includes("Unknown --source-only=invalid")) {
+  const firstFailureLine = monitorStartupOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
+  problems.push(`daily monitor startup smoke failed before source routing: ${firstFailureLine}`);
+}
 
 if (Number(policy.monitor_attempts) !== 1) problems.push("pipeline_policy.monitor_attempts must be 1");
 if (Number(policy.targeted_supply_refill_cycles) !== 1) problems.push("pipeline_policy.targeted_supply_refill_cycles must be 1");
@@ -80,7 +92,7 @@ for (const [name, text] of [["production workflow", workflow], ["dry-run workflo
 const result = {
   ok: problems.length === 0,
   policy_version: config.schema_version || "unknown",
-  checks: 15,
+  checks: 16,
   problems,
 };
 
