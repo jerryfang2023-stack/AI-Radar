@@ -1,26 +1,26 @@
 ---
 title: Community Intelligence Index
-date: 2026-07-11
+date: 2026-07-12
 status: active
 type: community-intelligence-index
 source: community-intelligence
 ---
 
 # Community Intelligence Index｜社群情报总索引
-最近归档：[[2026-07-11 Community Intelligence]]
+最近归档：[[2026-07-12 Community Intelligence]]
 ## 分类入口
 - [[Industry Cases]]
 - [[Tool Tips]]
 - [[Opportunities]]
 - [[Resource Links]]
 ## 今日概览
-- 生成时间：2026/07/11 08:32
+- 生成时间：2026/07/12 08:33
 - 去重后条目：61
 - 行业案例：5
 - 工具技巧：16
 - 商业机会：40
 - 资料链接：47
-- 本轮搜索词：外贸、跨境电商、企业培训、招聘、财税、获客、成交、交付
+- 本轮搜索词：跨境电商、企业培训、招聘、财税、获客、成交、交付、私域
 ## 今日高价值条目
 | 标题 | 来源 | 场景 | 资料数 | 链接 |
 |---|---|---:|---:|---|
