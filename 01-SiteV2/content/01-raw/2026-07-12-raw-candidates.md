@@ -340,7 +340,7 @@ generated_at: 2026-07-12T06:10:44.064Z
 - research_status：not_research
 - 主题分类：AI Hardware investment and financing
 - 关键词组：ai-hardware-investment-signal
-- 发布时间：unknown
+- 发布时间：2026-06-22T00:00:00.000Z
 - 分类：ai_hardware_original
 - 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
 - importance_type: important_funding

@@ -32,3 +32,14 @@
 9. `monitor_startup_smoke`
    - Pass when the pipeline-policy gate loads the daily monitor and reaches source routing before production collection begins.
    - Fail when an undefined top-level config reference or other module-startup error can pass syntax checks and make every peer source collector return empty artifacts.
+
+10. `published_metadata_ingestion`
+   - Pass when original-source `article:published_time`, `datePublished`, or `dateCreated` metadata is normalized and persisted to Raw `published_at` before freshness evaluation.
+   - Fail when a rich-evidence funding or customer event is excluded only because source publication metadata was extracted as text but discarded as metadata.
+
+11. `multilingual_job_listing_boundary`
+   - Pass when English and Chinese recruitment stories, including `招聘/招募/诚聘 + 岗位`, remain backend-only unless the same source contains a separate dated product, funding, or customer event.
+
+12. `raw_funding_evidence_recall`
+   - Pass when strict funding confirmation reads Raw structured excerpts and evidence seeds, even if Pool trace metadata truncates a serialized excerpt.
+   - Fail when a dated official funding announcement with amount, round, investors, and valuation becomes `auto_signal_spec_null` despite complete Raw evidence.
