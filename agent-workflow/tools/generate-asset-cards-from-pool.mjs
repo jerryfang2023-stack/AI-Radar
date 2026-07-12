@@ -1555,6 +1555,9 @@ function isJobListingSection(section) {
   if (/\b(jobs\.lever\.co|greenhouse\.io|workdayjobs|ashbyhq|builtin\.com\/job|apply for this job|job opening|job listing|solutions architect|forward deployed ai engineer)\b/iu.test(titleUrl)) {
     return true;
   }
+  if (/(?:招聘|招募|诚聘).{0,24}(?:产品经理|工程师|经理|总监|负责人|岗位|职位|人才|员工)|(?:产品经理|工程师|岗位|职位).{0,24}(?:招聘|招募|诚聘)/u.test(titleUrl)) {
+    return true;
+  }
   const text = [
     poolTitle(section),
     value(section, "source"),
@@ -1941,6 +1944,7 @@ function isSingleCompanyFundingSignal(section) {
 }
 
 function hasStrictFundingAnnouncement(section, sourceEventTitle = "") {
+  const raw = readRawJson(section);
   const identityHaystack = [
     sourceEventTitle,
     poolTitle(section),
@@ -1951,7 +1955,11 @@ function hasStrictFundingAnnouncement(section, sourceEventTitle = "") {
     value(section, "key_excerpts"),
     value(section, "evidence_seed"),
   ].map(stripSourceNoise).join(" ");
-  const haystack = `${identityHaystack} ${evidenceHaystack}`;
+  const rawEvidenceHaystack = [
+    JSON.stringify(raw.key_excerpts || []),
+    JSON.stringify(raw.evidence_seed || {}),
+  ].join(" ");
+  const haystack = `${identityHaystack} ${evidenceHaystack} ${rawEvidenceHaystack}`;
   if (/\b(contract|procurement|tender|vehicle|autonomous ground vehicles|war|military|defense contract|export curbs?|self-developed chip|stake|equity stake|capital expenditure|capex|data center|investment plan|is seeking|seeks to raise|plans to raise|reportedly|rumou?red|in talks)\b|乌克兰|参战|车辆|出口管制|寻求融资|计划融资|消息称|据悉|入股/iu.test(identityHaystack)) {
     return false;
   }
@@ -3003,6 +3011,13 @@ function runQualityRegressionFixtures() {
   };
   const specFor = (poolRef, index = 1) => autoSignalSpec(poolRef, section(poolRef), index);
   const issuesFor = (poolRef) => autoSignalEligibilityIssues(section(poolRef));
+
+  const chineseHiringFixture = [
+    "## P-999｜OpenAI 招聘家庭产品经理，拓展家庭用户市场",
+    "- source_url: https://example.com/openai-family-product-manager",
+    "- key_excerpts: OpenAI 正在招聘一名家庭产品经理。",
+  ].join("\n");
+  assert.equal(isJobListingSection(chineseHiringFixture), true, "Chinese recruitment stories must remain backend-only");
 
   for (const poolRef of ["P-001", "P-002", "P-012", "P-015", "P-026", "P-043"]) {
     assert.deepEqual(issuesFor(poolRef), [], `${poolRef} should pass the six Card-entry gates`);

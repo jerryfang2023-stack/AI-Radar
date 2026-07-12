@@ -36,10 +36,20 @@ const monitorStartup = spawnSync(
   { cwd: root, encoding: "utf8" }
 );
 const monitorStartupOutput = `${monitorStartup.stdout || ""}\n${monitorStartup.stderr || ""}`;
+const monitorMetadataFixture = spawnSync(
+  process.execPath,
+  [path.join(root, "agent-workflow", "tools", "run-guanlan-daily-monitor.mjs"), "--metadata-regression-fixtures=true"],
+  { cwd: root, encoding: "utf8" }
+);
+const monitorMetadataOutput = `${monitorMetadataFixture.stdout || ""}\n${monitorMetadataFixture.stderr || ""}`;
 
 if (!monitorStartupOutput.includes("Unknown --source-only=invalid")) {
   const firstFailureLine = monitorStartupOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
   problems.push(`daily monitor startup smoke failed before source routing: ${firstFailureLine}`);
+}
+if (monitorMetadataFixture.status !== 0 || !monitorMetadataOutput.includes('"fixture": "source-publication-metadata"')) {
+  const firstFailureLine = monitorMetadataOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
+  problems.push(`daily monitor publication-metadata fixture failed: ${firstFailureLine}`);
 }
 
 if (Number(policy.monitor_attempts) !== 1) problems.push("pipeline_policy.monitor_attempts must be 1");

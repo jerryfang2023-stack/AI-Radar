@@ -85,6 +85,7 @@ const historicalDedupeEnabled = args.get("historical-dedupe") !== "false";
 const rawDedupeBuffer = Number(args.get("raw-dedupe-buffer") || 40);
 const dryRun = args.get("dry-run") === "true";
 const sourceOnlyMode = String(args.get("source-only") || "").trim().toLowerCase();
+const metadataFixtureMode = args.get("metadata-regression-fixtures") === "true";
 const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
 const fetchTimeoutMs = Number(args.get("fetch-timeout-ms") || 20000);
 const snapshotTimeoutMs = Number(args.get("snapshot-timeout-ms") || 16000);
@@ -1208,6 +1209,56 @@ function extractMetaText(html = "") {
     if (content) values.push(content);
   }
   return normalizeExtractedText(values.join("\n\n"));
+}
+
+function extractPublishedAtFromHtml(html = "") {
+  const candidates = [];
+  const metaMatches = String(html || "").matchAll(/<meta\b[^>]*>/giu);
+  for (const match of metaMatches) {
+    const tag = match[0];
+    const key = [attrValue(tag, "name"), attrValue(tag, "property"), attrValue(tag, "itemprop")]
+      .join(" ")
+      .toLowerCase();
+    if (!/(?:article:published_time|datepublished|date_created|publishdate|pubdate)/u.test(key)) continue;
+    const content = attrValue(tag, "content") || attrValue(tag, "datetime");
+    if (content) candidates.push(content);
+  }
+
+  const visit = (node) => {
+    if (!node) return;
+    if (Array.isArray(node)) {
+      node.forEach(visit);
+      return;
+    }
+    if (typeof node !== "object") return;
+    for (const key of ["datePublished", "dateCreated"]) {
+      if (typeof node[key] === "string") candidates.push(node[key]);
+    }
+    if (node["@graph"]) visit(node["@graph"]);
+  };
+  const blocks = String(html || "").matchAll(/<script\b[^>]*type\s*=\s*["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/giu);
+  for (const block of blocks) {
+    const rawJson = decodeHtmlEntities(block[1] || "").trim();
+    if (!rawJson) continue;
+    try {
+      visit(JSON.parse(rawJson));
+    } catch {
+      // Invalid JSON-LD is ignored; visible source evidence remains available.
+    }
+  }
+  return normalizePublishedAt(candidates);
+}
+
+async function runMetadataRegressionFixtures() {
+  const jsonLd = '<script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2026-06-22"}</script>';
+  const meta = '<meta property="article:published_time" content="2026-07-12T03:30:00Z">';
+  if (extractPublishedAtFromHtml(jsonLd) !== "2026-06-22T00:00:00.000Z") {
+    throw new Error("JSON-LD datePublished was not normalized");
+  }
+  if (extractPublishedAtFromHtml(meta) !== "2026-07-12T03:30:00.000Z") {
+    throw new Error("article:published_time was not normalized");
+  }
+  console.log(JSON.stringify({ ok: true, fixture: "source-publication-metadata" }, null, 2));
 }
 
 function flattenJsonText(value, fields = []) {
@@ -2679,6 +2730,7 @@ async function fetchSourceSnapshot(item) {
       };
     }
     const bodyText = await response.text();
+    const publishedAt = extractPublishedAtFromHtml(bodyText);
     const extracted = extractReadableSnapshotText(bodyText, contentType, 60000);
     if (extracted.rejected) {
       const text = summary || "来源正文包含 PDF、图片、压缩流或乱码特征；未写入正文证据，进入 Core Pool / Card 前必须回源重抓。";
@@ -2721,6 +2773,7 @@ async function fetchSourceSnapshot(item) {
       extraction_method: extracted.method || "unknown",
       readability_score: extracted.diagnostics?.readability_score ?? 0,
       extractor_diagnostics: extracted.diagnostics || {},
+      published_at: publishedAt,
       error: response.ok ? "" : `${response.status} ${response.statusText}`,
     };
   } catch (error) {
@@ -2755,7 +2808,12 @@ async function enrichSnapshots(items) {
     while (cursor < items.length) {
       const index = cursor;
       cursor += 1;
-      enriched[index] = { ...items[index], snapshot: await fetchSourceSnapshot(items[index]) };
+      const snapshot = await fetchSourceSnapshot(items[index]);
+      enriched[index] = {
+        ...items[index],
+        published_at: normalizePublishedAt(items[index].published_at, snapshot.published_at),
+        snapshot,
+      };
     }
   }));
   return enriched;
@@ -5340,7 +5398,7 @@ async function main() {
   );
 }
 
-(sourceOnlyMode ? runSourceOnly() : main()).catch((error) => {
+(metadataFixtureMode ? runMetadataRegressionFixtures() : sourceOnlyMode ? runSourceOnly() : main()).catch((error) => {
   console.error(error);
   process.exit(1);
 });
