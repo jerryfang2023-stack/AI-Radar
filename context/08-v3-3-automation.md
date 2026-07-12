@@ -28,6 +28,7 @@ Current monitor parameter baseline:
 
 - diagnostic score reference: `85` only as report context; evidence-supply, Card/editorial and frontstage gates decide release;
 - `--max-cycles=1`; production does not recollect every source lane or rerun the full monitor automatically;
+- post-fetch historical hash dedupe may adaptively consume more candidates from the same source-artifact aggregation, up to the configured adaptive limit; it does not trigger another source collection cycle;
 - `--search-limit=200`;
 - `--search-path-query-limit=5`;
 - `--gdelt-query-limit=12`;
