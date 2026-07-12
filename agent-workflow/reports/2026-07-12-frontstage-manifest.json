@@ -1,0 +1,799 @@
+{
+  "date": "2026-07-12",
+  "generated_at": "2026-07-12T09:28:51.023Z",
+  "signal_card_assets": [
+    {
+      "id": "SIG-20260712-A01",
+      "pool_ref": "P-004",
+      "title": "苹果起诉OpenAI，指控其通过挖角员工窃取未发布产品商业机密",
+      "type": "product_service",
+      "company": "Apple / OpenAI"
+    },
+    {
+      "id": "SIG-20260712-A02",
+      "pool_ref": "P-017",
+      "title": "北京智源发布世界基础模型 Orca，不预测 token 而建模世界下一状态",
+      "type": "product_service",
+      "company": "Orca"
+    },
+    {
+      "id": "SIG-20260712-A03",
+      "pool_ref": "P-009",
+      "title": "Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元",
+      "type": "funding",
+      "company": "Upscale"
+    },
+    {
+      "id": "SIG-20260712-A04",
+      "pool_ref": "P-042",
+      "title": "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun",
+      "type": "case",
+      "company": "Bun"
+    }
+  ],
+  "not_promoted_candidates": [
+    {
+      "pool_ref": "P-001",
+      "title": "微软和 Meta 对 CoreWeave 与 Nebius 的 1222 亿美元承诺额剖析",
+      "source_url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "business_signal_scope:unsupported_importance_type:supporting_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:unsupported_importance_type:supporting_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-002",
+      "title": "OpenAI GPT-5.6 Sol Ultra 一小时解决 50 年数学猜想",
+      "source_url": "https://the-decoder.com/openais-gpt-5-6-sol-ultra-reportedly-solves-a-50-year-old-math-problem-in-under-an-hour",
+      "issues": [
+        "valid_page_type:research_prototype_without_commercial_event",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-003",
+      "title": "OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想",
+      "source_url": "https://www.ithome.com/0/975/646.htm",
+      "issues": [
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-005",
+      "title": "Mesh LLM：在 iroh 上进行分布式人工智能计算",
+      "source_url": "https://www.iroh.computer/blog/mesh-llm",
+      "issues": [
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-006",
+      "title": "Ghost Font：一种人类能读懂但AI无法识别的反AI字体",
+      "source_url": "https://www.mixfont.com/ghost-font",
+      "issues": [
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend"
+      ],
+      "not_promoted_reason": "business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, business_signal_scope:unsupported_importance_type:important_technical_trend",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-007",
+      "title": "OpenAI 招聘家庭产品经理，ChatGPT 用户向年长群体扩展",
+      "source_url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households",
+      "issues": [
+        "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+        "valid_page_type:job_listing_not_formal_signal_card"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, valid_page_type:job_listing_not_formal_signal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-008",
+      "title": "Forward Deployed Engineering: Moving AI Pilots to Production",
+      "source_url": "https://beetroot.co/ai-ml/forward-deployed-engineering-the-role-between-ai-pilots-and-production/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-010",
+      "title": "Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows – Company Announcement - FT.com",
+      "source_url": "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605120900BIZWIRE_USPRX____20260512_BW858142-1",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-011",
+      "title": "Wonderful raises $150M Series B",
+      "source_url": "https://thenextweb.com/news/wonderful-series-b-enterprise-ai-agents",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-012",
+      "title": "Accelerating supply chain AI with Kinaxis MCP on Amazon Bedrock AgentCore | AWS Partner Network (APN) Blog",
+      "source_url": "https://aws.amazon.com/blogs/apn/accelerating-supply-chain-ai-with-kinaxis-mcp-on-amazon-bedrock-agentcore/",
+      "issues": [
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-013",
+      "title": "awesome-copilot/skills/devops-rollout-plan/SKILL.md at main - GitHub",
+      "source_url": "https://github.com/github/awesome-copilot/blob/main/skills/devops-rollout-plan/SKILL.md",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-014",
+      "title": "Databricks will bake OpenAI models into its products in $100M bet to ...",
+      "source_url": "https://techcrunch.com/2025/09/25/databricks-will-bake-openai-models-into-its-products-in-100m-bet-to-spur-enterprise-adoption/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-015",
+      "title": "Iberdrola enhances IT operations using Amazon Bedrock AgentCore | Artificial Intelligence",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/iberdrola-enhances-it-operations-using-amazon-bedrock-agentcore/",
+      "issues": [
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-016",
+      "title": "Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale – Company Announcement - FT.com",
+      "source_url": "https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-018",
+      "title": "Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI",
+      "source_url": "https://www.marktechpost.com/2026/07/11/mira-muratis-thinking-machines-lab-makes-the-technical-case-for-human-centered-ai-built-on-customizable-model-weights",
+      "issues": [
+        "valid_page_type:research_prototype_without_commercial_event",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend"
+      ],
+      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:unsupported_importance_type:important_technical_trend",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-019",
+      "title": "microsoft/ai-agents-for-beginners: 12 Lessons to Get ... - GitHub",
+      "source_url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-020",
+      "title": "OpenAI 承认 ChatGPT Work 发布\"并非一切顺利\"，紧急修复用户体验和成本问题",
+      "source_url": "https://the-decoder.com/openai-admits-it-didnt-get-everything-quite-right-with-chatgpt-work-launch-and-scrambles-to-fix-ux-and-costs",
+      "issues": [
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:unsupported_importance_type:supporting_signal"
+      ],
+      "not_promoted_reason": "valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:unsupported_importance_type:supporting_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-021",
+      "title": "Hitachi Announces Strategic Partnership With Anthropic to Strengthen \"Lumada 3.0\" Through Frontier AI – Company Announcement - FT.com",
+      "source_url": "https://markets.ft.com/data/announce/detail?dockey=600-202605182000BIZWIRE_USPRX____20260518_BW301548-1",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "source_auditability:discovery_source_not_resolved"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, source_auditability:discovery_source_not_resolved",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-022",
+      "title": "Tiered Network Policy: Scaling Kubernetes Security",
+      "source_url": "https://www.tigera.io/blog/tiered-network-policy-scaling-kubernetes-security/",
+      "issues": [
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-023",
+      "title": "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放",
+      "source_url": "https://www.ithome.com/0/975/573.htm",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-024",
+      "title": "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等",
+      "source_url": "https://www.ithome.com/0/975/661.htm",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-025",
+      "title": "OpenAI 招聘家庭产品经理，拓展家庭用户市场",
+      "source_url": "https://www.ithome.com/0/975/633.htm",
+      "issues": [
+        "valid_page_type:job_listing_not_formal_signal_card"
+      ],
+      "not_promoted_reason": "valid_page_type:job_listing_not_formal_signal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-026",
+      "title": "OpenAI&#039;s GPT-5.6 Sol autonomously post-trained the smaller Luna model with a &quot;fairly underspecified prompt&quot;",
+      "source_url": "https://the-decoder.com/openais-gpt-5-6-sol-autonomously-post-trained-the-smaller-luna-model-with-a-fairly-underspecified-prompt/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_prototype_without_commercial_event",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_prototype_without_commercial_event, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-027",
+      "title": "努比亚倪飞谈 AI 智能体手机：下半场从\"功能叠加\"走向\"原生智能体\"",
+      "source_url": "https://www.ithome.com/0/975/662.htm",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-028",
+      "title": "特斯拉正开发 Grok 语音控制 FSD 功能",
+      "source_url": "https://www.ithome.com/0/975/658.htm",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "business_signal_scope:unsupported_importance_type:supporting_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:supporting_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-029",
+      "title": "GPT-5.6 上线之际，马斯克与奥尔特曼隔空\"掐架\"",
+      "source_url": "https://www.ithome.com/0/975/641.htm",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-030",
+      "title": "消息称中兴系战略深度聚焦 AI 手机，常规产品线暂定正常迭代",
+      "source_url": "https://www.ithome.com/0/975/478.htm",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-031",
+      "title": "Meta 发布 Muse Spark 1.1 模型",
+      "source_url": "https://the-decoder.com/metas-muse-spark-1-1-outperforms-glm-5-2-in-coding-and-costs-slightly-less",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-032",
+      "title": "xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史",
+      "source_url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "valid_page_type:index_only_evidence",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, valid_page_type:generic_report_or_list_not_fact_signal, fact_type_constraints:user_feedback_or_commentary_not_verified_fact, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_only_evidence, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-033",
+      "title": "别再让我去问LLM了：当\"Ask Claude\"成为拒绝深度交流的借口",
+      "source_url": "https://blog.yaelwrites.com/stop-telling-me-to-ask-an-llm",
+      "issues": [
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend"
+      ],
+      "not_promoted_reason": "business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:important_technical_trend",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-034",
+      "title": "研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发",
+      "source_url": "https://the-decoder.com/terrorist-groups-are-using-every-major-ai-chatbot-for-attack-planning-and-weapons-development",
+      "issues": [
+        "valid_page_type:research_prototype_without_commercial_event",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend"
+      ],
+      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:unsupported_importance_type:important_technical_trend",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-035",
+      "title": "AI 2040》与\"智能崇拜\"：作者反思从硬起飞信仰到现实琐碎细节的转变",
+      "source_url": "https://geohot.github.io//blog/jekyll/update/2026/07/11/ai-2040.html",
+      "issues": [
+        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-036",
+      "title": "TileGym GPU 编程教程：从cuTile与Triton内核到Flash Attention",
+      "source_url": "https://www.marktechpost.com/2026/07/11/a-coding-guide-to-nvidias-tile-based-gpu-programming-from-cutile-and-triton-kernels-to-flash-attention",
+      "issues": [
+        "valid_page_type:technical_article_without_business_event",
+        "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-037",
+      "title": "KKAzilen/agentic-ai-lending-workflow: A practical reference ... - GitHub",
+      "source_url": "https://github.com/KKAzilen/agentic-ai-lending-workflow",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-038",
+      "title": "UiPath's venture arm backs workflow automation startup AirSlate",
+      "source_url": "https://techcrunch.com/2022/06/16/uipaths-new-venture-arm-backs-workflow-automation-startup-airslate/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "business_signal_scope:unsupported_importance_type:supporting_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:supporting_signal",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-039",
+      "title": "阶跃星辰发布 Step Edge 端侧模型全家桶",
+      "source_url": "https://www.ithome.com/0/975/681.htm",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-040",
+      "title": "Cognizant and Rubrik expand alliance to give enterprises control over autonomous AI in production – Company Announcement - FT.com",
+      "source_url": "https://markets.ft.com/data/announce/full?dockey=600-202606161000PR_NEWS_USPRX____NY84494-1",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "source_auditability:discovery_source_not_resolved"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, source_auditability:discovery_source_not_resolved",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-041",
+      "title": "llm 0.31.1",
+      "source_url": "https://simonwillison.net/2026/Jul/9/llm/#atom-everything",
+      "issues": [
+        "valid_page_type:research_prototype_without_commercial_event",
+        "valid_page_type:research_benchmark_without_commercial_event"
+      ],
+      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, valid_page_type:research_benchmark_without_commercial_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-043",
+      "title": "彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句\"哈哈\"成窃密关键",
+      "source_url": "https://www.ithome.com/0/975/634.htm",
+      "issues": [
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend"
+      ],
+      "not_promoted_reason": "business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:unsupported_importance_type:important_technical_trend",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-044",
+      "title": "荣耀公布平板端MagicOS 7月升级特性",
+      "source_url": "https://www.ithome.com/0/975/546.htm",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-045",
+      "title": "OpenAI 称 GPT-5.6 Sol 可化身研究员，后训练 Luna AI 模型",
+      "source_url": "https://www.ithome.com/0/975/461.htm",
+      "issues": [
+        "valid_page_type:research_benchmark_without_commercial_event"
+      ],
+      "not_promoted_reason": "valid_page_type:research_benchmark_without_commercial_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-046",
+      "title": "分析师：特斯拉 FSD 即将迎来属于自己的 iPhone 时刻",
+      "source_url": "https://www.ithome.com/0/975/667.htm",
+      "issues": [
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "business_signal_scope:unsupported_importance_type:supporting_signal"
+      ],
+      "not_promoted_reason": "valid_page_type:research_benchmark_without_commercial_event, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:supporting_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-047",
+      "title": "特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新",
+      "source_url": "https://www.ithome.com/0/975/655.htm",
+      "issues": [
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "business_signal_scope:unsupported_importance_type:supporting_signal"
+      ],
+      "not_promoted_reason": "valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:supporting_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-048",
+      "title": "韩国首尔将试点公共数据 MCP 服务，AI 可查询实时交通与空气信息",
+      "source_url": "https://www.ithome.com/0/975/674.htm",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-049",
+      "title": "月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式",
+      "source_url": "https://www.ithome.com/0/975/619.htm",
+      "issues": [
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-050",
+      "title": "阿里巴巴等启动\"古壁生辉\"古代壁画 AI 重现工程",
+      "source_url": "https://www.ithome.com/0/975/537.htm",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-051",
+      "title": "苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划",
+      "source_url": "https://www.ithome.com/0/975/666.htm",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-052",
+      "title": "OpenAI 发布 GPT-5.6 系列医疗评估结果",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-053",
+      "title": "Claude Code v2.1.207 发布",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-054",
+      "title": "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-055",
+      "title": "Ghost Font：一种人类能读懂但AI无法识别的反AI字体",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "fact_type_constraints:social_or_community_source_not_verified_fact",
+        "evidence_quality:missing_source_date",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, fact_type_constraints:social_or_community_source_not_verified_fact, evidence_quality:missing_source_date, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-056",
+      "title": "蚂蚁集团 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-057",
+      "title": "OpenAI GPT-5.6-Sol 删光 AI 创业者 Matt Shumer 的 Mac 硬盘",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-058",
+      "title": "阶跃星辰发布 Step Edge 端侧模型全家桶",
+      "source_url": "https://mp.weixin.qq.com/s/StOzmXaUGSsjUXkAoW-HZg",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:discovery_source_not_resolved"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:discovery_source_not_resolved",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-059",
+      "title": "彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句“哈哈”成窃密关键",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:unsupported_importance_type:none",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-060",
+      "title": "研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    }
+  ],
+  "skipped": [],
+  "merged": []
+}
