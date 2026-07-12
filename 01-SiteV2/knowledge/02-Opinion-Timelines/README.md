@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 1251
-generated_at: 2026-07-11T08:10:07.980Z
+opinion_count: 1252
+generated_at: 2026-07-12T02:57:11.387Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -11,7 +11,7 @@ generated_at: 2026-07-11T08:10:07.980Z
 
 ## 人物
 
-- [Peter Yang](people/peter-yang/README.md) - 104 条 - 最新 2026-07-10
+- [Peter Yang](people/peter-yang/README.md) - 105 条 - 最新 2026-07-12
 - [Garry Tan](people/garry-tan/README.md) - 90 条 - 最新 2026-07-10
 - [Swyx](people/swyx/README.md) - 78 条 - 最新 2026-07-10
 - [Nikunj Kothari](people/nikunj-kothari/README.md) - 73 条 - 最新 2026-07-10
