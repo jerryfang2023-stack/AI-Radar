@@ -28,3 +28,7 @@
 8. `failure_route`
    - Pass when evidence failure names the deficient bucket and stops for targeted repair.
    - Fail when Card, frontstage or publication failures route back to source collection.
+
+9. `monitor_startup_smoke`
+   - Pass when the pipeline-policy gate loads the daily monitor and reaches source routing before production collection begins.
+   - Fail when an undefined top-level config reference or other module-startup error can pass syntax checks and make every peer source collector return empty artifacts.

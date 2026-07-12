@@ -196,7 +196,7 @@ const coreLargeVendorMaxTarget = numericConfig(monitorDiagnosticTargets.core_lar
 const poolSupplyMin = numericConfig(monitorHardGates.pool_count_min, 15);
 const routedPoolSupplyMin = numericConfig(monitorHardGates.routed_pool_count_min, 10);
 const corePoolSupplyMin = numericConfig(monitorHardGates.core_pool_min, 1);
-const targetedSupplyRefillCycles = numericConfig(monitorGateConfig.pipeline_policy?.targeted_supply_refill_cycles, 1);
+const targetedSupplyRefillCycles = numericConfig(monitorQualityGate.pipeline_policy?.targeted_supply_refill_cycles, 1);
 const corePoolMaxPerImportanceType = numericConfig(layeredSearchRequirements.core_pool_max_per_importance_type, 8);
 const poolSelectionBufferTarget = numericConfig(layeredSearchRequirements.pool_selection_buffer, 20);
 
