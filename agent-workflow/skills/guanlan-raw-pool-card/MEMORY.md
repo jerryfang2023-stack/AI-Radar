@@ -2,6 +2,12 @@
 
 Keep this file short. Add only durable lessons that improve the skill itself. Do not copy command output, daily counts, or one-off production details.
 
+## 2026-07-12 High-Value Recall Boundary
+
+- Card quality gates must cover recall as well as precision. A release can have clean Cards and still be wrong when confirmed high-value events disappear before spec generation.
+- `pool_routes` and `importance_type` are routing hints, not vetoes. When readable original evidence proves a dated formal product/service, funding, or case event, Card eligibility must be recomputed from evidence; true index pages remain blocked by page identity and evidence-object checks.
+- Bare `auto_signal_spec_null` is a pipeline defect, not a rejection reason. Company/title/event-line failures need classified diagnostics and a blocking regression; rumors, viewpoints, disputes, jobs, and research-only results need explicit semantic exclusions.
+
 ## 2026-07-12 Card Input Snapshot Boundary
 
 - A Raw replay result is not a production Card input until the same Raw originals and Pool file are persisted in the publishing worktree. Manual Card regeneration must verify the persisted Raw count before asset cleanup or generation.

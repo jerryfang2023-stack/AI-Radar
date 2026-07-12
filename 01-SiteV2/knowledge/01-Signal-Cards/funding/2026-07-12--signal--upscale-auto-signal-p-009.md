@@ -1,5 +1,5 @@
 ---
-id: SIG-20260712-A03
+id: SIG-20260712-A04
 type: signal_card
 signal_type: funding
 title: "Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元"
@@ -12,8 +12,8 @@ title_translation_status: translated
 title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-12T09:58:23.461Z
-updated_at: 2026-07-12T09:58:23.461Z
+created_at: 2026-07-12T10:24:43.588Z
+updated_at: 2026-07-12T10:24:43.588Z
 
 raw_refs: ["R-009"]
 pool_refs: ["P-009"]

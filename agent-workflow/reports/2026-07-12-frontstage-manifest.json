@@ -1,6 +1,6 @@
 {
   "date": "2026-07-12",
-  "generated_at": "2026-07-12T09:58:24.739Z",
+  "generated_at": "2026-07-12T10:24:44.316Z",
   "raw_input_count": 269,
   "pool_input_count": 136,
   "signal_card_assets": [
@@ -20,17 +20,59 @@
     },
     {
       "id": "SIG-20260712-A03",
+      "pool_ref": "P-020",
+      "title": "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等",
+      "type": "product_service",
+      "company": "Tesla"
+    },
+    {
+      "id": "SIG-20260712-A04",
       "pool_ref": "P-009",
       "title": "Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元",
       "type": "funding",
       "company": "Upscale"
     },
     {
-      "id": "SIG-20260712-A04",
+      "id": "SIG-20260712-A05",
+      "pool_ref": "P-019",
+      "title": "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放",
+      "type": "product_service",
+      "company": "Google Voice"
+    },
+    {
+      "id": "SIG-20260712-A06",
       "pool_ref": "P-051",
       "title": "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun",
       "type": "case",
       "company": "Bun"
+    },
+    {
+      "id": "SIG-20260712-A07",
+      "pool_ref": "P-033",
+      "title": "阶跃星辰发布 Step Edge 端侧模型全家桶",
+      "type": "product_service",
+      "company": "阶跃星辰"
+    },
+    {
+      "id": "SIG-20260712-A08",
+      "pool_ref": "P-060",
+      "title": "月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式",
+      "type": "product_service",
+      "company": "月之暗面 / Kimi"
+    },
+    {
+      "id": "SIG-20260712-A09",
+      "pool_ref": "P-056",
+      "title": "特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新",
+      "type": "product_service",
+      "company": "Tesla"
+    },
+    {
+      "id": "SIG-20260712-A10",
+      "pool_ref": "P-026",
+      "title": "Meta 发布 Muse Spark 1.1 模型",
+      "type": "product_service",
+      "company": "Meta"
     }
   ],
   "not_promoted_candidates": [
@@ -39,10 +81,9 @@
       "title": "微软和 Meta 对 CoreWeave 与 Nebius 的 1222 亿美元承诺额剖析",
       "source_url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
       "issues": [
-        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
-        "business_signal_scope:unsupported_importance_type:supporting_signal"
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
       ],
-      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:unsupported_importance_type:supporting_signal",
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
       "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
       "promote_priority": "review"
     },
@@ -66,9 +107,9 @@
       "title": "OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想",
       "source_url": "https://www.ithome.com/0/975/646.htm",
       "issues": [
-        "valid_page_type:pool_route_index_only_not_formal_card"
+        "valid_page_type:research_prototype_without_commercial_event"
       ],
-      "not_promoted_reason": "valid_page_type:pool_route_index_only_not_formal_card",
+      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -90,10 +131,9 @@
       "issues": [
         "business_signal_scope:technical_trend_is_context_not_signal_card",
         "valid_page_type:research_benchmark_without_commercial_event",
-        "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
-        "business_signal_scope:unsupported_importance_type:important_technical_trend"
+        "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event"
       ],
-      "not_promoted_reason": "business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, business_signal_scope:unsupported_importance_type:important_technical_trend",
+      "not_promoted_reason": "business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -177,10 +217,9 @@
       "source_url": "https://www.marktechpost.com/2026/07/11/mira-muratis-thinking-machines-lab-makes-the-technical-case-for-human-centered-ai-built-on-customizable-model-weights",
       "issues": [
         "valid_page_type:research_prototype_without_commercial_event",
-        "business_signal_scope:technical_trend_is_context_not_signal_card",
-        "business_signal_scope:unsupported_importance_type:important_technical_trend"
+        "business_signal_scope:technical_trend_is_context_not_signal_card"
       ],
-      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:unsupported_importance_type:important_technical_trend",
+      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, business_signal_scope:technical_trend_is_context_not_signal_card",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -205,10 +244,9 @@
       "title": "OpenAI 承认 ChatGPT Work 发布\"并非一切顺利\"，紧急修复用户体验和成本问题",
       "source_url": "https://the-decoder.com/openai-admits-it-didnt-get-everything-quite-right-with-chatgpt-work-launch-and-scrambles-to-fix-ux-and-costs",
       "issues": [
-        "valid_page_type:research_benchmark_without_commercial_event",
-        "business_signal_scope:unsupported_importance_type:supporting_signal"
+        "valid_page_type:research_benchmark_without_commercial_event"
       ],
-      "not_promoted_reason": "valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:unsupported_importance_type:supporting_signal",
+      "not_promoted_reason": "valid_page_type:research_benchmark_without_commercial_event",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -227,28 +265,6 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-019",
-      "title": "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放",
-      "source_url": "https://www.ithome.com/0/975/573.htm",
-      "issues": [
-        "auto_signal_spec_null"
-      ],
-      "not_promoted_reason": "auto_signal_spec_null",
-      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
-      "promote_priority": "review"
-    },
-    {
-      "pool_ref": "P-020",
-      "title": "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等",
-      "source_url": "https://www.ithome.com/0/975/661.htm",
-      "issues": [
-        "auto_signal_spec_null"
-      ],
-      "not_promoted_reason": "auto_signal_spec_null",
-      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
-      "promote_priority": "review"
-    },
-    {
       "pool_ref": "P-021",
       "title": "OpenAI 招聘家庭产品经理，拓展家庭用户市场",
       "source_url": "https://www.ithome.com/0/975/633.htm",
@@ -264,11 +280,12 @@
       "title": "努比亚倪飞谈 AI 智能体手机：下半场从\"功能叠加\"走向\"原生智能体\"",
       "source_url": "https://www.ithome.com/0/975/662.htm",
       "issues": [
-        "auto_signal_spec_null"
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "auto_signal_spec_null",
-      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
-      "promote_priority": "review"
+      "not_promoted_reason": "fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "low"
     },
     {
       "pool_ref": "P-023",
@@ -276,12 +293,12 @@
       "source_url": "https://www.ithome.com/0/975/658.htm",
       "issues": [
         "evidence_quality:missing_source_material",
+        "fact_type_constraints:unconfirmed_product_rumor_or_plan",
         "valid_page_type:degradation_reason_index_only",
         "valid_page_type:text_indicates_index_only",
-        "valid_page_type:pool_route_index_only_not_formal_card",
-        "business_signal_scope:unsupported_importance_type:supporting_signal"
+        "valid_page_type:pool_route_index_only_not_formal_card"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_material, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:supporting_signal",
+      "not_promoted_reason": "evidence_quality:missing_source_material, fact_type_constraints:unconfirmed_product_rumor_or_plan, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -290,9 +307,10 @@
       "title": "GPT-5.6 上线之际，马斯克与奥尔特曼隔空\"掐架\"",
       "source_url": "https://www.ithome.com/0/975/641.htm",
       "issues": [
+        "business_signal_scope:executive_dispute_without_commercial_event",
         "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
       ],
-      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "not_promoted_reason": "business_signal_scope:executive_dispute_without_commercial_event, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
       "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
       "promote_priority": "review"
     },
@@ -301,35 +319,23 @@
       "title": "消息称中兴系战略深度聚焦 AI 手机，常规产品线暂定正常迭代",
       "source_url": "https://www.ithome.com/0/975/478.htm",
       "issues": [
-        "auto_signal_spec_null"
+        "fact_type_constraints:unconfirmed_product_rumor_or_plan",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "auto_signal_spec_null",
-      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
-      "promote_priority": "review"
-    },
-    {
-      "pool_ref": "P-026",
-      "title": "Meta 发布 Muse Spark 1.1 模型",
-      "source_url": "https://the-decoder.com/metas-muse-spark-1-1-outperforms-glm-5-2-in-coding-and-costs-slightly-less",
-      "issues": [
-        "business_signal_scope:unsupported_importance_type:supporting_signal"
-      ],
-      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal",
+      "not_promoted_reason": "fact_type_constraints:unconfirmed_product_rumor_or_plan, business_signal_scope:missing_concrete_funding_product_or_case_event",
       "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
-      "promote_priority": "review"
+      "promote_priority": "low"
     },
     {
       "pool_ref": "P-027",
       "title": "别再让我去问LLM了：当\"Ask Claude\"成为拒绝深度交流的借口",
       "source_url": "https://blog.yaelwrites.com/stop-telling-me-to-ask-an-llm",
       "issues": [
-        "business_signal_scope:technical_trend_is_context_not_signal_card",
-        "valid_page_type:pool_route_index_only_not_formal_card",
-        "business_signal_scope:unsupported_importance_type:important_technical_trend"
+        "business_signal_scope:technical_trend_is_context_not_signal_card"
       ],
-      "not_promoted_reason": "business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:important_technical_trend",
-      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
-      "promote_priority": "low"
+      "not_promoted_reason": "business_signal_scope:technical_trend_is_context_not_signal_card",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
     },
     {
       "pool_ref": "P-028",
@@ -337,10 +343,9 @@
       "source_url": "https://the-decoder.com/terrorist-groups-are-using-every-major-ai-chatbot-for-attack-planning-and-weapons-development",
       "issues": [
         "valid_page_type:research_prototype_without_commercial_event",
-        "business_signal_scope:technical_trend_is_context_not_signal_card",
-        "business_signal_scope:unsupported_importance_type:important_technical_trend"
+        "business_signal_scope:technical_trend_is_context_not_signal_card"
       ],
-      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:unsupported_importance_type:important_technical_trend",
+      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, business_signal_scope:technical_trend_is_context_not_signal_card",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -391,24 +396,11 @@
       "source_url": "https://techcrunch.com/2022/06/16/uipaths-new-venture-arm-backs-workflow-automation-startup-airslate/",
       "issues": [
         "evidence_quality:stale_source_date",
-        "evidence_quality:missing_chinese_fact_translation",
-        "valid_page_type:pool_route_index_only_not_formal_card",
-        "business_signal_scope:unsupported_importance_type:supporting_signal"
+        "evidence_quality:missing_chinese_fact_translation"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:supporting_signal",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
-    },
-    {
-      "pool_ref": "P-033",
-      "title": "阶跃星辰发布 Step Edge 端侧模型全家桶",
-      "source_url": "https://www.ithome.com/0/975/681.htm",
-      "issues": [
-        "auto_signal_spec_null"
-      ],
-      "not_promoted_reason": "auto_signal_spec_null",
-      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
-      "promote_priority": "review"
     },
     {
       "pool_ref": "P-034",
@@ -434,11 +426,9 @@
       "source_url": "https://eugeneyan.com//writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/",
       "issues": [
         "evidence_quality:stale_source_date",
-        "evidence_quality:missing_chinese_fact_translation",
-        "valid_page_type:pool_route_index_only_not_formal_card",
-        "business_signal_scope:unsupported_importance_type:none"
+        "evidence_quality:missing_chinese_fact_translation"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:none",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -694,10 +684,9 @@
       "title": "彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句\"哈哈\"成窃密关键",
       "source_url": "https://www.ithome.com/0/975/634.htm",
       "issues": [
-        "business_signal_scope:technical_trend_is_context_not_signal_card",
-        "business_signal_scope:unsupported_importance_type:important_technical_trend"
+        "business_signal_scope:technical_trend_is_context_not_signal_card"
       ],
-      "not_promoted_reason": "business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:unsupported_importance_type:important_technical_trend",
+      "not_promoted_reason": "business_signal_scope:technical_trend_is_context_not_signal_card",
       "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
       "promote_priority": "review"
     },
@@ -728,23 +717,9 @@
       "title": "分析师：特斯拉 FSD 即将迎来属于自己的 iPhone 时刻",
       "source_url": "https://www.ithome.com/0/975/667.htm",
       "issues": [
-        "valid_page_type:research_benchmark_without_commercial_event",
-        "valid_page_type:pool_route_index_only_not_formal_card",
-        "business_signal_scope:unsupported_importance_type:supporting_signal"
+        "valid_page_type:research_benchmark_without_commercial_event"
       ],
-      "not_promoted_reason": "valid_page_type:research_benchmark_without_commercial_event, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:supporting_signal",
-      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
-      "promote_priority": "low"
-    },
-    {
-      "pool_ref": "P-056",
-      "title": "特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新",
-      "source_url": "https://www.ithome.com/0/975/655.htm",
-      "issues": [
-        "valid_page_type:pool_route_index_only_not_formal_card",
-        "business_signal_scope:unsupported_importance_type:supporting_signal"
-      ],
-      "not_promoted_reason": "valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:supporting_signal",
+      "not_promoted_reason": "valid_page_type:research_benchmark_without_commercial_event",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -787,17 +762,6 @@
         "fact_type_constraints:non_commercial_policy_or_ethics_signal"
       ],
       "not_promoted_reason": "evidence_quality:missing_source_material, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal",
-      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
-      "promote_priority": "low"
-    },
-    {
-      "pool_ref": "P-060",
-      "title": "月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式",
-      "source_url": "https://www.ithome.com/0/975/619.htm",
-      "issues": [
-        "valid_page_type:pool_route_index_only_not_formal_card"
-      ],
-      "not_promoted_reason": "valid_page_type:pool_route_index_only_not_formal_card",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -1412,13 +1376,11 @@
         "evidence_quality:missing_source_material",
         "evidence_quality:missing_source_date",
         "evidence_quality:missing_chinese_fact_translation",
-        "business_signal_scope:technical_trend_is_context_not_signal_card",
-        "valid_page_type:pool_route_index_only_not_formal_card",
-        "business_signal_scope:unsupported_importance_type:important_technical_trend"
+        "business_signal_scope:technical_trend_is_context_not_signal_card"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:important_technical_trend",
-      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
-      "promote_priority": "low"
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:technical_trend_is_context_not_signal_card",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
     },
     {
       "pool_ref": "P-102",
@@ -1484,11 +1446,11 @@
       "title": "苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划",
       "source_url": "https://www.ithome.com/0/975/666.htm",
       "issues": [
-        "auto_signal_spec_null"
+        "fact_type_constraints:unconfirmed_product_rumor_or_plan"
       ],
-      "not_promoted_reason": "auto_signal_spec_null",
+      "not_promoted_reason": "fact_type_constraints:unconfirmed_product_rumor_or_plan",
       "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
-      "promote_priority": "review"
+      "promote_priority": "low"
     },
     {
       "pool_ref": "P-107",
@@ -1497,10 +1459,9 @@
       "issues": [
         "evidence_quality:missing_source_material",
         "evidence_quality:missing_source_date",
-        "evidence_quality:missing_chinese_fact_translation",
-        "business_signal_scope:unsupported_importance_type:none"
+        "evidence_quality:missing_chinese_fact_translation"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none",
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
       "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
       "promote_priority": "medium"
     },
@@ -1530,11 +1491,9 @@
       "issues": [
         "evidence_quality:missing_source_material",
         "evidence_quality:stale_source_date",
-        "evidence_quality:missing_chinese_fact_translation",
-        "valid_page_type:pool_route_index_only_not_formal_card",
-        "business_signal_scope:unsupported_importance_type:none"
+        "evidence_quality:missing_chinese_fact_translation"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:none",
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },

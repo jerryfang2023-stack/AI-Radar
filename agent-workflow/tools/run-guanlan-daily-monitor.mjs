@@ -88,6 +88,7 @@ const dryRun = args.get("dry-run") === "true";
 const sourceOnlyMode = String(args.get("source-only") || "").trim().toLowerCase();
 const metadataFixtureMode = args.get("metadata-regression-fixtures") === "true";
 const adaptiveRawFixtureMode = args.get("adaptive-raw-regression-fixtures") === "true";
+const evidenceObjectFixtureMode = args.get("evidence-object-regression-fixtures") === "true";
 const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
 const fetchTimeoutMs = Number(args.get("fetch-timeout-ms") || 20000);
 const snapshotTimeoutMs = Number(args.get("snapshot-timeout-ms") || 16000);
@@ -2321,7 +2322,7 @@ function classifyEvidenceObjectType(item = {}, snapshotText = "", excerpts = [])
   const pricingChange = /price increase|price cut|pricing change|billing change|new pricing|usage-based pricing|计费变化|价格变化|涨价|降价|按量计费/iu.test(text);
   const caseDetail = /case study|customer story|customer case|deployment|deployed|pilot|design partner|customer adopts|客户案例|客户采用|部署|试点|上线客户|合作客户/iu.test(text);
   const regulatory = /sec filing|8-k|10-k|10-q|procurement|tender|lawsuit|regulation|监管|采购公告|招标|诉讼|证券披露/iu.test(text);
-  const concreteEvent = /announce(?:s|d)?|launch(?:es|ed)?|release(?:s|d)?|roll(?:s|ed)? out|ship(?:s|ped)?|open-source(?:d)?|fund(?:ing|ed)?|raise(?:s|d)?|acqui(?:re|res|red|sition)|partner(?:s|ed)?|integrat(?:e|es|ed|ion)|new customer|new partnership|new product|新发布|推出|上线|公测|开源|融资|收购|合作|接入|集成|新增客户|新客户|新合作/iu.test(text);
+  const concreteEvent = /announce(?:s|d)?|launch(?:es|ed)?|release(?:s|d)?|roll(?:s|ed)? out|ship(?:s|ped)?|open-source(?:d)?|fund(?:ing|ed)?|raise(?:s|d)?|acqui(?:re|res|red|sition)|partner(?:s|ed)?|integrat(?:e|es|ed|ion)|new customer|new partnership|new product|新发布|正式发布|宣布|推出|上线|正式登陆|正式可用|结束\s*Beta|结束测试|开放使用|公测|开源|融资|收购|合作|接入|集成|新增客户|新客户|新合作/iu.test(text);
   const explicitOfficialEvent = /announc(?:e|es|ed|ement)|introduc(?:e|es|ed|ing)|new customer|new partnership|new product|release notes|changelog|version \d|\b20\d{2}\b|新发布|正式发布|宣布|新增客户|新客户|新合作|版本更新|更新日志|发布说明/iu.test(text);
 
   if (changelog) return "changelog_or_release";
@@ -2398,7 +2399,7 @@ function isLowValueConsumerOrPlatformPolicyItem(item = {}, snapshotText = "", ex
 function hasExplicitChangeAction(item = {}, snapshotText = "", excerpts = []) {
   const types = new Set(excerpts.map((excerpt) => excerpt.type));
   const text = commercialSignalText(item, snapshotText, excerpts);
-  const actionPattern = /发布|推出|上线|公测|内测|开源|收购|并购|融资|投资|合作|部署|接入|集成|升级|涨价|降价|计费|采购|招标|签约|扩展|新增|停用|关闭|监管|处罚|诉讼|客户|案例|launch(?:es|ed|ing)?|release(?:s|d)?|ship(?:s|ped)?|announce(?:s|d)?|roll(?:s|ed)? out|open-source|acqui(?:re|res|red|sition)|fund(?:ing|ed)?|raise(?:s|d)?|partner(?:s|ed)?|deploy(?:s|ed|ment)?|adopt(?:s|ed|ion)?|integrat(?:e|es|ed|ion)|pricing|billing|customer|case study|procurement|tender|regulation|lawsuit/iu;
+  const actionPattern = /发布|宣布|推出|上线|正式登陆|正式可用|结束\s*Beta|结束测试|开放使用|公测|内测|开源|收购|并购|融资|投资|合作|部署|接入|集成|升级|涨价|降价|计费|采购|招标|签约|扩展|新增|停用|关闭|监管|处罚|诉讼|客户|案例|launch(?:es|ed|ing)?|release(?:s|d)?|ship(?:s|ped)?|announce(?:s|d)?|roll(?:s|ed)? out|open-source|acqui(?:re|res|red|sition)|fund(?:ing|ed)?|raise(?:s|d)?|partner(?:s|ed)?|deploy(?:s|ed|ment)?|adopt(?:s|ed|ion)?|integrat(?:e|es|ed|ion)|pricing|billing|customer|case study|procurement|tender|regulation|lawsuit/iu;
   return ["company_action", "product_update", "workflow_change", "case_detail", "risk"].some((type) => types.has(type))
     && actionPattern.test(text);
 }
@@ -4701,6 +4702,34 @@ async function runAdaptiveRawRegressionFixtures() {
   console.log(JSON.stringify({ ok: true, fixture: "adaptive-post-fetch-raw-expansion" }, null, 2));
 }
 
+async function runEvidenceObjectRegressionFixtures() {
+  const kimiRelease = {
+    title: "月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式",
+    url: "https://www.ithome.com/0/975/619.htm",
+    source: "IT之家（RSS）",
+    summary: "月之暗面宣布 K2.7 Code 高速版结束 Beta，成为常驻可选模式。",
+  };
+  const releaseText = `${kimiRelease.summary} 订阅用户可直接调用，输出速度约为普通版的 5-6 倍。`;
+  const releaseExcerpts = [{ type: "product_update", text: releaseText }];
+  const releaseType = classifyEvidenceObjectType(kimiRelease, releaseText, releaseExcerpts);
+  const releaseGate = commercialSignalHardGate(kimiRelease, releaseText, releaseExcerpts);
+  if (releaseType !== "event" || !releaseGate.actionDetected || !releaseGate.evidenceObjectUsable) {
+    throw new Error(`confirmed Chinese product release misclassified: ${JSON.stringify({ releaseType, releaseGate })}`);
+  }
+
+  const research = {
+    title: "内部 AI 模型评估与基准测试报告",
+    url: "https://example.com/research/model-evaluation",
+    source: "Example Research",
+    summary: "研究人员公布内部评估套件与基准测试结果，没有商业发布或客户事件。",
+  };
+  const researchType = classifyEvidenceObjectType(research, research.summary, [{ type: "quote", text: research.summary }]);
+  if (researchType !== "research_or_report") {
+    throw new Error(`research-only material must remain research_or_report: ${researchType}`);
+  }
+  console.log(JSON.stringify({ ok: true, fixture: "evidence-object-commercial-action" }, null, 2));
+}
+
 function isXSourceItem(item = {}) {
   const haystack = `${item.url || ""} ${item.source || ""} ${item.source_url || ""}`.toLowerCase();
   return /\bx\.com\b|\btwitter\.com\b/u.test(haystack) || /(^|[\/\s])x([\/\s]|$)/u.test(haystack);
@@ -5552,7 +5581,9 @@ async function main() {
   );
 }
 
-(adaptiveRawFixtureMode
+(evidenceObjectFixtureMode
+  ? runEvidenceObjectRegressionFixtures()
+  : adaptiveRawFixtureMode
   ? runAdaptiveRawRegressionFixtures()
   : metadataFixtureMode
     ? runMetadataRegressionFixtures()

@@ -48,6 +48,18 @@ const monitorAdaptiveRawFixture = spawnSync(
   { cwd: root, encoding: "utf8" }
 );
 const monitorAdaptiveRawOutput = `${monitorAdaptiveRawFixture.stdout || ""}\n${monitorAdaptiveRawFixture.stderr || ""}`;
+const monitorEvidenceObjectFixture = spawnSync(
+  process.execPath,
+  [path.join(root, "agent-workflow", "tools", "run-guanlan-daily-monitor.mjs"), "--evidence-object-regression-fixtures=true"],
+  { cwd: root, encoding: "utf8" }
+);
+const monitorEvidenceObjectOutput = `${monitorEvidenceObjectFixture.stdout || ""}\n${monitorEvidenceObjectFixture.stderr || ""}`;
+const cardCoreRecallFixture = spawnSync(
+  process.execPath,
+  [path.join(root, "agent-workflow", "tools", "generate-asset-cards-from-pool.mjs"), "--date=2026-07-12", "--core-recall-regression-fixtures=true"],
+  { cwd: root, encoding: "utf8" }
+);
+const cardCoreRecallOutput = `${cardCoreRecallFixture.stdout || ""}\n${cardCoreRecallFixture.stderr || ""}`;
 
 if (!monitorStartupOutput.includes("Unknown --source-only=invalid")) {
   const firstFailureLine = monitorStartupOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
@@ -60,6 +72,14 @@ if (monitorMetadataFixture.status !== 0 || !monitorMetadataOutput.includes('"fix
 if (monitorAdaptiveRawFixture.status !== 0 || !monitorAdaptiveRawOutput.includes('"fixture": "adaptive-post-fetch-raw-expansion"')) {
   const firstFailureLine = monitorAdaptiveRawOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
   problems.push(`daily monitor adaptive Raw expansion fixture failed: ${firstFailureLine}`);
+}
+if (monitorEvidenceObjectFixture.status !== 0 || !monitorEvidenceObjectOutput.includes('"fixture": "evidence-object-commercial-action"')) {
+  const firstFailureLine = monitorEvidenceObjectOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
+  problems.push(`daily monitor evidence-object fixture failed: ${firstFailureLine}`);
+}
+if (cardCoreRecallFixture.status !== 0 || !cardCoreRecallOutput.includes('"fixture": "business-signal-core-recall"')) {
+  const firstFailureLine = cardCoreRecallOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
+  problems.push(`Card core-recall fixture failed: ${firstFailureLine}`);
 }
 
 if (Number(policy.monitor_attempts) !== 1) problems.push("pipeline_policy.monitor_attempts must be 1");
@@ -112,7 +132,7 @@ for (const [name, text] of [["production workflow", workflow], ["dry-run workflo
 const result = {
   ok: problems.length === 0,
   policy_version: config.schema_version || "unknown",
-  checks: 16,
+  checks: 18,
   problems,
 };
 

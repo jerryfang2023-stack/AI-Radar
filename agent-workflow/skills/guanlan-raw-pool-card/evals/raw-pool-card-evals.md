@@ -82,6 +82,12 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Pass when a backfill or replay can use `--expected-raw-count=<count>` to stop before deleting or rewriting Cards if the persisted Raw input is stale or different from the audited count.
    - Fail when an isolated replay count is reported as production Raw but Card generation still consumes an older committed Raw file.
 
+18. `high_value_card_recall`
+   - Pass when the production Core/high-value recall fixture promotes confirmed Chinese product launches, pricing changes, disclosed product events, and regional rollouts even if an earlier Pool route says `index_only` or the importance label is non-core.
+   - Pass when every eligibility-passing candidate either produces a Card spec or fails the editorial gate with a classified semantic reason; `auto_signal_spec_null` is never an acceptable unexplained terminal state.
+   - Pass when jobs, viewpoints without a confirmed event, executive disputes, rumors/future plans, mathematical/research demonstrations, and internal benchmarks remain backend-only with explicit rejection reasons.
+   - Fail when release checks validate only the quality of generated Cards and do not test whether known high-value candidates were silently omitted.
+
 ## Repair Loop
 
 When a check fails:

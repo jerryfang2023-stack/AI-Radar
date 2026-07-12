@@ -1,5 +1,5 @@
 ---
-id: SIG-20260712-A04
+id: SIG-20260712-A06
 type: signal_card
 signal_type: case
 title: "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun"
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-12T09:58:23.461Z
-updated_at: 2026-07-12T09:58:23.461Z
+created_at: 2026-07-12T10:24:43.588Z
+updated_at: 2026-07-12T10:24:43.588Z
 
 raw_refs: ["R-051"]
 pool_refs: ["P-051"]
@@ -71,9 +71,9 @@ frontend:
 ## 原文要点
 
 - Bun v1.4.0以Canary版本发布，修复128个错误，速度提高约2%到5%。
-- IT之家 7 月 11 日消息，开发者贾里德 · 萨姆纳（Jarred Sumner）于 7 月 8 日发布博文，宣布在 Claude Fable 5 模型的帮助下，耗时 11 天、耗费 16.
-- 5 万美元， 已重构 JavaScript 运行时 Bun，从 Zig 完全重写为 Rust 语言。
 - 萨姆纳表示在重构过程中，64 个 Claude 实例并行运行 11 天，编写了超过 100 万行代码，而如果需要人工团队重构，需要 1 年时间。
+- IT之家 7 月 11 日消息，开发者贾里德 · 萨姆纳（Jarred Sumner）于 7 月 8 日发布博文，宣布在 Claude Fable 5 模型的帮助下，耗时 11 天、耗费 16.5 万美元， 已重构 JavaScript 运行时 Bun，从 Zig 完全重写为 Rust 语言。
+- API 的费用约为 16.5 万美元（IT之家注：现汇率约合 111.9 万元人民币），不过 Bun 及其团队已于 2025 年 12 月被 Anthropic 收购，因此萨姆纳不必担心高昂的费用。
 
 ## 价值描述
 

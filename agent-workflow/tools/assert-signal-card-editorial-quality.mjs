@@ -67,6 +67,14 @@ function cardFiles() {
 
 const problems = [];
 const files = cardFiles();
+const handoffPath = path.join(root, "agent-workflow", "reports", `${date}-pool-to-card-handoff.md`);
+if (fs.existsSync(handoffPath)) {
+  const handoff = fs.readFileSync(handoffPath, "utf8");
+  const unexplainedSpecFailures = handoff.match(/^- P-\d+: .*auto_signal_spec_null(?::[^;,]+)?/gmu) || [];
+  for (const failure of unexplainedSpecFailures) {
+    problems.push(`unclassified Card recall failure: ${failure.replace(/^- /u, "")}`);
+  }
+}
 if (!files.length) problems.push(`no formal Signal Cards generated for ${date}`);
 for (const file of files) {
   const markdown = fs.readFileSync(file, "utf8");
