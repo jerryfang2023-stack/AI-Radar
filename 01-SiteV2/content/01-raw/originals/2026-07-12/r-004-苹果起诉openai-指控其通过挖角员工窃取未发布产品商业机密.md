@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-11T06:56:20.000Z"
-collected_at: 2026-07-12T06:10:44.084Z
+collected_at: 2026-07-12T09:55:23.633Z
 language: mixed
 full_text_hash: d599a5cdbef87147
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-12/r-004-苹果起诉openai-指控其通过挖角员工窃取未发布产品商业机密.md"
@@ -60,7 +60,7 @@ content_hash: d599a5cdbef87147
 semantic_hash: 22a98edbc885c025
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-11T06:56:20.000Z"
-last_seen_at: 2026-07-12T06:10:44.084Z
+last_seen_at: 2026-07-12T09:55:23.633Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例","没有变化前
 key_excerpts: [{"type":"product_update","text":"苹果在加州联邦法院起诉OpenAI，指控其通过挖角员工实施\"协同行动\"窃取未发布产品的商业机密。诉状称超过400名前苹果员工现任职于OpenAI，包括首席硬件官Tang Tan（前iPhone、Apple Watch产品设计副总裁）和今年1月入职的iPhone硬件工程师Chang Liu（被指下载数十份机密文件）。苹果要求陪审团审判、停止侵权行为并销毁所有窃取材料。OpenAI否认指控，称其专注于自研技术。OpenAI首款硬件设备预计不早于2027年2月底发货。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"quote","text":"Ad Skip to content Apple sues OpenAI for allegedly running a \"coordinated campaign\" to steal trade secrets through poached employees Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 11, 2026 GPT-Image-2 prompted by THE DECODER Key Points Apple has filed a federal lawsuit against OpenAI, accusing the AI company of systematically stealing trade secrets about unreleased products by poaching Apple employees.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The complaint alleges that more than 400 former Apple employees now work at OpenAI and that the company actively encouraged them to take confidential files, drawings, and specifications with them during their notice periods.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"The lawsuit is tied to OpenAI's expanding hardware ambitions.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Apple is seeking a jury trial, an end to the alleged practices, and the destruction of all stolen materials.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"The iPhone maker accuses OpenAI of deliberately stealing confidential information about unreleased products through poached employees.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-12T06:10:44.084Z
+fact_extraction_completed_at: 2026-07-12T09:55:23.633Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only

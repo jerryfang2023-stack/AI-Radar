@@ -26,6 +26,9 @@ const assetGenerationLimit = args.has("asset-generation-limit")
   ? nonNegativeInt(args.get("asset-generation-limit"), Number.POSITIVE_INFINITY)
   : Number.POSITIVE_INFINITY;
 const generateTrendCandidates = args.get("trend-candidates") === "true";
+const expectedRawCount = args.has("expected-raw-count")
+  ? nonNegativeInt(args.get("expected-raw-count"), Number.NaN)
+  : null;
 
 const signalSpecs = {
   "2026-06-06": [
@@ -2806,7 +2809,7 @@ function dedupeSignalIndexSpecs(specs) {
   return [...byFinalCard.values()];
 }
 
-function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontstageSpecs, notPromotedCandidates = [] }) {
+function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontstageSpecs, notPromotedCandidates = [], rawInputCount, poolInputCount }) {
   const reportDir = path.join(root, "agent-workflow", "reports");
   fs.mkdirSync(reportDir, { recursive: true });
   const handoffPath = path.join(reportDir, `${date}-pool-to-card-handoff.md`);
@@ -2816,6 +2819,8 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
     `# ${date} Pool-to-Card Handoff`,
     "",
     `- generated_at: ${generatedAt}`,
+    `- raw_input_count: ${rawInputCount}`,
+    `- pool_input_count: ${poolInputCount}`,
     `- written_count: ${written.length}`,
     `- merged_count: ${merged.length}`,
     `- skipped_count: ${skipped.length}`,
@@ -2859,6 +2864,8 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
   fs.writeFileSync(manifestPath, `${JSON.stringify({
     date,
     generated_at: generatedAt,
+    raw_input_count: rawInputCount,
+    pool_input_count: poolInputCount,
     signal_card_assets: frontstageSpecs.map((spec) => ({
       id: spec.id,
       pool_ref: spec.poolRef,
@@ -2909,6 +2916,11 @@ function main() {
   const explicitSpecs = signalSpecs[date] || [];
   const candidates = candidateSpecs[date] || {};
   const sections = poolSections();
+  const rawInputCount = rawFilesForDate().length;
+  const poolInputCount = sections.size;
+  if (expectedRawCount !== null && rawInputCount !== expectedRawCount) {
+    throw new Error(`Raw input count mismatch for ${date}: expected ${expectedRawCount}, found ${rawInputCount}`);
+  }
   const autoResult = autoSignalsFromPool(sections, explicitSpecs);
   const autoSpecs = autoResult.specs || [];
   const notPromotedCandidates = autoResult.notPromotedCandidates || [];
@@ -2997,6 +3009,8 @@ function main() {
     clusterRows,
     frontstageSpecs: signalIndexSpecs,
     notPromotedCandidates,
+    rawInputCount,
+    poolInputCount,
   });
   written.push(handoff.handoff, handoff.manifest);
 

@@ -22,8 +22,8 @@ search_intent: "find_original_source"
 search_path: "fde_implementation"
 search_path_label: "Enterprise AI / FDE implementation path"
 author: ""
-published_at: ""
-collected_at: 2026-07-12T06:10:44.103Z
+published_at: "2026-07-06T19:16:03.000Z"
+collected_at: 2026-07-12T09:55:23.652Z
 language: mixed
 full_text_hash: 69d575fc45d7aaf0
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-12/r-008-forward-deployed-engineering-moving-ai-pilots-to-production.md"
@@ -59,8 +59,8 @@ url_hash: cee692071b035cd0
 content_hash: e9cf49aed3279460
 semantic_hash: c4eb02320acc38e7
 duplicate_of: ""
-first_seen_at: "2026-07-12T06:10:44.103Z"
-last_seen_at: 2026-07-12T06:10:44.103Z
+first_seen_at: "2026-07-06T19:16:03.000Z"
+last_seen_at: 2026-07-12T09:55:23.652Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: []
 key_excerpts: [{"type":"case_detail","text":"Forward Deployed Engineering: Moving AI Pilots to Production Skip main navigation # Forward Deployed Engineering: The Missing Role Between AI Pilots and Production - July 6, 2026 - 10 min read - AI/ML - Data The Beetroot Team Author Contents Contents Many organizations have run an AI experimen... / query=FDE AI implementation production rollout / intent=find_original_source / path=fde_implementation","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Forward Deployed Engineering: The Missing Role Between AI Pilots and Production July 6, 2026 10 min read AI/ML Data The Beetroot Team Author Contents Contents Many organizations have run an AI experiment that worked well enough to generate real excitement &mdash; and then watched it stall before reaching production.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The model performed in the demo.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The business case looked solid.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But somewhere between the prototype and a working operational system, progress stopped.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In practice, this pattern repeats across industries and team sizes, and it rarely comes down to model quality alone.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-12T06:10:44.103Z
+fact_extraction_completed_at: 2026-07-12T09:55:23.652Z
 theme: enterprise-ai-implementation-signal
 keyword_group: enterprise-ai-implementation-signal
 copyright_note: local research archive only

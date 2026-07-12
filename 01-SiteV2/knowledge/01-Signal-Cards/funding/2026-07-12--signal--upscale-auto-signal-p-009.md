@@ -12,8 +12,8 @@ title_translation_status: translated
 title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-12T09:28:50.361Z
-updated_at: 2026-07-12T09:28:50.361Z
+created_at: 2026-07-12T09:58:23.461Z
+updated_at: 2026-07-12T09:58:23.461Z
 
 raw_refs: ["R-009"]
 pool_refs: ["P-009"]
@@ -28,7 +28,7 @@ primary_raw:
   has_full_text: true
   evidence_strength: rich_evidence
   pool_routes:
-    - core_pool
+    - watchlist
   raw_qc_decision: allow
   importance_type: important_funding
   importance_score: 5
@@ -45,14 +45,14 @@ opportunity_signals:
   buyer_or_user: ["sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["funding_round", "customer_deployment", "product_launch"]
+  business_action: ["funding_round", "customer_deployment"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元 Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Upscale AI 宣布完成 1.9 亿美元 A-1 轮融资，公司总融资额达到 5 亿美元，当前估值为 20 亿美元。"
+  source_excerpt: "Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元 Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Upscale AI 宣布完成 1.9 亿美元 A-1 轮融资，本轮使公司累计融资达到 5 亿美元，当前估值为 20 亿美元。"
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Upscale"
@@ -67,18 +67,18 @@ frontend:
 
 ## 新闻事实
 
-Upscale AI 宣布完成 1.9 亿美元 A-1 轮融资，公司总融资额达到 5 亿美元，当前估值为 20 亿美元。
+Upscale AI 宣布完成 1.9 亿美元 A-1 轮融资，本轮使公司累计融资达到 5 亿美元，当前估值为 20 亿美元。
 
 ## 原文要点
 
-- 本轮融资由 Premji Invest 领投，英伟达、Salesforce Ventures、Temasek 等新投资方参与。
-- Upscale AI 的产品组合覆盖芯片、系统和软件，定位为人工智能网络基础设施的全栈方案。
-- 公司披露其正与多家超大规模云厂商和新型云基础设施提供商开展客户评估与部署。
-- 其开放标准 AI 网络架构用于连接加速器、内存与存储，以缓解大规模训练和推理中的网络瓶颈。
+- 公司计划用新资金扩大业务并加快 AI 原生网络技术交付，目前正与多家超大规模云厂商和新云基础设施服务商开展客户评估与部署。
+- Upscale宣布完成5亿美元融资。
+- Upscale宣布完成A 轮融资，投资方包括 new investors, NVIDIA , Salesforce Ventures, Seligman Ventures。
+- 原始来源标题显示：Upscale AI 完成 1.9 亿美元 A-1 轮融资，总融资额达 5 亿美元。
 
 ## 价值描述
 
-Upscale AI 表示新资金将用于扩大业务，并加速交付面向人工智能网络的技术与产品。
+Upscale宣布完成1.90亿美元A 轮融资。
 
 ## 可见原文片段
 

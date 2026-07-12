@@ -1,0 +1,201 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-100
+title: "Do 60-Minute Coding Tasks in 60 Seconds—With AI - Ep. 41 with Steve Krouse"
+title_zh: "与Steve Krouse一起用AI在60秒内完成60分钟的编码任务-第41集"
+title_translation_status: translated
+title_translation_method: mymemory_title_translation
+original_url: "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Do-60-Minute-Coding-Tasks-in-60-SecondsWith-AI---Ep--41-with-Steve-Krouse-e2rru9g"
+canonical_url: "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Do-60-Minute-Coding-Tasks-in-60-SecondsWith-AI---Ep--41-with-Steve-Krouse-e2rru9g"
+source_name: "AI & I by Every"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-07-12T09:55:59.634Z
+language: mixed
+full_text_hash: cc019e7ebfe2cdf1
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-12/r-100-do-60-minute-coding-tasks-in-60-seconds-with-ai-ep-41-with-steve-krous.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-12/r-100-do-60-minute-coding-tasks-in-60-seconds-with-ai-ep-41-with-steve-krous.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: timeout-fallback-visible-text
+extraction_quality: low
+extraction_method: "fetch_failed_summary_fallback"
+readability_score: 0
+extractor_diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+has_full_text: true
+content_length: 498
+fetch_error: "fetch failed (code=UND_ERR_CONNECT_TIMEOUT)"
+evidence_strength: blocked
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["missing_snapshot"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cc019e7ebfe2cdf1","missing":["missing_snapshot"]}
+source_volatility: low
+community_name: ""
+capture_scope: summary_only
+visible_range: "仅保留采集通道当时可见文本，未抓到原页面正文"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: discovery_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: fbfb8e1db4b0a83f
+content_hash: cc019e7ebfe2cdf1
+semantic_hash: fddcaa18a7c2d7ab
+duplicate_of: ""
+first_seen_at: "2026-07-12T09:55:59.634Z"
+last_seen_at: 2026-07-12T09:55:59.634Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":[],"novelty":2,"evidence_strength":3,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["AI & I by Every"],"products":["ChatGPT"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["60","41","60 m","2024","12 m"],"quotes":[]}
+evidence_seed: {"company_actions":["Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds. In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.12 months later, Steve Krouse and I built the same app with one prompt in less than a minute. Steve is the cofounder and CEO of Val Town, a cloud-based platform for developers to write, share, and deploy code directly in the browser. We used Townie, Val Town’s AI assista","Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds.","In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds. In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.12 months later, Steve Krouse and I built the same app with one prompt in less than a minute. Steve is the cofounder and CEO of Val Town, a cloud-based platform for developers to write, share, and deploy code directly in the browser. We used Townie, Val Town’s AI assista","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"12 months later, Steve Krouse and I built the same app with one prompt in less than a minute.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Steve is the cofounder and CEO of Val Town, a cloud-based platform for developers to write, share, and deploy code directly in the browser.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We used Townie, Val Town’s AI assista","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-12T09:55:59.634Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Do 60-Minute Coding Tasks in 60 Seconds—With AI - Ep. 41 with Steve Krouse
+
+## clean_text
+
+Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds. In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.12 months later, Steve Krouse and I built the same app with one prompt in less than a minute. Steve is the cofounder and CEO of Val Town, a cloud-based platform for developers to write, share, and deploy code directly in the browser. We used Townie, Val Town’s AI assista
+
+## full_text
+
+Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds. In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.12 months later, Steve Krouse and I built the same app with one prompt in less than a minute. Steve is the cofounder and CEO of Val Town, a cloud-based platform for developers to write, share, and deploy code directly in the browser. We used Townie, Val Town’s AI assista
+
+## extraction_diagnostics
+
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- fetch_status: timeout-fallback-visible-text
+- extraction_quality: low
+- diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds. In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.12 months later, Steve Krouse and I built the same app with one prompt in less than a minute. Steve is the cofounder and CEO of Val Town, a cloud-based platform for developers to write, share, and deploy code directly in the browser. We used Townie, Val Town’s AI assista
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   12 months later, Steve Krouse and I built the same app with one prompt in less than a minute.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Steve is the cofounder and CEO of Val Town, a cloud-based platform for developers to write, share, and deploy code directly in the browser.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   We used Townie, Val Town’s AI assista
+
+## business_elements
+
+- companies: AI & I by Every
+- products: ChatGPT
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 60, 41, 60 m, 2024, 12 m
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds. In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.12 months later, Steve Krouse and I built the same app with one prompt in less than a minute. Steve is the cofounder and CEO of Val Town, a cloud-based platform for developers to write, share, and deploy code directly in the browser. We used Townie, Val Town’s AI assista / Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds. / In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals:
+- novelty: 2
+- evidence_strength: 3
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- visible_range: 仅保留采集通道当时可见文本，未抓到原页面正文
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds. In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.12 months later, Steve Krouse and I built the same app with one prompt in less than a minute. Steve is the cofounder and CEO of Val Town, a cloud-based platform for developers to write, share, and deploy code directly in the browser. We used Townie, Val Town’s AI assista
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

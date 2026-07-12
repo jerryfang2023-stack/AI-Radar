@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-11T16:31:09.615Z"
-collected_at: 2026-07-12T06:10:44.093Z
+collected_at: 2026-07-12T09:55:23.642Z
 language: mixed
 full_text_hash: 395af1a81eab0bfb
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-12/r-006-ghost-font-一种人类能读懂但ai无法识别的反ai字体.md"
@@ -60,7 +60,7 @@ content_hash: 395af1a81eab0bfb
 semantic_hash: 484a6bd800cdcb95
 duplicate_of: ""
 first_seen_at: "2026-07-11T16:31:09.615Z"
-last_seen_at: 2026-07-12T06:10:44.093Z
+last_seen_at: 2026-07-12T09:55:23.642Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":false,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"Ghost Font 是一种利用运动、视频、噪点和诱饵来隐藏文字的反AI字体。用户输入文字后可生成并下载视频片段，视频中的字母由与背景完全相同的点组成，单帧截图无法显示任何信息。该字体生成的视频被传递给Claude Fable和GPT Sol 5.6 Ultra等前沿模型时，这些模型即使具备编程能力也无法解码移动信息，直到被提示具体技术。视频中还包含一条诱饵信息，使模型误以为找到真实内容。项目灵感来自2013年Sang Mun设计的ZXX字体，但现代AI已能轻松读取ZXX。Ghost Font目前为本地原型，数据不发送至任何服务器。作者计划未来将视频生成代码开源，并探索将其用于CAPTCHA系统或AI视觉感知基准测试。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Ghost Font An anti-AI font that can be read by humans but not leading AI models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Type your text below, then download and share the video clip containing your message.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Write your message: 11 / 36 Pause Invert Speed 120 px/s Reset Download message What is Ghost Font?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Ghost Font is an anti-AI font that writes a message using motion.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Using a combination of motion, video, noise, and decoys, it's a unique way to share a message with other real humans.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-12T06:10:44.093Z
+fact_extraction_completed_at: 2026-07-12T09:55:23.642Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
@@ -200,7 +200,7 @@ As a next step, I plan to release the code for the video generation as an open-s
 - importance_type: important_technical_trend
 - importance_score: 5
 - importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 4
 - case_richness: 4

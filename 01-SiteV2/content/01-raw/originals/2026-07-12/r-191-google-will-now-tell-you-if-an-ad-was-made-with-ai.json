@@ -1,0 +1,214 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-191",
+  "title": "Google will now tell you if an ad was made with AI",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label",
+  "canonical_url": "https://theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label",
+  "source_name": "The Verge AI",
+  "source_type": "media",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-09T20:11:38.000Z",
+  "collected_at": "2026-07-12T09:56:12.098Z",
+  "language": "mixed",
+  "full_text": "You can see if ads on Google Search, Google Discover, and YouTube were made or edited using AI from a new section in Google's \"My Ad Center,\" as reported earlier by TechCrunch. The update, announced on Thursday, adds a \"created or edited with AI\" label under the \"how this ad was made\" tab. Users can [&#8230;]",
+  "clean_text": "You can see if ads on Google Search, Google Discover, and YouTube were made or edited using AI from a new section in Google's \"My Ad Center,\" as reported earlier by TechCrunch. The update, announced on Thursday, adds a \"created or edited with AI\" label under the \"how this ad was made\" tab. Users can [&#8230;]",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-191-google-will-now-tell-you-if-an-ad-was-made-with-ai.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-191-google-will-now-tell-you-if-an-ad-was-made-with-ai.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "timeout-fallback-visible-text",
+  "extraction_quality": "failed",
+  "extraction_method": "fetch_failed_summary_fallback",
+  "readability_score": 0,
+  "extractor_diagnostics": {
+    "method": "fetch_failed_summary_fallback",
+    "error_type": "timeout"
+  },
+  "has_full_text": false,
+  "content_length": 310,
+  "fetch_error": "fetch failed (code=UND_ERR_CONNECT_TIMEOUT)",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "missing_or_summary_only",
+    "snapshot_status": "missing_or_fetch_failed",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "2483084b9ebd2a75",
+    "missing": [
+      "missing_full_text",
+      "missing_snapshot"
+    ]
+  },
+  "evidence_strength": "blocked",
+  "raw_qc_decision": "block",
+  "raw_qc_downstream_use": "not_allowed",
+  "degradation_reasons": [
+    "missing_full_text",
+    "missing_snapshot"
+  ],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "summary_only",
+  "visible_range": "仅保留采集通道当时可见文本，未抓到原页面正文",
+  "evidence_level": "weak_signal",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "discovery_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "87ffda8efe3c208c",
+  "content_hash": "2483084b9ebd2a75",
+  "full_text_hash": "2483084b9ebd2a75",
+  "semantic_hash": "4a7065e0e2fa45a3",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-09T20:11:38.000Z",
+  "last_seen_at": "2026-07-12T09:56:12.098Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "You can see if ads on Google Search, Google Discover, and YouTube were made or edited using AI from a new section in Google's \"My Ad Center,\" as reported earlier by TechCrunch. The update, announced on Thursday, adds a \"created or edited with AI\" label under the \"how this ad was made\" tab. Users can [&#8230;]",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "quote",
+      "text": "You can see if ads on Google Search, Google Discover, and YouTube were made or edited using AI from a new section in Google's \"My Ad Center,\" as reported earlier by TechCrunch.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "quote",
+      "text": "The update, announced on Thursday, adds a \"created or edited with AI\" label under the \"how this ad was made\" tab.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Users can [&#8230;]",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-12T09:56:12.098Z",
+  "business_elements": {
+    "companies": [
+      "The Verge AI",
+      "Google"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "8230"
+    ],
+    "quotes": [
+      "My Ad Center,",
+      "created or edited with AI",
+      "how this ad was made",
+      "My Ad Center,",
+      "created or edited with AI"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Users can [&#8230;]"
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "none",
+    "importance_score": 1,
+    "importance_reason": "no core WaveSight importance signal",
+    "supporting_signals": [],
+    "novelty": 2,
+    "evidence_strength": 2,
+    "case_richness": 2,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "discard"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索",
+    "没有可用全文快照"
+  ],
+  "raw_status": "ignored",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Google will now tell you if an ad was made with AI\n\n- raw_id: R-191\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label\n- source_name: The Verge AI\n- collected_at: 2026-07-12T09:56:12.098Z\n\n## clean_text\n\nYou can see if ads on Google Search, Google Discover, and YouTube were made or edited using AI from a new section in Google's \"My Ad Center,\" as reported earlier by TechCrunch. The update, announced on Thursday, adds a \"created or edited with AI\" label under the \"how this ad was made\" tab. Users can [&#8230;]\n\n## full_text\n\nYou can see if ads on Google Search, Google Discover, and YouTube were made or edited using AI from a new section in Google's \"My Ad Center,\" as reported earlier by TechCrunch. The update, announced on Thursday, adds a \"created or edited with AI\" label under the \"how this ad was made\" tab. Users can [&#8230;]\n\n## extraction_diagnostics\n\n- extraction_method: fetch_failed_summary_fallback\n- readability_score: 0\n- fetch_status: timeout-fallback-visible-text\n- extraction_quality: failed\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] You can see if ads on Google Search, Google Discover, and YouTube were made or edited using AI from a new section in Google's \"My Ad Center,\" as reported earlier by TechCrunch. The update, announced on Thursday, adds a \"created or edited with AI\" label under the \"how this ad was made\" tab. Users can [&#8230;]\n2. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] You can see if ads on Google Search, Google Discover, and YouTube were made or edited using AI from a new section in Google's \"My Ad Center,\" as reported earlier by TechCrunch.\n3. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] The update, announced on Thursday, adds a \"created or edited with AI\" label under the \"how this ad was made\" tab.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Users can [&#8230;]\n"
+}

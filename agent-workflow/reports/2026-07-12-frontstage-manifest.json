@@ -1,6 +1,8 @@
 {
   "date": "2026-07-12",
-  "generated_at": "2026-07-12T09:28:51.023Z",
+  "generated_at": "2026-07-12T09:58:24.739Z",
+  "raw_input_count": 269,
+  "pool_input_count": 136,
   "signal_card_assets": [
     {
       "id": "SIG-20260712-A01",
@@ -11,7 +13,7 @@
     },
     {
       "id": "SIG-20260712-A02",
-      "pool_ref": "P-017",
+      "pool_ref": "P-014",
       "title": "北京智源发布世界基础模型 Orca，不预测 token 而建模世界下一状态",
       "type": "product_service",
       "company": "Orca"
@@ -25,7 +27,7 @@
     },
     {
       "id": "SIG-20260712-A04",
-      "pool_ref": "P-042",
+      "pool_ref": "P-051",
       "title": "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun",
       "type": "case",
       "company": "Bun"
@@ -121,8 +123,8 @@
     },
     {
       "pool_ref": "P-010",
-      "title": "Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows – Company Announcement - FT.com",
-      "source_url": "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605120900BIZWIRE_USPRX____20260512_BW858142-1",
+      "title": "Accelerating supply chain AI with Kinaxis MCP on Amazon Bedrock AgentCore | AWS Partner Network (APN) Blog",
+      "source_url": "https://aws.amazon.com/blogs/apn/accelerating-supply-chain-ai-with-kinaxis-mcp-on-amazon-bedrock-agentcore/",
       "issues": [
         "evidence_quality:stale_source_date",
         "evidence_quality:missing_chinese_fact_translation"
@@ -133,32 +135,6 @@
     },
     {
       "pool_ref": "P-011",
-      "title": "Wonderful raises $150M Series B",
-      "source_url": "https://thenextweb.com/news/wonderful-series-b-enterprise-ai-agents",
-      "issues": [
-        "valid_page_type:generic_report_or_list_not_fact_signal",
-        "evidence_quality:stale_source_date",
-        "evidence_quality:missing_chinese_fact_translation",
-        "business_signal_scope:missing_concrete_funding_product_or_case_event"
-      ],
-      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
-      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
-      "promote_priority": "low"
-    },
-    {
-      "pool_ref": "P-012",
-      "title": "Accelerating supply chain AI with Kinaxis MCP on Amazon Bedrock AgentCore | AWS Partner Network (APN) Blog",
-      "source_url": "https://aws.amazon.com/blogs/apn/accelerating-supply-chain-ai-with-kinaxis-mcp-on-amazon-bedrock-agentcore/",
-      "issues": [
-        "evidence_quality:missing_source_date",
-        "evidence_quality:missing_chinese_fact_translation"
-      ],
-      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
-      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
-      "promote_priority": "medium"
-    },
-    {
-      "pool_ref": "P-013",
       "title": "awesome-copilot/skills/devops-rollout-plan/SKILL.md at main - GitHub",
       "source_url": "https://github.com/github/awesome-copilot/blob/main/skills/devops-rollout-plan/SKILL.md",
       "issues": [
@@ -172,7 +148,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-014",
+      "pool_ref": "P-012",
       "title": "Databricks will bake OpenAI models into its products in $100M bet to ...",
       "source_url": "https://techcrunch.com/2025/09/25/databricks-will-bake-openai-models-into-its-products-in-100m-bet-to-spur-enterprise-adoption/",
       "issues": [
@@ -184,21 +160,9 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-015",
+      "pool_ref": "P-013",
       "title": "Iberdrola enhances IT operations using Amazon Bedrock AgentCore | Artificial Intelligence",
       "source_url": "https://aws.amazon.com/blogs/machine-learning/iberdrola-enhances-it-operations-using-amazon-bedrock-agentcore/",
-      "issues": [
-        "evidence_quality:missing_source_date",
-        "evidence_quality:missing_chinese_fact_translation"
-      ],
-      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
-      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
-      "promote_priority": "medium"
-    },
-    {
-      "pool_ref": "P-016",
-      "title": "Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale – Company Announcement - FT.com",
-      "source_url": "https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1",
       "issues": [
         "evidence_quality:stale_source_date",
         "evidence_quality:missing_chinese_fact_translation"
@@ -208,7 +172,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-018",
+      "pool_ref": "P-015",
       "title": "Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI",
       "source_url": "https://www.marktechpost.com/2026/07/11/mira-muratis-thinking-machines-lab-makes-the-technical-case-for-human-centered-ai-built-on-customizable-model-weights",
       "issues": [
@@ -221,7 +185,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-019",
+      "pool_ref": "P-016",
       "title": "microsoft/ai-agents-for-beginners: 12 Lessons to Get ... - GitHub",
       "source_url": "https://github.com/microsoft/ai-agents-for-beginners",
       "issues": [
@@ -237,7 +201,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-020",
+      "pool_ref": "P-017",
       "title": "OpenAI 承认 ChatGPT Work 发布\"并非一切顺利\"，紧急修复用户体验和成本问题",
       "source_url": "https://the-decoder.com/openai-admits-it-didnt-get-everything-quite-right-with-chatgpt-work-launch-and-scrambles-to-fix-ux-and-costs",
       "issues": [
@@ -249,35 +213,21 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-021",
-      "title": "Hitachi Announces Strategic Partnership With Anthropic to Strengthen \"Lumada 3.0\" Through Frontier AI – Company Announcement - FT.com",
-      "source_url": "https://markets.ft.com/data/announce/detail?dockey=600-202605182000BIZWIRE_USPRX____20260518_BW301548-1",
-      "issues": [
-        "evidence_quality:stale_source_date",
-        "evidence_quality:missing_chinese_fact_translation",
-        "source_auditability:discovery_source_not_resolved"
-      ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, source_auditability:discovery_source_not_resolved",
-      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
-      "promote_priority": "low"
-    },
-    {
-      "pool_ref": "P-022",
+      "pool_ref": "P-018",
       "title": "Tiered Network Policy: Scaling Kubernetes Security",
       "source_url": "https://www.tigera.io/blog/tiered-network-policy-scaling-kubernetes-security/",
       "issues": [
-        "evidence_quality:missing_source_date",
         "evidence_quality:missing_chinese_fact_translation",
         "business_signal_scope:missing_concrete_funding_product_or_case_event",
         "valid_page_type:pool_route_index_only_not_formal_card",
         "fact_type_constraints:non_commercial_policy_or_ethics_signal"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-023",
+      "pool_ref": "P-019",
       "title": "谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放",
       "source_url": "https://www.ithome.com/0/975/573.htm",
       "issues": [
@@ -288,7 +238,7 @@
       "promote_priority": "review"
     },
     {
-      "pool_ref": "P-024",
+      "pool_ref": "P-020",
       "title": "特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等",
       "source_url": "https://www.ithome.com/0/975/661.htm",
       "issues": [
@@ -299,7 +249,7 @@
       "promote_priority": "review"
     },
     {
-      "pool_ref": "P-025",
+      "pool_ref": "P-021",
       "title": "OpenAI 招聘家庭产品经理，拓展家庭用户市场",
       "source_url": "https://www.ithome.com/0/975/633.htm",
       "issues": [
@@ -310,22 +260,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-026",
-      "title": "OpenAI&#039;s GPT-5.6 Sol autonomously post-trained the smaller Luna model with a &quot;fairly underspecified prompt&quot;",
-      "source_url": "https://the-decoder.com/openais-gpt-5-6-sol-autonomously-post-trained-the-smaller-luna-model-with-a-fairly-underspecified-prompt/",
-      "issues": [
-        "evidence_quality:stale_source_date",
-        "evidence_quality:missing_chinese_fact_translation",
-        "valid_page_type:research_prototype_without_commercial_event",
-        "valid_page_type:research_benchmark_without_commercial_event",
-        "business_signal_scope:missing_concrete_funding_product_or_case_event"
-      ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_prototype_without_commercial_event, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
-      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
-      "promote_priority": "low"
-    },
-    {
-      "pool_ref": "P-027",
+      "pool_ref": "P-022",
       "title": "努比亚倪飞谈 AI 智能体手机：下半场从\"功能叠加\"走向\"原生智能体\"",
       "source_url": "https://www.ithome.com/0/975/662.htm",
       "issues": [
@@ -336,7 +271,7 @@
       "promote_priority": "review"
     },
     {
-      "pool_ref": "P-028",
+      "pool_ref": "P-023",
       "title": "特斯拉正开发 Grok 语音控制 FSD 功能",
       "source_url": "https://www.ithome.com/0/975/658.htm",
       "issues": [
@@ -351,7 +286,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-029",
+      "pool_ref": "P-024",
       "title": "GPT-5.6 上线之际，马斯克与奥尔特曼隔空\"掐架\"",
       "source_url": "https://www.ithome.com/0/975/641.htm",
       "issues": [
@@ -362,7 +297,7 @@
       "promote_priority": "review"
     },
     {
-      "pool_ref": "P-030",
+      "pool_ref": "P-025",
       "title": "消息称中兴系战略深度聚焦 AI 手机，常规产品线暂定正常迭代",
       "source_url": "https://www.ithome.com/0/975/478.htm",
       "issues": [
@@ -373,7 +308,7 @@
       "promote_priority": "review"
     },
     {
-      "pool_ref": "P-031",
+      "pool_ref": "P-026",
       "title": "Meta 发布 Muse Spark 1.1 模型",
       "source_url": "https://the-decoder.com/metas-muse-spark-1-1-outperforms-glm-5-2-in-coding-and-costs-slightly-less",
       "issues": [
@@ -384,26 +319,7 @@
       "promote_priority": "review"
     },
     {
-      "pool_ref": "P-032",
-      "title": "xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史",
-      "source_url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
-      "issues": [
-        "evidence_quality:missing_source_material",
-        "valid_page_type:generic_report_or_list_not_fact_signal",
-        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
-        "valid_page_type:repository_catalog_or_directory_page",
-        "valid_page_type:index_only_evidence",
-        "business_signal_scope:missing_concrete_funding_product_or_case_event",
-        "valid_page_type:degradation_reason_index_only",
-        "valid_page_type:text_indicates_index_only",
-        "valid_page_type:pool_route_index_only_not_formal_card"
-      ],
-      "not_promoted_reason": "evidence_quality:missing_source_material, valid_page_type:generic_report_or_list_not_fact_signal, fact_type_constraints:user_feedback_or_commentary_not_verified_fact, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_only_evidence, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
-      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
-      "promote_priority": "low"
-    },
-    {
-      "pool_ref": "P-033",
+      "pool_ref": "P-027",
       "title": "别再让我去问LLM了：当\"Ask Claude\"成为拒绝深度交流的借口",
       "source_url": "https://blog.yaelwrites.com/stop-telling-me-to-ask-an-llm",
       "issues": [
@@ -416,7 +332,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-034",
+      "pool_ref": "P-028",
       "title": "研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发",
       "source_url": "https://the-decoder.com/terrorist-groups-are-using-every-major-ai-chatbot-for-attack-planning-and-weapons-development",
       "issues": [
@@ -429,7 +345,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-035",
+      "pool_ref": "P-029",
       "title": "AI 2040》与\"智能崇拜\"：作者反思从硬起飞信仰到现实琐碎细节的转变",
       "source_url": "https://geohot.github.io//blog/jekyll/update/2026/07/11/ai-2040.html",
       "issues": [
@@ -442,7 +358,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-036",
+      "pool_ref": "P-030",
       "title": "TileGym GPU 编程教程：从cuTile与Triton内核到Flash Attention",
       "source_url": "https://www.marktechpost.com/2026/07/11/a-coding-guide-to-nvidias-tile-based-gpu-programming-from-cutile-and-triton-kernels-to-flash-attention",
       "issues": [
@@ -456,7 +372,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-037",
+      "pool_ref": "P-031",
       "title": "KKAzilen/agentic-ai-lending-workflow: A practical reference ... - GitHub",
       "source_url": "https://github.com/KKAzilen/agentic-ai-lending-workflow",
       "issues": [
@@ -470,7 +386,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-038",
+      "pool_ref": "P-032",
       "title": "UiPath's venture arm backs workflow automation startup AirSlate",
       "source_url": "https://techcrunch.com/2022/06/16/uipaths-new-venture-arm-backs-workflow-automation-startup-airslate/",
       "issues": [
@@ -484,7 +400,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-039",
+      "pool_ref": "P-033",
       "title": "阶跃星辰发布 Step Edge 端侧模型全家桶",
       "source_url": "https://www.ithome.com/0/975/681.htm",
       "issues": [
@@ -495,32 +411,286 @@
       "promote_priority": "review"
     },
     {
-      "pool_ref": "P-040",
-      "title": "Cognizant and Rubrik expand alliance to give enterprises control over autonomous AI in production – Company Announcement - FT.com",
-      "source_url": "https://markets.ft.com/data/announce/full?dockey=600-202606161000PR_NEWS_USPRX____NY84494-1",
+      "pool_ref": "P-034",
+      "title": "Adding a Checkbox &amp; Download Button to a FastAPI-HTML app",
+      "source_url": "https://eugeneyan.com//writing/fastapi-html-checkbox-download/",
       "issues": [
         "evidence_quality:stale_source_date",
         "evidence_quality:missing_chinese_fact_translation",
-        "source_auditability:discovery_source_not_resolved"
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, source_auditability:discovery_source_not_resolved",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-035",
+      "title": "How to Set Up a HTML App with FastAPI, Jinja, Forms &amp; Templates",
+      "source_url": "https://eugeneyan.com//writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "business_signal_scope:unsupported_importance_type:none"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:none",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-036",
+      "title": "How to Update a GitHub Profile README Automatically",
+      "source_url": "https://eugeneyan.com//writing/how-to-update-github-profile-readme-automatically/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:index_or_directory_url",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "valid_page_type:docs_or_catalog_or_investing_thesis"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:index_or_directory_url, business_signal_scope:unsupported_importance_type:supporting_signal, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card, valid_page_type:docs_or_catalog_or_investing_thesis",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-037",
+      "title": "My Notes From Spark+AI Summit 2020 (Application-Specific Talks)",
+      "source_url": "https://eugeneyan.com//writing/notes-from-sparkai-summit-application-specific/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-038",
+      "title": "My Notes From Spark+AI Summit 2020 (Application-Agnostic Talks)",
+      "source_url": "https://eugeneyan.com//writing/notes-from-sparkai-summit-application-agnostic/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-039",
+      "title": "Product Categorization API Part 3: Creating an API",
+      "source_url": "https://eugeneyan.com//writing/product-categorization-api-part-3-creating-an-api/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-040",
+      "title": "Product Classification API Part 2: Data Preparation",
+      "source_url": "https://eugeneyan.com//writing/product-categorization-api-part-2-data-preparation/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
     {
       "pool_ref": "P-041",
-      "title": "llm 0.31.1",
-      "source_url": "https://simonwillison.net/2026/Jul/9/llm/#atom-everything",
+      "title": "Grok x Cursor",
+      "source_url": "https://www.bensbites.com/p/grok-x-cursor",
       "issues": [
-        "valid_page_type:research_prototype_without_commercial_event",
-        "valid_page_type:research_benchmark_without_commercial_event"
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
       ],
-      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, valid_page_type:research_benchmark_without_commercial_event",
-      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:supporting_signal, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-042",
+      "title": "My thoughts on Fable",
+      "source_url": "https://www.bensbites.com/p/my-thoughts-on-fable",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
       "promote_priority": "low"
     },
     {
       "pool_ref": "P-043",
+      "title": "Fable is back",
+      "source_url": "https://www.bensbites.com/p/fable-is-back",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-044",
+      "title": "Claude Code in Slack",
+      "source_url": "https://www.bensbites.com/p/claude-code-in-slack",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-045",
+      "title": "Record a skill",
+      "source_url": "https://www.bensbites.com/p/record-a-skill",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-046",
+      "title": "New Claude model - Fable",
+      "source_url": "https://www.bensbites.com/p/new-claude-model-fable",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-047",
+      "title": "Hey Siri, meet AI",
+      "source_url": "https://www.bensbites.com/p/hey-siri-meet-ai",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-048",
+      "title": "Opus 4.8",
+      "source_url": "https://www.bensbites.com/p/opus-48",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, business_signal_scope:unsupported_importance_type:supporting_signal, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:research_benchmark_without_commercial_event, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-049",
+      "title": "Google's take on openclaw",
+      "source_url": "https://www.bensbites.com/p/googles-take-on-openclaw",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-050",
+      "title": "Can I get my agents on the phone?",
+      "source_url": "https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:research_benchmark_without_commercial_event, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-052",
       "title": "彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句\"哈哈\"成窃密关键",
       "source_url": "https://www.ithome.com/0/975/634.htm",
       "issues": [
@@ -532,7 +702,7 @@
       "promote_priority": "review"
     },
     {
-      "pool_ref": "P-044",
+      "pool_ref": "P-053",
       "title": "荣耀公布平板端MagicOS 7月升级特性",
       "source_url": "https://www.ithome.com/0/975/546.htm",
       "issues": [
@@ -543,7 +713,7 @@
       "promote_priority": "review"
     },
     {
-      "pool_ref": "P-045",
+      "pool_ref": "P-054",
       "title": "OpenAI 称 GPT-5.6 Sol 可化身研究员，后训练 Luna AI 模型",
       "source_url": "https://www.ithome.com/0/975/461.htm",
       "issues": [
@@ -554,7 +724,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-046",
+      "pool_ref": "P-055",
       "title": "分析师：特斯拉 FSD 即将迎来属于自己的 iPhone 时刻",
       "source_url": "https://www.ithome.com/0/975/667.htm",
       "issues": [
@@ -567,7 +737,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-047",
+      "pool_ref": "P-056",
       "title": "特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新",
       "source_url": "https://www.ithome.com/0/975/655.htm",
       "issues": [
@@ -579,7 +749,33 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-048",
+      "pool_ref": "P-057",
+      "title": "Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows – Company Announcement - FT.com",
+      "source_url": "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605120900BIZWIRE_USPRX____20260512_BW858142-1",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-058",
+      "title": "Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale – Company Announcement - FT.com",
+      "source_url": "https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-059",
       "title": "韩国首尔将试点公共数据 MCP 服务，AI 可查询实时交通与空气信息",
       "source_url": "https://www.ithome.com/0/975/674.htm",
       "issues": [
@@ -595,7 +791,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-049",
+      "pool_ref": "P-060",
       "title": "月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式",
       "source_url": "https://www.ithome.com/0/975/619.htm",
       "issues": [
@@ -606,7 +802,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-050",
+      "pool_ref": "P-061",
       "title": "阿里巴巴等启动\"古壁生辉\"古代壁画 AI 重现工程",
       "source_url": "https://www.ithome.com/0/975/537.htm",
       "issues": [
@@ -617,7 +813,674 @@
       "promote_priority": "review"
     },
     {
-      "pool_ref": "P-051",
+      "pool_ref": "P-062",
+      "title": "Best of the Pod: Would You Shut Down Your Most Successful Product? The Arc to Dia Story",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-Would-You-Shut-Down-Your-Most-Successful-Product--The-Arc-to-Dia-Story-e3bggl0",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-063",
+      "title": "Image classification API is now live!",
+      "source_url": "https://eugeneyan.com//writing/image-categorization-is-now-live/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-064",
+      "title": "Inside Stainless: The Developer Tools Startup Anthropic Just Bought for $300 Million",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Inside-Stainless-The-Developer-Tools-Startup-Anthropic-Just-Bought-for-300-Million-e3jk50h",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-065",
+      "title": "MCP Servers: Teaching AI to Use the Internet Like Humans",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/MCP-Servers-Teaching-AI-to-Use-the-Internet-Like-Humans-e38u3hj",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-066",
+      "title": "The AI Model Built for What LLMs Can't Do",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-AI-Model-Built-for-What-LLMs-Cant-Do-e3htoru",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-067",
+      "title": "Vibe Check: Claude Cowork Is Claude Code for the Rest of Us",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Vibe-Check-Claude-Cowork-Is-Claude-Code-for-the-Rest-of-Us-e3djl3h",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-068",
+      "title": "Building AI Agents to Launch a Million Businesses",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Building-AI-Agents-to-Launch-a-Million-Businesses-e3asdfm",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-069",
+      "title": "Spiral: Designing an AI Ghostwriter With Taste",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Spiral-Designing-an-AI-Ghostwriter-With-Taste-e39t3nm",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-070",
+      "title": "One Developer Got Thousands of Users Before His App Launched",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/One-Developer-Got-Thousands-of-Users-Before-His-App-Launched-e38bpj1",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-071",
+      "title": "Best of the Pod: She Built an AI Product Manager Bringing in Six Figures—As A Side Hustle",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-She-Built-an-AI-Product-Manager-Bringing-in-Six-FiguresAs-A-Side-Hustle-e372j2k",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-072",
+      "title": "Jhana Meditation Silenced Her Mind—And Changed Her View On AI | Nadia Asparouhova, Author and researcher",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Jhana-Meditation-Silenced-Her-MindAnd-Changed-Her-View-On-AI--Nadia-Asparouhova--Author-and-researcher-e32g767",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_prototype_without_commercial_event",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-073",
+      "title": "How AI Will Change Science Forever - Ep. 43 with Alice Albrecht",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-AI-Will-Change-Science-Forever---Ep--43-with-Alice-Albrecht-e2sfgue",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_prototype_without_commercial_event",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-074",
+      "title": "How We Incubate and Launch New Products With AI - Ep. 40 with Danny Aziz, Brandon Gell",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-We-Incubate-and-Launch-New-Products-With-AI---Ep--40-with-Danny-Aziz--Brandon-Gell-e2rivhg",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-075",
+      "title": "Building AI That Builds Itself - Ep. 35 with Yohei Nakajima",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Building-AI-That-Builds-Itself---Ep--35-with-Yohei-Nakajima-e2q1qhq",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-076",
+      "title": "How to Be a Smarter Reader in the Age of AI - Ep. 30 with Alex Wieckowski",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Be-a-Smarter-Reader-in-the-Age-of-AI---Ep--30-with-Alex-Wieckowski-e2n608a",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-077",
+      "title": "Dwarkesh Patel’s Quest to Learn Everything - Ep. 27",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Dwarkesh-Patels-Quest-to-Learn-Everything---Ep--27-e2md2rr",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-078",
+      "title": "Take Your Business From Zero to One With AI - Ep. 16 with Nicholas Thorne",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Take-Your-Business-From-Zero-to-One-With-AI---Ep--16-with-Nicholas-Thorne-e2hktdi",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-079",
+      "title": "How to Run a Profitable One-person Internet Business Using AI - Ep. 14 with Ben Tossell",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Run-a-Profitable-One-person-Internet-Business-Using-AI---Ep--14-with-Ben-Tossell-e2h0ak1",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:technical_article_without_business_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:technical_article_without_business_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-080",
+      "title": "Economist Tyler Cowen on How ChatGPT Is Changing Your Job - Ep. 7 with Tyler Cowen",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Economist-Tyler-Cowen-on-How-ChatGPT-Is-Changing-Your-Job---Ep--7-with-Tyler-Cowen-e2es2vt",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_prototype_without_commercial_event",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-081",
+      "title": "You Can Build an App in 60 Minutes with ChatGPT - Ep. 5 with Geoffrey Litt",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/You-Can-Build-an-App-in-60-Minutes-with-ChatGPT---Ep--5-with-Geoffrey-Litt-e2e8f4q",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_prototype_without_commercial_event",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-082",
+      "title": "Using ChatGPT for Writing and Recommending Books - Ep. 2 with Nat Eliason",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Using-ChatGPT-for-Writing-and-Recommending-Books---Ep--2-with-Nat-Eliason-e2cm5s8",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-083",
+      "title": "OpenAI&#039;s GPT-5.6 Sol autonomously post-trained the smaller Luna model with a &quot;fairly underspecified prompt&quot;",
+      "source_url": "https://the-decoder.com/openais-gpt-5-6-sol-autonomously-post-trained-the-smaller-luna-model-with-a-fairly-underspecified-prompt/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_prototype_without_commercial_event",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-084",
+      "title": "llm 0.31.1",
+      "source_url": "https://simonwillison.net/2026/Jul/9/llm/#atom-everything",
+      "issues": [
+        "evidence_quality:missing_source_material"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-085",
+      "title": "Best of the Pod: Dwarkesh Patel’s Quest to Learn Everything",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-Dwarkesh-Patels-Quest-to-Learn-Everything-e367r0n",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-086",
+      "title": "Intentional Tech: Designing AI for Human Flourishing | Alex Komoroske, Cofounder and CEO of Common Tools",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Intentional-Tech-Designing-AI-for-Human-Flourishing--Alex-Komoroske--Cofounder-and-CEO-of-Common-Tools-e359phs",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-087",
+      "title": "How a Top Podcaster Rides the AI Wave - Ep. 28 with Nathaniel Whittemore",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-a-Top-Podcaster-Rides-the-AI-Wave---Ep--28-with-Nathaniel-Whittemore-e2mkq55",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-088",
+      "title": "Is NotebookLM—Google's Research Assistant—the Ultimate Tool For Thought? - Ep.22 with Steven Johnson",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Is-NotebookLMGoogles-Research-Assistantthe-Ultimate-Tool-For-Thought----Ep-22-with-Steven-Johnson-e2kijs9",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-089",
+      "title": "The AI Workflows Behind Every's Consulting Team",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-AI-Workflows-Behind-Everys-Consulting-Team-e3lh60h",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-090",
+      "title": "llm-meta-ai 0.1",
+      "source_url": "https://simonwillison.net/2026/Jul/9/llm-meta-ai/#atom-everything",
+      "issues": [
+        "evidence_quality:missing_source_material"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-091",
+      "title": "If SaaS Is Dead, Linear Didn't Get the Memo",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/If-SaaS-Is-Dead--Linear-Didnt-Get-the-Memo-e3h8fqj",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-092",
+      "title": "Kate Lee on Taste, Hiring, and Running Editorial at Every",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Kate-Lee-on-Taste--Hiring--and-Running-Editorial-at-Every-e3gkn03",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+        "valid_page_type:job_listing_not_formal_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, valid_page_type:job_listing_not_formal_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-093",
+      "title": "We Made a Document Editor Where Humans and AI Work Side by Side",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/We-Made-a-Document-Editor-Where-Humans-and-AI-Work-Side-by-Side-e3g9h0m",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-094",
+      "title": "Best of the Pod: Claude Code - How Two Engineers Ship Like a Team of 15",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-Claude-Code---How-Two-Engineers-Ship-Like-a-Team-of-15-e3b6hfo",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-095",
+      "title": "Inside Claude Code From the Engineers Who Built It",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Inside-Claude-Code-From-the-Engineers-Who-Built-It-e3a794m",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-096",
+      "title": "Kevin Scott on The Future of Programming, AI Agents, and Microsoft’s Big Bet on the Agentic Web",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Kevin-Scott-on-The-Future-of-Programming--AI-Agents--and-Microsofts-Big-Bet-on-the-Agentic-Web-e334cfu",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-097",
+      "title": "The Next AI Wave Will Be Social, Not Solo | Sarah Tavel, Benchmark and ex-Pinterest",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-Next-AI-Wave-Will-Be-Social--Not-Solo--Sarah-Tavel--Benchmark-and-ex-Pinterest-e326u9g",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "fact_type_constraints:social_or_community_source_not_verified_fact",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, fact_type_constraints:social_or_community_source_not_verified_fact, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-098",
+      "title": "He’s Using AI to Optimize His Life - Ep. 53 with Jonny Miller",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Hes-Using-AI-to-Optimize-His-Life---Ep--53-with-Jonny-Miller-e30mq6s",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-099",
+      "title": "He Built an AI Audience Simulator. It’s the Future of Customer Research. - Ep. 49 with Michael Taylor",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/He-Built-an-AI-Audience-Simulator--Its-the-Future-of-Customer-Research----Ep--49-with-Michael-Taylor-e2vcucq",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-100",
+      "title": "Do 60-Minute Coding Tasks in 60 Seconds—With AI - Ep. 41 with Steve Krouse",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Do-60-Minute-Coding-Tasks-in-60-SecondsWith-AI---Ep--41-with-Steve-Krouse-e2rru9g",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-101",
+      "title": "How to Win With Prompt Engineering - Ep. 38 with Jared Zoneraich",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Win-With-Prompt-Engineering---Ep--38-with-Jared-Zoneraich-e2qn1mi",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:important_technical_trend",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-102",
+      "title": "How to Supercharge Your Writing With AI Tools - Ep. 33 with Evan Armstrong",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Supercharge-Your-Writing-With-AI-Tools---Ep--33-with-Evan-Armstrong-e2o002s",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-103",
+      "title": "The AI-powered Era of Scientific Discovery Is Here - Ep. 25 with Dr. Bradley Love",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-AI-powered-Era-of-Scientific-Discovery-Is-Here---Ep--25-with-Dr--Bradley-Love-e2ls4gr",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-104",
+      "title": "She Built an AI Product Manager Bringing in Six Figures—As A Side Hustle - Ep. 24 with Claire Vo",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/She-Built-an-AI-Product-Manager-Bringing-in-Six-FiguresAs-A-Side-Hustle---Ep--24-with-Claire-Vo-e2l3slr",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-105",
+      "title": "How to Use ChatGPT as a Copilot for Learning - Ep. 4 with Nathan Labenz",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Use-ChatGPT-as-a-Copilot-for-Learning---Ep--4-with-Nathan-Labenz-e2df90i",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-106",
       "title": "苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划",
       "source_url": "https://www.ithome.com/0/975/666.htm",
       "issues": [
@@ -628,7 +1491,383 @@
       "promote_priority": "review"
     },
     {
-      "pool_ref": "P-052",
+      "pool_ref": "P-107",
+      "title": "Can Gemini 1.5 Pro Beat Our Best Stock Trade? - Ep. 13 with Jesse Beyroutey",
+      "source_url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Can-Gemini-1-5-Pro-Beat-Our-Best-Stock-Trade----Ep--13-with-Jesse-Beyroutey-e2gfd4r",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-108",
+      "title": "How to Build an Open-Domain Question Answering System?",
+      "source_url": "https://lilianweng.github.io/posts/2020-10-29-odqa/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-109",
+      "title": "The Transformer Family",
+      "source_url": "https://lilianweng.github.io/posts/2020-04-07-the-transformer-family/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "business_signal_scope:unsupported_importance_type:none"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:unsupported_importance_type:none",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-110",
+      "title": "Self-Supervised Representation Learning",
+      "source_url": "https://lilianweng.github.io/posts/2019-11-10-self-supervised/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-111",
+      "title": "Evolution Strategies",
+      "source_url": "https://lilianweng.github.io/posts/2019-09-05-evolution-strategies/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-112",
+      "title": "Meta Reinforcement Learning",
+      "source_url": "https://lilianweng.github.io/posts/2019-06-23-meta-rl/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-113",
+      "title": "Are Deep Neural Networks Dramatically Overfitted?",
+      "source_url": "https://lilianweng.github.io/posts/2019-03-14-overfit/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-114",
+      "title": "Generalized Language Models",
+      "source_url": "https://lilianweng.github.io/posts/2019-01-31-lm/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-115",
+      "title": "Object Detection Part 4: Fast Detection Models",
+      "source_url": "https://lilianweng.github.io/posts/2018-12-27-object-recognition-part-4/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-116",
+      "title": "Meta-Learning: Learning to Learn Fast",
+      "source_url": "https://lilianweng.github.io/posts/2018-11-30-meta-learning/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-117",
+      "title": "Flow-based Deep Generative Models",
+      "source_url": "https://lilianweng.github.io/posts/2018-10-13-flow-models/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-118",
+      "title": "From Autoencoder to Beta-VAE",
+      "source_url": "https://lilianweng.github.io/posts/2018-08-12-vae/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-119",
+      "title": "Policy Gradient Algorithms",
+      "source_url": "https://lilianweng.github.io/posts/2018-04-08-policy-gradient/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-120",
+      "title": "A (Long) Peek into Reinforcement Learning",
+      "source_url": "https://lilianweng.github.io/posts/2018-02-19-rl-overview/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-121",
+      "title": "Object Detection for Dummies Part 3: R-CNN Family",
+      "source_url": "https://lilianweng.github.io/posts/2017-12-31-object-recognition-part-3/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-122",
+      "title": "From GAN to WGAN",
+      "source_url": "https://lilianweng.github.io/posts/2017-08-20-gan/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-123",
+      "title": "An Overview of Deep Learning for Curious People",
+      "source_url": "https://lilianweng.github.io/posts/2017-06-21-overview/",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-124",
+      "title": "xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史",
+      "source_url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "fact_type_constraints:social_or_community_source_not_verified_fact",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:unsupported_importance_type:none",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, valid_page_type:generic_report_or_list_not_fact_signal, fact_type_constraints:social_or_community_source_not_verified_fact, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-125",
+      "title": "The PhD Student &amp; Professor Reinventing AI: Fei-Fei Li &amp; Justin Johnson on Spatial Intelligence",
+      "source_url": "https://episode.flightcast.com/01KAM7P2XJ0G8V3VNT49SKJPK2.mp3",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:none",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-126",
+      "title": "Red-Teaming after Mythos — Zico Kolter &amp; Matt Fredrikson, Gray Swan",
+      "source_url": "https://www.latent.space/p/gray-swan",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-127",
+      "title": "Everything Gets Rebuilt: The New AI Agent Stack | Harrison Chase, LangChain",
+      "source_url": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Everything-Gets-Rebuilt-The-New-AI-Agent-Stack--Harrison-Chase--LangChain-e3gapv9",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-128",
       "title": "OpenAI 发布 GPT-5.6 系列医疗评估结果",
       "source_url": "no-url",
       "issues": [
@@ -646,7 +1885,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-053",
+      "pool_ref": "P-129",
       "title": "Claude Code v2.1.207 发布",
       "source_url": "no-url",
       "issues": [
@@ -664,7 +1903,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-054",
+      "pool_ref": "P-130",
       "title": "11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun",
       "source_url": "no-url",
       "issues": [
@@ -681,7 +1920,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-055",
+      "pool_ref": "P-131",
       "title": "Ghost Font：一种人类能读懂但AI无法识别的反AI字体",
       "source_url": "no-url",
       "issues": [
@@ -703,7 +1942,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-056",
+      "pool_ref": "P-132",
       "title": "蚂蚁集团 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型",
       "source_url": "no-url",
       "issues": [
@@ -721,7 +1960,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-057",
+      "pool_ref": "P-133",
       "title": "OpenAI GPT-5.6-Sol 删光 AI 创业者 Matt Shumer 的 Mac 硬盘",
       "source_url": "no-url",
       "issues": [
@@ -740,7 +1979,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-058",
+      "pool_ref": "P-134",
       "title": "阶跃星辰发布 Step Edge 端侧模型全家桶",
       "source_url": "https://mp.weixin.qq.com/s/StOzmXaUGSsjUXkAoW-HZg",
       "issues": [
@@ -752,7 +1991,7 @@
       "promote_priority": "medium"
     },
     {
-      "pool_ref": "P-059",
+      "pool_ref": "P-135",
       "title": "彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句“哈哈”成窃密关键",
       "source_url": "no-url",
       "issues": [
@@ -773,7 +2012,7 @@
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-060",
+      "pool_ref": "P-136",
       "title": "研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发",
       "source_url": "no-url",
       "issues": [

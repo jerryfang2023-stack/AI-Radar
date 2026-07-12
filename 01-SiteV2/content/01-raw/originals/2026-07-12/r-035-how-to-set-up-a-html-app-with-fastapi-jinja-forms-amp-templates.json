@@ -1,0 +1,273 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-035",
+  "title": "How to Set Up a HTML App with FastAPI, Jinja, Forms &amp; Templates",
+  "title_zh": "如何使用FastAPI、Jinja、表单和模板设置HTML应用程序",
+  "title_translation_status": "translated",
+  "title_translation_method": "mymemory_title_translation",
+  "original_url": "https://eugeneyan.com//writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/",
+  "canonical_url": "https://eugeneyan.com/writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates",
+  "source_name": "Eugene Yan's Blog",
+  "source_type": "builder",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "supporting_article",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2020-07-23T00:00:00.000Z",
+  "collected_at": "2026-07-12T09:55:29.590Z",
+  "language": "mixed",
+  "full_text": "How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates\neugeneyan\nStart Here\nWriting\nSpeaking\nPrototyping\nAbout\nHow to Set Up a HTML App with FastAPI, Jinja, Forms & Templates\nengineering\npython\ntil\n· 3 min read\nI usually use Flask to build and deploy REST/web apps. Flask is simple to use and apps are easy to spin up with minimal code. Today, I decided to try FastAPI for my new web app, inspired by @tiangolo ’s recent talk .\nThe switch was easier than expected. FastAPI has great documentation and this article by @amitness was useful. Nonetheless, I couldn’t find any guides on how to serve HTML with FastAPI. Thus, I wrote this simple article to plug the hole on the internet.\nTry it out with the GitHub repo here: fastapi-html\nFirst, We Build a REST API\nInstalling FastAPI is as easy as (more about poetry ):\npoetry add fastapi uvicorn\nThen, we build a simple REST API .\nfrom fastapi import FastAPI\nfrom src.model import spell_number # Spell a number: 1 -> 'one', 2 -> 'two'\napp = FastAPI ()\n@ app . get ( '/' )\ndef read_root ():\nreturn 'hello world'\n@ app . get ( \"/rest\" )\ndef read_item ( num : int ):\nresult = spell_number ( num )\nreturn { \"number_spelled\" : result }\nLet’s start it up…\npoetry run uvicorn src.rest:app --reload\nAnd call the REST API. The API takes in a number, and spells it out.\ncurl -X GET \"http://127.0.0.1:8000/rest?num=1234\" -H \"accept: application/json\"\n{\"number_spelled\":\"one thousand, two hundred and thirty-four\"}\nNow, Let’s Make it Serve HTML\nFirst, we’ll need to install some additional dependencies, specifically python-multipart for HTML forms and jinja for templating.\npoetry add jinja2 python-multipart\nThen, we’ll create a simple HTML template :\n<!DOCTYPE html>\n<html lang= \"en\" >\n<head>\n<meta charset= \"UTF-8\" >\n<title> Sample Form </title>\n</head>\n<body>\n<form method= \"post\" >\n<input type= \"number\" name= \"num\" value= \"1234\" />\n<input type= \"submit\" >\n</form>\n<p> Result: {{ result }} </p>\n</body>\n</html>\nNext, we write a simple web app that:\nMounts the templates directory\nReceives requests, and…\nReturns results via our HTML template\nfrom fastapi import FastAPI , Request , Form\nfrom fastapi.templating import Jinja2Templates\nfrom src.model import spell_number\napp = FastAPI ()\ntemplates = Jinja2Templates ( directory = \"templates/\" )\n@ app . get ( '/' )\ndef read_form ():\nreturn 'hello world'\n@ app . get ( \"/form\" )\ndef form_post ( request : Request ):\nresult = \"Type a number\"\nreturn templates . TemplateResponse ( 'form.html' , context = { 'request' : request , 'result' : result })\n@ app . post ( \"/form\" )\ndef form_post ( request : Request , num : int = Form (...)):\nresult = spell_number ( num )\nreturn templates . TemplateResponse ( 'form.html' , context = { 'request' : request , 'result' : result })\nLet’s start it up…\npoetry run uvicorn src.html:app --reload\nAnd give it a spin. Viola, simple as that.\nOur simple web app with FastAPI, Forms, and Jinja templates\nToday, I learnt how to use FastAPI to serve HTML web apps.\nIt's straightforward with jinja, templates, and HTML forms. Here's the 2-min how-to. https://t.co/RrrISggU8o\n&mdash; Eugene Yan (@eugeneyan) July 25, 2020\nUpdate: This article trended recently on Made With ML !\n🏆 Today’s trending post is How to Set Up a HTML App with FastAPI ( @tiangolo ) by @eugeneyan https://t.co/1fJE6Uf4xB\nMade With ML mostly runs on FastAPI now (with the exception of a few extensions) bc of the many advantages mentioned here by @KaiserFrose https://t.co/fVluux2Y5S\n&mdash; Made With ML (@madewithml) July 27, 2020\nReferences\nServing ML with FastAPI\nFastAPI for Flask Users\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Jul 2020). How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates. eugeneyan.com.\nhttps://eugeneyan.com/writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/.\nor\n@article{yan2020fastapi,\ntitle = {How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2020},\nmonth = {Jul},\nurl = {https://eugeneyan.com/writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/}\nShare on:\nBrowse related tags: [\nengineering\npython\ntil\nor Search\n&laquo; Why You Need to Follow Up After Your Data Science Project\nGeorgia Tech's OMSCS FAQ (based on my experience) &raquo;\nJoin 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.",
+  "clean_text": "How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates\neugeneyan\nStart Here\nWriting\nSpeaking\nPrototyping\nAbout\nHow to Set Up a HTML App with FastAPI, Jinja, Forms & Templates\nengineering\npython\ntil\n· 3 min read\nI usually use Flask to build and deploy REST/web apps. Flask is simple to use and apps are easy to spin up with minimal code. Today, I decided to try FastAPI for my new web app, inspired by @tiangolo ’s recent talk .\nThe switch was easier than expected. FastAPI has great documentation and this article by @amitness was useful. Nonetheless, I couldn’t find any guides on how to serve HTML with FastAPI. Thus, I wrote this simple article to plug the hole on the internet.\nTry it out with the GitHub repo here: fastapi-html\nFirst, We Build a REST API\nInstalling FastAPI is as easy as (more about poetry ):\npoetry add fastapi uvicorn\nThen, we build a simple REST API .\nfrom fastapi import FastAPI\nfrom src.model import spell_number # Spell a number: 1 -> 'one', 2 -> 'two'\napp = FastAPI ()\n@ app . get ( '/' )\ndef read_root ():\nreturn 'hello world'\n@ app . get ( \"/rest\" )\ndef read_item ( num : int ):\nresult = spell_number ( num )\nreturn { \"number_spelled\" : result }\nLet’s start it up…\npoetry run uvicorn src.rest:app --reload\nAnd call the REST API. The API takes in a number, and spells it out.\ncurl -X GET \"http://127.0.0.1:8000/rest?num=1234\" -H \"accept: application/json\"\n{\"number_spelled\":\"one thousand, two hundred and thirty-four\"}\nNow, Let’s Make it Serve HTML\nFirst, we’ll need to install some additional dependencies, specifically python-multipart for HTML forms and jinja for templating.\npoetry add jinja2 python-multipart\nThen, we’ll create a simple HTML template :\n<!DOCTYPE html>\n<html lang= \"en\" >\n<head>\n<meta charset= \"UTF-8\" >\n<title> Sample Form </title>\n</head>\n<body>\n<form method= \"post\" >\n<input type= \"number\" name= \"num\" value= \"1234\" />\n<input type= \"submit\" >\n</form>\n<p> Result: {{ result }} </p>\n</body>\n</html>\nNext, we write a simple web app that:\nMounts the templates directory\nReceives requests, and…\nReturns results via our HTML template\nfrom fastapi import FastAPI , Request , Form\nfrom fastapi.templating import Jinja2Templates\nfrom src.model import spell_number\napp = FastAPI ()\ntemplates = Jinja2Templates ( directory = \"templates/\" )\n@ app . get ( '/' )\ndef read_form ():\nreturn 'hello world'\n@ app . get ( \"/form\" )\ndef form_post ( request : Request ):\nresult = \"Type a number\"\nreturn templates . TemplateResponse ( 'form.html' , context = { 'request' : request , 'result' : result })\n@ app . post ( \"/form\" )\ndef form_post ( request : Request , num : int = Form (...)):\nresult = spell_number ( num )\nreturn templates . TemplateResponse ( 'form.html' , context = { 'request' : request , 'result' : result })\nLet’s start it up…\npoetry run uvicorn src.html:app --reload\nAnd give it a spin. Viola, simple as that.\nOur simple web app with FastAPI, Forms, and Jinja templates\nToday, I learnt how to use FastAPI to serve HTML web apps.\nIt's straightforward with jinja, templates, and HTML forms. Here's the 2-min how-to. https://t.co/RrrISggU8o\n&mdash; Eugene Yan (@eugeneyan) July 25, 2020\nUpdate: This article trended recently on Made With ML !\n🏆 Today’s trending post is How to Set Up a HTML App with FastAPI ( @tiangolo ) by @eugeneyan https://t.co/1fJE6Uf4xB\nMade With ML mostly runs on FastAPI now (with the exception of a few extensions) bc of the many advantages mentioned here by @KaiserFrose https://t.co/fVluux2Y5S\n&mdash; Made With ML (@madewithml) July 27, 2020\nReferences\nServing ML with FastAPI\nFastAPI for Flask Users\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Jul 2020). How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates. eugeneyan.com.\nhttps://eugeneyan.com/writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/.\nor\n@article{yan2020fastapi,\ntitle = {How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2020},\nmonth = {Jul},\nurl = {https://eugeneyan.com/writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/}\nShare on:\nBrowse related tags: [\nengineering\npython\ntil\nor Search\n&laquo; Why You Need to Follow Up After Your Data Science Project\nGeorgia Tech's OMSCS FAQ (based on my experience) &raquo;\nJoin 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-035-how-to-set-up-a-html-app-with-fastapi-jinja-forms-amp-templates.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-035-how-to-set-up-a-html-app-with-fastapi-jinja-forms-amp-templates.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 85,
+  "extractor_diagnostics": {
+    "readability_score": 85,
+    "text_length": 4396,
+    "paragraph_count": 71,
+    "sentence_count": 30,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0216,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 4396,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "9e0a59409b82f8db",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "9ca66c10f17a03ae",
+  "content_hash": "9e0a59409b82f8db",
+  "full_text_hash": "9e0a59409b82f8db",
+  "semantic_hash": "00a3f6ba42272e2a",
+  "duplicate_of": "",
+  "first_seen_at": "2020-07-23T00:00:00.000Z",
+  "last_seen_at": "2026-07-12T09:55:29.590Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "I couldn&apos;t find any guides on serving HTML with FastAPI, thus I wrote this to plug the hole on the internet.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates eugeneyan Start Here Writing Speaking Prototyping About How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates engineering python til · 3 min read I usually use Flask to build and deploy REST/web apps.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Flask is simple to use and apps are easy to spin up with minimal code.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Today, I decided to try FastAPI for my new web app, inspired by @tiangolo ’s recent talk .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The switch was easier than expected.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "FastAPI has great documentation and this article by @amitness was useful.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-12T09:55:29.590Z",
+  "business_elements": {
+    "companies": [
+      "Eugene Yan's Blog",
+      "GitHub",
+      "Meta"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [],
+    "business_actions": [
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "3 m",
+      "1",
+      "2",
+      "127.0",
+      "0.1",
+      "8000",
+      "1234",
+      "8"
+    ],
+    "quotes": [
+      " )\ndef read_item ( num : int ):\nresult = spell_number ( num )\nreturn { ",
+      " : result }\nLet’s start it up…\npoetry run uvicorn src.rest:app --reload\nAnd call the REST API. The API takes in a number, and spells it out.\ncurl -X GET ",
+      "accept: application/json",
+      "number_spelled",
+      "one thousand, two hundred and thirty-four"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "I couldn&apos;t find any guides on serving HTML with FastAPI, thus I wrote this to plug the hole on the internet.",
+      "How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates eugeneyan Start Here Writing Speaking Prototyping About How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates engineering python til · 3 min read I usually use Flask to build and deploy REST/web apps.",
+      "Flask is simple to use and apps are easy to spin up with minimal code."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "none",
+    "importance_score": 1,
+    "importance_reason": "no core WaveSight importance signal",
+    "supporting_signals": [],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# How to Set Up a HTML App with FastAPI, Jinja, Forms &amp; Templates\n\n- raw_id: R-035\n- title_zh: 如何使用FastAPI、Jinja、表单和模板设置HTML应用程序\n- title_translation_status: translated\n- title_translation_method: mymemory_title_translation\n- original_url: https://eugeneyan.com//writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/\n- source_name: Eugene Yan's Blog\n- collected_at: 2026-07-12T09:55:29.590Z\n\n## clean_text\n\nHow to Set Up a HTML App with FastAPI, Jinja, Forms & Templates\neugeneyan\nStart Here\nWriting\nSpeaking\nPrototyping\nAbout\nHow to Set Up a HTML App with FastAPI, Jinja, Forms & Templates\nengineering\npython\ntil\n· 3 min read\nI usually use Flask to build and deploy REST/web apps. Flask is simple to use and apps are easy to spin up with minimal code. Today, I decided to try FastAPI for my new web app, inspired by @tiangolo ’s recent talk .\nThe switch was easier than expected. FastAPI has great documentation and this article by @amitness was useful. Nonetheless, I couldn’t find any guides on how to serve HTML with FastAPI. Thus, I wrote this simple article to plug the hole on the internet.\nTry it out with the GitHub repo here: fastapi-html\nFirst, We Build a REST API\nInstalling FastAPI is as easy as (more about poetry ):\npoetry add fastapi uvicorn\nThen, we build a simple REST API .\nfrom fastapi import FastAPI\nfrom src.model import spell_number # Spell a number: 1 -> 'one', 2 -> 'two'\napp = FastAPI ()\n@ app . get ( '/' )\ndef read_root ():\nreturn 'hello world'\n@ app . get ( \"/rest\" )\ndef read_item ( num : int ):\nresult = spell_number ( num )\nreturn { \"number_spelled\" : result }\nLet’s start it up…\npoetry run uvicorn src.rest:app --reload\nAnd call the REST API. The API takes in a number, and spells it out.\ncurl -X GET \"http://127.0.0.1:8000/rest?num=1234\" -H \"accept: application/json\"\n{\"number_spelled\":\"one thousand, two hundred and thirty-four\"}\nNow, Let’s Make it Serve HTML\nFirst, we’ll need to install some additional dependencies, specifically python-multipart for HTML forms and jinja for templating.\npoetry add jinja2 python-multipart\nThen, we’ll create a simple HTML template :\n<!DOCTYPE html>\n<html lang= \"en\" >\n<head>\n<meta charset= \"UTF-8\" >\n<title> Sample Form </title>\n</head>\n<body>\n<form method= \"post\" >\n<input type= \"number\" name= \"num\" value= \"1234\" />\n<input type= \"submit\" >\n</form>\n<p> Result: {{ result }} </p>\n</body>\n</html>\nNext, we write a simple web app that:\nMounts the templates directory\nReceives requests, and…\nReturns results via our HTML template\nfrom fastapi import FastAPI , Request , Form\nfrom fastapi.templating import Jinja2Templates\nfrom src.model import spell_number\napp = FastAPI ()\ntemplates = Jinja2Templates ( directory = \"templates/\" )\n@ app . get ( '/' )\ndef read_form ():\nreturn 'hello world'\n@ app . get ( \"/form\" )\ndef form_post ( request : Request ):\nresult = \"Type a number\"\nreturn templates . TemplateResponse ( 'form.html' , context = { 'request' : request , 'result' : result })\n@ app . post ( \"/form\" )\ndef form_post ( request : Request , num : int = Form (...)):\nresult = spell_number ( num )\nreturn templates . TemplateResponse ( 'form.html' , context = { 'request' : request , 'result' : result })\nLet’s start it up…\npoetry run uvicorn src.html:app --reload\nAnd give it a spin. Viola, simple as that.\nOur simple web app with FastAPI, Forms, and Jinja templates\nToday, I learnt how to use FastAPI to serve HTML web apps.\nIt's straightforward with jinja, templates, and HTML forms. Here's the 2-min how-to. https://t.co/RrrISggU8o\n&mdash; Eugene Yan (@eugeneyan) July 25, 2020\nUpdate: This article trended recently on Made With ML !\n🏆 Today’s trending post is How to Set Up a HTML App with FastAPI ( @tiangolo ) by @eugeneyan https://t.co/1fJE6Uf4xB\nMade With ML mostly runs on FastAPI now (with the exception of a few extensions) bc of the many advantages mentioned here by @KaiserFrose https://t.co/fVluux2Y5S\n&mdash; Made With ML (@madewithml) July 27, 2020\nReferences\nServing ML with FastAPI\nFastAPI for Flask Users\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Jul 2020). How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates. eugeneyan.com.\nhttps://eugeneyan.com/writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/.\nor\n@article{yan2020fastapi,\ntitle = {How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2020},\nmonth = {Jul},\nurl = {https://eugeneyan.com/writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/}\nShare on:\nBrowse related tags: [\nengineering\npython\ntil\nor Search\n&laquo; Why You Need to Follow Up After Your Data Science Project\nGeorgia Tech's OMSCS FAQ (based on my experience) &raquo;\nJoin 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.\n\n## full_text\n\nHow to Set Up a HTML App with FastAPI, Jinja, Forms & Templates\neugeneyan\nStart Here\nWriting\nSpeaking\nPrototyping\nAbout\nHow to Set Up a HTML App with FastAPI, Jinja, Forms & Templates\nengineering\npython\ntil\n· 3 min read\nI usually use Flask to build and deploy REST/web apps. Flask is simple to use and apps are easy to spin up with minimal code. Today, I decided to try FastAPI for my new web app, inspired by @tiangolo ’s recent talk .\nThe switch was easier than expected. FastAPI has great documentation and this article by @amitness was useful. Nonetheless, I couldn’t find any guides on how to serve HTML with FastAPI. Thus, I wrote this simple article to plug the hole on the internet.\nTry it out with the GitHub repo here: fastapi-html\nFirst, We Build a REST API\nInstalling FastAPI is as easy as (more about poetry ):\npoetry add fastapi uvicorn\nThen, we build a simple REST API .\nfrom fastapi import FastAPI\nfrom src.model import spell_number # Spell a number: 1 -> 'one', 2 -> 'two'\napp = FastAPI ()\n@ app . get ( '/' )\ndef read_root ():\nreturn 'hello world'\n@ app . get ( \"/rest\" )\ndef read_item ( num : int ):\nresult = spell_number ( num )\nreturn { \"number_spelled\" : result }\nLet’s start it up…\npoetry run uvicorn src.rest:app --reload\nAnd call the REST API. The API takes in a number, and spells it out.\ncurl -X GET \"http://127.0.0.1:8000/rest?num=1234\" -H \"accept: application/json\"\n{\"number_spelled\":\"one thousand, two hundred and thirty-four\"}\nNow, Let’s Make it Serve HTML\nFirst, we’ll need to install some additional dependencies, specifically python-multipart for HTML forms and jinja for templating.\npoetry add jinja2 python-multipart\nThen, we’ll create a simple HTML template :\n<!DOCTYPE html>\n<html lang= \"en\" >\n<head>\n<meta charset= \"UTF-8\" >\n<title> Sample Form </title>\n</head>\n<body>\n<form method= \"post\" >\n<input type= \"number\" name= \"num\" value= \"1234\" />\n<input type= \"submit\" >\n</form>\n<p> Result: {{ result }} </p>\n</body>\n</html>\nNext, we write a simple web app that:\nMounts the templates directory\nReceives requests, and…\nReturns results via our HTML template\nfrom fastapi import FastAPI , Request , Form\nfrom fastapi.templating import Jinja2Templates\nfrom src.model import spell_number\napp = FastAPI ()\ntemplates = Jinja2Templates ( directory = \"templates/\" )\n@ app . get ( '/' )\ndef read_form ():\nreturn 'hello world'\n@ app . get ( \"/form\" )\ndef form_post ( request : Request ):\nresult = \"Type a number\"\nreturn templates . TemplateResponse ( 'form.html' , context = { 'request' : request , 'result' : result })\n@ app . post ( \"/form\" )\ndef form_post ( request : Request , num : int = Form (...)):\nresult = spell_number ( num )\nreturn templates . TemplateResponse ( 'form.html' , context = { 'request' : request , 'result' : result })\nLet’s start it up…\npoetry run uvicorn src.html:app --reload\nAnd give it a spin. Viola, simple as that.\nOur simple web app with FastAPI, Forms, and Jinja templates\nToday, I learnt how to use FastAPI to serve HTML web apps.\nIt's straightforward with jinja, templates, and HTML forms. Here's the 2-min how-to. https://t.co/RrrISggU8o\n&mdash; Eugene Yan (@eugeneyan) July 25, 2020\nUpdate: This article trended recently on Made With ML !\n🏆 Today’s trending post is How to Set Up a HTML App with FastAPI ( @tiangolo ) by @eugeneyan https://t.co/1fJE6Uf4xB\nMade With ML mostly runs on FastAPI now (with the exception of a few extensions) bc of the many advantages mentioned here by @KaiserFrose https://t.co/fVluux2Y5S\n&mdash; Made With ML (@madewithml) July 27, 2020\nReferences\nServing ML with FastAPI\nFastAPI for Flask Users\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Jul 2020). How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates. eugeneyan.com.\nhttps://eugeneyan.com/writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/.\nor\n@article{yan2020fastapi,\ntitle = {How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2020},\nmonth = {Jul},\nurl = {https://eugeneyan.com/writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/}\nShare on:\nBrowse related tags: [\nengineering\npython\ntil\nor Search\n&laquo; Why You Need to Follow Up After Your Data Science Project\nGeorgia Tech's OMSCS FAQ (based on my experience) &raquo;\nJoin 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 85\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] I couldn&apos;t find any guides on serving HTML with FastAPI, thus I wrote this to plug the hole on the internet.\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates eugeneyan Start Here Writing Speaking Prototyping About How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates engineering python til · 3 min read I usually use Flask to build and deploy REST/web apps.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Flask is simple to use and apps are easy to spin up with minimal code.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Today, I decided to try FastAPI for my new web app, inspired by @tiangolo ’s recent talk .\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The switch was easier than expected.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] FastAPI has great documentation and this article by @amitness was useful.\n"
+}

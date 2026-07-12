@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-11T17:38:35.000Z"
-collected_at: 2026-07-12T06:10:44.071Z
+collected_at: 2026-07-12T09:55:23.619Z
 language: mixed
 full_text_hash: 69180af749f31fea
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-12/r-002-openai-gpt-5-6-sol-ultra-一小时解决-50-年数学猜想.md"
@@ -60,7 +60,7 @@ content_hash: 69180af749f31fea
 semantic_hash: 6fd7ec929829c546
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-11T17:38:35.000Z"
-last_seen_at: 2026-07-12T06:10:44.071Z
+last_seen_at: 2026-07-12T09:55:23.619Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例","没有变化前
 key_excerpts: [{"type":"opinion","text":"OpenAI 的 GPT-5.6 Sol Ultra 利用 64 个并行子智能体，在不到一小时内生成了 Cycle Double Cover 猜想的完整证明。该猜想自 1970 年代提出以来一直未被证明。数学家 Thomas Bloom 称赞证明\"简洁、初等\"，但批评论文未引用 1983 年 Bermond、Jackson 和 Jaeger 的相关工作，指出这是 AI 生成证明的常见问题。Bloom 认为 AI 的成功部分源于提示词设计：要求模型假设证明存在、禁止搜索网络、拒绝部分结果并强制至少计算 8 小时。完整数学验证仍有待学界完成。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"6 Sol Ultra reportedly solves a 50-year-old math problem in under an hour OpenAI's GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"6 Sol Ultra produced a proof of the Cycle Double Cover Conjecture in under an hour, using 64 subagents working in parallel.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The conjecture had remained unsolved for 50 years.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Mathematician Thomas Bloom calls the proof surprisingly elementary but criticizes the lack of citations for known prior work.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-12T06:10:44.071Z
+fact_extraction_completed_at: 2026-07-12T09:55:23.619Z
 theme: early-direction-signal
 keyword_group: early-direction-signal
 copyright_note: local research archive only

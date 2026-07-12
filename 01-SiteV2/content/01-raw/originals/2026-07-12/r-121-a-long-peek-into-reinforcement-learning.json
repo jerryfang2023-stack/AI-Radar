@@ -1,0 +1,225 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-121",
+  "title": "A (Long) Peek into Reinforcement Learning",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://lilianweng.github.io/posts/2018-02-19-rl-overview/",
+  "canonical_url": "https://lilianweng.github.io/posts/2018-02-19-rl-overview",
+  "source_name": "Lilian Weng's Blog (OpenAI)",
+  "source_type": "builder",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-12T09:56:05.997Z",
+  "language": "mixed",
+  "full_text": "&lt;!-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms. Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting. [WARNING] This is a long read. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-09-03: Updated the algorithm of &lt;a href=&#34;#sarsa-on-policy-td-control&#34;&gt;SARSA&lt;/a&gt; and &lt;a href=&#34;#q-learning-of",
+  "clean_text": "&lt;!-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms. Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting. [WARNING] This is a long read. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-09-03: Updated the algorithm of &lt;a href=&#34;#sarsa-on-policy-td-control&#34;&gt;SARSA&lt;/a&gt; and &lt;a href=&#34;#q-learning-of",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-121-a-long-peek-into-reinforcement-learning.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-121-a-long-peek-into-reinforcement-learning.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "timeout-fallback-visible-text",
+  "extraction_quality": "low",
+  "extraction_method": "fetch_failed_summary_fallback",
+  "readability_score": 0,
+  "extractor_diagnostics": {
+    "method": "fetch_failed_summary_fallback",
+    "error_type": "timeout"
+  },
+  "has_full_text": true,
+  "content_length": 500,
+  "fetch_error": "fetch failed (code=UND_ERR_CONNECT_TIMEOUT)",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "missing_or_fetch_failed",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "7113188dfdbc2bea",
+    "missing": [
+      "missing_snapshot"
+    ]
+  },
+  "evidence_strength": "blocked",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "missing_snapshot"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "summary_only",
+  "visible_range": "仅保留采集通道当时可见文本，未抓到原页面正文",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "discovery_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "56057e564275169a",
+  "content_hash": "7113188dfdbc2bea",
+  "full_text_hash": "7113188dfdbc2bea",
+  "semantic_hash": "a38cb723b61b8cd1",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-12T09:56:05.997Z",
+  "last_seen_at": "2026-07-12T09:56:05.997Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "&lt;!-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms. Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting. [WARNING] This is a long read. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-09-03: Updated the algorithm of &lt;a href=&#34;#sarsa-on-policy-td-control&#34;&gt;SARSA&lt;/a&gt; and &lt;a href=&#34;#q-learning-of",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "[WARNING] This is a long read.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "product_update",
+      "text": "--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-09-03: Updated the algorithm of &lt;a href=&#34;#sarsa-on-policy-td-control&#34;&gt;SARSA&lt;/a&gt; and &lt;a href=&#34;#q-learning-of",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-12T09:56:05.997Z",
+  "business_elements": {
+    "companies": [
+      "Lilian Weng's Blog (OpenAI)"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [],
+    "roles": [],
+    "workflows": [
+      "合同审阅 / 法律研究"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "34",
+      "2020",
+      "09",
+      "03"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "&lt;!-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms. Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting. [WARNING] This is a long read. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-09-03: Updated the algorithm of &lt;a href=&#34;#sarsa-on-policy-td-control&#34;&gt;SARSA&lt;/a&gt; and &lt;a href=&#34;#q-learning-of",
+      "-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms.",
+      "Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "none",
+    "importance_score": 1,
+    "importance_reason": "no core WaveSight importance signal",
+    "supporting_signals": [],
+    "novelty": 2,
+    "evidence_strength": 3,
+    "case_richness": 3,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# A (Long) Peek into Reinforcement Learning\n\n- raw_id: R-121\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://lilianweng.github.io/posts/2018-02-19-rl-overview/\n- source_name: Lilian Weng's Blog (OpenAI)\n- collected_at: 2026-07-12T09:56:05.997Z\n\n## clean_text\n\n&lt;!-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms. Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting. [WARNING] This is a long read. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-09-03: Updated the algorithm of &lt;a href=&#34;#sarsa-on-policy-td-control&#34;&gt;SARSA&lt;/a&gt; and &lt;a href=&#34;#q-learning-of\n\n## full_text\n\n&lt;!-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms. Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting. [WARNING] This is a long read. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-09-03: Updated the algorithm of &lt;a href=&#34;#sarsa-on-policy-td-control&#34;&gt;SARSA&lt;/a&gt; and &lt;a href=&#34;#q-learning-of\n\n## extraction_diagnostics\n\n- extraction_method: fetch_failed_summary_fallback\n- readability_score: 0\n- fetch_status: timeout-fallback-visible-text\n- extraction_quality: low\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] &lt;!-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms. Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting. [WARNING] This is a long read. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-09-03: Updated the algorithm of &lt;a href=&#34;#sarsa-on-policy-td-control&#34;&gt;SARSA&lt;/a&gt; and &lt;a href=&#34;#q-learning-of\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] -- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] [WARNING] This is a long read.\n5. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-09-03: Updated the algorithm of &lt;a href=&#34;#sarsa-on-policy-td-control&#34;&gt;SARSA&lt;/a&gt; and &lt;a href=&#34;#q-learning-of\n"
+}

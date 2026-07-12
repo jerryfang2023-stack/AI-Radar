@@ -23,9 +23,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-11T14:13:00.000Z"
-collected_at: 2026-07-12T06:10:44.098Z
+collected_at: 2026-07-12T09:55:23.647Z
 language: mixed
-full_text_hash: 51cff43304e96664
+full_text_hash: 2d1f2ef26a3efe59
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-12/r-007-openai-招聘家庭产品经理-chatgpt-用户向年长群体扩展.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-12/r-007-openai-招聘家庭产品经理-chatgpt-用户向年长群体扩展.json"
 html_snapshot_path: ""
@@ -34,15 +34,15 @@ fetch_status: fetched-readable-text-content-container
 extraction_quality: high
 extraction_method: "content-container"
 readability_score: 97
-extractor_diagnostics: {"readability_score":97,"text_length":6602,"paragraph_count":38,"sentence_count":42,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+extractor_diagnostics: {"readability_score":97,"text_length":6597,"paragraph_count":38,"sentence_count":42,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
 has_full_text: true
-content_length: 6602
+content_length: 6597
 fetch_error: ""
 evidence_strength: rich_evidence
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"51cff43304e96664","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2d1f2ef26a3efe59","missing":[]}
 source_volatility: medium
 community_name: ""
 capture_scope: article_text
@@ -56,11 +56,11 @@ paywall_status: none
 block_status: none
 duplicate_status: merged_provider_duplicates
 url_hash: 37c2103cb41f944f
-content_hash: 51cff43304e96664
+content_hash: 2d1f2ef26a3efe59
 semantic_hash: b6f45445bafda037
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-11T14:13:00.000Z"
-last_seen_at: 2026-07-12T06:10:44.098Z
+last_seen_at: 2026-07-12T09:55:23.647Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -69,13 +69,13 @@ change_action_detected: true
 evidence_eligibility: eligible
 evidence_block_reason: ""
 guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
-business_elements: {"companies":["TechCrunch","AI（RSS）","OpenAI","Anthropic","Google","Microsoft","Meta","Amazon","Apple"],"products":["ChatGPT","Claude","Gemini","Copilot"],"people":[],"industries":["法律 / 法务"],"roles":[],"workflows":[],"business_actions":["发布 / 推出","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","法务"],"numbers":["35","26%","2","31%","18","24","34%","29%"],"quotes":["I see this as safety by redesign,","You take the initial product or service that was released… not really with kids in mind… so this is a much-needed reaction and response.","Trusted Contact"]}
+business_elements: {"companies":["TechCrunch","AI（RSS）","OpenAI","Anthropic","Google","Microsoft","Meta","Amazon","Apple"],"products":["ChatGPT","Claude","Gemini","Copilot"],"people":[],"industries":["法律 / 法务","开发者工具"],"roles":[],"workflows":[],"business_actions":["发布 / 推出","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","法务"],"numbers":["35","26%","2","31%","18","24","34%","29%"],"quotes":["I see this as safety by redesign,","You take the initial product or service that was released… not really with kids in mind… so this is a much-needed reaction and response.","Trusted Contact"]}
 evidence_seed: {"company_actions":["Image Credits: Jakub Porzycki/NurPhoto / Getty Images AI OpenAI bets on families as ChatGPT goes deeper into households Jagmeet Singh 7:13 AM PDT · July 11, 2026 More than three years after ChatGPT’s launch brought generative AI into the mainstream, OpenAI is broadening its focus beyond individual users to families.","OpenAI is hiring a dedicated product manager in San Francisco to build experiences for families, caregivers, and older adults across its products.","The role calls for experience building products for parents and families, and other trust-sensitive consumer experiences, according to the job posting."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
 missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
 key_excerpts: [{"type":"number","text":"OpenAI 正在旧金山招聘一名负责家庭、看护者和老年人体验的产品经理，标志其产品定位从个人效率工具向家庭技术转变。Sensor Tower 数据显示，ChatGPT 全球 35 岁以上用户占比从去年同期的 26% 升至 Q2 的 31%，18-24 岁用户从 34% 降至 29%；美国父母用户中近四分之一在 Q2 使用了 ChatGPT，高于去年的 16%。OpenAI 已推出青少年账户家长控制、敏感对话路由至推理模型以及可选的\"可信联系人\"功能。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Image Credits: Jakub Porzycki/NurPhoto / Getty Images AI OpenAI bets on families as ChatGPT goes deeper into households Jagmeet Singh 7:13 AM PDT · July 11, 2026 More than three years after ChatGPT’s launch brought generative AI into the mainstream, OpenAI is broadening its focus beyond individual users to families.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenAI is hiring a dedicated product manager in San Francisco to build experiences for families, caregivers, and older adults across its products.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The role calls for experience building products for parents and families, and other trust-sensitive consumer experiences, according to the job posting.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The hiring comes as ChatGPT’s audience continues to broaden beyond younger users.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"According to Sensor Tower estimates shared exclusively with TechCrunch, the share of ChatGPT users aged 35 and older globally rose to 31% in Q2 from 26% a year earlier, while the share of users aged 18 to 24 fell to 29% from 34%.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-12T06:10:44.098Z
+fact_extraction_completed_at: 2026-07-12T09:55:23.647Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
@@ -130,14 +130,14 @@ Elon Musk praises Mythos/Fable, promises not to ‘cut off’ Anthropic
 Julie Bort
 Instagram users: Here’s how to stop Meta’s AI from using your photos
 Lauren Forristal
+Figma acquires team behind a vibe-coding app
+Ivan Mehta
 If you use Google, you’re training its AI. Here’s how to opt out.
 Sarah Perez
 Reddit is using LLMs to solve a problem LLMs largely created
 Amanda Silberling
 Amazon will stop accepting new customers for Mechanical Turk
 Anthony Ha
-5 desk gadgets that can make your workday better
-Aisha Malik
 Loading the next article
 Error loading the next article
 
@@ -188,14 +188,14 @@ Elon Musk praises Mythos/Fable, promises not to ‘cut off’ Anthropic
 Julie Bort
 Instagram users: Here’s how to stop Meta’s AI from using your photos
 Lauren Forristal
+Figma acquires team behind a vibe-coding app
+Ivan Mehta
 If you use Google, you’re training its AI. Here’s how to opt out.
 Sarah Perez
 Reddit is using LLMs to solve a problem LLMs largely created
 Amanda Silberling
 Amazon will stop accepting new customers for Mechanical Turk
 Anthony Ha
-5 desk gadgets that can make your workday better
-Aisha Malik
 Loading the next article
 Error loading the next article
 
@@ -205,7 +205,7 @@ Error loading the next article
 - readability_score: 97
 - fetch_status: fetched-readable-text-content-container
 - extraction_quality: high
-- diagnostics: {"readability_score":97,"text_length":6602,"paragraph_count":38,"sentence_count":42,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+- diagnostics: {"readability_score":97,"text_length":6597,"paragraph_count":38,"sentence_count":42,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
 
 ## markdown_snapshot
 
@@ -236,7 +236,7 @@ Error loading the next article
 - companies: TechCrunch, AI（RSS）, OpenAI, Anthropic, Google, Microsoft, Meta, Amazon, Apple
 - products: ChatGPT, Claude, Gemini, Copilot
 - people: 暂无公开信息
-- industries: 法律 / 法务
+- industries: 法律 / 法务, 开发者工具
 - roles: 暂无公开信息
 - workflows: 暂无公开信息
 - business_actions: 发布 / 推出, 部署 / 上线, 融资 / 投资

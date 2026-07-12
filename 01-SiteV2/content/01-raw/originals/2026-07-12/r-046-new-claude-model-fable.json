@@ -1,0 +1,300 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-046",
+  "title": "New Claude model - Fable",
+  "title_zh": "新克劳德模型-寓言",
+  "title_translation_status": "translated",
+  "title_translation_method": "mymemory_title_translation",
+  "original_url": "https://www.bensbites.com/p/new-claude-model-fable",
+  "canonical_url": "https://bensbites.com/p/new-claude-model-fable",
+  "source_name": "Ben's Bites AI Newsletter",
+  "source_type": "newsletter",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-06-11T13:03:20.000Z",
+  "collected_at": "2026-07-12T09:55:34.200Z",
+  "language": "mixed",
+  "full_text": "New Claude model - Fable\neveryone's building with it.\nJun 11, 2026\n90\nShare\nHey folks,\nLike a lot of others, I’m trying Fable. But I don’t think I’ve given it really hard tasks for me to feel the big step change people are claiming. Although as I’m working on visual, interactive essays for my reference manual, I’ve been testing one-shot generations on all sorts of topics to play with my kids; how to play the piano, how tetris works, how a volcano works. They’re loving bashing away at my keyboard to see the components come alive.\nIt’s less chatty than Opus. I use agents as a back-and-forth, so I need some chattiness, GPT models are very to the point, Claude models are usually more verbose. So I think Fable’s a bit of a sweet spot for me, because as of now I still prefer the ‘vibe’ of how Claude models think with me.\nIt’s slow. Speed is a huge thing for me because I can’t actively run many agents at once, my ADHD context switching is already bad enough. But I need the speed. So then I look to change from High or XHigh reasoning to lower levels but it feels wrong to pick less intelligence. Even though I know it’s probably wasting tokens.\nComposer 2.5 Fast from Cursor is the fastest model I’ve tried and I really enjoyed using it in Pi, and it’s shattered the glass for me, GPT 5.5 has too to be honest. They’re quick so I can chew through a bunch of work quickly.\nEver a game of toss-up between price, speed and vibe.\nI’m sure GPT 5.6 or 6 is just around the corner, and I imagine OpenAI are really trying to make sure the vibe is on par with Claude models if they want to keep the Codex hype going.\nBen’s Bites is brought to you by Plaid\nOver half of Americans used AI to manage their finances in the past 12 months. And their expectations for financial products have never been higher. Plaid's latest report, The State of Intelligent Finance , breaks down what consumers expect from AI and what that means for your team. Get the report .\nHeadlines\nFable 5, the new model from Claude , is the “safer” version of Mythos (Anthropic’s unreleased model which they say is a big cybersecurity risk and is only available to certain companies). Fable makes a big jump over Opus 4.8 on benchmarks (not that big vs GPT 5.5 though). Ethan Mollick and Dan Shipper both believe it unlocks new capabilities - a big part of which is its ability to work longer and spawn dozens of subagents reliably without losing context of the main task.\nBased on this chart, Fable medium performs better than Opus xhigh while being cheaper.\nFable is only available till 22nd June in the Claude subscription plans. Anthropic plans to move Fable use to paid credits after that until they have the capacity to serve it to everyone. It’s 2x more expensive than Opus (vs Mythos, which was 5x Opus)\nAnthropic introduced a new policy with the rollout of Fable where it will “ secretly” sabotage your work if you use it for any ML/AI-related work. This caused a huge backlash, and in turn Anthropic has partially walked back the “secretly” part of this policy.\nOther examples of Fable in use - for a refacto r to get clean code, for editing a video , and even making a markdown editor .\nGemini 3.5 Live Translate - new model from Google that does real-time speech-to-speech translation in 70+ languages. Already live in Gemini API and Google Translate + coming soon to Google Meet.\nImplications of large-scale test-time compute - Model performance is affected by how much time, compute, or $$ budget is available for the model to complete a task, and hence companies should report these variables when reporting benchmarks.\nWhat does AI pricing actually look like in 2026? Orb analyzed 80 AI agent companies, including leaders like GitHub Copilot, Replit, Factory, and Intercom, to identify the pricing models, packaging strategies, and monetization trends emerging across the industry. Download the report .*\nMy feed\nClaude Code can have nested subagents now - each subagent can spawn even more subagents. Currently up to a depth of 5 layers.\nThe model selector in ChatGPT has been updated to a) show all GPT-5 generation models and b) thinking levels are simplified to Instant, Medium, High, Extra High and Pro - just like how it is in Codex.\nMissions are now available on Factory Desktop.\nSkribe - Local first markdown writing app with an AI review partner.\nLittle python harness to run evals on your skills - is the skill improving or hurting the model’s performance?\npr.video by Mainframe - turn any GitHub PR into a narrated video walkthrough to review changes (without needing the code diff).\nNew essay from Dario Amodei on policymaking to keep up with the pace of AI development. It’s a good read but has “trust me bro” vibes at many places.\nSupermemory is now available locally to host yourself.\nDiffusionGemma - new open-weights model from Google that uses a different architecture (diffusion instead of transformers) to gain a 3-5x speedup with roughly similar performance.\nAgents can now sign up on Firecrawl .\nBuild logs\n- by Keshav\nI’m building a speech-to-text app that’s entirely local (kinda like Wispr flow, Monologue, Superwhisper, etc.) but no data gets sent to their servers. Part of it stemmed from wanting to play with local models, and part of it was guilt of paying for a similar tool that I don’t use much.\nI’m calling the app “ Option AFK ”, and here’s how I built it in 3-4 days spread out over the past few weeks:\nAsked Opus 4.7 to write a simple Python script to get Nvidia’s Parakeet 0.6B working on my M3 Air. I tested it in the browser, and the accuracy/speed were better than what I expected.\nUsed Codex’s Computer Use to do a screen-by-screen audit of the tool I was paying for and document all the features that it has with screenshots. I was able to do this on the $20 plan in a single session (hitting the 5-hour limit only once).\nThen started building the MacOS app with Opus 4.8 (using the audit as a reference). While building this, Opus 4.8 selected an SDK I had no idea existed to wire up things like splitting long voice notes into chunks and speeding the model processing.\nHere’s that SDK:\nfluidaudio - run transcription and TTS models on MacOS locally.\nI got a working version of the app yesterday with Fable 5, and I’m using it on my device already. Here’s how it looks:\nIt also supports uploading voice notes (even the longer ones) as a file and getting them transcribed at no additional cost.\nI’m planning to release this app once I get the Apple Developer Program sign-up done. Would you want to use it?\nAfters\nsunil pai @threepointone\nwondering why I feel exhausted. maybe: the agents do all the easy stuff, and I have to work through the leftover hard bits, which means I'm perpetually locked in. and as the models get better, \"my\" work just gets harder and harder, until I'm basically underqualified to do the\n7:51 AM · Jun 10, 2026 · 293K Views\n104 Replies · 98 Reposts · 1.58K Likes\n🎭 @deepfates\nthe future of all work is this.\nYou must define:\n- a goal\n- the criteria that define it\n- the verifier that makes sure it is achieved\n- the sensors that inform the verifier\n- the actuators that affect the sensors\n- The envelope that contains the sensors and actuators\n🎭 @deepfates\nThe codex \"goal\" feature is a really good way to spend dozens of hours optimizing some total bullshit btw. If your final criteria is it all vague it will specification game and make masturbatory \"evidence\" and \"verifiers\" and \"gates\" and \"smoke tests\". must be hell internally\n5:05 AM · Jun 10, 2026 · 65.2K Views\n40 Replies · 38 Reposts · 765 Likes\nDan Shipper 📧 @danshipper\nGetting the most out of Claude Fable 5, Anthropic’s powerful new model, you need to maximize your ambition:\nIt’s built for full task delegation—you leave it looping for hours or overnight and come back to a finished product. If you want to get the most out of it, you need to\n5:28 PM · Jun 10, 2026 · 30.8K Views\n18 Replies · 23 Reposts · 427 Likes\nSemiAnalysis @SemiAnalysis_\nRecently, we purchased one of each Anthropic/OpenAI subscription plan and randomly ran long horizon coding tasks until we exhausted the weekly limit. It's widely believed that a $200/month plan maxes out at ~$2000/month worth of tokens (assuming API pricing). However, we found\n9:00 PM · Jun 10, 2026 · 794K Views\n67 Replies · 234 Reposts · 2.53K Likes\nShare Ben's Bites\nFind me on X , Linkedin , or YouTube\nRead about me and Ben’s Bites\n📷 thumbnail via @_nicolealonso\n* sponsors who make this newsletter possible :) Wanna partner with us for the next quarter? Email us at shanice@bensbites.com or k@bensbites.com\nBen's Bites is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.\n90\nShare\nPrevious Next",
+  "clean_text": "New Claude model - Fable\neveryone's building with it.\nJun 11, 2026\n90\nShare\nHey folks,\nLike a lot of others, I’m trying Fable. But I don’t think I’ve given it really hard tasks for me to feel the big step change people are claiming. Although as I’m working on visual, interactive essays for my reference manual, I’ve been testing one-shot generations on all sorts of topics to play with my kids; how to play the piano, how tetris works, how a volcano works. They’re loving bashing away at my keyboard to see the components come alive.\nIt’s less chatty than Opus. I use agents as a back-and-forth, so I need some chattiness, GPT models are very to the point, Claude models are usually more verbose. So I think Fable’s a bit of a sweet spot for me, because as of now I still prefer the ‘vibe’ of how Claude models think with me.\nIt’s slow. Speed is a huge thing for me because I can’t actively run many agents at once, my ADHD context switching is already bad enough. But I need the speed. So then I look to change from High or XHigh reasoning to lower levels but it feels wrong to pick less intelligence. Even though I know it’s probably wasting tokens.\nComposer 2.5 Fast from Cursor is the fastest model I’ve tried and I really enjoyed using it in Pi, and it’s shattered the glass for me, GPT 5.5 has too to be honest. They’re quick so I can chew through a bunch of work quickly.\nEver a game of toss-up between price, speed and vibe.\nI’m sure GPT 5.6 or 6 is just around the corner, and I imagine OpenAI are really trying to make sure the vibe is on par with Claude models if they want to keep the Codex hype going.\nBen’s Bites is brought to you by Plaid\nOver half of Americans used AI to manage their finances in the past 12 months. And their expectations for financial products have never been higher. Plaid's latest report, The State of Intelligent Finance , breaks down what consumers expect from AI and what that means for your team. Get the report .\nHeadlines\nFable 5, the new model from Claude , is the “safer” version of Mythos (Anthropic’s unreleased model which they say is a big cybersecurity risk and is only available to certain companies). Fable makes a big jump over Opus 4.8 on benchmarks (not that big vs GPT 5.5 though). Ethan Mollick and Dan Shipper both believe it unlocks new capabilities - a big part of which is its ability to work longer and spawn dozens of subagents reliably without losing context of the main task.\nBased on this chart, Fable medium performs better than Opus xhigh while being cheaper.\nFable is only available till 22nd June in the Claude subscription plans. Anthropic plans to move Fable use to paid credits after that until they have the capacity to serve it to everyone. It’s 2x more expensive than Opus (vs Mythos, which was 5x Opus)\nAnthropic introduced a new policy with the rollout of Fable where it will “ secretly” sabotage your work if you use it for any ML/AI-related work. This caused a huge backlash, and in turn Anthropic has partially walked back the “secretly” part of this policy.\nOther examples of Fable in use - for a refacto r to get clean code, for editing a video , and even making a markdown editor .\nGemini 3.5 Live Translate - new model from Google that does real-time speech-to-speech translation in 70+ languages. Already live in Gemini API and Google Translate + coming soon to Google Meet.\nImplications of large-scale test-time compute - Model performance is affected by how much time, compute, or $$ budget is available for the model to complete a task, and hence companies should report these variables when reporting benchmarks.\nWhat does AI pricing actually look like in 2026? Orb analyzed 80 AI agent companies, including leaders like GitHub Copilot, Replit, Factory, and Intercom, to identify the pricing models, packaging strategies, and monetization trends emerging across the industry. Download the report .*\nMy feed\nClaude Code can have nested subagents now - each subagent can spawn even more subagents. Currently up to a depth of 5 layers.\nThe model selector in ChatGPT has been updated to a) show all GPT-5 generation models and b) thinking levels are simplified to Instant, Medium, High, Extra High and Pro - just like how it is in Codex.\nMissions are now available on Factory Desktop.\nSkribe - Local first markdown writing app with an AI review partner.\nLittle python harness to run evals on your skills - is the skill improving or hurting the model’s performance?\npr.video by Mainframe - turn any GitHub PR into a narrated video walkthrough to review changes (without needing the code diff).\nNew essay from Dario Amodei on policymaking to keep up with the pace of AI development. It’s a good read but has “trust me bro” vibes at many places.\nSupermemory is now available locally to host yourself.\nDiffusionGemma - new open-weights model from Google that uses a different architecture (diffusion instead of transformers) to gain a 3-5x speedup with roughly similar performance.\nAgents can now sign up on Firecrawl .\nBuild logs\n- by Keshav\nI’m building a speech-to-text app that’s entirely local (kinda like Wispr flow, Monologue, Superwhisper, etc.) but no data gets sent to their servers. Part of it stemmed from wanting to play with local models, and part of it was guilt of paying for a similar tool that I don’t use much.\nI’m calling the app “ Option AFK ”, and here’s how I built it in 3-4 days spread out over the past few weeks:\nAsked Opus 4.7 to write a simple Python script to get Nvidia’s Parakeet 0.6B working on my M3 Air. I tested it in the browser, and the accuracy/speed were better than what I expected.\nUsed Codex’s Computer Use to do a screen-by-screen audit of the tool I was paying for and document all the features that it has with screenshots. I was able to do this on the $20 plan in a single session (hitting the 5-hour limit only once).\nThen started building the MacOS app with Opus 4.8 (using the audit as a reference). While building this, Opus 4.8 selected an SDK I had no idea existed to wire up things like splitting long voice notes into chunks and speeding the model processing.\nHere’s that SDK:\nfluidaudio - run transcription and TTS models on MacOS locally.\nI got a working version of the app yesterday with Fable 5, and I’m using it on my device already. Here’s how it looks:\nIt also supports uploading voice notes (even the longer ones) as a file and getting them transcribed at no additional cost.\nI’m planning to release this app once I get the Apple Developer Program sign-up done. Would you want to use it?\nAfters\nsunil pai @threepointone\nwondering why I feel exhausted. maybe: the agents do all the easy stuff, and I have to work through the leftover hard bits, which means I'm perpetually locked in. and as the models get better, \"my\" work just gets harder and harder, until I'm basically underqualified to do the\n7:51 AM · Jun 10, 2026 · 293K Views\n104 Replies · 98 Reposts · 1.58K Likes\n🎭 @deepfates\nthe future of all work is this.\nYou must define:\n- a goal\n- the criteria that define it\n- the verifier that makes sure it is achieved\n- the sensors that inform the verifier\n- the actuators that affect the sensors\n- The envelope that contains the sensors and actuators\n🎭 @deepfates\nThe codex \"goal\" feature is a really good way to spend dozens of hours optimizing some total bullshit btw. If your final criteria is it all vague it will specification game and make masturbatory \"evidence\" and \"verifiers\" and \"gates\" and \"smoke tests\". must be hell internally\n5:05 AM · Jun 10, 2026 · 65.2K Views\n40 Replies · 38 Reposts · 765 Likes\nDan Shipper 📧 @danshipper\nGetting the most out of Claude Fable 5, Anthropic’s powerful new model, you need to maximize your ambition:\nIt’s built for full task delegation—you leave it looping for hours or overnight and come back to a finished product. If you want to get the most out of it, you need to\n5:28 PM · Jun 10, 2026 · 30.8K Views\n18 Replies · 23 Reposts · 427 Likes\nSemiAnalysis @SemiAnalysis_\nRecently, we purchased one of each Anthropic/OpenAI subscription plan and randomly ran long horizon coding tasks until we exhausted the weekly limit. It's widely believed that a $200/month plan maxes out at ~$2000/month worth of tokens (assuming API pricing). However, we found\n9:00 PM · Jun 10, 2026 · 794K Views\n67 Replies · 234 Reposts · 2.53K Likes\nShare Ben's Bites\nFind me on X , Linkedin , or YouTube\nRead about me and Ben’s Bites\n📷 thumbnail via @_nicolealonso\n* sponsors who make this newsletter possible :) Wanna partner with us for the next quarter? Email us at shanice@bensbites.com or k@bensbites.com\nBen's Bites is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.\n90\nShare\nPrevious Next",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-046-new-claude-model-fable.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-046-new-claude-model-fable.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 8739,
+    "paragraph_count": 64,
+    "sentence_count": 71,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.0003,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 8739,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "c248a2bf27e8034c",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "36de2f21773a0493",
+  "content_hash": "c248a2bf27e8034c",
+  "full_text_hash": "c248a2bf27e8034c",
+  "semantic_hash": "ac20d945ad913fd6",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-11T13:03:20.000Z",
+  "last_seen_at": "2026-07-12T09:55:34.200Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "everyone's building with it.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "New Claude model - Fable everyone's building with it.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Jun 11, 2026 90 Share Hey folks, Like a lot of others, I’m trying Fable.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "But I don’t think I’ve given it really hard tasks for me to feel the big step change people are claiming.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "opinion",
+      "text": "Although as I’m working on visual, interactive essays for my reference manual, I’ve been testing one-shot generations on all sorts of topics to play with my kids; how to play the piano, how tetris works, how a volcano works.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "They’re loving bashing away at my keyboard to see the components come alive.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-12T09:55:34.200Z",
+  "business_elements": {
+    "companies": [
+      "Ben's Bites AI Newsletter",
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "GitHub",
+      "Nvidia",
+      "Apple",
+      "Cursor"
+    ],
+    "products": [
+      "Claude",
+      "agents",
+      "Cursor",
+      "Codex",
+      "Gemini",
+      "agent",
+      "Copilot",
+      "ChatGPT",
+      "GPT-5",
+      "Agents"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险",
+      "制造 / 工业",
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "11",
+      "2026",
+      "90",
+      "2.5",
+      "5.5",
+      "5.6",
+      "6",
+      "12 m"
+    ],
+    "quotes": [
+      " secretly",
+      "secretly",
+      "trust me bro",
+      " Option AFK ",
+      "evidence"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "everyone's building with it.",
+      "New Claude model - Fable everyone's building with it.",
+      "Jun 11, 2026 90 Share Hey folks, Like a lot of others, I’m trying Fable."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# New Claude model - Fable\n\n- raw_id: R-046\n- title_zh: 新克劳德模型-寓言\n- title_translation_status: translated\n- title_translation_method: mymemory_title_translation\n- original_url: https://www.bensbites.com/p/new-claude-model-fable\n- source_name: Ben's Bites AI Newsletter\n- collected_at: 2026-07-12T09:55:34.200Z\n\n## clean_text\n\nNew Claude model - Fable\neveryone's building with it.\nJun 11, 2026\n90\nShare\nHey folks,\nLike a lot of others, I’m trying Fable. But I don’t think I’ve given it really hard tasks for me to feel the big step change people are claiming. Although as I’m working on visual, interactive essays for my reference manual, I’ve been testing one-shot generations on all sorts of topics to play with my kids; how to play the piano, how tetris works, how a volcano works. They’re loving bashing away at my keyboard to see the components come alive.\nIt’s less chatty than Opus. I use agents as a back-and-forth, so I need some chattiness, GPT models are very to the point, Claude models are usually more verbose. So I think Fable’s a bit of a sweet spot for me, because as of now I still prefer the ‘vibe’ of how Claude models think with me.\nIt’s slow. Speed is a huge thing for me because I can’t actively run many agents at once, my ADHD context switching is already bad enough. But I need the speed. So then I look to change from High or XHigh reasoning to lower levels but it feels wrong to pick less intelligence. Even though I know it’s probably wasting tokens.\nComposer 2.5 Fast from Cursor is the fastest model I’ve tried and I really enjoyed using it in Pi, and it’s shattered the glass for me, GPT 5.5 has too to be honest. They’re quick so I can chew through a bunch of work quickly.\nEver a game of toss-up between price, speed and vibe.\nI’m sure GPT 5.6 or 6 is just around the corner, and I imagine OpenAI are really trying to make sure the vibe is on par with Claude models if they want to keep the Codex hype going.\nBen’s Bites is brought to you by Plaid\nOver half of Americans used AI to manage their finances in the past 12 months. And their expectations for financial products have never been higher. Plaid's latest report, The State of Intelligent Finance , breaks down what consumers expect from AI and what that means for your team. Get the report .\nHeadlines\nFable 5, the new model from Claude , is the “safer” version of Mythos (Anthropic’s unreleased model which they say is a big cybersecurity risk and is only available to certain companies). Fable makes a big jump over Opus 4.8 on benchmarks (not that big vs GPT 5.5 though). Ethan Mollick and Dan Shipper both believe it unlocks new capabilities - a big part of which is its ability to work longer and spawn dozens of subagents reliably without losing context of the main task.\nBased on this chart, Fable medium performs better than Opus xhigh while being cheaper.\nFable is only available till 22nd June in the Claude subscription plans. Anthropic plans to move Fable use to paid credits after that until they have the capacity to serve it to everyone. It’s 2x more expensive than Opus (vs Mythos, which was 5x Opus)\nAnthropic introduced a new policy with the rollout of Fable where it will “ secretly” sabotage your work if you use it for any ML/AI-related work. This caused a huge backlash, and in turn Anthropic has partially walked back the “secretly” part of this policy.\nOther examples of Fable in use - for a refacto r to get clean code, for editing a video , and even making a markdown editor .\nGemini 3.5 Live Translate - new model from Google that does real-time speech-to-speech translation in 70+ languages. Already live in Gemini API and Google Translate + coming soon to Google Meet.\nImplications of large-scale test-time compute - Model performance is affected by how much time, compute, or $$ budget is available for the model to complete a task, and hence companies should report these variables when reporting benchmarks.\nWhat does AI pricing actually look like in 2026? Orb analyzed 80 AI agent companies, including leaders like GitHub Copilot, Replit, Factory, and Intercom, to identify the pricing models, packaging strategies, and monetization trends emerging across the industry. Download the report .*\nMy feed\nClaude Code can have nested subagents now - each subagent can spawn even more subagents. Currently up to a depth of 5 layers.\nThe model selector in ChatGPT has been updated to a) show all GPT-5 generation models and b) thinking levels are simplified to Instant, Medium, High, Extra High and Pro - just like how it is in Codex.\nMissions are now available on Factory Desktop.\nSkribe - Local first markdown writing app with an AI review partner.\nLittle python harness to run evals on your skills - is the skill improving or hurting the model’s performance?\npr.video by Mainframe - turn any GitHub PR into a narrated video walkthrough to review changes (without needing the code diff).\nNew essay from Dario Amodei on policymaking to keep up with the pace of AI development. It’s a good read but has “trust me bro” vibes at many places.\nSupermemory is now available locally to host yourself.\nDiffusionGemma - new open-weights model from Google that uses a different architecture (diffusion instead of transformers) to gain a 3-5x speedup with roughly similar performance.\nAgents can now sign up on Firecrawl .\nBuild logs\n- by Keshav\nI’m building a speech-to-text app that’s entirely local (kinda like Wispr flow, Monologue, Superwhisper, etc.) but no data gets sent to their servers. Part of it stemmed from wanting to play with local models, and part of it was guilt of paying for a similar tool that I don’t use much.\nI’m calling the app “ Option AFK ”, and here’s how I built it in 3-4 days spread out over the past few weeks:\nAsked Opus 4.7 to write a simple Python script to get Nvidia’s Parakeet 0.6B working on my M3 Air. I tested it in the browser, and the accuracy/speed were better than what I expected.\nUsed Codex’s Computer Use to do a screen-by-screen audit of the tool I was paying for and document all the features that it has with screenshots. I was able to do this on the $20 plan in a single session (hitting the 5-hour limit only once).\nThen started building the MacOS app with Opus 4.8 (using the audit as a reference). While building this, Opus 4.8 selected an SDK I had no idea existed to wire up things like splitting long voice notes into chunks and speeding the model processing.\nHere’s that SDK:\nfluidaudio - run transcription and TTS models on MacOS locally.\nI got a working version of the app yesterday with Fable 5, and I’m using it on my device already. Here’s how it looks:\nIt also supports uploading voice notes (even the longer ones) as a file and getting them transcribed at no additional cost.\nI’m planning to release this app once I get the Apple Developer Program sign-up done. Would you want to use it?\nAfters\nsunil pai @threepointone\nwondering why I feel exhausted. maybe: the agents do all the easy stuff, and I have to work through the leftover hard bits, which means I'm perpetually locked in. and as the models get better, \"my\" work just gets harder and harder, until I'm basically underqualified to do the\n7:51 AM · Jun 10, 2026 · 293K Views\n104 Replies · 98 Reposts · 1.58K Likes\n🎭 @deepfates\nthe future of all work is this.\nYou must define:\n- a goal\n- the criteria that define it\n- the verifier that makes sure it is achieved\n- the sensors that inform the verifier\n- the actuators that affect the sensors\n- The envelope that contains the sensors and actuators\n🎭 @deepfates\nThe codex \"goal\" feature is a really good way to spend dozens of hours optimizing some total bullshit btw. If your final criteria is it all vague it will specification game and make masturbatory \"evidence\" and \"verifiers\" and \"gates\" and \"smoke tests\". must be hell internally\n5:05 AM · Jun 10, 2026 · 65.2K Views\n40 Replies · 38 Reposts · 765 Likes\nDan Shipper 📧 @danshipper\nGetting the most out of Claude Fable 5, Anthropic’s powerful new model, you need to maximize your ambition:\nIt’s built for full task delegation—you leave it looping for hours or overnight and come back to a finished product. If you want to get the most out of it, you need to\n5:28 PM · Jun 10, 2026 · 30.8K Views\n18 Replies · 23 Reposts · 427 Likes\nSemiAnalysis @SemiAnalysis_\nRecently, we purchased one of each Anthropic/OpenAI subscription plan and randomly ran long horizon coding tasks until we exhausted the weekly limit. It's widely believed that a $200/month plan maxes out at ~$2000/month worth of tokens (assuming API pricing). However, we found\n9:00 PM · Jun 10, 2026 · 794K Views\n67 Replies · 234 Reposts · 2.53K Likes\nShare Ben's Bites\nFind me on X , Linkedin , or YouTube\nRead about me and Ben’s Bites\n📷 thumbnail via @_nicolealonso\n* sponsors who make this newsletter possible :) Wanna partner with us for the next quarter? Email us at shanice@bensbites.com or k@bensbites.com\nBen's Bites is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.\n90\nShare\nPrevious Next\n\n## full_text\n\nNew Claude model - Fable\neveryone's building with it.\nJun 11, 2026\n90\nShare\nHey folks,\nLike a lot of others, I’m trying Fable. But I don’t think I’ve given it really hard tasks for me to feel the big step change people are claiming. Although as I’m working on visual, interactive essays for my reference manual, I’ve been testing one-shot generations on all sorts of topics to play with my kids; how to play the piano, how tetris works, how a volcano works. They’re loving bashing away at my keyboard to see the components come alive.\nIt’s less chatty than Opus. I use agents as a back-and-forth, so I need some chattiness, GPT models are very to the point, Claude models are usually more verbose. So I think Fable’s a bit of a sweet spot for me, because as of now I still prefer the ‘vibe’ of how Claude models think with me.\nIt’s slow. Speed is a huge thing for me because I can’t actively run many agents at once, my ADHD context switching is already bad enough. But I need the speed. So then I look to change from High or XHigh reasoning to lower levels but it feels wrong to pick less intelligence. Even though I know it’s probably wasting tokens.\nComposer 2.5 Fast from Cursor is the fastest model I’ve tried and I really enjoyed using it in Pi, and it’s shattered the glass for me, GPT 5.5 has too to be honest. They’re quick so I can chew through a bunch of work quickly.\nEver a game of toss-up between price, speed and vibe.\nI’m sure GPT 5.6 or 6 is just around the corner, and I imagine OpenAI are really trying to make sure the vibe is on par with Claude models if they want to keep the Codex hype going.\nBen’s Bites is brought to you by Plaid\nOver half of Americans used AI to manage their finances in the past 12 months. And their expectations for financial products have never been higher. Plaid's latest report, The State of Intelligent Finance , breaks down what consumers expect from AI and what that means for your team. Get the report .\nHeadlines\nFable 5, the new model from Claude , is the “safer” version of Mythos (Anthropic’s unreleased model which they say is a big cybersecurity risk and is only available to certain companies). Fable makes a big jump over Opus 4.8 on benchmarks (not that big vs GPT 5.5 though). Ethan Mollick and Dan Shipper both believe it unlocks new capabilities - a big part of which is its ability to work longer and spawn dozens of subagents reliably without losing context of the main task.\nBased on this chart, Fable medium performs better than Opus xhigh while being cheaper.\nFable is only available till 22nd June in the Claude subscription plans. Anthropic plans to move Fable use to paid credits after that until they have the capacity to serve it to everyone. It’s 2x more expensive than Opus (vs Mythos, which was 5x Opus)\nAnthropic introduced a new policy with the rollout of Fable where it will “ secretly” sabotage your work if you use it for any ML/AI-related work. This caused a huge backlash, and in turn Anthropic has partially walked back the “secretly” part of this policy.\nOther examples of Fable in use - for a refacto r to get clean code, for editing a video , and even making a markdown editor .\nGemini 3.5 Live Translate - new model from Google that does real-time speech-to-speech translation in 70+ languages. Already live in Gemini API and Google Translate + coming soon to Google Meet.\nImplications of large-scale test-time compute - Model performance is affected by how much time, compute, or $$ budget is available for the model to complete a task, and hence companies should report these variables when reporting benchmarks.\nWhat does AI pricing actually look like in 2026? Orb analyzed 80 AI agent companies, including leaders like GitHub Copilot, Replit, Factory, and Intercom, to identify the pricing models, packaging strategies, and monetization trends emerging across the industry. Download the report .*\nMy feed\nClaude Code can have nested subagents now - each subagent can spawn even more subagents. Currently up to a depth of 5 layers.\nThe model selector in ChatGPT has been updated to a) show all GPT-5 generation models and b) thinking levels are simplified to Instant, Medium, High, Extra High and Pro - just like how it is in Codex.\nMissions are now available on Factory Desktop.\nSkribe - Local first markdown writing app with an AI review partner.\nLittle python harness to run evals on your skills - is the skill improving or hurting the model’s performance?\npr.video by Mainframe - turn any GitHub PR into a narrated video walkthrough to review changes (without needing the code diff).\nNew essay from Dario Amodei on policymaking to keep up with the pace of AI development. It’s a good read but has “trust me bro” vibes at many places.\nSupermemory is now available locally to host yourself.\nDiffusionGemma - new open-weights model from Google that uses a different architecture (diffusion instead of transformers) to gain a 3-5x speedup with roughly similar performance.\nAgents can now sign up on Firecrawl .\nBuild logs\n- by Keshav\nI’m building a speech-to-text app that’s entirely local (kinda like Wispr flow, Monologue, Superwhisper, etc.) but no data gets sent to their servers. Part of it stemmed from wanting to play with local models, and part of it was guilt of paying for a similar tool that I don’t use much.\nI’m calling the app “ Option AFK ”, and here’s how I built it in 3-4 days spread out over the past few weeks:\nAsked Opus 4.7 to write a simple Python script to get Nvidia’s Parakeet 0.6B working on my M3 Air. I tested it in the browser, and the accuracy/speed were better than what I expected.\nUsed Codex’s Computer Use to do a screen-by-screen audit of the tool I was paying for and document all the features that it has with screenshots. I was able to do this on the $20 plan in a single session (hitting the 5-hour limit only once).\nThen started building the MacOS app with Opus 4.8 (using the audit as a reference). While building this, Opus 4.8 selected an SDK I had no idea existed to wire up things like splitting long voice notes into chunks and speeding the model processing.\nHere’s that SDK:\nfluidaudio - run transcription and TTS models on MacOS locally.\nI got a working version of the app yesterday with Fable 5, and I’m using it on my device already. Here’s how it looks:\nIt also supports uploading voice notes (even the longer ones) as a file and getting them transcribed at no additional cost.\nI’m planning to release this app once I get the Apple Developer Program sign-up done. Would you want to use it?\nAfters\nsunil pai @threepointone\nwondering why I feel exhausted. maybe: the agents do all the easy stuff, and I have to work through the leftover hard bits, which means I'm perpetually locked in. and as the models get better, \"my\" work just gets harder and harder, until I'm basically underqualified to do the\n7:51 AM · Jun 10, 2026 · 293K Views\n104 Replies · 98 Reposts · 1.58K Likes\n🎭 @deepfates\nthe future of all work is this.\nYou must define:\n- a goal\n- the criteria that define it\n- the verifier that makes sure it is achieved\n- the sensors that inform the verifier\n- the actuators that affect the sensors\n- The envelope that contains the sensors and actuators\n🎭 @deepfates\nThe codex \"goal\" feature is a really good way to spend dozens of hours optimizing some total bullshit btw. If your final criteria is it all vague it will specification game and make masturbatory \"evidence\" and \"verifiers\" and \"gates\" and \"smoke tests\". must be hell internally\n5:05 AM · Jun 10, 2026 · 65.2K Views\n40 Replies · 38 Reposts · 765 Likes\nDan Shipper 📧 @danshipper\nGetting the most out of Claude Fable 5, Anthropic’s powerful new model, you need to maximize your ambition:\nIt’s built for full task delegation—you leave it looping for hours or overnight and come back to a finished product. If you want to get the most out of it, you need to\n5:28 PM · Jun 10, 2026 · 30.8K Views\n18 Replies · 23 Reposts · 427 Likes\nSemiAnalysis @SemiAnalysis_\nRecently, we purchased one of each Anthropic/OpenAI subscription plan and randomly ran long horizon coding tasks until we exhausted the weekly limit. It's widely believed that a $200/month plan maxes out at ~$2000/month worth of tokens (assuming API pricing). However, we found\n9:00 PM · Jun 10, 2026 · 794K Views\n67 Replies · 234 Reposts · 2.53K Likes\nShare Ben's Bites\nFind me on X , Linkedin , or YouTube\nRead about me and Ben’s Bites\n📷 thumbnail via @_nicolealonso\n* sponsors who make this newsletter possible :) Wanna partner with us for the next quarter? Email us at shanice@bensbites.com or k@bensbites.com\nBen's Bites is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.\n90\nShare\nPrevious Next\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 88\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] everyone's building with it.\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] New Claude model - Fable everyone's building with it.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Jun 11, 2026 90 Share Hey folks, Like a lot of others, I’m trying Fable.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] But I don’t think I’ve given it really hard tasks for me to feel the big step change people are claiming.\n5. [opinion / signal_card_candidate, relationship_graph_input, viewpoint / medium] Although as I’m working on visual, interactive essays for my reference manual, I’ve been testing one-shot generations on all sorts of topics to play with my kids; how to play the piano, how tetris works, how a volcano works.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] They’re loving bashing away at my keyboard to see the components come alive.\n"
+}

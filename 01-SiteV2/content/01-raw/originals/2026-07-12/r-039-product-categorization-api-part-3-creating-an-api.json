@@ -1,0 +1,256 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-039",
+  "title": "Product Categorization API Part 3: Creating an API",
+  "title_zh": "产品分类API第3部分：创建API",
+  "title_translation_status": "translated",
+  "title_translation_method": "mymemory_title_translation",
+  "original_url": "https://eugeneyan.com//writing/product-categorization-api-part-3-creating-an-api/",
+  "canonical_url": "https://eugeneyan.com/writing/product-categorization-api-part-3-creating-an-api",
+  "source_name": "Eugene Yan's Blog",
+  "source_type": "builder",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2017-02-13T00:00:00.000Z",
+  "collected_at": "2026-07-12T09:55:31.383Z",
+  "language": "mixed",
+  "full_text": "This post is part 3—and the last—of the series on building a product classification API. The API is available for demo here . Part 1 and 2 are available here and here . ( Github repositiory )\nUpdate: API discontinued to save on cloud cost.\nIn part 1, we focused on acquiring the data, and cleaning and formatting the categories. Then in part 2, we cleaned and prepared the product titles (and short description) before training our model on the data. In this post, we’ll focus on writing a custom class for the API and building an app around it.\nThis is part of a series of posts on building a product classification API:\nData acquisition and formatting (part 1)\nData cleaning and preparation (part 2)\nAPI development (part 3)\nImage classification demo\nImage search demo\nThe desired end result is a webpage where users can enter a product title and get the top three most appropriate categories for it, like so.\nInput: Title. Output: Suggested categories.\nCreating a TitleCategorize Class\nIn most data science work using Python, we seldom have to write our own data structures or classes. Python is rich in useful data structures like dicts, sets, lists, etc. Also, thanks to Wes McKinney, most data wrangling can be done with one main data structure/class, the pandas dataframe.\nFor the API, what data structure should we use?\nWe can continue to use the pandas dataframe and perform all our operations on it. However, we don’t need something so heavy duty (with fast indexing, joins, etc). Perhaps we should write our own class instead.\nBefore writing any code, lets think about how we expect the API to work:\nUser provides a title as input\nTitle is cleaned and prepared via the approach described in post 2 (title preparation for new input titles should be the same as in model training process)\nPrepared title is provided as input to classification model\nClassification model returns top x categories and associated probabilities\nBased on the above, this is what our CategorizeTitle class should do:\nTake a title string as input\nClean and prepare title string\nInput prepared title string to classification model\nReturn results from classification model\nLooks simple enough. Here’s how our class looks like:\nclass TitleCategorize :\n\"\"\"\nClass to predict product category given a product title.\n\"\"\"\ndef __init__ ( self , title ):\nself . title = title\ndef prepare ( self , excluded = '-.' ):\n\"\"\" (str) -> list(str)\nReturns the title after it has been prepared by the process from clean titles\n:return:\n>>> TitleCategorize('Crème brûlée \" & ').prepare()\n['creme', 'brulee']\n>>> TitleCategorize('test hyphen-word 0.9 20% green/blue').prepare()\n['test', 'hyphen-word', '0.9']\n>>> TitleCategorize('grapes come in purple and green').prepare()\n['grapes', 'come']\n>>> TitleCategorize('what remains of a word ! if wordlen is 2').prepare()\n['remains', 'word', 'wordlen']\n\"\"\"\nself . title = encode_string ( self . title , HTML_PARSER )\nself . title = self . title . lower ()\nself . title = tokenize_title_string ( self . title , excluded )\nself . title = remove_words_list ( self . title , STOP_WORDS )\nself . title = remove_numeric_list ( self . title )\nself . title = remove_chars ( self . title , 1 )\nself . title = singularize_list ( self . title )\nlogger . info ( 'Title after preparation: {}' . format ( self . title ))\nreturn self\ndef categorize ( self ):\n\"\"\" (CategorizeSingle(str)) -> dict\nCategorizes prepared title and returns a dictionary of form {1: 'Cat1', 2: 'Cat2', 3: 'Cat3}\n:return:\n>>> TitleCategorize('This is a bookshelf with wood and a clock').prepare().categorize()\n{1: 'Electronics -> Home Audio -> Stereo Components -> Speakers -> Bookshelf Speakers',\n2: 'Electronics -> Computers & Accessories -> Data Storage -> USB Flash Drives',\n3: 'Home & Kitchen -> Furniture -> Home Office Furniture -> Bookcases'}\n\"\"\"\nresult_list = get_score ( self . title , model , 3 )\nresult_dict = dict ()\nfor i , category in enumerate ( result_list ):\nresult_dict [ i + 1 ] = category\nreturn result_dict",
+  "clean_text": "This post is part 3—and the last—of the series on building a product classification API. The API is available for demo here . Part 1 and 2 are available here and here . ( Github repositiory )\nUpdate: API discontinued to save on cloud cost.\nIn part 1, we focused on acquiring the data, and cleaning and formatting the categories. Then in part 2, we cleaned and prepared the product titles (and short description) before training our model on the data. In this post, we’ll focus on writing a custom class for the API and building an app around it.\nThis is part of a series of posts on building a product classification API:\nData acquisition and formatting (part 1)\nData cleaning and preparation (part 2)\nAPI development (part 3)\nImage classification demo\nImage search demo\nThe desired end result is a webpage where users can enter a product title and get the top three most appropriate categories for it, like so.\nInput: Title. Output: Suggested categories.\nCreating a TitleCategorize Class\nIn most data science work using Python, we seldom have to write our own data structures or classes. Python is rich in useful data structures like dicts, sets, lists, etc. Also, thanks to Wes McKinney, most data wrangling can be done with one main data structure/class, the pandas dataframe.\nFor the API, what data structure should we use?\nWe can continue to use the pandas dataframe and perform all our operations on it. However, we don’t need something so heavy duty (with fast indexing, joins, etc). Perhaps we should write our own class instead.\nBefore writing any code, lets think about how we expect the API to work:\nUser provides a title as input\nTitle is cleaned and prepared via the approach described in post 2 (title preparation for new input titles should be the same as in model training process)\nPrepared title is provided as input to classification model\nClassification model returns top x categories and associated probabilities\nBased on the above, this is what our CategorizeTitle class should do:\nTake a title string as input\nClean and prepare title string\nInput prepared title string to classification model\nReturn results from classification model\nLooks simple enough. Here’s how our class looks like:\nclass TitleCategorize :\n\"\"\"\nClass to predict product category given a product title.\n\"\"\"\ndef __init__ ( self , title ):\nself . title = title\ndef prepare ( self , excluded = '-.' ):\n\"\"\" (str) -> list(str)\nReturns the title after it has been prepared by the process from clean titles\n:return:\n>>> TitleCategorize('Crème brûlée \" & ').prepare()\n['creme', 'brulee']\n>>> TitleCategorize('test hyphen-word 0.9 20% green/blue').prepare()\n['test', 'hyphen-word', '0.9']\n>>> TitleCategorize('grapes come in purple and green').prepare()\n['grapes', 'come']\n>>> TitleCategorize('what remains of a word ! if wordlen is 2').prepare()\n['remains', 'word', 'wordlen']\n\"\"\"\nself . title = encode_string ( self . title , HTML_PARSER )\nself . title = self . title . lower ()\nself . title = tokenize_title_string ( self . title , excluded )\nself . title = remove_words_list ( self . title , STOP_WORDS )\nself . title = remove_numeric_list ( self . title )\nself . title = remove_chars ( self . title , 1 )\nself . title = singularize_list ( self . title )\nlogger . info ( 'Title after preparation: {}' . format ( self . title ))\nreturn self\ndef categorize ( self ):\n\"\"\" (CategorizeSingle(str)) -> dict\nCategorizes prepared title and returns a dictionary of form {1: 'Cat1', 2: 'Cat2', 3: 'Cat3}\n:return:\n>>> TitleCategorize('This is a bookshelf with wood and a clock').prepare().categorize()\n{1: 'Electronics -> Home Audio -> Stereo Components -> Speakers -> Bookshelf Speakers',\n2: 'Electronics -> Computers & Accessories -> Data Storage -> USB Flash Drives',\n3: 'Home & Kitchen -> Furniture -> Home Office Furniture -> Bookcases'}\n\"\"\"\nresult_list = get_score ( self . title , model , 3 )\nresult_dict = dict ()\nfor i , category in enumerate ( result_list ):\nresult_dict [ i + 1 ] = category\nreturn result_dict",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-039-product-categorization-api-part-3-creating-an-api.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-039-product-categorization-api-part-3-creating-an-api.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 96,
+  "extractor_diagnostics": {
+    "readability_score": 96,
+    "text_length": 3996,
+    "paragraph_count": 57,
+    "sentence_count": 40,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.019,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 3996,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "4c175be37117a33a",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "26f39de9020f5481",
+  "content_hash": "4c175be37117a33a",
+  "full_text_hash": "4c175be37117a33a",
+  "semantic_hash": "acd20c15e6336e31",
+  "duplicate_of": "",
+  "first_seen_at": "2017-02-13T00:00:00.000Z",
+  "last_seen_at": "2026-07-12T09:55:31.383Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "Or how to put machine learning models into production.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "funding",
+      "text": "This post is part 3—and the last—of the series on building a product classification API.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The API is available for demo here .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Part 1 and 2 are available here and here .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "( Github repositiory ) Update: API discontinued to save on cloud cost.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "In part 1, we focused on acquiring the data, and cleaning and formatting the categories.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-12T09:55:31.383Z",
+  "business_elements": {
+    "companies": [
+      "Eugene Yan's Blog",
+      "GitHub"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "3",
+      "1",
+      "2",
+      "0.9",
+      "20%"
+    ],
+    "quotes": [
+      "\nClass to predict product category given a product title.\n",
+      "\ndef __init__ ( self , title ):\nself . title = title\ndef prepare ( self , excluded = '-.' ):\n",
+      " (str) -> list(str)\nReturns the title after it has been prepared by the process from clean titles\n:return:\n>>> TitleCategorize('Crème brûlée "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Or how to put machine learning models into production.",
+      "This post is part 3—and the last—of the series on building a product classification API.",
+      "The API is available for demo here ."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_market_structure",
+    "importance_score": 5,
+    "importance_reason": "market-structure commercial event; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Product Categorization API Part 3: Creating an API\n\n- raw_id: R-039\n- title_zh: 产品分类API第3部分：创建API\n- title_translation_status: translated\n- title_translation_method: mymemory_title_translation\n- original_url: https://eugeneyan.com//writing/product-categorization-api-part-3-creating-an-api/\n- source_name: Eugene Yan's Blog\n- collected_at: 2026-07-12T09:55:31.383Z\n\n## clean_text\n\nThis post is part 3—and the last—of the series on building a product classification API. The API is available for demo here . Part 1 and 2 are available here and here . ( Github repositiory )\nUpdate: API discontinued to save on cloud cost.\nIn part 1, we focused on acquiring the data, and cleaning and formatting the categories. Then in part 2, we cleaned and prepared the product titles (and short description) before training our model on the data. In this post, we’ll focus on writing a custom class for the API and building an app around it.\nThis is part of a series of posts on building a product classification API:\nData acquisition and formatting (part 1)\nData cleaning and preparation (part 2)\nAPI development (part 3)\nImage classification demo\nImage search demo\nThe desired end result is a webpage where users can enter a product title and get the top three most appropriate categories for it, like so.\nInput: Title. Output: Suggested categories.\nCreating a TitleCategorize Class\nIn most data science work using Python, we seldom have to write our own data structures or classes. Python is rich in useful data structures like dicts, sets, lists, etc. Also, thanks to Wes McKinney, most data wrangling can be done with one main data structure/class, the pandas dataframe.\nFor the API, what data structure should we use?\nWe can continue to use the pandas dataframe and perform all our operations on it. However, we don’t need something so heavy duty (with fast indexing, joins, etc). Perhaps we should write our own class instead.\nBefore writing any code, lets think about how we expect the API to work:\nUser provides a title as input\nTitle is cleaned and prepared via the approach described in post 2 (title preparation for new input titles should be the same as in model training process)\nPrepared title is provided as input to classification model\nClassification model returns top x categories and associated probabilities\nBased on the above, this is what our CategorizeTitle class should do:\nTake a title string as input\nClean and prepare title string\nInput prepared title string to classification model\nReturn results from classification model\nLooks simple enough. Here’s how our class looks like:\nclass TitleCategorize :\n\"\"\"\nClass to predict product category given a product title.\n\"\"\"\ndef __init__ ( self , title ):\nself . title = title\ndef prepare ( self , excluded = '-.' ):\n\"\"\" (str) -> list(str)\nReturns the title after it has been prepared by the process from clean titles\n:return:\n>>> TitleCategorize('Crème brûlée \" & ').prepare()\n['creme', 'brulee']\n>>> TitleCategorize('test hyphen-word 0.9 20% green/blue').prepare()\n['test', 'hyphen-word', '0.9']\n>>> TitleCategorize('grapes come in purple and green').prepare()\n['grapes', 'come']\n>>> TitleCategorize('what remains of a word ! if wordlen is 2').prepare()\n['remains', 'word', 'wordlen']\n\"\"\"\nself . title = encode_string ( self . title , HTML_PARSER )\nself . title = self . title . lower ()\nself . title = tokenize_title_string ( self . title , excluded )\nself . title = remove_words_list ( self . title , STOP_WORDS )\nself . title = remove_numeric_list ( self . title )\nself . title = remove_chars ( self . title , 1 )\nself . title = singularize_list ( self . title )\nlogger . info ( 'Title after preparation: {}' . format ( self . title ))\nreturn self\ndef categorize ( self ):\n\"\"\" (CategorizeSingle(str)) -> dict\nCategorizes prepared title and returns a dictionary of form {1: 'Cat1', 2: 'Cat2', 3: 'Cat3}\n:return:\n>>> TitleCategorize('This is a bookshelf with wood and a clock').prepare().categorize()\n{1: 'Electronics -> Home Audio -> Stereo Components -> Speakers -> Bookshelf Speakers',\n2: 'Electronics -> Computers & Accessories -> Data Storage -> USB Flash Drives',\n3: 'Home & Kitchen -> Furniture -> Home Office Furniture -> Bookcases'}\n\"\"\"\nresult_list = get_score ( self . title , model , 3 )\nresult_dict = dict ()\nfor i , category in enumerate ( result_list ):\nresult_dict [ i + 1 ] = category\nreturn result_dict\n\n## full_text\n\nThis post is part 3—and the last—of the series on building a product classification API. The API is available for demo here . Part 1 and 2 are available here and here . ( Github repositiory )\nUpdate: API discontinued to save on cloud cost.\nIn part 1, we focused on acquiring the data, and cleaning and formatting the categories. Then in part 2, we cleaned and prepared the product titles (and short description) before training our model on the data. In this post, we’ll focus on writing a custom class for the API and building an app around it.\nThis is part of a series of posts on building a product classification API:\nData acquisition and formatting (part 1)\nData cleaning and preparation (part 2)\nAPI development (part 3)\nImage classification demo\nImage search demo\nThe desired end result is a webpage where users can enter a product title and get the top three most appropriate categories for it, like so.\nInput: Title. Output: Suggested categories.\nCreating a TitleCategorize Class\nIn most data science work using Python, we seldom have to write our own data structures or classes. Python is rich in useful data structures like dicts, sets, lists, etc. Also, thanks to Wes McKinney, most data wrangling can be done with one main data structure/class, the pandas dataframe.\nFor the API, what data structure should we use?\nWe can continue to use the pandas dataframe and perform all our operations on it. However, we don’t need something so heavy duty (with fast indexing, joins, etc). Perhaps we should write our own class instead.\nBefore writing any code, lets think about how we expect the API to work:\nUser provides a title as input\nTitle is cleaned and prepared via the approach described in post 2 (title preparation for new input titles should be the same as in model training process)\nPrepared title is provided as input to classification model\nClassification model returns top x categories and associated probabilities\nBased on the above, this is what our CategorizeTitle class should do:\nTake a title string as input\nClean and prepare title string\nInput prepared title string to classification model\nReturn results from classification model\nLooks simple enough. Here’s how our class looks like:\nclass TitleCategorize :\n\"\"\"\nClass to predict product category given a product title.\n\"\"\"\ndef __init__ ( self , title ):\nself . title = title\ndef prepare ( self , excluded = '-.' ):\n\"\"\" (str) -> list(str)\nReturns the title after it has been prepared by the process from clean titles\n:return:\n>>> TitleCategorize('Crème brûlée \" & ').prepare()\n['creme', 'brulee']\n>>> TitleCategorize('test hyphen-word 0.9 20% green/blue').prepare()\n['test', 'hyphen-word', '0.9']\n>>> TitleCategorize('grapes come in purple and green').prepare()\n['grapes', 'come']\n>>> TitleCategorize('what remains of a word ! if wordlen is 2').prepare()\n['remains', 'word', 'wordlen']\n\"\"\"\nself . title = encode_string ( self . title , HTML_PARSER )\nself . title = self . title . lower ()\nself . title = tokenize_title_string ( self . title , excluded )\nself . title = remove_words_list ( self . title , STOP_WORDS )\nself . title = remove_numeric_list ( self . title )\nself . title = remove_chars ( self . title , 1 )\nself . title = singularize_list ( self . title )\nlogger . info ( 'Title after preparation: {}' . format ( self . title ))\nreturn self\ndef categorize ( self ):\n\"\"\" (CategorizeSingle(str)) -> dict\nCategorizes prepared title and returns a dictionary of form {1: 'Cat1', 2: 'Cat2', 3: 'Cat3}\n:return:\n>>> TitleCategorize('This is a bookshelf with wood and a clock').prepare().categorize()\n{1: 'Electronics -> Home Audio -> Stereo Components -> Speakers -> Bookshelf Speakers',\n2: 'Electronics -> Computers & Accessories -> Data Storage -> USB Flash Drives',\n3: 'Home & Kitchen -> Furniture -> Home Office Furniture -> Bookcases'}\n\"\"\"\nresult_list = get_score ( self . title , model , 3 )\nresult_dict = dict ()\nfor i , category in enumerate ( result_list ):\nresult_dict [ i + 1 ] = category\nreturn result_dict\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 96\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Or how to put machine learning models into production.\n2. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] This post is part 3—and the last—of the series on building a product classification API.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The API is available for demo here .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Part 1 and 2 are available here and here .\n5. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] ( Github repositiory ) Update: API discontinued to save on cloud cost.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] In part 1, we focused on acquiring the data, and cleaning and formatting the categories.\n"
+}

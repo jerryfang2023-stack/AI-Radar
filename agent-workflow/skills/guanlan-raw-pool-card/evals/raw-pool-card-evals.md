@@ -77,6 +77,11 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Pass when undated company profiles, explainers, and weak `traceable_summary` captures remain backend-only until dated original evidence and Chinese fact material are repaired.
    - Pass when confirmed IPOs, material AI lawsuits, product shutdowns, and `How X built/deployed Y` customer cases can produce Cards without being hidden by unrelated words or excerpt metadata labels.
 
+17. `card_input_snapshot_contract`
+   - Pass when every manual Card regeneration records `raw_input_count` and `pool_input_count` in the handoff / manifest and those values match the persisted same-date Raw originals and Pool sections.
+   - Pass when a backfill or replay can use `--expected-raw-count=<count>` to stop before deleting or rewriting Cards if the persisted Raw input is stale or different from the audited count.
+   - Fail when an isolated replay count is reported as production Raw but Card generation still consumes an older committed Raw file.
+
 ## Repair Loop
 
 When a check fails:

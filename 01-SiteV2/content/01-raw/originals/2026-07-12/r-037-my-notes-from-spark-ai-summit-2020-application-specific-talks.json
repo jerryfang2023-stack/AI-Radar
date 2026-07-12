@@ -1,0 +1,270 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-037",
+  "title": "My Notes From Spark+AI Summit 2020 (Application-Specific Talks)",
+  "title_zh": "2020年Spark + AI峰会笔记（特定应用讲座）",
+  "title_translation_status": "translated",
+  "title_translation_method": "mymemory_title_translation",
+  "original_url": "https://eugeneyan.com//writing/notes-from-sparkai-summit-application-specific/",
+  "canonical_url": "https://eugeneyan.com/writing/notes-from-sparkai-summit-application-specific",
+  "source_name": "Eugene Yan's Blog",
+  "source_type": "builder",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "supporting_article",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "formal_report",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2020-07-05T00:00:00.000Z",
+  "collected_at": "2026-07-12T09:55:30.558Z",
+  "language": "mixed",
+  "full_text": "To follow up with the previous write-up on application-agnostic talks, here’s my notes on some application-specific sessions.\nThe previous write-up largely focused on deep learning best practices and reflects the challenges people are facing now. This write-up focuses on data engineering (frameworks, data quality) and reflects the maturity of Spark in production, with organizations sharing how they apply it effectively. We also have two interesting talks on unsupervised learning and reinforcement learning.\nTable of Contents\nAirbnb’s Zipline, a feature engineering framework\nAirbnb’s Sputnik, a data engineering framework\nGojek’s Feast, a feature store for end-to-end machine learning\nNetflix’s approach to data quality via statistics and swim lanes\nLinkedIn’s approach to preventing abuse via unsupervised learning\nZynga’s approach to personalisation via reinforcement learning\nZipline: Declarative Feature Engineering (24 June)\nNikhil Simha, Senior Engineer at Airbnb’s ML Infra, shared about Zipline (similar talk at Strata 2018 ) and how Airbnb uses it to tackle the problem of collecting point-in-time (PIT) features.\nWhat are PIT features? At Point 1 ( P1 ), the latest PIT features are F1=7 , F2=3 , F3=8 . However, at P2 , the latest PIT features for F1 and F2 have changed to 4 and 2 respectively. Calculating these PIT features (from historical data) is very difficult —it usually involves some aggregation on last and temporal joins. (Also addressed in Gojek’s Feast talk below.)\nGetting those last values are tricky, especially if the data is at the second/minute level\nWe can collect PIT features via two approaches:\nLog-and-wait: Write code to start collecting PIT features via logging and wait 3-6 months for sufficient data.\nManual backfill: Replicate feature engineering logic on historical data and perform backfilling. This comes with problems of consistency and can take a long time.\nTo improve on the manual backfill approach, it’s useful to distinguish between two classes of aggregations. The first class of aggregations are Abelian groups , such as sum, count, etc. They have the following properties:\nCommutative: a + b = b + a\nAssociative: (a + b) + c = a + (b + c)\nReversible: (a + b) - a = b\nWith commutativity and associativity, we can parallelize via the map-reduce paradigm. With reversibility, we don’t have to compute on the full window with each update: Just subtract the outdated data and add the new data (e.g., moving average).\nHowever, the second class of aggregations are non-reversible . These are operations like min, max, count unique, etc. With max, we cannot update windows easily—all you would have stored is the max value. Nonetheless, we can get past this with a binary tree.\nWe can do quick non-reversible aggregations with a binary tree.\nIn the example above, we perform the max operation on every two periods to get the first level node, and repeat recursively. This reduces the problem space from O(N) to O(LogN) and the compute time from O(N^2) to O(NLogN) . We trade off faster compute ( Log(365) = 8.5 ) for more storage required (2x).\nFurther reading:\nZipline: Airbnb’s Machine Learning Data Management Platform with Nikhil Simha and Andrew Hoh (slides)\nZipline: Airbnb’s Machine Learning Data Management Platform\nSputnik: A Data Engineering Framework (25 June)\nEgor Pakhomov, Senior Software Engineer at Airbnb Infra, shares about how Sputnik bakes in Spark and engineering best practices and improve developer experience.\nThere’s two kinds of logic in Spark jobs (and code):\nJob logic: Business logic, specification of input and output tables, partitioning of data, and how to validate the result, etc.\nRun logic: Parsing arguments, creating SparkSession , scheduling, creating tables, I/O, running in dev , etc. (mostly boilerplate).\nMost of the code in a Spark job is boilerplate; little of it is the actual transformation.\nSputnik implements the run logic so data engineers can focus on the job logic. Sputnik jobs are simple: input -> transformation -> output; no boilerplate.\nSputnik also bakes in best practices. Take for example, the HiveTableWriter . It does the following with minimal effort from data engineers:\nCreates a table if it does not exist; updates metadata\nRepartitions data to reduce the number of files on disk\nRuns data checks before writing (e.g., zero count check)\nUpdates output table names (for dev , staging , prod )\nNormalizes DataFrame schema to follow output schema\nThe last feature is interesting. By default, Spark’s HiveWriter matches columns by position—instead of name—and casts the data into the Hive schema. Thus, incorrect values are written into columns without error. ( SPARK-14543 ).\nSputnik also makes backfill jobs more efficient. Usually, backfilling a job involves running it for each session (e.g., day) in the historical period. This reduces economies of scale (e.g., starting a new SparkSession each time, batching daily instead of monthly). Sputnik also batches historical jobs across the entire history, or multiple periods per run to fit the resource constraints.\nSputnik makes backfilling easy and efficient.\nSputnik also has utils for testing on a singleton SparkSession , with DataFrame comparison, loading data from csv/json, and cleaning the Hive store between runs. It also checks data on output (e.g., zero-count check). And if we re-run a job (e.g., original output erroneous), it also triggers the re-run of downstream jobs.\nFurther reading:\nSputnik: Airbnb’s Apache Spark Framework for Data Engineering\nSputnik GitHub\nFeast: Scaling End-to-End Machine Learning (25 June)\nWillem Pienaar, Data Science Platform Lead at Gojek, shares about how they developed Feast ( Fea ture St ore) to modularize end-to-end machine learning.\nWhen Gojek started, they had a monolithic, tightly-coupled, system that was hard to iterate on. Training code had to be rewritten for serving, leading to code duplication, high overhead, and inconsistency between training and serving features. There was minimal feature reusability and data quality monitoring.\nThe original monolith made iteration slow and brittle.\nThus, they built Feast to decouple the ML lifecycle. By providing a consistent interface, Feast allows separate teams and data developers to work on creating features, training models, and serving models independently.\nWith Feast, the end-to-end machine learning pipeline is modularized.\nFor the data pipeline, we see various data sources (streaming, SQL, data lake) go through Apache Beam as an ingestion layer—thus, they adopt Google’s Dataflow model.\nAside: Google’s Dataflow model\nIn most extract-transform-load (ETL) jobs, data is viewed as a bounded batch (e.g., daily batches). The Dataflow model proposes viewing it as an unbounded stream instead (e.g., session). This provides flexibility where streams can easily be aggregated into batches; in contrast, going from batches to streams is very difficult.\nHere’s the abstract from the paper (emphasis mine):\nUnbounded, unordered, global-scale datasets are increasingly common in day-to-day business (e.g. Web logs, mobile usage statistics, and sensor networks). At the same time, consumers of these datasets have evolved sophisticated requirements, such as event-time ordering and windowing by features of the data themselves, in addition to an insatiable hunger for faster answers. Meanwhile, practicality dictates that one can never fully optimize along all dimensions of correctness, latency, and cost for these types of input. As a result, data processing practitioners are left with the quandary of how to reconcile the tensions between these seemingly competing propositions, often resulting in disparate implementations and systems.\nWe propose that a fundamental shift of approach is necessary to deal with these evolved requirements in modern data processing. We as a field must stop trying to groom unbounded datasets into finite pools of information that eventually become complete, and instead live and breathe under the assumption that we will never know if or when we have seen all of our data , only that new data will arrive, old data may be retracted, and the only way to make this problem tractable is via principled abstractions that allow the practitioner the choice of appropriate tradeoffs along the axes of interest: correctness, latency, and cost.\nIn this paper, we present one such approach, the Dataflow Model, along with a detailed examination of the semantics it enables, an overview of the core principles that guided its design, and a validation of the model itself via the real-world experiences that led to its development.\nView the full paper here .",
+  "clean_text": "To follow up with the previous write-up on application-agnostic talks, here’s my notes on some application-specific sessions.\nThe previous write-up largely focused on deep learning best practices and reflects the challenges people are facing now. This write-up focuses on data engineering (frameworks, data quality) and reflects the maturity of Spark in production, with organizations sharing how they apply it effectively. We also have two interesting talks on unsupervised learning and reinforcement learning.\nTable of Contents\nAirbnb’s Zipline, a feature engineering framework\nAirbnb’s Sputnik, a data engineering framework\nGojek’s Feast, a feature store for end-to-end machine learning\nNetflix’s approach to data quality via statistics and swim lanes\nLinkedIn’s approach to preventing abuse via unsupervised learning\nZynga’s approach to personalisation via reinforcement learning\nZipline: Declarative Feature Engineering (24 June)\nNikhil Simha, Senior Engineer at Airbnb’s ML Infra, shared about Zipline (similar talk at Strata 2018 ) and how Airbnb uses it to tackle the problem of collecting point-in-time (PIT) features.\nWhat are PIT features? At Point 1 ( P1 ), the latest PIT features are F1=7 , F2=3 , F3=8 . However, at P2 , the latest PIT features for F1 and F2 have changed to 4 and 2 respectively. Calculating these PIT features (from historical data) is very difficult —it usually involves some aggregation on last and temporal joins. (Also addressed in Gojek’s Feast talk below.)\nGetting those last values are tricky, especially if the data is at the second/minute level\nWe can collect PIT features via two approaches:\nLog-and-wait: Write code to start collecting PIT features via logging and wait 3-6 months for sufficient data.\nManual backfill: Replicate feature engineering logic on historical data and perform backfilling. This comes with problems of consistency and can take a long time.\nTo improve on the manual backfill approach, it’s useful to distinguish between two classes of aggregations. The first class of aggregations are Abelian groups , such as sum, count, etc. They have the following properties:\nCommutative: a + b = b + a\nAssociative: (a + b) + c = a + (b + c)\nReversible: (a + b) - a = b\nWith commutativity and associativity, we can parallelize via the map-reduce paradigm. With reversibility, we don’t have to compute on the full window with each update: Just subtract the outdated data and add the new data (e.g., moving average).\nHowever, the second class of aggregations are non-reversible . These are operations like min, max, count unique, etc. With max, we cannot update windows easily—all you would have stored is the max value. Nonetheless, we can get past this with a binary tree.\nWe can do quick non-reversible aggregations with a binary tree.\nIn the example above, we perform the max operation on every two periods to get the first level node, and repeat recursively. This reduces the problem space from O(N) to O(LogN) and the compute time from O(N^2) to O(NLogN) . We trade off faster compute ( Log(365) = 8.5 ) for more storage required (2x).\nFurther reading:\nZipline: Airbnb’s Machine Learning Data Management Platform with Nikhil Simha and Andrew Hoh (slides)\nZipline: Airbnb’s Machine Learning Data Management Platform\nSputnik: A Data Engineering Framework (25 June)\nEgor Pakhomov, Senior Software Engineer at Airbnb Infra, shares about how Sputnik bakes in Spark and engineering best practices and improve developer experience.\nThere’s two kinds of logic in Spark jobs (and code):\nJob logic: Business logic, specification of input and output tables, partitioning of data, and how to validate the result, etc.\nRun logic: Parsing arguments, creating SparkSession , scheduling, creating tables, I/O, running in dev , etc. (mostly boilerplate).\nMost of the code in a Spark job is boilerplate; little of it is the actual transformation.\nSputnik implements the run logic so data engineers can focus on the job logic. Sputnik jobs are simple: input -> transformation -> output; no boilerplate.\nSputnik also bakes in best practices. Take for example, the HiveTableWriter . It does the following with minimal effort from data engineers:\nCreates a table if it does not exist; updates metadata\nRepartitions data to reduce the number of files on disk\nRuns data checks before writing (e.g., zero count check)\nUpdates output table names (for dev , staging , prod )\nNormalizes DataFrame schema to follow output schema\nThe last feature is interesting. By default, Spark’s HiveWriter matches columns by position—instead of name—and casts the data into the Hive schema. Thus, incorrect values are written into columns without error. ( SPARK-14543 ).\nSputnik also makes backfill jobs more efficient. Usually, backfilling a job involves running it for each session (e.g., day) in the historical period. This reduces economies of scale (e.g., starting a new SparkSession each time, batching daily instead of monthly). Sputnik also batches historical jobs across the entire history, or multiple periods per run to fit the resource constraints.\nSputnik makes backfilling easy and efficient.\nSputnik also has utils for testing on a singleton SparkSession , with DataFrame comparison, loading data from csv/json, and cleaning the Hive store between runs. It also checks data on output (e.g., zero-count check). And if we re-run a job (e.g., original output erroneous), it also triggers the re-run of downstream jobs.\nFurther reading:\nSputnik: Airbnb’s Apache Spark Framework for Data Engineering\nSputnik GitHub\nFeast: Scaling End-to-End Machine Learning (25 June)\nWillem Pienaar, Data Science Platform Lead at Gojek, shares about how they developed Feast ( Fea ture St ore) to modularize end-to-end machine learning.\nWhen Gojek started, they had a monolithic, tightly-coupled, system that was hard to iterate on. Training code had to be rewritten for serving, leading to code duplication, high overhead, and inconsistency between training and serving features. There was minimal feature reusability and data quality monitoring.\nThe original monolith made iteration slow and brittle.\nThus, they built Feast to decouple the ML lifecycle. By providing a consistent interface, Feast allows separate teams and data developers to work on creating features, training models, and serving models independently.\nWith Feast, the end-to-end machine learning pipeline is modularized.\nFor the data pipeline, we see various data sources (streaming, SQL, data lake) go through Apache Beam as an ingestion layer—thus, they adopt Google’s Dataflow model.\nAside: Google’s Dataflow model\nIn most extract-transform-load (ETL) jobs, data is viewed as a bounded batch (e.g., daily batches). The Dataflow model proposes viewing it as an unbounded stream instead (e.g., session). This provides flexibility where streams can easily be aggregated into batches; in contrast, going from batches to streams is very difficult.\nHere’s the abstract from the paper (emphasis mine):\nUnbounded, unordered, global-scale datasets are increasingly common in day-to-day business (e.g. Web logs, mobile usage statistics, and sensor networks). At the same time, consumers of these datasets have evolved sophisticated requirements, such as event-time ordering and windowing by features of the data themselves, in addition to an insatiable hunger for faster answers. Meanwhile, practicality dictates that one can never fully optimize along all dimensions of correctness, latency, and cost for these types of input. As a result, data processing practitioners are left with the quandary of how to reconcile the tensions between these seemingly competing propositions, often resulting in disparate implementations and systems.\nWe propose that a fundamental shift of approach is necessary to deal with these evolved requirements in modern data processing. We as a field must stop trying to groom unbounded datasets into finite pools of information that eventually become complete, and instead live and breathe under the assumption that we will never know if or when we have seen all of our data , only that new data will arrive, old data may be retracted, and the only way to make this problem tractable is via principled abstractions that allow the practitioner the choice of appropriate tradeoffs along the axes of interest: correctness, latency, and cost.\nIn this paper, we present one such approach, the Dataflow Model, along with a detailed examination of the semantics it enables, an overview of the core principles that guided its design, and a validation of the model itself via the real-world experiences that led to its development.\nView the full paper here .",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-037-my-notes-from-spark-ai-summit-2020-application-specific-talks.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-037-my-notes-from-spark-ai-summit-2020-application-specific-talks.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 8652,
+    "paragraph_count": 57,
+    "sentence_count": 66,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.001,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 8652,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "1b2ae2df1b2a5cd1",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "631c0e278c938ed0",
+  "content_hash": "1b2ae2df1b2a5cd1",
+  "full_text_hash": "1b2ae2df1b2a5cd1",
+  "semantic_hash": "e89601b24bdaeac6",
+  "duplicate_of": "",
+  "first_seen_at": "2020-07-05T00:00:00.000Z",
+  "last_seen_at": "2026-07-12T09:55:30.558Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "Part II of the previous write-up, this time on applications and frameworks of Spark in production",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "To follow up with the previous write-up on application-agnostic talks, here’s my notes on some application-specific sessions.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The previous write-up largely focused on deep learning best practices and reflects the challenges people are facing now.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "This write-up focuses on data engineering (frameworks, data quality) and reflects the maturity of Spark in production, with organizations sharing how they apply it effectively.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "We also have two interesting talks on unsupervised learning and reinforcement learning.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Table of Contents Airbnb’s Zipline, a feature engineering framework Airbnb’s Sputnik, a data engineering framework Gojek’s Feast, a feature store for end-to-end machine learning Netflix’s approach to data quality via statistics and swim lanes LinkedIn’s approach to preventing abuse via unsupervised learning Zynga’s approach to personalisation via reinforcement learning Zipline: Declarative Feature Engineering (24 June) Nikhil Simha, Senior Engineer at Airbnb’s ML Infra, shared about Zipline (similar talk at Strata ",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-12T09:55:30.558Z",
+  "business_elements": {
+    "companies": [
+      "Eugene Yan's Blog",
+      "Google",
+      "GitHub"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "2020",
+      "24",
+      "2018",
+      "1",
+      "7",
+      "2",
+      "3",
+      "8"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Part II of the previous write-up, this time on applications and frameworks of Spark in production",
+      "To follow up with the previous write-up on application-agnostic talks, here’s my notes on some application-specific sessions.",
+      "The previous write-up largely focused on deep learning best practices and reflects the challenges people are facing now."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# My Notes From Spark+AI Summit 2020 (Application-Specific Talks)\n\n- raw_id: R-037\n- title_zh: 2020年Spark + AI峰会笔记（特定应用讲座）\n- title_translation_status: translated\n- title_translation_method: mymemory_title_translation\n- original_url: https://eugeneyan.com//writing/notes-from-sparkai-summit-application-specific/\n- source_name: Eugene Yan's Blog\n- collected_at: 2026-07-12T09:55:30.558Z\n\n## clean_text\n\nTo follow up with the previous write-up on application-agnostic talks, here’s my notes on some application-specific sessions.\nThe previous write-up largely focused on deep learning best practices and reflects the challenges people are facing now. This write-up focuses on data engineering (frameworks, data quality) and reflects the maturity of Spark in production, with organizations sharing how they apply it effectively. We also have two interesting talks on unsupervised learning and reinforcement learning.\nTable of Contents\nAirbnb’s Zipline, a feature engineering framework\nAirbnb’s Sputnik, a data engineering framework\nGojek’s Feast, a feature store for end-to-end machine learning\nNetflix’s approach to data quality via statistics and swim lanes\nLinkedIn’s approach to preventing abuse via unsupervised learning\nZynga’s approach to personalisation via reinforcement learning\nZipline: Declarative Feature Engineering (24 June)\nNikhil Simha, Senior Engineer at Airbnb’s ML Infra, shared about Zipline (similar talk at Strata 2018 ) and how Airbnb uses it to tackle the problem of collecting point-in-time (PIT) features.\nWhat are PIT features? At Point 1 ( P1 ), the latest PIT features are F1=7 , F2=3 , F3=8 . However, at P2 , the latest PIT features for F1 and F2 have changed to 4 and 2 respectively. Calculating these PIT features (from historical data) is very difficult —it usually involves some aggregation on last and temporal joins. (Also addressed in Gojek’s Feast talk below.)\nGetting those last values are tricky, especially if the data is at the second/minute level\nWe can collect PIT features via two approaches:\nLog-and-wait: Write code to start collecting PIT features via logging and wait 3-6 months for sufficient data.\nManual backfill: Replicate feature engineering logic on historical data and perform backfilling. This comes with problems of consistency and can take a long time.\nTo improve on the manual backfill approach, it’s useful to distinguish between two classes of aggregations. The first class of aggregations are Abelian groups , such as sum, count, etc. They have the following properties:\nCommutative: a + b = b + a\nAssociative: (a + b) + c = a + (b + c)\nReversible: (a + b) - a = b\nWith commutativity and associativity, we can parallelize via the map-reduce paradigm. With reversibility, we don’t have to compute on the full window with each update: Just subtract the outdated data and add the new data (e.g., moving average).\nHowever, the second class of aggregations are non-reversible . These are operations like min, max, count unique, etc. With max, we cannot update windows easily—all you would have stored is the max value. Nonetheless, we can get past this with a binary tree.\nWe can do quick non-reversible aggregations with a binary tree.\nIn the example above, we perform the max operation on every two periods to get the first level node, and repeat recursively. This reduces the problem space from O(N) to O(LogN) and the compute time from O(N^2) to O(NLogN) . We trade off faster compute ( Log(365) = 8.5 ) for more storage required (2x).\nFurther reading:\nZipline: Airbnb’s Machine Learning Data Management Platform with Nikhil Simha and Andrew Hoh (slides)\nZipline: Airbnb’s Machine Learning Data Management Platform\nSputnik: A Data Engineering Framework (25 June)\nEgor Pakhomov, Senior Software Engineer at Airbnb Infra, shares about how Sputnik bakes in Spark and engineering best practices and improve developer experience.\nThere’s two kinds of logic in Spark jobs (and code):\nJob logic: Business logic, specification of input and output tables, partitioning of data, and how to validate the result, etc.\nRun logic: Parsing arguments, creating SparkSession , scheduling, creating tables, I/O, running in dev , etc. (mostly boilerplate).\nMost of the code in a Spark job is boilerplate; little of it is the actual transformation.\nSputnik implements the run logic so data engineers can focus on the job logic. Sputnik jobs are simple: input -> transformation -> output; no boilerplate.\nSputnik also bakes in best practices. Take for example, the HiveTableWriter . It does the following with minimal effort from data engineers:\nCreates a table if it does not exist; updates metadata\nRepartitions data to reduce the number of files on disk\nRuns data checks before writing (e.g., zero count check)\nUpdates output table names (for dev , staging , prod )\nNormalizes DataFrame schema to follow output schema\nThe last feature is interesting. By default, Spark’s HiveWriter matches columns by position—instead of name—and casts the data into the Hive schema. Thus, incorrect values are written into columns without error. ( SPARK-14543 ).\nSputnik also makes backfill jobs more efficient. Usually, backfilling a job involves running it for each session (e.g., day) in the historical period. This reduces economies of scale (e.g., starting a new SparkSession each time, batching daily instead of monthly). Sputnik also batches historical jobs across the entire history, or multiple periods per run to fit the resource constraints.\nSputnik makes backfilling easy and efficient.\nSputnik also has utils for testing on a singleton SparkSession , with DataFrame comparison, loading data from csv/json, and cleaning the Hive store between runs. It also checks data on output (e.g., zero-count check). And if we re-run a job (e.g., original output erroneous), it also triggers the re-run of downstream jobs.\nFurther reading:\nSputnik: Airbnb’s Apache Spark Framework for Data Engineering\nSputnik GitHub\nFeast: Scaling End-to-End Machine Learning (25 June)\nWillem Pienaar, Data Science Platform Lead at Gojek, shares about how they developed Feast ( Fea ture St ore) to modularize end-to-end machine learning.\nWhen Gojek started, they had a monolithic, tightly-coupled, system that was hard to iterate on. Training code had to be rewritten for serving, leading to code duplication, high overhead, and inconsistency between training and serving features. There was minimal feature reusability and data quality monitoring.\nThe original monolith made iteration slow and brittle.\nThus, they built Feast to decouple the ML lifecycle. By providing a consistent interface, Feast allows separate teams and data developers to work on creating features, training models, and serving models independently.\nWith Feast, the end-to-end machine learning pipeline is modularized.\nFor the data pipeline, we see various data sources (streaming, SQL, data lake) go through Apache Beam as an ingestion layer—thus, they adopt Google’s Dataflow model.\nAside: Google’s Dataflow model\nIn most extract-transform-load (ETL) jobs, data is viewed as a bounded batch (e.g., daily batches). The Dataflow model proposes viewing it as an unbounded stream instead (e.g., session). This provides flexibility where streams can easily be aggregated into batches; in contrast, going from batches to streams is very difficult.\nHere’s the abstract from the paper (emphasis mine):\nUnbounded, unordered, global-scale datasets are increasingly common in day-to-day business (e.g. Web logs, mobile usage statistics, and sensor networks). At the same time, consumers of these datasets have evolved sophisticated requirements, such as event-time ordering and windowing by features of the data themselves, in addition to an insatiable hunger for faster answers. Meanwhile, practicality dictates that one can never fully optimize along all dimensions of correctness, latency, and cost for these types of input. As a result, data processing practitioners are left with the quandary of how to reconcile the tensions between these seemingly competing propositions, often resulting in disparate implementations and systems.\nWe propose that a fundamental shift of approach is necessary to deal with these evolved requirements in modern data processing. We as a field must stop trying to groom unbounded datasets into finite pools of information that eventually become complete, and instead live and breathe under the assumption that we will never know if or when we have seen all of our data , only that new data will arrive, old data may be retracted, and the only way to make this problem tractable is via principled abstractions that allow the practitioner the choice of appropriate tradeoffs along the axes of interest: correctness, latency, and cost.\nIn this paper, we present one such approach, the Dataflow Model, along with a detailed examination of the semantics it enables, an overview of the core principles that guided its design, and a validation of the model itself via the real-world experiences that led to its development.\nView the full paper here .\n\n## full_text\n\nTo follow up with the previous write-up on application-agnostic talks, here’s my notes on some application-specific sessions.\nThe previous write-up largely focused on deep learning best practices and reflects the challenges people are facing now. This write-up focuses on data engineering (frameworks, data quality) and reflects the maturity of Spark in production, with organizations sharing how they apply it effectively. We also have two interesting talks on unsupervised learning and reinforcement learning.\nTable of Contents\nAirbnb’s Zipline, a feature engineering framework\nAirbnb’s Sputnik, a data engineering framework\nGojek’s Feast, a feature store for end-to-end machine learning\nNetflix’s approach to data quality via statistics and swim lanes\nLinkedIn’s approach to preventing abuse via unsupervised learning\nZynga’s approach to personalisation via reinforcement learning\nZipline: Declarative Feature Engineering (24 June)\nNikhil Simha, Senior Engineer at Airbnb’s ML Infra, shared about Zipline (similar talk at Strata 2018 ) and how Airbnb uses it to tackle the problem of collecting point-in-time (PIT) features.\nWhat are PIT features? At Point 1 ( P1 ), the latest PIT features are F1=7 , F2=3 , F3=8 . However, at P2 , the latest PIT features for F1 and F2 have changed to 4 and 2 respectively. Calculating these PIT features (from historical data) is very difficult —it usually involves some aggregation on last and temporal joins. (Also addressed in Gojek’s Feast talk below.)\nGetting those last values are tricky, especially if the data is at the second/minute level\nWe can collect PIT features via two approaches:\nLog-and-wait: Write code to start collecting PIT features via logging and wait 3-6 months for sufficient data.\nManual backfill: Replicate feature engineering logic on historical data and perform backfilling. This comes with problems of consistency and can take a long time.\nTo improve on the manual backfill approach, it’s useful to distinguish between two classes of aggregations. The first class of aggregations are Abelian groups , such as sum, count, etc. They have the following properties:\nCommutative: a + b = b + a\nAssociative: (a + b) + c = a + (b + c)\nReversible: (a + b) - a = b\nWith commutativity and associativity, we can parallelize via the map-reduce paradigm. With reversibility, we don’t have to compute on the full window with each update: Just subtract the outdated data and add the new data (e.g., moving average).\nHowever, the second class of aggregations are non-reversible . These are operations like min, max, count unique, etc. With max, we cannot update windows easily—all you would have stored is the max value. Nonetheless, we can get past this with a binary tree.\nWe can do quick non-reversible aggregations with a binary tree.\nIn the example above, we perform the max operation on every two periods to get the first level node, and repeat recursively. This reduces the problem space from O(N) to O(LogN) and the compute time from O(N^2) to O(NLogN) . We trade off faster compute ( Log(365) = 8.5 ) for more storage required (2x).\nFurther reading:\nZipline: Airbnb’s Machine Learning Data Management Platform with Nikhil Simha and Andrew Hoh (slides)\nZipline: Airbnb’s Machine Learning Data Management Platform\nSputnik: A Data Engineering Framework (25 June)\nEgor Pakhomov, Senior Software Engineer at Airbnb Infra, shares about how Sputnik bakes in Spark and engineering best practices and improve developer experience.\nThere’s two kinds of logic in Spark jobs (and code):\nJob logic: Business logic, specification of input and output tables, partitioning of data, and how to validate the result, etc.\nRun logic: Parsing arguments, creating SparkSession , scheduling, creating tables, I/O, running in dev , etc. (mostly boilerplate).\nMost of the code in a Spark job is boilerplate; little of it is the actual transformation.\nSputnik implements the run logic so data engineers can focus on the job logic. Sputnik jobs are simple: input -> transformation -> output; no boilerplate.\nSputnik also bakes in best practices. Take for example, the HiveTableWriter . It does the following with minimal effort from data engineers:\nCreates a table if it does not exist; updates metadata\nRepartitions data to reduce the number of files on disk\nRuns data checks before writing (e.g., zero count check)\nUpdates output table names (for dev , staging , prod )\nNormalizes DataFrame schema to follow output schema\nThe last feature is interesting. By default, Spark’s HiveWriter matches columns by position—instead of name—and casts the data into the Hive schema. Thus, incorrect values are written into columns without error. ( SPARK-14543 ).\nSputnik also makes backfill jobs more efficient. Usually, backfilling a job involves running it for each session (e.g., day) in the historical period. This reduces economies of scale (e.g., starting a new SparkSession each time, batching daily instead of monthly). Sputnik also batches historical jobs across the entire history, or multiple periods per run to fit the resource constraints.\nSputnik makes backfilling easy and efficient.\nSputnik also has utils for testing on a singleton SparkSession , with DataFrame comparison, loading data from csv/json, and cleaning the Hive store between runs. It also checks data on output (e.g., zero-count check). And if we re-run a job (e.g., original output erroneous), it also triggers the re-run of downstream jobs.\nFurther reading:\nSputnik: Airbnb’s Apache Spark Framework for Data Engineering\nSputnik GitHub\nFeast: Scaling End-to-End Machine Learning (25 June)\nWillem Pienaar, Data Science Platform Lead at Gojek, shares about how they developed Feast ( Fea ture St ore) to modularize end-to-end machine learning.\nWhen Gojek started, they had a monolithic, tightly-coupled, system that was hard to iterate on. Training code had to be rewritten for serving, leading to code duplication, high overhead, and inconsistency between training and serving features. There was minimal feature reusability and data quality monitoring.\nThe original monolith made iteration slow and brittle.\nThus, they built Feast to decouple the ML lifecycle. By providing a consistent interface, Feast allows separate teams and data developers to work on creating features, training models, and serving models independently.\nWith Feast, the end-to-end machine learning pipeline is modularized.\nFor the data pipeline, we see various data sources (streaming, SQL, data lake) go through Apache Beam as an ingestion layer—thus, they adopt Google’s Dataflow model.\nAside: Google’s Dataflow model\nIn most extract-transform-load (ETL) jobs, data is viewed as a bounded batch (e.g., daily batches). The Dataflow model proposes viewing it as an unbounded stream instead (e.g., session). This provides flexibility where streams can easily be aggregated into batches; in contrast, going from batches to streams is very difficult.\nHere’s the abstract from the paper (emphasis mine):\nUnbounded, unordered, global-scale datasets are increasingly common in day-to-day business (e.g. Web logs, mobile usage statistics, and sensor networks). At the same time, consumers of these datasets have evolved sophisticated requirements, such as event-time ordering and windowing by features of the data themselves, in addition to an insatiable hunger for faster answers. Meanwhile, practicality dictates that one can never fully optimize along all dimensions of correctness, latency, and cost for these types of input. As a result, data processing practitioners are left with the quandary of how to reconcile the tensions between these seemingly competing propositions, often resulting in disparate implementations and systems.\nWe propose that a fundamental shift of approach is necessary to deal with these evolved requirements in modern data processing. We as a field must stop trying to groom unbounded datasets into finite pools of information that eventually become complete, and instead live and breathe under the assumption that we will never know if or when we have seen all of our data , only that new data will arrive, old data may be retracted, and the only way to make this problem tractable is via principled abstractions that allow the practitioner the choice of appropriate tradeoffs along the axes of interest: correctness, latency, and cost.\nIn this paper, we present one such approach, the Dataflow Model, along with a detailed examination of the semantics it enables, an overview of the core principles that guided its design, and a validation of the model itself via the real-world experiences that led to its development.\nView the full paper here .\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Part II of the previous write-up, this time on applications and frameworks of Spark in production\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] To follow up with the previous write-up on application-agnostic talks, here’s my notes on some application-specific sessions.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The previous write-up largely focused on deep learning best practices and reflects the challenges people are facing now.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] This write-up focuses on data engineering (frameworks, data quality) and reflects the maturity of Spark in production, with organizations sharing how they apply it effectively.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] We also have two interesting talks on unsupervised learning and reinforcement learning.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Table of Contents Airbnb’s Zipline, a feature engineering framework Airbnb’s Sputnik, a data engineering framework Gojek’s Feast, a feature store for end-to-end machine learning Netflix’s approach to data quality via statistics and swim lanes LinkedIn’s approach to preventing abuse via unsupervised learning Zynga’s approach to personalisation via reinforcement learning Zipline: Declarative Feature Engineering (24 June) Nikhil Simha, Senior Engineer at Airbnb’s ML Infra, shared about Zipline (similar talk at Strata \n"
+}

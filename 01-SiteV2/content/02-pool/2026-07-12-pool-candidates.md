@@ -2,7 +2,7 @@
 date: 2026-07-12
 stage: pool
 status: guanlan-daily-monitor-pool
-pool_count: 60
+pool_count: 136
 aihot_daily_pool_count: 8
 pool_target: 75
 routed_pool_target: 60
@@ -11,8 +11,8 @@ core_non_large_vendor_target: 20
 historical_dedupe_enabled: true
 historical_raw_records_checked: 7809
 historical_duplicates_removed_before_fetch: 566
-historical_duplicates_removed_after_fetch: 228
-generated_at: 2026-07-12T06:10:52.385Z
+historical_duplicates_removed_after_fetch: 157
+generated_at: 2026-07-12T09:56:27.166Z
 keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
 ---
 
@@ -386,10 +386,10 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - origin_fetch_status: success
 - raw_status: pooled
 - pool_routes: core_pool
-- raw_content_hash: 51cff43304e96664
-- raw_full_text_hash: 51cff43304e96664
+- raw_content_hash: 2d1f2ef26a3efe59
+- raw_full_text_hash: 2d1f2ef26a3efe59
 - raw_semantic_hash: b6f45445bafda037
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"51cff43304e96664","missing":[]}
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2d1f2ef26a3efe59","missing":[]}
 - degradation_reasons: none
 - importance_type: important_product_or_service
 - importance_score: 5
@@ -495,7 +495,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: not_applicable
 - raw_status: pooled
-- pool_routes: core_pool
+- pool_routes: watchlist
 - raw_content_hash: 23145edb5fdd8d69
 - raw_full_text_hash: 23145edb5fdd8d69
 - raw_semantic_hash: 13ff84975b6d1fd2
@@ -512,125 +512,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - key_excerpts: [{"type":"funding","text":"Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Resource center Press Releases Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Press Releases # Upscale AI Adds $190 Million in Extension t... / query=AI hardware startup raises Series A customers / intent=find_startups / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Resource center Press Releases Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Press Releases Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Table of contents Link H2 Link H3 Link H4 Link H5 Link H6 Author Santa Clara Calif A pure-play AI networking infrastructure company, today announced it has raised $190 million in Series A-1 financing.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"This latest investment brings the company’s total funding to $500 million, and its current valuation to $2 billion, reflecting strong investor conviction in the AI networking market and Upscale AI’s unique innovation in driving open-standards solutions for it.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The Series A-1 round was led by Premji Invest , and included funding from new investors, NVIDIA , Salesforce Ventures, Seligman Ventures, and Temasek as well as participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Upscale AI is reimagining networking for the AI era with a full-stack portfolio spanning silicon, systems, and software.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Through a unified, open-standard AI fabric, the company connects accelerators, memory, and storage into a single high-performance AI engine purpose-built to eliminate network bottlenecks across large-scale, synchronized AI workloads, including training and inference of frontier models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 - evidence_seed: {"company_actions":["Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Resource center Press Releases Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Press Releases # Upscale AI Adds $190 Million in Extension t... / query=AI hardware startup raises Series A customers / intent=find_startups / path=ai_hardware_original","Resource center Press Releases Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Press Releases Upscale AI Adds $190 Million in Extension to Series A, Reaching Half-Billion Dollars in Total Funding Table of contents Link H2 Link H3 Link H4 Link H5 Link H6 Author Santa Clara Calif A pure-play AI networking infrastructure company, today announced it has raised $190 million in Series A-1 financing.","This latest investment brings the company’s total funding to $500 million, and its current valuation to $2 billion, reflecting strong investor conviction in the AI networking market and Upscale AI’s unique innovation in driving open-standards solutions for it."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":[]}
 - missing_information: 没有具体客户或真实企业案例
-- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-010｜Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows – Company Announcement - FT.com
+## P-010｜Accelerating supply chain AI with Kinaxis MCP on Amazon Bedrock AgentCore | AWS Partner Network (APN) Blog
 
 - raw_ref: R-010
-- raw_original_id: https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605120900BIZWIRE_USPRX____20260512_BW858142-1
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-010-lenovo-enables-one-week-deployment-of-production-ready-agentic-ai-to-t.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-010-lenovo-enables-one-week-deployment-of-production-ready-agentic-ai-to-t.json`
-- source: keyword search / Anysearch｜https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605120900BIZWIRE_USPRX____20260512_BW858142-1
-- source_url: https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605120900BIZWIRE_USPRX____20260512_BW858142-1
-- acquisition_channel: keyword-search
-- search_intent: find_market_trend
-- search_path: a_media_gdelt
-- source_type: media
-- source_level: A
-- source_level_role: traceability_only_not_value_score_or_core_gate
-- evidence_object_type: case_or_customer
-- evidence_object_usable: true
-- event_evidence: true
-- index_only_evidence: false
-- evidence_strength: rich_evidence
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
-- acquisition_source_level: M
-- research_status: not_research
-- local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
-- extraction_method: content-container
-- readability_score: 97
-- has_full_text: true
-- source_volatility: low
-- community_name: not_applicable
-- capture_scope: article_text
-- evidence_level: core_evidence_candidate
-- source_role: resolved_original_source
-- origin_fetch_status: not_applicable
-- raw_status: pooled
-- pool_routes: emerging_pool, watchlist
-- raw_content_hash: 25dc602e392f702d
-- raw_full_text_hash: 25dc602e392f702d
-- raw_semantic_hash: fcd9208a6ef012ab
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"25dc602e392f702d","missing":[]}
-- degradation_reasons: none
-- importance_type: important_vertical_solution
-- importance_score: 5
-- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
-- theme: 成熟信号
-- keyword_group: mature-commercial-signal
-- score: 8.4
-- raw_capture_priority: 21.4
-- usable_for: case, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
-- key_excerpts: [{"type":"case_detail","text":"Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows – Company Announcement - FT.com ### Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows May 12 2026 14:00 BST - The Lenovo AI Library enables rapid d... / query=enterprise AI transformation production rollout customer deployment / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"number","text":"Lenovo Group Ltd Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows May 12 2026 14:00 BST The Lenovo AI Library enables rapid deployment of prebuilt, industry-specific AI agents and use cases, aligned to enterprise workflows Delivered as part of Lenovo Hybrid AI Advantage™, enabling secure, governed AI deployment across hybrid environments Independently validated results show 30% productivity gains and up to 120 hours saved per employee annually MORRISVILLE, N.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"--(BUSINESS WIRE)--May 12, 2026-- Lenovo is enabling enterprises to deploy production-ready, agentic AI solutions in as little as one week 1 , eliminating the long development cycles that typically delay AI from reaching production, while maintaining enterprise-grade security, governance, and control.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"This is not theoretical, independent analysis from Signal65 confirms these results in real-world deployments.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"number","text":"Lenovo’s Knowledge Super Agent reduced time spent on knowledge-related tasks by 30%, saving up to 120 hours per employee annually.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"In multiple deployments, organizations reached production up to 24× faster than with custom-built approaches, demonstrating how faster, secure deployment translates directly into faster business outcomes.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":[],"case_details":["Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows – Company Announcement - FT.com ### Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows May 12 2026 14:00 BST - The Lenovo AI Library enables rapid d... / query=enterprise AI transformation production rollout customer deployment / intent=find_market_trend / path=a_media_gdelt","This is not theoretical, independent analysis from Signal65 confirms these results in real-world deployments.","In multiple deployments, organizations reached production up to 24× faster than with custom-built approaches, demonstrating how faster, secure deployment translates directly into faster business outcomes."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["--(BUSINESS WIRE)--May 12, 2026-- Lenovo is enabling enterprises to deploy production-ready, agentic AI solutions in as little as one week 1 , eliminating the long development cycles that typically delay AI from reaching production, while maintaining enterprise-grade security, governance, and control."]}
-- missing_information: none
-- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
-- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
-
-## P-011｜Wonderful raises $150M Series B
-
-- raw_ref: R-011
-- raw_original_id: https://thenextweb.com/news/wonderful-series-b-enterprise-ai-agents
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-011-wonderful-raises-150m-series-b.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-011-wonderful-raises-150m-series-b.json`
-- source: keyword search / Anysearch｜https://thenextweb.com/news/wonderful-series-b-enterprise-ai-agents
-- source_url: https://thenextweb.com/news/wonderful-series-b-enterprise-ai-agents
-- acquisition_channel: keyword-search
-- search_intent: find_original_source
-- search_path: capital_startup
-- source_type: web
-- source_level: B
-- source_level_role: traceability_only_not_value_score_or_core_gate
-- evidence_object_type: case_or_customer
-- evidence_object_usable: true
-- event_evidence: true
-- index_only_evidence: false
-- evidence_strength: rich_evidence
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
-- acquisition_source_level: M
-- research_status: not_research
-- local_snapshot_status: fetched-readable-text-json-ld
-- extraction_quality: high
-- extraction_method: json-ld
-- readability_score: 97
-- has_full_text: true
-- source_volatility: low
-- community_name: not_applicable
-- capture_scope: article_text
-- evidence_level: core_evidence_candidate
-- source_role: resolved_original_source
-- origin_fetch_status: not_applicable
-- raw_status: pooled
-- pool_routes: emerging_pool, watchlist
-- raw_content_hash: ce420c93fe4b8b40
-- raw_full_text_hash: ce420c93fe4b8b40
-- raw_semantic_hash: 9f5b1036e11a207e
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ce420c93fe4b8b40","missing":[]}
-- degradation_reasons: none
-- importance_type: important_funding
-- importance_score: 5
-- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
-- theme: 成熟信号
-- keyword_group: mature-commercial-signal
-- score: 8.4
-- raw_capture_priority: 21.4
-- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
-- key_excerpts: [{"type":"funding","text":"Wonderful raises $150M Series B This article was published on March 12, 2026 The Amsterdam-headquartered startup has been out of stealth for just eight months, but it already has 350 staff, production deployments across four continents, and a valuation reportedly approaching $1.7 billion --- The... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Wonderful raises $150M Series B to scale its enterprise AI agents across 30 countries The Amsterdam-headquartered startup has been out of stealth for just eight months, but it already has 350 staff, production deployments across four continents, and a valuation reportedly approaching $1.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"7 billion There is a problem that every major enterprise AI deployment eventually runs into: the gap between a convincing demo and a working system in production.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"[…] The Amsterdam-headquartered startup has been out of stealth for just eight months, but it already has 350 staff, production deployments across four continents, and a valuation reportedly approaching $1.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Models hallucinate.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["Wonderful raises $150M Series B This article was published on March 12, 2026 The Amsterdam-headquartered startup has been out of stealth for just eight months, but it already has 350 staff, production deployments across four continents, and a valuation reportedly approaching $1.7 billion --- The... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=capital_startup","Wonderful raises $150M Series B to scale its enterprise AI agents across 30 countries The Amsterdam-headquartered startup has been out of stealth for just eight months, but it already has 350 staff, production deployments across four continents, and a valuation reportedly approaching $1.","Models hallucinate."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":[]}
-- missing_information: 没有具体客户或真实企业案例
-- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
-- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
-
-## P-012｜Accelerating supply chain AI with Kinaxis MCP on Amazon Bedrock AgentCore | AWS Partner Network (APN) Blog
-
-- raw_ref: R-012
 - raw_original_id: https://aws.amazon.com/blogs/apn/accelerating-supply-chain-ai-with-kinaxis-mcp-on-amazon-bedrock-agentcore/
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-012-accelerating-supply-chain-ai-with-kinaxis-mcp-on-amazon-bedrock-agentc.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-012-accelerating-supply-chain-ai-with-kinaxis-mcp-on-amazon-bedrock-agentc.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-010-accelerating-supply-chain-ai-with-kinaxis-mcp-on-amazon-bedrock-agentc.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-010-accelerating-supply-chain-ai-with-kinaxis-mcp-on-amazon-bedrock-agentc.json`
 - source: keyword search / Anysearch｜https://aws.amazon.com/blogs/apn/accelerating-supply-chain-ai-with-kinaxis-mcp-on-amazon-bedrock-agentcore/
 - source_url: https://aws.amazon.com/blogs/apn/accelerating-supply-chain-ai-with-kinaxis-mcp-on-amazon-bedrock-agentcore/
 - acquisition_channel: keyword-search
@@ -660,7 +550,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: not_applicable
 - raw_status: pooled
-- pool_routes: core_pool
+- pool_routes: watchlist
 - raw_content_hash: b728545b3475b3f1
 - raw_full_text_hash: b728545b3475b3f1
 - raw_semantic_hash: 1cffb3f8b4775b6b
@@ -677,15 +567,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - key_excerpts: [{"type":"case_detail","text":"Accelerating supply chain AI with Kinaxis MCP on Amazon Bedrock AgentCore | AWS Partner Network (APN) Blog Skip to Main Content ## AWS Partner Network (APN) Blog https://aws.amazon.com/blogs/apn/ # Accelerating supply chain AI with Kinaxis MCP on Amazon Bedrock AgentCore By: Shriram Bidkar, Assi... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to Main Content AWS Partner Network (APN) Blog Accelerating supply chain AI with Kinaxis MCP on Amazon Bedrock AgentCore By: Shriram Bidkar, Assistant Vice President, AWS Solutions – Genpact By: Naresh Rajaram, Sr.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Partner Solutions Architect – AWS Genpact The biggest barrier to supply chain AI isn’t the technology, it’s integration.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Genpact’s Kinaxis MCP Server , built on Amazon Bedrock AgentCore , replaces months of custom API work with a single secure interface.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"One manufacturer achieved an estimated reduction in AI deployment time from 12 weeks to 3 days.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"number","text":"A global retailer saw up to an 18% improvement in forecast accuracy.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 - evidence_seed: {"company_actions":["Skip to Main Content AWS Partner Network (APN) Blog Accelerating supply chain AI with Kinaxis MCP on Amazon Bedrock AgentCore By: Shriram Bidkar, Assistant Vice President, AWS Solutions – Genpact By: Naresh Rajaram, Sr.","Partner Solutions Architect – AWS Genpact The biggest barrier to supply chain AI isn’t the technology, it’s integration.","Genpact’s Kinaxis MCP Server , built on Amazon Bedrock AgentCore , replaces months of custom API work with a single secure interface."],"case_details":["Accelerating supply chain AI with Kinaxis MCP on Amazon Bedrock AgentCore | AWS Partner Network (APN) Blog Skip to Main Content ## AWS Partner Network (APN) Blog https://aws.amazon.com/blogs/apn/ # Accelerating supply chain AI with Kinaxis MCP on Amazon Bedrock AgentCore By: Shriram Bidkar, Assi... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original","One manufacturer achieved an estimated reduction in AI deployment time from 12 weeks to 3 days."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
 - missing_information: none
-- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-013｜awesome-copilot/skills/devops-rollout-plan/SKILL.md at main - GitHub
+## P-011｜awesome-copilot/skills/devops-rollout-plan/SKILL.md at main - GitHub
 
-- raw_ref: R-013
+- raw_ref: R-011
 - raw_original_id: https://github.com/github/awesome-copilot/blob/main/skills/devops-rollout-plan/SKILL.md
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-013-awesome-copilot-skills-devops-rollout-plan-skill-md-at-main-github.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-013-awesome-copilot-skills-devops-rollout-plan-skill-md-at-main-github.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-011-awesome-copilot-skills-devops-rollout-plan-skill-md-at-main-github.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-011-awesome-copilot-skills-devops-rollout-plan-skill-md-at-main-github.json`
 - source: keyword search / Anysearch｜https://github.com/github/awesome-copilot/blob/main/skills/devops-rollout-plan/SKILL.md
 - source_url: https://github.com/github/awesome-copilot/blob/main/skills/devops-rollout-plan/SKILL.md
 - acquisition_channel: keyword-search
@@ -735,12 +625,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-014｜Databricks will bake OpenAI models into its products in $100M bet to ...
+## P-012｜Databricks will bake OpenAI models into its products in $100M bet to ...
 
-- raw_ref: R-014
+- raw_ref: R-012
 - raw_original_id: https://techcrunch.com/2025/09/25/databricks-will-bake-openai-models-into-its-products-in-100m-bet-to-spur-enterprise-adoption/
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-014-databricks-will-bake-openai-models-into-its-products-in-100m-bet-to.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-014-databricks-will-bake-openai-models-into-its-products-in-100m-bet-to.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-012-databricks-will-bake-openai-models-into-its-products-in-100m-bet-to.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-012-databricks-will-bake-openai-models-into-its-products-in-100m-bet-to.json`
 - source: keyword search / Anysearch｜https://techcrunch.com/2025/09/25/databricks-will-bake-openai-models-into-its-products-in-100m-bet-to-spur-enterprise-adoption/
 - source_url: https://techcrunch.com/2025/09/25/databricks-will-bake-openai-models-into-its-products-in-100m-bet-to-spur-enterprise-adoption/
 - acquisition_channel: keyword-search
@@ -771,10 +661,10 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - origin_fetch_status: not_applicable
 - raw_status: pooled
 - pool_routes: emerging_pool, watchlist
-- raw_content_hash: 8f76537532740a4f
-- raw_full_text_hash: 8f76537532740a4f
+- raw_content_hash: 4540f7a0ee23008c
+- raw_full_text_hash: 4540f7a0ee23008c
 - raw_semantic_hash: 58ba5c3117352320
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8f76537532740a4f","missing":[]}
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4540f7a0ee23008c","missing":[]}
 - degradation_reasons: none
 - importance_type: important_case
 - importance_score: 5
@@ -790,12 +680,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-015｜Iberdrola enhances IT operations using Amazon Bedrock AgentCore | Artificial Intelligence
+## P-013｜Iberdrola enhances IT operations using Amazon Bedrock AgentCore | Artificial Intelligence
 
-- raw_ref: R-015
+- raw_ref: R-013
 - raw_original_id: https://aws.amazon.com/blogs/machine-learning/iberdrola-enhances-it-operations-using-amazon-bedrock-agentcore/
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-015-iberdrola-enhances-it-operations-using-amazon-bedrock-agentcore-artifi.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-015-iberdrola-enhances-it-operations-using-amazon-bedrock-agentcore-artifi.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-013-iberdrola-enhances-it-operations-using-amazon-bedrock-agentcore-artifi.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-013-iberdrola-enhances-it-operations-using-amazon-bedrock-agentcore-artifi.json`
 - source: keyword search / Anysearch｜https://aws.amazon.com/blogs/machine-learning/iberdrola-enhances-it-operations-using-amazon-bedrock-agentcore/
 - source_url: https://aws.amazon.com/blogs/machine-learning/iberdrola-enhances-it-operations-using-amazon-bedrock-agentcore/
 - acquisition_channel: keyword-search
@@ -825,7 +715,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: not_applicable
 - raw_status: pooled
-- pool_routes: core_pool
+- pool_routes: watchlist
 - raw_content_hash: 5277374459acc264
 - raw_full_text_hash: c54259583872faeb
 - raw_semantic_hash: f122e3e5a06f3cca
@@ -842,70 +732,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - key_excerpts: [{"type":"case_detail","text":"Iberdrola enhances IT operations using Amazon Bedrock AgentCore | Artificial Intelligence Skip to Main Content ## Artificial Intelligence https://aws.amazon.com/blogs/machine-learning/ # Iberdrola enhances IT operations using Amazon Bedrock AgentCore Iberdrola, one of the world’s largest utility... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to Main Content Artificial Intelligence Iberdrola enhances IT operations using Amazon Bedrock AgentCore Iberdrola , one of the world’s largest utility companies, has embraced cutting-edge AI technology to revolutionize its IT operations in ServiceNow .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"By using different agentic architectures, Iberdrola has transformed the way thousands of change requests and incident tickets are managed, streamlining processes and enhancing productivity across departments.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Through its partnership with AWS, Iberdrola implemented those agents in a groundbreaking solution using Amazon Bedrock AgentCore , targeting three key areas: optimizing change request validation in the draft phase, enriching incident management with contextual intelligence, and simplifying change model selection using conversational AI.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"company_action","text":"These innovations reduce bottlenecks, help teams accelerate ticket resolution, and deliver consistent and high-quality data handling throughout the organization.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Amazon Bedrock AgentCore helps Iberdrola deploy production-ready AI agents seamlessly.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 - evidence_seed: {"company_actions":["Skip to Main Content Artificial Intelligence Iberdrola enhances IT operations using Amazon Bedrock AgentCore Iberdrola , one of the world’s largest utility companies, has embraced cutting-edge AI technology to revolutionize its IT operations in ServiceNow .","These innovations reduce bottlenecks, help teams accelerate ticket resolution, and deliver consistent and high-quality data handling throughout the organization.","Amazon Bedrock AgentCore helps Iberdrola deploy production-ready AI agents seamlessly."],"case_details":["Iberdrola enhances IT operations using Amazon Bedrock AgentCore | Artificial Intelligence Skip to Main Content ## Artificial Intelligence https://aws.amazon.com/blogs/machine-learning/ # Iberdrola enhances IT operations using Amazon Bedrock AgentCore Iberdrola, one of the world’s largest utility... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["By using different agentic architectures, Iberdrola has transformed the way thousands of change requests and incident tickets are managed, streamlining processes and enhancing productivity across departments.","Through its partnership with AWS, Iberdrola implemented those agents in a groundbreaking solution using Amazon Bedrock AgentCore , targeting three key areas: optimizing change request validation in the draft phase, enriching incident management with contextual intelligence, and simplifying change model selection using conversational AI."]}
 - missing_information: none
-- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
-- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
-
-## P-016｜Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale – Company Announcement - FT.com
-
-- raw_ref: R-016
-- raw_original_id: https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-016-zensar-technologies-launches-zenseai-agentmesh-to-accelerate-enterpris.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-016-zensar-technologies-launches-zenseai-agentmesh-to-accelerate-enterpris.json`
-- source: keyword search / Anysearch｜https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1
-- source_url: https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1
-- acquisition_channel: keyword-search
-- search_intent: find_market_trend
-- search_path: a_media_gdelt
-- source_type: media
-- source_level: A
-- source_level_role: traceability_only_not_value_score_or_core_gate
-- evidence_object_type: case_or_customer
-- evidence_object_usable: true
-- event_evidence: true
-- index_only_evidence: false
-- evidence_strength: rich_evidence
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
-- acquisition_source_level: M
-- research_status: not_research
-- local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
-- extraction_method: content-container
-- readability_score: 97
-- has_full_text: true
-- source_volatility: low
-- community_name: not_applicable
-- capture_scope: article_text
-- evidence_level: core_evidence_candidate
-- source_role: resolved_original_source
-- origin_fetch_status: not_applicable
-- raw_status: pooled
-- pool_routes: watchlist
-- raw_content_hash: 8d31d2e331059d2b
-- raw_full_text_hash: 8d31d2e331059d2b
-- raw_semantic_hash: 6fc7d9fbd10864af
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8d31d2e331059d2b","missing":[]}
-- degradation_reasons: none
-- importance_type: important_vertical_solution
-- importance_score: 5
-- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
-- theme: 技术迭代信号
-- keyword_group: technical-iteration-signal
-- score: 8.4
-- raw_capture_priority: 21.4
-- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
-- key_excerpts: [{"type":"product_update","text":"Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale – Company Announcement - FT.com # Company Announcements ### Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale Jun 19 2026 14:50 BST PRINCETON, N.J. , June 1... / query=agent governance evals production rollout enterprise AI / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Zensar Technologies Ltd Zensar Technologies Launches 'ZenseAI.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AgentMesh' to Accelerate Enterprise AI Adoption at Scale Twitter Facebook LinkedIn GooglePlus Pinterest Jun 19 2026 14:50 BST PRINCETON, N.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":", June 19, 2026 /PRNewswire/ -- Zensar Technologies , an experience-led digital engineering company and part of the RPG Group , today announced the launch of the ZenseAI.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AgentMesh, an enterprise-grade agentic AI platform designed to help organisations discover, build, deploy, and govern autonomous AI agents at scale.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Positioned as a universal enterprise operating system for agentic AI, the AgentMesh enables enterprises to move from AI ambition to production in as little as 6–8 weeks.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale – Company Announcement - FT.com # Company Announcements ### Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale Jun 19 2026 14:50 BST PRINCETON, N.J. , June 1... / query=agent governance evals production rollout enterprise AI / intent=find_market_trend / path=a_media_gdelt","Zensar Technologies Ltd Zensar Technologies Launches 'ZenseAI.","AgentMesh' to Accelerate Enterprise AI Adoption at Scale Twitter Facebook LinkedIn GooglePlus Pinterest Jun 19 2026 14:50 BST PRINCETON, N."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
-- missing_information: 没有具体客户或真实企业案例
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-017｜北京智源发布世界基础模型 Orca，不预测 token 而建模世界下一状态
+## P-014｜北京智源发布世界基础模型 Orca，不预测 token 而建模世界下一状态
 
-- raw_ref: R-017
+- raw_ref: R-014
 - raw_original_id: cmrg5kafb011niha7fzenl66a
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-017-北京智源发布世界基础模型-orca-不预测-token-而建模世界下一状态.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-017-北京智源发布世界基础模型-orca-不预测-token-而建模世界下一状态.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-014-北京智源发布世界基础模型-orca-不预测-token-而建模世界下一状态.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-014-北京智源发布世界基础模型-orca-不预测-token-而建模世界下一状态.json`
 - source: The Decoder：AI News（RSS）｜https://the-decoder.com/chinas-orca-world-model-matches-specialized-robotics-systems-without-ever-seeing-a-single-action-label
 - source_url: https://the-decoder.com/chinas-orca-world-model-matches-specialized-robotics-systems-without-ever-seeing-a-single-action-label
 - acquisition_channel: aihot
@@ -955,12 +790,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-018｜Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI
+## P-015｜Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI
 
-- raw_ref: R-018
+- raw_ref: R-015
 - raw_original_id: cmrh31svh018lbid4ddim1j5g
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-018-thinking-machines-lab-发布技术白皮书-以可定制模型权重构建以人为本的-ai.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-018-thinking-machines-lab-发布技术白皮书-以可定制模型权重构建以人为本的-ai.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-015-thinking-machines-lab-发布技术白皮书-以可定制模型权重构建以人为本的-ai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-015-thinking-machines-lab-发布技术白皮书-以可定制模型权重构建以人为本的-ai.json`
 - source: MarkTechPost（RSS）｜https://www.marktechpost.com/2026/07/11/mira-muratis-thinking-machines-lab-makes-the-technical-case-for-human-centered-ai-built-on-customizable-model-weights
 - source_url: https://www.marktechpost.com/2026/07/11/mira-muratis-thinking-machines-lab-makes-the-technical-case-for-human-centered-ai-built-on-customizable-model-weights
 - acquisition_channel: aihot
@@ -1010,12 +845,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-019｜microsoft/ai-agents-for-beginners: 12 Lessons to Get ... - GitHub
+## P-016｜microsoft/ai-agents-for-beginners: 12 Lessons to Get ... - GitHub
 
-- raw_ref: R-019
+- raw_ref: R-016
 - raw_original_id: https://github.com/microsoft/ai-agents-for-beginners
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-019-microsoft-ai-agents-for-beginners-12-lessons-to-get-github.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-019-microsoft-ai-agents-for-beginners-12-lessons-to-get-github.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-016-microsoft-ai-agents-for-beginners-12-lessons-to-get-github.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-016-microsoft-ai-agents-for-beginners-12-lessons-to-get-github.json`
 - source: keyword search / Anysearch｜https://github.com/microsoft/ai-agents-for-beginners
 - source_url: https://github.com/microsoft/ai-agents-for-beginners
 - acquisition_channel: keyword-search
@@ -1046,10 +881,10 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - origin_fetch_status: not_applicable
 - raw_status: pooled
 - pool_routes: emerging_pool, watchlist
-- raw_content_hash: b8a5c5a866af2a1b
-- raw_full_text_hash: b8a5c5a866af2a1b
-- raw_semantic_hash: 498b0203060ac643
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b8a5c5a866af2a1b","missing":[]}
+- raw_content_hash: ec69200a76eb2778
+- raw_full_text_hash: ec69200a76eb2778
+- raw_semantic_hash: f10c780317c51ed4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ec69200a76eb2778","missing":[]}
 - degradation_reasons: none
 - importance_type: important_market_structure
 - importance_score: 5
@@ -1059,18 +894,18 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 6.999999999999999
 - raw_capture_priority: 20
 - usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
-- key_excerpts: [{"type":"number","text":"# Repository: microsoft/ai-agents-for-beginners 12 Lessons to Get Started Building AI Agents - Stars: 68983 - Forks: 22884 - Watchers: 544 - Open issues: 19 - Primary language: Jupyter Notebook - Languages: Jupyter Notebook (99.7%), Python (0.2%), C# (0.1%), Dockerfile - License: MIT License (MIT)..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There was an error while loading.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Please reload this page .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"microsoft ai-agents-for-beginners Public Notifications You must be signed in to change notification settings Fork 22.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"9k Star 69k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1,672 Commits 1,672 Commits .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"vscode 00-course-setup 00-course-setup 01-intro-to-ai-agents 01-intro-to-ai-agents 02-explore-agentic-frameworks 02-explore-agentic-frameworks 03-agentic-design-patterns 03-agentic-design-patterns 04-tool-use 04-tool-use 05-agentic-rag 05-agentic-rag 06-building-trustworthy-agents 06-building-trustworthy-agents 07-planning-design 07-planning-design 08-multi-agent 08-multi-agent 09-metacognition 09-metacognition 10-ai-agents-production 10-ai-agents-production 11-agentic-protocols 11-agentic-protocols 12-context-engi","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- key_excerpts: [{"type":"number","text":"# Repository: microsoft/ai-agents-for-beginners 12 Lessons to Get Started Building AI Agents - Stars: 68983 - Forks: 22884 - Watchers: 544 - Open issues: 19 - Primary language: Jupyter Notebook - Languages: Jupyter Notebook (99.7%), Python (0.2%), C# (0.1%), Dockerfile - License: MIT License (MIT)..... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There was an error while loading.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Please reload this page .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"microsoft ai-agents-for-beginners Public Notifications You must be signed in to change notification settings Fork 22.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"1k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1,672 Commits 1,672 Commits .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"vscode 00-course-setup 00-course-setup 01-intro-to-ai-agents 01-intro-to-ai-agents 02-explore-agentic-frameworks 02-explore-agentic-frameworks 03-agentic-design-patterns 03-agentic-design-patterns 04-tool-use 04-tool-use 05-agentic-rag 05-agentic-rag 06-building-trustworthy-agents 06-building-trustworthy-agents 07-planning-design 07-planning-design 08-multi-agent 08-multi-agent 09-metacognition 09-metacognition 10-ai-agents-production 10-ai-agents-production 11-agentic-protocols 11-agentic-protocols 12-context-engi","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 - evidence_seed: {"company_actions":["There was an error while loading.","Please reload this page .","microsoft ai-agents-for-beginners Public Notifications You must be signed in to change notification settings Fork 22."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
 - missing_information: 没有具体客户或真实企业案例
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-020｜OpenAI 承认 ChatGPT Work 发布"并非一切顺利"，紧急修复用户体验和成本问题
+## P-017｜OpenAI 承认 ChatGPT Work 发布"并非一切顺利"，紧急修复用户体验和成本问题
 
-- raw_ref: R-020
+- raw_ref: R-017
 - raw_original_id: cmrg3f3zc00hciha70pdvq0hi
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-020-openai-承认-chatgpt-work-发布-并非一切顺利-紧急修复用户体验和成本问题.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-020-openai-承认-chatgpt-work-发布-并非一切顺利-紧急修复用户体验和成本问题.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-017-openai-承认-chatgpt-work-发布-并非一切顺利-紧急修复用户体验和成本问题.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-017-openai-承认-chatgpt-work-发布-并非一切顺利-紧急修复用户体验和成本问题.json`
 - source: The Decoder：AI News（RSS）｜https://the-decoder.com/openai-admits-it-didnt-get-everything-quite-right-with-chatgpt-work-launch-and-scrambles-to-fix-ux-and-costs
 - source_url: https://the-decoder.com/openai-admits-it-didnt-get-everything-quite-right-with-chatgpt-work-launch-and-scrambles-to-fix-ux-and-costs
 - acquisition_channel: aihot
@@ -1120,67 +955,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-021｜Hitachi Announces Strategic Partnership With Anthropic to Strengthen "Lumada 3.0" Through Frontier AI – Company Announcement - FT.com
+## P-018｜Tiered Network Policy: Scaling Kubernetes Security
 
-- raw_ref: R-021
-- raw_original_id: https://markets.ft.com/data/announce/detail?dockey=600-202605182000BIZWIRE_USPRX____20260518_BW301548-1
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-021-hitachi-announces-strategic-partnership-with-anthropic-to-strengthen-l.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-021-hitachi-announces-strategic-partnership-with-anthropic-to-strengthen-l.json`
-- source: keyword search / Anysearch｜https://markets.ft.com/data/announce/detail?dockey=600-202605182000BIZWIRE_USPRX____20260518_BW301548-1
-- source_url: https://markets.ft.com/data/announce/detail?dockey=600-202605182000BIZWIRE_USPRX____20260518_BW301548-1
-- acquisition_channel: gdelt
-- search_intent: not_applicable
-- search_path: not_applicable
-- source_type: media
-- source_level: A
-- source_level_role: traceability_only_not_value_score_or_core_gate
-- evidence_object_type: case_or_customer
-- evidence_object_usable: true
-- event_evidence: true
-- index_only_evidence: false
-- evidence_strength: rich_evidence
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
-- acquisition_source_level: not_applicable
-- research_status: not_research
-- local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
-- extraction_method: content-container
-- readability_score: 97
-- has_full_text: true
-- source_volatility: low
-- community_name: not_applicable
-- capture_scope: article_text
-- evidence_level: core_evidence_candidate
-- source_role: primary_source
-- origin_fetch_status: not_applicable
-- raw_status: pooled
-- pool_routes: watchlist
-- raw_content_hash: 238814da834a2d6d
-- raw_full_text_hash: 238814da834a2d6d
-- raw_semantic_hash: 8dbdc2367e7dd617
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"238814da834a2d6d","missing":[]}
-- degradation_reasons: none
-- importance_type: important_vertical_solution
-- importance_score: 5
-- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
-- theme: 成熟信号
-- keyword_group: mature-commercial-signal
-- score: 6.199999999999999
-- raw_capture_priority: 19.2
-- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
-- key_excerpts: [{"type":"quote","text":"Hitachi Announces Strategic Partnership With Anthropic to Strengthen \"Lumada 3.0\" Through Frontier AI – Company Announcement - FT.com # Company Announcements Hitachi Ltd ### Hitachi Announces Strategic Partnership With Anthropic to Strengthen \"Lumada 3.0\" Through Frontier AI https://markets.ft.c...","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Hitachi Ltd Hitachi Announces Strategic Partnership With Anthropic to Strengthen \"Lumada 3.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"quote","text":"0\" Through Frontier AI Twitter Facebook LinkedIn GooglePlus Pinterest May 19 2026 Combining Hitachi ’s 110+ years of domain expertise with frontier AI will advance safe real-world deployment of physical AI and strengthen customer AI transformation Deploying advanced AI across all business processes for approximately 290,000 employees to enhance productivity at scale Developing 100,000 AI professional talent and co-creating new HMAX solutions leveraging proven outcomes from Hitachi’s “Customer Zero” approach Establi","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"quote","text":"(TSE:6501, \" Hitachi \") today announced a strategic partnership with Anthropic PBC (“Anthropic”), a global leader in AI safety research and trusted AI models, to further strengthen the “Lumada 3.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"0” business model.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"As artificial intelligence evolves beyond cyberspace to directly influence real-world systems—otherwise known as physical AI—demand is rapidly growing for the safe and seamless deployment of AI in mission-critical environments.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["Hitachi Ltd Hitachi Announces Strategic Partnership With Anthropic to Strengthen \"Lumada 3.","0” business model."],"case_details":["As artificial intelligence evolves beyond cyberspace to directly influence real-world systems—otherwise known as physical AI—demand is rapidly growing for the safe and seamless deployment of AI in mission-critical environments."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
-- missing_information: none
-- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
-- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
-
-## P-022｜Tiered Network Policy: Scaling Kubernetes Security
-
-- raw_ref: R-022
+- raw_ref: R-018
 - raw_original_id: https://www.tigera.io/?p=69182
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-022-tiered-network-policy-scaling-kubernetes-security.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-022-tiered-network-policy-scaling-kubernetes-security.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-018-tiered-network-policy-scaling-kubernetes-security.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-018-tiered-network-policy-scaling-kubernetes-security.json`
 - source: Tigera Blog (Calico / AI Security)｜https://www.tigera.io/blog/tiered-network-policy-scaling-kubernetes-security/
 - source_url: https://www.tigera.io/blog/tiered-network-policy-scaling-kubernetes-security/
 - acquisition_channel: rss-feed
@@ -1230,12 +1010,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-023｜谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放
+## P-019｜谷歌 Voice 推出个人付费套餐：每月 10 美元起，Gemini 纪要功能首次下放
 
-- raw_ref: R-023
+- raw_ref: R-019
 - raw_original_id: cmrga8hva008xih0eb7epl9pi
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-023-谷歌-voice-推出个人付费套餐-每月-10-美元起-gemini-纪要功能首次下放.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-023-谷歌-voice-推出个人付费套餐-每月-10-美元起-gemini-纪要功能首次下放.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-019-谷歌-voice-推出个人付费套餐-每月-10-美元起-gemini-纪要功能首次下放.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-019-谷歌-voice-推出个人付费套餐-每月-10-美元起-gemini-纪要功能首次下放.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/573.htm
 - source_url: https://www.ithome.com/0/975/573.htm
 - acquisition_channel: aihot
@@ -1285,12 +1065,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-024｜特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等
+## P-020｜特斯拉披露 Cybercab 更多细节：全新超高效动力总成、4680 电池、低压电气架构等
 
-- raw_ref: R-024
+- raw_ref: R-020
 - raw_original_id: cmrh6ia5v00tobir7y8n688a0
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-024-特斯拉披露-cybercab-更多细节-全新超高效动力总成-4680-电池-低压电气架构等.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-024-特斯拉披露-cybercab-更多细节-全新超高效动力总成-4680-电池-低压电气架构等.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-020-特斯拉披露-cybercab-更多细节-全新超高效动力总成-4680-电池-低压电气架构等.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-020-特斯拉披露-cybercab-更多细节-全新超高效动力总成-4680-电池-低压电气架构等.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/661.htm
 - source_url: https://www.ithome.com/0/975/661.htm
 - acquisition_channel: aihot
@@ -1340,12 +1120,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-025｜OpenAI 招聘家庭产品经理，拓展家庭用户市场
+## P-021｜OpenAI 招聘家庭产品经理，拓展家庭用户市场
 
-- raw_ref: R-025
+- raw_ref: R-021
 - raw_original_id: cmrgzykqg00jbbid4wrrzszz6
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-025-openai-招聘家庭产品经理-拓展家庭用户市场.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-025-openai-招聘家庭产品经理-拓展家庭用户市场.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-021-openai-招聘家庭产品经理-拓展家庭用户市场.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-021-openai-招聘家庭产品经理-拓展家庭用户市场.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/633.htm
 - source_url: https://www.ithome.com/0/975/633.htm
 - acquisition_channel: aihot
@@ -1395,67 +1175,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-026｜OpenAI&#039;s GPT-5.6 Sol autonomously post-trained the smaller Luna model with a &quot;fairly underspecified prompt&quot;
+## P-022｜努比亚倪飞谈 AI 智能体手机：下半场从"功能叠加"走向"原生智能体"
 
-- raw_ref: R-026
-- raw_original_id: https://the-decoder.com/?p=37610
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-026-openai-039-s-gpt-5-6-sol-autonomously-post-trained-the-smaller-luna-mo.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-026-openai-039-s-gpt-5-6-sol-autonomously-post-trained-the-smaller-luna-mo.json`
-- source: The Decoder AI News｜https://the-decoder.com/openais-gpt-5-6-sol-autonomously-post-trained-the-smaller-luna-model-with-a-fairly-underspecified-prompt/
-- source_url: https://the-decoder.com/openais-gpt-5-6-sol-autonomously-post-trained-the-smaller-luna-model-with-a-fairly-underspecified-prompt/
-- acquisition_channel: rss-feed
-- search_intent: not_applicable
-- search_path: not_applicable
-- source_type: media
-- source_level: A
-- source_level_role: traceability_only_not_value_score_or_core_gate
-- evidence_object_type: event
-- evidence_object_usable: true
-- event_evidence: true
-- index_only_evidence: false
-- evidence_strength: rich_evidence
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
-- acquisition_source_level: M
-- research_status: not_research
-- local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
-- extraction_method: content-container
-- readability_score: 88
-- has_full_text: true
-- source_volatility: low
-- community_name: not_applicable
-- capture_scope: article_text
-- evidence_level: core_evidence_candidate
-- source_role: resolved_original_source
-- origin_fetch_status: not_applicable
-- raw_status: pooled
-- pool_routes: core_pool
-- raw_content_hash: c49b8620aa6bccbe
-- raw_full_text_hash: c49b8620aa6bccbe
-- raw_semantic_hash: 4c087f9f44b3a014
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c49b8620aa6bccbe","missing":[]}
-- degradation_reasons: none
-- importance_type: important_product_or_service
-- importance_score: 5
-- supporting_signals: enterprise_ai_transformation_lens, adoption_context
-- theme: uncategorized
-- keyword_group: uncategorized
-- score: 5
-- raw_capture_priority: 18
-- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
-- key_excerpts: [{"type":"quote","text":"According to OpenAI, GPT-5.6 Sol independently fine-tuned the smaller Luna model, triggered by a single \"fairly under-specified prompt.\" In OpenAI's internal RSI benchmark for recursive self-improvement, Sol scores 16.2 points higher than GPT-5.5. OpenAI believes the \"automated researcher\" is within reach. The article OpenAI&#039;s GPT-5.6 Sol autonomously post-trained the smaller Luna model with a &quot;fairly underspecified prompt&quot; appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Ad Skip to content OpenAI's GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"6 Sol autonomously post-trained the smaller Luna model with a \"fairly underspecified prompt\" Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 10, 2026 Nano Banana Pro promtped by THE DECODER Key Points OpenAI's new AI model, GPT-5.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"6 Sol, is capable of independently optimizing smaller models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"According to the company, a brief prompt was sufficient for Sol to autonomously identify training configurations, select GPUs, and execute the post-training script for the Luna model.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"On a new internal benchmark measuring recursive self-improvement (RSI), the ability of a system to evolve on its own, GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
-- evidence_seed: {"company_actions":["Ad Skip to content OpenAI's GPT-5.","6 Sol, is capable of independently optimizing smaller models.","According to the company, a brief prompt was sufficient for Sol to autonomously identify training configurations, select GPUs, and execute the post-training script for the Luna model."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
-- missing_information: 没有具体客户或真实企业案例
-- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
-- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
-
-## P-027｜努比亚倪飞谈 AI 智能体手机：下半场从"功能叠加"走向"原生智能体"
-
-- raw_ref: R-027
+- raw_ref: R-022
 - raw_original_id: cmrh6ia5u00tnbir7kl5gqme5
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-027-努比亚倪飞谈-ai-智能体手机-下半场从-功能叠加-走向-原生智能体.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-027-努比亚倪飞谈-ai-智能体手机-下半场从-功能叠加-走向-原生智能体.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-022-努比亚倪飞谈-ai-智能体手机-下半场从-功能叠加-走向-原生智能体.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-022-努比亚倪飞谈-ai-智能体手机-下半场从-功能叠加-走向-原生智能体.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/662.htm
 - source_url: https://www.ithome.com/0/975/662.htm
 - acquisition_channel: aihot
@@ -1505,12 +1230,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-028｜特斯拉正开发 Grok 语音控制 FSD 功能
+## P-023｜特斯拉正开发 Grok 语音控制 FSD 功能
 
-- raw_ref: R-028
+- raw_ref: R-023
 - raw_original_id: cmrh6ia5v00trbir7o2idi9sy
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-028-特斯拉正开发-grok-语音控制-fsd-功能.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-028-特斯拉正开发-grok-语音控制-fsd-功能.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-023-特斯拉正开发-grok-语音控制-fsd-功能.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-023-特斯拉正开发-grok-语音控制-fsd-功能.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/658.htm
 - source_url: https://www.ithome.com/0/975/658.htm
 - acquisition_channel: aihot
@@ -1560,12 +1285,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-029｜GPT-5.6 上线之际，马斯克与奥尔特曼隔空"掐架"
+## P-024｜GPT-5.6 上线之际，马斯克与奥尔特曼隔空"掐架"
 
-- raw_ref: R-029
+- raw_ref: R-024
 - raw_original_id: cmrh27y7i013ibid4hyhb98zw
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-029-gpt-5-6-上线之际-马斯克与奥尔特曼隔空-掐架.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-029-gpt-5-6-上线之际-马斯克与奥尔特曼隔空-掐架.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-024-gpt-5-6-上线之际-马斯克与奥尔特曼隔空-掐架.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-024-gpt-5-6-上线之际-马斯克与奥尔特曼隔空-掐架.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/641.htm
 - source_url: https://www.ithome.com/0/975/641.htm
 - acquisition_channel: aihot
@@ -1596,10 +1321,10 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - origin_fetch_status: success
 - raw_status: pooled
 - pool_routes: core_pool
-- raw_content_hash: d9470a073d194dd5
-- raw_full_text_hash: d9470a073d194dd5
-- raw_semantic_hash: b48f704365346745
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d9470a073d194dd5","missing":[]}
+- raw_content_hash: 8037a444b928cce9
+- raw_full_text_hash: 8037a444b928cce9
+- raw_semantic_hash: 1ddbc7a138aa3ed1
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8037a444b928cce9","missing":[]}
 - degradation_reasons: none
 - importance_type: important_product_or_service
 - importance_score: 5
@@ -1609,18 +1334,18 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 7.699999999999999
 - raw_capture_priority: 17.2
 - usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
-- key_excerpts: [{"type":"funding","text":"GPT-5.6 上线之际，马斯克转发帖文称奥尔特曼\"把诈骗提升到一个全新的高度\"，并引用其\"我做这件事是因为我热爱\"的发言截图。奥尔特曼回应称马斯克\"向公开市场投资者炒作'短期建设太空数据中心'\"，并嘲讽称\"埃隆又开始对我念念不忘\"。马斯克反击称太空数据中心\"明年就要试飞\"，并指责对方\"窃取一家开源 AI 慈善机构\"。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"6 上线之际，马斯克再度和奥尔特曼隔空“掐架” - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"6 上线之际，马斯克再度和奥尔特曼隔空“掐架” 2026/7/12 8:14:08 来源： IT之家 作者： 潞源（实习） 责编： 潞源 评论： 感谢IT之家网友 Nuc_F 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 12 日消息，在 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"6 模型上线之际，AI 界的两大冤家 ——xAI CEO 埃隆 · 马斯克、OpenAI CEO 萨姆 · 奥尔特曼又开始了新一轮隔空“掐架”。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"埃隆 · 马斯克率先转发一则点名奥尔特曼的 X 平台帖文，并配文称：“他把诈骗提升到一个全新的高度。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["GPT-5.6 上线之际，马斯克转发帖文称奥尔特曼\"把诈骗提升到一个全新的高度\"，并引用其\"我做这件事是因为我热爱\"的发言截图。奥尔特曼回应称马斯克\"向公开市场投资者炒作'短期建设太空数据中心'\"，并嘲讽称\"埃隆又开始对我念念不忘\"。马斯克反击称太空数据中心\"明年就要试飞\"，并指责对方\"窃取一家开源 AI 慈善机构\"。","6 上线之际，马斯克再度和奥尔特曼隔空“掐架” 2026/7/12 8:14:08 来源： IT之家 作者： 潞源（实习） 责编： 潞源 评论： 感谢IT之家网友 Nuc_F 的线索投递！","IT之家 7 月 12 日消息，在 GPT-5."],"case_details":["6 上线之际，马斯克再度和奥尔特曼隔空“掐架” - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 GPT-5."],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: [{"type":"funding","text":"GPT-5.6 上线之际，马斯克转发帖文称奥尔特曼\"把诈骗提升到一个全新的高度\"，并引用其\"我做这件事是因为我热爱\"的发言截图。奥尔特曼回应称马斯克\"向公开市场投资者炒作'短期建设太空数据中心'\"，并嘲讽称\"埃隆又开始对我念念不忘\"。马斯克反击称太空数据中心\"明年就要试飞\"，并指责对方\"窃取一家开源 AI 慈善机构\"。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"6 上线之际，马斯克再度和奥尔特曼隔空“掐架” - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"6 上线之际，马斯克再度和奥尔特曼隔空“掐架” 2026/7/12 8:14:08 来源： IT之家 作者： 潞源（实习） 责编： 潞源 评论： 感谢IT之家网友 Nuc_F 、 不一样的体验 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 12 日消息，在 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"6 模型上线之际，AI 界的两大冤家 ——xAI CEO 埃隆 · 马斯克、OpenAI CEO 萨姆 · 奥尔特曼又开始了新一轮隔空“掐架”。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"埃隆 · 马斯克率先转发一则点名奥尔特曼的 X 平台帖文，并配文称：“他把诈骗提升到一个全新的高度。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["GPT-5.6 上线之际，马斯克转发帖文称奥尔特曼\"把诈骗提升到一个全新的高度\"，并引用其\"我做这件事是因为我热爱\"的发言截图。奥尔特曼回应称马斯克\"向公开市场投资者炒作'短期建设太空数据中心'\"，并嘲讽称\"埃隆又开始对我念念不忘\"。马斯克反击称太空数据中心\"明年就要试飞\"，并指责对方\"窃取一家开源 AI 慈善机构\"。","6 上线之际，马斯克再度和奥尔特曼隔空“掐架” 2026/7/12 8:14:08 来源： IT之家 作者： 潞源（实习） 责编： 潞源 评论： 感谢IT之家网友 Nuc_F 、 不一样的体验 的线索投递！","IT之家 7 月 12 日消息，在 GPT-5."],"case_details":["6 上线之际，马斯克再度和奥尔特曼隔空“掐架” - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 GPT-5."],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
 - missing_information: none
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-030｜消息称中兴系战略深度聚焦 AI 手机，常规产品线暂定正常迭代
+## P-025｜消息称中兴系战略深度聚焦 AI 手机，常规产品线暂定正常迭代
 
-- raw_ref: R-030
+- raw_ref: R-025
 - raw_original_id: cmrg3syhp00l5iha7owzfbvk1
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-030-消息称中兴系战略深度聚焦-ai-手机-常规产品线暂定正常迭代.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-030-消息称中兴系战略深度聚焦-ai-手机-常规产品线暂定正常迭代.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-025-消息称中兴系战略深度聚焦-ai-手机-常规产品线暂定正常迭代.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-025-消息称中兴系战略深度聚焦-ai-手机-常规产品线暂定正常迭代.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/478.htm
 - source_url: https://www.ithome.com/0/975/478.htm
 - acquisition_channel: aihot
@@ -1670,12 +1395,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-031｜Meta 发布 Muse Spark 1.1 模型
+## P-026｜Meta 发布 Muse Spark 1.1 模型
 
-- raw_ref: R-031
+- raw_ref: R-026
 - raw_original_id: cmrg4hpi400sviha7uyqdrc8s
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-031-meta-发布-muse-spark-1-1-模型.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-031-meta-发布-muse-spark-1-1-模型.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-026-meta-发布-muse-spark-1-1-模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-026-meta-发布-muse-spark-1-1-模型.json`
 - source: The Decoder：AI News（RSS）｜https://the-decoder.com/metas-muse-spark-1-1-outperforms-glm-5-2-in-coding-and-costs-slightly-less
 - source_url: https://the-decoder.com/metas-muse-spark-1-1-outperforms-glm-5-2-in-coding-and-costs-slightly-less
 - acquisition_channel: aihot
@@ -1725,67 +1450,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-032｜xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史
+## P-027｜别再让我去问LLM了：当"Ask Claude"成为拒绝深度交流的借口
 
-- raw_ref: R-032
-- raw_original_id: cmrhagju201pqbir7t0tnsgfy
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-032-xai-grok-build-cli-网络流量分析-上传仓库全部文件及-git-历史.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-032-xai-grok-build-cli-网络流量分析-上传仓库全部文件及-git-历史.json`
-- source: Hacker News 热门（buzzing.cc 中文翻译）｜https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547
-- source_url: https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547
-- acquisition_channel: aihot
-- search_intent: not_applicable
-- search_path: not_applicable
-- source_type: developer
-- source_level: B
-- source_level_role: traceability_only_not_value_score_or_core_gate
-- evidence_object_type: repo_readme_or_index
-- evidence_object_usable: false
-- event_evidence: false
-- index_only_evidence: true
-- evidence_strength: blocked
-- raw_qc_decision: allow_with_degradation
-- raw_qc_downstream_use: index_watchlist_or_feedback_only
-- acquisition_source_level: M
-- research_status: not_research
-- local_snapshot_status: fetched-readable-text-main
-- extraction_quality: high
-- extraction_method: main
-- readability_score: 88
-- has_full_text: true
-- source_volatility: high
-- community_name: Hacker News 热门（buzzing.cc 中文翻译）
-- capture_scope: article_text
-- evidence_level: user_feedback_signal
-- source_role: resolved_original_source
-- origin_fetch_status: success
-- raw_status: indexed
-- pool_routes: index_only
-- raw_content_hash: ee85f1f5b841d765
-- raw_full_text_hash: 18b89c71057f56c3
-- raw_semantic_hash: d8053280febc6c1e
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"18b89c71057f56c3","missing":[]}
-- degradation_reasons: index_only_or_directory_page
-- importance_type: important_product_or_service
-- importance_score: 5
-- supporting_signals: commercial_or_risk_context
-- theme: 开发者生态信号
-- keyword_group: developer-ecosystem-signal
-- score: 3.5
-- raw_capture_priority: 16.5
-- usable_for: index_only
-- key_excerpts: [{"type":"number","text":"对 xAI 官方 Grok Build 编码 CLI（grok 0.2.93）的网络流量分析显示，该工具在消费者登录后会向 xAI 发送三类数据：一是它读取的文件内容（包括 .env 密钥文件）以明文形式通过 POST /v1/responses 传输，并同时打包成 session_state 存档通过 POST /v1/storage 上传并获 HTTP 200 确认；二是整个仓库的全部文件内容及 git 历史，独立于 AI 智能体实际读取的文件--即使提示\"不要读取任何文件\"，Grok 仍将整个仓库作为 git bundle 上传至 Google Cloud Storage 的 grok-code-session-traces 存储桶；三是该上传机制默认开启，且关闭\"改进模型\"设置不会禁用（/v1/settings 仍返回 trace_upload_enabled： true）。在 12 GB 仓库测试中，/v1/storage 传输了 5.10 GiB 数据，而模型对话通道仅传输 192 KB，比例约 27，800 倍。分析未证明 xAI 使用这些数据进行训练，但证实了数据被传输、接收并存储。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Instantly share code, notes, and snippets.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"cereblab / grok-build-cli-wire-analysis.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"md Created July 10, 2026 02:13 Show Gist options Download ZIP Star 11 ( 11 ) You must be signed in to star a gist Fork ( 1 ) You must be signed in to fork a gist Embed Select an option Embed Embed this gist in your website.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Share Copy sharable link for this gist.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Clone via HTTPS Clone using the web URL.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
-- evidence_seed: {"company_actions":["Instantly share code, notes, and snippets.","cereblab / grok-build-cli-wire-analysis.","md Created July 10, 2026 02:13 Show Gist options Download ZIP Star 11 ( 11 ) You must be signed in to star a gist Fork ( 1 ) You must be signed in to fork a gist Embed Select an option Embed Embed this gist in your website."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
-- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例
-- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
-- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
-
-## P-033｜别再让我去问LLM了：当"Ask Claude"成为拒绝深度交流的借口
-
-- raw_ref: R-033
+- raw_ref: R-027
 - raw_original_id: cmrh1vtl500ubbid49w9di42p
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-033-别再让我去问llm了-当-ask-claude-成为拒绝深度交流的借口.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-033-别再让我去问llm了-当-ask-claude-成为拒绝深度交流的借口.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-027-别再让我去问llm了-当-ask-claude-成为拒绝深度交流的借口.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-027-别再让我去问llm了-当-ask-claude-成为拒绝深度交流的借口.json`
 - source: Hacker News 热门（buzzing.cc 中文翻译）｜https://blog.yaelwrites.com/stop-telling-me-to-ask-an-llm
 - source_url: https://blog.yaelwrites.com/stop-telling-me-to-ask-an-llm
 - acquisition_channel: aihot
@@ -1835,12 +1505,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
 
-## P-034｜研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发
+## P-028｜研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发
 
-- raw_ref: R-034
+- raw_ref: R-028
 - raw_original_id: cmrgmylg702eaih2e1e9hhfe4
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-034-研究-博科圣地已使用chatgpt-claude等主流ai聊天机器人用于袭击策划与武器开发.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-034-研究-博科圣地已使用chatgpt-claude等主流ai聊天机器人用于袭击策划与武器开发.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-028-研究-博科圣地已使用chatgpt-claude等主流ai聊天机器人用于袭击策划与武器开发.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-028-研究-博科圣地已使用chatgpt-claude等主流ai聊天机器人用于袭击策划与武器开发.json`
 - source: The Decoder：AI News（RSS）｜https://the-decoder.com/terrorist-groups-are-using-every-major-ai-chatbot-for-attack-planning-and-weapons-development
 - source_url: https://the-decoder.com/terrorist-groups-are-using-every-major-ai-chatbot-for-attack-planning-and-weapons-development
 - acquisition_channel: aihot
@@ -1890,12 +1560,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-035｜《AI 2040》与"智能崇拜"：作者反思从硬起飞信仰到现实琐碎细节的转变
+## P-029｜《AI 2040》与"智能崇拜"：作者反思从硬起飞信仰到现实琐碎细节的转变
 
-- raw_ref: R-035
+- raw_ref: R-029
 - raw_original_id: cmrgs8ij10016ihpoj82tpqa2
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-035-ai-2040-与-智能崇拜-作者反思从硬起飞信仰到现实琐碎细节的转变.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-035-ai-2040-与-智能崇拜-作者反思从硬起飞信仰到现实琐碎细节的转变.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-029-ai-2040-与-智能崇拜-作者反思从硬起飞信仰到现实琐碎细节的转变.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-029-ai-2040-与-智能崇拜-作者反思从硬起飞信仰到现实琐碎细节的转变.json`
 - source: Hacker News 热门（buzzing.cc 中文翻译）｜https://geohot.github.io//blog/jekyll/update/2026/07/11/ai-2040.html
 - source_url: https://geohot.github.io//blog/jekyll/update/2026/07/11/ai-2040.html
 - acquisition_channel: aihot
@@ -1945,12 +1615,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
 
-## P-036｜TileGym GPU 编程教程：从cuTile与Triton内核到Flash Attention
+## P-030｜TileGym GPU 编程教程：从cuTile与Triton内核到Flash Attention
 
-- raw_ref: R-036
+- raw_ref: R-030
 - raw_original_id: cmrh1z84h00xrbid4mtrxipe7
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-036-tilegym-gpu-编程教程-从cutile与triton内核到flash-attention.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-036-tilegym-gpu-编程教程-从cutile与triton内核到flash-attention.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-030-tilegym-gpu-编程教程-从cutile与triton内核到flash-attention.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-030-tilegym-gpu-编程教程-从cutile与triton内核到flash-attention.json`
 - source: MarkTechPost（RSS）｜https://www.marktechpost.com/2026/07/11/a-coding-guide-to-nvidias-tile-based-gpu-programming-from-cutile-and-triton-kernels-to-flash-attention
 - source_url: https://www.marktechpost.com/2026/07/11/a-coding-guide-to-nvidias-tile-based-gpu-programming-from-cutile-and-triton-kernels-to-flash-attention
 - acquisition_channel: aihot
@@ -2000,12 +1670,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-037｜KKAzilen/agentic-ai-lending-workflow: A practical reference ... - GitHub
+## P-031｜KKAzilen/agentic-ai-lending-workflow: A practical reference ... - GitHub
 
-- raw_ref: R-037
+- raw_ref: R-031
 - raw_original_id: https://github.com/KKAzilen/agentic-ai-lending-workflow
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-037-kkazilen-agentic-ai-lending-workflow-a-practical-reference-github.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-037-kkazilen-agentic-ai-lending-workflow-a-practical-reference-github.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-031-kkazilen-agentic-ai-lending-workflow-a-practical-reference-github.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-031-kkazilen-agentic-ai-lending-workflow-a-practical-reference-github.json`
 - source: keyword search / Anysearch｜https://github.com/KKAzilen/agentic-ai-lending-workflow
 - source_url: https://github.com/KKAzilen/agentic-ai-lending-workflow
 - acquisition_channel: keyword-search
@@ -2055,12 +1725,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-038｜UiPath's venture arm backs workflow automation startup AirSlate
+## P-032｜UiPath's venture arm backs workflow automation startup AirSlate
 
-- raw_ref: R-038
+- raw_ref: R-032
 - raw_original_id: https://techcrunch.com/2022/06/16/uipaths-new-venture-arm-backs-workflow-automation-startup-airslate/
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-038-uipath-s-venture-arm-backs-workflow-automation-startup-airslate.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-038-uipath-s-venture-arm-backs-workflow-automation-startup-airslate.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-032-uipath-s-venture-arm-backs-workflow-automation-startup-airslate.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-032-uipath-s-venture-arm-backs-workflow-automation-startup-airslate.json`
 - source: keyword search / Anysearch｜https://techcrunch.com/2022/06/16/uipaths-new-venture-arm-backs-workflow-automation-startup-airslate/
 - source_url: https://techcrunch.com/2022/06/16/uipaths-new-venture-arm-backs-workflow-automation-startup-airslate/
 - acquisition_channel: keyword-search
@@ -2091,10 +1761,10 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - origin_fetch_status: not_applicable
 - raw_status: pooled
 - pool_routes: index_only
-- raw_content_hash: b8d929ddd4035d55
-- raw_full_text_hash: b8d929ddd4035d55
+- raw_content_hash: 19a9579cc822fde2
+- raw_full_text_hash: 19a9579cc822fde2
 - raw_semantic_hash: a308f4c7998e70e3
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b8d929ddd4035d55","missing":[]}
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"19a9579cc822fde2","missing":[]}
 - degradation_reasons: none
 - importance_type: supporting_signal
 - importance_score: 2
@@ -2110,12 +1780,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-039｜阶跃星辰发布 Step Edge 端侧模型全家桶
+## P-033｜阶跃星辰发布 Step Edge 端侧模型全家桶
 
-- raw_ref: R-039
+- raw_ref: R-033
 - raw_original_id: cmrhateq601yobir7q4uinx9c
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-039-阶跃星辰发布-step-edge-端侧模型全家桶.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-039-阶跃星辰发布-step-edge-端侧模型全家桶.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-033-阶跃星辰发布-step-edge-端侧模型全家桶.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-033-阶跃星辰发布-step-edge-端侧模型全家桶.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/681.htm
 - source_url: https://www.ithome.com/0/975/681.htm
 - acquisition_channel: aihot
@@ -2165,29 +1835,194 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-040｜Cognizant and Rubrik expand alliance to give enterprises control over autonomous AI in production – Company Announcement - FT.com
+## P-034｜Adding a Checkbox &amp; Download Button to a FastAPI-HTML app
 
-- raw_ref: R-040
-- raw_original_id: https://markets.ft.com/data/announce/full?dockey=600-202606161000PR_NEWS_USPRX____NY84494-1
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-040-cognizant-and-rubrik-expand-alliance-to-give-enterprises-control-over-.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-040-cognizant-and-rubrik-expand-alliance-to-give-enterprises-control-over-.json`
-- source: keyword search / Anysearch｜https://markets.ft.com/data/announce/full?dockey=600-202606161000PR_NEWS_USPRX____NY84494-1
-- source_url: https://markets.ft.com/data/announce/full?dockey=600-202606161000PR_NEWS_USPRX____NY84494-1
-- acquisition_channel: gdelt
+- raw_ref: R-034
+- raw_original_id: https://eugeneyan.com//writing/fastapi-html-checkbox-download/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-034-adding-a-checkbox-amp-download-button-to-a-fastapi-html-app.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-034-adding-a-checkbox-amp-download-button-to-a-fastapi-html-app.json`
+- source: Eugene Yan's Blog｜https://eugeneyan.com//writing/fastapi-html-checkbox-download/
+- source_url: https://eugeneyan.com//writing/fastapi-html-checkbox-download/
+- acquisition_channel: rss-feed
 - search_intent: not_applicable
 - search_path: not_applicable
-- source_type: media
-- source_level: A
+- source_type: builder
+- source_level: B
 - source_level_role: traceability_only_not_value_score_or_core_gate
-- evidence_object_type: case_or_customer
-- evidence_object_usable: true
-- event_evidence: true
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
 - index_only_evidence: false
-- evidence_strength: rich_evidence
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
-- acquisition_source_level: not_applicable
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
 - research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: fef2d91698818d31
+- raw_full_text_hash: fef2d91698818d31
+- raw_semantic_hash: 5a8facb45b75e4e7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fef2d91698818d31","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Updating our FastAPI app to let users select options and download results.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Adding a Checkbox & Download Button to a FastAPI-HTML app eugeneyan Start Here Writing Speaking Prototyping About Adding a Checkbox & Download Button to a FastAPI-HTML app engineering python til · 3 min read In a previous post , I shared about how to build a simple HTML app using FastAPI .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Here, we’ll extend that app by adding functionality for checkboxes and a download button.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Try it out with the GitHub repo here: fastapi-html Let’s allow users to alter results To demonstrate this, we’ll create a checkbox to multiply the input number by two, before spelling it out.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Here’s the HTML for it, where we include a new input of type checkbox and its label.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Note the name ( multiply_by_2 ) and value ( True ) params—we’ll use it later in the post request.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Updating our FastAPI app to let users select options and download results.","Adding a Checkbox & Download Button to a FastAPI-HTML app eugeneyan Start Here Writing Speaking Prototyping About Adding a Checkbox & Download Button to a FastAPI-HTML app engineering python til · 3 min read In a previous post , I shared about how to build a simple HTML app using FastAPI .","Here, we’ll extend that app by adding functionality for checkboxes and a download button."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-035｜How to Set Up a HTML App with FastAPI, Jinja, Forms &amp; Templates
+
+- raw_ref: R-035
+- raw_original_id: https://eugeneyan.com//writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-035-how-to-set-up-a-html-app-with-fastapi-jinja-forms-amp-templates.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-035-how-to-set-up-a-html-app-with-fastapi-jinja-forms-amp-templates.json`
+- source: Eugene Yan's Blog｜https://eugeneyan.com//writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/
+- source_url: https://eugeneyan.com//writing/how-to-set-up-html-app-with-fastapi-jinja-forms-templates/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 9e0a59409b82f8db
+- raw_full_text_hash: 9e0a59409b82f8db
+- raw_semantic_hash: 00a3f6ba42272e2a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9e0a59409b82f8db","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"I couldn&apos;t find any guides on serving HTML with FastAPI, thus I wrote this to plug the hole on the internet.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates eugeneyan Start Here Writing Speaking Prototyping About How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates engineering python til · 3 min read I usually use Flask to build and deploy REST/web apps.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Flask is simple to use and apps are easy to spin up with minimal code.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Today, I decided to try FastAPI for my new web app, inspired by @tiangolo ’s recent talk .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The switch was easier than expected.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"FastAPI has great documentation and this article by @amitness was useful.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["I couldn&apos;t find any guides on serving HTML with FastAPI, thus I wrote this to plug the hole on the internet.","How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates eugeneyan Start Here Writing Speaking Prototyping About How to Set Up a HTML App with FastAPI, Jinja, Forms & Templates engineering python til · 3 min read I usually use Flask to build and deploy REST/web apps.","Flask is simple to use and apps are easy to spin up with minimal code."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-036｜How to Update a GitHub Profile README Automatically
+
+- raw_ref: R-036
+- raw_original_id: https://eugeneyan.com//writing/how-to-update-github-profile-readme-automatically/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-036-how-to-update-a-github-profile-readme-automatically.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-036-how-to-update-a-github-profile-readme-automatically.json`
+- source: Eugene Yan's Blog｜https://eugeneyan.com//writing/how-to-update-github-profile-readme-automatically/
+- source_url: https://eugeneyan.com//writing/how-to-update-github-profile-readme-automatically/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 83
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 1d44de2756e07108
+- raw_full_text_hash: 1d44de2756e07108
+- raw_semantic_hash: 40923fec6264cdfa
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1d44de2756e07108","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"I wanted to add my recent writing to my GitHub Profile README but was too lazy to do manual updates.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"How to Update a GitHub Profile README Automatically eugeneyan Start Here Writing Speaking Prototyping About How to Update a GitHub Profile README Automatically engineering python til · 3 min read Today I learnt how to set up my GitHub profile README to automatically update with the latest writing from this site.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It’s now set to run every day at midnight.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It’s nothing too complex.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Simon Willison shared how to do this with GitHub Actions and it seemed like a fun afternoon project (and it was).","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"And I thought an hour or two of work would save hours of future manual updates.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["I wanted to add my recent writing to my GitHub Profile README but was too lazy to do manual updates.","How to Update a GitHub Profile README Automatically eugeneyan Start Here Writing Speaking Prototyping About How to Update a GitHub Profile README Automatically engineering python til · 3 min read Today I learnt how to set up my GitHub profile README to automatically update with the latest writing from this site.","It’s now set to run every day at midnight."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-037｜My Notes From Spark+AI Summit 2020 (Application-Specific Talks)
+
+- raw_ref: R-037
+- raw_original_id: https://eugeneyan.com//writing/notes-from-sparkai-summit-application-specific/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-037-my-notes-from-spark-ai-summit-2020-application-specific-talks.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-037-my-notes-from-spark-ai-summit-2020-application-specific-talks.json`
+- source: Eugene Yan's Blog｜https://eugeneyan.com//writing/notes-from-sparkai-summit-application-specific/
+- source_url: https://eugeneyan.com//writing/notes-from-sparkai-summit-application-specific/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: formal_report
 - local_snapshot_status: fetched-readable-text-content-container
 - extraction_quality: high
 - extraction_method: content-container
@@ -2196,45 +2031,155 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_volatility: low
 - community_name: not_applicable
 - capture_scope: article_text
-- evidence_level: core_evidence_candidate
-- source_role: primary_source
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
 - origin_fetch_status: not_applicable
-- raw_status: pooled
-- pool_routes: watchlist
-- raw_content_hash: 5892aead9d3b17bb
-- raw_full_text_hash: 5892aead9d3b17bb
-- raw_semantic_hash: f82e34518fae4e37
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5892aead9d3b17bb","missing":[]}
-- degradation_reasons: none
-- importance_type: important_vertical_solution
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 1b2ae2df1b2a5cd1
+- raw_full_text_hash: 1b2ae2df1b2a5cd1
+- raw_semantic_hash: e89601b24bdaeac6
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1b2ae2df1b2a5cd1","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_product_or_service
 - importance_score: 5
-- supporting_signals: ai_hardware_lens, commercial_or_risk_context, adoption_context
-- theme: 技术迭代信号
-- keyword_group: technical-iteration-signal
-- score: 2
-- raw_capture_priority: 15
-- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
-- key_excerpts: [{"type":"product_update","text":"Cognizant and Rubrik expand alliance to give enterprises control over autonomous AI in production – Company Announcement - FT.com Cognizant Technology Solutions Corp ### Cognizant and Rubrik expand alliance to give enterprises control over autonomous AI in production Jun 16 2026 15:00 BST - As a...","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Cognizant Technology Solutions Corp Cognizant and Rubrik expand alliance to give enterprises control over autonomous AI in production Jun 16 2026 15:00 BST As a launch partner for Rubrik Agent Cloud, Cognizant intends to be one of the first global systems integrators to operationalize the offering, embedding it as a governance layer within Cognizant Neuro AI and AI Factory The aim is to give enterprises visibility into agent actions, real-time policy enforcement, and the ability to reverse unintended agent activity","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":", June 16, 2026 /PRNewswire/ -- Cognizant (Nasdaq: CTSH) announced an expanded strategic alliance with Rubrik to help enterprises run autonomous AI safely at scale.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"As a launch partner for Rubrik's Project Hourglass, an alliance with leading Global Systems Integrators (GSIs) to deliver agentic resilience for enterprise AI coding agents, Cognizant intends to be one of the first global systems integrators to operationalize the offering as a governance layer within its delivery platforms.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"Enterprises are moving agentic AI from pilots into production, where AI agents increasingly write code, move data and act on systems with varying degrees of human oversight.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In tandem, the challenge enterprises face is shifting away from building agents and towards governing them.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
-- evidence_seed: {"company_actions":["Cognizant and Rubrik expand alliance to give enterprises control over autonomous AI in production – Company Announcement - FT.com Cognizant Technology Solutions Corp ### Cognizant and Rubrik expand alliance to give enterprises control over autonomous AI in production Jun 16 2026 15:00 BST - As a...","Cognizant Technology Solutions Corp Cognizant and Rubrik expand alliance to give enterprises control over autonomous AI in production Jun 16 2026 15:00 BST As a launch partner for Rubrik Agent Cloud, Cognizant intends to be one of the first global systems integrators to operationalize the offering, embedding it as a governance layer within Cognizant Neuro AI and AI Factory The aim is to give enterprises visibility into agent actions, real-time policy enforcement, and the ability to reverse unintended agent activity",", June 16, 2026 /PRNewswire/ -- Cognizant (Nasdaq: CTSH) announced an expanded strategic alliance with Rubrik to help enterprises run autonomous AI safely at scale."],"case_details":["Enterprises are moving agentic AI from pilots into production, where AI agents increasingly write code, move data and act on systems with varying degrees of human oversight."],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
-- missing_information: none
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Part II of the previous write-up, this time on applications and frameworks of Spark in production","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"To follow up with the previous write-up on application-agnostic talks, here’s my notes on some application-specific sessions.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The previous write-up largely focused on deep learning best practices and reflects the challenges people are facing now.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"This write-up focuses on data engineering (frameworks, data quality) and reflects the maturity of Spark in production, with organizations sharing how they apply it effectively.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"We also have two interesting talks on unsupervised learning and reinforcement learning.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Table of Contents Airbnb’s Zipline, a feature engineering framework Airbnb’s Sputnik, a data engineering framework Gojek’s Feast, a feature store for end-to-end machine learning Netflix’s approach to data quality via statistics and swim lanes LinkedIn’s approach to preventing abuse via unsupervised learning Zynga’s approach to personalisation via reinforcement learning Zipline: Declarative Feature Engineering (24 June) Nikhil Simha, Senior Engineer at Airbnb’s ML Infra, shared about Zipline (similar talk at Strata ","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Part II of the previous write-up, this time on applications and frameworks of Spark in production","To follow up with the previous write-up on application-agnostic talks, here’s my notes on some application-specific sessions.","The previous write-up largely focused on deep learning best practices and reflects the challenges people are facing now."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-041｜llm 0.31.1
+## P-038｜My Notes From Spark+AI Summit 2020 (Application-Agnostic Talks)
 
-- raw_ref: R-041
-- raw_original_id: https://simonwillison.net/2026/Jul/9/llm/#atom-everything
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-041-llm-0-31-1.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-041-llm-0-31-1.json`
-- source: Simon Willison's Blog｜https://simonwillison.net/2026/Jul/9/llm/#atom-everything
-- source_url: https://simonwillison.net/2026/Jul/9/llm/#atom-everything
+- raw_ref: R-038
+- raw_original_id: https://eugeneyan.com//writing/notes-from-sparkai-summit-application-agnostic/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-038-my-notes-from-spark-ai-summit-2020-application-agnostic-talks.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-038-my-notes-from-spark-ai-summit-2020-application-agnostic-talks.json`
+- source: Eugene Yan's Blog｜https://eugeneyan.com//writing/notes-from-sparkai-summit-application-agnostic/
+- source_url: https://eugeneyan.com//writing/notes-from-sparkai-summit-application-agnostic/
 - acquisition_channel: rss-feed
 - search_intent: not_applicable
 - search_path: not_applicable
 - source_type: builder
-- source_level: S
+- source_level: B
 - source_level_role: traceability_only_not_value_score_or_core_gate
-- evidence_object_type: changelog_or_release
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: formal_report
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: b1b8db789aad0ba6
+- raw_full_text_hash: b1b8db789aad0ba6
+- raw_semantic_hash: b94623b0e5e2c9a9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b1b8db789aad0ba6","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: viewpoint
+- key_excerpts: [{"type":"company_action","text":"Sharing my notes &amp; practical knowledge from the conference for people who don&apos;t have the time.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Spark+AI Summit 2020 took place on 24-26 June.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I’m only halfway through and it’s filled with gems of practical knowledge.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Figuring out which talks to attend can be overwhelming though.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"For example, 24th June has close to 100 sessions, not including keynotes and forums.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"ctrl+f on the following gives us the following matches: “beginner” : 4 “intermediate” : 56 “advanced” : 7 “sponsored” : 24 “ask me anything” : 6 Most people don’t have the time to sift through and attend these talks.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Sharing my notes &amp; practical knowledge from the conference for people who don&apos;t have the time.","Spark+AI Summit 2020 took place on 24-26 June.","I’m only halfway through and it’s filled with gems of practical knowledge."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-039｜Product Categorization API Part 3: Creating an API
+
+- raw_ref: R-039
+- raw_original_id: https://eugeneyan.com//writing/product-categorization-api-part-3-creating-an-api/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-039-product-categorization-api-part-3-creating-an-api.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-039-product-categorization-api-part-3-creating-an-api.json`
+- source: Eugene Yan's Blog｜https://eugeneyan.com//writing/product-categorization-api-part-3-creating-an-api/
+- source_url: https://eugeneyan.com//writing/product-categorization-api-part-3-creating-an-api/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 96
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 4c175be37117a33a
+- raw_full_text_hash: 4c175be37117a33a
+- raw_semantic_hash: acd20c15e6336e31
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4c175be37117a33a","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"Or how to put machine learning models into production.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"funding","text":"This post is part 3—and the last—of the series on building a product classification API.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The API is available for demo here .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Part 1 and 2 are available here and here .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"( Github repositiory ) Update: API discontinued to save on cloud cost.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In part 1, we focused on acquiring the data, and cleaning and formatting the categories.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Or how to put machine learning models into production.","This post is part 3—and the last—of the series on building a product classification API.","The API is available for demo here ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-040｜Product Classification API Part 2: Data Preparation
+
+- raw_ref: R-040
+- raw_original_id: https://eugeneyan.com//writing/product-categorization-api-part-2-data-preparation/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-040-product-classification-api-part-2-data-preparation.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-040-product-classification-api-part-2-data-preparation.json`
+- source: Eugene Yan's Blog｜https://eugeneyan.com//writing/product-categorization-api-part-2-data-preparation/
+- source_url: https://eugeneyan.com//writing/product-categorization-api-part-2-data-preparation/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
@@ -2244,9 +2189,9 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-body-visible-text
-- extraction_quality: medium
+- extraction_quality: high
 - extraction_method: body-visible-text
-- readability_score: 43
+- readability_score: 85
 - has_full_text: true
 - source_volatility: low
 - community_name: not_applicable
@@ -2255,32 +2200,582 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: not_applicable
 - raw_status: pooled
-- pool_routes: core_pool
-- raw_content_hash: 1929c009535126c1
-- raw_full_text_hash: 1929c009535126c1
-- raw_semantic_hash: 4d7fadefe7a9048b
-- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1929c009535126c1","missing":[]}
+- pool_routes: watchlist
+- raw_content_hash: 92ca6aa67422daee
+- raw_full_text_hash: 92ca6aa67422daee
+- raw_semantic_hash: f1d63bbb2f1119f2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"92ca6aa67422daee","missing":[]}
 - degradation_reasons: none
-- importance_type: important_product_or_service
+- importance_type: important_market_structure
 - importance_score: 5
 - supporting_signals: none
 - theme: uncategorized
 - keyword_group: uncategorized
-- score: 5
-- raw_capture_priority: 14.5
-- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
-- key_excerpts: [{"type":"quote","text":"&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=\"https://github.com/simonw/llm/releases/tag/0.31.1\"&gt;llm 0.31.1&lt;/a&gt;&lt;/p&gt; &lt;blockquote&gt; &lt;ul&gt; &lt;li&gt;Fix for a bug with OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers. &lt;a href=\"https://github.com/simonw/llm/issues/1521\"&gt;#1521&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/blockquote&gt; &lt;p&gt;This bug came up when I was testing &lt;a","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"1 Simon Willison’s Weblog Subscribe Sponsored by: Teleport &mdash; How do you ensure that AI agents act within your intended boundaries?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"Teleport’s “From Zero Trust to Agent Trust” white paper details what needs to be in place to realize the promise of agentic designs.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"9th July 2026 Release llm 0.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"1 &mdash; Access large language models from the command-line Fix for a bug with OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"#1521 This bug came up when I was testing llm-meta-ai .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
-- evidence_seed: {"company_actions":["1 Simon Willison’s Weblog Subscribe Sponsored by: Teleport &mdash; How do you ensure that AI agents act within your intended boundaries?","9th July 2026 Release llm 0.","1 &mdash; Access large language models from the command-line Fix for a bug with OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
-- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"Cleaning up text and messing with ascii (urgh!)","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"funding","text":"Product Classification API Part 2: Data Preparation eugeneyan Start Here Writing Speaking Prototyping About Product Classification API Part 2: Data Preparation machinelearning python 🛠 · 8 min read This post is part 2 of the series on building a product classification API.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The API is available for demo here .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Part 1 available here ; Part 3 available here .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"( Github repositiory ) Update: API discontinued to save on cloud cost.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In part 1, we focused on data acquisition and formatting the categories.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Cleaning up text and messing with ascii (urgh!)","Product Classification API Part 2: Data Preparation eugeneyan Start Here Writing Speaking Prototyping About Product Classification API Part 2: Data Preparation machinelearning python 🛠 · 8 min read This post is part 2 of the series on building a product classification API.","The API is available for demo here ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-041｜Grok x Cursor
+
+- raw_ref: R-041
+- raw_original_id: https://www.bensbites.com/p/grok-x-cursor
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-041-grok-x-cursor.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-041-grok-x-cursor.json`
+- source: Ben's Bites AI Newsletter｜https://www.bensbites.com/p/grok-x-cursor
+- source_url: https://www.bensbites.com/p/grok-x-cursor
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: newsletter
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 88
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: c0afeb87d227832a
+- raw_full_text_hash: c0afeb87d227832a
+- raw_semantic_hash: 35e841624d93c457
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c0afeb87d227832a","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: case, business_change
+- key_excerpts: [{"type":"company_action","text":"More Fable, GPT-5.6 and new ChatGPT voice","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Grok x Cursor More Fable, GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"6 and new ChatGPT voice Jul 09, 2026 52 Share Hey folks, Anthropic extended access to Fable 5 via Claude subscriptions until July 12.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"Same deal as before: up to 50% of your weekly limits, and after July 12, use prepaid usage credits.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But this dangling-a-carrot move doesn’t make me trust their deadlines anymore.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Otoh, OpenAI announced that GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["More Fable, GPT-5.6 and new ChatGPT voice","Grok x Cursor More Fable, GPT-5.","6 and new ChatGPT voice Jul 09, 2026 52 Share Hey folks, Anthropic extended access to Fable 5 via Claude subscriptions until July 12."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-042｜My thoughts on Fable
+
+- raw_ref: R-042
+- raw_original_id: https://www.bensbites.com/p/my-thoughts-on-fable
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-042-my-thoughts-on-fable.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-042-my-thoughts-on-fable.json`
+- source: Ben's Bites AI Newsletter｜https://www.bensbites.com/p/my-thoughts-on-fable
+- source_url: https://www.bensbites.com/p/my-thoughts-on-fable
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: newsletter
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 88
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: ba8c1a98ce69cd05
+- raw_full_text_hash: ba8c1a98ce69cd05
+- raw_semantic_hash: 056a6b751570303b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ba8c1a98ce69cd05","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- key_excerpts: [{"type":"company_action","text":"what I want from a harness","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"My thoughts on Fable what I want from a harness Jul 07, 2026 39 Share Hey folks, I’ve been using Fable quite a bit since it came back (but not for long…) and I’ve barely used it to do any building.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I like Anthropic’s models mostly for their thinking, they’re resourceful, creative and can connect things I often can’t put my finger on.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So Fable’s been a bit of a therapist/thinking partner this past week.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"But it feels slightly different this time.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It could be me, but it has shown me a bunch of Opus-like traits in how it’s talking or thinking.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["what I want from a harness","My thoughts on Fable what I want from a harness Jul 07, 2026 39 Share Hey folks, I’ve been using Fable quite a bit since it came back (but not for long…) and I’ve barely used it to do any building.","I like Anthropic’s models mostly for their thinking, they’re resourceful, creative and can connect things I often can’t put my finger on."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-043｜Fable is back
+
+- raw_ref: R-043
+- raw_original_id: https://www.bensbites.com/p/fable-is-back
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-043-fable-is-back.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-043-fable-is-back.json`
+- source: Ben's Bites AI Newsletter｜https://www.bensbites.com/p/fable-is-back
+- source_url: https://www.bensbites.com/p/fable-is-back
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: newsletter
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 84358833f82a6498
+- raw_full_text_hash: 84358833f82a6498
+- raw_semantic_hash: fd1360883f2a60ff
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"84358833f82a6498","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"and there's a new sonnet","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Fable is back and there's a new sonnet Jul 02, 2026 50 Share Hey folks, When I was in Greece, I needed to organise a taxi from the airport home.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I pinged codex and 1m37s later it was done, I got a text to say the car was booked.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Codex also added the redacted bit to this image It’s not the most impressive task by all means but there’s a system as to why it works (and this system is how a lot of tasks work).","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So first, all my day-to-day agent conversations start in my ‘bites’ folder, which has links to files that store my memories, what I’m working on, ben’s bites, about me etc.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Codex loads my AGENTS.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["and there's a new sonnet","Fable is back and there's a new sonnet Jul 02, 2026 50 Share Hey folks, When I was in Greece, I needed to organise a taxi from the airport home.","I pinged codex and 1m37s later it was done, I got a text to say the car was booked."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-042｜11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun
+## P-044｜Claude Code in Slack
 
-- raw_ref: R-042
+- raw_ref: R-044
+- raw_original_id: https://www.bensbites.com/p/claude-code-in-slack
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-044-claude-code-in-slack.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-044-claude-code-in-slack.json`
+- source: Ben's Bites AI Newsletter｜https://www.bensbites.com/p/claude-code-in-slack
+- source_url: https://www.bensbites.com/p/claude-code-in-slack
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: newsletter
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: ac3efcfa449d78bf
+- raw_full_text_hash: ac3efcfa449d78bf
+- raw_semantic_hash: 1579bb69e69f90e9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ac3efcfa449d78bf","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"a tip to get better UI from Codex","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Claude Code in Slack a tip to get better UI from Codex Jun 25, 2026 50 Share Hey folks, Keshav here.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"About a week ago, I watched Codex automatically generate images with the Image Gen skill while making an app.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It used them as real assets in the UI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Since then, I’ve started explicitly asking it to create images whenever I’m building web UIs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The results are noticeably better: pages look less bland, and because Claude Code can’t generate images, the output feels different from the usual AI-generated UI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["a tip to get better UI from Codex","Claude Code in Slack a tip to get better UI from Codex Jun 25, 2026 50 Share Hey folks, Keshav here.","About a week ago, I watched Codex automatically generate images with the Image Gen skill while making an app."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-045｜Record a skill
+
+- raw_ref: R-045
+- raw_original_id: https://www.bensbites.com/p/record-a-skill
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-045-record-a-skill.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-045-record-a-skill.json`
+- source: Ben's Bites AI Newsletter｜https://www.bensbites.com/p/record-a-skill
+- source_url: https://www.bensbites.com/p/record-a-skill
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: newsletter
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 88
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: e145000dd9629d10
+- raw_full_text_hash: e145000dd9629d10
+- raw_semantic_hash: b8ece4b7cfa7c697
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e145000dd9629d10","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: viewpoint
+- key_excerpts: [{"type":"company_action","text":"5.5-cyber vs mythos","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"5-cyber vs mythos Jun 23, 2026 88 Share Hey folks, I’ve been looking at a lot of design resources for the manual recently.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Interface Craft by Josh is one of the best places I’ve found for learning how to actually feel and notice taste.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"\\n\\nA collection of practical techniques to achieve excellence in interface design, covering 100+ topics across 11 chapters, with plenty of interactive examples and code.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"\\n\\nNew members welcome; enjoy!","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"\",\"username\":\"joshpuckett\",\"name\":\"joshpuckett\",\"profile_image_url\":\"https://pbs.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["5.5-cyber vs mythos","5-cyber vs mythos Jun 23, 2026 88 Share Hey folks, I’ve been looking at a lot of design resources for the manual recently.","Interface Craft by Josh is one of the best places I’ve found for learning how to actually feel and notice taste."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-046｜New Claude model - Fable
+
+- raw_ref: R-046
+- raw_original_id: https://www.bensbites.com/p/new-claude-model-fable
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-046-new-claude-model-fable.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-046-new-claude-model-fable.json`
+- source: Ben's Bites AI Newsletter｜https://www.bensbites.com/p/new-claude-model-fable
+- source_url: https://www.bensbites.com/p/new-claude-model-fable
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: newsletter
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 88
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: c248a2bf27e8034c
+- raw_full_text_hash: c248a2bf27e8034c
+- raw_semantic_hash: ac20d945ad913fd6
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c248a2bf27e8034c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"everyone's building with it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"New Claude model - Fable everyone's building with it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Jun 11, 2026 90 Share Hey folks, Like a lot of others, I’m trying Fable.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"But I don’t think I’ve given it really hard tasks for me to feel the big step change people are claiming.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"opinion","text":"Although as I’m working on visual, interactive essays for my reference manual, I’ve been testing one-shot generations on all sorts of topics to play with my kids; how to play the piano, how tetris works, how a volcano works.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"They’re loving bashing away at my keyboard to see the components come alive.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["everyone's building with it.","New Claude model - Fable everyone's building with it.","Jun 11, 2026 90 Share Hey folks, Like a lot of others, I’m trying Fable."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-047｜Hey Siri, meet AI
+
+- raw_ref: R-047
+- raw_original_id: https://www.bensbites.com/p/hey-siri-meet-ai
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-047-hey-siri-meet-ai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-047-hey-siri-meet-ai.json`
+- source: Ben's Bites AI Newsletter｜https://www.bensbites.com/p/hey-siri-meet-ai
+- source_url: https://www.bensbites.com/p/hey-siri-meet-ai
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: newsletter
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 74ac2e1b0d49fbaa
+- raw_full_text_hash: 74ac2e1b0d49fbaa
+- raw_semantic_hash: 05642a78a4271d2d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"74ac2e1b0d49fbaa","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"what's the deal with loops","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Hey Siri, meet AI what's the deal with loops Jun 09, 2026 63 Share Hey folks, A lot of chatter about loops on X recently.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"And it’s a topic I’ve been toying with.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"My interpretation from what Peter posted is: Agents are loops, you give it a task, it looks at it with the context it has, uses tools to gather more and gives you an output when it thinks the task is done.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"But mimicking those parts into a bigger system so your agents can run more autonomously, longer and on harder chunks of work is what I think ‘designing the loop’ is talking about.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So you want to design a bigger task up front, like a plan.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["what's the deal with loops","Hey Siri, meet AI what's the deal with loops Jun 09, 2026 63 Share Hey folks, A lot of chatter about loops on X recently.","And it’s a topic I’ve been toying with."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-048｜Opus 4.8
+
+- raw_ref: R-048
+- raw_original_id: https://www.bensbites.com/p/opus-48
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-048-opus-4-8.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-048-opus-4-8.json`
+- source: Ben's Bites AI Newsletter｜https://www.bensbites.com/p/opus-48
+- source_url: https://www.bensbites.com/p/opus-48
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: newsletter
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 85
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: f9d5d42331417650
+- raw_full_text_hash: f9d5d42331417650
+- raw_semantic_hash: 7311547fb2f61be5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f9d5d42331417650","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: case, business_change
+- key_excerpts: [{"type":"company_action","text":"NVIDIA and Microsoft birthed a new computer","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"8 NVIDIA and Microsoft birthed a new computer Jun 02, 2026 45 Share Hey folks, I’m spending as much time as possible off Twitter, and any other general doomscroll distractions.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I’ve got work to do (the course/manual/whatever it’ll be called).","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Aiming to get at least the preview ‘lessons’ out this month.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I’m not going to force any wisdom out in today’s intro because it’s not my style.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"On to the condensed version of the AI madness… Ben’s Bites is brought to you by Smallest AI Pulse is world’s fastest speech-to-text model (#1 on Sierra’s μ-Bench for P95 latency) with top performing accuracy (under 5% WER on Artificial Analysis leaderboard), works across 39 languages and 100+ accents.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["NVIDIA and Microsoft birthed a new computer","8 NVIDIA and Microsoft birthed a new computer Jun 02, 2026 45 Share Hey folks, I’m spending as much time as possible off Twitter, and any other general doomscroll distractions.","I’ve got work to do (the course/manual/whatever it’ll be called)."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-049｜Google's take on openclaw
+
+- raw_ref: R-049
+- raw_original_id: https://www.bensbites.com/p/googles-take-on-openclaw
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-049-google-s-take-on-openclaw.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-049-google-s-take-on-openclaw.json`
+- source: Ben's Bites AI Newsletter｜https://www.bensbites.com/p/googles-take-on-openclaw
+- source_url: https://www.bensbites.com/p/googles-take-on-openclaw
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: newsletter
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 1b7ece96fb4576a7
+- raw_full_text_hash: 1b7ece96fb4576a7
+- raw_semantic_hash: 397348223d949c9b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1b7ece96fb4576a7","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"it's Anthropic's time for the mandate of heaven","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"Google's take on openclaw it's Anthropic's time for the mandate of heaven May 21, 2026 42 Share Hey folks, My first fund is now at 5x!","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"I had a very notable firm not invest in my latest fund as they were assessing if I was a 5x fund returner… seems like I am.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Fund 2 is also at ~3x with 55% IRR.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Fund 3 I’m starting to fundraise for again, looking for operators, $100k minimum.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Deployed 4 cheques so far.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["it's Anthropic's time for the mandate of heaven","Fund 3 I’m starting to fundraise for again, looking for operators, $100k minimum.","Deployed 4 cheques so far."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-050｜Can I get my agents on the phone?
+
+- raw_ref: R-050
+- raw_original_id: https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-050-can-i-get-my-agents-on-the-phone.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-050-can-i-get-my-agents-on-the-phone.json`
+- source: Ben's Bites AI Newsletter｜https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone
+- source_url: https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: newsletter
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: f3e1abbaa57d0ab0
+- raw_full_text_hash: f3e1abbaa57d0ab0
+- raw_semantic_hash: c7acf89620663977
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f3e1abbaa57d0ab0","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: viewpoint
+- key_excerpts: [{"type":"company_action","text":"I haven&#8217;t used OpenClaw in weeks","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Can I get my agents on the phone?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"I haven’t used OpenClaw in weeks May 19, 2026 40 Share Hey folks Google I/O starts today , and Logan tweeted: “ The model is the product ”.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"There have been some rumours that the latest Gemini model scores similar on benchmarks to GPT 5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"5 - but we’ll see how it feels when actually using it - previous models also scored well but didn’t feel great to work with.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"When models are so good, harnesses will be much less important.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["I haven&#8217;t used OpenClaw in weeks","Can I get my agents on the phone?","There have been some rumours that the latest Gemini model scores similar on benchmarks to GPT 5."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-051｜11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun
+
+- raw_ref: R-051
 - raw_original_id: cmrg3syhp00l7iha7a3ansg62
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-042-11天claude-fable-5写超100万行代码-rust重构javascript运行时bun.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-042-11天claude-fable-5写超100万行代码-rust重构javascript运行时bun.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-051-11天claude-fable-5写超100万行代码-rust重构javascript运行时bun.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-051-11天claude-fable-5写超100万行代码-rust重构javascript运行时bun.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/469.htm
 - source_url: https://www.ithome.com/0/975/469.htm
 - acquisition_channel: aihot
@@ -2330,12 +2825,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-043｜彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句"哈哈"成窃密关键
+## P-052｜彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句"哈哈"成窃密关键
 
-- raw_ref: R-043
+- raw_ref: R-052
 - raw_original_id: cmrgzykqg00jabid4acp6zpjm
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-043-彭博社揭秘苹果起诉-openai-内幕-前员工一句-哈哈-成窃密关键.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-043-彭博社揭秘苹果起诉-openai-内幕-前员工一句-哈哈-成窃密关键.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-052-彭博社揭秘苹果起诉-openai-内幕-前员工一句-哈哈-成窃密关键.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-052-彭博社揭秘苹果起诉-openai-内幕-前员工一句-哈哈-成窃密关键.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/634.htm
 - source_url: https://www.ithome.com/0/975/634.htm
 - acquisition_channel: aihot
@@ -2385,12 +2880,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-044｜荣耀公布平板端MagicOS 7月升级特性
+## P-053｜荣耀公布平板端MagicOS 7月升级特性
 
-- raw_ref: R-044
+- raw_ref: R-053
 - raw_original_id: cmrg83bku01pfiha7d5vetla9
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-044-荣耀公布平板端magicos-7月升级特性.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-044-荣耀公布平板端magicos-7月升级特性.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-053-荣耀公布平板端magicos-7月升级特性.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-053-荣耀公布平板端magicos-7月升级特性.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/546.htm
 - source_url: https://www.ithome.com/0/975/546.htm
 - acquisition_channel: aihot
@@ -2440,12 +2935,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-045｜OpenAI 称 GPT-5.6 Sol 可化身研究员，后训练 Luna AI 模型
+## P-054｜OpenAI 称 GPT-5.6 Sol 可化身研究员，后训练 Luna AI 模型
 
-- raw_ref: R-045
+- raw_ref: R-054
 - raw_original_id: cmrg1nse4000yiha784657z9m
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-045-openai-称-gpt-5-6-sol-可化身研究员-后训练-luna-ai-模型.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-045-openai-称-gpt-5-6-sol-可化身研究员-后训练-luna-ai-模型.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-054-openai-称-gpt-5-6-sol-可化身研究员-后训练-luna-ai-模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-054-openai-称-gpt-5-6-sol-可化身研究员-后训练-luna-ai-模型.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/461.htm
 - source_url: https://www.ithome.com/0/975/461.htm
 - acquisition_channel: aihot
@@ -2495,12 +2990,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-046｜分析师：特斯拉 FSD 即将迎来属于自己的 iPhone 时刻
+## P-055｜分析师：特斯拉 FSD 即将迎来属于自己的 iPhone 时刻
 
-- raw_ref: R-046
+- raw_ref: R-055
 - raw_original_id: cmrh8o88501e3bir7rsmd7cca
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-046-分析师-特斯拉-fsd-即将迎来属于自己的-iphone-时刻.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-046-分析师-特斯拉-fsd-即将迎来属于自己的-iphone-时刻.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-055-分析师-特斯拉-fsd-即将迎来属于自己的-iphone-时刻.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-055-分析师-特斯拉-fsd-即将迎来属于自己的-iphone-时刻.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/667.htm
 - source_url: https://www.ithome.com/0/975/667.htm
 - acquisition_channel: aihot
@@ -2550,12 +3045,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-047｜特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新
+## P-056｜特斯拉 FSD v14 Lite 首次走出美国，韩国率先获得更新
 
-- raw_ref: R-047
+- raw_ref: R-056
 - raw_original_id: cmrh6ia5v00ttbir7y6hb83jw
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-047-特斯拉-fsd-v14-lite-首次走出美国-韩国率先获得更新.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-047-特斯拉-fsd-v14-lite-首次走出美国-韩国率先获得更新.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-056-特斯拉-fsd-v14-lite-首次走出美国-韩国率先获得更新.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-056-特斯拉-fsd-v14-lite-首次走出美国-韩国率先获得更新.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/655.htm
 - source_url: https://www.ithome.com/0/975/655.htm
 - acquisition_channel: aihot
@@ -2605,12 +3100,122 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-048｜韩国首尔将试点公共数据 MCP 服务，AI 可查询实时交通与空气信息
+## P-057｜Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows – Company Announcement - FT.com
 
-- raw_ref: R-048
+- raw_ref: R-057
+- raw_original_id: https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605120900BIZWIRE_USPRX____20260512_BW858142-1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-057-lenovo-enables-one-week-deployment-of-production-ready-agentic-ai-to-t.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-057-lenovo-enables-one-week-deployment-of-production-ready-agentic-ai-to-t.json`
+- source: keyword search / Anysearch｜https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605120900BIZWIRE_USPRX____20260512_BW858142-1
+- source_url: https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605120900BIZWIRE_USPRX____20260512_BW858142-1
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 47eb362e0f7f51b5
+- raw_full_text_hash: 47eb362e0f7f51b5
+- raw_semantic_hash: 9e9a08bbfa35b0db
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"47eb362e0f7f51b5","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 12.4
+- usable_for: watchlist
+- key_excerpts: [{"type":"case_detail","text":"Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows – Company Announcement - FT.com ### Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows May 12 2026 14:00 BST - The Lenovo AI Library enables rapid d... / query=enterprise AI transformation production rollout customer deployment / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows – Company Announcement - FT.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"com ### Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows May 12 2026 14:00 BST - The Lenovo AI Library enables rapid d.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"/ query=enterprise AI transformation production rollout customer deployment / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":[],"case_details":["Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows – Company Announcement - FT.com ### Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows May 12 2026 14:00 BST - The Lenovo AI Library enables rapid d... / query=enterprise AI transformation production rollout customer deployment / intent=find_market_trend / path=a_media_gdelt","Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows – Company Announcement - FT.","com ### Lenovo Enables One-Week Deployment of Production-Ready Agentic AI to Transform Enterprise Workflows May 12 2026 14:00 BST - The Lenovo AI Library enables rapid d."],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-058｜Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale – Company Announcement - FT.com
+
+- raw_ref: R-058
+- raw_original_id: https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-058-zensar-technologies-launches-zenseai-agentmesh-to-accelerate-enterpris.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-058-zensar-technologies-launches-zenseai-agentmesh-to-accelerate-enterpris.json`
+- source: keyword search / Anysearch｜https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1
+- source_url: https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: cb6121db5b14d776
+- raw_full_text_hash: cb6121db5b14d776
+- raw_semantic_hash: a3780cf97892cde5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cb6121db5b14d776","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.4
+- raw_capture_priority: 12.4
+- usable_for: watchlist
+- key_excerpts: [{"type":"product_update","text":"Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale – Company Announcement - FT.com # Company Announcements ### Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale Jun 19 2026 14:50 BST PRINCETON, N.J. , June 1... / query=agent governance evals production rollout enterprise AI / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Zensar Technologies Launches 'ZenseAI.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"AgentMesh' to Accelerate Enterprise AI Adoption at Scale – Company Announcement - FT.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"com # Company Announcements ### Zensar Technologies Launches 'ZenseAI.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"AgentMesh' to Accelerate Enterprise AI Adoption at Scale Jun 19 2026 14:50 BST PRINCETON, N.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"/ query=agent governance evals production rollout enterprise AI / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale – Company Announcement - FT.com # Company Announcements ### Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate Enterprise AI Adoption at Scale Jun 19 2026 14:50 BST PRINCETON, N.J. , June 1... / query=agent governance evals production rollout enterprise AI / intent=find_market_trend / path=a_media_gdelt","Zensar Technologies Launches 'ZenseAI.","AgentMesh' to Accelerate Enterprise AI Adoption at Scale – Company Announcement - FT."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-059｜韩国首尔将试点公共数据 MCP 服务，AI 可查询实时交通与空气信息
+
+- raw_ref: R-059
 - raw_original_id: cmrh8o88501e1bir7xv2r8j9e
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-048-韩国首尔将试点公共数据-mcp-服务-ai-可查询实时交通与空气信息.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-048-韩国首尔将试点公共数据-mcp-服务-ai-可查询实时交通与空气信息.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-059-韩国首尔将试点公共数据-mcp-服务-ai-可查询实时交通与空气信息.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-059-韩国首尔将试点公共数据-mcp-服务-ai-可查询实时交通与空气信息.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/674.htm
 - source_url: https://www.ithome.com/0/975/674.htm
 - acquisition_channel: aihot
@@ -2660,12 +3265,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-049｜月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式
+## P-060｜月之暗面 K2.7 Code 高速版正式登陆 Kimi Code，成为常驻可选模式
 
-- raw_ref: R-049
+- raw_ref: R-060
 - raw_original_id: cmrggo0oe00toih2eafndf8tl
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-049-月之暗面-k2-7-code-高速版正式登陆-kimi-code-成为常驻可选模式.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-049-月之暗面-k2-7-code-高速版正式登陆-kimi-code-成为常驻可选模式.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-060-月之暗面-k2-7-code-高速版正式登陆-kimi-code-成为常驻可选模式.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-060-月之暗面-k2-7-code-高速版正式登陆-kimi-code-成为常驻可选模式.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/619.htm
 - source_url: https://www.ithome.com/0/975/619.htm
 - acquisition_channel: aihot
@@ -2715,12 +3320,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-050｜阿里巴巴等启动"古壁生辉"古代壁画 AI 重现工程
+## P-061｜阿里巴巴等启动"古壁生辉"古代壁画 AI 重现工程
 
-- raw_ref: R-050
+- raw_ref: R-061
 - raw_original_id: cmrg83bku01pmiha7byf2395y
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-050-阿里巴巴等启动-古壁生辉-古代壁画-ai-重现工程.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-050-阿里巴巴等启动-古壁生辉-古代壁画-ai-重现工程.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-061-阿里巴巴等启动-古壁生辉-古代壁画-ai-重现工程.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-061-阿里巴巴等启动-古壁生辉-古代壁画-ai-重现工程.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/537.htm
 - source_url: https://www.ithome.com/0/975/537.htm
 - acquisition_channel: aihot
@@ -2770,12 +3375,2432 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-051｜苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划
+## P-062｜Best of the Pod: Would You Shut Down Your Most Successful Product? The Arc to Dia Story
 
-- raw_ref: R-051
+- raw_ref: R-062
+- raw_original_id: c15bea79-4171-4752-9a5f-7c1740e4c67f
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-062-best-of-the-pod-would-you-shut-down-your-most-successful-product-the-a.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-062-best-of-the-pod-would-you-shut-down-your-most-successful-product-the-a.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-Would-You-Shut-Down-Your-Most-Successful-Product--The-Arc-to-Dia-Story-e3bggl0
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-Would-You-Shut-Down-Your-Most-Successful-Product--The-Arc-to-Dia-Story-e3bggl0
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: e907c023a7263897
+- raw_full_text_hash: e907c023a7263897
+- raw_semantic_hash: a46cbe4f470f2929
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e907c023a7263897","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 11
+- usable_for: watchlist
+- key_excerpts: [{"type":"company_action","text":"If you had millions of people using a product you spent years building, would you kill it?That’s exactly what The Browser Company did with Arc.Originally recorded in July before The Browser Company’s acquisition by software giant Atlassian earlier this year, we’re republishing this episode because its lessons are truly timeless. Today, the team continues to operate independently under Atlassian’s umbrella.The internet backlash when the company killed Arc in May 2025 was intense, but cofounders J","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"If you had millions of people using a product you spent years building, would you kill it?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"That’s exactly what The Browser Company did with Arc.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Originally recorded in July before The Browser Company’s acquisition by software giant Atlassian earlier this year, we’re republishing this episode because its lessons are truly timeless.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Today, the team continues to operate independently under Atlassian’s umbrella.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"The internet backlash when the company killed Arc in May 2025 was intense, but cofounders J","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["If you had millions of people using a product you spent years building, would you kill it?That’s exactly what The Browser Company did with Arc.Originally recorded in July before The Browser Company’s acquisition by software giant Atlassian earlier this year, we’re republishing this episode because its lessons are truly timeless. Today, the team continues to operate independently under Atlassian’s umbrella.The internet backlash when the company killed Arc in May 2025 was intense, but cofounders J","If you had millions of people using a product you spent years building, would you kill it?","That’s exactly what The Browser Company did with Arc."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-063｜Image classification API is now live!
+
+- raw_ref: R-063
+- raw_original_id: https://eugeneyan.com//writing/image-categorization-is-now-live/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-063-image-classification-api-is-now-live.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-063-image-classification-api-is-now-live.json`
+- source: Eugene Yan's Blog｜https://eugeneyan.com//writing/image-categorization-is-now-live/
+- source_url: https://eugeneyan.com//writing/image-categorization-is-now-live/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 76
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 24ac3cb1a04c8fc9
+- raw_full_text_hash: 24ac3cb1a04c8fc9
+- raw_semantic_hash: 837b8b68dbb8f9f9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"24ac3cb1a04c8fc9","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 10.9
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"A simple web app to classify fashion images into Amazon categories.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"After toiling for a few months on this, product image classification is now live on Datagene.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"While the product classification API works with product titles, the image classification API works with product images, though only for fashion.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"( Github repositiory ) Update: API discontinued to save on cloud cost.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"funding","text":"This is part of a series of posts on building a product classification API: Data acquisition and formatting (part 1) Data cleaning and preparation (part 2) API development (part 3) Image classification demo Image search demo Some facts about the image classification API: Works best with e-commerce like fashion images (as that’s what it was trained on) Top-1 validation accuracy: 0.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"76; Top-5 validation accuracy: 0.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["A simple web app to classify fashion images into Amazon categories.","After toiling for a few months on this, product image classification is now live on Datagene.","While the product classification API works with product titles, the image classification API works with product images, though only for fashion."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-064｜Inside Stainless: The Developer Tools Startup Anthropic Just Bought for $300 Million
+
+- raw_ref: R-064
+- raw_original_id: c045e10e-9d13-499b-a4d0-8945587ba4aa
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-064-inside-stainless-the-developer-tools-startup-anthropic-just-bought-for.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-064-inside-stainless-the-developer-tools-startup-anthropic-just-bought-for.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Inside-Stainless-The-Developer-Tools-Startup-Anthropic-Just-Bought-for-300-Million-e3jk50h
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Inside-Stainless-The-Developer-Tools-Startup-Anthropic-Just-Bought-for-300-Million-e3jk50h
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 63bdb6b3db01bf87
+- raw_full_text_hash: 63bdb6b3db01bf87
+- raw_semantic_hash: 2ce7757dc20dc37b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"63bdb6b3db01bf87","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"If your MCP server has dozens of tools, it&#39;s probably built wrong. You need tools that are specific and clear for each use case—but you also can&#39;t have too many. This creates an almost impossible tradeoff that most companies don&#39;t know how to solve.That&#39;s why we interviewed Alex Rattray, the founder and CEO of Stainless. Stainless builds APIs, SDKs, and MCP servers for companies like OpenAI and Anthropic. Alex has spent years mastering how to make software talk to software, and h","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"If your MCP server has dozens of tools, it&#39;s probably built wrong.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"You need tools that are specific and clear for each use case—but you also can&#39;t have too many.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"This creates an almost impossible tradeoff that most companies don&#39;t know how to solve.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"That&#39;s why we interviewed Alex Rattray, the founder and CEO of Stainless.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Stainless builds APIs, SDKs, and MCP servers for companies like OpenAI and Anthropic.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["If your MCP server has dozens of tools, it&#39;s probably built wrong. You need tools that are specific and clear for each use case—but you also can&#39;t have too many. This creates an almost impossible tradeoff that most companies don&#39;t know how to solve.That&#39;s why we interviewed Alex Rattray, the founder and CEO of Stainless. Stainless builds APIs, SDKs, and MCP servers for companies like OpenAI and Anthropic. Alex has spent years mastering how to make software talk to software, and h","If your MCP server has dozens of tools, it&#39;s probably built wrong.","You need tools that are specific and clear for each use case—but you also can&#39;t have too many."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-065｜MCP Servers: Teaching AI to Use the Internet Like Humans
+
+- raw_ref: R-065
+- raw_original_id: bef5b2df-022f-464d-b024-a7bfbc59f47c
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-065-mcp-servers-teaching-ai-to-use-the-internet-like-humans.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-065-mcp-servers-teaching-ai-to-use-the-internet-like-humans.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/MCP-Servers-Teaching-AI-to-Use-the-Internet-Like-Humans-e38u3hj
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/MCP-Servers-Teaching-AI-to-Use-the-Internet-Like-Humans-e38u3hj
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 3aaf6692ef662097
+- raw_full_text_hash: 3aaf6692ef662097
+- raw_semantic_hash: ea8b30f1379205e1
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3aaf6692ef662097","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"If your MCP server has dozens of tools, it’s probably built wrong.You need tools that are specific and clear for each use case—but you also can’t have too many. This creates an almost impossible tradeoff that most companies don’t know how to solve.That’s why we interviewed Alex Rattray, the founder and CEO of Stainless. Stainless builds APIs, SDKs, and MCP servers for companies like OpenAI and Anthropic. Alex has spent years mastering how to make software talk to software, and he came on the sho","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"If your MCP server has dozens of tools, it’s probably built wrong.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"You need tools that are specific and clear for each use case—but you also can’t have too many.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"This creates an almost impossible tradeoff that most companies don’t know how to solve.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"That’s why we interviewed Alex Rattray, the founder and CEO of Stainless.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Stainless builds APIs, SDKs, and MCP servers for companies like OpenAI and Anthropic.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["If your MCP server has dozens of tools, it’s probably built wrong.You need tools that are specific and clear for each use case—but you also can’t have too many. This creates an almost impossible tradeoff that most companies don’t know how to solve.That’s why we interviewed Alex Rattray, the founder and CEO of Stainless. Stainless builds APIs, SDKs, and MCP servers for companies like OpenAI and Anthropic. Alex has spent years mastering how to make software talk to software, and he came on the sho","If your MCP server has dozens of tools, it’s probably built wrong.","You need tools that are specific and clear for each use case—but you also can’t have too many."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-066｜The AI Model Built for What LLMs Can't Do
+
+- raw_ref: R-066
+- raw_original_id: 106a53c9-d4bf-4534-a3f1-7a38339b46b1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-066-the-ai-model-built-for-what-llms-can-t-do.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-066-the-ai-model-built-for-what-llms-can-t-do.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-AI-Model-Built-for-What-LLMs-Cant-Do-e3htoru
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-AI-Model-Built-for-What-LLMs-Cant-Do-e3htoru
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: c1533da9ae82e31d
+- raw_full_text_hash: c1533da9ae82e31d
+- raw_semantic_hash: 15360eee47cb73df
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c1533da9ae82e31d","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"workflow_change","text":"Most AI companies are racing to build bigger LLMs. Eve Bodnia thinks that's the wrong approach.Eve is the founder and CEO of Logical Intelligence, which is developing an alternative to the transformer-based models dominating the industry. Her argument: LLMs’ architecture makes them fundamentally unsuited for some mission-critical tasks. A system that generates output one token at a time, with no ability to inspect its own reasoning mid-process or guarantee its results, shouldn't be trusted to de","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Most AI companies are racing to build bigger LLMs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Eve Bodnia thinks that's the wrong approach.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Eve is the founder and CEO of Logical Intelligence, which is developing an alternative to the transformer-based models dominating the industry.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Her argument: LLMs’ architecture makes them fundamentally unsuited for some mission-critical tasks.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"workflow_change","text":"A system that generates output one token at a time, with no ability to inspect its own reasoning mid-process or guarantee its results, shouldn't be trusted to de","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Most AI companies are racing to build bigger LLMs.","Eve Bodnia thinks that's the wrong approach.","Eve is the founder and CEO of Logical Intelligence, which is developing an alternative to the transformer-based models dominating the industry."],"case_details":[],"workflow_changes":["Most AI companies are racing to build bigger LLMs. Eve Bodnia thinks that's the wrong approach.Eve is the founder and CEO of Logical Intelligence, which is developing an alternative to the transformer-based models dominating the industry. Her argument: LLMs’ architecture makes them fundamentally unsuited for some mission-critical tasks. A system that generates output one token at a time, with no ability to inspect its own reasoning mid-process or guarantee its results, shouldn't be trusted to de","A system that generates output one token at a time, with no ability to inspect its own reasoning mid-process or guarantee its results, shouldn't be trusted to de"],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-067｜Vibe Check: Claude Cowork Is Claude Code for the Rest of Us
+
+- raw_ref: R-067
+- raw_original_id: 534211c5-fc69-46ec-897b-863a0ae4e145
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-067-vibe-check-claude-cowork-is-claude-code-for-the-rest-of-us.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-067-vibe-check-claude-cowork-is-claude-code-for-the-rest-of-us.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Vibe-Check-Claude-Cowork-Is-Claude-Code-for-the-Rest-of-Us-e3djl3h
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Vibe-Check-Claude-Cowork-Is-Claude-Code-for-the-Rest-of-Us-e3djl3h
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 13739e9a1635a31d
+- raw_full_text_hash: 13739e9a1635a31d
+- raw_semantic_hash: c9473d6e28aa82d2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"13739e9a1635a31d","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_vertical_solution
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"company_action","text":"Anthropic just dropped Claude Cowork—essentially Claude Code for everyone, not just engineers—and we got to chat about it with a product engineer at Anthropic who helped build it.In this live Vibe Check, Dan Shipper and Kieran Klaassen explore the new interface together, testing what works (and what doesn&#39;t) in real time. Anthropic’s Felix Rieseberg joins midway through to explain the philosophy behind Cowork&#39;s design: why it separates &quot;Tasks&quot; from &quot;Chats,&quot; how the qu","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Anthropic just dropped Claude Cowork—essentially Claude Code for everyone, not just engineers—and we got to chat about it with a product engineer at Anthropic who helped build it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"In this live Vibe Check, Dan Shipper and Kieran Klaassen explore the new interface together, testing what works (and what doesn&#39;t) in real time.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Anthropic’s Felix Rieseberg joins midway through to explain the philosophy behind Cowork&#39;s design: why it separates &quot;Tasks&quot; from &quot;Chats,&quot; how the qu","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Anthropic just dropped Claude Cowork—essentially Claude Code for everyone, not just engineers—and we got to chat about it with a product engineer at Anthropic who helped build it.In this live Vibe Check, Dan Shipper and Kieran Klaassen explore the new interface together, testing what works (and what doesn&#39;t) in real time. Anthropic’s Felix Rieseberg joins midway through to explain the philosophy behind Cowork&#39;s design: why it separates &quot;Tasks&quot; from &quot;Chats,&quot; how the qu","Anthropic just dropped Claude Cowork—essentially Claude Code for everyone, not just engineers—and we got to chat about it with a product engineer at Anthropic who helped build it.","In this live Vibe Check, Dan Shipper and Kieran Klaassen explore the new interface together, testing what works (and what doesn&#39;t) in real time."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-068｜Building AI Agents to Launch a Million Businesses
+
+- raw_ref: R-068
+- raw_original_id: 626f4a0a-e86a-472c-a1cb-0928815e64c0
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-068-building-ai-agents-to-launch-a-million-businesses.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-068-building-ai-agents-to-launch-a-million-businesses.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Building-AI-Agents-to-Launch-a-Million-Businesses-e3asdfm
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Building-AI-Agents-to-Launch-a-Million-Businesses-e3asdfm
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 2587c12d228d3aaa
+- raw_full_text_hash: 2587c12d228d3aaa
+- raw_semantic_hash: 12952f6e4e82bce9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2587c12d228d3aaa","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"number","text":"Henrik Werdelin wants to launch a million businesses that each make $1M—and he’s doing it with AI.After helping launch Barkbox and Ro Health through his incubator Prehype, Henrik is distilling everything he knows into Audos, a platform that helps you use AI agents to turn your idea into a profitable, lasting company.We had him on AI &amp; I to talk about “portfolio entrepreneurship”—a new breed of entrepreneurship shepherded in by AI, where founders build families of products around the same cus","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"Henrik Werdelin wants to launch a million businesses that each make $1M—and he’s doing it with AI.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"After helping launch Barkbox and Ro Health through his incubator Prehype, Henrik is distilling everything he knows into Audos, a platform that helps you use AI agents to turn your idea into a profitable, lasting company.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"We had him on AI &amp; I to talk about “portfolio entrepreneurship”—a new breed of entrepreneurship shepherded in by AI, where founders build families of products around the same cus","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["After helping launch Barkbox and Ro Health through his incubator Prehype, Henrik is distilling everything he knows into Audos, a platform that helps you use AI agents to turn your idea into a profitable, lasting company."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-069｜Spiral: Designing an AI Ghostwriter With Taste
+
+- raw_ref: R-069
+- raw_original_id: e1809e12-bb3e-4355-874c-ed8652c119c5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-069-spiral-designing-an-ai-ghostwriter-with-taste.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-069-spiral-designing-an-ai-ghostwriter-with-taste.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Spiral-Designing-an-AI-Ghostwriter-With-Taste-e39t3nm
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Spiral-Designing-an-AI-Ghostwriter-With-Taste-e39t3nm
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: b15e2d269a7307dd
+- raw_full_text_hash: b15e2d269a7307dd
+- raw_semantic_hash: 11967d6719d11d81
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b15e2d269a7307dd","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"product_update","text":"Good writing has always been downstream of good thinking. The average language model can help you write faster—but can it help you think better?Danny Aziz wrestled with this question while building the new version of Spiral, an AI writing partner informed by our editorial taste at Every that launched yesterday.The result is a product—and a philosophy—built by the ultimate craftsman who believes you can lean into AI without blunting your edge with slop. We had Danny on AI &amp; I to talk about us","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Good writing has always been downstream of good thinking.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"The average language model can help you write faster—but can it help you think better?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"Danny Aziz wrestled with this question while building the new version of Spiral, an AI writing partner informed by our editorial taste at Every that launched yesterday.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"opinion","text":"The result is a product—and a philosophy—built by the ultimate craftsman who believes you can lean into AI without blunting your edge with slop.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We had Danny on AI &amp; I to talk about us","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Good writing has always been downstream of good thinking. The average language model can help you write faster—but can it help you think better?Danny Aziz wrestled with this question while building the new version of Spiral, an AI writing partner informed by our editorial taste at Every that launched yesterday.The result is a product—and a philosophy—built by the ultimate craftsman who believes you can lean into AI without blunting your edge with slop. We had Danny on AI &amp; I to talk about us","Good writing has always been downstream of good thinking.","The average language model can help you write faster—but can it help you think better?"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-070｜One Developer Got Thousands of Users Before His App Launched
+
+- raw_ref: R-070
+- raw_original_id: 796f8d09-226a-4621-925f-94ba0789f8be
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-070-one-developer-got-thousands-of-users-before-his-app-launched.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-070-one-developer-got-thousands-of-users-before-his-app-launched.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/One-Developer-Got-Thousands-of-Users-Before-His-App-Launched-e38bpj1
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/One-Developer-Got-Thousands-of-Users-Before-His-App-Launched-e38bpj1
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 162bc2e4ec8e49ee
+- raw_full_text_hash: 162bc2e4ec8e49ee
+- raw_semantic_hash: 83d4cd7c4ce213b6
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"162bc2e4ec8e49ee","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"number","text":"Naveen Naidu built an app that found product-market fit backwards.Most apps launch first and then try to find users. Monologue, Naveen’s AI voice dictation app that came out of beta yesterday, did the opposite. It built a following of thousands of users during its incubation period at Every—many of them switching over from venture capital-backed competitors—all while the app barely had a landing page.The growth has continued in the 24 hours since launch, with an average of 1 million words being","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Naveen Naidu built an app that found product-market fit backwards.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"Most apps launch first and then try to find users.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Monologue, Naveen’s AI voice dictation app that came out of beta yesterday, did the opposite.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"It built a following of thousands of users during its incubation period at Every—many of them switching over from venture capital-backed competitors—all while the app barely had a landing page.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"number","text":"The growth has continued in the 24 hours since launch, with an average of 1 million words being","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Naveen Naidu built an app that found product-market fit backwards.","Most apps launch first and then try to find users.","Monologue, Naveen’s AI voice dictation app that came out of beta yesterday, did the opposite."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-071｜Best of the Pod: She Built an AI Product Manager Bringing in Six Figures—As A Side Hustle
+
+- raw_ref: R-071
+- raw_original_id: ccd2a2de-c7bb-48fc-927d-ba465b7b84d5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-071-best-of-the-pod-she-built-an-ai-product-manager-bringing-in-six-figure.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-071-best-of-the-pod-she-built-an-ai-product-manager-bringing-in-six-figure.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-She-Built-an-AI-Product-Manager-Bringing-in-Six-FiguresAs-A-Side-Hustle-e372j2k
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-She-Built-an-AI-Product-Manager-Bringing-in-Six-FiguresAs-A-Side-Hustle-e372j2k
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: de40310d0f58b8ba
+- raw_full_text_hash: de40310d0f58b8ba
+- raw_semantic_hash: f93183a9b5e87e7a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"de40310d0f58b8ba","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"number","text":"**Automate 80% of your repetitive writing, thinking, and creative tasks****Try Spiral made by Dan Shipper &amp; Every: https://spiral.computer?utm_source=youtube**Claire Vo built ChatPRD—an on-demand chief product officer powered by AI. It’s now used by over 10,000 product managers and is pulling in six figures in revenue. The best part?Claire has a demanding day job as the CPO at LaunchDarkly. So she built all of ChatPRD herself—over the weekend—with AI.I sat down with Claire to talk about how","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"**Automate 80% of your repetitive writing, thinking, and creative tasks****Try Spiral made by Dan Shipper &amp; Every: https://spiral.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"utm_source=youtube**Claire Vo built ChatPRD—an on-demand chief product officer powered by AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"It’s now used by over 10,000 product managers and is pulling in six figures in revenue.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"Claire has a demanding day job as the CPO at LaunchDarkly.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"So she built all of ChatPRD herself—over the weekend—with AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["utm_source=youtube**Claire Vo built ChatPRD—an on-demand chief product officer powered by AI.","It’s now used by over 10,000 product managers and is pulling in six figures in revenue.","Claire has a demanding day job as the CPO at LaunchDarkly."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-072｜Jhana Meditation Silenced Her Mind—And Changed Her View On AI | Nadia Asparouhova, Author and researcher
+
+- raw_ref: R-072
+- raw_original_id: 90cd8099-faa6-413d-9bb3-7e3676fb76b9
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-072-jhana-meditation-silenced-her-mind-and-changed-her-view-on-ai-nadia-as.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-072-jhana-meditation-silenced-her-mind-and-changed-her-view-on-ai-nadia-as.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Jhana-Meditation-Silenced-Her-MindAnd-Changed-Her-View-On-AI--Nadia-Asparouhova--Author-and-researcher-e32g767
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Jhana-Meditation-Silenced-Her-MindAnd-Changed-Her-View-On-AI--Nadia-Asparouhova--Author-and-researcher-e32g767
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: db98daf85a5aa59d
+- raw_full_text_hash: db98daf85a5aa59d
+- raw_semantic_hash: c20bd97a0657775d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"db98daf85a5aa59d","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"company_action","text":"After two Jhana meditation retreats Nadia Asparouhova could silence her mind, change her emotional state at will, and even intentionally slip out of consciousness. It challenged the idea that our minds are not under our control—and made her wonder if we’re more like AI than we realize. Nadia is a writer and researcher of technology and culture. She published Working in Public, a book about the evolution of open-source development, with Stripe Press in 2020. Her latest book, Antimemetics, is abou","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"After two Jhana meditation retreats Nadia Asparouhova could silence her mind, change her emotional state at will, and even intentionally slip out of consciousness.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"It challenged the idea that our minds are not under our control—and made her wonder if we’re more like AI than we realize.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Nadia is a writer and researcher of technology and culture.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"She published Working in Public, a book about the evolution of open-source development, with Stripe Press in 2020.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Her latest book, Antimemetics, is abou","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["After two Jhana meditation retreats Nadia Asparouhova could silence her mind, change her emotional state at will, and even intentionally slip out of consciousness. It challenged the idea that our minds are not under our control—and made her wonder if we’re more like AI than we realize. Nadia is a writer and researcher of technology and culture. She published Working in Public, a book about the evolution of open-source development, with Stripe Press in 2020. Her latest book, Antimemetics, is abou","After two Jhana meditation retreats Nadia Asparouhova could silence her mind, change her emotional state at will, and even intentionally slip out of consciousness.","It challenged the idea that our minds are not under our control—and made her wonder if we’re more like AI than we realize."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-073｜How AI Will Change Science Forever - Ep. 43 with Alice Albrecht
+
+- raw_ref: R-073
+- raw_original_id: c322438f-e71d-47d9-94cf-4531578346f3
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-073-how-ai-will-change-science-forever-ep-43-with-alice-albrecht.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-073-how-ai-will-change-science-forever-ep-43-with-alice-albrecht.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-AI-Will-Change-Science-Forever---Ep--43-with-Alice-Albrecht-e2sfgue
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-AI-Will-Change-Science-Forever---Ep--43-with-Alice-Albrecht-e2sfgue
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: ca9370cede61188d
+- raw_full_text_hash: ca9370cede61188d
+- raw_semantic_hash: 395895a425dae65a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ca9370cede61188d","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"company_action","text":"AI is going to change science forever. Small scale studies will give way to large scale open data gathering efforts. We’ll shift from seeking broad general theories to making contextual predictions in individual cases. The traditional research paper will change fundamentally. That’s why I had Alice Albrecht on the show. Few people straddle the worlds of science and AI like she does: She holds a Ph.D. in cognitive neuroscience from Yale and is a machine learning researcher with almost a decade","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"AI is going to change science forever.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Small scale studies will give way to large scale open data gathering efforts.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We’ll shift from seeking broad general theories to making contextual predictions in individual cases.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"The traditional research paper will change fundamentally.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"That’s why I had Alice Albrecht on the show.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["AI is going to change science forever. Small scale studies will give way to large scale open data gathering efforts. We’ll shift from seeking broad general theories to making contextual predictions in individual cases. The traditional research paper will change fundamentally. That’s why I had Alice Albrecht on the show. Few people straddle the worlds of science and AI like she does: She holds a Ph.D. in cognitive neuroscience from Yale and is a machine learning researcher with almost a decade","AI is going to change science forever.","Small scale studies will give way to large scale open data gathering efforts."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-074｜How We Incubate and Launch New Products With AI - Ep. 40 with Danny Aziz, Brandon Gell
+
+- raw_ref: R-074
+- raw_original_id: 219a939d-7dfe-4d49-99ed-69a36506bbe8
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-074-how-we-incubate-and-launch-new-products-with-ai-ep-40-with-danny-aziz-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-074-how-we-incubate-and-launch-new-products-with-ai-ep-40-with-danny-aziz-.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-We-Incubate-and-Launch-New-Products-With-AI---Ep--40-with-Danny-Aziz--Brandon-Gell-e2rivhg
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-We-Incubate-and-Launch-New-Products-With-AI---Ep--40-with-Danny-Aziz--Brandon-Gell-e2rivhg
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: c9d29857626e6920
+- raw_full_text_hash: c9d29857626e6920
+- raw_semantic_hash: 791f0b11228d0075
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c9d29857626e6920","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_market_structure
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"product_update","text":"Over the last few months at Every, we’ve: Launched two AI products Acquired tens of thousands of users Released a new incubation in private alpha The weird thing is: We’re a media company with &lt; 10 full-time employees, and we’re mostly bootstrapped. That’s not how things are supposed to work in startups. When we started our product incubation arm six months ago, many people told us it wouldn’t work: divided focus, not enough money, and the biggest one—it would be too hard to find","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"Over the last few months at Every, we’ve: Launched two AI products Acquired tens of thousands of users Released a new incubation in private alpha The weird thing is: We’re a media company with &lt; 10 full-time employees, and we’re mostly bootstrapped.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"That’s not how things are supposed to work in startups.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"When we started our product incubation arm six months ago, many people told us it wouldn’t work: divided focus, not enough money, and the biggest one—it would be too hard to find","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Over the last few months at Every, we’ve: Launched two AI products Acquired tens of thousands of users Released a new incubation in private alpha The weird thing is: We’re a media company with &lt; 10 full-time employees, and we’re mostly bootstrapped. That’s not how things are supposed to work in startups. When we started our product incubation arm six months ago, many people told us it wouldn’t work: divided focus, not enough money, and the biggest one—it would be too hard to find","Over the last few months at Every, we’ve: Launched two AI products Acquired tens of thousands of users Released a new incubation in private alpha The weird thing is: We’re a media company with &lt; 10 full-time employees, and we’re mostly bootstrapped.","That’s not how things are supposed to work in startups."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-075｜Building AI That Builds Itself - Ep. 35 with Yohei Nakajima
+
+- raw_ref: R-075
+- raw_original_id: aad46676-d83c-4b14-a60b-e079ff0ec887
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-075-building-ai-that-builds-itself-ep-35-with-yohei-nakajima.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-075-building-ai-that-builds-itself-ep-35-with-yohei-nakajima.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Building-AI-That-Builds-Itself---Ep--35-with-Yohei-Nakajima-e2q1qhq
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Building-AI-That-Builds-Itself---Ep--35-with-Yohei-Nakajima-e2q1qhq
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: e877ac5c38c4d138
+- raw_full_text_hash: e877ac5c38c4d138
+- raw_semantic_hash: adb915b41ec17d31
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e877ac5c38c4d138","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"product_update","text":"Yohei Nakajima leads a double life. By day, he’s a general partner of a small venture firm, Untapped Capital. By night, he’s one of the most prolific internet tinkerers in AI. (He also sometimes works on automating his job as a venture capitalist.) He’s the creator of BabyAGI (@babyAGI_), the first open-source autonomous agent that went viral in March 2023. Yohei has since released seven iterations of BabyAGI (each one named after a different animal), a coding agent called Ditto, a framework f","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Yohei Nakajima leads a double life.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"By day, he’s a general partner of a small venture firm, Untapped Capital.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"By night, he’s one of the most prolific internet tinkerers in AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"(He also sometimes works on automating his job as a venture capitalist.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":") He’s the creator of BabyAGI (@babyAGI_), the first open-source autonomous agent that went viral in March 2023.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Yohei Nakajima leads a double life. By day, he’s a general partner of a small venture firm, Untapped Capital. By night, he’s one of the most prolific internet tinkerers in AI. (He also sometimes works on automating his job as a venture capitalist.) He’s the creator of BabyAGI (@babyAGI_), the first open-source autonomous agent that went viral in March 2023. Yohei has since released seven iterations of BabyAGI (each one named after a different animal), a coding agent called Ditto, a framework f","Yohei Nakajima leads a double life.","By day, he’s a general partner of a small venture firm, Untapped Capital."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-076｜How to Be a Smarter Reader in the Age of AI - Ep. 30 with Alex Wieckowski
+
+- raw_ref: R-076
+- raw_original_id: 74a9eca5-a657-4901-acb0-bc607b4dc6bd
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-076-how-to-be-a-smarter-reader-in-the-age-of-ai-ep-30-with-alex-wieckowski.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-076-how-to-be-a-smarter-reader-in-the-age-of-ai-ep-30-with-alex-wieckowski.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Be-a-Smarter-Reader-in-the-Age-of-AI---Ep--30-with-Alex-Wieckowski-e2n608a
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Be-a-Smarter-Reader-in-the-Age-of-AI---Ep--30-with-Alex-Wieckowski-e2n608a
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 9c5d3fda8c74470a
+- raw_full_text_hash: 9c5d3fda8c74470a
+- raw_semantic_hash: 7dec6afdd7c4ca74
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9c5d3fda8c74470a","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"Alex Wieckowski is on a mission to make you fall in love with reading again—and he thinks AI can help. Alex, who writes a newsletter that captures lessons from books he’s read and tips to become a better reader, Alex &amp; Books, is a creator with over 1 million followers across social platforms. He’s also the author of a book of quotes that will inspire you to read more, Learn to Love Reading. We spent an hour talking about how Alex uses AI to be a smarter reader, and we tested out a few strate","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Alex Wieckowski is on a mission to make you fall in love with reading again—and he thinks AI can help.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"number","text":"Alex, who writes a newsletter that captures lessons from books he’s read and tips to become a better reader, Alex &amp; Books, is a creator with over 1 million followers across social platforms.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"He’s also the author of a book of quotes that will inspire you to read more, Learn to Love Reading.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We spent an hour talking about how Alex uses AI to be a smarter reader, and we tested out a few strate","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Alex Wieckowski is on a mission to make you fall in love with reading again—and he thinks AI can help.","He’s also the author of a book of quotes that will inspire you to read more, Learn to Love Reading.","We spent an hour talking about how Alex uses AI to be a smarter reader, and we tested out a few strate"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-077｜Dwarkesh Patel’s Quest to Learn Everything - Ep. 27
+
+- raw_ref: R-077
+- raw_original_id: f85f9338-d1df-4d64-ace5-e294483b80a4
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-077-dwarkesh-patel-s-quest-to-learn-everything-ep-27.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-077-dwarkesh-patel-s-quest-to-learn-everything-ep-27.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Dwarkesh-Patels-Quest-to-Learn-Everything---Ep--27-e2md2rr
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Dwarkesh-Patels-Quest-to-Learn-Everything---Ep--27-e2md2rr
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 34ae155a013daa0f
+- raw_full_text_hash: 34ae155a013daa0f
+- raw_semantic_hash: 23308c76cb6c88ed
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"34ae155a013daa0f","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_case
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"case_detail","text":"This episode is sponsored by Command Bar, an embedded AI copilot designed to improve user experience on your web or mobile site. Find them here: https://www.commandbar.com/copilot/ Dwarkesh Patel is on a quest to know everything. He’s using LLMs to enhance how he reads, learns, thinks, and conducts interviews. Dwarkesh is a podcaster who’s interviewed a wide range of people, like Mark Zuckerberg, Tony Blair, and Marc Andreesen. Before conducting each of these interviews, Dwarkesh learns as","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"This episode is sponsored by Command Bar, an embedded AI copilot designed to improve user experience on your web or mobile site.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Find them here: https://www.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"case_detail","text":"com/copilot/ Dwarkesh Patel is on a quest to know everything.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"He’s using LLMs to enhance how he reads, learns, thinks, and conducts interviews.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Dwarkesh is a podcaster who’s interviewed a wide range of people, like Mark Zuckerberg, Tony Blair, and Marc Andreesen.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Find them here: https://www.","He’s using LLMs to enhance how he reads, learns, thinks, and conducts interviews.","Dwarkesh is a podcaster who’s interviewed a wide range of people, like Mark Zuckerberg, Tony Blair, and Marc Andreesen."],"case_details":["This episode is sponsored by Command Bar, an embedded AI copilot designed to improve user experience on your web or mobile site. Find them here: https://www.commandbar.com/copilot/ Dwarkesh Patel is on a quest to know everything. He’s using LLMs to enhance how he reads, learns, thinks, and conducts interviews. Dwarkesh is a podcaster who’s interviewed a wide range of people, like Mark Zuckerberg, Tony Blair, and Marc Andreesen. Before conducting each of these interviews, Dwarkesh learns as","This episode is sponsored by Command Bar, an embedded AI copilot designed to improve user experience on your web or mobile site.","com/copilot/ Dwarkesh Patel is on a quest to know everything."],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-078｜Take Your Business From Zero to One With AI - Ep. 16 with Nicholas Thorne
+
+- raw_ref: R-078
+- raw_original_id: a6e16fc9-f04b-41dd-8f7b-191ca9515e38
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-078-take-your-business-from-zero-to-one-with-ai-ep-16-with-nicholas-thorne.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-078-take-your-business-from-zero-to-one-with-ai-ep-16-with-nicholas-thorne.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Take-Your-Business-From-Zero-to-One-With-AI---Ep--16-with-Nicholas-Thorne-e2hktdi
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Take-Your-Business-From-Zero-to-One-With-AI---Ep--16-with-Nicholas-Thorne-e2hktdi
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 0f844afac92e57a5
+- raw_full_text_hash: 0f844afac92e57a5
+- raw_semantic_hash: 4becbb53f4aa04ed
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0f844afac92e57a5","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"case_detail","text":"Nicholas Thorne is building Squarespace for the AI age. It’s called Audos, and it’s an AI chatbot to help any entrepreneur go from idea to: - Pitch deck - Working website - Custom GPT - User interviews with real customers All in just a few minutes. And he did it using ChatGPTapp. It’s AI all the way down—and it’s one of the most impressive AI businesses I’ve ever seen. Nicholas is a general partner at Prehype, an incubator that launched Barkbox and Ro Health. It’s also where I started Every, so","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Nicholas Thorne is building Squarespace for the AI age.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"case_detail","text":"It’s called Audos, and it’s an AI chatbot to help any entrepreneur go from idea to: - Pitch deck - Working website - Custom GPT - User interviews with real customers All in just a few minutes.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"And he did it using ChatGPTapp.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"It’s AI all the way down—and it’s one of the most impressive AI businesses I’ve ever seen.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"Nicholas is a general partner at Prehype, an incubator that launched Barkbox and Ro Health.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Nicholas Thorne is building Squarespace for the AI age.","And he did it using ChatGPTapp.","It’s AI all the way down—and it’s one of the most impressive AI businesses I’ve ever seen."],"case_details":["Nicholas Thorne is building Squarespace for the AI age. It’s called Audos, and it’s an AI chatbot to help any entrepreneur go from idea to: - Pitch deck - Working website - Custom GPT - User interviews with real customers All in just a few minutes. And he did it using ChatGPTapp. It’s AI all the way down—and it’s one of the most impressive AI businesses I’ve ever seen. Nicholas is a general partner at Prehype, an incubator that launched Barkbox and Ro Health. It’s also where I started Every, so","It’s called Audos, and it’s an AI chatbot to help any entrepreneur go from idea to: - Pitch deck - Working website - Custom GPT - User interviews with real customers All in just a few minutes."],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-079｜How to Run a Profitable One-person Internet Business Using AI - Ep. 14 with Ben Tossell
+
+- raw_ref: R-079
+- raw_original_id: ef6cec53-5903-4dda-b64b-f450c7091785
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-079-how-to-run-a-profitable-one-person-internet-business-using-ai-ep-14-wi.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-079-how-to-run-a-profitable-one-person-internet-business-using-ai-ep-14-wi.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Run-a-Profitable-One-person-Internet-Business-Using-AI---Ep--14-with-Ben-Tossell-e2h0ak1
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Run-a-Profitable-One-person-Internet-Business-Using-AI---Ep--14-with-Ben-Tossell-e2h0ak1
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 848c1c14fd1563d8
+- raw_full_text_hash: 848c1c14fd1563d8
+- raw_semantic_hash: d6db68f91f581977
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"848c1c14fd1563d8","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_market_structure
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"company_action","text":"You can build and run a one-person internet business that earns half a million in annual revenue—with AI. Ben Tossell showed me exactly how in this episode. Ben is the founder of Ben’s Bites—one of the best daily AI newsletters out there, which I love reading every day—and an investor in a number of promising early-stage AI startups. Ben is also an experienced founder whose no-code platform Makerpad was acquired by Zapier. I think Ben is really good at starting profitable internet businesses t","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"You can build and run a one-person internet business that earns half a million in annual revenue—with AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Ben Tossell showed me exactly how in this episode.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Ben is the founder of Ben’s Bites—one of the best daily AI newsletters out there, which I love reading every day—and an investor in a number of promising early-stage AI startups.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Ben is also an experienced founder whose no-code platform Makerpad was acquired by Zapier.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"I think Ben is really good at starting profitable internet businesses t","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["You can build and run a one-person internet business that earns half a million in annual revenue—with AI. Ben Tossell showed me exactly how in this episode. Ben is the founder of Ben’s Bites—one of the best daily AI newsletters out there, which I love reading every day—and an investor in a number of promising early-stage AI startups. Ben is also an experienced founder whose no-code platform Makerpad was acquired by Zapier. I think Ben is really good at starting profitable internet businesses t","You can build and run a one-person internet business that earns half a million in annual revenue—with AI.","Ben Tossell showed me exactly how in this episode."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-080｜Economist Tyler Cowen on How ChatGPT Is Changing Your Job - Ep. 7 with Tyler Cowen
+
+- raw_ref: R-080
+- raw_original_id: 774358f6-aef9-464e-9f6d-7841c8707857
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-080-economist-tyler-cowen-on-how-chatgpt-is-changing-your-job-ep-7-with-ty.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-080-economist-tyler-cowen-on-how-chatgpt-is-changing-your-job-ep-7-with-ty.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Economist-Tyler-Cowen-on-How-ChatGPT-Is-Changing-Your-Job---Ep--7-with-Tyler-Cowen-e2es2vt
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Economist-Tyler-Cowen-on-How-ChatGPT-Is-Changing-Your-Job---Ep--7-with-Tyler-Cowen-e2es2vt
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: ed2f819c6bf9eaed
+- raw_full_text_hash: ed2f819c6bf9eaed
+- raw_semantic_hash: 5c51cc12606c349f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ed2f819c6bf9eaed","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Tyler Cowen is an economist who has been thinking about the impact of technology on life, work, and the economy for the past decade. He is a prolific writer behind the leading economic blog Marginal Revolution, a professor of economics at George Mason University, and the author of 17 books. In this episode, I dive deep with him on how ChatGPT will change the economy, and how he uses it in his own life. We get into: How ChatGPT makes him smarter How he uses it for deep reading and research","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Tyler Cowen is an economist who has been thinking about the impact of technology on life, work, and the economy for the past decade.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"He is a prolific writer behind the leading economic blog Marginal Revolution, a professor of economics at George Mason University, and the author of 17 books.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"In this episode, I dive deep with him on how ChatGPT will change the economy, and how he uses it in his own life.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We get into: How ChatGPT makes him smarter How he uses it for deep reading and research","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Tyler Cowen is an economist who has been thinking about the impact of technology on life, work, and the economy for the past decade. He is a prolific writer behind the leading economic blog Marginal Revolution, a professor of economics at George Mason University, and the author of 17 books. In this episode, I dive deep with him on how ChatGPT will change the economy, and how he uses it in his own life. We get into: How ChatGPT makes him smarter How he uses it for deep reading and research","Tyler Cowen is an economist who has been thinking about the impact of technology on life, work, and the economy for the past decade.","He is a prolific writer behind the leading economic blog Marginal Revolution, a professor of economics at George Mason University, and the author of 17 books."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-081｜You Can Build an App in 60 Minutes with ChatGPT - Ep. 5 with Geoffrey Litt
+
+- raw_ref: R-081
+- raw_original_id: b2cbea01-b30a-4f99-a760-ad89efb2ca29
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-081-you-can-build-an-app-in-60-minutes-with-chatgpt-ep-5-with-geoffrey-lit.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-081-you-can-build-an-app-in-60-minutes-with-chatgpt-ep-5-with-geoffrey-lit.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/You-Can-Build-an-App-in-60-Minutes-with-ChatGPT---Ep--5-with-Geoffrey-Litt-e2e8f4q
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/You-Can-Build-an-App-in-60-Minutes-with-ChatGPT---Ep--5-with-Geoffrey-Litt-e2e8f4q
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 295a4763c02bd3c1
+- raw_full_text_hash: 295a4763c02bd3c1
+- raw_semantic_hash: b3682681f843e22e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"295a4763c02bd3c1","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"This show might be a first in the history of podcasts: Researcher Geoffrey Litt and I built an app together using ChatGPTapp and Replit in under 60 minutes—while we talked. We wanted to show how AI and ChatGPT change who gets to build software and how they usher in a world where everyone can modify and remix the apps they use every day. So we did it live, and ChatGPT delivered a working prototype at the end of the episode. It was a tiny glimpse of the future—and it pushes the boundaries of what","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"This show might be a first in the history of podcasts: Researcher Geoffrey Litt and I built an app together using ChatGPTapp and Replit in under 60 minutes—while we talked.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We wanted to show how AI and ChatGPT change who gets to build software and how they usher in a world where everyone can modify and remix the apps they use every day.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"So we did it live, and ChatGPT delivered a working prototype at the end of the episode.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"It was a tiny glimpse of the future—and it pushes the boundaries of what","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["This show might be a first in the history of podcasts: Researcher Geoffrey Litt and I built an app together using ChatGPTapp and Replit in under 60 minutes—while we talked. We wanted to show how AI and ChatGPT change who gets to build software and how they usher in a world where everyone can modify and remix the apps they use every day. So we did it live, and ChatGPT delivered a working prototype at the end of the episode. It was a tiny glimpse of the future—and it pushes the boundaries of what","This show might be a first in the history of podcasts: Researcher Geoffrey Litt and I built an app together using ChatGPTapp and Replit in under 60 minutes—while we talked.","We wanted to show how AI and ChatGPT change who gets to build software and how they usher in a world where everyone can modify and remix the apps they use every day."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-082｜Using ChatGPT for Writing and Recommending Books - Ep. 2 with Nat Eliason
+
+- raw_ref: R-082
+- raw_original_id: 8dc704b4-1529-46cb-b8e3-22b7c6dbddb4
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-082-using-chatgpt-for-writing-and-recommending-books-ep-2-with-nat-eliason.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-082-using-chatgpt-for-writing-and-recommending-books-ep-2-with-nat-eliason.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Using-ChatGPT-for-Writing-and-Recommending-Books---Ep--2-with-Nat-Eliason-e2cm5s8
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Using-ChatGPT-for-Writing-and-Recommending-Books---Ep--2-with-Nat-Eliason-e2cm5s8
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 30a7c306da7f66a3
+- raw_full_text_hash: 30a7c306da7f66a3
+- raw_semantic_hash: ec14562036e53c63
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"30a7c306da7f66a3","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 9.6
+- usable_for: index_only
+- key_excerpts: [{"type":"funding","text":"How Nat Eliason uses ChatGPT to write books: Nat Eliason is a shape-shifter. He’s a writer with a book deal from Random House, a crypto trader, a Roam Research aficionado, a marketer, a book podcaster, a parent, and a seed oil iconoclast. He&#39;s amassed thousands of newsletter subscribers, 70,000 followers on X, and 110,000 on TikTok. His secret weapon for all of his exploring? ChatGPT. Nat took me through why he uses it every day for his work and his life. In this interview we talk about","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"How Nat Eliason uses ChatGPT to write books: Nat Eliason is a shape-shifter.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"funding","text":"He’s a writer with a book deal from Random House, a crypto trader, a Roam Research aficionado, a marketer, a book podcaster, a parent, and a seed oil iconoclast.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"He&#39;s amassed thousands of newsletter subscribers, 70,000 followers on X, and 110,000 on TikTok.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"His secret weapon for all of his exploring?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Nat took me through why he uses it every day for his work and his life.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["How Nat Eliason uses ChatGPT to write books: Nat Eliason is a shape-shifter. He’s a writer with a book deal from Random House, a crypto trader, a Roam Research aficionado, a marketer, a book podcaster, a parent, and a seed oil iconoclast. He&#39;s amassed thousands of newsletter subscribers, 70,000 followers on X, and 110,000 on TikTok. His secret weapon for all of his exploring? ChatGPT. Nat took me through why he uses it every day for his work and his life. In this interview we talk about","How Nat Eliason uses ChatGPT to write books: Nat Eliason is a shape-shifter.","He’s a writer with a book deal from Random House, a crypto trader, a Roam Research aficionado, a marketer, a book podcaster, a parent, and a seed oil iconoclast."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-083｜OpenAI&#039;s GPT-5.6 Sol autonomously post-trained the smaller Luna model with a &quot;fairly underspecified prompt&quot;
+
+- raw_ref: R-083
+- raw_original_id: https://the-decoder.com/?p=37610
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-083-openai-039-s-gpt-5-6-sol-autonomously-post-trained-the-smaller-luna-mo.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-083-openai-039-s-gpt-5-6-sol-autonomously-post-trained-the-smaller-luna-mo.json`
+- source: The Decoder AI News｜https://the-decoder.com/openais-gpt-5-6-sol-autonomously-post-trained-the-smaller-luna-model-with-a-fairly-underspecified-prompt/
+- source_url: https://the-decoder.com/openais-gpt-5-6-sol-autonomously-post-trained-the-smaller-luna-model-with-a-fairly-underspecified-prompt/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: dd3e1419e0a2414b
+- raw_full_text_hash: dd3e1419e0a2414b
+- raw_semantic_hash: a74b82df712c6989
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dd3e1419e0a2414b","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5
+- raw_capture_priority: 9
+- usable_for: index_only
+- key_excerpts: [{"type":"quote","text":"According to OpenAI, GPT-5.6 Sol independently fine-tuned the smaller Luna model, triggered by a single \"fairly under-specified prompt.\" In OpenAI's internal RSI benchmark for recursive self-improvement, Sol scores 16.2 points higher than GPT-5.5. OpenAI believes the \"automated researcher\" is within reach. The article OpenAI&#039;s GPT-5.6 Sol autonomously post-trained the smaller Luna model with a &quot;fairly underspecified prompt&quot; appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"According to OpenAI, GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"6 Sol independently fine-tuned the smaller Luna model, triggered by a single \"fairly under-specified prompt.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"\" In OpenAI's internal RSI benchmark for recursive self-improvement, Sol scores 16.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"2 points higher than GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"OpenAI believes the \"automated researcher\" is within reach.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["According to OpenAI, GPT-5.","6 Sol independently fine-tuned the smaller Luna model, triggered by a single \"fairly under-specified prompt.","\" In OpenAI's internal RSI benchmark for recursive self-improvement, Sol scores 16."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-084｜llm 0.31.1
+
+- raw_ref: R-084
+- raw_original_id: https://simonwillison.net/2026/Jul/9/llm/#atom-everything
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-084-llm-0-31-1.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-084-llm-0-31-1.json`
+- source: Simon Willison's Blog｜https://simonwillison.net/2026/Jul/9/llm/#atom-everything
+- source_url: https://simonwillison.net/2026/Jul/9/llm/#atom-everything
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: f7857a7177b63b8a
+- raw_full_text_hash: f7857a7177b63b8a
+- raw_semantic_hash: f32c44163f85e6c3
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f7857a7177b63b8a","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5
+- raw_capture_priority: 9
+- usable_for: watchlist
+- key_excerpts: [{"type":"quote","text":"&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=\"https://github.com/simonw/llm/releases/tag/0.31.1\"&gt;llm 0.31.1&lt;/a&gt;&lt;/p&gt; &lt;blockquote&gt; &lt;ul&gt; &lt;li&gt;Fix for a bug with OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers. &lt;a href=\"https://github.com/simonw/llm/issues/1521\"&gt;#1521&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/blockquote&gt; &lt;p&gt;This bug came up when I was testing &lt;a","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=\"https://github.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"com/simonw/llm/releases/tag/0.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"1&lt;/a&gt;&lt;/p&gt; &lt;blockquote&gt; &lt;ul&gt; &lt;li&gt;Fix for a bug with OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"&lt;a href=\"https://github.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"com/simonw/llm/issues/1521\"&gt;#1521&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/blockquote&gt; &lt;p&gt;This bug came up when I was testing &lt;a","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=\"https://github.","com/simonw/llm/releases/tag/0.","1&lt;/a&gt;&lt;/p&gt; &lt;blockquote&gt; &lt;ul&gt; &lt;li&gt;Fix for a bug with OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-085｜Best of the Pod: Dwarkesh Patel’s Quest to Learn Everything
+
+- raw_ref: R-085
+- raw_original_id: d5235d4a-d5fe-46af-b6df-538406bb1ffe
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-085-best-of-the-pod-dwarkesh-patel-s-quest-to-learn-everything.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-085-best-of-the-pod-dwarkesh-patel-s-quest-to-learn-everything.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-Dwarkesh-Patels-Quest-to-Learn-Everything-e367r0n
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-Dwarkesh-Patels-Quest-to-Learn-Everything-e367r0n
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: dab6851b1d545aa5
+- raw_full_text_hash: dab6851b1d545aa5
+- raw_semantic_hash: 2601328f7c269507
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dab6851b1d545aa5","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: ai_hardware_lens
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5
+- raw_capture_priority: 9
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Dwarkesh Patel is on a quest to know everything. He’s using LLMs to enhance how he reads, learns, thinks, and conducts interviews. Dwarkesh is a podcaster who’s interviewed a wide range of people, like Mark Zuckerberg, Tony Blair, and Marc Andreesen. Before conducting each of these interviews, Dwarkesh learns as much as he can about his guest and their area of expertise—AI hardware, tense geopolitical crises, and the genetics of human origins, to name a few. The most important tool in his learni","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Dwarkesh Patel is on a quest to know everything.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"He’s using LLMs to enhance how he reads, learns, thinks, and conducts interviews.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Dwarkesh is a podcaster who’s interviewed a wide range of people, like Mark Zuckerberg, Tony Blair, and Marc Andreesen.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Before conducting each of these interviews, Dwarkesh learns as much as he can about his guest and their area of expertise—AI hardware, tense geopolitical crises, and the genetics of human origins, to name a few.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"The most important tool in his learni","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Dwarkesh Patel is on a quest to know everything. He’s using LLMs to enhance how he reads, learns, thinks, and conducts interviews. Dwarkesh is a podcaster who’s interviewed a wide range of people, like Mark Zuckerberg, Tony Blair, and Marc Andreesen. Before conducting each of these interviews, Dwarkesh learns as much as he can about his guest and their area of expertise—AI hardware, tense geopolitical crises, and the genetics of human origins, to name a few. The most important tool in his learni","Dwarkesh Patel is on a quest to know everything.","He’s using LLMs to enhance how he reads, learns, thinks, and conducts interviews."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-086｜Intentional Tech: Designing AI for Human Flourishing | Alex Komoroske, Cofounder and CEO of Common Tools
+
+- raw_ref: R-086
+- raw_original_id: 17ca8f42-5ac6-4c3c-b853-7c30de8b0576
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-086-intentional-tech-designing-ai-for-human-flourishing-alex-komoroske-cof.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-086-intentional-tech-designing-ai-for-human-flourishing-alex-komoroske-cof.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Intentional-Tech-Designing-AI-for-Human-Flourishing--Alex-Komoroske--Cofounder-and-CEO-of-Common-Tools-e359phs
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Intentional-Tech-Designing-AI-for-Human-Flourishing--Alex-Komoroske--Cofounder-and-CEO-of-Common-Tools-e359phs
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: operators
+- source_level: C
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: df486be3fa93b595
+- raw_full_text_hash: df486be3fa93b595
+- raw_semantic_hash: 6b468d3e1cd70cfa
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"df486be3fa93b595","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5
+- raw_capture_priority: 9
+- usable_for: index_only
+- key_excerpts: [{"type":"supporting_context","text":"The smallest technical decisions become humanity&#39;s biggest pivots:The same-origin policy—a well-intentioned browser security rule from the 1990s—accidentally created Facebook, Google, and every data monopoly since. It locks your data in silos—and you stayed where your stuff already is. This dynamic created aggregators.Alex Komoroske—who led Chrome&#39;s web platform team at Google and ran corporate strategy at Stripe—saw this pattern play out firsthand. And he&#39;s obsessed with the tiny de","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"The smallest technical decisions become humanity&#39;s biggest pivots:The same-origin policy—a well-intentioned browser security rule from the 1990s—accidentally created Facebook, Google, and every data monopoly since.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"It locks your data in silos—and you stayed where your stuff already is.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"This dynamic created aggregators.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Alex Komoroske—who led Chrome&#39;s web platform team at Google and ran corporate strategy at Stripe—saw this pattern play out firsthand.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"And he&#39;s obsessed with the tiny de","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["It locks your data in silos—and you stayed where your stuff already is.","This dynamic created aggregators.","Alex Komoroske—who led Chrome&#39;s web platform team at Google and ran corporate strategy at Stripe—saw this pattern play out firsthand."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["The smallest technical decisions become humanity&#39;s biggest pivots:The same-origin policy—a well-intentioned browser security rule from the 1990s—accidentally created Facebook, Google, and every data monopoly since. It locks your data in silos—and you stayed where your stuff already is. This dynamic created aggregators.Alex Komoroske—who led Chrome&#39;s web platform team at Google and ran corporate strategy at Stripe—saw this pattern play out firsthand. And he&#39;s obsessed with the tiny de","The smallest technical decisions become humanity&#39;s biggest pivots:The same-origin policy—a well-intentioned browser security rule from the 1990s—accidentally created Facebook, Google, and every data monopoly since."]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-087｜How a Top Podcaster Rides the AI Wave - Ep. 28 with Nathaniel Whittemore
+
+- raw_ref: R-087
+- raw_original_id: 7f5888c7-b26b-4915-a3e9-1427e04ed80a
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-087-how-a-top-podcaster-rides-the-ai-wave-ep-28-with-nathaniel-whittemore.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-087-how-a-top-podcaster-rides-the-ai-wave-ep-28-with-nathaniel-whittemore.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-a-Top-Podcaster-Rides-the-AI-Wave---Ep--28-with-Nathaniel-Whittemore-e2mkq55
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-a-Top-Podcaster-Rides-the-AI-Wave---Ep--28-with-Nathaniel-Whittemore-e2mkq55
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 59adef1a9c34eb6e
+- raw_full_text_hash: 59adef1a9c34eb6e
+- raw_semantic_hash: 7b6801537e882a17
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"59adef1a9c34eb6e","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5
+- raw_capture_priority: 9
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Keeping up with AI is Nathaniel Whittemore’s full-time job—and I spent an hour with him to understand how he does it. Nathaniel is the host of a top-ranked AI podcast on the technology charts, The AI Daily Brief, which breaks down the most important news in AI every day. He is also the founder and CEO of Superintelligent, a platform that teaches you how to use AI for work and fun through interactive video tutorials. We talked about how he curates information with X bookmarks, Google News, news","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Keeping up with AI is Nathaniel Whittemore’s full-time job—and I spent an hour with him to understand how he does it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Nathaniel is the host of a top-ranked AI podcast on the technology charts, The AI Daily Brief, which breaks down the most important news in AI every day.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"He is also the founder and CEO of Superintelligent, a platform that teaches you how to use AI for work and fun through interactive video tutorials.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We talked about how he curates information with X bookmarks, Google News, news","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Keeping up with AI is Nathaniel Whittemore’s full-time job—and I spent an hour with him to understand how he does it. Nathaniel is the host of a top-ranked AI podcast on the technology charts, The AI Daily Brief, which breaks down the most important news in AI every day. He is also the founder and CEO of Superintelligent, a platform that teaches you how to use AI for work and fun through interactive video tutorials. We talked about how he curates information with X bookmarks, Google News, news","Keeping up with AI is Nathaniel Whittemore’s full-time job—and I spent an hour with him to understand how he does it.","Nathaniel is the host of a top-ranked AI podcast on the technology charts, The AI Daily Brief, which breaks down the most important news in AI every day."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-088｜Is NotebookLM—Google's Research Assistant—the Ultimate Tool For Thought? - Ep.22 with Steven Johnson
+
+- raw_ref: R-088
+- raw_original_id: f88a1a17-4827-46e6-9cfc-a171ab22ad28
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-088-is-notebooklm-google-s-research-assistant-the-ultimate-tool-for-though.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-088-is-notebooklm-google-s-research-assistant-the-ultimate-tool-for-though.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Is-NotebookLMGoogles-Research-Assistantthe-Ultimate-Tool-For-Thought----Ep-22-with-Steven-Johnson-e2kijs9
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Is-NotebookLMGoogles-Research-Assistantthe-Ultimate-Tool-For-Thought----Ep-22-with-Steven-Johnson-e2kijs9
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: b1e21bb3ed1befce
+- raw_full_text_hash: b1e21bb3ed1befce
+- raw_semantic_hash: 987e1a21af1bfe8c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b1e21bb3ed1befce","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5
+- raw_capture_priority: 9
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"We use it to find bestselling author Steven Berlin Johnson’s next project. I sat down with bestselling author Steven Johnson to see if we could come up with a concept for his next project—using AI. The results were amazing. We loaded 200,000 words of NASA transcripts and all of Steven’s reading notes since 1999 into NotebookLM, Google’s personalized research assistant. We wanted to see if it could help us explore the Apollo 1 fire and find relevant and surprising ideas from history that could wo","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We use it to find bestselling author Steven Berlin Johnson’s next project.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"I sat down with bestselling author Steven Johnson to see if we could come up with a concept for his next project—using AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"The results were amazing.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We loaded 200,000 words of NASA transcripts and all of Steven’s reading notes since 1999 into NotebookLM, Google’s personalized research assistant.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We wanted to see if it could help us explore the Apollo 1 fire and find relevant and surprising ideas from history that could wo","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["We use it to find bestselling author Steven Berlin Johnson’s next project. I sat down with bestselling author Steven Johnson to see if we could come up with a concept for his next project—using AI. The results were amazing. We loaded 200,000 words of NASA transcripts and all of Steven’s reading notes since 1999 into NotebookLM, Google’s personalized research assistant. We wanted to see if it could help us explore the Apollo 1 fire and find relevant and surprising ideas from history that could wo","We use it to find bestselling author Steven Berlin Johnson’s next project.","I sat down with bestselling author Steven Johnson to see if we could come up with a concept for his next project—using AI."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-089｜The AI Workflows Behind Every's Consulting Team
+
+- raw_ref: R-089
+- raw_original_id: 3a41b0c9-9f64-41b5-b88e-6b3dfce609b5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-089-the-ai-workflows-behind-every-s-consulting-team.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-089-the-ai-workflows-behind-every-s-consulting-team.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-AI-Workflows-Behind-Everys-Consulting-Team-e3lh60h
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-AI-Workflows-Behind-Everys-Consulting-Team-e3lh60h
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 69194e26dec2574f
+- raw_full_text_hash: 69194e26dec2574f
+- raw_semantic_hash: 4ca60e6353d10e7a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"69194e26dec2574f","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_vertical_solution
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 4.199999999999999
+- raw_capture_priority: 8.2
+- usable_for: watchlist
+- key_excerpts: [{"type":"workflow_change","text":"Natalia Quintero joined Every as head of consulting with a mandate to bring AI into the workflows of executives at hedge funds, private equity firms, and tech companies. She is also a recent Codex convert—someone who spent months resisting the tool before Dan Shipper’s daily pestering finally got her to try it.Natalia encountered Codex as a non-technical builder who had learned to navigate file systems and folder structures in Claude Code through sheer effort. She’s now used Codex to do everythi","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"Natalia Quintero joined Every as head of consulting with a mandate to bring AI into the workflows of executives at hedge funds, private equity firms, and tech companies.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"She is also a recent Codex convert—someone who spent months resisting the tool before Dan Shipper’s daily pestering finally got her to try it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Natalia encountered Codex as a non-technical builder who had learned to navigate file systems and folder structures in Claude Code through sheer effort.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"She’s now used Codex to do everythi","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["She is also a recent Codex convert—someone who spent months resisting the tool before Dan Shipper’s daily pestering finally got her to try it.","Natalia encountered Codex as a non-technical builder who had learned to navigate file systems and folder structures in Claude Code through sheer effort.","She’s now used Codex to do everythi"],"case_details":[],"workflow_changes":["Natalia Quintero joined Every as head of consulting with a mandate to bring AI into the workflows of executives at hedge funds, private equity firms, and tech companies. She is also a recent Codex convert—someone who spent months resisting the tool before Dan Shipper’s daily pestering finally got her to try it.Natalia encountered Codex as a non-technical builder who had learned to navigate file systems and folder structures in Claude Code through sheer effort. She’s now used Codex to do everythi","Natalia Quintero joined Every as head of consulting with a mandate to bring AI into the workflows of executives at hedge funds, private equity firms, and tech companies."],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-090｜llm-meta-ai 0.1
+
+- raw_ref: R-090
+- raw_original_id: https://simonwillison.net/2026/Jul/9/llm-meta-ai/#atom-everything
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-090-llm-meta-ai-0-1.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-090-llm-meta-ai-0-1.json`
+- source: Simon Willison's Blog｜https://simonwillison.net/2026/Jul/9/llm-meta-ai/#atom-everything
+- source_url: https://simonwillison.net/2026/Jul/9/llm-meta-ai/#atom-everything
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: e361ddb07fde2cb7
+- raw_full_text_hash: e361ddb07fde2cb7
+- raw_semantic_hash: c9b8a86c66181145
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e361ddb07fde2cb7","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"quote","text":"&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=\"https://github.com/simonw/llm-meta-ai/releases/tag/0.1\"&gt;llm-meta-ai 0.1&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Let's LLM run prompts against the new &lt;a href=\"https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/\"&gt;muse-spark-1.1&lt;/a&gt; model.&lt;/p&gt; &lt;p&gt;Tags: &lt;a href=\"https://simonwillison.net/tags/llm\"&gt;llm&lt;/a&gt;, &lt;a href=\"https://simonwillison.net/tags/meta\"&gt;meta&lt;/a&gt;&lt;","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=\"https://github.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"com/simonw/llm-meta-ai/releases/tag/0.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"1\"&gt;llm-meta-ai 0.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"1&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Let's LLM run prompts against the new &lt;a href=\"https://ai.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"com/blog/introducing-muse-spark-meta-model-api/\"&gt;muse-spark-1.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;p&gt;&lt;strong&gt;Release:&lt;/strong&gt; &lt;a href=\"https://github.","com/simonw/llm-meta-ai/releases/tag/0.","1\"&gt;llm-meta-ai 0."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-091｜If SaaS Is Dead, Linear Didn't Get the Memo
+
+- raw_ref: R-091
+- raw_original_id: 50164965-b53d-42e0-9a49-35010c9e4e1d
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-091-if-saas-is-dead-linear-didn-t-get-the-memo.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-091-if-saas-is-dead-linear-didn-t-get-the-memo.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/If-SaaS-Is-Dead--Linear-Didnt-Get-the-Memo-e3h8fqj
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/If-SaaS-Is-Dead--Linear-Didnt-Get-the-Memo-e3h8fqj
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: a6a35317b59a766d
+- raw_full_text_hash: a6a35317b59a766d
+- raw_semantic_hash: abe955da90559b09
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a6a35317b59a766d","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"quote","text":"Founded in 2019, Linear is the rare company started pre-ChatGPT to have successfully reinvented itself as an agent-native business.On this episode of AI &amp; I, Dan Shipper sat down with Karri Saarinen, cofounder and CEO of the product management tool, to discuss building a platform where humans and agents develop software together—and why the \"SaaSpocalypse\" isn’t coming for all SaaS companies. If you found this episode interesting, please like, subscribe, comment, and share! To hear more from","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Founded in 2019, Linear is the rare company started pre-ChatGPT to have successfully reinvented itself as an agent-native business.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"On this episode of AI &amp; I, Dan Shipper sat down with Karri Saarinen, cofounder and CEO of the product management tool, to discuss building a platform where humans and agents develop software together—and why the \"SaaSpocalypse\" isn’t coming for all SaaS companies.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"If you found this episode interesting, please like, subscribe, comment, and share!","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Founded in 2019, Linear is the rare company started pre-ChatGPT to have successfully reinvented itself as an agent-native business.","If you found this episode interesting, please like, subscribe, comment, and share!"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-092｜Kate Lee on Taste, Hiring, and Running Editorial at Every
+
+- raw_ref: R-092
+- raw_original_id: 74866d63-a9ba-433e-9ad6-b6769d82267a
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-092-kate-lee-on-taste-hiring-and-running-editorial-at-every.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-092-kate-lee-on-taste-hiring-and-running-editorial-at-every.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Kate-Lee-on-Taste--Hiring--and-Running-Editorial-at-Every-e3gkn03
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Kate-Lee-on-Taste--Hiring--and-Running-Editorial-at-Every-e3gkn03
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 6d12d4dd86e27ee5
+- raw_full_text_hash: 6d12d4dd86e27ee5
+- raw_semantic_hash: 343969bb3db7c368
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6d12d4dd86e27ee5","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_vertical_solution
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: emerging_pool, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"Kate Lee has spent her career working with words—first as a literary agent, then in roles at Medium, WeWork, and Stripe. As Every’s editor in chief, she’s been the quiet force behind the newsletter for more than three years.Lately, something has shifted in Kate’s work. After years of watching her colleague Dan Shipper evangelize AI from the front lines, Katie has started rewiring how she works and is integrating more and more AI tools into her workflow.We had Kate on to talk about her career pat","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Kate Lee has spent her career working with words—first as a literary agent, then in roles at Medium, WeWork, and Stripe.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"As Every’s editor in chief, she’s been the quiet force behind the newsletter for more than three years.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Lately, something has shifted in Kate’s work.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"workflow_change","text":"After years of watching her colleague Dan Shipper evangelize AI from the front lines, Katie has started rewiring how she works and is integrating more and more AI tools into her workflow.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"We had Kate on to talk about her career pat","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Kate Lee has spent her career working with words—first as a literary agent, then in roles at Medium, WeWork, and Stripe.","As Every’s editor in chief, she’s been the quiet force behind the newsletter for more than three years.","Lately, something has shifted in Kate’s work."],"case_details":[],"workflow_changes":["Kate Lee has spent her career working with words—first as a literary agent, then in roles at Medium, WeWork, and Stripe. As Every’s editor in chief, she’s been the quiet force behind the newsletter for more than three years.Lately, something has shifted in Kate’s work. After years of watching her colleague Dan Shipper evangelize AI from the front lines, Katie has started rewiring how she works and is integrating more and more AI tools into her workflow.We had Kate on to talk about her career pat","After years of watching her colleague Dan Shipper evangelize AI from the front lines, Katie has started rewiring how she works and is integrating more and more AI tools into her workflow."],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-093｜We Made a Document Editor Where Humans and AI Work Side by Side
+
+- raw_ref: R-093
+- raw_original_id: 780a1bb8-7a20-4996-91bc-3bb36f1f5e6d
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-093-we-made-a-document-editor-where-humans-and-ai-work-side-by-side.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-093-we-made-a-document-editor-where-humans-and-ai-work-side-by-side.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/We-Made-a-Document-Editor-Where-Humans-and-AI-Work-Side-by-Side-e3g9h0m
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/We-Made-a-Document-Editor-Where-Humans-and-AI-Work-Side-by-Side-e3g9h0m
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 00c8322aca695e28
+- raw_full_text_hash: 00c8322aca695e28
+- raw_semantic_hash: ad46907171c55a6f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"00c8322aca695e28","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"company_action","text":"Every has unveiled a new product, built by CEO Dan Shipper. It&#39;s called Proof, a free, open-source, live collaborative document editor built for humans and AI agents to work in together. Proof started as a Mac app designed to show the provenance of AI-written text—purple for AI, green for human. But when Shipper rebuilt it as a web app with real-time collaboration, something clicked. Suddenly, everyone at Every was using it for everything from planning docs, to creative writing and even dail","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Every has unveiled a new product, built by CEO Dan Shipper.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"It&#39;s called Proof, a free, open-source, live collaborative document editor built for humans and AI agents to work in together.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Proof started as a Mac app designed to show the provenance of AI-written text—purple for AI, green for human.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"But when Shipper rebuilt it as a web app with real-time collaboration, something clicked.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Suddenly, everyone at Every was using it for everything from planning docs, to creative writing and even dail","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Every has unveiled a new product, built by CEO Dan Shipper. It&#39;s called Proof, a free, open-source, live collaborative document editor built for humans and AI agents to work in together. Proof started as a Mac app designed to show the provenance of AI-written text—purple for AI, green for human. But when Shipper rebuilt it as a web app with real-time collaboration, something clicked. Suddenly, everyone at Every was using it for everything from planning docs, to creative writing and even dail","Every has unveiled a new product, built by CEO Dan Shipper.","It&#39;s called Proof, a free, open-source, live collaborative document editor built for humans and AI agents to work in together."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-094｜Best of the Pod: Claude Code - How Two Engineers Ship Like a Team of 15
+
+- raw_ref: R-094
+- raw_original_id: 198c6446-743f-4164-b4ea-3f0a2ee0aa19
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-094-best-of-the-pod-claude-code-how-two-engineers-ship-like-a-team-of-15.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-094-best-of-the-pod-claude-code-how-two-engineers-ship-like-a-team-of-15.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-Claude-Code---How-Two-Engineers-Ship-Like-a-Team-of-15-e3b6hfo
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Best-of-the-Pod-Claude-Code---How-Two-Engineers-Ship-Like-a-Team-of-15-e3b6hfo
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: b7dca1d92f726c4f
+- raw_full_text_hash: b7dca1d92f726c4f
+- raw_semantic_hash: c7ba4edbd8fa84f0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b7dca1d92f726c4f","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_vertical_solution
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"workflow_change","text":"If you’re using AI to just write code, you’re missing out.Two engineers at Every shipped six features, five bug fixes, and three infrastructure updates in one week—and they did it by designing workflows with AI agents, where each task makes the next one easier, faster, and more reliable.In this episode of AI &amp; I, Dan Shipper interviewed the pair—Kieran Klaassen, general manager of Cora, our inbox management tool, and Cora engineer Nityesh Agarwal—about how they’re compounding their engineeri","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"If you’re using AI to just write code, you’re missing out.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"workflow_change","text":"Two engineers at Every shipped six features, five bug fixes, and three infrastructure updates in one week—and they did it by designing workflows with AI agents, where each task makes the next one easier, faster, and more reliable.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"In this episode of AI &amp; I, Dan Shipper interviewed the pair—Kieran Klaassen, general manager of Cora, our inbox management tool, and Cora engineer Nityesh Agarwal—about how they’re compounding their engineeri","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["If you’re using AI to just write code, you’re missing out.","In this episode of AI &amp; I, Dan Shipper interviewed the pair—Kieran Klaassen, general manager of Cora, our inbox management tool, and Cora engineer Nityesh Agarwal—about how they’re compounding their engineeri"],"case_details":[],"workflow_changes":["If you’re using AI to just write code, you’re missing out.Two engineers at Every shipped six features, five bug fixes, and three infrastructure updates in one week—and they did it by designing workflows with AI agents, where each task makes the next one easier, faster, and more reliable.In this episode of AI &amp; I, Dan Shipper interviewed the pair—Kieran Klaassen, general manager of Cora, our inbox management tool, and Cora engineer Nityesh Agarwal—about how they’re compounding their engineeri","Two engineers at Every shipped six features, five bug fixes, and three infrastructure updates in one week—and they did it by designing workflows with AI agents, where each task makes the next one easier, faster, and more reliable."],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-095｜Inside Claude Code From the Engineers Who Built It
+
+- raw_ref: R-095
+- raw_original_id: 8b07dd51-04c7-4194-95bb-7423968793ff
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-095-inside-claude-code-from-the-engineers-who-built-it.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-095-inside-claude-code-from-the-engineers-who-built-it.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Inside-Claude-Code-From-the-Engineers-Who-Built-It-e3a794m
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Inside-Claude-Code-From-the-Engineers-Who-Built-It-e3a794m
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 8982d818666088ec
+- raw_full_text_hash: 8982d818666088ec
+- raw_semantic_hash: b1c3fe776a55ff0f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8982d818666088ec","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_vertical_solution
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"company_action","text":"At Every, the team credits Claude Code with transforming the way they work.They now ship to codebases they barely know, each new feature makes the next easier to build, and even non-technical teammates confidently use the terminal.To explore how this happened, AI &amp; I host Dan Shipper invited Claude Code’s creators—Cat Wu (@_catwu) and Boris Cherny (@bcherny) from Anthropic AI—to discuss what they’ve learned from building one of the most beloved AI engineering tools in the world.This episode","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"At Every, the team credits Claude Code with transforming the way they work.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"They now ship to codebases they barely know, each new feature makes the next easier to build, and even non-technical teammates confidently use the terminal.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"To explore how this happened, AI &amp; I host Dan Shipper invited Claude Code’s creators—Cat Wu (@_catwu) and Boris Cherny (@bcherny) from Anthropic AI—to discuss what they’ve learned from building one of the most beloved AI engineering tools in the world.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["At Every, the team credits Claude Code with transforming the way they work.They now ship to codebases they barely know, each new feature makes the next easier to build, and even non-technical teammates confidently use the terminal.To explore how this happened, AI &amp; I host Dan Shipper invited Claude Code’s creators—Cat Wu (@_catwu) and Boris Cherny (@bcherny) from Anthropic AI—to discuss what they’ve learned from building one of the most beloved AI engineering tools in the world.This episode","At Every, the team credits Claude Code with transforming the way they work.","They now ship to codebases they barely know, each new feature makes the next easier to build, and even non-technical teammates confidently use the terminal."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-096｜Kevin Scott on The Future of Programming, AI Agents, and Microsoft’s Big Bet on the Agentic Web
+
+- raw_ref: R-096
+- raw_original_id: f7a2fcaf-fd0c-4698-b948-9e0a246d8cb8
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-096-kevin-scott-on-the-future-of-programming-ai-agents-and-microsoft-s-big.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-096-kevin-scott-on-the-future-of-programming-ai-agents-and-microsoft-s-big.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Kevin-Scott-on-The-Future-of-Programming--AI-Agents--and-Microsofts-Big-Bet-on-the-Agentic-Web-e334cfu
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Kevin-Scott-on-The-Future-of-Programming--AI-Agents--and-Microsofts-Big-Bet-on-the-Agentic-Web-e334cfu
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 0215b19b3c0feec7
+- raw_full_text_hash: 0215b19b3c0feec7
+- raw_semantic_hash: bf0e211b50b43a69
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0215b19b3c0feec7","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_vertical_solution
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"I interviewed Microsoft CTO Kevin Scott about the future of agents and software engineering for another special edition of AI &amp; I. With 41 years of programming behind him, Kevin has lived through nearly every big shift in modern software development. Here’s his clear-eyed take on what’s changing with AI, and how we can navigate what’s next:The real breakthrough for the agentic web is better plumbing. Kevin thinks agents won’t be useful until they can take action on your behalf by using tools","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"I interviewed Microsoft CTO Kevin Scott about the future of agents and software engineering for another special edition of AI &amp; I.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"With 41 years of programming behind him, Kevin has lived through nearly every big shift in modern software development.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Here’s his clear-eyed take on what’s changing with AI, and how we can navigate what’s next:The real breakthrough for the agentic web is better plumbing.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Kevin thinks agents won’t be useful until they can take action on your behalf by using tools","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["I interviewed Microsoft CTO Kevin Scott about the future of agents and software engineering for another special edition of AI &amp; I. With 41 years of programming behind him, Kevin has lived through nearly every big shift in modern software development. Here’s his clear-eyed take on what’s changing with AI, and how we can navigate what’s next:The real breakthrough for the agentic web is better plumbing. Kevin thinks agents won’t be useful until they can take action on your behalf by using tools","I interviewed Microsoft CTO Kevin Scott about the future of agents and software engineering for another special edition of AI &amp; I.","With 41 years of programming behind him, Kevin has lived through nearly every big shift in modern software development."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-097｜The Next AI Wave Will Be Social, Not Solo | Sarah Tavel, Benchmark and ex-Pinterest
+
+- raw_ref: R-097
+- raw_original_id: a33cdcb9-2f97-477e-904f-0989771f7bf5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-097-the-next-ai-wave-will-be-social-not-solo-sarah-tavel-benchmark-and-ex-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-097-the-next-ai-wave-will-be-social-not-solo-sarah-tavel-benchmark-and-ex-.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-Next-AI-Wave-Will-Be-Social--Not-Solo--Sarah-Tavel--Benchmark-and-ex-Pinterest-e326u9g
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-Next-AI-Wave-Will-Be-Social--Not-Solo--Sarah-Tavel--Benchmark-and-ex-Pinterest-e326u9g
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: operators
+- source_level: C
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: formal_report
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 2c8c6aa41ffe9cc6
+- raw_full_text_hash: 2c8c6aa41ffe9cc6
+- raw_semantic_hash: 216ec05694dda030
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2c8c6aa41ffe9cc6","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"opinion","text":"Sarah Tavel thinks it's criminal that ChatGPT isn’t inherently social.There’s no easy way to discover great prompts or share the ones that worked. As a venture partner at Benchmark, Sarah believes that the next wave of consumer AI will be built on this missing social layer—by product-driven founders who understand people, not just models. Sarah has seen this shift before. As one of Pinterest’s first product managers, she saw the company grow from a niche consumer tool to a beloved global communi","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Sarah Tavel thinks it's criminal that ChatGPT isn’t inherently social.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"There’s no easy way to discover great prompts or share the ones that worked.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"opinion","text":"As a venture partner at Benchmark, Sarah believes that the next wave of consumer AI will be built on this missing social layer—by product-driven founders who understand people, not just models.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Sarah has seen this shift before.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"As one of Pinterest’s first product managers, she saw the company grow from a niche consumer tool to a beloved global communi","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Sarah Tavel thinks it's criminal that ChatGPT isn’t inherently social.","There’s no easy way to discover great prompts or share the ones that worked.","Sarah has seen this shift before."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-098｜He’s Using AI to Optimize His Life - Ep. 53 with Jonny Miller
+
+- raw_ref: R-098
+- raw_original_id: 8c304ee9-1a8d-40ef-adfe-9fd043230d88
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-098-he-s-using-ai-to-optimize-his-life-ep-53-with-jonny-miller.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-098-he-s-using-ai-to-optimize-his-life-ep-53-with-jonny-miller.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Hes-Using-AI-to-Optimize-His-Life---Ep--53-with-Jonny-Miller-e30mq6s
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Hes-Using-AI-to-Optimize-His-Life---Ep--53-with-Jonny-Miller-e30mq6s
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 2d3db4f4ba355ba6
+- raw_full_text_hash: 2d3db4f4ba355ba6
+- raw_semantic_hash: c47894de1a57112e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2d3db4f4ba355ba6","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Jonny Miller uploaded his entire life to ChatGPT to use it as the ultimate AI coach. He created what he calls a Codex Vitae—with core personality traits, values, goals, burnout signals and more to load into ChatGPT. It hyper-customizes his responses, to help him access deep meditation states, create custom supplementation plans, and do deep research on areas of brain and body that he finds interesting. Jonny runs a course on nervous system mastery, hosts a podcast, coaches founders and CEOs, an","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Jonny Miller uploaded his entire life to ChatGPT to use it as the ultimate AI coach.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"He created what he calls a Codex Vitae—with core personality traits, values, goals, burnout signals and more to load into ChatGPT.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"It hyper-customizes his responses, to help him access deep meditation states, create custom supplementation plans, and do deep research on areas of brain and body that he finds interesting.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Jonny runs a course on nervous system mastery, hosts a podcast, coaches founders and CEOs, an","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Jonny Miller uploaded his entire life to ChatGPT to use it as the ultimate AI coach. He created what he calls a Codex Vitae—with core personality traits, values, goals, burnout signals and more to load into ChatGPT. It hyper-customizes his responses, to help him access deep meditation states, create custom supplementation plans, and do deep research on areas of brain and body that he finds interesting. Jonny runs a course on nervous system mastery, hosts a podcast, coaches founders and CEOs, an","Jonny Miller uploaded his entire life to ChatGPT to use it as the ultimate AI coach.","He created what he calls a Codex Vitae—with core personality traits, values, goals, burnout signals and more to load into ChatGPT."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-099｜He Built an AI Audience Simulator. It’s the Future of Customer Research. - Ep. 49 with Michael Taylor
+
+- raw_ref: R-099
+- raw_original_id: 11bd109e-6452-4232-b0f7-20a8b040e3f6
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-099-he-built-an-ai-audience-simulator-it-s-the-future-of-customer-research.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-099-he-built-an-ai-audience-simulator-it-s-the-future-of-customer-research.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/He-Built-an-AI-Audience-Simulator--Its-the-Future-of-Customer-Research----Ep--49-with-Michael-Taylor-e2vcucq
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/He-Built-an-AI-Audience-Simulator--Its-the-Future-of-Customer-Research----Ep--49-with-Michael-Taylor-e2vcucq
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 4fc0e34d3e8a3e68
+- raw_full_text_hash: 4fc0e34d3e8a3e68
+- raw_semantic_hash: 5d5d3929f613d225
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4fc0e34d3e8a3e68","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"case_detail","text":"Michael Taylor has perfected the art of getting AI to speak in tongues. He’s taught it to mimic the voices of your customers—so you can see how they would respond before you ship.Michael is the creator of Rally, a market research tool that lets you simulate an audience of AI personas. He built a simulator that lets us A/B test Every’s headlines on an audience that mimics the real Hacker News audience. It’s become a part of my writing workflow, and I love it because you test your assumptions quic","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Michael Taylor has perfected the art of getting AI to speak in tongues.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"case_detail","text":"He’s taught it to mimic the voices of your customers—so you can see how they would respond before you ship.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Michael is the creator of Rally, a market research tool that lets you simulate an audience of AI personas.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"He built a simulator that lets us A/B test Every’s headlines on an audience that mimics the real Hacker News audience.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"workflow_change","text":"It’s become a part of my writing workflow, and I love it because you test your assumptions quic","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Michael Taylor has perfected the art of getting AI to speak in tongues.","Michael is the creator of Rally, a market research tool that lets you simulate an audience of AI personas.","He built a simulator that lets us A/B test Every’s headlines on an audience that mimics the real Hacker News audience."],"case_details":["Michael Taylor has perfected the art of getting AI to speak in tongues. He’s taught it to mimic the voices of your customers—so you can see how they would respond before you ship.Michael is the creator of Rally, a market research tool that lets you simulate an audience of AI personas. He built a simulator that lets us A/B test Every’s headlines on an audience that mimics the real Hacker News audience. It’s become a part of my writing workflow, and I love it because you test your assumptions quic","He’s taught it to mimic the voices of your customers—so you can see how they would respond before you ship."],"workflow_changes":["It’s become a part of my writing workflow, and I love it because you test your assumptions quic"],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-100｜Do 60-Minute Coding Tasks in 60 Seconds—With AI - Ep. 41 with Steve Krouse
+
+- raw_ref: R-100
+- raw_original_id: 150be228-3aed-49be-873e-2006fd2b6cf5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-100-do-60-minute-coding-tasks-in-60-seconds-with-ai-ep-41-with-steve-krous.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-100-do-60-minute-coding-tasks-in-60-seconds-with-ai-ep-41-with-steve-krous.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Do-60-Minute-Coding-Tasks-in-60-SecondsWith-AI---Ep--41-with-Steve-Krouse-e2rru9g
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Do-60-Minute-Coding-Tasks-in-60-SecondsWith-AI---Ep--41-with-Steve-Krouse-e2rru9g
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: cc019e7ebfe2cdf1
+- raw_full_text_hash: cc019e7ebfe2cdf1
+- raw_semantic_hash: fddcaa18a7c2d7ab
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cc019e7ebfe2cdf1","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds. In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.12 months later, Steve Krouse and I built the same app with one prompt in less than a minute. Steve is the cofounder and CEO of Val Town, a cloud-based platform for developers to write, share, and deploy code directly in the browser. We used Townie, Val Town’s AI assista","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"12 months later, Steve Krouse and I built the same app with one prompt in less than a minute.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Steve is the cofounder and CEO of Val Town, a cloud-based platform for developers to write, share, and deploy code directly in the browser.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We used Townie, Val Town’s AI assista","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds. In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast.12 months later, Steve Krouse and I built the same app with one prompt in less than a minute. Steve is the cofounder and CEO of Val Town, a cloud-based platform for developers to write, share, and deploy code directly in the browser. We used Townie, Val Town’s AI assista","Here’s the most compelling benchmark of AI progress: A task that took 60 minutes a year ago now takes 60 seconds.","In January 2024, Geoffrey Litt and I spent an hour coaxing ChatGPT and Replit to build an app live on my podcast."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-101｜How to Win With Prompt Engineering - Ep. 38 with Jared Zoneraich
+
+- raw_ref: R-101
+- raw_original_id: 82bbcfba-d636-46c5-a8d4-ec7656e7b99e
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-101-how-to-win-with-prompt-engineering-ep-38-with-jared-zoneraich.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-101-how-to-win-with-prompt-engineering-ep-38-with-jared-zoneraich.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Win-With-Prompt-Engineering---Ep--38-with-Jared-Zoneraich-e2qn1mi
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Win-With-Prompt-Engineering---Ep--38-with-Jared-Zoneraich-e2qn1mi
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 5fbec92238803825
+- raw_full_text_hash: 5fbec92238803825
+- raw_semantic_hash: 13360b5c3500c3d4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5fbec92238803825","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: enterprise_ai_transformation_lens
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Prompt engineering matters more than ever. But it’s evolving into something totally new: A way for non-technical domain experts to solve complex problems with AI. I spent an hour talking to prompt wizard Jared Zoneraich, cofounder and CEO of PromptLayer, about why the death of prompt engineering is greatly exaggerated. And why the future of prompting is equipping non-technical experts with the tools to manage, deploy, and evaluate prompts quickly. We get into: His theory around why the “irred","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Prompt engineering matters more than ever.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"But it’s evolving into something totally new: A way for non-technical domain experts to solve complex problems with AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"I spent an hour talking to prompt wizard Jared Zoneraich, cofounder and CEO of PromptLayer, about why the death of prompt engineering is greatly exaggerated.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"And why the future of prompting is equipping non-technical experts with the tools to manage, deploy, and evaluate prompts quickly.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We get into: His theory around why the “irred","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Prompt engineering matters more than ever. But it’s evolving into something totally new: A way for non-technical domain experts to solve complex problems with AI. I spent an hour talking to prompt wizard Jared Zoneraich, cofounder and CEO of PromptLayer, about why the death of prompt engineering is greatly exaggerated. And why the future of prompting is equipping non-technical experts with the tools to manage, deploy, and evaluate prompts quickly. We get into: His theory around why the “irred","Prompt engineering matters more than ever.","But it’s evolving into something totally new: A way for non-technical domain experts to solve complex problems with AI."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-102｜How to Supercharge Your Writing With AI Tools - Ep. 33 with Evan Armstrong
+
+- raw_ref: R-102
+- raw_original_id: e6e39a2b-2fd7-4863-b58d-6484e72e91e4
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-102-how-to-supercharge-your-writing-with-ai-tools-ep-33-with-evan-armstron.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-102-how-to-supercharge-your-writing-with-ai-tools-ep-33-with-evan-armstron.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Supercharge-Your-Writing-With-AI-Tools---Ep--33-with-Evan-Armstrong-e2o002s
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Supercharge-Your-Writing-With-AI-Tools---Ep--33-with-Evan-Armstrong-e2o002s
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: d13084226350b5c4
+- raw_full_text_hash: d13084226350b5c4
+- raw_semantic_hash: fc318d462428013a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d13084226350b5c4","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"workflow_change","text":"How do two professional writers use AI to do the best work of their lives? In today’s show, Every’s lead writer Evan Armstrong and I conduct an expert workshop on how we use ChatGPT, Claude, AI-powered word processor Lex, and the prompt builder that Every launched, Spiral, to feed our obsession with words—and help us write for more than 78,000 readers every day. We talk about how AI helps us: Understand our taste—understanding what good is Pick a topic—knowing what to write about Craft ou","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"How do two professional writers use AI to do the best work of their lives?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"workflow_change","text":"In today’s show, Every’s lead writer Evan Armstrong and I conduct an expert workshop on how we use ChatGPT, Claude, AI-powered word processor Lex, and the prompt builder that Every launched, Spiral, to feed our obsession with words—and help us write for more than 78,000 readers every day.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"We talk about how AI helps us: Understand our taste—understanding what good is Pick a topic—knowing what to write about Craft ou","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["How do two professional writers use AI to do the best work of their lives?","We talk about how AI helps us: Understand our taste—understanding what good is Pick a topic—knowing what to write about Craft ou"],"case_details":[],"workflow_changes":["How do two professional writers use AI to do the best work of their lives? In today’s show, Every’s lead writer Evan Armstrong and I conduct an expert workshop on how we use ChatGPT, Claude, AI-powered word processor Lex, and the prompt builder that Every launched, Spiral, to feed our obsession with words—and help us write for more than 78,000 readers every day. We talk about how AI helps us: Understand our taste—understanding what good is Pick a topic—knowing what to write about Craft ou","In today’s show, Every’s lead writer Evan Armstrong and I conduct an expert workshop on how we use ChatGPT, Claude, AI-powered word processor Lex, and the prompt builder that Every launched, Spiral, to feed our obsession with words—and help us write for more than 78,000 readers every day."],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-103｜The AI-powered Era of Scientific Discovery Is Here - Ep. 25 with Dr. Bradley Love
+
+- raw_ref: R-103
+- raw_original_id: 63e7b8fb-b879-47b9-bd5d-7332fabbceb0
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-103-the-ai-powered-era-of-scientific-discovery-is-here-ep-25-with-dr-bradl.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-103-the-ai-powered-era-of-scientific-discovery-is-here-ep-25-with-dr-bradl.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-AI-powered-Era-of-Scientific-Discovery-Is-Here---Ep--25-with-Dr--Bradley-Love-e2ls4gr
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-AI-powered-Era-of-Scientific-Discovery-Is-Here---Ep--25-with-Dr--Bradley-Love-e2ls4gr
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: efe95618d2c71d90
+- raw_full_text_hash: efe95618d2c71d90
+- raw_semantic_hash: 6e4ac6a1499b44c3
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"efe95618d2c71d90","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: index_only
+- key_excerpts: [{"type":"opinion","text":"Dr. Bradley Love is building a tool that can predict the future. Dr. Bradley Love is transforming neuroscience research with AI. He&#39;s the creator of BrainGPT, a large language model that can predict the results of neuroscience studies—before they’re conducted. And it performs better than human experts. We spent 90 minutes exploring how AI is reshaping scientific research and our understanding of the brain. Bradley argues that as scientific knowledge grows exponentially, we need new tools","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Bradley Love is building a tool that can predict the future.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Bradley Love is transforming neuroscience research with AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"He&#39;s the creator of BrainGPT, a large language model that can predict the results of neuroscience studies—before they’re conducted.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"And it performs better than human experts.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"We spent 90 minutes exploring how AI is reshaping scientific research and our understanding of the brain.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Bradley Love is building a tool that can predict the future.","Bradley Love is transforming neuroscience research with AI.","He&#39;s the creator of BrainGPT, a large language model that can predict the results of neuroscience studies—before they’re conducted."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-104｜She Built an AI Product Manager Bringing in Six Figures—As A Side Hustle - Ep. 24 with Claire Vo
+
+- raw_ref: R-104
+- raw_original_id: 4bcd06f8-c3d0-4a69-b10f-1f45eca84dd5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-104-she-built-an-ai-product-manager-bringing-in-six-figures-as-a-side-hust.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-104-she-built-an-ai-product-manager-bringing-in-six-figures-as-a-side-hust.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/She-Built-an-AI-Product-Manager-Bringing-in-Six-FiguresAs-A-Side-Hustle---Ep--24-with-Claire-Vo-e2l3slr
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/She-Built-an-AI-Product-Manager-Bringing-in-Six-FiguresAs-A-Side-Hustle---Ep--24-with-Claire-Vo-e2l3slr
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 2c6035e21dd135cb
+- raw_full_text_hash: 2c6035e21dd135cb
+- raw_semantic_hash: b12a430c040dab7d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2c6035e21dd135cb","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"product_update","text":"Claire Vo built ChatPRD—an on-demand chief product officer powered by AI. It’s now used by over 10,000 product managers and is pulling in six figures in revenue. The best part? Claire has a demanding day job as the CPO at LaunchDarkly. So she built all of ChatPRD herself—over the weekend—with AI. I sat down with Claire to talk about how ChatPRD works, how she built it as a side hustle using AI, and all of the ways she’s using AI tools to accelerate her work and life. We get into: How she","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Claire Vo built ChatPRD—an on-demand chief product officer powered by AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"It’s now used by over 10,000 product managers and is pulling in six figures in revenue.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"Claire has a demanding day job as the CPO at LaunchDarkly.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"So she built all of ChatPRD herself—over the weekend—with AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"I sat down with Claire to talk about how ChatPRD works, how she built it as a side hustle using AI, and all of the ways she’s using AI tools to accelerate her work and life.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Claire Vo built ChatPRD—an on-demand chief product officer powered by AI. It’s now used by over 10,000 product managers and is pulling in six figures in revenue. The best part? Claire has a demanding day job as the CPO at LaunchDarkly. So she built all of ChatPRD herself—over the weekend—with AI. I sat down with Claire to talk about how ChatPRD works, how she built it as a side hustle using AI, and all of the ways she’s using AI tools to accelerate her work and life. We get into: How she","Claire Vo built ChatPRD—an on-demand chief product officer powered by AI.","It’s now used by over 10,000 product managers and is pulling in six figures in revenue."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-105｜How to Use ChatGPT as a Copilot for Learning - Ep. 4 with Nathan Labenz
+
+- raw_ref: R-105
+- raw_original_id: 1ae54b41-acd9-4fbb-b437-4223c36f6c7a
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-105-how-to-use-chatgpt-as-a-copilot-for-learning-ep-4-with-nathan-labenz.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-105-how-to-use-chatgpt-as-a-copilot-for-learning-ep-4-with-nathan-labenz.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Use-ChatGPT-as-a-Copilot-for-Learning---Ep--4-with-Nathan-Labenz-e2df90i
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-to-Use-ChatGPT-as-a-Copilot-for-Learning---Ep--4-with-Nathan-Labenz-e2df90i
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 89e54d43557fa920
+- raw_full_text_hash: 89e54d43557fa920
+- raw_semantic_hash: 3cd1d66923c5af7f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"89e54d43557fa920","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_case
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 3.5999999999999996
+- raw_capture_priority: 7.6
+- usable_for: watchlist
+- key_excerpts: [{"type":"case_detail","text":"I spent an hour and a half with Nathan Labenz, who went deep with me on using ChatGPT to: Save days of time on programming projects Boost his creativity Provide access to limitless expertise We covered both the practical and philosophical, including: Using AI in copilot versus delegation mode How ChatGPT relieves the hidden drudgery of creative work Prompting techniques to maximize your thought partnership with ChatGPT How he believes AI will do for cognitive labor what the I","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":[],"case_details":["I spent an hour and a half with Nathan Labenz, who went deep with me on using ChatGPT to: Save days of time on programming projects Boost his creativity Provide access to limitless expertise We covered both the practical and philosophical, including: Using AI in copilot versus delegation mode How ChatGPT relieves the hidden drudgery of creative work Prompting techniques to maximize your thought partnership with ChatGPT How he believes AI will do for cognitive labor what the I"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-106｜苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划
+
+- raw_ref: R-106
 - raw_original_id: cmrh8o88501e4bir7wzxmfpfm
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-051-苹果起诉openai挖角窃密-分析师称即使指控未证实也可能重创其硬件计划.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-051-苹果起诉openai挖角窃密-分析师称即使指控未证实也可能重创其硬件计划.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-106-苹果起诉openai挖角窃密-分析师称即使指控未证实也可能重创其硬件计划.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-106-苹果起诉openai挖角窃密-分析师称即使指控未证实也可能重创其硬件计划.json`
 - source: IT之家（RSS）｜https://www.ithome.com/0/975/666.htm
 - source_url: https://www.ithome.com/0/975/666.htm
 - acquisition_channel: aihot
@@ -2825,12 +5850,1167 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-052｜OpenAI 发布 GPT-5.6 系列医疗评估结果
+## P-107｜Can Gemini 1.5 Pro Beat Our Best Stock Trade? - Ep. 13 with Jesse Beyroutey
 
-- raw_ref: R-053
+- raw_ref: R-107
+- raw_original_id: 8d046857-dbe8-4da4-a771-9137b858a6e9
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-107-can-gemini-1-5-pro-beat-our-best-stock-trade-ep-13-with-jesse-beyroute.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-107-can-gemini-1-5-pro-beat-our-best-stock-trade-ep-13-with-jesse-beyroute.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Can-Gemini-1-5-Pro-Beat-Our-Best-Stock-Trade----Ep--13-with-Jesse-Beyroutey-e2gfd4r
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Can-Gemini-1-5-Pro-Beat-Our-Best-Stock-Trade----Ep--13-with-Jesse-Beyroutey-e2gfd4r
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 02d7792dd586d1f1
+- raw_full_text_hash: 02d7792dd586d1f1
+- raw_semantic_hash: 15588c3d9d71b1b8
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"02d7792dd586d1f1","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 2
+- raw_capture_priority: 6
+- usable_for: watchlist
+- key_excerpts: [{"type":"funding","text":"I made the greatest trade of my life with Jesse Beyroutey in 2019. We bought Nvidia shares when they were trading at $33. They’re worth nearly $800 today. I sat down with Jesse to top that trade in 90 minutes using Gemini Pro 1.5’s incredible 1 million token context window—and make a $1,000 trade live on the show. Jesse is a managing partner at IA Ventures, a $600 million venture fund with seed investments in companies like Wise and Digital Ocean. He’s also a very close friend and one of the sm","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"I made the greatest trade of my life with Jesse Beyroutey in 2019.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"number","text":"We bought Nvidia shares when they were trading at $33.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"They’re worth nearly $800 today.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"I sat down with Jesse to top that trade in 90 minutes using Gemini Pro 1.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"number","text":"5’s incredible 1 million token context window—and make a $1,000 trade live on the show.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["I made the greatest trade of my life with Jesse Beyroutey in 2019. We bought Nvidia shares when they were trading at $33. They’re worth nearly $800 today. I sat down with Jesse to top that trade in 90 minutes using Gemini Pro 1.5’s incredible 1 million token context window—and make a $1,000 trade live on the show. Jesse is a managing partner at IA Ventures, a $600 million venture fund with seed investments in companies like Wise and Digital Ocean. He’s also a very close friend and one of the sm","I made the greatest trade of my life with Jesse Beyroutey in 2019.","I sat down with Jesse to top that trade in 90 minutes using Gemini Pro 1."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-108｜How to Build an Open-Domain Question Answering System?
+
+- raw_ref: R-109
+- raw_original_id: https://lilianweng.github.io/posts/2020-10-29-odqa/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-109-how-to-build-an-open-domain-question-answering-system.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-109-how-to-build-an-open-domain-question-answering-system.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2020-10-29-odqa/
+- source_url: https://lilianweng.github.io/posts/2020-10-29-odqa/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 4700ff7209a16da7
+- raw_full_text_hash: 4700ff7209a16da7
+- raw_semantic_hash: 9c2fb2af7dd9d442
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4700ff7209a16da7","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"&lt;!-- A model that is capable of answering any question with regard to factual knowledge can enable many useful applications. This post delves into how we can build an Open-Domain Question Answering (ODQA) system, assuming we have access to a powerful pretrained language model. Both closed-book and open-book approachs are discussed. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-11-12: add &lt;a href=&#34;#openai-api-example&#34;&gt;an example&lt;/a&gt; on closed-book fact","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- A model that is capable of answering any question with regard to factual knowledge can enable many useful applications.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"This post delves into how we can build an Open-Domain Question Answering (ODQA) system, assuming we have access to a powerful pretrained language model.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Both closed-book and open-book approachs are discussed.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-11-12: add &lt;a href=&#34;#openai-api-example&#34;&gt;an example&lt;/a&gt; on closed-book fact","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- A model that is capable of answering any question with regard to factual knowledge can enable many useful applications. This post delves into how we can build an Open-Domain Question Answering (ODQA) system, assuming we have access to a powerful pretrained language model. Both closed-book and open-book approachs are discussed. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-11-12: add &lt;a href=&#34;#openai-api-example&#34;&gt;an example&lt;/a&gt; on closed-book fact","-- A model that is capable of answering any question with regard to factual knowledge can enable many useful applications.","This post delves into how we can build an Open-Domain Question Answering (ODQA) system, assuming we have access to a powerful pretrained language model."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-109｜The Transformer Family
+
+- raw_ref: R-110
+- raw_original_id: https://lilianweng.github.io/posts/2020-04-07-the-transformer-family/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-110-the-transformer-family.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-110-the-transformer-family.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2020-04-07-the-transformer-family/
+- source_url: https://lilianweng.github.io/posts/2020-04-07-the-transformer-family/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: df726238554732dd
+- raw_full_text_hash: df726238554732dd
+- raw_semantic_hash: 290d9f80f88431f4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"df726238554732dd","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"&lt;!-- Inspired by recent progress on various enhanced versions of Transformer models, this post presents how the vanilla Transformer can be improved for longer-term attention span, less memory and computation consumption, RL task solving, etc. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on &lt;mark&gt;&lt;strong&gt;2023-01-27&lt;/strong&gt;&lt;/mark&gt;: After almost three years, I did a big refactoring update of this post to incorporate a bunch of new Transformer models since","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- Inspired by recent progress on various enhanced versions of Transformer models, this post presents how the vanilla Transformer can be improved for longer-term attention span, less memory and computation consumption, RL task solving, etc.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on &lt;mark&gt;&lt;strong&gt;2023-01-27&lt;/strong&gt;&lt;/mark&gt;: After almost three years, I did a big refactoring update of this post to incorporate a bunch of new Transformer models since","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- Inspired by recent progress on various enhanced versions of Transformer models, this post presents how the vanilla Transformer can be improved for longer-term attention span, less memory and computation consumption, RL task solving, etc. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on &lt;mark&gt;&lt;strong&gt;2023-01-27&lt;/strong&gt;&lt;/mark&gt;: After almost three years, I did a big refactoring update of this post to incorporate a bunch of new Transformer models since","-- Inspired by recent progress on various enhanced versions of Transformer models, this post presents how the vanilla Transformer can be improved for longer-term attention span, less memory and computation consumption, RL task solving, etc.","--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on &lt;mark&gt;&lt;strong&gt;2023-01-27&lt;/strong&gt;&lt;/mark&gt;: After almost three years, I did a big refactoring update of this post to incorporate a bunch of new Transformer models since"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-110｜Self-Supervised Representation Learning
+
+- raw_ref: R-111
+- raw_original_id: https://lilianweng.github.io/posts/2019-11-10-self-supervised/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-111-self-supervised-representation-learning.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-111-self-supervised-representation-learning.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2019-11-10-self-supervised/
+- source_url: https://lilianweng.github.io/posts/2019-11-10-self-supervised/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 898c319e7d57f3c3
+- raw_full_text_hash: 898c319e7d57f3c3
+- raw_semantic_hash: 877c65b5a1aa0528
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"898c319e7d57f3c3","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"&lt;!-- Self-supervised learning opens up a huge opportunity for better utilizing unlabelled data, while learning in a supervised learning manner. This post covers many interesting ideas of self-supervised learning tasks on images, videos, and control problems. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-01-09: add a new section on &lt;a href=&#34;#contrastive-predictive-coding&#34;&gt;Contrastive Predictive Coding&lt;/a&gt;].&lt;/span&gt; &lt;br/&gt; &lt;del&gt;&lt;span","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- Self-supervised learning opens up a huge opportunity for better utilizing unlabelled data, while learning in a supervised learning manner.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"This post covers many interesting ideas of self-supervised learning tasks on images, videos, and control problems.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-01-09: add a new section on &lt;a href=&#34;#contrastive-predictive-coding&#34;&gt;Contrastive Predictive Coding&lt;/a&gt;].","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"&lt;/span&gt; &lt;br/&gt; &lt;del&gt;&lt;span","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- Self-supervised learning opens up a huge opportunity for better utilizing unlabelled data, while learning in a supervised learning manner. This post covers many interesting ideas of self-supervised learning tasks on images, videos, and control problems. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-01-09: add a new section on &lt;a href=&#34;#contrastive-predictive-coding&#34;&gt;Contrastive Predictive Coding&lt;/a&gt;].&lt;/span&gt; &lt;br/&gt; &lt;del&gt;&lt;span","-- Self-supervised learning opens up a huge opportunity for better utilizing unlabelled data, while learning in a supervised learning manner.","This post covers many interesting ideas of self-supervised learning tasks on images, videos, and control problems."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-111｜Evolution Strategies
+
+- raw_ref: R-112
+- raw_original_id: https://lilianweng.github.io/posts/2019-09-05-evolution-strategies/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-112-evolution-strategies.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-112-evolution-strategies.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2019-09-05-evolution-strategies/
+- source_url: https://lilianweng.github.io/posts/2019-09-05-evolution-strategies/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 64ede5cdebe3005e
+- raw_full_text_hash: 64ede5cdebe3005e
+- raw_semantic_hash: 93b206ce94e7f572
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"64ede5cdebe3005e","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"&lt;!-- Gradient descent is not the only option when learning optimal model parameters. Evolution Strategies (ES) works out well in the cases where we don&#39;t know the precise analytic form of an objective function or cannot compute the gradients directly. This post dives into several classic ES methods, as well as how ES can be used in deep reinforcement learning. --&gt; &lt;p&gt;Stochastic gradient descent is a universal choice for optimizing deep learning models. However, it is not the onl","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- Gradient descent is not the only option when learning optimal model parameters.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Evolution Strategies (ES) works out well in the cases where we don&#39;t know the precise analytic form of an objective function or cannot compute the gradients directly.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"This post dives into several classic ES methods, as well as how ES can be used in deep reinforcement learning.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"--&gt; &lt;p&gt;Stochastic gradient descent is a universal choice for optimizing deep learning models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"However, it is not the onl","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- Gradient descent is not the only option when learning optimal model parameters. Evolution Strategies (ES) works out well in the cases where we don&#39;t know the precise analytic form of an objective function or cannot compute the gradients directly. This post dives into several classic ES methods, as well as how ES can be used in deep reinforcement learning. --&gt; &lt;p&gt;Stochastic gradient descent is a universal choice for optimizing deep learning models. However, it is not the onl","-- Gradient descent is not the only option when learning optimal model parameters.","Evolution Strategies (ES) works out well in the cases where we don&#39;t know the precise analytic form of an objective function or cannot compute the gradients directly."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-112｜Meta Reinforcement Learning
+
+- raw_ref: R-113
+- raw_original_id: https://lilianweng.github.io/posts/2019-06-23-meta-rl/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-113-meta-reinforcement-learning.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-113-meta-reinforcement-learning.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2019-06-23-meta-rl/
+- source_url: https://lilianweng.github.io/posts/2019-06-23-meta-rl/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: eb9d97da08177da1
+- raw_full_text_hash: eb9d97da08177da1
+- raw_semantic_hash: 9d66e1c4a5ed5bbb
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"eb9d97da08177da1","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"&lt;!-- Meta-RL is meta-learning on reinforcement learning tasks. After trained over a distribution of tasks, the agent is able to solve a new task by developing a new RL algorithm with its internal activity dynamics. This post starts with the origin of meta-RL and then dives into three key components of meta-RL. --&gt; &lt;p&gt;In my earlier post on &lt;a href=&#34;https://lilianweng.github.io/posts/2018-11-30-meta-learning/&#34;&gt;meta-learning&lt;/a&gt;, the problem is mainly defined in the","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- Meta-RL is meta-learning on reinforcement learning tasks.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"After trained over a distribution of tasks, the agent is able to solve a new task by developing a new RL algorithm with its internal activity dynamics.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"This post starts with the origin of meta-RL and then dives into three key components of meta-RL.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"--&gt; &lt;p&gt;In my earlier post on &lt;a href=&#34;https://lilianweng.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"io/posts/2018-11-30-meta-learning/&#34;&gt;meta-learning&lt;/a&gt;, the problem is mainly defined in the","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- Meta-RL is meta-learning on reinforcement learning tasks. After trained over a distribution of tasks, the agent is able to solve a new task by developing a new RL algorithm with its internal activity dynamics. This post starts with the origin of meta-RL and then dives into three key components of meta-RL. --&gt; &lt;p&gt;In my earlier post on &lt;a href=&#34;https://lilianweng.github.io/posts/2018-11-30-meta-learning/&#34;&gt;meta-learning&lt;/a&gt;, the problem is mainly defined in the","-- Meta-RL is meta-learning on reinforcement learning tasks.","After trained over a distribution of tasks, the agent is able to solve a new task by developing a new RL algorithm with its internal activity dynamics."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-113｜Are Deep Neural Networks Dramatically Overfitted?
+
+- raw_ref: R-114
+- raw_original_id: https://lilianweng.github.io/posts/2019-03-14-overfit/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-114-are-deep-neural-networks-dramatically-overfitted.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-114-are-deep-neural-networks-dramatically-overfitted.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2019-03-14-overfit/
+- source_url: https://lilianweng.github.io/posts/2019-03-14-overfit/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: c893de9dd550f659
+- raw_full_text_hash: c893de9dd550f659
+- raw_semantic_hash: 2b63d02c62989c3e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c893de9dd550f659","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"&lt;!-- If you are, like me, confused by why deep neural networks can generalize to out-of-sample data points without drastic overfitting, keep on reading. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-05-27: add the &lt;a href=&#34;#the-lottery-ticket-hypothesis&#34;&gt;section&lt;/a&gt; on Lottery Ticket Hypothesis.]&lt;/span&gt;&lt;/p&gt; &lt;p&gt;If you are like me, entering into the field of deep learning with experience in traditional machine learning, you may often p","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- If you are, like me, confused by why deep neural networks can generalize to out-of-sample data points without drastic overfitting, keep on reading.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-05-27: add the &lt;a href=&#34;#the-lottery-ticket-hypothesis&#34;&gt;section&lt;/a&gt; on Lottery Ticket Hypothesis.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"]&lt;/span&gt;&lt;/p&gt; &lt;p&gt;If you are like me, entering into the field of deep learning with experience in traditional machine learning, you may often p","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- If you are, like me, confused by why deep neural networks can generalize to out-of-sample data points without drastic overfitting, keep on reading. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-05-27: add the &lt;a href=&#34;#the-lottery-ticket-hypothesis&#34;&gt;section&lt;/a&gt; on Lottery Ticket Hypothesis.]&lt;/span&gt;&lt;/p&gt; &lt;p&gt;If you are like me, entering into the field of deep learning with experience in traditional machine learning, you may often p","-- If you are, like me, confused by why deep neural networks can generalize to out-of-sample data points without drastic overfitting, keep on reading.","--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-05-27: add the &lt;a href=&#34;#the-lottery-ticket-hypothesis&#34;&gt;section&lt;/a&gt; on Lottery Ticket Hypothesis."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-114｜Generalized Language Models
+
+- raw_ref: R-115
+- raw_original_id: https://lilianweng.github.io/posts/2019-01-31-lm/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-115-generalized-language-models.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-115-generalized-language-models.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2019-01-31-lm/
+- source_url: https://lilianweng.github.io/posts/2019-01-31-lm/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 69ce2753bbc8ed43
+- raw_full_text_hash: 69ce2753bbc8ed43
+- raw_semantic_hash: ed061c485fd684ec
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"69ce2753bbc8ed43","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"&lt;!-- As a follow up of word embedding post, we will discuss the models on learning contextualized word vectors, as well as the new trend in large unsupervised pre-trained language models which have achieved amazing SOTA results on a variety of language tasks. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-02-14: add &lt;a href=&#34;#ulmfit&#34;&gt;ULMFiT&lt;/a&gt; and &lt;a href=&#34;#gpt-2&#34;&gt;GPT-2&lt;/a&gt;.]&lt;/span&gt;&lt;br/&gt; &lt;span class=&#34;update&#34;&","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- As a follow up of word embedding post, we will discuss the models on learning contextualized word vectors, as well as the new trend in large unsupervised pre-trained language models which have achieved amazing SOTA results on a variety of language tasks.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-02-14: add &lt;a href=&#34;#ulmfit&#34;&gt;ULMFiT&lt;/a&gt; and &lt;a href=&#34;#gpt-2&#34;&gt;GPT-2&lt;/a&gt;.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"]&lt;/span&gt;&lt;br/&gt; &lt;span class=&#34;update&#34;&","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- As a follow up of word embedding post, we will discuss the models on learning contextualized word vectors, as well as the new trend in large unsupervised pre-trained language models which have achieved amazing SOTA results on a variety of language tasks. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-02-14: add &lt;a href=&#34;#ulmfit&#34;&gt;ULMFiT&lt;/a&gt; and &lt;a href=&#34;#gpt-2&#34;&gt;GPT-2&lt;/a&gt;.]&lt;/span&gt;&lt;br/&gt; &lt;span class=&#34;update&#34;&","-- As a follow up of word embedding post, we will discuss the models on learning contextualized word vectors, as well as the new trend in large unsupervised pre-trained language models which have achieved amazing SOTA results on a variety of language tasks.","--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-02-14: add &lt;a href=&#34;#ulmfit&#34;&gt;ULMFiT&lt;/a&gt; and &lt;a href=&#34;#gpt-2&#34;&gt;GPT-2&lt;/a&gt;."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-115｜Object Detection Part 4: Fast Detection Models
+
+- raw_ref: R-116
+- raw_original_id: https://lilianweng.github.io/posts/2018-12-27-object-recognition-part-4/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-116-object-detection-part-4-fast-detection-models.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-116-object-detection-part-4-fast-detection-models.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2018-12-27-object-recognition-part-4/
+- source_url: https://lilianweng.github.io/posts/2018-12-27-object-recognition-part-4/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: f131622c8687b5c8
+- raw_full_text_hash: f131622c8687b5c8
+- raw_semantic_hash: 2036596e6cc46623
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f131622c8687b5c8","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"funding","text":"&lt;!-- Part 4 of the &#34;Object Detection for Dummies&#34; series focuses on one-stage models for fast detection, including SSD, RetinaNet, and models in the YOLO family. These models skip the explicit region proposal stage but apply the detection directly on dense sampled areas. --&gt; &lt;p&gt;In &lt;a href=&#34;https://lilianweng.github.io/posts/2017-12-31-object-recognition-part-3/&#34;&gt;Part 3&lt;/a&gt;, we have reviewed models in the R-CNN family. All of them are region-based object de","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"funding","text":"-- Part 4 of the &#34;Object Detection for Dummies&#34; series focuses on one-stage models for fast detection, including SSD, RetinaNet, and models in the YOLO family.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"These models skip the explicit region proposal stage but apply the detection directly on dense sampled areas.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"--&gt; &lt;p&gt;In &lt;a href=&#34;https://lilianweng.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"io/posts/2017-12-31-object-recognition-part-3/&#34;&gt;Part 3&lt;/a&gt;, we have reviewed models in the R-CNN family.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"All of them are region-based object de","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- Part 4 of the &#34;Object Detection for Dummies&#34; series focuses on one-stage models for fast detection, including SSD, RetinaNet, and models in the YOLO family. These models skip the explicit region proposal stage but apply the detection directly on dense sampled areas. --&gt; &lt;p&gt;In &lt;a href=&#34;https://lilianweng.github.io/posts/2017-12-31-object-recognition-part-3/&#34;&gt;Part 3&lt;/a&gt;, we have reviewed models in the R-CNN family. All of them are region-based object de","-- Part 4 of the &#34;Object Detection for Dummies&#34; series focuses on one-stage models for fast detection, including SSD, RetinaNet, and models in the YOLO family.","These models skip the explicit region proposal stage but apply the detection directly on dense sampled areas."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-116｜Meta-Learning: Learning to Learn Fast
+
+- raw_ref: R-117
+- raw_original_id: https://lilianweng.github.io/posts/2018-11-30-meta-learning/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-117-meta-learning-learning-to-learn-fast.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-117-meta-learning-learning-to-learn-fast.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2018-11-30-meta-learning/
+- source_url: https://lilianweng.github.io/posts/2018-11-30-meta-learning/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 083497acab9bbc92
+- raw_full_text_hash: 083497acab9bbc92
+- raw_semantic_hash: 5fdd4a72e3e66114
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"083497acab9bbc92","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"&lt;!-- Meta-learning, also known as &#34;learning to learn&#34;, intends to design models that can learn new skills or adapt to new environments rapidly with a few training examples. There are three common approaches: 1) learn an efficient distance metric (metric-based); 2) use (recurrent) network with external or internal memory (model-based); 3) optimize the model parameters explicitly for fast learning (optimization-based). --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- Meta-learning, also known as &#34;learning to learn&#34;, intends to design models that can learn new skills or adapt to new environments rapidly with a few training examples.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"There are three common approaches: 1) learn an efficient distance metric (metric-based); 2) use (recurrent) network with external or internal memory (model-based); 3) optimize the model parameters explicitly for fast learning (optimization-based).","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- Meta-learning, also known as &#34;learning to learn&#34;, intends to design models that can learn new skills or adapt to new environments rapidly with a few training examples. There are three common approaches: 1) learn an efficient distance metric (metric-based); 2) use (recurrent) network with external or internal memory (model-based); 3) optimize the model parameters explicitly for fast learning (optimization-based). --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-","-- Meta-learning, also known as &#34;learning to learn&#34;, intends to design models that can learn new skills or adapt to new environments rapidly with a few training examples.","There are three common approaches: 1) learn an efficient distance metric (metric-based); 2) use (recurrent) network with external or internal memory (model-based); 3) optimize the model parameters explicitly for fast learning (optimization-based)."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-117｜Flow-based Deep Generative Models
+
+- raw_ref: R-118
+- raw_original_id: https://lilianweng.github.io/posts/2018-10-13-flow-models/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-118-flow-based-deep-generative-models.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-118-flow-based-deep-generative-models.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2018-10-13-flow-models/
+- source_url: https://lilianweng.github.io/posts/2018-10-13-flow-models/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 71986d14b85138bf
+- raw_full_text_hash: 71986d14b85138bf
+- raw_semantic_hash: 5657dbc77903b48d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"71986d14b85138bf","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"&lt;!-- In this post, we are looking into the third type of generative models: flow-based generative models. Different from GAN and VAE, they explicitly learn the probability density function of the input data. --&gt; &lt;p&gt;So far, I&amp;rsquo;ve written about two types of generative models, &lt;a href=&#34;https://lilianweng.github.io/posts/2017-08-20-gan/&#34;&gt;GAN&lt;/a&gt; and &lt;a href=&#34;https://lilianweng.github.io/posts/2018-08-12-vae/&#34;&gt;VAE&lt;/a&gt;. Neither of them expli","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- In this post, we are looking into the third type of generative models: flow-based generative models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Different from GAN and VAE, they explicitly learn the probability density function of the input data.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"--&gt; &lt;p&gt;So far, I&amp;rsquo;ve written about two types of generative models, &lt;a href=&#34;https://lilianweng.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"io/posts/2017-08-20-gan/&#34;&gt;GAN&lt;/a&gt; and &lt;a href=&#34;https://lilianweng.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"io/posts/2018-08-12-vae/&#34;&gt;VAE&lt;/a&gt;.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- In this post, we are looking into the third type of generative models: flow-based generative models. Different from GAN and VAE, they explicitly learn the probability density function of the input data. --&gt; &lt;p&gt;So far, I&amp;rsquo;ve written about two types of generative models, &lt;a href=&#34;https://lilianweng.github.io/posts/2017-08-20-gan/&#34;&gt;GAN&lt;/a&gt; and &lt;a href=&#34;https://lilianweng.github.io/posts/2018-08-12-vae/&#34;&gt;VAE&lt;/a&gt;. Neither of them expli","-- In this post, we are looking into the third type of generative models: flow-based generative models.","Different from GAN and VAE, they explicitly learn the probability density function of the input data."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-118｜From Autoencoder to Beta-VAE
+
+- raw_ref: R-119
+- raw_original_id: https://lilianweng.github.io/posts/2018-08-12-vae/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-119-from-autoencoder-to-beta-vae.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-119-from-autoencoder-to-beta-vae.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2018-08-12-vae/
+- source_url: https://lilianweng.github.io/posts/2018-08-12-vae/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: f1afe1c4b07ea33c
+- raw_full_text_hash: f1afe1c4b07ea33c
+- raw_semantic_hash: 32a974c18f4359f8
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f1afe1c4b07ea33c","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"&lt;!-- Autocoders are a family of neural network models aiming to learn compressed latent variables of high-dimensional data. Starting from the basic autocoder model, this post reviews several variations, including denoising, sparse, and contractive autoencoders, and then Variational Autoencoder (VAE) and its modification beta-VAE. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-07-18: add a section on &lt;a href=&#34;#vq-vae-and-vq-vae-2&#34;&gt;VQ-VAE &amp;amp; VQ-VAE-2&lt","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- Autocoders are a family of neural network models aiming to learn compressed latent variables of high-dimensional data.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Starting from the basic autocoder model, this post reviews several variations, including denoising, sparse, and contractive autoencoders, and then Variational Autoencoder (VAE) and its modification beta-VAE.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-07-18: add a section on &lt;a href=&#34;#vq-vae-and-vq-vae-2&#34;&gt;VQ-VAE &amp;amp; VQ-VAE-2&lt","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- Autocoders are a family of neural network models aiming to learn compressed latent variables of high-dimensional data. Starting from the basic autocoder model, this post reviews several variations, including denoising, sparse, and contractive autoencoders, and then Variational Autoencoder (VAE) and its modification beta-VAE. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2019-07-18: add a section on &lt;a href=&#34;#vq-vae-and-vq-vae-2&#34;&gt;VQ-VAE &amp;amp; VQ-VAE-2&lt","-- Autocoders are a family of neural network models aiming to learn compressed latent variables of high-dimensional data.","Starting from the basic autocoder model, this post reviews several variations, including denoising, sparse, and contractive autoencoders, and then Variational Autoencoder (VAE) and its modification beta-VAE."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-119｜Policy Gradient Algorithms
+
+- raw_ref: R-120
+- raw_original_id: https://lilianweng.github.io/posts/2018-04-08-policy-gradient/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-120-policy-gradient-algorithms.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-120-policy-gradient-algorithms.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2018-04-08-policy-gradient/
+- source_url: https://lilianweng.github.io/posts/2018-04-08-policy-gradient/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 91f7bc4d0e1316bf
+- raw_full_text_hash: 91f7bc4d0e1316bf
+- raw_semantic_hash: 2fcd3277e4ef3a7c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"91f7bc4d0e1316bf","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"&lt;!-- Abstract: In this post, we are going to look deep into policy gradient, why it works, and many new policy gradient algorithms proposed in recent years: vanilla policy gradient, actor-critic, off-policy actor-critic, A3C, A2C, DPG, DDPG, D4PG, MADDPG, TRPO, PPO, ACER, ACTKR, SAC, TD3 &amp; SVPG. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2018-06-30: add two new policy gradient methods, &lt;a href=&#34;#sac&#34;&gt;SAC&lt;/a&gt; and &lt;a href=&#34;#d4pg&#34;&gt;D4PG&lt","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- Abstract: In this post, we are going to look deep into policy gradient, why it works, and many new policy gradient algorithms proposed in recent years: vanilla policy gradient, actor-critic, off-policy actor-critic, A3C, A2C, DPG, DDPG, D4PG, MADDPG, TRPO, PPO, ACER, ACTKR, SAC, TD3 &amp; SVPG.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2018-06-30: add two new policy gradient methods, &lt;a href=&#34;#sac&#34;&gt;SAC&lt;/a&gt; and &lt;a href=&#34;#d4pg&#34;&gt;D4PG&lt","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- Abstract: In this post, we are going to look deep into policy gradient, why it works, and many new policy gradient algorithms proposed in recent years: vanilla policy gradient, actor-critic, off-policy actor-critic, A3C, A2C, DPG, DDPG, D4PG, MADDPG, TRPO, PPO, ACER, ACTKR, SAC, TD3 &amp; SVPG. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2018-06-30: add two new policy gradient methods, &lt;a href=&#34;#sac&#34;&gt;SAC&lt;/a&gt; and &lt;a href=&#34;#d4pg&#34;&gt;D4PG&lt","-- Abstract: In this post, we are going to look deep into policy gradient, why it works, and many new policy gradient algorithms proposed in recent years: vanilla policy gradient, actor-critic, off-policy actor-critic, A3C, A2C, DPG, DDPG, D4PG, MADDPG, TRPO, PPO, ACER, ACTKR, SAC, TD3 &amp; SVPG.","--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2018-06-30: add two new policy gradient methods, &lt;a href=&#34;#sac&#34;&gt;SAC&lt;/a&gt; and &lt;a href=&#34;#d4pg&#34;&gt;D4PG&lt"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-120｜A (Long) Peek into Reinforcement Learning
+
+- raw_ref: R-121
+- raw_original_id: https://lilianweng.github.io/posts/2018-02-19-rl-overview/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-121-a-long-peek-into-reinforcement-learning.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-121-a-long-peek-into-reinforcement-learning.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2018-02-19-rl-overview/
+- source_url: https://lilianweng.github.io/posts/2018-02-19-rl-overview/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 7113188dfdbc2bea
+- raw_full_text_hash: 7113188dfdbc2bea
+- raw_semantic_hash: a38cb723b61b8cd1
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7113188dfdbc2bea","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: watchlist
+- key_excerpts: [{"type":"product_update","text":"&lt;!-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms. Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting. [WARNING] This is a long read. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-09-03: Updated the algorithm of &lt;a href=&#34;#sarsa-on-policy-td-control&#34;&gt;SARSA&lt;/a&gt; and &lt;a href=&#34;#q-learning-of","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"[WARNING] This is a long read.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-09-03: Updated the algorithm of &lt;a href=&#34;#sarsa-on-policy-td-control&#34;&gt;SARSA&lt;/a&gt; and &lt;a href=&#34;#q-learning-of","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms. Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting. [WARNING] This is a long read. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2020-09-03: Updated the algorithm of &lt;a href=&#34;#sarsa-on-policy-td-control&#34;&gt;SARSA&lt;/a&gt; and &lt;a href=&#34;#q-learning-of","-- In this post, we are gonna briefly go over the field of Reinforcement Learning (RL), from fundamental concepts to classic algorithms.","Hopefully, this review is helpful enough so that newbies would not get lost in specialized terms and jargons while starting."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-121｜Object Detection for Dummies Part 3: R-CNN Family
+
+- raw_ref: R-122
+- raw_original_id: https://lilianweng.github.io/posts/2017-12-31-object-recognition-part-3/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-122-object-detection-for-dummies-part-3-r-cnn-family.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-122-object-detection-for-dummies-part-3-r-cnn-family.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2017-12-31-object-recognition-part-3/
+- source_url: https://lilianweng.github.io/posts/2017-12-31-object-recognition-part-3/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: b5ca8930f3b7c2db
+- raw_full_text_hash: b5ca8930f3b7c2db
+- raw_semantic_hash: c4e9164257d9451c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b5ca8930f3b7c2db","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"&lt;!-- In Part 3, we would examine four object detection models: R-CNN, Fast R-CNN, Faster R-CNN, and Mask R-CNN. These models are highly related and the new versions show great speed improvement compared to the older ones. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2018-12-20: Remove YOLO here. Part 4 will cover multiple fast object detection algorithms, including YOLO.]&lt;/span&gt; &lt;br/&gt; &lt;span class=&#34;update&#34;&gt;[Updated on 2018-12-27: Add &lt;a href=&#34;","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- In Part 3, we would examine four object detection models: R-CNN, Fast R-CNN, Faster R-CNN, and Mask R-CNN.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"These models are highly related and the new versions show great speed improvement compared to the older ones.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2018-12-20: Remove YOLO here.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Part 4 will cover multiple fast object detection algorithms, including YOLO.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"]&lt;/span&gt; &lt;br/&gt; &lt;span class=&#34;update&#34;&gt;[Updated on 2018-12-27: Add &lt;a href=&#34;","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- In Part 3, we would examine four object detection models: R-CNN, Fast R-CNN, Faster R-CNN, and Mask R-CNN. These models are highly related and the new versions show great speed improvement compared to the older ones. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2018-12-20: Remove YOLO here. Part 4 will cover multiple fast object detection algorithms, including YOLO.]&lt;/span&gt; &lt;br/&gt; &lt;span class=&#34;update&#34;&gt;[Updated on 2018-12-27: Add &lt;a href=&#34;","-- In Part 3, we would examine four object detection models: R-CNN, Fast R-CNN, Faster R-CNN, and Mask R-CNN.","These models are highly related and the new versions show great speed improvement compared to the older ones."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-122｜From GAN to WGAN
+
+- raw_ref: R-123
+- raw_original_id: https://lilianweng.github.io/posts/2017-08-20-gan/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-123-from-gan-to-wgan.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-123-from-gan-to-wgan.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2017-08-20-gan/
+- source_url: https://lilianweng.github.io/posts/2017-08-20-gan/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: dd2c7102829bf616
+- raw_full_text_hash: dd2c7102829bf616
+- raw_semantic_hash: 14a6aeb8fe75dab8
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dd2c7102829bf616","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"&lt;!-- This post explains the maths behind a generative adversarial network (GAN) model and why it is hard to be trained. Wasserstein GAN is intended to improve GANs&#39; training by adopting a smooth metric for measuring the distance between two probability distributions. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2018-09-30: thanks to Yoonju, we have this post translated in &lt;a href=&#34;https://github.com/yjucho1/articles/blob/master/fromGANtoWGAN/readme.md&#34;&gt;Kore","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- This post explains the maths behind a generative adversarial network (GAN) model and why it is hard to be trained.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Wasserstein GAN is intended to improve GANs&#39; training by adopting a smooth metric for measuring the distance between two probability distributions.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"--&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2018-09-30: thanks to Yoonju, we have this post translated in &lt;a href=&#34;https://github.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"com/yjucho1/articles/blob/master/fromGANtoWGAN/readme.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- This post explains the maths behind a generative adversarial network (GAN) model and why it is hard to be trained. Wasserstein GAN is intended to improve GANs&#39; training by adopting a smooth metric for measuring the distance between two probability distributions. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;[Updated on 2018-09-30: thanks to Yoonju, we have this post translated in &lt;a href=&#34;https://github.com/yjucho1/articles/blob/master/fromGANtoWGAN/readme.md&#34;&gt;Kore","-- This post explains the maths behind a generative adversarial network (GAN) model and why it is hard to be trained.","Wasserstein GAN is intended to improve GANs&#39; training by adopting a smooth metric for measuring the distance between two probability distributions."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-123｜An Overview of Deep Learning for Curious People
+
+- raw_ref: R-124
+- raw_original_id: https://lilianweng.github.io/posts/2017-06-21-overview/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-124-an-overview-of-deep-learning-for-curious-people.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-124-an-overview-of-deep-learning-for-curious-people.json`
+- source: Lilian Weng's Blog (OpenAI)｜https://lilianweng.github.io/posts/2017-06-21-overview/
+- source_url: https://lilianweng.github.io/posts/2017-06-21-overview/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 25c9ef35b85e3d2c
+- raw_full_text_hash: 25c9ef35b85e3d2c
+- raw_semantic_hash: 8c30cb4116df3cdd
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"25c9ef35b85e3d2c","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 5.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"&lt;!-- Starting earlier this year, I grew a strong curiosity of deep learning and spent some time reading about this field. To document what I’ve learned and to provide some interesting pointers to people with similar interests, I wrote this overview of deep learning models and their applications. --&gt; &lt;p&gt;&lt;span style=&#34;color: #aaaaaa;&#34;&gt;(The post was originated from my talk for &lt;a href=&#34;http://wimlds.org/chapters/about-bay-area/&#34;&gt;WiMLDS x Fintech meetup&lt;/a&g","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"-- Starting earlier this year, I grew a strong curiosity of deep learning and spent some time reading about this field.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"To document what I’ve learned and to provide some interesting pointers to people with similar interests, I wrote this overview of deep learning models and their applications.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"--&gt; &lt;p&gt;&lt;span style=&#34;color: #aaaaaa;&#34;&gt;(The post was originated from my talk for &lt;a href=&#34;http://wimlds.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"org/chapters/about-bay-area/&#34;&gt;WiMLDS x Fintech meetup&lt;/a&g","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["&lt;!-- Starting earlier this year, I grew a strong curiosity of deep learning and spent some time reading about this field. To document what I’ve learned and to provide some interesting pointers to people with similar interests, I wrote this overview of deep learning models and their applications. --&gt; &lt;p&gt;&lt;span style=&#34;color: #aaaaaa;&#34;&gt;(The post was originated from my talk for &lt;a href=&#34;http://wimlds.org/chapters/about-bay-area/&#34;&gt;WiMLDS x Fintech meetup&lt;/a&g","-- Starting earlier this year, I grew a strong curiosity of deep learning and spent some time reading about this field.","To document what I’ve learned and to provide some interesting pointers to people with similar interests, I wrote this overview of deep learning models and their applications."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-124｜xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史
+
+- raw_ref: R-125
+- raw_original_id: cmrhagju201pqbir7t0tnsgfy
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-125-xai-grok-build-cli-网络流量分析-上传仓库全部文件及-git-历史.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-125-xai-grok-build-cli-网络流量分析-上传仓库全部文件及-git-历史.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547
+- source_url: https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: repo_readme_or_index
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: aihot_visible_text
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: timeout
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 2692fbb549582ca5
+- raw_full_text_hash: 2692fbb549582ca5
+- raw_semantic_hash: ecffd1bc574f311b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2692fbb549582ca5","missing":["missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 3.5
+- raw_capture_priority: 4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"对 xAI 官方 Grok Build 编码 CLI（grok 0.2.93）的网络流量分析显示，该工具在消费者登录后会向 xAI 发送三类数据：一是它读取的文件内容（包括 .env 密钥文件）以明文形式通过 POST /v1/responses 传输，并同时打包成 session_state 存档通过 POST /v1/storage 上传并获 HTTP 200 确认；二是整个仓库的全部文件内容及 git 历史，独立于 AI 智能体实际读取的文件--即使提示\"不要读取任何文件\"，Grok 仍将整个仓库作为 git bundle 上传至 Google Cloud Storage 的 grok-code-session-traces 存储桶；三是该上传机制默认开启，且关闭\"改进模型\"设置不会禁用（/v1/settings 仍返回 trace_upload_enabled： true）。在 12 GB 仓库测试中，/v1/storage 传输了 5.10 GiB 数据，而模型对话通道仅传输 192 KB，比例约 27，800 倍。分析未证明 xAI 使用这些数据进行训练，但证实了数据被传输、接收并存储。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"对 xAI 官方 Grok Build 编码 CLI（grok 0.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"93）的网络流量分析显示，该工具在消费者登录后会向 xAI 发送三类数据：一是它读取的文件内容（包括 .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"env 密钥文件）以明文形式通过 POST /v1/responses 传输，并同时打包成 session_state 存档通过 POST /v1/storage 上传并获 HTTP 200 确认；二是整个仓库的全部文件内容及 git 历史，独立于 AI 智能体实际读取的文件--即使提示\"不要读取任何文件\"，Grok 仍将整个仓库作为 git bundle 上传至 Google Cloud Storage 的 grok-code-session-traces 存储桶；三是该上传机制默认开启，且关闭\"改进模型\"设置不会禁用（/v1/settings 仍返回 trace_upload_enabled： true）。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"在 12 GB 仓库测试中，/v1/storage 传输了 5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"number","text":"10 GiB 数据，而模型对话通道仅传输 192 KB，比例约 27，800 倍。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["对 xAI 官方 Grok Build 编码 CLI（grok 0.","93）的网络流量分析显示，该工具在消费者登录后会向 xAI 发送三类数据：一是它读取的文件内容（包括 .","在 12 GB 仓库测试中，/v1/storage 传输了 5."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-125｜The PhD Student &amp; Professor Reinventing AI: Fei-Fei Li &amp; Justin Johnson on Spatial Intelligence
+
+- raw_ref: R-126
+- raw_original_id: 3ba12e3f-32fc-40c3-af79-d6169b7627eb
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-126-the-phd-student-amp-professor-reinventing-ai-fei-fei-li-amp-justin-joh.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-126-the-phd-student-amp-professor-reinventing-ai-fei-fei-li-amp-justin-joh.json`
+- source: Latent Space｜https://episode.flightcast.com/01KAM7P2XJ0G8V3VNT49SKJPK2.mp3
+- source_url: https://episode.flightcast.com/01KAM7P2XJ0G8V3VNT49SKJPK2.mp3
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 605f1585e11c1be2
+- raw_full_text_hash: 605f1585e11c1be2
+- raw_semantic_hash: c920a9df1b3abf0a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"605f1585e11c1be2","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 0
+- raw_capture_priority: 4
+- usable_for: index_only
+- key_excerpts: [{"type":"quote","text":"Fei-Fei Li is the co-founder and CEO of World Labs, where she and Justin Johnson are building Marble, a new kind of generative “world model” that can create editable 3D environments from text, images, and other spatial inputs. Marble lets creators generate persistent 3D worlds, precisely control cameras, and interactively edit scenes, making it a powerful tool for games, film, VR, robotics simulation, and more. In this episode, Fei-Fei and Justin share how their journey from ImageNet and Stanfor","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"Fei-Fei Li is the co-founder and CEO of World Labs, where she and Justin Johnson are building Marble, a new kind of generative “world model” that can create editable 3D environments from text, images, and other spatial inputs.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Marble lets creators generate persistent 3D worlds, precisely control cameras, and interactively edit scenes, making it a powerful tool for games, film, VR, robotics simulation, and more.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"In this episode, Fei-Fei and Justin share how their journey from ImageNet and Stanfor","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Marble lets creators generate persistent 3D worlds, precisely control cameras, and interactively edit scenes, making it a powerful tool for games, film, VR, robotics simulation, and more.","In this episode, Fei-Fei and Justin share how their journey from ImageNet and Stanfor"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-126｜Red-Teaming after Mythos — Zico Kolter &amp; Matt Fredrikson, Gray Swan
+
+- raw_ref: R-127
+- raw_original_id: substack:post:202758604
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-127-red-teaming-after-mythos-zico-kolter-amp-matt-fredrikson-gray-swan.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-127-red-teaming-after-mythos-zico-kolter-amp-matt-fredrikson-gray-swan.json`
+- source: Latent Space｜https://www.latent.space/p/gray-swan
+- source_url: https://www.latent.space/p/gray-swan
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 285db31eee76e628
+- raw_full_text_hash: 285db31eee76e628
+- raw_semantic_hash: 4a4725ffe7a084ac
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"285db31eee76e628","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: -0.10000000000000009
+- raw_capture_priority: 3.9000000000000004
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"AI Engineer World’s Fair regular bird tix will sell out ~today! Join us next week ahead of the Late Bird price hike and get >$40,000 in sponsor credits for attending!Thanks to the US Government issuing an export control directive on Mythos and Fable, the risks of jailbreaks and (industry term) indirect prompt injection are suddenly the talk of the town, though we have been covering AI security for a few years now, from Hackaprompt to the enigmatic Pliny the Elder.Zico Kolter, member of OpenAI’s","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"AI Engineer World’s Fair regular bird tix will sell out ~today!","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"number","text":"Join us next week ahead of the Late Bird price hike and get >$40,000 in sponsor credits for attending!","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"Thanks to the US Government issuing an export control directive on Mythos and Fable, the risks of jailbreaks and (industry term) indirect prompt injection are suddenly the talk of the town, though we have been covering AI security for a few years now, from Hackaprompt to the enigmatic Pliny the Elder.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Zico Kolter, member of OpenAI’s","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["AI Engineer World’s Fair regular bird tix will sell out ~today!","Zico Kolter, member of OpenAI’s"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":["Thanks to the US Government issuing an export control directive on Mythos and Fable, the risks of jailbreaks and (industry term) indirect prompt injection are suddenly the talk of the town, though we have been covering AI security for a few years now, from Hackaprompt to the enigmatic Pliny the Elder."]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-127｜Everything Gets Rebuilt: The New AI Agent Stack | Harrison Chase, LangChain
+
+- raw_ref: R-128
+- raw_original_id: 82487571-ce18-4f36-8f74-c7b71e0e0dfd
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-128-everything-gets-rebuilt-the-new-ai-agent-stack-harrison-chase-langchai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-128-everything-gets-rebuilt-the-new-ai-agent-stack-harrison-chase-langchai.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/Everything-Gets-Rebuilt-The-New-AI-Agent-Stack--Harrison-Chase--LangChain-e3gapv9
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Everything-Gets-Rebuilt-The-New-AI-Agent-Stack--Harrison-Chase--LangChain-e3gapv9
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: low
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: supporting_evidence
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: c9603923a1b2b0fc
+- raw_full_text_hash: c9603923a1b2b0fc
+- raw_semantic_hash: 587c106c5cfde24c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c9603923a1b2b0fc","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: -0.10000000000000009
+- raw_capture_priority: 3.9000000000000004
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Harrison Chase, co-founder and CEO of LangChain, joins the MAD Podcast to explain why everything in AI is getting rebuilt. As agents evolve from simple prompt-based systems into software that can plan, use tools, write code, manage files, and remember things over time, the real frontier is shifting from the model itself to the stack around the model. In this conversation, we go deep on harnesses, subagents, filesystems, sandboxes, observability, memory, and the new infrastructure required to mak","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Harrison Chase, co-founder and CEO of LangChain, joins the MAD Podcast to explain why everything in AI is getting rebuilt.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"As agents evolve from simple prompt-based systems into software that can plan, use tools, write code, manage files, and remember things over time, the real frontier is shifting from the model itself to the stack around the model.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"In this conversation, we go deep on harnesses, subagents, filesystems, sandboxes, observability, memory, and the new infrastructure required to mak","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Harrison Chase, co-founder and CEO of LangChain, joins the MAD Podcast to explain why everything in AI is getting rebuilt. As agents evolve from simple prompt-based systems into software that can plan, use tools, write code, manage files, and remember things over time, the real frontier is shifting from the model itself to the stack around the model. In this conversation, we go deep on harnesses, subagents, filesystems, sandboxes, observability, memory, and the new infrastructure required to mak","Harrison Chase, co-founder and CEO of LangChain, joins the MAD Podcast to explain why everything in AI is getting rebuilt.","As agents evolve from simple prompt-based systems into software that can plan, use tools, write code, manage files, and remember things over time, the real frontier is shifting from the model itself to the stack around the model."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-128｜OpenAI 发布 GPT-5.6 系列医疗评估结果
+
+- raw_ref: R-131
 - raw_original_id: daily-2
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-053-openai-发布-gpt-5-6-系列医疗评估结果.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-053-openai-发布-gpt-5-6-系列医疗评估结果.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-131-openai-发布-gpt-5-6-系列医疗评估结果.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-131-openai-发布-gpt-5-6-系列医疗评估结果.json`
 - source: X：Sam Altman (@sama)｜no-url
 - source_url: no-url
 - acquisition_channel: aihot
@@ -2880,12 +7060,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-053｜Claude Code v2.1.207 发布
+## P-129｜Claude Code v2.1.207 发布
 
-- raw_ref: R-054
+- raw_ref: R-132
 - raw_original_id: daily-3
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-054-claude-code-v2-1-207-发布.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-054-claude-code-v2-1-207-发布.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-132-claude-code-v2-1-207-发布.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-132-claude-code-v2-1-207-发布.json`
 - source: Claude Code：GitHub Releases（RSS）｜no-url
 - source_url: no-url
 - acquisition_channel: aihot
@@ -2935,12 +7115,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-054｜11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun
+## P-130｜11天Claude Fable 5写超100万行代码：Rust重构JavaScript运行时Bun
 
-- raw_ref: R-055
+- raw_ref: R-133
 - raw_original_id: daily-6
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-055-11天claude-fable-5写超100万行代码-rust重构javascript运行时bun.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-055-11天claude-fable-5写超100万行代码-rust重构javascript运行时bun.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-133-11天claude-fable-5写超100万行代码-rust重构javascript运行时bun.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-133-11天claude-fable-5写超100万行代码-rust重构javascript运行时bun.json`
 - source: IT之家（RSS）｜no-url
 - source_url: no-url
 - acquisition_channel: aihot
@@ -2990,12 +7170,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-055｜Ghost Font：一种人类能读懂但AI无法识别的反AI字体
+## P-131｜Ghost Font：一种人类能读懂但AI无法识别的反AI字体
 
-- raw_ref: R-056
+- raw_ref: R-134
 - raw_original_id: daily-8
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-056-ghost-font-一种人类能读懂但ai无法识别的反ai字体.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-056-ghost-font-一种人类能读懂但ai无法识别的反ai字体.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-134-ghost-font-一种人类能读懂但ai无法识别的反ai字体.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-134-ghost-font-一种人类能读懂但ai无法识别的反ai字体.json`
 - source: Hacker News 热门（buzzing.cc 中文翻译）｜no-url
 - source_url: no-url
 - acquisition_channel: aihot
@@ -3045,12 +7225,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
 
-## P-056｜蚂蚁集团 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型
+## P-132｜蚂蚁集团 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型
 
-- raw_ref: R-057
+- raw_ref: R-151
 - raw_original_id: daily-1
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-057-蚂蚁集团-robbyant-发布-lingbot-va-2-0-首个原生具身基础模型.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-057-蚂蚁集团-robbyant-发布-lingbot-va-2-0-首个原生具身基础模型.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-151-蚂蚁集团-robbyant-发布-lingbot-va-2-0-首个原生具身基础模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-151-蚂蚁集团-robbyant-发布-lingbot-va-2-0-首个原生具身基础模型.json`
 - source: MarkTechPost（RSS）｜no-url
 - source_url: no-url
 - acquisition_channel: aihot
@@ -3100,12 +7280,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-057｜OpenAI GPT-5.6-Sol 删光 AI 创业者 Matt Shumer 的 Mac 硬盘
+## P-133｜OpenAI GPT-5.6-Sol 删光 AI 创业者 Matt Shumer 的 Mac 硬盘
 
-- raw_ref: R-058
+- raw_ref: R-152
 - raw_original_id: daily-4
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-058-openai-gpt-5-6-sol-删光-ai-创业者-matt-shumer-的-mac-硬盘.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-058-openai-gpt-5-6-sol-删光-ai-创业者-matt-shumer-的-mac-硬盘.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-152-openai-gpt-5-6-sol-删光-ai-创业者-matt-shumer-的-mac-硬盘.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-152-openai-gpt-5-6-sol-删光-ai-创业者-matt-shumer-的-mac-硬盘.json`
 - source: X：阿易 AI Notes (@AYi_AInotes)｜no-url
 - source_url: no-url
 - acquisition_channel: aihot
@@ -3155,12 +7335,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-058｜阶跃星辰发布 Step Edge 端侧模型全家桶
+## P-134｜阶跃星辰发布 Step Edge 端侧模型全家桶
 
-- raw_ref: R-059
+- raw_ref: R-177
 - raw_original_id: cmrh9m76v01lobir70tqkalcm
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-059-阶跃星辰发布-step-edge-端侧模型全家桶.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-059-阶跃星辰发布-step-edge-端侧模型全家桶.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-177-阶跃星辰发布-step-edge-端侧模型全家桶.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-177-阶跃星辰发布-step-edge-端侧模型全家桶.json`
 - source: 公众号：阶跃星辰（Step）｜https://mp.weixin.qq.com/s/StOzmXaUGSsjUXkAoW-HZg
 - source_url: https://mp.weixin.qq.com/s/StOzmXaUGSsjUXkAoW-HZg
 - acquisition_channel: aihot
@@ -3210,12 +7390,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-059｜彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句“哈哈”成窃密关键
+## P-135｜彭博社揭秘苹果起诉 OpenAI 内幕：前员工一句“哈哈”成窃密关键
 
-- raw_ref: R-061
+- raw_ref: R-182
 - raw_original_id: daily-7
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-061-彭博社揭秘苹果起诉-openai-内幕-前员工一句-哈哈-成窃密关键.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-061-彭博社揭秘苹果起诉-openai-内幕-前员工一句-哈哈-成窃密关键.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-182-彭博社揭秘苹果起诉-openai-内幕-前员工一句-哈哈-成窃密关键.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-182-彭博社揭秘苹果起诉-openai-内幕-前员工一句-哈哈-成窃密关键.json`
 - source: IT之家（RSS）｜no-url
 - source_url: no-url
 - acquisition_channel: aihot
@@ -3265,12 +7445,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
-## P-060｜研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发
+## P-136｜研究：博科圣地已使用ChatGPT、Claude等主流AI聊天机器人用于袭击策划与武器开发
 
-- raw_ref: R-062
+- raw_ref: R-183
 - raw_original_id: daily-5
-- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-062-研究-博科圣地已使用chatgpt-claude等主流ai聊天机器人用于袭击策划与武器开发.md`
-- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-062-研究-博科圣地已使用chatgpt-claude等主流ai聊天机器人用于袭击策划与武器开发.json`
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-12/r-183-研究-博科圣地已使用chatgpt-claude等主流ai聊天机器人用于袭击策划与武器开发.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-12/r-183-研究-博科圣地已使用chatgpt-claude等主流ai聊天机器人用于袭击策划与武器开发.json`
 - source: The Decoder：AI News（RSS）｜no-url
 - source_url: no-url
 - acquisition_channel: aihot
