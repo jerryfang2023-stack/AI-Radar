@@ -1,0 +1,273 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-018",
+  "title": "Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI",
+  "title_zh": "Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://www.marktechpost.com/2026/07/11/mira-muratis-thinking-machines-lab-makes-the-technical-case-for-human-centered-ai-built-on-customizable-model-weights",
+  "canonical_url": "https://marktechpost.com/2026/07/11/mira-muratis-thinking-machines-lab-makes-the-technical-case-for-human-centered-ai-built-on-customizable-model-weights",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-12T00:46:13.000Z",
+  "collected_at": "2026-07-12T06:10:48.383Z",
+  "language": "mixed",
+  "full_text": "Technology\nAI Shorts\nEditors Pick\nNew Releases\nSoftware Engineering\nStaff\nTech News\nThinking Machines Lab published a report to build AI that extends human will and judgment. Most AI in use today is trained in a handful of places, then frozen. The report argues that this design excludes the people a model serves. Instead, the Thinking Machines lab researchers want AI that is distributed, customizable, and shaped by its users.\nThinking Machines Lab’s Proposal\nThe lab names four technical directions. First, it trains strong models with multimodal interaction and customizability. Second, it builds tools that let people fine-tune and train model weights themselves. Third, it develops interfaces that widen the human-to-machine communication channel. Fourth, it publishes research so more engineers understand how models are made. Together, these directions move both knowledge and alignment closer to users.\nWhy Distributed Knowledge Needs Distributed AI\nUnderneath these directions sits a claim about knowledge itself. Much know-how is tacit, local, and updated constantly through feedback. A chef refining a recipe cannot write that skill into a database. The report cites Michael Polanyi and Friedrich Hayek to support this. The main planning fails because such knowledge is private and fleeting, not scarce. Therefore, the lab argues, AI must be distributed to use distributed knowledge. It wants AI that helps organizations cultivate that knowledge, not extract and replace it.\nChess and math are the stated exceptions. Both have static, expressible goals and no hidden knowledge. So self-play and autonomous solving work well there. Outside such closed domains, the report says intelligence alone is not enough.\nTechnical Bottlenecks It Names\nGiven that framing, the report reframes two familiar limits as engineering targets. The first is the communication channel: a small text box and a long wait. This is the problem the lab’s interaction models address directly. Those models take in audio, video, and text continuously, using roughly 200ms micro-turns. The second limit is evaluation itself. Benchmarks like METR’s measure how long a model works alone. The report argues this misses what people and machines accomplish together.\nOwnership And Decentralized Alignment\nBeyond interfaces, the report turns to where values live. A single alignment authority, it warns, becomes a single point of capture. Prompts change surface behavior, while deeper model habits stay fixed. So the lab argues values should be encoded in model weights, not prompts. This is where its Tinker API becomes concrete for engineers.\nTinker fine-tunes open-weights models such as Llama and Qwen using LoRA. It exposes low-level primitives and lets you export portable adapter weights. A minimal supervised loop follows the official pattern:\nCopy Code Copied Use a different Browser\nimport tinker\nfrom tinker import types\n# Reads TINKER_API_KEY from your environment\nservice_client = tinker.ServiceClient()\n# LoRA fine-tuning client for an open-weights base model\ntraining_client = service_client.create_lora_training_client(\nbase_model=\"Qwen/Qwen3-8B\", rank=32,\nfor batch in dataset: # batch: list[types.Datum]\nfwd_bwd = training_client.forward_backward(batch, \"cross_entropy\")\noptim = training_client.optim_step(types.AdamParams(learning_rate=1e-4))\nfwd_bwd.result() # accumulate gradients\noptim.result() # update the weights\n# Save the trained LoRA weights, then get a client to use them\nsampling_client = training_client.save_weights_and_get_sampling_client(\nname=\"my-adapter\",\nCentralized Frozen AI vs The Distributed Approach\nTaken together, the report’s stance contrasts with today’s default approach:\nDimension Centralized frozen AI Thinking Machines’ distributed approach\nWhere it is trained A few labs, then frozen Adapted where the work happens\nWho shapes values The model’s owner The organization and its users\nAdaptation Prompts and scaffolding Fine-tuned weights via tools like Tinker\nInterface Text box, turn-based waiting Live, multimodal interaction models\nAlignment locus One central spec Many diverse, owned models\nUse Cases With Examples\nIn practice, these ideas map onto concrete engineering work. For example, a hospital could fine-tune a model on its own protocols. It would keep both data and adapter weights in house. Similarly, a law firm could adapt a model to its house style. It would retrain that model whenever internal guidance changes. Meanwhile, a support team could use live interaction to correct a model mid-task. In each case, the organization keeps ownership instead of renting a fixed model.\nKey Takeaways\nThe essay treats human participation as a technical challenge, not a limit on capability.\nTacit, local knowledge is the stated reason AI itself must be distributed.\nInteraction models widen the human-AI channel using continuous, micro-turn multimodal input.\nTinker lets teams encode their values into portable LoRA weights they own.\nThe lab frames alignment as many diverse, owned models, not one central spec.\nSources\nThinking Machines Lab, “The Future Worth Building Is Human” (Jul 10, 2026): https://thinkingmachines.ai/blog/the-future-worth-building-is-human/\nThinking Machines Lab, “Interaction Models: A Scalable Approach to Human-AI Collaboration” (May 2026): https://thinkingmachines.ai/blog/interaction-models/\nTinker documentation (quickstart and TrainingClient API): https://tinker-docs.thinkingmachines.ai/\nKwa, West et al., “Task-Completion Time Horizons of Frontier AI Models,” METR (2025): https://metr.org/time-horizons/",
+  "clean_text": "Technology\nAI Shorts\nEditors Pick\nNew Releases\nSoftware Engineering\nStaff\nTech News\nThinking Machines Lab published a report to build AI that extends human will and judgment. Most AI in use today is trained in a handful of places, then frozen. The report argues that this design excludes the people a model serves. Instead, the Thinking Machines lab researchers want AI that is distributed, customizable, and shaped by its users.\nThinking Machines Lab’s Proposal\nThe lab names four technical directions. First, it trains strong models with multimodal interaction and customizability. Second, it builds tools that let people fine-tune and train model weights themselves. Third, it develops interfaces that widen the human-to-machine communication channel. Fourth, it publishes research so more engineers understand how models are made. Together, these directions move both knowledge and alignment closer to users.\nWhy Distributed Knowledge Needs Distributed AI\nUnderneath these directions sits a claim about knowledge itself. Much know-how is tacit, local, and updated constantly through feedback. A chef refining a recipe cannot write that skill into a database. The report cites Michael Polanyi and Friedrich Hayek to support this. The main planning fails because such knowledge is private and fleeting, not scarce. Therefore, the lab argues, AI must be distributed to use distributed knowledge. It wants AI that helps organizations cultivate that knowledge, not extract and replace it.\nChess and math are the stated exceptions. Both have static, expressible goals and no hidden knowledge. So self-play and autonomous solving work well there. Outside such closed domains, the report says intelligence alone is not enough.\nTechnical Bottlenecks It Names\nGiven that framing, the report reframes two familiar limits as engineering targets. The first is the communication channel: a small text box and a long wait. This is the problem the lab’s interaction models address directly. Those models take in audio, video, and text continuously, using roughly 200ms micro-turns. The second limit is evaluation itself. Benchmarks like METR’s measure how long a model works alone. The report argues this misses what people and machines accomplish together.\nOwnership And Decentralized Alignment\nBeyond interfaces, the report turns to where values live. A single alignment authority, it warns, becomes a single point of capture. Prompts change surface behavior, while deeper model habits stay fixed. So the lab argues values should be encoded in model weights, not prompts. This is where its Tinker API becomes concrete for engineers.\nTinker fine-tunes open-weights models such as Llama and Qwen using LoRA. It exposes low-level primitives and lets you export portable adapter weights. A minimal supervised loop follows the official pattern:\nCopy Code Copied Use a different Browser\nimport tinker\nfrom tinker import types\n# Reads TINKER_API_KEY from your environment\nservice_client = tinker.ServiceClient()\n# LoRA fine-tuning client for an open-weights base model\ntraining_client = service_client.create_lora_training_client(\nbase_model=\"Qwen/Qwen3-8B\", rank=32,\nfor batch in dataset: # batch: list[types.Datum]\nfwd_bwd = training_client.forward_backward(batch, \"cross_entropy\")\noptim = training_client.optim_step(types.AdamParams(learning_rate=1e-4))\nfwd_bwd.result() # accumulate gradients\noptim.result() # update the weights\n# Save the trained LoRA weights, then get a client to use them\nsampling_client = training_client.save_weights_and_get_sampling_client(\nname=\"my-adapter\",\nCentralized Frozen AI vs The Distributed Approach\nTaken together, the report’s stance contrasts with today’s default approach:\nDimension Centralized frozen AI Thinking Machines’ distributed approach\nWhere it is trained A few labs, then frozen Adapted where the work happens\nWho shapes values The model’s owner The organization and its users\nAdaptation Prompts and scaffolding Fine-tuned weights via tools like Tinker\nInterface Text box, turn-based waiting Live, multimodal interaction models\nAlignment locus One central spec Many diverse, owned models\nUse Cases With Examples\nIn practice, these ideas map onto concrete engineering work. For example, a hospital could fine-tune a model on its own protocols. It would keep both data and adapter weights in house. Similarly, a law firm could adapt a model to its house style. It would retrain that model whenever internal guidance changes. Meanwhile, a support team could use live interaction to correct a model mid-task. In each case, the organization keeps ownership instead of renting a fixed model.\nKey Takeaways\nThe essay treats human participation as a technical challenge, not a limit on capability.\nTacit, local knowledge is the stated reason AI itself must be distributed.\nInteraction models widen the human-AI channel using continuous, micro-turn multimodal input.\nTinker lets teams encode their values into portable LoRA weights they own.\nThe lab frames alignment as many diverse, owned models, not one central spec.\nSources\nThinking Machines Lab, “The Future Worth Building Is Human” (Jul 10, 2026): https://thinkingmachines.ai/blog/the-future-worth-building-is-human/\nThinking Machines Lab, “Interaction Models: A Scalable Approach to Human-AI Collaboration” (May 2026): https://thinkingmachines.ai/blog/interaction-models/\nTinker documentation (quickstart and TrainingClient API): https://tinker-docs.thinkingmachines.ai/\nKwa, West et al., “Task-Completion Time Horizons of Frontier AI Models,” METR (2025): https://metr.org/time-horizons/",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-018-thinking-machines-lab-发布技术白皮书-以可定制模型权重构建以人为本的-ai.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-018-thinking-machines-lab-发布技术白皮书-以可定制模型权重构建以人为本的-ai.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 5570,
+    "paragraph_count": 45,
+    "sentence_count": 47,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0063,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 5570,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "38062e505675e3f2",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI",
+    "discovery_summary": "Thinking Machines Lab 发布技术文章《值得构建的未来是人性化的》，将人类参与、模型所有权和去中心化对齐定位为技术挑战。文章将其与交互模型及 Tinker 的 LoRA 微调技术挂钩，团队可自行训练并保留专属模型权重。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/07/11/mira-muratis-thinking-machines-lab-makes-the-technical-case-for-human-centered-ai-built-on-customizable-model-weights",
+    "discovered_at": "2026-07-12T06:01:47.590Z",
+    "rank_on_page": 38,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "c949dd5f83058ec8",
+  "content_hash": "38062e505675e3f2",
+  "full_text_hash": "38062e505675e3f2",
+  "semantic_hash": "d37f7aa7cb2231a6",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-12T00:46:13.000Z",
+  "last_seen_at": "2026-07-12T06:10:48.383Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "Thinking Machines Lab 发布技术文章《值得构建的未来是人性化的》，将人类参与、模型所有权和去中心化对齐定位为技术挑战。文章将其与交互模型及 Tinker 的 LoRA 微调技术挂钩，团队可自行训练并保留专属模型权重。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Technology AI Shorts Editors Pick New Releases Software Engineering Staff Tech News Thinking Machines Lab published a report to build AI that extends human will and judgment.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Most AI in use today is trained in a handful of places, then frozen.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "opinion",
+      "text": "The report argues that this design excludes the people a model serves.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Instead, the Thinking Machines lab researchers want AI that is distributed, customizable, and shaped by its users.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Thinking Machines Lab’s Proposal The lab names four technical directions.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-12T06:10:48.383Z",
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "200m",
+      "3",
+      "8B",
+      "32",
+      "1",
+      "4",
+      "10",
+      "2026"
+    ],
+    "quotes": [
+      "Qwen/Qwen3-8B",
+      "cross_entropy",
+      "my-adapter",
+      "The Future Worth Building Is Human",
+      "Interaction Models: A Scalable Approach to Human-AI Collaboration"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Thinking Machines Lab 发布技术文章《值得构建的未来是人性化的》，将人类参与、模型所有权和去中心化对齐定位为技术挑战。文章将其与交互模型及 Tinker 的 LoRA 微调技术挂钩，团队可自行训练并保留专属模型权重。",
+      "Technology AI Shorts Editors Pick New Releases Software Engineering Staff Tech News Thinking Machines Lab published a report to build AI that extends human will and judgment.",
+      "Most AI in use today is trained in a handful of places, then frozen."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI\n\n- raw_id: R-018\n- title_zh: Thinking Machines Lab 发布技术白皮书：以可定制模型权重构建以人为本的 AI\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.marktechpost.com/2026/07/11/mira-muratis-thinking-machines-lab-makes-the-technical-case-for-human-centered-ai-built-on-customizable-model-weights\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-07-12T06:10:48.383Z\n\n## clean_text\n\nTechnology\nAI Shorts\nEditors Pick\nNew Releases\nSoftware Engineering\nStaff\nTech News\nThinking Machines Lab published a report to build AI that extends human will and judgment. Most AI in use today is trained in a handful of places, then frozen. The report argues that this design excludes the people a model serves. Instead, the Thinking Machines lab researchers want AI that is distributed, customizable, and shaped by its users.\nThinking Machines Lab’s Proposal\nThe lab names four technical directions. First, it trains strong models with multimodal interaction and customizability. Second, it builds tools that let people fine-tune and train model weights themselves. Third, it develops interfaces that widen the human-to-machine communication channel. Fourth, it publishes research so more engineers understand how models are made. Together, these directions move both knowledge and alignment closer to users.\nWhy Distributed Knowledge Needs Distributed AI\nUnderneath these directions sits a claim about knowledge itself. Much know-how is tacit, local, and updated constantly through feedback. A chef refining a recipe cannot write that skill into a database. The report cites Michael Polanyi and Friedrich Hayek to support this. The main planning fails because such knowledge is private and fleeting, not scarce. Therefore, the lab argues, AI must be distributed to use distributed knowledge. It wants AI that helps organizations cultivate that knowledge, not extract and replace it.\nChess and math are the stated exceptions. Both have static, expressible goals and no hidden knowledge. So self-play and autonomous solving work well there. Outside such closed domains, the report says intelligence alone is not enough.\nTechnical Bottlenecks It Names\nGiven that framing, the report reframes two familiar limits as engineering targets. The first is the communication channel: a small text box and a long wait. This is the problem the lab’s interaction models address directly. Those models take in audio, video, and text continuously, using roughly 200ms micro-turns. The second limit is evaluation itself. Benchmarks like METR’s measure how long a model works alone. The report argues this misses what people and machines accomplish together.\nOwnership And Decentralized Alignment\nBeyond interfaces, the report turns to where values live. A single alignment authority, it warns, becomes a single point of capture. Prompts change surface behavior, while deeper model habits stay fixed. So the lab argues values should be encoded in model weights, not prompts. This is where its Tinker API becomes concrete for engineers.\nTinker fine-tunes open-weights models such as Llama and Qwen using LoRA. It exposes low-level primitives and lets you export portable adapter weights. A minimal supervised loop follows the official pattern:\nCopy Code Copied Use a different Browser\nimport tinker\nfrom tinker import types\n# Reads TINKER_API_KEY from your environment\nservice_client = tinker.ServiceClient()\n# LoRA fine-tuning client for an open-weights base model\ntraining_client = service_client.create_lora_training_client(\nbase_model=\"Qwen/Qwen3-8B\", rank=32,\nfor batch in dataset: # batch: list[types.Datum]\nfwd_bwd = training_client.forward_backward(batch, \"cross_entropy\")\noptim = training_client.optim_step(types.AdamParams(learning_rate=1e-4))\nfwd_bwd.result() # accumulate gradients\noptim.result() # update the weights\n# Save the trained LoRA weights, then get a client to use them\nsampling_client = training_client.save_weights_and_get_sampling_client(\nname=\"my-adapter\",\nCentralized Frozen AI vs The Distributed Approach\nTaken together, the report’s stance contrasts with today’s default approach:\nDimension Centralized frozen AI Thinking Machines’ distributed approach\nWhere it is trained A few labs, then frozen Adapted where the work happens\nWho shapes values The model’s owner The organization and its users\nAdaptation Prompts and scaffolding Fine-tuned weights via tools like Tinker\nInterface Text box, turn-based waiting Live, multimodal interaction models\nAlignment locus One central spec Many diverse, owned models\nUse Cases With Examples\nIn practice, these ideas map onto concrete engineering work. For example, a hospital could fine-tune a model on its own protocols. It would keep both data and adapter weights in house. Similarly, a law firm could adapt a model to its house style. It would retrain that model whenever internal guidance changes. Meanwhile, a support team could use live interaction to correct a model mid-task. In each case, the organization keeps ownership instead of renting a fixed model.\nKey Takeaways\nThe essay treats human participation as a technical challenge, not a limit on capability.\nTacit, local knowledge is the stated reason AI itself must be distributed.\nInteraction models widen the human-AI channel using continuous, micro-turn multimodal input.\nTinker lets teams encode their values into portable LoRA weights they own.\nThe lab frames alignment as many diverse, owned models, not one central spec.\nSources\nThinking Machines Lab, “The Future Worth Building Is Human” (Jul 10, 2026): https://thinkingmachines.ai/blog/the-future-worth-building-is-human/\nThinking Machines Lab, “Interaction Models: A Scalable Approach to Human-AI Collaboration” (May 2026): https://thinkingmachines.ai/blog/interaction-models/\nTinker documentation (quickstart and TrainingClient API): https://tinker-docs.thinkingmachines.ai/\nKwa, West et al., “Task-Completion Time Horizons of Frontier AI Models,” METR (2025): https://metr.org/time-horizons/\n\n## full_text\n\nTechnology\nAI Shorts\nEditors Pick\nNew Releases\nSoftware Engineering\nStaff\nTech News\nThinking Machines Lab published a report to build AI that extends human will and judgment. Most AI in use today is trained in a handful of places, then frozen. The report argues that this design excludes the people a model serves. Instead, the Thinking Machines lab researchers want AI that is distributed, customizable, and shaped by its users.\nThinking Machines Lab’s Proposal\nThe lab names four technical directions. First, it trains strong models with multimodal interaction and customizability. Second, it builds tools that let people fine-tune and train model weights themselves. Third, it develops interfaces that widen the human-to-machine communication channel. Fourth, it publishes research so more engineers understand how models are made. Together, these directions move both knowledge and alignment closer to users.\nWhy Distributed Knowledge Needs Distributed AI\nUnderneath these directions sits a claim about knowledge itself. Much know-how is tacit, local, and updated constantly through feedback. A chef refining a recipe cannot write that skill into a database. The report cites Michael Polanyi and Friedrich Hayek to support this. The main planning fails because such knowledge is private and fleeting, not scarce. Therefore, the lab argues, AI must be distributed to use distributed knowledge. It wants AI that helps organizations cultivate that knowledge, not extract and replace it.\nChess and math are the stated exceptions. Both have static, expressible goals and no hidden knowledge. So self-play and autonomous solving work well there. Outside such closed domains, the report says intelligence alone is not enough.\nTechnical Bottlenecks It Names\nGiven that framing, the report reframes two familiar limits as engineering targets. The first is the communication channel: a small text box and a long wait. This is the problem the lab’s interaction models address directly. Those models take in audio, video, and text continuously, using roughly 200ms micro-turns. The second limit is evaluation itself. Benchmarks like METR’s measure how long a model works alone. The report argues this misses what people and machines accomplish together.\nOwnership And Decentralized Alignment\nBeyond interfaces, the report turns to where values live. A single alignment authority, it warns, becomes a single point of capture. Prompts change surface behavior, while deeper model habits stay fixed. So the lab argues values should be encoded in model weights, not prompts. This is where its Tinker API becomes concrete for engineers.\nTinker fine-tunes open-weights models such as Llama and Qwen using LoRA. It exposes low-level primitives and lets you export portable adapter weights. A minimal supervised loop follows the official pattern:\nCopy Code Copied Use a different Browser\nimport tinker\nfrom tinker import types\n# Reads TINKER_API_KEY from your environment\nservice_client = tinker.ServiceClient()\n# LoRA fine-tuning client for an open-weights base model\ntraining_client = service_client.create_lora_training_client(\nbase_model=\"Qwen/Qwen3-8B\", rank=32,\nfor batch in dataset: # batch: list[types.Datum]\nfwd_bwd = training_client.forward_backward(batch, \"cross_entropy\")\noptim = training_client.optim_step(types.AdamParams(learning_rate=1e-4))\nfwd_bwd.result() # accumulate gradients\noptim.result() # update the weights\n# Save the trained LoRA weights, then get a client to use them\nsampling_client = training_client.save_weights_and_get_sampling_client(\nname=\"my-adapter\",\nCentralized Frozen AI vs The Distributed Approach\nTaken together, the report’s stance contrasts with today’s default approach:\nDimension Centralized frozen AI Thinking Machines’ distributed approach\nWhere it is trained A few labs, then frozen Adapted where the work happens\nWho shapes values The model’s owner The organization and its users\nAdaptation Prompts and scaffolding Fine-tuned weights via tools like Tinker\nInterface Text box, turn-based waiting Live, multimodal interaction models\nAlignment locus One central spec Many diverse, owned models\nUse Cases With Examples\nIn practice, these ideas map onto concrete engineering work. For example, a hospital could fine-tune a model on its own protocols. It would keep both data and adapter weights in house. Similarly, a law firm could adapt a model to its house style. It would retrain that model whenever internal guidance changes. Meanwhile, a support team could use live interaction to correct a model mid-task. In each case, the organization keeps ownership instead of renting a fixed model.\nKey Takeaways\nThe essay treats human participation as a technical challenge, not a limit on capability.\nTacit, local knowledge is the stated reason AI itself must be distributed.\nInteraction models widen the human-AI channel using continuous, micro-turn multimodal input.\nTinker lets teams encode their values into portable LoRA weights they own.\nThe lab frames alignment as many diverse, owned models, not one central spec.\nSources\nThinking Machines Lab, “The Future Worth Building Is Human” (Jul 10, 2026): https://thinkingmachines.ai/blog/the-future-worth-building-is-human/\nThinking Machines Lab, “Interaction Models: A Scalable Approach to Human-AI Collaboration” (May 2026): https://thinkingmachines.ai/blog/interaction-models/\nTinker documentation (quickstart and TrainingClient API): https://tinker-docs.thinkingmachines.ai/\nKwa, West et al., “Task-Completion Time Horizons of Frontier AI Models,” METR (2025): https://metr.org/time-horizons/\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 97\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Thinking Machines Lab 发布技术文章《值得构建的未来是人性化的》，将人类参与、模型所有权和去中心化对齐定位为技术挑战。文章将其与交互模型及 Tinker 的 LoRA 微调技术挂钩，团队可自行训练并保留专属模型权重。\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Technology AI Shorts Editors Pick New Releases Software Engineering Staff Tech News Thinking Machines Lab published a report to build AI that extends human will and judgment.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Most AI in use today is trained in a handful of places, then frozen.\n4. [opinion / signal_card_candidate, relationship_graph_input, viewpoint / high] The report argues that this design excludes the people a model serves.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Instead, the Thinking Machines lab researchers want AI that is distributed, customizable, and shaped by its users.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Thinking Machines Lab’s Proposal The lab names four technical directions.\n"
+}

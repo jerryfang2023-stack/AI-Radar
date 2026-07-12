@@ -1,0 +1,276 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-013",
+  "title": "awesome-copilot/skills/devops-rollout-plan/SKILL.md at main - GitHub",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://github.com/github/awesome-copilot/blob/main/skills/devops-rollout-plan/SKILL.md",
+  "canonical_url": "https://github.com/github/awesome-copilot/blob/main/skills/devops-rollout-plan/SKILL.md",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "pilot",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-12T06:10:46.627Z",
+  "language": "mixed",
+  "full_text": "Uh oh!\nThere was an error while loading. Please reload this page .\ngithub\nawesome-copilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n4.5k\nStar\n36.5k\nFiles Expand file tree\nmain\n/ SKILL.md\nCopy path\nBlame\nMore file actions\nBlame\nMore file actions\nLatest commit\nHistory\nHistory\nHistory\n117 lines (92 loc) · 3.9 KB\nmain\n/ SKILL.md\nCopy path\nTop\nFile metadata and controls\nPreview\nCode\nBlame\n117 lines (92 loc) · 3.9 KB\nRaw\nCopy raw file\nDownload raw file\nOutline Edit and raw actions\nname\ndevops-rollout-plan\ndescription\nGenerate comprehensive rollout plans with preflight checks, step-by-step deployment, verification signals, rollback procedures, and communication plans for infrastructure and application changes\nDevOps Rollout Plan Generator\nYour goal is to create a comprehensive, production-ready rollout plan for infrastructure or application changes.\nInput Requirements\nGather these details before generating the plan:\nChange Description\nWhat's changing (infrastructure, application, configuration)\nVersion or state transition (from/to)\nProblem solved or feature added\nEnvironment Details\nTarget environment (dev, staging, production, all)\nInfrastructure type (Kubernetes, VMs, serverless, containers)\nAffected services and dependencies\nCurrent capacity and scale\nConstraints & Requirements\nAcceptable downtime window\nChange window restrictions\nApproval requirements\nRegulatory or compliance considerations\nRisk Assessment\nBlast radius of change\nData migrations or schema changes\nRollback complexity and safety\nKnown risks\nOutput Format\nGenerate a structured rollout plan with these sections:\n1. Executive Summary\nWhat, why, when, duration\nRisk level and rollback time\nAffected systems and user impact\nExpected downtime\n2. Prerequisites & Approvals\nRequired approvals (technical lead, security, compliance, business)\nRequired resources (capacity, backups, monitoring, rollback automation)\nPre-deployment backups\n3. Preflight Checks\nInfrastructure health validation\nApplication health baseline\nDependency availability\nMonitoring baseline metrics\nGo/no-go decision checklist\n4. Step-by-Step Rollout Procedure\nPhases : Pre-deployment, deployment, progressive verification\nSpecific commands for each step\nValidation after each step\nDuration estimates\n5. Verification Signals\nImmediate (0-2 min): Deployment success, pods/containers started, health checks passing\nShort-term (2-5 min): Application responding, error rates acceptable, latency normal\nMedium-term (5-15 min): Sustained metrics, stable connections, integrations working\nLong-term (15+ min): No degradation, capacity healthy, business metrics normal\n6. Rollback Procedure\nDecision Criteria : When to initiate rollback\nRollback Steps : Automated, infrastructure revert, or full restore\nPost-Rollback Verification : Confirm system health restored\nCommunication : Stakeholder notification\n7. Communication Plan\nPre-deployment (T-24h): Schedule and impact notice\nDeployment start: Commencement notice\nProgress updates: Status every X minutes\nCompletion: Success confirmation\nRollback (if needed): Issue notification\nStakeholder Matrix : Who to notify, when, via what method, with what content\n8. Post-Deployment Tasks\nImmediate (1h): Verify criteria met, review logs\nShort-term (24h): Monitor metrics, review errors\nMedium-term (1 week): Post-deployment review, lessons learned\n9. Contingency Plans\nScenarios: Partial failure, performance degradation, data inconsistency, dependency failure\nFor each: Symptoms, response, timeline\n10. Contact Information\nPrimary and secondary on-call\nEscalation path\nEmergency contacts (infrastructure, security, database, networking)\nPlan Customization\nAdapt based on:\nInfrastructure Type : Kubernetes, VMs, serverless, databases\nRisk Level : Low (simplified), medium (standard), high (additional gates)\nChange Type : Code deployment, infrastructure, configuration, data migration\nEnvironment : Production (full plan), staging (simplified), development (minimal)\nRemember\nAlways have a tested rollback plan\nCommunicate early and often\nMonitor metrics, not just logs\nDocument everything\nLearn from each deployment\nNever deploy on Friday afternoon (unless critical)\nNever skip verification steps\nNever assume \"it should work\"",
+  "clean_text": "Uh oh!\nThere was an error while loading. Please reload this page .\ngithub\nawesome-copilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n4.5k\nStar\n36.5k\nFiles Expand file tree\nmain\n/ SKILL.md\nCopy path\nBlame\nMore file actions\nBlame\nMore file actions\nLatest commit\nHistory\nHistory\nHistory\n117 lines (92 loc) · 3.9 KB\nmain\n/ SKILL.md\nCopy path\nTop\nFile metadata and controls\nPreview\nCode\nBlame\n117 lines (92 loc) · 3.9 KB\nRaw\nCopy raw file\nDownload raw file\nOutline Edit and raw actions\nname\ndevops-rollout-plan\ndescription\nGenerate comprehensive rollout plans with preflight checks, step-by-step deployment, verification signals, rollback procedures, and communication plans for infrastructure and application changes\nDevOps Rollout Plan Generator\nYour goal is to create a comprehensive, production-ready rollout plan for infrastructure or application changes.\nInput Requirements\nGather these details before generating the plan:\nChange Description\nWhat's changing (infrastructure, application, configuration)\nVersion or state transition (from/to)\nProblem solved or feature added\nEnvironment Details\nTarget environment (dev, staging, production, all)\nInfrastructure type (Kubernetes, VMs, serverless, containers)\nAffected services and dependencies\nCurrent capacity and scale\nConstraints & Requirements\nAcceptable downtime window\nChange window restrictions\nApproval requirements\nRegulatory or compliance considerations\nRisk Assessment\nBlast radius of change\nData migrations or schema changes\nRollback complexity and safety\nKnown risks\nOutput Format\nGenerate a structured rollout plan with these sections:\n1. Executive Summary\nWhat, why, when, duration\nRisk level and rollback time\nAffected systems and user impact\nExpected downtime\n2. Prerequisites & Approvals\nRequired approvals (technical lead, security, compliance, business)\nRequired resources (capacity, backups, monitoring, rollback automation)\nPre-deployment backups\n3. Preflight Checks\nInfrastructure health validation\nApplication health baseline\nDependency availability\nMonitoring baseline metrics\nGo/no-go decision checklist\n4. Step-by-Step Rollout Procedure\nPhases : Pre-deployment, deployment, progressive verification\nSpecific commands for each step\nValidation after each step\nDuration estimates\n5. Verification Signals\nImmediate (0-2 min): Deployment success, pods/containers started, health checks passing\nShort-term (2-5 min): Application responding, error rates acceptable, latency normal\nMedium-term (5-15 min): Sustained metrics, stable connections, integrations working\nLong-term (15+ min): No degradation, capacity healthy, business metrics normal\n6. Rollback Procedure\nDecision Criteria : When to initiate rollback\nRollback Steps : Automated, infrastructure revert, or full restore\nPost-Rollback Verification : Confirm system health restored\nCommunication : Stakeholder notification\n7. Communication Plan\nPre-deployment (T-24h): Schedule and impact notice\nDeployment start: Commencement notice\nProgress updates: Status every X minutes\nCompletion: Success confirmation\nRollback (if needed): Issue notification\nStakeholder Matrix : Who to notify, when, via what method, with what content\n8. Post-Deployment Tasks\nImmediate (1h): Verify criteria met, review logs\nShort-term (24h): Monitor metrics, review errors\nMedium-term (1 week): Post-deployment review, lessons learned\n9. Contingency Plans\nScenarios: Partial failure, performance degradation, data inconsistency, dependency failure\nFor each: Symptoms, response, timeline\n10. Contact Information\nPrimary and secondary on-call\nEscalation path\nEmergency contacts (infrastructure, security, database, networking)\nPlan Customization\nAdapt based on:\nInfrastructure Type : Kubernetes, VMs, serverless, databases\nRisk Level : Low (simplified), medium (standard), high (additional gates)\nChange Type : Code deployment, infrastructure, configuration, data migration\nEnvironment : Production (full plan), staging (simplified), development (minimal)\nRemember\nAlways have a tested rollback plan\nCommunicate early and often\nMonitor metrics, not just logs\nDocument everything\nLearn from each deployment\nNever deploy on Friday afternoon (unless critical)\nNever skip verification steps\nNever assume \"it should work\"",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-013-awesome-copilot-skills-devops-rollout-plan-skill-md-at-main-github.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-12/r-013-awesome-copilot-skills-devops-rollout-plan-skill-md-at-main-github.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 4252,
+    "paragraph_count": 82,
+    "sentence_count": 14,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 4252,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "bf8ace2ddb9fa4b9",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "cefd8e2b3f121ee9",
+  "content_hash": "bf8ace2ddb9fa4b9",
+  "full_text_hash": "bf8ace2ddb9fa4b9",
+  "semantic_hash": "484333f14506be7d",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-12T06:10:46.627Z",
+  "last_seen_at": "2026-07-12T06:10:46.627Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "# skills/devops-rollout-plan/SKILL.md - Branch: main - Repository: github/awesome-copilot --- --- name: devops-rollout-plan description: 'Generate comprehensive rollout plans with preflight checks, step-by-step deployment, verification signals, rollback procedures, and communication plans for inf... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "github awesome-copilot Public Notifications You must be signed in to change notification settings Fork 4.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5k Files Expand file tree main / SKILL.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md Copy path Blame More file actions Blame More file actions Latest commit History History History 117 lines (92 loc) · 3.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-12T06:10:46.627Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub"
+    ],
+    "products": [
+      "copilot"
+    ],
+    "people": [],
+    "industries": [
+      "医疗",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "4.5",
+      "36.5",
+      "117",
+      "92",
+      "3.9",
+      "1",
+      "2",
+      "3"
+    ],
+    "quotes": [
+      "it should work"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "There was an error while loading.",
+      "Please reload this page .",
+      "5k Files Expand file tree main / SKILL."
+    ],
+    "case_details": [
+      "# skills/devops-rollout-plan/SKILL.md - Branch: main - Repository: github/awesome-copilot --- --- name: devops-rollout-plan description: 'Generate comprehensive rollout plans with preflight checks, step-by-step deployment, verification signals, rollback procedures, and communication plans for inf... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=developer_ecosystem",
+      "github awesome-copilot Public Notifications You must be signed in to change notification settings Fork 4."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# awesome-copilot/skills/devops-rollout-plan/SKILL.md at main - GitHub\n\n- raw_id: R-013\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://github.com/github/awesome-copilot/blob/main/skills/devops-rollout-plan/SKILL.md\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-12T06:10:46.627Z\n\n## clean_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\ngithub\nawesome-copilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n4.5k\nStar\n36.5k\nFiles Expand file tree\nmain\n/ SKILL.md\nCopy path\nBlame\nMore file actions\nBlame\nMore file actions\nLatest commit\nHistory\nHistory\nHistory\n117 lines (92 loc) · 3.9 KB\nmain\n/ SKILL.md\nCopy path\nTop\nFile metadata and controls\nPreview\nCode\nBlame\n117 lines (92 loc) · 3.9 KB\nRaw\nCopy raw file\nDownload raw file\nOutline Edit and raw actions\nname\ndevops-rollout-plan\ndescription\nGenerate comprehensive rollout plans with preflight checks, step-by-step deployment, verification signals, rollback procedures, and communication plans for infrastructure and application changes\nDevOps Rollout Plan Generator\nYour goal is to create a comprehensive, production-ready rollout plan for infrastructure or application changes.\nInput Requirements\nGather these details before generating the plan:\nChange Description\nWhat's changing (infrastructure, application, configuration)\nVersion or state transition (from/to)\nProblem solved or feature added\nEnvironment Details\nTarget environment (dev, staging, production, all)\nInfrastructure type (Kubernetes, VMs, serverless, containers)\nAffected services and dependencies\nCurrent capacity and scale\nConstraints & Requirements\nAcceptable downtime window\nChange window restrictions\nApproval requirements\nRegulatory or compliance considerations\nRisk Assessment\nBlast radius of change\nData migrations or schema changes\nRollback complexity and safety\nKnown risks\nOutput Format\nGenerate a structured rollout plan with these sections:\n1. Executive Summary\nWhat, why, when, duration\nRisk level and rollback time\nAffected systems and user impact\nExpected downtime\n2. Prerequisites & Approvals\nRequired approvals (technical lead, security, compliance, business)\nRequired resources (capacity, backups, monitoring, rollback automation)\nPre-deployment backups\n3. Preflight Checks\nInfrastructure health validation\nApplication health baseline\nDependency availability\nMonitoring baseline metrics\nGo/no-go decision checklist\n4. Step-by-Step Rollout Procedure\nPhases : Pre-deployment, deployment, progressive verification\nSpecific commands for each step\nValidation after each step\nDuration estimates\n5. Verification Signals\nImmediate (0-2 min): Deployment success, pods/containers started, health checks passing\nShort-term (2-5 min): Application responding, error rates acceptable, latency normal\nMedium-term (5-15 min): Sustained metrics, stable connections, integrations working\nLong-term (15+ min): No degradation, capacity healthy, business metrics normal\n6. Rollback Procedure\nDecision Criteria : When to initiate rollback\nRollback Steps : Automated, infrastructure revert, or full restore\nPost-Rollback Verification : Confirm system health restored\nCommunication : Stakeholder notification\n7. Communication Plan\nPre-deployment (T-24h): Schedule and impact notice\nDeployment start: Commencement notice\nProgress updates: Status every X minutes\nCompletion: Success confirmation\nRollback (if needed): Issue notification\nStakeholder Matrix : Who to notify, when, via what method, with what content\n8. Post-Deployment Tasks\nImmediate (1h): Verify criteria met, review logs\nShort-term (24h): Monitor metrics, review errors\nMedium-term (1 week): Post-deployment review, lessons learned\n9. Contingency Plans\nScenarios: Partial failure, performance degradation, data inconsistency, dependency failure\nFor each: Symptoms, response, timeline\n10. Contact Information\nPrimary and secondary on-call\nEscalation path\nEmergency contacts (infrastructure, security, database, networking)\nPlan Customization\nAdapt based on:\nInfrastructure Type : Kubernetes, VMs, serverless, databases\nRisk Level : Low (simplified), medium (standard), high (additional gates)\nChange Type : Code deployment, infrastructure, configuration, data migration\nEnvironment : Production (full plan), staging (simplified), development (minimal)\nRemember\nAlways have a tested rollback plan\nCommunicate early and often\nMonitor metrics, not just logs\nDocument everything\nLearn from each deployment\nNever deploy on Friday afternoon (unless critical)\nNever skip verification steps\nNever assume \"it should work\"\n\n## full_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\ngithub\nawesome-copilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n4.5k\nStar\n36.5k\nFiles Expand file tree\nmain\n/ SKILL.md\nCopy path\nBlame\nMore file actions\nBlame\nMore file actions\nLatest commit\nHistory\nHistory\nHistory\n117 lines (92 loc) · 3.9 KB\nmain\n/ SKILL.md\nCopy path\nTop\nFile metadata and controls\nPreview\nCode\nBlame\n117 lines (92 loc) · 3.9 KB\nRaw\nCopy raw file\nDownload raw file\nOutline Edit and raw actions\nname\ndevops-rollout-plan\ndescription\nGenerate comprehensive rollout plans with preflight checks, step-by-step deployment, verification signals, rollback procedures, and communication plans for infrastructure and application changes\nDevOps Rollout Plan Generator\nYour goal is to create a comprehensive, production-ready rollout plan for infrastructure or application changes.\nInput Requirements\nGather these details before generating the plan:\nChange Description\nWhat's changing (infrastructure, application, configuration)\nVersion or state transition (from/to)\nProblem solved or feature added\nEnvironment Details\nTarget environment (dev, staging, production, all)\nInfrastructure type (Kubernetes, VMs, serverless, containers)\nAffected services and dependencies\nCurrent capacity and scale\nConstraints & Requirements\nAcceptable downtime window\nChange window restrictions\nApproval requirements\nRegulatory or compliance considerations\nRisk Assessment\nBlast radius of change\nData migrations or schema changes\nRollback complexity and safety\nKnown risks\nOutput Format\nGenerate a structured rollout plan with these sections:\n1. Executive Summary\nWhat, why, when, duration\nRisk level and rollback time\nAffected systems and user impact\nExpected downtime\n2. Prerequisites & Approvals\nRequired approvals (technical lead, security, compliance, business)\nRequired resources (capacity, backups, monitoring, rollback automation)\nPre-deployment backups\n3. Preflight Checks\nInfrastructure health validation\nApplication health baseline\nDependency availability\nMonitoring baseline metrics\nGo/no-go decision checklist\n4. Step-by-Step Rollout Procedure\nPhases : Pre-deployment, deployment, progressive verification\nSpecific commands for each step\nValidation after each step\nDuration estimates\n5. Verification Signals\nImmediate (0-2 min): Deployment success, pods/containers started, health checks passing\nShort-term (2-5 min): Application responding, error rates acceptable, latency normal\nMedium-term (5-15 min): Sustained metrics, stable connections, integrations working\nLong-term (15+ min): No degradation, capacity healthy, business metrics normal\n6. Rollback Procedure\nDecision Criteria : When to initiate rollback\nRollback Steps : Automated, infrastructure revert, or full restore\nPost-Rollback Verification : Confirm system health restored\nCommunication : Stakeholder notification\n7. Communication Plan\nPre-deployment (T-24h): Schedule and impact notice\nDeployment start: Commencement notice\nProgress updates: Status every X minutes\nCompletion: Success confirmation\nRollback (if needed): Issue notification\nStakeholder Matrix : Who to notify, when, via what method, with what content\n8. Post-Deployment Tasks\nImmediate (1h): Verify criteria met, review logs\nShort-term (24h): Monitor metrics, review errors\nMedium-term (1 week): Post-deployment review, lessons learned\n9. Contingency Plans\nScenarios: Partial failure, performance degradation, data inconsistency, dependency failure\nFor each: Symptoms, response, timeline\n10. Contact Information\nPrimary and secondary on-call\nEscalation path\nEmergency contacts (infrastructure, security, database, networking)\nPlan Customization\nAdapt based on:\nInfrastructure Type : Kubernetes, VMs, serverless, databases\nRisk Level : Low (simplified), medium (standard), high (additional gates)\nChange Type : Code deployment, infrastructure, configuration, data migration\nEnvironment : Production (full plan), staging (simplified), development (minimal)\nRemember\nAlways have a tested rollback plan\nCommunicate early and often\nMonitor metrics, not just logs\nDocument everything\nLearn from each deployment\nNever deploy on Friday afternoon (unless critical)\nNever skip verification steps\nNever assume \"it should work\"\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] # skills/devops-rollout-plan/SKILL.md - Branch: main - Repository: github/awesome-copilot --- --- name: devops-rollout-plan description: 'Generate comprehensive rollout plans with preflight checks, step-by-step deployment, verification signals, rollback procedures, and communication plans for inf... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] There was an error while loading.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Please reload this page .\n4. [case_detail / signal_card_candidate, relationship_graph_input, case / high] github awesome-copilot Public Notifications You must be signed in to change notification settings Fork 4.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 5k Files Expand file tree main / SKILL.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] md Copy path Blame More file actions Blame More file actions Latest commit History History History 117 lines (92 loc) · 3.\n"
+}
