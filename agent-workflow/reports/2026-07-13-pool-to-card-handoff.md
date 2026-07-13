@@ -1,6 +1,6 @@
 # 2026-07-13 Pool-to-Card Handoff
 
-- generated_at: 2026-07-13T04:13:30.292Z
+- generated_at: 2026-07-13T05:32:03.791Z
 - raw_input_count: 154
 - pool_input_count: 98
 - written_count: 11
@@ -33,7 +33,7 @@
 - P-022｜event:product_service:meta:1.1｜accepted
 - P-029｜event:product_service:dpvr:20m｜accepted
 - P-089｜event:product_service:腾讯混元:3｜accepted
-- P-035｜event:product_service:努比亚 ai 宠物机器人 imoochi 定档 7 月 17 日上线:7｜accepted
+- P-035｜event:product_service:努比亚:7｜accepted
 - P-037｜event:product_service:stigg:2.0｜accepted
 - P-002｜event:product_service:ploy:4.8｜accepted
 

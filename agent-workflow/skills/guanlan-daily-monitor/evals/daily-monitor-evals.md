@@ -52,3 +52,8 @@
 14. `capital_startup_query_priority`
    - Pass when the `capital_startup` path spends its limited query budget on dedicated funding / startup queries before unrelated global themes and adds the production month as a recency hint.
    - Fail when configured financing queries are displaced by earlier product, developer, policy, or general-market themes, or generic queries keep returning stale rounds.
+
+15. `rss_freshness_and_single_source_cap`
+   - Pass when RFC 2822 / RFC 1123 RSS dates are normalized, dated URLs can repair a missing feed date, stale archive entries are filtered, and each RSS source has a bounded daily contribution.
+   - Pass when undated podcast/newsletter archive entries are excluded and lead-only podcast/newsletter pages cannot enter Core Pool without recapture of the original event source.
+   - Fail when old podcast catalogs or newsletter roundups can fill Raw / Pool merely because post-fetch dedupe is expanding toward the Raw coverage target.

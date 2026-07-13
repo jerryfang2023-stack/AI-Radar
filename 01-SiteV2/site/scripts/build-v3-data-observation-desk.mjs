@@ -89,6 +89,7 @@ function loadSourceTitleTranslations() {
     const entries = Array.isArray(json) ? json : (Array.isArray(json.translations) ? json.translations : []);
     const map = new Map();
     for (const entry of entries) {
+      if (entry?.generatedBy === "mymemory_title_translation") continue;
       const sourceTitle = String(entry?.sourceTitle || "").trim();
       const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
       if (!sourceTitle || !zhTitle || publicTextLooksGarbled(sourceTitle) || publicTextLooksGarbled(zhTitle)) continue;
@@ -1227,10 +1228,10 @@ function subjectMatchesDisplayTitle(subject = "", title = "", originalTitle = ""
 
 function safeFrontstageSubject({ subject = "", sourceUrl = "", sourceName = "", rawTitle = "", title = "", originalTitle = "" } = {}) {
   const candidates = [
+    subject,
     frontstageSubjectOverride(sourceUrl, title || rawTitle || originalTitle),
     subjectFromUrl(sourceUrl),
     subjectFromEnglishTitle(rawTitle || originalTitle || title),
-    subject,
     subjectFromTitle(title),
     subjectFromTitle(rawTitle || originalTitle),
     sourceName,
@@ -1712,16 +1713,16 @@ function frontstageSubject(fm, sourceUrl, sourceName, rawTitle, title) {
     scalar(fm, "person_name"),
     scalar(fm, "organization"),
   ].map(normalizeSubject).find((item) => !isWeakSubject(item));
-  const override = frontstageSubjectOverride(sourceUrl, title || rawTitle);
-  if (override) return override;
-  const urlSubject = normalizeSubject(subjectFromUrl(sourceUrl));
-  const titleSubject = normalizeSubject(subjectFromTitle(title) || subjectFromTitle(rawTitle));
-  if (urlSubject) return urlSubject;
   if (
     explicit
     && !subjectLooksLikeTitle(explicit)
     && !subjectMatchesDisplayTitle(explicit, title, rawTitle)
   ) return explicit;
+  const override = frontstageSubjectOverride(sourceUrl, title || rawTitle);
+  if (override) return override;
+  const urlSubject = normalizeSubject(subjectFromUrl(sourceUrl));
+  const titleSubject = normalizeSubject(subjectFromTitle(title) || subjectFromTitle(rawTitle));
+  if (urlSubject) return urlSubject;
   if (isDiscoveryLabel(sourceName) && titleSubject && !isWeakSubject(titleSubject)) return titleSubject;
   return (!isWeakSubject(sourceName) ? normalizeSubject(sourceName) : "")
     || (titleSubject && !isWeakSubject(titleSubject) ? titleSubject : "")
@@ -3092,6 +3093,7 @@ function cardFromFile(file, category) {
     displayTags: displayTags(tags),
     opportunitySignals: opportunitySignals(fm),
     summary: short(sourceValue || markdownValue || sourceFact, 260),
+    activeAssetValueSummary: short(markdownValue, 260),
     translatedFact: short(sourceFact, 320),
     originalHighlights,
     visibleFragment,
@@ -4208,6 +4210,15 @@ const activeDate = rawCards.map((card) => card.date).filter(Boolean).sort().at(-
 syncSourceTitleTranslationsFromCards(rawCards, activeDate);
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPublicBusinessSignalEligible))
   .map((card) => normalizeFrontstageDisplay(card, { strictPublic: card.date === activeDate }))
+  .map((card) => {
+    const { activeAssetValueSummary, ...publicCard } = card;
+    return {
+      ...publicCard,
+      summary: card.date === activeDate && activeAssetValueSummary
+        ? activeAssetValueSummary
+        : card.summary,
+    };
+  })
   .filter((card) => card.title && card.date && card.sourceName)
   .filter(publicSignalCardIsDisplayReady)
   .map(annotateFrontstageCandidate)

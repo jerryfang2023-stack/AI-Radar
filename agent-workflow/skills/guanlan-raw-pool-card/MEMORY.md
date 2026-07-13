@@ -2,6 +2,11 @@
 
 Keep this file short. Add only durable lessons that improve the skill itself. Do not copy command output, daily counts, or one-off production details.
 
+## 2026-07-13 Title And Frontstage Value Boundary
+
+- Chinese-looking output is not sufficient title quality: generic machine translation can corrupt protected product/company terms while passing script and CJK checks. Production auto mode should use the controlled business-news prompt or deterministic event rules, and leave unresolved formal-event titles blocking.
+- Frontstage must reuse the Card asset's source-backed value/evidence text. Category boilerplate can make a technically valid Card set read as uniformly low quality and must be caught by the unified frontstage gate.
+
 ## 2026-07-12 High-Value Recall Boundary
 
 - Card quality gates must cover recall as well as precision. A release can have clean Cards and still be wrong when confirmed high-value events disappear before spec generation.

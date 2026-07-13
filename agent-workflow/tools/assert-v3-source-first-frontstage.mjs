@@ -62,6 +62,7 @@ function loadSourceTitleTranslations() {
     const entries = Array.isArray(json) ? json : (Array.isArray(json.translations) ? json.translations : []);
     const map = new Map();
     for (const entry of entries) {
+      if (entry?.generatedBy === "mymemory_title_translation") continue;
       const sourceTitle = String(entry?.sourceTitle || "").trim();
       const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
       if (!sourceTitle || !zhTitle || publicTextLooksGarbled(zhTitle)) continue;
@@ -489,6 +490,9 @@ function checkPublicCardContract(card = {}, label = "public card") {
   }
   if (isActiveDateItem && !titleBackedByOriginalSource(card)) {
     issues.push(`${label} ${id} public title is not backed by original source title translation: ${card.title}`);
+  }
+  if (isActiveDateItem && /^这条(?:融资|案例|产品)?信号可用于/u.test(String(card.summary || "").trim())) {
+    issues.push(`${label} ${id} exposes category boilerplate instead of the Card asset value/evidence summary`);
   }
 }
 

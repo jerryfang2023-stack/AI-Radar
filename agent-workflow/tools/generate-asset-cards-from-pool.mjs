@@ -1947,6 +1947,8 @@ function companyFromSection(section) {
   const sourceUrl = value(section, "source_url");
   const specialCases = [
     [/小鹏|\bXPENG\b/iu, "小鹏汽车"],
+    [/努比亚|\bNubia\b|\biMoochi\b/iu, "努比亚"],
+    [/腾讯混元|Tencent\s+Hunyuan/iu, "腾讯混元"],
     [/taskade\.com|\bTaskade\b/iu, "Taskade"],
     [/stigg\.io|\bStigg\b/iu, "Stigg"],
     [/微软研究院|Microsoft Research/iu, "Microsoft Research"],
@@ -2176,6 +2178,7 @@ function loadSourceTitleTranslations() {
     const entries = Array.isArray(json) ? json : (Array.isArray(json.translations) ? json.translations : []);
     const map = new Map();
     for (const entry of entries) {
+      if (entry?.generatedBy === "mymemory_title_translation") continue;
       const sourceTitle = String(entry?.sourceTitle || "").trim();
       const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
       if (!sourceTitle || !zhTitle || hasTextContamination(sourceTitle) || hasTextContamination(zhTitle)) continue;
@@ -2206,6 +2209,7 @@ const sourceTitleTranslations = loadSourceTitleTranslations();
 
 function rawTitleZhFromSection(section) {
   const raw = readRawJson(section);
+  if (raw.title_translation_method === "mymemory_title_translation") return "";
   const title = cleanSourceTitleForPublicTitle(raw.title_zh || raw.titleZh || "");
   if (!title || hasTextContamination(title) || !hasCjk(title)) return "";
   return title;
