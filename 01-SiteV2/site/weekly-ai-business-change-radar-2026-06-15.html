@@ -8,7 +8,7 @@
   <meta name="weekly-report-source" content="01-SiteV2/content/08-report/2026-06-15--weekly-report--ai-business-change-radar.md">
   <title>每周周报｜观澜 AI</title>
   <link rel="stylesheet" href="assets/wavesight-nav.css">
-  <link rel="stylesheet" href="assets/weekly-report.css?v=20260622-weekly-radar">
+  <link rel="stylesheet" href="assets/weekly-report.css?v=20260713-weekly-radar">
 </head>
 <body class="weekly-report-page">
   <header class="wavesight-topbar" aria-label="观澜 AI 导航">
@@ -32,7 +32,8 @@
           <label class="weekly-report-window">
             <span>时间窗口</span>
             <select aria-label="选择周报时间窗口" data-weekly-report-selector>
-              <option value="weekly-ai-business-change-radar.html">2026.06.29 - 07.05</option>
+              <option value="weekly-ai-business-change-radar.html">2026.07.06 - 07.12</option>
+              <option value="weekly-ai-business-change-radar-2026-07-06.html">2026.06.29 - 07.05</option>
               <option value="weekly-ai-business-change-radar-2026-06-29.html">2026.06.22 - 06.28</option>
               <option value="weekly-ai-business-change-radar-2026-06-22.html">2026.06.15 - 06.21</option>
               <option value="weekly-ai-business-change-radar-2026-06-15.html" selected>2026.06.09 - 06.15</option>
@@ -444,12 +445,17 @@
   <script>
     (() => {
       const selector = document.querySelector("[data-weekly-report-selector]");
+      let pendingTarget = "";
       const openSelectedReport = () => {
-        if (selector?.value && window.location.pathname.split("/").pop() !== selector.value) {
-          window.location.assign(selector.value);
+        if (!selector?.value) return;
+        const target = new URL(selector.value, window.location.href);
+        if (target.href !== window.location.href && target.href !== pendingTarget) {
+          pendingTarget = target.href;
+          window.location.assign(target.href);
         }
       };
       selector?.addEventListener("change", openSelectedReport);
+      selector?.addEventListener("input", openSelectedReport);
     })();
   </script>
 </body>
