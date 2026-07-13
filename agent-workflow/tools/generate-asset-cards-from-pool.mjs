@@ -495,6 +495,7 @@ function normalizedSignalText(raw) {
     .replace(/\blabs?\b/gu, "")
     .replace(/\binc\b|\bcorp\b|\bcorporation\b|\bltd\b/gu, "")
     .replace(/[^a-z0-9\u4e00-\u9fff]+/gu, " ")
+    .replace(/(?<=[\u4e00-\u9fff])\s+(?=[\u4e00-\u9fff])/gu, "")
     .replace(/\s+/gu, " ")
     .trim();
 }
@@ -546,7 +547,7 @@ function stripSourceNoise(raw = "") {
 
 function sourcePointLooksPageChrome(value = "") {
   const text = String(value || "");
-  return /IT之家\s+首页\s+IT圈|首页.{0,80}设置.{0,80}投稿.{0,80}订阅|软媒应用.{0,80}App客户端|Skip to content|Navigation Menu|Search or jump to|Saved searches|Appearance settings|###|\bTotal Shares\b|accuracy layer for f(?:[。.]|$)/iu.test(text);
+  return /IT之家\s+首页\s+IT圈|首页.{0,80}设置.{0,80}投稿.{0,80}订阅|软媒应用.{0,80}App客户端|Skip to content|Navigation Menu|Search or jump to|Saved searches|Appearance settings|Read the blog post here|Written by .{0,120}Last updated .{0,120}Table of contents|Share:\s*Copied\s+https?:\/\/|^io\/.*https?:\/\/|https?:\/\/www\.$|Home\s+Pricing\s+Docs\s+Blog\s+(?:\[?Company\]?\s+)?Login\s+Talk To Us|###|\bTotal Shares\b|accuracy layer for f(?:[。.]|$)/iu.test(text);
 }
 
 function sourcePointLooksSplitFragment(value = "") {
@@ -557,7 +558,7 @@ function sourcePointLooksSplitFragment(value = "") {
     || /^\d+(?:\.\d+)?\s*(?:万|亿)?(?:美元|元|人民币|%)\s*[，,]/u.test(text);
 }
 
-function sourceSentences(raw = "") {
+function sourceSentences(raw = "", limit = 16) {
   const text = stripSourceNoise(raw);
   if (!text) return [];
   return text
@@ -566,7 +567,7 @@ function sourceSentences(raw = "") {
     .filter((item) => item.length >= 28)
     .filter((item) => !sourcePointLooksPageChrome(item))
     .filter((item) => !/Sign in|Provide feedback|Twitter|Facebook|LinkedIn|Email Updates/iu.test(item))
-    .slice(0, 16);
+    .slice(0, limit);
 }
 
 function extractNumbers(raw = "") {
@@ -582,7 +583,7 @@ function sourcePointIsUsable(value = "") {
   const text = stripSourceNoise(value);
   if (!text || sourcePointLooksTemplate(text) || hasTextContamination(text)) return false;
   if (/strategic investment|战略投资/iu.test(text)) return true;
-  return /AI|agent|agentic|LLM|model|enterprise|customer|workflow|deployment|platform|cloud|inference|public preview|funding|raises|raised|launched|announced|released|introduced|case study|融资|客户|部署|平台|模型|企业|美元|\$|\d/iu.test(text);
+  return /AI|agent|agentic|LLM|model|enterprise|customer|workflow|deployment|platform|cloud|inference|public preview|funding|raises|raised|launched|announced|released|introduced|case study|融资|客户|部署|平台|模型|企业|美元|权限|定价|计费|搜索|界面|\$|\d/iu.test(text);
 }
 
 function countHan(value = "") {
@@ -646,7 +647,7 @@ function chinesePurpose(raw = "") {
   const text = stripSourceNoise(raw);
   const purpose = text.match(/\bto\s+(continue\s+building|build|scale|expand|accelerate|support|develop|deliver)\s+([^.;]{12,180})/iu)?.[0] || "";
   if (!purpose) return "";
-  return purpose
+  const localized = purpose
     .replace(/^to\s+continue\s+building\s+/iu, "继续建设")
     .replace(/^to\s+build\s+/iu, "建设")
     .replace(/^to\s+scale\s+/iu, "扩展")
@@ -661,6 +662,7 @@ function chinesePurpose(raw = "") {
     .replace(/\benterprise\b/giu, "企业")
     .replace(/\bworkflow(s)?\b/giu, "工作流")
     .trim();
+  return countLatinWords(localized) >= 5 && countHan(localized) < 6 ? "" : localized;
 }
 
 function chineseInvestorLine(raw = "") {
@@ -672,6 +674,15 @@ function chineseInvestorLine(raw = "") {
 
 function sourceBackedChineseFact(raw = "", context = {}) {
   const text = stripSourceNoise(raw);
+  if (/The last time search was reinvented, the consumer was a person typing a few words into a box/iu.test(text)) {
+    return "上一代网页搜索主要面向在输入框中键入少量关键词的人类用户。";
+  }
+  if (/Write actions on external sites are screened by classifiers, and purchases or account creations need user approval/iu.test(text)) {
+    return "外部网站写入操作会经过分类器筛查，购买或创建账户仍需用户批准。";
+  }
+  if (/The product generates an entire interactive interface.*(?:a map, a menu, a dynamic dashboard|rather than returning a block of text)/iu.test(text)) {
+    return "Monogram 的产品会根据查询生成地图、菜单或动态仪表盘等完整交互界面，而非只返回文本。";
+  }
   if (!sourcePointIsUsable(text)) return "";
   if (/[\u4e00-\u9fff]/u.test(text) && !sourcePointLooksTemplate(text)) return text.length > 260 ? `${text.slice(0, 259)}...` : text;
   const company = publicCardCopy(context.company || "") || shortCompany(text.match(/^([A-Z][A-Za-z0-9.&' -]{1,80}?)(?:,|\s+(?:announced|has|raised|raises|secured|secures|launched|launches|released|introduced|collaborates|collaboration))/u)?.[1] || "");
@@ -700,6 +711,30 @@ function sourceBackedChineseFact(raw = "", context = {}) {
   if (/operates autonomously, even during network outages/iu.test(text)) {
     return "其软件定义存储可在网络中断时自主运行，并提供自修复、高可用与数据保护能力。";
   }
+  if (/^We(?:'|’)ve raised \$12\.5M to build state-of-the-art Web Search for agents/iu.test(text)) {
+    return "Seltz 宣布完成 1250 万美元种子轮融资，用于构建面向 AI 智能体的先进网页搜索系统。";
+  }
+  if (/Today we(?:'|’)re announcing our \$12\.5 million seed round to rebuild web search for agents/iu.test(text)) {
+    return "Seltz 此轮融资由 B Capital 和 Speedinvest 领投，资金将用于重建面向 AI 智能体的网页搜索基础设施。";
+  }
+  if (/scale to 10s of billions of documents and build the team/iu.test(text)) {
+    return "Seltz 计划把索引扩展到数百亿份文档，并扩充团队以服务需要智能体搜索的企业。";
+  }
+  if (/Seltz answers at 89% accuracy.*under 250 milliseconds/iu.test(text)) {
+    return "Seltz 称其动态新闻搜索基准准确率为 89%，响应低于 250 毫秒，比其测试的其他方案快 7 至 30 倍。";
+  }
+  if (/The round was led by B Capital and Speedinvest/iu.test(text)) {
+    return "本轮由 B Capital 和 Speedinvest 领投，多家基金及来自 Google、Ramp、Tako 和 Hugging Face 的个人投资者参投。";
+  }
+  if (/Today, agents ask a growing share of the internet.?s questions/iu.test(text)) {
+    return "Seltz 判断，智能体正在发起越来越多的互联网查询，其检索方式与人类用户明显不同。";
+  }
+  if (/They write paragraph-long queries and run hundreds in parallel/iu.test(text)) {
+    return "智能体会提交段落级查询并同时运行数百次搜索，对吞吐和延迟提出不同要求。";
+  }
+  if (/Web search for agents isn.?t web search for humans with a different output format/iu.test(text)) {
+    return "Seltz 认为，面向智能体的网页搜索需要从索引到返回方式重新设计，而非只更换人类搜索的输出格式。";
+  }
   if (/i7 Pro embodied AI robot performing CNC machine loading and unloading tasks/iu.test(text)) {
     return "i7 Pro 具身 AI 机器人已在工业制造设施执行 CNC 机床上下料，并完成机床间导航与高精度定位。";
   }
@@ -723,6 +758,12 @@ function sourceBackedChineseFact(raw = "", context = {}) {
   }
   if (/significant expansion of advanced manufacturing capacity in the United States/iu.test(text)) {
     return "双方称，此次合作将显著扩大美国先进 AI 系统制造产能。";
+  }
+  if (/Monogram raised a \$40 million seed led by DST Global and Lux Capital to build an AI app that generates full visual interfaces instead of just text/iu.test(text)) {
+    return "Monogram 的 4000 万美元种子轮由 DST Global 与 Lux Capital 领投，资金用于构建生成完整视觉交互界面而非只返回文本的 AI 应用。";
+  }
+  if (/Monogram.*\$40 million seed round co-led by DST Global and Lux Capital/iu.test(text)) {
+    return "Monogram 的 4000 万美元种子轮由 DST Global 与 Lux Capital 联合领投。";
   }
   const amount = chineseAmount(extractAmount(text) || text);
   const round = chineseRound(text);
@@ -956,6 +997,18 @@ function rawVisibleExcerptFromSection(section, excluded = []) {
     .filter((item) => !isTooSimilar(item));
   const sourceTitle = originalSourceTitleFromSection(section);
   return candidates[0] || (sourceTitle && !isTooSimilar(sourceTitle) ? sourceTitle : "");
+}
+
+function localizedRawSourcePointsFromSection(section, context = {}, excluded = []) {
+  const raw = readRawJson(section);
+  const rawExcerpts = Array.isArray(raw.key_excerpts)
+    ? raw.key_excerpts.map((item) => stripSourceNoise(item?.text || ""))
+    : [];
+  const candidates = [...rawExcerpts, ...sourceSentences(raw.full_text || raw.clean_text || "", 80)]
+    .map((item) => sourceBackedChineseFact(item, context))
+    .filter(sourcePointReadyForPublic)
+    .filter((item) => !excluded.some((excludedItem) => isSameSourcePoint(item, excludedItem)));
+  return [...new Set(candidates)].slice(0, 4);
 }
 
 function generatedCommercialValue(spec) {
@@ -2179,6 +2232,7 @@ function companyFromSection(section) {
     [/taskade\.com|\bTaskade\b/iu, "Taskade"],
     [/stigg\.io|\bStigg\b/iu, "Stigg"],
     [/微软研究院|Microsoft Research/iu, "Microsoft Research"],
+    [/\bseltz\.ai\b|\bSeltz\b/iu, "Seltz"],
     [/Simplexity Robotics/iu, "Simplexity Robotics"],
     [/Flex and Cerebras|Flex and Cerebras Systems|Cerebras CS-3/iu, "Flex / Cerebras"],
     [/微软.{0,30}Windows.{0,30}AI.{0,30}漏洞|Windows.{0,30}MDASH|Microsoft Detection and Analysis for Security Hardening/iu, "Microsoft / Windows"],
@@ -2493,13 +2547,14 @@ function compactLaunchTitle(company = "", title = "") {
 }
 
 function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount, translatedTitle = "" }) {
+  if (type === "funding" && company && amount && !hasTextContamination(company)) {
+    const round = chineseRound(sourceEventTitle);
+    const localizedAmount = chineseAmount(amount) || amount;
+    return `${company} 获得 ${localizedAmount}${round || ""}融资`;
+  }
   const translated = translatedTitle || sourceTitleDisplayTitle(sourceEventTitle);
   if (translated) return translated;
   if (sourceTitleNeedsChineseTranslation(sourceEventTitle)) return "";
-  if (type === "funding" && company && amount && !hasTextContamination(company)) {
-    const round = chineseRound(sourceEventTitle);
-    return `${company} 获得 ${amount}${round ? ` ${round}` : ""} 融资`;
-  }
   if ((type === "product_service" || type === "case") && sourceEventTitleCanBackAutoCard(sourceEventTitle)) {
     if (sourceTitleNeedsChineseTranslation(sourceEventTitle)) return "";
     const compact = compactLaunchTitle(company, sourceEventTitle);
@@ -3028,21 +3083,52 @@ function signalCard(spec, section) {
   const evidenceStrength = evidenceStrengthForSection(section);
   const importanceType = value(section, "importance_type");
   const importanceScore = value(section, "importance_score");
-  const sourcePoints = (spec.sourcePoints?.length ? spec.sourcePoints : sourcePointsFromSection(section)).slice(0, 6);
+  const sourcePointContext = {
+    company: spec.company,
+    scenario: scenarioFromText(textForInference(section)),
+    type: spec.type,
+    strategicInvestment: isConfirmedStrategicInvestment(section, originalSourceTitleFromSection(section)),
+    sourceAmountMillions: fundingAmountMillions(originalSourceTitleFromSection(section)),
+  };
+  const sourcePoints = [...new Set((spec.sourcePoints?.length ? spec.sourcePoints : sourcePointsFromSection(section))
+    .map((item) => hasCjk(item) ? item : (sourceBackedChineseFact(item, sourcePointContext) || item))
+    .filter(sourcePointReadyForPublic))]
+    .slice(0, 6);
   const titleFact = sourceTitleFactFromSection(section);
   const sourceFact = sourcePoints.find((item) => !isSameSourcePoint(item, spec.title) && !isSameSourcePoint(item, titleFact)) || sourcePoints[0] || spec.title;
+  const rawValuePoint = localizedRawSourcePointsFromSection(section, sourcePointContext, [sourceFact, spec.title, titleFact])[0] || "";
   const valueSummary =
     [spec.businessMeaning, spec.whyWatch, ...sourcePoints]
       .find((item) => item && !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, spec.title) && !isSameSourcePoint(item, titleFact)) ||
+    rawValuePoint ||
     generatedCommercialValue(spec);
   const candidateOriginalPoints = sourcePoints
-    .filter((item) => !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, valueSummary) && !isSameSourcePoint(item, spec.title))
+    .filter((item) => !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, valueSummary) && !isSameSourcePoint(item, spec.title) && !isSameSourcePoint(item, titleFact))
     .slice(0, 4);
   const sourceExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, ...candidateOriginalPoints, originalSourceTitleFromSection(section)]);
   let originalPoints = candidateOriginalPoints.filter((item) => !isSameSourcePoint(item, sourceExcerpt));
+  let secondaryExcerpt = "";
   if (!originalPoints.length) {
-    const secondaryExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, sourceExcerpt, originalSourceTitleFromSection(section)]);
-    if (secondaryExcerpt && !isSameSourcePoint(secondaryExcerpt, sourceExcerpt)) originalPoints = [secondaryExcerpt];
+    secondaryExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, sourceExcerpt, originalSourceTitleFromSection(section)]);
+    const localizedSecondaryExcerpt = hasCjk(secondaryExcerpt)
+      ? secondaryExcerpt
+      : sourceBackedChineseFact(secondaryExcerpt, sourcePointContext);
+    if (localizedSecondaryExcerpt && ![sourceFact, valueSummary, sourceExcerpt, spec.title].some((item) => isSameSourcePoint(localizedSecondaryExcerpt, item))) {
+      originalPoints = [localizedSecondaryExcerpt];
+    }
+  }
+  if (!originalPoints.length) {
+    originalPoints = localizedRawSourcePointsFromSection(section, sourcePointContext, [sourceFact, valueSummary, sourceExcerpt, spec.title]);
+  }
+  if (!originalPoints.length && secondaryExcerpt && ![sourceFact, valueSummary, sourceExcerpt, spec.title].some((item) => isSameSourcePoint(secondaryExcerpt, item))) {
+    originalPoints = [secondaryExcerpt];
+  }
+  if (originalPoints.some((item) => !hasCjk(item))) {
+    const localizedOriginalPoints = [...originalPoints, sourceExcerpt, secondaryExcerpt]
+      .map((item) => hasCjk(item) ? item : sourceBackedChineseFact(item, sourcePointContext))
+      .filter((item) => item && hasCjk(item))
+      .filter((item) => ![sourceFact, valueSummary, spec.title].some((excludedItem) => isSameSourcePoint(item, excludedItem)));
+    if (localizedOriginalPoints.length) originalPoints = [...new Set(localizedOriginalPoints)].slice(0, 4);
   }
   const evidenceBoundary = spec.evidenceBoundary || value(section, "missing_information") || "未记录额外缺失项。";
 
@@ -3102,7 +3188,7 @@ ${sourceFact}
 
 ## 原文要点
 
-${originalPoints.length ? originalPoints.map((item) => `- ${item}`).join("\n") : `- ${sourceExcerpt || sourceFact}`}
+${originalPoints.length ? originalPoints.map((item) => `- ${item}`).join("\n") : `- ${sourceFact || sourceExcerpt}`}
 
 ## 价值描述
 
@@ -3388,7 +3474,7 @@ function main() {
     const file = path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", spec.dir, `${date}--signal--${spec.slug}.md`);
     write(file, signalCard(spec, section));
     for (const fingerprint of signalFingerprints(spec, section)) {
-      existingSignalIndex.set(fingerprint, { file, id: spec.id, title: spec.title, type: spec.type, owner: spec.company });
+      existingSignalIndex.set(fingerprint, { file, id: spec.id, title: spec.title, type: spec.type, owner: spec.company, date });
     }
     const sourceLevel = value(section, "source_level").toUpperCase();
     if (sourceLevel in frontSignalSourceLevels) frontSignalSourceLevels[sourceLevel] += 1;
@@ -3589,6 +3675,32 @@ function runCoreRecallRegressionFixtures() {
   assert.equal(companyFromSection(hardwareCompanyFixtures[0]), "Flex / Cerebras", "partnership titles must preserve both named companies");
   assert.equal(companyFromSection(hardwareCompanyFixtures[1]), "Simplexity Robotics", "trade-media case titles must preserve the subject company instead of the publisher");
   assert.equal(companyFromSection(hardwareCompanyFixtures[2]), "Microsoft / Windows", "Chinese product workflow titles must preserve the company and product organization");
+  assert.equal(companyFromSection("## P-994｜We've raised $12.5M to build state-of-the-art Web Search for agents\n- source_url: https://seltz.ai/blog/seed-round-announcement"), "Seltz", "first-person official funding posts must resolve the company from the original domain");
+  assert.equal(
+    publicTitleForAutoSignal({ type: "funding", company: "Seltz", sourceEventTitle: "We've raised $12.5M to build state-of-the-art Web Search for agents", amount: "1250 万美元" }),
+    "Seltz 获得 1250 万美元融资",
+    "English first-person funding titles must receive a deterministic Chinese company-and-amount fallback",
+  );
+  assert.equal(
+    publicTitleForAutoSignal({ type: "funding", company: "Monogram", sourceEventTitle: "Monogram Raises $40M Seed for Visual AI Interface", amount: "4000 万美元", translatedTitle: "Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface" }),
+    "Monogram 获得 4000 万美元种子轮融资",
+    "funding titles must use a clean Chinese company-amount-round grammar instead of partial title translation",
+  );
+  assert.equal(
+    sourceBackedChineseFact("The last time search was reinvented, the consumer was a person typing a few words into a box."),
+    "上一代网页搜索主要面向在输入框中键入少量关键词的人类用户。",
+    "English source points must be localized before they enter a public Card",
+  );
+  assert.equal(
+    sourceBackedChineseFact("Write actions on external sites are screened by classifiers, and purchases or account creations need user approval."),
+    "外部网站写入操作会经过分类器筛查，购买或创建账户仍需用户批准。",
+    "supporting workflow constraints must remain distinct from the launch fact",
+  );
+  assert.equal(
+    sourceBackedChineseFact("The product generates an entire interactive interface -- a map, a menu, a dynamic dashboard -- in response to a query, rather than returning a block of text like a typical chatbot."),
+    "Monogram 的产品会根据查询生成地图、菜单或动态仪表盘等完整交互界面，而非只返回文本。",
+    "funding Cards must preserve a distinct source-backed product fact",
+  );
   assert.equal(
     sourceBackedChineseFact("New manufacturing lines in Milpitas, California will support an anticipated 7x increase in production of Cerebras CS-3 systems."),
     "Flex 在加州米尔皮塔斯新增制造产线，预计 Cerebras CS-3 系统产量将提升 7 倍。",
