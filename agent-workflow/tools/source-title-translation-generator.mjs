@@ -217,6 +217,11 @@ function translateBusinessPhrase(value = "") {
     .replace(/^to\s+/iu, "")
     .trim();
   if (!text) return "";
+  const americanManufacturingScale = text.match(/^scale american manufacturing of (.+)$/iu);
+  if (americanManufacturingScale) {
+    const subject = translateBusinessPhrase(americanManufacturingScale[1]);
+    return `扩大 ${subject}在美国的制造规模`;
+  }
   const directRules = [
     [/^help enterprises build their own ai agents$/iu, "帮助企业构建自有 AI 智能体"],
     [/^help companies automate repetitive work with ai teammates$/iu, "帮助企业用 AI 队友自动化重复工作"],
@@ -250,6 +255,11 @@ function translateBusinessPhrase(value = "") {
     [/\bprocurement\b/giu, "采购"],
     [/\brestaurant hospitality\b/giu, "餐厅接待服务"],
     [/\binference\b/giu, "推理"],
+    [/\bai supercomputers?\b/giu, "AI 超级计算机"],
+    [/\bsupercomputers?\b/giu, "超级计算机"],
+    [/\brobots?\b/giu, "机器人"],
+    [/\bproduction lines?\b/giu, "生产线"],
+    [/\bai infrastructure factories\b/giu, "AI 基础设施工厂"],
     [/\bfree product\b/giu, "免费产品"],
     [/\bproduct\b/giu, "产品"],
     [/\btheir own\b/giu, "自有"],
@@ -313,6 +323,22 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
   }
   if (/^supermicro simplifies edge ai deployments with validated kubernetes appliances with red hat and everpure(?:\s+[—–-]\s+company announcement(?:\s+-\s+ft\.com)?)?$/iu.test(title)) {
     return "Supermicro 联合 Red Hat 和 Everpure 推出经验证的边缘 AI Kubernetes 一体机";
+  }
+  const expandedPartnership = title.match(/^(.+?)\s+and\s+(.+?)\s+expand partnership to\s+(.+)$/iu);
+  if (expandedPartnership) {
+    const firstCompany = titleCaseName(expandedPartnership[1]);
+    const secondCompany = titleCaseName(expandedPartnership[2]);
+    const purpose = translateBusinessPhrase(expandedPartnership[3]);
+    return `${firstCompany} 与 ${secondCompany} 扩大合作，用于${purpose}`;
+  }
+  const productionShipment = title.match(/^(.+?)\s+ships\s+(\d+)\s+(.+?)\s+to production lines(?:\s+at\s+(\d+)\s+months old)?,\s+deploys at\s+(.+)$/iu);
+  if (productionShipment) {
+    const company = titleCaseName(productionShipment[1]);
+    const count = productionShipment[2];
+    const product = translateBusinessPhrase(productionShipment[3]);
+    const companyAge = productionShipment[4] ? `成立 ${productionShipment[4]} 个月即` : "";
+    const deployment = translateBusinessPhrase(productionShipment[5]).replace(/\s+和\s+/gu, " 与 ");
+    return `${company} ${companyAge}向生产线交付 ${count} 台 ${product}，并部署于 ${deployment}`;
   }
   if (/^lyzr used its own ai agent to help raise a \$100mn round$/iu.test(title)) {
     return "Lyzr 使用自研 AI 智能体协助推进 1 亿美元融资";
