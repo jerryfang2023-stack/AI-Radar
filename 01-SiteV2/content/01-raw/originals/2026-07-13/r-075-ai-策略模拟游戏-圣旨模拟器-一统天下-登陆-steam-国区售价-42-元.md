@@ -1,0 +1,226 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-075
+title: "AI 策略模拟游戏《圣旨模拟器：一统天下》登陆 Steam，国区售价 42 元"
+title_zh: "AI 策略模拟游戏《圣旨模拟器：一统天下》登陆 Steam，国区售价 42 元"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/975/626.htm"
+canonical_url: "https://ithome.com/0/975/626.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-12T08:45:11.000Z"
+collected_at: 2026-07-13T08:51:53.082Z
+language: mixed
+full_text_hash: f738246fd3f7298b
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-075-ai-策略模拟游戏-圣旨模拟器-一统天下-登陆-steam-国区售价-42-元.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-075-ai-策略模拟游戏-圣旨模拟器-一统天下-登陆-steam-国区售价-42-元.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 56
+extractor_diagnostics: {"readability_score":56,"text_length":1047,"paragraph_count":12,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0.0029,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1047
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f738246fd3f7298b","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"AI 策略模拟游戏《圣旨模拟器：一统天下》登陆 Steam，国区售价 42 元","discovery_summary":"国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》由 Xideimeicai Studio 开发并发行，现已登陆 Steam，国区售价 42 元。玩家通过语音或文字向 AI 下达政令，AI 将其转化为政策调整、资源分配、外交与军事行动结果，决策影响经济、人口、军事实力及国际局势。语音输入支持中英文，文字输入支持全球语言，游戏需连接第三方 AI 服务 DeepSeek。目前处于抢先体验阶段，含互动元素与游戏内购，支持 Steam 云与家庭共享。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/626.htm","discovered_at":"2026-07-13T08:42:56.389Z","rank_on_page":196,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: bbb77738a480a8cd
+content_hash: f738246fd3f7298b
+semantic_hash: 6df8832128be6ddb
+duplicate_of: ""
+first_seen_at: "2026-07-12T08:45:11.000Z"
+last_seen_at: 2026-07-13T08:51:53.082Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","Nvidia"],"products":[],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["定价 / 计费变化"],"affected_departments":["IT / 安全"],"numbers":["42","7","12","4314010","64","11","5","4460"],"quotes":["本游戏是一款深度融合 AI 技术的原生 AI 大战略游戏，在玩法设计上具有高度创新性 —— 市面上几乎没有同类产品可以参考。正因如此，我们比传统游戏更加需要与玩家共同探索、共同迭代。"]}
+evidence_seed: {"company_actions":["国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》由 Xideimeicai Studio 开发并发行，现已登陆 Steam，国区售价 42 元。玩家通过语音或文字向 AI 下达政令，AI 将其转化为政策调整、资源分配、外交与军事行动结果，决策影响经济、人口、军事实力及国际局势。语音输入支持中英文，文字输入支持全球语言，游戏需连接第三方 AI 服务 DeepSeek。目前处于抢先体验阶段，含互动元素与游戏内购，支持 Steam 云与家庭共享。","IT之家 7 月 12 日消息，国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》现已登陆 Steam 平台，由 Xideimeicai Studio 独立开发并发行，国区定价 42 元，游戏核心玩法围绕自然语言交互展开，玩家可通过语音或文字向 AI 下达政令，实现国家统治与全球征服。","IT之家附游戏商品页（ https://store."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》由 Xideimeicai Studio 开发并发行，现已登陆 Steam，国区售价 42 元。玩家通过语音或文字向 AI 下达政令，AI 将其转化为政策调整、资源分配、外交与军事行动结果，决策影响经济、人口、军事实力及国际局势。语音输入支持中英文，文字输入支持全球语言，游戏需连接第三方 AI 服务 DeepSeek。目前处于抢先体验阶段，含互动元素与游戏内购，支持 Steam 云与家庭共享。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 12 日消息，国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》现已登陆 Steam 平台，由 Xideimeicai Studio 独立开发并发行，国区定价 42 元，游戏核心玩法围绕自然语言交互展开，玩家可通过语音或文字向 AI 下达政令，实现国家统治与全球征服。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"IT之家附游戏商品页（ https://store.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"com/app/4314010/_/ ?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"l=schinese&cc=cn ）。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"本作是一款深度融合 AI 技术的原生 AI 大战略游戏，核心特色如下： 玩家将扮演国家最高统治者，通过语音或输入文字向 AI 下达政令，替代传统菜单点击操作； AI 将理解玩家指令，转化为游戏内的政策调整、资源分配、外交选择与军事行动结果； 不同决策会对国家经济、人口、军事实力及国际局势产生连锁影响，推动世界格局演变，最终实现统一世界的终极目标； 当前语音输入支持中文和英文，文字输入支持全球语言，且游戏完整支持简体中文界面、字幕与全音频； 游戏需要连接第三方 AI 服务 DeepSeek 以实现 AI 指令解析功能。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-13T08:51:53.082Z
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# AI 策略模拟游戏《圣旨模拟器：一统天下》登陆 Steam，国区售价 42 元
+
+## clean_text
+
+IT之家 7 月 12 日消息，国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》现已登陆 Steam 平台，由 Xideimeicai Studio 独立开发并发行，国区定价 42 元，游戏核心玩法围绕自然语言交互展开，玩家可通过语音或文字向 AI 下达政令，实现国家统治与全球征服。IT之家附游戏商品页（ https://store.steampowered.com/app/4314010/_/ ?l=schinese&cc=cn ）。
+本作是一款深度融合 AI 技术的原生 AI 大战略游戏，核心特色如下：
+玩家将扮演国家最高统治者，通过语音或输入文字向 AI 下达政令，替代传统菜单点击操作；
+AI 将理解玩家指令，转化为游戏内的政策调整、资源分配、外交选择与军事行动结果；
+不同决策会对国家经济、人口、军事实力及国际局势产生连锁影响，推动世界格局演变，最终实现统一世界的终极目标；
+当前语音输入支持中文和英文，文字输入支持全球语言，且游戏完整支持简体中文界面、字幕与全音频；
+游戏需要连接第三方 AI 服务 DeepSeek 以实现 AI 指令解析功能。
+“本游戏是一款深度融合 AI 技术的原生 AI 大战略游戏，在玩法设计上具有高度创新性 —— 市面上几乎没有同类产品可以参考。正因如此，我们比传统游戏更加需要与玩家共同探索、共同迭代。”开发商介绍道。
+游戏目前处于抢先体验阶段，开发者希望通过玩家反馈共同迭代玩法内容。根据商店页信息，本作包含互动元素与游戏内购，支持 Steam 云与家庭共享。
+最低配置： 需要 64 位处理器和操作系统， Windows 11 系统，Intel Core i5-4460 或 AMD Ryzen 3 1200，8 GB 内存，NVIDIA GTX 960 显卡，DirectX 11 版本，需要 5 GB 可用存储空间，语音功能需要麦克风和互联网连接。
+推荐配置： 需要 64 位处理器和操作系统， Windows 10 / Windows 11 系统，Intel Core i7-8700 或 AMD Ryzen 5 3600，16 GB 内存，NVIDIA GTX 960 显卡，DirectX 12 版本，需要 5 GB 可用存储空间，语音功能需要麦克风和互联网连接。
+游戏图赏：
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 12 日消息，国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》现已登陆 Steam 平台，由 Xideimeicai Studio 独立开发并发行，国区定价 42 元，游戏核心玩法围绕自然语言交互展开，玩家可通过语音或文字向 AI 下达政令，实现国家统治与全球征服。IT之家附游戏商品页（ https://store.steampowered.com/app/4314010/_/ ?l=schinese&cc=cn ）。
+本作是一款深度融合 AI 技术的原生 AI 大战略游戏，核心特色如下：
+玩家将扮演国家最高统治者，通过语音或输入文字向 AI 下达政令，替代传统菜单点击操作；
+AI 将理解玩家指令，转化为游戏内的政策调整、资源分配、外交选择与军事行动结果；
+不同决策会对国家经济、人口、军事实力及国际局势产生连锁影响，推动世界格局演变，最终实现统一世界的终极目标；
+当前语音输入支持中文和英文，文字输入支持全球语言，且游戏完整支持简体中文界面、字幕与全音频；
+游戏需要连接第三方 AI 服务 DeepSeek 以实现 AI 指令解析功能。
+“本游戏是一款深度融合 AI 技术的原生 AI 大战略游戏，在玩法设计上具有高度创新性 —— 市面上几乎没有同类产品可以参考。正因如此，我们比传统游戏更加需要与玩家共同探索、共同迭代。”开发商介绍道。
+游戏目前处于抢先体验阶段，开发者希望通过玩家反馈共同迭代玩法内容。根据商店页信息，本作包含互动元素与游戏内购，支持 Steam 云与家庭共享。
+最低配置： 需要 64 位处理器和操作系统， Windows 11 系统，Intel Core i5-4460 或 AMD Ryzen 3 1200，8 GB 内存，NVIDIA GTX 960 显卡，DirectX 11 版本，需要 5 GB 可用存储空间，语音功能需要麦克风和互联网连接。
+推荐配置： 需要 64 位处理器和操作系统， Windows 10 / Windows 11 系统，Intel Core i7-8700 或 AMD Ryzen 5 3600，16 GB 内存，NVIDIA GTX 960 显卡，DirectX 12 版本，需要 5 GB 可用存储空间，语音功能需要麦克风和互联网连接。
+游戏图赏：
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 56
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":56,"text_length":1047,"paragraph_count":12,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0.0029,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》由 Xideimeicai Studio 开发并发行，现已登陆 Steam，国区售价 42 元。玩家通过语音或文字向 AI 下达政令，AI 将其转化为政策调整、资源分配、外交与军事行动结果，决策影响经济、人口、军事实力及国际局势。语音输入支持中英文，文字输入支持全球语言，游戏需连接第三方 AI 服务 DeepSeek。目前处于抢先体验阶段，含互动元素与游戏内购，支持 Steam 云与家庭共享。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   IT之家 7 月 12 日消息，国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》现已登陆 Steam 平台，由 Xideimeicai Studio 独立开发并发行，国区定价 42 元，游戏核心玩法围绕自然语言交互展开，玩家可通过语音或文字向 AI 下达政令，实现国家统治与全球征服。
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   IT之家附游戏商品页（ https://store.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   com/app/4314010/_/ ?
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   l=schinese&cc=cn ）。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   本作是一款深度融合 AI 技术的原生 AI 大战略游戏，核心特色如下： 玩家将扮演国家最高统治者，通过语音或输入文字向 AI 下达政令，替代传统菜单点击操作； AI 将理解玩家指令，转化为游戏内的政策调整、资源分配、外交选择与军事行动结果； 不同决策会对国家经济、人口、军事实力及国际局势产生连锁影响，推动世界格局演变，最终实现统一世界的终极目标； 当前语音输入支持中文和英文，文字输入支持全球语言，且游戏完整支持简体中文界面、字幕与全音频； 游戏需要连接第三方 AI 服务 DeepSeek 以实现 AI 指令解析功能。
+
+## business_elements
+
+- companies: IT之家（RSS）, Nvidia
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 定价 / 计费变化
+- affected_departments: IT / 安全
+- numbers: 42, 7, 12, 4314010, 64, 11, 5, 4460
+- quotes: 本游戏是一款深度融合 AI 技术的原生 AI 大战略游戏，在玩法设计上具有高度创新性 —— 市面上几乎没有同类产品可以参考。正因如此，我们比传统游戏更加需要与玩家共同探索、共同迭代。
+
+## evidence_seed
+
+- company_actions: 国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》由 Xideimeicai Studio 开发并发行，现已登陆 Steam，国区售价 42 元。玩家通过语音或文字向 AI 下达政令，AI 将其转化为政策调整、资源分配、外交与军事行动结果，决策影响经济、人口、军事实力及国际局势。语音输入支持中英文，文字输入支持全球语言，游戏需连接第三方 AI 服务 DeepSeek。目前处于抢先体验阶段，含互动元素与游戏内购，支持 Steam 云与家庭共享。 / IT之家 7 月 12 日消息，国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》现已登陆 Steam 平台，由 Xideimeicai Studio 独立开发并发行，国区定价 42 元，游戏核心玩法围绕自然语言交互展开，玩家可通过语音或文字向 AI 下达政令，实现国家统治与全球征服。 / IT之家附游戏商品页（ https://store.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"AI 策略模拟游戏《圣旨模拟器：一统天下》登陆 Steam，国区售价 42 元","discovery_summary":"国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》由 Xideimeicai Studio 开发并发行，现已登陆 Steam，国区售价 42 元。玩家通过语音或文字向 AI 下达政令，AI 将其转化为政策调整、资源分配、外交与军事行动结果，决策影响经济、人口、军事实力及国际局势。语音输入支持中英文，文字输入支持全球语言，游戏需连接第三方 AI 服务 DeepSeek。目前处于抢先体验阶段，含互动元素与游戏内购，支持 Steam 云与家庭共享。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/626.htm","discovered_at":"2026-07-13T08:42:56.389Z","rank_on_page":196,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+国产独立 AI 策略模拟游戏《圣旨模拟器：一统天下》由 Xideimeicai Studio 开发并发行，现已登陆 Steam，国区售价 42 元。玩家通过语音或文字向 AI 下达政令，AI 将其转化为政策调整、资源分配、外交与军事行动结果，决策影响经济、人口、军事实力及国际局势。语音输入支持中英文，文字输入支持全球语言，游戏需连接第三方 AI 服务 DeepSeek。目前处于抢先体验阶段，含互动元素与游戏内购，支持 Steam 云与家庭共享。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

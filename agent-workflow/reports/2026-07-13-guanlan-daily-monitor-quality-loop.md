@@ -1,6 +1,6 @@
 # 2026-07-13 Guanlan Monitor Quality Loop
 
-- generated_at: 2026-07-13T08:26:47.767Z
+- generated_at: 2026-07-13T08:51:53.242Z
 - status: passed
 - diagnostic_score_reference: 85
 - score_mode: diagnostic_only
@@ -14,11 +14,11 @@
 
 - monitor_status: collected
 - failed_stage: completed
-- monitor_raw_count: 101
+- monitor_raw_count: 105
 - quality_status: passed
-- quality_score: 93.08
+- quality_score: 93.26
 - hard_failed: none
-- failed_sources: source-artifact keyword: keyword-search pre-gate filtered 33 result(s): missing_ai_anchor_in_result=13; job_or_salary_page=7; noise_term:career=6; broad_list_or_market_report=2; noise_term:affiliate=2; noise_term:hiring=2; noise_term:jobs at=1; source-artifact rss: RSS dataiku-blog: HTTP 404; targeted-refill pre-gate filtered 3 result(s): broad_list_or_market_report=1; missing_ai_anchor_in_result=1; noise_term:hiring=1; targeted pool/core refill cycle 1 added 2 item(s) for important_case=2/5; important_funding=3/5; important_vertical_solution=4/5
+- failed_sources: source-artifact keyword: keyword-search pre-gate filtered 35 result(s): missing_ai_anchor_in_result=14; noise_term:career=8; job_or_salary_page=7; broad_list_or_market_report=2; noise_term:affiliate=1; noise_term:hiring=1; noise_term:jobs at=1; social_or_profile_source=1; source-artifact rss: RSS dataiku-blog: HTTP 404; targeted-refill pre-gate filtered 2 result(s): noise_term:avatar=1; noise_term:hiring=1; targeted pool/core refill cycle 1 added 1 item(s) for important_case=2/5; important_funding=4/5
 - fallback_used: Default monitor uses AI HOT daily feed first, AI HOT all-mode remainder second, then keyword rules. External multi-path keyword search and GDELT activate when the default lanes do not meet the Raw minimum, an importance type is thin, or important candidates lack original text / usable evidence object. HN is feedback only and must not dominate. GDELT failures fall back to A-tier media search.
 - evidence_gaps: none
 - report: agent-workflow/reports/2026-07-13-guanlan-monitor-quality-gate.md
