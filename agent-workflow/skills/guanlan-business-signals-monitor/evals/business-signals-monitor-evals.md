@@ -54,6 +54,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when frontstage Card titles name the actual company, product, funding round, release, customer, or workflow event and do not contain placeholder wording such as "original AI event", "purpose see original", or source-domain subjects like "linkedin financing" / "github original title".
     - Pass when LinkedIn/X/Reddit/Hacker News posts, GitHub repo root/tree/blob pages, package/model pages, marketplace listings, and generic funding/startup lists are excluded from formal Signal Cards unless recaptured through a dated source-backed event page.
     - Pass when backend candidates are event-deduped so repeated pages about the same model release or financing round do not fill the candidate area.
+    - Pass when confirmed financing is deduped across dates and alternate media URLs by company + amount + round, and wording about helping/running an unclosed fundraise never becomes a completed funding Card.
 
 13. `single_frontstage_card_set`
     - Pass when the Business Signals page has one Card set for the active date and no visible Top10 / candidate-pool mode switch.

@@ -724,6 +724,15 @@ function sourceBackedChineseFact(raw = "", context = {}) {
   if (/\bThe round will fund engineering, deepening the integration across\b/iu.test(text)) {
     return `${owner} 将本轮资金用于工程研发、深化产品整合和欧洲市场扩张，以支持企业把自主 AI 系统投入生产。`;
   }
+  if (/\b20,000\+? secret scanning alerts?\b.*\b15,000\+? repositories\b/iu.test(text)) {
+    return "GitHub 在 1.5 万多个代码库中发现超过 2 万条秘密扫描告警，并在九个月内清零未处理告警。";
+  }
+  if (/\bpiloted the Secret Scanning capability\b/iu.test(text)) {
+    return "GitHub 在内部试点仍处于开发阶段的 Secret Scanning 能力，用于识别和处置代码库中的秘密泄露风险。";
+  }
+  if (/\bNine months later, we reached zero open alerts\b/iu.test(text)) {
+    return "GitHub 表示，经过九个月的告警分类、责任分配与修复流程建设，未处理告警数量降至零。";
+  }
   const appKernel = text.match(/\bEvery app you build now runs on\s+([A-Za-z0-9.-]+)/iu)?.[1] || "";
   if (appKernel) {
     return `${owner}表示，平台中构建的每个应用现在都运行在 ${appKernel} 上，该内核成为工作区背后的统一智能层。`;
@@ -973,6 +982,60 @@ function findExistingSignalCard(index, spec, section) {
     if (existing && existing.date === date) return existing;
   }
   return null;
+}
+
+function fundingCompanyFromTitle(title = "") {
+  const text = cleanSourceEventTitle(title);
+  const patterns = [
+    /^([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})['’]s\b/u,
+    /^([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\s+(?:used|uses|announced|launches)\b/u,
+    /^(.+?)\s+(?:raises?|raised|secures?|secured|closes?|closed|lands?|landed|nabs?|nabbed)\b/iu,
+  ];
+  for (const pattern of patterns) {
+    const company = shortCompany(text.match(pattern)?.[1] || "");
+    if (company && !isWeakCompanyName(company)) return company;
+  }
+  return "";
+}
+
+function fundingRoundIdentity(value = "") {
+  const text = String(value || "");
+  const series = text.match(/\bseries\s+([a-z])\b/iu)?.[1];
+  if (series) return `series-${series.toLowerCase()}`;
+  if (/\bpre[-\s]?seed\b/iu.test(text)) return "pre-seed";
+  if (/\bseed\b|种子轮/iu.test(text)) return "seed";
+  if (/\bstrategic investment\b|战略投资/iu.test(text)) return "strategic";
+  return "";
+}
+
+function fundingEventIdentityKey(company = "", evidence = "") {
+  const text = String(evidence || "");
+  const sourceCompany = fundingCompanyFromTitle(text);
+  const normalizedCompany = normalizedSignalText(sourceCompany || company);
+  const amountMillions = fundingAmountMillions(text);
+  const round = fundingRoundIdentity(text);
+  if (!normalizedCompany || !Number.isFinite(amountMillions) || !round) return "";
+  return `funding-event:${normalizedCompany}:${Number(amountMillions.toFixed(3))}:${round}`;
+}
+
+function historicalFundingEventIndex() {
+  const index = new Map();
+  for (const file of signalCardFiles()) {
+    const cardDate = path.basename(file).match(/^(\d{4}-\d{2}-\d{2})--signal--/u)?.[1] || "";
+    if (!cardDate || cardDate === date) continue;
+    const text = fs.readFileSync(file, "utf8");
+    if (yamlValue(text, "signal_type") !== "funding") continue;
+    const sourceTitle = yamlValue(text, "source_title");
+    const title = yamlValue(text, "title");
+    const key = fundingEventIdentityKey(yamlValue(text, "signal_owner"), `${sourceTitle} ${title} ${text}`);
+    if (!key || index.has(key)) continue;
+    index.set(key, {
+      date: cardDate,
+      file: path.relative(root, file).replace(/\\/g, "/"),
+      title,
+    });
+  }
+  return index;
 }
 
 function quotedYamlArray(items) {
@@ -1483,10 +1546,20 @@ function isViewpointWithoutConfirmedCommercialEvent(section) {
 
 function isUnconfirmedProductRumorOrPlan(section) {
   const title = poolTitle(section);
-  const rumorIdentity = /^(?:消息称|据悉|传闻|爆料)|(?:或将|有望|暂定|计划|正开发|正在考虑)/u.test(title);
+  const rumorIdentity = /(?:消息称|据悉|据称|传闻|爆料|曝出|泄露)|(?:或将|有望|暂定|计划|正开发|正在考虑)/u.test(title);
   const confirmedInTitle = /(?:正式)?(?:发布|推出|上线|开放|定价|签约|部署)/u.test(title)
     && !/(?:将|拟|计划|有望|或将).{0,12}(?:发布|推出|上线|开放)/u.test(title);
   return rumorIdentity && !confirmedInTitle;
+}
+
+function isUnconfirmedFundingProcess(section) {
+  const text = [
+    originalSourceTitleFromSection(section),
+    poolTitle(section),
+    value(section, "key_excerpts"),
+    value(section, "evidence_seed"),
+  ].join(" ");
+  return /\b(?:help(?:ed|ing)?\s+(?:to\s+)?raise|ran\s+(?:its\s+)?own\s+.{0,40}fundraise|still\s+coming\s+together|on\s+track\s+rather\s+than\s+closed|not\s+yet\s+(?:closed|confirmed)|expects?\s+to\s+close|would\s+value\s+the\s+company)\b|(?:融资|轮次).{0,30}(?:仍在推进|尚未完成|尚未关闭|尚未确认)/iu.test(text);
 }
 
 function hasConcreteProductEvent(section) {
@@ -1794,6 +1867,9 @@ function cardabilitySemanticIssues(section) {
   if (isUnconfirmedProductRumorOrPlan(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "unconfirmed_product_rumor_or_plan"));
   }
+  if (importanceType === "important_funding" && isUnconfirmedFundingProcess(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "funding_round_not_confirmed_closed"));
+  }
   if (isExecutiveDisputeWithoutCommercialEvent(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "executive_dispute_without_commercial_event"));
   }
@@ -2061,12 +2137,12 @@ function extractAmount(text) {
 
 function fundingAmountMillions(value = "") {
   const text = String(value || "");
-  const dollars = text.match(/\$\s?(\d+(?:\.\d+)?)\s?(B|M|K|billion|million|thousand)?\b/iu);
+  const dollars = text.match(/\$\s?(\d+(?:\.\d+)?)\s?(BN|MN|B|M|K|billion|million|thousand)?\b/iu);
   if (dollars) {
     const amount = Number(dollars[1]);
     const unit = String(dollars[2] || "").toLowerCase();
     if (!Number.isFinite(amount)) return null;
-    if (unit === "b" || unit === "billion") return amount * 1000;
+    if (unit === "b" || unit === "bn" || unit === "billion") return amount * 1000;
     if (unit === "k" || unit === "thousand") return amount / 1000;
     return amount;
   }
@@ -2119,6 +2195,7 @@ function isSingleCompanyFundingSignal(section) {
   if (isCorporateCapexOrCommunityInvestment(section)) {
     return false;
   }
+  if (isUnconfirmedFundingProcess(section)) return false;
   if (/(funding map|top ai pre-seed investors|pre-seed investors|top ai agent startups|hottest ai startups|coolest ai startups|startup investment surge|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|funding tracker|ai agent startups insight partners funding|series-b-enterprise-ai-agents|crn\.com\/news\/ai\/2026\/the-10-hottest-ai-startups|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(sourceIdentity)) {
     return false;
   }
@@ -2327,7 +2404,7 @@ function sourceEventTitleCanBackAutoCard(title = "") {
   const text = cleanSourceTitleForPublicTitle(title);
   if (!text || hasTextContamination(text)) return false;
   if (/^(?:Ep\.?\s*\d+|Episode\s+\d+)\b|\b(podcast|interview|roundup|guide|what is|what'?s real|how to|landscape|report|trends?|top \d+|ranked|list|directory|buyer'?s guide|comparison|ideas|use cases|may become|roles? in the ai era|job opening|job listing|careers?|hiring)\b/iu.test(text)) return false;
-  return /\b(launch(?:es|ed)?|announc(?:es|ed|ing)?|introduc(?:es|ed|ing)?|public preview|generally available|GA|available now|reach(?:es|ed)? the next phase|live transactions?|partners? with|partnership|procurement|contract|customer story|case study|deploy(?:s|ed|ment)?|rollout|adopt(?:s|ed|ion)?|uses?|used by|boosts?|increas(?:es|ed)|reduc(?:es|ed)|cuts?|saves?|improv(?:es|ed)|internal automation agents|expands?|unveils?|shuts? down|discontinues?|kills?|folds?)\b|发布|推出|上线|上市|正式可用|合作|签约|采购|部署|落地|采用|使用|提升|增长|降低|节省|扩展|取消.{0,20}(?:限制|上限)|调整.{0,20}(?:价格|定价|计费)|关停|下线|并入/iu.test(text);
+  return /\b(launch(?:es|ed)?|announc(?:es|ed|ing)?|introduc(?:es|ed|ing)?|public preview|generally available|GA|available now|reach(?:es|ed)? the next phase|live transactions?|partners? with|partnership|procurement|contract|customer story|case study|deploy(?:s|ed|ment)?|rollout|adopt(?:s|ed|ion)?|use(?:s|d)?|used by|boosts?|increas(?:es|ed)|reduc(?:es|ed)|cuts?|saves?|improv(?:es|ed)|internal automation agents|expands?|unveils?|shuts? down|discontinues?|kills?|folds?)\b|发布|推出|上线|上市|正式可用|合作|签约|采购|部署|落地|采用|使用|提升|增长|降低|节省|扩展|取消.{0,20}(?:限制|上限)|调整.{0,20}(?:价格|定价|计费)|关停|下线|并入/iu.test(text);
 }
 
 function sourceTitleLineFromText(text = "") {
@@ -2533,7 +2610,7 @@ function autoSignalEligibilityIssues(section) {
   if (!coreImportanceTypes.has(importanceType) && !allowsObservationSummaryEvidence(section) && !hasFormalEvent) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, `unsupported_importance_type:${importanceType || "missing"}`));
   }
-  if (inferSignalType(section) === "funding" && importanceType === "important_funding" && !isSingleCompanyFundingSignal(section)) {
+  if (importanceType === "important_funding" && !isSingleCompanyFundingSignal(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "funding_not_single_company_round"));
   }
   const sourceEventTitle = cleanSourceEventTitle(originalSourceTitleFromSection(section));
@@ -2630,6 +2707,7 @@ function autoSignalsFromPool(sections, explicitSpecs) {
   );
   const candidates = [];
   const notPromotedCandidates = [];
+  const historicalFundingEvents = historicalFundingEventIndex();
   let index = 1;
   for (const [poolRef, section] of sections) {
     if (selectedPoolRefs.has(poolRef)) continue;
@@ -2643,6 +2721,17 @@ function autoSignalsFromPool(sections, explicitSpecs) {
     if (!spec) {
       notPromotedCandidates.push(notPromotedCandidateRow(poolRef, section, [`auto_signal_spec_null:${diagnostics.reason || "unknown"}`]));
       continue;
+    }
+    if (spec.type === "funding") {
+      const fundingKey = fundingEventIdentityKey(
+        spec.company,
+        `${originalSourceTitleFromSection(section)} ${poolTitle(section)}`,
+      );
+      const historical = fundingKey ? historicalFundingEvents.get(fundingKey) : null;
+      if (historical) {
+        notPromotedCandidates.push(notPromotedCandidateRow(poolRef, section, [`historical_duplicate_event_cluster:${historical.file}`]));
+        continue;
+      }
     }
     const clusterKey = signalClusterKey(spec, section);
     if (selectedClusterKeys.has(clusterKey)) {
@@ -3484,6 +3573,15 @@ function runCoreRecallRegressionFixtures() {
     "NeuralTrust 获得 2000 万美元 种子轮融资。",
     "a source-matched funding sentence must produce a distinct Chinese fact",
   );
+  assert.equal(
+    translatedSourcePoint(
+      "GitHub had 20,000+ secret scanning alerts across 15,000 repositories. Here's how we separated signal from noise, built remediation workflows, and reached inbox zero in nine months.",
+      "case",
+      { company: "GitHub", type: "case" },
+    ),
+    "GitHub 在 1.5 万多个代码库中发现超过 2 万条秘密扫描告警，并在九个月内清零未处理告警。",
+    "a source-backed English case metric must normalize into a usable Chinese public fact",
+  );
 
   const routedViewpointFixture = [
     "## P-988｜黄仁勋：AI 与吸尘器同样都是工具，不要过度拟人化",
@@ -3497,6 +3595,33 @@ function runCoreRecallRegressionFixtures() {
   assert.ok(
     autoSignalEligibilityIssues(routedViewpointFixture).some((issue) => /viewpoint_without_confirmed_commercial_event/iu.test(issue)),
     "a routed viewpoint without event evidence must be rejected before Card spec generation",
+  );
+
+  const magicOsRumorFixture = [
+    "## P-987｜荣耀 MagicOS 11 爆料：内置 YOYO Claw，支持自定义 AI 大模型",
+    "- source_url: https://example.com/magicos-11-rumor",
+    "- importance_type: important_product_or_service",
+    "- key_excerpts: 博主今日爆料 MagicOS 11 更新计划。",
+  ].join("\n");
+  assert.ok(
+    autoSignalEligibilityIssues(magicOsRumorFixture).some((issue) => /unconfirmed_product_rumor_or_plan/iu.test(issue)),
+    "a rumor marker anywhere in the title must keep an unconfirmed product update out of formal Cards",
+  );
+
+  const lyzrUnclosedRoundFixture = [
+    "## P-986｜Lyzr's AI agent ran its own $100M Series B fundraise",
+    "- source_url: https://example.com/lyzr-fundraise-process",
+    "- importance_type: important_funding",
+    "- key_excerpts: The raise is still coming together and is on track rather than closed.",
+  ].join("\n");
+  assert.ok(
+    autoSignalEligibilityIssues(lyzrUnclosedRoundFixture).some((issue) => /funding_round_not_confirmed_closed/iu.test(issue)),
+    "a fundraising process that is not confirmed closed must not become a completed funding Card",
+  );
+  assert.equal(
+    fundingEventIdentityKey("Thenextweb", "Lyzr used its own AI agent to help raise a $100mn round. The company described it as a Series B."),
+    fundingEventIdentityKey("AI Chat Daily", "Lyzr's AI agent ran its own $100M Series B fundraise"),
+    "alternate-source coverage of the same company, amount, and round must share a historical funding event key",
   );
 
   const positiveFailures = [];
