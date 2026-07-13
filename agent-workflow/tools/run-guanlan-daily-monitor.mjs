@@ -3998,7 +3998,7 @@ function activeCuratedOriginalSourceItems() {
       acquisition_channel: "keyword-search",
       original_id: item.id || item.url,
       title: item.title,
-      summary: `Bounded direct-source recall from QC-reviewed original evidence: ${item.title}`,
+      summary: "",
       url: item.url,
       source: item.source || "curated original source",
       published_at: item.published_at,

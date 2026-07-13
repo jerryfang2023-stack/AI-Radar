@@ -93,12 +93,17 @@ for (const file of files) {
   const details = ["新闻事实", "原文要点", "价值描述", "可见原文片段"].map((heading) => ({ heading, value: section(markdown, heading) }));
 
   if (!details.every((item) => item.value)) problems.push(`${relative}: missing public detail field`);
+  if (details.some((item) => /Bounded direct-source recall|QC-reviewed original evidence|raw_entry_reason|curated_original_source/iu.test(item.value))) {
+    problems.push(`${relative}: internal recall diagnostic leaked into public detail`);
+  }
   for (let i = 0; i < details.length; i += 1) {
     for (let j = i + 1; j < details.length; j += 1) {
       if (tooSimilar(details[i].value, details[j].value)) problems.push(`${relative}: duplicate ${details[i].heading}/${details[j].heading}`);
     }
   }
   if (tooSimilar(title, details[0].value)) problems.push(`${relative}: news fact repeats title`);
+  if (tooSimilar(sourceTitle, details[1].value)) problems.push(`${relative}: original point repeats source title`);
+  if (tooSimilar(sourceTitle, details[3].value)) problems.push(`${relative}: visible excerpt repeats source title`);
   if (hasFullText !== "true" || extractionQuality === "failed" || evidenceStrength === "traceable_summary") {
     problems.push(`${relative}: formal Card lacks readable source body`);
   }

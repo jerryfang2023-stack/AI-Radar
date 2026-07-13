@@ -553,6 +553,7 @@ function sourcePointLooksSplitFragment(value = "") {
   const text = String(value || "").trim();
   return /\d+\.$/u.test(text)
     || /^\d+\s+/u.test(text)
+    || /^,?\s*(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20\d{2}\s*[—-]/iu.test(text)
     || /^\d+(?:\.\d+)?\s*(?:万|亿)?(?:美元|元|人民币|%)\s*[，,]/u.test(text);
 }
 
@@ -595,6 +596,7 @@ function countLatinWords(value = "") {
 function sourcePointReadyForPublic(value = "") {
   const text = stripSourceNoise(value);
   if (!sourcePointIsUsable(text)) return false;
+  if (/Bounded direct-source recall|QC-reviewed original evidence|raw_entry_reason|curated_original_source/iu.test(text)) return false;
   if (sourcePointLooksPageChrome(text)) return false;
   if (sourcePointLooksSplitFragment(text)) return false;
   const han = countHan(text);
@@ -681,7 +683,22 @@ function sourceBackedChineseFact(raw = "", context = {}) {
     return "Meta 在用户和人才机构反弹后，下线 Instagram 的争议 AI 图片生成功能。";
   }
   if (/^Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure/iu.test(text)) {
-    return "Supermicro 联合 Red Hat 和 Everpure 推出经验证的 Kubernetes 边缘 AI 一体机。";
+    return "Supermicro 于 7 月 8 日发布与 Red Hat、Everpure 合作验证的 Kubernetes 边缘 AI 一体机；设备预装软硬件并由 Supermicro 交付客户。";
+  }
+  if (/Supermicro has validated a full-stack edge Kubernetes solution/iu.test(text)) {
+    return "Supermicro 已验证一套全栈边缘 Kubernetes 方案，整合 Red Hat OpenShift 与 Portworx by Everpure 的 AI 工作负载数据管理平台。";
+  }
+  if (/This turnkey appliance, complete with preloaded software and hardware, is made available to customers through Supermicro/iu.test(text)) {
+    return "该一体机预装软硬件，并由 Supermicro 向客户提供交付。";
+  }
+  if (/By combining Red Hat OpenShift with Supermicro.?s edge computing infrastructure and the Portworx by Everpure data management platform/iu.test(text)) {
+    return "该方案把 Red Hat OpenShift、Supermicro 边缘计算基础设施与 Portworx 数据管理平台组合在一起，用于跨分布式边缘环境部署、管理和扩展 AI 应用。";
+  }
+  if (/Portworx by Everpure provides the Kubernetes-native storage and data management layer for Supermicro.?s Edge AI Appliances/iu.test(text)) {
+    return "Portworx 为 Supermicro 边缘 AI 一体机提供 Kubernetes 原生存储与数据管理层，支持在边缘运行 AI 推理、容器和虚拟机。";
+  }
+  if (/operates autonomously, even during network outages/iu.test(text)) {
+    return "其软件定义存储可在网络中断时自主运行，并提供自修复、高可用与数据保护能力。";
   }
   if (/i7 Pro embodied AI robot performing CNC machine loading and unloading tasks/iu.test(text)) {
     return "i7 Pro 具身 AI 机器人已在工业制造设施执行 CNC 机床上下料，并完成机床间导航与高精度定位。";
@@ -932,6 +949,7 @@ function rawVisibleExcerptFromSection(section, excluded = []) {
   ]
     .map((item) => String(item || "").replace(/\s+/gu, " ").trim())
     .filter((item) => item.length >= 36 && item.length <= 420)
+    .filter((item) => !/Bounded direct-source recall|QC-reviewed original evidence|raw_entry_reason|curated_original_source/iu.test(item))
     .filter((item) => !hasTextContamination(item))
     .filter((item) => !sourcePointLooksPageChrome(item))
     .filter((item) => !sourcePointLooksSplitFragment(item))
@@ -967,7 +985,7 @@ function generatedValueSummary(spec, section) {
 
 function cleanEvidenceBoundary(value = "") {
   const text = String(value || "").replace(/\s+/gu, " ").trim();
-  if (!text) return "证据边界：本卡只使用已保留的 Raw / Pool 原文标题、摘录和来源链接。";
+  if (!text || /^(?:none|n\/a|无)$/iu.test(text)) return "证据边界：本卡只使用已保留的 Raw / Pool 原文标题、摘录和来源链接。";
   if (/没有具体客户|没有检测到明确动作词|不能单独阻断|需以可见原文片段核对/iu.test(text)) {
     return "证据边界：缺失项作为内部复核线索保留；公开判断只采用原文标题、摘录和来源链接。";
   }
@@ -3011,8 +3029,8 @@ function signalCard(spec, section) {
   const importanceType = value(section, "importance_type");
   const importanceScore = value(section, "importance_score");
   const sourcePoints = (spec.sourcePoints?.length ? spec.sourcePoints : sourcePointsFromSection(section)).slice(0, 6);
-  const sourceFact = sourcePoints.find((item) => !isSameSourcePoint(item, spec.title)) || sourcePoints[0] || spec.title;
   const titleFact = sourceTitleFactFromSection(section);
+  const sourceFact = sourcePoints.find((item) => !isSameSourcePoint(item, spec.title) && !isSameSourcePoint(item, titleFact)) || sourcePoints[0] || spec.title;
   const valueSummary =
     [spec.businessMeaning, spec.whyWatch, ...sourcePoints]
       .find((item) => item && !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, spec.title) && !isSameSourcePoint(item, titleFact)) ||
@@ -3020,10 +3038,10 @@ function signalCard(spec, section) {
   const candidateOriginalPoints = sourcePoints
     .filter((item) => !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, valueSummary) && !isSameSourcePoint(item, spec.title))
     .slice(0, 4);
-  const sourceExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, ...candidateOriginalPoints]);
+  const sourceExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, ...candidateOriginalPoints, originalSourceTitleFromSection(section)]);
   let originalPoints = candidateOriginalPoints.filter((item) => !isSameSourcePoint(item, sourceExcerpt));
   if (!originalPoints.length) {
-    const secondaryExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, sourceExcerpt]);
+    const secondaryExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, sourceExcerpt, originalSourceTitleFromSection(section)]);
     if (secondaryExcerpt && !isSameSourcePoint(secondaryExcerpt, sourceExcerpt)) originalPoints = [secondaryExcerpt];
   }
   const evidenceBoundary = spec.evidenceBoundary || value(section, "missing_information") || "未记录额外缺失项。";
@@ -3581,6 +3599,13 @@ function runCoreRecallRegressionFixtures() {
     "这 100 台机器人被分配到多个部署环境，而非交付给单一客户。",
     "deployment distribution facts must be distinct from the translated title",
   );
+  assert.equal(
+    sourceBackedChineseFact("Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure"),
+    "Supermicro 于 7 月 8 日发布与 Red Hat、Everpure 合作验证的 Kubernetes 边缘 AI 一体机；设备预装软硬件并由 Supermicro 交付客户。",
+    "official-source Cards must use a source-backed event fact rather than repeat the localized title",
+  );
+  assert.equal(sourcePointReadyForPublic("Bounded direct-source recall from QC-reviewed original evidence: fixture"), false, "internal recall diagnostics must not enter public Card details");
+  assert.equal(sourcePointLooksSplitFragment(", July 8, 2026 — Super Micro Computer, Inc."), true, "dateline fragments must not become visible excerpts");
 
   const consumerGameFixture = [
     "## P-997｜AI 策略模拟游戏登陆 Steam，国区售价 42 元",
