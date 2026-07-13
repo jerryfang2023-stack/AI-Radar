@@ -5,6 +5,7 @@ import {
   generateSourceTitleTranslation,
   loadSourceTitleTranslations,
   resolveSourceTitleTranslation,
+  sourceTitleNeedsChineseTranslation,
   titleTranslationKey,
 } from "./source-title-translation-generator.mjs";
 
@@ -25,7 +26,7 @@ const result = await resolveSourceTitleTranslation(sourceTitle, {
   generator: async () => ({
     titleZh: expectedZh,
     status: "translated",
-    method: "test_title_translation_generator",
+    method: "controlled_model_prompt_title_translation",
   }),
 });
 
@@ -88,6 +89,9 @@ fs.writeFileSync(legacyMachineTranslationFile, JSON.stringify({
     sourceTitle: "Hippocratic AI: A Safety-First LLM for Healthcare",
     zhTitle: "Hippocratic AI：医疗保健安全第一法学硕士",
     generatedBy: "mymemory_title_translation",
+  }, {
+    sourceTitle: "Would you host part of an AI data center in your home?",
+    zhTitle: "Sunrun 启动家庭分布式 AI 算力试点",
   }],
 }, null, 2), "utf8");
 const legacyMachineTranslations = loadSourceTitleTranslations(legacyMachineTranslationFile);
@@ -95,7 +99,7 @@ const legacyMachineTranslations = loadSourceTitleTranslations(legacyMachineTrans
 const ok =
   result.status === "translated" &&
   result.titleZh === expectedZh &&
-  result.method === "test_title_translation_generator" &&
+  result.method === "controlled_model_prompt_title_translation" &&
   cached === expectedZh &&
   taskade.titleZh === "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层" &&
   stigg.titleZh === "Stigg 发布 2.0：面向 AI 产品的用量运行时" &&
@@ -109,6 +113,9 @@ const ok =
   claudeCodeBrowser.titleZh === "Claude Code 新增内置浏览器，可直接读取、点击并操作外部网页" &&
   metaFeatureRemoval.titleZh === "Meta 在用户反弹后下线 Instagram 争议 AI 图片生成功能" &&
   supermicroEdgeAi.titleZh === "Supermicro 联合 Red Hat 和 Everpure 推出经验证的边缘 AI Kubernetes 一体机" &&
+  sourceTitleNeedsChineseTranslation("Taskade TSK-1 内核") &&
+  sourceTitleNeedsChineseTranslation("Tencent officially releases Hy3 并开放 API") &&
+  !sourceTitleNeedsChineseTranslation("Taskade 发布 TSK-1 系统内核") &&
   legacyMachineTranslations.size === 0;
 
 fs.rmSync(tempDir, { recursive: true, force: true });

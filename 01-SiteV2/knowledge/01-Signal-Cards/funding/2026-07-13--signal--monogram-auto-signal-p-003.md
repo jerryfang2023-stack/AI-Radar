@@ -2,18 +2,18 @@
 id: SIG-20260713-A07
 type: signal_card
 signal_type: funding
-title: "Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface"
+title: "Monogram 获得 4000 万美元种子轮融资"
 date: 2026-07-13
 status: published
 source_title: "Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse"
 asset_level: frontstage
-title_zh: "Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface"
+title_zh: "Monogram 获得 4000 万美元种子轮融资"
 title_translation_status: translated
 title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T10:23:57.466Z
-updated_at: 2026-07-13T10:23:57.466Z
+created_at: 2026-07-13T11:54:38.547Z
+updated_at: 2026-07-13T11:54:38.547Z
 
 raw_refs: ["R-003"]
 pool_refs: ["P-003"]
@@ -53,18 +53,18 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse Monogram宣布完成4000 万美元种子轮融资。"
+  source_excerpt: "Monogram 获得 4000 万美元种子轮融资 Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse Monogram宣布完成4000 万美元种子轮融资。"
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Monogram"
 
 frontend:
-  displayTitle: "Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface"
+  displayTitle: "Monogram 获得 4000 万美元种子轮融资"
   sourceLinks:
     - "https://valueaddvc.com/pulse/monogram-ai-40m-seed-2026"
 ---
 
-# Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface
+# Monogram 获得 4000 万美元种子轮融资
 
 ## 新闻事实
 
@@ -72,15 +72,15 @@ Monogram宣布完成4000 万美元种子轮融资。
 
 ## 原文要点
 
-- OpenAI, Anthropic and Google can all ship a version of this as a feature; Monogram has maybe 12-18 months before that happens.
+- Monogram 的 4000 万美元种子轮由 DST Global 与 Lux Capital 联合领投。
 
 ## 价值描述
 
-Monogram 获得 4000 万美元 种子轮融资。
+Monogram 的 4000 万美元种子轮由 DST Global 与 Lux Capital 领投，资金用于构建生成完整视觉交互界面而非只返回文本的 AI 应用。
 
 ## 可见原文片段
 
-Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse ← Value Add Pulse FUNDING$40M seed # Monogram Raises $40M Seed for Visual AI Interface Coursera co-founder Eren Bali's new startup Monogram raised a $40 million seed led by DST Global and Lux Capital to build an AI app that gener...
+OpenAI, Anthropic and Google can all ship a version of this as a feature; Monogram has maybe 12-18 months before that happens.
 
 ## 证据边界
 

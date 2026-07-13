@@ -1,6 +1,6 @@
 # 2026-07-13 Pool-to-Card Handoff
 
-- generated_at: 2026-07-13T10:23:58.909Z
+- generated_at: 2026-07-13T11:54:40.138Z
 - raw_input_count: 120
 - pool_input_count: 110
 - written_count: 22
@@ -13,13 +13,13 @@
 
 ## Signal Card Assets
 
-- SIG-20260713-A01｜P-001｜Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构
+- SIG-20260713-A01｜P-001｜Alta 获得 2500 万美元融资
 - SIG-20260713-A02｜P-035｜Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂
 - SIG-20260713-A03｜P-004｜Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层
 - SIG-20260713-A04｜P-006｜微软研究院推出开源可视化中间语言 Flint，让 AI 智能体"一句话生成专业图表"
 - SIG-20260713-A05｜P-007｜东方算芯发布全球首颗软件定义近存计算3D芯片DF1000
 - SIG-20260713-A06｜P-012｜上纬新材发布全球首款可变形个人机器人启元 T1
-- SIG-20260713-A07｜P-003｜Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface
+- SIG-20260713-A07｜P-003｜Monogram 获得 4000 万美元种子轮融资
 - SIG-20260713-A08｜P-017｜腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成
 - SIG-20260713-A09｜P-005｜Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力
 - SIG-20260713-A10｜P-008｜OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期
@@ -28,11 +28,11 @@
 - SIG-20260713-A13｜P-014｜Meta 在用户反弹后下线 Instagram 争议 AI 图片生成功能
 - SIG-20260713-A14｜P-050｜Supermicro 联合 Red Hat 和 Everpure 推出经验证的边缘 AI Kubernetes 一体机
 - SIG-20260713-A15｜P-011｜努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线
-- SIG-20260713-A16｜P-054｜微软：Windows 团队正全面利用 AI 挖掘漏洞，后续 Patch Tuesday 安全更新将包含更多修复补丁
-- SIG-20260713-A17｜P-065｜华为 FreeClip 2 耳机联动豆包功能全量上线，鸿蒙手机支持小艺/豆包双智能体
-- SIG-20260713-A18｜P-013｜Stigg 发布 2.0：面向 AI 产品的用量运行时
-- SIG-20260713-A19｜P-015｜小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展
-- SIG-20260713-A20｜P-002｜Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol
+- SIG-20260713-A16｜P-002｜Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol
+- SIG-20260713-A17｜P-013｜Stigg 发布 2.0：面向 AI 产品的用量运行时
+- SIG-20260713-A18｜P-054｜微软：Windows 团队正全面利用 AI 挖掘漏洞，后续 Patch Tuesday 安全更新将包含更多修复补丁
+- SIG-20260713-A19｜P-065｜华为 FreeClip 2 耳机联动豆包功能全量上线，鸿蒙手机支持小艺/豆包双智能体
+- SIG-20260713-A20｜P-015｜小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展
 - SIG-20260713-A21｜P-016｜Claude Code 新增内置浏览器，可直接读取、点击并操作外部网页
 
 ## Cluster / Dedupe Rows
@@ -52,11 +52,11 @@
 - P-014｜event:product_service:meta:2026｜accepted
 - P-050｜event:product_service:supermicro:product service supermicro simplifies edge ai deployments with validated kubernetes appliances w｜accepted
 - P-011｜event:product_service:努比亚:7｜accepted
+- P-002｜event:case:ploy:4.8｜accepted
+- P-013｜event:product_service:stigg:2.0｜accepted
 - P-054｜event:product_service:microsoft windows:0｜accepted
 - P-065｜event:product_service:华为 freeclip 2 耳机联动豆包功能全量:2｜accepted
-- P-013｜event:product_service:stigg:2.0｜accepted
 - P-015｜event:product_service:小鹏汽车:03｜accepted
-- P-002｜event:product_service:ploy:4.8｜accepted
 - P-016｜event:product_service:anthropic claude code:product service claude code now has a built in browser that lets the ai read click and type on e｜accepted
 
 ## Written
@@ -76,11 +76,11 @@
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-13--signal--meta-auto-signal-p-014.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-13--signal--supermicro-auto-signal-p-050.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-13--signal--ai-imoochi-7-17-auto-signal-p-011.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-13--signal--ploy-auto-signal-p-002.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-13--signal--stigg-auto-signal-p-013.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-13--signal--microsoft-windows-auto-signal-p-054.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-13--signal--freeclip-2-auto-signal-p-065.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-13--signal--stigg-auto-signal-p-013.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-13--signal--mona-l03-7-16-ai-auto-signal-p-015.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-13--signal--ploy-auto-signal-p-002.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-13--signal--anthropic-claude-code-auto-signal-p-016.md
 - 01-SiteV2/content/04-business-signals/signals/2026-07-13-signals.md
 

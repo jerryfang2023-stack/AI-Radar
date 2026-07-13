@@ -1,19 +1,19 @@
 {
   "meta": {
     "version": "EAI-V1.2.0-raw-card-ingestion-boundary",
-    "generatedAt": "2026-07-13T08:00:05.608Z",
+    "generatedAt": "2026-07-13T11:55:00.561Z",
     "activeDate": "2026-07-13",
     "source": "01-SiteV2/site/data/v3-data-observation-desk.json",
-    "fdePoolCount": 1,
-    "itemCount": 1,
-    "totalFdePoolCount": 13,
-    "totalItemCount": 13,
+    "fdePoolCount": 2,
+    "itemCount": 2,
+    "totalFdePoolCount": 14,
+    "totalItemCount": 14,
     "historyMode": "all_available_dates",
     "boundary": "FDE is an Enterprise AI lens pool, not a fourth Business Signals Card type."
   },
   "fdePool": [
     {
-      "id": "FDE-2026-07-13-P-003",
+      "id": "FDE-2026-07-13-P-004",
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
@@ -228,10 +228,10 @@
       "frontstageQualityWarnings": [],
       "frontstageGenericCandidate": false,
       "fromCorePool": true,
-      "linkedCardId": "SIG-20260713-A01",
+      "linkedCardId": "SIG-20260713-A03",
       "promotionStatus": "promoted_to_signal_card",
       "enterpriseAiLensPriority": true,
-      "sourceRef": "P-003",
+      "sourceRef": "P-004",
       "titleZh": "",
       "titleTranslationStatus": "needs_ingestion_translation",
       "titleTranslationMethod": "not_available_in_pool_snapshot",
@@ -242,6 +242,155 @@
         "services": "提供的服务是面向把 Agent 或模型接入业务系统的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
         "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
         "sourceBasis": "Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。"
+      }
+    },
+    {
+      "id": "FDE-2026-07-13-P-035",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂",
+      "originalTitle": "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
+      "date": "2026-07-13",
+      "subject": "Simplexity Robotics",
+      "source": "robotsbeat.com",
+      "sourceName": "robotsbeat.com",
+      "sourceUrl": "https://robotsbeat.com/simplexity-robotics-100-robots-i7-pro-leaderdrive-production-deployment/",
+      "sourceLevel": "B",
+      "evidenceStrength": "rich_evidence",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "2026-07-08T07:54:44.000Z",
+      "tags": {
+        "track": [
+          "track-ai-infra",
+          "track-embodied-ai"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-ai-infra",
+        "track-embodied-ai",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "track-embodied-ai",
+          "label": "具身智能"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂 Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories ...",
+        "missingFields": [
+          "buyer_or_user",
+          "specific_task",
+          "product_form",
+          "adoption_evidence",
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [],
+          "team_or_function": [],
+          "specific_task": [],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            }
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "pain_or_constraint": [],
+          "adoption_evidence": [],
+          "source_evidence_type": []
+        },
+        "buyer_or_user": [],
+        "buyerOrUser": [],
+        "team_or_function": [],
+        "teamOrFunction": [],
+        "specific_task": [],
+        "specificTask": [],
+        "business_action": [
+          "customer_deployment"
+        ],
+        "businessAction": [
+          "customer_deployment"
+        ],
+        "product_form": [],
+        "productForm": [],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [],
+        "painOrConstraint": [],
+        "adoption_evidence": [],
+        "adoptionEvidence": [],
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
+      },
+      "summary": "robotsbeat 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
+      "translatedFact": "robotsbeat 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
+      "originalHighlights": [
+        "Simplexity Robotics 宣布首批交付 100 台 i7 Pro 全场景机器人，并建成 CNC 智能具身机器人生产线。",
+        "这 100 台机器人被分配到多个部署环境，而非交付给单一客户。",
+        "最大批次用于 Leaderdrive 等工业客户的机器人核心部件制造与 CNC 作业。"
+      ],
+      "visibleFragment": "robotsbeat 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
+      "sourceLinks": [
+        "https://robotsbeat.com/simplexity-robotics-100-robots-i7-pro-leaderdrive-production-deployment/"
+      ],
+      "sourceTitle": "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-ai-infra",
+      "generatedTitle": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂",
+      "displayTitle": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂",
+      "largeVendor": false,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 94,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260713-A02",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-035",
+      "titleZh": "",
+      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是围绕一线运营的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "robotsbeat 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。"
       }
     },
     {
@@ -2780,8 +2929,30 @@
   ],
   "items": [
     {
-      "id": "enterprise-ai:SIG-20260713-A01",
-      "cardId": "SIG-20260713-A01",
+      "id": "enterprise-ai:SIG-20260713-A02",
+      "cardId": "SIG-20260713-A02",
+      "date": "2026-07-13",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂",
+      "subject": "Simplexity Robotics",
+      "sourceName": "robotsbeat.com",
+      "sourceUrl": "https://robotsbeat.com/simplexity-robotics-100-robots-i7-pro-leaderdrive-production-deployment/",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "一线运营",
+      "workflow": "把 Agent 或模型接入业务系统",
+      "evidenceBoundary": "已确认：robotsbeat 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是围绕一线运营的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "robotsbeat 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260713-A03",
+      "cardId": "SIG-20260713-A03",
       "date": "2026-07-13",
       "category": "product-service",
       "categoryLabel": "产品",

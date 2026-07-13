@@ -89,7 +89,7 @@ function loadSourceTitleTranslations() {
     const entries = Array.isArray(json) ? json : (Array.isArray(json.translations) ? json.translations : []);
     const map = new Map();
     for (const entry of entries) {
-      if (entry?.generatedBy === "mymemory_title_translation") continue;
+      if (!["openai_title_translation", "business-rule_title_translation", "controlled_model_prompt_title_translation", "manual_reviewed_source_title_translation"].includes(entry?.generatedBy)) continue;
       const sourceTitle = String(entry?.sourceTitle || "").trim();
       const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
       if (!sourceTitle || !zhTitle || publicTextLooksGarbled(sourceTitle) || publicTextLooksGarbled(zhTitle)) continue;

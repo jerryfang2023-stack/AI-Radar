@@ -5,10 +5,25 @@ export function hasCjk(value = "") {
   return /[\u3400-\u9fff]/u.test(String(value || ""));
 }
 
+const approvedTranslationMethods = new Set([
+  "openai_title_translation",
+  "business-rule_title_translation",
+  "controlled_model_prompt_title_translation",
+  "manual_reviewed_source_title_translation",
+]);
+
+export function isApprovedSourceTitleTranslation(entry = {}) {
+  return approvedTranslationMethods.has(String(entry?.generatedBy || "").trim());
+}
+
 export function sourceTitleNeedsChineseTranslation(value = "") {
   const text = String(value || "").trim();
-  if (!text || hasCjk(text)) return false;
-  return /[A-Za-z]{3}/u.test(text);
+  if (!text) return false;
+  const hanCount = (text.match(/[\u4e00-\u9fff]/gu) || []).length;
+  const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  const hasChineseEventAction = /(?:发布|上线|推出|更新|完成|获得|宣布|融资|合作|部署|采购|采用|收购|获批)/u.test(text);
+  if (hanCount >= 6 && hasChineseEventAction) return false;
+  return text.length > 12 && latinWords.length >= 2;
 }
 
 export function titleTranslationKey(value = "") {
@@ -85,7 +100,7 @@ export function loadSourceTitleTranslations(file) {
   for (const entry of entries) {
     const sourceTitle = String(entry?.sourceTitle || "").trim();
     const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
-    if (entry?.generatedBy === "mymemory_title_translation") continue;
+    if (!isApprovedSourceTitleTranslation(entry)) continue;
     if (!sourceTitle || !titleTranslationLooksUsable(sourceTitle, zhTitle)) continue;
     map.set(titleTranslationKey(sourceTitle), stripGeneratorNoise(zhTitle));
   }
@@ -114,7 +129,7 @@ export function upsertSourceTitleTranslation(file, { sourceTitle = "", zhTitle =
   const existing = payload.translations.find((entry) => titleTranslationKey(entry?.sourceTitle || "") === key);
   if (existing) {
     const existingZh = String(existing.zhTitle || existing.translation || "").trim();
-    if (titleTranslationLooksUsable(cleanSourceTitle, existingZh)) return false;
+    if (isApprovedSourceTitleTranslation(existing) && titleTranslationLooksUsable(cleanSourceTitle, existingZh)) return false;
     existing.sourceTitle = cleanSourceTitle;
     existing.zhTitle = cleanZhTitle;
     existing.generatedBy = method || "source_title_translation_generator";
