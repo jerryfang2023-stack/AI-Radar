@@ -12,8 +12,8 @@ title_translation_status: translated
 title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T10:23:57.466Z
-updated_at: 2026-07-13T10:23:57.466Z
+created_at: 2026-07-13T11:54:38.547Z
+updated_at: 2026-07-13T11:54:38.547Z
 
 raw_refs: ["R-035"]
 pool_refs: ["P-035"]
@@ -81,8 +81,8 @@ Simplexity Robotics 表示，该项目已从实验室验证转入多地点工业
 
 ## 可见原文片段
 
-Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories | RobotsBeat An i7 Pro embodied AI robot performing CNC machine loading and unloading tasks at an industrial manufacturing facility, navigating between machine to....
+An i7 Pro embodied AI robot performing CNC machine loading and unloading tasks at an industrial manufacturing facility, navigating between machine tools with high-precision placement capability.
 
 ## 证据边界
 
-none
+证据边界：本卡只使用已保留的 Raw / Pool 原文标题、摘录和来源链接。

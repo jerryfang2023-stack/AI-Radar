@@ -1,7 +1,7 @@
 ---
-id: SIG-20260713-A20
+id: SIG-20260713-A16
 type: signal_card
-signal_type: product_service
+signal_type: case
 title: "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol"
 date: 2026-07-13
 status: published
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T10:23:57.466Z
-updated_at: 2026-07-13T10:23:57.466Z
+created_at: 2026-07-13T11:54:38.547Z
+updated_at: 2026-07-13T11:54:38.547Z
 
 raw_refs: ["R-002"]
 pool_refs: ["P-002"]
@@ -27,18 +27,17 @@ primary_raw:
   has_full_text: true
   evidence_strength: rich_evidence
   pool_routes:
-    - user_feedback_pool
-    - watchlist
+    - core_pool
   raw_qc_decision: allow
-  importance_type: supporting_signal
-  importance_score: 2
+  importance_type: important_case
+  importance_score: 4
 
 formal_tags:
   track: ["track-ai-agent", "track-ai-infra"]
   function: []
   scenario: []
   customer: []
-  evidence: ["evidence-pricing-cost", "evidence-customer-metric", "evidence-product-launch"]
+  evidence: ["evidence-pricing-cost", "evidence-customer-metric", "evidence-customer-adoption"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"

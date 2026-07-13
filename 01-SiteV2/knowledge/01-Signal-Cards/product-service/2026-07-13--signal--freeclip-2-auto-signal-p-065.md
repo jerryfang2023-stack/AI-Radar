@@ -1,5 +1,5 @@
 ---
-id: SIG-20260713-A17
+id: SIG-20260713-A19
 type: signal_card
 signal_type: product_service
 title: "华为 FreeClip 2 耳机联动豆包功能全量上线，鸿蒙手机支持小艺/豆包双智能体"
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T10:23:57.466Z
-updated_at: 2026-07-13T10:23:57.466Z
+created_at: 2026-07-13T11:54:38.547Z
+updated_at: 2026-07-13T11:54:38.547Z
 
 raw_refs: ["R-065"]
 pool_refs: ["P-065"]

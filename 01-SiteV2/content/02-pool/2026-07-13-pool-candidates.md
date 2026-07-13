@@ -106,24 +106,24 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_volatility: high
 - community_name: Hacker News 热门（buzzing.cc 中文翻译）
 - capture_scope: article_text
-- evidence_level: user_feedback_signal
+- evidence_level: core_evidence_candidate
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: pooled
-- pool_routes: user_feedback_pool, watchlist
+- pool_routes: core_pool
 - raw_content_hash: 6e3fd3836bf847fc
 - raw_full_text_hash: 6e3fd3836bf847fc
 - raw_semantic_hash: 6f408144a12ceeaa
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6e3fd3836bf847fc","missing":[]}
 - degradation_reasons: none
-- importance_type: supporting_signal
-- importance_score: 2
+- importance_type: important_case
+- importance_score: 4
 - supporting_signals: low_value_ai_adjacent_context
 - theme: uncategorized
 - keyword_group: uncategorized
 - score: 28
 - raw_capture_priority: 41
-- usable_for: case, business_change, user_feedback_pool, watchlist
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate
 - key_excerpts: [{"type":"number","text":"Ploy 将其 AI 智能体默认模型从 Claude Opus 4.8 切换至 OpenAI 今晨发布的 GPT-5.6 Sol。在真实营销网站构建测试中，GPT-5.6 Sol 完成页面平均耗时 3 分 42 秒，较 Opus 4.8 的 8 分钟快 2.2 倍；每次构建成本从 3.06 美元降至 2.22 美元，降低 27%；输出 token 从 33.0K 降至 17.1K，视觉评分从 0.936 提升至 0.970。迁移过程发现，GPT-5.6 会为所有 25 个工具参数填充默认值，导致 52%-64% 的文件读取返回空结果；提示词指令和 OpenAI strict 模式均无法修复此行为。此外，评估框架中约三分之一的原始失败源于针对旧模型的假设，而非模型本身问题。 As of today, Ploy’s agent runs on GPT-5. 6 Sol, the flagship tier of the model family OpenAI released this morning. As of today, Ploy’s agent runs on GPT-5. 6 Sol, the flagship ti","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As of today, Ploy’s agent runs on GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"6 Sol, the flagship tier of the model family OpenAI released this morning.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"For months, we couldn’t find a model that challenges Claude Opus given our incredibly high bar for quality.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"That changed with GPT 5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"After running it head-to-head against Claude Opus, we’ve made GPT 5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 - evidence_seed: {"company_actions":["As of today, Ploy’s agent runs on GPT-5.","6 Sol, the flagship tier of the model family OpenAI released this morning.","For months, we couldn’t find a model that challenges Claude Opus given our incredibly high bar for quality."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
 - missing_information: 没有具体客户或真实企业案例
@@ -715,20 +715,20 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: not_applicable
 - raw_status: pooled
-- pool_routes: index_only
+- pool_routes: core_pool
 - raw_content_hash: 37323b6a4d297e9f
 - raw_full_text_hash: e2f9e8b6eec2fe21
 - raw_semantic_hash: 173e0d7ec242bcf2
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e2f9e8b6eec2fe21","missing":[]}
 - degradation_reasons: none
-- importance_type: supporting_signal
-- importance_score: 2
+- importance_type: important_product_or_service
+- importance_score: 4
 - supporting_signals: low_value_ai_adjacent_context
 - theme: 成熟信号
 - keyword_group: mature-commercial-signal
 - score: 22.700000000000003
 - raw_capture_priority: 35.7
-- usable_for: case, business_change
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate
 - key_excerpts: [{"type":"funding","text":"Announcing Stigg 2.0 - The Usage Runtime for AI Products Blog / Stigg Announcements # Announcing Stigg 2.0 Every AI request is a spend decision. Make it in milliseconds. Written by Dor Sasson , Anton Zagrebelny Last updated June 30, 2026 read time 10 minutes ### Table of contents ENF... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original Blog / Stigg Announcements Announcing Stigg 2. 0 Every AI request is a spend decision. Blog / Stigg Announcements Announci","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Blog / Stigg Announcements Announcing Stigg 2.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"0 Every AI request is a spend decision.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Make it in milliseconds.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Written by Dor Sasson Anton Zagrebelny Last updated June 30, 2026 read time 10 minutes Table of contents ENFORCEMENT Share: Copied https://www.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"io/blog-posts/announcing-stigg-2-0-the-usage-runtime-for-ai-products https://www.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 - evidence_seed: {"company_actions":["Announcing Stigg 2.0 - The Usage Runtime for AI Products Blog / Stigg Announcements # Announcing Stigg 2.0 Every AI request is a spend decision. Make it in milliseconds. Written by Dor Sasson , Anton Zagrebelny Last updated June 30, 2026 read time 10 minutes ### Table of contents ENF... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original Blog / Stigg Announcements Announcing Stigg 2. 0 Every AI request is a spend decision. Blog / Stigg Announcements Announci","Blog / Stigg Announcements Announcing Stigg 2.","0 Every AI request is a spend decision."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
 - missing_information: 没有具体客户或真实企业案例

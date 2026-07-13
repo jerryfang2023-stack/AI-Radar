@@ -2,18 +2,18 @@
 id: SIG-20260713-A01
 type: signal_card
 signal_type: funding
-title: "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构"
+title: "Alta 获得 2500 万美元融资"
 date: 2026-07-13
 status: published
 source_title: "Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams"
 asset_level: frontstage
-title_zh: "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构"
+title_zh: "Alta 获得 2500 万美元融资"
 title_translation_status: translated
 title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T10:23:57.466Z
-updated_at: 2026-07-13T10:23:57.466Z
+created_at: 2026-07-13T11:54:38.547Z
+updated_at: 2026-07-13T11:54:38.547Z
 
 raw_refs: ["R-001"]
 pool_refs: ["P-001"]
@@ -53,18 +53,18 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构 Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams Alta宣布完成2500 万美元融资。"
+  source_excerpt: "Alta 获得 2500 万美元融资 Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams Alta宣布完成2500 万美元融资。"
   missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "Alta"
 
 frontend:
-  displayTitle: "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构"
+  displayTitle: "Alta 获得 2500 万美元融资"
   sourceLinks:
     - "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html"
 ---
 
-# Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构
+# Alta 获得 2500 万美元融资
 
 ## 新闻事实
 
@@ -72,7 +72,7 @@ Alta宣布完成2500 万美元融资。
 
 ## 原文要点
 
-- Alta 获得 2500 万美元融资。
+- Alta宣布完成融资。
 
 ## 价值描述
 
@@ -80,7 +80,7 @@ Alta 获得 2500 万美元 A 轮融资。
 
 ## 可见原文片段
 
-Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams Accessibility Statement Skip Navigation By transforming the GTM stack, Alta's AI team brings a learning curve managers can only dream about TEL AVIV, Israel, July 8, 2026 /PRNewswire/ -- Alta, the AI System of Actions for.....
+By transforming the GTM stack, Alta's AI team brings a learning curve managers can only dream about TEL AVIV, Israel , July 8, 2026 /PRNewswire/ -- Alta , the AI System of Actions for go-to-market teams, today announced $25 million in Series A funding.
 
 ## 证据边界
 

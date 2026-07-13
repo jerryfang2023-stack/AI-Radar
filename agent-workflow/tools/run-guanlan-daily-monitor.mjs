@@ -2224,7 +2224,7 @@ function guanlanScores(item, quality, elements, seed) {
 function usableFor(item, quality, scores, excerpts) {
   const coreEvidence = hasFullText(item.snapshot) && !["low", "failed"].includes(quality);
   const types = new Set(excerpts.map((excerpt) => excerpt.type));
-  const community = isCommunitySource(item);
+  const community = isCommunitySource(item) && !/resolved_original_source|primary_source/iu.test(sourceRoleFor(item, item.snapshot || {}));
   const gate = commercialSignalHardGate(item, item.snapshot?.text || item.summary || "", excerpts);
   return {
     viewpoint: coreEvidence && (types.has("opinion") || types.has("quote")),
@@ -2285,13 +2285,21 @@ function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecisi
     && !isLowValueConsumerOrPlatformPolicyItem(item, item.snapshot?.text || item.summary || "", excerpts)
     && !isRepositoryOrCatalogCoreBlockedItem(item)
     && !isStaleCoreCandidate(item);
+  const resolvedOriginalFormalEvent =
+    coreEvidence
+    && /resolved_original_source|primary_source/iu.test(sourceRole)
+    && gate.eventEvidence
+    && isEventEvidenceObject(gate.evidenceObjectType);
   if (computedRawQcDecision === "block") {
     return [isAIHotDailySelected(item) ? "index_only" : "discard"];
   }
   if (!gate.evidenceObjectUsable) {
     return [isAIHotDailySelected(item) || quality !== "failed" ? "index_only" : "discard"];
   }
-  if (coreEvidence && scores.importance_score >= 4 && formalCardCoreImportanceTypes.has(scores.importance_type)) routes.add("core_pool");
+  if (coreEvidence && (
+    (scores.importance_score >= 4 && formalCardCoreImportanceTypes.has(scores.importance_type))
+    || resolvedOriginalFormalEvent
+  )) routes.add("core_pool");
   if (usable.emerging_pool) routes.add("emerging_pool");
   if (usable.user_feedback_pool) routes.add("user_feedback_pool");
   if (usable.watchlist && !routes.has("core_pool")) routes.add("watchlist");
@@ -2448,6 +2456,7 @@ function classifyEvidenceObjectType(item = {}, snapshotText = "", excerpts = [])
   if (pricingChange) return "pricing_change";
   if (caseDetail) return "case_or_customer";
   if (regulatory) return "regulatory_or_procurement";
+  if (/\bmigrat(?:e|es|ed|ion)\b/iu.test(text) && /production\s+(?:ai\s+)?agent|agent.*production/iu.test(text) && !officialIndex) return "event";
   if (concreteEvent && !officialIndex) return "event";
   if (concreteEvent && officialIndex && explicitOfficialEvent) return "event_on_official_page";
   if (searchOrDirectory) return "search_result_or_tool_directory";
@@ -2519,8 +2528,10 @@ function hasExplicitChangeAction(item = {}, snapshotText = "", excerpts = []) {
   const types = new Set(excerpts.map((excerpt) => excerpt.type));
   const text = commercialSignalText(item, snapshotText, excerpts);
   const actionPattern = /发布|宣布|推出|上线|正式登陆|正式可用|结束\s*Beta|结束测试|开放使用|公测|内测|开源|收购|并购|融资|投资|合作|部署|接入|集成|升级|涨价|降价|计费|采购|招标|签约|扩展|新增|停用|关闭|监管|处罚|诉讼|客户|案例|launch(?:es|ed|ing)?|release(?:s|d)?|ship(?:s|ped)?|announce(?:s|d)?|roll(?:s|ed)? out|open-source|acqui(?:re|res|red|sition)|fund(?:ing|ed)?|raise(?:s|d)?|partner(?:s|ed)?|deploy(?:s|ed|ment)?|adopt(?:s|ed|ion)?|integrat(?:e|es|ed|ion)|pricing|billing|customer|case study|procurement|tender|regulation|lawsuit/iu;
+  const productionMigration = /\bmigrat(?:e|es|ed|ion)\b/iu.test(text)
+    && /production\s+(?:ai\s+)?agent|agent.*production/iu.test(text);
   return ["company_action", "product_update", "workflow_change", "case_detail", "risk"].some((type) => types.has(type))
-    && actionPattern.test(text);
+    && (actionPattern.test(text) || productionMigration);
 }
 
 function isHomepageOrDirectoryObservation(item = {}, snapshotText = "", excerpts = []) {
@@ -5095,6 +5106,40 @@ async function runEvidenceObjectRegressionFixtures() {
   const researchType = classifyEvidenceObjectType(research, research.summary, [{ type: "quote", text: research.summary }]);
   if (researchType !== "research_or_report") {
     throw new Error(`research-only material must remain research_or_report: ${researchType}`);
+  }
+
+  const recoveredOriginalEvent = {
+    title: "Ploy migrates a production AI agent to GPT-5.6 Sol",
+    url: "https://ploy.example.com/blog/migrating-a-production-ai-agent",
+    source: "Hacker News discovery",
+    acquisition_channel: "aihot",
+    summary: "Ploy reports a production AI-agent migration with measured latency and cost changes.",
+    snapshot: {
+      status: "fetched-readable-text-main",
+      text: "Ploy migrated its production AI agent to GPT-5.6 Sol after a direct evaluation. The company reports lower build latency, lower cost per completed run, and documented tool-call constraints from the production migration.".repeat(6),
+      full_text_hash: "fixture-ploy-production-migration",
+    },
+  };
+  const recoveredRoutes = poolCandidateMeta(recoveredOriginalEvent).routes;
+  if (!recoveredRoutes.includes("core_pool") || recoveredRoutes.includes("user_feedback_pool")) {
+    throw new Error(`resolved original event remained trapped in discovery routes: ${JSON.stringify(recoveredRoutes)}`);
+  }
+
+  const firstPartyPricingEvent = {
+    title: "Announcing Stigg 2.0, the usage runtime for AI products",
+    url: "https://stigg.example.com/blog/announcing-stigg-2-0",
+    source: "Official blog",
+    acquisition_channel: "keyword-search",
+    summary: "Stigg announces a new usage runtime and pricing controls for AI products.",
+    snapshot: {
+      status: "fetched-readable-text-main",
+      text: "Stigg announced version 2.0 of its usage runtime for AI products. The release adds usage-based pricing controls, billing enforcement, and production metering for every AI request.".repeat(6),
+      full_text_hash: "fixture-stigg-pricing-release",
+    },
+  };
+  const pricingRoutes = poolCandidateMeta(firstPartyPricingEvent).routes;
+  if (!pricingRoutes.includes("core_pool") || pricingRoutes.includes("index_only")) {
+    throw new Error(`first-party pricing event remained index-only: ${JSON.stringify(pricingRoutes)}`);
   }
   console.log(JSON.stringify({ ok: true, fixture: "evidence-object-commercial-action" }, null, 2));
 }

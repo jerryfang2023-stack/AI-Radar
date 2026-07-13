@@ -1,5 +1,5 @@
 ---
-id: SIG-20260713-A19
+id: SIG-20260713-A20
 type: signal_card
 signal_type: product_service
 title: "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展"
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T10:23:57.466Z
-updated_at: 2026-07-13T10:23:57.466Z
+created_at: 2026-07-13T11:54:38.547Z
+updated_at: 2026-07-13T11:54:38.547Z
 
 raw_refs: ["R-015"]
 pool_refs: ["P-015"]
