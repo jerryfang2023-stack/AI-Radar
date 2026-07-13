@@ -1,0 +1,282 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-051",
+  "title": "hapax-agentgov v0.3.1",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://pypi.org/project/hapax-agentgov/",
+  "canonical_url": "https://pypi.org/project/hapax-agentgov",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event_on_official_page",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-06-11T00:00:00.000Z",
+  "collected_at": "2026-07-13T10:23:56.992Z",
+  "language": "mixed",
+  "full_text": "hapax-agentgov 0.3.1\npip install hapax-agentgov\nCopy PIP instructions\nLatest release\nReleased:\nJun 11, 2026\nGovernance hooks for AI coding agents — enforce safety, git hygiene, and project rules via Claude Code hooks.\nNavigation\nVerified details\nThese details have been verified by PyPI\nMaintainers\noudepode\nUnverified details\nThese details have not been verified by PyPI\nMeta\nLicense Expression: MIT\nSPDX\nLicense Expression\nAuthor: hapax-systems\nTags\nai-agents\nclaude-code\ngovernance\nhooks\nsafety\nRequires: Python >=3.10\nClassifiers\nDevelopment Status\n3 - Alpha\nIntended Audience\nDevelopers\nLicense\nOSI Approved :: MIT License\nProgramming Language\nPython :: 3\nTopic\nSoftware Development :: Quality Assurance\nReport project as malware\nProject description\nhapax-agentgov\nGovernance hooks for AI coding agents. Extracted from a production system running 47 hooks across 200+ agents.\nWorks with Claude Code hooks. Enforces safety, git hygiene, and project rules automatically — before the agent acts, not after.\nQuick start\npip install hapax-agentgov\ncd your-project\nagentgov init\nThis scaffolds .claude/hooks/ with safety hooks and registers them in .claude/settings.local.json .\nWhat it does\nHooks intercept Claude Code tool calls (file edits, bash commands) and block dangerous actions before they execute:\nHook\nCategory\nWhat it blocks\npii-guard\nsafety\nEmail addresses, SSNs, phone numbers, home directory paths in tracked files\nsecrets-guard\nsafety\nAWS keys, GitHub tokens, API keys, private keys\nconflict-marker-scan\nsafety\nWarns when <<<<<<< markers appear after git merge/rebase\nsafe-stash-guard\ngit\ngit stash pop (use apply + drop instead — pop can't recover from conflicts)\npush-gate\ngit\nAutonomous git push , gh pr create/merge without user approval\nno-stale-branches\ngit\nCreating new branches when unmerged work exists\nwork-resolution-gate\nworkflow\nEditing code on branches with no open PR\npkg-manager-guard\ntooling\nDirect pip install (enforces uv or poetry )\nprotected-paths\nworkflow\nWrites to *.pem , *.key , and other sensitive file patterns\nCLI\nagentgov init\nScaffold hooks into your project.\nagentgov init # \"safe\" preset (recommended 6 hooks)\nagentgov init --preset strict # all 9 hooks\nagentgov init --preset minimal # just pii-guard + conflict-marker-scan\nagentgov init --force # overwrite existing hook scripts\nagentgov check\nValidate your hook configuration.\nagentgov check\n# agentgov: 6 hooks configured and valid\n# OK pii-guard.sh (PreToolUse)\n# OK secrets-guard.sh (PreToolUse)\n# ...\nagentgov report\nShow governance coverage.\nagentgov report\n# agentgov: 6/9 hooks active (67% coverage)\n# Active:\n# [safety] pii-guard: Block writes that introduce PII patterns\n# [safety] secrets-guard: Block writes containing API keys and tokens\n# ...\nagentgov report --json # machine-readable output\nEnterprise adoption\nStart with an advisory pilot before enforcement in production. In this release,\ninstalled hooks enforce their checks; advisory means using a sandbox, fork, or\nlow-risk repository to inspect findings before promotion. The enterprise guide\ncovers a safe pilot shape, license and attribution expectations, security\nreadiness checks, and the boundary between free adoption and paid support:\nEnterprise adoption guide\nAI work evidence packet example\nAdvisory governance policy example\nHow hooks work\nClaude Code hooks are shell scripts that run before ( PreToolUse ) or after ( PostToolUse ) tool calls. They receive the tool name and input as JSON on stdin:\n\"tool_name\" : \"Edit\" ,\n\"tool_input\" : {\n\"file_path\" : \"/path/to/file.py\" ,\n\"new_string\" : \"API_KEY = 'sk-abc123...'\"\nA hook exits 0 to allow, exits 2 to block (with a message on stderr).\nWriting custom hooks\nDrop any .sh script in .claude/hooks/ and register it in .claude/settings.local.json :\n\"hooks\" : {\n\"PreToolUse\" : [\n\"matcher\" : \"Edit|Write\" ,\n\"hooks\" : [{ \"type\" : \"command\" , \"command\" : \".claude/hooks/my-hook.sh\" }]\nOrigin\nExtracted from hapax-council , a personal operating environment running 200+ AI agents with 47 governance hooks enforcing safety, privacy, git discipline, and project rules across all agent sessions.\nLicense\nMIT\nProject details\nVerified details\nThese details have been verified by PyPI\nMaintainers\noudepode\nUnverified details\nThese details have not been verified by PyPI\nMeta\nLicense Expression: MIT\nSPDX\nLicense Expression\nAuthor: hapax-systems\nTags\nai-agents\nclaude-code\ngovernance\nhooks\nsafety\nRequires: Python >=3.10\nClassifiers\nDevelopment Status\n3 - Alpha\nIntended Audience\nDevelopers\nLicense\nOSI Approved :: MIT License\nProgramming Language\nPython :: 3\nTopic\nSoftware Development :: Quality Assurance\nRelease history\nRelease notifications |\nRSS feed\nThis version\n0.3.1\nJun 11, 2026\n0.3.0\nMay 12, 2026\n0.2.0\nMay 12, 2026\nDownload files\nDownload the file for your platform. If you're not sure which to choose, learn more about installing packages .\nSource Distribution\nhapax_agentgov-0.3.1.tar.gz\n(24.2 kB\nview details )\nUploaded\nJun 11, 2026\nSource\nBuilt Distribution\nFilter files by name, interpreter, ABI, and platform.\nIf you're not sure about the file name format, learn more about wheel file names .\nCopy a direct link to the current filters\nCopy\nFile name\nInterpreter\nInterpreter\npy3\nABI\nABI\nnone\nPlatform\nPlatform\nany\nhapax_agentgov-0.3.1-py3-none-any.whl\n(17.5 kB\nview details )\nUploaded\nJun 11, 2026\nPython 3\nFile details\nDetails for the file hapax_agentgov-0.3.1.tar.gz .\nFile metadata\nDownload URL: hapax_agentgov-0.3.1.tar.gz\nUpload date:\nJun 11, 2026\nSize: 24.2 kB\nTags: Source\nUploaded using Trusted Publishing? No\nUploaded via: uv/0.10.9 {\"installer\":{\"name\":\"uv\",\"version\":\"0.10.9\",\"subcommand\":[\"publish\"]},\"python\":null,\"implementation\":{\"name\":null,\"version\":null},\"distro\":{\"name\":\"CachyOS Linux\",\"version\":null,\"id\":null,\"libc\":null},\"system\":{\"name\":null,\"release\":null},\"cpu\":null,\"openssl_version\":null,\"setuptools_version\":null,\"rustc_version\":null,\"ci\":null}\nFile hashes\nHashes for hapax_agentgov-0.3.1.tar.gz\nAlgorithm\nHash digest\nSHA256\n63316a6025ef9af6a39822fc9ccc2530bbe1493c5d86c84ac7c40fc6ecfd3cec\nCopy\nMD5\n5cecd85538bc18d2d7fb00b4e73f8bed\nCopy\nBLAKE2b-256\n423244eefabd34c82e4311a4614abfc7367208b80a6843d4cd931b290ac85eb1\nCopy\nSee more details on using hashes here.\nFile details\nDetails for the file hapax_agentgov-0.3.1-py3-none-any.whl .\nFile metadata\nDownload URL: hapax_agentgov-0.3.1-py3-none-any.whl\nUpload date:\nJun 11, 2026\nSize: 17.5 kB\nTags: Python 3\nUploaded using Trusted Publishing? No\nUploaded via: uv/0.10.9 {\"installer\":{\"name\":\"uv\",\"version\":\"0.10.9\",\"subcommand\":[\"publish\"]},\"python\":null,\"implementation\":{\"name\":null,\"version\":null},\"distro\":{\"name\":\"CachyOS Linux\",\"version\":null,\"id\":null,\"libc\":null},\"system\":{\"name\":null,\"release\":null},\"cpu\":null,\"openssl_version\":null,\"setuptools_version\":null,\"rustc_version\":null,\"ci\":null}\nFile hashes\nHashes for hapax_agentgov-0.3.1-py3-none-any.whl\nAlgorithm\nHash digest\nSHA256\n3aee46ddcac4da61181246f787eda315c29ed94085493cd1880dda26028f248a\nCopy\nMD5\n47a53896515b470f15daf613ec3d3fff\nCopy\nBLAKE2b-256\n795c485e95c3a8902186ee1b8d641e6ea508a1f07178d9c7d13a10c0b80c4601\nCopy\nSee more details on using hashes here.",
+  "clean_text": "hapax-agentgov 0.3.1\npip install hapax-agentgov\nCopy PIP instructions\nLatest release\nReleased:\nJun 11, 2026\nGovernance hooks for AI coding agents — enforce safety, git hygiene, and project rules via Claude Code hooks.\nNavigation\nVerified details\nThese details have been verified by PyPI\nMaintainers\noudepode\nUnverified details\nThese details have not been verified by PyPI\nMeta\nLicense Expression: MIT\nSPDX\nLicense Expression\nAuthor: hapax-systems\nTags\nai-agents\nclaude-code\ngovernance\nhooks\nsafety\nRequires: Python >=3.10\nClassifiers\nDevelopment Status\n3 - Alpha\nIntended Audience\nDevelopers\nLicense\nOSI Approved :: MIT License\nProgramming Language\nPython :: 3\nTopic\nSoftware Development :: Quality Assurance\nReport project as malware\nProject description\nhapax-agentgov\nGovernance hooks for AI coding agents. Extracted from a production system running 47 hooks across 200+ agents.\nWorks with Claude Code hooks. Enforces safety, git hygiene, and project rules automatically — before the agent acts, not after.\nQuick start\npip install hapax-agentgov\ncd your-project\nagentgov init\nThis scaffolds .claude/hooks/ with safety hooks and registers them in .claude/settings.local.json .\nWhat it does\nHooks intercept Claude Code tool calls (file edits, bash commands) and block dangerous actions before they execute:\nHook\nCategory\nWhat it blocks\npii-guard\nsafety\nEmail addresses, SSNs, phone numbers, home directory paths in tracked files\nsecrets-guard\nsafety\nAWS keys, GitHub tokens, API keys, private keys\nconflict-marker-scan\nsafety\nWarns when <<<<<<< markers appear after git merge/rebase\nsafe-stash-guard\ngit\ngit stash pop (use apply + drop instead — pop can't recover from conflicts)\npush-gate\ngit\nAutonomous git push , gh pr create/merge without user approval\nno-stale-branches\ngit\nCreating new branches when unmerged work exists\nwork-resolution-gate\nworkflow\nEditing code on branches with no open PR\npkg-manager-guard\ntooling\nDirect pip install (enforces uv or poetry )\nprotected-paths\nworkflow\nWrites to *.pem , *.key , and other sensitive file patterns\nCLI\nagentgov init\nScaffold hooks into your project.\nagentgov init # \"safe\" preset (recommended 6 hooks)\nagentgov init --preset strict # all 9 hooks\nagentgov init --preset minimal # just pii-guard + conflict-marker-scan\nagentgov init --force # overwrite existing hook scripts\nagentgov check\nValidate your hook configuration.\nagentgov check\n# agentgov: 6 hooks configured and valid\n# OK pii-guard.sh (PreToolUse)\n# OK secrets-guard.sh (PreToolUse)\n# ...\nagentgov report\nShow governance coverage.\nagentgov report\n# agentgov: 6/9 hooks active (67% coverage)\n# Active:\n# [safety] pii-guard: Block writes that introduce PII patterns\n# [safety] secrets-guard: Block writes containing API keys and tokens\n# ...\nagentgov report --json # machine-readable output\nEnterprise adoption\nStart with an advisory pilot before enforcement in production. In this release,\ninstalled hooks enforce their checks; advisory means using a sandbox, fork, or\nlow-risk repository to inspect findings before promotion. The enterprise guide\ncovers a safe pilot shape, license and attribution expectations, security\nreadiness checks, and the boundary between free adoption and paid support:\nEnterprise adoption guide\nAI work evidence packet example\nAdvisory governance policy example\nHow hooks work\nClaude Code hooks are shell scripts that run before ( PreToolUse ) or after ( PostToolUse ) tool calls. They receive the tool name and input as JSON on stdin:\n\"tool_name\" : \"Edit\" ,\n\"tool_input\" : {\n\"file_path\" : \"/path/to/file.py\" ,\n\"new_string\" : \"API_KEY = 'sk-abc123...'\"\nA hook exits 0 to allow, exits 2 to block (with a message on stderr).\nWriting custom hooks\nDrop any .sh script in .claude/hooks/ and register it in .claude/settings.local.json :\n\"hooks\" : {\n\"PreToolUse\" : [\n\"matcher\" : \"Edit|Write\" ,\n\"hooks\" : [{ \"type\" : \"command\" , \"command\" : \".claude/hooks/my-hook.sh\" }]\nOrigin\nExtracted from hapax-council , a personal operating environment running 200+ AI agents with 47 governance hooks enforcing safety, privacy, git discipline, and project rules across all agent sessions.\nLicense\nMIT\nProject details\nVerified details\nThese details have been verified by PyPI\nMaintainers\noudepode\nUnverified details\nThese details have not been verified by PyPI\nMeta\nLicense Expression: MIT\nSPDX\nLicense Expression\nAuthor: hapax-systems\nTags\nai-agents\nclaude-code\ngovernance\nhooks\nsafety\nRequires: Python >=3.10\nClassifiers\nDevelopment Status\n3 - Alpha\nIntended Audience\nDevelopers\nLicense\nOSI Approved :: MIT License\nProgramming Language\nPython :: 3\nTopic\nSoftware Development :: Quality Assurance\nRelease history\nRelease notifications |\nRSS feed\nThis version\n0.3.1\nJun 11, 2026\n0.3.0\nMay 12, 2026\n0.2.0\nMay 12, 2026\nDownload files\nDownload the file for your platform. If you're not sure which to choose, learn more about installing packages .\nSource Distribution\nhapax_agentgov-0.3.1.tar.gz\n(24.2 kB\nview details )\nUploaded\nJun 11, 2026\nSource\nBuilt Distribution\nFilter files by name, interpreter, ABI, and platform.\nIf you're not sure about the file name format, learn more about wheel file names .\nCopy a direct link to the current filters\nCopy\nFile name\nInterpreter\nInterpreter\npy3\nABI\nABI\nnone\nPlatform\nPlatform\nany\nhapax_agentgov-0.3.1-py3-none-any.whl\n(17.5 kB\nview details )\nUploaded\nJun 11, 2026\nPython 3\nFile details\nDetails for the file hapax_agentgov-0.3.1.tar.gz .\nFile metadata\nDownload URL: hapax_agentgov-0.3.1.tar.gz\nUpload date:\nJun 11, 2026\nSize: 24.2 kB\nTags: Source\nUploaded using Trusted Publishing? No\nUploaded via: uv/0.10.9 {\"installer\":{\"name\":\"uv\",\"version\":\"0.10.9\",\"subcommand\":[\"publish\"]},\"python\":null,\"implementation\":{\"name\":null,\"version\":null},\"distro\":{\"name\":\"CachyOS Linux\",\"version\":null,\"id\":null,\"libc\":null},\"system\":{\"name\":null,\"release\":null},\"cpu\":null,\"openssl_version\":null,\"setuptools_version\":null,\"rustc_version\":null,\"ci\":null}\nFile hashes\nHashes for hapax_agentgov-0.3.1.tar.gz\nAlgorithm\nHash digest\nSHA256\n63316a6025ef9af6a39822fc9ccc2530bbe1493c5d86c84ac7c40fc6ecfd3cec\nCopy\nMD5\n5cecd85538bc18d2d7fb00b4e73f8bed\nCopy\nBLAKE2b-256\n423244eefabd34c82e4311a4614abfc7367208b80a6843d4cd931b290ac85eb1\nCopy\nSee more details on using hashes here.\nFile details\nDetails for the file hapax_agentgov-0.3.1-py3-none-any.whl .\nFile metadata\nDownload URL: hapax_agentgov-0.3.1-py3-none-any.whl\nUpload date:\nJun 11, 2026\nSize: 17.5 kB\nTags: Python 3\nUploaded using Trusted Publishing? No\nUploaded via: uv/0.10.9 {\"installer\":{\"name\":\"uv\",\"version\":\"0.10.9\",\"subcommand\":[\"publish\"]},\"python\":null,\"implementation\":{\"name\":null,\"version\":null},\"distro\":{\"name\":\"CachyOS Linux\",\"version\":null,\"id\":null,\"libc\":null},\"system\":{\"name\":null,\"release\":null},\"cpu\":null,\"openssl_version\":null,\"setuptools_version\":null,\"rustc_version\":null,\"ci\":null}\nFile hashes\nHashes for hapax_agentgov-0.3.1-py3-none-any.whl\nAlgorithm\nHash digest\nSHA256\n3aee46ddcac4da61181246f787eda315c29ed94085493cd1880dda26028f248a\nCopy\nMD5\n47a53896515b470f15daf613ec3d3fff\nCopy\nBLAKE2b-256\n795c485e95c3a8902186ee1b8d641e6ea508a1f07178d9c7d13a10c0b80c4601\nCopy\nSee more details on using hashes here.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-13/r-051-hapax-agentgov-v0-3-1.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-13/r-051-hapax-agentgov-v0-3-1.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 94,
+  "extractor_diagnostics": {
+    "readability_score": 94,
+    "text_length": 7128,
+    "paragraph_count": 94,
+    "sentence_count": 26,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0095,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 7128,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "5d24ad336bc34afb",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "bdf453390511697b",
+  "content_hash": "5d24ad336bc34afb",
+  "full_text_hash": "5d24ad336bc34afb",
+  "semantic_hash": "2639242e0eb7fba9",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-11T00:00:00.000Z",
+  "last_seen_at": "2026-07-13T10:23:56.992Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "# hapax-agentgov v0.3.1 Governance hooks for AI coding agents — enforce safety, git hygiene, and project rules via Claude Code hooks. - Author: hapax-systems - License: MIT - Python: >=3.10 - Package URL: https://pypi.org/project/hapax-agentgov/ ## Keywords ai-agents, claude-code, governance, ho... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "1 pip install hapax-agentgov Copy PIP instructions Latest release Released: Jun 11, 2026 Governance hooks for AI coding agents — enforce safety, git hygiene, and project rules via Claude Code hooks.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Navigation Verified details These details have been verified by PyPI Maintainers oudepode Unverified details These details have not been verified by PyPI Meta License Expression: MIT SPDX License Expression Author: hapax-systems Tags ai-agents claude-code governance hooks safety Requires: Python >=3.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "10 Classifiers Development Status 3 - Alpha Intended Audience Developers License OSI Approved :: MIT License Programming Language Python :: 3 Topic Software Development :: Quality Assurance Report project as malware Project description hapax-agentgov Governance hooks for AI coding agents.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Extracted from a production system running 47 hooks across 200+ agents.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Works with Claude Code hooks.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-13T10:23:56.992Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub",
+      "Meta",
+      "AWS"
+    ],
+    "products": [
+      "agents",
+      "Claude",
+      "claude",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "0.3",
+      "1",
+      "3.10",
+      "11",
+      "2026",
+      "3",
+      "47",
+      "200"
+    ],
+    "quotes": [
+      "tool_name",
+      "tool_input",
+      "file_path",
+      "/path/to/file.py",
+      "new_string"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "1 pip install hapax-agentgov Copy PIP instructions Latest release Released: Jun 11, 2026 Governance hooks for AI coding agents — enforce safety, git hygiene, and project rules via Claude Code hooks.",
+      "Navigation Verified details These details have been verified by PyPI Maintainers oudepode Unverified details These details have not been verified by PyPI Meta License Expression: MIT SPDX License Expression Author: hapax-systems Tags ai-agents claude-code governance hooks safety Requires: Python >=3.",
+      "10 Classifiers Development Status 3 - Alpha Intended Audience Developers License OSI Approved :: MIT License Programming Language Python :: 3 Topic Software Development :: Quality Assurance Report project as malware Project description hapax-agentgov Governance hooks for AI coding agents."
+    ],
+    "case_details": [
+      "# hapax-agentgov v0.3.1 Governance hooks for AI coding agents — enforce safety, git hygiene, and project rules via Claude Code hooks. - Author: hapax-systems - License: MIT - Python: >=3.10 - Package URL: https://pypi.org/project/hapax-agentgov/ ## Keywords ai-agents, claude-code, governance, ho... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# hapax-agentgov v0.3.1\n\n- raw_id: R-051\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://pypi.org/project/hapax-agentgov/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-13T10:23:56.992Z\n\n## clean_text\n\nhapax-agentgov 0.3.1\npip install hapax-agentgov\nCopy PIP instructions\nLatest release\nReleased:\nJun 11, 2026\nGovernance hooks for AI coding agents — enforce safety, git hygiene, and project rules via Claude Code hooks.\nNavigation\nVerified details\nThese details have been verified by PyPI\nMaintainers\noudepode\nUnverified details\nThese details have not been verified by PyPI\nMeta\nLicense Expression: MIT\nSPDX\nLicense Expression\nAuthor: hapax-systems\nTags\nai-agents\nclaude-code\ngovernance\nhooks\nsafety\nRequires: Python >=3.10\nClassifiers\nDevelopment Status\n3 - Alpha\nIntended Audience\nDevelopers\nLicense\nOSI Approved :: MIT License\nProgramming Language\nPython :: 3\nTopic\nSoftware Development :: Quality Assurance\nReport project as malware\nProject description\nhapax-agentgov\nGovernance hooks for AI coding agents. Extracted from a production system running 47 hooks across 200+ agents.\nWorks with Claude Code hooks. Enforces safety, git hygiene, and project rules automatically — before the agent acts, not after.\nQuick start\npip install hapax-agentgov\ncd your-project\nagentgov init\nThis scaffolds .claude/hooks/ with safety hooks and registers them in .claude/settings.local.json .\nWhat it does\nHooks intercept Claude Code tool calls (file edits, bash commands) and block dangerous actions before they execute:\nHook\nCategory\nWhat it blocks\npii-guard\nsafety\nEmail addresses, SSNs, phone numbers, home directory paths in tracked files\nsecrets-guard\nsafety\nAWS keys, GitHub tokens, API keys, private keys\nconflict-marker-scan\nsafety\nWarns when <<<<<<< markers appear after git merge/rebase\nsafe-stash-guard\ngit\ngit stash pop (use apply + drop instead — pop can't recover from conflicts)\npush-gate\ngit\nAutonomous git push , gh pr create/merge without user approval\nno-stale-branches\ngit\nCreating new branches when unmerged work exists\nwork-resolution-gate\nworkflow\nEditing code on branches with no open PR\npkg-manager-guard\ntooling\nDirect pip install (enforces uv or poetry )\nprotected-paths\nworkflow\nWrites to *.pem , *.key , and other sensitive file patterns\nCLI\nagentgov init\nScaffold hooks into your project.\nagentgov init # \"safe\" preset (recommended 6 hooks)\nagentgov init --preset strict # all 9 hooks\nagentgov init --preset minimal # just pii-guard + conflict-marker-scan\nagentgov init --force # overwrite existing hook scripts\nagentgov check\nValidate your hook configuration.\nagentgov check\n# agentgov: 6 hooks configured and valid\n# OK pii-guard.sh (PreToolUse)\n# OK secrets-guard.sh (PreToolUse)\n# ...\nagentgov report\nShow governance coverage.\nagentgov report\n# agentgov: 6/9 hooks active (67% coverage)\n# Active:\n# [safety] pii-guard: Block writes that introduce PII patterns\n# [safety] secrets-guard: Block writes containing API keys and tokens\n# ...\nagentgov report --json # machine-readable output\nEnterprise adoption\nStart with an advisory pilot before enforcement in production. In this release,\ninstalled hooks enforce their checks; advisory means using a sandbox, fork, or\nlow-risk repository to inspect findings before promotion. The enterprise guide\ncovers a safe pilot shape, license and attribution expectations, security\nreadiness checks, and the boundary between free adoption and paid support:\nEnterprise adoption guide\nAI work evidence packet example\nAdvisory governance policy example\nHow hooks work\nClaude Code hooks are shell scripts that run before ( PreToolUse ) or after ( PostToolUse ) tool calls. They receive the tool name and input as JSON on stdin:\n\"tool_name\" : \"Edit\" ,\n\"tool_input\" : {\n\"file_path\" : \"/path/to/file.py\" ,\n\"new_string\" : \"API_KEY = 'sk-abc123...'\"\nA hook exits 0 to allow, exits 2 to block (with a message on stderr).\nWriting custom hooks\nDrop any .sh script in .claude/hooks/ and register it in .claude/settings.local.json :\n\"hooks\" : {\n\"PreToolUse\" : [\n\"matcher\" : \"Edit|Write\" ,\n\"hooks\" : [{ \"type\" : \"command\" , \"command\" : \".claude/hooks/my-hook.sh\" }]\nOrigin\nExtracted from hapax-council , a personal operating environment running 200+ AI agents with 47 governance hooks enforcing safety, privacy, git discipline, and project rules across all agent sessions.\nLicense\nMIT\nProject details\nVerified details\nThese details have been verified by PyPI\nMaintainers\noudepode\nUnverified details\nThese details have not been verified by PyPI\nMeta\nLicense Expression: MIT\nSPDX\nLicense Expression\nAuthor: hapax-systems\nTags\nai-agents\nclaude-code\ngovernance\nhooks\nsafety\nRequires: Python >=3.10\nClassifiers\nDevelopment Status\n3 - Alpha\nIntended Audience\nDevelopers\nLicense\nOSI Approved :: MIT License\nProgramming Language\nPython :: 3\nTopic\nSoftware Development :: Quality Assurance\nRelease history\nRelease notifications |\nRSS feed\nThis version\n0.3.1\nJun 11, 2026\n0.3.0\nMay 12, 2026\n0.2.0\nMay 12, 2026\nDownload files\nDownload the file for your platform. If you're not sure which to choose, learn more about installing packages .\nSource Distribution\nhapax_agentgov-0.3.1.tar.gz\n(24.2 kB\nview details )\nUploaded\nJun 11, 2026\nSource\nBuilt Distribution\nFilter files by name, interpreter, ABI, and platform.\nIf you're not sure about the file name format, learn more about wheel file names .\nCopy a direct link to the current filters\nCopy\nFile name\nInterpreter\nInterpreter\npy3\nABI\nABI\nnone\nPlatform\nPlatform\nany\nhapax_agentgov-0.3.1-py3-none-any.whl\n(17.5 kB\nview details )\nUploaded\nJun 11, 2026\nPython 3\nFile details\nDetails for the file hapax_agentgov-0.3.1.tar.gz .\nFile metadata\nDownload URL: hapax_agentgov-0.3.1.tar.gz\nUpload date:\nJun 11, 2026\nSize: 24.2 kB\nTags: Source\nUploaded using Trusted Publishing? No\nUploaded via: uv/0.10.9 {\"installer\":{\"name\":\"uv\",\"version\":\"0.10.9\",\"subcommand\":[\"publish\"]},\"python\":null,\"implementation\":{\"name\":null,\"version\":null},\"distro\":{\"name\":\"CachyOS Linux\",\"version\":null,\"id\":null,\"libc\":null},\"system\":{\"name\":null,\"release\":null},\"cpu\":null,\"openssl_version\":null,\"setuptools_version\":null,\"rustc_version\":null,\"ci\":null}\nFile hashes\nHashes for hapax_agentgov-0.3.1.tar.gz\nAlgorithm\nHash digest\nSHA256\n63316a6025ef9af6a39822fc9ccc2530bbe1493c5d86c84ac7c40fc6ecfd3cec\nCopy\nMD5\n5cecd85538bc18d2d7fb00b4e73f8bed\nCopy\nBLAKE2b-256\n423244eefabd34c82e4311a4614abfc7367208b80a6843d4cd931b290ac85eb1\nCopy\nSee more details on using hashes here.\nFile details\nDetails for the file hapax_agentgov-0.3.1-py3-none-any.whl .\nFile metadata\nDownload URL: hapax_agentgov-0.3.1-py3-none-any.whl\nUpload date:\nJun 11, 2026\nSize: 17.5 kB\nTags: Python 3\nUploaded using Trusted Publishing? No\nUploaded via: uv/0.10.9 {\"installer\":{\"name\":\"uv\",\"version\":\"0.10.9\",\"subcommand\":[\"publish\"]},\"python\":null,\"implementation\":{\"name\":null,\"version\":null},\"distro\":{\"name\":\"CachyOS Linux\",\"version\":null,\"id\":null,\"libc\":null},\"system\":{\"name\":null,\"release\":null},\"cpu\":null,\"openssl_version\":null,\"setuptools_version\":null,\"rustc_version\":null,\"ci\":null}\nFile hashes\nHashes for hapax_agentgov-0.3.1-py3-none-any.whl\nAlgorithm\nHash digest\nSHA256\n3aee46ddcac4da61181246f787eda315c29ed94085493cd1880dda26028f248a\nCopy\nMD5\n47a53896515b470f15daf613ec3d3fff\nCopy\nBLAKE2b-256\n795c485e95c3a8902186ee1b8d641e6ea508a1f07178d9c7d13a10c0b80c4601\nCopy\nSee more details on using hashes here.\n\n## full_text\n\nhapax-agentgov 0.3.1\npip install hapax-agentgov\nCopy PIP instructions\nLatest release\nReleased:\nJun 11, 2026\nGovernance hooks for AI coding agents — enforce safety, git hygiene, and project rules via Claude Code hooks.\nNavigation\nVerified details\nThese details have been verified by PyPI\nMaintainers\noudepode\nUnverified details\nThese details have not been verified by PyPI\nMeta\nLicense Expression: MIT\nSPDX\nLicense Expression\nAuthor: hapax-systems\nTags\nai-agents\nclaude-code\ngovernance\nhooks\nsafety\nRequires: Python >=3.10\nClassifiers\nDevelopment Status\n3 - Alpha\nIntended Audience\nDevelopers\nLicense\nOSI Approved :: MIT License\nProgramming Language\nPython :: 3\nTopic\nSoftware Development :: Quality Assurance\nReport project as malware\nProject description\nhapax-agentgov\nGovernance hooks for AI coding agents. Extracted from a production system running 47 hooks across 200+ agents.\nWorks with Claude Code hooks. Enforces safety, git hygiene, and project rules automatically — before the agent acts, not after.\nQuick start\npip install hapax-agentgov\ncd your-project\nagentgov init\nThis scaffolds .claude/hooks/ with safety hooks and registers them in .claude/settings.local.json .\nWhat it does\nHooks intercept Claude Code tool calls (file edits, bash commands) and block dangerous actions before they execute:\nHook\nCategory\nWhat it blocks\npii-guard\nsafety\nEmail addresses, SSNs, phone numbers, home directory paths in tracked files\nsecrets-guard\nsafety\nAWS keys, GitHub tokens, API keys, private keys\nconflict-marker-scan\nsafety\nWarns when <<<<<<< markers appear after git merge/rebase\nsafe-stash-guard\ngit\ngit stash pop (use apply + drop instead — pop can't recover from conflicts)\npush-gate\ngit\nAutonomous git push , gh pr create/merge without user approval\nno-stale-branches\ngit\nCreating new branches when unmerged work exists\nwork-resolution-gate\nworkflow\nEditing code on branches with no open PR\npkg-manager-guard\ntooling\nDirect pip install (enforces uv or poetry )\nprotected-paths\nworkflow\nWrites to *.pem , *.key , and other sensitive file patterns\nCLI\nagentgov init\nScaffold hooks into your project.\nagentgov init # \"safe\" preset (recommended 6 hooks)\nagentgov init --preset strict # all 9 hooks\nagentgov init --preset minimal # just pii-guard + conflict-marker-scan\nagentgov init --force # overwrite existing hook scripts\nagentgov check\nValidate your hook configuration.\nagentgov check\n# agentgov: 6 hooks configured and valid\n# OK pii-guard.sh (PreToolUse)\n# OK secrets-guard.sh (PreToolUse)\n# ...\nagentgov report\nShow governance coverage.\nagentgov report\n# agentgov: 6/9 hooks active (67% coverage)\n# Active:\n# [safety] pii-guard: Block writes that introduce PII patterns\n# [safety] secrets-guard: Block writes containing API keys and tokens\n# ...\nagentgov report --json # machine-readable output\nEnterprise adoption\nStart with an advisory pilot before enforcement in production. In this release,\ninstalled hooks enforce their checks; advisory means using a sandbox, fork, or\nlow-risk repository to inspect findings before promotion. The enterprise guide\ncovers a safe pilot shape, license and attribution expectations, security\nreadiness checks, and the boundary between free adoption and paid support:\nEnterprise adoption guide\nAI work evidence packet example\nAdvisory governance policy example\nHow hooks work\nClaude Code hooks are shell scripts that run before ( PreToolUse ) or after ( PostToolUse ) tool calls. They receive the tool name and input as JSON on stdin:\n\"tool_name\" : \"Edit\" ,\n\"tool_input\" : {\n\"file_path\" : \"/path/to/file.py\" ,\n\"new_string\" : \"API_KEY = 'sk-abc123...'\"\nA hook exits 0 to allow, exits 2 to block (with a message on stderr).\nWriting custom hooks\nDrop any .sh script in .claude/hooks/ and register it in .claude/settings.local.json :\n\"hooks\" : {\n\"PreToolUse\" : [\n\"matcher\" : \"Edit|Write\" ,\n\"hooks\" : [{ \"type\" : \"command\" , \"command\" : \".claude/hooks/my-hook.sh\" }]\nOrigin\nExtracted from hapax-council , a personal operating environment running 200+ AI agents with 47 governance hooks enforcing safety, privacy, git discipline, and project rules across all agent sessions.\nLicense\nMIT\nProject details\nVerified details\nThese details have been verified by PyPI\nMaintainers\noudepode\nUnverified details\nThese details have not been verified by PyPI\nMeta\nLicense Expression: MIT\nSPDX\nLicense Expression\nAuthor: hapax-systems\nTags\nai-agents\nclaude-code\ngovernance\nhooks\nsafety\nRequires: Python >=3.10\nClassifiers\nDevelopment Status\n3 - Alpha\nIntended Audience\nDevelopers\nLicense\nOSI Approved :: MIT License\nProgramming Language\nPython :: 3\nTopic\nSoftware Development :: Quality Assurance\nRelease history\nRelease notifications |\nRSS feed\nThis version\n0.3.1\nJun 11, 2026\n0.3.0\nMay 12, 2026\n0.2.0\nMay 12, 2026\nDownload files\nDownload the file for your platform. If you're not sure which to choose, learn more about installing packages .\nSource Distribution\nhapax_agentgov-0.3.1.tar.gz\n(24.2 kB\nview details )\nUploaded\nJun 11, 2026\nSource\nBuilt Distribution\nFilter files by name, interpreter, ABI, and platform.\nIf you're not sure about the file name format, learn more about wheel file names .\nCopy a direct link to the current filters\nCopy\nFile name\nInterpreter\nInterpreter\npy3\nABI\nABI\nnone\nPlatform\nPlatform\nany\nhapax_agentgov-0.3.1-py3-none-any.whl\n(17.5 kB\nview details )\nUploaded\nJun 11, 2026\nPython 3\nFile details\nDetails for the file hapax_agentgov-0.3.1.tar.gz .\nFile metadata\nDownload URL: hapax_agentgov-0.3.1.tar.gz\nUpload date:\nJun 11, 2026\nSize: 24.2 kB\nTags: Source\nUploaded using Trusted Publishing? No\nUploaded via: uv/0.10.9 {\"installer\":{\"name\":\"uv\",\"version\":\"0.10.9\",\"subcommand\":[\"publish\"]},\"python\":null,\"implementation\":{\"name\":null,\"version\":null},\"distro\":{\"name\":\"CachyOS Linux\",\"version\":null,\"id\":null,\"libc\":null},\"system\":{\"name\":null,\"release\":null},\"cpu\":null,\"openssl_version\":null,\"setuptools_version\":null,\"rustc_version\":null,\"ci\":null}\nFile hashes\nHashes for hapax_agentgov-0.3.1.tar.gz\nAlgorithm\nHash digest\nSHA256\n63316a6025ef9af6a39822fc9ccc2530bbe1493c5d86c84ac7c40fc6ecfd3cec\nCopy\nMD5\n5cecd85538bc18d2d7fb00b4e73f8bed\nCopy\nBLAKE2b-256\n423244eefabd34c82e4311a4614abfc7367208b80a6843d4cd931b290ac85eb1\nCopy\nSee more details on using hashes here.\nFile details\nDetails for the file hapax_agentgov-0.3.1-py3-none-any.whl .\nFile metadata\nDownload URL: hapax_agentgov-0.3.1-py3-none-any.whl\nUpload date:\nJun 11, 2026\nSize: 17.5 kB\nTags: Python 3\nUploaded using Trusted Publishing? No\nUploaded via: uv/0.10.9 {\"installer\":{\"name\":\"uv\",\"version\":\"0.10.9\",\"subcommand\":[\"publish\"]},\"python\":null,\"implementation\":{\"name\":null,\"version\":null},\"distro\":{\"name\":\"CachyOS Linux\",\"version\":null,\"id\":null,\"libc\":null},\"system\":{\"name\":null,\"release\":null},\"cpu\":null,\"openssl_version\":null,\"setuptools_version\":null,\"rustc_version\":null,\"ci\":null}\nFile hashes\nHashes for hapax_agentgov-0.3.1-py3-none-any.whl\nAlgorithm\nHash digest\nSHA256\n3aee46ddcac4da61181246f787eda315c29ed94085493cd1880dda26028f248a\nCopy\nMD5\n47a53896515b470f15daf613ec3d3fff\nCopy\nBLAKE2b-256\n795c485e95c3a8902186ee1b8d641e6ea508a1f07178d9c7d13a10c0b80c4601\nCopy\nSee more details on using hashes here.\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 94\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] # hapax-agentgov v0.3.1 Governance hooks for AI coding agents — enforce safety, git hygiene, and project rules via Claude Code hooks. - Author: hapax-systems - License: MIT - Python: >=3.10 - Package URL: https://pypi.org/project/hapax-agentgov/ ## Keywords ai-agents, claude-code, governance, ho... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] 1 pip install hapax-agentgov Copy PIP instructions Latest release Released: Jun 11, 2026 Governance hooks for AI coding agents — enforce safety, git hygiene, and project rules via Claude Code hooks.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Navigation Verified details These details have been verified by PyPI Maintainers oudepode Unverified details These details have not been verified by PyPI Meta License Expression: MIT SPDX License Expression Author: hapax-systems Tags ai-agents claude-code governance hooks safety Requires: Python >=3.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] 10 Classifiers Development Status 3 - Alpha Intended Audience Developers License OSI Approved :: MIT License Programming Language Python :: 3 Topic Software Development :: Quality Assurance Report project as malware Project description hapax-agentgov Governance hooks for AI coding agents.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Extracted from a production system running 47 hooks across 200+ agents.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Works with Claude Code hooks.\n"
+}

@@ -1,0 +1,335 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-076
+title: "Farming is risky business. This app helps Turkish growers succeed"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://news.microsoft.com/source/emea/features/farming-is-risky-business-this-app-helps-turkish-growers-succeed/"
+canonical_url: "https://news.microsoft.com/source/emea/features/farming-is-risky-business-this-app-helps-turkish-growers-succeed"
+source_name: "Microsoft AI and Azure AI official blogs"
+source_type: product
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-16T07:56:43.000Z"
+collected_at: 2026-07-13T10:23:57.131Z
+language: mixed
+full_text_hash: 23be07b05281532a
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-076-farming-is-risky-business-this-app-helps-turkish-growers-succeed.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-076-farming-is-risky-business-this-app-helps-turkish-growers-succeed.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":11624,"paragraph_count":62,"sentence_count":106,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 11624
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"23be07b05281532a","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 46ead61b916ae16d
+content_hash: 23be07b05281532a
+semantic_hash: f5f3726a21e8f3e2
+duplicate_of: ""
+first_seen_at: "2026-06-16T07:56:43.000Z"
+last_seen_at: 2026-07-13T10:23:57.131Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Microsoft AI and Azure AI official blogs","Microsoft"],"products":[],"people":[],"industries":["金融 / 保险","医疗","制造 / 工业","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["16","2026","2021","30","000","80 m","88","135"],"quotes":["As an engineer, I want to check, I want to control, I want to confirm,","We have 150,000 monthly active users, and a significant portion of them use our website and mobile app to purchase their agricultural needs,","Our entire infrastructure runs in Azure cloud,","The services, automation, monitoring and scalability enable us to operate securely and efficiently.","We treat the crops like our own children, from the day we plant until harvest day (…) It’s a process we genuinely enjoy."]}
+evidence_seed: {"company_actions":["This app helps Turkish growers succeed 16 June 2026 · Written by Chris Welsch ALAŞEHIR, Türkiye — When Pınar Ünsal left the corporate world to start her blueberry farm in this valley in 2021, one of the first steps was to spread a black weed-barrier fabric over most of the seven hectares.","Then she set out 30,000 plastic pots where the bushes would grow.","Her neighboring farmers were perplexed."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["The post Farming is risky business. This app helps Turkish growers succeed appeared first on Source. ]]>","AI Digital Transformation Sustainability Farming is risky business."]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"supporting_context","text":"The post Farming is risky business. This app helps Turkish growers succeed appeared first on Source. ]]>","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"AI Digital Transformation Sustainability Farming is risky business.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"This app helps Turkish growers succeed 16 June 2026 · Written by Chris Welsch ALAŞEHIR, Türkiye — When Pınar Ünsal left the corporate world to start her blueberry farm in this valley in 2021, one of the first steps was to spread a black weed-barrier fabric over most of the seven hectares.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Then she set out 30,000 plastic pots where the bushes would grow.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Her neighboring farmers were perplexed.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"“Imagine there’s only this black carpet and there’s all these pots, and they were talking about me saying, ‘This eccentric lady is trying to grow pots — plastic will not give fruit,’” she recalled with a chuckle.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-13T10:23:57.131Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Farming is risky business. This app helps Turkish growers succeed
+
+## clean_text
+
+AI
+Digital Transformation
+Sustainability
+Farming is risky business. This app helps Turkish growers succeed
+16 June 2026 · Written by Chris Welsch
+ALAŞEHIR, Türkiye — When Pınar Ünsal left the corporate world to start her blueberry farm in this valley in 2021, one of the first steps was to spread a black weed-barrier fabric over most of the seven hectares. Then she set out 30,000 plastic pots where the bushes would grow.
+Her neighboring farmers were perplexed.
+“Imagine there’s only this black carpet and there’s all these pots, and they were talking about me saying, ‘This eccentric lady is trying to grow pots — plastic will not give fruit,’” she recalled with a chuckle. Now those pots are full of blooming blueberry bushes, and she is expecting an abundant harvest in June.
+Ünsal is the first farmer to grow blueberries in the valley, and she is doing it in a very unconventional way. Some skepticism was inevitable.
+Five years later, some of her blueberry bushes have grown taller than Ünsal or her husband, Utku Atıcı, who also works on the farm.
+It’s a profitable operation. This summer, they expect to harvest 80 metric tons, or about 88 American tons, of fruit. Now her neighbors, who mostly grow grapes, ask with genuine curiosity how she’s doing it.
+Pınar Ünsal checks blueberry bushes on her farm near the town of Alaşehir in western Türkiye. Photo by Chris Welsch for Microsoft.
+Ünsal attributes some of her success to an app produced by İmeceMobil, a subsidiary of Türkiye’s İşbank . She’s been using it for three years. The app’s tools align with her data-driven approach to farming, she said.
+Built in Microsoft Azure, the İmeceMobil app is a one-stop agriculture platform.
+Here, she can use an AI-driven function that analyzes satellite imagery to determine the health of her bushes and whether they need water. She can get hyperlocal weather alerts and expert advice about pests and plant diseases.
+In a marketplace feature, she can compare prices and buy fertilizer as well as machinery and tools, and she can apply for short- or long-term loans. The app helps her make smart decisions, save money and improve her yields, she said.
+Farming app adds data to decision-making
+“As an engineer, I want to check, I want to control, I want to confirm. And this app helps me checking the health of the plants, even when I’m away from the orchard.”
+Pınar Ünsal on her blueberry farm near the town of Alaşehir in western Türkiye. Photo by Chris Welsch for Microsoft.
+When she was starting out, İşbank was one of the banks she visited to apply for loans, and someone there told her about the app and suggested she try it.
+“As an engineer, I want to check, I want to control, I want to confirm,” she said. “And this app helps me checking the health of the plants, even when I’m away from the orchard, which is a great, great support, because I spend half of my time in İzmir, with my daughter.”
+Using her background as an engineer, Ünsal researched and planned the best growing methods. She filled her pots with a growing medium imported from the Netherlands, built an irrigation system and planted northern highbush blueberries, a variety that could thrive in the valley, about 135 kilometers, or about 84 miles, east of İzmir.
+She named the farm YazBerries , after her daughter, Yaz, 13.
+“When I’m away, I check the satellite view, and I understand which parts have water scarcity, which part has greener leaves. Is there any problem health-wise? Is my irrigation system working properly?”
+The app also gives alerts for frost and storms. Ünsal said that, for example, one fungicide she uses must be applied just after rain. Because of the specificity of the weather forecasts, she can reliably know, even from İzmir, when she needs to return to apply it.
+Pınar Ünsal checks blueberry bushes on her farm near the town of Alaşehir in western Türkiye. Photo by Chris Welsch for Microsoft.
+Hakan Kadıyoran , the chief technology officer of İmeceMobil, the bank subsidiary that built and manages the app, said that the proof of the app’s utility to farmers is in its rapid growth. The project to build a digital platform for farmers began in 2019; the current version was released three years ago and is constantly being updated and improved.
+“We have 150,000 monthly active users, and a significant portion of them use our website and mobile app to purchase their agricultural needs,” Kadıyoran said.
+The app was created by three developers, one manager/architect, one test specialist and himself, Kadıyoran said. Part of the reason they were able to build such a large-scale app with such a small-scale team was the suite of tools they use in Azure, he said. That includes Azure App Service as well as security and monitoring tools such as Microsoft Defender for Cloud and Microsoft Sentinel . Defender and Sentinel are tools commonly used by large organizations to safeguard data, support secure growth and manage privacy risks.
+Azure App Service is a platform for building and housing apps. “Our entire infrastructure runs in Azure cloud,” he said. “The services, automation, monitoring and scalability enable us to operate securely and efficiently.”
+Hakan Kadıyoran is the chief technology officer of İmeceMobil, the company behind the İmeceMobil app used by thousands of Turkish farmers to manage their crops and run their businesses. Photo by Chris Welsch for Microsoft.
+Saving time on the farm with AI
+“We treat the crops like our own children, from the day we plant until harvest day (…) It’s a process we genuinely enjoy.”
+Oğuzhan Özacar on his farm in western Türkiye. He uses the ImeceMobil app to get detailed information about crop conditions and also to get weather reports and to buy things. Photo by Chris Welsch for Microsoft.
+Today, that platform is used by farmers across the country — including Oğuzhan Özacar. He farms 60 hectares, or about 148 acres, near the village of Çırpı, on the Çırpı Plain, which is about 80 kilometers, or about 50 miles, southeast of İzmir.
+The land was first farmed by his grandfather, and then his father, Aydın Özacar, who was with him this day, inspecting a newly planted field of watermelon plants.
+Özacar’s crops also include tomatoes, peppers and sweet corn, as well as broccoli, cauliflower and cabbage in the winter.
+He said the İmeceMobil app has been helpful in a number of ways, including the tool that uses satellite imagery to analyze crop conditions.
+“With the app, we’ve reduced three to four hours of work to about 45 minutes,” he said. “We can track temperature, water usage and fertilizer needs without going into the field. What pushed us to try it was reducing costs, and we have saved on irrigation and fertilizer.”
+Both Ünsal and Özacar are using AI apps in a variety of ways. They’re not alone. Investment in AI across Türkiye, the Middle East and Africa is projected to reach $14.6 billion by 2028, while globally, AI’s economic impact could exceed $19.9 trillion by 2030, according to information provided by CIO Summit 2026 Türkiye via International Data Corporation (IDC).
+Özacar said the bank makes agronomists available to the farmers who are using the app.
+“With the app, we’ve reduced three to four hours of work to about 45 minutes. We can track temperature, water usage and fertilizer needs without going into the field. What pushed us to try it was reducing costs, and we have saved on irrigation and fertilizer.”
+“They conducted a soil analysis. It gave us ideas about which crops we need and in what amounts the fertilizer should be applied.” He said the app’s “biggest benefit was showing us the plant’s nitrogen needs and whether it’s overwatered or not, and its overall need for water.”
+Water is a big concern for Özacar. That day, one of Özacar’s pumps had broken down and he had been helping one of his workers fix a valve that had failed.
+The water table at Özacar’s farm has dropped in recent years, meaning he needed to drill deeper to reach it. He uses electric pumps to bring water to the surface for irrigation, and the energy is expensive.
+In just 10 years, Özacar has had to drill nearly three times deeper to reach water on his farm. He said that he had drilled for water in the same field where he was standing in 2014 and needed to go to 150 meters to reach the water table. Three years later, not far from the first site, a new well had to be drilled to 245 meters. In 2024, he drilled a well 400 meters. “It’s just going deeper and deeper,” he said.
+Every drop counts, and the app helps him prevent overwatering, he said.
+Farming across generations — with a new set of tools
+Farming is the biggest bet you can make, you bet everything – money, time, labor — on the chance that you’ll get a good result in one season.”
+Özacar said he began working on the farm when he was eight years old during the summers. Eventually he went to university for a professional degree but decided to stay on the farm. Despite the risks, he loves the work of farming.
+“We treat the crops like our own children,” he said. “From the day we plant until harvest day. … it’s a process we genuinely enjoy.”
+He has a two-year-old son, who loves tractors and already seems inclined to continue the tradition. But farming, because of the economy and the weather, is never a sure thing, he said. Some years are hard.
+His father, listening to the conversation, agreed. “Farming is the biggest bet you can make,” he said. “You bet everything – money, time, labor — on the chance that you’ll get a good result in one season.”
+Pınar Ünsal and her husband, Utku Atıcı, with their dog on Ünsal’s blueberry farm near the town of Alaşehir in western Türkiye. Atıcı also works on the farm, which is named “YazBerries” after their daughter, Yaz. Photo by Chris Welsch for Microsoft.
+Ünsal, the blueberry farmer, left a job in the corporate world when her career was at a turning point, she said. She either needed to take a larger role in a European country or the United States or, if she wanted to stay in Türkiye, create her own job. She chose to stay, for herself and her family.
+Looking back now, she said that the one thing you can be sure of in farming is that nothing is sure.
+“Because if there’s any chance that something may go wrong, it will go wrong on the farm,” she said. “You will have bursting water pipes. You will have frost, you will have a disease, you will miss the fertilizer at the right time frame. So, without knowing anything, stepping into this farming business was crazy.”
+At the same time, she has no regrets.
+“At the end of each day here, something will really be giving me joy,” she said, as she examined a branch of one of her blueberry bushes, laced with white flowers.
+“In a mechanical engineering job, you only work in front of the computer. You get to see the product every now and then when you visit the factory,” she said. “But here, you see the results every season. So whether you make mistakes or take the right actions, you see your results. You’re working with living things.”
+Read more
+Chris Welsch is a reporter and photographer based in France covering AI, Innovation and a variety of other topics for Microsoft Source EMEA. He’s recently written about AI-guided driverless cars. Welsch was a staff editor at the International New York Times in Paris and before that a senior reporter and photographer at the Minnesota Star Tribune. Follow him on LinkedIn .
+How the Munich Fire Department’s AI operator is modernizing non-emergency dispatch
+How an AI tool is helping U.K. clinicians save time and be present with patients
+The pasta puzzle: Decoding durum wheat’s DNA for a sustainable future
+Tags:
+AI
+Cloud
+
+## full_text
+
+AI
+Digital Transformation
+Sustainability
+Farming is risky business. This app helps Turkish growers succeed
+16 June 2026 · Written by Chris Welsch
+ALAŞEHIR, Türkiye — When Pınar Ünsal left the corporate world to start her blueberry farm in this valley in 2021, one of the first steps was to spread a black weed-barrier fabric over most of the seven hectares. Then she set out 30,000 plastic pots where the bushes would grow.
+Her neighboring farmers were perplexed.
+“Imagine there’s only this black carpet and there’s all these pots, and they were talking about me saying, ‘This eccentric lady is trying to grow pots — plastic will not give fruit,’” she recalled with a chuckle. Now those pots are full of blooming blueberry bushes, and she is expecting an abundant harvest in June.
+Ünsal is the first farmer to grow blueberries in the valley, and she is doing it in a very unconventional way. Some skepticism was inevitable.
+Five years later, some of her blueberry bushes have grown taller than Ünsal or her husband, Utku Atıcı, who also works on the farm.
+It’s a profitable operation. This summer, they expect to harvest 80 metric tons, or about 88 American tons, of fruit. Now her neighbors, who mostly grow grapes, ask with genuine curiosity how she’s doing it.
+Pınar Ünsal checks blueberry bushes on her farm near the town of Alaşehir in western Türkiye. Photo by Chris Welsch for Microsoft.
+Ünsal attributes some of her success to an app produced by İmeceMobil, a subsidiary of Türkiye’s İşbank . She’s been using it for three years. The app’s tools align with her data-driven approach to farming, she said.
+Built in Microsoft Azure, the İmeceMobil app is a one-stop agriculture platform.
+Here, she can use an AI-driven function that analyzes satellite imagery to determine the health of her bushes and whether they need water. She can get hyperlocal weather alerts and expert advice about pests and plant diseases.
+In a marketplace feature, she can compare prices and buy fertilizer as well as machinery and tools, and she can apply for short- or long-term loans. The app helps her make smart decisions, save money and improve her yields, she said.
+Farming app adds data to decision-making
+“As an engineer, I want to check, I want to control, I want to confirm. And this app helps me checking the health of the plants, even when I’m away from the orchard.”
+Pınar Ünsal on her blueberry farm near the town of Alaşehir in western Türkiye. Photo by Chris Welsch for Microsoft.
+When she was starting out, İşbank was one of the banks she visited to apply for loans, and someone there told her about the app and suggested she try it.
+“As an engineer, I want to check, I want to control, I want to confirm,” she said. “And this app helps me checking the health of the plants, even when I’m away from the orchard, which is a great, great support, because I spend half of my time in İzmir, with my daughter.”
+Using her background as an engineer, Ünsal researched and planned the best growing methods. She filled her pots with a growing medium imported from the Netherlands, built an irrigation system and planted northern highbush blueberries, a variety that could thrive in the valley, about 135 kilometers, or about 84 miles, east of İzmir.
+She named the farm YazBerries , after her daughter, Yaz, 13.
+“When I’m away, I check the satellite view, and I understand which parts have water scarcity, which part has greener leaves. Is there any problem health-wise? Is my irrigation system working properly?”
+The app also gives alerts for frost and storms. Ünsal said that, for example, one fungicide she uses must be applied just after rain. Because of the specificity of the weather forecasts, she can reliably know, even from İzmir, when she needs to return to apply it.
+Pınar Ünsal checks blueberry bushes on her farm near the town of Alaşehir in western Türkiye. Photo by Chris Welsch for Microsoft.
+Hakan Kadıyoran , the chief technology officer of İmeceMobil, the bank subsidiary that built and manages the app, said that the proof of the app’s utility to farmers is in its rapid growth. The project to build a digital platform for farmers began in 2019; the current version was released three years ago and is constantly being updated and improved.
+“We have 150,000 monthly active users, and a significant portion of them use our website and mobile app to purchase their agricultural needs,” Kadıyoran said.
+The app was created by three developers, one manager/architect, one test specialist and himself, Kadıyoran said. Part of the reason they were able to build such a large-scale app with such a small-scale team was the suite of tools they use in Azure, he said. That includes Azure App Service as well as security and monitoring tools such as Microsoft Defender for Cloud and Microsoft Sentinel . Defender and Sentinel are tools commonly used by large organizations to safeguard data, support secure growth and manage privacy risks.
+Azure App Service is a platform for building and housing apps. “Our entire infrastructure runs in Azure cloud,” he said. “The services, automation, monitoring and scalability enable us to operate securely and efficiently.”
+Hakan Kadıyoran is the chief technology officer of İmeceMobil, the company behind the İmeceMobil app used by thousands of Turkish farmers to manage their crops and run their businesses. Photo by Chris Welsch for Microsoft.
+Saving time on the farm with AI
+“We treat the crops like our own children, from the day we plant until harvest day (…) It’s a process we genuinely enjoy.”
+Oğuzhan Özacar on his farm in western Türkiye. He uses the ImeceMobil app to get detailed information about crop conditions and also to get weather reports and to buy things. Photo by Chris Welsch for Microsoft.
+Today, that platform is used by farmers across the country — including Oğuzhan Özacar. He farms 60 hectares, or about 148 acres, near the village of Çırpı, on the Çırpı Plain, which is about 80 kilometers, or about 50 miles, southeast of İzmir.
+The land was first farmed by his grandfather, and then his father, Aydın Özacar, who was with him this day, inspecting a newly planted field of watermelon plants.
+Özacar’s crops also include tomatoes, peppers and sweet corn, as well as broccoli, cauliflower and cabbage in the winter.
+He said the İmeceMobil app has been helpful in a number of ways, including the tool that uses satellite imagery to analyze crop conditions.
+“With the app, we’ve reduced three to four hours of work to about 45 minutes,” he said. “We can track temperature, water usage and fertilizer needs without going into the field. What pushed us to try it was reducing costs, and we have saved on irrigation and fertilizer.”
+Both Ünsal and Özacar are using AI apps in a variety of ways. They’re not alone. Investment in AI across Türkiye, the Middle East and Africa is projected to reach $14.6 billion by 2028, while globally, AI’s economic impact could exceed $19.9 trillion by 2030, according to information provided by CIO Summit 2026 Türkiye via International Data Corporation (IDC).
+Özacar said the bank makes agronomists available to the farmers who are using the app.
+“With the app, we’ve reduced three to four hours of work to about 45 minutes. We can track temperature, water usage and fertilizer needs without going into the field. What pushed us to try it was reducing costs, and we have saved on irrigation and fertilizer.”
+“They conducted a soil analysis. It gave us ideas about which crops we need and in what amounts the fertilizer should be applied.” He said the app’s “biggest benefit was showing us the plant’s nitrogen needs and whether it’s overwatered or not, and its overall need for water.”
+Water is a big concern for Özacar. That day, one of Özacar’s pumps had broken down and he had been helping one of his workers fix a valve that had failed.
+The water table at Özacar’s farm has dropped in recent years, meaning he needed to drill deeper to reach it. He uses electric pumps to bring water to the surface for irrigation, and the energy is expensive.
+In just 10 years, Özacar has had to drill nearly three times deeper to reach water on his farm. He said that he had drilled for water in the same field where he was standing in 2014 and needed to go to 150 meters to reach the water table. Three years later, not far from the first site, a new well had to be drilled to 245 meters. In 2024, he drilled a well 400 meters. “It’s just going deeper and deeper,” he said.
+Every drop counts, and the app helps him prevent overwatering, he said.
+Farming across generations — with a new set of tools
+Farming is the biggest bet you can make, you bet everything – money, time, labor — on the chance that you’ll get a good result in one season.”
+Özacar said he began working on the farm when he was eight years old during the summers. Eventually he went to university for a professional degree but decided to stay on the farm. Despite the risks, he loves the work of farming.
+“We treat the crops like our own children,” he said. “From the day we plant until harvest day. … it’s a process we genuinely enjoy.”
+He has a two-year-old son, who loves tractors and already seems inclined to continue the tradition. But farming, because of the economy and the weather, is never a sure thing, he said. Some years are hard.
+His father, listening to the conversation, agreed. “Farming is the biggest bet you can make,” he said. “You bet everything – money, time, labor — on the chance that you’ll get a good result in one season.”
+Pınar Ünsal and her husband, Utku Atıcı, with their dog on Ünsal’s blueberry farm near the town of Alaşehir in western Türkiye. Atıcı also works on the farm, which is named “YazBerries” after their daughter, Yaz. Photo by Chris Welsch for Microsoft.
+Ünsal, the blueberry farmer, left a job in the corporate world when her career was at a turning point, she said. She either needed to take a larger role in a European country or the United States or, if she wanted to stay in Türkiye, create her own job. She chose to stay, for herself and her family.
+Looking back now, she said that the one thing you can be sure of in farming is that nothing is sure.
+“Because if there’s any chance that something may go wrong, it will go wrong on the farm,” she said. “You will have bursting water pipes. You will have frost, you will have a disease, you will miss the fertilizer at the right time frame. So, without knowing anything, stepping into this farming business was crazy.”
+At the same time, she has no regrets.
+“At the end of each day here, something will really be giving me joy,” she said, as she examined a branch of one of her blueberry bushes, laced with white flowers.
+“In a mechanical engineering job, you only work in front of the computer. You get to see the product every now and then when you visit the factory,” she said. “But here, you see the results every season. So whether you make mistakes or take the right actions, you see your results. You’re working with living things.”
+Read more
+Chris Welsch is a reporter and photographer based in France covering AI, Innovation and a variety of other topics for Microsoft Source EMEA. He’s recently written about AI-guided driverless cars. Welsch was a staff editor at the International New York Times in Paris and before that a senior reporter and photographer at the Minnesota Star Tribune. Follow him on LinkedIn .
+How the Munich Fire Department’s AI operator is modernizing non-emergency dispatch
+How an AI tool is helping U.K. clinicians save time and be present with patients
+The pasta puzzle: Decoding durum wheat’s DNA for a sustainable future
+Tags:
+AI
+Cloud
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":11624,"paragraph_count":62,"sentence_count":106,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   The post Farming is risky business. This app helps Turkish growers succeed appeared first on Source. ]]>
+
+2. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   AI Digital Transformation Sustainability Farming is risky business.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   This app helps Turkish growers succeed 16 June 2026 · Written by Chris Welsch ALAŞEHIR, Türkiye — When Pınar Ünsal left the corporate world to start her blueberry farm in this valley in 2021, one of the first steps was to spread a black weed-barrier fabric over most of the seven hectares.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Then she set out 30,000 plastic pots where the bushes would grow.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Her neighboring farmers were perplexed.
+
+6. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   “Imagine there’s only this black carpet and there’s all these pots, and they were talking about me saying, ‘This eccentric lady is trying to grow pots — plastic will not give fruit,’” she recalled with a chuckle.
+
+## business_elements
+
+- companies: Microsoft AI and Azure AI official blogs, Microsoft
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 金融 / 保险, 医疗, 制造 / 工业, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 16, 2026, 2021, 30, 000, 80 m, 88, 135
+- quotes: As an engineer, I want to check, I want to control, I want to confirm, / We have 150,000 monthly active users, and a significant portion of them use our website and mobile app to purchase their agricultural needs, / Our entire infrastructure runs in Azure cloud, / The services, automation, monitoring and scalability enable us to operate securely and efficiently. / We treat the crops like our own children, from the day we plant until harvest day (…) It’s a process we genuinely enjoy.
+
+## evidence_seed
+
+- company_actions: This app helps Turkish growers succeed 16 June 2026 · Written by Chris Welsch ALAŞEHIR, Türkiye — When Pınar Ünsal left the corporate world to start her blueberry farm in this valley in 2021, one of the first steps was to spread a black weed-barrier fabric over most of the seven hectares. / Then she set out 30,000 plastic pots where the bushes would grow. / Her neighboring farmers were perplexed.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: The post Farming is risky business. This app helps Turkish growers succeed appeared first on Source. ]]> / AI Digital Transformation Sustainability Farming is risky business.
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+The post Farming is risky business. This app helps Turkish growers succeed appeared first on Source. ]]>
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
