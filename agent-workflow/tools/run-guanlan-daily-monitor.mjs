@@ -3459,7 +3459,28 @@ function selectQueriesForPath(allQueries, pathConfig) {
     const hardwareQueries = allQueries.filter((query) => /AI hardware|AI chip|AI accelerator|inference chip|GPU cluster|AI server|AI data center|AI factory|semiconductor|HBM|edge AI|on-device AI hardware|robotics hardware|humanoid robot/iu.test(query.query || ""));
     const dedicated = hardwareQueries.filter((query) => /ai-hardware-/iu.test(query.query_theme || ""));
     const fallback = hardwareQueries.filter((query) => !/ai-hardware-/iu.test(query.query_theme || ""));
-    if (hardwareQueries.length) return [...dedicated, ...fallback].slice(0, Math.min(limit, 3));
+    if (hardwareQueries.length) {
+      const commercialQueryScore = (query) => {
+        const text = query.query || "";
+        let score = 0;
+        if (/AI server (?:product launch|customer deployment)/iu.test(text)) score += 20;
+        if (/customer|deployment|product launch|funding/iu.test(text)) score += 5;
+        if (/AI server|inference appliance|edge AI/iu.test(text)) score += 4;
+        if (/enterprise|customers?/iu.test(text)) score += 2;
+        return score;
+      };
+      const byTheme = new Map();
+      for (const query of dedicated) {
+        if (!byTheme.has(query.query_theme)) byTheme.set(query.query_theme, []);
+        byTheme.get(query.query_theme).push(query);
+      }
+      const themeRepresentatives = [...byTheme.values()]
+        .map((queries) => [...queries].sort((a, b) => commercialQueryScore(b) - commercialQueryScore(a))[0]);
+      const remaining = [...dedicated, ...fallback]
+        .filter((query) => !themeRepresentatives.includes(query))
+        .sort((a, b) => commercialQueryScore(b) - commercialQueryScore(a));
+      return [...themeRepresentatives, ...remaining].slice(0, Math.min(limit, 3));
+    }
   }
   const byTheme = new Map();
   for (const query of allQueries) {
@@ -3479,7 +3500,7 @@ function selectQueriesForPath(allQueries, pathConfig) {
 }
 
 function queryRecencyHintForPath(pathConfig) {
-  if (pathConfig.id !== "capital_startup") return "";
+  if (!new Set(["capital_startup", "ai_hardware_original"]).has(pathConfig.id)) return "";
   const [year, monthValue] = date.split("-");
   const month = [
     "January", "February", "March", "April", "May", "June",
@@ -3497,6 +3518,9 @@ async function runQuerySelectionRegressionFixtures() {
     { query: "AI startup seed funding", query_theme: "capital-market-signal" },
     { query: "vertical AI company raises Series A", query_theme: "important-funding" },
     { query: "AI infrastructure startup financing", query_theme: "capital-market-signal" },
+    { query: "AI server startup funding GPU cluster customers", query_theme: "ai-hardware-investment-signal" },
+    { query: "AI server customer deployment enterprise inference", query_theme: "ai-hardware-scenario-service-signal" },
+    { query: "AI server product launch enterprise inference", query_theme: "ai-hardware-trend-innovation-signal" },
   ];
   const selected = selectQueriesForPath(queries, pathConfigById("capital_startup"));
   if (!selected.length || selected.some((query) => !/startup|seed|funding|financing|raises?|series\s+[a-z]/iu.test(query.query))) {
@@ -3508,6 +3532,17 @@ async function runQuerySelectionRegressionFixtures() {
   const recencyHint = queryRecencyHintForPath(pathConfigById("capital_startup"));
   if (!new RegExp(`^announced [A-Z][a-z]+ ${date.slice(0, 4)}$`, "u").test(recencyHint)) {
     throw new Error(`capital startup path omitted the production-month recency hint: ${recencyHint}`);
+  }
+  const selectedHardware = selectQueriesForPath(queries, pathConfigById("ai_hardware_original"));
+  if (new Set(selectedHardware.map((query) => query.query_theme)).size !== 3) {
+    throw new Error(`AI hardware path did not preserve investment, deployment and product-launch query diversity: ${JSON.stringify(selectedHardware)}`);
+  }
+  if (!selectedHardware.some((query) => /AI server product launch/iu.test(query.query))) {
+    throw new Error(`AI hardware path omitted the commercial product-launch query: ${JSON.stringify(selectedHardware)}`);
+  }
+  const hardwareRecencyHint = queryRecencyHintForPath(pathConfigById("ai_hardware_original"));
+  if (!new RegExp(`^announced [A-Z][a-z]+ ${date.slice(0, 4)}$`, "u").test(hardwareRecencyHint)) {
+    throw new Error(`AI hardware path omitted the production-month recency hint: ${hardwareRecencyHint}`);
   }
   const poolGapRequests = refillRequestsForPoolState(
     { gaps: [], poolCount: 100, routedCount: 100, coreCount: 100 },

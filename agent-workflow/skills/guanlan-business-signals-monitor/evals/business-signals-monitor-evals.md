@@ -55,6 +55,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when LinkedIn/X/Reddit/Hacker News posts, GitHub repo root/tree/blob pages, package/model pages, marketplace listings, and generic funding/startup lists are excluded from formal Signal Cards unless recaptured through a dated source-backed event page.
     - Pass when backend candidates are event-deduped so repeated pages about the same model release or financing round do not fill the candidate area.
     - Pass when confirmed financing is deduped across dates and alternate media URLs by company + amount + round, and wording about helping/running an unclosed fundraise never becomes a completed funding Card.
+    - Pass when an optional trailing `AI` company suffix does not split a funding cluster, and any same-event pending/unclosed source blocks more assertive secondary headlines until the contradiction is resolved by primary or investor evidence.
 
 13. `single_frontstage_card_set`
     - Pass when the Business Signals page has one Card set for the active date and no visible Top10 / candidate-pool mode switch.
@@ -172,6 +173,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when AI hardware investment/funding, scenario/service, and trend/innovation news is rendered through the separate `aiHardwareSignals` lens rather than mixed into the main active-date Card list by default.
     - Pass when AI hardware source-only artifacts can appear only as `ai_hardware_lens_only` observation items unless they separately pass Raw / Pool / formal Card gates.
     - Pass when AI hardware searches reject LinkedIn/social/profile posts, broad company lists, market reports, forecasts, and generic rankings.
+    - Pass when daily AI hardware original-source queries include one current-month commercial query from each investment/funding, customer deployment, and product/innovation launch theme instead of filling every slot from the first theme.
     - Pass when hardware track classification is based on source title/fact/URL, not query theme metadata, so demand/profit/supply-chain items do not become investment/funding just because they came from an investment query.
     - Fail when a fourth formal Card type is introduced for AI hardware, or when query-derived AI hardware items bypass source-first Card eligibility.
 
