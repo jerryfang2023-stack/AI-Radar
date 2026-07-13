@@ -89,6 +89,7 @@ const sourceOnlyMode = String(args.get("source-only") || "").trim().toLowerCase(
 const metadataFixtureMode = args.get("metadata-regression-fixtures") === "true";
 const adaptiveRawFixtureMode = args.get("adaptive-raw-regression-fixtures") === "true";
 const evidenceObjectFixtureMode = args.get("evidence-object-regression-fixtures") === "true";
+const querySelectionFixtureMode = args.get("query-selection-regression-fixtures") === "true";
 const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
 const fetchTimeoutMs = Number(args.get("fetch-timeout-ms") || 20000);
 const snapshotTimeoutMs = Number(args.get("snapshot-timeout-ms") || 16000);
@@ -3346,6 +3347,12 @@ function pathConfigById(id = "") {
 
 function selectQueriesForPath(allQueries, pathConfig) {
   const limit = Math.max(searchPathQueryLimit, 1);
+  if (pathConfig.id === "capital_startup") {
+    const fundingQueries = allQueries.filter((query) => /startup|seed|pre-seed|angel|funding|financing|raises?|series\s+[a-z]|venture|capital|融资|种子轮|天使轮/iu.test(query.query || ""));
+    const dedicated = fundingQueries.filter((query) => /capital|funding/iu.test(query.query_theme || ""));
+    const fallback = fundingQueries.filter((query) => !dedicated.includes(query));
+    if (fundingQueries.length) return [...dedicated, ...fallback].slice(0, limit);
+  }
   if (pathConfig.id === "industry_landing") {
     const verticalQueries = allQueries.filter((query) => /vertical|industry|workflow|customer|adoption|finance|insurance|healthcare|legal|manufacturing|supply chain|public sector/iu.test(query.query || ""));
     if (verticalQueries.length) return verticalQueries.slice(0, limit);
@@ -3377,6 +3384,26 @@ function selectQueriesForPath(allQueries, pathConfig) {
     if (!selected.includes(query)) selected.push(query);
   }
   return selected.slice(0, limit);
+}
+
+async function runQuerySelectionRegressionFixtures() {
+  const queries = [
+    { query: "AI product launch official", query_theme: "mature-commercial-signal" },
+    { query: "AI developer SDK release", query_theme: "developer-ecosystem-signal" },
+    { query: "AI customer deployment case", query_theme: "industry-landing-signal" },
+    { query: "AI regulation market", query_theme: "market-structure-signal" },
+    { query: "AI startup seed funding", query_theme: "capital-market-signal" },
+    { query: "vertical AI company raises Series A", query_theme: "important-funding" },
+    { query: "AI infrastructure startup financing", query_theme: "capital-market-signal" },
+  ];
+  const selected = selectQueriesForPath(queries, pathConfigById("capital_startup"));
+  if (!selected.length || selected.some((query) => !/startup|seed|funding|financing|raises?|series\s+[a-z]/iu.test(query.query))) {
+    throw new Error(`capital startup path selected non-funding queries: ${JSON.stringify(selected)}`);
+  }
+  if (!selected.some((query) => query.query_theme === "important-funding")) {
+    throw new Error(`capital startup path omitted the dedicated funding theme: ${JSON.stringify(selected)}`);
+  }
+  console.log(JSON.stringify({ ok: true, fixture: "capital-startup-query-priority", selected: selected.map((query) => query.query) }, null, 2));
 }
 
 function keywordSearchResultText(result = {}) {
@@ -5581,7 +5608,9 @@ async function main() {
   );
 }
 
-(evidenceObjectFixtureMode
+(querySelectionFixtureMode
+  ? runQuerySelectionRegressionFixtures()
+  : evidenceObjectFixtureMode
   ? runEvidenceObjectRegressionFixtures()
   : adaptiveRawFixtureMode
   ? runAdaptiveRawRegressionFixtures()
