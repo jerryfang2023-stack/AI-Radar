@@ -16,6 +16,8 @@ Keep this file short. Add only durable lessons that improve the skill itself. Do
 - Chinese-looking output is not sufficient title quality: generic machine translation can corrupt protected product/company terms while passing script and CJK checks. Production auto mode should use the controlled business-news prompt or deterministic event rules, and leave unresolved formal-event titles blocking.
 - Deterministic funding-title rules must tolerate factual trailing clauses such as `After its own AI agent...` while preserving company, amount, round, and protected `AI Agent` meaning. A fresh Core event may not disappear merely because its headline continues after the round phrase.
 - Frontstage must reuse the Card asset's source-backed value/evidence text. Category boilerplate can make a technically valid Card set read as uniformly low quality and must be caught by the unified frontstage gate.
+- A financing headline can describe a fundraising process without confirming a closed round. `help raise`, `ran its own fundraise`, `still coming together`, and `on track rather than closed` must stay backend-only; alternate coverage of a confirmed round is deduped by company + amount + round across dates.
+- Rumor markers must be checked across the whole title. A title such as `Vendor Product 爆料` is not made official merely because the vendor name precedes the marker.
 
 ## 2026-07-12 High-Value Recall Boundary
 

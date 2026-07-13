@@ -32,6 +32,8 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Pass when formal Signal Cards come only from concrete funding, product/service, customer deployment, procurement, partnership, vertical rollout, or production implementation events.
    - Pass when high-value AI commercial market-structure events, including acquisitions / mergers, material partnerships, procurement / contracts, pricing or billing changes, regulatory approvals / antitrust actions, and material lawsuits / settlements, can enter Cards through the existing `case` or `product_service` Card types without adding a fourth public type.
    - Pass when funding recognition accepts confirmed English and Chinese single-company financing announcements, including `announcing our <amount> <round>`, `launches with <amount>`, `emerged from stealth with <amount>`, and `完成/获得/宣布 <amount> <round> 融资`, while rejecting rumors, future-tense funding claims, funding trackers, broad lists, and generic funding commentary.
+   - Pass when fundraise-process wording such as `help raise`, `ran its own fundraise`, `still coming together`, or `on track rather than closed` remains backend-only until the round is explicitly confirmed closed.
+   - Pass when alternate-source articles for the same company + amount + round share one cross-date event identity and cannot create duplicate Cards.
    - Pass when the Raw/Card title translation generator stores a factual company + amount / round Chinese title for a confirmed single-company financing source title before publication; fail if the same fallback is used in the frontstage selector or for rumors, broad lists, trackers, or commentary.
    - Pass when funding Card facts preserve source-backed investor, use-of-proceeds, product direction, or deployment context when available; fail if a rich source is reduced to a bare "X raised Y" sentence.
    - Pass when confirmed single-company financing in AI hardware, chip, data-center, GPU, or infrastructure contexts is judged by original-source financing evidence, not blocked by those industry terms or by captured search-query tails such as `procurement`.
@@ -93,6 +95,7 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Pass when confirmed formal events rejected only for repairable source resolution or Chinese-fact ingestion gaps are marked `priority=high` only if they have a fresh date, Core/Emerging routing, a core commercial importance type, and source-backed formal-event proof.
    - Pass when every eligibility-passing candidate either produces a Card spec or fails the editorial gate with a classified semantic reason; `auto_signal_spec_null` is never an acceptable unexplained terminal state.
    - Pass when jobs, viewpoints without a confirmed event, executive disputes, rumors/future plans, mathematical/research demonstrations, and internal benchmarks remain backend-only with explicit rejection reasons.
+   - Pass when rumor markers are detected anywhere in a product title, not only at the title prefix, while source-backed `How X used Y to achieve Z` case titles remain eligible after title localization.
    - Fail when release checks validate only the quality of generated Cards and do not test whether known high-value candidates were silently omitted.
 
 19. `frontstage_card_value_reuse`
