@@ -3474,6 +3474,7 @@ function selectQueriesForPath(allQueries, pathConfig) {
       const commercialQueryScore = (query) => {
         const text = query.query || "";
         let score = 0;
+        if (/\bsite:|official|newsroom|press release/iu.test(text)) score += 30;
         if (/AI server (?:product launch|customer deployment)/iu.test(text)) score += 20;
         if (/customer|deployment|product launch|funding/iu.test(text)) score += 5;
         if (/AI server|inference appliance|edge AI/iu.test(text)) score += 4;
@@ -3490,7 +3491,7 @@ function selectQueriesForPath(allQueries, pathConfig) {
       const remaining = [...dedicated, ...fallback]
         .filter((query) => !themeRepresentatives.includes(query))
         .sort((a, b) => commercialQueryScore(b) - commercialQueryScore(a));
-      return [...themeRepresentatives, ...remaining].slice(0, Math.min(limit, 3));
+      return [...themeRepresentatives, ...remaining].slice(0, limit);
     }
   }
   const byTheme = new Map();
@@ -3532,6 +3533,7 @@ async function runQuerySelectionRegressionFixtures() {
     { query: "AI server startup funding GPU cluster customers", query_theme: "ai-hardware-investment-signal" },
     { query: "AI server customer deployment enterprise inference", query_theme: "ai-hardware-scenario-service-signal" },
     { query: "AI server product launch enterprise inference", query_theme: "ai-hardware-trend-innovation-signal" },
+    { query: "site:supermicro.com/en/pressreleases AI server product launch edge AI", query_theme: "ai-hardware-trend-innovation-signal" },
   ];
   const selected = selectQueriesForPath(queries, pathConfigById("capital_startup"));
   if (!selected.length || selected.some((query) => !/startup|seed|funding|financing|raises?|series\s+[a-z]/iu.test(query.query))) {
@@ -3551,6 +3553,12 @@ async function runQuerySelectionRegressionFixtures() {
   if (!selectedHardware.some((query) => /AI server product launch/iu.test(query.query))) {
     throw new Error(`AI hardware path omitted the commercial product-launch query: ${JSON.stringify(selectedHardware)}`);
   }
+  if (!selectedHardware.some((query) => /site:supermicro\.com\/en\/pressreleases/iu.test(query.query))) {
+    throw new Error(`AI hardware path omitted the official-source product-launch query: ${JSON.stringify(selectedHardware)}`);
+  }
+  if (selectedHardware.length !== 4) {
+    throw new Error(`AI hardware path did not use the configured query slots after preserving theme diversity: ${JSON.stringify(selectedHardware)}`);
+  }
   const hardwareRecencyHint = queryRecencyHintForPath(pathConfigById("ai_hardware_original"));
   if (!new RegExp(`^announced [A-Z][a-z]+ ${date.slice(0, 4)}$`, "u").test(hardwareRecencyHint)) {
     throw new Error(`AI hardware path omitted the production-month recency hint: ${hardwareRecencyHint}`);
@@ -3566,6 +3574,7 @@ async function runQuerySelectionRegressionFixtures() {
     ok: true,
     fixture: "capital-startup-query-priority",
     selected: selected.map((query) => query.query),
+    hardware_selected: selectedHardware.map((query) => query.query),
     pool_gap_refill: poolGapRequests,
   }, null, 2));
 }

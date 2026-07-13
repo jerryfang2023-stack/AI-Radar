@@ -88,6 +88,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
    - Pass when a failed hard evidence-supply bucket can trigger at most one targeted refill before Card generation.
    - Pass when a required Pool importance lane below its source-backed Core minimum triggers targeted refill even if aggregate Pool, routed Pool, and Core totals already pass.
    - Fail when index-only/watchlist labels satisfy lane coverage and prevent high-quality funding, case, product, or vertical source refill.
+   - Fail when the AI hardware path preserves three themes but silently caps itself at three queries, leaving configured official-newsroom slots unused and allowing a first-party product launch to disappear across same-day reruns.
     - Fail when an Exa, Tavily, Anysearch, RSS or peer-channel failure triggers repeated whole-monitor collection while minimum evidence supply is already healthy.
 
 20. `case_title_source_precedence`
