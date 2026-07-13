@@ -121,6 +121,7 @@ function sourceTitleTranslationDiagnostics(cardFiles = []) {
   const dbFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
   const db = readJson(dbFile, {});
   const translations = new Set((Array.isArray(db.translations) ? db.translations : [])
+    .filter((item) => item?.generatedBy !== "mymemory_title_translation")
     .map((item) => normalizeSourceTitle(item.sourceTitle))
     .filter(Boolean));
   const missing = [];

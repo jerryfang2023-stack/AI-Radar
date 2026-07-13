@@ -115,9 +115,13 @@ Funding recognition must cover English and Chinese financing expressions, includ
 
 Public titles should be resolved during raw-to-card ingestion. English articles should enter the Card asset with a Chinese event title or an exact approved source-title translation entry. The unified pre-publication Business gate may block missing translation fields and route them to Raw/Card repair, but the frontstage builder must not silently hide a formal Card or replace its title because a separate frontstage lookup is missing. The Raw/Card title translation generator may produce a factual funding-title translation only when the original source title itself confirms a single-company financing event with amount / round wording such as `raises <amount>`, `announcing our <amount> <round>`, `launches with <amount>`, or `emerged from stealth with <amount>`. Do not use this exception for rumors, future-tense financing claims, funding trackers, broad lists, or commentary.
 
+Production auto-translation must use the controlled business-news translation prompt when its model credential is available, then deterministic event-title rules. Generic public machine-translation output is not an accepted fallback because it can mistranslate protected product/company terms while still looking Chinese; unresolved formal-event titles must block for ingestion repair instead.
+
 Funding Card facts should preserve amount / round plus investor, use of proceeds, product direction, or deployment context when present in the original source. Generic funding/list blockers should inspect source identity fields, not source-backed fact text or captured query tails.
 
 Fact extraction also belongs to raw-to-card ingestion. Missing customer / ROI / before-after workflow details are evidence-boundary notes, not frontstage blockers for a formal Signal Card.
+
+Frontstage summaries should reuse each Card asset's source-backed `价值描述` before category-level fallback text. Repeated category boilerplate is a frontstage build defect, not a Card-content shortage.
 
 Do not lower Card quality to satisfy a count. If many Raw / Pool candidates fail the formal Card gate, repair Pool routing or collect better Raw evidence.
 

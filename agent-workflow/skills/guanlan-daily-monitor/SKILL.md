@@ -69,6 +69,7 @@ Provider and channel failures remain diagnostics. They become actionable supply 
 - Resolve discovery results to original sources before factual use.
 - Preserve original URL, readable text or fallback boundary, extraction diagnostics, hashes, excerpts and missing information.
 - Keep homepage, directory, login, docs-index, catalog, marketplace, search-result, SEO and navigation pages `index_only` unless the page contains a dated concrete event.
+- Normalize standard RSS publication dates, filter stale feed archives, and bound each RSS source's daily contribution. Undated podcast/newsletter archive entries are not active daily Raw supply, and lead-only podcast/newsletter pages cannot enter Core Pool without resolving the original event source.
 - Historical duplicates do not count as active supply.
 - Start from the configured balanced Raw batch. If post-fetch content-hash dedupe leaves fewer than the Raw coverage target, consume additional balanced batches from the already collected source-artifact candidate pool until the target, candidate-pool exhaustion, or the adaptive fetch limit is reached.
 - Same-attempt adaptive candidate expansion is part of capture and is not provider recollection or weak-evidence Raw padding. It must not call source providers again.
@@ -96,5 +97,6 @@ agent-workflow/reports/<date>-guanlan-daily-monitor-*.md
 ```powershell
 node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
 node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
+node agent-workflow/tools/run-guanlan-daily-monitor.mjs --date=2026-07-13 --rss-ingestion-regression-fixtures=true
 node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
 ```

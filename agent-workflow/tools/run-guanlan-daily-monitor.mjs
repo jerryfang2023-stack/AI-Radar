@@ -58,6 +58,8 @@ if (args.has("help") || args.has("h")) {
       "  --hn-limit=8",
       "  --gdelt-query-limit=8",
       "  --rss-source-limit=0",
+      "  --rss-item-limit-per-source=8",
+      "  --rss-max-age-days=30",
       "  --disable-tavily=true",
       "  --source-only=aihot|keyword|gdelt|rss",
       "  --use-source-artifacts=true",
@@ -90,6 +92,7 @@ const metadataFixtureMode = args.get("metadata-regression-fixtures") === "true";
 const adaptiveRawFixtureMode = args.get("adaptive-raw-regression-fixtures") === "true";
 const evidenceObjectFixtureMode = args.get("evidence-object-regression-fixtures") === "true";
 const querySelectionFixtureMode = args.get("query-selection-regression-fixtures") === "true";
+const rssIngestionFixtureMode = args.get("rss-ingestion-regression-fixtures") === "true";
 const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
 const fetchTimeoutMs = Number(args.get("fetch-timeout-ms") || 20000);
 const snapshotTimeoutMs = Number(args.get("snapshot-timeout-ms") || 16000);
@@ -158,6 +161,8 @@ const themeOrder = themeGroups.map((group) => group.id);
 const themeById = new Map(themeGroups.map((group) => [group.id, group]));
 const gdeltQueryLimit = Number(args.get("gdelt-query-limit") || Math.max(4, themeGroups.length || 7));
 const rssSourceLimit = Number(args.get("rss-source-limit") || 0);
+const rssItemLimitPerSource = Number(args.get("rss-item-limit-per-source") || 8);
+const rssMaxAgeDays = Number(args.get("rss-max-age-days") || 30);
 const rawEntryPolicy = keywordMonitoring.raw_entry_policy || {};
 const anysearchApiKey = process.env.ANYSEARCH_API_KEY || "";
 const tavilyDisabledByConfig = args.get("disable-tavily") === "true" || process.env.TAVILY_DISABLED === "true";
@@ -748,7 +753,8 @@ function normalizePublishedAt(...values) {
     }
     const looksLikeDate = /^\d{4}-\d{1,2}-\d{1,2}/u.test(raw)
       || /^[A-Z][a-z]{2,9}\s+\d{1,2},\s+\d{4}/u.test(raw)
-      || /^\d{1,2}\s+[A-Z][a-z]{2,9}\s+\d{4}/u.test(raw);
+      || /^\d{1,2}\s+[A-Z][a-z]{2,9}\s+\d{4}/u.test(raw)
+      || /^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s+\d{1,2}\s+[A-Z][a-z]{2,9}\s+\d{4}/u.test(raw);
     if (looksLikeDate) {
       const parsed = new Date(raw);
       if (Number.isFinite(parsed.getTime())) return parsed.toISOString();
@@ -2128,6 +2134,11 @@ function usableFor(item, quality, scores, excerpts) {
   };
 }
 
+function isLeadOnlyDiscoveryItem(item = {}) {
+  return item.evidence_role === "lead-only"
+    || /podcast|newsletter/iu.test(`${item.registry_source_type || ""} ${item.source_type || ""}`);
+}
+
 function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecision = "") {
   const routes = new Set();
   const sourceRole = sourceRoleFor(item, item.snapshot || {});
@@ -2155,6 +2166,7 @@ function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecisi
     gate.evidenceObjectUsable
     && !gate.indexOnlyEvidence
     && !isIndexOnlyEvidenceObject(gate.evidenceObjectType);
+  const leadOnlyDiscovery = isLeadOnlyDiscoveryItem(item);
   const coreEvidence =
     computedRawQcDecision === "allow"
     && hasOriginalUrl
@@ -2163,6 +2175,7 @@ function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecisi
     && ["high", "medium"].includes(quality)
     && hasRequiredEvidenceHashes
     && nonIndexEvidenceObject
+    && !leadOnlyDiscovery
     && !isGenericReportOrListItem(item)
     && !isLowValueConsumerOrPlatformPolicyItem(item, item.snapshot?.text || item.summary || "", excerpts)
     && !isRepositoryOrCatalogCoreBlockedItem(item)
@@ -4063,6 +4076,43 @@ async function collectGDELT() {
  * Fetch RSS/Atom feeds from source-registry-v2.json sources marked as interface_type=rss.
  * Parses both RSS 2.0 and Atom 1.0 formats.
  */
+function rssPublishedAt(value = "", url = "") {
+  return normalizePublishedAt(value, dayFromUrl(url));
+}
+
+function rssItemAgeDays(publishedAt = "") {
+  const normalized = normalizePublishedAt(publishedAt);
+  if (!normalized) return Number.POSITIVE_INFINITY;
+  const runTime = new Date(`${date}T12:00:00Z`).getTime();
+  const sourceTime = new Date(normalized).getTime();
+  if (!Number.isFinite(runTime) || !Number.isFinite(sourceTime)) return Number.POSITIVE_INFINITY;
+  return Math.max(0, (runTime - sourceTime) / (24 * 60 * 60 * 1000));
+}
+
+function selectRssSourceItems(entries = [], source = {}) {
+  const sourceType = String(source.source_type || "").toLowerCase();
+  const leadOnly = source.evidence_role === "lead-only" || /podcast|newsletter/u.test(sourceType);
+  const perSourceLimit = /podcast/u.test(sourceType)
+    ? Math.min(Math.max(rssItemLimitPerSource, 1), 3)
+    : Math.max(rssItemLimitPerSource, 1);
+  const normalized = entries.map((item) => ({
+    ...item,
+    published_at: rssPublishedAt(item.published_at, item.url),
+  }));
+  const eligible = normalized.filter((item) => {
+    if (!item.published_at) return !leadOnly;
+    return rssItemAgeDays(item.published_at) <= rssMaxAgeDays;
+  });
+  eligible.sort((a, b) => String(b.published_at || "").localeCompare(String(a.published_at || "")));
+  const selected = eligible.slice(0, perSourceLimit);
+  return {
+    items: selected,
+    staleFiltered: normalized.filter((item) => item.published_at && rssItemAgeDays(item.published_at) > rssMaxAgeDays).length,
+    undatedLeadOnlyFiltered: normalized.filter((item) => !item.published_at && leadOnly).length,
+    capped: Math.max(0, eligible.length - selected.length),
+  };
+}
+
 async function collectRSSFeeds() {
   const allSources = registrySources.filter(
     (s) => s.interface_type === "rss" && s.enabled_default !== false
@@ -4073,6 +4123,7 @@ async function collectRSSFeeds() {
   const items = [];
   const failures = [];
   const seenUrls = new Set();
+  const diagnostics = [];
 
   for (const source of sources) {
     const url = source.endpoint_or_url || "";
@@ -4121,6 +4172,7 @@ async function collectRSSFeeds() {
 
       // Detect format: RSS 2.0 or Atom 1.0. Atom feeds start with <feed tag.
       const isAtom = /<feed[\s>]/i.test(xml);
+      const sourceStart = items.length;
 
       if (isAtom) {
         // Atom 1.0 parsing
@@ -4148,9 +4200,11 @@ async function collectRSSFeeds() {
               url: link,
               source: source.name,
               source_id: source.source_id,
-              published_at: normalizePublishedAt(published),
+              published_at: rssPublishedAt(published, link),
               category: "rss",
               rss_source_name: source.name,
+              evidence_role: source.evidence_role || "",
+              registry_source_type: source.source_type || "",
               query_theme: "",
               keyword_group: "",
             });
@@ -4184,9 +4238,11 @@ async function collectRSSFeeds() {
               url: link,
               source: source.name,
               source_id: source.source_id,
-              published_at: normalizePublishedAt(pubDate),
+              published_at: rssPublishedAt(pubDate, link),
               category: "rss",
               rss_source_name: source.name,
+              evidence_role: source.evidence_role || "",
+              registry_source_type: source.source_type || "",
               query_theme: "",
               keyword_group: "",
             });
@@ -4195,12 +4251,20 @@ async function collectRSSFeeds() {
           }
         }
       }
+      const sourceEntries = items.splice(sourceStart);
+      const selected = selectRssSourceItems(sourceEntries, source);
+      items.push(...selected.items);
+      if (selected.staleFiltered || selected.undatedLeadOnlyFiltered || selected.capped) {
+        diagnostics.push(
+          `${source.source_id}: kept=${selected.items.length}; stale_filtered=${selected.staleFiltered}; undated_lead_only_filtered=${selected.undatedLeadOnlyFiltered}; capped=${selected.capped}`
+        );
+      }
     } catch (error) {
       failures.push(`RSS ${source.source_id}: ${error.message}`);
     }
   }
 
-  return { items, failures, rss_source_count: sources.length };
+  return { items, failures, diagnostics, rss_source_count: sources.length };
 }
 
 /** Extract the text content of an XML element by tag name. */
@@ -4253,6 +4317,7 @@ function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems
     source_item_count: rawSourceItems.length,
     raw_candidate_count: normalizedItems.length,
     failures,
+    diagnostics: Array.isArray(sourceResult.diagnostics) ? sourceResult.diagnostics : [],
     channel_distribution: countBy(normalizedItems, "acquisition_channel"),
     theme_distribution: countBy(normalizedItems, "theme"),
     keyword_group_distribution: countBy(normalizedItems, "keyword_group"),
@@ -4282,6 +4347,10 @@ function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems
     "## Failures",
     "",
     failures.map((failure) => `- ${failure}`).join("\n") || "- none",
+    "",
+    "## Diagnostics",
+    "",
+    payload.diagnostics.map((diagnostic) => `- ${diagnostic}`).join("\n") || "- none",
     "",
     "## Top Candidates",
     "",
@@ -4341,6 +4410,7 @@ function loadSourceArtifactItems() {
       source_item_count: Number(payload.source_item_count) || sourceItems.length,
       artifact_path: rel(file),
       status: payload.status || "unknown",
+      diagnostics: Array.isArray(payload.diagnostics) ? payload.diagnostics : [],
     });
     for (const item of sourceItems) {
       items.push({
@@ -4743,6 +4813,38 @@ async function runAdaptiveRawRegressionFixtures() {
     throw new Error(`adaptive Raw changed the configured initial batch: ${JSON.stringify({ originalInitialBatch, adaptiveInitialBatch })}`);
   }
   console.log(JSON.stringify({ ok: true, fixture: "adaptive-post-fetch-raw-expansion" }, null, 2));
+}
+
+async function runRssIngestionRegressionFixtures() {
+  const rfcDate = normalizePublishedAt("Thu, 09 Jul 2026 10:00:00 -0000");
+  const urlDate = rssPublishedAt("", "https://tldr.tech/ai/2026-07-10");
+  const podcastEntries = [
+    ...Array.from({ length: 6 }, (_, index) => ({
+      title: `Recent podcast ${index + 1}`,
+      url: `https://example.com/podcast/${index + 1}`,
+      published_at: `2026-07-${String(12 - index).padStart(2, "0")}T10:00:00Z`,
+    })),
+    { title: "Undated archive episode", url: "https://example.com/podcast/undated", published_at: "" },
+    { title: "Stale archive episode", url: "https://example.com/podcast/stale", published_at: "2026-05-01T10:00:00Z" },
+  ];
+  const selected = selectRssSourceItems(podcastEntries, {
+    source_id: "fixture-podcast",
+    source_type: "podcast",
+    evidence_role: "lead-only",
+  });
+  if (rfcDate !== "2026-07-09T10:00:00.000Z") {
+    throw new Error(`RSS RFC 2822 publication date was not normalized: ${rfcDate}`);
+  }
+  if (!urlDate.startsWith("2026-07-10T")) {
+    throw new Error(`RSS dated URL fallback was not normalized: ${urlDate}`);
+  }
+  if (selected.items.length !== 3 || selected.staleFiltered !== 1 || selected.undatedLeadOnlyFiltered !== 1 || selected.capped !== 3) {
+    throw new Error(`RSS archive/cap policy failed: ${JSON.stringify(selected)}`);
+  }
+  if (!isLeadOnlyDiscoveryItem({ evidence_role: "lead-only", registry_source_type: "newsletter" })) {
+    throw new Error("lead-only RSS/newsletter source could still qualify as Core evidence");
+  }
+  console.log(JSON.stringify({ ok: true, fixture: "rss-date-freshness-and-source-cap" }, null, 2));
 }
 
 async function runEvidenceObjectRegressionFixtures() {
@@ -5638,6 +5740,8 @@ async function main() {
 
 (querySelectionFixtureMode
   ? runQuerySelectionRegressionFixtures()
+  : rssIngestionFixtureMode
+  ? runRssIngestionRegressionFixtures()
   : evidenceObjectFixtureMode
   ? runEvidenceObjectRegressionFixtures()
   : adaptiveRawFixtureMode

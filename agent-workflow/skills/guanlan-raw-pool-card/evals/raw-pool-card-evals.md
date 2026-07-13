@@ -59,6 +59,8 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Pass when frontstage titles are complete and Chinese-facing unless the original product/company name must remain English.
    - Pass when title-translation keys normalize repeated publisher/customer suffixes consistently across Card generation, frontstage build, and the source-first gate.
    - Pass when an English product proper name followed by an explicit Chinese event action such as `发布` remains a valid localized title without a redundant translation lookup.
+   - Pass when production auto-translation uses a controlled business-news prompt or deterministic event rules, preserves protected names such as LLM, Anthropic, Cursor, Perplexity, and Fable, and blocks unresolved titles instead of persisting generic public machine-translation errors.
+   - Fail when a legacy generic machine translation such as `LLM -> 法学硕士` can satisfy the exact-title translation gate.
 
 12. `internal_language_block`
    - Pass when frontstage and Hermes JSON do not expose internal production phrases such as `index_only`, `not_fact_signal`, `auto_signal_spec_null`, `fallback`, `backend field`, or stale V2 module names.
@@ -89,6 +91,10 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Pass when every eligibility-passing candidate either produces a Card spec or fails the editorial gate with a classified semantic reason; `auto_signal_spec_null` is never an acceptable unexplained terminal state.
    - Pass when jobs, viewpoints without a confirmed event, executive disputes, rumors/future plans, mathematical/research demonstrations, and internal benchmarks remain backend-only with explicit rejection reasons.
    - Fail when release checks validate only the quality of generated Cards and do not test whether known high-value candidates were silently omitted.
+
+19. `frontstage_card_value_reuse`
+   - Pass when the frontstage summary reuses the Card asset's source-backed `价值描述` before any category-level fallback.
+   - Fail when multiple active-date Cards expose the same `这条产品/融资/案例信号可用于...` boilerplate while their Card assets already contain distinct source-backed value or evidence text.
 
 ## Repair Loop
 

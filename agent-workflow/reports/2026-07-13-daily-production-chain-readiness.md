@@ -1,7 +1,7 @@
 # 2026-07-13 Daily Production Chain Readiness
 
-- generated_at: 2026-07-13T04:13:52.893Z
-- stage: pre-commit
+- generated_at: 2026-07-13T05:43:09.546Z
+- stage: post-monitor
 - status: passed
 - final_active_raw_count: 154
 - raw_count_release_override: false
@@ -22,8 +22,8 @@
 - monitor_quality_gate_override_reason: none
 - review_only: false
 - downstream_assets_stale: false
-- block_stale: true
-- block_stale_groups: signal_cards, trend_candidates, site_data
+- block_stale: false
+- block_stale_groups: none
 
 ## Stale Groups
 

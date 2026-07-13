@@ -51,7 +51,19 @@ export function titleTranslationLooksUsable(sourceTitle = "", translation = "") 
   const cjkCount = (value.match(/[\u3400-\u9fff]/gu) || []).length;
   if (cjkCount < 2) return false;
   const latinOnly = /^[A-Za-z0-9\s.,:;'"!?$%&|/()[\]\-+]+$/u.test(value);
-  return !latinOnly;
+  if (latinOnly) return false;
+  const protectedTerms = [
+    ["LLM", /\bLLM\b|大语言模型/iu],
+    ["Anthropic", /\bAnthropic\b/iu],
+    ["Cursor", /\bCursor\b/iu],
+    ["Perplexity", /\bPerplexity\b/iu],
+    ["Fable", /\bFable\b/iu],
+  ];
+  for (const [term, translatedPattern] of protectedTerms) {
+    if (new RegExp(`\\b${term}\\b`, "iu").test(source) && !translatedPattern.test(value)) return false;
+  }
+  if (/\bAI agents?\b/iu.test(source) && !/AI\s*(?:智能体|代理)|智能体/iu.test(value)) return false;
+  return true;
 }
 
 function generatedTitleTranslationLooksUsable(sourceTitle = "", translation = "") {
@@ -73,6 +85,7 @@ export function loadSourceTitleTranslations(file) {
   for (const entry of entries) {
     const sourceTitle = String(entry?.sourceTitle || "").trim();
     const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
+    if (entry?.generatedBy === "mymemory_title_translation") continue;
     if (!sourceTitle || !titleTranslationLooksUsable(sourceTitle, zhTitle)) continue;
     map.set(titleTranslationKey(sourceTitle), stripGeneratorNoise(zhTitle));
   }
@@ -269,6 +282,12 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
   if (/^hot french startup zml releases free product to speed inference across lots of ai chips$/iu.test(title)) {
     return "法国初创公司 ZML 发布免费产品，用于提升多种 AI 芯片上的推理速度";
   }
+  if (/^introducing taskade tsk-1:\s*the taskade system kernel(?:\s*\(2026\))?$/iu.test(title)) {
+    return "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层";
+  }
+  if (/^announcing stigg 2\.0\s*[-–—:]\s*the usage runtime for ai products$/iu.test(title)) {
+    return "Stigg 发布 2.0：面向 AI 产品的用量运行时";
+  }
   const fundingPatterns = [
     /^(.+?)\s+(?:raises?|raised|secures?|secured|closes?|closed|lands?|landed|nabs?|nabbed)\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed|strategic investment)\s*)?(?:round|funding)?(?:\s+(?:to|for)\s+(.+))?$/iu,
     /^(.+?)\s+launches\s+with\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed)\s*)?(?:funding)?(?:\s+(?:to|for)\s+(.+))?$/iu,
@@ -319,7 +338,12 @@ export async function generateSourceTitleTranslation(sourceTitle = "", {
     return { titleZh: "", status: "needs_ingestion_translation", method: "title_translation_disabled" };
   }
 
-  const providers = provider === "auto" ? ["openai", "business-rule", "mymemory"] : [provider];
+  // Generic public machine translation has repeatedly mistranslated protected
+  // product names (for example LLM, Cursor and Anthropic). In production auto
+  // mode, use the controlled model prompt when configured, then deterministic
+  // business-event rules. An unresolved title must remain blocking instead of
+  // being persisted as a plausible-looking but wrong Chinese title.
+  const providers = provider === "auto" ? ["openai", "business-rule"] : [provider];
   for (const item of providers) {
     try {
       const translated = item === "openai"
