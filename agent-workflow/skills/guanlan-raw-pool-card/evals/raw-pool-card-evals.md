@@ -87,7 +87,7 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 18. `high_value_card_recall`
    - Pass when the production Core/high-value recall fixture promotes confirmed Chinese product launches, pricing changes, disclosed product events, and regional rollouts even if an earlier Pool route says `index_only` or the importance label is non-core.
    - Pass when a confirmed English-source event is not rejected solely because Raw lacks a redundant `fact_translation_zh` field, provided Card ingestion can normalize usable Chinese facts from the captured original-source excerpts.
-   - Pass when confirmed formal events rejected only for repairable source resolution, date/material, or Chinese-fact ingestion gaps are marked `priority=high` and stop the editorial release gate until repaired or reclassified.
+   - Pass when confirmed formal events rejected only for repairable source resolution or Chinese-fact ingestion gaps are marked `priority=high` only if they have a fresh date, Core/Emerging routing, a core commercial importance type, and source-backed formal-event proof.
    - Pass when every eligibility-passing candidate either produces a Card spec or fails the editorial gate with a classified semantic reason; `auto_signal_spec_null` is never an acceptable unexplained terminal state.
    - Pass when jobs, viewpoints without a confirmed event, executive disputes, rumors/future plans, mathematical/research demonstrations, and internal benchmarks remain backend-only with explicit rejection reasons.
    - Fail when release checks validate only the quality of generated Cards and do not test whether known high-value candidates were silently omitted.
@@ -95,6 +95,10 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 19. `frontstage_card_value_reuse`
    - Pass when the frontstage summary reuses the Card asset's source-backed `价值描述` before any category-level fallback.
    - Fail when multiple active-date Cards expose the same `这条产品/融资/案例信号可用于...` boilerplate while their Card assets already contain distinct source-backed value or evidence text.
+
+20. `high_priority_recall_repair_boundary`
+   - Pass when an undated YC launch, an unrelated policy RSS article, or an index-only social summary stays below high-priority recall even if a Chinese field is missing.
+   - Pass when a voluntary privacy pledge without a separate commercial event remains backend context.
 
 ## Repair Loop
 

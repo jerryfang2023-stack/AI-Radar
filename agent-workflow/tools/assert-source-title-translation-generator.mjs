@@ -40,6 +40,14 @@ const stigg = await generateSourceTitleTranslation(
   "Announcing Stigg 2.0 - The Usage Runtime for AI Products",
   { provider: "business-rule", allowNetwork: true }
 );
+const primeIntellect = await generateSourceTitleTranslation(
+  "Prime Intellect raises $130M at $1B valuation for its AI training platform - SiliconANGLE",
+  { provider: "business-rule", allowNetwork: true }
+);
+const neuralTrust = await generateSourceTitleTranslation(
+  "NeuralTrust raises $20M to secure the growing swarm of AI agents in the enterprise | NeuralTrust",
+  { provider: "business-rule", allowNetwork: true }
+);
 
 const legacyMachineTranslationFile = path.join(tempDir, "legacy-machine-translations.json");
 fs.writeFileSync(legacyMachineTranslationFile, JSON.stringify({
@@ -59,6 +67,8 @@ const ok =
   cached === expectedZh &&
   taskade.titleZh === "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层" &&
   stigg.titleZh === "Stigg 发布 2.0：面向 AI 产品的用量运行时" &&
+  primeIntellect.titleZh === "Prime Intellect 完成 1.3 亿美元融资，估值 10 亿美元，用于AI 训练平台" &&
+  neuralTrust.titleZh === "NeuralTrust 完成 2000 万美元融资，用于保护企业不断增长的 AI 智能体集群" &&
   legacyMachineTranslations.size === 0;
 
 fs.rmSync(tempDir, { recursive: true, force: true });
@@ -70,6 +80,8 @@ if (!ok) {
     cached,
     taskade,
     stigg,
+    primeIntellect,
+    neuralTrust,
     legacyMachineTranslationCount: legacyMachineTranslations.size,
     reason: "English source title was not generated and persisted when the exact translation DB entry was missing.",
   }, null, 2));

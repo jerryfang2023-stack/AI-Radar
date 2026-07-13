@@ -1386,7 +1386,7 @@ function isGenericReportOrListSection(section) {
     value(section, "source"),
     value(section, "source_url"),
   ].join(" ");
-  if (/yc\.com\/companies\/industry|startuply\.vc\/startup\/|\/research\/enterprise-ai-agent|data-room\/ycombinator|\.pdf(?:$|[?#])|docs\.github\.com|dev\.to|aws marketplace:|docs\.aws\.com\/marketplace|pypi|\/packages?\//iu.test(urlSource)) {
+  if (/yc\.com\/companies\/industry|startuply\.vc\/startup\/|trysignalbase\.com\/news\/funding|\/research\/enterprise-ai-agent|data-room\/ycombinator|\.pdf(?:$|[?#])|docs\.github\.com|dev\.to|aws marketplace:|docs\.aws\.com\/marketplace|pypi|\/packages?\//iu.test(urlSource)) {
     return true;
   }
   if (isRepositoryOrCatalogSection(section)) return true;
@@ -2326,7 +2326,7 @@ function isNonCommercialPolicyOrEthicsSignal(section) {
   const hasCommercialAction = hasConcreteProductEvent(section)
     || hasConcreteCaseEvent(section)
     || hasStrictMarketStructureEvent(section);
-  const purePolicyConflict = /\b(ban|banned|prohibit|controversy)\b|绂佷护|绂佹|浜夎/iu;
+  const purePolicyConflict = /\b(ban|banned|prohibit|controversy|privacy pledge|self-regulation)\b|绂佷护|绂佹|浜夎|公约|自律|个人信息保护/iu;
   const text = [
     poolTitle(section),
     value(section, "source"),
@@ -2335,7 +2335,7 @@ function isNonCommercialPolicyOrEthicsSignal(section) {
     value(section, "evidence_seed"),
   ].join(" ");
   if (hasCommercialAction && !purePolicyConflict.test(text)) return false;
-  if (/\b(government|ban|banned|prohibit|national security|policy|regulat(?:ion|or)|controversy)\b|政府|禁令|禁止|国家安全|政策|监管|争议/iu.test(text)) {
+  if (/\b(government|ban|banned|prohibit|national security|policy|regulat(?:ion|or)|controversy|privacy pledge|self-regulation)\b|政府|禁令|禁止|国家安全|政策|监管|争议|公约|自律|个人信息保护/iu.test(text)) {
     return true;
   }
   return /(教皇|通谕|梵蒂冈|人类尊严|深刻的人性|公共伦理|Pope|Vatican|encyclical|humanitas|human dignity)/iu.test(text);
@@ -2478,7 +2478,18 @@ function autoSignalEligibilityIssues(section) {
 function promotePriorityForIssues(section, issues = []) {
   const repairableRecallIssues = issues.length > 0 && issues.every((issue) => /^(?:evidence_quality:(?:missing_source_material|missing_source_date|missing_chinese_fact_translation)|source_auditability:(?:missing_source_url|discovery_source_not_resolved)|valid_page_type:(?:index_only_evidence|degradation_reason_index_only|text_indicates_index_only|pool_route_index_only_not_formal_card))$/iu.test(issue));
   const sourceTitleConfirmsEvent = sourceEventTitleCanBackAutoCard(originalSourceTitleFromSection(section));
-  if (hasFormalCardEvent(section) && sourceTitleConfirmsEvent && repairableRecallIssues) return "high";
+  const importanceType = value(section, "importance_type");
+  const poolRoutes = value(section, "pool_routes");
+  const freshDatedSource = Boolean(rawPublicationDate(section)) && !isStalePublication(section, cardFreshnessDays(section));
+  const routedForFormalReview = /\b(?:core_pool|emerging_pool)\b/iu.test(poolRoutes);
+  if (
+    coreImportanceTypes.has(importanceType)
+    && routedForFormalReview
+    && freshDatedSource
+    && hasFormalCardEvent(section)
+    && sourceTitleConfirmsEvent
+    && repairableRecallIssues
+  ) return "high";
   if (issues.some((issue) => /valid_page_type|fact_type_constraints|stale_source_date|generic_report_or_list|index_only|user_feedback_not_fact_signal|text_indicates_index_only/iu.test(issue))) {
     return "low";
   }
@@ -3331,6 +3342,48 @@ function runCoreRecallRegressionFixtures() {
   assert.ok(
     !autoSignalEligibilityIssues(technicalTrendLaunchFixture).some((issue) => issue.includes("technical_trend_is_context_not_signal_card")),
     "a confirmed product launch must override a stale technical-trend importance label",
+  );
+
+  const undatedLaunchFixture = [
+    "## P-992｜Launch YC: Example - AI Agent Platform",
+    "- source_url: https://www.ycombinator.com/launches/example",
+    "- evidence_object_type: event",
+    "- event_evidence: true",
+    "- evidence_object_usable: true",
+    "- importance_type: important_product_or_service",
+    "- pool_routes: core_pool, emerging_pool",
+    "- key_excerpts: Example launches an AI agent platform.",
+  ].join("\n");
+  assert.notEqual(
+    promotePriorityForIssues(undatedLaunchFixture, ["evidence_quality:missing_source_date", "evidence_quality:missing_chinese_fact_translation"]),
+    "high",
+    "an undated launch/profile page must not block the batch as a high-priority recall repair",
+  );
+
+  const privacyPledgeFixture = [
+    "## P-991｜《智能体个人信息保护自律公约》发布，31 家企业签署",
+    "- source_url: https://example.com/ai-privacy-pledge",
+    "- evidence_object_type: event",
+    "- event_evidence: true",
+    "- key_excerpts: 行业协会发布个人信息保护自律公约，多家平台现场签署。",
+  ].join("\n");
+  assert.equal(
+    isNonCommercialPolicyOrEthicsSignal(privacyPledgeFixture),
+    true,
+    "a voluntary privacy pledge without a product, funding, procurement or customer event must remain backend context",
+  );
+
+  const fundingDatabaseFixture = [
+    "## P-990｜MYTH AI Design Generator Raises $300K",
+    "- source: Signalbase funding database",
+    "- source_url: https://www.trysignalbase.com/news/funding/myth-ai-design-generator-raises-300k",
+    "- evidence_object_type: event",
+    "- event_evidence: true",
+  ].join("\n");
+  assert.equal(
+    isGenericReportOrListSection(fundingDatabaseFixture),
+    true,
+    "a funding-database profile must remain backend discovery until the original announcement or credible report is resolved",
   );
 
   const positiveFailures = [];

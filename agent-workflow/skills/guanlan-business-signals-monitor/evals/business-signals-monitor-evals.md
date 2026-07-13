@@ -185,6 +185,11 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when PR conflicts and open automation branches are classified as `publication_waiting` and cannot dispatch another full monitor run.
     - Fail when duplicate readiness gates parse the same monitor report, when Business dry run generates another column, or when publication failure is reported as monitor failure.
 
+33. `same_date_rerun_preserves_formal_card_sources`
+    - Pass when a justified same-date full rerun carries forward every readable, dated Raw snapshot referenced by an already published formal Card before generated Raw is reset.
+    - Pass when carried sources normalize their saved readable snapshot as resolved original evidence, recover a missing structured date only from captured article text or a dated URL, and participate in normal Raw / Pool / Card gates and dedupe ahead of unstable live-search duplicates.
+    - Fail when live-search nondeterminism removes a same-date gate-passed Card, or when carry-forward admits an undated, unreadable, unpublished, or non-formal artifact.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.

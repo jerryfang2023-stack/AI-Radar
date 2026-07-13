@@ -224,6 +224,8 @@ function translateBusinessPhrase(value = "") {
     [/^scale ai platform modernizing public and private sector tendering$/iu, "扩展面向公共和私营部门招投标现代化的 AI 平台"],
     [/^power the future of restaurant hospitality$/iu, "支撑餐厅接待服务的未来"],
     [/^build ai that actually knows your organization$/iu, "打造真正了解组织的 AI"],
+    [/^(?:its\s+)?ai training platform$/iu, "AI 训练平台"],
+    [/^secure the growing swarm of ai agents in the enterprise$/iu, "保护企业不断增长的 AI 智能体集群"],
   ];
   for (const [pattern, translation] of directRules) {
     if (pattern.test(text)) return translation;
@@ -288,6 +290,14 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
   if (/^announcing stigg 2\.0\s*[-–—:]\s*the usage runtime for ai products$/iu.test(title)) {
     return "Stigg 发布 2.0：面向 AI 产品的用量运行时";
   }
+  const valuationFunding = title.match(/^(.+?)\s+(?:raises?|raised)\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s+at\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s+valuation(?:\s+(?:to|for)\s+(.+))?$/iu);
+  if (valuationFunding) {
+    const company = titleCaseName(valuationFunding[1]);
+    const amount = translateMoneyAmount(valuationFunding[2]);
+    const valuation = translateMoneyAmount(valuationFunding[3]);
+    const purpose = translateBusinessPhrase(valuationFunding[4] || "");
+    return `${company} 完成 ${amount}融资，估值 ${valuation}${purpose ? `，用于${purpose}` : ""}`;
+  }
   const fundingPatterns = [
     /^(.+?)\s+(?:raises?|raised|secures?|secured|closes?|closed|lands?|landed|nabs?|nabbed)\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed|strategic investment)\s*)?(?:round|funding)?(?:\s+(?:to|for)\s+(.+))?$/iu,
     /^(.+?)\s+launches\s+with\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed)\s*)?(?:funding)?(?:\s+(?:to|for)\s+(.+))?$/iu,
@@ -301,7 +311,7 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
     const round = translateRound(match[3] || "");
     const purpose = translateBusinessPhrase(match[4] || "");
     const roundText = round ? `${round}融资` : "融资";
-    return `${company} 完成 ${amount}${roundText ? ` ${roundText}` : ""}${purpose ? `，用于${purpose}` : ""}`;
+    return `${company} 完成 ${amount}${round ? ` ${roundText}` : roundText}${purpose ? `，用于${purpose}` : ""}`;
   }
 
   const launch = title.match(/^(.+?)\s+(?:launches|releases|introduces|unveils)\s+(.+?)(?:\s+(?:to|for)\s+(.+))?$/iu);
