@@ -1282,6 +1282,12 @@ async function runMetadataRegressionFixtures() {
   if (extractPublishedAtFromHtml(meta) !== "2026-07-12T03:30:00.000Z") {
     throw new Error("article:published_time was not normalized");
   }
+  if (publishedAtFromCapturedText("FuriosaAI partners with Broadcom\nNews\nMay 27, 2026\nSummary") !== "2026-05-27T00:00:00.000Z") {
+    throw new Error("visible article publication date was not normalized");
+  }
+  if (preferredPublishedAt("2026-07-07T00:00:00Z", "2026-05-27T00:00:00Z") !== "2026-05-27T00:00:00.000Z") {
+    throw new Error("captured source publication date did not override provider-inferred freshness");
+  }
   console.log(JSON.stringify({ ok: true, fixture: "source-publication-metadata" }, null, 2));
 }
 
@@ -1686,7 +1692,11 @@ function listJsonFilesRecursive(dir) {
 function publishedAtFromCapturedText(value = "") {
   const text = String(value || "").slice(0, 1600);
   const labeledDate = text.match(/\b(?:last updated|published(?: on)?|publication date|date)\s*[:\n-]?\s*((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20\d{2}|20\d{2}[-/]\d{1,2}[-/]\d{1,2})/iu)?.[1] || "";
-  return normalizePublishedAt(labeledDate);
+  return normalizePublishedAt(labeledDate || dayFromText(text));
+}
+
+function preferredPublishedAt(providerPublishedAt = "", sourcePublishedAt = "") {
+  return normalizePublishedAt(sourcePublishedAt, providerPublishedAt);
 }
 
 function existingFormalCardSourceItems() {
@@ -2852,7 +2862,7 @@ async function fetchSourceSnapshot(item) {
       };
     }
     const bodyText = await response.text();
-    const publishedAt = extractPublishedAtFromHtml(bodyText);
+    const metadataPublishedAt = extractPublishedAtFromHtml(bodyText);
     const extracted = extractReadableSnapshotText(bodyText, contentType, 60000);
     if (extracted.rejected) {
       const text = summary || "来源正文包含 PDF、图片、压缩流或乱码特征；未写入正文证据，进入 Core Pool / Card 前必须回源重抓。";
@@ -2874,6 +2884,7 @@ async function fetchSourceSnapshot(item) {
       };
     }
     const fullText = extracted.full_text || "";
+    const sourcePublishedAt = preferredPublishedAt(metadataPublishedAt, publishedAtFromCapturedText(fullText));
     const extractedText = extracted.text || (fullText ? fullText.slice(0, 18000).trim() : "");
     const metaFallback = extracted.fallback_meta_text || "";
     const text = extractedText || metaFallback || summary || compactSnippet(bodyText, 4000);
@@ -2895,7 +2906,7 @@ async function fetchSourceSnapshot(item) {
       extraction_method: extracted.method || "unknown",
       readability_score: extracted.diagnostics?.readability_score ?? 0,
       extractor_diagnostics: extracted.diagnostics || {},
-      published_at: publishedAt,
+      published_at: sourcePublishedAt,
       error: response.ok ? "" : `${response.status} ${response.statusText}`,
     };
   } catch (error) {
@@ -2933,7 +2944,7 @@ async function enrichSnapshots(items) {
       const snapshot = items[index].carry_forward_snapshot || await fetchSourceSnapshot(items[index]);
       enriched[index] = {
         ...items[index],
-        published_at: normalizePublishedAt(items[index].published_at, snapshot.published_at),
+        published_at: preferredPublishedAt(items[index].published_at, snapshot.published_at),
         snapshot,
       };
     }

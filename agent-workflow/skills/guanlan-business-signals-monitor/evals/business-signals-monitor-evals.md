@@ -109,6 +109,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when Raw ingestion detects an English source title, only checks the translation DB, records `missing_translation_db_entry`, and continues without attempting generation.
     - Fail when a confirmed funding event with an English original title can publish by falling back to a generated `company + amount + round` title such as `X 获得 $Y 融资`.
     - Pass when the source-first gate and frontstage builder normalize repeated publisher/customer title suffixes to the same translation key.
+    - Pass when original-page publication evidence overrides a later search-provider timestamp, so stale English articles do not become active-date high-priority title repairs merely because they were discovered today.
     - Pass when a mixed title consisting of an English product proper name plus an explicit Chinese event action such as `发布` is treated as already localized rather than sent through a second translation lookup.
     - Pass when public facts come from Raw / Card extraction and template filler is repaired in the Card asset or generator.
     - Fail when the frontstage selector silently hides Cards or rewrites titles on generic source subjects, untranslated display titles, navigation fragments, weak fact support, or missing customer / ROI / before-after details after Raw / Pool / Card gates already passed. Missing title/fact ingestion fields should instead fail the unified pre-publication Business gate and route to Raw/Card repair.

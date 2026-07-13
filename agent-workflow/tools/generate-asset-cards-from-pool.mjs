@@ -1047,7 +1047,7 @@ function fundingEventIdentityKeyForSection(section) {
 function unconfirmedFundingEventKeysForSections(sections) {
   return new Set(
     [...sections.values()]
-      .filter((section) => value(section, "importance_type") === "important_funding" && isUnconfirmedFundingProcess(section))
+      .filter(isUnconfirmedFundingProcess)
       .map(fundingEventIdentityKeyForSection)
       .filter(Boolean),
   );
@@ -1468,6 +1468,12 @@ function dateFromText(value = "") {
   return new Date(Date.UTC(Number(match[3]), month, Number(match[2])));
 }
 
+function publicationDateFromRawData(rawData = {}, sourceUrl = "") {
+  return dateFromUrl(rawData.canonical_url || rawData.original_url || sourceUrl)
+    || dateFromText(rawData.full_text || rawData.clean_text || "")
+    || parsePublicationDate(rawData.published_at);
+}
+
 function rawPublicationDate(section) {
   const rawJsonPath = value(section, "raw_json");
   const sourceUrl = value(section, "source_url");
@@ -1475,9 +1481,7 @@ function rawPublicationDate(section) {
     try {
       const rawPath = path.resolve(root, rawJsonPath.replace(/^`|`$/gu, ""));
       const rawData = JSON.parse(fs.readFileSync(rawPath, "utf8"));
-      const rawDate = parsePublicationDate(rawData.published_at)
-        || dateFromUrl(rawData.canonical_url || rawData.original_url || sourceUrl)
-        || dateFromText(rawData.full_text || rawData.clean_text || "");
+      const rawDate = publicationDateFromRawData(rawData, sourceUrl);
       if (rawDate) return rawDate;
     } catch {
       // Fall through to URL-only parsing below.
@@ -3722,6 +3726,14 @@ function runCoreRecallRegressionFixtures() {
     "a fundraising process that is not confirmed closed must not become a completed funding Card",
   );
   assert.equal(
+    publicationDateFromRawData({
+      published_at: "2026-07-07T15:12:40.195Z",
+      full_text: "FuriosaAI partners with Broadcom\nNews\nMay 27, 2026\nSummary",
+    }).toISOString().slice(0, 10),
+    "2026-05-27",
+    "captured source text must override a provider-inferred publication date before freshness gating",
+  );
+  assert.equal(
     fundingEventIdentityKey("Thenextweb", "Lyzr used its own AI agent to help raise a $100mn round. The company described it as a Series B."),
     fundingEventIdentityKey("AI Chat Daily", "Lyzr's AI agent ran its own $100M Series B fundraise"),
     "alternate-source coverage of the same company, amount, and round must share a historical funding event key",
@@ -3737,7 +3749,7 @@ function runCoreRecallRegressionFixtures() {
       "- importance_type: important_funding",
       "- key_excerpts: A secondary article says Lyzr AI closed a $100 million Series B.",
     ].join("\n")],
-    ["P-986", lyzrUnclosedRoundFixture],
+    ["P-986", lyzrUnclosedRoundFixture.replace("important_funding", "supporting_signal")],
   ]);
   assert.ok(
     unconfirmedFundingEventKeysForSections(lyzrConflictingSections).has(fundingEventIdentityKeyForSection(lyzrConflictingSections.get("P-985"))),
