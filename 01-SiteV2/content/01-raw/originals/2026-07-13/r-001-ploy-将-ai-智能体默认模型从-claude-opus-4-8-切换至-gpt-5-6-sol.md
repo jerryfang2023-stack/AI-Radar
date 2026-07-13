@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T23:41:11.951Z"
-collected_at: 2026-07-13T07:40:18.690Z
+collected_at: 2026-07-13T08:26:47.111Z
 language: mixed
 full_text_hash: 6e3fd3836bf847fc
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-001-ploy-将-ai-智能体默认模型从-claude-opus-4-8-切换至-gpt-5-6-sol.md"
@@ -60,7 +60,7 @@ content_hash: 6e3fd3836bf847fc
 semantic_hash: 6f408144a12ceeaa
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-12T23:41:11.951Z"
-last_seen_at: 2026-07-13T07:40:18.690Z
+last_seen_at: 2026-07-13T08:26:47.111Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -72,10 +72,10 @@ guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"imp
 business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","OpenAI","Anthropic"],"products":["Claude","GPT-5","agent","gpt-5","claude"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["4.8","5.6","3","42","8","2.2 倍","3.06 美元","2.22 美元"],"quotes":["the model","build a homepage from scratch","is this clone request safe to execute.","the hero is a full-bleed photographic scene","primary CTAs are rounded rectangles, not pills"]}
 evidence_seed: {"company_actions":["As of today, Ploy’s agent runs on GPT-5.","6 Sol, the flagship tier of the model family OpenAI released this morning.","For months, we couldn’t find a model that challenges Claude Opus given our incredibly high bar for quality."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
 missing_information: ["没有具体客户或真实企业案例"]
-key_excerpts: [{"type":"number","text":"Ploy 将其 AI 智能体默认模型从 Claude Opus 4.8 切换至 OpenAI 今晨发布的 GPT-5.6 Sol。在真实营销网站构建测试中，GPT-5.6 Sol 完成页面平均耗时 3 分 42 秒，较 Opus 4.8 的 8 分钟快 2.2 倍；每次构建成本从 3.06 美元降至 2.22 美元，降低 27%；输出 token 从 33.0K 降至 17.1K，视觉评分从 0.936 提升至 0.970。迁移过程发现，GPT-5.6 会为所有 25 个工具参数填充默认值，导致 52%-64% 的文件读取返回空结果；提示词指令和 OpenAI strict 模式均无法修复此行为。此外，评估框架中约三分之一的原始失败源于针对旧模型的假设，而非模型本身问题。 As of today, Ploy’s agent runs on GPT-5. 6 Sol, the flagship tier of the model family OpenAI released this morning.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As of today, Ploy’s agent runs on GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"6 Sol, the flagship tier of the model family OpenAI released this morning.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"For months, we couldn’t find a model that challenges Claude Opus given our incredibly high bar for quality.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"That changed with GPT 5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"After running it head-to-head against Claude Opus, we’ve made GPT 5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+key_excerpts: [{"type":"number","text":"Ploy 将其 AI 智能体默认模型从 Claude Opus 4.8 切换至 OpenAI 今晨发布的 GPT-5.6 Sol。在真实营销网站构建测试中，GPT-5.6 Sol 完成页面平均耗时 3 分 42 秒，较 Opus 4.8 的 8 分钟快 2.2 倍；每次构建成本从 3.06 美元降至 2.22 美元，降低 27%；输出 token 从 33.0K 降至 17.1K，视觉评分从 0.936 提升至 0.970。迁移过程发现，GPT-5.6 会为所有 25 个工具参数填充默认值，导致 52%-64% 的文件读取返回空结果；提示词指令和 OpenAI strict 模式均无法修复此行为。此外，评估框架中约三分之一的原始失败源于针对旧模型的假设，而非模型本身问题。 As of today, Ploy’s agent runs on GPT-5. 6 Sol, the flagship tier of the model family OpenAI released this morning. As of today, Ploy’s agent runs on GPT-5. 6 Sol, the flagship ti","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As of today, Ploy’s agent runs on GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"6 Sol, the flagship tier of the model family OpenAI released this morning.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"For months, we couldn’t find a model that challenges Claude Opus given our incredibly high bar for quality.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"That changed with GPT 5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"After running it head-to-head against Claude Opus, we’ve made GPT 5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:18.690Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.111Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
@@ -240,7 +240,7 @@ Ploy is marketing run on autopilot: an AI layer that plans, builds, publishes, a
 ## key_excerpts
 
 1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
-   Ploy 将其 AI 智能体默认模型从 Claude Opus 4.8 切换至 OpenAI 今晨发布的 GPT-5.6 Sol。在真实营销网站构建测试中，GPT-5.6 Sol 完成页面平均耗时 3 分 42 秒，较 Opus 4.8 的 8 分钟快 2.2 倍；每次构建成本从 3.06 美元降至 2.22 美元，降低 27%；输出 token 从 33.0K 降至 17.1K，视觉评分从 0.936 提升至 0.970。迁移过程发现，GPT-5.6 会为所有 25 个工具参数填充默认值，导致 52%-64% 的文件读取返回空结果；提示词指令和 OpenAI strict 模式均无法修复此行为。此外，评估框架中约三分之一的原始失败源于针对旧模型的假设，而非模型本身问题。 As of today, Ploy’s agent runs on GPT-5. 6 Sol, the flagship tier of the model family OpenAI released this morning.
+   Ploy 将其 AI 智能体默认模型从 Claude Opus 4.8 切换至 OpenAI 今晨发布的 GPT-5.6 Sol。在真实营销网站构建测试中，GPT-5.6 Sol 完成页面平均耗时 3 分 42 秒，较 Opus 4.8 的 8 分钟快 2.2 倍；每次构建成本从 3.06 美元降至 2.22 美元，降低 27%；输出 token 从 33.0K 降至 17.1K，视觉评分从 0.936 提升至 0.970。迁移过程发现，GPT-5.6 会为所有 25 个工具参数填充默认值，导致 52%-64% 的文件读取返回空结果；提示词指令和 OpenAI strict 模式均无法修复此行为。此外，评估框架中约三分之一的原始失败源于针对旧模型的假设，而非模型本身问题。 As of today, Ploy’s agent runs on GPT-5. 6 Sol, the flagship tier of the model family OpenAI released this morning. As of today, Ploy’s agent runs on GPT-5. 6 Sol, the flagship ti
 
 2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
    As of today, Ploy’s agent runs on GPT-5.
@@ -327,7 +327,7 @@ Ploy is marketing run on autopilot: an AI layer that plans, builds, publishes, a
 
 ## 原始摘要 / 采集文本
 
-Ploy 将其 AI 智能体默认模型从 Claude Opus 4.8 切换至 OpenAI 今晨发布的 GPT-5.6 Sol。在真实营销网站构建测试中，GPT-5.6 Sol 完成页面平均耗时 3 分 42 秒，较 Opus 4.8 的 8 分钟快 2.2 倍；每次构建成本从 3.06 美元降至 2.22 美元，降低 27%；输出 token 从 33.0K 降至 17.1K，视觉评分从 0.936 提升至 0.970。迁移过程发现，GPT-5.6 会为所有 25 个工具参数填充默认值，导致 52%-64% 的文件读取返回空结果；提示词指令和 OpenAI strict 模式均无法修复此行为。此外，评估框架中约三分之一的原始失败源于针对旧模型的假设，而非模型本身问题。 As of today, Ploy’s agent runs on GPT-5. 6 Sol, the flagship tier of the model family OpenAI released this morning.
+Ploy 将其 AI 智能体默认模型从 Claude Opus 4.8 切换至 OpenAI 今晨发布的 GPT-5.6 Sol。在真实营销网站构建测试中，GPT-5.6 Sol 完成页面平均耗时 3 分 42 秒，较 Opus 4.8 的 8 分钟快 2.2 倍；每次构建成本从 3.06 美元降至 2.22 美元，降低 27%；输出 token 从 33.0K 降至 17.1K，视觉评分从 0.936 提升至 0.970。迁移过程发现，GPT-5.6 会为所有 25 个工具参数填充默认值，导致 52%-64% 的文件读取返回空结果；提示词指令和 OpenAI strict 模式均无法修复此行为。此外，评估框架中约三分之一的原始失败源于针对旧模型的假设，而非模型本身问题。 As of today, Ploy’s agent runs on GPT-5. 6 Sol, the flagship tier of the model family OpenAI released this morning. As of today, Ploy’s agent runs on GPT-5. 6 Sol, the flagship tier of the model family OpenAI released this morning.
 
 ## 采集备注
 

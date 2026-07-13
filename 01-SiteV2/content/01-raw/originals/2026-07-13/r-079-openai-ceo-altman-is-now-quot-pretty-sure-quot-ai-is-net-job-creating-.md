@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T09:15:49.000Z"
-collected_at: 2026-07-13T07:40:19.246Z
+collected_at: 2026-07-13T08:26:47.631Z
 language: mixed
 full_text_hash: ff0e847cc4efaa7d
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-079-openai-ceo-altman-is-now-quot-pretty-sure-quot-ai-is-net-job-creating-.md"
@@ -60,7 +60,7 @@ content_hash: ff0e847cc4efaa7d
 semantic_hash: 5d3a04fbb0db4398
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-12T09:15:49.000Z"
-last_seen_at: 2026-07-13T07:40:19.246Z
+last_seen_at: 2026-07-13T08:26:47.631Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":false,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例","没有变化前
 key_excerpts: [{"type":"quote","text":"OpenAI CEO Sam Altman now says he's \"pretty sure\" AI has created more jobs than it's eliminated. That's a sharp turn from his earlier warnings about entire professions disappearing. Anthropic CEO Dario Amodei is walking back similar claims, too. But studies so far back neither the old doomsday predictions nor optimism. The article OpenAI CEO Altman is now &quot;pretty sure&quot; AI is net job-creating, which is quite the pivot from predicting mass layoffs appeared first on The Decoder.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"OpenAI CEO Altman is now \"pretty sure\" AI is net job-creating, which is quite the pivot from predicting mass layoffs OpenAI CEO Altman is now \"pretty sure\" AI is net job-creating, which is quite the pivot from predicting mass layoffs OpenAI CEO Sam Altman now says he's \"pretty sure\" AI has created more jobs than it's eliminated.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"That's a sharp turn from his earlier warnings about entire professions disappearing.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Anthropic CEO Dario Amodei is walking back similar claims, too.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"But studies so far back neither the old doomsday predictions nor optimism.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"OpenAI CEO Sam Altman now says he's \"pretty sure\" AI has created more jobs than it's eliminated.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:19.246Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.631Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

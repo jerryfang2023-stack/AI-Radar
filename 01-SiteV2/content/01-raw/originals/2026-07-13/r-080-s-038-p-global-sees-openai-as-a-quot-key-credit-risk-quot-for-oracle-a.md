@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T11:43:36.000Z"
-collected_at: 2026-07-13T07:40:19.251Z
+collected_at: 2026-07-13T08:26:47.636Z
 language: mixed
 full_text_hash: fd77c57ad4af54d9
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-080-s-038-p-global-sees-openai-as-a-quot-key-credit-risk-quot-for-oracle-a.md"
@@ -60,7 +60,7 @@ content_hash: fd77c57ad4af54d9
 semantic_hash: 7e8289032119c485
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-12T11:43:36.000Z"
-last_seen_at: 2026-07-13T07:40:19.251Z
+last_seen_at: 2026-07-13T08:26:47.636Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"number","text":"S&#038;P Global has downgraded Oracle's credit rating to \"BBB-,\" one notch above junk status. OpenAI accounts for roughly half of Oracle's $638 billion in contractual obligations. If OpenAI walked away, Oracle would be stuck with massive data center capacity it couldn't fill. The article S&#038;P Global sees OpenAI as a &quot;key credit risk&quot; for Oracle and cuts its credit rating appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"quote","text":"S&P Global sees OpenAI as a \"key credit risk\" for Oracle and cuts its credit rating S&P Global sees OpenAI as a \"key credit risk\" for Oracle and cuts its credit rating S&P Global has downgraded Oracle's credit rating to \"BBB-,\" one notch above junk status.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"number","text":"OpenAI accounts for roughly half of Oracle's $638 billion in contractual obligations.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"If OpenAI walked away, Oracle would be stuck with massive data center capacity it couldn't fill.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"S&P Global has downgraded Oracle's credit rating to \"BBB-,\" one notch above junk status.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:19.251Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.636Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

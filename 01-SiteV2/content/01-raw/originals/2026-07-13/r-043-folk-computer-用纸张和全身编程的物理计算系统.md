@@ -1,0 +1,299 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-043
+title: "Folk Computer：用纸张和全身编程的物理计算系统"
+title_zh: "Folk Computer：用纸张和全身编程的物理计算系统"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.motivenotes.ai/p/against-usefulness"
+canonical_url: "https://motivenotes.ai/p/against-usefulness"
+source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-13T07:03:25.954Z"
+collected_at: 2026-07-13T08:26:47.374Z
+language: mixed
+full_text_hash: c7f8c01288bd3e08
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-043-folk-computer-用纸张和全身编程的物理计算系统.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-043-folk-computer-用纸张和全身编程的物理计算系统.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":11869,"paragraph_count":39,"sentence_count":133,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 11869
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c7f8c01288bd3e08","missing":[]}
+source_volatility: high
+community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: user_feedback_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Folk Computer：用纸张和全身编程的物理计算系统","discovery_summary":"反对实用性","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://www.motivenotes.ai/p/against-usefulness","discovered_at":"2026-07-13T08:19:14.635Z","rank_on_page":22,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e212e9a1647be1ae
+content_hash: c7f8c01288bd3e08
+semantic_hash: f9163aa27b9cbf64
+duplicate_of: ""
+first_seen_at: "2026-07-13T07:03:25.954Z"
+last_seen_at: 2026-07-13T08:26:47.374Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","GitHub"],"products":["agents","agent"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理"],"business_actions":[],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["10","2026","1947","100","000 m","1970","2013","2014"],"quotes":["I don’t need the monitor anymore.","the new machinery for computing, reasoning, and other handling of information.","Not opportunity, but responsibility.","interactive paper computing"]}
+evidence_seed: {"company_actions":["反对实用性","Against Usefulness In a Brooklyn warehouse, a man handed me a piece of paper that was a running computer program.","Oana Olteanu Jul 10, 2026 10 Share Every useful company stands on rails that were once somebody’s stubbornly useless research."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"反对实用性","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Against Usefulness In a Brooklyn warehouse, a man handed me a piece of paper that was a running computer program.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Oana Olteanu Jul 10, 2026 10 Share Every useful company stands on rails that were once somebody’s stubbornly useless research.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I invest in useful for a living.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"This essay is about the stage before useful, who works on it, and who pays for it, so that the next generation of useful companies has something to stand on.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"At Motive Force I back both stages.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-13T08:26:47.374Z
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Folk Computer：用纸张和全身编程的物理计算系统
+
+## clean_text
+
+Against Usefulness
+In a Brooklyn warehouse, a man handed me a piece of paper that was a running computer program.
+Oana Olteanu
+Jul 10, 2026
+10
+Share
+Every useful company stands on rails that were once somebody’s stubbornly useless research. I invest in useful for a living. This essay is about the stage before useful, who works on it, and who pays for it, so that the next generation of useful companies has something to stand on. At Motive Force I back both stages. They need each other.
+In June I stood in a warehouse in Brooklyn while a man handed me a piece of paper that was a running computer program.
+A printout would have been a picture of a program. This was the program itself. He set it on the table and the system executed it. Then he connected a keyboard to the paper, typed a line of code, hit save, and the paper turned green. He unplugged the keyboard and the paper kept running, glowing on the table like it had always known how.
+A few feet away, an animation system was cycling through hand drawn frames. He gave me a marker and I drew a bunny, frame by frame, and watched my drawings come alive in real time on the table. Then we made music by laying cards down between us, each card a track. I heard myself say a sentence I did not plan to say: “I don’t need the monitor anymore.” For the first time I was programming with my whole body, collaborating with another person in the same room, with almost no distance between the idea and the thing. It was the most human programming I have ever done.
+The system is called Folk Computer . It’s an open source physical computing system built by Omar Rizwan and Andrés Cuervo, two researchers who worked at Dynamicland, Bret Victor’s lab in Oakland. Cameras on the ceiling watch the room. Projectors paint onto every surface. Small tags identify each piece of paper, and each piece of paper is a program. There are no pixels inside the system; every coordinate is in meters, mapped to where things sit in the room. You stop staring into a rectangle. The computer is the room, and you program it together with other people, standing up, talking, drawing, moving paper around.
+I have spent my career inside enterprise software, decomposing how work gets done. I know what it looks like when someone is optimizing an existing paradigm. This was someone asking whether the desktop metaphor, the screen, the cubicle, the solitary body hunched toward a rectangle, was a fifty year detour rather than a destination.
+How I got there
+A week earlier I had lunch with my friend JP, who was visiting San Francisco. The Bay Area, I told him, has become a monoculture. Everyone is building the same thing, funded by the same people, using the same words. Where are the independent thinkers? I want the Xerox PARC vibes back, the people who work on questions instead of markets.
+JP didn’t argue. He said: they exist, but not here. Or rather, they exist here too, but scattered, one by one, never together. And then he said a name: Folk Computer. In New York.
+I happened to be flying to New York days later. I was going for something almost comically institutional, which turns out to be the other half of this story.
+The oldest club in computing
+I was in New York to volunteer. I sit on the Professional Development Committee of the ACM , the Association for Computing Machinery, the world’s largest and oldest computing society. It was founded in 1947, back when computing was a curiosity shared by a few hundred people, before anyone could make a career of it. The organization’s stated purpose was to advance “the new machinery for computing, reasoning, and other handling of information.” Reasoning, in 1947. Joining an association about computers was itself an act of independent thinking. No one joined for money. They joined out of conviction that something interesting was going to happen.
+Nearly eighty years later, ACM has over 100,000 members and gives out the Turing Award, computing’s Nobel. When our committee reviewed what members are learning right now, the picture was striking: the entire field is studying the same topic. The most read titles and the most searched terms are all about agents. The learning curves of a whole discipline have converged into one line.
+I am not against that line. I invest in it. My whole firm is built on the thesis that autonomous execution needs deterministic infrastructure, and the convergence is part of why the opportunity is real. But convergence has a cost: no one is left standing off to the side asking the strange question. The next paradigm comes from the people the curve forgot.
+I carried the institutional memory of computing’s oldest society into that warehouse, and watched its youngest incarnation run on paper.
+The lineage
+Folk Computer did not come from nowhere. It is the current end of a thread that runs back through the entire history of the field.
+It starts with Alan Kay at Xerox PARC in the 1970s, asking what computing would look like as a medium for thought rather than a machine for calculation, and inventing, along the way, most of what you are using to read this. Kay spent the rest of his career trying to rebuild the conditions that made PARC possible: total freedom, long time horizons, no product pressure. In 2013 he tried again. He recruited Bret Victor, Vi Hart, and Dan Ingalls as principal investigators of a new lab in San Francisco called CDG, the Communications Design Group.
+CDG was funded by SAP, and by Vishal Sikka in particular, SAP’s CTO at the time, who believed in Kay’s vision and had the resources to back it. I joined SAP in Germany as a working student during my Masters and stayed seven years, in the CTO’s own organization. In all that time I never heard the name CDG once, even though being part of it would have made my years there far richer. The lab was invisible on purpose. The name was chosen because it was generic enough to be forgotten; the researchers had watched what attention does to this kind of work, and they wanted none of it.
+Inside, they practiced what they called deep work with an intensity that reorganized even their manners. Nobody said hello in the morning. Nobody said goodbye at night. The silence was a form of trust, an agreement never to interrupt each other’s decades-long thoughts. Their prototypes were built, in their own words, against usefulness. Usefulness, they had learned, is a trap: the moment a prototype becomes useful, its makers start answering to present users and stop pointing at the future. And Victor himself, in the talk that made him famous, described his motivation in words you never hear in a technical field. When he sees creators constrained by their tools, he sees an injustice. “Not opportunity, but responsibility.”
+Vishal left SAP in 2014, and the lab lost its champion. The researchers migrated to HARC under Y Combinator Research; when that ended too, Victor’s group took over the Oakland space and became Dynamicland, a nonprofit where the building itself is the computer. Dynamicland spawned the next generation: Omar and Andrés, who took what they learned and made one decisive pivot. They built it open source.
+That pivot matters more than it sounds. The recurring criticism of this whole lineage, and I have felt it myself, is that you see the demos and cannot do anything with them. The knowledge stays locked in one building, open to the few who can visit. Folk Computer inverts that. The code is on GitHub . People around the world have set up their own systems. Strangers contribute. A friend of theirs built a music sequencer out of physical cards; flip a card, change a track. The thread that ran through PARC and CDG and Dynamicland is, for the first time, something you can pull on from your own home.
+Who pays for this
+I allocate capital for a living, so I pay attention to who funded this lineage. Xerox funded PARC out of an instinct, give brilliant people machines and freedom and something interesting will happen, then failed to capture most of the value PARC created. CDG existed because one executive at a German enterprise software company believed. Dynamicland ran as a nonprofit on donations, and Omar told me something that stuck: the early patrons of this work tended to come from odd backgrounds, art, music, family money, because the tech people were all too busy being excited about their own thing. It’s the same reason Stripe Press exists. Patrick Collison runs a payments company and yet republishes the foundational texts of this exact tradition, because underneath the CEO there is a person who cannot leave these ideas alone.
+Paradigm work has always run on patrons. A new paradigm is useless at the beginning, by definition, so markets have nothing to price. The first personal computers were toys. So was the early internet. The people who fund this stage are buying a position in the future before anyone can price it.
+My flight home was delayed, so I wandered into Mercer Labs, the museum of art and technology near the World Trade Center. Twenty six projectors, sound that moves through space, rooms that dissolve around you. It transported me, and it clarified something. Mercer is the consumption version of this future: you stand inside someone else’s computation and watch. Brooklyn was the agency version, the one that hands you new capabilities: you pick up a marker and the room becomes yours. Both will exist. Only one of them changes who gets to build.
+A Request for Independent Thinkers
+Y Combinator publishes a Request for Startups: a list of ideas they wish someone would build. It’s a good list. It also assumes the bottleneck is ideas, and that the future can be specified in advance.
+Nothing in this lineage worked that way. Nobody could have written “interactive paper computing” on a request list in 2013. It exists because a specific kind of person pulled on a specific thread for over a decade, through four institutional deaths. For paradigm-level work, you cannot spec the what. You can only recognize the who.
+Here is mine, inverted: a Request for Independent Thinkers. I am looking for the person who
+has been obsessed with one unfashionable question for years, and can tell you why the obvious approach is wrong
+builds in the open, or wants to, because they would rather the idea live than own it
+measures progress in decades, not quarters and decks
+is allergic to hype, and probably lives, physically or intellectually, some distance from it
+makes you say a sentence you did not plan to say
+If this is you, I want to meet you. This is separate from investing; most of this work is pre company, and it should be. Sometimes the right instrument is a check, sometimes a grant, sometimes a contract, sometimes a room and an introduction. Xerox never recognized the value of what came out of PARC, and odds are the people around you do not recognize what you are building either. I read that the way Victor does, as an injustice. My firm is small, but I can help: an introduction to someone who can fund it, or distribution for what you see, so others can join you and build on it.
+If you know this person, send them this.
+And if you are someone with resources who has been looking for a way into the future that isn’t another agent startup: start with Folk Computer. Read what it can do . Set one up. Sponsor them , commission a physical demo, or run a pilot .
+I went to Manhattan for the oldest institution in computing and found its founding spirit alive in Brooklyn, in its newest form. Both are running the same eighty year old bet: gather the people who cannot stop asking, and something interesting will happen.
+I’m assembling them now. If you’re one of them, my door is open.
+Thanks to Omar Rizwan for the demo and for reviewing a draft of this essay, and to JP for the tip. If you want to be in the room when I bring these people together, reply to this email.
+10
+Share
+Previous
+
+## full_text
+
+Against Usefulness
+In a Brooklyn warehouse, a man handed me a piece of paper that was a running computer program.
+Oana Olteanu
+Jul 10, 2026
+10
+Share
+Every useful company stands on rails that were once somebody’s stubbornly useless research. I invest in useful for a living. This essay is about the stage before useful, who works on it, and who pays for it, so that the next generation of useful companies has something to stand on. At Motive Force I back both stages. They need each other.
+In June I stood in a warehouse in Brooklyn while a man handed me a piece of paper that was a running computer program.
+A printout would have been a picture of a program. This was the program itself. He set it on the table and the system executed it. Then he connected a keyboard to the paper, typed a line of code, hit save, and the paper turned green. He unplugged the keyboard and the paper kept running, glowing on the table like it had always known how.
+A few feet away, an animation system was cycling through hand drawn frames. He gave me a marker and I drew a bunny, frame by frame, and watched my drawings come alive in real time on the table. Then we made music by laying cards down between us, each card a track. I heard myself say a sentence I did not plan to say: “I don’t need the monitor anymore.” For the first time I was programming with my whole body, collaborating with another person in the same room, with almost no distance between the idea and the thing. It was the most human programming I have ever done.
+The system is called Folk Computer . It’s an open source physical computing system built by Omar Rizwan and Andrés Cuervo, two researchers who worked at Dynamicland, Bret Victor’s lab in Oakland. Cameras on the ceiling watch the room. Projectors paint onto every surface. Small tags identify each piece of paper, and each piece of paper is a program. There are no pixels inside the system; every coordinate is in meters, mapped to where things sit in the room. You stop staring into a rectangle. The computer is the room, and you program it together with other people, standing up, talking, drawing, moving paper around.
+I have spent my career inside enterprise software, decomposing how work gets done. I know what it looks like when someone is optimizing an existing paradigm. This was someone asking whether the desktop metaphor, the screen, the cubicle, the solitary body hunched toward a rectangle, was a fifty year detour rather than a destination.
+How I got there
+A week earlier I had lunch with my friend JP, who was visiting San Francisco. The Bay Area, I told him, has become a monoculture. Everyone is building the same thing, funded by the same people, using the same words. Where are the independent thinkers? I want the Xerox PARC vibes back, the people who work on questions instead of markets.
+JP didn’t argue. He said: they exist, but not here. Or rather, they exist here too, but scattered, one by one, never together. And then he said a name: Folk Computer. In New York.
+I happened to be flying to New York days later. I was going for something almost comically institutional, which turns out to be the other half of this story.
+The oldest club in computing
+I was in New York to volunteer. I sit on the Professional Development Committee of the ACM , the Association for Computing Machinery, the world’s largest and oldest computing society. It was founded in 1947, back when computing was a curiosity shared by a few hundred people, before anyone could make a career of it. The organization’s stated purpose was to advance “the new machinery for computing, reasoning, and other handling of information.” Reasoning, in 1947. Joining an association about computers was itself an act of independent thinking. No one joined for money. They joined out of conviction that something interesting was going to happen.
+Nearly eighty years later, ACM has over 100,000 members and gives out the Turing Award, computing’s Nobel. When our committee reviewed what members are learning right now, the picture was striking: the entire field is studying the same topic. The most read titles and the most searched terms are all about agents. The learning curves of a whole discipline have converged into one line.
+I am not against that line. I invest in it. My whole firm is built on the thesis that autonomous execution needs deterministic infrastructure, and the convergence is part of why the opportunity is real. But convergence has a cost: no one is left standing off to the side asking the strange question. The next paradigm comes from the people the curve forgot.
+I carried the institutional memory of computing’s oldest society into that warehouse, and watched its youngest incarnation run on paper.
+The lineage
+Folk Computer did not come from nowhere. It is the current end of a thread that runs back through the entire history of the field.
+It starts with Alan Kay at Xerox PARC in the 1970s, asking what computing would look like as a medium for thought rather than a machine for calculation, and inventing, along the way, most of what you are using to read this. Kay spent the rest of his career trying to rebuild the conditions that made PARC possible: total freedom, long time horizons, no product pressure. In 2013 he tried again. He recruited Bret Victor, Vi Hart, and Dan Ingalls as principal investigators of a new lab in San Francisco called CDG, the Communications Design Group.
+CDG was funded by SAP, and by Vishal Sikka in particular, SAP’s CTO at the time, who believed in Kay’s vision and had the resources to back it. I joined SAP in Germany as a working student during my Masters and stayed seven years, in the CTO’s own organization. In all that time I never heard the name CDG once, even though being part of it would have made my years there far richer. The lab was invisible on purpose. The name was chosen because it was generic enough to be forgotten; the researchers had watched what attention does to this kind of work, and they wanted none of it.
+Inside, they practiced what they called deep work with an intensity that reorganized even their manners. Nobody said hello in the morning. Nobody said goodbye at night. The silence was a form of trust, an agreement never to interrupt each other’s decades-long thoughts. Their prototypes were built, in their own words, against usefulness. Usefulness, they had learned, is a trap: the moment a prototype becomes useful, its makers start answering to present users and stop pointing at the future. And Victor himself, in the talk that made him famous, described his motivation in words you never hear in a technical field. When he sees creators constrained by their tools, he sees an injustice. “Not opportunity, but responsibility.”
+Vishal left SAP in 2014, and the lab lost its champion. The researchers migrated to HARC under Y Combinator Research; when that ended too, Victor’s group took over the Oakland space and became Dynamicland, a nonprofit where the building itself is the computer. Dynamicland spawned the next generation: Omar and Andrés, who took what they learned and made one decisive pivot. They built it open source.
+That pivot matters more than it sounds. The recurring criticism of this whole lineage, and I have felt it myself, is that you see the demos and cannot do anything with them. The knowledge stays locked in one building, open to the few who can visit. Folk Computer inverts that. The code is on GitHub . People around the world have set up their own systems. Strangers contribute. A friend of theirs built a music sequencer out of physical cards; flip a card, change a track. The thread that ran through PARC and CDG and Dynamicland is, for the first time, something you can pull on from your own home.
+Who pays for this
+I allocate capital for a living, so I pay attention to who funded this lineage. Xerox funded PARC out of an instinct, give brilliant people machines and freedom and something interesting will happen, then failed to capture most of the value PARC created. CDG existed because one executive at a German enterprise software company believed. Dynamicland ran as a nonprofit on donations, and Omar told me something that stuck: the early patrons of this work tended to come from odd backgrounds, art, music, family money, because the tech people were all too busy being excited about their own thing. It’s the same reason Stripe Press exists. Patrick Collison runs a payments company and yet republishes the foundational texts of this exact tradition, because underneath the CEO there is a person who cannot leave these ideas alone.
+Paradigm work has always run on patrons. A new paradigm is useless at the beginning, by definition, so markets have nothing to price. The first personal computers were toys. So was the early internet. The people who fund this stage are buying a position in the future before anyone can price it.
+My flight home was delayed, so I wandered into Mercer Labs, the museum of art and technology near the World Trade Center. Twenty six projectors, sound that moves through space, rooms that dissolve around you. It transported me, and it clarified something. Mercer is the consumption version of this future: you stand inside someone else’s computation and watch. Brooklyn was the agency version, the one that hands you new capabilities: you pick up a marker and the room becomes yours. Both will exist. Only one of them changes who gets to build.
+A Request for Independent Thinkers
+Y Combinator publishes a Request for Startups: a list of ideas they wish someone would build. It’s a good list. It also assumes the bottleneck is ideas, and that the future can be specified in advance.
+Nothing in this lineage worked that way. Nobody could have written “interactive paper computing” on a request list in 2013. It exists because a specific kind of person pulled on a specific thread for over a decade, through four institutional deaths. For paradigm-level work, you cannot spec the what. You can only recognize the who.
+Here is mine, inverted: a Request for Independent Thinkers. I am looking for the person who
+has been obsessed with one unfashionable question for years, and can tell you why the obvious approach is wrong
+builds in the open, or wants to, because they would rather the idea live than own it
+measures progress in decades, not quarters and decks
+is allergic to hype, and probably lives, physically or intellectually, some distance from it
+makes you say a sentence you did not plan to say
+If this is you, I want to meet you. This is separate from investing; most of this work is pre company, and it should be. Sometimes the right instrument is a check, sometimes a grant, sometimes a contract, sometimes a room and an introduction. Xerox never recognized the value of what came out of PARC, and odds are the people around you do not recognize what you are building either. I read that the way Victor does, as an injustice. My firm is small, but I can help: an introduction to someone who can fund it, or distribution for what you see, so others can join you and build on it.
+If you know this person, send them this.
+And if you are someone with resources who has been looking for a way into the future that isn’t another agent startup: start with Folk Computer. Read what it can do . Set one up. Sponsor them , commission a physical demo, or run a pilot .
+I went to Manhattan for the oldest institution in computing and found its founding spirit alive in Brooklyn, in its newest form. Both are running the same eighty year old bet: gather the people who cannot stop asking, and something interesting will happen.
+I’m assembling them now. If you’re one of them, my door is open.
+Thanks to Omar Rizwan for the demo and for reviewing a draft of this essay, and to JP for the tip. If you want to be in the room when I bring these people together, reply to this email.
+10
+Share
+Previous
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 97
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":11869,"paragraph_count":39,"sentence_count":133,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   反对实用性
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Against Usefulness In a Brooklyn warehouse, a man handed me a piece of paper that was a running computer program.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Oana Olteanu Jul 10, 2026 10 Share Every useful company stands on rails that were once somebody’s stubbornly useless research.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   I invest in useful for a living.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   This essay is about the stage before useful, who works on it, and who pays for it, so that the next generation of useful companies has something to stand on.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   At Motive Force I back both stages.
+
+## business_elements
+
+- companies: Hacker News 热门（buzzing.cc 中文翻译）, GitHub
+- products: agents, agent
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 10, 2026, 1947, 100, 000 m, 1970, 2013, 2014
+- quotes: I don’t need the monitor anymore. / the new machinery for computing, reasoning, and other handling of information. / Not opportunity, but responsibility. / interactive paper computing
+
+## evidence_seed
+
+- company_actions: 反对实用性 / Against Usefulness In a Brooklyn warehouse, a man handed me a piece of paper that was a running computer program. / Oana Olteanu Jul 10, 2026 10 Share Every useful company stands on rails that were once somebody’s stubbornly useless research.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: user_feedback_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Folk Computer：用纸张和全身编程的物理计算系统","discovery_summary":"反对实用性","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://www.motivenotes.ai/p/against-usefulness","discovered_at":"2026-07-13T08:19:14.635Z","rank_on_page":22,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+反对实用性
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

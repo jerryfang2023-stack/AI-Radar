@@ -1,5 +1,5 @@
 ---
-id: SIG-20260713-A10
+id: SIG-20260713-A12
 type: signal_card
 signal_type: product_service
 title: "努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线"
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T07:40:19.484Z
-updated_at: 2026-07-13T07:40:19.484Z
+created_at: 2026-07-13T08:26:47.889Z
+updated_at: 2026-07-13T08:26:47.889Z
 
 raw_refs: ["R-009"]
 pool_refs: ["P-009"]

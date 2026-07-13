@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T11:20:30.000Z"
-collected_at: 2026-07-13T07:40:19.240Z
+collected_at: 2026-07-13T08:26:47.625Z
 language: mixed
 full_text_hash: f0091bdefe472d0c
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-078-meta-kills-muse-image-feature-that-let-anyone-generate-ai-photos-of-in.md"
@@ -60,7 +60,7 @@ content_hash: f0091bdefe472d0c
 semantic_hash: a9aefa0de8aa7067
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-12T11:20:30.000Z"
-last_seen_at: 2026-07-13T07:40:19.240Z
+last_seen_at: 2026-07-13T08:26:47.625Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":false,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例","没有变化前
 key_excerpts: [{"type":"quote","text":"Meta pulled a controversial feature from its new Muse Image model after widespread criticism. The feature let users generate AI images of other people by @-mentioning their public Instagram accounts. No consent needed, just a username. Meta admits \"this feature missed the mark\" and shut it down days after announcing it. The article Meta kills Muse Image feature that let anyone generate AI photos of Instagram users without consent appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Meta kills Muse Image feature that let anyone generate AI photos of Instagram users without consent Meta kills Muse Image feature that let anyone generate AI photos of Instagram users without consent Meta pulled a controversial feature from its new Muse Image model after widespread criticism.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"The feature let users generate AI images of other people by @-mentioning their public Instagram accounts.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"No consent needed, just a username.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"Meta admits \"this feature missed the mark\" and shut it down days after announcing it.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Meta pulled a controversial feature from its new Muse Image model after widespread criticism.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:19.240Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.625Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-13T06:17:23.000Z"
-collected_at: 2026-07-13T07:40:18.732Z
+collected_at: 2026-07-13T08:26:47.153Z
 language: mixed
 full_text_hash: a81ab80631541f1b
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-006-openai-优化-gpt-5-6-sol-并放宽使用限额-anthropic-延长-fable-5-推广期.md"
@@ -60,7 +60,7 @@ content_hash: a81ab80631541f1b
 semantic_hash: aff1c41d5f2239f0
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-13T06:17:23.000Z"
-last_seen_at: 2026-07-13T07:40:18.732Z
+last_seen_at: 2026-07-13T08:26:47.153Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -69,13 +69,13 @@ change_action_detected: true
 evidence_eligibility: eligible
 evidence_block_reason: ""
 guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
-business_elements: {"companies":["IT之家（RSS）","OpenAI","Anthropic"],"products":["GPT-5","ChatGPT","Codex","Claude"],"people":[],"industries":["金融 / 保险","开发者工具"],"roles":[],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["5.6","5","10%","50 万","7","19","50%","10"],"quotes":[]}
+business_elements: {"companies":["IT之家（RSS）","OpenAI","Anthropic"],"products":["GPT-5","ChatGPT","Codex","Claude"],"people":[],"industries":["金融 / 保险","开发者工具"],"roles":[],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["5.6","5","10%","50 万","7","19","50%","6"],"quotes":[]}
 evidence_seed: {"company_actions":["6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 2026/7/13 14:17:23 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 南琴梨 的线索投递！","IT之家 7 月 13 日消息，在上个月率先小范围预览 GPT-5.","6 系列模型后，OpenAI 于上周正式向所有用户开放了该系列全部三款模型，分别为 GPT-5."],"case_details":["6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 OpenAI 优化 GPT-5."],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
 missing_information: []
-key_excerpts: [{"type":"number","text":"OpenAI 正式向所有用户开放 GPT-5.6 系列全部三款模型（Sol、Terra、Luna），上线后流量达此前峰值两倍。为缓解压力，OpenAI 多次重置 ChatGPT Work 和 Codex 用户额度，并临时取消 Plus、Business、Pro 订阅用户每 5 小时一次的使用限制。GPT-5.6 Sol 部署新推理优化，节省的计算资源预计使可用额度提升约 10%。Banked Reset 功能已从桌面客户端扩展至网页版和移动端，约 50 万用户已获得该功能。Anthropic 将 Claude Fable 5 限时推广活动延长至 7 月 19 日，活动期间 Claude Code 每周使用额度较平时提高 50%。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 OpenAI 优化 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 2026/7/13 14:17:23 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 南琴梨 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 13 日消息，在上个月率先小范围预览 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6 系列模型后，OpenAI 于上周正式向所有用户开放了该系列全部三款模型，分别为 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"模型上线后，OpenAI 也根据首批用户的反馈进行了多项调整。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"}]
+key_excerpts: [{"type":"number","text":"OpenAI 正式向所有用户开放 GPT-5.6 系列全部三款模型（Sol、Terra、Luna），上线后流量达此前峰值两倍。为缓解压力，OpenAI 多次重置 ChatGPT Work 和 Codex 用户额度，并临时取消 Plus、Business、Pro 订阅用户每 5 小时一次的使用限制。GPT-5.6 Sol 部署新推理优化，节省的计算资源预计使可用额度提升约 10%。Banked Reset 功能已从桌面客户端扩展至网页版和移动端，约 50 万用户已获得该功能。Anthropic 将 Claude Fable 5 限时推广活动延长至 7 月 19 日，活动期间 Claude Code 每周使用额度较平时提高 50%。 6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > ","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 OpenAI 优化 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 2026/7/13 14:17:23 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 南琴梨 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 13 日消息，在上个月率先小范围预览 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6 系列模型后，OpenAI 于上周正式向所有用户开放了该系列全部三款模型，分别为 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"模型上线后，OpenAI 也根据首批用户的反馈进行了多项调整。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:18.732Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.153Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
@@ -264,7 +264,7 @@ Win11之家
 ## key_excerpts
 
 1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
-   OpenAI 正式向所有用户开放 GPT-5.6 系列全部三款模型（Sol、Terra、Luna），上线后流量达此前峰值两倍。为缓解压力，OpenAI 多次重置 ChatGPT Work 和 Codex 用户额度，并临时取消 Plus、Business、Pro 订阅用户每 5 小时一次的使用限制。GPT-5.6 Sol 部署新推理优化，节省的计算资源预计使可用额度提升约 10%。Banked Reset 功能已从桌面客户端扩展至网页版和移动端，约 50 万用户已获得该功能。Anthropic 将 Claude Fable 5 限时推广活动延长至 7 月 19 日，活动期间 Claude Code 每周使用额度较平时提高 50%。
+   OpenAI 正式向所有用户开放 GPT-5.6 系列全部三款模型（Sol、Terra、Luna），上线后流量达此前峰值两倍。为缓解压力，OpenAI 多次重置 ChatGPT Work 和 Codex 用户额度，并临时取消 Plus、Business、Pro 订阅用户每 5 小时一次的使用限制。GPT-5.6 Sol 部署新推理优化，节省的计算资源预计使可用额度提升约 10%。Banked Reset 功能已从桌面客户端扩展至网页版和移动端，约 50 万用户已获得该功能。Anthropic 将 Claude Fable 5 限时推广活动延长至 7 月 19 日，活动期间 Claude Code 每周使用额度较平时提高 50%。 6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 
 
 2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
    6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 OpenAI 优化 GPT-5.
@@ -291,7 +291,7 @@ Win11之家
 - workflows: 部署 / 集成交付
 - business_actions: 发布 / 推出, 部署 / 上线
 - affected_departments: IT / 安全
-- numbers: 5.6, 5, 10%, 50 万, 7, 19, 50%, 10
+- numbers: 5.6, 5, 10%, 50 万, 7, 19, 50%, 6
 - quotes: 暂无公开信息
 
 ## evidence_seed
@@ -350,7 +350,7 @@ Win11之家
 
 ## 原始摘要 / 采集文本
 
-OpenAI 正式向所有用户开放 GPT-5.6 系列全部三款模型（Sol、Terra、Luna），上线后流量达此前峰值两倍。为缓解压力，OpenAI 多次重置 ChatGPT Work 和 Codex 用户额度，并临时取消 Plus、Business、Pro 订阅用户每 5 小时一次的使用限制。GPT-5.6 Sol 部署新推理优化，节省的计算资源预计使可用额度提升约 10%。Banked Reset 功能已从桌面客户端扩展至网页版和移动端，约 50 万用户已获得该功能。Anthropic 将 Claude Fable 5 限时推广活动延长至 7 月 19 日，活动期间 Claude Code 每周使用额度较平时提高 50%。
+OpenAI 正式向所有用户开放 GPT-5.6 系列全部三款模型（Sol、Terra、Luna），上线后流量达此前峰值两倍。为缓解压力，OpenAI 多次重置 ChatGPT Work 和 Codex 用户额度，并临时取消 Plus、Business、Pro 订阅用户每 5 小时一次的使用限制。GPT-5.6 Sol 部署新推理优化，节省的计算资源预计使可用额度提升约 10%。Banked Reset 功能已从桌面客户端扩展至网页版和移动端，约 50 万用户已获得该功能。Anthropic 将 Claude Fable 5 限时推广活动延长至 7 月 19 日，活动期间 Claude Code 每周使用额度较平时提高 50%。 6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 OpenAI 优化 GPT-5. 6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 2026/7/13 14:17:23 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 南琴梨 的线索投递！
 
 ## 采集备注
 

@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T15:02:06.000Z"
-collected_at: 2026-07-13T07:40:19.235Z
+collected_at: 2026-07-13T08:26:47.620Z
 language: mixed
 full_text_hash: 576585eb9b75f5bc
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-077-claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and.md"
@@ -60,7 +60,7 @@ content_hash: 576585eb9b75f5bc
 semantic_hash: 19d431674ef37f94
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-12T15:02:06.000Z"
-last_seen_at: 2026-07-13T07:40:19.235Z
+last_seen_at: 2026-07-13T08:26:47.620Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":false,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例","没有变化前
 key_excerpts: [{"type":"workflow_change","text":"Claude Code now has a built-in browser that lets the AI open, read, and interact with web pages directly inside the development environment. Write actions on external sites are screened by classifiers, and purchases or account creations need user approval. The article Claude Code now has a built-in browser that lets the AI read, click, and type on external websites appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Claude Code now has a built-in browser that lets the AI read, click, and type on external websites Claude Code now has a built-in browser that lets the AI read, click, and type on external websites Claude Code now has a built-in browser that lets the AI open, read, and interact with web pages directly inside the development environment.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"workflow_change","text":"Write actions on external sites are screened by classifiers, and purchases or account creations need user approval.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Claude Code now has a built-in browser that lets the AI open, read, and interact with web pages directly inside the development environment.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"AI, Menschen, Wirtschaft AI, Menschen, Wirtschaft Matthias is the co-founder and publisher of THE DECODER, exploring how AI is fundamentally changing the relationship between humans and computers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:19.235Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.620Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

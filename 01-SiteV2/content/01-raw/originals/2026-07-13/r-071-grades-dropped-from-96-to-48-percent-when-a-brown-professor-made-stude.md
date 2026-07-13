@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T08:25:25.000Z"
-collected_at: 2026-07-13T07:40:19.190Z
+collected_at: 2026-07-13T08:26:47.583Z
 language: mixed
 full_text_hash: 7d44dca2dc011b08
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-071-grades-dropped-from-96-to-48-percent-when-a-brown-professor-made-stude.md"
@@ -60,7 +60,7 @@ content_hash: 7d44dca2dc011b08
 semantic_hash: 76754385ca2216c8
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-12T08:25:25.000Z"
-last_seen_at: 2026-07-13T07:40:19.190Z
+last_seen_at: 2026-07-13T08:26:47.583Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["证据对象不可用：疑似索引页、目录页、薄
 key_excerpts: [{"type":"company_action","text":"An economics professor at Brown University suspects most of his 86 students used AI to cheat on a take-home exam that averaged 96 percent. When he made the final an in-person test, 18 students dropped the course, nine didn't show up, and the average fell to 48.6 percent. Two large studies from China and UC Berkeley back up his case: where students lean on AI for homework, their proctored exam scores tank. The article Grades dropped from 96 to 48 percent when a Brown professor made stude","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Ad Skip to content Grades dropped from 96 to 48 percent when a Brown professor made students take the exam without AI Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 12, 2026 Midjourney prompted by THE DECODER Key Points A Brown University economics professor discovered suspected AI cheating in his class when take-home exam scores came in unusually high, raising immediate red flags about the authenticity of student work.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"When the final exam was moved to an in-person, proctored format, grades dropped sharply, prompting some students to either drop the course or fail it altogether.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Two additional studies back up this pattern, showing a clear disconnect between inflated homework grades and significantly lower performance on supervised exams, suggesting widespread use of AI tools for unsupervised assignments.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"A Brown University professor suspects most of his class used AI to cheat after a take-home exam averaged 96 percent, while an in-person test produced the lowest scores ever.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Two large studies confirm this pattern: where students rely on AI for homework, proctored exam scores collapse.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:19.190Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.583Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

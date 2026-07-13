@@ -23,7 +23,7 @@ search_path: "capital_startup"
 search_path_label: ""
 author: ""
 published_at: "2026-07-07T17:00:00.000Z"
-collected_at: 2026-07-13T07:40:18.699Z
+collected_at: 2026-07-13T08:26:47.120Z
 language: mixed
 full_text_hash: 301f95fb26d05ccd
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-002-monogram-raises-40m-seed-for-visual-ai-interface-value-add-pulse.md"
@@ -60,7 +60,7 @@ content_hash: 301f95fb26d05ccd
 semantic_hash: 83f6c6daaf6c6c08
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-07T17:00:00.000Z"
-last_seen_at: 2026-07-13T07:40:18.699Z
+last_seen_at: 2026-07-13T08:26:47.120Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"funding","text":"Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse ← Value Add Pulse FUNDING$40M seed # Monogram Raises $40M Seed for Visual AI Interface Coursera co-founder Eren Bali's new startup Monogram raised a $40 million seed led by DST Global and Lux Capital to build an AI app that gener... / query=applied AI startup raises design partner customers / intent=find_startups / path=capital_startup Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse ← Value Add Pulse FUNDING $40M seed Monogram R","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse ← Value Add Pulse FUNDING $40M seed Monogram Raises $40M Seed for Visual AI Interface Coursera co-founder Eren Bali's new startup Monogram raised a $40 million seed led by DST Global and Lux Capital to build an AI app that generates full visual interfaces instead of just text.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"$40 million seed Round size Eren Bali Founded by DST, Lux Capital Lead investors TC Trace Cohen Early-stage VC & angel · Founder, New York Venture Partners July 7, 2026 1 min read Share X LinkedIn Email Copy link THE RUNDOWN 1 Monogram, founded by Coursera co-founder Eren Bali alongside Edouard Tabet and Murat Akbal, emerged from stealth July 7 with a $40 million seed round co-led by DST Global and Lux Capital 2 The product generates an entire interactive interface -- a map, a menu, a dynamic dashboard -- in respon","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenAI, Anthropic and Google can all ship a version of this as a feature; Monogram has maybe 12-18 months before that happens.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Monogram, a new AI startup founded by Coursera co-founder Eren Bali along with Edouard Tabet and Murat Akbal, came out of stealth on July 7 with a $40 million seed round co-led by DST Global and Lux Capital .","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Bali announced the raise directly on X alongside the product launch.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:18.699Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.120Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
@@ -271,7 +271,7 @@ Machine-identity security firm Keyfactor closed a $1 billion-plus growth investm
 
 ## 原始摘要 / 采集文本
 
-Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse ← Value Add Pulse FUNDING$40M seed # Monogram Raises $40M Seed for Visual AI Interface Coursera co-founder Eren Bali's new startup Monogram raised a $40 million seed led by DST Global and Lux Capital to build an AI app that gener... / query=applied AI startup raises design partner customers / intent=find_startups / path=capital_startup Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse ← Value Add Pulse FUNDING $40M seed Monogram Raises $40M Seed for Visual AI Interface Coursera co-founder Eren Bali's new startup Monogram raised a $40 million seed led by DST Global and Lux Capital to build an AI app that generates full visual interfaces instead of just text. $40 million seed Round size Eren Bali Founded by DST, Lux Capital Lead investors TC Trace Cohen Early-stage VC & angel · Founder, New York Venture Partners July 7, 2026 1 min read Share X LinkedIn Email Copy link THE RUNDOWN 1 Monogram, founded by Coursera co-founder Eren Bali alongside Edouard Tabet and Murat Akbal, emerged from stealth July 7 with a $40 million seed round co-led by DST Global and Lux Capital 2 The product generates an entire interactive interface -- a map, a menu, a dynamic dashboard -- in respon
+Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse ← Value Add Pulse FUNDING$40M seed # Monogram Raises $40M Seed for Visual AI Interface Coursera co-founder Eren Bali's new startup Monogram raised a $40 million seed led by DST Global and Lux Capital to build an AI app that gener... / query=applied AI startup raises design partner customers / intent=find_startups / path=capital_startup Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse ← Value Add Pulse FUNDING $40M seed Monogram R Monogram Raises $40M Seed for Visual AI Interface | Value Add Pulse ← Value Add Pulse FUNDING $40M seed Monogram Raises $40M Seed for Visual AI Interface Coursera co-founder Eren Bali's new startup Monogram raised a $40 million seed led by DST Global and Lux Capital to build an AI app that generates full visual interfaces instead of just text. $40 million seed Round size Eren Bali Founded by DST, Lux Capital Lead investors TC Trace Cohen Early-stage VC & angel · Founder, New York Venture Partners July 7, 2026 1 min read Share X LinkedIn Email Copy link THE RUNDOWN 1 Monogram, founded by Coursera co-founder Eren Bali alongside Edouard Tabet and Murat Akbal, emerged from stealth July 7 with a $40 million seed round co-led by DST Global and Lux Capital 2 The product generates an entire interactive interface -- a map, a menu, a dynamic dashboard -- in respon
 
 ## 采集备注
 

@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T23:05:40.000Z"
-collected_at: 2026-07-13T07:40:19.182Z
+collected_at: 2026-07-13T08:26:47.575Z
 language: mixed
 full_text_hash: 0c3f5cfbb9b79892
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-067-openai-codex-与-chatgpt-work-暂时取消-plus-pro-business-订阅-5-小时使用限制.md"
@@ -49,7 +49,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"OpenAI Codex 与 ChatGPT Work 暂时取消 Plus/Pro/Business 订阅 5 小时使用限制","discovery_summary":"OpenAI Codex 工程负责人宣布，Codex 和 ChatGPT Work 已暂时取消 Plus、Business 和 Pro 订阅的 5 小时使用限制。平台活跃用户数突破 600 万，接下来一小时将重置使用额度。GPT-5.6 Sol 模型将进行效率优化，减少用量消耗。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/839.htm","discovered_at":"2026-07-13T07:30:42.889Z","rank_on_page":91,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"OpenAI Codex 与 ChatGPT Work 暂时取消 Plus/Pro/Business 订阅 5 小时使用限制","discovery_summary":"OpenAI Codex 工程负责人宣布，Codex 和 ChatGPT Work 已暂时取消 Plus、Business 和 Pro 订阅的 5 小时使用限制。平台活跃用户数突破 600 万，接下来一小时将重置使用额度。GPT-5.6 Sol 模型将进行效率优化，减少用量消耗。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/839.htm","discovered_at":"2026-07-13T08:19:14.658Z","rank_on_page":103,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -60,7 +60,7 @@ content_hash: 0c3f5cfbb9b79892
 semantic_hash: 7078e6af4c087fe3
 duplicate_of: ""
 first_seen_at: "2026-07-12T23:05:40.000Z"
-last_seen_at: 2026-07-13T07:40:19.182Z
+last_seen_at: 2026-07-13T08:26:47.575Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例","没有变化前
 key_excerpts: [{"type":"number","text":"OpenAI Codex 工程负责人宣布，Codex 和 ChatGPT Work 已暂时取消 Plus、Business 和 Pro 订阅的 5 小时使用限制。平台活跃用户数突破 600 万，接下来一小时将重置使用额度。GPT-5.6 Sol 模型将进行效率优化，减少用量消耗。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 13 日消息，OpenAI Codex 工程负责人蒂博 · 索蒂奥（IT之家注：Thibault Sottiaux）今天在 X 平台宣布，Codex 和 ChatGPT Work 两大工具已暂时取消 Plus / Business 和 Pro 订阅的 5 小时使用限制。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6 Sol 模型将进行效率优化，提升整体运行效率、减少用量消耗，使用户在同等额度下能够完成更多任务，详情将在稍后完成统计时公布。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"同时，OpenAI 平台的活跃用户数已经突破 600 万，接下来一小时（原帖发文时间为北京时间 1:59）将重置一次使用额度。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6 Sol 引入新的 Max 推理强度，以及借助子智能体加速复杂任务的 Ultra 模式。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在编程场景方面，Sol 在 Terminal-Bench 2.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:19.182Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.575Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
@@ -197,7 +197,7 @@ IT之家 7 月 13 日消息，OpenAI Codex 工程负责人蒂博 · 索蒂奥（
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"OpenAI Codex 与 ChatGPT Work 暂时取消 Plus/Pro/Business 订阅 5 小时使用限制","discovery_summary":"OpenAI Codex 工程负责人宣布，Codex 和 ChatGPT Work 已暂时取消 Plus、Business 和 Pro 订阅的 5 小时使用限制。平台活跃用户数突破 600 万，接下来一小时将重置使用额度。GPT-5.6 Sol 模型将进行效率优化，减少用量消耗。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/839.htm","discovered_at":"2026-07-13T07:30:42.889Z","rank_on_page":91,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"OpenAI Codex 与 ChatGPT Work 暂时取消 Plus/Pro/Business 订阅 5 小时使用限制","discovery_summary":"OpenAI Codex 工程负责人宣布，Codex 和 ChatGPT Work 已暂时取消 Plus、Business 和 Pro 订阅的 5 小时使用限制。平台活跃用户数突破 600 万，接下来一小时将重置使用额度。GPT-5.6 Sol 模型将进行效率优化，减少用量消耗。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/839.htm","discovered_at":"2026-07-13T08:19:14.658Z","rank_on_page":103,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

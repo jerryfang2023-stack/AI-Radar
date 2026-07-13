@@ -1,5 +1,5 @@
 ---
-id: SIG-20260713-A09
+id: SIG-20260713-A10
 type: signal_card
 signal_type: product_service
 title: "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器"
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T07:40:19.484Z
-updated_at: 2026-07-13T07:40:19.484Z
+created_at: 2026-07-13T08:26:47.889Z
+updated_at: 2026-07-13T08:26:47.889Z
 
 raw_refs: ["R-008"]
 pool_refs: ["P-008"]
