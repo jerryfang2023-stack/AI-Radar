@@ -335,9 +335,19 @@ jobs:
             --skip-editorial=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-business-frontstage-gate.log"
 
+      - name: Sync FDE and AI hardware Obsidian archives
+        id: business-lenses-obsidian-sync
+        if: steps.business-frontstage-gate.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/sync-business-lenses-to-obsidian.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-business-lenses-obsidian-sync.log"
+
       - name: Sync operations data after frontstage gates pass
         id: operations-data
-        if: steps.business-frontstage-gate.outcome == 'success'
+        if: steps.business-frontstage-gate.outcome == 'success' && steps.business-lenses-obsidian-sync.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |

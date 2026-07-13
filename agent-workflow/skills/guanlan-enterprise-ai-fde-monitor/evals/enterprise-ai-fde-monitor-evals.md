@@ -37,6 +37,10 @@ Run these pass/fail checks when supervising, repairing, or updating the Enterpri
    - Pass when same-date public FDE items are synced into `01-SiteV2/content/09-fde/daily/<DATE> Enterprise AI FDE.md` with source link, Raw archive link when available, and demand/service/result analysis.
    - Fail when the frontstage is updated but Obsidian `09-fde` remains stale or lacks the implementation analysis.
 
+9. `fde_history_retention`
+   - Pass when daily frontstage rebuilds retain previously gated FDE Lens Pool items for historical date selection while `meta.fdePoolCount` and `meta.itemCount` continue to describe the active date only.
+   - Fail when rebuilding a new active date overwrites the FDE arrays with active-date-only items or causes historical items to be counted as today's production.
+
 ## Repair Loop
 
 Repair the earliest failing layer, then rerun the frontstage regression gate and `sync:enterprise-ai-fde`. Add or tighten this eval before adding long prose for repeated failures.

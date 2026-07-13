@@ -31,7 +31,7 @@ function ensure(dir) {
 
 function writeText(file, text) {
   ensure(path.dirname(file));
-  if (!dryRun) fs.writeFileSync(file, text, "utf8");
+  if (!dryRun) fs.writeFileSync(file, `${String(text).trimEnd()}\n`, "utf8");
 }
 
 function walkFiles(dir, matcher = () => true) {
@@ -228,6 +228,13 @@ const dailyBody = [
   "",
 ].join("\n");
 
+const dailyViews = fs.existsSync(path.join(fdeRoot, "daily"))
+  ? fs.readdirSync(path.join(fdeRoot, "daily"))
+    .filter((name) => /^\d{4}-\d{2}-\d{2} Enterprise AI FDE\.md$/u.test(name))
+    .map((name) => path.join(fdeRoot, "daily", name))
+  : [];
+if (!dailyViews.includes(dailyFile)) dailyViews.push(dailyFile);
+
 const indexBody = [
   "---",
   "type: enterprise_ai_fde_index",
@@ -242,24 +249,21 @@ const indexBody = [
   "",
   "## Daily Views",
   "",
-  `- ${mdLink(indexFile, dailyFile, `${date} Enterprise AI FDE`)}`,
+  ...dailyViews
+    .sort((a, b) => path.basename(b).localeCompare(path.basename(a)))
+    .map((file) => `- ${mdLink(indexFile, file, path.basename(file, ".md"))}`),
   "",
 ].join("\n");
 
 writeText(dailyFile, dailyBody);
 writeText(indexFile, indexBody);
 
-if (missingRaw.length) {
-  console.error(`Missing raw archives for ${missingRaw.length} Enterprise AI / FDE items:`);
-  for (const item of missingRaw) console.error(`- ${item}`);
-  process.exit(1);
-}
-
 console.log(JSON.stringify({
   ok: true,
   date,
   dryRun,
   items: enriched.length,
+  missingRaw: missingRaw.length,
   dailyFile: rel(dailyFile),
   indexFile: rel(indexFile),
 }, null, 2));
