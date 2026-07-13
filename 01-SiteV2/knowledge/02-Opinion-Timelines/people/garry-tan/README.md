@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Garry Tan"
-opinion_count: 92
-latest_date: 2026-07-11
+opinion_count: 93
+latest_date: 2026-07-13
 ---
 
 # Garry Tan 观点时间线
-共 92 条观点，按人物 + 日期文件聚合。
+共 93 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-13](./2026-07-13.md)
 - [2026-07-11](./2026-07-11.md)
 - [2026-07-10](./2026-07-10.md)
 - [2026-07-08](./2026-07-08.md)

@@ -1,12 +1,12 @@
 ---
 type: opinion_person_timeline
 person_name: "Guillermo Rauch"
-opinion_count: 74
+opinion_count: 75
 latest_date: 2026-07-12
 ---
 
 # Guillermo Rauch 观点时间线
-共 74 条观点，按人物 + 日期文件聚合。
+共 75 条观点，按人物 + 日期文件聚合。
 ## 日期
 
 - [2026-07-12](./2026-07-12.md)
