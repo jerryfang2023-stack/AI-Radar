@@ -2442,7 +2442,7 @@ function mergeHistoricalLensItems(generatedItems = [], previousItems = [], activ
     if (item.date && item.title && item.sourceUrl && !byKey.has(key)) byKey.set(key, item);
   };
   generatedItems.forEach(add);
-  previousItems.filter((item) => item.date !== activeDate).forEach(add);
+  previousItems.forEach(add);
   return [...byKey.values()]
     .sort((a, b) => dateValue(b.date) - dateValue(a.date) || (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.id).localeCompare(String(b.id)));
 }

@@ -2,7 +2,7 @@
 type: enterprise_ai_fde_index
 status: current
 enterprise_ai_lens_version: EAI-V1.2.0-raw-card-ingestion-boundary
-updated_at: 2026-07-13T07:52:07.414Z
+updated_at: 2026-07-13T08:00:09.486Z
 ---
 
 # Enterprise AI / FDE Index

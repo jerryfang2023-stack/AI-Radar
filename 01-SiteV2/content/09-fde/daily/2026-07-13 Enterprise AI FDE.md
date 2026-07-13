@@ -16,14 +16,14 @@ item_count: 1
 - card_id: `SIG-20260713-A01`
 - subject: Taskade
 - source_title: Introducing Taskade TSK-1: The Taskade System Kernel (2026) | Taskade Blog
-- source_url: https://www.taskade.com/blog/introducing-tsk-1
+- source_url: https://taskade.com/blog/introducing-tsk-1
 - source_ref: n/a
 - title_translation_status: not_recorded
 - title_translation_method: not_recorded
 - fact_extraction_status: not_recorded
 - fact_extraction_method: not_recorded
-- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-07-13/r-017-introducing-taskade-tsk-1-the-taskade-system-kernel-2026-taskade-blog.md) / [Raw JSON](../../01-raw/originals/2026-07-13/r-017-introducing-taskade-tsk-1-the-taskade-system-kernel-2026-taskade-blog.json)
-- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/product-service/2026-07-13--signal--taskade-auto-signal-p-017.md)
+- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-07-13/r-003-introducing-taskade-tsk-1-the-taskade-system-kernel-2026-taskade-blog.md) / [Raw JSON](../../01-raw/originals/2026-07-13/r-003-introducing-taskade-tsk-1-the-taskade-system-kernel-2026-taskade-blog.json)
+- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/product-service/2026-07-13--signal--taskade-auto-signal-p-003.md)
 - stage: 平台使能
 - scenario: 企业工作流
 - workflow: 把 Agent 或模型接入业务系统

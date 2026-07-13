@@ -1,7 +1,7 @@
 ---
 type: ai_hardware_index
 status: current
-updated_at: 2026-07-13T07:52:13.759Z
+updated_at: 2026-07-13T08:00:18.001Z
 ---
 
 # AI Hardware Index
