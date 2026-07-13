@@ -2,6 +2,13 @@
 
 Keep this file short. Add only durable lessons that improve the skill itself. Do not copy command output, daily counts, or one-off production details.
 
+## 2026-07-13 Same-Date Rerun Recall Boundary
+
+- A justified same-date full rerun must carry forward readable dated Raw snapshots referenced by already published formal Cards. Search-provider randomness is not permission to erase evidence that already passed the release gates.
+- High-priority recall repair is limited to fresh, dated Core/Emerging commercial events. Undated profiles, watchlist/context records, unrelated index-only items, and voluntary policy pledges must not stop the batch over missing Chinese fields.
+- Funding databases are discovery sources, not sufficient final evidence. Resolve the original announcement or credible reporting before generating a formal funding Card.
+- Funding pages often mix valuation, related stories, rivals, public grants, and navigation chrome with the current round. Card ingestion must bind company and round amount to the source-title event before reusing translated facts or full-text sentences.
+
 ## 2026-07-13 Title And Frontstage Value Boundary
 
 - Chinese-looking output is not sufficient title quality: generic machine translation can corrupt protected product/company terms while passing script and CJK checks. Production auto mode should use the controlled business-news prompt or deterministic event rules, and leave unresolved formal-event titles blocking.

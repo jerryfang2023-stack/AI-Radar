@@ -57,3 +57,7 @@
    - Pass when RFC 2822 / RFC 1123 RSS dates are normalized, dated URLs can repair a missing feed date, stale archive entries are filtered, and each RSS source has a bounded daily contribution.
    - Pass when undated podcast/newsletter archive entries are excluded and lead-only podcast/newsletter pages cannot enter Core Pool without recapture of the original event source.
    - Fail when old podcast catalogs or newsletter roundups can fill Raw / Pool merely because post-fetch dedupe is expanding toward the Raw coverage target.
+
+16. `same_date_formal_card_source_carry_forward`
+   - Pass when a same-date rerun reuses readable, dated Raw source snapshots referenced by already published formal Cards before generated Raw is reset; a missing structured date may be recovered from the captured article body or dated URL.
+   - Fail when a valid current-day Card disappears only because the rerun's live search did not rediscover its source URL.

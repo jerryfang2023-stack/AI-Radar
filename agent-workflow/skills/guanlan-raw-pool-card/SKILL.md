@@ -72,7 +72,7 @@ node agent-workflow/tools/generate-asset-cards-from-pool.mjs --date=YYYY-MM-DD -
 
 5. Treat the generator's semantic gate as authoritative for formal Signal Cards. If a Raw / Pool candidate is rejected for stale source, generic list/report, index-only evidence, or user-feedback-only evidence, do not silently force it into `01-Signal-Cards`.
    - A historical `index_only` route or non-core importance label is not itself authoritative when the same Raw evidence is a readable, dated, confirmed commercial event. Re-evaluate the evidence object and formal event; do not let stale routing suppress a valid Card.
-   - A confirmed formal event rejected only for repairable ingestion gaps (source resolution, source date/material, or Chinese fact normalization) is a high-priority Card-recall failure. The editorial gate must stop publication until the item is repaired or its formal-event classification is corrected.
+   - A confirmed formal event rejected only for repairable ingestion gaps is a high-priority Card-recall failure only when the source is fresh and dated, the item is routed to Core/Emerging, and it has a core commercial importance type. Undated profiles, index-only discovery records, watchlist context, and non-core RSS articles must not fail the batch merely because a Chinese field is missing.
    - Run the pinned Core/high-value recall fixture after changing Card eligibility or Pool evidence classification:
 
 ```powershell
@@ -117,11 +117,13 @@ Public titles should be resolved during raw-to-card ingestion. English articles 
 
 Production auto-translation must use the controlled business-news translation prompt when its model credential is available, then deterministic event-title rules. Generic public machine-translation output is not an accepted fallback because it can mistranslate protected product/company terms while still looking Chinese; unresolved formal-event titles must block for ingestion repair instead.
 
-Funding Card facts should preserve amount / round plus investor, use of proceeds, product direction, or deployment context when present in the original source. Generic funding/list blockers should inspect source identity fields, not source-backed fact text or captured query tails.
+Funding Card facts should preserve amount / round plus investor, use of proceeds, product direction, or deployment context when present in the original source. The company and financing amount must match the current source-title event; valuation figures, related-story amounts, rival-company rounds, navigation text, and truncated page chrome must not be rewritten as the current company's financing. Generic funding/list blockers should inspect source identity fields, not source-backed fact text or captured query tails.
 
 Fact extraction also belongs to raw-to-card ingestion. Missing customer / ROI / before-after workflow details are evidence-boundary notes, not frontstage blockers for a formal Signal Card.
 
 Frontstage summaries should reuse each Card asset's source-backed `价值描述` before category-level fallback text. Repeated category boilerplate is a frontstage build defect, not a Card-content shortage.
+
+Voluntary privacy pledges and similar policy/ethics events remain backend context unless the same source proves a separate product, funding, procurement, contract, or customer event.
 
 Do not lower Card quality to satisfy a count. If many Raw / Pool candidates fail the formal Card gate, repair Pool routing or collect better Raw evidence.
 

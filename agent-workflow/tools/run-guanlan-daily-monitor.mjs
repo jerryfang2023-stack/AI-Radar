@@ -103,6 +103,7 @@ const rawDir = path.join(contentRoot, "01-raw");
 const originalDir = path.join(rawDir, "originals", date);
 const poolDir = path.join(contentRoot, "02-pool");
 const businessSignalsDir = path.join(contentRoot, "04-business-signals");
+const signalCardRoot = path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards");
 const keywordMonitoringPath = path.join(contentRoot, "11-databases", "keyword-monitoring-v2.json");
 const sourceRegistryPath = path.join(contentRoot, "11-databases", "source-registry-v2.json");
 const monitorQualityGatePath = path.join(contentRoot, "11-databases", "business-signals-gate-v3.json");
@@ -1065,6 +1066,7 @@ function score(item) {
   const text = `${item.title || ""} ${item.summary || ""} ${item.url || ""}`.toLowerCase();
   const importance = importanceProfile(item);
   let value = importance.importance_score * 1.4;
+  if (item.carried_formal_card_source) value += 20;
   if (importance.importance_type === "supporting_signal") value -= 1.5;
   if (item.theme && item.theme !== "enterprise-agent-governance" && item.theme !== "uncategorized") value += 0.6;
   // Source tier is a type label only. Curated entrances may affect capture
@@ -1633,6 +1635,7 @@ function secondarySearchDedupeKey(item = {}) {
 
 function dedupePriority(item = {}) {
   let value = 0;
+  if (item.carried_formal_card_source) value += 100;
   if (item.published_at) value += 6;
   if (/GDELT|Reuters|Bloomberg|TechCrunch|The Information|Axios|Business Wire|PR Newswire|GlobeNewswire/iu.test(`${item.source || ""} ${item.url || ""}`)) value += 3;
   if (/Anysearch|Exa|Tavily/iu.test(item.source || "")) value += 1;
@@ -1671,6 +1674,73 @@ function listJsonFilesRecursive(dir) {
     else if (entry.name.endsWith(".json")) files.push(next);
   }
   return files;
+}
+
+function publishedAtFromCapturedText(value = "") {
+  const text = String(value || "").slice(0, 1600);
+  const labeledDate = text.match(/\b(?:last updated|published(?: on)?|publication date|date)\s*[:\n-]?\s*((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20\d{2}|20\d{2}[-/]\d{1,2}[-/]\d{1,2})/iu)?.[1] || "";
+  return normalizePublishedAt(labeledDate);
+}
+
+function existingFormalCardSourceItems() {
+  const items = [];
+  for (const subdir of ["case", "funding", "product-service"]) {
+    const dir = path.join(signalCardRoot, subdir);
+    if (!fs.existsSync(dir)) continue;
+    for (const name of fs.readdirSync(dir)) {
+      if (!name.startsWith(`${date}--signal--`) || !name.endsWith(".md")) continue;
+      const markdown = fs.readFileSync(path.join(dir, name), "utf8");
+      if (!/^status:\s*published\s*$/mu.test(markdown)) continue;
+      const rawJsonRel = String(markdown.match(/^\s*raw_json:\s*"?(.+?)"?\s*$/mu)?.[1] || "").trim();
+      if (!rawJsonRel) continue;
+      const rawFile = path.resolve(root, rawJsonRel);
+      if (!fs.existsSync(rawFile)) continue;
+      const record = readJson(rawFile, null);
+      const url = canonicalUrl(record?.canonical_url || record?.original_url || "");
+      const fullText = String(record?.full_text || record?.clean_text || "").trim();
+      const publishedAt = normalizePublishedAt(record?.published_at)
+        || publishedAtFromCapturedText(fullText)
+        || normalizePublishedAt(dayFromUrl(url));
+      if (!record || !url || !fullText || !publishedAt) continue;
+      const excerptText = Array.isArray(record.key_excerpts)
+        ? record.key_excerpts.map((entry) => entry?.text || "").filter(Boolean).slice(0, 3).join(" ")
+        : "";
+      items.push({
+        acquisition_channel: record.acquisition_channel || "keyword-search",
+        original_id: record.raw_original_id || url,
+        title: record.title || record.title_zh || "",
+        summary: record.discovery_record?.discovery_summary || excerptText || fullText.slice(0, 800),
+        url,
+        source: record.source_name || "existing formal Signal Card source",
+        source_type: record.source_type || "web",
+        published_at: publishedAt,
+        category: "same-date-formal-card-source",
+        search_intent: record.search_intent || "",
+        search_path: record.search_path || "",
+        evidence_role: record.evidence_role || "",
+        registry_source_type: record.registry_source_type || "",
+        carried_formal_card_source: true,
+        carry_forward_snapshot: {
+          status: "fetched-readable-text-carry-forward",
+          text: record.clean_text || fullText,
+          full_text: fullText,
+          excerpt: excerptText || fullText.slice(0, 800),
+          fetched_at: record.collected_at || new Date().toISOString(),
+          content_type: "text/plain",
+          capture_scope: record.capture_scope || "article_text",
+          visible_range: record.visible_range || "same-date formal Card source snapshot",
+          hash: record.content_hash || record.evidence_completeness?.evidence_hash || contentHash(record.clean_text || fullText),
+          full_text_hash: record.full_text_hash || contentHash(fullText),
+          extraction_method: record.extraction_method || "same_date_formal_card_carry_forward",
+          readability_score: record.readability_score ?? 80,
+          extractor_diagnostics: record.extractor_diagnostics || { method: "same_date_formal_card_carry_forward" },
+          published_at: publishedAt,
+          error: "",
+        },
+      });
+    }
+  }
+  return items;
 }
 
 function rawDateFromArchivePath(file) {
@@ -2853,7 +2923,7 @@ async function enrichSnapshots(items) {
     while (cursor < items.length) {
       const index = cursor;
       cursor += 1;
-      const snapshot = await fetchSourceSnapshot(items[index]);
+      const snapshot = items[index].carry_forward_snapshot || await fetchSourceSnapshot(items[index]);
       enriched[index] = {
         ...items[index],
         published_at: normalizePublishedAt(items[index].published_at, snapshot.published_at),
@@ -4633,7 +4703,7 @@ async function refillPoolImportanceGaps(items, failures) {
 function normalizeCandidates(items) {
   const prepared = items
     .filter((item) => item.title || item.url)
-    .filter((item) => shouldIncludeInRawCandidates(item))
+    .filter((item) => item.carried_formal_card_source || shouldIncludeInRawCandidates(item))
     .map((item) => {
       const classified = classify(item);
       const themed = assignTheme({
@@ -4843,6 +4913,22 @@ async function runRssIngestionRegressionFixtures() {
   }
   if (!isLeadOnlyDiscoveryItem({ evidence_role: "lead-only", registry_source_type: "newsletter" })) {
     throw new Error("lead-only RSS/newsletter source could still qualify as Core evidence");
+  }
+  const carriedFormalCards = existingFormalCardSourceItems();
+  const publishedFormalCardCount = ["case", "funding", "product-service"].reduce((count, subdir) => {
+    const dir = path.join(signalCardRoot, subdir);
+    if (!fs.existsSync(dir)) return count;
+    return count + fs.readdirSync(dir).filter((name) => {
+      if (!name.startsWith(`${date}--signal--`) || !name.endsWith(".md")) return false;
+      return /^status:\s*published\s*$/mu.test(fs.readFileSync(path.join(dir, name), "utf8"));
+    }).length;
+  }, 0);
+  if (
+    !carriedFormalCards.length
+    || carriedFormalCards.length !== publishedFormalCardCount
+    || carriedFormalCards.some((item) => !item.carry_forward_snapshot?.full_text)
+  ) {
+    throw new Error("same-date rerun did not preserve already published formal Card source snapshots");
   }
   console.log(JSON.stringify({ ok: true, fixture: "rss-date-freshness-and-source-cap" }, null, 2));
 }
@@ -5601,7 +5687,13 @@ async function main() {
   } else {
     aihot = await collectAIHot();
   }
-  const primaryItems = useSourceArtifacts ? [...sourceArtifacts.items, ...aihot.items] : [...aihot.items];
+  const carriedFormalCardSources = existingFormalCardSourceItems();
+  if (carriedFormalCardSources.length) {
+    providerFallbackNotes.push(`Same-date rerun carried forward ${carriedFormalCardSources.length} already published formal Card source snapshot(s).`);
+  }
+  const primaryItems = useSourceArtifacts
+    ? [...carriedFormalCardSources, ...sourceArtifacts.items, ...aihot.items]
+    : [...carriedFormalCardSources, ...aihot.items];
   let keywordSearch = { items: [], failures: [] };
   let hn = { items: [], failures: [] };
   let gdelt = { items: [], failures: [] };
@@ -5686,6 +5778,7 @@ async function main() {
         source_artifact_dir: useSourceArtifacts ? rel(sourceArtifactDir) : "",
         source_artifact_files: sourceArtifacts.files,
         source_artifact_runs: sourceArtifacts.sourceRuns,
+        carried_formal_card_source_count: carriedFormalCardSources.length,
         anysearch_configured: Boolean(anysearchApiKey),
         anysearch_disabled_for_run: anysearchDisabledForRun,
         provider_fallback_notes: providerFallbackNotes,
