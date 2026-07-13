@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-07-12T02:56:43.300Z",
-    "feedGeneratedAt": "2026-07-12T01:19:30.460Z",
+    "generatedAt": "2026-07-13T02:57:08.880Z",
+    "feedGeneratedAt": "2026-07-12T07:09:00.834Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
     "sourceRoute": "remote-x+remote-podcasts",
@@ -9,49 +9,31 @@
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
-    "builders": 13,
-    "remarks": 27,
+    "builders": 14,
+    "remarks": 23,
     "podcasts": 1,
     "blogsBuilt": 4,
     "trackedSources": 0,
     "rawBuilders": 10,
-    "rawTweets": 19
+    "rawTweets": 15
   },
   "builders": [
     {
       "name": "Simon Willison's Blog",
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 4
+      "count": 6
     },
     {
       "name": "Garry Tan",
       "handle": "garrytan",
       "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-      "count": 3
+      "count": 2
     },
     {
       "name": "Peter Yang",
       "handle": "petergyang",
       "role": "Practical AI tutorials and interviews for busy people",
-      "count": 3
-    },
-    {
-      "name": "Thibault Sottiaux",
-      "handle": "thsottiaux",
-      "role": "Codex & ChatGPT OpenAI",
-      "count": 3
-    },
-    {
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "count": 3
-    },
-    {
-      "name": "Aditya Agarwal",
-      "handle": "adityaag",
-      "role": "General Partner SouthPkCommons, Co-Founder Bevel_Health",
       "count": 2
     },
     {
@@ -61,9 +43,9 @@
       "count": 2
     },
     {
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
       "count": 2
     },
     {
@@ -79,15 +61,39 @@
       "count": 1
     },
     {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "count": 1
+    },
+    {
+      "name": "Interconnects (Nathan Lambert)",
+      "handle": "interconnects.ai",
+      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
+      "count": 1
+    },
+    {
+      "name": "Matt Turck",
+      "handle": "mattturck",
+      "role": "VC at FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+      "count": 1
+    },
+    {
       "name": "Nikunj Kothari",
       "handle": "nikunj",
       "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
       "count": 1
     },
     {
-      "name": "Peter Steinberger",
-      "handle": "steipete",
-      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "achieve ambition with intentionality, intensity, integrity & insanity.",
+      "count": 1
+    },
+    {
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 1
     },
     {
@@ -98,41 +104,6 @@
     }
   ],
   "remarks": [
-    {
-      "id": "https://www.tigera.io/blog/save-the-address-save-the-cloud-kubevirt-vm-migration-story/",
-      "source": "blog",
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "text": "Save the Address, Save the Cloud (KubeVirt VM Migration Story)",
-      "content": "Kubernetes is built for containers, and it&#8217;s been doing that since it used to run docker as an engine for its containers. But what if you want to add VMs to the mix? After all,... The post Save the Address, Save the Cloud (KubeVirt VM Migration Story) appeared first on Tigera – Creator of Cali",
-      "contentTranslation": "Kubernetes是为容器构建的，自从它曾经将docker作为容器的引擎运行以来，它一直在这样做。但是，如果您想将虚拟机添加到组合中，该怎么办？毕竟，...帖子Save the Address, Save the Cloud （ KubeVirt虚拟机迁移故事）首先出现在Tigera – Cali的创建者",
-      "contentTranslationStatus": "translated",
-      "translation": "保存地址，保存云（ KubeVirt虚拟机迁移故事）",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Wed, 08 Jul 2026 20:45:58 +0000",
-      "date": "2026-07-09",
-      "url": "https://www.tigera.io/blog/save-the-address-save-the-cloud-kubevirt-vm-migration-story/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
     {
       "id": "https://www.bensbites.com/p/my-thoughts-on-fable",
       "source": "blog",
@@ -204,16 +175,16 @@
       "replies": 0
     },
     {
-      "id": "https://www.tigera.io/blog/save-the-address-save-the-cloud-a-hands-on-kubevirt-live-migration-workshop/",
+      "id": "https://www.interconnects.ai/p/6-months-to-live-for-open-models",
       "source": "blog",
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "text": "Save the Address, Save the Cloud: A Hands-on KubeVirt Live Migration Workshop",
-      "content": "In the previous post in this series, we covered why Virtual Machine (VM) Live Migration in Kubernetes is difficult: a VM&#8217;s IP is its identity, and the “new” VM on the destination node has to... The post Save the Address, Save the Cloud: A Hands-on KubeVirt Live Migration Workshop appeared firs",
-      "contentTranslation": "在本系列的上一篇文章中，我们介绍了为什么Kubernetes中的虚拟机（ VM ）实时迁移很困难：虚拟机的IP是其身份，目标节点上的“新”虚拟机必须...",
+      "name": "Interconnects (Nathan Lambert)",
+      "handle": "interconnects.ai",
+      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
+      "text": "6 months to live for open models",
+      "content": "The most serious test to date of open source AI&#8217;s viability is happening right now.",
+      "contentTranslation": "迄今为止，开源AI的可行性最严峻的考验正在发生。",
       "contentTranslationStatus": "translated",
-      "translation": "保存地址，保存云： KubeVirt实时迁移实践工作坊",
+      "translation": "为开放式模特而活6个月",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "产品与创业",
@@ -231,59 +202,24 @@
       ],
       "sourceType": "blog",
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Thu, 09 Jul 2026 13:58:26 +0000",
-      "date": "2026-07-09",
-      "url": "https://www.tigera.io/blog/save-the-address-save-the-cloud-a-hands-on-kubevirt-live-migration-workshop/",
+      "createdAt": "Sun, 12 Jul 2026 16:47:42 GMT",
+      "date": "2026-07-13",
+      "url": "https://www.interconnects.ai/p/6-months-to-live-for-open-models",
       "likes": 0,
       "retweets": 0,
       "replies": 0
     },
     {
-      "id": "https://tldr.tech/ai/2026-07-06",
+      "id": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything",
       "source": "blog",
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "text": "Seedance 2.5 🎥, guide to Fable ✨, OpenAI preps GPT-5.6 🚀",
-      "content": "",
-      "contentTranslation": "",
-      "contentTranslationStatus": "unavailable",
-      "translation": "Seedance 2.5 🎥，寓言指南✨， OpenAI准备GPT-5.6 🚀",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Mon, 06 Jul 2026 00:00:00 GMT",
-      "date": "2026-07-06",
-      "url": "https://tldr.tech/ai/2026-07-06",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://www.tigera.io/blog/tiered-network-policy-scaling-kubernetes-security/",
-      "source": "blog",
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "text": "Tiered Network Policy: Scaling Kubernetes Security",
-      "content": "As Kubernetes clusters scale from a few development sandboxes to massive, multi-tenant production environments, platform teams often find themselves facing a configuration management crisis. A small number of microservices suddenly demand hundreds of individual Kubernetes... The post Tiered Network",
-      "contentTranslation": "随着Kubernetes集群从几个开发沙箱扩展到大规模的多租户生产环境，平台团队经常发现自己面临配置管理危机。少数微服务突然需要数百个单独的Kubernetes... POST分层网络",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Directly Responsible Individuals (DRI)",
+      "content": "Directly Responsible Individuals (DRI) I went looking for a definition of \"Directly Responsible Individuals\" and the best I found was in the GitLab handbook. Apparently the term",
+      "contentTranslation": "直接责任人员（ DRI ）我去寻找“直接责任人员”的定义，我发现最好的定义是在GitLab手册中。显然这个术语",
       "contentTranslationStatus": "translated",
-      "translation": "分层网络策略：扩展Kubernetes安全性",
+      "translation": "直接责任人（ DRI ）",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "产品与创业",
@@ -301,21 +237,24 @@
       ],
       "sourceType": "blog",
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Fri, 10 Jul 2026 16:12:22 +0000",
-      "date": "2026-07-11",
-      "url": "https://www.tigera.io/blog/tiered-network-policy-scaling-kubernetes-security/",
+      "createdAt": "2026-07-12T23:57:14+00:00",
+      "date": "2026-07-13",
+      "url": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything",
       "likes": 0,
       "retweets": 0,
       "replies": 0
     },
     {
-      "id": "2076112137475506378",
-      "source": "x",
-      "name": "Peter Yang",
-      "handle": "petergyang",
-      "role": "Practical AI tutorials and interviews for busy people",
-      "text": "Go Argentina!! 🇦🇷",
-      "translation": "去阿根廷吧！ ！ 🇦🇷",
+      "id": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Fable gets another bump",
+      "content": "One of the consequences of GPT-5.6 Sol being clearly a Fable/Mythos class model is that Anthropic have, once again, bumped the date that Fable stops being available in their Claude Max plans: We're extending Claud",
+      "contentTranslation": "GPT-5.6 Sol显然是一个寓言/神话类模型的后果之一是， Anthropic再次推迟了寓言在他们的Claude Max计划中不再可用的日期：我们正在扩展Claud",
+      "contentTranslationStatus": "translated",
+      "translation": "寓言获得另一个颠簸",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "产品与创业",
@@ -331,119 +270,23 @@
           "group": "track"
         }
       ],
-      "sourceType": "social",
+      "sourceType": "blog",
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-12T01:11:20.000Z",
-      "date": "2026-07-12",
-      "url": "https://x.com/petergyang/status/2076112137475506378",
-      "likes": 2,
-      "retweets": 0,
-      "replies": 1
-    },
-    {
-      "id": "2076084443920683119",
-      "source": "x",
-      "name": "Aditya Agarwal",
-      "handle": "adityaag",
-      "role": "General Partner SouthPkCommons, Co-Founder Bevel_Health",
-      "text": "Halfs --> Quarters\nFreeflow --> VAR\nPlayer and Coach Reviews --> Coming Soon\n\nThe World Cup 2048 will be brought to you by FIFA-NFL.",
-      "translation": "半场-- >季度自由流动-- > VAR球员和教练评论-- >即将推出FIFA-NFL将为您带来2048年世界杯。",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-11T23:21:17.000Z",
-      "date": "2026-07-12",
-      "url": "https://x.com/adityaag/status/2076084443920683119",
-      "likes": 7,
+      "createdAt": "2026-07-12T21:20:07+00:00",
+      "date": "2026-07-13",
+      "url": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
+      "likes": 0,
       "retweets": 0,
       "replies": 0
     },
     {
-      "id": "2076054439140720719",
+      "id": "2076155833428431012",
       "source": "x",
-      "name": "Thibault Sottiaux",
-      "handle": "thsottiaux",
-      "role": "Codex & ChatGPT OpenAI",
-      "text": "New poster for our office that shows how resets of the Codex usage limits affects part of our systems. Data is beautiful. https://t.co/84DCX4XfbF",
-      "translation": "我们办公室的新海报展示了Codex使用限制的重置如何影响我们的部分系统。数据是美丽的。",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-11T21:22:04.000Z",
-      "date": "2026-07-12",
-      "url": "https://x.com/thsottiaux/status/2076054439140720719",
-      "likes": 2488,
-      "retweets": 69,
-      "replies": 228
-    },
-    {
-      "id": "2076050876314300478",
-      "source": "x",
-      "name": "Peter Yang",
-      "handle": "petergyang",
-      "role": "Practical AI tutorials and interviews for busy people",
-      "text": "This is super cool but I wonder how all these benchmarks work? How do you benchmark design taste? https://t.co/Lj4eIDjq3Y",
-      "translation": "这太酷了，但我想知道所有这些基准是如何工作的？您如何对设计品味进行基准测试？",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-11T21:07:54.000Z",
-      "date": "2026-07-12",
-      "url": "https://x.com/petergyang/status/2076050876314300478",
-      "likes": 18,
-      "retweets": 1,
-      "replies": 15
-    },
-    {
-      "id": "2076047290083733539",
-      "source": "x",
-      "name": "Aditya Agarwal",
-      "handle": "adityaag",
-      "role": "General Partner SouthPkCommons, Co-Founder Bevel_Health",
-      "text": "Everything in AI moves so fast.\n\nWe are going to get here:\n- Run all the agents in the cloud\n- Choose any model (frontier, OSS, Chinese, American)\n- Choose any harness\n- Have full tracing\n- Have recursive improvement loops\n\nI know it will be there but can it happen already?",
-      "translation": "AI中的一切都发展得如此之快。我们将到达这里： -运行云中的所有Agent-选择任何模型（前沿， OSS ，中文，美国） -选择任何线束-具有完整的跟踪-具有递归改进循环，我知道它会在那里，但它已经发生了吗？",
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "achieve ambition with intentionality, intensity, integrity & insanity.",
+      "text": "if you only learned about jevons paradox primarily wrt software demand in the age of agentic engineering, you may not have fully internalized jevons parodox’s impact under the conditions of:\n\n- humans who can wield coding agents well*\n- coding agents breaking containment to all other knowledge work\n\nas the efficiency of labor goes up/unit cost of knowledge work goes broadly down, the demand for total work and better knowledge goes up, not down.\n\nwhat happened to coding isnt the exception; it’s the herald.\n\n*aka AI Engineers",
+      "translation": "如果你只了解jevons悖论，主要是agentic engineering时代的软件需求，那么在以下情况下，你可能没有完全内化jevons悖论的影响： -能够很好地使用编码Agent的人* -随着劳动力效率的提高/知识工作的单位成本大幅下降，对总工作和更好知识的需求上升，而不是下降，编码Agent打破了对所有其他知识工作的遏制。\n编码发生了什么不是例外；它是预兆。* aka AI Engineers",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "Agent",
@@ -461,21 +304,21 @@
       ],
       "sourceType": "social",
       "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
-      "createdAt": "2026-07-11T20:53:39.000Z",
+      "createdAt": "2026-07-12T04:04:58.000Z",
       "date": "2026-07-12",
-      "url": "https://x.com/adityaag/status/2076047290083733539",
-      "likes": 80,
-      "retweets": 6,
-      "replies": 16
+      "url": "https://x.com/swyx/status/2076155833428431012",
+      "likes": 143,
+      "retweets": 9,
+      "replies": 28
     },
     {
-      "id": "2076036901824532530",
+      "id": "2076151956440261008",
       "source": "x",
-      "name": "Sam Altman",
-      "handle": "sama",
-      "role": "AI is cool i guess",
-      "text": "so far at least, i'm pretty sure AI has been net job-creating.\n\nthis was not what i expected--although i was much less pessimistic than others, i thought by this level of capability we'd have seen some impact.\n\nit is possible this direction keeps going!",
-      "translation": "至少到目前为止，我很确定AI一直在创造净就业机会。这不是我所期望的--尽管我比其他人悲观得多，但我认为通过这种能力水平，我们会看到一些影响。这个方向可能会继续下去！",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "Easy money (Swiss francs)",
+      "translation": "轻松赚钱（瑞士法郎）",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "产品与创业",
@@ -493,21 +336,53 @@
       ],
       "sourceType": "social",
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-11T20:12:22.000Z",
+      "createdAt": "2026-07-12T03:49:34.000Z",
       "date": "2026-07-12",
-      "url": "https://x.com/sama/status/2076036901824532530",
-      "likes": 7437,
-      "retweets": 280,
-      "replies": 1223
+      "url": "https://x.com/rauchg/status/2076151956440261008",
+      "likes": 298,
+      "retweets": 6,
+      "replies": 26
     },
     {
-      "id": "2076022807365079342",
+      "id": "2076151105080447404",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "The score is 3 vs 1 but imo this was a very mixed performance from Argentina.\n\nNot sure how they’ll do against England.",
+      "translation": "比分是3比1 ，但国际海事组织（ IMO ）在阿根廷的表现非常复杂。不知道他们会如何对付英格兰。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-12T03:46:11.000Z",
+      "date": "2026-07-12",
+      "url": "https://x.com/petergyang/status/2076151105080447404",
+      "likes": 31,
+      "retweets": 0,
+      "replies": 17
+    },
+    {
+      "id": "2076150076087611433",
       "source": "x",
       "name": "Nikunj Kothari",
       "handle": "nikunj",
       "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
-      "text": "Ok Fable and Sol got me a fully working iOS app in a few hours based on the backend and the web app.. \n\nwhat an insane world we live in 🤯 https://t.co/RWTUEaHYrM https://t.co/mECJqpkd8h",
-      "translation": "好吧，寓言和索尔在几个小时内基于后端和网络应用程序为我提供了一个完全正常工作的iOS应用程序……我们生活在一个多么疯狂的世界 🤯",
+      "text": "Argentina has the mandate of heaven.. what a strike by Alvarez. \n\nEngland vs. Argentina\n\nFrance vs. Spain\n\nPure cinema 💥",
+      "translation": "阿根廷有天堂的使命……阿尔瓦雷斯的罢工。英格兰vs阿根廷法国vs西班牙纯电影 💥",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "产品与创业",
@@ -525,245 +400,21 @@
       ],
       "sourceType": "social",
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-11T19:16:22.000Z",
+      "createdAt": "2026-07-12T03:42:05.000Z",
       "date": "2026-07-12",
-      "url": "https://x.com/nikunj/status/2076022807365079342",
-      "likes": 24,
+      "url": "https://x.com/nikunj/status/2076150076087611433",
+      "likes": 23,
       "retweets": 1,
-      "replies": 1
+      "replies": 6
     },
     {
-      "id": "2076021263945039876",
+      "id": "2076145711922696371",
       "source": "x",
       "name": "Thibault Sottiaux",
       "handle": "thsottiaux",
       "role": "Codex & ChatGPT OpenAI",
-      "text": "You know it's a good model when you grow more in 1 day than last two weeks combined.\n\nInstall the desktop app from https://t.co/K5PquKnV4q and give it a go! https://t.co/WyQwrT98Xo",
-      "translation": "当您在1天内增长超过过去两周的总和时，这是一个很好的模型。从安装桌面应用程序并试用！",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "AI 基础设施",
-      "columnTags": [
-        {
-          "id": "opinion-model-infra",
-          "name": "模型基础设施观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-infra",
-          "name": "AI 基础设施",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
-      "createdAt": "2026-07-11T19:10:14.000Z",
-      "date": "2026-07-12",
-      "url": "https://x.com/thsottiaux/status/2076021263945039876",
-      "likes": 2785,
-      "retweets": 75,
-      "replies": 375
-    },
-    {
-      "id": "2076013212043182375",
-      "source": "x",
-      "name": "Peter Steinberger",
-      "handle": "steipete",
-      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
-      "text": "Let me verify a couple of load-bearing facts before I give you the architecture assessment.",
-      "translation": "在为您提供架构评估之前，让我验证一些承重事实。",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-11T18:38:14.000Z",
-      "date": "2026-07-12",
-      "url": "https://x.com/steipete/status/2076013212043182375",
-      "likes": 698,
-      "retweets": 14,
-      "replies": 60
-    },
-    {
-      "id": "2076002866582675674",
-      "source": "x",
-      "name": "Garry Tan",
-      "handle": "garrytan",
-      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-      "text": "Defund the grifters who created the SF Doom Loop https://t.co/VSQ7a7XDZe",
-      "translation": "拆除创建SF Doom Loop的骗子",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-11T17:57:08.000Z",
-      "date": "2026-07-12",
-      "url": "https://x.com/garrytan/status/2076002866582675674",
-      "likes": 210,
-      "retweets": 12,
-      "replies": 13
-    },
-    {
-      "id": "2075999617666445714",
-      "source": "x",
-      "name": "Peter Yang",
-      "handle": "petergyang",
-      "role": "Practical AI tutorials and interviews for busy people",
-      "text": "My process for a new project this weekend:\n\n-> Use Fable to build plan.html with design guidelines\n-> Use Claude Design to make components + screens\n-> Get gpt 5.6 to build",
-      "translation": "我本周末新项目的流程： - >使用Fable根据设计指南构建plan.html - >使用Claude Design制作组件+屏幕- >获取gpt 5.6来构建",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-11T17:44:13.000Z",
-      "date": "2026-07-12",
-      "url": "https://x.com/petergyang/status/2075999617666445714",
-      "likes": 144,
-      "retweets": 3,
-      "replies": 22
-    },
-    {
-      "id": "2075985056846451123",
-      "source": "x",
-      "name": "Sam Altman",
-      "handle": "sama",
-      "role": "AI is cool i guess",
-      "text": "\"physicians found fewer flaws in GPT-5.6 responses than physician-written responses.\" https://t.co/n4J37XVqNM",
-      "translation": "“医生发现GPT-5.6反应的缺陷少于医生写的反应。”",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-11T16:46:22.000Z",
-      "date": "2026-07-12",
-      "url": "https://x.com/sama/status/2075985056846451123",
-      "likes": 4061,
-      "retweets": 234,
-      "replies": 334
-    },
-    {
-      "id": "2075975184293765564",
-      "source": "x",
-      "name": "Garry Tan",
-      "handle": "garrytan",
-      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-      "text": "Make something agents want https://t.co/vJRQkdIoV3",
-      "translation": "制作客服代表想要的餐点",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "Agent",
-      "columnTags": [
-        {
-          "id": "opinion-agent-workflow",
-          "name": "Agent 工作流观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "Agentic AI",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
-      "createdAt": "2026-07-11T16:07:08.000Z",
-      "date": "2026-07-12",
-      "url": "https://x.com/garrytan/status/2075975184293765564",
-      "likes": 423,
-      "retweets": 14,
-      "replies": 50
-    },
-    {
-      "id": "2075963779599466894",
-      "source": "x",
-      "name": "Aaron Levie",
-      "handle": "levie",
-      "role": "ceo box - your business lives in content. unleash it with AI",
-      "text": "This is a great post if youre thinking about applied AI in the enterprise. The headline of this post is about what companies have huge upside from AI, but the deepest nuggets are about what AI transformation looks like in an organization.\n\nIt’s fundamentally about changing the underlying workflow or business process. As we move from chat tools to agents, those agents actually have to be deployed against workflows, which usually span multiple functions in an org. This is a different way of deploying AI than solely rolling it out to end users. It takes much more work upfront, but the results are the things that actually drive significant ROI. \n\n“Software asks the employee to adopt a tool, but infrastructure changes the operating layer underneath the employee. The employee should still know what happened, and the process owner should still be able to pause the workflow, change a rule, approve an exception, or pull a person back in when needed. But the value should not depend on someone remembering to use the AI every day.”\n\nThe winners of this will be the platforms that can be deployed for specific workflows and business processes with a deep domain expertise. The playbook will often heavily require FDE support, change management, getting data well organized, be able to have comprehensive evals for the workflows, and much more to get right.",
-      "translation": "如果您正在考虑在企业中应用AI，这是一个很好的帖子。这篇文章的标题是关于公司从AI中获得的巨大好处，但最深层次的是关于AI转型在组织中的样子。从根本上说，这是关于改变底层工作流或业务流程。当我们从聊天工具转向座席时，这些座席实际上必须针对工作流进行部署，这些工作流通常跨越组织中的多个职能部门。\n这是一种部署AI的不同方式，而不仅仅是将其推广到最终用户。它需要预先做更多的工作，但结果是实际上可以带来显著的投资回报。“软件要求员工采用工具，但基础设施改变了员工下面的操作层。\n员工仍应知道发生了什么，流程所有者仍应能够暂停工作流、更改规则、批准例外情况或在需要时将人员拉回。但价值不应取决于某人记得每天使用AI。“获胜者将是可以部署到具有深厚领域专业知识的特定工作流和业务流程的平台。\n该剧本通常需要FDE支持、变革管理、妥善组织数据、能够对工作流进行全面评估等等。",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "Agent",
-      "columnTags": [
-        {
-          "id": "opinion-agent-workflow",
-          "name": "Agent 工作流观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-agent",
-          "name": "Agentic AI",
-          "group": "track"
-        }
-      ],
-      "sourceType": "social",
-      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
-      "createdAt": "2026-07-11T15:21:49.000Z",
-      "date": "2026-07-11",
-      "url": "https://x.com/levie/status/2075963779599466894",
-      "likes": 510,
-      "retweets": 76,
-      "replies": 42
-    },
-    {
-      "id": "2075961345351307739",
-      "source": "x",
-      "name": "Thibault Sottiaux",
-      "handle": "thsottiaux",
-      "role": "Codex & ChatGPT OpenAI",
-      "text": "If you were using Codex before, two things to do\n\n1. Keep using Codex. It is for you\n2. Tell your friends and family about ChatGPT Work who you always wanted to show Codex but they’re not as technical and don’t work with code every day\n\nand tell me how it goes",
-      "translation": "如果您之前使用Codex ，有两件事要做1.继续使用Codex。适合您2.告诉您的朋友和家人关于ChatGPT Work的事情，你一直想向他们展示Codex ，但他们并不是那么技术性，也不是每天都在使用代码，请告诉我情况如何",
+      "text": "At different times you complained about speed, code slop, frontend quality, ... With each release we improve and GPT 5.6 Sol is  \n\n✅Fast and token efficient\n✅Hardcore at back-end dev\n✅Great at front-end\n✅Does not use useEffect everywhere \n\nWhat is next?",
+      "translation": "在不同的时间，您抱怨速度，代码斜率，前端质量，...随着每个版本的改进， GPT 5.6 SOL在后端开发中是✅快速和代币高效的✅Hardcore在前端✅很棒✅没有在任何地方使用useEffect下一步是什么？",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "AI 编程",
@@ -781,21 +432,21 @@
       ],
       "sourceType": "social",
       "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
-      "createdAt": "2026-07-11T15:12:08.000Z",
-      "date": "2026-07-11",
-      "url": "https://x.com/thsottiaux/status/2075961345351307739",
-      "likes": 3713,
-      "retweets": 107,
-      "replies": 737
+      "createdAt": "2026-07-12T03:24:45.000Z",
+      "date": "2026-07-12",
+      "url": "https://x.com/thsottiaux/status/2076145711922696371",
+      "likes": 2557,
+      "retweets": 55,
+      "replies": 805
     },
     {
-      "id": "2075945096860807494",
+      "id": "2076143769192484900",
       "source": "x",
-      "name": "Garry Tan",
-      "handle": "garrytan",
-      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
-      "text": "CEQA kills thousands of units of housing every year in San Francisco, here's just one example https://t.co/DfZe836WOU",
-      "translation": "CEQA每年在旧金山杀死数千套住房，这里仅举一个例子",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "They’re playing so badly even up one man",
+      "translation": "他们打得太糟糕了，甚至连一个人",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "产品与创业",
@@ -813,21 +464,53 @@
       ],
       "sourceType": "social",
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-11T14:07:34.000Z",
-      "date": "2026-07-11",
-      "url": "https://x.com/garrytan/status/2075945096860807494",
-      "likes": 28,
+      "createdAt": "2026-07-12T03:17:02.000Z",
+      "date": "2026-07-12",
+      "url": "https://x.com/petergyang/status/2076143769192484900",
+      "likes": 20,
       "retweets": 2,
-      "replies": 1
+      "replies": 4
     },
     {
-      "id": "2075930909669515753",
+      "id": "2076141940484010189",
+      "source": "x",
+      "name": "Matt Turck",
+      "handle": "mattturck",
+      "role": "VC at FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+      "text": "Argentina struggled against the world's #64, almost got eliminated by the world's #26, and they're now in extra time against the world's #19 which is down to 10 players.",
+      "translation": "阿根廷队与世界排名第64位的球员搏斗，几乎被世界排名第26位的球员淘汰出局，他们现在处于与世界排名第19位的球员对抗的加时赛中，后者只有10名球员。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-12T03:09:46.000Z",
+      "date": "2026-07-12",
+      "url": "https://x.com/mattturck/status/2076141940484010189",
+      "likes": 4966,
+      "retweets": 418,
+      "replies": 105
+    },
+    {
+      "id": "2076130810143367453",
       "source": "x",
       "name": "Zara Zhang",
       "handle": "zarazhangrui",
       "role": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
-      "text": "The line between \"builder\" and \"creator\" is blurring\n\nThis is the best time for builders to create content and for creators to build products",
-      "translation": "“构建者”和“创作者”之间的界限模糊不清这是构建者创建内容和创作者构建产品的最佳时机",
+      "text": "Ok 5.6 Sol is very good at front end 👌 https://t.co/vubmHarGCG",
+      "translation": "OK 5.6 Sol在前端非常好 👌",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
       "topic": "产品与创业",
@@ -845,12 +528,204 @@
       ],
       "sourceType": "social",
       "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-11T13:11:12.000Z",
+      "createdAt": "2026-07-12T02:25:32.000Z",
+      "date": "2026-07-12",
+      "url": "https://x.com/zarazhangrui/status/2076130810143367453",
+      "likes": 110,
+      "retweets": 1,
+      "replies": 26
+    },
+    {
+      "id": "2076119366647894371",
+      "source": "x",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
+      "text": "If you aren't yet bold enough to install the Codex app, you can stay in the presence of your orange crab and point it at GPT 5.6 Sol. Takes 5 minutes. Kudos to Theo for explaining one of the ways to get this done.\n\nStep 1: Install CLIProxyAPI\nStep 2: Connect\nStep 3: Define following alias and enjoy claudex\n\n```\nalias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\\nCLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\\nCLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\\nENABLE_TOOL_SEARCH=false \\\nclaude --model gpt-5.6-sol'\n```\n\nIf this gets blocked, I owe you a reset.",
+      "translation": "如果您还不够大胆，无法安装Codex应用程序，您可以留在橙色螃蟹面前，并将其指向GPT 5.6 SOL。需要5分钟。感谢Theo解释完成此操作的方法之一。\n第1步：安装CLIProxyAPI第2步：连接第3步：定义以下别名并享受claudex `` `alias claudex =' CLAUDE_CODE_SUBAGENT_MODEL = gpt-5.6-sol\\ CLAUDE_CODE_ALWAYS_ENABLE_EFFORT = 1\\ CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY = 3\\ ENABLE_TOOL_SEARCH = FALSE\\ CLAUDE --model gpt-5.6-sol '' '' '` `` ``如果这被阻止，我欠你一个重置。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "2026-07-12T01:40:04.000Z",
+      "date": "2026-07-12",
+      "url": "https://x.com/thsottiaux/status/2076119366647894371",
+      "likes": 3871,
+      "retweets": 243,
+      "replies": 315
+    },
+    {
+      "id": "2076116544980214164",
+      "source": "x",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "ceo box - your business lives in content. unleash it with AI",
+      "text": "The job that AI was supposed to replace is experiencing the opposite of the expected outcome. Software job postings are outpacing other fields.\n\nWhy is that? If you lower the cost of production of something that has lots of use cases, people want more things produced. We’ve seen this play out in the industrial world constantly, and now we’re finally seeing it in knowledge work.\n\nBecause software now is much lower to cost per unit, people want way more of it. So we start to use software for all new things and people and companies light up more software projects than ever before. \n\nBut because the job itself is not fully automated (and likely won’t be for as far out as we can see), you still need people that understand these systems to maintain the code, decide what to build, run it over the long run, update it, and more. That all requires people to do work. \n\nThe same thing is going to happen in many other fields as well as we bring down the cost of production of previously extremely scarce areas of work. Agents will cause more abundance than replacement.",
+      "translation": "AI应该取代的工作正在经历与预期结果相反的情况。软件职位发布的速度超过了其他领域。为什么会这样？如果你降低了具有大量用例的产品的生产成本，人们希望生产更多的产品。我们经常在工业世界中看到这种情况，现在我们终于在知识工作中看到了它。因为软件现在比单位成本低得多，所以人们想要更多。\n因此，我们开始将软件用于所有新事物，个人和公司点亮的软件项目比以往任何时候都多。但由于作业本身并不完全自动化（而且可能不会像我们所看到的那样完全自动化） ，因此您仍然需要了解这些系统的人员来维护代码、决定构建的内容、长期运行它、更新它等等。这一切都需要人们去做工作。\n在许多其他领域也会发生同样的事情，因为我们降低了以前极其稀缺的工作领域的生产成本。药物会比替代品产生更多的丰富性。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-12T01:28:51.000Z",
+      "date": "2026-07-12",
+      "url": "https://x.com/levie/status/2076116544980214164",
+      "likes": 193,
+      "retweets": 20,
+      "replies": 31
+    },
+    {
+      "id": "2075983427019612242",
+      "source": "x",
+      "name": "Sam Altman",
+      "handle": "sama",
+      "role": "AI is cool i guess",
+      "text": "there are a lot of benchmarks that suggest 5.6 sol is the best model in the world right now, but the most reliable way to tell is that elon is obsessed with me again",
+      "translation": "有很多基准表明5.6 sol是目前世界上最好的模型，但最可靠的方法是Elon再次沉迷于我",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "2026-07-11T16:39:53.000Z",
+      "date": "2026-07-12",
+      "url": "https://x.com/sama/status/2075983427019612242",
+      "likes": 49330,
+      "retweets": 2330,
+      "replies": 3404
+    },
+    {
+      "id": "2075982820322025788",
+      "source": "x",
+      "name": "Sam Altman",
+      "handle": "sama",
+      "role": "AI is cool i guess",
+      "text": "30% of the cost was on fable at these levels of usage? https://t.co/KzFoHj7cB4",
+      "translation": "在这些使用水平上， 30%的成本是在寓言上？",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-11T16:37:28.000Z",
+      "date": "2026-07-12",
+      "url": "https://x.com/sama/status/2075982820322025788",
+      "likes": 9734,
+      "retweets": 225,
+      "replies": 388
+    },
+    {
+      "id": "2075944103867830352",
+      "source": "x",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+      "text": "If you want to supercharge building in California again, you're going to need to repeal and reform CEQA\n\nMillions of units of housing are blocked every year using CEQA. Housing should be built by-right, and not require the level of review it does today. https://t.co/TE4s7Dz7jD",
+      "translation": "如果您想再次为加利福尼亚州的建筑增压，您需要废除和改革CEQA每年有数百万套住房被CEQA封锁。房屋应以权利为基础建造，无需像今天这样的审查级别。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-11T14:03:38.000Z",
       "date": "2026-07-11",
-      "url": "https://x.com/zarazhangrui/status/2075930909669515753",
-      "likes": 230,
-      "retweets": 9,
-      "replies": 45
+      "url": "https://x.com/garrytan/status/2075944103867830352",
+      "likes": 219,
+      "retweets": 15,
+      "replies": 27
+    },
+    {
+      "id": "2075933358660730901",
+      "source": "x",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+      "text": "So much could go wrong\n\nBut the interesting question is always: what happens if things go right?",
+      "translation": "出错的可能性太大了，但有趣的问题总是：如果一切顺利，会发生什么？",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-11T13:20:56.000Z",
+      "date": "2026-07-11",
+      "url": "https://x.com/garrytan/status/2075933358660730901",
+      "likes": 1612,
+      "retweets": 145,
+      "replies": 207
     },
     {
       "id": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
@@ -996,10 +871,10 @@
   "podcasts": [
     {
       "source": "podcast",
-      "name": "The MAD Podcast with Matt Turck",
-      "title": "Stripe's AI Chief: How AI Agents Will Buy, Sell, and Pay",
-      "url": "https://www.youtube.com/@DataDrivenNYC/videos",
-      "publishedAt": "2026-07-09T11:30:01.000Z",
+      "name": "No Priors",
+      "title": "Travel Through the Lens of AI with with Booking.com CEO Glenn Fogel",
+      "url": "https://www.youtube.com/watch?v=8nj_0wZkbtA",
+      "publishedAt": "2026-07-09T10:00:00.000Z",
       "excerpt": ""
     }
   ]
