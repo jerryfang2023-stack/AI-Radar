@@ -2414,6 +2414,8 @@ function isHomepageOrDirectoryObservation(item = {}, snapshotText = "", excerpts
     pathName = "";
   }
   const rootLike = pathName === "/" || pathName === "" || /^\/(?:index\.html?)?$/iu.test(pathName);
+  const articleLikePath = /\/\d+\/\d+\/\d+\.(?:html?|shtml)$|\/(?:news|press|blog|article|stories)\/[^/]+/iu.test(pathName);
+  if (!rootLike && articleLikePath && hasExplicitChangeAction(item, snapshotText, excerpts)) return false;
   const directoryPattern = /官网|首页|开放平台|产品服务|热门产品|产品目录|解决方案|文档中心|开发文档|控制台|登录|注册|用户中心|财务及订单|消息中心|工单|免费开通|立即使用|查看详情|工具集|导航|大全|搜索结果|home\s?page|platform|pricing|docs|documentation|console|login|sign in|sign up|products|solutions/iu;
   if (!directoryPattern.test(text)) return false;
   return rootLike || /工具集|导航|大全|搜索结果|产品目录|热门产品|控制台|登录|用户中心|财务及订单|消息中心|工单/iu.test(text);
@@ -4756,6 +4758,18 @@ async function runEvidenceObjectRegressionFixtures() {
   const releaseGate = commercialSignalHardGate(kimiRelease, releaseText, releaseExcerpts);
   if (releaseType !== "event" || !releaseGate.actionDetected || !releaseGate.evidenceObjectUsable) {
     throw new Error(`confirmed Chinese product release misclassified: ${JSON.stringify({ releaseType, releaseGate })}`);
+  }
+
+  const articleWithNavigation = {
+    title: "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市",
+    url: "https://www.ithome.com/0/975/871.htm",
+    source: "IT之家（RSS）",
+    summary: "小鹏汽车今日宣布新车将正式上市。页面尾部含消息中心和工单导航。",
+  };
+  const articleText = `${articleWithNavigation.summary} 小鹏汽车宣布该车型是首款中国与欧洲同步上市的全球车型。`;
+  const articleGate = commercialSignalHardGate(articleWithNavigation, articleText, [{ type: "product_update", text: articleText }]);
+  if (!articleGate.evidenceObjectUsable || articleGate.directoryObservation) {
+    throw new Error(`dated event article was misclassified from page navigation text: ${JSON.stringify(articleGate)}`);
   }
 
   const research = {

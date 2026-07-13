@@ -1,0 +1,275 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-023",
+  "title": "微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\"",
+  "title_zh": "微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\"",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://www.ithome.com/0/975/816.htm",
+  "canonical_url": "https://ithome.com/0/975/816.htm",
+  "source_name": "IT之家（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-12T12:45:22.000Z",
+  "collected_at": "2026-07-13T03:44:12.158Z",
+  "language": "mixed",
+  "full_text": "IT之家 7 月 12 日消息，微软研究院联合中国人民大学 IDEAS Lab 联合推出了开源可视化中间语言 Flint，可以让 AI 智能体“一句话生成” Vega-Lite、ECharts、 Chart.js 的可渲染图表。\n据介绍，现有可视化库通常提供大量配置选项，若采用精简配置，生成的图表未必适合数据内容；若要求大语言模型直接输出完整配置，又容易因参数过多而出现冲突、遗漏或不一致。因此 Flint 在设计之初将图表意图与底层可视化库实现分离，以减少 AI 生成配置时的复杂度。\n具体来看，Flint 的规格主要分为数据定义和图表定义两部分。数据部分可标注字段的语义类型，例如年月、价格、百分比、利润、国家或排名等；图表部分则用于指定图表类型，确认各字段映射到 X 轴、Y 轴、颜色、大小或分面（Facet）等视觉元素。其编译器能够结合数据语义、图表类型和字段映射，自动推导时间解析方式、聚合规则、数值格式、配色方案及布局。例如，利润字段可自动采用体现正负变化的发散色阶，而日期字段则会自动使用对应的时间解析规则和坐标轴格式。\n开发人员同时发布了 flint-chart-mcp 服务器，使支持 MCP（Model Context Protocol）的 AI 智能体能够在对话中直接创建 / 预览图表，全程无需离开聊天窗口。\n在评测中，微软将 Flint 与直接生成完整 Vega-Lite 配置的方案 DirectVL 进行了对比。根据大语言模型评分结果，Flint 在 GPT-5.1、GPT-5-mini 和 GPT-4.1 三组测试中均获得更高的综合评分。\n目前，Flint 已应用于微软研究院的数据分析工具 Data Formulator，官方也同步开源了 flint-chart 库、MCP 服务器及相关文档供开发者使用，IT之家附 GitHub 项目地址（ https://github.com/microsoft/flint-chart ）。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
+  "clean_text": "IT之家 7 月 12 日消息，微软研究院联合中国人民大学 IDEAS Lab 联合推出了开源可视化中间语言 Flint，可以让 AI 智能体“一句话生成” Vega-Lite、ECharts、 Chart.js 的可渲染图表。\n据介绍，现有可视化库通常提供大量配置选项，若采用精简配置，生成的图表未必适合数据内容；若要求大语言模型直接输出完整配置，又容易因参数过多而出现冲突、遗漏或不一致。因此 Flint 在设计之初将图表意图与底层可视化库实现分离，以减少 AI 生成配置时的复杂度。\n具体来看，Flint 的规格主要分为数据定义和图表定义两部分。数据部分可标注字段的语义类型，例如年月、价格、百分比、利润、国家或排名等；图表部分则用于指定图表类型，确认各字段映射到 X 轴、Y 轴、颜色、大小或分面（Facet）等视觉元素。其编译器能够结合数据语义、图表类型和字段映射，自动推导时间解析方式、聚合规则、数值格式、配色方案及布局。例如，利润字段可自动采用体现正负变化的发散色阶，而日期字段则会自动使用对应的时间解析规则和坐标轴格式。\n开发人员同时发布了 flint-chart-mcp 服务器，使支持 MCP（Model Context Protocol）的 AI 智能体能够在对话中直接创建 / 预览图表，全程无需离开聊天窗口。\n在评测中，微软将 Flint 与直接生成完整 Vega-Lite 配置的方案 DirectVL 进行了对比。根据大语言模型评分结果，Flint 在 GPT-5.1、GPT-5-mini 和 GPT-4.1 三组测试中均获得更高的综合评分。\n目前，Flint 已应用于微软研究院的数据分析工具 Data Formulator，官方也同步开源了 flint-chart 库、MCP 服务器及相关文档供开发者使用，IT之家附 GitHub 项目地址（ https://github.com/microsoft/flint-chart ）。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-13/r-023-微软研究院推出开源可视化中间语言-flint-让-ai-智能体-一句话生成专业图表.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-13/r-023-微软研究院推出开源可视化中间语言-flint-让-ai-智能体-一句话生成专业图表.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "medium",
+  "extraction_method": "content-container",
+  "readability_score": 47,
+  "extractor_diagnostics": {
+    "readability_score": 47,
+    "text_length": 910,
+    "paragraph_count": 7,
+    "sentence_count": 7,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 910,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "17f70f5d01c9f522",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\"",
+    "discovery_summary": "微软研究院与中国人民大学 IDEAS Lab 联合推出开源可视化中间语言 Flint，让 AI 智能体通过一句话即可生成 Vega-Lite、ECharts、Chart.js 的可渲染图表。Flint 将图表意图与底层可视化库实现分离，规格分为数据定义和图表定义两部分，编译器可自动推导时间解析、聚合规则、数值格式及配色方案。团队同步发布 flint-chart-mcp 服务器，支持 MCP 协议的 AI 智能体在对话中直接创建和预览图表。评测中，Flint 在 GPT-5.1、GPT-5-mini 和 GPT-4.1 三组测试中均获得比直接生成 Vega-Lite 配置的方案 DirectVL 更高的综合评分。Flint 已应用于微软研究院的数据分析工具 Data Formulator，相关代码和文档已开源。",
+    "source_name": "IT之家（RSS）",
+    "origin_url": "https://www.ithome.com/0/975/816.htm",
+    "discovered_at": "2026-07-13T03:36:17.071Z",
+    "rank_on_page": 131,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "2a1971962a866a2b",
+  "content_hash": "17f70f5d01c9f522",
+  "full_text_hash": "17f70f5d01c9f522",
+  "semantic_hash": "8580649e8bc1b8d3",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-12T12:45:22.000Z",
+  "last_seen_at": "2026-07-13T03:44:12.158Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "supporting_context",
+      "text": "微软研究院与中国人民大学 IDEAS Lab 联合推出开源可视化中间语言 Flint，让 AI 智能体通过一句话即可生成 Vega-Lite、ECharts、Chart.js 的可渲染图表。Flint 将图表意图与底层可视化库实现分离，规格分为数据定义和图表定义两部分，编译器可自动推导时间解析、聚合规则、数值格式及配色方案。团队同步发布 flint-chart-mcp 服务器，支持 MCP 协议的 AI 智能体在对话中直接创建和预览图表。评测中，Flint 在 GPT-5.1、GPT-5-mini 和 GPT-4.1 三组测试中均获得比直接生成 Vega-Lite 配置的方案 DirectVL 更高的综合评分。Flint 已应用于微软研究院的数据分析工具 Data Formulator，相关代码和文档已开源。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "product_update",
+      "text": "IT之家 7 月 12 日消息，微软研究院联合中国人民大学 IDEAS Lab 联合推出了开源可视化中间语言 Flint，可以让 AI 智能体“一句话生成” Vega-Lite、ECharts、 Chart.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "case_detail",
+      "text": "据介绍，现有可视化库通常提供大量配置选项，若采用精简配置，生成的图表未必适合数据内容；若要求大语言模型直接输出完整配置，又容易因参数过多而出现冲突、遗漏或不一致。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "因此 Flint 在设计之初将图表意图与底层可视化库实现分离，以减少 AI 生成配置时的复杂度。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "具体来看，Flint 的规格主要分为数据定义和图表定义两部分。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "数据部分可标注字段的语义类型，例如年月、价格、百分比、利润、国家或排名等；图表部分则用于指定图表类型，确认各字段映射到 X 轴、Y 轴、颜色、大小或分面（Facet）等视觉元素。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-13T03:44:12.158Z",
+  "business_elements": {
+    "companies": [
+      "IT之家（RSS）",
+      "Microsoft",
+      "GitHub"
+    ],
+    "products": [
+      "mcp",
+      "MCP",
+      "GPT-5",
+      "GPT-4"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "5.1",
+      "5",
+      "4.1",
+      "7",
+      "12"
+    ],
+    "quotes": [
+      "一句话生成专业图表"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "IT之家 7 月 12 日消息，微软研究院联合中国人民大学 IDEAS Lab 联合推出了开源可视化中间语言 Flint，可以让 AI 智能体“一句话生成” Vega-Lite、ECharts、 Chart.",
+      "因此 Flint 在设计之初将图表意图与底层可视化库实现分离，以减少 AI 生成配置时的复杂度。",
+      "具体来看，Flint 的规格主要分为数据定义和图表定义两部分。"
+    ],
+    "case_details": [
+      "据介绍，现有可视化库通常提供大量配置选项，若采用精简配置，生成的图表未必适合数据内容；若要求大语言模型直接输出完整配置，又容易因参数过多而出现冲突、遗漏或不一致。"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": [
+      "微软研究院与中国人民大学 IDEAS Lab 联合推出开源可视化中间语言 Flint，让 AI 智能体通过一句话即可生成 Vega-Lite、ECharts、Chart.js 的可渲染图表。Flint 将图表意图与底层可视化库实现分离，规格分为数据定义和图表定义两部分，编译器可自动推导时间解析、聚合规则、数值格式及配色方案。团队同步发布 flint-chart-mcp 服务器，支持 MCP 协议的 AI 智能体在对话中直接创建和预览图表。评测中，Flint 在 GPT-5.1、GPT-5-mini 和 GPT-4.1 三组测试中均获得比直接生成 Vega-Lite 配置的方案 DirectVL 更高的综合评分。Flint 已应用于微软研究院的数据分析工具 Data Formulator，相关代码和文档已开源。"
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_market_structure",
+    "importance_score": 5,
+    "importance_reason": "market-structure commercial event; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\"\n\n- raw_id: R-023\n- title_zh: 微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\"\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.ithome.com/0/975/816.htm\n- source_name: IT之家（RSS）\n- collected_at: 2026-07-13T03:44:12.158Z\n\n## clean_text\n\nIT之家 7 月 12 日消息，微软研究院联合中国人民大学 IDEAS Lab 联合推出了开源可视化中间语言 Flint，可以让 AI 智能体“一句话生成” Vega-Lite、ECharts、 Chart.js 的可渲染图表。\n据介绍，现有可视化库通常提供大量配置选项，若采用精简配置，生成的图表未必适合数据内容；若要求大语言模型直接输出完整配置，又容易因参数过多而出现冲突、遗漏或不一致。因此 Flint 在设计之初将图表意图与底层可视化库实现分离，以减少 AI 生成配置时的复杂度。\n具体来看，Flint 的规格主要分为数据定义和图表定义两部分。数据部分可标注字段的语义类型，例如年月、价格、百分比、利润、国家或排名等；图表部分则用于指定图表类型，确认各字段映射到 X 轴、Y 轴、颜色、大小或分面（Facet）等视觉元素。其编译器能够结合数据语义、图表类型和字段映射，自动推导时间解析方式、聚合规则、数值格式、配色方案及布局。例如，利润字段可自动采用体现正负变化的发散色阶，而日期字段则会自动使用对应的时间解析规则和坐标轴格式。\n开发人员同时发布了 flint-chart-mcp 服务器，使支持 MCP（Model Context Protocol）的 AI 智能体能够在对话中直接创建 / 预览图表，全程无需离开聊天窗口。\n在评测中，微软将 Flint 与直接生成完整 Vega-Lite 配置的方案 DirectVL 进行了对比。根据大语言模型评分结果，Flint 在 GPT-5.1、GPT-5-mini 和 GPT-4.1 三组测试中均获得更高的综合评分。\n目前，Flint 已应用于微软研究院的数据分析工具 Data Formulator，官方也同步开源了 flint-chart 库、MCP 服务器及相关文档供开发者使用，IT之家附 GitHub 项目地址（ https://github.com/microsoft/flint-chart ）。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n\n## full_text\n\nIT之家 7 月 12 日消息，微软研究院联合中国人民大学 IDEAS Lab 联合推出了开源可视化中间语言 Flint，可以让 AI 智能体“一句话生成” Vega-Lite、ECharts、 Chart.js 的可渲染图表。\n据介绍，现有可视化库通常提供大量配置选项，若采用精简配置，生成的图表未必适合数据内容；若要求大语言模型直接输出完整配置，又容易因参数过多而出现冲突、遗漏或不一致。因此 Flint 在设计之初将图表意图与底层可视化库实现分离，以减少 AI 生成配置时的复杂度。\n具体来看，Flint 的规格主要分为数据定义和图表定义两部分。数据部分可标注字段的语义类型，例如年月、价格、百分比、利润、国家或排名等；图表部分则用于指定图表类型，确认各字段映射到 X 轴、Y 轴、颜色、大小或分面（Facet）等视觉元素。其编译器能够结合数据语义、图表类型和字段映射，自动推导时间解析方式、聚合规则、数值格式、配色方案及布局。例如，利润字段可自动采用体现正负变化的发散色阶，而日期字段则会自动使用对应的时间解析规则和坐标轴格式。\n开发人员同时发布了 flint-chart-mcp 服务器，使支持 MCP（Model Context Protocol）的 AI 智能体能够在对话中直接创建 / 预览图表，全程无需离开聊天窗口。\n在评测中，微软将 Flint 与直接生成完整 Vega-Lite 配置的方案 DirectVL 进行了对比。根据大语言模型评分结果，Flint 在 GPT-5.1、GPT-5-mini 和 GPT-4.1 三组测试中均获得更高的综合评分。\n目前，Flint 已应用于微软研究院的数据分析工具 Data Formulator，官方也同步开源了 flint-chart 库、MCP 服务器及相关文档供开发者使用，IT之家附 GitHub 项目地址（ https://github.com/microsoft/flint-chart ）。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 47\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: medium\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [supporting_context / signal_card_candidate, relationship_graph_input / high] 微软研究院与中国人民大学 IDEAS Lab 联合推出开源可视化中间语言 Flint，让 AI 智能体通过一句话即可生成 Vega-Lite、ECharts、Chart.js 的可渲染图表。Flint 将图表意图与底层可视化库实现分离，规格分为数据定义和图表定义两部分，编译器可自动推导时间解析、聚合规则、数值格式及配色方案。团队同步发布 flint-chart-mcp 服务器，支持 MCP 协议的 AI 智能体在对话中直接创建和预览图表。评测中，Flint 在 GPT-5.1、GPT-5-mini 和 GPT-4.1 三组测试中均获得比直接生成 Vega-Lite 配置的方案 DirectVL 更高的综合评分。Flint 已应用于微软研究院的数据分析工具 Data Formulator，相关代码和文档已开源。\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] IT之家 7 月 12 日消息，微软研究院联合中国人民大学 IDEAS Lab 联合推出了开源可视化中间语言 Flint，可以让 AI 智能体“一句话生成” Vega-Lite、ECharts、 Chart.\n3. [case_detail / signal_card_candidate, relationship_graph_input, case / high] 据介绍，现有可视化库通常提供大量配置选项，若采用精简配置，生成的图表未必适合数据内容；若要求大语言模型直接输出完整配置，又容易因参数过多而出现冲突、遗漏或不一致。\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 因此 Flint 在设计之初将图表意图与底层可视化库实现分离，以减少 AI 生成配置时的复杂度。\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 具体来看，Flint 的规格主要分为数据定义和图表定义两部分。\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 数据部分可标注字段的语义类型，例如年月、价格、百分比、利润、国家或排名等；图表部分则用于指定图表类型，确认各字段映射到 X 轴、Y 轴、颜色、大小或分面（Facet）等视觉元素。\n"
+}

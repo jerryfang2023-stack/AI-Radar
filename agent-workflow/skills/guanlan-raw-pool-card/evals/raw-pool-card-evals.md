@@ -84,6 +84,8 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 
 18. `high_value_card_recall`
    - Pass when the production Core/high-value recall fixture promotes confirmed Chinese product launches, pricing changes, disclosed product events, and regional rollouts even if an earlier Pool route says `index_only` or the importance label is non-core.
+   - Pass when a confirmed English-source event is not rejected solely because Raw lacks a redundant `fact_translation_zh` field, provided Card ingestion can normalize usable Chinese facts from the captured original-source excerpts.
+   - Pass when confirmed formal events rejected only for repairable source resolution, date/material, or Chinese-fact ingestion gaps are marked `priority=high` and stop the editorial release gate until repaired or reclassified.
    - Pass when every eligibility-passing candidate either produces a Card spec or fails the editorial gate with a classified semantic reason; `auto_signal_spec_null` is never an acceptable unexplained terminal state.
    - Pass when jobs, viewpoints without a confirmed event, executive disputes, rumors/future plans, mathematical/research demonstrations, and internal benchmarks remain backend-only with explicit rejection reasons.
    - Fail when release checks validate only the quality of generated Cards and do not test whether known high-value candidates were silently omitted.

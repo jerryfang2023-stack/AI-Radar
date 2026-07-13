@@ -598,6 +598,7 @@ function sourcePointReadyForPublic(value = "") {
   if (sourcePointLooksSplitFragment(text)) return false;
   const han = countHan(text);
   const latin = countLatinWords(text);
+  if (/^(?:原文称|原文描述)[，,:]\s*[A-Za-z]/u.test(text) && latin >= 4) return false;
   if (text.length > 90 && latin >= 10 && han < 18) return false;
   if (latin >= 16 && han < 24) return false;
   return true;
@@ -605,7 +606,7 @@ function sourcePointReadyForPublic(value = "") {
 
 function sourceTitleFactFromSection(section) {
   const sourceTitle = originalSourceTitleFromSection(section);
-  const translated = sourceTitleDisplayTitle(sourceTitle);
+  const translated = sourceTitleDisplayTitle(sourceTitle) || rawTitleZhFromSection(section);
   return translated ? `原始来源标题显示：${translated}。` : "";
 }
 
@@ -715,6 +716,31 @@ function sourceBackedChineseFact(raw = "", context = {}) {
   }
   if (/\bfull-stack AI company\b/iu.test(text)) {
     return `${owner}是一家全栈 AI 公司，提供面向高风险环境的 agentic operating system 和 AI Agent。`;
+  }
+  const appKernel = text.match(/\bEvery app you build now runs on\s+([A-Za-z0-9.-]+)/iu)?.[1] || "";
+  if (appKernel) {
+    return `${owner}表示，平台中构建的每个应用现在都运行在 ${appKernel} 上，该内核成为工作区背后的统一智能层。`;
+  }
+  if (/\bEvery AI request is a spend decision\b/iu.test(text)) {
+    return `${owner}将每次 AI 请求视为一次支出决策，并把用量与权限判断放到毫秒级运行时执行。`;
+  }
+  if (/\bTSK-1 is the Taskade System Kernel\b/iu.test(text) && !/\bcoordinates (?:AI )?models, memory, agents, and workflows\b/iu.test(text)) {
+    return "TSK-1 即 Taskade System Kernel；Taskade 用这一命名说明其产品正从单点 AI 助手转向工作区统一运行内核。";
+  }
+  if (/\bcoordinates (?:AI )?models, memory, agents, and workflows\b/iu.test(text)) {
+    return "TSK-1 负责把模型、记忆、Agent 与工作流协调到同一个持续运行的应用或工作区中。";
+  }
+  if (/\bEvery pricing change was a deployment\b/iu.test(text)) {
+    return "原文称，此前每次定价变更都需要一次部署，Stigg 2.0 将计量、权限与定价决策从应用发布流程中解耦。";
+  }
+  if (/\bturns pricing changes from multi-week engineering projects into configuration changes that take minutes\b/iu.test(text)) {
+    return "Stigg 称，外置且可编程的权益层可把持续数周的定价工程项目缩短为数分钟的配置变更。";
+  }
+  if (/\bAgentic usage demands milliseconds-latency enforcement\b/iu.test(text)) {
+    return "原文强调，Agent 用量需要毫秒级权限执行，以便在高成本调用发生前完成判断。";
+  }
+  if (/\btracked 1,800 pricing changes across 500 companies\b/iu.test(text)) {
+    return "Stigg 表示其在 2025 年追踪到 500 家公司发生 1,800 次定价变化，计费正转向 credits、tokens 与结果定价。";
   }
   if (/\b(launches?|launched|announces?|announced|released|introduced|available)\b/iu.test(text)) {
     const cleaned = text.replace(/\s+/gu, " ").replace(/\s+\|\s+.*$/u, "").slice(0, 180);
@@ -1220,7 +1246,13 @@ function hasChineseFactMaterial(section) {
   const translatedFacts = Array.isArray(raw.fact_translation_zh) ? raw.fact_translation_zh : [];
   if (translatedFacts.some((item) => countHan(item) >= 12 && sourcePointIsUsable(item))) return true;
   const excerpts = Array.isArray(raw.key_excerpts) ? raw.key_excerpts : [];
-  return excerpts.some((item) => countHan(item?.text || "") >= 18 && sourcePointIsUsable(item?.text || ""));
+  if (excerpts.some((item) => countHan(item?.text || "") >= 18 && sourcePointIsUsable(item?.text || ""))) return true;
+  // Raw ingestion persists exact title translation, while Card ingestion owns
+  // source-backed fact normalization. Do not require a second pre-populated Raw
+  // translation field when this generator can already produce usable Chinese
+  // facts from the captured source evidence.
+  return sourcePointsFromSection(section)
+    .some((item) => countHan(item) >= 12 && sourcePointIsUsable(item));
 }
 
 function evidenceStrengthForSection(section) {
@@ -1614,6 +1646,7 @@ function isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section) {
   const separateCommercialEvent = /融资|收购|并购|客户部署|生产部署|采购|合同|签约|定价|正式发布.{0,24}(?:产品|平台|API|SDK)|funding|raises?|acquisition|customer deployment|production rollout|procurement|contract|pricing|commercial launch/iu.test(factualText);
   if (interpersonalDispute && !separateCommercialEvent) return true;
   if (/程序员如何避免被\s*LLM|进化是关键|AI\s*需求依然强劲|芯片板块波动|industry executives?.{0,40}AI demand|AI demand remains strong/iu.test(title)) return true;
+  if (/(?:暂时|临时|多项更新.{0,12}).{0,24}(?:取消|移除).{0,24}(?:小时|使用|速率).{0,16}限制|usage reset|(?:temporarily )?(?:removed?|lifted?).{0,20}(?:5-hour|usage|rate) limit/iu.test(title)) return true;
   if (/Steam|策略模拟游戏|独立\s*AI\s*游戏|未经同意.{0,30}(?:AI\s*照片|生成)|Muse Image.{0,40}Instagram/iu.test(title)) return true;
   if (/monthly update|roundup|latest AI news|recap of .*AI updates|Google 2026.*AI.*updates?|Google 2026.*AI.*更新|AI更新汇总|更新汇总/iu.test(text)) return true;
   if (/AI\s*存储蓝图|存储蓝图|大规模\s*AI\s*存储|large-scale AI storage|storage blueprint|architecture blueprint|technical blueprint/iu.test(text)
@@ -1913,6 +1946,9 @@ function companyFromSection(section) {
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const specialCases = [
+    [/小鹏|\bXPENG\b/iu, "小鹏汽车"],
+    [/taskade\.com|\bTaskade\b/iu, "Taskade"],
+    [/stigg\.io|\bStigg\b/iu, "Stigg"],
     [/微软研究院|Microsoft Research/iu, "Microsoft Research"],
     [/谷歌\s*Voice|Google\s*Voice/iu, "Google Voice"],
     [/特斯拉|\bTesla\b/iu, "Tesla"],
@@ -2091,7 +2127,7 @@ function inferSignalType(section) {
     if (/\b(pricing|price|billing|rate limit)\b|定价|价格|计费/iu.test(text)) return "product_service";
     return "case";
   }
-  if (/\b(unveils?|launches?|introduces?|announces?|released?|available now|general availability)\b|发布|推出|披露|上线|正式登陆|正式可用/iu.test(sourceIdentity)) return "product_service";
+  if (/\b(unveils?|launches?|introduc(?:es|ing)?|announc(?:es|ing)?|released?|available now|general availability)\b|发布|推出|披露|上线|正式登陆|正式可用/iu.test(sourceIdentity)) return "product_service";
   if (importanceType === "important_case" || importanceType === "important_vertical_solution") return "case";
   if (importanceType === "important_funding" && /\b(pivoted?|renamed|compute cluster|infrastructure|platform|deploy|deployment|service|product|business|AI biz)\b|转型|更名|托管计算|基础设施|部署|产品|业务/iu.test(`${text} ${sourceUrl}`)) return "product_service";
   if (importanceType === "important_funding") return "funding";
@@ -2206,8 +2242,8 @@ function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount, tra
 function sourceEventTitleCanBackAutoCard(title = "") {
   const text = cleanSourceTitleForPublicTitle(title);
   if (!text || hasTextContamination(text)) return false;
-  if (/(roundup|guide|what is|what'?s real|how to|landscape|report|trends?|top \d+|ranked|list|directory|buyer'?s guide|comparison|ideas|use cases|may become|roles? in the ai era|job opening|job listing|careers?|hiring)\b/iu.test(text)) return false;
-  return /\b(launch(?:es|ed)?|announc(?:es|ed|ing)?|introduc(?:es|ed|ing)?|public preview|generally available|GA|available now|reach(?:es|ed)? the next phase|live transactions?|partners? with|partnership|procurement|contract|customer story|case study|deploy(?:s|ed|ment)?|rollout|adopt(?:s|ed|ion)?|uses?|used by|boosts?|increas(?:es|ed)|reduc(?:es|ed)|cuts?|saves?|improv(?:es|ed)|internal automation agents|expands?|unveils?|shuts? down|discontinues?|kills?|folds?)\b|关停|下线|并入/iu.test(text);
+  if (/^(?:Ep\.?\s*\d+|Episode\s+\d+)\b|\b(podcast|interview|roundup|guide|what is|what'?s real|how to|landscape|report|trends?|top \d+|ranked|list|directory|buyer'?s guide|comparison|ideas|use cases|may become|roles? in the ai era|job opening|job listing|careers?|hiring)\b/iu.test(text)) return false;
+  return /\b(launch(?:es|ed)?|announc(?:es|ed|ing)?|introduc(?:es|ed|ing)?|public preview|generally available|GA|available now|reach(?:es|ed)? the next phase|live transactions?|partners? with|partnership|procurement|contract|customer story|case study|deploy(?:s|ed|ment)?|rollout|adopt(?:s|ed|ion)?|uses?|used by|boosts?|increas(?:es|ed)|reduc(?:es|ed)|cuts?|saves?|improv(?:es|ed)|internal automation agents|expands?|unveils?|shuts? down|discontinues?|kills?|folds?)\b|发布|推出|上线|上市|正式可用|合作|签约|采购|部署|落地|采用|使用|提升|增长|降低|节省|扩展|取消.{0,20}(?:限制|上限)|调整.{0,20}(?:价格|定价|计费)|关停|下线|并入/iu.test(text);
 }
 
 function sourceTitleLineFromText(text = "") {
@@ -2435,7 +2471,10 @@ function autoSignalEligibilityIssues(section) {
   return uniqueIssues(issues);
 }
 
-function promotePriorityForIssues(issues = []) {
+function promotePriorityForIssues(section, issues = []) {
+  const repairableRecallIssues = issues.length > 0 && issues.every((issue) => /^(?:evidence_quality:(?:missing_source_material|missing_source_date|missing_chinese_fact_translation)|source_auditability:(?:missing_source_url|discovery_source_not_resolved)|valid_page_type:(?:index_only_evidence|degradation_reason_index_only|text_indicates_index_only|pool_route_index_only_not_formal_card))$/iu.test(issue));
+  const sourceTitleConfirmsEvent = sourceEventTitleCanBackAutoCard(originalSourceTitleFromSection(section));
+  if (hasFormalCardEvent(section) && sourceTitleConfirmsEvent && repairableRecallIssues) return "high";
   if (issues.some((issue) => /valid_page_type|fact_type_constraints|stale_source_date|generic_report_or_list|index_only|user_feedback_not_fact_signal|text_indicates_index_only/iu.test(issue))) {
     return "low";
   }
@@ -2475,7 +2514,7 @@ function notPromotedCandidateRow(poolRef, section, issues = []) {
     issues: finalIssues,
     not_promoted_reason: finalIssues.join(", ") || "not_selected_for_signal_card",
     repair_suggestion: repairSuggestionForIssues(finalIssues),
-    promote_priority: promotePriorityForIssues(finalIssues),
+    promote_priority: promotePriorityForIssues(section, finalIssues),
   };
 }
 
@@ -3246,6 +3285,31 @@ function runCoreRecallRegressionFixtures() {
     "- key_excerpts: 本指南解释如何使用两个研究项目搭建自动迭代循环。",
   ].join("\n");
   assert.equal(isExplainerWithoutCommercialEvent(guideFixture), true, "Chinese guides without a separate commercial event must remain backend-only");
+
+  assert.ok(
+    countHan(sourceBackedChineseFact("Every app you build now runs on TSK-1, the new intelligence behind every workspace.", { company: "Taskade" })) >= 12,
+    "Card ingestion must normalize usable Chinese facts from captured English event excerpts",
+  );
+  assert.equal(
+    sourcePointReadyForPublic("原文称，Every pricing change was a deployment."),
+    false,
+    "an untranslated English fact with a Chinese wrapper must not count as public Chinese fact material",
+  );
+  const temporaryLimitFixture = [
+    "## P-993｜OpenAI Codex 与 ChatGPT Work 暂时取消订阅 5 小时使用限制",
+    "- source_url: no-url",
+    "- key_excerpts: 社区用户反馈用量窗口暂时消失。",
+  ].join("\n");
+  assert.equal(
+    isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(temporaryLimitFixture),
+    true,
+    "temporary usage-window resets without a durable commercial change must remain backend-only",
+  );
+  assert.equal(
+    sourceEventTitleCanBackAutoCard("Ep 29: Salesforce AI CEO on How Gucci Uses AI"),
+    false,
+    "old podcast episode titles must not become high-priority Card recall blockers",
+  );
 
   const technicalTrendLaunchFixture = [
     "## P-995｜上纬新材发布全球首款可变形个人机器人启元 T1",

@@ -1,0 +1,198 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-149
+title: "Ep 29: Salesforce AI CEO Clara Shih on Future of Slack, How Gucci Uses AI and Working with Marc Benioff"
+title_zh: "第29集： Salesforce AI首席执行官Clara Shih谈Slack的未来、Gucci如何使用AI以及与Marc Benioff合作"
+title_translation_status: translated
+title_translation_method: mymemory_title_translation
+original_url: "https://unsupervised-learning.simplecast.com/episodes/ep-29-salesforce-ai-ceo-clara-shih-on-future-of-slack-how-gucci-uses-ai-and-working-with-marc-benioff-DyDf_SJU"
+canonical_url: "https://unsupervised-learning.simplecast.com/episodes/ep-29-salesforce-ai-ceo-clara-shih-on-future-of-slack-how-gucci-uses-ai-and-working-with-marc-benioff-DyDf_SJU"
+source_name: "Unsupervised Learning (Redpoint)"
+source_type: operators
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-07-13T03:44:51.981Z
+language: mixed
+full_text_hash: 52f913f6fe9620a8
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-149-ep-29-salesforce-ai-ceo-clara-shih-on-future-of-slack-how-gucci-uses-a.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-149-ep-29-salesforce-ai-ceo-clara-shih-on-future-of-slack-how-gucci-uses-a.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: summary-only-low-readable-body
+extraction_quality: failed
+extraction_method: "none"
+readability_score: 0
+extractor_diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"none"}
+has_full_text: false
+content_length: 499
+fetch_error: ""
+evidence_strength: traceable_summary
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: traceable_summary_or_observation_candidate
+degradation_reasons: ["missing_full_text"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"52f913f6fe9620a8","missing":["missing_full_text"]}
+source_volatility: low
+community_name: ""
+capture_scope: summary_only
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: weak_signal
+discovery_source: ""
+discovery_record: null
+source_role: discovery_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: da117f1b0787602e
+content_hash: 52f913f6fe9620a8
+semantic_hash: 5a3d1ec5e13d1671
+duplicate_of: ""
+first_seen_at: "2026-07-13T03:44:51.981Z"
+last_seen_at: 2026-07-13T03:44:51.981Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"none","importance_score":1,"importance_reason":"no core WaveSight importance signal","supporting_signals":[],"novelty":2,"evidence_strength":2,"case_richness":4,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["Unsupervised Learning (Redpoint)","Salesforce"],"products":[],"people":[],"industries":[],"roles":["销售 / 客服"],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["29","100 M","0","00","50","1","37","4"],"quotes":[]}
+evidence_seed: {"company_actions":["There’s an ongoing debate about where the most value will accrue in AI between incumbents and startups."],"case_details":[],"workflow_changes":["There’s an ongoing debate about where the most value will accrue in AI between incumbents and startups. Of the incumbents, few have shipped product faster than SalesforceAI. Today on Unsupervised Learning we had on Clara Shih, CEO of SalesforceAI and one of Time Magazine’s 100 Most Influential People in AI. (0:00) intro(0:50) work practices that will become irrelevant(1:37) revolutionizing reply recommendations and case summaries(4:57) newest Salesforce products(5:53) structuring teams(7:22) en","Of the incumbents, few have shipped product faster than SalesforceAI.","Today on Unsupervised Learning we had on Clara Shih, CEO of SalesforceAI and one of Time Magazine’s 100 Most Influential People in AI."],"before_after_clues":[],"affected_roles":["销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索","没有可用全文快照"]
+key_excerpts: [{"type":"workflow_change","text":"There’s an ongoing debate about where the most value will accrue in AI between incumbents and startups. Of the incumbents, few have shipped product faster than SalesforceAI. Today on Unsupervised Learning we had on Clara Shih, CEO of SalesforceAI and one of Time Magazine’s 100 Most Influential People in AI. (0:00) intro(0:50) work practices that will become irrelevant(1:37) revolutionizing reply recommendations and case summaries(4:57) newest Salesforce products(5:53) structuring teams(7:22) en","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"There’s an ongoing debate about where the most value will accrue in AI between incumbents and startups.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"workflow_change","text":"Of the incumbents, few have shipped product faster than SalesforceAI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"Today on Unsupervised Learning we had on Clara Shih, CEO of SalesforceAI and one of Time Magazine’s 100 Most Influential People in AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"(0:00) intro(0:50) work practices that will become irrelevant(1:37) revolutionizing reply recommendations and case summaries(4:57) newest Salesforce products(5:53) structuring teams(7:22) en","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-13T03:44:51.981Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Ep 29: Salesforce AI CEO Clara Shih on Future of Slack, How Gucci Uses AI and Working with Marc Benioff
+
+## clean_text
+
+There’s an ongoing debate about where the most value will accrue in AI between incumbents and startups. Of the incumbents, few have shipped product faster than SalesforceAI. Today on Unsupervised Learning we had on Clara Shih, CEO of SalesforceAI and one of Time Magazine’s 100 Most Influential People in AI. (0:00) intro(0:50) work practices that will become irrelevant(1:37) revolutionizing reply recommendations and case summaries(4:57) newest Salesforce products(5:53) structuring teams(7:22) en
+
+## full_text
+
+There’s an ongoing debate about where the most value will accrue in AI between incumbents and startups. Of the incumbents, few have shipped product faster than SalesforceAI. Today on Unsupervised Learning we had on Clara Shih, CEO of SalesforceAI and one of Time Magazine’s 100 Most Influential People in AI. (0:00) intro(0:50) work practices that will become irrelevant(1:37) revolutionizing reply recommendations and case summaries(4:57) newest Salesforce products(5:53) structuring teams(7:22) en
+
+## extraction_diagnostics
+
+- extraction_method: none
+- readability_score: 0
+- fetch_status: summary-only-low-readable-body
+- extraction_quality: failed
+- diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"none"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   There’s an ongoing debate about where the most value will accrue in AI between incumbents and startups. Of the incumbents, few have shipped product faster than SalesforceAI. Today on Unsupervised Learning we had on Clara Shih, CEO of SalesforceAI and one of Time Magazine’s 100 Most Influential People in AI. (0:00) intro(0:50) work practices that will become irrelevant(1:37) revolutionizing reply recommendations and case summaries(4:57) newest Salesforce products(5:53) structuring teams(7:22) en
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   There’s an ongoing debate about where the most value will accrue in AI between incumbents and startups.
+
+3. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   Of the incumbents, few have shipped product faster than SalesforceAI.
+
+4. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   Today on Unsupervised Learning we had on Clara Shih, CEO of SalesforceAI and one of Time Magazine’s 100 Most Influential People in AI.
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   (0:00) intro(0:50) work practices that will become irrelevant(1:37) revolutionizing reply recommendations and case summaries(4:57) newest Salesforce products(5:53) structuring teams(7:22) en
+
+## business_elements
+
+- companies: Unsupervised Learning (Redpoint), Salesforce
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 销售 / 客服
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 29, 100 M, 0, 00, 50, 1, 37, 4
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: There’s an ongoing debate about where the most value will accrue in AI between incumbents and startups.
+- case_details: 暂无公开信息
+- workflow_changes: There’s an ongoing debate about where the most value will accrue in AI between incumbents and startups. Of the incumbents, few have shipped product faster than SalesforceAI. Today on Unsupervised Learning we had on Clara Shih, CEO of SalesforceAI and one of Time Magazine’s 100 Most Influential People in AI. (0:00) intro(0:50) work practices that will become irrelevant(1:37) revolutionizing reply recommendations and case summaries(4:57) newest Salesforce products(5:53) structuring teams(7:22) en / Of the incumbents, few have shipped product faster than SalesforceAI. / Today on Unsupervised Learning we had on Clara Shih, CEO of SalesforceAI and one of Time Magazine’s 100 Most Influential People in AI.
+- before_after_clues: 暂无公开信息
+- affected_roles: 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: none
+- importance_score: 1
+- importance_reason: no core WaveSight importance signal
+- supporting_signals:
+- novelty: 2
+- evidence_strength: 2
+- case_richness: 4
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: weak_signal
+- discovery_source: none
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+There’s an ongoing debate about where the most value will accrue in AI between incumbents and startups. Of the incumbents, few have shipped product faster than SalesforceAI. Today on Unsupervised Learning we had on Clara Shih, CEO of SalesforceAI and one of Time Magazine’s 100 Most Influential People in AI. (0:00) intro(0:50) work practices that will become irrelevant(1:37) revolutionizing reply recommendations and case summaries(4:57) newest Salesforce products(5:53) structuring teams(7:22) en
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,397 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-041
+title: "Learn the system"
+title_zh: "了解系统"
+title_translation_status: translated
+title_translation_method: mymemory_title_translation
+original_url: "https://www.bensbites.com/p/learn-the-system"
+canonical_url: "https://bensbites.com/p/learn-the-system"
+source_name: "Ben's Bites AI Newsletter"
+source_type: newsletter
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-05-12T13:07:50.000Z"
+collected_at: 2026-07-13T03:44:14.707Z
+language: mixed
+full_text_hash: b793ecd7428fa9b8
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-041-learn-the-system.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-041-learn-the-system.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":9878,"paragraph_count":77,"sentence_count":62,"boilerplate_hits":2,"symbol_ratio":0.0078,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 9878
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b793ecd7428fa9b8","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0fcd07ec18004628
+content_hash: b793ecd7428fa9b8
+semantic_hash: 45dd43097999668b
+duplicate_of: ""
+first_seen_at: "2026-05-12T13:07:50.000Z"
+last_seen_at: 2026-07-13T03:44:14.707Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["Ben's Bites AI Newsletter","OpenAI","Anthropic","AWS","Cursor"],"products":["AGENTS","agent","CLAUDE","claude","Claude","agents","Codex","ChatGPT","Gemini","Agent"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["12","2026","60","2018 b","10","47","1.22","7"],"quotes":["username","lenjaminbeonard","Ben Leonard","profile_image_url","https://pbs.substack.com/profile_images/1274285378955026438/3ybpBTcF_normal.jpg"]}
+evidence_seed: {"company_actions":["are live models making a comeback?","Learn the system are live models making a comeback?","May 12, 2026 60 Share Hey folks, I watched this this morning; ‘Agentic coding is a trap — and we all fell for it’ - it’s surprising relevant past just developers."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"are live models making a comeback?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Learn the system are live models making a comeback?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"May 12, 2026 60 Share Hey folks, I watched this this morning; ‘Agentic coding is a trap — and we all fell for it’ - it’s surprising relevant past just developers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"enjoyed this because what i took away; learn the system to me, this is the difference of vibe coding and agentic engineering.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"i'm actively trying to learn the system, not the syntax.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"syntax is what i couldn't grapple when attempting to learn to code.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-13T03:44:14.707Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Learn the system
+
+## clean_text
+
+Learn the system
+are live models making a comeback?
+May 12, 2026
+60
+Share
+Hey folks,
+I watched this this morning; ‘Agentic coding is a trap — and we all fell for it’ - it’s surprising relevant past just developers.
+enjoyed this because what i took away;
+learn the system
+to me, this is the difference of vibe coding and agentic engineering. i'm actively trying to learn the system, not the syntax.
+syntax is what i couldn't grapple when attempting to learn to code. but the system is clicking more for me the more i build
+im miles away from a 'competent software engineer' but im only building things for myself, so i dont *need* to be - but the more i build, the more that clicks into place.
+i didnt realise it when i was slinging no-code in 2018 but it was a version of learning parts of a system to get software to work (webflow - frontend, airtable - database, zapier - api/backend). it had limitations but now i replaced all of that with code.
+having actual competent engineers create skills and systems to help a sloppy codebase or process is helping (as well as better models). but i do rely on that for years i didnt spend learning to code.
+stay curious folks
+tweeted it earlier
+Link to the original blog post .
+And I’ve been tweaking my AGENTS.md + setup files - as I’m getting closer with the ‘course’ I’m reminding myself to not let your docs slip.
+there’ll be a lesson on this and i’ll go thru it all
+Oh and…
+Ben Tossell @bentossell
+today-i-realised
+@ file in an AGENTS.md also gets auto-read by your agent
+i kinda knew this as i'd always @ AGENTS.md in my CLAUDE.md instead of the path otherwise claude wouldn't read it
+only today applying it to other setups
+🤦‍♂️
+10:47 AM · May 12, 2026 · 1.22K Views
+7 Replies · 7 Likes
+Ben’s Bites is brought to you by Lightfield
+Lightfield is an AI-native CRM that just shipped Skills . Define any workflow in plain English and trigger it with a sentence. The AI agent executes against your full CRM data graph with code execution, web search, and file I/O. 3,000+ startups on the platform. Try free
+Headlines
+You can now work with all your Claude Code agents in a single window inside the terminal. You can see their status and reply inline to unblock when they need your input. Any running session can be moved to the agent view with /bg.
+Codex now works directly in Chrome on macOS and Windows. It can use sites and apps across tabs in the background without taking over your browser.
+OpenAI also released three new Realtime models in the API: Realtime 2 for voice-to-voice use cases with best intelligence, Realtime Translate for audio translation across 70 input and 13 output languages, and Realtime-Whisper for live speech to text.
+OpenAI released a cyber defence product, Daybreak . Their OpenAI’s answer to Anthropic’s Mythos?
+Thinking Machines finally have a model to show us (not letting us try though). They are calling them interaction models . Basically models where you can chat with audio and video input with audio outputs. It seems really impressive for the capabilites they are claiming, for example, time awareness, simultaneous speech and visual cues, but all similar products (ChatGPT’s Advanced Voice Mode, Gemini Live) fail when put in users hands.
+OpenAI is starting a deployment company in partnership with major consulting firms. It acquired a 150-person AI consulting company, “Tomoro”, to set this up and is putting in $4B of initial investment. The goal is to work with other companies and build AI systems for them.
+I think this means they’re going to effectively transform a ton of knowledge workers and upskill them to knowing how to work with agents. ie able to be a builder. And if you’re a builder → you can use Codex. You can see how it all links 😊
+My feed
+Artificial Analysis is testing rank models + harness combinations together in their Coding Agent Index . Among the combinations they have tested, Opus 4.7 with Cursor CLI is on top with GPT-5.5 in Codex and Opus 4.7 in Claude Code at a close second.
+Ramp trained a small RL model with Fast Ask with Prime Intellect for spreadsheet Q&A. They say it beats Opus by 4% on exact match accuracy at Haiku latency.
+Replit Parallel Agents lets Replit Agent break work into tasks, run them in isolated copies of your app, and merge them back after review.
+Notion Skills - Brian Lovin is using a Notion database like an app store for agent skills, with two-way sync to Claude, Codex and other local agents.
+React Doctor v2 catches bad React code from agents.
+Printing Press - generate agent-native CLIs for apps like Linear, ESPN, Kayak, etc.
+The Claude Platform on AWS is now generally available. AWS customers get Claude API features with AWS auth, billing and commitment retirement.
+OpenAI’s API has a new Files SDK for object and blob storage and an OpenAI Developers plugin for Codex to build faster with OpenAI APIs.
+Parallel AI’s Monitor API is now GA. It sends web push updates to background agents instead of agents constantly polling for changes.
+zero-native - build native desktop and mobile apps with web UI.
+A spec for how interfaces should present Markdown .
+7 Powers in the age of AI for building a company.
+a framework for hackable software i.e. apps that ship with their raw source code, where users can modify them using coding agents.
+New research from Anthropic translates the inner workings of Claude into text and teaches it good behaviour using fictional stories.
+Peekaboo 3.0 - Peter’s macOS computer-use tool got action-first automation, unified screenshot + UI detection, cleaner JSON and better snapshots.
+Afters
+explorer.oxide.computer</a> ","username":"lenjaminbeonard","name":"Ben Leonard","profile_image_url":"https://pbs.substack.com/profile_images/1274285378955026438/3ybpBTcF_normal.jpg","date":"2026-05-11T14:15:00.000Z","photos":[{"img_url":"https://substackcdn.com/image/upload/w_1028,c_limit,q_auto:best/l_twitter_play_button_rvaygk,w_88/q9qswhpgs3gzrxvbbywa","link_url":"https://t.co/vZAw0ZLrJ2"}],"quoted_tweet":{},"reply_count":22,"retweet_count":59,"like_count":587,"impression_count":39848,"expanded_url":null,"video_url":"https://video.twimg.com/amplify_video/2053840436389666816/vid/avc1/720x1278/UyxOQh0bfjZhY-im.mp4","belowTheFold":true}" class="pencraft pc-display-flex pc-flexDirection-column pc-gap-12 pc-padding-16 pc-reset bg-primary-zk6FDl outline-detail-vcQLyr pc-borderRadius-md sizing-border-box-DggLA4 pressable-lg-kV7yq8 font-text-qe4AeH tweet-fWkQfo twitter-embed">
+Ben Leonard @lenjaminbeonard
+explorer.oxide.computer
+2:15 PM · May 11, 2026 · 39.8K Views
+22 Replies · 59 Reposts · 587 Likes
+COATUE @coatuemgmt
+Memory is the new bottleneck.
+Nick Gagnet, Coatue Sector Head, on the AI infrastructure shift and why memory demand could 5x in 5 years.
+5:20 PM · May 11, 2026 · 1.3M Views
+81 Replies · 212 Reposts · 2.07K Likes
+Matt Pocock @mattpocockuk
+The more I replace plans with prototypes, the better the outputs
+Who'd have thought that low fidelity prototypes were better than walls of spec
+Oh yeah, the entire industry for 20 years
+Stop going against decades of knowledge because someone in SF shipped it as a 'mode'
+dax @thdxr
+i never make plans i hate looking at markdown i don't wanna read markdown files i just plan by having it make changes to the code then i look at the code to see what sucks then i prompt again
+5:16 PM · May 7, 2026 · 323K Views
+124 Replies · 114 Reposts · 2.04K Likes
+gabriel @gabriel1
+when i voice prompt, i yap for 10 minutes straight and change my mind 3 times in the middle of the yap, and send it without reading
+yap enough tokens for the picture to be complete, it understands well when you change your mind in the middle. ai is smarter than you think
+Alex @dev_alexandrum
+i feel like i don’t think linearly enough for speech to text prompting.
+i frequently change wording as i write so the pressure of having to voice the right prompt first try is frustrating
+2:16 AM · May 10, 2026 · 111K Views
+71 Replies · 54 Reposts · 1.75K Likes
+makingsoftware.com</a> by <span class=\"tweet-fake-link\">@DanHollick</span>)","username":"dboskovic","name":"David Boskovic","profile_image_url":"https://pbs.substack.com/profile_images/1904919163757359104/Tn3aeLGV_normal.jpg","date":"2026-05-07T22:27:11.000Z","photos":[{"img_url":"https://substackcdn.com/image/upload/w_1028,c_limit,q_auto:best/l_twitter_play_button_rvaygk,w_88/tmyd9utphozph3yhh5xe","link_url":"https://t.co/5HdKHB06M9"}],"quoted_tweet":{"full_text":"if your agent doesn't write design specs like this your ngmi","username":"dboskovic","name":"David Boskovic","profile_image_url":"https://pbs.substack.com/profile_images/1904919163757359104/Tn3aeLGV_normal.jpg"},"reply_count":30,"retweet_count":53,"like_count":986,"impression_count":298497,"expanded_url":null,"video_url":"https://video.twimg.com/amplify_video/2052513665807474690/vid/avc1/1214x720/n0W7ZxcKmANYJAF3.mp4","belowTheFold":true}" class="pencraft pc-display-flex pc-flexDirection-column pc-gap-12 pc-padding-16 pc-reset bg-primary-zk6FDl outline-detail-vcQLyr pc-borderRadius-md sizing-border-box-DggLA4 pressable-lg-kV7yq8 font-text-qe4AeH tweet-fWkQfo twitter-embed">
+David Boskovic @dboskovic
+if software is spec, what if we got AI to make specs that weren't slop?
+working on this
+(very inspired by the beauty of makingsoftware.com by @DanHollick )
+David Boskovic @dboskovic
+if your agent doesn't write design specs like this your ngmi
+10:27 PM · May 7, 2026 · 298K Views
+30 Replies · 53 Reposts · 986 Likes
+Share Ben's Bites
+Find me on X , Linkedin , or YouTube
+Read about me and Ben’s Bites
+📷 thumbnail by @keshavatearth
+* sponsors who make this newsletter possible :) Wanna partner with us for the next quarter? Email us at shanice@bensbites.com or k@bensbites.com
+Ben's Bites is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
+60
+Share
+Previous Next
+
+## full_text
+
+Learn the system
+are live models making a comeback?
+May 12, 2026
+60
+Share
+Hey folks,
+I watched this this morning; ‘Agentic coding is a trap — and we all fell for it’ - it’s surprising relevant past just developers.
+enjoyed this because what i took away;
+learn the system
+to me, this is the difference of vibe coding and agentic engineering. i'm actively trying to learn the system, not the syntax.
+syntax is what i couldn't grapple when attempting to learn to code. but the system is clicking more for me the more i build
+im miles away from a 'competent software engineer' but im only building things for myself, so i dont *need* to be - but the more i build, the more that clicks into place.
+i didnt realise it when i was slinging no-code in 2018 but it was a version of learning parts of a system to get software to work (webflow - frontend, airtable - database, zapier - api/backend). it had limitations but now i replaced all of that with code.
+having actual competent engineers create skills and systems to help a sloppy codebase or process is helping (as well as better models). but i do rely on that for years i didnt spend learning to code.
+stay curious folks
+tweeted it earlier
+Link to the original blog post .
+And I’ve been tweaking my AGENTS.md + setup files - as I’m getting closer with the ‘course’ I’m reminding myself to not let your docs slip.
+there’ll be a lesson on this and i’ll go thru it all
+Oh and…
+Ben Tossell @bentossell
+today-i-realised
+@ file in an AGENTS.md also gets auto-read by your agent
+i kinda knew this as i'd always @ AGENTS.md in my CLAUDE.md instead of the path otherwise claude wouldn't read it
+only today applying it to other setups
+🤦‍♂️
+10:47 AM · May 12, 2026 · 1.22K Views
+7 Replies · 7 Likes
+Ben’s Bites is brought to you by Lightfield
+Lightfield is an AI-native CRM that just shipped Skills . Define any workflow in plain English and trigger it with a sentence. The AI agent executes against your full CRM data graph with code execution, web search, and file I/O. 3,000+ startups on the platform. Try free
+Headlines
+You can now work with all your Claude Code agents in a single window inside the terminal. You can see their status and reply inline to unblock when they need your input. Any running session can be moved to the agent view with /bg.
+Codex now works directly in Chrome on macOS and Windows. It can use sites and apps across tabs in the background without taking over your browser.
+OpenAI also released three new Realtime models in the API: Realtime 2 for voice-to-voice use cases with best intelligence, Realtime Translate for audio translation across 70 input and 13 output languages, and Realtime-Whisper for live speech to text.
+OpenAI released a cyber defence product, Daybreak . Their OpenAI’s answer to Anthropic’s Mythos?
+Thinking Machines finally have a model to show us (not letting us try though). They are calling them interaction models . Basically models where you can chat with audio and video input with audio outputs. It seems really impressive for the capabilites they are claiming, for example, time awareness, simultaneous speech and visual cues, but all similar products (ChatGPT’s Advanced Voice Mode, Gemini Live) fail when put in users hands.
+OpenAI is starting a deployment company in partnership with major consulting firms. It acquired a 150-person AI consulting company, “Tomoro”, to set this up and is putting in $4B of initial investment. The goal is to work with other companies and build AI systems for them.
+I think this means they’re going to effectively transform a ton of knowledge workers and upskill them to knowing how to work with agents. ie able to be a builder. And if you’re a builder → you can use Codex. You can see how it all links 😊
+My feed
+Artificial Analysis is testing rank models + harness combinations together in their Coding Agent Index . Among the combinations they have tested, Opus 4.7 with Cursor CLI is on top with GPT-5.5 in Codex and Opus 4.7 in Claude Code at a close second.
+Ramp trained a small RL model with Fast Ask with Prime Intellect for spreadsheet Q&A. They say it beats Opus by 4% on exact match accuracy at Haiku latency.
+Replit Parallel Agents lets Replit Agent break work into tasks, run them in isolated copies of your app, and merge them back after review.
+Notion Skills - Brian Lovin is using a Notion database like an app store for agent skills, with two-way sync to Claude, Codex and other local agents.
+React Doctor v2 catches bad React code from agents.
+Printing Press - generate agent-native CLIs for apps like Linear, ESPN, Kayak, etc.
+The Claude Platform on AWS is now generally available. AWS customers get Claude API features with AWS auth, billing and commitment retirement.
+OpenAI’s API has a new Files SDK for object and blob storage and an OpenAI Developers plugin for Codex to build faster with OpenAI APIs.
+Parallel AI’s Monitor API is now GA. It sends web push updates to background agents instead of agents constantly polling for changes.
+zero-native - build native desktop and mobile apps with web UI.
+A spec for how interfaces should present Markdown .
+7 Powers in the age of AI for building a company.
+a framework for hackable software i.e. apps that ship with their raw source code, where users can modify them using coding agents.
+New research from Anthropic translates the inner workings of Claude into text and teaches it good behaviour using fictional stories.
+Peekaboo 3.0 - Peter’s macOS computer-use tool got action-first automation, unified screenshot + UI detection, cleaner JSON and better snapshots.
+Afters
+explorer.oxide.computer</a> ","username":"lenjaminbeonard","name":"Ben Leonard","profile_image_url":"https://pbs.substack.com/profile_images/1274285378955026438/3ybpBTcF_normal.jpg","date":"2026-05-11T14:15:00.000Z","photos":[{"img_url":"https://substackcdn.com/image/upload/w_1028,c_limit,q_auto:best/l_twitter_play_button_rvaygk,w_88/q9qswhpgs3gzrxvbbywa","link_url":"https://t.co/vZAw0ZLrJ2"}],"quoted_tweet":{},"reply_count":22,"retweet_count":59,"like_count":587,"impression_count":39848,"expanded_url":null,"video_url":"https://video.twimg.com/amplify_video/2053840436389666816/vid/avc1/720x1278/UyxOQh0bfjZhY-im.mp4","belowTheFold":true}" class="pencraft pc-display-flex pc-flexDirection-column pc-gap-12 pc-padding-16 pc-reset bg-primary-zk6FDl outline-detail-vcQLyr pc-borderRadius-md sizing-border-box-DggLA4 pressable-lg-kV7yq8 font-text-qe4AeH tweet-fWkQfo twitter-embed">
+Ben Leonard @lenjaminbeonard
+explorer.oxide.computer
+2:15 PM · May 11, 2026 · 39.8K Views
+22 Replies · 59 Reposts · 587 Likes
+COATUE @coatuemgmt
+Memory is the new bottleneck.
+Nick Gagnet, Coatue Sector Head, on the AI infrastructure shift and why memory demand could 5x in 5 years.
+5:20 PM · May 11, 2026 · 1.3M Views
+81 Replies · 212 Reposts · 2.07K Likes
+Matt Pocock @mattpocockuk
+The more I replace plans with prototypes, the better the outputs
+Who'd have thought that low fidelity prototypes were better than walls of spec
+Oh yeah, the entire industry for 20 years
+Stop going against decades of knowledge because someone in SF shipped it as a 'mode'
+dax @thdxr
+i never make plans i hate looking at markdown i don't wanna read markdown files i just plan by having it make changes to the code then i look at the code to see what sucks then i prompt again
+5:16 PM · May 7, 2026 · 323K Views
+124 Replies · 114 Reposts · 2.04K Likes
+gabriel @gabriel1
+when i voice prompt, i yap for 10 minutes straight and change my mind 3 times in the middle of the yap, and send it without reading
+yap enough tokens for the picture to be complete, it understands well when you change your mind in the middle. ai is smarter than you think
+Alex @dev_alexandrum
+i feel like i don’t think linearly enough for speech to text prompting.
+i frequently change wording as i write so the pressure of having to voice the right prompt first try is frustrating
+2:16 AM · May 10, 2026 · 111K Views
+71 Replies · 54 Reposts · 1.75K Likes
+makingsoftware.com</a> by <span class=\"tweet-fake-link\">@DanHollick</span>)","username":"dboskovic","name":"David Boskovic","profile_image_url":"https://pbs.substack.com/profile_images/1904919163757359104/Tn3aeLGV_normal.jpg","date":"2026-05-07T22:27:11.000Z","photos":[{"img_url":"https://substackcdn.com/image/upload/w_1028,c_limit,q_auto:best/l_twitter_play_button_rvaygk,w_88/tmyd9utphozph3yhh5xe","link_url":"https://t.co/5HdKHB06M9"}],"quoted_tweet":{"full_text":"if your agent doesn't write design specs like this your ngmi","username":"dboskovic","name":"David Boskovic","profile_image_url":"https://pbs.substack.com/profile_images/1904919163757359104/Tn3aeLGV_normal.jpg"},"reply_count":30,"retweet_count":53,"like_count":986,"impression_count":298497,"expanded_url":null,"video_url":"https://video.twimg.com/amplify_video/2052513665807474690/vid/avc1/1214x720/n0W7ZxcKmANYJAF3.mp4","belowTheFold":true}" class="pencraft pc-display-flex pc-flexDirection-column pc-gap-12 pc-padding-16 pc-reset bg-primary-zk6FDl outline-detail-vcQLyr pc-borderRadius-md sizing-border-box-DggLA4 pressable-lg-kV7yq8 font-text-qe4AeH tweet-fWkQfo twitter-embed">
+David Boskovic @dboskovic
+if software is spec, what if we got AI to make specs that weren't slop?
+working on this
+(very inspired by the beauty of makingsoftware.com by @DanHollick )
+David Boskovic @dboskovic
+if your agent doesn't write design specs like this your ngmi
+10:27 PM · May 7, 2026 · 298K Views
+30 Replies · 53 Reposts · 986 Likes
+Share Ben's Bites
+Find me on X , Linkedin , or YouTube
+Read about me and Ben’s Bites
+📷 thumbnail by @keshavatearth
+* sponsors who make this newsletter possible :) Wanna partner with us for the next quarter? Email us at shanice@bensbites.com or k@bensbites.com
+Ben's Bites is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
+60
+Share
+Previous Next
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 91
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":9878,"paragraph_count":77,"sentence_count":62,"boilerplate_hits":2,"symbol_ratio":0.0078,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   are live models making a comeback?
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Learn the system are live models making a comeback?
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   May 12, 2026 60 Share Hey folks, I watched this this morning; ‘Agentic coding is a trap — and we all fell for it’ - it’s surprising relevant past just developers.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   enjoyed this because what i took away; learn the system to me, this is the difference of vibe coding and agentic engineering.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   i'm actively trying to learn the system, not the syntax.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   syntax is what i couldn't grapple when attempting to learn to code.
+
+## business_elements
+
+- companies: Ben's Bites AI Newsletter, OpenAI, Anthropic, AWS, Cursor
+- products: AGENTS, agent, CLAUDE, claude, Claude, agents, Codex, ChatGPT, Gemini, Agent
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 12, 2026, 60, 2018 b, 10, 47, 1.22, 7
+- quotes: username / lenjaminbeonard / Ben Leonard / profile_image_url / https://pbs.substack.com/profile_images/1274285378955026438/3ybpBTcF_normal.jpg
+
+## evidence_seed
+
+- company_actions: are live models making a comeback? / Learn the system are live models making a comeback? / May 12, 2026 60 Share Hey folks, I watched this this morning; ‘Agentic coding is a trap — and we all fell for it’ - it’s surprising relevant past just developers.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+are live models making a comeback?
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

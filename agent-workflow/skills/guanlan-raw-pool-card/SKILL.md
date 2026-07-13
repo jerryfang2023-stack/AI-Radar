@@ -72,6 +72,7 @@ node agent-workflow/tools/generate-asset-cards-from-pool.mjs --date=YYYY-MM-DD -
 
 5. Treat the generator's semantic gate as authoritative for formal Signal Cards. If a Raw / Pool candidate is rejected for stale source, generic list/report, index-only evidence, or user-feedback-only evidence, do not silently force it into `01-Signal-Cards`.
    - A historical `index_only` route or non-core importance label is not itself authoritative when the same Raw evidence is a readable, dated, confirmed commercial event. Re-evaluate the evidence object and formal event; do not let stale routing suppress a valid Card.
+   - A confirmed formal event rejected only for repairable ingestion gaps (source resolution, source date/material, or Chinese fact normalization) is a high-priority Card-recall failure. The editorial gate must stop publication until the item is repaired or its formal-event classification is corrected.
    - Run the pinned Core/high-value recall fixture after changing Card eligibility or Pool evidence classification:
 
 ```powershell
@@ -99,6 +100,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 - Every qualified Raw / Pool business signal that passes raw-to-card cardability and can become a Card should appear in that public Card set.
 - Frontstage must consume formal Signal Cards. It must not re-run semantic cardability, support-sufficiency, customer-detail, ROI, or before/after-workflow blockers after the Card has been generated.
 - English source-title translation and source-backed fact extraction belong to raw-to-card ingestion. Missing or weak title/fact fields must fail before publication and route to the Card asset or generator; do not suppress a formal Card or replace its title in the frontstage selector.
+- The Card generator may satisfy Chinese fact normalization from captured original-source excerpts when its source-backed normalization produces usable Chinese facts. Do not require a redundant pre-populated `fact_translation_zh` field if the same ingestion stage has already produced the compliant fact material.
 - The public page must not split items into Top10 versus candidate-pool modes.
 - Cards are sorted by importance / impact from high to low.
 - The page must not display sorting reasons, selection tiers, or candidate-only labels.
