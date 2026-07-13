@@ -683,6 +683,30 @@ function sourceBackedChineseFact(raw = "", context = {}) {
   if (/^Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure/iu.test(text)) {
     return "Supermicro 联合 Red Hat 和 Everpure 推出经验证的 Kubernetes 边缘 AI 一体机。";
   }
+  if (/i7 Pro embodied AI robot performing CNC machine loading and unloading tasks/iu.test(text)) {
+    return "i7 Pro 具身 AI 机器人已在工业制造设施执行 CNC 机床上下料，并完成机床间导航与高精度定位。";
+  }
+  if (/announced the first batch delivery of 100 units of its i7 Pro all-scenario robot/iu.test(text)) {
+    return "Simplexity Robotics 宣布首批交付 100 台 i7 Pro 全场景机器人，并建成 CNC 智能具身机器人生产线。";
+  }
+  if (/transition from laboratory validation to multi-site industrial deployment/iu.test(text)) {
+    return "Simplexity Robotics 表示，该项目已从实验室验证转入多地点工业部署。";
+  }
+  if (/The 100 units were distributed across multiple deployment environments rather than delivered to a single customer/iu.test(text)) {
+    return "这 100 台机器人被分配到多个部署环境，而非交付给单一客户。";
+  }
+  if (/largest batch serves industrial clients.*Leaderdrive/iu.test(text)) {
+    return "最大批次用于 Leaderdrive 等工业客户的机器人核心部件制造与 CNC 作业。";
+  }
+  if (/New manufacturing lines in Milpitas, California will support an anticipated 7x increase in production of Cerebras CS-3 systems/iu.test(text)) {
+    return "Flex 在加州米尔皮塔斯新增制造产线，预计 Cerebras CS-3 系统产量将提升 7 倍。";
+  }
+  if (/announced an expanded manufacturing partnership to scale production of the Cerebras CS-3/iu.test(text)) {
+    return "Flex 与 Cerebras 扩大制造合作，在 Flex 米尔皮塔斯工厂提升 Cerebras CS-3 产量。";
+  }
+  if (/significant expansion of advanced manufacturing capacity in the United States/iu.test(text)) {
+    return "双方称，此次合作将显著扩大美国先进 AI 系统制造产能。";
+  }
   const amount = chineseAmount(extractAmount(text) || text);
   const round = chineseRound(text);
   if (/\b(raises?|raised|funding|financing|seed|series\s+[a-z])\b/iu.test(text)) {
@@ -912,7 +936,8 @@ function rawVisibleExcerptFromSection(section, excluded = []) {
     .filter((item) => !sourcePointLooksPageChrome(item))
     .filter((item) => !sourcePointLooksSplitFragment(item))
     .filter((item) => !isTooSimilar(item));
-  return candidates[0] || originalSourceTitleFromSection(section) || "";
+  const sourceTitle = originalSourceTitleFromSection(section);
+  return candidates[0] || (sourceTitle && !isTooSimilar(sourceTitle) ? sourceTitle : "");
 }
 
 function generatedCommercialValue(spec) {
@@ -927,7 +952,13 @@ function generatedCommercialValue(spec) {
 }
 
 function isSameSourcePoint(a = "", b = "") {
-  return normalizedSignalText(a) === normalizedSignalText(b);
+  const normalize = (value) => normalizedSignalText(String(value || "").replace(/原始来源标题显示：|原文称[，,:]?|原文描述[，,:]?/gu, ""));
+  const left = normalize(a);
+  const right = normalize(b);
+  if (!left || !right) return false;
+  if (left === right) return true;
+  const prefixLength = Math.min(90, left.length, right.length);
+  return prefixLength >= 48 && left.slice(0, prefixLength) === right.slice(0, prefixLength);
 }
 
 function generatedValueSummary(spec, section) {
@@ -2130,6 +2161,9 @@ function companyFromSection(section) {
     [/taskade\.com|\bTaskade\b/iu, "Taskade"],
     [/stigg\.io|\bStigg\b/iu, "Stigg"],
     [/微软研究院|Microsoft Research/iu, "Microsoft Research"],
+    [/Simplexity Robotics/iu, "Simplexity Robotics"],
+    [/Flex and Cerebras|Flex and Cerebras Systems|Cerebras CS-3/iu, "Flex / Cerebras"],
+    [/微软.{0,30}Windows.{0,30}AI.{0,30}漏洞|Windows.{0,30}MDASH|Microsoft Detection and Analysis for Security Hardening/iu, "Microsoft / Windows"],
     [/\bSupermicro\b|\bSuper Micro Computer\b/iu, "Supermicro"],
     [/谷歌\s*Voice|Google\s*Voice/iu, "Google Voice"],
     [/特斯拉|\bTesla\b/iu, "Tesla"],
@@ -2983,10 +3017,15 @@ function signalCard(spec, section) {
     [spec.businessMeaning, spec.whyWatch, ...sourcePoints]
       .find((item) => item && !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, spec.title) && !isSameSourcePoint(item, titleFact)) ||
     generatedCommercialValue(spec);
-  const originalPoints = sourcePoints
+  const candidateOriginalPoints = sourcePoints
     .filter((item) => !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, valueSummary) && !isSameSourcePoint(item, spec.title))
     .slice(0, 4);
-  const sourceExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, ...originalPoints]);
+  const sourceExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, ...candidateOriginalPoints]);
+  let originalPoints = candidateOriginalPoints.filter((item) => !isSameSourcePoint(item, sourceExcerpt));
+  if (!originalPoints.length) {
+    const secondaryExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, sourceExcerpt]);
+    if (secondaryExcerpt && !isSameSourcePoint(secondaryExcerpt, sourceExcerpt)) originalPoints = [secondaryExcerpt];
+  }
   const evidenceBoundary = spec.evidenceBoundary || value(section, "missing_information") || "未记录额外缺失项。";
 
   const yamlString = (input = "") => JSON.stringify(String(input || ""));
@@ -3514,6 +3553,34 @@ function runCoreRecallRegressionFixtures() {
     "- key_excerpts: 微软研究院与中国人民大学 IDEAS Lab 联合推出开源可视化中间语言 Flint。",
   ].join("\n");
   assert.equal(companyFromSection(microsoftResearchLaunchFixture), "Microsoft Research", "Microsoft Research launches must keep a usable organization subject");
+  const hardwareCompanyFixtures = [
+    [
+      "## P-997｜Flex and Cerebras Expand Partnership to Scale American Manufacturing of Cerebras AI Supercomputers",
+      "- source_url: https://www.prnewswire.com/news-releases/flex-and-cerebras-expand-partnership.html",
+    ].join("\n"),
+    [
+      "## P-996｜Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines",
+      "- source_url: https://robotsbeat.com/simplexity-robotics-production-deployment/",
+    ].join("\n"),
+    [
+      "## P-995｜微软：Windows 团队正全面利用 AI 挖掘漏洞",
+      "- source_url: https://www.ithome.com/0/976/101.htm",
+      "- key_excerpts: Windows 团队使用 MDASH 分析漏洞。",
+    ].join("\n"),
+  ];
+  assert.equal(companyFromSection(hardwareCompanyFixtures[0]), "Flex / Cerebras", "partnership titles must preserve both named companies");
+  assert.equal(companyFromSection(hardwareCompanyFixtures[1]), "Simplexity Robotics", "trade-media case titles must preserve the subject company instead of the publisher");
+  assert.equal(companyFromSection(hardwareCompanyFixtures[2]), "Microsoft / Windows", "Chinese product workflow titles must preserve the company and product organization");
+  assert.equal(
+    sourceBackedChineseFact("New manufacturing lines in Milpitas, California will support an anticipated 7x increase in production of Cerebras CS-3 systems."),
+    "Flex 在加州米尔皮塔斯新增制造产线，预计 Cerebras CS-3 系统产量将提升 7 倍。",
+    "capacity expansion facts must be localized from the source sentence",
+  );
+  assert.equal(
+    sourceBackedChineseFact("The 100 units were distributed across multiple deployment environments rather than delivered to a single customer."),
+    "这 100 台机器人被分配到多个部署环境，而非交付给单一客户。",
+    "deployment distribution facts must be distinct from the translated title",
+  );
 
   const consumerGameFixture = [
     "## P-997｜AI 策略模拟游戏登陆 Steam，国区售价 42 元",

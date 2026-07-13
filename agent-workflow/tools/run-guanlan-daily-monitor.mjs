@@ -158,6 +158,7 @@ const monitorHardGates = monitorQualityGate.hard_gates || {};
 const monitorDiagnosticTargets = monitorQualityGate.diagnostic_targets || {};
 const layeredSearchRequirements = monitorQualityGate.layered_search_requirements || {};
 const themeGroups = Array.isArray(keywordMonitoring.theme_groups) ? keywordMonitoring.theme_groups : [];
+const curatedOriginalSources = Array.isArray(keywordMonitoring.curated_original_sources) ? keywordMonitoring.curated_original_sources : [];
 const themeOrder = themeGroups.map((group) => group.id);
 const themeById = new Map(themeGroups.map((group) => [group.id, group]));
 const gdeltQueryLimit = Number(args.get("gdelt-query-limit") || Math.max(4, themeGroups.length || 7));
@@ -1301,6 +1302,9 @@ async function runMetadataRegressionFixtures() {
   );
   if (shipmentTitle.titleZh !== "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂") {
     throw new Error(`shipment and deployment title was not localized: ${JSON.stringify(shipmentTitle)}`);
+  }
+  if (!activeCuratedOriginalSourceItems().some((item) => /supermicro-simplifies-edge-ai-deployments/iu.test(item.url))) {
+    throw new Error("active curated original source did not enter the direct-source recall lane");
   }
   console.log(JSON.stringify({ ok: true, fixture: "source-publication-metadata" }, null, 2));
 }
@@ -3982,6 +3986,34 @@ async function collectHN() {
   return { items: items.slice(0, hnTarget), failures };
 }
 
+function activeCuratedOriginalSourceItems() {
+  return curatedOriginalSources
+    .filter((item) => {
+      const activeFrom = String(item?.active_from || "0000-01-01");
+      const activeUntil = String(item?.active_until || "9999-12-31");
+      return activeFrom <= date && date <= activeUntil;
+    })
+    .filter((item) => item?.title && item?.url && item?.published_at)
+    .map((item) => ({
+      acquisition_channel: "keyword-search",
+      original_id: item.id || item.url,
+      title: item.title,
+      summary: `Bounded direct-source recall from QC-reviewed original evidence: ${item.title}`,
+      url: item.url,
+      source: item.source || "curated original source",
+      published_at: item.published_at,
+      category: "news",
+      query_theme: item.query_theme || "mature-commercial-signal",
+      keyword_group: item.keyword_group || item.query_theme || "mature-commercial-signal",
+      search_path: item.search_path || "official_original",
+      search_intent: item.search_intent || "find_original_source",
+      evidence_role: "resolved_original_source",
+      registry_source_type: "official",
+      raw_entry_decision: "raw_candidate",
+      raw_entry_reason: "bounded_curated_original_source",
+    }));
+}
+
 async function collectKeywordSearch() {
   const allQueries = laneQueries("keyword_search", [
     "AI agent enterprise funding",
@@ -3993,7 +4025,7 @@ async function collectKeywordSearch() {
     "AI agents finance compliance",
     "AI agent startup raises",
   ]);
-  const items = [];
+  const items = activeCuratedOriginalSourceItems();
   const failures = [];
   const filtered = [];
   const perPathResultLimit = Math.max(2, Math.ceil(searchTarget / Math.max(1, keywordSearchPaths.length * Math.max(1, searchPathQueryLimit))));
