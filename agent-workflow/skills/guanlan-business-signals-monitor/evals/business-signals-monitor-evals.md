@@ -104,6 +104,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when English source-title translation is captured or marked during Raw / raw-to-card ingestion instead of being deferred to frontstage selection.
     - Pass when Raw ingestion uses a real title-translation generator after an exact `source-title-translations.json` miss, writes generated Chinese `title_zh`, and persists the exact original `sourceTitle -> zhTitle` entry for later deterministic reuse.
     - Pass when production auto translation accepts only a controlled model prompt or an exact deterministic rule, and every loader plus supervision ignores legacy `generatedBy=mymemory_title_translation` entries.
+    - Pass when deterministic rules localize source-backed partnership expansion and product shipment/deployment titles while preserving company names, product names, quantities, customers, and locations.
     - Fail when a generic machine translation can turn protected names or concepts such as `LLM`, `Anthropic`, `Cursor`, `Perplexity`, `Fable`, or `AI Agent` into a semantically different Chinese title and still satisfy publication coverage.
     - Pass when `title` and `displayTitle` are backed by the original source title itself or an approved `source-title-translations.json` entry for that exact original title.
     - Pass when an active-date English funding source title without `title_zh` / translation-db coverage is blocked before publication and routed to Raw/Card translation repair.

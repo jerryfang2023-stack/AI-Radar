@@ -1288,6 +1288,20 @@ async function runMetadataRegressionFixtures() {
   if (preferredPublishedAt("2026-07-07T00:00:00Z", "2026-05-27T00:00:00Z") !== "2026-05-27T00:00:00.000Z") {
     throw new Error("captured source publication date did not override provider-inferred freshness");
   }
+  const partnershipTitle = await resolveSourceTitleTranslation(
+    "Flex and Cerebras Expand Partnership to Scale American Manufacturing of Cerebras AI Supercomputers",
+    { provider: "business-rule" },
+  );
+  if (partnershipTitle.titleZh !== "Flex 与 Cerebras 扩大合作，用于扩大 Cerebras AI 超级计算机在美国的制造规模") {
+    throw new Error(`partnership expansion title was not localized: ${JSON.stringify(partnershipTitle)}`);
+  }
+  const shipmentTitle = await resolveSourceTitleTranslation(
+    "Simplexity Robotics Ships 100 i7 Pro Robots to Production Lines at 11 Months Old, Deploys at Leaderdrive and AI Infrastructure Factories | RobotsBeat",
+    { provider: "business-rule" },
+  );
+  if (shipmentTitle.titleZh !== "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂") {
+    throw new Error(`shipment and deployment title was not localized: ${JSON.stringify(shipmentTitle)}`);
+  }
   console.log(JSON.stringify({ ok: true, fixture: "source-publication-metadata" }, null, 2));
 }
 
@@ -3533,7 +3547,7 @@ async function runQuerySelectionRegressionFixtures() {
     { query: "AI server startup funding GPU cluster customers", query_theme: "ai-hardware-investment-signal" },
     { query: "AI server customer deployment enterprise inference", query_theme: "ai-hardware-scenario-service-signal" },
     { query: "AI server product launch enterprise inference", query_theme: "ai-hardware-trend-innovation-signal" },
-    { query: "site:supermicro.com/en/pressreleases AI server product launch edge AI", query_theme: "ai-hardware-trend-innovation-signal" },
+    { query: "site:supermicro.com/en/pressreleases \"Supermicro Simplifies Edge AI Deployments\" Red Hat Everpure", query_theme: "ai-hardware-trend-innovation-signal" },
   ];
   const selected = selectQueriesForPath(queries, pathConfigById("capital_startup"));
   if (!selected.length || selected.some((query) => !/startup|seed|funding|financing|raises?|series\s+[a-z]/iu.test(query.query))) {
@@ -3553,7 +3567,7 @@ async function runQuerySelectionRegressionFixtures() {
   if (!selectedHardware.some((query) => /AI server product launch/iu.test(query.query))) {
     throw new Error(`AI hardware path omitted the commercial product-launch query: ${JSON.stringify(selectedHardware)}`);
   }
-  if (!selectedHardware.some((query) => /site:supermicro\.com\/en\/pressreleases/iu.test(query.query))) {
+  if (!selectedHardware.some((query) => /site:supermicro\.com\/en\/pressreleases.*Supermicro Simplifies Edge AI Deployments/iu.test(query.query))) {
     throw new Error(`AI hardware path omitted the official-source product-launch query: ${JSON.stringify(selectedHardware)}`);
   }
   if (selectedHardware.length !== 4) {
