@@ -305,6 +305,15 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
   if (/^how github used secret scanning to reach inbox zero$/iu.test(title)) {
     return "GitHub 使用秘密扫描，在九个月内清零安全告警积压";
   }
+  if (/^claude code now has a built-in browser that lets the ai read, click, and type on external websites$/iu.test(title)) {
+    return "Claude Code 新增内置浏览器，可直接读取、点击并操作外部网页";
+  }
+  if (/^meta removes controversial ai feature on instagram after backlash$/iu.test(title)) {
+    return "Meta 在用户反弹后下线 Instagram 争议 AI 图片生成功能";
+  }
+  if (/^supermicro simplifies edge ai deployments with validated kubernetes appliances with red hat and everpure(?:\s+[—–-]\s+company announcement(?:\s+-\s+ft\.com)?)?$/iu.test(title)) {
+    return "Supermicro 联合 Red Hat 和 Everpure 推出经验证的边缘 AI Kubernetes 一体机";
+  }
   if (/^lyzr used its own ai agent to help raise a \$100mn round$/iu.test(title)) {
     return "Lyzr 使用自研 AI 智能体协助推进 1 亿美元融资";
   }

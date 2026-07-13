@@ -674,6 +674,15 @@ function sourceBackedChineseFact(raw = "", context = {}) {
   if (/[\u4e00-\u9fff]/u.test(text) && !sourcePointLooksTemplate(text)) return text.length > 260 ? `${text.slice(0, 259)}...` : text;
   const company = publicCardCopy(context.company || "") || shortCompany(text.match(/^([A-Z][A-Za-z0-9.&' -]{1,80}?)(?:,|\s+(?:announced|has|raised|raises|secured|secures|launched|launches|released|introduced|collaborates|collaboration))/u)?.[1] || "");
   const owner = company || "原文";
+  if (/^Claude Code now has a built-in browser that lets the AI read, click, and type on external websites$/iu.test(text)) {
+    return "Claude Code 新增内置浏览器，让 AI 可直接读取、点击并操作外部网页。";
+  }
+  if (/^Meta removes controversial AI feature on Instagram after backlash$/iu.test(text)) {
+    return "Meta 在用户和人才机构反弹后，下线 Instagram 的争议 AI 图片生成功能。";
+  }
+  if (/^Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure/iu.test(text)) {
+    return "Supermicro 联合 Red Hat 和 Everpure 推出经验证的 Kubernetes 边缘 AI 一体机。";
+  }
   const amount = chineseAmount(extractAmount(text) || text);
   const round = chineseRound(text);
   if (/\b(raises?|raised|funding|financing|seed|series\s+[a-z])\b/iu.test(text)) {
@@ -732,6 +741,15 @@ function sourceBackedChineseFact(raw = "", context = {}) {
   }
   if (/\bNine months later, we reached zero open alerts\b/iu.test(text)) {
     return "GitHub 表示，经过九个月的告警分类、责任分配与修复流程建设，未处理告警数量降至零。";
+  }
+  if (/\bClaude Code now has a built-in browser\b|\bopen, read, and interact with web pages directly inside the development environment\b/iu.test(text)) {
+    return "Claude Code 新增内置浏览器，让 AI 可在开发环境中直接打开、读取和操作外部网页；外部写入操作会经过分类器筛查，购买或创建账户仍需用户批准。";
+  }
+  if (/\bMeta has axed a controversial feature\b|\bremoving the feature\b.*\bno longer available\b/iu.test(text)) {
+    return "Meta 下线 Muse Image 中可引用公开 Instagram 账户照片生成图片的功能；公司表示该功能未达到预期，并在用户和人才机构反弹后停止提供。";
+  }
+  if (/\bannounced the launch of Kubernetes Edge AI appliances\b/iu.test(text)) {
+    return "Supermicro 联合 Red Hat 和 Everpure 推出 Kubernetes 边缘 AI 一体机，整合 OpenShift、边缘计算基础设施与面向 AI 工作负载的数据管理能力。";
   }
   const appKernel = text.match(/\bEvery app you build now runs on\s+([A-Za-z0-9.-]+)/iu)?.[1] || "";
   if (appKernel) {
@@ -841,6 +859,7 @@ function sourcePointsFromSection(section) {
     ? keyExcerpts.flatMap((item) => sourceSentences(item?.text || "").map((text) => ({ text, type: item?.type || "" })))
     : [];
   const titleFact = sourceTitleFactFromSection(section);
+  const normalizedTitleFact = sourceBackedChineseFact(sourceTitle, context);
   const fromExcerpts = excerptItems.map((item) => translatedSourcePoint(item.text, item.type, context)).filter(sourcePointReadyForPublic);
   const fromSeed = seedItems.map((item) => translatedSourcePoint(item, "", context)).filter(sourcePointReadyForPublic);
   const fromFullText = sourceSentences(raw.full_text || raw.clean_text || "")
@@ -849,7 +868,7 @@ function sourcePointsFromSection(section) {
   const fromTranslatedFacts = translatedFacts
     .map((item) => translatedSourcePoint(item, context.type, context))
     .filter(sourcePointReadyForPublic);
-  const substantive = [...new Set([...fromTranslatedFacts, ...fromExcerpts, ...fromSeed, ...fromFullText].filter(sourcePointReadyForPublic))];
+  const substantive = [...new Set([normalizedTitleFact, ...fromTranslatedFacts, ...fromExcerpts, ...fromSeed, ...fromFullText].filter(sourcePointReadyForPublic))];
   return [...substantive, ...(titleFact ? [titleFact] : [])].slice(0, 6);
 }
 
@@ -1353,6 +1372,11 @@ function hasChineseFactMaterial(section) {
   if (translatedFacts.some((item) => countHan(item) >= 12 && sourcePointIsUsable(item))) return true;
   const excerpts = Array.isArray(raw.key_excerpts) ? raw.key_excerpts : [];
   if (excerpts.some((item) => countHan(item?.text || "") >= 18 && sourcePointIsUsable(item?.text || ""))) return true;
+  const normalizedTitleFact = sourceBackedChineseFact(originalSourceTitleFromSection(section), {
+    company: companyFromSection(section),
+    type: inferSignalType(section),
+  });
+  if (countHan(normalizedTitleFact) >= 12 && sourcePointIsUsable(normalizedTitleFact)) return true;
   // Raw ingestion persists exact title translation, while Card ingestion owns
   // source-backed fact normalization. Do not require a second pre-populated Raw
   // translation field when this generator can already produce usable Chinese
@@ -1531,6 +1555,18 @@ function sectionEvidenceText(section) {
   ].join(" ");
 }
 
+function hasDirectAiEventAnchor(section) {
+  const raw = readRawJson(section);
+  const eventText = [
+    poolTitle(section),
+    value(section, "key_excerpts"),
+    value(section, "evidence_seed"),
+    raw.title || "",
+    raw.full_text || raw.clean_text || "",
+  ].join(" ");
+  return /\b(?:AI|artificial intelligence|agentic|AI agents?|LLMs?|large language models?|machine learning|Claude|ChatGPT|GPT-\d|Gemini|Copilot|Muse Image|Fable|Kimi|FSD|Cybercab|Robotaxi|inference)\b|人工智能|智能体|大模型|机器学习|生成式 AI|算力芯片|AI 芯片/iu.test(eventText);
+}
+
 function hasConcreteFundingEvent(section) {
   return isSingleCompanyFundingSignal(section);
 }
@@ -1568,8 +1604,8 @@ function hasConcreteProductEvent(section) {
   if (isWorkforceRetrainingProgram(section)) return false;
   if (isNewsletterRoundupSource(section)) return false;
   if (isViewpointWithoutConfirmedCommercialEvent(section) || isUnconfirmedProductRumorOrPlan(section)) return false;
-  if (/\b(shuts? down|discontinues?|kills?|folds? .{0,60} into)\b|关停|下线|并入/iu.test(sourceIdentity)) return true;
-  return /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:es|ed)?|general availability|GA|new API|new SDK|new platform|new product|pricing|available now|shuts? down|discontinues?|kills?|folds? .{0,60} into)\b|发布|推出|上线|正式可用|开放|定价|关停|下线|并入/iu.test(text)
+  if (/\b(shuts? down|discontinues?|kills?|removes?|removed|axes?|axed|withdraws?|pulls? .{0,30}(?:feature|product)|folds? .{0,60} into)\b|关停|下线|移除|并入/iu.test(sourceIdentity)) return true;
+  return /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:es|ed)?|now has a built-in|general availability|GA|new API|new SDK|new platform|new product|pricing|available now|shuts? down|discontinues?|kills?|folds? .{0,60} into)\b|发布|推出|上线|新增|正式可用|开放|定价|关停|下线|并入/iu.test(text)
     && !/guide|tutorial|how to|core concepts|scaling dimensions|architecture overview|field guide|glossary|market map|roundup|list|指南|教程|概念|综述|清单|榜单/iu.test(text);
 }
 
@@ -1833,7 +1869,7 @@ function cardabilitySemanticIssues(section) {
   if (isRootOrHomeSourceUrl(sourceUrl) || (indexOnlyUrlPattern.test(sourceUrl) && !/\/\d{4}\/|\/20\d{2}[/-]|press|news|release|announc|blog\/[^/]+/iu.test(sourceUrl))) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "index_or_directory_url"));
   }
-  if (discoveryOnlyPattern.test(`${value(section, "acquisition_channel")} ${value(section, "source_role")}`) && value(section, "source_role") !== "resolved_original_source") {
+  if (discoveryOnlyPattern.test(`${value(section, "acquisition_channel")} ${value(section, "source_role")}`) && !new Set(["resolved_original_source", "primary_source"]).has(value(section, "source_role"))) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "discovery_source_not_resolved"));
   }
   if (!coreImportanceTypes.has(importanceType) && !hasCardableEvent) issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, `unsupported_importance_type:${importanceType || "missing"}`));
@@ -2074,6 +2110,7 @@ function companyFromSection(section) {
     [/taskade\.com|\bTaskade\b/iu, "Taskade"],
     [/stigg\.io|\bStigg\b/iu, "Stigg"],
     [/微软研究院|Microsoft Research/iu, "Microsoft Research"],
+    [/\bSupermicro\b|\bSuper Micro Computer\b/iu, "Supermicro"],
     [/谷歌\s*Voice|Google\s*Voice/iu, "Google Voice"],
     [/特斯拉|\bTesla\b/iu, "Tesla"],
     [/阶跃星辰|Step\s*Edge/iu, "阶跃星辰"],
@@ -2286,7 +2323,7 @@ function inferSignalType(section) {
     if (/\b(pricing|price|billing|rate limit)\b|定价|价格|计费/iu.test(text)) return "product_service";
     return "case";
   }
-  if (/\b(unveils?|launches?|introduc(?:es|ing)?|announc(?:es|ing)?|released?|available now|general availability)\b|发布|推出|披露|上线|正式登陆|正式可用/iu.test(sourceIdentity)) return "product_service";
+  if (/\b(unveils?|launches?|introduc(?:es|ing)?|announc(?:es|ing)?|released?|now has a built-in|removes?|removed|kills?|available now|general availability)\b|发布|推出|披露|上线|下线|移除|正式登陆|正式可用/iu.test(sourceIdentity)) return "product_service";
   if (importanceType === "important_case" || importanceType === "important_vertical_solution") return "case";
   if (importanceType === "important_funding" && /\b(pivoted?|renamed|compute cluster|infrastructure|platform|deploy|deployment|service|product|business|AI biz)\b|转型|更名|托管计算|基础设施|部署|产品|业务/iu.test(`${text} ${sourceUrl}`)) return "product_service";
   if (importanceType === "important_funding") return "funding";
@@ -2491,6 +2528,9 @@ function isNonCommercialPolicyOrEthicsSignal(section) {
     value(section, "key_excerpts"),
     value(section, "evidence_seed"),
   ].join(" ");
+  if (/\bgovernment\b.{0,120}\b(?:budget|fiscal|tax revenue|public spending)\b|\b(?:budget|fiscal|tax revenue|public spending)\b.{0,120}\bgovernment\b|政府.{0,80}(?:财政预算|财政支出|税收|基金)|(?:财政预算|财政支出|税收).{0,80}政府/iu.test(text)) {
+    return true;
+  }
   if (hasCommercialAction && !purePolicyConflict.test(text)) return false;
   if (/\b(government|ban|banned|prohibit|national security|policy|regulat(?:ion|or)|controversy|privacy pledge|self-regulation)\b|政府|禁令|禁止|国家安全|政策|监管|争议|公约|自律|个人信息保护/iu.test(text)) {
     return true;
@@ -2619,6 +2659,9 @@ function autoSignalEligibilityIssues(section) {
   }
   if (isNonCommercialPolicyOrEthicsSignal(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "non_commercial_policy_or_ethics_signal"));
+  }
+  if (!hasDirectAiEventAnchor(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "source_event_missing_ai_anchor"));
   }
   if (isCorporateCapexOrCommunityInvestment(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "corporate_capex_or_community_investment_not_signal_card"));
@@ -3609,6 +3652,33 @@ function runCoreRecallRegressionFixtures() {
   assert.ok(
     autoSignalEligibilityIssues(nadellaCriticismFixture).some((issue) => /viewpoint_without_confirmed_commercial_event/iu.test(issue)),
     "an executive criticism remains viewpoint context even when upstream labels the speech as event evidence",
+  );
+
+  const publicBudgetFixture = [
+    "## P-065｜韩国编制2027财年800万亿韩元创纪录预算，AI芯片税收成主要来源",
+    "- source_url: https://example.com/korea-government-budget",
+    "- event_evidence: true",
+    "- pool_routes: watchlist",
+    "- importance_type: important_technical_trend",
+    "- key_excerpts: 韩国政府宣布编制财政预算，资金来源主要依靠 AI 芯片产业带来的税收增长。",
+  ].join("\n");
+  assert.ok(
+    autoSignalEligibilityIssues(publicBudgetFixture).some((issue) => /non_commercial_policy_or_ethics_signal/iu.test(issue)),
+    "a public fiscal budget must remain context rather than becoming a company product Card through a generic announcement verb",
+  );
+
+  const nonAiFeedFalsePositiveFixture = [
+    "## P-060｜How GitHub used secret scanning to reach inbox zero",
+    "- source: GitHub Blog AI",
+    "- source_url: https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
+    "- event_evidence: true",
+    "- pool_routes: core_pool",
+    "- importance_type: important_case",
+    "- key_excerpts: GitHub found more than 20,000 secret scanning alerts across 15,000 repositories and reached zero open alerts nine months later.",
+  ].join("\n");
+  assert.ok(
+    autoSignalEligibilityIssues(nonAiFeedFalsePositiveFixture).some((issue) => /source_event_missing_ai_anchor/iu.test(issue)),
+    "an AI-labelled feed must not turn an event with no AI evidence in its title or body into an AI business-signal Card",
   );
 
   const magicOsRumorFixture = [

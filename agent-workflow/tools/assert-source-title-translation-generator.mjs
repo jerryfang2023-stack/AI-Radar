@@ -68,6 +68,18 @@ const lyzrFundraiseProcess = await generateSourceTitleTranslation(
   "Lyzr's AI agent ran its own $100M Series B fundraise — AI Chat Daily",
   { provider: "business-rule", allowNetwork: true }
 );
+const claudeCodeBrowser = await generateSourceTitleTranslation(
+  "Claude Code now has a built-in browser that lets the AI read, click, and type on external websites",
+  { provider: "business-rule", allowNetwork: true }
+);
+const metaFeatureRemoval = await generateSourceTitleTranslation(
+  "Meta removes controversial AI feature on Instagram after backlash",
+  { provider: "business-rule", allowNetwork: true }
+);
+const supermicroEdgeAi = await generateSourceTitleTranslation(
+  "Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure – Company Announcement - FT.com",
+  { provider: "business-rule", allowNetwork: true }
+);
 
 const legacyMachineTranslationFile = path.join(tempDir, "legacy-machine-translations.json");
 fs.writeFileSync(legacyMachineTranslationFile, JSON.stringify({
@@ -94,6 +106,9 @@ const ok =
   alta.titleZh === "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构" &&
   githubSecretScanning.titleZh === "GitHub 使用秘密扫描，在九个月内清零安全告警积压" &&
   lyzrFundraiseProcess.titleZh === "Lyzr 的 AI 智能体参与其 1 亿美元 B 轮融资流程" &&
+  claudeCodeBrowser.titleZh === "Claude Code 新增内置浏览器，可直接读取、点击并操作外部网页" &&
+  metaFeatureRemoval.titleZh === "Meta 在用户反弹后下线 Instagram 争议 AI 图片生成功能" &&
+  supermicroEdgeAi.titleZh === "Supermicro 联合 Red Hat 和 Everpure 推出经验证的边缘 AI Kubernetes 一体机" &&
   legacyMachineTranslations.size === 0;
 
 fs.rmSync(tempDir, { recursive: true, force: true });
@@ -112,6 +127,9 @@ if (!ok) {
     alta,
     githubSecretScanning,
     lyzrFundraiseProcess,
+    claudeCodeBrowser,
+    metaFeatureRemoval,
+    supermicroEdgeAi,
     legacyMachineTranslationCount: legacyMachineTranslations.size,
     reason: "English source title was not generated and persisted when the exact translation DB entry was missing.",
   }, null, 2));
