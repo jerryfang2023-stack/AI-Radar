@@ -1,0 +1,316 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-059
+title: "GPT-5.6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://tldr.tech/ai/2026-07-08"
+canonical_url: "https://tldr.tech/ai/2026-07-08"
+source_name: "TLDR AI Newsletter"
+source_type: newsletter
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-08T00:00:00.000Z"
+collected_at: 2026-07-13T08:51:52.964Z
+language: mixed
+full_text_hash: ac3fea8fdffbfdd8
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-059-gpt-5-6-thursday-claude-cowork-mobile-gemini-api-agents.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-059-gpt-5-6-thursday-claude-cowork-mobile-gemini-api-agents.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 79
+extractor_diagnostics: {"readability_score":79,"text_length":9298,"paragraph_count":52,"sentence_count":66,"boilerplate_hits":2,"symbol_ratio":0.0008,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 9298
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ac3fea8fdffbfdd8","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 9c02620b4450a63a
+content_hash: ac3fea8fdffbfdd8
+semantic_hash: f20d418505d0e6b2
+duplicate_of: ""
+first_seen_at: "2026-07-08T00:00:00.000Z"
+last_seen_at: 2026-07-13T08:51:52.964Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["TLDR AI Newsletter","OpenAI","Anthropic","Google","Microsoft","Meta","Amazon","Nvidia","Cursor"],"products":["GPT-5","Claude","Gemini","agents","agent","Agents","MCP","Cursor"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["5.6","2026","07","08","3","1M","1","2"],"quotes":[]}
+evidence_seed: {"company_actions":["6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-08 GPT-5.","4️⃣ Build coding assistants, computer-use agents, and video agents."],"case_details":[],"workflow_changes":["6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖 M3: The first open-weights model to combine frontier coding & agent capabilities (Sponsor) MiniMax M3 has a 1M-token context window and native multimodal understanding so it can reason through code, process visual info, and operate across massive contexts.","Builders are already using it to: 1️⃣ Create AI agents that reason, use tools, and complete multi-step workflows.","2️⃣ Analyze screenshots, interfaces, documents, images, and visual workflows without relying on separate vision models."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-08 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖 M3: The first open-weights model to combine frontier coding & agent capabilities (Sponsor) MiniMax M3 has a 1M-token context window and native multimodal understanding so it can reason through code, process visual info, and operate across massive contexts.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Builders are already using it to: 1️⃣ Create AI agents that reason, use tools, and complete multi-step workflows.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"2️⃣ Analyze screenshots, interfaces, documents, images, and visual workflows without relying on separate vision models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"3️⃣ Process entire codebases and long documents in a single conversation with a 1M-token context window.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"4️⃣ Build coding assistants, computer-use agents, and video agents.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-13T08:51:52.964Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# GPT-5.6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖
+
+## clean_text
+
+GPT-5.6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖 TLDR
+Newsletters
+Advertise
+Blog
+TLDR
+TLDR AI 2026-07-08
+GPT-5.6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖
+M3: The first open-weights model to combine frontier coding & agent capabilities (Sponsor)
+MiniMax M3 has a 1M-token context window and native multimodal understanding so it can reason through code, process visual info, and operate across massive contexts. Builders are already using it to:
+1️⃣ Create AI agents that reason, use tools, and complete multi-step workflows.
+2️⃣ Analyze screenshots, interfaces, documents, images, and visual workflows without relying on separate vision models.
+3️⃣ Process entire codebases and long documents in a single conversation with a 1M-token context window.
+4️⃣ Build coding assistants, computer-use agents, and video agents.
+>> Get 5.1B tokens / month for just $500 a year.
+>> Try MiniMax Code
+>> Start on the API
+GPT-5.6 Sol, along with Terra and Luna, will launch publicly this Thursday (1 minute read)
+OpenAI is releasing GPT-5.6 Sol, Terra, and Luna tomorrow. It is currently expanding preview access globally. Sol is the flagship model. Terra is a balanced model for everyday work. Luna is a fast and affordable model. Terra has competitive performance to GPT‑5.5 while being 2x cheaper and Luna brings strong capability at our lowest cost.
+Claude Cowork on Mobile and Web (1 minute read)
+Anthropic announced that Claude Cowork sessions and files would become accessible across web and mobile, allowing long-running tasks to continue without an open computer. Beta access began rolling out to Max users, with additional plans to follow.
+Facing US export controls, China's DeepSeek plans to make its own chips (2 minute read)
+DeepSeek is planning to enter the silicon business. The company has been meeting with potential partners in the hardware and silicon space for the past year and has been hiring engineers for the project. It is focusing on data center chips for inference, likely to reduce its reliance on both Huawei and Nvidia. Developing its own chip could give the company an advantage in a market where data center access is likely to remain constrained.
+Microsoft Replaces OpenAI, Anthropic With Own AI in Some Apps (2 minute read)
+Microsoft is starting to replace OpenAI and Anthropic's models with its own in software products like Excel and Outlook. The move shows that the company is making progress in its efforts to build competitive AI models at a lower cost. Microsoft uses massive quantities of tokens in its products. It gets a lot of its tokens at a discount, but those deals are set to expire soon, and Microsoft is working to make sure it isn't stuck paying whoever the leading AI labs decide to charge.
+MiniMax M3: How Sparse Attention Makes Long-Horizon Agents Practical (11 minute read)
+Long-horizon tasks are demanding because the context never stops growing. The longer an agent works, the more expensive each step becomes. MiniMax Sparse Attention changes what the model reads at each step, which results in predictable cost at any length and cheap long context with minimal quality cost. It makes long context cheap and fast enough to sit inside iterative systems that need to keep state over time.
+Harness Engineering for Self-Improvement (28 minute read)
+Recursive self-improvement (RSI) is when ultraintelligent machines can design better machines to improve themselves and surpass humans in all intellectual activities. The feedback loop in modern AI involves models improving the training pipeline and deployment system, which enables better successor models with improved performance. A harness is the system surrounding a base model that orchestrates execution and decides how a model thinks and plans, calls tools and acts, perceives and manages context, stores artifacts, and evaluates results. This post looks at the research around harness engineering and how it contributes to RSI.
+No Space Like J-Space (54 minute read)
+The 'J-space' is the area of conscious access where things are available for a model to do what humans could call conscious reasoning. It is named after an interpretability technique called the Jacobian Lens, which computes, for each layer, the average causal effect of changes in the residual stream of a model's eventual outputs, averaged across a wide variety of contexts. This allows researchers to trace what concepts are associated with each layer as the model proceeds through. The J-space and J-lens are remarkably effective tools and mark a major advance in our understanding of LLMs.
+Steering can help Strands agents achieve 100% agent accuracy (Sponsor)
+Strands Agents is the open source agent harness SDK built from prod systems inside Amazon. Build an agent harness, control it end-to-end. Steering can give your agents specific feedback so they can correct themselves. You get reliable outcomes without micromanaging. See how
+Gemma 4 Technical Report (17 minute read)
+Gemma 4 introduces a new generation of open-weight multimodal language models featuring dense and Mixture-of-Experts architectures, with parameters ranging from 2.3B to 31B. It enhances computational efficiency and reasoning via innovations like a thinking mode, long-context efficiency, and a unified encoder-free architecture. These models achieve performance comparable to larger models across various benchmarks and are available under an Apache 2.0 license for widespread adoption.
+Introducing Muse Image: Image Generation Built for Your World (4 minute read)
+Meta launched Muse Image, an AI-powered model for generating high-quality visuals, now available in Meta AI and integrated with Instagram and WhatsApp. Users can create images using simple prompts, utilize AI effects on Instagram, or redesign rooms with real products via Facebook Marketplace. Soon available globally, Muse Image is free for general use, with more advanced options included in Meta's subscription plans.
+Expanding Managed Agents in Gemini API: background tasks, remote MCP, and more (2 minute read)
+Google has announced new capabilities for Managed Agents in Gemini API, including background execution, remote MCP server integration, custom function calling, and refreshing credentials across interactions. Users still call a single endpoint, and Gemini handles reasoning, code execution, package installation, file management, and web information, all inside an isolated cloud sandbox. The updates turn managed agents into asynchronous workers that operate inside real development environments without blocking applications.
+Reducing Doom Loops with Final Token Preference Optimization (12 minute read)
+Repetitive degeneration is a common failure mode during inference. Antidoom training is a technique that repairs the degenerative repetitive behavior commonly seen after training. It selectively targets the problematic tokens that begin loops to achieve the near-complete elimination of repetitive loops.
+TLDR is hiring a curator for TLDR AI! (TLDR Curator, ~5 hrs/week)
+Over 1M subscribers read TLDR AI to stay on top of the latest in AI models, research, engineering, and more. If you work in AI and want to help curate it, send your LinkedIn or resume to ai@tldr.tech!
+Microsoft's Real AI Strategy Is Not the Chatbot (8 minute read)
+Microsoft aims to vertically integrate the enterprise AI chain, controlling the path from customer interaction to cloud services. This strategy extends beyond its chatbot initiatives.
+Claude Fable 5 promotional access (7 minute read)
+Anthropic is offering access to Claude Fable 5 at no extra cost until July 12. The promotion is available on Pro, Max, Team, and premium seats on seat-based Enterprise plans. Up to 50% of users' weekly subscription limits can be used on Claude Fable 5 during the promotional period. After reaching the limit, users can continue using Fable 5 with usage credits or switch to another model and keep working within their remaining limits.
+Building a Moat: Self Learning Agents (12 minute read)
+Self-learning agents should combine agent traces with in-browser user activity to capture both AI failures and human corrections. CopilotKit uses the AG-UI protocol to turn these interactions into procedural and episodic memory, allowing agents to improve over time while keeping learning scoped by user, team, or application.
+GPT-Realtime-2.1-mini is now available in the API (1 minute read)
+GPT-Realtime-2.1-mini brings reasoning and tool use to OpenAI's Realtime mini lineup at the same cost as GPT-Realtime-mini.
+Why Alignment Evals Need Calibration (8 minute read)
+Current alignment benchmarks may overstate safety because models can recognize evaluation settings, game scoring rules, or conceal sleeper behaviors.
+SpaceX and Cursor are set to release their first jointly developed AI model as soon as Wednesday (1 minute read)
+The model is expected to be competitive with Anthropic's Opus 4.8 and OpenAI's GPT-5.5 in some respects.
+Agents Work Better with Conventional CLIs (12 minute read)
+Microsoft tested whether agents performed better when command-line arguments were replaced by a single JSON payload.
+Get the most interesting AI stories and breakthroughs delivered in a free daily email.
+Join 1,100,000 readers for one daily email
+Privacy Careers Advertise
+
+## full_text
+
+GPT-5.6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖 TLDR
+Newsletters
+Advertise
+Blog
+TLDR
+TLDR AI 2026-07-08
+GPT-5.6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖
+M3: The first open-weights model to combine frontier coding & agent capabilities (Sponsor)
+MiniMax M3 has a 1M-token context window and native multimodal understanding so it can reason through code, process visual info, and operate across massive contexts. Builders are already using it to:
+1️⃣ Create AI agents that reason, use tools, and complete multi-step workflows.
+2️⃣ Analyze screenshots, interfaces, documents, images, and visual workflows without relying on separate vision models.
+3️⃣ Process entire codebases and long documents in a single conversation with a 1M-token context window.
+4️⃣ Build coding assistants, computer-use agents, and video agents.
+>> Get 5.1B tokens / month for just $500 a year.
+>> Try MiniMax Code
+>> Start on the API
+GPT-5.6 Sol, along with Terra and Luna, will launch publicly this Thursday (1 minute read)
+OpenAI is releasing GPT-5.6 Sol, Terra, and Luna tomorrow. It is currently expanding preview access globally. Sol is the flagship model. Terra is a balanced model for everyday work. Luna is a fast and affordable model. Terra has competitive performance to GPT‑5.5 while being 2x cheaper and Luna brings strong capability at our lowest cost.
+Claude Cowork on Mobile and Web (1 minute read)
+Anthropic announced that Claude Cowork sessions and files would become accessible across web and mobile, allowing long-running tasks to continue without an open computer. Beta access began rolling out to Max users, with additional plans to follow.
+Facing US export controls, China's DeepSeek plans to make its own chips (2 minute read)
+DeepSeek is planning to enter the silicon business. The company has been meeting with potential partners in the hardware and silicon space for the past year and has been hiring engineers for the project. It is focusing on data center chips for inference, likely to reduce its reliance on both Huawei and Nvidia. Developing its own chip could give the company an advantage in a market where data center access is likely to remain constrained.
+Microsoft Replaces OpenAI, Anthropic With Own AI in Some Apps (2 minute read)
+Microsoft is starting to replace OpenAI and Anthropic's models with its own in software products like Excel and Outlook. The move shows that the company is making progress in its efforts to build competitive AI models at a lower cost. Microsoft uses massive quantities of tokens in its products. It gets a lot of its tokens at a discount, but those deals are set to expire soon, and Microsoft is working to make sure it isn't stuck paying whoever the leading AI labs decide to charge.
+MiniMax M3: How Sparse Attention Makes Long-Horizon Agents Practical (11 minute read)
+Long-horizon tasks are demanding because the context never stops growing. The longer an agent works, the more expensive each step becomes. MiniMax Sparse Attention changes what the model reads at each step, which results in predictable cost at any length and cheap long context with minimal quality cost. It makes long context cheap and fast enough to sit inside iterative systems that need to keep state over time.
+Harness Engineering for Self-Improvement (28 minute read)
+Recursive self-improvement (RSI) is when ultraintelligent machines can design better machines to improve themselves and surpass humans in all intellectual activities. The feedback loop in modern AI involves models improving the training pipeline and deployment system, which enables better successor models with improved performance. A harness is the system surrounding a base model that orchestrates execution and decides how a model thinks and plans, calls tools and acts, perceives and manages context, stores artifacts, and evaluates results. This post looks at the research around harness engineering and how it contributes to RSI.
+No Space Like J-Space (54 minute read)
+The 'J-space' is the area of conscious access where things are available for a model to do what humans could call conscious reasoning. It is named after an interpretability technique called the Jacobian Lens, which computes, for each layer, the average causal effect of changes in the residual stream of a model's eventual outputs, averaged across a wide variety of contexts. This allows researchers to trace what concepts are associated with each layer as the model proceeds through. The J-space and J-lens are remarkably effective tools and mark a major advance in our understanding of LLMs.
+Steering can help Strands agents achieve 100% agent accuracy (Sponsor)
+Strands Agents is the open source agent harness SDK built from prod systems inside Amazon. Build an agent harness, control it end-to-end. Steering can give your agents specific feedback so they can correct themselves. You get reliable outcomes without micromanaging. See how
+Gemma 4 Technical Report (17 minute read)
+Gemma 4 introduces a new generation of open-weight multimodal language models featuring dense and Mixture-of-Experts architectures, with parameters ranging from 2.3B to 31B. It enhances computational efficiency and reasoning via innovations like a thinking mode, long-context efficiency, and a unified encoder-free architecture. These models achieve performance comparable to larger models across various benchmarks and are available under an Apache 2.0 license for widespread adoption.
+Introducing Muse Image: Image Generation Built for Your World (4 minute read)
+Meta launched Muse Image, an AI-powered model for generating high-quality visuals, now available in Meta AI and integrated with Instagram and WhatsApp. Users can create images using simple prompts, utilize AI effects on Instagram, or redesign rooms with real products via Facebook Marketplace. Soon available globally, Muse Image is free for general use, with more advanced options included in Meta's subscription plans.
+Expanding Managed Agents in Gemini API: background tasks, remote MCP, and more (2 minute read)
+Google has announced new capabilities for Managed Agents in Gemini API, including background execution, remote MCP server integration, custom function calling, and refreshing credentials across interactions. Users still call a single endpoint, and Gemini handles reasoning, code execution, package installation, file management, and web information, all inside an isolated cloud sandbox. The updates turn managed agents into asynchronous workers that operate inside real development environments without blocking applications.
+Reducing Doom Loops with Final Token Preference Optimization (12 minute read)
+Repetitive degeneration is a common failure mode during inference. Antidoom training is a technique that repairs the degenerative repetitive behavior commonly seen after training. It selectively targets the problematic tokens that begin loops to achieve the near-complete elimination of repetitive loops.
+TLDR is hiring a curator for TLDR AI! (TLDR Curator, ~5 hrs/week)
+Over 1M subscribers read TLDR AI to stay on top of the latest in AI models, research, engineering, and more. If you work in AI and want to help curate it, send your LinkedIn or resume to ai@tldr.tech!
+Microsoft's Real AI Strategy Is Not the Chatbot (8 minute read)
+Microsoft aims to vertically integrate the enterprise AI chain, controlling the path from customer interaction to cloud services. This strategy extends beyond its chatbot initiatives.
+Claude Fable 5 promotional access (7 minute read)
+Anthropic is offering access to Claude Fable 5 at no extra cost until July 12. The promotion is available on Pro, Max, Team, and premium seats on seat-based Enterprise plans. Up to 50% of users' weekly subscription limits can be used on Claude Fable 5 during the promotional period. After reaching the limit, users can continue using Fable 5 with usage credits or switch to another model and keep working within their remaining limits.
+Building a Moat: Self Learning Agents (12 minute read)
+Self-learning agents should combine agent traces with in-browser user activity to capture both AI failures and human corrections. CopilotKit uses the AG-UI protocol to turn these interactions into procedural and episodic memory, allowing agents to improve over time while keeping learning scoped by user, team, or application.
+GPT-Realtime-2.1-mini is now available in the API (1 minute read)
+GPT-Realtime-2.1-mini brings reasoning and tool use to OpenAI's Realtime mini lineup at the same cost as GPT-Realtime-mini.
+Why Alignment Evals Need Calibration (8 minute read)
+Current alignment benchmarks may overstate safety because models can recognize evaluation settings, game scoring rules, or conceal sleeper behaviors.
+SpaceX and Cursor are set to release their first jointly developed AI model as soon as Wednesday (1 minute read)
+The model is expected to be competitive with Anthropic's Opus 4.8 and OpenAI's GPT-5.5 in some respects.
+Agents Work Better with Conventional CLIs (12 minute read)
+Microsoft tested whether agents performed better when command-line arguments were replaced by a single JSON payload.
+Get the most interesting AI stories and breakthroughs delivered in a free daily email.
+Join 1,100,000 readers for one daily email
+Privacy Careers Advertise
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 79
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":79,"text_length":9298,"paragraph_count":52,"sentence_count":66,"boilerplate_hits":2,"symbol_ratio":0.0008,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-08 GPT-5.
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖 M3: The first open-weights model to combine frontier coding & agent capabilities (Sponsor) MiniMax M3 has a 1M-token context window and native multimodal understanding so it can reason through code, process visual info, and operate across massive contexts.
+
+3. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Builders are already using it to: 1️⃣ Create AI agents that reason, use tools, and complete multi-step workflows.
+
+4. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   2️⃣ Analyze screenshots, interfaces, documents, images, and visual workflows without relying on separate vision models.
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   3️⃣ Process entire codebases and long documents in a single conversation with a 1M-token context window.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   4️⃣ Build coding assistants, computer-use agents, and video agents.
+
+## business_elements
+
+- companies: TLDR AI Newsletter, OpenAI, Anthropic, Google, Microsoft, Meta, Amazon, Nvidia, Cursor
+- products: GPT-5, Claude, Gemini, agents, agent, Agents, MCP, Cursor
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 5.6, 2026, 07, 08, 3, 1M, 1, 2
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-08 GPT-5. / 4️⃣ Build coding assistants, computer-use agents, and video agents.
+- case_details: 暂无公开信息
+- workflow_changes: 6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖 M3: The first open-weights model to combine frontier coding & agent capabilities (Sponsor) MiniMax M3 has a 1M-token context window and native multimodal understanding so it can reason through code, process visual info, and operate across massive contexts. / Builders are already using it to: 1️⃣ Create AI agents that reason, use tools, and complete multi-step workflows. / 2️⃣ Analyze screenshots, interfaces, documents, images, and visual workflows without relying on separate vision models.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+采集通道未提供摘要。
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
