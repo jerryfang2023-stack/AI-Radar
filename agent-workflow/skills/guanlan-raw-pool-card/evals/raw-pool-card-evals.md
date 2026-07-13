@@ -61,6 +61,7 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Pass when an English product proper name followed by an explicit Chinese event action such as `发布` remains a valid localized title without a redundant translation lookup.
    - Pass when production auto-translation uses a controlled business-news prompt or deterministic event rules, preserves protected names such as LLM, Anthropic, Cursor, Perplexity, and Fable, and blocks unresolved titles instead of persisting generic public machine-translation errors.
    - Fail when a legacy generic machine translation such as `LLM -> 法学硕士` can satisfy the exact-title translation gate.
+   - Pass when a funding headline with a trailing factual clause still produces a source-bounded Chinese title that preserves company, amount, round, and protected AI-agent terminology.
 
 12. `internal_language_block`
    - Pass when frontstage and Hermes JSON do not expose internal production phrases such as `index_only`, `not_fact_signal`, `auto_signal_spec_null`, `fallback`, `backend field`, or stale V2 module names.
@@ -83,6 +84,8 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Pass when every manual Card regeneration records `raw_input_count` and `pool_input_count` in the handoff / manifest and those values match the persisted same-date Raw originals and Pool sections.
    - Pass when a backfill or replay can use `--expected-raw-count=<count>` to stop before deleting or rewriting Cards if the persisted Raw input is stale or different from the audited count.
    - Fail when an isolated replay count is reported as production Raw but Card generation still consumes an older committed Raw file.
+   - Pass when same-date regeneration stages deleted prior Card filenames, new Card files, the Pool-to-Card handoff, and the frontstage manifest as one publication unit.
+   - Fail when the in-run workspace contains 14 current Cards but the merged repository retains additional stale same-date Card files from earlier Pool IDs.
 
 18. `high_value_card_recall`
    - Pass when the production Core/high-value recall fixture promotes confirmed Chinese product launches, pricing changes, disclosed product events, and regional rollouts even if an earlier Pool route says `index_only` or the importance label is non-core.

@@ -15,6 +15,7 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 ## 2026-07-11 Editorial Gate Must Be Release-Blocking
 
 - Source-first structure checks do not prove editorial quality. The unified Business gate must also block stale or undated events, summary-only evidence, title-as-fact output, and duplicated public detail fields.
+- Required Pool lane coverage is satisfied only by source-backed Core evidence. Watchlist, index-only, viewpoint, and merely labeled importance items cannot fill funding/case/product/vertical quotas; a Core coverage gap must trigger targeted original/A-tier refill even when total Pool volume is high.
 - Recall and precision must be tested together on real incidents: confirmed IPOs, lawsuits, shutdowns, and deployments must survive while old launches, company profiles, explainers, and failed extractions remain backend-only.
 
 ## 2026-07-02 Core Signal Cards Contract

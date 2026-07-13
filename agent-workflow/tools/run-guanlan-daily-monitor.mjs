@@ -647,7 +647,14 @@ function importanceCoverageGaps(items, scope = "raw") {
   );
   const min = scope === "pool" ? minPool : minRaw;
   if (!min) return [];
-  const byImportance = items.reduce((acc, item) => {
+  // Pool coverage is a quality contract, not a label-count contract. Only
+  // source-backed Core evidence can satisfy a required commercial lane;
+  // index/watchlist items must not hide a funding, case, product or vertical
+  // recall gap.
+  const scopedItems = scope === "pool"
+    ? items.filter((item) => poolCandidateMeta(item).isCore)
+    : items;
+  const byImportance = scopedItems.reduce((acc, item) => {
     const type = itemImportanceType(item);
     acc[type] = (acc[type] || 0) + 1;
     return acc;
@@ -3502,7 +3509,19 @@ async function runQuerySelectionRegressionFixtures() {
   if (!new RegExp(`^announced [A-Z][a-z]+ ${date.slice(0, 4)}$`, "u").test(recencyHint)) {
     throw new Error(`capital startup path omitted the production-month recency hint: ${recencyHint}`);
   }
-  console.log(JSON.stringify({ ok: true, fixture: "capital-startup-query-priority", selected: selected.map((query) => query.query) }, null, 2));
+  const poolGapRequests = refillRequestsForPoolState(
+    { gaps: [], poolCount: 100, routedCount: 100, coreCount: 100 },
+    [{ importanceType: "important_funding", count: 1, min: 3 }]
+  );
+  if (poolGapRequests.length !== 1 || poolGapRequests[0].importanceType !== "important_funding") {
+    throw new Error(`qualified Pool coverage gap did not trigger targeted refill: ${JSON.stringify(poolGapRequests)}`);
+  }
+  console.log(JSON.stringify({
+    ok: true,
+    fixture: "capital-startup-query-priority",
+    selected: selected.map((query) => query.query),
+    pool_gap_refill: poolGapRequests,
+  }, null, 2));
 }
 
 function keywordSearchResultText(result = {}) {
@@ -4595,19 +4614,20 @@ function coreSupplyGaps(items) {
   };
 }
 
-function refillRequestsForPoolState(supplyGaps) {
-  if (!supplyGaps.gaps.length) return [];
+function refillRequestsForPoolState(supplyGaps, poolGaps = []) {
+  const requests = poolGaps.map((gap) => ({ ...gap }));
+  if (!supplyGaps.gaps.length) return requests;
   const needed = Math.max(
     poolSupplyMin - supplyGaps.poolCount,
     routedPoolSupplyMin - supplyGaps.routedCount,
     corePoolSupplyMin - supplyGaps.coreCount,
     1
   );
-  return targetedCoreRefillImportanceOrder.map((importanceType) => ({
-    importanceType,
-    count: 0,
-    min: Math.min(needed, 3),
-  }));
+  for (const importanceType of targetedCoreRefillImportanceOrder) {
+    if (requests.some((request) => request.importanceType === importanceType)) continue;
+    requests.push({ importanceType, count: 0, min: Math.min(needed, 3) });
+  }
+  return requests;
 }
 
 async function collectTargetedImportanceRefill(poolGaps, existingItems = []) {
@@ -4621,27 +4641,32 @@ async function collectTargetedImportanceRefill(poolGaps, existingItems = []) {
     const pathConfig = keywordPathById(targetedRefillPathByImportance[importanceType]);
     const queries = targetedRefillQueriesByImportance[importanceType] || [];
     for (const baseQuery of queries.slice(0, Math.min(queries.length, Math.max(needed, 1)))) {
-      const query = [baseQuery, pathConfig.fallbackQuerySuffix || pathConfig.querySuffix || ""].filter(Boolean).join(" ");
-      const queryConfig = {
-        query: baseQuery,
-        query_theme: "targeted-pool-gap-refill",
-        keyword_group: "targeted-pool-gap-refill",
-      };
-      try {
-        const results = await searchLayeredWeb(query, Math.min(Math.max(needed + 3, 4), 8));
-        for (const result of results) {
-          const key = result.url || `${result.title}-${result.source}`;
-          if (seen.has(key)) continue;
-          const gate = keywordSearchResultPreGate(result, queryConfig, pathConfig);
-          if (!gate.keep) {
-            filtered.push({ path: pathConfig.id, reason: gate.reason, title: result.title });
-            continue;
+      const suffixes = importanceType === "important_funding"
+        ? [aTierMediaFallbackQuerySuffix, "(official OR newsroom OR press release OR company blog)"]
+        : [pathConfig.fallbackQuerySuffix || pathConfig.querySuffix || ""];
+      for (const suffix of suffixes) {
+        const query = [baseQuery, suffix].filter(Boolean).join(" ");
+        const queryConfig = {
+          query: baseQuery,
+          query_theme: "targeted-pool-gap-refill",
+          keyword_group: "targeted-pool-gap-refill",
+        };
+        try {
+          const results = await searchLayeredWeb(query, Math.min(Math.max(needed + 3, 4), 8));
+          for (const result of results) {
+            const key = result.url || `${result.title}-${result.source}`;
+            if (seen.has(key)) continue;
+            const gate = keywordSearchResultPreGate(result, queryConfig, pathConfig);
+            if (!gate.keep) {
+              filtered.push({ path: pathConfig.id, reason: gate.reason, title: result.title });
+              continue;
+            }
+            seen.add(key);
+            items.push(keywordSearchItem(result, queryConfig, pathConfig, { search_intent: inferSearchIntent(baseQuery) }));
           }
-          seen.add(key);
-          items.push(keywordSearchItem(result, queryConfig, pathConfig, { search_intent: inferSearchIntent(baseQuery) }));
+        } catch (error) {
+          failures.push(`targeted-refill ${importanceType} ${baseQuery}: ${error.message}`);
         }
-      } catch (error) {
-        failures.push(`targeted-refill ${importanceType} ${baseQuery}: ${error.message}`);
       }
     }
   }
@@ -4678,7 +4703,7 @@ async function refillPoolImportanceGaps(items, failures) {
   for (let cycle = 1; cycle <= targetedSupplyRefillCycles; cycle += 1) {
     const poolGaps = importanceCoverageGaps(selectMonitorPoolItems(current), "pool");
     const supplyGaps = coreSupplyGaps(current);
-    const refillRequests = refillRequestsForPoolState(supplyGaps);
+    const refillRequests = refillRequestsForPoolState(supplyGaps, poolGaps);
     if (!refillRequests.length) break;
     const refill = await collectTargetedImportanceRefill(refillRequests, current);
     failures.push(...refill.failures);

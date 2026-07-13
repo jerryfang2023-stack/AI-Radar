@@ -318,7 +318,7 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
     return `${company} 完成 ${amount}融资，估值 ${valuation}${fundingPurposeClause(purpose)}`;
   }
   const fundingPatterns = [
-    /^(.+?)\s+(?:raises?|raised|secures?|secured|closes?|closed|lands?|landed|nabs?|nabbed)\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed|strategic investment)\s*)?(?:round|funding)?(?:\s+(?:to|for)\s+(.+))?$/iu,
+    /^(.+?)\s+(?:raises?|raised|secures?|secured|closes?|closed|lands?|landed|nabs?|nabbed)\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed|strategic investment)\s*)?(?:round|funding)?(?:(?:\s+(?:to|for)\s+(.+))|(?:\s+((?:after|as|while|with|and)\s+.+)))?$/iu,
     /^(.+?)\s+launches\s+with\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed)\s*)?(?:funding)?(?:\s+(?:to|for)\s+(.+))?$/iu,
     /^(.+?)\s+emerged?\s+from\s+stealth\s+with\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s*(?:(series\s+[a-z]|pre[-\s]?seed|seed)\s*)?(?:funding)?(?:\s+(?:to|for)\s+(.+))?$/iu,
   ];
@@ -329,8 +329,9 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
     const amount = translateMoneyAmount(match[2]);
     const round = translateRound(match[3] || "");
     const purpose = translateBusinessPhrase(match[4] || "");
+    const contextClause = /\bai agents?\b/iu.test(match[5] || "") ? "，其 AI 智能体参与融资流程" : "";
     const roundText = round ? `${round}融资` : "融资";
-    return `${company} 完成 ${amount}${round ? ` ${roundText}` : roundText}${fundingPurposeClause(purpose)}`;
+    return `${company} 完成 ${amount}${round ? ` ${roundText}` : roundText}${fundingPurposeClause(purpose)}${contextClause}`;
   }
 
   const launch = title.match(/^(.+?)\s+(?:launches|releases|introduces|unveils)\s+(.+?)(?:\s+(?:to|for)\s+(.+))?$/iu);

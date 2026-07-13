@@ -57,6 +57,7 @@ For self-improvement and regression prevention, read these only when relevant:
 1. Resolve the Asia/Shanghai production date unless the user gives another date.
 2. Confirm Raw / Pool exist and are not stale relative to Card/site data.
    - For a manual backfill or replay, pass `--expected-raw-count=<persisted-count>` to Card generation and verify the handoff records matching `raw_input_count` / `pool_input_count` before publication.
+   - Same-date regeneration replaces that date's Card set. Publication must stage removed prior Card filenames together with new files and persist the matching Pool-to-Card handoff plus frontstage manifest; an in-run clean set with stale merged files is a failed release.
 3. Count audit supply:
    - total Pool;
    - routed Pool;
@@ -73,6 +74,7 @@ node agent-workflow/tools/generate-asset-cards-from-pool.mjs --date=YYYY-MM-DD -
 5. Treat the generator's semantic gate as authoritative for formal Signal Cards. If a Raw / Pool candidate is rejected for stale source, generic list/report, index-only evidence, or user-feedback-only evidence, do not silently force it into `01-Signal-Cards`.
    - A historical `index_only` route or non-core importance label is not itself authoritative when the same Raw evidence is a readable, dated, confirmed commercial event. Re-evaluate the evidence object and formal event; do not let stale routing suppress a valid Card.
    - A confirmed formal event rejected only for repairable ingestion gaps is a high-priority Card-recall failure only when the source is fresh and dated, the item is routed to Core/Emerging, and it has a core commercial importance type. Undated profiles, index-only discovery records, watchlist context, and non-core RSS articles must not fail the batch merely because a Chinese field is missing.
+   - Deterministic English funding-title normalization must preserve company, amount, round, and protected AI-agent terminology even when the headline continues with an `After/With/And...` factual clause. Repair that Raw title rule instead of letting `missing_chinese_fact_translation` silently remove the event.
    - Run the pinned Core/high-value recall fixture after changing Card eligibility or Pool evidence classification:
 
 ```powershell

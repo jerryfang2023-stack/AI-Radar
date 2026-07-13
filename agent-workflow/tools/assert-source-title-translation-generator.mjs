@@ -52,6 +52,10 @@ const talp = await generateSourceTitleTranslation(
   "Meet Talp: AI startup with Turkish roots raising $20M pre-seed valuation to simulate customers with AI personas — TFN",
   { provider: "business-rule", allowNetwork: true }
 );
+const lyzr = await generateSourceTitleTranslation(
+  "Lyzr AI Raises $100 Million Series B After Its Own AI Agent SivaClaw Fielded 130-Plus Investors And Generated $400 Million In Interest",
+  { provider: "business-rule", allowNetwork: true }
+);
 
 const legacyMachineTranslationFile = path.join(tempDir, "legacy-machine-translations.json");
 fs.writeFileSync(legacyMachineTranslationFile, JSON.stringify({
@@ -74,6 +78,7 @@ const ok =
   primeIntellect.titleZh === "Prime Intellect 完成 1.3 亿美元融资，估值 10 亿美元，用于 AI 训练平台" &&
   neuralTrust.titleZh === "NeuralTrust 完成 2000 万美元融资，用于保护企业不断增长的 AI 智能体集群" &&
   talp.titleZh === "Talp 以 2000 万美元估值完成种子前轮融资，用于通过 AI 虚拟用户模拟客户反应" &&
+  lyzr.titleZh === "Lyzr AI 完成 1 亿美元 B 轮融资，其 AI 智能体参与融资流程" &&
   legacyMachineTranslations.size === 0;
 
 fs.rmSync(tempDir, { recursive: true, force: true });
@@ -88,6 +93,7 @@ if (!ok) {
     primeIntellect,
     neuralTrust,
     talp,
+    lyzr,
     legacyMachineTranslationCount: legacyMachineTranslations.size,
     reason: "English source title was not generated and persisted when the exact translation DB entry was missing.",
   }, null, 2));

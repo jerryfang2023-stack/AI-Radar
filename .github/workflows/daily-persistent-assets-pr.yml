@@ -514,6 +514,8 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-github-daily-persistent-assets-pr.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-daily-production-chain-readiness.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-pool-to-card-dedupe-gate.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-pool-to-card-handoff.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-frontstage-manifest.json"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.json"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md"
@@ -529,6 +531,13 @@ jobs:
           if [ "${{ steps.assets.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
             stage_find "01-SiteV2/knowledge/01-Signal-Cards" "${RUN_DATE}--signal--*.md"
+            git add -u -- "01-SiteV2/knowledge/01-Signal-Cards"
+            current_card_count="$(find "01-SiteV2/knowledge/01-Signal-Cards" -type f -name "${RUN_DATE}--signal--*.md" | wc -l | tr -d ' ')"
+            staged_card_count="$(git ls-files ":(glob)01-SiteV2/knowledge/01-Signal-Cards/*/${RUN_DATE}--signal--*.md" | wc -l | tr -d ' ')"
+            if [ "$current_card_count" != "$staged_card_count" ]; then
+              echo "Same-date Card replacement mismatch: worktree=${current_card_count}, staged=${staged_card_count}" >&2
+              exit 1
+            fi
           fi
 
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then

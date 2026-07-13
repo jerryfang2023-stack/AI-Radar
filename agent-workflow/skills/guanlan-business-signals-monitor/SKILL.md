@@ -81,6 +81,7 @@ When repairing repeated morning failures, also read `examples/good-failure-route
    - `raw_card_ingestion_fields`: English/mixed/placeholder title, title-like subject, or missing raw-to-card title/fact extraction fields;
    - `publication`: PR, merge, or Pages failure after valid assets.
 6. Before any full-chain rerun, record the pre-rerun checklist: activeDate, public Card count, Raw / Pool / routed Pool counts, cardable candidate count, source-artifact freshness by source/channel, raw/Card title-translation and fact-extraction status, PR / Pages state, and local dirty / fast-forward state. If the checklist shows same-date Pool audit supply and Card supply are sufficient, do not rerun Raw just because the Raw floor is short; use the existing artifacts and repair the downstream blocker.
+   - Required Pool importance coverage counts only source-backed Core evidence. Index-only, watchlist, viewpoint, or merely labeled items do not satisfy funding/case/product/vertical coverage; refill the missing lane from original and A-tier sources even when total Pool volume passes.
 7. Repair the smallest script, rule, gate, or skill path needed for the failing category.
 8. Rerun the exact failed gate or the smallest relevant validation.
 9. Add or tighten an eval before adding long prose when the failure is recurring.
