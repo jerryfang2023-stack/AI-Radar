@@ -2424,6 +2424,29 @@ function poolCandidateSectionsForDate(date = "") {
     .filter((section) => /^##\s+P-\d+/mu.test(section));
 }
 
+function availableLensDates(cards = [], activeDate = "") {
+  const poolDir = path.join(root, "01-SiteV2", "content", "02-pool");
+  const poolDates = fs.existsSync(poolDir)
+    ? fs.readdirSync(poolDir)
+      .map((name) => name.match(/^(\d{4}-\d{2}-\d{2})-pool-candidates\.md$/u)?.[1] || "")
+      .filter(Boolean)
+    : [];
+  return [...new Set([activeDate, ...cards.map((card) => card.date), ...poolDates].filter(Boolean))]
+    .sort((a, b) => dateValue(b) - dateValue(a));
+}
+
+function mergeHistoricalLensItems(generatedItems = [], previousItems = [], activeDate = "") {
+  const byKey = new Map();
+  const add = (item) => {
+    const key = `${item.date || ""}|${canonicalUrl(item.sourceUrl) || item.linkedCardId || item.cardId || item.id || ""}`;
+    if (item.date && item.title && item.sourceUrl && !byKey.has(key)) byKey.set(key, item);
+  };
+  generatedItems.forEach(add);
+  previousItems.forEach(add);
+  return [...byKey.values()]
+    .sort((a, b) => dateValue(b.date) - dateValue(a.date) || (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.id).localeCompare(String(b.id)));
+}
+
 function poolValue(section = "", key = "") {
   return section.match(new RegExp(`^- ${key}:\\s*(.+)$`, "mu"))?.[1]?.trim().replace(/^`|`$/gu, "") || "";
 }
@@ -4111,8 +4134,8 @@ function buildIntelligenceGraphIndex(payload = {}) {
   const todayFrontstageCards = (payload.frontstageCards || []).filter((card) => card.date === activeDate);
   const frontstageCardIds = new Set(todayFrontstageCards.map((card) => card.id));
   const coreSignalCards = allCards.filter((card) => card.date === activeDate && (card.fromCorePool || (card.poolRoutes || []).includes("core_pool")));
-  const enterpriseAiTransformation = payload.enterpriseAiTransformation || [];
-  const aiHardwareSignals = payload.aiHardwareSignals || [];
+  const enterpriseAiTransformation = (payload.enterpriseAiTransformation || []).filter((item) => item.date === activeDate);
+  const aiHardwareSignals = (payload.aiHardwareSignals || []).filter((item) => item.date === activeDate);
   const tagAssociations = payload.tagAssociations || [];
   const relationshipDirections = payload.relationshipDirections || [];
   const trendLinks = payload.trendLinks || [];
@@ -4206,6 +4229,12 @@ function buildIntelligenceGraphIndex(payload = {}) {
 const rawCards = [
   ...signalRoots.flatMap((rootItem) => walkMarkdown(rootItem.dir).map((file) => cardFromFile(file, rootItem.category))),
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
+let previousPayload = {};
+try {
+  previousPayload = fs.existsSync(outputFile) ? JSON.parse(read(outputFile)) : {};
+} catch {
+  previousPayload = {};
+}
 const activeDate = rawCards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
 syncSourceTitleTranslationsFromCards(rawCards, activeDate);
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPublicBusinessSignalEligible))
@@ -4226,7 +4255,12 @@ const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPubli
 const frontstageSelection = buildSignalCardFrontstageSelection(cards);
 const frontstageCards = frontstageSelection.cards;
 const allBusinessSignalCards = ensureUniqueCardIds(frontstageCards);
-const enterpriseAiLensCandidates = buildEnterpriseAiLensCandidateItems(cards, activeDate)
+const lensDates = [...new Set([
+  ...availableLensDates(cards, activeDate),
+  ...(previousPayload.enterpriseAiFdePool || []).map((item) => item.date),
+  ...(previousPayload.aiHardwareSignals || []).map((item) => item.date),
+].filter(Boolean))].sort((a, b) => dateValue(b) - dateValue(a));
+const enterpriseAiLensCandidates = lensDates.flatMap((date) => buildEnterpriseAiLensCandidateItems(cards, date))
   .map(normalizeFrontstageDisplay)
   .map((card) => ({
     ...card,
@@ -4255,7 +4289,7 @@ const enterpriseAiLensCandidates = buildEnterpriseAiLensCandidateItems(cards, ac
   .filter((card) => !isLowValueConsumerOrPlatformPolicySignal(card))
   .filter(hasEnterpriseImplementationSignal)
   .filter((card) => !isWeakSubject(card.subject));
-const enterpriseAiFdePool = buildEnterpriseAiFdePoolItems(cards, activeDate)
+const generatedEnterpriseAiFdePool = lensDates.flatMap((date) => buildEnterpriseAiFdePoolItems(cards, date))
   .map(normalizeFrontstageDisplay)
   .map((card) => ({
     ...card,
@@ -4283,9 +4317,20 @@ const enterpriseAiFdePool = buildEnterpriseAiFdePoolItems(cards, activeDate)
   .filter(publicFdeCandidateIsDisplayReady)
   .filter(hasEnterpriseImplementationSignal)
   .filter((card) => !isWeakSubject(card.subject));
-const enterpriseAiTransformation = buildEnterpriseAiTransformation(enterpriseAiFdePool, [], activeDate);
+const enterpriseAiFdePool = mergeHistoricalLensItems(
+  generatedEnterpriseAiFdePool,
+  previousPayload.enterpriseAiFdePool || [],
+  activeDate,
+);
+const enterpriseAiTransformation = lensDates.flatMap((date) => buildEnterpriseAiTransformation(enterpriseAiFdePool, [], date));
 const publicEnterpriseAiFdePool = enterpriseAiFdePool.map(({ rawTitle, ...item }) => item);
-const aiHardwareSignals = buildAiHardwareSignals(cards, activeDate);
+const aiHardwareSignals = mergeHistoricalLensItems(
+  lensDates.flatMap((date) => buildAiHardwareSignals(cards, date)),
+  previousPayload.aiHardwareSignals || [],
+  activeDate,
+);
+const activeEnterpriseAiFdePool = publicEnterpriseAiFdePool.filter((item) => item.date === activeDate);
+const activeEnterpriseAiTransformation = enterpriseAiTransformation.filter((item) => item.date === activeDate);
 const trendAssets = buildTrendAssets(activeDate, allBusinessSignalCards);
 const payload = {
   meta: {
@@ -4311,6 +4356,7 @@ const payload = {
       opportunitySignalFrontstageLimit,
     },
     allowedTagCount: allowedTagIds.size,
+    lensHistoryMode: "all_available_dates",
   },
   categories: Object.entries(categoryLabels).map(([category, label]) => ({ category, label })),
   stats: buildStats(allBusinessSignalCards, activeDate),
@@ -4342,8 +4388,11 @@ fs.writeFileSync(enterpriseAiFdeFile, JSON.stringify({
     generatedAt: payload.meta.generatedAt,
     activeDate,
     source: rel(outputFile),
-    fdePoolCount: publicEnterpriseAiFdePool.length,
-    itemCount: enterpriseAiTransformation.length,
+    fdePoolCount: activeEnterpriseAiFdePool.length,
+    itemCount: activeEnterpriseAiTransformation.length,
+    totalFdePoolCount: publicEnterpriseAiFdePool.length,
+    totalItemCount: enterpriseAiTransformation.length,
+    historyMode: "all_available_dates",
     boundary: "FDE is an Enterprise AI lens pool, not a fourth Business Signals Card type.",
   },
   fdePool: publicEnterpriseAiFdePool,
@@ -4351,4 +4400,4 @@ fs.writeFileSync(enterpriseAiFdeFile, JSON.stringify({
 }, null, 2), "utf8");
 console.log(`Wrote ${rel(outputFile)} with ${allBusinessSignalCards.length} cards.`);
 console.log(`Wrote ${rel(intelligenceGraphIndexFile)} for Hermes Agent.`);
-console.log(`Wrote ${rel(enterpriseAiFdeFile)} with ${enterpriseAiTransformation.length} FDE items.`);
+console.log(`Wrote ${rel(enterpriseAiFdeFile)} with ${activeEnterpriseAiTransformation.length} active-date FDE items (${enterpriseAiTransformation.length} total).`);

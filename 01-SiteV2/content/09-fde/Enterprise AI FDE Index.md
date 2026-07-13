@@ -1,7 +1,8 @@
 ---
 type: enterprise_ai_fde_index
 status: current
-updated_at: 2026-06-24T02:01:00.672Z
+enterprise_ai_lens_version: EAI-V1.2.0-raw-card-ingestion-boundary
+updated_at: 2026-07-13T08:00:09.486Z
 ---
 
 # Enterprise AI / FDE Index
@@ -10,4 +11,17 @@ updated_at: 2026-06-24T02:01:00.672Z
 
 ## Daily Views
 
+- [2026-07-13 Enterprise AI FDE](daily/2026-07-13 Enterprise AI FDE.md)
+- [2026-07-09 Enterprise AI FDE](daily/2026-07-09 Enterprise AI FDE.md)
+- [2026-07-01 Enterprise AI FDE](daily/2026-07-01 Enterprise AI FDE.md)
 - [2026-06-24 Enterprise AI FDE](daily/2026-06-24 Enterprise AI FDE.md)
+- [2026-06-21 Enterprise AI FDE](daily/2026-06-21 Enterprise AI FDE.md)
+- [2026-06-20 Enterprise AI FDE](daily/2026-06-20 Enterprise AI FDE.md)
+- [2026-06-19 Enterprise AI FDE](daily/2026-06-19 Enterprise AI FDE.md)
+- [2026-06-18 Enterprise AI FDE](daily/2026-06-18 Enterprise AI FDE.md)
+- [2026-06-05 Enterprise AI FDE](daily/2026-06-05 Enterprise AI FDE.md)
+- [2026-06-01 Enterprise AI FDE](daily/2026-06-01 Enterprise AI FDE.md)
+- [2026-05-23 Enterprise AI FDE](daily/2026-05-23 Enterprise AI FDE.md)
+- [2026-05-22 Enterprise AI FDE](daily/2026-05-22 Enterprise AI FDE.md)
+- [2026-05-21 Enterprise AI FDE](daily/2026-05-21 Enterprise AI FDE.md)
+- [2026-05-20 Enterprise AI FDE](daily/2026-05-20 Enterprise AI FDE.md)

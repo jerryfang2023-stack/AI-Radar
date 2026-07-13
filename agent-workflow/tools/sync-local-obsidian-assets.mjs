@@ -22,6 +22,7 @@ const reportsDir = path.join(root, "agent-workflow", "reports");
 const logFile = path.join(reportsDir, `${date}-local-obsidian-sync.md`);
 const commands = [
   ["node", ["01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"]],
+  ["node", ["agent-workflow/tools/sync-business-lenses-to-obsidian.mjs"]],
   ["node", ["01-SiteV2/site/scripts/build-follow-builders-page-data.mjs"]],
   ["node", ["01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs"]],
 ];
@@ -78,6 +79,8 @@ function main() {
     "",
     "- `01-SiteV2/site/data/v3-data-observation-desk.json`",
     "- `01-SiteV2/site/data/intelligence-graph-index.json`",
+    "- `01-SiteV2/content/09-fde/`",
+    "- `01-SiteV2/content/10-ai-hardware/`",
     "- `01-SiteV2/site/data/follow-builders-daily.json`",
     "",
   );
