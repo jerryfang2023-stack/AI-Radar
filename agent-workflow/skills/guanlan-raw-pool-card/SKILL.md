@@ -125,6 +125,8 @@ Frontstage summaries should reuse each Card asset's source-backed `价值描述`
 
 Voluntary privacy pledges and similar policy/ethics events remain backend context unless the same source proves a separate product, funding, procurement, contract, or customer event.
 
+A Pool item explicitly routed as `usable_for: viewpoint` with `event_evidence: false` remains backend viewpoint context even if broad commercial keywords make another heuristic look event-like. Reject it before Card spec generation instead of allowing an unexplained `company_name_unusable` failure to block the editorial batch.
+
 Do not lower Card quality to satisfy a count. If many Raw / Pool candidates fail the formal Card gate, repair Pool routing or collect better Raw evidence.
 
 ## Self-Improvement Loop

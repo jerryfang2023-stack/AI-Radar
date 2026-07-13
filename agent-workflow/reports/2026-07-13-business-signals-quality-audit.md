@@ -70,6 +70,7 @@
 - 融资事实新增主体/金额绑定：估值、相关文章、竞品轮次、公共资助、导航文字和截断页面片段不能改写成当前公司的本轮融资。
 - 使用失败运行的四路 source artifacts 在隔离工作树完成全链复跑：Raw 182、Pool 79、正式 Card 14，其中 `product_service=10`、`funding=4`；去重、Card editorial、source-first、frontstage regression、pre-commit production chain 均通过。
 - 14 张隔离 Card 保留原有 10 张，并新增 Prime Intellect、NeuralTrust、Talp、Monogram；MYTH / Signalbase、隐私自律公约、无日期 Castari 页面和无链接 AIHOT 摘要未进入正式 Card。
+- 第二次云端生产运行 `29230221860` 的监控、Raw / Pool、Card 生成和去重均成功，但 editorial Gate 拦下 P-037“黄仁勋：AI 与吸尘器同样都是工具”：该条已明确标记 `usable_for: viewpoint`、`event_evidence: false`、`pool_routes: index_only`，却被宽泛商业关键词误送到 Card spec。规则已改为在 spec 前按结构化证据路由拒绝此类观点，不再产生 `company_name_unusable` 批次阻断。
 
 ## 尚需执行
 

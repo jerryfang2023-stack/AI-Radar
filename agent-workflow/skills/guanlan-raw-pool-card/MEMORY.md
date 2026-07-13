@@ -8,6 +8,7 @@ Keep this file short. Add only durable lessons that improve the skill itself. Do
 - High-priority recall repair is limited to fresh, dated Core/Emerging commercial events. Undated profiles, watchlist/context records, unrelated index-only items, and voluntary policy pledges must not stop the batch over missing Chinese fields.
 - Funding databases are discovery sources, not sufficient final evidence. Resolve the original announcement or credible reporting before generating a formal funding Card.
 - Funding pages often mix valuation, related stories, rivals, public grants, and navigation chrome with the current round. Card ingestion must bind company and round amount to the source-title event before reusing translated facts or full-text sentences.
+- Structured evidence routing outranks keyword false positives: `usable_for: viewpoint` with no event evidence must never reach Card spec generation or block the full batch as an unexplained company/title failure.
 
 ## 2026-07-13 Title And Frontstage Value Boundary
 

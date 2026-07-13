@@ -1475,8 +1475,10 @@ function hasConcreteFundingEvent(section) {
 function isViewpointWithoutConfirmedCommercialEvent(section) {
   const title = poolTitle(section);
   const viewpoint = /(?:谈|发文称|认为|表示|观点|解读).{0,80}(?:AI|智能体|模型|产品|市场)|(?:CEO|创始人|总裁).{0,40}(?:称|谈|认为|表示)/u.test(title);
+  const routedViewpoint = /\bviewpoint\b/iu.test(value(section, "usable_for"))
+    && value(section, "event_evidence") !== "true";
   const confirmedInTitle = /(?:正式)?(?:发布|推出|上线|开放|定价|签约|部署|收购|完成融资)/u.test(title);
-  return viewpoint && !confirmedInTitle;
+  return (viewpoint || routedViewpoint) && !confirmedInTitle;
 }
 
 function isUnconfirmedProductRumorOrPlan(section) {
@@ -3481,6 +3483,20 @@ function runCoreRecallRegressionFixtures() {
     ),
     "NeuralTrust 获得 2000 万美元 种子轮融资。",
     "a source-matched funding sentence must produce a distinct Chinese fact",
+  );
+
+  const routedViewpointFixture = [
+    "## P-988｜黄仁勋：AI 与吸尘器同样都是工具，不要过度拟人化",
+    "- evidence_object_type: supporting_article",
+    "- evidence_object_usable: false",
+    "- event_evidence: false",
+    "- pool_routes: index_only",
+    "- usable_for: viewpoint",
+    "- importance_type: important_vertical_solution",
+  ].join("\n");
+  assert.ok(
+    autoSignalEligibilityIssues(routedViewpointFixture).some((issue) => /viewpoint_without_confirmed_commercial_event/iu.test(issue)),
+    "a routed viewpoint without event evidence must be rejected before Card spec generation",
   );
 
   const positiveFailures = [];
