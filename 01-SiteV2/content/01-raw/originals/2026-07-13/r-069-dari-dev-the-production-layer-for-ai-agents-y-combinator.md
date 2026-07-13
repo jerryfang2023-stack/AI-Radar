@@ -23,7 +23,7 @@ search_path: "capital_startup"
 search_path_label: "资本与创业公司路径"
 author: ""
 published_at: ""
-collected_at: 2026-07-13T08:51:53.066Z
+collected_at: 2026-07-13T09:31:03.789Z
 language: mixed
 full_text_hash: cc9d21e8ac311bee
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-069-dari-dev-the-production-layer-for-ai-agents-y-combinator.md"
@@ -59,8 +59,8 @@ url_hash: 9d56acbf2b8dbfa4
 content_hash: cc9d21e8ac311bee
 semantic_hash: ec8d28463860ccc8
 duplicate_of: ""
-first_seen_at: "2026-07-13T08:51:53.066Z"
-last_seen_at: 2026-07-13T08:51:53.066Z
+first_seen_at: "2026-07-13T09:31:03.789Z"
+last_seen_at: 2026-07-13T09:31:03.789Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"dari.dev: The Production Layer for AI Agents | Y Combinator Home› Companies›dari.dev dari.dev The Production Layer for AI Agents Y Combinator LogoFall 2025 Active Developer Tools B2B San Francisco --- https://dari.dev --- ### The Production Layer for AI Agents We let developers deploy A... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"dev: The Production Layer for AI Agents | Y Combinator Home › Companies › dari.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"dev The Production Layer for AI Agents Fall 2025 Active Developer Tools B2B San Francisco https://dari.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"dev The Production Layer for AI Agents We let developers deploy AI agents as API endpoints with built-in tools, sandboxes, and durable execution.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Agents maintain state, run long-lived workflows, and handle retries automatically.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Active Founders Avyay Varadarajan Founder Building dari.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:53.066Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.789Z
 theme: capital-market-signal
 keyword_group: capital-market-signal
 copyright_note: local research archive only

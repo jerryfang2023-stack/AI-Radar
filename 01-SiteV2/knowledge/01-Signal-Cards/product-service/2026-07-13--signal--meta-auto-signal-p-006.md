@@ -1,5 +1,5 @@
 ---
-id: SIG-20260713-A09
+id: SIG-20260713-A08
 type: signal_card
 signal_type: product_service
 title: "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力"
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T08:51:53.358Z
-updated_at: 2026-07-13T08:51:53.358Z
+created_at: 2026-07-13T09:31:04.086Z
+updated_at: 2026-07-13T09:31:04.086Z
 
 raw_refs: ["R-006"]
 pool_refs: ["P-006"]

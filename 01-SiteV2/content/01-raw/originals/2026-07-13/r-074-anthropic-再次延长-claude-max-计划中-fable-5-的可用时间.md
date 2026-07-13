@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T21:20:07.000Z"
-collected_at: 2026-07-13T08:51:53.080Z
+collected_at: 2026-07-13T09:31:03.803Z
 language: mixed
 full_text_hash: 9f796aa1da8efb26
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-074-anthropic-再次延长-claude-max-计划中-fable-5-的可用时间.md"
@@ -49,7 +49,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: supporting_evidence
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Anthropic 再次延长 Claude Max 计划中 Fable 5 的可用时间","discovery_summary":"Anthropic 再次延长了 Claude Fable 5 在 Claude Max 计划中的可用时间。所有付费计划用户对 Fable 5 的访问权限将延长至 7 月 19 日，同时 Claude Code 的周速率限制保持 50% 更高。用户每周最多可将一半的使用额度用于 Fable 5，超出部分可使用积分继续使用，或切换其他模型。Anthropic 最初因计算资源限制而采取此措施，旨在评估需求与算力可用性。相比之下，OpenAI 似乎对 GPT-5.6 的访问限制更有信心。作者认为 Anthropic 应永久保留 Fable 5 的访问权限，因为围绕其可用性的不确定性正在使用户流向 OpenAI。","source_name":"Simon Willison 博客","origin_url":"https://simonwillison.net/2026/Jul/12/bump","discovered_at":"2026-07-13T08:42:56.370Z","rank_on_page":119,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Anthropic 再次延长 Claude Max 计划中 Fable 5 的可用时间","discovery_summary":"Anthropic 再次延长了 Claude Fable 5 在 Claude Max 计划中的可用时间。所有付费计划用户对 Fable 5 的访问权限将延长至 7 月 19 日，同时 Claude Code 的周速率限制保持 50% 更高。用户每周最多可将一半的使用额度用于 Fable 5，超出部分可使用积分继续使用，或切换其他模型。Anthropic 最初因计算资源限制而采取此措施，旨在评估需求与算力可用性。相比之下，OpenAI 似乎对 GPT-5.6 的访问限制更有信心。作者认为 Anthropic 应永久保留 Fable 5 的访问权限，因为围绕其可用性的不确定性正在使用户流向 OpenAI。","source_name":"Simon Willison 博客","origin_url":"https://simonwillison.net/2026/Jul/12/bump","discovered_at":"2026-07-13T09:21:55.240Z","rank_on_page":123,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -60,7 +60,7 @@ content_hash: 9f796aa1da8efb26
 semantic_hash: aa71f59e50915e7d
 duplicate_of: ""
 first_seen_at: "2026-07-12T21:20:07.000Z"
-last_seen_at: 2026-07-13T08:51:53.080Z
+last_seen_at: 2026-07-13T09:31:03.803Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["证据对象不可用：疑似索引页、目录页、薄
 key_excerpts: [{"type":"number","text":"Anthropic 再次延长了 Claude Fable 5 在 Claude Max 计划中的可用时间。所有付费计划用户对 Fable 5 的访问权限将延长至 7 月 19 日，同时 Claude Code 的周速率限制保持 50% 更高。用户每周最多可将一半的使用额度用于 Fable 5，超出部分可使用积分继续使用，或切换其他模型。Anthropic 最初因计算资源限制而采取此措施，旨在评估需求与算力可用性。相比之下，OpenAI 似乎对 GPT-5.6 的访问限制更有信心。作者认为 Anthropic 应永久保留 Fable 5 的访问权限，因为围绕其可用性的不确定性正在使用户流向 OpenAI。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"12th July 2026 One of the consequences of GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"number","text":"6 Sol being clearly a Fable/Mythos class model is that Anthropic have, once again, bumped the date that Fable stops being available in their Claude Max plans: We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"As before, you can use up to half of your weekly usage limit on Fable 5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"After that, you can continue using Fable 5 with usage credits, or switch to another model to keep working within your remaining limits.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Anthropic's original rationale for this was compute constraints - they wanted a better idea of both demand and compute availability before committing to keeping the new model cheap for subscribers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:53.080Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.803Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
@@ -210,7 +210,7 @@ At this point I think Anthropic should change track and keep Fable permanently a
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Anthropic 再次延长 Claude Max 计划中 Fable 5 的可用时间","discovery_summary":"Anthropic 再次延长了 Claude Fable 5 在 Claude Max 计划中的可用时间。所有付费计划用户对 Fable 5 的访问权限将延长至 7 月 19 日，同时 Claude Code 的周速率限制保持 50% 更高。用户每周最多可将一半的使用额度用于 Fable 5，超出部分可使用积分继续使用，或切换其他模型。Anthropic 最初因计算资源限制而采取此措施，旨在评估需求与算力可用性。相比之下，OpenAI 似乎对 GPT-5.6 的访问限制更有信心。作者认为 Anthropic 应永久保留 Fable 5 的访问权限，因为围绕其可用性的不确定性正在使用户流向 OpenAI。","source_name":"Simon Willison 博客","origin_url":"https://simonwillison.net/2026/Jul/12/bump","discovered_at":"2026-07-13T08:42:56.370Z","rank_on_page":119,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Anthropic 再次延长 Claude Max 计划中 Fable 5 的可用时间","discovery_summary":"Anthropic 再次延长了 Claude Fable 5 在 Claude Max 计划中的可用时间。所有付费计划用户对 Fable 5 的访问权限将延长至 7 月 19 日，同时 Claude Code 的周速率限制保持 50% 更高。用户每周最多可将一半的使用额度用于 Fable 5，超出部分可使用积分继续使用，或切换其他模型。Anthropic 最初因计算资源限制而采取此措施，旨在评估需求与算力可用性。相比之下，OpenAI 似乎对 GPT-5.6 的访问限制更有信心。作者认为 Anthropic 应永久保留 Fable 5 的访问权限，因为围绕其可用性的不确定性正在使用户流向 OpenAI。","source_name":"Simon Willison 博客","origin_url":"https://simonwillison.net/2026/Jul/12/bump","discovered_at":"2026-07-13T09:21:55.240Z","rank_on_page":123,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

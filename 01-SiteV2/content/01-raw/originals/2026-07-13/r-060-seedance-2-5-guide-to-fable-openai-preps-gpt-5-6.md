@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-06T00:00:00.000Z"
-collected_at: 2026-07-13T08:51:52.973Z
+collected_at: 2026-07-13T09:31:03.688Z
 language: mixed
 full_text_hash: 4ee22dcf75144871
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-060-seedance-2-5-guide-to-fable-openai-preps-gpt-5-6.md"
@@ -60,7 +60,7 @@ content_hash: 4ee22dcf75144871
 semantic_hash: d991f4cab48b3c7b
 duplicate_of: ""
 first_seen_at: "2026-07-06T00:00:00.000Z"
-last_seen_at: 2026-07-13T08:51:52.973Z
+last_seen_at: 2026-07-13T09:31:03.688Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"5 🎥, guide to Fable ✨, OpenAI preps GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"funding","text":"6 🚀 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-06 Seedance 2.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"6 🚀 Make Bob your new work BFF (Sponsor) IBM Bob works directly in the codebase to generate and refine code in context.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Describe what you need in natural language and get implementation where work is already happening.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"No switching between tabs, tools or half-finished ideas.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:52.973Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.688Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

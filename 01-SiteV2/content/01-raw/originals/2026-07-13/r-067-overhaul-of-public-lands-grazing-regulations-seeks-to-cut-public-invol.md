@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-11T11:11:26.000Z"
-collected_at: 2026-07-13T08:51:53.041Z
+collected_at: 2026-07-13T09:31:03.764Z
 language: mixed
 full_text_hash: 28ebdddf695968f9
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-067-overhaul-of-public-lands-grazing-regulations-seeks-to-cut-public-invol.md"
@@ -60,7 +60,7 @@ content_hash: 28ebdddf695968f9
 semantic_hash: 4e03921e53c3c6dc
 duplicate_of: ""
 first_seen_at: "2026-07-11T11:11:26.000Z"
-last_seen_at: 2026-07-13T08:51:53.041Z
+last_seen_at: 2026-07-13T09:31:03.764Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"supporting_context","text":"For the first time since 1995, the Bureau of Land Management is rewriting its grazing regulations.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"number","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The federal government is rewriting its rules governing ranching on public lands to increase the number of cattle, sheep, and other livestock grazing on 155 million acres in the West, an area twice the size of New Mexico.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Public lands grazing is overseen by a nearly century-old system that heavily subsidizes some of the wealthiest Americans while doing little to address its harms to the environment, ProPublica and High Country News found last year.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Even though rangeland management experts say overgrazing has degraded public lands, the new rules being drafted by the US Department of the Interior’s Bureau of Land Management—the first overhaul since 1995—would instead expand the practice.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The proposed rules would also ratchet back public participation in the agency’s decisions to allow grazing on federal public lands.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"The BLM’s proposed updates would strictly limit who has a say and when they can object, eliminating many steps where the public has been able to observe and comment on decisions to issue or renew permits.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:53.041Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.764Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

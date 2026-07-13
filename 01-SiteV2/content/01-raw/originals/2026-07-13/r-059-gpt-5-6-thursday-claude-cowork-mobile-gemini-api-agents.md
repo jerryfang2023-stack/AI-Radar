@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-08T00:00:00.000Z"
-collected_at: 2026-07-13T08:51:52.964Z
+collected_at: 2026-07-13T09:31:03.679Z
 language: mixed
 full_text_hash: ac3fea8fdffbfdd8
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-059-gpt-5-6-thursday-claude-cowork-mobile-gemini-api-agents.md"
@@ -60,7 +60,7 @@ content_hash: ac3fea8fdffbfdd8
 semantic_hash: f20d418505d0e6b2
 duplicate_of: ""
 first_seen_at: "2026-07-08T00:00:00.000Z"
-last_seen_at: 2026-07-13T08:51:52.964Z
+last_seen_at: 2026-07-13T09:31:03.679Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-08 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖 M3: The first open-weights model to combine frontier coding & agent capabilities (Sponsor) MiniMax M3 has a 1M-token context window and native multimodal understanding so it can reason through code, process visual info, and operate across massive contexts.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Builders are already using it to: 1️⃣ Create AI agents that reason, use tools, and complete multi-step workflows.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"2️⃣ Analyze screenshots, interfaces, documents, images, and visual workflows without relying on separate vision models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"3️⃣ Process entire codebases and long documents in a single conversation with a 1M-token context window.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"4️⃣ Build coding assistants, computer-use agents, and video agents.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:52.964Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.679Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

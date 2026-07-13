@@ -22,8 +22,8 @@ search_intent: ""
 search_path: ""
 search_path_label: ""
 author: ""
-published_at: "2026-07-12T12:00:00.000Z"
-collected_at: 2026-07-13T08:51:53.032Z
+published_at: "2026-07-12T00:00:00.000Z"
+collected_at: 2026-07-13T09:31:03.754Z
 language: mixed
 full_text_hash: fb2112d2edc49779
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-066-the-fight-against-ai-data-centers-is-just-beginning.md"
@@ -59,8 +59,8 @@ url_hash: 2023fe29621e6af7
 content_hash: fb2112d2edc49779
 semantic_hash: c85f3cc1a54cccdc
 duplicate_of: ""
-first_seen_at: "2026-07-12T12:00:00.000Z"
-last_seen_at: 2026-07-13T08:51:53.032Z
+first_seen_at: "2026-07-12T00:00:00.000Z"
+last_seen_at: 2026-07-13T09:31:03.754Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the data center buildout, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started Years before the AI boom threatened local power [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Column AI Policy The fight against AI data centers is just beginning Community pushback from across the US and beyond is making some companies reconsider their data center buildout plans.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"by Emma Roth Jul 12, 2026, 12:00 PM UTC A yard sign opposing a planned data center is displayed along Route 54 in Mount Carmel Township Northumberland County.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"| Image: Getty Images Column AI Policy The fight against AI data centers is just beginning Community pushback from across the US and beyond is making some companies reconsider their data center buildout plans.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"by Emma Roth Jul 12, 2026, 12:00 PM UTC Emma Roth is a news writer who covers the streaming wars, consumer tech, crypto, social media, and much more.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Previously, she was a writer and editor at MUO.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:53.032Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.754Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

@@ -1,5 +1,5 @@
 ---
-id: SIG-20260713-A15
+id: SIG-20260713-A14
 type: signal_card
 signal_type: product_service
 title: "Stigg 发布 2.0：面向 AI 产品的用量运行时"
@@ -12,8 +12,8 @@ title_translation_status: translated
 title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T08:51:53.358Z
-updated_at: 2026-07-13T08:51:53.358Z
+created_at: 2026-07-13T09:31:04.086Z
+updated_at: 2026-07-13T09:31:04.086Z
 
 raw_refs: ["R-014"]
 pool_refs: ["P-014"]

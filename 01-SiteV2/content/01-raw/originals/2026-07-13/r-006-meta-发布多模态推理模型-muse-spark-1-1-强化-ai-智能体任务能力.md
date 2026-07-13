@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T15:12:54.000Z"
-collected_at: 2026-07-13T08:51:52.643Z
+collected_at: 2026-07-13T09:31:03.356Z
 language: mixed
 full_text_hash: 098b84a14fcb2afd
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-006-meta-发布多模态推理模型-muse-spark-1-1-强化-ai-智能体任务能力.md"
@@ -60,7 +60,7 @@ content_hash: 098b84a14fcb2afd
 semantic_hash: 78451cd69047b251
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-12T15:12:54.000Z"
-last_seen_at: 2026-07-13T08:51:52.643Z
+last_seen_at: 2026-07-13T09:31:03.356Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"number","text":"Meta 于 7 月 9 日发布多模态推理模型 Muse Spark 1.1，重点提升 AI 智能体任务的规划、协同与执行能力。新版本强化多智能体协作机制，支持最高 100 万 token 上下文长度。模型可自主判断点击界面、编写脚本或批量执行操作，并能诊断修复复杂代码错误。Muse Spark 1.1 已上线 Meta AI App 和 meta.ai 的 Thinking 模式，开发者可通过 Meta Model API 预览版调用。安全评估显示其在前沿风险领域维持在安全范围内，但在部分测试中仍落后于 GPT-5.5 和 Claude Opus 4.8。 IT之家 7 月 12 日消息，Meta 于 7 月 9 日正式发布适用于 AI 智能体的多模态推理模型 Muse Spark 1. 1 版本，重点提升了模型在智能体任务中的规划、协同与执行能力，并增强了工具调用、代码开发、应用操作能力。 IT之家 7 月 12 日消息，Meta 于 7 月 9 日正式发布适用于 AI 智能体的多模态推理模型 Muse Spark 1. 1 版本，重点提升了模型在智能体任务中的规划、协同与执行能力，并增强了工具调用、代码开发、应用操作能","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 12 日消息，Meta 于 7 月 9 日正式发布适用于 AI 智能体的多模态推理模型 Muse Spark 1.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"1 版本，重点提升了模型在智能体任务中的规划、协同与执行能力，并增强了工具调用、代码开发、应用操作能力。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"Meta 表示，Muse Spark 1.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"1 强化了多智能体协作机制，由主智能体负责收集信息、制定计划，再将任务拆分并分配给多个子智能体并行执行，从而缩短复杂项目的处理时间。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"同时模型支持最高 100 万 token 的上下文长度，可在长时间工作流程中持续保留关键信息，并调用较早阶段的内容。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:52.643Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.356Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only

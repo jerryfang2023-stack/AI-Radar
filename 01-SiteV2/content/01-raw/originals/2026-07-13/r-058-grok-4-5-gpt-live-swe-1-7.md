@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-09T00:00:00.000Z"
-collected_at: 2026-07-13T08:51:52.956Z
+collected_at: 2026-07-13T09:31:03.671Z
 language: mixed
 full_text_hash: 7dae3d5cc26b11af
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-058-grok-4-5-gpt-live-swe-1-7.md"
@@ -60,7 +60,7 @@ content_hash: 7dae3d5cc26b11af
 semantic_hash: 8b446d79b8086fb5
 duplicate_of: ""
 first_seen_at: "2026-07-09T00:00:00.000Z"
-last_seen_at: 2026-07-13T08:51:52.956Z
+last_seen_at: 2026-07-13T09:31:03.671Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"5 🤖, GPT-Live 🎙️, SWE-1.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"7 👨‍💻 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-09 Grok 4.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"7 👨‍💻 Choose an AI platform built to drive outcomes (Sponsor) Dataiku has been named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Platforms for Data Science & Machine Learning — our fifth time receiving this recognition.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"We believe our position in the Magic Quadrant reflects what enterprises now require from AI: Uniting business, data, and AI teams Orchestrating across the full AI stack Governing the end-to-end AI lifecycle See why Gartner once again recognized Dataiku for “ Completeness of Vision” and “Ability to Execute” here .","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"GPT-Live (8 minute read) OpenAI introduced a full-duplex voice model that can listen and speak simultaneously, handle natural conversational cues, and delegate complex tasks to GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:52.956Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.671Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

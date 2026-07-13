@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-02T00:00:00.000Z"
-collected_at: 2026-07-13T08:51:52.980Z
+collected_at: 2026-07-13T09:31:03.695Z
 language: mixed
 full_text_hash: fc9e19bd1c65558b
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-061-gemini-flash-upgrade-meta-ai-cloud-zcode.md"
@@ -60,7 +60,7 @@ content_hash: fc9e19bd1c65558b
 semantic_hash: 7dcad748c6be85c1
 duplicate_of: ""
 first_seen_at: "2026-07-02T00:00:00.000Z"
-last_seen_at: 2026-07-13T08:51:52.980Z
+last_seen_at: 2026-07-13T09:31:03.695Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"Gemini Flash upgrade ⚡️, Meta AI cloud 🌐, ZCode 👨‍💻 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-02 Gemini Flash upgrade ⚡️, Meta AI cloud 🌐, ZCode 👨‍💻 The inference layer your coding agents have been waiting for (Sponsor) Coding agents only move as fast as the inference behind them.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"FriendliAI is the Frontier Inference Cloud for agents — serving frontier open-weight models with the speed, reliability, and cost efficiency agents need in production.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Why teams run agents on FriendliAI (see how): > Built for speed: #1 output speed for GLM-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"> Frontier models: GLM-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"2, MiniMax-M3, Kimi-K2.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"7 > Reliable at scale: 99.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:52.980Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.695Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

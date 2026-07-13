@@ -23,7 +23,7 @@ search_path: "capital_startup"
 search_path_label: ""
 author: ""
 published_at: "2026-07-08T11:00:00.000Z"
-collected_at: 2026-07-13T08:51:52.583Z
+collected_at: 2026-07-13T09:31:03.292Z
 language: mixed
 full_text_hash: 36ef58eefd2bf0d4
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-001-alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-.md"
@@ -54,13 +54,13 @@ source_role: resolved_original_source
 origin_fetch_status: ""
 paywall_status: none
 block_status: none
-duplicate_status: merged_provider_duplicates
+duplicate_status: unique
 url_hash: 9661f69b0104e76e
 content_hash: 36ef58eefd2bf0d4
 semantic_hash: be3996ca0ae3092a
-duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+duplicate_of: ""
 first_seen_at: "2026-07-08T11:00:00.000Z"
-last_seen_at: 2026-07-13T08:51:52.583Z
+last_seen_at: 2026-07-13T09:31:03.292Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"funding","text":"Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams Accessibility Statement Skip Navigation By transforming the GTM stack, Alta's AI team brings a learning curve managers can only dream about TEL AVIV, Israel, July 8, 2026 /PRNewswire/ -- Alta, the AI System of Actions for..... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup By transforming the GTM stack, Alta's AI team brings a learning curve managers can only dream about TEL AVIV","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"By transforming the GTM stack, Alta's AI team brings a learning curve managers can only dream about TEL AVIV, Israel , July 8, 2026 /PRNewswire/ -- Alta , the AI System of Actions for go-to-market teams, today announced $25 million in Series A funding.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The round was led by IN Venture, with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures, along with prominent angel investors and scout funds.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Alta will use the funding to accelerate growth by expanding its team globally, growing its customer base, and enhancing the platform - adding new data, CRM, and advertising integrations, as well as introducing agents for account management and cross-selling.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Alta hit its first million in revenue within months of commercializing and is on track for 800% revenue growth this year.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms, as well as hundreds of businesses, from Fortune 500 companies to SMBs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:52.583Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.292Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only
@@ -231,7 +231,7 @@ Modal title
 
 ## 原始摘要 / 采集文本
 
-Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams Accessibility Statement Skip Navigation By transforming the GTM stack, Alta's AI team brings a learning curve managers can only dream about TEL AVIV, Israel, July 8, 2026 /PRNewswire/ -- Alta, the AI System of Actions for..... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup By transforming the GTM stack, Alta's AI team brings a learning curve managers can only dream about TEL AVIV, Israel , July 8, 2026 /PRNewswire/ -- Alta , the AI System of Actions for go-to-market teams, today announced $25 million in Series A funding. The round was led by IN Venture, with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures, along with prominent angel investors and scout funds.
+Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams Accessibility Statement Skip Navigation By transforming the GTM stack, Alta's AI team brings a learning curve managers can only dream about TEL AVIV, Israel, July 8, 2026 /PRNewswire/ -- Alta, the AI System of Actions for..... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup By transforming the GTM stack, Alta's AI team brings a learning curve managers can only dream about TEL AVIV By transforming the GTM stack, Alta's AI team brings a learning curve managers can only dream about TEL AVIV, Israel , July 8, 2026 /PRNewswire/ -- Alta , the AI System of Actions for go-to-market teams, today announced $25 million in Series A funding. The round was led by IN Venture, with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures, along with prominent angel investors and scout funds.
 
 ## 采集备注
 
