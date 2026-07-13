@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T15:12:54.000Z"
-collected_at: 2026-07-13T07:15:26.815Z
+collected_at: 2026-07-13T07:40:18.728Z
 language: mixed
 full_text_hash: 098b84a14fcb2afd
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-004-meta-发布多模态推理模型-muse-spark-1-1-强化-ai-智能体任务能力.md"
@@ -60,7 +60,7 @@ content_hash: 098b84a14fcb2afd
 semantic_hash: 78451cd69047b251
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-12T15:12:54.000Z"
-last_seen_at: 2026-07-13T07:15:26.815Z
+last_seen_at: 2026-07-13T07:40:18.728Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -68,16 +68,16 @@ pool_routes: ["watchlist"]
 change_action_detected: true
 evidence_eligibility: eligible
 evidence_block_reason: ""
-guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
-business_elements: {"companies":["IT之家（RSS）","Meta"],"products":["GPT-5","Claude"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["1.1","7","9","100 万","5.5","4.8","12"],"quotes":[]}
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","Meta"],"products":["GPT-5","Claude"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["1.1","7","9","100 万","5.5","4.8","12","1"],"quotes":[]}
 evidence_seed: {"company_actions":["IT之家 7 月 12 日消息，Meta 于 7 月 9 日正式发布适用于 AI 智能体的多模态推理模型 Muse Spark 1.","1 版本，重点提升了模型在智能体任务中的规划、协同与执行能力，并增强了工具调用、代码开发、应用操作能力。","1 强化了多智能体协作机制，由主智能体负责收集信息、制定计划，再将任务拆分并分配给多个子智能体并行执行，从而缩短复杂项目的处理时间。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
 missing_information: ["没有具体客户或真实企业案例"]
-key_excerpts: [{"type":"number","text":"Meta 于 7 月 9 日发布多模态推理模型 Muse Spark 1.1，重点提升 AI 智能体任务的规划、协同与执行能力。新版本强化多智能体协作机制，支持最高 100 万 token 上下文长度。模型可自主判断点击界面、编写脚本或批量执行操作，并能诊断修复复杂代码错误。Muse Spark 1.1 已上线 Meta AI App 和 meta.ai 的 Thinking 模式，开发者可通过 Meta Model API 预览版调用。安全评估显示其在前沿风险领域维持在安全范围内，但在部分测试中仍落后于 GPT-5.5 和 Claude Opus 4.8。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 12 日消息，Meta 于 7 月 9 日正式发布适用于 AI 智能体的多模态推理模型 Muse Spark 1.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"1 版本，重点提升了模型在智能体任务中的规划、协同与执行能力，并增强了工具调用、代码开发、应用操作能力。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"Meta 表示，Muse Spark 1.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"1 强化了多智能体协作机制，由主智能体负责收集信息、制定计划，再将任务拆分并分配给多个子智能体并行执行，从而缩短复杂项目的处理时间。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"同时模型支持最高 100 万 token 的上下文长度，可在长时间工作流程中持续保留关键信息，并调用较早阶段的内容。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+key_excerpts: [{"type":"number","text":"Meta 于 7 月 9 日发布多模态推理模型 Muse Spark 1.1，重点提升 AI 智能体任务的规划、协同与执行能力。新版本强化多智能体协作机制，支持最高 100 万 token 上下文长度。模型可自主判断点击界面、编写脚本或批量执行操作，并能诊断修复复杂代码错误。Muse Spark 1.1 已上线 Meta AI App 和 meta.ai 的 Thinking 模式，开发者可通过 Meta Model API 预览版调用。安全评估显示其在前沿风险领域维持在安全范围内，但在部分测试中仍落后于 GPT-5.5 和 Claude Opus 4.8。 IT之家 7 月 12 日消息，Meta 于 7 月 9 日正式发布适用于 AI 智能体的多模态推理模型 Muse Spark 1. 1 版本，重点提升了模型在智能体任务中的规划、协同与执行能力，并增强了工具调用、代码开发、应用操作能力。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 12 日消息，Meta 于 7 月 9 日正式发布适用于 AI 智能体的多模态推理模型 Muse Spark 1.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"1 版本，重点提升了模型在智能体任务中的规划、协同与执行能力，并增强了工具调用、代码开发、应用操作能力。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"Meta 表示，Muse Spark 1.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"1 强化了多智能体协作机制，由主智能体负责收集信息、制定计划，再将任务拆分并分配给多个子智能体并行执行，从而缩短复杂项目的处理时间。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"同时模型支持最高 100 万 token 的上下文长度，可在长时间工作流程中持续保留关键信息，并调用较早阶段的内容。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:15:26.815Z
-theme: uncategorized
-keyword_group: uncategorized
+fact_extraction_completed_at: 2026-07-13T07:40:18.728Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
 copyright_note: local research archive only
 ---
 
@@ -120,7 +120,7 @@ Meta 表示，目前 Muse Spark 1.1 已上线 Meta AI App 和 meta.ai 的 Thinki
 ## key_excerpts
 
 1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
-   Meta 于 7 月 9 日发布多模态推理模型 Muse Spark 1.1，重点提升 AI 智能体任务的规划、协同与执行能力。新版本强化多智能体协作机制，支持最高 100 万 token 上下文长度。模型可自主判断点击界面、编写脚本或批量执行操作，并能诊断修复复杂代码错误。Muse Spark 1.1 已上线 Meta AI App 和 meta.ai 的 Thinking 模式，开发者可通过 Meta Model API 预览版调用。安全评估显示其在前沿风险领域维持在安全范围内，但在部分测试中仍落后于 GPT-5.5 和 Claude Opus 4.8。
+   Meta 于 7 月 9 日发布多模态推理模型 Muse Spark 1.1，重点提升 AI 智能体任务的规划、协同与执行能力。新版本强化多智能体协作机制，支持最高 100 万 token 上下文长度。模型可自主判断点击界面、编写脚本或批量执行操作，并能诊断修复复杂代码错误。Muse Spark 1.1 已上线 Meta AI App 和 meta.ai 的 Thinking 模式，开发者可通过 Meta Model API 预览版调用。安全评估显示其在前沿风险领域维持在安全范围内，但在部分测试中仍落后于 GPT-5.5 和 Claude Opus 4.8。 IT之家 7 月 12 日消息，Meta 于 7 月 9 日正式发布适用于 AI 智能体的多模态推理模型 Muse Spark 1. 1 版本，重点提升了模型在智能体任务中的规划、协同与执行能力，并增强了工具调用、代码开发、应用操作能力。
 
 2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
    IT之家 7 月 12 日消息，Meta 于 7 月 9 日正式发布适用于 AI 智能体的多模态推理模型 Muse Spark 1.
@@ -147,7 +147,7 @@ Meta 表示，目前 Muse Spark 1.1 已上线 Meta AI App 和 meta.ai 的 Thinki
 - workflows: 权限 / 安全治理, 部署 / 集成交付
 - business_actions: 发布 / 推出, 部署 / 上线
 - affected_departments: IT / 安全
-- numbers: 1.1, 7, 9, 100 万, 5.5, 4.8, 12
+- numbers: 1.1, 7, 9, 100 万, 5.5, 4.8, 12, 1
 - quotes: 暂无公开信息
 
 ## evidence_seed
@@ -165,7 +165,7 @@ Meta 表示，目前 Muse Spark 1.1 已上线 Meta AI App 和 meta.ai 的 Thinki
 - importance_score: 5
 - importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
 - supporting_signals: commercial_or_risk_context,adoption_context
-- novelty: 2
+- novelty: 3
 - evidence_strength: 4
 - case_richness: 5
 - trend_relevance: 5
@@ -206,7 +206,7 @@ Meta 表示，目前 Muse Spark 1.1 已上线 Meta AI App 和 meta.ai 的 Thinki
 
 ## 原始摘要 / 采集文本
 
-Meta 于 7 月 9 日发布多模态推理模型 Muse Spark 1.1，重点提升 AI 智能体任务的规划、协同与执行能力。新版本强化多智能体协作机制，支持最高 100 万 token 上下文长度。模型可自主判断点击界面、编写脚本或批量执行操作，并能诊断修复复杂代码错误。Muse Spark 1.1 已上线 Meta AI App 和 meta.ai 的 Thinking 模式，开发者可通过 Meta Model API 预览版调用。安全评估显示其在前沿风险领域维持在安全范围内，但在部分测试中仍落后于 GPT-5.5 和 Claude Opus 4.8。
+Meta 于 7 月 9 日发布多模态推理模型 Muse Spark 1.1，重点提升 AI 智能体任务的规划、协同与执行能力。新版本强化多智能体协作机制，支持最高 100 万 token 上下文长度。模型可自主判断点击界面、编写脚本或批量执行操作，并能诊断修复复杂代码错误。Muse Spark 1.1 已上线 Meta AI App 和 meta.ai 的 Thinking 模式，开发者可通过 Meta Model API 预览版调用。安全评估显示其在前沿风险领域维持在安全范围内，但在部分测试中仍落后于 GPT-5.5 和 Claude Opus 4.8。 IT之家 7 月 12 日消息，Meta 于 7 月 9 日正式发布适用于 AI 智能体的多模态推理模型 Muse Spark 1. 1 版本，重点提升了模型在智能体任务中的规划、协同与执行能力，并增强了工具调用、代码开发、应用操作能力。
 
 ## 采集备注
 

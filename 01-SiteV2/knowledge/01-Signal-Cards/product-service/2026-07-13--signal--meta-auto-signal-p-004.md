@@ -1,5 +1,5 @@
 ---
-id: SIG-20260713-A05
+id: SIG-20260713-A06
 type: signal_card
 signal_type: product_service
 title: "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力"
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T07:15:27.513Z
-updated_at: 2026-07-13T07:15:27.513Z
+created_at: 2026-07-13T07:40:19.484Z
+updated_at: 2026-07-13T07:40:19.484Z
 
 raw_refs: ["R-004"]
 pool_refs: ["P-004"]
@@ -33,7 +33,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-coding", "track-ai-agent", "track-enterprise-workflow", "track-ai-applications", "track-ai-infra", "track-ai-governance"]
+  track: ["track-ai-coding", "track-ai-agent", "track-ai-applications", "track-ai-infra", "track-ai-governance"]
   function: ["function-engineering"]
   scenario: ["scenario-clinical-imaging", "scenario-agent-governance"]
   customer: ["customer-developer-team"]
@@ -73,7 +73,7 @@ Meta 于 7 月 9 日发布多模态推理模型 Muse Spark 1.1，重点提升 AI
 - 新版本强化多智能体协作机制，支持最高 100 万 token 上下文长度。
 - Muse Spark 1.1 已上线 Meta AI App 和 meta.ai 的 Thinking 模式，开发者可通过 Meta Model API 预览版调用。
 - 安全评估显示其在前沿风险领域维持在安全范围内，但在部分测试中仍落后于 GPT-5.5 和 Claude Opus 4.8。
-- 同时模型支持最高 100 万 token 的上下文长度，可在长时间工作流程中持续保留关键信息，并调用较早阶段的内容。
+- IT之家 7 月 12 日消息，Meta 于 7 月 9 日正式发布适用于 AI 智能体的多模态推理模型 Muse Spark 1.1 版本，重点提升了模型在智能体任务中的规划、协同与执行能力，并增强了工具调用、代码开发、应用操作能力。
 
 ## 价值描述
 
@@ -81,7 +81,7 @@ Meta 于 7 月 9 日发布多模态推理模型 Muse Spark 1.1，重点提升 AI
 
 ## 可见原文片段
 
-IT之家 7 月 12 日消息，Meta 于 7 月 9 日正式发布适用于 AI 智能体的多模态推理模型 Muse Spark 1.1 版本，重点提升了模型在智能体任务中的规划、协同与执行能力，并增强了工具调用、代码开发、应用操作能力。
+同时模型支持最高 100 万 token 的上下文长度，可在长时间工作流程中持续保留关键信息，并调用较早阶段的内容。
 
 ## 证据边界
 
