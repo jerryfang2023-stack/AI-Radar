@@ -246,6 +246,16 @@ function collectGeneratedDataIssues() {
     ];
     const detailById = new Map(detailItems.map((item) => [item.id, item]));
     const enterpriseItems = Array.isArray(data?.enterpriseAiTransformation) ? data.enterpriseAiTransformation : [];
+    const aiHardwareItems = Array.isArray(data?.aiHardwareSignals) ? data.aiHardwareSignals : [];
+    const hasHistoricalCards = (data?.cards || []).some((item) => item.date && item.date !== activeDate);
+    const hasHistoricalLensItems = [...enterpriseItems, ...aiHardwareItems]
+      .some((item) => item.date && item.date !== activeDate);
+    if (hasHistoricalCards && data?.meta?.lensHistoryMode !== "all_available_dates") {
+      issues.push(issue(dataFile, "business_lens_history_mode_missing", data?.meta?.lensHistoryMode || "missing"));
+    }
+    if (hasHistoricalCards && !hasHistoricalLensItems) {
+      issues.push(issue(dataFile, "business_lens_history_missing", "FDE and AI Hardware arrays contain active-date items only"));
+    }
     for (const item of enterpriseItems) {
       const detail = detailById.get(item.cardId);
       if (!detail) {
