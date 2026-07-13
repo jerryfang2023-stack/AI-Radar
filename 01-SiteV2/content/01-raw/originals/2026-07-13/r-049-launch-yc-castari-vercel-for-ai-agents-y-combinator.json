@@ -1,0 +1,278 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-049",
+  "title": "Launch YC: Castari - Vercel for AI Agents | Y Combinator",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://www.ycombinator.com/launches/OrV-castari-vercel-for-ai-agents",
+  "canonical_url": "https://ycombinator.com/launches/OrV-castari-vercel-for-ai-agents",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "funding",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "capital_startup",
+  "search_path_label": "资本与创业公司路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "fde_or_applied_ai_org_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-13T10:23:56.977Z",
+  "language": "mixed",
+  "full_text": "Launch YC: Castari - Vercel for AI Agents | Y Combinator\nHome › Launches › MadeThis\n20\nCastari - Vercel for AI Agents\nDeploy your sandboxed agents with Castari\nJacob Wright\nMadeThis\n8 months ago\nEmbed\nhttps://madethis.com #ai #operations\nHey! We’re Jacob Wright & Cambree Bernkopf, founders of Castari .\nTL;DR\nCastari lets teams deploy AI agents to secure, autoscaling sandboxes in seconds.\nYou write agent logic with the Claude Agent SDK (other frameworks coming soon) . We turn it into a production-grade endpoint.\nWe’re especially focused on:\nTeams building internal agents (ops, support, data, eng workflows).\nCompanies whose core product is an agent built on Claude Agent SDK and need a safe, reliable way to run it.\nLaunch Video:\nhttps://youtu.be/81K80OivtAc\nThe Problem:\nSerious agents are not just a single API call. Agents need a computer.\nThey execute code, call tools and browsers, run for minutes instead of milliseconds, and touch sensitive systems. Most teams end up rebuilding the same fragile setup:\nHomegrown agent harnesses\nSandboxes, file systems, and queues stitched together\nLogs and traces scattered across many services\nAd hoc snapshots and risky secret handling\nThe result:\nEvery agent needs its own mini runtime\nDebugging one agent run feels like detective work\nAdding a new agent feels like starting a new infra project\nGood agents stall at “cool demo” instead of reaching production. Deploying agents becomes a full-time infrastructure problem.\nHow Castari solves it\nWe’re building Castari to be the natural runtime for AI agents built on Claude Agent SDK . We wrap the entire agent in a sandbox, deploy it, and provide you with an endpoint url that auto-scales as requests come in. No need to write code in your tools to manage your sandbox lifecycle.\n1. Drop in a config file → get a production runtime\nIn your Claude Agent SDK repo:\nAdd a castari.yaml (entrypoint, tools, env vars)\nRun castari deploy\nThat’s it. Your agent is now running in a secure sandbox with an endpoint, UI, and observability.\nWhether that agent is:\nan internal system your team uses\na customer-facing agent that is your product\nthe deployment workflow is identical and boring (in the good way).\n2. Sandboxing & safety, built-in\nEvery run executes in an isolated sandbox designed for tool-using agents\nYou design the behavior; we handle isolation and scaling\nNo more duct-taping together sandbox primitives for specific tools\nBottom line: You keep building on Claude Agent SDK the way you already are — for internal workflows or core products. Castari turns that into a safe, observable, production-ready runtime.\nWhy Castari is different\nE2B, Modal, Daytona, Cloudflare (and friends) give you powerful sandbox and compute primitives.\nCastari sits one layer up:\nCastari wraps around your Claude Agent SDK-based agents so you can define them declaratively and run them in secure sandboxes, without owning the underlying sandbox lifecycle.\nAgent-first semantics : runs, sessions, tools, snapshots are native concepts we manage.\nZero framework lock-in : remove Castari and your agent still runs on vanilla Claude Agent SDK; keep Castari and your infra team gets its life back.\nFocused start : deeply integrated with Claude Agent SDK today, with the same “drop-in config” experience coming to other frameworks next.\nWe’re building the runtime we wish existed for agents.\nWhy we’re working on this\nWhile I was leading the FDE team at RunPod:\nBuilt and shipped AI infrastructure and agents for Fortune 500s and fast-growing startups\nWatched the same loop repeat: agent works in a notebook → weeks disappear into infra glue → nobody trusts the system, production release gets delayed (over and over again).\nAdditionally, while @Cambree Bernkopf and I scaled our AI consumer app to 2m+ members, our biggest issues were getting our agents to work reliably in production.\nThe pattern is clear: agents deserve a first-class runtime, the way frontends got one.\nCastari is our bet that:\nSandboxing & safety should be built-in, not bolted on\nGoing from “prototype” to “production-safe” should be one config file, not a quarter-long project\nAI teams should ship agents, not infrastructure.\nAsk: early pilot access\nWe are opening a limited pilot for:\nTeams building internal agents who need a safer, more reliable runtime\nCompanies building agent centric products that need to run in production without bespoke infra\nIf that is you and you are tired of wrestling with sandboxes, observability, and brittle tooling:\n→ Email jacob@castari.com with subject “Castari Pilot” and 2 to 3 sentences about your agent stack and use case.\n→ Check out our open source repo for using any model with Claude Agent SDK on GitHub .\n→ Join the waitlist on castari.com to hear about our first releases.\nJacob, Cambree, and the Castari team\nSee All Launches ›",
+  "clean_text": "Launch YC: Castari - Vercel for AI Agents | Y Combinator\nHome › Launches › MadeThis\n20\nCastari - Vercel for AI Agents\nDeploy your sandboxed agents with Castari\nJacob Wright\nMadeThis\n8 months ago\nEmbed\nhttps://madethis.com #ai #operations\nHey! We’re Jacob Wright & Cambree Bernkopf, founders of Castari .\nTL;DR\nCastari lets teams deploy AI agents to secure, autoscaling sandboxes in seconds.\nYou write agent logic with the Claude Agent SDK (other frameworks coming soon) . We turn it into a production-grade endpoint.\nWe’re especially focused on:\nTeams building internal agents (ops, support, data, eng workflows).\nCompanies whose core product is an agent built on Claude Agent SDK and need a safe, reliable way to run it.\nLaunch Video:\nhttps://youtu.be/81K80OivtAc\nThe Problem:\nSerious agents are not just a single API call. Agents need a computer.\nThey execute code, call tools and browsers, run for minutes instead of milliseconds, and touch sensitive systems. Most teams end up rebuilding the same fragile setup:\nHomegrown agent harnesses\nSandboxes, file systems, and queues stitched together\nLogs and traces scattered across many services\nAd hoc snapshots and risky secret handling\nThe result:\nEvery agent needs its own mini runtime\nDebugging one agent run feels like detective work\nAdding a new agent feels like starting a new infra project\nGood agents stall at “cool demo” instead of reaching production. Deploying agents becomes a full-time infrastructure problem.\nHow Castari solves it\nWe’re building Castari to be the natural runtime for AI agents built on Claude Agent SDK . We wrap the entire agent in a sandbox, deploy it, and provide you with an endpoint url that auto-scales as requests come in. No need to write code in your tools to manage your sandbox lifecycle.\n1. Drop in a config file → get a production runtime\nIn your Claude Agent SDK repo:\nAdd a castari.yaml (entrypoint, tools, env vars)\nRun castari deploy\nThat’s it. Your agent is now running in a secure sandbox with an endpoint, UI, and observability.\nWhether that agent is:\nan internal system your team uses\na customer-facing agent that is your product\nthe deployment workflow is identical and boring (in the good way).\n2. Sandboxing & safety, built-in\nEvery run executes in an isolated sandbox designed for tool-using agents\nYou design the behavior; we handle isolation and scaling\nNo more duct-taping together sandbox primitives for specific tools\nBottom line: You keep building on Claude Agent SDK the way you already are — for internal workflows or core products. Castari turns that into a safe, observable, production-ready runtime.\nWhy Castari is different\nE2B, Modal, Daytona, Cloudflare (and friends) give you powerful sandbox and compute primitives.\nCastari sits one layer up:\nCastari wraps around your Claude Agent SDK-based agents so you can define them declaratively and run them in secure sandboxes, without owning the underlying sandbox lifecycle.\nAgent-first semantics : runs, sessions, tools, snapshots are native concepts we manage.\nZero framework lock-in : remove Castari and your agent still runs on vanilla Claude Agent SDK; keep Castari and your infra team gets its life back.\nFocused start : deeply integrated with Claude Agent SDK today, with the same “drop-in config” experience coming to other frameworks next.\nWe’re building the runtime we wish existed for agents.\nWhy we’re working on this\nWhile I was leading the FDE team at RunPod:\nBuilt and shipped AI infrastructure and agents for Fortune 500s and fast-growing startups\nWatched the same loop repeat: agent works in a notebook → weeks disappear into infra glue → nobody trusts the system, production release gets delayed (over and over again).\nAdditionally, while @Cambree Bernkopf and I scaled our AI consumer app to 2m+ members, our biggest issues were getting our agents to work reliably in production.\nThe pattern is clear: agents deserve a first-class runtime, the way frontends got one.\nCastari is our bet that:\nSandboxing & safety should be built-in, not bolted on\nGoing from “prototype” to “production-safe” should be one config file, not a quarter-long project\nAI teams should ship agents, not infrastructure.\nAsk: early pilot access\nWe are opening a limited pilot for:\nTeams building internal agents who need a safer, more reliable runtime\nCompanies building agent centric products that need to run in production without bespoke infra\nIf that is you and you are tired of wrestling with sandboxes, observability, and brittle tooling:\n→ Email jacob@castari.com with subject “Castari Pilot” and 2 to 3 sentences about your agent stack and use case.\n→ Check out our open source repo for using any model with Claude Agent SDK on GitHub .\n→ Join the waitlist on castari.com to hear about our first releases.\nJacob, Cambree, and the Castari team\nSee All Launches ›",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-13/r-049-launch-yc-castari-vercel-for-ai-agents-y-combinator.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-13/r-049-launch-yc-castari-vercel-for-ai-agents-y-combinator.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 85,
+  "extractor_diagnostics": {
+    "readability_score": 85,
+    "text_length": 4825,
+    "paragraph_count": 64,
+    "sentence_count": 35,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0002,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 4825,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "8185194d8f64af93",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "c254d42c484ada65",
+  "content_hash": "8185194d8f64af93",
+  "full_text_hash": "8185194d8f64af93",
+  "semantic_hash": "876378c95513b0eb",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-13T10:23:56.977Z",
+  "last_seen_at": "2026-07-13T10:23:56.977Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "Launch YC: Castari - Vercel for AI Agents | Y Combinator Home› Launches›MadeThis 20 # Castari - Vercel for AI Agents Deploy your sandboxed agents with Castari #ai#operations Hey! We’re Jacob Wright & Cambree Bernkopf, founders of Castari. ### TL;DR Castari lets teams deploy AI agents to secu... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Launch YC: Castari - Vercel for AI Agents | Y Combinator Home › Launches › MadeThis 20 Castari - Vercel for AI Agents Deploy your sandboxed agents with Castari Jacob Wright MadeThis 8 months ago Embed https://madethis.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "com #ai #operations Hey!",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "We’re Jacob Wright & Cambree Bernkopf, founders of Castari .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "TL;DR Castari lets teams deploy AI agents to secure, autoscaling sandboxes in seconds.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "You write agent logic with the Claude Agent SDK (other frameworks coming soon) .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-13T10:23:56.977Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub"
+    ],
+    "products": [
+      "Agents",
+      "agents",
+      "agent",
+      "Claude",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "20",
+      "8 m",
+      "81",
+      "80",
+      "1",
+      "2",
+      "2B",
+      "500"
+    ],
+    "quotes": [
+      "cool demo",
+      "drop-in config",
+      "prototype",
+      "production-safe",
+      "Castari Pilot"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Launch YC: Castari - Vercel for AI Agents | Y Combinator Home› Launches›MadeThis 20 # Castari - Vercel for AI Agents Deploy your sandboxed agents with Castari #ai#operations Hey! We’re Jacob Wright & Cambree Bernkopf, founders of Castari. ### TL;DR Castari lets teams deploy AI agents to secu... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup",
+      "Launch YC: Castari - Vercel for AI Agents | Y Combinator Home › Launches › MadeThis 20 Castari - Vercel for AI Agents Deploy your sandboxed agents with Castari Jacob Wright MadeThis 8 months ago Embed https://madethis.",
+      "com #ai #operations Hey!"
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Launch YC: Castari - Vercel for AI Agents | Y Combinator\n\n- raw_id: R-049\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://www.ycombinator.com/launches/OrV-castari-vercel-for-ai-agents\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-13T10:23:56.977Z\n\n## clean_text\n\nLaunch YC: Castari - Vercel for AI Agents | Y Combinator\nHome › Launches › MadeThis\n20\nCastari - Vercel for AI Agents\nDeploy your sandboxed agents with Castari\nJacob Wright\nMadeThis\n8 months ago\nEmbed\nhttps://madethis.com #ai #operations\nHey! We’re Jacob Wright & Cambree Bernkopf, founders of Castari .\nTL;DR\nCastari lets teams deploy AI agents to secure, autoscaling sandboxes in seconds.\nYou write agent logic with the Claude Agent SDK (other frameworks coming soon) . We turn it into a production-grade endpoint.\nWe’re especially focused on:\nTeams building internal agents (ops, support, data, eng workflows).\nCompanies whose core product is an agent built on Claude Agent SDK and need a safe, reliable way to run it.\nLaunch Video:\nhttps://youtu.be/81K80OivtAc\nThe Problem:\nSerious agents are not just a single API call. Agents need a computer.\nThey execute code, call tools and browsers, run for minutes instead of milliseconds, and touch sensitive systems. Most teams end up rebuilding the same fragile setup:\nHomegrown agent harnesses\nSandboxes, file systems, and queues stitched together\nLogs and traces scattered across many services\nAd hoc snapshots and risky secret handling\nThe result:\nEvery agent needs its own mini runtime\nDebugging one agent run feels like detective work\nAdding a new agent feels like starting a new infra project\nGood agents stall at “cool demo” instead of reaching production. Deploying agents becomes a full-time infrastructure problem.\nHow Castari solves it\nWe’re building Castari to be the natural runtime for AI agents built on Claude Agent SDK . We wrap the entire agent in a sandbox, deploy it, and provide you with an endpoint url that auto-scales as requests come in. No need to write code in your tools to manage your sandbox lifecycle.\n1. Drop in a config file → get a production runtime\nIn your Claude Agent SDK repo:\nAdd a castari.yaml (entrypoint, tools, env vars)\nRun castari deploy\nThat’s it. Your agent is now running in a secure sandbox with an endpoint, UI, and observability.\nWhether that agent is:\nan internal system your team uses\na customer-facing agent that is your product\nthe deployment workflow is identical and boring (in the good way).\n2. Sandboxing & safety, built-in\nEvery run executes in an isolated sandbox designed for tool-using agents\nYou design the behavior; we handle isolation and scaling\nNo more duct-taping together sandbox primitives for specific tools\nBottom line: You keep building on Claude Agent SDK the way you already are — for internal workflows or core products. Castari turns that into a safe, observable, production-ready runtime.\nWhy Castari is different\nE2B, Modal, Daytona, Cloudflare (and friends) give you powerful sandbox and compute primitives.\nCastari sits one layer up:\nCastari wraps around your Claude Agent SDK-based agents so you can define them declaratively and run them in secure sandboxes, without owning the underlying sandbox lifecycle.\nAgent-first semantics : runs, sessions, tools, snapshots are native concepts we manage.\nZero framework lock-in : remove Castari and your agent still runs on vanilla Claude Agent SDK; keep Castari and your infra team gets its life back.\nFocused start : deeply integrated with Claude Agent SDK today, with the same “drop-in config” experience coming to other frameworks next.\nWe’re building the runtime we wish existed for agents.\nWhy we’re working on this\nWhile I was leading the FDE team at RunPod:\nBuilt and shipped AI infrastructure and agents for Fortune 500s and fast-growing startups\nWatched the same loop repeat: agent works in a notebook → weeks disappear into infra glue → nobody trusts the system, production release gets delayed (over and over again).\nAdditionally, while @Cambree Bernkopf and I scaled our AI consumer app to 2m+ members, our biggest issues were getting our agents to work reliably in production.\nThe pattern is clear: agents deserve a first-class runtime, the way frontends got one.\nCastari is our bet that:\nSandboxing & safety should be built-in, not bolted on\nGoing from “prototype” to “production-safe” should be one config file, not a quarter-long project\nAI teams should ship agents, not infrastructure.\nAsk: early pilot access\nWe are opening a limited pilot for:\nTeams building internal agents who need a safer, more reliable runtime\nCompanies building agent centric products that need to run in production without bespoke infra\nIf that is you and you are tired of wrestling with sandboxes, observability, and brittle tooling:\n→ Email jacob@castari.com with subject “Castari Pilot” and 2 to 3 sentences about your agent stack and use case.\n→ Check out our open source repo for using any model with Claude Agent SDK on GitHub .\n→ Join the waitlist on castari.com to hear about our first releases.\nJacob, Cambree, and the Castari team\nSee All Launches ›\n\n## full_text\n\nLaunch YC: Castari - Vercel for AI Agents | Y Combinator\nHome › Launches › MadeThis\n20\nCastari - Vercel for AI Agents\nDeploy your sandboxed agents with Castari\nJacob Wright\nMadeThis\n8 months ago\nEmbed\nhttps://madethis.com #ai #operations\nHey! We’re Jacob Wright & Cambree Bernkopf, founders of Castari .\nTL;DR\nCastari lets teams deploy AI agents to secure, autoscaling sandboxes in seconds.\nYou write agent logic with the Claude Agent SDK (other frameworks coming soon) . We turn it into a production-grade endpoint.\nWe’re especially focused on:\nTeams building internal agents (ops, support, data, eng workflows).\nCompanies whose core product is an agent built on Claude Agent SDK and need a safe, reliable way to run it.\nLaunch Video:\nhttps://youtu.be/81K80OivtAc\nThe Problem:\nSerious agents are not just a single API call. Agents need a computer.\nThey execute code, call tools and browsers, run for minutes instead of milliseconds, and touch sensitive systems. Most teams end up rebuilding the same fragile setup:\nHomegrown agent harnesses\nSandboxes, file systems, and queues stitched together\nLogs and traces scattered across many services\nAd hoc snapshots and risky secret handling\nThe result:\nEvery agent needs its own mini runtime\nDebugging one agent run feels like detective work\nAdding a new agent feels like starting a new infra project\nGood agents stall at “cool demo” instead of reaching production. Deploying agents becomes a full-time infrastructure problem.\nHow Castari solves it\nWe’re building Castari to be the natural runtime for AI agents built on Claude Agent SDK . We wrap the entire agent in a sandbox, deploy it, and provide you with an endpoint url that auto-scales as requests come in. No need to write code in your tools to manage your sandbox lifecycle.\n1. Drop in a config file → get a production runtime\nIn your Claude Agent SDK repo:\nAdd a castari.yaml (entrypoint, tools, env vars)\nRun castari deploy\nThat’s it. Your agent is now running in a secure sandbox with an endpoint, UI, and observability.\nWhether that agent is:\nan internal system your team uses\na customer-facing agent that is your product\nthe deployment workflow is identical and boring (in the good way).\n2. Sandboxing & safety, built-in\nEvery run executes in an isolated sandbox designed for tool-using agents\nYou design the behavior; we handle isolation and scaling\nNo more duct-taping together sandbox primitives for specific tools\nBottom line: You keep building on Claude Agent SDK the way you already are — for internal workflows or core products. Castari turns that into a safe, observable, production-ready runtime.\nWhy Castari is different\nE2B, Modal, Daytona, Cloudflare (and friends) give you powerful sandbox and compute primitives.\nCastari sits one layer up:\nCastari wraps around your Claude Agent SDK-based agents so you can define them declaratively and run them in secure sandboxes, without owning the underlying sandbox lifecycle.\nAgent-first semantics : runs, sessions, tools, snapshots are native concepts we manage.\nZero framework lock-in : remove Castari and your agent still runs on vanilla Claude Agent SDK; keep Castari and your infra team gets its life back.\nFocused start : deeply integrated with Claude Agent SDK today, with the same “drop-in config” experience coming to other frameworks next.\nWe’re building the runtime we wish existed for agents.\nWhy we’re working on this\nWhile I was leading the FDE team at RunPod:\nBuilt and shipped AI infrastructure and agents for Fortune 500s and fast-growing startups\nWatched the same loop repeat: agent works in a notebook → weeks disappear into infra glue → nobody trusts the system, production release gets delayed (over and over again).\nAdditionally, while @Cambree Bernkopf and I scaled our AI consumer app to 2m+ members, our biggest issues were getting our agents to work reliably in production.\nThe pattern is clear: agents deserve a first-class runtime, the way frontends got one.\nCastari is our bet that:\nSandboxing & safety should be built-in, not bolted on\nGoing from “prototype” to “production-safe” should be one config file, not a quarter-long project\nAI teams should ship agents, not infrastructure.\nAsk: early pilot access\nWe are opening a limited pilot for:\nTeams building internal agents who need a safer, more reliable runtime\nCompanies building agent centric products that need to run in production without bespoke infra\nIf that is you and you are tired of wrestling with sandboxes, observability, and brittle tooling:\n→ Email jacob@castari.com with subject “Castari Pilot” and 2 to 3 sentences about your agent stack and use case.\n→ Check out our open source repo for using any model with Claude Agent SDK on GitHub .\n→ Join the waitlist on castari.com to hear about our first releases.\nJacob, Cambree, and the Castari team\nSee All Launches ›\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 85\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] Launch YC: Castari - Vercel for AI Agents | Y Combinator Home› Launches›MadeThis 20 # Castari - Vercel for AI Agents Deploy your sandboxed agents with Castari #ai#operations Hey! We’re Jacob Wright & Cambree Bernkopf, founders of Castari. ### TL;DR Castari lets teams deploy AI agents to secu... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] Launch YC: Castari - Vercel for AI Agents | Y Combinator Home › Launches › MadeThis 20 Castari - Vercel for AI Agents Deploy your sandboxed agents with Castari Jacob Wright MadeThis 8 months ago Embed https://madethis.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] com #ai #operations Hey!\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] We’re Jacob Wright & Cambree Bernkopf, founders of Castari .\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] TL;DR Castari lets teams deploy AI agents to secure, autoscaling sandboxes in seconds.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] You write agent logic with the Claude Agent SDK (other frameworks coming soon) .\n"
+}
