@@ -61,6 +61,16 @@
 - 2026-07-13 Card editorial、去重、source-first、frontstage、frontstage regression Gate：通过。
 - Skill Store：17 个 governed skills 同步，drift 为 0，eval/example coverage 为 100%。
 
+## 失败运行复盘与隔离复跑
+
+- 首次合并后触发的真实运行 `29227214969` 没有覆盖主分支：Card editorial Gate 正确阻止了发布。
+- 失败运行暴露出两类后续缺口：同日全量重跑会因搜索波动丢失已通过 Gate 的 Taskade / 腾讯混元等来源；无日期 YC 页面、无链接摘要、政策公约和无关法规会被错误升级为高优先级标题/事实修复。
+- 已新增同日正式 Card 来源快照 carry-forward。缺失结构化日期时，只能从已抓取正文的明确发布日期标签或带日期 URL 恢复；保存快照统一按已解析原始来源重新进入正常 Raw / Pool / Card Gate。
+- 标题规则新增“融资金额 + 估值 + 用途”和“以估值完成轮次”结构，覆盖 Prime Intellect、NeuralTrust、Talp；Signalbase 等融资数据库只保留为发现线索。
+- 融资事实新增主体/金额绑定：估值、相关文章、竞品轮次、公共资助、导航文字和截断页面片段不能改写成当前公司的本轮融资。
+- 使用失败运行的四路 source artifacts 在隔离工作树完成全链复跑：Raw 182、Pool 79、正式 Card 14，其中 `product_service=10`、`funding=4`；去重、Card editorial、source-first、frontstage regression、pre-commit production chain 均通过。
+- 14 张隔离 Card 保留原有 10 张，并新增 Prime Intellect、NeuralTrust、Talp、Monogram；MYTH / Signalbase、隐私自律公约、无日期 Castari 页面和无链接 AIHOT 摘要未进入正式 Card。
+
 ## 尚需执行
 
-合并修复后应重新运行 2026-07-13 商业信号生产链，让资金/案例查询在新的 RSS 时效与单源限流条件下回补当天 Raw / Pool；不得把上述搜索结果手工直升为 Card。
+合并第二轮规则修复后重新运行 2026-07-13 商业信号生产链，并以 GitHub 运行产物复核最终 Raw / Pool / Card 数量、Card 类型、标题、主体和前台摘要。

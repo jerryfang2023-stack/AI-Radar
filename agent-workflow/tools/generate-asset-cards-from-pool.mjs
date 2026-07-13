@@ -538,6 +538,7 @@ function stripSourceNoise(raw = "") {
     .replace(/\s*\/\s*intent=.*$/iu, "")
     .replace(/\s*\/\s*path=.*$/iu, "")
     .replace(/^Skip to Main Content\s*/iu, "")
+    .replace(/^.*?\bTotal Shares\s+(?=[A-Z][A-Za-z0-9.&'-]+\s+(?:has\s+raised|raises|raised|secures|secured|宣布|完成))/iu, "")
     .replace(/\s+/gu, " ")
     .replace(/\b([A-Za-z]*\d+)\.\s+(\d+\b)/gu, "$1.$2")
     .trim();
@@ -545,7 +546,7 @@ function stripSourceNoise(raw = "") {
 
 function sourcePointLooksPageChrome(value = "") {
   const text = String(value || "");
-  return /IT之家\s+首页\s+IT圈|首页.{0,80}设置.{0,80}投稿.{0,80}订阅|软媒应用.{0,80}App客户端|Skip to content|Navigation Menu|Search or jump to|Saved searches|Appearance settings/iu.test(text);
+  return /IT之家\s+首页\s+IT圈|首页.{0,80}设置.{0,80}投稿.{0,80}订阅|软媒应用.{0,80}App客户端|Skip to content|Navigation Menu|Search or jump to|Saved searches|Appearance settings|###|\bTotal Shares\b|accuracy layer for f(?:[。.]|$)/iu.test(text);
 }
 
 function sourcePointLooksSplitFragment(value = "") {
@@ -618,22 +619,22 @@ function chineseAmount(raw = "") {
   const amount = Number(match[2]);
   const unit = String(match[3] || "").toLowerCase();
   if (!Number.isFinite(amount)) return text;
-  if (unit === "b" || unit === "billion") return `${amount}0亿${currency}`.replace(/\.0亿/u, "亿");
+  if (unit === "b" || unit === "billion") return `${amount}0 亿${currency}`.replace(/\.0 亿/u, " 亿");
   if (unit === "m" || unit === "million") {
     const tenThousands = amount * 100;
     if (tenThousands >= 10000) {
       const yi = tenThousands / 10000;
-      return `${Number.isInteger(yi) ? yi : yi.toFixed(2)}亿${currency}`;
+      return `${Number.isInteger(yi) ? yi : yi.toFixed(2)} 亿${currency}`;
     }
-    return Number.isInteger(tenThousands) ? `${tenThousands}万${currency}` : `${tenThousands.toFixed(1)}万${currency}`;
+    return Number.isInteger(tenThousands) ? `${tenThousands} 万${currency}` : `${tenThousands.toFixed(1)} 万${currency}`;
   }
-  if (unit === "k") return `${amount}千${currency}`;
-  return `${amount}${currency}`;
+  if (unit === "k") return `${amount} 千${currency}`;
+  return `${amount} ${currency}`;
 }
 
 function chineseRound(raw = "") {
   const text = String(raw || "").toLowerCase();
-  if (/pre[- ]seed/u.test(text)) return "Pre-seed";
+  if (/pre[- ]seed/u.test(text)) return "种子前轮";
   if (/\bseed\b/u.test(text)) return "种子轮";
   const series = text.match(/\bseries\s+([a-z])\b/u)?.[1];
   return series ? `${series.toUpperCase()} 轮` : "";
@@ -717,6 +718,12 @@ function sourceBackedChineseFact(raw = "", context = {}) {
   if (/\bfull-stack AI company\b/iu.test(text)) {
     return `${owner}是一家全栈 AI 公司，提供面向高风险环境的 agentic operating system 和 AI Agent。`;
   }
+  if (/\bAI personas simulate how customers will react to a product, ad or price before it launches\b/iu.test(text)) {
+    return `${owner} 使用 AI 虚拟用户在产品、广告或价格上线前模拟客户反应，目标是补足传统问卷对真实行为预测不足的问题。`;
+  }
+  if (/\bThe round will fund engineering, deepening the integration across\b/iu.test(text)) {
+    return `${owner} 将本轮资金用于工程研发、深化产品整合和欧洲市场扩张，以支持企业把自主 AI 系统投入生产。`;
+  }
   const appKernel = text.match(/\bEvery app you build now runs on\s+([A-Za-z0-9.-]+)/iu)?.[1] || "";
   if (appKernel) {
     return `${owner}表示，平台中构建的每个应用现在都运行在 ${appKernel} 上，该内核成为工作区背后的统一智能层。`;
@@ -755,18 +762,44 @@ function sourceBackedChineseFact(raw = "", context = {}) {
 
 function translatedSourcePoint(raw = "", type = "", context = {}) {
   const text = stripSourceNoise(raw);
+  const signalType = context.type || type || "";
   if (!text) return "";
   if (context.strategicInvestment && /\bstrategic investment\b/iu.test(text)) {
     const investor = text.match(/\bstrategic investment from\s+([^.;]+?)(?:\.|$)/iu)?.[1]?.replace(/\s+/gu, " ").trim() || "";
     return `${context.company || "AI 公司"} 获得${investor ? ` ${investor} ` : ""}战略投资。`;
   }
   if (context.strategicInvestment && /\b(?:series\s+[a-z]|funding|financing|total capital|has raised|raised|raises?|led by)\b|[$€£]\s?\d/iu.test(text) && !/\bstrategic investment\b/iu.test(text)) return "";
+  if (signalType === "funding" && fundingCompletionAmountMismatch(text, context.sourceAmountMillions)) return "";
+  if (signalType === "funding" && fundingCompletionMissingAmount(text, context.sourceAmountMillions)) return "";
   if (/[\u4e00-\u9fff]/u.test(text)) return text.length > 220 ? `${text.slice(0, 219)}...` : text;
-  if (type === "funding") {
+  if (signalType === "funding") {
     const amount = extractAmount(text);
     const company = shortCompany(text.match(/^([A-Z][A-Za-z0-9.&' -]{1,70}?)(?:,|\s+has\s+raised|\s+raises|\s+landed|\s+lands|\s+secured|\s+secures)/u)?.[1] || "");
     const round = text.match(/\b(pre-seed|seed|series\s+[A-Z])\b/iu)?.[0] || "";
-    if (amount && company && !isWeakCompanyName(company)) return `${company} 获得 ${amount}${round ? ` ${round}` : ""} 融资。`;
+    const publicAmount = chineseAmount(amount) || amount;
+    const publicRound = chineseRound(round) || round;
+    if (amount && company && !isWeakCompanyName(company)) {
+      const expectedCompany = normalizedSignalText(context.company || "");
+      const actualCompany = normalizedSignalText(company);
+      const pointText = normalizedSignalText(text);
+      if (
+        expectedCompany
+        && actualCompany
+        && !expectedCompany.includes(actualCompany)
+        && !actualCompany.includes(expectedCompany)
+        && !pointText.includes(expectedCompany)
+      ) return "";
+      return `${context.company || company} 获得 ${publicAmount}${publicRound ? ` ${publicRound}` : ""}融资。`;
+    }
+    if (/\brival\b/iu.test(text)) return "";
+    if (amount && /\b(?:raises?|raised|has raised|funding|financing|pre-seed|seed|series\s+[a-z])\b/iu.test(text)) {
+      const expectedCompany = normalizedSignalText(context.company || "");
+      const pointText = normalizedSignalText(text);
+      if (expectedCompany && pointText.includes(expectedCompany)) {
+        return `${context.company} 获得 ${publicAmount}${publicRound ? ` ${publicRound}` : ""}融资。`;
+      }
+      return "";
+    }
   }
   if (/\b(designed to take action|automatically execute tasks|updates? records|generating follow-up actions|identifying deal risks|coordinating workflows|customer deployment|case study)\b/iu.test(text)) {
     return "原文描述产品把会议、邮件、工单、CRM 或业务数据转为可执行动作。";
@@ -776,11 +809,13 @@ function translatedSourcePoint(raw = "", type = "", context = {}) {
 
 function sourcePointsFromSection(section) {
   const raw = readRawJson(section);
+  const sourceTitle = originalSourceTitleFromSection(section);
   const context = {
     company: companyFromSection(section),
     scenario: scenarioFromText(textForInference(section)),
     type: inferSignalType(section),
-    strategicInvestment: isConfirmedStrategicInvestment(section, originalSourceTitleFromSection(section)),
+    strategicInvestment: isConfirmedStrategicInvestment(section, sourceTitle),
+    sourceAmountMillions: fundingAmountMillions(sourceTitle),
   };
   const keyExcerpts = Array.isArray(raw.key_excerpts)
     ? raw.key_excerpts
@@ -802,18 +837,22 @@ function sourcePointsFromSection(section) {
   const fromFullText = sourceSentences(raw.full_text || raw.clean_text || "")
     .map((item) => translatedSourcePoint(item, "", context))
     .filter(sourcePointReadyForPublic);
-  const fromTranslatedFacts = translatedFacts.map(stripSourceNoise).filter(sourcePointReadyForPublic);
+  const fromTranslatedFacts = translatedFacts
+    .map((item) => translatedSourcePoint(item, context.type, context))
+    .filter(sourcePointReadyForPublic);
   const substantive = [...new Set([...fromTranslatedFacts, ...fromExcerpts, ...fromSeed, ...fromFullText].filter(sourcePointReadyForPublic))];
   return [...substantive, ...(titleFact ? [titleFact] : [])].slice(0, 6);
 }
 
 function sourceExcerptFromSection(section, points = []) {
   const raw = readRawJson(section);
+  const sourceTitle = originalSourceTitleFromSection(section);
   const context = {
     company: companyFromSection(section),
     scenario: scenarioFromText(textForInference(section)),
     type: inferSignalType(section),
-    strategicInvestment: isConfirmedStrategicInvestment(section, originalSourceTitleFromSection(section)),
+    strategicInvestment: isConfirmedStrategicInvestment(section, sourceTitle),
+    sourceAmountMillions: fundingAmountMillions(sourceTitle),
   };
   const firstRaw = sourceSentences(raw.full_text || raw.clean_text || "")
     .map((item) => translatedSourcePoint(item, "", context))
@@ -850,7 +889,11 @@ function rawVisibleExcerptFromSection(section, excluded = []) {
 
 function generatedCommercialValue(spec) {
   const company = spec.company || "该公司";
-  if (spec.type === "funding") return `${company} 的资本事件显示，资金正在流向可形成产品、产能或客户交付能力的 AI 商业基础设施。`;
+  if (spec.type === "funding") {
+    const purpose = String(spec.title || "").match(/，用于\s*(.+)$/u)?.[1]?.trim() || "";
+    if (purpose) return `${company} 将本轮资金投入${/^[A-Za-z0-9]/u.test(purpose) ? " " : ""}${purpose}。`;
+    return `${company} 的资本事件显示，资金正在流向可形成产品、产能或客户交付能力的 AI 商业基础设施。`;
+  }
   if (spec.type === "product_service") return `${company} 的产品动作体现了 AI 能力从技术展示走向可调用、可部署或可采购的服务形态。`;
   return `${company} 的案例为企业评估 AI 在真实流程中的部署方式、成本边界和结果指标提供了可核查样本。`;
 }
@@ -1946,6 +1989,7 @@ function companyFromSection(section) {
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const specialCases = [
+    [/^Meet\s+Talp:|techfundingnews\.com\/meet-talp-/iu, "Talp"],
     [/小鹏|\bXPENG\b/iu, "小鹏汽车"],
     [/努比亚|\bNubia\b|\biMoochi\b/iu, "努比亚"],
     [/腾讯混元|Tencent\s+Hunyuan/iu, "腾讯混元"],
@@ -2011,6 +2055,40 @@ function companyFromSection(section) {
 
 function extractAmount(text) {
   return text.match(/(?:[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|m|b|million|billion)|\d+(?:\.\d+)?\s?(?:million|billion))/u)?.[0] || "";
+}
+
+function fundingAmountMillions(value = "") {
+  const text = String(value || "");
+  const dollars = text.match(/\$\s?(\d+(?:\.\d+)?)\s?(B|M|K|billion|million|thousand)?\b/iu);
+  if (dollars) {
+    const amount = Number(dollars[1]);
+    const unit = String(dollars[2] || "").toLowerCase();
+    if (!Number.isFinite(amount)) return null;
+    if (unit === "b" || unit === "billion") return amount * 1000;
+    if (unit === "k" || unit === "thousand") return amount / 1000;
+    return amount;
+  }
+  const yi = text.match(/(\d+(?:\.\d+)?)\s*亿\s*美元/u);
+  if (yi) return Number(yi[1]) * 100;
+  const wan = text.match(/(\d+(?:\.\d+)?)\s*万\s*美元/u);
+  if (wan) return Number(wan[1]) / 100;
+  return null;
+}
+
+function fundingCompletionAmountMismatch(value = "", sourceAmountMillions = null) {
+  if (!Number.isFinite(sourceAmountMillions)) return false;
+  const text = String(value || "");
+  if (!/\b(?:raises?|raised|has raised|secures?|secured|funding|financing|round|valuation)\b|(?:宣布)?完成.{0,30}融资|获得.{0,30}融资|估值/iu.test(text)) return false;
+  const pointAmountMillions = fundingAmountMillions(text);
+  if (!Number.isFinite(pointAmountMillions)) return false;
+  return Math.abs(pointAmountMillions - sourceAmountMillions) > Math.max(0.5, sourceAmountMillions * 0.05);
+}
+
+function fundingCompletionMissingAmount(value = "", sourceAmountMillions = null) {
+  if (!Number.isFinite(sourceAmountMillions)) return false;
+  const text = String(value || "");
+  if (!/\b(?:raises?|raised|has raised|secures?|secured)\b|(?:宣布)?完成.{0,30}融资|获得.{0,30}融资/iu.test(text)) return false;
+  return !Number.isFinite(fundingAmountMillions(text));
 }
 
 const fundingAmountPattern = /(?:[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|K|m|b|k|million|billion)?|\d+(?:\.\d+)?\s?(?:million|billion|万美元|亿美元|万人民币|亿人民币|万元|亿元)|\d+(?:\.\d+)?\s?(?:\u4e07\u7f8e\u5143|\u4ebf\u7f8e\u5143|\u4e07\u4eba\u6c11\u5e01|\u4ebf\u4eba\u6c11\u5e01|\u4e07\u5143|\u4ebf\u5143))/iu;
@@ -3384,6 +3462,25 @@ function runCoreRecallRegressionFixtures() {
     isGenericReportOrListSection(fundingDatabaseFixture),
     true,
     "a funding-database profile must remain backend discovery until the original announcement or credible report is resolved",
+  );
+
+  const talpFundingFixture = [
+    "## P-989｜Meet Talp: AI startup with Turkish roots raising $20M pre-seed valuation to simulate customers with AI personas — TFN",
+    "- source_url: https://techfundingnews.com/meet-talp-ai-startup-with-turkish-roots-raising-20m-pre-seed-valuation-to-simulate-customers-with-ai-personas/",
+  ].join("\n");
+  assert.equal(companyFromSection(talpFundingFixture), "Talp", "funding article chrome must not become the signal owner");
+  assert.equal(fundingCompletionAmountMismatch("Talp宣布完成2000万美元种子前轮融资。", 20), false);
+  assert.equal(fundingCompletionAmountMismatch("Talp宣布完成5000万美元A轮融资。", 20), true);
+  assert.equal(fundingCompletionMissingAmount("Monogram宣布完成融资。", 40), true);
+  assert.equal(sourcePointLooksPageChrome("Meet Talp ... https://example.com ### Meet another company"), true);
+  assert.equal(
+    translatedSourcePoint(
+      "BARCELONA, June 17, 2026 — NeuralTrust, the platform to secure AI agents, today announced a $20 million seed round.",
+      "funding",
+      { company: "NeuralTrust", type: "funding", sourceAmountMillions: 20 },
+    ),
+    "NeuralTrust 获得 2000 万美元 种子轮融资。",
+    "a source-matched funding sentence must produce a distinct Chinese fact",
   );
 
   const positiveFailures = [];

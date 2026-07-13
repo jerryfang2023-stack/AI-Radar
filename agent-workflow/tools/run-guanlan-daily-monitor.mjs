@@ -1676,6 +1676,12 @@ function listJsonFilesRecursive(dir) {
   return files;
 }
 
+function publishedAtFromCapturedText(value = "") {
+  const text = String(value || "").slice(0, 1600);
+  const labeledDate = text.match(/\b(?:last updated|published(?: on)?|publication date|date)\s*[:\n-]?\s*((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20\d{2}|20\d{2}[-/]\d{1,2}[-/]\d{1,2})/iu)?.[1] || "";
+  return normalizePublishedAt(labeledDate);
+}
+
 function existingFormalCardSourceItems() {
   const items = [];
   for (const subdir of ["case", "funding", "product-service"]) {
@@ -1693,8 +1699,8 @@ function existingFormalCardSourceItems() {
       const url = canonicalUrl(record?.canonical_url || record?.original_url || "");
       const fullText = String(record?.full_text || record?.clean_text || "").trim();
       const publishedAt = normalizePublishedAt(record?.published_at)
-        || dateFromText(fullText)
-        || dateFromUrl(url);
+        || publishedAtFromCapturedText(fullText)
+        || normalizePublishedAt(dayFromUrl(url));
       if (!record || !url || !fullText || !publishedAt) continue;
       const excerptText = Array.isArray(record.key_excerpts)
         ? record.key_excerpts.map((entry) => entry?.text || "").filter(Boolean).slice(0, 3).join(" ")

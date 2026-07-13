@@ -117,7 +117,7 @@ Public titles should be resolved during raw-to-card ingestion. English articles 
 
 Production auto-translation must use the controlled business-news translation prompt when its model credential is available, then deterministic event-title rules. Generic public machine-translation output is not an accepted fallback because it can mistranslate protected product/company terms while still looking Chinese; unresolved formal-event titles must block for ingestion repair instead.
 
-Funding Card facts should preserve amount / round plus investor, use of proceeds, product direction, or deployment context when present in the original source. Generic funding/list blockers should inspect source identity fields, not source-backed fact text or captured query tails.
+Funding Card facts should preserve amount / round plus investor, use of proceeds, product direction, or deployment context when present in the original source. The company and financing amount must match the current source-title event; valuation figures, related-story amounts, rival-company rounds, navigation text, and truncated page chrome must not be rewritten as the current company's financing. Generic funding/list blockers should inspect source identity fields, not source-backed fact text or captured query tails.
 
 Fact extraction also belongs to raw-to-card ingestion. Missing customer / ROI / before-after workflow details are evidence-boundary notes, not frontstage blockers for a formal Signal Card.
 

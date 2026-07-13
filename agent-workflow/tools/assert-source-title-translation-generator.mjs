@@ -48,6 +48,10 @@ const neuralTrust = await generateSourceTitleTranslation(
   "NeuralTrust raises $20M to secure the growing swarm of AI agents in the enterprise | NeuralTrust",
   { provider: "business-rule", allowNetwork: true }
 );
+const talp = await generateSourceTitleTranslation(
+  "Meet Talp: AI startup with Turkish roots raising $20M pre-seed valuation to simulate customers with AI personas — TFN",
+  { provider: "business-rule", allowNetwork: true }
+);
 
 const legacyMachineTranslationFile = path.join(tempDir, "legacy-machine-translations.json");
 fs.writeFileSync(legacyMachineTranslationFile, JSON.stringify({
@@ -67,8 +71,9 @@ const ok =
   cached === expectedZh &&
   taskade.titleZh === "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层" &&
   stigg.titleZh === "Stigg 发布 2.0：面向 AI 产品的用量运行时" &&
-  primeIntellect.titleZh === "Prime Intellect 完成 1.3 亿美元融资，估值 10 亿美元，用于AI 训练平台" &&
+  primeIntellect.titleZh === "Prime Intellect 完成 1.3 亿美元融资，估值 10 亿美元，用于 AI 训练平台" &&
   neuralTrust.titleZh === "NeuralTrust 完成 2000 万美元融资，用于保护企业不断增长的 AI 智能体集群" &&
+  talp.titleZh === "Talp 以 2000 万美元估值完成种子前轮融资，用于通过 AI 虚拟用户模拟客户反应" &&
   legacyMachineTranslations.size === 0;
 
 fs.rmSync(tempDir, { recursive: true, force: true });
@@ -82,6 +87,7 @@ if (!ok) {
     stigg,
     primeIntellect,
     neuralTrust,
+    talp,
     legacyMachineTranslationCount: legacyMachineTranslations.size,
     reason: "English source title was not generated and persisted when the exact translation DB entry was missing.",
   }, null, 2));

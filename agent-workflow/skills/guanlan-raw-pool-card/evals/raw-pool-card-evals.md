@@ -99,6 +99,8 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 20. `high_priority_recall_repair_boundary`
    - Pass when an undated YC launch, an unrelated policy RSS article, or an index-only social summary stays below high-priority recall even if a Chinese field is missing.
    - Pass when a voluntary privacy pledge without a separate commercial event remains backend context.
+   - Pass when a funding Card keeps the current round amount distinct from valuation, related-story, rival-company, public-grant, and navigation-page figures; the source title's company and round amount control attribution.
+   - Fail when page chrome such as `Total Shares`, a related-story excerpt, or a valuation number becomes the Card owner, news fact, source point, or value summary.
 
 ## Repair Loop
 
