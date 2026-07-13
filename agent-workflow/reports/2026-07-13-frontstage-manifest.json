@@ -1,6 +1,6 @@
 {
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T05:32:03.791Z",
+  "generated_at": "2026-07-13T11:38:19.045Z",
   "raw_input_count": 154,
   "pool_input_count": 98,
   "signal_card_assets": [
@@ -55,24 +55,24 @@
     },
     {
       "id": "SIG-20260713-A08",
+      "pool_ref": "P-002",
+      "title": "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol",
+      "type": "case",
+      "company": "Ploy"
+    },
+    {
+      "id": "SIG-20260713-A09",
       "pool_ref": "P-035",
       "title": "努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线",
       "type": "product_service",
       "company": "努比亚"
     },
     {
-      "id": "SIG-20260713-A09",
+      "id": "SIG-20260713-A10",
       "pool_ref": "P-037",
       "title": "Stigg 发布 2.0：面向 AI 产品的用量运行时",
       "type": "product_service",
       "company": "Stigg"
-    },
-    {
-      "id": "SIG-20260713-A10",
-      "pool_ref": "P-002",
-      "title": "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol",
-      "type": "product_service",
-      "company": "Ploy"
     }
   ],
   "not_promoted_candidates": [
@@ -86,10 +86,11 @@
         "business_signal_scope:unsupported_importance_type:important_technical_trend",
         "business_signal_scope:technical_trend_is_context_not_signal_card",
         "valid_page_type:research_benchmark_without_commercial_event",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
         "business_signal_scope:missing_concrete_funding_product_or_case_event",
         "valid_page_type:pool_route_index_only_not_formal_card"
       ],
-      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:research_benchmark_without_commercial_event, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -149,9 +150,10 @@
       "title": "Definitive YC Companies' Guide | Fundraise Insider",
       "source_url": "https://fundraiseinsider.com/yc-startups-and-companies/",
       "issues": [
-        "evidence_quality:missing_source_date"
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_date",
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
       "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
       "promote_priority": "medium"
     },
@@ -160,9 +162,10 @@
       "title": "Exclusive: YC Doubles Down On Trayd, A Construction Tech Startup That Just Raised $10M In 3 Weeks",
       "source_url": "https://news.crunchbase.com/venture/construction-tech-automation-trayd-ai-seriesa/",
       "issues": [
-        "evidence_quality:stale_source_date"
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -325,9 +328,10 @@
       "title": "Node-based design tool Flora raises $42M from Redpoint Ventures | TechCrunch",
       "source_url": "https://techcrunch.com/2026/01/27/node-based-design-tool-flora-raises-42m-from-redpoint-ventures/",
       "issues": [
-        "evidence_quality:stale_source_date"
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -338,10 +342,11 @@
       "issues": [
         "business_signal_scope:unsupported_importance_type:important_technical_trend",
         "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
         "business_signal_scope:missing_concrete_funding_product_or_case_event",
         "valid_page_type:pool_route_index_only_not_formal_card"
       ],
-      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -402,11 +407,12 @@
       "source_url": "https://fabiensanglard.net/extinct/index.html",
       "issues": [
         "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
         "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
         "business_signal_scope:missing_concrete_funding_product_or_case_event",
         "valid_page_type:pool_route_index_only_not_formal_card"
       ],
-      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -416,10 +422,11 @@
       "source_url": "https://www.ycombinator.com/companies/relari",
       "issues": [
         "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "valid_page_type:company_profile_without_dated_event",
         "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_date, valid_page_type:company_profile_without_dated_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:company_profile_without_dated_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -428,11 +435,12 @@
       "title": "Lorde says Ray-Ban Meta AI glasses are ‘not sexy’",
       "source_url": "https://www.theverge.com/ai-artificial-intelligence/964539/lorde-says-ray-ban-meta-ai-glasses-are-not-sexy",
       "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
         "business_signal_scope:missing_concrete_funding_product_or_case_event",
         "fact_type_constraints:non_commercial_policy_or_ethics_signal"
       ],
-      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
-      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
       "promote_priority": "low"
     },
     {
@@ -440,13 +448,15 @@
       "title": "The real mystery behind Moana: After 1,700 years, why did Polynesians suddenly sail east?",
       "source_url": "https://arstechnica.com/culture/2026/07/the-real-mystery-behind-moana-after-1700-years-why-did-polynesians-suddenly-sail-east/",
       "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
         "business_signal_scope:unsupported_importance_type:supporting_signal",
         "valid_page_type:research_benchmark_without_commercial_event",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
         "business_signal_scope:missing_concrete_funding_product_or_case_event",
         "commercial_importance:low_importance_score",
         "valid_page_type:pool_route_index_only_not_formal_card"
       ],
-      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:supporting_signal, valid_page_type:research_benchmark_without_commercial_event, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -487,11 +497,12 @@
       "source_url": "https://www.bensbites.com/p/bens-builds-3-an-email-app",
       "issues": [
         "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "fact_type_constraints:builder_or_opinion_source_not_business_fact",
         "valid_page_type:newsletter_roundup_requires_original_event_source",
         "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -517,9 +528,10 @@
         "evidence_quality:missing_chinese_fact_translation",
         "fact_type_constraints:builder_or_opinion_source_not_business_fact",
         "valid_page_type:newsletter_roundup_requires_original_event_source",
-        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:funding_not_single_company_round"
       ],
-      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:funding_not_single_company_round",
       "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
       "promote_priority": "low"
     },
@@ -528,12 +540,13 @@
       "title": "GPT-5.6 Thursday ⭐️, Claude Cowork mobile 📱, Gemini API agents 🤖",
       "source_url": "https://tldr.tech/ai/2026-07-08",
       "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
         "fact_type_constraints:builder_or_opinion_source_not_business_fact",
         "valid_page_type:newsletter_roundup_requires_original_event_source",
         "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
         "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event",
       "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
       "promote_priority": "low"
     },
@@ -542,6 +555,7 @@
       "title": "Seedance 2.5 🎥, guide to Fable ✨, OpenAI preps GPT-5.6 🚀",
       "source_url": "https://tldr.tech/ai/2026-07-06",
       "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
         "valid_page_type:explainer_without_commercial_event",
         "fact_type_constraints:builder_or_opinion_source_not_business_fact",
         "valid_page_type:technical_article_without_business_event",
@@ -549,7 +563,7 @@
         "valid_page_type:newsletter_roundup_requires_original_event_source",
         "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "valid_page_type:explainer_without_commercial_event, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, valid_page_type:explainer_without_commercial_event, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
       "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
       "promote_priority": "low"
     },
@@ -574,13 +588,14 @@
       "source_url": "https://tldr.tech/ai/2026-06-26",
       "issues": [
         "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "fact_type_constraints:builder_or_opinion_source_not_business_fact",
         "valid_page_type:technical_article_without_business_event",
         "valid_page_type:research_benchmark_without_commercial_event",
         "valid_page_type:newsletter_roundup_requires_original_event_source",
         "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, valid_page_type:research_benchmark_without_commercial_event, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, valid_page_type:research_benchmark_without_commercial_event, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -590,11 +605,12 @@
       "source_url": "https://tldr.tech/ai/2026-06-19",
       "issues": [
         "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "fact_type_constraints:builder_or_opinion_source_not_business_fact",
         "valid_page_type:newsletter_roundup_requires_original_event_source",
         "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -630,9 +646,10 @@
       "source_url": "https://www.latent.space/p/paid-anthropic-distillation-and-how",
       "issues": [
         "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "valid_page_type:research_benchmark_without_commercial_event"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, valid_page_type:research_benchmark_without_commercial_event",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_benchmark_without_commercial_event",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -641,9 +658,10 @@
       "title": "Bitter Lessons in Venture vs Growth: Anthropic vs OpenAI, Noam Shazeer, World Labs, Thinking Machines, Cursor, ASIC Economics — Martin Casado &amp; Sarah Wang of a16z",
       "source_url": "https://www.latent.space/p/a16z",
       "issues": [
-        "evidence_quality:stale_source_date"
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -653,11 +671,12 @@
       "source_url": "https://www.latent.space/p/state-of-post-training-from-gpt-41",
       "issues": [
         "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "valid_page_type:research_benchmark_without_commercial_event",
         "business_signal_scope:missing_concrete_funding_product_or_case_event",
         "fact_type_constraints:non_commercial_policy_or_ethics_signal"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -677,9 +696,10 @@
       "title": "Cloudflare CEO: The Internet's Business Model Is Dead",
       "source_url": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Cloudflare-CEO-The-Internets-Business-Model-Is-Dead-e3l8mt1",
       "issues": [
-        "evidence_quality:missing_source_date"
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_date",
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
       "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
       "promote_priority": "medium"
     },
@@ -702,9 +722,10 @@
       "source_url": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Dataikus-Secret-to-Scaling-AI-in-Global-Enterprises--Florian-Douetteau--CEO--Dataiku-e2s7ugh",
       "issues": [
         "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_date, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -714,9 +735,10 @@
       "source_url": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Superintelligence--Bubbles-And-Big-Bets-AI-Investing-in-2024--Matt-Turck--Aman-Kabeer--FirstMark-e2qndss",
       "issues": [
         "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_date, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -778,9 +800,10 @@
       "source_url": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Hippocratic-AI-A-Safety-First-LLM-for-Healthcare-with-CEO-Munjal-Shah-e2gems1",
       "issues": [
         "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_date, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -790,9 +813,10 @@
       "source_url": "https://podcasters.spotify.com/pod/show/firstmark/episodes/LlamaIndex-Unleashing-LLMs-on-Your-Data-with-CEO-Jerry-Liu-e2gemrg",
       "issues": [
         "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_date, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -815,9 +839,10 @@
       "source_url": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Vectara-LLM-Powered-Search-with-CEO-Amr-Awadallah-e2gemr7",
       "issues": [
         "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -839,9 +864,10 @@
       "title": "Assembly AI: Generative AI for Speech Recognition with CEO Dylan Fox",
       "source_url": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Assembly-AI-Generative-AI-for-Speech-Recognition-with-CEO-Dylan-Fox-e2gemqv",
       "issues": [
-        "evidence_quality:stale_source_date"
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -851,9 +877,10 @@
       "source_url": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Lightning-AI-Build-and-Deploy-AI-with-Pytorch-with-CEO-William-Falcon-e2gemrf",
       "issues": [
         "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -877,10 +904,11 @@
       "source_url": "https://www.ycombinator.com/companies/agentmail",
       "issues": [
         "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "valid_page_type:company_profile_without_dated_event",
         "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_date, valid_page_type:company_profile_without_dated_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:company_profile_without_dated_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -902,11 +930,12 @@
       "title": "韩国央行：AI 驱动的半导体超级周期未结束，供应扩张受限将支撑长期增长",
       "source_url": "https://www.ithome.com/0/975/879.htm",
       "issues": [
-        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:funding_not_single_company_round"
       ],
-      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
-      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
-      "promote_priority": "review"
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:funding_not_single_company_round",
+      "repair_suggestion": "Use a single-company funding announcement with amount, round, investor, and date.",
+      "promote_priority": "low"
     },
     {
       "pool_ref": "P-075",
@@ -932,10 +961,11 @@
         "fact_type_constraints:builder_or_opinion_source_not_business_fact",
         "valid_page_type:technical_article_without_business_event",
         "valid_page_type:research_benchmark_without_commercial_event",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
         "business_signal_scope:missing_concrete_funding_product_or_case_event",
         "valid_page_type:pool_route_index_only_not_formal_card"
       ],
-      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, valid_page_type:research_benchmark_without_commercial_event, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -962,6 +992,7 @@
       "source_url": "https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites",
       "issues": [
         "evidence_quality:missing_source_material",
+        "evidence_quality:missing_chinese_fact_translation",
         "business_signal_scope:unsupported_importance_type:supporting_signal",
         "business_signal_scope:missing_concrete_funding_product_or_case_event",
         "commercial_importance:low_importance_score",
@@ -969,7 +1000,7 @@
         "valid_page_type:text_indicates_index_only",
         "valid_page_type:pool_route_index_only_not_formal_card"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_material, business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -1038,6 +1069,7 @@
       "source_url": "https://tldr.tech/ai/2026-07-01",
       "issues": [
         "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "business_signal_scope:unsupported_importance_type:none",
         "fact_type_constraints:builder_or_opinion_source_not_business_fact",
         "valid_page_type:newsletter_roundup_requires_original_event_source",
@@ -1045,7 +1077,7 @@
         "commercial_importance:low_importance_score",
         "valid_page_type:pool_route_index_only_not_formal_card"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_date, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card",
       "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
       "promote_priority": "low"
     },
@@ -1253,12 +1285,13 @@
       "issues": [
         "evidence_quality:summary_without_formal_event",
         "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "business_signal_scope:unsupported_importance_type:none",
         "valid_page_type:technical_article_without_business_event",
         "business_signal_scope:missing_concrete_funding_product_or_case_event",
         "commercial_importance:low_importance_score"
       ],
-      "not_promoted_reason": "evidence_quality:summary_without_formal_event, evidence_quality:missing_source_date, business_signal_scope:unsupported_importance_type:none, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "not_promoted_reason": "evidence_quality:summary_without_formal_event, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -1269,11 +1302,12 @@
       "issues": [
         "evidence_quality:summary_without_formal_event",
         "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "business_signal_scope:unsupported_importance_type:none",
         "business_signal_scope:missing_concrete_funding_product_or_case_event",
         "commercial_importance:low_importance_score"
       ],
-      "not_promoted_reason": "evidence_quality:summary_without_formal_event, evidence_quality:missing_source_date, business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "not_promoted_reason": "evidence_quality:summary_without_formal_event, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
       "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
       "promote_priority": "medium"
     },
@@ -1283,9 +1317,10 @@
       "source_url": "https://unsupervised-learning.simplecast.com/episodes/ep-29-salesforce-ai-ceo-clara-shih-on-future-of-slack-how-gucci-uses-ai-and-working-with-marc-benioff-DyDf_SJU",
       "issues": [
         "evidence_quality:missing_source_material",
-        "evidence_quality:missing_source_date"
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
       ],
-      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date",
+      "not_promoted_reason": "evidence_quality:missing_source_material, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
       "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
       "promote_priority": "medium"
     },
@@ -1296,11 +1331,12 @@
       "issues": [
         "evidence_quality:summary_without_formal_event",
         "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
         "business_signal_scope:unsupported_importance_type:none",
         "business_signal_scope:missing_concrete_funding_product_or_case_event",
         "commercial_importance:low_importance_score"
       ],
-      "not_promoted_reason": "evidence_quality:summary_without_formal_event, evidence_quality:missing_source_date, business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "not_promoted_reason": "evidence_quality:summary_without_formal_event, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:none, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
       "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
       "promote_priority": "medium"
     }

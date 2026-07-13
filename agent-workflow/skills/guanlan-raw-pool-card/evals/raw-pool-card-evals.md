@@ -113,6 +113,10 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Fail when a short Chinese product descriptor or clause causes an otherwise English source title to bypass Raw/Card translation.
    - Pass only when a mixed title has both a concrete Chinese event action and enough Chinese context to stand as a public-facing title without a second translation.
 
+22. `approved_title_translation_provenance`
+   - Fail when an unproven historical translation entry, including one with no `generatedBy`, can supply a Raw, Card, or frontstage title.
+   - Pass only for controlled-model, deterministic business-rule, or explicitly manually reviewed source-title translations.
+
 ## Repair Loop
 
 When a check fails:

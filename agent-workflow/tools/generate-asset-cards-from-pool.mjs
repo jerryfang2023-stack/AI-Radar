@@ -1471,7 +1471,7 @@ function isCompanyProfileWithoutDatedEvent(section) {
 function isExplainerWithoutCommercialEvent(section) {
   const identity = [poolTitle(section), value(section, "source"), value(section, "source_url")].join(" ");
   const explainer = /\b(staffer maps out|employee explains?|which .{0,80} fits|reasoning levels? fits|guide to|how to choose)\b|员工详解|员工解释|适用场景|如何选择|指南|教程/iu.test(identity);
-  const datedAction = /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:es|ed)?|available now|general availability|acquires?|lawsuit|settlement|raises?|funding)\b|发布|推出|上线|收购|诉讼|和解|融资/iu.test(identity);
+  const datedAction = /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:e|es|ed|ing)|available now|general availability|acquires?|lawsuit|settlement|raises?|funding)\b|发布|推出|上线|收购|诉讼|和解|融资/iu.test(identity);
   return explainer && !datedAction;
 }
 
@@ -1569,7 +1569,7 @@ function hasConcreteProductEvent(section) {
   if (isNewsletterRoundupSource(section)) return false;
   if (isViewpointWithoutConfirmedCommercialEvent(section) || isUnconfirmedProductRumorOrPlan(section)) return false;
   if (/\b(shuts? down|discontinues?|kills?|folds? .{0,60} into)\b|关停|下线|并入/iu.test(sourceIdentity)) return true;
-  return /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:es|ed)?|general availability|GA|new API|new SDK|new platform|new product|pricing|available now|shuts? down|discontinues?|kills?|folds? .{0,60} into)\b|发布|推出|上线|正式可用|开放|定价|关停|下线|并入/iu.test(text)
+  return /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:e|es|ed|ing)|general availability|GA|new API|new SDK|new platform|new product|pricing|available now|shuts? down|discontinues?|kills?|folds? .{0,60} into)\b|发布|推出|上线|正式可用|开放|定价|关停|下线|并入/iu.test(text)
     && !/guide|tutorial|how to|core concepts|scaling dimensions|architecture overview|field guide|glossary|market map|roundup|list|指南|教程|概念|综述|清单|榜单/iu.test(text);
 }
 
@@ -2335,7 +2335,7 @@ function loadSourceTitleTranslations() {
     const entries = Array.isArray(json) ? json : (Array.isArray(json.translations) ? json.translations : []);
     const map = new Map();
     for (const entry of entries) {
-      if (entry?.generatedBy === "mymemory_title_translation") continue;
+      if (!["openai_title_translation", "business-rule_title_translation", "controlled_model_prompt_title_translation", "manual_reviewed_source_title_translation"].includes(entry?.generatedBy)) continue;
       const sourceTitle = String(entry?.sourceTitle || "").trim();
       const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
       if (!sourceTitle || !zhTitle || hasTextContamination(sourceTitle) || hasTextContamination(zhTitle)) continue;

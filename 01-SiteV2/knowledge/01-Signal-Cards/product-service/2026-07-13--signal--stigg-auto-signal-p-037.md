@@ -1,5 +1,5 @@
 ---
-id: SIG-20260713-A09
+id: SIG-20260713-A10
 type: signal_card
 signal_type: product_service
 title: "Stigg 发布 2.0：面向 AI 产品的用量运行时"
@@ -12,8 +12,8 @@ title_translation_status: translated
 title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T04:13:28.335Z
-updated_at: 2026-07-13T04:13:28.335Z
+created_at: 2026-07-13T11:38:17.591Z
+updated_at: 2026-07-13T11:38:17.591Z
 
 raw_refs: ["R-037"]
 pool_refs: ["P-037"]
@@ -28,10 +28,10 @@ primary_raw:
   has_full_text: true
   evidence_strength: rich_evidence
   pool_routes:
-    - index_only
+    - core_pool
   raw_qc_decision: allow
-  importance_type: supporting_signal
-  importance_score: 2
+  importance_type: important_product_or_service
+  importance_score: 4
 
 formal_tags:
   track: ["track-ai-governance"]
@@ -79,7 +79,7 @@ Stigg将每次 AI 请求视为一次支出决策，并把用量与权限判断�
 
 ## 可见原文片段
 
-Announcing Stigg 2.0 - The Usage Runtime for AI Products Blog / Stigg Announcements # Announcing Stigg 2.0 Every AI request is a spend decision. Make it in milliseconds. Written by Dor Sasson , Anton Zagrebelny Last updated June 30, 2026 read time 10 minutes ### Table of contents ENF...
+Written by Dor Sasson Anton Zagrebelny Last updated June 30, 2026 read time 10 minutes Table of contents ENFORCEMENT Share: Copied https://www.
 
 ## 证据边界
 

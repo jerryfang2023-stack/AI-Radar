@@ -12,8 +12,8 @@ title_translation_status: translated
 title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T04:13:28.335Z
-updated_at: 2026-07-13T04:13:28.335Z
+created_at: 2026-07-13T11:38:17.591Z
+updated_at: 2026-07-13T11:38:17.591Z
 
 raw_refs: ["R-017"]
 pool_refs: ["P-017"]

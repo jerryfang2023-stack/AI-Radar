@@ -7,12 +7,13 @@ date: 2026-07-13
 status: published
 source_title: "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展"
 asset_level: frontstage
-title_translation_status: not_required
-title_translation_method: source_title
+title_zh: "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展"
+title_translation_status: translated
+title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T04:13:28.335Z
-updated_at: 2026-07-13T04:13:28.335Z
+created_at: 2026-07-13T11:38:17.591Z
+updated_at: 2026-07-13T11:38:17.591Z
 
 raw_refs: ["R-036"]
 pool_refs: ["P-036"]

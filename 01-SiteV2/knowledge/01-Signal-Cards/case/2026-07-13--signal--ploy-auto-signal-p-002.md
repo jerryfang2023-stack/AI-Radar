@@ -1,18 +1,19 @@
 ---
-id: SIG-20260713-A10
+id: SIG-20260713-A08
 type: signal_card
-signal_type: product_service
+signal_type: case
 title: "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol"
 date: 2026-07-13
 status: published
 source_title: "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol"
 asset_level: frontstage
-title_translation_status: not_required
-title_translation_method: source_title
+title_zh: "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol"
+title_translation_status: translated
+title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T04:13:28.335Z
-updated_at: 2026-07-13T04:13:28.335Z
+created_at: 2026-07-13T11:38:17.591Z
+updated_at: 2026-07-13T11:38:17.591Z
 
 raw_refs: ["R-002"]
 pool_refs: ["P-002"]
@@ -27,18 +28,17 @@ primary_raw:
   has_full_text: true
   evidence_strength: rich_evidence
   pool_routes:
-    - user_feedback_pool
-    - watchlist
+    - core_pool
   raw_qc_decision: allow
-  importance_type: supporting_signal
-  importance_score: 2
+  importance_type: important_case
+  importance_score: 4
 
 formal_tags:
   track: ["track-ai-agent", "track-ai-infra"]
   function: []
   scenario: []
   customer: []
-  evidence: ["evidence-pricing-cost", "evidence-customer-metric", "evidence-product-launch"]
+  evidence: ["evidence-pricing-cost", "evidence-customer-metric", "evidence-customer-adoption"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"

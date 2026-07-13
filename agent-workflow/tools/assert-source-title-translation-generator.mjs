@@ -26,7 +26,7 @@ const result = await resolveSourceTitleTranslation(sourceTitle, {
   generator: async () => ({
     titleZh: expectedZh,
     status: "translated",
-    method: "test_title_translation_generator",
+    method: "business-rule_title_translation",
   }),
 });
 
@@ -81,10 +81,20 @@ fs.writeFileSync(legacyMachineTranslationFile, JSON.stringify({
 }, null, 2), "utf8");
 const legacyMachineTranslations = loadSourceTitleTranslations(legacyMachineTranslationFile);
 
+const unverifiedTranslationFile = path.join(tempDir, "unverified-translations.json");
+fs.writeFileSync(unverifiedTranslationFile, JSON.stringify({
+  version: "source-title-translations-v1",
+  translations: [{
+    sourceTitle: "Would you host part of an AI data center in your home?",
+    zhTitle: "Sunrun 启动家庭分布式 AI 算力试点",
+  }],
+}, null, 2), "utf8");
+const unverifiedTranslations = loadSourceTitleTranslations(unverifiedTranslationFile);
+
 const ok =
   result.status === "translated" &&
   result.titleZh === expectedZh &&
-  result.method === "test_title_translation_generator" &&
+  result.method === "business-rule_title_translation" &&
   cached === expectedZh &&
   taskade.titleZh === "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层" &&
   stigg.titleZh === "Stigg 发布 2.0：面向 AI 产品的用量运行时" &&
@@ -98,7 +108,8 @@ const ok =
   sourceTitleNeedsChineseTranslation("Taskade TSK-1 内核") &&
   sourceTitleNeedsChineseTranslation("Tencent officially releases Hy3 并开放 API") &&
   !sourceTitleNeedsChineseTranslation("Taskade 发布 TSK-1 系统内核") &&
-  legacyMachineTranslations.size === 0;
+  legacyMachineTranslations.size === 0 &&
+  unverifiedTranslations.size === 0;
 
 fs.rmSync(tempDir, { recursive: true, force: true });
 
@@ -117,6 +128,7 @@ if (!ok) {
     githubSecretScanning,
     lyzrFundraiseProcess,
     legacyMachineTranslationCount: legacyMachineTranslations.size,
+    unverifiedTranslationCount: unverifiedTranslations.size,
     reason: "English source title was not generated and persisted when the exact translation DB entry was missing.",
   }, null, 2));
   process.exit(1);
