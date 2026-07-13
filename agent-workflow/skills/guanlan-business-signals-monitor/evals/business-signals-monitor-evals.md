@@ -89,6 +89,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
    - Pass when a required Pool importance lane below its source-backed Core minimum triggers targeted refill even if aggregate Pool, routed Pool, and Core totals already pass.
    - Fail when index-only/watchlist labels satisfy lane coverage and prevent high-quality funding, case, product, or vertical source refill.
    - Fail when the AI hardware path preserves three themes but silently caps itself at three queries, leaving configured official-newsroom slots unused and allowing a first-party product launch to disappear across same-day reruns.
+   - Pass when a QC-confirmed missed official article can enter a date-bounded direct-source recall list and still traverse the ordinary evidence, freshness, dedupe, Card, and editorial gates.
     - Fail when an Exa, Tavily, Anysearch, RSS or peer-channel failure triggers repeated whole-monitor collection while minimum evidence supply is already healthy.
 
 20. `case_title_source_precedence`
@@ -105,6 +106,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when Raw ingestion uses a real title-translation generator after an exact `source-title-translations.json` miss, writes generated Chinese `title_zh`, and persists the exact original `sourceTitle -> zhTitle` entry for later deterministic reuse.
     - Pass when production auto translation accepts only a controlled model prompt or an exact deterministic rule, and every loader plus supervision ignores legacy `generatedBy=mymemory_title_translation` entries.
     - Pass when deterministic rules localize source-backed partnership expansion and product shipment/deployment titles while preserving company names, product names, quantities, customers, and locations.
+    - Fail when a translated title is reused as the news fact or one raw excerpt is duplicated across `原文要点` and `可见原文片段` because no distinct source-backed facts were extracted.
     - Fail when a generic machine translation can turn protected names or concepts such as `LLM`, `Anthropic`, `Cursor`, `Perplexity`, `Fable`, or `AI Agent` into a semantically different Chinese title and still satisfy publication coverage.
     - Pass when `title` and `displayTitle` are backed by the original source title itself or an approved `source-title-translations.json` entry for that exact original title.
     - Pass when an active-date English funding source title without `title_zh` / translation-db coverage is blocked before publication and routed to Raw/Card translation repair.
