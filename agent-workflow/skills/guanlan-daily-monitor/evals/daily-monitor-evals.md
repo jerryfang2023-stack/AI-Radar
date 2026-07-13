@@ -50,5 +50,5 @@
    - Fail when the monitor always stops at the fixed initial batch, recollects providers, or pads Raw with weak/index evidence.
 
 14. `capital_startup_query_priority`
-   - Pass when the `capital_startup` path spends its limited query budget on dedicated funding / startup queries before unrelated global themes.
-   - Fail when the configured financing queries exist but are displaced by earlier product, developer, policy, or general-market themes.
+   - Pass when the `capital_startup` path spends its limited query budget on dedicated funding / startup queries before unrelated global themes and adds the production month as a recency hint.
+   - Fail when configured financing queries are displaced by earlier product, developer, policy, or general-market themes, or generic queries keep returning stale rounds.

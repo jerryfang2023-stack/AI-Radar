@@ -1332,7 +1332,7 @@ function isCompanyProfileWithoutDatedEvent(section) {
 
 function isExplainerWithoutCommercialEvent(section) {
   const identity = [poolTitle(section), value(section, "source"), value(section, "source_url")].join(" ");
-  const explainer = /\b(staffer maps out|employee explains?|which .{0,80} fits|reasoning levels? fits|guide to|how to choose)\b|员工详解|员工解释|适用场景|如何选择/iu.test(identity);
+  const explainer = /\b(staffer maps out|employee explains?|which .{0,80} fits|reasoning levels? fits|guide to|how to choose)\b|员工详解|员工解释|适用场景|如何选择|指南|教程/iu.test(identity);
   const datedAction = /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:es|ed)?|available now|general availability|acquires?|lawsuit|settlement|raises?|funding)\b|发布|推出|上线|收购|诉讼|和解|融资/iu.test(identity);
   return explainer && !datedAction;
 }
@@ -3239,6 +3239,13 @@ function runCoreRecallRegressionFixtures() {
     "- key_excerpts: 多位行业高管表示算力需求依然强劲。",
   ].join("\n");
   assert.equal(isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(commentaryFixture), true, "market commentary without a dated company action must not become a Card");
+
+  const guideFixture = [
+    "## P-994｜循环工程指南：让 AI 智能体自主执行 ML 研究循环",
+    "- source_url: https://example.com/guide-to-loop-engineering",
+    "- key_excerpts: 本指南解释如何使用两个研究项目搭建自动迭代循环。",
+  ].join("\n");
+  assert.equal(isExplainerWithoutCommercialEvent(guideFixture), true, "Chinese guides without a separate commercial event must remain backend-only");
 
   const technicalTrendLaunchFixture = [
     "## P-995｜上纬新材发布全球首款可变形个人机器人启元 T1",
