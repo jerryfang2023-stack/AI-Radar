@@ -1,0 +1,284 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-022",
+  "title": "循环工程指南：autoresearch 与 Bilevel Autoresearch 让 AI 智能体自主执行 ML 研究循环",
+  "title_zh": "循环工程指南：autoresearch 与 Bilevel Autoresearch 让 AI 智能体自主执行 ML 研究循环",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://www.marktechpost.com/2026/07/12/guide-to-loop-engineering",
+  "canonical_url": "https://marktechpost.com/2026/07/12/guide-to-loop-engineering",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-12T20:07:02.000Z",
+  "collected_at": "2026-07-13T07:15:26.932Z",
+  "language": "mixed",
+  "full_text": "Editors Pick\nAgentic AI\nArtificial Intelligence\nAI Infrastructure\nTechnology\nAI Shorts\nApplications\nLanguage Model\nLarge Language Model\nMachine Learning\nNew Releases\nStaff\nMost people still use AI like a 2015 search box. You type, you read, you type again. A newer pattern replaces that manual back-and-forth with a loop. This guide explains loop engineering using two verified artifacts. The sources are Andrej Karpathy’s autoresearch repository and the Bilevel Autoresearch paper . The framing follows a write-up by @0xCodila .\nWhat is Loop Engineering?\nTo start, compare two modes. A prompt is one instruction, after which you decide the next step. A loop, by contrast, is a goal the model pursues until it arrives. The model plans, acts, checks its own result, then repeats. You define the objective once, and the loop handles iteration. Crucially, a loop only earns its cost when the work is measurable.\nThe Three Parts That Make A Loop Work\nSo what separates a real loop from a chatbot on repeat? Every reliable loop has three components.\nA verifier grades each attempt. That check can be a passing test, a moving metric, or a build. Without a verifier, the agent simply agrees with itself on repeat.\nState records what was tried, what failed, and what remains. A small side file lets the next run resume instead of restarting.\nA stop condition prevents runaway cost. The loop halts when the goal is met, or after N attempts.\nThe Karpathy Loop: Inside ‘autoresearch’\nThese three parts are not theoretical. On March 7, 2026, Karpathy released autoresearch , an open-source repository under the MIT license. It ships three core files and about 630 lines of code. The project went viral within days and now sits near 90,000 GitHub stars. It was latter presented as the pattern “the Karpathy Loop.”\nThe design is deliberately small, yet strict. The agent edits only train.py , which holds the GPT model, optimizer (Muon and AdamW), and training loop. It cannot touch the evaluation utilities in prepare.py . That separation stops the agent from making the test easier instead of the model better. Meanwhile, a human writes program.md , the instructions the agent must respect.\nEach cycle runs one experiment. The agent reads the code, proposes a change, trains five minutes, then keeps or rolls back. The scoring metric is val_bpb , validation bits per byte, where lower is better. That budget yields roughly 12 experiments per hour, so about 100 run overnight.\nThe reported outcomes are concrete. Karpathy pointed it at his already-optimized nanochat GPT-2 training code. It ran for two days and completed about 700 experiments, keeping 20 genuine improvements. Stacked together, those fixes cut GPT-2-quality training time by 11%, from 2.02 to 1.80 hours. One finding was a QK-Norm implementation missing a scalar multiplier, which had left attention too diffuse across heads.\nNotably, humans tire after roughly a dozen experiments, whereas the loop does not. Separately, Shopify CEO Tobi Lütke ran autoresearch overnight on an internal model. He reported a 19% improvement after 37 experiments. Karpathy’s takeaway: if you have an objective metric, you are the bottleneck.\nPrompt vs Loop vs Bilevel Loop\nThe differences become clearer side by side.\nAspect One-shot prompt Karpathy loop ( autoresearch ) Bilevel Autoresearch\nYou define Each step The goal, once The goal, once\nWho iterates You Inner agent Inner + outer agent\nVerifier You, manually prepare.py ( val_bpb ) Same metric, two levels\nState Chat only Experiment log Log plus injected code\nHuman role Engine Author of program.md Author of program.md\nReported result Varies 700 runs → 20 fixes, 11% speedup 5x larger val_bpb drop\nThe Five Building Blocks\nConsequently, AI engineering teams now assemble working loops from five reusable pieces :\nAutomation fires the loop on a schedule, event, or trigger.\nA skill stores project knowledge in a markdown file, read on every run.\nSub-agents split the writer from the reviewer, since one model grades itself too generously.\nConnectors let the loop act inside real tools, like an issue tracker or Slack.\nFinally, a verifier remains the gate that rejects bad work. Claude Code and Codex now ship all five.\nBilevel Autoresearch: A Loop On Top Of The Loop\nNext, researchers asked a sharper question. If autoresearch is research, can you autoresearch autoresearch? The research paper B ilevel Autoresearch: Meta-Autoresearching Itself answers yes.\nThe inner loop matches Karpathy’s original: propose, train, evaluate, keep or discard. The outer loop watches the inner loop and reads its code and traces. It identifies where the search itself keeps stalling. Then it writes new Python mechanisms, injects them at runtime, and reruns the inner loop.\nThe result held on Karpathy’s GPT pretraining benchmark. The outer loop cut val_bpb 5x more than the single loop (-0.045 vs -0.009). Notably, both loops used the same LLM, so the gain came from architecture, not a smarter model. In practice the design splits into three levels. Level 1 runs the base loop. Level 1.5 tunes search parameters every five iterations. Level 2 generates mechanisms through a four-round session. The reported experiments used an RTX 5090 32GB and a 300-second budget.\nThe reason is worth noting. The inner loop kept returning to the same priors, even after they stopped working. The outer loop broke those patterns by forcing unfamiliar exploration.\nUse Cases With Examples\nThese ideas transfer well beyond pretraining. For model work, a loop searches hyperparameters until val_bpb drops. For software, it refactors until tests, types, and the build pass. For content, it rewrites until every rubric score clears a threshold. For data, it tunes a pipeline until schema checks hold. Each case shares one trait: an automatic gate that can fail the work.\nTry It Yourself: A Loop In One Prompt\nTheory aside, you can feel the mechanic without Claude Code or Codex. Paste this into any capable model and watch it self-correct.\nCopy Code Copied Use a different Browser\nYou will work in a loop until the task meets the bar.\nTASK:\n[describe exactly what you want produced]\nSUCCESS CRITERIA (be strict):\n- [criterion 1]\n- [criterion 2]\n- [criterion 3]\nLOOP PROTOCOL, repeat every turn:\n1. PLAN - state the single next step.\n2. DO - produce or improve the work.\n3. VERIFY - score the result 1-10 on each criterion. Be honest.\n4. DECIDE - if every criterion is 8+, print FINAL and stop.\nOtherwise print ITERATING and fix the weakest point first.\nRULES:\n- Never call it done until every criterion is 8 or higher.\n- Each pass must fix the weakest score from the last VERIFY.\n- Do not ask questions. Make a sensible assumption and continue.\nBegin.\nUnderneath, the control flow is small. The skeleton below shows those three parts in Python: a verifier, a decision, and two stop conditions.\nCopy Code Copied Use a different Browser\ncurrent = baseline\nbest = evaluate(current) # verifier: lower val_bpb is better\nfor step in range(MAX_STEPS): # stop condition 1: experiment budget\ncandidate = propose_change(current) # agent edits train.py\nscore = train_and_eval(candidate) # train 5 min, then verify\nif score < best: # keep only real improvements\ncurrent, best = candidate, score # commit\n# else: discard candidate, restore baseline\nif best <= TARGET: # stop condition 2: goal met\nbreak\nBoth versions are limited. You are still the trigger, and closing the tab erases the state. Adding automation, a state file, and a real gate turns this into an autonomous loop.\nSee It Run\nThe interactive demo below animates one full loop: propose, train, verify, then keep or roll back. Adjust the target and step limit, and watch val_bpb fall until the stop condition fires.\nKey Takeaways\nA loop needs three parts: a verifier, persistent state, and a stop condition.\nautoresearch lets an agent edit only train.py and never the evaluator.\nKarpathy’s overnight runs kept 20 fixes from 700 experiments, for an 11% speedup.\nBilevel Autoresearch adds an outer loop for a 5x val_bpb gain.\nLoops shift the work to design and review; they do not remove thinking.",
+  "clean_text": "Editors Pick\nAgentic AI\nArtificial Intelligence\nAI Infrastructure\nTechnology\nAI Shorts\nApplications\nLanguage Model\nLarge Language Model\nMachine Learning\nNew Releases\nStaff\nMost people still use AI like a 2015 search box. You type, you read, you type again. A newer pattern replaces that manual back-and-forth with a loop. This guide explains loop engineering using two verified artifacts. The sources are Andrej Karpathy’s autoresearch repository and the Bilevel Autoresearch paper . The framing follows a write-up by @0xCodila .\nWhat is Loop Engineering?\nTo start, compare two modes. A prompt is one instruction, after which you decide the next step. A loop, by contrast, is a goal the model pursues until it arrives. The model plans, acts, checks its own result, then repeats. You define the objective once, and the loop handles iteration. Crucially, a loop only earns its cost when the work is measurable.\nThe Three Parts That Make A Loop Work\nSo what separates a real loop from a chatbot on repeat? Every reliable loop has three components.\nA verifier grades each attempt. That check can be a passing test, a moving metric, or a build. Without a verifier, the agent simply agrees with itself on repeat.\nState records what was tried, what failed, and what remains. A small side file lets the next run resume instead of restarting.\nA stop condition prevents runaway cost. The loop halts when the goal is met, or after N attempts.\nThe Karpathy Loop: Inside ‘autoresearch’\nThese three parts are not theoretical. On March 7, 2026, Karpathy released autoresearch , an open-source repository under the MIT license. It ships three core files and about 630 lines of code. The project went viral within days and now sits near 90,000 GitHub stars. It was latter presented as the pattern “the Karpathy Loop.”\nThe design is deliberately small, yet strict. The agent edits only train.py , which holds the GPT model, optimizer (Muon and AdamW), and training loop. It cannot touch the evaluation utilities in prepare.py . That separation stops the agent from making the test easier instead of the model better. Meanwhile, a human writes program.md , the instructions the agent must respect.\nEach cycle runs one experiment. The agent reads the code, proposes a change, trains five minutes, then keeps or rolls back. The scoring metric is val_bpb , validation bits per byte, where lower is better. That budget yields roughly 12 experiments per hour, so about 100 run overnight.\nThe reported outcomes are concrete. Karpathy pointed it at his already-optimized nanochat GPT-2 training code. It ran for two days and completed about 700 experiments, keeping 20 genuine improvements. Stacked together, those fixes cut GPT-2-quality training time by 11%, from 2.02 to 1.80 hours. One finding was a QK-Norm implementation missing a scalar multiplier, which had left attention too diffuse across heads.\nNotably, humans tire after roughly a dozen experiments, whereas the loop does not. Separately, Shopify CEO Tobi Lütke ran autoresearch overnight on an internal model. He reported a 19% improvement after 37 experiments. Karpathy’s takeaway: if you have an objective metric, you are the bottleneck.\nPrompt vs Loop vs Bilevel Loop\nThe differences become clearer side by side.\nAspect One-shot prompt Karpathy loop ( autoresearch ) Bilevel Autoresearch\nYou define Each step The goal, once The goal, once\nWho iterates You Inner agent Inner + outer agent\nVerifier You, manually prepare.py ( val_bpb ) Same metric, two levels\nState Chat only Experiment log Log plus injected code\nHuman role Engine Author of program.md Author of program.md\nReported result Varies 700 runs → 20 fixes, 11% speedup 5x larger val_bpb drop\nThe Five Building Blocks\nConsequently, AI engineering teams now assemble working loops from five reusable pieces :\nAutomation fires the loop on a schedule, event, or trigger.\nA skill stores project knowledge in a markdown file, read on every run.\nSub-agents split the writer from the reviewer, since one model grades itself too generously.\nConnectors let the loop act inside real tools, like an issue tracker or Slack.\nFinally, a verifier remains the gate that rejects bad work. Claude Code and Codex now ship all five.\nBilevel Autoresearch: A Loop On Top Of The Loop\nNext, researchers asked a sharper question. If autoresearch is research, can you autoresearch autoresearch? The research paper B ilevel Autoresearch: Meta-Autoresearching Itself answers yes.\nThe inner loop matches Karpathy’s original: propose, train, evaluate, keep or discard. The outer loop watches the inner loop and reads its code and traces. It identifies where the search itself keeps stalling. Then it writes new Python mechanisms, injects them at runtime, and reruns the inner loop.\nThe result held on Karpathy’s GPT pretraining benchmark. The outer loop cut val_bpb 5x more than the single loop (-0.045 vs -0.009). Notably, both loops used the same LLM, so the gain came from architecture, not a smarter model. In practice the design splits into three levels. Level 1 runs the base loop. Level 1.5 tunes search parameters every five iterations. Level 2 generates mechanisms through a four-round session. The reported experiments used an RTX 5090 32GB and a 300-second budget.\nThe reason is worth noting. The inner loop kept returning to the same priors, even after they stopped working. The outer loop broke those patterns by forcing unfamiliar exploration.\nUse Cases With Examples\nThese ideas transfer well beyond pretraining. For model work, a loop searches hyperparameters until val_bpb drops. For software, it refactors until tests, types, and the build pass. For content, it rewrites until every rubric score clears a threshold. For data, it tunes a pipeline until schema checks hold. Each case shares one trait: an automatic gate that can fail the work.\nTry It Yourself: A Loop In One Prompt\nTheory aside, you can feel the mechanic without Claude Code or Codex. Paste this into any capable model and watch it self-correct.\nCopy Code Copied Use a different Browser\nYou will work in a loop until the task meets the bar.\nTASK:\n[describe exactly what you want produced]\nSUCCESS CRITERIA (be strict):\n- [criterion 1]\n- [criterion 2]\n- [criterion 3]\nLOOP PROTOCOL, repeat every turn:\n1. PLAN - state the single next step.\n2. DO - produce or improve the work.\n3. VERIFY - score the result 1-10 on each criterion. Be honest.\n4. DECIDE - if every criterion is 8+, print FINAL and stop.\nOtherwise print ITERATING and fix the weakest point first.\nRULES:\n- Never call it done until every criterion is 8 or higher.\n- Each pass must fix the weakest score from the last VERIFY.\n- Do not ask questions. Make a sensible assumption and continue.\nBegin.\nUnderneath, the control flow is small. The skeleton below shows those three parts in Python: a verifier, a decision, and two stop conditions.\nCopy Code Copied Use a different Browser\ncurrent = baseline\nbest = evaluate(current) # verifier: lower val_bpb is better\nfor step in range(MAX_STEPS): # stop condition 1: experiment budget\ncandidate = propose_change(current) # agent edits train.py\nscore = train_and_eval(candidate) # train 5 min, then verify\nif score < best: # keep only real improvements\ncurrent, best = candidate, score # commit\n# else: discard candidate, restore baseline\nif best <= TARGET: # stop condition 2: goal met\nbreak\nBoth versions are limited. You are still the trigger, and closing the tab erases the state. Adding automation, a state file, and a real gate turns this into an autonomous loop.\nSee It Run\nThe interactive demo below animates one full loop: propose, train, verify, then keep or roll back. Adjust the target and step limit, and watch val_bpb fall until the stop condition fires.\nKey Takeaways\nA loop needs three parts: a verifier, persistent state, and a stop condition.\nautoresearch lets an agent edit only train.py and never the evaluator.\nKarpathy’s overnight runs kept 20 fixes from 700 experiments, for an 11% speedup.\nBilevel Autoresearch adds an outer loop for a 5x val_bpb gain.\nLoops shift the work to design and review; they do not remove thinking.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-13/r-022-循环工程指南-autoresearch-与-bilevel-autoresearch-让-ai-智能体自主执行-ml-研究循环.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-13/r-022-循环工程指南-autoresearch-与-bilevel-autoresearch-让-ai-智能体自主执行-ml-研究循环.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 8103,
+    "paragraph_count": 71,
+    "sentence_count": 105,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0035,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 8103,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "503347ee5a8e6e9a",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "循环工程指南：autoresearch 与 Bilevel Autoresearch 让 AI 智能体自主执行 ML 研究循环",
+    "discovery_summary": "循环工程（Loop Engineering）是一种替代传统手动交互的 AI 使用模式，通过循环机制让 AI 智能体自主完成机器学习研究。该指南基于 Andrej Karpathy 的 autoresearch 代码库和 Bilevel Autoresearch 论文两个已验证成果，框架参考了 @0xCodila 的撰文。autoresearch 实现研究任务的自动迭代，Bilevel Autoresearch 则引入双层优化结构，使智能体能在更高层次上自主设计并执行研究循环，从而减少人工干预，提升 ML 研究的自动化程度。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/07/12/guide-to-loop-engineering",
+    "discovered_at": "2026-07-13T07:07:20.718Z",
+    "rank_on_page": 108,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "98a71f15ac70358b",
+  "content_hash": "503347ee5a8e6e9a",
+  "full_text_hash": "503347ee5a8e6e9a",
+  "semantic_hash": "cf1b3bdbc4c9cc13",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-12T20:07:02.000Z",
+  "last_seen_at": "2026-07-13T07:15:26.932Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "循环工程（Loop Engineering）是一种替代传统手动交互的 AI 使用模式，通过循环机制让 AI 智能体自主完成机器学习研究。该指南基于 Andrej Karpathy 的 autoresearch 代码库和 Bilevel Autoresearch 论文两个已验证成果，框架参考了 @0xCodila 的撰文。autoresearch 实现研究任务的自动迭代，Bilevel Autoresearch 则引入双层优化结构，使智能体能在更高层次上自主设计并执行研究循环，从而减少人工干预，提升 ML 研究的自动化程度。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Editors Pick Agentic AI Artificial Intelligence AI Infrastructure Technology AI Shorts Applications Language Model Large Language Model Machine Learning New Releases Staff Most people still use AI like a 2015 search box.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "You type, you read, you type again.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "A newer pattern replaces that manual back-and-forth with a loop.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "This guide explains loop engineering using two verified artifacts.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The sources are Andrej Karpathy’s autoresearch repository and the Bilevel Autoresearch paper .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-13T07:15:26.932Z",
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "GitHub",
+      "Meta"
+    ],
+    "products": [
+      "agent",
+      "agents",
+      "Claude",
+      "Codex"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "0x",
+      "2015",
+      "7",
+      "2026",
+      "630",
+      "90",
+      "000",
+      "12"
+    ],
+    "quotes": [
+      "the Karpathy Loop."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Editors Pick Agentic AI Artificial Intelligence AI Infrastructure Technology AI Shorts Applications Language Model Large Language Model Machine Learning New Releases Staff Most people still use AI like a 2015 search box.",
+      "You type, you read, you type again.",
+      "A newer pattern replaces that manual back-and-forth with a loop."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 循环工程指南：autoresearch 与 Bilevel Autoresearch 让 AI 智能体自主执行 ML 研究循环\n\n- raw_id: R-022\n- title_zh: 循环工程指南：autoresearch 与 Bilevel Autoresearch 让 AI 智能体自主执行 ML 研究循环\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.marktechpost.com/2026/07/12/guide-to-loop-engineering\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-07-13T07:15:26.932Z\n\n## clean_text\n\nEditors Pick\nAgentic AI\nArtificial Intelligence\nAI Infrastructure\nTechnology\nAI Shorts\nApplications\nLanguage Model\nLarge Language Model\nMachine Learning\nNew Releases\nStaff\nMost people still use AI like a 2015 search box. You type, you read, you type again. A newer pattern replaces that manual back-and-forth with a loop. This guide explains loop engineering using two verified artifacts. The sources are Andrej Karpathy’s autoresearch repository and the Bilevel Autoresearch paper . The framing follows a write-up by @0xCodila .\nWhat is Loop Engineering?\nTo start, compare two modes. A prompt is one instruction, after which you decide the next step. A loop, by contrast, is a goal the model pursues until it arrives. The model plans, acts, checks its own result, then repeats. You define the objective once, and the loop handles iteration. Crucially, a loop only earns its cost when the work is measurable.\nThe Three Parts That Make A Loop Work\nSo what separates a real loop from a chatbot on repeat? Every reliable loop has three components.\nA verifier grades each attempt. That check can be a passing test, a moving metric, or a build. Without a verifier, the agent simply agrees with itself on repeat.\nState records what was tried, what failed, and what remains. A small side file lets the next run resume instead of restarting.\nA stop condition prevents runaway cost. The loop halts when the goal is met, or after N attempts.\nThe Karpathy Loop: Inside ‘autoresearch’\nThese three parts are not theoretical. On March 7, 2026, Karpathy released autoresearch , an open-source repository under the MIT license. It ships three core files and about 630 lines of code. The project went viral within days and now sits near 90,000 GitHub stars. It was latter presented as the pattern “the Karpathy Loop.”\nThe design is deliberately small, yet strict. The agent edits only train.py , which holds the GPT model, optimizer (Muon and AdamW), and training loop. It cannot touch the evaluation utilities in prepare.py . That separation stops the agent from making the test easier instead of the model better. Meanwhile, a human writes program.md , the instructions the agent must respect.\nEach cycle runs one experiment. The agent reads the code, proposes a change, trains five minutes, then keeps or rolls back. The scoring metric is val_bpb , validation bits per byte, where lower is better. That budget yields roughly 12 experiments per hour, so about 100 run overnight.\nThe reported outcomes are concrete. Karpathy pointed it at his already-optimized nanochat GPT-2 training code. It ran for two days and completed about 700 experiments, keeping 20 genuine improvements. Stacked together, those fixes cut GPT-2-quality training time by 11%, from 2.02 to 1.80 hours. One finding was a QK-Norm implementation missing a scalar multiplier, which had left attention too diffuse across heads.\nNotably, humans tire after roughly a dozen experiments, whereas the loop does not. Separately, Shopify CEO Tobi Lütke ran autoresearch overnight on an internal model. He reported a 19% improvement after 37 experiments. Karpathy’s takeaway: if you have an objective metric, you are the bottleneck.\nPrompt vs Loop vs Bilevel Loop\nThe differences become clearer side by side.\nAspect One-shot prompt Karpathy loop ( autoresearch ) Bilevel Autoresearch\nYou define Each step The goal, once The goal, once\nWho iterates You Inner agent Inner + outer agent\nVerifier You, manually prepare.py ( val_bpb ) Same metric, two levels\nState Chat only Experiment log Log plus injected code\nHuman role Engine Author of program.md Author of program.md\nReported result Varies 700 runs → 20 fixes, 11% speedup 5x larger val_bpb drop\nThe Five Building Blocks\nConsequently, AI engineering teams now assemble working loops from five reusable pieces :\nAutomation fires the loop on a schedule, event, or trigger.\nA skill stores project knowledge in a markdown file, read on every run.\nSub-agents split the writer from the reviewer, since one model grades itself too generously.\nConnectors let the loop act inside real tools, like an issue tracker or Slack.\nFinally, a verifier remains the gate that rejects bad work. Claude Code and Codex now ship all five.\nBilevel Autoresearch: A Loop On Top Of The Loop\nNext, researchers asked a sharper question. If autoresearch is research, can you autoresearch autoresearch? The research paper B ilevel Autoresearch: Meta-Autoresearching Itself answers yes.\nThe inner loop matches Karpathy’s original: propose, train, evaluate, keep or discard. The outer loop watches the inner loop and reads its code and traces. It identifies where the search itself keeps stalling. Then it writes new Python mechanisms, injects them at runtime, and reruns the inner loop.\nThe result held on Karpathy’s GPT pretraining benchmark. The outer loop cut val_bpb 5x more than the single loop (-0.045 vs -0.009). Notably, both loops used the same LLM, so the gain came from architecture, not a smarter model. In practice the design splits into three levels. Level 1 runs the base loop. Level 1.5 tunes search parameters every five iterations. Level 2 generates mechanisms through a four-round session. The reported experiments used an RTX 5090 32GB and a 300-second budget.\nThe reason is worth noting. The inner loop kept returning to the same priors, even after they stopped working. The outer loop broke those patterns by forcing unfamiliar exploration.\nUse Cases With Examples\nThese ideas transfer well beyond pretraining. For model work, a loop searches hyperparameters until val_bpb drops. For software, it refactors until tests, types, and the build pass. For content, it rewrites until every rubric score clears a threshold. For data, it tunes a pipeline until schema checks hold. Each case shares one trait: an automatic gate that can fail the work.\nTry It Yourself: A Loop In One Prompt\nTheory aside, you can feel the mechanic without Claude Code or Codex. Paste this into any capable model and watch it self-correct.\nCopy Code Copied Use a different Browser\nYou will work in a loop until the task meets the bar.\nTASK:\n[describe exactly what you want produced]\nSUCCESS CRITERIA (be strict):\n- [criterion 1]\n- [criterion 2]\n- [criterion 3]\nLOOP PROTOCOL, repeat every turn:\n1. PLAN - state the single next step.\n2. DO - produce or improve the work.\n3. VERIFY - score the result 1-10 on each criterion. Be honest.\n4. DECIDE - if every criterion is 8+, print FINAL and stop.\nOtherwise print ITERATING and fix the weakest point first.\nRULES:\n- Never call it done until every criterion is 8 or higher.\n- Each pass must fix the weakest score from the last VERIFY.\n- Do not ask questions. Make a sensible assumption and continue.\nBegin.\nUnderneath, the control flow is small. The skeleton below shows those three parts in Python: a verifier, a decision, and two stop conditions.\nCopy Code Copied Use a different Browser\ncurrent = baseline\nbest = evaluate(current) # verifier: lower val_bpb is better\nfor step in range(MAX_STEPS): # stop condition 1: experiment budget\ncandidate = propose_change(current) # agent edits train.py\nscore = train_and_eval(candidate) # train 5 min, then verify\nif score < best: # keep only real improvements\ncurrent, best = candidate, score # commit\n# else: discard candidate, restore baseline\nif best <= TARGET: # stop condition 2: goal met\nbreak\nBoth versions are limited. You are still the trigger, and closing the tab erases the state. Adding automation, a state file, and a real gate turns this into an autonomous loop.\nSee It Run\nThe interactive demo below animates one full loop: propose, train, verify, then keep or roll back. Adjust the target and step limit, and watch val_bpb fall until the stop condition fires.\nKey Takeaways\nA loop needs three parts: a verifier, persistent state, and a stop condition.\nautoresearch lets an agent edit only train.py and never the evaluator.\nKarpathy’s overnight runs kept 20 fixes from 700 experiments, for an 11% speedup.\nBilevel Autoresearch adds an outer loop for a 5x val_bpb gain.\nLoops shift the work to design and review; they do not remove thinking.\n\n## full_text\n\nEditors Pick\nAgentic AI\nArtificial Intelligence\nAI Infrastructure\nTechnology\nAI Shorts\nApplications\nLanguage Model\nLarge Language Model\nMachine Learning\nNew Releases\nStaff\nMost people still use AI like a 2015 search box. You type, you read, you type again. A newer pattern replaces that manual back-and-forth with a loop. This guide explains loop engineering using two verified artifacts. The sources are Andrej Karpathy’s autoresearch repository and the Bilevel Autoresearch paper . The framing follows a write-up by @0xCodila .\nWhat is Loop Engineering?\nTo start, compare two modes. A prompt is one instruction, after which you decide the next step. A loop, by contrast, is a goal the model pursues until it arrives. The model plans, acts, checks its own result, then repeats. You define the objective once, and the loop handles iteration. Crucially, a loop only earns its cost when the work is measurable.\nThe Three Parts That Make A Loop Work\nSo what separates a real loop from a chatbot on repeat? Every reliable loop has three components.\nA verifier grades each attempt. That check can be a passing test, a moving metric, or a build. Without a verifier, the agent simply agrees with itself on repeat.\nState records what was tried, what failed, and what remains. A small side file lets the next run resume instead of restarting.\nA stop condition prevents runaway cost. The loop halts when the goal is met, or after N attempts.\nThe Karpathy Loop: Inside ‘autoresearch’\nThese three parts are not theoretical. On March 7, 2026, Karpathy released autoresearch , an open-source repository under the MIT license. It ships three core files and about 630 lines of code. The project went viral within days and now sits near 90,000 GitHub stars. It was latter presented as the pattern “the Karpathy Loop.”\nThe design is deliberately small, yet strict. The agent edits only train.py , which holds the GPT model, optimizer (Muon and AdamW), and training loop. It cannot touch the evaluation utilities in prepare.py . That separation stops the agent from making the test easier instead of the model better. Meanwhile, a human writes program.md , the instructions the agent must respect.\nEach cycle runs one experiment. The agent reads the code, proposes a change, trains five minutes, then keeps or rolls back. The scoring metric is val_bpb , validation bits per byte, where lower is better. That budget yields roughly 12 experiments per hour, so about 100 run overnight.\nThe reported outcomes are concrete. Karpathy pointed it at his already-optimized nanochat GPT-2 training code. It ran for two days and completed about 700 experiments, keeping 20 genuine improvements. Stacked together, those fixes cut GPT-2-quality training time by 11%, from 2.02 to 1.80 hours. One finding was a QK-Norm implementation missing a scalar multiplier, which had left attention too diffuse across heads.\nNotably, humans tire after roughly a dozen experiments, whereas the loop does not. Separately, Shopify CEO Tobi Lütke ran autoresearch overnight on an internal model. He reported a 19% improvement after 37 experiments. Karpathy’s takeaway: if you have an objective metric, you are the bottleneck.\nPrompt vs Loop vs Bilevel Loop\nThe differences become clearer side by side.\nAspect One-shot prompt Karpathy loop ( autoresearch ) Bilevel Autoresearch\nYou define Each step The goal, once The goal, once\nWho iterates You Inner agent Inner + outer agent\nVerifier You, manually prepare.py ( val_bpb ) Same metric, two levels\nState Chat only Experiment log Log plus injected code\nHuman role Engine Author of program.md Author of program.md\nReported result Varies 700 runs → 20 fixes, 11% speedup 5x larger val_bpb drop\nThe Five Building Blocks\nConsequently, AI engineering teams now assemble working loops from five reusable pieces :\nAutomation fires the loop on a schedule, event, or trigger.\nA skill stores project knowledge in a markdown file, read on every run.\nSub-agents split the writer from the reviewer, since one model grades itself too generously.\nConnectors let the loop act inside real tools, like an issue tracker or Slack.\nFinally, a verifier remains the gate that rejects bad work. Claude Code and Codex now ship all five.\nBilevel Autoresearch: A Loop On Top Of The Loop\nNext, researchers asked a sharper question. If autoresearch is research, can you autoresearch autoresearch? The research paper B ilevel Autoresearch: Meta-Autoresearching Itself answers yes.\nThe inner loop matches Karpathy’s original: propose, train, evaluate, keep or discard. The outer loop watches the inner loop and reads its code and traces. It identifies where the search itself keeps stalling. Then it writes new Python mechanisms, injects them at runtime, and reruns the inner loop.\nThe result held on Karpathy’s GPT pretraining benchmark. The outer loop cut val_bpb 5x more than the single loop (-0.045 vs -0.009). Notably, both loops used the same LLM, so the gain came from architecture, not a smarter model. In practice the design splits into three levels. Level 1 runs the base loop. Level 1.5 tunes search parameters every five iterations. Level 2 generates mechanisms through a four-round session. The reported experiments used an RTX 5090 32GB and a 300-second budget.\nThe reason is worth noting. The inner loop kept returning to the same priors, even after they stopped working. The outer loop broke those patterns by forcing unfamiliar exploration.\nUse Cases With Examples\nThese ideas transfer well beyond pretraining. For model work, a loop searches hyperparameters until val_bpb drops. For software, it refactors until tests, types, and the build pass. For content, it rewrites until every rubric score clears a threshold. For data, it tunes a pipeline until schema checks hold. Each case shares one trait: an automatic gate that can fail the work.\nTry It Yourself: A Loop In One Prompt\nTheory aside, you can feel the mechanic without Claude Code or Codex. Paste this into any capable model and watch it self-correct.\nCopy Code Copied Use a different Browser\nYou will work in a loop until the task meets the bar.\nTASK:\n[describe exactly what you want produced]\nSUCCESS CRITERIA (be strict):\n- [criterion 1]\n- [criterion 2]\n- [criterion 3]\nLOOP PROTOCOL, repeat every turn:\n1. PLAN - state the single next step.\n2. DO - produce or improve the work.\n3. VERIFY - score the result 1-10 on each criterion. Be honest.\n4. DECIDE - if every criterion is 8+, print FINAL and stop.\nOtherwise print ITERATING and fix the weakest point first.\nRULES:\n- Never call it done until every criterion is 8 or higher.\n- Each pass must fix the weakest score from the last VERIFY.\n- Do not ask questions. Make a sensible assumption and continue.\nBegin.\nUnderneath, the control flow is small. The skeleton below shows those three parts in Python: a verifier, a decision, and two stop conditions.\nCopy Code Copied Use a different Browser\ncurrent = baseline\nbest = evaluate(current) # verifier: lower val_bpb is better\nfor step in range(MAX_STEPS): # stop condition 1: experiment budget\ncandidate = propose_change(current) # agent edits train.py\nscore = train_and_eval(candidate) # train 5 min, then verify\nif score < best: # keep only real improvements\ncurrent, best = candidate, score # commit\n# else: discard candidate, restore baseline\nif best <= TARGET: # stop condition 2: goal met\nbreak\nBoth versions are limited. You are still the trigger, and closing the tab erases the state. Adding automation, a state file, and a real gate turns this into an autonomous loop.\nSee It Run\nThe interactive demo below animates one full loop: propose, train, verify, then keep or roll back. Adjust the target and step limit, and watch val_bpb fall until the stop condition fires.\nKey Takeaways\nA loop needs three parts: a verifier, persistent state, and a stop condition.\nautoresearch lets an agent edit only train.py and never the evaluator.\nKarpathy’s overnight runs kept 20 fixes from 700 experiments, for an 11% speedup.\nBilevel Autoresearch adds an outer loop for a 5x val_bpb gain.\nLoops shift the work to design and review; they do not remove thinking.\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 97\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 循环工程（Loop Engineering）是一种替代传统手动交互的 AI 使用模式，通过循环机制让 AI 智能体自主完成机器学习研究。该指南基于 Andrej Karpathy 的 autoresearch 代码库和 Bilevel Autoresearch 论文两个已验证成果，框架参考了 @0xCodila 的撰文。autoresearch 实现研究任务的自动迭代，Bilevel Autoresearch 则引入双层优化结构，使智能体能在更高层次上自主设计并执行研究循环，从而减少人工干预，提升 ML 研究的自动化程度。\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Editors Pick Agentic AI Artificial Intelligence AI Infrastructure Technology AI Shorts Applications Language Model Large Language Model Machine Learning New Releases Staff Most people still use AI like a 2015 search box.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] You type, you read, you type again.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] A newer pattern replaces that manual back-and-forth with a loop.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] This guide explains loop engineering using two verified artifacts.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The sources are Andrej Karpathy’s autoresearch repository and the Bilevel Autoresearch paper .\n"
+}
