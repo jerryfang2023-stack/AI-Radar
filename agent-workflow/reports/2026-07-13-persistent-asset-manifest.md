@@ -1,6 +1,6 @@
 # 2026-07-13 Business Signals Asset Manifest
 
-- generated_at: 2026-07-13T15:15:39+08:00
+- generated_at: 2026-07-13T15:40:31+08:00
 - workflow_mode: business_signals_pr
 - monitor: success
 - raw_pool_gate: success

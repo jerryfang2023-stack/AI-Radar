@@ -1,0 +1,419 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-032
+title: "MYTH AI – Seamless Report Pattern Generator in Every Format. AI-driven Color Separation in seconds. Complete Design Ownership with Uniqueness Certificate."
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://myth-ai.com/"
+canonical_url: "https://myth-ai.com"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: false
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-13T07:40:18.897Z
+language: mixed
+full_text_hash: 086f6674d1138a80
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-032-myth-ai-seamless-report-pattern-generator-in-every-format-ai-driven-co.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-032-myth-ai-seamless-report-pattern-generator-in-every-format-ai-driven-co.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 79
+extractor_diagnostics: {"readability_score":79,"text_length":7186,"paragraph_count":69,"sentence_count":54,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 7186
+fetch_error: ""
+evidence_strength: blocked
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["index_only_or_directory_page"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"086f6674d1138a80","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e7177c0b813b2312
+content_hash: 086f6674d1138a80
+semantic_hash: 94cb2347f6a2fcba
+duplicate_of: ""
+first_seen_at: "2026-07-13T07:40:18.897Z"
+last_seen_at: 2026-07-13T07:40:18.897Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "homepage_or_directory_observation"
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch"],"products":[],"people":[],"industries":[],"roles":["CIO / IT 负责人","销售 / 客服"],"workflows":["权限 / 安全治理"],"business_actions":["合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["70%","250","4.0"],"quotes":[]}
+evidence_seed: {"company_actions":["MYTH AI – Seamless Report Pattern Generator in Every Format. AI-driven Color Separation in seconds. Complete Design Ownership with Uniqueness Certificate. ## Design at the Speed of trends with Your AI design partner! From ideas to patterns, turn your vision into production-ready designs in second... / query=applied AI startup raises design partner customers / intent=find_startups / path=capital_startup","MYTH AI – Seamless Report Pattern Generator in Every Format.","AI-driven Color Separation in seconds."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","疑似官网首页、产品目录或导航页，只能索引留存","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"MYTH AI – Seamless Report Pattern Generator in Every Format. AI-driven Color Separation in seconds. Complete Design Ownership with Uniqueness Certificate. ## Design at the Speed of trends with Your AI design partner! From ideas to patterns, turn your vision into production-ready designs in second... / query=applied AI startup raises design partner customers / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"MYTH AI – Seamless Report Pattern Generator in Every Format.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"AI-driven Color Separation in seconds.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Complete Design Ownership with Uniqueness Certificate.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Book a Demo Design at the Speed of trends with Your AI design partner!","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"F rom ideas to patterns, turn your vision into production-ready designs in seconds.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-13T07:40:18.897Z
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# MYTH AI – Seamless Report Pattern Generator in Every Format. AI-driven Color Separation in seconds. Complete Design Ownership with Uniqueness Certificate.
+
+## clean_text
+
+MYTH AI – Seamless Report Pattern Generator in Every Format. AI-driven Color Separation in seconds. Complete Design Ownership with Uniqueness Certificate.
+Book a Demo
+Design at the
+Speed of trends
+with Your AI design partner!
+F rom ideas to patterns, turn your vision into
+production-ready designs in seconds.
+Start Free Trial
+Design at the Speed of trends
+with Your AI design partner!
+F rom ideas to patterns, turn your vision into
+production-ready designs in seconds.
+Start Free Trial
+Who uses MYTH AI?
+Design-led teams building products, patterns, and experiences at scale.
+Designers
+Fashion Designers
+Pattern & Surface Designers
+Wallpaper Designers
+Home Textile Designer
+Manufacturers
+Export Houses
+Manufacturers
+Creative & Marketing
+Creative Directors
+Creative & Marketing Teams
+Illustrators
+Leadership & Innovation
+Design & Product Leaders
+Creative & Marketing Teams
+AI Transformation Leaders
+Our References
+What MYTH AI Can Do for You?
+Text to Design
+Turn your prompts into ready-to-use designs and patterns.
+Image & Text to Design
+Combine your images with auto generated prompts to instantly generate original, style-accurate designs.
+Image to Design
+Transform any reference image into fresh, AI-generated design variations.
+Make with Elements
+Build new motifs and patterns by selecting and assembling elements as per your imagination.
+Colorway
+Instantly create multiple color variations to explore palettes in seconds.
+Make Seamless
+Convert any design into a perfect repeat-ready seamless pattern.
+Generate Similar
+Create multiple design variations that match the style, mood, and structure of your reference.
+Pattern Extractor
+Extract motifs, elements, or pattern tiles from any image with one click.
+Background Remover
+Remove backgrounds cleanly to isolate motifs, designs, or elements for reuse.
+Multiple Images to Design
+Blend multiple references together to generate unified, original design outputs.
+Upscaler Pro
+Enhance and upscale designs to high resolution without losing quality.
+Text Editor
+Edit, refine, or rewrite your own text on any image or design.
+Meet the Design Partner You Need
+An all-in-one solution that gives you complete creative freedom to turn
+even the simplest ideas to trend-setting designs.
+Start Free Trial Now
+Image & Text to Design Tool
+One Tool Every
+Designer Needs
+MYTH AI turns images and ideas into original,
+on-brand designs — ready for real-world production.
+Privacy and Security
+Zero Design Replication
+MYTH AI never generates designs with 70% or higher similarity to existing outputs, ensuring your creations remain original and your brand identity stays protected.
+Full IP & Content Ownership
+Every design you create belongs entirely to you. MYTH AI grants full ownership and design IP rights, with copyright certification for original visuals.
+Strict Data Privacy
+Your designs are never shared, reused, or exposed to other users. All uploaded and generated content remains private and secure within your workspace.
+250+ Happy Clients
+Artisan Fabrics
+“Working with MYTH AI has been a transformative experience. Their team was incredibly attentive and collaborative, helping us improve our print selection process with remarkable efficiency. We’re thrilled with the creativity and speed MYTH AI brings to our workflow!” Emma Thompson - Senior Designer
+Elegance Textiles
+“With its ability to generate fresh ideas in various styles, MYTH AI has become a vital tool in our collection development. It allows us to explore unique textures and color combinations faster than ever. Complementing rather than replacing human creativity, it’s been an invaluable asset in enhancing our designs and optimizing our time.” Liam Clarke – Head of Design
+Sun Textile
+“MYTH AI allows us to create our unique creative patterns much faster than before, giving us a competitive advantage in delivering our products to our customers as quickly as possible. The number of patterns in our collection created by MYTH AI is increasing day by day.” Melike Kader – R&D Manager
+Luxe Carpets
+“Thanks to MYTH AI, we’ve embraced a new era of digital transformation in carpet design, achieving a streamlined process that produces original designs within seconds. This allows us to stay on top of trends and bring fresh, relevant pieces to market at incredible speed, enhancing our product visibility significantly.” Jack Harringon – CEO
+Gamateks
+“We have the pleasure of working with the team at MYTH AI for our print and design selection. The team is very responsive and genuinely committed to collaborating with us. It is a fantastic experience, and we are thrilled with the results! Thank you.” Tuğçe Can – UX Designer
+EcoThreads
+“MYTH AI has been instrumental in our mission towards sustainable design. With its efficient design capabilities, it enables us to reduce our environmental impact while maintaining high-quality standards. We’re proud to incorporate MYTH AI in our eco-conscious design process, paving the way for a greener feature.” Sarah Collings – Sustainability Manager
+Halmer Textile
+“MYTH AI enables us to generate fresh ideas in different styles and easily apply them in our collections. It is particularly helpful in creating different texture & color combinations. In addition, it works much faster than we do, saving us lots of time. We consider it an essential tool in supporting our creative process.”Seçkin Kahveciler – Sales & Marketing Manager
+Rugs Modern
+“With MYTH AI, we’ve achieved a 4.0 digital transformation in carpet design, reducing the design process to mere seconds. Thanks to it we can create on-trend designs quickly, which enables us to showcase our products much faster in our sales channels.” Sabri Menteşoğlu – CEO
+Özerdem
+“MYTH AI has become one of the most valuable tools in my work as a carpet designer. It makes creating intricate patterns effortless while saving me lots of time. What would normally take me days to complete can now be done in just minutes. And thanks to its user-friendly interface, I can find my creative direction easier than ever.” Kayhan Toplu – Design Executive
+Altınbaşak Home Collection
+“The way MYTH AI constantly evolves over time is impressive. Its simple interface has saved me from a heavy workload and brought real agility to my workflow. What makes it even more special is the support from the MYTH team- they were incredibly attentive even before I purchased the program, and that same level of care continued afterward.” Umut Aydın – Designer
+Showcase
+See how you can utilize MYTH AI to unlock your creative potential
+Tutorials & Gallery
+See how you can utilize MYTH AI to unlock your creative potential.
+Browse Gallery & Tutorials
+Intelligent Solutions
+See how you can utilize MYTH AI to unlock your creative potential
+Design Aligned with Trends
+Upload trend images and moodboards to inform designs aligned with the latest trends.
+Learning Tailored to Brands
+Let MYTH AI learn your brand & aesthetic preferences to refine outputs over time.
+Creative Knowledge Archive
+Store and organize all creative assets and design history to maintain consistency
+Strategic Partners
+Trusted collaborators
+Be a part of the design revolution where creativity meets cutting-edge tech. Subscribe now.
+
+## full_text
+
+MYTH AI – Seamless Report Pattern Generator in Every Format. AI-driven Color Separation in seconds. Complete Design Ownership with Uniqueness Certificate.
+Book a Demo
+Design at the
+Speed of trends
+with Your AI design partner!
+F rom ideas to patterns, turn your vision into
+production-ready designs in seconds.
+Start Free Trial
+Design at the Speed of trends
+with Your AI design partner!
+F rom ideas to patterns, turn your vision into
+production-ready designs in seconds.
+Start Free Trial
+Who uses MYTH AI?
+Design-led teams building products, patterns, and experiences at scale.
+Designers
+Fashion Designers
+Pattern & Surface Designers
+Wallpaper Designers
+Home Textile Designer
+Manufacturers
+Export Houses
+Manufacturers
+Creative & Marketing
+Creative Directors
+Creative & Marketing Teams
+Illustrators
+Leadership & Innovation
+Design & Product Leaders
+Creative & Marketing Teams
+AI Transformation Leaders
+Our References
+What MYTH AI Can Do for You?
+Text to Design
+Turn your prompts into ready-to-use designs and patterns.
+Image & Text to Design
+Combine your images with auto generated prompts to instantly generate original, style-accurate designs.
+Image to Design
+Transform any reference image into fresh, AI-generated design variations.
+Make with Elements
+Build new motifs and patterns by selecting and assembling elements as per your imagination.
+Colorway
+Instantly create multiple color variations to explore palettes in seconds.
+Make Seamless
+Convert any design into a perfect repeat-ready seamless pattern.
+Generate Similar
+Create multiple design variations that match the style, mood, and structure of your reference.
+Pattern Extractor
+Extract motifs, elements, or pattern tiles from any image with one click.
+Background Remover
+Remove backgrounds cleanly to isolate motifs, designs, or elements for reuse.
+Multiple Images to Design
+Blend multiple references together to generate unified, original design outputs.
+Upscaler Pro
+Enhance and upscale designs to high resolution without losing quality.
+Text Editor
+Edit, refine, or rewrite your own text on any image or design.
+Meet the Design Partner You Need
+An all-in-one solution that gives you complete creative freedom to turn
+even the simplest ideas to trend-setting designs.
+Start Free Trial Now
+Image & Text to Design Tool
+One Tool Every
+Designer Needs
+MYTH AI turns images and ideas into original,
+on-brand designs — ready for real-world production.
+Privacy and Security
+Zero Design Replication
+MYTH AI never generates designs with 70% or higher similarity to existing outputs, ensuring your creations remain original and your brand identity stays protected.
+Full IP & Content Ownership
+Every design you create belongs entirely to you. MYTH AI grants full ownership and design IP rights, with copyright certification for original visuals.
+Strict Data Privacy
+Your designs are never shared, reused, or exposed to other users. All uploaded and generated content remains private and secure within your workspace.
+250+ Happy Clients
+Artisan Fabrics
+“Working with MYTH AI has been a transformative experience. Their team was incredibly attentive and collaborative, helping us improve our print selection process with remarkable efficiency. We’re thrilled with the creativity and speed MYTH AI brings to our workflow!” Emma Thompson - Senior Designer
+Elegance Textiles
+“With its ability to generate fresh ideas in various styles, MYTH AI has become a vital tool in our collection development. It allows us to explore unique textures and color combinations faster than ever. Complementing rather than replacing human creativity, it’s been an invaluable asset in enhancing our designs and optimizing our time.” Liam Clarke – Head of Design
+Sun Textile
+“MYTH AI allows us to create our unique creative patterns much faster than before, giving us a competitive advantage in delivering our products to our customers as quickly as possible. The number of patterns in our collection created by MYTH AI is increasing day by day.” Melike Kader – R&D Manager
+Luxe Carpets
+“Thanks to MYTH AI, we’ve embraced a new era of digital transformation in carpet design, achieving a streamlined process that produces original designs within seconds. This allows us to stay on top of trends and bring fresh, relevant pieces to market at incredible speed, enhancing our product visibility significantly.” Jack Harringon – CEO
+Gamateks
+“We have the pleasure of working with the team at MYTH AI for our print and design selection. The team is very responsive and genuinely committed to collaborating with us. It is a fantastic experience, and we are thrilled with the results! Thank you.” Tuğçe Can – UX Designer
+EcoThreads
+“MYTH AI has been instrumental in our mission towards sustainable design. With its efficient design capabilities, it enables us to reduce our environmental impact while maintaining high-quality standards. We’re proud to incorporate MYTH AI in our eco-conscious design process, paving the way for a greener feature.” Sarah Collings – Sustainability Manager
+Halmer Textile
+“MYTH AI enables us to generate fresh ideas in different styles and easily apply them in our collections. It is particularly helpful in creating different texture & color combinations. In addition, it works much faster than we do, saving us lots of time. We consider it an essential tool in supporting our creative process.”Seçkin Kahveciler – Sales & Marketing Manager
+Rugs Modern
+“With MYTH AI, we’ve achieved a 4.0 digital transformation in carpet design, reducing the design process to mere seconds. Thanks to it we can create on-trend designs quickly, which enables us to showcase our products much faster in our sales channels.” Sabri Menteşoğlu – CEO
+Özerdem
+“MYTH AI has become one of the most valuable tools in my work as a carpet designer. It makes creating intricate patterns effortless while saving me lots of time. What would normally take me days to complete can now be done in just minutes. And thanks to its user-friendly interface, I can find my creative direction easier than ever.” Kayhan Toplu – Design Executive
+Altınbaşak Home Collection
+“The way MYTH AI constantly evolves over time is impressive. Its simple interface has saved me from a heavy workload and brought real agility to my workflow. What makes it even more special is the support from the MYTH team- they were incredibly attentive even before I purchased the program, and that same level of care continued afterward.” Umut Aydın – Designer
+Showcase
+See how you can utilize MYTH AI to unlock your creative potential
+Tutorials & Gallery
+See how you can utilize MYTH AI to unlock your creative potential.
+Browse Gallery & Tutorials
+Intelligent Solutions
+See how you can utilize MYTH AI to unlock your creative potential
+Design Aligned with Trends
+Upload trend images and moodboards to inform designs aligned with the latest trends.
+Learning Tailored to Brands
+Let MYTH AI learn your brand & aesthetic preferences to refine outputs over time.
+Creative Knowledge Archive
+Store and organize all creative assets and design history to maintain consistency
+Strategic Partners
+Trusted collaborators
+Be a part of the design revolution where creativity meets cutting-edge tech. Subscribe now.
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 79
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":79,"text_length":7186,"paragraph_count":69,"sentence_count":54,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   MYTH AI – Seamless Report Pattern Generator in Every Format. AI-driven Color Separation in seconds. Complete Design Ownership with Uniqueness Certificate. ## Design at the Speed of trends with Your AI design partner! From ideas to patterns, turn your vision into production-ready designs in second... / query=applied AI startup raises design partner customers / intent=find_startups / path=capital_startup
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   MYTH AI – Seamless Report Pattern Generator in Every Format.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   AI-driven Color Separation in seconds.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Complete Design Ownership with Uniqueness Certificate.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Book a Demo Design at the Speed of trends with Your AI design partner!
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   F rom ideas to patterns, turn your vision into production-ready designs in seconds.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: CIO / IT 负责人, 销售 / 客服
+- workflows: 权限 / 安全治理
+- business_actions: 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 70%, 250, 4.0
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: MYTH AI – Seamless Report Pattern Generator in Every Format. AI-driven Color Separation in seconds. Complete Design Ownership with Uniqueness Certificate. ## Design at the Speed of trends with Your AI design partner! From ideas to patterns, turn your vision into production-ready designs in second... / query=applied AI startup raises design partner customers / intent=find_startups / path=capital_startup / MYTH AI – Seamless Report Pattern Generator in Every Format. / AI-driven Color Separation in seconds.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 疑似官网首页、产品目录或导航页，只能索引留存
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+MYTH AI – Seamless Report Pattern Generator in Every Format. AI-driven Color Separation in seconds. Complete Design Ownership with Uniqueness Certificate. ## Design at the Speed of trends with Your AI design partner! From ideas to patterns, turn your vision into production-ready designs in second... / query=applied AI startup raises design partner customers / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

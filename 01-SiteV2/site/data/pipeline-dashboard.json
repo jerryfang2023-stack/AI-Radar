@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-13T07:15:39.201Z",
+    "generatedAt": "2026-07-13T07:40:31.645Z",
     "dateRange": {
       "start": "2025-10-13",
       "end": "2026-07-13"
@@ -12,51 +12,53 @@
       "date": "2026-07-13",
       "label": "2026.07.13",
       "shortLabel": "07.13",
-      "raw": 95,
-      "pool": 85,
+      "raw": 99,
+      "pool": 93,
       "assets": {
         "funding": 1,
         "product-service": 13
       },
       "cards": 14,
       "rawChannels": {
-        "aihot": 47,
-        "keyword_search": 20,
+        "aihot": 48,
+        "keyword_search": 22,
         "follow_builders": 0
       },
       "poolRoutes": {
         "user_feedback_pool": 4,
-        "watchlist": 25,
-        "core_pool": 23,
-        "emerging_pool": 14,
-        "index_only": 37
+        "watchlist": 31,
+        "core_pool": 24,
+        "emerging_pool": 18,
+        "index_only": 38
       },
       "evidenceLevels": {
-        "user_feedback_signal": 8,
-        "core_evidence_candidate": 51,
-        "index_only_evidence": 1,
+        "user_feedback_signal": 9,
+        "core_evidence_candidate": 58,
         "supporting_evidence": 14,
+        "index_only_evidence": 1,
         "discovery_only": 11
       },
       "sourceLevels": {
-        "B": 63,
+        "B": 67,
+        "S": 8,
         "C": 3,
-        "A": 13,
-        "S": 6
+        "A": 15
       },
       "sourceTypes": {
-        "web": 46,
+        "web": 48,
         "domestic_vendor": 1,
         "research": 1,
         "builder": 4,
         "funding": 3,
+        "marketplace": 1,
+        "official": 2,
         "operators": 3,
-        "developer": 5,
-        "media": 12,
+        "media": 13,
+        "news": 2,
+        "developer": 6,
         "industry": 1,
         "newsletter": 7,
-        "product": 1,
-        "news": 1
+        "product": 1
       },
       "assetStatus": {
         "funding": {
@@ -587,51 +589,53 @@
     "date": "2026-07-13",
     "label": "2026.07.13",
     "shortLabel": "07.13",
-    "raw": 95,
-    "pool": 85,
+    "raw": 99,
+    "pool": 93,
     "assets": {
       "funding": 1,
       "product-service": 13
     },
     "cards": 14,
     "rawChannels": {
-      "aihot": 47,
-      "keyword_search": 20,
+      "aihot": 48,
+      "keyword_search": 22,
       "follow_builders": 0
     },
     "poolRoutes": {
       "user_feedback_pool": 4,
-      "watchlist": 25,
-      "core_pool": 23,
-      "emerging_pool": 14,
-      "index_only": 37
+      "watchlist": 31,
+      "core_pool": 24,
+      "emerging_pool": 18,
+      "index_only": 38
     },
     "evidenceLevels": {
-      "user_feedback_signal": 8,
-      "core_evidence_candidate": 51,
-      "index_only_evidence": 1,
+      "user_feedback_signal": 9,
+      "core_evidence_candidate": 58,
       "supporting_evidence": 14,
+      "index_only_evidence": 1,
       "discovery_only": 11
     },
     "sourceLevels": {
-      "B": 63,
+      "B": 67,
+      "S": 8,
       "C": 3,
-      "A": 13,
-      "S": 6
+      "A": 15
     },
     "sourceTypes": {
-      "web": 46,
+      "web": 48,
       "domestic_vendor": 1,
       "research": 1,
       "builder": 4,
       "funding": 3,
+      "marketplace": 1,
+      "official": 2,
       "operators": 3,
-      "developer": 5,
-      "media": 12,
+      "media": 13,
+      "news": 2,
+      "developer": 6,
       "industry": 1,
       "newsletter": 7,
-      "product": 1,
-      "news": 1
+      "product": 1
     },
     "assetStatus": {
       "funding": {
@@ -660,8 +664,8 @@
     "assetCopyGates": {}
   },
   "totals": {
-    "raw": 7753,
-    "pool": 4173,
+    "raw": 7757,
+    "pool": 4181,
     "assets": {
       "funding": 124,
       "product-service": 323,
@@ -679,7 +683,7 @@
   },
   "latestRelation": null,
   "engineQuality": {
-    "updatedAt": "2026-07-13T07:15:39.307Z",
+    "updatedAt": "2026-07-13T07:40:31.741Z",
     "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
     "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
     "rows": [
@@ -728,12 +732,12 @@
       {
         "id": "gdelt",
         "label": "GDELT",
-        "total": 733,
+        "total": 732,
         "freshKnown": 51,
         "fresh": 1,
-        "duplicates": 115,
+        "duplicates": 116,
         "official": 6,
-        "convertible": 279,
+        "convertible": 280,
         "freshnessRate": 2,
         "duplicateRate": 16,
         "officialRate": 1,
@@ -742,14 +746,14 @@
       {
         "id": "anysearch",
         "label": "AnySearch",
-        "total": 1997,
-        "freshKnown": 12,
+        "total": 2000,
+        "freshKnown": 15,
         "fresh": 0,
-        "duplicates": 189,
+        "duplicates": 190,
         "official": 367,
-        "convertible": 1036,
+        "convertible": 1041,
         "freshnessRate": 0,
-        "duplicateRate": 9,
+        "duplicateRate": 10,
         "officialRate": 18,
         "conversionRate": 52
       },
@@ -770,9 +774,9 @@
       {
         "id": "aihot",
         "label": "AI HOT",
-        "total": 4357,
-        "freshKnown": 3482,
-        "fresh": 3481,
+        "total": 4358,
+        "freshKnown": 3483,
+        "fresh": 3482,
         "duplicates": 15,
         "official": 250,
         "convertible": 1415,
