@@ -7,8 +7,18 @@ export function hasCjk(value = "") {
 
 export function sourceTitleNeedsChineseTranslation(value = "") {
   const text = String(value || "").trim();
-  if (!text || hasCjk(text)) return false;
-  return /[A-Za-z]{3}/u.test(text);
+  if (!text) return false;
+
+  // Keep this predicate identical to the Card generator. A product name or
+  // one stray CJK token does not make an otherwise English headline a usable
+  // Chinese public title. A concrete Chinese event action must also be part
+  // of a predominantly Chinese title before Raw ingestion can skip
+  // translation.
+  const hanCount = (text.match(/[\u4e00-\u9fff]/gu) || []).length;
+  const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  const hasChineseEventAction = /(?:发布|上线|推出|更新|完成|获得|宣布|融资|合作|部署|采购|采用|收购|获批)/u.test(text);
+  if (hanCount >= 6 && hasChineseEventAction) return false;
+  return text.length > 12 && latinWords.length >= 2;
 }
 
 export function titleTranslationKey(value = "") {

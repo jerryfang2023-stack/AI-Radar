@@ -109,6 +109,10 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Fail when page chrome such as `Total Shares`, a related-story excerpt, or a valuation number becomes the Card owner, news fact, source point, or value summary.
    - Pass when `usable_for: viewpoint` plus `event_evidence: false` is rejected as viewpoint context before Card spec generation, even if the item has a high importance score or broad commercial keywords.
 
+21. `mixed_title_ingestion_boundary`
+   - Fail when a short Chinese product descriptor or clause causes an otherwise English source title to bypass Raw/Card translation.
+   - Pass only when a mixed title has both a concrete Chinese event action and enough Chinese context to stand as a public-facing title without a second translation.
+
 ## Repair Loop
 
 When a check fails:

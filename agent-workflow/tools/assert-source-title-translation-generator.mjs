@@ -5,6 +5,7 @@ import {
   generateSourceTitleTranslation,
   loadSourceTitleTranslations,
   resolveSourceTitleTranslation,
+  sourceTitleNeedsChineseTranslation,
   titleTranslationKey,
 } from "./source-title-translation-generator.mjs";
 
@@ -94,6 +95,9 @@ const ok =
   alta.titleZh === "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构" &&
   githubSecretScanning.titleZh === "GitHub 使用秘密扫描，在九个月内清零安全告警积压" &&
   lyzrFundraiseProcess.titleZh === "Lyzr 的 AI 智能体参与其 1 亿美元 B 轮融资流程" &&
+  sourceTitleNeedsChineseTranslation("Taskade TSK-1 内核") &&
+  sourceTitleNeedsChineseTranslation("Tencent officially releases Hy3 并开放 API") &&
+  !sourceTitleNeedsChineseTranslation("Taskade 发布 TSK-1 系统内核") &&
   legacyMachineTranslations.size === 0;
 
 fs.rmSync(tempDir, { recursive: true, force: true });

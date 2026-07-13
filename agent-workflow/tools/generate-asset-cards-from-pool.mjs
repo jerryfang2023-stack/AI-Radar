@@ -2351,8 +2351,9 @@ function sourceTitleNeedsChineseTranslation(title = "") {
   const text = String(title || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
-  if (hanCount > 0 && /(?:发布|上线|推出|更新|完成|获得|宣布|融资|合作|部署|采用|收购|获批)/u.test(text)) return false;
-  return text.length > 12 && hanCount < 4 && latinWords.length >= 2;
+  const hasChineseEventAction = /(?:发布|上线|推出|更新|完成|获得|宣布|融资|合作|部署|采购|采用|收购|获批)/u.test(text);
+  if (hanCount >= 6 && hasChineseEventAction) return false;
+  return text.length > 12 && latinWords.length >= 2;
 }
 
 function sourceTitleDisplayTitle(title = "") {
