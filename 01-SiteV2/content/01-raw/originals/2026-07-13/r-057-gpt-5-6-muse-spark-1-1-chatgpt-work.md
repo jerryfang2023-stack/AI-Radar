@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-10T00:00:00.000Z"
-collected_at: 2026-07-13T08:51:52.949Z
+collected_at: 2026-07-13T09:31:03.663Z
 language: mixed
 full_text_hash: 890f9bf0d0b9f799
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-057-gpt-5-6-muse-spark-1-1-chatgpt-work.md"
@@ -60,7 +60,7 @@ content_hash: 890f9bf0d0b9f799
 semantic_hash: 28d7526cfbd426f2
 duplicate_of: ""
 first_seen_at: "2026-07-10T00:00:00.000Z"
-last_seen_at: 2026-07-13T08:51:52.949Z
+last_seen_at: 2026-07-13T09:31:03.663Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"6 🚀, Muse Spark 1.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"1 ✨, ChatGPT Work 💼 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-10 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"1 ✨, ChatGPT Work 💼 Claude, ChatGPT, Cursor.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"One voice layer for all of them (Sponsor) Wispr Flow lets you speak your prompts instead of typing them.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Talk through the context, the edge cases, the whole ask.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:52.949Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.663Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

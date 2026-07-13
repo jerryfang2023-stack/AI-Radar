@@ -23,7 +23,7 @@ search_path: "official_original"
 search_path_label: ""
 author: ""
 published_at: "2026-06-29T16:00:00.000Z"
-collected_at: 2026-07-13T08:51:52.662Z
+collected_at: 2026-07-13T09:31:03.375Z
 language: mixed
 full_text_hash: e2f9e8b6eec2fe21
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-014-announcing-stigg-2-0-the-usage-runtime-for-ai-products.md"
@@ -54,13 +54,13 @@ source_role: resolved_original_source
 origin_fetch_status: ""
 paywall_status: none
 block_status: none
-duplicate_status: unique
+duplicate_status: merged_provider_duplicates
 url_hash: 3ff23c32f231f47c
 content_hash: 37323b6a4d297e9f
 semantic_hash: 173e0d7ec242bcf2
-duplicate_of: ""
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-29T16:00:00.000Z"
-last_seen_at: 2026-07-13T08:51:52.662Z
+last_seen_at: 2026-07-13T09:31:03.375Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"funding","text":"Announcing Stigg 2.0 - The Usage Runtime for AI Products Blog / Stigg Announcements # Announcing Stigg 2.0 Every AI request is a spend decision. Make it in milliseconds. Written by Dor Sasson , Anton Zagrebelny Last updated June 30, 2026 read time 10 minutes ### Table of contents ENF... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original Blog / Stigg Announcements Announcing Stigg 2. 0 Every AI request is a spend decision. Blog / Stigg Announcements Announci","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Blog / Stigg Announcements Announcing Stigg 2.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"0 Every AI request is a spend decision.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Make it in milliseconds.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Written by Dor Sasson Anton Zagrebelny Last updated June 30, 2026 read time 10 minutes Table of contents ENFORCEMENT Share: Copied https://www.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"io/blog-posts/announcing-stigg-2-0-the-usage-runtime-for-ai-products https://www.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:52.662Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.375Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only

@@ -22,8 +22,8 @@ search_intent: ""
 search_path: ""
 search_path_label: ""
 author: ""
-published_at: "2026-06-16T13:29:30.000Z"
-collected_at: 2026-07-13T08:51:53.051Z
+published_at: "2026-06-16T00:00:00.000Z"
+collected_at: 2026-07-13T09:31:03.774Z
 language: mixed
 full_text_hash: 127bff1bc27699e9
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-068-frontier-post-training-recipe-review-with-finbarr-timbers.md"
@@ -59,8 +59,8 @@ url_hash: 4259f67ed51c68f9
 content_hash: a9a0eb9b18d3fd0e
 semantic_hash: beb849568d67a4c5
 duplicate_of: ""
-first_seen_at: "2026-06-16T13:29:30.000Z"
-last_seen_at: 2026-07-13T08:51:53.051Z
+first_seen_at: "2026-06-16T00:00:00.000Z"
+last_seen_at: 2026-07-13T09:31:03.774Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"quote","text":"\"Interview\" #18","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Interconnects Frontier post-training recipe review with Finbarr Timbers 39 1× 0:00 Current time: 0:00 / Total time: -56:35 -56:35 Audio playback is not supported on your browser.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"Frontier post-training recipe review with Finbarr Timbers \"Interview\" #18 Nathan Lambert Jun 16, 2026 39 Share Transcript As I’ve been recapping fundamentals of post-training to wrap up my RLHF / Post-training book I knew I needed to get Finbarr Timbers back on the podcast to talk about the state of play.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Over the last few months we’ve had many discussions on what we’d need to do to take an Olmo-style recipe to the frontier, supported by Finbarr’s extensive reading of recent model technical reports.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"To prepare for this, I put together a summary slide deck on the key post-training recipes historically — the path from InstructGPT to today — and today — the key open frontier models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"This deck is summarized below as the technical summary, but we do spend 20-35 minutes on it in the podcast, so watching on YouTube is likely the best experience for this one.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:53.051Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.774Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

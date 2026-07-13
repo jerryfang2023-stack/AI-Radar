@@ -1,0 +1,314 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-064
+title: "How GitHub gave every repository a durable owner"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/"
+canonical_url: "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner"
+source_name: "GitHub Blog AI"
+source_type: developer
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-09T00:00:00.000Z"
+collected_at: 2026-07-13T09:31:03.730Z
+language: mixed
+full_text_hash: b83cac99b1de7b61
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-064-how-github-gave-every-repository-a-durable-owner.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-064-how-github-gave-every-repository-a-durable-owner.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":11748,"paragraph_count":50,"sentence_count":92,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 11748
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b83cac99b1de7b61","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e332350c7a691c20
+content_hash: b83cac99b1de7b61
+semantic_hash: 005232fc873e06c7
+duplicate_of: ""
+first_seen_at: "2026-07-09T00:00:00.000Z"
+last_seen_at: 2026-07-13T09:31:03.730Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"supporting commercial context only","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":4}
+business_elements: {"companies":["GitHub Blog AI","GitHub"],"products":[],"people":[],"industries":["企业服务"],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["14","000","45","9","2026","9 m","2025","11"],"quotes":[]}
+evidence_seed: {"company_actions":["GitHub had over 14,000 repositories. Fewer than half had clear ownership. Here's how we gave every active repository a validated owner in under 45 days, archived the rest, and made ownership the foundation for everything that followed. The post How GitHub gave every repository a durable owner appeared first on The GitHub Blog. ]]>","Michael Recachinas · @mrecachinas July 9, 2026 9 minutes Share: GitHub has over 14,000 repositories across our primary internal GitHub organization.","As of early 2025, there were over 11,000 non-archived repositories, the vast majority of which with no clear owner."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["That gap became a recurring problem during our secret scanning remediation effort : while we could technically rotate a secret, doing so without knowing the repository owner was risky and often disruptive, and we had no clear way to route remediation work."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"GitHub had over 14,000 repositories. Fewer than half had clear ownership. Here's how we gave every active repository a validated owner in under 45 days, archived the rest, and made ownership the foundation for everything that followed. The post How GitHub gave every repository a durable owner appeared first on The GitHub Blog. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Michael Recachinas · @mrecachinas July 9, 2026 9 minutes Share: GitHub has over 14,000 repositories across our primary internal GitHub organization.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"As of early 2025, there were over 11,000 non-archived repositories, the vast majority of which with no clear owner.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"For repositories attached to production services, we have historically had robust durable ownership, but for repositories with no associated service, there was no reliable way to tell who the owner is.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"That gap became a recurring problem during our secret scanning remediation effort : while we could technically rotate a secret, doing so without knowing the repository owner was risky and often disruptive, and we had no clear way to route remediation work.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Over the course of a month and a half, we validated ownership for every active repository, archived about 8,000 repositories that were no longer in use, and changed repository creation so that ownership was required from the start.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-13T09:31:03.730Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# How GitHub gave every repository a durable owner
+
+## clean_text
+
+Michael Recachinas · @mrecachinas
+July 9, 2026
+9 minutes
+Share:
+GitHub has over 14,000 repositories across our primary internal GitHub organization. As of early 2025, there were over 11,000 non-archived repositories, the vast majority of which with no clear owner. For repositories attached to production services, we have historically had robust durable ownership, but for repositories with no associated service, there was no reliable way to tell who the owner is.
+That gap became a recurring problem during our secret scanning remediation effort : while we could technically rotate a secret, doing so without knowing the repository owner was risky and often disruptive, and we had no clear way to route remediation work. Over the course of a month and a half, we validated ownership for every active repository, archived about 8,000 repositories that were no longer in use, and changed repository creation so that ownership was required from the start.
+Our original ownership model
+For years, GitHub has been tracking ownership for deployed services through our internal Service Catalog. Each service entry recorded metadata like which repository it lived in, which gave us a mapping from service to repository; the owning team; executive sponsor; and support information.
+Here&rsquo;s an example of the Repo Ownership app&rsquo;s service ownership entry:
+- team: github/repo-ownership-dev
+repo: https://github.com/github/repo-ownership
+name: repo-ownership
+kind: moda
+long_name: Repo Ownership
+description: Service enforcing repo ownership across the org
+maintainer: mrecachinas
+exec_sponsor: stephanmiehe
+...
+Having this rich metadata enables service-centric workflows, such as incident response, on-call routing, vulnerability management, and compliance scoping.
+Unfortunately, that relationship was many-to-one (i.e., a service could only be attached to a single repository, but a single repository could have multiple services). That meant if you started from a service, you could find the repository and its owners. But if you started from a repository and needed to find an owner, you had to reverse the lookup, and that only worked for repositories that mapped to a service in the first place.
+That left a significant ownership gap that included team repositories, documentation repositories, internal tools, one-off project repositories, personal experiment repositories, and anything else that didn&rsquo;t back a deployed service. Every time we needed to contact the owner of one of these &ldquo;unowned&rdquo; repositories, it required manual work: check the commit history, read the README, ask around in Slack, or make a guess based on the repository name.
+For a one-off effort, that kind of ambiguity is annoying but manageable. For recurring security workflows that fan out across the entire organization, it presents a real risk. During our secret scanning cleanup, we spent too much time trying to find the right owners before we could make informed decisions about alerts.
+Designing the new ownership model
+Fundamentally, we needed repository ownership to be a first-class property. We considered storing ownership in a dedicated file within each repository or maintaining it in a centralized repository, but ultimately chose GitHub custom properties. This approach provided a native, structured, and organization-wide queryable way to manage ownership. It also enabled us to enforce enterprise and organization policies and rulesets selectively according to ownership type.
+We created two custom properties: ownership-type and ownership-name .
+ownership-type accepted three values: &ldquo;Service Catalog,&rdquo; &ldquo;Hubber Handle&rdquo; (a &ldquo;Hubber&rdquo; is what we call a GitHub employee), and &ldquo;Team.&rdquo; These covered the realistic range of repository ownership at GitHub. A repository either belongs to a service (with an on-call team and a defined lifecycle), a team (like a shared documentation repository or internal tool), or an individual (like a personal project or experiment).
+ownership-name was a text field with light validation. Our GitHub App validated every value: Hubber handles were checked against actual membership in our GitHub organization, teams were verified to exist in the organization and have at least two members, and Service Catalog entries were confirmed against our Service Catalog itself. We were intentionally permissive on formatting. If someone typed @my-team instead of my-team , we accepted it. We wanted to make it frictionless to add ownership and lean on robust validation to catch invalid entries like nonexistent teams, former employees, and services that had been decommissioned.
+Day-one coverage
+Before we asked anyone to do anything, we built a periodic sync from Service Catalog to repository custom properties. Every repository that backed a known service had its ownership-type set to &ldquo;Service Catalog&rdquo; and its ownership-name populated automatically. That took care of about 1,500 service-backed repositories, leaving team repos, docs repos, one-off projects, and personal repos remaining.
+The rollout
+To roll this out, we built a GitHub App backed by a Kubernetes CronJob. The enforcement logic needed access to Service Catalog, the GitHub API, and a few internal systems, so a simple GitHub Actions workflow wasn&rsquo;t sufficient.
+The diagram below shows the repository ownership enforcement flow, from initial ownership scan through warning issue creation, automatic closure, or archival after 30 days.
+We scheduled the first run of the CronJob for a Saturday morning thinking nobody would be paying attention&hellip; Big mistake! Issues started appearing in repositories across the organization, and people began jumping on Slack, asking about this new issue in their repository saying it would be archived. At a globally distributed company, someone is always online.
+After the 30-day grace period, we archived any repository that still didn&rsquo;t have ownership set. We chose archiving because it&rsquo;s reversible and non-destructive: the repository becomes read-only and GitHub Actions stops running, but nothing is deleted. If someone needs it again, we provided an easy way for them to unarchive it, set ownership, and continue. That enabled us to safely apply archival broadly instead of debating every edge case.
+Once the initial grace period passed and the bulk of archiving was done, we tightened the enforcement loop from 30 days to one hour. A new repository that somehow bypassed the creation-time ownership requirement would get flagged almost immediately.
+The sharp edges
+This mostly rolled out seamlessly, with two minor internal incidents exposing some interesting edge cases.
+The first incident was caused by archiving a repository where ownership had not been applied. Datadog had been configured to open issues in that repository as part of a monitoring workflow. When the repository was archived and Datadog couldn&rsquo;t create the issue, our internal monitoring service noticed and automatically paged the owning team, and they escalated to us.
+That incident exposed a gap in how we notified. The ownership issues were landing in repositories, but nobody was getting notified directly. We fixed this by @-mentioning repository administrators and assigning all users with write access as a fallback on ownership issues. That way the issues couldn&rsquo;t be buried or overlooked, and the people who could actually set ownership saw them immediately.
+The second incident was a data reliability problem. While we were robust against a Service Catalog outage, we didn&rsquo;t consider that it might return stale data or corrupted data. If bad data caused the app to think a batch of repositories had lost their Service Catalog entries when they hadn&rsquo;t, we&rsquo;d be mass-archiving repositories with perfectly valid owners.
+To mitigate the risk of archiving legitimate repositories, we added a low water mark. During each run, prior to performing any actions, the app would tally how many archives it was about to perform and issues it was about to open. If the number exceeded a conservative threshold, it would bail out entirely and trigger a Datadog monitor rather than risk a bad run. If Service Catalog was unreachable, the job would skip Service Catalog validation and only check what it could verify independently.
+Results, by the numbers
+We finished with approximately 3,000 active repositories and 11,000 archived (up from about 3,000 archived at the start). The entire effort took under 45 days from the first (Saturday morning) run to steady state. Every active repository now has a validated owner, or it gets archived.
+Many of those newly archived repositories hadn&rsquo;t seen a commit in years: abandoned experiments, completed hackathon projects, and even one-person prototypes from 2008! Archiving them ultimately reduced our surface area and made the active repository inventory reflect reality.
+Making ownership stick
+Getting to 100% coverage is only useful if it stays at 100%, so we enforced ownership properties across every repository creation workflow, including the repository creation page (shown below), internal tooling and automation, making them mandatory for all new repositories.
+We also tightened the enforcement loop: repositories that lose their ownership are now flagged within one hour rather than the original 30-day grace period.
+Each ownership type has its own durability characteristics, and we designed around them. Service Catalog entries follow service lifecycle: when a service is deprecated, its repositories typically get archived too, and that&rsquo;s the intended behavior. Teams are validated for having at least two members, and team existence and membership tend to be reasonably stable. Individual Hubber handles only become invalid when someone leaves the company, which usually means their personal repositories should be archived regardless. For any repository critical enough to outlast a single person, ownership should be a team or a service, not an individual.
+What this means for you
+You can implement a similar ownership model today using GitHub custom properties. Here&rsquo;s the approach we&rsquo;d recommend:
+Define your ownership taxonomy. Decide which types of owners make sense for your organization. Services, teams, and individuals worked for us, but your categories might look different.
+Create custom properties at the organization level. Set up an ownership-type property as a single-select with your allowed values, and an ownership-name property as text. Custom properties are queryable through the API and visible across the organization.
+If you have a service catalog or asset inventory, sync it. Populating ownership for repositories you already track is the fastest way to get meaningful coverage before you start asking people to fill in gaps.
+Enforce ownership at repository creation time . Make the properties required so the inventory stays clean going forward.
+Build a grace-period workflow for existing repositories. Open issues with a reasonable deadline (we used 30 days), then archive repositories that go unclaimed. Because archiving is reversible and non-destructive, it&rsquo;s a safe default.
+Don&rsquo;t run your first enforcement pass on a Saturday!
+Build guardrails before you trust automation at scale . The low water mark and the @-mention fallbacks weren&rsquo;t in the original design. They came from real incidents. If you&rsquo;re building a system that archives repositories or opens issues at scale, assume your data sources will occasionally be wrong, and your notifications will sometimes get lost. Design for that from the start.
+For more on custom properties, see the custom properties documentation .
+
+## full_text
+
+Michael Recachinas · @mrecachinas
+July 9, 2026
+9 minutes
+Share:
+GitHub has over 14,000 repositories across our primary internal GitHub organization. As of early 2025, there were over 11,000 non-archived repositories, the vast majority of which with no clear owner. For repositories attached to production services, we have historically had robust durable ownership, but for repositories with no associated service, there was no reliable way to tell who the owner is.
+That gap became a recurring problem during our secret scanning remediation effort : while we could technically rotate a secret, doing so without knowing the repository owner was risky and often disruptive, and we had no clear way to route remediation work. Over the course of a month and a half, we validated ownership for every active repository, archived about 8,000 repositories that were no longer in use, and changed repository creation so that ownership was required from the start.
+Our original ownership model
+For years, GitHub has been tracking ownership for deployed services through our internal Service Catalog. Each service entry recorded metadata like which repository it lived in, which gave us a mapping from service to repository; the owning team; executive sponsor; and support information.
+Here&rsquo;s an example of the Repo Ownership app&rsquo;s service ownership entry:
+- team: github/repo-ownership-dev
+repo: https://github.com/github/repo-ownership
+name: repo-ownership
+kind: moda
+long_name: Repo Ownership
+description: Service enforcing repo ownership across the org
+maintainer: mrecachinas
+exec_sponsor: stephanmiehe
+...
+Having this rich metadata enables service-centric workflows, such as incident response, on-call routing, vulnerability management, and compliance scoping.
+Unfortunately, that relationship was many-to-one (i.e., a service could only be attached to a single repository, but a single repository could have multiple services). That meant if you started from a service, you could find the repository and its owners. But if you started from a repository and needed to find an owner, you had to reverse the lookup, and that only worked for repositories that mapped to a service in the first place.
+That left a significant ownership gap that included team repositories, documentation repositories, internal tools, one-off project repositories, personal experiment repositories, and anything else that didn&rsquo;t back a deployed service. Every time we needed to contact the owner of one of these &ldquo;unowned&rdquo; repositories, it required manual work: check the commit history, read the README, ask around in Slack, or make a guess based on the repository name.
+For a one-off effort, that kind of ambiguity is annoying but manageable. For recurring security workflows that fan out across the entire organization, it presents a real risk. During our secret scanning cleanup, we spent too much time trying to find the right owners before we could make informed decisions about alerts.
+Designing the new ownership model
+Fundamentally, we needed repository ownership to be a first-class property. We considered storing ownership in a dedicated file within each repository or maintaining it in a centralized repository, but ultimately chose GitHub custom properties. This approach provided a native, structured, and organization-wide queryable way to manage ownership. It also enabled us to enforce enterprise and organization policies and rulesets selectively according to ownership type.
+We created two custom properties: ownership-type and ownership-name .
+ownership-type accepted three values: &ldquo;Service Catalog,&rdquo; &ldquo;Hubber Handle&rdquo; (a &ldquo;Hubber&rdquo; is what we call a GitHub employee), and &ldquo;Team.&rdquo; These covered the realistic range of repository ownership at GitHub. A repository either belongs to a service (with an on-call team and a defined lifecycle), a team (like a shared documentation repository or internal tool), or an individual (like a personal project or experiment).
+ownership-name was a text field with light validation. Our GitHub App validated every value: Hubber handles were checked against actual membership in our GitHub organization, teams were verified to exist in the organization and have at least two members, and Service Catalog entries were confirmed against our Service Catalog itself. We were intentionally permissive on formatting. If someone typed @my-team instead of my-team , we accepted it. We wanted to make it frictionless to add ownership and lean on robust validation to catch invalid entries like nonexistent teams, former employees, and services that had been decommissioned.
+Day-one coverage
+Before we asked anyone to do anything, we built a periodic sync from Service Catalog to repository custom properties. Every repository that backed a known service had its ownership-type set to &ldquo;Service Catalog&rdquo; and its ownership-name populated automatically. That took care of about 1,500 service-backed repositories, leaving team repos, docs repos, one-off projects, and personal repos remaining.
+The rollout
+To roll this out, we built a GitHub App backed by a Kubernetes CronJob. The enforcement logic needed access to Service Catalog, the GitHub API, and a few internal systems, so a simple GitHub Actions workflow wasn&rsquo;t sufficient.
+The diagram below shows the repository ownership enforcement flow, from initial ownership scan through warning issue creation, automatic closure, or archival after 30 days.
+We scheduled the first run of the CronJob for a Saturday morning thinking nobody would be paying attention&hellip; Big mistake! Issues started appearing in repositories across the organization, and people began jumping on Slack, asking about this new issue in their repository saying it would be archived. At a globally distributed company, someone is always online.
+After the 30-day grace period, we archived any repository that still didn&rsquo;t have ownership set. We chose archiving because it&rsquo;s reversible and non-destructive: the repository becomes read-only and GitHub Actions stops running, but nothing is deleted. If someone needs it again, we provided an easy way for them to unarchive it, set ownership, and continue. That enabled us to safely apply archival broadly instead of debating every edge case.
+Once the initial grace period passed and the bulk of archiving was done, we tightened the enforcement loop from 30 days to one hour. A new repository that somehow bypassed the creation-time ownership requirement would get flagged almost immediately.
+The sharp edges
+This mostly rolled out seamlessly, with two minor internal incidents exposing some interesting edge cases.
+The first incident was caused by archiving a repository where ownership had not been applied. Datadog had been configured to open issues in that repository as part of a monitoring workflow. When the repository was archived and Datadog couldn&rsquo;t create the issue, our internal monitoring service noticed and automatically paged the owning team, and they escalated to us.
+That incident exposed a gap in how we notified. The ownership issues were landing in repositories, but nobody was getting notified directly. We fixed this by @-mentioning repository administrators and assigning all users with write access as a fallback on ownership issues. That way the issues couldn&rsquo;t be buried or overlooked, and the people who could actually set ownership saw them immediately.
+The second incident was a data reliability problem. While we were robust against a Service Catalog outage, we didn&rsquo;t consider that it might return stale data or corrupted data. If bad data caused the app to think a batch of repositories had lost their Service Catalog entries when they hadn&rsquo;t, we&rsquo;d be mass-archiving repositories with perfectly valid owners.
+To mitigate the risk of archiving legitimate repositories, we added a low water mark. During each run, prior to performing any actions, the app would tally how many archives it was about to perform and issues it was about to open. If the number exceeded a conservative threshold, it would bail out entirely and trigger a Datadog monitor rather than risk a bad run. If Service Catalog was unreachable, the job would skip Service Catalog validation and only check what it could verify independently.
+Results, by the numbers
+We finished with approximately 3,000 active repositories and 11,000 archived (up from about 3,000 archived at the start). The entire effort took under 45 days from the first (Saturday morning) run to steady state. Every active repository now has a validated owner, or it gets archived.
+Many of those newly archived repositories hadn&rsquo;t seen a commit in years: abandoned experiments, completed hackathon projects, and even one-person prototypes from 2008! Archiving them ultimately reduced our surface area and made the active repository inventory reflect reality.
+Making ownership stick
+Getting to 100% coverage is only useful if it stays at 100%, so we enforced ownership properties across every repository creation workflow, including the repository creation page (shown below), internal tooling and automation, making them mandatory for all new repositories.
+We also tightened the enforcement loop: repositories that lose their ownership are now flagged within one hour rather than the original 30-day grace period.
+Each ownership type has its own durability characteristics, and we designed around them. Service Catalog entries follow service lifecycle: when a service is deprecated, its repositories typically get archived too, and that&rsquo;s the intended behavior. Teams are validated for having at least two members, and team existence and membership tend to be reasonably stable. Individual Hubber handles only become invalid when someone leaves the company, which usually means their personal repositories should be archived regardless. For any repository critical enough to outlast a single person, ownership should be a team or a service, not an individual.
+What this means for you
+You can implement a similar ownership model today using GitHub custom properties. Here&rsquo;s the approach we&rsquo;d recommend:
+Define your ownership taxonomy. Decide which types of owners make sense for your organization. Services, teams, and individuals worked for us, but your categories might look different.
+Create custom properties at the organization level. Set up an ownership-type property as a single-select with your allowed values, and an ownership-name property as text. Custom properties are queryable through the API and visible across the organization.
+If you have a service catalog or asset inventory, sync it. Populating ownership for repositories you already track is the fastest way to get meaningful coverage before you start asking people to fill in gaps.
+Enforce ownership at repository creation time . Make the properties required so the inventory stays clean going forward.
+Build a grace-period workflow for existing repositories. Open issues with a reasonable deadline (we used 30 days), then archive repositories that go unclaimed. Because archiving is reversible and non-destructive, it&rsquo;s a safe default.
+Don&rsquo;t run your first enforcement pass on a Saturday!
+Build guardrails before you trust automation at scale . The low water mark and the @-mention fallbacks weren&rsquo;t in the original design. They came from real incidents. If you&rsquo;re building a system that archives repositories or opens issues at scale, assume your data sources will occasionally be wrong, and your notifications will sometimes get lost. Design for that from the start.
+For more on custom properties, see the custom properties documentation .
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":11748,"paragraph_count":50,"sentence_count":92,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   GitHub had over 14,000 repositories. Fewer than half had clear ownership. Here's how we gave every active repository a validated owner in under 45 days, archived the rest, and made ownership the foundation for everything that followed. The post How GitHub gave every repository a durable owner appeared first on The GitHub Blog. ]]>
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Michael Recachinas · @mrecachinas July 9, 2026 9 minutes Share: GitHub has over 14,000 repositories across our primary internal GitHub organization.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   As of early 2025, there were over 11,000 non-archived repositories, the vast majority of which with no clear owner.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   For repositories attached to production services, we have historically had robust durable ownership, but for repositories with no associated service, there was no reliable way to tell who the owner is.
+
+5. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   That gap became a recurring problem during our secret scanning remediation effort : while we could technically rotate a secret, doing so without knowing the repository owner was risky and often disruptive, and we had no clear way to route remediation work.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Over the course of a month and a half, we validated ownership for every active repository, archived about 8,000 repositories that were no longer in use, and changed repository creation so that ownership was required from the start.
+
+## business_elements
+
+- companies: GitHub Blog AI, GitHub
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 部署 / 上线
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 14, 000, 45, 9, 2026, 9 m, 2025, 11
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: GitHub had over 14,000 repositories. Fewer than half had clear ownership. Here's how we gave every active repository a validated owner in under 45 days, archived the rest, and made ownership the foundation for everything that followed. The post How GitHub gave every repository a durable owner appeared first on The GitHub Blog. ]]> / Michael Recachinas · @mrecachinas July 9, 2026 9 minutes Share: GitHub has over 14,000 repositories across our primary internal GitHub organization. / As of early 2025, there were over 11,000 non-archived repositories, the vast majority of which with no clear owner.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: That gap became a recurring problem during our secret scanning remediation effort : while we could technically rotate a secret, doing so without knowing the repository owner was risky and often disruptive, and we had no clear way to route remediation work.
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: supporting commercial context only
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+GitHub had over 14,000 repositories. Fewer than half had clear ownership. Here's how we gave every active repository a validated owner in under 45 days, archived the rest, and made ownership the foundation for everything that followed. The post How GitHub gave every repository a durable owner appeared first on The GitHub Blog. ]]>
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

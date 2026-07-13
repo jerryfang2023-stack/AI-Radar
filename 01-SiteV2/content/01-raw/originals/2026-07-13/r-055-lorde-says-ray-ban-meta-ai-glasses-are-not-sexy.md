@@ -22,10 +22,10 @@ search_intent: ""
 search_path: ""
 search_path_label: ""
 author: ""
-published_at: "2026-07-12T20:10:19.000Z"
-collected_at: 2026-07-13T08:51:52.934Z
+published_at: "2026-07-12T00:00:00.000Z"
+collected_at: 2026-07-13T09:31:03.648Z
 language: mixed
-full_text_hash: 9839aaca3e34550b
+full_text_hash: c9f8911f9651067e
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-055-lorde-says-ray-ban-meta-ai-glasses-are-not-sexy.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-055-lorde-says-ray-ban-meta-ai-glasses-are-not-sexy.json"
 html_snapshot_path: ""
@@ -34,15 +34,15 @@ fetch_status: fetched-readable-text-main
 extraction_quality: high
 extraction_method: "main"
 readability_score: 90
-extractor_diagnostics: {"readability_score":90,"text_length":3478,"paragraph_count":37,"sentence_count":17,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+extractor_diagnostics: {"readability_score":90,"text_length":3483,"paragraph_count":37,"sentence_count":17,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
 has_full_text: true
-content_length: 3478
+content_length: 3483
 fetch_error: ""
 evidence_strength: rich_evidence
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9839aaca3e34550b","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c9f8911f9651067e","missing":[]}
 source_volatility: low
 community_name: ""
 capture_scope: article_text
@@ -56,11 +56,11 @@ paywall_status: none
 block_status: none
 duplicate_status: merged_provider_duplicates
 url_hash: 4922dcd04a8b45c0
-content_hash: 9839aaca3e34550b
+content_hash: c9f8911f9651067e
 semantic_hash: bac8e24a1269b0d0
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
-first_seen_at: "2026-07-12T20:10:19.000Z"
-last_seen_at: 2026-07-13T08:51:52.934Z
+first_seen_at: "2026-07-12T00:00:00.000Z"
+last_seen_at: 2026-07-13T09:31:03.648Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例","没有变化前
 key_excerpts: [{"type":"company_action","text":"Lorde was performing at the Real Cool Festival in Madrid on Thursday and took some time during her set to speak out against AI glasses. While she didn't specify any brands in particular, it's likely she was taking a shot at festival sponsor Ray-Ban, which has collaborated with Meta on a pair of AI smartglasses. [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"opinion","text":"AI Entertainment Gadgets Lorde says Ray-Ban Meta AI glasses are ‘not sexy’ ‘Fuck the glasses.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"’ ‘Fuck the glasses.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"’ by Terrence O'Brien Jul 12, 2026, 8:10 PM UTC Lorde performing at the 2026 Governors Ball.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Photo: Siegfried Anthony/Billboard via Getty Images Terrence O'Brien is the Verge’s weekend editor.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"He’s covered the tech industry for over 18 years and knows a thing or two about synths.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:52.934Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.648Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
@@ -96,7 +96,7 @@ Jul 12, 2026, 8:10 PM UTC
 Lorde performing at the 2026 Governors Ball. Photo: Siegfried Anthony/Billboard via Getty Images
 Terrence O'Brien is the Verge’s weekend editor. He’s covered the tech industry for over 18 years and knows a thing or two about synths.
 Lorde was performing at the Real Cool Festival in Madrid on Thursday and took some time during her set to speak out against AI glasses . While she didn’t specify any brands in particular, it’s likely she was taking a shot at festival sponsor Ray-Ban, which has collaborated with Meta on a pair of AI smartglasses.
-The comments were captured in videos shared to social media. After thanking the crowd for being there and taking part in “something real,” she said that it was increasingly hard to know is and isn’t real, before saying “You don’t know if someone is wearing sunglasses or if they’re wearing those fucked up fucking… Can I just say, for the record, fuck the glasses. Don’t get the glasses. Not sexy.”
+The comments were captured in videos shared to social media. After thanking the crowd for being there and taking part in “something real,” she said that it was increasingly hard to know what is and isn’t real, before saying “You don’t know if someone is wearing sunglasses or if they’re wearing those fucked up fucking… Can I just say, for the record, fuck the glasses. Don’t get the glasses. Not sexy.”
 The comments come as Meta faces renewed scrutiny over its smart glasses. And, even in the face of that backlash , it is still reportedly planning to launch a pair of “ super sensing ” glasses that are continuously recording.
 According to Stereogum , Lorde was followed on stage by Blackpink’s Jennie, who is a Ray-Ban Meta AI ambassador and has been featured in advertising campaigns on Instagram and in a video screened between sets at Real Cool.
 Follow topics and authors from this story to see more like this in your personalized homepage feed and to receive email updates. Terrence O'Brien
@@ -163,7 +163,7 @@ Jul 12, 2026, 8:10 PM UTC
 Lorde performing at the 2026 Governors Ball. Photo: Siegfried Anthony/Billboard via Getty Images
 Terrence O'Brien is the Verge’s weekend editor. He’s covered the tech industry for over 18 years and knows a thing or two about synths.
 Lorde was performing at the Real Cool Festival in Madrid on Thursday and took some time during her set to speak out against AI glasses . While she didn’t specify any brands in particular, it’s likely she was taking a shot at festival sponsor Ray-Ban, which has collaborated with Meta on a pair of AI smartglasses.
-The comments were captured in videos shared to social media. After thanking the crowd for being there and taking part in “something real,” she said that it was increasingly hard to know is and isn’t real, before saying “You don’t know if someone is wearing sunglasses or if they’re wearing those fucked up fucking… Can I just say, for the record, fuck the glasses. Don’t get the glasses. Not sexy.”
+The comments were captured in videos shared to social media. After thanking the crowd for being there and taking part in “something real,” she said that it was increasingly hard to know what is and isn’t real, before saying “You don’t know if someone is wearing sunglasses or if they’re wearing those fucked up fucking… Can I just say, for the record, fuck the glasses. Don’t get the glasses. Not sexy.”
 The comments come as Meta faces renewed scrutiny over its smart glasses. And, even in the face of that backlash , it is still reportedly planning to launch a pair of “ super sensing ” glasses that are continuously recording.
 According to Stereogum , Lorde was followed on stage by Blackpink’s Jennie, who is a Ray-Ban Meta AI ambassador and has been featured in advertising campaigns on Instagram and in a video screened between sets at Real Cool.
 Follow topics and authors from this story to see more like this in your personalized homepage feed and to receive email updates. Terrence O'Brien
@@ -223,7 +223,7 @@ FL Studio head Constantin Koehncke turns to Reddit for feedback and fun
 - readability_score: 90
 - fetch_status: fetched-readable-text-main
 - extraction_quality: high
-- diagnostics: {"readability_score":90,"text_length":3478,"paragraph_count":37,"sentence_count":17,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+- diagnostics: {"readability_score":90,"text_length":3483,"paragraph_count":37,"sentence_count":17,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
 
 ## markdown_snapshot
 

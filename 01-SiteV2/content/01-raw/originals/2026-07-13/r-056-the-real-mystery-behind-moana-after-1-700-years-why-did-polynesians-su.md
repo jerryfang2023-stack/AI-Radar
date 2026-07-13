@@ -23,9 +23,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T11:12:19.000Z"
-collected_at: 2026-07-13T08:51:52.941Z
+collected_at: 2026-07-13T09:31:03.655Z
 language: mixed
-full_text_hash: f92ca50b04ef7ba0
+full_text_hash: 7779942408cd6bed
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-056-the-real-mystery-behind-moana-after-1-700-years-why-did-polynesians-su.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-056-the-real-mystery-behind-moana-after-1-700-years-why-did-polynesians-su.json"
 html_snapshot_path: ""
@@ -42,7 +42,7 @@ evidence_strength: source_backed_event
 raw_qc_decision: allow_with_degradation
 raw_qc_downstream_use: index_watchlist_or_feedback_only
 degradation_reasons: ["insufficient_usable_evidence_object"]
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f92ca50b04ef7ba0","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7779942408cd6bed","missing":[]}
 source_volatility: low
 community_name: ""
 capture_scope: article_text
@@ -56,11 +56,11 @@ paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 27b4cc02ecca8d19
-content_hash: f92ca50b04ef7ba0
+content_hash: 7779942408cd6bed
 semantic_hash: 503782e3a6366e53
 duplicate_of: ""
 first_seen_at: "2026-07-12T11:12:19.000Z"
-last_seen_at: 2026-07-13T08:51:52.941Z
+last_seen_at: 2026-07-13T09:31:03.655Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":true,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["证据对象不可用：疑似索引页、目录页、薄
 key_excerpts: [{"type":"company_action","text":"New climate evidence adds context to these long voyages.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The same question drives both the plot of Moana and decades of archaeological research: Why, after centuries of relative stability, did Polynesian voyagers suddenly begin settling islands thousands of kilometers away across the Pacific?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The latest Moana movie is a live-action adaptation of a Disney animated movie of the same name.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"While the films are fictional, they draw inspiration from the rich seafaring heritage of Polynesian peoples, whose ancestors undertook one of the greatest episodes of maritime exploration in human history.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"New climate evidence may help us understand why they embarked on these voyages.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"The backdrop to Moana is the mystery of the “long pause”.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:52.941Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.655Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
@@ -138,7 +138,7 @@ David Sear , Professor in Physical Geography, University of Southampton ; Manoj 
 The Conversation
 The Conversation
 The Conversation is an independent source of news and views, sourced from the academic and research community. Our team of editors work with these experts to share their knowledge with the wider public. Our aim is to allow for better understanding of current affairs and complex issues, and hopefully improve the quality of public discourse on them.
-87 Comments
+88 Comments
 Comments
 Forum view
 Loading comments...
@@ -210,7 +210,7 @@ David Sear , Professor in Physical Geography, University of Southampton ; Manoj 
 The Conversation
 The Conversation
 The Conversation is an independent source of news and views, sourced from the academic and research community. Our team of editors work with these experts to share their knowledge with the wider public. Our aim is to allow for better understanding of current affairs and complex issues, and hopefully improve the quality of public discourse on them.
-87 Comments
+88 Comments
 Comments
 Forum view
 Loading comments...

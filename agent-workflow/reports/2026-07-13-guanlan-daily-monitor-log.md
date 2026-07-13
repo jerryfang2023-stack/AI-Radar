@@ -1,7 +1,7 @@
 # 2026-07-13 Guanlan Daily Monitor Log
 
-- generated_at: 2026-07-13T08:51:53.196Z
-- raw_count: 105
+- generated_at: 2026-07-13T09:31:03.918Z
+- raw_count: 107
 - aihot_mode: source-artifacts
 - aihot_since: 
 - aihot_discovered_count: 0
@@ -14,7 +14,7 @@
 - external_search_activated: false
 - anysearch_configured: true
 - anysearch_disabled_for_run: false
-- provider_fallback_notes: Same-date rerun carried forward 16 already published formal Card source snapshot(s).; Historical Raw dedupe removed 248 URL duplicate candidate(s) before Raw selection.; Search cross-entry dedupe removed 23 duplicate provider hits before Raw selection.; Historical Raw dedupe removed 105 fetched hash duplicate candidate(s) before Raw writing.; Adaptive Raw fetch stopped with 104/150 active candidate(s): candidate pool exhausted.; Historical Raw dedupe removed 19 URL duplicate candidate(s) before Raw selection.
+- provider_fallback_notes: Same-date rerun carried forward 18 already published formal Card source snapshot(s).; Historical Raw dedupe removed 245 URL duplicate candidate(s) before Raw selection.; Search cross-entry dedupe removed 23 duplicate provider hits before Raw selection.; Historical Raw dedupe removed 109 fetched hash duplicate candidate(s) before Raw writing.; Adaptive Raw fetch stopped with 105/150 active candidate(s): candidate pool exhausted.; Historical Raw dedupe removed 21 URL duplicate candidate(s) before Raw selection.; Historical Raw dedupe removed 1 fetched hash duplicate candidate(s) before Raw writing.
 - source_provider_recovery_status: unrecovered
 - source_provider_failure_count: 13
 - recovered_failed_sources_count: 11
@@ -23,81 +23,81 @@
 - source_artifact_files: agent-workflow/reports/source-runs/2026-07-13/aihot-raw-source-candidates.json, agent-workflow/reports/source-runs/2026-07-13/gdelt-raw-source-candidates.json, agent-workflow/reports/source-runs/2026-07-13/keyword-raw-source-candidates.json, agent-workflow/reports/source-runs/2026-07-13/rss-raw-source-candidates.json
 - historical_dedupe_enabled: true
 - historical_raw_records_checked: 8078
-- historical_duplicates_removed_before_fetch: 248
-- historical_duplicates_removed_after_fetch: 105
+- historical_duplicates_removed_before_fetch: 245
+- historical_duplicates_removed_after_fetch: 109
 - same_run_duplicates_removed_after_fetch: 0
 - raw_dedupe_buffer: 140
-- adaptive_raw_candidate_pool_count: 209
+- adaptive_raw_candidate_pool_count: 214
 - adaptive_raw_fetch_limit: 720
 - adaptive_raw_fetch_batches: 1
-- adaptive_raw_fetched_candidates: 209
+- adaptive_raw_fetched_candidates: 214
 - adaptive_raw_expansion_candidates: 0
 - aihot_count: 54
-- keyword_search_count: 22
-- keyword_search_non_community_count: 22
-- keyword_search_path_distribution: capital_startup=12; official_original=5; fde_implementation=2; a_media_gdelt=1; developer_ecosystem=1; industry_landing=1
-- keyword_search_intent_distribution: find_startups=17; find_customer_case=3; find_market_trend=1; find_original_source=1
-- source_distribution: aihot=54; rss-feed=28; keyword-search=22; gdelt=1
+- keyword_search_count: 24
+- keyword_search_non_community_count: 24
+- keyword_search_path_distribution: capital_startup=10; ai_hardware_original=6; official_original=5; fde_implementation=2; a_media_gdelt=1
+- keyword_search_intent_distribution: find_startups=12; find_customer_case=6; find_original_source=5; find_market_trend=1
+- source_distribution: aihot=54; rss-feed=28; keyword-search=24; gdelt=1
 - enterprise_ai_transformation_column: 企业AI化
-- enterprise_ai_transformation_candidate_count: 31
-- enterprise_ai_transformation_stage_distribution: platform_enablement=19; pilot=5; ai_transformation=4; org_build=3
+- enterprise_ai_transformation_candidate_count: 28
+- enterprise_ai_transformation_stage_distribution: platform_enablement=12; pilot=5; production_rollout=5; ai_transformation=3; org_build=3
 - enterprise_ai_transformation_boundary: Enterprise AI transformation is a monitoring lens, not a fourth Business Signal Card type; FDE / Applied AI role pages are organization-capability signals and require separate source-backed product, funding, customer deployment, procurement, or production rollout evidence before formal Card use.
-- raw_count_by_channel: aihot=54; rss-feed=28; keyword-search=22; gdelt=1
+- raw_count_by_channel: aihot=54; rss-feed=28; keyword-search=24; gdelt=1
 - keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
-- keyword_group_distribution: uncategorized=36; technical-iteration-signal=19; developer-ecosystem-signal=14; mature-commercial-signal=13; capital-market-signal=10; early-direction-signal=5; outside-core-exploration=5; enterprise-ai-implementation-signal=2; targeted-pool-gap-refill=1
-- theme_distribution: uncategorized=36; technical-iteration-signal=19; developer-ecosystem-signal=13; mature-commercial-signal=13; capital-market-signal=11; early-direction-signal=5; outside-core-exploration=5; enterprise-ai-implementation-signal=2; targeted-pool-gap-refill=1
+- keyword_group_distribution: uncategorized=36; technical-iteration-signal=19; mature-commercial-signal=13; developer-ecosystem-signal=12; capital-market-signal=7; early-direction-signal=5; ai-hardware-scenario-service-signal=4; outside-core-exploration=4; ai-hardware-trend-innovation-signal=3; enterprise-ai-implementation-signal=2; targeted-pool-gap-refill=2
+- theme_distribution: uncategorized=36; technical-iteration-signal=19; mature-commercial-signal=13; developer-ecosystem-signal=12; capital-market-signal=7; early-direction-signal=5; ai-hardware-scenario-service-signal=4; outside-core-exploration=4; ai-hardware-trend-innovation-signal=3; enterprise-ai-implementation-signal=2; targeted-pool-gap-refill=2
 - theme_concentration_warning: none
-- evidence_object_type_distribution: event=48; case_or_customer=18; official_index_or_directory=10; research_or_report=9; supporting_article=8; community_feedback=4; regulatory_or_procurement=4; repo_readme_or_index=2; event_on_official_page=1; pricing_change=1
-- pool_route_distribution: index_only=40; core_pool=29; watchlist=29; emerging_pool=17; discard=7; user_feedback_pool=4
-- pool_index_route_distribution: index_only=40; core_pool=29; watchlist=29; emerging_pool=17; user_feedback_pool=4
+- evidence_object_type_distribution: event=45; case_or_customer=24; research_or_report=10; official_index_or_directory=9; supporting_article=7; regulatory_or_procurement=5; community_feedback=4; event_on_official_page=1; pricing_change=1; repo_readme_or_index=1
+- pool_route_distribution: index_only=35; watchlist=34; core_pool=29; emerging_pool=15; discard=9; user_feedback_pool=4
+- pool_index_route_distribution: index_only=35; watchlist=34; core_pool=29; emerging_pool=15; user_feedback_pool=4
 - pool_index_count: 98
 - pool_target: 75
 - pool_selection_buffer: 20
-- routed_pool_count: 58
+- routed_pool_count: 63
 - routed_pool_target: 60
 - core_pool_target: 30
 - core_non_large_vendor_target: 20
-- non_core_pool_count: 29
-- index_only_pool_count: 40
-- aihot_index_only_count: 26
-- aihot_core_count: 14
+- non_core_pool_count: 34
+- index_only_pool_count: 35
+- aihot_index_only_count: 24
+- aihot_core_count: 13
 - aihot_daily_index_only_count: 10
 - aihot_daily_core_count: 0
 - importance_coverage_gaps: none
-- pool_importance_coverage_gaps: important_case=2/5; important_funding=4/5
+- pool_importance_coverage_gaps: important_case=1/5; important_vertical_solution=4/5
 - daily_selected_change_card_theme_gate: default max 2 per theme; max 3 only when theme_day=true and daily log explains why.
 - pool_theme_gate: diversify Pool; default max 4 candidate items per theme unless theme_day=true.
 - pool_count: 98
 - change_cluster_candidates: not_generated_by_monitor
 - heat_candidates: none
-- failed_sources: source-artifact keyword: keyword-search pre-gate filtered 35 result(s): missing_ai_anchor_in_result=14; noise_term:career=8; job_or_salary_page=7; broad_list_or_market_report=2; noise_term:affiliate=1; noise_term:hiring=1; noise_term:jobs at=1; social_or_profile_source=1; source-artifact rss: RSS dataiku-blog: HTTP 404; targeted-refill pre-gate filtered 2 result(s): noise_term:avatar=1; noise_term:hiring=1; targeted pool/core refill cycle 1 added 1 item(s) for important_case=2/5; important_funding=4/5
+- failed_sources: source-artifact keyword: keyword-search pre-gate filtered 36 result(s): missing_ai_anchor_in_result=15; noise_term:career=8; job_or_salary_page=4; social_or_profile_source=4; broad_list_or_market_report=2; noise_term:affiliate=1; noise_term:hiring=1; noise_term:jobs at=1; source-artifact rss: RSS dataiku-blog: HTTP 404; targeted-refill pre-gate filtered 2 result(s): broad_list_or_market_report=1; noise_term:avatar=1; targeted pool/core refill cycle 1 added 2 item(s) for important_case=1/5; important_vertical_solution=4/5
 - fallback_used: Default monitor uses AI HOT daily feed first, AI HOT all-mode remainder second, then keyword rules. External multi-path keyword search and GDELT activate when the default lanes do not meet the Raw minimum, an importance type is thin, or important candidates lack original text / usable evidence object. HN is feedback only and must not dominate. GDELT failures fall back to A-tier media search.
 - evidence_gaps: keyword-search must not stop at community feedback. If official, developer ecosystem, startup/funding, industry landing, procurement/marketplace or A-media paths fail, the item can only remain Watchlist/User Feedback until non-community evidence is found.
-- raw_count_by_source_type: web=59; media=13; newsletter=7; developer=6; builder=4; operators=4; funding=3; product=3; industry=2; news=2; domestic_vendor=1; research=1
-- front_signal_sab_source_count: S=0; A=2; B=16; total=18
+- raw_count_by_source_type: web=64; media=14; newsletter=7; builder=4; developer=4; official=3; funding=2; operators=2; product=2; domestic_vendor=1; industry=1; marketplace=1; news=1; research=1
+- front_signal_sab_source_count: S=0; A=2; B=15; total=17
 - source_registry_config: 01-SiteV2/content/11-databases/source-registry-v2.json
-- raw_snapshot_status_distribution: fetched-readable-text-content-container=22; fetched-readable-text-body-visible-text=21; fetched-readable-text-carry-forward=16; fetched-readable-text-main=13; no-url-summary-only=11; fetched-readable-text-article=8; fetched-readable-text-json-ld=7; blocked-http-403=4; summary-only-low-readable-body=3
+- raw_snapshot_status_distribution: fetched-readable-text-content-container=20; fetched-readable-text-body-visible-text=18; fetched-readable-text-carry-forward=18; fetched-readable-text-main=15; no-url-summary-only=11; summary-only-low-readable-body=7; fetched-readable-text-article=6; fetched-readable-text-json-ld=6; blocked-http-403=4; http-404-fallback-text=1; http-523-fallback-text=1
 - core_original_evidence_count: pending; to be filled after important-card evidence review.
 - raw_snapshot_policy: Raw originals save clean text snapshots when fetchable; high-volatility sources keep available local text and must be rechecked before downstream use.
 
 ## Source Level Distribution
 
-- B: 78
-- S: 8
-- C: 4
+- B: 80
 - A: 15
+- S: 10
+- C: 2
 
 ## Evidence Object Type Distribution
 
-- event: 48
-- case_or_customer: 18
+- event: 45
+- case_or_customer: 24
 - pricing_change: 1
 - community_feedback: 4
-- regulatory_or_procurement: 4
-- official_index_or_directory: 10
-- supporting_article: 8
-- research_or_report: 9
-- repo_readme_or_index: 2
+- regulatory_or_procurement: 5
+- supporting_article: 7
+- research_or_report: 10
+- repo_readme_or_index: 1
+- official_index_or_directory: 9
 - event_on_official_page: 1
 
 ## Theme Distribution
@@ -105,40 +105,43 @@
 - 成熟信号 (mature-commercial-signal): 13
 - uncategorized (uncategorized): 36
 - 技术迭代信号 (technical-iteration-signal): 19
-- 开发者生态信号 (developer-ecosystem-signal): 13
-- 资本市场信号 (capital-market-signal): 11
-- Enterprise AI / FDE implementation signal (enterprise-ai-implementation-signal): 2
-- targeted-pool-gap-refill (targeted-pool-gap-refill): 1
-- 外围探索信号 (outside-core-exploration): 5
+- 开发者生态信号 (developer-ecosystem-signal): 12
+- 资本市场信号 (capital-market-signal): 7
+- AI Hardware scenario and service (ai-hardware-scenario-service-signal): 4
+- AI Hardware trend and innovation (ai-hardware-trend-innovation-signal): 3
+- targeted-pool-gap-refill (targeted-pool-gap-refill): 2
+- 外围探索信号 (outside-core-exploration): 4
 - 早期信号 (early-direction-signal): 5
+- Enterprise AI / FDE implementation signal (enterprise-ai-implementation-signal): 2
 
 ## Keyword Group Distribution
 
 - mature-commercial-signal: 13
 - uncategorized: 36
 - technical-iteration-signal: 19
-- developer-ecosystem-signal: 14
-- capital-market-signal: 10
-- enterprise-ai-implementation-signal: 2
-- targeted-pool-gap-refill: 1
-- outside-core-exploration: 5
+- developer-ecosystem-signal: 12
+- capital-market-signal: 7
+- ai-hardware-scenario-service-signal: 4
+- ai-hardware-trend-innovation-signal: 3
+- targeted-pool-gap-refill: 2
+- outside-core-exploration: 4
 - early-direction-signal: 5
+- enterprise-ai-implementation-signal: 2
 
 ## Keyword Search Path Distribution
 
-- capital_startup: 12
+- capital_startup: 10
 - official_original: 5
+- ai_hardware_original: 6
 - fde_implementation: 2
-- developer_ecosystem: 1
-- industry_landing: 1
 - a_media_gdelt: 1
 
 ## Keyword Search Intent Distribution
 
-- find_startups: 17
-- find_customer_case: 3
+- find_startups: 12
+- find_customer_case: 6
+- find_original_source: 5
 - find_market_trend: 1
-- find_original_source: 1
 
 ## Three-Lane Monitor Policy
 

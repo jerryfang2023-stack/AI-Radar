@@ -1,0 +1,234 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-049
+title: "微软CEO纳德拉批评AI模型公司\"双标\"：一边主张\"合理使用\"数据，一边限制他人蒸馏"
+title_zh: "微软CEO纳德拉批评AI模型公司\"双标\"：一边主张\"合理使用\"数据，一边限制他人蒸馏"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/975/986.htm"
+canonical_url: "https://ithome.com/0/975/986.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-13T06:40:42.000Z"
+collected_at: 2026-07-13T09:31:03.607Z
+language: mixed
+full_text_hash: b61a1d739985d5ac
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-049-微软ceo纳德拉批评ai模型公司-双标-一边主张-合理使用-数据-一边限制他人蒸馏.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-049-微软ceo纳德拉批评ai模型公司-双标-一边主张-合理使用-数据-一边限制他人蒸馏.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 65
+extractor_diagnostics: {"readability_score":65,"text_length":1473,"paragraph_count":18,"sentence_count":13,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1473
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b61a1d739985d5ac","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"微软CEO纳德拉批评AI模型公司\"双标\"：一边主张\"合理使用\"数据，一边限制他人蒸馏","discovery_summary":"微软CEO萨提亚·纳德拉在X平台发文，批评部分AI大模型公司存在自相矛盾的做法：它们主张拥有利用公开数据训练模型的\"合理使用\"权利，却反对其他公司通过模型蒸馏学习其模型能力。纳德拉指出，若知识学习只能单向流动，最终掌握AI基础设施的人将赚走所有钱，而真正创造知识的人无法受益。他还提醒企业用户，过度依赖领先大模型服务等于将专有数据交给模型提供商，建议企业建立自己的AI基础设施、评估体系及持续学习机制。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/986.htm","discovered_at":"2026-07-13T09:21:55.216Z","rank_on_page":36,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 800f2526dbfb50a5
+content_hash: b61a1d739985d5ac
+semantic_hash: c30dd3f1e0876039
+duplicate_of: ""
+first_seen_at: "2026-07-13T06:40:42.000Z"
+last_seen_at: 2026-07-13T09:31:03.607Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_market_structure","importance_score":5,"importance_reason":"market-structure commercial event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","OpenAI","Anthropic","Google"],"products":["ChatGPT","Claude","Gemini"],"people":[],"industries":["企业服务"],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["7","13","2"],"quotes":["数据，一边限制他人蒸馏\n微软CEO萨提亚·纳德拉在X平台发文，批评部分AI大模型公司存在自相矛盾的做法：它们主张拥有利用公开数据训练模型的","合理使用（Fair Use）","模型提供商拥有基于公开数据训练模型的合理使用权，这种创新当然十分重要。但我认为，享受这一权利后，却转而对模型蒸馏施加严格限制，并保留利用客户使用数据和交互数据继续学习的权利，这种做法颇具讽刺意味。","已知规模最大的模型蒸馏攻击","竞争对手可以利用模型蒸馏，以远低于自主研发所需的时间和成本，获得其他实验室的大量先进能力。"]}
+evidence_seed: {"company_actions":["微软CEO萨提亚·纳德拉在X平台发文，批评部分AI大模型公司存在自相矛盾的做法：它们主张拥有利用公开数据训练模型的\"合理使用\"权利，却反对其他公司通过模型蒸馏学习其模型能力。纳德拉指出，若知识学习只能单向流动，最终掌握AI基础设施的人将赚走所有钱，而真正创造知识的人无法受益。他还提醒企业用户，过度依赖领先大模型服务等于将专有数据交给模型提供商，建议企业建立自己的AI基础设施、评估体系及持续学习机制。","IT之家 7 月 13 日消息，微软 CEO 萨提亚 · 纳德拉（Satya Nadella）日前在 X 平台发文，对包括 Anthropic 在内的 AI 大模型公司训练模型的做法进行了含蓄批评。","所谓模型蒸馏，是指利用性能更强的大模型输出结果，训练参数更少、能力较弱的新模型。"],"case_details":["但我认为，享受这一权利后，却转而对模型蒸馏施加严格限制，并保留利用客户使用数据和交互数据继续学习的权利，这种做法颇具讽刺意味。"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"company_action","text":"微软CEO萨提亚·纳德拉在X平台发文，批评部分AI大模型公司存在自相矛盾的做法：它们主张拥有利用公开数据训练模型的\"合理使用\"权利，却反对其他公司通过模型蒸馏学习其模型能力。纳德拉指出，若知识学习只能单向流动，最终掌握AI基础设施的人将赚走所有钱，而真正创造知识的人无法受益。他还提醒企业用户，过度依赖领先大模型服务等于将专有数据交给模型提供商，建议企业建立自己的AI基础设施、评估体系及持续学习机制。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 13 日消息，微软 CEO 萨提亚 · 纳德拉（Satya Nadella）日前在 X 平台发文，对包括 Anthropic 在内的 AI 大模型公司训练模型的做法进行了含蓄批评。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"quote","text":"纳德拉表示，一些模型厂商一边主张拥有利用公开数据训练 AI 模型的“合理使用（Fair Use）”权利，一边却反对其他公司通过模型蒸馏（Distillation）学习其模型能力，这种做法存在明显的自相矛盾。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"所谓模型蒸馏，是指利用性能更强的大模型输出结果，训练参数更少、能力较弱的新模型。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"纳德拉写道：“模型提供商拥有基于公开数据训练模型的合理使用权，这种创新当然十分重要。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"但我认为，享受这一权利后，却转而对模型蒸馏施加严格限制，并保留利用客户使用数据和交互数据继续学习的权利，这种做法颇具讽刺意味。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-13T09:31:03.607Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 微软CEO纳德拉批评AI模型公司"双标"：一边主张"合理使用"数据，一边限制他人蒸馏
+
+## clean_text
+
+IT之家 7 月 13 日消息，微软 CEO 萨提亚 · 纳德拉（Satya Nadella）日前在 X 平台发文，对包括 Anthropic 在内的 AI 大模型公司训练模型的做法进行了含蓄批评。
+纳德拉表示，一些模型厂商一边主张拥有利用公开数据训练 AI 模型的“合理使用（Fair Use）”权利，一边却反对其他公司通过模型蒸馏（Distillation）学习其模型能力，这种做法存在明显的自相矛盾。
+所谓模型蒸馏，是指利用性能更强的大模型输出结果，训练参数更少、能力较弱的新模型。
+纳德拉写道：“模型提供商拥有基于公开数据训练模型的合理使用权，这种创新当然十分重要。但我认为，享受这一权利后，却转而对模型蒸馏施加严格限制，并保留利用客户使用数据和交互数据继续学习的权利，这种做法颇具讽刺意味。”
+他进一步表示，如果知识的学习始终只能单向流动，那么最终赚到所有钱的将是掌握 AI 基础设施的人，而真正创造知识的人却无法从中受益。
+目前，包括 Anthropic、OpenAI 和 Google DeepMind 在内的头部 AI 公司，都依赖大量由他人创作的内容来训练模型。
+ChatGPT、Claude 和 Gemini 等模型的能力，均建立在公开文本、图片以及其他互联网数据之上。
+近年来，已有大量公司和个人因未经授权抓取（Scraping）内容训练 AI，而对这些 AI 公司提起诉讼。
+虽然纳德拉并未点名，但外界普遍认为，他的这番言论主要针对 Anthropic。
+今年早些时候，Anthropic CEO 达里奥 · 阿莫代伊（Dario Amodei）曾公开指责中国 AI 公司“窃取”Anthropic 的成果，称它们利用 Claude 生成的数据训练自己的模型。
+上个月，Anthropic 还致信美国参议员蒂姆 · 斯科特（Tim Scott）和伊丽莎白 · 沃伦（Elizabeth Warren），称阿里巴巴近期对 Anthropic 发起了迄今为止“已知规模最大的模型蒸馏攻击”。
+Anthropic 在今年 2 月发布的一份长篇声明中表示：“竞争对手可以利用模型蒸馏，以远低于自主研发所需的时间和成本，获得其他实验室的大量先进能力。”
+在周日的推文中，纳德拉还提醒企业用户，如果过度依赖领先的大模型服务，本质上是在把自己的专有数据交给模型提供商，然后再付费使用这些模型。
+他认为，企业应该掌握属于自己的 AI 基础设施和组织知识，而不是依赖单一模型供应商。此外，企业还应建立自己的模型评估体系以及持续学习（Learning Loop）机制，让 AI 能力随着时间不断提升。
+纳德拉表示：“这也是为什么企业需要为自身的人力资本和词元（Token）资本建立真正可信的边界，使其能够持续积累价值。”
+他强调：“这应该是一条严格的边界，未经许可，任何信息都不能跨越这条边界，哪怕是 AI 推理过程中产生的‘智能副产品（Intelligence Exhaust）’也不例外。”
+IT之家注意到，埃隆 · 马斯克（Elon Musk）此前也曾批评 Anthropic 收集数据和训练模型的方式。今年 2 月，在 Anthropic 指责中国 AI 模型之后，马斯克曾在 X 平台发文称：“Anthropic 大规模窃取训练数据，并因此支付了数十亿美元的和解金。这就是事实。”
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 13 日消息，微软 CEO 萨提亚 · 纳德拉（Satya Nadella）日前在 X 平台发文，对包括 Anthropic 在内的 AI 大模型公司训练模型的做法进行了含蓄批评。
+纳德拉表示，一些模型厂商一边主张拥有利用公开数据训练 AI 模型的“合理使用（Fair Use）”权利，一边却反对其他公司通过模型蒸馏（Distillation）学习其模型能力，这种做法存在明显的自相矛盾。
+所谓模型蒸馏，是指利用性能更强的大模型输出结果，训练参数更少、能力较弱的新模型。
+纳德拉写道：“模型提供商拥有基于公开数据训练模型的合理使用权，这种创新当然十分重要。但我认为，享受这一权利后，却转而对模型蒸馏施加严格限制，并保留利用客户使用数据和交互数据继续学习的权利，这种做法颇具讽刺意味。”
+他进一步表示，如果知识的学习始终只能单向流动，那么最终赚到所有钱的将是掌握 AI 基础设施的人，而真正创造知识的人却无法从中受益。
+目前，包括 Anthropic、OpenAI 和 Google DeepMind 在内的头部 AI 公司，都依赖大量由他人创作的内容来训练模型。
+ChatGPT、Claude 和 Gemini 等模型的能力，均建立在公开文本、图片以及其他互联网数据之上。
+近年来，已有大量公司和个人因未经授权抓取（Scraping）内容训练 AI，而对这些 AI 公司提起诉讼。
+虽然纳德拉并未点名，但外界普遍认为，他的这番言论主要针对 Anthropic。
+今年早些时候，Anthropic CEO 达里奥 · 阿莫代伊（Dario Amodei）曾公开指责中国 AI 公司“窃取”Anthropic 的成果，称它们利用 Claude 生成的数据训练自己的模型。
+上个月，Anthropic 还致信美国参议员蒂姆 · 斯科特（Tim Scott）和伊丽莎白 · 沃伦（Elizabeth Warren），称阿里巴巴近期对 Anthropic 发起了迄今为止“已知规模最大的模型蒸馏攻击”。
+Anthropic 在今年 2 月发布的一份长篇声明中表示：“竞争对手可以利用模型蒸馏，以远低于自主研发所需的时间和成本，获得其他实验室的大量先进能力。”
+在周日的推文中，纳德拉还提醒企业用户，如果过度依赖领先的大模型服务，本质上是在把自己的专有数据交给模型提供商，然后再付费使用这些模型。
+他认为，企业应该掌握属于自己的 AI 基础设施和组织知识，而不是依赖单一模型供应商。此外，企业还应建立自己的模型评估体系以及持续学习（Learning Loop）机制，让 AI 能力随着时间不断提升。
+纳德拉表示：“这也是为什么企业需要为自身的人力资本和词元（Token）资本建立真正可信的边界，使其能够持续积累价值。”
+他强调：“这应该是一条严格的边界，未经许可，任何信息都不能跨越这条边界，哪怕是 AI 推理过程中产生的‘智能副产品（Intelligence Exhaust）’也不例外。”
+IT之家注意到，埃隆 · 马斯克（Elon Musk）此前也曾批评 Anthropic 收集数据和训练模型的方式。今年 2 月，在 Anthropic 指责中国 AI 模型之后，马斯克曾在 X 平台发文称：“Anthropic 大规模窃取训练数据，并因此支付了数十亿美元的和解金。这就是事实。”
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 65
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":65,"text_length":1473,"paragraph_count":18,"sentence_count":13,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   微软CEO萨提亚·纳德拉在X平台发文，批评部分AI大模型公司存在自相矛盾的做法：它们主张拥有利用公开数据训练模型的"合理使用"权利，却反对其他公司通过模型蒸馏学习其模型能力。纳德拉指出，若知识学习只能单向流动，最终掌握AI基础设施的人将赚走所有钱，而真正创造知识的人无法受益。他还提醒企业用户，过度依赖领先大模型服务等于将专有数据交给模型提供商，建议企业建立自己的AI基础设施、评估体系及持续学习机制。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家 7 月 13 日消息，微软 CEO 萨提亚 · 纳德拉（Satya Nadella）日前在 X 平台发文，对包括 Anthropic 在内的 AI 大模型公司训练模型的做法进行了含蓄批评。
+
+3. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   纳德拉表示，一些模型厂商一边主张拥有利用公开数据训练 AI 模型的“合理使用（Fair Use）”权利，一边却反对其他公司通过模型蒸馏（Distillation）学习其模型能力，这种做法存在明显的自相矛盾。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   所谓模型蒸馏，是指利用性能更强的大模型输出结果，训练参数更少、能力较弱的新模型。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   纳德拉写道：“模型提供商拥有基于公开数据训练模型的合理使用权，这种创新当然十分重要。
+
+6. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   但我认为，享受这一权利后，却转而对模型蒸馏施加严格限制，并保留利用客户使用数据和交互数据继续学习的权利，这种做法颇具讽刺意味。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI, Anthropic, Google
+- products: ChatGPT, Claude, Gemini
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 7, 13, 2
+- quotes: 数据，一边限制他人蒸馏
+微软CEO萨提亚·纳德拉在X平台发文，批评部分AI大模型公司存在自相矛盾的做法：它们主张拥有利用公开数据训练模型的 / 合理使用（Fair Use） / 模型提供商拥有基于公开数据训练模型的合理使用权，这种创新当然十分重要。但我认为，享受这一权利后，却转而对模型蒸馏施加严格限制，并保留利用客户使用数据和交互数据继续学习的权利，这种做法颇具讽刺意味。 / 已知规模最大的模型蒸馏攻击 / 竞争对手可以利用模型蒸馏，以远低于自主研发所需的时间和成本，获得其他实验室的大量先进能力。
+
+## evidence_seed
+
+- company_actions: 微软CEO萨提亚·纳德拉在X平台发文，批评部分AI大模型公司存在自相矛盾的做法：它们主张拥有利用公开数据训练模型的"合理使用"权利，却反对其他公司通过模型蒸馏学习其模型能力。纳德拉指出，若知识学习只能单向流动，最终掌握AI基础设施的人将赚走所有钱，而真正创造知识的人无法受益。他还提醒企业用户，过度依赖领先大模型服务等于将专有数据交给模型提供商，建议企业建立自己的AI基础设施、评估体系及持续学习机制。 / IT之家 7 月 13 日消息，微软 CEO 萨提亚 · 纳德拉（Satya Nadella）日前在 X 平台发文，对包括 Anthropic 在内的 AI 大模型公司训练模型的做法进行了含蓄批评。 / 所谓模型蒸馏，是指利用性能更强的大模型输出结果，训练参数更少、能力较弱的新模型。
+- case_details: 但我认为，享受这一权利后，却转而对模型蒸馏施加严格限制，并保留利用客户使用数据和交互数据继续学习的权利，这种做法颇具讽刺意味。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_market_structure
+- importance_score: 5
+- importance_reason: market-structure commercial event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"微软CEO纳德拉批评AI模型公司\"双标\"：一边主张\"合理使用\"数据，一边限制他人蒸馏","discovery_summary":"微软CEO萨提亚·纳德拉在X平台发文，批评部分AI大模型公司存在自相矛盾的做法：它们主张拥有利用公开数据训练模型的\"合理使用\"权利，却反对其他公司通过模型蒸馏学习其模型能力。纳德拉指出，若知识学习只能单向流动，最终掌握AI基础设施的人将赚走所有钱，而真正创造知识的人无法受益。他还提醒企业用户，过度依赖领先大模型服务等于将专有数据交给模型提供商，建议企业建立自己的AI基础设施、评估体系及持续学习机制。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/986.htm","discovered_at":"2026-07-13T09:21:55.216Z","rank_on_page":36,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+微软CEO萨提亚·纳德拉在X平台发文，批评部分AI大模型公司存在自相矛盾的做法：它们主张拥有利用公开数据训练模型的"合理使用"权利，却反对其他公司通过模型蒸馏学习其模型能力。纳德拉指出，若知识学习只能单向流动，最终掌握AI基础设施的人将赚走所有钱，而真正创造知识的人无法受益。他还提醒企业用户，过度依赖领先大模型服务等于将专有数据交给模型提供商，建议企业建立自己的AI基础设施、评估体系及持续学习机制。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

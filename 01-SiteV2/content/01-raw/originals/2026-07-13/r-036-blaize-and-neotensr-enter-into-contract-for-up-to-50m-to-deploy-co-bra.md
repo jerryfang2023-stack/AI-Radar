@@ -1,0 +1,314 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-036
+title: "Blaize and NeoTensr Enter into Contract for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific – Company Announcement - FT.com"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://markets.ft.com/data/announce/detail?dockey=600-202604161610BIZWIRE_USPRX____20260416_BW115083-1"
+canonical_url: "https://markets.ft.com/data/announce/detail?dockey=600-202604161610BIZWIRE_USPRX____20260416_BW115083-1"
+source_name: "keyword search / Anysearch"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-04-16T00:00:00.000Z"
+collected_at: 2026-07-13T09:31:03.540Z
+language: mixed
+full_text_hash: 25f4e104600cb91a
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-036-blaize-and-neotensr-enter-into-contract-for-up-to-50m-to-deploy-co-bra.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-036-blaize-and-neotensr-enter-into-contract-for-up-to-50m-to-deploy-co-bra.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":9938,"paragraph_count":39,"sentence_count":43,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 9938
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"25f4e104600cb91a","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 9805848eedad6deb
+content_hash: 25f4e104600cb91a
+semantic_hash: d7f224c3f178dcfd
+duplicate_of: ""
+first_seen_at: "2026-04-16T00:00:00.000Z"
+last_seen_at: 2026-07-13T09:31:03.540Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"AI hardware scenario or service deployment; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","ai_hardware_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch"],"products":[],"people":[],"industries":["法律 / 法务","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["$50M","13","2030","2030\nB","16","2026","21","10 B"],"quotes":["Company,","Securities Act","Exchange Act","anticipate,","believe,"]}
+evidence_seed: {"company_actions":["--(BUSINESS WIRE)--Apr.","16, 2026-- Blaize Holdings, Inc."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"Blaize and NeoTensr Enter into Contract for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific – Company Announcement - FT.com # Company Announcements Blaize Holdings Equity Warrants Exp 13th Jan 2030 ### Blaize and NeoTensr Enter into Contract for Up to $50M t...","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Blaize Holdings Equity Warrants Exp 13th Jan 2030 Blaize and NeoTensr Enter into Contract for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific Twitter Facebook LinkedIn GooglePlus Pinterest Apr 16 2026 21:10 BST Partnership Targets Rapidly Expanding Edge Data Center Market in the Broader Asia Pacific Region , Leveraging Blaize ’s Hybrid AI Architecture HIGHLIGHTS New contract with NeoTensr expected to generate up to $50.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"0 million in revenue within the first year Builds on $20 .","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"0M+ NeoTensr order recognized in Q4 2025 — total partnership value up to $70M Co-branded AI server based on Blaize’s quad card handles 200+ simultaneous camera streams with advanced AI analytics Targets surging edge data center buildout demand across Asia Pacific Platform combines computer vision, LLM/VLM inference, and AI services on a single hybrid edge architecture EL DORADO HILLS, Calif.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"--(BUSINESS WIRE)--Apr.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"16, 2026-- Blaize Holdings, Inc.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-13T09:31:03.540Z
+theme: ai-hardware-scenario-service-signal
+keyword_group: ai-hardware-scenario-service-signal
+copyright_note: local research archive only
+---
+
+# Blaize and NeoTensr Enter into Contract for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific – Company Announcement - FT.com
+
+## clean_text
+
+Blaize Holdings Equity Warrants Exp 13th Jan 2030
+Blaize and NeoTensr Enter into Contract for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific
+Twitter
+Facebook
+LinkedIn
+GooglePlus
+Pinterest
+Apr 16 2026 21:10 BST
+Partnership Targets Rapidly Expanding Edge Data Center Market in the Broader Asia Pacific Region , Leveraging Blaize ’s Hybrid AI Architecture
+HIGHLIGHTS
+New contract with NeoTensr expected to generate up to $50.0 million in revenue within the first year
+Builds on $20 .0M+ NeoTensr order recognized in Q4 2025 — total partnership value up to $70M
+Co-branded AI server based on Blaize’s quad card handles 200+ simultaneous camera streams with advanced AI analytics
+Targets surging edge data center buildout demand across Asia Pacific
+Platform combines computer vision, LLM/VLM inference, and AI services on a single hybrid edge architecture
+EL DORADO HILLS, Calif. --(BUSINESS WIRE)--Apr. 16, 2026--
+Blaize Holdings, Inc. (Nasdaq: BZAI, Nasdaq: BZAIW) (“Blaize,” the “Company,” “we,” “our,” or “us”), a leader in programmable, energy-efficient AI computing, and NeoTensr , a hardware and software system integrator, today announced an up to $50.0 million contract to jointly develop and deploy co-branded AI edge data center infrastructure targeting the rapidly growing compute market across the broader Asia Pacific region.
+This press release features multimedia. View the full release here: https://www.businesswire.com/news/home/20260416115083/en/
+The agreement marks a significant escalation of the two companies’ partnership, which generated over $20.0 million in revenue for Blaize in Q4 2025, bringing the total potential contracted value between Blaize and NeoTensr up to $70 million .
+The Power of Hybrid: Edge Inference Meets LLM and VLM Intelligence
+The Blaize solution is built around a co-branded AI server based on Blaize’s quad card configuration. Each server is capable of handling 200+ simultaneous camera streams with advanced AI analytics, purpose-built for smart city surveillance, industrial automation, logistics, retail intelligence, and security applications common in large-scale urban edge deployments.
+What distinguishes this deployment from conventional edge AI is the breadth of the Blaize Hybrid AI architecture. Leveraging the combination of Blaize’s Graph Streaming Processor (GSP) and GPU infrastructure, NeoTensr’s edge data centers will be capable of running not only real-time computer vision workloads, but also advanced data analysis powered by state-of-the-art Large Language Models (LLMs) and Vision Language Models (VLMs) — all within the same edge infrastructure.
+This hybrid approach enables NeoTensr to offer customers a single, unified AI platform that spans real-time perception at the edge and sophisticated reasoning and analytics — a critical competitive advantage as enterprise customers demand more intelligent, responsive systems without routing data to distant cloud infrastructure.
+“NeoTensr is not just deploying AI infrastructure — we are building the compute backbone that will power the next decade of intelligent cities, industrial systems, and data-driven enterprise across Asia Pacific . We evaluated every major AI platform in the market. Blaize was the only one that could deliver the performance, efficiency, and full-stack flexibility we needed to build at this scale and win. We are moving fast, the pipeline is deep, and this up to $50 million contract is the beginning of something much larger.”
+— Liang Wang , CEO of NeoTensr
+“What makes this deployment technically significant is that we are not partitioning the workload between edge and cloud — we are collapsing that boundary entirely. The Blaize GSP handles continuous yet dynamic, low-latency computer vision at the sensor layer, while our hybrid architecture simultaneously runs LLM and VLM inference on the same physical infrastructure. Processing 200+ camera streams per server with that level of analytical depth is not achievable on conventional hardware. NeoTensr recognized that, and it’s why this platform will define the standard for intelligent edge data centers across the region.”
+— Ke Yin , Co-Founder and Chief Scientist, Blaize
+Intercepting the Edge Data Center Wave in Asia
+Data center buildouts across Asia represent one of the most dynamic infrastructure opportunities in the global AI market. NeoTensr is actively securing multiple edge data center projects in the region, with Blaize’s Hybrid AI platform as the compute foundation. Together, the companies aim to deliver production-ready AI infrastructure at the edge — where latency, efficiency, and real-world performance matter most.
+“The edge data center market in Asia Pacific is one of the clearest proof points that AI inference at the edge is not a future trend — it’s happening now, at scale. NeoTensr’s infrastructure buildout across the region is exactly the kind of deployment our Hybrid AI architecture was designed for: real-time, multi-stream, AI-dense environments where neither pure cloud nor legacy edge hardware can meet the demand. This is the market we built Blaize to win.”
+— Dinakar Munagala , Co-Founder and CEO of Blaize
+A Full-Stack AI Partnership : Hardware, Software, and Services
+The contract covers co-branded AI server hardware, AI solutions software, and AI services — forming an end-to-end stack that NeoTensr will deploy and monetize across its edge data center projects. Key elements of the platform include:
+Co-branded AI servers based on Blaize’s quad card, engineered for high-density edge inference
+200+ camera stream processing per server with advanced AI analytics for vision-intensive workloads
+AI solutions and services software for deployment, orchestration, and application-layer AI APIs
+LLM and VLM inference capabilities at the edge, enabling advanced multimodal AI analytics
+Scalable architecture designed for multi-city, multi-phase rollout across Asia Pacific
+About Blaize
+Blaize delivers a programmable AI platform, purpose-built for AI inference workloads in real-world environments. Its Hybrid AI architecture combines the Blaize GSP (Graph Streaming Processor) with GPU-based infrastructure, enabling AI inference workloads to run across edge, cloud, and data center. Blaize solutions support computer vision, multimodal AI, and sensor-driven applications across smart cities, industrial automation, telecommunications, retail, logistics, and defense. Blaize is headquartered in El Dorado Hills, California , with a global presence across North America , Europe , the Middle East , and Asia . Visit www.blaize.com or follow us on LinkedIn @blaizeinc.
+About NeoTensr
+NeoTensr is a technology company specializing in hardware and software system development for edge, enterprise, and data center environments. NeoTensr is actively building AI-enabled infrastructure across the Asia Pacific region, with a focus on scalable, production-ready AI systems for smart cities, industrial, and enterprise markets. For more information, visit www.neotensr.com .
+Cautionary Statement Regarding Forward-Looking Statements
+This press release contains forward-looking statements within the meaning of Section 27A of the U.S. Securities Act of 1933, as amended (the “Securities Act”), and Section 21E of the U.S. Securities Exchange Act of 1934, as amended (the “Exchange Act”) that are based on beliefs and assumptions and on information currently available to Blaize, including expectations and scope of customer contracts, including potential values and the timing of revenues pursuant to such contracts; preliminary estimates of results of operations and guidance on results for future periods; the industry in which Blaize operates, market opportunities, and product offerings. In some cases, you can identify forward-looking statements by the following words: “may,” “will,” “could,” “would,” “should,” “expect,” “intend,” “plan,” “anticipate,” “believe,” “estimate,” “predict,” “project,” “potential,” “continue,” “ongoing,” “target,” “seek” or the negative or plural of these words, or other similar expressions that are predictions or indicate future events or prospects, although not all forward-looking statements contain these words. Forward-looking statements are predictions, projections and other statements about future events that are based on current expectations and assumptions and, as a result, are subject to risks and uncertainties. Many factors could cause actual future events to differ materially from the forward-looking statements in this document, including but not limited to those factors discussed under the heading “Risk Factors” in our Annual Report on Form 10-K filed with the Securities and Exchange Commission (“SEC”) on March 24, 2026 , and other documents filed by Blaize from time to time with the SEC . These filings identify and address other important risks and uncertainties that could cause actual events and results to differ materially from those contained in the forward-looking statements. Forward-looking statements speak only as of the date they are made. Readers are cautioned not to put undue reliance on forward-looking statements, and Blaize assumes no obligation to update or revise these forward-looking statements, whether as a result of new information, future events, or otherwise, except as required by law, including the securities laws of the United States and the rules and regulations of the SEC . Blaize does not give any assurance that it will achieve its expectations. The expected revenue for the first fiscal quarter ended March 31, 2026 is preliminary as Blaize has not completed its financial statements for the quarter.
+View source version on businesswire.com :
+https://www.businesswire.com/news/home/20260416115083/en/
+Blaize Contact
+press@blaize.com
+www.blaize.com
+Investors
+ir@blaize.com
+www.blaize.com
+Source: Blaize Holdings, Inc.
+Twitter
+Facebook
+LinkedIn
+GooglePlus
+Pinterest
+
+## full_text
+
+Blaize Holdings Equity Warrants Exp 13th Jan 2030
+Blaize and NeoTensr Enter into Contract for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific
+Twitter
+Facebook
+LinkedIn
+GooglePlus
+Pinterest
+Apr 16 2026 21:10 BST
+Partnership Targets Rapidly Expanding Edge Data Center Market in the Broader Asia Pacific Region , Leveraging Blaize ’s Hybrid AI Architecture
+HIGHLIGHTS
+New contract with NeoTensr expected to generate up to $50.0 million in revenue within the first year
+Builds on $20 .0M+ NeoTensr order recognized in Q4 2025 — total partnership value up to $70M
+Co-branded AI server based on Blaize’s quad card handles 200+ simultaneous camera streams with advanced AI analytics
+Targets surging edge data center buildout demand across Asia Pacific
+Platform combines computer vision, LLM/VLM inference, and AI services on a single hybrid edge architecture
+EL DORADO HILLS, Calif. --(BUSINESS WIRE)--Apr. 16, 2026--
+Blaize Holdings, Inc. (Nasdaq: BZAI, Nasdaq: BZAIW) (“Blaize,” the “Company,” “we,” “our,” or “us”), a leader in programmable, energy-efficient AI computing, and NeoTensr , a hardware and software system integrator, today announced an up to $50.0 million contract to jointly develop and deploy co-branded AI edge data center infrastructure targeting the rapidly growing compute market across the broader Asia Pacific region.
+This press release features multimedia. View the full release here: https://www.businesswire.com/news/home/20260416115083/en/
+The agreement marks a significant escalation of the two companies’ partnership, which generated over $20.0 million in revenue for Blaize in Q4 2025, bringing the total potential contracted value between Blaize and NeoTensr up to $70 million .
+The Power of Hybrid: Edge Inference Meets LLM and VLM Intelligence
+The Blaize solution is built around a co-branded AI server based on Blaize’s quad card configuration. Each server is capable of handling 200+ simultaneous camera streams with advanced AI analytics, purpose-built for smart city surveillance, industrial automation, logistics, retail intelligence, and security applications common in large-scale urban edge deployments.
+What distinguishes this deployment from conventional edge AI is the breadth of the Blaize Hybrid AI architecture. Leveraging the combination of Blaize’s Graph Streaming Processor (GSP) and GPU infrastructure, NeoTensr’s edge data centers will be capable of running not only real-time computer vision workloads, but also advanced data analysis powered by state-of-the-art Large Language Models (LLMs) and Vision Language Models (VLMs) — all within the same edge infrastructure.
+This hybrid approach enables NeoTensr to offer customers a single, unified AI platform that spans real-time perception at the edge and sophisticated reasoning and analytics — a critical competitive advantage as enterprise customers demand more intelligent, responsive systems without routing data to distant cloud infrastructure.
+“NeoTensr is not just deploying AI infrastructure — we are building the compute backbone that will power the next decade of intelligent cities, industrial systems, and data-driven enterprise across Asia Pacific . We evaluated every major AI platform in the market. Blaize was the only one that could deliver the performance, efficiency, and full-stack flexibility we needed to build at this scale and win. We are moving fast, the pipeline is deep, and this up to $50 million contract is the beginning of something much larger.”
+— Liang Wang , CEO of NeoTensr
+“What makes this deployment technically significant is that we are not partitioning the workload between edge and cloud — we are collapsing that boundary entirely. The Blaize GSP handles continuous yet dynamic, low-latency computer vision at the sensor layer, while our hybrid architecture simultaneously runs LLM and VLM inference on the same physical infrastructure. Processing 200+ camera streams per server with that level of analytical depth is not achievable on conventional hardware. NeoTensr recognized that, and it’s why this platform will define the standard for intelligent edge data centers across the region.”
+— Ke Yin , Co-Founder and Chief Scientist, Blaize
+Intercepting the Edge Data Center Wave in Asia
+Data center buildouts across Asia represent one of the most dynamic infrastructure opportunities in the global AI market. NeoTensr is actively securing multiple edge data center projects in the region, with Blaize’s Hybrid AI platform as the compute foundation. Together, the companies aim to deliver production-ready AI infrastructure at the edge — where latency, efficiency, and real-world performance matter most.
+“The edge data center market in Asia Pacific is one of the clearest proof points that AI inference at the edge is not a future trend — it’s happening now, at scale. NeoTensr’s infrastructure buildout across the region is exactly the kind of deployment our Hybrid AI architecture was designed for: real-time, multi-stream, AI-dense environments where neither pure cloud nor legacy edge hardware can meet the demand. This is the market we built Blaize to win.”
+— Dinakar Munagala , Co-Founder and CEO of Blaize
+A Full-Stack AI Partnership : Hardware, Software, and Services
+The contract covers co-branded AI server hardware, AI solutions software, and AI services — forming an end-to-end stack that NeoTensr will deploy and monetize across its edge data center projects. Key elements of the platform include:
+Co-branded AI servers based on Blaize’s quad card, engineered for high-density edge inference
+200+ camera stream processing per server with advanced AI analytics for vision-intensive workloads
+AI solutions and services software for deployment, orchestration, and application-layer AI APIs
+LLM and VLM inference capabilities at the edge, enabling advanced multimodal AI analytics
+Scalable architecture designed for multi-city, multi-phase rollout across Asia Pacific
+About Blaize
+Blaize delivers a programmable AI platform, purpose-built for AI inference workloads in real-world environments. Its Hybrid AI architecture combines the Blaize GSP (Graph Streaming Processor) with GPU-based infrastructure, enabling AI inference workloads to run across edge, cloud, and data center. Blaize solutions support computer vision, multimodal AI, and sensor-driven applications across smart cities, industrial automation, telecommunications, retail, logistics, and defense. Blaize is headquartered in El Dorado Hills, California , with a global presence across North America , Europe , the Middle East , and Asia . Visit www.blaize.com or follow us on LinkedIn @blaizeinc.
+About NeoTensr
+NeoTensr is a technology company specializing in hardware and software system development for edge, enterprise, and data center environments. NeoTensr is actively building AI-enabled infrastructure across the Asia Pacific region, with a focus on scalable, production-ready AI systems for smart cities, industrial, and enterprise markets. For more information, visit www.neotensr.com .
+Cautionary Statement Regarding Forward-Looking Statements
+This press release contains forward-looking statements within the meaning of Section 27A of the U.S. Securities Act of 1933, as amended (the “Securities Act”), and Section 21E of the U.S. Securities Exchange Act of 1934, as amended (the “Exchange Act”) that are based on beliefs and assumptions and on information currently available to Blaize, including expectations and scope of customer contracts, including potential values and the timing of revenues pursuant to such contracts; preliminary estimates of results of operations and guidance on results for future periods; the industry in which Blaize operates, market opportunities, and product offerings. In some cases, you can identify forward-looking statements by the following words: “may,” “will,” “could,” “would,” “should,” “expect,” “intend,” “plan,” “anticipate,” “believe,” “estimate,” “predict,” “project,” “potential,” “continue,” “ongoing,” “target,” “seek” or the negative or plural of these words, or other similar expressions that are predictions or indicate future events or prospects, although not all forward-looking statements contain these words. Forward-looking statements are predictions, projections and other statements about future events that are based on current expectations and assumptions and, as a result, are subject to risks and uncertainties. Many factors could cause actual future events to differ materially from the forward-looking statements in this document, including but not limited to those factors discussed under the heading “Risk Factors” in our Annual Report on Form 10-K filed with the Securities and Exchange Commission (“SEC”) on March 24, 2026 , and other documents filed by Blaize from time to time with the SEC . These filings identify and address other important risks and uncertainties that could cause actual events and results to differ materially from those contained in the forward-looking statements. Forward-looking statements speak only as of the date they are made. Readers are cautioned not to put undue reliance on forward-looking statements, and Blaize assumes no obligation to update or revise these forward-looking statements, whether as a result of new information, future events, or otherwise, except as required by law, including the securities laws of the United States and the rules and regulations of the SEC . Blaize does not give any assurance that it will achieve its expectations. The expected revenue for the first fiscal quarter ended March 31, 2026 is preliminary as Blaize has not completed its financial statements for the quarter.
+View source version on businesswire.com :
+https://www.businesswire.com/news/home/20260416115083/en/
+Blaize Contact
+press@blaize.com
+www.blaize.com
+Investors
+ir@blaize.com
+www.blaize.com
+Source: Blaize Holdings, Inc.
+Twitter
+Facebook
+LinkedIn
+GooglePlus
+Pinterest
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":9938,"paragraph_count":39,"sentence_count":43,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Blaize and NeoTensr Enter into Contract for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific – Company Announcement - FT.com # Company Announcements Blaize Holdings Equity Warrants Exp 13th Jan 2030 ### Blaize and NeoTensr Enter into Contract for Up to $50M t...
+
+2. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Blaize Holdings Equity Warrants Exp 13th Jan 2030 Blaize and NeoTensr Enter into Contract for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific Twitter Facebook LinkedIn GooglePlus Pinterest Apr 16 2026 21:10 BST Partnership Targets Rapidly Expanding Edge Data Center Market in the Broader Asia Pacific Region , Leveraging Blaize ’s Hybrid AI Architecture HIGHLIGHTS New contract with NeoTensr expected to generate up to $50.
+
+3. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   0 million in revenue within the first year Builds on $20 .
+
+4. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   0M+ NeoTensr order recognized in Q4 2025 — total partnership value up to $70M Co-branded AI server based on Blaize’s quad card handles 200+ simultaneous camera streams with advanced AI analytics Targets surging edge data center buildout demand across Asia Pacific Platform combines computer vision, LLM/VLM inference, and AI services on a single hybrid edge architecture EL DORADO HILLS, Calif.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   --(BUSINESS WIRE)--Apr.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   16, 2026-- Blaize Holdings, Inc.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 销售 / 客服
+- numbers: $50M, 13, 2030, 2030
+B, 16, 2026, 21, 10 B
+- quotes: Company, / Securities Act / Exchange Act / anticipate, / believe,
+
+## evidence_seed
+
+- company_actions: --(BUSINESS WIRE)--Apr. / 16, 2026-- Blaize Holdings, Inc.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: AI hardware scenario or service deployment; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,ai_hardware_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Blaize and NeoTensr Enter into Contract for Up to $50M to Deploy Co-Branded AI Edge Data Center Infrastructure Across Asia Pacific – Company Announcement - FT.com # Company Announcements Blaize Holdings Equity Warrants Exp 13th Jan 2030 ### Blaize and NeoTensr Enter into Contract for Up to $50M t...
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

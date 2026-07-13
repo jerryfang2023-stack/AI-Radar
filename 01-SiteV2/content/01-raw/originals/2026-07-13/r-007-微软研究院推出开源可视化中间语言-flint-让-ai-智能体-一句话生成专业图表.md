@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T12:45:22.000Z"
-collected_at: 2026-07-13T08:51:52.646Z
+collected_at: 2026-07-13T09:31:03.360Z
 language: mixed
 full_text_hash: 17f70f5d01c9f522
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-007-微软研究院推出开源可视化中间语言-flint-让-ai-智能体-一句话生成专业图表.md"
@@ -60,7 +60,7 @@ content_hash: 17f70f5d01c9f522
 semantic_hash: 8580649e8bc1b8d3
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-12T12:45:22.000Z"
-last_seen_at: 2026-07-13T08:51:52.646Z
+last_seen_at: 2026-07-13T09:31:03.360Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有变化前后流程线索"]
 key_excerpts: [{"type":"supporting_context","text":"微软研究院与中国人民大学 IDEAS Lab 联合推出开源可视化中间语言 Flint，让 AI 智能体通过一句话即可生成 Vega-Lite、ECharts、Chart.js 的可渲染图表。Flint 将图表意图与底层可视化库实现分离，规格分为数据定义和图表定义两部分，编译器可自动推导时间解析、聚合规则、数值格式及配色方案。团队同步发布 flint-chart-mcp 服务器，支持 MCP 协议的 AI 智能体在对话中直接创建和预览图表。评测中，Flint 在 GPT-5.1、GPT-5-mini 和 GPT-4.1 三组测试中均获得比直接生成 Vega-Lite 配置的方案 DirectVL 更高的综合评分。Flint 已应用于微软研究院的数据分析工具 Data Formulator，相关代码和文档已开源。 IT之家 7 月 12 日消息，微软研究院联合中国人民大学 IDEAS Lab 联合推出了开源可视化中间语言 Flint，可以让 AI 智能体“一句话生成” Vega-Lite、ECharts、 Chart. 据介绍，现有可视化库通常提供大量配置选项，若采用精简配置，生成的图表未必适合数据内容；若要求大语言模型直接输出","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 12 日消息，微软研究院联合中国人民大学 IDEAS Lab 联合推出了开源可视化中间语言 Flint，可以让 AI 智能体“一句话生成” Vega-Lite、ECharts、 Chart.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"据介绍，现有可视化库通常提供大量配置选项，若采用精简配置，生成的图表未必适合数据内容；若要求大语言模型直接输出完整配置，又容易因参数过多而出现冲突、遗漏或不一致。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"因此 Flint 在设计之初将图表意图与底层可视化库实现分离，以减少 AI 生成配置时的复杂度。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"具体来看，Flint 的规格主要分为数据定义和图表定义两部分。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"数据部分可标注字段的语义类型，例如年月、价格、百分比、利润、国家或排名等；图表部分则用于指定图表类型，确认各字段映射到 X 轴、Y 轴、颜色、大小或分面（Facet）等视觉元素。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T08:51:52.646Z
+fact_extraction_completed_at: 2026-07-13T09:31:03.360Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
