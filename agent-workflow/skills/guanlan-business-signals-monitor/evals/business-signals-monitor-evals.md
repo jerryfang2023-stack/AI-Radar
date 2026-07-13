@@ -83,7 +83,9 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 
 19. `provider_outage_pool_refill`
     - Pass when search-provider gateway/auth/domain failures are treated as provider unavailability and the monitor continues through source-backed fallback discovery instead of lowering coverage gates.
-    - Pass when a failed hard evidence-supply bucket can trigger at most one targeted refill before Card generation.
+   - Pass when a failed hard evidence-supply bucket can trigger at most one targeted refill before Card generation.
+   - Pass when a required Pool importance lane below its source-backed Core minimum triggers targeted refill even if aggregate Pool, routed Pool, and Core totals already pass.
+   - Fail when index-only/watchlist labels satisfy lane coverage and prevent high-quality funding, case, product, or vertical source refill.
     - Fail when an Exa, Tavily, Anysearch, RSS or peer-channel failure triggers repeated whole-monitor collection while minimum evidence supply is already healthy.
 
 20. `case_title_source_precedence`
