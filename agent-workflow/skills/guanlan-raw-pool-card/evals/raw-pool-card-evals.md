@@ -80,6 +80,7 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 
 16. `daily_editorial_freshness_and_recall`
    - Pass when product lifecycle events are no older than 14 days and funding / customer cases are no older than 30 days, using Raw publication metadata, dated URLs, or source-backed page dates.
+   - Pass when a dated URL, structured article metadata, or visible source-page publication date overrides a later search-provider timestamp; fail if an old article is treated as today's high-priority recall only because it was newly discovered.
    - Pass when undated company profiles, explainers, and weak `traceable_summary` captures remain backend-only until dated original evidence and Chinese fact material are repaired.
    - Pass when confirmed IPOs, material AI lawsuits, product shutdowns, and `How X built/deployed Y` customer cases can produce Cards without being hidden by unrelated words or excerpt metadata labels.
 
