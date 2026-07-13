@@ -3386,6 +3386,16 @@ function selectQueriesForPath(allQueries, pathConfig) {
   return selected.slice(0, limit);
 }
 
+function queryRecencyHintForPath(pathConfig) {
+  if (pathConfig.id !== "capital_startup") return "";
+  const [year, monthValue] = date.split("-");
+  const month = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+  ][Number(monthValue) - 1];
+  return month && year ? `announced ${month} ${year}` : `announced ${year}`;
+}
+
 async function runQuerySelectionRegressionFixtures() {
   const queries = [
     { query: "AI product launch official", query_theme: "mature-commercial-signal" },
@@ -3402,6 +3412,10 @@ async function runQuerySelectionRegressionFixtures() {
   }
   if (!selected.some((query) => query.query_theme === "important-funding")) {
     throw new Error(`capital startup path omitted the dedicated funding theme: ${JSON.stringify(selected)}`);
+  }
+  const recencyHint = queryRecencyHintForPath(pathConfigById("capital_startup"));
+  if (!new RegExp(`^announced [A-Z][a-z]+ ${date.slice(0, 4)}$`, "u").test(recencyHint)) {
+    throw new Error(`capital startup path omitted the production-month recency hint: ${recencyHint}`);
   }
   console.log(JSON.stringify({ ok: true, fixture: "capital-startup-query-priority", selected: selected.map((query) => query.query) }, null, 2));
 }
@@ -3813,7 +3827,7 @@ async function collectKeywordSearch() {
   for (const pathConfig of keywordSearchPaths) {
     const queries = selectQueriesForPath(allQueries, pathConfig);
     for (const queryConfig of queries) {
-      const query = [queryConfig.query, pathConfig.querySuffix].filter(Boolean).join(" ");
+      const query = [queryConfig.query, queryRecencyHintForPath(pathConfig), pathConfig.querySuffix].filter(Boolean).join(" ");
       try {
         if (pathConfig.method === "hn") {
           const url = new URL("https://hn.algolia.com/api/v1/search_by_date");
