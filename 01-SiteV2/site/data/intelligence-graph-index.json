@@ -5,7 +5,7 @@
     "businessSignalsColumnVersion": "BSIG-V2.2.0-pipeline-stage-ownership",
     "enterpriseAiLensVersion": "EAI-V1.2.0-raw-card-ingestion-boundary",
     "intelligenceMapColumnVersion": "IMAP-V2.0.0-report-center-opportunity-system",
-    "generatedAt": "2026-07-13T05:39:41.602Z",
+    "generatedAt": "2026-07-13T07:15:37.661Z",
     "activeDate": "2026-07-13",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -47,47 +47,65 @@
   },
   "summary": {
     "activeDate": "2026-07-13",
-    "totalCards": 540,
-    "todayCards": 10,
-    "todayFrontstageCards": 10,
-    "coreSignalCards": 6,
-    "relationshipNodes": 24,
-    "relationshipEdges": 38,
+    "totalCards": 544,
+    "todayCards": 14,
+    "todayFrontstageCards": 14,
+    "coreSignalCards": 8,
+    "relationshipNodes": 28,
+    "relationshipEdges": 52,
     "relationshipClusters": 1,
     "enterpriseAiTransformation": 1,
-    "aiHardwareSignals": 1,
+    "aiHardwareSignals": 8,
     "tagAssociations": 8,
     "trendLinks": 16,
     "trendCandidates": 0
   },
   "dailyLens": {
     "frontstageCardIds": [
-      "SIG-20260713-A07",
+      "SIG-20260713-A08",
+      "SIG-20260713-A04",
       "SIG-20260713-A06",
       "SIG-20260713-A01",
-      "SIG-20260713-A05",
-      "SIG-20260713-A02",
-      "SIG-20260713-A04",
-      "SIG-20260713-A03",
-      "SIG-20260713-A08",
       "SIG-20260713-A10",
-      "SIG-20260713-A09"
+      "SIG-20260713-A05",
+      "SIG-20260713-A09",
+      "SIG-20260713-A02",
+      "SIG-20260713-A03",
+      "SIG-20260713-A11",
+      "SIG-20260713-A07",
+      "SIG-20260713-A12",
+      "SIG-20260713-A14",
+      "SIG-20260713-A13"
     ],
     "coreSignalCardIds": [
-      "SIG-20260713-A07",
+      "SIG-20260713-A08",
       "SIG-20260713-A06",
       "SIG-20260713-A01",
+      "SIG-20260713-A10",
+      "SIG-20260713-A09",
       "SIG-20260713-A02",
-      "SIG-20260713-A04",
-      "SIG-20260713-A08"
+      "SIG-20260713-A11",
+      "SIG-20260713-A07"
     ],
     "enterpriseAiTransformationCardIds": [
       "SIG-20260713-A01"
     ],
     "aiHardwareSignalIds": [
-      "AIHW-2026-07-13-P-020"
+      "AIHW-2026-07-13-P-029",
+      "AIHW-2026-07-13-P-032",
+      "AIHW-SRC-2026-07-13-2",
+      "AIHW-SRC-2026-07-13-3",
+      "AIHW-SRC-2026-07-13-4",
+      "AIHW-SRC-2026-07-13-5",
+      "AIHW-SRC-2026-07-13-6",
+      "AIHW-SRC-2026-07-13-7"
     ],
     "largeCompanyCards": [
+      {
+        "id": "SIG-20260713-A10",
+        "vendor": "anthropic",
+        "title": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期"
+      },
       {
         "id": "SIG-20260713-A05",
         "vendor": "meta",
@@ -99,7 +117,7 @@
         "title": "微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\""
       },
       {
-        "id": "SIG-20260713-A10",
+        "id": "SIG-20260713-A14",
         "vendor": "anthropic",
         "title": "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol"
       }
@@ -143,70 +161,50 @@
       {
         "category": "funding",
         "label": "融资",
-        "today": 0,
-        "last7": 24,
-        "last30": 62,
-        "total": 88,
+        "today": 1,
+        "last7": 25,
+        "last30": 63,
+        "total": 89,
         "topTags": [
           {
             "tag": "evidence-funding",
             "label": "融资",
-            "count": 24
-          },
-          {
-            "tag": "track-ai-agent",
-            "label": "Agentic AI",
-            "count": 17
-          },
-          {
-            "tag": "track-ai-infra",
-            "label": "AI 基础设施",
-            "count": 4
-          },
-          {
-            "tag": "function-customer-service",
-            "label": "客服售后",
-            "count": 2
-          },
-          {
-            "tag": "scenario-customer-ticket",
-            "label": "工单与质检",
-            "count": 2
+            "count": 1
           }
         ]
       },
       {
         "category": "product-service",
         "label": "产品",
-        "today": 10,
-        "last7": 31,
-        "last30": 165,
-        "total": 229,
+        "today": 13,
+        "last7": 34,
+        "last30": 168,
+        "total": 232,
         "topTags": [
           {
             "tag": "evidence-product-launch",
             "label": "产品发布",
-            "count": 10
+            "count": 13
           },
           {
             "tag": "track-ai-infra",
             "label": "AI 基础设施",
-            "count": 6
-          },
-          {
-            "tag": "track-ai-agent",
-            "label": "Agentic AI",
-            "count": 4
+            "count": 9
           },
           {
             "tag": "customer-developer-team",
             "label": "开发团队",
-            "count": 3
+            "count": 5
           },
           {
-            "tag": "evidence-customer-metric",
-            "label": "客户结果指标",
-            "count": 3
+            "tag": "function-engineering",
+            "label": "工程研发",
+            "count": 5
+          },
+          {
+            "tag": "track-ai-coding",
+            "label": "AI Coding",
+            "count": 5
           }
         ]
       }
@@ -214,19 +212,19 @@
   },
   "todayFrontstageCards": [
     {
-      "id": "SIG-20260713-A07",
+      "id": "SIG-20260713-A08",
       "date": "2026-07-13",
       "type": "signal_card",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成",
-      "subject": "腾讯混元",
-      "sourceName": "Tencent",
-      "sourceUrl": "https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface",
+      "subject": "Monogram",
+      "sourceName": "valueaddvc.com",
+      "sourceUrl": "https://valueaddvc.com/pulse/monogram-ai-40m-seed-2026",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 702,
-      "evidenceScore": 62,
+      "rankScore": 710,
+      "evidenceScore": 28,
       "poolRoutes": [
         "core_pool",
         "emerging_pool"
@@ -242,52 +240,99 @@
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {
-        "track": [
-          "track-ai-coding"
-        ],
-        "function": [
-          "function-engineering"
-        ],
+        "track": [],
+        "function": [],
         "scenario": [],
-        "customer": [
-          "customer-developer-team"
+        "customer": [],
+        "evidence": [
+          "evidence-funding"
+        ]
+      },
+      "flatTags": [
+        "evidence-funding"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-funding",
+          "label": "融资"
+        }
+      ],
+      "fact": "Monogram 获得 4000 万美元 种子轮融资。",
+      "evidencePoints": [
+        "Monogram 获得$40M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260713-A04",
+      "date": "2026-07-13",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成",
+      "subject": "腾讯混元",
+      "sourceName": "Tencent",
+      "sourceUrl": "https://tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 644,
+      "evidenceScore": 40,
+      "poolRoutes": [
+        "watchlist"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-infra"
         ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
         "evidence": [
           "evidence-partnership-integration",
-          "evidence-pricing-cost",
           "evidence-customer-metric",
           "evidence-product-launch"
         ]
       },
       "flatTags": [
-        "track-ai-coding",
-        "function-engineering",
-        "customer-developer-team",
+        "track-ai-infra",
         "evidence-partnership-integration",
-        "evidence-pricing-cost",
         "evidence-customer-metric",
         "evidence-product-launch"
       ],
       "displayTags": [
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
-          "id": "customer-developer-team",
-          "label": "开发团队"
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
         },
         {
           "id": "evidence-partnership-integration",
           "label": "合作集成"
+        },
+        {
+          "id": "evidence-customer-metric",
+          "label": "客户结果指标"
         }
       ],
-      "fact": "腾讯混元于 7 月 6 日正式发布 Hy3；正式版提升性能、稳定性和成本效率，并扩大在腾讯产品与服务中的集成。",
-      "evidencePoints": [
-        "Hy3 采用快慢思考融合的 MoE 架构，总参数 295B、激活参数 21B，支持最高 256K 上下文。",
-        "Hy3 API 已在腾讯云 TokenHub 开放，第三方开发者平台将逐步接入。",
-        "腾讯称 Hy3 重点改善软件开发、办公、金融建模、前端设计和游戏制作等生产力任务。"
-      ],
+      "fact": "腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。",
+      "evidencePoints": [],
       "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
       "selectionReasons": [
         "涉及资金流向、预算规模或融资信号",
@@ -297,7 +342,7 @@
       "qualityWarnings": [
         "可见原文片段不足，已降权处理"
       ],
-      "fromCorePool": true
+      "fromCorePool": false
     },
     {
       "id": "SIG-20260713-A06",
@@ -308,7 +353,7 @@
       "title": "DPVR 发布 VisionRay Flow Pro AI 太阳镜：20Mp 摄像头、35g 重量、199 美元",
       "subject": "DPVR",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/796.htm",
+      "sourceUrl": "https://ithome.com/0/975/796.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 644,
@@ -395,7 +440,7 @@
       "title": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
       "subject": "Taskade",
       "sourceName": "taskade.com",
-      "sourceUrl": "https://www.taskade.com/blog/introducing-tsk-1",
+      "sourceUrl": "https://taskade.com/blog/introducing-tsk-1",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 636,
@@ -462,6 +507,92 @@
       "fromCorePool": true
     },
     {
+      "id": "SIG-20260713-A10",
+      "date": "2026-07-13",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期",
+      "subject": "Anthropic",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/974.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 634,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "anthropic",
+      "tags": {
+        "track": [
+          "track-ai-coding",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-pricing-cost",
+          "evidence-customer-metric",
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-coding",
+        "track-ai-infra",
+        "function-engineering",
+        "customer-developer-team",
+        "evidence-pricing-cost",
+        "evidence-customer-metric",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        }
+      ],
+      "fact": "OpenAI 正式向所有用户开放 GPT-5.6 系列全部三款模型（Sol、Terra、Luna），上线后流量达此前峰值两倍。",
+      "evidencePoints": [
+        "6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 2026/7/13 14:17:23 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 南琴梨 的线索投递！",
+        "IT之家 7 月 13 日消息，在上个月率先小范围预览 GPT-5.",
+        "6 系列模型后，OpenAI 于上周正式向所有用户开放了该系列全部三款模型，分别为 GPT-5.",
+        "模型上线后，OpenAI 也根据首批用户的反馈进行了多项调整。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "SIG-20260713-A05",
       "date": "2026-07-13",
       "type": "signal_card",
@@ -470,7 +601,7 @@
       "title": "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力",
       "subject": "Meta",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/832.htm",
+      "sourceUrl": "https://ithome.com/0/975/832.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 606,
@@ -559,6 +690,85 @@
       "fromCorePool": false
     },
     {
+      "id": "SIG-20260713-A09",
+      "date": "2026-07-13",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
+      "subject": "Slimbook",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/977.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 604,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-coding"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-coding",
+        "function-engineering",
+        "customer-developer-team",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "西班牙 Linux 硬件制造商 Slimbook 发布 Nexus 系列人工智能工作站，分为 Nexus Ryzen AI 和 Nexus Threadripper AI 两个分支。",
+      "evidencePoints": [
+        "Nexus Ryzen AI 至高可选 AMD 锐龙 9 处理器、128GB DDR5 内存、4TB PCIe Gen5 NVMe 存储，部分主板上支持双卡 NVIDIA RTX PRO 6000 Blackwell 配置。",
+        "Slimbook 称 Nexus Ryzen AI 面向需要强大工作站的用户设计，同时在性能与价值之间取得卓越平衡，是进入专业本地 AI 开发的切入点。",
+        "其起价为 1995 欧元（IT之家注：现汇率约合 15418 元人民币）。",
+        "定位更高的 Nexus Threadripper AI 则瞄准使用 LLM、密集 AI 培训或高强度专业工作的用户。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "SIG-20260713-A02",
       "date": "2026-07-13",
       "type": "signal_card",
@@ -567,7 +777,7 @@
       "title": "微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\"",
       "subject": "Microsoft",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/816.htm",
+      "sourceUrl": "https://ithome.com/0/975/816.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 594,
@@ -641,74 +851,6 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260713-A04",
-      "date": "2026-07-13",
-      "type": "signal_card",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展",
-      "subject": "小鹏汽车",
-      "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/871.htm",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 586,
-      "evidenceScore": 62,
-      "poolRoutes": [
-        "core_pool",
-        "emerging_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "frontstage_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-infra"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [],
-        "evidence": [
-          "evidence-product-launch"
-        ]
-      },
-      "flatTags": [
-        "track-ai-infra",
-        "evidence-product-launch"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
-        }
-      ],
-      "fact": "小鹏汽车宣布 MONA L03 将于 7 月 16 日在慕尼黑全球上市，定位\"年轻人的第一台智能时尚 SUV\"，预售价 14.38 万元起。",
-      "evidencePoints": [
-        "IT之家 7 月 13 日消息，小鹏汽车今日宣布，小鹏 MONA L03 将于北京时间 7 月 16 日 19:00 在慕尼黑全球正式上市发布，这是小鹏首款中国与欧洲同步上市、同步发布的全球车型。",
-        "IT之家注意到， 小鹏 MONA L03 已于 7 月 2 日开启预售 ，预售价 14.",
-        "IT之家注意到，MONA L03 由前法拉利外饰设计师胡安马主导设计，联合 23 国设计团队打造。"
-      ],
-      "value": "值得关注：有较完整的原文事实支撑。",
-      "selectionReasons": [
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
       "id": "SIG-20260713-A03",
       "date": "2026-07-13",
       "type": "signal_card",
@@ -717,7 +859,7 @@
       "title": "上纬新材发布全球首款可变形个人机器人启元 T1",
       "subject": "上纬新材",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/794.htm",
+      "sourceUrl": "https://ithome.com/0/975/794.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 566,
@@ -786,7 +928,90 @@
       "fromCorePool": false
     },
     {
-      "id": "SIG-20260713-A08",
+      "id": "SIG-20260713-A11",
+      "date": "2026-07-13",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "荣耀 MagicOS 11 爆料：内置 YOYO Claw，支持自定义 AI 大模型",
+      "subject": "荣耀 MagicOS 11 爆料",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/969.htm",
+      "sourceLevel": "B",
+      "importanceScore": 4,
+      "rankScore": 538,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-coding",
+          "track-ai-models",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-coding",
+        "track-ai-models",
+        "track-ai-infra",
+        "function-engineering",
+        "customer-developer-team",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-ai-models",
+          "label": "模型与能力"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        }
+      ],
+      "fact": "博主 @数码闲聊站 爆料荣耀 MagicOS 11 更新，带来全新 YOYO Next，内置 YOYO Claw，支持自定义 AI 大模型，可操控更多第三方 App、执行复杂任务、长期全局记忆、内置技能商店。",
+      "evidencePoints": [
+        "此外，MagicOS 11 深度优化过渡动画和细节动效， 还有 安卓 阵营最果的液态玻璃 UI 。",
+        "据IT之家此前报道，荣耀 MagicOS 11 采用全屏通透视觉设计 + 行业首个动态液态玻璃效果 + 无极自定义， 首批先锋用户已开放体验 。",
+        "据介绍，MagicOS 11 的全新液态玻璃设计， 安卓 首创动态全屏通透，并支持通透自定义 。"
+      ],
+      "value": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "selectionReasons": [
+        "影响 AI 落地的治理、合规或安全边界",
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260713-A07",
       "date": "2026-07-13",
       "type": "signal_card",
       "category": "product-service",
@@ -794,7 +1019,7 @@
       "title": "努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线",
       "subject": "努比亚",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/885.htm",
+      "sourceUrl": "https://ithome.com/0/975/885.htm",
       "sourceLevel": "B",
       "importanceScore": 4,
       "rankScore": 498,
@@ -854,7 +1079,80 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260713-A10",
+      "id": "SIG-20260713-A12",
+      "date": "2026-07-13",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Stigg 发布 2.0：面向 AI 产品的用量运行时",
+      "subject": "Stigg",
+      "sourceName": "stigg.io",
+      "sourceUrl": "https://stigg.io/blog-posts/announcing-stigg-2-0-the-usage-runtime-for-ai-products",
+      "sourceLevel": "B",
+      "importanceScore": 2,
+      "rankScore": 332,
+      "evidenceScore": 34,
+      "poolRoutes": [],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-governance"
+        ],
+        "function": [],
+        "scenario": [
+          "scenario-agent-governance"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-pricing-cost",
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-governance",
+        "scenario-agent-governance",
+        "evidence-pricing-cost",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-governance",
+          "label": "AI 治理"
+        },
+        {
+          "id": "scenario-agent-governance",
+          "label": "Agent 权限治理"
+        },
+        {
+          "id": "evidence-pricing-cost",
+          "label": "定价与成本"
+        }
+      ],
+      "fact": "Stigg将每次 AI 请求视为一次支出决策，并把用量与权限判断放到毫秒级运行时执行。",
+      "evidencePoints": [
+        "stigg 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": false
+    },
+    {
+      "id": "SIG-20260713-A14",
       "date": "2026-07-13",
       "type": "signal_card",
       "category": "product-service",
@@ -932,19 +1230,19 @@
       "fromCorePool": false
     },
     {
-      "id": "SIG-20260713-A09",
+      "id": "SIG-20260713-A13",
       "date": "2026-07-13",
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Stigg 发布 2.0：面向 AI 产品的用量运行时",
-      "subject": "Stigg",
-      "sourceName": "stigg.io",
-      "sourceUrl": "https://www.stigg.io/blog-posts/announcing-stigg-2-0-the-usage-runtime-for-ai-products",
+      "title": "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展",
+      "subject": "小鹏汽车",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://ithome.com/0/975/871.htm",
       "sourceLevel": "B",
       "importanceScore": 2,
-      "rankScore": 328,
-      "evidenceScore": 30,
+      "rankScore": 286,
+      "evidenceScore": 62,
       "poolRoutes": [],
       "poolRefs": [],
       "linkedCardId": "",
@@ -958,48 +1256,40 @@
       "largeVendorKey": "",
       "tags": {
         "track": [
-          "track-ai-governance"
+          "track-ai-infra"
         ],
         "function": [],
-        "scenario": [
-          "scenario-agent-governance"
-        ],
+        "scenario": [],
         "customer": [],
         "evidence": [
-          "evidence-pricing-cost",
           "evidence-product-launch"
         ]
       },
       "flatTags": [
-        "track-ai-governance",
-        "scenario-agent-governance",
-        "evidence-pricing-cost",
+        "track-ai-infra",
         "evidence-product-launch"
       ],
       "displayTags": [
         {
-          "id": "track-ai-governance",
-          "label": "AI 治理"
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
         },
         {
-          "id": "scenario-agent-governance",
-          "label": "Agent 权限治理"
-        },
-        {
-          "id": "evidence-pricing-cost",
-          "label": "定价与成本"
+          "id": "evidence-product-launch",
+          "label": "产品发布"
         }
       ],
-      "fact": "Stigg将每次 AI 请求视为一次支出决策，并把用量与权限判断放到毫秒级运行时执行。",
+      "fact": "小鹏汽车宣布 MONA L03 将于 7 月 16 日在慕尼黑全球上市，定位\"年轻人的第一台智能时尚 SUV\"，预售价 14.38 万元起。",
       "evidencePoints": [
-        "stigg 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "IT之家 7 月 13 日消息，小鹏汽车今日宣布，小鹏 MONA L03 将于北京时间 7 月 16 日 19:00 在慕尼黑全球正式上市发布，这是小鹏首款中国与欧洲同步上市、同步发布的全球车型。",
+        "IT之家注意到， 小鹏 MONA L03 已于 7 月 2 日开启预售 ，预售价 14.",
+        "IT之家注意到，MONA L03 由前法拉利外饰设计师胡安马主导设计，联合 23 国设计团队打造。"
       ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
+      "value": "值得关注：有较完整的原文事实支撑。",
       "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
+        "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": false
@@ -1007,7 +1297,74 @@
   ],
   "aiHardwareSignals": [
     {
-      "id": "AIHW-2026-07-13-P-020",
+      "id": "AIHW-2026-07-13-P-029",
+      "type": "ai_hardware_lens_item",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "trend_innovation",
+      "hardwareTrackLabel": "趋势创新",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
+      "displayTitle": "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
+      "originalTitle": "",
+      "sourceTitle": "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
+      "date": "2026-07-13",
+      "subject": "Slimbook",
+      "source": "ithome.com",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/975/977.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [
+        "track-ai-infra"
+      ],
+      "displayTags": [
+        {
+          "id": "ai-hardware",
+          "label": "AI Hardware"
+        },
+        {
+          "id": "trend_innovation",
+          "label": "趋势创新"
+        }
+      ],
+      "summary": "Nexus Ryzen AI 至高可选 AMD 锐龙 9 处理器、128GB DDR5 内存、4TB PCIe Gen5 NVMe 存储，部分主板上支持双卡 NVIDIA RTX PRO 6000 Blackwell 配置。",
+      "translatedFact": "Nexus Ryzen AI 至高可选 AMD 锐龙 9 处理器、128GB DDR5 内存、4TB PCIe Gen5 NVMe 存储，部分主板上支持双卡 NVIDIA RTX PRO 6000 Blackwell 配置。",
+      "originalHighlights": [
+        "Nexus Ryzen AI 至高可选 AMD 锐龙 9 处理器、128GB DDR5 内存、4TB PCIe Gen5 NVMe 存储，部分主板上支持双卡 NVIDIA RTX PRO 6000 Blackwell 配置。"
+      ],
+      "visibleFragment": "Nexus Ryzen AI 至高可选 AMD 锐龙 9 处理器、128GB DDR5 内存、4TB PCIe Gen5 NVMe 存储，部分主板上支持双卡 NVIDIA RTX PRO 6000 Blackwell 配置。",
+      "sourceLinks": [
+        "https://www.ithome.com/0/975/977.htm"
+      ],
+      "status": "pooled",
+      "promotionStatus": "ai_hardware_lens_only",
+      "evidenceGate": "core_evidence_candidate",
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "frontstageRankScore": 1180,
+      "frontstageEditorialScore": 1180,
+      "frontstageEvidenceScore": 41,
+      "frontstageSelectionReasons": [
+        "AI hardware lens",
+        "趋势创新"
+      ],
+      "frontstageValueDescription": "AI hardware lens item preserved separately from the main Business Signals Card list.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "sourceRef": "P-029",
+      "titleZh": "",
+      "titleTranslationStatus": "not_required",
+      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis"
+    },
+    {
+      "id": "AIHW-2026-07-13-P-032",
       "type": "ai_hardware_lens_item",
       "lensType": "ai_hardware",
       "hardwareTrack": "trend_innovation",
@@ -1066,29 +1423,389 @@
       "frontstageQualityWarnings": [],
       "frontstageGenericCandidate": false,
       "fromCorePool": true,
-      "sourceRef": "P-020",
+      "sourceRef": "P-032",
       "titleZh": "",
       "titleTranslationStatus": "not_required",
       "titleTranslationMethod": "not_available_in_pool_snapshot",
       "factExtractionStatus": "extracted_at_fde_lens_pool_build",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis"
+    },
+    {
+      "id": "AIHW-SRC-2026-07-13-2",
+      "type": "ai_hardware_source_artifact_item",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "investment_funding",
+      "hardwareTrackLabel": "投资融资",
+      "category": "funding",
+      "categoryLabel": "投资融资",
+      "title": "AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round | TechCrunch",
+      "displayTitle": "AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round | TechCrunch",
+      "originalTitle": "AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round | TechCrunch",
+      "sourceTitle": "AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round | TechCrunch",
+      "date": "2026-07-13",
+      "subject": "AI chip startup Rebellions",
+      "source": "techcrunch.com",
+      "sourceName": "techcrunch.com",
+      "sourceUrl": "https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-at-2-3b-valuation-in-pre-ipo-round/",
+      "sourceLevel": "",
+      "importanceScore": 4,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [
+        "track-ai-infra"
+      ],
+      "displayTags": [
+        {
+          "id": "ai-hardware",
+          "label": "AI Hardware"
+        },
+        {
+          "id": "investment_funding",
+          "label": "投资融资"
+        }
+      ],
+      "summary": "AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round | TechCrunch Image Credits:Andriy Onufriyenko / Getty Images AI Copy Share Link # AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round Lucas Ropek 6:00 AM PDT · March 30, 2026 Copy...",
+      "translatedFact": "AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round | TechCrunch Image Credits:Andriy Onufriyenko / Getty Images AI Copy Share Link # AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round Lucas Ropek 6:00 AM PDT · March 30, 2026 Copy...",
+      "originalHighlights": [
+        "AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round | TechCrunch Image Credits:Andriy Onufriyenko / Getty Images AI Copy Share Link # AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round Lucas Ropek 6:00 AM PDT · March 30, 2026 Copy..."
+      ],
+      "visibleFragment": "AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round | TechCrunch Image Credits:Andriy Onufriyenko / Getty Images AI Copy Share Link # AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round Lucas Ropek 6:00 AM PDT · March 30, 2026 Copy...",
+      "sourceLinks": [
+        "https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-at-2-3b-valuation-in-pre-ipo-round/"
+      ],
+      "status": "source_artifact",
+      "promotionStatus": "ai_hardware_lens_only",
+      "evidenceGate": "source_artifact_observation_only",
+      "poolRoutes": [],
+      "frontstageRankScore": 519,
+      "frontstageEditorialScore": 519,
+      "frontstageEvidenceScore": 30,
+      "frontstageSelectionReasons": [
+        "AI hardware source artifact",
+        "投资融资"
+      ],
+      "frontstageValueDescription": "AI hardware source-only item preserved for the separate hardware lens; not promoted to the main Card list.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "sourceRef": "source-artifact"
+    },
+    {
+      "id": "AIHW-SRC-2026-07-13-3",
+      "type": "ai_hardware_source_artifact_item",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "trend_innovation",
+      "hardwareTrackLabel": "趋势创新",
+      "category": "product-service",
+      "categoryLabel": "趋势创新",
+      "title": "AI chip startup Ricursive hits $4B valuation 2 months after launch",
+      "displayTitle": "AI chip startup Ricursive hits $4B valuation 2 months after launch",
+      "originalTitle": "AI chip startup Ricursive hits $4B valuation 2 months after launch",
+      "sourceTitle": "AI chip startup Ricursive hits $4B valuation 2 months after launch",
+      "date": "2026-07-13",
+      "subject": "AI chip startup Ricursive hits",
+      "source": "techcrunch.com",
+      "sourceName": "techcrunch.com",
+      "sourceUrl": "https://techcrunch.com/2026/01/26/ai-chip-startup-ricursive-hits-4b-valuation-two-months-after-launch/",
+      "sourceLevel": "",
+      "importanceScore": 4,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [
+        "track-ai-infra"
+      ],
+      "displayTags": [
+        {
+          "id": "ai-hardware",
+          "label": "AI Hardware"
+        },
+        {
+          "id": "trend_innovation",
+          "label": "趋势创新"
+        }
+      ],
+      "summary": "AI chip startup Ricursive hits $4B valuation 2 months after launch | TechCrunch Copy Share Link In Brief Posted: 4:13 PM PST · January 26, 2026 Image Credits:BlackJack3D / Getty Images - Julie Bort # AI chip startup Ricursive hits $4B valuation 2 months after launch Ricursive Intelligence, a...",
+      "translatedFact": "AI chip startup Ricursive hits $4B valuation 2 months after launch | TechCrunch Copy Share Link In Brief Posted: 4:13 PM PST · January 26, 2026 Image Credits:BlackJack3D / Getty Images - Julie Bort # AI chip startup Ricursive hits $4B valuation 2 months after launch Ricursive Intelligence, a...",
+      "originalHighlights": [
+        "AI chip startup Ricursive hits $4B valuation 2 months after launch | TechCrunch Copy Share Link In Brief Posted: 4:13 PM PST · January 26, 2026 Image Credits:BlackJack3D / Getty Images - Julie Bort # AI chip startup Ricursive hits $4B valuation 2 months after launch Ricursive Intelligence, a..."
+      ],
+      "visibleFragment": "AI chip startup Ricursive hits $4B valuation 2 months after launch | TechCrunch Copy Share Link In Brief Posted: 4:13 PM PST · January 26, 2026 Image Credits:BlackJack3D / Getty Images - Julie Bort # AI chip startup Ricursive hits $4B valuation 2 months after launch Ricursive Intelligence, a...",
+      "sourceLinks": [
+        "https://techcrunch.com/2026/01/26/ai-chip-startup-ricursive-hits-4b-valuation-two-months-after-launch/"
+      ],
+      "status": "source_artifact",
+      "promotionStatus": "ai_hardware_lens_only",
+      "evidenceGate": "source_artifact_observation_only",
+      "poolRoutes": [],
+      "frontstageRankScore": 518,
+      "frontstageEditorialScore": 518,
+      "frontstageEvidenceScore": 30,
+      "frontstageSelectionReasons": [
+        "AI hardware source artifact",
+        "趋势创新"
+      ],
+      "frontstageValueDescription": "AI hardware source-only item preserved for the separate hardware lens; not promoted to the main Card list.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "sourceRef": "source-artifact"
+    },
+    {
+      "id": "AIHW-SRC-2026-07-13-4",
+      "type": "ai_hardware_source_artifact_item",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "trend_innovation",
+      "hardwareTrackLabel": "趋势创新",
+      "category": "product-service",
+      "categoryLabel": "趋势创新",
+      "title": "Sources: Naveen Rao's new AI hardware startup targets $5B ...",
+      "displayTitle": "Sources: Naveen Rao's new AI hardware startup targets $5B ...",
+      "originalTitle": "Sources: Naveen Rao's new AI hardware startup targets $5B ...",
+      "sourceTitle": "Sources: Naveen Rao's new AI hardware startup targets $5B ...",
+      "date": "2026-07-13",
+      "subject": "Sources",
+      "source": "techcrunch.com",
+      "sourceName": "techcrunch.com",
+      "sourceUrl": "https://techcrunch.com/2025/10/03/sources-naveen-raos-new-ai-hardware-startup-targets-5b-valuation-with-backing-from-a16z/",
+      "sourceLevel": "",
+      "importanceScore": 4,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [
+        "track-ai-infra"
+      ],
+      "displayTags": [
+        {
+          "id": "ai-hardware",
+          "label": "AI Hardware"
+        },
+        {
+          "id": "trend_innovation",
+          "label": "趋势创新"
+        }
+      ],
+      "summary": "Sources: Naveen Rao’s new AI hardware startup targets $5B valuation with backing from a16z | TechCrunch –:–:–:– The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now. Founder Summit ticket savings of up to $190 end June 26. Join 1,000+ founders and VCs for all-day...",
+      "translatedFact": "Sources: Naveen Rao’s new AI hardware startup targets $5B valuation with backing from a16z | TechCrunch –:–:–:– The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now. Founder Summit ticket savings of up to $190 end June 26. Join 1,000+ founders and VCs for all-day...",
+      "originalHighlights": [
+        "Sources: Naveen Rao’s new AI hardware startup targets $5B valuation with backing from a16z | TechCrunch –:–:–:– The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now. Founder Summit ticket savings of up to $190 end June 26. Join 1,000+ founders and VCs for all-day..."
+      ],
+      "visibleFragment": "Sources: Naveen Rao’s new AI hardware startup targets $5B valuation with backing from a16z | TechCrunch –:–:–:– The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now. Founder Summit ticket savings of up to $190 end June 26. Join 1,000+ founders and VCs for all-day...",
+      "sourceLinks": [
+        "https://techcrunch.com/2025/10/03/sources-naveen-raos-new-ai-hardware-startup-targets-5b-valuation-with-backing-from-a16z/"
+      ],
+      "status": "source_artifact",
+      "promotionStatus": "ai_hardware_lens_only",
+      "evidenceGate": "source_artifact_observation_only",
+      "poolRoutes": [],
+      "frontstageRankScore": 517,
+      "frontstageEditorialScore": 517,
+      "frontstageEvidenceScore": 30,
+      "frontstageSelectionReasons": [
+        "AI hardware source artifact",
+        "趋势创新"
+      ],
+      "frontstageValueDescription": "AI hardware source-only item preserved for the separate hardware lens; not promoted to the main Card list.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "sourceRef": "source-artifact"
+    },
+    {
+      "id": "AIHW-SRC-2026-07-13-5",
+      "type": "ai_hardware_source_artifact_item",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "investment_funding",
+      "hardwareTrackLabel": "投资融资",
+      "category": "funding",
+      "categoryLabel": "投资融资",
+      "title": "Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch",
+      "displayTitle": "Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch",
+      "originalTitle": "Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch",
+      "sourceTitle": "Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch",
+      "date": "2026-07-13",
+      "subject": "未标注主体",
+      "source": "techcrunch.com",
+      "sourceName": "techcrunch.com",
+      "sourceUrl": "https://techcrunch.com/2025/03/31/spark-mayfield-and-kleiner-perkins-pour-another-75m-into-ai-data-center-chipmaker-retym/",
+      "sourceLevel": "",
+      "importanceScore": 4,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [
+        "track-ai-infra"
+      ],
+      "displayTags": [
+        {
+          "id": "ai-hardware",
+          "label": "AI Hardware"
+        },
+        {
+          "id": "investment_funding",
+          "label": "投资融资"
+        }
+      ],
+      "summary": "Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch Image Credits:Just_Super / Getty Images Venture Copy Share Link # Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym Julie Bort 11:42 AM PDT · March 3...",
+      "translatedFact": "Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch Image Credits:Just_Super / Getty Images Venture Copy Share Link # Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym Julie Bort 11:42 AM PDT · March 3...",
+      "originalHighlights": [
+        "Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch Image Credits:Just_Super / Getty Images Venture Copy Share Link # Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym Julie Bort 11:42 AM PDT · March 3..."
+      ],
+      "visibleFragment": "Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch Image Credits:Just_Super / Getty Images Venture Copy Share Link # Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym Julie Bort 11:42 AM PDT · March 3...",
+      "sourceLinks": [
+        "https://techcrunch.com/2025/03/31/spark-mayfield-and-kleiner-perkins-pour-another-75m-into-ai-data-center-chipmaker-retym/"
+      ],
+      "status": "source_artifact",
+      "promotionStatus": "ai_hardware_lens_only",
+      "evidenceGate": "source_artifact_observation_only",
+      "poolRoutes": [],
+      "frontstageRankScore": 516,
+      "frontstageEditorialScore": 516,
+      "frontstageEvidenceScore": 30,
+      "frontstageSelectionReasons": [
+        "AI hardware source artifact",
+        "投资融资"
+      ],
+      "frontstageValueDescription": "AI hardware source-only item preserved for the separate hardware lens; not promoted to the main Card list.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "sourceRef": "source-artifact"
+    },
+    {
+      "id": "AIHW-SRC-2026-07-13-6",
+      "type": "ai_hardware_source_artifact_item",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "trend_innovation",
+      "hardwareTrackLabel": "趋势创新",
+      "category": "product-service",
+      "categoryLabel": "趋势创新",
+      "title": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch",
+      "displayTitle": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch",
+      "originalTitle": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch",
+      "sourceTitle": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch",
+      "date": "2026-07-13",
+      "subject": "Nvidia competitor Etched hits",
+      "source": "techcrunch.com",
+      "sourceName": "techcrunch.com",
+      "sourceUrl": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
+      "sourceLevel": "",
+      "importanceScore": 4,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [
+        "track-ai-infra"
+      ],
+      "displayTags": [
+        {
+          "id": "ai-hardware",
+          "label": "AI Hardware"
+        },
+        {
+          "id": "trend_innovation",
+          "label": "趋势创新"
+        }
+      ],
+      "summary": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch Image Credits:Etched AI Copy Share Link # Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip Julie Bort 11:13 AM PDT · June 30, 2026 Copy Share Link Nvidia AI chip competitor Etched issued a... / query=AI chip startup...",
+      "translatedFact": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch Image Credits:Etched AI Copy Share Link # Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip Julie Bort 11:13 AM PDT · June 30, 2026 Copy Share Link Nvidia AI chip competitor Etched issued a... / query=AI chip startup...",
+      "originalHighlights": [
+        "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch Image Credits:Etched AI Copy Share Link # Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip Julie Bort 11:13 AM PDT · June 30, 2026 Copy Share Link Nvidia AI chip competitor Etched issued a... / query=AI chip startup..."
+      ],
+      "visibleFragment": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip | TechCrunch Image Credits:Etched AI Copy Share Link # Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip Julie Bort 11:13 AM PDT · June 30, 2026 Copy Share Link Nvidia AI chip competitor Etched issued a... / query=AI chip startup...",
+      "sourceLinks": [
+        "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/"
+      ],
+      "status": "source_artifact",
+      "promotionStatus": "ai_hardware_lens_only",
+      "evidenceGate": "source_artifact_observation_only",
+      "poolRoutes": [],
+      "frontstageRankScore": 515,
+      "frontstageEditorialScore": 515,
+      "frontstageEvidenceScore": 30,
+      "frontstageSelectionReasons": [
+        "AI hardware source artifact",
+        "趋势创新"
+      ],
+      "frontstageValueDescription": "AI hardware source-only item preserved for the separate hardware lens; not promoted to the main Card list.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "sourceRef": "source-artifact"
+    },
+    {
+      "id": "AIHW-SRC-2026-07-13-7",
+      "type": "ai_hardware_source_artifact_item",
+      "lensType": "ai_hardware",
+      "hardwareTrack": "investment_funding",
+      "hardwareTrackLabel": "投资融资",
+      "category": "funding",
+      "categoryLabel": "投资融资",
+      "title": "Startup Oxmiq raises $35 million to build chip architecture to lower cost of AI",
+      "displayTitle": "Startup Oxmiq raises $35 million to build chip architecture to lower cost of AI",
+      "originalTitle": "Startup Oxmiq raises $35 million to build chip architecture to lower cost of AI",
+      "sourceTitle": "Startup Oxmiq raises $35 million to build chip architecture to lower cost of AI",
+      "date": "2026-07-13",
+      "subject": "Startup Oxmiq",
+      "source": "finance.yahoo.com",
+      "sourceName": "finance.yahoo.com",
+      "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/startup-oxmiq-raises-35-million-131735379.html",
+      "sourceLevel": "",
+      "importanceScore": 4,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [
+        "track-ai-infra"
+      ],
+      "displayTags": [
+        {
+          "id": "ai-hardware",
+          "label": "AI Hardware"
+        },
+        {
+          "id": "investment_funding",
+          "label": "投资融资"
+        }
+      ],
+      "summary": "Startup Oxmiq raises $35 million to build chip architecture to lower cost of AI Oops, something went wrong # Startup Oxmiq raises $35 million to build chip architecture to lower cost of AI FILE PHOTO: Illustration shows AI (Artificial Intelligence) letters and robot hand miniature · Reuters By M... / query=AI chip sta...",
+      "translatedFact": "Startup Oxmiq raises $35 million to build chip architecture to lower cost of AI Oops, something went wrong # Startup Oxmiq raises $35 million to build chip architecture to lower cost of AI FILE PHOTO: Illustration shows AI (Artificial Intelligence) letters and robot hand miniature · Reuters By M... / query=AI chip sta...",
+      "originalHighlights": [
+        "Startup Oxmiq raises $35 million to build chip architecture to lower cost of AI Oops, something went wrong # Startup Oxmiq raises $35 million to build chip architecture to lower cost of AI FILE PHOTO: Illustration shows AI (Artificial Intelligence) letters and robot hand miniature · Reuters By M... / query=AI chip sta..."
+      ],
+      "visibleFragment": "Startup Oxmiq raises $35 million to build chip architecture to lower cost of AI Oops, something went wrong # Startup Oxmiq raises $35 million to build chip architecture to lower cost of AI FILE PHOTO: Illustration shows AI (Artificial Intelligence) letters and robot hand miniature · Reuters By M... / query=AI chip sta...",
+      "sourceLinks": [
+        "https://finance.yahoo.com/technology/ai/articles/startup-oxmiq-raises-35-million-131735379.html"
+      ],
+      "status": "source_artifact",
+      "promotionStatus": "ai_hardware_lens_only",
+      "evidenceGate": "source_artifact_observation_only",
+      "poolRoutes": [],
+      "frontstageRankScore": 514,
+      "frontstageEditorialScore": 514,
+      "frontstageEvidenceScore": 30,
+      "frontstageSelectionReasons": [
+        "AI hardware source artifact",
+        "投资融资"
+      ],
+      "frontstageValueDescription": "AI hardware source-only item preserved for the separate hardware lens; not promoted to the main Card list.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "sourceRef": "source-artifact"
     }
   ],
   "cards": [
     {
-      "id": "SIG-20260713-A07",
+      "id": "SIG-20260713-A08",
       "date": "2026-07-13",
       "type": "signal_card",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成",
-      "subject": "腾讯混元",
-      "sourceName": "Tencent",
-      "sourceUrl": "https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface",
+      "subject": "Monogram",
+      "sourceName": "valueaddvc.com",
+      "sourceUrl": "https://valueaddvc.com/pulse/monogram-ai-40m-seed-2026",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 702,
-      "evidenceScore": 62,
+      "rankScore": 710,
+      "evidenceScore": 28,
       "poolRoutes": [
         "core_pool",
         "emerging_pool"
@@ -1104,52 +1821,99 @@
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {
-        "track": [
-          "track-ai-coding"
-        ],
-        "function": [
-          "function-engineering"
-        ],
+        "track": [],
+        "function": [],
         "scenario": [],
-        "customer": [
-          "customer-developer-team"
+        "customer": [],
+        "evidence": [
+          "evidence-funding"
+        ]
+      },
+      "flatTags": [
+        "evidence-funding"
+      ],
+      "displayTags": [
+        {
+          "id": "evidence-funding",
+          "label": "融资"
+        }
+      ],
+      "fact": "Monogram 获得 4000 万美元 种子轮融资。",
+      "evidencePoints": [
+        "Monogram 获得$40M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260713-A04",
+      "date": "2026-07-13",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成",
+      "subject": "腾讯混元",
+      "sourceName": "Tencent",
+      "sourceUrl": "https://tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 644,
+      "evidenceScore": 40,
+      "poolRoutes": [
+        "watchlist"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-infra"
         ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
         "evidence": [
           "evidence-partnership-integration",
-          "evidence-pricing-cost",
           "evidence-customer-metric",
           "evidence-product-launch"
         ]
       },
       "flatTags": [
-        "track-ai-coding",
-        "function-engineering",
-        "customer-developer-team",
+        "track-ai-infra",
         "evidence-partnership-integration",
-        "evidence-pricing-cost",
         "evidence-customer-metric",
         "evidence-product-launch"
       ],
       "displayTags": [
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
-          "id": "customer-developer-team",
-          "label": "开发团队"
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
         },
         {
           "id": "evidence-partnership-integration",
           "label": "合作集成"
+        },
+        {
+          "id": "evidence-customer-metric",
+          "label": "客户结果指标"
         }
       ],
-      "fact": "腾讯混元于 7 月 6 日正式发布 Hy3；正式版提升性能、稳定性和成本效率，并扩大在腾讯产品与服务中的集成。",
-      "evidencePoints": [
-        "Hy3 采用快慢思考融合的 MoE 架构，总参数 295B、激活参数 21B，支持最高 256K 上下文。",
-        "Hy3 API 已在腾讯云 TokenHub 开放，第三方开发者平台将逐步接入。",
-        "腾讯称 Hy3 重点改善软件开发、办公、金融建模、前端设计和游戏制作等生产力任务。"
-      ],
+      "fact": "腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。",
+      "evidencePoints": [],
       "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
       "selectionReasons": [
         "涉及资金流向、预算规模或融资信号",
@@ -1159,7 +1923,7 @@
       "qualityWarnings": [
         "可见原文片段不足，已降权处理"
       ],
-      "fromCorePool": true
+      "fromCorePool": false
     },
     {
       "id": "SIG-20260713-A06",
@@ -1170,7 +1934,7 @@
       "title": "DPVR 发布 VisionRay Flow Pro AI 太阳镜：20Mp 摄像头、35g 重量、199 美元",
       "subject": "DPVR",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/796.htm",
+      "sourceUrl": "https://ithome.com/0/975/796.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 644,
@@ -1257,7 +2021,7 @@
       "title": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
       "subject": "Taskade",
       "sourceName": "taskade.com",
-      "sourceUrl": "https://www.taskade.com/blog/introducing-tsk-1",
+      "sourceUrl": "https://taskade.com/blog/introducing-tsk-1",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 636,
@@ -1324,6 +2088,92 @@
       "fromCorePool": true
     },
     {
+      "id": "SIG-20260713-A10",
+      "date": "2026-07-13",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期",
+      "subject": "Anthropic",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/974.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 634,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "anthropic",
+      "tags": {
+        "track": [
+          "track-ai-coding",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-pricing-cost",
+          "evidence-customer-metric",
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-coding",
+        "track-ai-infra",
+        "function-engineering",
+        "customer-developer-team",
+        "evidence-pricing-cost",
+        "evidence-customer-metric",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        }
+      ],
+      "fact": "OpenAI 正式向所有用户开放 GPT-5.6 系列全部三款模型（Sol、Terra、Luna），上线后流量达此前峰值两倍。",
+      "evidencePoints": [
+        "6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 2026/7/13 14:17:23 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 南琴梨 的线索投递！",
+        "IT之家 7 月 13 日消息，在上个月率先小范围预览 GPT-5.",
+        "6 系列模型后，OpenAI 于上周正式向所有用户开放了该系列全部三款模型，分别为 GPT-5.",
+        "模型上线后，OpenAI 也根据首批用户的反馈进行了多项调整。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "SIG-20260713-A05",
       "date": "2026-07-13",
       "type": "signal_card",
@@ -1332,7 +2182,7 @@
       "title": "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力",
       "subject": "Meta",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/832.htm",
+      "sourceUrl": "https://ithome.com/0/975/832.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 606,
@@ -1421,6 +2271,85 @@
       "fromCorePool": false
     },
     {
+      "id": "SIG-20260713-A09",
+      "date": "2026-07-13",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
+      "subject": "Slimbook",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/977.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 604,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-coding"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-coding",
+        "function-engineering",
+        "customer-developer-team",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "西班牙 Linux 硬件制造商 Slimbook 发布 Nexus 系列人工智能工作站，分为 Nexus Ryzen AI 和 Nexus Threadripper AI 两个分支。",
+      "evidencePoints": [
+        "Nexus Ryzen AI 至高可选 AMD 锐龙 9 处理器、128GB DDR5 内存、4TB PCIe Gen5 NVMe 存储，部分主板上支持双卡 NVIDIA RTX PRO 6000 Blackwell 配置。",
+        "Slimbook 称 Nexus Ryzen AI 面向需要强大工作站的用户设计，同时在性能与价值之间取得卓越平衡，是进入专业本地 AI 开发的切入点。",
+        "其起价为 1995 欧元（IT之家注：现汇率约合 15418 元人民币）。",
+        "定位更高的 Nexus Threadripper AI 则瞄准使用 LLM、密集 AI 培训或高强度专业工作的用户。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "SIG-20260713-A02",
       "date": "2026-07-13",
       "type": "signal_card",
@@ -1429,7 +2358,7 @@
       "title": "微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\"",
       "subject": "Microsoft",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/816.htm",
+      "sourceUrl": "https://ithome.com/0/975/816.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 594,
@@ -1503,74 +2432,6 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260713-A04",
-      "date": "2026-07-13",
-      "type": "signal_card",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展",
-      "subject": "小鹏汽车",
-      "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/871.htm",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 586,
-      "evidenceScore": 62,
-      "poolRoutes": [
-        "core_pool",
-        "emerging_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "frontstage_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-infra"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [],
-        "evidence": [
-          "evidence-product-launch"
-        ]
-      },
-      "flatTags": [
-        "track-ai-infra",
-        "evidence-product-launch"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
-        }
-      ],
-      "fact": "小鹏汽车宣布 MONA L03 将于 7 月 16 日在慕尼黑全球上市，定位\"年轻人的第一台智能时尚 SUV\"，预售价 14.38 万元起。",
-      "evidencePoints": [
-        "IT之家 7 月 13 日消息，小鹏汽车今日宣布，小鹏 MONA L03 将于北京时间 7 月 16 日 19:00 在慕尼黑全球正式上市发布，这是小鹏首款中国与欧洲同步上市、同步发布的全球车型。",
-        "IT之家注意到， 小鹏 MONA L03 已于 7 月 2 日开启预售 ，预售价 14.",
-        "IT之家注意到，MONA L03 由前法拉利外饰设计师胡安马主导设计，联合 23 国设计团队打造。"
-      ],
-      "value": "值得关注：有较完整的原文事实支撑。",
-      "selectionReasons": [
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
       "id": "SIG-20260713-A03",
       "date": "2026-07-13",
       "type": "signal_card",
@@ -1579,7 +2440,7 @@
       "title": "上纬新材发布全球首款可变形个人机器人启元 T1",
       "subject": "上纬新材",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/794.htm",
+      "sourceUrl": "https://ithome.com/0/975/794.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 566,
@@ -1648,7 +2509,90 @@
       "fromCorePool": false
     },
     {
-      "id": "SIG-20260713-A08",
+      "id": "SIG-20260713-A11",
+      "date": "2026-07-13",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "荣耀 MagicOS 11 爆料：内置 YOYO Claw，支持自定义 AI 大模型",
+      "subject": "荣耀 MagicOS 11 爆料",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/969.htm",
+      "sourceLevel": "B",
+      "importanceScore": 4,
+      "rankScore": 538,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-coding",
+          "track-ai-models",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-coding",
+        "track-ai-models",
+        "track-ai-infra",
+        "function-engineering",
+        "customer-developer-team",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-ai-models",
+          "label": "模型与能力"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        }
+      ],
+      "fact": "博主 @数码闲聊站 爆料荣耀 MagicOS 11 更新，带来全新 YOYO Next，内置 YOYO Claw，支持自定义 AI 大模型，可操控更多第三方 App、执行复杂任务、长期全局记忆、内置技能商店。",
+      "evidencePoints": [
+        "此外，MagicOS 11 深度优化过渡动画和细节动效， 还有 安卓 阵营最果的液态玻璃 UI 。",
+        "据IT之家此前报道，荣耀 MagicOS 11 采用全屏通透视觉设计 + 行业首个动态液态玻璃效果 + 无极自定义， 首批先锋用户已开放体验 。",
+        "据介绍，MagicOS 11 的全新液态玻璃设计， 安卓 首创动态全屏通透，并支持通透自定义 。"
+      ],
+      "value": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "selectionReasons": [
+        "影响 AI 落地的治理、合规或安全边界",
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260713-A07",
       "date": "2026-07-13",
       "type": "signal_card",
       "category": "product-service",
@@ -1656,7 +2600,7 @@
       "title": "努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线",
       "subject": "努比亚",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/885.htm",
+      "sourceUrl": "https://ithome.com/0/975/885.htm",
       "sourceLevel": "B",
       "importanceScore": 4,
       "rankScore": 498,
@@ -1716,7 +2660,80 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260713-A10",
+      "id": "SIG-20260713-A12",
+      "date": "2026-07-13",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Stigg 发布 2.0：面向 AI 产品的用量运行时",
+      "subject": "Stigg",
+      "sourceName": "stigg.io",
+      "sourceUrl": "https://stigg.io/blog-posts/announcing-stigg-2-0-the-usage-runtime-for-ai-products",
+      "sourceLevel": "B",
+      "importanceScore": 2,
+      "rankScore": 332,
+      "evidenceScore": 34,
+      "poolRoutes": [],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-governance"
+        ],
+        "function": [],
+        "scenario": [
+          "scenario-agent-governance"
+        ],
+        "customer": [],
+        "evidence": [
+          "evidence-pricing-cost",
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-governance",
+        "scenario-agent-governance",
+        "evidence-pricing-cost",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-governance",
+          "label": "AI 治理"
+        },
+        {
+          "id": "scenario-agent-governance",
+          "label": "Agent 权限治理"
+        },
+        {
+          "id": "evidence-pricing-cost",
+          "label": "定价与成本"
+        }
+      ],
+      "fact": "Stigg将每次 AI 请求视为一次支出决策，并把用量与权限判断放到毫秒级运行时执行。",
+      "evidencePoints": [
+        "stigg 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": false
+    },
+    {
+      "id": "SIG-20260713-A14",
       "date": "2026-07-13",
       "type": "signal_card",
       "category": "product-service",
@@ -1794,19 +2811,19 @@
       "fromCorePool": false
     },
     {
-      "id": "SIG-20260713-A09",
+      "id": "SIG-20260713-A13",
       "date": "2026-07-13",
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Stigg 发布 2.0：面向 AI 产品的用量运行时",
-      "subject": "Stigg",
-      "sourceName": "stigg.io",
-      "sourceUrl": "https://www.stigg.io/blog-posts/announcing-stigg-2-0-the-usage-runtime-for-ai-products",
+      "title": "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展",
+      "subject": "小鹏汽车",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://ithome.com/0/975/871.htm",
       "sourceLevel": "B",
       "importanceScore": 2,
-      "rankScore": 328,
-      "evidenceScore": 30,
+      "rankScore": 286,
+      "evidenceScore": 62,
       "poolRoutes": [],
       "poolRefs": [],
       "linkedCardId": "",
@@ -1820,48 +2837,40 @@
       "largeVendorKey": "",
       "tags": {
         "track": [
-          "track-ai-governance"
+          "track-ai-infra"
         ],
         "function": [],
-        "scenario": [
-          "scenario-agent-governance"
-        ],
+        "scenario": [],
         "customer": [],
         "evidence": [
-          "evidence-pricing-cost",
           "evidence-product-launch"
         ]
       },
       "flatTags": [
-        "track-ai-governance",
-        "scenario-agent-governance",
-        "evidence-pricing-cost",
+        "track-ai-infra",
         "evidence-product-launch"
       ],
       "displayTags": [
         {
-          "id": "track-ai-governance",
-          "label": "AI 治理"
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
         },
         {
-          "id": "scenario-agent-governance",
-          "label": "Agent 权限治理"
-        },
-        {
-          "id": "evidence-pricing-cost",
-          "label": "定价与成本"
+          "id": "evidence-product-launch",
+          "label": "产品发布"
         }
       ],
-      "fact": "Stigg将每次 AI 请求视为一次支出决策，并把用量与权限判断放到毫秒级运行时执行。",
+      "fact": "小鹏汽车宣布 MONA L03 将于 7 月 16 日在慕尼黑全球上市，定位\"年轻人的第一台智能时尚 SUV\"，预售价 14.38 万元起。",
       "evidencePoints": [
-        "stigg 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "IT之家 7 月 13 日消息，小鹏汽车今日宣布，小鹏 MONA L03 将于北京时间 7 月 16 日 19:00 在慕尼黑全球正式上市发布，这是小鹏首款中国与欧洲同步上市、同步发布的全球车型。",
+        "IT之家注意到， 小鹏 MONA L03 已于 7 月 2 日开启预售 ，预售价 14.",
+        "IT之家注意到，MONA L03 由前法拉利外饰设计师胡安马主导设计，联合 23 国设计团队打造。"
       ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
+      "value": "值得关注：有较完整的原文事实支撑。",
       "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
+        "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": false
@@ -42258,19 +43267,19 @@
   ],
   "coreSignalCards": [
     {
-      "id": "SIG-20260713-A07",
+      "id": "SIG-20260713-A08",
       "date": "2026-07-13",
       "type": "signal_card",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成",
-      "subject": "腾讯混元",
-      "sourceName": "Tencent",
-      "sourceUrl": "https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface",
+      "subject": "Monogram",
+      "sourceName": "valueaddvc.com",
+      "sourceUrl": "https://valueaddvc.com/pulse/monogram-ai-40m-seed-2026",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 702,
-      "evidenceScore": 62,
+      "rankScore": 710,
+      "evidenceScore": 28,
       "poolRoutes": [
         "core_pool",
         "emerging_pool"
@@ -42286,60 +43295,34 @@
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {
-        "track": [
-          "track-ai-coding"
-        ],
-        "function": [
-          "function-engineering"
-        ],
+        "track": [],
+        "function": [],
         "scenario": [],
-        "customer": [
-          "customer-developer-team"
-        ],
+        "customer": [],
         "evidence": [
-          "evidence-partnership-integration",
-          "evidence-pricing-cost",
-          "evidence-customer-metric",
-          "evidence-product-launch"
+          "evidence-funding"
         ]
       },
       "flatTags": [
-        "track-ai-coding",
-        "function-engineering",
-        "customer-developer-team",
-        "evidence-partnership-integration",
-        "evidence-pricing-cost",
-        "evidence-customer-metric",
-        "evidence-product-launch"
+        "evidence-funding"
       ],
       "displayTags": [
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
-          "id": "customer-developer-team",
-          "label": "开发团队"
-        },
-        {
-          "id": "evidence-partnership-integration",
-          "label": "合作集成"
+          "id": "evidence-funding",
+          "label": "融资"
         }
       ],
-      "fact": "腾讯混元于 7 月 6 日正式发布 Hy3；正式版提升性能、稳定性和成本效率，并扩大在腾讯产品与服务中的集成。",
+      "fact": "Monogram 获得 4000 万美元 种子轮融资。",
       "evidencePoints": [
-        "Hy3 采用快慢思考融合的 MoE 架构，总参数 295B、激活参数 21B，支持最高 256K 上下文。",
-        "Hy3 API 已在腾讯云 TokenHub 开放，第三方开发者平台将逐步接入。",
-        "腾讯称 Hy3 重点改善软件开发、办公、金融建模、前端设计和游戏制作等生产力任务。"
+        "Monogram 获得$40M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
       ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景。",
       "selectionReasons": [
         "涉及资金流向、预算规模或融资信号",
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
+        "能观察真实客户、业务流程或采购场景"
       ],
       "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
       ],
       "fromCorePool": true
     },
@@ -42352,7 +43335,7 @@
       "title": "DPVR 发布 VisionRay Flow Pro AI 太阳镜：20Mp 摄像头、35g 重量、199 美元",
       "subject": "DPVR",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/796.htm",
+      "sourceUrl": "https://ithome.com/0/975/796.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 644,
@@ -42439,7 +43422,7 @@
       "title": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
       "subject": "Taskade",
       "sourceName": "taskade.com",
-      "sourceUrl": "https://www.taskade.com/blog/introducing-tsk-1",
+      "sourceUrl": "https://taskade.com/blog/introducing-tsk-1",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 636,
@@ -42506,6 +43489,171 @@
       "fromCorePool": true
     },
     {
+      "id": "SIG-20260713-A10",
+      "date": "2026-07-13",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期",
+      "subject": "Anthropic",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/974.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 634,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "anthropic",
+      "tags": {
+        "track": [
+          "track-ai-coding",
+          "track-ai-infra"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-pricing-cost",
+          "evidence-customer-metric",
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-coding",
+        "track-ai-infra",
+        "function-engineering",
+        "customer-developer-team",
+        "evidence-pricing-cost",
+        "evidence-customer-metric",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        }
+      ],
+      "fact": "OpenAI 正式向所有用户开放 GPT-5.6 系列全部三款模型（Sol、Terra、Luna），上线后流量达此前峰值两倍。",
+      "evidencePoints": [
+        "6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期 2026/7/13 14:17:23 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 南琴梨 的线索投递！",
+        "IT之家 7 月 13 日消息，在上个月率先小范围预览 GPT-5.",
+        "6 系列模型后，OpenAI 于上周正式向所有用户开放了该系列全部三款模型，分别为 GPT-5.",
+        "模型上线后，OpenAI 也根据首批用户的反馈进行了多项调整。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260713-A09",
+      "date": "2026-07-13",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器",
+      "subject": "Slimbook",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/975/977.htm",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 604,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "frontstage_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-coding"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-ai-coding",
+        "function-engineering",
+        "customer-developer-team",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ],
+      "fact": "西班牙 Linux 硬件制造商 Slimbook 发布 Nexus 系列人工智能工作站，分为 Nexus Ryzen AI 和 Nexus Threadripper AI 两个分支。",
+      "evidencePoints": [
+        "Nexus Ryzen AI 至高可选 AMD 锐龙 9 处理器、128GB DDR5 内存、4TB PCIe Gen5 NVMe 存储，部分主板上支持双卡 NVIDIA RTX PRO 6000 Blackwell 配置。",
+        "Slimbook 称 Nexus Ryzen AI 面向需要强大工作站的用户设计，同时在性能与价值之间取得卓越平衡，是进入专业本地 AI 开发的切入点。",
+        "其起价为 1995 欧元（IT之家注：现汇率约合 15418 元人民币）。",
+        "定位更高的 Nexus Threadripper AI 则瞄准使用 LLM、密集 AI 培训或高强度专业工作的用户。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "SIG-20260713-A02",
       "date": "2026-07-13",
       "type": "signal_card",
@@ -42514,7 +43662,7 @@
       "title": "微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\"",
       "subject": "Microsoft",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/816.htm",
+      "sourceUrl": "https://ithome.com/0/975/816.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 594,
@@ -42588,22 +43736,21 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260713-A04",
+      "id": "SIG-20260713-A11",
       "date": "2026-07-13",
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展",
-      "subject": "小鹏汽车",
+      "title": "荣耀 MagicOS 11 爆料：内置 YOYO Claw，支持自定义 AI 大模型",
+      "subject": "荣耀 MagicOS 11 爆料",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/871.htm",
+      "sourceUrl": "https://www.ithome.com/0/975/969.htm",
       "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 586,
+      "importanceScore": 4,
+      "rankScore": 538,
       "evidenceScore": 62,
       "poolRoutes": [
-        "core_pool",
-        "emerging_pool"
+        "core_pool"
       ],
       "poolRefs": [],
       "linkedCardId": "",
@@ -42617,38 +43764,54 @@
       "largeVendorKey": "",
       "tags": {
         "track": [
+          "track-ai-coding",
+          "track-ai-models",
           "track-ai-infra"
         ],
-        "function": [],
+        "function": [
+          "function-engineering"
+        ],
         "scenario": [],
-        "customer": [],
+        "customer": [
+          "customer-developer-team"
+        ],
         "evidence": [
           "evidence-product-launch"
         ]
       },
       "flatTags": [
+        "track-ai-coding",
+        "track-ai-models",
         "track-ai-infra",
+        "function-engineering",
+        "customer-developer-team",
         "evidence-product-launch"
       ],
       "displayTags": [
         {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
+          "id": "track-ai-coding",
+          "label": "AI Coding"
         },
         {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
+          "id": "track-ai-models",
+          "label": "模型与能力"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
         }
       ],
-      "fact": "小鹏汽车宣布 MONA L03 将于 7 月 16 日在慕尼黑全球上市，定位\"年轻人的第一台智能时尚 SUV\"，预售价 14.38 万元起。",
+      "fact": "博主 @数码闲聊站 爆料荣耀 MagicOS 11 更新，带来全新 YOYO Next，内置 YOYO Claw，支持自定义 AI 大模型，可操控更多第三方 App、执行复杂任务、长期全局记忆、内置技能商店。",
       "evidencePoints": [
-        "IT之家 7 月 13 日消息，小鹏汽车今日宣布，小鹏 MONA L03 将于北京时间 7 月 16 日 19:00 在慕尼黑全球正式上市发布，这是小鹏首款中国与欧洲同步上市、同步发布的全球车型。",
-        "IT之家注意到， 小鹏 MONA L03 已于 7 月 2 日开启预售 ，预售价 14.",
-        "IT之家注意到，MONA L03 由前法拉利外饰设计师胡安马主导设计，联合 23 国设计团队打造。"
+        "此外，MagicOS 11 深度优化过渡动画和细节动效， 还有 安卓 阵营最果的液态玻璃 UI 。",
+        "据IT之家此前报道，荣耀 MagicOS 11 采用全屏通透视觉设计 + 行业首个动态液态玻璃效果 + 无极自定义， 首批先锋用户已开放体验 。",
+        "据介绍，MagicOS 11 的全新液态玻璃设计， 安卓 首创动态全屏通透，并支持通透自定义 。"
       ],
-      "value": "值得关注：有较完整的原文事实支撑。",
+      "value": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
       "selectionReasons": [
-        "有较完整的原文事实支撑"
+        "影响 AI 落地的治理、合规或安全边界",
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
       ],
       "qualityWarnings": [
         "可见原文片段不足，已降权处理"
@@ -42656,7 +43819,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260713-A08",
+      "id": "SIG-20260713-A07",
       "date": "2026-07-13",
       "type": "signal_card",
       "category": "product-service",
@@ -42664,7 +43827,7 @@
       "title": "努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线",
       "subject": "努比亚",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/975/885.htm",
+      "sourceUrl": "https://ithome.com/0/975/885.htm",
       "sourceLevel": "B",
       "importanceScore": 4,
       "rankScore": 498,
@@ -42731,36 +43894,19 @@
         "id": "category:产品",
         "label": "产品",
         "type": "category",
-        "weight": 10,
+        "weight": 13,
         "category": "product-service"
       },
       {
-        "id": "subject:努比亚",
-        "label": "努比亚",
-        "type": "subject",
+        "id": "category:融资",
+        "label": "融资",
+        "type": "category",
         "weight": 1,
-        "category": "product-service",
-        "sourceName": "IT之家（RSS）"
+        "category": "funding"
       },
       {
-        "id": "subject:上纬新材",
-        "label": "上纬新材",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "IT之家（RSS）"
-      },
-      {
-        "id": "subject:腾讯混元",
-        "label": "腾讯混元",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "Tencent"
-      },
-      {
-        "id": "subject:小鹏汽车",
-        "label": "小鹏汽车",
+        "id": "subject:Anthropic",
+        "label": "Anthropic",
         "type": "subject",
         "weight": 1,
         "category": "product-service",
@@ -42791,12 +43937,28 @@
         "sourceName": "IT之家（RSS）"
       },
       {
+        "id": "subject:Monogram",
+        "label": "Monogram",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "valueaddvc.com"
+      },
+      {
         "id": "subject:Ploy",
         "label": "Ploy",
         "type": "subject",
         "weight": 1,
         "category": "product-service",
         "sourceName": "Hacker News 热门（buzzing.cc 中文翻译）"
+      },
+      {
+        "id": "subject:Slimbook",
+        "label": "Slimbook",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
       },
       {
         "id": "subject:Stigg",
@@ -42815,11 +43977,58 @@
         "sourceName": "taskade.com"
       },
       {
+        "id": "subject:上纬新材",
+        "label": "上纬新材",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
+        "id": "subject:努比亚",
+        "label": "努比亚",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
+        "id": "subject:小鹏汽车",
+        "label": "小鹏汽车",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
+        "id": "subject:腾讯混元",
+        "label": "腾讯混元",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "Tencent"
+      },
+      {
+        "id": "subject:荣耀-MagicOS-11-爆料",
+        "label": "荣耀 MagicOS 11 爆料",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
         "id": "signal:track-ai-infra",
         "label": "AI 基础设施",
         "type": "signal",
-        "weight": 5,
+        "weight": 8,
         "tag": "track-ai-infra"
+      },
+      {
+        "id": "signal:track-ai-coding",
+        "label": "AI Coding",
+        "type": "signal",
+        "weight": 5,
+        "tag": "track-ai-coding"
       },
       {
         "id": "signal:track-ai-agent",
@@ -42827,41 +44036,6 @@
         "type": "signal",
         "weight": 4,
         "tag": "track-ai-agent"
-      },
-      {
-        "id": "signal:track-ai-coding",
-        "label": "AI Coding",
-        "type": "signal",
-        "weight": 3,
-        "tag": "track-ai-coding"
-      },
-      {
-        "id": "signal:evidence-product-launch",
-        "label": "产品发布",
-        "type": "signal",
-        "weight": 2,
-        "tag": "evidence-product-launch"
-      },
-      {
-        "id": "signal:evidence-pricing-cost",
-        "label": "定价与成本",
-        "type": "signal",
-        "weight": 2,
-        "tag": "evidence-pricing-cost"
-      },
-      {
-        "id": "signal:track-embodied-ai",
-        "label": "具身智能",
-        "type": "signal",
-        "weight": 2,
-        "tag": "track-embodied-ai"
-      },
-      {
-        "id": "signal:track-enterprise-workflow",
-        "label": "企业工作流",
-        "type": "signal",
-        "weight": 2,
-        "tag": "track-enterprise-workflow"
       },
       {
         "id": "signal:scenario-agent-governance",
@@ -42878,25 +44052,39 @@
         "tag": "track-ai-governance"
       },
       {
+        "id": "signal:evidence-product-launch",
+        "label": "产品发布",
+        "type": "signal",
+        "weight": 2,
+        "tag": "evidence-product-launch"
+      },
+      {
+        "id": "signal:track-enterprise-workflow",
+        "label": "企业工作流",
+        "type": "signal",
+        "weight": 2,
+        "tag": "track-enterprise-workflow"
+      },
+      {
+        "id": "signal:track-embodied-ai",
+        "label": "具身智能",
+        "type": "signal",
+        "weight": 2,
+        "tag": "track-embodied-ai"
+      },
+      {
+        "id": "signal:evidence-pricing-cost",
+        "label": "定价与成本",
+        "type": "signal",
+        "weight": 2,
+        "tag": "evidence-pricing-cost"
+      },
+      {
         "id": "signal:function-engineering",
         "label": "工程研发",
         "type": "signal",
-        "weight": 1,
+        "weight": 2,
         "tag": "function-engineering"
-      },
-      {
-        "id": "signal:customer-developer-team",
-        "label": "开发团队",
-        "type": "signal",
-        "weight": 1,
-        "tag": "customer-developer-team"
-      },
-      {
-        "id": "signal:track-enterprise-data",
-        "label": "企业数据智能",
-        "type": "signal",
-        "weight": 1,
-        "tag": "track-enterprise-data"
       },
       {
         "id": "signal:track-ai-applications",
@@ -42904,6 +44092,13 @@
         "type": "signal",
         "weight": 1,
         "tag": "track-ai-applications"
+      },
+      {
+        "id": "signal:track-enterprise-data",
+        "label": "企业数据智能",
+        "type": "signal",
+        "weight": 1,
+        "tag": "track-enterprise-data"
       }
     ],
     "edges": [
@@ -42913,7 +44108,7 @@
         "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260713-A07"
+          "SIG-20260713-A04"
         ],
         "titles": [
           "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成"
@@ -42945,6 +44140,18 @@
       },
       {
         "from": "category:产品",
+        "to": "subject:Anthropic",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260713-A10"
+        ],
+        "titles": [
+          "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期"
+        ]
+      },
+      {
+        "from": "category:产品",
         "to": "subject:Meta",
         "label": "产品",
         "weight": 1,
@@ -42953,6 +44160,18 @@
         ],
         "titles": [
           "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:Slimbook",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260713-A09"
+        ],
+        "titles": [
+          "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器"
         ]
       },
       {
@@ -42969,18 +44188,6 @@
       },
       {
         "from": "category:产品",
-        "to": "subject:小鹏汽车",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260713-A04"
-        ],
-        "titles": [
-          "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展"
-        ]
-      },
-      {
-        "from": "category:产品",
         "to": "subject:上纬新材",
         "label": "产品",
         "weight": 1,
@@ -42993,26 +44200,26 @@
       },
       {
         "from": "category:产品",
-        "to": "subject:努比亚",
+        "to": "subject:荣耀-MagicOS-11-爆料",
         "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260713-A08"
+          "SIG-20260713-A11"
         ],
         "titles": [
-          "努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线"
+          "荣耀 MagicOS 11 爆料：内置 YOYO Claw，支持自定义 AI 大模型"
         ]
       },
       {
         "from": "category:产品",
-        "to": "subject:Ploy",
+        "to": "subject:努比亚",
         "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260713-A10"
+          "SIG-20260713-A07"
         ],
         "titles": [
-          "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol"
+          "努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线"
         ]
       },
       {
@@ -43021,43 +44228,43 @@
         "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260713-A09"
+          "SIG-20260713-A12"
         ],
         "titles": [
           "Stigg 发布 2.0：面向 AI 产品的用量运行时"
         ]
       },
       {
-        "from": "subject:腾讯混元",
-        "to": "signal:track-ai-coding",
-        "label": "关联",
+        "from": "category:产品",
+        "to": "subject:Ploy",
+        "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260713-A07"
+          "SIG-20260713-A14"
         ],
         "titles": [
-          "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成"
+          "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol"
+        ]
+      },
+      {
+        "from": "category:产品",
+        "to": "subject:小鹏汽车",
+        "label": "产品",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260713-A13"
+        ],
+        "titles": [
+          "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展"
         ]
       },
       {
         "from": "subject:腾讯混元",
-        "to": "signal:function-engineering",
+        "to": "signal:track-ai-infra",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260713-A07"
-        ],
-        "titles": [
-          "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成"
-        ]
-      },
-      {
-        "from": "subject:腾讯混元",
-        "to": "signal:customer-developer-team",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260713-A07"
+          "SIG-20260713-A04"
         ],
         "titles": [
           "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成"
@@ -43136,6 +44343,42 @@
         ]
       },
       {
+        "from": "subject:Anthropic",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260713-A10"
+        ],
+        "titles": [
+          "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期"
+        ]
+      },
+      {
+        "from": "subject:Anthropic",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260713-A10"
+        ],
+        "titles": [
+          "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期"
+        ]
+      },
+      {
+        "from": "subject:Anthropic",
+        "to": "signal:function-engineering",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260713-A10"
+        ],
+        "titles": [
+          "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期"
+        ]
+      },
+      {
         "from": "subject:Meta",
         "to": "signal:track-ai-coding",
         "label": "关联",
@@ -43169,6 +44412,30 @@
         ],
         "titles": [
           "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力"
+        ]
+      },
+      {
+        "from": "subject:Slimbook",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260713-A09"
+        ],
+        "titles": [
+          "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器"
+        ]
+      },
+      {
+        "from": "subject:Slimbook",
+        "to": "signal:function-engineering",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260713-A09"
+        ],
+        "titles": [
+          "Slimbook 推出 Nexus 系列 AI 工作站，可选 AMD 锐龙 / 锐龙 Threadripper 处理器"
         ]
       },
       {
@@ -43208,30 +44475,6 @@
         ]
       },
       {
-        "from": "subject:小鹏汽车",
-        "to": "signal:track-ai-infra",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260713-A04"
-        ],
-        "titles": [
-          "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展"
-        ]
-      },
-      {
-        "from": "subject:小鹏汽车",
-        "to": "signal:evidence-product-launch",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260713-A04"
-        ],
-        "titles": [
-          "小鹏 MONA L03 将于 7 月 16 日慕尼黑全球上市，同步公布物理 AI 新进展"
-        ]
-      },
-      {
         "from": "subject:上纬新材",
         "to": "signal:track-embodied-ai",
         "label": "关联",
@@ -43268,12 +44511,36 @@
         ]
       },
       {
+        "from": "subject:荣耀-MagicOS-11-爆料",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260713-A11"
+        ],
+        "titles": [
+          "荣耀 MagicOS 11 爆料：内置 YOYO Claw，支持自定义 AI 大模型"
+        ]
+      },
+      {
+        "from": "subject:荣耀-MagicOS-11-爆料",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260713-A11"
+        ],
+        "titles": [
+          "荣耀 MagicOS 11 爆料：内置 YOYO Claw，支持自定义 AI 大模型"
+        ]
+      },
+      {
         "from": "subject:努比亚",
         "to": "signal:track-embodied-ai",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260713-A08"
+          "SIG-20260713-A07"
         ],
         "titles": [
           "努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线"
@@ -43285,46 +44552,10 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260713-A08"
+          "SIG-20260713-A07"
         ],
         "titles": [
           "努比亚 AI 宠物机器人 iMoochi 定档 7 月 17 日上线"
-        ]
-      },
-      {
-        "from": "subject:Ploy",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260713-A10"
-        ],
-        "titles": [
-          "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol"
-        ]
-      },
-      {
-        "from": "subject:Ploy",
-        "to": "signal:track-ai-infra",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260713-A10"
-        ],
-        "titles": [
-          "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol"
-        ]
-      },
-      {
-        "from": "subject:Ploy",
-        "to": "signal:evidence-pricing-cost",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260713-A10"
-        ],
-        "titles": [
-          "Ploy 将 AI 智能体默认模型从 Claude Opus 4.8 切换至 GPT-5.6 Sol"
         ]
       },
       {
@@ -43333,7 +44564,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260713-A09"
+          "SIG-20260713-A12"
         ],
         "titles": [
           "Stigg 发布 2.0：面向 AI 产品的用量运行时"
@@ -43345,19 +44576,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260713-A09"
-        ],
-        "titles": [
-          "Stigg 发布 2.0：面向 AI 产品的用量运行时"
-        ]
-      },
-      {
-        "from": "subject:Stigg",
-        "to": "signal:evidence-pricing-cost",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260713-A09"
+          "SIG-20260713-A12"
         ],
         "titles": [
           "Stigg 发布 2.0：面向 AI 产品的用量运行时"
@@ -43367,51 +44586,51 @@
     "clusters": [
       {
         "id": "product-launch-vs-adoption",
-        "title": "努比亚、上纬新材 同日出现在企业 AI 产品发布里",
+        "title": "Anthropic、DPVR 同日出现在企业 AI 产品发布里",
         "direction": "产品发布",
         "relation": [
           "产品发布",
           "客户采用",
           "商业验证"
         ],
-        "summary": "腾讯混元于 7 月 6 日正式发布 Hy3；正式版提升性能、稳定性和成本效率，并扩大在腾讯产品与服务中的集成。 DPVR 推出 VisionRay Flow Pro AI 太阳镜智能眼镜，面向消费市场。 Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
-        "evidenceMeta": "素材：努比亚 / 上纬新材 / 腾讯混元",
-        "detailFocus": "腾讯混元于 7 月 6 日正式发布 Hy3；正式版提升性能、稳定性和成本效率，并扩大在腾讯产品与服务中的集成。 DPVR 推出 VisionRay Flow Pro AI 太阳镜智能眼镜，面向消费市场。 Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
-        "todayCount": 10,
-        "last7Count": 30,
-        "last30Count": 159,
+        "summary": "腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。 DPVR 推出 VisionRay Flow Pro AI 太阳镜智能眼镜，面向消费市场。 Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
+        "evidenceMeta": "素材：Anthropic / DPVR / Meta",
+        "detailFocus": "腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。 DPVR 推出 VisionRay Flow Pro AI 太阳镜智能眼镜，面向消费市场。 Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
+        "todayCount": 13,
+        "last7Count": 33,
+        "last30Count": 162,
         "subjects": [
           {
-            "label": "努比亚",
+            "label": "Anthropic",
             "count": 1
           },
           {
-            "label": "上纬新材",
+            "label": "DPVR",
             "count": 1
           },
           {
-            "label": "腾讯混元",
+            "label": "Meta",
             "count": 1
           },
           {
-            "label": "小鹏汽车",
+            "label": "Microsoft",
             "count": 1
           }
         ],
         "categories": [
           {
             "label": "产品",
-            "count": 10
+            "count": 13
           }
         ],
         "supportingCards": [
           {
-            "id": "SIG-20260713-A07",
+            "id": "SIG-20260713-A04",
             "title": "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成",
             "subject": "腾讯混元",
             "categoryLabel": "产品",
             "sourceName": "Tencent",
-            "sourceUrl": "https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/",
+            "sourceUrl": "https://tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration",
             "date": "2026-07-13"
           },
           {
@@ -43420,7 +44639,7 @@
             "subject": "DPVR",
             "categoryLabel": "产品",
             "sourceName": "IT之家（RSS）",
-            "sourceUrl": "https://www.ithome.com/0/975/796.htm",
+            "sourceUrl": "https://ithome.com/0/975/796.htm",
             "date": "2026-07-13"
           },
           {
@@ -43429,16 +44648,16 @@
             "subject": "Taskade",
             "categoryLabel": "产品",
             "sourceName": "taskade.com",
-            "sourceUrl": "https://www.taskade.com/blog/introducing-tsk-1",
+            "sourceUrl": "https://taskade.com/blog/introducing-tsk-1",
             "date": "2026-07-13"
           },
           {
-            "id": "SIG-20260713-A05",
-            "title": "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力",
-            "subject": "Meta",
+            "id": "SIG-20260713-A10",
+            "title": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期",
+            "subject": "Anthropic",
             "categoryLabel": "产品",
             "sourceName": "IT之家（RSS）",
-            "sourceUrl": "https://www.ithome.com/0/975/832.htm",
+            "sourceUrl": "https://www.ithome.com/0/975/974.htm",
             "date": "2026-07-13"
           }
         ]
@@ -43448,51 +44667,51 @@
   "relationshipDirections": [
     {
       "id": "product-launch-vs-adoption",
-      "title": "努比亚、上纬新材 同日出现在企业 AI 产品发布里",
+      "title": "Anthropic、DPVR 同日出现在企业 AI 产品发布里",
       "direction": "产品发布",
       "relation": [
         "产品发布",
         "客户采用",
         "商业验证"
       ],
-      "summary": "腾讯混元于 7 月 6 日正式发布 Hy3；正式版提升性能、稳定性和成本效率，并扩大在腾讯产品与服务中的集成。 DPVR 推出 VisionRay Flow Pro AI 太阳镜智能眼镜，面向消费市场。 Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
-      "evidenceMeta": "素材：努比亚 / 上纬新材 / 腾讯混元",
-      "detailFocus": "腾讯混元于 7 月 6 日正式发布 Hy3；正式版提升性能、稳定性和成本效率，并扩大在腾讯产品与服务中的集成。 DPVR 推出 VisionRay Flow Pro AI 太阳镜智能眼镜，面向消费市场。 Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
-      "todayCount": 10,
-      "last7Count": 30,
-      "last30Count": 159,
+      "summary": "腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。 DPVR 推出 VisionRay Flow Pro AI 太阳镜智能眼镜，面向消费市场。 Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
+      "evidenceMeta": "素材：Anthropic / DPVR / Meta",
+      "detailFocus": "腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。 DPVR 推出 VisionRay Flow Pro AI 太阳镜智能眼镜，面向消费市场。 Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
+      "todayCount": 13,
+      "last7Count": 33,
+      "last30Count": 162,
       "subjects": [
         {
-          "label": "努比亚",
+          "label": "Anthropic",
           "count": 1
         },
         {
-          "label": "上纬新材",
+          "label": "DPVR",
           "count": 1
         },
         {
-          "label": "腾讯混元",
+          "label": "Meta",
           "count": 1
         },
         {
-          "label": "小鹏汽车",
+          "label": "Microsoft",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "产品",
-          "count": 10
+          "count": 13
         }
       ],
       "supportingCards": [
         {
-          "id": "SIG-20260713-A07",
+          "id": "SIG-20260713-A04",
           "title": "腾讯混元正式发布 Hy3，扩展 Agent 能力与产品集成",
           "subject": "腾讯混元",
           "categoryLabel": "产品",
           "sourceName": "Tencent",
-          "sourceUrl": "https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/",
+          "sourceUrl": "https://tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration",
           "date": "2026-07-13"
         },
         {
@@ -43501,7 +44720,7 @@
           "subject": "DPVR",
           "categoryLabel": "产品",
           "sourceName": "IT之家（RSS）",
-          "sourceUrl": "https://www.ithome.com/0/975/796.htm",
+          "sourceUrl": "https://ithome.com/0/975/796.htm",
           "date": "2026-07-13"
         },
         {
@@ -43510,16 +44729,16 @@
           "subject": "Taskade",
           "categoryLabel": "产品",
           "sourceName": "taskade.com",
-          "sourceUrl": "https://www.taskade.com/blog/introducing-tsk-1",
+          "sourceUrl": "https://taskade.com/blog/introducing-tsk-1",
           "date": "2026-07-13"
         },
         {
-          "id": "SIG-20260713-A05",
-          "title": "Meta 发布多模态推理模型 Muse Spark 1.1，强化 AI 智能体任务能力",
-          "subject": "Meta",
+          "id": "SIG-20260713-A10",
+          "title": "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期",
+          "subject": "Anthropic",
           "categoryLabel": "产品",
           "sourceName": "IT之家（RSS）",
-          "sourceUrl": "https://www.ithome.com/0/975/832.htm",
+          "sourceUrl": "https://www.ithome.com/0/975/974.htm",
           "date": "2026-07-13"
         }
       ]
@@ -43529,61 +44748,12 @@
     {
       "object": "evidence-product-launch",
       "label": "产品发布",
-      "todayCount": 10,
-      "last7Count": 30,
-      "last30Count": 152,
+      "todayCount": 13,
+      "last7Count": 33,
+      "last30Count": 155,
       "subjects": [
         {
-          "label": "努比亚",
-          "count": 1
-        },
-        {
-          "label": "上纬新材",
-          "count": 1
-        },
-        {
-          "label": "腾讯混元",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 10
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 6
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "Agentic AI",
-          "count": 4
-        },
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 3
-        },
-        {
-          "tag": "evidence-customer-metric",
-          "label": "客户结果指标",
-          "count": 3
-        }
-      ]
-    },
-    {
-      "object": "track-ai-infra",
-      "label": "AI 基础设施",
-      "todayCount": 6,
-      "last7Count": 22,
-      "last30Count": 115,
-      "subjects": [
-        {
-          "label": "小鹏汽车",
+          "label": "Anthropic",
           "count": 1
         },
         {
@@ -43598,18 +44768,263 @@
       "categories": [
         {
           "label": "产品",
-          "count": 6
+          "count": 13
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 9
+        },
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 5
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "object": "track-ai-infra",
+      "label": "AI 基础设施",
+      "todayCount": 9,
+      "last7Count": 25,
+      "last30Count": 118,
+      "subjects": [
+        {
+          "label": "Anthropic",
+          "count": 1
+        },
+        {
+          "label": "DPVR",
+          "count": 1
+        },
+        {
+          "label": "Meta",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 9
         }
       ],
       "coTags": [
         {
           "tag": "evidence-product-launch",
           "label": "产品发布",
-          "count": 6
+          "count": 9
         },
         {
-          "tag": "track-ai-agent",
-          "label": "Agentic AI",
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 4
+        },
+        {
+          "tag": "evidence-customer-metric",
+          "label": "客户结果指标",
+          "count": 4
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "object": "customer-developer-team",
+      "label": "开发团队",
+      "todayCount": 5,
+      "last7Count": 24,
+      "last30Count": 140,
+      "subjects": [
+        {
+          "label": "Anthropic",
+          "count": 1
+        },
+        {
+          "label": "DPVR",
+          "count": 1
+        },
+        {
+          "label": "Meta",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 5
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 5
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "object": "function-engineering",
+      "label": "工程研发",
+      "todayCount": 5,
+      "last7Count": 24,
+      "last30Count": 140,
+      "subjects": [
+        {
+          "label": "Anthropic",
+          "count": 1
+        },
+        {
+          "label": "DPVR",
+          "count": 1
+        },
+        {
+          "label": "Meta",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 5
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 5
+        },
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "object": "track-ai-coding",
+      "label": "AI Coding",
+      "todayCount": 5,
+      "last7Count": 24,
+      "last30Count": 140,
+      "subjects": [
+        {
+          "label": "Anthropic",
+          "count": 1
+        },
+        {
+          "label": "DPVR",
+          "count": 1
+        },
+        {
+          "label": "Meta",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 5
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 5
+        },
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 5
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "object": "evidence-customer-metric",
+      "label": "客户结果指标",
+      "todayCount": 4,
+      "last7Count": 11,
+      "last30Count": 46,
+      "subjects": [
+        {
+          "label": "Anthropic",
+          "count": 1
+        },
+        {
+          "label": "Meta",
+          "count": 1
+        },
+        {
+          "label": "Ploy",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 4
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 4
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
           "count": 4
         },
         {
@@ -43618,8 +45033,8 @@
           "count": 2
         },
         {
-          "tag": "evidence-customer-metric",
-          "label": "客户结果指标",
+          "tag": "evidence-pricing-cost",
+          "label": "定价与成本",
           "count": 2
         }
       ]
@@ -43674,104 +45089,6 @@
       ]
     },
     {
-      "object": "customer-developer-team",
-      "label": "开发团队",
-      "todayCount": 3,
-      "last7Count": 22,
-      "last30Count": 138,
-      "subjects": [
-        {
-          "label": "腾讯混元",
-          "count": 1
-        },
-        {
-          "label": "DPVR",
-          "count": 1
-        },
-        {
-          "label": "Meta",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 3
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "evidence-product-launch",
-          "label": "产品发布",
-          "count": 3
-        },
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 3
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 3
-        },
-        {
-          "tag": "evidence-customer-metric",
-          "label": "客户结果指标",
-          "count": 2
-        }
-      ]
-    },
-    {
-      "object": "evidence-customer-metric",
-      "label": "客户结果指标",
-      "todayCount": 3,
-      "last7Count": 10,
-      "last30Count": 45,
-      "subjects": [
-        {
-          "label": "腾讯混元",
-          "count": 1
-        },
-        {
-          "label": "Meta",
-          "count": 1
-        },
-        {
-          "label": "Ploy",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 3
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "evidence-product-launch",
-          "label": "产品发布",
-          "count": 3
-        },
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 2
-        },
-        {
-          "tag": "evidence-pricing-cost",
-          "label": "定价与成本",
-          "count": 2
-        },
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 2
-        }
-      ]
-    },
-    {
       "object": "evidence-pricing-cost",
       "label": "定价与成本",
       "todayCount": 3,
@@ -43779,7 +45096,7 @@
       "last30Count": 38,
       "subjects": [
         {
-          "label": "腾讯混元",
+          "label": "Anthropic",
           "count": 1
         },
         {
@@ -43809,111 +45126,13 @@
           "count": 2
         },
         {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 1
-        },
-        {
-          "tag": "evidence-partnership-integration",
-          "label": "合作集成",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "object": "function-engineering",
-      "label": "工程研发",
-      "todayCount": 3,
-      "last7Count": 22,
-      "last30Count": 138,
-      "subjects": [
-        {
-          "label": "腾讯混元",
-          "count": 1
-        },
-        {
-          "label": "DPVR",
-          "count": 1
-        },
-        {
-          "label": "Meta",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 3
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 3
-        },
-        {
-          "tag": "evidence-product-launch",
-          "label": "产品发布",
-          "count": 3
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 3
-        },
-        {
-          "tag": "evidence-customer-metric",
-          "label": "客户结果指标",
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
           "count": 2
-        }
-      ]
-    },
-    {
-      "object": "scenario-agent-governance",
-      "label": "Agent 权限治理",
-      "todayCount": 3,
-      "last7Count": 6,
-      "last30Count": 43,
-      "subjects": [
-        {
-          "label": "上纬新材",
-          "count": 1
-        },
-        {
-          "label": "Meta",
-          "count": 1
-        },
-        {
-          "label": "Stigg",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 3
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "evidence-product-launch",
-          "label": "产品发布",
-          "count": 3
-        },
-        {
-          "tag": "track-ai-governance",
-          "label": "AI 治理",
-          "count": 3
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 1
-        },
-        {
-          "tag": "evidence-customer-metric",
-          "label": "客户结果指标",
           "count": 1
         }
       ]
@@ -44099,6 +45318,45 @@
     ],
     "historicalTrends": [
       {
+        "id": "TRD-20260519-02",
+        "type": "trend_card",
+        "title": "AI 治理开始从原则讨论转向产品和流程约束",
+        "date": "2026-05-19",
+        "status": "draft",
+        "assetLevel": "candidate",
+        "trendStatus": "early",
+        "stageLabel": "继续观察",
+        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "boundary": "",
+        "nextObservation": "",
+        "sourceTypes": [],
+        "relatedSignals": [
+          "CHG-20260519-07"
+        ],
+        "tags": {
+          "track": [
+            "track-ai-governance"
+          ],
+          "function": [],
+          "scenario": [],
+          "customer": [],
+          "evidence": [
+            "evidence-product-launch"
+          ]
+        },
+        "displayTags": [
+          {
+            "id": "track-ai-governance",
+            "label": "AI 治理"
+          },
+          {
+            "id": "evidence-product-launch",
+            "label": "产品发布"
+          }
+        ]
+      },
+      {
         "id": "TRD-20260519-01",
         "type": "trend_card",
         "title": "AI 编程进入预算和工程治理",
@@ -44142,45 +45400,6 @@
           {
             "id": "track-ai-coding",
             "label": "AI Coding"
-          },
-          {
-            "id": "evidence-product-launch",
-            "label": "产品发布"
-          }
-        ]
-      },
-      {
-        "id": "TRD-20260519-02",
-        "type": "trend_card",
-        "title": "AI 治理开始从原则讨论转向产品和流程约束",
-        "date": "2026-05-19",
-        "status": "draft",
-        "assetLevel": "candidate",
-        "trendStatus": "early",
-        "stageLabel": "继续观察",
-        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "boundary": "",
-        "nextObservation": "",
-        "sourceTypes": [],
-        "relatedSignals": [
-          "CHG-20260519-07"
-        ],
-        "tags": {
-          "track": [
-            "track-ai-governance"
-          ],
-          "function": [],
-          "scenario": [],
-          "customer": [],
-          "evidence": [
-            "evidence-product-launch"
-          ]
-        },
-        "displayTags": [
-          {
-            "id": "track-ai-governance",
-            "label": "AI 治理"
           },
           {
             "id": "evidence-product-launch",
@@ -44250,7 +45469,7 @@
         "window": "7 天",
         "object": "evidence-product-launch",
         "label": "产品发布",
-        "cardCount": 30,
+        "cardCount": 33,
         "lastSeen": "2026-07-13",
         "filter": "evidence-product-launch"
       },
@@ -44258,15 +45477,23 @@
         "window": "7 天",
         "object": "evidence-funding",
         "label": "融资",
-        "cardCount": 24,
-        "lastSeen": "2026-07-12",
+        "cardCount": 25,
+        "lastSeen": "2026-07-13",
         "filter": "evidence-funding"
+      },
+      {
+        "window": "7 天",
+        "object": "track-ai-infra",
+        "label": "AI 基础设施",
+        "cardCount": 25,
+        "lastSeen": "2026-07-13",
+        "filter": "track-ai-infra"
       },
       {
         "window": "7 天",
         "object": "customer-developer-team",
         "label": "开发团队",
-        "cardCount": 22,
+        "cardCount": 24,
         "lastSeen": "2026-07-13",
         "filter": "customer-developer-team"
       },
@@ -44274,7 +45501,7 @@
         "window": "7 天",
         "object": "function-engineering",
         "label": "工程研发",
-        "cardCount": 22,
+        "cardCount": 24,
         "lastSeen": "2026-07-13",
         "filter": "function-engineering"
       },
@@ -44282,17 +45509,9 @@
         "window": "7 天",
         "object": "track-ai-coding",
         "label": "AI Coding",
-        "cardCount": 22,
+        "cardCount": 24,
         "lastSeen": "2026-07-13",
         "filter": "track-ai-coding"
-      },
-      {
-        "window": "7 天",
-        "object": "track-ai-infra",
-        "label": "AI 基础设施",
-        "cardCount": 22,
-        "lastSeen": "2026-07-13",
-        "filter": "track-ai-infra"
       },
       {
         "window": "30 天",
@@ -44314,7 +45533,7 @@
         "window": "30 天",
         "object": "evidence-product-launch",
         "label": "产品发布",
-        "cardCount": 152,
+        "cardCount": 155,
         "lastSeen": "2026-07-13",
         "filter": "evidence-product-launch"
       },
@@ -44322,7 +45541,7 @@
         "window": "30 天",
         "object": "customer-developer-team",
         "label": "开发团队",
-        "cardCount": 138,
+        "cardCount": 140,
         "lastSeen": "2026-07-13",
         "filter": "customer-developer-team"
       },
@@ -44330,7 +45549,7 @@
         "window": "30 天",
         "object": "function-engineering",
         "label": "工程研发",
-        "cardCount": 138,
+        "cardCount": 140,
         "lastSeen": "2026-07-13",
         "filter": "function-engineering"
       },
@@ -44338,7 +45557,7 @@
         "window": "30 天",
         "object": "track-ai-coding",
         "label": "AI Coding",
-        "cardCount": 138,
+        "cardCount": 140,
         "lastSeen": "2026-07-13",
         "filter": "track-ai-coding"
       },
@@ -44346,7 +45565,7 @@
         "window": "30 天",
         "object": "track-ai-infra",
         "label": "AI 基础设施",
-        "cardCount": 115,
+        "cardCount": 118,
         "lastSeen": "2026-07-13",
         "filter": "track-ai-infra"
       },
@@ -44389,9 +45608,9 @@
       "title": "产品发布",
       "date": "2026-07-13",
       "signal": "evidence-product-launch",
-      "evidenceCount": 152,
+      "evidenceCount": 155,
       "window": "30 天",
-      "summary": "产品发布 has 152 linked cards in the 30 天 window.",
+      "summary": "产品发布 has 155 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -44400,9 +45619,9 @@
       "title": "开发团队",
       "date": "2026-07-13",
       "signal": "customer-developer-team",
-      "evidenceCount": 138,
+      "evidenceCount": 140,
       "window": "30 天",
-      "summary": "开发团队 has 138 linked cards in the 30 天 window.",
+      "summary": "开发团队 has 140 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -44411,9 +45630,9 @@
       "title": "工程研发",
       "date": "2026-07-13",
       "signal": "function-engineering",
-      "evidenceCount": 138,
+      "evidenceCount": 140,
       "window": "30 天",
-      "summary": "工程研发 has 138 linked cards in the 30 天 window.",
+      "summary": "工程研发 has 140 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -44422,9 +45641,9 @@
       "title": "AI Coding",
       "date": "2026-07-13",
       "signal": "track-ai-coding",
-      "evidenceCount": 138,
+      "evidenceCount": 140,
       "window": "30 天",
-      "summary": "AI Coding has 138 linked cards in the 30 天 window.",
+      "summary": "AI Coding has 140 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -44433,9 +45652,9 @@
       "title": "AI 基础设施",
       "date": "2026-07-13",
       "signal": "track-ai-infra",
-      "evidenceCount": 115,
+      "evidenceCount": 118,
       "window": "30 天",
-      "summary": "AI 基础设施 has 115 linked cards in the 30 天 window.",
+      "summary": "AI 基础设施 has 118 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -44477,53 +45696,20 @@
       "title": "产品发布",
       "date": "2026-07-13",
       "signal": "evidence-product-launch",
-      "evidenceCount": 30,
+      "evidenceCount": 33,
       "window": "7 天",
-      "summary": "产品发布 has 30 linked cards in the 7 天 window.",
+      "summary": "产品发布 has 33 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
       "id": "trend-link:7 天:evidence-funding",
       "type": "trend_link",
       "title": "融资",
-      "date": "2026-07-12",
+      "date": "2026-07-13",
       "signal": "evidence-funding",
-      "evidenceCount": 24,
+      "evidenceCount": 25,
       "window": "7 天",
-      "summary": "融资 has 24 linked cards in the 7 天 window.",
-      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
-    },
-    {
-      "id": "trend-link:7 天:customer-developer-team",
-      "type": "trend_link",
-      "title": "开发团队",
-      "date": "2026-07-13",
-      "signal": "customer-developer-team",
-      "evidenceCount": 22,
-      "window": "7 天",
-      "summary": "开发团队 has 22 linked cards in the 7 天 window.",
-      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
-    },
-    {
-      "id": "trend-link:7 天:function-engineering",
-      "type": "trend_link",
-      "title": "工程研发",
-      "date": "2026-07-13",
-      "signal": "function-engineering",
-      "evidenceCount": 22,
-      "window": "7 天",
-      "summary": "工程研发 has 22 linked cards in the 7 天 window.",
-      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
-    },
-    {
-      "id": "trend-link:7 天:track-ai-coding",
-      "type": "trend_link",
-      "title": "AI Coding",
-      "date": "2026-07-13",
-      "signal": "track-ai-coding",
-      "evidenceCount": 22,
-      "window": "7 天",
-      "summary": "AI Coding has 22 linked cards in the 7 天 window.",
+      "summary": "融资 has 25 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -44532,51 +45718,84 @@
       "title": "AI 基础设施",
       "date": "2026-07-13",
       "signal": "track-ai-infra",
-      "evidenceCount": 22,
+      "evidenceCount": 25,
       "window": "7 天",
-      "summary": "AI 基础设施 has 22 linked cards in the 7 天 window.",
+      "summary": "AI 基础设施 has 25 linked cards in the 7 天 window.",
+      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
+    },
+    {
+      "id": "trend-link:7 天:customer-developer-team",
+      "type": "trend_link",
+      "title": "开发团队",
+      "date": "2026-07-13",
+      "signal": "customer-developer-team",
+      "evidenceCount": 24,
+      "window": "7 天",
+      "summary": "开发团队 has 24 linked cards in the 7 天 window.",
+      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
+    },
+    {
+      "id": "trend-link:7 天:function-engineering",
+      "type": "trend_link",
+      "title": "工程研发",
+      "date": "2026-07-13",
+      "signal": "function-engineering",
+      "evidenceCount": 24,
+      "window": "7 天",
+      "summary": "工程研发 has 24 linked cards in the 7 天 window.",
+      "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
+    },
+    {
+      "id": "trend-link:7 天:track-ai-coding",
+      "type": "trend_link",
+      "title": "AI Coding",
+      "date": "2026-07-13",
+      "signal": "track-ai-coding",
+      "evidenceCount": 24,
+      "window": "7 天",
+      "summary": "AI Coding has 24 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
       "id": "relationship:product-launch-vs-adoption",
       "type": "relationship_cluster",
-      "title": "努比亚、上纬新材 同日出现在企业 AI 产品发布里",
+      "title": "Anthropic、DPVR 同日出现在企业 AI 产品发布里",
       "date": "2026-07-13",
       "signal": "产品发布",
-      "evidenceCount": 10,
-      "windowCount": 159,
+      "evidenceCount": 13,
+      "windowCount": 162,
       "subjects": [
         {
-          "label": "努比亚",
+          "label": "Anthropic",
           "count": 1
         },
         {
-          "label": "上纬新材",
+          "label": "DPVR",
           "count": 1
         },
         {
-          "label": "腾讯混元",
+          "label": "Meta",
           "count": 1
         },
         {
-          "label": "小鹏汽车",
+          "label": "Microsoft",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "产品",
-          "count": 10
+          "count": 13
         }
       ],
       "tags": [],
       "supportingCardIds": [
-        "SIG-20260713-A07",
+        "SIG-20260713-A04",
         "SIG-20260713-A06",
         "SIG-20260713-A01",
-        "SIG-20260713-A05"
+        "SIG-20260713-A10"
       ],
-      "summary": "腾讯混元于 7 月 6 日正式发布 Hy3；正式版提升性能、稳定性和成本效率，并扩大在腾讯产品与服务中的集成。 DPVR 推出 VisionRay Flow Pro AI 太阳镜智能眼镜，面向消费市场。 Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
+      "summary": "腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。 DPVR 推出 VisionRay Flow Pro AI 太阳镜智能眼镜，面向消费市场。 Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
       "whyUseful": "Use this when looking for cross-card commercial relationships."
     },
     {
@@ -44585,64 +45804,11 @@
       "title": "产品发布",
       "date": "2026-07-13",
       "signal": "evidence-product-launch",
-      "evidenceCount": 10,
-      "windowCount": 152,
+      "evidenceCount": 13,
+      "windowCount": 155,
       "subjects": [
         {
-          "label": "努比亚",
-          "count": 1
-        },
-        {
-          "label": "上纬新材",
-          "count": 1
-        },
-        {
-          "label": "腾讯混元",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 10
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 6
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "Agentic AI",
-          "count": 4
-        },
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 3
-        },
-        {
-          "tag": "evidence-customer-metric",
-          "label": "客户结果指标",
-          "count": 3
-        }
-      ],
-      "summary": "产品发布 appears in 10 same-day cards and 152 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "tag:track-ai-infra",
-      "type": "tag_association",
-      "title": "AI 基础设施",
-      "date": "2026-07-13",
-      "signal": "track-ai-infra",
-      "evidenceCount": 6,
-      "windowCount": 115,
-      "subjects": [
-        {
-          "label": "小鹏汽车",
+          "label": "Anthropic",
           "count": 1
         },
         {
@@ -44657,18 +45823,283 @@
       "categories": [
         {
           "label": "产品",
-          "count": 6
+          "count": 13
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 9
+        },
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 5
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 5
+        }
+      ],
+      "summary": "产品发布 appears in 13 same-day cards and 155 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:track-ai-infra",
+      "type": "tag_association",
+      "title": "AI 基础设施",
+      "date": "2026-07-13",
+      "signal": "track-ai-infra",
+      "evidenceCount": 9,
+      "windowCount": 118,
+      "subjects": [
+        {
+          "label": "Anthropic",
+          "count": 1
+        },
+        {
+          "label": "DPVR",
+          "count": 1
+        },
+        {
+          "label": "Meta",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 9
         }
       ],
       "coTags": [
         {
           "tag": "evidence-product-launch",
           "label": "产品发布",
-          "count": 6
+          "count": 9
         },
         {
-          "tag": "track-ai-agent",
-          "label": "Agentic AI",
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 4
+        },
+        {
+          "tag": "evidence-customer-metric",
+          "label": "客户结果指标",
+          "count": 4
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 4
+        }
+      ],
+      "summary": "AI 基础设施 appears in 9 same-day cards and 118 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:customer-developer-team",
+      "type": "tag_association",
+      "title": "开发团队",
+      "date": "2026-07-13",
+      "signal": "customer-developer-team",
+      "evidenceCount": 5,
+      "windowCount": 140,
+      "subjects": [
+        {
+          "label": "Anthropic",
+          "count": 1
+        },
+        {
+          "label": "DPVR",
+          "count": 1
+        },
+        {
+          "label": "Meta",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 5
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 5
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 4
+        }
+      ],
+      "summary": "开发团队 appears in 5 same-day cards and 140 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:function-engineering",
+      "type": "tag_association",
+      "title": "工程研发",
+      "date": "2026-07-13",
+      "signal": "function-engineering",
+      "evidenceCount": 5,
+      "windowCount": 140,
+      "subjects": [
+        {
+          "label": "Anthropic",
+          "count": 1
+        },
+        {
+          "label": "DPVR",
+          "count": 1
+        },
+        {
+          "label": "Meta",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 5
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 5
+        },
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 4
+        }
+      ],
+      "summary": "工程研发 appears in 5 same-day cards and 140 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:track-ai-coding",
+      "type": "tag_association",
+      "title": "AI Coding",
+      "date": "2026-07-13",
+      "signal": "track-ai-coding",
+      "evidenceCount": 5,
+      "windowCount": 140,
+      "subjects": [
+        {
+          "label": "Anthropic",
+          "count": 1
+        },
+        {
+          "label": "DPVR",
+          "count": 1
+        },
+        {
+          "label": "Meta",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 5
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 5
+        },
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 5
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 4
+        }
+      ],
+      "summary": "AI Coding appears in 5 same-day cards and 140 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:evidence-customer-metric",
+      "type": "tag_association",
+      "title": "客户结果指标",
+      "date": "2026-07-13",
+      "signal": "evidence-customer-metric",
+      "evidenceCount": 4,
+      "windowCount": 46,
+      "subjects": [
+        {
+          "label": "Anthropic",
+          "count": 1
+        },
+        {
+          "label": "Meta",
+          "count": 1
+        },
+        {
+          "label": "Ploy",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 4
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "evidence-product-launch",
+          "label": "产品发布",
+          "count": 4
+        },
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
           "count": 4
         },
         {
@@ -44677,12 +46108,12 @@
           "count": 2
         },
         {
-          "tag": "evidence-customer-metric",
-          "label": "客户结果指标",
+          "tag": "evidence-pricing-cost",
+          "label": "定价与成本",
           "count": 2
         }
       ],
-      "summary": "AI 基础设施 appears in 6 same-day cards and 115 cards in the 30-day window.",
+      "summary": "客户结果指标 appears in 4 same-day cards and 46 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -44739,112 +46170,6 @@
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
-      "id": "tag:customer-developer-team",
-      "type": "tag_association",
-      "title": "开发团队",
-      "date": "2026-07-13",
-      "signal": "customer-developer-team",
-      "evidenceCount": 3,
-      "windowCount": 138,
-      "subjects": [
-        {
-          "label": "腾讯混元",
-          "count": 1
-        },
-        {
-          "label": "DPVR",
-          "count": 1
-        },
-        {
-          "label": "Meta",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 3
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "evidence-product-launch",
-          "label": "产品发布",
-          "count": 3
-        },
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 3
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 3
-        },
-        {
-          "tag": "evidence-customer-metric",
-          "label": "客户结果指标",
-          "count": 2
-        }
-      ],
-      "summary": "开发团队 appears in 3 same-day cards and 138 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "tag:evidence-customer-metric",
-      "type": "tag_association",
-      "title": "客户结果指标",
-      "date": "2026-07-13",
-      "signal": "evidence-customer-metric",
-      "evidenceCount": 3,
-      "windowCount": 45,
-      "subjects": [
-        {
-          "label": "腾讯混元",
-          "count": 1
-        },
-        {
-          "label": "Meta",
-          "count": 1
-        },
-        {
-          "label": "Ploy",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 3
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "evidence-product-launch",
-          "label": "产品发布",
-          "count": 3
-        },
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 2
-        },
-        {
-          "tag": "evidence-pricing-cost",
-          "label": "定价与成本",
-          "count": 2
-        },
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 2
-        }
-      ],
-      "summary": "客户结果指标 appears in 3 same-day cards and 45 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
       "id": "tag:evidence-pricing-cost",
       "type": "tag_association",
       "title": "定价与成本",
@@ -44854,7 +46179,7 @@
       "windowCount": 38,
       "subjects": [
         {
-          "label": "腾讯混元",
+          "label": "Anthropic",
           "count": 1
         },
         {
@@ -44884,123 +46209,17 @@
           "count": 2
         },
         {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 1
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 2
         },
         {
-          "tag": "evidence-partnership-integration",
-          "label": "合作集成",
+          "tag": "customer-developer-team",
+          "label": "开发团队",
           "count": 1
         }
       ],
       "summary": "定价与成本 appears in 3 same-day cards and 38 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "tag:function-engineering",
-      "type": "tag_association",
-      "title": "工程研发",
-      "date": "2026-07-13",
-      "signal": "function-engineering",
-      "evidenceCount": 3,
-      "windowCount": 138,
-      "subjects": [
-        {
-          "label": "腾讯混元",
-          "count": 1
-        },
-        {
-          "label": "DPVR",
-          "count": 1
-        },
-        {
-          "label": "Meta",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 3
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 3
-        },
-        {
-          "tag": "evidence-product-launch",
-          "label": "产品发布",
-          "count": 3
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 3
-        },
-        {
-          "tag": "evidence-customer-metric",
-          "label": "客户结果指标",
-          "count": 2
-        }
-      ],
-      "summary": "工程研发 appears in 3 same-day cards and 138 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "tag:scenario-agent-governance",
-      "type": "tag_association",
-      "title": "Agent 权限治理",
-      "date": "2026-07-13",
-      "signal": "scenario-agent-governance",
-      "evidenceCount": 3,
-      "windowCount": 43,
-      "subjects": [
-        {
-          "label": "上纬新材",
-          "count": 1
-        },
-        {
-          "label": "Meta",
-          "count": 1
-        },
-        {
-          "label": "Stigg",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 3
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "evidence-product-launch",
-          "label": "产品发布",
-          "count": 3
-        },
-        {
-          "tag": "track-ai-governance",
-          "label": "AI 治理",
-          "count": 3
-        },
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 1
-        },
-        {
-          "tag": "evidence-customer-metric",
-          "label": "客户结果指标",
-          "count": 1
-        }
-      ],
-      "summary": "Agent 权限治理 appears in 3 same-day cards and 43 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     }
   ]
