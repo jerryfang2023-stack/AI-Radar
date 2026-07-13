@@ -1,0 +1,297 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-049
+title: "GPT-5.6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠"
+title_zh: "GPT-5.6星期二🤖，克劳德代码工件👨‍💻，困惑的大脑记忆 🧠"
+title_translation_status: translated
+title_translation_method: mymemory_title_translation
+original_url: "https://tldr.tech/ai/2026-06-19"
+canonical_url: "https://tldr.tech/ai/2026-06-19"
+source_name: "TLDR AI Newsletter"
+source_type: newsletter
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-07-13T03:44:17.706Z
+language: mixed
+full_text_hash: 6e7084d90d3be7f1
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-049-gpt-5-6-tuesday-claude-code-artifacts-perplexity-s-brain-memory.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-049-gpt-5-6-tuesday-claude-code-artifacts-perplexity-s-brain-memory.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 79
+extractor_diagnostics: {"readability_score":79,"text_length":7697,"paragraph_count":45,"sentence_count":58,"boilerplate_hits":2,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 7697
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6e7084d90d3be7f1","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 8301582fb9d7f4f6
+content_hash: 6e7084d90d3be7f1
+semantic_hash: 66928005e5299cc3
+duplicate_of: ""
+first_seen_at: "2026-07-13T03:44:17.706Z"
+last_seen_at: 2026-07-13T03:44:17.706Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"AI hardware product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","ai_hardware_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["TLDR AI Newsletter","OpenAI","Anthropic","Google","Meta","Nvidia","Cursor","Perplexity","Mistral"],"products":["GPT-5","Claude","Cursor","Codex","Agents","agents","agent","ChatGPT"],"people":[],"industries":["医疗","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","部署 / 上线","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["5.6","2026","06","19","100","000","29","2"],"quotes":["artifacts,","big bubble explosion"]}
+evidence_seed: {"company_actions":["6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-06-19 GPT-5.","6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠 Models get the headlines, pipelines hit the deadlines (Sponsor) Every layer of the AI stack runs CI on Buildkite: frontier labs (Cursor, Meta, OpenAI, Anthropic, Mistral, Cohere); inference (vLLM, Coreweave, Anyscale); ML platform infra (NVIDIA, Lambda, Hugging Face, Tecton); applied (Harvey, Persona, Anyscale).","Control without compromise."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-06-19 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠 Models get the headlines, pipelines hit the deadlines (Sponsor) Every layer of the AI stack runs CI on Buildkite: frontier labs (Cursor, Meta, OpenAI, Anthropic, Mistral, Cohere); inference (vLLM, Coreweave, Anyscale); ML platform infra (NVIDIA, Lambda, Hugging Face, Tecton); applied (Harvey, Persona, Anyscale).","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Control without compromise.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"100,000+ concurrent runners?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Host with us or self-host and bring your own compute.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Your secrets, your scale, while we orchestrate the rest .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-13T03:44:17.706Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# GPT-5.6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠
+
+## clean_text
+
+GPT-5.6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠 TLDR
+Newsletters
+Advertise
+Blog
+TLDR
+TLDR AI 2026-06-19
+GPT-5.6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠
+Models get the headlines, pipelines hit the deadlines (Sponsor)
+Every layer of the AI stack runs CI on Buildkite: frontier labs (Cursor, Meta, OpenAI, Anthropic, Mistral, Cohere); inference (vLLM, Coreweave, Anyscale); ML platform infra (NVIDIA, Lambda, Hugging Face, Tecton); applied (Harvey, Persona, Anyscale).
+Why? Control without compromise. 100,000+ concurrent runners? Easy mode. Host with us or self-host and bring your own compute. Your secrets, your scale, while we orchestrate the rest .
+Come meet us at the AI Engineer World's Fair Jun 29-Jul 2 @ San Francisco to chat, or signup for an all-access trial. Make ship happen ➡
+OpenAI prepares GPT-5.6 models for the upcoming release (2 minute read)
+OpenAI plans to launch GPT-5.6, potentially including Mini and Pro variants, next week. Key enhancements include a larger 1.5 million token context window, improved long-horizon coding, and faster Codex response times. Competitive pricing aims to undercut Anthropic, especially as US regulatory issues impact Anthropic's Claude Fable 5 availability.
+Midjourney, the AI image generator, is developing a full-body ultrasonic scanner (3 minute read)
+Midjourney's new project is a medical machine that can scan a person's whole body in just 60 seconds. The Midjourney Scanner is not related to anything seen from the company so far. It can create a 3D map of users' bodies, down to a fraction of a millimeter, that looks similar to an MRI but at nearly a hundred times the speed. A full scan takes less than 60 seconds, compared to the 60 to 90 minutes it typically takes to do a full-body MRI. The company is building spas to house the machines for customers to use.
+Self-Improving Memory for Agents (6 minute read)
+Perplexity Brain is a memory system that builds a persistent context graph across tasks, projects, decisions, files, and sources so agents can start with relevant context instead of starting from scratch. Brain links every memory to its original source, continuously updates and organizes knowledge over time, and improves answer correctness while reducing task costs through better retrieval and reuse of prior work.
+Reinforcement learning towards broadly and persistently beneficial models (22 minute read)
+Reinforcement learning on realistic scenarios targeting beneficial traits can produce broad improvements across dozens of benchmarks measuring aligned and beneficial behavior. These gains generalize beyond the domains used for training and persist under adversarial pressure. This suggests that personas could be deeply entrenched in models, and RL may be a path towards entrenching beneficial personas.
+MosaicLeaks: Can your research agent keep a secret? (10 minute read)
+MosaicLeaks highlights the privacy risks of deep research agents that combine private documents with web retrieval, often leaking sensitive information. The proposed solution, PA-DR, enhances both performance and privacy by reducing answer/full-information leakage from 34% to 9.9% while maintaining task success. PA-DR uses rewards for safe query construction rather than relying on user prompts, making agents perform better without compromising data security.
+What Shopify built on Catalog API in a few days (Sponsor)
+As part of the Spring ‘26 Edition, Shopify designers and developers built five shopping apps within days. With each running on Catalog API for product discovery and Universal Commerce Protocol for the full commerce journey from discovery to checkout, they show what's possible for anyone with an idea. Learn more
+Revisiting Hard Questions with Replay Buffers (8 minute read)
+ZPPO stores difficult questions in a replay buffer so the model can repeatedly train on them rather than seeing them only once. The method is designed to strengthen learning on challenging examples and improve rollout accuracy.
+Claude Code now supports artifacts (5 minute read)
+Claude Code now supports "artifacts," turning work sessions into live, shareable visual pages for tasks like PR walkthroughs and system explainers. Artifacts refresh automatically with updates and offer features like version history and privacy controls. Available in beta for Claude Team and Enterprise, artifacts improve collaboration by consolidating session context into a single, accessible page.
+Securing the future of AI agents (7 minute read)
+Google's AI Control Roadmap is a framework for building and managing the advanced AI deployed within the company. The approach adds a crucial layer of system-level security that provides assurance even if alignment is perfect. It incorporates safeguards like sandboxing, endpoint security, and prompt injection resistance. The roadmap uses AI alignment as a primary defense. It considers internal agents as potentially misaligned, providing assurance even if alignment isn't perfect.
+Google Is Using Nvidia's Playbook to Build a Rival AI Chip Business (11 minute read)
+Google is renting computing power from thousands of its microprocessors at an AI data center in Western New York to AI giant Anthropic. The move will help data centers raise cheaper debt. Google realized the commercial potential for its TPUs about two years ago and started investing in their inference capabilities. Its AI infrastructure team is now hyper-focused on improving chip performance.
+Godfather of AI blasts Musk's xAI as 'failure,' says labs are risking a 'big bubble explosion' (4 minute read)
+Yann LeCun criticized Elon Musk's xAI as a failure unable to compete with AI leaders like OpenAI and Anthropic. LeCun highlighted that Musk struggles to hire top talent due to past behaviors and must rent infrastructure to recover costs. He warned that AI labs must increase prices or cut costs to avoid a "big bubble explosion" due to high operational expenses.
+TLDR is hiring a curator for TLDR Hardware! (TLDR Curator, ~3 hrs/week)
+500,000 people have already signed up for TLDR Hardware, our new twice-weekly newsletter covering chips, robotics, energy, and devices. If you work in hardware and want to help curate it, send your LinkedIn or resume to hardware@tldr.tech !
+Your AI strategy is only as good as the workflow data underneath it. (Sponsor)
+Scribe Optimize automatically detects real workflows across your org and surfaces inefficiencies — so your AI initiatives are built on ground truth, not gut feel. No surveys. No guesswork. See what Optimize surfaces.
+Mistral AI to get Code and Apps features on Vibe (2 minute read)
+Mistral AI is enhancing Vibe with a CODE section for browser-based coding and an APPS area for building and sharing apps, moving beyond basic chat functionalities.
+OpenAI Introduced Enterprise Usage Analytics (3 minute read)
+OpenAI introduced new credit usage analytics and expanded spend controls for ChatGPT Enterprise.
+That Untravell'd World (6 minute read)
+A new and more difficult phase of the AI governance race with more politics and higher stakes has begun.
+The $13 Billion AI Startup Betting on Cheaper Alternatives to OpenAI, Anthropic (4 minute read)
+Baseten specializes in providing software and computing capacity to companies tapping into lower-cost AI models.
+‘No poaching' our people, China's AI behemoth DeepSeek reportedly tells investors (3 minute read)
+DeepSeek told potential investors not to poach the startup's staff or encourage them to start their own companies.
+Get the most interesting AI stories and breakthroughs delivered in a free daily email.
+Join 1,100,000 readers for one daily email
+Privacy Careers Advertise
+
+## full_text
+
+GPT-5.6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠 TLDR
+Newsletters
+Advertise
+Blog
+TLDR
+TLDR AI 2026-06-19
+GPT-5.6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠
+Models get the headlines, pipelines hit the deadlines (Sponsor)
+Every layer of the AI stack runs CI on Buildkite: frontier labs (Cursor, Meta, OpenAI, Anthropic, Mistral, Cohere); inference (vLLM, Coreweave, Anyscale); ML platform infra (NVIDIA, Lambda, Hugging Face, Tecton); applied (Harvey, Persona, Anyscale).
+Why? Control without compromise. 100,000+ concurrent runners? Easy mode. Host with us or self-host and bring your own compute. Your secrets, your scale, while we orchestrate the rest .
+Come meet us at the AI Engineer World's Fair Jun 29-Jul 2 @ San Francisco to chat, or signup for an all-access trial. Make ship happen ➡
+OpenAI prepares GPT-5.6 models for the upcoming release (2 minute read)
+OpenAI plans to launch GPT-5.6, potentially including Mini and Pro variants, next week. Key enhancements include a larger 1.5 million token context window, improved long-horizon coding, and faster Codex response times. Competitive pricing aims to undercut Anthropic, especially as US regulatory issues impact Anthropic's Claude Fable 5 availability.
+Midjourney, the AI image generator, is developing a full-body ultrasonic scanner (3 minute read)
+Midjourney's new project is a medical machine that can scan a person's whole body in just 60 seconds. The Midjourney Scanner is not related to anything seen from the company so far. It can create a 3D map of users' bodies, down to a fraction of a millimeter, that looks similar to an MRI but at nearly a hundred times the speed. A full scan takes less than 60 seconds, compared to the 60 to 90 minutes it typically takes to do a full-body MRI. The company is building spas to house the machines for customers to use.
+Self-Improving Memory for Agents (6 minute read)
+Perplexity Brain is a memory system that builds a persistent context graph across tasks, projects, decisions, files, and sources so agents can start with relevant context instead of starting from scratch. Brain links every memory to its original source, continuously updates and organizes knowledge over time, and improves answer correctness while reducing task costs through better retrieval and reuse of prior work.
+Reinforcement learning towards broadly and persistently beneficial models (22 minute read)
+Reinforcement learning on realistic scenarios targeting beneficial traits can produce broad improvements across dozens of benchmarks measuring aligned and beneficial behavior. These gains generalize beyond the domains used for training and persist under adversarial pressure. This suggests that personas could be deeply entrenched in models, and RL may be a path towards entrenching beneficial personas.
+MosaicLeaks: Can your research agent keep a secret? (10 minute read)
+MosaicLeaks highlights the privacy risks of deep research agents that combine private documents with web retrieval, often leaking sensitive information. The proposed solution, PA-DR, enhances both performance and privacy by reducing answer/full-information leakage from 34% to 9.9% while maintaining task success. PA-DR uses rewards for safe query construction rather than relying on user prompts, making agents perform better without compromising data security.
+What Shopify built on Catalog API in a few days (Sponsor)
+As part of the Spring ‘26 Edition, Shopify designers and developers built five shopping apps within days. With each running on Catalog API for product discovery and Universal Commerce Protocol for the full commerce journey from discovery to checkout, they show what's possible for anyone with an idea. Learn more
+Revisiting Hard Questions with Replay Buffers (8 minute read)
+ZPPO stores difficult questions in a replay buffer so the model can repeatedly train on them rather than seeing them only once. The method is designed to strengthen learning on challenging examples and improve rollout accuracy.
+Claude Code now supports artifacts (5 minute read)
+Claude Code now supports "artifacts," turning work sessions into live, shareable visual pages for tasks like PR walkthroughs and system explainers. Artifacts refresh automatically with updates and offer features like version history and privacy controls. Available in beta for Claude Team and Enterprise, artifacts improve collaboration by consolidating session context into a single, accessible page.
+Securing the future of AI agents (7 minute read)
+Google's AI Control Roadmap is a framework for building and managing the advanced AI deployed within the company. The approach adds a crucial layer of system-level security that provides assurance even if alignment is perfect. It incorporates safeguards like sandboxing, endpoint security, and prompt injection resistance. The roadmap uses AI alignment as a primary defense. It considers internal agents as potentially misaligned, providing assurance even if alignment isn't perfect.
+Google Is Using Nvidia's Playbook to Build a Rival AI Chip Business (11 minute read)
+Google is renting computing power from thousands of its microprocessors at an AI data center in Western New York to AI giant Anthropic. The move will help data centers raise cheaper debt. Google realized the commercial potential for its TPUs about two years ago and started investing in their inference capabilities. Its AI infrastructure team is now hyper-focused on improving chip performance.
+Godfather of AI blasts Musk's xAI as 'failure,' says labs are risking a 'big bubble explosion' (4 minute read)
+Yann LeCun criticized Elon Musk's xAI as a failure unable to compete with AI leaders like OpenAI and Anthropic. LeCun highlighted that Musk struggles to hire top talent due to past behaviors and must rent infrastructure to recover costs. He warned that AI labs must increase prices or cut costs to avoid a "big bubble explosion" due to high operational expenses.
+TLDR is hiring a curator for TLDR Hardware! (TLDR Curator, ~3 hrs/week)
+500,000 people have already signed up for TLDR Hardware, our new twice-weekly newsletter covering chips, robotics, energy, and devices. If you work in hardware and want to help curate it, send your LinkedIn or resume to hardware@tldr.tech !
+Your AI strategy is only as good as the workflow data underneath it. (Sponsor)
+Scribe Optimize automatically detects real workflows across your org and surfaces inefficiencies — so your AI initiatives are built on ground truth, not gut feel. No surveys. No guesswork. See what Optimize surfaces.
+Mistral AI to get Code and Apps features on Vibe (2 minute read)
+Mistral AI is enhancing Vibe with a CODE section for browser-based coding and an APPS area for building and sharing apps, moving beyond basic chat functionalities.
+OpenAI Introduced Enterprise Usage Analytics (3 minute read)
+OpenAI introduced new credit usage analytics and expanded spend controls for ChatGPT Enterprise.
+That Untravell'd World (6 minute read)
+A new and more difficult phase of the AI governance race with more politics and higher stakes has begun.
+The $13 Billion AI Startup Betting on Cheaper Alternatives to OpenAI, Anthropic (4 minute read)
+Baseten specializes in providing software and computing capacity to companies tapping into lower-cost AI models.
+‘No poaching' our people, China's AI behemoth DeepSeek reportedly tells investors (3 minute read)
+DeepSeek told potential investors not to poach the startup's staff or encourage them to start their own companies.
+Get the most interesting AI stories and breakthroughs delivered in a free daily email.
+Join 1,100,000 readers for one daily email
+Privacy Careers Advertise
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 79
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":79,"text_length":7697,"paragraph_count":45,"sentence_count":58,"boilerplate_hits":2,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-06-19 GPT-5.
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠 Models get the headlines, pipelines hit the deadlines (Sponsor) Every layer of the AI stack runs CI on Buildkite: frontier labs (Cursor, Meta, OpenAI, Anthropic, Mistral, Cohere); inference (vLLM, Coreweave, Anyscale); ML platform infra (NVIDIA, Lambda, Hugging Face, Tecton); applied (Harvey, Persona, Anyscale).
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Control without compromise.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   100,000+ concurrent runners?
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Host with us or self-host and bring your own compute.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Your secrets, your scale, while we orchestrate the rest .
+
+## business_elements
+
+- companies: TLDR AI Newsletter, OpenAI, Anthropic, Google, Meta, Nvidia, Cursor, Perplexity, Mistral
+- products: GPT-5, Claude, Cursor, Codex, Agents, agents, agent, ChatGPT
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 5.6, 2026, 06, 19, 100, 000, 29, 2
+- quotes: artifacts, / big bubble explosion
+
+## evidence_seed
+
+- company_actions: 6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-06-19 GPT-5. / 6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠 Models get the headlines, pipelines hit the deadlines (Sponsor) Every layer of the AI stack runs CI on Buildkite: frontier labs (Cursor, Meta, OpenAI, Anthropic, Mistral, Cohere); inference (vLLM, Coreweave, Anyscale); ML platform infra (NVIDIA, Lambda, Hugging Face, Tecton); applied (Harvey, Persona, Anyscale). / Control without compromise.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: AI hardware product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,ai_hardware_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+采集通道未提供摘要。
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

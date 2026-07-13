@@ -1,13 +1,269 @@
 {
   "meta": {
     "version": "EAI-V1.2.0-raw-card-ingestion-boundary",
-    "generatedAt": "2026-07-12T10:25:04.034Z",
-    "activeDate": "2026-07-12",
+    "generatedAt": "2026-07-13T04:13:49.278Z",
+    "activeDate": "2026-07-13",
     "source": "01-SiteV2/site/data/v3-data-observation-desk.json",
-    "fdePoolCount": 0,
-    "itemCount": 0,
+    "fdePoolCount": 1,
+    "itemCount": 1,
     "boundary": "FDE is an Enterprise AI lens pool, not a fourth Business Signals Card type."
   },
-  "fdePool": [],
-  "items": []
+  "fdePool": [
+    {
+      "id": "FDE-2026-07-13-P-017",
+      "type": "signal_card",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
+      "originalTitle": "Introducing Taskade TSK-1: The Taskade System Kernel (2026) | Taskade Blog",
+      "date": "2026-07-13",
+      "subject": "Taskade",
+      "source": "taskade.com",
+      "sourceName": "taskade.com",
+      "sourceUrl": "https://www.taskade.com/blog/introducing-tsk-1",
+      "sourceLevel": "B",
+      "evidenceStrength": "rich_evidence",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "2026-07-08T00:00:00.000Z",
+      "tags": {
+        "track": [
+          "track-enterprise-workflow",
+          "track-ai-applications",
+          "track-ai-infra"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ]
+      },
+      "flatTags": [
+        "track-enterprise-workflow",
+        "track-ai-applications",
+        "track-ai-infra",
+        "evidence-product-launch"
+      ],
+      "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-applications",
+          "label": "AI 应用与平台"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层 Introducing Taskade TSK-1: The Taskade System Kernel (2026) | Taskade Blog Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
+        "missingFields": [
+          "adoption_evidence"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            },
+            {
+              "id": "sales_team",
+              "label": "Sales or revenue team"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "sales",
+              "label": "Sales / revenue operations"
+            }
+          ],
+          "specific_task": [
+            {
+              "id": "sales_lead_research",
+              "label": "Lead research, account research, or pipeline enrichment"
+            }
+          ],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "funding_round",
+              "label": "Funding, financing, or investment round"
+            },
+            {
+              "id": "product_launch",
+              "label": "Product, feature, model, API, or platform launch"
+            }
+          ],
+          "product_form": [
+            {
+              "id": "copilot",
+              "label": "Copilot or assistant embedded into an existing workflow"
+            }
+          ],
+          "delivery_model": [
+            {
+              "id": "project_based_service",
+              "label": "Project-based implementation service"
+            }
+          ],
+          "pain_or_constraint": [
+            {
+              "id": "context_management",
+              "label": "Context, memory, or state management"
+            },
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [],
+          "source_evidence_type": [
+            {
+              "id": "funding_news",
+              "label": "Funding news or investor announcement"
+            }
+          ]
+        },
+        "buyer_or_user": [
+          "enterprise_ai_owner",
+          "sales_team"
+        ],
+        "buyerOrUser": [
+          "enterprise_ai_owner",
+          "sales_team"
+        ],
+        "team_or_function": [
+          "sales"
+        ],
+        "teamOrFunction": [
+          "sales"
+        ],
+        "specific_task": [
+          "sales_lead_research"
+        ],
+        "specificTask": [
+          "sales_lead_research"
+        ],
+        "business_action": [
+          "customer_deployment",
+          "funding_round",
+          "product_launch"
+        ],
+        "businessAction": [
+          "customer_deployment",
+          "funding_round",
+          "product_launch"
+        ],
+        "product_form": [
+          "copilot"
+        ],
+        "productForm": [
+          "copilot"
+        ],
+        "delivery_model": [
+          "project_based_service"
+        ],
+        "deliveryModel": [
+          "project_based_service"
+        ],
+        "pain_or_constraint": [
+          "context_management",
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "context_management",
+          "workflow_integration"
+        ],
+        "adoption_evidence": [],
+        "adoptionEvidence": [],
+        "source_evidence_type": [
+          "funding_news"
+        ],
+        "sourceEvidenceType": [
+          "funding_news"
+        ]
+      },
+      "summary": "Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
+      "translatedFact": "Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
+      "originalHighlights": [
+        "taskade 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "visibleFragment": "Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。",
+      "sourceLinks": [
+        "https://www.taskade.com/blog/introducing-tsk-1"
+      ],
+      "sourceTitle": "Introducing Taskade TSK-1: The Taskade System Kernel (2026) | Taskade Blog",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "stage": "",
+      "evidence": "evidence-product-launch",
+      "largeVendorKey": "",
+      "track": "track-enterprise-workflow",
+      "generatedTitle": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
+      "displayTitle": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
+      "largeVendor": false,
+      "frontstageRankScore": 950,
+      "frontstageEditorialScore": 950,
+      "frontstageEvidenceScore": 88,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260713-A01",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-017",
+      "titleZh": "",
+      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "factExtractionStatus": "missing_fde_lens_fact",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是面向把 Agent 或模型接入业务系统的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
+        "sourceBasis": "Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "enterprise-ai:SIG-20260713-A01",
+      "cardId": "SIG-20260713-A01",
+      "date": "2026-07-13",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
+      "subject": "Taskade",
+      "sourceName": "taskade.com",
+      "sourceUrl": "https://www.taskade.com/blog/introducing-tsk-1",
+      "stage": "platform_enablement",
+      "stageLabel": "平台使能",
+      "scenario": "企业工作流",
+      "workflow": "把 Agent 或模型接入业务系统",
+      "evidenceBoundary": "已确认：Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "原文显示，企业侧需求集中在把 Agent 或模型接入业务系统，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。",
+        "services": "提供的服务是面向把 Agent 或模型接入业务系统的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。",
+        "result": "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。",
+        "sourceBasis": "Taskade表示，平台中构建的每个应用现在都运行在 TSK-1 上，该内核成为工作区背后的统一智能层。"
+      }
+    }
+  ]
 }

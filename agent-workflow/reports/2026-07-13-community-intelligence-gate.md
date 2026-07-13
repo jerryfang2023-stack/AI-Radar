@@ -23,4 +23,3 @@
 - passed: archive view exists: Tool Tips.md - 01-SiteV2/content/07-community-intelligence/views/Tool Tips.md
 - passed: archive view exists: Opportunities.md - 01-SiteV2/content/07-community-intelligence/views/Opportunities.md
 - passed: archive view exists: Resource Links.md - 01-SiteV2/content/07-community-intelligence/views/Resource Links.md
-

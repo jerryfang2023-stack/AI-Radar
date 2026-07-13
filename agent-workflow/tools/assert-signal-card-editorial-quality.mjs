@@ -74,6 +74,10 @@ if (fs.existsSync(handoffPath)) {
   for (const failure of unexplainedSpecFailures) {
     problems.push(`unclassified Card recall failure: ${failure.replace(/^- /u, "")}`);
   }
+  const repairableRecallFailures = handoff.match(/^- P-\d+: .*; priority=high; .*$/gmu) || [];
+  for (const failure of repairableRecallFailures) {
+    problems.push(`high-value Card recall repair required: ${failure.replace(/^- /u, "")}`);
+  }
 }
 if (!files.length) problems.push(`no formal Signal Cards generated for ${date}`);
 for (const file of files) {

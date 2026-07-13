@@ -1,0 +1,543 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-007
+title: "Definitive YC Companies' Guide | Fundraise Insider"
+title_zh: "权威的YC公司指南| Fundraise Insider"
+title_translation_status: translated
+title_translation_method: mymemory_title_translation
+original_url: "https://fundraiseinsider.com/yc-startups-and-companies/"
+canonical_url: "https://fundraiseinsider.com/yc-startups-and-companies"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-13T03:44:09.019Z
+language: mixed
+full_text_hash: 4c692aea95467519
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-007-definitive-yc-companies-guide-fundraise-insider.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-007-definitive-yc-companies-guide-fundraise-insider.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":13331,"paragraph_count":132,"sentence_count":105,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 13331
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4c692aea95467519","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: ed792326e75ecf6a
+content_hash: 4c692aea95467519
+semantic_hash: 37c5aae183e56d50
+duplicate_of: ""
+first_seen_at: "2026-07-13T03:44:09.019Z"
+last_seen_at: 2026-07-13T03:44:09.019Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: false
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agents"],"people":[],"industries":["金融 / 保险","医疗"],"roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"workflows":["计费 / 预算管理","采购 / 招投标"],"business_actions":["合作 / 联盟","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","采购","销售 / 客服"],"numbers":["445","$11.6B","75%","63%","$11.6 B","75 %","63 %","2025"],"quotes":[]}
+evidence_seed: {"company_actions":["Definitive YC Companies' Guide | Fundraise Insider 445 YC backed companies $11.6B Disclosed capital raised 75% Pre-Seed through Series A 63% Building AI products Y Combinator companies raise money differently than the rest of the venture market. They raise earlier, they raise faster, and th... / query=YC AI startup funding vertical AI / intent=find_startups / path=capital_startup","6 B Disclosed capital raised 75 % Pre-Seed through Series A 63 % Building AI products Y Combinator companies raise money differently than the rest of the venture market.","They raise earlier, they raise faster, and they pull the same small group of investors back to the table round after round."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Definitive YC Companies' Guide | Fundraise Insider 445 YC backed companies $11.6B Disclosed capital raised 75% Pre-Seed through Series A 63% Building AI products Y Combinator companies raise money differently than the rest of the venture market. They raise earlier, they raise faster, and th... / query=YC AI startup funding vertical AI / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"445 YC backed companies $11.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"6 B Disclosed capital raised 75 % Pre-Seed through Series A 63 % Building AI products Y Combinator companies raise money differently than the rest of the venture market.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"They raise earlier, they raise faster, and they pull the same small group of investors back to the table round after round.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"This report analyzes 445 YC backed companies that closed named funding rounds between January 2025 and June 2026.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Every figure below comes directly from verified funding records, not estimates or third party summaries.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-13T03:44:09.019Z
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Definitive YC Companies' Guide | Fundraise Insider
+
+## clean_text
+
+445
+YC backed companies
+$11.6 B
+Disclosed capital raised
+75 %
+Pre-Seed through Series A
+63 %
+Building AI products
+Y Combinator companies raise money differently than the rest of the venture market. They raise earlier, they raise faster, and they pull the same small group of investors back to the table round after round.
+This report analyzes 445 YC backed companies that closed named funding rounds between January 2025 and June 2026. Every figure below comes directly from verified funding records, not estimates or third party summaries.
+The dataset behind this analysis comes from Fundraise Insider , which tracks newly funded companies every week and delivers verified C suite contacts, direct emails, and LinkedIn profiles for each one. Static databases show you yc companies months after the money lands.
+Fundraise Insider shows you the round the week it closes, when budgets are fresh and decision makers are actively buying. If you sell to funded startups, that timing gap is the entire game.
+Table of Contents
+Headline Numbers From the YC Portfolio
+Where YC Companies Sit in the Funding Lifecycle
+Round Size Benchmarks by Stage
+Funding Cadence and the Batch Effect
+What YC Startups Actually Build
+The San Francisco Concentration
+Headcount and Time to Capital
+The Investor Network Around YC
+The Biggest YC Companies by Round Size
+What This Means If You Sell to YC Startups
+Methodology and Exclusions
+Section 1
+Headline Numbers From the YC Portfolio
+Across the 18 month window, the 445 companies in this yc list raised a combined $11.6 billion in disclosed capital. That figure covers only named rounds with verifiable amounts, from Pre-Seed through Series G.
+The portfolio skews young and small. The median company in the dataset employs 14 people, and 200 of the 445 companies, or 45 percent, run with 10 or fewer employees.
+Three numbers define the shape of this y combinator companies dataset:
+336 of 445 companies, or 75 percent, raised at Pre-Seed, Seed, or Series A
+270 companies, or 61 percent, are headquartered in San Francisco alone
+280 company descriptions, or 63 percent, reference AI, machine learning, or agents as core to the product
+The concentration runs in every direction at once: stage, city, and technology. Understanding it is the fastest way to understand the modern yc portfolio.
+Section 2
+Where YC Companies Sit in the Funding Lifecycle
+Seed is the center of gravity for yc startups. 144 of the 445 companies, 32 percent, closed a Seed round during the window, more than any other stage.
+Pre-Seed now runs second at 108 companies, lifted by a large wave of fresh batch companies that raised in June 2026. More on that wave in the cadence section below.
+YC Backed Rounds by Stage
+January 2025 to June 2026, n=445
+Source: Fundraise Insider verified funding records. Named rounds only, each company counted once by most recent round.
+Series A and Series B together account for another 138 rounds. Past Series B, the funnel narrows sharply: only 40 companies in the entire dataset raised at Series C through Series G.
+That distribution tells you something about the yc portfolio that aggregate valuation headlines hide. The overwhelming majority of y combinator alumni in active fundraising mode are 1 to 4 years old, pre Series B, and still building their first sales and operations stack.
+Capital Tells a Different Story Than Count
+Count and capital invert. Series B rounds, only 12 percent of deals, absorbed $3 billion, the largest pool of any stage.
+Series A followed at $1.8 billion, then Series C at $1.7 billion and Series D at $1.4 billion. All 108 Pre-Seed rounds combined raised just over $60 million, a rounding error next to the growth stages.
+Section 3
+Round Size Benchmarks by Stage
+These figures come from rounds with disclosed amounts and serve as current benchmarks for anyone evaluating or selling into yc backed companies.
+Stage Median Round Middle 50% of Rounds Top Decile
+Pre-Seed $500K Sub $1M typical $1M+
+Seed $4.5M $3.4M to $6.5M $10.5M+
+Series A $16M $12.5M to $21M $32M+
+Series B $45M $31M to $70M $90M+
+Series C $76M 18 disclosed rounds in window
+Series D $105M 11 disclosed rounds in window
+Series E $96M 5 disclosed rounds in window
+The Seed benchmark deserves a closer look because it defines the largest cohort. The median yc startup Seed round landed at $4.5 million, with the middle 50 percent of rounds falling between $3.4 million and $6.5 million.
+The top decile of Seed rounds cleared $10.5 million, a figure that would have qualified as a healthy Series A only a few years ago. Stage labels have inflated, and the data confirms it.
+Series A and B Benchmarks
+Series A rounds for y combinator companies showed a median of $16 million, with the interquartile range spanning $12.5 million to $21 million. The top 10 percent of A rounds reached $32 million or more.
+Series B medians hit $45 million, with the middle half of rounds between $31 million and $70 million. A YC company crossing into Series B today is, on capital alone, where Series C companies sat a decade ago.
+Section 4
+Funding Cadence and the Batch Effect
+YC funding does not arrive evenly across the calendar. The quarterly pattern shows 2 pronounced spikes: Q3 2025 with 104 rounds, and Q2 2026 with 119 rounds, now the busiest quarter in the dataset.
+YC Backed Rounds per Quarter
+Named rounds with verified dates
+Source: Fundraise Insider verified funding records, Jan 2025 to Jun 2026.
+Both spikes have the same clean explanation. September 2025 produced 61 rounds, 42 of them Pre-Seed checks, and June 2026 topped it with 73 rounds, 51 of them Pre-Seed.
+June 2026 is now the single busiest month in the entire dataset. The pattern is consistent with YC batch cycles pushing waves of newly capitalized companies into the market at once.
+This is the batch effect, and it matters operationally. When a combinator latest batch hits demo day, dozens of newly funded companies enter buying mode within the same 4 to 6 week window.
+Teams that track funding weekly catch that wave as it forms. Teams that rely on quarterly database refreshes find it after the first vendor decisions are already made.
+Section 5
+What YC Startups Actually Build
+Information technology and services dominates the yc company list, accounting for 280 of 445 companies, or 63 percent. Financial services follows at 32 companies, then research at 20, with defense and space, health care, and industrial engineering at 12 each.
+AI Is the Default, Not the Differentiator
+280 of the 445 companies, 63 percent, describe AI, machine learning, or autonomous agents as central to their product. Within the most recent cohorts the share runs even higher.
+The practical read: AI is no longer a sector inside the YC universe. It is the substrate, and the meaningful differences now show up in which industry the AI is applied to.
+Round Sizes Vary Sharply by Sector
+Sector choice changes the capital math. Median disclosed rounds by industry vertical:
+Sector Companies Median Disclosed Round
+Financial services 32 $14.8M
+Insurance 7 $25M
+Research and biotech adjacent 20 $7.2M
+Defense and space 12 $6.6M
+Hospital and health care 12 $6M
+Defense Runs Hot at Both Ends
+Defense and space is the clearest read on where combinator seeks startups next, and the sector now splits into 2 distinct populations. The June 2026 wave brought a fresh crop of Pre-Seed defense entrants, which pulled the sector median down to $6.6 million.
+At the other end, the growth stage defense companies raise enormous rounds: Stoke Space at $510 million, Lumen Orbit at $170 million, Turion Space at $75 million, and Hubble Network at $70 million. The pipeline is refilling at the bottom while the top absorbs the biggest single checks in the entire yc portfolio.
+Section 6
+The San Francisco Concentration
+The geographic story is concentration without much nuance. San Francisco proper houses 270 of the 445 companies, and California overall holds 309, or 69 percent.
+Headquarters of YC Backed Companies by Metro
+Top metros, n=445
+Source: Fundraise Insider verified funding records, Jan 2025 to Jun 2026.
+New York is the only meaningful counterweight at 70 companies, 16 percent of the total. Every other metro, including Austin, Los Angeles, and Boston, registers in single digits.
+431 of the 445 companies sit in the United States. The remote work thesis that predicted YC dispersion did not survive contact with the AI boom, which has repulled talent and capital into San Francisco at rates that exceed the prior cycle.
+Section 7
+Headcount and Time to Capital
+These are small organizations moving fast. 286 of 445 companies, 64 percent, employ 25 or fewer people, and the median headcount across the full dataset is 14.
+The founding to funding gap compresses at the early stages. Companies closing Pre-Seed rounds were a median of 1 year from founding, Seed companies 2 years, Series A companies 3 years, and Series B companies 5 years.
+By Series D the median company is 8 years old. The progression maps a consistent rhythm: a yc startup that stays on pace raises roughly every 18 to 24 months through Series B.
+Why Headcount Matters for Anyone Selling to These Companies
+At 14 employees there is no procurement department, no RFP process, and usually no dedicated buyer for most categories. The founder or a first executive hire makes the purchase decision directly.
+That keeps sales cycles short but windows brief. The vendor stack a 14 person company assembles in the 90 days after a round tends to persist for years.
+Section 8
+The Investor Network Around Y Combinator
+The same names appear alongside Y Combinator with striking regularity. Across the 445 companies, the most frequent syndicate partners were:
+Pioneer Fund, appearing in 49 companies
+General Catalyst, 35 companies
+Liquid 2 Ventures, 30 companies
+Andreessen Horowitz, 27 companies
+Alumni Ventures, 24 companies
+Gaingels, BoxGroup, and Peak XV Partners, 18 companies each
+Rebel Fund, 17 companies
+SV Angel, 16 companies
+The pattern splits into 2 tiers. Pioneer Fund, Liquid 2 Ventures, Rebel Fund, and Alumni Ventures are YC alumni oriented vehicles that systematically back batch companies at Pre-Seed and Seed.
+General Catalyst, Andreessen Horowitz, Sequoia Capital, and Lightspeed Venture Partners enter at Series A and beyond, where they concentrate the larger checks. When one of these firms appears next to Y Combinator on a cap table, the company has typically cleared an external validation bar beyond the batch itself.
+Section 9
+The Biggest YC Companies by Round Size
+The largest verified rounds in the window show how far y combinator alumni travel from their batch origins. Every round below is a named stage with a disclosed amount and date.
+Stoke Space
+Series D, October 2025, defense and space
+$510M
+Rippling
+Series G, May 2025, workforce software
+$450M
+Helion Energy
+Series F, January 2025, fusion energy
+$425M
+Boom Supersonic
+Series B, December 2025, aviation
+$300M
+Astranis
+Series E, May 2026, satellite communications
+$300M
+Flock Safety
+Series F, March 2025, public safety
+$275M
+Exa
+Series C, May 2026, AI search infrastructure
+$250M
+Brex
+Debt financing, January 2025, financial services
+$235M
+Science
+Series C, March 2026, biotechnology
+$230M
+10
+Whatnot
+Series F, October 2025, live commerce
+$225M
+Note the composition. Half of the 10 biggest yc companies by round size in this window build physical or regulated products: rockets, fusion reactors, supersonic aircraft, satellites, and public safety hardware.
+The stereotype of YC as a pure software accelerator is roughly a decade out of date. The largest capital flows now run through hard tech.
+Section 10
+What This Means If You Sell to YC Startups
+The data points to 4 operational conclusions for agencies, SaaS vendors, recruiters, and sales teams targeting yc backed companies.
+The volume lives at Pre-Seed through Series A
+75 percent of active rounds happen there. The typical newly funded YC company is 10 to 25 people, founder led on purchasing, and assembling its vendor stack right now.
+Timing beats targeting
+The batch effect concentrates dozens of fresh budgets into narrow windows, and June 2026 was the busiest month yet. The buying decisions made in the 90 days after a round define the stack for years.
+The medians give you qualification math
+A Seed stage YC company just banked roughly $4.5 million and a Series A company $16 million. That tells you what they can afford before the first call.
+Geography simplifies territory planning
+San Francisco and New York cover 76 percent of the portfolio. Two metros carry nearly the entire market.
+Reach YC Founders the Week Their Round Closes
+Apollo and ZoomInfo can tell you a company exists. Fundraise Insider tells you the week its buying window opened, with verified C suite emails and LinkedIn URLs delivered every week.
+See Plans and Pricing
+One time payment. Weekly leads for life. No subscription.
+Appendix
+Methodology and Exclusions
+This analysis draws on Fundraise Insider weekly funding records covering January 2025 through June 2026. YC backed companies were identified through investor attribution naming Y Combinator among each company's top investors.
+Each company is counted once, by its most recent round in the window. Figures therefore describe last known rounds and do not represent cumulative capital raised by each company over its lifetime.
+
+## full_text
+
+445
+YC backed companies
+$11.6 B
+Disclosed capital raised
+75 %
+Pre-Seed through Series A
+63 %
+Building AI products
+Y Combinator companies raise money differently than the rest of the venture market. They raise earlier, they raise faster, and they pull the same small group of investors back to the table round after round.
+This report analyzes 445 YC backed companies that closed named funding rounds between January 2025 and June 2026. Every figure below comes directly from verified funding records, not estimates or third party summaries.
+The dataset behind this analysis comes from Fundraise Insider , which tracks newly funded companies every week and delivers verified C suite contacts, direct emails, and LinkedIn profiles for each one. Static databases show you yc companies months after the money lands.
+Fundraise Insider shows you the round the week it closes, when budgets are fresh and decision makers are actively buying. If you sell to funded startups, that timing gap is the entire game.
+Table of Contents
+Headline Numbers From the YC Portfolio
+Where YC Companies Sit in the Funding Lifecycle
+Round Size Benchmarks by Stage
+Funding Cadence and the Batch Effect
+What YC Startups Actually Build
+The San Francisco Concentration
+Headcount and Time to Capital
+The Investor Network Around YC
+The Biggest YC Companies by Round Size
+What This Means If You Sell to YC Startups
+Methodology and Exclusions
+Section 1
+Headline Numbers From the YC Portfolio
+Across the 18 month window, the 445 companies in this yc list raised a combined $11.6 billion in disclosed capital. That figure covers only named rounds with verifiable amounts, from Pre-Seed through Series G.
+The portfolio skews young and small. The median company in the dataset employs 14 people, and 200 of the 445 companies, or 45 percent, run with 10 or fewer employees.
+Three numbers define the shape of this y combinator companies dataset:
+336 of 445 companies, or 75 percent, raised at Pre-Seed, Seed, or Series A
+270 companies, or 61 percent, are headquartered in San Francisco alone
+280 company descriptions, or 63 percent, reference AI, machine learning, or agents as core to the product
+The concentration runs in every direction at once: stage, city, and technology. Understanding it is the fastest way to understand the modern yc portfolio.
+Section 2
+Where YC Companies Sit in the Funding Lifecycle
+Seed is the center of gravity for yc startups. 144 of the 445 companies, 32 percent, closed a Seed round during the window, more than any other stage.
+Pre-Seed now runs second at 108 companies, lifted by a large wave of fresh batch companies that raised in June 2026. More on that wave in the cadence section below.
+YC Backed Rounds by Stage
+January 2025 to June 2026, n=445
+Source: Fundraise Insider verified funding records. Named rounds only, each company counted once by most recent round.
+Series A and Series B together account for another 138 rounds. Past Series B, the funnel narrows sharply: only 40 companies in the entire dataset raised at Series C through Series G.
+That distribution tells you something about the yc portfolio that aggregate valuation headlines hide. The overwhelming majority of y combinator alumni in active fundraising mode are 1 to 4 years old, pre Series B, and still building their first sales and operations stack.
+Capital Tells a Different Story Than Count
+Count and capital invert. Series B rounds, only 12 percent of deals, absorbed $3 billion, the largest pool of any stage.
+Series A followed at $1.8 billion, then Series C at $1.7 billion and Series D at $1.4 billion. All 108 Pre-Seed rounds combined raised just over $60 million, a rounding error next to the growth stages.
+Section 3
+Round Size Benchmarks by Stage
+These figures come from rounds with disclosed amounts and serve as current benchmarks for anyone evaluating or selling into yc backed companies.
+Stage Median Round Middle 50% of Rounds Top Decile
+Pre-Seed $500K Sub $1M typical $1M+
+Seed $4.5M $3.4M to $6.5M $10.5M+
+Series A $16M $12.5M to $21M $32M+
+Series B $45M $31M to $70M $90M+
+Series C $76M 18 disclosed rounds in window
+Series D $105M 11 disclosed rounds in window
+Series E $96M 5 disclosed rounds in window
+The Seed benchmark deserves a closer look because it defines the largest cohort. The median yc startup Seed round landed at $4.5 million, with the middle 50 percent of rounds falling between $3.4 million and $6.5 million.
+The top decile of Seed rounds cleared $10.5 million, a figure that would have qualified as a healthy Series A only a few years ago. Stage labels have inflated, and the data confirms it.
+Series A and B Benchmarks
+Series A rounds for y combinator companies showed a median of $16 million, with the interquartile range spanning $12.5 million to $21 million. The top 10 percent of A rounds reached $32 million or more.
+Series B medians hit $45 million, with the middle half of rounds between $31 million and $70 million. A YC company crossing into Series B today is, on capital alone, where Series C companies sat a decade ago.
+Section 4
+Funding Cadence and the Batch Effect
+YC funding does not arrive evenly across the calendar. The quarterly pattern shows 2 pronounced spikes: Q3 2025 with 104 rounds, and Q2 2026 with 119 rounds, now the busiest quarter in the dataset.
+YC Backed Rounds per Quarter
+Named rounds with verified dates
+Source: Fundraise Insider verified funding records, Jan 2025 to Jun 2026.
+Both spikes have the same clean explanation. September 2025 produced 61 rounds, 42 of them Pre-Seed checks, and June 2026 topped it with 73 rounds, 51 of them Pre-Seed.
+June 2026 is now the single busiest month in the entire dataset. The pattern is consistent with YC batch cycles pushing waves of newly capitalized companies into the market at once.
+This is the batch effect, and it matters operationally. When a combinator latest batch hits demo day, dozens of newly funded companies enter buying mode within the same 4 to 6 week window.
+Teams that track funding weekly catch that wave as it forms. Teams that rely on quarterly database refreshes find it after the first vendor decisions are already made.
+Section 5
+What YC Startups Actually Build
+Information technology and services dominates the yc company list, accounting for 280 of 445 companies, or 63 percent. Financial services follows at 32 companies, then research at 20, with defense and space, health care, and industrial engineering at 12 each.
+AI Is the Default, Not the Differentiator
+280 of the 445 companies, 63 percent, describe AI, machine learning, or autonomous agents as central to their product. Within the most recent cohorts the share runs even higher.
+The practical read: AI is no longer a sector inside the YC universe. It is the substrate, and the meaningful differences now show up in which industry the AI is applied to.
+Round Sizes Vary Sharply by Sector
+Sector choice changes the capital math. Median disclosed rounds by industry vertical:
+Sector Companies Median Disclosed Round
+Financial services 32 $14.8M
+Insurance 7 $25M
+Research and biotech adjacent 20 $7.2M
+Defense and space 12 $6.6M
+Hospital and health care 12 $6M
+Defense Runs Hot at Both Ends
+Defense and space is the clearest read on where combinator seeks startups next, and the sector now splits into 2 distinct populations. The June 2026 wave brought a fresh crop of Pre-Seed defense entrants, which pulled the sector median down to $6.6 million.
+At the other end, the growth stage defense companies raise enormous rounds: Stoke Space at $510 million, Lumen Orbit at $170 million, Turion Space at $75 million, and Hubble Network at $70 million. The pipeline is refilling at the bottom while the top absorbs the biggest single checks in the entire yc portfolio.
+Section 6
+The San Francisco Concentration
+The geographic story is concentration without much nuance. San Francisco proper houses 270 of the 445 companies, and California overall holds 309, or 69 percent.
+Headquarters of YC Backed Companies by Metro
+Top metros, n=445
+Source: Fundraise Insider verified funding records, Jan 2025 to Jun 2026.
+New York is the only meaningful counterweight at 70 companies, 16 percent of the total. Every other metro, including Austin, Los Angeles, and Boston, registers in single digits.
+431 of the 445 companies sit in the United States. The remote work thesis that predicted YC dispersion did not survive contact with the AI boom, which has repulled talent and capital into San Francisco at rates that exceed the prior cycle.
+Section 7
+Headcount and Time to Capital
+These are small organizations moving fast. 286 of 445 companies, 64 percent, employ 25 or fewer people, and the median headcount across the full dataset is 14.
+The founding to funding gap compresses at the early stages. Companies closing Pre-Seed rounds were a median of 1 year from founding, Seed companies 2 years, Series A companies 3 years, and Series B companies 5 years.
+By Series D the median company is 8 years old. The progression maps a consistent rhythm: a yc startup that stays on pace raises roughly every 18 to 24 months through Series B.
+Why Headcount Matters for Anyone Selling to These Companies
+At 14 employees there is no procurement department, no RFP process, and usually no dedicated buyer for most categories. The founder or a first executive hire makes the purchase decision directly.
+That keeps sales cycles short but windows brief. The vendor stack a 14 person company assembles in the 90 days after a round tends to persist for years.
+Section 8
+The Investor Network Around Y Combinator
+The same names appear alongside Y Combinator with striking regularity. Across the 445 companies, the most frequent syndicate partners were:
+Pioneer Fund, appearing in 49 companies
+General Catalyst, 35 companies
+Liquid 2 Ventures, 30 companies
+Andreessen Horowitz, 27 companies
+Alumni Ventures, 24 companies
+Gaingels, BoxGroup, and Peak XV Partners, 18 companies each
+Rebel Fund, 17 companies
+SV Angel, 16 companies
+The pattern splits into 2 tiers. Pioneer Fund, Liquid 2 Ventures, Rebel Fund, and Alumni Ventures are YC alumni oriented vehicles that systematically back batch companies at Pre-Seed and Seed.
+General Catalyst, Andreessen Horowitz, Sequoia Capital, and Lightspeed Venture Partners enter at Series A and beyond, where they concentrate the larger checks. When one of these firms appears next to Y Combinator on a cap table, the company has typically cleared an external validation bar beyond the batch itself.
+Section 9
+The Biggest YC Companies by Round Size
+The largest verified rounds in the window show how far y combinator alumni travel from their batch origins. Every round below is a named stage with a disclosed amount and date.
+Stoke Space
+Series D, October 2025, defense and space
+$510M
+Rippling
+Series G, May 2025, workforce software
+$450M
+Helion Energy
+Series F, January 2025, fusion energy
+$425M
+Boom Supersonic
+Series B, December 2025, aviation
+$300M
+Astranis
+Series E, May 2026, satellite communications
+$300M
+Flock Safety
+Series F, March 2025, public safety
+$275M
+Exa
+Series C, May 2026, AI search infrastructure
+$250M
+Brex
+Debt financing, January 2025, financial services
+$235M
+Science
+Series C, March 2026, biotechnology
+$230M
+10
+Whatnot
+Series F, October 2025, live commerce
+$225M
+Note the composition. Half of the 10 biggest yc companies by round size in this window build physical or regulated products: rockets, fusion reactors, supersonic aircraft, satellites, and public safety hardware.
+The stereotype of YC as a pure software accelerator is roughly a decade out of date. The largest capital flows now run through hard tech.
+Section 10
+What This Means If You Sell to YC Startups
+The data points to 4 operational conclusions for agencies, SaaS vendors, recruiters, and sales teams targeting yc backed companies.
+The volume lives at Pre-Seed through Series A
+75 percent of active rounds happen there. The typical newly funded YC company is 10 to 25 people, founder led on purchasing, and assembling its vendor stack right now.
+Timing beats targeting
+The batch effect concentrates dozens of fresh budgets into narrow windows, and June 2026 was the busiest month yet. The buying decisions made in the 90 days after a round define the stack for years.
+The medians give you qualification math
+A Seed stage YC company just banked roughly $4.5 million and a Series A company $16 million. That tells you what they can afford before the first call.
+Geography simplifies territory planning
+San Francisco and New York cover 76 percent of the portfolio. Two metros carry nearly the entire market.
+Reach YC Founders the Week Their Round Closes
+Apollo and ZoomInfo can tell you a company exists. Fundraise Insider tells you the week its buying window opened, with verified C suite emails and LinkedIn URLs delivered every week.
+See Plans and Pricing
+One time payment. Weekly leads for life. No subscription.
+Appendix
+Methodology and Exclusions
+This analysis draws on Fundraise Insider weekly funding records covering January 2025 through June 2026. YC backed companies were identified through investor attribution naming Y Combinator among each company's top investors.
+Each company is counted once, by its most recent round in the window. Figures therefore describe last known rounds and do not represent cumulative capital raised by each company over its lifetime.
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 97
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":13331,"paragraph_count":132,"sentence_count":105,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Definitive YC Companies' Guide | Fundraise Insider 445 YC backed companies $11.6B Disclosed capital raised 75% Pre-Seed through Series A 63% Building AI products Y Combinator companies raise money differently than the rest of the venture market. They raise earlier, they raise faster, and th... / query=YC AI startup funding vertical AI / intent=find_startups / path=capital_startup
+
+2. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   445 YC backed companies $11.
+
+3. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   6 B Disclosed capital raised 75 % Pre-Seed through Series A 63 % Building AI products Y Combinator companies raise money differently than the rest of the venture market.
+
+4. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   They raise earlier, they raise faster, and they pull the same small group of investors back to the table round after round.
+
+5. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   This report analyzes 445 YC backed companies that closed named funding rounds between January 2025 and June 2026.
+
+6. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Every figure below comes directly from verified funding records, not estimates or third party summaries.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agents
+- people: 暂无公开信息
+- industries: 金融 / 保险, 医疗
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 采购负责人, 销售 / 客服
+- workflows: 计费 / 预算管理, 采购 / 招投标
+- business_actions: 合作 / 联盟, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 采购, 销售 / 客服
+- numbers: 445, $11.6B, 75%, 63%, $11.6 B, 75 %, 63 %, 2025
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Definitive YC Companies' Guide | Fundraise Insider 445 YC backed companies $11.6B Disclosed capital raised 75% Pre-Seed through Series A 63% Building AI products Y Combinator companies raise money differently than the rest of the venture market. They raise earlier, they raise faster, and th... / query=YC AI startup funding vertical AI / intent=find_startups / path=capital_startup / 6 B Disclosed capital raised 75 % Pre-Seed through Series A 63 % Building AI products Y Combinator companies raise money differently than the rest of the venture market. / They raise earlier, they raise faster, and they pull the same small group of investors back to the table round after round.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 采购负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Definitive YC Companies' Guide | Fundraise Insider 445 YC backed companies $11.6B Disclosed capital raised 75% Pre-Seed through Series A 63% Building AI products Y Combinator companies raise money differently than the rest of the venture market. They raise earlier, they raise faster, and th... / query=YC AI startup funding vertical AI / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
