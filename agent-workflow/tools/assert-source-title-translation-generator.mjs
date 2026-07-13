@@ -56,6 +56,18 @@ const lyzr = await generateSourceTitleTranslation(
   "Lyzr AI Raises $100 Million Series B After Its Own AI Agent SivaClaw Fielded 130-Plus Investors And Generated $400 Million In Interest",
   { provider: "business-rule", allowNetwork: true }
 );
+const alta = await generateSourceTitleTranslation(
+  "Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams",
+  { provider: "business-rule", allowNetwork: true }
+);
+const githubSecretScanning = await generateSourceTitleTranslation(
+  "How GitHub used secret scanning to reach inbox zero",
+  { provider: "business-rule", allowNetwork: true }
+);
+const lyzrFundraiseProcess = await generateSourceTitleTranslation(
+  "Lyzr's AI agent ran its own $100M Series B fundraise — AI Chat Daily",
+  { provider: "business-rule", allowNetwork: true }
+);
 
 const legacyMachineTranslationFile = path.join(tempDir, "legacy-machine-translations.json");
 fs.writeFileSync(legacyMachineTranslationFile, JSON.stringify({
@@ -79,6 +91,9 @@ const ok =
   neuralTrust.titleZh === "NeuralTrust 完成 2000 万美元融资，用于保护企业不断增长的 AI 智能体集群" &&
   talp.titleZh === "Talp 以 2000 万美元估值完成种子前轮融资，用于通过 AI 虚拟用户模拟客户反应" &&
   lyzr.titleZh === "Lyzr AI 完成 1 亿美元 B 轮融资，其 AI 智能体参与融资流程" &&
+  alta.titleZh === "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构" &&
+  githubSecretScanning.titleZh === "GitHub 使用秘密扫描，在九个月内清零安全告警积压" &&
+  lyzrFundraiseProcess.titleZh === "Lyzr 的 AI 智能体参与其 1 亿美元 B 轮融资流程" &&
   legacyMachineTranslations.size === 0;
 
 fs.rmSync(tempDir, { recursive: true, force: true });
@@ -94,6 +109,9 @@ if (!ok) {
     neuralTrust,
     talp,
     lyzr,
+    alta,
+    githubSecretScanning,
+    lyzrFundraiseProcess,
     legacyMachineTranslationCount: legacyMachineTranslations.size,
     reason: "English source title was not generated and persisted when the exact translation DB entry was missing.",
   }, null, 2));

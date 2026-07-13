@@ -227,6 +227,7 @@ function translateBusinessPhrase(value = "") {
     [/^(?:its\s+)?ai training platform$/iu, "AI 训练平台"],
     [/^secure the growing swarm of ai agents in the enterprise$/iu, "保护企业不断增长的 AI 智能体集群"],
     [/^simulate customers with ai personas$/iu, "通过 AI 虚拟用户模拟客户反应"],
+    [/^redefine the go-to-market architecture for revenue teams$/iu, "重塑收入团队的市场进入架构"],
   ];
   for (const [pattern, translation] of directRules) {
     if (pattern.test(text)) return translation;
@@ -300,6 +301,15 @@ function translateTitleWithBusinessRules(sourceTitle = "") {
   }
   if (/^meet talp:.*raising \$20m pre-seed valuation to simulate customers with ai personas$/iu.test(title)) {
     return "Talp 以 2000 万美元估值完成种子前轮融资，用于通过 AI 虚拟用户模拟客户反应";
+  }
+  if (/^how github used secret scanning to reach inbox zero$/iu.test(title)) {
+    return "GitHub 使用秘密扫描，在九个月内清零安全告警积压";
+  }
+  if (/^lyzr used its own ai agent to help raise a \$100mn round$/iu.test(title)) {
+    return "Lyzr 使用自研 AI 智能体协助推进 1 亿美元融资";
+  }
+  if (/^lyzr['’]s ai agent ran its own \$100m series b fundraise(?:\s+[—–-]\s+ai chat daily)?$/iu.test(title)) {
+    return "Lyzr 的 AI 智能体参与其 1 亿美元 B 轮融资流程";
   }
   const valuationRound = title.match(/^meet\s+([^:]+):.+?\braising\s+(\$?\s*[\d,.]+\s*(?:billion|million|bn|m|b|k)?)\s+(pre[-\s]?seed|seed|series\s+[a-z])\s+valuation(?:\s+round)?(?:\s+to\s+(.+))?$/iu);
   if (valuationRound) {

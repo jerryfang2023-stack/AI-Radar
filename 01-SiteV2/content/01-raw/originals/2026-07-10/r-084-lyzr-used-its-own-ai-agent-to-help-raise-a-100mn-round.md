@@ -2,9 +2,9 @@
 schema_version: raw-evidence-v2
 raw_id: R-084
 title: "Lyzr used its own AI agent to help raise a $100mn round"
-title_zh: "Lyzr使用自己的人工智能代理帮助筹集了$ 1亿美元的资金"
+title_zh: "Lyzr 使用自研 AI 智能体协助推进 1 亿美元融资"
 title_translation_status: translated
-title_translation_method: mymemory_title_translation
+title_translation_method: business_rule_title_translation
 original_url: "https://thenextweb.com/news/lyzr-ai-agent-100-million-series-b"
 canonical_url: "https://thenextweb.com/news/lyzr-ai-agent-100-million-series-b"
 source_name: "keyword search / Anysearch"
