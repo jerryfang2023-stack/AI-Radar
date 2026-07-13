@@ -1030,11 +1030,27 @@ function fundingRoundIdentity(value = "") {
 function fundingEventIdentityKey(company = "", evidence = "") {
   const text = String(evidence || "");
   const sourceCompany = fundingCompanyFromTitle(text);
-  const normalizedCompany = normalizedSignalText(sourceCompany || company);
+  const normalizedCompany = normalizedSignalText(sourceCompany || company).replace(/\s+ai$/u, "").trim();
   const amountMillions = fundingAmountMillions(text);
   const round = fundingRoundIdentity(text);
   if (!normalizedCompany || !Number.isFinite(amountMillions) || !round) return "";
   return `funding-event:${normalizedCompany}:${Number(amountMillions.toFixed(3))}:${round}`;
+}
+
+function fundingEventIdentityKeyForSection(section) {
+  return fundingEventIdentityKey(
+    companyFromSection(section),
+    `${originalSourceTitleFromSection(section)} ${poolTitle(section)} ${value(section, "key_excerpts")} ${value(section, "evidence_seed")}`,
+  );
+}
+
+function unconfirmedFundingEventKeysForSections(sections) {
+  return new Set(
+    [...sections.values()]
+      .filter((section) => value(section, "importance_type") === "important_funding" && isUnconfirmedFundingProcess(section))
+      .map(fundingEventIdentityKeyForSection)
+      .filter(Boolean),
+  );
 }
 
 function historicalFundingEventIndex() {
@@ -2701,6 +2717,7 @@ function promotePriorityForIssues(section, issues = []) {
 
 function repairSuggestionForIssues(issues = []) {
   const text = issues.join(" ");
+  if (/funding_event_conflicted_by_unconfirmed_source/iu.test(text)) return "Keep the whole funding event out of formal Cards until a primary source or named investor confirms the round closed.";
   if (/stale_source_date/iu.test(text)) return "Find a fresh same-event source or keep as backend audit evidence.";
   if (/newsletter_roundup_requires_original_event_source/iu.test(text)) return "Use the newsletter only as discovery context; recapture the original dated event source before promoting.";
   if (/valid_page_type|generic_report_or_list_not_fact_signal|text_indicates_index_only|index_only|docs_or_catalog_or_investing_thesis/iu.test(text)) return "Resolve to a dated single company, product, funding, or customer event before promoting.";
@@ -2751,6 +2768,7 @@ function autoSignalsFromPool(sections, explicitSpecs) {
   const candidates = [];
   const notPromotedCandidates = [];
   const historicalFundingEvents = historicalFundingEventIndex();
+  const unconfirmedFundingEventKeys = unconfirmedFundingEventKeysForSections(sections);
   let index = 1;
   for (const [poolRef, section] of sections) {
     if (selectedPoolRefs.has(poolRef)) continue;
@@ -2766,10 +2784,11 @@ function autoSignalsFromPool(sections, explicitSpecs) {
       continue;
     }
     if (spec.type === "funding") {
-      const fundingKey = fundingEventIdentityKey(
-        spec.company,
-        `${originalSourceTitleFromSection(section)} ${poolTitle(section)}`,
-      );
+      const fundingKey = fundingEventIdentityKeyForSection(section);
+      if (fundingKey && unconfirmedFundingEventKeys.has(fundingKey)) {
+        notPromotedCandidates.push(notPromotedCandidateRow(poolRef, section, ["funding_event_conflicted_by_unconfirmed_source"]));
+        continue;
+      }
       const historical = fundingKey ? historicalFundingEvents.get(fundingKey) : null;
       if (historical) {
         notPromotedCandidates.push(notPromotedCandidateRow(poolRef, section, [`historical_duplicate_event_cluster:${historical.file}`]));
@@ -3706,6 +3725,23 @@ function runCoreRecallRegressionFixtures() {
     fundingEventIdentityKey("Thenextweb", "Lyzr used its own AI agent to help raise a $100mn round. The company described it as a Series B."),
     fundingEventIdentityKey("AI Chat Daily", "Lyzr's AI agent ran its own $100M Series B fundraise"),
     "alternate-source coverage of the same company, amount, and round must share a historical funding event key",
+  );
+  assert.equal(
+    fundingEventIdentityKey("Lyzr AI", "Lyzr AI Raises $100 Million Series B"),
+    fundingEventIdentityKey("Lyzr", "Lyzr's AI agent ran its own $100M Series B fundraise"),
+    "optional AI company suffixes must not split the same funding event across source clusters",
+  );
+  const lyzrConflictingSections = new Map([
+    ["P-985", [
+      "## P-985｜Lyzr AI Raises $100 Million Series B",
+      "- importance_type: important_funding",
+      "- key_excerpts: A secondary article says Lyzr AI closed a $100 million Series B.",
+    ].join("\n")],
+    ["P-986", lyzrUnclosedRoundFixture],
+  ]);
+  assert.ok(
+    unconfirmedFundingEventKeysForSections(lyzrConflictingSections).has(fundingEventIdentityKeyForSection(lyzrConflictingSections.get("P-985"))),
+    "one unconfirmed source must conflict the whole same-company, amount, and round funding cluster",
   );
 
   const positiveFailures = [];
