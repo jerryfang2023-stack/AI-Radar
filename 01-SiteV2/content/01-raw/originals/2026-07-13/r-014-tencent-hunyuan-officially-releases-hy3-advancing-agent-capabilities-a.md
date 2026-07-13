@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-06T00:00:00.000Z"
-collected_at: 2026-07-13T07:40:18.759Z
+collected_at: 2026-07-13T08:26:47.181Z
 language: mixed
 full_text_hash: 26f1bd470afa7e05
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-014-tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-a.md"
@@ -60,7 +60,7 @@ content_hash: 26f1bd470afa7e05
 semantic_hash: 5f9a826ac5b2f187
 duplicate_of: ""
 first_seen_at: "2026-07-06T00:00:00.000Z"
-last_seen_at: 2026-07-13T07:40:18.759Z
+last_seen_at: 2026-07-13T08:26:47.181Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -72,10 +72,10 @@ guanlan_scores: {"importance_type":"important_product_or_service","importance_sc
 business_elements: {"companies":["Tencent"],"products":["Agent"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["3","295B","21B","2","5倍","50","72%","90%"],"quotes":[]}
 evidence_seed: {"company_actions":["Tencent Hunyuan officially released Hy3 on July 6, 2026.","Building on the Hy3 preview, the official release improves model performance, stability and cost efficiency, and expands integration across Tencent products and services.","The Hy3 API is available on Tencent Cloud TokenHub, and third-party developer platforms are expected to integrate it progressively."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
 missing_information: ["没有具体客户或真实企业案例"]
-key_excerpts: [{"type":"number","text":"腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。Hy3定位为Agent向LLM，从preview到正式版基于50多个真实业务反馈迭代，内部WorkBuddy任务成功率从72%提升至90%，耗时降低34%，幻觉和常识错误持续下降。实测显示其在coding、办公、复杂任务规划方面表现突出，纯视觉能力为短板。Hy3已集成至微信服务10亿+用户，视频演示包括生成HTML网页、Agent网页和10页PPT，模型具备自检和主动说明不足的能力。 Tencent Hunyuan officially released Hy3 on July 6, 2026. Building on the Hy3 preview, the official release improves model performance, stability and cost efficiency, and expands integration across Tencent products and services.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Tencent Hunyuan officially released Hy3 on July 6, 2026.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Building on the Hy3 preview, the official release improves model performance, stability and cost efficiency, and expands integration across Tencent products and services.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"number","text":"Hy3 is a hybrid fast-and-slow-thinking model built on a Mixture-of-Experts architecture, with 295 billion total parameters, 21 billion active parameters and support for up to 256K context.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"Tencent says Hy3 has been adopted across products including WorkBuddy/CodeBuddy, Yuanbao, Marvis and ima.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"The Hy3 API is available on Tencent Cloud TokenHub, and third-party developer platforms are expected to integrate it progressively.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"}]
+key_excerpts: [{"type":"number","text":"腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。Hy3定位为Agent向LLM，从preview到正式版基于50多个真实业务反馈迭代，内部WorkBuddy任务成功率从72%提升至90%，耗时降低34%，幻觉和常识错误持续下降。实测显示其在coding、办公、复杂任务规划方面表现突出，纯视觉能力为短板。Hy3已集成至微信服务10亿+用户，视频演示包括生成HTML网页、Agent网页和10页PPT，模型具备自检和主动说明不足的能力。 Tencent Hunyuan officially released Hy3 on July 6, 2026. Building on the Hy3 preview, the official release improves model performance, stability and cost efficiency, and expands integration across Tencent products and services. Tencent Hunyuan officially released Hy3","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Tencent Hunyuan officially released Hy3 on July 6, 2026.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Building on the Hy3 preview, the official release improves model performance, stability and cost efficiency, and expands integration across Tencent products and services.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"number","text":"Hy3 is a hybrid fast-and-slow-thinking model built on a Mixture-of-Experts architecture, with 295 billion total parameters, 21 billion active parameters and support for up to 256K context.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"Tencent says Hy3 has been adopted across products including WorkBuddy/CodeBuddy, Yuanbao, Marvis and ima.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"The Hy3 API is available on Tencent Cloud TokenHub, and third-party developer platforms are expected to integrate it progressively.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:18.759Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.181Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
@@ -106,7 +106,7 @@ Tencent Hunyuan officially released Hy3 on July 6, 2026. Building on the Hy3 pre
 ## key_excerpts
 
 1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
-   腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。Hy3定位为Agent向LLM，从preview到正式版基于50多个真实业务反馈迭代，内部WorkBuddy任务成功率从72%提升至90%，耗时降低34%，幻觉和常识错误持续下降。实测显示其在coding、办公、复杂任务规划方面表现突出，纯视觉能力为短板。Hy3已集成至微信服务10亿+用户，视频演示包括生成HTML网页、Agent网页和10页PPT，模型具备自检和主动说明不足的能力。 Tencent Hunyuan officially released Hy3 on July 6, 2026. Building on the Hy3 preview, the official release improves model performance, stability and cost efficiency, and expands integration across Tencent products and services.
+   腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。Hy3定位为Agent向LLM，从preview到正式版基于50多个真实业务反馈迭代，内部WorkBuddy任务成功率从72%提升至90%，耗时降低34%，幻觉和常识错误持续下降。实测显示其在coding、办公、复杂任务规划方面表现突出，纯视觉能力为短板。Hy3已集成至微信服务10亿+用户，视频演示包括生成HTML网页、Agent网页和10页PPT，模型具备自检和主动说明不足的能力。 Tencent Hunyuan officially released Hy3 on July 6, 2026. Building on the Hy3 preview, the official release improves model performance, stability and cost efficiency, and expands integration across Tencent products and services. Tencent Hunyuan officially released Hy3
 
 2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
    Tencent Hunyuan officially released Hy3 on July 6, 2026.
@@ -192,7 +192,7 @@ Tencent Hunyuan officially released Hy3 on July 6, 2026. Building on the Hy3 pre
 
 ## 原始摘要 / 采集文本
 
-腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。Hy3定位为Agent向LLM，从preview到正式版基于50多个真实业务反馈迭代，内部WorkBuddy任务成功率从72%提升至90%，耗时降低34%，幻觉和常识错误持续下降。实测显示其在coding、办公、复杂任务规划方面表现突出，纯视觉能力为短板。Hy3已集成至微信服务10亿+用户，视频演示包括生成HTML网页、Agent网页和10页PPT，模型具备自检和主动说明不足的能力。 Tencent Hunyuan officially released Hy3 on July 6, 2026. Building on the Hy3 preview, the official release improves model performance, stability and cost efficiency, and expands integration across Tencent products and services.
+腾讯混元团队发布Hy3模型，采用295B总参数、21B激活参数的MoE架构，推理效率可打平参数规模2-5倍的旗舰模型。Hy3定位为Agent向LLM，从preview到正式版基于50多个真实业务反馈迭代，内部WorkBuddy任务成功率从72%提升至90%，耗时降低34%，幻觉和常识错误持续下降。实测显示其在coding、办公、复杂任务规划方面表现突出，纯视觉能力为短板。Hy3已集成至微信服务10亿+用户，视频演示包括生成HTML网页、Agent网页和10页PPT，模型具备自检和主动说明不足的能力。 Tencent Hunyuan officially released Hy3 on July 6, 2026. Building on the Hy3 preview, the official release improves model performance, stability and cost efficiency, and expands integration across Tencent products and services. Tencent Hunyuan officially released Hy3 on July 6, 2026. Building on the Hy3 preview, the official release improves model performance, stability and cost efficiency, and expands integration across Tencent products and services.
 
 ## 采集备注
 

@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T23:57:14.000Z"
-collected_at: 2026-07-13T07:40:19.183Z
+collected_at: 2026-07-13T08:26:47.576Z
 language: mixed
 full_text_hash: 3cd5a7097fc2b574
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-068-simon-willison-ai-智能体不应成为项目的直接责任人-dri.md"
@@ -49,7 +49,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: supporting_evidence
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Simon Willison：AI 智能体不应成为项目的直接责任人（DRI）","discovery_summary":"Simon Willison 在博客中探讨了源自苹果公司的\"直接责任人（DRI）\"概念，指对项目成败负最终责任的人。他认为，在 LLM 驱动的 AI 智能体融入人类组织的背景下，智能体不应被视为项目的 DRI，因为只有人类才能为自己的行为承担责任，而机器无法做到。他引用 IBM 1979 年的培训幻灯片作为佐证：\"计算机永远不能被问责，因此计算机绝不能做出管理决策。\"","source_name":"Simon Willison 博客","origin_url":"https://simonwillison.net/2026/Jul/12/directly-responsible-individuals","discovered_at":"2026-07-13T07:30:42.886Z","rank_on_page":76,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Simon Willison：AI 智能体不应成为项目的直接责任人（DRI）","discovery_summary":"Simon Willison 在博客中探讨了源自苹果公司的\"直接责任人（DRI）\"概念，指对项目成败负最终责任的人。他认为，在 LLM 驱动的 AI 智能体融入人类组织的背景下，智能体不应被视为项目的 DRI，因为只有人类才能为自己的行为承担责任，而机器无法做到。他引用 IBM 1979 年的培训幻灯片作为佐证：\"计算机永远不能被问责，因此计算机绝不能做出管理决策。\"","source_name":"Simon Willison 博客","origin_url":"https://simonwillison.net/2026/Jul/12/directly-responsible-individuals","discovered_at":"2026-07-13T08:19:14.654Z","rank_on_page":88,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -60,7 +60,7 @@ content_hash: 3cd5a7097fc2b574
 semantic_hash: 9bdd745ee8b3c8c2
 duplicate_of: ""
 first_seen_at: "2026-07-12T23:57:14.000Z"
-last_seen_at: 2026-07-13T07:40:19.183Z
+last_seen_at: 2026-07-13T08:26:47.576Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":true,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["证据对象不可用：疑似索引页、目录页、薄
 key_excerpts: [{"type":"quote","text":"Simon Willison 在博客中探讨了源自苹果公司的\"直接责任人（DRI）\"概念，指对项目成败负最终责任的人。他认为，在 LLM 驱动的 AI 智能体融入人类组织的背景下，智能体不应被视为项目的 DRI，因为只有人类才能为自己的行为承担责任，而机器无法做到。他引用 IBM 1979 年的培训幻灯片作为佐证：\"计算机永远不能被问责，因此计算机绝不能做出管理决策。\"","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Directly Responsible Individuals (DRI) Simon Willison’s Weblog Subscribe Sponsored by: Teleport &mdash; How do you ensure that AI agents act within your intended boundaries?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"Teleport’s “From Zero Trust to Agent Trust” white paper details what needs to be in place to realize the promise of agentic designs.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"12th July 2026 - Link Blog Directly Responsible Individuals (DRI) .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"I went looking for a definition of \"Directly Responsible Individuals\" and the best I found was in the GitLab handbook.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"Apparently the term originated at Apple, where it's used to describe the person who is \"ultimately accountable for the success or failure of a specific project, initiative, or activity\".","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:19.183Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.576Z
 theme: outside-core-exploration
 keyword_group: outside-core-exploration
 copyright_note: local research archive only
@@ -311,7 +311,7 @@ Colophon
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Simon Willison：AI 智能体不应成为项目的直接责任人（DRI）","discovery_summary":"Simon Willison 在博客中探讨了源自苹果公司的\"直接责任人（DRI）\"概念，指对项目成败负最终责任的人。他认为，在 LLM 驱动的 AI 智能体融入人类组织的背景下，智能体不应被视为项目的 DRI，因为只有人类才能为自己的行为承担责任，而机器无法做到。他引用 IBM 1979 年的培训幻灯片作为佐证：\"计算机永远不能被问责，因此计算机绝不能做出管理决策。\"","source_name":"Simon Willison 博客","origin_url":"https://simonwillison.net/2026/Jul/12/directly-responsible-individuals","discovered_at":"2026-07-13T07:30:42.886Z","rank_on_page":76,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Simon Willison：AI 智能体不应成为项目的直接责任人（DRI）","discovery_summary":"Simon Willison 在博客中探讨了源自苹果公司的\"直接责任人（DRI）\"概念，指对项目成败负最终责任的人。他认为，在 LLM 驱动的 AI 智能体融入人类组织的背景下，智能体不应被视为项目的 DRI，因为只有人类才能为自己的行为承担责任，而机器无法做到。他引用 IBM 1979 年的培训幻灯片作为佐证：\"计算机永远不能被问责，因此计算机绝不能做出管理决策。\"","source_name":"Simon Willison 博客","origin_url":"https://simonwillison.net/2026/Jul/12/directly-responsible-individuals","discovered_at":"2026-07-13T08:19:14.654Z","rank_on_page":88,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

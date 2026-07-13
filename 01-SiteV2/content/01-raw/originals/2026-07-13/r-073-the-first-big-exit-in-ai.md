@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T13:03:58.000Z"
-collected_at: 2026-07-13T07:40:19.211Z
+collected_at: 2026-07-13T08:26:47.597Z
 language: mixed
 full_text_hash: 439485c8589b8ffb
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-073-the-first-big-exit-in-ai.md"
@@ -60,7 +60,7 @@ content_hash: 439485c8589b8ffb
 semantic_hash: b44cdc0ba1152578
 duplicate_of: ""
 first_seen_at: "2026-06-18T13:03:58.000Z"
-last_seen_at: 2026-07-13T07:40:19.211Z
+last_seen_at: 2026-07-13T08:26:47.597Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"company_action","text":"little tools for making life easier","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The first big exit in AI little tools for making life easier Jun 18, 2026 90 Share Hey folks, Heading to a Q&A with Sam Altman later today in London so a bit rushed for time to part any ‘wisdom’.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I’m currently still mid-building the reference manual, but it’s coming along now!","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"I’ll release a couple preview lessons hopefully by next week.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I’m using Codex as my ‘workhorse’ agent.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Mostly because it’s easiest access on mobile while plugged into all my local files.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:19.211Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.597Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

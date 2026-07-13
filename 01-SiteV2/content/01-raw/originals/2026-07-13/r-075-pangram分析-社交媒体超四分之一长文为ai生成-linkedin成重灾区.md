@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-12T23:26:09.000Z"
-collected_at: 2026-07-13T07:40:19.228Z
+collected_at: 2026-07-13T08:26:47.614Z
 language: mixed
 full_text_hash: 806d5fe61c97e43e
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-075-pangram分析-社交媒体超四分之一长文为ai生成-linkedin成重灾区.md"
@@ -49,7 +49,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: supporting_evidence
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Pangram分析：社交媒体超四分之一长文为AI生成，LinkedIn成重灾区","discovery_summary":"Pangram分析显示，社交媒体超250词的长文中，每四篇就有一篇由AI生成。LinkedIn的AI内容占比最高，41%长文被判定为AI撰写，贡献了近三分之二的AI内容。X平台近一半长文为AI生成或辅助完成。Substack的AI内容比例最低（约10%），Reddit回复几乎全为真人撰写（98%）。数据来自Pangram Chrome扩展，2026年4月至6月扫描五大平台超100万篇帖子。其AI检测模型Pangram 3误判率仅0.01%，但实际AI占比可能更高。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/842.htm","discovered_at":"2026-07-13T07:30:42.888Z","rank_on_page":86,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Pangram分析：社交媒体超四分之一长文为AI生成，LinkedIn成重灾区","discovery_summary":"Pangram分析显示，社交媒体超250词的长文中，每四篇就有一篇由AI生成。LinkedIn的AI内容占比最高，41%长文被判定为AI撰写，贡献了近三分之二的AI内容。X平台近一半长文为AI生成或辅助完成。Substack的AI内容比例最低（约10%），Reddit回复几乎全为真人撰写（98%）。数据来自Pangram Chrome扩展，2026年4月至6月扫描五大平台超100万篇帖子。其AI检测模型Pangram 3误判率仅0.01%，但实际AI占比可能更高。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/842.htm","discovered_at":"2026-07-13T08:19:14.657Z","rank_on_page":98,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -60,7 +60,7 @@ content_hash: 806d5fe61c97e43e
 semantic_hash: c26680125b8873e4
 duplicate_of: ""
 first_seen_at: "2026-07-12T23:26:09.000Z"
-last_seen_at: 2026-07-13T07:40:19.228Z
+last_seen_at: 2026-07-13T08:26:47.614Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["证据对象不可用：疑似索引页、目录页、薄
 key_excerpts: [{"type":"number","text":"Pangram分析显示，社交媒体超250词的长文中，每四篇就有一篇由AI生成。LinkedIn的AI内容占比最高，41%长文被判定为AI撰写，贡献了近三分之二的AI内容。X平台近一半长文为AI生成或辅助完成。Substack的AI内容比例最低（约10%），Reddit回复几乎全为真人撰写（98%）。数据来自Pangram Chrome扩展，2026年4月至6月扫描五大平台超100万篇帖子。其AI检测模型Pangram 3误判率仅0.01%，但实际AI占比可能更高。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 13 日消息，根据 Pangram 的一项分析，目前社交媒体上超过 250 个单词的长篇内容中，每四篇就有一篇是由 AI 生成。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"其中，LinkedIn 的 AI 内容占比最高，41% 的长文被判定为 AI 撰写。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"虽然 LinkedIn 仅占此次扫描帖子总数的约三分之一，但却贡献了近三分之二的 AI 内容。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"IT之家注意到，在 X（原 Twitter）平台上，接近一半的长文被认为是完全由 AI 生成，或是在 AI 辅助下完成的。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"number","text":"相比之下，Substack 的 AI 内容比例最低，约为 10%。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:19.228Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.614Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
@@ -203,7 +203,7 @@ Pangram 表示，其 AI 检测模型 Pangram 3 的误判率（即将人类创作
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Pangram分析：社交媒体超四分之一长文为AI生成，LinkedIn成重灾区","discovery_summary":"Pangram分析显示，社交媒体超250词的长文中，每四篇就有一篇由AI生成。LinkedIn的AI内容占比最高，41%长文被判定为AI撰写，贡献了近三分之二的AI内容。X平台近一半长文为AI生成或辅助完成。Substack的AI内容比例最低（约10%），Reddit回复几乎全为真人撰写（98%）。数据来自Pangram Chrome扩展，2026年4月至6月扫描五大平台超100万篇帖子。其AI检测模型Pangram 3误判率仅0.01%，但实际AI占比可能更高。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/842.htm","discovered_at":"2026-07-13T07:30:42.888Z","rank_on_page":86,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Pangram分析：社交媒体超四分之一长文为AI生成，LinkedIn成重灾区","discovery_summary":"Pangram分析显示，社交媒体超250词的长文中，每四篇就有一篇由AI生成。LinkedIn的AI内容占比最高，41%长文被判定为AI撰写，贡献了近三分之二的AI内容。X平台近一半长文为AI生成或辅助完成。Substack的AI内容比例最低（约10%），Reddit回复几乎全为真人撰写（98%）。数据来自Pangram Chrome扩展，2026年4月至6月扫描五大平台超100万篇帖子。其AI检测模型Pangram 3误判率仅0.01%，但实际AI占比可能更高。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/975/842.htm","discovered_at":"2026-07-13T08:19:14.657Z","rank_on_page":98,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

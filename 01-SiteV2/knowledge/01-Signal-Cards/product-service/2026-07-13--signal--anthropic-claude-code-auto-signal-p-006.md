@@ -1,5 +1,5 @@
 ---
-id: SIG-20260713-A07
+id: SIG-20260713-A08
 type: signal_card
 signal_type: product_service
 title: "OpenAI 优化 GPT-5.6 Sol 并放宽使用限额，Anthropic 延长 Fable 5 推广期"
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T07:40:19.484Z
-updated_at: 2026-07-13T07:40:19.484Z
+created_at: 2026-07-13T08:26:47.889Z
+updated_at: 2026-07-13T08:26:47.889Z
 
 raw_refs: ["R-006"]
 pool_refs: ["P-006"]

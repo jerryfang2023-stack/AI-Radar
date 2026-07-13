@@ -1,5 +1,5 @@
 ---
-id: SIG-20260713-A02
+id: SIG-20260713-A03
 type: signal_card
 signal_type: product_service
 title: "微软研究院推出开源可视化中间语言 Flint，让 AI 智能体\"一句话生成专业图表\""
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T07:40:19.484Z
-updated_at: 2026-07-13T07:40:19.484Z
+created_at: 2026-07-13T08:26:47.889Z
+updated_at: 2026-07-13T08:26:47.889Z
 
 raw_refs: ["R-005"]
 pool_refs: ["P-005"]

@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-10T23:55:07.000Z"
-collected_at: 2026-07-13T07:40:19.204Z
+collected_at: 2026-07-13T08:26:47.590Z
 language: mixed
 full_text_hash: dd724e1a47e178a0
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-072-meta-removes-controversial-ai-feature-on-instagram-after-backlash.md"
@@ -60,7 +60,7 @@ content_hash: dd724e1a47e178a0
 semantic_hash: b151272676d41008
 duplicate_of: ""
 first_seen_at: "2026-07-10T23:55:07.000Z"
-last_seen_at: 2026-07-13T07:40:19.204Z
+last_seen_at: 2026-07-13T08:26:47.590Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"quote","text":"\"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,\" the company said in a blog post. \"We've heard the feedback that this feature missed the mark, so it's no longer available.\"","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Image Credits: Jonathan Raa/NurPhoto / Getty Images AI Meta removes controversial AI feature on Instagram after backlash Lucas Ropek 4:55 PM PDT · July 10, 2026 Meta has axed a controversial feature that allowed users to modify photos from public Instagram accounts using AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"The feature, which was rolled out earlier this week along with a batch of other AI tools, “missed the mark” and is no longer available, according to the company.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Earlier this week, Meta announced Muse Image, a new AI image generator built by Meta Superintelligence Labs, its dedicated AI unit.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Meta promoted one feature that allowed individuals to generate images by @-mentioning public Instagram accounts that they wanted to reference.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The feature, which wasn’t designed to alert a user if their photos were used in this way, prompted immediate backlash.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:19.204Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.590Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only

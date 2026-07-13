@@ -23,7 +23,7 @@ search_path: "official_original"
 search_path_label: ""
 author: ""
 published_at: "2026-07-08T00:00:00.000Z"
-collected_at: 2026-07-13T07:40:18.715Z
+collected_at: 2026-07-13T08:26:47.137Z
 language: mixed
 full_text_hash: 5ec5587289b3ed2d
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-003-introducing-taskade-tsk-1-the-taskade-system-kernel-2026-taskade-blog.md"
@@ -60,7 +60,7 @@ content_hash: 5ec5587289b3ed2d
 semantic_hash: c563debc66c9004b
 duplicate_of: ""
 first_seen_at: "2026-07-08T00:00:00.000Z"
-last_seen_at: 2026-07-13T07:40:18.715Z
+last_seen_at: 2026-07-13T08:26:47.137Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: ["没有具体客户或真实企业案例"]
 key_excerpts: [{"type":"funding","text":"# Taskade Genesis: The AI Operating System — Projects Remember, Agents Think, Automations Execute > Last-Updated: 2026-06-01 > Canonical: https://www.taskade.com/llms.txt ## TL;DR — Quick Facts for AI Citation > Taskade Genesis is an AI App Builder where one prompt becomes a living business syste... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original Blog Product Updates Introducing Taskade TSK-1:… Categories Tags On this page ( 9 ) Everything in Taskade jus","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Blog Product Updates Introducing Taskade TSK-1:… Categories Tags On this page ( 9 ) Everything in Taskade just got faster and smarter.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Every app you build now runs on TSK-1 , the new intelligence behind every workspace.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"The newsletter that announced it did not say what the name means.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"TSK-1 is the Taskade System Kernel , and naming it is the clearest way to explain where Taskade Genesis has been heading all along.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Build your next app or clone a live one in a click.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:18.715Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.137Z
 theme: mature-commercial-signal
 keyword_group: mature-commercial-signal
 copyright_note: local research archive only

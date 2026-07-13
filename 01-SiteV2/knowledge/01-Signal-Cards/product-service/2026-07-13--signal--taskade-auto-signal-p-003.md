@@ -1,5 +1,5 @@
 ---
-id: SIG-20260713-A01
+id: SIG-20260713-A02
 type: signal_card
 signal_type: product_service
 title: "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层"
@@ -12,8 +12,8 @@ title_translation_status: translated
 title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-13T07:40:19.484Z
-updated_at: 2026-07-13T07:40:19.484Z
+created_at: 2026-07-13T08:26:47.889Z
+updated_at: 2026-07-13T08:26:47.889Z
 
 raw_refs: ["R-003"]
 pool_refs: ["P-003"]

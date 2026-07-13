@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-01T15:59:29.000Z"
-collected_at: 2026-07-13T07:40:19.220Z
+collected_at: 2026-07-13T08:26:47.605Z
 language: mixed
 full_text_hash: 931ef0a52eb5855a
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-13/r-074-6-security-settings-every-github-maintainer-should-enable-this-week.md"
@@ -60,7 +60,7 @@ content_hash: 931ef0a52eb5855a
 semantic_hash: 55fbbc08e536ac1b
 duplicate_of: ""
 first_seen_at: "2026-07-01T15:59:29.000Z"
-last_seen_at: 2026-07-13T07:40:19.220Z
+last_seen_at: 2026-07-13T08:26:47.605Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["证据对象不可用：疑似索引页、目录页、薄
 key_excerpts: [{"type":"supporting_context","text":"These six free settings will not make your project unhackable. Nothing will. What they will do is close the easy doors. Turn these on, and your project will be meaningfully harder to attack than it was before. The post 6 security settings every GitHub maintainer should enable this week appeared first on The GitHub Blog. ]]>","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"Joseph Katsioloudes · @jkcso July 1, 2026 6 minutes Share: At GitHub Security Lab, we spend a lot of our week talking to maintainers.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Some find the settings page dense and the docs sprawl.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"Most maintainers we talk to weren&rsquo;t hired to be security engineers.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"While this is true, ignoring a project&rsquo;s security settings completely will lead into leaving a lot in the table in terms of automation and scalability, leading into a poor security posture, and before you realize it to vulnerabilities that pile up, exposing your users.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Here&rsquo;s the short version.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-13T07:40:19.220Z
+fact_extraction_completed_at: 2026-07-13T08:26:47.605Z
 theme: uncategorized
 keyword_group: uncategorized
 copyright_note: local research archive only
