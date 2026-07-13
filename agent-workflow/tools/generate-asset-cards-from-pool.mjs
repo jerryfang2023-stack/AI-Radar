@@ -1537,7 +1537,7 @@ function hasConcreteFundingEvent(section) {
 
 function isViewpointWithoutConfirmedCommercialEvent(section) {
   const title = poolTitle(section);
-  const viewpoint = /(?:谈|发文称|认为|表示|观点|解读).{0,80}(?:AI|智能体|模型|产品|市场)|(?:CEO|创始人|总裁).{0,40}(?:称|谈|认为|表示)/u.test(title);
+  const viewpoint = /(?:谈|发文称|认为|表示|观点|解读|批评|质疑|警告|呼吁|预测).{0,80}(?:AI|智能体|模型|产品|市场|公司)|(?:CEO|创始人|总裁).{0,40}(?:称|谈|认为|表示|批评|质疑|警告|呼吁|预测)/u.test(title);
   const routedViewpoint = /\bviewpoint\b/iu.test(value(section, "usable_for"))
     && value(section, "event_evidence") !== "true";
   const confirmedInTitle = /(?:正式)?(?:发布|推出|上线|开放|定价|签约|部署|收购|完成融资)/u.test(title);
@@ -3594,7 +3594,21 @@ function runCoreRecallRegressionFixtures() {
   ].join("\n");
   assert.ok(
     autoSignalEligibilityIssues(routedViewpointFixture).some((issue) => /viewpoint_without_confirmed_commercial_event/iu.test(issue)),
-    "a routed viewpoint without event evidence must be rejected before Card spec generation",
+    "a routed viewpoint without a confirmed commercial event must be rejected before Card spec generation",
+  );
+
+  const nadellaCriticismFixture = [
+    "## P-040｜微软CEO纳德拉批评AI模型公司双标：一边主张合理使用数据，一边限制他人蒸馏",
+    "- evidence_object_type: regulatory_or_procurement",
+    "- evidence_object_usable: true",
+    "- event_evidence: true",
+    "- pool_routes: core_pool",
+    "- usable_for: viewpoint, case, business_change, signal_card_candidate",
+    "- importance_type: important_market_structure",
+  ].join("\n");
+  assert.ok(
+    autoSignalEligibilityIssues(nadellaCriticismFixture).some((issue) => /viewpoint_without_confirmed_commercial_event/iu.test(issue)),
+    "an executive criticism remains viewpoint context even when upstream labels the speech as event evidence",
   );
 
   const magicOsRumorFixture = [

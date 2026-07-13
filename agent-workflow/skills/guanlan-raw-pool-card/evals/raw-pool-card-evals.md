@@ -107,7 +107,7 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Pass when a voluntary privacy pledge without a separate commercial event remains backend context.
    - Pass when a funding Card keeps the current round amount distinct from valuation, related-story, rival-company, public-grant, and navigation-page figures; the source title's company and round amount control attribution.
    - Fail when page chrome such as `Total Shares`, a related-story excerpt, or a valuation number becomes the Card owner, news fact, source point, or value summary.
-   - Pass when `usable_for: viewpoint` plus `event_evidence: false` is rejected as viewpoint context before Card spec generation, even if the item has a high importance score or broad commercial keywords.
+   - Pass when `usable_for: viewpoint` plus no event evidence is rejected before Card spec generation; also pass when an executive criticism, prediction, warning, or commentary title is rejected even if upstream labels the speech or post as `event_evidence: true` and adds broad commercial routes.
 
 ## Repair Loop
 
