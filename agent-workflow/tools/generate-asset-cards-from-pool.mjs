@@ -1608,10 +1608,13 @@ function isJobListingSection(section) {
 
 function isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section) {
   const text = textForInference(section);
+  const title = poolTitle(section);
   const factualText = text.replace(/"type"\s*:\s*"[^"]*"/giu, " ");
   const interpersonalDispute = /隔空.{0,16}(?:掐架|争论|互怼)|口水战|骂战|转发.{0,24}(?:帖文|截图).{0,40}(?:指责|嘲讽|诈骗)|(?:CEO|创始人).{0,24}(?:指责|嘲讽|互怼)/iu.test(factualText);
   const separateCommercialEvent = /融资|收购|并购|客户部署|生产部署|采购|合同|签约|定价|正式发布.{0,24}(?:产品|平台|API|SDK)|funding|raises?|acquisition|customer deployment|production rollout|procurement|contract|pricing|commercial launch/iu.test(factualText);
   if (interpersonalDispute && !separateCommercialEvent) return true;
+  if (/程序员如何避免被\s*LLM|进化是关键|AI\s*需求依然强劲|芯片板块波动|industry executives?.{0,40}AI demand|AI demand remains strong/iu.test(title)) return true;
+  if (/Steam|策略模拟游戏|独立\s*AI\s*游戏|未经同意.{0,30}(?:AI\s*照片|生成)|Muse Image.{0,40}Instagram/iu.test(title)) return true;
   if (/monthly update|roundup|latest AI news|recap of .*AI updates|Google 2026.*AI.*updates?|Google 2026.*AI.*更新|AI更新汇总|更新汇总/iu.test(text)) return true;
   if (/AI\s*存储蓝图|存储蓝图|大规模\s*AI\s*存储|large-scale AI storage|storage blueprint|architecture blueprint|technical blueprint/iu.test(text)
     && !/customer deployment|procurement|contract|pricing|funding|commercial launch/iu.test(text)) return true;
@@ -1622,8 +1625,8 @@ function isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section) {
   if (/Workbench Notebooks|GLM Coding Pro|Coding Pro|ZCode|VS Code|Jupyter|coding assistant|developer environment/iu.test(text)
     && !/enterprise deployment|customer deployment|case study|procurement|contract|pricing|funding|annual recurring revenue|ARR/iu.test(text)) return true;
   if (/\b(deploys?|deployment|deployed|rollout|production rollout|case study|customer story|customer deployment|uses? (?:Amazon Bedrock|Claude|Glean|AI|agentic AI|machine learning)|saved \d|reduced|cut|hours per person|ARR|annual recurring revenue|acquires?|acquisition|to buy|strategic partnership|partners? with|collaborates? with|pricing|billing|monetization gateway|contract|procurement)\b/iu.test(text)) return false;
-  const consumerEntertainment = /Just Dance|舞力全开|mobile game|手游|游戏快报|玩家|曲库|K-POP|音舞|体感音乐|育碧|腾讯游戏/iu.test(text);
-  const minorPlatformPolicy = /肖像保护|仿冒带货|带货达人|达人账号|素材盗用|侵权账号|侵权内容|平台治理|内容安全|相似内容阻断|举报|处置侵权/iu.test(text);
+  const consumerEntertainment = /Just Dance|舞力全开|mobile game|手游|游戏快报|玩家|曲库|K-POP|音舞|体感音乐|育碧|腾讯游戏|Steam|策略模拟游戏|独立\s*AI\s*游戏/iu.test(text);
+  const minorPlatformPolicy = /肖像保护|仿冒带货|带货达人|达人账号|素材盗用|侵权账号|侵权内容|平台治理|内容安全|相似内容阻断|举报|处置侵权|未经同意.{0,30}(?:AI\s*照片|生成)|Muse Image.{0,40}Instagram/iu.test(text);
   const roundupOrExplainer = /更新汇总|月度更新|latest AI news|monthly update|roundup|weekly digest|why we built|我们为何构建/iu.test(text);
   const marketCommentary = /瑞银|UBS|分析师|研报|调研|spending|budget|cost concern|analyst/iu.test(text)
     && /开支|支出|成本|预算|ROI|回报|受益|承压|spending|budget|cost|concern|benefit|pressure|analyst/iu.test(text);
@@ -1683,7 +1686,7 @@ function cardabilitySemanticIssues(section) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "discovery_source_not_resolved"));
   }
   if (!coreImportanceTypes.has(importanceType) && !hasCardableEvent) issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, `unsupported_importance_type:${importanceType || "missing"}`));
-  if (importanceType === "important_technical_trend" && !observationSummaryEvidenceAllowed) {
+  if (importanceType === "important_technical_trend" && !observationSummaryEvidenceAllowed && !hasFormalEvent) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "technical_trend_is_context_not_signal_card"));
   }
   if (isBuilderOrOpinionOnlySource(section) && !observationSummaryEvidenceAllowed) {
@@ -1910,6 +1913,7 @@ function companyFromSection(section) {
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const specialCases = [
+    [/微软研究院|Microsoft Research/iu, "Microsoft Research"],
     [/谷歌\s*Voice|Google\s*Voice/iu, "Google Voice"],
     [/特斯拉|\bTesla\b/iu, "Tesla"],
     [/阶跃星辰|Step\s*Edge/iu, "阶跃星辰"],
@@ -3214,6 +3218,45 @@ function runCoreRecallRegressionFixtures() {
     const spec = autoSignalSpec(poolRef, section(poolRef), Number(poolRef.replace("P-", "")), diagnostics);
     return { spec, diagnostics };
   };
+
+  const microsoftResearchLaunchFixture = [
+    "## P-998｜微软研究院推出开源可视化中间语言 Flint",
+    "- source_url: https://www.ithome.com/0/975/816.htm",
+    "- key_excerpts: 微软研究院与中国人民大学 IDEAS Lab 联合推出开源可视化中间语言 Flint。",
+  ].join("\n");
+  assert.equal(companyFromSection(microsoftResearchLaunchFixture), "Microsoft Research", "Microsoft Research launches must keep a usable organization subject");
+
+  const consumerGameFixture = [
+    "## P-997｜AI 策略模拟游戏登陆 Steam，国区售价 42 元",
+    "- source_url: https://example.com/steam-game",
+    "- key_excerpts: 独立 AI 游戏现已登陆 Steam，玩家可通过语音下达政令。",
+  ].join("\n");
+  assert.equal(isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(consumerGameFixture), true, "consumer AI games must remain backend-only without enterprise evidence");
+
+  const commentaryFixture = [
+    "## P-996｜芯片板块波动引担忧，业内高管称 AI 需求依然强劲",
+    "- source_url: https://example.com/ai-demand-commentary",
+    "- key_excerpts: 多位行业高管表示算力需求依然强劲。",
+  ].join("\n");
+  assert.equal(isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(commentaryFixture), true, "market commentary without a dated company action must not become a Card");
+
+  const technicalTrendLaunchFixture = [
+    "## P-995｜上纬新材发布全球首款可变形个人机器人启元 T1",
+    "- source_url: https://example.com/qiyuan-t1-launch",
+    "- evidence_object_type: event",
+    "- event_evidence: true",
+    "- evidence_object_usable: true",
+    "- evidence_strength: rich_evidence",
+    "- raw_qc_decision: allow",
+    "- raw_qc_downstream_use: eligible_after_qc",
+    "- importance_type: important_technical_trend",
+    "- importance_score: 5",
+    "- key_excerpts: 上纬新材正式发布可变形个人机器人启元 T1。",
+  ].join("\n");
+  assert.ok(
+    !autoSignalEligibilityIssues(technicalTrendLaunchFixture).some((issue) => issue.includes("technical_trend_is_context_not_signal_card")),
+    "a confirmed product launch must override a stale technical-trend importance label",
+  );
 
   const positiveFailures = [];
   for (const poolRef of ["P-019", "P-020", "P-033", "P-056", "P-060"]) {

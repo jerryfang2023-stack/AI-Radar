@@ -48,3 +48,7 @@
    - Pass when post-fetch URL/content-hash dedupe below the Raw coverage target causes additional balanced batches to be consumed from the same already collected source-artifact candidate pool until the target, candidate exhaustion, or adaptive fetch limit.
    - Pass when a first batch that survives above target does not expand.
    - Fail when the monitor always stops at the fixed initial batch, recollects providers, or pads Raw with weak/index evidence.
+
+14. `capital_startup_query_priority`
+   - Pass when the `capital_startup` path spends its limited query budget on dedicated funding / startup queries before unrelated global themes.
+   - Fail when the configured financing queries exist but are displaced by earlier product, developer, policy, or general-market themes.
