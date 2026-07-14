@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 1297
-generated_at: 2026-07-13T08:10:08.579Z
+opinion_count: 1298
+generated_at: 2026-07-14T01:39:28.810Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -11,6 +11,7 @@ generated_at: 2026-07-13T08:10:08.579Z
 
 ## 人物
 
+- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 22 条 - 最新 2026-07-14
 - [Peter Yang](people/peter-yang/README.md) - 110 条 - 最新 2026-07-13
 - [Garry Tan](people/garry-tan/README.md) - 93 条 - 最新 2026-07-13
 - [Nikunj Kothari](people/nikunj-kothari/README.md) - 77 条 - 最新 2026-07-13
@@ -36,7 +37,6 @@ generated_at: 2026-07-13T08:10:08.579Z
 - [Alex Albert](people/alex-albert/README.md) - 5 条 - 最新 2026-07-09
 - [No Priors](people/no-priors/README.md) - 5 条 - 最新 2026-07-09
 - [Unsupervised Learning](people/unsupervised-learning/README.md) - 2 条 - 最新 2026-07-09
-- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 21 条 - 最新 2026-07-08
 - [Boris Cherny](people/boris-cherny/README.md) - 18 条 - 最新 2026-07-08
 - [Ryo Lu](people/ryo-lu/README.md) - 15 条 - 最新 2026-07-08
 - [AI & I by Every](people/ai-i-by-every/README.md) - 4 条 - 最新 2026-07-08
