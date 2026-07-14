@@ -1,11 +1,10 @@
 {
-  "generatedAt": "2026-07-13T02:57:07.014Z",
+  "generatedAt": "2026-07-14T01:38:42.765Z",
   "stats": {
-    "blogsBuilt": 4,
-    "totalItems": 28,
+    "blogsBuilt": 5,
+    "totalItems": 32,
     "sourceCount": 8,
     "errors": [
-      "tigera-blog: HTTP 415",
       "dataiku-blog: HTTP 404"
     ]
   },
@@ -15,6 +14,36 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache/#atom-everything",
+          "text": "Using uvx in GitHub Actions in a cache-friendly way",
+          "summary": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/github-actions/uvx-github-actions-cache\">Using uvx in GitHub Actions in a cache-friendly way</a></p>\n        <p>I finally found a cache-friendly recipe for using <code>uvx tool-name</code> in GitHub Actions workflows that I like.</p>\n<p",
+          "createdAt": "2026-07-14T00:56:20+00:00",
+          "url": "https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/13/doomql/#atom-everything",
+          "text": "DOOMQL",
+          "summary": "<p><strong><a href=\"https://github.com/petergpt/doomql\">DOOMQL</a></strong></p>\nPeter Gostev built this using GPT-5.6 Sol. This is a <em>lot</em> of fun: </p>\n<blockquote>\n<p>DOOMQL started with a deliberately unreasonable question: what if SQLite were the game engine, not merely the place where a g",
+          "createdAt": "2026-07-13T22:34:41+00:00",
+          "url": "https://simonwillison.net/2026/Jul/13/doomql/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything",
+          "text": "datasette code-frequency chart on GitHub",
+          "summary": "<p><strong><a href=\"https://github.com/simonw/datasette/graphs/code-frequency\">datasette code-frequency chart on GitHub</a></strong></p>\nOut of curiosity I decided to see if I could find a useful illustration of the impact of coding agents and Opus 4.5 class models on my own output. The best I've fo",
+          "createdAt": "2026-07-13T21:45:27+00:00",
+          "url": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything",
           "text": "Directly Responsible Individuals (DRI)",
@@ -204,26 +233,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/6/hy3/#atom-everything",
-          "text": "tencent/Hy3",
-          "summary": "<p><strong><a href=\"https://huggingface.co/tencent/Hy3\">tencent/Hy3</a></strong></p>\nNew Apache 2.0 licensed model from Tencent in China:</p>\n<blockquote>\n<p>Hy3 is a 295B-parameter Mixture-of-Experts (MoE) model with 21B active parameters and 3.8B MTP layer parameters, developed by the Tencent Hy T",
-          "createdAt": "2026-07-06T23:57:35+00:00",
-          "url": "https://simonwillison.net/2026/Jul/6/hy3/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything",
-          "text": "sqlite-utils 4.0rc3",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/sqlite-utils/releases/tag/4.0rc3\">sqlite-utils 4.0rc3</a></p>\n        <p>I hoped to release <code>sqlite-utils 4.0</code> stable this weekend, but as I worked through the backlog of issues and PRs with a combination of Claude Fable 5 an",
-          "createdAt": "2026-07-06T05:40:08+00:00",
-          "url": "https://simonwillison.net/2026/Jul/6/sqlite-utils/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -277,6 +286,16 @@
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
         {
+          "id": "https://tldr.tech/ai/2026-07-13",
+          "text": "Claude Code browser 🌍, Cursor general agent 🤖, Claude Fable extension ⏳",
+          "summary": "",
+          "createdAt": "Mon, 13 Jul 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-07-13",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://tldr.tech/ai/2026-07-10",
           "text": "GPT-5.6 🚀, Muse Spark 1.1 ✨, ChatGPT Work 💼",
           "summary": "",
@@ -305,13 +324,40 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
+        }
+      ]
+    },
+    {
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "bio": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "tweets": [
+        {
+          "id": "https://www.tigera.io/blog/tiered-network-policy-scaling-kubernetes-security/",
+          "text": "Tiered Network Policy: Scaling Kubernetes Security",
+          "summary": "As Kubernetes clusters scale from a few development sandboxes to massive, multi-tenant production environments, platform teams often find themselves facing a configuration management crisis. A small number of microservices suddenly demand hundreds of individual Kubernetes...\nThe post Tiered Network ",
+          "createdAt": "Fri, 10 Jul 2026 16:12:22 +0000",
+          "url": "https://www.tigera.io/blog/tiered-network-policy-scaling-kubernetes-security/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
         },
         {
-          "id": "https://tldr.tech/ai/2026-07-07",
-          "text": "Anthropic J-space research 🧠, Apple + Broadcom ⚡, continual agent learning 🤖",
-          "summary": "",
-          "createdAt": "Tue, 07 Jul 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-07-07",
+          "id": "https://www.tigera.io/blog/save-the-address-save-the-cloud-a-hands-on-kubevirt-live-migration-workshop/",
+          "text": "Save the Address, Save the Cloud: A Hands-on KubeVirt Live Migration Workshop",
+          "summary": "In the previous post in this series, we covered why Virtual Machine (VM) Live Migration in Kubernetes is difficult: a VM&#8217;s IP is its identity, and the “new” VM on the destination node has to...\nThe post Save the Address, Save the Cloud: A Hands-on KubeVirt Live Migration Workshop appeared firs",
+          "createdAt": "Thu, 09 Jul 2026 13:58:26 +0000",
+          "url": "https://www.tigera.io/blog/save-the-address-save-the-cloud-a-hands-on-kubevirt-live-migration-workshop/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://www.tigera.io/blog/save-the-address-save-the-cloud-kubevirt-vm-migration-story/",
+          "text": "Save the Address, Save the Cloud (KubeVirt VM Migration Story)",
+          "summary": "Kubernetes is built for containers, and it&#8217;s been doing that since it used to run docker as an engine for its containers. But what if you want to add VMs to the mix? After all,...\nThe post Save the Address, Save the Cloud (KubeVirt VM Migration Story) appeared first on Tigera – Creator of Cali",
+          "createdAt": "Wed, 08 Jul 2026 20:45:58 +0000",
+          "url": "https://www.tigera.io/blog/save-the-address-save-the-cloud-kubevirt-vm-migration-story/",
           "likes": 0,
           "retweets": 0,
           "replies": 0
