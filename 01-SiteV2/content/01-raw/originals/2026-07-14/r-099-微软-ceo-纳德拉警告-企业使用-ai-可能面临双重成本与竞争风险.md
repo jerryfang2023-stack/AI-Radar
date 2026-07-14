@@ -1,0 +1,216 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-099
+title: "微软 CEO 纳德拉警告：企业使用 AI 可能面临双重成本与竞争风险"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://www.ithome.com/0/976/271.htm"
+canonical_url: "https://ithome.com/0/976/271.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-14T00:23:30.000Z"
+collected_at: 2026-07-14T01:56:51.862Z
+language: mixed
+full_text_hash: a0fa907a2ceb0c0b
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-14/r-099-微软-ceo-纳德拉警告-企业使用-ai-可能面临双重成本与竞争风险.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-14/r-099-微软-ceo-纳德拉警告-企业使用-ai-可能面临双重成本与竞争风险.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 50
+extractor_diagnostics: {"readability_score":50,"text_length":876,"paragraph_count":9,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 876
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a0fa907a2ceb0c0b","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"微软 CEO 纳德拉警告：企业使用 AI 可能面临双重成本与竞争风险","discovery_summary":"微软 CEO 萨提亚·纳德拉近日发文警告，企业使用 AI 模型时实际支付了双重成本：明面上的 token 费用，以及为让模型更好运作而必须披露的专有知识。模型会从使用痕迹中学习，包括提示词、智能体调用的工具及用户对模型错误的纠正，这些经验可能被模型提供商积累并用于开拓同类业务，使客户面临直接竞争。纳德拉主张，既然 AI 企业可抓取互联网内容训练模型，企业也应有权研究并\"蒸馏\"AI 企业的模型。他批评部分模型提供商在服务条款中保留从客户使用数据和互动数据中学习的权利，认为这种\"只许州官放火\"的做法具有讽刺意味。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/976/271.htm","discovered_at":"2026-07-14T01:48:14.366Z","rank_on_page":29,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0d5907b54a6ce696
+content_hash: a0fa907a2ceb0c0b
+semantic_hash: b197c66e9a7eeb3d
+duplicate_of: ""
+first_seen_at: "2026-07-14T00:23:30.000Z"
+last_seen_at: 2026-07-14T01:56:51.862Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":3,"case_richness":3,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":["企业服务"],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["7","14","12"],"quotes":["AI 企业的模型。他批评部分模型提供商在服务条款中保留从客户使用数据和互动数据中学习的权利，认为这种","的做法具有讽刺意味。\nIT之家 7 月 14 日消息，据外媒 TechCrunch 今天（14 日）报道，硅谷围绕人工智能风险的争论持续无休，最让 AI 拥护者坐立不安的，却是大型 AI 实验室可能借专有模型充当“特洛伊木马","你实际上付了两次钱，一次用金钱支付，另一次则用更加宝贵的东西支付，也就是为了让 AI 真正发挥作用而必须披露的专有知识。 你越希望模型表现得更好，就越需要向模型提供更多知识 ！","模型会从‘使用痕迹’中学习，包括人们输入的提示词、智能体调用的工具，尤其是模型犯错后人们给出的纠正。每一次纠正最终都会变成企业内部积累的经验。","模型提供商拥有合理使用公共数据训练模型的权利，由此带来的重大创新确有必要，但目前的做法却是转过头来限制模型蒸馏，我认为很讽刺。"]}
+evidence_seed: {"company_actions":["当地时间 12 日，纳德拉在博客中警告，企业使用 AI 时其实 付了两遍钱 ：一遍是明码标价的 token 费用，另一遍则是 在毫无察觉的情况下交出有价值的数据 。","“你实际上付了两次钱，一次用金钱支付，另一次则用更加宝贵的东西支付，也就是为了让 AI 真正发挥作用而必须披露的专有知识。","你越希望模型表现得更好，就越需要向模型提供更多知识 ！"],"case_details":["初创企业和大型企业把敏感资料喂给模型后，模型提供商便能 逐渐摸清客户的业务 ，还可能 利用积累下来的知识开拓同类业务，最终与客户直接竞争 。"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["IT之家 7 月 14 日消息，据外媒 TechCrunch 今天（14 日）报道，硅谷围绕人工智能风险的争论持续无休，最让 AI 拥护者坐立不安的，却是大型 AI 实验室可能借专有模型充当“特洛伊木马”。"]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象"]
+key_excerpts: [{"type":"quote","text":"微软 CEO 萨提亚·纳德拉近日发文警告，企业使用 AI 模型时实际支付了双重成本：明面上的 token 费用，以及为让模型更好运作而必须披露的专有知识。模型会从使用痕迹中学习，包括提示词、智能体调用的工具及用户对模型错误的纠正，这些经验可能被模型提供商积累并用于开拓同类业务，使客户面临直接竞争。纳德拉主张，既然 AI 企业可抓取互联网内容训练模型，企业也应有权研究并\"蒸馏\"AI 企业的模型。他批评部分模型提供商在服务条款中保留从客户使用数据和互动数据中学习的权利，认为这种\"只许州官放火\"的做法具有讽刺意味。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"IT之家 7 月 14 日消息，据外媒 TechCrunch 今天（14 日）报道，硅谷围绕人工智能风险的争论持续无休，最让 AI 拥护者坐立不安的，却是大型 AI 实验室可能借专有模型充当“特洛伊木马”。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"case_detail","text":"初创企业和大型企业把敏感资料喂给模型后，模型提供商便能 逐渐摸清客户的业务 ，还可能 利用积累下来的知识开拓同类业务，最终与客户直接竞争 。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"当地时间 12 日，纳德拉在博客中警告，企业使用 AI 时其实 付了两遍钱 ：一遍是明码标价的 token 费用，另一遍则是 在毫无察觉的情况下交出有价值的数据 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"“你实际上付了两次钱，一次用金钱支付，另一次则用更加宝贵的东西支付，也就是为了让 AI 真正发挥作用而必须披露的专有知识。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"你越希望模型表现得更好，就越需要向模型提供更多知识 ！","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-14T01:56:51.862Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 微软 CEO 纳德拉警告：企业使用 AI 可能面临双重成本与竞争风险
+
+## clean_text
+
+IT之家 7 月 14 日消息，据外媒 TechCrunch 今天（14 日）报道，硅谷围绕人工智能风险的争论持续无休，最让 AI 拥护者坐立不安的，却是大型 AI 实验室可能借专有模型充当“特洛伊木马”。
+初创企业和大型企业把敏感资料喂给模型后，模型提供商便能 逐渐摸清客户的业务 ，还可能 利用积累下来的知识开拓同类业务，最终与客户直接竞争 。
+当地时间 12 日，纳德拉在博客中警告，企业使用 AI 时其实 付了两遍钱 ：一遍是明码标价的 token 费用，另一遍则是 在毫无察觉的情况下交出有价值的数据 。“你实际上付了两次钱，一次用金钱支付，另一次则用更加宝贵的东西支付，也就是为了让 AI 真正发挥作用而必须披露的专有知识。 你越希望模型表现得更好，就越需要向模型提供更多知识 ！”
+企业为了让模型更懂自身需求，实际上正在 一点点把经营诀窍教给模型 。“模型会从‘使用痕迹’中学习，包括人们输入的提示词、智能体调用的工具，尤其是模型犯错后人们给出的纠正。每一次纠正最终都会变成企业内部积累的经验。”
+竞争对手无论花多少钱，都很难买到同样的经验，企业却在使用模型的过程中 主动把经验交了出去 。纳德拉因此主张，AI 企业既然可以抓取互联网内容训练模型，企业也应当有权反过来 研究并“蒸馏”AI 企业的模型 。
+IT之家注：所谓“模型蒸馏”，就是分析一个模型给出的答案，从中摸清模型如何工作，再据此训练成本通常更低的新模型。
+纳德拉的核心观点是，模型提供商不能只允许自己利用别人的数据。模型提供商可以 用全世界的数据训练模型 ，却不准其他人以类似方式研究其模型，显然是双标行为。“模型提供商拥有合理使用公共数据训练模型的权利，由此带来的重大创新确有必要，但目前的做法却是转过头来限制模型蒸馏，我认为很讽刺。”
+纳德拉尤其警惕模型提供商在服务条款中“保留从客户使用数据和互动数据中学习的权利”。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 14 日消息，据外媒 TechCrunch 今天（14 日）报道，硅谷围绕人工智能风险的争论持续无休，最让 AI 拥护者坐立不安的，却是大型 AI 实验室可能借专有模型充当“特洛伊木马”。
+初创企业和大型企业把敏感资料喂给模型后，模型提供商便能 逐渐摸清客户的业务 ，还可能 利用积累下来的知识开拓同类业务，最终与客户直接竞争 。
+当地时间 12 日，纳德拉在博客中警告，企业使用 AI 时其实 付了两遍钱 ：一遍是明码标价的 token 费用，另一遍则是 在毫无察觉的情况下交出有价值的数据 。“你实际上付了两次钱，一次用金钱支付，另一次则用更加宝贵的东西支付，也就是为了让 AI 真正发挥作用而必须披露的专有知识。 你越希望模型表现得更好，就越需要向模型提供更多知识 ！”
+企业为了让模型更懂自身需求，实际上正在 一点点把经营诀窍教给模型 。“模型会从‘使用痕迹’中学习，包括人们输入的提示词、智能体调用的工具，尤其是模型犯错后人们给出的纠正。每一次纠正最终都会变成企业内部积累的经验。”
+竞争对手无论花多少钱，都很难买到同样的经验，企业却在使用模型的过程中 主动把经验交了出去 。纳德拉因此主张，AI 企业既然可以抓取互联网内容训练模型，企业也应当有权反过来 研究并“蒸馏”AI 企业的模型 。
+IT之家注：所谓“模型蒸馏”，就是分析一个模型给出的答案，从中摸清模型如何工作，再据此训练成本通常更低的新模型。
+纳德拉的核心观点是，模型提供商不能只允许自己利用别人的数据。模型提供商可以 用全世界的数据训练模型 ，却不准其他人以类似方式研究其模型，显然是双标行为。“模型提供商拥有合理使用公共数据训练模型的权利，由此带来的重大创新确有必要，但目前的做法却是转过头来限制模型蒸馏，我认为很讽刺。”
+纳德拉尤其警惕模型提供商在服务条款中“保留从客户使用数据和互动数据中学习的权利”。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 50
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":50,"text_length":876,"paragraph_count":9,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=medium
+   微软 CEO 萨提亚·纳德拉近日发文警告，企业使用 AI 模型时实际支付了双重成本：明面上的 token 费用，以及为让模型更好运作而必须披露的专有知识。模型会从使用痕迹中学习，包括提示词、智能体调用的工具及用户对模型错误的纠正，这些经验可能被模型提供商积累并用于开拓同类业务，使客户面临直接竞争。纳德拉主张，既然 AI 企业可抓取互联网内容训练模型，企业也应有权研究并"蒸馏"AI 企业的模型。他批评部分模型提供商在服务条款中保留从客户使用数据和互动数据中学习的权利，认为这种"只许州官放火"的做法具有讽刺意味。
+
+2. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=medium
+   IT之家 7 月 14 日消息，据外媒 TechCrunch 今天（14 日）报道，硅谷围绕人工智能风险的争论持续无休，最让 AI 拥护者坐立不安的，却是大型 AI 实验室可能借专有模型充当“特洛伊木马”。
+
+3. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   初创企业和大型企业把敏感资料喂给模型后，模型提供商便能 逐渐摸清客户的业务 ，还可能 利用积累下来的知识开拓同类业务，最终与客户直接竞争 。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   当地时间 12 日，纳德拉在博客中警告，企业使用 AI 时其实 付了两遍钱 ：一遍是明码标价的 token 费用，另一遍则是 在毫无察觉的情况下交出有价值的数据 。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   “你实际上付了两次钱，一次用金钱支付，另一次则用更加宝贵的东西支付，也就是为了让 AI 真正发挥作用而必须披露的专有知识。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   你越希望模型表现得更好，就越需要向模型提供更多知识 ！
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 7, 14, 12
+- quotes: AI 企业的模型。他批评部分模型提供商在服务条款中保留从客户使用数据和互动数据中学习的权利，认为这种 / 的做法具有讽刺意味。
+IT之家 7 月 14 日消息，据外媒 TechCrunch 今天（14 日）报道，硅谷围绕人工智能风险的争论持续无休，最让 AI 拥护者坐立不安的，却是大型 AI 实验室可能借专有模型充当“特洛伊木马 / 你实际上付了两次钱，一次用金钱支付，另一次则用更加宝贵的东西支付，也就是为了让 AI 真正发挥作用而必须披露的专有知识。 你越希望模型表现得更好，就越需要向模型提供更多知识 ！ / 模型会从‘使用痕迹’中学习，包括人们输入的提示词、智能体调用的工具，尤其是模型犯错后人们给出的纠正。每一次纠正最终都会变成企业内部积累的经验。 / 模型提供商拥有合理使用公共数据训练模型的权利，由此带来的重大创新确有必要，但目前的做法却是转过头来限制模型蒸馏，我认为很讽刺。
+
+## evidence_seed
+
+- company_actions: 当地时间 12 日，纳德拉在博客中警告，企业使用 AI 时其实 付了两遍钱 ：一遍是明码标价的 token 费用，另一遍则是 在毫无察觉的情况下交出有价值的数据 。 / “你实际上付了两次钱，一次用金钱支付，另一次则用更加宝贵的东西支付，也就是为了让 AI 真正发挥作用而必须披露的专有知识。 / 你越希望模型表现得更好，就越需要向模型提供更多知识 ！
+- case_details: 初创企业和大型企业把敏感资料喂给模型后，模型提供商便能 逐渐摸清客户的业务 ，还可能 利用积累下来的知识开拓同类业务，最终与客户直接竞争 。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: IT之家 7 月 14 日消息，据外媒 TechCrunch 今天（14 日）报道，硅谷围绕人工智能风险的争论持续无休，最让 AI 拥护者坐立不安的，却是大型 AI 实验室可能借专有模型充当“特洛伊木马”。
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 3
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"微软 CEO 纳德拉警告：企业使用 AI 可能面临双重成本与竞争风险","discovery_summary":"微软 CEO 萨提亚·纳德拉近日发文警告，企业使用 AI 模型时实际支付了双重成本：明面上的 token 费用，以及为让模型更好运作而必须披露的专有知识。模型会从使用痕迹中学习，包括提示词、智能体调用的工具及用户对模型错误的纠正，这些经验可能被模型提供商积累并用于开拓同类业务，使客户面临直接竞争。纳德拉主张，既然 AI 企业可抓取互联网内容训练模型，企业也应有权研究并\"蒸馏\"AI 企业的模型。他批评部分模型提供商在服务条款中保留从客户使用数据和互动数据中学习的权利，认为这种\"只许州官放火\"的做法具有讽刺意味。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/976/271.htm","discovered_at":"2026-07-14T01:48:14.366Z","rank_on_page":29,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+微软 CEO 萨提亚·纳德拉近日发文警告，企业使用 AI 模型时实际支付了双重成本：明面上的 token 费用，以及为让模型更好运作而必须披露的专有知识。模型会从使用痕迹中学习，包括提示词、智能体调用的工具及用户对模型错误的纠正，这些经验可能被模型提供商积累并用于开拓同类业务，使客户面临直接竞争。纳德拉主张，既然 AI 企业可抓取互联网内容训练模型，企业也应有权研究并"蒸馏"AI 企业的模型。他批评部分模型提供商在服务条款中保留从客户使用数据和互动数据中学习的权利，认为这种"只许州官放火"的做法具有讽刺意味。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

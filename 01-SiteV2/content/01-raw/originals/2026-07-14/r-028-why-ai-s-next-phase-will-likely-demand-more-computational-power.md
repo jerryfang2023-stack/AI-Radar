@@ -1,0 +1,438 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-028
+title: "Why AI’s next phase will likely demand more computational power, ..."
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/compute-power-ai.html"
+canonical_url: "https://deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/compute-power-ai.html"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "ai_hardware_original"
+search_path_label: "AI hardware original-source path"
+author: ""
+published_at: "2025-11-17T18:30:00.000Z"
+collected_at: 2026-07-14T01:56:51.452Z
+language: mixed
+full_text_hash: 4c5b5cd4be27d331
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-14/r-028-why-ai-s-next-phase-will-likely-demand-more-computational-power.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-14/r-028-why-ai-s-next-phase-will-likely-demand-more-computational-power.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":31477,"paragraph_count":117,"sentence_count":225,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 31477
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4c5b5cd4be27d331","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: eb7f58662902d17f
+content_hash: ee10f662dbe708d7
+semantic_hash: c1675d135e0094f0
+duplicate_of: ""
+first_seen_at: "2025-11-17T18:30:00.000Z"
+last_seen_at: 2026-07-14T01:56:51.452Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"AI hardware product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["ai_hardware_lens","commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Google","Meta","Amazon","Deloitte"],"products":[],"people":[],"industries":["法律 / 法务","企业服务"],"roles":["CIO / IT 负责人","销售 / 客服"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["$300","000","$500","41","$3 m","2026","11","18"],"quotes":["inference.","state-of-the-art","pre-training,","post-training","supercomputers,"]}
+evidence_seed: {"company_actions":["Skip to main content Why AI’s next phase will likely demand more computational power, not less The world is moving from just training gen AI models to using them at scale.","Neither is likely to happen in 2026.","” Many speculate that such a shift in computational workload—or “compute”—would mean that the AI ecosystem would need special chips optimized for inference only, and that these (possibly much cheaper) chips might be deployed on edge devices outside of the massive data centers where most AI chips are currently located and might even mean we need fewer, smaller, or at least different data centers, and spend less."],"case_details":[],"workflow_changes":["Article &bull; 11-min read &bull; 18 November 2025 &bull; Deloitte Center for Technology Media & Telecommunications Share linkedin twitter facebook Print Share Share this article linkedin twitter facebook Or copy link Copy Download () It’s widely expected that generative AI computing will shift in 2026, from mainly being about training models on very large amounts of data to using those models to help think about and answer enterprise and consumer questions, prompts, and tasks—a process known as “inference."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"Driven by concerns around cost, intellectual property ownership, sovereignty, resilience, and customization, enterprises can spend US$300,000 to US$500,000 on a box with about eight GPUs (and HBM and CPUs) that can perform a certain level of AI training and inference.41 Or they can spend US$3 millio... / query=AI server product launch enterprise inference / intent=find_original_source / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to main content Why AI’s next phase will likely demand more computational power, not less The world is moving from just training gen AI models to using them at scale.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"Many believe this means more consumer edge computing and less data center computing.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Neither is likely to happen in 2026.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Article &bull; 11-min read &bull; 18 November 2025 &bull; Deloitte Center for Technology Media & Telecommunications Share linkedin twitter facebook Print Share Share this article linkedin twitter facebook Or copy link Copy Download () It’s widely expected that generative AI computing will shift in 2026, from mainly being about training models on very large amounts of data to using those models to help think about and answer enterprise and consumer questions, prompts, and tasks—a process known as “inference.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"” Many speculate that such a shift in computational workload—or “compute”—would mean that the AI ecosystem would need special chips optimized for inference only, and that these (possibly much cheaper) chips might be deployed on edge devices outside of the massive data centers where most AI chips are currently located and might even mean we need fewer, smaller, or at least different data centers, and spend less.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-14T01:56:51.452Z
+theme: ai-hardware-trend-innovation-signal
+keyword_group: ai-hardware-trend-innovation-signal
+copyright_note: local research archive only
+---
+
+# Why AI’s next phase will likely demand more computational power, ...
+
+## clean_text
+
+Skip to main content
+Why AI’s next phase will likely demand more computational power, not less
+The world is moving from just training gen AI models to using them at scale. Many believe this means more consumer edge computing and less data center computing. Neither is likely to happen in 2026.
+Article
+&bull;
+11-min read
+&bull;
+18 November 2025
+&bull;
+Deloitte Center for Technology Media & Telecommunications
+Share
+linkedin
+twitter
+facebook
+Print
+Share
+Share this article
+linkedin
+twitter
+facebook
+Or copy link
+Copy
+Download ()
+It’s widely expected that generative AI computing will shift in 2026, from mainly being about training models on very large amounts of data to using those models to help think about and answer enterprise and consumer questions, prompts, and tasks—a process known as “inference.” Many speculate that such a shift in computational workload—or “compute”—would mean that the AI ecosystem would need special chips optimized for inference only, and that these (possibly much cheaper) chips might be deployed on edge devices outside of the massive data centers where most AI chips are currently located and might even mean we need fewer, smaller, or at least different data centers, and spend less.
+Deloitte sees things somewhat differently . Inference workloads will indeed be the hot new thing in 2026, accounting for roughly two-thirds of all compute (up from a third in 2023 and half in 2025), 1 and the market for inference-optimized chips will grow to over US$50 billion in 2026. But Deloitte also predicts that a majority of the computations will still be performed on cutting-edge, expensive, power-hungry AI chips worth US$200 billion or more, which will still mainly sit in large data centers valued at US$400 billion or more, or on-prem enterprise solutions worth US$50 billion that use the same chips and racks as data centers, rather than on chips used in edge devices. Meaning, we likely will need all the data centers and enterprise on-prem AI factories that are currently being planned and all the electricity that these facilities will need.
+The ever-growing computational demands of AI
+While the growth in demand for training compute on new models has likely slowed (it is likely still growing, but at lower rates than in 2023 and 2024), 2 AI models continue to evolve through advanced techniques that can improve them after training. These methods, combined with the sheer volume of inference queries, likely mean that computational demand will increase, not decrease. Put another way, it is expected that, even though the chips used for compute are becoming more efficient every year, thanks to Moore’s Law, the demand for compute is rising even faster at four to five times per year out to 2030. 3
+It’s true: Compute demand growth is slowing for initial training
+A 2020 paper showed that bigger models, trained on more data, and using more advanced AI-accelerating chips produced better results consistently: This was gen AI’s first scaling law. 4 By 2022 and 2023, training models had grown from one billion parameters to 100 billion to one trillion. 5
+Two issues began to emerge in 2024. There wasn’t an infinite amount of training data out there, and ever larger models were showing diminishing returns: Ten times more training data might produce a “state-of-the-art” AI model that was only slightly better than the previous version, or perhaps not even better at all. 6 At the same time, smaller and more efficient AI models looked like they might be able to produce truly state-of-the-art AI models using less data, less time, less money, and fewer chips. 7
+If growth in training slowed, then AI computing would become increasingly about inference. Asking a large language model (LLM) to summarize a document (one example of inference) takes only a tiny fraction of the compute capacity needed to train that model. However, the logic went, as billions of consumers and enterprise workers made more of those requests and more frequently, all that inference would add up, shifting the overall compute workload from training to inference. Some of those requests could be processed on consumer and enterprise devices such as smartphones and personal computers, and, as Deloitte correctly predicted in 2024, hundreds of millions of PCs and smartphones with on-device AI-accelerating chips were sold in 2025. 8 Also, since inference is less computationally intensive than training, perhaps special inference-optimized chips could be used inside data centers. These chips are cheaper and use less energy per inference than the superpowered AI chips needed for scaling training, and might not require as much co-packaged expensive memory. 9
+All of that is happening in 2025 and will likely continue in 2026. Deloitte surveys in 2025 found that, both in the United States and globally, more consumers are using gen AI, and more are doing it daily. 10 Edge devices such as PCs and smartphones increasingly have onboard AI accelerators. A number of inference-optimized chips (application-specific integrated circuits, or ASICs) have been designed, manufactured, and are being deployed in data centers and some edge devices. The list includes, but is not limited to, chips from Meta, Google, Amazon, Intel, AMD, Qualcomm, Groq, SambaNova, Cerebras, and Graphcore, some of which are based on a Broadcom package solution, with the designer providing the processing core. 11 Although sales figures for all these different chips are not publicly available, Deloitte believes that 2025 revenues for these chips are over US$20 billion collectively and will reach US$50 billion or more in 2026. 12
+Then why do we still need power-hungry chips costing US$30,000 each or more—US$400 billion or so by 2028 in aggregate 13 —in data centers that will cost an estimated US$400 billion in 2026 alone, rising to a potential trillion dollars annually in the same year? 14
+AI model training is more complex than it used to be
+The point of the first scaling law was to produce “better” AI models, and it worked very well, at least for a few years. This initial form of scaling used to be called training, but is now called “pre-training,” producing foundational models.
+It turns out there are two more ways to make even better models: One is “post-training” scaling, which involves various techniques such as fine-tuning, pruning, quantization, distillation, reinforcement learning from both human feedback and increasingly from AI feedback, and synthetic data augmentation. 15 The other is test-time scaling, or long thinking, in which the models reason their way through the inference process after they have been asked a question using a variety of techniques, such as chain-of-thought prompting, sampling with majority voting, search, and even some post-training techniques. 16 This allows for more accuracy, with more choices, better sources, and fewer hallucinations. 17
+New power-hungry AI techniques will likely outpace efficiency gains
+First, post-training scaling and test-time scaling appear to be the new normal: Most AI companies now use them to make AI models better in various ways. 18
+Second, they’re both AI compute hogs. It’s estimated that post-training in aggregate uses 30 times the compute needed to train the original foundational model, while long thinking uses more than 100 times the compute of a simple inference like asking an AI to summarize an email. 19
+Third, since both of these scaling techniques are widely used and computing resource–intensive, there are implications for AI data centers, the locations and power needs of those AI data centers, the chips that go into AI data centers (and other places where AI needs to be performed), last year’s AI chips, edge devices, and more.
+A brief refresher on the chips Deloitte predicted would be needed in AI data centers in 2025 and beyond
+Data centers have existed for decades. In fact, there are tens of millions of square feet of data centers globally, and tens of billions of dollars of semiconductor components have been sold annually to fill those data centers for years. 20 But the new AI data centers, and the new semiconductors that enable them, are often radically different from yesterday’s data centers and semiconductors. Night and day.
+The next generation of AI data centers is likely to cost hundreds of billions of dollars annually to build and consume hundreds of gigawatts of power. In most of these facilities, the cooling will likely be different from previous generations of data centers, the power supplies and voltages will likely be different, the internal communications technologies will likely be different, and the very floors will likely need to be thicker to support denser and heavier server racks. Perhaps most importantly, instead of having central processing unit–centric servers with memory close by, newer AI server racks are mainly made up of specialized chips called graphics processing units, or GPUs, 21 which often have specialized high-bandwidth memory (HBM), tightly integrated with the GPUs, and special central processing units (CPUs) to orchestrate the vast AI compute workloads. Many components are unique to the needs and scale of this newer generation of AI data centers. 22
+As recently as 2006, high-end GPUs were thought to be for gaming computers and boxes, not data centers. 23 The tasks of most data centers were well met by CPUs, which were largely serial processors, where tasks were executed in order. Some high-performance computers, or “supercomputers,” have special chips in them, which are called “massively parallel processors,” that execute hundreds of tasks simultaneously. These chips, however, were often tens or hundreds of times more expensive than gaming GPUs or data center CPUs.
+In 2009, scientists noted that gaming GPUs were also parallel processors and tried running machine learning models on high-end GPUs—the exact same GPUs as were found in gaming computers. 24 They worked well, and within a few years, specially optimized GPUs (slightly different from the gaming versions) were being used in some data centers and some on-premises devices to perform machine learning AI. 25 But the market was measured in single-digit billions of dollars annually as recently as 2018. 26
+In 2022, the development of LLMs for generative AI required even further specialized GPUs, and often required them to be integrated in the same advanced package with a relatively new and specialized kind of memory: HBM. 27 These GPU plus HBM components also required a device to coordinate and orchestrate data flows. Optimized special CPUs (different from the CPUs in computers, smartphones, or data centers, although similar in their core architecture) were also an important part of the generative AI data center, along with multiple other, perhaps equally critical, components. In 2025, almost all the top 500 supercomputers in the world have a similar mix of GPUs, special memory, and CPUs. 28 In a way, the megascale AI data centers that are being built could be described as a version of specialized supercomputers.
+Show more
+Bottom line: What more compute demand could mean for the AI ecosystem
+Businesses and executives should prepare for a future where compute demand, especially in big data centers and enterprise AI factories, continues to rise, driven in part by post-training and test-time scaling. There will likely be growth in inference-optimized chips and in edge processing, but there will still be a need to invest in hyperscale data centers and enterprise AI boxes. “Optimized for inference” doesn’t necessarily mean less power: One recent product optimized for inference pre-fill compute avoids using HBM and uses GDDR7 instead, but each rack needs 370 kW, which is almost three times the power density of the training version from the same supplier. 29
+AI data centers: AI data center capital expenditure for 2026 is expected to be US$400 billion to US$450 billion globally, 30 with over half of that spending being the chips inside devices (US$250 billion to US$300 billion) 31 and the rest being everything else (land, construction, power, permitting, and more). It’s further predicted that AI data center capex will rise to US$1 trillion in 2028, 32 with AI chips being over US$400 billion in that year. 33 Although pre-training growth is slowing, and compute is shifting from training to inference, the compute demands from post-training scaling and test-time scaling, and increased usage suggest that the world likely needs a lot of data centers, and the ramp from US$300 billion to US$400 billion in 2025 to roughly US$1 trillion in 2028 is directionally realistic.
+Location of AI data centers: Pre-training a 100-trillion-parameter LLM could take weeks and can be incredibly sensitive to small interruptions. The failure of a key component or an excessively high latency handoff between processors could lead to the loss of all the work thus far and require a fresh start. Most foundational model pre-training has been co-located, with all the servers and racks inside a single building or campus. However, increasingly, AI compute loads are able to be done in different data centers across the United States, or even around the globe. 34 Further, there will likely be a range from gigawatt-scale data centers to smaller-scale inferencing data centers where fully trained models can be deployed, which will tend to be closer to metro locations to help reduce latency. This helps set up a growing demand for sovereign AI solutions (each country or region having its own domestically located and even locally operated AI compute capacity) as well as enterprise edge on-premises solutions as part of the hybrid cloud. 35
+Power demand for AI data centers: At a high level, more AI data centers that are doing all three kinds of scaling are still going to need a lot of power. But the ability of both post-training and test-time scaling can be relatively “interruptible” compared to pre-training, which needs to be done all in one training run. That helps allow AI companies to participate in demand response programs, where they can shift tasks to different data center locations or slow down processor clock speeds, reducing demand during peak times. 36 It’s estimated that increasing this kind of flexible load could allow large new data centers to help maintain grid reliability and affordability. 37
+That AI training and inference can be distributed means that data centers don’t need to all be in one state or one county, but can be spread more evenly around the world, distributing electrical demand.
+Chips in AI data centers: Some may have viewed the AI chip market as a zero-sum game. The view was often something along the lines of: “Sure, I needed to spend tens of thousands of dollars for advanced GPUs co-packaged with HBM for pre-training my foundational models, but as we shift computing to inference, maybe I can use cheaper chips that are optimized for inference and have less HBM.”
+Instead of the chip market being an “either-or,” it looks like it will be a “both-and.” There’s likely to be considerable growth in inference-only or inference-optimized chips, but at the same time, the kind of chips typically best suited for foundational model pre-training, post-training, and test-time scaling (which are a mix of training and inference compute) remain the big, powerful, energy-hungry GPUs with HBM that cost tens of thousands of dollars each. For those buying the chips, they may be even more expensive in 2026, with leading-edge process wafers expected to cost 50% more. 38
+Edge AI in consumer or enterprise devices such as smartphones and PCs: As mentioned earlier, hundreds of millions of smartphones and PCs are being shipped and purchased with neural processing units (NPUs): 39 dedicated chips or portions of the CPU chip (worth a few dollars or tens of dollars for the NPU portion) that are optimized for processing AI inference tasks with reasonable power consumption.
+However, NPUs are only powerful enough for the kind of one-shot inference discussed earlier (“summarize this email,” etc.). Therefore, Deloitte predicts that almost all AI computing performed in 2026 will be done mainly in the kind of giant AI data centers being planned, or on relatively expensive high-end AI servers owned by enterprises, not on PCs and smartphones. At least for now, in the hyper-growth, land-rush phase we seem to be in, a cost-optimized hybrid architecture does not appear to be a priority for vendors or enterprises. Further, things like test-time scaling can be overkill for the vast majority of consumer use cases, and even most enterprise on-device use cases. One day, computers and smartphones may have a much bigger role to play, but it won’t likely be in 2026.
+More recently, one AI company introduced a gen AI model that can reason and that runs locally on PCs. It’s unclear how well it works, what impact it has on battery life, or how many PC users will want to use AI locally, rather than through the cloud. 40
+Edge AI and the enterprise using on-prem solutions: The very powerful, power-hungry GPU plus HBM plus coordinating CPU trays that are typically going into giant AI data centers around the world are also available to enterprises that want to pursue an on-prem, hybrid, more resilient approach to gen AI computing, especially for post-training. Driven by concerns around cost, intellectual property ownership, sovereignty, resilience, and customization, enterprises can spend US$300,000 to US$500,000 on a box with about eight GPUs (and HBM and CPUs) that can perform a certain level of AI training and inference. 41 Or they can spend US$3 million to US$5 million on a rack with up to 72 cutting-edge GPUs (and HBM and CPUs) that do more. 42 Or they can even spend tens of millions on multiple racks that do more still. 43 Deloitte predicts that this on-prem hybrid enterprise market will be worth over US$50 billion in 2026.
+Edge AI for robots, drones, and autonomous vehicles: Still c
+
+## full_text
+
+Skip to main content
+Why AI’s next phase will likely demand more computational power, not less
+The world is moving from just training gen AI models to using them at scale. Many believe this means more consumer edge computing and less data center computing. Neither is likely to happen in 2026.
+Article
+&bull;
+11-min read
+&bull;
+18 November 2025
+&bull;
+Deloitte Center for Technology Media & Telecommunications
+Share
+linkedin
+twitter
+facebook
+Print
+Share
+Share this article
+linkedin
+twitter
+facebook
+Or copy link
+Copy
+Download ()
+It’s widely expected that generative AI computing will shift in 2026, from mainly being about training models on very large amounts of data to using those models to help think about and answer enterprise and consumer questions, prompts, and tasks—a process known as “inference.” Many speculate that such a shift in computational workload—or “compute”—would mean that the AI ecosystem would need special chips optimized for inference only, and that these (possibly much cheaper) chips might be deployed on edge devices outside of the massive data centers where most AI chips are currently located and might even mean we need fewer, smaller, or at least different data centers, and spend less.
+Deloitte sees things somewhat differently . Inference workloads will indeed be the hot new thing in 2026, accounting for roughly two-thirds of all compute (up from a third in 2023 and half in 2025), 1 and the market for inference-optimized chips will grow to over US$50 billion in 2026. But Deloitte also predicts that a majority of the computations will still be performed on cutting-edge, expensive, power-hungry AI chips worth US$200 billion or more, which will still mainly sit in large data centers valued at US$400 billion or more, or on-prem enterprise solutions worth US$50 billion that use the same chips and racks as data centers, rather than on chips used in edge devices. Meaning, we likely will need all the data centers and enterprise on-prem AI factories that are currently being planned and all the electricity that these facilities will need.
+The ever-growing computational demands of AI
+While the growth in demand for training compute on new models has likely slowed (it is likely still growing, but at lower rates than in 2023 and 2024), 2 AI models continue to evolve through advanced techniques that can improve them after training. These methods, combined with the sheer volume of inference queries, likely mean that computational demand will increase, not decrease. Put another way, it is expected that, even though the chips used for compute are becoming more efficient every year, thanks to Moore’s Law, the demand for compute is rising even faster at four to five times per year out to 2030. 3
+It’s true: Compute demand growth is slowing for initial training
+A 2020 paper showed that bigger models, trained on more data, and using more advanced AI-accelerating chips produced better results consistently: This was gen AI’s first scaling law. 4 By 2022 and 2023, training models had grown from one billion parameters to 100 billion to one trillion. 5
+Two issues began to emerge in 2024. There wasn’t an infinite amount of training data out there, and ever larger models were showing diminishing returns: Ten times more training data might produce a “state-of-the-art” AI model that was only slightly better than the previous version, or perhaps not even better at all. 6 At the same time, smaller and more efficient AI models looked like they might be able to produce truly state-of-the-art AI models using less data, less time, less money, and fewer chips. 7
+If growth in training slowed, then AI computing would become increasingly about inference. Asking a large language model (LLM) to summarize a document (one example of inference) takes only a tiny fraction of the compute capacity needed to train that model. However, the logic went, as billions of consumers and enterprise workers made more of those requests and more frequently, all that inference would add up, shifting the overall compute workload from training to inference. Some of those requests could be processed on consumer and enterprise devices such as smartphones and personal computers, and, as Deloitte correctly predicted in 2024, hundreds of millions of PCs and smartphones with on-device AI-accelerating chips were sold in 2025. 8 Also, since inference is less computationally intensive than training, perhaps special inference-optimized chips could be used inside data centers. These chips are cheaper and use less energy per inference than the superpowered AI chips needed for scaling training, and might not require as much co-packaged expensive memory. 9
+All of that is happening in 2025 and will likely continue in 2026. Deloitte surveys in 2025 found that, both in the United States and globally, more consumers are using gen AI, and more are doing it daily. 10 Edge devices such as PCs and smartphones increasingly have onboard AI accelerators. A number of inference-optimized chips (application-specific integrated circuits, or ASICs) have been designed, manufactured, and are being deployed in data centers and some edge devices. The list includes, but is not limited to, chips from Meta, Google, Amazon, Intel, AMD, Qualcomm, Groq, SambaNova, Cerebras, and Graphcore, some of which are based on a Broadcom package solution, with the designer providing the processing core. 11 Although sales figures for all these different chips are not publicly available, Deloitte believes that 2025 revenues for these chips are over US$20 billion collectively and will reach US$50 billion or more in 2026. 12
+Then why do we still need power-hungry chips costing US$30,000 each or more—US$400 billion or so by 2028 in aggregate 13 —in data centers that will cost an estimated US$400 billion in 2026 alone, rising to a potential trillion dollars annually in the same year? 14
+AI model training is more complex than it used to be
+The point of the first scaling law was to produce “better” AI models, and it worked very well, at least for a few years. This initial form of scaling used to be called training, but is now called “pre-training,” producing foundational models.
+It turns out there are two more ways to make even better models: One is “post-training” scaling, which involves various techniques such as fine-tuning, pruning, quantization, distillation, reinforcement learning from both human feedback and increasingly from AI feedback, and synthetic data augmentation. 15 The other is test-time scaling, or long thinking, in which the models reason their way through the inference process after they have been asked a question using a variety of techniques, such as chain-of-thought prompting, sampling with majority voting, search, and even some post-training techniques. 16 This allows for more accuracy, with more choices, better sources, and fewer hallucinations. 17
+New power-hungry AI techniques will likely outpace efficiency gains
+First, post-training scaling and test-time scaling appear to be the new normal: Most AI companies now use them to make AI models better in various ways. 18
+Second, they’re both AI compute hogs. It’s estimated that post-training in aggregate uses 30 times the compute needed to train the original foundational model, while long thinking uses more than 100 times the compute of a simple inference like asking an AI to summarize an email. 19
+Third, since both of these scaling techniques are widely used and computing resource–intensive, there are implications for AI data centers, the locations and power needs of those AI data centers, the chips that go into AI data centers (and other places where AI needs to be performed), last year’s AI chips, edge devices, and more.
+A brief refresher on the chips Deloitte predicted would be needed in AI data centers in 2025 and beyond
+Data centers have existed for decades. In fact, there are tens of millions of square feet of data centers globally, and tens of billions of dollars of semiconductor components have been sold annually to fill those data centers for years. 20 But the new AI data centers, and the new semiconductors that enable them, are often radically different from yesterday’s data centers and semiconductors. Night and day.
+The next generation of AI data centers is likely to cost hundreds of billions of dollars annually to build and consume hundreds of gigawatts of power. In most of these facilities, the cooling will likely be different from previous generations of data centers, the power supplies and voltages will likely be different, the internal communications technologies will likely be different, and the very floors will likely need to be thicker to support denser and heavier server racks. Perhaps most importantly, instead of having central processing unit–centric servers with memory close by, newer AI server racks are mainly made up of specialized chips called graphics processing units, or GPUs, 21 which often have specialized high-bandwidth memory (HBM), tightly integrated with the GPUs, and special central processing units (CPUs) to orchestrate the vast AI compute workloads. Many components are unique to the needs and scale of this newer generation of AI data centers. 22
+As recently as 2006, high-end GPUs were thought to be for gaming computers and boxes, not data centers. 23 The tasks of most data centers were well met by CPUs, which were largely serial processors, where tasks were executed in order. Some high-performance computers, or “supercomputers,” have special chips in them, which are called “massively parallel processors,” that execute hundreds of tasks simultaneously. These chips, however, were often tens or hundreds of times more expensive than gaming GPUs or data center CPUs.
+In 2009, scientists noted that gaming GPUs were also parallel processors and tried running machine learning models on high-end GPUs—the exact same GPUs as were found in gaming computers. 24 They worked well, and within a few years, specially optimized GPUs (slightly different from the gaming versions) were being used in some data centers and some on-premises devices to perform machine learning AI. 25 But the market was measured in single-digit billions of dollars annually as recently as 2018. 26
+In 2022, the development of LLMs for generative AI required even further specialized GPUs, and often required them to be integrated in the same advanced package with a relatively new and specialized kind of memory: HBM. 27 These GPU plus HBM components also required a device to coordinate and orchestrate data flows. Optimized special CPUs (different from the CPUs in computers, smartphones, or data centers, although similar in their core architecture) were also an important part of the generative AI data center, along with multiple other, perhaps equally critical, components. In 2025, almost all the top 500 supercomputers in the world have a similar mix of GPUs, special memory, and CPUs. 28 In a way, the megascale AI data centers that are being built could be described as a version of specialized supercomputers.
+Show more
+Bottom line: What more compute demand could mean for the AI ecosystem
+Businesses and executives should prepare for a future where compute demand, especially in big data centers and enterprise AI factories, continues to rise, driven in part by post-training and test-time scaling. There will likely be growth in inference-optimized chips and in edge processing, but there will still be a need to invest in hyperscale data centers and enterprise AI boxes. “Optimized for inference” doesn’t necessarily mean less power: One recent product optimized for inference pre-fill compute avoids using HBM and uses GDDR7 instead, but each rack needs 370 kW, which is almost three times the power density of the training version from the same supplier. 29
+AI data centers: AI data center capital expenditure for 2026 is expected to be US$400 billion to US$450 billion globally, 30 with over half of that spending being the chips inside devices (US$250 billion to US$300 billion) 31 and the rest being everything else (land, construction, power, permitting, and more). It’s further predicted that AI data center capex will rise to US$1 trillion in 2028, 32 with AI chips being over US$400 billion in that year. 33 Although pre-training growth is slowing, and compute is shifting from training to inference, the compute demands from post-training scaling and test-time scaling, and increased usage suggest that the world likely needs a lot of data centers, and the ramp from US$300 billion to US$400 billion in 2025 to roughly US$1 trillion in 2028 is directionally realistic.
+Location of AI data centers: Pre-training a 100-trillion-parameter LLM could take weeks and can be incredibly sensitive to small interruptions. The failure of a key component or an excessively high latency handoff between processors could lead to the loss of all the work thus far and require a fresh start. Most foundational model pre-training has been co-located, with all the servers and racks inside a single building or campus. However, increasingly, AI compute loads are able to be done in different data centers across the United States, or even around the globe. 34 Further, there will likely be a range from gigawatt-scale data centers to smaller-scale inferencing data centers where fully trained models can be deployed, which will tend to be closer to metro locations to help reduce latency. This helps set up a growing demand for sovereign AI solutions (each country or region having its own domestically located and even locally operated AI compute capacity) as well as enterprise edge on-premises solutions as part of the hybrid cloud. 35
+Power demand for AI data centers: At a high level, more AI data centers that are doing all three kinds of scaling are still going to need a lot of power. But the ability of both post-training and test-time scaling can be relatively “interruptible” compared to pre-training, which needs to be done all in one training run. That helps allow AI companies to participate in demand response programs, where they can shift tasks to different data center locations or slow down processor clock speeds, reducing demand during peak times. 36 It’s estimated that increasing this kind of flexible load could allow large new data centers to help maintain grid reliability and affordability. 37
+That AI training and inference can be distributed means that data centers don’t need to all be in one state or one county, but can be spread more evenly around the world, distributing electrical demand.
+Chips in AI data centers: Some may have viewed the AI chip market as a zero-sum game. The view was often something along the lines of: “Sure, I needed to spend tens of thousands of dollars for advanced GPUs co-packaged with HBM for pre-training my foundational models, but as we shift computing to inference, maybe I can use cheaper chips that are optimized for inference and have less HBM.”
+Instead of the chip market being an “either-or,” it looks like it will be a “both-and.” There’s likely to be considerable growth in inference-only or inference-optimized chips, but at the same time, the kind of chips typically best suited for foundational model pre-training, post-training, and test-time scaling (which are a mix of training and inference compute) remain the big, powerful, energy-hungry GPUs with HBM that cost tens of thousands of dollars each. For those buying the chips, they may be even more expensive in 2026, with leading-edge process wafers expected to cost 50% more. 38
+Edge AI in consumer or enterprise devices such as smartphones and PCs: As mentioned earlier, hundreds of millions of smartphones and PCs are being shipped and purchased with neural processing units (NPUs): 39 dedicated chips or portions of the CPU chip (worth a few dollars or tens of dollars for the NPU portion) that are optimized for processing AI inference tasks with reasonable power consumption.
+However, NPUs are only powerful enough for the kind of one-shot inference discussed earlier (“summarize this email,” etc.). Therefore, Deloitte predicts that almost all AI computing performed in 2026 will be done mainly in the kind of giant AI data centers being planned, or on relatively expensive high-end AI servers owned by enterprises, not on PCs and smartphones. At least for now, in the hyper-growth, land-rush phase we seem to be in, a cost-optimized hybrid architecture does not appear to be a priority for vendors or enterprises. Further, things like test-time scaling can be overkill for the vast majority of consumer use cases, and even most enterprise on-device use cases. One day, computers and smartphones may have a much bigger role to play, but it won’t likely be in 2026.
+More recently, one AI company introduced a gen AI model that can reason and that runs locally on PCs. It’s unclear how well it works, what impact it has on battery life, or how many PC users will want to use AI locally, rather than through the cloud. 40
+Edge AI and the enterprise using on-prem solutions: The very powerful, power-hungry GPU plus HBM plus coordinating CPU trays that are typically going into giant AI data centers around the world are also available to enterprises that want to pursue an on-prem, hybrid, more resilient approach to gen AI computing, especially for post-training. Driven by concerns around cost, intellectual property ownership, sovereignty, resilience, and customization, enterprises can spend US$300,000 to US$500,000 on a box with about eight GPUs (and HBM and CPUs) that can perform a certain level of AI training and inference. 41 Or they can spend US$3 million to US$5 million on a rack with up to 72 cutting-edge GPUs (and HBM and CPUs) that do more. 42 Or they can even spend tens of millions on multiple racks that do more still. 43 Deloitte predicts that this on-prem hybrid enterprise market will be worth over US$50 billion in 2026.
+Edge AI for robots, drones, and autonomous vehicles: Still comparatively small in 2026, there are several use cases that can require inference in real time and on device. These range from drones and robots to self-driving cars. These currently span a wide variety of chips: Most drones have relatively primitive and low-powered AI inference chips, 44 while most self-driving vehicles are using GPU chip solutions that are only slightly less powerful than those found in data centers. 45 This non-AI factory market is likely still fairly small (under US$5 billion in 2026) 46 but could become much larger, especially if the robot market takes off, which could happen, but likely after 2030. 47
+We’re still in the early days of AI. As of summer 2025, the growth in the need for AI compute (and therefore the need for more data centers, enterprise on-prem solutions, and more high-powered AI chips, whether for pre-training, post-training, test-time scaling, and inferencing) is very high, even in spite of constant attempts to make the algorithms more efficient. 48 At some point, it’s possible that new techniques could see a breakthrough, and improved AI models could run well on cheaper chips, needing fewer data centers and less power. But that won’t be in 2026.
+by
+Duncan Stewart
+Canada
+Duncan Stewart
+Director of Research, TMT
+Canada
+Duncan is the Director of TMT Research for Deloitte Canada, and is a globally recognized expert on the forecasting of consumer and enterprise technology, media & telecommunications trends. He presents regularly at conferences and to companies on marketing, technology, consumer trends, and the longer term TMT outlook. He also works with individual clients (across all industries) in assessing the impact of technological, demographic, and regulatory changes on their business strategies.
+dunstewart@deloitte.ca
+416-874-3536
+Jeroen Kusters
+United States
+Jeroen Kusters
+Principal | US Semiconductor Leader
+United States
+Jeroen Kusters is the US semiconductor leader at Deloitte Consulting LLP, leading the semiconductor industry segment within Deloitte's Technology, Media & Telecom practice. With over 20 years of experience, Kusters excels in market strategy, operational excellence, talent management, and technology solutions for the semiconductor sector.
+As a strategist and change agent, he advises chief executives on navigating market shifts, blending immediate business improvements with strategic transformation. He is a thought leader and author in supply chain management, advocating for the shift from linear supply chains to digital supply networks.
+Jeroen's leadership helps technology companies capitalize on technological change, address supply chain challenges, and drive innovation. His expertise in enterprise planning has reshaped how semiconductor companies operate in a digital world.
+jekusters@deloitte.com
++1 415 783 5631
+Deb Bhattacharjee
+United States
+Deb Bhattacharjee
+Principal | Global Semiconductor Center of Excellence leader | Deloitte Consulting LLP
+United States
+Deb Bhattacharjee leads the Global Semiconductor Center of Excellence and is actively engaged in conceptualizing and driving SAP-enabled business transformation for a diverse range of clients in the technology sector including software, original equipment manufacturer, semiconductor, semiconductor equipment, and hi-tech consumer products. For more than 25 years, Bhattacharjee has been a resident of Silicon Valley and had led close to 30 transformation programs, several of which focused on supply chain. He has also worked with more than 75 clients, helping them develop their business–driven technology strategies, road maps, and transformation plans.
+debbhattacharjee@deloitte.com
++1 408 219 8422
+Arpan Tiwari
+United States
+Arpan Tiwari
+Managing Director | Deloitte Consulting LLP
+United States
+Arpan is a managing director in Deloitte Consulting LLP’s Technology, Media, and Telecommunications (TMT) practice. He has served TMT clients globally, helping them establish greenfield businesses, as well as transforming/ scaling existing operations. He is a key leader at Deloitte in the 5G and Edge Computing space and is driving related alliances and ecosystems activity.
+arptiwari@deloitte.com
++1 469 417 3747
+Girija Krishnamurthy
+Global
+Girija Krishnamurthy
+Global Technology sector leader
+Global
+Girija Krishnamurthy is the Global Technology sector leader at Deloitte. She also serves as the global lead client service partner for a Fortune 100, leading technology company. She has previously served as the National Hardware and Consumer Tech Industry leader at Deloitte Consulting LLP . With over 20 years of consulting experience, Girija has advised C-suite executives and led large-scale business transformations for leading technology clients, including several Fortune 100 and private equity-owned fast-growth companies. She has also held key leadership roles within Deloitte US, such as leading finance digital transformation for major technology practices. In addition, Girija leads Global Portco Services for Private Equity, a rapidly expanding area. She is passionate about delivering innovative, executable solutions that help clients simplify complexity and achieve meaningful results.
+gkrishnamurthy@deloitte.com
++1 949 735 9918
+Karthik Ramachandran
+India
+Karthik Ramachandran
+Senior research leader
+India
+Karthik Ramachandran is a senior research manager with Deloitte’s Center for TMT. He specializes in the technology and semiconductor industries, and works closely with senior leaders and SMEs in Deloitte’s TMT practice globally to codevelop and write thought leadership perspectives tailored for senior industry executives. Besides publishing on Deloitte Insights , his articles have been featured on Deloitte- Wall Street Journal platforms (the CFO/CTO/CMO Journals), the SEMI industry association, and the Houston Business Journal .
+karramachandran@deloitte.com
++1 615 718 2961
+Share
+linkedin
+twitter
+facebook
+Print
+Endnotes
+Rodrigo Liang, “ Scaling AI without breaking the grid: The path to sustainable innovation ,” World Economic Forum, Jan. 3, 2025.
+Michelle Weaver, “ Big debates: The AI evolution ,” Morgan Stanley, Jan. 10, 2025.
+Josh You and David Owen, “ How much power will frontier AI training demand in 2030? ” Epoch.AI, Aug. 11, 2025.
+Jared Kaplan et al., “ Scaling laws for neural language models ,” OpenAI, Jan. 23, 2020.
+Amazon Web Services, “ What are foundation models? ” accessed Sept. 19, 2025.
+Ashu Garg, “ Has AI scaling hit a limit? ” Foundation Capital, Nov. 27, 2024.
+Aixin Liu et al., “ Deepseek-v3 technical report ,” arXiv preprint arXiv:2412.19437 (2024).
+Chris Arkenberg, Duncan Stewart, Gillian Crossan & Kevin Westcott, “On-device generative AI could make smartphones more exciting—if they can deliver on the promise,” Deloitte Insights , Nov. 19, 2024; IDC Media Center, “ Worldwide smartphone market forecast to grow 1% in 2025, driven by accelerated 3.9% iOS growth, according to IDC ,” Aug. 27, 2025; Gartner, Inc., “ Gartner says artificial intelligence (“AI”) PCs will represent 31 percent of worldwide PC market by the end of 2025 ,” press release, Aug. 28, 2025.
+Amazon Web Services, “ AWS Inferentia ,” accessed Sept. 19, 2025.
+Paul Lee and Clare Mortimer, “ How citizens use devices and AI: what government needs to know ,” Deloitte UK, Aug. 29, 2025; Steve Feinberg, et al., " In the gen AI economy, consumers want innovation they can trust: Deloitte’s 2025 Connected Consumer Survey ," Deloitte, Sept. 25, 2025.
+Wylie Wong, “ Data center chips in 2024: Top trends and releases ,” Data Center Knowledge, April 11, 2024; Reen Singh, “ AI inference chips latest rankings: Who leads the race? ” Uvation, July 11, 2025; Broadcom Inc., “ 3.5D XDSiP AI Accelerator Platform ,” accessed Oct. 23, 2025.
+Deloitte Consulting LLP performed an analysis of the data center market, including a rough bill of materials for the various components, and market sizes. This analysis is due to be published in December 2025.
+Skye Jacobs, “ NVIDIA Blackwell server cabinets could cost somewhere around $2 to $3 million each ,” TechSpot, July 28, 2024.
+Beth McKenna, “ 2 key things from AMD’s earnings call that investors should know ,” The Motley Fool, Feb. 1, 2024; Dell’Oro Group, “ AI infrastructure spending sustains strong growth momentum ,” press release, Feb. 5, 2025.
+Kari Briski, “ How scaling laws drive smarter, more powerful AI ,” NVIDIA, Feb. 12, 2025.
+Ibid.
+Jonathan Farrington, “ What is chain of thought prompting – AI prompt engineering ,” Silicon Dales, July 24, 2025.
+Briski, “ How scaling laws drive smarter, more powerful AI .”
+Ibid.
+“ Data centers: Computing risks and opportunities for U.S. real estate ,” S&P Global, Oct. 22, 2024; Equinix, Inc., “ Form 10-K: Annual report for fiscal year ended Dec. 31, 2023 ,” Feb. 16, 2024; Digital Realty Trust, Inc. and Digital Realty Trust, L.P., “ Form 10-K: Annual report for fiscal year ended Dec. 31, 2023 ,” Feb. 23, 2024.
+Shubham Sharma, “ Going beyond GPUs: The evolving landscape of AI chips and accelerators ,” VentureBeat, Sept. 26, 2024.
+Deloitte Consulting LLP performed an analysis of the data center market, including a rough bill of materials for the various components, and market sizes. This analysis is due to be published in December 2025.
+Eric Reed, “ History of NVIDIA: Company and stock ,” SmartAsset, May 22, 2024.
+Rajat Raina, Anand Madhavan, and Andrew Y. Ng, “ Large-scale deep unsupervised learning using graphics processors ,” In Proceedings of the 26th Annual International Conference on Machine Learning, 2009.
+NVDIA, “ NVIDIA delivers massive performance leap for deep learning, HPC applications with NVIDIA Tesla P100 accelerators ,” press release, April 5, 2016.
+Hannah Wilson, “ NVIDIA facts and statistics (2025) ,” Investing.com, Aug. 28, 2025.
+Hannah Wilson, “ NVIDIA facts and statistics (2025) ,” Investing.com, Aug. 28, 2025.
+Top 500, “ June 2025 ,” June 2025.
+Ray Wang, “ NVIDIA’s new Rubin CPX targets future of large-scale inference ,” Futurum, Sept. 18, 2025.
+In 2025, Deloitte Consulting LLP performed an analysis of the data center market, including a rough bill of materials for the various components, and market sizes. This analysis is due to be published in December 2025.
+Omdia, “ New Omdia forecast: AI data center chip market to hit $286bn, growth likely peaking as custom ASICs gain ground ,” Aug. 28, 2025.
+Anthony Di Pizio, “ Jensen Huang predicts annual data center spending will hit $1 trillion by 2028. Here’s the ultimate semiconductor ETF to buy right now. ” The Motley Fool, May 1, 2025.
+Dave Lawler, “ Exclusive: ‘Massive ten-year’ AI boom is just starting, AMD CEO says ,” Axios , Sept. 17, 2025.
+Paul Mah, “ AI training is going to multiple data centers ,” CDO Trends, Sept. 11, 2024.
+Chris Thomas, Akash Tayal, Duncan Stewart, Diana Kearns-Manolatos, and Iram Parveen, “ Is your organization’s infrastructure ready for the new hybrid cloud? ” Deloitte Insights , June 30, 2025.
+Mike Robuck, “ Google strikes deals for flexible AI data centre power use ,” Mobile World Live, Aug. 5, 2025.
+Tyler H. Norris, Tim Profeta, Dalia Patino-Echeverri, and Adam Cowie-Haskell, “ Rethinking load growth: Assessing the potential for integration of large flexible loads in US power systems ,” Nicholas Institute for Energy, Environment & Sustainability, Duke University, February 2025.
+Anton Shilov, “ TSMC could charge up to $45,000 for 1.6nm wafers — rumors allege a 50% increase in pricing over prior-gen wafers ,” Tom’s Hardware, June 4, 2025.
+Francisco Jeronimo, “ The rise of gen AI smartphones ,” IDC, July 5, 2024.
+Dan Shipper, “ Vibe check: OpenAI drops two new open-weight models ,” Every Media, Aug. 5, 2025.
+Cyfuture Cloud, “ NVIDIA DGX H100 price 2025: Cost, specs, and market insights ,” Cyfuture Cloud Knowledgebase, accessed October 2025.
+Tae Kim, “ NVIDIA’s multi-million dollar AI servers are getting more expensive ,” Barron’s, Aug. 28, 2025.
+Skye Jacobs, “ NVIDIA Blackwell server cabinets could cost somewhere around $2 to $3 million each ,” TechSpot, July 28, 2024.
+Qualcomm, “ Flight RB5 5G platform ,” accessed Sept. 19, 2025.
+Ali Kani, “ NVIDIA DRIVE Thor strikes AI performance balance, uniting AV and cockpit on a single computer ,” NVIDIA, Sept. 20, 2022.
+There are a variety of suppliers for chips for driving assistance, but as one example, NVIDIA’s auto segment is at a US$2 billion run rate as of August 2025: Pras Subramanian, “ NVIDIA's auto business surges 69% from self-driving tech ,” Yahoo Finance, Aug. 25, 2025.
+Karthik Ramachandran, et al, “AI for industrial robotics, humanoid robots, and drones,” Deloitte Insights.
+Jameel Rogers, “ AI chips for data center and cloud to exceed US$400 billion by 2030 ,” IDTechEx, May 8, 2025.
+COPY
+ENDNOTE
+COPY
+Acknowledgments
+The authors would like to thank Brandon Kulik , Amy Scimeca , Karan Aggarwal , Kate Hardin , Diana Kearns-Manolatos , Mike Luk , Baris Sarer , Jason Chmiel , Dan Hamling , Jan Nicholas , Jordan Bish , Nitin Mittal , Rohit Tandon , Nicholas Merizzi , and Dan Littmann for their contributions to this article.
+Cover image by: Jaime Austin ; Adobe Stock
+Copyright
+Copyright © 2026 Deloitte Development LLC. All rights reserved.
+Member of Deloitte Touche Tohmatsu Limited
+related content
+Is your organization’s infrastructure ready for the new hybrid cloud?
+Are costs and modernization needs hindering AI's potential? Explore five insights to help leaders balance AI infrastructure and hybrid cloud solutions.
+Article
+&bull;
+21-min read
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":31477,"paragraph_count":117,"sentence_count":225,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Driven by concerns around cost, intellectual property ownership, sovereignty, resilience, and customization, enterprises can spend US$300,000 to US$500,000 on a box with about eight GPUs (and HBM and CPUs) that can perform a certain level of AI training and inference.41 Or they can spend US$3 millio... / query=AI server product launch enterprise inference / intent=find_original_source / path=ai_hardware_original
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Skip to main content Why AI’s next phase will likely demand more computational power, not less The world is moving from just training gen AI models to using them at scale.
+
+3. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   Many believe this means more consumer edge computing and less data center computing.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Neither is likely to happen in 2026.
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Article &bull; 11-min read &bull; 18 November 2025 &bull; Deloitte Center for Technology Media & Telecommunications Share linkedin twitter facebook Print Share Share this article linkedin twitter facebook Or copy link Copy Download () It’s widely expected that generative AI computing will shift in 2026, from mainly being about training models on very large amounts of data to using those models to help think about and answer enterprise and consumer questions, prompts, and tasks—a process known as “inference.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   ” Many speculate that such a shift in computational workload—or “compute”—would mean that the AI ecosystem would need special chips optimized for inference only, and that these (possibly much cheaper) chips might be deployed on edge devices outside of the massive data centers where most AI chips are currently located and might even mean we need fewer, smaller, or at least different data centers, and spend less.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Google, Meta, Amazon, Deloitte
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 企业服务
+- roles: CIO / IT 负责人, 销售 / 客服
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: $300, 000, $500, 41, $3 m, 2026, 11, 18
+- quotes: inference. / state-of-the-art / pre-training, / post-training / supercomputers,
+
+## evidence_seed
+
+- company_actions: Skip to main content Why AI’s next phase will likely demand more computational power, not less The world is moving from just training gen AI models to using them at scale. / Neither is likely to happen in 2026. / ” Many speculate that such a shift in computational workload—or “compute”—would mean that the AI ecosystem would need special chips optimized for inference only, and that these (possibly much cheaper) chips might be deployed on edge devices outside of the massive data centers where most AI chips are currently located and might even mean we need fewer, smaller, or at least different data centers, and spend less.
+- case_details: 暂无公开信息
+- workflow_changes: Article &bull; 11-min read &bull; 18 November 2025 &bull; Deloitte Center for Technology Media & Telecommunications Share linkedin twitter facebook Print Share Share this article linkedin twitter facebook Or copy link Copy Download () It’s widely expected that generative AI computing will shift in 2026, from mainly being about training models on very large amounts of data to using those models to help think about and answer enterprise and consumer questions, prompts, and tasks—a process known as “inference.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: AI hardware product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: ai_hardware_lens,commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Driven by concerns around cost, intellectual property ownership, sovereignty, resilience, and customization, enterprises can spend US$300,000 to US$500,000 on a box with about eight GPUs (and HBM and CPUs) that can perform a certain level of AI training and inference.41 Or they can spend US$3 millio... / query=AI server product launch enterprise inference / intent=find_original_source / path=ai_hardware_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

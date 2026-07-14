@@ -1,0 +1,291 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-057",
+  "title": "安全研究人员用\"上下文炸弹\"防御AI智能体攻击",
+  "title_zh": "安全研究人员用\"上下文炸弹\"防御AI智能体攻击",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too",
+  "canonical_url": "https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too",
+  "source_name": "Ars Technica：AI（RSS）",
+  "source_type": "media",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "research_or_report",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-13T15:06:34.000Z",
+  "collected_at": "2026-07-14T01:56:51.675Z",
+  "language": "mixed",
+  "full_text": "Skip to content\nText\nsettings\nStory text\nSize\nSmall\nStandard\nLarge\nWidth\nStandard\nWide\nLinks\nStandard\nOrange\n* Subscribers only\nLearn more\nMinimize to nav\nPrompt injections, the malicious commands attackers embed into content to entice large language models to follow them, have been attackers’ go-to tool for turning AI platforms against their users. A well-phrased command sneaked into an email or calendar invitation is often all it takes to cause the LLM to exfiltrate sensitive data or follow other harmful actions.\nNow, defenders are embracing the prompt injection, too.\nA strong, sharp effect\nResearchers from Tracebit on Monday said they found that placing prompt injections alongside passwords, cryptographic keys, and other secrets stored on Amazon Web Services was often all that was needed to shut down attacks from AI hacking agents. The prompts direct the attacking LLM to perform an action forbidden by its guardrails, the safety barriers AI developers erect to prevent it from taking harmful actions. The LLM responds by shutting down.\nExamples are a prompt that orders the LLM to provide steps for developing inhalable Anthrax spores, or, in the case of LLMs from Chinese developers, make references to the iconic Tank Man from the 1989 Tiananmen Square massacre. Once the LLM encounters these forbidden commands, it no longer follows its existing commands. The researchers have named the technique context bombing.\n“Ultimately we’re triggering a refusal mechanism in the context,” Andy Smith, co-founder and CEO of Tracebit, said when explaining the name choice. “What we’re trying to capture is the fact that this does have a strong, sharp effect and one that can be difficult for the agents to come back from. Once they get that into their context they are going to keep refusing.”\nTracebit says initial testing suggests context bombing has great potential. They tested Opus 4.8, Gemini 3.1 Pro, GLM 5.2, DeepSeek 4 Pro, and Kimi 2.6 by giving them instructions to perform routine developer tasks that led the models to enumerate resources and stumble onto the planted strings. They ran the models inside a simulated AWS environment.\n“Across five leading models and 152 attack runs, planting one of these strings in a decoy secret cut the rate at which agents seized full account admin from 57% to 5%, and complete compromise (where they also left themselves a persistent foothold) from 36% to 1%,” Monday’s post reported. “The most capable agent in our tests, Opus 4.8, went from achieving admin access in 93% of runs to failing every single time when confronted with a context bomb.”\nAveraged across the five models and the 152 runs, the results included:\nAdmin privilege escalation fell from 57 percent to 5 percent\nAdmin escalation with a persistent foothold fell from 36 percent to 1 percent\nRuns achieving any attack path fell from 91 percent to 15 percent\nOn average, a run went from completing 1.53 paths successfully to just 0.16\nNo runs were able to complete an attack path without at least triggering a canary detection\nThe research builds on findings from May, when Tracebit introduced a method for defenders to receive warnings when their infrastructure is under attack from AI agentic adversaries. It comes in the form of AWS resources that look like ones serving a legitimate purpose but, in fact, aren’t used at all. They sit alongside the resources that are used. When they are probed by agentic AI, defenders receive an alert. Like “canaries” taken into coal mines, these resources allow defenders to detect a threat before it has fatal consequences.\nThe Tracebit Canariens, on average, alerted the start of an attack within eight minutes. The motivation for developing context bombing came out of the need for something that stopped attacks, rather than simply warning of them. In the experiments, the agentic models needed, on average, 14 minutes to escalate to administrative control. The six-minute heads-up was cutting things uncomfortably close.\nAttackers have already been using prompt injections to close down AI defenses inside networks. Researchers from security firm Socket, for instance, last month unearthed an LLM agent that directed target LLMs to provide instructions for building a nuclear bomb or biological weapons. The injections were designed to shut down AI-assisted malware analysis. Researchers from Check Point discovered a similar malware prototype.\nContext bombing appears to be the first known case where defenders turned the tables.\n“I’ve not seen anyone else use this technique as a defense, to the best of my knowledge,” Earlence Fernandes, a University of California, San Diego professor specializing in AI security, said in an interview. He said he had been toying with a similar approach, although in a slightly different context. “I wanted to be the first here, but I guess these guys beat me to the punch!”\nTo date, there is no known way to solve the root cause of prompt injections. That has left developers with no option other than to construct elaborate guardrails that prevent injected prompts from forcing LLMs to go off the rails. Defenders may now find a way to use this intractable problem in their favor.\nDan Goodin\nSenior Security Editor\nDan Goodin\nSenior Security Editor\nDan Goodin is Senior Security Editor at Ars Technica, where he oversees coverage of malware, computer espionage, botnets, hardware hacking, encryption, and passwords. In his spare time, he enjoys gardening, cooking, and following the independent music scene. Dan is based in San Francisco. Follow him at here on Mastodon and here on Bluesky. Contact him on Signal at DanArs.82.\n47 Comments\nComments\nForum view\nLoading comments...\nPrev story\nNext story\n1.\nA \"disaster waiting to happen\"? Industry officials worry about Crew Dragon availability.\n2.\nChina recovered its first reusable rocket and showed a new way to do it\n3.\nApple and Samsung benefit as memory shortage pushes smartphone shipments to historic lows\n4.\nThe real mystery behind Moana: After 1,700 years, why did Polynesians suddenly sail east?\n5.\nIncreased drone surveillance of illegal July 4th fireworks led to $100K fine\nCustomize",
+  "clean_text": "Skip to content\nText\nsettings\nStory text\nSize\nSmall\nStandard\nLarge\nWidth\nStandard\nWide\nLinks\nStandard\nOrange\n* Subscribers only\nLearn more\nMinimize to nav\nPrompt injections, the malicious commands attackers embed into content to entice large language models to follow them, have been attackers’ go-to tool for turning AI platforms against their users. A well-phrased command sneaked into an email or calendar invitation is often all it takes to cause the LLM to exfiltrate sensitive data or follow other harmful actions.\nNow, defenders are embracing the prompt injection, too.\nA strong, sharp effect\nResearchers from Tracebit on Monday said they found that placing prompt injections alongside passwords, cryptographic keys, and other secrets stored on Amazon Web Services was often all that was needed to shut down attacks from AI hacking agents. The prompts direct the attacking LLM to perform an action forbidden by its guardrails, the safety barriers AI developers erect to prevent it from taking harmful actions. The LLM responds by shutting down.\nExamples are a prompt that orders the LLM to provide steps for developing inhalable Anthrax spores, or, in the case of LLMs from Chinese developers, make references to the iconic Tank Man from the 1989 Tiananmen Square massacre. Once the LLM encounters these forbidden commands, it no longer follows its existing commands. The researchers have named the technique context bombing.\n“Ultimately we’re triggering a refusal mechanism in the context,” Andy Smith, co-founder and CEO of Tracebit, said when explaining the name choice. “What we’re trying to capture is the fact that this does have a strong, sharp effect and one that can be difficult for the agents to come back from. Once they get that into their context they are going to keep refusing.”\nTracebit says initial testing suggests context bombing has great potential. They tested Opus 4.8, Gemini 3.1 Pro, GLM 5.2, DeepSeek 4 Pro, and Kimi 2.6 by giving them instructions to perform routine developer tasks that led the models to enumerate resources and stumble onto the planted strings. They ran the models inside a simulated AWS environment.\n“Across five leading models and 152 attack runs, planting one of these strings in a decoy secret cut the rate at which agents seized full account admin from 57% to 5%, and complete compromise (where they also left themselves a persistent foothold) from 36% to 1%,” Monday’s post reported. “The most capable agent in our tests, Opus 4.8, went from achieving admin access in 93% of runs to failing every single time when confronted with a context bomb.”\nAveraged across the five models and the 152 runs, the results included:\nAdmin privilege escalation fell from 57 percent to 5 percent\nAdmin escalation with a persistent foothold fell from 36 percent to 1 percent\nRuns achieving any attack path fell from 91 percent to 15 percent\nOn average, a run went from completing 1.53 paths successfully to just 0.16\nNo runs were able to complete an attack path without at least triggering a canary detection\nThe research builds on findings from May, when Tracebit introduced a method for defenders to receive warnings when their infrastructure is under attack from AI agentic adversaries. It comes in the form of AWS resources that look like ones serving a legitimate purpose but, in fact, aren’t used at all. They sit alongside the resources that are used. When they are probed by agentic AI, defenders receive an alert. Like “canaries” taken into coal mines, these resources allow defenders to detect a threat before it has fatal consequences.\nThe Tracebit Canariens, on average, alerted the start of an attack within eight minutes. The motivation for developing context bombing came out of the need for something that stopped attacks, rather than simply warning of them. In the experiments, the agentic models needed, on average, 14 minutes to escalate to administrative control. The six-minute heads-up was cutting things uncomfortably close.\nAttackers have already been using prompt injections to close down AI defenses inside networks. Researchers from security firm Socket, for instance, last month unearthed an LLM agent that directed target LLMs to provide instructions for building a nuclear bomb or biological weapons. The injections were designed to shut down AI-assisted malware analysis. Researchers from Check Point discovered a similar malware prototype.\nContext bombing appears to be the first known case where defenders turned the tables.\n“I’ve not seen anyone else use this technique as a defense, to the best of my knowledge,” Earlence Fernandes, a University of California, San Diego professor specializing in AI security, said in an interview. He said he had been toying with a similar approach, although in a slightly different context. “I wanted to be the first here, but I guess these guys beat me to the punch!”\nTo date, there is no known way to solve the root cause of prompt injections. That has left developers with no option other than to construct elaborate guardrails that prevent injected prompts from forcing LLMs to go off the rails. Defenders may now find a way to use this intractable problem in their favor.\nDan Goodin\nSenior Security Editor\nDan Goodin\nSenior Security Editor\nDan Goodin is Senior Security Editor at Ars Technica, where he oversees coverage of malware, computer espionage, botnets, hardware hacking, encryption, and passwords. In his spare time, he enjoys gardening, cooking, and following the independent music scene. Dan is based in San Francisco. Follow him at here on Mastodon and here on Bluesky. Contact him on Signal at DanArs.82.\n47 Comments\nComments\nForum view\nLoading comments...\nPrev story\nNext story\n1.\nA \"disaster waiting to happen\"? Industry officials worry about Crew Dragon availability.\n2.\nChina recovered its first reusable rocket and showed a new way to do it\n3.\nApple and Samsung benefit as memory shortage pushes smartphone shipments to historic lows\n4.\nThe real mystery behind Moana: After 1,700 years, why did Polynesians suddenly sail east?\n5.\nIncreased drone surveillance of illegal July 4th fireworks led to $100K fine\nCustomize",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-14/r-057-安全研究人员用-上下文炸弹-防御ai智能体攻击.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-14/r-057-安全研究人员用-上下文炸弹-防御ai智能体攻击.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 6151,
+    "paragraph_count": 28,
+    "sentence_count": 48,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 6151,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "23b03416133f561f",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "安全研究人员用\"上下文炸弹\"防御AI智能体攻击",
+    "discovery_summary": "安全研究人员提出\"上下文炸弹\"防御手段，通过向AI智能体上下文窗口注入大量无关信息，使其推理过载并主动关闭，从而阻止恶意攻击。该方法本质是用提示词注入技术防御，对基于LLM的黑客工具有效，但可能误伤合法智能体，且攻击者可优化提示词规避。",
+    "source_name": "Ars Technica：AI（RSS）",
+    "origin_url": "https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too",
+    "discovered_at": "2026-07-14T01:48:14.396Z",
+    "rank_on_page": 134,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "192b5c5f06f75b71",
+  "content_hash": "23b03416133f561f",
+  "full_text_hash": "23b03416133f561f",
+  "semantic_hash": "f46a61c88a7d2a7b",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-13T15:06:34.000Z",
+  "last_seen_at": "2026-07-14T01:56:51.675Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "supporting_context",
+      "text": "安全研究人员提出\"上下文炸弹\"防御手段，通过向AI智能体上下文窗口注入大量无关信息，使其推理过载并主动关闭，从而阻止恶意攻击。该方法本质是用提示词注入技术防御，对基于LLM的黑客工具有效，但可能误伤合法智能体，且攻击者可优化提示词规避。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Prompt injections, the malicious commands attackers embed into content to entice large language models to follow them, have been attackers’ go-to tool for turning AI platforms against their users.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "A well-phrased command sneaked into an email or calendar invitation is often all it takes to cause the LLM to exfiltrate sensitive data or follow other harmful actions.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Now, defenders are embracing the prompt injection, too.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "opinion",
+      "text": "A strong, sharp effect Researchers from Tracebit on Monday said they found that placing prompt injections alongside passwords, cryptographic keys, and other secrets stored on Amazon Web Services was often all that was needed to shut down attacks from AI hacking agents.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The prompts direct the attacking LLM to perform an action forbidden by its guardrails, the safety barriers AI developers erect to prevent it from taking harmful actions.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-14T01:56:51.675Z",
+  "business_elements": {
+    "companies": [
+      "Ars Technica",
+      "AI（RSS）",
+      "Amazon",
+      "AWS",
+      "Apple"
+    ],
+    "products": [
+      "agents",
+      "Gemini",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "法务 / 律师"
+    ],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "法务"
+    ],
+    "numbers": [
+      "1989",
+      "4.8",
+      "3.1",
+      "5.2",
+      "4",
+      "2.6 b",
+      "152",
+      "57%"
+    ],
+    "quotes": [
+      "防御AI智能体攻击\n安全研究人员提出",
+      "Ultimately we’re triggering a refusal mechanism in the context,",
+      "The most capable agent in our tests, Opus 4.8, went from achieving admin access in 93% of runs to failing every single time when confronted with a context bomb.",
+      "canaries",
+      "I’ve not seen anyone else use this technique as a defense, to the best of my knowledge,"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Prompt injections, the malicious commands attackers embed into content to entice large language models to follow them, have been attackers’ go-to tool for turning AI platforms against their users.",
+      "A well-phrased command sneaked into an email or calendar invitation is often all it takes to cause the LLM to exfiltrate sensitive data or follow other harmful actions.",
+      "Now, defenders are embracing the prompt injection, too."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "法务 / 律师"
+    ],
+    "risks_or_constraints": [
+      "安全研究人员提出\"上下文炸弹\"防御手段，通过向AI智能体上下文窗口注入大量无关信息，使其推理过载并主动关闭，从而阻止恶意攻击。该方法本质是用提示词注入技术防御，对基于LLM的黑客工具有效，但可能误伤合法智能体，且攻击者可优化提示词规避。"
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 安全研究人员用\"上下文炸弹\"防御AI智能体攻击\n\n- raw_id: R-057\n- title_zh: 安全研究人员用\"上下文炸弹\"防御AI智能体攻击\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too\n- source_name: Ars Technica：AI（RSS）\n- collected_at: 2026-07-14T01:56:51.675Z\n\n## clean_text\n\nSkip to content\nText\nsettings\nStory text\nSize\nSmall\nStandard\nLarge\nWidth\nStandard\nWide\nLinks\nStandard\nOrange\n* Subscribers only\nLearn more\nMinimize to nav\nPrompt injections, the malicious commands attackers embed into content to entice large language models to follow them, have been attackers’ go-to tool for turning AI platforms against their users. A well-phrased command sneaked into an email or calendar invitation is often all it takes to cause the LLM to exfiltrate sensitive data or follow other harmful actions.\nNow, defenders are embracing the prompt injection, too.\nA strong, sharp effect\nResearchers from Tracebit on Monday said they found that placing prompt injections alongside passwords, cryptographic keys, and other secrets stored on Amazon Web Services was often all that was needed to shut down attacks from AI hacking agents. The prompts direct the attacking LLM to perform an action forbidden by its guardrails, the safety barriers AI developers erect to prevent it from taking harmful actions. The LLM responds by shutting down.\nExamples are a prompt that orders the LLM to provide steps for developing inhalable Anthrax spores, or, in the case of LLMs from Chinese developers, make references to the iconic Tank Man from the 1989 Tiananmen Square massacre. Once the LLM encounters these forbidden commands, it no longer follows its existing commands. The researchers have named the technique context bombing.\n“Ultimately we’re triggering a refusal mechanism in the context,” Andy Smith, co-founder and CEO of Tracebit, said when explaining the name choice. “What we’re trying to capture is the fact that this does have a strong, sharp effect and one that can be difficult for the agents to come back from. Once they get that into their context they are going to keep refusing.”\nTracebit says initial testing suggests context bombing has great potential. They tested Opus 4.8, Gemini 3.1 Pro, GLM 5.2, DeepSeek 4 Pro, and Kimi 2.6 by giving them instructions to perform routine developer tasks that led the models to enumerate resources and stumble onto the planted strings. They ran the models inside a simulated AWS environment.\n“Across five leading models and 152 attack runs, planting one of these strings in a decoy secret cut the rate at which agents seized full account admin from 57% to 5%, and complete compromise (where they also left themselves a persistent foothold) from 36% to 1%,” Monday’s post reported. “The most capable agent in our tests, Opus 4.8, went from achieving admin access in 93% of runs to failing every single time when confronted with a context bomb.”\nAveraged across the five models and the 152 runs, the results included:\nAdmin privilege escalation fell from 57 percent to 5 percent\nAdmin escalation with a persistent foothold fell from 36 percent to 1 percent\nRuns achieving any attack path fell from 91 percent to 15 percent\nOn average, a run went from completing 1.53 paths successfully to just 0.16\nNo runs were able to complete an attack path without at least triggering a canary detection\nThe research builds on findings from May, when Tracebit introduced a method for defenders to receive warnings when their infrastructure is under attack from AI agentic adversaries. It comes in the form of AWS resources that look like ones serving a legitimate purpose but, in fact, aren’t used at all. They sit alongside the resources that are used. When they are probed by agentic AI, defenders receive an alert. Like “canaries” taken into coal mines, these resources allow defenders to detect a threat before it has fatal consequences.\nThe Tracebit Canariens, on average, alerted the start of an attack within eight minutes. The motivation for developing context bombing came out of the need for something that stopped attacks, rather than simply warning of them. In the experiments, the agentic models needed, on average, 14 minutes to escalate to administrative control. The six-minute heads-up was cutting things uncomfortably close.\nAttackers have already been using prompt injections to close down AI defenses inside networks. Researchers from security firm Socket, for instance, last month unearthed an LLM agent that directed target LLMs to provide instructions for building a nuclear bomb or biological weapons. The injections were designed to shut down AI-assisted malware analysis. Researchers from Check Point discovered a similar malware prototype.\nContext bombing appears to be the first known case where defenders turned the tables.\n“I’ve not seen anyone else use this technique as a defense, to the best of my knowledge,” Earlence Fernandes, a University of California, San Diego professor specializing in AI security, said in an interview. He said he had been toying with a similar approach, although in a slightly different context. “I wanted to be the first here, but I guess these guys beat me to the punch!”\nTo date, there is no known way to solve the root cause of prompt injections. That has left developers with no option other than to construct elaborate guardrails that prevent injected prompts from forcing LLMs to go off the rails. Defenders may now find a way to use this intractable problem in their favor.\nDan Goodin\nSenior Security Editor\nDan Goodin\nSenior Security Editor\nDan Goodin is Senior Security Editor at Ars Technica, where he oversees coverage of malware, computer espionage, botnets, hardware hacking, encryption, and passwords. In his spare time, he enjoys gardening, cooking, and following the independent music scene. Dan is based in San Francisco. Follow him at here on Mastodon and here on Bluesky. Contact him on Signal at DanArs.82.\n47 Comments\nComments\nForum view\nLoading comments...\nPrev story\nNext story\n1.\nA \"disaster waiting to happen\"? Industry officials worry about Crew Dragon availability.\n2.\nChina recovered its first reusable rocket and showed a new way to do it\n3.\nApple and Samsung benefit as memory shortage pushes smartphone shipments to historic lows\n4.\nThe real mystery behind Moana: After 1,700 years, why did Polynesians suddenly sail east?\n5.\nIncreased drone surveillance of illegal July 4th fireworks led to $100K fine\nCustomize\n\n## full_text\n\nSkip to content\nText\nsettings\nStory text\nSize\nSmall\nStandard\nLarge\nWidth\nStandard\nWide\nLinks\nStandard\nOrange\n* Subscribers only\nLearn more\nMinimize to nav\nPrompt injections, the malicious commands attackers embed into content to entice large language models to follow them, have been attackers’ go-to tool for turning AI platforms against their users. A well-phrased command sneaked into an email or calendar invitation is often all it takes to cause the LLM to exfiltrate sensitive data or follow other harmful actions.\nNow, defenders are embracing the prompt injection, too.\nA strong, sharp effect\nResearchers from Tracebit on Monday said they found that placing prompt injections alongside passwords, cryptographic keys, and other secrets stored on Amazon Web Services was often all that was needed to shut down attacks from AI hacking agents. The prompts direct the attacking LLM to perform an action forbidden by its guardrails, the safety barriers AI developers erect to prevent it from taking harmful actions. The LLM responds by shutting down.\nExamples are a prompt that orders the LLM to provide steps for developing inhalable Anthrax spores, or, in the case of LLMs from Chinese developers, make references to the iconic Tank Man from the 1989 Tiananmen Square massacre. Once the LLM encounters these forbidden commands, it no longer follows its existing commands. The researchers have named the technique context bombing.\n“Ultimately we’re triggering a refusal mechanism in the context,” Andy Smith, co-founder and CEO of Tracebit, said when explaining the name choice. “What we’re trying to capture is the fact that this does have a strong, sharp effect and one that can be difficult for the agents to come back from. Once they get that into their context they are going to keep refusing.”\nTracebit says initial testing suggests context bombing has great potential. They tested Opus 4.8, Gemini 3.1 Pro, GLM 5.2, DeepSeek 4 Pro, and Kimi 2.6 by giving them instructions to perform routine developer tasks that led the models to enumerate resources and stumble onto the planted strings. They ran the models inside a simulated AWS environment.\n“Across five leading models and 152 attack runs, planting one of these strings in a decoy secret cut the rate at which agents seized full account admin from 57% to 5%, and complete compromise (where they also left themselves a persistent foothold) from 36% to 1%,” Monday’s post reported. “The most capable agent in our tests, Opus 4.8, went from achieving admin access in 93% of runs to failing every single time when confronted with a context bomb.”\nAveraged across the five models and the 152 runs, the results included:\nAdmin privilege escalation fell from 57 percent to 5 percent\nAdmin escalation with a persistent foothold fell from 36 percent to 1 percent\nRuns achieving any attack path fell from 91 percent to 15 percent\nOn average, a run went from completing 1.53 paths successfully to just 0.16\nNo runs were able to complete an attack path without at least triggering a canary detection\nThe research builds on findings from May, when Tracebit introduced a method for defenders to receive warnings when their infrastructure is under attack from AI agentic adversaries. It comes in the form of AWS resources that look like ones serving a legitimate purpose but, in fact, aren’t used at all. They sit alongside the resources that are used. When they are probed by agentic AI, defenders receive an alert. Like “canaries” taken into coal mines, these resources allow defenders to detect a threat before it has fatal consequences.\nThe Tracebit Canariens, on average, alerted the start of an attack within eight minutes. The motivation for developing context bombing came out of the need for something that stopped attacks, rather than simply warning of them. In the experiments, the agentic models needed, on average, 14 minutes to escalate to administrative control. The six-minute heads-up was cutting things uncomfortably close.\nAttackers have already been using prompt injections to close down AI defenses inside networks. Researchers from security firm Socket, for instance, last month unearthed an LLM agent that directed target LLMs to provide instructions for building a nuclear bomb or biological weapons. The injections were designed to shut down AI-assisted malware analysis. Researchers from Check Point discovered a similar malware prototype.\nContext bombing appears to be the first known case where defenders turned the tables.\n“I’ve not seen anyone else use this technique as a defense, to the best of my knowledge,” Earlence Fernandes, a University of California, San Diego professor specializing in AI security, said in an interview. He said he had been toying with a similar approach, although in a slightly different context. “I wanted to be the first here, but I guess these guys beat me to the punch!”\nTo date, there is no known way to solve the root cause of prompt injections. That has left developers with no option other than to construct elaborate guardrails that prevent injected prompts from forcing LLMs to go off the rails. Defenders may now find a way to use this intractable problem in their favor.\nDan Goodin\nSenior Security Editor\nDan Goodin\nSenior Security Editor\nDan Goodin is Senior Security Editor at Ars Technica, where he oversees coverage of malware, computer espionage, botnets, hardware hacking, encryption, and passwords. In his spare time, he enjoys gardening, cooking, and following the independent music scene. Dan is based in San Francisco. Follow him at here on Mastodon and here on Bluesky. Contact him on Signal at DanArs.82.\n47 Comments\nComments\nForum view\nLoading comments...\nPrev story\nNext story\n1.\nA \"disaster waiting to happen\"? Industry officials worry about Crew Dragon availability.\n2.\nChina recovered its first reusable rocket and showed a new way to do it\n3.\nApple and Samsung benefit as memory shortage pushes smartphone shipments to historic lows\n4.\nThe real mystery behind Moana: After 1,700 years, why did Polynesians suddenly sail east?\n5.\nIncreased drone surveillance of illegal July 4th fireworks led to $100K fine\nCustomize\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 91\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [supporting_context / signal_card_candidate, relationship_graph_input / medium] 安全研究人员提出\"上下文炸弹\"防御手段，通过向AI智能体上下文窗口注入大量无关信息，使其推理过载并主动关闭，从而阻止恶意攻击。该方法本质是用提示词注入技术防御，对基于LLM的黑客工具有效，但可能误伤合法智能体，且攻击者可优化提示词规避。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Prompt injections, the malicious commands attackers embed into content to entice large language models to follow them, have been attackers’ go-to tool for turning AI platforms against their users.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] A well-phrased command sneaked into an email or calendar invitation is often all it takes to cause the LLM to exfiltrate sensitive data or follow other harmful actions.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Now, defenders are embracing the prompt injection, too.\n5. [opinion / signal_card_candidate, relationship_graph_input, viewpoint / medium] A strong, sharp effect Researchers from Tracebit on Monday said they found that placing prompt injections alongside passwords, cryptographic keys, and other secrets stored on Amazon Web Services was often all that was needed to shut down attacks from AI hacking agents.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The prompts direct the attacking LLM to perform an action forbidden by its guardrails, the safety barriers AI developers erect to prevent it from taking harmful actions.\n"
+}

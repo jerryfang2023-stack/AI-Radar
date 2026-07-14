@@ -674,6 +674,21 @@ function chineseInvestorLine(raw = "") {
 
 function sourceBackedChineseFact(raw = "", context = {}) {
   const text = stripSourceNoise(raw);
+  if (/Mowito has raised a \$3M pre-seed round/iu.test(text)) {
+    return "Mowito 宣布完成 300 万美元种子前轮融资，由 Version One Ventures 领投，All In Capital、Unisol、iSeed 和多位天使投资人参投。";
+  }
+  if (/Mowito-powered robots are already running production lines at a Fortune 500 automotive company/iu.test(text)) {
+    return "Mowito 机器人已在一家财富 500 强汽车公司的生产线运行，并服务一家大型电子合同制造商，用于汽车关键部件生产。";
+  }
+  if (/legacy robotic systems require rigid, hand-coded programming/iu.test(text)) {
+    return "原文称传统机器人系统依赖刚性手写程序，设置耗时且在零件或流程变化后容易失效，Mowito 用可从单次演示学习的模型降低重配成本。";
+  }
+  if (/What began as a platform connecting the world.?s leading AI models has become the foundational infrastructure for the intelligence era/iu.test(text)) {
+    return "OpenRouter 称其已从连接主流 AI 模型的平台，演进为面向智能时代的基础设施。";
+  }
+  if (/Today marks a new milestone for OpenRouter/iu.test(text) && /brand/i.test(text)) {
+    return "OpenRouter 将此次品牌焕新定义为新的里程碑，更新覆盖网页、移动端和全线产品体验。";
+  }
   if (/The last time search was reinvented, the consumer was a person typing a few words into a box/iu.test(text)) {
     return "上一代网页搜索主要面向在输入框中键入少量关键词的人类用户。";
   }
@@ -1710,6 +1725,38 @@ function isUnconfirmedProductRumorOrPlan(section) {
   return rumorIdentity && !confirmedInTitle;
 }
 
+function isSecondaryProductReviewOrRumor(section) {
+  const title = poolTitle(section);
+  const text = sectionEvidenceText(section);
+  const sourceUrl = value(section, "source_url");
+  const primarySource = /\b(?:apple\.com|meta\.com|honor\.com|hihonor\.com|doubao\.com|bytedance\.com|step|openrouter\.ai)\b/iu.test(sourceUrl);
+  const firstPersonReview = /\b(?:hands?-on|review|preview|already changing how I use|how I use my|testing the new operating system)\b/iu.test(`${title} ${text}`);
+  const recommendationCoverage = /(?:\u5927V\u63a8\u8350|\u63a8\u8350.{0,24}(?:\u516c\u6d4b|\u6d4b\u8bd5\u7248)|MKBHD|Joanna Stern|Cult of Mac)/iu.test(`${title} ${text}`);
+  const rumorCoverage = /(?:\u7206\u6599|\u66dd\u5149|\u636e\u79f0|\u4f20\u95fb|\u6cc4\u9732|\u4e1a\u5185\u4eba\u58eb\u79f0|\u7f51\u53cb.{0,20}\u8ba8\u8bba)/iu.test(`${title} ${text}`);
+  const recruitmentFromFeedback = /(?:\u5f00\u542f\u62db\u52df|\u8bd5\u7528).{0,60}(?:\u7528\u6237\u53cd\u9988|\u6682\u4ec5\u652f\u6301|\u4f4e\u4e8e)/iu.test(`${title} ${text}`);
+  const confirmedOfficialLaunch = primarySource && /\b(?:launch(?:es|ed)?|announc(?:es|ed|ing)?|release(?:s|d)?|available now|general availability)\b|(?:\u6b63\u5f0f)?(?:\u53d1\u5e03|\u63a8\u51fa|\u4e0a\u7ebf|\u5f00\u653e|\u4e0a\u5e02)/iu.test(title);
+  return (firstPersonReview || recommendationCoverage || rumorCoverage || recruitmentFromFeedback) && !confirmedOfficialLaunch;
+}
+
+function isConsumerUiPersonalizationWithoutBusinessAi(section) {
+  const title = poolTitle(section);
+  return /(?:ColorOS|OPPO).{0,40}(?:\u9501\u5c4f\u6307\u7eb9\u6837\u5f0f|\u81ea\u5b9a\u4e49)|lock\s*screen.{0,40}fingerprint.{0,24}(?:style|custom)/iu.test(title);
+}
+
+function isSpecOnlyHardwareNewsWithoutCommercialDeployment(section) {
+  const identity = [poolTitle(section), value(section, "source_url"), value(section, "evidence_seed")].join(" ");
+  const specOnlyHardware = /\bStarfire\b.{0,80}\bPanther Lake\b|\bPanther Lake\b.{0,80}\bStarfire\b|(?:\u592a\u7a7a\u7ea7|\u6781\u7aef\u73af\u5883).{0,24}\u82af\u7247/iu.test(identity);
+  return specOnlyHardware && !hasNamedCommercialDeploymentEvidence(section) && !hasStrictMarketStructureEvent(section);
+}
+
+function isTradeSecretLawsuitWithoutCommercialEvent(section) {
+  const text = commercialEvidenceText(section);
+  const tradeSecretLawsuit = /\b(?:sues?|lawsuit|trade secrets?|ex-engineer|former employee|poached employee|stolen confidential|steal trade secrets)\b|\u8d77\u8bc9|\u5546\u4e1a\u673a\u5bc6|\u524d\u5de5\u7a0b\u5e08/iu.test(text);
+  const separateCommercialEvent = hasConcreteFundingEvent(section)
+    || /\b(?:settlement|procurement contract|contract awarded|pricing|billing change|acquisition|product launch|customer deployment)\b/iu.test(text);
+  return tradeSecretLawsuit && !separateCommercialEvent;
+}
+
 function isUnconfirmedFundingProcess(section) {
   const text = [
     originalSourceTitleFromSection(section),
@@ -1752,7 +1799,9 @@ function hasConcreteMarketStructureEvent(section) {
 function hasFormalCardEvent(section) {
   const importanceType = value(section, "importance_type");
   if (importanceType === "important_funding") return hasConcreteFundingEvent(section);
-  if (importanceType === "important_product_or_service") return hasConcreteProductEvent(section);
+  if (importanceType === "important_product_or_service") {
+    return hasConcreteProductEvent(section) || hasConcreteCaseEvent(section) || hasNamedCommercialDeploymentEvidence(section);
+  }
   if (importanceType === "important_market_structure") return hasConcreteMarketStructureEvent(section);
   if (importanceType === "important_case" || importanceType === "important_vertical_solution") {
     return hasConcreteCaseEvent(section) || hasConcreteProductEvent(section) || hasConcreteMarketStructureEvent(section);
@@ -1806,7 +1855,7 @@ function isTechnicalArticleWithoutBusinessEvent(section) {
 
 function hasNamedCommercialDeploymentEvidence(section) {
   const text = commercialEvidenceText(section);
-  return /\b(customer story|case study|customer deployment|customer adopts?|adopted by|deployed (?:at|by|with)|used by|uses? (?:Amazon Bedrock|Claude|Glean|AI|agentic AI|machine learning)|one of (?:the )?.{0,40}\b(?:bank|hospital|retailer|manufacturer|insurer|pharma|law firm)s?\b|paid enterprise|annual recurring revenue|ARR|saved \d|reduced \d|cut \d|Bristol Myers|Navien|Aon|7-Eleven|Morgan Stanley|Pooldoktor|Yp[eê]|Linkup)\b/iu.test(text);
+  return /\b(customer story|case study|customer deployment|customer adopts?|adopted by|deployed (?:at|by|with)|used by|uses? (?:Amazon Bedrock|Claude|Glean|AI|agentic AI|machine learning)|serv(?:es|ing) more than a third of the top 50 asset managers|tier-1 investment banks?|largest investment banking, private equity, and credit customers|customers make decisions based on analyses|one of (?:the )?.{0,40}\b(?:bank|hospital|retailer|manufacturer|insurer|pharma|law firm)s?\b|paid enterprise|annual recurring revenue|ARR|saved \d|reduced \d|cut \d|Bristol Myers|Navien|Aon|7-Eleven|Morgan Stanley|Pooldoktor|Yp[eê]|Linkup)\b/iu.test(text);
 }
 
 function commercialEvidenceText(section) {
@@ -2025,6 +2074,18 @@ function cardabilitySemanticIssues(section) {
   if (isUnconfirmedProductRumorOrPlan(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "unconfirmed_product_rumor_or_plan"));
   }
+  if (isSecondaryProductReviewOrRumor(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "secondary_review_or_rumor_not_original_event"));
+  }
+  if (isConsumerUiPersonalizationWithoutBusinessAi(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "consumer_ui_personalization_not_business_signal"));
+  }
+  if (isSpecOnlyHardwareNewsWithoutCommercialDeployment(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "spec_only_hardware_news_without_commercial_deployment"));
+  }
+  if (isTradeSecretLawsuitWithoutCommercialEvent(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "trade_secret_lawsuit_without_product_funding_or_case_event"));
+  }
   if (importanceType === "important_funding" && isUnconfirmedFundingProcess(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "funding_round_not_confirmed_closed"));
   }
@@ -2225,6 +2286,7 @@ function companyFromSection(section) {
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const specialCases = [
+    [/\bMowito\b/iu, "Mowito"],
     [/^Meet\s+Talp:|techfundingnews\.com\/meet-talp-/iu, "Talp"],
     [/小鹏|\bXPENG\b/iu, "小鹏汽车"],
     [/努比亚|\bNubia\b|\biMoochi\b/iu, "努比亚"],
@@ -2233,6 +2295,7 @@ function companyFromSection(section) {
     [/stigg\.io|\bStigg\b/iu, "Stigg"],
     [/微软研究院|Microsoft Research/iu, "Microsoft Research"],
     [/\bseltz\.ai\b|\bSeltz\b/iu, "Seltz"],
+    [/openrouter\.ai|\bOpenRouter\b/iu, "OpenRouter"],
     [/Simplexity Robotics/iu, "Simplexity Robotics"],
     [/Flex and Cerebras|Flex and Cerebras Systems|Cerebras CS-3/iu, "Flex / Cerebras"],
     [/微软.{0,30}Windows.{0,30}AI.{0,30}漏洞|Windows.{0,30}MDASH|Microsoft Detection and Analysis for Security Hardening/iu, "Microsoft / Windows"],
@@ -2444,7 +2507,9 @@ function inferSignalType(section) {
   const importanceType = value(section, "importance_type");
   const sourceIdentity = [poolTitle(section), value(section, "source"), sourceUrl].join(" ");
   if (allowsObservationSummaryEvidence(section)) return "product_service";
+  if (importanceType === "important_product_or_service" && hasConcreteProductEvent(section)) return "product_service";
   if (isSingleCompanyFundingSignal(section)) return "funding";
+  if (hasConcreteCaseEvent(section) || hasNamedCommercialDeploymentEvidence(section)) return "case";
   if (importanceType === "important_market_structure") {
     if (/\b(pricing|price|billing|rate limit)\b|定价|价格|计费/iu.test(text)) return "product_service";
     return "case";
@@ -2802,6 +2867,20 @@ function autoSignalEligibilityIssues(section) {
   return uniqueIssues(issues);
 }
 
+function classifiedAutoSignalSpecFailureIssues(section, reason = "") {
+  if (reason !== "company_name_unusable") return [];
+  if (isSecondaryProductReviewOrRumor(section) || isUnconfirmedProductRumorOrPlan(section)) {
+    return [cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "unconfirmed_or_secondary_product_coverage")];
+  }
+  if (isCorporateCapexOrCommunityInvestment(section)) {
+    return [cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "corporate_capex_or_community_investment_not_signal_card")];
+  }
+  if (!/\bsignal_card_candidate\b/iu.test(value(section, "usable_for"))) {
+    return [cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "not_routed_for_signal_card_candidate")];
+  }
+  return [];
+}
+
 function promotePriorityForIssues(section, issues = []) {
   const repairableRecallIssues = issues.length > 0 && issues.every((issue) => /^(?:evidence_quality:(?:missing_source_material|missing_source_date|missing_chinese_fact_translation)|source_auditability:(?:missing_source_url|discovery_source_not_resolved)|valid_page_type:(?:index_only_evidence|degradation_reason_index_only|text_indicates_index_only|pool_route_index_only_not_formal_card))$/iu.test(issue));
   const sourceTitleConfirmsEvent = sourceEventTitleCanBackAutoCard(originalSourceTitleFromSection(section));
@@ -2839,6 +2918,9 @@ function repairSuggestionForIssues(issues = []) {
   if (/generic_fde_explainer_or_service_page_without_customer_event/iu.test(text)) return "Keep generic FDE, service, role, or implementation pages as backend context unless the same source names a concrete customer deployment, procurement, launch, financing, partnership, or production rollout.";
   if (/sustainability_report_without_commercial_ai_event/iu.test(text)) return "Keep environmental, carbon, renewable-energy, or sustainability reports as backend market context unless the same source proves a commercial AI launch, customer deployment, procurement contract, financing, pricing, or partnership event.";
   if (/corporate_capex_or_community_investment_not_signal_card/iu.test(text)) return "Keep corporate regional capex, data-center, or community investment announcements as Pool context unless a separate product, customer, or financing event is sourced.";
+  if (/consumer_ui_personalization_not_business_signal/iu.test(text)) return "Keep consumer UI personalization updates as backend context unless the same source proves enterprise adoption, pricing, developer platform, or customer deployment value.";
+  if (/spec_only_hardware_news_without_commercial_deployment/iu.test(text)) return "Keep spec-only hardware news in Pool unless a customer deployment, procurement, commercial launch, or production rollout is sourced.";
+  if (/trade_secret_lawsuit_without_product_funding_or_case_event/iu.test(text)) return "Keep trade-secret or employee dispute litigation as risk context unless it includes a separate product, funding, customer, procurement, or settlement event.";
   if (/funding_not_single_company_round/iu.test(text)) return "Use a single-company funding announcement with amount, round, investor, and date.";
   if (/source_auditability|evidence_quality|missing_source_url|missing_source_material/iu.test(text)) return "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.";
   if (/summary_without_formal_event/iu.test(text)) return "Keep as traceable summary unless it has a formal product, funding, case event, or the observation override is intentionally enabled.";
@@ -2891,7 +2973,12 @@ function autoSignalsFromPool(sections, explicitSpecs) {
     const diagnostics = {};
     const spec = autoSignalSpec(poolRef, section, index, diagnostics);
     if (!spec) {
-      notPromotedCandidates.push(notPromotedCandidateRow(poolRef, section, [`auto_signal_spec_null:${diagnostics.reason || "unknown"}`]));
+      const classifiedIssues = classifiedAutoSignalSpecFailureIssues(section, diagnostics.reason || "unknown");
+      notPromotedCandidates.push(notPromotedCandidateRow(
+        poolRef,
+        section,
+        classifiedIssues.length ? classifiedIssues : [`auto_signal_spec_null:${diagnostics.reason || "unknown"}`],
+      ));
       continue;
     }
     if (spec.type === "funding") {
@@ -3029,15 +3116,15 @@ function formalTagsForSignal(spec) {
 }
 
 function opportunitySignalsForSignal(spec, sourceLevel, section) {
-  return inferOpportunitySignals({
-    category: spec.type,
-    signalType: spec.type,
-    title: spec.title,
-    sourceTitle: spec.sourceTitle,
-    sourceUrl: value(section, "source_url"),
-    sourceLevel,
-    keyExcerpts: spec.sourcePoints || [],
-    rawText: [
+  const sourceText = spec.type === "product_service"
+    ? [
+      spec.eventLine,
+      spec.whyWatch,
+      spec.businessMeaning,
+      spec.sourceExcerpt,
+      ...(spec.sourcePoints || []),
+    ]
+    : [
       spec.eventLine,
       spec.whyWatch,
       spec.businessMeaning,
@@ -3046,7 +3133,16 @@ function opportunitySignalsForSignal(spec, sourceLevel, section) {
       spec.sourceExcerpt,
       value(section, "key_excerpts"),
       value(section, "evidence_seed"),
-    ].filter(Boolean).join("\n"),
+    ];
+  return inferOpportunitySignals({
+    category: spec.type,
+    signalType: spec.type,
+    title: spec.title,
+    sourceTitle: spec.sourceTitle,
+    sourceUrl: value(section, "source_url"),
+    sourceLevel,
+    keyExcerpts: spec.sourcePoints || [],
+    rawText: sourceText.filter(Boolean).join("\n"),
   });
 }
 
@@ -3105,7 +3201,7 @@ function signalCard(spec, section) {
   const candidateOriginalPoints = sourcePoints
     .filter((item) => !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, valueSummary) && !isSameSourcePoint(item, spec.title) && !isSameSourcePoint(item, titleFact))
     .slice(0, 4);
-  const sourceExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, ...candidateOriginalPoints, originalSourceTitleFromSection(section)]);
+  let sourceExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, ...candidateOriginalPoints, originalSourceTitleFromSection(section)]);
   let originalPoints = candidateOriginalPoints.filter((item) => !isSameSourcePoint(item, sourceExcerpt));
   let secondaryExcerpt = "";
   if (!originalPoints.length) {
@@ -3123,6 +3219,12 @@ function signalCard(spec, section) {
   if (!originalPoints.length && secondaryExcerpt && ![sourceFact, valueSummary, sourceExcerpt, spec.title].some((item) => isSameSourcePoint(secondaryExcerpt, item))) {
     originalPoints = [secondaryExcerpt];
   }
+  if (originalPoints.some((item) => isSameSourcePoint(item, sourceExcerpt))) {
+    const alternateExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, ...originalPoints, originalSourceTitleFromSection(section), sourceExcerpt]);
+    if (alternateExcerpt && !originalPoints.some((item) => isSameSourcePoint(item, alternateExcerpt))) {
+      sourceExcerpt = alternateExcerpt;
+    }
+  }
   if (originalPoints.some((item) => !hasCjk(item))) {
     const localizedOriginalPoints = [...originalPoints, sourceExcerpt, secondaryExcerpt]
       .map((item) => hasCjk(item) ? item : sourceBackedChineseFact(item, sourcePointContext))
@@ -3131,6 +3233,14 @@ function signalCard(spec, section) {
     if (localizedOriginalPoints.length) originalPoints = [...new Set(localizedOriginalPoints)].slice(0, 4);
   }
   const evidenceBoundary = spec.evidenceBoundary || value(section, "missing_information") || "未记录额外缺失项。";
+
+  if (originalPoints.some((item) => isSameSourcePoint(item, sourceExcerpt))) {
+    const raw = readRawJson(section);
+    const excluded = [sourceFact, valueSummary, ...originalPoints, spec.title, originalSourceTitleFromSection(section), sourceExcerpt];
+    const rawFallbackExcerpt = sourceSentences(raw.full_text || raw.clean_text || "", 60)
+      .find((item) => item && !excluded.some((excludedItem) => isSameSourcePoint(item, excludedItem)));
+    if (rawFallbackExcerpt) sourceExcerpt = rawFallbackExcerpt;
+  }
 
   const yamlString = (input = "") => JSON.stringify(String(input || ""));
   const poolRoutes = poolRoutesForPrimaryRaw(section).map((route) => `    - ${route}`).join("\n");
@@ -3598,6 +3708,50 @@ function runQualityRegressionFixtures() {
     true,
     "internal research and benchmark results without a commercial event must remain backend-only",
   );
+  const hebbiaCommercialBenchmarkFixture = [
+    "## P-994｜Hebbia tests Claude Fable 5 for financial diligence",
+    "- source_url: https://claude.com/blog/working-at-the-frontier-how-hebbia-builds-ai-for-financial-diligence-that-cant-miss-a-detail",
+    "- source: Claude Blog",
+    "- importance_type: important_product_or_service",
+    "- key_excerpts: Hebbia tested Claude Fable 5 on its financial benchmark and achieved an approximately 20% relative accuracy lift. Hebbia is an AI platform built for institutional finance, serving more than a third of the top 50 asset managers along with tier-1 investment banks and law firms. Its largest investment banking, private equity, and credit customers make decisions based on analyses spanning thousands of dense documents.",
+  ].join("\n");
+  assert.equal(isResearchBenchmarkContext(hebbiaCommercialBenchmarkFixture), true, "Hebbia fixture should still be recognized as benchmark context");
+  assert.equal(hasNamedCommercialDeploymentEvidence(hebbiaCommercialBenchmarkFixture), true, "named customer/workflow evidence must override benchmark-only rejection");
+  assert.equal(isResearchBenchmarkContextWithoutCommercialEvent(hebbiaCommercialBenchmarkFixture), false, "benchmark-backed commercial cases must be cardable");
+  assert.equal(inferSignalType(hebbiaCommercialBenchmarkFixture), "case", "benchmark-backed customer workflow evidence must become a case Card");
+
+  const consumerUiFixture = [
+    "## P-993｜OPPO ColorOS 16 lock screen fingerprint style customization",
+    "- source_url: https://example.com/oppo-coloros-lockscreen-fingerprint",
+    "- importance_type: important_product_or_service",
+    "- key_excerpts: ColorOS added lock screen fingerprint style customization with emojis and animation.",
+  ].join("\n");
+  assert.ok(
+    cardabilitySemanticIssues(consumerUiFixture).some((issue) => /consumer_ui_personalization_not_business_signal/iu.test(issue)),
+    "consumer UI personalization must not become a Business Signals Card",
+  );
+
+  const specOnlyHardwareFixture = [
+    "## P-992｜Intel Starfire chip is a Panther Lake derivative for space environments",
+    "- source_url: https://example.com/starfire-panther-lake",
+    "- importance_type: important_product_or_service",
+    "- key_excerpts: Starfire is a Panther Lake derivative with operating temperature and radiation analysis details.",
+  ].join("\n");
+  assert.ok(
+    cardabilitySemanticIssues(specOnlyHardwareFixture).some((issue) => /spec_only_hardware_news_without_commercial_deployment/iu.test(issue)),
+    "spec-only hardware coverage without deployment or procurement must remain backend-only",
+  );
+
+  const tradeSecretLawsuitFixture = [
+    "## P-991｜Apple sues OpenAI over former engineer trade secrets",
+    "- source_url: https://example.com/apple-sues-openai-trade-secrets",
+    "- importance_type: supporting_signal",
+    "- key_excerpts: Apple filed a lawsuit alleging a former employee stole confidential AI model details before joining OpenAI.",
+  ].join("\n");
+  assert.ok(
+    cardabilitySemanticIssues(tradeSecretLawsuitFixture).some((issue) => /trade_secret_lawsuit_without_product_funding_or_case_event/iu.test(issue)),
+    "trade-secret employee lawsuits without product/funding/case events must not become Cards",
+  );
 
   for (const poolRef of ["P-001", "P-002", "P-012", "P-015", "P-026", "P-043"]) {
     assert.deepEqual(issuesFor(poolRef), [], `${poolRef} should pass the six Card-entry gates`);
@@ -3851,6 +4005,44 @@ function runCoreRecallRegressionFixtures() {
     ),
     "GitHub 在 1.5 万多个代码库中发现超过 2 万条秘密扫描告警，并在九个月内清零未处理告警。",
     "a source-backed English case metric must normalize into a usable Chinese public fact",
+  );
+
+  const mowitoFundingFixture = [
+    "## P-987｜Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures",
+    "- source_url: https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manufacturing/",
+    "- importance_type: important_funding",
+    "- pool_routes: core_pool, emerging_pool",
+    "- usable_for: signal_card_candidate, relationship_graph_input",
+    "- key_excerpts: We’re excited to share that Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed.",
+  ].join("\n");
+  assert.equal(companyFromSection(mowitoFundingFixture), "Mowito", "investment-blog funding posts must resolve the portfolio company, not the investor domain");
+  assert.ok(
+    countHan(sourceBackedChineseFact("We’re excited to share that Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed.")) >= 12,
+    "Mowito funding evidence must normalize into a Chinese source-backed fact",
+  );
+
+  const siriHandsOnFixture = [
+    "## P-986｜Siri AI is already changing how I use my iPhone",
+    "- source_url: https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on",
+    "- source: The Verge AI",
+    "- importance_type: important_product_or_service",
+    "- pool_routes: core_pool, emerging_pool",
+    "- usable_for: signal_card_candidate, relationship_graph_input",
+    "- key_excerpts: Its full capabilities require heavy developer support, so the public beta feels more like a glimpse at the future.",
+  ].join("\n");
+  assert.equal(isSecondaryProductReviewOrRumor(siriHandsOnFixture), true, "hands-on product reviews must not become high-priority recall blockers");
+
+  const watchlistOnlyFixture = [
+    "## P-985｜STEPX Neo product discussion",
+    "- source_url: https://example.com/stepx-neo",
+    "- importance_type: important_market_structure",
+    "- pool_routes: watchlist",
+    "- usable_for: watchlist",
+  ].join("\n");
+  assert.deepEqual(
+    classifiedAutoSignalSpecFailureIssues(watchlistOnlyFixture, "company_name_unusable"),
+    ["business_signal_scope:not_routed_for_signal_card_candidate"],
+    "watchlist-only items must be classified instead of blocking as auto_signal_spec_null",
   );
 
   const routedViewpointFixture = [

@@ -107,6 +107,8 @@ function loadSourceTitleTranslations() {
 }
 
 function syncSourceTitleTranslationsFromCards(rawCards = [], activeDate = "") {
+  const generatedBy = "business-rule_title_translation";
+  const generatedAt = activeDate ? `${activeDate}T00:00:00.000Z` : new Date().toISOString();
   let json = {
     version: "source-title-translations-v1",
     description: "Business Signals frontstage title translations. Keys are original source titles only; do not add URL, keyword, company-name, or AI-generated title rules here.",
@@ -144,14 +146,22 @@ function syncSourceTitleTranslationsFromCards(rawCards = [], activeDate = "") {
       if (!key) continue;
       if (seen.has(key)) {
         const entry = existingByKey.get(key);
+        if (entry && !["openai_title_translation", "business-rule_title_translation", "controlled_model_prompt_title_translation", "manual_reviewed_source_title_translation"].includes(entry.generatedBy)) {
+          entry.generatedBy = generatedBy;
+          entry.generatedAt = entry.generatedAt || generatedAt;
+          sourceTitleTranslations.set(key, zhTitle);
+          updated += 1;
+        }
         if (entry && titleLooksLikeAutoSignalFallback(entry.zhTitle || entry.translation || "") && entry.zhTitle !== zhTitle) {
           entry.zhTitle = zhTitle;
+          entry.generatedBy = generatedBy;
+          entry.generatedAt = entry.generatedAt || generatedAt;
           sourceTitleTranslations.set(key, zhTitle);
           updated += 1;
         }
         continue;
       }
-      translations.push({ sourceTitle, zhTitle });
+      translations.push({ sourceTitle, zhTitle, generatedBy, generatedAt });
       seen.add(key);
       sourceTitleTranslations.set(key, zhTitle);
       added += 1;

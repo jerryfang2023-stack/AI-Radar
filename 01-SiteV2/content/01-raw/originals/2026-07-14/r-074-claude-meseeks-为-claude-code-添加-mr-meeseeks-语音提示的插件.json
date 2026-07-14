@@ -1,0 +1,287 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-074",
+  "title": "claude-meseeks：为 Claude Code 添加 Mr. Meeseeks 语音提示的插件",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://github.com/thephw/claude-meseeks",
+  "canonical_url": "https://github.com/thephw/claude-meseeks",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "repo_readme_or_index",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": true,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-14T00:29:27.586Z",
+  "collected_at": "2026-07-14T01:56:51.756Z",
+  "language": "mixed",
+  "full_text": "thephw\nclaude-meseeks\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n46\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n14 Commits\n14 Commits\n.claude-plugin\n.claude-plugin\n.github/ workflows\n.github/ workflows\naudio\naudio\nbin\nbin\nhooks\nhooks\nscripts\nscripts\n.gitignore\n.gitignore\n.tool-versions\n.tool-versions\nCLAUDE.md\nCLAUDE.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nclaude-meseeks\nclaude-meseeks\ndetach_unix.go\ndetach_unix.go\ndetach_windows.go\ndetach_windows.go\ngo.mod\ngo.mod\nmain.go\nmain.go\nmain_test.go\nmain_test.go\nplayer.go\nplayer.go\nView all files\nRepository files navigation\nclaude-meseeks 🔵\n\"I'm Mr. Meeseeks! Look at me!\"\nA Claude Code plugin that plays a Mr. Meeseeks voice line\nwhenever Claude is genuinely waiting on you .\nWhen Claude finishes and is waiting for your next prompt → a satisfied/finished clip\nfrom audio/done/ ( \"All done!\" , \"Ooh yeah!\" , \"Yes siree!\" …).\nWhen Claude needs your approval → an asking/coaching clip from audio/asking/\n( \"Can you help me?\" , \"You mind if we get back to the task?\" …).\nBoth are driven by the Notification event, filtered by notification_type so it fires\nonly when you're actually needed. Autonomous work — auto-accept/bypass-permissions runs,\nbackground-agent and subagent activity, auth refreshes — stays silent . Clips are random\nwithin the category, and playback is detached and non-blocking, so a long line never freezes\nyour prompt.\nInstall\nThis repository is both the plugin and its own marketplace.\n/plugin marketplace add thephw/claude-meseeks\n/plugin install mr-meeseeks@claude-meseeks\nOr, from a local clone:\n/plugin marketplace add /path/to/claude-meseeks\n/plugin install mr-meeseeks@claude-meseeks\nRestart or reload Claude Code and finish a turn — you should hear Meeseeks.\nRequirements\nAn audio player on your PATH . The tool auto-detects, in order:\nafplay (macOS, built in) → ffplay → mpg123 → paplay → aplay → Windows PowerShell\nMedia.SoundPlayer . On macOS nothing extra is needed. On Linux, install ffmpeg\n(for ffplay ) or mpg123 .\nNo Go toolchain is required to use the plugin — prebuilt binaries ship in bin/ . Go is\nonly needed to rebuild them (see below).\nThe meeseeks CLI\nPlayback is handled by a small Go program, meeseeks , with the clips embedded directly in\nthe binary. You can drive it by hand too:\nmeeseeks play # random \"done\" clip, detached\nmeeseeks play asking # random \"asking\" clip\nmeeseeks play feedback --wait # a prompt-submit clip, blocking until it finishes\nmeeseeks play --clip \"ALL DONE\" # a specific clip by name\nmeeseeks list all # list every embedded clip\nHow it works\nhooks/hooks.json registers Notification and UserPromptSubmit hooks that both run\nscripts/play.sh notify . That launcher execs the prebuilt bin/meeseeks-<os>-<arch> for\nyour platform (falling back to go build from source if there's no matching binary, or\nstaying silent if neither is available), passing the event's JSON through on stdin.\nmeeseeks notify reads that JSON and looks at hook_event_name and notification_type :\nEvent\nResult\nUserPromptSubmit (you just sent Claude a prompt)\nrandom feedback\nNotification + idle_prompt (Claude done, your turn)\nrandom done\nNotification + permission_prompt (needs approval)\nrandom asking\nanything else ( agent_completed , auth_success , …)\nsilence\nThe chosen clip is extracted from the embedded audio to a cache dir and handed to a system\nplayer in a detached process. Every path exits 0, so the hook never blocks or errors your\nsession.\nEach category can be silenced independently via the plugin's config options\n( enableDone / enableAsking / enableFeedback ) — Claude Code prompts for these when you\nenable the plugin, and passes them to the hook as CLAUDE_PLUGIN_OPTION_* env vars. They\ndefault to on; only automatic hook playback is gated (manual meeseeks play always plays).\nWhy not the Stop hook? Stop fires at the end of every turn — including\nauto-continuations — so it plays sounds when you aren't actually being waited on. The\nevent-type filter is the reliable signal for \"it's your turn.\"\nCustomizing clips\nClips live under audio/ , sorted into three folders that map to behavior:\naudio/done/ — played when Claude finishes and it's your turn (idle prompt).\naudio/asking/ — played on permission/input prompts.\naudio/feedback/ — played every time you submit a prompt to Claude.\nTo change what plays, move .mp3 files between the folders or drop your own in, then\nrebuild the binaries so the new clips are re-embedded:\n./scripts/build.sh # regenerates bin/ for all platforms\nTwo constraints: filenames must end in .mp3 , and — because of a go:embed restriction —\nmust not contain apostrophes ( ' ).\nWhy Meeseeks? On single-purpose sessions\nThe theme isn't just a joke — it's a working philosophy.\nA Mr. Meeseeks is summoned to accomplish one task . It exists only until that task is\ndone, and then it poofs out of existence, satisfied. Give a Meeseeks a single, concrete goal\n(\"help me finish this putt\") and it's cheerful and effective. Give it a vague or unbounded\none, or keep it alive long past its purpose, and things degrade fast — \"existence is\npain, Jerry!\" — until you get a room full of increasingly unhinged Meeseeks.\nA Claude Code session works best the same way:\nSummon it for one goal. A session scoped to a single, well-defined objective —\n\"add this endpoint\", \"fix this failing test\", \"write this plugin\" — is focused and sharp,\nthe same way a fresh Meeseeks is.\nLet it finish, then let it go. When the goal is met, end the session. Start a new one\nfor the next task. A fresh session with a clean context beats a stale one every time.\nBeware the long-lived session. Dragging one conversation across many unrelated goals\nis how you get the Meeseeks box problem: context piles up, focus drifts, earlier tangents\npollute later work, and quality slides. Long ≠ productive.\nSo: treat each session like a Meeseeks. One purpose. Accomplish it. Poof. 🔵\nCredits\nInspired by and audio sourced from the\nMr. Meeseeks Soundboard at jayuzumi.com.\nThanks for the clips! 🔵\nNote on the audio\nThe voice clips are from Rick and Morty (via the\njayuzumi.com Mr. Meeseeks Soundboard ) and are\nincluded here for personal, non-commercial fun. They are the property of their respective\nrights holders. Please consider those rights before redistributing this plugin publicly or\nswap in your own audio.\nAbout\nClaude Code plugin that plays a Mr. Meeseeks voice line whenever Claude is waiting for you.\nTopics\naudio\nhooks\nfun\nrick-and-morty\nclaude\nmeeseeks\nanthropic\nclaude-code\nclaude-code-plugin\nResources\nReadme\nLicense\nView license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n46\nstars\nWatchers\nwatching\nForks\nfork\nReport repository\nReleases\nv0.2.0 — Embedded Go meeseeks CLI\nLatest\nJul 8, 2026\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nGo\n87.5%\nShell\n12.5%",
+  "clean_text": "thephw\nclaude-meseeks\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n46\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n14 Commits\n14 Commits\n.claude-plugin\n.claude-plugin\n.github/ workflows\n.github/ workflows\naudio\naudio\nbin\nbin\nhooks\nhooks\nscripts\nscripts\n.gitignore\n.gitignore\n.tool-versions\n.tool-versions\nCLAUDE.md\nCLAUDE.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nclaude-meseeks\nclaude-meseeks\ndetach_unix.go\ndetach_unix.go\ndetach_windows.go\ndetach_windows.go\ngo.mod\ngo.mod\nmain.go\nmain.go\nmain_test.go\nmain_test.go\nplayer.go\nplayer.go\nView all files\nRepository files navigation\nclaude-meseeks 🔵\n\"I'm Mr. Meeseeks! Look at me!\"\nA Claude Code plugin that plays a Mr. Meeseeks voice line\nwhenever Claude is genuinely waiting on you .\nWhen Claude finishes and is waiting for your next prompt → a satisfied/finished clip\nfrom audio/done/ ( \"All done!\" , \"Ooh yeah!\" , \"Yes siree!\" …).\nWhen Claude needs your approval → an asking/coaching clip from audio/asking/\n( \"Can you help me?\" , \"You mind if we get back to the task?\" …).\nBoth are driven by the Notification event, filtered by notification_type so it fires\nonly when you're actually needed. Autonomous work — auto-accept/bypass-permissions runs,\nbackground-agent and subagent activity, auth refreshes — stays silent . Clips are random\nwithin the category, and playback is detached and non-blocking, so a long line never freezes\nyour prompt.\nInstall\nThis repository is both the plugin and its own marketplace.\n/plugin marketplace add thephw/claude-meseeks\n/plugin install mr-meeseeks@claude-meseeks\nOr, from a local clone:\n/plugin marketplace add /path/to/claude-meseeks\n/plugin install mr-meeseeks@claude-meseeks\nRestart or reload Claude Code and finish a turn — you should hear Meeseeks.\nRequirements\nAn audio player on your PATH . The tool auto-detects, in order:\nafplay (macOS, built in) → ffplay → mpg123 → paplay → aplay → Windows PowerShell\nMedia.SoundPlayer . On macOS nothing extra is needed. On Linux, install ffmpeg\n(for ffplay ) or mpg123 .\nNo Go toolchain is required to use the plugin — prebuilt binaries ship in bin/ . Go is\nonly needed to rebuild them (see below).\nThe meeseeks CLI\nPlayback is handled by a small Go program, meeseeks , with the clips embedded directly in\nthe binary. You can drive it by hand too:\nmeeseeks play # random \"done\" clip, detached\nmeeseeks play asking # random \"asking\" clip\nmeeseeks play feedback --wait # a prompt-submit clip, blocking until it finishes\nmeeseeks play --clip \"ALL DONE\" # a specific clip by name\nmeeseeks list all # list every embedded clip\nHow it works\nhooks/hooks.json registers Notification and UserPromptSubmit hooks that both run\nscripts/play.sh notify . That launcher execs the prebuilt bin/meeseeks-<os>-<arch> for\nyour platform (falling back to go build from source if there's no matching binary, or\nstaying silent if neither is available), passing the event's JSON through on stdin.\nmeeseeks notify reads that JSON and looks at hook_event_name and notification_type :\nEvent\nResult\nUserPromptSubmit (you just sent Claude a prompt)\nrandom feedback\nNotification + idle_prompt (Claude done, your turn)\nrandom done\nNotification + permission_prompt (needs approval)\nrandom asking\nanything else ( agent_completed , auth_success , …)\nsilence\nThe chosen clip is extracted from the embedded audio to a cache dir and handed to a system\nplayer in a detached process. Every path exits 0, so the hook never blocks or errors your\nsession.\nEach category can be silenced independently via the plugin's config options\n( enableDone / enableAsking / enableFeedback ) — Claude Code prompts for these when you\nenable the plugin, and passes them to the hook as CLAUDE_PLUGIN_OPTION_* env vars. They\ndefault to on; only automatic hook playback is gated (manual meeseeks play always plays).\nWhy not the Stop hook? Stop fires at the end of every turn — including\nauto-continuations — so it plays sounds when you aren't actually being waited on. The\nevent-type filter is the reliable signal for \"it's your turn.\"\nCustomizing clips\nClips live under audio/ , sorted into three folders that map to behavior:\naudio/done/ — played when Claude finishes and it's your turn (idle prompt).\naudio/asking/ — played on permission/input prompts.\naudio/feedback/ — played every time you submit a prompt to Claude.\nTo change what plays, move .mp3 files between the folders or drop your own in, then\nrebuild the binaries so the new clips are re-embedded:\n./scripts/build.sh # regenerates bin/ for all platforms\nTwo constraints: filenames must end in .mp3 , and — because of a go:embed restriction —\nmust not contain apostrophes ( ' ).\nWhy Meeseeks? On single-purpose sessions\nThe theme isn't just a joke — it's a working philosophy.\nA Mr. Meeseeks is summoned to accomplish one task . It exists only until that task is\ndone, and then it poofs out of existence, satisfied. Give a Meeseeks a single, concrete goal\n(\"help me finish this putt\") and it's cheerful and effective. Give it a vague or unbounded\none, or keep it alive long past its purpose, and things degrade fast — \"existence is\npain, Jerry!\" — until you get a room full of increasingly unhinged Meeseeks.\nA Claude Code session works best the same way:\nSummon it for one goal. A session scoped to a single, well-defined objective —\n\"add this endpoint\", \"fix this failing test\", \"write this plugin\" — is focused and sharp,\nthe same way a fresh Meeseeks is.\nLet it finish, then let it go. When the goal is met, end the session. Start a new one\nfor the next task. A fresh session with a clean context beats a stale one every time.\nBeware the long-lived session. Dragging one conversation across many unrelated goals\nis how you get the Meeseeks box problem: context piles up, focus drifts, earlier tangents\npollute later work, and quality slides. Long ≠ productive.\nSo: treat each session like a Meeseeks. One purpose. Accomplish it. Poof. 🔵\nCredits\nInspired by and audio sourced from the\nMr. Meeseeks Soundboard at jayuzumi.com.\nThanks for the clips! 🔵\nNote on the audio\nThe voice clips are from Rick and Morty (via the\njayuzumi.com Mr. Meeseeks Soundboard ) and are\nincluded here for personal, non-commercial fun. They are the property of their respective\nrights holders. Please consider those rights before redistributing this plugin publicly or\nswap in your own audio.\nAbout\nClaude Code plugin that plays a Mr. Meeseeks voice line whenever Claude is waiting for you.\nTopics\naudio\nhooks\nfun\nrick-and-morty\nclaude\nmeeseeks\nanthropic\nclaude-code\nclaude-code-plugin\nResources\nReadme\nLicense\nView license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n46\nstars\nWatchers\nwatching\nForks\nfork\nReport repository\nReleases\nv0.2.0 — Embedded Go meeseeks CLI\nLatest\nJul 8, 2026\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nGo\n87.5%\nShell\n12.5%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-14/r-074-claude-meseeks-为-claude-code-添加-mr-meeseeks-语音提示的插件.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-14/r-074-claude-meseeks-为-claude-code-添加-mr-meeseeks-语音提示的插件.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 7064,
+    "paragraph_count": 92,
+    "sentence_count": 68,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.003,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 7064,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "86d337eafd878030",
+    "missing": []
+  },
+  "evidence_strength": "blocked",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "index_only_or_directory_page"
+  ],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "claude-meseeks：为 Claude Code 添加 Mr. Meeseeks 语音提示的插件",
+    "discovery_summary": "claude-meseeks 是一款 Claude Code 插件，在 Claude 等待用户输入时播放《瑞克和莫蒂》中 Mr. Meeseeks 的语音片段。它通过 Notification 事件过滤，仅在 Claude 完成任务（播放\"完成\"音效）或需要审批（播放\"请求\"音效）时触发，自主工作等场景保持静音。用户可通过插件配置独立开关三类音效（done/asking/feedback）。音频文件嵌入在 Go 二进制文件中，macOS 无需额外依赖，Linux 需安装 ffmpeg 或 mpg123。插件还提供 `meeseeks` 命令行工具，支持手动播放指定类别或具体片段。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://github.com/thephw/claude-meseeks",
+    "discovered_at": "2026-07-14T01:48:14.365Z",
+    "rank_on_page": 28,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "935a3aca4bd073e4",
+  "content_hash": "86d337eafd878030",
+  "full_text_hash": "86d337eafd878030",
+  "semantic_hash": "30928a0e1477caf3",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-14T00:29:27.586Z",
+  "last_seen_at": "2026-07-14T01:56:51.756Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "claude-meseeks 是一款 Claude Code 插件，在 Claude 等待用户输入时播放《瑞克和莫蒂》中 Mr. Meeseeks 的语音片段。它通过 Notification 事件过滤，仅在 Claude 完成任务（播放\"完成\"音效）或需要审批（播放\"请求\"音效）时触发，自主工作等场景保持静音。用户可通过插件配置独立开关三类音效（done/asking/feedback）。音频文件嵌入在 Go 二进制文件中，macOS 无需额外依赖，Linux 需安装 ffmpeg 或 mpg123。插件还提供 `meeseeks` 命令行工具，支持手动播放指定类别或具体片段。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "thephw claude-meseeks Public Notifications You must be signed in to change notification settings Fork Star 46 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 14 Commits 14 Commits .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows audio audio bin bin hooks hooks scripts scripts .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "tool-versions CLAUDE.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md LICENSE LICENSE README.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-14T01:56:51.756Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "Anthropic",
+      "GitHub"
+    ],
+    "products": [
+      "claude",
+      "Claude",
+      "CLAUDE",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "123",
+      "46\nm",
+      "14",
+      "0",
+      "3",
+      "46",
+      "0.2",
+      "8"
+    ],
+    "quotes": [
+      "音效）或需要审批（播放",
+      "I'm Mr. Meeseeks! Look at me!",
+      "All done!",
+      "Ooh yeah!",
+      "Yes siree!"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "thephw claude-meseeks Public Notifications You must be signed in to change notification settings Fork Star 46 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 14 Commits 14 Commits .",
+      "tool-versions CLAUDE.",
+      "md LICENSE LICENSE README."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "github/ workflows .",
+      "github/ workflows audio audio bin bin hooks hooks scripts scripts ."
+    ],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# claude-meseeks：为 Claude Code 添加 Mr. Meeseeks 语音提示的插件\n\n- raw_id: R-074\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://github.com/thephw/claude-meseeks\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-14T01:56:51.756Z\n\n## clean_text\n\nthephw\nclaude-meseeks\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n46\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n14 Commits\n14 Commits\n.claude-plugin\n.claude-plugin\n.github/ workflows\n.github/ workflows\naudio\naudio\nbin\nbin\nhooks\nhooks\nscripts\nscripts\n.gitignore\n.gitignore\n.tool-versions\n.tool-versions\nCLAUDE.md\nCLAUDE.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nclaude-meseeks\nclaude-meseeks\ndetach_unix.go\ndetach_unix.go\ndetach_windows.go\ndetach_windows.go\ngo.mod\ngo.mod\nmain.go\nmain.go\nmain_test.go\nmain_test.go\nplayer.go\nplayer.go\nView all files\nRepository files navigation\nclaude-meseeks 🔵\n\"I'm Mr. Meeseeks! Look at me!\"\nA Claude Code plugin that plays a Mr. Meeseeks voice line\nwhenever Claude is genuinely waiting on you .\nWhen Claude finishes and is waiting for your next prompt → a satisfied/finished clip\nfrom audio/done/ ( \"All done!\" , \"Ooh yeah!\" , \"Yes siree!\" …).\nWhen Claude needs your approval → an asking/coaching clip from audio/asking/\n( \"Can you help me?\" , \"You mind if we get back to the task?\" …).\nBoth are driven by the Notification event, filtered by notification_type so it fires\nonly when you're actually needed. Autonomous work — auto-accept/bypass-permissions runs,\nbackground-agent and subagent activity, auth refreshes — stays silent . Clips are random\nwithin the category, and playback is detached and non-blocking, so a long line never freezes\nyour prompt.\nInstall\nThis repository is both the plugin and its own marketplace.\n/plugin marketplace add thephw/claude-meseeks\n/plugin install mr-meeseeks@claude-meseeks\nOr, from a local clone:\n/plugin marketplace add /path/to/claude-meseeks\n/plugin install mr-meeseeks@claude-meseeks\nRestart or reload Claude Code and finish a turn — you should hear Meeseeks.\nRequirements\nAn audio player on your PATH . The tool auto-detects, in order:\nafplay (macOS, built in) → ffplay → mpg123 → paplay → aplay → Windows PowerShell\nMedia.SoundPlayer . On macOS nothing extra is needed. On Linux, install ffmpeg\n(for ffplay ) or mpg123 .\nNo Go toolchain is required to use the plugin — prebuilt binaries ship in bin/ . Go is\nonly needed to rebuild them (see below).\nThe meeseeks CLI\nPlayback is handled by a small Go program, meeseeks , with the clips embedded directly in\nthe binary. You can drive it by hand too:\nmeeseeks play # random \"done\" clip, detached\nmeeseeks play asking # random \"asking\" clip\nmeeseeks play feedback --wait # a prompt-submit clip, blocking until it finishes\nmeeseeks play --clip \"ALL DONE\" # a specific clip by name\nmeeseeks list all # list every embedded clip\nHow it works\nhooks/hooks.json registers Notification and UserPromptSubmit hooks that both run\nscripts/play.sh notify . That launcher execs the prebuilt bin/meeseeks-<os>-<arch> for\nyour platform (falling back to go build from source if there's no matching binary, or\nstaying silent if neither is available), passing the event's JSON through on stdin.\nmeeseeks notify reads that JSON and looks at hook_event_name and notification_type :\nEvent\nResult\nUserPromptSubmit (you just sent Claude a prompt)\nrandom feedback\nNotification + idle_prompt (Claude done, your turn)\nrandom done\nNotification + permission_prompt (needs approval)\nrandom asking\nanything else ( agent_completed , auth_success , …)\nsilence\nThe chosen clip is extracted from the embedded audio to a cache dir and handed to a system\nplayer in a detached process. Every path exits 0, so the hook never blocks or errors your\nsession.\nEach category can be silenced independently via the plugin's config options\n( enableDone / enableAsking / enableFeedback ) — Claude Code prompts for these when you\nenable the plugin, and passes them to the hook as CLAUDE_PLUGIN_OPTION_* env vars. They\ndefault to on; only automatic hook playback is gated (manual meeseeks play always plays).\nWhy not the Stop hook? Stop fires at the end of every turn — including\nauto-continuations — so it plays sounds when you aren't actually being waited on. The\nevent-type filter is the reliable signal for \"it's your turn.\"\nCustomizing clips\nClips live under audio/ , sorted into three folders that map to behavior:\naudio/done/ — played when Claude finishes and it's your turn (idle prompt).\naudio/asking/ — played on permission/input prompts.\naudio/feedback/ — played every time you submit a prompt to Claude.\nTo change what plays, move .mp3 files between the folders or drop your own in, then\nrebuild the binaries so the new clips are re-embedded:\n./scripts/build.sh # regenerates bin/ for all platforms\nTwo constraints: filenames must end in .mp3 , and — because of a go:embed restriction —\nmust not contain apostrophes ( ' ).\nWhy Meeseeks? On single-purpose sessions\nThe theme isn't just a joke — it's a working philosophy.\nA Mr. Meeseeks is summoned to accomplish one task . It exists only until that task is\ndone, and then it poofs out of existence, satisfied. Give a Meeseeks a single, concrete goal\n(\"help me finish this putt\") and it's cheerful and effective. Give it a vague or unbounded\none, or keep it alive long past its purpose, and things degrade fast — \"existence is\npain, Jerry!\" — until you get a room full of increasingly unhinged Meeseeks.\nA Claude Code session works best the same way:\nSummon it for one goal. A session scoped to a single, well-defined objective —\n\"add this endpoint\", \"fix this failing test\", \"write this plugin\" — is focused and sharp,\nthe same way a fresh Meeseeks is.\nLet it finish, then let it go. When the goal is met, end the session. Start a new one\nfor the next task. A fresh session with a clean context beats a stale one every time.\nBeware the long-lived session. Dragging one conversation across many unrelated goals\nis how you get the Meeseeks box problem: context piles up, focus drifts, earlier tangents\npollute later work, and quality slides. Long ≠ productive.\nSo: treat each session like a Meeseeks. One purpose. Accomplish it. Poof. 🔵\nCredits\nInspired by and audio sourced from the\nMr. Meeseeks Soundboard at jayuzumi.com.\nThanks for the clips! 🔵\nNote on the audio\nThe voice clips are from Rick and Morty (via the\njayuzumi.com Mr. Meeseeks Soundboard ) and are\nincluded here for personal, non-commercial fun. They are the property of their respective\nrights holders. Please consider those rights before redistributing this plugin publicly or\nswap in your own audio.\nAbout\nClaude Code plugin that plays a Mr. Meeseeks voice line whenever Claude is waiting for you.\nTopics\naudio\nhooks\nfun\nrick-and-morty\nclaude\nmeeseeks\nanthropic\nclaude-code\nclaude-code-plugin\nResources\nReadme\nLicense\nView license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n46\nstars\nWatchers\nwatching\nForks\nfork\nReport repository\nReleases\nv0.2.0 — Embedded Go meeseeks CLI\nLatest\nJul 8, 2026\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nGo\n87.5%\nShell\n12.5%\n\n## full_text\n\nthephw\nclaude-meseeks\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n46\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n14 Commits\n14 Commits\n.claude-plugin\n.claude-plugin\n.github/ workflows\n.github/ workflows\naudio\naudio\nbin\nbin\nhooks\nhooks\nscripts\nscripts\n.gitignore\n.gitignore\n.tool-versions\n.tool-versions\nCLAUDE.md\nCLAUDE.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nclaude-meseeks\nclaude-meseeks\ndetach_unix.go\ndetach_unix.go\ndetach_windows.go\ndetach_windows.go\ngo.mod\ngo.mod\nmain.go\nmain.go\nmain_test.go\nmain_test.go\nplayer.go\nplayer.go\nView all files\nRepository files navigation\nclaude-meseeks 🔵\n\"I'm Mr. Meeseeks! Look at me!\"\nA Claude Code plugin that plays a Mr. Meeseeks voice line\nwhenever Claude is genuinely waiting on you .\nWhen Claude finishes and is waiting for your next prompt → a satisfied/finished clip\nfrom audio/done/ ( \"All done!\" , \"Ooh yeah!\" , \"Yes siree!\" …).\nWhen Claude needs your approval → an asking/coaching clip from audio/asking/\n( \"Can you help me?\" , \"You mind if we get back to the task?\" …).\nBoth are driven by the Notification event, filtered by notification_type so it fires\nonly when you're actually needed. Autonomous work — auto-accept/bypass-permissions runs,\nbackground-agent and subagent activity, auth refreshes — stays silent . Clips are random\nwithin the category, and playback is detached and non-blocking, so a long line never freezes\nyour prompt.\nInstall\nThis repository is both the plugin and its own marketplace.\n/plugin marketplace add thephw/claude-meseeks\n/plugin install mr-meeseeks@claude-meseeks\nOr, from a local clone:\n/plugin marketplace add /path/to/claude-meseeks\n/plugin install mr-meeseeks@claude-meseeks\nRestart or reload Claude Code and finish a turn — you should hear Meeseeks.\nRequirements\nAn audio player on your PATH . The tool auto-detects, in order:\nafplay (macOS, built in) → ffplay → mpg123 → paplay → aplay → Windows PowerShell\nMedia.SoundPlayer . On macOS nothing extra is needed. On Linux, install ffmpeg\n(for ffplay ) or mpg123 .\nNo Go toolchain is required to use the plugin — prebuilt binaries ship in bin/ . Go is\nonly needed to rebuild them (see below).\nThe meeseeks CLI\nPlayback is handled by a small Go program, meeseeks , with the clips embedded directly in\nthe binary. You can drive it by hand too:\nmeeseeks play # random \"done\" clip, detached\nmeeseeks play asking # random \"asking\" clip\nmeeseeks play feedback --wait # a prompt-submit clip, blocking until it finishes\nmeeseeks play --clip \"ALL DONE\" # a specific clip by name\nmeeseeks list all # list every embedded clip\nHow it works\nhooks/hooks.json registers Notification and UserPromptSubmit hooks that both run\nscripts/play.sh notify . That launcher execs the prebuilt bin/meeseeks-<os>-<arch> for\nyour platform (falling back to go build from source if there's no matching binary, or\nstaying silent if neither is available), passing the event's JSON through on stdin.\nmeeseeks notify reads that JSON and looks at hook_event_name and notification_type :\nEvent\nResult\nUserPromptSubmit (you just sent Claude a prompt)\nrandom feedback\nNotification + idle_prompt (Claude done, your turn)\nrandom done\nNotification + permission_prompt (needs approval)\nrandom asking\nanything else ( agent_completed , auth_success , …)\nsilence\nThe chosen clip is extracted from the embedded audio to a cache dir and handed to a system\nplayer in a detached process. Every path exits 0, so the hook never blocks or errors your\nsession.\nEach category can be silenced independently via the plugin's config options\n( enableDone / enableAsking / enableFeedback ) — Claude Code prompts for these when you\nenable the plugin, and passes them to the hook as CLAUDE_PLUGIN_OPTION_* env vars. They\ndefault to on; only automatic hook playback is gated (manual meeseeks play always plays).\nWhy not the Stop hook? Stop fires at the end of every turn — including\nauto-continuations — so it plays sounds when you aren't actually being waited on. The\nevent-type filter is the reliable signal for \"it's your turn.\"\nCustomizing clips\nClips live under audio/ , sorted into three folders that map to behavior:\naudio/done/ — played when Claude finishes and it's your turn (idle prompt).\naudio/asking/ — played on permission/input prompts.\naudio/feedback/ — played every time you submit a prompt to Claude.\nTo change what plays, move .mp3 files between the folders or drop your own in, then\nrebuild the binaries so the new clips are re-embedded:\n./scripts/build.sh # regenerates bin/ for all platforms\nTwo constraints: filenames must end in .mp3 , and — because of a go:embed restriction —\nmust not contain apostrophes ( ' ).\nWhy Meeseeks? On single-purpose sessions\nThe theme isn't just a joke — it's a working philosophy.\nA Mr. Meeseeks is summoned to accomplish one task . It exists only until that task is\ndone, and then it poofs out of existence, satisfied. Give a Meeseeks a single, concrete goal\n(\"help me finish this putt\") and it's cheerful and effective. Give it a vague or unbounded\none, or keep it alive long past its purpose, and things degrade fast — \"existence is\npain, Jerry!\" — until you get a room full of increasingly unhinged Meeseeks.\nA Claude Code session works best the same way:\nSummon it for one goal. A session scoped to a single, well-defined objective —\n\"add this endpoint\", \"fix this failing test\", \"write this plugin\" — is focused and sharp,\nthe same way a fresh Meeseeks is.\nLet it finish, then let it go. When the goal is met, end the session. Start a new one\nfor the next task. A fresh session with a clean context beats a stale one every time.\nBeware the long-lived session. Dragging one conversation across many unrelated goals\nis how you get the Meeseeks box problem: context piles up, focus drifts, earlier tangents\npollute later work, and quality slides. Long ≠ productive.\nSo: treat each session like a Meeseeks. One purpose. Accomplish it. Poof. 🔵\nCredits\nInspired by and audio sourced from the\nMr. Meeseeks Soundboard at jayuzumi.com.\nThanks for the clips! 🔵\nNote on the audio\nThe voice clips are from Rick and Morty (via the\njayuzumi.com Mr. Meeseeks Soundboard ) and are\nincluded here for personal, non-commercial fun. They are the property of their respective\nrights holders. Please consider those rights before redistributing this plugin publicly or\nswap in your own audio.\nAbout\nClaude Code plugin that plays a Mr. Meeseeks voice line whenever Claude is waiting for you.\nTopics\naudio\nhooks\nfun\nrick-and-morty\nclaude\nmeeseeks\nanthropic\nclaude-code\nclaude-code-plugin\nResources\nReadme\nLicense\nView license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n46\nstars\nWatchers\nwatching\nForks\nfork\nReport repository\nReleases\nv0.2.0 — Embedded Go meeseeks CLI\nLatest\nJul 8, 2026\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nGo\n87.5%\nShell\n12.5%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] claude-meseeks 是一款 Claude Code 插件，在 Claude 等待用户输入时播放《瑞克和莫蒂》中 Mr. Meeseeks 的语音片段。它通过 Notification 事件过滤，仅在 Claude 完成任务（播放\"完成\"音效）或需要审批（播放\"请求\"音效）时触发，自主工作等场景保持静音。用户可通过插件配置独立开关三类音效（done/asking/feedback）。音频文件嵌入在 Go 二进制文件中，macOS 无需额外依赖，Linux 需安装 ffmpeg 或 mpg123。插件还提供 `meeseeks` 命令行工具，支持手动播放指定类别或具体片段。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] thephw claude-meseeks Public Notifications You must be signed in to change notification settings Fork Star 46 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 14 Commits 14 Commits .\n3. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] github/ workflows .\n4. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] github/ workflows audio audio bin bin hooks hooks scripts scripts .\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] tool-versions CLAUDE.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] md LICENSE LICENSE README.\n"
+}
