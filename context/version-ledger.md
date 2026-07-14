@@ -18,11 +18,13 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
+| Overall content center version | Guanlan Content Center V1.0 |
+| Overall content center code | GCC-V1.0 |
 | Current version | V3.3.8.3-intelligence-map-opportunity-radar |
 | Version name | Intelligence Map Opportunity Radar |
 | Version layer | Minor |
-| Release date | 2026-06-23 |
-| Last modified at | 2026-06-23T19:35:00+08:00 |
+| Release date | 2026-07-14 |
+| Last modified at | 2026-07-14T14:19:13+08:00 |
 | Product version | V3.3 |
 | Main website version | SITE-V3.3.8.3 |
 | Business Signals column version | BSIG-V1.1.1-core-source-hygiene |
@@ -32,11 +34,12 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Weekly Report content source | `01-SiteV2/content/08-report/` |
 | Operations backend version | OPS-V1.0.1 |
 | Skill Store version | v1.3.2 Cleanup management cache and common-action fix |
-| Git tag | not tagged |
+| Git tag | guanlan-content-center-v1.0 |
 | Current entries | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence; Dashboard retained as backend |
 
 ## Current Product Baseline
 
+- Guanlan Content Center V1.0 is the current whole-column release baseline. It does not replace the existing sub-version codes; it names the complete content center made of Business Signals, Intelligence Map, First-Line Viewpoints, Community Intelligence, and the retained operations backend.
 - WaveSight AI is now a unified intelligence frontstage, not a V2 four-column content site.
 - V3.3 public frontstage has four entries: Business Signals, Intelligence Map, First-Line Viewpoints, and Community Intelligence.
 - Business Signals uses the Raw / Pool / Card / Relationship Graph / Trend Candidate chain.
@@ -131,6 +134,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `guanlan-content-center-v1.0-freeze-20260714` | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence / Operations Backend | 2026-07-14 | 2026-07-14T14:19:13+08:00 | Guanlan Content Center V1.0 / GCC-V1.0 / SITE-V3.3.8.3 | Treating the whole content center as only one subcolumn; removing the existing sub-version boundaries; creating a new GitHub repository while the existing `AI-Radar` remote is active | version ledger consistency + git tag `guanlan-content-center-v1.0` |
 | `SITE-V3.3.8.3-freeze-intelligence-map-opportunity-radar-20260623` | Intelligence Map / Opportunity Radar / Skill Ops | 2026-06-23 | 2026-06-23T19:35:00+08:00 | SITE-V3.3.8.3 / IMAP-V1.2.0-opportunity-radar | Signal Candidates, 时间聚集, or Tag 聚合 modules returning; Entry Point Map or Product Pain Map being driven by old `formal_tags` or generic AI-generated labels; relationship graph being converted to `opportunity_signals`; weekly opportunity radar updates running without the `guanlan-opportunity-radar-updater` skill rules | `node --check 01-SiteV2/site/assets/v3-data-observation-desk.js` + `node agent-workflow/tools/frontstage-regression-gate.mjs` + `npm run validate:guanlan-skills` + GitHub Pages deploy |
 | `V3.3.8.2-freeze-business-core-source-hygiene-20260622` | Business Signals / Core Pool / Card generation | 2026-06-22 | 2026-06-22T14:35:00+08:00 | SITE-V3.3.8.2 / BSIG-V1.1.1-core-source-hygiene / EAI-V1.1.0-fde-lens-pool | `source_level` or `acquisition_source_level` used as ranking/gating/downgrade criteria; generic FDE role/service pages, job posts, role explainers, funding roundups, generic funding commentary, broad lists, stale sources, or search-query artifacts promoted into Core Pool or Cards; fixing daily quantity gaps by relaxing Core Pool quality gates | monitor quality loop + daily production chain post-monitor/pre-commit + pool-to-card dedupe + business frontstage gate + source-first/frontstage regression |
 | `V3.3.8-freeze-enterprise-ai-transformation-20260617` | Business Signals / 企业AI化 | 2026-06-17 | 2026-06-17T16:00:05+08:00 | SITE-V3.3.8-enterprise-ai-transformation / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.0.0-enterprise-ai-transformation | 企业AI化 reverting to the old FDE Lens name; multi-column case cards; visible "落地判断" / "老板追问" diagnostic fields; backend-only fields exposed in the public table; treating Enterprise AI as a fourth Card type | business frontstage gate + syntax quality gate + visual smoke + GitHub Pages deploy |
@@ -160,6 +164,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| Guanlan Content Center V1.0 / GCC-V1.0 | 2026-07-14T14:19:13+08:00 | Defines the current whole-column baseline for the unified Guanlan content center while preserving the existing SITE / Business Signals / Enterprise AI / Intelligence Map / backend sub-version contracts. | current overall content center baseline |
 | SITE-V3.3.8.3 / IMAP-V1.2.0-opportunity-radar | 2026-06-23T19:35:00+08:00 | Rebuilds the Intelligence Map opportunity area around two source-backed startup radar panels: Entry Point Map and Product Pain Map. Relationship graph stays on graph tags; heat and opportunity panels use `opportunity_signals`; the new `guanlan-opportunity-radar-updater` skill defines weekly update cadence and evidence boundaries. | current |
 | IMAP-V1.1.1-weekly-report-archive-list | 2026-06-23T15:25:00+08:00 | Updates the Intelligence Map weekly report subcolumn from a single current report card to a three-entry weekly archive list, adds stable selector routing and a 2026-06-15 archive detail page, and marks missing archive weeks as pending instead of linking to nonexistent reports. | upgraded |
 | SITE-V3.3.8.2 / BSIG-V1.1.1-core-source-hygiene / EAI-V1.1.0-fde-lens-pool | 2026-06-22T14:35:00+08:00 | Tightens Business Signals Core Pool source hygiene: source labels are traceability-only; generic FDE role/service pages, job posts, role explainers, broad lists, funding roundups, generic funding commentary, stale sources, and search-query artifacts cannot satisfy Core Pool / Card quantity gaps. | current Business Signals baseline; site upgraded |

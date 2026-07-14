@@ -9,6 +9,8 @@ encoding: UTF-8
 
 本目录是 V3 数据观察台、运营后台、内容生产线和长期判断资产库的当前入口。
 
+当前整体栏目版本号：`观澜内容中心 v1.0`（`Guanlan Content Center V1.0` / `GCC-V1.0`）。该版本号用于标记当前统一内容中心整体基线，子栏目仍分别沿用 `SITE-V3.3.8.3`、`BSIG`、`IMAP`、`EAI`、`OPS` 等版本体系。
+
 ## 目录职责
 
 - `site/`：V3 数据观察台与运营后台工程。当前前台入口是 `v3-data-observation.html`，运营后台保留 `operations-console.html`、`pipeline-dashboard.html` 和 `admin.html`。

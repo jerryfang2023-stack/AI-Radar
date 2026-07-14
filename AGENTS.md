@@ -42,6 +42,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
+- Current overall content center version: `Guanlan Content Center V1.0` (`GCC-V1.0`), released as `guanlan-content-center-v1.0`.
 - Current stage: SITE-V3.3.8.3.
 - Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/weekly-ai-business-change-radar.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.

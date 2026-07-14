@@ -13,6 +13,8 @@ priority: current
 
 WaveSight AI is now in SITE-V3.3.8.3 Intelligence Map Opportunity Radar.
 
+Overall column baseline: `Guanlan Content Center V1.0` (`GCC-V1.0`). This is the top-level version name for the current unified content center across Business Signals, Intelligence Map, First-Line Viewpoints, Community Intelligence, and the retained operations backend.
+
 ## Current Positioning
 
 - WaveSight AI is an Agent-driven AI business-intelligence system.
