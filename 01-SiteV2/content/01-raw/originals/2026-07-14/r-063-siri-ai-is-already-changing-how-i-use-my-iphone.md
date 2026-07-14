@@ -1,0 +1,292 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-063
+title: "Siri AI is already changing how I use my iPhone"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on"
+canonical_url: "https://theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on"
+source_name: "The Verge AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-13T20:43:20.000Z"
+collected_at: 2026-07-14T01:56:51.701Z
+language: mixed
+full_text_hash: dad42a92c228a029
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-14/r-063-siri-ai-is-already-changing-how-i-use-my-iphone.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-14/r-063-siri-ai-is-already-changing-how-i-use-my-iphone.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":20465,"paragraph_count":50,"sentence_count":156,"boilerplate_hits":0,"symbol_ratio":0.0012,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 20465
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dad42a92c228a029","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 92fb5e1822a3ad98
+content_hash: a4a37473c05897f6
+semantic_hash: b44fd45a96890719
+duplicate_of: ""
+first_seen_at: "2026-07-13T20:43:20.000Z"
+last_seen_at: 2026-07-14T01:56:51.701Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["The Verge AI","Google","Apple"],"products":["agent"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["27","8230","2","2026","07","4","90","27 b"],"quotes":["What order are the bands playing in?","Can you add my WWDC briefings to my calendar?","it just works","remind me to buy these tickets when they go on sale","buy these tickets when they go on sale."]}
+evidence_seed: {"company_actions":["iOS 27 escaped the developer world today with the launch of the first public beta. I've been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote. This year's iOS upgrades are what one might call a Snow Leopard [&#8230;]","iOS 27 escaped the developer world today with the launch of the first public beta.","I’ve been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote."],"case_details":[],"workflow_changes":["Siri AI is already changing how I use my iPhone Its full capabilities require heavy developer support, so the public beta feels more like a glimpse at the future.","That means it’s light on new features and instead focused on fixing things that were broken and speeding up processes across the OS."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"iOS 27 escaped the developer world today with the launch of the first public beta. I've been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote. This year's iOS upgrades are what one might call a Snow Leopard [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Siri AI is already changing how I use my iPhone Its full capabilities require heavy developer support, so the public beta feels more like a glimpse at the future.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"iOS 27 escaped the developer world today with the launch of the first public beta.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I’ve been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"This year’s iOS upgrades are what one might call a Snow Leopard update.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"That means it’s light on new features and instead focused on fixing things that were broken and speeding up processes across the OS.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-14T01:56:51.701Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Siri AI is already changing how I use my iPhone
+
+## clean_text
+
+Siri AI is already changing how I use my iPhone
+Its full capabilities require heavy developer support, so the public beta feels more like a glimpse at the future.
+iOS 27 escaped the developer world today with the launch of the first public beta. I’ve been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote.
+This year’s iOS upgrades are what one might call a Snow Leopard update. That means it’s light on new features and instead focused on fixing things that were broken and speeding up processes across the OS. App launches, Photos search results, and AirDrop transfers should all be faster. The Messages app now supports in-line replies and end-to-end encryption for RCS messages. Liquid Glass has gotten more refined, with better legibility around hard edges and text. These are all wonderful updates, particularly for those who have aging iPhones. But by far the biggest and most anticipated change in this update is that Apple finally, actually for real shipped the revamped Siri AI, in the form of an opt-in beta program. And this time, I think Apple might have actually done it. Or at least it finally laid the foundation for a successful version of Siri.
+Last week, I was trying to decide if I had time to go to a free concert in the city. The show was four hours long with three acts, and I only really wanted to see one. I couldn’t find the order the bands were performing on the event page, which meant this was a perfect opportunity to pressure-test Siri AI. So I swiped down from the top of the screen and asked, “What order are the bands playing in?” Siri spun its new little wheel for a few seconds, then correctly told me the information I was hoping for: The band I wanted to see was playing last.
+The promise of the new Siri AI is to change the way you use your phone. Before, you went to an app and told the app what you wanted to do (call a car, set a timer, order lunch); now, you say what you want to do first, and Siri AI tries to look through all the apps and information available to it to handle the rest. So when I asked about the concert, Siri looked at what was on the webpage, then searched the web, found the answer, and presented it to me. I didn’t need to jump around browser tabs or look at the band’s Instagram page; it was just there.
+In the month I’ve been using Siri AI, it’s surprised me in tons of different ways. On my first day testing the beta during Apple’s dev conference, I was able to ask “Can you add my WWDC briefings to my calendar?” and Siri looked in my email, parsed the data, and added six individual events with correct times to my calendar. I’ll note, it could only add it to my Apple calendar, but I’ll get to why shortly.
+These interactions have genuinely altered my brain chemistry a bit. Now, I almost always try to use Siri first, just to see if it can perform the action I need or answer a simple question. It’s practically stopped me from opening my browser for most things, since it’s easier, faster, and more enjoyable to just swipe down from the top of the screen and type a prompt.
+Onscreen awareness has probably been the most helpful addition for me. Being able to ask Siri about what’s on my screen saves me a lot of tapping around. When it’s able to take action from that onscreen awareness, like adding an event to my calendar or directing me to an address on my screen, it’s even better.
+More often than I’ve expected, Siri is able to do what I ask it to, and when it performs a somewhat complex task, it feels like magic. But when it hits a wall, I’m reminded of why it’s going to take a bit of work to get to the “it just works” universe where Siri not working is the exception, not the norm.
+[Image: There are still kinks with Siri AI. In the first image, Siri didn’t recognize that my request referred to the page I was looking at and added a generic reminder. https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Contact-Sheet-4K.png?quality=90&strip=all]
+Siri’s ability to translate your request into a specific action seems to be one of the main areas where Apple is still working out kinks. For example, when I asked it to “remind me to buy these tickets when they go on sale” while looking at a concert page, it simply made a reminder called “buy these tickets when they go on sale.” I had to be careful to say “buy tickets to this when they go on sale” to trigger Siri to actually look at my screen and search the web for the ticket availability. And most of the time, asking Siri to “route” me to a location didn’t do anything, but “direct” me to a location did. I imagine its word correlation may improve over time as more data comes in, but when the entire point is being able to talk to a computer in natural language and not rely on keyword speak, it can be frustrating.
+Right now, if you’re on the Siri AI preview on the iOS 27 beta, Apple apps are the only ones with access to Siri’s new capabilities. If you live inside Apple’s ecosystem, everything is great. Your data probably exists inside Messages, Mail, and Photos, and when you want to take action, you’re adding to-do items to Reminders and Notes. I use a few of these apps daily, and when they work together, like adding a list of events from my email to my calendar, it really is like a glimpse at the future. But if I ask Siri “When did Daniel say he was free to play Dota?” then Siri won’t have any idea, because Daniel and I only message each other through Telegram, which the system doesn’t have access to.
+[Image: A still from Apple’s video on how developers can integrate with Siri AI. https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Screenshot-2026-07-13-at-10.43.06-AM-1.png?quality=90&strip=all]
+The two main updates developers need to implement for Siri AI support are entities and intents. Entities represent the type of data an app can contain, like a photo, recipe, playlist, or note. If an app adds entities to Siri AI, Siri knows exactly what type of data it can pull from that app to use for your personal context. Conversely, an intent tells Siri what it can actually do with that data, like play, save, or delete. App entities and intents allow Siri to control and pull data from them, and Siri’s semantic layer handles the understanding of your words. The app’s entities and intents allow those semantics to control and pull data from them.
+And if your digital life exists mostly outside of Apple apps, it will take time for the apps you need to play well with Siri AI. It definitely won’t happen during the public beta. Developers can now build entities and intents against the iOS 27 SDK, but until the SDK itself is out of beta, you, as a user, are out of luck; they can’t actually push Siri AI updates to their apps until the full version of iOS 27 is available in the fall.
+Apple is relying a lot on developers to update their apps to support the new Siri, but it’s not like we haven’t seen this before. Practically every time Apple has added a significant new feature, like Dark Mode or iPad apps, developers have had to do work to get them working properly. The difference, I imagine, is that most of the previous updates have directly affected the user experience within the developer’s own app. This time, Apple is asking developers to update their apps to improve the Siri experience.
+[Image: Siri AI being invoked in iOS 27. https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Siri-AI-Being-invoked-4.jpg?quality=90&strip=all]
+Developers I’ve talked to have told me that while they’re super excited about these new capabilities, updating their apps to support them is a pretty massive undertaking. “The conceptual challenge for developers is creating comprehensive support for every screen and function within an app,” says Matthew Cassinelli, who worked at Workflow, the company that would be acquired by Apple and become Shortcuts. “But the transition to agent-based models allows specialized apps to surface relevant data dynamically, which makes them more useful to users who otherwise might not open those specific applications frequently.”
+An example of this is the LookBack: Contacts History app. The app shows you who you most recently added to your phone contacts, and if you forget to open it but ask Siri “Who did I meet at the conference last week?” it can use the app to surface the information.
+I can buy that argument that Siri will help surface smaller apps that users forget to open as often when it comes to smaller developers, who don’t make the five or six apps most people use every single day. But the bigger question on my mind is whether or not players like Google are interested in making Siri more capable. Google makes most of its revenue from surfacing ads, and if instead of making you open Gmail to find the information you’re looking for, Siri could simply surface that information at the top of your screen, Google loses out on that revenue. This said, Google is practically doing the exact same thing with AI overviews, so it’s pretty obvious that it’s been preparing for a world where AdSense revenue isn’t its main revenue source.
+The primary incentive driver I can see for Google adopting full Siri AI support is consumer choice. If one email app supports Siri AI to its full extent and Gmail doesn’t, I’m more likely to use the other app. I want Siri to keep performing these experiences, pulling my personal context and performing actions for me. If I start running into roadblocks for what an app is able to do, I might start looking for another one. Whether Google’s own stronghold is powerful enough to keep most people around is another question.
+This all remains a work in progress. Not only is this a beta OS, but a beta Siri. And it’s only a partial version of the full experience we’re being promised down the road. It’s impressive, but what truly matters still comes next. Developers need to add support for Siri AI to live up to its potential. And Siri AI needs to correctly route and research your requests far more often than it gets tripped up. So far, I’ve been surprised by how much it can do.
+The concert was great, by the way.
+Photography by David Imel / The Verge
+Siri AI is already changing how I use my iPhone
+Its full capabilities require heavy developer support, so the public beta feels more like a glimpse at the future.
+iOS 27 escaped the developer world today with the launch of the first public beta. I’ve been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote.
+This year’s iOS upgrades are what one might call a Snow Leopard update. That means it’s light on new features and instead focused on fixing things that were broken and speeding up processes across the OS. App launches, Photos search results, and AirDrop transfers should all be faster. The Messages app now supports in-line replies and end-to-end encryption for RCS messages. Liquid Glass has gotten more refined, with better legibility around hard edges and text. These are all wonderful updates, particularly for those who have aging iPhones. But by far the biggest and most anticipated change in this update is that Apple finally, actually for real shipped the revamped Siri AI, in the form of an opt-in beta program. And this time, I think Apple might have actually done it. Or at least it finally laid the foundation for a successful version of Siri.
+Last week, I was trying to decide if I had time to go to a free concert in the city. The show was four hours long with three acts, and I only really wanted to see one. I couldn’t find the order the bands were performing on the event page, which meant this was a perfect opportunity to pressure-test Siri AI. So I swiped down from the top of the screen and asked, “What order are the bands playing in?” Siri spun its new little wheel for a few seconds, then correctly told me the information I was hoping for: The band I wanted to see was playing last.
+The promise of the new Siri AI is to change the way you use your phone. Before, you went to an app and told the app what you wanted to do (call a car, set a timer, order lunch); now, you say what you want to do first, and Siri AI tries to look through all the apps and information available to it to handle the rest. So when I asked about the concert, Siri looked at what was on the webpage, then searched the web, found the answer, and presented it to me. I didn’t need to jump around browser tabs or look at the band’s Instagram page; it was just there.
+In the month I’ve been using Siri AI, it’s surprised me in tons of different ways. On my first day testing the beta during Apple’s dev conference, I was able to ask “Can you add my WWDC briefings to my calendar?” and Siri looked in my email, parsed the data, and added six individual events with correct times to my calendar. I’ll note, it could only add it to my Apple calendar, but I’ll get to why shortly.
+These interactions have genuinely altered my brain chemistry a bit. Now, I almost always try to use Siri first, just to see if it can perform the action I need or answer a simple question. It’s practically stopped me from opening my browser for most things, since it’s easier, faster, and more enjoyable to just swipe down from the top of the screen and type a prompt.
+Onscreen awareness has probably been the most helpful addition for me. Being able to ask Siri about what’s on my screen saves me a lot of tapping around. When it’s able to take action from that onscreen awareness, like adding an event to my calendar or directing me to an address on my screen, it’s even better.
+More often than I’ve expected, Siri is able to do what I ask it to, and when it performs a somewhat complex task, it feels like magic. But when it hits a wall, I’m reminded of why it’s going to take a bit of work to get to the “it just works” universe where Siri not working is the exception, not the norm.
+[Image: There are still kinks with Siri AI. In the first image, Siri didn’t recognize that my request referred to the page I was looking at and added a generic reminder. https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Contact-Sheet-4K.png?quality=90&strip=all]
+Siri’s ability to translate your request into a specific action seems to be one of the main areas where Apple is still working out kinks. For example, when I asked it to “remind me to buy these tickets when they go on sale” while looking at a concert page, it simply made a reminder called “buy these tickets when they go on sale.” I had to be careful to say “buy tickets to this when they go on sale” to trigger Siri to actually look at my screen and search the web for the ticket availability. And most of the time, asking Siri to “route” me to a location didn’t do anything, but “direct” me to a location did. I imagine its word correlation may improve over time as more data comes in, but when the entire point is being able to talk to a computer in natural language and not rely on keyword speak, it can be frustrating.
+Right now, if you’re on the Siri AI preview on the iOS 27 beta, Apple apps are the only ones with access to Siri’s new capabilities. If you live inside Apple’s ecosystem, everything is great. Your data probably exists inside Messages, Mail, and Photos, and when you want to take action, you’re adding to-do items to Reminders and Notes. I use a few of these apps daily, and when they work together, like adding a list of events from my email to my calendar, it really is like a glimpse at the future. But if I ask Siri “When did Daniel say he was free to play Dota?” then Siri won’t have any idea, because Daniel and I only message each other through Telegram, which the system doesn’t have access to.
+[Image: A still from Apple’s video on how developers can integrate with Siri AI. https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Screenshot-2026-07-13-at-10.43.06-AM-1.png?quality=90&strip=all]
+The two main updates developers need to implement for Siri AI support are entities and intents. Entities represent the type of data an app can contain, like a photo, recipe, playlist, or note. If an app adds entities to Siri AI, Siri knows exactly what type of data it can pull from that app to use for your personal context. Conversely, an intent tells Siri what it can actually do with that data, like play, save, or delete. App entities and intents allow Siri to control and pull data from them, and Siri’s semantic layer handles the understanding of your words. The app’s entities and intents allow those semantics to control and pull data from them.
+And if your digital life exists mostly outside of Apple apps, it will take time for the apps you need to play well with Siri AI. It definitely won’t happen during the public beta. Developers can now build entities and intents against the iOS 27 SDK, but until the SDK itself is out of beta, you, as a user, are out of luck; they can’t actually push Siri AI updates to their apps until the full version of iOS 27 is available in the fall.
+Apple is relying a lot on developers to update their apps to support the new Siri, but it’s not like we haven’t seen this before. Practically every time Apple has added a significant new feature, like Dark Mode or iPad apps, developers have had to do work to get them working properly. The difference, I imagine, is that most of the previous updates have directly affected the user experience within the developer’s own app. This time, Apple is asking developers to update their apps to improve the Siri experience.
+[Image: Siri AI being invoked in iOS 27. https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Siri-AI-Being-invoked-4.jpg?quality=90&strip=all]
+Developers I’ve talked to have told me that while they’re super excited about these new capabilities, updating their apps to support them is a pretty massive undertaking. “The conceptual challenge for developers is creating com
+
+## full_text
+
+Siri AI is already changing how I use my iPhone
+Its full capabilities require heavy developer support, so the public beta feels more like a glimpse at the future.
+iOS 27 escaped the developer world today with the launch of the first public beta. I’ve been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote.
+This year’s iOS upgrades are what one might call a Snow Leopard update. That means it’s light on new features and instead focused on fixing things that were broken and speeding up processes across the OS. App launches, Photos search results, and AirDrop transfers should all be faster. The Messages app now supports in-line replies and end-to-end encryption for RCS messages. Liquid Glass has gotten more refined, with better legibility around hard edges and text. These are all wonderful updates, particularly for those who have aging iPhones. But by far the biggest and most anticipated change in this update is that Apple finally, actually for real shipped the revamped Siri AI, in the form of an opt-in beta program. And this time, I think Apple might have actually done it. Or at least it finally laid the foundation for a successful version of Siri.
+Last week, I was trying to decide if I had time to go to a free concert in the city. The show was four hours long with three acts, and I only really wanted to see one. I couldn’t find the order the bands were performing on the event page, which meant this was a perfect opportunity to pressure-test Siri AI. So I swiped down from the top of the screen and asked, “What order are the bands playing in?” Siri spun its new little wheel for a few seconds, then correctly told me the information I was hoping for: The band I wanted to see was playing last.
+The promise of the new Siri AI is to change the way you use your phone. Before, you went to an app and told the app what you wanted to do (call a car, set a timer, order lunch); now, you say what you want to do first, and Siri AI tries to look through all the apps and information available to it to handle the rest. So when I asked about the concert, Siri looked at what was on the webpage, then searched the web, found the answer, and presented it to me. I didn’t need to jump around browser tabs or look at the band’s Instagram page; it was just there.
+In the month I’ve been using Siri AI, it’s surprised me in tons of different ways. On my first day testing the beta during Apple’s dev conference, I was able to ask “Can you add my WWDC briefings to my calendar?” and Siri looked in my email, parsed the data, and added six individual events with correct times to my calendar. I’ll note, it could only add it to my Apple calendar, but I’ll get to why shortly.
+These interactions have genuinely altered my brain chemistry a bit. Now, I almost always try to use Siri first, just to see if it can perform the action I need or answer a simple question. It’s practically stopped me from opening my browser for most things, since it’s easier, faster, and more enjoyable to just swipe down from the top of the screen and type a prompt.
+Onscreen awareness has probably been the most helpful addition for me. Being able to ask Siri about what’s on my screen saves me a lot of tapping around. When it’s able to take action from that onscreen awareness, like adding an event to my calendar or directing me to an address on my screen, it’s even better.
+More often than I’ve expected, Siri is able to do what I ask it to, and when it performs a somewhat complex task, it feels like magic. But when it hits a wall, I’m reminded of why it’s going to take a bit of work to get to the “it just works” universe where Siri not working is the exception, not the norm.
+[Image: There are still kinks with Siri AI. In the first image, Siri didn’t recognize that my request referred to the page I was looking at and added a generic reminder. https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Contact-Sheet-4K.png?quality=90&strip=all]
+Siri’s ability to translate your request into a specific action seems to be one of the main areas where Apple is still working out kinks. For example, when I asked it to “remind me to buy these tickets when they go on sale” while looking at a concert page, it simply made a reminder called “buy these tickets when they go on sale.” I had to be careful to say “buy tickets to this when they go on sale” to trigger Siri to actually look at my screen and search the web for the ticket availability. And most of the time, asking Siri to “route” me to a location didn’t do anything, but “direct” me to a location did. I imagine its word correlation may improve over time as more data comes in, but when the entire point is being able to talk to a computer in natural language and not rely on keyword speak, it can be frustrating.
+Right now, if you’re on the Siri AI preview on the iOS 27 beta, Apple apps are the only ones with access to Siri’s new capabilities. If you live inside Apple’s ecosystem, everything is great. Your data probably exists inside Messages, Mail, and Photos, and when you want to take action, you’re adding to-do items to Reminders and Notes. I use a few of these apps daily, and when they work together, like adding a list of events from my email to my calendar, it really is like a glimpse at the future. But if I ask Siri “When did Daniel say he was free to play Dota?” then Siri won’t have any idea, because Daniel and I only message each other through Telegram, which the system doesn’t have access to.
+[Image: A still from Apple’s video on how developers can integrate with Siri AI. https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Screenshot-2026-07-13-at-10.43.06-AM-1.png?quality=90&strip=all]
+The two main updates developers need to implement for Siri AI support are entities and intents. Entities represent the type of data an app can contain, like a photo, recipe, playlist, or note. If an app adds entities to Siri AI, Siri knows exactly what type of data it can pull from that app to use for your personal context. Conversely, an intent tells Siri what it can actually do with that data, like play, save, or delete. App entities and intents allow Siri to control and pull data from them, and Siri’s semantic layer handles the understanding of your words. The app’s entities and intents allow those semantics to control and pull data from them.
+And if your digital life exists mostly outside of Apple apps, it will take time for the apps you need to play well with Siri AI. It definitely won’t happen during the public beta. Developers can now build entities and intents against the iOS 27 SDK, but until the SDK itself is out of beta, you, as a user, are out of luck; they can’t actually push Siri AI updates to their apps until the full version of iOS 27 is available in the fall.
+Apple is relying a lot on developers to update their apps to support the new Siri, but it’s not like we haven’t seen this before. Practically every time Apple has added a significant new feature, like Dark Mode or iPad apps, developers have had to do work to get them working properly. The difference, I imagine, is that most of the previous updates have directly affected the user experience within the developer’s own app. This time, Apple is asking developers to update their apps to improve the Siri experience.
+[Image: Siri AI being invoked in iOS 27. https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Siri-AI-Being-invoked-4.jpg?quality=90&strip=all]
+Developers I’ve talked to have told me that while they’re super excited about these new capabilities, updating their apps to support them is a pretty massive undertaking. “The conceptual challenge for developers is creating comprehensive support for every screen and function within an app,” says Matthew Cassinelli, who worked at Workflow, the company that would be acquired by Apple and become Shortcuts. “But the transition to agent-based models allows specialized apps to surface relevant data dynamically, which makes them more useful to users who otherwise might not open those specific applications frequently.”
+An example of this is the LookBack: Contacts History app. The app shows you who you most recently added to your phone contacts, and if you forget to open it but ask Siri “Who did I meet at the conference last week?” it can use the app to surface the information.
+I can buy that argument that Siri will help surface smaller apps that users forget to open as often when it comes to smaller developers, who don’t make the five or six apps most people use every single day. But the bigger question on my mind is whether or not players like Google are interested in making Siri more capable. Google makes most of its revenue from surfacing ads, and if instead of making you open Gmail to find the information you’re looking for, Siri could simply surface that information at the top of your screen, Google loses out on that revenue. This said, Google is practically doing the exact same thing with AI overviews, so it’s pretty obvious that it’s been preparing for a world where AdSense revenue isn’t its main revenue source.
+The primary incentive driver I can see for Google adopting full Siri AI support is consumer choice. If one email app supports Siri AI to its full extent and Gmail doesn’t, I’m more likely to use the other app. I want Siri to keep performing these experiences, pulling my personal context and performing actions for me. If I start running into roadblocks for what an app is able to do, I might start looking for another one. Whether Google’s own stronghold is powerful enough to keep most people around is another question.
+This all remains a work in progress. Not only is this a beta OS, but a beta Siri. And it’s only a partial version of the full experience we’re being promised down the road. It’s impressive, but what truly matters still comes next. Developers need to add support for Siri AI to live up to its potential. And Siri AI needs to correctly route and research your requests far more often than it gets tripped up. So far, I’ve been surprised by how much it can do.
+The concert was great, by the way.
+Photography by David Imel / The Verge
+Siri AI is already changing how I use my iPhone
+Its full capabilities require heavy developer support, so the public beta feels more like a glimpse at the future.
+iOS 27 escaped the developer world today with the launch of the first public beta. I’ve been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote.
+This year’s iOS upgrades are what one might call a Snow Leopard update. That means it’s light on new features and instead focused on fixing things that were broken and speeding up processes across the OS. App launches, Photos search results, and AirDrop transfers should all be faster. The Messages app now supports in-line replies and end-to-end encryption for RCS messages. Liquid Glass has gotten more refined, with better legibility around hard edges and text. These are all wonderful updates, particularly for those who have aging iPhones. But by far the biggest and most anticipated change in this update is that Apple finally, actually for real shipped the revamped Siri AI, in the form of an opt-in beta program. And this time, I think Apple might have actually done it. Or at least it finally laid the foundation for a successful version of Siri.
+Last week, I was trying to decide if I had time to go to a free concert in the city. The show was four hours long with three acts, and I only really wanted to see one. I couldn’t find the order the bands were performing on the event page, which meant this was a perfect opportunity to pressure-test Siri AI. So I swiped down from the top of the screen and asked, “What order are the bands playing in?” Siri spun its new little wheel for a few seconds, then correctly told me the information I was hoping for: The band I wanted to see was playing last.
+The promise of the new Siri AI is to change the way you use your phone. Before, you went to an app and told the app what you wanted to do (call a car, set a timer, order lunch); now, you say what you want to do first, and Siri AI tries to look through all the apps and information available to it to handle the rest. So when I asked about the concert, Siri looked at what was on the webpage, then searched the web, found the answer, and presented it to me. I didn’t need to jump around browser tabs or look at the band’s Instagram page; it was just there.
+In the month I’ve been using Siri AI, it’s surprised me in tons of different ways. On my first day testing the beta during Apple’s dev conference, I was able to ask “Can you add my WWDC briefings to my calendar?” and Siri looked in my email, parsed the data, and added six individual events with correct times to my calendar. I’ll note, it could only add it to my Apple calendar, but I’ll get to why shortly.
+These interactions have genuinely altered my brain chemistry a bit. Now, I almost always try to use Siri first, just to see if it can perform the action I need or answer a simple question. It’s practically stopped me from opening my browser for most things, since it’s easier, faster, and more enjoyable to just swipe down from the top of the screen and type a prompt.
+Onscreen awareness has probably been the most helpful addition for me. Being able to ask Siri about what’s on my screen saves me a lot of tapping around. When it’s able to take action from that onscreen awareness, like adding an event to my calendar or directing me to an address on my screen, it’s even better.
+More often than I’ve expected, Siri is able to do what I ask it to, and when it performs a somewhat complex task, it feels like magic. But when it hits a wall, I’m reminded of why it’s going to take a bit of work to get to the “it just works” universe where Siri not working is the exception, not the norm.
+[Image: There are still kinks with Siri AI. In the first image, Siri didn’t recognize that my request referred to the page I was looking at and added a generic reminder. https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Contact-Sheet-4K.png?quality=90&strip=all]
+Siri’s ability to translate your request into a specific action seems to be one of the main areas where Apple is still working out kinks. For example, when I asked it to “remind me to buy these tickets when they go on sale” while looking at a concert page, it simply made a reminder called “buy these tickets when they go on sale.” I had to be careful to say “buy tickets to this when they go on sale” to trigger Siri to actually look at my screen and search the web for the ticket availability. And most of the time, asking Siri to “route” me to a location didn’t do anything, but “direct” me to a location did. I imagine its word correlation may improve over time as more data comes in, but when the entire point is being able to talk to a computer in natural language and not rely on keyword speak, it can be frustrating.
+Right now, if you’re on the Siri AI preview on the iOS 27 beta, Apple apps are the only ones with access to Siri’s new capabilities. If you live inside Apple’s ecosystem, everything is great. Your data probably exists inside Messages, Mail, and Photos, and when you want to take action, you’re adding to-do items to Reminders and Notes. I use a few of these apps daily, and when they work together, like adding a list of events from my email to my calendar, it really is like a glimpse at the future. But if I ask Siri “When did Daniel say he was free to play Dota?” then Siri won’t have any idea, because Daniel and I only message each other through Telegram, which the system doesn’t have access to.
+[Image: A still from Apple’s video on how developers can integrate with Siri AI. https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Screenshot-2026-07-13-at-10.43.06-AM-1.png?quality=90&strip=all]
+The two main updates developers need to implement for Siri AI support are entities and intents. Entities represent the type of data an app can contain, like a photo, recipe, playlist, or note. If an app adds entities to Siri AI, Siri knows exactly what type of data it can pull from that app to use for your personal context. Conversely, an intent tells Siri what it can actually do with that data, like play, save, or delete. App entities and intents allow Siri to control and pull data from them, and Siri’s semantic layer handles the understanding of your words. The app’s entities and intents allow those semantics to control and pull data from them.
+And if your digital life exists mostly outside of Apple apps, it will take time for the apps you need to play well with Siri AI. It definitely won’t happen during the public beta. Developers can now build entities and intents against the iOS 27 SDK, but until the SDK itself is out of beta, you, as a user, are out of luck; they can’t actually push Siri AI updates to their apps until the full version of iOS 27 is available in the fall.
+Apple is relying a lot on developers to update their apps to support the new Siri, but it’s not like we haven’t seen this before. Practically every time Apple has added a significant new feature, like Dark Mode or iPad apps, developers have had to do work to get them working properly. The difference, I imagine, is that most of the previous updates have directly affected the user experience within the developer’s own app. This time, Apple is asking developers to update their apps to improve the Siri experience.
+[Image: Siri AI being invoked in iOS 27. https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Siri-AI-Being-invoked-4.jpg?quality=90&strip=all]
+Developers I’ve talked to have told me that while they’re super excited about these new capabilities, updating their apps to support them is a pretty massive undertaking. “The conceptual challenge for developers is creating comprehensive support for every screen and function within an app,” says Matthew Cassinelli, who worked at Workflow, the company that would be acquired by Apple and become Shortcuts. “But the transition to agent-based models allows specialized apps to surface relevant data dynamically, which makes them more useful to users who otherwise might not open those specific applications frequently.”
+An example of this is the LookBack: Contacts History app. The app shows you who you most recently added to your phone contacts, and if you forget to open it but ask Siri “Who did I meet at the conference last week?” it can use the app to surface the information.
+I can buy that argument that Siri will help surface smaller apps that users forget to open as often when it comes to smaller developers, who don’t make the five or six apps most people use every single day. But the bigger question on my mind is whether or not players like Google are interested in making Siri more capable. Google makes most of its revenue from surfacing ads, and if instead of making you open Gmail to find the information you’re looking for, Siri could simply surface that information at the top of your screen, Google loses out on that revenue. This said, Google is practically doing the exact same thing with AI overviews, so it’s pretty obvious that it’s been preparing for a world where AdSense revenue isn’t its main revenue source.
+The primary incentive driver I can see for Google adopting full Siri AI support is consumer choice. If one email app supports Siri AI to its full extent and Gmail doesn’t, I’m more likely to use the other app. I want Siri to keep performing these experiences, pulling my personal context and performing actions for me. If I start running into roadblocks for what an app is able to do, I might start looking for another one. Whether Google’s own stronghold is powerful enough to keep most people around is another question.
+This all remains a work in progress. Not only is this a beta OS, but a beta Siri. And it’s only a partial version of the full experience we’re being promised down the road. It’s impressive, but what truly matters still comes next. Developers need to add support for Siri AI to live up to its potential. And Siri AI needs to correctly route and research your requests far more often than it gets tripped up. So far, I’ve been surprised by how much it can do.
+The concert was great, by the way.
+Photography by David Imel / The Verge
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":20465,"paragraph_count":50,"sentence_count":156,"boilerplate_hits":0,"symbol_ratio":0.0012,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   iOS 27 escaped the developer world today with the launch of the first public beta. I've been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote. This year's iOS upgrades are what one might call a Snow Leopard [&#8230;]
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Siri AI is already changing how I use my iPhone Its full capabilities require heavy developer support, so the public beta feels more like a glimpse at the future.
+
+3. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   iOS 27 escaped the developer world today with the launch of the first public beta.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   I’ve been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote.
+
+5. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   This year’s iOS upgrades are what one might call a Snow Leopard update.
+
+6. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   That means it’s light on new features and instead focused on fixing things that were broken and speeding up processes across the OS.
+
+## business_elements
+
+- companies: The Verge AI, Google, Apple
+- products: agent
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 27, 8230, 2, 2026, 07, 4, 90, 27 b
+- quotes: What order are the bands playing in? / Can you add my WWDC briefings to my calendar? / it just works / remind me to buy these tickets when they go on sale / buy these tickets when they go on sale.
+
+## evidence_seed
+
+- company_actions: iOS 27 escaped the developer world today with the launch of the first public beta. I've been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote. This year's iOS upgrades are what one might call a Snow Leopard [&#8230;] / iOS 27 escaped the developer world today with the launch of the first public beta. / I’ve been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote.
+- case_details: 暂无公开信息
+- workflow_changes: Siri AI is already changing how I use my iPhone Its full capabilities require heavy developer support, so the public beta feels more like a glimpse at the future. / That means it’s light on new features and instead focused on fixing things that were broken and speeding up processes across the OS.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+iOS 27 escaped the developer world today with the launch of the first public beta. I've been testing the new operating system since early June, looking for quirks and seeing if it can live up to the hype Apple promised in the keynote. This year's iOS upgrades are what one might call a Snow Leopard [&#8230;]
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

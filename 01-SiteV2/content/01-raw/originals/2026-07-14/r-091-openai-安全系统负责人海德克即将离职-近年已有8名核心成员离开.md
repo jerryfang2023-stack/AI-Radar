@@ -1,0 +1,267 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-091
+title: "OpenAI 安全系统负责人海德克即将离职，近年已有8名核心成员离开"
+title_zh: "OpenAI 安全系统负责人海德克即将离职，近年已有8名核心成员离开"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/976/262.htm"
+canonical_url: "https://ithome.com/0/976/262.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-13T23:31:28.000Z"
+collected_at: 2026-07-14T01:56:51.840Z
+language: mixed
+full_text_hash: 3779d509d19298a9
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-14/r-091-openai-安全系统负责人海德克即将离职-近年已有8名核心成员离开.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-14/r-091-openai-安全系统负责人海德克即将离职-近年已有8名核心成员离开.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 73
+extractor_diagnostics: {"readability_score":73,"text_length":2241,"paragraph_count":30,"sentence_count":20,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 2241
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3779d509d19298a9","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI 安全系统负责人海德克即将离职，近年已有8名核心成员离开","discovery_summary":"OpenAI安全系统团队负责人约翰内斯·海德克即将离职。近年来，OpenAI安全与对齐团队已有8名核心成员离开，包括联合创始人伊利亚·苏茨克维、扬·莱克等。部分离职员工曾公开质疑OpenAI更看重产品而非安全。OpenAI表示，研究与安全工作将在米娅·格莱泽带领下迈入新阶段，安全工作将更深入地融入各研究团队。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/976/262.htm","discovered_at":"2026-07-14T01:48:14.369Z","rank_on_page":37,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: d3bb008863940c58
+content_hash: 3779d509d19298a9
+semantic_hash: f8df2710cbc42705
+duplicate_of: ""
+first_seen_at: "2026-07-13T23:31:28.000Z"
+last_seen_at: 2026-07-14T01:56:51.840Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","OpenAI","Anthropic"],"products":[],"people":[],"industries":["制造 / 工业"],"roles":[],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["8","7","14","13","2024","5","10","11"],"quotes":["我们感谢约翰内斯为 OpenAI 作出的贡献。研究与安全工作将在米娅 · 格莱泽的带领下迈入新阶段，我们对此充满期待。","只有了解模型的基础能力，才能作出正确的安全决策，只有了解潜在的安全影响，才能作出正确的研究决策。","所谓安全，就是在降低 AI 负面影响的同时释放积极价值，因此，安全是我们使命的核心。","过去几年，安全文化和安全流程已经被光鲜的产品挤到次要位置。","无法再继续下去的临界点"]}
+evidence_seed: {"company_actions":["OpenAI 首席研究官陈信翰告诉《商业内幕》：“我们感谢约翰内斯为 OpenAI 作出的贡献。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["OpenAI安全系统团队负责人约翰内斯·海德克即将离职。近年来，OpenAI安全与对齐团队已有8名核心成员离开，包括联合创始人伊利亚·苏茨克维、扬·莱克等。部分离职员工曾公开质疑OpenAI更看重产品而非安全。OpenAI表示，研究与安全工作将在米娅·格莱泽带领下迈入新阶段，安全工作将更深入地融入各研究团队。","IT之家 7 月 14 日消息，据《商业内幕》13 日报道，OpenAI 安全系统团队负责人约翰内斯 · 海德克即将离职。","近年来，OpenAI 安全与对齐团队已有多名员工离开。"]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"supporting_context","text":"OpenAI安全系统团队负责人约翰内斯·海德克即将离职。近年来，OpenAI安全与对齐团队已有8名核心成员离开，包括联合创始人伊利亚·苏茨克维、扬·莱克等。部分离职员工曾公开质疑OpenAI更看重产品而非安全。OpenAI表示，研究与安全工作将在米娅·格莱泽带领下迈入新阶段，安全工作将更深入地融入各研究团队。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"IT之家 7 月 14 日消息，据《商业内幕》13 日报道，OpenAI 安全系统团队负责人约翰内斯 · 海德克即将离职。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"近年来，OpenAI 安全与对齐团队已有多名员工离开。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"OpenAI 首席研究官陈信翰告诉《商业内幕》：“我们感谢约翰内斯为 OpenAI 作出的贡献。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"研究与安全工作将在米娅 · 格莱泽的带领下迈入新阶段，我们对此充满期待。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"” OpenAI 表示，格莱泽将出任研究与安全副总裁，并推动安全工作更深入地融入各研究团队。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-14T01:56:51.840Z
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# OpenAI 安全系统负责人海德克即将离职，近年已有8名核心成员离开
+
+## clean_text
+
+IT之家 7 月 14 日消息，据《商业内幕》13 日报道，OpenAI 安全系统团队负责人约翰内斯 · 海德克即将离职。近年来，OpenAI 安全与对齐团队已有多名员工离开。
+OpenAI 首席研究官陈信翰告诉《商业内幕》：“我们感谢约翰内斯为 OpenAI 作出的贡献。研究与安全工作将在米娅 · 格莱泽的带领下迈入新阶段，我们对此充满期待。”
+OpenAI 表示，格莱泽将出任研究与安全副总裁，并推动安全工作更深入地融入各研究团队。
+此次调整表明，OpenAI 正在重新思考研究与安全工作的关系。OpenAI 发言人说：“只有了解模型的基础能力，才能作出正确的安全决策，只有了解潜在的安全影响，才能作出正确的研究决策。”
+OpenAI 表示，确保 AGI 最终问世时造福全人类，是 OpenAI 的使命。“所谓安全，就是在降低 AI 负面影响的同时释放积极价值，因此，安全是我们使命的核心。”
+然而，OpenAI 一直未能稳定留住高级安全负责人，一些离职员工还曾 公开质疑 OpenAI 是否真正重视安全工作 。
+曾共同负责 OpenAI 超级对齐团队的扬 · 莱克在 2024 年 5 月离职时直言，OpenAI 更看重推出产品，而不是确保产品安全。“过去几年，安全文化和安全流程已经被光鲜的产品挤到次要位置。”
+莱克还表示，OpenAI 必须投入更多资源，为未来更强大的模型做好准备，而制造比人类更加聪明的机器是 一项本质上危险的事业 。
+知名 AI 分析师安德鲁 · 柯伦借用《哈利 · 波特》中的说法，把 OpenAI 安全负责人走马灯般更替的现象形容为一种诅咒。
+以下是近年来离开 OpenAI 安全重点团队的八名负责人。
+联合创始人伊利亚 · 苏茨克维
+OpenAI 联合创始人、长期担任首席科学家的伊利亚 · 苏茨克维于 2024 年 5 月离职。此前，他与莱克共同领导超级对齐计划，研究如何控制未来可能出现的超级智能 AI。
+苏茨克维离职时在 X 发文表示，OpenAI 取得的进展“堪称奇迹”。此后，他创立了 Safe Superintelligence，全部研究工作都围绕安全超级智能展开。
+联合创始人扬 · 莱克
+莱克在苏茨克维离职几天后离开 OpenAI。他公开对 OpenAI 的安全路线提出尖锐批评，并表示，自己与管理层长期存在分歧，最终到了“无法再继续下去的临界点”。
+莱克和苏茨克维离职后，OpenAI 解散了超级对齐团队，并把剩余成员调往其他研究团队。莱克随后加入 Anthropic，继续从事对齐研究。
+AGI 准备工作高级顾问迈尔斯 · 布伦戴奇
+布伦戴奇在 OpenAI 工作六年后，于 2024 年 10 月离职。
+布伦戴奇当时在 Substack 发表文章，讨论 AI 可能给世界带来的影响，并写道：“OpenAI 没有准备好，其他任何前沿实验室也没有准备好，整个世界同样没有准备好。”
+布伦戴奇写道，选择继续留在 OpenAI，也意味着默认接受 OpenAI 的价值观。“每一名 OpenAI 员工都应认真看待自己的行动和言论，因为两者会塑造组织文化。随着 OpenAI 开始掌握极其先进的能力，员工的行为还可能让未来的发展沿着积极或消极的路径固化。”
+研究与安全副总裁翁荔
+翁荔的领英资料显示，她在 OpenAI 工作近七年后，于 2024 年 11 月离职。翁荔此前负责安全系统团队。
+翁荔在离职声明中没有公开批评 OpenAI，反而肯定了 OpenAI 的工作环境，并表示，OpenAI“在训练模型兼顾强大能力与责任意识方面，已经树立新的行业标准”。
+模型政策安全研究负责人安德烈娅 · 瓦隆
+瓦隆于 2025 年年底离开 OpenAI。此前，她领导的团队负责确定 OpenAI 模型在敏感场景中的回应方式，包括涉及情感依赖和心理健康危机的对话。
+OpenAI 最初只在内部宣布瓦隆离职，她本人没有公开批评 OpenAI。瓦隆后来加入 Anthropic 的对齐团队，继续研究模型行为和安全问题。
+前风险准备工作负责人亚历山大 · 马德里
+马德里加入 OpenAI 后负责风险准备团队，评估能力越来越强的模型是否可能引发严重风险。2024 年，马德里被调离相关领导岗位，随后把工作重点转向 AI 推理，并于 2026 年 5 月离开 OpenAI。
+前首席未来学家约书亚 · 阿基亚姆
+阿基亚姆于 7 月离职。此前，他领导使命对齐团队，负责确保 OpenAI 开发和部署 AI 的方式符合非营利使命。
+阿基亚姆 7 月在 X 发文表示：“我离职没有某个特定原因，选择现在离开也不是因为某件具体的事。不过，我已经考虑了很长时间，现在感觉时机成熟。全世界已经知道这个秘密，在前沿实验室之外继续推动这项使命，似乎也变得可行了。”
+安全系统团队负责人约翰内斯 · 海德克
+海德克于 2021 年加入 OpenAI，并在翁荔离职后接手安全系统团队。海德克领导的团队负责在 OpenAI 发布模型前评估风险，并采取措施降低风险。
+海德克的计划离职消息于周五公开，此后他没有发表公开声明。OpenAI 表示，OpenAI 正在把安全工作更紧密地纳入整体研究体系，海德克在此期间决定离开。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 14 日消息，据《商业内幕》13 日报道，OpenAI 安全系统团队负责人约翰内斯 · 海德克即将离职。近年来，OpenAI 安全与对齐团队已有多名员工离开。
+OpenAI 首席研究官陈信翰告诉《商业内幕》：“我们感谢约翰内斯为 OpenAI 作出的贡献。研究与安全工作将在米娅 · 格莱泽的带领下迈入新阶段，我们对此充满期待。”
+OpenAI 表示，格莱泽将出任研究与安全副总裁，并推动安全工作更深入地融入各研究团队。
+此次调整表明，OpenAI 正在重新思考研究与安全工作的关系。OpenAI 发言人说：“只有了解模型的基础能力，才能作出正确的安全决策，只有了解潜在的安全影响，才能作出正确的研究决策。”
+OpenAI 表示，确保 AGI 最终问世时造福全人类，是 OpenAI 的使命。“所谓安全，就是在降低 AI 负面影响的同时释放积极价值，因此，安全是我们使命的核心。”
+然而，OpenAI 一直未能稳定留住高级安全负责人，一些离职员工还曾 公开质疑 OpenAI 是否真正重视安全工作 。
+曾共同负责 OpenAI 超级对齐团队的扬 · 莱克在 2024 年 5 月离职时直言，OpenAI 更看重推出产品，而不是确保产品安全。“过去几年，安全文化和安全流程已经被光鲜的产品挤到次要位置。”
+莱克还表示，OpenAI 必须投入更多资源，为未来更强大的模型做好准备，而制造比人类更加聪明的机器是 一项本质上危险的事业 。
+知名 AI 分析师安德鲁 · 柯伦借用《哈利 · 波特》中的说法，把 OpenAI 安全负责人走马灯般更替的现象形容为一种诅咒。
+以下是近年来离开 OpenAI 安全重点团队的八名负责人。
+联合创始人伊利亚 · 苏茨克维
+OpenAI 联合创始人、长期担任首席科学家的伊利亚 · 苏茨克维于 2024 年 5 月离职。此前，他与莱克共同领导超级对齐计划，研究如何控制未来可能出现的超级智能 AI。
+苏茨克维离职时在 X 发文表示，OpenAI 取得的进展“堪称奇迹”。此后，他创立了 Safe Superintelligence，全部研究工作都围绕安全超级智能展开。
+联合创始人扬 · 莱克
+莱克在苏茨克维离职几天后离开 OpenAI。他公开对 OpenAI 的安全路线提出尖锐批评，并表示，自己与管理层长期存在分歧，最终到了“无法再继续下去的临界点”。
+莱克和苏茨克维离职后，OpenAI 解散了超级对齐团队，并把剩余成员调往其他研究团队。莱克随后加入 Anthropic，继续从事对齐研究。
+AGI 准备工作高级顾问迈尔斯 · 布伦戴奇
+布伦戴奇在 OpenAI 工作六年后，于 2024 年 10 月离职。
+布伦戴奇当时在 Substack 发表文章，讨论 AI 可能给世界带来的影响，并写道：“OpenAI 没有准备好，其他任何前沿实验室也没有准备好，整个世界同样没有准备好。”
+布伦戴奇写道，选择继续留在 OpenAI，也意味着默认接受 OpenAI 的价值观。“每一名 OpenAI 员工都应认真看待自己的行动和言论，因为两者会塑造组织文化。随着 OpenAI 开始掌握极其先进的能力，员工的行为还可能让未来的发展沿着积极或消极的路径固化。”
+研究与安全副总裁翁荔
+翁荔的领英资料显示，她在 OpenAI 工作近七年后，于 2024 年 11 月离职。翁荔此前负责安全系统团队。
+翁荔在离职声明中没有公开批评 OpenAI，反而肯定了 OpenAI 的工作环境，并表示，OpenAI“在训练模型兼顾强大能力与责任意识方面，已经树立新的行业标准”。
+模型政策安全研究负责人安德烈娅 · 瓦隆
+瓦隆于 2025 年年底离开 OpenAI。此前，她领导的团队负责确定 OpenAI 模型在敏感场景中的回应方式，包括涉及情感依赖和心理健康危机的对话。
+OpenAI 最初只在内部宣布瓦隆离职，她本人没有公开批评 OpenAI。瓦隆后来加入 Anthropic 的对齐团队，继续研究模型行为和安全问题。
+前风险准备工作负责人亚历山大 · 马德里
+马德里加入 OpenAI 后负责风险准备团队，评估能力越来越强的模型是否可能引发严重风险。2024 年，马德里被调离相关领导岗位，随后把工作重点转向 AI 推理，并于 2026 年 5 月离开 OpenAI。
+前首席未来学家约书亚 · 阿基亚姆
+阿基亚姆于 7 月离职。此前，他领导使命对齐团队，负责确保 OpenAI 开发和部署 AI 的方式符合非营利使命。
+阿基亚姆 7 月在 X 发文表示：“我离职没有某个特定原因，选择现在离开也不是因为某件具体的事。不过，我已经考虑了很长时间，现在感觉时机成熟。全世界已经知道这个秘密，在前沿实验室之外继续推动这项使命，似乎也变得可行了。”
+安全系统团队负责人约翰内斯 · 海德克
+海德克于 2021 年加入 OpenAI，并在翁荔离职后接手安全系统团队。海德克领导的团队负责在 OpenAI 发布模型前评估风险，并采取措施降低风险。
+海德克的计划离职消息于周五公开，此后他没有发表公开声明。OpenAI 表示，OpenAI 正在把安全工作更紧密地纳入整体研究体系，海德克在此期间决定离开。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 73
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":73,"text_length":2241,"paragraph_count":30,"sentence_count":20,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=medium
+   OpenAI安全系统团队负责人约翰内斯·海德克即将离职。近年来，OpenAI安全与对齐团队已有8名核心成员离开，包括联合创始人伊利亚·苏茨克维、扬·莱克等。部分离职员工曾公开质疑OpenAI更看重产品而非安全。OpenAI表示，研究与安全工作将在米娅·格莱泽带领下迈入新阶段，安全工作将更深入地融入各研究团队。
+
+2. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=medium
+   IT之家 7 月 14 日消息，据《商业内幕》13 日报道，OpenAI 安全系统团队负责人约翰内斯 · 海德克即将离职。
+
+3. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=medium
+   近年来，OpenAI 安全与对齐团队已有多名员工离开。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   OpenAI 首席研究官陈信翰告诉《商业内幕》：“我们感谢约翰内斯为 OpenAI 作出的贡献。
+
+5. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=medium
+   研究与安全工作将在米娅 · 格莱泽的带领下迈入新阶段，我们对此充满期待。
+
+6. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=medium
+   ” OpenAI 表示，格莱泽将出任研究与安全副总裁，并推动安全工作更深入地融入各研究团队。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI, Anthropic
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 制造 / 工业
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 8, 7, 14, 13, 2024, 5, 10, 11
+- quotes: 我们感谢约翰内斯为 OpenAI 作出的贡献。研究与安全工作将在米娅 · 格莱泽的带领下迈入新阶段，我们对此充满期待。 / 只有了解模型的基础能力，才能作出正确的安全决策，只有了解潜在的安全影响，才能作出正确的研究决策。 / 所谓安全，就是在降低 AI 负面影响的同时释放积极价值，因此，安全是我们使命的核心。 / 过去几年，安全文化和安全流程已经被光鲜的产品挤到次要位置。 / 无法再继续下去的临界点
+
+## evidence_seed
+
+- company_actions: OpenAI 首席研究官陈信翰告诉《商业内幕》：“我们感谢约翰内斯为 OpenAI 作出的贡献。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: OpenAI安全系统团队负责人约翰内斯·海德克即将离职。近年来，OpenAI安全与对齐团队已有8名核心成员离开，包括联合创始人伊利亚·苏茨克维、扬·莱克等。部分离职员工曾公开质疑OpenAI更看重产品而非安全。OpenAI表示，研究与安全工作将在米娅·格莱泽带领下迈入新阶段，安全工作将更深入地融入各研究团队。 / IT之家 7 月 14 日消息，据《商业内幕》13 日报道，OpenAI 安全系统团队负责人约翰内斯 · 海德克即将离职。 / 近年来，OpenAI 安全与对齐团队已有多名员工离开。
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI 安全系统负责人海德克即将离职，近年已有8名核心成员离开","discovery_summary":"OpenAI安全系统团队负责人约翰内斯·海德克即将离职。近年来，OpenAI安全与对齐团队已有8名核心成员离开，包括联合创始人伊利亚·苏茨克维、扬·莱克等。部分离职员工曾公开质疑OpenAI更看重产品而非安全。OpenAI表示，研究与安全工作将在米娅·格莱泽带领下迈入新阶段，安全工作将更深入地融入各研究团队。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/976/262.htm","discovered_at":"2026-07-14T01:48:14.369Z","rank_on_page":37,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenAI安全系统团队负责人约翰内斯·海德克即将离职。近年来，OpenAI安全与对齐团队已有8名核心成员离开，包括联合创始人伊利亚·苏茨克维、扬·莱克等。部分离职员工曾公开质疑OpenAI更看重产品而非安全。OpenAI表示，研究与安全工作将在米娅·格莱泽带领下迈入新阶段，安全工作将更深入地融入各研究团队。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

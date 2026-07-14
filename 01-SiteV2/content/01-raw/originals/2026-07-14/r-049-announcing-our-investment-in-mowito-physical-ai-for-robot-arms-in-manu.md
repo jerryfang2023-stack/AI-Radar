@@ -1,0 +1,265 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-049
+title: "Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manufacturing/"
+canonical_url: "https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manufacturing"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: "2026-07-07T00:00:00.000Z"
+collected_at: 2026-07-14T01:56:51.617Z
+language: mixed
+full_text_hash: 66a29d7fc8fabd22
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-14/r-049-announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manu.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-14/r-049-announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manu.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":4348,"paragraph_count":19,"sentence_count":28,"boilerplate_hits":2,"symbol_ratio":0.0044,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 4348
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"66a29d7fc8fabd22","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 29d58e2c568daa50
+content_hash: 66a29d7fc8fabd22
+semantic_hash: c3fa836c2226ed8b
+duplicate_of: ""
+first_seen_at: "2026-07-07T00:00:00.000Z"
+last_seen_at: 2026-07-14T01:56:51.617Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","Meta"],"products":[],"people":[],"industries":["制造 / 工业","开发者工具"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究"],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["$3M","7","2026","$110B","100%","500","35","2"],"quotes":["nofollow noopener noreferrer","share-email sd-button","nofollow noopener noreferrer","share-email sd-button","mailto:?subject=%5BShared%20Post%5D%20Q2%202026%20Portfolio%20in%20Review&body=https%3A%2F%2Fversionone.vc%2Fq2-2026%2F&share=email"]}
+evidence_seed: {"company_actions":["Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures Portfolio, Version One ### Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-... / query=YC AI startup funding vertical AI / intent=find_startups / path=capital_startup","Skip to content Portfolio , Version One Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing We’re excited to share that Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).","Most factory floor work still can’t be automated."],"case_details":[],"workflow_changes":["It’s not just that the tasks are complex — legacy robotic systems require rigid, hand-coded programming that takes days to set up and breaks the moment a part or process changes."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures Portfolio, Version One ### Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-... / query=YC AI startup funding vertical AI / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Skip to content Portfolio , Version One Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing We’re excited to share that Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Most factory floor work still can’t be automated.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"funding","text":"It’s not just that the [&hellip;] Share this: Tweet <a rel=\"nofollow noopener noreferrer\" data-shared=\"\" class=\"share-email sd-button\" Boris Wertz July 7, 2026 We’re excited to share that Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"It’s not just that the tasks are complex — legacy robotic systems require rigid, hand-coded programming that takes days to set up and breaks the moment a part or process changes.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-14T01:56:51.617Z
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures
+
+## clean_text
+
+Skip to content
+Portfolio , Version One
+Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing
+We’re excited to share that Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI). Most factory floor work still can’t be automated. It’s not just that the [&hellip;]
+Share this:
+Tweet
+<a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button"
+Boris Wertz
+July 7, 2026
+We’re excited to share that Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).
+Most factory floor work still can’t be automated. It’s not just that the tasks are complex — legacy robotic systems require rigid, hand-coded programming that takes days to set up and breaks the moment a part or process changes. In the automotive sector alone, that’s a $110B opportunity sitting untouched.
+Physical AI that learns on the floor
+Mowito is building Physical AI models for robot arms that flip this script. Instead of rigid programming, Mowito’s model learns a task from as little as a single demonstration, runs on standard robot arms with no hardware changes required, and lets operators reconfigure it themselves, right on the floor. The result is near-100% reliability, with the precision that real assembly work demands.
+This isn’t a lab demo. Mowito-powered robots are already running production lines at a Fortune 500 automotive company, building a critical component for cars, and at one of the world’s largest electronics contract manufacturers. The company is focused squarely on automotive and electronics manufacturing, two industries where precision and uptime aren’t optional.
+Why we invested
+This deal fits squarely within our thinking on robotics . We’ve written before that we favor task-specific robots over generalized humanoids: point solutions that do one job better than a human, rather than technology built in search of a problem. Mowito is exactly that — a system purpose-built for the precision and reliability that assembly work demands, already proving itself on real production lines rather than in a lab.
+It’s also a sign of where we think the value in robotics is heading. As robot arm hardware becomes increasingly commoditized, with more manufacturers producing standard, interchangeable arms, the differentiation shifts to the software layer that makes those arms useful. Mowito runs on standard arms with no hardware changes required, which means the model itself — not the metal — is the moat.
+Mowito’s team spans Bangalore and Detroit. CEO Puru Rastogi previously built autonomous helicopters and studied at Carnegie Mellon. CTO Safar is a graduate of IIT Madras. CBO Aditya is a three-time founder. Together they’ve also assembled what might be the strongest Physical AI advisory bench of any Indian startup, with Soumith Chintala (CTO of Thinking Machines Labs and co-creator of PyTorch) and Lerrel Pinto (Meta SIL, MIT TR35) advising the company.
+With this round, Mowito will expand into the US market, building out its team and go-to-market in Detroit to be closer to its automotive customers.
+Congratulations to Puru, Safar, Aditya, and the entire Mowito team. We’re thrilled to be your partners on this journey.
+Share this:
+Tweet
+Email
+Read Next
+View More
+Portfolio
+Q2 2026 Portfolio in Review
+Somehow, we’re already halfway through 2026 — and it’s been a busy quarter. Q2 brought a steady stream of exciting updates from across the portfolio, including major milestones, new launches, fundraising wins, and a few viral moments. We’re happy to share a handful of highlights from the quarter, knowing this is just a snapshot of [&hellip;]
+Share this:
+Tweet
+<a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button" href="mailto:?subject=%5BShared%20Post%5D%20Q2%202026%20Portfolio%20in%20Review&body=https%3A%2F%2Fversionone.vc%2Fq2-2026%2F&share=email" target="_blank" title="Click to email a link
+Angela
+June 30, 2026
+Subscribe to our blog
+Subscribe to our blog
+
+## full_text
+
+Skip to content
+Portfolio , Version One
+Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing
+We’re excited to share that Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI). Most factory floor work still can’t be automated. It’s not just that the [&hellip;]
+Share this:
+Tweet
+<a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button"
+Boris Wertz
+July 7, 2026
+We’re excited to share that Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).
+Most factory floor work still can’t be automated. It’s not just that the tasks are complex — legacy robotic systems require rigid, hand-coded programming that takes days to set up and breaks the moment a part or process changes. In the automotive sector alone, that’s a $110B opportunity sitting untouched.
+Physical AI that learns on the floor
+Mowito is building Physical AI models for robot arms that flip this script. Instead of rigid programming, Mowito’s model learns a task from as little as a single demonstration, runs on standard robot arms with no hardware changes required, and lets operators reconfigure it themselves, right on the floor. The result is near-100% reliability, with the precision that real assembly work demands.
+This isn’t a lab demo. Mowito-powered robots are already running production lines at a Fortune 500 automotive company, building a critical component for cars, and at one of the world’s largest electronics contract manufacturers. The company is focused squarely on automotive and electronics manufacturing, two industries where precision and uptime aren’t optional.
+Why we invested
+This deal fits squarely within our thinking on robotics . We’ve written before that we favor task-specific robots over generalized humanoids: point solutions that do one job better than a human, rather than technology built in search of a problem. Mowito is exactly that — a system purpose-built for the precision and reliability that assembly work demands, already proving itself on real production lines rather than in a lab.
+It’s also a sign of where we think the value in robotics is heading. As robot arm hardware becomes increasingly commoditized, with more manufacturers producing standard, interchangeable arms, the differentiation shifts to the software layer that makes those arms useful. Mowito runs on standard arms with no hardware changes required, which means the model itself — not the metal — is the moat.
+Mowito’s team spans Bangalore and Detroit. CEO Puru Rastogi previously built autonomous helicopters and studied at Carnegie Mellon. CTO Safar is a graduate of IIT Madras. CBO Aditya is a three-time founder. Together they’ve also assembled what might be the strongest Physical AI advisory bench of any Indian startup, with Soumith Chintala (CTO of Thinking Machines Labs and co-creator of PyTorch) and Lerrel Pinto (Meta SIL, MIT TR35) advising the company.
+With this round, Mowito will expand into the US market, building out its team and go-to-market in Detroit to be closer to its automotive customers.
+Congratulations to Puru, Safar, Aditya, and the entire Mowito team. We’re thrilled to be your partners on this journey.
+Share this:
+Tweet
+Email
+Read Next
+View More
+Portfolio
+Q2 2026 Portfolio in Review
+Somehow, we’re already halfway through 2026 — and it’s been a busy quarter. Q2 brought a steady stream of exciting updates from across the portfolio, including major milestones, new launches, fundraising wins, and a few viral moments. We’re happy to share a handful of highlights from the quarter, knowing this is just a snapshot of [&hellip;]
+Share this:
+Tweet
+<a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button" href="mailto:?subject=%5BShared%20Post%5D%20Q2%202026%20Portfolio%20in%20Review&body=https%3A%2F%2Fversionone.vc%2Fq2-2026%2F&share=email" target="_blank" title="Click to email a link
+Angela
+June 30, 2026
+Subscribe to our blog
+Subscribe to our blog
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":4348,"paragraph_count":19,"sentence_count":28,"boilerplate_hits":2,"symbol_ratio":0.0044,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures Portfolio, Version One ### Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-... / query=YC AI startup funding vertical AI / intent=find_startups / path=capital_startup
+
+2. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Skip to content Portfolio , Version One Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing We’re excited to share that Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Most factory floor work still can’t be automated.
+
+4. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   It’s not just that the [&hellip;] Share this: Tweet <a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button" Boris Wertz July 7, 2026 We’re excited to share that Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI).
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   It’s not just that the tasks are complex — legacy robotic systems require rigid, hand-coded programming that takes days to set up and breaks the moment a part or process changes.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Meta
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 制造 / 工业, 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: $3M, 7, 2026, $110B, 100%, 500, 35, 2
+- quotes: nofollow noopener noreferrer / share-email sd-button / nofollow noopener noreferrer / share-email sd-button / mailto:?subject=%5BShared%20Post%5D%20Q2%202026%20Portfolio%20in%20Review&body=https%3A%2F%2Fversionone.vc%2Fq2-2026%2F&share=email
+
+## evidence_seed
+
+- company_actions: Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures Portfolio, Version One ### Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-... / query=YC AI startup funding vertical AI / intent=find_startups / path=capital_startup / Skip to content Portfolio , Version One Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing We’re excited to share that Mowito has raised a $3M pre-seed round, led by Version One Ventures, with participation from All In Capital, Unisol, and iSeed, alongside angels Soumith Chintala (Thinking Machines Labs), Adarsh Kulkarni (Foundry Robotics), and Ashish Kulkarni (Coformer AI). / Most factory floor work still can’t be automated.
+- case_details: 暂无公开信息
+- workflow_changes: It’s not just that the tasks are complex — legacy robotic systems require rigid, hand-coded programming that takes days to set up and breaks the moment a part or process changes.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures Portfolio, Version One ### Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-... / query=YC AI startup funding vertical AI / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

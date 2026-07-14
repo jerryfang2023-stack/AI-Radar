@@ -1,0 +1,267 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-062",
+  "title": "German AI consortium releases Soofi S, an open 30B model that tops benchmarks in both English and German",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german/",
+  "canonical_url": "https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german",
+  "source_name": "The Decoder AI News",
+  "source_type": "media",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "formal_report",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-13T00:00:00.000Z",
+  "collected_at": "2026-07-14T01:56:51.691Z",
+  "language": "mixed",
+  "full_text": "Ad\nSkip to content\nGerman AI consortium releases Soofi S, an open 30B model that tops benchmarks in both English and German\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJul 13, 2026\nNano Banana Pro prompted by THE DECODER\nKey Points\nA German research consortium has released the open-source language model Soofi S, which was trained entirely on Deutsche Telekom's AI cloud infrastructure.\nThe model uses a resource-efficient hybrid architecture that activates only 3.2 of its 31.6 billion parameters per token, keeping processing speed constant even with very long inputs.\nWith a strong focus on German training data, Soofi S outperforms other fully open models, such as Olmo 3 32B and Apertus 70B, in benchmarks for German, English, and programming tasks.\nSoofi S is one of the first large language models trained entirely on Deutsche Telekom's Industrial AI Cloud in Munich. The open 30B model uses a lean hybrid architecture and a training mix deliberately weighted toward German.\nA German research consortium coordinated by the KI Bundesverband (German AI Association) has released Soofi S 30B-A3B , an open language model that, according to its pretraining report , achieves the highest scores on English and German benchmarks among fully open models, surpassing previous leaders like OLMo 3 32B and Apertus 70B .\nThanks to its hybrid Mamba-Transformer architecture, Soofi S maintains throughput even at very long contexts, while dense models like Apertus 70B and Qwen3 32B drop off sharply. | Image: Soofi\nA lean architecture built for long contexts\nSoofi S is a mixture-of-experts model. It contains 31.6 billion parameters in total but activates only about 3.2 billion per generated token. That puts its compute cost closer to a 3B model than a conventional 30B model. The consortium adopts the architecture of Nvidia's Nemotron 3 Nano without modification, a hybrid design combining Mamba-2 layers with standard attention layers. Ad\nThe key difference from typical transformers is memory behavior. In conventional models, the KV cache that stores previous tokens for attention computation grows linearly with context length. With long inputs and many parallel requests, reloading that cache becomes a bottleneck. Only 6 of Soofi S's 52 layers maintain such a cache at all. Ad\nDEC_D_Incontent-1\nThe practical payoff shows up in generation throughput. At a context length of 40,000 tokens with 32 parallel requests, Soofi S generates roughly eight times more tokens per second per GPU than dense models in the 14 to 24 billion parameter range. While throughput drops significantly for conventional models as context grows, Soofi S stays nearly flat from 4,000 to 256,000 tokens. The only model that shows similar behavior in the measurements is Alibaba's Qwen3.5 35B-A3B , which also uses a hybrid architecture.\nA training mix built around German\nThe consortium processed about 27 trillion tokens in total, split across three phases. In the first phase, the model learns language fundamentals from roughly 20 trillion tokens drawn from a broad mix of web, code, math, and domain-specific texts. A second phase follows with about 6 trillion tokens from higher-quality sources, designed to sharpen the patterns learned earlier. A shorter third phase then extends the context window by training on very long documents of up to one million tokens. Ad\nAcross the three training phases, the data mix shifts toward higher-quality sources and a significantly larger share of German-language data. | Image: Soofi\nThe deliberate focus on German is central. In the first phase, German makes up 7.2 percent of the training mix; in the second phase, that share rises to 15.3 percent. In Nvidia's Nemotron reference recipe, all non-English languages combined account for only about 5 percent.\nFor data sources, the consortium combines German web text from HPLT, the openly licensed German Commons corpus, German portions of FinePDFs and FineWiki, and the commercially licensed Genios corpus containing 193 million newspaper articles from 916 German publications. Machine-translated and synthetically generated German texts round out the mix. Ad\nDEC_D_Incontent-2\nTop open-model scores in both German and English\nIn evaluations against 16 other open models, Soofi S leads all fully open models on aggregate scores for both German and English, according to the report. That includes OLMo 3 32B from the Allen Institute for AI and Apertus 70B from ETH Zurich and EPFL. Against every European sovereign baseline, the model comes out ahead on all German benchmarks in the suite, sometimes by double-digit margins. Ad\nAmong fully open-source models, Soofi S takes the top spot in every category, including against much larger models like Apertus 70B. | Image: Soofi\nOn code benchmarks, Soofi S scores 73.8 percent on HumanEval, 70.2 on MBPP, and 84.2 on the German MBPP variant, the best results among open-source peers. On INCLUDE-DE, a test for Germany-specific regional knowledge, Soofi S ties for first place at 61.2 points with the larger Qwen3.5 35B-A3B. Compared to the Nemotron baseline, the German data recipe improves language proficiency by 15.1 points and the science test GPQA-Diamond by 9.6 points, without sacrificing English performance.\nSoofi S takes first place on every German-language benchmark in the comparison group, sometimes by double-digit margins. | Image: Soofi\nSoofi S doesn't do as well on German competition math, where it scores 56 points on Minerva MATH-DE, well behind Qwen3.5 35B-A3B (76.5) and Gemma 3 27B (65.6). It also lags on open factual retrieval in NaturalQuestions. The latter likely relates to having only 3 billion active parameters, which can store less world knowledge than a dense 27B model.\nAgainst larger open-weight models, Soofi S stays competitive and consistently outperforms its architecturally identical reference, Nemotron 3 Nano. | Image: Soofi\nThe RULER long-context test also reveals a specific weakness: When the model has to extract frequently occurring words from a long text, Soofi S's hit rate drops to around 3 percent beyond 32,000 tokens of context, while the comparable Nemotron model still manages 60 to 64 percent. The authors attribute this to the fact that their long-context training data contains many long documents but lacks synthetic data designed for extraction tasks. On the remaining twelve RULER tasks, both models perform about the same.\nSovereign infrastructure and documented openness\nThe training run took place between March and May on up to 512 Nvidia B200 GPUs at Deutsche Telekom's Industrial AI Cloud in Munich, totaling about 253,000 GPU-hours. According to the report, the facility runs entirely on renewable energy, is cooled with water from the Eisbach canal, and feeds waste heat into the surrounding Tucherpark neighborhood. Soofi S was one of the first major training runs on this infrastructure.\nBehind Soofi is a consortium of German research institutions and companies, coordinated by the German AI Association and funded by the German Federal Ministry for Economic Affairs and Energy as part of the European IPCEI-CIS program.\nParticipants include the Fraunhofer Institutes IAIS and IIS, the German Research Center for Artificial Intelligence (DFKI), TU Darmstadt, the University of Würzburg, the L3S Research Center, the Berlin University of Applied Sciences, and AI companies Ellamind and Merantix Momentum. The project's goal is to build an open European AI model family that can run on sovereign infrastructure and be tested in industrial applications.\nThe researchers are releasing model weights along with selected intermediate checkpoints , the complete training and evaluation code, and a detailed data inventory listing raw token counts, epoch numbers, and effective contributions per source. Sources that were reviewed but excluded are also documented. According to the team, this means Soofi S meets the Open Source AI Definition 1.0 from the Open Source Initiative .\nA stricter proposal for a European open-data definition, which would require every single training token to be freely distributable, isn't met because of the 1.3 percent share of Genios data, which carries a commercial license. The report says about 99 percent of the training mix can be independently reconstructed. The exact license for the model's release hasn't been finalized yet.\nAs lead author Michael Fromm writes , Soofi S positions itself between broadly multilingual European sovereignty projects like EuroLLM or Teuken , which cover many languages, and the highest-performing international open-weight models. According to the project website, the consortium is looking for industry partners for the next phase to test the model in applications involving technical documents, code generation, and agent-based systems.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Soofi\nBETA-TEST\n&times;\nwpDiscuz\nInsert",
+  "clean_text": "Ad\nSkip to content\nGerman AI consortium releases Soofi S, an open 30B model that tops benchmarks in both English and German\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJul 13, 2026\nNano Banana Pro prompted by THE DECODER\nKey Points\nA German research consortium has released the open-source language model Soofi S, which was trained entirely on Deutsche Telekom's AI cloud infrastructure.\nThe model uses a resource-efficient hybrid architecture that activates only 3.2 of its 31.6 billion parameters per token, keeping processing speed constant even with very long inputs.\nWith a strong focus on German training data, Soofi S outperforms other fully open models, such as Olmo 3 32B and Apertus 70B, in benchmarks for German, English, and programming tasks.\nSoofi S is one of the first large language models trained entirely on Deutsche Telekom's Industrial AI Cloud in Munich. The open 30B model uses a lean hybrid architecture and a training mix deliberately weighted toward German.\nA German research consortium coordinated by the KI Bundesverband (German AI Association) has released Soofi S 30B-A3B , an open language model that, according to its pretraining report , achieves the highest scores on English and German benchmarks among fully open models, surpassing previous leaders like OLMo 3 32B and Apertus 70B .\nThanks to its hybrid Mamba-Transformer architecture, Soofi S maintains throughput even at very long contexts, while dense models like Apertus 70B and Qwen3 32B drop off sharply. | Image: Soofi\nA lean architecture built for long contexts\nSoofi S is a mixture-of-experts model. It contains 31.6 billion parameters in total but activates only about 3.2 billion per generated token. That puts its compute cost closer to a 3B model than a conventional 30B model. The consortium adopts the architecture of Nvidia's Nemotron 3 Nano without modification, a hybrid design combining Mamba-2 layers with standard attention layers. Ad\nThe key difference from typical transformers is memory behavior. In conventional models, the KV cache that stores previous tokens for attention computation grows linearly with context length. With long inputs and many parallel requests, reloading that cache becomes a bottleneck. Only 6 of Soofi S's 52 layers maintain such a cache at all. Ad\nDEC_D_Incontent-1\nThe practical payoff shows up in generation throughput. At a context length of 40,000 tokens with 32 parallel requests, Soofi S generates roughly eight times more tokens per second per GPU than dense models in the 14 to 24 billion parameter range. While throughput drops significantly for conventional models as context grows, Soofi S stays nearly flat from 4,000 to 256,000 tokens. The only model that shows similar behavior in the measurements is Alibaba's Qwen3.5 35B-A3B , which also uses a hybrid architecture.\nA training mix built around German\nThe consortium processed about 27 trillion tokens in total, split across three phases. In the first phase, the model learns language fundamentals from roughly 20 trillion tokens drawn from a broad mix of web, code, math, and domain-specific texts. A second phase follows with about 6 trillion tokens from higher-quality sources, designed to sharpen the patterns learned earlier. A shorter third phase then extends the context window by training on very long documents of up to one million tokens. Ad\nAcross the three training phases, the data mix shifts toward higher-quality sources and a significantly larger share of German-language data. | Image: Soofi\nThe deliberate focus on German is central. In the first phase, German makes up 7.2 percent of the training mix; in the second phase, that share rises to 15.3 percent. In Nvidia's Nemotron reference recipe, all non-English languages combined account for only about 5 percent.\nFor data sources, the consortium combines German web text from HPLT, the openly licensed German Commons corpus, German portions of FinePDFs and FineWiki, and the commercially licensed Genios corpus containing 193 million newspaper articles from 916 German publications. Machine-translated and synthetically generated German texts round out the mix. Ad\nDEC_D_Incontent-2\nTop open-model scores in both German and English\nIn evaluations against 16 other open models, Soofi S leads all fully open models on aggregate scores for both German and English, according to the report. That includes OLMo 3 32B from the Allen Institute for AI and Apertus 70B from ETH Zurich and EPFL. Against every European sovereign baseline, the model comes out ahead on all German benchmarks in the suite, sometimes by double-digit margins. Ad\nAmong fully open-source models, Soofi S takes the top spot in every category, including against much larger models like Apertus 70B. | Image: Soofi\nOn code benchmarks, Soofi S scores 73.8 percent on HumanEval, 70.2 on MBPP, and 84.2 on the German MBPP variant, the best results among open-source peers. On INCLUDE-DE, a test for Germany-specific regional knowledge, Soofi S ties for first place at 61.2 points with the larger Qwen3.5 35B-A3B. Compared to the Nemotron baseline, the German data recipe improves language proficiency by 15.1 points and the science test GPQA-Diamond by 9.6 points, without sacrificing English performance.\nSoofi S takes first place on every German-language benchmark in the comparison group, sometimes by double-digit margins. | Image: Soofi\nSoofi S doesn't do as well on German competition math, where it scores 56 points on Minerva MATH-DE, well behind Qwen3.5 35B-A3B (76.5) and Gemma 3 27B (65.6). It also lags on open factual retrieval in NaturalQuestions. The latter likely relates to having only 3 billion active parameters, which can store less world knowledge than a dense 27B model.\nAgainst larger open-weight models, Soofi S stays competitive and consistently outperforms its architecturally identical reference, Nemotron 3 Nano. | Image: Soofi\nThe RULER long-context test also reveals a specific weakness: When the model has to extract frequently occurring words from a long text, Soofi S's hit rate drops to around 3 percent beyond 32,000 tokens of context, while the comparable Nemotron model still manages 60 to 64 percent. The authors attribute this to the fact that their long-context training data contains many long documents but lacks synthetic data designed for extraction tasks. On the remaining twelve RULER tasks, both models perform about the same.\nSovereign infrastructure and documented openness\nThe training run took place between March and May on up to 512 Nvidia B200 GPUs at Deutsche Telekom's Industrial AI Cloud in Munich, totaling about 253,000 GPU-hours. According to the report, the facility runs entirely on renewable energy, is cooled with water from the Eisbach canal, and feeds waste heat into the surrounding Tucherpark neighborhood. Soofi S was one of the first major training runs on this infrastructure.\nBehind Soofi is a consortium of German research institutions and companies, coordinated by the German AI Association and funded by the German Federal Ministry for Economic Affairs and Energy as part of the European IPCEI-CIS program.\nParticipants include the Fraunhofer Institutes IAIS and IIS, the German Research Center for Artificial Intelligence (DFKI), TU Darmstadt, the University of Würzburg, the L3S Research Center, the Berlin University of Applied Sciences, and AI companies Ellamind and Merantix Momentum. The project's goal is to build an open European AI model family that can run on sovereign infrastructure and be tested in industrial applications.\nThe researchers are releasing model weights along with selected intermediate checkpoints , the complete training and evaluation code, and a detailed data inventory listing raw token counts, epoch numbers, and effective contributions per source. Sources that were reviewed but excluded are also documented. According to the team, this means Soofi S meets the Open Source AI Definition 1.0 from the Open Source Initiative .\nA stricter proposal for a European open-data definition, which would require every single training token to be freely distributable, isn't met because of the 1.3 percent share of Genios data, which carries a commercial license. The report says about 99 percent of the training mix can be independently reconstructed. The exact license for the model's release hasn't been finalized yet.\nAs lead author Michael Fromm writes , Soofi S positions itself between broadly multilingual European sovereignty projects like EuroLLM or Teuken , which cover many languages, and the highest-performing international open-weight models. According to the project website, the consortium is looking for industry partners for the next phase to test the model in applications involving technical documents, code generation, and agent-based systems.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Soofi\nBETA-TEST\n&times;\nwpDiscuz\nInsert",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-14/r-062-german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benc.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-14/r-062-german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benc.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 9106,
+    "paragraph_count": 35,
+    "sentence_count": 59,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.001,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 9106,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "4904983f146b1f01",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "merged_provider_duplicates",
+  "url_hash": "df7265f1cfb8ac3e",
+  "content_hash": "4904983f146b1f01",
+  "full_text_hash": "4904983f146b1f01",
+  "semantic_hash": "22a2ffd3356231d9",
+  "duplicate_of": "merged 1 duplicate provider hit(s) before Raw selection",
+  "first_seen_at": "2026-07-13T00:00:00.000Z",
+  "last_seen_at": "2026-07-14T01:56:51.691Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "A German research consortium has released Soofi S 30B-A3B, an open language model trained entirely on Deutsche Telekom's cloud infrastructure in Munich. The model uses an efficient hybrid architecture that activates only a fraction of its 31.6 billion parameters per token, keeping throughput steady even at very long contexts. With a training dataset deliberately weighted toward German, Soofi S tops all fully open competitors on both German and English benchmarks. The article German AI c",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Ad Skip to content German AI consortium releases Soofi S, an open 30B model that tops benchmarks in both English and German Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jul 13, 2026 Nano Banana Pro prompted by THE DECODER Key Points A German research consortium has released the open-source language model Soofi S, which was trained entirely on Deutsche Telekom's AI cloud infrastructure.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The model uses a resource-efficient hybrid architecture that activates only 3.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "6 billion parameters per token, keeping processing speed constant even with very long inputs.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "With a strong focus on German training data, Soofi S outperforms other fully open models, such as Olmo 3 32B and Apertus 70B, in benchmarks for German, English, and programming tasks.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Soofi S is one of the first large language models trained entirely on Deutsche Telekom's Industrial AI Cloud in Munich.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-14T01:56:51.691Z",
+  "business_elements": {
+    "companies": [
+      "The Decoder AI News",
+      "Nvidia"
+    ],
+    "products": [
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "30B",
+      "3B",
+      "31.6 billion",
+      "13",
+      "2026",
+      "3.2",
+      "3",
+      "32B"
+    ],
+    "quotes": [
+      "AI Radar"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Ad Skip to content German AI consortium releases Soofi S, an open 30B model that tops benchmarks in both English and German Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jul 13, 2026 Nano Banana Pro prompted by THE DECODER Key Points A German research consortium has released the open-source language model Soofi S, which was trained entirely on Deutsche Telekom's AI cloud infrastructure.",
+      "The model uses a resource-efficient hybrid architecture that activates only 3.",
+      "With a strong focus on German training data, Soofi S outperforms other fully open models, such as Olmo 3 32B and Apertus 70B, in benchmarks for German, English, and programming tasks."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# German AI consortium releases Soofi S, an open 30B model that tops benchmarks in both English and German\n\n- raw_id: R-062\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german/\n- source_name: The Decoder AI News\n- collected_at: 2026-07-14T01:56:51.691Z\n\n## clean_text\n\nAd\nSkip to content\nGerman AI consortium releases Soofi S, an open 30B model that tops benchmarks in both English and German\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJul 13, 2026\nNano Banana Pro prompted by THE DECODER\nKey Points\nA German research consortium has released the open-source language model Soofi S, which was trained entirely on Deutsche Telekom's AI cloud infrastructure.\nThe model uses a resource-efficient hybrid architecture that activates only 3.2 of its 31.6 billion parameters per token, keeping processing speed constant even with very long inputs.\nWith a strong focus on German training data, Soofi S outperforms other fully open models, such as Olmo 3 32B and Apertus 70B, in benchmarks for German, English, and programming tasks.\nSoofi S is one of the first large language models trained entirely on Deutsche Telekom's Industrial AI Cloud in Munich. The open 30B model uses a lean hybrid architecture and a training mix deliberately weighted toward German.\nA German research consortium coordinated by the KI Bundesverband (German AI Association) has released Soofi S 30B-A3B , an open language model that, according to its pretraining report , achieves the highest scores on English and German benchmarks among fully open models, surpassing previous leaders like OLMo 3 32B and Apertus 70B .\nThanks to its hybrid Mamba-Transformer architecture, Soofi S maintains throughput even at very long contexts, while dense models like Apertus 70B and Qwen3 32B drop off sharply. | Image: Soofi\nA lean architecture built for long contexts\nSoofi S is a mixture-of-experts model. It contains 31.6 billion parameters in total but activates only about 3.2 billion per generated token. That puts its compute cost closer to a 3B model than a conventional 30B model. The consortium adopts the architecture of Nvidia's Nemotron 3 Nano without modification, a hybrid design combining Mamba-2 layers with standard attention layers. Ad\nThe key difference from typical transformers is memory behavior. In conventional models, the KV cache that stores previous tokens for attention computation grows linearly with context length. With long inputs and many parallel requests, reloading that cache becomes a bottleneck. Only 6 of Soofi S's 52 layers maintain such a cache at all. Ad\nDEC_D_Incontent-1\nThe practical payoff shows up in generation throughput. At a context length of 40,000 tokens with 32 parallel requests, Soofi S generates roughly eight times more tokens per second per GPU than dense models in the 14 to 24 billion parameter range. While throughput drops significantly for conventional models as context grows, Soofi S stays nearly flat from 4,000 to 256,000 tokens. The only model that shows similar behavior in the measurements is Alibaba's Qwen3.5 35B-A3B , which also uses a hybrid architecture.\nA training mix built around German\nThe consortium processed about 27 trillion tokens in total, split across three phases. In the first phase, the model learns language fundamentals from roughly 20 trillion tokens drawn from a broad mix of web, code, math, and domain-specific texts. A second phase follows with about 6 trillion tokens from higher-quality sources, designed to sharpen the patterns learned earlier. A shorter third phase then extends the context window by training on very long documents of up to one million tokens. Ad\nAcross the three training phases, the data mix shifts toward higher-quality sources and a significantly larger share of German-language data. | Image: Soofi\nThe deliberate focus on German is central. In the first phase, German makes up 7.2 percent of the training mix; in the second phase, that share rises to 15.3 percent. In Nvidia's Nemotron reference recipe, all non-English languages combined account for only about 5 percent.\nFor data sources, the consortium combines German web text from HPLT, the openly licensed German Commons corpus, German portions of FinePDFs and FineWiki, and the commercially licensed Genios corpus containing 193 million newspaper articles from 916 German publications. Machine-translated and synthetically generated German texts round out the mix. Ad\nDEC_D_Incontent-2\nTop open-model scores in both German and English\nIn evaluations against 16 other open models, Soofi S leads all fully open models on aggregate scores for both German and English, according to the report. That includes OLMo 3 32B from the Allen Institute for AI and Apertus 70B from ETH Zurich and EPFL. Against every European sovereign baseline, the model comes out ahead on all German benchmarks in the suite, sometimes by double-digit margins. Ad\nAmong fully open-source models, Soofi S takes the top spot in every category, including against much larger models like Apertus 70B. | Image: Soofi\nOn code benchmarks, Soofi S scores 73.8 percent on HumanEval, 70.2 on MBPP, and 84.2 on the German MBPP variant, the best results among open-source peers. On INCLUDE-DE, a test for Germany-specific regional knowledge, Soofi S ties for first place at 61.2 points with the larger Qwen3.5 35B-A3B. Compared to the Nemotron baseline, the German data recipe improves language proficiency by 15.1 points and the science test GPQA-Diamond by 9.6 points, without sacrificing English performance.\nSoofi S takes first place on every German-language benchmark in the comparison group, sometimes by double-digit margins. | Image: Soofi\nSoofi S doesn't do as well on German competition math, where it scores 56 points on Minerva MATH-DE, well behind Qwen3.5 35B-A3B (76.5) and Gemma 3 27B (65.6). It also lags on open factual retrieval in NaturalQuestions. The latter likely relates to having only 3 billion active parameters, which can store less world knowledge than a dense 27B model.\nAgainst larger open-weight models, Soofi S stays competitive and consistently outperforms its architecturally identical reference, Nemotron 3 Nano. | Image: Soofi\nThe RULER long-context test also reveals a specific weakness: When the model has to extract frequently occurring words from a long text, Soofi S's hit rate drops to around 3 percent beyond 32,000 tokens of context, while the comparable Nemotron model still manages 60 to 64 percent. The authors attribute this to the fact that their long-context training data contains many long documents but lacks synthetic data designed for extraction tasks. On the remaining twelve RULER tasks, both models perform about the same.\nSovereign infrastructure and documented openness\nThe training run took place between March and May on up to 512 Nvidia B200 GPUs at Deutsche Telekom's Industrial AI Cloud in Munich, totaling about 253,000 GPU-hours. According to the report, the facility runs entirely on renewable energy, is cooled with water from the Eisbach canal, and feeds waste heat into the surrounding Tucherpark neighborhood. Soofi S was one of the first major training runs on this infrastructure.\nBehind Soofi is a consortium of German research institutions and companies, coordinated by the German AI Association and funded by the German Federal Ministry for Economic Affairs and Energy as part of the European IPCEI-CIS program.\nParticipants include the Fraunhofer Institutes IAIS and IIS, the German Research Center for Artificial Intelligence (DFKI), TU Darmstadt, the University of Würzburg, the L3S Research Center, the Berlin University of Applied Sciences, and AI companies Ellamind and Merantix Momentum. The project's goal is to build an open European AI model family that can run on sovereign infrastructure and be tested in industrial applications.\nThe researchers are releasing model weights along with selected intermediate checkpoints , the complete training and evaluation code, and a detailed data inventory listing raw token counts, epoch numbers, and effective contributions per source. Sources that were reviewed but excluded are also documented. According to the team, this means Soofi S meets the Open Source AI Definition 1.0 from the Open Source Initiative .\nA stricter proposal for a European open-data definition, which would require every single training token to be freely distributable, isn't met because of the 1.3 percent share of Genios data, which carries a commercial license. The report says about 99 percent of the training mix can be independently reconstructed. The exact license for the model's release hasn't been finalized yet.\nAs lead author Michael Fromm writes , Soofi S positions itself between broadly multilingual European sovereignty projects like EuroLLM or Teuken , which cover many languages, and the highest-performing international open-weight models. According to the project website, the consortium is looking for industry partners for the next phase to test the model in applications involving technical documents, code generation, and agent-based systems.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Soofi\nBETA-TEST\n&times;\nwpDiscuz\nInsert\n\n## full_text\n\nAd\nSkip to content\nGerman AI consortium releases Soofi S, an open 30B model that tops benchmarks in both English and German\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJul 13, 2026\nNano Banana Pro prompted by THE DECODER\nKey Points\nA German research consortium has released the open-source language model Soofi S, which was trained entirely on Deutsche Telekom's AI cloud infrastructure.\nThe model uses a resource-efficient hybrid architecture that activates only 3.2 of its 31.6 billion parameters per token, keeping processing speed constant even with very long inputs.\nWith a strong focus on German training data, Soofi S outperforms other fully open models, such as Olmo 3 32B and Apertus 70B, in benchmarks for German, English, and programming tasks.\nSoofi S is one of the first large language models trained entirely on Deutsche Telekom's Industrial AI Cloud in Munich. The open 30B model uses a lean hybrid architecture and a training mix deliberately weighted toward German.\nA German research consortium coordinated by the KI Bundesverband (German AI Association) has released Soofi S 30B-A3B , an open language model that, according to its pretraining report , achieves the highest scores on English and German benchmarks among fully open models, surpassing previous leaders like OLMo 3 32B and Apertus 70B .\nThanks to its hybrid Mamba-Transformer architecture, Soofi S maintains throughput even at very long contexts, while dense models like Apertus 70B and Qwen3 32B drop off sharply. | Image: Soofi\nA lean architecture built for long contexts\nSoofi S is a mixture-of-experts model. It contains 31.6 billion parameters in total but activates only about 3.2 billion per generated token. That puts its compute cost closer to a 3B model than a conventional 30B model. The consortium adopts the architecture of Nvidia's Nemotron 3 Nano without modification, a hybrid design combining Mamba-2 layers with standard attention layers. Ad\nThe key difference from typical transformers is memory behavior. In conventional models, the KV cache that stores previous tokens for attention computation grows linearly with context length. With long inputs and many parallel requests, reloading that cache becomes a bottleneck. Only 6 of Soofi S's 52 layers maintain such a cache at all. Ad\nDEC_D_Incontent-1\nThe practical payoff shows up in generation throughput. At a context length of 40,000 tokens with 32 parallel requests, Soofi S generates roughly eight times more tokens per second per GPU than dense models in the 14 to 24 billion parameter range. While throughput drops significantly for conventional models as context grows, Soofi S stays nearly flat from 4,000 to 256,000 tokens. The only model that shows similar behavior in the measurements is Alibaba's Qwen3.5 35B-A3B , which also uses a hybrid architecture.\nA training mix built around German\nThe consortium processed about 27 trillion tokens in total, split across three phases. In the first phase, the model learns language fundamentals from roughly 20 trillion tokens drawn from a broad mix of web, code, math, and domain-specific texts. A second phase follows with about 6 trillion tokens from higher-quality sources, designed to sharpen the patterns learned earlier. A shorter third phase then extends the context window by training on very long documents of up to one million tokens. Ad\nAcross the three training phases, the data mix shifts toward higher-quality sources and a significantly larger share of German-language data. | Image: Soofi\nThe deliberate focus on German is central. In the first phase, German makes up 7.2 percent of the training mix; in the second phase, that share rises to 15.3 percent. In Nvidia's Nemotron reference recipe, all non-English languages combined account for only about 5 percent.\nFor data sources, the consortium combines German web text from HPLT, the openly licensed German Commons corpus, German portions of FinePDFs and FineWiki, and the commercially licensed Genios corpus containing 193 million newspaper articles from 916 German publications. Machine-translated and synthetically generated German texts round out the mix. Ad\nDEC_D_Incontent-2\nTop open-model scores in both German and English\nIn evaluations against 16 other open models, Soofi S leads all fully open models on aggregate scores for both German and English, according to the report. That includes OLMo 3 32B from the Allen Institute for AI and Apertus 70B from ETH Zurich and EPFL. Against every European sovereign baseline, the model comes out ahead on all German benchmarks in the suite, sometimes by double-digit margins. Ad\nAmong fully open-source models, Soofi S takes the top spot in every category, including against much larger models like Apertus 70B. | Image: Soofi\nOn code benchmarks, Soofi S scores 73.8 percent on HumanEval, 70.2 on MBPP, and 84.2 on the German MBPP variant, the best results among open-source peers. On INCLUDE-DE, a test for Germany-specific regional knowledge, Soofi S ties for first place at 61.2 points with the larger Qwen3.5 35B-A3B. Compared to the Nemotron baseline, the German data recipe improves language proficiency by 15.1 points and the science test GPQA-Diamond by 9.6 points, without sacrificing English performance.\nSoofi S takes first place on every German-language benchmark in the comparison group, sometimes by double-digit margins. | Image: Soofi\nSoofi S doesn't do as well on German competition math, where it scores 56 points on Minerva MATH-DE, well behind Qwen3.5 35B-A3B (76.5) and Gemma 3 27B (65.6). It also lags on open factual retrieval in NaturalQuestions. The latter likely relates to having only 3 billion active parameters, which can store less world knowledge than a dense 27B model.\nAgainst larger open-weight models, Soofi S stays competitive and consistently outperforms its architecturally identical reference, Nemotron 3 Nano. | Image: Soofi\nThe RULER long-context test also reveals a specific weakness: When the model has to extract frequently occurring words from a long text, Soofi S's hit rate drops to around 3 percent beyond 32,000 tokens of context, while the comparable Nemotron model still manages 60 to 64 percent. The authors attribute this to the fact that their long-context training data contains many long documents but lacks synthetic data designed for extraction tasks. On the remaining twelve RULER tasks, both models perform about the same.\nSovereign infrastructure and documented openness\nThe training run took place between March and May on up to 512 Nvidia B200 GPUs at Deutsche Telekom's Industrial AI Cloud in Munich, totaling about 253,000 GPU-hours. According to the report, the facility runs entirely on renewable energy, is cooled with water from the Eisbach canal, and feeds waste heat into the surrounding Tucherpark neighborhood. Soofi S was one of the first major training runs on this infrastructure.\nBehind Soofi is a consortium of German research institutions and companies, coordinated by the German AI Association and funded by the German Federal Ministry for Economic Affairs and Energy as part of the European IPCEI-CIS program.\nParticipants include the Fraunhofer Institutes IAIS and IIS, the German Research Center for Artificial Intelligence (DFKI), TU Darmstadt, the University of Würzburg, the L3S Research Center, the Berlin University of Applied Sciences, and AI companies Ellamind and Merantix Momentum. The project's goal is to build an open European AI model family that can run on sovereign infrastructure and be tested in industrial applications.\nThe researchers are releasing model weights along with selected intermediate checkpoints , the complete training and evaluation code, and a detailed data inventory listing raw token counts, epoch numbers, and effective contributions per source. Sources that were reviewed but excluded are also documented. According to the team, this means Soofi S meets the Open Source AI Definition 1.0 from the Open Source Initiative .\nA stricter proposal for a European open-data definition, which would require every single training token to be freely distributable, isn't met because of the 1.3 percent share of Genios data, which carries a commercial license. The report says about 99 percent of the training mix can be independently reconstructed. The exact license for the model's release hasn't been finalized yet.\nAs lead author Michael Fromm writes , Soofi S positions itself between broadly multilingual European sovereignty projects like EuroLLM or Teuken , which cover many languages, and the highest-performing international open-weight models. According to the project website, the consortium is looking for industry partners for the next phase to test the model in applications involving technical documents, code generation, and agent-based systems.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Soofi\nBETA-TEST\n&times;\nwpDiscuz\nInsert\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 88\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] A German research consortium has released Soofi S 30B-A3B, an open language model trained entirely on Deutsche Telekom's cloud infrastructure in Munich. The model uses an efficient hybrid architecture that activates only a fraction of its 31.6 billion parameters per token, keeping throughput steady even at very long contexts. With a training dataset deliberately weighted toward German, Soofi S tops all fully open competitors on both German and English benchmarks. The article German AI c\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] Ad Skip to content German AI consortium releases Soofi S, an open 30B model that tops benchmarks in both English and German Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jul 13, 2026 Nano Banana Pro prompted by THE DECODER Key Points A German research consortium has released the open-source language model Soofi S, which was trained entirely on Deutsche Telekom's AI cloud infrastructure.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The model uses a resource-efficient hybrid architecture that activates only 3.\n4. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 6 billion parameters per token, keeping processing speed constant even with very long inputs.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] With a strong focus on German training data, Soofi S outperforms other fully open models, such as Olmo 3 32B and Apertus 70B, in benchmarks for German, English, and programming tasks.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Soofi S is one of the first large language models trained entirely on Deutsche Telekom's Industrial AI Cloud in Munich.\n"
+}

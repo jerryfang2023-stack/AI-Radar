@@ -1,0 +1,288 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-009",
+  "title": "Hebbia 测试 Claude Fable 5：金融专用基准测试中准确率提升约 20%",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://claude.com/blog/working-at-the-frontier-how-hebbia-builds-ai-for-financial-diligence-that-cant-miss-a-detail",
+  "canonical_url": "https://claude.com/blog/working-at-the-frontier-how-hebbia-builds-ai-for-financial-diligence-that-cant-miss-a-detail",
+  "source_name": "Claude：Blog（网页）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-12T16:00:00.000Z",
+  "collected_at": "2026-07-14T01:56:51.283Z",
+  "language": "mixed",
+  "full_text": "Hebbia is an AI platform built for the rigor of institutional finance, serving more than a third of the top 50 asset managers along with tier-1 investment banks and law firms. Divya Mehta, the company's founding product manager, spends roughly half her time with its largest investment banking, private equity, and credit customers.\nThose customers make decisions based on analyses that span thousands of dense documents, where a wrong number can change the outcome of an entire deal.\nHow Hebbia holds the line on accuracy\nA banker or investor weighing an opportunity has to work through all the data that could impact the decision, including the company's public filings, its credit agreements, internal documents, and structured data like information from a CRM. Hebbia's meta-prompting turns plain-language requests into prompts, and then Claude runs each step of the analysis across hundreds of documents. Each answer lands in its own cell on a grid in Hebbia's Matrix, enabling full transparency, traceability, and steerability.\nKeeping those answers accurate at scale is the work of Hebbia's applied AI research team, led by Adithya Ramanathan. For Ramanathan, the point of that work is finding signals: getting a model to draw on the right data, in the right context, and surface what a customer wants to know.\n\"When you're connecting it to the right data and putting it in the right ecosystem,\" Ramanathan says, \"that's when you get the alpha that finance professionals actually chase.\"\nGetting there means running every new model through Hebbia's finance-specific benchmark, head to head against the model it would replace, and expanding what the benchmark measures with each release to keep pace as models improve. The benchmark is built to be hard on purpose.\n\"The bar is extremely high, and our customers hold us to that extremely high bar—and rightfully so,\" Mehta says. \"At the end of the day, they're making investment decisions at a very large scale based on the analysis and final work product built in Hebbia.\"\nThe team at Hebbia runs every new Claude model through finance-specific benchmarks that run head-to-head against the model it would replace. Clearing Hebbia's evals by the widest margin yet\nJoe Renner, a researcher on the applied AI team, runs each new Claude model against that benchmark, with a battery of tests replicating key finance knowledge worker use cases. One such test covers question answering and citation finding over financial documents. Another test runs through Hebbia's agent system, with the tools its chat product uses, on the kind of open-ended, multi-source analysis a customer actually does.\nClaude Fable 5 cleared both by the widest margin Renner had measured. On the question-answering and citation test, it posted about a 20% relative gain in accuracy over financial documents, the best he had seen from any new model. Citation match held roughly steady—Renner believes the gain comes from the model better understanding the evidence it finds.\n\"It comes down to two seemingly fundamental qualities: the ability to find the right information from a dense data set, and then synthesize it correctly,\" Divya says. \"These seem like fundamental model capabilities, but they have massive impact when we think about finance and research workflows.\" On the agent run, it held every part of a multi-part request at once, answering all of them and citing each answer back to its source.\nClaude Fable 5 also showed more reach. On open-ended analysis, it reasoned from a wider cross-section of the data and arrived at conclusions the team thought were worth a closer look. Renner traces that to how the model holds a long task together: it keeps every part of a request in view, prompts its own sub-agents and tools so the right facts come back, and grounds each claim in the source rather than inferring it.\nSetting a new standard for deal diligence with Claude Fable 5\nThe information that gives customers an edge usually sits in unstructured, proprietary documents.\nThose have been harder to analyze at scale than the structured, quantitative data finance already models well. Hebbia built Matrix to make that qualitative work systematic, and every model generation widens what it can take on.\nThat might be a data room with thousands of documents, where the work is finding the relevant signal, citing it, and drafting each section of an investment memo. Or it might be analyzing every document tied to a credit deal (the credit agreement, amendments, side letters, each running hundreds of dense technical pages) and extracting the full covenant package, financial terms and operating restrictions alike, from that unstructured mass.\n\"These are actually the types of documents that Anthropic models have always done really well at,\" Mehta says.\nWith earlier Sonnet and Opus models, Matrix could already pull out and synthesize a credit agreement's covenants—the dense protections a lender writes in for itself. With Claude Fable 5, Hebbia is reaching for the rest of the job: the multi-step analysis on top of those covenants, comparing them against live monitoring data, flagging risks, all the way to a first draft of the covenant review and an internal memo. That review is something credit firms used to pay outside teams a great deal to produce by hand.\nClaude Fable 5 enables Matrix, Hebbia's AI platform built for financial professionals, to take on longer-running, multi-step tasks like synthesizing credit agreement coven What's next\nNow that models like Claude Fable 5 can carry this work end to end, the comparison is the specialist hours it replaces.\nBefore AI, when a managing director needed a deck to pitch a CEO, it would take a junior banker 2-3 days to learn the company, pull financials, and build slides. In the pre-Opus days, the timeline to produce a first draft compressed by 12 to 24 hours, and with earlier Opus models on Hebbia, Mehta says, it dropped even further, taking about a day to run end-to-end. Hebbia has since codified the whole job into a Matrix that gathers the data across sources in a set of deterministic agentic steps, does the analysis, and builds the final deck, financial model, and internal research in a couple of minutes, so the banker can spend the time on which buyers to pursue and how to position them. Claude Fable 5 tightens it further, she says.\nDecomposing the work into steps still matters, \"no matter how brilliant the model is,\" because firms want control over which documents feed the analysis and how each step is built. So Hebbia is adopting the Claude Agent SDK to compose these jobs as smaller, repeatable, checked steps rather than a single model run.\n\"Compressing the deal lifecycle has a massive impact on a firm's ability to compete for those investments,\" Mehta says. She hears it in customer conversations. Two or three years ago the questions were defensive, about hallucinations and whether the math was right. \"Today, those conversations have changed completely. They're: how can I automate more of my workflow? How do I sequence more steps together? How can I generate ten, fifteen, twenty slide decks in one click with high fidelity and consistency?\"\nGet started with Claude Fable 5.\nNo items found.\nPrev Prev\n0 / 5\nNext Next\neBook\nFAQ\nNo items found.",
+  "clean_text": "Hebbia is an AI platform built for the rigor of institutional finance, serving more than a third of the top 50 asset managers along with tier-1 investment banks and law firms. Divya Mehta, the company's founding product manager, spends roughly half her time with its largest investment banking, private equity, and credit customers.\nThose customers make decisions based on analyses that span thousands of dense documents, where a wrong number can change the outcome of an entire deal.\nHow Hebbia holds the line on accuracy\nA banker or investor weighing an opportunity has to work through all the data that could impact the decision, including the company's public filings, its credit agreements, internal documents, and structured data like information from a CRM. Hebbia's meta-prompting turns plain-language requests into prompts, and then Claude runs each step of the analysis across hundreds of documents. Each answer lands in its own cell on a grid in Hebbia's Matrix, enabling full transparency, traceability, and steerability.\nKeeping those answers accurate at scale is the work of Hebbia's applied AI research team, led by Adithya Ramanathan. For Ramanathan, the point of that work is finding signals: getting a model to draw on the right data, in the right context, and surface what a customer wants to know.\n\"When you're connecting it to the right data and putting it in the right ecosystem,\" Ramanathan says, \"that's when you get the alpha that finance professionals actually chase.\"\nGetting there means running every new model through Hebbia's finance-specific benchmark, head to head against the model it would replace, and expanding what the benchmark measures with each release to keep pace as models improve. The benchmark is built to be hard on purpose.\n\"The bar is extremely high, and our customers hold us to that extremely high bar—and rightfully so,\" Mehta says. \"At the end of the day, they're making investment decisions at a very large scale based on the analysis and final work product built in Hebbia.\"\nThe team at Hebbia runs every new Claude model through finance-specific benchmarks that run head-to-head against the model it would replace. Clearing Hebbia's evals by the widest margin yet\nJoe Renner, a researcher on the applied AI team, runs each new Claude model against that benchmark, with a battery of tests replicating key finance knowledge worker use cases. One such test covers question answering and citation finding over financial documents. Another test runs through Hebbia's agent system, with the tools its chat product uses, on the kind of open-ended, multi-source analysis a customer actually does.\nClaude Fable 5 cleared both by the widest margin Renner had measured. On the question-answering and citation test, it posted about a 20% relative gain in accuracy over financial documents, the best he had seen from any new model. Citation match held roughly steady—Renner believes the gain comes from the model better understanding the evidence it finds.\n\"It comes down to two seemingly fundamental qualities: the ability to find the right information from a dense data set, and then synthesize it correctly,\" Divya says. \"These seem like fundamental model capabilities, but they have massive impact when we think about finance and research workflows.\" On the agent run, it held every part of a multi-part request at once, answering all of them and citing each answer back to its source.\nClaude Fable 5 also showed more reach. On open-ended analysis, it reasoned from a wider cross-section of the data and arrived at conclusions the team thought were worth a closer look. Renner traces that to how the model holds a long task together: it keeps every part of a request in view, prompts its own sub-agents and tools so the right facts come back, and grounds each claim in the source rather than inferring it.\nSetting a new standard for deal diligence with Claude Fable 5\nThe information that gives customers an edge usually sits in unstructured, proprietary documents.\nThose have been harder to analyze at scale than the structured, quantitative data finance already models well. Hebbia built Matrix to make that qualitative work systematic, and every model generation widens what it can take on.\nThat might be a data room with thousands of documents, where the work is finding the relevant signal, citing it, and drafting each section of an investment memo. Or it might be analyzing every document tied to a credit deal (the credit agreement, amendments, side letters, each running hundreds of dense technical pages) and extracting the full covenant package, financial terms and operating restrictions alike, from that unstructured mass.\n\"These are actually the types of documents that Anthropic models have always done really well at,\" Mehta says.\nWith earlier Sonnet and Opus models, Matrix could already pull out and synthesize a credit agreement's covenants—the dense protections a lender writes in for itself. With Claude Fable 5, Hebbia is reaching for the rest of the job: the multi-step analysis on top of those covenants, comparing them against live monitoring data, flagging risks, all the way to a first draft of the covenant review and an internal memo. That review is something credit firms used to pay outside teams a great deal to produce by hand.\nClaude Fable 5 enables Matrix, Hebbia's AI platform built for financial professionals, to take on longer-running, multi-step tasks like synthesizing credit agreement coven What's next\nNow that models like Claude Fable 5 can carry this work end to end, the comparison is the specialist hours it replaces.\nBefore AI, when a managing director needed a deck to pitch a CEO, it would take a junior banker 2-3 days to learn the company, pull financials, and build slides. In the pre-Opus days, the timeline to produce a first draft compressed by 12 to 24 hours, and with earlier Opus models on Hebbia, Mehta says, it dropped even further, taking about a day to run end-to-end. Hebbia has since codified the whole job into a Matrix that gathers the data across sources in a set of deterministic agentic steps, does the analysis, and builds the final deck, financial model, and internal research in a couple of minutes, so the banker can spend the time on which buyers to pursue and how to position them. Claude Fable 5 tightens it further, she says.\nDecomposing the work into steps still matters, \"no matter how brilliant the model is,\" because firms want control over which documents feed the analysis and how each step is built. So Hebbia is adopting the Claude Agent SDK to compose these jobs as smaller, repeatable, checked steps rather than a single model run.\n\"Compressing the deal lifecycle has a massive impact on a firm's ability to compete for those investments,\" Mehta says. She hears it in customer conversations. Two or three years ago the questions were defensive, about hallucinations and whether the math was right. \"Today, those conversations have changed completely. They're: how can I automate more of my workflow? How do I sequence more steps together? How can I generate ten, fifteen, twenty slide decks in one click with high fidelity and consistency?\"\nGet started with Claude Fable 5.\nNo items found.\nPrev Prev\n0 / 5\nNext Next\neBook\nFAQ\nNo items found.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-14/r-009-hebbia-测试-claude-fable-5-金融专用基准测试中准确率提升约-20.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-14/r-009-hebbia-测试-claude-fable-5-金融专用基准测试中准确率提升约-20.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 7275,
+    "paragraph_count": 25,
+    "sentence_count": 48,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 7275,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "58c6d4bc346866a9",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Hebbia 测试 Claude Fable 5：金融专用基准测试中准确率提升约 20%",
+    "discovery_summary": "为机构金融提供 AI 平台的 Hebbia 测试了 Claude Fable 5。在其金融专用基准测试中，Claude Fable 5 在文档问答与引证测试上实现了约 20% 的相对准确率提升，创下团队记录；在智能体测试中，它能同时处理多部分请求并逐一溯源。该模型还能从更广泛的数据中推理，得出值得深入分析的结论。Hebbia 正借助 Claude Fable 5 将 Matrix 平台的能力从提取信贷协议条款扩展到多步分析，如对比实时监控数据、标记风险并草拟内部备忘录。",
+    "source_name": "Claude：Blog（网页）",
+    "origin_url": "https://claude.com/blog/working-at-the-frontier-how-hebbia-builds-ai-for-financial-diligence-that-cant-miss-a-detail",
+    "discovered_at": "2026-07-14T01:48:14.389Z",
+    "rank_on_page": 104,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "5daad63fb670dbbc",
+  "content_hash": "58c6d4bc346866a9",
+  "full_text_hash": "58c6d4bc346866a9",
+  "semantic_hash": "e97a6784323103b9",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-12T16:00:00.000Z",
+  "last_seen_at": "2026-07-14T01:56:51.283Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "为机构金融提供 AI 平台的 Hebbia 测试了 Claude Fable 5。在其金融专用基准测试中，Claude Fable 5 在文档问答与引证测试上实现了约 20% 的相对准确率提升，创下团队记录；在智能体测试中，它能同时处理多部分请求并逐一溯源。该模型还能从更广泛的数据中推理，得出值得深入分析的结论。Hebbia 正借助 Claude Fable 5 将 Matrix 平台的能力从提取信贷协议条款扩展到多步分析，如对比实时监控数据、标记风险并草拟内部备忘录。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Hebbia is an AI platform built for the rigor of institutional finance, serving more than a third of the top 50 asset managers along with tier-1 investment banks and law firms.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Divya Mehta, the company's founding product manager, spends roughly half her time with its largest investment banking, private equity, and credit customers.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Those customers make decisions based on analyses that span thousands of dense documents, where a wrong number can change the outcome of an entire deal.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "How Hebbia holds the line on accuracy A banker or investor weighing an opportunity has to work through all the data that could impact the decision, including the company's public filings, its credit agreements, internal documents, and structured data like information from a CRM.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Hebbia's meta-prompting turns plain-language requests into prompts, and then Claude runs each step of the analysis across hundreds of documents.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-14T01:56:51.283Z",
+  "business_elements": {
+    "companies": [
+      "Claude",
+      "Blog（网页）",
+      "Anthropic",
+      "Meta"
+    ],
+    "products": [
+      "Claude",
+      "agent",
+      "agents",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "金融 / 保险"
+    ],
+    "roles": [
+      "CIO / IT 负责人"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "5",
+      "20%",
+      "50",
+      "1",
+      "2",
+      "3",
+      "12",
+      "24"
+    ],
+    "quotes": [
+      "When you're connecting it to the right data and putting it in the right ecosystem,",
+      "that's when you get the alpha that finance professionals actually chase.",
+      "The bar is extremely high, and our customers hold us to that extremely high bar—and rightfully so,",
+      "At the end of the day, they're making investment decisions at a very large scale based on the analysis and final work product built in Hebbia.",
+      "It comes down to two seemingly fundamental qualities: the ability to find the right information from a dense data set, and then synthesize it correctly,"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Hebbia is an AI platform built for the rigor of institutional finance, serving more than a third of the top 50 asset managers along with tier-1 investment banks and law firms.",
+      "How Hebbia holds the line on accuracy A banker or investor weighing an opportunity has to work through all the data that could impact the decision, including the company's public filings, its credit agreements, internal documents, and structured data like information from a CRM.",
+      "Hebbia's meta-prompting turns plain-language requests into prompts, and then Claude runs each step of the analysis across hundreds of documents."
+    ],
+    "case_details": [
+      "Divya Mehta, the company's founding product manager, spends roughly half her time with its largest investment banking, private equity, and credit customers.",
+      "Those customers make decisions based on analyses that span thousands of dense documents, where a wrong number can change the outcome of an entire deal."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Hebbia 测试 Claude Fable 5：金融专用基准测试中准确率提升约 20%\n\n- raw_id: R-009\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://claude.com/blog/working-at-the-frontier-how-hebbia-builds-ai-for-financial-diligence-that-cant-miss-a-detail\n- source_name: Claude：Blog（网页）\n- collected_at: 2026-07-14T01:56:51.283Z\n\n## clean_text\n\nHebbia is an AI platform built for the rigor of institutional finance, serving more than a third of the top 50 asset managers along with tier-1 investment banks and law firms. Divya Mehta, the company's founding product manager, spends roughly half her time with its largest investment banking, private equity, and credit customers.\nThose customers make decisions based on analyses that span thousands of dense documents, where a wrong number can change the outcome of an entire deal.\nHow Hebbia holds the line on accuracy\nA banker or investor weighing an opportunity has to work through all the data that could impact the decision, including the company's public filings, its credit agreements, internal documents, and structured data like information from a CRM. Hebbia's meta-prompting turns plain-language requests into prompts, and then Claude runs each step of the analysis across hundreds of documents. Each answer lands in its own cell on a grid in Hebbia's Matrix, enabling full transparency, traceability, and steerability.\nKeeping those answers accurate at scale is the work of Hebbia's applied AI research team, led by Adithya Ramanathan. For Ramanathan, the point of that work is finding signals: getting a model to draw on the right data, in the right context, and surface what a customer wants to know.\n\"When you're connecting it to the right data and putting it in the right ecosystem,\" Ramanathan says, \"that's when you get the alpha that finance professionals actually chase.\"\nGetting there means running every new model through Hebbia's finance-specific benchmark, head to head against the model it would replace, and expanding what the benchmark measures with each release to keep pace as models improve. The benchmark is built to be hard on purpose.\n\"The bar is extremely high, and our customers hold us to that extremely high bar—and rightfully so,\" Mehta says. \"At the end of the day, they're making investment decisions at a very large scale based on the analysis and final work product built in Hebbia.\"\nThe team at Hebbia runs every new Claude model through finance-specific benchmarks that run head-to-head against the model it would replace. Clearing Hebbia's evals by the widest margin yet\nJoe Renner, a researcher on the applied AI team, runs each new Claude model against that benchmark, with a battery of tests replicating key finance knowledge worker use cases. One such test covers question answering and citation finding over financial documents. Another test runs through Hebbia's agent system, with the tools its chat product uses, on the kind of open-ended, multi-source analysis a customer actually does.\nClaude Fable 5 cleared both by the widest margin Renner had measured. On the question-answering and citation test, it posted about a 20% relative gain in accuracy over financial documents, the best he had seen from any new model. Citation match held roughly steady—Renner believes the gain comes from the model better understanding the evidence it finds.\n\"It comes down to two seemingly fundamental qualities: the ability to find the right information from a dense data set, and then synthesize it correctly,\" Divya says. \"These seem like fundamental model capabilities, but they have massive impact when we think about finance and research workflows.\" On the agent run, it held every part of a multi-part request at once, answering all of them and citing each answer back to its source.\nClaude Fable 5 also showed more reach. On open-ended analysis, it reasoned from a wider cross-section of the data and arrived at conclusions the team thought were worth a closer look. Renner traces that to how the model holds a long task together: it keeps every part of a request in view, prompts its own sub-agents and tools so the right facts come back, and grounds each claim in the source rather than inferring it.\nSetting a new standard for deal diligence with Claude Fable 5\nThe information that gives customers an edge usually sits in unstructured, proprietary documents.\nThose have been harder to analyze at scale than the structured, quantitative data finance already models well. Hebbia built Matrix to make that qualitative work systematic, and every model generation widens what it can take on.\nThat might be a data room with thousands of documents, where the work is finding the relevant signal, citing it, and drafting each section of an investment memo. Or it might be analyzing every document tied to a credit deal (the credit agreement, amendments, side letters, each running hundreds of dense technical pages) and extracting the full covenant package, financial terms and operating restrictions alike, from that unstructured mass.\n\"These are actually the types of documents that Anthropic models have always done really well at,\" Mehta says.\nWith earlier Sonnet and Opus models, Matrix could already pull out and synthesize a credit agreement's covenants—the dense protections a lender writes in for itself. With Claude Fable 5, Hebbia is reaching for the rest of the job: the multi-step analysis on top of those covenants, comparing them against live monitoring data, flagging risks, all the way to a first draft of the covenant review and an internal memo. That review is something credit firms used to pay outside teams a great deal to produce by hand.\nClaude Fable 5 enables Matrix, Hebbia's AI platform built for financial professionals, to take on longer-running, multi-step tasks like synthesizing credit agreement coven What's next\nNow that models like Claude Fable 5 can carry this work end to end, the comparison is the specialist hours it replaces.\nBefore AI, when a managing director needed a deck to pitch a CEO, it would take a junior banker 2-3 days to learn the company, pull financials, and build slides. In the pre-Opus days, the timeline to produce a first draft compressed by 12 to 24 hours, and with earlier Opus models on Hebbia, Mehta says, it dropped even further, taking about a day to run end-to-end. Hebbia has since codified the whole job into a Matrix that gathers the data across sources in a set of deterministic agentic steps, does the analysis, and builds the final deck, financial model, and internal research in a couple of minutes, so the banker can spend the time on which buyers to pursue and how to position them. Claude Fable 5 tightens it further, she says.\nDecomposing the work into steps still matters, \"no matter how brilliant the model is,\" because firms want control over which documents feed the analysis and how each step is built. So Hebbia is adopting the Claude Agent SDK to compose these jobs as smaller, repeatable, checked steps rather than a single model run.\n\"Compressing the deal lifecycle has a massive impact on a firm's ability to compete for those investments,\" Mehta says. She hears it in customer conversations. Two or three years ago the questions were defensive, about hallucinations and whether the math was right. \"Today, those conversations have changed completely. They're: how can I automate more of my workflow? How do I sequence more steps together? How can I generate ten, fifteen, twenty slide decks in one click with high fidelity and consistency?\"\nGet started with Claude Fable 5.\nNo items found.\nPrev Prev\n0 / 5\nNext Next\neBook\nFAQ\nNo items found.\n\n## full_text\n\nHebbia is an AI platform built for the rigor of institutional finance, serving more than a third of the top 50 asset managers along with tier-1 investment banks and law firms. Divya Mehta, the company's founding product manager, spends roughly half her time with its largest investment banking, private equity, and credit customers.\nThose customers make decisions based on analyses that span thousands of dense documents, where a wrong number can change the outcome of an entire deal.\nHow Hebbia holds the line on accuracy\nA banker or investor weighing an opportunity has to work through all the data that could impact the decision, including the company's public filings, its credit agreements, internal documents, and structured data like information from a CRM. Hebbia's meta-prompting turns plain-language requests into prompts, and then Claude runs each step of the analysis across hundreds of documents. Each answer lands in its own cell on a grid in Hebbia's Matrix, enabling full transparency, traceability, and steerability.\nKeeping those answers accurate at scale is the work of Hebbia's applied AI research team, led by Adithya Ramanathan. For Ramanathan, the point of that work is finding signals: getting a model to draw on the right data, in the right context, and surface what a customer wants to know.\n\"When you're connecting it to the right data and putting it in the right ecosystem,\" Ramanathan says, \"that's when you get the alpha that finance professionals actually chase.\"\nGetting there means running every new model through Hebbia's finance-specific benchmark, head to head against the model it would replace, and expanding what the benchmark measures with each release to keep pace as models improve. The benchmark is built to be hard on purpose.\n\"The bar is extremely high, and our customers hold us to that extremely high bar—and rightfully so,\" Mehta says. \"At the end of the day, they're making investment decisions at a very large scale based on the analysis and final work product built in Hebbia.\"\nThe team at Hebbia runs every new Claude model through finance-specific benchmarks that run head-to-head against the model it would replace. Clearing Hebbia's evals by the widest margin yet\nJoe Renner, a researcher on the applied AI team, runs each new Claude model against that benchmark, with a battery of tests replicating key finance knowledge worker use cases. One such test covers question answering and citation finding over financial documents. Another test runs through Hebbia's agent system, with the tools its chat product uses, on the kind of open-ended, multi-source analysis a customer actually does.\nClaude Fable 5 cleared both by the widest margin Renner had measured. On the question-answering and citation test, it posted about a 20% relative gain in accuracy over financial documents, the best he had seen from any new model. Citation match held roughly steady—Renner believes the gain comes from the model better understanding the evidence it finds.\n\"It comes down to two seemingly fundamental qualities: the ability to find the right information from a dense data set, and then synthesize it correctly,\" Divya says. \"These seem like fundamental model capabilities, but they have massive impact when we think about finance and research workflows.\" On the agent run, it held every part of a multi-part request at once, answering all of them and citing each answer back to its source.\nClaude Fable 5 also showed more reach. On open-ended analysis, it reasoned from a wider cross-section of the data and arrived at conclusions the team thought were worth a closer look. Renner traces that to how the model holds a long task together: it keeps every part of a request in view, prompts its own sub-agents and tools so the right facts come back, and grounds each claim in the source rather than inferring it.\nSetting a new standard for deal diligence with Claude Fable 5\nThe information that gives customers an edge usually sits in unstructured, proprietary documents.\nThose have been harder to analyze at scale than the structured, quantitative data finance already models well. Hebbia built Matrix to make that qualitative work systematic, and every model generation widens what it can take on.\nThat might be a data room with thousands of documents, where the work is finding the relevant signal, citing it, and drafting each section of an investment memo. Or it might be analyzing every document tied to a credit deal (the credit agreement, amendments, side letters, each running hundreds of dense technical pages) and extracting the full covenant package, financial terms and operating restrictions alike, from that unstructured mass.\n\"These are actually the types of documents that Anthropic models have always done really well at,\" Mehta says.\nWith earlier Sonnet and Opus models, Matrix could already pull out and synthesize a credit agreement's covenants—the dense protections a lender writes in for itself. With Claude Fable 5, Hebbia is reaching for the rest of the job: the multi-step analysis on top of those covenants, comparing them against live monitoring data, flagging risks, all the way to a first draft of the covenant review and an internal memo. That review is something credit firms used to pay outside teams a great deal to produce by hand.\nClaude Fable 5 enables Matrix, Hebbia's AI platform built for financial professionals, to take on longer-running, multi-step tasks like synthesizing credit agreement coven What's next\nNow that models like Claude Fable 5 can carry this work end to end, the comparison is the specialist hours it replaces.\nBefore AI, when a managing director needed a deck to pitch a CEO, it would take a junior banker 2-3 days to learn the company, pull financials, and build slides. In the pre-Opus days, the timeline to produce a first draft compressed by 12 to 24 hours, and with earlier Opus models on Hebbia, Mehta says, it dropped even further, taking about a day to run end-to-end. Hebbia has since codified the whole job into a Matrix that gathers the data across sources in a set of deterministic agentic steps, does the analysis, and builds the final deck, financial model, and internal research in a couple of minutes, so the banker can spend the time on which buyers to pursue and how to position them. Claude Fable 5 tightens it further, she says.\nDecomposing the work into steps still matters, \"no matter how brilliant the model is,\" because firms want control over which documents feed the analysis and how each step is built. So Hebbia is adopting the Claude Agent SDK to compose these jobs as smaller, repeatable, checked steps rather than a single model run.\n\"Compressing the deal lifecycle has a massive impact on a firm's ability to compete for those investments,\" Mehta says. She hears it in customer conversations. Two or three years ago the questions were defensive, about hallucinations and whether the math was right. \"Today, those conversations have changed completely. They're: how can I automate more of my workflow? How do I sequence more steps together? How can I generate ten, fifteen, twenty slide decks in one click with high fidelity and consistency?\"\nGet started with Claude Fable 5.\nNo items found.\nPrev Prev\n0 / 5\nNext Next\neBook\nFAQ\nNo items found.\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 为机构金融提供 AI 平台的 Hebbia 测试了 Claude Fable 5。在其金融专用基准测试中，Claude Fable 5 在文档问答与引证测试上实现了约 20% 的相对准确率提升，创下团队记录；在智能体测试中，它能同时处理多部分请求并逐一溯源。该模型还能从更广泛的数据中推理，得出值得深入分析的结论。Hebbia 正借助 Claude Fable 5 将 Matrix 平台的能力从提取信贷协议条款扩展到多步分析，如对比实时监控数据、标记风险并草拟内部备忘录。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Hebbia is an AI platform built for the rigor of institutional finance, serving more than a third of the top 50 asset managers along with tier-1 investment banks and law firms.\n3. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Divya Mehta, the company's founding product manager, spends roughly half her time with its largest investment banking, private equity, and credit customers.\n4. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Those customers make decisions based on analyses that span thousands of dense documents, where a wrong number can change the outcome of an entire deal.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] How Hebbia holds the line on accuracy A banker or investor weighing an opportunity has to work through all the data that could impact the decision, including the company's public filings, its credit agreements, internal documents, and structured data like information from a CRM.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Hebbia's meta-prompting turns plain-language requests into prompts, and then Claude runs each step of the analysis across hundreds of documents.\n"
+}

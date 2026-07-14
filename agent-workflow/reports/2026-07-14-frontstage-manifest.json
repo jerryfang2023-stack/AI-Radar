@@ -1,0 +1,1468 @@
+{
+  "date": "2026-07-14",
+  "generated_at": "2026-07-14T04:45:12.308Z",
+  "raw_input_count": 122,
+  "pool_input_count": 112,
+  "signal_card_assets": [
+    {
+      "id": "SIG-20260714-A01",
+      "pool_ref": "P-034",
+      "title": "Seltz 获得 1250 万美元融资",
+      "type": "funding",
+      "company": "Seltz"
+    },
+    {
+      "id": "SIG-20260714-A02",
+      "pool_ref": "P-035",
+      "title": "Anthropic 为印度用户本地化 Claude 定价，年付 Pro 版约 21 美元",
+      "type": "case",
+      "company": "Anthropic 为印度用户本地化 Claude"
+    },
+    {
+      "id": "SIG-20260714-A03",
+      "pool_ref": "P-002",
+      "title": "PixVerse 获得 4.39 亿美元融资",
+      "type": "funding",
+      "company": "PixVerse"
+    },
+    {
+      "id": "SIG-20260714-A04",
+      "pool_ref": "P-011",
+      "title": "Lyzr AI 获得 1 亿美元B 轮融资",
+      "type": "funding",
+      "company": "Lyzr AI"
+    },
+    {
+      "id": "SIG-20260714-A05",
+      "pool_ref": "P-049",
+      "title": "Mowito 获得 300 万美元融资",
+      "type": "funding",
+      "company": "Mowito"
+    },
+    {
+      "id": "SIG-20260714-A06",
+      "pool_ref": "P-009",
+      "title": "Hebbia 测试 Claude Fable 5：金融专用基准测试中准确率提升约 20%",
+      "type": "case",
+      "company": "Claude"
+    },
+    {
+      "id": "SIG-20260714-A07",
+      "pool_ref": "P-005",
+      "title": "Claude Code v2.1.208 发布",
+      "type": "product_service",
+      "company": "Anthropic / Claude Code"
+    },
+    {
+      "id": "SIG-20260714-A08",
+      "pool_ref": "P-036",
+      "title": "Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为",
+      "type": "product_service",
+      "company": "Cloudflare"
+    },
+    {
+      "id": "SIG-20260714-A09",
+      "pool_ref": "P-072",
+      "title": "OpenRouter 品牌焕新：以包豪斯几何美学重塑视觉标识",
+      "type": "product_service",
+      "company": "OpenRouter"
+    },
+    {
+      "id": "SIG-20260714-A10",
+      "pool_ref": "P-068",
+      "title": "阶跃星辰发布终端品牌STEPX及首款智能体手机STEPX Neo",
+      "type": "product_service",
+      "company": "阶跃星辰"
+    }
+  ],
+  "not_promoted_candidates": [
+    {
+      "pool_ref": "P-001",
+      "title": "Uber 产品负责人谈酒店预订、自动驾驶出租车及公司为何不想成为\"万能应用\"",
+      "source_url": "https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone",
+      "issues": [
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-003",
+      "title": "Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资",
+      "source_url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-004",
+      "title": "Skyfall AI 发布 MORPHEUS：面向持续强化学习的持久企业模拟基准",
+      "source_url": "https://www.marktechpost.com/2026/07/13/skyfall-ai-releases-morpheus-a-persistent-enterprise-simulation-benchmark-that-makes-continual-reinforcement-learning-necessary-under-structured-non-stationarity",
+      "issues": [
+        "valid_page_type:research_prototype_without_commercial_event",
+        "valid_page_type:research_benchmark_without_commercial_event"
+      ],
+      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, valid_page_type:research_benchmark_without_commercial_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-006",
+      "title": "15款已停产NVIDIA企业级GPU在现代AI工作负载下的性能基准测试",
+      "source_url": "https://esologic.com/benchmarking-tesla-gpus",
+      "issues": [
+        "valid_page_type:research_benchmark_without_commercial_event"
+      ],
+      "not_promoted_reason": "valid_page_type:research_benchmark_without_commercial_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-007",
+      "title": "Waze 推出多项 AI 新功能，部分由 Gemini 驱动",
+      "source_url": "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-008",
+      "title": "Apple 起诉 OpenAI，指控前工程师利用漏洞窃取商业机密",
+      "source_url": "https://arstechnica.com/tech-policy/2026/07/apple-sues-openai-after-ex-engineer-allegedly-used-bug-to-steal-trade-secrets",
+      "issues": [
+        "fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event",
+      "repair_suggestion": "Keep trade-secret or employee dispute litigation as risk context unless it includes a separate product, funding, customer, procurement, or settlement event.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-010",
+      "title": "Anthropic 研究：Claude 在不同模型与语言中的价值观表达",
+      "source_url": "https://www.anthropic.com/research/claude-values-models-languages",
+      "issues": [
+        "valid_page_type:technical_article_without_business_event",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-012",
+      "title": "PwC's 30,000-Person Claude Rollout: 70% Faster Delivery | THE D*AI*LY BRIEF",
+      "source_url": "https://www.beri.net/article/pwc-anthropic-30000-claude-rollout-enterprise-blueprint-2026",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+        "fact_type_constraints:workforce_retraining_program_not_formal_signal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, fact_type_constraints:workforce_retraining_program_not_formal_signal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-013",
+      "title": "Transformer Chip Startup Etched Exits Stealth: $800M Raised, $1B in Contracts",
+      "source_url": "https://www.techtimes.com/articles/319393/20260630/transformer-chip-startup-etched-exits-stealth-800m-raised-1b-contracts.htm",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-014",
+      "title": "FuriosaAI launches NXT RNGD server for data center-scale inferencing - DCD",
+      "source_url": "https://www.datacenterdynamics.com/en/news/furiosaai-launches-nxt-rngd-server-for-data-center-scale-inferencing/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:funding_not_single_company_round",
+        "fact_type_constraints:corporate_capex_or_community_investment_not_signal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:funding_not_single_company_round, fact_type_constraints:corporate_capex_or_community_investment_not_signal_card",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-015",
+      "title": "Supermicro Introduces Compact, Energy-Efficient Systems to Accelerate Adoption of Intelligent Edge AI | Supermicro",
+      "source_url": "https://www.supermicro.com/en/pressreleases/supermicro-introduces-compact-energy-efficient-systems-accelerate-adoption",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:funding_not_single_company_round"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:funding_not_single_company_round",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-016",
+      "title": "Supermicro Brings Enterprise-Class AI Performance to the Client, Edge, and Consumer Markets | Supermicro",
+      "source_url": "https://www.supermicro.com/en/pressreleases/supermicro-brings-enterprise-class-ai-performance-client-edge-and-consumer-markets",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-017",
+      "title": "Supermicro Brings Superior Performance and Efficiency to AI at the Edge | Supermicro",
+      "source_url": "https://www.supermicro.com/en/pressreleases/supermicro-brings-superior-performance-and-efficiency-ai-edge",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-018",
+      "title": "Graebel drives growth and automation through AI innovation on Dynamics 365, Power Platform, and Copilot Studio | Microsoft Customer Stories",
+      "source_url": "https://www.microsoft.com/en/customers/story/26190-graebel-dynamics-365-finance",
+      "issues": [
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-019",
+      "title": "Supermicro Announces Proposed $7.0 Billion of Equity and Equity-linked Financing Transactions To Fund AI Orders | Supermicro",
+      "source_url": "https://www.supermicro.com/en/pressreleases/supermicro-announces-proposed-70-billion-equity-and-equity-linked-financing",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-020",
+      "title": "claude-skills/agents/personas/startup-cto.md at main",
+      "source_url": "https://github.com/alirezarezvani/claude-skills/blob/main/agents/personas/startup-cto.md",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:technical_article_without_business_event"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:technical_article_without_business_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-021",
+      "title": "LLM Inference Hardware: An Enterprise Guide to Key Players | ...",
+      "source_url": "https://intuitionlabs.ai/articles/llm-inference-hardware-enterprise-guide",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:explainer_without_commercial_event",
+        "valid_page_type:technical_article_without_business_event",
+        "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:explainer_without_commercial_event, valid_page_type:technical_article_without_business_event, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-022",
+      "title": "LC Waikiki finds the right fit for innovation with Dynamics 365 | Microsoft Customer Stories",
+      "source_url": "https://www.microsoft.com/en/customers/story/26176-lc-waikiki-dynamics-365-finance",
+      "issues": [
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-023",
+      "title": "Low-Code Full-Stack Agentic AI Development",
+      "source_url": "https://github.com/panaversity/learn-low-code-agentic-ai",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-024",
+      "title": "MemryX Unveils MX4 Roadmap: Enabling Distributed, Asynchronous ...",
+      "source_url": "https://www.prnewswire.com/news-releases/memryx-unveils-mx4-roadmap-enabling-distributed-asynchronous-dataflow-for-highly-efficient-data-center-ai-302649698.html",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:sustainability_report_without_commercial_ai_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:funding_not_single_company_round"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:sustainability_report_without_commercial_ai_event, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:funding_not_single_company_round",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-025",
+      "title": "Forward Deployed Engineer, Applied AI - Anthropic | Built In Boston",
+      "source_url": "https://www.builtinboston.com/job/forward-deployed-engineer/7698230",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-026",
+      "title": "Will 2026 Be Dominated By AI?",
+      "source_url": "https://semiengineering.com/will-2026-be-dominated-by-ai/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-027",
+      "title": "Figma partners with Google to add Gemini AI to its design ...",
+      "source_url": "https://techcrunch.com/2025/10/09/figma-partners-with-google-to-add-gemini-ai-to-its-design-platform/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-028",
+      "title": "Why AI’s next phase will likely demand more computational power, ...",
+      "source_url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/compute-power-ai.html",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-029",
+      "title": "GitHub in 2026: From Weekend Project to AI Agent Runtime",
+      "source_url": "https://radar.firstaimovers.com/github-2026-history-evolution-agent-runtime",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-030",
+      "title": "Sinch research reveals 74% of enterprises have rolled back live AI customer communications agents – Company Announcement - FT.com",
+      "source_url": "https://markets.ft.com/data/announce/full?dockey=600-202605130516PR_NEWS_EURO_ND__EN58504-1",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_benchmark_without_commercial_event"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_benchmark_without_commercial_event",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-031",
+      "title": "Salesforce Announces Prepackaged Agentforce Help Agent - Salesforce",
+      "source_url": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-032",
+      "title": "Building an agentic AI solution at Bluesight with Amazon Bedrock | Artificial Intelligence",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-solution-at-bluesight-with-amazon-bedrock/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-033",
+      "title": "Here are the 17 US-based AI companies that have raised $100M or ...",
+      "source_url": "https://techcrunch.com/2026/02/17/here-are-the-17-us-based-ai-companies-that-have-raised-100m-or-more-in-2026/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-037",
+      "title": "Sam Altman 与 Elon Musk 就太空数据中心业务隔空交锋",
+      "source_url": "https://techcrunch.com/2026/07/13/sam-altmans-space-data-center-trash-talk-is-what-most-experts-already-believe",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-038",
+      "title": "Cloudflare 9月15日起默认屏蔽AI智能体爬虫，三类爬虫控制开关上线",
+      "source_url": "https://www.artificialintelligence-news.com/news/ai-agent-crawlers-cloudflare-rules",
+      "issues": [
+        "valid_page_type:technical_article_without_business_event"
+      ],
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-039",
+      "title": "苹果 SpeechAnalyzer API 性能对比：超越 Whisper Small 与旧版 SFSpeechRecognizer",
+      "source_url": "https://get-inscribe.com/blog/apple-speech-api-benchmark.html",
+      "issues": [
+        "valid_page_type:research_benchmark_without_commercial_event"
+      ],
+      "not_promoted_reason": "valid_page_type:research_benchmark_without_commercial_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-040",
+      "title": "Redis 核心开发者：程序员应掌控理念，而非代码",
+      "source_url": "https://antirez.com/news/169",
+      "issues": [
+        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-041",
+      "title": "世界模型：模拟万物的承诺与局限",
+      "source_url": "https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models",
+      "issues": [
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-042",
+      "title": "微软CEO纳德拉警告企业使用专有AI模型会泄露专有知识",
+      "source_url": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai",
+      "issues": [
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+        "fact_type_constraints:unconfirmed_product_rumor_or_plan",
+        "fact_type_constraints:secondary_review_or_rumor_not_original_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:viewpoint_without_confirmed_commercial_event, fact_type_constraints:unconfirmed_product_rumor_or_plan, fact_type_constraints:secondary_review_or_rumor_not_original_event",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-043",
+      "title": "AI Forward Deployed Engineering: What It Is & Why It Matters",
+      "source_url": "https://fde.academy/blog/ai-forward-deployed-engineering",
+      "issues": [
+        "evidence_quality:missing_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:research_benchmark_without_commercial_event, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-044",
+      "title": "The wildest allegations in Apple’s trade secrets lawsuit against OpenAI",
+      "source_url": "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event",
+      "repair_suggestion": "Keep trade-secret or employee dispute litigation as risk context unless it includes a separate product, funding, customer, procurement, or settlement event.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-045",
+      "title": "The 6 wildest claims in Apple&#8217;s lawsuit against OpenAI",
+      "source_url": "https://www.theverge.com/tech/964843/apple-openai-lawsuit-wildest-claims",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event",
+      "repair_suggestion": "Keep trade-secret or employee dispute litigation as risk context unless it includes a separate product, funding, customer, procurement, or settlement event.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-046",
+      "title": "Nobel laureates and AI leaders warn the window to prepare for AI&#039;s economic impact is closing fast",
+      "source_url": "https://the-decoder.com/nobel-laureates-and-ai-leaders-warn-the-window-to-prepare-for-ais-economic-impact-is-closing-fast/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_prototype_without_commercial_event",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, valid_page_type:research_prototype_without_commercial_event, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-047",
+      "title": "States sue to block Paramount/WBD merger that was approved by Trump admin",
+      "source_url": "https://arstechnica.com/tech-policy/2026/07/states-sue-to-block-paramount-wbd-merger-that-was-approved-by-trump-admin/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event",
+        "business_signal_scope:source_event_missing_ai_anchor"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event, business_signal_scope:source_event_missing_ai_anchor",
+      "repair_suggestion": "Keep trade-secret or employee dispute litigation as risk context unless it includes a separate product, funding, customer, procurement, or settlement event.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-048",
+      "title": "Display.dev raises €470K to power document collaboration for AI agents - Tech.eu",
+      "source_url": "https://tech.eu/2026/07/07/displaydev-raises-eur470k-to-power-document-collaboration-for-ai-agents/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-050",
+      "title": "06/2026 - GitHub Changelog",
+      "source_url": "https://github.blog/changelog/month/06-2026",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:secondary_review_or_rumor_not_original_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, fact_type_constraints:secondary_review_or_rumor_not_original_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-051",
+      "title": "Hermes agent maker Nous Research in talks for new funding at $1.5B valuation | TechCrunch",
+      "source_url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-052",
+      "title": "Fundamental Research Labs nabs $30M+ to build AI agents across verticals | TechCrunch",
+      "source_url": "https://techcrunch.com/2025/08/01/fundamental-research-labs-nabs-33-million-from-prosus-to-build-ai-agents-for-multiple-verticals/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-053",
+      "title": "三星强制用户同意健康数据用于AI训练，否则将删除数据",
+      "source_url": "https://neow.in/cWsyMTV3",
+      "issues": [
+        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score"
+      ],
+      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "repair_suggestion": "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-054",
+      "title": "What Separates AI-Ready Enterprises From Everyone Else?",
+      "source_url": "https://sponsored.bloomberg.com/article/AMD/what-separates-ai-ready-enterprises-from-everyone-else",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-055",
+      "title": "无需打开 Xcode 即可构建和发布 Mac 及 iOS 应用",
+      "source_url": "https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, fact_type_constraints:user_feedback_or_commentary_not_verified_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-056",
+      "title": "构建VideoAgent风格多智能体系统：视频编辑任务的意图解析、图规划与工具路由",
+      "source_url": "https://www.marktechpost.com/2026/07/13/building-a-videoagent-style-multi-agent-system-intent-parsing-graph-planning-and-tool-routing-for-video-editing-tasks",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-057",
+      "title": "安全研究人员用\"上下文炸弹\"防御AI智能体攻击",
+      "source_url": "https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too",
+      "issues": [
+        "valid_page_type:research_prototype_without_commercial_event",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, valid_page_type:research_benchmark_without_commercial_event, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-058",
+      "title": "Meta 宣布扩建路易斯安那州数据中心至 5GW，总投资超 500 亿美元",
+      "source_url": "https://www.ithome.com/0/976/149.htm",
+      "issues": [
+        "business_signal_scope:not_routed_for_signal_card_candidate"
+      ],
+      "not_promoted_reason": "business_signal_scope:not_routed_for_signal_card_candidate",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-059",
+      "title": "我国自研 AI 芯片取得架构突破：14nm 制程实现每秒 520 万亿次浮点运算",
+      "source_url": "https://www.ithome.com/0/976/197.htm",
+      "issues": [
+        "business_signal_scope:not_routed_for_signal_card_candidate"
+      ],
+      "not_promoted_reason": "business_signal_scope:not_routed_for_signal_card_candidate",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-060",
+      "title": "韩国计划2026年内推出全民免费AI聊天机器人，要求使用自研模型",
+      "source_url": "https://www.ithome.com/0/976/223.htm",
+      "issues": [
+        "fact_type_constraints:unconfirmed_product_rumor_or_plan",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "fact_type_constraints:unconfirmed_product_rumor_or_plan, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-061",
+      "title": "AI voice startup Vapi hits $500M valuation after winning Amazon ...",
+      "source_url": "https://techcrunch.com/2026/05/12/vapi-hits-500m-valuation-as-amazon-ring-chose-its-ai-platform-over-40-rivals/",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-062",
+      "title": "German AI consortium releases Soofi S, an open 30B model that tops benchmarks in both English and German",
+      "source_url": "https://the-decoder.com/german-ai-consortium-releases-soofi-s-an-open-30b-model-that-tops-benchmarks-in-both-english-and-german/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_benchmark_without_commercial_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, valid_page_type:research_benchmark_without_commercial_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-063",
+      "title": "Siri AI is already changing how I use my iPhone",
+      "source_url": "https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:secondary_review_or_rumor_not_original_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, fact_type_constraints:secondary_review_or_rumor_not_original_event",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-064",
+      "title": "OpenAI&#039;s new prompting guide tells users to stop overthinking and start with the result",
+      "source_url": "https://the-decoder.com/openais-new-prompting-guide-tells-users-to-stop-overthinking-and-start-with-the-result/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:technical_article_without_business_event",
+        "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, valid_page_type:technical_article_without_business_event, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-065",
+      "title": "Monogram Raises $40M Seed",
+      "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
+      "issues": [
+        "historical_duplicate_event_cluster:01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-13--signal--monogram-auto-signal-p-003.md"
+      ],
+      "not_promoted_reason": "historical_duplicate_event_cluster:01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-13--signal--monogram-auto-signal-p-003.md",
+      "repair_suggestion": "Keep as supporting evidence for the linked event instead of creating a duplicate Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-066",
+      "title": "We're rolling out AlphaEvolve widely to solve Google Cloud customers' hardest problems.",
+      "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-on-cloud/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "fact_type_constraints:secondary_review_or_rumor_not_original_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, valid_page_type:research_benchmark_without_commercial_event, fact_type_constraints:secondary_review_or_rumor_not_original_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-067",
+      "title": "阶跃星辰董事长印奇谈豆包 AI 手机：将\"智能机手机\"概念带入大众视野",
+      "source_url": "https://www.ithome.com/0/976/204.htm",
+      "issues": [
+        "valid_page_type:technical_article_without_business_event",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-069",
+      "title": "OPPO ColorOS 16 开放锁屏指纹样式自定义，支持汉字、数字、字母、表情、动画自由组合",
+      "source_url": "https://www.ithome.com/0/976/230.htm",
+      "issues": [
+        "business_signal_scope:consumer_ui_personalization_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:consumer_ui_personalization_not_business_signal",
+      "repair_suggestion": "Keep consumer UI personalization updates as backend context unless the same source proves enterprise adoption, pricing, developer platform, or customer deployment value.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-070",
+      "title": "豆包输入法鸿蒙版开启招募：适配 HarmonyOS 5.0，支持豆包同款语音识别",
+      "source_url": "https://www.ithome.com/0/976/218.htm",
+      "issues": [
+        "fact_type_constraints:secondary_review_or_rumor_not_original_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:secondary_review_or_rumor_not_original_event",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-071",
+      "title": "英特尔推出太空级\"Starfire\"芯片，实为 Panther Lake 衍生变体",
+      "source_url": "https://www.ithome.com/0/976/202.htm",
+      "issues": [
+        "business_signal_scope:spec_only_hardware_news_without_commercial_deployment"
+      ],
+      "not_promoted_reason": "business_signal_scope:spec_only_hardware_news_without_commercial_deployment",
+      "repair_suggestion": "Keep spec-only hardware news in Pool unless a customer deployment, procurement, commercial launch, or production rollout is sourced.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-073",
+      "title": "前沿模型实际成本：tokenizer 差异导致隐性涨价",
+      "source_url": "https://playcode.io/blog/real-price-of-frontier-models",
+      "issues": [
+        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-074",
+      "title": "claude-meseeks：为 Claude Code 添加 Mr. Meeseeks 语音提示的插件",
+      "source_url": "https://github.com/thephw/claude-meseeks",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "valid_page_type:index_only_evidence",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, valid_page_type:generic_report_or_list_not_fact_signal, fact_type_constraints:user_feedback_or_commentary_not_verified_fact, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_only_evidence, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-075",
+      "title": "Comma AI 创始人 George Hotz 反对 AI 2040 放缓提议，主张用户对齐的本地控制 AI",
+      "source_url": "https://techcrunch.com/2026/07/13/should-ai-help-you-get-away-with-killing-your-spouse",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-077",
+      "title": "荣耀全新 YOYO Next 能力一览曝光，支持 App 操控、复杂任务、控虾等功能",
+      "source_url": "https://www.ithome.com/0/976/231.htm",
+      "issues": [
+        "fact_type_constraints:secondary_review_or_rumor_not_original_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:secondary_review_or_rumor_not_original_event",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-078",
+      "title": "datasette code-frequency chart on GitHub",
+      "source_url": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_prototype_without_commercial_event",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:research_benchmark_without_commercial_event, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-079",
+      "title": "Turing Award winner Rich Sutton founds Oak Lab to build AI agents that learn on their own",
+      "source_url": "https://the-decoder.com/turing-award-winner-rich-sutton-founds-oak-lab-to-build-ai-agents-that-learn-on-their-own/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-080",
+      "title": "US continues to shun Ebola-infected citizens; second American sent to Germany",
+      "source_url": "https://arstechnica.com/health/2026/07/us-continues-to-shun-ebola-infected-citizens-second-american-sent-to-germany/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "business_signal_scope:source_event_missing_ai_anchor"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, business_signal_scope:source_event_missing_ai_anchor",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-081",
+      "title": "Ukrainian drone strikes forced Russia to stop shipping in vital sea corridor",
+      "source_url": "https://arstechnica.com/gadgets/2026/07/ukrainian-drone-strikes-forced-russia-to-stop-shipping-in-vital-sea-corridor/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-082",
+      "title": "California creates $3,500 rebate for new electric vehicle buyers",
+      "source_url": "https://arstechnica.com/cars/2026/07/first-time-ev-buyers-in-california-can-now-claim-a-new-rebate/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:sustainability_report_without_commercial_ai_event",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal",
+        "business_signal_scope:source_event_missing_ai_anchor"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:sustainability_report_without_commercial_ai_event, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, fact_type_constraints:non_commercial_policy_or_ethics_signal, business_signal_scope:source_event_missing_ai_anchor",
+      "repair_suggestion": "Keep environmental, carbon, renewable-energy, or sustainability reports as backend market context unless the same source proves a commercial AI launch, customer deployment, procurement contract, financing, pricing, or partnership event.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-083",
+      "title": "Solution to Feynman's reverse sprinkler puzzle also applies to \"silly sprinklers\"",
+      "source_url": "https://arstechnica.com/science/2026/07/solution-to-feynmans-reverse-sprinkler-puzzle-also-applies-to-silly-sprinklers/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "business_signal_scope:source_event_missing_ai_anchor"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:supporting_signal, valid_page_type:research_benchmark_without_commercial_event, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:source_event_missing_ai_anchor",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-084",
+      "title": "Claude Code browser 🌍, Cursor general agent 🤖, Claude Fable extension ⏳",
+      "source_url": "https://tldr.tech/ai/2026-07-13",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, fact_type_constraints:builder_or_opinion_source_not_business_fact, fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-085",
+      "title": "The US government warns that Russia state hackers are coming after your router",
+      "source_url": "https://arstechnica.com/security/2026/07/the-us-government-warns-that-russia-state-hackers-are-coming-after-your-router/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal",
+        "business_signal_scope:source_event_missing_ai_anchor"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal, business_signal_scope:source_event_missing_ai_anchor",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-086",
+      "title": "Tom Cruise is utterly transformed in Digger trailer",
+      "source_url": "https://arstechnica.com/culture/2026/07/digger-trailer-is-giving-big-dr-strangelove-vibes/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "valid_page_type:job_listing_not_formal_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "business_signal_scope:source_event_missing_ai_anchor"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:supporting_signal, valid_page_type:job_listing_not_formal_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, business_signal_scope:source_event_missing_ai_anchor",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-087",
+      "title": "maree217/enterprise-agent-toolkit",
+      "source_url": "https://github.com/maree217/enterprise-agent-toolkit",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:technical_article_without_business_event"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:technical_article_without_business_event",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-088",
+      "title": "OpenAI 多名员工声援 CEO 奥尔特曼，称其乐于听取不同意见",
+      "source_url": "https://www.ithome.com/0/976/256.htm",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:supporting_signal, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-089",
+      "title": "男子用AI伪造\"吃出铁丝划破舌头\"图片恶意索赔，被警方采取强制措施",
+      "source_url": "https://www.ithome.com/0/976/208.htm",
+      "issues": [
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-090",
+      "title": "DOOMQL：基于 GPT-5.6 Sol 构建的 SQLite 游戏引擎 Doom 风格游戏",
+      "source_url": "https://simonwillison.net/2026/Jul/13/doomql",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-091",
+      "title": "OpenAI 安全系统负责人海德克即将离职，近年已有8名核心成员离开",
+      "source_url": "https://www.ithome.com/0/976/262.htm",
+      "issues": [
+        "valid_page_type:research_prototype_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-092",
+      "title": "微软警告：AI 加快漏洞挖掘速度，不建议 Windows 安全更新延迟超过三天",
+      "source_url": "https://www.ithome.com/0/976/290.htm",
+      "issues": [
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-093",
+      "title": "消息称华为乾崑智驾 ADS 5 本月底或下月初全量推送",
+      "source_url": "https://www.ithome.com/0/976/186.htm",
+      "issues": [
+        "valid_page_type:technical_article_without_business_event",
+        "fact_type_constraints:unconfirmed_product_rumor_or_plan",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event, fact_type_constraints:unconfirmed_product_rumor_or_plan, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-094",
+      "title": "多位大V推荐iOS 27首个公测版：稳定性满足日常使用",
+      "source_url": "https://www.ithome.com/0/976/278.htm",
+      "issues": [
+        "fact_type_constraints:secondary_review_or_rumor_not_original_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:secondary_review_or_rumor_not_original_event",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-095",
+      "title": "微软 Win11 测试 PC Insights：目标替代任务管理器排查拖慢 PC 原因",
+      "source_url": "https://www.ithome.com/0/976/291.htm",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-096",
+      "title": "Nadella calls out AI labs like OpenAI and Anthropic for banning distillation while training on everyone else&#039;s data",
+      "source_url": "https://the-decoder.com/nadella-calls-out-ai-labs-like-openai-and-anthropic-for-banning-distillation-while-training-on-everyone-elses-data/",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, business_signal_scope:unsupported_importance_type:supporting_signal, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-097",
+      "title": "Using uvx in GitHub Actions in a cache-friendly way",
+      "source_url": "https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache/#atom-everything",
+      "issues": [
+        "evidence_quality:missing_chinese_fact_translation",
+        "valid_page_type:research_prototype_without_commercial_event",
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_chinese_fact_translation, valid_page_type:research_prototype_without_commercial_event, business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:research_benchmark_without_commercial_event, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-098",
+      "title": "阶跃终端首款智能体手机 STEPX Neo 亮相，业内人士称系自主设计与魅族无关",
+      "source_url": "https://www.ithome.com/0/976/226.htm",
+      "issues": [
+        "fact_type_constraints:secondary_review_or_rumor_not_original_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:secondary_review_or_rumor_not_original_event",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-099",
+      "title": "微软 CEO 纳德拉警告：企业使用 AI 可能面临双重成本与竞争风险",
+      "source_url": "https://www.ithome.com/0/976/271.htm",
+      "issues": [
+        "fact_type_constraints:viewpoint_without_confirmed_commercial_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:viewpoint_without_confirmed_commercial_event",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-100",
+      "title": "Merck and Mastercard are seeing real agentic AI results. Both say the plumbing came first. | VentureBeat",
+      "source_url": "https://venturebeat.com/infrastructure/merck-and-mastercard-are-seeing-real-agentic-ai-results-both-say-the-plumbing-came-first",
+      "issues": [
+        "evidence_quality:stale_source_date",
+        "evidence_quality:missing_chinese_fact_translation"
+      ],
+      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation",
+      "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-101",
+      "title": "Meta 宣布扩建路易斯安那州数据中心至 5GW，总投资超 500 亿美元",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, source_auditability:discovery_source_not_resolved, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-102",
+      "title": "Hebbia 测试 Claude Fable 5：金融专用基准测试中准确率提升约 20%",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-103",
+      "title": "Anthropic 研究：Claude 在不同模型与语言中的价值观表达",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:research_benchmark_without_commercial_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-104",
+      "title": "OpenAI 面向普通用户发布提示词指南：从结果出发，少写步骤",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:technical_article_without_business_event",
+        "fact_type_constraints:secondary_review_or_rumor_not_original_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:technical_article_without_business_event, fact_type_constraints:secondary_review_or_rumor_not_original_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-105",
+      "title": "Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-106",
+      "title": "Seedream 5.0 Pro 测评：图像编辑门槛爆降",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card",
+        "business_signal_scope:source_event_missing_ai_anchor"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card, business_signal_scope:source_event_missing_ai_anchor",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-107",
+      "title": "AI 客户留存率介于手游与社交网络之间：前沿模型“王座”仅维持约 41 天，同等智能价格每年下降约 10 倍",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-108",
+      "title": "腾讯混元发布 HyOCR-1.5：端到端 OCR 大模型全栈开源，推理提速 6.37 倍",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:research_benchmark_without_commercial_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-109",
+      "title": "德国AI协会发布开源模型Soofi S，在英语和德语基准测试中领先",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:research_benchmark_without_commercial_event",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:research_benchmark_without_commercial_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-110",
+      "title": "前沿模型实际成本：tokenizer 差异导致隐性涨价",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "fact_type_constraints:social_or_community_source_not_verified_fact",
+        "evidence_quality:missing_source_date",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, fact_type_constraints:social_or_community_source_not_verified_fact, evidence_quality:missing_source_date, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-111",
+      "title": "xAI 官方 Grok CLI 被曝静默上传整个代码库及用户密钥",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-112",
+      "title": "黄仁勋：英伟达季度收入逼近千亿美元，Rubin Ultra 架构未延期",
+      "source_url": "no-url",
+      "issues": [
+        "evidence_quality:missing_source_material",
+        "source_auditability:missing_source_url",
+        "evidence_quality:missing_source_date",
+        "valid_page_type:index_only_evidence",
+        "source_auditability:discovery_source_not_resolved",
+        "business_signal_scope:unsupported_importance_type:supporting_signal",
+        "valid_page_type:technical_article_without_business_event",
+        "fact_type_constraints:secondary_review_or_rumor_not_original_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "commercial_importance:low_importance_score",
+        "valid_page_type:degradation_reason_index_only",
+        "valid_page_type:text_indicates_index_only",
+        "valid_page_type:pool_route_index_only_not_formal_card"
+      ],
+      "not_promoted_reason": "evidence_quality:missing_source_material, source_auditability:missing_source_url, evidence_quality:missing_source_date, valid_page_type:index_only_evidence, source_auditability:discovery_source_not_resolved, business_signal_scope:unsupported_importance_type:supporting_signal, valid_page_type:technical_article_without_business_event, fact_type_constraints:secondary_review_or_rumor_not_original_event, business_signal_scope:missing_concrete_funding_product_or_case_event, commercial_importance:low_importance_score, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    }
+  ],
+  "skipped": [],
+  "merged": []
+}
