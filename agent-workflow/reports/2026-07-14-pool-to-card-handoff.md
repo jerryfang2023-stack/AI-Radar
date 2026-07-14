@@ -1,28 +1,26 @@
 # 2026-07-14 Pool-to-Card Handoff
 
-- generated_at: 2026-07-14T04:45:12.308Z
+- generated_at: 2026-07-14T06:18:06.705Z
 - raw_input_count: 122
 - pool_input_count: 112
-- written_count: 11
+- written_count: 9
 - merged_count: 0
 - skipped_count: 0
-- signal_asset_count: 10
-- not_promoted_candidate_count: 101
+- signal_asset_count: 8
+- not_promoted_candidate_count: 103
 - asset_generation_limit: all_cardable_raw_pool
 - signal_asset_mode: all cardable Raw / Pool business signals
 
 ## Signal Card Assets
 
-- SIG-20260714-A01｜P-034｜Seltz 获得 1250 万美元融资
+- SIG-20260714-A01｜P-034｜Seltz 融资 1250 万美元，用于为智能体构建先进 Web Search
 - SIG-20260714-A02｜P-035｜Anthropic 为印度用户本地化 Claude 定价，年付 Pro 版约 21 美元
-- SIG-20260714-A03｜P-002｜PixVerse 获得 4.39 亿美元融资
-- SIG-20260714-A04｜P-011｜Lyzr AI 获得 1 亿美元B 轮融资
-- SIG-20260714-A05｜P-049｜Mowito 获得 300 万美元融资
+- SIG-20260714-A03｜P-002｜视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元
+- SIG-20260714-A04｜P-011｜Lyzr AI 完成 1 亿美元 B 轮融资：其 AI Agent SivaClaw 对接 130 多位投资者并产生 4 亿美元投资兴趣
+- SIG-20260714-A05｜P-049｜Version One Ventures 宣布投资 Mowito：面向制造业机械臂的 Physical AI
 - SIG-20260714-A06｜P-009｜Hebbia 测试 Claude Fable 5：金融专用基准测试中准确率提升约 20%
-- SIG-20260714-A07｜P-005｜Claude Code v2.1.208 发布
-- SIG-20260714-A08｜P-036｜Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为
-- SIG-20260714-A09｜P-072｜OpenRouter 品牌焕新：以包豪斯几何美学重塑视觉标识
-- SIG-20260714-A10｜P-068｜阶跃星辰发布终端品牌STEPX及首款智能体手机STEPX Neo
+- SIG-20260714-A07｜P-036｜Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为
+- SIG-20260714-A08｜P-068｜阶跃星辰发布终端品牌STEPX及首款智能体手机STEPX Neo
 
 ## Cluster / Dedupe Rows
 
@@ -30,11 +28,9 @@
 - P-035｜event:case:anthropic 为印度用户本地化 claude:21｜accepted
 - P-002｜event:funding:pixverse:439m｜accepted
 - P-011｜event:funding:lyzr ai:$100m｜accepted
-- P-049｜event:funding:mowito:300万｜accepted
+- P-049｜event:funding:mowito:funding announcing our investment in mowito physical ai for robot arms in manufacturing version ｜accepted
 - P-009｜event:case:claude:5｜accepted
-- P-005｜event:product_service:anthropic claude code:2.1｜accepted
 - P-036｜event:product_service:cloudflare:product service cloudflare 推出 precursor 通过持续客户端信号检测 ai 智能体行为｜accepted
-- P-072｜event:product_service:openrouter:product service openrouter 品牌焕新以包豪斯几何美学重塑视觉标识｜accepted
 - P-068｜event:product_service:阶跃星辰:0｜accepted
 
 ## Written
@@ -45,9 +41,7 @@
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-14--signal--lyzr-ai-auto-signal-p-011.md
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-14--signal--mowito-auto-signal-p-049.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-14--signal--claude-auto-signal-p-009.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-14--signal--anthropic-claude-code-auto-signal-p-005.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-14--signal--cloudflare-auto-signal-p-036.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-14--signal--openrouter-auto-signal-p-072.md
 - 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-14--signal--stepx-stepx-neo-auto-signal-p-068.md
 - 01-SiteV2/content/04-business-signals/signals/2026-07-14-signals.md
 
@@ -64,11 +58,12 @@
 - P-001: fact_type_constraints:viewpoint_without_confirmed_commercial_event; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Uber 产品负责人谈酒店预订、自动驾驶出租车及公司为何不想成为"万能应用"
 - P-003: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资
 - P-004: valid_page_type:research_prototype_without_commercial_event, valid_page_type:research_benchmark_without_commercial_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Skyfall AI 发布 MORPHEUS：面向持续强化学习的持久企业模拟基准
+- P-005: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Claude Code v2.1.208 发布
 - P-006: valid_page_type:research_benchmark_without_commercial_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=15款已停产NVIDIA企业级GPU在现代AI工作负载下的性能基准测试
 - P-007: evidence_quality:missing_source_material, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Waze 推出多项 AI 新功能，部分由 Gemini 驱动
 - P-008: fact_type_constraints:trade_secret_lawsuit_without_product_funding_or_case_event; repair=Keep trade-secret or employee dispute litigation as risk context unless it includes a separate product, funding, customer, procurement, or settlement event.; priority=low; title=Apple 起诉 OpenAI，指控前工程师利用漏洞窃取商业机密
 - P-010: valid_page_type:technical_article_without_business_event, valid_page_type:research_benchmark_without_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Anthropic 研究：Claude 在不同模型与语言中的价值观表达
-- P-012: evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, fact_type_constraints:workforce_retraining_program_not_formal_signal_card; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=PwC's 30,000-Person Claude Rollout: 70% Faster Delivery | THE D*AI*LY BRIEF
+- P-012: evidence_quality:stale_source_date, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, fact_type_constraints:workforce_retraining_program_not_formal_signal_card; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=PwC's 30,000-Person Claude Rollout: 70% Faster Delivery | THE D*AI*LY BRIEF
 - P-013: evidence_quality:missing_chinese_fact_translation; repair=Repair Raw evidence extraction so source URL, snapshot, excerpts, and hashes are present.; priority=medium; title=Transformer Chip Startup Etched Exits Stealth: $800M Raised, $1B in Contracts
 - P-014: evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:funding_not_single_company_round, fact_type_constraints:corporate_capex_or_community_investment_not_signal_card; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=FuriosaAI launches NXT RNGD server for data center-scale inferencing - DCD
 - P-015: evidence_quality:stale_source_date, business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:funding_not_single_company_round; repair=Find a fresh same-event source or keep as backend audit evidence.; priority=low; title=Supermicro Introduces Compact, Energy-Efficient Systems to Accelerate Adoption of Intelligent Edge AI | Supermicro
@@ -123,6 +118,7 @@
 - P-069: business_signal_scope:consumer_ui_personalization_not_business_signal; repair=Keep consumer UI personalization updates as backend context unless the same source proves enterprise adoption, pricing, developer platform, or customer deployment value.; priority=review; title=OPPO ColorOS 16 开放锁屏指纹样式自定义，支持汉字、数字、字母、表情、动画自由组合
 - P-070: fact_type_constraints:secondary_review_or_rumor_not_original_event; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=豆包输入法鸿蒙版开启招募：适配 HarmonyOS 5.0，支持豆包同款语音识别
 - P-071: business_signal_scope:spec_only_hardware_news_without_commercial_deployment; repair=Keep spec-only hardware news in Pool unless a customer deployment, procurement, commercial launch, or production rollout is sourced.; priority=review; title=英特尔推出太空级"Starfire"芯片，实为 Panther Lake 衍生变体
+- P-072: business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=OpenRouter 品牌焕新：以包豪斯几何美学重塑视觉标识
 - P-073: fact_type_constraints:user_feedback_or_commentary_not_verified_fact, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.; priority=low; title=前沿模型实际成本：tokenizer 差异导致隐性涨价
 - P-074: evidence_quality:missing_source_material, valid_page_type:generic_report_or_list_not_fact_signal, fact_type_constraints:user_feedback_or_commentary_not_verified_fact, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_only_evidence, fact_type_constraints:viewpoint_without_confirmed_commercial_event, business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:degradation_reason_index_only, valid_page_type:text_indicates_index_only, valid_page_type:pool_route_index_only_not_formal_card; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=claude-meseeks：为 Claude Code 添加 Mr. Meeseeks 语音提示的插件
 - P-075: business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:pool_route_index_only_not_formal_card, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Comma AI 创始人 George Hotz 反对 AI 2040 放缓提议，主张用户对齐的本地控制 AI

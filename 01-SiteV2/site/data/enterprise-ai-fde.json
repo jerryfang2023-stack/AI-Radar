@@ -1,17 +1,87 @@
 {
   "meta": {
     "version": "EAI-V1.2.0-raw-card-ingestion-boundary",
-    "generatedAt": "2026-07-14T04:45:56.933Z",
+    "generatedAt": "2026-07-14T06:18:40.079Z",
     "activeDate": "2026-07-14",
     "source": "01-SiteV2/site/data/v3-data-observation-desk.json",
-    "fdePoolCount": 0,
-    "itemCount": 0,
-    "totalFdePoolCount": 14,
-    "totalItemCount": 14,
+    "fdePoolCount": 1,
+    "itemCount": 1,
+    "totalFdePoolCount": 15,
+    "totalItemCount": 15,
     "historyMode": "all_available_dates",
     "boundary": "FDE is an Enterprise AI lens pool, not a fourth Business Signals Card type."
   },
   "fdePool": [
+    {
+      "type": "enterprise_ai_fde_pool_item",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "PwC 3 万人 Claude 推广：交付速度提升 70%",
+      "originalTitle": "PwC's 30,000-Person Claude Rollout: 70% Faster Delivery | THE D*AI*LY BRIEF",
+      "sourceTitle": "PwC's 30,000-Person Claude Rollout: 70% Faster Delivery | THE D*AI*LY BRIEF",
+      "date": "2026-07-14",
+      "subject": "PwC / Anthropic",
+      "source": "beri.net",
+      "sourceName": "beri.net",
+      "sourceUrl": "https://www.beri.net/article/pwc-anthropic-30000-claude-rollout-enterprise-blueprint-2026",
+      "sourceLevel": "B",
+      "importanceScore": 2,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。",
+      "translatedFact": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。",
+      "originalHighlights": [
+        "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。"
+      ],
+      "visibleFragment": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。",
+      "sourceLinks": [
+        "https://www.beri.net/article/pwc-anthropic-30000-claude-rollout-enterprise-blueprint-2026"
+      ],
+      "status": "pooled",
+      "promotionStatus": "fde_lens_pool_only",
+      "id": "FDE-2026-07-14-P-012",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "poolRoutes": [],
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "anthropic",
+      "largeVendor": true,
+      "frontstageRankScore": 1120,
+      "frontstageEditorialScore": 1120,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-012",
+      "titleZh": "",
+      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "发现的需求是高合规行业需要把 AI 引入受监管工作流，同时保留专业人员审核、数据边界和上线前验证。",
+        "services": "提供的服务是围绕软件研发的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。"
+      },
+      "displayTitle": "PwC 3 万人 Claude 推广：交付速度提升 70%",
+      "generatedTitle": "PwC 3 万人 Claude 推广：交付速度提升 70%"
+    },
     {
       "id": "FDE-2026-07-13-P-004",
       "type": "signal_card",
@@ -2928,6 +2998,28 @@
     }
   ],
   "items": [
+    {
+      "id": "enterprise-ai:FDE-2026-07-14-P-012",
+      "cardId": "FDE-2026-07-14-P-012",
+      "date": "2026-07-14",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "PwC 3 万人 Claude 推广：交付速度提升 70%",
+      "subject": "PwC / Anthropic",
+      "sourceName": "beri.net",
+      "sourceUrl": "https://www.beri.net/article/pwc-anthropic-30000-claude-rollout-enterprise-blueprint-2026",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "软件研发",
+      "workflow": "承保、理赔与风险控制流程",
+      "evidenceBoundary": "已确认：PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "发现的需求是高合规行业需要把 AI 引入受监管工作流，同时保留专业人员审核、数据边界和上线前验证。",
+        "services": "提供的服务是围绕软件研发的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。",
+        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
+        "sourceBasis": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。"
+      }
+    },
     {
       "id": "enterprise-ai:SIG-20260713-A02",
       "cardId": "SIG-20260713-A02",

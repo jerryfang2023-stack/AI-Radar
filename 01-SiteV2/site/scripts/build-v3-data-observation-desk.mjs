@@ -142,6 +142,7 @@ function syncSourceTitleTranslationsFromCards(rawCards = [], activeDate = "") {
     if (!zhTitle || !hasCjk(zhTitle) || titleLooksLikeGeneratedTemplate(zhTitle) || publicTextLooksGarbled(zhTitle)) continue;
     for (const sourceTitle of [card.sourceTitle, card.originalTitle].map(cleanEnglishTitleForDisplay).filter(Boolean)) {
       if (!titleNeedsChineseTranslation(sourceTitle)) continue;
+      if (!translationPreservesSourceTitlePayload(sourceTitle, zhTitle)) continue;
       const key = titleTranslationKey(sourceTitle);
       if (!key) continue;
       if (seen.has(key)) {
@@ -767,6 +768,7 @@ function subjectFromUrl(url = "") {
     if (host === "salesforce.com" && pathname.includes("forward-deployed-engineer")) return "Salesforce / Agentforce";
     if (host === "ellamind.com" && pathname.includes("forward-deployed-engineer")) return "ellamind / elluminate";
     if (host === "delight.ai" && pathname.includes("norse-atlantic-airways")) return "Norse Atlantic Airways / delight.ai";
+    if (host === "beri.net" && pathname.includes("pwc-anthropic-30000-claude-rollout-enterprise-blueprint-2026")) return "PwC / Anthropic";
     if (host === "the-decoder.com" && pathname.includes("midjourney-known-for-ai-image-generation")) return "Midjourney / Butterfly Network";
     if (host === "marktechpost.com" && pathname.includes("perplexity-launches-brain")) return "Perplexity / Brain";
     if (host.endsWith("bcg.com")) return "BCG";
@@ -1320,6 +1322,49 @@ function titleNeedsChineseTranslation(title = "") {
   return text.length > 12 && hanCount < 4 && latinWords.length >= 2;
 }
 
+function sourceTitlePayloadHints(title = "") {
+  const text = cleanEnglishTitleForDisplay(title).toLowerCase();
+  const hints = [];
+  const rules = [
+    [/sivaclaw/u, /SivaClaw/u],
+    [/investors?/u, /投资者/u],
+    [/interest/u, /兴趣|意向/u],
+    [/physical ai/u, /Physical AI/u],
+    [/robot arms?/u, /机械臂/u],
+    [/manufacturing/u, /制造/u],
+    [/web search/u, /网页搜索|网络搜索|Web Search/u],
+    [/agents?/u, /智能体|Agent/u],
+    [/to build/u, /用于|构建|建设/u],
+    [/customer|workflow|production|deployment/u, /客户|工作流|生产|部署|落地/u],
+  ];
+  for (const [sourcePattern, translationPattern] of rules) {
+    if (sourcePattern.test(text)) hints.push(translationPattern);
+  }
+  return hints;
+}
+
+function sourceTitleHasExtraPayload(title = "") {
+  const text = cleanEnglishTitleForDisplay(title);
+  if (!text) return false;
+  return sourceTitlePayloadHints(text).length > 0
+    || /:\s*\S|\b(?:after|to build|for|with participation from|led by|backing from|investment in|workflow|platform|automation|customer)\b/iu.test(text);
+}
+
+function publicTitleLooksLikeBareFundingSummary(title = "") {
+  const text = String(title || "").trim();
+  return text.length <= 36
+    && /^[A-Za-z0-9\u4e00-\u9fff .&'’()-]{1,24}\s+(?:获得|完成|宣布)\s*\d+(?:\.\d+)?\s*(?:万|亿)?(?:美元|人民币|欧元|英镑)?\s*(?:Pre-seed|Seed|种子轮|A 轮|B 轮|C 轮|D 轮)?\s*融资$/iu.test(text);
+}
+
+function translationPreservesSourceTitlePayload(sourceTitle = "", translated = "") {
+  if (!titleNeedsChineseTranslation(sourceTitle)) return true;
+  if (!sourceTitleHasExtraPayload(sourceTitle)) return true;
+  const cleanTranslated = String(translated || "").trim();
+  if (!cleanTranslated || publicTitleLooksLikeBareFundingSummary(cleanTranslated)) return false;
+  const hints = sourceTitlePayloadHints(sourceTitle);
+  return hints.length === 0 || hints.some((pattern) => pattern.test(cleanTranslated));
+}
+
 function sourceTitleDisplayFromOriginal(title = "") {
   const raw = String(title || "").trim();
   if (!raw || isBadPublicDisplayTitle(raw) || isProcessedChineseTitle(raw) || titleLooksLikeGeneratedTemplate(raw)) return "";
@@ -1328,6 +1373,7 @@ function sourceTitleDisplayFromOriginal(title = "") {
   if (!titleNeedsChineseTranslation(cleaned)) return cleaned;
   const translated = sourceTitleTranslations.get(titleTranslationKey(cleaned)) || "";
   if (!translated || !hasCjk(translated) || titleLooksLikeGeneratedTemplate(translated) || publicTextLooksGarbled(translated)) return "";
+  if (!translationPreservesSourceTitlePayload(cleaned, translated)) return "";
   return translated;
 }
 
@@ -1449,6 +1495,20 @@ function normalizeFrontstageDisplay(card = {}, options = {}) {
       }),
     };
   }
+  if (card.assetLevel === "enterprise_ai_fde_pool" && /beri\.net\/article\/pwc-anthropic-30000-claude-rollout-enterprise-blueprint-2026/iu.test(canonicalUrl(card.sourceUrl))) {
+    const title = card.title || card.displayTitle || "PwC 3 万人 Claude 推广：交付速度提升 70%";
+    const fact = card.translatedFact || card.visibleFragment || card.summary || "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。";
+    return {
+      ...card,
+      title,
+      displayTitle: title,
+      generatedTitle: title,
+      translatedFact: fact,
+      visibleFragment: card.visibleFragment || fact,
+      summary: card.summary || fact,
+      subject: "PwC / Anthropic",
+    };
+  }
   const internalTitle = publicTitleCandidate(card.originalTitle || card.sourceTitle || card.rawTitle, card.sourceUrl);
   const originalTitle = card.originalTitle || card.sourceTitle || card.rawTitle || "";
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
@@ -1473,7 +1533,10 @@ function normalizeFrontstageDisplay(card = {}, options = {}) {
   const cleanedTranslatedFact = cleanPublicSourceFact(translatedFact);
   const fallbackTitle = publicFundingFallbackTitle(card.title || card.displayTitle || "", sourceTitle || originalTitle, card.category);
   const translatedTitleFallback = publicTranslatedTitleFallback(card, sourceTitle || originalTitle);
-  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, "", card.sourceUrl, { allowGeneratedFallback: false }) || fallbackTitle || translatedTitleFallback;
+  const existingFdeTitle = card.assetLevel === "enterprise_ai_fde_pool" && publicDisplayTitleIsReady(card.title || card.displayTitle)
+    ? (card.title || card.displayTitle)
+    : "";
+  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, "", card.sourceUrl, { allowGeneratedFallback: false }) || fallbackTitle || translatedTitleFallback || existingFdeTitle;
   const displayTitle = publicDisplayTitleIsReady(preferredDisplayTitle) || publicFundingFallbackTitleIsReady({ ...card, sourceTitle, originalTitle, title: preferredDisplayTitle }, preferredDisplayTitle)
     ? preferredDisplayTitle
     : "";
@@ -1507,6 +1570,9 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
   }
   if (/delight\.ai\/customers\/norse-atlantic-airways/iu.test(normalized)) {
     return "Norse Atlantic Airways 与 delight.ai 合作构建面向航空公司运营的 AI workforce，用于把客户互动和运营任务交给可编排的 AI 工作流处理。";
+  }
+  if (/beri\.net\/article\/pwc-anthropic-30000-claude-rollout-enterprise-blueprint-2026/iu.test(normalized)) {
+    return "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。";
   }
   if (/thenextweb\.com/iu.test(normalized) && !/voice-ai-infrastructure/iu.test(normalized)) return "";
   const source = `${text}\n${normalized}`;
@@ -1597,6 +1663,7 @@ function frontstageSubjectOverride(sourceUrl = "", title = "") {
     [/anthropic\.com.*claude-opus-4-8/u, "Anthropic / Claude"],
     [/theverge\.com.*as-ai-gets-better/u, "Google Gemini Spark"],
     [/siliconangle.*vapi/u, "Vapi"],
+    [/beri\.net.*pwc-anthropic-30000-claude-rollout-enterprise-blueprint-2026/u, "PwC / Anthropic"],
     [/youtube\.com.*tecd/u, "AI Coding Agents"],
     [/youtube\.com.*71qv/u, "AI Evals"],
     [/github\.com\/github\/copilot-sdk/u, "GitHub Copilot"],
@@ -2603,6 +2670,46 @@ function isEnterpriseAiFdePoolSection(section = "") {
   return fdeRoute || explicitFde || implementationDelivery || verticalWorkflow;
 }
 
+function isExplicitFdeSourceSection(section = "") {
+  if (poolValue(section, "raw_qc_decision") && poolValue(section, "raw_qc_decision") !== "allow") return false;
+  if (/community|social/iu.test(poolValue(section, "source_type"))) return false;
+  if (isSocialOrCommunitySourceUrl(poolValue(section, "source_url"))) return false;
+  if (poolValue(section, "evidence_object_usable") === "false") return false;
+  const text = [
+    poolTitle(section),
+    poolValue(section, "source_url"),
+    poolValue(section, "source"),
+    poolValue(section, "search_path"),
+    poolValue(section, "search_intent"),
+    poolValue(section, "keyword_group"),
+    poolValue(section, "theme"),
+    poolValue(section, "key_excerpts"),
+    poolValue(section, "evidence_seed"),
+    poolValue(section, "missing_information"),
+  ].filter(Boolean).join(" ");
+  const fdeRoute = /fde_implementation|Enterprise AI \/ FDE implementation signal/iu.test(text);
+  const businessDeployment = /\b(?:customer|enterprise|employee|staff|workflow|underwriting|deployment|rollout|case study|customer story|implementation|production|Claude|agent|AI)\b|客户|企业|员工|工作流|部署|落地|案例/u.test(text);
+  const metric = /\b\d+(?:\.\d+)?\s?(?:%|percent|x|times|employees?|staff|days?|weeks?)\b|\d+(?:\.\d+)?\s*(?:名|人|天|周|%|倍|万)/iu.test(text);
+  const lowValue = /\b(?:job|hiring|career|what is|guide|explainer|why it matters|role)\b|职位|招聘|指南|解释/iu.test(text);
+  return fdeRoute && businessDeployment && metric && !lowValue;
+}
+
+function isKnownFdeSourceOverride(section = "") {
+  return /beri\.net\/article\/pwc-anthropic-30000-claude-rollout-enterprise-blueprint-2026/iu.test(poolValue(section, "source_url"));
+}
+
+function knownFdeSourceTitle(section = "") {
+  if (isKnownFdeSourceOverride(section)) return "PwC 3 万人 Claude 推广：交付速度提升 70%";
+  return "";
+}
+
+function knownFdeSourceFact(section = "") {
+  if (isKnownFdeSourceOverride(section)) {
+    return "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。";
+  }
+  return "";
+}
+
 function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
   const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
   return poolCandidateSectionsForDate(activeDate)
@@ -2621,9 +2728,9 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
       const card = cardsByUrl.get(canonicalUrl(sourceUrl));
       if (card) return card;
       const rawTitle = poolTitle(section);
-      const title = publicTitleCandidate(rawTitle, sourceUrl);
+      const title = knownFdeSourceTitle(section) || publicTitleCandidate(rawTitle, sourceUrl);
       const category = poolCandidateCategory(section);
-      const fact = poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
+      const fact = knownFdeSourceFact(section) || poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
       const ingestionBoundary = poolIngestionBoundaryFields(section, fact, rawTitle);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
       const score = Number(poolValue(section, "score")) || 0;
@@ -2686,14 +2793,14 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
 function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
   const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
   const items = poolCandidateSectionsForDate(activeDate)
-    .filter(isEnterpriseAiFdePoolSection)
+    .filter((section) => isEnterpriseAiFdePoolSection(section) || isExplicitFdeSourceSection(section) || isKnownFdeSourceOverride(section))
     .map((section) => {
       const ref = poolRef(section);
       const sourceUrl = poolValue(section, "source_url");
       const rawTitle = poolTitle(section);
       const card = cardsByUrl.get(canonicalUrl(sourceUrl));
       const category = poolCandidateCategory(section);
-      const fact = poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
+      const fact = knownFdeSourceFact(section) || poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
       const ingestionBoundary = poolIngestionBoundaryFields(section, fact, rawTitle);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
       const score = Number(poolValue(section, "score")) || 0;
@@ -2701,7 +2808,7 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
       const base = card ? {
         ...card,
         linkedCardId: card.linkedCardId || card.id,
-        title: publicTitleCandidate(rawTitle, sourceUrl),
+        title: knownFdeSourceTitle(section) || publicTitleCandidate(rawTitle, sourceUrl),
         originalTitle: rawTitle || card.originalTitle,
         sourceTitle: rawTitle || card.sourceTitle,
         rawTitle,
@@ -2714,7 +2821,7 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
         type: "enterprise_ai_fde_pool_item",
         category,
         categoryLabel: categoryLabels[category] || category,
-        title: publicTitleCandidate(rawTitle, sourceUrl),
+        title: knownFdeSourceTitle(section) || publicTitleCandidate(rawTitle, sourceUrl),
         originalTitle: rawTitle,
         sourceTitle: rawTitle,
         rawTitle,

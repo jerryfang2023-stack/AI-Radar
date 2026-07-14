@@ -1,13 +1,13 @@
 {
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T04:45:12.308Z",
+  "generated_at": "2026-07-14T06:18:06.705Z",
   "raw_input_count": 122,
   "pool_input_count": 112,
   "signal_card_assets": [
     {
       "id": "SIG-20260714-A01",
       "pool_ref": "P-034",
-      "title": "Seltz 获得 1250 万美元融资",
+      "title": "Seltz 融资 1250 万美元，用于为智能体构建先进 Web Search",
       "type": "funding",
       "company": "Seltz"
     },
@@ -21,21 +21,21 @@
     {
       "id": "SIG-20260714-A03",
       "pool_ref": "P-002",
-      "title": "PixVerse 获得 4.39 亿美元融资",
+      "title": "视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元",
       "type": "funding",
       "company": "PixVerse"
     },
     {
       "id": "SIG-20260714-A04",
       "pool_ref": "P-011",
-      "title": "Lyzr AI 获得 1 亿美元B 轮融资",
+      "title": "Lyzr AI 完成 1 亿美元 B 轮融资：其 AI Agent SivaClaw 对接 130 多位投资者并产生 4 亿美元投资兴趣",
       "type": "funding",
       "company": "Lyzr AI"
     },
     {
       "id": "SIG-20260714-A05",
       "pool_ref": "P-049",
-      "title": "Mowito 获得 300 万美元融资",
+      "title": "Version One Ventures 宣布投资 Mowito：面向制造业机械臂的 Physical AI",
       "type": "funding",
       "company": "Mowito"
     },
@@ -48,27 +48,13 @@
     },
     {
       "id": "SIG-20260714-A07",
-      "pool_ref": "P-005",
-      "title": "Claude Code v2.1.208 发布",
-      "type": "product_service",
-      "company": "Anthropic / Claude Code"
-    },
-    {
-      "id": "SIG-20260714-A08",
       "pool_ref": "P-036",
       "title": "Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为",
       "type": "product_service",
       "company": "Cloudflare"
     },
     {
-      "id": "SIG-20260714-A09",
-      "pool_ref": "P-072",
-      "title": "OpenRouter 品牌焕新：以包豪斯几何美学重塑视觉标识",
-      "type": "product_service",
-      "company": "OpenRouter"
-    },
-    {
-      "id": "SIG-20260714-A10",
+      "id": "SIG-20260714-A08",
       "pool_ref": "P-068",
       "title": "阶跃星辰发布终端品牌STEPX及首款智能体手机STEPX Neo",
       "type": "product_service",
@@ -109,6 +95,17 @@
       "not_promoted_reason": "valid_page_type:research_prototype_without_commercial_event, valid_page_type:research_benchmark_without_commercial_event",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-005",
+      "title": "Claude Code v2.1.208 发布",
+      "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
     },
     {
       "pool_ref": "P-006",
@@ -166,11 +163,10 @@
       "source_url": "https://www.beri.net/article/pwc-anthropic-30000-claude-rollout-enterprise-blueprint-2026",
       "issues": [
         "evidence_quality:stale_source_date",
-        "evidence_quality:missing_chinese_fact_translation",
         "valid_page_type:generic_fde_explainer_or_service_page_without_customer_event",
         "fact_type_constraints:workforce_retraining_program_not_formal_signal_card"
       ],
-      "not_promoted_reason": "evidence_quality:stale_source_date, evidence_quality:missing_chinese_fact_translation, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, fact_type_constraints:workforce_retraining_program_not_formal_signal_card",
+      "not_promoted_reason": "evidence_quality:stale_source_date, valid_page_type:generic_fde_explainer_or_service_page_without_customer_event, fact_type_constraints:workforce_retraining_program_not_formal_signal_card",
       "repair_suggestion": "Find a fresh same-event source or keep as backend audit evidence.",
       "promote_priority": "low"
     },
@@ -852,6 +848,17 @@
       ],
       "not_promoted_reason": "business_signal_scope:spec_only_hardware_news_without_commercial_deployment",
       "repair_suggestion": "Keep spec-only hardware news in Pool unless a customer deployment, procurement, commercial launch, or production rollout is sourced.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-072",
+      "title": "OpenRouter 品牌焕新：以包豪斯几何美学重塑视觉标识",
+      "source_url": "https://openrouter.ai/blog/announcements/brand-refresh",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
       "promote_priority": "review"
     },
     {

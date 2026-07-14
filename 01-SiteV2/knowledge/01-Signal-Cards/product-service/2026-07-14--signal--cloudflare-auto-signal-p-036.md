@@ -1,5 +1,5 @@
 ---
-id: SIG-20260714-A08
+id: SIG-20260714-A07
 type: signal_card
 signal_type: product_service
 title: "Cloudflare 推出 Precursor：通过持续客户端信号检测 AI 智能体行为"
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-14T04:45:09.794Z
-updated_at: 2026-07-14T04:45:09.794Z
+created_at: 2026-07-14T06:18:04.017Z
+updated_at: 2026-07-14T06:18:04.017Z
 
 raw_refs: ["R-036"]
 pool_refs: ["P-036"]

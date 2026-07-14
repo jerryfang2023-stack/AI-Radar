@@ -2,18 +2,18 @@
 id: SIG-20260714-A05
 type: signal_card
 signal_type: funding
-title: "Mowito 获得 300 万美元融资"
+title: "Version One Ventures 宣布投资 Mowito：面向制造业机械臂的 Physical AI"
 date: 2026-07-14
 status: published
 source_title: "Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures"
 asset_level: frontstage
-title_zh: "Mowito 获得 300 万美元融资"
+title_zh: "Version One Ventures 宣布投资 Mowito：面向制造业机械臂的 Physical AI"
 title_translation_status: translated
 title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-14T04:45:09.794Z
-updated_at: 2026-07-14T04:45:09.794Z
+created_at: 2026-07-14T06:18:04.017Z
+updated_at: 2026-07-14T06:18:04.017Z
 
 raw_refs: ["R-049"]
 pool_refs: ["P-049"]
@@ -53,18 +53,18 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "procurement_contract"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Mowito 获得 300 万美元融资 Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures Mowito 获得 300 万美元 种子前轮融资。"
+  source_excerpt: "Version One Ventures 宣布投资 Mowito：面向制造业机械臂的 Physical AI Announcing Our Investment in Mowito: Physical AI for Robot Arms in Manufacturing - Version One Ventures Mowito 获得 300 万美元 种子前轮融资。"
   missing_fields: ["delivery_model"]
 
 signal_owner: "Mowito"
 
 frontend:
-  displayTitle: "Mowito 获得 300 万美元融资"
+  displayTitle: "Version One Ventures 宣布投资 Mowito：面向制造业机械臂的 Physical AI"
   sourceLinks:
     - "https://versionone.vc/announcing-our-investment-in-mowito-physical-ai-for-robot-arms-in-manufacturing/"
 ---
 
-# Mowito 获得 300 万美元融资
+# Version One Ventures 宣布投资 Mowito：面向制造业机械臂的 Physical AI
 
 ## 新闻事实
 

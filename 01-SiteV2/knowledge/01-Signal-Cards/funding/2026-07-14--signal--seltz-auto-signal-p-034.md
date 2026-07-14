@@ -2,18 +2,18 @@
 id: SIG-20260714-A01
 type: signal_card
 signal_type: funding
-title: "Seltz 获得 1250 万美元融资"
+title: "Seltz 融资 1250 万美元，用于为智能体构建先进 Web Search"
 date: 2026-07-14
 status: published
 source_title: "We've raised $12.5M to build state-of-the-art Web Search for agents"
 asset_level: frontstage
-title_zh: "Seltz 获得 1250 万美元融资"
+title_zh: "Seltz 融资 1250 万美元，用于为智能体构建先进 Web Search"
 title_translation_status: translated
 title_translation_method: raw_or_source_title_translation_db
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-14T04:45:09.794Z
-updated_at: 2026-07-14T04:45:09.794Z
+created_at: 2026-07-14T06:18:04.017Z
+updated_at: 2026-07-14T06:18:04.017Z
 
 raw_refs: ["R-034"]
 pool_refs: ["P-034"]
@@ -53,18 +53,18 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Seltz 获得 1250 万美元融资 We've raised $12.5M to build state-of-the-art Web Search for agents Seltz 宣布完成 1250 万美元种子轮融资，用于构建面向 AI 智能体的先进网页搜索系统。"
+  source_excerpt: "Seltz 融资 1250 万美元，用于为智能体构建先进 Web Search We've raised $12.5M to build state-of-the-art Web Search for agents Seltz 宣布完成 1250 万美元种子轮融资，用于构建面向 AI 智能体的先进网页搜索系统。"
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Seltz"
 
 frontend:
-  displayTitle: "Seltz 获得 1250 万美元融资"
+  displayTitle: "Seltz 融资 1250 万美元，用于为智能体构建先进 Web Search"
   sourceLinks:
     - "https://seltz.ai/blog/seed-round-announcement"
 ---
 
-# Seltz 获得 1250 万美元融资
+# Seltz 融资 1250 万美元，用于为智能体构建先进 Web Search
 
 ## 新闻事实
 

@@ -106,8 +106,11 @@ function assetHasRequiredSourceTitleTranslation(fm = "") {
   const sourceTitle = frontmatterScalar(fm, "source_title");
   if (!sourceTitle || !sourceTitleNeedsChineseTranslation(sourceTitle)) return true;
   const titleZh = frontmatterScalar(fm, "title_zh");
-  if (titleZh && hasCjk(titleZh) && !publicTextLooksGarbled(titleZh)) return true;
-  return Boolean(sourceTitleTranslations.get(titleTranslationKey(sourceTitle)));
+  if (titleZh && hasCjk(titleZh) && !publicTextLooksGarbled(titleZh)) {
+    return translationPreservesSourceTitlePayload(sourceTitle, titleZh);
+  }
+  const translated = sourceTitleTranslations.get(titleTranslationKey(sourceTitle)) || "";
+  return Boolean(translated) && translationPreservesSourceTitlePayload(sourceTitle, translated);
 }
 
 function normalizedComparableText(value = "") {
@@ -413,6 +416,49 @@ function translatedSourceTitle(value = "") {
   return cleanOriginalTitle(sourceTitleTranslations.get(titleTranslationKey(value)) || "");
 }
 
+function sourceTitlePayloadHints(title = "") {
+  const text = cleanOriginalTitle(title).toLowerCase();
+  const hints = [];
+  const rules = [
+    [/sivaclaw/u, /SivaClaw/u],
+    [/investors?/u, /投资者/u],
+    [/interest/u, /兴趣|意向/u],
+    [/physical ai/u, /Physical AI/u],
+    [/robot arms?/u, /机械臂/u],
+    [/manufacturing/u, /制造/u],
+    [/web search/u, /网页搜索|网络搜索|Web Search/u],
+    [/agents?/u, /智能体|Agent/u],
+    [/to build/u, /用于|构建|建设/u],
+    [/customer|workflow|production|deployment/u, /客户|工作流|生产|部署|落地/u],
+  ];
+  for (const [sourcePattern, translationPattern] of rules) {
+    if (sourcePattern.test(text)) hints.push(translationPattern);
+  }
+  return hints;
+}
+
+function sourceTitleHasExtraPayload(title = "") {
+  const text = cleanOriginalTitle(title);
+  if (!text) return false;
+  return sourceTitlePayloadHints(text).length > 0
+    || /:\s*\S|\b(?:after|to build|for|with participation from|led by|backing from|investment in|workflow|platform|automation|customer)\b/iu.test(text);
+}
+
+function publicTitleLooksLikeBareFundingSummary(title = "") {
+  const text = cleanOriginalTitle(title);
+  return text.length <= 36
+    && /^[A-Za-z0-9\u4e00-\u9fff .&'’()-]{1,24}\s+(?:获得|完成|宣布)\s*\d+(?:\.\d+)?\s*(?:万|亿)?(?:美元|人民币|欧元|英镑)?\s*(?:Pre-seed|Seed|种子轮|A 轮|B 轮|C 轮|D 轮)?\s*融资$/iu.test(text);
+}
+
+function translationPreservesSourceTitlePayload(sourceTitle = "", translated = "") {
+  if (!sourceTitleNeedsChineseTranslation(sourceTitle)) return true;
+  if (!sourceTitleHasExtraPayload(sourceTitle)) return true;
+  const cleanTranslated = cleanOriginalTitle(translated);
+  if (!cleanTranslated || publicTitleLooksLikeBareFundingSummary(cleanTranslated)) return false;
+  const hints = sourceTitlePayloadHints(sourceTitle);
+  return hints.length === 0 || hints.some((pattern) => pattern.test(cleanTranslated));
+}
+
 function confirmedFundingSourceTitle(title = "") {
   const text = cleanOriginalTitle(title);
   if (!text) return false;
@@ -450,7 +496,10 @@ function titleBackedByOriginalSource(card = {}) {
     .some((sourceTitle) => {
       if (sourceTitleNeedsChineseTranslation(sourceTitle)) {
         const translated = translatedSourceTitle(sourceTitle);
-        return translated && hasCjk(title) && title === translated;
+        return translated
+          && hasCjk(title)
+          && title === translated
+          && translationPreservesSourceTitlePayload(sourceTitle, translated);
       }
       return title === sourceTitle;
     });

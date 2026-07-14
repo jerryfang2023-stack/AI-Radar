@@ -1584,6 +1584,22 @@ button {
   color: #244f5f;
 }
 
+.ai-hardware-card .enterprise-ai-title-block h3,
+.ai-hardware-card .enterprise-ai-cell {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ai-hardware-card .enterprise-ai-title-block h3 {
+  -webkit-line-clamp: 2;
+}
+
+.ai-hardware-card .enterprise-ai-cell {
+  -webkit-line-clamp: 3;
+  max-height: 72px;
+}
+
 .enterprise-ai-title-block {
   display: grid;
   min-width: 0;
@@ -2301,6 +2317,18 @@ button {
 
 .detail-main-grid .detail-block {
   margin-top: 18px;
+}
+
+.ai-hardware-detail-fact-card p,
+.ai-hardware-detail-grid .detail-block p {
+  max-height: 192px;
+  overflow: auto;
+  padding-right: 6px;
+  overflow-wrap: anywhere;
+}
+
+.ai-hardware-detail-grid .detail-block p {
+  max-height: 156px;
 }
 
 .detail-aux {

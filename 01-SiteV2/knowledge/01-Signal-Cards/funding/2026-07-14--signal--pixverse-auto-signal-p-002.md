@@ -2,7 +2,7 @@
 id: SIG-20260714-A03
 type: signal_card
 signal_type: funding
-title: "PixVerse 获得 4.39 亿美元融资"
+title: "视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元"
 date: 2026-07-14
 status: published
 source_title: "视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元"
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-14T04:45:09.794Z
-updated_at: 2026-07-14T04:45:09.794Z
+created_at: 2026-07-14T06:18:04.017Z
+updated_at: 2026-07-14T06:18:04.017Z
 
 raw_refs: ["R-002"]
 pool_refs: ["P-002"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "PixVerse 获得 4.39 亿美元融资 视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元 视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元 新加坡视频生成初创公司 PixVerse 完成 C 轮扩展融资，共筹集 4.39 亿美元，估值突破 20 亿美元。"
+  source_excerpt: "视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元 视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元 视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元 新加坡视频生成初创公司 PixVerse 完成 C 轮扩展融资，共筹集 4.39 亿美元，估值突破 20 亿美元。"
   missing_fields: []
 
 signal_owner: "PixVerse"
 
 frontend:
-  displayTitle: "PixVerse 获得 4.39 亿美元融资"
+  displayTitle: "视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元"
   sourceLinks:
     - "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b"
 ---
 
-# PixVerse 获得 4.39 亿美元融资
+# 视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元
 
 ## 新闻事实
 

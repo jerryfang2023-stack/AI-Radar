@@ -1,5 +1,5 @@
 ---
-id: SIG-20260714-A10
+id: SIG-20260714-A08
 type: signal_card
 signal_type: product_service
 title: "阶跃星辰发布终端品牌STEPX及首款智能体手机STEPX Neo"
@@ -11,8 +11,8 @@ title_translation_status: not_required
 title_translation_method: source_title
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-14T04:45:09.794Z
-updated_at: 2026-07-14T04:45:09.794Z
+created_at: 2026-07-14T06:18:04.017Z
+updated_at: 2026-07-14T06:18:04.017Z
 
 raw_refs: ["R-068"]
 pool_refs: ["P-068"]

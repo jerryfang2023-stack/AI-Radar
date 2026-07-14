@@ -423,11 +423,11 @@
         <strong>${safe(item.subject || item.sourceName || "FDE lens")}</strong>
         ${item.sourceUrl ? `<a href="${safe(item.sourceUrl)}" target="_blank" rel="noreferrer">查看原文</a>` : ""}
       </div>
-      <div class="detail-fact-card">
+      <div class="detail-fact-card ai-hardware-detail-fact-card">
         <h3>AI化动作</h3>
         <p>${safe(item.workflow || "把 Agent 或模型接入业务系统")}</p>
       </div>
-      <div class="detail-main-grid">
+      <div class="detail-main-grid ai-hardware-detail-grid">
         <div class="detail-block">
           <h3>发现的需求</h3>
           <p>${safe(analysis.demand || "原文未提供足够信息判断具体需求。")}</p>

@@ -1982,6 +1982,10 @@ function isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section) {
     && !/customer deployment|procurement|contract|pricing|funding|commercial launch/iu.test(text)) return true;
   if (/Workbench Notebooks|GLM Coding Pro|Coding Pro|ZCode|VS Code|Jupyter|coding assistant|developer environment/iu.test(text)
     && !/enterprise deployment|customer deployment|case study|procurement|contract|pricing|funding|annual recurring revenue|ARR/iu.test(text)) return true;
+  if (/\b(brand refresh|new look|visual identity|logo refresh|bauhaus|brand design)\b|品牌焕新|品牌视觉|视觉标识|包豪斯/iu.test(text)
+    && !/customer deployment|production rollout|procurement|contract|pricing|raises?|raised|financing round|commercial launch|new paid product|enterprise deployment|客户部署|客户案例|生产部署|采购|合同|定价|完成.{0,12}融资|获得.{0,12}融资|商业发布/iu.test(text)) return true;
+  if (/\bgithub\.com\/[^/]+\/[^/]+\/releases\/tag\/v?\d+\.\d+\.\d+\b|\brelease notes?\b|v\d+\.\d+\.\d+\s*发布/iu.test(text)
+    && !/customer deployment|case study|procurement|contract|pricing|raises?|raised|financing round|annual recurring revenue|ARR|commercial launch|new paid product|enterprise deployment|客户部署|客户案例|生产部署|采购|合同|定价|完成.{0,12}融资|获得.{0,12}融资|商业发布/iu.test(text)) return true;
   if (/\b(deploys?|deployment|deployed|rollout|production rollout|case study|customer story|customer deployment|uses? (?:Amazon Bedrock|Claude|Glean|AI|agentic AI|machine learning)|saved \d|reduced|cut|hours per person|ARR|annual recurring revenue|acquires?|acquisition|to buy|strategic partnership|partners? with|collaborates? with|pricing|billing|monetization gateway|contract|procurement)\b/iu.test(text)) return false;
   const consumerEntertainment = /Just Dance|舞力全开|mobile game|手游|游戏快报|玩家|曲库|K-POP|音舞|体感音乐|育碧|腾讯游戏|Steam|策略模拟游戏|独立\s*AI\s*游戏/iu.test(text);
   const minorPlatformPolicy = /肖像保护|仿冒带货|带货达人|达人账号|素材盗用|侵权账号|侵权内容|平台治理|内容安全|相似内容阻断|举报|处置侵权|未经同意.{0,30}(?:AI\s*照片|生成)|Muse Image.{0,40}Instagram/iu.test(text);
@@ -2583,11 +2587,56 @@ function sourceTitleNeedsChineseTranslation(title = "") {
   return text.length > 12 && hanCount < 4 && latinWords.length >= 2;
 }
 
+function sourceTitlePayloadHints(title = "") {
+  const text = cleanSourceTitleForPublicTitle(title).toLowerCase();
+  const hints = [];
+  const rules = [
+    [/sivaclaw/u, /SivaClaw/u],
+    [/investors?/u, /投资者/u],
+    [/interest/u, /兴趣|意向/u],
+    [/physical ai/u, /Physical AI/u],
+    [/robot arms?/u, /机械臂/u],
+    [/manufacturing/u, /制造/u],
+    [/web search/u, /网页搜索|网络搜索|Web Search/u],
+    [/agents?/u, /智能体|Agent/u],
+    [/to build/u, /用于|构建|建设/u],
+    [/customer|workflow|production|deployment/u, /客户|工作流|生产|部署|落地/u],
+  ];
+  for (const [sourcePattern, translationPattern] of rules) {
+    if (sourcePattern.test(text)) hints.push(translationPattern);
+  }
+  return hints;
+}
+
+function sourceTitleHasExtraPayload(title = "") {
+  const text = cleanSourceTitleForPublicTitle(title);
+  if (!text) return false;
+  return sourceTitlePayloadHints(text).length > 0
+    || /:\s*\S|\b(?:after|to build|for|with participation from|led by|backing from|investment in|workflow|platform|automation|customer)\b/iu.test(text);
+}
+
+function publicTitleLooksLikeBareFundingSummary(title = "") {
+  const text = cleanSourceTitleForPublicTitle(title);
+  return text.length <= 36
+    && /^[A-Za-z0-9\u4e00-\u9fff .&'’()-]{1,24}\s+(?:获得|完成|宣布)\s*\d+(?:\.\d+)?\s*(?:万|亿)?(?:美元|人民币|欧元|英镑)?\s*(?:Pre-seed|Seed|种子轮|A 轮|B 轮|C 轮|D 轮)?\s*融资$/iu.test(text);
+}
+
+function translationPreservesSourceTitlePayload(sourceTitle = "", translated = "") {
+  if (!sourceTitleNeedsChineseTranslation(sourceTitle)) return true;
+  if (!sourceTitleHasExtraPayload(sourceTitle)) return true;
+  const cleanTranslated = cleanSourceTitleForPublicTitle(translated);
+  if (!cleanTranslated || publicTitleLooksLikeBareFundingSummary(cleanTranslated)) return false;
+  const hints = sourceTitlePayloadHints(sourceTitle);
+  return hints.length === 0 || hints.some((pattern) => pattern.test(cleanTranslated));
+}
+
 function sourceTitleDisplayTitle(title = "") {
   const cleaned = cleanSourceTitleForPublicTitle(title);
   if (!cleaned || hasTextContamination(cleaned)) return "";
   if (!sourceTitleNeedsChineseTranslation(cleaned)) return cleaned;
-  return sourceTitleTranslations.get(sourceTitleTranslationKey(cleaned)) || "";
+  const translated = sourceTitleTranslations.get(sourceTitleTranslationKey(cleaned)) || "";
+  if (!translationPreservesSourceTitlePayload(cleaned, translated)) return "";
+  return translated;
 }
 
 const sourceTitleTranslations = loadSourceTitleTranslations();
@@ -2611,14 +2660,21 @@ function compactLaunchTitle(company = "", title = "") {
   return `${cleanCompany} 发布 ${product}`;
 }
 
+function fundingSourceTitleHasExtraPayload(title = "") {
+  const text = cleanSourceTitleForPublicTitle(title);
+  if (!text) return false;
+  return /:\s*\S|\b(?:after|to build|for|with participation from|led by|backing from|investment in|physical ai|robot arms|manufacturing|web search|agents?|investors?|generated|interest|workflow|platform|automation|customer)\b/iu.test(text);
+}
+
 function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount, translatedTitle = "" }) {
+  const translated = translatedTitle || sourceTitleDisplayTitle(sourceEventTitle);
+  if (translated) return translated;
   if (type === "funding" && company && amount && !hasTextContamination(company)) {
+    if (sourceTitleNeedsChineseTranslation(sourceEventTitle) && fundingSourceTitleHasExtraPayload(sourceEventTitle)) return "";
     const round = chineseRound(sourceEventTitle);
     const localizedAmount = chineseAmount(amount) || amount;
     return `${company} 获得 ${localizedAmount}${round || ""}融资`;
   }
-  const translated = translatedTitle || sourceTitleDisplayTitle(sourceEventTitle);
-  if (translated) return translated;
   if (sourceTitleNeedsChineseTranslation(sourceEventTitle)) return "";
   if ((type === "product_service" || type === "case") && sourceEventTitleCanBackAutoCard(sourceEventTitle)) {
     if (sourceTitleNeedsChineseTranslation(sourceEventTitle)) return "";
@@ -3832,13 +3888,13 @@ function runCoreRecallRegressionFixtures() {
   assert.equal(companyFromSection("## P-994｜We've raised $12.5M to build state-of-the-art Web Search for agents\n- source_url: https://seltz.ai/blog/seed-round-announcement"), "Seltz", "first-person official funding posts must resolve the company from the original domain");
   assert.equal(
     publicTitleForAutoSignal({ type: "funding", company: "Seltz", sourceEventTitle: "We've raised $12.5M to build state-of-the-art Web Search for agents", amount: "1250 万美元" }),
-    "Seltz 获得 1250 万美元融资",
-    "English first-person funding titles must receive a deterministic Chinese company-and-amount fallback",
+    "Seltz 融资 1250 万美元，用于为智能体构建先进 Web Search",
+    "English first-person funding titles with product-purpose payload must preserve the source-title translation",
   );
   assert.equal(
     publicTitleForAutoSignal({ type: "funding", company: "Monogram", sourceEventTitle: "Monogram Raises $40M Seed for Visual AI Interface", amount: "4000 万美元", translatedTitle: "Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface" }),
-    "Monogram 获得 4000 万美元种子轮融资",
-    "funding titles must use a clean Chinese company-amount-round grammar instead of partial title translation",
+    "Monogram 完成 4000 万美元 种子轮融资，用于 Visual AI Interface",
+    "funding titles must keep reviewed source-title translations ahead of company-amount templates",
   );
   assert.equal(
     sourceBackedChineseFact("The last time search was reinvented, the consumer was a person typing a few words into a box."),
