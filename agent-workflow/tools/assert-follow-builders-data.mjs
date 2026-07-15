@@ -113,6 +113,12 @@ if (payload) {
   if (Number(stats.remarks) !== remarks.length) problems.push(`stats.remarks ${stats.remarks} does not match remarks length ${remarks.length}`);
   if (Number(stats.builders) !== builders.length) problems.push(`stats.builders ${stats.builders} does not match builders length ${builders.length}`);
   if (podcasts.length === 0) warnings.push("no podcast item is present");
+  const podcastUrls = new Set();
+  for (const [index, podcast] of podcasts.entries()) {
+    if (!podcast?.url) warnings.push(`podcast[${index}] missing original url`);
+    else if (podcastUrls.has(podcast.url)) problems.push(`podcast[${index}] duplicate url`);
+    else podcastUrls.add(podcast.url);
+  }
 
   const ids = new Set();
   const urls = new Set();

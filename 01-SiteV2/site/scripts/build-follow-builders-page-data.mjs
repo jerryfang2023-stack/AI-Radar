@@ -18,14 +18,12 @@ const execFileAsync = promisify(execFile);
 const siteRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const skillDir = process.env.FOLLOW_BUILDERS_SKILL_DIR
   || path.join(homedir(), ".skill-store", "follow-builders");
-const prepareScript = path.join(skillDir, "scripts", "prepare-digest.js");
 const outputPath = path.join(siteRoot, "data", "follow-builders-daily.json");
 const builderBlogFeedPath = path.join(siteRoot, "..", "content", "11-databases", "builder-blog-feed.json");
 const builderPodcastFeedPath = path.join(siteRoot, "..", "content", "11-databases", "builder-podcast-feed.json");
 const tagIndex = buildTagIndex(readTagTaxonomy(process.cwd()));
 const remoteFeeds = {
   x: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
-  podcasts: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json",
 };
 const fallbackTopic = "产品与创业";
 
@@ -226,62 +224,59 @@ async function translateTweet(tweet = {}, cache = {}) {
 }
 
 async function loadPreparedFeed() {
-  let prepareError = null;
-  if (existsSync(prepareScript)) {
+  async function fetchRemoteX() {
     try {
-      const { stdout } = await execFileAsync(process.execPath, [prepareScript], {
-        cwd: path.join(skillDir, "scripts"),
-        maxBuffer: 80 * 1024 * 1024,
-        env: { ...process.env, NO_COLOR: "1" },
-      });
-      return {
-        ...JSON.parse(stdout),
-        sourceRoute: "prepare-digest",
-        sourceErrors: [],
-        blogs: existsSync(builderBlogFeedPath)
-          ? JSON.parse(await readFile(builderBlogFeedPath, "utf8")).blogs || []
-          : [],
-        podcastsFromFeed: existsSync(builderPodcastFeedPath)
-          ? JSON.parse(await readFile(builderPodcastFeedPath, "utf8")).podcasts || []
-          : [],
-      };
-    } catch (error) {
-      prepareError = error;
+      const response = await fetch(remoteFeeds.x, { signal: AbortSignal.timeout(20_000) });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return { payload: await response.json(), route: "remote-x" };
+    } catch (fetchError) {
+      if (process.platform !== "win32") throw fetchError;
+      const script = [
+        "$ProgressPreference='SilentlyContinue'",
+        "$ErrorActionPreference='Stop'",
+        `$response=Invoke-WebRequest -Uri '${remoteFeeds.x}' -UseBasicParsing -TimeoutSec 30`,
+        "Write-Output $response.Content",
+      ].join("; ");
+      try {
+        const { stdout } = await execFileAsync("powershell", ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", script], {
+          maxBuffer: 50 * 1024 * 1024,
+          timeout: 35_000,
+        });
+        return { payload: JSON.parse(stdout), route: "remote-x-powershell-fallback", warning: fetchError.message };
+      } catch (powershellError) {
+        throw new Error(`X feed fetch failed: ${fetchError.message}; PowerShell fallback failed: ${powershellError.message}`);
+      }
     }
   }
 
-  async function fetchRemoteFeed(name) {
-    const response = await fetch(remoteFeeds[name], { signal: AbortSignal.timeout(20000) });
-    if (!response.ok) throw new Error(`Failed to fetch follow-builders ${name} feed: ${response.status}`);
-    return { payload: await response.json(), route: `remote-${name}` };
-  }
-
-  async function readLocalOrRemote(name) {
-    const localFile = path.join(skillDir, `feed-${name}.json`);
-    if (existsSync(localFile)) return { payload: JSON.parse(await readFile(localFile, "utf8")), route: `local-${name}` };
-    return fetchRemoteFeed(name);
-  }
-
-  let xRaw;
-  let podcastRaw;
-  let blogRaw;
-  try {
-    [xRaw, podcastRaw, blogRaw] = await Promise.all([
-      readLocalOrRemote("x"),
-      readLocalOrRemote("podcasts"),
-      existsSync(builderBlogFeedPath)
-        ? readFile(builderBlogFeedPath, "utf8").then(c => ({ payload: JSON.parse(c), route: "local-blogs" }))
-        : Promise.resolve({ payload: { blogs: [] }, route: "none" }),
-    ]);
-  } catch (error) {
-    if (prepareError) {
-      throw new Error(`prepare-digest failed: ${prepareError.message}; feed fallback failed: ${error.message}`);
+  async function readX() {
+    try {
+      return await fetchRemoteX();
+    } catch (remoteError) {
+      const localFile = path.join(skillDir, "feed-x.json");
+      if (!existsSync(localFile)) throw remoteError;
+      const payload = JSON.parse(await readFile(localFile, "utf8"));
+      const generatedAt = Date.parse(payload.generatedAt || "");
+      const ageHours = Number.isFinite(generatedAt) ? (Date.now() - generatedAt) / 36e5 : Infinity;
+      if (ageHours > 96) {
+        throw new Error(`${remoteError.message}; local X fallback is ${ageHours.toFixed(1)}h old`);
+      }
+      return { payload, route: "local-x-fresh-fallback", warning: remoteError.message };
     }
-    throw error;
   }
-  const xPayload = xRaw.payload ?? xRaw;
-  const podcastPayload = podcastRaw.payload ?? podcastRaw;
-  const blogPayload = blogRaw.payload ?? blogRaw;
+
+  const [xRaw, podcastRaw, blogRaw] = await Promise.all([
+    readX(),
+    existsSync(builderPodcastFeedPath)
+      ? readFile(builderPodcastFeedPath, "utf8").then((content) => ({ payload: JSON.parse(content), route: "local-project-podcasts" }))
+      : Promise.resolve({ payload: { podcasts: [] }, route: "none" }),
+    existsSync(builderBlogFeedPath)
+      ? readFile(builderBlogFeedPath, "utf8").then((content) => ({ payload: JSON.parse(content), route: "local-project-blogs" }))
+      : Promise.resolve({ payload: { blogs: [] }, route: "none" }),
+  ]);
+  const xPayload = xRaw.payload;
+  const podcastPayload = podcastRaw.payload;
+  const blogPayload = blogRaw.payload;
   const x = typeof xPayload === "string" ? JSON.parse(xPayload) : xPayload;
   const podcasts = typeof podcastPayload === "string" ? JSON.parse(podcastPayload) : podcastPayload;
   const blogs = typeof blogPayload === "string" ? JSON.parse(blogPayload) : blogPayload;
@@ -291,8 +286,9 @@ async function loadPreparedFeed() {
     x: x.x || [],
     blogs: blogs.blogs || [],
     podcasts: podcasts.podcasts || [],
-    sourceRoute: [xRaw.route, podcastRaw.route].filter(Boolean).join("+") || "feed-fallback",
-    sourceErrors: prepareError ? [`prepare-digest: ${prepareError.message}`] : [],
+    podcastsFromFeed: podcasts.podcasts || [],
+    sourceRoute: [xRaw.route, podcastRaw.route, blogRaw.route].filter(Boolean).join("+") || "feed-fallback",
+    sourceErrors: xRaw.warning ? [xRaw.warning] : [],
     stats: {
       xBuilders: x.stats?.xBuilders || x.x?.length || 0,
       totalTweets: x.stats?.totalTweets || 0,
@@ -435,7 +431,7 @@ async function normalize(feed, trackedSources) {
       sourceSkill: "follow-builders",
       sourceRoute: feed.sourceRoute || "unknown",
       sourceErrors: feed.sourceErrors || [],
-      sourcePolicy: "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display.",
+      sourcePolicy: "Only content from the current follow-builders X feed and project-owned blog/podcast feeds is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display.",
     },
     stats: {
       builders: builders.length,
