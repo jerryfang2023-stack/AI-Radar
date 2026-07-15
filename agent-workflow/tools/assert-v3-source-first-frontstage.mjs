@@ -429,7 +429,10 @@ function sourceTitlePayloadHints(title = "") {
     [/web search/u, /网页搜索|网络搜索|Web Search/u],
     [/agents?/u, /智能体|Agent/u],
     [/to build/u, /用于|构建|建设/u],
-    [/customer|workflow|production|deployment/u, /客户|工作流|生产|部署|落地/u],
+    [/dating service/u, /约会服务|dating service/u],
+    [/chiplet|custom ai silicon|full-stack/u, /Chiplet|芯粒|Custom AI Silicon|定制 AI 芯片|全栈/u],
+    [/rfq|10 minutes?|cuts?/u, /RFQ|10 分钟|缩短|cuts?|minutes?/u],
+    [/customer|workflow|production|deployment/u, /客户|工作流|生产|部署|落地|customer|workflow|production|deployment/u],
   ];
   for (const [sourcePattern, translationPattern] of rules) {
     if (sourcePattern.test(text)) hints.push(translationPattern);

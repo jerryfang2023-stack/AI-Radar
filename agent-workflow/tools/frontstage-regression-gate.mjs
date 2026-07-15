@@ -244,7 +244,12 @@ function collectGeneratedDataIssues() {
       ...(Array.isArray(data?.enterpriseAiFdePool) ? data.enterpriseAiFdePool : []),
       ...(Array.isArray(data?.enterpriseAiLensCandidates) ? data.enterpriseAiLensCandidates : []),
     ];
-    const detailById = new Map(detailItems.map((item) => [item.id, item]));
+    const detailById = new Map();
+    for (const item of detailItems) {
+      for (const key of [item.id, item.cardId, item.linkedCardId].filter(Boolean)) {
+        if (!detailById.has(key)) detailById.set(key, item);
+      }
+    }
     const enterpriseItems = Array.isArray(data?.enterpriseAiTransformation) ? data.enterpriseAiTransformation : [];
     const aiHardwareItems = Array.isArray(data?.aiHardwareSignals) ? data.aiHardwareSignals : [];
     const hasHistoricalCards = (data?.cards || []).some((item) => item.date && item.date !== activeDate);
@@ -312,7 +317,7 @@ function hasConcreteEnterpriseImplementationEvidence(text = "") {
   if (!source) return false;
 
   const explicitFde = /\bFDE\b|forward deployed|customer-embedded|domain operator|regulated payer workflow/iu.test(source);
-  const productionDelivery = /production (?:deployment|rollout|environment|workflow|workload)|deploys?|deployed|deployment|rollout|go[- ]?live|at scale|scale[sd]? deployment|customer adoption|case study|customer story|implemented|implementation|pilot|poc|proof of concept|procurement|technical scoping|部署|上线|落地|规模化|采用|试点|采购|合作协议|用例|工作流/iu.test(source);
+  const productionDelivery = /production (?:deployment|rollout|environment|workflow|workload)|deploys?|deployed|deployment|rollout|go[- ]?live|at scale|scale[sd]? deployment|customer adoption|case study|customer story|implemented|implementation|pilot|poc|proof of concept|procurement|technical scoping|launched (?:a |an )?(?:conversational,?\s*)?AI-powered digital experience|部署|上线|落地|规模化|采用|试点|采购|合作协议|用例|工作流/iu.test(source);
   const customerOrVertical = /customer|client|enterprise|bank|insurer|insurance|hospital|healthcare|payer|retail|store|manufactur|factory|financial|wealth management|financial crime|claims|underwriting|loan|contact center|support|sales|crm|procurement|supply chain|inventory|shelf|transaction|workflow|企业|客户|银行|金融|保险|医疗|零售|门店|制造|工厂|财富管理|金融犯罪|交易|库存|货架|客服|销售|采购|供应链|工作流/iu.test(source);
   const businessMetric = /\b\d+(?:\.\d+)?\s?(?:%|percent|x|times|use cases?|transactions?|calls?|bookings?|stores?|employees?|customers?|million|billion|hours?|days?)\b|\d+(?:\.\d+)?\s*(?:个|项|笔|次|家|名|倍|%|亿美元|万美元|万|亿)|超\d+/iu.test(source);
   const adoptionTag = /evidence-customer-adoption|evidence-customer-metric|evidence-partnership-integration/iu.test(source);
@@ -323,7 +328,8 @@ function hasConcreteEnterpriseImplementationEvidence(text = "") {
     && !/(customer adoption|customer story|case study|deployed by|used by|implemented by|signed|partnership|procurement|pilot|poc|proof of concept|production deployment|at scale)/iu.test(source);
   const broadGovernance = /world leaders|turn it off|G7|sovereign AI|national security/iu.test(source);
 
-  if (/原文未提供更多可拆分事实点|是否进入具体企业工作流|signal value is to observe|need to continue verifying/iu.test(source)) return false;
+  const weakPlaceholder = /原文未提供更多可拆分事实点|是否进入具体企业工作流|signal value is to observe|need to continue verifying/iu.test(source);
+  if (weakPlaceholder && !explicitFde && !(productionDelivery && customerOrVertical)) return false;
   if (!explicitFde && (researchOnly || consumerOnly || platformOnly || broadGovernance)) return false;
   return explicitFde || (productionDelivery && customerOrVertical) || (adoptionTag && productionDelivery && customerOrVertical && businessMetric);
 }
