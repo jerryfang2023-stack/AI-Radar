@@ -1,8 +1,8 @@
 # Guanlan Skill Registry
 
-Last updated: 2026-07-15
+Last updated: 2026-07-16
 
-Skill Store version: v1.4.0 (2026-07-15)
+Skill Store version: v1.5.0 (2026-07-16)
 
 Generated from `SKILL.md` metadata by `npm run build:skill-registry`. Do not edit the table by hand; edit the target skill metadata, evals, examples, or MEMORY instead, then regenerate.
 

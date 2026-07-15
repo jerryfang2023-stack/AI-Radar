@@ -18,7 +18,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: wavesight-community-intelligence-${{ github.event.inputs.date || github.run_id }}
+  group: wavesight-community-intelligence-publication
   cancel-in-progress: false
 
 jobs:

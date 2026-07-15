@@ -1,8 +1,16 @@
 #!/usr/bin/env node
 import { compareSkill, defaultPaths, readGovernedSkills } from "./lib/guanlan-skill-ops.mjs";
 
+const args = new Set(process.argv.slice(2));
+const skillArg = [...args].find((arg) => arg.startsWith("--skill="));
+const selectedSkill = skillArg ? skillArg.slice("--skill=".length) : "";
 const paths = defaultPaths();
-const skills = readGovernedSkills(paths.projectSkillDir).filter((skill) => skill.guanlan.mirrored_in_skill_store !== false);
+let skills = readGovernedSkills(paths.projectSkillDir).filter((skill) => skill.guanlan.mirrored_in_skill_store !== false);
+if (selectedSkill) skills = skills.filter((skill) => skill.name === selectedSkill);
+if (!skills.length) {
+  console.error(selectedSkill ? `No governed skill matched ${selectedSkill}` : "No governed skills found.");
+  process.exit(1);
+}
 const rows = skills.map((skill) => compareSkill(skill.name, paths));
 const drift = rows.filter((row) => row.state !== "synced");
 
