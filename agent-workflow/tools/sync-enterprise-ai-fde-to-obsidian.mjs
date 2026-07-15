@@ -121,11 +121,22 @@ function signalCardIndex(date) {
 }
 
 function detailMap(payload) {
-  return new Map([
-    ...(payload.cards || []),
-    ...(payload.enterpriseAiFdePool || []),
-    ...(payload.enterpriseAiLensCandidates || []),
-  ].map((item) => [item.id, item]));
+  const map = new Map();
+  for (const item of payload.cards || []) {
+    if (item.id) map.set(item.id, item);
+  }
+  for (const item of [...(payload.enterpriseAiFdePool || []), ...(payload.enterpriseAiLensCandidates || [])]) {
+    if (item.id) map.set(item.id, item);
+    if (item.linkedCardId) map.set(item.linkedCardId, item);
+    if (item.cardId) map.set(item.cardId, item);
+  }
+  return map;
+}
+
+function compactText(value = "", limit = 420) {
+  const text = String(value || "").replace(/\s+/gu, " ").trim();
+  if (text.length <= limit) return text;
+  return `${text.slice(0, limit - 1)}…`;
 }
 
 function compact(value = "", limit = 420) {
@@ -138,6 +149,21 @@ function cleanSourceTitle(value = "", fallback = "") {
   const title = String(value || "").replace(/\s+/gu, " ").trim();
   if (!title || /^Skip to content\b|^Loading\b|^Topics?\b/iu.test(title)) return fallback;
   return title;
+}
+
+function compactSafe(value = "", limit = 420) {
+  const text = String(value || "").replace(/\s+/gu, " ").trim();
+  if (text.length <= limit) return text;
+  return `${text.slice(0, Math.max(0, limit - 3))}...`;
+}
+
+function repairFdeSyncCopy(text = "") {
+  return String(text || "")
+    .replace(/^.*Business Signals.*Obsidian.*$/mu, "本页是 Business Signals「企业 AI / FDE」二级镜头的 Obsidian 索引。原文不复制到本页，保留在 Raw 原文快照中；本页负责把前台条目、原文快照、JSON 快照和正式 Signal Card 串起来。")
+    .replace(/^.*Business Signals.*Signal Card.*FDE.*Card.*$/mu, "这个目录保存 Business Signals「企业 AI / FDE」二级镜头的 Obsidian 入口。正式 product / funding / case Signal Card 仍保存在 `01-SiteV2/knowledge/01-Signal-Cards/`；FDE 镜头只做实施、部署、客户嵌入和工作流证据的聚合视图，不新增第四类 Card。")
+    .replace(/Raw 鍘熸枃蹇収/gu, "Raw 原文快照")
+    .replace(/缂哄け Raw 鍘熸枃蹇収/gu, "缺失 Raw 原文快照")
+    .replace(/lens-only锛屾湭鐢熸垚姝ｅ紡 Signal Card/gu, "lens-only，未生成正式 Signal Card");
 }
 
 const payload = readJson(siteDataFile);
@@ -217,11 +243,11 @@ const dailyBody = [
       `- stage: ${item.stageLabel || item.stage || ""}`,
       `- scenario: ${item.scenario || ""}`,
       `- workflow: ${item.workflow || ""}`,
-      `- demand: ${compact(item.implementationAnalysis?.demand || "")}`,
-      `- services: ${compact(item.implementationAnalysis?.services || "")}`,
-      `- result: ${compact(item.implementationAnalysis?.result || "")}`,
-      `- source_basis: ${compact(item.implementationAnalysis?.sourceBasis || "")}`,
-      `- evidence_boundary: ${compact(item.evidenceBoundary || "")}`,
+      `- demand: ${compactSafe(item.implementationAnalysis?.demand || "")}`,
+      `- services: ${compactSafe(item.implementationAnalysis?.services || "")}`,
+      `- result: ${compactSafe(item.implementationAnalysis?.result || "")}`,
+      `- source_basis: ${compactSafe(item.implementationAnalysis?.sourceBasis || "")}`,
+      `- evidence_boundary: ${compactSafe(item.evidenceBoundary || "")}`,
       "",
     ].join("\n");
   }),
@@ -255,8 +281,8 @@ const indexBody = [
   "",
 ].join("\n");
 
-writeText(dailyFile, dailyBody);
-writeText(indexFile, indexBody);
+writeText(dailyFile, repairFdeSyncCopy(dailyBody));
+writeText(indexFile, repairFdeSyncCopy(indexBody));
 
 console.log(JSON.stringify({
   ok: true,

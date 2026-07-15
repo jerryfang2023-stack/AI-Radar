@@ -2582,11 +2582,13 @@ function poolCandidateFactFromEvidence(section = "", title = "", sourceUrl = "")
 }
 
 function poolIngestionBoundaryFields(section = "", fact = "", title = "") {
-  const titleZh = poolValue(section, "title_zh");
+  const generatedTitle = String(title || "").trim();
+  const titleZh = poolValue(section, "title_zh")
+    || (generatedTitle && !titleNeedsChineseTranslation(generatedTitle) ? generatedTitle : "");
   const titleTranslationStatus = poolValue(section, "title_translation_status")
     || (titleZh ? "translated" : (titleNeedsChineseTranslation(title) ? "needs_ingestion_translation" : "not_required"));
   const titleTranslationMethod = poolValue(section, "title_translation_method")
-    || (titleZh ? "raw_ingestion" : "not_available_in_pool_snapshot");
+    || (titleZh ? "fde_lens_source_rule" : "not_available_in_pool_snapshot");
   const factExtractionStatus = poolValue(section, "fact_extraction_status")
     || (fact ? "extracted_at_fde_lens_pool_build" : "missing_fde_lens_fact");
   const factExtractionMethod = poolValue(section, "fact_extraction_method")
@@ -2713,6 +2715,59 @@ function knownFdeSourceFact(section = "") {
   return "";
 }
 
+function knownFdeSourceCopy(sectionOrUrl = "") {
+  const sourceUrl = canonicalUrl(poolValue(sectionOrUrl, "source_url") || sectionOrUrl);
+  if (/beri\.net\/article\/pwc-anthropic-30000-claude-rollout-enterprise-blueprint-2026/iu.test(sourceUrl)) {
+    return {
+      title: "PwC 3 万人 Claude 推广：交付速度提升 70%",
+      fact: "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；来源称承保交付从 10 周缩短到 10 天。",
+      demand: "大型专业服务机构需要把生成式 AI 接入受监管的承保、财务和客户交付流程，同时保留专业人员审核与治理边界。",
+      services: "Anthropic 与 PwC 围绕 Claude、Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室业务单元推进企业级部署、培训与流程改造。",
+      result: "来源披露 PwC 将 Claude 推广到 3 万名美国员工，并称承保交付从 10 周缩短到 10 天；未披露独立 ROI 审计口径。",
+    };
+  }
+  if (/gainsight\.com\/blog\/how-forward-deployed-engineers-transformed-customer-outcomes-for-intercom/iu.test(sourceUrl)) {
+    return {
+      title: "Intercom 用 FDE 团队将 Fin 从 5 个设计伙伴扩展到 7000 个客户",
+      fact: "Gainsight 文章援引 Intercom 工程负责人 Diego Ballona 的案例：Intercom 的 Forward Deployed Engineering 团队帮助 AI 客服工具 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率。",
+      demand: "企业客服 AI 需要在真实客户环境里解决知识接入、流程配置和上线扩展问题，而不是只交付通用模型能力。",
+      services: "FDE 团队嵌入 Intercom 的客户交付与工程流程，围绕 Fin 做客户需求拆解、系统适配、上线验证和扩展支持。",
+      result: "来源披露 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率；未披露独立 ROI。",
+    };
+  }
+  if (/synera\.ai\/news\/ims-gear-agentic-rfq/iu.test(sourceUrl)) {
+    return {
+      title: "IMS Gear 用 Synera Agentic AI 将 RFQ 从数周压缩到 10 分钟",
+      fact: "Synera 案例称，汽车 Tier 1 供应商 IMS Gear 在 Synera 上构建 agent 团队，把客户 RFQ 转成报价的流程从数周缩短到 10 分钟，系统已在生产中处理 100+ 份报价。",
+      demand: "汽车零部件供应商的工程报价流程需要在多系统、多约束下快速完成 RFQ 分析和报价生成。",
+      services: "Synera 提供 agentic engineering workflow，IMS Gear 工程团队在其上构建 agent 团队，把客户需求、工程判断和报价步骤串成生产流程。",
+      result: "来源披露该系统已在生产环境运行，处理 100+ 份报价，并把原本数周的 RFQ 流程缩短到 10 分钟。",
+    };
+  }
+  if (/markets\.ft\.com\/data\/announce\/full.*20260506_BW338822/iu.test(sourceUrl)) {
+    return {
+      title: "ServiceNow 与 Accenture 推出 FDE 项目，把 Agentic AI 工作流嵌入客户环境",
+      fact: "ServiceNow 与 Accenture 公告称，双方推出 Forward Deployed Engineering 项目，ServiceNow AI-native FDE 团队与 Accenture 行业 FDE 进入共同客户环境，在 ServiceNow AI Platform 上构建 agentic AI 工作流，并通过 AI Control Tower 展示价值指标。",
+      demand: "企业希望把 agentic AI 从试点推进到生产工作流，需要行业工程师和平台工程师进入客户环境处理系统、数据和治理约束。",
+      services: "ServiceNow 与 Accenture 提供联合 FDE：在客户环境中组合 ServiceNow、客户和第三方 building blocks，构建原生运行在 ServiceNow AI Platform 上的 agentic workflows。",
+      result: "来源披露客户可使用 300+ 预构建 AI agent skills/workflows，并由团队在 AI Control Tower 中展示价值指标；未披露具体客户名单或独立 ROI。",
+    };
+  }
+  return null;
+}
+
+function isKnownFdeSourceOverrideV2(section = "") {
+  return Boolean(knownFdeSourceCopy(section));
+}
+
+function knownFdeSourceTitleV2(section = "") {
+  return knownFdeSourceCopy(section)?.title || "";
+}
+
+function knownFdeSourceFactV2(section = "") {
+  return knownFdeSourceCopy(section)?.fact || "";
+}
+
 function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
   const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
   return poolCandidateSectionsForDate(activeDate)
@@ -2731,10 +2786,10 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
       const card = cardsByUrl.get(canonicalUrl(sourceUrl));
       if (card) return card;
       const rawTitle = poolTitle(section);
-      const title = knownFdeSourceTitle(section) || publicTitleCandidate(rawTitle, sourceUrl);
+      const title = knownFdeSourceTitleV2(section) || publicTitleCandidate(rawTitle, sourceUrl);
       const category = poolCandidateCategory(section);
-      const fact = knownFdeSourceFact(section) || poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
-      const ingestionBoundary = poolIngestionBoundaryFields(section, fact, rawTitle);
+      const fact = knownFdeSourceFactV2(section) || poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
+      const ingestionBoundary = poolIngestionBoundaryFields(section, fact, title);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
       const score = Number(poolValue(section, "score")) || 0;
       const poolRoutes = frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes")));
@@ -2796,22 +2851,23 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
 function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
   const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
   const items = poolCandidateSectionsForDate(activeDate)
-    .filter((section) => isEnterpriseAiFdePoolSection(section) || isExplicitFdeSourceSection(section) || isKnownFdeSourceOverride(section))
+    .filter((section) => isEnterpriseAiFdePoolSection(section) || isExplicitFdeSourceSection(section) || isKnownFdeSourceOverrideV2(section))
     .map((section) => {
       const ref = poolRef(section);
       const sourceUrl = poolValue(section, "source_url");
       const rawTitle = poolTitle(section);
+      const title = knownFdeSourceTitleV2(section) || publicTitleCandidate(rawTitle, sourceUrl);
       const card = cardsByUrl.get(canonicalUrl(sourceUrl));
       const category = poolCandidateCategory(section);
-      const fact = knownFdeSourceFact(section) || poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
-      const ingestionBoundary = poolIngestionBoundaryFields(section, fact, rawTitle);
+      const fact = knownFdeSourceFactV2(section) || poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
+      const ingestionBoundary = poolIngestionBoundaryFields(section, fact, title);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
       const score = Number(poolValue(section, "score")) || 0;
       const poolRoutes = frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes")));
       const base = card ? {
         ...card,
         linkedCardId: card.linkedCardId || card.id,
-        title: knownFdeSourceTitle(section) || publicTitleCandidate(rawTitle, sourceUrl),
+        title,
         originalTitle: rawTitle || card.originalTitle,
         sourceTitle: rawTitle || card.sourceTitle,
         rawTitle,
@@ -2824,7 +2880,7 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
         type: "enterprise_ai_fde_pool_item",
         category,
         categoryLabel: categoryLabels[category] || category,
-        title: knownFdeSourceTitle(section) || publicTitleCandidate(rawTitle, sourceUrl),
+        title,
         originalTitle: rawTitle,
         sourceTitle: rawTitle,
         rawTitle,
@@ -2879,6 +2935,46 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
     .filter(Boolean);
   return dedupeEnterpriseAiFdePoolItems(items)
     .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.sourceRef || a.id).localeCompare(String(b.sourceRef || b.id)));
+}
+
+function buildKnownFdeCardItems(cards = [], activeDate = "") {
+  const knownCards = cards
+    .filter((card) => card.date === activeDate)
+    .filter((card) => knownFdeSourceCopy(card.sourceUrl || ""));
+  return knownCards
+    .map((card) => {
+      const copy = knownFdeSourceCopy(card.sourceUrl || "");
+      const item = {
+        ...card,
+        id: `FDE-${activeDate}-${card.id || canonicalUrl(card.sourceUrl)}`,
+        linkedCardId: card.linkedCardId || card.id,
+        assetLevel: "enterprise_ai_fde_pool",
+        evidenceGate: card.evidenceGate || "known_fde_card_source",
+        title: copy.title,
+        displayTitle: copy.title,
+        generatedTitle: copy.title,
+        translatedFact: copy.fact,
+        visibleFragment: copy.fact,
+        summary: copy.fact,
+        originalHighlights: [copy.fact],
+        status: card.status || "signal_card",
+        promotionStatus: card.promotionStatus || "promoted_to_signal_card",
+        frontstageSelectionReasons: ["FDE lens pool", "source-backed implementation evidence"],
+        frontstageValueDescription: "FDE lens pool item preserved for the Enterprise AI lens.",
+        frontstageQualityWarnings: [],
+        frontstageGenericCandidate: false,
+        enterpriseAiLensPriority: true,
+        titleZh: copy.title,
+        titleTranslationStatus: "translated",
+        titleTranslationMethod: "fde_lens_source_rule",
+        factExtractionStatus: "extracted_at_fde_lens_pool_build",
+        factExtractionMethod: "known_fde_source_rule",
+      };
+      return {
+        ...item,
+        implementationAnalysis: enterpriseImplementationAnalysis(item),
+      };
+    });
 }
 
 function aiHardwareText(item = {}) {
@@ -4018,7 +4114,20 @@ function enterpriseTransformationBoundary(card = {}) {
   return short(`已确认：${fact}；未确认：内部投入、ROI 与长期运行效果。`, 190);
 }
 
+function knownFdeImplementationAnalysis(card = {}) {
+  const copy = knownFdeSourceCopy(card.sourceUrl || "");
+  if (!copy) return null;
+  return {
+    demand: short(copy.demand, 180),
+    services: short(copy.services, 190),
+    result: short(copy.result, 190),
+    sourceBasis: short(copy.fact, 240),
+  };
+}
+
 function enterpriseImplementationAnalysis(card = {}) {
+  const knownAnalysis = knownFdeImplementationAnalysis(card);
+  if (knownAnalysis) return knownAnalysis;
   const text = enterpriseTransformationText(card);
   const fact = cardSourceFact(card) || card.translatedFact || card.summary || card.visibleFragment || "";
   const scenario = enterpriseTransformationScenario(text, card.flatTags || []);
@@ -4154,8 +4263,8 @@ function buildEnterpriseAiTransformation(cards = [], coreSignalCards = [], activ
       card,
       score: enterpriseTransformationScore(card),
     }))
-    .filter((row) => row.score >= 36)
-    .filter((row) => hasEnterpriseTransformationSubstance(row.card))
+    .filter((row) => row.score >= 36 || Boolean(knownFdeSourceCopy(row.card.sourceUrl || "")))
+    .filter((row) => knownFdeSourceCopy(row.card.sourceUrl || "") || hasEnterpriseTransformationSubstance(row.card))
     .sort((a, b) => b.score - a.score || String(a.card.id).localeCompare(String(b.card.id)))
     .slice(0, limit)
     .map((row) => enterpriseTransformationItem(row.card));
@@ -4409,7 +4518,10 @@ const enterpriseAiLensCandidates = lensDates.flatMap((date) => buildEnterpriseAi
   .filter((card) => !isLowValueConsumerOrPlatformPolicySignal(card))
   .filter(hasEnterpriseImplementationSignal)
   .filter((card) => !isWeakSubject(card.subject));
-const generatedEnterpriseAiFdePool = lensDates.flatMap((date) => buildEnterpriseAiFdePoolItems(cards, date))
+const generatedEnterpriseAiFdePool = lensDates.flatMap((date) => [
+  ...buildEnterpriseAiFdePoolItems(cards, date),
+  ...buildKnownFdeCardItems(cards, date),
+])
   .map(normalizeFrontstageDisplay)
   .map((card) => ({
     ...card,
@@ -4425,6 +4537,15 @@ const generatedEnterpriseAiFdePool = lensDates.flatMap((date) => buildEnterprise
     ) ? card.visibleFragment : card.translatedFact,
   }))
   .map((card) => {
+    const knownTitle = knownFdeSourceTitleV2(card.sourceUrl || "");
+    if (knownTitle) {
+      return {
+        ...card,
+        title: knownTitle,
+        displayTitle: knownTitle,
+        generatedTitle: knownTitle,
+      };
+    }
     const literalTitle = publicTitleCandidate(card.rawTitle || card.sourceTitle || card.originalTitle, card.sourceUrl);
     if (!literalTitle) return card;
     return {
@@ -4437,8 +4558,21 @@ const generatedEnterpriseAiFdePool = lensDates.flatMap((date) => buildEnterprise
   .filter(publicFdeCandidateIsDisplayReady)
   .filter(hasEnterpriseImplementationSignal)
   .filter((card) => !isWeakSubject(card.subject));
+const generatedKnownFdeCardPool = lensDates.flatMap((date) => buildKnownFdeCardItems(cards, date))
+  .map((card) => {
+    const knownTitle = knownFdeSourceTitleV2(card.sourceUrl || "");
+    if (!knownTitle) return card;
+    return {
+      ...card,
+      title: knownTitle,
+      displayTitle: knownTitle,
+      generatedTitle: knownTitle,
+    };
+  })
+  .filter((card) => card.date && card.sourceUrl)
+  .filter((card) => !isWeakSubject(card.subject));
 const enterpriseAiFdePool = mergeHistoricalLensItems(
-  generatedEnterpriseAiFdePool,
+  [...generatedEnterpriseAiFdePool, ...generatedKnownFdeCardPool],
   previousPayload.enterpriseAiFdePool || [],
   activeDate,
 );

@@ -1,17 +1,350 @@
 {
   "meta": {
     "version": "EAI-V1.2.0-raw-card-ingestion-boundary",
-    "generatedAt": "2026-07-15T08:19:21.919Z",
+    "generatedAt": "2026-07-15T09:49:29.780Z",
     "activeDate": "2026-07-15",
     "source": "01-SiteV2/site/data/v3-data-observation-desk.json",
-    "fdePoolCount": 0,
-    "itemCount": 0,
-    "totalFdePoolCount": 15,
-    "totalItemCount": 15,
+    "fdePoolCount": 3,
+    "itemCount": 3,
+    "totalFdePoolCount": 18,
+    "totalItemCount": 18,
     "historyMode": "all_available_dates",
     "boundary": "FDE is an Enterprise AI lens pool, not a fourth Business Signals Card type."
   },
   "fdePool": [
+    {
+      "type": "enterprise_ai_fde_pool_item",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Intercom 用 FDE 团队将 Fin 从 5 个设计伙伴扩展到 7000 个客户",
+      "originalTitle": "How Forward Deployed Engineers Transformed Customer Outcomes for Intercom | Gainsight Software",
+      "sourceTitle": "How Forward Deployed Engineers Transformed Customer Outcomes for Intercom | Gainsight Software",
+      "date": "2026-07-15",
+      "subject": "Gainsight Software",
+      "source": "gainsight.com",
+      "sourceName": "gainsight.com",
+      "sourceUrl": "https://www.gainsight.com/blog/how-forward-deployed-engineers-transformed-customer-outcomes-for-intercom/",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "Gainsight 文章援引 Intercom 工程负责人 Diego Ballona 的案例：Intercom 的 Forward Deployed Engineering 团队帮助 AI 客服工具 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率。",
+      "translatedFact": "Gainsight 文章援引 Intercom 工程负责人 Diego Ballona 的案例：Intercom 的 Forward Deployed Engineering 团队帮助 AI 客服工具 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率。",
+      "originalHighlights": [
+        "Gainsight 文章援引 Intercom 工程负责人 Diego Ballona 的案例：Intercom 的 Forward Deployed Engineering 团队帮助 AI 客服工具 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率。"
+      ],
+      "visibleFragment": "Gainsight 文章援引 Intercom 工程负责人 Diego Ballona 的案例：Intercom 的 Forward Deployed Engineering 团队帮助 AI 客服工具 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率。",
+      "sourceLinks": [
+        "https://www.gainsight.com/blog/how-forward-deployed-engineers-transformed-customer-outcomes-for-intercom/"
+      ],
+      "status": "pooled",
+      "promotionStatus": "fde_lens_pool_only",
+      "id": "FDE-2026-07-15-P-026",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "poolRoutes": [
+        "watchlist"
+      ],
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 1150,
+      "frontstageEditorialScore": 1150,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-026",
+      "titleZh": "Intercom 用 FDE 团队将 Fin 从 5 个设计伙伴扩展到 7000 个客户",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "企业客服 AI 需要在真实客户环境里解决知识接入、流程配置和上线扩展问题，而不是只交付通用模型能力。",
+        "services": "FDE 团队嵌入 Intercom 的客户交付与工程流程，围绕 Fin 做客户需求拆解、系统适配、上线验证和扩展支持。",
+        "result": "来源披露 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率；未披露独立 ROI。",
+        "sourceBasis": "Gainsight 文章援引 Intercom 工程负责人 Diego Ballona 的案例：Intercom 的 Forward Deployed Engineering 团队帮助 AI 客服工具 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率。"
+      },
+      "generatedTitle": "Intercom 用 FDE 团队将 Fin 从 5 个设计伙伴扩展到 7000 个客户",
+      "displayTitle": "Intercom 用 FDE 团队将 Fin 从 5 个设计伙伴扩展到 7000 个客户"
+    },
+    {
+      "type": "enterprise_ai_fde_pool_item",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "ServiceNow 与 Accenture 推出 FDE 项目，把 Agentic AI 工作流嵌入客户环境",
+      "originalTitle": "ServiceNow and Accenture launch forward deployed engineering program to scale agentic AI across the enterprise – Company Announcement - FT.com",
+      "sourceTitle": "ServiceNow and Accenture launch forward deployed engineering program to scale agentic AI across the enterprise – Company Announcement - FT.com",
+      "date": "2026-07-15",
+      "subject": "ServiceNow and Accenture launch",
+      "source": "markets.ft.com",
+      "sourceName": "markets.ft.com",
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202605061300BIZWIRE_USPRX____20260506_BW338822-1",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "publishedAt": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "summary": "ServiceNow 与 Accenture 公告称，双方推出 Forward Deployed Engineering 项目，ServiceNow AI-native FDE 团队与 Accenture 行业 FDE 进入共同客户环境，在 ServiceNow AI Platform 上构建 agentic AI 工作流，并通过 AI Control Tower 展示价值指标。",
+      "translatedFact": "ServiceNow 与 Accenture 公告称，双方推出 Forward Deployed Engineering 项目，ServiceNow AI-native FDE 团队与 Accenture 行业 FDE 进入共同客户环境，在 ServiceNow AI Platform 上构建 agentic AI 工作流，并通过 AI Control Tower 展示价值指标。",
+      "originalHighlights": [
+        "ServiceNow 与 Accenture 公告称，双方推出 Forward Deployed Engineering 项目，ServiceNow AI-native FDE 团队与 Accenture 行业 FDE 进入共同客户环境，在 ServiceNow AI Platform 上构建 agentic AI 工作流，并通过 AI Control Tower 展示价值指标。"
+      ],
+      "visibleFragment": "ServiceNow 与 Accenture 公告称，双方推出 Forward Deployed Engineering 项目，ServiceNow AI-native FDE 团队与 Accenture 行业 FDE 进入共同客户环境，在 ServiceNow AI Platform 上构建 agentic AI 工作流，并通过 AI Control Tower 展示价值指标。",
+      "sourceLinks": [
+        "https://markets.ft.com/data/announce/full?dockey=600-202605061300BIZWIRE_USPRX____20260506_BW338822-1"
+      ],
+      "status": "pooled",
+      "promotionStatus": "fde_lens_pool_only",
+      "id": "FDE-2026-07-15-P-058",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_candidate",
+      "poolRoutes": [
+        "watchlist"
+      ],
+      "stage": "",
+      "evidence": "",
+      "track": "",
+      "largeVendorKey": "",
+      "largeVendor": false,
+      "frontstageRankScore": 1070,
+      "frontstageEditorialScore": 1070,
+      "frontstageEvidenceScore": 97,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": false,
+      "enterpriseAiLensPriority": true,
+      "sourceRef": "P-058",
+      "titleZh": "ServiceNow 与 Accenture 推出 FDE 项目，把 Agentic AI 工作流嵌入客户环境",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
+      "implementationAnalysis": {
+        "demand": "企业希望把 agentic AI 从试点推进到生产工作流，需要行业工程师和平台工程师进入客户环境处理系统、数据和治理约束。",
+        "services": "ServiceNow 与 Accenture 提供联合 FDE：在客户环境中组合 ServiceNow、客户和第三方 building blocks，构建原生运行在 ServiceNow AI Platform 上的 agentic workflows。",
+        "result": "来源披露客户可使用 300+ 预构建 AI agent skills/workflows，并由团队在 AI Control Tower 中展示价值指标；未披露具体客户名单或独立 ROI。",
+        "sourceBasis": "ServiceNow 与 Accenture 公告称，双方推出 Forward Deployed Engineering 项目，ServiceNow AI-native FDE 团队与 Accenture 行业 FDE 进入共同客户环境，在 ServiceNow AI Platform 上构建 agentic AI 工作流，并通过 AI Control Tower 展示价值指标。"
+      },
+      "generatedTitle": "ServiceNow 与 Accenture 推出 FDE 项目，把 Agentic AI 工作流嵌入客户环境",
+      "displayTitle": "ServiceNow 与 Accenture 推出 FDE 项目，把 Agentic AI 工作流嵌入客户环境"
+    },
+    {
+      "id": "FDE-2026-07-15-SIG-20260715-A04",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "IMS Gear 用 Synera Agentic AI 将 RFQ 从数周压缩到 10 分钟",
+      "originalTitle": "IMS Gear cuts RFQ to 10 minutes with agentic AI | Synera",
+      "date": "2026-07-15",
+      "subject": "IMS Gear",
+      "source": "synera.ai",
+      "sourceName": "synera.ai",
+      "sourceUrl": "https://www.synera.ai/news/ims-gear-agentic-rfq",
+      "sourceLevel": "B",
+      "evidenceStrength": "rich_evidence",
+      "importanceScore": 5,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "publishedAt": "2026-07-13T09:31:16.475Z",
+      "tags": {
+        "track": [
+          "track-ai-agent"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-customer-adoption"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "evidence-customer-adoption"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "Agentic AI"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "opportunitySignals": {
+        "schemaVersion": "opportunity-signals-v1",
+        "evidenceBasis": "raw_source_text",
+        "sourceExcerpt": "IMS Gear 用 agentic AI 将 RFQ 缩短至 10 分钟 IMS Gear cuts RFQ to 10 minutes with agentic AI | Synera IMS Gear cuts RFQ to 10 minutes with agentic AI 证据边界：本卡只使用已保留的 Raw / Pool 原文标题、摘录和来源链接。",
+        "missingFields": [
+          "product_form",
+          "adoption_evidence",
+          "delivery_model"
+        ],
+        "labels": {
+          "buyer_or_user": [
+            {
+              "id": "engineering_team",
+              "label": "Engineering or developer team"
+            },
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
+            }
+          ],
+          "team_or_function": [
+            {
+              "id": "engineering",
+              "label": "Engineering / software development"
+            }
+          ],
+          "specific_task": [
+            {
+              "id": "internal_tool_building",
+              "label": "Building internal tools, apps, or automations"
+            }
+          ],
+          "business_action": [
+            {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            }
+          ],
+          "product_form": [],
+          "delivery_model": [],
+          "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
+          "adoption_evidence": [],
+          "source_evidence_type": [
+            {
+              "id": "business_media",
+              "label": "Business or industry media article"
+            }
+          ]
+        },
+        "buyer_or_user": [
+          "engineering_team",
+          "enterprise_ai_owner"
+        ],
+        "buyerOrUser": [
+          "engineering_team",
+          "enterprise_ai_owner"
+        ],
+        "team_or_function": [
+          "engineering"
+        ],
+        "teamOrFunction": [
+          "engineering"
+        ],
+        "specific_task": [
+          "internal_tool_building"
+        ],
+        "specificTask": [
+          "internal_tool_building"
+        ],
+        "business_action": [
+          "customer_deployment"
+        ],
+        "businessAction": [
+          "customer_deployment"
+        ],
+        "product_form": [],
+        "productForm": [],
+        "delivery_model": [],
+        "deliveryModel": [],
+        "pain_or_constraint": [
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "workflow_integration"
+        ],
+        "adoption_evidence": [],
+        "adoptionEvidence": [],
+        "source_evidence_type": [
+          "business_media"
+        ],
+        "sourceEvidenceType": [
+          "business_media"
+        ]
+      },
+      "summary": "Synera 案例称，汽车 Tier 1 供应商 IMS Gear 在 Synera 上构建 agent 团队，把客户 RFQ 转成报价的流程从数周缩短到 10 分钟，系统已在生产中处理 100+ 份报价。",
+      "translatedFact": "Synera 案例称，汽车 Tier 1 供应商 IMS Gear 在 Synera 上构建 agent 团队，把客户 RFQ 转成报价的流程从数周缩短到 10 分钟，系统已在生产中处理 100+ 份报价。",
+      "originalHighlights": [
+        "Synera 案例称，汽车 Tier 1 供应商 IMS Gear 在 Synera 上构建 agent 团队，把客户 RFQ 转成报价的流程从数周缩短到 10 分钟，系统已在生产中处理 100+ 份报价。"
+      ],
+      "visibleFragment": "Synera 案例称，汽车 Tier 1 供应商 IMS Gear 在 Synera 上构建 agent 团队，把客户 RFQ 转成报价的流程从数周缩短到 10 分钟，系统已在生产中处理 100+ 份报价。",
+      "sourceLinks": [
+        "https://www.synera.ai/news/ims-gear-agentic-rfq"
+      ],
+      "sourceTitle": "IMS Gear cuts RFQ to 10 minutes with agentic AI | Synera",
+      "status": "published",
+      "assetLevel": "enterprise_ai_fde_pool",
+      "evidenceGate": "core_evidence_passed",
+      "stage": "",
+      "evidence": "evidence-customer-adoption",
+      "largeVendorKey": "",
+      "track": "track-ai-agent",
+      "generatedTitle": "IMS Gear 用 Synera Agentic AI 将 RFQ 从数周压缩到 10 分钟",
+      "displayTitle": "IMS Gear 用 Synera Agentic AI 将 RFQ 从数周压缩到 10 分钟",
+      "largeVendor": false,
+      "frontstageRankScore": 650,
+      "frontstageEditorialScore": 650,
+      "frontstageEvidenceScore": 62,
+      "frontstageSelectionReasons": [
+        "FDE lens pool",
+        "source-backed implementation evidence"
+      ],
+      "frontstageValueDescription": "FDE lens pool item preserved for the Enterprise AI lens.",
+      "frontstageQualityWarnings": [],
+      "frontstageGenericCandidate": false,
+      "fromCorePool": true,
+      "linkedCardId": "SIG-20260715-A04",
+      "promotionStatus": "promoted_to_signal_card",
+      "enterpriseAiLensPriority": true,
+      "titleZh": "IMS Gear 用 Synera Agentic AI 将 RFQ 从数周压缩到 10 分钟",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
+      "factExtractionStatus": "extracted_at_fde_lens_pool_build",
+      "factExtractionMethod": "known_fde_source_rule",
+      "implementationAnalysis": {
+        "demand": "汽车零部件供应商的工程报价流程需要在多系统、多约束下快速完成 RFQ 分析和报价生成。",
+        "services": "Synera 提供 agentic engineering workflow，IMS Gear 工程团队在其上构建 agent 团队，把客户需求、工程判断和报价步骤串成生产流程。",
+        "result": "来源披露该系统已在生产环境运行，处理 100+ 份报价，并把原本数周的 RFQ 流程缩短到 10 分钟。",
+        "sourceBasis": "Synera 案例称，汽车 Tier 1 供应商 IMS Gear 在 Synera 上构建 agent 团队，把客户 RFQ 转成报价的流程从数周缩短到 10 分钟，系统已在生产中处理 100+ 份报价。"
+      }
+    },
     {
       "type": "enterprise_ai_fde_pool_item",
       "category": "product-service",
@@ -35,12 +368,12 @@
           "label": "产品"
         }
       ],
-      "summary": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。",
-      "translatedFact": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。",
+      "summary": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；来源称承保交付从 10 周缩短到 10 天。",
+      "translatedFact": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；来源称承保交付从 10 周缩短到 10 天。",
       "originalHighlights": [
-        "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。"
+        "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；来源称承保交付从 10 周缩短到 10 天。"
       ],
-      "visibleFragment": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。",
+      "visibleFragment": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；来源称承保交付从 10 周缩短到 10 天。",
       "sourceLinks": [
         "https://www.beri.net/article/pwc-anthropic-30000-claude-rollout-enterprise-blueprint-2026"
       ],
@@ -68,16 +401,16 @@
       "fromCorePool": false,
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-012",
-      "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
-      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "titleZh": "PwC 3 万人 Claude 推广：交付速度提升 70%",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
       "factExtractionStatus": "extracted_at_fde_lens_pool_build",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
       "implementationAnalysis": {
-        "demand": "发现的需求是高合规行业需要把 AI 引入受监管工作流，同时保留专业人员审核、数据边界和上线前验证。",
-        "services": "提供的服务是围绕软件研发的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。",
-        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
-        "sourceBasis": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。"
+        "demand": "大型专业服务机构需要把生成式 AI 接入受监管的承保、财务和客户交付流程，同时保留专业人员审核与治理边界。",
+        "services": "Anthropic 与 PwC 围绕 Claude、Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室业务单元推进企业级部署、培训与流程改造。",
+        "result": "来源披露 PwC 将 Claude 推广到 3 万名美国员工，并称承保交付从 10 周缩短到 10 天；未披露独立 ROI 审计口径。",
+        "sourceBasis": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；来源称承保交付从 10 周缩短到 10 天。"
       },
       "displayTitle": "PwC 3 万人 Claude 推广：交付速度提升 70%",
       "generatedTitle": "PwC 3 万人 Claude 推广：交付速度提升 70%"
@@ -302,9 +635,9 @@
       "promotionStatus": "promoted_to_signal_card",
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-004",
-      "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
-      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "titleZh": "Taskade 发布 TSK-1 系统内核，为工作区应用提供统一智能运行层",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
       "factExtractionStatus": "missing_fde_lens_fact",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
       "implementationAnalysis": {
@@ -451,9 +784,9 @@
       "promotionStatus": "promoted_to_signal_card",
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-035",
-      "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
-      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "titleZh": "Simplexity Robotics 成立 11 个月即向生产线交付 100 台 i7 Pro 机器人，并部署于 Leaderdrive 与 AI 基础设施工厂",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
       "factExtractionStatus": "extracted_at_fde_lens_pool_build",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
       "implementationAnalysis": {
@@ -631,7 +964,7 @@
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-088",
       "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationStatus": "not_required",
       "titleTranslationMethod": "not_available_in_pool_snapshot",
       "factExtractionStatus": "missing_fde_lens_fact",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
@@ -700,9 +1033,9 @@
       "fromCorePool": false,
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-001",
-      "titleZh": "",
-      "titleTranslationStatus": "not_required",
-      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "titleZh": "亚马逊推出10亿美元FDE新部门，紧随OpenAI和Anthropic",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
       "factExtractionStatus": "extracted_at_fde_lens_pool_build",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
       "implementationAnalysis": {
@@ -972,7 +1305,7 @@
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-010",
       "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationStatus": "not_required",
       "titleTranslationMethod": "not_available_in_pool_snapshot",
       "factExtractionStatus": "extracted_at_fde_lens_pool_build",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
@@ -1244,7 +1577,7 @@
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-013",
       "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationStatus": "not_required",
       "titleTranslationMethod": "not_available_in_pool_snapshot",
       "factExtractionStatus": "extracted_at_fde_lens_pool_build",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
@@ -1475,9 +1808,9 @@
       "promotionStatus": "promoted_to_signal_card",
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-003",
-      "titleZh": "",
-      "titleTranslationStatus": "not_required",
-      "titleTranslationMethod": "not_available_in_pool_snapshot",
+      "titleZh": "台湾产业巨头借助NVIDIA加速世界AI基础设施建设",
+      "titleTranslationStatus": "translated",
+      "titleTranslationMethod": "fde_lens_source_rule",
       "factExtractionStatus": "extracted_at_fde_lens_pool_build",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
       "implementationAnalysis": {
@@ -1661,7 +1994,7 @@
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-009",
       "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationStatus": "not_required",
       "titleTranslationMethod": "not_available_in_pool_snapshot",
       "factExtractionStatus": "missing_fde_lens_fact",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
@@ -1892,7 +2225,7 @@
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-014",
       "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationStatus": "not_required",
       "titleTranslationMethod": "not_available_in_pool_snapshot",
       "factExtractionStatus": "missing_fde_lens_fact",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
@@ -2074,7 +2407,7 @@
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-048",
       "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationStatus": "not_required",
       "titleTranslationMethod": "not_available_in_pool_snapshot",
       "factExtractionStatus": "missing_fde_lens_fact",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
@@ -2286,7 +2619,7 @@
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-044",
       "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationStatus": "not_required",
       "titleTranslationMethod": "not_available_in_pool_snapshot",
       "factExtractionStatus": "missing_fde_lens_fact",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
@@ -2507,7 +2840,7 @@
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-045",
       "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationStatus": "not_required",
       "titleTranslationMethod": "not_available_in_pool_snapshot",
       "factExtractionStatus": "missing_fde_lens_fact",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
@@ -2702,7 +3035,7 @@
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-046",
       "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationStatus": "not_required",
       "titleTranslationMethod": "not_available_in_pool_snapshot",
       "factExtractionStatus": "missing_fde_lens_fact",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
@@ -2985,7 +3318,7 @@
       "enterpriseAiLensPriority": true,
       "sourceRef": "P-049",
       "titleZh": "",
-      "titleTranslationStatus": "needs_ingestion_translation",
+      "titleTranslationStatus": "not_required",
       "titleTranslationMethod": "not_available_in_pool_snapshot",
       "factExtractionStatus": "missing_fde_lens_fact",
       "factExtractionMethod": "pool_key_excerpts_and_fde_implementation_analysis",
@@ -2998,6 +3331,72 @@
     }
   ],
   "items": [
+    {
+      "id": "enterprise-ai:FDE-2026-07-15-P-026",
+      "cardId": "FDE-2026-07-15-P-026",
+      "date": "2026-07-15",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Intercom 用 FDE 团队将 Fin 从 5 个设计伙伴扩展到 7000 个客户",
+      "subject": "Gainsight Software",
+      "sourceName": "gainsight.com",
+      "sourceUrl": "https://www.gainsight.com/blog/how-forward-deployed-engineers-transformed-customer-outcomes-for-intercom/",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "客户服务与销售",
+      "workflow": "客服响应、线索跟进与知识检索",
+      "evidenceBoundary": "已确认：Gainsight 文章援引 Intercom 工程负责人 Diego Ballona 的案例：Intercom 的 Forward Deployed Engineering 团队帮助 AI 客服工具 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "企业客服 AI 需要在真实客户环境里解决知识接入、流程配置和上线扩展问题，而不是只交付通用模型能力。",
+        "services": "FDE 团队嵌入 Intercom 的客户交付与工程流程，围绕 Fin 做客户需求拆解、系统适配、上线验证和扩展支持。",
+        "result": "来源披露 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率；未披露独立 ROI。",
+        "sourceBasis": "Gainsight 文章援引 Intercom 工程负责人 Diego Ballona 的案例：Intercom 的 Forward Deployed Engineering 团队帮助 AI 客服工具 Fin 在 18 个月内从 5 个设计伙伴扩展到 7000 个客户，并达到 67% 的客户互动解决率。"
+      }
+    },
+    {
+      "id": "enterprise-ai:FDE-2026-07-15-P-058",
+      "cardId": "FDE-2026-07-15-P-058",
+      "date": "2026-07-15",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "ServiceNow 与 Accenture 推出 FDE 项目，把 Agentic AI 工作流嵌入客户环境",
+      "subject": "ServiceNow and Accenture launch",
+      "sourceName": "markets.ft.com",
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202605061300BIZWIRE_USPRX____20260506_BW338822-1",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "软件研发",
+      "workflow": "代码、审查与交付流程",
+      "evidenceBoundary": "已确认：ServiceNow 与 Accenture 公告称，双方推出 Forward Deployed Engineering 项目，ServiceNow AI-native FDE 团队与 Accenture 行业 FDE 进入共同客户环境，在 ServiceNow AI Platform 上构建 agentic AI 工作流，并通过 AI Control T...；未确...",
+      "implementationAnalysis": {
+        "demand": "企业希望把 agentic AI 从试点推进到生产工作流，需要行业工程师和平台工程师进入客户环境处理系统、数据和治理约束。",
+        "services": "ServiceNow 与 Accenture 提供联合 FDE：在客户环境中组合 ServiceNow、客户和第三方 building blocks，构建原生运行在 ServiceNow AI Platform 上的 agentic workflows。",
+        "result": "来源披露客户可使用 300+ 预构建 AI agent skills/workflows，并由团队在 AI Control Tower 中展示价值指标；未披露具体客户名单或独立 ROI。",
+        "sourceBasis": "ServiceNow 与 Accenture 公告称，双方推出 Forward Deployed Engineering 项目，ServiceNow AI-native FDE 团队与 Accenture 行业 FDE 进入共同客户环境，在 ServiceNow AI Platform 上构建 agentic AI 工作流，并通过 AI Control Tower 展示价值指标。"
+      }
+    },
+    {
+      "id": "enterprise-ai:SIG-20260715-A04",
+      "cardId": "SIG-20260715-A04",
+      "date": "2026-07-15",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "IMS Gear 用 Synera Agentic AI 将 RFQ 从数周压缩到 10 分钟",
+      "subject": "IMS Gear",
+      "sourceName": "synera.ai",
+      "sourceUrl": "https://www.synera.ai/news/ims-gear-agentic-rfq",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "知识工作与协作",
+      "workflow": "会议记录、知识沉淀与团队协作",
+      "evidenceBoundary": "已确认：Synera 案例称，汽车 Tier 1 供应商 IMS Gear 在 Synera 上构建 agent 团队，把客户 RFQ 转成报价的流程从数周缩短到 10 分钟，系统已在生产中处理 100+ 份报价。；未确认：内部投入、ROI 与长期运行效果。",
+      "implementationAnalysis": {
+        "demand": "汽车零部件供应商的工程报价流程需要在多系统、多约束下快速完成 RFQ 分析和报价生成。",
+        "services": "Synera 提供 agentic engineering workflow，IMS Gear 工程团队在其上构建 agent 团队，把客户需求、工程判断和报价步骤串成生产流程。",
+        "result": "来源披露该系统已在生产环境运行，处理 100+ 份报价，并把原本数周的 RFQ 流程缩短到 10 分钟。",
+        "sourceBasis": "Synera 案例称，汽车 Tier 1 供应商 IMS Gear 在 Synera 上构建 agent 团队，把客户 RFQ 转成报价的流程从数周缩短到 10 分钟，系统已在生产中处理 100+ 份报价。"
+      }
+    },
     {
       "id": "enterprise-ai:FDE-2026-07-14-P-012",
       "cardId": "FDE-2026-07-14-P-012",
@@ -3012,12 +3411,12 @@
       "stageLabel": "生产上线",
       "scenario": "软件研发",
       "workflow": "承保、理赔与风险控制流程",
-      "evidenceBoundary": "已确认：PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。；未确认：内部投入、ROI 与长期运行效果。",
+      "evidenceBoundary": "已确认：PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；来源称承保交付从 10 周缩短到 10 天。；未确认：内部投入、ROI 与长期运行效果。",
       "implementationAnalysis": {
-        "demand": "发现的需求是高合规行业需要把 AI 引入受监管工作流，同时保留专业人员审核、数据边界和上线前验证。",
-        "services": "提供的服务是围绕软件研发的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。",
-        "result": "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。",
-        "sourceBasis": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；原文称承保交付从 10 周缩短到 10 天。"
+        "demand": "大型专业服务机构需要把生成式 AI 接入受监管的承保、财务和客户交付流程，同时保留专业人员审核与治理边界。",
+        "services": "Anthropic 与 PwC 围绕 Claude、Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室业务单元推进企业级部署、培训与流程改造。",
+        "result": "来源披露 PwC 将 Claude 推广到 3 万名美国员工，并称承保交付从 10 周缩短到 10 天；未披露独立 ROI 审计口径。",
+        "sourceBasis": "PwC 与 Anthropic 宣布将 Claude 部署到 3 万名美国员工，并推出 Claude Code、Claude Cowork、联合卓越中心和 CFO 办公室内的 Claude 原生业务单元；来源称承保交付从 10 周缩短到 10 天。"
       }
     },
     {
