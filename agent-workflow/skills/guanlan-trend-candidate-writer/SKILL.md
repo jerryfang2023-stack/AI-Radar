@@ -198,6 +198,9 @@ Minimum fields:
 date:
 decision: no_trend_candidate
 checked_scope:
+accepted_card_count:
+source_family_count:
+signal_type_counts:
 reason:
 strongest_signal:
 missing_evidence:
@@ -206,6 +209,7 @@ next_action:
 ```
 
 The body should briefly state why no candidate was created. This is useful when the daily production chain ran but no trend should appear.
+The decision must be based on accepted same-date Cards and record the three audit metrics above. Category or tag density alone is not enough to promote a trend.
 
 ## Validation
 

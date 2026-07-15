@@ -18,7 +18,7 @@ export function classifyBusinessSignalsProduction(input = {}) {
   const stages = [
     ["evidence_supply", [["monitor", "Daily Monitor"], ["evidenceGate", "evidence-supply gate"]]],
     ["card_generation", [["cards", "Card generation"]]],
-    ["card_quality", [["dedupe", "Card dedupe/freshness gate"], ["cardEditorial", "Card editorial quality gate"]]],
+    ["card_quality", [["dedupe", "Card dedupe/freshness gate"], ["cardEditorial", "Card editorial quality gate"], ["trendDecision", "trend-candidate decision"]]],
     ["frontstage_contract", [["frontstageData", "frontstage build"], ["frontstageGate", "unified frontstage gate"], ["operations", "operations sync"], ["freshness", "final freshness gate"]]],
   ];
 
@@ -48,9 +48,10 @@ export function classifyBusinessSignalsProduction(input = {}) {
 }
 
 function runFixtures() {
-  const passedStages = { monitor: "success", evidenceGate: "success", cards: "success", dedupe: "success", cardEditorial: "success", frontstageData: "success", frontstageGate: "success", operations: "success", freshness: "success", commit: "success" };
+  const passedStages = { monitor: "success", evidenceGate: "success", cards: "success", dedupe: "success", cardEditorial: "success", trendDecision: "success", frontstageData: "success", frontstageGate: "success", operations: "success", freshness: "success", commit: "success" };
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, cards: "failure" }).stage, "card_generation");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, dedupe: "failure" }).stage, "card_quality");
+  assert.equal(classifyBusinessSignalsProduction({ ...passedStages, trendDecision: "failure" }).stage, "card_quality");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, frontstageGate: "failure" }).stage, "frontstage_contract");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, changed: "true", pr: "success", merge: "success", mergeStatus: "publication_waiting" }).status, "publication_waiting");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, changed: "false" }).status, "passed");

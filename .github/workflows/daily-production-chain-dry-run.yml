@@ -79,14 +79,15 @@ jobs:
             echo "This workflow is a dry run. It uploads artifacts only and never commits, pushes, opens PRs, commits site data, or deploys."
             echo
             echo "Production order:"
-            echo "1. Run Daily Monitor with QC."
-            echo "2. Confirm final active Raw / Pool post-dedupe counts and historical duplicate count."
+            echo "1. Run the V3 evidence-supply gate."
+            echo "2. Confirm Raw / Pool integrity and historical duplicate state without re-blocking diagnostic volume targets."
             echo "3. Mark same-date downstream assets stale if Raw / Pool changed."
             echo "4. Regenerate qualified business-signal Card assets in the runner workspace only; frontstage publishes the unified Card set."
             echo "5. Run Pool-to-Card duplicate gate."
             echo "6. Run Signal Card editorial quality gate."
-            echo "7. Build Business Signals frontstage data and run the source-first/regression gate before operations data."
-            echo "8. Sync operations data only after the Business frontstage gate passes, still artifact-only."
+            echo "7. Record a trend candidate or explicit no-candidate decision from accepted Cards."
+            echo "8. Build Business Signals frontstage data and run the source-first/regression gate before operations data."
+            echo "9. Sync operations data only after the Business frontstage gate passes, still artifact-only."
           } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-production-chain-dry-run.md"
 
       - name: Syntax checks
@@ -98,6 +99,8 @@ jobs:
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/assert-business-signals-frontstage.mjs
+          node --check agent-workflow/tools/assert-business-signals-three-block-contract.mjs
+          node --check agent-workflow/tools/run-trend-candidate-decision.mjs
           node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
           node --check agent-workflow/tools/classify-business-signals-production-state.mjs
           node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
@@ -132,8 +135,6 @@ jobs:
           node agent-workflow/tools/assert-daily-production-chain.mjs \
             --date="${RUN_DATE}" \
             --stage=post-monitor \
-            --raw-min=150 \
-            --pool-min=75 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-post-monitor-gate.log"
 
       - name: Regenerate business-signal Card assets
@@ -146,7 +147,6 @@ jobs:
           node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
             --date="${RUN_DATE}" \
             --from-raw=true \
-            --trend-candidates=false \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-assets.log"
 
       - name: Run Pool-to-Card duplicate gate
@@ -171,9 +171,21 @@ jobs:
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-card-editorial-gate.log"
 
+      - name: Record trend candidate decision
+        id: trend-decision
+        if: steps.card-editorial-gate.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/run-trend-candidate-decision.mjs \
+            --date="${RUN_DATE}" \
+            --write-no-decision=true \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-trend-decision.log"
+
       - name: Build Business Signals frontstage data after gates pass
         id: site-sync
-        if: steps.card-editorial-gate.outcome == 'success'
+        if: steps.trend-decision.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -219,11 +231,15 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.json
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-trend-candidate-decision*.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-no-trend-candidate-decision.md
             01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
             01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
             01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
             01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
             01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
+            01-SiteV2/content/06-asset-candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md
+            01-SiteV2/knowledge/03-Asset-Candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md
             01-SiteV2/site/data/v3-data-observation-desk.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
@@ -238,6 +254,7 @@ jobs:
             --cards="${{ steps.assets.outcome }}" \
             --dedupe="${{ steps.pool-to-card-dedupe.outcome }}" \
             --cardEditorial="${{ steps.card-editorial-gate.outcome }}" \
+            --trendDecision="${{ steps.trend-decision.outcome }}" \
             --frontstageData="${{ steps.site-sync.outcome }}" \
             --frontstageGate="${{ steps.business-frontstage-gate.outcome }}" \
             --operations="${{ steps.operations-data.outcome }}" \

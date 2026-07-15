@@ -144,20 +144,20 @@ jobs:
             echo
             echo "Production order:"
             echo "1. Collect source Raw artifacts independently and in parallel."
-            echo "2. Run Daily Monitor with QC from source artifacts."
-            echo "3. Confirm final active Raw / Pool post-dedupe counts and historical duplicate count."
+            echo "2. Run the V3 evidence-supply gate from source artifacts."
+            echo "3. Confirm Raw / Pool integrity and historical duplicate state without re-blocking diagnostic volume targets."
             echo "4. Regenerate business-signal Card assets in the runner workspace."
             echo "5. Run Pool-to-Card duplicate gate."
             echo "6. Run Signal Card editorial quality gate."
-            echo "7. Build Business Signals frontstage data and immediately run the source-first/regression gate."
-            echo "8. Build operations dashboard data only after the Business frontstage gate passes."
-            echo "9. Confirm same-date downstream assets are no longer stale."
-            echo "10. Write a persistent asset manifest."
-            echo "11. Commit generated assets to an automation branch and open or update a PR."
-            echo "12. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
+            echo "7. Record a current trend-candidate or explicit no-candidate decision from accepted Cards."
+            echo "8. Build Business Signals frontstage data and immediately run the source-first/regression gate."
+            echo "9. Build operations dashboard data only after the Business frontstage gate passes."
+            echo "10. Confirm same-date downstream assets are no longer stale."
+            echo "11. Write a persistent asset manifest."
+            echo "12. Commit generated assets to an automation branch and open or update a PR."
+            echo "13. Auto-merge the PR after all gates pass, so main triggers GitHub Pages deployment."
             echo
             echo "Skipped by design:"
-            echo "- Trend candidate / no-decision shell."
             echo "- paused opinion lane."
             echo "- Direct main commit."
             echo "- Direct deploy from the automation branch."
@@ -172,6 +172,8 @@ jobs:
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/assert-business-signals-frontstage.mjs
+          node --check agent-workflow/tools/assert-business-signals-three-block-contract.mjs
+          node --check agent-workflow/tools/run-trend-candidate-decision.mjs
           node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
           node --check agent-workflow/tools/classify-business-signals-production-state.mjs
           node --check agent-workflow/tools/assert-v3-source-first-frontstage.mjs
@@ -259,23 +261,16 @@ jobs:
             --monitor-timeout-ms=900000 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-monitor-run.log"
 
-      - name: Confirm Raw / Pool post-dedupe counts
+      - name: Confirm V3 evidence-supply handoff and dedupe state
         id: persistent-assets-post-monitor
         if: always() && steps.existing-assets.outputs.skip != 'true'
         continue-on-error: true
         shell: bash
         run: |
           set -o pipefail
-          weekday="$(TZ=Asia/Shanghai date -d "${RUN_DATE}T12:00:00" +%u)"
-          raw_min=150
-          if [ "$weekday" = "6" ] || [ "$weekday" = "7" ]; then
-            raw_min=120
-          fi
           node agent-workflow/tools/assert-daily-production-chain.mjs \
             --date="${RUN_DATE}" \
             --stage=post-monitor \
-            --raw-min="$raw_min" \
-            --pool-min=75 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-post-monitor-gate.log"
 
       - name: Regenerate business-signal Card assets
@@ -288,7 +283,6 @@ jobs:
           node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
             --date="${RUN_DATE}" \
             --from-raw=true \
-            --trend-candidates=false \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-assets.log"
 
       - name: Run Pool-to-Card duplicate gate
@@ -313,9 +307,21 @@ jobs:
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-card-editorial-gate.log"
 
+      - name: Record trend candidate decision
+        id: trend-decision
+        if: steps.card-editorial-gate.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/run-trend-candidate-decision.mjs \
+            --date="${RUN_DATE}" \
+            --write-no-decision=true \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-trend-decision.log"
+
       - name: Build Business Signals frontstage data
         id: business-frontstage-data
-        if: steps.card-editorial-gate.outcome == 'success'
+        if: steps.trend-decision.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -362,16 +368,9 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          weekday="$(TZ=Asia/Shanghai date -d "${RUN_DATE}T12:00:00" +%u)"
-          raw_min=150
-          if [ "$weekday" = "6" ] || [ "$weekday" = "7" ]; then
-            raw_min=120
-          fi
           node agent-workflow/tools/assert-daily-production-chain.mjs \
             --date="${RUN_DATE}" \
             --stage=pre-commit \
-            --raw-min="$raw_min" \
-            --pool-min=75 \
             --block-stale=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-pre-commit-gate.log"
 
@@ -408,6 +407,7 @@ jobs:
           - asset_generation: ${{ steps.assets.outcome }}
           - pool_to_card_dedupe_gate: ${{ steps.pool-to-card-dedupe.outcome }}
           - card_editorial_gate: ${{ steps.card-editorial-gate.outcome }}
+          - trend_candidate_decision: ${{ steps.trend-decision.outcome }}
           - business_frontstage_data: ${{ steps.business-frontstage-data.outcome }}
           - business_frontstage_gate: ${{ steps.business-frontstage-gate.outcome }}
           - operations_data_sync: ${{ steps.operations-data.outcome }}
@@ -447,6 +447,7 @@ jobs:
               "asset_generation": "${{ steps.assets.outcome }}",
               "pool_to_card_dedupe_gate": "${{ steps.pool-to-card-dedupe.outcome }}",
               "card_editorial_gate": "${{ steps.card-editorial-gate.outcome }}",
+              "trend_candidate_decision": "${{ steps.trend-decision.outcome }}",
               "business_frontstage_data": "${{ steps.business-frontstage-data.outcome }}",
               "business_frontstage_gate": "${{ steps.business-frontstage-gate.outcome }}",
               "operations_data_sync": "${{ steps.operations-data.outcome }}",
@@ -484,12 +485,16 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.json
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-trend-candidate-decision*.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-no-trend-candidate-decision.md
             agent-workflow/reports/frontstage-regression-gate-*.md
             01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
             01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
             01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
             01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
             01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
+            01-SiteV2/content/06-asset-candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md
+            01-SiteV2/knowledge/03-Asset-Candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md
             01-SiteV2/site/data/v3-data-observation-desk.json
             01-SiteV2/site/data/intelligence-graph-index.json
             01-SiteV2/site/data/pipeline-dashboard.json
@@ -528,6 +533,9 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-frontstage-manifest.json"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.json"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-trend-candidate-decision.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-trend-candidate-decision-blocked.md"
+          stage_if_exists "agent-workflow/reports/${RUN_DATE}-no-trend-candidate-decision.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.json"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-guanlan-daily-monitor-log.md"
@@ -547,6 +555,15 @@ jobs:
             if [ "$current_card_count" != "$staged_card_count" ]; then
               echo "Same-date Card replacement mismatch: worktree=${current_card_count}, staged=${staged_card_count}" >&2
               exit 1
+            fi
+          fi
+
+          if [ "${{ steps.trend-decision.outcome }}" = "success" ]; then
+            stage_find "01-SiteV2/content/06-asset-candidates/trend" "${RUN_DATE}--trend-candidate--*.md"
+            stage_find "01-SiteV2/knowledge/03-Asset-Candidates/trend" "${RUN_DATE}--trend-candidate--*.md"
+            no_decision_file="agent-workflow/reports/${RUN_DATE}-no-trend-candidate-decision.md"
+            if git ls-files --error-unmatch "$no_decision_file" >/dev/null 2>&1; then
+              git add -u -- "$no_decision_file"
             fi
           fi
 
@@ -585,6 +602,7 @@ jobs:
           What this PR contains:
           - Raw / Pool generated in GitHub Actions and persisted after monitor gates passed.
           - Signal Cards persisted when asset generation succeeded.
+          - A trend candidate or explicit no-candidate decision persisted after Card quality passed.
           - Business frontstage data included only when dedupe, frontstage source-first/regression, operations sync and pre-commit gates passed.
           - Intelligence map data generated from the business-signal Card chain.
           - Operations dashboard data included when the business-signal frontstage sync passes.
@@ -725,6 +743,7 @@ jobs:
             --cards="${{ steps.assets.outcome }}" \
             --dedupe="${{ steps.pool-to-card-dedupe.outcome }}" \
             --cardEditorial="${{ steps.card-editorial-gate.outcome }}" \
+            --trendDecision="${{ steps.trend-decision.outcome }}" \
             --frontstageData="${{ steps.business-frontstage-data.outcome }}" \
             --frontstageGate="${{ steps.business-frontstage-gate.outcome }}" \
             --operations="${{ steps.operations-data.outcome }}" \

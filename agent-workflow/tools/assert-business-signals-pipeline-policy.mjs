@@ -93,6 +93,9 @@ for (const [name, text] of [["production workflow", workflow], ["dry-run workflo
   if (/--max-cycles=3/u.test(text)) problems.push(`${name} still requests three monitor cycles`);
   if (/id:\s*monitor-readiness/u.test(text)) problems.push(`${name} still runs the duplicate monitor-readiness gate`);
 }
+if (!/assert-business-signals-three-block-contract\.mjs/u.test(fs.readFileSync(path.join(root, "agent-workflow", "tools", "assert-business-signals-frontstage.mjs"), "utf8"))) {
+  problems.push("unified Business frontstage gate does not enforce the three-block contract");
+}
 
 if (includesAny(monitorWrapper, [/refreshSourceArtifactsForCycle/u, /max_retry_cycles\s*\|\|\s*3/u])) {
   problems.push("monitor wrapper still recollects all source artifacts across retry cycles");
@@ -122,17 +125,26 @@ if (!/classify-business-signals-production-state\.mjs/u.test(workflow) || !/clas
 if (!/evidence_supply/u.test(stateClassifier) || !/card_quality/u.test(stateClassifier) || !/frontstage_contract/u.test(stateClassifier) || !/publication/u.test(stateClassifier)) {
   problems.push("production-state classifier is missing a current owning stage");
 }
-if (/build-follow-builders|run-trend-candidate/u.test(dryRunWorkflow)) problems.push("Business Signals dry-run still executes another lane");
+if (/build-follow-builders/u.test(dryRunWorkflow)) problems.push("Business Signals dry-run still executes another lane");
 for (const [name, text] of [["production workflow", workflow], ["dry-run workflow", dryRunWorkflow]]) {
   if (!/id:\s*card-editorial-gate/u.test(text) || !/--skip-editorial=true/u.test(text)) {
     problems.push(`${name} does not own editorial quality before the frontstage contract`);
+  }
+  if (!/id:\s*trend-decision/u.test(text) || !/run-trend-candidate-decision\.mjs/u.test(text)) {
+    problems.push(`${name} does not record a current trend-candidate/no-candidate decision before the frontstage build`);
+  }
+  if (/--raw-min=|--pool-min=/u.test(text)) {
+    problems.push(`${name} still duplicates V3 evidence supply with hard-coded diagnostic volume thresholds`);
+  }
+  if (/--trend-candidates=/u.test(text)) {
+    problems.push(`${name} still routes trend writing through the Card generator instead of the current trend decision stage`);
   }
 }
 
 const result = {
   ok: problems.length === 0,
   policy_version: config.schema_version || "unknown",
-  checks: 18,
+  checks: 19,
   problems,
 };
 

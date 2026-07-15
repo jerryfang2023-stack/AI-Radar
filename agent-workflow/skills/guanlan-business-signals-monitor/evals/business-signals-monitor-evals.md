@@ -200,6 +200,12 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when carried sources normalize their saved readable snapshot as resolved original evidence, recover a missing structured date only from captured article text or a dated URL, and participate in normal Raw / Pool / Card gates and dedupe ahead of unstable live-search duplicates.
     - Fail when live-search nondeterminism removes a same-date gate-passed Card, or when carry-forward admits an undated, unreadable, unpublished, or non-formal artifact.
 
+34. `three_block_daily_contract`
+    - Pass when active-date public Cards are the only evidence nodes used by the same-date relationship graph and every graph edge carries resolvable active Card ids.
+    - Pass when each production date persists either a reviewed trend candidate backed by at least two accepted Cards and two source types, or an explicit no-candidate decision.
+    - Pass when a no-candidate decision records accepted Card count, source-family count, and signal-type counts instead of writing an unconditional empty shell.
+    - Fail when trend work is silently skipped, opinions enter graph/trend evidence, or both a candidate and no-candidate decision exist for the same date.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.
