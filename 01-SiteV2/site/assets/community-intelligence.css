@@ -82,11 +82,11 @@ button {
   max-width: 760px;
   margin: 0;
   color: var(--ink);
-  font-family: var(--serif);
+  font-family: var(--gl-font-heading-cn, var(--serif));
   font-size: var(--gl-type-page-title-size, 44px);
-  font-weight: var(--gl-weight-title, 600);
+  font-weight: var(--gl-weight-column-title, var(--gl-weight-title, 600));
   line-height: var(--gl-type-page-title-line, 58px);
-  letter-spacing: 0;
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .community-title-block h1 span {
@@ -249,9 +249,11 @@ button {
 .section-head h2 {
   margin: 0;
   color: var(--ink);
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
+  font-family: var(--gl-font-heading-cn, var(--serif));
+  font-size: var(--gl-type-module-title-size, 28px);
+  font-weight: var(--gl-weight-column-title, var(--gl-weight-title, 600));
+  line-height: var(--gl-type-module-title-line, 40px);
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .section-head > span,
@@ -392,9 +394,11 @@ button {
 .case-card h3 {
   margin: 0;
   color: #061523;
+  font-family: var(--gl-font-heading-cn, var(--serif));
   font-size: 18px;
-  font-weight: 600;
+  font-weight: var(--gl-weight-news-title, var(--gl-weight-heading, 400));
   line-height: 27px;
+  letter-spacing: var(--gl-letter-heading, 0);
   overflow-wrap: anywhere;
 }
 
@@ -581,8 +585,11 @@ button {
 
 .dialog-panel h3 {
   margin: 0 40px 10px 0;
+  font-family: var(--gl-font-heading-cn, var(--serif));
   font-size: 22px;
+  font-weight: var(--gl-weight-news-title, var(--gl-weight-heading, 400));
   line-height: 32px;
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .dialog-section {
@@ -647,6 +654,11 @@ button {
   .community-title-block h1 {
     font-size: 30px;
     line-height: 42px;
+  }
+
+  .section-head h2 {
+    font-size: 22px;
+    line-height: 32px;
   }
 
   .case-grid {

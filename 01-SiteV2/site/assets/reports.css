@@ -73,10 +73,11 @@ body.monthly-report-page {
   margin: 8px 0 0;
   max-width: 920px;
   color: var(--report-ink);
-  font-family: var(--report-serif);
+  font-family: var(--gl-font-heading-cn, var(--report-serif));
   font-size: 40px;
-  font-weight: 600;
+  font-weight: var(--gl-weight-heading, 400);
   line-height: 56px;
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .monthly-hero h1 {
@@ -114,10 +115,11 @@ body.monthly-report-page {
 .monthly-visuals h2 {
   margin: 6px 0 0;
   color: var(--report-ink);
-  font-family: var(--report-serif);
+  font-family: var(--gl-font-heading-cn, var(--report-serif));
   font-size: 28px;
-  font-weight: 600;
+  font-weight: var(--gl-weight-heading, 400);
   line-height: 40px;
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .monthly-section > .report-label {

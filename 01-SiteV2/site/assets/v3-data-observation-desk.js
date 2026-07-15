@@ -472,7 +472,6 @@
       <div class="enterprise-ai-list-head" aria-hidden="true">
         <span>案例</span>
         <span>AI化动作</span>
-        <span>Tags</span>
         <span>入口</span>
       </div>
       ${items.map((item) => `
@@ -481,10 +480,6 @@
           <h3>${safe(item.title)}</h3>
         </div>
         <p class="enterprise-ai-cell" data-label="AI化动作">${safe(item.workflow || "把 Agent 或模型接入业务系统")}</p>
-        <div class="enterprise-ai-tag-list" data-label="Tags">
-          <span class="enterprise-ai-stage">${safe(item.stageLabel || enterpriseStageLabel(item.stage))}</span>
-          <span>${safe(item.scenario || "企业工作流")}</span>
-        </div>
         <div class="enterprise-ai-actions">
           ${item.cardId ? `<button class="detail-link" type="button" data-open-enterprise-detail="${safe(item.cardId)}">详情</button>` : ""}
           ${item.sourceUrl ? `<a class="detail-link" href="${safe(item.sourceUrl)}" target="_blank" rel="noreferrer">原文</a>` : ""}
@@ -556,7 +551,6 @@
       <div class="enterprise-ai-list-head" aria-hidden="true">
         <span>事件</span>
         <span>硬件线索</span>
-        <span>分组</span>
         <span>入口</span>
       </div>
       ${items.map((item) => {
@@ -567,10 +561,6 @@
             <h3>${safe(item.title || cardDisplayTitle(item))}</h3>
           </div>
           <p class="enterprise-ai-cell" data-label="硬件线索">${safe(fact)}</p>
-          <div class="enterprise-ai-tag-list" data-label="分组">
-            <span class="enterprise-ai-stage">${safe(item.hardwareTrackLabel || "趋势创新")}</span>
-            <span>${safe(item.promotionStatus === "ai_hardware_lens_only" ? "独立观察" : "已关联 Card")}</span>
-          </div>
           <div class="enterprise-ai-actions">
             <button class="detail-link" type="button" data-open-ai-hardware-detail="${safe(item.id)}">详情</button>
             ${item.sourceUrl ? `<a class="detail-link" href="${safe(item.sourceUrl)}" target="_blank" rel="noreferrer">原文</a>` : ""}
@@ -1884,17 +1874,10 @@
     const fact = factText(card);
     const titleAliases = cardTitleAliases(card);
     const highlights = uniqueDetailLines(card.originalHighlights || [], [fact, ...titleAliases], 8);
-    const value = valueText(card, fact);
-    const visibleFragment = visibleFragmentText(card, [fact, value, ...titleAliases, ...highlights]);
-    const evidenceLines = uniqueDetailLines([...highlights, visibleFragment], [fact, value, ...titleAliases], 6);
+    const visibleFragment = visibleFragmentText(card, [fact, ...titleAliases, ...highlights]);
+    const evidenceLines = uniqueDetailLines([...highlights, visibleFragment], [fact, ...titleAliases], 6);
     const sourceLinks = card.sourceLinks || [];
     const detailMainBlocks = [
-      value ? `
-        <div class="detail-block">
-          <h3>观察价值</h3>
-          <p>${safe(value)}</p>
-        </div>
-      ` : "",
       evidenceLines.length ? `
         <div class="detail-block">
           <h3>原文证据</h3>

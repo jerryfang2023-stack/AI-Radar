@@ -54,7 +54,10 @@
       line-height: 18px;
       text-transform: uppercase;
     }
-    h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 600; letter-spacing: 0; }
+    h1, h2, h3 { margin: 0; font-family: var(--gl-font-heading-cn, var(--serif)); letter-spacing: var(--gl-letter-heading, 0); }
+    h3 { font-weight: var(--gl-weight-title, 600); }
+    .cell-modal h3 { font-weight: var(--gl-weight-heading, 400); }
+    h1, h2, .map-block-head h3 { font-weight: var(--gl-weight-column-title, var(--gl-weight-title, 600)); }
     .page-title-head h1 {
       max-width: 760px;
       color: var(--ink);
@@ -94,14 +97,14 @@
     .metric strong { display: block; margin-top: 5px; font-family: var(--mono); font-size: 18px; font-weight: 600; line-height: 22px; }
     .report-stack { display: grid; gap: 10px; }
     .report-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: center; min-height: 106px; padding: 14px 20px; border-left: 4px solid var(--gold); }
-    .report-card h2 { font-size: 24px; line-height: 34px; white-space: nowrap; }
+    .report-card h2 { font-size: 24px; font-weight: var(--gl-weight-news-title, var(--gl-weight-heading, 400)); line-height: 34px; white-space: nowrap; }
     .report-card p { margin: 5px 0 0; color: var(--muted); font-size: var(--gl-type-caption-size, 14px); line-height: var(--gl-type-caption-line, 24px); }
     .link-button { display: inline-flex; align-items: center; justify-content: center; min-height: 38px; padding: 0 14px; background: var(--blue); color: var(--paper); font-size: 13px; font-weight: 600; line-height: 20px; text-decoration: none; white-space: nowrap; }
     .weekly-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
     .monthly-group > .kicker,
     .weekly-group > .kicker { margin-bottom: 6px; }
     .weekly-card { min-height: 112px; padding: 12px 14px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; text-decoration: none; }
-    .weekly-card b { display: block; margin-top: 5px; font-family: var(--serif); font-size: 18px; font-weight: 600; line-height: 28px; }
+    .weekly-card b { display: block; margin-top: 5px; font-family: var(--gl-font-heading-cn, var(--serif)); font-size: 18px; font-weight: var(--gl-weight-news-title, var(--gl-weight-heading, 400)); line-height: 28px; }
     .weekly-card-action { display: inline-flex; align-items: center; align-self: flex-end; min-height: 28px; padding: 0 10px; background: var(--blue); color: var(--paper); font-size: 12px; font-weight: 600; line-height: 28px; }
     .section { padding: 32px 0; border-bottom: 1px solid var(--soft-line); }
     .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 18px; }

@@ -123,11 +123,11 @@ button {
   max-width: 760px;
   margin: 0;
   color: var(--ink);
-  font-family: var(--serif);
+  font-family: var(--gl-font-heading-cn, var(--serif));
   font-size: var(--gl-type-page-title-size, 44px);
-  font-weight: var(--gl-weight-title, 600);
+  font-weight: var(--gl-weight-column-title, var(--gl-weight-title, 600));
   line-height: var(--gl-type-page-title-line, 58px);
-  letter-spacing: 0;
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .workbench-summary {
@@ -159,10 +159,11 @@ button {
 .builder-hero h1 {
   max-width: 760px;
   margin: 0;
-  font-family: var(--serif);
+  font-family: var(--gl-font-heading-cn, var(--serif));
   font-size: 44px;
-  font-weight: 600;
+  font-weight: var(--gl-weight-column-title, var(--gl-weight-title, 600));
   line-height: 58px;
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .hero-deck {
@@ -301,9 +302,11 @@ button {
 
 .section-head h2 {
   margin: 0;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
+  font-family: var(--gl-font-heading-cn, var(--serif));
+  font-size: var(--gl-type-module-title-size, 28px);
+  font-weight: var(--gl-weight-column-title, var(--gl-weight-title, 600));
+  line-height: var(--gl-type-module-title-line, 40px);
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .result-count {
@@ -652,10 +655,11 @@ button {
 .dialog-title {
   max-width: 760px;
   margin: 0 48px 12px 0;
-  font-family: var(--serif);
+  font-family: var(--gl-font-heading-cn, var(--serif));
   font-size: 34px;
-  font-weight: 600;
+  font-weight: var(--gl-weight-heading, 400);
   line-height: 48px;
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .dialog-meta {
@@ -750,6 +754,11 @@ button {
   .builder-title-block h1 {
     font-size: 30px;
     line-height: 42px;
+  }
+
+  .section-head h2 {
+    font-size: 22px;
+    line-height: 32px;
   }
 
   .workbench-summary {

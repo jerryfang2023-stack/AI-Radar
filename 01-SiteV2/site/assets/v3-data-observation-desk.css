@@ -232,19 +232,22 @@ button {
 
 .section-head h2 {
   margin: 0;
+  font-family: var(--gl-font-heading-cn, var(--serif));
   font-size: var(--gl-type-card-title-size, 20px);
-  font-weight: var(--gl-weight-title, 600);
+  font-weight: var(--gl-weight-column-title, var(--gl-weight-title, 600));
   line-height: var(--gl-type-card-title-line, 30px);
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .page-title-head h1 {
   max-width: 760px;
   margin: 0;
   color: var(--ink);
-  font-family: var(--serif);
+  font-family: var(--gl-font-heading-cn, var(--serif));
   font-size: var(--gl-type-page-title-size, 44px);
-  font-weight: var(--gl-weight-title, 600);
+  font-weight: var(--gl-weight-column-title, var(--gl-weight-title, 600));
   line-height: var(--gl-type-page-title-line, 58px);
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .section-head h2 .workbench-summary {
@@ -1425,8 +1428,9 @@ button {
 
 .card-table strong {
   color: var(--ink);
+  font-family: var(--gl-font-heading-cn, var(--serif));
   font-size: 16px;
-  font-weight: var(--gl-weight-title, 600);
+  font-weight: var(--gl-weight-news-title, var(--gl-weight-heading, 400));
   line-height: 24px;
 }
 
@@ -1546,7 +1550,7 @@ button {
 .enterprise-ai-list-head,
 .enterprise-ai-card {
   display: grid;
-  grid-template-columns: minmax(300px, 1.12fr) minmax(220px, .74fr) minmax(260px, .86fr) 112px;
+  grid-template-columns: minmax(0, 1.75fr) minmax(240px, .9fr) 112px;
   align-items: center;
   gap: 14px;
 }
@@ -1578,12 +1582,6 @@ button {
     linear-gradient(90deg, rgba(228, 239, 236, .72), rgba(255, 255, 255, .82));
 }
 
-.ai-hardware-card .enterprise-ai-stage {
-  border-color: rgba(45, 95, 120, .24);
-  background: rgba(45, 95, 120, .10);
-  color: #244f5f;
-}
-
 .ai-hardware-card .enterprise-ai-title-block h3,
 .ai-hardware-card .enterprise-ai-cell {
   display: -webkit-box;
@@ -1592,7 +1590,8 @@ button {
 }
 
 .ai-hardware-card .enterprise-ai-title-block h3 {
-  -webkit-line-clamp: 2;
+  display: block;
+  -webkit-line-clamp: unset;
 }
 
 .ai-hardware-card .enterprise-ai-cell {
@@ -1617,48 +1616,16 @@ button {
   line-height: var(--gl-type-label-line, 18px);
 }
 
-.enterprise-ai-tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px;
-  min-width: 0;
-}
-
-.enterprise-ai-tag-list span {
-  display: inline-flex;
-  align-items: center;
-  min-height: 22px;
-  padding: 2px 7px;
-  border: 1px solid var(--line-soft);
-  background: rgba(255, 253, 248, .88);
-  color: var(--muted);
-  font-size: var(--gl-type-label-size, 12px);
-  font-weight: var(--gl-weight-label, 600);
-  line-height: 16px;
-}
-
-.enterprise-ai-stage {
-  display: inline-flex;
-  align-items: center;
-  min-height: 22px;
-  padding: 2px 7px;
-  border: 1px solid rgba(200, 167, 102, .34);
-  background: rgba(200, 167, 102, .12);
-  color: var(--blue);
-  font-family: var(--mono);
-  font-size: 11px;
-  font-weight: var(--gl-weight-title, 600);
-  line-height: 16px;
-}
-
 .enterprise-ai-card h3 {
   margin: 0;
   color: var(--ink);
+  font-family: var(--gl-font-heading-cn, var(--serif));
   font-size: 16px;
-  font-weight: var(--gl-weight-title, 600);
+  font-weight: var(--gl-weight-news-title, var(--gl-weight-heading, 400));
   line-height: 24px;
-  overflow-wrap: anywhere;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .enterprise-ai-cell {
@@ -2206,10 +2173,11 @@ button {
 .detail-title {
   max-width: 860px;
   margin: 0 48px 14px 0;
-  font-family: var(--serif);
+  font-family: var(--gl-font-heading-cn, var(--serif));
   font-size: 40px;
-  font-weight: var(--gl-weight-title, 600);
+  font-weight: var(--gl-weight-news-title, var(--gl-weight-heading, 400));
   line-height: 56px;
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .detail-grid {
@@ -2442,12 +2410,12 @@ button {
 
   .enterprise-ai-list-head,
   .enterprise-ai-card {
-    grid-template-columns: minmax(260px, .9fr) minmax(0, 1.1fr);
+    grid-template-columns: minmax(0, 1.55fr) minmax(200px, .75fr) 112px;
   }
 
   .enterprise-ai-actions {
-    grid-column: 1 / -1;
-    justify-content: flex-start;
+    grid-column: auto;
+    justify-content: flex-end;
   }
 
   .history-item {
@@ -2759,6 +2727,13 @@ button {
     padding: 12px;
   }
 
+  .enterprise-ai-card h3,
+  .ai-hardware-card .enterprise-ai-title-block h3 {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+  }
+
   .enterprise-ai-list-head {
     display: none;
   }
@@ -2769,12 +2744,7 @@ button {
     gap: 8px;
   }
 
-  .enterprise-ai-tag-list {
-    align-items: flex-start;
-  }
-
-  .enterprise-ai-cell::before,
-  .enterprise-ai-tag-list::before {
+  .enterprise-ai-cell::before {
     content: attr(data-label);
     flex: 0 0 70px;
     color: var(--faint);
@@ -2796,5 +2766,329 @@ button {
   .relation-stat-card {
     min-height: auto;
     padding: 10px;
+  }
+}
+
+/* Business Signals visual consistency layer */
+body.v3-data-observation-page {
+  --paper: var(--gl-bg-page, #fffdf8);
+  --ink: var(--gl-ink, #071827);
+  --blue: var(--gl-blue, #0d355c);
+  --gold: #b99551;
+  --gold-soft: rgba(185, 149, 81, .13);
+  --muted: rgba(7, 24, 39, .62);
+  --faint: rgba(7, 24, 39, .4);
+  --line: rgba(86, 69, 45, .16);
+  --line-soft: rgba(86, 69, 45, .09);
+  --surface: rgba(255, 253, 248, .74);
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, rgba(247, 244, 239, .88), rgba(255, 253, 248, 0) 500px),
+    linear-gradient(90deg, rgba(200, 167, 102, .06), transparent 34%, rgba(13, 53, 92, .035)),
+    var(--paper);
+  font-family: var(--gl-font-sans-cn);
+}
+
+.v3-data-observation-page button,
+.v3-data-observation-page input,
+.v3-data-observation-page select {
+  font-family: var(--gl-font-sans-cn);
+}
+
+.v3-data-observation-page select {
+  appearance: none;
+  padding-right: 32px;
+  border-color: var(--line);
+  border-radius: var(--gl-radius-button);
+  background-color: var(--surface);
+  background-image: url("icons/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 9px center;
+  background-size: 16px 16px;
+  color: var(--ink);
+}
+
+.v3-data-observation-page button:focus-visible,
+.v3-data-observation-page input:focus-visible,
+.v3-data-observation-page select:focus-visible,
+.v3-data-observation-page a:focus-visible {
+  outline: 2px solid rgba(185, 149, 81, .72);
+  outline-offset: 2px;
+}
+
+.v3-data-observation-page .desk-section {
+  border-color: var(--line-soft);
+}
+
+.v3-data-observation-page .desk-kicker {
+  color: var(--gold);
+  font-family: var(--gl-font-en);
+  font-size: var(--gl-type-label-size);
+  font-weight: var(--gl-weight-label);
+  line-height: var(--gl-type-label-line);
+  letter-spacing: var(--gl-letter-label);
+}
+
+.v3-data-observation-page .page-title-head h1 {
+  color: var(--ink);
+  font-family: var(--gl-font-heading-cn);
+  font-size: var(--gl-type-page-title-size);
+  font-weight: var(--gl-weight-column-title, var(--gl-weight-title));
+  line-height: var(--gl-type-page-title-line);
+  letter-spacing: var(--gl-letter-heading);
+}
+
+.v3-data-observation-page .section-head h2 {
+  color: var(--ink);
+  font-family: var(--gl-font-heading-cn);
+  font-size: var(--gl-type-module-title-size);
+  font-weight: var(--gl-weight-column-title, var(--gl-weight-title));
+  line-height: var(--gl-type-module-title-line);
+  letter-spacing: var(--gl-letter-heading);
+}
+
+.v3-data-observation-page .workbench-summary,
+.v3-data-observation-page .result-count,
+.v3-data-observation-page .enterprise-ai-meta,
+.v3-data-observation-page .card-table th {
+  color: var(--muted);
+}
+
+.v3-data-observation-page .display-mode-toggle {
+  overflow: hidden;
+  border-color: var(--line);
+  border-radius: var(--gl-radius-button);
+  background: var(--surface);
+}
+
+.v3-data-observation-page .display-mode-toggle:empty {
+  display: none;
+}
+
+.v3-data-observation-page .display-mode-toggle button,
+.v3-data-observation-page .category-tabs button,
+.v3-data-observation-page .preview-button,
+.v3-data-observation-page .detail-link,
+.v3-data-observation-page .detail-close {
+  border-color: var(--line);
+  border-radius: var(--gl-radius-button);
+  background: var(--surface);
+  color: var(--blue);
+  font-family: var(--gl-font-sans-cn);
+  font-size: var(--gl-type-nav-size);
+  font-weight: var(--gl-weight-medium);
+  line-height: var(--gl-type-nav-line);
+  transition: border-color .18s ease, background-color .18s ease, color .18s ease;
+}
+
+.v3-data-observation-page .display-mode-toggle button:hover,
+.v3-data-observation-page .category-tabs button:hover,
+.v3-data-observation-page .preview-button:hover,
+.v3-data-observation-page .detail-close:hover {
+  border-color: rgba(13, 53, 92, .28);
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+
+.v3-data-observation-page .display-mode-toggle button.is-active,
+.v3-data-observation-page .category-tabs button.is-active,
+.v3-data-observation-page .detail-link {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: var(--paper);
+}
+
+.v3-data-observation-page .detail-link:hover {
+  border-color: var(--gl-deep);
+  background: var(--gl-deep);
+}
+
+.v3-data-observation-page .date-controls select {
+  min-height: 34px;
+  font-family: var(--gl-font-mono);
+  font-size: var(--gl-type-label-size);
+  font-weight: var(--gl-weight-medium);
+  line-height: var(--gl-type-label-line);
+}
+
+.v3-data-observation-page .table-wrap {
+  overflow: hidden;
+  border-color: var(--line);
+  border-radius: var(--gl-radius-card);
+  background: var(--surface);
+  box-shadow: none;
+}
+
+.v3-data-observation-page .card-table th {
+  background: rgba(247, 244, 239, .74);
+  font-family: var(--gl-font-sans-cn);
+  font-size: var(--gl-type-label-size);
+  font-weight: var(--gl-weight-label);
+  line-height: var(--gl-type-label-line);
+}
+
+.v3-data-observation-page .card-table td {
+  color: rgba(7, 24, 39, .68);
+  font-family: var(--gl-font-sans-cn);
+  font-size: var(--gl-type-caption-size);
+  font-weight: var(--gl-weight-body);
+  line-height: var(--gl-type-caption-line);
+}
+
+.v3-data-observation-page .card-table strong {
+  color: var(--ink);
+  font-family: var(--gl-font-heading-cn);
+  font-size: 18px;
+  font-weight: var(--gl-weight-news-title, var(--gl-weight-heading));
+  line-height: 28px;
+}
+
+.v3-data-observation-page .card-table tr[data-card-row]:hover td {
+  background: var(--blue-soft);
+}
+
+.v3-data-observation-page .card-table tr[data-card-row].is-selected td {
+  background: var(--gold-soft);
+}
+
+.v3-data-observation-page .card-preview-row td {
+  background: rgba(247, 244, 239, .62);
+}
+
+.v3-data-observation-page .inline-preview {
+  border-left-color: var(--gold);
+}
+
+.v3-data-observation-page .tag-pills span,
+.v3-data-observation-page .row-tags span,
+.v3-data-observation-page .detail-tags span {
+  border-color: var(--line);
+  border-radius: var(--gl-radius-sm);
+  background: rgba(255, 253, 248, .76);
+  color: rgba(7, 24, 39, .68);
+  font-family: var(--gl-font-sans-cn);
+  font-size: var(--gl-type-label-size);
+  font-weight: var(--gl-weight-medium);
+  line-height: var(--gl-type-label-line);
+}
+
+.v3-data-observation-page .ai-hardware-section,
+.v3-data-observation-page .enterprise-ai-section {
+  border-color: var(--line-soft);
+  background: transparent;
+}
+
+.v3-data-observation-page .enterprise-ai-card,
+.v3-data-observation-page .ai-hardware-card {
+  border-color: var(--line);
+  border-radius: var(--gl-radius-card);
+  background: var(--surface);
+  box-shadow: none;
+}
+
+.v3-data-observation-page .enterprise-ai-card h3 {
+  color: var(--ink);
+  font-family: var(--gl-font-heading-cn);
+  font-size: 18px;
+  font-weight: var(--gl-weight-news-title, var(--gl-weight-heading));
+  line-height: 28px;
+}
+
+.v3-data-observation-page .enterprise-ai-cell {
+  color: rgba(7, 24, 39, .68);
+  font-family: var(--gl-font-sans-cn);
+  font-size: var(--gl-type-caption-size);
+  font-weight: var(--gl-weight-body);
+  line-height: var(--gl-type-caption-line);
+}
+
+.v3-data-observation-page .detail-panel {
+  border-color: var(--line);
+  border-radius: var(--gl-radius-card);
+  background: linear-gradient(180deg, rgba(255, 253, 248, .98), rgba(247, 244, 239, .96));
+  box-shadow: 0 20px 56px rgba(7, 24, 39, .14);
+}
+
+.v3-data-observation-page .detail-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  min-height: 38px;
+  padding: 0;
+}
+
+.v3-data-observation-page .detail-close img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.v3-data-observation-page .detail-title {
+  color: var(--ink);
+  font-family: var(--gl-font-heading-cn);
+  font-size: var(--gl-type-detail-title-size);
+  font-weight: var(--gl-weight-news-title, var(--gl-weight-heading));
+  line-height: var(--gl-type-detail-title-line);
+  letter-spacing: var(--gl-letter-heading);
+}
+
+.v3-data-observation-page .detail-field,
+.v3-data-observation-page .relationship-support-list article {
+  border-color: var(--line);
+  border-radius: var(--gl-radius-sm);
+  background: rgba(255, 253, 248, .78);
+}
+
+.v3-data-observation-page .detail-fact-card {
+  border-left-color: var(--gold);
+  background: rgba(247, 244, 239, .74);
+}
+
+@media (max-width: 760px) {
+  .v3-data-observation-page .page-title-head h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .v3-data-observation-page .section-head h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .v3-data-observation-page .table-wrap {
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .v3-data-observation-page .card-summary-row,
+  .v3-data-observation-page .enterprise-ai-card,
+  .v3-data-observation-page .ai-hardware-card {
+    border-color: var(--line);
+    border-radius: var(--gl-radius-md);
+    background: var(--surface);
+  }
+
+  .v3-data-observation-page .card-preview-row {
+    display: none;
+  }
+
+  .v3-data-observation-page .card-preview-row.is-open {
+    display: block;
+  }
+
+  .v3-data-observation-page .card-table strong,
+  .v3-data-observation-page .enterprise-ai-card h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .v3-data-observation-page .detail-title {
+    font-size: 28px;
+    line-height: 40px;
   }
 }

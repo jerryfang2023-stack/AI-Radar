@@ -72,10 +72,11 @@ body.weekly-report-page {
   margin: 0;
   max-width: 860px;
   color: var(--weekly-ink);
-  font-family: var(--weekly-serif);
+  font-family: var(--gl-font-heading-cn, var(--weekly-serif));
   font-size: var(--gl-type-detail-title-size, 40px);
-  font-weight: var(--gl-weight-title, 600);
+  font-weight: var(--gl-weight-heading, 400);
   line-height: var(--gl-type-detail-title-line, 56px);
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .weekly-report-window {
@@ -134,10 +135,11 @@ body.weekly-report-page {
 .weekly-actions-panel h2 {
   margin: 0;
   color: var(--weekly-ink);
-  font-family: var(--weekly-serif);
+  font-family: var(--gl-font-heading-cn, var(--weekly-serif));
   font-size: 25px;
-  font-weight: var(--gl-weight-title, 600);
+  font-weight: var(--gl-weight-heading, 400);
   line-height: 36px;
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .weekly-proof-tags {
@@ -347,10 +349,11 @@ body.weekly-report-page {
 .weekly-report-section h2 {
   margin: 0 0 14px;
   color: var(--weekly-ink);
-  font-family: var(--weekly-serif);
+  font-family: var(--gl-font-heading-cn, var(--weekly-serif));
   font-size: var(--gl-type-detail-h2-size, 26px);
-  font-weight: var(--gl-weight-title, 600);
+  font-weight: var(--gl-weight-heading, 400);
   line-height: var(--gl-type-detail-h2-line, 38px);
+  letter-spacing: var(--gl-letter-heading, 0);
 }
 
 .weekly-report-section h3 {
