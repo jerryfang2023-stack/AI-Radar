@@ -33,6 +33,7 @@ Do not mirror runtime caches, package installs, generated feeds, `node_modules`,
 - `guanlan-trend-candidate-writer`
 - `guanlan-typography-qc`
 - `guanlan-skill-editor`
+- `guanlan-code-rule-auditor`
 - `follow-builders`
 
 ## Registry
