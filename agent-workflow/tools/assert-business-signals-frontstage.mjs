@@ -65,6 +65,9 @@ function classify(text = "") {
   if (/retired_|navigation|version_mismatch|active_date_stale|regression/iu.test(text)) {
     categories.add("frontstage_regression");
   }
+  if (/relationship graph|relationship edge|trend candidate|no-candidate decision|related Cards|source types|evidence boundary/iu.test(text)) {
+    categories.add("three_block_contract");
+  }
   return [...categories];
 }
 
@@ -77,6 +80,7 @@ const gateArgs = [`--date=${date}`];
 const gates = [
   ...(!skipEditorial ? [runGate("editorial_quality", "Signal Card editorial quality gate", "agent-workflow/tools/assert-signal-card-editorial-quality.mjs", gateArgs)] : []),
   runGate("source_first", "V3 source-first frontstage gate", "agent-workflow/tools/assert-v3-source-first-frontstage.mjs", gateArgs),
+  runGate("three_block_contract", "Business Signals three-block contract", "agent-workflow/tools/assert-business-signals-three-block-contract.mjs", gateArgs),
   runGate("frontstage_regression", "Frontstage regression gate", "agent-workflow/tools/frontstage-regression-gate.mjs", gateArgs),
 ];
 

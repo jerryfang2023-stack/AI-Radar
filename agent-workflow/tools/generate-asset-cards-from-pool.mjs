@@ -25,7 +25,6 @@ const includeBusinessObservations = args.get("include-business-observations") ==
 const assetGenerationLimit = args.has("asset-generation-limit")
   ? nonNegativeInt(args.get("asset-generation-limit"), Number.POSITIVE_INFINITY)
   : Number.POSITIVE_INFINITY;
-const generateTrendCandidates = args.get("trend-candidates") === "true";
 const expectedRawCount = args.has("expected-raw-count")
   ? nonNegativeInt(args.get("expected-raw-count"), Number.NaN)
   : null;
@@ -2710,6 +2709,9 @@ function deterministicEnglishPublicTitle({ type = "", company = "", sourceEventT
   if (type === "funding" && amount) {
     const round = chineseRound(title);
     const localizedAmount = chineseAmount(amount) || amount;
+    if (/\bweb search\b.{0,80}\bagents?\b/iu.test(title)) {
+      return `${cleanCompany} 融资 ${localizedAmount}${round ? ` ${round}` : ""}，用于为智能体构建先进 Web Search`;
+    }
     const purpose = /\bAI dating service\b/iu.test(title)
       ? "，用于 AI 约会服务"
       : /\bfull-stack chiplet platform\b.{0,80}\bcustom AI silicon\b/iu.test(title)
@@ -2740,11 +2742,12 @@ function deterministicEnglishPublicTitle({ type = "", company = "", sourceEventT
 }
 
 function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount, translatedTitle = "" }) {
+  if (translatedTitle) return translatedTitle;
   const deterministic = sourceTitleNeedsChineseTranslation(sourceEventTitle)
     ? deterministicEnglishPublicTitle({ type, company, sourceEventTitle, amount })
     : "";
   if (deterministic) return deterministic;
-  const translated = translatedTitle || sourceTitleDisplayTitle(sourceEventTitle);
+  const translated = sourceTitleDisplayTitle(sourceEventTitle);
   if (translated) return translated;
   if (type === "funding" && company && amount && !hasTextContamination(company)) {
     const round = chineseRound(sourceEventTitle);
@@ -3347,12 +3350,6 @@ function formalTagsForScene(spec) {
   return Object.fromEntries(Object.entries(tags).map(([group, values]) => [group, uniq(values)]));
 }
 
-function formalTagsForTrend(spec) {
-  const tags = inferredTagsFromText(`${spec.title} ${spec.hypothesis} ${spec.sourceTypes?.join(" ") || ""}`);
-  tags.evidence.push("evidence-customer-adoption");
-  return Object.fromEntries(Object.entries(tags).map(([group, values]) => [group, uniq(values)]));
-}
-
 function poolRoutesForPrimaryRaw(section) {
   const routes = value(section, "pool_routes")
     .split(/[,，\s]+/u)
@@ -3822,18 +3819,6 @@ function main() {
     write(contentFile, text);
     written.push(path.relative(root, knowledgeFile).replace(/\\/g, "/"));
     written.push(path.relative(root, contentFile).replace(/\\/g, "/"));
-  }
-
-  if (candidates.trend && generateTrendCandidates) {
-    const knowledgeFile = path.join(root, "01-SiteV2", "knowledge", "03-Asset-Candidates", "trend", `${date}--trend-candidate--${candidates.trend.slug}.md`);
-    const contentFile = path.join(root, "01-SiteV2", "content", "06-asset-candidates", "trend", `${date}--trend-candidate--${candidates.trend.slug}.md`);
-    const text = trendCandidate(candidates.trend);
-    write(knowledgeFile, text);
-    write(contentFile, text);
-    written.push(path.relative(root, knowledgeFile).replace(/\\/g, "/"));
-    written.push(path.relative(root, contentFile).replace(/\\/g, "/"));
-  } else if (candidates.trend) {
-    skipped.push("trend_candidate: skipped; run agent-workflow/tools/run-trend-candidate-decision.mjs after Card generation");
   }
 
   writeSignalIndexes(signalIndexSpecs);

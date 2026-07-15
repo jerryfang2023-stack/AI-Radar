@@ -3,15 +3,15 @@ name: guanlan-business-signals-monitor
 description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.5 / BSIG-V2.2.0-pipeline-stage-ownership Business Signals lane. Covers daily Raw / Pool audit / unified frontstage Signal Cards / separate AI Hardware lens / Reports Center map inputs / trend-candidate inputs, source-first gates, raw-to-card release behavior, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for First-Line Viewpoints, Community Intelligence, direct deployment, or retired daily observation / brief / trend-report outputs.
 metadata:
   guanlan:
-    version: "1.1.0"
+    version: "1.1.1"
     lane: "Business Signals"
     status: "current lane owner"
     order: 10
     responsibility: "Own Business Signals daily supervision and repair: Raw, Pool, unified frontstage Signal Cards, separate AI Hardware lens, V3 release gate cleanup, Reports Center map inputs, and trend-candidate inputs."
     upstream: "external source capture, daily persistent assets workflow, Hermes inbox"
     downstream: "Signal Cards, graph inputs, trend candidates, PR publication"
-    gates: "monitor QC, post-monitor Raw / Pool gate, six-gate Card entry, Card generation, source-first, frontstage Card contract"
-    recent_learning: "Production is a single-attempt four-stage state machine: evidence supply, Card/editorial quality, frontstage contract, and publication. Provider/volume/mix diagnostics never trigger whole-chain recollection, and publication waiting is not a monitor failure."
+    gates: "V3 evidence supply, six-gate Card entry, Card editorial quality, relationship graph, trend decision, source-first, frontstage Card contract"
+    recent_learning: "The three public blocks form one daily contract: accepted Cards feed the relationship graph, and the trend stage must persist either a multi-Card candidate or an explicit no-candidate decision. Diagnostic Raw / Pool volume targets do not duplicate the V3 release gate."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -65,8 +65,9 @@ When repairing repeated morning failures, also read `examples/good-failure-route
 4. If production failed, start from the failed gate report and determine the earliest responsible stage:
    - Raw capture;
    - Pool routing;
-   - monitor QC;
+   - V3 evidence-supply gate;
    - Card generation;
+   - relationship graph / trend decision;
    - frontstage Card contract;
    - source-first gate;
    - frontstage regression;
@@ -121,13 +122,14 @@ Use this order:
 5. If Pool audit supply, cardable candidate supply, or Card readiness is thin, repair the missing source lane first. Do not continue into dashboard or publication work.
 6. Generate frontstage Signal Cards from all cardable Raw / Pool business signals. Do not use a fixed Pool selection cap after Raw collection; Pool should preserve all non-discard screened evidence so repairable high-value items remain visible.
 7. Build one public Card set sorted by importance / impact. Do not split public data into Top10 and candidate-pool modes. Do not expose sorting reasons on the page.
-8. Build Business frontstage JSON.
-9. Run the unified Business frontstage gate immediately.
-10. Only after that gate passes, build operations dashboard, manifest, PR, merge, and Pages.
-11. After failed production runs, Daily Problem Watchdog should write one categorized inbox item for targeted repair. It must not dispatch another full-chain run.
-12. At 09:40, no-Hermes self-check should verify same-date data / active-run state and run safe repairs only. If the 09:27 health dispatch is queued or in progress, classify the lane as waiting rather than failed.
-13. At 09:50, no-Hermes Codex handoff should turn unresolved `codex_repair_tasks` into a task-specific prompt or explicit `codex exec` run.
-14. Before 10:00, report a human-readable repair status whenever production state is observable. Publication checks after this point should focus on PR, Pages, same-date Business data, public Card count, and local sync blockage.
+8. Record either a reviewed multi-Card trend candidate or an explicit same-date no-candidate decision.
+9. Build Business frontstage JSON, including the relationship graph derived from accepted Cards.
+10. Run the unified Business frontstage gate immediately; it must validate Cards, graph evidence references, and the trend decision.
+11. Only after that gate passes, build operations dashboard, manifest, PR, merge, and Pages.
+12. After failed production runs, Daily Problem Watchdog should write one categorized inbox item for targeted repair. It must not dispatch another full-chain run.
+13. At 09:40, no-Hermes self-check should verify same-date data / active-run state and run safe repairs only. If the 09:27 health dispatch is queued or in progress, classify the lane as waiting rather than failed.
+14. At 09:50, no-Hermes Codex handoff should turn unresolved `codex_repair_tasks` into a task-specific prompt or explicit `codex exec` run.
+15. Before 10:00, report a human-readable repair status whenever production state is observable. Publication checks after this point should focus on PR, Pages, same-date Business data, public Card count, and local sync blockage.
 
 ## Weekend Policy
 

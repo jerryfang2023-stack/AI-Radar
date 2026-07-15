@@ -8,7 +8,7 @@ description: Legacy-compatible entry for Business Signals Raw / Pool monitoring.
 ## Required Reads
 
 1. `AGENTS.md`
-2. `skills/guanlan-business-signals-monitor/SKILL.md`
+2. `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md`
 3. `context/05-daily-monitoring.md`
 4. `context/07-v3-intelligence-generation-rules.md`
 5. `skills/guanlan-monitor-quality-gate/SKILL.md`
