@@ -10,6 +10,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { homedir } from "node:os";
+import { dedupeEpisodes, dedupeSources } from "./podcast-feed-utils.mjs";
 
 const root = process.cwd();
 const registryPath = path.join(root, "01-SiteV2", "content", "11-databases", "source-registry-v2.json");
@@ -48,6 +49,8 @@ if (fs.existsSync(fbDefaultsPath)) {
   } catch (e) {}
 }
 
+sources = dedupeSources(sources);
+
 function extractXmlField(xml, tag) {
   const re = new RegExp("<" + tag + "(?:\\s[^>]*)?>(.*?)<\\/" + tag + ">", "is");
   const match = xml.match(re);
@@ -82,6 +85,13 @@ function isRecent(published, hours) {
 async function main() {
   const podcasts = [];
   const errors = [];
+  const outPath = path.join(root, "01-SiteV2", "content", "11-databases", "builder-podcast-feed.json");
+  let previous = null;
+  if (fs.existsSync(outPath)) {
+    try {
+      previous = JSON.parse(fs.readFileSync(outPath, "utf8"));
+    } catch {}
+  }
 
   for (const src of sources) {
     const url = src.endpoint_or_url || "";
@@ -113,7 +123,7 @@ async function main() {
             const summary = compact(extractXmlField(entryXml, "summary") || extractXmlField(entryXml, "content"), 920);
             if (!title) continue;
             if (!isRecent(published, 720)) continue;
-            episodes.push({ title: title, url: link || srcChannelUrl, publishedAt: published, excerpt: summary });
+            episodes.push({ title: title, url: link || url, publishedAt: published, excerpt: summary });
           } catch (e) {}
         }
       } else {
@@ -126,7 +136,7 @@ async function main() {
             const description = compact(extractXmlField(itemXml, "description"), 920);
             if (!title) continue;
             if (!isRecent(pubDate, 720)) continue;
-            episodes.push({ title, url: link || srcChannelUrl, publishedAt: pubDate, excerpt: description.replace(/<[^>]+>/g, "") });
+            episodes.push({ title, url: link || url, publishedAt: pubDate, excerpt: description.replace(/<[^>]+>/g, "") });
           } catch (e) {}
         }
       }
@@ -144,18 +154,28 @@ async function main() {
   }
 
   // Sort all episodes by date, take top 5
-  const allEpisodes = podcasts.flatMap(p =>
+  const fetchedEpisodes = dedupeEpisodes(podcasts.flatMap(p =>
     p.episodes.map(e => ({ ...e, source: "podcast", name: p.name }))
-  );
+  ));
+  const previousEpisodes = Array.isArray(previous?.podcasts)
+    ? previous.podcasts.filter((episode) => isRecent(episode.publishedAt, 720))
+    : [];
+  const fallbackUsed = errors.length > 0 && fetchedEpisodes.length < 3 && previousEpisodes.length > 0;
+  const allEpisodes = dedupeEpisodes(fallbackUsed ? [...fetchedEpisodes, ...previousEpisodes] : fetchedEpisodes);
   allEpisodes.sort((a, b) => String(b.publishedAt).localeCompare(String(a.publishedAt)));
 
   const output = {
     generatedAt: new Date().toISOString(),
-    stats: { podcastsBuilt: podcasts.length, totalEpisodes: allEpisodes.length, errors },
+    stats: {
+      podcastsBuilt: podcasts.length,
+      totalEpisodes: allEpisodes.length,
+      errors,
+      fallbackUsed,
+      fallbackReason: fallbackUsed ? "current RSS fetch degraded; retained recent unique episodes from previous feed" : "",
+    },
     podcasts: allEpisodes.slice(0, 8), // top 8 episodes
   };
 
-  const outPath = path.join(root, "01-SiteV2", "content", "11-databases", "builder-podcast-feed.json");
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2) + "\n", "utf8");
 

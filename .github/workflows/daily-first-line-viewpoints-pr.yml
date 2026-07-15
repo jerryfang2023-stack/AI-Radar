@@ -82,7 +82,8 @@ jobs:
           fi
 
           if [ "$data_date" = "$RUN_DATE" ]; then
-            if sync_json="$(node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from="${RUN_DATE}" --to="${RUN_DATE}" --dry-run=true 2>/tmp/first-line-sync-check.err)"; then
+            sync_from="$(date -d "${RUN_DATE} - 4 days" +%F)"
+            if sync_json="$(node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from="${sync_from}" --to="${RUN_DATE}" --dry-run=true 2>/tmp/first-line-sync-check.err)"; then
               obsidian_pending="$(node -e "const data=JSON.parse(process.argv[1]||'{}'); process.stdout.write(String(data.added ?? 'unknown'));" "$sync_json")"
             else
               cat /tmp/first-line-sync-check.err >&2 || true
@@ -165,8 +166,9 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
+          sync_from="$(date -d "${RUN_DATE} - 4 days" +%F)"
           node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs \
-            --from="${RUN_DATE}" \
+            --from="${sync_from}" \
             --to="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-obsidian-sync.log"
 
