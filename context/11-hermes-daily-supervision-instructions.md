@@ -66,7 +66,7 @@ The report also runs the read-only Skill Ops check:
 npm run check:skill-ops
 ```
 
-Skill Ops verifies the generated skill registry, current Guanlan skill metadata / eval / example coverage, and `.skill-store` mirror state. It is a governance check, not a fourth production lane.
+Skill Ops verifies the generated skill registry, current Guanlan skill metadata / eval / example coverage, `.skill-store` mirror state, and the independent Skill Store dashboard semantic contract. The check is read-only and does not synchronize or rebuild assets. It is a governance check, not a fourth production lane.
 
 Primary outputs:
 

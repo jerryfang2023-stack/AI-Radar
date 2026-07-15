@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { shouldRebuildSkillStore, shouldSyncSkillStore } from "./lib/daily-self-check-policy.mjs";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
@@ -137,13 +138,13 @@ function runSafeRepairs(report) {
   if (!["safe", "on", "true", "1"].includes(String(repairMode).toLowerCase())) return attempts;
   const businessLane = (report?.lanes || []).find((lane) => lane.id === "business_signals");
 
-  if (hasLaneProblem(report, "skill_ops", /skill-registry|registry|skill ops|skill-store|drift/iu)) {
-    attempts.push(runNpm("repair skill registry", "build:skill-registry", [], 120000));
-    attempts.push(runNpm("check skill ops after registry repair", "check:skill-ops", [], 120000));
-    if (!attempts.at(-1)?.ok && allowSkillStoreSync) {
-      attempts.push(runNpm("sync skill store after explicit opt-in", "sync:skill-store", [], 120000));
-      attempts.push(runNpm("check skill ops after skill-store sync", "check:skill-ops", [], 120000));
-    }
+  if (shouldSyncSkillStore(report, allowSkillStoreSync)) {
+    attempts.push(runNpm("sync skill store after explicit opt-in", "sync:skill-store", [], 120000));
+    attempts.push(runNpm("rebuild dashboard after skill-store sync", "build:skill-store-dashboard", [], 120000));
+    attempts.push(runNpm("check skill ops after skill-store sync", "check:skill-ops", [], 120000));
+  } else if (shouldRebuildSkillStore(report)) {
+    attempts.push(runNpm("rebuild and validate Skill Store dashboard", "build:skill-store-dashboard", [], 120000));
+    attempts.push(runNpm("check skill ops after dashboard rebuild", "check:skill-ops", [], 120000));
   }
 
   if (hasLaneProblem(report, "community_intelligence", /gate report|missing community gate|community data date|archive|items|links/iu)

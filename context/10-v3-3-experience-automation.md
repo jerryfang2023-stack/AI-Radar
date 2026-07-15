@@ -42,13 +42,19 @@ Close a repaired Hermes request:
 npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>
 ```
 
-Audit Guanlan Skill Ops after skill edits or repeated lane failures. This refreshes the home `.skill-store` mirror before rerunning the governance check:
+Audit Guanlan Skill Ops after skill edits or repeated lane failures. This command is read-only: it reports mirror drift, checks governed Skill metadata, and validates the generated Skill Store dashboard contract without synchronizing or rebuilding anything:
 
 ```powershell
 npm run audit:skills
 ```
 
-Read-only Skill Ops check used by daily supervision:
+After confirming that the project copy is the source of truth, repair the `.skill-store` mirror and generated dashboard explicitly. The repair command synchronizes, rebuilds, then finishes with the read-only audit:
+
+```powershell
+npm run repair:skills
+```
+
+Read-only Skill Ops check used by daily supervision. It includes the dashboard semantic contract:
 
 ```powershell
 npm run check:skill-ops
@@ -131,7 +137,7 @@ Use this loop after every real production failure:
 4. Codex records the repair action with `record:action`, including issues, risks, checks, and reusable lessons.
 5. Codex reruns the exact failed gate or the smallest relevant validation.
 6. Codex closes the Hermes inbox item only after recording the validation and prevention artifact.
-7. If the repair changes any Guanlan skill, Codex runs `npm run audit:skills` before closure.
+7. If the repair changes any Guanlan skill, Codex runs `npm run repair:skills` after confirming the project copy is authoritative; the command ends with `npm run audit:skills` before closure.
 8. Weekly health reads daily supervision reports, Hermes inbox incidents, and action logs together.
 9. If the same incident category repeats twice in the weekly window, promote the lesson into one of:
    - a stricter gate;

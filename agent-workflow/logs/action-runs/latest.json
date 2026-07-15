@@ -1,23 +1,49 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-04T04:52:32.645Z",
-  "date": "2026-07-04",
-  "action": "remove-v1-v2-legacy-evidence-judgments",
+  "generated_at": "2026-07-15T17:00:37.223Z",
+  "date": "2026-07-16",
+  "action": "Skill Ops final path and mixed-error closure",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "manual",
-  "status": "completed",
-  "summary": "Removed legacy v1/v2 evidence judgments from Raw route degradation and monitor quality gate; quality gate now uses evidence_strength tiers instead of missing_full_text/readability blockers.",
-  "contexts": [],
-  "changed_files": [],
+  "trigger": "code-review",
+  "status": "success",
+  "summary": "Closed mixed semantic-error plus drift repair, canonicalized destructive roots, and moved hidden trash inside the Store filesystem.",
+  "contexts": [
+    "code-review final Standards",
+    "code-review final Spec",
+    "guanlan-code-rule-auditor",
+    "tdd"
+  ],
+  "changed_files": [
+    "agent-workflow/tools/lib/daily-self-check-policy.mjs",
+    "agent-workflow/tools/write-daily-supervision-report.mjs",
+    "agent-workflow/tools/lib/skill-store-paths.mjs",
+    "agent-workflow/tools/tests/skill-ops-audit.test.mjs"
+  ],
   "outputs": [],
   "checks": [
-    "daily monitor rerun passed; asset generation passed; frontstage assert passed; evidence-gate eval passed"
+    "15 Skill Ops tests passed",
+    "canonical home alias rejection passed",
+    "mixed-error repair policy passed",
+    "Node syntax checks passed"
   ],
-  "issues": [],
-  "risks": [],
-  "lessons": [],
-  "reusable_rules": [],
+  "issues": [
+    "mixed dashboard errors skipped rebuild",
+    "home aliases bypassed root guard",
+    "sibling trash could cross mount boundaries"
+  ],
+  "risks": [
+    "none in committed scope"
+  ],
+  "lessons": [
+    "classify mirror-only errors separately from semantic contract errors",
+    "destructive roots require canonical identity checks"
+  ],
+  "reusable_rules": [
+    "canonicalize configured roots before safety comparison",
+    "keep trash inside its owning Store",
+    "rebuild mixed semantic failures without implicitly syncing drift"
+  ],
   "retired_flags": [],
   "notes": []
 }

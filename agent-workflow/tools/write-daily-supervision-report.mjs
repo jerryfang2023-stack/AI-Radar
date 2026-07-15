@@ -930,6 +930,8 @@ function buildSkillOpsLane() {
     current: summary.current ?? null,
     laneOwners: summary.laneOwners ?? null,
     syncDrift: summary.syncDrift ?? null,
+    dashboardState: summary.dashboardState || "unknown",
+    dashboardErrors: Array.isArray(check?.dashboard?.errors) ? check.dashboard.errors : [],
     evalCoverage: summary.evalCoverage ?? null,
     exampleCoverage: summary.exampleCoverage ?? null,
     memoryRequiredMissing: summary.memoryRequiredMissing ?? null,
@@ -944,8 +946,11 @@ function buildSkillOpsLane() {
 
   if (problems.length) {
     actions.push("repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror");
-    actions.push("run `npm run audit:skills` after the repair");
-    if (summary.syncDrift) actions.push("run `npm run sync:skill-store` after confirming the project copy is the source of truth");
+    if (summary.syncDrift) {
+      actions.push("run `npm run repair:skills` after confirming the project copy is the source of truth");
+    } else {
+      actions.push("run `npm run audit:skills` after the repair");
+    }
   }
 
   return {

@@ -4,11 +4,17 @@ import os from "node:os";
 import path from "node:path";
 import vm from "node:vm";
 import { execFileSync } from "node:child_process";
+import {
+  isSkillStoreEntry,
+  resolveSkillStoreEntry,
+  resolveSkillStoreRoot,
+  resolveSkillStoreTrashRoot,
+} from "./lib/skill-store-paths.mjs";
 
 const root = process.cwd();
 const port = Number(process.env.SKILL_STORE_OPS_PORT || 8787);
-const skillStoreDir = path.resolve(os.homedir(), ".skill-store");
-const trashRoot = path.resolve(os.homedir(), ".skill-store-trash");
+const skillStoreDir = resolveSkillStoreRoot(process.env.GUANLAN_SKILL_STORE, os.homedir());
+const trashRoot = resolveSkillStoreTrashRoot(skillStoreDir);
 const dataFile = path.join(root, "01-SiteV2", "site", "data", "local-skill-store-data.js");
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const usageOverridesPath = path.join(root, "agent-workflow", "skills", "skill-usage-overrides.json");
@@ -258,13 +264,17 @@ async function deleteSkills(request, response) {
       refused.push({ name, reason: "protected skill" });
       continue;
     }
-    const target = path.resolve(skill.localPath || path.join(skillStoreDir, name));
+    const target = resolveSkillStoreEntry(skillStoreDir, name);
     if (!isInside(skillStoreDir, target)) {
       refused.push({ name, reason: "target outside .skill-store" });
       continue;
     }
     if (!fs.existsSync(target)) {
       refused.push({ name, reason: "local skill folder not found" });
+      continue;
+    }
+    if (!isSkillStoreEntry(target)) {
+      refused.push({ name, reason: "local folder is not a skill" });
       continue;
     }
     const destination = uniqueDestination(trashDir, name);

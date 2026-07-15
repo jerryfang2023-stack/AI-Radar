@@ -487,7 +487,8 @@ npm run selfrepair:daily -- --date=<YYYY-MM-DD>
 
 Safe repair means:
 
-- rebuild stale skill registry;
+- rebuild the stale skill registry and Skill Store dashboard, then run the dashboard semantic contract;
+- synchronize the `.skill-store` mirror only when `--allow-skill-store-sync=true` is explicitly supplied and the project copy has been confirmed authoritative;
 - rerun existing data gates when the source data already exists;
 - rerun Business Signals frontstage gate when frontstage data already exists;
 - write `agent-workflow/reports/<date>-daily-self-check.md/json` and `daily-self-check-latest.*`;
@@ -508,7 +509,7 @@ To install a local Windows scheduled task:
 npm run install:self-repair-task -- -At 09:40 -RepairMode safe
 ```
 
-The scheduled task is a monitor-and-repair wrapper, not a production runner. It should run after the 09:27 Business health-dispatch window has had time to start so it can repair missing gates or registry drift, then report larger production failures for Codex action before 10:00.
+The scheduled task is a monitor-and-repair wrapper, not a production runner. It should run after the 09:27 Business health-dispatch window has had time to start so it can repair missing gates or stale generated Skill Store assets, then report mirror drift and larger production failures for Codex action before 10:00. The default scheduled task does not opt into mirror synchronization.
 
 ## No-Hermes Codex Self Repair Handoff
 

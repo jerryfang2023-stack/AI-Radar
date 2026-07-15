@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import crypto from "node:crypto";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { defaultPaths, readSkillStoreVersion } from "./lib/guanlan-skill-ops.mjs";
+import { dashboardContractPaths, evaluateSkillStoreDashboard } from "./assert-skill-store-dashboard.mjs";
+import { defaultPaths, readSkillStoreVersion, ruleDigest } from "./lib/guanlan-skill-ops.mjs";
 
 const root = process.cwd();
 const skillOpsPaths = defaultPaths(root);
@@ -17,8 +17,6 @@ const usageOverridesPath = path.join(projectSkillDir, "skill-usage-overrides.jso
 const cleanupObservationPath = path.join(projectSkillDir, "skill-cleanup-observation.json");
 
 const SKIP_DIRS = new Set([".git", "node_modules", ".venv", "venv", "__pycache__", ".cache", "dist", "build"]);
-const RULE_FILES = new Set(["SKILL.md", "MEMORY.md"]);
-const RULE_DIRS = new Set(["agents", "evals", "examples", "references"]);
 const CLEANUP_UNUSED_DAYS = 30;
 const CLEANUP_POLICY = [
   {
@@ -181,39 +179,6 @@ function scanDirStats(base) {
 
 function hasFileOrDir(base, names) {
   return names.some((name) => exists(path.join(base, name)));
-}
-
-function collectRuleFiles(base) {
-  if (!exists(base)) return [];
-  const files = [];
-  for (const name of fs.readdirSync(base, { withFileTypes: true })) {
-    if (name.isFile() && RULE_FILES.has(name.name)) files.push(name.name);
-    if (name.isDirectory() && RULE_DIRS.has(name.name)) {
-      const dir = path.join(base, name.name);
-      const stack = [dir];
-      while (stack.length) {
-        const current = stack.pop();
-        for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
-          const full = path.join(current, entry.name);
-          if (entry.isDirectory()) stack.push(full);
-          if (entry.isFile()) files.push(path.relative(base, full).replaceAll(path.sep, "/"));
-        }
-      }
-    }
-  }
-  return files.sort();
-}
-
-function ruleDigest(base) {
-  const files = collectRuleFiles(base);
-  const hash = crypto.createHash("sha256");
-  for (const rel of files) {
-    hash.update(rel);
-    hash.update("\0");
-    hash.update(readText(path.join(base, rel)));
-    hash.update("\0");
-  }
-  return { files, digest: files.length ? hash.digest("hex") : "" };
 }
 
 function readActionRecords() {
@@ -465,12 +430,13 @@ function buildSkill(name, registryMap, usageMap, generatedDate, observation) {
   const hasReferences = hasFileOrDir(projectPath, ["references"]) || hasFileOrDir(storePath, ["references"]);
   const usage = usageMap.get(name) || { usage_count: 0, last_used: "" };
   const issues = [];
+  const mirrorExpected = registry?.mirroredInStore !== "no";
 
-  if (registry && !storeExists) issues.push({ key: "not-installed", label: "未安装", severity: "high" });
+  if (registry && mirrorExpected && !storeExists) issues.push({ key: "not-installed", label: "未安装", severity: "high" });
   if (registry && !projectExists) issues.push({ key: "not-mirrored", label: "未镜像", severity: "high" });
-  if (registry && syncState === "drift") issues.push({ key: "sync-drift", label: "同步分叉", severity: "high" });
-  if (current && !hasEvals) issues.push({ key: "missing-evals", label: "缺 eval", severity: "medium" });
-  if (current && !hasExamples) issues.push({ key: "missing-examples", label: "缺 examples", severity: "medium" });
+  if (registry && mirrorExpected && syncState === "drift") issues.push({ key: "sync-drift", label: "同步分叉", severity: "high" });
+  if (current && !hasEvals) issues.push({ key: "missing-evals", label: "缺少 eval", severity: "medium" });
+  if (current && !hasExamples) issues.push({ key: "missing-examples", label: "缺少 examples", severity: "medium" });
   if (current && !frontmatter.version) issues.push({ key: "missing-version", label: "版本未知", severity: "low" });
   if (retiredRisk(name, registry)) issues.push({ key: "retired-risk", label: "历史能力", severity: "medium" });
 
@@ -495,7 +461,7 @@ function buildSkill(name, registryMap, usageMap, generatedDate, observation) {
     version: frontmatter.version || "",
     description: registry?.responsibility || frontmatter.description || "",
     originalDescription: frontmatter.description || "",
-    localPath: storeExists ? storePath : "",
+    localPath: storeExists ? `.skill-store/${name}` : "",
     projectPath: projectExists ? relProjectPath(projectPath) : "",
     hasSkillMd: exists(skillMd),
     hasEvals,
@@ -594,7 +560,7 @@ const payload = {
   meta: {
     generatedAt: formatDateTime(generatedAt),
     generatedDate: formatDate(generatedAt),
-    storeDir,
+    storeDir: ".skill-store",
     projectSkillDir: relProjectPath(projectSkillDir),
     registryPath: relProjectPath(registryPath),
     cleanupObservationPath: relProjectPath(cleanupObservationPath),
@@ -614,5 +580,19 @@ if (existingPayload && JSON.stringify(withoutGenerationStamp(existingPayload)) =
 
 fs.mkdirSync(path.dirname(outFile), { recursive: true });
 const json = JSON.stringify(payload, null, 2).replaceAll("<", "\\u003c");
-fs.writeFileSync(outFile, `window.WaveSightLocalSkillStore = ${json};\n`, "utf8");
-console.log(`Wrote ${path.relative(root, outFile)} (${skills.length} skills)`);
+const candidateFile = `${outFile}.${process.pid}.tmp`;
+fs.writeFileSync(candidateFile, `window.WaveSightLocalSkillStore = ${json};\n`, "utf8");
+try {
+  const contractPaths = { ...dashboardContractPaths([], root), dashboardPath: candidateFile };
+  const contract = evaluateSkillStoreDashboard(contractPaths);
+  if (!contract.ok) {
+    for (const error of contract.errors) console.error(`ERROR ${error}`);
+    process.exitCode = 1;
+  } else {
+    fs.renameSync(candidateFile, outFile);
+    console.log(`Wrote ${path.relative(root, outFile)} (${skills.length} skills)`);
+    console.log(`Skill Store dashboard contract passed: ${contract.summary.skills} skills.`);
+  }
+} finally {
+  if (fs.existsSync(candidateFile)) fs.rmSync(candidateFile);
+}
