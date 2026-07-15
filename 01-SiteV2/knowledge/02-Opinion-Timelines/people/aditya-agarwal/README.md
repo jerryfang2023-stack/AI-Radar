@@ -1,12 +1,12 @@
 ---
 type: opinion_person_timeline
 person_name: "Aditya Agarwal"
-opinion_count: 34
+opinion_count: 36
 latest_date: 2026-07-14
 ---
 
 # Aditya Agarwal 观点时间线
-共 34 条观点，按人物 + 日期文件聚合。
+共 36 条观点，按人物 + 日期文件聚合。
 ## 日期
 
 - [2026-07-14](./2026-07-14.md)

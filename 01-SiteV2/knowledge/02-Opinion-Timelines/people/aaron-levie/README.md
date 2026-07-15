@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Aaron Levie"
-opinion_count: 60
-latest_date: 2026-07-14
+opinion_count: 62
+latest_date: 2026-07-15
 ---
 
 # Aaron Levie 观点时间线
-共 60 条观点，按人物 + 日期文件聚合。
+共 62 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-15](./2026-07-15.md)
 - [2026-07-14](./2026-07-14.md)
 - [2026-07-13](./2026-07-13.md)
 - [2026-07-12](./2026-07-12.md)
