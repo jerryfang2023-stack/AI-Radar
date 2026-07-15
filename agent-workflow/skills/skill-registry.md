@@ -2,7 +2,7 @@
 
 Last updated: 2026-07-15
 
-Skill Store version: v1.3.2 (2026-06-13)
+Skill Store version: v1.4.0 (2026-07-15)
 
 Generated from `SKILL.md` metadata by `npm run build:skill-registry`. Do not edit the table by hand; edit the target skill metadata, evals, examples, or MEMORY instead, then regenerate.
 
@@ -27,6 +27,7 @@ Generated from `SKILL.md` metadata by `npm run build:skill-registry`. Do not edi
 | `guanlan-monthly-report-page-generator` | Generate and maintain monthly report frontstage pages from accepted monthly report Markdown. | Reports Center | current sub-skill | monthly report Markdown, Reports Center page, Guanlan VI rules | monthly report detail page, Reports Center monthly entry, page styles, version metadata | content-source discipline, full-report rendering, Guanlan VI fit, table readability, responsive visual smoke, frontstage regression, skill self-iteration | evals 1; examples 2; memory yes; references yes | Monthly detail pages must show the full report with rich visual reading structure; nonessential data-boundary fields should be compressed into the appendix, hero helper copy should be removed when the title and core statement already explain the page, and all tables need editorial styling rather than raw grid rendering. | yes |
 | `guanlan-typography-qc` | Check WaveSight typography and layout copy issues when page work changes. | Cross-lane UI | supporting skill | frontstage pages | UI QC notes | typography and UI consistency | evals 1; examples 2; memory no; references no | Use only for page or typography work, not data truth. | yes |
 | `guanlan-skill-editor` | Audit, create, update, and clean Guanlan skills. | Skill system | governance | current context, target skills, incidents | skill edits, evals, examples, memory | trigger clarity, stale rule removal, eval coverage, memory hygiene | evals 1; examples 2; memory no; references yes | Recurring failures should become evals or concise memory before long prose. | yes |
+| `guanlan-code-rule-auditor` | Audit code, rules, skills, workflows, gates, and GitHub flow for evidence-backed defects and conflicts. | Code and rule audit | governance | current context, incident evidence, target diff or execution chain | prioritized findings, owning-stage diagnosis, minimal repair and validation plan | source-of-truth alignment, reachability, stage ownership, GitHub necessity, evidence completeness | evals 1; examples 2; memory no; references yes | Audit mechanically first and trace each failure to the earliest owning stage before proposing repairs. | yes |
 
 ## Routing Rules
 

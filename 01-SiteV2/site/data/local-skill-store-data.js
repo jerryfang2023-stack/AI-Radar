@@ -1,7 +1,7 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-07-11 14:26:34",
-    "generatedDate": "2026-07-11",
+    "generatedAt": "2026-07-15 23:55:38",
+    "generatedDate": "2026-07-15",
     "storeDir": "C:\\Users\\86186\\.skill-store",
     "projectSkillDir": "agent-workflow/skills",
     "registryPath": "agent-workflow/skills/skill-registry.md",
@@ -9,10 +9,10 @@ window.WaveSightLocalSkillStore = {
     "version": {
       "schema_version": 1,
       "name": "Guanlan Skill Store",
-      "version": "1.3.2",
-      "release_date": "2026-06-13",
-      "stage": "Cleanup management cache and common-action fix",
-      "scope": "Operations-console Skill Store dashboard with reliable mark-common behavior, cache-busted embedded catalog/cleanup views, clearer catalog metric labels, search placeholder wording, simplified catalog sort/group controls, governed current skills, usage overrides, 30-day cleanup observation, manual add-to-cleanup and mark-common actions, trash staging, permanent trash deletion, local Skill Store ops service, .skill-store sync, and Daily Loop Skill Ops check.",
+      "version": "1.4.0",
+      "release_date": "2026-07-15",
+      "stage": "Add code and rule audit governance lane",
+      "scope": "Operations-console Skill Store dashboard, governed current skills, usage overrides, cleanup lifecycle, local Skill Store sync, Daily Loop Skill Ops checks, and the read-only guanlan-code-rule-auditor for code, rule, workflow, gate, and GitHub ownership conflicts.",
       "upgrade_policy": {
         "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
         "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",
@@ -32,18 +32,18 @@ window.WaveSightLocalSkillStore = {
       }
     ],
     "summary": {
-      "total": 153,
-      "guanlan": 17,
-      "current": 17,
+      "total": 155,
+      "guanlan": 18,
+      "current": 18,
       "laneOwners": 4,
       "needsAction": 0,
       "syncIssues": 0,
-      "dormant": 126,
+      "dormant": 127,
       "retired": 0,
-      "cleanupQueue": 11,
+      "cleanupQueue": 127,
       "cleanupActions": {
-        "keep": 142,
-        "cleanup": 11
+        "keep": 29,
+        "cleanup": 126
       },
       "evalCoverage": 100,
       "exampleCoverage": 100
@@ -236,6 +236,1978 @@ window.WaveSightLocalSkillStore = {
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "usage_count": 0,
       "last_used": ""
+    },
+    {
+      "name": "admapix",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:49",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "article-writer",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:55",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "arxiv-reader",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:55",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "autoresearch",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:56",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "awesome-design-md",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:56",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-article-illustrator",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-comic",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-compress-image",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-cover-image",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-danger-gemini-web",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-danger-x-to-markdown",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-diagram",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-format-markdown",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-image-cards",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-imagine",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-infographic",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-markdown-to-html",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-post-to-wechat",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-post-to-weibo",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:58",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-post-to-x",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:58",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-slide-deck",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:58",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-translate",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:58",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-url-to-markdown",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:58",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "baoyu-youtube-transcript",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:58",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "brand-guidelines",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:59",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "brandkit",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-08 00:50:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "browser-act",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-06-12 18:42:45",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "browser-use",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:33:59",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "brutalist-skill",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-08 00:50:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "canvas-design",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:00",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "caveman",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "citation-manager",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:05",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "content-factory",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:15",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "deep-research",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "diagnose",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "edit-article",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:28:34",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "email-skill",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "financial-analyst-master",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-18 15:53:01",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "find-skills",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:28",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "frontend-design",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-29 22:15:16",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "fullstack-dev",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:30",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "git-guardrails-claude-code",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "github-trending-cn",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:30",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "gpt-tasteskill",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-08 00:50:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "grill-me",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "grill-with-docs",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "growth-engine",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:31",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "guanlan-daily-monitor-qc",
+      "lifecycle": "candidate",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": "",
+      "installedAt": "2026-05-20 10:14:08",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "hardcore-tech-writer",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:35:23",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "humanizer",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:31",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "image-to-code-skill",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-08 00:50:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "imagegen-frontend-mobile",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-08 00:50:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "imagegen-frontend-web",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-08 00:50:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "infographic-maker",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:33",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "interview-prep",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-18 15:52:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "lark-unified",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:33",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "llm-wiki",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:35:31",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "llm-wiki-luotwo",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:35:23",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "llm-wiki-upgrade",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:39:02",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "macro-monitor",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:34",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "market-researcher",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:34",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "marketing-skills",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:34",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "md2wechat",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:35:23",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "migrate-to-shoehorn",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "minimalist-skill",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-08 00:50:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "multi-search-engine",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:38",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "nano-pdf",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:38",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "news-summary",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:38",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "newsroom-style",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-18 15:52:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "notebooklm",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-24 20:26:14",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "notebooklm-studio",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:38",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "obsidian-vault",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:28:34",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "openai-image-gen",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:38",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "openai-whisper",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:39",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "openai-whisper-api",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:38",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "output-skill",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-08 00:50:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "playwright-browser-automation",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:39",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "playwright-scraper-skill",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:39",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "podcast-ops",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:40",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "pptx-generator",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:40",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "prompt-engineering-expert",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:40",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "prototype",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "redesign-skill",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-08 00:50:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "remotion-video-toolkit",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:41",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "sales-pipeline",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:42",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "sales-playbook",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:42",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "scaffold-exercises",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "seo-ops",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:43",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "setup-matt-pocock-skills",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "setup-pre-commit",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "skill-creator",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:44",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "skill-scanner",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:45",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "skill-vetter",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:45",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "skills-security-check",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:45",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "social-auto-upload",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-29 15:40:40",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "soft-skill",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-08 00:50:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "source-verification",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-18 15:52:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "stitch-skill",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-08 00:50:17",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "story-pitch",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-18 15:52:57",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "summarize",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:34:47",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "taste-skill",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-04 17:35:11",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "tdd",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "the-entrepreneurship-handbook",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:35:01",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "to-issues",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "to-prd",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "triage",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "weather",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:35:01",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "web-search-exa",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:35:02",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "wechat-article-search",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:35:02",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "wechat-topic-radar",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-27 19:17:01",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "write-a-skill",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "x-longform-post",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:35:11",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "youtube-transcript",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:35:23",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "yt-competitive-analysis",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-04-25 21:35:12",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
+    },
+    {
+      "name": "zoom-out",
+      "lifecycle": "dormant",
+      "cleanup_score": 80,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": "",
+      "installedAt": "2026-05-12 13:25:48",
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "usage_count": 0,
+      "last_used": ""
     }
   ],
   "skills": [
@@ -303,14 +2275,14 @@ window.WaveSightLocalSkillStore = {
       "responsibility": "Own Business Signals daily supervision and repair: Raw, Pool, unified frontstage Signal Cards, separate AI Hardware lens, V3 release gate cleanup, Reports Center map inputs, and trend-candidate inputs.",
       "upstream": "external source capture, daily persistent assets workflow, Hermes inbox",
       "downstream": "Signal Cards, graph inputs, trend candidates, PR publication",
-      "gates": "monitor QC, post-monitor Raw / Pool gate, six-gate Card entry, Card generation, source-first, frontstage Card contract",
+      "gates": "V3 evidence supply, six-gate Card entry, Card editorial quality, relationship graph, trend decision, source-first, frontstage Card contract",
       "evalCoverage": "evals 1; examples 3; memory yes; references yes",
-      "learning": "Production is a single-attempt four-stage state machine: evidence supply, Card/editorial quality, frontstage contract, and publication. Provider/volume/mix diagnostics never trigger whole-chain recollection, and publication waiting is not a monitor failure.",
+      "learning": "The three public blocks form one daily contract: accepted Cards feed the relationship graph, and the trend stage must persist either a multi-Card candidate or an explicit no-candidate decision. Diagnostic Raw / Pool volume targets do not duplicate the V3 release gate.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "Own Business Signals daily supervision and repair: Raw, Pool, unified frontstage Signal Cards, separate AI Hardware lens, V3 release gate cleanup, Reports Center map inputs, and trend-candidate inputs.",
       "originalDescription": "Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.5 / BSIG-V2.2.0-pipeline-stage-ownership Business Signals lane. Covers daily Raw / Pool audit / unified frontstage Signal Cards / separate AI Hardware lens / Reports Center map inputs / trend-candidate inputs, source-first gates, raw-to-card release behavior, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for First-Line Viewpoints, Community Intelligence, direct deployment, or retired daily observation / brief / trend-report outputs.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-business-signals-monitor",
@@ -329,10 +2301,63 @@ window.WaveSightLocalSkillStore = {
       "installedTime": 1781273176414.72,
       "last_used": "2026-06-27",
       "usage_count": 5,
-      "sizeKB": 52,
+      "sizeKB": 60,
       "fileCount": 8,
-      "modifiedAt": "2026-07-11 14:24:34",
-      "modifiedTime": 1783751074147.9873,
+      "modifiedAt": "2026-07-15 21:06:16",
+      "modifiedTime": 1784120776195.4304,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": [],
+      "cleanup_score": 0,
+      "cleanup_candidate": false,
+      "cleanup_reasons": [],
+      "cleanup_observation_start": "",
+      "cleanup_action": "keep",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "protected current/supporting/governance skill",
+      "replacement_skill": ""
+    },
+    {
+      "name": "guanlan-code-rule-auditor",
+      "category": "Code and rule audit",
+      "isGuanlan": true,
+      "current": true,
+      "role": "governance",
+      "lane": "Code and rule audit",
+      "status": "governance",
+      "responsibility": "Audit code, rules, skills, workflows, gates, and GitHub flow for evidence-backed defects and conflicts.",
+      "upstream": "current context, incident evidence, target diff or execution chain",
+      "downstream": "prioritized findings, owning-stage diagnosis, minimal repair and validation plan",
+      "gates": "source-of-truth alignment, reachability, stage ownership, GitHub necessity, evidence completeness",
+      "evalCoverage": "evals 1; examples 2; memory no; references yes",
+      "learning": "Audit mechanically first and trace each failure to the earliest owning stage before proposing repairs.",
+      "mirroredExpected": "yes",
+      "storeExists": true,
+      "projectExists": true,
+      "syncState": "synced",
+      "version": "1.0.0",
+      "description": "Audit code, rules, skills, workflows, gates, and GitHub flow for evidence-backed defects and conflicts.",
+      "originalDescription": "Use when auditing WaveSight AI / Guanlan code, rules, skills, scripts, GitHub Actions, gates, or data-flow logic for bugs, contradictions, dead paths, V2-to-V3 migration failures, and unnecessary complexity. Covers the Business Signals Card, relationship-graph, and trend-candidate chain. Do not use it to run daily production, edit same-day production data, auto-fix findings, push, or deploy.",
+      "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-code-rule-auditor",
+      "projectPath": "agent-workflow/skills/guanlan-code-rule-auditor",
+      "hasSkillMd": true,
+      "hasEvals": true,
+      "hasExamples": true,
+      "hasMemory": false,
+      "hasReferences": true,
+      "hasScripts": false,
+      "hasConfig": false,
+      "hasDeps": false,
+      "hasTemplates": false,
+      "lifecycle": "governance",
+      "installedAt": "2026-07-15 23:47:38",
+      "installedTime": 1784130458292.357,
+      "last_used": "",
+      "usage_count": 0,
+      "sizeKB": 18,
+      "fileCount": 6,
+      "modifiedAt": "2026-07-15 23:53:59",
+      "modifiedTime": 1784130839335.9248,
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
@@ -411,12 +2436,12 @@ window.WaveSightLocalSkillStore = {
       "downstream": "Raw / Pool outputs and evidence-supply report",
       "gates": "source capture, evidence integrity, minimum evidence supply",
       "evalCoverage": "evals 1; examples 2; memory no; references no",
-      "learning": "Raw, channel and importance targets are diagnostics. Do not recollect all sources or pad Raw after the minimum evidence supply is healthy.",
+      "learning": "After post-fetch hash dedupe, expand adaptively within the same collected source-artifact candidate pool; do not recollect providers or pad Raw with weak evidence.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "description": "Run the narrow Business Signals Raw / Pool source-capture stage once per production attempt.",
       "originalDescription": "Use when running, repairing, or updating the WaveSight AI current SITE-V3.4.5 daily Business Signals source-capture layer. It collects peer source artifacts once, normalizes Raw, preserves Pool audit evidence, writes monitor diagnostics, and hands off to the evidence-supply gate. It does not generate Cards or other columns.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-daily-monitor",
@@ -435,10 +2460,10 @@ window.WaveSightLocalSkillStore = {
       "installedTime": 1779044842299.2117,
       "last_used": "2026-06-29",
       "usage_count": 2,
-      "sizeKB": 7,
+      "sizeKB": 12,
       "fileCount": 5,
-      "modifiedAt": "2026-07-11 14:24:34",
-      "modifiedTime": 1783751074151.9011,
+      "modifiedAt": "2026-07-13 14:50:56",
+      "modifiedTime": 1783925456401.0598,
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
@@ -495,11 +2520,11 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
@@ -545,10 +2570,10 @@ window.WaveSightLocalSkillStore = {
       "installedTime": 1781955342894.1792,
       "last_used": "",
       "usage_count": 0,
-      "sizeKB": 11,
+      "sizeKB": 12,
       "fileCount": 5,
-      "modifiedAt": "2026-07-09 13:33:04",
-      "modifiedTime": 1783575184055.9526,
+      "modifiedAt": "2026-07-13 14:22:03",
+      "modifiedTime": 1783923723358.0632,
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
@@ -839,12 +2864,12 @@ window.WaveSightLocalSkillStore = {
       "downstream": "Signal Cards and card examples",
       "gates": "source-backed details, type contract, field discipline",
       "evalCoverage": "evals 1; examples 2; memory yes; references yes",
-      "learning": "Card frontstage details must come from original source text, not old summaries or backend fallbacks.",
+      "learning": "Card release must test recall as well as precision: confirmed source-backed events override stale Pool route/importance labels, while rumors, viewpoints, disputes, and research-only results need explicit rejection reasons.",
       "mirroredExpected": "yes",
       "storeExists": true,
       "projectExists": true,
       "syncState": "synced",
-      "version": "1.0.1",
+      "version": "1.0.4",
       "description": "Convert eligible Raw / Pool evidence into source-backed Business Signal Cards.",
       "originalDescription": "Use when running, repairing, auditing, or changing WaveSight AI raw-to-card Signal Card and frontstage production. Covers daily Raw/Pool audit targets, cardability judgment, Signal Card generation, unified frontstage Card display, and site/Obsidian handoff rules.",
       "localPath": "C:\\Users\\86186\\.skill-store\\guanlan-raw-pool-card",
@@ -863,10 +2888,10 @@ window.WaveSightLocalSkillStore = {
       "installedTime": 1780827236202.9822,
       "last_used": "",
       "usage_count": 0,
-      "sizeKB": 24,
+      "sizeKB": 40,
       "fileCount": 7,
-      "modifiedAt": "2026-07-11 14:24:34",
-      "modifiedTime": 1783751074161.2231,
+      "modifiedAt": "2026-07-15 20:22:22",
+      "modifiedTime": 1784118142205.5093,
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
@@ -971,8 +2996,8 @@ window.WaveSightLocalSkillStore = {
       "usage_count": 1,
       "sizeKB": 11,
       "fileCount": 5,
-      "modifiedAt": "2026-07-08 13:37:34",
-      "modifiedTime": 1783489054342.1396,
+      "modifiedAt": "2026-07-15 21:07:14",
+      "modifiedTime": 1784120834608.518,
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
@@ -1188,17 +3213,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -1293,8 +3318,8 @@ window.WaveSightLocalSkillStore = {
       "lifecycle": "candidate",
       "installedAt": "2026-05-08 13:28:44",
       "installedTime": 1778218124935.943,
-      "last_used": "2026-07-11",
-      "usage_count": 83,
+      "last_used": "2026-07-15",
+      "usage_count": 91,
       "sizeKB": 21,
       "fileCount": 1,
       "modifiedAt": "2026-05-08 13:28:44",
@@ -1356,17 +3381,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -1413,17 +3438,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -1527,17 +3552,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -1584,17 +3609,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -1641,17 +3666,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -1698,17 +3723,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -1755,17 +3780,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -1812,17 +3837,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -1869,17 +3894,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -1926,17 +3951,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -1983,17 +4008,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2040,17 +4065,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2097,17 +4122,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2211,17 +4236,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2268,17 +4293,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2325,17 +4350,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2382,17 +4407,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2439,17 +4464,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2496,17 +4521,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2553,17 +4578,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2610,17 +4635,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2667,17 +4692,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2781,17 +4806,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2838,17 +4863,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2895,17 +4920,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -2952,17 +4977,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -3009,17 +5034,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -3066,17 +5091,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -3123,17 +5148,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -3180,17 +5205,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -3237,13 +5262,70 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
+      "cleanup_reasons": [
+        "no observed usage",
+        "30 day observation expired"
+      ],
+      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_recommendation_reason": "",
+      "cleanup_action": "cleanup",
+      "cleanup_owner": "Skill Ops",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
+      "replacement_skill": ""
+    },
+    {
+      "name": "code-review",
+      "category": "Other",
+      "isGuanlan": false,
+      "current": false,
+      "role": "",
+      "lane": "",
+      "status": "",
+      "responsibility": "",
+      "upstream": "",
+      "downstream": "",
+      "gates": "",
+      "evalCoverage": "",
+      "learning": "",
+      "mirroredExpected": "",
+      "storeExists": true,
+      "projectExists": false,
+      "syncState": "store-only",
+      "version": "",
+      "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+      "originalDescription": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+      "localPath": "C:\\Users\\86186\\.skill-store\\code-review",
+      "projectPath": "",
+      "hasSkillMd": true,
+      "hasEvals": false,
+      "hasExamples": false,
+      "hasMemory": false,
+      "hasReferences": false,
+      "hasScripts": false,
+      "hasConfig": false,
+      "hasDeps": false,
+      "hasTemplates": false,
+      "lifecycle": "dormant",
+      "installedAt": "2026-07-15 23:44:28",
+      "installedTime": 1784130268779.7715,
+      "last_used": "",
+      "usage_count": 0,
+      "sizeKB": 7,
+      "fileCount": 2,
+      "modifiedAt": "2026-07-15 23:44:28",
+      "modifiedTime": 1784130268670.3643,
+      "issueCount": 0,
+      "issueSeverity": "",
+      "issues": [],
       "cleanup_score": 0,
       "cleanup_candidate": false,
       "cleanup_reasons": [
         "no observed usage",
         "in 30 day observation"
       ],
-      "cleanup_observation_start": "2026-06-13 00:00:00",
+      "cleanup_observation_start": "2026-07-15 23:44:28",
       "cleanup_recommendation_reason": "",
       "cleanup_action": "keep",
       "cleanup_owner": "Skill Ops",
@@ -3294,17 +5376,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -3519,17 +5601,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -3576,17 +5658,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -3633,17 +5715,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -3690,17 +5772,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -3801,17 +5883,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -3858,17 +5940,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -3915,17 +5997,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4026,17 +6108,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4083,17 +6165,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4251,17 +6333,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4308,17 +6390,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4365,17 +6447,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4422,17 +6504,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4479,17 +6561,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4590,17 +6672,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4647,17 +6729,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4758,17 +6840,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4815,17 +6897,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4872,17 +6954,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4929,17 +7011,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -4986,17 +7068,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5043,17 +7125,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5100,17 +7182,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5157,17 +7239,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5214,17 +7296,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5271,17 +7353,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5328,17 +7410,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5385,17 +7467,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5442,17 +7524,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5499,17 +7581,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5556,17 +7638,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5613,17 +7695,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5841,17 +7923,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -5898,17 +7980,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6009,17 +8091,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6066,17 +8148,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6180,17 +8262,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6237,17 +8319,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6348,17 +8430,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6405,17 +8487,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6462,17 +8544,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6519,17 +8601,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6576,17 +8658,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6633,17 +8715,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6690,17 +8772,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6747,17 +8829,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6858,17 +8940,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6915,17 +8997,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -6972,17 +9054,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7029,17 +9111,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7086,17 +9168,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7143,17 +9225,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7200,17 +9282,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7257,17 +9339,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7314,17 +9396,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7371,17 +9453,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7428,17 +9510,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7485,17 +9567,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7542,17 +9624,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7599,17 +9681,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7656,17 +9738,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7713,17 +9795,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7770,17 +9852,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7827,17 +9909,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7884,17 +9966,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7941,17 +10023,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -7998,17 +10080,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8055,17 +10137,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8112,17 +10194,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8169,17 +10251,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8226,17 +10308,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8283,17 +10365,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8340,17 +10422,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8397,17 +10479,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8454,17 +10536,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8511,17 +10593,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8568,17 +10650,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8625,17 +10707,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8682,17 +10764,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8739,17 +10821,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8796,17 +10878,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     },
     {
@@ -8853,17 +10935,17 @@ window.WaveSightLocalSkillStore = {
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],
-      "cleanup_score": 0,
-      "cleanup_candidate": false,
+      "cleanup_score": 80,
+      "cleanup_candidate": true,
       "cleanup_reasons": [
         "no observed usage",
-        "in 30 day observation"
+        "30 day observation expired"
       ],
       "cleanup_observation_start": "2026-06-13 00:00:00",
       "cleanup_recommendation_reason": "",
-      "cleanup_action": "keep",
+      "cleanup_action": "cleanup",
       "cleanup_owner": "Skill Ops",
-      "cleanup_reason": "no cleanup action recommended",
+      "cleanup_reason": "recommended cleanup or no usage after the 30-day observation window",
       "replacement_skill": ""
     }
   ]
