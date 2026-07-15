@@ -57,6 +57,11 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
    - Pass when waiting-only Community Intelligence publication state does not create a Hermes repair inbox item.
    - Fail when "publication PR is open" is counted as a problem or asks Codex to repair local collection.
 
+15. `local_publish_closure_exit_code`
+   - Pass when the local publisher returns success after the same-date PR is merged and Pages publication can proceed, even if local checkout / fast-forward sync is skipped because the workspace is dirty.
+   - Pass when local checkout / pull failures after successful remote publication are recorded as warnings in the local publish report.
+   - Fail when a post-publication local sync warning makes `WaveSight Community Intelligence Daily` return a failed task result after the Community Intelligence PR has already reached `main`.
+
 ## Repair Loop
 
 When a check fails, repair the local collection, archive, gate, or publisher path. Do not treat local collection success as complete publication until the community PR reaches `main` and Pages deploys when required.

@@ -3,6 +3,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 
 const root = process.cwd();
 const args = new Map(
@@ -34,25 +35,35 @@ function rel(file) {
   return path.relative(root, file).replace(/\\/gu, "/");
 }
 
+function commandLabel(command, commandArgs) {
+  return `${command} ${commandArgs.join(" ")}`;
+}
+
+function resultDetail(result) {
+  return [result.stdout, result.stderr, result.error?.message].filter(Boolean).join("\n").trim();
+}
+
 function run(command, commandArgs, options = {}) {
+  const { label = commandLabel(command, commandArgs), ...spawnOptions } = options;
+  const result = spawnSync(command, commandArgs, {
+    cwd: root,
+    encoding: "utf8",
+    windowsHide: true,
+    ...spawnOptions,
+  });
+  if (result.error || result.status !== 0) {
+    const detail = resultDetail(result);
+    throw new Error(`${label} failed${detail ? `:\n${detail}` : ""}`);
+  }
+  return result.stdout.trim();
+}
+
+function tryRun(command, commandArgs, options = {}) {
   const result = spawnSync(command, commandArgs, {
     cwd: root,
     encoding: "utf8",
     windowsHide: true,
     ...options,
-  });
-  if (result.error || result.status !== 0) {
-    const detail = [result.stdout, result.stderr, result.error?.message].filter(Boolean).join("\n").trim();
-    throw new Error(`${command} ${commandArgs.join(" ")} failed${detail ? `:\n${detail}` : ""}`);
-  }
-  return result.stdout.trim();
-}
-
-function tryRun(command, commandArgs) {
-  const result = spawnSync(command, commandArgs, {
-    cwd: root,
-    encoding: "utf8",
-    windowsHide: true,
   });
   return {
     ok: !result.error && result.status === 0,
@@ -64,6 +75,11 @@ function tryRun(command, commandArgs) {
 function writeReport(lines) {
   fs.mkdirSync(reportsDir, { recursive: true });
   fs.writeFileSync(reportFile, `${lines.join("\n")}\n`, "utf8");
+}
+
+function appendReport(lines) {
+  fs.mkdirSync(reportsDir, { recursive: true });
+  fs.appendFileSync(reportFile, `${lines.join("\n")}\n`, "utf8");
 }
 
 function stageIfExists(file) {
@@ -190,6 +206,56 @@ function waitForMerge(prNumber) {
   return null;
 }
 
+export function syncLocalMainAfterPublish(originalBranch, commandRunner = tryRun) {
+  const sync = {
+    attempted: false,
+    ok: true,
+    warning: "",
+    checkoutOk: false,
+    pulled: false,
+    dirtyFiles: 0,
+  };
+
+  if (originalBranch !== "main") {
+    sync.warning = `Skipped local main sync because the run started on ${originalBranch}.`;
+    return sync;
+  }
+
+  sync.attempted = true;
+  const checkout = commandRunner("git", ["checkout", "main"]);
+  sync.checkoutOk = checkout.ok;
+  if (!checkout.ok) {
+    sync.ok = false;
+    sync.warning = `Publication completed, but local checkout back to main failed:\n${resultDetail(checkout)}`;
+    return sync;
+  }
+
+  const dirty = commandRunner("git", ["status", "--porcelain"]);
+  if (!dirty.ok) {
+    sync.ok = false;
+    sync.warning = `Publication completed, but local workspace status could not be checked:\n${resultDetail(dirty)}`;
+    return sync;
+  }
+
+  const dirtyFiles = dirty.stdout.split(/\r?\n/u).filter(Boolean);
+  sync.dirtyFiles = dirtyFiles.length;
+  if (dirtyFiles.length > 0) {
+    sync.ok = false;
+    sync.warning = `Publication completed, but local main pull was skipped because the workspace has ${dirtyFiles.length} dirty file(s).`;
+    return sync;
+  }
+
+  const pull = commandRunner("git", ["pull", "--ff-only", "origin", "main"]);
+  if (!pull.ok) {
+    sync.ok = false;
+    sync.warning = `Publication completed, but local main fast-forward failed:\n${resultDetail(pull)}`;
+    return sync;
+  }
+
+  sync.pulled = true;
+  return sync;
+}
+
 function main() {
   const originalBranch = run("git", ["branch", "--show-current"]) || "main";
   const summary = [
@@ -246,10 +312,21 @@ function main() {
     throw new Error(`Community Intelligence PR #${pr.number} was opened but not merged within ${pollSeconds}s: ${pr.url}`);
   }
 
-  if (merge && originalBranch === "main") {
-    run("git", ["checkout", "main"]);
-    run("git", ["pull", "--ff-only", "origin", "main"]);
-  }
+  const localSync = merge ? syncLocalMainAfterPublish(originalBranch) : { attempted: false, ok: true, warning: "Skipped because merge was disabled." };
+  const warnings = localSync.warning && !localSync.ok ? [localSync.warning] : [];
+
+  appendReport([
+    "",
+    "## Publish Result",
+    "",
+    `- pr: ${pr.url || pr.number || ""}`,
+    `- merge_status: ${mergeStatus}`,
+    `- merged_at: ${merged?.mergedAt || ""}`,
+    `- merge_commit: ${merged?.mergeCommit?.oid || ""}`,
+    `- local_sync_attempted: ${localSync.attempted}`,
+    `- local_sync_ok: ${localSync.ok}`,
+    `- local_sync_warning: ${localSync.warning || ""}`,
+  ]);
 
   console.log(JSON.stringify({
     ok: true,
@@ -259,8 +336,22 @@ function main() {
     mergeStatus,
     mergedAt: merged?.mergedAt || "",
     mergeCommit: merged?.mergeCommit?.oid || "",
+    localSync,
+    warnings,
     report: rel(reportFile),
   }, null, 2));
 }
 
-main();
+const isDirectRun = process.argv[1]
+  && path.resolve(process.argv[1]).toLowerCase() === path.resolve(fileURLToPath(import.meta.url)).toLowerCase();
+if (isDirectRun) {
+  try {
+    main();
+  } catch (error) {
+    console.log(JSON.stringify({
+      ok: false,
+      error: error?.message || String(error),
+    }, null, 2));
+    process.exit(1);
+  }
+}
