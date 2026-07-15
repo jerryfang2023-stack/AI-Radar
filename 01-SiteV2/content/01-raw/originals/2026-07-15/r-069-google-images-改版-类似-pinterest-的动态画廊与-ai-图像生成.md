@@ -1,0 +1,292 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-069
+title: "Google Images 改版：类似 Pinterest 的动态画廊与 AI 图像生成"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://techcrunch.com/2026/07/14/google-images-gets-a-pinterest-like-redesign-focused-on-discovery"
+canonical_url: "https://techcrunch.com/2026/07/14/google-images-gets-a-pinterest-like-redesign-focused-on-discovery"
+source_name: "TechCrunch：AI（RSS）"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: false
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-14T00:00:00.000Z"
+collected_at: 2026-07-15T04:28:38.025Z
+language: mixed
+full_text_hash: 4450662c40fcaafb
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-15/r-069-google-images-改版-类似-pinterest-的动态画廊与-ai-图像生成.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-15/r-069-google-images-改版-类似-pinterest-的动态画廊与-ai-图像生成.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":4053,"paragraph_count":30,"sentence_count":26,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 4053
+fetch_error: ""
+evidence_strength: blocked
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["index_only_or_directory_page"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4450662c40fcaafb","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Google Images 改版：类似 Pinterest 的动态画廊与 AI 图像生成","discovery_summary":"Google Images 迎来重大改版，界面转向类似 Pinterest 的可浏览动态画廊，新增\"For You\"个性化推荐和\"collections\"收藏功能，旨在将图片搜索变为发现与灵感平台。同时，Google 在 AI Overviews 中直接集成图像生成能力，基于最新的 Nano Banana 模型将文本提示词转化为定制图像，帮助用户可视化房间装修等创意。桌面端英文版改版将在未来几周于美国逐步上线，用户需登录 Google 账户体验。AI 图像生成功能也将于未来几周在支持 AI Mode 图像创建的所有地区以英文推出。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/14/google-images-gets-a-pinterest-like-redesign-focused-on-discovery","discovered_at":"2026-07-15T04:20:27.115Z","rank_on_page":205,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: df30c70900d5a412
+content_hash: 4450662c40fcaafb
+semantic_hash: cb2ac3b0ef70d755
+duplicate_of: ""
+first_seen_at: "2026-07-14T00:00:00.000Z"
+last_seen_at: 2026-07-15T04:28:38.025Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "homepage_or_directory_observation"
+guanlan_scores: {"importance_type":"important_market_structure","importance_score":5,"importance_reason":"market-structure commercial event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["TechCrunch","AI（RSS）","OpenAI","Anthropic","Google","Meta","Apple"],"products":["ChatGPT","Claude"],"people":[],"industries":["法律 / 法务"],"roles":[],"workflows":["计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["9","00","14","2026","25","2021","01","4\nB"],"quotes":["collections","collections,"]}
+evidence_seed: {"company_actions":["Image Credits: Google Apps Google Images gets a Pinterest-like redesign focused on discovery Aisha Malik 9:00 AM PDT · July 14, 2026 Google Images, the tech giant’s image search engine, is taking on Pinterest with its latest redesign that turns the site into a browsable, dynamic gallery of images from across the web.","Google is also adding a way for users to create AI images right in Search, as it celebrates 25 years since the debut of Google Images.","Pinterest has long been known for allowing people to browse and save visual inspiration for everything from fashion to home decor."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","疑似官网首页、产品目录或导航页，只能索引留存","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"Google Images 迎来重大改版，界面转向类似 Pinterest 的可浏览动态画廊，新增\"For You\"个性化推荐和\"collections\"收藏功能，旨在将图片搜索变为发现与灵感平台。同时，Google 在 AI Overviews 中直接集成图像生成能力，基于最新的 Nano Banana 模型将文本提示词转化为定制图像，帮助用户可视化房间装修等创意。桌面端英文版改版将在未来几周于美国逐步上线，用户需登录 Google 账户体验。AI 图像生成功能也将于未来几周在支持 AI Mode 图像创建的所有地区以英文推出。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Image Credits: Google Apps Google Images gets a Pinterest-like redesign focused on discovery Aisha Malik 9:00 AM PDT · July 14, 2026 Google Images, the tech giant’s image search engine, is taking on Pinterest with its latest redesign that turns the site into a browsable, dynamic gallery of images from across the web.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Google is also adding a way for users to create AI images right in Search, as it celebrates 25 years since the debut of Google Images.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Pinterest has long been known for allowing people to browse and save visual inspiration for everything from fashion to home decor.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"With this redesign, Google is essentially copying that playbook by turning Google Images into a place for discovery and inspiration, and not just search, which could increase users’ time spent on Google platforms, helping boost its ad revenue.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In addition, Google is likely hoping that when users can’t find the image they’re looking for on Google Images or when they want to visualize something, they’ll stay within its ecosystem to create it rather than turn to third-party services like ChatGPT.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-15T04:28:38.025Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Google Images 改版：类似 Pinterest 的动态画廊与 AI 图像生成
+
+## clean_text
+
+Image Credits: Google
+Apps
+Google Images gets a Pinterest-like redesign focused on discovery
+Aisha Malik
+9:00 AM PDT · July 14, 2026
+Google Images, the tech giant’s image search engine, is taking on Pinterest with its latest redesign that turns the site into a browsable, dynamic gallery of images from across the web. Google is also adding a way for users to create AI images right in Search, as it celebrates 25 years since the debut of Google Images.
+Pinterest has long been known for allowing people to browse and save visual inspiration for everything from fashion to home decor. With this redesign, Google is essentially copying that playbook by turning Google Images into a place for discovery and inspiration, and not just search, which could increase users’ time spent on Google platforms, helping boost its ad revenue.
+In addition, Google is likely hoping that when users can’t find the image they’re looking for on Google Images or when they want to visualize something, they’ll stay within its ecosystem to create it rather than turn to third-party services like ChatGPT.
+Image Credits: Google
+After navigating to the redesigned Google Images, users will see a “For You” gallery of images tailored to their interests and browsing history. Like Pinterest, the gallery is designed for continuous browsing, with Google saying it updates in real time with new images.
+As users browse, they can save ideas to their “collections,” which will appear as tabs above the main gallery of photos. For example, users can create collections for things like vacation outfit ideas, travel inspiration, and ways to design a reading nook, which they can come back to later.
+The redesign is rolling out over the coming weeks on desktop in the U.S. in English. Users need to be signed into a Google Account to try it out, the tech giant says.
+Image Credits: Google
+As for generating images directly in Search, Google says the feature is meant for moments when you have a highly specific idea for an image that doesn’t already exist online. Google is bringing image generation directly into AI Overviews on Search and will use its latest Nano Banana model to transform a text prompt into a custom visual.
+The feature can also help users reimagine spaces and visualize ideas, such as seeing what a room might look like painted red or what a dorm room with a coastal theme could look like.
+Image generation in AI Overviews will start to roll out over the coming weeks in English for all regions that currently support image creation in AI Mode, Google says.
+Topics
+AI , Apps , Google , google images , images , Search
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Aisha Malik
+Consumer News Reporter
+Aisha is a consumer news reporter at TechCrunch. Prior to joining the publication in 2021, she was a telecom reporter at MobileSyrup. Aisha holds an honours bachelor’s degree from University of Toronto and a master’s degree in journalism from Western University.
+You can contact or verify outreach from Aisha by emailing aisha@techcrunch.com or via encrypted message at aisha_malik.01 on Signal.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Satya Nadella has issued a shocking warning to companies using AI
+Julie Bort
+The wildest allegations in Apple’s trade secrets lawsuit against OpenAI
+Sarah Perez
+Anthropic starts localizing Claude pricing for India, its biggest market after the US
+Jagmeet Singh
+Meta removes controversial AI feature on Instagram after backlash
+Lucas Ropek
+Apple sues OpenAI over alleged trade secret theft
+Sarah Perez
+Elon Musk praises Mythos/Fable, promises not to ‘cut off’ Anthropic
+Julie Bort
+Instagram users: Here’s how to stop Meta’s AI from using your photos
+Lauren Forristal
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Google
+Apps
+Google Images gets a Pinterest-like redesign focused on discovery
+Aisha Malik
+9:00 AM PDT · July 14, 2026
+Google Images, the tech giant’s image search engine, is taking on Pinterest with its latest redesign that turns the site into a browsable, dynamic gallery of images from across the web. Google is also adding a way for users to create AI images right in Search, as it celebrates 25 years since the debut of Google Images.
+Pinterest has long been known for allowing people to browse and save visual inspiration for everything from fashion to home decor. With this redesign, Google is essentially copying that playbook by turning Google Images into a place for discovery and inspiration, and not just search, which could increase users’ time spent on Google platforms, helping boost its ad revenue.
+In addition, Google is likely hoping that when users can’t find the image they’re looking for on Google Images or when they want to visualize something, they’ll stay within its ecosystem to create it rather than turn to third-party services like ChatGPT.
+Image Credits: Google
+After navigating to the redesigned Google Images, users will see a “For You” gallery of images tailored to their interests and browsing history. Like Pinterest, the gallery is designed for continuous browsing, with Google saying it updates in real time with new images.
+As users browse, they can save ideas to their “collections,” which will appear as tabs above the main gallery of photos. For example, users can create collections for things like vacation outfit ideas, travel inspiration, and ways to design a reading nook, which they can come back to later.
+The redesign is rolling out over the coming weeks on desktop in the U.S. in English. Users need to be signed into a Google Account to try it out, the tech giant says.
+Image Credits: Google
+As for generating images directly in Search, Google says the feature is meant for moments when you have a highly specific idea for an image that doesn’t already exist online. Google is bringing image generation directly into AI Overviews on Search and will use its latest Nano Banana model to transform a text prompt into a custom visual.
+The feature can also help users reimagine spaces and visualize ideas, such as seeing what a room might look like painted red or what a dorm room with a coastal theme could look like.
+Image generation in AI Overviews will start to roll out over the coming weeks in English for all regions that currently support image creation in AI Mode, Google says.
+Topics
+AI , Apps , Google , google images , images , Search
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Aisha Malik
+Consumer News Reporter
+Aisha is a consumer news reporter at TechCrunch. Prior to joining the publication in 2021, she was a telecom reporter at MobileSyrup. Aisha holds an honours bachelor’s degree from University of Toronto and a master’s degree in journalism from Western University.
+You can contact or verify outreach from Aisha by emailing aisha@techcrunch.com or via encrypted message at aisha_malik.01 on Signal.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Satya Nadella has issued a shocking warning to companies using AI
+Julie Bort
+The wildest allegations in Apple’s trade secrets lawsuit against OpenAI
+Sarah Perez
+Anthropic starts localizing Claude pricing for India, its biggest market after the US
+Jagmeet Singh
+Meta removes controversial AI feature on Instagram after backlash
+Lucas Ropek
+Apple sues OpenAI over alleged trade secret theft
+Sarah Perez
+Elon Musk praises Mythos/Fable, promises not to ‘cut off’ Anthropic
+Julie Bort
+Instagram users: Here’s how to stop Meta’s AI from using your photos
+Lauren Forristal
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":4053,"paragraph_count":30,"sentence_count":26,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   Google Images 迎来重大改版，界面转向类似 Pinterest 的可浏览动态画廊，新增"For You"个性化推荐和"collections"收藏功能，旨在将图片搜索变为发现与灵感平台。同时，Google 在 AI Overviews 中直接集成图像生成能力，基于最新的 Nano Banana 模型将文本提示词转化为定制图像，帮助用户可视化房间装修等创意。桌面端英文版改版将在未来几周于美国逐步上线，用户需登录 Google 账户体验。AI 图像生成功能也将于未来几周在支持 AI Mode 图像创建的所有地区以英文推出。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Image Credits: Google Apps Google Images gets a Pinterest-like redesign focused on discovery Aisha Malik 9:00 AM PDT · July 14, 2026 Google Images, the tech giant’s image search engine, is taking on Pinterest with its latest redesign that turns the site into a browsable, dynamic gallery of images from across the web.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Google is also adding a way for users to create AI images right in Search, as it celebrates 25 years since the debut of Google Images.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Pinterest has long been known for allowing people to browse and save visual inspiration for everything from fashion to home decor.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   With this redesign, Google is essentially copying that playbook by turning Google Images into a place for discovery and inspiration, and not just search, which could increase users’ time spent on Google platforms, helping boost its ad revenue.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   In addition, Google is likely hoping that when users can’t find the image they’re looking for on Google Images or when they want to visualize something, they’ll stay within its ecosystem to create it rather than turn to third-party services like ChatGPT.
+
+## business_elements
+
+- companies: TechCrunch, AI（RSS）, OpenAI, Anthropic, Google, Meta, Apple
+- products: ChatGPT, Claude
+- people: 暂无公开信息
+- industries: 法律 / 法务
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 销售 / 客服
+- numbers: 9, 00, 14, 2026, 25, 2021, 01, 4
+B
+- quotes: collections / collections,
+
+## evidence_seed
+
+- company_actions: Image Credits: Google Apps Google Images gets a Pinterest-like redesign focused on discovery Aisha Malik 9:00 AM PDT · July 14, 2026 Google Images, the tech giant’s image search engine, is taking on Pinterest with its latest redesign that turns the site into a browsable, dynamic gallery of images from across the web. / Google is also adding a way for users to create AI images right in Search, as it celebrates 25 years since the debut of Google Images. / Pinterest has long been known for allowing people to browse and save visual inspiration for everything from fashion to home decor.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_market_structure
+- importance_score: 5
+- importance_reason: market-structure commercial event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 疑似官网首页、产品目录或导航页，只能索引留存
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Google Images 改版：类似 Pinterest 的动态画廊与 AI 图像生成","discovery_summary":"Google Images 迎来重大改版，界面转向类似 Pinterest 的可浏览动态画廊，新增\"For You\"个性化推荐和\"collections\"收藏功能，旨在将图片搜索变为发现与灵感平台。同时，Google 在 AI Overviews 中直接集成图像生成能力，基于最新的 Nano Banana 模型将文本提示词转化为定制图像，帮助用户可视化房间装修等创意。桌面端英文版改版将在未来几周于美国逐步上线，用户需登录 Google 账户体验。AI 图像生成功能也将于未来几周在支持 AI Mode 图像创建的所有地区以英文推出。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/14/google-images-gets-a-pinterest-like-redesign-focused-on-discovery","discovered_at":"2026-07-15T04:20:27.115Z","rank_on_page":205,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Google Images 迎来重大改版，界面转向类似 Pinterest 的可浏览动态画廊，新增"For You"个性化推荐和"collections"收藏功能，旨在将图片搜索变为发现与灵感平台。同时，Google 在 AI Overviews 中直接集成图像生成能力，基于最新的 Nano Banana 模型将文本提示词转化为定制图像，帮助用户可视化房间装修等创意。桌面端英文版改版将在未来几周于美国逐步上线，用户需登录 Google 账户体验。AI 图像生成功能也将于未来几周在支持 AI Mode 图像创建的所有地区以英文推出。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

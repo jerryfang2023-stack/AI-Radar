@@ -1,0 +1,192 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-162
+title: "MarkTechPost 评测四款 AI 编程智能体：Vibe、Claude Code、Cursor 与 Codex"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://www.marktechpost.com/2026/07/14/mistral-vibe-for-code-vs-claude-code-vs-cursor-vs-codex-four-agents-scored-on-one-scaffold-to-pr-task"
+canonical_url: "https://marktechpost.com/2026/07/14/mistral-vibe-for-code-vs-claude-code-vs-cursor-vs-codex-four-agents-scored-on-one-scaffold-to-pr-task"
+source_name: "MarkTechPost（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-14T20:52:41.000Z"
+collected_at: 2026-07-15T04:28:38.313Z
+language: mixed
+full_text_hash: 78b6a80be144ad1d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-15/r-162-marktechpost-评测四款-ai-编程智能体-vibe-claude-code-cursor-与-codex.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-15/r-162-marktechpost-评测四款-ai-编程智能体-vibe-claude-code-cursor-与-codex.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: summary-only-low-readable-body
+extraction_quality: failed
+extraction_method: "none"
+readability_score: 0
+extractor_diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"none"}
+has_full_text: false
+content_length: 136
+fetch_error: ""
+evidence_strength: traceable_summary
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: traceable_summary_or_observation_candidate
+degradation_reasons: ["missing_full_text"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"78b6a80be144ad1d","missing":["missing_full_text"]}
+source_volatility: medium
+community_name: ""
+capture_scope: aihot_visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"MarkTechPost 评测四款 AI 编程智能体：Vibe、Claude Code、Cursor 与 Codex","discovery_summary":"MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。","source_name":"MarkTechPost（RSS）","origin_url":"https://www.marktechpost.com/2026/07/14/mistral-vibe-for-code-vs-claude-code-vs-cursor-vs-codex-four-agents-scored-on-one-scaffold-to-pr-task","discovered_at":"2026-07-15T04:20:27.093Z","rank_on_page":131,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "summary_only"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 91fd6ac56db5782b
+content_hash: 78b6a80be144ad1d
+semantic_hash: 09aefc1f6b37791c
+duplicate_of: ""
+first_seen_at: "2026-07-14T20:52:41.000Z"
+last_seen_at: 2026-07-15T04:28:38.313Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":4,"importance_reason":"technical trend or capability shift; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":2,"case_richness":2,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["MarkTechPost（RSS）","Cursor","Mistral"],"products":["Claude","Cursor","Codex"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":[],"affected_departments":[],"numbers":[],"quotes":[]}
+evidence_seed: {"company_actions":["MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。","MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。","Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有成本、收入、采用率或市场规模数字","没有可用全文快照"]
+key_excerpts: [{"type":"company_action","text":"MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-15T04:28:38.313Z
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# MarkTechPost 评测四款 AI 编程智能体：Vibe、Claude Code、Cursor 与 Codex
+
+## clean_text
+
+MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。
+
+## full_text
+
+MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。
+
+## extraction_diagnostics
+
+- extraction_method: none
+- readability_score: 0
+- fetch_status: summary-only-low-readable-body
+- extraction_quality: failed
+- diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"none"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。
+
+## business_elements
+
+- companies: MarkTechPost（RSS）, Cursor, Mistral
+- products: Claude, Cursor, Codex
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 暂无公开信息
+- affected_departments: 暂无公开信息
+- numbers: 暂无公开信息
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。 / MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。 / Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 4
+- importance_reason: technical trend or capability shift; rubric=4 concrete important change
+- supporting_signals:
+- novelty: 3
+- evidence_strength: 2
+- case_richness: 2
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有成本、收入、采用率或市场规模数字
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: aihot_visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- discovery_record: {"discovery_title":"MarkTechPost 评测四款 AI 编程智能体：Vibe、Claude Code、Cursor 与 Codex","discovery_summary":"MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。","source_name":"MarkTechPost（RSS）","origin_url":"https://www.marktechpost.com/2026/07/14/mistral-vibe-for-code-vs-claude-code-vs-cursor-vs-codex-four-agents-scored-on-one-scaffold-to-pr-task","discovered_at":"2026-07-15T04:20:27.093Z","rank_on_page":131,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+MarkTechPost 对四款 AI 编程智能体进行对比评测，聚焦 Scaffold-to-PR 任务。Mistral Vibe for Code、Claude Code、Cursor 和 Codex 在成本、开源权重、自托管及异步智能体接口上各有优劣，未决出单一胜者。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

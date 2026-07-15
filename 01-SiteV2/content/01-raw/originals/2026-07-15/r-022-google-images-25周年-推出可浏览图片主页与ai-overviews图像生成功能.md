@@ -1,0 +1,398 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-022
+title: "Google Images 25周年：推出可浏览图片主页与AI Overviews图像生成功能"
+title_zh: "Google Images 25周年：推出可浏览图片主页与AI Overviews图像生成功能"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary"
+canonical_url: "https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary"
+source_name: "Google Blog：AI（RSS）"
+source_type: product
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-14T00:00:00.000Z"
+collected_at: 2026-07-15T04:28:37.664Z
+language: mixed
+full_text_hash: 6f300c60a01c5fe0
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-15/r-022-google-images-25周年-推出可浏览图片主页与ai-overviews图像生成功能.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-15/r-022-google-images-25周年-推出可浏览图片主页与ai-overviews图像生成功能.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 85
+extractor_diagnostics: {"readability_score":85,"text_length":7632,"paragraph_count":46,"sentence_count":54,"boilerplate_hits":4,"symbol_ratio":0.0005,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 7632
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6f300c60a01c5fe0","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Google Images 25周年：推出可浏览图片主页与AI Overviews图像生成功能","discovery_summary":"Google Images迎来25周年，推出两项新功能：一是全新的可浏览图片主页，展示来自网络的动态沉浸式图片画廊，实时更新并根据用户兴趣智能定制，支持收藏夹标签页，未来几周在美国桌面端英文上线；二是将图像生成直接引入AI Overviews，基于最新的Nano Banana模型，将文本提示词转化为高质量定制图像，未来几周在英文区域逐步推出。回顾了2001年上线、2009年相似图片、2011年以图搜图、2018年Google Lens、2022年多模态搜索、2024年Circle to Search、2025年Lens+AI Mode及Search Live、2026年Circle to Search多对象识别等里程碑。","source_name":"Google Blog：AI（RSS）","origin_url":"https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary","discovered_at":"2026-07-15T04:20:27.115Z","rank_on_page":204,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: bbfc4b37a73bf479
+content_hash: 6f300c60a01c5fe0
+semantic_hash: 15a9a712220c6797
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-14T00:00:00.000Z"
+last_seen_at: 2026-07-15T04:28:37.664Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Google Blog","AI（RSS）","Google"],"products":["Agents","Gemini","MCP"],"people":[],"industries":["金融 / 保险","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["25","2001","2009","2011","2018","2022","2024","2025"],"quotes":["find similar images,","what inspired this design.","coffee table"," visual image fan-out ","barrel jeans that aren't too baggy"]}
+evidence_seed: {"company_actions":["Google Images迎来25周年，推出两项新功能：一是全新的可浏览图片主页，展示来自网络的动态沉浸式图片画廊，实时更新并根据用户兴趣智能定制，支持收藏夹标签页，未来几周在美国桌面端英文上线；二是将图像生成直接引入AI Overviews，基于最新的Nano Banana模型，将文本提示词转化为高质量定制图像，未来几周在英文区域逐步推出。回顾了2001年上线、2009年相似图片、2011年以图搜图、2018年Google Lens、2022年多模态搜索、2024年Circle to Search、2025年Lens+AI Mode及Search Live、2026年Circle to Search多对象识别等里程碑。","Celebrating 25 years of visual search innovation Jul 14, 2026 Share x.","com Facebook LinkedIn Mail Copy link We're celebrating Google Images turning 25 with a look back at some major milestones — and introducing new ways to explore and create visual content."],"case_details":[],"workflow_changes":["com Facebook LinkedIn Mail Copy link Your browser does not support the audio element."],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"product_update","text":"Google Images迎来25周年，推出两项新功能：一是全新的可浏览图片主页，展示来自网络的动态沉浸式图片画廊，实时更新并根据用户兴趣智能定制，支持收藏夹标签页，未来几周在美国桌面端英文上线；二是将图像生成直接引入AI Overviews，基于最新的Nano Banana模型，将文本提示词转化为高质量定制图像，未来几周在英文区域逐步推出。回顾了2001年上线、2009年相似图片、2011年以图搜图、2018年Google Lens、2022年多模态搜索、2024年Circle to Search、2025年Lens+AI Mode及Search Live、2026年Circle to Search多对象识别等里程碑。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Celebrating 25 years of visual search innovation Jul 14, 2026 Share x.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com Facebook LinkedIn Mail Copy link We're celebrating Google Images turning 25 with a look back at some major milestones — and introducing new ways to explore and create visual content.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Brad Kellett Senior Engineering Director, Search Share x.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"com Facebook LinkedIn Mail Copy link Your browser does not support the audio element.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen to article This content is generated by Google AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-15T04:28:37.664Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Google Images 25周年：推出可浏览图片主页与AI Overviews图像生成功能
+
+## clean_text
+
+Celebrating 25 years of visual search innovation
+Jul 14, 2026
+Share
+x.com
+Facebook
+LinkedIn
+Mail
+Copy link
+We're celebrating Google Images turning 25 with a look back at some major milestones — and introducing new ways to explore and create visual content.
+Brad Kellett
+Senior Engineering Director, Search
+Share
+x.com
+Facebook
+LinkedIn
+Mail
+Copy link
+Your browser does not support the audio element.
+Listen to article
+This content is generated by Google AI. Generative AI is experimental
+[[duration]] minutes
+Voice
+Speed
+Voice
+Speed
+0.75X
+1X
+1.5X
+2X
+This week marks 25 years since we launched Google Images , beginning the evolution of Search from a text-based experience to one that allows you to visually explore the world. To celebrate this milestone, we’re introducing two new ways to help you explore and create visual content — plus a look back at our major innovations in visual search.
+Explore images in a whole new way.
+Today, we're introducing a brand new browseable home for Google Images , featuring a dynamic, immersive gallery of images from across the web — updated in real time and intelligently tailored to your unique interests. As you browse and save ideas to your collections , they’ll appear as tabs above the main gallery, making it easy to jump back in and continue exploring based on what inspires you. This will roll out over the coming weeks on desktop in the U.S. in English. Sign in to your Google Account to try it out.
+Create new images right in Search.
+Sometimes, the perfect image is out there on the web, waiting to be found. But other times you might have a highly specific vision where an image doesn’t yet exist. To help bring those unique ideas to life, we’re bringing image generation directly into AI Overviews in Search. Using our latest Nano Banana model , this update transforms a simple text prompt into a high-quality, custom visual made completely from scratch, seamlessly bridging the gap between imagination and reality. Image generation in AI Overviews will start to roll out over the coming weeks in English, for all regions that currently support image creation in AI Mode .
+Both of these updates are built on 25 years of innovation to make the world’s visual information instantly accessible and useful. To see how we got here, let’s take a look back at some of the major launches that transformed how we search with — and for — images.
+2001: Google Images
+When Jennifer Lopez’s iconic green Versace dress broke the internet in 2000, we realized that the standard search page at the time — a list of blue text links — simply wasn’t enough. People didn’t just want to read about the dress — they wanted to see it. So in July 2001, we launched Google Images, making it possible for the first time to search and instantly explore visual content from across the web.
+2009: Similar Images
+The Similar Images feature made it possible to find pictures without relying on text alone. If you searched for “bow,” you might see images of hair bows and bows and arrows. By clicking the one you had in mind and tapping “find similar images,” you could see more of what you wanted without typing a whole new query.
+2011: Search by Image
+We launched Search by Image to change how you navigate the web — moving beyond text to let the image do the work for you. By simply uploading an image or pasting its URL directly into the search bar, visuals became search terms. This allowed you to quickly identify the original source, track down where the photo appeared across the web or discover visually similar content.
+2018: Google Lens in Search
+Google Lens makes your everyday life searchable, letting you use your smartphone camera to ask about the world around you. With Lens, you can identify objects, translate text and pull up product links in real time without typing a query into the search box.
+2022: Multisearch in Lens
+Multisearch marked a significant step into the era of multimodal search. Now, you can search with text and images at the same time, like snapping a photo of a unique landmark and adding “what inspired this design.” Or taking a picture of a sleek dining table you saw on social and typing “coffee table” to find a similar piece for your own home.
+2024: Circle to Search
+To help you search anything on your Android phone screen, we built Circle to Search . With a simple gesture — like circling, highlighting, scribbling or tapping — you can select what you’re curious about on your phone screen and get more information right in the moment, without switching apps. Circle to Search is available on more than 580 million Android devices around the world.
+2025: Lens + AI Mode
+Last year, we brought together the multimodal power of Lens with AI Mode in Search so you can ask even more nuanced questions that require deeper reasoning. When you upload or snap a photo, AI Mode can process the entire scene. Using a " visual image fan-out " technique, it breaks a single image search into dozens of sub-queries to understand the full visual context and deliver relevant results.
+2025: Search Live
+Building on our advanced multimodal capabilities, Search Live lets you share your phone’s live camera feed while having an interactive voice conversation in AI Mode — using video input to capture motion and the full context of your surroundings. It’s like having a video call with Search — great for everything from help in the kitchen to troubleshooting tricky equipment.
+2025: Visual Results in AI Mode
+To make visual exploration feel more natural, we introduced an entirely new way to explore, imagine and shop using AI Mode in Search. You can describe exactly what you have in mind in a conversational way — like asking for "barrel jeans that aren't too baggy" — to instantly pull up a grid of visual inspiration and shoppable products.
+2026: Circle to Search Multi-Object Recognition
+Circle to Search now lets you explore multiple objects within a single image all at once, using the visual image fan-out technique. You can instantly deconstruct and shop for an entire outfit or search multiple items in one scene simultaneously to learn about what you see.
+2026: Intelligent Search Box
+With the new intelligent search box , you can now ask detailed questions about images right in Search and get a helpful AI Mode response. Just tap the plus icon to upload images — even multiple at a time — and ask whatever’s on your mind.
+Over the last 25 years, Search has grown from helping you find a specific photo on the web to helping you search the world, exactly as you see — or imagine — it. We’ve come a long way and we’re excited to continue pushing the boundaries of what’s possible in visual search.
+Done. Just one step more.
+Check your inbox to confirm your subscription.
+You are already subscribed to our newsletter.
+You can also subscribe with a
+different email address
+POSTED IN:
+Related stories
+Developer tools
+Expanding Managed Agents in Gemini API: background tasks, remote MCP and more
+By
+Philipp Schmid
+Mariano Cocirio
+Jul 07, 2026
+AI
+The latest AI news we announced in June 2026
+By
+Keyword Team
+Jul 01, 2026
+Learning & Education
+New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.
+Jul 01, 2026
+UK
+Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers
+By
+Kate Alessi
+Jun 30, 2026
+AI
+Ask an AI expert: What exactly is the full stack?
+By
+Molly McHugh-Johnson
+Jun 29, 2026
+Search
+Our latest Google Finance upgrades, including a new app
+By
+Barine Tee
+Jun 25, 2026
+Jump to position 1
+Jump to position 2
+Jump to position 3
+Jump to position 4
+Jump to position 5
+Jump to position 6
+
+## full_text
+
+Celebrating 25 years of visual search innovation
+Jul 14, 2026
+Share
+x.com
+Facebook
+LinkedIn
+Mail
+Copy link
+We're celebrating Google Images turning 25 with a look back at some major milestones — and introducing new ways to explore and create visual content.
+Brad Kellett
+Senior Engineering Director, Search
+Share
+x.com
+Facebook
+LinkedIn
+Mail
+Copy link
+Your browser does not support the audio element.
+Listen to article
+This content is generated by Google AI. Generative AI is experimental
+[[duration]] minutes
+Voice
+Speed
+Voice
+Speed
+0.75X
+1X
+1.5X
+2X
+This week marks 25 years since we launched Google Images , beginning the evolution of Search from a text-based experience to one that allows you to visually explore the world. To celebrate this milestone, we’re introducing two new ways to help you explore and create visual content — plus a look back at our major innovations in visual search.
+Explore images in a whole new way.
+Today, we're introducing a brand new browseable home for Google Images , featuring a dynamic, immersive gallery of images from across the web — updated in real time and intelligently tailored to your unique interests. As you browse and save ideas to your collections , they’ll appear as tabs above the main gallery, making it easy to jump back in and continue exploring based on what inspires you. This will roll out over the coming weeks on desktop in the U.S. in English. Sign in to your Google Account to try it out.
+Create new images right in Search.
+Sometimes, the perfect image is out there on the web, waiting to be found. But other times you might have a highly specific vision where an image doesn’t yet exist. To help bring those unique ideas to life, we’re bringing image generation directly into AI Overviews in Search. Using our latest Nano Banana model , this update transforms a simple text prompt into a high-quality, custom visual made completely from scratch, seamlessly bridging the gap between imagination and reality. Image generation in AI Overviews will start to roll out over the coming weeks in English, for all regions that currently support image creation in AI Mode .
+Both of these updates are built on 25 years of innovation to make the world’s visual information instantly accessible and useful. To see how we got here, let’s take a look back at some of the major launches that transformed how we search with — and for — images.
+2001: Google Images
+When Jennifer Lopez’s iconic green Versace dress broke the internet in 2000, we realized that the standard search page at the time — a list of blue text links — simply wasn’t enough. People didn’t just want to read about the dress — they wanted to see it. So in July 2001, we launched Google Images, making it possible for the first time to search and instantly explore visual content from across the web.
+2009: Similar Images
+The Similar Images feature made it possible to find pictures without relying on text alone. If you searched for “bow,” you might see images of hair bows and bows and arrows. By clicking the one you had in mind and tapping “find similar images,” you could see more of what you wanted without typing a whole new query.
+2011: Search by Image
+We launched Search by Image to change how you navigate the web — moving beyond text to let the image do the work for you. By simply uploading an image or pasting its URL directly into the search bar, visuals became search terms. This allowed you to quickly identify the original source, track down where the photo appeared across the web or discover visually similar content.
+2018: Google Lens in Search
+Google Lens makes your everyday life searchable, letting you use your smartphone camera to ask about the world around you. With Lens, you can identify objects, translate text and pull up product links in real time without typing a query into the search box.
+2022: Multisearch in Lens
+Multisearch marked a significant step into the era of multimodal search. Now, you can search with text and images at the same time, like snapping a photo of a unique landmark and adding “what inspired this design.” Or taking a picture of a sleek dining table you saw on social and typing “coffee table” to find a similar piece for your own home.
+2024: Circle to Search
+To help you search anything on your Android phone screen, we built Circle to Search . With a simple gesture — like circling, highlighting, scribbling or tapping — you can select what you’re curious about on your phone screen and get more information right in the moment, without switching apps. Circle to Search is available on more than 580 million Android devices around the world.
+2025: Lens + AI Mode
+Last year, we brought together the multimodal power of Lens with AI Mode in Search so you can ask even more nuanced questions that require deeper reasoning. When you upload or snap a photo, AI Mode can process the entire scene. Using a " visual image fan-out " technique, it breaks a single image search into dozens of sub-queries to understand the full visual context and deliver relevant results.
+2025: Search Live
+Building on our advanced multimodal capabilities, Search Live lets you share your phone’s live camera feed while having an interactive voice conversation in AI Mode — using video input to capture motion and the full context of your surroundings. It’s like having a video call with Search — great for everything from help in the kitchen to troubleshooting tricky equipment.
+2025: Visual Results in AI Mode
+To make visual exploration feel more natural, we introduced an entirely new way to explore, imagine and shop using AI Mode in Search. You can describe exactly what you have in mind in a conversational way — like asking for "barrel jeans that aren't too baggy" — to instantly pull up a grid of visual inspiration and shoppable products.
+2026: Circle to Search Multi-Object Recognition
+Circle to Search now lets you explore multiple objects within a single image all at once, using the visual image fan-out technique. You can instantly deconstruct and shop for an entire outfit or search multiple items in one scene simultaneously to learn about what you see.
+2026: Intelligent Search Box
+With the new intelligent search box , you can now ask detailed questions about images right in Search and get a helpful AI Mode response. Just tap the plus icon to upload images — even multiple at a time — and ask whatever’s on your mind.
+Over the last 25 years, Search has grown from helping you find a specific photo on the web to helping you search the world, exactly as you see — or imagine — it. We’ve come a long way and we’re excited to continue pushing the boundaries of what’s possible in visual search.
+Done. Just one step more.
+Check your inbox to confirm your subscription.
+You are already subscribed to our newsletter.
+You can also subscribe with a
+different email address
+POSTED IN:
+Related stories
+Developer tools
+Expanding Managed Agents in Gemini API: background tasks, remote MCP and more
+By
+Philipp Schmid
+Mariano Cocirio
+Jul 07, 2026
+AI
+The latest AI news we announced in June 2026
+By
+Keyword Team
+Jul 01, 2026
+Learning & Education
+New York City educators and industry leaders gathered at Google’s offices to shape the future of AI in classrooms.
+Jul 01, 2026
+UK
+Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers
+By
+Kate Alessi
+Jun 30, 2026
+AI
+Ask an AI expert: What exactly is the full stack?
+By
+Molly McHugh-Johnson
+Jun 29, 2026
+Search
+Our latest Google Finance upgrades, including a new app
+By
+Barine Tee
+Jun 25, 2026
+Jump to position 1
+Jump to position 2
+Jump to position 3
+Jump to position 4
+Jump to position 5
+Jump to position 6
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 85
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":85,"text_length":7632,"paragraph_count":46,"sentence_count":54,"boilerplate_hits":4,"symbol_ratio":0.0005,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=high
+   Google Images迎来25周年，推出两项新功能：一是全新的可浏览图片主页，展示来自网络的动态沉浸式图片画廊，实时更新并根据用户兴趣智能定制，支持收藏夹标签页，未来几周在美国桌面端英文上线；二是将图像生成直接引入AI Overviews，基于最新的Nano Banana模型，将文本提示词转化为高质量定制图像，未来几周在英文区域逐步推出。回顾了2001年上线、2009年相似图片、2011年以图搜图、2018年Google Lens、2022年多模态搜索、2024年Circle to Search、2025年Lens+AI Mode及Search Live、2026年Circle to Search多对象识别等里程碑。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Celebrating 25 years of visual search innovation Jul 14, 2026 Share x.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   com Facebook LinkedIn Mail Copy link We're celebrating Google Images turning 25 with a look back at some major milestones — and introducing new ways to explore and create visual content.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Brad Kellett Senior Engineering Director, Search Share x.
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   com Facebook LinkedIn Mail Copy link Your browser does not support the audio element.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Listen to article This content is generated by Google AI.
+
+## business_elements
+
+- companies: Google Blog, AI（RSS）, Google
+- products: Agents, Gemini, MCP
+- people: 暂无公开信息
+- industries: 金融 / 保险, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 25, 2001, 2009, 2011, 2018, 2022, 2024, 2025
+- quotes: find similar images, / what inspired this design. / coffee table /  visual image fan-out  / barrel jeans that aren't too baggy
+
+## evidence_seed
+
+- company_actions: Google Images迎来25周年，推出两项新功能：一是全新的可浏览图片主页，展示来自网络的动态沉浸式图片画廊，实时更新并根据用户兴趣智能定制，支持收藏夹标签页，未来几周在美国桌面端英文上线；二是将图像生成直接引入AI Overviews，基于最新的Nano Banana模型，将文本提示词转化为高质量定制图像，未来几周在英文区域逐步推出。回顾了2001年上线、2009年相似图片、2011年以图搜图、2018年Google Lens、2022年多模态搜索、2024年Circle to Search、2025年Lens+AI Mode及Search Live、2026年Circle to Search多对象识别等里程碑。 / Celebrating 25 years of visual search innovation Jul 14, 2026 Share x. / com Facebook LinkedIn Mail Copy link We're celebrating Google Images turning 25 with a look back at some major milestones — and introducing new ways to explore and create visual content.
+- case_details: 暂无公开信息
+- workflow_changes: com Facebook LinkedIn Mail Copy link Your browser does not support the audio element.
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Google Images 25周年：推出可浏览图片主页与AI Overviews图像生成功能","discovery_summary":"Google Images迎来25周年，推出两项新功能：一是全新的可浏览图片主页，展示来自网络的动态沉浸式图片画廊，实时更新并根据用户兴趣智能定制，支持收藏夹标签页，未来几周在美国桌面端英文上线；二是将图像生成直接引入AI Overviews，基于最新的Nano Banana模型，将文本提示词转化为高质量定制图像，未来几周在英文区域逐步推出。回顾了2001年上线、2009年相似图片、2011年以图搜图、2018年Google Lens、2022年多模态搜索、2024年Circle to Search、2025年Lens+AI Mode及Search Live、2026年Circle to Search多对象识别等里程碑。","source_name":"Google Blog：AI（RSS）","origin_url":"https://blog.google/products-and-platforms/products/search/google-images-25th-anniversary","discovered_at":"2026-07-15T04:20:27.115Z","rank_on_page":204,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Google Images迎来25周年，推出两项新功能：一是全新的可浏览图片主页，展示来自网络的动态沉浸式图片画廊，实时更新并根据用户兴趣智能定制，支持收藏夹标签页，未来几周在美国桌面端英文上线；二是将图像生成直接引入AI Overviews，基于最新的Nano Banana模型，将文本提示词转化为高质量定制图像，未来几周在英文区域逐步推出。回顾了2001年上线、2009年相似图片、2011年以图搜图、2018年Google Lens、2022年多模态搜索、2024年Circle to Search、2025年Lens+AI Mode及Search Live、2026年Circle to Search多对象识别等里程碑。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,233 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-102
+title: "New York becomes the first state to enact a data center moratorium"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium"
+canonical_url: "https://theverge.com/policy/965110/new-york-ai-data-center-moratorium"
+source_name: "The Verge AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-14T09:00:00.000Z"
+collected_at: 2026-07-15T04:28:38.138Z
+language: mixed
+full_text_hash: 2633dae16a180ee0
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-15/r-102-new-york-becomes-the-first-state-to-enact-a-data-center-moratorium.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-15/r-102-new-york-becomes-the-first-state-to-enact-a-data-center-moratorium.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":8155,"paragraph_count":18,"sentence_count":48,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 8155
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2633dae16a180ee0","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 938129137bab648b
+content_hash: 2633dae16a180ee0
+semantic_hash: cc8d986609768b4b
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-14T09:00:00.000Z"
+last_seen_at: 2026-07-15T04:28:38.138Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":4,"importance_reason":"technical trend or capability shift; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context"],"novelty":2,"evidence_strength":4,"case_richness":3,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["The Verge AI"],"products":[],"people":[],"industries":["法律 / 法务"],"roles":["销售 / 客服"],"workflows":["合同审阅 / 法律研究"],"business_actions":["融资 / 投资"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["8230","50 m","20 m","14"],"quotes":["By giving our state the time to plan, we can ensure that development and innovation do not come at the expense of all of us,","our bill certainly goes further.","By giving our state the time to plan, we can ensure that development and innovation do not come at the expense of all of us,","our bill certainly goes further."]}
+evidence_seed: {"company_actions":["New hyperscale data centers can't set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation's first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature. The order blocks new environmental permits for data [&#8230;]","New York becomes the first state to enact a data center moratorium New York Governor Kathy Hochul signed an executive order enacting a one-year moratorium on new data center developments over 50 megawatts.","New hyperscale data centers can’t set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation’s first statewide moratorium."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":["The order blocks new environmental permits for data centers over 50 megawatts, which the governor’s office says will give the state time to come up with the regulations needed to protect residents from rising energy prices and environmental impact."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"New hyperscale data centers can't set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation's first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature. The order blocks new environmental permits for data [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"New York becomes the first state to enact a data center moratorium New York Governor Kathy Hochul signed an executive order enacting a one-year moratorium on new data center developments over 50 megawatts.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"New hyperscale data centers can’t set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation’s first statewide moratorium.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"But a bill passed by the state legislature that could restrict even more developments still awaits her signature.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"The order blocks new environmental permits for data centers over 50 megawatts, which the governor’s office says will give the state time to come up with the regulations needed to protect residents from rising energy prices and environmental impact.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"That’s higher than the 20 megawatt threshold approved by state lawmakers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-15T04:28:38.138Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# New York becomes the first state to enact a data center moratorium
+
+## clean_text
+
+New York becomes the first state to enact a data center moratorium
+New York Governor Kathy Hochul signed an executive order enacting a one-year moratorium on new data center developments over 50 megawatts.
+New hyperscale data centers can’t set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation’s first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature.
+The order blocks new environmental permits for data centers over 50 megawatts, which the governor’s office says will give the state time to come up with the regulations needed to protect residents from rising energy prices and environmental impact. That’s higher than the 20 megawatt threshold approved by state lawmakers. Hochul’s office could not immediately identify the number of proposals that would be impacted by the order, but says the threshold is meant to prevent disruption to smaller data centers used by institutions like hospitals. Hochul has not yet said whether she will sign the moratorium passed through the legislature, but the executive action allows her to enact a first-in-the-nation pause while reviewing the bill.
+“As data center development threatens to hike up utility bills, deplete our natural resources, and create uncertainty for New Yorkers, it’s my responsibility to take action and lead,” Hochul said in a statement. The moratorium could last up to a year as the Department of Public Service (DPS) comes up with standards to assess the expected environmental impacts of data center construction and operation, including on water use and air quality. Hochul is also asking DPS to consider creating a way for data centers to invest in the state’s energy infrastructure, and charges the state’s development arm with coming up with a framework to help local communities negotiate benefits when data centers try to come to town.
+New York State Sen. Kristen Gonzalez, who led the state legislature’s version of a moratorium, praised Hochul for the executive order. “By giving our state the time to plan, we can ensure that development and innovation do not come at the expense of all of us,” she said in a statement. Gonzalez told The Verge in an interview that her office worked with Hochul’s to “align” on a moratorium that would quickly take effect. And while she says the order accomplishes some of what the legislatures’ moratorium would require, “our bill certainly goes further.” Beyond the lower threshold for classifying hyperscale data centers, the bill would implement standards for renewable energy and labor used in such projects, among other requirements. Gonzalez also notes that even under the broader definition of a hyperscale data center in the bill, there would be an exception for facilities controlled by a public research institution.
+She still plans to engage with Hochul’s office about signing the legislation, and says she hopes that additional environmental and labor standards like those included in the bill become law. But she added that the executive order was a positive example of government working together. “I think government works best when our legislature is able to work effectively with our executive branch and across levels of government. And this executive order is a good example of that work happening and what is possible when we come together to serve and protect New Yorkers.”
+Maine nearly became the first state to pass a data center moratorium before its governor vetoed the bill in April. Communities around the country have been grappling with a wave of infrastructure build-out they fear could impact energy prices and the environment as AI accelerates demand. Government subsidies for data center development has become one of the issues animating many residents, and Hochul also said Tuesday she plans to push the legislature to roll back sales tax exemptions for large data centers in the state when they’re back in session next year.
+Update, July 14th: Added comments from New York State Sen. Kristen Gonzalez.
+New York becomes the first state to enact a data center moratorium
+New York Governor Kathy Hochul signed an executive order enacting a one-year moratorium on new data center developments over 50 megawatts.
+New hyperscale data centers can’t set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation’s first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature.
+The order blocks new environmental permits for data centers over 50 megawatts, which the governor’s office says will give the state time to come up with the regulations needed to protect residents from rising energy prices and environmental impact. That’s higher than the 20 megawatt threshold approved by state lawmakers. Hochul’s office could not immediately identify the number of proposals that would be impacted by the order, but says the threshold is meant to prevent disruption to smaller data centers used by institutions like hospitals. Hochul has not yet said whether she will sign the moratorium passed through the legislature, but the executive action allows her to enact a first-in-the-nation pause while reviewing the bill.
+“As data center development threatens to hike up utility bills, deplete our natural resources, and create uncertainty for New Yorkers, it’s my responsibility to take action and lead,” Hochul said in a statement. The moratorium could last up to a year as the Department of Public Service (DPS) comes up with standards to assess the expected environmental impacts of data center construction and operation, including on water use and air quality. Hochul is also asking DPS to consider creating a way for data centers to invest in the state’s energy infrastructure, and charges the state’s development arm with coming up with a framework to help local communities negotiate benefits when data centers try to come to town.
+New York State Sen. Kristen Gonzalez, who led the state legislature’s version of a moratorium, praised Hochul for the executive order. “By giving our state the time to plan, we can ensure that development and innovation do not come at the expense of all of us,” she said in a statement. Gonzalez told The Verge in an interview that her office worked with Hochul’s to “align” on a moratorium that would quickly take effect. And while she says the order accomplishes some of what the legislatures’ moratorium would require, “our bill certainly goes further.” Beyond the lower threshold for classifying hyperscale data centers, the bill would implement standards for renewable energy and labor used in such projects, among other requirements. Gonzalez also notes that even under the broader definition of a hyperscale data center in the bill, there would be an exception for facilities controlled by a public research institution.
+She still plans to engage with Hochul’s office about signing the legislation, and says she hopes that additional environmental and labor standards like those included in the bill become law. But she added that the executive order was a positive example of government working together. “I think government works best when our legislature is able to work effectively with our executive branch and across levels of government. And this executive order is a good example of that work happening and what is possible when we come together to serve and protect New Yorkers.”
+Maine nearly became the first state to pass a data center moratorium before its governor vetoed the bill in April. Communities around the country have been grappling with a wave of infrastructure build-out they fear could impact energy prices and the environment as AI accelerates demand. Government subsidies for data center development has become one of the issues animating many residents, and Hochul also said Tuesday she plans to push the legislature to roll back sales tax exemptions for large data centers in the state when they’re back in session next year.
+Update, July 14th: Added comments from New York State Sen. Kristen Gonzalez.
+
+## full_text
+
+New York becomes the first state to enact a data center moratorium
+New York Governor Kathy Hochul signed an executive order enacting a one-year moratorium on new data center developments over 50 megawatts.
+New hyperscale data centers can’t set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation’s first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature.
+The order blocks new environmental permits for data centers over 50 megawatts, which the governor’s office says will give the state time to come up with the regulations needed to protect residents from rising energy prices and environmental impact. That’s higher than the 20 megawatt threshold approved by state lawmakers. Hochul’s office could not immediately identify the number of proposals that would be impacted by the order, but says the threshold is meant to prevent disruption to smaller data centers used by institutions like hospitals. Hochul has not yet said whether she will sign the moratorium passed through the legislature, but the executive action allows her to enact a first-in-the-nation pause while reviewing the bill.
+“As data center development threatens to hike up utility bills, deplete our natural resources, and create uncertainty for New Yorkers, it’s my responsibility to take action and lead,” Hochul said in a statement. The moratorium could last up to a year as the Department of Public Service (DPS) comes up with standards to assess the expected environmental impacts of data center construction and operation, including on water use and air quality. Hochul is also asking DPS to consider creating a way for data centers to invest in the state’s energy infrastructure, and charges the state’s development arm with coming up with a framework to help local communities negotiate benefits when data centers try to come to town.
+New York State Sen. Kristen Gonzalez, who led the state legislature’s version of a moratorium, praised Hochul for the executive order. “By giving our state the time to plan, we can ensure that development and innovation do not come at the expense of all of us,” she said in a statement. Gonzalez told The Verge in an interview that her office worked with Hochul’s to “align” on a moratorium that would quickly take effect. And while she says the order accomplishes some of what the legislatures’ moratorium would require, “our bill certainly goes further.” Beyond the lower threshold for classifying hyperscale data centers, the bill would implement standards for renewable energy and labor used in such projects, among other requirements. Gonzalez also notes that even under the broader definition of a hyperscale data center in the bill, there would be an exception for facilities controlled by a public research institution.
+She still plans to engage with Hochul’s office about signing the legislation, and says she hopes that additional environmental and labor standards like those included in the bill become law. But she added that the executive order was a positive example of government working together. “I think government works best when our legislature is able to work effectively with our executive branch and across levels of government. And this executive order is a good example of that work happening and what is possible when we come together to serve and protect New Yorkers.”
+Maine nearly became the first state to pass a data center moratorium before its governor vetoed the bill in April. Communities around the country have been grappling with a wave of infrastructure build-out they fear could impact energy prices and the environment as AI accelerates demand. Government subsidies for data center development has become one of the issues animating many residents, and Hochul also said Tuesday she plans to push the legislature to roll back sales tax exemptions for large data centers in the state when they’re back in session next year.
+Update, July 14th: Added comments from New York State Sen. Kristen Gonzalez.
+New York becomes the first state to enact a data center moratorium
+New York Governor Kathy Hochul signed an executive order enacting a one-year moratorium on new data center developments over 50 megawatts.
+New hyperscale data centers can’t set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation’s first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature.
+The order blocks new environmental permits for data centers over 50 megawatts, which the governor’s office says will give the state time to come up with the regulations needed to protect residents from rising energy prices and environmental impact. That’s higher than the 20 megawatt threshold approved by state lawmakers. Hochul’s office could not immediately identify the number of proposals that would be impacted by the order, but says the threshold is meant to prevent disruption to smaller data centers used by institutions like hospitals. Hochul has not yet said whether she will sign the moratorium passed through the legislature, but the executive action allows her to enact a first-in-the-nation pause while reviewing the bill.
+“As data center development threatens to hike up utility bills, deplete our natural resources, and create uncertainty for New Yorkers, it’s my responsibility to take action and lead,” Hochul said in a statement. The moratorium could last up to a year as the Department of Public Service (DPS) comes up with standards to assess the expected environmental impacts of data center construction and operation, including on water use and air quality. Hochul is also asking DPS to consider creating a way for data centers to invest in the state’s energy infrastructure, and charges the state’s development arm with coming up with a framework to help local communities negotiate benefits when data centers try to come to town.
+New York State Sen. Kristen Gonzalez, who led the state legislature’s version of a moratorium, praised Hochul for the executive order. “By giving our state the time to plan, we can ensure that development and innovation do not come at the expense of all of us,” she said in a statement. Gonzalez told The Verge in an interview that her office worked with Hochul’s to “align” on a moratorium that would quickly take effect. And while she says the order accomplishes some of what the legislatures’ moratorium would require, “our bill certainly goes further.” Beyond the lower threshold for classifying hyperscale data centers, the bill would implement standards for renewable energy and labor used in such projects, among other requirements. Gonzalez also notes that even under the broader definition of a hyperscale data center in the bill, there would be an exception for facilities controlled by a public research institution.
+She still plans to engage with Hochul’s office about signing the legislation, and says she hopes that additional environmental and labor standards like those included in the bill become law. But she added that the executive order was a positive example of government working together. “I think government works best when our legislature is able to work effectively with our executive branch and across levels of government. And this executive order is a good example of that work happening and what is possible when we come together to serve and protect New Yorkers.”
+Maine nearly became the first state to pass a data center moratorium before its governor vetoed the bill in April. Communities around the country have been grappling with a wave of infrastructure build-out they fear could impact energy prices and the environment as AI accelerates demand. Government subsidies for data center development has become one of the issues animating many residents, and Hochul also said Tuesday she plans to push the legislature to roll back sales tax exemptions for large data centers in the state when they’re back in session next year.
+Update, July 14th: Added comments from New York State Sen. Kristen Gonzalez.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":8155,"paragraph_count":18,"sentence_count":48,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   New hyperscale data centers can't set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation's first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature. The order blocks new environmental permits for data [&#8230;]
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   New York becomes the first state to enact a data center moratorium New York Governor Kathy Hochul signed an executive order enacting a one-year moratorium on new data center developments over 50 megawatts.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   New hyperscale data centers can’t set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation’s first statewide moratorium.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   But a bill passed by the state legislature that could restrict even more developments still awaits her signature.
+
+5. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   The order blocks new environmental permits for data centers over 50 megawatts, which the governor’s office says will give the state time to come up with the regulations needed to protect residents from rising energy prices and environmental impact.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   That’s higher than the 20 megawatt threshold approved by state lawmakers.
+
+## business_elements
+
+- companies: The Verge AI
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务
+- roles: 销售 / 客服
+- workflows: 合同审阅 / 法律研究
+- business_actions: 融资 / 投资
+- affected_departments: IT / 安全, 法务, 销售 / 客服
+- numbers: 8230, 50 m, 20 m, 14
+- quotes: By giving our state the time to plan, we can ensure that development and innovation do not come at the expense of all of us, / our bill certainly goes further. / By giving our state the time to plan, we can ensure that development and innovation do not come at the expense of all of us, / our bill certainly goes further.
+
+## evidence_seed
+
+- company_actions: New hyperscale data centers can't set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation's first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature. The order blocks new environmental permits for data [&#8230;] / New York becomes the first state to enact a data center moratorium New York Governor Kathy Hochul signed an executive order enacting a one-year moratorium on new data center developments over 50 megawatts. / New hyperscale data centers can’t set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation’s first statewide moratorium.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 销售 / 客服
+- risks_or_constraints: The order blocks new environmental permits for data centers over 50 megawatts, which the governor’s office says will give the state time to come up with the regulations needed to protect residents from rising energy prices and environmental impact.
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 4
+- importance_reason: technical trend or capability shift; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 3
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+New hyperscale data centers can't set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation's first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature. The order blocks new environmental permits for data [&#8230;]
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

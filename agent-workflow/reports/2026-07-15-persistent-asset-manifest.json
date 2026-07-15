@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-15",
+  "generated_at": "2026-07-15T16:20:58+08:00",
+  "workflow_mode": "business_signals_direct_card_publication_from_reused_raw_pool",
+  "source_artifact_reuse": {
+    "raw_pool_source": "reused same-date Raw/Pool artifacts from failed workflow run 29388717407",
+    "raw_active_count": 171,
+    "pool_count": 157,
+    "reason": "Raw/Pool supply already existed; repaired downstream Card/frontstage path and published without full-chain recollection."
+  },
+  "outcomes": {
+    "monitor": "success",
+    "raw_pool_gate": "success",
+    "asset_generation": "success",
+    "pool_to_card_dedupe_gate": "success",
+    "card_editorial_gate": "success",
+    "business_frontstage_data": "success",
+    "business_frontstage_gate": "success",
+    "operations_data_sync": "success",
+    "pre_commit_gate": "success"
+  },
+  "assets": {
+    "raw_candidates": "present",
+    "source_raw_artifacts": "present",
+    "raw_originals": "present",
+    "pool_candidates": "present",
+    "business_signals": "present",
+    "signal_card_files": 25,
+    "v3_data_observation_desk": "present",
+    "intelligence_graph_index": "present",
+    "operations_dashboard_data": "present"
+  }
+}

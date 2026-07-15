@@ -1,0 +1,365 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-013
+title: "x86 ACE 加速器：AMX 第二类加速器白皮书发布，对标 Arm SME"
+title_zh: "x86 ACE 加速器：AMX 第二类加速器白皮书发布，对标 Arm SME"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://chipsandcheese.com/p/is-x86-ready-to-ace-it"
+canonical_url: "https://chipsandcheese.com/p/is-x86-ready-to-ace-it"
+source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-14T00:00:00.000Z"
+collected_at: 2026-07-15T04:28:37.603Z
+language: mixed
+full_text_hash: eb1d71eff3b83736
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-15/r-013-x86-ace-加速器-amx-第二类加速器白皮书发布-对标-arm-sme.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-15/r-013-x86-ace-加速器-amx-第二类加速器白皮书发布-对标-arm-sme.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":22277,"paragraph_count":73,"sentence_count":157,"boilerplate_hits":1,"symbol_ratio":0.0034,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 22277
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"eb1d71eff3b83736","missing":[]}
+source_volatility: high
+community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: user_feedback_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"x86 ACE 加速器：AMX 第二类加速器白皮书发布，对标 Arm SME","discovery_summary":"Intel AMX 扩展最初在 Sapphire Rapids 服务器 CPU 上通过 TMUL 加速器实现矩阵乘法，支持 INT8、FP16、BF16 及复数运算。x86 生态系统咨询小组现已发布 ACE 加速器的白皮书与规范。ACE 作为 AMX 的第二类加速器，摒弃了 TMUL 的可配置 tile 寄存器方案，固定为 64 字节 × 16 行，并引入 FP8 支持与外积指令，取代内积计算。ACE 与 Arm SME/SME2 形成直接竞争：SME 使用可变的流式向量长度（128 至 2048 位），ZA 存储容量从 256 字节到 64 KB；ACE 则沿用 AMX 的 8 KB tile 寄存器。在数据类型转换方面，ACE 利用 AVX-512/AVX10 的 512 位向量宽度，通过 VPERMB 和 VPERMI2B 指令实现最多 7 位量化权重的查表转换，新增的 VUNPACKB 指令可提取 2 至 7 位元素至字节对齐位置，从而支持任意自定义格式，而非仅限原生数据类型。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://chipsandcheese.com/p/is-x86-ready-to-ace-it","discovered_at":"2026-07-15T04:20:27.116Z","rank_on_page":209,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: df987f4959a2f6c3
+content_hash: 8d903bba4ffd7a75
+semantic_hash: 6045dc82a6b9f4e8
+duplicate_of: ""
+first_seen_at: "2026-07-14T00:00:00.000Z"
+last_seen_at: 2026-07-15T04:28:37.603Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_market_structure","importance_score":5,"importance_reason":"market-structure commercial event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","Nvidia","Apple"],"products":[],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["86","8","16","64","2","128","2048","256"],"quotes":["accelerators","Accelerator 2","streaming"]}
+evidence_seed: {"company_actions":["Intel AMX 扩展最初在 Sapphire Rapids 服务器 CPU 上通过 TMUL 加速器实现矩阵乘法，支持 INT8、FP16、BF16 及复数运算。x86 生态系统咨询小组现已发布 ACE 加速器的白皮书与规范。ACE 作为 AMX 的第二类加速器，摒弃了 TMUL 的可配置 tile 寄存器方案，固定为 64 字节 × 16 行，并引入 FP8 支持与外积指令，取代内积计算。ACE 与 Arm SME/SME2 形成直接竞争：SME 使用可变的流式向量长度（128 至 2048 位），ZA 存储容量从 256 字节到 64 KB；ACE 则沿用 AMX 的 8 KB tile 寄存器。在数据类型转换方面，ACE 利用 AVX-512/AVX10 的 512 位向量宽度，通过 VPERMB 和 VPERMI2B 指令实现最多 7 位量化权重的查表转换，新增的 VUNPACKB 指令可提取 2 至 7 位元素至字节对齐位置，从而支持任意自定义格式，而非仅限原生数据类型。","Is x86 ready to ACE it?","Chester Lam and Aurora Nockert Jul 14, 2026 22 Share CPU designs must evolve to keep up with changing workloads."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"product_update","text":"Intel AMX 扩展最初在 Sapphire Rapids 服务器 CPU 上通过 TMUL 加速器实现矩阵乘法，支持 INT8、FP16、BF16 及复数运算。x86 生态系统咨询小组现已发布 ACE 加速器的白皮书与规范。ACE 作为 AMX 的第二类加速器，摒弃了 TMUL 的可配置 tile 寄存器方案，固定为 64 字节 × 16 行，并引入 FP8 支持与外积指令，取代内积计算。ACE 与 Arm SME/SME2 形成直接竞争：SME 使用可变的流式向量长度（128 至 2048 位），ZA 存储容量从 256 字节到 64 KB；ACE 则沿用 AMX 的 8 KB tile 寄存器。在数据类型转换方面，ACE 利用 AVX-512/AVX10 的 512 位向量宽度，通过 VPERMB 和 VPERMI2B 指令实现最多 7 位量化权重的查表转换，新增的 VUNPACKB 指令可提取 2 至 7 位元素至字节对齐位置，从而支持任意自定义格式，而非仅限原生数据类型。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Is x86 ready to ACE it?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Chester Lam and Aurora Nockert Jul 14, 2026 22 Share CPU designs must evolve to keep up with changing workloads.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Sometimes, that evolution involves extending the instruction set to efficiently represent certain types of work.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Intel’s AMX extension is one such example.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AMX accelerates matrix multiplication for machine learning workloads by providing a set of 2D tile registers and configuration registers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-15T04:28:37.603Z
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# x86 ACE 加速器：AMX 第二类加速器白皮书发布，对标 Arm SME
+
+## clean_text
+
+Is x86 ready to ACE it?
+Chester Lam and Aurora Nockert
+Jul 14, 2026
+22
+Share
+CPU designs must evolve to keep up with changing workloads. Sometimes, that evolution involves extending the instruction set to efficiently represent certain types of work. Intel’s AMX extension is one such example. AMX accelerates matrix multiplication for machine learning workloads by providing a set of 2D tile registers and configuration registers. Programmers can then configure specialized execution units (“accelerators”) to target matrix data in those tile registers. AMX was first implemented on Intel’s Sapphire Rapids server CPUs with a tile matrix multiply unit (TMUL) accelerator. Now, the x86 Ecosystem Advisory Group has written up a whitepaper and specification for ACE, which introduces a second accelerator type. While ACE is an AMX accelerator alongside TMUL, I’m going to call them “AMX” and “ACE” because TMUL was the only accelerator implementation that existed at AMX’s launch, and is still the only AMX accelerator available in hardware today. Documentation also tends to call them “AMX” and “ACE”.
+From Intel’s Architecture Instruction Set Extensions Programming Reference , showing the initial accelerator type (TMUL) and provisions for adding other accelerators. ACE would be “Accelerator 2” above
+AMX TMUL offered a highly configurable setup where code would specify matrix tile parameters for each tile register. For instance, the tile register tmm0 could be set up as a 16x64 matrix of INT8 values by specifying 16 rows and 64 bytes per row (“colsb”). TMUL matrix multiply instructions like TDPBSSD would take the tile configuration into account and perform an entire matrix multiplication operation between specified tiles. On the data type side, AMX TMUL could operate on INT8, FP16, and BF16 values. The latest iteration of TMUL, implemented on Granite Rapids-D CPUs, also supports complex numbers with FP16 real and FP16 imaginary components.
+ACE does away tile register configuration options, and always considers them 64 bytes by 16 rows. Complex numbers are gone, but FP8 is in. On the compute-side, ACE provides outer product instructions instead of the inner product instructions given by AMX.
+Arm’s Scalable Matrix Extension (SME) and its SME2 extension is an obvious comparison point. Both ISA extensions seek to accelerate matrix multiplication within the framework of a CPU ISA, providing a low latency alternative to using less integrated accelerators like GPUs. The two ISA extensions however differ in a number of areas. ACE is built on AMX, and continues to use AMX’s 8 KB of tile registers for holding matrix values.
+Arm’s SME in contrast has a variable “streaming” vector length (SVL) just like SVE’s vector length (VL). The SVE and SME vector lengths do not need to be the same, and often are not. Like SVE, SME allows the vector lengths from 128 to 2048 bits, growing in powers of two.
+The streaming vector length defines the size of the “ZA” storage array, which is SME’s equivalent of AMX tile registers. ZA storage is a 2D array where each side matches the SME streaming vector length. ZA storage capacity therefore ranges from 256 bytes with a 128-bit streaming vector length, to 64 KB with the maximum 2048-bit vector length.
+Outer Products
+While AVX512-VNNI and AMX accelerate inner products , ACE and SME accelerate outer products .
+An inner product (or dot product in this special case) of two vectors a
+and b is,
+\(\mathbf a \cdot \mathbf b = \mathbf a^\mathsf{T} \mathbf b = \sum_{i=1}^n a_i b_i\)
+Or if you are a physicist you might have learned it via the geometrical interpretation of,
+\(\mathbf a \cdot \mathbf b = |\mathbf a| \, |\mathbf b| \cos \theta\)
+Where θ is the angle between the vectors. The outer product (or tensor product in the general case) of the vectors a and b on the other hand results in a rank-1 matrix C like the following.
+\(\mathbf{a} \otimes \mathbf{b} = \mathbf a \mathbf b^\mathsf{T} = \mathbf C =
+\begin{bmatrix}
+a_1b_1 & a_1b_2 & \dots & a_1b_n \\
+a_2b_1 & a_2b_2 & \dots & a_2b_n \\
+\vdots & \vdots & \ddots & \vdots \\
+a_mb_1 & a_mb_2 & \dots & a_mb_n
+\end{bmatrix}
+\)
+The columns of C are all proportional to a and this is how we know that it is a rank-1 matrix, but also that matrix multiplication is just a sum of outer products like,
+\(\mathbf C = \mathbf AB = \sum_{i=1}^n \mathbf a_i^{row} \mathbf b_i^{col}\)
+In fact many operations in linear algebra can be seen as a linear combination of outer products, making outer products a natural primitive to implement in a processor, the most obvious example the singular value decomposition of a matrix,
+\(\mathbf M = \mathbf{U \Sigma V}^\mathsf{T}\)
+isn't trivial to understand when written as an inner product, but it is just the sum of the outer product of the columns of U and V multiplied by each corresponding singular value or,
+\(sum_{i=1}^{rank(A)} (\mathbf u_i \otimes \mathbf v_i) \sigma_i\)
+Even algorithms that aren’t as obviously converted to outer product forms like the FFT have been reformulated in terms of it to utilise SME as an accelerator. Arm gave the following example on how to do it, but if you search for papers you can find various more effective ways to do it.
+We have historically mostly used inner products because that reduces the amount of state we need to keep in registers, and since that is a precious resource that has been important to optimise for.
+However, as we’ve seen above almost all linear algebra can be seen through both lenses, and code can easily convert between inner and outer products. SME takes advantage of this to do matrix multiplication via outer products and ACE seeks to do the same.
+Data Type Conversion/De-Quantization
+Model weights are often quantized to very small bit-widths to reduce memory bandwidth and capacity pressure. ACE and SME, unlike for example NVIDIA’s TensorCores , pre-process the input vectors in software and can therefore support essentially any format you can make up and not just a limited set of “native” ones.
+Quantized weights are converted to natively supported data types to make use of the accelerators. ACE leans on AVX-512/AVX10’s fixed 512-bit vector width to accelerate this conversion process. A 512-bit vector is large enough to hold a lookup table mapping a data type up to 6 bits to an 8-bit output using VPERMB, and for a 7-bit input VPERMI2B can use two 512-bit vector registers together as the lookup table.
+A new VUNPACKB instruction added in ACE/AVX10.3 can extract 2 to 7-bit elements into byte-aligned positions and then the previously mentioned vector permute instructions can perform the data type conversion. ACE thus provides a degree of future proofing by being able to handle any data type between 2 and 7 bits with just these three instructions, and you can with software implement essentially any method of your choosing.
+The x86-64 EAG also hopes this flexibility will let ACE hardware apply to applications beyond de-quantizing model weights, such as codebooks for compression of data.
+Data conversion using VUNPACKB and VPERM(2I)B is a two-step process, but is flexible and can handle any input data type from 2 to 7 bits
+Arm can’t rely on having vector registers wide enough to work as lookup tables for data conversions, because SVE lets implementations define streaming vector lengths from 128 to 2048 bits. SME2 therefore adds a 512-bit ZT0 register specifically designed to work as a 16 x 4B lookup table. LUTI2 and LUTI4 instructions perform data conversions by decompressing 2-bit or 4-bit index values from a vector register, looking up their values in ZT0, and placing output values into a destination vector register.
+Adding the fixed width ZT0 register lets Arm accelerate data conversions within the variable vector length SVE/SME framework, but isn’t as flexible as ACE’s VUNPACKB + permute combination. Model weights quantized down to anything other than 2 or 4 bits wouldn’t benefit from SME2’s lookup table acceleration and more complicated codebook approaches that require multiple different lookup tables cannot be supported.
+Data conversion using SME2’s ZT0 lookup table register. Less flexible, but Arm’s LUT instructions don’t need an intermediate register to unpack into, and don’t depend on a fixed vector length.
+On the other hand, SME2’s mechanism lets Arm express a data type conversion with a single instruction instead of two. It also reduces pressure on vector registers, because the lookup table is stored in a separate register and LUT instructions don’t need a separate vector register to hold intermediate unpacked values. On the flexibility front, Arm could continue extending the ISA and add LUT instruction variants to support more data type widths.
+Block Scaling Support
+Low precision data types like FP8 suffer from low dynamic range. The Open Compute Project’s Microscaling Formats specification tackles this with scaling factors. One scaling value applies across a block of values, increasing the dynamic range of multiplication results without increasing the bit width of each data element. ACE supports this with a new 1024-bit Block Scale Register named BSR0. BSR0 is divided into two 512-bit halves, one for each of the two inputs of an outer product operation. Each half is further divided into four groups of 16 8-bit scale values, selected by an immediate operand in outer product instructions.
+From the ACE v1 public specification, showing an outer product with scaling
+Arm’s SME supports scaling via 8-bit LSCALE and LSCALE2 fields in the Floating Point Mode Register (FPMR). BF1CVT uses LSCALE, and BF2CVT uses LSCALE2. Although Arm documents two instructions, the scheme is actually similar to how ACE selects BSR groups using an immediate. There’s a 1-bit opcode difference between BF1CVT and BF2CVT, which a creative decoder could treat as an immediate. Using scale factors is a two-step process with SME, where BF1CVT/BF2CVT apply a scale and a separate outer product instruction carries out the math. Update instructions for both ACE’s BSR0 and SME’s FPMR will overwrite the entire register, signaling that ISA designers on both sides don’t expect scale values to change often.
+There’s a distinct possibility that neither register gets renamed in hardware implementations, so any scale value update would create a serialization barrier for FP8 instructions. If scale values do change often enough to warrant renaming, then both ISAs are in a difficult position. All of ACE’s FP8 outer product instructions reference BSR0, and therefore depend on the last BSR0 write. SME has separate instructions for scaling and outer product math, but FPMR also includes fields that control FP8 format and overflow behavior. It therefore ends up in the same situation of where all FP8 math depends on the last FPMR write.
+Tile Size: Leveraging Vector Registers
+Quantization is one way to reduce memory bandwidth demands. Tiling is another. Simple matrix multiplication creates memory access patterns with poor locality. Splitting a matrix into submatrices (tiles) helps improve data reuse by fitting into high bandwidth caches, rather than frequently streaming in data from DRAM. But bandwidth challenges remain even with tiling. Even cache bandwidth can become a constraint with enough compute available. If there’s enough compute to get through tiles faster than they can be streamed in from lower levels of the memory subsystem, L2, L3, and even DRAM bandwidth can come into play.
+Larger tiles help mitigate this problem. Calculating each tile of the result matrix involves multiplying each tile in the corresponding row of the first input matrix with every tile in the corresponding column of the second input matrix. Larger tiles mean a matrix can be covered with fewer total tiles. Because each input tile appears less often in an output tile’s matching row or column, it’s loaded fewer times throughout the matrix multiplication process.
+Visualizing a small example. A single input tile from the first matrix only has to be loaded for three of the output tiles with a matrix covered by 2x2 tiles. With a 3x3 tiling arrangement, it has to be loaded five times
+Register capacity influences tile size, because we want to keep the accumulator in registers. Each accumulation is a read-modify-write operation, which is two memory accesses. Moreover, most memory subsystems have less store than load bandwidth, reflecting typical application behavior where memory reads far outnumber writes. ACE keeps the same 8 KB of tile registers that AMX introduced, but changes the math instructions to take two inputs from AVX-512 vector registers. TMUL math instructions take all of their operands from tile registers, forcing code to use some tile register capacity to hold temporary input data.
+For example, take a C = AB matrix multiplication operation with 32K by 32K matrices of 8-bit integer values (INT8). A and B will be input matrices, and C will be the result. The matrix multiplication requires 32768^3 or 35.2 trillion multiply-add (MAC) operations. C will be kept in registers in all cases, while A and B will only be given registers as necessary.
+AVX512-VNNI
+AVX-512 provides 32 512-bit vector registers. We can use about 24 of those registers to store accumulators for C, with the other eight used to store input values. AVX-512 FMA instructions can only take one input from memory, meaning the other input has to be loaded into registers before being operated on.
+We need to load 16 x 32k elements from A and 24 x 32k elements from B to calculate our output tile, so we need to load 40 x 32k ≈ 1.3M elements from memory. We need to run this kernel 32k x 32k / (16 x 24) ≈ 2.7M times, for a total of about 3.4 TB of cache traffic. That works out to approximately 0.10 bytes loaded per MAC operation. A data cache capable of sustaining 128B/cycle of load bandwidth would be able to feed 1228 MAC operations per cycle, which is plenty considering each 512-bit vector contains 64 8-bit elements, and no CPU is likely to have over 19 512-bit vector pipes.
+SME
+If we use the same trivial tiling with a SME implementation with a 512-bit streaming vector length, and a 4 byte accumulator, we get 4 SME ZA tiles of 16 x 16 elements each for a total of 32 x 32 elements. For each iteration we need to load 32 x 32k elements from A and B for a total of 2M elements in total. But we only need to run the kernel 32k x 32k / (32 x 32) = 1M times, for a total of 2.0TB of cache traffic. SME therefore cuts cache bandwidth demands by almost 50% compared to AVX-512-VNNI. At about 0.06 bytes loaded per MAC operation, a data cache capable of delivering 128B/cycle could feed 2088 MAC operations per cycle.
+In addition, due to the outer product design we do not need any extra L1 traffic from spilling registers since we have plenty of vector registers available to us to do any pre-processing we want to do for practical applications.
+Apple’s M4 is an example of a hardware implementation with a 512-bit streaming vector length. A hypothetical implementation with a larger vector length would benefit from further bandwidth savings. For example, a 1024-bit SME implementation would have a 64 x 64 element output, loading 2 x 64 x 32k elements and 0.25 million kernel invocations for a total of 1.0TB of cache traffic.
+AMX
+For AMX, we’ll use six tiles to store the output accumulator, and use one tile each for A and B. This should be doable according to my calculations and backed up by this paper you at most need to spill two tiles per seven you load which should fit trivially in L1 and therefore we’ll conveniently ignore the extra cache traffic.
+Our six tile registers allocated mean that we have 32 x 48 element output, and we again need to load 32 x 32k elements from A and 48 x 32k elements from B per kernel invocation for a total of 2560 tile loads. But to compensate we just need to run the kernel 0.7 million times for a total of 1.7 billion tiles loaded or 1.7TB of cache traffic. That works out to 0.052 bytes loaded per MAC operation, meaning a 128B/cycle L1D could feed 2457 MACs/cycle.
+If we instead used Intel’s recommended strategy we would need to run the kernel 1.0 million times and load 2048 tiles per invocation for 2.0TB of data loaded which is so significantly worse that I am going to conveniently ignore this number for the rest of the article since I can’t think of an obvious reason you would ever do this tiling strategy.
+ACE
+ACE matrix instructions take inputs from AVX-512/AVX10 vector registers and accumulate into tile registers, so A and B don’t have to be kept in tile registers like with AMX. That allows for a larger 32 x 64 element output. We need to load 96 x 32k elements for a total of 48k vector loads but with a mere 0.5 million kernel invocations for a total of 1.5 TB of cache traffic. At 0.46 bytes loaded per MAC operation, a 128B/cycle L1D would be able to feed 2785 MACs/cycle.
+If M = N = K and T a and T b are the dimensions of the tile, then we need to load (T a + T b ) x N elements per kernel invocation, and require N x N / (T a x T b ) kernel invocations for a total of (T a + T b ) x N x N x N / (T a x T b ) elements loaded.
+Now that I have done all the calculations I can reveal to you who glossed over the earlier numbers that the general lower bound for the amount of data reuse is 2 x M x N x K / sqrt(T) where T is the size of the accumulator tile in elements and if you want to consider this problem deeper I can recommend reading this paper on the MOMMS family of matrix multiplication algorithms .
+This matches our experimental numbers, when we quadrupled the SME tile size we cut bandwidth requirements in half and this theoretical lower bound is hit when the accumulator is square, but the ACE register file was not expanded to the full 16 registers available in the VEX encoding used in AMX.
+Since the AMX documentation mentions this as a thing they are considering for the future we can expect it to happen at some point if ACE stays around and then it will
+
+## full_text
+
+Is x86 ready to ACE it?
+Chester Lam and Aurora Nockert
+Jul 14, 2026
+22
+Share
+CPU designs must evolve to keep up with changing workloads. Sometimes, that evolution involves extending the instruction set to efficiently represent certain types of work. Intel’s AMX extension is one such example. AMX accelerates matrix multiplication for machine learning workloads by providing a set of 2D tile registers and configuration registers. Programmers can then configure specialized execution units (“accelerators”) to target matrix data in those tile registers. AMX was first implemented on Intel’s Sapphire Rapids server CPUs with a tile matrix multiply unit (TMUL) accelerator. Now, the x86 Ecosystem Advisory Group has written up a whitepaper and specification for ACE, which introduces a second accelerator type. While ACE is an AMX accelerator alongside TMUL, I’m going to call them “AMX” and “ACE” because TMUL was the only accelerator implementation that existed at AMX’s launch, and is still the only AMX accelerator available in hardware today. Documentation also tends to call them “AMX” and “ACE”.
+From Intel’s Architecture Instruction Set Extensions Programming Reference , showing the initial accelerator type (TMUL) and provisions for adding other accelerators. ACE would be “Accelerator 2” above
+AMX TMUL offered a highly configurable setup where code would specify matrix tile parameters for each tile register. For instance, the tile register tmm0 could be set up as a 16x64 matrix of INT8 values by specifying 16 rows and 64 bytes per row (“colsb”). TMUL matrix multiply instructions like TDPBSSD would take the tile configuration into account and perform an entire matrix multiplication operation between specified tiles. On the data type side, AMX TMUL could operate on INT8, FP16, and BF16 values. The latest iteration of TMUL, implemented on Granite Rapids-D CPUs, also supports complex numbers with FP16 real and FP16 imaginary components.
+ACE does away tile register configuration options, and always considers them 64 bytes by 16 rows. Complex numbers are gone, but FP8 is in. On the compute-side, ACE provides outer product instructions instead of the inner product instructions given by AMX.
+Arm’s Scalable Matrix Extension (SME) and its SME2 extension is an obvious comparison point. Both ISA extensions seek to accelerate matrix multiplication within the framework of a CPU ISA, providing a low latency alternative to using less integrated accelerators like GPUs. The two ISA extensions however differ in a number of areas. ACE is built on AMX, and continues to use AMX’s 8 KB of tile registers for holding matrix values.
+Arm’s SME in contrast has a variable “streaming” vector length (SVL) just like SVE’s vector length (VL). The SVE and SME vector lengths do not need to be the same, and often are not. Like SVE, SME allows the vector lengths from 128 to 2048 bits, growing in powers of two.
+The streaming vector length defines the size of the “ZA” storage array, which is SME’s equivalent of AMX tile registers. ZA storage is a 2D array where each side matches the SME streaming vector length. ZA storage capacity therefore ranges from 256 bytes with a 128-bit streaming vector length, to 64 KB with the maximum 2048-bit vector length.
+Outer Products
+While AVX512-VNNI and AMX accelerate inner products , ACE and SME accelerate outer products .
+An inner product (or dot product in this special case) of two vectors a
+and b is,
+\(\mathbf a \cdot \mathbf b = \mathbf a^\mathsf{T} \mathbf b = \sum_{i=1}^n a_i b_i\)
+Or if you are a physicist you might have learned it via the geometrical interpretation of,
+\(\mathbf a \cdot \mathbf b = |\mathbf a| \, |\mathbf b| \cos \theta\)
+Where θ is the angle between the vectors. The outer product (or tensor product in the general case) of the vectors a and b on the other hand results in a rank-1 matrix C like the following.
+\(\mathbf{a} \otimes \mathbf{b} = \mathbf a \mathbf b^\mathsf{T} = \mathbf C =
+\begin{bmatrix}
+a_1b_1 & a_1b_2 & \dots & a_1b_n \\
+a_2b_1 & a_2b_2 & \dots & a_2b_n \\
+\vdots & \vdots & \ddots & \vdots \\
+a_mb_1 & a_mb_2 & \dots & a_mb_n
+\end{bmatrix}
+\)
+The columns of C are all proportional to a and this is how we know that it is a rank-1 matrix, but also that matrix multiplication is just a sum of outer products like,
+\(\mathbf C = \mathbf AB = \sum_{i=1}^n \mathbf a_i^{row} \mathbf b_i^{col}\)
+In fact many operations in linear algebra can be seen as a linear combination of outer products, making outer products a natural primitive to implement in a processor, the most obvious example the singular value decomposition of a matrix,
+\(\mathbf M = \mathbf{U \Sigma V}^\mathsf{T}\)
+isn't trivial to understand when written as an inner product, but it is just the sum of the outer product of the columns of U and V multiplied by each corresponding singular value or,
+\(sum_{i=1}^{rank(A)} (\mathbf u_i \otimes \mathbf v_i) \sigma_i\)
+Even algorithms that aren’t as obviously converted to outer product forms like the FFT have been reformulated in terms of it to utilise SME as an accelerator. Arm gave the following example on how to do it, but if you search for papers you can find various more effective ways to do it.
+We have historically mostly used inner products because that reduces the amount of state we need to keep in registers, and since that is a precious resource that has been important to optimise for.
+However, as we’ve seen above almost all linear algebra can be seen through both lenses, and code can easily convert between inner and outer products. SME takes advantage of this to do matrix multiplication via outer products and ACE seeks to do the same.
+Data Type Conversion/De-Quantization
+Model weights are often quantized to very small bit-widths to reduce memory bandwidth and capacity pressure. ACE and SME, unlike for example NVIDIA’s TensorCores , pre-process the input vectors in software and can therefore support essentially any format you can make up and not just a limited set of “native” ones.
+Quantized weights are converted to natively supported data types to make use of the accelerators. ACE leans on AVX-512/AVX10’s fixed 512-bit vector width to accelerate this conversion process. A 512-bit vector is large enough to hold a lookup table mapping a data type up to 6 bits to an 8-bit output using VPERMB, and for a 7-bit input VPERMI2B can use two 512-bit vector registers together as the lookup table.
+A new VUNPACKB instruction added in ACE/AVX10.3 can extract 2 to 7-bit elements into byte-aligned positions and then the previously mentioned vector permute instructions can perform the data type conversion. ACE thus provides a degree of future proofing by being able to handle any data type between 2 and 7 bits with just these three instructions, and you can with software implement essentially any method of your choosing.
+The x86-64 EAG also hopes this flexibility will let ACE hardware apply to applications beyond de-quantizing model weights, such as codebooks for compression of data.
+Data conversion using VUNPACKB and VPERM(2I)B is a two-step process, but is flexible and can handle any input data type from 2 to 7 bits
+Arm can’t rely on having vector registers wide enough to work as lookup tables for data conversions, because SVE lets implementations define streaming vector lengths from 128 to 2048 bits. SME2 therefore adds a 512-bit ZT0 register specifically designed to work as a 16 x 4B lookup table. LUTI2 and LUTI4 instructions perform data conversions by decompressing 2-bit or 4-bit index values from a vector register, looking up their values in ZT0, and placing output values into a destination vector register.
+Adding the fixed width ZT0 register lets Arm accelerate data conversions within the variable vector length SVE/SME framework, but isn’t as flexible as ACE’s VUNPACKB + permute combination. Model weights quantized down to anything other than 2 or 4 bits wouldn’t benefit from SME2’s lookup table acceleration and more complicated codebook approaches that require multiple different lookup tables cannot be supported.
+Data conversion using SME2’s ZT0 lookup table register. Less flexible, but Arm’s LUT instructions don’t need an intermediate register to unpack into, and don’t depend on a fixed vector length.
+On the other hand, SME2’s mechanism lets Arm express a data type conversion with a single instruction instead of two. It also reduces pressure on vector registers, because the lookup table is stored in a separate register and LUT instructions don’t need a separate vector register to hold intermediate unpacked values. On the flexibility front, Arm could continue extending the ISA and add LUT instruction variants to support more data type widths.
+Block Scaling Support
+Low precision data types like FP8 suffer from low dynamic range. The Open Compute Project’s Microscaling Formats specification tackles this with scaling factors. One scaling value applies across a block of values, increasing the dynamic range of multiplication results without increasing the bit width of each data element. ACE supports this with a new 1024-bit Block Scale Register named BSR0. BSR0 is divided into two 512-bit halves, one for each of the two inputs of an outer product operation. Each half is further divided into four groups of 16 8-bit scale values, selected by an immediate operand in outer product instructions.
+From the ACE v1 public specification, showing an outer product with scaling
+Arm’s SME supports scaling via 8-bit LSCALE and LSCALE2 fields in the Floating Point Mode Register (FPMR). BF1CVT uses LSCALE, and BF2CVT uses LSCALE2. Although Arm documents two instructions, the scheme is actually similar to how ACE selects BSR groups using an immediate. There’s a 1-bit opcode difference between BF1CVT and BF2CVT, which a creative decoder could treat as an immediate. Using scale factors is a two-step process with SME, where BF1CVT/BF2CVT apply a scale and a separate outer product instruction carries out the math. Update instructions for both ACE’s BSR0 and SME’s FPMR will overwrite the entire register, signaling that ISA designers on both sides don’t expect scale values to change often.
+There’s a distinct possibility that neither register gets renamed in hardware implementations, so any scale value update would create a serialization barrier for FP8 instructions. If scale values do change often enough to warrant renaming, then both ISAs are in a difficult position. All of ACE’s FP8 outer product instructions reference BSR0, and therefore depend on the last BSR0 write. SME has separate instructions for scaling and outer product math, but FPMR also includes fields that control FP8 format and overflow behavior. It therefore ends up in the same situation of where all FP8 math depends on the last FPMR write.
+Tile Size: Leveraging Vector Registers
+Quantization is one way to reduce memory bandwidth demands. Tiling is another. Simple matrix multiplication creates memory access patterns with poor locality. Splitting a matrix into submatrices (tiles) helps improve data reuse by fitting into high bandwidth caches, rather than frequently streaming in data from DRAM. But bandwidth challenges remain even with tiling. Even cache bandwidth can become a constraint with enough compute available. If there’s enough compute to get through tiles faster than they can be streamed in from lower levels of the memory subsystem, L2, L3, and even DRAM bandwidth can come into play.
+Larger tiles help mitigate this problem. Calculating each tile of the result matrix involves multiplying each tile in the corresponding row of the first input matrix with every tile in the corresponding column of the second input matrix. Larger tiles mean a matrix can be covered with fewer total tiles. Because each input tile appears less often in an output tile’s matching row or column, it’s loaded fewer times throughout the matrix multiplication process.
+Visualizing a small example. A single input tile from the first matrix only has to be loaded for three of the output tiles with a matrix covered by 2x2 tiles. With a 3x3 tiling arrangement, it has to be loaded five times
+Register capacity influences tile size, because we want to keep the accumulator in registers. Each accumulation is a read-modify-write operation, which is two memory accesses. Moreover, most memory subsystems have less store than load bandwidth, reflecting typical application behavior where memory reads far outnumber writes. ACE keeps the same 8 KB of tile registers that AMX introduced, but changes the math instructions to take two inputs from AVX-512 vector registers. TMUL math instructions take all of their operands from tile registers, forcing code to use some tile register capacity to hold temporary input data.
+For example, take a C = AB matrix multiplication operation with 32K by 32K matrices of 8-bit integer values (INT8). A and B will be input matrices, and C will be the result. The matrix multiplication requires 32768^3 or 35.2 trillion multiply-add (MAC) operations. C will be kept in registers in all cases, while A and B will only be given registers as necessary.
+AVX512-VNNI
+AVX-512 provides 32 512-bit vector registers. We can use about 24 of those registers to store accumulators for C, with the other eight used to store input values. AVX-512 FMA instructions can only take one input from memory, meaning the other input has to be loaded into registers before being operated on.
+We need to load 16 x 32k elements from A and 24 x 32k elements from B to calculate our output tile, so we need to load 40 x 32k ≈ 1.3M elements from memory. We need to run this kernel 32k x 32k / (16 x 24) ≈ 2.7M times, for a total of about 3.4 TB of cache traffic. That works out to approximately 0.10 bytes loaded per MAC operation. A data cache capable of sustaining 128B/cycle of load bandwidth would be able to feed 1228 MAC operations per cycle, which is plenty considering each 512-bit vector contains 64 8-bit elements, and no CPU is likely to have over 19 512-bit vector pipes.
+SME
+If we use the same trivial tiling with a SME implementation with a 512-bit streaming vector length, and a 4 byte accumulator, we get 4 SME ZA tiles of 16 x 16 elements each for a total of 32 x 32 elements. For each iteration we need to load 32 x 32k elements from A and B for a total of 2M elements in total. But we only need to run the kernel 32k x 32k / (32 x 32) = 1M times, for a total of 2.0TB of cache traffic. SME therefore cuts cache bandwidth demands by almost 50% compared to AVX-512-VNNI. At about 0.06 bytes loaded per MAC operation, a data cache capable of delivering 128B/cycle could feed 2088 MAC operations per cycle.
+In addition, due to the outer product design we do not need any extra L1 traffic from spilling registers since we have plenty of vector registers available to us to do any pre-processing we want to do for practical applications.
+Apple’s M4 is an example of a hardware implementation with a 512-bit streaming vector length. A hypothetical implementation with a larger vector length would benefit from further bandwidth savings. For example, a 1024-bit SME implementation would have a 64 x 64 element output, loading 2 x 64 x 32k elements and 0.25 million kernel invocations for a total of 1.0TB of cache traffic.
+AMX
+For AMX, we’ll use six tiles to store the output accumulator, and use one tile each for A and B. This should be doable according to my calculations and backed up by this paper you at most need to spill two tiles per seven you load which should fit trivially in L1 and therefore we’ll conveniently ignore the extra cache traffic.
+Our six tile registers allocated mean that we have 32 x 48 element output, and we again need to load 32 x 32k elements from A and 48 x 32k elements from B per kernel invocation for a total of 2560 tile loads. But to compensate we just need to run the kernel 0.7 million times for a total of 1.7 billion tiles loaded or 1.7TB of cache traffic. That works out to 0.052 bytes loaded per MAC operation, meaning a 128B/cycle L1D could feed 2457 MACs/cycle.
+If we instead used Intel’s recommended strategy we would need to run the kernel 1.0 million times and load 2048 tiles per invocation for 2.0TB of data loaded which is so significantly worse that I am going to conveniently ignore this number for the rest of the article since I can’t think of an obvious reason you would ever do this tiling strategy.
+ACE
+ACE matrix instructions take inputs from AVX-512/AVX10 vector registers and accumulate into tile registers, so A and B don’t have to be kept in tile registers like with AMX. That allows for a larger 32 x 64 element output. We need to load 96 x 32k elements for a total of 48k vector loads but with a mere 0.5 million kernel invocations for a total of 1.5 TB of cache traffic. At 0.46 bytes loaded per MAC operation, a 128B/cycle L1D would be able to feed 2785 MACs/cycle.
+If M = N = K and T a and T b are the dimensions of the tile, then we need to load (T a + T b ) x N elements per kernel invocation, and require N x N / (T a x T b ) kernel invocations for a total of (T a + T b ) x N x N x N / (T a x T b ) elements loaded.
+Now that I have done all the calculations I can reveal to you who glossed over the earlier numbers that the general lower bound for the amount of data reuse is 2 x M x N x K / sqrt(T) where T is the size of the accumulator tile in elements and if you want to consider this problem deeper I can recommend reading this paper on the MOMMS family of matrix multiplication algorithms .
+This matches our experimental numbers, when we quadrupled the SME tile size we cut bandwidth requirements in half and this theoretical lower bound is hit when the accumulator is square, but the ACE register file was not expanded to the full 16 registers available in the VEX encoding used in AMX.
+Since the AMX documentation mentions this as a thing they are considering for the future we can expect it to happen at some point if ACE stays around and then it will perform like a 1024-bit streaming vector length implementation of SME in this experiment.
+ACE’s increased tile size can let Intel implement a larger MAC array with a given level of L1D bandwidth, but the benefits over AMX will likely be minor in this regard. Using AVX-512 registers to hold A and B only increases tile size slightly, because the bulk of register storage capacity is concentrated in the tile registers. Still, any improvement from an ISA extension is welcome. Data movement consumes significant power in modern cores.
+Zen 5 for example reduces clocks if it has to fully feed its vector units and sustain maximum L1D bandwidth. ACE could therefore improve performance in compute bound scenarios if fewer L1D accesses allow for higher boost clocks. If an ACE implementation has enough compute to become bound by how fast it can stream tiles in from lower levels of the memory hierarchy, bandwidth savings from covering the matrix with fewer tiles can translate directly to improved performance.
+Other Uses of ACE Tile Registers
+ACE doesn’t change AMX’s tile registers, but could still open up interesting use cases for tile registers. ACE’s TILEMOVROW and TILEMOVCOL copy rows or columns between vector registers and AMX tile registers. Data no longer has to go through L1D as it did on AMX, making it more feasible to use the AMX tile registers as a general purpose scratchpad. In theory, software can stash values in the AMX tile registers instead of writing them to memory to reduce pollution in the L1 data cache. If copying in values from the AMX tile registers takes an independent hardware path from L1D loads, using the tile registers could alleviate L1D bandwidth pressure too.
+In practice, using tile registers as a scratchpad would be difficult. Data movement between tile and vector registers don’t benefit from optimized forwarding paths the way L1D accesses do. An ACE hardware implementation could even have relatively long latency for tile to vector register data movement with minimal performance impact. Accumulator data can stay in place over many tile computations before being written out, making data movement out of the tile registers a comparatively rare operation, and therefore one that’s less important to optimize. Long latency scratchpad loads on the other hand could frequently hold up dependent instructions.
+Tile register capacity is another limitation. OpenCL 1.0 for reference requires 16 KB of scratchpad memory (termed local memory) at minimum, matching per-core scratchpad memory from early AMD and Nvidia GPUs. 8 KB is a lot for a register file, but is on the low side for scratchpad memory. Finally, initializing AMX or ACE would require the operating system to preserve that extra 8 KB of registers across context switches, potentially increasing context switch latency.
+Therefore, I don’t expect many applications (if any) to use tile registers as a software managed scratchpad. Spilling registers to memory is simpler, is already supported by every existing CPU, and may even result in better performance.
+Final Words
+ACE has many parallels to Arm’s SME2, which isn’t a surprise because Arm also took part in drafting the OCP Microscaling Formats specification. Both ISA extensions focus on outer products, and feature built-in support for scaling factors. The biggest difference is ACE’s focus on leveraging AVX-512’s large vector registers, and SME2’s focus on scalable vector length. Each ISA extension has advantages in some areas, and could face difficulties in others. AMD, Arm, and Intel could also extend their ISAs further as they get more experience and requirements evolve.
+Hardware design is ultimately the big wildcard in evaluating ACE. How an ISA extension gets implemented in hardware influences performance and efficiency far more than the ISA design does. No ACE hardware implementations exist to date, making that impossible to evaluate. Intel and AMD may be looking to support ACE in hardware as early as their next generation of CPUs, but at the time of writing that hardware is not available. The quality of those hardware implementations will ultimately determine how well ACE does, and we look forward to seeing how that goes.
+22
+Share
+Previous
+A guest post by
+Aurora Nockert
+50% cookies by weight
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 94
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":22277,"paragraph_count":73,"sentence_count":157,"boilerplate_hits":1,"symbol_ratio":0.0034,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=high
+   Intel AMX 扩展最初在 Sapphire Rapids 服务器 CPU 上通过 TMUL 加速器实现矩阵乘法，支持 INT8、FP16、BF16 及复数运算。x86 生态系统咨询小组现已发布 ACE 加速器的白皮书与规范。ACE 作为 AMX 的第二类加速器，摒弃了 TMUL 的可配置 tile 寄存器方案，固定为 64 字节 × 16 行，并引入 FP8 支持与外积指令，取代内积计算。ACE 与 Arm SME/SME2 形成直接竞争：SME 使用可变的流式向量长度（128 至 2048 位），ZA 存储容量从 256 字节到 64 KB；ACE 则沿用 AMX 的 8 KB tile 寄存器。在数据类型转换方面，ACE 利用 AVX-512/AVX10 的 512 位向量宽度，通过 VPERMB 和 VPERMI2B 指令实现最多 7 位量化权重的查表转换，新增的 VUNPACKB 指令可提取 2 至 7 位元素至字节对齐位置，从而支持任意自定义格式，而非仅限原生数据类型。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Is x86 ready to ACE it?
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Chester Lam and Aurora Nockert Jul 14, 2026 22 Share CPU designs must evolve to keep up with changing workloads.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Sometimes, that evolution involves extending the instruction set to efficiently represent certain types of work.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Intel’s AMX extension is one such example.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   AMX accelerates matrix multiplication for machine learning workloads by providing a set of 2D tile registers and configuration registers.
+
+## business_elements
+
+- companies: Hacker News 热门（buzzing.cc 中文翻译）, Nvidia, Apple
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 86, 8, 16, 64, 2, 128, 2048, 256
+- quotes: accelerators / Accelerator 2 / streaming
+
+## evidence_seed
+
+- company_actions: Intel AMX 扩展最初在 Sapphire Rapids 服务器 CPU 上通过 TMUL 加速器实现矩阵乘法，支持 INT8、FP16、BF16 及复数运算。x86 生态系统咨询小组现已发布 ACE 加速器的白皮书与规范。ACE 作为 AMX 的第二类加速器，摒弃了 TMUL 的可配置 tile 寄存器方案，固定为 64 字节 × 16 行，并引入 FP8 支持与外积指令，取代内积计算。ACE 与 Arm SME/SME2 形成直接竞争：SME 使用可变的流式向量长度（128 至 2048 位），ZA 存储容量从 256 字节到 64 KB；ACE 则沿用 AMX 的 8 KB tile 寄存器。在数据类型转换方面，ACE 利用 AVX-512/AVX10 的 512 位向量宽度，通过 VPERMB 和 VPERMI2B 指令实现最多 7 位量化权重的查表转换，新增的 VUNPACKB 指令可提取 2 至 7 位元素至字节对齐位置，从而支持任意自定义格式，而非仅限原生数据类型。 / Is x86 ready to ACE it? / Chester Lam and Aurora Nockert Jul 14, 2026 22 Share CPU designs must evolve to keep up with changing workloads.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_market_structure
+- importance_score: 5
+- importance_reason: market-structure commercial event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: user_feedback_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"x86 ACE 加速器：AMX 第二类加速器白皮书发布，对标 Arm SME","discovery_summary":"Intel AMX 扩展最初在 Sapphire Rapids 服务器 CPU 上通过 TMUL 加速器实现矩阵乘法，支持 INT8、FP16、BF16 及复数运算。x86 生态系统咨询小组现已发布 ACE 加速器的白皮书与规范。ACE 作为 AMX 的第二类加速器，摒弃了 TMUL 的可配置 tile 寄存器方案，固定为 64 字节 × 16 行，并引入 FP8 支持与外积指令，取代内积计算。ACE 与 Arm SME/SME2 形成直接竞争：SME 使用可变的流式向量长度（128 至 2048 位），ZA 存储容量从 256 字节到 64 KB；ACE 则沿用 AMX 的 8 KB tile 寄存器。在数据类型转换方面，ACE 利用 AVX-512/AVX10 的 512 位向量宽度，通过 VPERMB 和 VPERMI2B 指令实现最多 7 位量化权重的查表转换，新增的 VUNPACKB 指令可提取 2 至 7 位元素至字节对齐位置，从而支持任意自定义格式，而非仅限原生数据类型。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://chipsandcheese.com/p/is-x86-ready-to-ace-it","discovered_at":"2026-07-15T04:20:27.116Z","rank_on_page":209,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Intel AMX 扩展最初在 Sapphire Rapids 服务器 CPU 上通过 TMUL 加速器实现矩阵乘法，支持 INT8、FP16、BF16 及复数运算。x86 生态系统咨询小组现已发布 ACE 加速器的白皮书与规范。ACE 作为 AMX 的第二类加速器，摒弃了 TMUL 的可配置 tile 寄存器方案，固定为 64 字节 × 16 行，并引入 FP8 支持与外积指令，取代内积计算。ACE 与 Arm SME/SME2 形成直接竞争：SME 使用可变的流式向量长度（128 至 2048 位），ZA 存储容量从 256 字节到 64 KB；ACE 则沿用 AMX 的 8 KB tile 寄存器。在数据类型转换方面，ACE 利用 AVX-512/AVX10 的 512 位向量宽度，通过 VPERMB 和 VPERMI2B 指令实现最多 7 位量化权重的查表转换，新增的 VUNPACKB 指令可提取 2 至 7 位元素至字节对齐位置，从而支持任意自定义格式，而非仅限原生数据类型。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

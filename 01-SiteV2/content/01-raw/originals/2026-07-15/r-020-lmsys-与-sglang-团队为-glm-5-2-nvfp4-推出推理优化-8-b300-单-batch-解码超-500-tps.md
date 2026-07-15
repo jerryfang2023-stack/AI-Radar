@@ -1,0 +1,523 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-020
+title: "LMSYS 与 SGLang 团队为 GLM-5.2 NVFP4 推出推理优化，8×B300 单 batch 解码超 500 TPS"
+title_zh: "LMSYS 与 SGLang 团队为 GLM-5.2 NVFP4 推出推理优化，8×B300 单 batch 解码超 500 TPS"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.lmsys.org/blog/2026-07-13-glm52-optimization"
+canonical_url: "https://lmsys.org/blog/2026-07-13-glm52-optimization"
+source_name: "LMSYS：Blog（Chatbot Arena 团队）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-14T00:00:00.000Z"
+collected_at: 2026-07-15T04:28:37.647Z
+language: mixed
+full_text_hash: 0a6d5ba3ff875205
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-15/r-020-lmsys-与-sglang-团队为-glm-5-2-nvfp4-推出推理优化-8-b300-单-batch-解码超-500-tps.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-15/r-020-lmsys-与-sglang-团队为-glm-5-2-nvfp4-推出推理优化-8-b300-单-batch-解码超-500-tps.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":15636,"paragraph_count":135,"sentence_count":100,"boilerplate_hits":1,"symbol_ratio":0.0031,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 15636
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0a6d5ba3ff875205","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"LMSYS 与 SGLang 团队为 GLM-5.2 NVFP4 推出推理优化，8×B300 单 batch 解码超 500 TPS","discovery_summary":"LMSYS 与 SGLang 团队针对智谱 GLM-5.2 NVFP4 模型在 Grace Blackwell 硬件上推出多项优化。运行时方面，Spec V2 重叠调度消除 GPU 气泡，端到端 TPS 提升 11%；IndexShare MTP 在 draft 步骤间复用 DSA indexer 的 top-k，长上下文下 draft 步骤成本降低约 1.9 倍。内核方面，TopK-V2 将 TopK 视为选择问题，80K ISL 下平均延迟从 40.7 μs 降至 17.5 μs（2.33× 加速），1M ISL 下从 372.1 μs 降至 36.6 μs（10.17× 加速）。优化后 8×B300 单 batch 解码吞吐超过 500 TPS。","source_name":"LMSYS：Blog（Chatbot Arena 团队）","origin_url":"https://www.lmsys.org/blog/2026-07-13-glm52-optimization","discovered_at":"2026-07-15T04:20:27.108Z","rank_on_page":180,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: ba1dc5c50044250f
+content_hash: 0a6d5ba3ff875205
+semantic_hash: 558f42e5d4005c5b
+duplicate_of: ""
+first_seen_at: "2026-07-14T00:00:00.000Z"
+last_seen_at: 2026-07-15T04:28:37.647Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["LMSYS","Blog（Chatbot Arena 团队）","Nvidia"],"products":[],"people":[],"industries":["开发者工具"],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["5.2","4","8","300","500","2","11%","1.9 倍"],"quotes":["Lightning-TopK"]}
+evidence_seed: {"company_actions":["‹ Back to Blog ‹ Back to Blog Contents TL;DR Background Optimization Runtime Optimization Zero-overhead scheduling and Spec v2 IndexShare MTP in SGLang Kernel Optimization TopK-V2 Indexer Prologue Fusion GEMM Kernels Improvement Performance Results What's Next Acknowledgements Appendix Reproduction Pull Request List Serving GLM5.","2 MTP Built-in IndexShare MTP with Spec V2 2.","Performance comparison between Day-0 and v0."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"LMSYS 与 SGLang 团队针对智谱 GLM-5.2 NVFP4 模型在 Grace Blackwell 硬件上推出多项优化。运行时方面，Spec V2 重叠调度消除 GPU 气泡，端到端 TPS 提升 11%；IndexShare MTP 在 draft 步骤间复用 DSA indexer 的 top-k，长上下文下 draft 步骤成本降低约 1.9 倍。内核方面，TopK-V2 将 TopK 视为选择问题，80K ISL 下平均延迟从 40.7 μs 降至 17.5 μs（2.33× 加速），1M ISL 下从 372.1 μs 降至 36.6 μs（10.17× 加速）。优化后 8×B300 单 batch 解码吞吐超过 500 TPS。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"‹ Back to Blog ‹ Back to Blog Contents TL;DR Background Optimization Runtime Optimization Zero-overhead scheduling and Spec v2 IndexShare MTP in SGLang Kernel Optimization TopK-V2 Indexer Prologue Fusion GEMM Kernels Improvement Performance Results What's Next Acknowledgements Appendix Reproduction Pull Request List Serving GLM5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"2 NVFP4 Agentic Workload with SGLang: Reaching 500 TPS in 2 Weeks SGLang Team July 14, 2026 TL;DR More than 500 TPS on 8xB300 (bs=1) Sync free speculative decoding for GLM 5.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"2 MTP Built-in IndexShare MTP with Spec V2 2.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"33x faster TopK-V2 for ISL 80k Indexer prologue fusion Gemm kernels improvement Figure 0.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Performance comparison between Day-0 and v0.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-15T04:28:37.647Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# LMSYS 与 SGLang 团队为 GLM-5.2 NVFP4 推出推理优化，8×B300 单 batch 解码超 500 TPS
+
+## clean_text
+
+‹ Back to Blog ‹ Back to Blog Contents
+TL;DR
+Background
+Optimization
+Runtime Optimization
+Zero-overhead scheduling and Spec v2
+IndexShare MTP in SGLang
+Kernel Optimization
+TopK-V2
+Indexer Prologue Fusion
+GEMM Kernels Improvement
+Performance Results
+What's Next
+Acknowledgements
+Appendix
+Reproduction
+Pull Request List
+Serving GLM5.2 NVFP4 Agentic Workload with SGLang: Reaching 500 TPS in 2 Weeks
+SGLang Team July 14, 2026
+TL;DR
+More than 500 TPS on 8xB300 (bs=1)
+Sync free speculative decoding for GLM 5.2 MTP
+Built-in IndexShare MTP with Spec V2
+2.33x faster TopK-V2 for ISL 80k
+Indexer prologue fusion
+Gemm kernels improvement
+Figure 0. Performance comparison between Day-0 and v0.5.15.post1 on 8*B300
+Background
+GLM-5.2 keeps the same backbone as earlier GLM checkpoints: DSA with a sparse-attention indexer on top of a DeepSeek-V3-style MoE. It adds two major architectural changes: IndexShare for DSA, and MTP with IndexShare and KVShare.
+SGLang has supported the GLM-5.2-NVFP4 checkpoint since day 0 on (Grace) Blackwell hardware, using trtllm-gen kernels for both sparse attention and MoE. To turn that day-0 stack into a faster, more stable, and more production-ready serving path, we're introducing the following optimizations.
+Optimization
+Runtime Optimization
+Zero-overhead scheduling and Spec v2
+Spec V2 is SGLang's overlap runtime for speculative decoding. While the GPU runs the current model forward on the forward stream, it does the next step's KV allocation and metadata preparation on the plan stream, hiding CPU overhead inside the forward.
+We recently turned on Spec V2 by default. On paper, the overlap scheduler should let the CPU handle its bookkeeping for the next step while the GPU is still busy with the current one, leaving almost no bubbles between iterations. In practice, a few optimizations were needed to fully realize the benefits of the overlap scheduler and Spec V2: we made the DSA draft-extend path CUDA-graphable, made seq_lens_cpu optional for DSA to drop the D2H sync, removed the remaining H2D syncs, and fused the small eager metadata ops in _apply_cuda_graph_metadata . With those GPU bubbles gone, we saw an 11% end-to-end TPS speedup.
+Figure 1. Decode at batch size 1, before Spec v2 optimizations (top) vs. after (bottom). With it on, there is no bubble between run_batch iterations.
+IndexShare MTP in SGLang
+GLM-5.2 ships a strong MTP head, with accept lengths frequently hitting 5+, which gives significant speedups on low-latency workloads like agentic coding. To implement GLM-5.2's MTP behavior correctly, we made a few changes to SGLang's speculative decoding runtime.
+First, IndexShare requires SGLang to reuse the DSA indexer's top-k across draft steps: the top-k computed at draft step 0 is held and passed to later steps, so they skip recomputing the indexer. This cut draft-step cost by up to ~1.9x at long context, with no hit to output quality.
+Second, the top-k needs to be seeded from the right place, which in SGLang is the draft-extend of the previous run_batch iteration. Because Spec V2 runs its steps asynchronously, we had to thread that seed through the overlap scheduler's relay buffer so it wouldn't get lost between iterations.
+Kernel Optimization
+TopK-V2
+The DSA indexer turns each query into scores over historical KV positions, then selects the top candidates for sparse attention. Following our “Lightning-TopK” design introduced in DeepSeek-V4 Blog , we upgraded the original DSA TopK-V1 kernel to TopK-V2, which treated TopK as a selection problem rather than a sorting problem.
+Figure 2: TopK-V2 partitions a long score row across eight CTAs, each building a local 10-bit histogram. A cluster-wide reduction locates the bin containing the 2048th-largest score; values above it are emitted directly, while boundary candidates undergo exact FP32 radix selection. The selected logical positions are then translated into physical indexer KV-cache slots.
+Figure 3: When TopK-V2 builds histogram, each FP32 score is rounded to FP16 and transformed into an unsigned key whose ordering matches the numerical score order. The upper 10 key bits select one of 1,024 bins, whose counter is atomically incremented. This coarse histogram only locates the boundary region; FP32 refinement preserves the accuracy of the final top-k selection.
+TopK-V2 uses register-resident or single-CTA streaming paths for short and medium rows. For long rows, a cluster of eight CTAs builds local 10-bit radix histograms and reduces them across the cluster to identify the threshold bin.
+A cluster-wide reduction locates the bin containing the 2048th-largest score; values above it are emitted directly, while boundary candidates undergo exact FP32 radix selection. The selected logical positions are then translated into physical indexer KV-cache slots. The kernel then collects candidates at the FP32 boundary and uses an exact radix tie-break to return exactly k entries, with runtime k supported up to 2048.
+A planning kernel chooses the cluster cutoff from the batch's sequence-length distribution and builds a work list for the persistent cluster pool, so the resulting plan is generated at each forward and reused across DSA layers. TopK-V2's selection and page-table transform is also fused into a single kernel to cut latency.
+Figure 4: Comparison of Kernel Latency between TopK-V1 and TopK-V2, on target model verification with batch size 1 and 6 draft tokens. Both kernels are fusing Top-K with page table transformation together.
+From benchmark results, TopK-V2 reduces average kernel latency from 40.7 µs to 17.5 µs at 80K ISL, a 2.33× speedup. Its advantage grows with context length, reaching 10.17× at 1M ISL by reducing latency from 372.1 µs to 36.6 µs. This widening gap shows that TopK-V2 scales much more efficiently for long-context workloads.
+Indexer Prologue Fusion
+Figure 5: DSA Indexer Prologue kernels: before and after the fusion
+The DSA indexer prologue prepares two streams of data: a key representation
+stored in the indexer KV cache and a query representation used to compute sparse
+attention candidates. The original implementation expressed this as a sequence
+of small kernels and projections.
+In the "before" path, the key side runs wk , LayerNorm, RoPE, Hadamard transform, FP8 quantization, and cache store. The query side runs wq_b , RoPE, Hadamard transform, FP8 quantization, and head-gate scaling. In addition, weights_proj is a separate projection feeding the per-head gate.
+PR #27705 collapses this dependency chain in two ways:
+First, it fuses wk and weights_proj into a single BF16 projection,
+wk_weights_proj . The output is split into the key activations and the raw
+head-gate weights. This removes one small GEMM from the indexer path and lets
+the head-gate weights be reused directly by the fused query kernel.
+Second, it fuses the elementwise tails:
+Key path: LayerNorm + RoPE + FP8 quantization + paged indexer KV cache store.
+Query path: RoPE + FP8 quantization + head-gate scaling.
+The figure illustrates the important scheduling consequence. Before fusion, the
+cache store sat after the key-side work and extended the critical path. After
+fusion, the key side can run as one kernel that includes the store, while the query side runs as a separate fused kernel. The two sides can overlap, so the indexer prologue becomes a shorter and cleaner pair of branches rather than a long chain of launches. The total amount of kernels drops from 12 to 4.
+The fused path also drops the Hadamard transform. Applying the same orthonormal
+transform to Q and K preserves their inner products before quantization, so its
+The main effect was on the quantized representation. The fused path instead
+quantizes the untransformed activations directly.
+The kernel-count reduction translates directly into measurable decode throughput gains, though the effect is more pronounced at small batch sizes where launch overhead dominates. At batch size 1, decode throughput improves by roughly 8%, since the indexer prologue's memory-bound kernels disappear and the collapse from 12 kernels to 4 removes a proportionally larger share of the critical path. At batch size 128, the improvement is smaller but still consistent, at around 5%.
+GEMM Kernels Improvement
+Figure 6: Speedup of CuteDSL BF16 GEMM vs CuBLAS GEMM, over different batch sizes
+Not every matrix multiplication in GLM-5.2 runs in NVFP4. To protect accuracy, the checkpoint's quantization recipe keeps the attention projections and the shared-expert MLP in BF16, and only quantizes the routed experts. PR #30117 adds a selectable CuTe DSL BF16 GEMM backend from Flashinfer’s TGV GEMM built specifically for these BF16 layers.
+The kernel splits the work across warps with dedicated jobs: some warps only load data from memory, one warp only does the matrix multiply, and a few warps only write the result back out. Since these are separate warps all running at once, loading, computing, and storing overlap instead of happening one after another.
+The real source of the speedup is how aggressively the kernel pipelines load. Instead of loading one tile of data and waiting for it to be used before loading the next, it keeps many tiles' worth of data in flight at once, using nearly all of the GPU's shared memory to do so. At the small batch sizes decoding runs at, these GEMMs spend most of their time waiting on memory rather than computing, so the further ahead the kernel can load, the less time is ever spent waiting. That's the main edge over a general-purpose library like cuBLAS, which pipelines more conservatively.
+A tuning step also picks the tile size that best fits the shape being run, and a heuristic measured ahead of time decides per call whether to use this kernel or fall back to cuBLAS.
+Two of these BF16 layers benefit clearly at TP4: the fused QKV projection (M, 2624, 6144, replicated across ranks) and the attention output projection o_proj (M, 6144, 4096, split across ranks). Sweeping the full decode range M=1 to 32:
+Fused QKV projection wins at every batch size, averaging 1.08x over cuBLAS, peaking at 1.13x. o_proj also wins at every batch size, averaging 1.05x, peaking at 1.08x. For batch size 1, the end-to-end decoding speedup is approximately 4%.
+Performance Results
+Figure 7: Pareto curves for GLM 5.2 NVFP4 performance on SGLang.
+We collected the performance results of GLM NVFP4 models on an OpenHands multi-turn agentic coding workload in Figure 7. Each conversation starts with an around 80K token prompt, and outputs around 220 tokens each turn, for a total of 13-turns. Successive turns reuse the prefix for a ~92% aggregate cache hit rate. We perform a concurrency sweep and plot per-GPU token throughput (tok/s/GPU) against interactivity (tok/s/user). Each figure fixes the model, GPU family, precision, workload, serving framework, and serving mode, and compares SGLang against itself across different versions.
+Three things stand out. First, GLM-5.2 is a substantially more efficient architecture than GLM-5.1. On the same SGLang release, GLM-5.2 delivers a ~1.4x and ~1.3x improvement in single-user interactivity per-GPU throughput, respectively, on both 4×GB300 and 8×B300. This gain comes from applying IndexShare to the DSA layers and from the improved MTP head, which reuses IndexShare and KVShare. Second, single-user interactivity has improved 18-34% since day-0. At batch size 1, our optimizations sharply cut per-token overhead, letting us reach 500+ TPS on 8xB300. Third, we made no compromise on high-concurrency throughput, peak throughput at batch size 8 also improved by 6–11%.
+Figure 8: Ablation test with changing input sequence lengths. We simulated an acceptance length of 5 to improve reproducibility.
+The ISL Ablation results in Figure 8 directly illustrate the payoff of our indexer optimizations. On the day-0 path, the DSA indexer must rank a score row that grows with the context, so its cost climbs with sequence length and single-user interactivity degrades rapidly as the input grows. TopK-V2 significantly alleviates that bottleneck, holding interactivity essentially flat all the way out to 1M tokens.
+What's Next
+This blog is mostly focused on optimization of low concurrency and high cache-hit rate scenarios. In the future, we will extend our support to higher concurrency scenarios:
+Better kernels for heavier workloads: ragged TopK-V2 for prefill, faster MQA logits kernel for indexer
+Optimization of PD Disaggregation and Expert Parallel techniques under agentic workload
+Improving cache usage with HiCache , HiSparse , and LayerSplit techniques.
+Supporting DSpark for GLM 5.2, which helps boosting the acceptance rate of speculative decoding under large concurrencies
+Acknowledgements
+We would like to express our gratitude to the following organizations and individuals, for their contribution to the support and optimization of GLM 5.2 NVFP4 model.
+SGLang Community/RadixArk: Khoa Pham, Baizhou Zhang, Jimmy Shong, Brayden Zhong, Ziyi Xu, Mohammad Miadh Angkad, Xinyuan Tong, Zhendong Hua, Zijie Xia, Banghua Zhu and many others – For optimization and benchmarking
+Nvidia: Julien Lin, Zhiyu Cheng, Po-Han Huang, Ryan Stewart, Triston Cao and many others – For helping with Day-0 support of GLM5.2 NVFP4
+GLM Team: Yuxuan Zhang – For implementing and verifying IndexShare in SGLang
+Appendix
+Reproduction
+For reproducing the performance results, please refer to custom scripts under this branch .
+We are using SGLang v0.5.15.post1 as server environment, and evalscope as the benchmark client.
+For the workload, we applied OpenHands multi-turn agentic replay, with mean input ≈ 80k tokens/request, 220 output tokens/turn, 13 turns/conversation, ~92% aggregate prefix-cache hit rate, and real EAGLE speculative acceptance without simulation.
+The server launching commands are as follow:
+# TP 4/TP 8
+export SGLANG_OPT_USE_TOPK_V2=1
+export SGLANG_ENABLE_MOE_DEFERRED_FINALIZE=1
+python3 -m sglang.launch_server \
+--model-path nvidia/GLM-5.2-NVFP4 \
+--tensor-parallel-size 4 \ # --tensor-parallel-size 8 for 8*B300
+--quantization modelopt_fp4 \
+--context-length 90000 \
+--max-running-requests 16 \
+--max-prefill-tokens 8192 \
+--chunked-prefill-size 8192 \
+--cuda-graph-max-bs-decode 16 \
+--mem-fraction-static 0.87 \
+--trust-remote-code \
+--kv-cache-dtype fp8_e4m3 \
+--bf16-gemm-backend cutedsl \
+--reasoning-parser glm45 \
+--tool-call-parser glm47 \
+--speculative-algorithm EAGLE \
+--speculative-num-steps 5 \
+--speculative-eagle-topk 1 \
+--speculative-num-draft-tokens 6 \
+--enable-cache-report \
+--host localhost \
+--port " $PORT "
+# TEP 4/TEP 8
+export SGLANG_OPT_USE_TOPK_V2=1
+export SGLANG_ENABLE_MOE_DEFERRED_FINALIZE=1
+python3 -m sglang.launch_server \
+--model-path nvidia/GLM-5.2-NVFP4 \
+--tensor-parallel-size 4 \ # --tensor-parallel-size 8 for 8*B300
+--ep-size 4 \ # --ep-size 8 for 8*B300
+--quantization modelopt_fp4 \
+--context-length 90000 \
+--max-running-requests 16 \
+--max-prefill-tokens 8192 \
+--chunked-prefill-size 8192 \
+--cuda-graph-max-bs-decode 16 \
+--mem-fraction-static 0.87 \
+--trust-remote-code \
+--kv-cache-dtype fp8_e4m3 \
+--bf16-gemm-backend cutedsl \
+--reasoning-parser glm45 \
+--tool-call-parser glm47 \
+--speculative-algorithm EAGLE \
+--speculative-num-steps 5 \
+--speculative-eagle-topk 1 \
+--speculative-num-draft-tokens 6 \
+--enable-cache-report \
+--host localhost \
+--port " $PORT "
+Pull Request List
+IndexShare implementation: #27114 , #29654 , #29787 , #30839 , #30992
+TopK-V2: #26788 , #30274
+Draft extend cuda graph: #29413
+DSA metadata fusion and sync removal: #29415 , #29499
+Indexer Prologue Fusion: #27705
+GEMM Kernels: #30177
+Other optimization PRs: #21531 , #29595 , #29667
+
+## full_text
+
+‹ Back to Blog ‹ Back to Blog Contents
+TL;DR
+Background
+Optimization
+Runtime Optimization
+Zero-overhead scheduling and Spec v2
+IndexShare MTP in SGLang
+Kernel Optimization
+TopK-V2
+Indexer Prologue Fusion
+GEMM Kernels Improvement
+Performance Results
+What's Next
+Acknowledgements
+Appendix
+Reproduction
+Pull Request List
+Serving GLM5.2 NVFP4 Agentic Workload with SGLang: Reaching 500 TPS in 2 Weeks
+SGLang Team July 14, 2026
+TL;DR
+More than 500 TPS on 8xB300 (bs=1)
+Sync free speculative decoding for GLM 5.2 MTP
+Built-in IndexShare MTP with Spec V2
+2.33x faster TopK-V2 for ISL 80k
+Indexer prologue fusion
+Gemm kernels improvement
+Figure 0. Performance comparison between Day-0 and v0.5.15.post1 on 8*B300
+Background
+GLM-5.2 keeps the same backbone as earlier GLM checkpoints: DSA with a sparse-attention indexer on top of a DeepSeek-V3-style MoE. It adds two major architectural changes: IndexShare for DSA, and MTP with IndexShare and KVShare.
+SGLang has supported the GLM-5.2-NVFP4 checkpoint since day 0 on (Grace) Blackwell hardware, using trtllm-gen kernels for both sparse attention and MoE. To turn that day-0 stack into a faster, more stable, and more production-ready serving path, we're introducing the following optimizations.
+Optimization
+Runtime Optimization
+Zero-overhead scheduling and Spec v2
+Spec V2 is SGLang's overlap runtime for speculative decoding. While the GPU runs the current model forward on the forward stream, it does the next step's KV allocation and metadata preparation on the plan stream, hiding CPU overhead inside the forward.
+We recently turned on Spec V2 by default. On paper, the overlap scheduler should let the CPU handle its bookkeeping for the next step while the GPU is still busy with the current one, leaving almost no bubbles between iterations. In practice, a few optimizations were needed to fully realize the benefits of the overlap scheduler and Spec V2: we made the DSA draft-extend path CUDA-graphable, made seq_lens_cpu optional for DSA to drop the D2H sync, removed the remaining H2D syncs, and fused the small eager metadata ops in _apply_cuda_graph_metadata . With those GPU bubbles gone, we saw an 11% end-to-end TPS speedup.
+Figure 1. Decode at batch size 1, before Spec v2 optimizations (top) vs. after (bottom). With it on, there is no bubble between run_batch iterations.
+IndexShare MTP in SGLang
+GLM-5.2 ships a strong MTP head, with accept lengths frequently hitting 5+, which gives significant speedups on low-latency workloads like agentic coding. To implement GLM-5.2's MTP behavior correctly, we made a few changes to SGLang's speculative decoding runtime.
+First, IndexShare requires SGLang to reuse the DSA indexer's top-k across draft steps: the top-k computed at draft step 0 is held and passed to later steps, so they skip recomputing the indexer. This cut draft-step cost by up to ~1.9x at long context, with no hit to output quality.
+Second, the top-k needs to be seeded from the right place, which in SGLang is the draft-extend of the previous run_batch iteration. Because Spec V2 runs its steps asynchronously, we had to thread that seed through the overlap scheduler's relay buffer so it wouldn't get lost between iterations.
+Kernel Optimization
+TopK-V2
+The DSA indexer turns each query into scores over historical KV positions, then selects the top candidates for sparse attention. Following our “Lightning-TopK” design introduced in DeepSeek-V4 Blog , we upgraded the original DSA TopK-V1 kernel to TopK-V2, which treated TopK as a selection problem rather than a sorting problem.
+Figure 2: TopK-V2 partitions a long score row across eight CTAs, each building a local 10-bit histogram. A cluster-wide reduction locates the bin containing the 2048th-largest score; values above it are emitted directly, while boundary candidates undergo exact FP32 radix selection. The selected logical positions are then translated into physical indexer KV-cache slots.
+Figure 3: When TopK-V2 builds histogram, each FP32 score is rounded to FP16 and transformed into an unsigned key whose ordering matches the numerical score order. The upper 10 key bits select one of 1,024 bins, whose counter is atomically incremented. This coarse histogram only locates the boundary region; FP32 refinement preserves the accuracy of the final top-k selection.
+TopK-V2 uses register-resident or single-CTA streaming paths for short and medium rows. For long rows, a cluster of eight CTAs builds local 10-bit radix histograms and reduces them across the cluster to identify the threshold bin.
+A cluster-wide reduction locates the bin containing the 2048th-largest score; values above it are emitted directly, while boundary candidates undergo exact FP32 radix selection. The selected logical positions are then translated into physical indexer KV-cache slots. The kernel then collects candidates at the FP32 boundary and uses an exact radix tie-break to return exactly k entries, with runtime k supported up to 2048.
+A planning kernel chooses the cluster cutoff from the batch's sequence-length distribution and builds a work list for the persistent cluster pool, so the resulting plan is generated at each forward and reused across DSA layers. TopK-V2's selection and page-table transform is also fused into a single kernel to cut latency.
+Figure 4: Comparison of Kernel Latency between TopK-V1 and TopK-V2, on target model verification with batch size 1 and 6 draft tokens. Both kernels are fusing Top-K with page table transformation together.
+From benchmark results, TopK-V2 reduces average kernel latency from 40.7 µs to 17.5 µs at 80K ISL, a 2.33× speedup. Its advantage grows with context length, reaching 10.17× at 1M ISL by reducing latency from 372.1 µs to 36.6 µs. This widening gap shows that TopK-V2 scales much more efficiently for long-context workloads.
+Indexer Prologue Fusion
+Figure 5: DSA Indexer Prologue kernels: before and after the fusion
+The DSA indexer prologue prepares two streams of data: a key representation
+stored in the indexer KV cache and a query representation used to compute sparse
+attention candidates. The original implementation expressed this as a sequence
+of small kernels and projections.
+In the "before" path, the key side runs wk , LayerNorm, RoPE, Hadamard transform, FP8 quantization, and cache store. The query side runs wq_b , RoPE, Hadamard transform, FP8 quantization, and head-gate scaling. In addition, weights_proj is a separate projection feeding the per-head gate.
+PR #27705 collapses this dependency chain in two ways:
+First, it fuses wk and weights_proj into a single BF16 projection,
+wk_weights_proj . The output is split into the key activations and the raw
+head-gate weights. This removes one small GEMM from the indexer path and lets
+the head-gate weights be reused directly by the fused query kernel.
+Second, it fuses the elementwise tails:
+Key path: LayerNorm + RoPE + FP8 quantization + paged indexer KV cache store.
+Query path: RoPE + FP8 quantization + head-gate scaling.
+The figure illustrates the important scheduling consequence. Before fusion, the
+cache store sat after the key-side work and extended the critical path. After
+fusion, the key side can run as one kernel that includes the store, while the query side runs as a separate fused kernel. The two sides can overlap, so the indexer prologue becomes a shorter and cleaner pair of branches rather than a long chain of launches. The total amount of kernels drops from 12 to 4.
+The fused path also drops the Hadamard transform. Applying the same orthonormal
+transform to Q and K preserves their inner products before quantization, so its
+The main effect was on the quantized representation. The fused path instead
+quantizes the untransformed activations directly.
+The kernel-count reduction translates directly into measurable decode throughput gains, though the effect is more pronounced at small batch sizes where launch overhead dominates. At batch size 1, decode throughput improves by roughly 8%, since the indexer prologue's memory-bound kernels disappear and the collapse from 12 kernels to 4 removes a proportionally larger share of the critical path. At batch size 128, the improvement is smaller but still consistent, at around 5%.
+GEMM Kernels Improvement
+Figure 6: Speedup of CuteDSL BF16 GEMM vs CuBLAS GEMM, over different batch sizes
+Not every matrix multiplication in GLM-5.2 runs in NVFP4. To protect accuracy, the checkpoint's quantization recipe keeps the attention projections and the shared-expert MLP in BF16, and only quantizes the routed experts. PR #30117 adds a selectable CuTe DSL BF16 GEMM backend from Flashinfer’s TGV GEMM built specifically for these BF16 layers.
+The kernel splits the work across warps with dedicated jobs: some warps only load data from memory, one warp only does the matrix multiply, and a few warps only write the result back out. Since these are separate warps all running at once, loading, computing, and storing overlap instead of happening one after another.
+The real source of the speedup is how aggressively the kernel pipelines load. Instead of loading one tile of data and waiting for it to be used before loading the next, it keeps many tiles' worth of data in flight at once, using nearly all of the GPU's shared memory to do so. At the small batch sizes decoding runs at, these GEMMs spend most of their time waiting on memory rather than computing, so the further ahead the kernel can load, the less time is ever spent waiting. That's the main edge over a general-purpose library like cuBLAS, which pipelines more conservatively.
+A tuning step also picks the tile size that best fits the shape being run, and a heuristic measured ahead of time decides per call whether to use this kernel or fall back to cuBLAS.
+Two of these BF16 layers benefit clearly at TP4: the fused QKV projection (M, 2624, 6144, replicated across ranks) and the attention output projection o_proj (M, 6144, 4096, split across ranks). Sweeping the full decode range M=1 to 32:
+Fused QKV projection wins at every batch size, averaging 1.08x over cuBLAS, peaking at 1.13x. o_proj also wins at every batch size, averaging 1.05x, peaking at 1.08x. For batch size 1, the end-to-end decoding speedup is approximately 4%.
+Performance Results
+Figure 7: Pareto curves for GLM 5.2 NVFP4 performance on SGLang.
+We collected the performance results of GLM NVFP4 models on an OpenHands multi-turn agentic coding workload in Figure 7. Each conversation starts with an around 80K token prompt, and outputs around 220 tokens each turn, for a total of 13-turns. Successive turns reuse the prefix for a ~92% aggregate cache hit rate. We perform a concurrency sweep and plot per-GPU token throughput (tok/s/GPU) against interactivity (tok/s/user). Each figure fixes the model, GPU family, precision, workload, serving framework, and serving mode, and compares SGLang against itself across different versions.
+Three things stand out. First, GLM-5.2 is a substantially more efficient architecture than GLM-5.1. On the same SGLang release, GLM-5.2 delivers a ~1.4x and ~1.3x improvement in single-user interactivity per-GPU throughput, respectively, on both 4×GB300 and 8×B300. This gain comes from applying IndexShare to the DSA layers and from the improved MTP head, which reuses IndexShare and KVShare. Second, single-user interactivity has improved 18-34% since day-0. At batch size 1, our optimizations sharply cut per-token overhead, letting us reach 500+ TPS on 8xB300. Third, we made no compromise on high-concurrency throughput, peak throughput at batch size 8 also improved by 6–11%.
+Figure 8: Ablation test with changing input sequence lengths. We simulated an acceptance length of 5 to improve reproducibility.
+The ISL Ablation results in Figure 8 directly illustrate the payoff of our indexer optimizations. On the day-0 path, the DSA indexer must rank a score row that grows with the context, so its cost climbs with sequence length and single-user interactivity degrades rapidly as the input grows. TopK-V2 significantly alleviates that bottleneck, holding interactivity essentially flat all the way out to 1M tokens.
+What's Next
+This blog is mostly focused on optimization of low concurrency and high cache-hit rate scenarios. In the future, we will extend our support to higher concurrency scenarios:
+Better kernels for heavier workloads: ragged TopK-V2 for prefill, faster MQA logits kernel for indexer
+Optimization of PD Disaggregation and Expert Parallel techniques under agentic workload
+Improving cache usage with HiCache , HiSparse , and LayerSplit techniques.
+Supporting DSpark for GLM 5.2, which helps boosting the acceptance rate of speculative decoding under large concurrencies
+Acknowledgements
+We would like to express our gratitude to the following organizations and individuals, for their contribution to the support and optimization of GLM 5.2 NVFP4 model.
+SGLang Community/RadixArk: Khoa Pham, Baizhou Zhang, Jimmy Shong, Brayden Zhong, Ziyi Xu, Mohammad Miadh Angkad, Xinyuan Tong, Zhendong Hua, Zijie Xia, Banghua Zhu and many others – For optimization and benchmarking
+Nvidia: Julien Lin, Zhiyu Cheng, Po-Han Huang, Ryan Stewart, Triston Cao and many others – For helping with Day-0 support of GLM5.2 NVFP4
+GLM Team: Yuxuan Zhang – For implementing and verifying IndexShare in SGLang
+Appendix
+Reproduction
+For reproducing the performance results, please refer to custom scripts under this branch .
+We are using SGLang v0.5.15.post1 as server environment, and evalscope as the benchmark client.
+For the workload, we applied OpenHands multi-turn agentic replay, with mean input ≈ 80k tokens/request, 220 output tokens/turn, 13 turns/conversation, ~92% aggregate prefix-cache hit rate, and real EAGLE speculative acceptance without simulation.
+The server launching commands are as follow:
+# TP 4/TP 8
+export SGLANG_OPT_USE_TOPK_V2=1
+export SGLANG_ENABLE_MOE_DEFERRED_FINALIZE=1
+python3 -m sglang.launch_server \
+--model-path nvidia/GLM-5.2-NVFP4 \
+--tensor-parallel-size 4 \ # --tensor-parallel-size 8 for 8*B300
+--quantization modelopt_fp4 \
+--context-length 90000 \
+--max-running-requests 16 \
+--max-prefill-tokens 8192 \
+--chunked-prefill-size 8192 \
+--cuda-graph-max-bs-decode 16 \
+--mem-fraction-static 0.87 \
+--trust-remote-code \
+--kv-cache-dtype fp8_e4m3 \
+--bf16-gemm-backend cutedsl \
+--reasoning-parser glm45 \
+--tool-call-parser glm47 \
+--speculative-algorithm EAGLE \
+--speculative-num-steps 5 \
+--speculative-eagle-topk 1 \
+--speculative-num-draft-tokens 6 \
+--enable-cache-report \
+--host localhost \
+--port " $PORT "
+# TEP 4/TEP 8
+export SGLANG_OPT_USE_TOPK_V2=1
+export SGLANG_ENABLE_MOE_DEFERRED_FINALIZE=1
+python3 -m sglang.launch_server \
+--model-path nvidia/GLM-5.2-NVFP4 \
+--tensor-parallel-size 4 \ # --tensor-parallel-size 8 for 8*B300
+--ep-size 4 \ # --ep-size 8 for 8*B300
+--quantization modelopt_fp4 \
+--context-length 90000 \
+--max-running-requests 16 \
+--max-prefill-tokens 8192 \
+--chunked-prefill-size 8192 \
+--cuda-graph-max-bs-decode 16 \
+--mem-fraction-static 0.87 \
+--trust-remote-code \
+--kv-cache-dtype fp8_e4m3 \
+--bf16-gemm-backend cutedsl \
+--reasoning-parser glm45 \
+--tool-call-parser glm47 \
+--speculative-algorithm EAGLE \
+--speculative-num-steps 5 \
+--speculative-eagle-topk 1 \
+--speculative-num-draft-tokens 6 \
+--enable-cache-report \
+--host localhost \
+--port " $PORT "
+Pull Request List
+IndexShare implementation: #27114 , #29654 , #29787 , #30839 , #30992
+TopK-V2: #26788 , #30274
+Draft extend cuda graph: #29413
+DSA metadata fusion and sync removal: #29415 , #29499
+Indexer Prologue Fusion: #27705
+GEMM Kernels: #30177
+Other optimization PRs: #21531 , #29595 , #29667
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 94
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":15636,"paragraph_count":135,"sentence_count":100,"boilerplate_hits":1,"symbol_ratio":0.0031,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   LMSYS 与 SGLang 团队针对智谱 GLM-5.2 NVFP4 模型在 Grace Blackwell 硬件上推出多项优化。运行时方面，Spec V2 重叠调度消除 GPU 气泡，端到端 TPS 提升 11%；IndexShare MTP 在 draft 步骤间复用 DSA indexer 的 top-k，长上下文下 draft 步骤成本降低约 1.9 倍。内核方面，TopK-V2 将 TopK 视为选择问题，80K ISL 下平均延迟从 40.7 μs 降至 17.5 μs（2.33× 加速），1M ISL 下从 372.1 μs 降至 36.6 μs（10.17× 加速）。优化后 8×B300 单 batch 解码吞吐超过 500 TPS。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   ‹ Back to Blog ‹ Back to Blog Contents TL;DR Background Optimization Runtime Optimization Zero-overhead scheduling and Spec v2 IndexShare MTP in SGLang Kernel Optimization TopK-V2 Indexer Prologue Fusion GEMM Kernels Improvement Performance Results What's Next Acknowledgements Appendix Reproduction Pull Request List Serving GLM5.
+
+3. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   2 NVFP4 Agentic Workload with SGLang: Reaching 500 TPS in 2 Weeks SGLang Team July 14, 2026 TL;DR More than 500 TPS on 8xB300 (bs=1) Sync free speculative decoding for GLM 5.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   2 MTP Built-in IndexShare MTP with Spec V2 2.
+
+5. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   33x faster TopK-V2 for ISL 80k Indexer prologue fusion Gemm kernels improvement Figure 0.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Performance comparison between Day-0 and v0.
+
+## business_elements
+
+- companies: LMSYS, Blog（Chatbot Arena 团队）, Nvidia
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 5.2, 4, 8, 300, 500, 2, 11%, 1.9 倍
+- quotes: Lightning-TopK
+
+## evidence_seed
+
+- company_actions: ‹ Back to Blog ‹ Back to Blog Contents TL;DR Background Optimization Runtime Optimization Zero-overhead scheduling and Spec v2 IndexShare MTP in SGLang Kernel Optimization TopK-V2 Indexer Prologue Fusion GEMM Kernels Improvement Performance Results What's Next Acknowledgements Appendix Reproduction Pull Request List Serving GLM5. / 2 MTP Built-in IndexShare MTP with Spec V2 2. / Performance comparison between Day-0 and v0.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"LMSYS 与 SGLang 团队为 GLM-5.2 NVFP4 推出推理优化，8×B300 单 batch 解码超 500 TPS","discovery_summary":"LMSYS 与 SGLang 团队针对智谱 GLM-5.2 NVFP4 模型在 Grace Blackwell 硬件上推出多项优化。运行时方面，Spec V2 重叠调度消除 GPU 气泡，端到端 TPS 提升 11%；IndexShare MTP 在 draft 步骤间复用 DSA indexer 的 top-k，长上下文下 draft 步骤成本降低约 1.9 倍。内核方面，TopK-V2 将 TopK 视为选择问题，80K ISL 下平均延迟从 40.7 μs 降至 17.5 μs（2.33× 加速），1M ISL 下从 372.1 μs 降至 36.6 μs（10.17× 加速）。优化后 8×B300 单 batch 解码吞吐超过 500 TPS。","source_name":"LMSYS：Blog（Chatbot Arena 团队）","origin_url":"https://www.lmsys.org/blog/2026-07-13-glm52-optimization","discovered_at":"2026-07-15T04:20:27.108Z","rank_on_page":180,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+LMSYS 与 SGLang 团队针对智谱 GLM-5.2 NVFP4 模型在 Grace Blackwell 硬件上推出多项优化。运行时方面，Spec V2 重叠调度消除 GPU 气泡，端到端 TPS 提升 11%；IndexShare MTP 在 draft 步骤间复用 DSA indexer 的 top-k，长上下文下 draft 步骤成本降低约 1.9 倍。内核方面，TopK-V2 将 TopK 视为选择问题，80K ISL 下平均延迟从 40.7 μs 降至 17.5 μs（2.33× 加速），1M ISL 下从 372.1 μs 降至 36.6 μs（10.17× 加速）。优化后 8×B300 单 batch 解码吞吐超过 500 TPS。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

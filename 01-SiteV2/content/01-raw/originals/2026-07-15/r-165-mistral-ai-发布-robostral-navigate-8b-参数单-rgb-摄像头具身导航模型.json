@@ -1,0 +1,266 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-165",
+  "title": "Mistral AI 发布 Robostral Navigate：8B 参数单 RGB 摄像头具身导航模型",
+  "title_zh": "Mistral AI 发布 Robostral Navigate：8B 参数单 RGB 摄像头具身导航模型",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://www.marktechpost.com/2026/07/14/mistral-ai-releases-robostral-navigate-an-8b-model-enabling-robots-to-navigate-complex-environments-using-a-single-rgb-camera",
+  "canonical_url": "https://marktechpost.com/2026/07/14/mistral-ai-releases-robostral-navigate-an-8b-model-enabling-robots-to-navigate-complex-environments-using-a-single-rgb-camera",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": false,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-14T07:20:38.000Z",
+  "collected_at": "2026-07-15T04:28:38.317Z",
+  "language": "mixed",
+  "full_text": "Mistral AI 推出首个具身导航模型 Robostral Navigate。该 8B 参数模型仅使用单 RGB 摄像头，即可根据自然语言指令在办公室、住宅等复杂环境中自主移动。在 R2R-CE 基准的 validation unseen 分项上达到 76.6% 成功率，比最佳单摄像头方案高 9.7 个百分点。模型采用\"指向\"决策方法预测目标图像坐标，目标出视野时回退到位移指令。训练数据完全来自仿真，包含约 40 万条轨迹、覆盖 6000 个场景。基于前缀缓存和树状注意力掩码的训练策略将训练 token 量压缩 22 倍，后续在线强化学习阶段进一步提升成功率 3.2%。",
+  "clean_text": "Mistral AI 推出首个具身导航模型 Robostral Navigate。该 8B 参数模型仅使用单 RGB 摄像头，即可根据自然语言指令在办公室、住宅等复杂环境中自主移动。在 R2R-CE 基准的 validation unseen 分项上达到 76.6% 成功率，比最佳单摄像头方案高 9.7 个百分点。模型采用\"指向\"决策方法预测目标图像坐标，目标出视野时回退到位移指令。训练数据完全来自仿真，包含约 40 万条轨迹、覆盖 6000 个场景。基于前缀缓存和树状注意力掩码的训练策略将训练 token 量压缩 22 倍，后续在线强化学习阶段进一步提升成功率 3.2%。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-15/r-165-mistral-ai-发布-robostral-navigate-8b-参数单-rgb-摄像头具身导航模型.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-15/r-165-mistral-ai-发布-robostral-navigate-8b-参数单-rgb-摄像头具身导航模型.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "summary-only-low-readable-body",
+  "extraction_quality": "failed",
+  "extraction_method": "none",
+  "readability_score": 0,
+  "extractor_diagnostics": {
+    "readability_score": 0,
+    "text_length": 0,
+    "paragraph_count": 0,
+    "sentence_count": 0,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 1,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "none"
+  },
+  "has_full_text": false,
+  "content_length": 290,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "missing_or_summary_only",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "8929ac334d143e6f",
+    "missing": [
+      "missing_full_text"
+    ]
+  },
+  "evidence_strength": "blocked",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "traceable_summary_or_observation_candidate",
+  "degradation_reasons": [
+    "index_only_or_directory_page",
+    "missing_full_text"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "aihot_visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "discovery_only",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Mistral AI 发布 Robostral Navigate：8B 参数单 RGB 摄像头具身导航模型",
+    "discovery_summary": "Mistral AI 推出首个具身导航模型 Robostral Navigate。该 8B 参数模型仅使用单 RGB 摄像头，即可根据自然语言指令在办公室、住宅等复杂环境中自主移动。在 R2R-CE 基准的 validation unseen 分项上达到 76.6% 成功率，比最佳单摄像头方案高 9.7 个百分点。模型采用\"指向\"决策方法预测目标图像坐标，目标出视野时回退到位移指令。训练数据完全来自仿真，包含约 40 万条轨迹、覆盖 6000 个场景。基于前缀缓存和树状注意力掩码的训练策略将训练 token 量压缩 22 倍，后续在线强化学习阶段进一步提升成功率 3.2%。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/07/14/mistral-ai-releases-robostral-navigate-an-8b-model-enabling-robots-to-navigate-complex-environments-using-a-single-rgb-camera",
+    "discovered_at": "2026-07-15T04:20:27.146Z",
+    "rank_on_page": 322,
+    "discovery_status": "discovered"
+  },
+  "source_role": "discovery_source",
+  "origin_fetch_status": "summary_only",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "2c0f5651d85e5937",
+  "content_hash": "8929ac334d143e6f",
+  "full_text_hash": "8929ac334d143e6f",
+  "semantic_hash": "39b19ca7b66bbb71",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-14T07:20:38.000Z",
+  "last_seen_at": "2026-07-15T04:28:38.317Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Mistral AI 推出首个具身导航模型 Robostral Navigate。该 8B 参数模型仅使用单 RGB 摄像头，即可根据自然语言指令在办公室、住宅等复杂环境中自主移动。在 R2R-CE 基准的 validation unseen 分项上达到 76.6% 成功率，比最佳单摄像头方案高 9.7 个百分点。模型采用\"指向\"决策方法预测目标图像坐标，目标出视野时回退到位移指令。训练数据完全来自仿真，包含约 40 万条轨迹、覆盖 6000 个场景。基于前缀缓存和树状注意力掩码的训练策略将训练 token 量压缩 22 倍，后续在线强化学习阶段进一步提升成功率 3.2%。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "product_update",
+      "text": "Mistral AI 推出首个具身导航模型 Robostral Navigate。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "该 8B 参数模型仅使用单 RGB 摄像头，即可根据自然语言指令在办公室、住宅等复杂环境中自主移动。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "在 R2R-CE 基准的 validation unseen 分项上达到 76.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "6% 成功率，比最佳单摄像头方案高 9.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "case_detail",
+      "text": "模型采用\"指向\"决策方法预测目标图像坐标，目标出视野时回退到位移指令。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-15T04:28:38.317Z",
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "Mistral"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [],
+    "numbers": [
+      "8B",
+      "2",
+      "76.6%",
+      "9.7",
+      "40 万",
+      "6000",
+      "22 倍",
+      "3.2%"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Mistral AI 推出首个具身导航模型 Robostral Navigate。",
+      "该 8B 参数模型仅使用单 RGB 摄像头，即可根据自然语言指令在办公室、住宅等复杂环境中自主移动。",
+      "在 R2R-CE 基准的 validation unseen 分项上达到 76."
+    ],
+    "case_details": [
+      "模型采用\"指向\"决策方法预测目标图像坐标，目标出视野时回退到位移指令。"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 4,
+    "importance_reason": "new product or service; rubric=4 concrete important change",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 2,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "discard"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存",
+    "没有变化前后流程线索",
+    "没有可用全文快照"
+  ],
+  "raw_status": "ignored",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Mistral AI 发布 Robostral Navigate：8B 参数单 RGB 摄像头具身导航模型\n\n- raw_id: R-165\n- title_zh: Mistral AI 发布 Robostral Navigate：8B 参数单 RGB 摄像头具身导航模型\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.marktechpost.com/2026/07/14/mistral-ai-releases-robostral-navigate-an-8b-model-enabling-robots-to-navigate-complex-environments-using-a-single-rgb-camera\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-07-15T04:28:38.317Z\n\n## clean_text\n\nMistral AI 推出首个具身导航模型 Robostral Navigate。该 8B 参数模型仅使用单 RGB 摄像头，即可根据自然语言指令在办公室、住宅等复杂环境中自主移动。在 R2R-CE 基准的 validation unseen 分项上达到 76.6% 成功率，比最佳单摄像头方案高 9.7 个百分点。模型采用\"指向\"决策方法预测目标图像坐标，目标出视野时回退到位移指令。训练数据完全来自仿真，包含约 40 万条轨迹、覆盖 6000 个场景。基于前缀缓存和树状注意力掩码的训练策略将训练 token 量压缩 22 倍，后续在线强化学习阶段进一步提升成功率 3.2%。\n\n## full_text\n\nMistral AI 推出首个具身导航模型 Robostral Navigate。该 8B 参数模型仅使用单 RGB 摄像头，即可根据自然语言指令在办公室、住宅等复杂环境中自主移动。在 R2R-CE 基准的 validation unseen 分项上达到 76.6% 成功率，比最佳单摄像头方案高 9.7 个百分点。模型采用\"指向\"决策方法预测目标图像坐标，目标出视野时回退到位移指令。训练数据完全来自仿真，包含约 40 万条轨迹、覆盖 6000 个场景。基于前缀缓存和树状注意力掩码的训练策略将训练 token 量压缩 22 倍，后续在线强化学习阶段进一步提升成功率 3.2%。\n\n## extraction_diagnostics\n\n- extraction_method: none\n- readability_score: 0\n- fetch_status: summary-only-low-readable-body\n- extraction_quality: failed\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] Mistral AI 推出首个具身导航模型 Robostral Navigate。该 8B 参数模型仅使用单 RGB 摄像头，即可根据自然语言指令在办公室、住宅等复杂环境中自主移动。在 R2R-CE 基准的 validation unseen 分项上达到 76.6% 成功率，比最佳单摄像头方案高 9.7 个百分点。模型采用\"指向\"决策方法预测目标图像坐标，目标出视野时回退到位移指令。训练数据完全来自仿真，包含约 40 万条轨迹、覆盖 6000 个场景。基于前缀缓存和树状注意力掩码的训练策略将训练 token 量压缩 22 倍，后续在线强化学习阶段进一步提升成功率 3.2%。\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Mistral AI 推出首个具身导航模型 Robostral Navigate。\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 该 8B 参数模型仅使用单 RGB 摄像头，即可根据自然语言指令在办公室、住宅等复杂环境中自主移动。\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 在 R2R-CE 基准的 validation unseen 分项上达到 76.\n5. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 6% 成功率，比最佳单摄像头方案高 9.\n6. [case_detail / signal_card_candidate, relationship_graph_input, case / high] 模型采用\"指向\"决策方法预测目标图像坐标，目标出视野时回退到位移指令。\n"
+}

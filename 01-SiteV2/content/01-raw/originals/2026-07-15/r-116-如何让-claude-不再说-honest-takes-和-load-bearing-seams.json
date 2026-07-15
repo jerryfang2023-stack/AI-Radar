@@ -1,0 +1,271 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-116",
+  "title": "如何让 Claude 不再说\"honest takes\"和\"load-bearing seams\"",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
+  "canonical_url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "community_feedback",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-14T00:00:00.000Z",
+  "collected_at": "2026-07-15T04:28:38.217Z",
+  "language": "mixed",
+  "full_text": "Absolutely ripping your hair out reading Claude referring to everything as “honest takes” and \"load-bearing seams\"? You’re not the only one . But what if I tell you there’s a way to take this massive source of frustration and make it so ridiculous you can't but laugh at it? Or just simply fix Claude's vocabulary. I present to you, the MessageDisplay hook.\nFirst you need a little script with some replacements set up:\n#!/usr/bin/env python3\nimport json , re , sys\nreplacements = {\n\"seam\": \"whatchamacallit\" ,\n\"you're absolutely right\": \"I'm a complete clown\" ,\n\"honest take\": \"spicy doodad\" ,\n\"load-bearing\": \"cooked\"\ndata = json . load ( sys . stdin )\ntext = data . get ( \"delta\" ) or \"\"\nfor phrase , replacement in replacements . items ( ) :\npattern = r \" \\b \" + re . escape ( phrase ) + r \" \\b \"\ntext = re . sub ( pattern , replacement , text , flags = re . IGNORECASE )\nprint ( json . dumps ( {\n\"hookSpecificOutput\": {\n\"hookEventName\": \"MessageDisplay\" ,\n\"displayContent\": text ,\n} ) )\nput that in ~/.claude/hooks/wordswap.sh and make it executable with chmod +x ~/.claude/hooks/wordswap.sh . Then to hook it up, add it to your ~/.claude/settings.json in the hooks block like:\n\"hooks\" : {\n\"MessageDisplay\" : [\n{ \"hooks\" : [ { \"type\" : \"command\" , \"command\" : \"$HOME/.claude/hooks/wordswap.sh\" } ] }\nHooks load at startup, so you just need to start a new session to start your new life.\nI'm sure you can come up with much better and more productive replacements than me. Have fun!\nWritten by Johanna Larsson .\nThoughts on this post? Find me on Bluesky at\n@jola.dev\nRelated posts\nLet libraries be libraries\nJuly 07, 2026\nA gentle rant on the topic of libraries that run as Elixir applications and why that's an anti-pattern for library design.\nelixir\noss\nCI workflows on Tangled for Elixir\nJuly 04, 2026\nHow to set up CI workflows on Tangled for Elixir, with specific Elixir and Erlang versions, and a PostgreSQL service.\natproto\ntangled\nAutomatically syncing your blog to atproto and standard.site\nJune 29, 2026\nKicking off a little side project for automatically discovering content through blog post feeds and syncing to atproto and standard.site.\nblog\natproto",
+  "clean_text": "Absolutely ripping your hair out reading Claude referring to everything as “honest takes” and \"load-bearing seams\"? You’re not the only one . But what if I tell you there’s a way to take this massive source of frustration and make it so ridiculous you can't but laugh at it? Or just simply fix Claude's vocabulary. I present to you, the MessageDisplay hook.\nFirst you need a little script with some replacements set up:\n#!/usr/bin/env python3\nimport json , re , sys\nreplacements = {\n\"seam\": \"whatchamacallit\" ,\n\"you're absolutely right\": \"I'm a complete clown\" ,\n\"honest take\": \"spicy doodad\" ,\n\"load-bearing\": \"cooked\"\ndata = json . load ( sys . stdin )\ntext = data . get ( \"delta\" ) or \"\"\nfor phrase , replacement in replacements . items ( ) :\npattern = r \" \\b \" + re . escape ( phrase ) + r \" \\b \"\ntext = re . sub ( pattern , replacement , text , flags = re . IGNORECASE )\nprint ( json . dumps ( {\n\"hookSpecificOutput\": {\n\"hookEventName\": \"MessageDisplay\" ,\n\"displayContent\": text ,\n} ) )\nput that in ~/.claude/hooks/wordswap.sh and make it executable with chmod +x ~/.claude/hooks/wordswap.sh . Then to hook it up, add it to your ~/.claude/settings.json in the hooks block like:\n\"hooks\" : {\n\"MessageDisplay\" : [\n{ \"hooks\" : [ { \"type\" : \"command\" , \"command\" : \"$HOME/.claude/hooks/wordswap.sh\" } ] }\nHooks load at startup, so you just need to start a new session to start your new life.\nI'm sure you can come up with much better and more productive replacements than me. Have fun!\nWritten by Johanna Larsson .\nThoughts on this post? Find me on Bluesky at\n@jola.dev\nRelated posts\nLet libraries be libraries\nJuly 07, 2026\nA gentle rant on the topic of libraries that run as Elixir applications and why that's an anti-pattern for library design.\nelixir\noss\nCI workflows on Tangled for Elixir\nJuly 04, 2026\nHow to set up CI workflows on Tangled for Elixir, with specific Elixir and Erlang versions, and a PostgreSQL service.\natproto\ntangled\nAutomatically syncing your blog to atproto and standard.site\nJune 29, 2026\nKicking off a little side project for automatically discovering content through blog post feeds and syncing to atproto and standard.site.\nblog\natproto",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-15/r-116-如何让-claude-不再说-honest-takes-和-load-bearing-seams.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-15/r-116-如何让-claude-不再说-honest-takes-和-load-bearing-seams.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "medium",
+  "extraction_method": "main",
+  "readability_score": 76,
+  "extractor_diagnostics": {
+    "readability_score": 76,
+    "text_length": 2167,
+    "paragraph_count": 30,
+    "sentence_count": 22,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0097,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 2167,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "99dcf9cab1fcfde6",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "如何让 Claude 不再说\"honest takes\"和\"load-bearing seams\"",
+    "discovery_summary": "用户可通过 Claude 的 MessageDisplay Hook 机制自定义词汇替换。编写 Python 脚本，将\"seam\"替换为\"whatchamacallit\"、\"you're absolutely right\"替换为\"I'm a complete clown\"、\"honest take\"替换为\"spicy doodad\"、\"load-bearing\"替换为\"cooked\"，保存为 `~/.claude/hooks/wordswap.sh` 并赋予执行权限，再在 `~/.claude/settings.json` 的 hooks 块中配置该命令。Hook 在启动时加载，新会话即生效。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
+    "discovered_at": "2026-07-15T04:20:27.112Z",
+    "rank_on_page": 192,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "7f97d56bb8a605fc",
+  "content_hash": "99dcf9cab1fcfde6",
+  "full_text_hash": "99dcf9cab1fcfde6",
+  "semantic_hash": "f36e281ebf96078f",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-14T00:00:00.000Z",
+  "last_seen_at": "2026-07-15T04:28:38.217Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "用户可通过 Claude 的 MessageDisplay Hook 机制自定义词汇替换。编写 Python 脚本，将\"seam\"替换为\"whatchamacallit\"、\"you're absolutely right\"替换为\"I'm a complete clown\"、\"honest take\"替换为\"spicy doodad\"、\"load-bearing\"替换为\"cooked\"，保存为 `~/.claude/hooks/wordswap.sh` 并赋予执行权限，再在 `~/.claude/settings.json` 的 hooks 块中配置该命令。Hook 在启动时加载，新会话即生效。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "quote",
+      "text": "Absolutely ripping your hair out reading Claude referring to everything as “honest takes” and \"load-bearing seams\"?",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "You’re not the only one .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "But what if I tell you there’s a way to take this massive source of frustration and make it so ridiculous you can't but laugh at it?",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Or just simply fix Claude's vocabulary.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "I present to you, the MessageDisplay hook.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-15T04:28:38.217Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）"
+    ],
+    "products": [
+      "Claude",
+      "claude"
+    ],
+    "people": [],
+    "industries": [],
+    "roles": [],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "3",
+      "07",
+      "2026",
+      "04",
+      "29"
+    ],
+    "quotes": [
+      "honest takes",
+      "load-bearing seams",
+      "whatchamacallit",
+      "you're absolutely right",
+      "I'm a complete clown"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "You’re not the only one .",
+      "But what if I tell you there’s a way to take this massive source of frustration and make it so ridiculous you can't but laugh at it?",
+      "Or just simply fix Claude's vocabulary."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "supporting commercial context only",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 3,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 如何让 Claude 不再说\"honest takes\"和\"load-bearing seams\"\n\n- raw_id: R-116\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-15T04:28:38.217Z\n\n## clean_text\n\nAbsolutely ripping your hair out reading Claude referring to everything as “honest takes” and \"load-bearing seams\"? You’re not the only one . But what if I tell you there’s a way to take this massive source of frustration and make it so ridiculous you can't but laugh at it? Or just simply fix Claude's vocabulary. I present to you, the MessageDisplay hook.\nFirst you need a little script with some replacements set up:\n#!/usr/bin/env python3\nimport json , re , sys\nreplacements = {\n\"seam\": \"whatchamacallit\" ,\n\"you're absolutely right\": \"I'm a complete clown\" ,\n\"honest take\": \"spicy doodad\" ,\n\"load-bearing\": \"cooked\"\ndata = json . load ( sys . stdin )\ntext = data . get ( \"delta\" ) or \"\"\nfor phrase , replacement in replacements . items ( ) :\npattern = r \" \\b \" + re . escape ( phrase ) + r \" \\b \"\ntext = re . sub ( pattern , replacement , text , flags = re . IGNORECASE )\nprint ( json . dumps ( {\n\"hookSpecificOutput\": {\n\"hookEventName\": \"MessageDisplay\" ,\n\"displayContent\": text ,\n} ) )\nput that in ~/.claude/hooks/wordswap.sh and make it executable with chmod +x ~/.claude/hooks/wordswap.sh . Then to hook it up, add it to your ~/.claude/settings.json in the hooks block like:\n\"hooks\" : {\n\"MessageDisplay\" : [\n{ \"hooks\" : [ { \"type\" : \"command\" , \"command\" : \"$HOME/.claude/hooks/wordswap.sh\" } ] }\nHooks load at startup, so you just need to start a new session to start your new life.\nI'm sure you can come up with much better and more productive replacements than me. Have fun!\nWritten by Johanna Larsson .\nThoughts on this post? Find me on Bluesky at\n@jola.dev\nRelated posts\nLet libraries be libraries\nJuly 07, 2026\nA gentle rant on the topic of libraries that run as Elixir applications and why that's an anti-pattern for library design.\nelixir\noss\nCI workflows on Tangled for Elixir\nJuly 04, 2026\nHow to set up CI workflows on Tangled for Elixir, with specific Elixir and Erlang versions, and a PostgreSQL service.\natproto\ntangled\nAutomatically syncing your blog to atproto and standard.site\nJune 29, 2026\nKicking off a little side project for automatically discovering content through blog post feeds and syncing to atproto and standard.site.\nblog\natproto\n\n## full_text\n\nAbsolutely ripping your hair out reading Claude referring to everything as “honest takes” and \"load-bearing seams\"? You’re not the only one . But what if I tell you there’s a way to take this massive source of frustration and make it so ridiculous you can't but laugh at it? Or just simply fix Claude's vocabulary. I present to you, the MessageDisplay hook.\nFirst you need a little script with some replacements set up:\n#!/usr/bin/env python3\nimport json , re , sys\nreplacements = {\n\"seam\": \"whatchamacallit\" ,\n\"you're absolutely right\": \"I'm a complete clown\" ,\n\"honest take\": \"spicy doodad\" ,\n\"load-bearing\": \"cooked\"\ndata = json . load ( sys . stdin )\ntext = data . get ( \"delta\" ) or \"\"\nfor phrase , replacement in replacements . items ( ) :\npattern = r \" \\b \" + re . escape ( phrase ) + r \" \\b \"\ntext = re . sub ( pattern , replacement , text , flags = re . IGNORECASE )\nprint ( json . dumps ( {\n\"hookSpecificOutput\": {\n\"hookEventName\": \"MessageDisplay\" ,\n\"displayContent\": text ,\n} ) )\nput that in ~/.claude/hooks/wordswap.sh and make it executable with chmod +x ~/.claude/hooks/wordswap.sh . Then to hook it up, add it to your ~/.claude/settings.json in the hooks block like:\n\"hooks\" : {\n\"MessageDisplay\" : [\n{ \"hooks\" : [ { \"type\" : \"command\" , \"command\" : \"$HOME/.claude/hooks/wordswap.sh\" } ] }\nHooks load at startup, so you just need to start a new session to start your new life.\nI'm sure you can come up with much better and more productive replacements than me. Have fun!\nWritten by Johanna Larsson .\nThoughts on this post? Find me on Bluesky at\n@jola.dev\nRelated posts\nLet libraries be libraries\nJuly 07, 2026\nA gentle rant on the topic of libraries that run as Elixir applications and why that's an anti-pattern for library design.\nelixir\noss\nCI workflows on Tangled for Elixir\nJuly 04, 2026\nHow to set up CI workflows on Tangled for Elixir, with specific Elixir and Erlang versions, and a PostgreSQL service.\natproto\ntangled\nAutomatically syncing your blog to atproto and standard.site\nJune 29, 2026\nKicking off a little side project for automatically discovering content through blog post feeds and syncing to atproto and standard.site.\nblog\natproto\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 76\n- fetch_status: fetched-readable-text-main\n- extraction_quality: medium\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] 用户可通过 Claude 的 MessageDisplay Hook 机制自定义词汇替换。编写 Python 脚本，将\"seam\"替换为\"whatchamacallit\"、\"you're absolutely right\"替换为\"I'm a complete clown\"、\"honest take\"替换为\"spicy doodad\"、\"load-bearing\"替换为\"cooked\"，保存为 `~/.claude/hooks/wordswap.sh` 并赋予执行权限，再在 `~/.claude/settings.json` 的 hooks 块中配置该命令。Hook 在启动时加载，新会话即生效。\n2. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] Absolutely ripping your hair out reading Claude referring to everything as “honest takes” and \"load-bearing seams\"?\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] You’re not the only one .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] But what if I tell you there’s a way to take this massive source of frustration and make it so ridiculous you can't but laugh at it?\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Or just simply fix Claude's vocabulary.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] I present to you, the MessageDisplay hook.\n"
+}
