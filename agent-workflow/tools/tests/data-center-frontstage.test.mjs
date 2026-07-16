@@ -145,10 +145,14 @@ test("community intelligence keeps the V3.4.5 content and link workflow in the V
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/data-center.html"), "utf8");
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
   const css = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.css"), "utf8");
+  const latest = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/community-intelligence-daily/2026-07-16.json"), "utf8"));
 
   assert.match(html, /data-community-dialog/u);
   assert.match(html, /data-community-dialog-content/u);
   assert.match(script, /data\/community-intelligence-daily\/index\.json/u);
+  assert.match(script, /all: \{ label: "全部", rail: "场景索引"/u);
+  assert.match(script, /activeView: "all"/u);
+  assert.match(script, /targetView === "all"/u);
   assert.match(script, /industry_case/u);
   assert.match(script, /tool_tip/u);
   assert.match(script, /opportunity/u);
@@ -161,6 +165,8 @@ test("community intelligence keeps the V3.4.5 content and link workflow in the V
   assert.match(css, /\.dc-community-dialog/u);
   assert.match(css, /\.dc-community-rail/u);
   assert.match(css, /\.dc-community-card/u);
+  assert.equal(latest.items.length, 61);
+  assert.ok(latest.items.some((item) => item.links?.some((link) => /feishu\.cn/u.test(link.href || ""))));
 });
 
 test("first-line viewpoints uses both monitoring lanes and the three-level V4 page structure", () => {
