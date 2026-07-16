@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-15T17:27:42.995Z",
+    "generatedAt": "2026-07-16T01:40:16.549Z",
     "feedGeneratedAt": "2026-07-15T07:01:28.551Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
@@ -10,10 +10,10 @@
   },
   "stats": {
     "builders": 20,
-    "remarks": 54,
+    "remarks": 52,
     "podcasts": 3,
     "blogsBuilt": 5,
-    "trackedSources": 33,
+    "trackedSources": 0,
     "rawBuilders": 15,
     "rawTweets": 39
   },
@@ -23,12 +23,6 @@
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "count": 11
-    },
-    {
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "count": 4
     },
     {
       "name": "Claude",
@@ -112,6 +106,12 @@
       "name": "Thariq",
       "handle": "trq212",
       "role": "Claude Code anthropicai.   prev YC W20, southpkcommons, medialab",
+      "count": 2
+    },
+    {
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
       "count": 2
     },
     {
@@ -211,41 +211,6 @@
       "replies": 0
     },
     {
-      "id": "https://www.tigera.io/blog/save-the-address-save-the-cloud-kubevirt-vm-migration-story/",
-      "source": "blog",
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "text": "Save the Address, Save the Cloud (KubeVirt VM Migration Story)",
-      "content": "Kubernetes is built for containers, and it&#8217;s been doing that since it used to run docker as an engine for its containers. But what if you want to add VMs to the mix? After all,... The post Save the Address, Save the Cloud (KubeVirt VM Migration Story) appeared first on Tigera – Creator of Cali",
-      "contentTranslation": "Kubernetes是为容器构建的，自从它曾经将docker作为容器的引擎运行以来，它一直在这样做。但是，如果您想将虚拟机添加到组合中，该怎么办？毕竟，...帖子Save the Address, Save the Cloud （ KubeVirt虚拟机迁移故事）首先出现在Tigera – Cali的创建者",
-      "contentTranslationStatus": "translated",
-      "translation": "保存地址，保存云（ KubeVirt虚拟机迁移故事）",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Wed, 08 Jul 2026 20:45:58 +0000",
-      "date": "2026-07-09",
-      "url": "https://www.tigera.io/blog/save-the-address-save-the-cloud-kubevirt-vm-migration-story/",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
       "id": "https://www.bensbites.com/p/how-to-use-gpt-56",
       "source": "blog",
       "name": "Ben's Bites AI Newsletter",
@@ -311,41 +276,6 @@
       "createdAt": "Tue, 14 Jul 2026 00:00:00 GMT",
       "date": "2026-07-14",
       "url": "https://tldr.tech/ai/2026-07-14",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://www.tigera.io/blog/save-the-address-save-the-cloud-a-hands-on-kubevirt-live-migration-workshop/",
-      "source": "blog",
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "text": "Save the Address, Save the Cloud: A Hands-on KubeVirt Live Migration Workshop",
-      "content": "In the previous post in this series, we covered why Virtual Machine (VM) Live Migration in Kubernetes is difficult: a VM&#8217;s IP is its identity, and the “new” VM on the destination node has to... The post Save the Address, Save the Cloud: A Hands-on KubeVirt Live Migration Workshop appeared firs",
-      "contentTranslation": "在本系列的上一篇文章中，我们介绍了为什么Kubernetes中的虚拟机（ VM ）实时迁移很困难：虚拟机的IP是其身份，目标节点上的“新”虚拟机必须...",
-      "contentTranslationStatus": "translated",
-      "translation": "保存地址，保存云： KubeVirt实时迁移实践工作坊",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Thu, 09 Jul 2026 13:58:26 +0000",
-      "date": "2026-07-09",
-      "url": "https://www.tigera.io/blog/save-the-address-save-the-cloud-a-hands-on-kubevirt-live-migration-workshop/",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -451,6 +381,76 @@
       "createdAt": "Fri, 10 Jul 2026 16:12:22 +0000",
       "date": "2026-07-11",
       "url": "https://www.tigera.io/blog/tiered-network-policy-scaling-kubernetes-security/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Mermaid to Unicode box art (grok-mermaid)",
+      "content": "Tool: Mermaid to Unicode box art (grok-mermaid) While exploring the codebase for the newly open-sourced Grok CLI coding agent I came across <a",
+      "contentTranslation": "工具：美人鱼到Unicode盒子艺术（ grok-mermaid ）在探索新开源的Grok CLI编码Agent的代码库时，我遇到了< a",
+      "contentTranslationStatus": "translated",
+      "translation": "美人鱼到Unicode盒子艺术（ grok-mermaid ）",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-16T00:33:18+00:00",
+      "date": "2026-07-16",
+      "url": "https://simonwillison.net/2026/Jul/16/grok-mermaid/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "xai-org/grok-build, now open source",
+      "content": "xai-org/grok-build, now open source xAI's grok CLI tool faced severe community backlash yesterday when it became apparent that running the command in a directory could upload that entire directory to xA",
+      "contentTranslation": "xai-org/grok-build ，现在是开源的xAI的grok CLI工具昨天面临严重的社区反弹，因为很明显，在目录中运行该命令可能会将整个目录上传到xA",
+      "contentTranslationStatus": "translated",
+      "translation": "xai-org/grok-build ，现已开源",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T23:59:30+00:00",
+      "date": "2026-07-16",
+      "url": "https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -1857,102 +1857,32 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Rewriting Bun in Rust",
-      "content": "Rewriting Bun in Rust Jarred Sumner has been promising this blog post ( since May 9th ) about his Zig to Rust rewrite of Bun for significantly longer than it took",
-      "contentTranslation": "Rewriting Bun in Rust Jarred Sumner一直承诺这篇博客文章（自5月9日起）关于他的Zig to Rust重写Bun的时间远远超过",
-      "contentTranslationStatus": "translated",
-      "translation": "在Rust中重写Bun",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-08T23:57:21+00:00",
-      "date": "2026-07-09",
-      "url": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Introducing GPT‑Live",
-      "content": "Introducing GPT‑Live OpenAI finally upgraded the model used by ChatGPT voice mode! I've had preview access for a few weeks in the iPhone app, and the new model is very impressive. It also has the abi",
-      "contentTranslation": "隆重推出GPT ‑ Live OpenAI终于升级了ChatGPT语音模式使用的模式！我已经在iPhone应用程序中预览了几周，新型号非常令人印象深刻。它也有abi",
-      "contentTranslationStatus": "translated",
-      "translation": "隆重推出GPT-Live",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "columnTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-applications",
-          "name": "AI 应用与平台",
-          "group": "track"
-        }
-      ],
-      "sourceType": "blog",
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-07-08T23:20:48+00:00",
-      "date": "2026-07-09",
-      "url": "https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
     }
   ],
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Training Data (Sequoia)",
-      "title": "Anthropic's Katelyn Lesse & Angela Jiang: Building an Ecosystem, not a Walled Garden",
-      "url": "https://feeds.megaphone.fm/trainingdata",
-      "publishedAt": "Tue, 14 Jul 2026 09:00:00 -0000",
-      "excerpt": "Katelyn Lesse and Angela Jiang lead the team building Anthropic's developer platform - the layer that both outside builders and Anthropic's own products run on top of. Angela frames the platform as a three-layer stack: knowledge, execution, and coordination. She argues the real leverage is what’s at the top: \"strategies,\" or meta-harnesses that give each token a different job, from advising to executing to reflecting to memory. On the question of open ecosystem vs. walled garden, they say they aren't precious about owning the stack. Katelyn points to Anthropic's self-hosted sandboxes with partners like Modal, Vercel, and Cloudflare. Whether the work runs on Anthropic's infrastructure or someone else's, what really matters to them is that the architecture is sound. The deeper bet is standards: they hand skills and MCP to the whole industry, build connectors on the MCP spec, and help agents (Claude and non-C…"
+      "name": "Latent Space",
+      "title": "Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks",
+      "url": "https://www.latent.space/p/databricks",
+      "publishedAt": "Wed, 24 Jun 2026 18:53:16 GMT",
+      "excerpt": "We’re excited to have Databricks join us at AIEWF, among hundreds of the top companies in the AI Engineer ecosystem. LS subscribers can use their discount to get past the late bird pricing and access over $50k in sponsor offers! Everyone is still talking about Satya’s Frontier Ecosystems post, but few have actually built a (<a target=\"_blank\" href=\"https://finance.yahoo.com/markets/stocks/articles/databrick…"
     },
     {
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "Ep 90: AI Pioneer Jürgen Schmidhuber on the State of AI Today",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-90-ai-pioneer-jurgen-schmidhuber-on-the-state-of-ai-today-yero2ugh",
-      "publishedAt": "Thu, 9 Jul 2026 13:00:00 +0000",
-      "excerpt": "Dr. Jürgen Schmidhuber, a renowned scientist and AI researcher widely regarded as one of the pioneers in the field, originated key ideas behind today's transformers, LSTMs, and recursive self-improvement through his lab's work. He argues that true AGI remains bottlenecked by physical hardware, that today's AI data center investments are headed for a correction as open-source keeps pace with closed labs, and that the path to general intelligence runs through artificial curiosity and self-generated experimentation rather than internet data. He closes by reconsidering mainstream AI safety arguments and offers a sweeping vision of self-replicating robot societies eventually colonizing the solar system. (0:00) Intro (1:24) How Close Is Superhuman AI? (2:27) Why ChatGPT Didn't Surprise Him (3:21) The Path to Recursive Self-Improvement (9:01) Will AI Takeoff…"
+      "name": "AI & I by Every",
+      "title": "Building a School Where AI Models Learn About Humanity",
+      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Building-a-School-Where-AI-Models-Learn-About-Humanity-e3l6god",
+      "publishedAt": "Wed, 24 Jun 2026 14:55:00 GMT",
+      "excerpt": "If scaling laws hold—and Surge AI CEO Edwin Chen believes they do—we’re hurtling toward a future where there’s nothing humans can do that AI can’t do better. When OpenAI’s models disproved an open conjecture posed by mathematician Paul Erdős using novel algebraic geometry techniques, Fields medalist Timothy Gowers felt the shift acutely. He initially thought the model had proved an upper bound, and braced himself: that would mean it was “all over for mathematicians very soon.” When he realized it had only found a counterexample, he was relieved—it bought him another year or two before the thing he’s devoted his life to becomes something AI does better.As founder and CEO of the company behind the data environments and evals the major model companies use to train their models, Chen has a unique perspective on how quickly AI models are absorbing tasks we used to think of as uniqu…"
     },
     {
       "source": "podcast",
-      "name": "No Priors",
-      "title": "Travel Through the Lens of AI with with Booking.com CEO Glenn Fogel",
-      "url": "https://feeds.megaphone.fm/nopriors",
-      "publishedAt": "Thu, 09 Jul 2026 10:00:00 -0000",
-      "excerpt": "When Glenn Fogel joined Priceline in 2000, the business was worth a few hundred million dollars. One week later, the Nasdaq peaked, eventually sending its stock down to a dollar a share. But over 25 years later, Booking Holdings has scaled over 1000x into an over $100 billion dollar global travel behemoth. Elad Gil is joined by Booking Holdings CEO Glenn Fogel to discuss his career, from law school and Wall Street to working at Priceline through the dot-com crash, and to helping grow the business into a multifaceted, dynamic travel marketplace in the AI era. Glenn explains how leveraging AI and agents such as Priceline’s ‘Penny’ makes travel planning and customer service better, while emphasizing the importance of preserving some human support for some users. He also talks about Booking’s strategy of reinvesting over $700 million into AI and other technologies while still offering stock buybacks and divide…"
+      "name": "Latent Space",
+      "title": "🔬 The Self-Driving Lab — Joseph Krause, Radical AI",
+      "url": "https://www.latent.space/p/radical-ai",
+      "publishedAt": "Wed, 17 Jun 2026 17:58:06 GMT",
+      "excerpt": "On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math, bio, or physics? Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted!) by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes. If you recall the LK99 drama of 2023…"
     }
   ]
 }
