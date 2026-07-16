@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 1390
-generated_at: 2026-07-15T17:27:19.405Z
+opinion_count: 1392
+generated_at: 2026-07-16T01:41:02.698Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -11,6 +11,7 @@ generated_at: 2026-07-15T17:27:19.405Z
 
 ## 人物
 
+- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 31 条 - 最新 2026-07-16
 - [Peter Yang](people/peter-yang/README.md) - 117 条 - 最新 2026-07-15
 - [Swyx](people/swyx/README.md) - 87 条 - 最新 2026-07-15
 - [Nikunj Kothari](people/nikunj-kothari/README.md) - 82 条 - 最新 2026-07-15
@@ -18,7 +19,6 @@ generated_at: 2026-07-15T17:27:19.405Z
 - [Dan Shipper](people/dan-shipper/README.md) - 67 条 - 最新 2026-07-15
 - [Aaron Levie](people/aaron-levie/README.md) - 62 条 - 最新 2026-07-15
 - [Peter Steinberger](people/peter-steinberger/README.md) - 61 条 - 最新 2026-07-15
-- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 29 条 - 最新 2026-07-15
 - [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 11 条 - 最新 2026-07-15
 - [Tigera Blog (Calico / AI Security)](people/tigera-blog-calico-ai-security/README.md) - 4 条 - 最新 2026-07-15
 - [Garry Tan](people/garry-tan/README.md) - 96 条 - 最新 2026-07-14
