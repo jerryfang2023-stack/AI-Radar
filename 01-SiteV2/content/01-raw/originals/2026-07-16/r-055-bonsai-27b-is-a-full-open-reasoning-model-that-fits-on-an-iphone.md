@@ -1,0 +1,299 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-055
+title: "Bonsai 27B is a full open reasoning model that fits on an iPhone"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://the-decoder.com/bonsai-27b-is-a-full-open-reasoning-model-that-fits-on-an-iphone/"
+canonical_url: "https://the-decoder.com/bonsai-27b-is-a-full-open-reasoning-model-that-fits-on-an-iphone"
+source_name: "The Decoder AI News"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-15T15:55:14.000Z"
+collected_at: 2026-07-16T02:39:33.764Z
+language: mixed
+full_text_hash: b207a0f026fa1359
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-16/r-055-bonsai-27b-is-a-full-open-reasoning-model-that-fits-on-an-iphone.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-16/r-055-bonsai-27b-is-a-full-open-reasoning-model-that-fits-on-an-iphone.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":12387,"paragraph_count":52,"sentence_count":104,"boilerplate_hits":0,"symbol_ratio":0.0034,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 12387
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b207a0f026fa1359","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 6f19fbd561f740d2
+content_hash: b207a0f026fa1359
+semantic_hash: 88bdbe28cd0b21e7
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-15T15:55:14.000Z"
+last_seen_at: 2026-07-16T02:39:33.764Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["The Decoder AI News","Google","Nvidia","Apple"],"products":["agent","agents","Gemini"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["27B","27","4","90","3.6","54","18","5.9"],"quotes":["very early,","things are progressing nicely."," label.\n[caption id=","aligncenter","virtually unaffected,"]}
+evidence_seed: {"company_actions":["PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI. The article Bonsai 27B is a full open reasoning model that fits on an iPhone appeared first on The Decoder. ]]>","Bonsai 27B is a full open reasoning model that fits on an iPhone Bonsai 27B is a full open reasoning model that fits on an iPhone PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone.","In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI. The article Bonsai 27B is a full open reasoning model that fits on an iPhone appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bonsai 27B is a full open reasoning model that fits on an iPhone Bonsai 27B is a full open reasoning model that fits on an iPhone PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-16T02:39:33.764Z
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# Bonsai 27B is a full open reasoning model that fits on an iPhone
+
+## clean_text
+
+Bonsai 27B is a full open reasoning model that fits on an iPhone
+Bonsai 27B is a full open reasoning model that fits on an iPhone
+PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI.
+PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI.
+AI, Menschen, Wirtschaft
+AI, Menschen, Wirtschaft
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Bonsai 27B is a full open reasoning model that fits on an iPhone
+PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI.
+PrismML has released Bonsai 27B, an AI model that it says fits on a smartphone without sacrificing reasoning or agent capabilities. Apple is reportedly testing the technology.
+PrismML, a company founded by a team of Caltech researchers, has released Bonsai 27B, a 27-billion-parameter AI model designed to run directly on an iPhone. Bonsai 27B is based on Alibaba's Qwen3.6-27B. PrismML says it supports multistep reasoning, tool use, image understanding, and agent-based tasks.
+PrismML argues that modern AI apps increasingly need powerful models to run locally. An agent may make hundreds of model calls in sequence, each carrying context, producing structured output, and feeding into the next step. In the cloud, per-token costs pile up, every call adds network latency, and intermediate results, tool calls, and private data such as screen content or documents all leave the device.
+But running the model on-device cuts the marginal cost of those loops to zero and keeps user data local. PrismML sees this as the basis for always-on agents, offline assistants, and hybrid systems. Simple and privacy-sensitive tasks stay on-device, while only the hardest steps are sent to frontier models in the cloud.
+According to a CNBC report, PrismML is already in talks with Apple about the compression technology behind Bonsai. PrismML CEO Babak Hassibi confirmed that Apple and other companies are testing the models for speed, power draw, and performance. The talks are "very early," but "things are progressing nicely."
+Two versions bring the model to laptops and smartphones
+A model this size typically takes up about 54 GB of storage. Even with standard compression, it still needs around 18 GB. PrismML offers two much smaller versions: The quality-focused variant takes up about 5.9 GB and is meant for laptops, though the packages currently shipping may be larger depending on the runtime. The white paper lists about 7.2 GB for the llama.cpp version and 8.49 GB for the MLX version.
+The smaller variant comes in at about 3.9 GB, small enough to fit within the limited storage of an iPhone 17 Pro Max. According to PrismML, an iPhone with 12 GB of RAM actually makes only about 6 GB available to a single app, split between the model and the cache.
+Instead of storing each neural network weight as 16 bits, PrismML uses only one or just under two bits. In the most aggressive variant, each weight has only two states. In the slightly larger one, three. This approach is applied across the entire language model. As an example of common labeling issues, PrismML points to the Qwen3.6-27B-IQ2_XXS build compared in the white paper, which averages 2.8 bits per weight despite its "2-bit" label.
+[caption id="attachment_58789" align="aligncenter" width="2344"] The 1-bit Bonsai variant leads in efficiency with an intelligence density of 0.530 per GB, far ahead of ternary and FP16 models. | Image: Prism[/caption]
+https://vimeo.com/1209748652?fl=pl&fe=sh
+PrismML says compression has a limited impact on quality
+In PrismML's own evaluation across 15 benchmarks, the larger variant keeps 95 percent of the original model's performance. The smaller one keeps 90 percent. Math and coding stayed "virtually unaffected," according to PrismML.
+The bigger drops showed up with the more aggressive compression, especially in image understanding, instruction following, and agent-based tool use. A conventionally compressed Qwen3.6-27B model at 9.4 GB scores only 72.7 points, while the smaller Bonsai variant at 3.9 GB scores 76.1.
+[caption id="attachment_58790" align="aligncenter" width="1584"] The compressed Bonsai models retain up to 95 percent of Qwen3.6-27B's original performance. The 1-bit variant drops off more sharply in vision and instruction following. | Image: Prism[/caption]
+According to the white paper, the smaller variant generates about 11 tokens per second on an iPhone 17 Pro Max. A battery test yielded roughly 672 generated tokens per percentage point of battery charge, which extrapolates to about 67,000 tokens on a full charge. The chip throttled slightly after a little over five minutes.
+Apple could use the tech to close its local AI gap
+The model weights are available under the Apache 2.0 license. Bonsai 27B runs on Apple devices via Apple's MLX framework and on NVIDIA GPUs. PrismML also provides a time-limited, free Developer Preview API and a live demo on HuggingFace.
+The company was founded with backing from Khosla Ventures, Cerberus, and Google, and Samsung continues to support it. PrismML plans to apply its compression tech to Google's Gemma model series next, smaller versions of which already run on smartphones.
+A licensed compression technology would also matter to Apple, whose own models have trailed the competition in benchmarks so far. At WWDC 2026, Apple unveiled a revamped Siri built on foundation models developed with Google using Gemini technology. The most powerful on-device model already requires an iPhone with at least 12 GB of RAM, and complex queries run on Nvidia GPUs in Apple's cloud.
+Bonsai 27B is a full open reasoning model that fits on an iPhone
+PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI.
+PrismML has released Bonsai 27B, an AI model that it says fits on a smartphone without sacrificing reasoning or agent capabilities. Apple is reportedly testing the technology.
+PrismML, a company founded by a team of Caltech researchers, has released Bonsai 27B, a 27-billion-parameter AI model designed to run directly on an iPhone. Bonsai 27B is based on Alibaba's Qwen3.6-27B. PrismML says it supports multistep reasoning, tool use, image understanding, and agent-based tasks.
+PrismML argues that modern AI apps increasingly need powerful models to run locally. An agent may make hundreds of model calls in sequence, each carrying context, producing structured output, and feeding into the next step. In the cloud, per-token costs pile up, every call adds network latency, and intermediate results, tool calls, and private data such as screen content or documents all leave the device.
+But running the model on-device cuts the marginal cost of those loops to zero and keeps user data local. PrismML sees this as the basis for always-on agents, offline assistants, and hybrid systems. Simple and privacy-sensitive tasks stay on-device, while only the hardest steps are sent to frontier models in the cloud.
+According to a CNBC report, PrismML is already in talks with Apple about the compression technology behind Bonsai. PrismML CEO Babak Hassibi confirmed that Apple and other companies are testing the models for speed, power draw, and performance. The talks are "very early," but "things are progressing nicely."
+Two versions bring the model to laptops and smartphones
+A model this size typically takes up about 54 GB of storage. Even with standard compression, it still needs around 18 GB. PrismML offers two much smaller versions: The quality-focused variant takes up about 5.9 GB and is meant for laptops, though the packages currently shipping may be larger depending on the runtime. The white paper lists about 7.2 GB for the llama.cpp version and 8.49 GB for the MLX version.
+The smaller variant comes in at about 3.9 GB, small enough to fit within the limited storage of an iPhone 17 Pro Max. According to PrismML, an iPhone with 12 GB of RAM actually makes only about 6 GB available to a single app, split between the model and the cache.
+Instead of storing each neural network weight as 16 bits, PrismML uses only one or just under two bits. In the most aggressive variant, each weight has only two states. In the slightly larger one, three. This approach is applied across the entire language model. As an example of common labeling issues, PrismML points to the Qwen3.6-27B-IQ2_XXS build compared in the white paper, which averages 2.8 bits per weight despite its "2-bit" label.
+[caption id="attachment_58789" align="aligncenter" width="2344"] The 1-bit Bonsai variant leads in efficiency with an intelligence density of 0.530 per GB, far ahead of ternary and FP16 models. | Image: Prism[/caption]
+https://vimeo.com/1209748652?fl=pl&fe=sh
+PrismML says compression has a limited impact on quality
+In PrismML's own evaluation across 15 benchmarks, the larger variant keeps 95 percent of the original model's performance. The smaller one keeps 90 percent. Math and coding stayed "virtually unaffected," according to PrismML.
+The bigger drops showed up with the more aggressive compression, especially in image understanding, instruction following, and agent-based tool use. A conventionally compressed Qwen3.6-27B model at 9.4 GB scores only 72.7 points, while the smaller Bonsai variant at 3.9 GB scores 76.1.
+[caption id="attachment_58790" align="aligncenter" width="1584"] The compressed Bonsai models retain up to 95 percent of Qwen3.6-27B's original performance. The 1-bit variant drops off more sharply in vision and instruction following. | Image: Prism[/caption]
+According to the white paper, the smaller variant generates about 11 tokens per second on an iPhone 17 Pro Max. A battery test yielded roughly 672 generated tokens per percentage point of battery charge, which extrapolates to about 67,000 tokens on a full charge. The chip throttled slightly after a little over five minutes.
+Apple could use the tech to close its local AI gap
+The model weights are available under the Apache 2.0 license. Bonsai 27B runs on Apple devices via Apple's MLX framework and on NVIDIA GPUs. PrismML also provides a time-limited, free Developer Preview API and a live demo on HuggingFace.
+The company was founded with backing from Khosla Ventures, Cerberus, and Google, and Samsung continues to support it. PrismML plans to apply its compression tech to Google's Gemma model series next, smaller versions of which already run on smartphones.
+A licensed compression technology would also matter to Apple, whose own models have trailed the competition in benchmarks so far. At WWDC 2026, Apple unveiled a revamped Siri built on foundation models developed with Google using Gemini technology. The most powerful on-device model already requires an iPhone with at least 12 GB of RAM, and complex queries run on Nvidia GPUs in Apple's cloud.
+
+## full_text
+
+Bonsai 27B is a full open reasoning model that fits on an iPhone
+Bonsai 27B is a full open reasoning model that fits on an iPhone
+PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI.
+PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI.
+AI, Menschen, Wirtschaft
+AI, Menschen, Wirtschaft
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Bonsai 27B is a full open reasoning model that fits on an iPhone
+PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI.
+PrismML has released Bonsai 27B, an AI model that it says fits on a smartphone without sacrificing reasoning or agent capabilities. Apple is reportedly testing the technology.
+PrismML, a company founded by a team of Caltech researchers, has released Bonsai 27B, a 27-billion-parameter AI model designed to run directly on an iPhone. Bonsai 27B is based on Alibaba's Qwen3.6-27B. PrismML says it supports multistep reasoning, tool use, image understanding, and agent-based tasks.
+PrismML argues that modern AI apps increasingly need powerful models to run locally. An agent may make hundreds of model calls in sequence, each carrying context, producing structured output, and feeding into the next step. In the cloud, per-token costs pile up, every call adds network latency, and intermediate results, tool calls, and private data such as screen content or documents all leave the device.
+But running the model on-device cuts the marginal cost of those loops to zero and keeps user data local. PrismML sees this as the basis for always-on agents, offline assistants, and hybrid systems. Simple and privacy-sensitive tasks stay on-device, while only the hardest steps are sent to frontier models in the cloud.
+According to a CNBC report, PrismML is already in talks with Apple about the compression technology behind Bonsai. PrismML CEO Babak Hassibi confirmed that Apple and other companies are testing the models for speed, power draw, and performance. The talks are "very early," but "things are progressing nicely."
+Two versions bring the model to laptops and smartphones
+A model this size typically takes up about 54 GB of storage. Even with standard compression, it still needs around 18 GB. PrismML offers two much smaller versions: The quality-focused variant takes up about 5.9 GB and is meant for laptops, though the packages currently shipping may be larger depending on the runtime. The white paper lists about 7.2 GB for the llama.cpp version and 8.49 GB for the MLX version.
+The smaller variant comes in at about 3.9 GB, small enough to fit within the limited storage of an iPhone 17 Pro Max. According to PrismML, an iPhone with 12 GB of RAM actually makes only about 6 GB available to a single app, split between the model and the cache.
+Instead of storing each neural network weight as 16 bits, PrismML uses only one or just under two bits. In the most aggressive variant, each weight has only two states. In the slightly larger one, three. This approach is applied across the entire language model. As an example of common labeling issues, PrismML points to the Qwen3.6-27B-IQ2_XXS build compared in the white paper, which averages 2.8 bits per weight despite its "2-bit" label.
+[caption id="attachment_58789" align="aligncenter" width="2344"] The 1-bit Bonsai variant leads in efficiency with an intelligence density of 0.530 per GB, far ahead of ternary and FP16 models. | Image: Prism[/caption]
+https://vimeo.com/1209748652?fl=pl&fe=sh
+PrismML says compression has a limited impact on quality
+In PrismML's own evaluation across 15 benchmarks, the larger variant keeps 95 percent of the original model's performance. The smaller one keeps 90 percent. Math and coding stayed "virtually unaffected," according to PrismML.
+The bigger drops showed up with the more aggressive compression, especially in image understanding, instruction following, and agent-based tool use. A conventionally compressed Qwen3.6-27B model at 9.4 GB scores only 72.7 points, while the smaller Bonsai variant at 3.9 GB scores 76.1.
+[caption id="attachment_58790" align="aligncenter" width="1584"] The compressed Bonsai models retain up to 95 percent of Qwen3.6-27B's original performance. The 1-bit variant drops off more sharply in vision and instruction following. | Image: Prism[/caption]
+According to the white paper, the smaller variant generates about 11 tokens per second on an iPhone 17 Pro Max. A battery test yielded roughly 672 generated tokens per percentage point of battery charge, which extrapolates to about 67,000 tokens on a full charge. The chip throttled slightly after a little over five minutes.
+Apple could use the tech to close its local AI gap
+The model weights are available under the Apache 2.0 license. Bonsai 27B runs on Apple devices via Apple's MLX framework and on NVIDIA GPUs. PrismML also provides a time-limited, free Developer Preview API and a live demo on HuggingFace.
+The company was founded with backing from Khosla Ventures, Cerberus, and Google, and Samsung continues to support it. PrismML plans to apply its compression tech to Google's Gemma model series next, smaller versions of which already run on smartphones.
+A licensed compression technology would also matter to Apple, whose own models have trailed the competition in benchmarks so far. At WWDC 2026, Apple unveiled a revamped Siri built on foundation models developed with Google using Gemini technology. The most powerful on-device model already requires an iPhone with at least 12 GB of RAM, and complex queries run on Nvidia GPUs in Apple's cloud.
+Bonsai 27B is a full open reasoning model that fits on an iPhone
+PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI.
+PrismML has released Bonsai 27B, an AI model that it says fits on a smartphone without sacrificing reasoning or agent capabilities. Apple is reportedly testing the technology.
+PrismML, a company founded by a team of Caltech researchers, has released Bonsai 27B, a 27-billion-parameter AI model designed to run directly on an iPhone. Bonsai 27B is based on Alibaba's Qwen3.6-27B. PrismML says it supports multistep reasoning, tool use, image understanding, and agent-based tasks.
+PrismML argues that modern AI apps increasingly need powerful models to run locally. An agent may make hundreds of model calls in sequence, each carrying context, producing structured output, and feeding into the next step. In the cloud, per-token costs pile up, every call adds network latency, and intermediate results, tool calls, and private data such as screen content or documents all leave the device.
+But running the model on-device cuts the marginal cost of those loops to zero and keeps user data local. PrismML sees this as the basis for always-on agents, offline assistants, and hybrid systems. Simple and privacy-sensitive tasks stay on-device, while only the hardest steps are sent to frontier models in the cloud.
+According to a CNBC report, PrismML is already in talks with Apple about the compression technology behind Bonsai. PrismML CEO Babak Hassibi confirmed that Apple and other companies are testing the models for speed, power draw, and performance. The talks are "very early," but "things are progressing nicely."
+Two versions bring the model to laptops and smartphones
+A model this size typically takes up about 54 GB of storage. Even with standard compression, it still needs around 18 GB. PrismML offers two much smaller versions: The quality-focused variant takes up about 5.9 GB and is meant for laptops, though the packages currently shipping may be larger depending on the runtime. The white paper lists about 7.2 GB for the llama.cpp version and 8.49 GB for the MLX version.
+The smaller variant comes in at about 3.9 GB, small enough to fit within the limited storage of an iPhone 17 Pro Max. According to PrismML, an iPhone with 12 GB of RAM actually makes only about 6 GB available to a single app, split between the model and the cache.
+Instead of storing each neural network weight as 16 bits, PrismML uses only one or just under two bits. In the most aggressive variant, each weight has only two states. In the slightly larger one, three. This approach is applied across the entire language model. As an example of common labeling issues, PrismML points to the Qwen3.6-27B-IQ2_XXS build compared in the white paper, which averages 2.8 bits per weight despite its "2-bit" label.
+[caption id="attachment_58789" align="aligncenter" width="2344"] The 1-bit Bonsai variant leads in efficiency with an intelligence density of 0.530 per GB, far ahead of ternary and FP16 models. | Image: Prism[/caption]
+https://vimeo.com/1209748652?fl=pl&fe=sh
+PrismML says compression has a limited impact on quality
+In PrismML's own evaluation across 15 benchmarks, the larger variant keeps 95 percent of the original model's performance. The smaller one keeps 90 percent. Math and coding stayed "virtually unaffected," according to PrismML.
+The bigger drops showed up with the more aggressive compression, especially in image understanding, instruction following, and agent-based tool use. A conventionally compressed Qwen3.6-27B model at 9.4 GB scores only 72.7 points, while the smaller Bonsai variant at 3.9 GB scores 76.1.
+[caption id="attachment_58790" align="aligncenter" width="1584"] The compressed Bonsai models retain up to 95 percent of Qwen3.6-27B's original performance. The 1-bit variant drops off more sharply in vision and instruction following. | Image: Prism[/caption]
+According to the white paper, the smaller variant generates about 11 tokens per second on an iPhone 17 Pro Max. A battery test yielded roughly 672 generated tokens per percentage point of battery charge, which extrapolates to about 67,000 tokens on a full charge. The chip throttled slightly after a little over five minutes.
+Apple could use the tech to close its local AI gap
+The model weights are available under the Apache 2.0 license. Bonsai 27B runs on Apple devices via Apple's MLX framework and on NVIDIA GPUs. PrismML also provides a time-limited, free Developer Preview API and a live demo on HuggingFace.
+The company was founded with backing from Khosla Ventures, Cerberus, and Google, and Samsung continues to support it. PrismML plans to apply its compression tech to Google's Gemma model series next, smaller versions of which already run on smartphones.
+A licensed compression technology would also matter to Apple, whose own models have trailed the competition in benchmarks so far. At WWDC 2026, Apple unveiled a revamped Siri built on foundation models developed with Google using Gemini technology. The most powerful on-device model already requires an iPhone with at least 12 GB of RAM, and complex queries run on Nvidia GPUs in Apple's cloud.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":12387,"paragraph_count":52,"sentence_count":104,"boilerplate_hits":0,"symbol_ratio":0.0034,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI. The article Bonsai 27B is a full open reasoning model that fits on an iPhone appeared first on The Decoder. ]]>
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Bonsai 27B is a full open reasoning model that fits on an iPhone Bonsai 27B is a full open reasoning model that fits on an iPhone PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone.
+
+## business_elements
+
+- companies: The Decoder AI News, Google, Nvidia, Apple
+- products: agent, agents, Gemini
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 27B, 27, 4, 90, 3.6, 54, 18, 5.9
+- quotes: very early, / things are progressing nicely. /  label.
+[caption id= / aligncenter / virtually unaffected,
+
+## evidence_seed
+
+- company_actions: PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI. The article Bonsai 27B is a full open reasoning model that fits on an iPhone appeared first on The Decoder. ]]> / Bonsai 27B is a full open reasoning model that fits on an iPhone Bonsai 27B is a full open reasoning model that fits on an iPhone PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. / In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI. The article Bonsai 27B is a full open reasoning model that fits on an iPhone appeared first on The Decoder. ]]>
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

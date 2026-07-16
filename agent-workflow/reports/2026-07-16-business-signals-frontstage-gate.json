@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "date": "2026-07-16",
+  "status": "passed",
+  "failure_categories": [],
+  "gates": [
+    {
+      "id": "source_first",
+      "label": "V3 source-first frontstage gate",
+      "script": "agent-workflow/tools/assert-v3-source-first-frontstage.mjs",
+      "status": "passed",
+      "exit_code": 0,
+      "parsed": {
+        "ok": true,
+        "status": "passed",
+        "checked_file": "01-SiteV2/site/data/v3-data-observation-desk.json",
+        "card_count": 559,
+        "frontstage_card_count": 558,
+        "issue_count": 0,
+        "issues": []
+      }
+    },
+    {
+      "id": "three_block_contract",
+      "label": "Business Signals three-block contract",
+      "script": "agent-workflow/tools/assert-business-signals-three-block-contract.mjs",
+      "status": "passed",
+      "exit_code": 0,
+      "parsed": {
+        "ok": true,
+        "date": "2026-07-16",
+        "active_date": "2026-07-16",
+        "active_card_count": 25,
+        "relationship_node_count": 28,
+        "relationship_edge_count": 40,
+        "today_trend_candidate_count": 0,
+        "no_trend_candidate_decision": true,
+        "problems": []
+      }
+    },
+    {
+      "id": "frontstage_regression",
+      "label": "Frontstage regression gate",
+      "script": "agent-workflow/tools/frontstage-regression-gate.mjs",
+      "status": "passed",
+      "exit_code": 0,
+      "parsed": {
+        "ok": true,
+        "status": "passed",
+        "issue_count": 0,
+        "report": "agent-workflow/reports/frontstage-regression-gate-20260716023951.md"
+      }
+    }
+  ],
+  "report": "agent-workflow/reports/2026-07-16-business-signals-frontstage-gate.md"
+}

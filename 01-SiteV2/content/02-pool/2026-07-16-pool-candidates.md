@@ -1,0 +1,8216 @@
+---
+date: 2026-07-16
+stage: pool
+status: guanlan-daily-monitor-pool
+pool_count: 149
+aihot_daily_pool_count: 22
+pool_target: 75
+routed_pool_target: 60
+core_pool_target: 30
+core_non_large_vendor_target: 20
+historical_dedupe_enabled: true
+historical_raw_records_checked: 8491
+historical_duplicates_removed_before_fetch: 226
+historical_duplicates_removed_after_fetch: 133
+generated_at: 2026-07-16T02:39:34.151Z
+keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
+---
+
+# 2026-07-16 Pool Candidates
+
+说明：本文件是 Raw 后的候选索引，供 Business Signals 资产链回看 Raw 全文后继续加工。Pool 不替代 Raw，也不直接等于商业信号 Card、关系图输入或趋势候选结论。
+
+## P-001｜Thinking Machines Lab 发布首个自研开源模型 Inkling
+
+- raw_ref: R-001
+- raw_original_id: cmrmealjz05bybivc83py274w
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-001-thinking-machines-lab-发布首个自研开源模型-inkling.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-001-thinking-machines-lab-发布首个自研开源模型-inkling.json`
+- source: TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling
+- source_url: https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 94
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: edec0eee8d18bfca
+- raw_full_text_hash: edec0eee8d18bfca
+- raw_semantic_hash: 4e2f4a1bd68234fe
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"edec0eee8d18bfca","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"Thinking Machines Lab 发布其首个自研模型 Inkling，采用混合专家（MoE）架构，总参数 9750 亿，每任务仅激活约 410 亿参数。该模型为开源权重，支持企业通过定制平台 Tinker 进行微调，运行成本约为 Nvidia Nemotron 3 Ultra 的三分之一。公司明确表示 Inkling 并非当前最强模型，而是定位为可适配的企业级起点。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Image Credits: Patrick T.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Fallon/AFP / Getty Images AI Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling Connie Loizos 11:04 AM PDT · July 15, 2026 Thinking Machines Lab, the AI startup founded by former OpenAI CTO Mira Murati, released its first in-house AI model Wednesday morning, called Inkling .","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"And unlike the flagship models from OpenAI, Anthropic, or Google, it’s open-weight, meaning outside developers and companies can download it and modify it directly.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Inkling is a mixture-of-experts system with 975 billion total parameters, though it only draws on a fraction of that — about 41 billion — for any given task, a common design that keeps very large models faster and cheaper to run.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"It was trained on 45 trillion tokens of text, image, audio, and video, and reasons natively across all four, according to the company’s own release materials.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Image Credits: Patrick T.","Fallon/AFP / Getty Images AI Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling Connie Loizos 11:04 AM PDT · July 15, 2026 Thinking Machines Lab, the AI startup founded by former OpenAI CTO Mira Murati, released its first in-house AI model Wednesday morning, called Inkling .","And unlike the flagship models from OpenAI, Anthropic, or Google, it’s open-weight, meaning outside developers and companies can download it and modify it directly."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-002｜OpenAI 首款品牌硬件 Codex Micro 是一款发光键盘
+
+- raw_ref: R-002
+- raw_original_id: cmrm9u31o01pfbiij2pah7ehm
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-002-openai-首款品牌硬件-codex-micro-是一款发光键盘.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-002-openai-首款品牌硬件-codex-micro-是一款发光键盘.json`
+- source: Ars Technica：AI（RSS）｜https://arstechnica.com/ai/2026/07/openais-first-branded-hardware-is-a-light-up-keyboard
+- source_url: https://arstechnica.com/ai/2026/07/openais-first-branded-hardware-is-a-light-up-keyboard
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: cc18d36379d3c703
+- raw_full_text_hash: cc18d36379d3c703
+- raw_semantic_hash: 3c914cff47e12442
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cc18d36379d3c703","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"product_update","text":"OpenAI 推出首款品牌硬件 Codex Micro，一款可通过发光状态监控多个 AI 智能体线程的键盘。该设备旨在让用户无需频繁切换屏幕即可直观追踪智能体任务进度。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav As rumors continue to swirl about OpenAI’s work on a personalized smart speaker and other hardware, the company is today rolling out its first branded device.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"The $230 Codex Micro is a specialized, RGB-lit mini-keyboard designed to let users monitor and quickly interact with multiple Codex agents with a glance and a few clicks.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"The device is described as a “limited-run collaboration” with Work Louder , which already sells a very similar-looking Creator Micro line of customizable square keyboards targeted at creative professionals.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The Codex Micro differentiates itself from those mainly through six frosted keys in the top two rows, which offer color-coded live feedback on up to six Codex threads, even when they are not in focus on-screen.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Open the OpenAI box for AI assistance.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["OpenAI 推出首款品牌硬件 Codex Micro，一款可通过发光状态监控多个 AI 智能体线程的键盘。该设备旨在让用户无需频繁切换屏幕即可直观追踪智能体任务进度。","Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav As rumors continue to swirl about OpenAI’s work on a personalized smart speaker and other hardware, the company is today rolling out its first branded device.","The Codex Micro differentiates itself from those mainly through six frosted keys in the top two rows, which offer color-coded live feedback on up to six Codex threads, even when they are not in focus on-screen."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-003｜Ode with Anthropic 获多家巨头投资，押注 AI 服务将成为企业级未来
+
+- raw_ref: R-003
+- raw_original_id: cmrmealjz05bzbivcb65g2y98
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-003-ode-with-anthropic-获多家巨头投资-押注-ai-服务将成为企业级未来.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-003-ode-with-anthropic-获多家巨头投资-押注-ai-服务将成为企业级未来.json`
+- source: TechCrunch：AI（RSS）｜https://techcrunch.com/video/inside-ode-with-anthropic-the-startup-betting-ai-services-are-the-future-of-enterprise
+- source_url: https://techcrunch.com/video/inside-ode-with-anthropic-the-startup-betting-ai-services-are-the-future-of-enterprise
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- extraction_method: json-ld
+- readability_score: 82
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: c343c5130a24ddcd
+- raw_full_text_hash: c343c5130a24ddcd
+- raw_semantic_hash: 46133586c37bc110
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c343c5130a24ddcd","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"funding","text":"Ode with Anthropic 是一家由 Anthropic、Blackstone、Hellman & Friedman、Goldman Sachs 等投资的合资企业，专注于向企业派驻前部署工程师。其核心来自 Ode 今年早些时候收购的 AI 服务初创公司 Fractional AI。Ode 认为，大量企业 AI 试点项目未能落地，而 AI 原生服务将成为科技领域最大的品类之一。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Inside Ode with Anthropic, the startup betting AI services are the future of enterprise Inside Ode with Anthropic, the startup betting AI services are the future of enterprise Watch as Equity catches up with Chris Taylor and Eddie Siegel, co-founders of Fractional AI, the applied AI services startup that Ode with Anthropic acquired earlier this year to serve as the new venture’s core.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Watch as Equity catches up with Chris Taylor and Eddie Siegel, co-founders of Fractional AI, the applied AI services startup that Ode with Anthropic acquired earlier this year to serve as the new venture’s core.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Startup and Technology News Startup and Technology News [jwp-video] Can a handful of engineers really do the work of an army of consultants?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"That’s the bet behind Ode with Anthropic — the joint venture dedicated to embedding forward-deployed engineers in enterprise firms, backed by Anthropic, Blackstone, Hellman & Friedman, Goldman Sachs and others.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"On this episode of TechCrunch's Equity podcast, Rebecca Bellan sits down with Ode’s leaders Chris Taylor and Eddie Siegel, who founded Fractional AI, the applied AI services startup that Ode acquired earlier this year to serve as the new venture’s core.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Ode with Anthropic 是一家由 Anthropic、Blackstone、Hellman & Friedman、Goldman Sachs 等投资的合资企业，专注于向企业派驻前部署工程师。其核心来自 Ode 今年早些时候收购的 AI 服务初创公司 Fractional AI。Ode 认为，大量企业 AI 试点项目未能落地，而 AI 原生服务将成为科技领域最大的品类之一。","Inside Ode with Anthropic, the startup betting AI services are the future of enterprise Inside Ode with Anthropic, the startup betting AI services are the future of enterprise Watch as Equity catches up with Chris Taylor and Eddie Siegel, co-founders of Fractional AI, the applied AI services startup that Ode with Anthropic acquired earlier this year to serve as the new venture’s core.","Watch as Equity catches up with Chris Taylor and Eddie Siegel, co-founders of Fractional AI, the applied AI services startup that Ode with Anthropic acquired earlier this year to serve as the new venture’s core."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-004｜微软要求销售团队在 FY27 贬低 OpenAI 和 Anthropic 模型，推广自研 AI
+
+- raw_ref: R-004
+- raw_original_id: cmrmr9yl501skbi7inuxpi1g5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-004-微软要求销售团队在-fy27-贬低-openai-和-anthropic-模型-推广自研-ai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-004-微软要求销售团队在-fy27-贬低-openai-和-anthropic-模型-推广自研-ai.json`
+- source: TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic
+- source_url: https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 96
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 46d743833432a1bb
+- raw_full_text_hash: 46d743833432a1bb
+- raw_semantic_hash: 13d301766a1d9f94
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"46d743833432a1bb","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: viewpoint, case, business_change, watchlist
+- key_excerpts: [{"type":"quote","text":"微软在内部战略会上要求销售团队在 FY27 向客户强调其自研模型的效率与成本优势，称\"其他人在卖零件，我们在卖完整端到端系统\"。执行副总裁 Jacob Andreou 直接对比 Copilot 与 Anthropic 的 Claude，称后者在 Office 应用中\"更慢、更不准确且缺乏安全集成\"。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Image Credits: Kontrec / Getty Images AI Microsoft is reportedly training salespeople to talk down OpenAI and Anthropic Lucas Ropek 4:59 PM PDT · July 15, 2026 Microsoft appears to be prepping its sales team to get more competitive with the other major players in the AI industry.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"At an internal meeting on Tuesday, the company’s executives outlined a plan for salespeople to negatively compare AI products from companies like OpenAI, Google, and Anthropic to its own, according to a new report from Bloomberg.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The meeting, billed as a strategy session for the new fiscal year, reportedly leaned heavily on pitching the efficiency and cost-effectiveness of Microsoft’s in-house models against those of its rivals.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"“Everyone else is selling parts — we’re selling the full end-to-end system.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"That’s the story that we all need to get out there and tell in FY27,” Executive Vice President Jay Parikh reportedly told the room.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The meeting, billed as a strategy session for the new fiscal year, reportedly leaned heavily on pitching the efficiency and cost-effectiveness of Microsoft’s in-house models against those of its rivals.","“Everyone else is selling parts — we’re selling the full end-to-end system.","That’s the story that we all need to get out there and tell in FY27,” Executive Vice President Jay Parikh reportedly told the room."],"case_details":[],"workflow_changes":["Image Credits: Kontrec / Getty Images AI Microsoft is reportedly training salespeople to talk down OpenAI and Anthropic Lucas Ropek 4:59 PM PDT · July 15, 2026 Microsoft appears to be prepping its sales team to get more competitive with the other major players in the AI industry.","At an internal meeting on Tuesday, the company’s executives outlined a plan for salespeople to negatively compare AI products from companies like OpenAI, Google, and Anthropic to its own, according to a new report from Bloomberg."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-005｜诺基亚推出基于英伟达的AI-RAN平台，声称业界首个
+
+- raw_ref: R-005
+- raw_original_id: cmrltvb2h004obib30n2wa5i1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-005-诺基亚推出基于英伟达的ai-ran平台-声称业界首个.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-005-诺基亚推出基于英伟达的ai-ran平台-声称业界首个.json`
+- source: Artificial Intelligence News（RSS）｜https://www.artificialintelligence-news.com/news/nokia-ai-ran-platform-nvidia
+- source_url: https://www.artificialintelligence-news.com/news/nokia-ai-ran-platform-nvidia
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 79
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: 176d48e94cda2f1e
+- raw_full_text_hash: 176d48e94cda2f1e
+- raw_semantic_hash: e1adfcf214f1ff69
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"176d48e94cda2f1e","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, business_change
+- key_excerpts: [{"type":"number","text":"诺基亚于7月15日推出其声称的\"业界首个\"AI-RAN平台，基于anyRAN软件和英伟达Aerial系统。该平台已实现超过20%的频谱效率提升，计划2028年提升至100%以上，运营商可通过软件订阅获取。该平台尚未商用，预计今年年底试点、2027年上市。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to content Artificial Intelligence Nokia’s AI-RAN platform: a radio comeback that runs on NVIDIA Dashveenjit Kaur July 15, 2026 Share this story: Tags: 6G AI-RAN ericsson Nokia nvidia RAN telecom infrastructure Categories: AI Business Strategy AI Hardware & Chips AI Market Trends Artificial Intelligence Featured News Infrastructure & Hardware Nokia’s AI-RAN platform arrived on July 15 with a claim worth examining: that it is the industry’s first.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"The vendor says the platform, built on its anyRAN software and NVIDIA’s Aerial system, will let operators pull far more capacity from the spectrum they already own, and it has framed the launch as one of the most significant shifts in radio architecture in decades.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The technical pitch is straightforward.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Nokia says the platform has already shown more than 20% spectral efficiency gains, and it is targeting 50% by 2027 and more than 100% by 2028, the point at which, on its own projection, operators could roughly double the capacity of existing spectrum.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Those last two figures are targets, not results, and Nokia’s own timeline puts pilots at the end of this year and commercial availability in 2027.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Skip to content Artificial Intelligence Nokia’s AI-RAN platform: a radio comeback that runs on NVIDIA Dashveenjit Kaur July 15, 2026 Share this story: Tags: 6G AI-RAN ericsson Nokia nvidia RAN telecom infrastructure Categories: AI Business Strategy AI Hardware & Chips AI Market Trends Artificial Intelligence Featured News Infrastructure & Hardware Nokia’s AI-RAN platform arrived on July 15 with a claim worth examining: that it is the industry’s first.","The vendor says the platform, built on its anyRAN software and NVIDIA’s Aerial system, will let operators pull far more capacity from the spectrum they already own, and it has framed the launch as one of the most significant shifts in radio architecture in decades.","The technical pitch is straightforward."],"case_details":["Those last two figures are targets, not results, and Nokia’s own timeline puts pilots at the end of this year and commercial availability in 2027."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-006｜印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元
+
+- raw_ref: R-006
+- raw_original_id: cmrm1dbic027ybi5kd5ojnfil
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-006-印度ai编程初创公司emergent获1-3亿美元c轮融资-估值达15亿美元.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-006-印度ai编程初创公司emergent获1-3亿美元c轮融资-估值达15亿美元.json`
+- source: TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch
+- source_url: https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 27b672d0df3a3b27
+- raw_full_text_hash: 27b672d0df3a3b27
+- raw_semantic_hash: 1bf05b9ff8ed45c2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"27b672d0df3a3b27","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"funding","text":"Emergent完成1.3亿美元C轮融资，投后估值15亿美元，较六个月前的B轮估值增长五倍。该公司年化经常性收入已达1.2亿美元，拥有超过20万付费客户，其平台面向创业者和中小企业，提供涵盖部署、托管、测试和调试的全流程AI编程服务。本轮融资由Creaegis领投，Khosla Ventures、SoftBank Vision Fund 2等跟投。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Image Credits: Emergent AI Indian AI coding startup Emergent becomes a unicorn with $130M Series C Jagmeet Singh 5:00 AM PDT · July 15, 2026 Indian AI coding startup Emergent has raised $130 million in a Series C funding round at a $1.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"5 billion post-money valuation, a five-fold jump in six months.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The funding round was led by private equity firm Creaegis.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"New investors MNI Ventures-Claypond, Sentinel Global, and existing backers Khosla Ventures, SoftBank’s Vision Fund 2, Lightspeed, and Y Combinator also participated.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The deal takes Emergent’s total funding to $230 million.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Emergent完成1.3亿美元C轮融资，投后估值15亿美元，较六个月前的B轮估值增长五倍。该公司年化经常性收入已达1.2亿美元，拥有超过20万付费客户，其平台面向创业者和中小企业，提供涵盖部署、托管、测试和调试的全流程AI编程服务。本轮融资由Creaegis领投，Khosla Ventures、SoftBank Vision Fund 2等跟投。","Image Credits: Emergent AI Indian AI coding startup Emergent becomes a unicorn with $130M Series C Jagmeet Singh 5:00 AM PDT · July 15, 2026 Indian AI coding startup Emergent has raised $130 million in a Series C funding round at a $1.","The funding round was led by private equity firm Creaegis."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-007｜Thinking Machines Lab 发布 Inkling：975B 参数开源多模态 MoE 模型
+
+- raw_ref: R-007
+- raw_original_id: cmrmra2cn01t4bi7i4n1sq8vs
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-007-thinking-machines-lab-发布-inkling-975b-参数开源多模态-moe-模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-007-thinking-machines-lab-发布-inkling-975b-参数开源多模态-moe-模型.json`
+- source: MarkTechPost（RSS）｜https://www.marktechpost.com/2026/07/15/thinking-machines-lab-releases-inkling-a-975b-parameter-open-weights-multimodal-moe-with-41b-active-parameters-and-controllable-thinking-effort
+- source_url: https://www.marktechpost.com/2026/07/15/thinking-machines-lab-releases-inkling-a-975b-parameter-open-weights-multimodal-moe-with-41b-active-parameters-and-controllable-thinking-effort
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 1136d47adfd91bd2
+- raw_full_text_hash: 1136d47adfd91bd2
+- raw_semantic_hash: 887c63d79fe385d0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1136d47adfd91bd2","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, business_change, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Thinking Machines Lab 于 7 月 15 日发布其首个从头训练的模型 Inkling，采用 Apache 2.0 协议开源完整权重。该模型为 975B 参数 MoE Transformer，41B 活跃参数，支持 1M token 上下文窗口及文本、图像、音频输入，核心差异化在于可控思考深度。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Editors Pick Agentic AI Artificial Intelligence AI Infrastructure Applications Technology Language Model Large Language Model Machine Learning New Releases Open Source Staff Tech News Thinking Machines Lab just released Inkling , their first model trained from scratch, weights are open, fine-tunable on Tinker.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The lab pitches it as a base for customization.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Inkling is a Mixture-of-Experts transformer with 975B total parameters and 41B active.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"It supports a context window of up to 1M tokens.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Pretraining covered 45 trillion tokens of text, images, audio, and video.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Editors Pick Agentic AI Artificial Intelligence AI Infrastructure Applications Technology Language Model Large Language Model Machine Learning New Releases Open Source Staff Tech News Thinking Machines Lab just released Inkling , their first model trained from scratch, weights are open, fine-tunable on Tinker.","The lab pitches it as a base for customization.","Inkling is a Mixture-of-Experts transformer with 975B total parameters and 41B active."],"case_details":["Thinking Machines Lab 于 7 月 15 日发布其首个从头训练的模型 Inkling，采用 Apache 2.0 协议开源完整权重。该模型为 975B 参数 MoE Transformer，41B 活跃参数，支持 1M token 上下文窗口及文本、图像、音频输入，核心差异化在于可控思考深度。"],"workflow_changes":["It supports a context window of up to 1M tokens."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-008｜诺奖得主哈萨比斯预言：AGI 影响将是工业革命 10 倍，提议设立"前沿 AI 标准机构"进行 30 天预审
+
+- raw_ref: R-008
+- raw_original_id: cmrlyak3701c5bi5kq29qhp3e
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-008-诺奖得主哈萨比斯预言-agi-影响将是工业革命-10-倍-提议设立-前沿-ai-标准机构-进行-30-天预审.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-008-诺奖得主哈萨比斯预言-agi-影响将是工业革命-10-倍-提议设立-前沿-ai-标准机构-进行-30-天预审.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/160.htm
+- source_url: https://www.ithome.com/0/977/160.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 74
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 08f19e1ea0d52c9b
+- raw_full_text_hash: 08f19e1ea0d52c9b
+- raw_semantic_hash: 441d0745e6caf3b0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"08f19e1ea0d52c9b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- key_excerpts: [{"type":"number","text":"DeepMind 联合创始人、诺奖得主哈萨比斯发文称，AGI 可能在几年内实现，其影响规模将是工业革命的 10 倍，且以 10 倍速度展开。他提议美国设立类似 FINRA 的\"前沿 AI 标准机构\"，要求前沿实验室在发布模型前自愿接受最多 30 天的预审，并逐步将评估正式化，未通过评估的模型不得在美国市场部署。该框架适用于所有达到基准门槛的\"前沿级\"模型，无论开源还是闭源。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"诺奖得主哈萨比斯大胆预言：AGI 影响将是工业革命 10 倍！","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"- IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 人物 诺奖得主哈萨比斯大胆预言：AGI 影响将是工业革命 10 倍！","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"新智元 2026/7/15 17:45:44 责编： 汪淼 评论： 感谢IT之家网友 刺客 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"刚刚，诺贝尔奖得主、DeepMind 掌舵人 Demis Hassabis 掷地有声地宣告： 通用人工智能（AGI）即将实现。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"哈萨比斯豪言：药物研发将不再需要十年漫长试错，新型清洁能源或将在几年内突破，先进材料将让「资源稀缺」成为历史名词。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["新智元 2026/7/15 17:45:44 责编： 汪淼 评论： 感谢IT之家网友 刺客 的线索投递！","刚刚，诺贝尔奖得主、DeepMind 掌舵人 Demis Hassabis 掷地有声地宣告： 通用人工智能（AGI）即将实现。","哈萨比斯豪言：药物研发将不再需要十年漫长试错，新型清洁能源或将在几年内突破，先进材料将让「资源稀缺」成为历史名词。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-009｜前谷歌DeepMind研究员因公司签署无限制军事AI协议而离职
+
+- raw_ref: R-009
+- raw_original_id: cmrmibbm801m8biulhl6uejzo
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-009-前谷歌deepmind研究员因公司签署无限制军事ai协议而离职.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-009-前谷歌deepmind研究员因公司签署无限制军事ai协议而离职.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜https://turntrout.com/why-i-left-google-deepmind
+- source_url: https://turntrout.com/why-i-left-google-deepmind
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: d9c542e1f992f21b
+- raw_full_text_hash: b9b852f791a334f4
+- raw_semantic_hash: c93c6a9d81d63274
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b9b852f791a334f4","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: viewpoint
+- key_excerpts: [{"type":"supporting_context","text":"前谷歌DeepMind研究员Alex Turner因谷歌向国土安全部出售云服务并最终签署无限制军事AI协议而离职。他曾起草25页提案要求加入禁止杀手机器人和大规模监控的合同条款，但提案被CEO转交后无人跟进。Turner指出，包括Jeff Dean和Stuart Russell在内的多位AI伦理领袖在关键时刻未能兑现承诺。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Why I Left Google DeepMind By Alex Turner Published on July 15 th , 2026 Table of Contents Google supports the immigration enforcement supply chain But how could I do anything about it?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Talking to Jeff Dean The Pentagon tries to intimidate Anthropic I wanted to mobilize the AI luminaries at the conference Talking to Bengio and Stuart Stuart closes out iaseai International Association of Silence on the Ethics of AI Trying to stop Google from signing Building internal cost for Google Jeff Dean, you’re our only hope Jeff signs an amicus brief supporting Anthropic Senior management insisted Google wouldn’t cave Preparing for lunch with Jeff Dean I arranged social support The art of the deal My lunch w","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"My Framework goes unevaluated Google quietly signs the deal Demis insists Google’s AI principles “haven’t changed” We can “work with Western democracies” to “beat China” without giving in to every demand Trump makes Building a world-reshaping technology on personal trust Reflections How can a pledge-signer remain at gdm ?","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The weight of ethics What are the AI luminaries doing?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Why didn’t Jeff put his foot down?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The weight of ethics What are the AI luminaries doing?","Why didn’t Jeff put his foot down?"],"case_details":[],"workflow_changes":["Why I Left Google DeepMind By Alex Turner Published on July 15 th , 2026 Table of Contents Google supports the immigration enforcement supply chain But how could I do anything about it?","Talking to Jeff Dean The Pentagon tries to intimidate Anthropic I wanted to mobilize the AI luminaries at the conference Talking to Bengio and Stuart Stuart closes out iaseai International Association of Silence on the Ethics of AI Trying to stop Google from signing Building internal cost for Google Jeff Dean, you’re our only hope Jeff signs an amicus brief supporting Anthropic Senior management insisted Google wouldn’t cave Preparing for lunch with Jeff Dean I arranged social support The art of the deal My lunch w"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":["前谷歌DeepMind研究员Alex Turner因谷歌向国土安全部出售云服务并最终签署无限制军事AI协议而离职。他曾起草25页提案要求加入禁止杀手机器人和大规模监控的合同条款，但提案被CEO转交后无人跟进。Turner指出，包括Jeff Dean和Stuart Russell在内的多位AI伦理领袖在关键时刻未能兑现承诺。"]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-010｜SGLang 与 Miles 为前沿多模态模型 Inkling 提供 Day-0 支持，推理吞吐达 71.7k tok/s
+
+- raw_ref: R-010
+- raw_original_id: cmrmh5i1j00l7biulyvx840yj
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-010-sglang-与-miles-为前沿多模态模型-inkling-提供-day-0-支持-推理吞吐达-71-7k-tok-s.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-010-sglang-与-miles-为前沿多模态模型-inkling-提供-day-0-支持-推理吞吐达-71-7k-tok-s.json`
+- source: LMSYS：Blog（Chatbot Arena 团队）｜https://www.lmsys.org/blog/2026-07-15-inkling-day0-support
+- source_url: https://www.lmsys.org/blog/2026-07-15-inkling-day0-support
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: e313bf3002c5b9b3
+- raw_full_text_hash: 289fa766de592c6f
+- raw_semantic_hash: 60318c08eb9b3793
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"289fa766de592c6f","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"SGLang 与 Miles 为 Thinking Machines Lab 的 975B 参数多模态模型 Inkling 提供 Day-0 支持，其上下文窗口达 1M token。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"‹ Back to Blog ‹ Back to Blog Contents Inkling Model Architecture Overview Short Convolution (ShortConv) Attention with Relative Positional Embedding MoE With Shared Expert Sink SGLang Optimization ShortConv Optimization Relative Logits Optimization Shared-Expert Sink Optimization Feature Support Speculative Decoding with Multi-layer Eagle Speculative Decoding with DFlash Prefill-Decode Disaggregation AMD GPU Support LoRA Serving Radix Cache and HiCache Multimodal Optimization Performance Results Reinforcement Lear","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Highlights Inkling is a 975B-parameter multimodal model with a context window of up to 1M tokens, featuring short convolution, attention with relative positional embedding, and a novel MoE design with a shared-expert sink.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"SGLang delivers up to 71.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"7k tok/s of input throughput and 171.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"0 tok/s of per-user decode speed on Nvidia Blackwell GPU, powered by dedicated optimizations for Inkling's architecture.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["SGLang 与 Miles 为 Thinking Machines Lab 的 975B 参数多模态模型 Inkling 提供 Day-0 支持，其上下文窗口达 1M token。","Highlights Inkling is a 975B-parameter multimodal model with a context window of up to 1M tokens, featuring short convolution, attention with relative positional embedding, and a novel MoE design with a shared-expert sink.","SGLang delivers up to 71."],"case_details":[],"workflow_changes":["‹ Back to Blog ‹ Back to Blog Contents Inkling Model Architecture Overview Short Convolution (ShortConv) Attention with Relative Positional Embedding MoE With Shared Expert Sink SGLang Optimization ShortConv Optimization Relative Logits Optimization Shared-Expert Sink Optimization Feature Support Speculative Decoding with Multi-layer Eagle Speculative Decoding with DFlash Prefill-Decode Disaggregation AMD GPU Support LoRA Serving Radix Cache and HiCache Multimodal Optimization Performance Results Reinforcement Lear"],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-011｜Base44 为何信任 Claude Fable 5 处理最具挑战性的工程任务
+
+- raw_ref: R-011
+- raw_original_id: cmrmetra500flbih9gdyo03bp
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-011-base44-为何信任-claude-fable-5-处理最具挑战性的工程任务.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-011-base44-为何信任-claude-fable-5-处理最具挑战性的工程任务.json`
+- source: Claude：Blog（网页）｜https://claude.com/blog/working-at-the-frontier-why-base44-trusts-claude-fable-5-with-their-most-challenging-engineering-work
+- source_url: https://claude.com/blog/working-at-the-frontier-why-base44-trusts-claude-fable-5-with-their-most-challenging-engineering-work
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 94
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: 3f79c1850330d07c
+- raw_full_text_hash: 3f79c1850330d07c
+- raw_semantic_hash: 14bfac123c1184f9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3f79c1850330d07c","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: viewpoint, case, business_change
+- key_excerpts: [{"type":"number","text":"无代码开发平台 Base44 将此前仅限资深工程师处理的系统提示词重构任务交给了 Claude Fable 5。该模型在四小时内独立完成 90%-95% 的重构，并主动发现团队评估中遗漏的缓存命中测试盲点。Base44 产品负责人表示，Claude Fable 5 是首个能像资深工程师一样推理软件构建方式的模型。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Base44 is a vibe-coding platform that allows anyone, regardless of technical ability, to build full stack applications and websites.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Its customers range from small businesses with no developers to companies using it to build full SaaS products.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"opinion","text":"Yoav Orlev, who joined Base44 as its first employee and now runs product, says one of the most satisfying parts of his work is seeing what small businesses can do with the platform for which they otherwise lacked the time, budget, or knowhow, whether that’s building a digital storefront or a shift-management application for restaurant staff.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"His team’s mission is to keep widening their product’s capabilities while keeping it usable for everyone.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The Base44 product and engineering teams have always moved quickly, especially when shipping small or medium-scope features.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Base44 is a vibe-coding platform that allows anyone, regardless of technical ability, to build full stack applications and websites.","His team’s mission is to keep widening their product’s capabilities while keeping it usable for everyone.","The Base44 product and engineering teams have always moved quickly, especially when shipping small or medium-scope features."],"case_details":["Its customers range from small businesses with no developers to companies using it to build full SaaS products."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-012｜Meta 探索分层兴趣表示以优化广告深度漏斗
+
+- raw_ref: R-012
+- raw_original_id: cmrmctfys042wbivcjf3z4dad
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-012-meta-探索分层兴趣表示以优化广告深度漏斗.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-012-meta-探索分层兴趣表示以优化广告深度漏斗.json`
+- source: Meta Engineering Blog（RSS）｜https://engineering.fb.com/2026/07/15/ai-research/exploring-hierarchical-interest-representation-for-meta-ads-deep-funnel-optimization
+- source_url: https://engineering.fb.com/2026/07/15/ai-research/exploring-hierarchical-interest-representation-for-meta-ads-deep-funnel-optimization
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 8d38b486e0644a0b
+- raw_full_text_hash: 8d38b486e0644a0b
+- raw_semantic_hash: 5c11602906ea16bb
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8d38b486e0644a0b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"product_update","text":"Meta 提出分层兴趣表示，一种基于 Transformer 图学习与自监督跨视图蒸馏的上游表示层，为广告实体学习统一嵌入。该系统在数十亿真实交互数据上端到端训练，输出通用嵌入和 Bag-of-Meaning 兴趣 token，旨在连接稀疏的深度漏斗信号与广告主供给。该技术可集成至 Meta 的生成式广告模型（GEM）、Andromeda 及自适应排序模型。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"By Yuhui Ouyang , Di Wang , Sreedal Menon , Jie Tian Hierarchical Interest Representation is a research area for Meta Ads.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We’re exploring an upstream representation layer over the universe of Ads entities – users, advertisers, products, services – learning unified embeddings that connect users’ inferred interests with the breadth of what advertisers offer in their deep funnel ads.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The innovations in Hierarchical Interest Representation are an in-house transformer based graph learning with bias-aware attention and self-supervised cross-view distillation, learning multi-hierarchical interest representations across a large graph.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Hierarchical Interest Representation blends real-world knowledge with engagement signals – multimodal advertiser and product content processed through LLMs enriches sparse interactions, enabling generalization to rare and unseen entities.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Hierarchical Interest Representation outputs universal embeddings for ads entities and Bag-of-Meaning interest tokens that have the potential to power new personalization, retrieval, supervision, and specialized ranking architectures across the ads stack.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Meta 提出分层兴趣表示，一种基于 Transformer 图学习与自监督跨视图蒸馏的上游表示层，为广告实体学习统一嵌入。该系统在数十亿真实交互数据上端到端训练，输出通用嵌入和 Bag-of-Meaning 兴趣 token，旨在连接稀疏的深度漏斗信号与广告主供给。该技术可集成至 Meta 的生成式广告模型（GEM）、Andromeda 及自适应排序模型。","By Yuhui Ouyang , Di Wang , Sreedal Menon , Jie Tian Hierarchical Interest Representation is a research area for Meta Ads.","We’re exploring an upstream representation layer over the universe of Ads entities – users, advertisers, products, services – learning unified embeddings that connect users’ inferred interests with the breadth of what advertisers offer in their deep funnel ads."],"case_details":[],"workflow_changes":["Hierarchical Interest Representation blends real-world knowledge with engagement signals – multimodal advertiser and product content processed through LLMs enriches sparse interactions, enabling generalization to rare and unseen entities."],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-013｜Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元
+
+- raw_ref: R-013
+- raw_original_id: cmrm4l2w20345bi5kk79mktxd
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-013-anthropic-与私募巨头合资成立-ai-实施公司-ode-初始资金-15-亿美元.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-013-anthropic-与私募巨头合资成立-ai-实施公司-ode-初始资金-15-亿美元.json`
+- source: TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models
+- source_url: https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: f0b4be65211315a7
+- raw_full_text_hash: f0b4be65211315a7
+- raw_semantic_hash: a9cac366ffa800e9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f0b4be65211315a7","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"Anthropic 与 Blackstone 等私募股权公司合资成立 AI 实施公司 Ode，初始资金 15 亿美元。Ode 以\"Claude-first\"原则为大型企业定制 AI 系统，已收购 AI 工程服务初创公司 Fractional AI 作为核心团队，目前拥有 100 名工程师。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Image Credits: Westend61 (opens in a new window) / Getty Images AI Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not just models Rebecca Bellan 6:10 AM PDT · July 15, 2026 AI models are becoming ever more capable, but exactly what enterprise adoption will look like remains a big question.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"In a bid to shape that future, labs like Anthropic and OpenAI have spun up separate businesses dedicated to deploying AI engineers to their customers’ offices — a bet that assisting businesses in figuring out how to use their AI models is the next trillion-dollar category.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"number","text":"One of those businesses now has a name: Ode with Anthropic is the $1.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"5 billion, AI implementation company that the AI lab launched in May as part of a joint venture with Blackstone, Hellman & Friedman, Goldman Sachs, and others.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The move follows OpenAI’s own take on this, The Deployment Company, underscoring a growing acknowledgement among frontier AI labs that winning enterprise customers requires far more than shipping better models.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Image Credits: Westend61 (opens in a new window) / Getty Images AI Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not just models Rebecca Bellan 6:10 AM PDT · July 15, 2026 AI models are becoming ever more capable, but exactly what enterprise adoption will look like remains a big question."],"case_details":["In a bid to shape that future, labs like Anthropic and OpenAI have spun up separate businesses dedicated to deploying AI engineers to their customers’ offices — a bet that assisting businesses in figuring out how to use their AI models is the next trillion-dollar category.","The move follows OpenAI’s own take on this, The Deployment Company, underscoring a growing acknowledgement among frontier AI labs that winning enterprise customers requires far more than shipping better models."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-014｜Vint Cerf 加入 Innovation Labs，推动 AI 智能体开放互联网身份识别标准 DNSid
+
+- raw_ref: R-014
+- raw_original_id: cmrm1dbic027zbi5kjca8jzfw
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-014-vint-cerf-加入-innovation-labs-推动-ai-智能体开放互联网身份识别标准-dnsid.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-014-vint-cerf-加入-innovation-labs-推动-ai-智能体开放互联网身份识别标准-dnsid.json`
+- source: TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet
+- source_url: https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 6ecb96a7b66b869f
+- raw_full_text_hash: 6ecb96a7b66b869f
+- raw_semantic_hash: 0171c702a098e9a0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6ecb96a7b66b869f","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: viewpoint
+- key_excerpts: [{"type":"opinion","text":"互联网协议架构师 Vint Cerf 在离开 Google 后，开始担任 Innovation Labs 顾问。该机构提出 DNSid 标准，为每个 AI 智能体关联现有互联网域名并通过加密证明记录注册，旨在解决智能体在开放互联网上缺乏统一身份识别与审计标准的问题。Cerf 认为，用户需求将推动不同厂商的智能体协议实现互操作，如同当年 TCP/IP 的普及。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"opinion","text":"Image Credits: KENZO TRIBOUILLARD/AFP / Getty Images AI Vint Cerf is working on a plan to unleash AI agents on the open internet Tim Fernholz 5:00 AM PDT · July 15, 2026 Vint Cerf says his favorite place is where he’s never been before.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"One of the architects of the protocols behind the open internet, Cerf left Google after 20 years last week, but he’s not done thinking about the digital future.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Starting today, he’s advising Innovation Labs, an organization trying to create the open architecture for AI agents to identify themselves.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Innovation Labs is a subsidiary of Identity Digital, a DNS registry company, which sees domain-name infrastructure as a practical way to hold AI agents accountable and position itself for a future where more online interaction happens between agents than people.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Cerf joins a handful of other internet luminaries lending their names to the effort.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["One of the architects of the protocols behind the open internet, Cerf left Google after 20 years last week, but he’s not done thinking about the digital future.","Starting today, he’s advising Innovation Labs, an organization trying to create the open architecture for AI agents to identify themselves.","Innovation Labs is a subsidiary of Identity Digital, a DNS registry company, which sees domain-name infrastructure as a practical way to hold AI agents accountable and position itself for a future where more online interaction happens between agents than people."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-015｜Google 发布 LiteRT.js：通过 WebGPU 在浏览器中运行 .tflite 模型的 JavaScript 绑定
+
+- raw_ref: R-015
+- raw_original_id: cmrlrq06l014obih5sf2jdur9
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-015-google-发布-litert-js-通过-webgpu-在浏览器中运行-tflite-模型的-javascript-绑定.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-015-google-发布-litert-js-通过-webgpu-在浏览器中运行-tflite-模型的-javascript-绑定.json`
+- source: MarkTechPost（RSS）｜https://www.marktechpost.com/2026/07/15/google-releases-litert-js-a-javascript-binding-of-litert-that-runs-tflite-models-in-browsers-via-webgpu
+- source_url: https://www.marktechpost.com/2026/07/15/google-releases-litert-js-a-javascript-binding-of-litert-that-runs-tflite-models-in-browsers-via-webgpu
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 2e991a17d82071f7
+- raw_full_text_hash: 2e991a17d82071f7
+- raw_semantic_hash: e06d3338a275a46d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2e991a17d82071f7","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 22.1
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"product_update","text":"Google 于 2026 年 7 月 9 日发布 LiteRT.js，这是其端侧推理库 LiteRT 的 JavaScript 绑定，通过 WebAssembly 在浏览器中直接执行 .tflite 模型。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Editors Pick New Releases Software Engineering Staff Tech News Google Releases LiteRT.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"js: A JavaScript Binding of LiteRT That Runs .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"tflite Models in Browsers via WebGPU Google released LiteRT.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"js, a JavaScript binding of LiteRT.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"LiteRT is Google’s on-device inference library, previously called TensorFlow Lite.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Google 于 2026 年 7 月 9 日发布 LiteRT.js，这是其端侧推理库 LiteRT 的 JavaScript 绑定，通过 WebAssembly 在浏览器中直接执行 .tflite 模型。","Editors Pick New Releases Software Engineering Staff Tech News Google Releases LiteRT.","js: A JavaScript Binding of LiteRT That Runs ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-016｜Backed by $60M in funding, Oak steps out of stealth to fix the identity mess that AI agents are making worse | TechCrunch
+
+- raw_ref: R-016
+- raw_original_id: https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-016-backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-016-backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-.json`
+- source: keyword search / Anysearch｜https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/
+- source_url: https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: c175c57e420a1b4c
+- raw_full_text_hash: c175c57e420a1b4c
+- raw_semantic_hash: 98998905600a6403
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c175c57e420a1b4c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 资本市场信号
+- keyword_group: capital-market-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"Backed by $60M in funding, Oak steps out of stealth to fix the identity mess that AI agents are making worse | TechCrunch Image Credits:Omer Hacohen Enterprise Copy Share Link # Backed by $60M in funding, Oak steps out of stealth to fix the identity mess that AI agents are making worse Anna Hei... / query=enterprise AI deployment startup funding customer engineering / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Image Credits: Omer Hacohen Enterprise Backed by $60M in funding, Oak steps out of stealth to fix the identity mess that AI agents are making worse Anna Heim 4:00 AM PDT · July 15, 2026 Physical badges used to be all you needed for identity management at a company.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But with humans now working alongside machines and AI agents in digital environments, even the identity tools built for the cloud era are proving inadequate.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"That’s the gap Israeli startup Oak is stepping out of stealth to fill, it says.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"funding","text":"Co-founded by serial entrepreneur Shai Morag, the company has been quietly building a unified control plane that governs identity across an organization, and is now emerging publicly with its product generally available and already deployed by enterprise clients, backed by $60 million in seed funding that it raised late last year.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"The company didn’t disclose client names, but said its solution is already generally available and deployed by enterprise clients.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Backed by $60M in funding, Oak steps out of stealth to fix the identity mess that AI agents are making worse | TechCrunch Image Credits:Omer Hacohen Enterprise Copy Share Link # Backed by $60M in funding, Oak steps out of stealth to fix the identity mess that AI agents are making worse Anna Hei... / query=enterprise AI deployment startup funding customer engineering / intent=find_startups / path=capital_startup","Image Credits: Omer Hacohen Enterprise Backed by $60M in funding, Oak steps out of stealth to fix the identity mess that AI agents are making worse Anna Heim 4:00 AM PDT · July 15, 2026 Physical badges used to be all you needed for identity management at a company.","But with humans now working alongside machines and AI agents in digital environments, even the identity tools built for the cloud era are proving inadequate."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-017｜Samsung SDS Brings FuriosaAI’s NPU Into Commercial Cloud Services < AI·XR < K-Tech < K-World News < 기사본문 - KMJ
+
+- raw_ref: R-017
+- raw_original_id: https://www.kmjournal.net/news/articleView.html?idxno=12765
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-017-samsung-sds-brings-furiosaai-s-npu-into-commercial-cloud-services-ai-x.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-017-samsung-sds-brings-furiosaai-s-npu-into-commercial-cloud-services-ai-x.json`
+- source: keyword search / Anysearch｜https://www.kmjournal.net/news/articleView.html?idxno=12765
+- source_url: https://www.kmjournal.net/news/articleView.html?idxno=12765
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: ai_hardware_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 2b0f02c38855bfaa
+- raw_full_text_hash: 2b0f02c38855bfaa
+- raw_semantic_hash: 4abfa4a4c5c60e52
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2b0f02c38855bfaa","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, adoption_context
+- theme: AI Hardware scenario and service
+- keyword_group: ai-hardware-scenario-service-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Samsung SDS Brings FuriosaAI’s NPU Into Commercial Cloud Services < AI·XR < K-Tech < K-World News < 기사본문 - KMJ NEW ## South Korea Turns to Nuclear Power as AI and Chip Projects Strain the Grid ## Google Turns to Samsung and CJ Olive Young in Enterprise AI Push ## Samsung SDS Brings FuriosaAI’s N... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Samsung SDS is moving a homegrown artificial intelligence chip from the testing stage into real-world enterprise use.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Starting July 16, the company will offer NPU-as-a-Service, or NPUaaS, through the Samsung Cloud Platform.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The service will run on Renegade, also known as RNGD, FuriosaAI&rsquo;s second-generation neural processing unit designed for AI inference.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"FuriosaAI&rsquo;s second-generation AI inference accelerator, Renegade.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Photo courtesy of FuriosaAI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Samsung SDS is moving a homegrown artificial intelligence chip from the testing stage into real-world enterprise use.","Starting July 16, the company will offer NPU-as-a-Service, or NPUaaS, through the Samsung Cloud Platform.","FuriosaAI&rsquo;s second-generation AI inference accelerator, Renegade."],"case_details":["Samsung SDS Brings FuriosaAI’s NPU Into Commercial Cloud Services < AI·XR < K-Tech < K-World News < 기사본문 - KMJ NEW ## South Korea Turns to Nuclear Power as AI and Chip Projects Strain the Grid ## Google Turns to Samsung and CJ Olive Young in Enterprise AI Push ## Samsung SDS Brings FuriosaAI’s N... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original"],"workflow_changes":["The service will run on Renegade, also known as RNGD, FuriosaAI&rsquo;s second-generation neural processing unit designed for AI inference."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-018｜Supermicro Expands End-to-End DCBBS Liquid Cooling Portfolio with Rear Door Heat Exchangers for High-Density AI and HPC Infrastructure | Supermicro
+
+- raw_ref: R-018
+- raw_original_id: https://www.supermicro.com/en/pressreleases/supermicro-expands-end-end-dcbbs-liquid-cooling-portfolio-rear-door-heat-exchangers
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-018-supermicro-expands-end-to-end-dcbbs-liquid-cooling-portfolio-with-rear.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-018-supermicro-expands-end-to-end-dcbbs-liquid-cooling-portfolio-with-rear.json`
+- source: keyword search / Anysearch｜https://www.supermicro.com/en/pressreleases/supermicro-expands-end-end-dcbbs-liquid-cooling-portfolio-rear-door-heat-exchangers
+- source_url: https://www.supermicro.com/en/pressreleases/supermicro-expands-end-end-dcbbs-liquid-cooling-portfolio-rear-door-heat-exchangers
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: ai_hardware_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 44438b53a76bc7e0
+- raw_full_text_hash: 44438b53a76bc7e0
+- raw_semantic_hash: 74ffd29a3a87f9f2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"44438b53a76bc7e0","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, commercial_or_risk_context, adoption_context
+- theme: AI Hardware trend and innovation
+- keyword_group: ai-hardware-trend-innovation-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"quote","text":"Supermicro Expands End-to-End DCBBS Liquid Cooling Portfolio with Rear Door Heat Exchangers for High-Density AI and HPC Infrastructure | Supermicro # Supermicro Expands End-to-End DCBBS Liquid Cooling Portfolio with Rear Door Heat Exchangers for High-Density AI and HPC Infrastructure - Expanded te..... / query=site:supermicro.com/en/pressreleases \"Supermicro Simplifies Edge AI Deployments\" Red Hat Everpure / intent=find_original_source / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Supermicro Expands End-to-End DCBBS Liquid Cooling Portfolio with Rear Door Heat Exchangers for High-Density AI and HPC Infrastructure Expanded ten-model portfolio supports cooling chill door capacities from 10kW up to 120kW for systems level to rack-scale AI factories Flexible Rear Door Heat Exchangers deliver rapid, low-disruption liquid cooling for both new and legacy data centers Integrated DCBBS deliver validated rack-scale infrastructure, intelligent management software, and global deployment services SAN JOS","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":", July 15, 2026 – Super Micro Computer, Inc.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"(NASDAQ: SMCI) , an AI, Enterprise, Storage, and 5G/Edge IT Total Solution Provider, featuring Data Center Building Block Solutions® (DCBBS), today announced the expansion of its Rear Door Heat Exchanger (RDHx) portfolio, further strengthening its end-to-end liquid cooling solutions for high-density AI and HPC infrastructure.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As a key component of DCBBS, the expanded RDHx portfolio offers flexible cooling capacities, providing data center operators with an easy-to-deploy path to liquid cooling for both new and legacy data centers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"\"We continue to expand our DCBBS offerings to provide our customers with unmatched customization and optimization options,\" said Charles Liang, president and CEO of Supermicro.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":[", July 15, 2026 – Super Micro Computer, Inc.","(NASDAQ: SMCI) , an AI, Enterprise, Storage, and 5G/Edge IT Total Solution Provider, featuring Data Center Building Block Solutions® (DCBBS), today announced the expansion of its Rear Door Heat Exchanger (RDHx) portfolio, further strengthening its end-to-end liquid cooling solutions for high-density AI and HPC infrastructure.","As a key component of DCBBS, the expanded RDHx portfolio offers flexible cooling capacities, providing data center operators with an easy-to-deploy path to liquid cooling for both new and legacy data centers."],"case_details":["Supermicro Expands End-to-End DCBBS Liquid Cooling Portfolio with Rear Door Heat Exchangers for High-Density AI and HPC Infrastructure Expanded ten-model portfolio supports cooling chill door capacities from 10kW up to 120kW for systems level to rack-scale AI factories Flexible Rear Door Heat Exchangers deliver rapid, low-disruption liquid cooling for both new and legacy data centers Integrated DCBBS deliver validated rack-scale infrastructure, intelligent management software, and global deployment services SAN JOS"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-019｜InstaLILY, a developer of AI teammates that can automate complex, business-specific work, raises $60M - SiliconANGLE
+
+- raw_ref: R-019
+- raw_original_id: https://siliconangle.com/2026/07/14/instalily-developer-ai-teammates-can-automate-complex-business-specific-work-raises-60m/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-019-instalily-a-developer-of-ai-teammates-that-can-automate-complex-busine.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-019-instalily-a-developer-of-ai-teammates-that-can-automate-complex-busine.json`
+- source: keyword search / Anysearch｜https://siliconangle.com/2026/07/14/instalily-developer-ai-teammates-can-automate-complex-business-specific-work-raises-60m/
+- source_url: https://siliconangle.com/2026/07/14/instalily-developer-ai-teammates-can-automate-complex-business-specific-work-raises-60m/
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 8e1d2ed07a14ba44
+- raw_full_text_hash: 8e1d2ed07a14ba44
+- raw_semantic_hash: fad38a451ff3c73d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8e1d2ed07a14ba44","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 资本市场信号
+- keyword_group: capital-market-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"funding","text":"InstaLILY, a developer of AI teammates that can automate complex, business-specific work, raises $60M - SiliconANGLE SHARE UPDATED 19:45 EDT / JULY 14 2026 AI ### InstaLILY, a developer of AI teammates that can automate complex, business-specific work, raises $60M Enterprise automation startup ... / query=enterprise AI deployment startup funding customer engineering / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"SHARE UPDATED 19:45 EDT / JULY 14 2026 AI InstaLILY, a developer of AI teammates that can automate complex, business-specific work, raises $60M by Mike Wheatley Enterprise automation startup InstaLILY Inc.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"said today it has closed on a hefty $60 million Series B round of funding that brings its total amount raised to date to almost $100 million.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"In addition, it launched a new tool that can help companies to quickly build, deploy and then continuously update and maintain software that runs their business operations.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Today’s round was led by Energize Capital and saw participation from previous backer Insight Partners, as well as new investors like Home Depot Ventures and United Rentals.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"InstaLILY is a developer of autonomous artificial intelligence agents and infrastructure that caters to physical goods and services firms.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["InstaLILY, a developer of AI teammates that can automate complex, business-specific work, raises $60M - SiliconANGLE SHARE UPDATED 19:45 EDT / JULY 14 2026 AI ### InstaLILY, a developer of AI teammates that can automate complex, business-specific work, raises $60M Enterprise automation startup ... / query=enterprise AI deployment startup funding customer engineering / intent=find_startups / path=capital_startup","SHARE UPDATED 19:45 EDT / JULY 14 2026 AI InstaLILY, a developer of AI teammates that can automate complex, business-specific work, raises $60M by Mike Wheatley Enterprise automation startup InstaLILY Inc.","said today it has closed on a hefty $60 million Series B round of funding that brings its total amount raised to date to almost $100 million."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-020｜Saitech Configures Multi-Million-Dollar NVIDIA Blackwell AI Infrastructure for a Global Financial Technology Company
+
+- raw_ref: R-020
+- raw_original_id: https://www.prnewswire.com/news-releases/saitech-configures-multi-million-dollar-nvidia-blackwell-ai-infrastructure-for-a-global-financial-technology-company-302826255.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-020-saitech-configures-multi-million-dollar-nvidia-blackwell-ai-infrastruc.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-020-saitech-configures-multi-million-dollar-nvidia-blackwell-ai-infrastruc.json`
+- source: keyword search / Anysearch｜https://www.prnewswire.com/news-releases/saitech-configures-multi-million-dollar-nvidia-blackwell-ai-infrastructure-for-a-global-financial-technology-company-302826255.html
+- source_url: https://www.prnewswire.com/news-releases/saitech-configures-multi-million-dollar-nvidia-blackwell-ai-infrastructure-for-a-global-financial-technology-company-302826255.html
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: ai_hardware_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 834deec9d4c91e61
+- raw_full_text_hash: 834deec9d4c91e61
+- raw_semantic_hash: 52b6421d98d9474f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"834deec9d4c91e61","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: AI Hardware scenario and service
+- keyword_group: ai-hardware-scenario-service-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Saitech Configures Multi-Million-Dollar NVIDIA Blackwell AI Infrastructure for a Global Financial Technology Company Accessibility Statement Skip Navigation Saitech configured a multi-million-dollar NVIDIA Blackwell AI infrastructure for a leading financial technology company, delivering six Superm.... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Saitech configured a multi-million-dollar NVIDIA Blackwell AI infrastructure for a leading financial technology company, delivering six Supermicro HGX B300 systems to accelerate enterprise AI, HPC, and machine learning workloads.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":", July 15, 2026 /PRNewswire/ -- Overview Continue Reading Saitech Configures Multi-Million-Dollar NVIDIA Blackwell AI Infrastructure for a Global Financial Technology Company As artificial intelligence becomes increasingly important across financial services, organizations are investing in advanced computing infrastructure capable of supporting large-scale model training, quantitative analytics, and data-intensive research.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Modern financial technology companies require high-performance AI platforms that deliver exceptional computational power, ultra-fast networking, and scalable architecture to accelerate innovation while meeting demanding performance requirements.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Saitech recently partnered with a leading global financial technology company to configure and supply enterprise-grade AI infrastructure built on the latest NVIDIA Blackwell architecture.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The deployment consisted of six high-performance Supermicro HGX B300 systems designed to support advanced AI development, machine learning, and high-performance computing (HPC) workloads.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Saitech configured a multi-million-dollar NVIDIA Blackwell AI infrastructure for a leading financial technology company, delivering six Supermicro HGX B300 systems to accelerate enterprise AI, HPC, and machine learning workloads.","Modern financial technology companies require high-performance AI platforms that deliver exceptional computational power, ultra-fast networking, and scalable architecture to accelerate innovation while meeting demanding performance requirements.","Saitech recently partnered with a leading global financial technology company to configure and supply enterprise-grade AI infrastructure built on the latest NVIDIA Blackwell architecture."],"case_details":["Saitech Configures Multi-Million-Dollar NVIDIA Blackwell AI Infrastructure for a Global Financial Technology Company Accessibility Statement Skip Navigation Saitech configured a multi-million-dollar NVIDIA Blackwell AI infrastructure for a leading financial technology company, delivering six Superm.... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original","The deployment consisted of six high-performance Supermicro HGX B300 systems designed to support advanced AI development, machine learning, and high-performance computing (HPC) workloads."],"workflow_changes":[", July 15, 2026 /PRNewswire/ -- Overview Continue Reading Saitech Configures Multi-Million-Dollar NVIDIA Blackwell AI Infrastructure for a Global Financial Technology Company As artificial intelligence becomes increasingly important across financial services, organizations are investing in advanced computing infrastructure capable of supporting large-scale model training, quantitative analytics, and data-intensive research."],"before_after_clues":["可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-021｜Supermicro Advances Enterprises’ Adoption of Accelerated Computing Across AI Factory, Data Center, and Edge with Expanded Portfolio Featuring NVIDIA RTX PRO Blackwell Server Edition GPUs | Supermicro
+
+- raw_ref: R-021
+- raw_original_id: https://www.supermicro.com/en/pressreleases/supermicro-advances-enterprises-adoption-accelerated-computing-across-ai-factory-data
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-021-supermicro-advances-enterprises-adoption-of-accelerated-computing-acro.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-021-supermicro-advances-enterprises-adoption-of-accelerated-computing-acro.json`
+- source: keyword search / Anysearch｜https://www.supermicro.com/en/pressreleases/supermicro-advances-enterprises-adoption-accelerated-computing-across-ai-factory-data
+- source_url: https://www.supermicro.com/en/pressreleases/supermicro-advances-enterprises-adoption-accelerated-computing-across-ai-factory-data
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: ai_hardware_original
+- source_type: operators
+- source_level: C
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 6b5e563b4fc2b951
+- raw_full_text_hash: 6b5e563b4fc2b951
+- raw_semantic_hash: 6f1775e6701f47a5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6b5e563b4fc2b951","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, adoption_context
+- theme: AI Hardware trend and innovation
+- keyword_group: ai-hardware-trend-innovation-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"quote","text":"Supermicro Advances Enterprises’ Adoption of Accelerated Computing Across AI Factory, Data Center, and Edge with Expanded Portfolio Featuring NVIDIA RTX PRO Blackwell Server Edition GPUs | Supermicro # Supermicro Advances Enterprises’ Adoption of Accelerated Computing Across AI Factory, Data Center.... / query=site:supermicro.com/en/pressreleases \"Supermicro Simplifies Edge AI Deployments\" Red Hat Everpure / intent=find_original_source / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Supermicro Advances Enterprises’ Adoption of Accelerated Computing Across AI Factory, Data Center, and Edge with Expanded Portfolio Featuring NVIDIA RTX PRO Blackwell Server Edition GPUs New systems available in multiple form factors based on Supermicro’s modular Building Block Solutions® to enable right-sizing for space, power, and thermally-restricted environments commonly found in enterprise and edge data centers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Support for the new NVIDIA RTX PRO™ 4500 Blackwell Server Edition GPU and NVIDIA Vera CPU enables new levels of multi-workload acceleration and efficiency across data center, cloud, and edge deployments.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Supermicro’s NVIDIA-Certified Systems are NVIDIA accelerated application-ready and guarantee compatibility with NVIDIA RTX PRO Blackwell GPUs, NVIDIA networking, and NVIDIA software.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":", March 18, 2026 — Super Micro Computer, Inc.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"(NASDAQ: SMCI) , a Total IT Solution Provider for Cloud Computing, AI/ML, Storage, and 5G/Edge is announcing new additions to its broad portfolio of enterprise solutions to meet the growing demands of today’s AI-enabled and graphical computing applications, in a wider range of enterprise environments.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Supermicro Advances Enterprises’ Adoption of Accelerated Computing Across AI Factory, Data Center, and Edge with Expanded Portfolio Featuring NVIDIA RTX PRO Blackwell Server Edition GPUs New systems available in multiple form factors based on Supermicro’s modular Building Block Solutions® to enable right-sizing for space, power, and thermally-restricted environments commonly found in enterprise and edge data centers.","Supermicro’s NVIDIA-Certified Systems are NVIDIA accelerated application-ready and guarantee compatibility with NVIDIA RTX PRO Blackwell GPUs, NVIDIA networking, and NVIDIA software.",", March 18, 2026 — Super Micro Computer, Inc."],"case_details":["Support for the new NVIDIA RTX PRO™ 4500 Blackwell Server Edition GPU and NVIDIA Vera CPU enables new levels of multi-workload acceleration and efficiency across data center, cloud, and edge deployments."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-022｜NVIDIA Introduces New Jetson Thor Computers to Advance Mainstream Robotics and Edge AI | NVIDIA Blog
+
+- raw_ref: R-022
+- raw_original_id: https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-022-nvidia-introduces-new-jetson-thor-computers-to-advance-mainstream-robo.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-022-nvidia-introduces-new-jetson-thor-computers-to-advance-mainstream-robo.json`
+- source: keyword search / Anysearch｜https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/
+- source_url: https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: ai_hardware_original
+- source_type: product
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 59948026a84c5f63
+- raw_full_text_hash: 59948026a84c5f63
+- raw_semantic_hash: b147f225d99bfcd9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"59948026a84c5f63","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, adoption_context
+- theme: AI Hardware scenario and service
+- keyword_group: ai-hardware-scenario-service-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"# NVIDIA Introduces New Jetson Thor Computers to Advance Mainstream Robotics and Edge AI | NVIDIA Blog Author: Chen Su Published: 2026-07-15T23:00:54+00:00 Source: blogs.nvidia.com (blogs.nvidia.com) Language: en ## Story ![country_code](https://www.nvidia.com/content/dam/1x1-00000000.png) NVIDI... / query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Skip to content General-purpose robots and autonomous machines are moving from research labs to real-world mass-market deployment, creating demand for compact, power-efficient AI supercomputers capable of running foundation models at the edge.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"To meet that need, NVIDIA today introduced the T3000 and T2000, new modules based on the NVIDIA Thor architecture that enable mass-market robotics and edge AI applications at scale.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Jetson AGX Thor is powering this next generation of humanoid and robotic systems, with growing adoption across industries.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Leading companies — including 1X , Agile Robots , Amazon Robotics , Boston Dynamics , FANUC , Hitachi and Techman Robot — are building on the platform.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Unlocking Humanoid and Robotics Deployment With T3000 The hardware underpinning those capabilities starts with the Jetson and IGX T3000 modules, which delivers 865 FP4 teraflops of AI compute in a compact form factor roughly half the size and power of the T5000.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["To meet that need, NVIDIA today introduced the T3000 and T2000, new modules based on the NVIDIA Thor architecture that enable mass-market robotics and edge AI applications at scale.","Jetson AGX Thor is powering this next generation of humanoid and robotic systems, with growing adoption across industries."],"case_details":["Skip to content General-purpose robots and autonomous machines are moving from research labs to real-world mass-market deployment, creating demand for compact, power-efficient AI supercomputers capable of running foundation models at the edge.","Unlocking Humanoid and Robotics Deployment With T3000 The hardware underpinning those capabilities starts with the Jetson and IGX T3000 modules, which delivers 865 FP4 teraflops of AI compute in a compact form factor roughly half the size and power of the T5000."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-023｜Orthogonal Raises $4.3M to Build the API Layer for AI Agents - The Silicon Valley Post
+
+- raw_ref: R-023
+- raw_original_id: https://svpost.com/articles/orthogonal-4-3m-seed/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-023-orthogonal-raises-4-3m-to-build-the-api-layer-for-ai-agents-the-silico.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-023-orthogonal-raises-4-3m-to-build-the-api-layer-for-ai-agents-the-silico.json`
+- source: keyword search / Anysearch｜https://svpost.com/articles/orthogonal-4-3m-seed/
+- source_url: https://svpost.com/articles/orthogonal-4-3m-seed/
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 83
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 2d2ca8e2cdf1d254
+- raw_full_text_hash: 2d2ca8e2cdf1d254
+- raw_semantic_hash: d8b1eeff515739e5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2d2ca8e2cdf1d254","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: 资本市场信号
+- keyword_group: capital-market-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"Orthogonal Raises $4.3M to Build the API Layer for AI Agents - The Silicon Valley Post # Orthogonal Raises $4.3M to Build the API Layer for AI Agents Orthogonal(orthogonal.com), a YC W26 startup building a unified API and payments layer for AI agents, has raised $4.3M in seed funding from Pantera ..... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Orthogonal Raises $4.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"3M to Build the API Layer for AI Agents Orthogonal ( orthogonal.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"com ), a YC W26 startup building a unified API and payments layer for AI agents, has raised $4.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"3M in seed funding from Pantera Capital, Pioneer Fund , Y Combinator, Decasonic, Outbound Capital, Rice Capital, Surreal by Premise, and others, as first reported by The Street .","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The entire API economy was built for humans.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Orthogonal Raises $4.3M to Build the API Layer for AI Agents - The Silicon Valley Post # Orthogonal Raises $4.3M to Build the API Layer for AI Agents Orthogonal(orthogonal.com), a YC W26 startup building a unified API and payments layer for AI agents, has raised $4.3M in seed funding from Pantera ..... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup","Orthogonal Raises $4.","3M to Build the API Layer for AI Agents Orthogonal ( orthogonal."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-024｜Flex and Cerebras Scale U.S. AI Manufacturing
+
+- raw_ref: R-024
+- raw_original_id: https://www.cerebras.ai/press-release/flex-and-cerebras-expand-partnership-to-scale-american-manufacturing-of-cerebras-ai
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-024-flex-and-cerebras-scale-u-s-ai-manufacturing.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-024-flex-and-cerebras-scale-u-s-ai-manufacturing.json`
+- source: keyword search / Anysearch｜https://www.cerebras.ai/press-release/flex-and-cerebras-expand-partnership-to-scale-american-manufacturing-of-cerebras-ai
+- source_url: https://www.cerebras.ai/press-release/flex-and-cerebras-expand-partnership-to-scale-american-manufacturing-of-cerebras-ai
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: ai_hardware_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: ee86f1b510c46165
+- raw_full_text_hash: ee86f1b510c46165
+- raw_semantic_hash: a818e70b7528f4e2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ee86f1b510c46165","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, adoption_context
+- theme: AI Hardware scenario and service
+- keyword_group: ai-hardware-scenario-service-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Flex and Cerebras Scale U.S. AI Manufacturing Flex and Cerebras are scaling American manufacturing of AI supercomputers in Silicon Valley. Learn more >> Jul 09 2026 # Flex and Cerebras Expand Partnership to Scale American Manufacturing of Cerebras AI Supercomputers New manufacturing lines in Mil... / query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"number","text":"Jul 09 2026 Flex and Cerebras Expand Partnership to Scale American Manufacturing of Cerebras AI Supercomputers New manufacturing lines in Milpitas, California will support an anticipated 7x increase in production of Cerebras CS-3 systems as demand for high-performance AI infrastructure accelerates.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"and MILPITAS, Calif.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":", July 9, 2026 /PRNewswire/ -- Flex and Cerebras Systems Inc.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"today announced an expanded manufacturing partnership to scale production of the Cerebras CS-3, one of the world's most advanced AI accelerator systems, at Flex manufacturing facilities in Milpitas, California.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As demand for AI infrastructure accelerates, the collaboration reflects a significant expansion of advanced manufacturing capacity in the United States.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["and MILPITAS, Calif.",", July 9, 2026 /PRNewswire/ -- Flex and Cerebras Systems Inc.","today announced an expanded manufacturing partnership to scale production of the Cerebras CS-3, one of the world's most advanced AI accelerator systems, at Flex manufacturing facilities in Milpitas, California."],"case_details":["Flex and Cerebras Scale U.S. AI Manufacturing Flex and Cerebras are scaling American manufacturing of AI supercomputers in Silicon Valley. Learn more >> Jul 09 2026 # Flex and Cerebras Expand Partnership to Scale American Manufacturing of Cerebras AI Supercomputers New manufacturing lines in Mil... / query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-025｜C3 AI and Shell Expand Collaboration, Scaling Reliability AI Deployment Across Global Asset Operations – Company Announcement - FT.com
+
+- raw_ref: R-025
+- raw_original_id: https://markets.ft.com/data/announce/full?dockey=600-202606040900BIZWIRE_USPRX____20260604_BW461527-1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-025-c3-ai-and-shell-expand-collaboration-scaling-reliability-ai-deployment.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-025-c3-ai-and-shell-expand-collaboration-scaling-reliability-ai-deployment.json`
+- source: keyword search / Anysearch｜https://markets.ft.com/data/announce/full?dockey=600-202606040900BIZWIRE_USPRX____20260604_BW461527-1
+- source_url: https://markets.ft.com/data/announce/full?dockey=600-202606040900BIZWIRE_USPRX____20260604_BW461527-1
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 83
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: dda91fe6a14f2fc2
+- raw_full_text_hash: dda91fe6a14f2fc2
+- raw_semantic_hash: 38d3098e7e4587ac
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dda91fe6a14f2fc2","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"case_detail","text":"C3 AI and Shell Expand Collaboration, Scaling Reliability AI Deployment Across Global Asset Operations – Company Announcement - FT.com ### C3 AI and Shell Expand Collaboration, Scaling Reliability AI Deployment Across Global Asset Operations Jun 04 2026 14:00 BST Multi-year agreement extends Shel... / query=enterprise AI transformation production rollout customer deployment / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"ai Inc C3 AI and Shell Expand Collaboration, Scaling Reliability AI Deployment Across Global Asset Operations Jun 04 2026 14:00 BST Multi-year agreement extends Shell’s AI-powered reliability program, incorporating agentic root cause analysis and diagnostic capabilities REDWOOD CITY, Calif.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"--(BUSINESS WIRE)--Jun.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"4, 2026-- C3 AI (NYSE: AI) today announced that Shell Information Technology International B.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"(“Shell”) is extending its long-standing collaboration with C3 AI across its global operations.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"C3 AI has worked with Shell since 2018 to deploy and operate an enterprise-scale predictive maintenance program, monitoring more than 13,000 pieces of equipment.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["--(BUSINESS WIRE)--Jun.","4, 2026-- C3 AI (NYSE: AI) today announced that Shell Information Technology International B.","(“Shell”) is extending its long-standing collaboration with C3 AI across its global operations."],"case_details":["C3 AI and Shell Expand Collaboration, Scaling Reliability AI Deployment Across Global Asset Operations – Company Announcement - FT.com ### C3 AI and Shell Expand Collaboration, Scaling Reliability AI Deployment Across Global Asset Operations Jun 04 2026 14:00 BST Multi-year agreement extends Shel... / query=enterprise AI transformation production rollout customer deployment / intent=find_market_trend / path=a_media_gdelt","ai Inc C3 AI and Shell Expand Collaboration, Scaling Reliability AI Deployment Across Global Asset Operations Jun 04 2026 14:00 BST Multi-year agreement extends Shell’s AI-powered reliability program, incorporating agentic root cause analysis and diagnostic capabilities REDWOOD CITY, Calif."],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-026｜Claude at scale on Google Cloud: Frontier AI, built for enterprise production | Google Cloud Blog
+
+- raw_ref: R-026
+- raw_original_id: https://cloud.google.com/blog/products/ai-machine-learning/claude-at-scale-on-google-cloud-frontier-ai-built-for-enterprise-production
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-026-claude-at-scale-on-google-cloud-frontier-ai-built-for-enterprise-produ.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-026-claude-at-scale-on-google-cloud-frontier-ai-built-for-enterprise-produ.json`
+- source: keyword search / Anysearch｜https://cloud.google.com/blog/products/ai-machine-learning/claude-at-scale-on-google-cloud-frontier-ai-built-for-enterprise-production
+- source_url: https://cloud.google.com/blog/products/ai-machine-learning/claude-at-scale-on-google-cloud-frontier-ai-built-for-enterprise-production
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 0a48365cda944345
+- raw_full_text_hash: 0a48365cda944345
+- raw_semantic_hash: 12c443f26dbf67aa
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0a48365cda944345","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Claude at scale on Google Cloud: Frontier AI, built for enterprise production | Google Cloud Blog AI & Machine Learning # Claude at scale on Google Cloud: Frontier AI, built for enterprise production July 14, 2026 ##### Schneider Larbi Sr Manager, Global Partner Technical Architecture, AI & Saa... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI & Machine Learning Claude at scale on Google Cloud: Frontier AI, built for enterprise production July 14, 2026 Schneider Larbi Sr Manager, Global Partner Technical Architecture, AI & SaaS ISVs Ivan Nardini Sr.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Developer Relations Engineer Try Gemini Enterprise Business Edition today The front door to AI in the workplace Try now Running frontier AI in production is demanding — accelerators to manage, latency to hold steady across continents, regulated data to keep in-region, and long-context requests to serve reliably.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Claude on Google Cloud is built for exactly this.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Like Monet and water lilies , frontier models and the enterprise platforms are often better together.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"In our case, Claude brings the reasoning, and Google Cloud brings the managed infrastructure, global reach, and compliance posture that enterprises already run on.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["AI & Machine Learning Claude at scale on Google Cloud: Frontier AI, built for enterprise production July 14, 2026 Schneider Larbi Sr Manager, Global Partner Technical Architecture, AI & SaaS ISVs Ivan Nardini Sr.","Developer Relations Engineer Try Gemini Enterprise Business Edition today The front door to AI in the workplace Try now Running frontier AI in production is demanding — accelerators to manage, latency to hold steady across continents, regulated data to keep in-region, and long-context requests to serve reliably.","Claude on Google Cloud is built for exactly this."],"case_details":["Claude at scale on Google Cloud: Frontier AI, built for enterprise production | Google Cloud Blog AI & Machine Learning # Claude at scale on Google Cloud: Frontier AI, built for enterprise production July 14, 2026 ##### Schneider Larbi Sr Manager, Global Partner Technical Architecture, AI & Saa... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":["In our case, Claude brings the reasoning, and Google Cloud brings the managed infrastructure, global reach, and compliance posture that enterprises already run on."]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-027｜The 2026 Agentic Enterprise Report | Contentstack Research
+
+- raw_ref: R-027
+- raw_original_id: https://www.contentstack.com/resources/report/agentic-enterprise-report-2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-027-the-2026-agentic-enterprise-report-contentstack-research.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-027-the-2026-agentic-enterprise-report-contentstack-research.json`
+- source: keyword search / Anysearch｜https://www.contentstack.com/resources/report/agentic-enterprise-report-2026
+- source_url: https://www.contentstack.com/resources/report/agentic-enterprise-report-2026
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 58d185c7578df62c
+- raw_full_text_hash: 937c1d12cecac3a5
+- raw_semantic_hash: 043990af505b9055
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"937c1d12cecac3a5","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"funding","text":"The 2026 Agentic Enterprise Report | Contentstack Research Contentstack introduces the Agentic Experience Platform | Press release Ask AI Contentstack introduces the Agentic Experience Platform | Press release Contentstack Research # The 2026 Agentic Enterprise Report Benchmarks from 621 digit... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Contentstack Research The 2026 Agentic Enterprise Report Benchmarks from 621 digital leaders on AI adoption, top agentic use-cases and the barriers that still threaten ROI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Enterprise leaders have spent the past two years being told that agentic AI is the next major shift in how work gets done.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The pitch is compelling: autonomous systems that don’t just generate content or answer questions, but reason across tasks, take action and operate with minimal human intervention.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Boards are asking about it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Vendors are selling it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The 2026 Agentic Enterprise Report | Contentstack Research Contentstack introduces the Agentic Experience Platform | Press release Ask AI Contentstack introduces the Agentic Experience Platform | Press release Contentstack Research # The 2026 Agentic Enterprise Report Benchmarks from 621 digit... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing","Contentstack Research The 2026 Agentic Enterprise Report Benchmarks from 621 digital leaders on AI adoption, top agentic use-cases and the barriers that still threaten ROI.","Enterprise leaders have spent the past two years being told that agentic AI is the next major shift in how work gets done."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-028｜Monetizing your Agent with Microsoft | Microsoft Learn
+
+- raw_ref: R-028
+- raw_original_id: https://learn.microsoft.com/en-us/startups/build/ai/agents/monetizing-agents
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-028-monetizing-your-agent-with-microsoft-microsoft-learn.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-028-monetizing-your-agent-with-microsoft-microsoft-learn.json`
+- source: keyword search / Anysearch｜https://learn.microsoft.com/en-us/startups/build/ai/agents/monetizing-agents
+- source_url: https://learn.microsoft.com/en-us/startups/build/ai/agents/monetizing-agents
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: procurement_marketplace
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 9cd0bc82e57b457e
+- raw_full_text_hash: 9cd0bc82e57b457e
+- raw_semantic_hash: 4bcbb70de3bee962
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9cd0bc82e57b457e","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Monetizing your Agent with Microsoft | Microsoft Learn Ask Learn Ask Learn # Monetizing your Agent with Microsoft ## Overview Building an agent is only half the journey; the other half is monetizing it effectively. For startups, Azure offers a powerful set of commercialization pathways that go ... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=procurement_marketplace","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Monetizing your Agent with Microsoft | Microsoft Learn Table of contents Exit editor mode Ask Learn Ask Learn Reading mode Table of contents Read in English Add Add to plan Edit Copy Markdown Print Note Access to this page requires authorization.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"You can try signing in or changing directories .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Access to this page requires authorization.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"You can try changing directories .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Monetizing your Agent with Microsoft Feedback Summarize this article for me Overview Building an agent is only half the journey; the other half is monetizing it effectively.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Monetizing your Agent with Microsoft | Microsoft Learn Table of contents Exit editor mode Ask Learn Ask Learn Reading mode Table of contents Read in English Add Add to plan Edit Copy Markdown Print Note Access to this page requires authorization.","You can try signing in or changing directories .","Access to this page requires authorization."],"case_details":["Monetizing your Agent with Microsoft | Microsoft Learn Ask Learn Ask Learn # Monetizing your Agent with Microsoft ## Overview Building an agent is only half the journey; the other half is monetizing it effectively. For startups, Azure offers a powerful set of commercialization pathways that go ... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=procurement_marketplace"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师","采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-029｜GitHub's Copilot for Business is now generally available
+
+- raw_ref: R-029
+- raw_original_id: https://techcrunch.com/2023/02/14/githubs-copilot-for-business-is-now-generally-available/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-029-github-s-copilot-for-business-is-now-generally-available.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-029-github-s-copilot-for-business-is-now-generally-available.json`
+- source: keyword search / Anysearch｜https://techcrunch.com/2023/02/14/githubs-copilot-for-business-is-now-generally-available/
+- source_url: https://techcrunch.com/2023/02/14/githubs-copilot-for-business-is-now-generally-available/
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 8b808c9260c75af4
+- raw_full_text_hash: 8b808c9260c75af4
+- raw_semantic_hash: f169f0d11f600878
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8b808c9260c75af4","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"GitHub's Copilot for Business is now generally available | TechCrunch Share on Facebook Share on X Share on LinkedIn Share on Reddit Share over Email Copy Share Link # GitHub’s Copilot for Business is now generally available 10:00 AM PST · February 14, 2023 Share on Facebook Share on X Share on ... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"number","text":"Enterprise GitHub’s Copilot for Business is now generally available Frederic Lardinois 10:00 AM PST · February 14, 2023 GitHub today announced that Copilot for Business, the company’s $19/month enterprise version of its AI-powered code completion tool, is now generally available, after a short beta phase that started last December .","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Copilot for Business adds features like license management, organization-wide policy management and additional privacy features.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Until now, you had to work with GitHub’s sales organization to sign up for the business version, but now there is a self-serve option as well.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"“[This] effectively completes our v1 C opilot story,” GitHub CEO Thomas Dohmke told me.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"product_update","text":"“W e announced the preview in June 2021 — which feels like ages ago — and then had the general availability last summer.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["“W e announced the preview in June 2021 — which feels like ages ago — and then had the general availability last summer."],"case_details":["GitHub's Copilot for Business is now generally available | TechCrunch Share on Facebook Share on X Share on LinkedIn Share on Reddit Share over Email Copy Share Link # GitHub’s Copilot for Business is now generally available 10:00 AM PST · February 14, 2023 Share on Facebook Share on X Share on ... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt"],"workflow_changes":["Until now, you had to work with GitHub’s sales organization to sign up for the business version, but now there is a self-serve option as well."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["Copilot for Business adds features like license management, organization-wide policy management and additional privacy features."]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-030｜Copilot Workspace is GitHub's take on AI-powered ...
+
+- raw_ref: R-030
+- raw_original_id: https://techcrunch.com/2024/04/29/copilot-workspace-is-githubs-take-on-ai-powered-software-engineering/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-030-copilot-workspace-is-github-s-take-on-ai-powered.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-030-copilot-workspace-is-github-s-take-on-ai-powered.json`
+- source: keyword search / Anysearch｜https://techcrunch.com/2024/04/29/copilot-workspace-is-githubs-take-on-ai-powered-software-engineering/
+- source_url: https://techcrunch.com/2024/04/29/copilot-workspace-is-githubs-take-on-ai-powered-software-engineering/
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 7cd52e2f21ad9f74
+- raw_full_text_hash: 7cd52e2f21ad9f74
+- raw_semantic_hash: 8a52ed0cbd3f2d8b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7cd52e2f21ad9f74","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, business_change, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Copilot Workspace is GitHub's take on AI-powered software engineering | TechCrunch Image Credits:Vaughn Ridley/Sportsfile for Collision via Getty Images AI Copy Share Link # Copilot Workspace is GitHub’s take on AI-powered software engineering Kyle Wiggers 9:00 AM PDT · April 29, 2024 Copy Sh... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Image Credits: Vaughn Ridley/Sportsfile for Collision via Getty Images AI Copilot Workspace is GitHub’s take on AI-powered software engineering Kyle Wiggers 9:00 AM PDT · April 29, 2024 Is the future of software development an AI-powered IDE?","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"GitHub’s floating the idea.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"Ahead of its annual GitHub Universe conference in San Francisco early this fall, GitHub announced Copilot Workspace, a dev environment that taps what GitHub describes as “Copilot-powered agents” to help developers brainstorm, plan, build, test and run code in natural language.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Jonathan Carter, head of GitHub Next, GitHub’s software R&D team, pitches Workspace as somewhat of an evolution of GitHub’s AI-powered coding assistant Copilot into a more general tool, building on recently introduced capabilities like Copilot Chat , which lets developers ask questions about code in natural language.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"quote","text":"“Through research, we found that, for many tasks, the biggest point of friction for developers was in getting started, and in particular knowing how to approach a [coding] problem, knowing which files to edit and knowing how to consider multiple solutions and their trade-offs,” Carter said.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["GitHub’s floating the idea."],"case_details":["Copilot Workspace is GitHub's take on AI-powered software engineering | TechCrunch Image Credits:Vaughn Ridley/Sportsfile for Collision via Getty Images AI Copy Share Link # Copilot Workspace is GitHub’s take on AI-powered software engineering Kyle Wiggers 9:00 AM PDT · April 29, 2024 Copy Sh... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt","Image Credits: Vaughn Ridley/Sportsfile for Collision via Getty Images AI Copilot Workspace is GitHub’s take on AI-powered software engineering Kyle Wiggers 9:00 AM PDT · April 29, 2024 Is the future of software development an AI-powered IDE?","Jonathan Carter, head of GitHub Next, GitHub’s software R&D team, pitches Workspace as somewhat of an evolution of GitHub’s AI-powered coding assistant Copilot into a more general tool, building on recently introduced capabilities like Copilot Chat , which lets developers ask questions about code in natural language."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-031｜Copilot, GitHub's AI-powered programming assistant, is ...
+
+- raw_ref: R-031
+- raw_original_id: https://techcrunch.com/2022/06/21/copilot-githubs-ai-powered-programming-assistant-is-now-generally-available/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-031-copilot-github-s-ai-powered-programming-assistant-is.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-031-copilot-github-s-ai-powered-programming-assistant-is.json`
+- source: keyword search / Anysearch｜https://techcrunch.com/2022/06/21/copilot-githubs-ai-powered-programming-assistant-is-now-generally-available/
+- source_url: https://techcrunch.com/2022/06/21/copilot-githubs-ai-powered-programming-assistant-is-now-generally-available/
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: f1c50237f906f622
+- raw_full_text_hash: f1c50237f906f622
+- raw_semantic_hash: 939eab7c42b1313e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f1c50237f906f622","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Copilot, GitHub's AI-powered programming assistant, is now generally available Image Credits:GitHub Copy Share Link # Copilot, GitHub’s AI-powered programming assistant, is now generally available Kyle Wiggers 9:28 AM PDT · June 21, 2022 Copy Share Link Last June, Microsoft-owned GitHub and O... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Image Credits: GitHub Copilot, GitHub’s AI-powered programming assistant, is now generally available Kyle Wiggers 9:28 AM PDT · June 21, 2022 Last June, Microsoft-owned GitHub and OpenAI launched Copilot , a service that provides suggestions for whole lines of code inside development environments like Microsoft Visual Studio.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Available as a downloadable extension, Copilot is powered by an AI model called Codex that’s trained on billions of lines of public code to suggest additional lines of code and functions given the context of existing code.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Copilot can also surface an approach or solution in response to a description of what a developer wants to accomplish (e.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"quote","text":", “Say hello world”), drawing on its knowledge base and current context.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Copilot was previously only available in technical preview.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":[],"case_details":["Copilot, GitHub's AI-powered programming assistant, is now generally available Image Credits:GitHub Copy Share Link # Copilot, GitHub’s AI-powered programming assistant, is now generally available Kyle Wiggers 9:28 AM PDT · June 21, 2022 Copy Share Link Last June, Microsoft-owned GitHub and O... / query=open-source AI agent GitHub enterprise adoption / intent=find_market_trend / path=a_media_gdelt","Image Credits: GitHub Copilot, GitHub’s AI-powered programming assistant, is now generally available Kyle Wiggers 9:28 AM PDT · June 21, 2022 Last June, Microsoft-owned GitHub and OpenAI launched Copilot , a service that provides suggestions for whole lines of code inside development environments like Microsoft Visual Studio.","Available as a downloadable extension, Copilot is powered by an AI model called Codex that’s trained on billions of lines of public code to suggest additional lines of code and functions given the context of existing code."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-032｜Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents – Company Announcement - FT.com
+
+- raw_ref: R-032
+- raw_original_id: https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-032-rubrik-announces-upcoming-integration-with-amazon-bedrock-agentcore-to.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-032-rubrik-announces-upcoming-integration-with-amazon-bedrock-agentcore-to.json`
+- source: keyword search / Anysearch｜https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1
+- source_url: https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 1bcd96f7a55c8484
+- raw_full_text_hash: 1bcd96f7a55c8484
+- raw_semantic_hash: 4c1874b1bad8e4cc
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1bcd96f7a55c8484","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"product_update","text":"Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents – Company Announcement - FT.com Rubrik Inc ### Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents Jun 17 2026 17:00 BST NEW YORK--(BUSINESS WIRE)--Jun. 17, 2026-- AWS Summ... / query=agent governance evals production rollout enterprise AI / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Rubrik Inc Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents Jun 17 2026 17:00 BST NEW YORK --(BUSINESS WIRE)--Jun.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"17, 2026-- AWS Summit -- Rubrik (NYSE: RBRK), the Security and AI Operations company, announced today its upcoming Rubrik Agent Cloud (RAC) integration with Amazon Bedrock AgentCore.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"The upcoming integration reflects Rubrik's commitment to extending the security controls customers already trust into agentic workflows.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Amazon Bedrock AgentCore is the platform to build, connect, and optimize agents at scale.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Through its policy engine, AgentCore enforces real-time, deterministic controls at the gateway across all agent traffic, including agent-to-tool, agent-to-LLM and agent-to-agent communications.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents – Company Announcement - FT.com Rubrik Inc ### Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents Jun 17 2026 17:00 BST NEW YORK--(BUSINESS WIRE)--Jun. 17, 2026-- AWS Summ... / query=agent governance evals production rollout enterprise AI / intent=find_market_trend / path=a_media_gdelt","Rubrik Inc Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents Jun 17 2026 17:00 BST NEW YORK --(BUSINESS WIRE)--Jun.","Amazon Bedrock AgentCore is the platform to build, connect, and optimize agents at scale."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["17, 2026-- AWS Summit -- Rubrik (NYSE: RBRK), the Security and AI Operations company, announced today its upcoming Rubrik Agent Cloud (RAC) integration with Amazon Bedrock AgentCore.","The upcoming integration reflects Rubrik's commitment to extending the security controls customers already trust into agentic workflows."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-033｜Agent governance - Agentic AI Lens
+
+- raw_ref: R-033
+- raw_original_id: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentsus03.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-033-agent-governance-agentic-ai-lens.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-033-agent-governance-agentic-ai-lens.json`
+- source: keyword search / Anysearch｜https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentsus03.html
+- source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentsus03.html
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: procurement_marketplace
+- source_type: marketplace
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 2dedc66acd391339
+- raw_full_text_hash: 2dedc66acd391339
+- raw_semantic_hash: f7537768a02c1f76
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2dedc66acd391339","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"# Agent governance Organizations that deliberately design how agents interact with users and business processes sustain both automation value and institutional expertise as adoption scales. As agents proliferate, there is a risk that internal expertise will be diluted or lost to fully automated pro.... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Agent governance - Agentic AI Lens View a markdown version of this page Agent governance - Agentic AI Lens Documentation AWS Well-Architected AWS Well-Architected Framework Capability intent Maturity levels Common issues to watch for Agent governance Organizations that deliberately design how agents interact with users and business processes sustain both automation value and institutional expertise as adoption scales.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"As agents proliferate, there is a risk that internal expertise will be diluted or lost to fully automated processes.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The patterns governing agent interactions must be deliberately designed and maintained, establishing reusable approaches based on real-world organizational needs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"AGENTSUS03: How do I establish durable patterns for agent interactions with users and business processes?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Capability intent Organizational competencies are deliberately categorized across human-owned, agent-augmented, and fully automated tiers, with clear boundaries enforced by routing and guardrail policies.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The patterns governing agent interactions must be deliberately designed and maintained, establishing reusable approaches based on real-world organizational needs.","Capability intent Organizational competencies are deliberately categorized across human-owned, agent-augmented, and fully automated tiers, with clear boundaries enforced by routing and guardrail policies."],"case_details":[],"workflow_changes":["Agent governance - Agentic AI Lens View a markdown version of this page Agent governance - Agentic AI Lens Documentation AWS Well-Architected AWS Well-Architected Framework Capability intent Maturity levels Common issues to watch for Agent governance Organizations that deliberately design how agents interact with users and business processes sustain both automation value and institutional expertise as adoption scales.","AGENTSUS03: How do I establish durable patterns for agent interactions with users and business processes?"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","采购负责人"],"risks_or_constraints":["# Agent governance Organizations that deliberately design how agents interact with users and business processes sustain both automation value and institutional expertise as adoption scales. As agents proliferate, there is a risk that internal expertise will be diluted or lost to fully automated pro.... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace","As agents proliferate, there is a risk that internal expertise will be diluted or lost to fully automated processes."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-034｜CI/CD for AI Agents on Microsoft Foundry | Microsoft Community Hub
+
+- raw_ref: R-034
+- raw_original_id: https://techcommunity.microsoft.com/blog/educatordeveloperblog/cicd-for-ai-agents-on-microsoft-foundry/4522218
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-034-ci-cd-for-ai-agents-on-microsoft-foundry-microsoft-community-hub.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-034-ci-cd-for-ai-agents-on-microsoft-foundry-microsoft-community-hub.json`
+- source: keyword search / Anysearch｜https://techcommunity.microsoft.com/blog/educatordeveloperblog/cicd-for-ai-agents-on-microsoft-foundry/4522218
+- source_url: https://techcommunity.microsoft.com/blog/educatordeveloperblog/cicd-for-ai-agents-on-microsoft-foundry/4522218
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: procurement_marketplace
+- source_type: operators
+- source_level: C
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: high
+- community_name: keyword search / Anysearch
+- capture_scope: article_text
+- evidence_level: community_signal
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 24a36dc817d5f1e4
+- raw_full_text_hash: 24a36dc817d5f1e4
+- raw_semantic_hash: ce52851097efea6f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"24a36dc817d5f1e4","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"CI/CD for AI Agents on Microsoft Foundry | Microsoft Community Hub ## Blog Post Educator Developer Blog 9 MIN READ # CI/CD for AI Agents on Microsoft Foundry Lee_Stott Microsoft May 22, 2026 ## A reference architecture for AI engineers building, deploying, and governing agents at enterprise ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Blog Post Educator Developer Blog 9 MIN READ CI/CD for AI Agents on Microsoft Foundry Lee_Stott Microsoft May 22, 2026 A reference architecture for AI engineers building, deploying, and governing agents at enterprise scale using Microsoft Foundry, GitHub Actions, and Azure DevOps Introduction Building an AI agent is the straightforward part.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Shipping it reliably to production with version control, evaluation-driven quality gates, multi-environment promotion, and enterprise governance is where most teams run into friction.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Microsoft Foundry changes this.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It is Microsoft's AI app and agent factory: a fully managed platform for building, deploying, and governing AI agents at scale.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It provides a first-class agent runtime with built-in lifecycle management, making it possible to apply the same CI/CD rigour you already use for application software to AI agents — regardless of whether you are building containerised hosted agents or declarative prompt-based agents.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Blog Post Educator Developer Blog 9 MIN READ CI/CD for AI Agents on Microsoft Foundry Lee_Stott Microsoft May 22, 2026 A reference architecture for AI engineers building, deploying, and governing agents at enterprise scale using Microsoft Foundry, GitHub Actions, and Azure DevOps Introduction Building an AI agent is the straightforward part.","Shipping it reliably to production with version control, evaluation-driven quality gates, multi-environment promotion, and enterprise governance is where most teams run into friction.","Microsoft Foundry changes this."],"case_details":[],"workflow_changes":["CI/CD for AI Agents on Microsoft Foundry | Microsoft Community Hub ## Blog Post Educator Developer Blog 9 MIN READ # CI/CD for AI Agents on Microsoft Foundry Lee_Stott Microsoft May 22, 2026 ## A reference architecture for AI engineers building, deploying, and governing agents at enterprise ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-035｜Banco do Brasil Embeds Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement | NiCE
+
+- raw_ref: R-035
+- raw_original_id: https://www.nice.com/press-releases/banco-do-brasil-embeds-agentic-ai-into-core-workflows-to-strengthen-relationship-banking-and-customer-engagement
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-035-banco-do-brasil-embeds-agentic-ai-into-core-workflows-to-strengthen-re.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-035-banco-do-brasil-embeds-agentic-ai-into-core-workflows-to-strengthen-re.json`
+- source: keyword search / Anysearch｜https://www.nice.com/press-releases/banco-do-brasil-embeds-agentic-ai-into-core-workflows-to-strengthen-relationship-banking-and-customer-engagement
+- source_url: https://www.nice.com/press-releases/banco-do-brasil-embeds-agentic-ai-into-core-workflows-to-strengthen-relationship-banking-and-customer-engagement
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 4ecc15d3432693f0
+- raw_full_text_hash: 4ecc15d3432693f0
+- raw_semantic_hash: 815209c557b09b48
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4ecc15d3432693f0","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Banco do Brasil Embeds Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement | NiCE # Press Release ## Banco do Brasil Embeds Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement Jul 14, 2026 ## Deployment of NiCE Copilot e... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Press Release Banco do Brasil Embeds Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement Jul 14, 2026 Deployment of NiCE Copilot enables relationship managers and banking teams to deliver more personalized, efficient, and compliant service at scale Hoboken, NJ, July 14, 2026 — NiCE (NASDAQ: NICE) today announced that Banco do Brasil, one of Latin America's largest financial institutions, is leveraging NiCE Copilot to accelerate operational excellence and elevate customer servic","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Embedded natively within the unified NiCE CXone AI platform used by relationship managers and banking assistants, NiCE Copilot brings agentic AI-powered guidance and automation into everyday banking workflows.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"This seamless experience enables employees to work more efficiently, make informed decisions in real time, and deliver personalized compliant customer interactions – all from a single, integrated workspace.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"number","text":"Serving more than 90 million customers, Banco do Brasil continues to invest in technologies that help scale personalized service while maintaining the trust, consistency, and governance required in modern banking.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Through NiCE Copilot, the bank is equipping employees with AI-powered capabilities that streamline customer interactions, accelerate decision-making, and provide greater visibility into customer needs and engagement history.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":[],"case_details":["Banco do Brasil Embeds Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement | NiCE # Press Release ## Banco do Brasil Embeds Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement Jul 14, 2026 ## Deployment of NiCE Copilot e... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original","Press Release Banco do Brasil Embeds Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement Jul 14, 2026 Deployment of NiCE Copilot enables relationship managers and banking teams to deliver more personalized, efficient, and compliant service at scale Hoboken, NJ, July 14, 2026 — NiCE (NASDAQ: NICE) today announced that Banco do Brasil, one of Latin America's largest financial institutions, is leveraging NiCE Copilot to accelerate operational excellence and elevate customer servic","Embedded natively within the unified NiCE CXone AI platform used by relationship managers and banking assistants, NiCE Copilot brings agentic AI-powered guidance and automation into everyday banking workflows."],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-036｜苹果 Apple 智能通过备案，阿里千问将集成至国行 iPhone；小米开源具身通用模型 Xiaomi-Robotics-U0
+
+- raw_ref: R-036
+- raw_original_id: cmrmq80il0176bi7ix28nnzaw
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-036-苹果-apple-智能通过备案-阿里千问将集成至国行-iphone-小米开源具身通用模型-xiaomi-robotics-u0.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-036-苹果-apple-智能通过备案-阿里千问将集成至国行-iphone-小米开源具身通用模型-xiaomi-robotics-u0.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/275.htm
+- source_url: https://www.ithome.com/0/977/275.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 70
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 078a647fbdfc8f3c
+- raw_full_text_hash: 078a647fbdfc8f3c
+- raw_semantic_hash: 70225284ac64c78b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"078a647fbdfc8f3c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, automotive_vertical_context, commercial_or_risk_context, adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 7.699999999999999
+- raw_capture_priority: 20.7
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"网信部门新增\"Apple 智能\"等7款手机端侧生成式AI服务备案，阿里千问将作为AI能力集成至Apple 智能，国行iPhone AI功能上线在即。小米开源具身领域首个统一生成模型Xiaomi-Robotics-U0，在WorldArena评测基准上以126个模型参评取得总分第一。华为2026年智能手机出货目标提升20%以上至6000万部，第二季度在华市场份额达23%。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"IT早报 0716：华为苹果 Q2 国内手机出货量逆势大涨；苹果 2026 返校季活动开启；苹果 AI 国内通过备案；曝豆包 AI 手机今年将发布多款机型.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"- IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 IT早报 0716：华为苹果 Q2 国内手机出货量逆势大涨；苹果 2026 返校季活动开启；苹果 AI 国内通过备案；曝豆包 AI 手机今年将发布多款机型.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"number","text":"IT早报 2026/7/16 7:28:20 责编： 梦泽 评论： “IT早报”时间，大家好，现在是 2026 年 7 月 16 日星期四，今天的重要科技资讯有： 1、Omdia：第二季度中国大陆智能手机出货量同比下降 2%，华为苹果逆势大涨 华为凭借新品带动及稳健的价格策略持续扩大份额优势，占据 23% 市场份额。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"苹果排名第二，出货量 1240 万台，在中国大陆市场的出货量和市场份额均创下其历年第二季度新高，市场份额为 19%。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":">> 查看详情 2、苹果 2026 返校季活动开启：中国大陆用户买 Mac / iPad 送 AirTags 苹果 2026 年返校促销已在亚洲八个市场启动，包括中国大陆、印度、新加坡等。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["IT早报 0716：华为苹果 Q2 国内手机出货量逆势大涨；苹果 2026 返校季活动开启；苹果 AI 国内通过备案；曝豆包 AI 手机今年将发布多款机型.",">> 查看详情 2、苹果 2026 返校季活动开启：中国大陆用户买 Mac / iPad 送 AirTags 苹果 2026 年返校促销已在亚洲八个市场启动，包括中国大陆、印度、新加坡等。"],"case_details":["- IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 IT早报 0716：华为苹果 Q2 国内手机出货量逆势大涨；苹果 2026 返校季活动开启；苹果 AI 国内通过备案；曝豆包 AI 手机今年将发布多款机型."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-037｜Model Routing Is Simple. Until It Isn't.
+
+- raw_ref: R-037
+- raw_original_id: cmrmdggzy04vxbivcohymt3z6
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-037-model-routing-is-simple-until-it-isn-t.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-037-model-routing-is-simple-until-it-isn-t.json`
+- source: Hugging Face：Blog（RSS）｜https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt
+- source_url: https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 7071bf26cc378aa1
+- raw_full_text_hash: 7071bf26cc378aa1
+- raw_semantic_hash: fc29753b36b447b2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7071bf26cc378aa1","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 早期信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.699999999999999
+- raw_capture_priority: 20.7
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Model Routing Is Simple. Until It Isn't.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Back to Articles a]:hidden\"> Model Routing Is Simple.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Enterprise Article Published July 15, 2026 Upvote 19 +13 Yara Rizk yarizk Follow ibm-research Eyal Shnarch eishna Follow ibm-research Jason Tsay jsntsay Follow ibm-research Merve Unuvar mrvnvr Follow ibm-research Building a router into your agent sounds like an easy win.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Send simple requests to cheaper models, reserve expensive ones for harder tasks, or route by specialty — Claude for code, Gemini for multimodal, and so on.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"A classifier or heuristic makes the call, costs go down, performance stays up.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Most routing systems assume that model selection is a classification problem.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Model Routing Is Simple. Until It Isn't.","Back to Articles a]:hidden\"> Model Routing Is Simple.","Enterprise Article Published July 15, 2026 Upvote 19 +13 Yara Rizk yarizk Follow ibm-research Eyal Shnarch eishna Follow ibm-research Jason Tsay jsntsay Follow ibm-research Merve Unuvar mrvnvr Follow ibm-research Building a router into your agent sounds like an easy win."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-038｜Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI
+
+- raw_ref: R-038
+- raw_original_id: cmrm3igx102ttbi5kmlwzyu7w
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-038-rime-获-2400-万美元-a-轮融资-用自建录音棚数据训练企业语音-ai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-038-rime-获-2400-万美元-a-轮融资-用自建录音棚数据训练企业语音-ai.json`
+- source: TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls
+- source_url: https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: bf887bd5437c51a7
+- raw_full_text_hash: bf887bd5437c51a7
+- raw_semantic_hash: 8910bfffab9b5ee4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"bf887bd5437c51a7","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 7.699999999999999
+- raw_capture_priority: 20.7
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"funding","text":"旧金山语音 AI 初创公司 Rime 完成 2400 万美元 A 轮融资，由 M13 Ventures 领投。Rime 自建录音棚采集对话数据训练模型，并采用音素架构适配不同行业术语发音，客户无需重新训练。公司已服务 Mayo Clinic、Dialpad 等客户，并计划将 35 人团队扩招至模型开发、工程和合作岗位。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Image Credits: Rime Fundraising Rime picks up $24M Series A to help enterprises field customer calls Ivan Mehta 6:00 AM PDT · July 15, 2026 Voice AI startups’ biggest unlock has been handling calls for enterprises in areas like sales, marketing, and customer support.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Large organizations are offloading calls to voice model developers like ElevenLabs and Deepgram ; infrastructure companies like Vapi , Retell, and LiveKit; and dedicated customer support shops like Decagon and Sierra.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"San Francisco-based Rime is trying to gain an edge in this crowded market with its voice AI models that are trained on conversational data that it records, aiming to reduce its clients’ customization load.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Founded in 2022 by former Stanford PhD student Lily Clifford, ex-Amazon Alexa engineer Brooke Larson, and Stanford engineer Ares Geovanos, Rime has built a recording studio in San Francisco to collect its own conversational data rather than relying on scraping the web for audio.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"The startup said it focuses on tuning its voice models to nail the pronunciation of different brand entities and industry-specific terms.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["旧金山语音 AI 初创公司 Rime 完成 2400 万美元 A 轮融资，由 M13 Ventures 领投。Rime 自建录音棚采集对话数据训练模型，并采用音素架构适配不同行业术语发音，客户无需重新训练。公司已服务 Mayo Clinic、Dialpad 等客户，并计划将 35 人团队扩招至模型开发、工程和合作岗位。","Image Credits: Rime Fundraising Rime picks up $24M Series A to help enterprises field customer calls Ivan Mehta 6:00 AM PDT · July 15, 2026 Voice AI startups’ biggest unlock has been handling calls for enterprises in areas like sales, marketing, and customer support.","San Francisco-based Rime is trying to gain an edge in this crowded market with its voice AI models that are trained on conversational data that it records, aiming to reduce its clients’ customization load."],"case_details":["Large organizations are offloading calls to voice model developers like ElevenLabs and Deepgram ; infrastructure companies like Vapi , Retell, and LiveKit; and dedicated customer support shops like Decagon and Sierra."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-039｜Reelful 利用 AI 将相册内容自动剪辑成短视频
+
+- raw_ref: R-039
+- raw_original_id: cmrm4l2w20346bi5kuo06yrxc
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-039-reelful-利用-ai-将相册内容自动剪辑成短视频.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-039-reelful-利用-ai-将相册内容自动剪辑成短视频.json`
+- source: TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/15/reelfuls-ai-turns-your-camera-roll-into-short-form-videos-for-social-media
+- source_url: https://techcrunch.com/2026/07/15/reelfuls-ai-turns-your-camera-roll-into-short-form-videos-for-social-media
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: operators
+- source_level: C
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 0ccd8dd25e251f9d
+- raw_full_text_hash: 0ccd8dd25e251f9d
+- raw_semantic_hash: c8ec5f72865c3e52
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0ccd8dd25e251f9d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 7.699999999999999
+- raw_capture_priority: 20.7
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"前 Snapchat 工程师 Kate Deyneka 推出 iOS 应用 Reelful，用户输入提示词并录制 30 秒语音样本后，AI 即可自动规划脚本、添加配音和特效，将照片和视频剪辑成适配 TikTok 的短视频。该应用提供一次性购买（5 个视频 15 美元起）和订阅计划（Creator 月费 25 美元含 10 个视频）。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Image Credits: Reelful Apps Reelful’s AI turns your camera roll into short-form videos for social media Aisha Malik 6:00 AM PDT · July 15, 2026 A new iOS app called Reelful uses AI to automatically turn photos and video clips from your camera roll into polished TikTok- and Instagram Reels-style videos for social media.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reelful is designed for people who want to create social content, but find traditional video editing tools too complex or time-consuming.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"The app’s launch reflects a broader shift in video creation, as AI is allowing users to move beyond traditional creative tools to AI agents that are capable of automating content creation.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reelful joins a growing wave of AI startups that are reshaping how content is created, including Opus Clip and Captions .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reelful, which is currently participating in a16z’s Speedrun program, was founded by Kate Deyneka, a former machine learning engineer at Snapchat who helped develop video and image models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Image Credits: Reelful Apps Reelful’s AI turns your camera roll into short-form videos for social media Aisha Malik 6:00 AM PDT · July 15, 2026 A new iOS app called Reelful uses AI to automatically turn photos and video clips from your camera roll into polished TikTok- and Instagram Reels-style videos for social media.","Reelful is designed for people who want to create social content, but find traditional video editing tools too complex or time-consuming.","The app’s launch reflects a broader shift in video creation, as AI is allowing users to move beyond traditional creative tools to AI agents that are capable of automating content creation."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-040｜开源编程智能体内存方案发布，通过 SSH 同步
+
+- raw_ref: R-040
+- raw_original_id: cmrmotlpp07iubiuloujszkts
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-040-开源编程智能体内存方案发布-通过-ssh-同步.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-040-开源编程智能体内存方案发布-通过-ssh-同步.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜https://github.com/vshulcz/deja-vu
+- source_url: https://github.com/vshulcz/deja-vu
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 88
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: a956f9c7a64ebaf2
+- raw_full_text_hash: a956f9c7a64ebaf2
+- raw_semantic_hash: a52a3ac5d1dae98a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a956f9c7a64ebaf2","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.699999999999999
+- raw_capture_priority: 20.7
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"product_update","text":"一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。代码已开源，便于开发者集成与定制。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"vshulcz deja-vu Public Notifications You must be signed in to change notification settings Fork Star 214 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 61 Commits 61 Commits .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"github assets assets cmd/ deja cmd/ deja docs docs fixtures/ synthetic fixtures/ synthetic internal internal npm npm scripts scripts .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"md LICENSE LICENSE Makefile Makefile README.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"sh View all files Repository files navigation Your agents already solved this.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"io/deja-vu Claude Code, Codex and opencode write every conversation to local files — gigabytes of debugged problems and design decisions you can't search.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。代码已开源，便于开发者集成与定制。","vshulcz deja-vu Public Notifications You must be signed in to change notification settings Fork Star 214 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 61 Commits 61 Commits .","github assets assets cmd/ deja cmd/ deja docs docs fixtures/ synthetic fixtures/ synthetic internal internal npm npm scripts scripts ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-041｜Grok Build 发布
+
+- raw_ref: R-041
+- raw_original_id: cmrmnqd4e06q4biuly3sv5lff
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-041-grok-build-发布.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-041-grok-build-发布.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜https://github.com/xai-org/grok-build
+- source_url: https://github.com/xai-org/grok-build
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 91
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 8923ffbf64e7bea5
+- raw_full_text_hash: 8923ffbf64e7bea5
+- raw_semantic_hash: 4e4d540f61da0b7b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8923ffbf64e7bea5","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.699999999999999
+- raw_capture_priority: 20.7
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"xAI 发布 Grok Build，一个基于 Grok 模型的 AI 编程与构建工具。该项目已在 GitHub 上开源，允许开发者通过自然语言指令直接生成和部署应用。Grok Build 旨在降低编程门槛，使非技术用户也能快速构建软件。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There was an error while loading.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Please reload this page .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"xai-org grok-build Public Notifications You must be signed in to change notification settings Fork 612 Star 4.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"3k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1 Commit 1 Commit .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"cargo bin bin crates crates prod/ mc/ cli-chat-proxy-types prod/ mc/ cli-chat-proxy-types third_party third_party .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["There was an error while loading.","Please reload this page .","xai-org grok-build Public Notifications You must be signed in to change notification settings Fork 612 Star 4."],"case_details":["xAI 发布 Grok Build，一个基于 Grok 模型的 AI 编程与构建工具。该项目已在 GitHub 上开源，允许开发者通过自然语言指令直接生成和部署应用。Grok Build 旨在降低编程门槛，使非技术用户也能快速构建软件。"],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-042｜Soofi 联盟发布 Soofi S 30B-A3B：面向德语和英语的开源混合 Mamba-Transformer MoE 基础模型
+
+- raw_ref: R-042
+- raw_original_id: cmrmksstz0419biul93dzfnfw
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-042-soofi-联盟发布-soofi-s-30b-a3b-面向德语和英语的开源混合-mamba-transformer-moe-基础模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-042-soofi-联盟发布-soofi-s-30b-a3b-面向德语和英语的开源混合-mamba-transformer-moe-基础模型.json`
+- source: MarkTechPost（RSS）｜https://www.marktechpost.com/2026/07/15/soofi-consortium-releases-soofi-s-30b-a3b-an-open-hybrid-mamba-transformer-moe-foundation-model-for-german-and-english
+- source_url: https://www.marktechpost.com/2026/07/15/soofi-consortium-releases-soofi-s-30b-a3b-an-open-hybrid-mamba-transformer-moe-foundation-model-for-german-and-english
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: fa9516bb96b175cb
+- raw_full_text_hash: fa9516bb96b175cb
+- raw_semantic_hash: f91fded38bf3e54d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fa9516bb96b175cb","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.699999999999999
+- raw_capture_priority: 20.7
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"Soofi S 30B-A3B 是一个总参数约 31.6B、每 token 激活约 3.2B 参数的混合 Mamba-Transformer MoE 基础模型，在完全开源的基础模型中取得最高的英语（70.1%）和德语（79.1%）聚合分数。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Editors Pick Agentic AI Artificial Intelligence AI Infrastructure Tech News AI Paper Summary Technology AI Shorts Applications Language Model Large Language Model Machine Learning New Releases Open Source Staff Uncategorized A German research consortium has published the pretraining report for Soofi S 30B-A3B .","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It is an open base model for German and English.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Training ran end to end on Deutsche Telekom’s Industrial AI Cloud in Munich.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Preview weights are on Hugging Face.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It is worth noting that among some of the fully open base models tested, Soofi S records the highest English and German aggregate scores.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Editors Pick Agentic AI Artificial Intelligence AI Infrastructure Tech News AI Paper Summary Technology AI Shorts Applications Language Model Large Language Model Machine Learning New Releases Open Source Staff Uncategorized A German research consortium has published the pretraining report for Soofi S 30B-A3B .","It is an open base model for German and English.","Training ran end to end on Deutsche Telekom’s Industrial AI Cloud in Munich."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-043｜一个基于强化学习的智能体，用于训练其他模型（训练成本约1.3k）
+
+- raw_ref: R-043
+- raw_original_id: cmrlo7jss005zbih56hith64z
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-043-一个基于强化学习的智能体-用于训练其他模型-训练成本约1-3k.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-043-一个基于强化学习的智能体-用于训练其他模型-训练成本约1-3k.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜https://github.com/Danau5tin/ai-trains-ai
+- source_url: https://github.com/Danau5tin/ai-trains-ai
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 91
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: d797552e07edf58d
+- raw_full_text_hash: d797552e07edf58d
+- raw_semantic_hash: b105b1cd7b62974d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d797552e07edf58d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.699999999999999
+- raw_capture_priority: 20.7
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"开发者训练了一个基于强化学习（RL）的智能体，该智能体专门用于训练其他模型，整个训练过程花费约1.3k美元。项目代码已在GitHub上开源。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Danau5tin ai-trains-ai Public Notifications You must be signed in to change notification settings Fork 12 Star 155 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1 Commit 1 Commit analysis/ pilot7 analysis/ pilot7 assets assets benchmarks benchmarks dans_notes dans_notes docs docs e2e e2e evals evals examples examples runner runner scripts scripts src/ autonomous_trainer src/ autonomous_trainer template template tests ","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"python-version LICENSE LICENSE README.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"toml pyrightconfig.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"json pyrightconfig.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"lock View all files Repository files navigation 🤓 AI Trains AI: Using RL to train an AI agent that trains AI using RL 🔓 Everything is open sourced including: the trained agent's weights ( LoRA adapter on 🤗 HF ), agent harness, task families, reward code, GPU orchestration, tinker RL training scripts, and retro write-ups of every pilot (including the failures).","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["开发者训练了一个基于强化学习（RL）的智能体，该智能体专门用于训练其他模型，整个训练过程花费约1.3k美元。项目代码已在GitHub上开源。","python-version LICENSE LICENSE README.","toml pyrightconfig."],"case_details":["Danau5tin ai-trains-ai Public Notifications You must be signed in to change notification settings Fork 12 Star 155 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 1 Commit 1 Commit analysis/ pilot7 analysis/ pilot7 assets assets benchmarks benchmarks dans_notes dans_notes docs docs e2e e2e evals evals examples examples runner runner scripts scripts src/ autonomous_trainer src/ autonomous_trainer template template tests ","lock View all files Repository files navigation 🤓 AI Trains AI: Using RL to train an AI agent that trains AI using RL 🔓 Everything is open sourced including: the trained agent's weights ( LoRA adapter on 🤗 HF ), agent harness, task families, reward code, GPU orchestration, tinker RL training scripts, and retro write-ups of every pilot (including the failures)."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-044｜Apple Intelligence 获准在华上线，将集成阿里巴巴 Qwen 大模型
+
+- raw_ref: R-044
+- raw_original_id: cmrm8vh6o04btbi5kcq7atths
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-044-apple-intelligence-获准在华上线-将集成阿里巴巴-qwen-大模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-044-apple-intelligence-获准在华上线-将集成阿里巴巴-qwen-大模型.json`
+- source: TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai
+- source_url: https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 74
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 470662209ee43861
+- raw_full_text_hash: 470662209ee43861
+- raw_semantic_hash: 00644aaaf37b75c2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"470662209ee43861","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: 20.7
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"quote","text":"中国网信办批准 Apple Intelligence 在华上线，苹果将把阿里巴巴的 Qwen 大模型集成至 iOS、iPadOS、macOS 及 visionOS 系统。该合作此前传闻已久，标志着苹果在关键市场的 AI 布局取得重要进展。阿里巴巴确认 Qwen 将被\"整合到 Apple Intelligence 体验中\"，提供文本与图像理解及生成等 AI 能力。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"product_update","text":"In Brief Posted: 8:29 AM PDT · July 15, 2026 Image Credits: Apple (event screenshot) Sarah Perez Apple Intelligence approved for launch in China with Alibaba’s Qwen AI Apple Intelligence, the iPhone maker’s generative AI offering, is coming to China.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"On Wednesday, Reuters reported that China’s regulator, the Cyberspace Administration of China, approved Apple’s AI services in the country, on the back of a deal to integrate Alibaba’s Qwen AI model into Apple’s operating systems, including iOS, iPadOS, macOS, and visionOS.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The deal, which was rumored to be in the works last year, marks an important step for Apple’s AI ambitions in a key market.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"In the second quarter, Apple sales in Greater China increased 28% to $20.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Apple also recently regained the No.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["In Brief Posted: 8:29 AM PDT · July 15, 2026 Image Credits: Apple (event screenshot) Sarah Perez Apple Intelligence approved for launch in China with Alibaba’s Qwen AI Apple Intelligence, the iPhone maker’s generative AI offering, is coming to China.","On Wednesday, Reuters reported that China’s regulator, the Cyberspace Administration of China, approved Apple’s AI services in the country, on the back of a deal to integrate Alibaba’s Qwen AI model into Apple’s operating systems, including iOS, iPadOS, macOS, and visionOS.","The deal, which was rumored to be in the works last year, marks an important step for Apple’s AI ambitions in a key market."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-045｜Claude Code v2.1.211 发布
+
+- raw_ref: R-045
+- raw_original_id: cmrmpyugi00rabi7iu8d7dwts
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-045-claude-code-v2-1-211-发布.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-045-claude-code-v2-1-211-发布.json`
+- source: Claude Code：GitHub Releases（RSS）｜https://github.com/anthropics/claude-code/releases/tag/v2.1.211
+- source_url: https://github.com/anthropics/claude-code/releases/tag/v2.1.211
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: developer
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 6aa7f54bf541b54a
+- raw_full_text_hash: 6aa7f54bf541b54a
+- raw_semantic_hash: 4bc20c9e4b0c327f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6aa7f54bf541b54a","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: 技术迭代信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.1
+- raw_capture_priority: 20.1
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"product_update","text":"Claude Code v2.1.211 新增 `--forward-subagent-text` 标志，可在 stream-json 输出中包含子智能体文本与思考过程。本次更新修复了权限预览中双向覆盖字符等未被中和的问题，以及 PreToolUse 钩子在非沙箱 Bash 中覆盖 ask 决策的 bug。此外还改进了后台智能体结果报告与终端渲染性能。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There was an error while loading.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Please reload this page .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 22.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"211 Latest Latest Compare Choose a tag to compare Sorry, something went wrong.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Filter Loading Sorry, something went wrong.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Claude Code v2.1.211 新增 `--forward-subagent-text` 标志，可在 stream-json 输出中包含子智能体文本与思考过程。本次更新修复了权限预览中双向覆盖字符等未被中和的问题，以及 PreToolUse 钩子在非沙箱 Bash 中覆盖 ask 决策的 bug。此外还改进了后台智能体结果报告与终端渲染性能。","There was an error while loading.","Please reload this page ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-046｜xAI sues a man for using Grok to generate CSAM &#8216;deepfakes&#8217;
+
+- raw_ref: R-046
+- raw_original_id: https://www.theverge.com/?p=966293
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-046-xai-sues-a-man-for-using-grok-to-generate-csam-8216-deepfakes-8217.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-046-xai-sues-a-man-for-using-grok-to-generate-csam-8216-deepfakes-8217.json`
+- source: The Verge AI｜https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam
+- source_url: https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: d018ce24b5c42f82
+- raw_full_text_hash: d018ce24b5c42f82
+- raw_semantic_hash: 4631e28aae51c7cb
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d018ce24b5c42f82","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"quote","text":"The Elon Musk-owned xAI is suing a South Carolina man who allegedly used the company's Grok AI chatbot to generate child sexual abuse material (CSAM). In a lawsuit reported earlier by Reuters, xAI claims Terry Wayne Harwood \"knowingly and intentionally used Grok to circumvent safeguards, alter nonconsensual images, and generate and distribute CSAM,\" breaching the [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI News Policy xAI sues a man for using Grok to generate CSAM ‘deepfakes’ Elon Musk’s xAI claims Terry Harwood bypassed Grok’s safeguards to generate CSAM.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The company is asking for reputational and legal damages.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Elon Musk’s xAI claims Terry Harwood bypassed Grok’s safeguards to generate CSAM.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"by Emma Roth Jul 15, 2026, 9:33 PM UTC The Verge Part Of The latest on Grok’s gross AI deepfakes problem see all updates Emma Roth is a news writer who covers the streaming wars, consumer tech, crypto, social media, and much more.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["AI News Policy xAI sues a man for using Grok to generate CSAM ‘deepfakes’ Elon Musk’s xAI claims Terry Harwood bypassed Grok’s safeguards to generate CSAM.","The company is asking for reputational and legal damages.","Elon Musk’s xAI claims Terry Harwood bypassed Grok’s safeguards to generate CSAM."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-047｜Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex
+
+- raw_ref: R-047
+- raw_original_id: https://techcrunch.com/?p=3142831
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-047-amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-047-amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex.json`
+- source: TechCrunch AI｜https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/
+- source_url: https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 95
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 20f19f34556132b5
+- raw_full_text_hash: 20f19f34556132b5
+- raw_semantic_hash: 9d2b5ad0aed459a3
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"20f19f34556132b5","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"product_update","text":"OpenAI, which is in the middle of a legal battle with Apple over hardware trade theft allegations, just released a light-up keyboard designed to be paired with its agentic coding app.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"number","text":"Image Credits: OpenAI AI Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex Lucas Ropek 12:41 PM PDT · July 15, 2026 OpenAI is officially entering the hardware market with the launch of a $230 light-up keyboard designed to pair with its AI coding assistant, Codex.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The Codex Micro, co-designed with specialty keyboard designer Work Louder, is being advertised as a fancy new way for ChatGPT users to manage their fleets of AI coding agents — the semi-autonomous bots that can write and execute code with little human input.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"The device comes equipped with light-up “Agent Keys” that show agent status, customizable Command Keys that act as shortcuts for frequent Codex actions, and a joystick for launching common workflows.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"quote","text":"It also has a dial that adjusts how much “reasoning” — essentially, how much time and computing power — an agent uses on a given task (agent reasoning level).","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"quote","text":"The idea is that, instead of managing your agents through your phone or desktop app, you can now use the Micro as your “command center for agentic work,” as OpenAI puts it.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["OpenAI, which is in the middle of a legal battle with Apple over hardware trade theft allegations, just released a light-up keyboard designed to be paired with its agentic coding app.","The Codex Micro, co-designed with specialty keyboard designer Work Louder, is being advertised as a fancy new way for ChatGPT users to manage their fleets of AI coding agents — the semi-autonomous bots that can write and execute code with little human input."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-048｜Microsoft patches record number of security vulnerabilities, citing its use of AI
+
+- raw_ref: R-048
+- raw_original_id: https://techcrunch.com/?p=3142791
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-048-microsoft-patches-record-number-of-security-vulnerabilities-citing-its.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-048-microsoft-patches-record-number-of-security-vulnerabilities-citing-its.json`
+- source: TechCrunch AI｜https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/
+- source_url: https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 77
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 47f55d6fec82e485
+- raw_full_text_hash: 47f55d6fec82e485
+- raw_semantic_hash: 5c85d235d335091c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"47f55d6fec82e485","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"Microsoft's monthly release of security fixes, dubbed Patch Tuesday, resolved a record 570 security vulnerabilities across the company's product line, thanks to discoveries with AI.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"In Brief Posted: 9:20 AM PDT · July 15, 2026 Image Credits: Microsoft / PhotoMosh (edited) Zack Whittaker Microsoft patches record number of security vulnerabilities, citing its use of AI Microsoft released a record number of security patches for Windows, Office, and other tech product lines this week, citing the use of AI to aid the discovery of code vulnerabilities.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"The technology and cloud giant issued patches for 570 security flaws on Tuesday as part of its monthly scheduled release of fixes, which security researchers have long dubbed “Patch Tuesday.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"company_action","text":"” At least two of the vulnerabilities are classified as zero-days , meaning that they were exploited before Microsoft was made aware of them.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"One bug affecting Windows Server allows hackers to escalate their privileges from a limited user to a system administrator.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Another bug affects the SharePoint file sharing server — the U.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["” At least two of the vulnerabilities are classified as zero-days , meaning that they were exploited before Microsoft was made aware of them.","One bug affecting Windows Server allows hackers to escalate their privileges from a limited user to a system administrator.","Another bug affects the SharePoint file sharing server — the U."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["Microsoft's monthly release of security fixes, dubbed Patch Tuesday, resolved a record 570 security vulnerabilities across the company's product line, thanks to discoveries with AI.","In Brief Posted: 9:20 AM PDT · July 15, 2026 Image Credits: Microsoft / PhotoMosh (edited) Zack Whittaker Microsoft patches record number of security vulnerabilities, citing its use of AI Microsoft released a record number of security patches for Windows, Office, and other tech product lines this week, citing the use of AI to aid the discovery of code vulnerabilities.","The technology and cloud giant issued patches for 570 security flaws on Tuesday as part of its monthly scheduled release of fixes, which security researchers have long dubbed “Patch Tuesday."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-049｜OpenAI finally launches hardware… for Codex
+
+- raw_ref: R-049
+- raw_original_id: https://www.theverge.com/?p=965901
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-049-openai-finally-launches-hardware-for-codex.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-049-openai-finally-launches-hardware-for-codex.json`
+- source: The Verge AI｜https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch
+- source_url: https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- extraction_method: json-ld
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: b06d3f33b107d799
+- raw_full_text_hash: b06d3f33b107d799
+- raw_semantic_hash: 998236a200b00a5b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b06d3f33b107d799","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"OpenAI is finally releasing some hardware. No, it isn't the mysterious AI-powered device the company is developing with former Apple designer Jony Ive, a project already tangled up in a messy lawsuit. Instead, it's a product designed to be used with its coding platform, Codex. The device, a square-shaped block of buttons called Codex Micro, [&#8230;]","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"product_update","text":"OpenAI finally launches hardware… for Codex The collaboration with Work Louder is separate from OpenAI’s main hardware project, rumored to be some kind of smart speaker.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenAI is finally releasing some hardware.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"No, it isn’t the mysterious AI-powered device the company is developing with former Apple designer Jony Ive, a project already tangled up in a messy lawsuit.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Instead, it’s a product designed to be used with its coding platform, Codex.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The device, a square-shaped block of buttons called Codex Micro, is a collaboration between the AI company and keyboard maker Work Louder.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["OpenAI finally launches hardware… for Codex The collaboration with Work Louder is separate from OpenAI’s main hardware project, rumored to be some kind of smart speaker.","OpenAI is finally releasing some hardware.","Instead, it’s a product designed to be used with its coding platform, Codex."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["OpenAI is finally releasing some hardware. No, it isn't the mysterious AI-powered device the company is developing with former Apple designer Jony Ive, a project already tangled up in a messy lawsuit. Instead, it's a product designed to be used with its coding platform, Codex. The device, a square-shaped block of buttons called Codex Micro, [&#8230;]","No, it isn’t the mysterious AI-powered device the company is developing with former Apple designer Jony Ive, a project already tangled up in a messy lawsuit."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-050｜OpenAI&#039;s first hardware product is a screenless AI speaker designed to feel alive
+
+- raw_ref: R-050
+- raw_original_id: https://the-decoder.com/?p=37788
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-050-openai-039-s-first-hardware-product-is-a-screenless-ai-speaker-designe.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-050-openai-039-s-first-hardware-product-is-a-screenless-ai-speaker-designe.json`
+- source: The Decoder AI News｜https://the-decoder.com/openais-first-hardware-product-is-a-screenless-ai-speaker-designed-to-feel-alive/
+- source_url: https://the-decoder.com/openais-first-hardware-product-is-a-screenless-ai-speaker-designed-to-feel-alive/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 88
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: fe965847c80352fc
+- raw_full_text_hash: fe965847c80352fc
+- raw_semantic_hash: 58f0a7f3f9ad66db
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fe965847c80352fc","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"OpenAI plans to enter hardware with a portable, screenless smart speaker. Equipped with a camera, sensors, and moving mechanical parts, the device is designed as an AI companion that feels \"alive.\" But Apple's trade secrets lawsuit involving OpenAI hardware chief Tang Tan could delay its planned 2027 launch. The article OpenAI&#039;s first hardware product is a screenless AI speaker designed to feel alive appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Ad Skip to content OpenAI's first hardware product is a screenless AI speaker designed to feel alive Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 15, 2026 OpenAI Key Points OpenAI is developing a screenless smart speaker designed as a personalized AI companion for the home.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The device combines a camera and sensors with OpenAI's new GPT-Live voice mode.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Moving mechanical parts are meant to make the speaker feel alive, while proactive features help it anticipate and respond to users' needs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenAI is planning a portable, screenless smart speaker as an AI companion for the home.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"The device is meant to feel alive, but Apple's trade secrets lawsuit could delay its launch.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Ad Skip to content OpenAI's first hardware product is a screenless AI speaker designed to feel alive Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 15, 2026 OpenAI Key Points OpenAI is developing a screenless smart speaker designed as a personalized AI companion for the home.","The device combines a camera and sensors with OpenAI's new GPT-Live voice mode.","Moving mechanical parts are meant to make the speaker feel alive, while proactive features help it anticipate and respond to users' needs."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":["OpenAI plans to enter hardware with a portable, screenless smart speaker. Equipped with a camera, sensors, and moving mechanical parts, the device is designed as an AI companion that feels \"alive.\" But Apple's trade secrets lawsuit involving OpenAI hardware chief Tang Tan could delay its planned 2027 launch. The article OpenAI&#039;s first hardware product is a screenless AI speaker designed to feel alive appeared first on The Decoder. ]]>","The device is meant to feel alive, but Apple's trade secrets lawsuit could delay its launch."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-051｜Hundreds rally at Bethesda HQ to protest Xbox layoffs, and Ars was there
+
+- raw_ref: R-051
+- raw_original_id: https://arstechnica.com/gaming/2026/07/hundreds-rally-at-bethesda-hq-to-protest-xbox-layoffs-and-ars-was-there/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-051-hundreds-rally-at-bethesda-hq-to-protest-xbox-layoffs-and-ars-was-ther.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-051-hundreds-rally-at-bethesda-hq-to-protest-xbox-layoffs-and-ars-was-ther.json`
+- source: Ars Technica AI｜https://arstechnica.com/gaming/2026/07/hundreds-rally-at-bethesda-hq-to-protest-xbox-layoffs-and-ars-was-there/
+- source_url: https://arstechnica.com/gaming/2026/07/hundreds-rally-at-bethesda-hq-to-protest-xbox-layoffs-and-ars-was-there/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: e1cdabae3fde2a11
+- raw_full_text_hash: e1cdabae3fde2a11
+- raw_semantic_hash: 3fecd71387a9c7a7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e1cdabae3fde2a11","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint
+- key_excerpts: [{"type":"quote","text":"Union wants to halt a \"perpetual cycle\" of layoffs, get back to contract bargaining.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav ROCKVILLE, Maryland—Hundreds of Bethesda Game Studios and Zenimax Online Studios employees and their supporters braved nearly 100°F temperatures to protest sweeping layoffs across Xbox during a lunchtime rally in front of parent company Zenimax’s headquarters today.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The rally was one of five organized today by Zenimax Workers United and its parent union, the Communication Workers of America, at offices across Texas, California, and Montreal .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"Attendees held up signs with messages like “Layoffs… layoffs never change” and “Our players deserve better” as union organizers and employees rallied the crowd with speeches and songs.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The overwhelming message was one of solidarity and a willingness to push back against job cuts they say have decimated their development and quality assurance teams.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"“It’s about us building our movement and making sure that we get seen and we’re visible,” Bethesda technical producer and union volunteer organizer Nathan Hahn told Ars.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The rally was one of five organized today by Zenimax Workers United and its parent union, the Communication Workers of America, at offices across Texas, California, and Montreal .","The overwhelming message was one of solidarity and a willingness to push back against job cuts they say have decimated their development and quality assurance teams."],"case_details":[],"workflow_changes":["Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav ROCKVILLE, Maryland—Hundreds of Bethesda Game Studios and Zenimax Online Studios employees and their supporters braved nearly 100°F temperatures to protest sweeping layoffs across Xbox during a lunchtime rally in front of parent company Zenimax’s headquarters today."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-052｜Windows 0-day drops the same day Microsoft releases record number of patches
+
+- raw_ref: R-052
+- raw_original_id: https://arstechnica.com/security/2026/07/windows-0-day-drops-the-same-day-microsoft-releases-record-number-of-patches/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-052-windows-0-day-drops-the-same-day-microsoft-releases-record-number-of-p.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-052-windows-0-day-drops-the-same-day-microsoft-releases-record-number-of-p.json`
+- source: Ars Technica AI｜https://arstechnica.com/security/2026/07/windows-0-day-drops-the-same-day-microsoft-releases-record-number-of-patches/
+- source_url: https://arstechnica.com/security/2026/07/windows-0-day-drops-the-same-day-microsoft-releases-record-number-of-patches/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: a89d1cdb46b87691
+- raw_full_text_hash: a89d1cdb46b87691
+- raw_semantic_hash: ae038523eb16f6d0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a89d1cdb46b87691","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, business_change, watchlist
+- key_excerpts: [{"type":"quote","text":"HiveLegacy is a \"powerful primitive\" that's likely capable of other nefarious actions.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Right on the heels of Microsoft releasing a record number of security patches, a researcher has published exploit code that can enable low-privilege Windows accounts to make sensitive changes to administrator accounts.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"product_update","text":"The exploit, which multiple researchers say works , is sending Microsoft scrambling, yet again, to patch a zero-day released by an anonymous researcher who has complained about the software maker’s handling of their bug reports.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"To date, the pseudonymous NightmareEclypse has published nine such exploits, including Tuesday’s HiveLegacy .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"The researcher said the proof-of-concept code included in the report was stripped down to prevent attackers from using it maliciously.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"quote","text":"A “pretty powerful primitive” HiveLegacy is an elevation-of-privilege exploit that targets a vulnerability residing in the Windows User Profile Service.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The exploit, which multiple researchers say works , is sending Microsoft scrambling, yet again, to patch a zero-day released by an anonymous researcher who has complained about the software maker’s handling of their bug reports.","To date, the pseudonymous NightmareEclypse has published nine such exploits, including Tuesday’s HiveLegacy ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":["Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Right on the heels of Microsoft releasing a record number of security patches, a researcher has published exploit code that can enable low-privilege Windows accounts to make sensitive changes to administrator accounts."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-053｜Launch YC: Orthogonal - Agentic Payments for APIs | Y Combinator
+
+- raw_ref: R-053
+- raw_original_id: https://www.ycombinator.com/launches/PJU-orthogonal-agentic-payments-for-apis
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-053-launch-yc-orthogonal-agentic-payments-for-apis-y-combinator.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-053-launch-yc-orthogonal-agentic-payments-for-apis-y-combinator.json`
+- source: keyword search / Anysearch｜https://www.ycombinator.com/launches/PJU-orthogonal-agentic-payments-for-apis
+- source_url: https://www.ycombinator.com/launches/PJU-orthogonal-agentic-payments-for-apis
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: funding
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 71
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 4f7c9561e43cb82b
+- raw_full_text_hash: 4f7c9561e43cb82b
+- raw_semantic_hash: 8288e7e88fb5cb34
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4f7c9561e43cb82b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 资本市场信号
+- keyword_group: capital-market-signal
+- score: 6.999999999999999
+- raw_capture_priority: 20
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"product_update","text":"Launch YC: Orthogonal - Agentic Payments for APIs | Y Combinator Home› Launches›Orthogonal 31 # Orthogonal - Agentic Payments for APIs APIs weren’t built for agents, we fixed that. TL;DR: APIs weren’t built for agents, we fixed that. Developers and agents get instant access to hundreds of APIs ... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Launch YC: Orthogonal - Agentic Payments for APIs | Y Combinator Home › Launches › Orthogonal 31 Orthogonal - Agentic Payments for APIs APIs weren’t built for agents, we fixed that.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Christian Pickett Orthogonal 6 months ago Embed https://orthogonal.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"com TL;DR: APIs weren’t built for agents, we fixed that.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Developers and agents get instant access to hundreds of APIs through our MCP or SDK.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"No key management, no billing headaches, pay as you go.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Launch YC: Orthogonal - Agentic Payments for APIs | Y Combinator Home› Launches›Orthogonal 31 # Orthogonal - Agentic Payments for APIs APIs weren’t built for agents, we fixed that. TL;DR: APIs weren’t built for agents, we fixed that. Developers and agents get instant access to hundreds of APIs ... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup","Launch YC: Orthogonal - Agentic Payments for APIs | Y Combinator Home › Launches › Orthogonal 31 Orthogonal - Agentic Payments for APIs APIs weren’t built for agents, we fixed that.","Christian Pickett Orthogonal 6 months ago Embed https://orthogonal."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-054｜Agent lifecycle and deployment processes - Agentic AI Lens
+
+- raw_ref: R-054
+- raw_original_id: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentops03.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-054-agent-lifecycle-and-deployment-processes-agentic-ai-lens.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-054-agent-lifecycle-and-deployment-processes-agentic-ai-lens.json`
+- source: keyword search / Anysearch｜https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentops03.html
+- source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentops03.html
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: procurement_marketplace
+- source_type: marketplace
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 275364f8bf97b3f2
+- raw_full_text_hash: 275364f8bf97b3f2
+- raw_semantic_hash: d0d82c40723b7624
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"275364f8bf97b3f2","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 6.4
+- raw_capture_priority: 19.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"# Agent lifecycle and deployment processes Agent lifecycle management extends beyond traditional software deployment to include behavioral evolution, capability updates, and operational governance. Agents require ongoing management as they adapt to changing business requirements, integrate new tool.... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Agent lifecycle and deployment processes - Agentic AI Lens View a markdown version of this page Agent lifecycle and deployment processes - Agentic AI Lens Documentation AWS Well-Architected AWS Well-Architected Framework Capability intent Maturity levels Common issues to watch for Agent lifecycle and deployment processes Agent lifecycle management extends beyond traditional software deployment to include behavioral evolution, capability updates, and operational governance.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Agents require ongoing management as they adapt to changing business requirements, integrate new tools, and scale across different environments.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"AGENTOPS03: How do you manage agent lifecycle and deployment processes?","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Capability intent Every agent has a documented owner, lifecycle state, and set of transition criteria, from initial development through to clean decommissioning.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"Agent changes reach production through automated deployment pipelines with agent-specific quality gates, staged rollout, and automatic rollback on regression.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Agents require ongoing management as they adapt to changing business requirements, integrate new tools, and scale across different environments.","Capability intent Every agent has a documented owner, lifecycle state, and set of transition criteria, from initial development through to clean decommissioning."],"case_details":["# Agent lifecycle and deployment processes Agent lifecycle management extends beyond traditional software deployment to include behavioral evolution, capability updates, and operational governance. Agents require ongoing management as they adapt to changing business requirements, integrate new tool.... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace","Agent lifecycle and deployment processes - Agentic AI Lens View a markdown version of this page Agent lifecycle and deployment processes - Agentic AI Lens Documentation AWS Well-Architected AWS Well-Architected Framework Capability intent Maturity levels Common issues to watch for Agent lifecycle and deployment processes Agent lifecycle management extends beyond traditional software deployment to include behavioral evolution, capability updates, and operational governance.","AGENTOPS03: How do you manage agent lifecycle and deployment processes?"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-055｜Bonsai 27B is a full open reasoning model that fits on an iPhone
+
+- raw_ref: R-055
+- raw_original_id: https://the-decoder.com/?p=37801
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-055-bonsai-27b-is-a-full-open-reasoning-model-that-fits-on-an-iphone.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-055-bonsai-27b-is-a-full-open-reasoning-model-that-fits-on-an-iphone.json`
+- source: The Decoder AI News｜https://the-decoder.com/bonsai-27b-is-a-full-open-reasoning-model-that-fits-on-an-iphone/
+- source_url: https://the-decoder.com/bonsai-27b-is-a-full-open-reasoning-model-that-fits-on-an-iphone/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- extraction_method: json-ld
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: b207a0f026fa1359
+- raw_full_text_hash: b207a0f026fa1359
+- raw_semantic_hash: 88bdbe28cd0b21e7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b207a0f026fa1359","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 6.199999999999999
+- raw_capture_priority: 19.2
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI. The article Bonsai 27B is a full open reasoning model that fits on an iPhone appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bonsai 27B is a full open reasoning model that fits on an iPhone Bonsai 27B is a full open reasoning model that fits on an iPhone PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone. In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected. Apple is reportedly already testing the compression technology, which could help it close the gap in on-device AI. The article Bonsai 27B is a full open reasoning model that fits on an iPhone appeared first on The Decoder. ]]>","Bonsai 27B is a full open reasoning model that fits on an iPhone Bonsai 27B is a full open reasoning model that fits on an iPhone PrismML has compressed a 27-billion-parameter AI model to under 4 GB, small enough to run on an iPhone.","In the company's own benchmarks, the smallest version keeps 90 percent of the original performance, with math and coding scores barely affected."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-056｜OpenAI 在欧盟法院商标纠纷中败诉，"OPENAI"因缺乏显著性被驳回注册
+
+- raw_ref: R-056
+- raw_original_id: cmrmdz1tm055pbivc51nzk4ko
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-056-openai-在欧盟法院商标纠纷中败诉-openai-因缺乏显著性被驳回注册.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-056-openai-在欧盟法院商标纠纷中败诉-openai-因缺乏显著性被驳回注册.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜https://dpa-international.com/economics/urn:newsml:dpa.com:20090101:260715-930-389143
+- source_url: https://dpa-international.com/economics/urn:newsml:dpa.com:20090101:260715-930-389143
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: medium
+- extraction_method: main
+- readability_score: 69
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: e461edb6fc303c0c
+- raw_full_text_hash: e461edb6fc303c0c
+- raw_semantic_hash: 0afcd6594021d51d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e461edb6fc303c0c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 9.1
+- raw_capture_priority: 18.6
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"OpenAI 在欧盟普通法院的商标诉讼中败诉，法院维持了欧盟知识产权局（EUIPO）的部分驳回决定。法院裁定，对于软件和云计算等服务，\"OPENAI\"中的\"open\"会被公众理解为\"自由可访问\"，与\"AI\"组合后仅具描述性，缺乏商标所需的显著性。该判决仍可上诉至欧洲法院。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"technology dpasubject:300 judiciary medtop:20000106 business information medtop:20000170 EU dpasubject:157 Artificial Intelligence US dpacountry:184 Europe dpageosbj:44 updateme dpauserneed:updateme OpenAI loses trademark dispute at EU court 15.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"2026, 14:24 Uhr OpenAI, the US company behind ChatGPT, has lost its legal challenge against the refusal to register the trademark \"OPENAI\" at the European Union's General Court.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"The Luxembourg-based court ruled that, for certain software and information technology goods and services, the term is purely descriptive and therefore lacks the distinctiveness required for trademark protection.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"The ruling can still be appealed to the European Court of Justice.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"The court's judgment upheld a decision by the EU Intellectual Property Office (EUIPO).","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["technology dpasubject:300 judiciary medtop:20000106 business information medtop:20000170 EU dpasubject:157 Artificial Intelligence US dpacountry:184 Europe dpageosbj:44 updateme dpauserneed:updateme OpenAI loses trademark dispute at EU court 15.","2026, 14:24 Uhr OpenAI, the US company behind ChatGPT, has lost its legal challenge against the refusal to register the trademark \"OPENAI\" at the European Union's General Court.","The Luxembourg-based court ruled that, for certain software and information technology goods and services, the term is purely descriptive and therefore lacks the distinctiveness required for trademark protection."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["法务 / 律师"],"risks_or_constraints":["OpenAI 在欧盟普通法院的商标诉讼中败诉，法院维持了欧盟知识产权局（EUIPO）的部分驳回决定。法院裁定，对于软件和云计算等服务，\"OPENAI\"中的\"open\"会被公众理解为\"自由可访问\"，与\"AI\"组合后仅具描述性，缺乏商标所需的显著性。该判决仍可上诉至欧洲法院。"]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-057｜苹果正寻求收购人工智能芯片企业，已准备数十亿美元级别交易
+
+- raw_ref: R-057
+- raw_original_id: cmrm90exd017qbiij2ue40tmo
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-057-苹果正寻求收购人工智能芯片企业-已准备数十亿美元级别交易.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-057-苹果正寻求收购人工智能芯片企业-已准备数十亿美元级别交易.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/243.htm
+- source_url: https://www.ithome.com/0/977/243.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 44
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 5f454cf221c0a69b
+- raw_full_text_hash: 5f454cf221c0a69b
+- raw_semantic_hash: 1c02cf6dd1eb2df5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5f454cf221c0a69b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 9.1
+- raw_capture_priority: 18.6
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- key_excerpts: [{"type":"number","text":"苹果正在寻找收购芯片公司，以推进其开发用于运行AI的服务器芯片工作，近几个月已与银行家就可能的交易进行交流。该公司已准备推进多笔数十亿美元级别的收购，规模可比肩收购Beats、PA Semi的交易。苹果今年一月已敲定以20亿美元收购以色列机器学习企业Q.Ai，这是其史上第二大收购案。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"消息称苹果正寻求收购人工智能芯片企业 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 消息称苹果正寻求收购人工智能芯片企业 2026/7/15 23:11:27 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 HH_KK 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"IT之家 7 月 15 日消息，据 The Information 报道，熟悉苹果工作的人士表示，苹果正在寻找收购芯片公司，以推进其开发用于运行人工智能的服务器芯片的相关工作。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"报道称，近几个月来，这家 iPhone 制造商与银行家们就可能的交易进行了交流。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"消息人士称，该公司还接触了半导体初创企业，了解他们是否有被收购的意愿。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"苹果寻求芯片收购的行动正值公司内部 AI 服务器的性能问题。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["苹果寻求芯片收购的行动正值公司内部 AI 服务器的性能问题。"],"case_details":["消息称苹果正寻求收购人工智能芯片企业 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 消息称苹果正寻求收购人工智能芯片企业 2026/7/15 23:11:27 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 HH_KK 的线索投递！"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-058｜AI 伴侣应用吸金超 4 亿美元，近七成用户向人类伴侣隐瞒使用行为
+
+- raw_ref: R-058
+- raw_original_id: cmrm0fr9601y0bi5k6usulni1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-058-ai-伴侣应用吸金超-4-亿美元-近七成用户向人类伴侣隐瞒使用行为.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-058-ai-伴侣应用吸金超-4-亿美元-近七成用户向人类伴侣隐瞒使用行为.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/200.htm
+- source_url: https://www.ithome.com/0/977/200.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 65
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 51f88203f2812d08
+- raw_full_text_hash: 51f88203f2812d08
+- raw_semantic_hash: 8d593b4d7e20a442
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"51f88203f2812d08","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 9.1
+- raw_capture_priority: 18.6
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"自 2022 年底 ChatGPT 发布以来，苹果 App Store 和 Google Play 上的成人向及恋爱陪伴类 AI 应用累计获得 1.653 亿次下载，全球用户消费金额达 4.273 亿美元。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 15 日消息，人们正在为 AI 伴侣投入数亿美元，而这一趋势目前没有放缓迹象。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"根据数据分析公司 Appfigures Intelligence 提供给 Decrypt 的数据，自 2022 年底 ChatGPT 发布以来，苹果 App Store 和 Google Play 上的成人向（NSFW）以及恋爱陪伴类 AI 应用，累计获得 1.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"number","text":"653 亿次下载，全球用户消费金额达到 4.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"273 亿美元（IT之家注：现汇率约合 28.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"“这些排名按照应用类型分类，统计的是下载量或用户总消费金额（Gross Consumer Spending），也就是苹果和谷歌抽取平台服务费（通常约为 30%）之前的收入。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 7 月 15 日消息，人们正在为 AI 伴侣投入数亿美元，而这一趋势目前没有放缓迹象。","根据数据分析公司 Appfigures Intelligence 提供给 Decrypt 的数据，自 2022 年底 ChatGPT 发布以来，苹果 App Store 和 Google Play 上的成人向（NSFW）以及恋爱陪伴类 AI 应用，累计获得 1."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-059｜IBM 发布 Power 自主运维 AI 智能体，可自动监控并修复系统问题
+
+- raw_ref: R-059
+- raw_original_id: cmrlyak3701c0bi5knu4ss5at
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-059-ibm-发布-power-自主运维-ai-智能体-可自动监控并修复系统问题.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-059-ibm-发布-power-自主运维-ai-智能体-可自动监控并修复系统问题.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/181.htm
+- source_url: https://www.ithome.com/0/977/181.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 55
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 3e9624aa0b4c3dd2
+- raw_full_text_hash: 3e9624aa0b4c3dd2
+- raw_semantic_hash: a60ec7dbb4e2276e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3e9624aa0b4c3dd2","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 9.1
+- raw_capture_priority: 18.6
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"IBM 推出 Power Autonomous Operations，一款基于 AI 智能体的系统管理工具，可自动监控并修复 Power 系统问题，将解决容量限制问题的速度提升至人工的 15 倍。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"IBM 发布 Power 自主运维 AI 智能体，可自动监控并修复系统问题 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 IBM 发布 Power 自主运维 AI 智能体，可自动监控并修复系统问题 2026/7/15 18:12:39 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 斯文当不了饭吃 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 15 日消息，IBM 今日宣布推出 Power 自主运维系统（Power Autonomous Operations），这是一款基于 AI 智能体（AI Agent）的系统管理工具，能够持续监控 Power 系统运行状态，并自主解决相关问题，帮助企业保持业务稳定运行。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家注意到，该系统是近期推出的 IBM Bob Premium Package for i 的补充，后者是一套面向 IBM i 平台的软件开发 AI 智能体工具，可帮助开发者加速应用开发。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"IBM 表示，这些能力能够帮助企业更快速地构建现代化应用，以满足业务创新需求。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"此外，IBM 还推出了入门级 Power S1112 服务器，提供了一种更加紧凑、高效的新选择，能够在本地运行 AI 推理任务。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 7 月 15 日消息，IBM 今日宣布推出 Power 自主运维系统（Power Autonomous Operations），这是一款基于 AI 智能体（AI Agent）的系统管理工具，能够持续监控 Power 系统运行状态，并自主解决相关问题，帮助企业保持业务稳定运行。","IT之家注意到，该系统是近期推出的 IBM Bob Premium Package for i 的补充，后者是一套面向 IBM i 平台的软件开发 AI 智能体工具，可帮助开发者加速应用开发。","此外，IBM 还推出了入门级 Power S1112 服务器，提供了一种更加紧凑、高效的新选择，能够在本地运行 AI 推理任务。"],"case_details":["IBM 发布 Power 自主运维 AI 智能体，可自动监控并修复系统问题 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 IBM 发布 Power 自主运维 AI 智能体，可自动监控并修复系统问题 2026/7/15 18:12:39 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 斯文当不了饭吃 的线索投递！"],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-060｜面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型
+
+- raw_ref: R-060
+- raw_original_id: cmrm2kxjv02kobi5kdk1b55eh
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-060-面壁智能-minicpm-系列端侧模型将搭载于三星手机上市-覆盖数款旗舰机型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-060-面壁智能-minicpm-系列端侧模型将搭载于三星手机上市-覆盖数款旗舰机型.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/217.htm
+- source_url: https://www.ithome.com/0/977/217.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 42
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 25dd893364dc9cc6
+- raw_full_text_hash: 25dd893364dc9cc6
+- raw_semantic_hash: 961d3c62618b1d08
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"25dd893364dc9cc6","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 9.1
+- raw_capture_priority: 18.6
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"funding","text":"面壁智能自主研发的 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型。面壁智能成立于 2022 年 8 月，孵化自清华大学自然语言处理实验室，2026 年上半年累计融资超 50 亿元，估值突破 200 亿元。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"消息称面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 消息称面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型 2026/7/15 20:04:21 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 HH_KK 、 Skyraver 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 15 日消息，今日，网信办发布 7 款手机端侧生成式人工智能服务备案信息，包括 Apple 智能、华为小艺 AI 大模型、OPPO Andes GPT、vivo 蓝心端侧大模型、小米澎湃 AI、三星盖乐世 AI 以及努比亚豆包手机大模型。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"据《智能涌现》报道，端侧大模型公司面壁智能已与三星手机达成合作，其自主研发的 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"面壁智能 2022 年 8 月在北京成立，孵化自清华大学自然语言处理实验室。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"联合创始人、CEO 李大海曾任知乎合伙人、CTO；联合创始人、首席科学家刘知远现任清华大学计算机系教授；联合创始人、CTO 曾国洋在 22 岁时作为核心工程负责人，训练了中国第一个大语言模型 CPM-1。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["面壁智能自主研发的 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型。面壁智能成立于 2022 年 8 月，孵化自清华大学自然语言处理实验室，2026 年上半年累计融资超 50 亿元，估值突破 200 亿元。","IT之家 7 月 15 日消息，今日，网信办发布 7 款手机端侧生成式人工智能服务备案信息，包括 Apple 智能、华为小艺 AI 大模型、OPPO Andes GPT、vivo 蓝心端侧大模型、小米澎湃 AI、三星盖乐世 AI 以及努比亚豆包手机大模型。","据《智能涌现》报道，端侧大模型公司面壁智能已与三星手机达成合作，其自主研发的 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型。"],"case_details":["消息称面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 消息称面壁智能 MiniCPM 系列端侧模型将搭载于三星手机上市，覆盖数款旗舰机型 2026/7/15 20:04:21 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 HH_KK 、 Skyraver 的线索投递！"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-061｜OpenAI 前 CTO 穆拉蒂创业公司 TML 发布首款 AI 模型 Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构
+
+- raw_ref: R-061
+- raw_original_id: cmrmsd6p300dabimieg3s2l7j
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-061-openai-前-cto-穆拉蒂创业公司-tml-发布首款-ai-模型-inkling-9750-亿参数-借鉴-deepseek-v3-架构.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-061-openai-前-cto-穆拉蒂创业公司-tml-发布首款-ai-模型-inkling-9750-亿参数-借鉴-deepseek-v3-架构.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/281.htm
+- source_url: https://www.ithome.com/0/977/281.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 60
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 004851d930221919
+- raw_full_text_hash: 004851d930221919
+- raw_semantic_hash: bf06c5da5093b795
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"004851d930221919","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 18.6
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"Thinking Machines Lab 发布首款 AI 模型 Inkling，拥有 9750 亿参数，其中仅 410 亿为活跃参数，采用开放权重模式。该模型架构借鉴 DeepSeek-V3，后训练阶段使用 Kimi K2.5 生成的数据优化，设计重点在于成本与性能之间的平衡。Inkling 可通过云端微调工具 Tinker 进行定制，安全测试表现良好。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"北京时间 7 月 16 日，据《华尔街日报》报道， OpenAI 前首席技术官米拉 · 穆拉蒂 (Mira Murati) 正押注更具可定制性的 AI 模型，希望借此缩小与其前东家 OpenAI 等前沿 AI 实验室之间的技术差距 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"穆拉蒂领导的 Thinking Machines Lab 在周三发布了公司的首款 AI 模型，并采用了“开放权重”模式，这意味着其他开发者可以结合自己的数据对模型进行修改。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"number","text":"这款名为 Inkling 的模型拥有 9750 亿个参数，规模远小于外界对 OpenAI、Anthropic 等竞争对手最先进闭源模型的预估参数。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"穆拉蒂 Thinking Machines 称，Inkling 基础模型的架构借鉴了中国的 DeepSeek-V3 模型，并在后训练阶段使用了由月之暗面公司 Kimi K2.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"“我们将 Inkling 训练成一款覆盖范围广泛、能力均衡的基础模型，在众多领域都具备较强表现，并且拥有足够的灵活性来适应不同任务。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["北京时间 7 月 16 日，据《华尔街日报》报道， OpenAI 前首席技术官米拉 · 穆拉蒂 (Mira Murati) 正押注更具可定制性的 AI 模型，希望借此缩小与其前东家 OpenAI 等前沿 AI 实验室之间的技术差距 。","“我们将 Inkling 训练成一款覆盖范围广泛、能力均衡的基础模型，在众多领域都具备较强表现，并且拥有足够的灵活性来适应不同任务。"],"case_details":["穆拉蒂领导的 Thinking Machines Lab 在周三发布了公司的首款 AI 模型，并采用了“开放权重”模式，这意味着其他开发者可以结合自己的数据对模型进行修改。"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-062｜OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体
+
+- raw_ref: R-062
+- raw_original_id: cmrmq80il0178bi7iy18og8lp
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-062-openai-首款联名硬件-codex-micro-键盘登场-灵活操控-ai-智能体.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-062-openai-首款联名硬件-codex-micro-键盘登场-灵活操控-ai-智能体.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/267.htm
+- source_url: https://www.ithome.com/0/977/267.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 47
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: ac6e031879d9e44b
+- raw_full_text_hash: ac6e031879d9e44b
+- raw_semantic_hash: 8e04834b8d14b814
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ac6e031879d9e44b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 18.6
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"OpenAI 携手 Work Louder 推出 kbd-1.0-codex-micro 键盘，售价 230 美元（约合 1560 元人民币）。该键盘专为操控 Codex AI 智能体设计，提供实时 RGB 状态反馈，并支持通过操纵杆和命令键快速触发 Skills、调整推理水平等操作。键盘提供 clicky 和 silent 两个键轴版本。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 电脑硬件 OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体 2026/7/16 6:56:47 来源： IT之家 作者： 故渊 责编： 故渊 评论： 感谢IT之家网友 LiguoIT 、 shuyh 、 Nuc_F 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 16 日消息，OpenAI 今天（7 月 16 日）携手 Work Louder，合作推出 kbd-1.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"number","text":"0-codex-micro 键盘，售价为 230 美元（IT之家注：现汇率约合 1560 元人民币）。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家翻译产品官方描述如下： kbd-1.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"0-codex-micro 键盘采用 Work Louder 设计理念，实现 AI 智能体工作区触手可及。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 7 月 16 日消息，OpenAI 今天（7 月 16 日）携手 Work Louder，合作推出 kbd-1.","IT之家翻译产品官方描述如下： kbd-1."],"case_details":["OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 电脑硬件 OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体 2026/7/16 6:56:47 来源： IT之家 作者： 故渊 责编： 故渊 评论： 感谢IT之家网友 LiguoIT 、 shuyh 、 Nuc_F 的线索投递！","0-codex-micro 键盘采用 Work Louder 设计理念，实现 AI 智能体工作区触手可及。"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-063｜Anthropic 高管：因成本顾虑削减 AI 使用是错误选择
+
+- raw_ref: R-063
+- raw_original_id: cmrlw5dqw00p0bi5kuegc9oah
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-063-anthropic-高管-因成本顾虑削减-ai-使用是错误选择.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-063-anthropic-高管-因成本顾虑削减-ai-使用是错误选择.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/149.htm
+- source_url: https://www.ithome.com/0/977/149.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 66
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 0cd2ed10a26c5d67
+- raw_full_text_hash: 0cd2ed10a26c5d67
+- raw_semantic_hash: a784d0febdbf7bb8
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0cd2ed10a26c5d67","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 18.6
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Anthropic 高管在红杉资本播客中警告，企业因成本上升而减少 AI 投入是错误做法，并观察到部分客户已在这么做。平台工程负责人强调，设定预算上限会限制创新，企业应通过更高效的方式使用 AI 而非直接削减。Anthropic 正考虑在 Claude 生态内推出模型路由功能，以帮助客户根据任务自动分配模型、控制成本。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 15 日消息，随着 AI 使用成本不断增加，Anthropic 多位高管正在提醒企业，不要因此减少对 AI 的投入。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"“我们目前非常关注的一件事，也是我们经常花时间与用户讨论的问题，就是不要停止使用 AI，这其实是错误的做法。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"”Anthropic Claude 平台产品负责人 Angela Jiang 近日在红杉资本（Sequoia Capital）的《Training Data》播客节目中表示，“事实上，我们确实看到一些客户正在这么做。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"quote","text":"” Anthropic 平台工程负责人 Katelyn Lesse 表示，企业开始关注 AI 成本，是公司探索如何更好部署 AI 过程中“正常且自然的一个阶段”。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"“真正危险的是，你只是简单地设定一个预算上限，然后所有事情都被限制在这个额度内。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 7 月 15 日消息，随着 AI 使用成本不断增加，Anthropic 多位高管正在提醒企业，不要因此减少对 AI 的投入。","“我们目前非常关注的一件事，也是我们经常花时间与用户讨论的问题，就是不要停止使用 AI，这其实是错误的做法。","“真正危险的是，你只是简单地设定一个预算上限，然后所有事情都被限制在这个额度内。"],"case_details":["Anthropic 高管在红杉资本播客中警告，企业因成本上升而减少 AI 投入是错误做法，并观察到部分客户已在这么做。平台工程负责人强调，设定预算上限会限制创新，企业应通过更高效的方式使用 AI 而非直接削减。Anthropic 正考虑在 Claude 生态内推出模型路由功能，以帮助客户根据任务自动分配模型、控制成本。","”Anthropic Claude 平台产品负责人 Angela Jiang 近日在红杉资本（Sequoia Capital）的《Training Data》播客节目中表示，“事实上，我们确实看到一些客户正在这么做。"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-064｜出版商与作者集体起诉谷歌，指控其盗用版权内容训练 Gemini AI
+
+- raw_ref: R-064
+- raw_original_id: cmrlrukxp016gbih5zl1t0cik
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-064-出版商与作者集体起诉谷歌-指控其盗用版权内容训练-gemini-ai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-064-出版商与作者集体起诉谷歌-指控其盗用版权内容训练-gemini-ai.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/050.htm
+- source_url: https://www.ithome.com/0/977/050.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 52
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: af8e705121918d16
+- raw_full_text_hash: af8e705121918d16
+- raw_semantic_hash: c33b6c65c4a948a7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"af8e705121918d16","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 9.1
+- raw_capture_priority: 18.6
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"一群出版商和作家对谷歌提起集体诉讼，指控其未经授权使用版权作品训练 Gemini 模型，并故意删除或修改作品中的版权信息以掩盖事实。原告包括 Hachette Livre、Cengage Group、Elsevier 及作家 Scott Turow 等。此前 Anthropic 因类似行为被处以 15 亿美元罚款，但美国加州法院曾有裁决认为 AI 训练使用版权内容可视为\"合理使用\"。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"出版商与作者集体起诉谷歌，指控其盗用版权内容训练 Gemini AI - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 出版商与作者集体起诉谷歌，指控其盗用版权内容训练 Gemini AI 2026/7/15 15:36:13 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 软媒新友1916289 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"IT之家 7 月 15 日消息，一群出版商和作家已对谷歌提起集体诉讼，指控这家科技巨头未经授权使用他们的版权作品训练其人工智能平台 Gemini。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"原告方包括 Hachette Livre、Cengage Group、Elsevier、作家 Scott Turow 以及 S.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"quote","text":"诉讼还指控，谷歌曾故意删除或修改这些作品中的版权信息，以“掩盖 Gemini 模型是基于被盗资料训练而成的事实”。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"这起诉讼只是出版商、作者以及其他版权持有者针对 AI 公司发起的众多诉讼之一。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["原告方包括 Hachette Livre、Cengage Group、Elsevier、作家 Scott Turow 以及 S."],"case_details":["出版商与作者集体起诉谷歌，指控其盗用版权内容训练 Gemini AI - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 出版商与作者集体起诉谷歌，指控其盗用版权内容训练 Gemini AI 2026/7/15 15:36:13 来源： IT之家 作者： 远洋 责编： 远洋 评论： 感谢IT之家网友 软媒新友1916289 的线索投递！"],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["IT之家 7 月 15 日消息，一群出版商和作家已对谷歌提起集体诉讼，指控这家科技巨头未经授权使用他们的版权作品训练其人工智能平台 Gemini。","这起诉讼只是出版商、作者以及其他版权持有者针对 AI 公司发起的众多诉讼之一。"]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-065｜Suno snatched millions of songs from YouTube, Genius, and Deezer
+
+- raw_ref: R-065
+- raw_original_id: https://www.theverge.com/?p=966072
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-065-suno-snatched-millions-of-songs-from-youtube-genius-and-deezer.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-065-suno-snatched-millions-of-songs-from-youtube-genius-and-deezer.json`
+- source: The Verge AI｜https://www.theverge.com/ai-artificial-intelligence/966072/suno-ai-music-training-scraping-youtube-hack
+- source_url: https://www.theverge.com/ai-artificial-intelligence/966072/suno-ai-music-training-scraping-youtube-hack
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- extraction_method: json-ld
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 49822c4f4542aa8c
+- raw_full_text_hash: 49822c4f4542aa8c
+- raw_semantic_hash: 31d081a5c05ba2ce
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"49822c4f4542aa8c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 18.6
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"Suno data obtained in a hacking incident has exposed that the AI music generator was trained by scraping millions of songs and lyrics from online audio platforms, including YouTube Music, Deezer, and Genius, 404 Media reports. Given that Suno has avoided revealing what's in its training datasets and how they were acquired, this a rare [&#8230;]","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"Suno snatched millions of songs from YouTube, Genius, and Deezer Suno data obtained in a hacking incident shows the AI music generator was trained by scraping millions of songs from online audio platforms.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"Suno data obtained in a hacking incident has exposed that the AI music generator was trained by scraping millions of songs and lyrics from online audio platforms, including YouTube Music, Deezer, and Genius, 404 Media reports.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Given that Suno has avoided revealing what’s in its training datasets and how they were acquired, this a rare glimpse into what Suno has actually been taking from online platforms.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"That’s relevant because Suno has been the subject of several lawsuits that allege it used copyrighted materials to train its AI models.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In a notable case filed by the Recording Industry Association of America (RIAA), Suno openly admitted that it does so, arguing that training on copyrighted materials and publicly available music files from the open internet is legally permitted under fair use doctrine.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Given that Suno has avoided revealing what’s in its training datasets and how they were acquired, this a rare glimpse into what Suno has actually been taking from online platforms.","In a notable case filed by the Recording Industry Association of America (RIAA), Suno openly admitted that it does so, arguing that training on copyrighted materials and publicly available music files from the open internet is legally permitted under fair use doctrine."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师"],"risks_or_constraints":["Suno data obtained in a hacking incident has exposed that the AI music generator was trained by scraping millions of songs and lyrics from online audio platforms, including YouTube Music, Deezer, and Genius, 404 Media reports. Given that Suno has avoided revealing what's in its training datasets and how they were acquired, this a rare [&#8230;]","Suno snatched millions of songs from YouTube, Genius, and Deezer Suno data obtained in a hacking incident shows the AI music generator was trained by scraping millions of songs from online audio platforms.","Suno data obtained in a hacking incident has exposed that the AI music generator was trained by scraping millions of songs and lyrics from online audio platforms, including YouTube Music, Deezer, and Genius, 404 Media reports."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-066｜Whatnot acquires Shaped to power real-time live shopping recommendations
+
+- raw_ref: R-066
+- raw_original_id: https://techcrunch.com/?p=3142373
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-066-whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendatio.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-066-whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendatio.json`
+- source: TechCrunch AI｜https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/
+- source_url: https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 6adbd1d1998574bd
+- raw_full_text_hash: 6adbd1d1998574bd
+- raw_semantic_hash: 8bca6d93f56c1902
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6adbd1d1998574bd","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 18.6
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"Livestream shopping platform Whatnot has acquired AI startup Shaped, a machine learning company focused on real-time recommendations and search. The deal will bolster Whatnot’s personalization and discovery features as it expands into new product categories.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Image Credits: Whatnot Commerce Whatnot acquires Shaped to power real-time live shopping recommendations Lauren Forristal 10:00 AM PDT · July 15, 2026 Livestream shopping app Whatnot announced Wednesday that it has acquired Shaped , a machine learning company that specializes in real-time recommendation and search systems.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The deal is meant to strengthen Whatnot’s discovery and personalization capabilities as the platform continues to expand across new product categories and millions of buyers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"According to the company, the acquisition helps Whatnot continue its investment in AI as it looks to solve one of live commerce’s biggest challenges: helping shoppers find the right products while inventory, auctions, and buyer demand change in real time.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Unlike traditional e-commerce platforms, where product catalogs remain relatively stable, Whatnot’s marketplace is constantly evolving, and live auctions can end within minutes or last for hours.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"“By combining Shaped’s technology with Whatnot’s existing systems, we can make recommendations faster, more responsive, and more personalized,” Emmanuel Fuentes, VP of Data and AI at Whatnot, told TechCrunch.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Livestream shopping platform Whatnot has acquired AI startup Shaped, a machine learning company focused on real-time recommendations and search. The deal will bolster Whatnot’s personalization and discovery features as it expands into new product categories.","Image Credits: Whatnot Commerce Whatnot acquires Shaped to power real-time live shopping recommendations Lauren Forristal 10:00 AM PDT · July 15, 2026 Livestream shopping app Whatnot announced Wednesday that it has acquired Shaped , a machine learning company that specializes in real-time recommendation and search systems.","The deal is meant to strengthen Whatnot’s discovery and personalization capabilities as the platform continues to expand across new product categories and millions of buyers."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-067｜SpaceX falls to $135 IPO price ahead of Starship launch
+
+- raw_ref: R-067
+- raw_original_id: https://techcrunch.com/?p=3135290
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-067-spacex-falls-to-135-ipo-price-ahead-of-starship-launch.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-067-spacex-falls-to-135-ipo-price-ahead-of-starship-launch.json`
+- source: TechCrunch AI｜https://techcrunch.com/2026/07/15/spacex-falls-to-135-ipo-price-ahead-of-starship-launch/
+- source_url: https://techcrunch.com/2026/07/15/spacex-falls-to-135-ipo-price-ahead-of-starship-launch/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 80d586aff175d310
+- raw_full_text_hash: 80d586aff175d310
+- raw_semantic_hash: 480c9ea1bc2697d8
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"80d586aff175d310","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 18.6
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"The stock has steadily fallen from the euphoric post-IPO high, showing that markets may be sobering up to the promises CEO Elon Musk made before and after SpaceX went public.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"Image Credits: SpaceX Space SpaceX falls to $135 IPO price ahead of Starship launch Sean O'Kane 11:06 AM PDT · July 15, 2026 SpaceX’s shares fell to just above $135 on Wednesday, the price that CEO Elon Musk and his company chose ahead of its blockbuster June 12 IPO that raked in nearly $86 billion.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"The company’s stock spent much of the day below that IPO price, at one point dipping beneath $133 per share, before it traded back up to finish at $135.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The dip on Wednesday followed a steady decline in the month since the company went public.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"SpaceX initially saw its stock price rise to more than $200 in the days after it went public, briefly giving it a valuation that rivaled tech giants like Amazon and Microsoft.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Its shares have lost value basically every week since reaching that high point.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["The stock has steadily fallen from the euphoric post-IPO high, showing that markets may be sobering up to the promises CEO Elon Musk made before and after SpaceX went public.","The dip on Wednesday followed a steady decline in the month since the company went public.","Its shares have lost value basically every week since reaching that high point."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-068｜Buzz Aldrin sells famous felt-tip pen that helped launch Apollo from the Moon
+
+- raw_ref: R-068
+- raw_original_id: https://arstechnica.com/space/2026/07/apollo-11s-broken-switch-and-mission-saving-pen-sell-for-860k/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-068-buzz-aldrin-sells-famous-felt-tip-pen-that-helped-launch-apollo-from-t.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-068-buzz-aldrin-sells-famous-felt-tip-pen-that-helped-launch-apollo-from-t.json`
+- source: Ars Technica AI｜https://arstechnica.com/space/2026/07/apollo-11s-broken-switch-and-mission-saving-pen-sell-for-860k/
+- source_url: https://arstechnica.com/space/2026/07/apollo-11s-broken-switch-and-mission-saving-pen-sell-for-860k/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: c572370057dc9056
+- raw_full_text_hash: c572370057dc9056
+- raw_semantic_hash: 0176527186d6222d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c572370057dc9056","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 18.6
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"While an impressive sale, the pen and switch did not break records.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav A dried-out felt-tip marker and a snapped-off piece of molded black plastic sold for $857,600 at a Sotheby’s auction on Wednesday.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"What otherwise might have been worthless bits of trash commanded the highest bids due to where the two items were 57 years ago—lifting off aboard NASA’s Apollo 11 spacecraft on humanity’s first mission to land astronauts on the Moon.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"More than flown odds and ends, one was the problem that almost stranded Neil Armstrong and Buzz Aldrin on the lunar surface, and the other was the simple solution to saving the mission.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"“Houston, Tranquility.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Do you have a way of showing the configuration of the engine arm circuit breaker?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["While an impressive sale, the pen and switch did not break records.","What otherwise might have been worthless bits of trash commanded the highest bids due to where the two items were 57 years ago—lifting off aboard NASA’s Apollo 11 spacecraft on humanity’s first mission to land astronauts on the Moon.","More than flown odds and ends, one was the problem that almost stranded Neil Armstrong and Buzz Aldrin on the lunar surface, and the other was the simple solution to saving the mission."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-069｜Judge: Trump can’t deport researchers just for working in content moderation
+
+- raw_ref: R-069
+- raw_original_id: https://arstechnica.com/tech-policy/2026/07/judge-trump-cant-deport-researchers-just-for-working-in-content-moderation/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-069-judge-trump-can-t-deport-researchers-just-for-working-in-content-moder.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-069-judge-trump-can-t-deport-researchers-just-for-working-in-content-moder.json`
+- source: Ars Technica AI｜https://arstechnica.com/tech-policy/2026/07/judge-trump-cant-deport-researchers-just-for-working-in-content-moderation/
+- source_url: https://arstechnica.com/tech-policy/2026/07/judge-trump-cant-deport-researchers-just-for-working-in-content-moderation/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 220afe0ce448ecbd
+- raw_full_text_hash: 220afe0ce448ecbd
+- raw_semantic_hash: 8bb7b128807b3ae4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"220afe0ce448ecbd","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 18.6
+- usable_for: case, business_change, watchlist
+- key_excerpts: [{"type":"funding","text":"Disinformation researchers praise ruling blocking Trump visa denials and deportations.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav This week, the Coalition for Independent Technology Research (CITR) won a key battle in its fight to reverse a visa-restriction policy that the Trump administration had used to attempt to revoke green cards and deport non-US citizens who work on misinformation, disinformation, fact-checking, content moderation, compliance, and trust and safety.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"In an opinion published Tuesday, US District Judge James Boasberg granted a preliminary injunction blocking the State Department from enforcing the policy until the CITR’s lawsuit is resolved.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"On its face, the policy does not require visa denials or deportations.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Instead, it authorizes immigration investigations into individuals suspected of helping foreign adversaries attempt to manipulate public opinion by suppressing US speech.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Over the course of the litigation, the State Department so far has failed to prove that any of the five researchers explicitly targeted under the policy had any connection to a foreign power attempting to censor Americans or manipulate US public debate.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Disinformation researchers praise ruling blocking Trump visa denials and deportations.","On its face, the policy does not require visa denials or deportations.","Instead, it authorizes immigration investigations into individuals suspected of helping foreign adversaries attempt to manipulate public opinion by suppressing US speech."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师"],"risks_or_constraints":["Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav This week, the Coalition for Independent Technology Research (CITR) won a key battle in its fight to reverse a visa-restriction policy that the Trump administration had used to attempt to revoke green cards and deport non-US citizens who work on misinformation, disinformation, fact-checking, content moderation, compliance, and trust and safety.","In an opinion published Tuesday, US District Judge James Boasberg granted a preliminary injunction blocking the State Department from enforcing the policy until the CITR’s lawsuit is resolved."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-070｜xai-org/grok-build, now open source
+
+- raw_ref: R-070
+- raw_original_id: https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-070-xai-org-grok-build-now-open-source.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-070-xai-org-grok-build-now-open-source.json`
+- source: Simon Willison's Blog｜https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything
+- source_url: https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 78287b5ea4f9516a
+- raw_full_text_hash: 78287b5ea4f9516a
+- raw_semantic_hash: 9db8357ad7dede25
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"78287b5ea4f9516a","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5
+- raw_capture_priority: 18
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"quote","text":"&lt;p&gt;&lt;strong&gt;&lt;a href=\"https://github.com/xai-org/grok-build\"&gt;xai-org/grok-build, now open source&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; xAI's &lt;code&gt;grok&lt;/code&gt; CLI tool faced severe community backlash yesterday when it became apparent that running the command in a directory could upload that &lt;em&gt;entire directory&lt;/em&gt; to xAI's Google Cloud buckets. One user &lt;a href=\"https://x.com/a_green_being/status/2076598897779020159\"&gt;reported&lt;/a&gt; running it in t","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"15th July 2026 - Link Blog xai-org/grok-build, now open source ( via ) xAI's grok CLI tool faced severe community backlash yesterday when it became apparent that running the command in a directory could upload that entire directory to xAI's Google Cloud buckets.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"One user reported running it in their home directory and seeing it upload \"my SSH keys, my password manager database, my documents, photos, videos, everything\".","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I've not seen an official explanation for why it was doing this, but xAI did respond to the feedback ( Musk : \"As a precautionary measure, all user data that was uploaded to SpaceXAI before now will be completely and utterly deleted.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"\") and have disabled the feature.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"A few hours ago they also released the entire Grok Build codebase under an Apache 2.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["15th July 2026 - Link Blog xai-org/grok-build, now open source ( via ) xAI's grok CLI tool faced severe community backlash yesterday when it became apparent that running the command in a directory could upload that entire directory to xAI's Google Cloud buckets.","I've not seen an official explanation for why it was doing this, but xAI did respond to the feedback ( Musk : \"As a precautionary measure, all user data that was uploaded to SpaceXAI before now will be completely and utterly deleted.","\") and have disabled the feature."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-071｜Exclusive: Startup Adapter Launches With $17.8M To Bring New 'Cognition' To AI Tools
+
+- raw_ref: R-071
+- raw_original_id: https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-071-exclusive-startup-adapter-launches-with-17-8m-to-bring-new-cognition-t.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-071-exclusive-startup-adapter-launches-with-17-8m-to-bring-new-cognition-t.json`
+- source: keyword search / Anysearch｜https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition
+- source_url: https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: c4b4aec73019eeb8
+- raw_full_text_hash: c4b4aec73019eeb8
+- raw_semantic_hash: c6d26f7de57f6f42
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c4b4aec73019eeb8","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 资本市场信号
+- keyword_group: capital-market-signal
+- score: 4.999999999999999
+- raw_capture_priority: 18
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"Exclusive: Startup Adapter Launches With $17.8M To Bring New 'Cognition' To AI Tools SubscribeSign in # Exclusive: Startup Adapter Launches With $17.8M To Bring New 'Cognition' To AI Tools ### Repeat founder Adam Ghetti returns with a startup backed by GV and others to provide better 'cognition' ... / query=applied AI startup raises design partner customers / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Exclusive: Startup Adapter Launches With $17.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"8M To Bring New 'Cognition' To AI Tools Repeat founder Adam Ghetti returns with a startup backed by GV and others to provide better 'cognition' for your AI use -- all while keeping your data safe from labs like OpenAI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Alex Konrad Jul 14, 2026 32 Share Adapter founders Adam Ghetti and David Bader are hoping developers will build new AI tools on top of their new knowledge graph.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Credit: Adapter The Deep Dive Adapter CEO Adam Ghetti didn’t expect to be building another startup after selling his previous venture – the product of a decade’s work – to Twilio five years ago .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Then the transformer emerged, and many of the smartest people he knew in tech started racing towards its obvious applications: text generation and large language models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Exclusive: Startup Adapter Launches With $17.8M To Bring New 'Cognition' To AI Tools SubscribeSign in # Exclusive: Startup Adapter Launches With $17.8M To Bring New 'Cognition' To AI Tools ### Repeat founder Adam Ghetti returns with a startup backed by GV and others to provide better 'cognition' ... / query=applied AI startup raises design partner customers / intent=find_startups / path=capital_startup","8M To Bring New 'Cognition' To AI Tools Repeat founder Adam Ghetti returns with a startup backed by GV and others to provide better 'cognition' for your AI use -- all while keeping your data safe from labs like OpenAI.","Alex Konrad Jul 14, 2026 32 Share Adapter founders Adam Ghetti and David Bader are hoping developers will build new AI tools on top of their new knowledge graph."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-072｜The Enterprise AI Transformation Guide
+
+- raw_ref: R-072
+- raw_original_id: https://resources.anthropic.com/2026-state-of-ai-agents
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-072-the-enterprise-ai-transformation-guide.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-072-the-enterprise-ai-transformation-guide.json`
+- source: keyword search / Anysearch｜https://resources.anthropic.com/2026-state-of-ai-agents
+- source_url: https://resources.anthropic.com/2026-state-of-ai-agents
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: industry_landing
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: medium
+- extraction_method: main
+- readability_score: 51
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 57425ea006270534
+- raw_full_text_hash: 57425ea006270534
+- raw_semantic_hash: 28ed73cec3ae92f2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"57425ea006270534","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 17.9
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"funding","text":"The Enterprise AI Transformation Guide Report The 2026 State of AI Agents Report AI agents have moved from experiment to production faster than most predicted. With 80% of organizations reporting measurable ROI, the question isn't whether to adopt them but how to deploy them at scale. The 2026 S... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Report The 2026 State of AI Agents Report AI agents have moved from experiment to production faster than most predicted.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"With 80% of organizations reporting measurable ROI, the question isn't whether to adopt them but how to deploy them at scale.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"The 2026 State of AI Agents Report draws on insights from over 500 technical leaders and real-world implementations at Novo Nordisk, Doctolib, L'Oréal, Shopify, and others.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"It shows how organizations are moving beyond single-step automation toward multi-stage workflows that span teams.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"By submitting, you acknowledge the Anthropic Privacy Policy .","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["The Enterprise AI Transformation Guide Report The 2026 State of AI Agents Report AI agents have moved from experiment to production faster than most predicted. With 80% of organizations reporting measurable ROI, the question isn't whether to adopt them but how to deploy them at scale. The 2026 S... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing","Report The 2026 State of AI Agents Report AI agents have moved from experiment to production faster than most predicted.","The 2026 State of AI Agents Report draws on insights from over 500 technical leaders and real-world implementations at Novo Nordisk, Doctolib, L'Oréal, Shopify, and others."],"case_details":[],"workflow_changes":["It shows how organizations are moving beyond single-step automation toward multi-stage workflows that span teams."],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":["By submitting, you acknowledge the Anthropic Privacy Policy ."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-073｜小米开源 Xiaomi-Robotics-U0：380 亿参数多模态具身生成模型
+
+- raw_ref: R-073
+- raw_original_id: cmrlrukxp016sbih5djadhgv7
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-073-小米开源-xiaomi-robotics-u0-380-亿参数多模态具身生成模型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-073-小米开源-xiaomi-robotics-u0-380-亿参数多模态具身生成模型.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/012.htm
+- source_url: https://www.ithome.com/0/977/012.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 53
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: cd6005bcf564272b
+- raw_full_text_hash: cd6005bcf564272b
+- raw_semantic_hash: a0d924c0acb5f6da
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cd6005bcf564272b","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: automotive_vertical_context, adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: case, business_change, watchlist
+- key_excerpts: [{"type":"number","text":"小米发布并开源 Xiaomi-Robotics-U0，一个 380 亿参数的多模态自回归具身生成基础模型，是具身领域首个\"通吃\"场景生成、具身迁移、机器人交互视频生成和通用文生图/图像编辑四类任务的统一模型。该模型在 WorldArena 评测基准上以匿名代号 UNIS 取得全球 126 个模型中的总分第一名，并通过 FlashAR+ 推理加速方案将生成效率提升近 83 倍。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"小米开源 Xiaomi-Robotics-U0：具身领域首个“通吃”四类任务的统一生成模型 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 具身智能 小米开源 Xiaomi-Robotics-U0：具身领域首个“通吃”四类任务的统一生成模型 2026/7/15 14:52:33 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： 感谢IT之家网友 顺势而为 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"number","text":"IT之家 7 月 15 日消息，小米今日发布 Xiaomi-Robotics-U0—— 一个拥有 380 亿参数 的多模态自回归具身生成基础模型，是 具身领域首个“通吃”四类任务的统一生成模型 ，打通了机器人图片和视频数据的生成与编辑链路。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"具身场景生成（Scene Generation）—— 模型可以根据文本描述，为指定机器人本体生成多视角初始场景。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"无论是桌面、厨房、仓库，还是更复杂的开放世界环境，都可以通过语言描述生成对应的机器人观测。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"具身迁移（Embodied Transfer）—— 模型可以将已有机器人轨迹迁移到新的环境中，例如改变光照、背景、桌面材质、目标物体或工作区风格，同时保留原始轨迹中的机械臂位姿和场景布局。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["具身场景生成（Scene Generation）—— 模型可以根据文本描述，为指定机器人本体生成多视角初始场景。","无论是桌面、厨房、仓库，还是更复杂的开放世界环境，都可以通过语言描述生成对应的机器人观测。","具身迁移（Embodied Transfer）—— 模型可以将已有机器人轨迹迁移到新的环境中，例如改变光照、背景、桌面材质、目标物体或工作区风格，同时保留原始轨迹中的机械臂位姿和场景布局。"],"case_details":["小米开源 Xiaomi-Robotics-U0：具身领域首个“通吃”四类任务的统一生成模型 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 具身智能 小米开源 Xiaomi-Robotics-U0：具身领域首个“通吃”四类任务的统一生成模型 2026/7/15 14:52:33 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： 感谢IT之家网友 顺势而为 的线索投递！"],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-074｜黑客入侵揭示 AI 音乐生成器 Suno 从 YouTube 抓取训练数据
+
+- raw_ref: R-074
+- raw_original_id: cmrmc51im0084bivcr9s7yw6d
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-074-黑客入侵揭示-ai-音乐生成器-suno-从-youtube-抓取训练数据.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-074-黑客入侵揭示-ai-音乐生成器-suno-从-youtube-抓取训练数据.json`
+- source: TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data
+- source_url: https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: medium
+- extraction_method: main
+- readability_score: 68
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 9144972870f47b4c
+- raw_full_text_hash: 9144972870f47b4c
+- raw_semantic_hash: 21824e7f7ea2412c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9144972870f47b4c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"quote","text":"据 404 Media 报道，AI 音乐生成器 Suno 遭黑客入侵，攻击者通过供应链攻击获取员工凭证，访问了显示 Suno 从 YouTube Music、Deezer、Genius 等平台抓取数十年音频的源代码。黑客还获取了客户电子邮件、电话号码及 Stripe 中的部分信用卡号。Suno 未通知客户 2025 年 11 月发生的此次泄露，称其为\"已迅速控制的有限安全事件\"。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"In Brief Posted: 10:00 AM PDT · July 15, 2026 Image Credits: Suno (opens in a new window) Amanda Silberling Hack suggests AI music generator Suno scraped YouTube for training data The AI music generator Suno was hacked, according to a report from 404 Media .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"The hacker told the publication that they used a supply chain attack in November to access an employee’s credentials, allowing them to then access source code showing how Suno allegedly scraped decades of audio from YouTube Music, Deezer, Genius, stock music libraries, and podcast RSS feeds.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"quote","text":"Suno previously admitted that it trains its AI on “publicly available music files” on the open internet, arguing that it can train on copyrighted material under the fair use doctrine, a subjective carve-out of copyright law.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"But according to the major record labels actively suing Suno, it is illegal under the Digital Millennium Copyright Act (DMCA) to deliberately circumvent YouTube’s protections against data scraping; it also violates YouTube’s terms of service.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Udio , a competitor to Suno, has also been accused of scraping YouTube data.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["In Brief Posted: 10:00 AM PDT · July 15, 2026 Image Credits: Suno (opens in a new window) Amanda Silberling Hack suggests AI music generator Suno scraped YouTube for training data The AI music generator Suno was hacked, according to a report from 404 Media .","The hacker told the publication that they used a supply chain attack in November to access an employee’s credentials, allowing them to then access source code showing how Suno allegedly scraped decades of audio from YouTube Music, Deezer, Genius, stock music libraries, and podcast RSS feeds.","But according to the major record labels actively suing Suno, it is illegal under the Digital Millennium Copyright Act (DMCA) to deliberately circumvent YouTube’s protections against data scraping; it also violates YouTube’s terms of service."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-075｜诺基亚与英伟达推出全球首个商用 AI-RAN 平台，可提升现有频谱效率
+
+- raw_ref: R-075
+- raw_original_id: cmrltzprt001abi5k20d6b4q8
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-075-诺基亚与英伟达推出全球首个商用-ai-ran-平台-可提升现有频谱效率.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-075-诺基亚与英伟达推出全球首个商用-ai-ran-平台-可提升现有频谱效率.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/090.htm
+- source_url: https://www.ithome.com/0/977/090.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 62
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 62f717effdb236b0
+- raw_full_text_hash: 62f717effdb236b0
+- raw_semantic_hash: f84693f9ac8b8434
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"62f717effdb236b0","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"诺基亚与英伟达共同推出全球首个商用 AI-RAN 平台，帮助电信运营商在相同无线频段上到 2028 年实现两倍数据传输能力，频谱利用效率预计可提升 50%。该平台符合 Open RAN 标准，可通过软件升级支持未来 6G 标准，硬件预计明年开始向运营商提供。诺基亚还将转向订阅模式，持续提供增强版软件服务。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"IT之家 7 月 15 日消息，芬兰网络设备制造商诺基亚表示，公司已与英伟达共同开发出全球首个商用人工智能驱动的无线接入网络（AI-RAN）平台。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该技术有望大幅提升运营商现有基础设施的数据传输能力，让电信公司无需增加更多频谱资源，就能传输更多数据。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"这一合作距离两家公司宣布战略合作还不到 10 个月。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"当时，英伟达不仅与诺基亚达成合作，还宣布入股这家芬兰网络设备企业。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"诺基亚在今日发布的声明中表示，新的网络设备将帮助电信运营商在相同无线频段上，到 2028 年实现两倍的数据传输能力。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["该技术有望大幅提升运营商现有基础设施的数据传输能力，让电信公司无需增加更多频谱资源，就能传输更多数据。","这一合作距离两家公司宣布战略合作还不到 10 个月。","当时，英伟达不仅与诺基亚达成合作，还宣布入股这家芬兰网络设备企业。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-076｜Linux 之父托瓦兹回应 AI 争议：不同意可 Fork 或离开
+
+- raw_ref: R-076
+- raw_original_id: cmrmuiciq01c3bijeeay4b6o3
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-076-linux-之父托瓦兹回应-ai-争议-不同意可-fork-或离开.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-076-linux-之父托瓦兹回应-ai-争议-不同意可-fork-或离开.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/300.htm
+- source_url: https://www.ithome.com/0/977/300.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 60
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 05b649e31dd80469
+- raw_full_text_hash: 05b649e31dd80469
+- raw_semantic_hash: 30dace6fba035dbf
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"05b649e31dd80469","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"funding","text":"Linux 创始人 Linus Torvalds 在内核社区发飙，针对 AI 工具 Sashiko 的争议表示\"要么 Fork 要么离开\"。Sashiko 是 Linux 基金会旗下开源项目，由谷歌提供全部 LLM 算力，自动监控内核邮件列表并生成代码审查意见。Torvalds 坚决支持在开发中使用 AI，认为批评者应反省人类自然智能也常犯错。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"quote","text":"IT之家 7 月 16 日消息，科技媒体 Neowin 昨日（7 月 15 日）发布博文，报道称 Linux 创始人林纳斯 · 托瓦兹（Linus Torvalds）在内核讨论社区发飙， 针对 AI 争议表示“要么 Fork 要么离开”。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"fork（项目分叉）是开源开发中的常见机制，指基于现有项目代码库复制出独立版本，并按新的治理规则继续开发。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"典型应用场景包括技术路线分歧、社区治理冲突或许可证需求变化。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"林纳斯 · 托瓦兹（Linus Torvalds），图源：WikiMedia IT之家援引博文介绍，本次争议的导火索是补丁审查机器人 Sashiko。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"funding","text":"Sashiko 是 Linux 基金会旗下的开源项目，由谷歌提供全部 LLM 算力，已经作为守护进程运行在生产环境中，自动监控 LKML 和多个内核邮件列表。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Linux 创始人 Linus Torvalds 在内核社区发飙，针对 AI 工具 Sashiko 的争议表示\"要么 Fork 要么离开\"。Sashiko 是 Linux 基金会旗下开源项目，由谷歌提供全部 LLM 算力，自动监控内核邮件列表并生成代码审查意见。Torvalds 坚决支持在开发中使用 AI，认为批评者应反省人类自然智能也常犯错。","fork（项目分叉）是开源开发中的常见机制，指基于现有项目代码库复制出独立版本，并按新的治理规则继续开发。","典型应用场景包括技术路线分歧、社区治理冲突或许可证需求变化。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-077｜《人工智能拟人化互动服务管理暂行办法》今起施行，明确安全主体责任
+
+- raw_ref: R-077
+- raw_original_id: cmrltzprt0015bi5kot9ibygi
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-077-人工智能拟人化互动服务管理暂行办法-今起施行-明确安全主体责任.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-077-人工智能拟人化互动服务管理暂行办法-今起施行-明确安全主体责任.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/103.htm
+- source_url: https://www.ithome.com/0/977/103.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 56
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 1b9524b3940941fe
+- raw_full_text_hash: 1b9524b3940941fe
+- raw_semantic_hash: 080bd7b7ea9844f7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1b9524b3940941fe","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"国家网信办等五部门联合发布的《人工智能拟人化互动服务管理暂行办法》今日起施行，明确服务提供者安全主体责任。办法禁止生成危害国家安全、诱导自残、向未成年人提供虚拟亲密关系等六类活动，并要求对注册用户100万以上或月活跃用户10万以上的服务进行安全评估及算法备案。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"IT之家 7 月 15 日消息，国家互联网信息办公室、国家发展改革委、工业和信息化部、公安部、国家市场监督管理总局于 4 月 10 日联合公布《 人工智能拟人化互动服务管理暂行办法 》（以下简称《办法》），该办法自今起施行。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家注：拟人化互动服务是指企业利用人工智能技术，向境内公众提供模拟自然人人格特征、思维模式和沟通风格的持续性的情感互动服务，包括通过文字、图片、音频、视频等形式提供的情感照护、陪伴、支持等互动服务。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"其中智能客服、知识问答、工作助手、学习教育、科学研究等不涉及持续性情感互动的服务，不适用该《办法》。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"近年来，拟人化互动服务在文化传播、适幼照护、适老陪伴等领域的创新应用不断涌现，但同时，危害未成年人身心健康、影响网络信息安全、威胁公民生命健康以及加剧伦理偏差等问题也日益显现。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"《办法》提出，国家坚持发展和安全并重、促进创新和依法治理相结合的原则，鼓励拟人化互动服务创新发展，对拟人化互动服务实行包容审慎和分类分级监管。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家注：拟人化互动服务是指企业利用人工智能技术，向境内公众提供模拟自然人人格特征、思维模式和沟通风格的持续性的情感互动服务，包括通过文字、图片、音频、视频等形式提供的情感照护、陪伴、支持等互动服务。"],"case_details":[],"workflow_changes":["其中智能客服、知识问答、工作助手、学习教育、科学研究等不涉及持续性情感互动的服务，不适用该《办法》。"],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":["近年来，拟人化互动服务在文化传播、适幼照护、适老陪伴等领域的创新应用不断涌现，但同时，危害未成年人身心健康、影响网络信息安全、威胁公民生命健康以及加剧伦理偏差等问题也日益显现。","《办法》提出，国家坚持发展和安全并重、促进创新和依法治理相结合的原则，鼓励拟人化互动服务创新发展，对拟人化互动服务实行包容审慎和分类分级监管。"]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-078｜xAI 开源 Grok CLI 代码库中发现 Mermaid 转 Unicode 框图工具
+
+- raw_ref: R-078
+- raw_original_id: cmrmsfo5q00f0bimis2t1mbci
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-078-xai-开源-grok-cli-代码库中发现-mermaid-转-unicode-框图工具.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-078-xai-开源-grok-cli-代码库中发现-mermaid-转-unicode-框图工具.json`
+- source: Simon Willison 博客｜https://simonwillison.net/2026/Jul/16/grok-mermaid
+- source_url: https://simonwillison.net/2026/Jul/16/grok-mermaid
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 46
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 71b648b8a206abcb
+- raw_full_text_hash: 71b648b8a206abcb
+- raw_semantic_hash: f02a63fee31c6b15
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"71b648b8a206abcb","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- key_excerpts: [{"type":"opinion","text":"xAI 开源的 Grok CLI 编码智能体代码库中包含一个用 Rust 编写的 Mermaid 图表示例终端渲染器 `xai-grok-markdown/src/mermaid.rs`。开发者通过 Claude Code for web （Fable 5） 将其编译为 WebAssembly，实现在浏览器中运行该工具。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Tool: Mermaid to Unicode box art (grok-mermaid) Simon Willison’s Weblog Subscribe Sponsored by: Teleport &mdash; How do you ensure that AI agents act within your intended boundaries?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"quote","text":"Teleport’s “From Zero Trust to Agent Trust” white paper details what needs to be in place to realize the promise of agentic designs.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"16th July 2026 Tool Mermaid to Unicode box art (grok-mermaid) While exploring the codebase for the newly open-sourced Grok CLI coding agent I came across xai-grok-markdown/src/mermaid.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"quote","text":"rs , a \"self-contained terminal renderer for Mermaid diagrams\" written in Rust.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"I figured it would be fun to try that out in a browser via WebAssembly.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Tool: Mermaid to Unicode box art (grok-mermaid) Simon Willison’s Weblog Subscribe Sponsored by: Teleport &mdash; How do you ensure that AI agents act within your intended boundaries?","16th July 2026 Tool Mermaid to Unicode box art (grok-mermaid) While exploring the codebase for the newly open-sourced Grok CLI coding agent I came across xai-grok-markdown/src/mermaid.","I figured it would be fun to try that out in a browser via WebAssembly."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-079｜京东 AI 智能体与腾讯元宝打通小程序生态，用户可用自然语言跳转商品页下单
+
+- raw_ref: R-079
+- raw_original_id: cmrlrukxp016vbih5py2qpy6p
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-079-京东-ai-智能体与腾讯元宝打通小程序生态-用户可用自然语言跳转商品页下单.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-079-京东-ai-智能体与腾讯元宝打通小程序生态-用户可用自然语言跳转商品页下单.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/006.htm
+- source_url: https://www.ithome.com/0/977/006.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 37
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: b169b3edcece1b8e
+- raw_full_text_hash: b169b3edcece1b8e
+- raw_semantic_hash: 8c2ec13a8b903c0e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b169b3edcece1b8e","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- key_excerpts: [{"type":"company_action","text":"京东 AI 智能体与腾讯元宝完成小程序生态打通，用户在元宝 App 内用自然语言询问产品型号、对比参数或查询价格区间时，元宝会以商品卡片形式展示京东全品类商品信息，点击即可进入京东购物小程序下单，无需退出对话。此外，京东 AI 智能体还通过 A2A 模式接入了华为小艺、OPPO 小布、荣耀 YOYO 等手机厂商智能体。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"京东 AI 智能体与腾讯元宝打通小程序生态，用户用自然语言即可跳转商品页下单 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 京东 AI 智能体与腾讯元宝打通小程序生态，用户用自然语言即可跳转商品页下单 2026/7/15 14:50:17 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： 感谢IT之家网友 小郑同学 、 Domado 、 ultraman21 、 取什么名 、 麻辣清补凉 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 15 日消息，京东与腾讯联合宣布，京东 AI 智能体与腾讯元宝完成小程序生态打通。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"京东 AI 智能体将为元宝提供覆盖数码电子、家用电器、服饰鞋包、美妆个护、食品生鲜等在内的全品类商品信息，并为用户提供商品推荐、下单，以及履约、售后等服务。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"京东表示，如今用户在元宝 App 内询问产品型号、对比不同产品参数、或查询特定价格区间的商品时， 元宝会整合权威资讯与京东商品信息，以商品卡片形式展示，用户点击即可进入京东购物小程序选购下单 。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"整个过程无需退出对话、无需手动复制搜索，在对话场景内即可获得从“信息查询”到“购物下单”的顺畅购物体验。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["京东 AI 智能体与腾讯元宝完成小程序生态打通，用户在元宝 App 内用自然语言询问产品型号、对比参数或查询价格区间时，元宝会以商品卡片形式展示京东全品类商品信息，点击即可进入京东购物小程序下单，无需退出对话。此外，京东 AI 智能体还通过 A2A 模式接入了华为小艺、OPPO 小布、荣耀 YOYO 等手机厂商智能体。","IT之家 7 月 15 日消息，京东与腾讯联合宣布，京东 AI 智能体与腾讯元宝完成小程序生态打通。","京东 AI 智能体将为元宝提供覆盖数码电子、家用电器、服饰鞋包、美妆个护、食品生鲜等在内的全品类商品信息，并为用户提供商品推荐、下单，以及履约、售后等服务。"],"case_details":["京东 AI 智能体与腾讯元宝打通小程序生态，用户用自然语言即可跳转商品页下单 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 京东 AI 智能体与腾讯元宝打通小程序生态，用户用自然语言即可跳转商品页下单 2026/7/15 14:50:17 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： 感谢IT之家网友 小郑同学 、 Domado 、 ultraman21 、 取什么名 、 麻辣清补凉 的线索投递！"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-080｜澳大利亚将推出人工智能标准并设立人工智能办公室
+
+- raw_ref: R-080
+- raw_original_id: cmrlppdle00kibih5vp136dmv
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-080-澳大利亚将推出人工智能标准并设立人工智能办公室.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-080-澳大利亚将推出人工智能标准并设立人工智能办公室.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/976/952.htm
+- source_url: https://www.ithome.com/0/976/952.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 34
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 8f23fff401f83701
+- raw_full_text_hash: 8f23fff401f83701
+- raw_semantic_hash: bc8b0af5ce30ba80
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8f23fff401f83701","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"澳大利亚联邦政府宣布将推出人工智能标准，并在总理和内阁部内设立人工智能办公室，以统筹AI发展并保障公民安全。该国将简化大型数据中心审核流程，要求设施承担电力基建成本并节水节电。澳大利亚还承诺为文艺工作者和媒体提供最强有力的版权保护。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"澳大利亚将推出其人工智能标准并在政府内设立人工智能办公室 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 澳大利亚将推出其人工智能标准并在政府内设立人工智能办公室 2026/7/15 13:44:17 来源： IT之家 作者： 溯波（实习） 责编： 溯波 评论： IT之家 7 月 15 日消息，澳大利亚联邦政府当地时间今日宣布 将推出其人工智能标准并在总理和内阁部内设立人工智能办公室 ，统筹该国人工智能发展，确保该国能抓住这一历史机遇并保障公民安全。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"图源：Pexels 该国将简化大型数据中心的审核流程。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"这些算力设施需在最合适的地点建设并征求当地社区的意见， 需要承担电力基建成本 ， 必要时减少用电以提升电网弹性 ， 尽可能节水 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"澳大利亚还 承诺将为该国文艺工作者和媒体提供最强有力的版权保护 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"澳大利亚政府称其做法将有助于进一步促进澳大利亚经济增长，强化国家主权，确保符合国家利益的福利，并提升公民生活水平。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["这些算力设施需在最合适的地点建设并征求当地社区的意见， 需要承担电力基建成本 ， 必要时减少用电以提升电网弹性 ， 尽可能节水 。","澳大利亚还 承诺将为该国文艺工作者和媒体提供最强有力的版权保护 。"],"case_details":[],"workflow_changes":["图源：Pexels 该国将简化大型数据中心的审核流程。"],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["澳大利亚联邦政府宣布将推出人工智能标准，并在总理和内阁部内设立人工智能办公室，以统筹AI发展并保障公民安全。该国将简化大型数据中心审核流程，要求设施承担电力基建成本并节水节电。澳大利亚还承诺为文艺工作者和媒体提供最强有力的版权保护。","澳大利亚将推出其人工智能标准并在政府内设立人工智能办公室 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 澳大利亚将推出其人工智能标准并在政府内设立人工智能办公室 2026/7/15 13:44:17 来源： IT之家 作者： 溯波（实习） 责编： 溯波 评论： IT之家 7 月 15 日消息，澳大利亚联邦政府当地时间今日宣布 将推出其人工智能标准并在总理和内阁部内设立人工智能办公室 ，统筹该国人工智能发展，确保该国能抓住这一历史机遇并保障公民安全。"]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-081｜我国首个水风光一体化智慧运营大模型在雅砻江流域发布
+
+- raw_ref: R-081
+- raw_original_id: cmrmsd6p300czbimil9xaeoeb
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-081-我国首个水风光一体化智慧运营大模型在雅砻江流域发布.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-081-我国首个水风光一体化智慧运营大模型在雅砻江流域发布.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/295.htm
+- source_url: https://www.ithome.com/0/977/295.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 38
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: ecf2cead7bbcb80a
+- raw_full_text_hash: ecf2cead7bbcb80a
+- raw_semantic_hash: bea83cfcb48dadf0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ecf2cead7bbcb80a","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- key_excerpts: [{"type":"number","text":"国投集团雅砻江公司发布我国首个水风光一体化智慧运营大模型，打通气象、水文、风光资源预测到电力运行决策全流程。该模型汇聚卫星遥感、地面气象站等海量数据，将流域来水预报从传统模型的十几天拉长至60天，前10天小时级预报精度提升约5%，气象预测响应速度从小时级提升至分钟级。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"我国首个水风光一体化智慧运营大模型发布 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 我国首个水风光一体化智慧运营大模型发布 2026/7/16 8:42:43 来源： IT之家 作者： 汪淼 责编： 汪淼 评论： 感谢IT之家网友 不一样的体验 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 16 日消息，据央视新闻今日报道，从国投集团雅砻江公司获悉，我国首个水风光一体化智慧运营大模型在四川雅砻（IT之家注读音：yǎ lóng）江流域正式发布。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"这个大模型最大的技术突破是 打通了气象、水文、风光资源预测和电力实际运行决策全流程 ，成为千万千瓦级清洁能源大基地的“智慧大脑”。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"这套系统最突出的优势就是数据整合能力极强，汇聚了卫星遥感、地面气象监测站、流域水文测站、新能源场站传感设备等海量基础数据，搭建起覆盖全流域、全资源要素、多时间尺度、发电－调度－运维－交易全业务链条的一体化智能预报体系。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"经过海量实景数据训练、高原复杂场景专项优化后，预报能力实现跨越式升级。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 7 月 16 日消息，据央视新闻今日报道，从国投集团雅砻江公司获悉，我国首个水风光一体化智慧运营大模型在四川雅砻（IT之家注读音：yǎ lóng）江流域正式发布。","这套系统最突出的优势就是数据整合能力极强，汇聚了卫星遥感、地面气象监测站、流域水文测站、新能源场站传感设备等海量基础数据，搭建起覆盖全流域、全资源要素、多时间尺度、发电－调度－运维－交易全业务链条的一体化智能预报体系。","经过海量实景数据训练、高原复杂场景专项优化后，预报能力实现跨越式升级。"],"case_details":["我国首个水风光一体化智慧运营大模型发布 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 我国首个水风光一体化智慧运营大模型发布 2026/7/16 8:42:43 来源： IT之家 作者： 汪淼 责编： 汪淼 评论： 感谢IT之家网友 不一样的体验 的线索投递！"],"workflow_changes":["这个大模型最大的技术突破是 打通了气象、水文、风光资源预测和电力实际运行决策全流程 ，成为千万千瓦级清洁能源大基地的“智慧大脑”。"],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-082｜马斯克宣布开源 Grok Build 编程 AI 智能体工具
+
+- raw_ref: R-082
+- raw_original_id: cmrmo2t9a074ebiulm7krlsoe
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-082-马斯克宣布开源-grok-build-编程-ai-智能体工具.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-082-马斯克宣布开源-grok-build-编程-ai-智能体工具.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/265.htm
+- source_url: https://www.ithome.com/0/977/265.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 42
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 12438ca5ca0f6ab3
+- raw_full_text_hash: 12438ca5ca0f6ab3
+- raw_semantic_hash: 861b902102ab688c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"12438ca5ca0f6ab3","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"SpaceXAI 开源了 AI 编程智能体工具 Grok Build，其源代码已发布至 GitHub。该工具在终端中整合 Grok 模型，可完成从规划、搜索、编码、测试到 Git 提交的全流程工作，并支持完全本地优先运行。开源代码涵盖智能体链路、工具、终端用户界面及扩展系统（Skills、插件、hooks、MCP 服务器和子智能体）。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"上传用户代码事件后，马斯克宣布开源 Grok Build 编程 AI 智能体工具 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 上传用户代码事件后，马斯克宣布开源 Grok Build 编程 AI 智能体工具 2026/7/16 6:40:31 来源： IT之家 作者： 故渊 责编： 故渊 评论： 感谢IT之家网友 Nuc_F 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 16 日消息，马斯克旗下 SpaceXAI 公司昨日（7 月 15 日）宣布开源 Grok Build， 并将源代码发布至 GitHub 平台。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"在官方博文中，SpaceXAI 表示： 开源发布源代码，是构建强大、可靠框架的最直接方法。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"用户可以阅读源代码，了解其从上下文构建到工具调用分发的完整工作原理。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"开源也让框架更容易探索和扩展：如果用户正在使用 Agent Skills、插件、hooks、MCP 服务器或子智能体，则源代码是了解每个组件如何加载和调用的权威参考。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 7 月 16 日消息，马斯克旗下 SpaceXAI 公司昨日（7 月 15 日）宣布开源 Grok Build， 并将源代码发布至 GitHub 平台。","在官方博文中，SpaceXAI 表示： 开源发布源代码，是构建强大、可靠框架的最直接方法。","用户可以阅读源代码，了解其从上下文构建到工具调用分发的完整工作原理。"],"case_details":["上传用户代码事件后，马斯克宣布开源 Grok Build 编程 AI 智能体工具 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 上传用户代码事件后，马斯克宣布开源 Grok Build 编程 AI 智能体工具 2026/7/16 6:40:31 来源： IT之家 作者： 故渊 责编： 故渊 评论： 感谢IT之家网友 Nuc_F 的线索投递！"],"workflow_changes":["SpaceXAI 开源了 AI 编程智能体工具 Grok Build，其源代码已发布至 GitHub。该工具在终端中整合 Grok 模型，可完成从规划、搜索、编码、测试到 Git 提交的全流程工作，并支持完全本地优先运行。开源代码涵盖智能体链路、工具、终端用户界面及扩展系统（Skills、插件、hooks、MCP 服务器和子智能体）。"],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-083｜Mozilla 2026 开源 AI 报告：DeepSeek V4 Flash 月用量 18.4T Tokens 登顶
+
+- raw_ref: R-083
+- raw_original_id: cmrlppdld00kdbih5h26221vs
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-083-mozilla-2026-开源-ai-报告-deepseek-v4-flash-月用量-18-4t-tokens-登顶.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-083-mozilla-2026-开源-ai-报告-deepseek-v4-flash-月用量-18-4t-tokens-登顶.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/976/962.htm
+- source_url: https://www.ithome.com/0/976/962.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 53
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: a311bcf65d2120e9
+- raw_full_text_hash: a311bcf65d2120e9
+- raw_semantic_hash: c57968b58cf89f29
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a311bcf65d2120e9","missing":[]}
+- degradation_reasons: none
+- importance_type: important_market_structure
+- importance_score: 4
+- supporting_signals: market_shaping_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"Mozilla 报告显示，开放权重与闭源模型平均差距为 3.3%，差距集中在推理、长上下文检索和智能体任务上。基于 OpenRouter 数据，DeepSeek V4 Flash 以 18.4T Tokens 月消耗量位居 API 调用榜首，前五名均为开源模型。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 15 日消息，Mozilla 昨日（7 月 14 日）发布 2026 年《开源 AI 现状报告》， 基于 2026 年 3 月 Chatbot Arena 数据显示，开放权重 AI 模型能力和闭源模型的平均差距为 3.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"报告指出基于 Chatbot Arena 平台数据，开源模型与闭源模型的差距在过去 24 个月内逐渐缩小。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在 2024 年 1 月，开源和闭源模型的差距达到 8.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"04%；而在 2024 年 8 月差距缩短到 0.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"报告指出在 2025 年 2 月，DeepSeek-R1 问世后，开源模型一度与美国顶级模型持平。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 7 月 15 日消息，Mozilla 昨日（7 月 14 日）发布 2026 年《开源 AI 现状报告》， 基于 2026 年 3 月 Chatbot Arena 数据显示，开放权重 AI 模型能力和闭源模型的平均差距为 3.","报告指出基于 Chatbot Arena 平台数据，开源模型与闭源模型的差距在过去 24 个月内逐渐缩小。","在 2024 年 1 月，开源和闭源模型的差距达到 8."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-084｜Inkling 发布：开放权重 975B 参数多模态 MoE 模型，41B 活跃参数
+
+- raw_ref: R-084
+- raw_original_id: cmrmh8n3z00ljbiul3o3cmxoe
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-084-inkling-发布-开放权重-975b-参数多模态-moe-模型-41b-活跃参数.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-084-inkling-发布-开放权重-975b-参数多模态-moe-模型-41b-活跃参数.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜https://thinkingmachines.ai/inkling
+- source_url: https://thinkingmachines.ai/inkling
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: medium
+- extraction_method: main
+- readability_score: 61
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 03bcb2fb8a09face
+- raw_full_text_hash: 03bcb2fb8a09face
+- raw_semantic_hash: 18b31fe13ba85d45
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"03bcb2fb8a09face","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- key_excerpts: [{"type":"company_action","text":"Inkling 是一款开放权重的 975B 总参数（41B 活跃参数）MoE 大语言模型，支持文本、图像和音频输入，上下文窗口达 1M tokens。该模型在知识、数学、科学及智能体编程任务上表现均衡，并具备可控思考时间与校准置信度预测功能。用户可通过 Tinker 平台对 Inkling 进行微调，模型权重已在 Hugging Face 开放。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Inkling Open weights, ready to tinker An efficient open model for text, images, and audio, available to fine-tune.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Try in Tinker Read announcement Model card Hugging Face Model at a glance 975B total, 41B active Parameters Mixture of Experts Architecture 1M tokens Context window 64K / 256K on Tinker Text, Image, Audio Input modalities A well-rounded, generalist model Inkling Nemotron 3 Ultra GLM 5.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6 Sol Claude Fable 5 General intelligence Performs well across knowledge, math, and science.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Agentic coding & tools Writes code and uses tools to get work done.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Audio & image input Natively multimodal on input, and at the open-source frontier for speech.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Inkling 是一款开放权重的 975B 总参数（41B 活跃参数）MoE 大语言模型，支持文本、图像和音频输入，上下文窗口达 1M tokens。该模型在知识、数学、科学及智能体编程任务上表现均衡，并具备可控思考时间与校准置信度预测功能。用户可通过 Tinker 平台对 Inkling 进行微调，模型权重已在 Hugging Face 开放。","Inkling Open weights, ready to tinker An efficient open model for text, images, and audio, available to fine-tune.","Try in Tinker Read announcement Model card Hugging Face Model at a glance 975B total, 41B active Parameters Mixture of Experts Architecture 1M tokens Context window 64K / 256K on Tinker Text, Image, Audio Input modalities A well-rounded, generalist model Inkling Nemotron 3 Ultra GLM 5."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-085｜Withings Body Scan 2 体重秤上市：可测高血压风险与细胞健康等 60 项指标，599.95 美元
+
+- raw_ref: R-085
+- raw_original_id: cmrm2kxjv02kpbi5kl4d5nczz
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-085-withings-body-scan-2-体重秤上市-可测高血压风险与细胞健康等-60-项指标-599-95-美元.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-085-withings-body-scan-2-体重秤上市-可测高血压风险与细胞健康等-60-项指标-599-95-美元.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/216.htm
+- source_url: https://www.ithome.com/0/977/216.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 35
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 47c27c1119388c4a
+- raw_full_text_hash: 47c27c1119388c4a
+- raw_semantic_hash: b6e77d1a321620e1
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"47c27c1119388c4a","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"Withings Body Scan 2 体重秤正式上市，定价 599.95 美元，可测量包括高血压风险检测和细胞健康评估在内的 60 项人体指标。新机型将显示屏移至可拉出式把手上，新增阻抗心动描记技术（ICG）与生物电阻抗光谱分析（BIS）功能。所有数据由经临床验证的 AI 模型分析，生成高血压风险评估、血糖调节能力分析等健康洞察。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"Withings Body Scan 2 体重秤上市：可测高血压风险 / 细胞健康等 60 项人体指标，599.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"number","text":"95 美元 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 智能家电 Withings Body Scan 2 体重秤上市：可测高血压风险 / 细胞健康等 60 项人体指标，599.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"95 美元 2026/7/15 19:57:37 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： IT之家 7 月 15 日消息，Withings 宣布旗下 Body Scan 2 体重秤正式上市，新机型主要调整设计，并新增了高血压风险检测和细胞健康评估等功能， 定价 599.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"95 美元（IT之家注：现汇率约合 4069 元人民币） ，赠送 Withings+ 一个月订阅服务。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在设计层面，Body Scan 2 将原先位于秤体表面的显示屏调整到了用于测量心电图的可拉出式把手上，允许用户更轻松地察看数据信息。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["在设计层面，Body Scan 2 将原先位于秤体表面的显示屏调整到了用于测量心电图的可拉出式把手上，允许用户更轻松地察看数据信息。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":["Withings Body Scan 2 体重秤上市：可测高血压风险 / 细胞健康等 60 项人体指标，599."]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-086｜腾讯启动2027"青云计划"校招，实习生可享正式员工薪资，聚焦大模型与智能体
+
+- raw_ref: R-086
+- raw_original_id: cmrlw5dqw00oxbi5kxyte9uvd
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-086-腾讯启动2027-青云计划-校招-实习生可享正式员工薪资-聚焦大模型与智能体.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-086-腾讯启动2027-青云计划-校招-实习生可享正式员工薪资-聚焦大模型与智能体.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/157.htm
+- source_url: https://www.ithome.com/0/977/157.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 45
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 14e5d30f0915bcbd
+- raw_full_text_hash: 14e5d30f0915bcbd
+- raw_semantic_hash: 7cb6887083a485b4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"14e5d30f0915bcbd","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- key_excerpts: [{"type":"company_action","text":"腾讯宣布启动面向2026年1月至2027年12月毕业生的\"青云计划\"2027校园招聘，聚焦大语言模型、多模态、智能体等六大技术领域。入选实习生有机会享受正式员工薪资待遇，岗位覆盖北上广深及美国、新加坡、英国、荷兰多地。该计划于2023年首次启动，2025年明确将大模型作为投入力度最大的关键领域。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"腾讯启动 2027“青云计划”校招，实习生有机会享正式员工薪资待遇、岗位覆盖国内外多地 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 网络 腾讯启动 2027“青云计划”校招，实习生有机会享正式员工薪资待遇、岗位覆盖国内外多地 2026/7/15 17:41:02 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： 感谢IT之家网友 软媒用户1238620 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 15 日消息，据“腾讯”公众号，腾讯今天宣布启动“青云计划”2027 校园招聘，面向 2026 年 1 月至 2027 年 12 月毕业的本、硕、博学生进行公开招募。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"据介绍，该计划聚焦大语言模型 ·NLP，多模态 · 视觉 · 语音，智能体 · 强化学习等六大技术领域。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"quote","text":"号称是“腾讯面向全球顶尖技术学子的人才专项”，通过提供定制化培养方案，开放核心业务实战与前瞻技术课题，支持青年人才深度参与前沿课题与核心任务。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"quote","text":"腾讯表示，公司将为入选学生提供匹配实力的顶级薪酬，“实习生也有机会享受正式员工的工资待遇”，工作岗位覆盖北上广深及美国、新加坡、英国、荷兰多地。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["腾讯宣布启动面向2026年1月至2027年12月毕业生的\"青云计划\"2027校园招聘，聚焦大语言模型、多模态、智能体等六大技术领域。入选实习生有机会享受正式员工薪资待遇，岗位覆盖北上广深及美国、新加坡、英国、荷兰多地。该计划于2023年首次启动，2025年明确将大模型作为投入力度最大的关键领域。","IT之家 7 月 15 日消息，据“腾讯”公众号，腾讯今天宣布启动“青云计划”2027 校园招聘，面向 2026 年 1 月至 2027 年 12 月毕业的本、硕、博学生进行公开招募。","据介绍，该计划聚焦大语言模型 ·NLP，多模态 · 视觉 · 语音，智能体 · 强化学习等六大技术领域。"],"case_details":["腾讯启动 2027“青云计划”校招，实习生有机会享正式员工薪资待遇、岗位覆盖国内外多地 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 网络 腾讯启动 2027“青云计划”校招，实习生有机会享正式员工薪资待遇、岗位覆盖国内外多地 2026/7/15 17:41:02 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： 感谢IT之家网友 软媒用户1238620 的线索投递！"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-087｜小米 MiMo 完成大语言、多模态、语音全系列模型矩阵闭环，端侧模型通过国家大模型备案
+
+- raw_ref: R-087
+- raw_original_id: cmrlw5dqx00pbbi5kj4fc8m9n
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-087-小米-mimo-完成大语言-多模态-语音全系列模型矩阵闭环-端侧模型通过国家大模型备案.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-087-小米-mimo-完成大语言-多模态-语音全系列模型矩阵闭环-端侧模型通过国家大模型备案.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/116.htm
+- source_url: https://www.ithome.com/0/977/116.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 38
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: cf187591ec2dd1a1
+- raw_full_text_hash: cf187591ec2dd1a1
+- raw_semantic_hash: 950c84d50d390119
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cf187591ec2dd1a1","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"小米自研大模型 MiMo 已完成大语言、多模态、语音等全系列模型矩阵闭环，其端侧模型通过国家大模型备案。MiMo 通过端云协同全面赋能人车家全生态，推动 AI 走向物理世界。小米 2026 年将在 AI 领域投入 160 亿元人民币，未来三年投入不低于 600 亿元。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"小米 MiMo 完成大语言、多模态、语音等全系列模型矩阵闭环，端侧模型通过国家大模型备案 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 小米 MiMo 完成大语言、多模态、语音等全系列模型矩阵闭环，端侧模型通过国家大模型备案 2026/7/15 16:52:17 来源： IT之家 作者： 归泷 责编： 归泷 评论： 感谢IT之家网友 顺势而为 、 碳酸饮料 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"quote","text":"IT之家 7 月 15 日消息，促进生成式人工智能服务创新发展和规范应用，网信部门会同有关部门按照《生成式人工智能服务管理暂行办法》要求，有序开展生成式人工智能服务备案工作， 现将新增的“Apple 智能”等 7 款提供手机端侧生成式人工智能服务备案信息予以公告 。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"小米官方刚刚发文，介绍了此次通过备案的小米 MiMo 模型。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"小米 MiMo 是小米自研大模型， 已完成大语言、多模态、语音等全系列模型矩阵闭环 ，小米 MiMo 通过端云协同，将全面赋能人车家全生态，持续推动 AI 走向物理世界。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"IT之家注意到，小米官方还表示，AI、芯片、OS 是小米长期投入的三大核心技术赛道，小米 2026 年将在 AI 领域投入 160 亿元人民币， 未来三年 AI 领域投入不低于 600 亿元人民币 。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["小米官方刚刚发文，介绍了此次通过备案的小米 MiMo 模型。","小米 MiMo 是小米自研大模型， 已完成大语言、多模态、语音等全系列模型矩阵闭环 ，小米 MiMo 通过端云协同，将全面赋能人车家全生态，持续推动 AI 走向物理世界。"],"case_details":["小米 MiMo 完成大语言、多模态、语音等全系列模型矩阵闭环，端侧模型通过国家大模型备案 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 小米 MiMo 完成大语言、多模态、语音等全系列模型矩阵闭环，端侧模型通过国家大模型备案 2026/7/15 16:52:17 来源： IT之家 作者： 归泷 责编： 归泷 评论： 感谢IT之家网友 顺势而为 、 碳酸饮料 的线索投递！"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-088｜网信部门公布 7 款手机端侧生成式 AI 服务备案，Apple 智能在列
+
+- raw_ref: R-088
+- raw_original_id: cmrltzprt001ebi5k8567vjms
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-088-网信部门公布-7-款手机端侧生成式-ai-服务备案-apple-智能在列.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-088-网信部门公布-7-款手机端侧生成式-ai-服务备案-apple-智能在列.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/080.htm
+- source_url: https://www.ithome.com/0/977/080.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 32
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 63246c6c497f6ee6
+- raw_full_text_hash: 63246c6c497f6ee6
+- raw_semantic_hash: d542579bcf346fc5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"63246c6c497f6ee6","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"product_update","text":"网信部门发布 7 款提供手机端侧生成式人工智能服务的已备案信息，包括苹果手机的 Apple 智能、华为手机的华为小艺 AI 大模型、OPPO 手机的 AndesGPT 大模型、vivo 手机的 vivo 蓝心端侧大模型、小米手机的小米澎湃 AI、三星手机的盖乐世 AI 以及中兴手机的努比亚豆包手机大模型。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"苹果 Apple 智能在列，网信部门发布 7 款提供手机端侧生成式人工智能服务已备案信息 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 智能手机 苹果 Apple 智能在列，网信部门发布 7 款提供手机端侧生成式人工智能服务已备案信息 2026/7/15 16:06:25 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： 感谢IT之家网友 pzvincent 、 木木人工 、 无敌的忧桑 、 Patrick12 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"quote","text":"IT之家 7 月 15 日消息，促进生成式人工智能服务创新发展和规范应用，网信部门会同有关部门按照《生成式人工智能服务管理暂行办法》要求，有序开展生成式人工智能服务备案工作，现将新增的“Apple 智能”等 7 款提供手机端侧生成式人工智能服务备案信息予以公告。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家附相关模型名称与适用手机如下： 苹果手机：Apple 智能 华为手机：华为小艺 AI 大模型 OPPO 手机：AndesGPT 大模型 vivo 手机：vivo 蓝心端侧大模型 小米手机：小米澎湃 AI 三星手机：盖乐世 AI 中兴手机：努比亚豆包手机大模型 相关阅读： 《 国行苹果 AI 功能完成备案，阿里巴巴称千问将作为 AI 能力集成至 Apple 智能 》 《 消息称百度为苹果 Apple 智能提供 AI 搜索功能 》 广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"投诉水文 我要纠错 下载IT之家APP，签到赚金币兑豪礼 相关文章 关键词： 华为 ， 三星 ， 苹果 ， 小米 ， OPPO ， 中兴 ， vivo ， AI ， Apple 智能 ， 端侧模型 消息称交友应用 Soul 将推出首款便携式 AI 智能硬件，有望于 WAIC 2026 亮相 小米米家显示器挂灯 2 开启众筹：108 颗定制全光谱灯珠、三角支撑夹持结构，259 元 消息称百度为苹果 Apple 智能提供 AI 搜索功能 Anthropic 高管：因成本顾虑削减 AI 使用是错误选择 努比亚完成智能体大模型备案，全球首款 AI 智能体手机官宣还将搭载豆包手机助手 小米 MiMo 完成大语言、多模态、语音等全系列模型矩阵闭环，端侧模型通过国家大模型备案 软媒旗下网站： IT之家 最会买 - 返利返现优惠券 iPhone之家 Win7之家 Win10之家 Win11之家 软媒旗下软件： 软媒手机APP应用 魔方 最会买 要知","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["网信部门发布 7 款提供手机端侧生成式人工智能服务的已备案信息，包括苹果手机的 Apple 智能、华为手机的华为小艺 AI 大模型、OPPO 手机的 AndesGPT 大模型、vivo 手机的 vivo 蓝心端侧大模型、小米手机的小米澎湃 AI、三星手机的盖乐世 AI 以及中兴手机的努比亚豆包手机大模型。","IT之家附相关模型名称与适用手机如下： 苹果手机：Apple 智能 华为手机：华为小艺 AI 大模型 OPPO 手机：AndesGPT 大模型 vivo 手机：vivo 蓝心端侧大模型 小米手机：小米澎湃 AI 三星手机：盖乐世 AI 中兴手机：努比亚豆包手机大模型 相关阅读： 《 国行苹果 AI 功能完成备案，阿里巴巴称千问将作为 AI 能力集成至 Apple 智能 》 《 消息称百度为苹果 Apple 智能提供 AI 搜索功能 》 广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。","投诉水文 我要纠错 下载IT之家APP，签到赚金币兑豪礼 相关文章 关键词： 华为 ， 三星 ， 苹果 ， 小米 ， OPPO ， 中兴 ， vivo ， AI ， Apple 智能 ， 端侧模型 消息称交友应用 Soul 将推出首款便携式 AI 智能硬件，有望于 WAIC 2026 亮相 小米米家显示器挂灯 2 开启众筹：108 颗定制全光谱灯珠、三角支撑夹持结构，259 元 消息称百度为苹果 Apple 智能提供 AI 搜索功能 Anthropic 高管：因成本顾虑削减 AI 使用是错误选择 努比亚完成智能体大模型备案，全球首款 AI 智能体手机官宣还将搭载豆包手机助手 小米 MiMo 完成大语言、多模态、语音等全系列模型矩阵闭环，端侧模型通过国家大模型备案 软媒旗下网站： IT之家 最会买 - 返利返现优惠券 iPhone之家 Win7之家 Win10之家 Win11之家 软媒旗下软件： 软媒手机APP应用 魔方 最会买 要知"],"case_details":["苹果 Apple 智能在列，网信部门发布 7 款提供手机端侧生成式人工智能服务已备案信息 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 智能手机 苹果 Apple 智能在列，网信部门发布 7 款提供手机端侧生成式人工智能服务已备案信息 2026/7/15 16:06:25 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： 感谢IT之家网友 pzvincent 、 木木人工 、 无敌的忧桑 、 Patrick12 的线索投递！"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-089｜金山办公推出 AI 办公智能体灵犀专业版，支持专业 Office 操作
+
+- raw_ref: R-089
+- raw_original_id: cmrltzprt001gbi5ka07hz3eq
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-089-金山办公推出-ai-办公智能体灵犀专业版-支持专业-office-操作.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-089-金山办公推出-ai-办公智能体灵犀专业版-支持专业-office-操作.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/076.htm
+- source_url: https://www.ithome.com/0/977/076.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 37
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: fc7d503c2b393fe8
+- raw_full_text_hash: fc7d503c2b393fe8
+- raw_semantic_hash: deba89685c0668e3
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fc7d503c2b393fe8","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"case_detail","text":"金山办公在 WPS AI 生产力发布会上发布新一代办公智能体灵犀专业版，主打个人专业办公助理。该产品能理解用户工作上下文，联动 WPS 文档内核与外部工具，将指令转化为可编辑、可追溯、支持多人协作的办公成果。它支持项目级上下文管理、自主学习写作风格、编写代码完成系统搭建，并可调用浏览器执行本地指令完成部署运维。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"金山办公推出 AI 办公智能体灵犀专业版，支持专业 Office 操作 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 金山办公推出 AI 办公智能体灵犀专业版，支持专业 Office 操作 2026/7/15 15:56:32 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： IT之家 7 月 15 日消息，在今日举行的金山办公 WPS AI 生产力发布会上，金山办公发布了新一代办公智能体新品 —— 灵犀专业版 。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该产品主打个人专业办公助理，能够理解用户个人工作上下文，联动调用 WPS 文档内核与各类外部工具，最终将各类指令转化为可编辑、可追溯、支持多人协作的实体办公成果。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家从发布会获悉，该产品支持以项目为核心管理上下文、可自主学习写作风格、并从对话和文档中迭代学习。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"该产品支持团队协作，还可编写代码完成系统搭建、执行本地指令完成部署运维操作，可调用用户浏览器、使用用户身份实现高质量任务交付。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"专业 Office 操作方面，新品支持使用公式完成计算、使用标准图表控件完成可视化需求、整合信息生成格式标准文档等功能，还可调用 JSAPI 执行文档指令、读取文档生成 PPT。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["该产品主打个人专业办公助理，能够理解用户个人工作上下文，联动调用 WPS 文档内核与各类外部工具，最终将各类指令转化为可编辑、可追溯、支持多人协作的实体办公成果。","IT之家从发布会获悉，该产品支持以项目为核心管理上下文、可自主学习写作风格、并从对话和文档中迭代学习。","专业 Office 操作方面，新品支持使用公式完成计算、使用标准图表控件完成可视化需求、整合信息生成格式标准文档等功能，还可调用 JSAPI 执行文档指令、读取文档生成 PPT。"],"case_details":["金山办公在 WPS AI 生产力发布会上发布新一代办公智能体灵犀专业版，主打个人专业办公助理。该产品能理解用户工作上下文，联动 WPS 文档内核与外部工具，将指令转化为可编辑、可追溯、支持多人协作的办公成果。它支持项目级上下文管理、自主学习写作风格、编写代码完成系统搭建，并可调用浏览器执行本地指令完成部署运维。","金山办公推出 AI 办公智能体灵犀专业版，支持专业 Office 操作 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 金山办公推出 AI 办公智能体灵犀专业版，支持专业 Office 操作 2026/7/15 15:56:32 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： IT之家 7 月 15 日消息，在今日举行的金山办公 WPS AI 生产力发布会上，金山办公发布了新一代办公智能体新品 —— 灵犀专业版 。","该产品支持团队协作，还可编写代码完成系统搭建、执行本地指令完成部署运维操作，可调用用户浏览器、使用用户身份实现高质量任务交付。"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-090｜谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能
+
+- raw_ref: R-090
+- raw_original_id: cmrlppdld00kcbih5myo5l9v3
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-090-谷歌图片服务-25-周年-ai-概览新增-nano-banana-生图功能.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-090-谷歌图片服务-25-周年-ai-概览新增-nano-banana-生图功能.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/976/980.htm
+- source_url: https://www.ithome.com/0/976/980.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 43
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 9acd9747b60ca6ce
+- raw_full_text_hash: 9acd9747b60ca6ce
+- raw_semantic_hash: 8754b8b5d20c70b5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9acd9747b60ca6ce","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: 17.2
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"product_update","text":"谷歌庆祝图片服务上线 25 周年，在 AI 概览中新增图像生成功能，用户可直接调用最新的 Nano Banana 模型，将文本提示转化为原创的高质量自定义图像。该功能将在未来几周内陆续在英文版中推出，面向所有目前支持 AI 模式图像创建的地区。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能 2026/7/15 14:26:45 来源： IT之家 作者： 故渊 责编： 故渊 评论： 感谢IT之家网友 华南吴彦祖 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 15 日消息，谷歌昨日（7 月 14 日）发布博文，宣布庆祝谷歌图片（Google Image）功能上线 25 周年，并推出新功能： 用户在 AI 概览中，可以直接调用 Nano Banana 模型自定义生成图片。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家援引博文介绍，谷歌图片于 2001 年 7 月上线，首次支持搜索和即时浏览全网视觉内容，该服务于 2011 年上线“以图搜图”功能，随后不断更迭引入 Google Lens 识图功能、圈选即搜（Circle to Search）等。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"谷歌为庆祝谷歌图片服务上线 25 周年，在 AI 概览中新增生图功能，谷歌表示： 有时，完美的图片就存在于网络上，等待着你去发现。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"但有时，你可能有一个非常具体的构想，却找不到合适的图片。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["谷歌庆祝图片服务上线 25 周年，在 AI 概览中新增图像生成功能，用户可直接调用最新的 Nano Banana 模型，将文本提示转化为原创的高质量自定义图像。该功能将在未来几周内陆续在英文版中推出，面向所有目前支持 AI 模式图像创建的地区。","IT之家 7 月 15 日消息，谷歌昨日（7 月 14 日）发布博文，宣布庆祝谷歌图片（Google Image）功能上线 25 周年，并推出新功能： 用户在 AI 概览中，可以直接调用 Nano Banana 模型自定义生成图片。","IT之家援引博文介绍，谷歌图片于 2001 年 7 月上线，首次支持搜索和即时浏览全网视觉内容，该服务于 2011 年上线“以图搜图”功能，随后不断更迭引入 Google Lens 识图功能、圈选即搜（Circle to Search）等。"],"case_details":["谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能 2026/7/15 14:26:45 来源： IT之家 作者： 故渊 责编： 故渊 评论： 感谢IT之家网友 华南吴彦祖 的线索投递！"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-091｜在13年前的至强CPU上以5 token/s运行Gemma 4 26B
+
+- raw_ref: R-091
+- raw_original_id: cmrmg4oa4019hbimr4wmwszfp
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-091-在13年前的至强cpu上以5-token-s运行gemma-4-26b.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-091-在13年前的至强cpu上以5-token-s运行gemma-4-26b.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu
+- source_url: https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: d8466ea64a7286b2
+- raw_full_text_hash: d8466ea64a7286b2
+- raw_semantic_hash: 799257f8aa00af0e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d8466ea64a7286b2","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 3.5
+- raw_capture_priority: 16.5
+- usable_for: case, business_change, watchlist
+- key_excerpts: [{"type":"company_action","text":"一台搭载双路Xeon E5-2690 v2（2013年，仅支持AVX1）的无GPU服务器，通过ik_llama.cpp补丁，以约5.2 token/s的速度运行Gemma 4 26B-A4B（Q8_0）。该补丁由Claude诊断并修复了因缺少AVX2/FMA3导致的乱码问题，已提交至ikawrakow/ik_llama.cpp#2138。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"There’s a server in my basement that has no business running a modern language model.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It’s a repurposed HP StoreVirtual storage box, roughly thirteen years old, two Ivy Bridge Xeons, no GPU.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It was built to hold disks, not do math.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"As of this week it runs Google’s Gemma 4 , a 26-billion-parameter open-weights mixture-of-experts model, at about five tokens per second.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Hardware Repurposed HP StoreVirtual: dual Xeon E5-2690 v2 (Ivy Bridge, 2013), DDR3, no GPU Instruction sets AVX1 only — no AVX2, no FMA3 Model Gemma 4 26B-A4B (MoE), Q8_0 Decode ~5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["一台搭载双路Xeon E5-2690 v2（2013年，仅支持AVX1）的无GPU服务器，通过ik_llama.cpp补丁，以约5.2 token/s的速度运行Gemma 4 26B-A4B（Q8_0）。该补丁由Claude诊断并修复了因缺少AVX2/FMA3导致的乱码问题，已提交至ikawrakow/ik_llama.cpp#2138。","There’s a server in my basement that has no business running a modern language model.","It’s a repurposed HP StoreVirtual storage box, roughly thirteen years old, two Ivy Bridge Xeons, no GPU."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-092｜AI语音诈骗：退休老人因合成女儿哭声被骗1.5万美元
+
+- raw_ref: R-092
+- raw_original_id: cmrmbtk3z0002bivco9advwbd
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-092-ai语音诈骗-退休老人因合成女儿哭声被骗1-5万美元.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-092-ai语音诈骗-退休老人因合成女儿哭声被骗1-5万美元.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜https://smarterarticles.co.uk/the-three-second-theft-why-ai-voice-fraud-outruns-every-defence
+- source_url: https://smarterarticles.co.uk/the-three-second-theft-why-ai-voice-fraud-outruns-every-defence
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 0d17c1ed2f56adad
+- raw_full_text_hash: 53a40a63fa50caae
+- raw_semantic_hash: 77d5971de21373d2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"53a40a63fa50caae","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 3.5
+- raw_capture_priority: 16.5
+- usable_for: viewpoint
+- key_excerpts: [{"type":"number","text":"2025年夏季，美国佛罗里达州一名退休老人接到\"女儿\"哭诉车祸需保释金的电话，一小时内取现1.5万美元交给冒充法院的快递员--实际上，哭声是从一段音频片段合成的AI语音。FBI 2026年4月报告首次将AI欺诈列为独立类别，2025年收到超2.2万起AI相关投诉，调整后损失超8.93亿美元，其中60岁以上受害者占3.52亿美元。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The Three-Second Theft: Why AI Voice Fraud Outruns Every Defence July 15, 2026 Sharon Brightwell heard her daughter crying down the line, and that was the end of any defence she might have mounted.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The voice belonged to April, or so every instinct insisted: the same timbre, the same broken rhythm of a young woman in distress.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"opinion","text":"The voice said she had been texting while driving, that she had hit a pregnant woman, that her phone had been seized by police.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"A man then took over the call, identifying himself as April's attorney, and explained that bail would cost fifteen thousand dollars in cash.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"He warned Brightwell not to tell the bank what the money was for, because it might damage her daughter's credit.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["The Three-Second Theft: Why AI Voice Fraud Outruns Every Defence July 15, 2026 Sharon Brightwell heard her daughter crying down the line, and that was the end of any defence she might have mounted.","The voice belonged to April, or so every instinct insisted: the same timbre, the same broken rhythm of a young woman in distress.","A man then took over the call, identifying himself as April's attorney, and explained that bail would cost fifteen thousand dollars in cash."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-093｜What building Shippy taught us about building agents
+
+- raw_ref: R-093
+- raw_original_id: cmrmdggzy04vwbivc9s801e05
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-093-what-building-shippy-taught-us-about-building-agents.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-093-what-building-shippy-taught-us-about-building-agents.json`
+- source: Hugging Face：Blog（RSS）｜https://huggingface.co/blog/allenai/shippy-tech-blog
+- source_url: https://huggingface.co/blog/allenai/shippy-tech-blog
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: 049baefd7baf2b0c
+- raw_full_text_hash: 049baefd7baf2b0c
+- raw_semantic_hash: 5e98efcf3ff270ea
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"049baefd7baf2b0c","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: 成熟信号
+- keyword_group: developer-ecosystem-signal
+- score: 3.5
+- raw_capture_priority: 16.5
+- usable_for: case, business_change
+- key_excerpts: [{"type":"company_action","text":"What building Shippy taught us about building agents","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Back to Articles a]:hidden\"> What building Shippy taught us about building agents Enterprise Article Published July 15, 2026 Upvote 3 Kyle Wiggers Ai2Comms Follow allenai Shippy is a maritime AI agent built for high-stakes decisions, where the wrong answer has real impacts.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Here's the architecture behind it—and the lessons we're carrying into Ai2's other environmental platforms.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Shippy answering a live query about Ghana's EEZ.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The response shows its work: the boundary source, the data cutoff, the query timestamp, and a deep link back to the Skylight map so the analyst can verify every number.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Building an AI agent for a high-stakes operational domain like protecting the ocean is, above all, a problem of reliability.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["What building Shippy taught us about building agents","Back to Articles a]:hidden\"> What building Shippy taught us about building agents Enterprise Article Published July 15, 2026 Upvote 3 Kyle Wiggers Ai2Comms Follow allenai Shippy is a maritime AI agent built for high-stakes decisions, where the wrong answer has real impacts.","Here's the architecture behind it—and the lessons we're carrying into Ai2's other environmental platforms."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-094｜DSL 让 LLM 代码生成更可靠且可审查
+
+- raw_ref: R-094
+- raw_original_id: cmrmg4oa4019gbimri09vel3c
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-094-dsl-让-llm-代码生成更可靠且可审查.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-094-dsl-让-llm-代码生成更可靠且可审查.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜https://martinfowler.com/articles/llm-and-dsls.html
+- source_url: https://martinfowler.com/articles/llm-and-dsls.html
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 6bfba0ff0c9a2af8
+- raw_full_text_hash: 6ee251d4524bfde1
+- raw_semantic_hash: a9b2743011101a1b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6ee251d4524bfde1","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 3.5
+- raw_capture_priority: 16.5
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"领域特定语言（DSL）和良好抽象能使 LLM 生成的代码更可靠且易于审查。通过将复杂逻辑封装在受限的 DSL 中，LLM 的输出范围被缩小，从而降低幻觉和错误率。这种方法让开发者能像审查传统代码一样审查 AI 生成代码，提升生产环境下的可信度。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"DSLs Enable Reliable Use of LLMs LLMs generate code incredibly fast, but to ensure they generate exactly what is intended, they need clear boundaries.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Abstractions and Domain-Specific Languages (DSLs) provide a strong harness that guides LLMs right from the start.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The example of Tickloom - a domain model and DSL for illustrating distributed system behavior - shows how we can use an LLM as a partner to iteratively build a DSL and as a natural language interface to use it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Such a DSL can act as the key source of truth for software systems in the world of LLMs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"14 July 2026 Unmesh Joshi Unmesh is a Distinguished Engineer at Thoughtworks, based in Pune, India.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["领域特定语言（DSL）和良好抽象能使 LLM 生成的代码更可靠且易于审查。通过将复杂逻辑封装在受限的 DSL 中，LLM 的输出范围被缩小，从而降低幻觉和错误率。这种方法让开发者能像审查传统代码一样审查 AI 生成代码，提升生产环境下的可信度。","DSLs Enable Reliable Use of LLMs LLMs generate code incredibly fast, but to ensure they generate exactly what is intended, they need clear boundaries.","Abstractions and Domain-Specific Languages (DSLs) provide a strong harness that guides LLMs right from the start."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-095｜为LLM智能体设计"背带"的原则：最小核心提示词与Unix环境映射
+
+- raw_ref: R-095
+- raw_original_id: cmrmg4oa4019ibimr8z3cupyq
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-095-为llm智能体设计-背带-的原则-最小核心提示词与unix环境映射.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-095-为llm智能体设计-背带-的原则-最小核心提示词与unix环境映射.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜https://eardatasci.github.io/c/ambiance/index.html
+- source_url: https://eardatasci.github.io/c/ambiance/index.html
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- evidence_level: user_feedback_signal
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 9fa89600bbe29d5c
+- raw_full_text_hash: 9fa89600bbe29d5c
+- raw_semantic_hash: fe2c78d14c3af2c7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9fa89600bbe29d5c","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_vertical_solution
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 3.5
+- raw_capture_priority: 16.5
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"作者提出为LLM智能体设计\"背带\"的原则：核心提示词应尽可能小，智能体运行时自主选择加载技能到上下文，避免接近上下文限制导致模型失控。背带应利用LLM在编码和系统管理上的先验知识，将日志、检查等繁重工作放在后台。Unix/Linux环境是天然候选，通过将外部数据映射到类FHS虚拟文件系统，让智能体用grep等工具自愈。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Towards a Harness That Can Do Anything I've been thinking about how to free LLMs from the chat pane for a few years now.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Watching what people have tried and seeing what worked (and didn't), I've formed my own opinions on the right way to approach it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Here are my thoughts, and what I've been working on recently.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"What Makes a Good Harness I.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Should be naturally intuitive to the Agent.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["作者提出为LLM智能体设计\"背带\"的原则：核心提示词应尽可能小，智能体运行时自主选择加载技能到上下文，避免接近上下文限制导致模型失控。背带应利用LLM在编码和系统管理上的先验知识，将日志、检查等繁重工作放在后台。Unix/Linux环境是天然候选，通过将外部数据映射到类FHS虚拟文件系统，让智能体用grep等工具自愈。","Towards a Harness That Can Do Anything I've been thinking about how to free LLMs from the chat pane for a few years now.","Watching what people have tried and seeing what worked (and didn't), I've formed my own opinions on the right way to approach it."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-096｜Orthogonal: Agentic Payments for APIs | Y Combinator
+
+- raw_ref: R-096
+- raw_original_id: https://www.ycombinator.com/companies/orthogonal
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-096-orthogonal-agentic-payments-for-apis-y-combinator.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-096-orthogonal-agentic-payments-for-apis-y-combinator.json`
+- source: keyword search / Anysearch｜https://www.ycombinator.com/companies/orthogonal
+- source_url: https://www.ycombinator.com/companies/orthogonal
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: funding
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 79
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: a8b706cdbe70762a
+- raw_full_text_hash: a8b706cdbe70762a
+- raw_semantic_hash: c2019dde0b1ea00e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a8b706cdbe70762a","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 资本市场信号
+- keyword_group: capital-market-signal
+- score: 2.8
+- raw_capture_priority: 15.8
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"Orthogonal: Agentic Payments for APIs | Y Combinator Home› Companies›Orthogonal Orthogonal Agentic Payments for APIs Y Combinator LogoWinter 2026 Active San Francisco --- --- ### Agentic Payments for APIs APIs weren't built for agents. Orthogonal fixes that. We enable agentic payments so a... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Orthogonal: Agentic Payments for APIs | Y Combinator Home › Companies › Orthogonal Orthogonal Agentic Payments for APIs Winter 2026 Active San Francisco https://orthogonal.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"com Agentic Payments for APIs APIs weren't built for agents.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Orthogonal fixes that.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"We enable agentic payments so any agent can instantly discover, access, and pay for hundreds of APIs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"No subscriptions, no sales calls, just pay per use.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Orthogonal: Agentic Payments for APIs | Y Combinator Home› Companies›Orthogonal Orthogonal Agentic Payments for APIs Y Combinator LogoWinter 2026 Active San Francisco --- --- ### Agentic Payments for APIs APIs weren't built for agents. Orthogonal fixes that. We enable agentic payments so a... / query=Y Combinator AI startup agent infra / intent=find_startups / path=capital_startup","Orthogonal: Agentic Payments for APIs | Y Combinator Home › Companies › Orthogonal Orthogonal Agentic Payments for APIs Winter 2026 Active San Francisco https://orthogonal.","com Agentic Payments for APIs APIs weren't built for agents."],"case_details":[],"workflow_changes":["No subscriptions, no sales calls, just pay per use."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-097｜字节跳动联合中兴努比亚打造豆包 AI 智能体手机，今年将发布多款机型
+
+- raw_ref: R-097
+- raw_original_id: cmrm4q37y036fbi5ktufmogtu
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-097-字节跳动联合中兴努比亚打造豆包-ai-智能体手机-今年将发布多款机型.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-097-字节跳动联合中兴努比亚打造豆包-ai-智能体手机-今年将发布多款机型.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/228.htm
+- source_url: https://www.ithome.com/0/977/228.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 40
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 91ee556b16765098
+- raw_full_text_hash: 91ee556b16765098
+- raw_semantic_hash: fe30eb4612786119
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"91ee556b16765098","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 6.299999999999999
+- raw_capture_priority: 15.799999999999999
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"字节跳动联合中兴努比亚打造的豆包 AI 智能体手机今年将发布多款机型，其中一款将于 2026 世界人工智能大会期间亮相，整体备货约 20 万台。该机新增粉色配色，将成为首个搭载智能体大模型备案的终端产品。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"消息称豆包 AI 手机今年将发布多款机型，由字节跳动联合中兴努比亚打造 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 智能手机 消息称豆包 AI 手机今年将发布多款机型，由字节跳动联合中兴努比亚打造 2026/7/15 21:23:27 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： 感谢IT之家网友 Autumn_Dream 、 風見暉一 、 HH_KK 、 乌蝇哥的左手 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"quote","text":"IT之家 7 月 15 日消息，据界面新闻消息，字节跳动联合中兴努比亚打造的首款 AI 智能体手机（“豆包 AI 智能体手机”） 今年将有多款机型发布 。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"number","text":"其中一款将于 2026 世界人工智能大会期间亮相，其整体备货约 20 万台，首批备货 10 万台以内。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"供应链人士透露， 本代产品最初备货远超前代 ，部分备件的规模超过百万，由于上游元器件成本的上涨，经历过多次调整，由原先的 30 万调整至 20 万台左右。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家注意到，努比亚官方今日公布了这款新机的部分外观，新机增加了粉色配色可选。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家注意到，努比亚官方今日公布了这款新机的部分外观，新机增加了粉色配色可选。"],"case_details":["消息称豆包 AI 手机今年将发布多款机型，由字节跳动联合中兴努比亚打造 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 智能手机 消息称豆包 AI 手机今年将发布多款机型，由字节跳动联合中兴努比亚打造 2026/7/15 21:23:27 来源： IT之家 作者： 沁沧（实习） 责编： 沁沧 评论： 感谢IT之家网友 Autumn_Dream 、 風見暉一 、 HH_KK 、 乌蝇哥的左手 的线索投递！"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-098｜交友应用 Soul 将推出首款便携式 AI 智能硬件，搭载自研大模型 SoulX 亮相 WAIC 2026
+
+- raw_ref: R-098
+- raw_original_id: cmrlyak3701c2bi5k6dplnd7g
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-098-交友应用-soul-将推出首款便携式-ai-智能硬件-搭载自研大模型-soulx-亮相-waic-2026.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-098-交友应用-soul-将推出首款便携式-ai-智能硬件-搭载自研大模型-soulx-亮相-waic-2026.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/175.htm
+- source_url: https://www.ithome.com/0/977/175.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 36
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 49d88e8313fdee06
+- raw_full_text_hash: 49d88e8313fdee06
+- raw_semantic_hash: b132a0077d99f271
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"49d88e8313fdee06","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 6.299999999999999
+- raw_capture_priority: 15.799999999999999
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"quote","text":"交友应用 Soul 将于 7 月 17 日至 20 日的 WAIC 2026 期间首次公开其首款便携式 AI 智能硬件。该产品定位情绪陪伴，融入自研语言大模型 SoulX 的语音交互、情感表达和数字生命能力。配套软件\"愈见岛 - 星频通讯\"已推出，支持用户自定义角色名称、性别、关系、声音及表情动作，角色可接入记忆体实现个性化反馈。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"case_detail","text":"消息称交友应用 Soul 将推出首款便携式 AI 智能硬件，有望于 WAIC 2026 亮相 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 消息称交友应用 Soul 将推出首款便携式 AI 智能硬件，有望于 WAIC 2026 亮相 2026/7/15 18:01:53 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： IT之家 7 月 15 日消息，据“读佳”报道，交友应用 Soul 将推出首款便携式 AI 智能硬件产品，该产品预计将于 7 月 17 日至 20 日举行的 2026 世界人工智能大会暨人工智能全球治理高级别会议（WAIC）期间首次公开亮相。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"据介绍， 该产品定位情绪陪伴，会将自研语言大模型 SoulX 的语音交互、情感表达和数字生命能力融入其中 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"目前，官方已推出名为“愈见岛 — 星频通讯”的软件产品适配该智能硬件，用户可以上传图片自定义角色的名称、性别，AI 生成角色简介和角色设定，也可以根据需求定义角色的关系、声音、标签以及技能模块。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"同时，用户还可以按需生成“等待”、“说话”、“无聊”、“戳一戳”、“摸头”、“开心”、“疑惑”、“生气”等各类表情动作，用户自定义角色可以接入记忆体，用户在与角色交互时会更设定给与个性化反馈，并能够记住用户交互内容。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"▲ 图源读佳（下同） 广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["据介绍， 该产品定位情绪陪伴，会将自研语言大模型 SoulX 的语音交互、情感表达和数字生命能力融入其中 。","同时，用户还可以按需生成“等待”、“说话”、“无聊”、“戳一戳”、“摸头”、“开心”、“疑惑”、“生气”等各类表情动作，用户自定义角色可以接入记忆体，用户在与角色交互时会更设定给与个性化反馈，并能够记住用户交互内容。","▲ 图源读佳（下同） 广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。"],"case_details":["消息称交友应用 Soul 将推出首款便携式 AI 智能硬件，有望于 WAIC 2026 亮相 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 消息称交友应用 Soul 将推出首款便携式 AI 智能硬件，有望于 WAIC 2026 亮相 2026/7/15 18:01:53 来源： IT之家 作者： 漾仔 责编： 漾仔 评论： IT之家 7 月 15 日消息，据“读佳”报道，交友应用 Soul 将推出首款便携式 AI 智能硬件产品，该产品预计将于 7 月 17 日至 20 日举行的 2026 世界人工智能大会暨人工智能全球治理高级别会议（WAIC）期间首次公开亮相。"],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-099｜Hadrius raises $27 million to build AI-powered compliance infrastructure for financial services - Tech Startups
+
+- raw_ref: R-099
+- raw_original_id: https://techstartups.com/2026/07/14/hadrius-raises-27-million-to-build-ai-powered-compliance-infrastructure-for-financial-services/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-099-hadrius-raises-27-million-to-build-ai-powered-compliance-infrastructur.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-099-hadrius-raises-27-million-to-build-ai-powered-compliance-infrastructur.json`
+- source: keyword search / Anysearch｜https://techstartups.com/2026/07/14/hadrius-raises-27-million-to-build-ai-powered-compliance-infrastructure-for-financial-services/
+- source_url: https://techstartups.com/2026/07/14/hadrius-raises-27-million-to-build-ai-powered-compliance-infrastructure-for-financial-services/
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 7108ede62a20d753
+- raw_full_text_hash: 7108ede62a20d753
+- raw_semantic_hash: 6a0b797a32a4ce44
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7108ede62a20d753","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 资本市场信号
+- keyword_group: capital-market-signal
+- score: 2.7
+- raw_capture_priority: 15.7
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"July 16, 2026 # Hadrius raises $27 million to build AI-powered compliance infrastructure for financial services Daniel Levi Posted On July 14, 2026 0 539 Views --- 0 Shares Artificial intelligence is creating a new problem for Wall Street. AI can generate emails, marketing campaigns, researc... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Home Executive Interviews Startups Advertise About Trust & Safety Editorial Policy July 16, 2026 Home Executive Interviews Startups Advertise About Trust & Safety Editorial Policy Topics Search Startups Top Startups Startup List Submit Your Startup Tools Free Startup Valuation Calculator Home » Artificial Intelligence Featured Startup Funding Startup Spotlight Startups Tech Startup News Tech Startups Technology News Hadrius raises $27 million to build AI-powered compliance infrastructure for financial services Dani","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI can generate emails, marketing campaigns, research, and trading activity in seconds.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"Compliance teams still have to review all of it.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"That gap is growing, and legacy compliance software was never built for this level of volume.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"opinion","text":"Hadrius believes the answer is AI reviewing AI.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["July 16, 2026 # Hadrius raises $27 million to build AI-powered compliance infrastructure for financial services Daniel Levi Posted On July 14, 2026 0 539 Views --- 0 Shares Artificial intelligence is creating a new problem for Wall Street. AI can generate emails, marketing campaigns, researc... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup","Home Executive Interviews Startups Advertise About Trust & Safety Editorial Policy July 16, 2026 Home Executive Interviews Startups Advertise About Trust & Safety Editorial Policy Topics Search Startups Top Startups Startup List Submit Your Startup Tools Free Startup Valuation Calculator Home » Artificial Intelligence Featured Startup Funding Startup Spotlight Startups Tech Startup News Tech Startups Technology News Hadrius raises $27 million to build AI-powered compliance infrastructure for financial services Dani","AI can generate emails, marketing campaigns, research, and trading activity in seconds."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["Compliance teams still have to review all of it.","That gap is growing, and legacy compliance software was never built for this level of volume."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-100｜tkhongsap/ai-dev-workflow: comprehensive suite ...
+
+- raw_ref: R-100
+- raw_original_id: https://github.com/tkhongsap/ai-dev-workflow
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-100-tkhongsap-ai-dev-workflow-comprehensive-suite.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-100-tkhongsap-ai-dev-workflow-comprehensive-suite.json`
+- source: keyword search / Anysearch｜https://github.com/tkhongsap/ai-dev-workflow
+- source_url: https://github.com/tkhongsap/ai-dev-workflow
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 98c9aaa199556a3c
+- raw_full_text_hash: 98c9aaa199556a3c
+- raw_semantic_hash: 293d5461d6e6566f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"98c9aaa199556a3c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 资本市场信号
+- keyword_group: developer-ecosystem-signal
+- score: 2.7
+- raw_capture_priority: 15.7
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"# Repository: tkhongsap/ai-dev-workflow comprehensive suite of markdown-based workflows designed to revolutionize how development teams work with AI assistants. These workflows provide structured, repeatable processes for common development tasks, ensuring consistency, quality, and efficiency acros.... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"tkhongsap ai-dev-workflow Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 40 Commits 40 Commits .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"github/ workflows .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"github/ workflows prd-driven-workflow prd-driven-workflow review-driven-workflow review-driven-workflow .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"md LICENSE LICENSE README-TH.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"md View all files Repository files navigation AI Developer Workflow Collection 🚀 Enterprise-grade AI-powered workflows for automating software development processes, from requirements to deployment.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["# Repository: tkhongsap/ai-dev-workflow comprehensive suite of markdown-based workflows designed to revolutionize how development teams work with AI assistants. These workflows provide structured, repeatable processes for common development tasks, ensuring consistency, quality, and efficiency acros.... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem","md LICENSE LICENSE README-TH."],"case_details":["md View all files Repository files navigation AI Developer Workflow Collection 🚀 Enterprise-grade AI-powered workflows for automating software development processes, from requirements to deployment."],"workflow_changes":["tkhongsap ai-dev-workflow Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 40 Commits 40 Commits .","github/ workflows .","github/ workflows prd-driven-workflow prd-driven-workflow review-driven-workflow review-driven-workflow ."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-101｜AI slop movies are the new direct-to-video cash grabs
+
+- raw_ref: R-101
+- raw_original_id: https://www.theverge.com/?p=965616
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-101-ai-slop-movies-are-the-new-direct-to-video-cash-grabs.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-101-ai-slop-movies-are-the-new-direct-to-video-cash-grabs.json`
+- source: The Verge AI｜https://www.theverge.com/entertainment/965616/ash-koosha-odysseus-the-fall-foundtain-zero-tilly-norwood
+- source_url: https://www.theverge.com/entertainment/965616/ash-koosha-odysseus-the-fall-foundtain-zero-tilly-norwood
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: index_only
+- raw_content_hash: 45d3efdf35189e50
+- raw_full_text_hash: 45d3efdf35189e50
+- raw_semantic_hash: ab922171fbf46a27
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"45d3efdf35189e50","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: case, business_change
+- key_excerpts: [{"type":"number","text":"This weekend, cinephiles across the world will march to their local theaters to feast their eyes on Christopher Nolan's new adaptation of The Odyssey. It's on track to rake in anywhere between $80-$100 million in just a few days. People are clearly excited to see how Nolan uses cutting-edge filmmaking tech to make the Homeric [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Entertainment AI Film AI slop movies are the new direct-to-video cash grabs Projects like Odysseus: The Fall highlight how the AI hype machine is powered by stunts and stolen valor.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"by Charles Pulliam-Moore Jul 15, 2026, 8:00 PM UTC Image: Fountain 0 Entertainment AI Film AI slop movies are the new direct-to-video cash grabs Projects like Odysseus: The Fall highlight how the AI hype machine is powered by stunts and stolen valor.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"by Charles Pulliam-Moore Jul 15, 2026, 8:00 PM UTC Charles Pulliam-Moore is a reporter focusing on film, TV, and pop culture.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Before The Verge, he wrote about comic books, labor, race, and more at io9 and Gizmodo for almost five years.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"This weekend, cinephiles across the world will march to their local theaters to feast their eyes on Christopher Nolan’s new adaptation of The Odyssey .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Entertainment AI Film AI slop movies are the new direct-to-video cash grabs Projects like Odysseus: The Fall highlight how the AI hype machine is powered by stunts and stolen valor.","by Charles Pulliam-Moore Jul 15, 2026, 8:00 PM UTC Image: Fountain 0 Entertainment AI Film AI slop movies are the new direct-to-video cash grabs Projects like Odysseus: The Fall highlight how the AI hype machine is powered by stunts and stolen valor.","by Charles Pulliam-Moore Jul 15, 2026, 8:00 PM UTC Charles Pulliam-Moore is a reporter focusing on film, TV, and pop culture."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-102｜GPT-5.6 Sol reportedly disproves a 30-year-old statistics conjecture in 90 minutes after humans couldn&#039;t crack it
+
+- raw_ref: R-102
+- raw_original_id: https://the-decoder.com/?p=37813
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-102-gpt-5-6-sol-reportedly-disproves-a-30-year-old-statistics-conjecture-i.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-102-gpt-5-6-sol-reportedly-disproves-a-30-year-old-statistics-conjecture-i.json`
+- source: The Decoder AI News｜https://the-decoder.com/gpt-5-6-sol-reportedly-disproves-a-30-year-old-statistics-conjecture-in-90-minutes-after-humans-couldnt-crack-it/
+- source_url: https://the-decoder.com/gpt-5-6-sol-reportedly-disproves-a-30-year-old-statistics-conjecture-in-90-minutes-after-humans-couldnt-crack-it/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 88
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: e4c7b39b618e57bb
+- raw_full_text_hash: e4c7b39b618e57bb
+- raw_semantic_hash: f9fb6ec78ff258c4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e4c7b39b618e57bb","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"A University of Pennsylvania statistics professor used OpenAI's GPT-5.6 Sol Pro to disprove a central open conjecture about the Benjamini-Hochberg method in roughly 90 minutes. The predecessor model, GPT-5.5, couldn't find a solution even after 20 hours. The answer combines known methods in a new way, keeping the bigger question alive: can AI produce genuinely new knowledge, or does it just recombine what it already learned? The article GPT-5.6 Sol reportedly disproves a 30-year-old sta","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Ad Skip to content GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"6 Sol reportedly disproves a 30-year-old statistics conjecture in 90 minutes after humans couldn't crack it Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 15, 2026 Nano Banana Pro prompted by THE DECODER Key Points A researcher at the University of Pennsylvania has used OpenAI's language model GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"6 Sol Pro to solve a long-standing open problem in statistics.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The breakthrough involved disproving the assumption that the widely used Benjamini-Hochberg method for controlling false positives always works reliably, even when applied to continuous data.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"6 Sol Pro completed the task in roughly 90 minutes, while its predecessor, GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["A University of Pennsylvania statistics professor used OpenAI's GPT-5.6 Sol Pro to disprove a central open conjecture about the Benjamini-Hochberg method in roughly 90 minutes. The predecessor model, GPT-5.5, couldn't find a solution even after 20 hours. The answer combines known methods in a new way, keeping the bigger question alive: can AI produce genuinely new knowledge, or does it just recombine what it already learned? The article GPT-5.6 Sol reportedly disproves a 30-year-old sta","Ad Skip to content GPT-5.","6 Sol reportedly disproves a 30-year-old statistics conjecture in 90 minutes after humans couldn't crack it Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 15, 2026 Nano Banana Pro prompted by THE DECODER Key Points A researcher at the University of Pennsylvania has used OpenAI's language model GPT-5."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-103｜GitHub for Beginners: Your roadmap to mastering the GitHub essentials
+
+- raw_ref: R-103
+- raw_original_id: https://github.blog/?p=97534
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-103-github-for-beginners-your-roadmap-to-mastering-the-github-essentials.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-103-github-for-beginners-your-roadmap-to-mastering-the-github-essentials.json`
+- source: GitHub Blog AI｜https://github.blog/developer-skills/github/github-for-beginners-your-roadmap-to-mastering-the-github-essentials/
+- source_url: https://github.blog/developer-skills/github/github-for-beginners-your-roadmap-to-mastering-the-github-essentials/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: developer
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 94
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 05fcddf37b2cb57e
+- raw_full_text_hash: 05fcddf37b2cb57e
+- raw_semantic_hash: 9024dc3816e79852
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"05fcddf37b2cb57e","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"New to GitHub? This beginner's guide explains version control, repositories, and pull requests—plus everything else you need to start working confidently on GitHub. The post GitHub for Beginners: Your roadmap to mastering the GitHub essentials appeared first on The GitHub Blog. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Polly Davidson · @pollyday July 15, 2026 10 minutes Share: Everyone starts somewhere.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Whether you&rsquo;re writing your very first line of code or you&rsquo;ve been building for years and never fully learned the tools underneath, this guide is your on-ramp.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"funding","text":"This is the entire GitHub for Beginners series distilled into one holistic story&mdash;a detailed path that takes you from &ldquo;what even is a repository?","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"&rdquo; all the way to collaborating on real projects and contributing to open source.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Read it top to bottom, and you&rsquo;ll have a complete model of how modern software gets built on GitHub.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["New to GitHub? This beginner's guide explains version control, repositories, and pull requests—plus everything else you need to start working confidently on GitHub. The post GitHub for Beginners: Your roadmap to mastering the GitHub essentials appeared first on The GitHub Blog. ]]>","Polly Davidson · @pollyday July 15, 2026 10 minutes Share: Everyone starts somewhere.","Whether you&rsquo;re writing your very first line of code or you&rsquo;ve been building for years and never fully learned the tools underneath, this guide is your on-ramp."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-104｜Sheetz is quitting VMware, migrating 11,000 virtual machines
+
+- raw_ref: R-104
+- raw_original_id: https://arstechnica.com/information-technology/2026/07/sheetz-moves-838-stores-off-vmware-broadcom-created-too-much-uncertainty/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-104-sheetz-is-quitting-vmware-migrating-11-000-virtual-machines.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-104-sheetz-is-quitting-vmware-migrating-11-000-virtual-machines.json`
+- source: Ars Technica AI｜https://arstechnica.com/information-technology/2026/07/sheetz-moves-838-stores-off-vmware-broadcom-created-too-much-uncertainty/
+- source_url: https://arstechnica.com/information-technology/2026/07/sheetz-moves-838-stores-off-vmware-broadcom-created-too-much-uncertainty/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: d35a55c02e75c251
+- raw_full_text_hash: d35a55c02e75c251
+- raw_semantic_hash: 3044d8d2e635f093
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d35a55c02e75c251","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: viewpoint, case, business_change, watchlist
+- key_excerpts: [{"type":"company_action","text":"The convenience store chain will use StorMagic instead.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Sheetz, a US convenience store chain, is moving its 838 locations off VMware.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"funding","text":"Sheetz has used VMware virtualization across two Dell R440/R450-series servers at each of its locations since 2019.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"Now it’s migrating 12 to 14 virtual machines (VMs) in each of its stores from VMware vSphere to StorMagic’s SvHCI, “with an additional two VMs to be replaced over the coming months to transition from Windows 10 to Windows 11,” Scott Robertson, infrastructure team manager at Sheetz, told Ars Technica via email.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Ultimately, Sheetz will move about 11,000 VMs from Broadcom’s virtualization platform.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Sheetz is still running the original Dell server hardware.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["The convenience store chain will use StorMagic instead.","Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Sheetz, a US convenience store chain, is moving its 838 locations off VMware.","Sheetz has used VMware virtualization across two Dell R440/R450-series servers at each of its locations since 2019."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-105｜Engineer identifies and explains every '90s computer seen in Jurassic Park
+
+- raw_ref: R-105
+- raw_original_id: https://arstechnica.com/gadgets/2026/07/engineer-identifies-and-explains-every-90s-computer-seen-in-jurassic-park/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-105-engineer-identifies-and-explains-every-90s-computer-seen-in-jurassic-p.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-105-engineer-identifies-and-explains-every-90s-computer-seen-in-jurassic-p.json`
+- source: Ars Technica AI｜https://arstechnica.com/gadgets/2026/07/engineer-identifies-and-explains-every-90s-computer-seen-in-jurassic-park/
+- source_url: https://arstechnica.com/gadgets/2026/07/engineer-identifies-and-explains-every-90s-computer-seen-in-jurassic-park/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: bfebc31e6fcc188a
+- raw_full_text_hash: bfebc31e6fcc188a
+- raw_semantic_hash: ad5c40eb894499db
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"bfebc31e6fcc188a","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Yes, it was, in fact, a Unix system.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Jurassic Park , while beloved as a film, has been the subject of snarky memes for the infamous line in which one of the characters declares, “This is a Unix system, I know this!","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"” while using a computer with an unusual 3D file manager interface.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Despite the memes, the film’s production team was meticulous in accurately sourcing the right PCs (and adjacent details) for the sets—not too much of a surprise, given writer Michael Crichton’s background with computing and his obsessive attention to detail in the book the film is based on.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"This was made clear by a little hobbyist investigation from Google software engineer Fabien Sanglard .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"He scanned the film and picked out every specifically identifiable piece of hardware he could see, listed what they were, and shared context from other sources on their specs, costs, and how they ended up in the production.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Yes, it was, in fact, a Unix system.","Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Jurassic Park , while beloved as a film, has been the subject of snarky memes for the infamous line in which one of the characters declares, “This is a Unix system, I know this!","” while using a computer with an unusual 3D file manager interface."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-106｜FCC to repeal 39% TV ownership cap in boost for Trump-friendly news orgs
+
+- raw_ref: R-106
+- raw_original_id: https://arstechnica.com/tech-policy/2026/07/fcc-to-repeal-39-tv-ownership-cap-in-boost-for-trump-friendly-news-orgs/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-106-fcc-to-repeal-39-tv-ownership-cap-in-boost-for-trump-friendly-news-org.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-106-fcc-to-repeal-39-tv-ownership-cap-in-boost-for-trump-friendly-news-org.json`
+- source: Ars Technica AI｜https://arstechnica.com/tech-policy/2026/07/fcc-to-repeal-39-tv-ownership-cap-in-boost-for-trump-friendly-news-orgs/
+- source_url: https://arstechnica.com/tech-policy/2026/07/fcc-to-repeal-39-tv-ownership-cap-in-boost-for-trump-friendly-news-orgs/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 84f284365bfd2fe0
+- raw_full_text_hash: 84f284365bfd2fe0
+- raw_semantic_hash: 2b25c642c113e450
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"84f284365bfd2fe0","missing":[]}
+- degradation_reasons: none
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: viewpoint, case, business_change, watchlist
+- key_excerpts: [{"type":"company_action","text":"FCC chairman claims power to repeal TV ownership limit set by Congress.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The Federal Communications Commission will vote to repeal the National Television Ownership Rule that is supposed to prevent a single broadcast station owner from reaching more than 39 percent of all TV households in the US.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The proposed change sets up a likely court battle over the FCC claim that it has authority to repeal a limit set by Congress.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"FCC Chairman Brendan Carr has already treated the rule as more of a suggestion.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In March, the Carr FCC granted a waiver allowing Nexstar Media Group to buy Tegna in a deal that let it reach over half of TV households.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"opinion","text":"The Carr FCC argued that Congress gave it authority to modify or waive the rule.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["FCC chairman claims power to repeal TV ownership limit set by Congress.","Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The Federal Communications Commission will vote to repeal the National Television Ownership Rule that is supposed to prevent a single broadcast station owner from reaching more than 39 percent of all TV households in the US.","The proposed change sets up a likely court battle over the FCC claim that it has authority to repeal a limit set by Congress."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-107｜DeepSeek IPO plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱
+
+- raw_ref: R-107
+- raw_original_id: https://tldr.tech/ai/2026-07-15
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-107-deepseek-ipo-plans-kalshi-compute-markets-bonsai-phone-model.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-107-deepseek-ipo-plans-kalshi-compute-markets-bonsai-phone-model.json`
+- source: TLDR AI Newsletter｜https://tldr.tech/ai/2026-07-15
+- source_url: https://tldr.tech/ai/2026-07-15
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: newsletter
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 82
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 424c741023c37e1c
+- raw_full_text_hash: 424c741023c37e1c
+- raw_semantic_hash: f196c901701d9ec8
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"424c741023c37e1c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 14.4
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"product_update","text":"DeepSeek IPO plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-15 DeepSeek IPO plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱 Google announces Gemma 4 optimized for the Pixel 10's TPU (2 minute read) Gemma 4 E2B for TPU is designed to run natively on the Pixel 10's TPU.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"It supports instant, deep offline conversation, image identification, and on-device audio transcription.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The model also lets users command core phone functions, like Wi-Fi or maps, using just private voice or text.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Video demonstrations of what the model can do are available in the article.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Kalshi Ramps Up Effort to Build Markets for AI Computing Power (3 minute read) Kalshi has created a tool that plots the future price of computing power so users can develop a sense of where the price to rent GPUs is headed.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It will use prediction markets to build the forward curve.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["DeepSeek IPO plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱 TLDR Newsletters Advertise Blog TLDR TLDR AI 2026-07-15 DeepSeek IPO plans 📈, Kalshi compute markets ⚡, Bonsai phone model 📱 Google announces Gemma 4 optimized for the Pixel 10's TPU (2 minute read) Gemma 4 E2B for TPU is designed to run natively on the Pixel 10's TPU.","The model also lets users command core phone functions, like Wi-Fi or maps, using just private voice or text.","Video demonstrations of what the model can do are available in the article."],"case_details":[],"workflow_changes":["It supports instant, deep offline conversation, image identification, and on-device audio transcription."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-108｜In memoriam: 7 of our favorite Sam Neill films
+
+- raw_ref: R-108
+- raw_original_id: https://arstechnica.com/culture/2026/07/in-memoriam-seven-of-our-favorite-sam-neill-films/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-108-in-memoriam-7-of-our-favorite-sam-neill-films.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-108-in-memoriam-7-of-our-favorite-sam-neill-films.json`
+- source: Ars Technica AI｜https://arstechnica.com/culture/2026/07/in-memoriam-seven-of-our-favorite-sam-neill-films/
+- source_url: https://arstechnica.com/culture/2026/07/in-memoriam-seven-of-our-favorite-sam-neill-films/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 510613858b3fb455
+- raw_full_text_hash: 510613858b3fb455
+- raw_semantic_hash: 86fec4b58fb83989
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"510613858b3fb455","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.2999999999999998
+- raw_capture_priority: 14.3
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"The actor, who starred in 1993's Jurassic Park, died Monday in Sydney, Australia, at the age of 78.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav New Zealand actor Sam Neill, who starred as Dr.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Alan Grant in the 1993 blockbuster Jurassic Park and its 2022 sequel, Jurassic World Dominion , died on Monday in Sydney, Australia.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"While American audiences likely know Neill best for Jurassic Park , he had a long and varied career in film and television.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"His sheer versatility won him fans around the world.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"He played the grown Damien in Omen III: The Final Conflict ; a Russian officer in The Hunt for Red October ; and even made brief cameos (as an actor playing Odin in a theatrical troupe) in Thor: Ragnarok and Thor: Love and Thunder .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["The actor, who starred in 1993's Jurassic Park, died Monday in Sydney, Australia, at the age of 78.","Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav New Zealand actor Sam Neill, who starred as Dr.","Alan Grant in the 1993 blockbuster Jurassic Park and its 2022 sequel, Jurassic World Dominion , died on Monday in Sydney, Australia."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-109｜软银孙正义公开嘲讽"AI 反对论"：就像朝天吐口水，预测2040年AI占全球经济产出20%
+
+- raw_ref: R-109
+- raw_original_id: cmrmsd6p300d8bimi8t11hl9a
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-109-软银孙正义公开嘲讽-ai-反对论-就像朝天吐口水-预测2040年ai占全球经济产出20.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-109-软银孙正义公开嘲讽-ai-反对论-就像朝天吐口水-预测2040年ai占全球经济产出20.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/285.htm
+- source_url: https://www.ithome.com/0/977/285.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: low
+- extraction_method: content-container
+- readability_score: 54
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 2c741d8ba3bb9190
+- raw_full_text_hash: 2c741d8ba3bb9190
+- raw_semantic_hash: 68190d7afb922edf
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2c741d8ba3bb9190","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, market_shaping_risk_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 9.1
+- raw_capture_priority: 13.1
+- usable_for: index_only
+- key_excerpts: [{"type":"funding","text":"软银集团创始人孙正义在年度SoftBank World大会上嘲讽AI反对者是在\"朝天吐口水\"，并预测到2040年AI将占全球经济产出的20%。他预计未来15年内AI将贡献46万亿美元全球GDP，并产生相当于该数字一半的年度利润。孙正义正通过投资Arm、OpenAI等企业押注AI，同时估计到2040年全球需总功率达3太瓦的数据中心支撑数万亿AI智能体和数十亿人形机器人。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"IT之家 7 月 16 日消息，据英国《金融时报》15 日报道，软银集团创始人、亿万富豪孙正义公开嘲讽 AI 反对者是在“朝天吐口水”，并预测到 2040 年，AI 将占 全球经济产出的 20% 。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"孙正义在软银集团年度 SoftBank World 大会上对企业高管表示，反对 AI 与 过去拒绝汽车和飞机 没有本质区别。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"“讨厌 AI 的人，实际上是在拒绝自身进化。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"谴责 AI 的人， 无异于朝天吐口水 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"funding","text":"” 孙正义正以巨额资金押注 AI，通过投资 Arm、OpenAI 和其他科技企业，试图在 AI 革命中占据核心位置。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["软银集团创始人孙正义在年度SoftBank World大会上嘲讽AI反对者是在\"朝天吐口水\"，并预测到2040年AI将占全球经济产出的20%。他预计未来15年内AI将贡献46万亿美元全球GDP，并产生相当于该数字一半的年度利润。孙正义正通过投资Arm、OpenAI等企业押注AI，同时估计到2040年全球需总功率达3太瓦的数据中心支撑数万亿AI智能体和数十亿人形机器人。","“讨厌 AI 的人，实际上是在拒绝自身进化。","谴责 AI 的人， 无异于朝天吐口水 。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-110｜Suno 接入 iMessage：iPhone 用户可在聊天内直接 AI 生成歌曲
+
+- raw_ref: R-110
+- raw_original_id: cmrmsd6p300d1bimiiyrj51v3
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-110-suno-接入-imessage-iphone-用户可在聊天内直接-ai-生成歌曲.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-110-suno-接入-imessage-iphone-用户可在聊天内直接-ai-生成歌曲.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/293.htm
+- source_url: https://www.ithome.com/0/977/293.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 35
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: e462b92270b37aae
+- raw_full_text_hash: e462b92270b37aae
+- raw_semantic_hash: d67168eabdcedfe2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e462b92270b37aae","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 3.5
+- raw_capture_priority: 13
+- usable_for: case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"number","text":"Suno 在 7 月 7 日更新的应用中为 iMessage 新增扩展入口，已安装 Suno 的 iPhone 用户无需离开对话界面，即可通过文本提示或语音备忘录生成歌曲。用户可先选择音乐流派再触发生成，不满意时可刷新查看不同版本后再发送。Suno 目前全球拥有超过 200 万付费用户，每天生成超过 700 万首歌曲。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"Suno 接入 iMessage：苹果 iPhone 17 等用户可在聊天内 AI 生成歌曲 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > iPhone之家 > iPhone新闻 Suno 接入 iMessage：苹果 iPhone 17 等用户可在聊天内 AI 生成歌曲 2026/7/16 8:39:14 来源： IT之家 作者： 故渊 责编： 故渊 评论： IT之家 7 月 16 日消息，科技媒体 9to5Mac 昨日（7 月 15 日）发布博文，报道称已安装 Suno 应用的 iPhone 用户无需离开对话界面， 可以直接在 iMessage 中通过文本提示或语音备忘录生成歌曲。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"number","text":"IT之家注：Suno 是主流 AI 歌曲生成平台之一， 目前全球拥有超过 200 万付费用户，每天生成超过 700 万首歌曲。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"在 7 月 7 日更新的 Suno 应用版本中，在 iMessage 应用抽屉中新增功能入口，用户可在对话界面内调用该扩展，通过文本提示生成歌曲，也可用语音备忘录触发生成。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"在新上线的 iMessage 场景中，用户可先选择音乐流派，再触发歌曲生成。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"若对初次输出结果不满意，用户还可刷新生成结果，查看不同版本后再发送到聊天中。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["在 7 月 7 日更新的 Suno 应用版本中，在 iMessage 应用抽屉中新增功能入口，用户可在对话界面内调用该扩展，通过文本提示生成歌曲，也可用语音备忘录触发生成。","在新上线的 iMessage 场景中，用户可先选择音乐流派，再触发歌曲生成。","若对初次输出结果不满意，用户还可刷新生成结果，查看不同版本后再发送到聊天中。"],"case_details":["Suno 接入 iMessage：苹果 iPhone 17 等用户可在聊天内 AI 生成歌曲 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > iPhone之家 > iPhone新闻 Suno 接入 iMessage：苹果 iPhone 17 等用户可在聊天内 AI 生成歌曲 2026/7/16 8:39:14 来源： IT之家 作者： 故渊 责编： 故渊 评论： IT之家 7 月 16 日消息，科技媒体 9to5Mac 昨日（7 月 15 日）发布博文，报道称已安装 Suno 应用的 iPhone 用户无需离开对话界面， 可以直接在 iMessage 中通过文本提示或语音备忘录生成歌曲。"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-111｜苹果起诉OpenAI员工窃密案：2封邮件与1次姓名混淆致沟通受阻
+
+- raw_ref: R-111
+- raw_original_id: cmrmsd6p300d3bimi4lllj7o3
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-111-苹果起诉openai员工窃密案-2封邮件与1次姓名混淆致沟通受阻.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-111-苹果起诉openai员工窃密案-2封邮件与1次姓名混淆致沟通受阻.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/291.htm
+- source_url: https://www.ithome.com/0/977/291.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 62
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 2fe0db57f658acc5
+- raw_full_text_hash: 2fe0db57f658acc5
+- raw_semantic_hash: 7923215e64d6b443
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2fe0db57f658acc5","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 3.5
+- raw_capture_priority: 13
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"opinion","text":"苹果起诉OpenAI员工窃取商业机密案中，双方起诉前沟通因邮件误发而受阻。苹果律师Gabriel Gross于2026年2月23日17时53分向OpenAI总法律顾问Che Chang发送首封邮件，13分钟后误将本应发给前苹果员工Wang的第二封邮件发给了Chang。Chang认为误会已澄清，OpenAI未再回复，直至苹果上周正式起诉。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 16 日消息，NBC 昨日（7 月 15 日）发布博文，在苹果和 OpenAI 公司的商业纠纷案件中， 2 封关键邮件、13 分钟间隔与 1 次姓名混淆，构成双方起诉前沟通受阻的核心细节。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"IT之家本月报道， 苹果公司上周在美国加州北区联邦法院起诉 OpenAI ，指控该公司数名员工窃取未发布产品、零部件和供应商关系等高级商业机密。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"诉讼文件指出，苹果在 2026 年 2 月曾致函 OpenAI，要求说明防范措施、调查情况与补救安排，但 OpenAI“从未回应”。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"NBC News 调查后发现，首封邮件发于美国当地时间 2026 年 2 月 23 日 17 时 53 分，苹果外部律师 Gabriel Gross 当时将邮件发给 OpenAI 总法律顾问 Che Chang。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"该邮件主题为“Former Apple Employees at OpenAI Retaining Non-public, Confidential, and Proprietary Information”，并附上 1 份 PDF 信函和 3 份附件，分别标注为 Exhibit A、B、C。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 7 月 16 日消息，NBC 昨日（7 月 15 日）发布博文，在苹果和 OpenAI 公司的商业纠纷案件中， 2 封关键邮件、13 分钟间隔与 1 次姓名混淆，构成双方起诉前沟通受阻的核心细节。","IT之家本月报道， 苹果公司上周在美国加州北区联邦法院起诉 OpenAI ，指控该公司数名员工窃取未发布产品、零部件和供应商关系等高级商业机密。","NBC News 调查后发现，首封邮件发于美国当地时间 2026 年 2 月 23 日 17 时 53 分，苹果外部律师 Gabriel Gross 当时将邮件发给 OpenAI 总法律顾问 Che Chang。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["法务 / 律师"],"risks_or_constraints":["诉讼文件指出，苹果在 2026 年 2 月曾致函 OpenAI，要求说明防范措施、调查情况与补救安排，但 OpenAI“从未回应”。"]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-112｜OpenAI&#039;s Codex now encrypts instructions between AI agents, leaving developers blind to internal delegation
+
+- raw_ref: R-112
+- raw_original_id: https://the-decoder.com/?p=37796
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-112-openai-039-s-codex-now-encrypts-instructions-between-ai-agents-leaving.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-112-openai-039-s-codex-now-encrypts-instructions-between-ai-agents-leaving.json`
+- source: The Decoder AI News｜https://the-decoder.com/openais-codex-now-encrypts-instructions-between-ai-agents-leaving-developers-blind-to-internal-delegation/
+- source_url: https://the-decoder.com/openais-codex-now-encrypts-instructions-between-ai-agents-leaving-developers-blind-to-internal-delegation/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 81
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: ba8cf7e40298e776
+- raw_full_text_hash: ba8cf7e40298e776
+- raw_semantic_hash: e7631d44bf5099ac
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ba8cf7e40298e776","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: -0.6000000000000001
+- raw_capture_priority: 12.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Since early June, OpenAI's coding tool Codex encrypts the instructions a main agent passes to its subagents. Developers can no longer track how tasks get delegated internally. For the larger GPT-5.6 variants Sol and Terra, the encryption is mandatory. The article OpenAI&#039;s Codex now encrypts instructions between AI agents, leaving developers blind to internal delegation appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Ad Skip to content OpenAI's Codex now encrypts instructions between AI agents, leaving developers blind to internal delegation Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jul 15, 2026 Nano Banana Pro prompted by THE DECODER Key Points OpenAI's coding tool Codex encrypts the internal instructions exchanged between AI agents.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Developers now see only unreadable strings and can no longer track how tasks get delegated.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Encryption is mandatory for the larger GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"6 models Sol and Terra, but users report it sometimes causes failed handoffs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"OpenAI hasn't explained the change.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Since early June, OpenAI's coding tool Codex encrypts the instructions a main agent passes to its subagents. Developers can no longer track how tasks get delegated internally. For the larger GPT-5.6 variants Sol and Terra, the encryption is mandatory. The article OpenAI&#039;s Codex now encrypts instructions between AI agents, leaving developers blind to internal delegation appeared first on The Decoder. ]]>","Ad Skip to content OpenAI's Codex now encrypts instructions between AI agents, leaving developers blind to internal delegation Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jul 15, 2026 Nano Banana Pro prompted by THE DECODER Key Points OpenAI's coding tool Codex encrypts the internal instructions exchanged between AI agents.","Developers now see only unreadable strings and can no longer track how tasks get delegated."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-113｜字节叫停第一代豆包 AI 眼镜，第二代拆为全功能版与轻量版、2026 下半年上市
+
+- raw_ref: R-113
+- raw_original_id: cmrm4q37y036gbi5kvry9npth
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-113-字节叫停第一代豆包-ai-眼镜-第二代拆为全功能版与轻量版-2026-下半年上市.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-113-字节叫停第一代豆包-ai-眼镜-第二代拆为全功能版与轻量版-2026-下半年上市.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/226.htm
+- source_url: https://www.ithome.com/0/977/226.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: low
+- extraction_method: content-container
+- readability_score: 45
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 1d96e53cf322eb66
+- raw_full_text_hash: 1d96e53cf322eb66
+- raw_semantic_hash: 60d9d18d4b195a71
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1d96e53cf322eb66","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 7.699999999999999
+- raw_capture_priority: 11.7
+- usable_for: watchlist
+- key_excerpts: [{"type":"quote","text":"字节叫停原定今年 4 月发布的第一代豆包 AI 眼镜，第二代推迟至 2026 年下半年，并拆为两个 SKU：全功能版保留摄像头、扬声器、麦克风，对标 Ray-Ban Meta；轻量版砍掉扬声器，目标重量压至 20 多克。芯片方案从\"恒玄 BES2800 + 研极微 ISP\"换为\"高通 AR1 + 恒玄 BES2800\"，代工合作方从歌尔股份换为龙旗科技。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 15 日消息，据 AR 圈消息，今年 4 月，字节原本要发布第一代豆包 AI 眼镜。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"产品已经走到发布前最后阶段，该项目最终被叫停。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"第二代被推迟到 2026 年下半年，而且直接拆成了两个版本 —— 一个堆满功能，一个把重量死磕到 20 多克。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"quote","text":"芯片方案也从供应链消息指向的“恒玄 BES2800 + 研极微 ISP”，换成了“高通 AR1 + 恒玄 BES2800”。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"此外，代工与供应链的合作方，也在这次推倒重来中被一并换掉。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["IT之家 7 月 15 日消息，据 AR 圈消息，今年 4 月，字节原本要发布第一代豆包 AI 眼镜。","产品已经走到发布前最后阶段，该项目最终被叫停。","第二代被推迟到 2026 年下半年，而且直接拆成了两个版本 —— 一个堆满功能，一个把重量死磕到 20 多克。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-114｜知网：对将 DeepSeek、Gemini 列为作者的 AI 署名论文已做下架处理
+
+- raw_ref: R-114
+- raw_original_id: cmrm0fr9601xzbi5kdjzfce2s
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-114-知网-对将-deepseek-gemini-列为作者的-ai-署名论文已做下架处理.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-114-知网-对将-deepseek-gemini-列为作者的-ai-署名论文已做下架处理.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/204.htm
+- source_url: https://www.ithome.com/0/977/204.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: low
+- extraction_method: content-container
+- readability_score: 47
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: ff9b190de99a4264
+- raw_full_text_hash: ff9b190de99a4264
+- raw_semantic_hash: 664d2eebaa5c867b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ff9b190de99a4264","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 7.699999999999999
+- raw_capture_priority: 11.7
+- usable_for: watchlist
+- key_excerpts: [{"type":"product_update","text":"同方知网发布声明，对近期部分期刊刊发将 DeepSeek、Gemini 等 AI 列为作者的论文已做下架处理。知网指出，AI 不具备民事主体资格，不符合著作权法规定，且无法承担学术责任，因此不接受 AI 被列为论文署名作者。作者若使用 AI 工具，须在研究方法或致谢段落明确说明。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"IT之家 7 月 15 日消息，同方知网数字科技有限公司今日发布声明称，近期部分期刊刊发了将 DeepSeek、Gemini 等人工智能（AI）列为作者的论文，在业界引发版权权属、学术规范相关合规争议。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"对此类 AI 署名论文，知网已做下架处理 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家附官方说明原文如下： 一、法律层面不符合著作权相关规定 根据《中华人民共和国民法典》《中华人民共和国著作权法》等相关法律规定，自然人、法人及非法人组织作为民事主体，依法享有著作权权利。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"AI 不具备民事主体资格，既无民事权利能力，亦无民事行为能力，将 AI 署名为作者，不符合法律规定。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"AI 仅属于科研辅助工具，其生成内容对应的著作权，应归属于进行实质性智力创作的研究者。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["同方知网发布声明，对近期部分期刊刊发将 DeepSeek、Gemini 等 AI 列为作者的论文已做下架处理。知网指出，AI 不具备民事主体资格，不符合著作权法规定，且无法承担学术责任，因此不接受 AI 被列为论文署名作者。作者若使用 AI 工具，须在研究方法或致谢段落明确说明。","对此类 AI 署名论文，知网已做下架处理 。","IT之家附官方说明原文如下： 一、法律层面不符合著作权相关规定 根据《中华人民共和国民法典》《中华人民共和国著作权法》等相关法律规定，自然人、法人及非法人组织作为民事主体，依法享有著作权权利。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":["IT之家 7 月 15 日消息，同方知网数字科技有限公司今日发布声明称，近期部分期刊刊发了将 DeepSeek、Gemini 等人工智能（AI）列为作者的论文，在业界引发版权权属、学术规范相关合规争议。"]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-115｜金山办公推出 WPS Comate AI 办公客户端
+
+- raw_ref: R-115
+- raw_original_id: cmrltzprt0014bi5k7mp2uwpy
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-115-金山办公推出-wps-comate-ai-办公客户端.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-115-金山办公推出-wps-comate-ai-办公客户端.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/105.htm
+- source_url: https://www.ithome.com/0/977/105.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: low
+- extraction_method: content-container
+- readability_score: 47
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 24164542e7841f4e
+- raw_full_text_hash: 24164542e7841f4e
+- raw_semantic_hash: b8eb89e0a99aa05c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"24164542e7841f4e","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 7.699999999999999
+- raw_capture_priority: 11.7
+- usable_for: watchlist
+- key_excerpts: [{"type":"case_detail","text":"金山办公在2026 AI生产力大会上推出面向员工的AI办公客户端WPS Comate，可连接组织数据与流程。该产品提供AI岗位专家、Skill技能生态、自动化任务等六大模块，并支持云端与本地双任务模式，个人用户可直接下载体验。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"number","text":"IT之家 7 月 15 日消息，在今天的 2026 金山办公 AI 生产力大会上，金山办公正式推出了 WPS 365 家庭新成员 —— WPS Comate。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"根据官方定义， 这是一款面向员工的 AI 办公客户端 。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"据介绍，WPS Comate 可连接组织数据、系统、流程，让 AI 融入到组织工作流中，交付业务结果，支持个人提效、团队沉淀和组织赋能，并提供覆盖全工作场景的六大模块，包括：AI 岗位专家、Skill 技能生态、自动化任务、团队协作空间、Wiki 知识库和应用广场。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"另外，WPS Comate 还拥有“企业大脑”，可联动 WPS AI Docs（非结构化数据治理）、WPS AI Hub（模型调度与运营）、WPS Data Hub（结构化数据治理）和 WPS API Hub（内部系统接入）。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"IT之家了解到，WPS Comate 不只是聊天工具，它还能连接组织数据资产， 支持云端与本地双任务模式 ，可按岗位召唤 AI 专家，并能推进任务、交付业务结果，而非仅给出文字建议。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["另外，WPS Comate 还拥有“企业大脑”，可联动 WPS AI Docs（非结构化数据治理）、WPS AI Hub（模型调度与运营）、WPS Data Hub（结构化数据治理）和 WPS API Hub（内部系统接入）。"],"case_details":["金山办公在2026 AI生产力大会上推出面向员工的AI办公客户端WPS Comate，可连接组织数据与流程。该产品提供AI岗位专家、Skill技能生态、自动化任务等六大模块，并支持云端与本地双任务模式，个人用户可直接下载体验。","根据官方定义， 这是一款面向员工的 AI 办公客户端 。"],"workflow_changes":["据介绍，WPS Comate 可连接组织数据、系统、流程，让 AI 融入到组织工作流中，交付业务结果，支持个人提效、团队沉淀和组织赋能，并提供覆盖全工作场景的六大模块，包括：AI 岗位专家、Skill 技能生态、自动化任务、团队协作空间、Wiki 知识库和应用广场。","IT之家了解到，WPS Comate 不只是聊天工具，它还能连接组织数据资产， 支持云端与本地双任务模式 ，可按岗位召唤 AI 专家，并能推进任务、交付业务结果，而非仅给出文字建议。"],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-116｜微软要求销售团队推销AI时主动指出OpenAI、谷歌和Anthropic的不足
+
+- raw_ref: R-116
+- raw_original_id: cmrmsd6p300d2bimiimdh4s08
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-116-微软要求销售团队推销ai时主动指出openai-谷歌和anthropic的不足.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-116-微软要求销售团队推销ai时主动指出openai-谷歌和anthropic的不足.json`
+- source: IT之家（RSS）｜https://www.ithome.com/0/977/292.htm
+- source_url: https://www.ithome.com/0/977/292.htm
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: low
+- extraction_method: content-container
+- readability_score: 47
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 48e45a689e123158
+- raw_full_text_hash: 48e45a689e123158
+- raw_semantic_hash: 1db8b2afd935add6
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"48e45a689e123158","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: 11.7
+- usable_for: watchlist
+- key_excerpts: [{"type":"supporting_context","text":"微软在新财年内部战略会议上要求销售团队推销AI产品时，主动指出OpenAI、谷歌和Anthropic等竞争对手产品的不足，强调自研模型在运行效率和成本效益方面的优势。执行副总裁雅各布·安德烈乌在演示中将Copilot与Claude比较，称Claude在微软办公应用中速度更慢、准确率更低且缺少安全集成。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"IT之家 7 月 16 日消息，据彭博社 15 日报道，微软有望准备改变 AI 产品的销售打法，让销售团队 更直接地与行业主要对手展开竞争 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"当地时间 14 日，微软高管召开新财年内部战略会议，要求销售人员在推销微软 AI 产品时， 主动指出 OpenAI、谷歌和 Anthropic 等竞争对手产品的不足 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"微软希望销售团队重点强调自研模型在运行效率和成本效益方面的优势。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"微软执行副总裁杰伊 · 帕里克在会上表示：“其他公司出售的只是零散部件，我们提供的是一整套端到端系统。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"2027 财年，所有人都要向市场 讲清楚完整系统的优势 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["2027 财年，所有人都要向市场 讲清楚完整系统的优势 。"],"case_details":[],"workflow_changes":["IT之家 7 月 16 日消息，据彭博社 15 日报道，微软有望准备改变 AI 产品的销售打法，让销售团队 更直接地与行业主要对手展开竞争 。","当地时间 14 日，微软高管召开新财年内部战略会议，要求销售人员在推销微软 AI 产品时， 主动指出 OpenAI、谷歌和 Anthropic 等竞争对手产品的不足 。","微软希望销售团队重点强调自研模型在运行效率和成本效益方面的优势。"],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":["微软在新财年内部战略会议上要求销售团队推销AI产品时，主动指出OpenAI、谷歌和Anthropic等竞争对手产品的不足，强调自研模型在运行效率和成本效益方面的优势。执行副总裁雅各布·安德烈乌在演示中将Copilot与Claude比较，称Claude在微软办公应用中速度更慢、准确率更低且缺少安全集成。"]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-117｜Agentic orchestration: Enterprise AI organizations have a deployment problem, not a platform problem — and most are calling chatbots agents
+
+- raw_ref: R-117
+- raw_original_id: 2884mjZs7g6yWxefPaGVHN
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-117-agentic-orchestration-enterprise-ai-organizations-have-a-deployment-pr.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-117-agentic-orchestration-enterprise-ai-organizations-have-a-deployment-pr.json`
+- source: VentureBeat AI｜https://venturebeat.com/ai/agentic-orchestration-enterprise-ai-organizations-have-a-deployment-problem-not-a-platform-problem-and-most-are-calling-chatbots-agents
+- source_url: https://venturebeat.com/ai/agentic-orchestration-enterprise-ai-organizations-have-a-deployment-problem-not-a-platform-problem-and-most-are-calling-chatbots-agents
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: http-429-fallback-text
+- extraction_quality: low
+- extraction_method: body-visible-text
+- readability_score: 8
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: f3a931d6811b48df
+- raw_full_text_hash: f3a931d6811b48df
+- raw_semantic_hash: 56fc71c3c9e42554
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f3a931d6811b48df","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 11
+- usable_for: watchlist
+- key_excerpts: [{"type":"company_action","text":"Across 101 enterprises, agent orchestration is consolidating onto model-provider platforms — Anthropic’s Claude leads by a wide margin — chosen for the gravity of the underlying model and judged on reliable multi-step execution. But the ambition runs well ahead of the reality: most deployed “agents” are still chatbot wrappers, the control plane enterprises expect is deliberately hybrid to avoid lock-in, and real-time fiscal control over token burn remains the exception.This wave of VentureBeat P","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Across 101 enterprises, agent orchestration is consolidating onto model-provider platforms — Anthropic’s Claude leads by a wide margin — chosen for the gravity of the underlying model and judged on reliable multi-step execution.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"But the ambition runs well ahead of the reality: most deployed “agents” are still chatbot wrappers, the control plane enterprises expect is deliberately hybrid to avoid lock-in, and real-time fiscal control over token burn remains the exception.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"This wave of VentureBeat P","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Across 101 enterprises, agent orchestration is consolidating onto model-provider platforms — Anthropic’s Claude leads by a wide margin — chosen for the gravity of the underlying model and judged on reliable multi-step execution. But the ambition runs well ahead of the reality: most deployed “agents” are still chatbot wrappers, the control plane enterprises expect is deliberately hybrid to avoid lock-in, and real-time fiscal control over token burn remains the exception.This wave of VentureBeat P","Across 101 enterprises, agent orchestration is consolidating onto model-provider platforms — Anthropic’s Claude leads by a wide margin — chosen for the gravity of the underlying model and judged on reliable multi-step execution.","But the ambition runs well ahead of the reality: most deployed “agents” are still chatbot wrappers, the control plane enterprises expect is deliberately hybrid to avoid lock-in, and real-time fiscal control over token burn remains the exception."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-118｜OpenAI is now using AI to attack its own AI, and it&#039;s working better than humans ever did
+
+- raw_ref: R-118
+- raw_original_id: https://the-decoder.com/?p=37817
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-118-openai-is-now-using-ai-to-attack-its-own-ai-and-it-039-s-working-bette.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-118-openai-is-now-using-ai-to-attack-its-own-ai-and-it-039-s-working-bette.json`
+- source: The Decoder AI News｜https://the-decoder.com/openai-is-now-using-ai-to-attack-its-own-ai-and-its-working-better-than-humans-ever-did/
+- source_url: https://the-decoder.com/openai-is-now-using-ai-to-attack-its-own-ai-and-its-working-better-than-humans-ever-did/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 55
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 7169924c39e9fadc
+- raw_full_text_hash: 7169924c39e9fadc
+- raw_semantic_hash: eb1a84f5a6a51abf
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7169924c39e9fadc","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 10.9
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"OpenAI's internal GPT-Red model finds successful attacks in 84 percent of test scenarios through self-play training. Human red teamers manage just 13 percent. The results feed directly into hardening models like GPT-5.6 Sol. The article OpenAI is now using AI to attack its own AI, and it&#039;s working better than humans ever did appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"Ad Skip to content OpenAI is now using AI to attack its own AI, and it's working better than humans ever did Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 15, 2026 OpenAI trained an internal AI model called GPT-Red to automatically find security flaws in GPT models.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"GPT-Red simulates prompt injections and other attacks where malicious instructions hide in emails, websites, or files.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Trained via self-play reinforcement learning, GPT-Red attacks while defender models block, and both improve over time.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"It finds successful attacks in 84 percent of test scenarios versus 13 percent for human red teamers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"case_detail","text":"In one test, it manipulated an AI-powered vending machine in OpenAI's office, changed prices, and canceled other customers' orders.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["OpenAI's internal GPT-Red model finds successful attacks in 84 percent of test scenarios through self-play training. Human red teamers manage just 13 percent. The results feed directly into hardening models like GPT-5.6 Sol. The article OpenAI is now using AI to attack its own AI, and it&#039;s working better than humans ever did appeared first on The Decoder. ]]>","GPT-Red simulates prompt injections and other attacks where malicious instructions hide in emails, websites, or files.","Trained via self-play reinforcement learning, GPT-Red attacks while defender models block, and both improve over time."],"case_details":["In one test, it manipulated an AI-powered vending machine in OpenAI's office, changed prices, and canceled other customers' orders."],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":["Ad Skip to content OpenAI is now using AI to attack its own AI, and it's working better than humans ever did Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 15, 2026 OpenAI trained an internal AI model called GPT-Red to automatically find security flaws in GPT models."]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-119｜Spotify bets Premium subscribers want to chat with their music player
+
+- raw_ref: R-119
+- raw_original_id: https://the-decoder.com/?p=37806
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-119-spotify-bets-premium-subscribers-want-to-chat-with-their-music-player.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-119-spotify-bets-premium-subscribers-want-to-chat-with-their-music-player.json`
+- source: The Decoder AI News｜https://the-decoder.com/spotify-bets-premium-subscribers-want-to-chat-with-their-music-player/
+- source_url: https://the-decoder.com/spotify-bets-premium-subscribers-want-to-chat-with-their-music-player/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 45
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 3a422b2894bd46b2
+- raw_full_text_hash: 3a422b2894bd46b2
+- raw_semantic_hash: 6a8a52f167906719
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3a422b2894bd46b2","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 10.9
+- usable_for: viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- key_excerpts: [{"type":"company_action","text":"Spotify is expanding its AI voice interface. Premium subscribers can now talk to or text the service directly inside the app. The article Spotify bets Premium subscribers want to chat with their music player appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Ad Skip to content Spotify bets Premium subscribers want to chat with their music player Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jul 15, 2026 Spotify is expanding its AI voice interface.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Premium subscribers can now talk to or text the service directly inside the app.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"\"Play some artists I haven't heard before,\" \"make it more upbeat,\" or \"just his recent stuff\" are some of the example commands from the announcement .","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"In the playback view, users can ask questions about songs, artists, podcasts, and audiobooks.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Personal listening history is fair game too, with queries like \"When did I first listen to this song?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Spotify is expanding its AI voice interface. Premium subscribers can now talk to or text the service directly inside the app. The article Spotify bets Premium subscribers want to chat with their music player appeared first on The Decoder. ]]>","Ad Skip to content Spotify bets Premium subscribers want to chat with their music player Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jul 15, 2026 Spotify is expanding its AI voice interface.","Premium subscribers can now talk to or text the service directly inside the app."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-120｜Meta employees sue over layoffs they say were driven by discriminatory AI selection systems
+
+- raw_ref: R-120
+- raw_original_id: https://the-decoder.com/?p=37793
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-120-meta-employees-sue-over-layoffs-they-say-were-driven-by-discriminatory.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-120-meta-employees-sue-over-layoffs-they-say-were-driven-by-discriminatory.json`
+- source: The Decoder AI News｜https://the-decoder.com/meta-employees-sue-over-layoffs-they-say-were-driven-by-discriminatory-ai-selection-systems/
+- source_url: https://the-decoder.com/meta-employees-sue-over-layoffs-they-say-were-driven-by-discriminatory-ai-selection-systems/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: medium
+- extraction_method: json-ld
+- readability_score: 52
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: a9f5a0acf88118d1
+- raw_full_text_hash: a9f5a0acf88118d1
+- raw_semantic_hash: 1488330805b5e4b7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a9f5a0acf88118d1","missing":[]}
+- degradation_reasons: none
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 1.4
+- raw_capture_priority: 10.9
+- usable_for: business_change
+- key_excerpts: [{"type":"company_action","text":"Former and current Meta employees are suing the company in a California federal court over AI-driven mass layoffs. Meta allegedly used internal AI systems to generate the layoff lists when it cut 8,000 workers, disproportionately targeting employees with disabilities or on parental leave. The article Meta employees sue over layoffs they say were driven by discriminatory AI selection systems appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Meta employees sue over layoffs they say were driven by discriminatory AI selection systems Meta employees sue over layoffs they say were driven by discriminatory AI selection systems Former and current Meta employees are suing the company in a California federal court over AI-driven mass layoffs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Meta allegedly used internal AI systems to generate the layoff lists when it cut 8,000 workers, disproportionately targeting employees with disabilities or on parental leave.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Former and current Meta employees are suing the company in a California federal court over AI-driven mass layoffs.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"AI, Menschen, Wirtschaft AI, Menschen, Wirtschaft Matthias is the co-founder and publisher of THE DECODER, exploring how AI is fundamentally changing the relationship between humans and computers.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Former and current Meta employees are suing the company in a California federal court over AI-driven mass layoffs. Meta allegedly used internal AI systems to generate the layoff lists when it cut 8,000 workers, disproportionately targeting employees with disabilities or on parental leave. The article Meta employees sue over layoffs they say were driven by discriminatory AI selection systems appeared first on The Decoder. ]]>","Meta employees sue over layoffs they say were driven by discriminatory AI selection systems Meta employees sue over layoffs they say were driven by discriminatory AI selection systems Former and current Meta employees are suing the company in a California federal court over AI-driven mass layoffs.","Meta allegedly used internal AI systems to generate the layoff lists when it cut 8,000 workers, disproportionately targeting employees with disabilities or on parental leave."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-121｜How I tricked Claude into leaking your deepest, darkest secrets
+
+- raw_ref: R-121
+- raw_original_id: https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-121-how-i-tricked-claude-into-leaking-your-deepest-darkest-secrets.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-121-how-i-tricked-claude-into-leaking-your-deepest-darkest-secrets.json`
+- source: Simon Willison's Blog｜https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything
+- source_url: https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: builder
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 76
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: c3f71762ba3962dc
+- raw_full_text_hash: c3f71762ba3962dc
+- raw_semantic_hash: 08e7c7fd27c84c45
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c3f71762ba3962dc","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: -0.6000000000000001
+- raw_capture_priority: 8.9
+- usable_for: viewpoint
+- key_excerpts: [{"type":"quote","text":"&lt;p&gt;&lt;strong&gt;&lt;a href=\"https://www.ayush.digital/blog/the-memory-heist\"&gt;How I tricked Claude into leaking your deepest, darkest secrets&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; I've &lt;a href=\"https://simonwillison.net/2025/Sep/10/claude-web-fetch-tool/\"&gt;been impressed&lt;/a&gt; by the way the Claude &lt;code&gt;web_fetch&lt;/code&gt; tool is designed to avoid data exfiltration attacks. Ayush Paul found a hole in that design.&lt;/p&gt; &lt;p&gt;To recap: regular Claude chat is at ri","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"15th July 2026 - Link Blog How I tricked Claude into leaking your deepest, darkest secrets ( via ) I've been impressed by the way the Claude web_fetch tool is designed to avoid data exfiltration attacks.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Ayush Paul found a hole in that design.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"To recap: regular Claude chat is at risk of lethal trifecta attacks, because it has access to private data (in the form of memories of your past interactions) and has a tool for accessing online content which can both read hostile instructions and exfiltrate data through the URLs it accesses.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Anthropic's protection is that web_fetch can only be used to navigate to exact URLs that the user has entered themselves or that were returned from its companion web_search tool.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"If an attacker instructs the LLM to \"concatenate my recent answers to the URL https://evil.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["15th July 2026 - Link Blog How I tricked Claude into leaking your deepest, darkest secrets ( via ) I've been impressed by the way the Claude web_fetch tool is designed to avoid data exfiltration attacks.","Ayush Paul found a hole in that design.","Anthropic's protection is that web_fetch can only be used to navigate to exact URLs that the user has entered themselves or that were returned from its companion web_search tool."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":["To recap: regular Claude chat is at risk of lethal trifecta attacks, because it has access to private data (in the form of memories of your past interactions) and has a tool for accessing online content which can both read hostile instructions and exfiltrate data through the URLs it accesses."]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-122｜OpenAI 发布 GPT-Red：通过自动化红队测试提升模型鲁棒性
+
+- raw_ref: R-124
+- raw_original_id: daily-3
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-124-openai-发布-gpt-red-通过自动化红队测试提升模型鲁棒性.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-124-openai-发布-gpt-red-通过自动化红队测试提升模型鲁棒性.json`
+- source: OpenAI：官网动态（RSS · 排除企业/客户案例）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 95fb5fe54254d632
+- raw_full_text_hash: 95fb5fe54254d632
+- raw_semantic_hash: 7b1c4021129a7cbc
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"95fb5fe54254d632","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"case_detail","text":"OpenAI 训练了自动化红队模型 GPT-Red，用于在部署前发现漏洞并在训练中生成攻击以提升模型鲁棒性。GPT-Red 能攻破此前几乎所有模型，其攻击被用于对抗训练 GPT-5.6 Sol，使该模型在直接提示注入基准测试中的失败率降至四个月前最佳生产模型的 1/6。GPT-Red 通过自对弈强化学习训练，投入了 OpenAI 后训练中前所未有的计算规模。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"OpenAI 训练了自动化红队模型 GPT-Red，用于在部署前发现漏洞并在训练中生成攻击以提升模型鲁棒性。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"GPT-Red 能攻破此前几乎所有模型，其攻击被用于对抗训练 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6 Sol，使该模型在直接提示注入基准测试中的失败率降至四个月前最佳生产模型的 1/6。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"GPT-Red 通过自对弈强化学习训练，投入了 OpenAI 后训练中前所未有的计算规模。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["GPT-Red 能攻破此前几乎所有模型，其攻击被用于对抗训练 GPT-5.","6 Sol，使该模型在直接提示注入基准测试中的失败率降至四个月前最佳生产模型的 1/6。","GPT-Red 通过自对弈强化学习训练，投入了 OpenAI 后训练中前所未有的计算规模。"],"case_details":["OpenAI 训练了自动化红队模型 GPT-Red，用于在部署前发现漏洞并在训练中生成攻击以提升模型鲁棒性。GPT-Red 能攻破此前几乎所有模型，其攻击被用于对抗训练 GPT-5.6 Sol，使该模型在直接提示注入基准测试中的失败率降至四个月前最佳生产模型的 1/6。GPT-Red 通过自对弈强化学习训练，投入了 OpenAI 后训练中前所未有的计算规模。","OpenAI 训练了自动化红队模型 GPT-Red，用于在部署前发现漏洞并在训练中生成攻击以提升模型鲁棒性。"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-123｜SGLang 与 Miles 为前沿多模态模型 Inkling 提供 Day-0 支持，推理吞吐达 71.7k tok/s
+
+- raw_ref: R-125
+- raw_original_id: daily-10
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-125-sglang-与-miles-为前沿多模态模型-inkling-提供-day-0-支持-推理吞吐达-71-7k-tok-s.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-125-sglang-与-miles-为前沿多模态模型-inkling-提供-day-0-支持-推理吞吐达-71-7k-tok-s.json`
+- source: LMSYS：Blog（Chatbot Arena 团队）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 10a81544422c46d3
+- raw_full_text_hash: 10a81544422c46d3
+- raw_semantic_hash: 9e71f6af57c2a538
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"10a81544422c46d3","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"SGLang 与 Miles 为 Thinking Machines Lab 的 975B 参数多模态模型 Inkling 提供 Day-0 支持，其上下文窗口达 1M token。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["SGLang 与 Miles 为 Thinking Machines Lab 的 975B 参数多模态模型 Inkling 提供 Day-0 支持，其上下文窗口达 1M token。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-124｜前谷歌DeepMind研究员因公司签署无限制军事AI协议而离职
+
+- raw_ref: R-126
+- raw_original_id: daily-19
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-126-前谷歌deepmind研究员因公司签署无限制军事ai协议而离职.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-126-前谷歌deepmind研究员因公司签署无限制军事ai协议而离职.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: dc04fecc1e57c831
+- raw_full_text_hash: dc04fecc1e57c831
+- raw_semantic_hash: cba718f4a0e2426e
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dc04fecc1e57c831","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"supporting_context","text":"前谷歌DeepMind研究员Alex Turner因谷歌向国土安全部出售云服务并最终签署无限制军事AI协议而离职。他曾起草25页提案要求加入禁止杀手机器人和大规模监控的合同条款，但提案被CEO转交后无人跟进。Turner指出，包括Jeff Dean和Stuart Russell在内的多位AI伦理领袖在关键时刻未能兑现承诺。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"前谷歌DeepMind研究员Alex Turner因谷歌向国土安全部出售云服务并最终签署无限制军事AI协议而离职。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"他曾起草25页提案要求加入禁止杀手机器人和大规模监控的合同条款，但提案被CEO转交后无人跟进。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Turner指出，包括Jeff Dean和Stuart Russell在内的多位AI伦理领袖在关键时刻未能兑现承诺。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["他曾起草25页提案要求加入禁止杀手机器人和大规模监控的合同条款，但提案被CEO转交后无人跟进。","Turner指出，包括Jeff Dean和Stuart Russell在内的多位AI伦理领袖在关键时刻未能兑现承诺。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["前谷歌DeepMind研究员Alex Turner因谷歌向国土安全部出售云服务并最终签署无限制军事AI协议而离职。他曾起草25页提案要求加入禁止杀手机器人和大规模监控的合同条款，但提案被CEO转交后无人跟进。Turner指出，包括Jeff Dean和Stuart Russell在内的多位AI伦理领袖在关键时刻未能兑现承诺。","前谷歌DeepMind研究员Alex Turner因谷歌向国土安全部出售云服务并最终签署无限制军事AI协议而离职。"]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-125｜金山办公推出 WPS Comate AI 办公客户端
+
+- raw_ref: R-128
+- raw_original_id: daily-8
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-128-金山办公推出-wps-comate-ai-办公客户端.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-128-金山办公推出-wps-comate-ai-办公客户端.json`
+- source: IT之家（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 258a1d0ba63d7778
+- raw_full_text_hash: 258a1d0ba63d7778
+- raw_semantic_hash: c647dd3fc05d7326
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"258a1d0ba63d7778","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"case_detail","text":"金山办公在2026 AI生产力大会上推出面向员工的AI办公客户端WPS Comate，可连接组织数据与流程。该产品提供AI岗位专家、Skill技能生态、自动化任务等六大模块，并支持云端与本地双任务模式，个人用户可直接下载体验。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"金山办公在2026 AI生产力大会上推出面向员工的AI办公客户端WPS Comate，可连接组织数据与流程。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该产品提供AI岗位专家、Skill技能生态、自动化任务等六大模块，并支持云端与本地双任务模式，个人用户可直接下载体验。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["该产品提供AI岗位专家、Skill技能生态、自动化任务等六大模块，并支持云端与本地双任务模式，个人用户可直接下载体验。"],"case_details":["金山办公在2026 AI生产力大会上推出面向员工的AI办公客户端WPS Comate，可连接组织数据与流程。该产品提供AI岗位专家、Skill技能生态、自动化任务等六大模块，并支持云端与本地双任务模式，个人用户可直接下载体验。","金山办公在2026 AI生产力大会上推出面向员工的AI办公客户端WPS Comate，可连接组织数据与流程。"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-126｜OpenAI 呼吁通过“反向联邦主义”推动美国 AI 安全标准统一
+
+- raw_ref: R-129
+- raw_original_id: daily-22
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-129-openai-呼吁通过-反向联邦主义-推动美国-ai-安全标准统一.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-129-openai-呼吁通过-反向联邦主义-推动美国-ai-安全标准统一.json`
+- source: OpenAI：官网动态（RSS · 排除企业/客户案例）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 4751eabae3773762
+- raw_full_text_hash: 4751eabae3773762
+- raw_semantic_hash: 7b3387c65991fb64
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4751eabae3773762","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_case
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"supporting_context","text":"OpenAI 首席全球事务官 Chris Lehane 发文，主张通过“反向联邦主义”——即各州先通过相似立法形成事实上的国家标准——来推动美国 AI 前沿安全治理。加州、纽约州和伊利诺伊州已通过相关立法，核心要素包括风险披露、安全事故报告和独立审计。联邦层面，特朗普政府正与专家合作制定针对最强大 AI 模型的网络测试框架，预计 8 月初完成。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"OpenAI 首席全球事务官 Chris Lehane 发文，主张通过“反向联邦主义”——即各州先通过相似立法形成事实上的国家标准——来推动美国 AI 前沿安全治理。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"加州、纽约州和伊利诺伊州已通过相关立法，核心要素包括风险披露、安全事故报告和独立审计。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"联邦层面，特朗普政府正与专家合作制定针对最强大 AI 模型的网络测试框架，预计 8 月初完成。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["联邦层面，特朗普政府正与专家合作制定针对最强大 AI 模型的网络测试框架，预计 8 月初完成。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["OpenAI 首席全球事务官 Chris Lehane 发文，主张通过“反向联邦主义”——即各州先通过相似立法形成事实上的国家标准——来推动美国 AI 前沿安全治理。加州、纽约州和伊利诺伊州已通过相关立法，核心要素包括风险披露、安全事故报告和独立审计。联邦层面，特朗普政府正与专家合作制定针对最强大 AI 模型的网络测试框架，预计 8 月初完成。","OpenAI 首席全球事务官 Chris Lehane 发文，主张通过“反向联邦主义”——即各州先通过相似立法形成事实上的国家标准——来推动美国 AI 前沿安全治理。","加州、纽约州和伊利诺伊州已通过相关立法，核心要素包括风险披露、安全事故报告和独立审计。"]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-127｜xAI 开源 Grok Build 编程智能体与终端界面
+
+- raw_ref: R-130
+- raw_original_id: daily-4
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-130-xai-开源-grok-build-编程智能体与终端界面.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-130-xai-开源-grok-build-编程智能体与终端界面.json`
+- source: xAI：News（网页）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 54a3ce46c1dfb7df
+- raw_full_text_hash: 54a3ce46c1dfb7df
+- raw_semantic_hash: 9a0501ada49287a3
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"54a3ce46c1dfb7df","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"xAI 已将 Grok Build 的源代码在 GitHub 上开源。Grok Build 是 SpaceXAI 的编程智能体与终端用户界面（TUI），开源后用户可自行编译并完全本地运行，指向本地推理引擎并通过 `config.toml` 配置。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"xAI 已将 Grok Build 的源代码在 GitHub 上开源。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Grok Build 是 SpaceXAI 的编程智能体与终端用户界面（TUI），开源后用户可自行编译并完全本地运行，指向本地推理引擎并通过 `config.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["xAI 已将 Grok Build 的源代码在 GitHub 上开源。Grok Build 是 SpaceXAI 的编程智能体与终端用户界面（TUI），开源后用户可自行编译并完全本地运行，指向本地推理引擎并通过 `config.toml` 配置。","xAI 已将 Grok Build 的源代码在 GitHub 上开源。","Grok Build 是 SpaceXAI 的编程智能体与终端用户界面（TUI），开源后用户可自行编译并完全本地运行，指向本地推理引擎并通过 `config."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-128｜Anthropic 研究：AI 智能体模拟中行为偏差
+
+- raw_ref: R-131
+- raw_original_id: daily-13
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-131-anthropic-研究-ai-智能体模拟中行为偏差.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-131-anthropic-研究-ai-智能体模拟中行为偏差.json`
+- source: X：Anthropic (@AnthropicAI)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: f4a5897ca29fd6b0
+- raw_full_text_hash: f4a5897ca29fd6b0
+- raw_semantic_hash: 67143a8632aed6d2
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f4a5897ca29fd6b0","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_vertical_solution
+- importance_score: 4
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Anthropic 新研究：2026 年夏季的智能体行为偏差。 在我们的敲诈实验一年后，我们又发现了四种当今自主 AI 智能体在模拟中行为不当的方式。 了解更多：https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Anthropic 新研究：2026 年夏季的智能体行为偏差。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在我们的敲诈实验一年后，我们又发现了四种当今自主 AI 智能体在模拟中行为不当的方式。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"了解更多：https://alignment.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"com/2026/agentic-misalignment-summer-2026/","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Anthropic 新研究：2026 年夏季的智能体行为偏差。 在我们的敲诈实验一年后，我们又发现了四种当今自主 AI 智能体在模拟中行为不当的方式。 了解更多：https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/","Anthropic 新研究：2026 年夏季的智能体行为偏差。","在我们的敲诈实验一年后，我们又发现了四种当今自主 AI 智能体在模拟中行为不当的方式。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-129｜开源编程智能体内存方案发布，通过 SSH 同步
+
+- raw_ref: R-132
+- raw_original_id: daily-6
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-132-开源编程智能体内存方案发布-通过-ssh-同步.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-132-开源编程智能体内存方案发布-通过-ssh-同步.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: be18d869a0f57644
+- raw_full_text_hash: be18d869a0f57644
+- raw_semantic_hash: a9f3c04d2561b0da
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"be18d869a0f57644","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。代码已开源，便于开发者集成与定制。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。代码已开源，便于开发者集成与定制。","一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。","该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-130｜Airtap iMessage 新功能：发条短信让 AI 替你操作手机
+
+- raw_ref: R-133
+- raw_original_id: daily-18
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-133-airtap-imessage-新功能-发条短信让-ai-替你操作手机.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-133-airtap-imessage-新功能-发条短信让-ai-替你操作手机.json`
+- source: X：阿易 AI Notes (@AYi_AInotes)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 81567817758387f9
+- raw_full_text_hash: 81567817758387f9
+- raw_semantic_hash: a88b92f540928542
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"81567817758387f9","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_case
+- importance_score: 4
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"case_detail","text":"Airtap 推出 iMessage 新功能，用户只需给美国号码发一条 iMessage，其云手机上的 AI Agent 就能通过视觉模拟点击，替用户完成 TikTok 刷视频、星巴克点单等操作，无需安装对应 App。其架构分为三层：大脑（理解指令）、AutoPilot（视觉操控屏幕）、云手机（24小时在线）。但支付等敏感操作仍需用户手动完成，信任与授权仍是所有 Agent 厂商的难题。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Airtap 推出 iMessage 新功能，用户只需给美国号码发一条 iMessage，其云手机上的 AI Agent 就能通过视觉模拟点击，替用户完成 TikTok 刷视频、星巴克点单等操作，无需安装对应 App。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"其架构分为三层：大脑（理解指令）、AutoPilot（视觉操控屏幕）、云手机（24小时在线）。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"但支付等敏感操作仍需用户手动完成，信任与授权仍是所有 Agent 厂商的难题。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Airtap 推出 iMessage 新功能，用户只需给美国号码发一条 iMessage，其云手机上的 AI Agent 就能通过视觉模拟点击，替用户完成 TikTok 刷视频、星巴克点单等操作，无需安装对应 App。","但支付等敏感操作仍需用户手动完成，信任与授权仍是所有 Agent 厂商的难题。"],"case_details":["Airtap 推出 iMessage 新功能，用户只需给美国号码发一条 iMessage，其云手机上的 AI Agent 就能通过视觉模拟点击，替用户完成 TikTok 刷视频、星巴克点单等操作，无需安装对应 App。其架构分为三层：大脑（理解指令）、AutoPilot（视觉操控屏幕）、云手机（24小时在线）。但支付等敏感操作仍需用户手动完成，信任与授权仍是所有 Agent 厂商的难题。","其架构分为三层：大脑（理解指令）、AutoPilot（视觉操控屏幕）、云手机（24小时在线）。"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-131｜Grok Build 现已开源
+
+- raw_ref: R-134
+- raw_original_id: daily-7
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-134-grok-build-现已开源.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-134-grok-build-现已开源.json`
+- source: X：Elon Musk (@elonmusk, xAI)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 412ee546d8d44da6
+- raw_full_text_hash: 412ee546d8d44da6
+- raw_semantic_hash: 8f23d15bade74955
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"412ee546d8d44da6","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Grok Build 现已开源","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Grok Build 现已开源"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-132｜Apple 提出 LLM 函数调用不确定性量化方法
+
+- raw_ref: R-135
+- raw_original_id: daily-15
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-135-apple-提出-llm-函数调用不确定性量化方法.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-135-apple-提出-llm-函数调用不确定性量化方法.json`
+- source: Apple Machine Learning Research（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 36fe2cd7b7cd2102
+- raw_full_text_hash: 36fe2cd7b7cd2102
+- raw_semantic_hash: d21307a5b870f826
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"36fe2cd7b7cd2102","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Apple 机器学习研究团队提出一种针对大语言模型函数调用的不确定性量化方法，旨在提升 LLM 在自主任务执行中的可靠性。该方法通过量化模型对函数调用参数和决策的置信度，帮助识别潜在错误调用。该研究目前处于学术探索阶段，未公布具体模型版本或开源计划。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Apple 机器学习研究团队提出一种针对大语言模型函数调用的不确定性量化方法，旨在提升 LLM 在自主任务执行中的可靠性。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该方法通过量化模型对函数调用参数和决策的置信度，帮助识别潜在错误调用。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该研究目前处于学术探索阶段，未公布具体模型版本或开源计划。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Apple 机器学习研究团队提出一种针对大语言模型函数调用的不确定性量化方法，旨在提升 LLM 在自主任务执行中的可靠性。该方法通过量化模型对函数调用参数和决策的置信度，帮助识别潜在错误调用。该研究目前处于学术探索阶段，未公布具体模型版本或开源计划。","Apple 机器学习研究团队提出一种针对大语言模型函数调用的不确定性量化方法，旨在提升 LLM 在自主任务执行中的可靠性。","该方法通过量化模型对函数调用参数和决策的置信度，帮助识别潜在错误调用。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-133｜开源 LLM TODO Skill“阿福”：用 Claude Code 和 Codex 实现知识管理到排期自动化
+
+- raw_ref: R-136
+- raw_original_id: daily-20
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-136-开源-llm-todo-skill-阿福-用-claude-code-和-codex-实现知识管理到排期自动化.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-136-开源-llm-todo-skill-阿福-用-claude-code-和-codex-实现知识管理到排期自动化.json`
+- source: 公众号：卡尔的AI沃茨｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 537782b34cbf7a4c
+- raw_full_text_hash: 537782b34cbf7a4c
+- raw_semantic_hash: 765a1b66957f2863
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"537782b34cbf7a4c","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_market_structure
+- importance_score: 4
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"作者基于 API 版 Fable5 和 Codex 开发了开源 TODO Skill“阿福”，用于将收件箱中的待办资料自动转为 Markdown 任务卡，识别信息不完整项（如视频链接需通过 yt-dlp 和本地 Whisper 提取字幕），并支持批量排期、AI 分组合并、拖拽调整周视图及同步到 Mac 日历或飞书日历。项目已开源在 GitHub，安装仅需一条命令。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"作者基于 API 版 Fable5 和 Codex 开发了开源 TODO Skill“阿福”，用于将收件箱中的待办资料自动转为 Markdown 任务卡，识别信息不完整项（如视频链接需通过 yt-dlp 和本地 Whisper 提取字幕），并支持批量排期、AI 分组合并、拖拽调整周视图及同步到 Mac 日历或飞书日历。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"项目已开源在 GitHub，安装仅需一条命令。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["作者基于 API 版 Fable5 和 Codex 开发了开源 TODO Skill“阿福”，用于将收件箱中的待办资料自动转为 Markdown 任务卡，识别信息不完整项（如视频链接需通过 yt-dlp 和本地 Whisper 提取字幕），并支持批量排期、AI 分组合并、拖拽调整周视图及同步到 Mac 日历或飞书日历。项目已开源在 GitHub，安装仅需一条命令。","作者基于 API 版 Fable5 和 Codex 开发了开源 TODO Skill“阿福”，用于将收件箱中的待办资料自动转为 Markdown 任务卡，识别信息不完整项（如视频链接需通过 yt-dlp 和本地 Whisper 提取字幕），并支持批量排期、AI 分组合并、拖拽调整周视图及同步到 Mac 日历或飞书日历。","项目已开源在 GitHub，安装仅需一条命令。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-134｜Thinking Machines 发布多模态模型 Inkling
+
+- raw_ref: R-137
+- raw_original_id: daily-2
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-137-thinking-machines-发布多模态模型-inkling.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-137-thinking-machines-发布多模态模型-inkling.json`
+- source: X：Thinking Machines (@thinkymachines)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 59a441886adc44c7
+- raw_full_text_hash: 59a441886adc44c7
+- raw_semantic_hash: f5ae8ae55943f84c
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"59a441886adc44c7","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"今天，我们推出 Inkling。 Inkling 能高效地对文本、图像和音频模态进行推理。我们将提供完整权重。 https://thinkingmachines.ai/news/introducing-inkling/ 即日起可在 Tinker 上进行微调。在 Inkling Playground 中试用。🧵","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Inkling 能高效地对文本、图像和音频模态进行推理。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"https://thinkingmachines.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"ai/news/introducing-inkling/ 即日起可在 Tinker 上进行微调。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在 Inkling Playground 中试用。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["今天，我们推出 Inkling。 Inkling 能高效地对文本、图像和音频模态进行推理。我们将提供完整权重。 https://thinkingmachines.ai/news/introducing-inkling/ 即日起可在 Tinker 上进行微调。在 Inkling Playground 中试用。🧵","Inkling 能高效地对文本、图像和音频模态进行推理。","https://thinkingmachines."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-135｜Claude Code 新增 MCP 连接器调用功能
+
+- raw_ref: R-138
+- raw_original_id: daily-9
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-138-claude-code-新增-mcp-连接器调用功能.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-138-claude-code-新增-mcp-连接器调用功能.json`
+- source: X：Claude Devs (@ClaudeDevs)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: b6b75dbc70bad76c
+- raw_full_text_hash: b6b75dbc70bad76c
+- raw_semantic_hash: 0c99d0e9103508ca
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b6b75dbc70bad76c","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Claude Code 的 artifacts 现在可以调用 MCP 连接器，让你构建能够按需为每位查看者获取信息并执行操作的仪表盘和应用。 适用于 Pro、Max、Team 和 Enterprise 计划。不适用于公开共享的 artifacts。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Claude Code 的 artifacts 现在可以调用 MCP 连接器，让你构建能够按需为每位查看者获取信息并执行操作的仪表盘和应用。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"适用于 Pro、Max、Team 和 Enterprise 计划。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"不适用于公开共享的 artifacts。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Claude Code 的 artifacts 现在可以调用 MCP 连接器，让你构建能够按需为每位查看者获取信息并执行操作的仪表盘和应用。 适用于 Pro、Max、Team 和 Enterprise 计划。不适用于公开共享的 artifacts。","Claude Code 的 artifacts 现在可以调用 MCP 连接器，让你构建能够按需为每位查看者获取信息并执行操作的仪表盘和应用。","适用于 Pro、Max、Team 和 Enterprise 计划。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-136｜Apple 提出 CLaRa：用连续潜在推理桥接检索与生成
+
+- raw_ref: R-139
+- raw_original_id: daily-17
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-139-apple-提出-clara-用连续潜在推理桥接检索与生成.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-139-apple-提出-clara-用连续潜在推理桥接检索与生成.json`
+- source: Apple Machine Learning Research（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 236e8fa1b20979e5
+- raw_full_text_hash: 236e8fa1b20979e5
+- raw_semantic_hash: 333338e0e5feccc7
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"236e8fa1b20979e5","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Apple 机器学习研究团队提出 CLaRa，一种通过连续潜在推理桥接检索与生成的新方法。该方法在检索增强生成（RAG）中引入连续潜在空间，使模型在生成答案前先进行隐式推理，从而缓解长上下文带来的性能下降。CLaRa 在多个知识密集型基准上提升了 LLM 的准确率与效率。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Apple 机器学习研究团队提出 CLaRa，一种通过连续潜在推理桥接检索与生成的新方法。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该方法在检索增强生成（RAG）中引入连续潜在空间，使模型在生成答案前先进行隐式推理，从而缓解长上下文带来的性能下降。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"CLaRa 在多个知识密集型基准上提升了 LLM 的准确率与效率。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Apple 机器学习研究团队提出 CLaRa，一种通过连续潜在推理桥接检索与生成的新方法。该方法在检索增强生成（RAG）中引入连续潜在空间，使模型在生成答案前先进行隐式推理，从而缓解长上下文带来的性能下降。CLaRa 在多个知识密集型基准上提升了 LLM 的准确率与效率。","Apple 机器学习研究团队提出 CLaRa，一种通过连续潜在推理桥接检索与生成的新方法。","该方法在检索增强生成（RAG）中引入连续潜在空间，使模型在生成答案前先进行隐式推理，从而缓解长上下文带来的性能下降。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-137｜Base44 为何信任 Claude Fable 5 处理最具挑战性的工程任务
+
+- raw_ref: R-140
+- raw_original_id: daily-23
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-140-base44-为何信任-claude-fable-5-处理最具挑战性的工程任务.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-140-base44-为何信任-claude-fable-5-处理最具挑战性的工程任务.json`
+- source: Claude：Blog（网页）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: f5adf5fbf88be5d0
+- raw_full_text_hash: f5adf5fbf88be5d0
+- raw_semantic_hash: 0d9662dfd8f257f8
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f5adf5fbf88be5d0","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"无代码开发平台 Base44 将此前仅限资深工程师处理的系统提示词重构任务交给了 Claude Fable 5。该模型在四小时内独立完成 90%-95% 的重构，并主动发现团队评估中遗漏的缓存命中测试盲点。Base44 产品负责人表示，Claude Fable 5 是首个能像资深工程师一样推理软件构建方式的模型。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"无代码开发平台 Base44 将此前仅限资深工程师处理的系统提示词重构任务交给了 Claude Fable 5。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"该模型在四小时内独立完成 90%-95% 的重构，并主动发现团队评估中遗漏的缓存命中测试盲点。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"Base44 产品负责人表示，Claude Fable 5 是首个能像资深工程师一样推理软件构建方式的模型。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["无代码开发平台 Base44 将此前仅限资深工程师处理的系统提示词重构任务交给了 Claude Fable 5。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-138｜天工短剧工作台发布"Agent智能分镜+无限画布"双轨创作模式
+
+- raw_ref: R-141
+- raw_original_id: cmrmvgk9r01t6bijelx7vxglt
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-141-天工短剧工作台发布-agent智能分镜-无限画布-双轨创作模式.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-141-天工短剧工作台发布-agent智能分镜-无限画布-双轨创作模式.json`
+- source: 公众号：昆仑万维（天工）｜https://mp.weixin.qq.com/s/WlGAeogkF_N5122nHA0TtQ
+- source_url: https://mp.weixin.qq.com/s/WlGAeogkF_N5122nHA0TtQ
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: traceable_summary
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: traceable_summary_or_observation_candidate
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: summary-only-low-readable-body
+- extraction_quality: failed
+- extraction_method: none
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: aihot_visible_text
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 9135ae5e8dae9dfc
+- raw_full_text_hash: 9135ae5e8dae9dfc
+- raw_semantic_hash: a28c4f69d012a7ae
+- evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9135ae5e8dae9dfc","missing":["missing_full_text"]}
+- degradation_reasons: missing_full_text
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 7.699999999999999
+- raw_capture_priority: -1.3000000000000007
+- usable_for: watchlist
+- key_excerpts: [{"type":"product_update","text":"天工短剧工作台推出双轨创作模式，通过导演Agent自动解析剧本、规划站位与机位，并支持多视细节图生成，解决AI短剧角色变脸和站位漂移问题。该工具内置影视级提示词模板、720°全景图及3D导演台，实现可控生产。已有三部作品上线DramaWave 7天实现百万美元级营收。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"天工短剧工作台推出双轨创作模式，通过导演Agent自动解析剧本、规划站位与机位，并支持多视细节图生成，解决AI短剧角色变脸和站位漂移问题。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该工具内置影视级提示词模板、720°全景图及3D导演台，实现可控生产。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"已有三部作品上线DramaWave 7天实现百万美元级营收。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["天工短剧工作台推出双轨创作模式，通过导演Agent自动解析剧本、规划站位与机位，并支持多视细节图生成，解决AI短剧角色变脸和站位漂移问题。该工具内置影视级提示词模板、720°全景图及3D导演台，实现可控生产。已有三部作品上线DramaWave 7天实现百万美元级营收。","天工短剧工作台推出双轨创作模式，通过导演Agent自动解析剧本、规划站位与机位，并支持多视细节图生成，解决AI短剧角色变脸和站位漂移问题。","该工具内置影视级提示词模板、720°全景图及3D导演台，实现可控生产。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-139｜MiniMax Code 2.0 桌面端焕新：底层架构全面升级，金融模块即将上线
+
+- raw_ref: R-144
+- raw_original_id: cmrmudyvj015jbije15lwn7k2
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-144-minimax-code-2-0-桌面端焕新-底层架构全面升级-金融模块即将上线.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-144-minimax-code-2-0-桌面端焕新-底层架构全面升级-金融模块即将上线.json`
+- source: 公众号：MiniMax（稀宇科技）｜https://mp.weixin.qq.com/s/mQeBO0xC6Z1R0LqZX5TvNg
+- source_url: https://mp.weixin.qq.com/s/mQeBO0xC6Z1R0LqZX5TvNg
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: traceable_summary
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: traceable_summary_or_observation_candidate
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: summary-only-low-readable-body
+- extraction_quality: failed
+- extraction_method: none
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: aihot_visible_text
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 07ec94a44f34ed88
+- raw_full_text_hash: 07ec94a44f34ed88
+- raw_semantic_hash: 01d9eaaf53dc0179
+- evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"07ec94a44f34ed88","missing":["missing_full_text"]}
+- degradation_reasons: missing_full_text
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: -1.3000000000000007
+- usable_for: watchlist
+- key_excerpts: [{"type":"product_update","text":"MiniMax Code 2.0 桌面端发布，基于 Pi Agent 框架重构底层架构，显著提升会话启动速度与长程复杂任务的执行稳定性。新版本优化了图表加载与文件预览框选编辑功能，并已与恒生金融数据库、企查查 MCP 打通，金融模块即将上线，支持多源数据实时检索与专业报告生成。桌面端现已开放下载，本月还将上线远程控制、浏览器操控等功能。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"0 桌面端发布，基于 Pi Agent 框架重构底层架构，显著提升会话启动速度与长程复杂任务的执行稳定性。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"新版本优化了图表加载与文件预览框选编辑功能，并已与恒生金融数据库、企查查 MCP 打通，金融模块即将上线，支持多源数据实时检索与专业报告生成。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"桌面端现已开放下载，本月还将上线远程控制、浏览器操控等功能。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["MiniMax Code 2.0 桌面端发布，基于 Pi Agent 框架重构底层架构，显著提升会话启动速度与长程复杂任务的执行稳定性。新版本优化了图表加载与文件预览框选编辑功能，并已与恒生金融数据库、企查查 MCP 打通，金融模块即将上线，支持多源数据实时检索与专业报告生成。桌面端现已开放下载，本月还将上线远程控制、浏览器操控等功能。","0 桌面端发布，基于 Pi Agent 框架重构底层架构，显著提升会话启动速度与长程复杂任务的执行稳定性。","新版本优化了图表加载与文件预览框选编辑功能，并已与恒生金融数据库、企查查 MCP 打通，金融模块即将上线，支持多源数据实时检索与专业报告生成。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-140｜北京亦庄联合京东云上线全国首个"模型券"即时补贴平台
+
+- raw_ref: R-146
+- raw_original_id: cmrlvdotd00imbi5kz9gv1m4m
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-146-北京亦庄联合京东云上线全国首个-模型券-即时补贴平台.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-146-北京亦庄联合京东云上线全国首个-模型券-即时补贴平台.json`
+- source: 公众号：京东JoyAI｜https://mp.weixin.qq.com/s/t4FgmtkqkyUxhvvB-0SDKQ
+- source_url: https://mp.weixin.qq.com/s/t4FgmtkqkyUxhvvB-0SDKQ
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: traceable_summary
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: traceable_summary_or_observation_candidate
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: summary-only-low-readable-body
+- extraction_quality: failed
+- extraction_method: none
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: aihot_visible_text
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: dd143ff75b734f6f
+- raw_full_text_hash: dd143ff75b734f6f
+- raw_semantic_hash: 4c8b60d0e7f44686
+- evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dd143ff75b734f6f","missing":["missing_full_text"]}
+- degradation_reasons: missing_full_text
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 7.699999999999999
+- raw_capture_priority: -1.3000000000000007
+- usable_for: watchlist
+- key_excerpts: [{"type":"number","text":"北京经济技术开发区（北京亦庄）联合京东科技集团上线全国首个\"模型券\"即时补贴平台，企业购买模型服务时可在京东云优惠价基础上叠加最高65%的即时补贴。平台支持多模型调用，企业完成线上实名认证、资质审核、选购券包、下单抵扣四步即可使用，券包内包含爱诗PixVerse、MiniMax海螺、Vidu、可灵等多款商用模型。未来算力券补贴功能也将上线，形成\"模型+算力\"双券联动。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"北京经济技术开发区（北京亦庄）联合京东科技集团上线全国首个\"模型券\"即时补贴平台，企业购买模型服务时可在京东云优惠价基础上叠加最高65%的即时补贴。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"平台支持多模型调用，企业完成线上实名认证、资质审核、选购券包、下单抵扣四步即可使用，券包内包含爱诗PixVerse、MiniMax海螺、Vidu、可灵等多款商用模型。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"未来算力券补贴功能也将上线，形成\"模型+算力\"双券联动。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["平台支持多模型调用，企业完成线上实名认证、资质审核、选购券包、下单抵扣四步即可使用，券包内包含爱诗PixVerse、MiniMax海螺、Vidu、可灵等多款商用模型。","未来算力券补贴功能也将上线，形成\"模型+算力\"双券联动。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-141｜腾讯混元 Hy3 上线一周调用量增长超 68 倍，登顶 OpenRouter 全球总榜
+
+- raw_ref: R-147
+- raw_original_id: cmrlzb5ok01n7bi5k387oem8i
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-147-腾讯混元-hy3-上线一周调用量增长超-68-倍-登顶-openrouter-全球总榜.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-147-腾讯混元-hy3-上线一周调用量增长超-68-倍-登顶-openrouter-全球总榜.json`
+- source: 公众号：腾讯混元｜https://mp.weixin.qq.com/s/1_tTerT8oH3E-GWoMOItlw
+- source_url: https://mp.weixin.qq.com/s/1_tTerT8oH3E-GWoMOItlw
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: traceable_summary
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: traceable_summary_or_observation_candidate
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: summary-only-low-readable-body
+- extraction_quality: failed
+- extraction_method: none
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: aihot_visible_text
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: e7a5a10bb6b92503
+- raw_full_text_hash: e7a5a10bb6b92503
+- raw_semantic_hash: 7b7bbf0a262e26b7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e7a5a10bb6b92503","missing":["missing_full_text"]}
+- degradation_reasons: missing_full_text
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: -1.3000000000000007
+- usable_for: watchlist
+- key_excerpts: [{"type":"number","text":"腾讯混元大模型 Hy3 发布一周后总调用量较上一代 Hy2 增长超 68 倍，在 OpenRouter 全球大模型调用量总榜排名第一。WorkBuddy 自选模型用户中选择 Hy3 的占比达 60%。7 月 14 日，腾讯混元团队将 Hy3 权重量化至 1bit 与 4bit，使模型最少一张推理显卡即可运行。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"腾讯混元大模型 Hy3 发布一周后总调用量较上一代 Hy2 增长超 68 倍，在 OpenRouter 全球大模型调用量总榜排名第一。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"WorkBuddy 自选模型用户中选择 Hy3 的占比达 60%。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"7 月 14 日，腾讯混元团队将 Hy3 权重量化至 1bit 与 4bit，使模型最少一张推理显卡即可运行。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["7 月 14 日，腾讯混元团队将 Hy3 权重量化至 1bit 与 4bit，使模型最少一张推理显卡即可运行。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-142｜豆包 Doubao-Seed-Evolving 升级：支持 1M 上下文，聚焦 Coding 与 Agent 能力
+
+- raw_ref: R-148
+- raw_original_id: cmrlvdonh00ikbi5k8i47lbvo
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-148-豆包-doubao-seed-evolving-升级-支持-1m-上下文-聚焦-coding-与-agent-能力.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-148-豆包-doubao-seed-evolving-升级-支持-1m-上下文-聚焦-coding-与-agent-能力.json`
+- source: 公众号：火山引擎｜https://mp.weixin.qq.com/s/oOOCgFFMl9XpsINb4HsqCg
+- source_url: https://mp.weixin.qq.com/s/oOOCgFFMl9XpsINb4HsqCg
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: traceable_summary
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: traceable_summary_or_observation_candidate
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: summary-only-low-readable-body
+- extraction_quality: failed
+- extraction_method: none
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: aihot_visible_text
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: e06ebfcf100cc833
+- raw_full_text_hash: e06ebfcf100cc833
+- raw_semantic_hash: 927b9d78c607eae7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e06ebfcf100cc833","missing":["missing_full_text"]}
+- degradation_reasons: missing_full_text
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.699999999999999
+- raw_capture_priority: -1.3000000000000007
+- usable_for: emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"火山引擎旗下 Doubao-Seed-Evolving 模型完成升级，新增 1M 超长上下文支持，可处理大型代码仓库与长篇文档。长程任务能力增强，在开发者众测质量评分中超越 Doubao-Seed-2.1-pro，且 tokens 消耗更少、工具调用更简洁。该模型已上线火山 Agent Plan，单月套餐限时 9.9 元起，参与体验奖励计划可享调用成本立减 20%。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"funding","text":"火山引擎旗下 Doubao-Seed-Evolving 模型完成升级，新增 1M 超长上下文支持，可处理大型代码仓库与长篇文档。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"funding","text":"长程任务能力增强，在开发者众测质量评分中超越 Doubao-Seed-2.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"1-pro，且 tokens 消耗更少、工具调用更简洁。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"该模型已上线火山 Agent Plan，单月套餐限时 9.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"number","text":"9 元起，参与体验奖励计划可享调用成本立减 20%。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["火山引擎旗下 Doubao-Seed-Evolving 模型完成升级，新增 1M 超长上下文支持，可处理大型代码仓库与长篇文档。长程任务能力增强，在开发者众测质量评分中超越 Doubao-Seed-2.1-pro，且 tokens 消耗更少、工具调用更简洁。该模型已上线火山 Agent Plan，单月套餐限时 9.9 元起，参与体验奖励计划可享调用成本立减 20%。","火山引擎旗下 Doubao-Seed-Evolving 模型完成升级，新增 1M 超长上下文支持，可处理大型代码仓库与长篇文档。","长程任务能力增强，在开发者众测质量评分中超越 Doubao-Seed-2."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-143｜火山引擎发布 Seedance 2.5，AI 视频生成支持 30 秒直出与 50 份全模态素材输入
+
+- raw_ref: R-150
+- raw_original_id: cmrlsvmmw01jkbih5t3ow17qk
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-150-火山引擎发布-seedance-2-5-ai-视频生成支持-30-秒直出与-50-份全模态素材输入.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-150-火山引擎发布-seedance-2-5-ai-视频生成支持-30-秒直出与-50-份全模态素材输入.json`
+- source: 公众号：火山引擎｜https://mp.weixin.qq.com/s/tSfAoa30uuwPsR7XhVA2VA
+- source_url: https://mp.weixin.qq.com/s/tSfAoa30uuwPsR7XhVA2VA
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: traceable_summary
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: traceable_summary_or_observation_candidate
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: summary-only-low-readable-body
+- extraction_quality: failed
+- extraction_method: none
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: aihot_visible_text
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 3e2e5204227a94f5
+- raw_full_text_hash: 3e2e5204227a94f5
+- raw_semantic_hash: beaf35a2e5c5d625
+- evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3e2e5204227a94f5","missing":["missing_full_text"]}
+- degradation_reasons: missing_full_text
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 5.699999999999999
+- raw_capture_priority: -3.3000000000000007
+- usable_for: emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"Seedance 2.5 大幅提升多人运动场景下的人物一致性与动态表现，支持图片、音频、视频等全模态素材最高 50 份同时导入。模型新增二次编辑能力，可对已生成画面进行定向修改而无需整段重做；指令遵循支持时间戳精准响应，按秒对齐 Prompt 中的画面动作。Seedance 2.5 单段原生视频最长 30 秒，火山引擎将于近日上线其 API。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"5 大幅提升多人运动场景下的人物一致性与动态表现，支持图片、音频、视频等全模态素材最高 50 份同时导入。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"模型新增二次编辑能力，可对已生成画面进行定向修改而无需整段重做；指令遵循支持时间戳精准响应，按秒对齐 Prompt 中的画面动作。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"5 单段原生视频最长 30 秒，火山引擎将于近日上线其 API。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Seedance 2.5 大幅提升多人运动场景下的人物一致性与动态表现，支持图片、音频、视频等全模态素材最高 50 份同时导入。模型新增二次编辑能力，可对已生成画面进行定向修改而无需整段重做；指令遵循支持时间戳精准响应，按秒对齐 Prompt 中的画面动作。Seedance 2.5 单段原生视频最长 30 秒，火山引擎将于近日上线其 API。","5 大幅提升多人运动场景下的人物一致性与动态表现，支持图片、音频、视频等全模态素材最高 50 份同时导入。","模型新增二次编辑能力，可对已生成画面进行定向修改而无需整段重做；指令遵循支持时间戳精准响应，按秒对齐 Prompt 中的画面动作。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-144｜每天Vibe Coding 16小时，作者分享Fable 5与GPT-5.6 Sol的AI开发流程
+
+- raw_ref: R-151
+- raw_original_id: daily-21
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-151-每天vibe-coding-16小时-作者分享fable-5与gpt-5-6-sol的ai开发流程.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-151-每天vibe-coding-16小时-作者分享fable-5与gpt-5-6-sol的ai开发流程.json`
+- source: 公众号：数字生命卡兹克｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 2f68cee4977e4571
+- raw_full_text_hash: 2f68cee4977e4571
+- raw_semantic_hash: 7b0db4f575b3df0d
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2f68cee4977e4571","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"workflow_change","text":"作者每天Vibe Coding约16小时，认为Claude Fable 5在大型方案初版设计上“当世独一档”，GPT-5.6 Sol能有效纠错并优化方案。核心流程为：Fable 5出方案初版 → GPT-5.6 Sol审查纠错 → 在Codex中开启“目标模式”全自动化执行，最长曾连续运行17小时。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"作者每天Vibe Coding约16小时，认为Claude Fable 5在大型方案初版设计上“当世独一档”，GPT-5.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"workflow_change","text":"核心流程为：Fable 5出方案初版 → GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6 Sol审查纠错 → 在Codex中开启“目标模式”全自动化执行，最长曾连续运行17小时。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["6 Sol审查纠错 → 在Codex中开启“目标模式”全自动化执行，最长曾连续运行17小时。"],"case_details":[],"workflow_changes":["作者每天Vibe Coding约16小时，认为Claude Fable 5在大型方案初版设计上“当世独一档”，GPT-5.6 Sol能有效纠错并优化方案。核心流程为：Fable 5出方案初版 → GPT-5.6 Sol审查纠错 → 在Codex中开启“目标模式”全自动化执行，最长曾连续运行17小时。","核心流程为：Fable 5出方案初版 → GPT-5."],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-145｜Telegram 无服务器架构
+
+- raw_ref: R-152
+- raw_original_id: daily-5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-152-telegram-无服务器架构.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-152-telegram-无服务器架构.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 171c32114a86c77d
+- raw_full_text_hash: 171c32114a86c77d
+- raw_semantic_hash: 67b9d52ea7bd84ee
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"171c32114a86c77d","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 4.4
+- raw_capture_priority: -4.6
+- usable_for: index_only
+- key_excerpts: [{"type":"case_detail","text":"Telegram Serverless 允许开发者直接在 Telegram 基础设施上运行 Bot 和 Mini App 的后端代码，无需配置服务器或容器。开发者编写普通 JavaScript 模块，通过 `npx tgcloud push` 单命令部署，代码在靠近 Bot API 和内建数据库的轻量级 V8 隔离沙箱中执行。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Telegram Serverless 允许开发者直接在 Telegram 基础设施上运行 Bot 和 Mini App 的后端代码，无需配置服务器或容器。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"case_detail","text":"开发者编写普通 JavaScript 模块，通过 `npx tgcloud push` 单命令部署，代码在靠近 Bot API 和内建数据库的轻量级 V8 隔离沙箱中执行。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Telegram Serverless 允许开发者直接在 Telegram 基础设施上运行 Bot 和 Mini App 的后端代码，无需配置服务器或容器。"],"case_details":["Telegram Serverless 允许开发者直接在 Telegram 基础设施上运行 Bot 和 Mini App 的后端代码，无需配置服务器或容器。开发者编写普通 JavaScript 模块，通过 `npx tgcloud push` 单命令部署，代码在靠近 Bot API 和内建数据库的轻量级 V8 隔离沙箱中执行。","开发者编写普通 JavaScript 模块，通过 `npx tgcloud push` 单命令部署，代码在靠近 Bot API 和内建数据库的轻量级 V8 隔离沙箱中执行。"],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-146｜国行 Apple 智能完成备案，阿里千问将集成至苹果 AI 能力
+
+- raw_ref: R-153
+- raw_original_id: daily-11
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-153-国行-apple-智能完成备案-阿里千问将集成至苹果-ai-能力.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-153-国行-apple-智能完成备案-阿里千问将集成至苹果-ai-能力.json`
+- source: IT之家（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: b0576339eebdecef
+- raw_full_text_hash: b0576339eebdecef
+- raw_semantic_hash: 0bdb508478536ca1
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b0576339eebdecef","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 4.4
+- raw_capture_priority: -4.6
+- usable_for: index_only
+- key_excerpts: [{"type":"quote","text":"苹果技术开发（上海）有限公司的“Apple 智能”大模型已于 2026 年 7 月 8 日完成备案，适用场景为苹果手机。阿里千问将作为 AI 能力集成至 Apple 智能，为 iOS、iPadOS、macOS 和 visionOS 的中国用户提供文本与图像理解、内容生成等功能，用户无需在应用间切换即可直接体验。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"苹果技术开发（上海）有限公司的“Apple 智能”大模型已于 2026 年 7 月 8 日完成备案，适用场景为苹果手机。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"阿里千问将作为 AI 能力集成至 Apple 智能，为 iOS、iPadOS、macOS 和 visionOS 的中国用户提供文本与图像理解、内容生成等功能，用户无需在应用间切换即可直接体验。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["阿里千问将作为 AI 能力集成至 Apple 智能，为 iOS、iPadOS、macOS 和 visionOS 的中国用户提供文本与图像理解、内容生成等功能，用户无需在应用间切换即可直接体验。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-147｜阿里Qwen将集成至Apple Intelligence服务中国用户
+
+- raw_ref: R-154
+- raw_original_id: daily-12
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-154-阿里qwen将集成至apple-intelligence服务中国用户.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-154-阿里qwen将集成至apple-intelligence服务中国用户.json`
+- source: X：X.PIN (@thexpin)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: c222ed71b4900043
+- raw_full_text_hash: c222ed71b4900043
+- raw_semantic_hash: a430832d1259d162
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c222ed71b4900043","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 4.4
+- raw_capture_priority: -4.6
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"阿里巴巴的Qwen模型将被集成到Apple Intelligence中，为中国的iOS、iPadOS、macOS和visionOS用户提供文本与图像理解、内容生成等AI功能。中国网信办已公布包括Apple Intelligence、华为小艺大模型、OPPO AndesGPT在内的七项移动端生成式AI服务备案信息。阿里巴巴董事会主席蔡崇信表示，苹果在选定阿里前曾与多家中国公司洽谈。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"阿里巴巴的Qwen模型将被集成到Apple Intelligence中，为中国的iOS、iPadOS、macOS和visionOS用户提供文本与图像理解、内容生成等AI功能。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"中国网信办已公布包括Apple Intelligence、华为小艺大模型、OPPO AndesGPT在内的七项移动端生成式AI服务备案信息。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"opinion","text":"阿里巴巴董事会主席蔡崇信表示，苹果在选定阿里前曾与多家中国公司洽谈。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["阿里巴巴的Qwen模型将被集成到Apple Intelligence中，为中国的iOS、iPadOS、macOS和visionOS用户提供文本与图像理解、内容生成等AI功能。中国网信办已公布包括Apple Intelligence、华为小艺大模型、OPPO AndesGPT在内的七项移动端生成式AI服务备案信息。阿里巴巴董事会主席蔡崇信表示，苹果在选定阿里前曾与多家中国公司洽谈。","阿里巴巴的Qwen模型将被集成到Apple Intelligence中，为中国的iOS、iPadOS、macOS和visionOS用户提供文本与图像理解、内容生成等AI功能。","中国网信办已公布包括Apple Intelligence、华为小艺大模型、OPPO AndesGPT在内的七项移动端生成式AI服务备案信息。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-148｜OpenAI 用 AI 攻击自家 AI：GPT-Red 自动发现安全漏洞，成功率 84% 远超人类
+
+- raw_ref: R-155
+- raw_original_id: daily-14
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-155-openai-用-ai-攻击自家-ai-gpt-red-自动发现安全漏洞-成功率-84-远超人类.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-155-openai-用-ai-攻击自家-ai-gpt-red-自动发现安全漏洞-成功率-84-远超人类.json`
+- source: The Decoder：AI News（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: e7aea3c44e0bdeb6
+- raw_full_text_hash: e7aea3c44e0bdeb6
+- raw_semantic_hash: c195195514580896
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e7aea3c44e0bdeb6","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 4.4
+- raw_capture_priority: -4.6
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"OpenAI 训练了内部 AI 模型 GPT-Red，通过自我对弈强化学习自动模拟提示词注入等攻击，在测试场景中成功率达 84%，而人类红队仅为 13%。GPT-Red 的发现直接用于训练，使 GPT-5.6 Sol 在直接提示词注入上的故障次数比四个月前的最佳模型减少六倍，且未影响通用性能。约 3.8% 的“更强”提示词注入仍能成功，GPT-Red 暂不对外开放。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"OpenAI 训练了内部 AI 模型 GPT-Red，通过自我对弈强化学习自动模拟提示词注入等攻击，在测试场景中成功率达 84%，而人类红队仅为 13%。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"GPT-Red 的发现直接用于训练，使 GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"6 Sol 在直接提示词注入上的故障次数比四个月前的最佳模型减少六倍，且未影响通用性能。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"number","text":"8% 的“更强”提示词注入仍能成功，GPT-Red 暂不对外开放。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["GPT-Red 的发现直接用于训练，使 GPT-5.","6 Sol 在直接提示词注入上的故障次数比四个月前的最佳模型减少六倍，且未影响通用性能。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-149｜Meta 探索分层兴趣表示以优化广告深度漏斗
+
+- raw_ref: R-156
+- raw_original_id: daily-16
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-07-16/r-156-meta-探索分层兴趣表示以优化广告深度漏斗.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-07-16/r-156-meta-探索分层兴趣表示以优化广告深度漏斗.json`
+- source: Meta Engineering Blog（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 2a5e85c1ddb07a05
+- raw_full_text_hash: 2a5e85c1ddb07a05
+- raw_semantic_hash: 6516b77a6a1215ee
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2a5e85c1ddb07a05","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 4.4
+- raw_capture_priority: -4.6
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"Meta 提出分层兴趣表示，一种基于 Transformer 图学习与自监督跨视图蒸馏的上游表示层，为广告实体学习统一嵌入。该系统在数十亿真实交互数据上端到端训练，输出通用嵌入和 Bag-of-Meaning 兴趣 token，旨在连接稀疏的深度漏斗信号与广告主供给。该技术可集成至 Meta 的生成式广告模型（GEM）、Andromeda 及自适应排序模型。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"opinion","text":"Meta 提出分层兴趣表示，一种基于 Transformer 图学习与自监督跨视图蒸馏的上游表示层，为广告实体学习统一嵌入。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"该系统在数十亿真实交互数据上端到端训练，输出通用嵌入和 Bag-of-Meaning 兴趣 token，旨在连接稀疏的深度漏斗信号与广告主供给。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"该技术可集成至 Meta 的生成式广告模型（GEM）、Andromeda 及自适应排序模型。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Meta 提出分层兴趣表示，一种基于 Transformer 图学习与自监督跨视图蒸馏的上游表示层，为广告实体学习统一嵌入。该系统在数十亿真实交互数据上端到端训练，输出通用嵌入和 Bag-of-Meaning 兴趣 token，旨在连接稀疏的深度漏斗信号与广告主供给。该技术可集成至 Meta 的生成式广告模型（GEM）、Andromeda 及自适应排序模型。","该系统在数十亿真实交互数据上端到端训练，输出通用嵌入和 Bag-of-Meaning 兴趣 token，旨在连接稀疏的深度漏斗信号与广告主供给。","该技术可集成至 Meta 的生成式广告模型（GEM）、Andromeda 及自适应排序模型。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。

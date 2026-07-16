@@ -1,0 +1,315 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-106
+title: "FCC to repeal 39% TV ownership cap in boost for Trump-friendly news orgs"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://arstechnica.com/tech-policy/2026/07/fcc-to-repeal-39-tv-ownership-cap-in-boost-for-trump-friendly-news-orgs/"
+canonical_url: "https://arstechnica.com/tech-policy/2026/07/fcc-to-repeal-39-tv-ownership-cap-in-boost-for-trump-friendly-news-orgs"
+source_name: "Ars Technica AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-15T18:52:22.000Z"
+collected_at: 2026-07-16T02:39:34.015Z
+language: mixed
+full_text_hash: 84f284365bfd2fe0
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-16/r-106-fcc-to-repeal-39-tv-ownership-cap-in-boost-for-trump-friendly-news-org.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-16/r-106-fcc-to-repeal-39-tv-ownership-cap-in-boost-for-trump-friendly-news-org.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":7338,"paragraph_count":26,"sentence_count":39,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 7338
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"84f284365bfd2fe0","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 4ade0077184f1a7a
+content_hash: 84f284365bfd2fe0
+semantic_hash: 2b25c642c113e450
+duplicate_of: ""
+first_seen_at: "2026-07-15T18:52:22.000Z"
+last_seen_at: 2026-07-16T02:39:34.015Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":3}
+business_elements: {"companies":["Ars Technica AI","Microsoft","Amazon"],"products":[],"people":[],"industries":["法律 / 法务"],"roles":["法务 / 律师"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理"],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["39%","39","6 m","20","2003","45","2004","1996"],"quotes":["case-by-case review","Americans no longer trust the legacy national media to report the news fairly or accurately,","is even lower among Republicans.","turning into little more than mouthpieces for programming produced in New York and Hollywood.","billionaire buddies"]}
+evidence_seed: {"company_actions":["FCC chairman claims power to repeal TV ownership limit set by Congress.","Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The Federal Communications Commission will vote to repeal the National Television Ownership Rule that is supposed to prevent a single broadcast station owner from reaching more than 39 percent of all TV households in the US.","The proposed change sets up a likely court battle over the FCC claim that it has authority to repeal a limit set by Congress."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"FCC chairman claims power to repeal TV ownership limit set by Congress.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The Federal Communications Commission will vote to repeal the National Television Ownership Rule that is supposed to prevent a single broadcast station owner from reaching more than 39 percent of all TV households in the US.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The proposed change sets up a likely court battle over the FCC claim that it has authority to repeal a limit set by Congress.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"FCC Chairman Brendan Carr has already treated the rule as more of a suggestion.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In March, the Carr FCC granted a waiver allowing Nexstar Media Group to buy Tegna in a deal that let it reach over half of TV households.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"opinion","text":"The Carr FCC argued that Congress gave it authority to modify or waive the rule.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-16T02:39:34.015Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# FCC to repeal 39% TV ownership cap in boost for Trump-friendly news orgs
+
+## clean_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+The Federal Communications Commission will vote to repeal the National Television Ownership Rule that is supposed to prevent a single broadcast station owner from reaching more than 39 percent of all TV households in the US. The proposed change sets up a likely court battle over the FCC claim that it has authority to repeal a limit set by Congress.
+FCC Chairman Brendan Carr has already treated the rule as more of a suggestion. In March, the Carr FCC granted a waiver allowing Nexstar Media Group to buy Tegna in a deal that let it reach over half of TV households. The Carr FCC argued that Congress gave it authority to modify or waive the rule.
+Carr now plans to repeal the 39 percent limit and replace it with a “case-by-case review” of each proposed merger, the chairman announced today in an op-ed published on Breitbart . The change would make it easier for the FCC to pick and choose which station groups get to surpass the limit. Under Carr, this would likely benefit news companies that provide favorable coverage for President Trump .
+“Americans no longer trust the legacy national media to report the news fairly or accurately,” Carr wrote in Breitbart, noting that trust of media “is even lower among Republicans.” Carr alleged that many local broadcast TV stations are “turning into little more than mouthpieces for programming produced in New York and Hollywood.”
+Gomez: Plan benefits Trump’s “billionaire buddies”
+Last year, when Carr threatened ABC affiliates with license revocations for carrying Jimmy Kimmel’s show, he said that national networks exert too much control over local TV stations and that he’s trying “to empower local TV stations to serve the needs of the local communities.” Carr has praised Trump for “fundamentally reshaping the media landscape,” and used his post at the FCC to exert pressure on news organizations that Trump doesn’t like. Nexstar helped Carr’s campaign against Kimmel by temporarily refusing to air the show on its stations.
+Commissioner Anna Gomez, the only Democrat on the three-member FCC, today called Carr’s plan an “unlawful effort to hand control of the public airwaves to billionaire buddies of this administration.” She said it “will destroy local newsrooms, silence community reporting, and drive up costs for the American families who depend on local stations for news and emergency alerts.” Without the 39 percent cap, “this FCC is now poised to allow local broadcasters to sell those airwaves off to the highest bidder,” Gomez said.
+A press release issued by the FCC chairman’s office said that case-by-case reviews will allow mergers to exceed the 39 percent limit if the deal advances “localism, viewpoint diversity, and competition.” Carr wrote in his Breitbart op-ed that there has been “a steady decline in locally produced news” that would be fixed by letting companies own larger numbers of stations. The current rule prevents local broadcasters from achieving the scale in operations they need to challenge competitors, he argued.
+“When it comes to broadcast news, our country could do with a little less Hollywood and a little more local reporting from communities across the country,” Carr wrote in Breitbart. “The FCC’s plan to switch from a national cap to a case-by-case review allows exactly that and shifts the focus back to the American people and the local communities they live in.”
+Only Congress can change cap, critics say
+The planned change, set to be voted on at the commission’s August 6 meeting, is certain to face legal challenges. Only Congress can change the ownership cap, Gomez and other critics of Carr say.
+“Congress set the 39 percent national ownership cap in federal law, and only Congress has the authority to raise or eliminate it. The commission cannot waive away that limit simply because these corporate behemoths want to get out from under it,” Gomez said.
+Gomez said the FCC tried and failed to change the cap over 20 years ago. “In 2003, the Commission raised the cap to 45 percent under its own authority,” she said. “Congress stepped in within months, rewrote the law to set the cap at 39 percent, and made clear the FCC did not have the authority to change it. An FCC vote to raise the cap now would be unlawful, as it would mean doing the exact thing Congress has already said the Commission cannot do.”
+Gomez was referring to a 2004 vote in which Congress amended the Telecommunications Act of 1996 to require the FCC to enforce a cap of 39 percent.
+FCC accused of illegally waiving limit for Nexstar
+The FCC was previously accused of exceeding its authority when it gave Nexstar a waiver that let it complete its Tegna deal. The FCC cannot legally waive the 39 percent limit because Congress “amended Section 202 of the Telecommunications Act of 1996 to specifically bar the agency from granting waivers to the 39 percent cap Congress likewise dictated,” said a December 2025 FCC filing submitted by The United Church of Christ Media Justice Ministry, Public Knowledge, Free Press, and the Communications Workers of America.
+Nexstar now reaches 54.5 percent of households when calculated with the “UHF discount,” in which only half of the households reached by a UHF station are counted. Without the UHF-specific calculation, Nexstar’s reach grew from 70 percent to 80 percent when it bought Tegna.
+The Carr FCC said that Congress instructed it to set the 39 percent cap “through its rulemaking authority, which necessarily leaves the agency with the discretion to modify or waive its rules.” Nexstar completed the Tegna acquisition on March 19, but a federal judge ordered the merging companies to stop integrating their assets and operations while an antitrust case brought by DirecTV proceeds. Nexstar is appealing the ruling.
+Carr’s plan to eliminate the 39 percent cap is supported by Nexstar and the primary lobby group for broadcasters. Nexstar said today that “no one would suggest limiting the reach of YouTube, Amazon, or CNN, yet local broadcasters are still forced to compete under rules written for a different century. Modernizing these outdated regulations will help ensure broadcasters can continue investing in local journalism and providing the free, trusted news and information that communities across America rely on every day.”
+The National Association of Broadcasters similarly said that “decades-old ownership restrictions that apply only to broadcasters—and none of our competitors—are out of step with today’s media marketplace.”
+Jon Brodkin
+Senior IT Reporter
+Jon Brodkin
+Senior IT Reporter
+Jon is a Senior IT Reporter for Ars Technica. He covers the telecom industry, Federal Communications Commission rulemakings, broadband consumer affairs, court cases, and government regulation of the tech industry.
+97 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+Microsoft’s Secure Boot has been broken for a decade and no one noticed until now
+2.
+How hard is it to build orbital data centers, actually?
+3.
+Sheetz moves 838 stores off VMware: Broadcom created “too much uncertainty"
+4.
+A most improbable astronaut just went to space
+5.
+Probe into explosive diarrheal cases points to Taco Bell and bad lettuce
+Customize
+
+## full_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+The Federal Communications Commission will vote to repeal the National Television Ownership Rule that is supposed to prevent a single broadcast station owner from reaching more than 39 percent of all TV households in the US. The proposed change sets up a likely court battle over the FCC claim that it has authority to repeal a limit set by Congress.
+FCC Chairman Brendan Carr has already treated the rule as more of a suggestion. In March, the Carr FCC granted a waiver allowing Nexstar Media Group to buy Tegna in a deal that let it reach over half of TV households. The Carr FCC argued that Congress gave it authority to modify or waive the rule.
+Carr now plans to repeal the 39 percent limit and replace it with a “case-by-case review” of each proposed merger, the chairman announced today in an op-ed published on Breitbart . The change would make it easier for the FCC to pick and choose which station groups get to surpass the limit. Under Carr, this would likely benefit news companies that provide favorable coverage for President Trump .
+“Americans no longer trust the legacy national media to report the news fairly or accurately,” Carr wrote in Breitbart, noting that trust of media “is even lower among Republicans.” Carr alleged that many local broadcast TV stations are “turning into little more than mouthpieces for programming produced in New York and Hollywood.”
+Gomez: Plan benefits Trump’s “billionaire buddies”
+Last year, when Carr threatened ABC affiliates with license revocations for carrying Jimmy Kimmel’s show, he said that national networks exert too much control over local TV stations and that he’s trying “to empower local TV stations to serve the needs of the local communities.” Carr has praised Trump for “fundamentally reshaping the media landscape,” and used his post at the FCC to exert pressure on news organizations that Trump doesn’t like. Nexstar helped Carr’s campaign against Kimmel by temporarily refusing to air the show on its stations.
+Commissioner Anna Gomez, the only Democrat on the three-member FCC, today called Carr’s plan an “unlawful effort to hand control of the public airwaves to billionaire buddies of this administration.” She said it “will destroy local newsrooms, silence community reporting, and drive up costs for the American families who depend on local stations for news and emergency alerts.” Without the 39 percent cap, “this FCC is now poised to allow local broadcasters to sell those airwaves off to the highest bidder,” Gomez said.
+A press release issued by the FCC chairman’s office said that case-by-case reviews will allow mergers to exceed the 39 percent limit if the deal advances “localism, viewpoint diversity, and competition.” Carr wrote in his Breitbart op-ed that there has been “a steady decline in locally produced news” that would be fixed by letting companies own larger numbers of stations. The current rule prevents local broadcasters from achieving the scale in operations they need to challenge competitors, he argued.
+“When it comes to broadcast news, our country could do with a little less Hollywood and a little more local reporting from communities across the country,” Carr wrote in Breitbart. “The FCC’s plan to switch from a national cap to a case-by-case review allows exactly that and shifts the focus back to the American people and the local communities they live in.”
+Only Congress can change cap, critics say
+The planned change, set to be voted on at the commission’s August 6 meeting, is certain to face legal challenges. Only Congress can change the ownership cap, Gomez and other critics of Carr say.
+“Congress set the 39 percent national ownership cap in federal law, and only Congress has the authority to raise or eliminate it. The commission cannot waive away that limit simply because these corporate behemoths want to get out from under it,” Gomez said.
+Gomez said the FCC tried and failed to change the cap over 20 years ago. “In 2003, the Commission raised the cap to 45 percent under its own authority,” she said. “Congress stepped in within months, rewrote the law to set the cap at 39 percent, and made clear the FCC did not have the authority to change it. An FCC vote to raise the cap now would be unlawful, as it would mean doing the exact thing Congress has already said the Commission cannot do.”
+Gomez was referring to a 2004 vote in which Congress amended the Telecommunications Act of 1996 to require the FCC to enforce a cap of 39 percent.
+FCC accused of illegally waiving limit for Nexstar
+The FCC was previously accused of exceeding its authority when it gave Nexstar a waiver that let it complete its Tegna deal. The FCC cannot legally waive the 39 percent limit because Congress “amended Section 202 of the Telecommunications Act of 1996 to specifically bar the agency from granting waivers to the 39 percent cap Congress likewise dictated,” said a December 2025 FCC filing submitted by The United Church of Christ Media Justice Ministry, Public Knowledge, Free Press, and the Communications Workers of America.
+Nexstar now reaches 54.5 percent of households when calculated with the “UHF discount,” in which only half of the households reached by a UHF station are counted. Without the UHF-specific calculation, Nexstar’s reach grew from 70 percent to 80 percent when it bought Tegna.
+The Carr FCC said that Congress instructed it to set the 39 percent cap “through its rulemaking authority, which necessarily leaves the agency with the discretion to modify or waive its rules.” Nexstar completed the Tegna acquisition on March 19, but a federal judge ordered the merging companies to stop integrating their assets and operations while an antitrust case brought by DirecTV proceeds. Nexstar is appealing the ruling.
+Carr’s plan to eliminate the 39 percent cap is supported by Nexstar and the primary lobby group for broadcasters. Nexstar said today that “no one would suggest limiting the reach of YouTube, Amazon, or CNN, yet local broadcasters are still forced to compete under rules written for a different century. Modernizing these outdated regulations will help ensure broadcasters can continue investing in local journalism and providing the free, trusted news and information that communities across America rely on every day.”
+The National Association of Broadcasters similarly said that “decades-old ownership restrictions that apply only to broadcasters—and none of our competitors—are out of step with today’s media marketplace.”
+Jon Brodkin
+Senior IT Reporter
+Jon Brodkin
+Senior IT Reporter
+Jon is a Senior IT Reporter for Ars Technica. He covers the telecom industry, Federal Communications Commission rulemakings, broadband consumer affairs, court cases, and government regulation of the tech industry.
+97 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+Microsoft’s Secure Boot has been broken for a decade and no one noticed until now
+2.
+How hard is it to build orbital data centers, actually?
+3.
+Sheetz moves 838 stores off VMware: Broadcom created “too much uncertainty"
+4.
+A most improbable astronaut just went to space
+5.
+Probe into explosive diarrheal cases points to Taco Bell and bad lettuce
+Customize
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":7338,"paragraph_count":26,"sentence_count":39,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   FCC chairman claims power to repeal TV ownership limit set by Congress.
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The Federal Communications Commission will vote to repeal the National Television Ownership Rule that is supposed to prevent a single broadcast station owner from reaching more than 39 percent of all TV households in the US.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The proposed change sets up a likely court battle over the FCC claim that it has authority to repeal a limit set by Congress.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   FCC Chairman Brendan Carr has already treated the rule as more of a suggestion.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   In March, the Carr FCC granted a waiver allowing Nexstar Media Group to buy Tegna in a deal that let it reach over half of TV households.
+
+6. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   The Carr FCC argued that Congress gave it authority to modify or waive the rule.
+
+## business_elements
+
+- companies: Ars Technica AI, Microsoft, Amazon
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务
+- roles: 法务 / 律师
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 39%, 39, 6 m, 20, 2003, 45, 2004, 1996
+- quotes: case-by-case review / Americans no longer trust the legacy national media to report the news fairly or accurately, / is even lower among Republicans. / turning into little more than mouthpieces for programming produced in New York and Hollywood. / billionaire buddies
+
+## evidence_seed
+
+- company_actions: FCC chairman claims power to repeal TV ownership limit set by Congress. / Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav The Federal Communications Commission will vote to repeal the National Television Ownership Rule that is supposed to prevent a single broadcast station owner from reaching more than 39 percent of all TV households in the US. / The proposed change sets up a likely court battle over the FCC claim that it has authority to repeal a limit set by Congress.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+FCC chairman claims power to repeal TV ownership limit set by Congress.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

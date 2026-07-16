@@ -1,0 +1,296 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-040",
+  "title": "开源编程智能体内存方案发布，通过 SSH 同步",
+  "title_zh": "开源编程智能体内存方案发布，通过 SSH 同步",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "original_url": "https://github.com/vshulcz/deja-vu",
+  "canonical_url": "https://github.com/vshulcz/deja-vu",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-15T22:49:15.715Z",
+  "collected_at": "2026-07-16T02:39:33.670Z",
+  "language": "mixed",
+  "full_text": "vshulcz\ndeja-vu\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n214\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n61 Commits\n61 Commits\n.github\n.github\nassets\nassets\ncmd/ deja\ncmd/ deja\ndocs\ndocs\nfixtures/ synthetic\nfixtures/ synthetic\ninternal\ninternal\nnpm\nnpm\nscripts\nscripts\n.gitignore\n.gitignore\n.golangci.yml\n.golangci.yml\n.goreleaser.yaml\n.goreleaser.yaml\nCHANGELOG.md\nCHANGELOG.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\ngo.mod\ngo.mod\ninstall.sh\ninstall.sh\nView all files\nRepository files navigation\nYour agents already solved this. deja finds it.\nvshulcz.github.io/deja-vu\nClaude Code, Codex and opencode write every conversation to local files — gigabytes of debugged problems and design decisions you can't search. deja is a zero-dependency binary that turns those histories into a memory layer:\nSearch\ndeja \"connection pool exhausted\" — 7–9 ms over gigabytes, retroactive: months of logs from before you installed it\nAgent recall\nMCP recall tool — the agent answers \"we fixed this three weeks ago\" instead of re-debugging, across harnesses\nAuto-recall\ninstall --auto adds a SessionStart hook: relevant memory lands in context before you ask\nRedaction\nAPI keys, JWTs, private keys are stripped at index time — the cache is safe to keep\nStats\ndeja stats — your agent work, wrapped: harnesses, top projects, activity sparkline\nShare\ndeja share <id> — hand a colleague a sanitized digest of a session, secrets already scrubbed\nSync\ndeja sync export/import — move memory between machines, append-only, idempotent\nOne binary. No models to download, no services to run, nothing leaves your machine. (opencode indexing shells out to the sqlite3 CLI, preinstalled on macOS and most Linux distros.)\nInstall\ncurl -fsSL https://raw.githubusercontent.com/vshulcz/deja-vu/main/install.sh | sh\nor:\ngo install github.com/vshulcz/deja-vu/cmd/deja@latest # Go\nnpx @vshulcz/deja-vu \" query \" # npm, no install\nbrew install vshulcz/tap/deja-vu # Homebrew\nWire it into the agents you use (edits config, keeps a .bak ):\ndeja install --all # MCP recall for claude-code, codex, opencode\ndeja install claude-code --auto # + SessionStart auto-recall hook\nThat's it. Next session, ask your agent:\nhave we dealt with jwt refresh rotation before? check your memory\n— or with --auto , don't ask: the agent starts each session already knowing what you solved in that project.\nCLI\n$ deja \"jwt refresh token\"\n[claude] api · Jul 8 · 8f31c0a9 — 2 matches\nlogin started failing after refresh token rotation; jwt kid mismatch in tests\nfixed by reloading jwks cache after rotateKey and adding a clock-skew test\n[codex] web · Jul 1 · b77d91e2 — 1 match\nrefresh token cookie needed SameSite=Lax in local callback flow\nCommand\nWhat it does\ndeja <query>\nSearch all histories. Multi-word = AND, substrings match ( code finds opencode ). --re , --harness , --project , --since 30d , --role , --json .\ndeja ctx <query>\nCompact markdown digest of the best match — pipe it into a prompt.\ndeja share <id>\nSanitized session digest for a colleague: secrets redacted, tool noise stripped.\ndeja stats\nTotals, per-harness split, top projects, monthly sparkline. --json too.\ndeja sync export <dir> [--full] / import <dir> / ssh <host> [--pull]\nMove memory between machines — via a shared folder or one ssh command. Watermarked, append-only, idempotent.\ndeja show <id> / deja last [n]\nRead one session / list recent ones.\ndeja sources\nDiscovered stores, sizes, message and redaction counts.\ndeja mcp\nThe stdio MCP server (what deja install wires in).\ndeja warmup\nBuild/refresh the index without searching — handy in cron or shell startup.\nContext piping without MCP:\nclaude \" Prior context: $( deja ctx ' database migration ' ) \"\nSync between machines\nPoint both machines at one shared folder (Syncthing, iCloud, a git repo — anything that moves files):\ndeja sync export ~ /Sync/deja # machine A: appends new batches since last export\ndeja sync import ~ /Sync/deja # machine B: picks up what it hasn't seen\nOr skip the shared folder when the other machine is a ssh hop away:\ndeja sync ssh mini # push new records to mini and import them there\ndeja sync ssh mini --pull # fetch mini's new records into this machine\nssh mode uses your system ssh/scp and the deja binary on the remote (looked up on PATH, falling back to ~/.local/bin/deja ).\nBatches are plain JSONL, redacted on the way out. Import is idempotent, so keep the folder as an append-only log and run both commands from cron if you like. Records never echo back to their origin. --full re-exports everything regardless of watermarks — useful when adding a machine after old batches are gone. Synced sessions show up under imported:<project> in search, recall , and session-start auto-recall.\nTeach your agent to remember\ndeja install --all wires up MCP recall and the session-start hook. To make\nthe agent reach for memory on its own, add this to your CLAUDE.md /\nAGENTS.md :\nBefore debugging or re-implementing something, run `deja \"<query>\"` (or the\nMCP recall tool) — past agent sessions across Claude Code, Codex and opencode\nare indexed locally. Cite what you reuse.\nMCP tools\nTool\nArguments\nReturns\nrecall\nquery , harness? , limit?\nDense matching snippets, ≤4KB — cheap on context.\nrecall_context\nquery\nMarkdown digest of the best-matching session.\nWith --auto , a SessionStart hook also feeds the current project's recent memory in automatically — read-only, capped at 2KB, and it never delays or breaks agent startup.\nSecurity\nCredentials are redacted at index time: AWS keys, generic api_key= / token= assignments, bearer tokens and raw JWTs, PEM private key blocks, provider tokens ( ghp_ , sk- , npm_ , xox. , AIza ), and scheme://user:pass@host URLs. The value is replaced with [redacted:<kind>] ; surrounding text stays searchable. deja sources shows per-store counts. Opt out with DEJA_NO_REDACT=1 (unsafe). deja share and deja sync export re-apply redaction on the way out.\nSupported harnesses\nHarness\nStore\nStatus\nClaude Code\n~/.claude/projects/**/*.jsonl\nCodex CLI\n~/.codex/sessions/** + history.jsonl\nopencode\n~/.local/share/opencode/opencode.db\naider, Gemini CLI\n#6 , #7\nplanned\nCustom locations via DEJA_CLAUDE_ROOT , DEJA_CODEX_ROOT , DEJA_OPENCODE_DB , DEJA_INDEX_DIR .\nPerformance\nMeasured on a real corpus — 1,250+ sessions, ~3.3GB across three harnesses:\nWarm search\n7–9 ms typical, ~40 ms worst-case\nCold index (once)\n~10 s\nIndex size\n~2.4% of corpus\nThe index is incremental: when a session file grows, only that file is re-read.\nHow it works\nLocal inverted index in ~/.cache/deja : parse JSONL/SQLite stores → redact credentials → records.bin + token buckets → manifest.json tracks per-file state so repeat runs only ingest what changed. The MCP server, stats, share and sync all read the same index. Details: docs/ARCHITECTURE.md .\nPrivacy: no network path exists in the indexing or search code. Local files in, local cache out.\nFAQ\nDoes anything leave my machine? No. There is no network code in the tool. sync writes files to a directory you choose; moving them is up to you.\nHow is this different from cass?\ncass is the kitchen-sink take on session search: 22 providers, Rust, optional semantic embeddings, a TUI. deja is the opposite bet — one small Go binary, pure lexical, three harnesses, zero setup — plus the memory-layer pieces around it: auto-recall, redaction, share, sync.\nAnd from MemPalace / Mem0 / Letta?\nThose are memory platforms : embeddings, vector stores, capture hooks or APIs that record going forward. deja has no capture step at all — it indexes what your agents already wrote to disk, including months of history from before you installed it. They can coexist.\nWhat about secrets already in my logs? They stay in the original harness files (that's your agent's data), but they don't enter deja's index, digests, shares or sync exports.\nWhat about Windows? Builds exist, CI runs the suite on Windows; macOS/Linux are the battle-tested paths. Field reports welcome: #9 .\nCan I exclude a project? Not yet — planned as --exclude ( #8 ). Today you can point DEJA_*_ROOT at a filtered copy.\nHow do I wipe everything?\ndeja uninstall --all\nrm -rf ~ /.cache/deja\nContributing\nmake build test lint — see CONTRIBUTING.md . Adding a harness is one parser file: docs/ARCHITECTURE.md . Good first issues are labeled.\nLicense\nMIT © Vladislav Shulcz\nAbout\nMemory layer for coding agents: search, MCP recall, auto-context, secret redaction, stats, share and sync over the session logs Claude Code, Codex and opencode already write. One zero-dep binary.\nvshulcz.github.io/deja-vu/\nTopics\nsearch\ngo\ncli\nmemory\nmcp\nopencode\ndeveloper-tools\ncodex\nai-agents\nclaude-code\nResources\nReadme\nLicense\nMIT license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n214\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv0.6.0\nLatest\nJul 14, 2026\n+ 8 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nGo\n95.9%\nShell\n2.4%\nJavaScript\n1.5%\nMakefile\n0.2%",
+  "clean_text": "vshulcz\ndeja-vu\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n214\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n61 Commits\n61 Commits\n.github\n.github\nassets\nassets\ncmd/ deja\ncmd/ deja\ndocs\ndocs\nfixtures/ synthetic\nfixtures/ synthetic\ninternal\ninternal\nnpm\nnpm\nscripts\nscripts\n.gitignore\n.gitignore\n.golangci.yml\n.golangci.yml\n.goreleaser.yaml\n.goreleaser.yaml\nCHANGELOG.md\nCHANGELOG.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\ngo.mod\ngo.mod\ninstall.sh\ninstall.sh\nView all files\nRepository files navigation\nYour agents already solved this. deja finds it.\nvshulcz.github.io/deja-vu\nClaude Code, Codex and opencode write every conversation to local files — gigabytes of debugged problems and design decisions you can't search. deja is a zero-dependency binary that turns those histories into a memory layer:\nSearch\ndeja \"connection pool exhausted\" — 7–9 ms over gigabytes, retroactive: months of logs from before you installed it\nAgent recall\nMCP recall tool — the agent answers \"we fixed this three weeks ago\" instead of re-debugging, across harnesses\nAuto-recall\ninstall --auto adds a SessionStart hook: relevant memory lands in context before you ask\nRedaction\nAPI keys, JWTs, private keys are stripped at index time — the cache is safe to keep\nStats\ndeja stats — your agent work, wrapped: harnesses, top projects, activity sparkline\nShare\ndeja share <id> — hand a colleague a sanitized digest of a session, secrets already scrubbed\nSync\ndeja sync export/import — move memory between machines, append-only, idempotent\nOne binary. No models to download, no services to run, nothing leaves your machine. (opencode indexing shells out to the sqlite3 CLI, preinstalled on macOS and most Linux distros.)\nInstall\ncurl -fsSL https://raw.githubusercontent.com/vshulcz/deja-vu/main/install.sh | sh\nor:\ngo install github.com/vshulcz/deja-vu/cmd/deja@latest # Go\nnpx @vshulcz/deja-vu \" query \" # npm, no install\nbrew install vshulcz/tap/deja-vu # Homebrew\nWire it into the agents you use (edits config, keeps a .bak ):\ndeja install --all # MCP recall for claude-code, codex, opencode\ndeja install claude-code --auto # + SessionStart auto-recall hook\nThat's it. Next session, ask your agent:\nhave we dealt with jwt refresh rotation before? check your memory\n— or with --auto , don't ask: the agent starts each session already knowing what you solved in that project.\nCLI\n$ deja \"jwt refresh token\"\n[claude] api · Jul 8 · 8f31c0a9 — 2 matches\nlogin started failing after refresh token rotation; jwt kid mismatch in tests\nfixed by reloading jwks cache after rotateKey and adding a clock-skew test\n[codex] web · Jul 1 · b77d91e2 — 1 match\nrefresh token cookie needed SameSite=Lax in local callback flow\nCommand\nWhat it does\ndeja <query>\nSearch all histories. Multi-word = AND, substrings match ( code finds opencode ). --re , --harness , --project , --since 30d , --role , --json .\ndeja ctx <query>\nCompact markdown digest of the best match — pipe it into a prompt.\ndeja share <id>\nSanitized session digest for a colleague: secrets redacted, tool noise stripped.\ndeja stats\nTotals, per-harness split, top projects, monthly sparkline. --json too.\ndeja sync export <dir> [--full] / import <dir> / ssh <host> [--pull]\nMove memory between machines — via a shared folder or one ssh command. Watermarked, append-only, idempotent.\ndeja show <id> / deja last [n]\nRead one session / list recent ones.\ndeja sources\nDiscovered stores, sizes, message and redaction counts.\ndeja mcp\nThe stdio MCP server (what deja install wires in).\ndeja warmup\nBuild/refresh the index without searching — handy in cron or shell startup.\nContext piping without MCP:\nclaude \" Prior context: $( deja ctx ' database migration ' ) \"\nSync between machines\nPoint both machines at one shared folder (Syncthing, iCloud, a git repo — anything that moves files):\ndeja sync export ~ /Sync/deja # machine A: appends new batches since last export\ndeja sync import ~ /Sync/deja # machine B: picks up what it hasn't seen\nOr skip the shared folder when the other machine is a ssh hop away:\ndeja sync ssh mini # push new records to mini and import them there\ndeja sync ssh mini --pull # fetch mini's new records into this machine\nssh mode uses your system ssh/scp and the deja binary on the remote (looked up on PATH, falling back to ~/.local/bin/deja ).\nBatches are plain JSONL, redacted on the way out. Import is idempotent, so keep the folder as an append-only log and run both commands from cron if you like. Records never echo back to their origin. --full re-exports everything regardless of watermarks — useful when adding a machine after old batches are gone. Synced sessions show up under imported:<project> in search, recall , and session-start auto-recall.\nTeach your agent to remember\ndeja install --all wires up MCP recall and the session-start hook. To make\nthe agent reach for memory on its own, add this to your CLAUDE.md /\nAGENTS.md :\nBefore debugging or re-implementing something, run `deja \"<query>\"` (or the\nMCP recall tool) — past agent sessions across Claude Code, Codex and opencode\nare indexed locally. Cite what you reuse.\nMCP tools\nTool\nArguments\nReturns\nrecall\nquery , harness? , limit?\nDense matching snippets, ≤4KB — cheap on context.\nrecall_context\nquery\nMarkdown digest of the best-matching session.\nWith --auto , a SessionStart hook also feeds the current project's recent memory in automatically — read-only, capped at 2KB, and it never delays or breaks agent startup.\nSecurity\nCredentials are redacted at index time: AWS keys, generic api_key= / token= assignments, bearer tokens and raw JWTs, PEM private key blocks, provider tokens ( ghp_ , sk- , npm_ , xox. , AIza ), and scheme://user:pass@host URLs. The value is replaced with [redacted:<kind>] ; surrounding text stays searchable. deja sources shows per-store counts. Opt out with DEJA_NO_REDACT=1 (unsafe). deja share and deja sync export re-apply redaction on the way out.\nSupported harnesses\nHarness\nStore\nStatus\nClaude Code\n~/.claude/projects/**/*.jsonl\nCodex CLI\n~/.codex/sessions/** + history.jsonl\nopencode\n~/.local/share/opencode/opencode.db\naider, Gemini CLI\n#6 , #7\nplanned\nCustom locations via DEJA_CLAUDE_ROOT , DEJA_CODEX_ROOT , DEJA_OPENCODE_DB , DEJA_INDEX_DIR .\nPerformance\nMeasured on a real corpus — 1,250+ sessions, ~3.3GB across three harnesses:\nWarm search\n7–9 ms typical, ~40 ms worst-case\nCold index (once)\n~10 s\nIndex size\n~2.4% of corpus\nThe index is incremental: when a session file grows, only that file is re-read.\nHow it works\nLocal inverted index in ~/.cache/deja : parse JSONL/SQLite stores → redact credentials → records.bin + token buckets → manifest.json tracks per-file state so repeat runs only ingest what changed. The MCP server, stats, share and sync all read the same index. Details: docs/ARCHITECTURE.md .\nPrivacy: no network path exists in the indexing or search code. Local files in, local cache out.\nFAQ\nDoes anything leave my machine? No. There is no network code in the tool. sync writes files to a directory you choose; moving them is up to you.\nHow is this different from cass?\ncass is the kitchen-sink take on session search: 22 providers, Rust, optional semantic embeddings, a TUI. deja is the opposite bet — one small Go binary, pure lexical, three harnesses, zero setup — plus the memory-layer pieces around it: auto-recall, redaction, share, sync.\nAnd from MemPalace / Mem0 / Letta?\nThose are memory platforms : embeddings, vector stores, capture hooks or APIs that record going forward. deja has no capture step at all — it indexes what your agents already wrote to disk, including months of history from before you installed it. They can coexist.\nWhat about secrets already in my logs? They stay in the original harness files (that's your agent's data), but they don't enter deja's index, digests, shares or sync exports.\nWhat about Windows? Builds exist, CI runs the suite on Windows; macOS/Linux are the battle-tested paths. Field reports welcome: #9 .\nCan I exclude a project? Not yet — planned as --exclude ( #8 ). Today you can point DEJA_*_ROOT at a filtered copy.\nHow do I wipe everything?\ndeja uninstall --all\nrm -rf ~ /.cache/deja\nContributing\nmake build test lint — see CONTRIBUTING.md . Adding a harness is one parser file: docs/ARCHITECTURE.md . Good first issues are labeled.\nLicense\nMIT © Vladislav Shulcz\nAbout\nMemory layer for coding agents: search, MCP recall, auto-context, secret redaction, stats, share and sync over the session logs Claude Code, Codex and opencode already write. One zero-dep binary.\nvshulcz.github.io/deja-vu/\nTopics\nsearch\ngo\ncli\nmemory\nmcp\nopencode\ndeveloper-tools\ncodex\nai-agents\nclaude-code\nResources\nReadme\nLicense\nMIT license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n214\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv0.6.0\nLatest\nJul 14, 2026\n+ 8 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nGo\n95.9%\nShell\n2.4%\nJavaScript\n1.5%\nMakefile\n0.2%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-16/r-040-开源编程智能体内存方案发布-通过-ssh-同步.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-16/r-040-开源编程智能体内存方案发布-通过-ssh-同步.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 9267,
+    "paragraph_count": 91,
+    "sentence_count": 82,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.0073,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 9267,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "a956f9c7a64ebaf2",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "开源编程智能体内存方案发布，通过 SSH 同步",
+    "discovery_summary": "一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。代码已开源，便于开发者集成与定制。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://github.com/vshulcz/deja-vu",
+    "discovered_at": "2026-07-16T02:30:38.307Z",
+    "rank_on_page": 74,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "2851245ecfc226d9",
+  "content_hash": "a956f9c7a64ebaf2",
+  "full_text_hash": "a956f9c7a64ebaf2",
+  "semantic_hash": "a52a3ac5d1dae98a",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-15T22:49:15.715Z",
+  "last_seen_at": "2026-07-16T02:39:33.670Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。代码已开源，便于开发者集成与定制。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "vshulcz deja-vu Public Notifications You must be signed in to change notification settings Fork Star 214 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 61 Commits 61 Commits .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "github assets assets cmd/ deja cmd/ deja docs docs fixtures/ synthetic fixtures/ synthetic internal internal npm npm scripts scripts .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md LICENSE LICENSE Makefile Makefile README.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "sh View all files Repository files navigation Your agents already solved this.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "io/deja-vu Claude Code, Codex and opencode write every conversation to local files — gigabytes of debugged problems and design decisions you can't search.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-16T02:39:33.670Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "GitHub",
+      "AWS"
+    ],
+    "products": [
+      "agents",
+      "Claude",
+      "Codex",
+      "Agent",
+      "MCP",
+      "agent",
+      "claude",
+      "codex",
+      "mcp",
+      "CLAUDE"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "214\nm",
+      "61",
+      "7",
+      "9 m",
+      "3",
+      "8",
+      "31",
+      "0"
+    ],
+    "quotes": [
+      "connection pool exhausted",
+      "we fixed this three weeks ago",
+      "jwt refresh token",
+      " Prior context: $( deja ctx ' database migration ' ) "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。代码已开源，便于开发者集成与定制。",
+      "vshulcz deja-vu Public Notifications You must be signed in to change notification settings Fork Star 214 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 61 Commits 61 Commits .",
+      "github assets assets cmd/ deja cmd/ deja docs docs fixtures/ synthetic fixtures/ synthetic internal internal npm npm scripts scripts ."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 开源编程智能体内存方案发布，通过 SSH 同步\n\n- raw_id: R-040\n- title_zh: 开源编程智能体内存方案发布，通过 SSH 同步\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://github.com/vshulcz/deja-vu\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-16T02:39:33.670Z\n\n## clean_text\n\nvshulcz\ndeja-vu\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n214\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n61 Commits\n61 Commits\n.github\n.github\nassets\nassets\ncmd/ deja\ncmd/ deja\ndocs\ndocs\nfixtures/ synthetic\nfixtures/ synthetic\ninternal\ninternal\nnpm\nnpm\nscripts\nscripts\n.gitignore\n.gitignore\n.golangci.yml\n.golangci.yml\n.goreleaser.yaml\n.goreleaser.yaml\nCHANGELOG.md\nCHANGELOG.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\ngo.mod\ngo.mod\ninstall.sh\ninstall.sh\nView all files\nRepository files navigation\nYour agents already solved this. deja finds it.\nvshulcz.github.io/deja-vu\nClaude Code, Codex and opencode write every conversation to local files — gigabytes of debugged problems and design decisions you can't search. deja is a zero-dependency binary that turns those histories into a memory layer:\nSearch\ndeja \"connection pool exhausted\" — 7–9 ms over gigabytes, retroactive: months of logs from before you installed it\nAgent recall\nMCP recall tool — the agent answers \"we fixed this three weeks ago\" instead of re-debugging, across harnesses\nAuto-recall\ninstall --auto adds a SessionStart hook: relevant memory lands in context before you ask\nRedaction\nAPI keys, JWTs, private keys are stripped at index time — the cache is safe to keep\nStats\ndeja stats — your agent work, wrapped: harnesses, top projects, activity sparkline\nShare\ndeja share <id> — hand a colleague a sanitized digest of a session, secrets already scrubbed\nSync\ndeja sync export/import — move memory between machines, append-only, idempotent\nOne binary. No models to download, no services to run, nothing leaves your machine. (opencode indexing shells out to the sqlite3 CLI, preinstalled on macOS and most Linux distros.)\nInstall\ncurl -fsSL https://raw.githubusercontent.com/vshulcz/deja-vu/main/install.sh | sh\nor:\ngo install github.com/vshulcz/deja-vu/cmd/deja@latest # Go\nnpx @vshulcz/deja-vu \" query \" # npm, no install\nbrew install vshulcz/tap/deja-vu # Homebrew\nWire it into the agents you use (edits config, keeps a .bak ):\ndeja install --all # MCP recall for claude-code, codex, opencode\ndeja install claude-code --auto # + SessionStart auto-recall hook\nThat's it. Next session, ask your agent:\nhave we dealt with jwt refresh rotation before? check your memory\n— or with --auto , don't ask: the agent starts each session already knowing what you solved in that project.\nCLI\n$ deja \"jwt refresh token\"\n[claude] api · Jul 8 · 8f31c0a9 — 2 matches\nlogin started failing after refresh token rotation; jwt kid mismatch in tests\nfixed by reloading jwks cache after rotateKey and adding a clock-skew test\n[codex] web · Jul 1 · b77d91e2 — 1 match\nrefresh token cookie needed SameSite=Lax in local callback flow\nCommand\nWhat it does\ndeja <query>\nSearch all histories. Multi-word = AND, substrings match ( code finds opencode ). --re , --harness , --project , --since 30d , --role , --json .\ndeja ctx <query>\nCompact markdown digest of the best match — pipe it into a prompt.\ndeja share <id>\nSanitized session digest for a colleague: secrets redacted, tool noise stripped.\ndeja stats\nTotals, per-harness split, top projects, monthly sparkline. --json too.\ndeja sync export <dir> [--full] / import <dir> / ssh <host> [--pull]\nMove memory between machines — via a shared folder or one ssh command. Watermarked, append-only, idempotent.\ndeja show <id> / deja last [n]\nRead one session / list recent ones.\ndeja sources\nDiscovered stores, sizes, message and redaction counts.\ndeja mcp\nThe stdio MCP server (what deja install wires in).\ndeja warmup\nBuild/refresh the index without searching — handy in cron or shell startup.\nContext piping without MCP:\nclaude \" Prior context: $( deja ctx ' database migration ' ) \"\nSync between machines\nPoint both machines at one shared folder (Syncthing, iCloud, a git repo — anything that moves files):\ndeja sync export ~ /Sync/deja # machine A: appends new batches since last export\ndeja sync import ~ /Sync/deja # machine B: picks up what it hasn't seen\nOr skip the shared folder when the other machine is a ssh hop away:\ndeja sync ssh mini # push new records to mini and import them there\ndeja sync ssh mini --pull # fetch mini's new records into this machine\nssh mode uses your system ssh/scp and the deja binary on the remote (looked up on PATH, falling back to ~/.local/bin/deja ).\nBatches are plain JSONL, redacted on the way out. Import is idempotent, so keep the folder as an append-only log and run both commands from cron if you like. Records never echo back to their origin. --full re-exports everything regardless of watermarks — useful when adding a machine after old batches are gone. Synced sessions show up under imported:<project> in search, recall , and session-start auto-recall.\nTeach your agent to remember\ndeja install --all wires up MCP recall and the session-start hook. To make\nthe agent reach for memory on its own, add this to your CLAUDE.md /\nAGENTS.md :\nBefore debugging or re-implementing something, run `deja \"<query>\"` (or the\nMCP recall tool) — past agent sessions across Claude Code, Codex and opencode\nare indexed locally. Cite what you reuse.\nMCP tools\nTool\nArguments\nReturns\nrecall\nquery , harness? , limit?\nDense matching snippets, ≤4KB — cheap on context.\nrecall_context\nquery\nMarkdown digest of the best-matching session.\nWith --auto , a SessionStart hook also feeds the current project's recent memory in automatically — read-only, capped at 2KB, and it never delays or breaks agent startup.\nSecurity\nCredentials are redacted at index time: AWS keys, generic api_key= / token= assignments, bearer tokens and raw JWTs, PEM private key blocks, provider tokens ( ghp_ , sk- , npm_ , xox. , AIza ), and scheme://user:pass@host URLs. The value is replaced with [redacted:<kind>] ; surrounding text stays searchable. deja sources shows per-store counts. Opt out with DEJA_NO_REDACT=1 (unsafe). deja share and deja sync export re-apply redaction on the way out.\nSupported harnesses\nHarness\nStore\nStatus\nClaude Code\n~/.claude/projects/**/*.jsonl\nCodex CLI\n~/.codex/sessions/** + history.jsonl\nopencode\n~/.local/share/opencode/opencode.db\naider, Gemini CLI\n#6 , #7\nplanned\nCustom locations via DEJA_CLAUDE_ROOT , DEJA_CODEX_ROOT , DEJA_OPENCODE_DB , DEJA_INDEX_DIR .\nPerformance\nMeasured on a real corpus — 1,250+ sessions, ~3.3GB across three harnesses:\nWarm search\n7–9 ms typical, ~40 ms worst-case\nCold index (once)\n~10 s\nIndex size\n~2.4% of corpus\nThe index is incremental: when a session file grows, only that file is re-read.\nHow it works\nLocal inverted index in ~/.cache/deja : parse JSONL/SQLite stores → redact credentials → records.bin + token buckets → manifest.json tracks per-file state so repeat runs only ingest what changed. The MCP server, stats, share and sync all read the same index. Details: docs/ARCHITECTURE.md .\nPrivacy: no network path exists in the indexing or search code. Local files in, local cache out.\nFAQ\nDoes anything leave my machine? No. There is no network code in the tool. sync writes files to a directory you choose; moving them is up to you.\nHow is this different from cass?\ncass is the kitchen-sink take on session search: 22 providers, Rust, optional semantic embeddings, a TUI. deja is the opposite bet — one small Go binary, pure lexical, three harnesses, zero setup — plus the memory-layer pieces around it: auto-recall, redaction, share, sync.\nAnd from MemPalace / Mem0 / Letta?\nThose are memory platforms : embeddings, vector stores, capture hooks or APIs that record going forward. deja has no capture step at all — it indexes what your agents already wrote to disk, including months of history from before you installed it. They can coexist.\nWhat about secrets already in my logs? They stay in the original harness files (that's your agent's data), but they don't enter deja's index, digests, shares or sync exports.\nWhat about Windows? Builds exist, CI runs the suite on Windows; macOS/Linux are the battle-tested paths. Field reports welcome: #9 .\nCan I exclude a project? Not yet — planned as --exclude ( #8 ). Today you can point DEJA_*_ROOT at a filtered copy.\nHow do I wipe everything?\ndeja uninstall --all\nrm -rf ~ /.cache/deja\nContributing\nmake build test lint — see CONTRIBUTING.md . Adding a harness is one parser file: docs/ARCHITECTURE.md . Good first issues are labeled.\nLicense\nMIT © Vladislav Shulcz\nAbout\nMemory layer for coding agents: search, MCP recall, auto-context, secret redaction, stats, share and sync over the session logs Claude Code, Codex and opencode already write. One zero-dep binary.\nvshulcz.github.io/deja-vu/\nTopics\nsearch\ngo\ncli\nmemory\nmcp\nopencode\ndeveloper-tools\ncodex\nai-agents\nclaude-code\nResources\nReadme\nLicense\nMIT license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n214\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv0.6.0\nLatest\nJul 14, 2026\n+ 8 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nGo\n95.9%\nShell\n2.4%\nJavaScript\n1.5%\nMakefile\n0.2%\n\n## full_text\n\nvshulcz\ndeja-vu\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n214\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n61 Commits\n61 Commits\n.github\n.github\nassets\nassets\ncmd/ deja\ncmd/ deja\ndocs\ndocs\nfixtures/ synthetic\nfixtures/ synthetic\ninternal\ninternal\nnpm\nnpm\nscripts\nscripts\n.gitignore\n.gitignore\n.golangci.yml\n.golangci.yml\n.goreleaser.yaml\n.goreleaser.yaml\nCHANGELOG.md\nCHANGELOG.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\ngo.mod\ngo.mod\ninstall.sh\ninstall.sh\nView all files\nRepository files navigation\nYour agents already solved this. deja finds it.\nvshulcz.github.io/deja-vu\nClaude Code, Codex and opencode write every conversation to local files — gigabytes of debugged problems and design decisions you can't search. deja is a zero-dependency binary that turns those histories into a memory layer:\nSearch\ndeja \"connection pool exhausted\" — 7–9 ms over gigabytes, retroactive: months of logs from before you installed it\nAgent recall\nMCP recall tool — the agent answers \"we fixed this three weeks ago\" instead of re-debugging, across harnesses\nAuto-recall\ninstall --auto adds a SessionStart hook: relevant memory lands in context before you ask\nRedaction\nAPI keys, JWTs, private keys are stripped at index time — the cache is safe to keep\nStats\ndeja stats — your agent work, wrapped: harnesses, top projects, activity sparkline\nShare\ndeja share <id> — hand a colleague a sanitized digest of a session, secrets already scrubbed\nSync\ndeja sync export/import — move memory between machines, append-only, idempotent\nOne binary. No models to download, no services to run, nothing leaves your machine. (opencode indexing shells out to the sqlite3 CLI, preinstalled on macOS and most Linux distros.)\nInstall\ncurl -fsSL https://raw.githubusercontent.com/vshulcz/deja-vu/main/install.sh | sh\nor:\ngo install github.com/vshulcz/deja-vu/cmd/deja@latest # Go\nnpx @vshulcz/deja-vu \" query \" # npm, no install\nbrew install vshulcz/tap/deja-vu # Homebrew\nWire it into the agents you use (edits config, keeps a .bak ):\ndeja install --all # MCP recall for claude-code, codex, opencode\ndeja install claude-code --auto # + SessionStart auto-recall hook\nThat's it. Next session, ask your agent:\nhave we dealt with jwt refresh rotation before? check your memory\n— or with --auto , don't ask: the agent starts each session already knowing what you solved in that project.\nCLI\n$ deja \"jwt refresh token\"\n[claude] api · Jul 8 · 8f31c0a9 — 2 matches\nlogin started failing after refresh token rotation; jwt kid mismatch in tests\nfixed by reloading jwks cache after rotateKey and adding a clock-skew test\n[codex] web · Jul 1 · b77d91e2 — 1 match\nrefresh token cookie needed SameSite=Lax in local callback flow\nCommand\nWhat it does\ndeja <query>\nSearch all histories. Multi-word = AND, substrings match ( code finds opencode ). --re , --harness , --project , --since 30d , --role , --json .\ndeja ctx <query>\nCompact markdown digest of the best match — pipe it into a prompt.\ndeja share <id>\nSanitized session digest for a colleague: secrets redacted, tool noise stripped.\ndeja stats\nTotals, per-harness split, top projects, monthly sparkline. --json too.\ndeja sync export <dir> [--full] / import <dir> / ssh <host> [--pull]\nMove memory between machines — via a shared folder or one ssh command. Watermarked, append-only, idempotent.\ndeja show <id> / deja last [n]\nRead one session / list recent ones.\ndeja sources\nDiscovered stores, sizes, message and redaction counts.\ndeja mcp\nThe stdio MCP server (what deja install wires in).\ndeja warmup\nBuild/refresh the index without searching — handy in cron or shell startup.\nContext piping without MCP:\nclaude \" Prior context: $( deja ctx ' database migration ' ) \"\nSync between machines\nPoint both machines at one shared folder (Syncthing, iCloud, a git repo — anything that moves files):\ndeja sync export ~ /Sync/deja # machine A: appends new batches since last export\ndeja sync import ~ /Sync/deja # machine B: picks up what it hasn't seen\nOr skip the shared folder when the other machine is a ssh hop away:\ndeja sync ssh mini # push new records to mini and import them there\ndeja sync ssh mini --pull # fetch mini's new records into this machine\nssh mode uses your system ssh/scp and the deja binary on the remote (looked up on PATH, falling back to ~/.local/bin/deja ).\nBatches are plain JSONL, redacted on the way out. Import is idempotent, so keep the folder as an append-only log and run both commands from cron if you like. Records never echo back to their origin. --full re-exports everything regardless of watermarks — useful when adding a machine after old batches are gone. Synced sessions show up under imported:<project> in search, recall , and session-start auto-recall.\nTeach your agent to remember\ndeja install --all wires up MCP recall and the session-start hook. To make\nthe agent reach for memory on its own, add this to your CLAUDE.md /\nAGENTS.md :\nBefore debugging or re-implementing something, run `deja \"<query>\"` (or the\nMCP recall tool) — past agent sessions across Claude Code, Codex and opencode\nare indexed locally. Cite what you reuse.\nMCP tools\nTool\nArguments\nReturns\nrecall\nquery , harness? , limit?\nDense matching snippets, ≤4KB — cheap on context.\nrecall_context\nquery\nMarkdown digest of the best-matching session.\nWith --auto , a SessionStart hook also feeds the current project's recent memory in automatically — read-only, capped at 2KB, and it never delays or breaks agent startup.\nSecurity\nCredentials are redacted at index time: AWS keys, generic api_key= / token= assignments, bearer tokens and raw JWTs, PEM private key blocks, provider tokens ( ghp_ , sk- , npm_ , xox. , AIza ), and scheme://user:pass@host URLs. The value is replaced with [redacted:<kind>] ; surrounding text stays searchable. deja sources shows per-store counts. Opt out with DEJA_NO_REDACT=1 (unsafe). deja share and deja sync export re-apply redaction on the way out.\nSupported harnesses\nHarness\nStore\nStatus\nClaude Code\n~/.claude/projects/**/*.jsonl\nCodex CLI\n~/.codex/sessions/** + history.jsonl\nopencode\n~/.local/share/opencode/opencode.db\naider, Gemini CLI\n#6 , #7\nplanned\nCustom locations via DEJA_CLAUDE_ROOT , DEJA_CODEX_ROOT , DEJA_OPENCODE_DB , DEJA_INDEX_DIR .\nPerformance\nMeasured on a real corpus — 1,250+ sessions, ~3.3GB across three harnesses:\nWarm search\n7–9 ms typical, ~40 ms worst-case\nCold index (once)\n~10 s\nIndex size\n~2.4% of corpus\nThe index is incremental: when a session file grows, only that file is re-read.\nHow it works\nLocal inverted index in ~/.cache/deja : parse JSONL/SQLite stores → redact credentials → records.bin + token buckets → manifest.json tracks per-file state so repeat runs only ingest what changed. The MCP server, stats, share and sync all read the same index. Details: docs/ARCHITECTURE.md .\nPrivacy: no network path exists in the indexing or search code. Local files in, local cache out.\nFAQ\nDoes anything leave my machine? No. There is no network code in the tool. sync writes files to a directory you choose; moving them is up to you.\nHow is this different from cass?\ncass is the kitchen-sink take on session search: 22 providers, Rust, optional semantic embeddings, a TUI. deja is the opposite bet — one small Go binary, pure lexical, three harnesses, zero setup — plus the memory-layer pieces around it: auto-recall, redaction, share, sync.\nAnd from MemPalace / Mem0 / Letta?\nThose are memory platforms : embeddings, vector stores, capture hooks or APIs that record going forward. deja has no capture step at all — it indexes what your agents already wrote to disk, including months of history from before you installed it. They can coexist.\nWhat about secrets already in my logs? They stay in the original harness files (that's your agent's data), but they don't enter deja's index, digests, shares or sync exports.\nWhat about Windows? Builds exist, CI runs the suite on Windows; macOS/Linux are the battle-tested paths. Field reports welcome: #9 .\nCan I exclude a project? Not yet — planned as --exclude ( #8 ). Today you can point DEJA_*_ROOT at a filtered copy.\nHow do I wipe everything?\ndeja uninstall --all\nrm -rf ~ /.cache/deja\nContributing\nmake build test lint — see CONTRIBUTING.md . Adding a harness is one parser file: docs/ARCHITECTURE.md . Good first issues are labeled.\nLicense\nMIT © Vladislav Shulcz\nAbout\nMemory layer for coding agents: search, MCP recall, auto-context, secret redaction, stats, share and sync over the session logs Claude Code, Codex and opencode already write. One zero-dep binary.\nvshulcz.github.io/deja-vu/\nTopics\nsearch\ngo\ncli\nmemory\nmcp\nopencode\ndeveloper-tools\ncodex\nai-agents\nclaude-code\nResources\nReadme\nLicense\nMIT license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n214\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv0.6.0\nLatest\nJul 14, 2026\n+ 8 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nGo\n95.9%\nShell\n2.4%\nJavaScript\n1.5%\nMakefile\n0.2%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 88\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] 一个面向编程 AI 智能体的开源内存项目在 GitHub 发布，支持通过 SSH 同步记忆数据。该项目允许智能体跨会话保留上下文，无需依赖特定云服务，用户可自托管。代码已开源，便于开发者集成与定制。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] vshulcz deja-vu Public Notifications You must be signed in to change notification settings Fork Star 214 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 61 Commits 61 Commits .\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] github assets assets cmd/ deja cmd/ deja docs docs fixtures/ synthetic fixtures/ synthetic internal internal npm npm scripts scripts .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] md LICENSE LICENSE Makefile Makefile README.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] sh View all files Repository files navigation Your agents already solved this.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] io/deja-vu Claude Code, Codex and opencode write every conversation to local files — gigabytes of debugged problems and design decisions you can't search.\n"
+}

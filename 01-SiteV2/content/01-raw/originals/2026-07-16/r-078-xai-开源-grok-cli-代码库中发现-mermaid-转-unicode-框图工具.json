@@ -1,0 +1,269 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-078",
+  "title": "xAI 开源 Grok CLI 代码库中发现 Mermaid 转 Unicode 框图工具",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://simonwillison.net/2026/Jul/16/grok-mermaid",
+  "canonical_url": "https://simonwillison.net/2026/Jul/16/grok-mermaid",
+  "source_name": "Simon Willison 博客",
+  "source_type": "builder",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-16T00:33:18.000Z",
+  "collected_at": "2026-07-16T02:39:33.866Z",
+  "language": "mixed",
+  "full_text": "Tool: Mermaid to Unicode box art (grok-mermaid)\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Teleport &mdash; How do you ensure that AI agents act within your intended boundaries? Teleport’s “From Zero Trust to Agent Trust” white paper details what needs to be in place to realize the promise of agentic designs.\n16th July 2026\nTool\nMermaid to Unicode box art (grok-mermaid)\nWhile exploring the codebase for the newly open-sourced Grok CLI coding agent I came across xai-grok-markdown/src/mermaid.rs , a \"self-contained terminal renderer for Mermaid diagrams\" written in Rust.\nI figured it would be fun to try that out in a browser via WebAssembly. Here's the prompt I ran in Claude Code for web (Fable 5), and this is what the resulting tool looks like:\nPosted 16th July 2026 at 12:33 am\nRecent articles\nThe new GPT-5.6 family: Luna, Terra, Sol - 9th July 2026\nsqlite-utils 4.0, now with database schema migrations - 7th July 2026\nsqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25) - 5th July 2026\nThis is a beat by Simon Willison, posted on 16th July 2026 .\ntools\n69\nrust\n111\nwebassembly\n127\nmermaid\ngrok\n14\nxai\n13\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "clean_text": "Tool: Mermaid to Unicode box art (grok-mermaid)\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Teleport &mdash; How do you ensure that AI agents act within your intended boundaries? Teleport’s “From Zero Trust to Agent Trust” white paper details what needs to be in place to realize the promise of agentic designs.\n16th July 2026\nTool\nMermaid to Unicode box art (grok-mermaid)\nWhile exploring the codebase for the newly open-sourced Grok CLI coding agent I came across xai-grok-markdown/src/mermaid.rs , a \"self-contained terminal renderer for Mermaid diagrams\" written in Rust.\nI figured it would be fun to try that out in a browser via WebAssembly. Here's the prompt I ran in Claude Code for web (Fable 5), and this is what the resulting tool looks like:\nPosted 16th July 2026 at 12:33 am\nRecent articles\nThe new GPT-5.6 family: Luna, Terra, Sol - 9th July 2026\nsqlite-utils 4.0, now with database schema migrations - 7th July 2026\nsqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25) - 5th July 2026\nThis is a beat by Simon Willison, posted on 16th July 2026 .\ntools\n69\nrust\n111\nwebassembly\n127\nmermaid\ngrok\n14\nxai\n13\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-16/r-078-xai-开源-grok-cli-代码库中发现-mermaid-转-unicode-框图工具.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-16/r-078-xai-开源-grok-cli-代码库中发现-mermaid-转-unicode-框图工具.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "medium",
+  "extraction_method": "body-visible-text",
+  "readability_score": 46,
+  "extractor_diagnostics": {
+    "readability_score": 46,
+    "text_length": 1459,
+    "paragraph_count": 13,
+    "sentence_count": 7,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 1459,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "71b648b8a206abcb",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "xAI 开源 Grok CLI 代码库中发现 Mermaid 转 Unicode 框图工具",
+    "discovery_summary": "xAI 开源的 Grok CLI 编码智能体代码库中包含一个用 Rust 编写的 Mermaid 图表示例终端渲染器 `xai-grok-markdown/src/mermaid.rs`。开发者通过 Claude Code for web （Fable 5） 将其编译为 WebAssembly，实现在浏览器中运行该工具。",
+    "source_name": "Simon Willison 博客",
+    "origin_url": "https://simonwillison.net/2026/Jul/16/grok-mermaid",
+    "discovered_at": "2026-07-16T02:30:38.297Z",
+    "rank_on_page": 41,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "72f1fc2966332d20",
+  "content_hash": "71b648b8a206abcb",
+  "full_text_hash": "71b648b8a206abcb",
+  "semantic_hash": "f02a63fee31c6b15",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-16T00:33:18.000Z",
+  "last_seen_at": "2026-07-16T02:39:33.866Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "opinion",
+      "text": "xAI 开源的 Grok CLI 编码智能体代码库中包含一个用 Rust 编写的 Mermaid 图表示例终端渲染器 `xai-grok-markdown/src/mermaid.rs`。开发者通过 Claude Code for web （Fable 5） 将其编译为 WebAssembly，实现在浏览器中运行该工具。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Tool: Mermaid to Unicode box art (grok-mermaid) Simon Willison’s Weblog Subscribe Sponsored by: Teleport &mdash; How do you ensure that AI agents act within your intended boundaries?",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "quote",
+      "text": "Teleport’s “From Zero Trust to Agent Trust” white paper details what needs to be in place to realize the promise of agentic designs.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "16th July 2026 Tool Mermaid to Unicode box art (grok-mermaid) While exploring the codebase for the newly open-sourced Grok CLI coding agent I came across xai-grok-markdown/src/mermaid.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "quote",
+      "text": "rs , a \"self-contained terminal renderer for Mermaid diagrams\" written in Rust.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "I figured it would be fun to try that out in a browser via WebAssembly.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-16T02:39:33.866Z",
+  "business_elements": {
+    "companies": [
+      "Simon Willison 博客"
+    ],
+    "products": [
+      "Claude",
+      "agents",
+      "Agent",
+      "agent",
+      "GPT-5"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "5",
+      "16",
+      "2026",
+      "12",
+      "33",
+      "5.6",
+      "9",
+      "4.0"
+    ],
+    "quotes": [
+      "From Zero Trust to Agent Trust",
+      "self-contained terminal renderer for Mermaid diagrams"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Tool: Mermaid to Unicode box art (grok-mermaid) Simon Willison’s Weblog Subscribe Sponsored by: Teleport &mdash; How do you ensure that AI agents act within your intended boundaries?",
+      "16th July 2026 Tool Mermaid to Unicode box art (grok-mermaid) While exploring the codebase for the newly open-sourced Grok CLI coding agent I came across xai-grok-markdown/src/mermaid.",
+      "I figured it would be fun to try that out in a browser via WebAssembly."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 4,
+    "importance_reason": "technical trend or capability shift; rubric=4 concrete important change",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# xAI 开源 Grok CLI 代码库中发现 Mermaid 转 Unicode 框图工具\n\n- raw_id: R-078\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://simonwillison.net/2026/Jul/16/grok-mermaid\n- source_name: Simon Willison 博客\n- collected_at: 2026-07-16T02:39:33.866Z\n\n## clean_text\n\nTool: Mermaid to Unicode box art (grok-mermaid)\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Teleport &mdash; How do you ensure that AI agents act within your intended boundaries? Teleport’s “From Zero Trust to Agent Trust” white paper details what needs to be in place to realize the promise of agentic designs.\n16th July 2026\nTool\nMermaid to Unicode box art (grok-mermaid)\nWhile exploring the codebase for the newly open-sourced Grok CLI coding agent I came across xai-grok-markdown/src/mermaid.rs , a \"self-contained terminal renderer for Mermaid diagrams\" written in Rust.\nI figured it would be fun to try that out in a browser via WebAssembly. Here's the prompt I ran in Claude Code for web (Fable 5), and this is what the resulting tool looks like:\nPosted 16th July 2026 at 12:33 am\nRecent articles\nThe new GPT-5.6 family: Luna, Terra, Sol - 9th July 2026\nsqlite-utils 4.0, now with database schema migrations - 7th July 2026\nsqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25) - 5th July 2026\nThis is a beat by Simon Willison, posted on 16th July 2026 .\ntools\n69\nrust\n111\nwebassembly\n127\nmermaid\ngrok\n14\nxai\n13\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## full_text\n\nTool: Mermaid to Unicode box art (grok-mermaid)\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Teleport &mdash; How do you ensure that AI agents act within your intended boundaries? Teleport’s “From Zero Trust to Agent Trust” white paper details what needs to be in place to realize the promise of agentic designs.\n16th July 2026\nTool\nMermaid to Unicode box art (grok-mermaid)\nWhile exploring the codebase for the newly open-sourced Grok CLI coding agent I came across xai-grok-markdown/src/mermaid.rs , a \"self-contained terminal renderer for Mermaid diagrams\" written in Rust.\nI figured it would be fun to try that out in a browser via WebAssembly. Here's the prompt I ran in Claude Code for web (Fable 5), and this is what the resulting tool looks like:\nPosted 16th July 2026 at 12:33 am\nRecent articles\nThe new GPT-5.6 family: Luna, Terra, Sol - 9th July 2026\nsqlite-utils 4.0, now with database schema migrations - 7th July 2026\nsqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25) - 5th July 2026\nThis is a beat by Simon Willison, posted on 16th July 2026 .\ntools\n69\nrust\n111\nwebassembly\n127\nmermaid\ngrok\n14\nxai\n13\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 46\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: medium\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [opinion / signal_card_candidate, relationship_graph_input, viewpoint / high] xAI 开源的 Grok CLI 编码智能体代码库中包含一个用 Rust 编写的 Mermaid 图表示例终端渲染器 `xai-grok-markdown/src/mermaid.rs`。开发者通过 Claude Code for web （Fable 5） 将其编译为 WebAssembly，实现在浏览器中运行该工具。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Tool: Mermaid to Unicode box art (grok-mermaid) Simon Willison’s Weblog Subscribe Sponsored by: Teleport &mdash; How do you ensure that AI agents act within your intended boundaries?\n3. [quote / signal_card_candidate, relationship_graph_input, viewpoint / high] Teleport’s “From Zero Trust to Agent Trust” white paper details what needs to be in place to realize the promise of agentic designs.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 16th July 2026 Tool Mermaid to Unicode box art (grok-mermaid) While exploring the codebase for the newly open-sourced Grok CLI coding agent I came across xai-grok-markdown/src/mermaid.\n5. [quote / signal_card_candidate, relationship_graph_input, viewpoint / high] rs , a \"self-contained terminal renderer for Mermaid diagrams\" written in Rust.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] I figured it would be fun to try that out in a browser via WebAssembly.\n"
+}

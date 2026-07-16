@@ -1,0 +1,344 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-068
+title: "Buzz Aldrin sells famous felt-tip pen that helped launch Apollo from the Moon"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://arstechnica.com/space/2026/07/apollo-11s-broken-switch-and-mission-saving-pen-sell-for-860k/"
+canonical_url: "https://arstechnica.com/space/2026/07/apollo-11s-broken-switch-and-mission-saving-pen-sell-for-860k"
+source_name: "Ars Technica AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-15T22:10:41.000Z"
+collected_at: 2026-07-16T02:39:33.818Z
+language: mixed
+full_text_hash: c572370057dc9056
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-16/r-068-buzz-aldrin-sells-famous-felt-tip-pen-that-helped-launch-apollo-from-t.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-16/r-068-buzz-aldrin-sells-famous-felt-tip-pen-that-helped-launch-apollo-from-t.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":6563,"paragraph_count":28,"sentence_count":48,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 6563
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c572370057dc9056","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 055c6966a992d40e
+content_hash: c572370057dc9056
+semantic_hash: 0176527186d6222d
+duplicate_of: ""
+first_seen_at: "2026-07-15T22:10:41.000Z"
+last_seen_at: 2026-07-16T02:39:33.818Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":2,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Ars Technica AI","Microsoft"],"products":[],"people":[],"industries":["法律 / 法务"],"roles":["开发者 / 工程团队","法务 / 律师"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","法务"],"numbers":["$857","600","57","11","50","2019","2012","2022"],"quotes":["Houston, Tranquility. Do you have a way of showing the configuration of the engine arm circuit breaker?","Now we could leave the lunar surface,","rendezvous with Mike Collins in the command module, and head for home. Disaster averted.","Destination Moon","Columbia."]}
+evidence_seed: {"company_actions":["While an impressive sale, the pen and switch did not break records.","What otherwise might have been worthless bits of trash commanded the highest bids due to where the two items were 57 years ago—lifting off aboard NASA’s Apollo 11 spacecraft on humanity’s first mission to land astronauts on the Moon.","More than flown odds and ends, one was the problem that almost stranded Neil Armstrong and Buzz Aldrin on the lunar surface, and the other was the simple solution to saving the mission."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"While an impressive sale, the pen and switch did not break records.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav A dried-out felt-tip marker and a snapped-off piece of molded black plastic sold for $857,600 at a Sotheby’s auction on Wednesday.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"What otherwise might have been worthless bits of trash commanded the highest bids due to where the two items were 57 years ago—lifting off aboard NASA’s Apollo 11 spacecraft on humanity’s first mission to land astronauts on the Moon.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"More than flown odds and ends, one was the problem that almost stranded Neil Armstrong and Buzz Aldrin on the lunar surface, and the other was the simple solution to saving the mission.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"“Houston, Tranquility.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Do you have a way of showing the configuration of the engine arm circuit breaker?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-16T02:39:33.818Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Buzz Aldrin sells famous felt-tip pen that helped launch Apollo from the Moon
+
+## clean_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+A dried-out felt-tip marker and a snapped-off piece of molded black plastic sold for $857,600 at a Sotheby’s auction on Wednesday.
+What otherwise might have been worthless bits of trash commanded the highest bids due to where the two items were 57 years ago—lifting off aboard NASA’s Apollo 11 spacecraft on humanity’s first mission to land astronauts on the Moon. More than flown odds and ends, one was the problem that almost stranded Neil Armstrong and Buzz Aldrin on the lunar surface, and the other was the simple solution to saving the mission.
+“Houston, Tranquility. Do you have a way of showing the configuration of the engine arm circuit breaker?” radioed Aldrin to Mission Control after realizing he or Armstrong had inadvertently broken off the top of the circuit breaker switch that would enable their ascent engine to ignite, beginning their trip back to Earth. “The reason I’m asking is because the end of it appears to be broken off. I think we can push it back in again. I’m not sure we could pull it out if we pushed it in, though.”
+As engineers on the ground worked to devise a workaround, Aldrin came up with a straightforward idea, as he described decades later in the letter accompanying the artifacts’ sale .
+Apollo 11 astronaut Buzz Aldrin’s letter describing the broken circuit breaker switch and felt-tip pin from his Moon mission.
+Credit:
+Sotheby’s
+Apollo 11 astronaut Buzz Aldrin’s letter describing the broken circuit breaker switch and felt-tip pin from his Moon mission.
+Credit:
+Sotheby's
+“While I could have stuck my finger in and reset the switch, there was electricity flowing through the breaker and I did not want to electrocute myself. I had a plastic felt tip pen in one of my suit pockets and it fit into the breaker opening, so I pushed the marker pen into the circuit breaker, it clicked on, and we rearmed the Engine Arm circuit,” he wrote.
+“Now we could leave the lunar surface,” Aldrin said, “rendezvous with Mike Collins in the command module, and head for home. Disaster averted.”
+Storied switch
+The tale of the pen and circuit breaker is well known, having been recounted by Aldrin in his books and talks, as well as for years having been included on the pamphlet packaged with every Fisher Space Pen sold until Aldrin pointed out that as an engineer, he would never insert a metal-tipped writing instrument into a live electrical socket. The pen he used, which was sold on Wednesday, was a Duro-brand Rocket felt-tip marker.
+Aldrin also loaned the pen and broken-off circuit breaker switch to the Smithsonian for its “Destination Moon” traveling exhibit featuring the Apollo 11 command module “Columbia.” The tour visited five US cities over the course of two years, spanning the 50th anniversary of the first Moon landing in 2019.
+The location of the engine arm circuit breaker switch in the Apollo lunar module that was broken off on Apollo 11.
+Credit:
+NASA
+The location of the engine arm circuit breaker switch in the Apollo lunar module that was broken off on Apollo 11.
+Credit:
+NASA
+A law enacted in 2012 reaffirmed that Aldrin and his fellow Apollo-era astronauts legally had title to the spacecraft hardware and other crew equipment they kept as mementos from their missions. The pieces are theirs to own, sell, trade, or donate as they desire.
+This was at least the second time that the pen and switch had been offered for sale. In 2022, Sotheby’s listed the same set as part of its “Buzz Aldrin: American Icon” sale. Despite eliciting bids up to $650,000, the lot failed to reach its reserve and was passed.
+This time, the bids reached $670,000, and it was sold on behalf of the Buzz Aldrin Family Trust. The $857,600 total includes the buyer’s premium assessed by Sotheby’s. The winning bidder was not identified other than as a participant by phone.
+Not a record-setter
+While the sale price was impressive, the pen and switch did not break into the top 10 list of the highest prices at a public sale for space artifacts and memorabilia. That ranking begins at $1.625 million, the amount paid in 2015 for a Bulova watch worn outside on the surface of the Moon during the 1971 Apollo 15 mission and tops out at the $2,882,500 spent for the former Soviet Union’s Vostok 3KA-2 space capsule as auctioned by Sotheby’s in 2011.
+The broken circuit breaker switch that nearly ended Apollo 11, and the pen that Buzz Aldrin used to save himself and Neil Armstrong.
+Credit:
+Sotheby’s
+The broken circuit breaker switch that nearly ended Apollo 11, and the pen that Buzz Aldrin used to save himself and Neil Armstrong.
+Credit:
+Sotheby's
+As a point of comparison, the second-highest price for a space-flown artifact was the $2,772,500 commanded by Aldrin’s Apollo 11 in-flight jacket , which Sotheby’s sold in 2022.
+Wednesday’s “Space Exploration” sale was part of Sotheby’s annual Geek Week of science and technology-themed auctions. The sale offered 134 lots, including more than 40 items from Aldrin’s collection. In total, it brought in $2,862,336.
+A modern Moonshine gold Omega Speedmaster chronograph, one of 24 watches consigned by the Aldrin Family Trust, sold for $70,400. The same 2026 model is still for sale from Omega for $53,500 retail.
+Another sale highlight, and the only item other than the pen and switch set to sell for six figures, was the pressure hatch from the Skylab III command module, flown to and from the United States’ first space station in 1974. It sold for $192,000.
+Robert Pearlman
+Robert Pearlman
+Robert Pearlman is a space historian, journalist and the founder and editor of collectSPACE, a daily news publication and online community focused on where space exploration intersects with pop culture. He is also a contributing writer for Space.com and co-author of "Space Stations: The Art, Science, and Reality of Working in Space” published by Smithsonian Books in 2018. He is on the leadership board for For All Moonkind and is a member of the American Astronautical Society's history committee.
+11 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+Microsoft’s Secure Boot has been broken for a decade and no one noticed until now
+2.
+How hard is it to build orbital data centers, actually?
+3.
+Sheetz moves 838 stores off VMware: Broadcom created “too much uncertainty"
+4.
+A most improbable astronaut just went to space
+5.
+Probe into explosive diarrheal cases points to Taco Bell and bad lettuce
+Customize
+
+## full_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+A dried-out felt-tip marker and a snapped-off piece of molded black plastic sold for $857,600 at a Sotheby’s auction on Wednesday.
+What otherwise might have been worthless bits of trash commanded the highest bids due to where the two items were 57 years ago—lifting off aboard NASA’s Apollo 11 spacecraft on humanity’s first mission to land astronauts on the Moon. More than flown odds and ends, one was the problem that almost stranded Neil Armstrong and Buzz Aldrin on the lunar surface, and the other was the simple solution to saving the mission.
+“Houston, Tranquility. Do you have a way of showing the configuration of the engine arm circuit breaker?” radioed Aldrin to Mission Control after realizing he or Armstrong had inadvertently broken off the top of the circuit breaker switch that would enable their ascent engine to ignite, beginning their trip back to Earth. “The reason I’m asking is because the end of it appears to be broken off. I think we can push it back in again. I’m not sure we could pull it out if we pushed it in, though.”
+As engineers on the ground worked to devise a workaround, Aldrin came up with a straightforward idea, as he described decades later in the letter accompanying the artifacts’ sale .
+Apollo 11 astronaut Buzz Aldrin’s letter describing the broken circuit breaker switch and felt-tip pin from his Moon mission.
+Credit:
+Sotheby’s
+Apollo 11 astronaut Buzz Aldrin’s letter describing the broken circuit breaker switch and felt-tip pin from his Moon mission.
+Credit:
+Sotheby's
+“While I could have stuck my finger in and reset the switch, there was electricity flowing through the breaker and I did not want to electrocute myself. I had a plastic felt tip pen in one of my suit pockets and it fit into the breaker opening, so I pushed the marker pen into the circuit breaker, it clicked on, and we rearmed the Engine Arm circuit,” he wrote.
+“Now we could leave the lunar surface,” Aldrin said, “rendezvous with Mike Collins in the command module, and head for home. Disaster averted.”
+Storied switch
+The tale of the pen and circuit breaker is well known, having been recounted by Aldrin in his books and talks, as well as for years having been included on the pamphlet packaged with every Fisher Space Pen sold until Aldrin pointed out that as an engineer, he would never insert a metal-tipped writing instrument into a live electrical socket. The pen he used, which was sold on Wednesday, was a Duro-brand Rocket felt-tip marker.
+Aldrin also loaned the pen and broken-off circuit breaker switch to the Smithsonian for its “Destination Moon” traveling exhibit featuring the Apollo 11 command module “Columbia.” The tour visited five US cities over the course of two years, spanning the 50th anniversary of the first Moon landing in 2019.
+The location of the engine arm circuit breaker switch in the Apollo lunar module that was broken off on Apollo 11.
+Credit:
+NASA
+The location of the engine arm circuit breaker switch in the Apollo lunar module that was broken off on Apollo 11.
+Credit:
+NASA
+A law enacted in 2012 reaffirmed that Aldrin and his fellow Apollo-era astronauts legally had title to the spacecraft hardware and other crew equipment they kept as mementos from their missions. The pieces are theirs to own, sell, trade, or donate as they desire.
+This was at least the second time that the pen and switch had been offered for sale. In 2022, Sotheby’s listed the same set as part of its “Buzz Aldrin: American Icon” sale. Despite eliciting bids up to $650,000, the lot failed to reach its reserve and was passed.
+This time, the bids reached $670,000, and it was sold on behalf of the Buzz Aldrin Family Trust. The $857,600 total includes the buyer’s premium assessed by Sotheby’s. The winning bidder was not identified other than as a participant by phone.
+Not a record-setter
+While the sale price was impressive, the pen and switch did not break into the top 10 list of the highest prices at a public sale for space artifacts and memorabilia. That ranking begins at $1.625 million, the amount paid in 2015 for a Bulova watch worn outside on the surface of the Moon during the 1971 Apollo 15 mission and tops out at the $2,882,500 spent for the former Soviet Union’s Vostok 3KA-2 space capsule as auctioned by Sotheby’s in 2011.
+The broken circuit breaker switch that nearly ended Apollo 11, and the pen that Buzz Aldrin used to save himself and Neil Armstrong.
+Credit:
+Sotheby’s
+The broken circuit breaker switch that nearly ended Apollo 11, and the pen that Buzz Aldrin used to save himself and Neil Armstrong.
+Credit:
+Sotheby's
+As a point of comparison, the second-highest price for a space-flown artifact was the $2,772,500 commanded by Aldrin’s Apollo 11 in-flight jacket , which Sotheby’s sold in 2022.
+Wednesday’s “Space Exploration” sale was part of Sotheby’s annual Geek Week of science and technology-themed auctions. The sale offered 134 lots, including more than 40 items from Aldrin’s collection. In total, it brought in $2,862,336.
+A modern Moonshine gold Omega Speedmaster chronograph, one of 24 watches consigned by the Aldrin Family Trust, sold for $70,400. The same 2026 model is still for sale from Omega for $53,500 retail.
+Another sale highlight, and the only item other than the pen and switch set to sell for six figures, was the pressure hatch from the Skylab III command module, flown to and from the United States’ first space station in 1974. It sold for $192,000.
+Robert Pearlman
+Robert Pearlman
+Robert Pearlman is a space historian, journalist and the founder and editor of collectSPACE, a daily news publication and online community focused on where space exploration intersects with pop culture. He is also a contributing writer for Space.com and co-author of "Space Stations: The Art, Science, and Reality of Working in Space” published by Smithsonian Books in 2018. He is on the leadership board for For All Moonkind and is a member of the American Astronautical Society's history committee.
+11 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+Microsoft’s Secure Boot has been broken for a decade and no one noticed until now
+2.
+How hard is it to build orbital data centers, actually?
+3.
+Sheetz moves 838 stores off VMware: Broadcom created “too much uncertainty"
+4.
+A most improbable astronaut just went to space
+5.
+Probe into explosive diarrheal cases points to Taco Bell and bad lettuce
+Customize
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":6563,"paragraph_count":28,"sentence_count":48,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   While an impressive sale, the pen and switch did not break records.
+
+2. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav A dried-out felt-tip marker and a snapped-off piece of molded black plastic sold for $857,600 at a Sotheby’s auction on Wednesday.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   What otherwise might have been worthless bits of trash commanded the highest bids due to where the two items were 57 years ago—lifting off aboard NASA’s Apollo 11 spacecraft on humanity’s first mission to land astronauts on the Moon.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   More than flown odds and ends, one was the problem that almost stranded Neil Armstrong and Buzz Aldrin on the lunar surface, and the other was the simple solution to saving the mission.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   “Houston, Tranquility.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Do you have a way of showing the configuration of the engine arm circuit breaker?
+
+## business_elements
+
+- companies: Ars Technica AI, Microsoft
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务
+- roles: 开发者 / 工程团队, 法务 / 律师
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 法务
+- numbers: $857, 600, 57, 11, 50, 2019, 2012, 2022
+- quotes: Houston, Tranquility. Do you have a way of showing the configuration of the engine arm circuit breaker? / Now we could leave the lunar surface, / rendezvous with Mike Collins in the command module, and head for home. Disaster averted. / Destination Moon / Columbia.
+
+## evidence_seed
+
+- company_actions: While an impressive sale, the pen and switch did not break records. / What otherwise might have been worthless bits of trash commanded the highest bids due to where the two items were 57 years ago—lifting off aboard NASA’s Apollo 11 spacecraft on humanity’s first mission to land astronauts on the Moon. / More than flown odds and ends, one was the problem that almost stranded Neil Armstrong and Buzz Aldrin on the lunar surface, and the other was the simple solution to saving the mission.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 开发者 / 工程团队, 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+While an impressive sale, the pen and switch did not break records.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
