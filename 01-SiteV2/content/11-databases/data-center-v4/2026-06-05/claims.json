@@ -1,0 +1,800 @@
+[
+  {
+    "claim_id": "CL-da31990aad053e3c",
+    "raw_id": "RAW-ea0627e96c0c3b4f",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.163",
+    "predicate": "product_release",
+    "object": "Added requiredMinimumVersion and requiredMaximumVersion managed settings — Claude Code refuses to start if its version is outside the allowed range and directs the user to an approved version",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ea0627e96c0c3b4f",
+      "start": 415,
+      "end": 606
+    },
+    "source_quote": "Added requiredMinimumVersion and requiredMaximumVersion managed settings — Claude Code refuses to start if its version is outside the allowed range and directs the user to an approved version",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7534b2c96466ab8a",
+    "raw_id": "RAW-ea0627e96c0c3b4f",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.163",
+    "predicate": "product_release",
+    "object": "Added /plugin list command to list installed plugins, with --enabled / --disabled filters",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-ea0627e96c0c3b4f",
+      "start": 607,
+      "end": 696
+    },
+    "source_quote": "Added /plugin list command to list installed plugins, with --enabled / --disabled filters",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fa6bb167a3d4ba37",
+    "raw_id": "RAW-ea0627e96c0c3b4f",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.163",
+    "predicate": "product_release",
+    "object": "Added a \"c to copy\" shortcut to /btw that copies the raw markdown answer to the clipboard, preserving formatting when pasted elsewhere",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-ea0627e96c0c3b4f",
+      "start": 697,
+      "end": 831
+    },
+    "source_quote": "Added a \"c to copy\" shortcut to /btw that copies the raw markdown answer to the clipboard, preserving formatting when pasted elsewhere",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9e2df0da53df2c3b",
+    "raw_id": "RAW-ea0627e96c0c3b4f",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.163",
+    "predicate": "product_release",
+    "object": "stdio MCP servers now receive the same CLAUDE_CODE_SESSION_ID as hooks/Bash on --resume",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-ea0627e96c0c3b4f",
+      "start": 1089,
+      "end": 1176
+    },
+    "source_quote": "stdio MCP servers now receive the same CLAUDE_CODE_SESSION_ID as hooks/Bash on --resume",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5357982bf6d5cc5f",
+    "raw_id": "RAW-0c058e6c9ab2fc06",
+    "claim_type": "product_release",
+    "subject": "NVIDIA AI",
+    "predicate": "product_release",
+    "object": "Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-0c058e6c9ab2fc06",
+      "start": 234,
+      "end": 586
+    },
+    "source_quote": "NVIDIA has released Nemotron 3 Ultra , the largest model in its Nemotron 3 family. It targets a specific problem: long-running agents that plan, call tools, and reason across many turns. As agents run longer, token counts grow and inference cost climbs. Nemotron 3 Ultra is designed to keep accuracy high while making that inference faster and cheaper.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5a750db146377042",
+    "raw_id": "RAW-0c058e6c9ab2fc06",
+    "claim_type": "product_release",
+    "subject": "NVIDIA AI",
+    "predicate": "product_release",
+    "object": "Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-0c058e6c9ab2fc06",
+      "start": 2769,
+      "end": 3092
+    },
+    "source_quote": "NVIDIA team also released new domain-specific pretraining datasets. These include 173 billion refreshed GitHub code tokens. In a Nemotron 3 Nano ablation, a synthetic legal set raised a proxy LegalBench average from 64.6 to 74.7. In a similar ablation, a Wiki-based fact-seeking set raised proxy SimpleQA from 40.2 to 50.2.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7de655f8e7015333",
+    "raw_id": "RAW-0c058e6c9ab2fc06",
+    "claim_type": "product_release",
+    "subject": "NVIDIA AI",
+    "predicate": "product_release",
+    "object": "Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-0c058e6c9ab2fc06",
+      "start": 3093,
+      "end": 3324
+    },
+    "source_quote": "The post-training release is also large. NVIDIA adds 10 million new SFT samples and 1 million new RL tasks. It adds 15 new RL environments. Cumulative Nemotron open totals reach 50M SFT samples, 2M RL tasks, and 55 RL environments.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e2226903c565d08d",
+    "raw_id": "RAW-0c058e6c9ab2fc06",
+    "claim_type": "product_release",
+    "subject": "NVIDIA AI",
+    "predicate": "product_release",
+    "object": "Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-0c058e6c9ab2fc06",
+      "start": 7671,
+      "end": 7941
+    },
+    "source_quote": "The final solution operates at 5.03 bits-per-element. It mixes NVFP4 routed experts with FP8 layers for shared experts and Mamba linears. Attention layers stay in BF16. NVIDIA team found accuracy saturated below this budget, so higher precision added no measurable gain.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6a28dd5e05d2c912",
+    "raw_id": "RAW-d5d28f027a3ef98b",
+    "claim_type": "product_release",
+    "subject": "Google Research",
+    "predicate": "product_release",
+    "object": "被动心率监测系统 PHRM",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-d5d28f027a3ef98b",
+      "start": 1611,
+      "end": 2606
+    },
+    "source_quote": "In “ Passive Heart Rate Monitoring During Smartphone Use in Everyday Life ”, published in Nature , we introduce a research system (PHRM) that enables tracking of HR and RHR in the background during everyday smartphone use. PHRM leverages the front-facing camera to capture video of the user’s face in the seconds after face unlock events. It then applies deep learning to estimate HR with a mean absolute percentage error (MAPE) < 10% compared to electrocardiogram -derived ground truth, meeting industry accuracy standards for people of all skin tones. Finally, the system integrates HR measurements throughout the day into an estimate of daily RHR that matches the accuracy of wearables, with a mean absolute error (MAE) of < 5 beats per minute (bpm) compared to a wearable tracker. With our publication, we release the largest and most diverse dataset of smartphone videos publicly available for research along with a pre-trained “PHRM-mini” model. Qualified researchers can apply for access.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-292b34ecd870b3d7",
+    "raw_id": "RAW-d5d28f027a3ef98b",
+    "claim_type": "product_release",
+    "subject": "Google Research",
+    "predicate": "product_release",
+    "object": "被动心率监测系统 PHRM",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-d5d28f027a3ef98b",
+      "start": 152,
+      "end": 246
+    },
+    "source_quote": "Eric S. Teasley, Product Manager, and Ming-Zher Poh, Staff Research Scientist, Google Research",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cbe87de0cc539f77",
+    "raw_id": "RAW-d5d28f027a3ef98b",
+    "claim_type": "product_release",
+    "subject": "Google Research",
+    "predicate": "product_release",
+    "object": "被动心率监测系统 PHRM",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-d5d28f027a3ef98b",
+      "start": 893,
+      "end": 1610
+    },
+    "source_quote": "Wearables, such as Fitbit devices and the Pixel Watch , have made it possible to track these health markers throughout our daily lives. However, there is room to improve their adoption, especially in low-resource environments and among those most at risk for cardiovascular disease. Smartphones present a unique opportunity to broaden access to health tracking — today, around five billion people already own a device with powerful sensors capable of monitoring their health. In 2022, we demonstrated using smartphones for on-demand HR measurement via a finger placed over the camera, and subsequent Google research considered how the signal detected during that measurement could help predict cardiovascular disease.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-10875abfda0f096f",
+    "raw_id": "RAW-d5d28f027a3ef98b",
+    "claim_type": "product_release",
+    "subject": "Google Research",
+    "predicate": "product_release",
+    "object": "被动心率监测系统 PHRM",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-d5d28f027a3ef98b",
+      "start": 4178,
+      "end": 5197
+    },
+    "source_quote": "We developed PHRM using over 350,000 video clips from nearly 700 diverse consented research participants in both laboratory and real-world settings, and we devoted more model training to the most challenging cases, as in our earlier work . We leveraged colorimetric methods and the Monk Skin Tone scale to ensure that participants with light (“Group 1,” Monk 1-4) and medium (“Group 2,” Monk 5-7) skin each comprised at least 25% of our datasets and that participants with dark (“Group 3,” Monk 8-10) skin comprised at least 33%. This sampling approach aligned with the skin tone cohorts later proposed by the FDA. Going further, with support from Google’s Health Optimization team, we developed a non-inferiority criterion stipulating that PHRM’s MAPE for HR for each group must differ from that of the others by < 5 percentage points. These efforts make our study of PHRM the largest and most diverse rPPG study to date and enabled us to develop inclusive models that perform accurately across the skin tone spectrum.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-18ca79a2e677e044",
+    "raw_id": "RAW-2a01463284f6067e",
+    "claim_type": "product_release",
+    "subject": "The best",
+    "predicate": "product_release",
+    "object": "frameworks for building AI agents in 2026",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2a01463284f6067e",
+      "start": 313,
+      "end": 380
+    },
+    "source_quote": "Blog The best open source frameworks for building AI agents in 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5641ab761487185f",
+    "raw_id": "RAW-2a01463284f6067e",
+    "claim_type": "product_release",
+    "subject": "The best",
+    "predicate": "product_release",
+    "object": "frameworks for building AI agents in 2026",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-2a01463284f6067e",
+      "start": 423,
+      "end": 537
+    },
+    "source_quote": "Seven open source frameworks compared: LangGraph, OpenAI Agents SDK, AutoGen, CrewAI, Google ADK, Dify, and Mastra",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-09a59dde5c9b9255",
+    "raw_id": "RAW-2a01463284f6067e",
+    "claim_type": "product_release",
+    "subject": "The best",
+    "predicate": "product_release",
+    "object": "frameworks for building AI agents in 2026",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-2a01463284f6067e",
+      "start": 1189,
+      "end": 1488
+    },
+    "source_quote": "Choosing the right framework to build those agents has become one of the more consequential decisions developers face. This article examines the seven most widely adopted open source agent frameworks in 2026: their technical features, adoption numbers, and the use cases each one is best suited for.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7ab333483d8fe3d1",
+    "raw_id": "RAW-2a01463284f6067e",
+    "claim_type": "product_release",
+    "subject": "The best",
+    "predicate": "product_release",
+    "object": "frameworks for building AI agents in 2026",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-2a01463284f6067e",
+      "start": 5844,
+      "end": 6014
+    },
+    "source_quote": "Here are the seven most effective open source frameworks for building AI agents in 2026, ranked by their proven success in real-world applications and developer adoption.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cb32b23e33619226",
+    "raw_id": "RAW-3965fef66cfc3e0b",
+    "claim_type": "funding",
+    "subject": "Archestra",
+    "predicate": "funding",
+    "object": "$10M to broker AI agent access to corporate data",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3965fef66cfc3e0b",
+      "start": 36,
+      "end": 101
+    },
+    "source_quote": "Archestra raises $10M to broker AI agent access to corporate data",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1dfedfbdbb693776",
+    "raw_id": "RAW-3965fef66cfc3e0b",
+    "claim_type": "funding",
+    "subject": "Archestra",
+    "predicate": "funding",
+    "object": "$10M to broker AI agent access to corporate data",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3965fef66cfc3e0b",
+      "start": 124,
+      "end": 418
+    },
+    "source_quote": "Archestra Inc. , a U.K.-based startup whose open-source platform brokers access between artificial intelligence agents and sensitive enterprise data, today announced that it has raised $10 million in new funding to expand deployments inside large enterprises and grow its open-source ecosystem.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8bcaeba7af962ffb",
+    "raw_id": "RAW-3965fef66cfc3e0b",
+    "claim_type": "funding",
+    "subject": "Archestra",
+    "predicate": "funding",
+    "object": "$10M to broker AI agent access to corporate data",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3965fef66cfc3e0b",
+      "start": 3727,
+      "end": 3929
+    },
+    "source_quote": "Today’s round brings total funding to $13.5 million. Archestra raised a $3.3 million pre-seed round in August 2025 , when the company was positioning itself as a security layer for the then-nascent MCP.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b4a0674a59e25e6e",
+    "raw_id": "RAW-3965fef66cfc3e0b",
+    "claim_type": "funding",
+    "subject": "Archestra",
+    "predicate": "funding",
+    "object": "$10M to broker AI agent access to corporate data",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-3965fef66cfc3e0b",
+      "start": 5354,
+      "end": 5419
+    },
+    "source_quote": "Archestra raises $10M to broker AI agent access to corporate data",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-984bd742aa6bfb4d",
+    "raw_id": "RAW-1095cb5a4eddf0c0",
+    "claim_type": "product_release",
+    "subject": "2026-06-01T18:00:00Z / query=model",
+    "predicate": "product_release",
+    "object": "inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1095cb5a4eddf0c0",
+      "start": 1612,
+      "end": 1852
+    },
+    "source_quote": "Today's launch builds on Aible's recent announcement on Secure AI for Business Users , which set out the broader context for fixed-cost, on-prem private AI in an era of rising token prices and growing security concerns with frontier models.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-547db349cb748eb1",
+    "raw_id": "RAW-1095cb5a4eddf0c0",
+    "claim_type": "product_release",
+    "subject": "2026-06-01T18:00:00Z / query=model",
+    "predicate": "product_release",
+    "object": "inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1095cb5a4eddf0c0",
+      "start": 5367,
+      "end": 5480
+    },
+    "source_quote": "Aible Launches AibleClaw Long-Running Agents and Presents at Eight Partner Booths and Sessions at NVIDIA GTC 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a9ed0444ca0e5ae8",
+    "raw_id": "RAW-1095cb5a4eddf0c0",
+    "claim_type": "product_release",
+    "subject": "2026-06-01T18:00:00Z / query=model",
+    "predicate": "product_release",
+    "object": "inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1095cb5a4eddf0c0",
+      "start": 510,
+      "end": 1084
+    },
+    "source_quote": "SAN FRANCISCO, CA, June 2, 2026 - (ACN Newswire) - Aible , the enterprise agentic AI leader, today announced that AibleClaw , its enterprise solution for governed, long-running AI agents or Claws, integrates with NVIDIA Cloud Functions, - bringing serverless GPU economics to enterprise AI workloads and significantly reducing Total Cost of Ownership (TCO.). Building on Aible's early adoption of NVIDIA Cloud Functions (NVCF), a key component of NVIDIA DSX OS. Aible's October 2024 benchmark demonstrated how serverless GPUs can improve end-to-end GenAI TCO by up to 200X .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a8fde21783f12a2c",
+    "raw_id": "RAW-1095cb5a4eddf0c0",
+    "claim_type": "product_release",
+    "subject": "2026-06-01T18:00:00Z / query=model",
+    "predicate": "product_release",
+    "object": "inference cost reduction enterprise adoption / intent=find_market_trend / path=a_media_gdelt",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1095cb5a4eddf0c0",
+      "start": 1085,
+      "end": 1611
+    },
+    "source_quote": "Claws, typically scheduled workloads, are naturally suited to run on NVCF and capture the full economic benefits of serverless inference. Following the recent launches of AibleClaw with NVIDIA Nemotron 3 Super for governed long-running enterprise agents and AibleClaw with NVIDIA Nemotron 3 Nano Omni for multimodal reasoning at the edge, today's announcement details how AibleClaw unlocks the full Total Cost of Ownership (TCO) benefits of NVCF and delivers secure private AI for business users at fixed and predictable cost.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-245355925d177ced",
+    "raw_id": "RAW-01e4d8a5e8974a43",
+    "claim_type": "funding",
+    "subject": "Ex-Goldman Sachs and Meta founders",
+    "predicate": "funding",
+    "object": "$3M to build the voice AI infrastructure global tech giants overlooked — TFN",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-01e4d8a5e8974a43",
+      "start": 74,
+      "end": 185
+    },
+    "source_quote": "Ex-Goldman Sachs and Meta founders raise $3M to build the voice AI infrastructure global tech giants overlooked",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9b15fec709aaa6de",
+    "raw_id": "RAW-01e4d8a5e8974a43",
+    "claim_type": "funding",
+    "subject": "Ex-Goldman Sachs and Meta founders",
+    "predicate": "funding",
+    "object": "$3M to build the voice AI infrastructure global tech giants overlooked — TFN",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-01e4d8a5e8974a43",
+      "start": 963,
+      "end": 1394
+    },
+    "source_quote": "London and San Francisco-based AethexAI , emerging from stealth today, has raised $3 million in a pre-seed round led by 4DX Ventures to fix that. The round included participation from Enza Capital, Dorm Room Fund, Mojo Ventures, the Stanford GSB 26 Fund, an alumni investment vehicle from Stanford Graduate School of Business, and strategic angels, including Stanford faculty, telecom executives, and AI researchers from Anthropic.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-817a2d5ea3011f6d",
+    "raw_id": "RAW-01e4d8a5e8974a43",
+    "claim_type": "funding",
+    "subject": "Ex-Goldman Sachs and Meta founders",
+    "predicate": "funding",
+    "object": "$3M to build the voice AI infrastructure global tech giants overlooked — TFN",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-01e4d8a5e8974a43",
+      "start": 6268,
+      "end": 7009
+    },
+    "source_quote": "ElevenLabs raised $500 million at an $11 billion valuation in February 2026 in a Series D led by Sequoia, making it one of the best-funded voice AI companies in the world. Its focus spans speech synthesis, dubbing, and conversational AI — primarily targeting Western enterprise markets with premium pricing to match. Retell AI, which grew to $50 million ARR in 2025 on just $14 million in total funding, focuses on English-language call centre automation for Western enterprises and does not operate in emerging market telephony environments. What differentiates AethexAI is not just pricing but architecture: a fully self-hosted stack designed for low-bandwidth, high-latency telecom networks that global providers have never optimised for.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9f380d1ccd2641f3",
+    "raw_id": "RAW-01e4d8a5e8974a43",
+    "claim_type": "funding",
+    "subject": "Ex-Goldman Sachs and Meta founders",
+    "predicate": "funding",
+    "object": "$3M to build the voice AI infrastructure global tech giants overlooked — TFN",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-01e4d8a5e8974a43",
+      "start": 8781,
+      "end": 8882
+    },
+    "source_quote": "These German female founders raised €10.5M for promoting digital game-based learning for preschoolers",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-57ed0bec96d075d4",
+    "raw_id": "RAW-6d35d1730d2ff881",
+    "claim_type": "product_release",
+    "subject": "DataRobot AI Cloud",
+    "predicate": "product_release",
+    "object": "on Google Cloud Marketplace",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-6d35d1730d2ff881",
+      "start": 48,
+      "end": 103
+    },
+    "source_quote": "DataRobot AI Cloud Launches on Google Cloud Marketplace",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-eec2d7118595677e",
+    "raw_id": "RAW-6d35d1730d2ff881",
+    "claim_type": "product_release",
+    "subject": "DataRobot AI Cloud",
+    "predicate": "product_release",
+    "object": "on Google Cloud Marketplace",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-6d35d1730d2ff881",
+      "start": 104,
+      "end": 191
+    },
+    "source_quote": "DataRobot on Google Cloud enables customers to accelerate and scale AI with flexibility",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3ce00d540bcdd10e",
+    "raw_id": "RAW-6d35d1730d2ff881",
+    "claim_type": "product_release",
+    "subject": "DataRobot AI Cloud",
+    "predicate": "product_release",
+    "object": "on Google Cloud Marketplace",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-6d35d1730d2ff881",
+      "start": 192,
+      "end": 670
+    },
+    "source_quote": "JUNE 7, 2022 — BOSTON — AI Cloud leader DataRobot today announced at DataRobot AIX 2022 its availability on Google Cloud Marketplace, enabling more customers to accelerate and scale their impact with AI. DataRobot customers will now be able to take advantage of Google Cloud Marketplace — along with unique Google Cloud services — to streamline the procurement and deployment process, build AI-based models, and generate even more intelligent business solutions on Google Cloud.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b84ce1a03fcf6751",
+    "raw_id": "RAW-6d35d1730d2ff881",
+    "claim_type": "product_release",
+    "subject": "DataRobot AI Cloud",
+    "predicate": "product_release",
+    "object": "on Google Cloud Marketplace",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-6d35d1730d2ff881",
+      "start": 671,
+      "end": 1087
+    },
+    "source_quote": "“In order to thrive in today’s market, customers must have the ability to deliver AI where their data resides,” said Debanjan Saha, President and COO, DataRobot. “By expanding our strategic partnership with Google Cloud, and joining Google Cloud Marketplace, we’re meeting our customers where they are; enabling them to accelerate and scale as industry innovators, with a seamless experience across cloud platforms.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8db9327ffefca608",
+    "raw_id": "RAW-7d48d6432889e312",
+    "claim_type": "product_release",
+    "subject": "Introducing the Agent Governance Toolkit - Microsoft",
+    "predicate": "product_release",
+    "object": "Today, we’re sharing the Agent Governance Toolkit , an open-source project released under the Microsoft organization and MIT license that brings runtime security governance to autonomous AI agents. It is the first toolkit to address all 10 OWASP agentic AI risks with deterministic, sub-millisecond policy enforcement. It’s designed to work with the frameworks developers already use, not replace them.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-7d48d6432889e312",
+      "start": 1156,
+      "end": 1558
+    },
+    "source_quote": "Today, we’re sharing the Agent Governance Toolkit , an open-source project released under the Microsoft organization and MIT license that brings runtime security governance to autonomous AI agents. It is the first toolkit to address all 10 OWASP agentic AI risks with deterministic, sub-millisecond policy enforcement. It’s designed to work with the frameworks developers already use, not replace them.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d1d802757ac20e21",
+    "raw_id": "RAW-7d48d6432889e312",
+    "claim_type": "product_release",
+    "subject": "Introducing the Agent Governance Toolkit - Microsoft",
+    "predicate": "product_release",
+    "object": "The project is MIT-licensed and structured as a monorepo with seven independently installable packages. Teams can adopt governance incrementally—start with just the policy engine, add identity when multi-agent scenarios emerge, and layer in SRE practices as systems scale.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7d48d6432889e312",
+      "start": 4995,
+      "end": 5267
+    },
+    "source_quote": "The project is MIT-licensed and structured as a monorepo with seven independently installable packages. Teams can adopt governance incrementally—start with just the policy engine, add identity when multi-agent scenarios emerge, and layer in SRE practices as systems scale.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-785b4a16eb92e436",
+    "raw_id": "RAW-7d48d6432889e312",
+    "claim_type": "product_release",
+    "subject": "Introducing the Agent Governance Toolkit - Microsoft",
+    "predicate": "product_release",
+    "object": "We’ve invested in the open-source fundamentals:",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-7d48d6432889e312",
+      "start": 5707,
+      "end": 5754
+    },
+    "source_quote": "We’ve invested in the open-source fundamentals:",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f142f9c6204d2962",
+    "raw_id": "RAW-7d48d6432889e312",
+    "claim_type": "product_release",
+    "subject": "Introducing the Agent Governance Toolkit - Microsoft",
+    "predicate": "product_release",
+    "object": "Building this toolkit reinforced several lessons that apply broadly to open-source projects:",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-7d48d6432889e312",
+      "start": 7667,
+      "end": 7759
+    },
+    "source_quote": "Building this toolkit reinforced several lessons that apply broadly to open-source projects:",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1281dd1d28fa4571",
+    "raw_id": "RAW-35ad226c8bc677d9",
+    "claim_type": "acquisition",
+    "subject": "Anthropic's New Consulting Venture Makes Its First",
+    "predicate": "acquisition",
+    "object": "Anthropic-Backed AI Services Firm Acquires Fractional AI in First Deal - Bloomberg",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-35ad226c8bc677d9",
+      "start": 0,
+      "end": 82
+    },
+    "source_quote": "Anthropic-Backed AI Services Firm Acquires Fractional AI in First Deal - Bloomberg",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7ca620e4dc33f3ea",
+    "raw_id": "RAW-35ad226c8bc677d9",
+    "claim_type": "acquisition",
+    "subject": "Anthropic's New Consulting Venture Makes Its First",
+    "predicate": "acquisition",
+    "object": "The new artificial intelligence enterprise services firm backed by Blackstone Inc. , Anthropic PBC and Hellman & Friedman has picked a San Francisco firm called Fractional AI as the operational centerpiece of the as-yet unnamed venture.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-35ad226c8bc677d9",
+      "start": 425,
+      "end": 661
+    },
+    "source_quote": "The new artificial intelligence enterprise services firm backed by Blackstone Inc. , Anthropic PBC and Hellman & Friedman has picked a San Francisco firm called Fractional AI as the operational centerpiece of the as-yet unnamed venture.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  }
+]

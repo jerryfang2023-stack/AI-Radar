@@ -1,0 +1,761 @@
+[
+  {
+    "relationship_id": "REL-4e0e6bf9325822e2",
+    "event_id": "EV-c5b8faec223a4caf",
+    "subject": "Claude 支持 Apple Foundation Models 框架，",
+    "predicate": "product_release",
+    "object": "新 Swift 包",
+    "claim_ref": "CL-5e55b73326fc1077",
+    "source_refs": [
+      "SA-1b505a997d4a14f3"
+    ]
+  },
+  {
+    "relationship_id": "REL-fdc542aa28a6c084",
+    "event_id": "EV-c5b8faec223a4caf",
+    "subject": "Claude 支持 Apple Foundation Models 框架，",
+    "predicate": "product_release",
+    "object": "新 Swift 包",
+    "claim_ref": "CL-d39aa41668213fa3",
+    "source_refs": [
+      "SA-1b505a997d4a14f3"
+    ]
+  },
+  {
+    "relationship_id": "REL-c70ab40b3f3d9201",
+    "event_id": "EV-c5b8faec223a4caf",
+    "subject": "Claude 支持 Apple Foundation Models 框架，",
+    "predicate": "product_release",
+    "object": "新 Swift 包",
+    "claim_ref": "CL-1d39937de43f7a3c",
+    "source_refs": [
+      "SA-1b505a997d4a14f3"
+    ]
+  },
+  {
+    "relationship_id": "REL-b965e1a4bd1af30f",
+    "event_id": "EV-c5b8faec223a4caf",
+    "subject": "Claude 支持 Apple Foundation Models 框架，",
+    "predicate": "product_release",
+    "object": "新 Swift 包",
+    "claim_ref": "CL-9b9af4ee977e02f6",
+    "source_refs": [
+      "SA-1b505a997d4a14f3"
+    ]
+  },
+  {
+    "relationship_id": "REL-a35b76a70177f53e",
+    "event_id": "EV-9127c613a365044b",
+    "subject": "Claude Code v2.1.169",
+    "predicate": "product_release",
+    "object": "Added --safe-mode flag (and CLAUDE_CODE_SAFE_MODE ) to start Claude Code with all customizations (CLAUDE.md, plugins, skills, hooks, MCP servers) disabled for troubleshooting",
+    "claim_ref": "CL-f026f7aa852926d2",
+    "source_refs": [
+      "SA-310a7358d1185c80"
+    ]
+  },
+  {
+    "relationship_id": "REL-5f6ffe9d1538bf2d",
+    "event_id": "EV-9127c613a365044b",
+    "subject": "Claude Code v2.1.169",
+    "predicate": "product_release",
+    "object": "Added /cd command to move a session to a new working directory without breaking the prompt cache mid-session",
+    "claim_ref": "CL-5871e3da130b1bf0",
+    "source_refs": [
+      "SA-310a7358d1185c80"
+    ]
+  },
+  {
+    "relationship_id": "REL-1b8aaf1ea1d75577",
+    "event_id": "EV-9127c613a365044b",
+    "subject": "Claude Code v2.1.169",
+    "predicate": "product_release",
+    "object": "Added a disableBundledSkills setting and CLAUDE_CODE_DISABLE_BUNDLED_SKILLS environment variable to hide bundled skills, workflows, and built-in slash commands from the model",
+    "claim_ref": "CL-6a1b5916dd369b07",
+    "source_refs": [
+      "SA-310a7358d1185c80"
+    ]
+  },
+  {
+    "relationship_id": "REL-148aac7a4283af4b",
+    "event_id": "EV-9127c613a365044b",
+    "subject": "Claude Code v2.1.169",
+    "predicate": "product_release",
+    "object": "Fixed claude agents --json omitting blocked and just-dispatched background sessions; added --all to include completed sessions, plus new id and state fields",
+    "claim_ref": "CL-2d5d0bd418989205",
+    "source_refs": [
+      "SA-310a7358d1185c80"
+    ]
+  },
+  {
+    "relationship_id": "REL-2dd780725b026122",
+    "event_id": "EV-b902c7cffb30dec3",
+    "subject": "Microsoft AI",
+    "predicate": "model_release",
+    "object": "Last week Microsoft AI has announced MAI-Transcribe-1.5 . It is the second iteration of the company’s in-house speech-to-text family. The model targets accuracy across 43 languages, accents, and noisy environments. The Microsoft team positions it for production transcription workloads.",
+    "claim_ref": "CL-8976d2e29bba202e",
+    "source_refs": [
+      "SA-7c511f3e310baf5f"
+    ]
+  },
+  {
+    "relationship_id": "REL-09c873f2cae14edb",
+    "event_id": "EV-b902c7cffb30dec3",
+    "subject": "Microsoft AI",
+    "predicate": "model_release",
+    "object": "What is MAI-Transcribe-1.5",
+    "claim_ref": "CL-34c74d3b793ed628",
+    "source_refs": [
+      "SA-7c511f3e310baf5f"
+    ]
+  },
+  {
+    "relationship_id": "REL-7e50d75c4c101744",
+    "event_id": "EV-b902c7cffb30dec3",
+    "subject": "Microsoft AI",
+    "predicate": "model_release",
+    "object": "MAI-Transcribe-1.5 is an automatic speech recognition (ASR) model. It takes audio as input and returns text. Microsoft built it in-house, not on a third-party base. The model handles 43 languages with a single system. It is optimized for diverse accents, dialects, and real-world acoustic conditions.",
+    "claim_ref": "CL-7ed1f60407fab99e",
+    "source_refs": [
+      "SA-7c511f3e310baf5f"
+    ]
+  },
+  {
+    "relationship_id": "REL-1072696db2e1dd24",
+    "event_id": "EV-b902c7cffb30dec3",
+    "subject": "Microsoft AI",
+    "predicate": "model_release",
+    "object": "Accuracy here is measured by Word-Error-Rate (WER). Lower WER means fewer mistakes per transcribed word. Microsoft reports best-in-class WER across 43 languages on FLEURS. FLEURS is a standard multilingual transcription benchmark.",
+    "claim_ref": "CL-70ebed22fedc9935",
+    "source_refs": [
+      "SA-7c511f3e310baf5f"
+    ]
+  },
+  {
+    "relationship_id": "REL-b287dde3fb3ab442",
+    "event_id": "EV-4c247b02485de09b",
+    "subject": "Sequoia-backed Edra",
+    "predicate": "funding",
+    "object": "$30M Series A to turn enterprise data into self-improving AI agents - Tech.eu",
+    "claim_ref": "CL-0f3e3634cf008fe4",
+    "source_refs": [
+      "SA-7f94d709e33647d0"
+    ]
+  },
+  {
+    "relationship_id": "REL-74f1f02573b59420",
+    "event_id": "EV-4c247b02485de09b",
+    "subject": "Sequoia-backed Edra",
+    "predicate": "funding",
+    "object": "$30M Series A to turn enterprise data into self-improving AI agents - Tech.eu",
+    "claim_ref": "CL-6c263e6e8996b4d3",
+    "source_refs": [
+      "SA-7f94d709e33647d0"
+    ]
+  },
+  {
+    "relationship_id": "REL-51d8c422c865c271",
+    "event_id": "EV-4c247b02485de09b",
+    "subject": "Sequoia-backed Edra",
+    "predicate": "funding",
+    "object": "$30M Series A to turn enterprise data into self-improving AI agents - Tech.eu",
+    "claim_ref": "CL-e7a1fc985ee14a7b",
+    "source_refs": [
+      "SA-7f94d709e33647d0"
+    ]
+  },
+  {
+    "relationship_id": "REL-5a3d4a9f95077384",
+    "event_id": "EV-0b3d4c788a892787",
+    "subject": "Apple 在 WWDC",
+    "predicate": "product_release",
+    "object": "升级版 AI 驱动的 Siri",
+    "claim_ref": "CL-67dba2cb7b6557cd",
+    "source_refs": [
+      "SA-4afa6f0a2956d501"
+    ]
+  },
+  {
+    "relationship_id": "REL-f173ac95890b334f",
+    "event_id": "EV-0b3d4c788a892787",
+    "subject": "Apple 在 WWDC",
+    "predicate": "product_release",
+    "object": "升级版 AI 驱动的 Siri",
+    "claim_ref": "CL-38657c51aaec2f9c",
+    "source_refs": [
+      "SA-4afa6f0a2956d501"
+    ]
+  },
+  {
+    "relationship_id": "REL-065cdb0493e26fec",
+    "event_id": "EV-0b3d4c788a892787",
+    "subject": "Apple 在 WWDC",
+    "predicate": "product_release",
+    "object": "升级版 AI 驱动的 Siri",
+    "claim_ref": "CL-d09a5d98e09d61b4",
+    "source_refs": [
+      "SA-4afa6f0a2956d501"
+    ]
+  },
+  {
+    "relationship_id": "REL-0398671a66fe7409",
+    "event_id": "EV-0b3d4c788a892787",
+    "subject": "Apple 在 WWDC",
+    "predicate": "product_release",
+    "object": "升级版 AI 驱动的 Siri",
+    "claim_ref": "CL-13e39206cd9ac34b",
+    "source_refs": [
+      "SA-4afa6f0a2956d501"
+    ]
+  },
+  {
+    "relationship_id": "REL-ebbe127324b7b5ec",
+    "event_id": "EV-da062d02015f99fb",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "watchOS 27，整合 Siri AI 功能",
+    "claim_ref": "CL-4dfab54d9db54ed1",
+    "source_refs": [
+      "SA-28748e8b0a1767a3"
+    ]
+  },
+  {
+    "relationship_id": "REL-f6659fe64cdfa71d",
+    "event_id": "EV-da062d02015f99fb",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "watchOS 27，整合 Siri AI 功能",
+    "claim_ref": "CL-29288218b99fbd76",
+    "source_refs": [
+      "SA-28748e8b0a1767a3"
+    ]
+  },
+  {
+    "relationship_id": "REL-69677d8b829af7d8",
+    "event_id": "EV-da062d02015f99fb",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "watchOS 27，整合 Siri AI 功能",
+    "claim_ref": "CL-6cb5d2da485b19fa",
+    "source_refs": [
+      "SA-28748e8b0a1767a3"
+    ]
+  },
+  {
+    "relationship_id": "REL-e3f143bfc001dfac",
+    "event_id": "EV-da062d02015f99fb",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "watchOS 27，整合 Siri AI 功能",
+    "claim_ref": "CL-514359fe69d37e62",
+    "source_refs": [
+      "SA-28748e8b0a1767a3"
+    ]
+  },
+  {
+    "relationship_id": "REL-14416ec6bee24e9c",
+    "event_id": "EV-a5ba3797b38df125",
+    "subject": "Apple WWDC 2026：七大重磅",
+    "predicate": "product_release",
+    "object": "A new feature in Messages will suggest photos to share based on your conversation, while the Phone app can present you with relevant information, like a flight confirmation code, when the call starts. Apple also says Mail will offer “more capable suggestions” and allow you to add events to your Calendar just by describing them. Some other upgrades include the ability to create your own shortcuts with natural language and use Apple’s Image Playground to make AI edits on your photos, such as changing their compositions and enhanced “distraction” removal.",
+    "claim_ref": "CL-5da2d739dbee9a95",
+    "source_refs": [
+      "SA-733d4411ccdb9186"
+    ]
+  },
+  {
+    "relationship_id": "REL-a40be2c8e6a87ddc",
+    "event_id": "EV-a5ba3797b38df125",
+    "subject": "Apple WWDC 2026：七大重磅",
+    "predicate": "product_release",
+    "object": "Apple WWDC 2026: The 7 biggest announcements",
+    "claim_ref": "CL-b0f26d1e1d1a3272",
+    "source_refs": [
+      "SA-733d4411ccdb9186"
+    ]
+  },
+  {
+    "relationship_id": "REL-622cdc9d56929ddb",
+    "event_id": "EV-a5ba3797b38df125",
+    "subject": "Apple WWDC 2026：七大重磅",
+    "predicate": "product_release",
+    "object": "WWDC 2026: All the news from Apple’s developers conference",
+    "claim_ref": "CL-936cfd8d3ae7e94a",
+    "source_refs": [
+      "SA-733d4411ccdb9186"
+    ]
+  },
+  {
+    "relationship_id": "REL-8c1c80e14c713200",
+    "event_id": "EV-a5ba3797b38df125",
+    "subject": "Apple WWDC 2026：七大重磅",
+    "predicate": "product_release",
+    "object": "More in: WWDC 2026: All the news from Apple’s developers conference",
+    "claim_ref": "CL-d03c5c9cb47fce47",
+    "source_refs": [
+      "SA-733d4411ccdb9186"
+    ]
+  },
+  {
+    "relationship_id": "REL-7d0663c2322f9a37",
+    "event_id": "EV-fd527f43b5eb5f0a",
+    "subject": "苹果为Siri",
+    "predicate": "product_release",
+    "object": "专属应用",
+    "claim_ref": "CL-cf436d4cd01ecc9b",
+    "source_refs": [
+      "SA-0973d34e06a57695"
+    ]
+  },
+  {
+    "relationship_id": "REL-3befe88b9cd0573d",
+    "event_id": "EV-fd527f43b5eb5f0a",
+    "subject": "苹果为Siri",
+    "predicate": "product_release",
+    "object": "专属应用",
+    "claim_ref": "CL-bfa718a0e89d2937",
+    "source_refs": [
+      "SA-0973d34e06a57695"
+    ]
+  },
+  {
+    "relationship_id": "REL-fec604b6c4ba66b8",
+    "event_id": "EV-fd527f43b5eb5f0a",
+    "subject": "苹果为Siri",
+    "predicate": "product_release",
+    "object": "专属应用",
+    "claim_ref": "CL-dd1d1a78c6dc5e7e",
+    "source_refs": [
+      "SA-0973d34e06a57695"
+    ]
+  },
+  {
+    "relationship_id": "REL-fa742516cc4ff511",
+    "event_id": "EV-9f9bc7ffe6228281",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "visionOS 27，集成 Siri AI",
+    "claim_ref": "CL-497b46074e896052",
+    "source_refs": [
+      "SA-9eac86beebff633a"
+    ]
+  },
+  {
+    "relationship_id": "REL-f80b98728a126a2f",
+    "event_id": "EV-9f9bc7ffe6228281",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "visionOS 27，集成 Siri AI",
+    "claim_ref": "CL-2aeac409ee90a88c",
+    "source_refs": [
+      "SA-9eac86beebff633a"
+    ]
+  },
+  {
+    "relationship_id": "REL-33b0e90901f2c497",
+    "event_id": "EV-9f9bc7ffe6228281",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "visionOS 27，集成 Siri AI",
+    "claim_ref": "CL-873c364a0c3fdeb6",
+    "source_refs": [
+      "SA-9eac86beebff633a"
+    ]
+  },
+  {
+    "relationship_id": "REL-6b92077575c66400",
+    "event_id": "EV-9f9bc7ffe6228281",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "visionOS 27，集成 Siri AI",
+    "claim_ref": "CL-597811744929e408",
+    "source_refs": [
+      "SA-9eac86beebff633a"
+    ]
+  },
+  {
+    "relationship_id": "REL-6d0ef37c4ac3a82d",
+    "event_id": "EV-d5419a74073b4508",
+    "subject": "受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟",
+    "predicate": "deployment",
+    "object": "Due to DMA, Siri AI delayed in EU for iOS 27 and iPadOS 27",
+    "claim_ref": "CL-e9603d85f29b6da9",
+    "source_refs": [
+      "SA-22294bfcf7c1d154"
+    ]
+  },
+  {
+    "relationship_id": "REL-f08d3d5c9e43937c",
+    "event_id": "EV-d5419a74073b4508",
+    "subject": "受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟",
+    "predicate": "deployment",
+    "object": "Apple today introduced Siri AI, an entirely new version of Siri , powered by Apple Intelligence. Unfortunately, due to the Digital Markets Act (DMA), Apple will not be able to ship Siri AI in the European Union with the release of iOS 27 and iPadOS 27. Over the past several months, EU regulators did not accept any of Apple’s proposed solutions to bring Siri AI to the EU while safely supporting other virtual assistants.",
+    "claim_ref": "CL-891bdc08f01d4ee3",
+    "source_refs": [
+      "SA-22294bfcf7c1d154"
+    ]
+  },
+  {
+    "relationship_id": "REL-4ff7d83768b5b6ea",
+    "event_id": "EV-d5419a74073b4508",
+    "subject": "受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟",
+    "predicate": "deployment",
+    "object": "“We’re deeply disappointed that our EU users won’t have Siri AI on iPhone or iPad when we share our new software releases later this year,” said Craig Federighi, Apple’s senior vice president of Software Engineering. “Our hope is to eventually bring Siri AI to the EU, and we will continue to engage with EU regulators on a path forward. However, their refusal to engage constructively on solutions that preserve privacy and security means we do not currently have a timeline for Siri AI’s availability on iOS and iPadOS in the EU.”",
+    "claim_ref": "CL-56df599ca679173c",
+    "source_refs": [
+      "SA-22294bfcf7c1d154"
+    ]
+  },
+  {
+    "relationship_id": "REL-da50cf1ac276eafa",
+    "event_id": "EV-d5419a74073b4508",
+    "subject": "受 DMA 影响，Siri AI 在欧盟将随 iOS 27 和 iPadOS 27 延迟",
+    "predicate": "deployment",
+    "object": "When iOS 27 and iPadOS 27 launch later this year, users in the EU 1 will not have access to Siri AI and its advanced capabilities — including the new dedicated app to revisit conversations, an expanded Visual Intelligence experience, integrated tools for writing, Siri mode in Camera on iOS, and other Siri AI capabilities announced at WWDC26. Because Siri AI on watchOS 27 requires a paired iPhone with Siri AI, EU users will not have access to Siri AI on watchOS 27.",
+    "claim_ref": "CL-de9d3adbcdbbcedc",
+    "source_refs": [
+      "SA-22294bfcf7c1d154"
+    ]
+  },
+  {
+    "relationship_id": "REL-ed8d858df6dfc274",
+    "event_id": "EV-16ed97ffc0998d0a",
+    "subject": "亚马逊",
+    "predicate": "product_release",
+    "object": "AI定制商品设计功能：用户可通过Alexa生成印花图案",
+    "claim_ref": "CL-9c34da516e6143a1",
+    "source_refs": [
+      "SA-8436e4a968b0d378"
+    ]
+  },
+  {
+    "relationship_id": "REL-f2e931fea9fe517f",
+    "event_id": "EV-8361a47c70ecd243",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "Siri AI：由 Apple Intelligence 驱动的更强大、更个性化的个人助理",
+    "claim_ref": "CL-f5744b9e64c13032",
+    "source_refs": [
+      "SA-344d869517eac199"
+    ]
+  },
+  {
+    "relationship_id": "REL-54237f8012446978",
+    "event_id": "EV-8361a47c70ecd243",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "Siri AI：由 Apple Intelligence 驱动的更强大、更个性化的个人助理",
+    "claim_ref": "CL-d8037f5ff6af4fc4",
+    "source_refs": [
+      "SA-344d869517eac199"
+    ]
+  },
+  {
+    "relationship_id": "REL-bec93c9fa8f0915a",
+    "event_id": "EV-8361a47c70ecd243",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "Siri AI：由 Apple Intelligence 驱动的更强大、更个性化的个人助理",
+    "claim_ref": "CL-54bee8d46c674c50",
+    "source_refs": [
+      "SA-344d869517eac199"
+    ]
+  },
+  {
+    "relationship_id": "REL-45db6fe1ec598038",
+    "event_id": "EV-8361a47c70ecd243",
+    "subject": "Apple",
+    "predicate": "product_release",
+    "object": "Siri AI：由 Apple Intelligence 驱动的更强大、更个性化的个人助理",
+    "claim_ref": "CL-d4b9eae28519bdf2",
+    "source_refs": [
+      "SA-344d869517eac199"
+    ]
+  },
+  {
+    "relationship_id": "REL-4e0990817e83a797",
+    "event_id": "EV-c7336cf617a545ce",
+    "subject": "小米MiMo与TileRT",
+    "predicate": "model_release",
+    "object": "在8-GPU节点上解码超1000 tokens/s",
+    "claim_ref": "CL-cf1b2e1f21cf4767",
+    "source_refs": [
+      "SA-24b8c8321db1f30e"
+    ]
+  },
+  {
+    "relationship_id": "REL-b2e4ca7411be345e",
+    "event_id": "EV-c7336cf617a545ce",
+    "subject": "小米MiMo与TileRT",
+    "predicate": "model_release",
+    "object": "在8-GPU节点上解码超1000 tokens/s",
+    "claim_ref": "CL-03ffbd25ec529020",
+    "source_refs": [
+      "SA-24b8c8321db1f30e"
+    ]
+  },
+  {
+    "relationship_id": "REL-deeca3f0d5cd9f80",
+    "event_id": "EV-c7336cf617a545ce",
+    "subject": "小米MiMo与TileRT",
+    "predicate": "model_release",
+    "object": "在8-GPU节点上解码超1000 tokens/s",
+    "claim_ref": "CL-0c68d163dbc8c554",
+    "source_refs": [
+      "SA-24b8c8321db1f30e"
+    ]
+  },
+  {
+    "relationship_id": "REL-d292229e21e441ac",
+    "event_id": "EV-c7336cf617a545ce",
+    "subject": "小米MiMo与TileRT",
+    "predicate": "model_release",
+    "object": "在8-GPU节点上解码超1000 tokens/s",
+    "claim_ref": "CL-34e809e524d30491",
+    "source_refs": [
+      "SA-24b8c8321db1f30e"
+    ]
+  },
+  {
+    "relationship_id": "REL-4f49817da4f90346",
+    "event_id": "EV-3371b45e53949464",
+    "subject": "Claude 为 Connector 开发者",
+    "predicate": "product_release",
+    "object": "性能监控仪表盘",
+    "claim_ref": "CL-fd00638cf196efd1",
+    "source_refs": [
+      "SA-28943362f01853fe"
+    ]
+  },
+  {
+    "relationship_id": "REL-a5913901fe894cc1",
+    "event_id": "EV-3371b45e53949464",
+    "subject": "Claude 为 Connector 开发者",
+    "predicate": "product_release",
+    "object": "性能监控仪表盘",
+    "claim_ref": "CL-fb32ffef858439d3",
+    "source_refs": [
+      "SA-28943362f01853fe"
+    ]
+  },
+  {
+    "relationship_id": "REL-4e369a1aca724baf",
+    "event_id": "EV-3371b45e53949464",
+    "subject": "Claude 为 Connector 开发者",
+    "predicate": "product_release",
+    "object": "性能监控仪表盘",
+    "claim_ref": "CL-632c07123a1bb694",
+    "source_refs": [
+      "SA-28943362f01853fe"
+    ]
+  },
+  {
+    "relationship_id": "REL-bb286705a1739c2a",
+    "event_id": "EV-3371b45e53949464",
+    "subject": "Claude 为 Connector 开发者",
+    "predicate": "product_release",
+    "object": "性能监控仪表盘",
+    "claim_ref": "CL-571b66ef6267f646",
+    "source_refs": [
+      "SA-28943362f01853fe"
+    ]
+  },
+  {
+    "relationship_id": "REL-6e3614e7423dc246",
+    "event_id": "EV-a9fe726c4ea2a17b",
+    "subject": "苹果",
+    "predicate": "product_release",
+    "object": "Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+    "claim_ref": "CL-abeb123796984e45",
+    "source_refs": [
+      "SA-4c454bcda76945d8"
+    ]
+  },
+  {
+    "relationship_id": "REL-accc0181d6fb6c8f",
+    "event_id": "EV-a9fe726c4ea2a17b",
+    "subject": "苹果",
+    "predicate": "product_release",
+    "object": "Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+    "claim_ref": "CL-be6397745be4b268",
+    "source_refs": [
+      "SA-4c454bcda76945d8"
+    ]
+  },
+  {
+    "relationship_id": "REL-ea3d0523ae1b733f",
+    "event_id": "EV-a9fe726c4ea2a17b",
+    "subject": "苹果",
+    "predicate": "product_release",
+    "object": "Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+    "claim_ref": "CL-237aa10e9131be89",
+    "source_refs": [
+      "SA-4c454bcda76945d8"
+    ]
+  },
+  {
+    "relationship_id": "REL-b6c5919369fdaece",
+    "event_id": "EV-a9fe726c4ea2a17b",
+    "subject": "苹果",
+    "predicate": "product_release",
+    "object": "Xcode 27 Beta 与 Core AI 框架，称其为构建 AI 智能体\"最佳场所\"",
+    "claim_ref": "CL-bb177f8c54f761c6",
+    "source_refs": [
+      "SA-4c454bcda76945d8"
+    ]
+  },
+  {
+    "relationship_id": "REL-bb6448e287d2506a",
+    "event_id": "EV-1ae8027c085679e9",
+    "subject": "苹果 iOS 27 版 Siri AI",
+    "predicate": "product_release",
+    "object": "系统原生自动校正功能",
+    "claim_ref": "CL-412c1165ad9aea08",
+    "source_refs": [
+      "SA-c509109acff08b2a"
+    ]
+  },
+  {
+    "relationship_id": "REL-2f33f688f5e679fb",
+    "event_id": "EV-1ae8027c085679e9",
+    "subject": "苹果 iOS 27 版 Siri AI",
+    "predicate": "product_release",
+    "object": "系统原生自动校正功能",
+    "claim_ref": "CL-0d7806422b8f4731",
+    "source_refs": [
+      "SA-c509109acff08b2a"
+    ]
+  },
+  {
+    "relationship_id": "REL-f6edb5dcfab21bea",
+    "event_id": "EV-1ae8027c085679e9",
+    "subject": "苹果 iOS 27 版 Siri AI",
+    "predicate": "product_release",
+    "object": "系统原生自动校正功能",
+    "claim_ref": "CL-bf480f9596975b92",
+    "source_refs": [
+      "SA-c509109acff08b2a"
+    ]
+  },
+  {
+    "relationship_id": "REL-6c84d1ed9fca16ca",
+    "event_id": "EV-1ae8027c085679e9",
+    "subject": "苹果 iOS 27 版 Siri AI",
+    "predicate": "product_release",
+    "object": "系统原生自动校正功能",
+    "claim_ref": "CL-42be09bfa046da80",
+    "source_refs": [
+      "SA-c509109acff08b2a"
+    ]
+  },
+  {
+    "relationship_id": "REL-1221e61c1c0d3b39",
+    "event_id": "EV-d40a1a873015ac98",
+    "subject": "苹果",
+    "predicate": "product_release",
+    "object": "Siri AI：独立 App，为灵动岛优化",
+    "claim_ref": "CL-83825fd97ece377c",
+    "source_refs": [
+      "SA-bdae3fd54febab4f"
+    ]
+  },
+  {
+    "relationship_id": "REL-6fc8e93fe0b79800",
+    "event_id": "EV-d40a1a873015ac98",
+    "subject": "苹果",
+    "predicate": "product_release",
+    "object": "Siri AI：独立 App，为灵动岛优化",
+    "claim_ref": "CL-1e7bf0c798e22d55",
+    "source_refs": [
+      "SA-bdae3fd54febab4f"
+    ]
+  },
+  {
+    "relationship_id": "REL-c594b8e21fa45568",
+    "event_id": "EV-d40a1a873015ac98",
+    "subject": "苹果",
+    "predicate": "product_release",
+    "object": "Siri AI：独立 App，为灵动岛优化",
+    "claim_ref": "CL-a2450fd5f23e04cd",
+    "source_refs": [
+      "SA-bdae3fd54febab4f"
+    ]
+  },
+  {
+    "relationship_id": "REL-2cc474c184eae152",
+    "event_id": "EV-eebe7dbf68b1e0b4",
+    "subject": "苹果 watchOS 27 开发者预览版 Beta 1",
+    "predicate": "product_release",
+    "object": "：全新 App 应用网格界面、海外机型引入 Siri AI 功能",
+    "claim_ref": "CL-f52e8cd721c6eb77",
+    "source_refs": [
+      "SA-ca431dc3552f882d"
+    ]
+  },
+  {
+    "relationship_id": "REL-0ae5c87963944899",
+    "event_id": "EV-eebe7dbf68b1e0b4",
+    "subject": "苹果 watchOS 27 开发者预览版 Beta 1",
+    "predicate": "product_release",
+    "object": "：全新 App 应用网格界面、海外机型引入 Siri AI 功能",
+    "claim_ref": "CL-df52a2c4fffc8725",
+    "source_refs": [
+      "SA-ca431dc3552f882d"
+    ]
+  },
+  {
+    "relationship_id": "REL-21f8b4fb4d5f5dbb",
+    "event_id": "EV-eebe7dbf68b1e0b4",
+    "subject": "苹果 watchOS 27 开发者预览版 Beta 1",
+    "predicate": "product_release",
+    "object": "：全新 App 应用网格界面、海外机型引入 Siri AI 功能",
+    "claim_ref": "CL-9aa07133228acbff",
+    "source_refs": [
+      "SA-ca431dc3552f882d"
+    ]
+  },
+  {
+    "relationship_id": "REL-6b8c86594a48e053",
+    "event_id": "EV-eebe7dbf68b1e0b4",
+    "subject": "苹果 watchOS 27 开发者预览版 Beta 1",
+    "predicate": "product_release",
+    "object": "：全新 App 应用网格界面、海外机型引入 Siri AI 功能",
+    "claim_ref": "CL-0aa27e92690db435",
+    "source_refs": [
+      "SA-ca431dc3552f882d"
+    ]
+  },
+  {
+    "relationship_id": "REL-4547dd8f6ff7b5b9",
+    "event_id": "EV-52e1ac21c25a0a09",
+    "subject": "苹果 macOS 27 开发者预览版 Beta 1",
+    "predicate": "product_release",
+    "object": "，引入独立 Siri 应用",
+    "claim_ref": "CL-200387b333a63bec",
+    "source_refs": [
+      "SA-07362e7a0eeb27d0"
+    ]
+  },
+  {
+    "relationship_id": "REL-c7aae2fe8cc0e24a",
+    "event_id": "EV-52e1ac21c25a0a09",
+    "subject": "苹果 macOS 27 开发者预览版 Beta 1",
+    "predicate": "product_release",
+    "object": "，引入独立 Siri 应用",
+    "claim_ref": "CL-563ecffd6de962e3",
+    "source_refs": [
+      "SA-07362e7a0eeb27d0"
+    ]
+  },
+  {
+    "relationship_id": "REL-da75b0c6e86eafa1",
+    "event_id": "EV-52e1ac21c25a0a09",
+    "subject": "苹果 macOS 27 开发者预览版 Beta 1",
+    "predicate": "product_release",
+    "object": "，引入独立 Siri 应用",
+    "claim_ref": "CL-87987b509c2f8e3d",
+    "source_refs": [
+      "SA-07362e7a0eeb27d0"
+    ]
+  }
+]

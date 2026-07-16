@@ -3,7 +3,10 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import Ajv2020 from "ajv/dist/2020.js";
+import addFormats from "ajv-formats";
 import { eventAiRelevanceEvidence, forbiddenKeys } from "./build-data-center-v4.mjs";
+import { isCompletePublicEventTitle } from "./event-public-title.mjs";
 import { validateTaxonomy } from "./assert-tag-taxonomy-v4.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -12,7 +15,9 @@ const root = path.resolve(__dirname, "../..");
 const dataRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
 const reportRoot = path.join(root, "agent-workflow/reports");
 const taxonomyPath = path.join(root, "agent-workflow/product/tag-taxonomy-v4.json");
+const schemaPath = path.join(root, "agent-workflow/product/data-center-v4.schema.json");
 const BOILERPLATE = /(?:most popular|loading the next article|error loading the next article|register now|cookie settings|when you purchase through links|스크롤 이동|상태바|기사본문|the body content)/iu;
+let schemaValidator = null;
 
 function arg(name, fallback = "") {
   const prefix = `--${name}=`;
@@ -31,6 +36,31 @@ function writeJson(file, value) {
 
 function normalize(value) {
   return String(value ?? "").replace(/\s+/gu, " ").trim();
+}
+
+function validateSchema(bundle) {
+  if (!schemaValidator) {
+    const ajv = new Ajv2020({ allErrors: true, allowUnionTypes: true, strict: false });
+    addFormats(ajv);
+    schemaValidator = ajv.compile(readJson(schemaPath));
+  }
+  if (schemaValidator(bundle)) return [];
+  return (schemaValidator.errors || []).map((error) => {
+    const location = error.instancePath || "/";
+    return `schema ${location}: ${error.message}`;
+  });
+}
+
+function duplicateIds(rows, key, label) {
+  const seen = new Set();
+  const duplicates = new Set();
+  for (const row of rows) {
+    const id = normalize(row?.[key]);
+    if (!id) continue;
+    if (seen.has(id)) duplicates.add(id);
+    seen.add(id);
+  }
+  return [...duplicates].map((id) => `${label}: duplicate ${key} ${id}`);
 }
 
 function availableDates() {
@@ -53,6 +83,13 @@ export function readBundle(date) {
 export function evaluateBundle(bundle, taxonomy) {
   const failures = [];
   const warnings = [];
+  failures.push(...validateSchema(bundle));
+  failures.push(...duplicateIds(bundle.source_artifacts, "source_artifact_id", "source_artifacts"));
+  failures.push(...duplicateIds(bundle.raw_documents, "raw_id", "raw_documents"));
+  failures.push(...duplicateIds(bundle.claims, "claim_id", "claims"));
+  failures.push(...duplicateIds(bundle.entities, "entity_id", "entities"));
+  failures.push(...duplicateIds(bundle.canonical_events, "event_id", "canonical_events"));
+  failures.push(...duplicateIds(bundle.compatibility_cards, "card_id", "compatibility_cards"));
   const sourceIds = new Set(bundle.source_artifacts.map((item) => item.source_artifact_id));
   const rawById = new Map(bundle.raw_documents.map((item) => [item.raw_id, item]));
   const rawBySourceId = new Map(bundle.raw_documents.map((item) => [item.source_artifact_id, item]));
@@ -102,6 +139,7 @@ export function evaluateBundle(bundle, taxonomy) {
   for (const event of bundle.canonical_events) {
     if (!event.source_refs.length || event.source_refs.some((id) => !sourceIds.has(id))) failures.push(`${event.event_id}: invalid source_refs`);
     if (!event.claim_refs.length || event.claim_refs.some((id) => !claimById.has(id))) failures.push(`${event.event_id}: invalid claim_refs`);
+    if (!isCompletePublicEventTitle(event.display_title_zh)) failures.push(`${event.event_id}: display_title_zh incomplete`);
     if (["verified", "partial"].includes(event.publication_status) && event.claim_refs.some((id) => claimById.get(id)?.verification_status === "disputed")) {
       failures.push(`${event.event_id}: disputed claim published as ${event.publication_status}`);
     }

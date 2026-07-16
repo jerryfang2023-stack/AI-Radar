@@ -35,7 +35,7 @@ Only these actions are `current` for SITE-V3.4.5:
 
 | Action | Status | Current Role |
 |---|---|---|
-| Daily Data Center V4 production | `current` | Build and gate SourceArtifact, RawDocument, Claim, Entity, CanonicalEvent, TAG-V3, FDE-V2 and HARDWARE-V1 data. |
+| Daily Data Center V4 production | `current` | Build and gate SourceArtifact, RawDocument, Claim, Entity, CanonicalEvent, TAG-V4, FDE-V2 and HARDWARE-V1 data. |
 | Data Center JSONL / DuckDB materialization | `current` | Materialize accepted canonical bundles into queryable serving tables. |
 | AI Hardware data projection | `current` | Project explicit hardware product, capacity, supply and deployment events; no source-artifact bypass. |
 | Enterprise AI / FDE data projection | `current` | Project explicitly disclosed implementation facts and preserve undisclosed fields. |

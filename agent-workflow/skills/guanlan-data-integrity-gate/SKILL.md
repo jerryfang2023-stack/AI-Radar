@@ -1,6 +1,6 @@
 ---
 name: guanlan-data-integrity-gate
-description: Use when running or repairing the Data Center V4 release gate for Claim spans, event provenance, conflicts, TAG-V3 assertions, projection lineage, forbidden judgment fields, and serving-table integrity. Do not use as a monitor, Card editorial gate, value scorer, or page regression gate.
+description: Use when running or repairing the Data Center V4 release gate for Claim spans, event provenance, conflicts, TAG-V4 assertions, projection lineage, forbidden judgment fields, and serving-table integrity. Do not use as a monitor, Card editorial gate, value scorer, or page regression gate.
 metadata:
   guanlan:
     version: "1.0.0"

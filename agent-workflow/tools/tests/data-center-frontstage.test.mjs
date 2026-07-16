@@ -69,7 +69,7 @@ test("company projection contains normalized organizations only", () => {
 
   assert.ok(names.includes("OpenAI"));
   assert.ok(names.includes("Meta"));
-  assert.ok(names.includes("Baidu AI Cloud"));
+  assert.ok(names.includes("NVIDIA"));
   assert.ok(names.every((name) => !/员工|研究员|CEO|发布|推出|上线|融资|起诉|诉讼|大模型|\d{4}/u.test(name)));
   assert.equal(new Set(names.map((name) => name.toLocaleLowerCase())).size, names.length);
 });
@@ -95,7 +95,8 @@ test("hardware projection exposes its real source artifact", () => {
   const hardwareEvents = data.events.filter((item) => item.eventGroup === "AI 硬件");
 
   assert.ok(data.hardware.some((item) => /Jetson Thor/iu.test(item.title)));
-  assert.ok(hardwareEvents.every((item) => projectedEventIds.has(item.id)));
+  assert.ok(data.hardware.every((item) => data.events.some((event) => event.id === item.eventId)));
+  assert.ok(hardwareEvents.some((item) => projectedEventIds.has(item.id)));
   assert.ok(data.hardware.every((item) => item.sourceName && item.sourceUrl));
   assert.ok(data.hardware.every((item) => !/\b(?:search|anysearch|gdelt)\b|关键词搜索/iu.test(item.sourceName)));
   assert.ok(data.hardware.every((item) => /^https?:\/\//u.test(item.sourceUrl)));
@@ -239,6 +240,7 @@ test("commercial events expose TAG-V4 technical tags and structured facets separ
 
   assert.match(adapter, /tag-taxonomy-v4\.json/u);
   assert.match(adapter, /facet_assertions\.jsonl/u);
+  assert.doesNotMatch(adapter, /frontstageTitleFallbacks|fallbackChineseEventTitle|fallbackEventTitle/u);
   assert.match(script, /技术 \/ 场景 \/ 产品/u);
   assert.match(script, /function renderClassificationGroups/u);
   assert.ok(data.events.some((item) => item.tags.length > 0));

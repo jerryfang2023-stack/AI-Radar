@@ -127,6 +127,7 @@
         "event_status": { "enum": ["announced", "planned", "in_progress", "completed", "rumored", "disputed", "withdrawn"] },
         "event_time": { "type": "string" },
         "disclosed_at": { "type": "string" },
+        "display_title_zh": { "type": "string" },
         "entities": { "type": "array", "items": { "type": "string" } },
         "action": { "type": "string" },
         "object": { "type": "string" },

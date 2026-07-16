@@ -4,7 +4,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { writeFirstLineViewpointsV4Data } from "./build-first-line-viewpoints-v4-data.mjs";
+import { isCompletePublicEventTitle as isCompleteDataTitle } from "../../../agent-workflow/tools/event-public-title.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -48,28 +48,6 @@ const stageLabels = {
   completed: "已完成",
   disputed: "存在争议",
   withdrawn: "已撤回"
-};
-
-const frontstageTitleFallbacks = {
-  "EV-f1947f4eea4fa37b": "Nitrode：以 AI 推进游戏开发（Y Combinator）",
-  "EV-043741e78cb94ed9": "Hinge 创始人融资 1800 万美元，打造 AI 约会服务 Overtone",
-  "EV-1350ec1cf62a89f9": "宣布完成 2200 万美元 A 轮融资",
-  "EV-2d9d45badc98ec2a": "微软安全启动机制被曝存在已持续十年的漏洞",
-  "EV-49d9029bdcf87db4": "Google Cloud 发布 Gemini Enterprise 更新说明",
-  "EV-5285228a0660dfb1": "诉讼称 Meta 的裁员决定由 AI 而非人类作出",
-  "EV-b3c7e011ac0bc0db": "Samsung SDS 将于 7 月 16 日推出由 FuriosaAI 驱动的 AI 服务",
-  "EV-b72fe085266f6479": "主权 AI 基础设施初创公司 Valarian 融资 5000 万美元",
-  "EV-b87eb416937c6fad": "Sam Altman 再遇诉讼",
-  "EV-fab2f7b2a4fcfff8": "定制 AI 芯片设计公司 TYLsemi 成立并获得 4300 万美元早期融资",
-  "EV-9761bee993f9f674": "Salesforce 推出 Help Agent，简化 AI 客户支持",
-  "EV-70d3cdcb3e831457": "2026 年软件初创公司实施 AI 客户支持的成本",
-  "EV-8fcb52bb6ec980af": "FuriosaAI 与 Broadcom 合作建设面向智能体时代的下一代推理平台",
-  "EV-01df8e489a34893b": "ServiceNow 与 Accenture 启动前置部署工程计划，推动企业智能体 AI 规模化",
-  "EV-57f4e6aaa0d55c03": "Microsoft Marketplace 将 AI 原生智能体解决方案引入企业采购",
-  "EV-a11846da53d1e843": "Mandiant 创始人为自主安全项目融资 1.9 亿美元",
-  "EV-7f92769dfa5af542": "前置部署工程师如何改善 Intercom 的客户成果",
-  "EV-5a62eabc29582ca4": "前置部署工程师（FDE）：2026 年指南",
-  "EV-126fa40cbcc2603e": "Orthogonal 推出面向 API 的智能体支付服务"
 };
 
 function readJson(file, fallback = null) {
@@ -177,148 +155,8 @@ function extractNamedProducts(...values) {
     .map((rule) => ({ name: rule.name, type: rule.type, ownerNames: rule.owners }));
 }
 
-function fallbackEventTitle(claim, event) {
-  return compactText([claim?.subject, event.action, event.object].filter(Boolean).join(" "), 150);
-}
-
-function publicSubject(claim, eventEntities, originalTitle = "", sourceUrl = "") {
-  const entityName = eventEntities.map((item) => item.canonical_name).find(Boolean) || "";
-  if (entityName && /\bfounder\b|创始人/iu.test(originalTitle)) return `${entityName} 创始人`;
-  if (entityName) return entityName;
-  const rawSubject = compactText(claim?.subject || "", 80);
-  if (rawSubject && !/^undisclosed(?:_subject)?$/iu.test(rawSubject) && !/\b(?:announcing|launches?|raises?|acquires?)\b/iu.test(rawSubject)) {
-    return rawSubject;
-  }
-  try {
-    const hostname = new URL(sourceUrl).hostname.replace(/^www\./iu, "").split(".")[0];
-    if (hostname && !/^(?:techcrunch|siliconangle|ft|example)$/iu.test(hostname)) {
-      return hostname.charAt(0).toUpperCase() + hostname.slice(1);
-    }
-  } catch {
-    // Source URL is optional in compatibility rendering.
-  }
-  return "未披露主体";
-}
-
-function formatFundingAmount(value = "") {
-  const text = String(value || "").replace(/,/gu, "").trim();
-  const match = text.match(/([$€£¥])\s*(\d+(?:\.\d+)?)\s*(billion|million|bn|mn|b|m)?\b/iu);
-  if (!match) return text;
-  const currency = { "$": "美元", "€": "欧元", "£": "英镑", "¥": "元" }[match[1]] || "";
-  const amount = Number(match[2]);
-  const unit = (match[3] || "").toLowerCase();
-  if (/^(?:billion|bn|b)$/u.test(unit)) return `${Number((amount * 10).toFixed(2))} 亿${currency}`;
-  if (/^(?:million|mn|m)$/u.test(unit)) {
-    const wan = amount * 100;
-    return wan >= 10000
-      ? `${Number((wan / 10000).toFixed(2))} 亿${currency}`
-      : `${Number(wan.toFixed(2))} 万${currency}`;
-  }
-  return `${amount} ${currency}`.trim();
-}
-
-function fundingRound(evidence = "") {
-  const series = evidence.match(/\bSeries\s+([A-Z])\b/iu);
-  if (series) return `${series[1].toUpperCase()} 轮`;
-  if (/\bpre[- ]seed\b/iu.test(evidence)) return "种子前轮";
-  if (/\bseed(?: funding| round)?\b/iu.test(evidence)) return "种子轮";
-  if (/\bearly[- ]stage funding\b/iu.test(evidence)) return "早期";
-  return "";
-}
-
-function acquisitionTitle(subject, originalTitle = "", event = {}) {
-  const match = originalTitle.match(/\b(?:acquires?|acquired)\b\s+(.+?)(?=\s+to\s+|\s*[-–—|]\s*|$)/iu);
-  const target = compactText(match?.[1] || event.object || "", 80)
-    .replace(/\s+to\s+.+$/iu, "")
-    .replace(/\s*[-–—|]\s*.+$/u, "")
-    .trim();
-  return target ? `${subject} 收购 ${target}` : "";
-}
-
-function partnershipTitle(subject, entityNames, evidence = "") {
-  if (/Amazon Bedrock AgentCore/iu.test(evidence)) {
-    return `${subject} 将与 Amazon Bedrock AgentCore 集成，保护 AI 智能体`;
-  }
-  if (/\bC3 AI\b/iu.test(evidence) && /\bShell\b/iu.test(evidence)) {
-    return "C3 AI 与 Shell 扩大合作，在全球资产运营中扩展 Reliability AI 部署";
-  }
-  const partner = entityNames.find((name) => name !== subject) || "";
-  if (partner && /\bexpand(?:s|ed)?\b.{0,30}\bcollaboration\b/iu.test(evidence)) return `${subject} 与 ${partner} 扩大合作`;
-  if (partner) return `${subject} 与 ${partner} 推进产品与服务集成`;
-  return "";
-}
-
-function productTitle(subject, products, evidence = "", event = {}) {
-  if (/\bAgentic Payments for APIs\b/iu.test(evidence)) return `${subject} 推出面向 API 的智能体支付服务`;
-  if (products.some((item) => item.name === "Codex Micro")) return "OpenAI 与 Work Louder 推出 Codex Micro 键盘";
-  if (products.some((item) => item.name === "Grok Build")) return "xAI 开源 Grok Build 编程 AI 智能体工具";
-  if (/\bFuriosaAI-Powered AI Services\b/iu.test(evidence)) return "Samsung SDS 将推出由 FuriosaAI NPU 驱动的 AI 服务";
-  if (products.some((item) => item.name === "Gemini Enterprise") && /\brelease notes\b/iu.test(evidence)) {
-    return "Google Cloud 发布 Gemini Enterprise 更新说明";
-  }
-  const namedProduct = products[0];
-  if (namedProduct) {
-    const owner = namedProduct.ownerNames?.join(" 与 ") || subject;
-    return `${owner} 发布 ${namedProduct.name}`;
-  }
-  const object = compactText(event.object || "", 100)
-    .replace(/\s*[-–—|<]\s*.+$/u, "")
-    .replace(/^(?:YC:\s*)?/iu, "")
-    .trim();
-  return object && !/^undisclosed/iu.test(object) ? `${subject} 发布 ${object}` : "";
-}
-
-function fallbackChineseEventTitle(claim, event, eventEntities, label, originalTitle = "", sourceUrl = "", products = [], eventClaims = []) {
-  const actionLabels = {
-    model_release: "发布模型",
-    product_release: "发布产品",
-    service_change: "调整服务",
-    pricing_change: "调整定价",
-    funding: "完成融资",
-    acquisition: "发生并购",
-    partnership: "达成商业合作",
-    procurement_contract: "签署采购合同",
-    deployment: "完成部署",
-    organization_people: "发生组织与人员变动",
-    policy_regulation: "涉及政策监管",
-    lawsuit_settlement: "涉及诉讼与和解",
-    research_result: "发布研究结果",
-    hardware_product: "发布 AI 硬件",
-    hardware_capacity: "更新硬件产能",
-    hardware_supply: "更新硬件供应",
-    hardware_deployment: "部署 AI 硬件"
-  };
-  const subject = publicSubject(claim, eventEntities, originalTitle, sourceUrl);
-  const entityNames = eventEntities.map((item) => item.canonical_name).filter(Boolean);
-  const evidence = [originalTitle, event.object, ...eventClaims.map((item) => item.source_quote)].filter(Boolean).join("\n");
-  if (event.event_type === "funding") {
-    const amount = formatFundingAmount(event.metrics?.[0] || "");
-    const round = fundingRound(evidence);
-    return `${subject} 完成${amount ? ` ${amount}` : ""}${round ? ` ${round}` : ""}融资`;
-  }
-  if (event.event_type === "acquisition") {
-    const title = acquisitionTitle(subject, originalTitle, event);
-    if (title) return title;
-  }
-  if (event.event_type === "partnership") {
-    const title = partnershipTitle(subject, entityNames, evidence);
-    if (title) return title;
-  }
-  if (["model_release", "product_release", "service_change", "pricing_change", "hardware_product"].includes(event.event_type)) {
-    const title = productTitle(subject, products, evidence, event);
-    if (title) return title;
-  }
-  const action = actionLabels[event.event_type] || label.exact || "发生事件";
-  const object = containsChinese(event.object) ? compactText(event.object, 80) : "";
-  return `${subject}${action}${object ? `：${object}` : ""}`;
-}
-
 export function isCompletePublicEventTitle(value = "") {
-  const title = String(value || "").trim();
-  return title.length >= 6
-    && !/(?:…|\.\.\.)/u.test(title)
-    && !/(?:发生并购|完成融资|发布产品|达成商业合作|完成部署)$/u.test(title)
-    && !/undisclosed|未披露主体/iu.test(title);
+  return isCompleteDataTitle(value);
 }
 
 function safeArray(value) {
@@ -392,21 +230,9 @@ function buildEventRecords({ events, claims, rawDocuments, sourceArtifacts, enti
       event.object,
       ...eventClaims.map((claim) => claim.source_quote)
     ) : [];
-    const title = translatedTitle
+    const title = compactText(event.display_title_zh || "", 180)
+      || translatedTitle
       || (containsChinese(originalTitle) ? originalTitle : "")
-      || frontstageTitleFallbacks[event.event_id]
-      || fallbackChineseEventTitle(
-        primaryClaim,
-        event,
-        eventEntities,
-        label,
-        originalTitle,
-        primarySource?.canonical_url || primarySource?.source_url || "",
-        products,
-        eventClaims
-      )
-      || fallbackEventTitle(primaryClaim, event)
-      || originalTitle
       || event.event_id;
 
     return {
@@ -472,7 +298,7 @@ function buildCompanies(entityRows, eventRecords) {
     }
   }
 
-  return entityRows.map((entity) => {
+  return entityRows.filter((entity) => entity.verification_status === "verified").map((entity) => {
     const relatedEvents = eventsByEntity.get(entity.entity_id) || [];
     return {
       id: entity.entity_id,
@@ -484,7 +310,7 @@ function buildCompanies(entityRows, eventRecords) {
       eventIds: relatedEvents.map((event) => event.id),
       productIds: []
     };
-  }).filter((item) => item.name).sort((a, b) => a.name.localeCompare(b.name, "zh-CN"));
+  }).filter((item) => item.name && item.eventIds.length > 0).sort((a, b) => a.name.localeCompare(b.name, "zh-CN"));
 }
 
 function buildProducts(eventRecords, companies) {
@@ -513,7 +339,7 @@ function buildProducts(eventRecords, companies) {
       product.eventIds.push(event.id);
       product.tags.push(...event.tags.map((tag) => tag.name));
       product.companyIds.push(...owners.map((item) => item.id));
-      product.companyNames.push(...owners.map((item) => item.name));
+      product.companyNames.push(...safeArray(productDefinition.ownerNames));
     }
   }
 
@@ -652,9 +478,9 @@ export function buildFrontstageData(root = defaultRoot) {
   });
   const latestDataDate = eventRecords.map((item) => item.dataDate).filter(Boolean).sort().at(-1) || "";
   const currentDate = latestDataDate;
-  const invalidCurrentTitles = eventRecords.filter((item) => item.dataDate === currentDate && !isCompletePublicEventTitle(item.title));
-  if (invalidCurrentTitles.length) {
-    throw new Error(`Frontstage event title gate failed: ${invalidCurrentTitles.map((item) => `${item.id}:${item.title}`).join("; ")}`);
+  const invalidTitles = eventRecords.filter((item) => !isCompletePublicEventTitle(item.title));
+  if (invalidTitles.length) {
+    throw new Error(`Frontstage event title gate failed: ${invalidTitles.map((item) => `${item.id}:${item.title}`).join("; ")}`);
   }
   const companies = buildCompanies(readJsonl(path.join(tables, "entities.jsonl")), eventRecords);
   const products = buildProducts(eventRecords, companies);
@@ -689,7 +515,6 @@ export function writeFrontstageData(root = defaultRoot) {
 }
 
 function main() {
-  writeFirstLineViewpointsV4Data();
   const { output, data } = writeFrontstageData();
   console.log(JSON.stringify({
     ok: true,

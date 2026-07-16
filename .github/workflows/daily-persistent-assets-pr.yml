@@ -170,8 +170,10 @@ jobs:
           node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
           node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
           node --check agent-workflow/tools/build-data-center-v4.mjs
+          node --check agent-workflow/tools/backfill-data-center-v4.mjs
           node --check agent-workflow/tools/assert-data-center-v4.mjs
-          node --check agent-workflow/tools/assert-tag-taxonomy-v3.mjs
+          node --check agent-workflow/tools/assert-tag-taxonomy-v4.mjs
+          node --check agent-workflow/tools/event-public-title.mjs
           node --check agent-workflow/tools/sync-light-data-lake.mjs
           node --check 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs
           node --check agent-workflow/tools/assert-daily-production-chain.mjs
@@ -189,6 +191,7 @@ jobs:
           node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           gh --version
+          npm run test:data-center
 
       - name: Collect source raw artifacts
         id: source-artifacts
@@ -314,6 +317,7 @@ jobs:
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-data-center-v4-materialize.log"
           node 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-data-center-v4-frontstage.log"
+          npm run test:data-center-site
 
       - name: Regenerate business-signal Card assets
         id: assets

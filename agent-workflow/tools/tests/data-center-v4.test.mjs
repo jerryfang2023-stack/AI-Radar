@@ -64,6 +64,67 @@ test("duplicate funding sources cluster and preserve status conflict", () => {
   assert.equal(bundle.event_conflicts.length, 1);
 });
 
+test("same URL snapshots use content-addressed source IDs and identical captures are deduplicated", () => {
+  const sameUrl = "https://example.com/versioned";
+  const first = entry("snapshot-a", "Acme AI raises $10 million", "Acme AI raised $10 million in a financing round.", {
+    original_url: sameUrl,
+    canonical_url: sameUrl,
+    content_hash: "content-a"
+  });
+  const duplicate = entry("snapshot-a-copy", "Acme AI raises $10 million", "Acme AI raised $10 million in a financing round.", {
+    original_url: sameUrl,
+    canonical_url: sameUrl,
+    content_hash: "content-a"
+  });
+  const update = entry("snapshot-b", "Acme AI raises $20 million", "Acme AI raised $20 million in a later financing round.", {
+    original_url: sameUrl,
+    canonical_url: sameUrl,
+    content_hash: "content-b"
+  });
+  const bundle = buildBundle([first, duplicate, update], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.source_artifacts.length, 2);
+  assert.equal(bundle.raw_documents.length, 2);
+  assert.equal(new Set(bundle.source_artifacts.map((item) => item.source_artifact_id)).size, 2);
+  assert.equal(new Set(bundle.raw_documents.map((item) => item.raw_id)).size, 2);
+  assert.equal(new Set(bundle.claims.map((item) => item.claim_id)).size, bundle.claims.length);
+});
+
+test("guides and implementation explainers do not become deployment events", () => {
+  const bundle = buildBundle([
+    entry("cost-guide", "Cost to Implement AI Customer Support for Software Startups in 2026", "This guide explains the cost to implement AI customer support for startups."),
+    entry("fde-guide", "Forward Deployed Engineer (FDE): The Essential 2026 Guide", "This guide explains the forward deployed engineer role."),
+    entry("how-case", "How Forward Deployed Engineers Transformed Customer Outcomes", "This article explains how forward deployed engineers work with customers.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 0);
+});
+
+test("blocked, community, and launch-index sources do not become canonical events", () => {
+  const bundle = buildBundle([
+    entry("blocked-source", "Hugging Face Releases Experimental AI Agent for Computers", "Hugging Face released an experimental AI computer agent.", {
+      raw_qc_decision: "block",
+      extraction_quality: "failed"
+    }),
+    entry("community-source", "Hugging Face releases free AI computer agent", "Hugging Face released a free AI computer agent.", {
+      original_url: "https://www.facebook.com/groups/example/posts/123/",
+      canonical_url: "https://www.facebook.com/groups/example/posts/123/",
+      raw_qc_decision: "allow_with_degradation",
+      extraction_quality: "low"
+    }),
+    entry("launch-index", "Launch HN: Chamber – An AI Teammate for GPU Infrastructure", "Chamber launched an AI teammate for GPU infrastructure.", {
+      original_url: "https://example.com/",
+      canonical_url: "https://example.com/"
+    })
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 0);
+  assert.deepEqual(
+    new Set(bundle.qa_queue.map((item) => item.reason)),
+    new Set(["raw_source_quality_block", "community_source_requires_original_event_source", "non_event_or_index_title"])
+  );
+});
+
 test("funding amounts with equivalent units cluster into one canonical event", () => {
   const bundle = buildBundle([
     entry("funding-million", "InstaLILY Raises $60 Million Series B", "InstaLILY raised $60 million in a Series B financing round for its AI teammates."),
@@ -72,6 +133,32 @@ test("funding amounts with equivalent units cluster into one canonical event", (
 
   assert.equal(bundle.canonical_events.length, 1);
   assert.equal(bundle.canonical_events[0].source_refs.length, 2);
+});
+
+test("launches with disclosed capital is normalized as funding", () => {
+  const bundle = buildBundle([
+    entry(
+      "launches-with-capital",
+      "Exclusive: Startup Adapter Launches With $17.8M To Bring New Cognition To AI Tools",
+      "Startup Adapter launches with $17.8 million in financing to build enterprise AI tools."
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events[0].event_type, "funding");
+  assert.equal(bundle.canonical_events[0].display_title_zh, "Adapter 完成 1780 万美元融资");
+});
+
+test("incomplete mixed-language public titles remain in QA instead of formal events", () => {
+  const bundle = buildBundle([
+    entry(
+      "untranslated-product",
+      "OpenAI releases new voice models for more natural live conversations",
+      "OpenAI released new AI voice models for more natural live conversations."
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 0);
+  assert.ok(bundle.qa_queue.some((item) => item.reason === "public_event_title_incomplete"));
 });
 
 test("product launch is not rewritten as funding", () => {
@@ -112,7 +199,9 @@ test("taxonomy assertions reject an unrelated aggregated headline inside the sam
 
 test("hardware projection requires a concrete hardware event", () => {
   const bundle = buildBundle([
-    entry("hardware", "Nvidia ships 10,000 GPUs to Example Cloud for AI workloads", "Nvidia shipped 10,000 GPUs to Example Cloud for a new AI data center cluster."),
+    entry("hardware", "Nvidia ships 10,000 GPUs to Example Cloud for AI workloads", "Nvidia shipped 10,000 GPUs to Example Cloud for a new AI data center cluster.", {
+      title_zh: "NVIDIA 向 Example Cloud 交付 1 万块 GPU，用于 AI 数据中心集群"
+    }),
     entry("lawsuit", "Apple sues OpenAI over trade secrets", "Apple sued OpenAI. The background mentions servers and chips."),
     entry("software", "LMSYS launches inference optimization", "LMSYS launched inference optimization software tested on eight B300 GPUs."),
     entry("whitepaper", "Acme accelerator whitepaper released", "Acme released a whitepaper about an accelerator architecture.")
@@ -129,7 +218,8 @@ test("a computer launch with explicit accelerator modules becomes a hardware pro
     entry(
       "jetson-thor",
       "NVIDIA introduces new Jetson Thor computers for mainstream robotics and edge AI",
-      "NVIDIA introduced the T3000 and T2000 computers. The new modules use NVIDIA Thor GPUs for robotics and edge AI systems."
+      "NVIDIA introduced the T3000 and T2000 computers. The new modules use NVIDIA Thor GPUs for robotics and edge AI systems.",
+      { title_zh: "NVIDIA 发布 Jetson Thor 计算机，面向机器人与边缘 AI" }
     )
   ], taxonomy, date, "2026-07-16T00:00:00.000Z");
 
@@ -156,7 +246,9 @@ test("a source-bounded portable AI hardware launch receives a hardware projectio
 
 test("researcher job change is not a research-result event", () => {
   const bundle = buildBundle([
-    entry("researcher", "OpenAI researcher Miles Wang plans to leave and found a startup", "OpenAI researcher Miles Wang plans to leave the company and found a startup.")
+    entry("researcher", "OpenAI researcher Miles Wang plans to leave and found a startup", "OpenAI researcher Miles Wang plans to leave the company and found a startup.", {
+      title_zh: "OpenAI 研究员 Miles Wang 计划离职创业"
+    })
   ], taxonomy, date, "2026-07-16T00:00:00.000Z");
   assert.equal(bundle.canonical_events[0].event_type, "organization_people");
   assert.equal(bundle.canonical_events[0].event_status, "planned");
@@ -384,4 +476,24 @@ test("integrity gate blocks a canonical event whose evidence is no longer AI-ind
 
   const result = evaluateBundle(bundle, taxonomy);
   assert.ok(result.failures.some((failure) => failure.includes("fails AI industry scope gate")));
+});
+
+test("integrity gate enforces the published JSON Schema", () => {
+  const bundle = buildBundle([
+    entry("schema", "Acme AI raises $10 million", "Acme AI raised $10 million in a financing round.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  bundle.canonical_events[0].unexpected_schema_field = true;
+
+  const result = evaluateBundle(bundle, taxonomy);
+  assert.ok(result.failures.some((failure) => failure.includes("additional properties")));
+});
+
+test("integrity gate rejects duplicate stable identifiers", () => {
+  const bundle = buildBundle([
+    entry("duplicate-id", "Acme AI raises $10 million", "Acme AI raised $10 million in a financing round.")
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  bundle.raw_documents.push({ ...bundle.raw_documents[0] });
+
+  const result = evaluateBundle(bundle, taxonomy);
+  assert.ok(result.failures.some((failure) => failure.includes("duplicate raw_id")));
 });

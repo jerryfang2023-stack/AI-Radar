@@ -1,0 +1,1262 @@
+[
+  {
+    "claim_id": "CL-ee7deb3aa47b3b8a",
+    "raw_id": "RAW-cb1c1c576cc1e524",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.172",
+    "predicate": "product_release",
+    "object": "Added a search bar when browsing a marketplace's plugins in /plugin",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-cb1c1c576cc1e524",
+      "start": 645,
+      "end": 712
+    },
+    "source_quote": "Added a search bar when browsing a marketplace's plugins in /plugin",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0bbda6cfc1ab2da4",
+    "raw_id": "RAW-cb1c1c576cc1e524",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.172",
+    "predicate": "product_release",
+    "object": "Added model attribute to the claude_code.lines_of_code.count OTEL metric",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-cb1c1c576cc1e524",
+      "start": 713,
+      "end": 785
+    },
+    "source_quote": "Added model attribute to the claude_code.lines_of_code.count OTEL metric",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-676c34e466db055c",
+    "raw_id": "RAW-cb1c1c576cc1e524",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.172",
+    "predicate": "product_release",
+    "object": "/code-review now keeps the ultra option visible when you're not signed in to claude.ai, with an explanation that the cloud review requires a claude.ai account",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-cb1c1c576cc1e524",
+      "start": 3823,
+      "end": 3981
+    },
+    "source_quote": "/code-review now keeps the ultra option visible when you're not signed in to claude.ai, with an explanation that the cloud review requires a claude.ai account",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0e3152343b11ebca",
+    "raw_id": "RAW-4bd466024c9efcb9",
+    "claim_type": "product_release",
+    "subject": "Google DeepMind",
+    "predicate": "product_release",
+    "object": "DiffusionGemma，本地 AI 推理速度提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-4bd466024c9efcb9",
+      "start": 155,
+      "end": 604
+    },
+    "source_quote": "Another day, another AI model from Google. This time, Google DeepMind has released a new member of the Gemma 4 open model family , but it’s fundamentally different from the rest of the lineup. DiffusionGemma doesn’t generate outputs linearly like most AI models. Instead, it can produce an entire block of text in parallel. Google says this makes it faster and more efficient when running on local hardware like an Nvidia DGX or a humble gaming GPU.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-917ac73263ec2d6c",
+    "raw_id": "RAW-4bd466024c9efcb9",
+    "claim_type": "product_release",
+    "subject": "Google DeepMind",
+    "predicate": "product_release",
+    "object": "DiffusionGemma，本地 AI 推理速度提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-4bd466024c9efcb9",
+      "start": 1120,
+      "end": 1654
+    },
+    "source_quote": "DiffusionGemma is fairly large in the realm of Google’s open models. It’s a Mixture of Experts (MoE) model with a total of 26 billion parameters, but only 3.8 billion are activated during inference. That means it should fit in the 18GB RAM allotment of a high-end GPU. In testing with an RTX 5090, DiffusionGemma spits out around 700 tokens per second. With a single Nvidia H100 AI accelerator, DiffusionGemma can produce 1,000+ tokens per second. That’s about four times the output of the similarly sized autoregressive Gemma models.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-66d9fb66d9687af6",
+    "raw_id": "RAW-4bd466024c9efcb9",
+    "claim_type": "product_release",
+    "subject": "Google DeepMind",
+    "predicate": "product_release",
+    "object": "DiffusionGemma，本地 AI 推理速度提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-4bd466024c9efcb9",
+      "start": 1685,
+      "end": 2245
+    },
+    "source_quote": "This approach to text generation shifts the bottleneck from memory bandwidth to compute, generating up to 256 tokens in parallel. Google says this offers a measurable boost in non-linear tasks like in-line editing, molecular sequencing, and mathematical graphing. The animation above shows how DiffusionGemma was tuned to solve Sudoku puzzles, which is a notoriously challenging task for standard autoregressive AI models because each token depends on future tokens. DiffusionGemma’s ability to continuously self-correct large sets of tokens makes that easier.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ed92bd1b2ea4820b",
+    "raw_id": "RAW-4bd466024c9efcb9",
+    "claim_type": "product_release",
+    "subject": "Google DeepMind",
+    "predicate": "product_release",
+    "object": "DiffusionGemma，本地 AI 推理速度提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-4bd466024c9efcb9",
+      "start": 3917,
+      "end": 4330
+    },
+    "source_quote": "Google stresses that DiffusionGemma is experimental, but it’s available under the same Apache 2.0 license as all the other fourth-generation Gemma models. You can download the model weights today from Hugging Face . Google says it worked with Nvidia to ensure DiffusionGemma was optimized for a variety of setups, including high-end RTX GPUs (quantized) and enterprise systems like the H100 or DGX Spark platform.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b6d78e50e48afac9",
+    "raw_id": "RAW-18056a4774bad58a",
+    "claim_type": "model_release",
+    "subject": "Google AI",
+    "predicate": "model_release",
+    "object": "，生成速度最高提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-18056a4774bad58a",
+      "start": 218,
+      "end": 674
+    },
+    "source_quote": "Google AI team including the Google DeepMind researchers have just released DiffusionGemma, an experimental open model for text generation. It uses text diffusion instead of standard autoregressive decoding. The model ships under a permissive Apache 2.0 license. Google positions it for devs and researchers exploring speed-critical, interactive local workflows. Examples include in-line editing, rapid iteration, and generating non-linear text structures.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c855d3d9abf7a3f8",
+    "raw_id": "RAW-18056a4774bad58a",
+    "claim_type": "model_release",
+    "subject": "Google AI",
+    "predicate": "model_release",
+    "object": "，生成速度最高提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-18056a4774bad58a",
+      "start": 1008,
+      "end": 1242
+    },
+    "source_quote": "DiffusionGemma is a 26B Mixture of Experts (MoE) model. It activates only 3.8B parameters during inference. It is built on the Gemma 4 backbone, specifically the 26B-A4B architecture. Google integrated a diffusion head onto that base.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-feb62b2a812d1f3b",
+    "raw_id": "RAW-18056a4774bad58a",
+    "claim_type": "model_release",
+    "subject": "Google AI",
+    "predicate": "model_release",
+    "object": "，生成速度最高提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-18056a4774bad58a",
+      "start": 1662,
+      "end": 1913
+    },
+    "source_quote": "Google is very direct about the trade-off. DiffusionGemma prioritizes speed and parallel layout generation. Its overall output quality is lower than standard Gemma 4. For maximum quality production work, Google still recommends autoregressive Gemma 4.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-248b9e3ceec4b51c",
+    "raw_id": "RAW-18056a4774bad58a",
+    "claim_type": "model_release",
+    "subject": "Google AI",
+    "predicate": "model_release",
+    "object": "，生成速度最高提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-18056a4774bad58a",
+      "start": 4339,
+      "end": 4696
+    },
+    "source_quote": "A clear example is the Sudoku showcase from Google’s developer guide. Autoregressive models struggle with strict, multivariable constrained puzzles. The base DiffusionGemma model solves roughly 0% of Sudoku puzzles. After a simple JAX supervised fine-tuning recipe, correctness rises to 80%. The fine-tuned model also stops earlier, cutting inference steps.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9526dd9d161c2018",
+    "raw_id": "RAW-53d52f271ce257ad",
+    "claim_type": "model_release",
+    "subject": "DiffusionGemma：文本生成速度提升4倍的",
+    "predicate": "model_release",
+    "object": "Today, we’re introducing DiffusionGemma, an experimental open model that explores text diffusion, an exceptionally fast approach to text generation. Released under an Apache 2.0 license, this 26B Mixture of Experts (MoE) model moves beyond the sequential token-by-token processing of typical autoregressive Large Language Models (LLMs). Instead, it generates entire blocks of text simultaneously, delivering up to 4x faster text generation on GPUs.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-53d52f271ce257ad",
+      "start": 388,
+      "end": 836
+    },
+    "source_quote": "Today, we’re introducing DiffusionGemma, an experimental open model that explores text diffusion, an exceptionally fast approach to text generation. Released under an Apache 2.0 license, this 26B Mixture of Experts (MoE) model moves beyond the sequential token-by-token processing of typical autoregressive Large Language Models (LLMs). Instead, it generates entire blocks of text simultaneously, delivering up to 4x faster text generation on GPUs.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4ff7bb9716ade0f4",
+    "raw_id": "RAW-1498d4fb313c581e",
+    "claim_type": "model_release",
+    "subject": "Anthropic",
+    "predicate": "model_release",
+    "object": "，不同安全防护，新增 Mythos 级层次",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1498d4fb313c581e",
+      "start": 1137,
+      "end": 1357
+    },
+    "source_quote": "Anthropic team calls Fable 5 its most capable widely released model. It targets demanding reasoning and long-horizon agentic work. Anthropic states Fable 5’s capabilities exceed any model it has made generally available.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6efbc9da742294ac",
+    "raw_id": "RAW-1498d4fb313c581e",
+    "claim_type": "model_release",
+    "subject": "Anthropic",
+    "predicate": "model_release",
+    "object": "，不同安全防护，新增 Mythos 级层次",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1498d4fb313c581e",
+      "start": 199,
+      "end": 522
+    },
+    "source_quote": "Anthropic released two models on June 9, 2026: Claude Fable 5 and Claude Mythos 5. Both belong to a tier called “Mythos-class.” This tier sits above the Opus class in capability. Fable 5 is the version claimed to be made safe for general use. Mythos 5 is the same model with some safeguards lifted, kept in limited release.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6f8b56682d62571e",
+    "raw_id": "RAW-1498d4fb313c581e",
+    "claim_type": "model_release",
+    "subject": "Anthropic",
+    "predicate": "model_release",
+    "object": "，不同安全防护，新增 Mythos 级层次",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1498d4fb313c581e",
+      "start": 523,
+      "end": 550
+    },
+    "source_quote": "Claude Fable 5 and Mythos 5",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-36ad8dab40651f22",
+    "raw_id": "RAW-1498d4fb313c581e",
+    "claim_type": "model_release",
+    "subject": "Anthropic",
+    "predicate": "model_release",
+    "object": "，不同安全防护，新增 Mythos 级层次",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1498d4fb313c581e",
+      "start": 551,
+      "end": 726
+    },
+    "source_quote": "Mythos-class models are a tier of Claude models. They sit above the Opus class in capability. The first was Claude Mythos Preview, released in April through Project Glasswing.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-063b1772acbc7eb7",
+    "raw_id": "RAW-350fa8f5670555d0",
+    "claim_type": "funding",
+    "subject": "AgentMail",
+    "predicate": "funding",
+    "object": "$6M to build an email service for AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-350fa8f5670555d0",
+      "start": 3,
+      "end": 63
+    },
+    "source_quote": "AgentMail raises $6M to build an email service for AI agents",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a71e7ecd6418ce1c",
+    "raw_id": "RAW-350fa8f5670555d0",
+    "claim_type": "funding",
+    "subject": "AgentMail",
+    "predicate": "funding",
+    "object": "$6M to build an email service for AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-350fa8f5670555d0",
+      "start": 331,
+      "end": 836
+    },
+    "source_quote": "How things have changed. Coding agents like Claude Code, Codex, and Cursor initially saw the most traction, spurring adoption among programmers around the world, but today we have people using AI agents to do everything from debugging at scale and building marketing campaigns, to managing calendars and scheduling meetings. OpenClaw ‘s blockbuster debut earlier this year only sped things up, opening up access to AI agents by letting users run their own localized and personalized agent round the clock.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b04e963a27bac56f",
+    "raw_id": "RAW-350fa8f5670555d0",
+    "claim_type": "funding",
+    "subject": "AgentMail",
+    "predicate": "funding",
+    "object": "$6M to build an email service for AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-350fa8f5670555d0",
+      "start": 837,
+      "end": 1067
+    },
+    "source_quote": "And if the tech industry is to be believed , AI agents are set to become as numerous as real people on the internet, using software and services, talking and shopping on your behalf, and generally automating a wide swathe of work.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9338b80779fe1f51",
+    "raw_id": "RAW-350fa8f5670555d0",
+    "claim_type": "funding",
+    "subject": "AgentMail",
+    "predicate": "funding",
+    "object": "$6M to build an email service for AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-350fa8f5670555d0",
+      "start": 1068,
+      "end": 1419
+    },
+    "source_quote": "AgentMail , a startup out of San Francisco, sees that future playing out for certain, which is why it has built an email service designed specifically for AI agents. The company provides an API platform that lets you give AI agents their own email inboxes, with support for two-way conversations, parsing, threading, labeling, searching, and replying.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5136009817417e5e",
+    "raw_id": "RAW-b48f807a80fd3ebf",
+    "claim_type": "product_release",
+    "subject": "DigitalOcean",
+    "predicate": "product_release",
+    "object": "Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b48f807a80fd3ebf",
+      "start": 0,
+      "end": 149
+    },
+    "source_quote": "DigitalOcean Launches Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cd1bb6a16dd0b1ea",
+    "raw_id": "RAW-b48f807a80fd3ebf",
+    "claim_type": "product_release",
+    "subject": "DigitalOcean",
+    "predicate": "product_release",
+    "object": "Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b48f807a80fd3ebf",
+      "start": 346,
+      "end": 801
+    },
+    "source_quote": "BROOMFIELD, Colo.--( BUSINESS WIRE )-- DigitalOcean (NYSE: DOCN) today announced the launch of its Inference Engine, a set of new production capabilities that give AI builders exceptional performance and unified control over how they run, scale, and optimize inference workloads. The announcement comes ahead of DigitalOcean Deploy , the company's conference for AI builders, where it will unveil their full, integrated platform and new capabilities live.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-26c18169ae8fea67",
+    "raw_id": "RAW-b48f807a80fd3ebf",
+    "claim_type": "product_release",
+    "subject": "DigitalOcean",
+    "predicate": "product_release",
+    "object": "Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b48f807a80fd3ebf",
+      "start": 5895,
+      "end": 6361
+    },
+    "source_quote": "At Deploy in San Francisco, DigitalOcean will also unveil new products that show how it has built a five-layer stack purpose-built for the Inference Era. Hovsep Seraydarian of LawVo, Debajyoti Datta of Hippocratic AI, and Oscar Wu of Workato will share stories live at Deploy about how their teams are building and scaling real-world AI applications on DigitalOcean. In-person attendance is full; sign up to watch the keynote live stream at 12pm Pacific on April 28.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-15727e9bf33985fa",
+    "raw_id": "RAW-b48f807a80fd3ebf",
+    "claim_type": "product_release",
+    "subject": "DigitalOcean",
+    "predicate": "product_release",
+    "object": "Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-b48f807a80fd3ebf",
+      "start": 6381,
+      "end": 6825
+    },
+    "source_quote": "DigitalOcean is the Agentic Inference Cloud built for AI-native and digital-native enterprises scaling production workloads. The platform combines production-ready GPU infrastructure with a full-stack cloud — all built on open source at every layer — to deliver operational simplicity and predictable economics at scale. More than 640,000 customers trust DigitalOcean to power their cloud and AI infrastructure. Learn more at digitalocean.com .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-137085dd96e3e0c6",
+    "raw_id": "RAW-d32e9a9ab72bb29c",
+    "claim_type": "funding",
+    "subject": "Jedify 获 2400 万美元",
+    "predicate": "funding",
+    "object": "，帮助企业为 AI 智能体提供业务上下文",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-d32e9a9ab72bb29c",
+      "start": 3,
+      "end": 84
+    },
+    "source_quote": "Jedify raises $24M to help companies arm AI agents with context on their business",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-02b114e2d21dedce",
+    "raw_id": "RAW-d32e9a9ab72bb29c",
+    "claim_type": "funding",
+    "subject": "Jedify 获 2400 万美元",
+    "predicate": "funding",
+    "object": "，帮助企业为 AI 智能体提供业务上下文",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-d32e9a9ab72bb29c",
+      "start": 1049,
+      "end": 1484
+    },
+    "source_quote": "To build that out, Jedify has raised $24 million in a Series A funding round led by Norwest, TechCrunch has exclusively learned. The round saw participation from returning backers S Capital VC and Cerca Partners, as well as new investor Oceans Ventures. Data giant Snowflake also participated as a strategic investor and is integrating the startup’s tech with its AI products, such as its Cortex AI service, Semantic Views, and CoWork.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-62260e499c34fefe",
+    "raw_id": "RAW-b2ad1486dfcf4412",
+    "claim_type": "model_release",
+    "subject": "Decart",
+    "predicate": "model_release",
+    "object": "可模拟数小时逼真驾驶场景",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b2ad1486dfcf4412",
+      "start": 136,
+      "end": 365
+    },
+    "source_quote": "AI startup Decart on Wednesday unveiled Oasis 3, its latest interactive world model that can generate photorealistic driving environments in real time, TechCrunch has exclusively learned. The model is currently available via API.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5c92ec7ee55a3124",
+    "raw_id": "RAW-b2ad1486dfcf4412",
+    "claim_type": "model_release",
+    "subject": "Decart",
+    "predicate": "model_release",
+    "object": "可模拟数小时逼真驾驶场景",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b2ad1486dfcf4412",
+      "start": 990,
+      "end": 1370
+    },
+    "source_quote": "The startup already has a community of more than 100,000 developers, many of whom are building products on top of its real-time video model Lucy, largely in e-commerce and livestreaming. Oasis 3 is based on that foundation model, and it represents the company’s push into physical AI. Access is priced at $0.02 per second, and enterprise pricing depends on use cases, Decart said.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e8a5aebe442cb17f",
+    "raw_id": "RAW-b2ad1486dfcf4412",
+    "claim_type": "model_release",
+    "subject": "Decart",
+    "predicate": "model_release",
+    "object": "可模拟数小时逼真驾驶场景",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b2ad1486dfcf4412",
+      "start": 1680,
+      "end": 1801
+    },
+    "source_quote": "Decart’s Oasis 3 generates photorealistic driving scenarios that you can interact with in real time Image Credits: Decart",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cc058661912a8dee",
+    "raw_id": "RAW-b2ad1486dfcf4412",
+    "claim_type": "model_release",
+    "subject": "Decart",
+    "predicate": "model_release",
+    "object": "可模拟数小时逼真驾驶场景",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-b2ad1486dfcf4412",
+      "start": 1802,
+      "end": 2275
+    },
+    "source_quote": "Oasis 3’s release comes a few weeks after two-year-old Decart raised $300 million, which Leitersdorf says followed “huge demand increases for the models we built” in e-commerce, livestreaming, and physical AI. The round boosted Decart’s valuation to nearly $4 billion, and brought a series of strategic investors such as Toyota, Adobe, and eBay. All of these companies are potential customers, says Leitersdorf. Nvidia, an existing investor, also participated in the round.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-97b7bf1b26e3cece",
+    "raw_id": "RAW-971f4e45e9b557a8",
+    "claim_type": "research_result",
+    "subject": "Navigating the AI Agent Governance Gap |",
+    "predicate": "research_result",
+    "object": "- Boomi",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-971f4e45e9b557a8",
+      "start": 6495,
+      "end": 6551
+    },
+    "source_quote": "Navigating the AI Agent Governance Gap | Research Report",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6240bcf2036aa1b1",
+    "raw_id": "RAW-971f4e45e9b557a8",
+    "claim_type": "research_result",
+    "subject": "Navigating the AI Agent Governance Gap |",
+    "predicate": "research_result",
+    "object": "- Boomi",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-971f4e45e9b557a8",
+      "start": 6758,
+      "end": 6897
+    },
+    "source_quote": "A new research report from Boomi explores the state of play for AI agents today. Read “Navigating the AI Agent Governance Gap” to discover:",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b4939f87aaf75268",
+    "raw_id": "RAW-971f4e45e9b557a8",
+    "claim_type": "research_result",
+    "subject": "Navigating the AI Agent Governance Gap |",
+    "predicate": "research_result",
+    "object": "- Boomi",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-971f4e45e9b557a8",
+      "start": 504,
+      "end": 543
+    },
+    "source_quote": "Bring Boomi expertise to your AI agents",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-218230e3f528562f",
+    "raw_id": "RAW-971f4e45e9b557a8",
+    "claim_type": "research_result",
+    "subject": "Navigating the AI Agent Governance Gap |",
+    "predicate": "research_result",
+    "object": "- Boomi",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-971f4e45e9b557a8",
+      "start": 1023,
+      "end": 1075
+    },
+    "source_quote": "Deliver agent-ready tools with enterprise governance",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-20981f2947612219",
+    "raw_id": "RAW-dec436bc28b3b916",
+    "claim_type": "funding",
+    "subject": "超微计算机寻求70亿美元股权",
+    "predicate": "funding",
+    "object": "用于AI设备采购",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-dec436bc28b3b916",
+      "start": 69,
+      "end": 314
+    },
+    "source_quote": "Bloomberg's Anthony Hughes joins Matt Miller on \"Bloomberg Deals.\"- Super Micro Computer plans to raise $7 billion through a package of equity offerings to purchase the components needed to fulfill customers’ orders for the company’s AI servers.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4684bcbaf82265f2",
+    "raw_id": "RAW-4f9982230a297b6e",
+    "claim_type": "funding",
+    "subject": "Apollo 与 Blackstone 为 Anthropic",
+    "predicate": "funding",
+    "object": "Apollo Wraps Up $35B Chip Deal for Anthropic",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-4f9982230a297b6e",
+      "start": 15,
+      "end": 59
+    },
+    "source_quote": "Apollo Wraps Up $35B Chip Deal for Anthropic",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8834b1dca327b3ca",
+    "raw_id": "RAW-4f9982230a297b6e",
+    "claim_type": "funding",
+    "subject": "Apollo 与 Blackstone 为 Anthropic",
+    "predicate": "funding",
+    "object": "Bloomberg's Emily Graffeo joins Matt Miller on \"Bloomberg Deals.\" Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic to expand its AI infrastructure, marking the latest mega-deal in the AI race.",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-4f9982230a297b6e",
+      "start": 60,
+      "end": 304
+    },
+    "source_quote": "Bloomberg's Emily Graffeo joins Matt Miller on \"Bloomberg Deals.\" Apollo Global Management and Blackstone have finalized a $35 billion financing package for Anthropic to expand its AI infrastructure, marking the latest mega-deal in the AI race.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-287d9cc56b590d8e",
+    "raw_id": "RAW-e89e4b2a36b0e3d6",
+    "claim_type": "model_release",
+    "subject": "DiffusionGemma",
+    "predicate": "model_release",
+    "object": "，NVIDIA 免费托管",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-e89e4b2a36b0e3d6",
+      "start": 230,
+      "end": 480
+    },
+    "source_quote": "DiffusionGemma ( via ) Last May Google briefly released an experimental Gemini Diffusion model. I tried the preview at the time and recorded it running at 857 tokens/second. It was an exciting model, but Google made no further announcements about it.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e5624bc9391d18e0",
+    "raw_id": "RAW-e89e4b2a36b0e3d6",
+    "claim_type": "model_release",
+    "subject": "DiffusionGemma",
+    "predicate": "model_release",
+    "object": "，NVIDIA 免费托管",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-e89e4b2a36b0e3d6",
+      "start": 481,
+      "end": 622
+    },
+    "source_quote": "That research has returned in the best possible way: as a new open weight (Apache 2 licensed) Gemma model, google/diffusiongemma-26B-A4B-it .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-24dc828bef8e02fa",
+    "raw_id": "RAW-882f3dbe0b99f635",
+    "claim_type": "deployment",
+    "subject": "Anthropic CEO 称政府应有权阻止高风险新 AI 模型",
+    "predicate": "deployment",
+    "object": "Anthropic CEO Says Government Should Be Able to Block New Models - Bloomberg",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-882f3dbe0b99f635",
+      "start": 0,
+      "end": 76
+    },
+    "source_quote": "Anthropic CEO Says Government Should Be Able to Block New Models - Bloomberg",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bbfbda35db3ee3c5",
+    "raw_id": "RAW-c015eb13f556ffbe",
+    "claim_type": "product_release",
+    "subject": "ADP与斯坦福联合",
+    "predicate": "product_release",
+    "object": "Canaries Dashboard，实时追踪AI对职业重塑的影响",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c015eb13f556ffbe",
+      "start": 64,
+      "end": 530
+    },
+    "source_quote": "Nela Richardson, Chief Economist at ADP and a Bloomberg contributor, says employers need to decide whether AI is going to be a tool for automating roles away or augmenting tasks to create new value. She discusses the new Canaries Dashboard, launched by ADP and the Stanford Digital Economy Lab, to provide real-time indications of how AI is reshaping different occupations based on labor market data. Richardson joins Caroline Hyde and Ed Ludlow on “Bloomberg Tech.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-027a6f21d6b71ce5",
+    "raw_id": "RAW-02ebde9d4a171b0d",
+    "claim_type": "deployment",
+    "subject": "字节火山引擎版权商业化平台",
+    "predicate": "deployment",
+    "object": "，周星驰经典IP首批入驻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-02ebde9d4a171b0d",
+      "start": 0,
+      "end": 51
+    },
+    "source_quote": "普通人也能和星爷同台飙戏：字节火山方舟版权商业化平台上线，周星驰经典影视 IP 首批入驻 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1fb5edbe4315b0d8",
+    "raw_id": "RAW-02ebde9d4a171b0d",
+    "claim_type": "deployment",
+    "subject": "字节火山引擎版权商业化平台",
+    "predicate": "deployment",
+    "object": "，周星驰经典IP首批入驻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-02ebde9d4a171b0d",
+      "start": 219,
+      "end": 263
+    },
+    "source_quote": "普通人也能和星爷同台飙戏：字节火山方舟版权商业化平台上线，周星驰经典影视 IP 首批入驻",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5910f92d8e22c336",
+    "raw_id": "RAW-02ebde9d4a171b0d",
+    "claim_type": "deployment",
+    "subject": "字节火山引擎版权商业化平台",
+    "predicate": "deployment",
+    "object": "，周星驰经典IP首批入驻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-02ebde9d4a171b0d",
+      "start": 332,
+      "end": 379
+    },
+    "source_quote": "IT之家 6 月 10 日消息，字节跳动火山引擎今日宣布，火山方舟版权商业化平台今日正式上线。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0a5073ec0e5c8659",
+    "raw_id": "RAW-02ebde9d4a171b0d",
+    "claim_type": "deployment",
+    "subject": "字节火山引擎版权商业化平台",
+    "predicate": "deployment",
+    "object": "，周星驰经典IP首批入驻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-02ebde9d4a171b0d",
+      "start": 507,
+      "end": 613
+    },
+    "source_quote": "目前，模板已在火山方舟体验中心、火山引擎 Kickart 上线，也同步开放给 LibTV、筷子科技丽帧引擎、万兴剧厂、万兴喵影、Pixmax 、纳米 P 视频、快剪辑、360 AI 智剪、美片等工具合作伙伴平台。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0ffd4a87d0bf9a23",
+    "raw_id": "RAW-77e177ff521f0a15",
+    "claim_type": "model_release",
+    "subject": "谷歌",
+    "predicate": "model_release",
+    "object": "：本地 AI 推理速度提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-77e177ff521f0a15",
+      "start": 0,
+      "end": 50
+    },
+    "source_quote": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9a3abffb4df3b677",
+    "raw_id": "RAW-77e177ff521f0a15",
+    "claim_type": "model_release",
+    "subject": "谷歌",
+    "predicate": "model_release",
+    "object": "：本地 AI 推理速度提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-77e177ff521f0a15",
+      "start": 218,
+      "end": 261
+    },
+    "source_quote": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-53bc4ba62a2c55fb",
+    "raw_id": "RAW-77e177ff521f0a15",
+    "claim_type": "model_release",
+    "subject": "谷歌",
+    "predicate": "model_release",
+    "object": "：本地 AI 推理速度提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-77e177ff521f0a15",
+      "start": 338,
+      "end": 437
+    },
+    "source_quote": "IT之家 6 月 11 日消息，谷歌今天（6 月 11 日）发布公告，宣布推出 DiffusionGemma，是基于文本扩散机制的开放 AI 模型， 相比较自回归模型在本地推理速度上提升了 4 倍。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c0d954c60d8247d3",
+    "raw_id": "RAW-77e177ff521f0a15",
+    "claim_type": "model_release",
+    "subject": "谷歌",
+    "predicate": "model_release",
+    "object": "：本地 AI 推理速度提升 4 倍",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-77e177ff521f0a15",
+      "start": 676,
+      "end": 713
+    },
+    "source_quote": "开源方面，该模型能力与其他 Gemma 4 模型相当，但推理效率显著更高。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-74848e2afb65c933",
+    "raw_id": "RAW-5201d27bd2a00f10",
+    "claim_type": "product_release",
+    "subject": "小米 MiMo Code V0.1.0",
+    "predicate": "product_release",
+    "object": "并开源：AI 编程助手，基于 OpenCode 二次开发",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-5201d27bd2a00f10",
+      "start": 0,
+      "end": 70
+    },
+    "source_quote": "小米 MiMo Code V0.1.0 探索性 AI 编程助手发布并开源：基于 OpenCode 二次开发，采用 MIT 协议 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-56f2e0c1154392a0",
+    "raw_id": "RAW-5201d27bd2a00f10",
+    "claim_type": "product_release",
+    "subject": "小米 MiMo Code V0.1.0",
+    "predicate": "product_release",
+    "object": "并开源：AI 编程助手，基于 OpenCode 二次开发",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-5201d27bd2a00f10",
+      "start": 238,
+      "end": 301
+    },
+    "source_quote": "小米 MiMo Code V0.1.0 探索性 AI 编程助手发布并开源：基于 OpenCode 二次开发，采用 MIT 协议",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-81cbc84733597f2c",
+    "raw_id": "RAW-5201d27bd2a00f10",
+    "claim_type": "product_release",
+    "subject": "小米 MiMo Code V0.1.0",
+    "predicate": "product_release",
+    "object": "并开源：AI 编程助手，基于 OpenCode 二次开发",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-5201d27bd2a00f10",
+      "start": 379,
+      "end": 458
+    },
+    "source_quote": "IT之家 6 月 11 日消息，小米 MiMo 官方今日凌晨正式发布并开源 MiMo Code V0.1.0 —— 一款运行在终端里的探索性 AI 编程助手。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5a36ba36f10f70be",
+    "raw_id": "RAW-5201d27bd2a00f10",
+    "claim_type": "product_release",
+    "subject": "小米 MiMo Code V0.1.0",
+    "predicate": "product_release",
+    "object": "并开源：AI 编程助手，基于 OpenCode 二次开发",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-5201d27bd2a00f10",
+      "start": 459,
+      "end": 512
+    },
+    "source_quote": "据介绍， MiMo Code 基于开源项目 OpenCode 二次开发，发布并开源，采用 MIT 协议 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-82f9a33c6e075b9f",
+    "raw_id": "RAW-2c2dbf8a5edbddc4",
+    "claim_type": "deployment",
+    "subject": "阿里千问",
+    "predicate": "deployment",
+    "object": "国内首个全周期高考志愿填报Agent，免费提供咨询服务",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2c2dbf8a5edbddc4",
+      "start": 0,
+      "end": 43
+    },
+    "source_quote": "阿里千问上线“国内首个全周期高考志愿填报 Agent”，提供免费咨询服务 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9139659758440553",
+    "raw_id": "RAW-2c2dbf8a5edbddc4",
+    "claim_type": "deployment",
+    "subject": "阿里千问",
+    "predicate": "deployment",
+    "object": "国内首个全周期高考志愿填报Agent，免费提供咨询服务",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-2c2dbf8a5edbddc4",
+      "start": 211,
+      "end": 247
+    },
+    "source_quote": "阿里千问上线“国内首个全周期高考志愿填报 Agent”，提供免费咨询服务",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6d08d5517a55c877",
+    "raw_id": "RAW-2c2dbf8a5edbddc4",
+    "claim_type": "deployment",
+    "subject": "阿里千问",
+    "predicate": "deployment",
+    "object": "国内首个全周期高考志愿填报Agent，免费提供咨询服务",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-2c2dbf8a5edbddc4",
+      "start": 325,
+      "end": 395
+    },
+    "source_quote": "IT之家 6 月 10 日消息，阿里巴巴今日宣布， 千问上线国内首个全周期高考志愿填报 Agent ，为全国考生免费提供志愿填报和咨询服务。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-57cfe19e948589f8",
+    "raw_id": "RAW-a239ab05b4f1b8a4",
+    "claim_type": "model_release",
+    "subject": "摩尔线程",
+    "predicate": "model_release",
+    "object": "，9B/27B 参数基于国产 GPU 全链路训练",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-a239ab05b4f1b8a4",
+      "start": 0,
+      "end": 77
+    },
+    "source_quote": "IT之家 6 月 10 日消息，摩尔线程发布并开源面向 GPU 底层算子生成的专用代码大模型 MusaCoder ，包含 9B 和 27B 两个参数规模。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cb0610736a10bc9d",
+    "raw_id": "RAW-a239ab05b4f1b8a4",
+    "claim_type": "model_release",
+    "subject": "摩尔线程",
+    "predicate": "model_release",
+    "object": "，9B/27B 参数基于国产 GPU 全链路训练",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-a239ab05b4f1b8a4",
+      "start": 78,
+      "end": 157
+    },
+    "source_quote": "据悉，这是 业内首个基于国产 GPU 算力底座完成全链路训练与验证的开源代码大模型 ，其完整后训练流程均在基于 MTT S5000 构建的夸娥智算集群上完成。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fda9da9b3aa8feed",
+    "raw_id": "RAW-a239ab05b4f1b8a4",
+    "claim_type": "model_release",
+    "subject": "摩尔线程",
+    "predicate": "model_release",
+    "object": "，9B/27B 参数基于国产 GPU 全链路训练",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-a239ab05b4f1b8a4",
+      "start": 273,
+      "end": 436
+    },
+    "source_quote": "官方表示，在 KernelBench 评测中，MusaCoder-27B-RL 以 Overall Pass@8 93.2%、Avg.@8 88.60% 的成绩，超越 Claude Opus 4.7、DeepSeek-V4 Pro、GLM-5.1、Kimi K2.6 等主流 SOTA 代码模型， 性能达到当前行业领先水平 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ab1487c9cc1dead8",
+    "raw_id": "RAW-a239ab05b4f1b8a4",
+    "claim_type": "model_release",
+    "subject": "摩尔线程",
+    "predicate": "model_release",
+    "object": "，9B/27B 参数基于国产 GPU 全链路训练",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-a239ab05b4f1b8a4",
+      "start": 450,
+      "end": 513
+    },
+    "source_quote": "MusaCoder 模型： https://huggingface.co/MooreThreads/MusaCoder-27B",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  }
+]

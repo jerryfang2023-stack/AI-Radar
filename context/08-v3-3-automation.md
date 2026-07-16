@@ -47,7 +47,7 @@ Execution order:
 2. Skip only the business-signal chain when the day's Raw / Pool / signal assets already exist on `main`.
 3. Run one Daily Monitor attempt and the executable evidence-supply gate.
 4. Persist Raw / Pool assets.
-5. Build SourceArtifact / RawDocument / Claim / Entity / CanonicalEvent and FDE / hardware / TAG-V3 projections.
+5. Build SourceArtifact / RawDocument / Claim / Entity / CanonicalEvent and FDE / hardware / TAG-V4 projections.
 6. Run the Data Center V4 integrity gate and materialize V4 JSONL tables.
 7. Generate Signal Card and trend assets only for frozen V3 page compatibility, then run their existing gates.
 8. Build and gate the existing business-signal frontstage and operations data.

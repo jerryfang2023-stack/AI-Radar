@@ -1,0 +1,684 @@
+[
+  {
+    "relationship_id": "REL-0eb263f31399e906",
+    "event_id": "EV-63fdf001c22a0ed4",
+    "subject": "Claude Code v2.1.198",
+    "predicate": "product_release",
+    "object": "Added background agent notifications in claude agents — sessions that need input or finish now fire the Notification hook ( agent_needs_input / agent_completed )",
+    "claim_ref": "CL-3cf1d0d1a1f86ff3",
+    "source_refs": [
+      "SA-233afa573c4cdb06"
+    ]
+  },
+  {
+    "relationship_id": "REL-fce787321cda7f58",
+    "event_id": "EV-63fdf001c22a0ed4",
+    "subject": "Claude Code v2.1.198",
+    "predicate": "product_release",
+    "object": "Added /dataviz skill for chart and dashboard design guidance with a runnable color-palette validator",
+    "claim_ref": "CL-ea8d581916c7ec4b",
+    "source_refs": [
+      "SA-233afa573c4cdb06"
+    ]
+  },
+  {
+    "relationship_id": "REL-c8dcf2eb26c51598",
+    "event_id": "EV-63fdf001c22a0ed4",
+    "subject": "Claude Code v2.1.198",
+    "predicate": "product_release",
+    "object": "Gateway: added Claude Platform on AWS (anthropicAws) as an upstream provider; model-not-found responses now advance the failover chain",
+    "claim_ref": "CL-61227cdf9b53be75",
+    "source_refs": [
+      "SA-233afa573c4cdb06"
+    ]
+  },
+  {
+    "relationship_id": "REL-1dca8b8f153330ad",
+    "event_id": "EV-63fdf001c22a0ed4",
+    "subject": "Claude Code v2.1.198",
+    "predicate": "product_release",
+    "object": "Background agents launched from claude agents now commit, push, and open a draft PR when they finish code work in a worktree, instead of stopping to ask",
+    "claim_ref": "CL-1f7d823bb7872786",
+    "source_refs": [
+      "SA-233afa573c4cdb06"
+    ]
+  },
+  {
+    "relationship_id": "REL-be03eb7a49457e7d",
+    "event_id": "EV-b8bba030747fd3b6",
+    "subject": "Google Cloud Workbench Notebooks 扩展",
+    "predicate": "product_release",
+    "object": "：在 VS Code 中连接云端 Jupyter 环境",
+    "claim_ref": "CL-283dbc5bfe75db2f",
+    "source_refs": [
+      "SA-247aeeadc7275db3"
+    ]
+  },
+  {
+    "relationship_id": "REL-c1a73df696f1474a",
+    "event_id": "EV-b8bba030747fd3b6",
+    "subject": "Google Cloud Workbench Notebooks 扩展",
+    "predicate": "product_release",
+    "object": "：在 VS Code 中连接云端 Jupyter 环境",
+    "claim_ref": "CL-4c6183d41cbb5951",
+    "source_refs": [
+      "SA-247aeeadc7275db3"
+    ]
+  },
+  {
+    "relationship_id": "REL-d32871725b8208e4",
+    "event_id": "EV-b8bba030747fd3b6",
+    "subject": "Google Cloud Workbench Notebooks 扩展",
+    "predicate": "product_release",
+    "object": "：在 VS Code 中连接云端 Jupyter 环境",
+    "claim_ref": "CL-b976b1e9039d610e",
+    "source_refs": [
+      "SA-247aeeadc7275db3"
+    ]
+  },
+  {
+    "relationship_id": "REL-15e86393a4589665",
+    "event_id": "EV-b8bba030747fd3b6",
+    "subject": "Google Cloud Workbench Notebooks 扩展",
+    "predicate": "product_release",
+    "object": "：在 VS Code 中连接云端 Jupyter 环境",
+    "claim_ref": "CL-94c89cfbc12c54e4",
+    "source_refs": [
+      "SA-247aeeadc7275db3"
+    ]
+  },
+  {
+    "relationship_id": "REL-8f26b844054bd55e",
+    "event_id": "EV-2f81b0d48d128f5c",
+    "subject": "Claude Sonnet 5延续Anthropic隐藏",
+    "predicate": "pricing_change",
+    "object": "的模式",
+    "claim_ref": "CL-1c720624b4aeaa22",
+    "source_refs": [
+      "SA-be3c7a0122b0c675"
+    ]
+  },
+  {
+    "relationship_id": "REL-297ff44bb1c81b97",
+    "event_id": "EV-2f81b0d48d128f5c",
+    "subject": "Claude Sonnet 5延续Anthropic隐藏",
+    "predicate": "pricing_change",
+    "object": "的模式",
+    "claim_ref": "CL-3dec06de77401c86",
+    "source_refs": [
+      "SA-be3c7a0122b0c675"
+    ]
+  },
+  {
+    "relationship_id": "REL-25503279f30c0254",
+    "event_id": "EV-2f81b0d48d128f5c",
+    "subject": "Claude Sonnet 5延续Anthropic隐藏",
+    "predicate": "pricing_change",
+    "object": "的模式",
+    "claim_ref": "CL-04c5aea074728c36",
+    "source_refs": [
+      "SA-be3c7a0122b0c675"
+    ]
+  },
+  {
+    "relationship_id": "REL-652054ccb4853ca1",
+    "event_id": "EV-2f81b0d48d128f5c",
+    "subject": "Claude Sonnet 5延续Anthropic隐藏",
+    "predicate": "pricing_change",
+    "object": "的模式",
+    "claim_ref": "CL-1d96e101ce06d127",
+    "source_refs": [
+      "SA-be3c7a0122b0c675"
+    ]
+  },
+  {
+    "relationship_id": "REL-597fab451f982091",
+    "event_id": "EV-2bb63a3015195f9b",
+    "subject": "Agentic infrastructure startup Seltz",
+    "predicate": "funding",
+    "object": "$12.5M to help AI agents search the web for answers - SiliconANGLE",
+    "claim_ref": "CL-ad2dc6269c91e8bf",
+    "source_refs": [
+      "SA-344b1d90b6022053"
+    ]
+  },
+  {
+    "relationship_id": "REL-4f0ee95080b50cd7",
+    "event_id": "EV-2bb63a3015195f9b",
+    "subject": "Agentic infrastructure startup Seltz",
+    "predicate": "funding",
+    "object": "$12.5M to help AI agents search the web for answers - SiliconANGLE",
+    "claim_ref": "CL-f31e4b5be294409b",
+    "source_refs": [
+      "SA-344b1d90b6022053"
+    ]
+  },
+  {
+    "relationship_id": "REL-b57a45e61630c670",
+    "event_id": "EV-2bb63a3015195f9b",
+    "subject": "Agentic infrastructure startup Seltz",
+    "predicate": "funding",
+    "object": "$12.5M to help AI agents search the web for answers - SiliconANGLE",
+    "claim_ref": "CL-925c6fad070235f1",
+    "source_refs": [
+      "SA-344b1d90b6022053"
+    ]
+  },
+  {
+    "relationship_id": "REL-d8650550598d99f5",
+    "event_id": "EV-2bb63a3015195f9b",
+    "subject": "Agentic infrastructure startup Seltz",
+    "predicate": "funding",
+    "object": "$12.5M to help AI agents search the web for answers - SiliconANGLE",
+    "claim_ref": "CL-30eb84eaa3450a3c",
+    "source_refs": [
+      "SA-344b1d90b6022053"
+    ]
+  },
+  {
+    "relationship_id": "REL-b6e1df84e66f0431",
+    "event_id": "EV-adf92ecb7cd8714f",
+    "subject": "Engram",
+    "predicate": "funding",
+    "object": "8M to Build AI That Actually Knows Your Organization",
+    "claim_ref": "CL-da243cb6c755c4ba",
+    "source_refs": [
+      "SA-e91a69292997822a"
+    ]
+  },
+  {
+    "relationship_id": "REL-bec62023cdf6d177",
+    "event_id": "EV-adf92ecb7cd8714f",
+    "subject": "Engram",
+    "predicate": "funding",
+    "object": "8M to Build AI That Actually Knows Your Organization",
+    "claim_ref": "CL-80d304e3ac3aaac5",
+    "source_refs": [
+      "SA-e91a69292997822a"
+    ]
+  },
+  {
+    "relationship_id": "REL-e5af627b09afa706",
+    "event_id": "EV-adf92ecb7cd8714f",
+    "subject": "Engram",
+    "predicate": "funding",
+    "object": "8M to Build AI That Actually Knows Your Organization",
+    "claim_ref": "CL-710e20e22bd59aff",
+    "source_refs": [
+      "SA-e91a69292997822a"
+    ]
+  },
+  {
+    "relationship_id": "REL-9f3913312e67b26d",
+    "event_id": "EV-adf92ecb7cd8714f",
+    "subject": "Engram",
+    "predicate": "funding",
+    "object": "8M to Build AI That Actually Knows Your Organization",
+    "claim_ref": "CL-0d3541408062c99d",
+    "source_refs": [
+      "SA-e91a69292997822a"
+    ]
+  },
+  {
+    "relationship_id": "REL-8295c67b964a3d94",
+    "event_id": "EV-43e2290d712da3c6",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面",
+    "claim_ref": "CL-b9eb87adfe6b0ebd",
+    "source_refs": [
+      "SA-e0829a9ea368c0a5"
+    ]
+  },
+  {
+    "relationship_id": "REL-eed2140b4bdd0591",
+    "event_id": "EV-43e2290d712da3c6",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面",
+    "claim_ref": "CL-291aa5a10f76ad0e",
+    "source_refs": [
+      "SA-e0829a9ea368c0a5"
+    ]
+  },
+  {
+    "relationship_id": "REL-2dca81f3ed66efb4",
+    "event_id": "EV-43e2290d712da3c6",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面",
+    "claim_ref": "CL-77c3b01e61e3515e",
+    "source_refs": [
+      "SA-e0829a9ea368c0a5"
+    ]
+  },
+  {
+    "relationship_id": "REL-fe58553926e9d6ef",
+    "event_id": "EV-a0a5a6b43d7214e4",
+    "subject": "GLM Coding Pro",
+    "predicate": "product_release",
+    "object": "：面向专业开发者的编码助手",
+    "claim_ref": "CL-12d95a46c0e8b88b",
+    "source_refs": [
+      "SA-5937d47bf58b9499"
+    ]
+  },
+  {
+    "relationship_id": "REL-1490c6d2d08a53f7",
+    "event_id": "EV-a0a5a6b43d7214e4",
+    "subject": "GLM Coding Pro",
+    "predicate": "product_release",
+    "object": "：面向专业开发者的编码助手",
+    "claim_ref": "CL-9564f8c3030f3834",
+    "source_refs": [
+      "SA-5937d47bf58b9499"
+    ]
+  },
+  {
+    "relationship_id": "REL-17bca23099669567",
+    "event_id": "EV-a0a5a6b43d7214e4",
+    "subject": "GLM Coding Pro",
+    "predicate": "product_release",
+    "object": "：面向专业开发者的编码助手",
+    "claim_ref": "CL-5aae977591c57723",
+    "source_refs": [
+      "SA-5937d47bf58b9499"
+    ]
+  },
+  {
+    "relationship_id": "REL-e5386d0e3a473c0d",
+    "event_id": "EV-a0a5a6b43d7214e4",
+    "subject": "GLM Coding Pro",
+    "predicate": "product_release",
+    "object": "：面向专业开发者的编码助手",
+    "claim_ref": "CL-c5c966eda83a6e05",
+    "source_refs": [
+      "SA-5937d47bf58b9499"
+    ]
+  },
+  {
+    "relationship_id": "REL-df6e58415df5faac",
+    "event_id": "EV-3e1d53d372d8713d",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "Monetization Gateway 变现网关",
+    "claim_ref": "CL-041e8227d36a4830",
+    "source_refs": [
+      "SA-740c22524f76dd8b"
+    ]
+  },
+  {
+    "relationship_id": "REL-e285087f13a554eb",
+    "event_id": "EV-3e1d53d372d8713d",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "Monetization Gateway 变现网关",
+    "claim_ref": "CL-d3f54d23d47cab04",
+    "source_refs": [
+      "SA-740c22524f76dd8b"
+    ]
+  },
+  {
+    "relationship_id": "REL-7baa80ae424abbfe",
+    "event_id": "EV-3e1d53d372d8713d",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "Monetization Gateway 变现网关",
+    "claim_ref": "CL-e7e0fa0471b64c1d",
+    "source_refs": [
+      "SA-740c22524f76dd8b"
+    ]
+  },
+  {
+    "relationship_id": "REL-fcb115703e5bb199",
+    "event_id": "EV-3e1d53d372d8713d",
+    "subject": "Cloudflare",
+    "predicate": "product_release",
+    "object": "Monetization Gateway 变现网关",
+    "claim_ref": "CL-1d7266bbf53f1aa7",
+    "source_refs": [
+      "SA-740c22524f76dd8b"
+    ]
+  },
+  {
+    "relationship_id": "REL-25eb593998ed7bf8",
+    "event_id": "EV-f34eec5df7f5bcb7",
+    "subject": "Meta",
+    "predicate": "product_release",
+    "object": "非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%",
+    "claim_ref": "CL-601390d975f30011",
+    "source_refs": [
+      "SA-01bdd26d6ecd1a44"
+    ]
+  },
+  {
+    "relationship_id": "REL-ab797abbd694a389",
+    "event_id": "EV-f34eec5df7f5bcb7",
+    "subject": "Meta",
+    "predicate": "product_release",
+    "object": "非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%",
+    "claim_ref": "CL-8354e900502138e5",
+    "source_refs": [
+      "SA-01bdd26d6ecd1a44"
+    ]
+  },
+  {
+    "relationship_id": "REL-4450c2675df49a37",
+    "event_id": "EV-f34eec5df7f5bcb7",
+    "subject": "Meta",
+    "predicate": "product_release",
+    "object": "非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%",
+    "claim_ref": "CL-22b210018f5193f7",
+    "source_refs": [
+      "SA-01bdd26d6ecd1a44"
+    ]
+  },
+  {
+    "relationship_id": "REL-2bfaaedeb726fe6e",
+    "event_id": "EV-f34eec5df7f5bcb7",
+    "subject": "Meta",
+    "predicate": "product_release",
+    "object": "非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%",
+    "claim_ref": "CL-7c6f61d5cad29584",
+    "source_refs": [
+      "SA-01bdd26d6ecd1a44"
+    ]
+  },
+  {
+    "relationship_id": "REL-c702d73ff50e0f33",
+    "event_id": "EV-80e54c9a390da293",
+    "subject": "Announcing our $800M",
+    "predicate": "funding",
+    "object": "to accelerate the shift to open-source AI",
+    "claim_ref": "CL-366d1bca92131295",
+    "source_refs": [
+      "SA-7433945944813ef2"
+    ]
+  },
+  {
+    "relationship_id": "REL-4062ad00f1a719ee",
+    "event_id": "EV-80e54c9a390da293",
+    "subject": "Announcing our $800M",
+    "predicate": "funding",
+    "object": "to accelerate the shift to open-source AI",
+    "claim_ref": "CL-f4fc62fe3b4858c4",
+    "source_refs": [
+      "SA-7433945944813ef2"
+    ]
+  },
+  {
+    "relationship_id": "REL-741fa71da153b384",
+    "event_id": "EV-80e54c9a390da293",
+    "subject": "Announcing our $800M",
+    "predicate": "funding",
+    "object": "to accelerate the shift to open-source AI",
+    "claim_ref": "CL-13ad14b5de31c6cf",
+    "source_refs": [
+      "SA-7433945944813ef2"
+    ]
+  },
+  {
+    "relationship_id": "REL-c7e7794e4c105be0",
+    "event_id": "EV-80e54c9a390da293",
+    "subject": "Announcing our $800M",
+    "predicate": "funding",
+    "object": "to accelerate the shift to open-source AI",
+    "claim_ref": "CL-8fbb9486b211c4cd",
+    "source_refs": [
+      "SA-7433945944813ef2"
+    ]
+  },
+  {
+    "relationship_id": "REL-9973ad62f0b8e490",
+    "event_id": "EV-e0b0ab8dfcab20a5",
+    "subject": "消息称快手可灵 AI 将",
+    "predicate": "funding",
+    "object": "：投后估值 180 亿美元，腾讯参投",
+    "claim_ref": "CL-f153dfcbe21b689a",
+    "source_refs": [
+      "SA-19617a11f23e79c3"
+    ]
+  },
+  {
+    "relationship_id": "REL-1bf3d8258b0cfe88",
+    "event_id": "EV-e0b0ab8dfcab20a5",
+    "subject": "消息称快手可灵 AI 将",
+    "predicate": "funding",
+    "object": "：投后估值 180 亿美元，腾讯参投",
+    "claim_ref": "CL-24e846331c4be5bc",
+    "source_refs": [
+      "SA-19617a11f23e79c3"
+    ]
+  },
+  {
+    "relationship_id": "REL-19b1df937442f439",
+    "event_id": "EV-e0b0ab8dfcab20a5",
+    "subject": "消息称快手可灵 AI 将",
+    "predicate": "funding",
+    "object": "：投后估值 180 亿美元，腾讯参投",
+    "claim_ref": "CL-1c1c565634c8cb9e",
+    "source_refs": [
+      "SA-19617a11f23e79c3"
+    ]
+  },
+  {
+    "relationship_id": "REL-e5662209179215ed",
+    "event_id": "EV-e0b0ab8dfcab20a5",
+    "subject": "消息称快手可灵 AI 将",
+    "predicate": "funding",
+    "object": "：投后估值 180 亿美元，腾讯参投",
+    "claim_ref": "CL-0d1dc6e06e1cb0b6",
+    "source_refs": [
+      "SA-19617a11f23e79c3"
+    ]
+  },
+  {
+    "relationship_id": "REL-c359f4ddd4906da1",
+    "event_id": "EV-8daf217ff024ac4a",
+    "subject": "瑞银：约六成企业收紧 AI 开支，DeepSeek 等",
+    "predicate": "model_release",
+    "object": "有望受益",
+    "claim_ref": "CL-b7f62bef41b1a0af",
+    "source_refs": [
+      "SA-2a783caeb4163409"
+    ]
+  },
+  {
+    "relationship_id": "REL-1c4570d376126cb8",
+    "event_id": "EV-8daf217ff024ac4a",
+    "subject": "瑞银：约六成企业收紧 AI 开支，DeepSeek 等",
+    "predicate": "model_release",
+    "object": "有望受益",
+    "claim_ref": "CL-ae872952904b6ae5",
+    "source_refs": [
+      "SA-2a783caeb4163409"
+    ]
+  },
+  {
+    "relationship_id": "REL-155f701e3b9224dd",
+    "event_id": "EV-8daf217ff024ac4a",
+    "subject": "瑞银：约六成企业收紧 AI 开支，DeepSeek 等",
+    "predicate": "model_release",
+    "object": "有望受益",
+    "claim_ref": "CL-68aee7e1f0e71df2",
+    "source_refs": [
+      "SA-2a783caeb4163409"
+    ]
+  },
+  {
+    "relationship_id": "REL-813a1fd6bd1607fc",
+    "event_id": "EV-af1d9851e91802af",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "生物学计算能力",
+    "claim_ref": "CL-90641c6556124c37",
+    "source_refs": [
+      "SA-18a3ddc525e87356"
+    ]
+  },
+  {
+    "relationship_id": "REL-d48de0cf96fe970a",
+    "event_id": "EV-af1d9851e91802af",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "生物学计算能力",
+    "claim_ref": "CL-ba97f0933ad78da9",
+    "source_refs": [
+      "SA-18a3ddc525e87356"
+    ]
+  },
+  {
+    "relationship_id": "REL-354b8c9e30f46681",
+    "event_id": "EV-af1d9851e91802af",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "生物学计算能力",
+    "claim_ref": "CL-24714b5c4b56aef3",
+    "source_refs": [
+      "SA-18a3ddc525e87356"
+    ]
+  },
+  {
+    "relationship_id": "REL-253f91a02292014a",
+    "event_id": "EV-af1d9851e91802af",
+    "subject": "OpenAI",
+    "predicate": "model_release",
+    "object": "生物学计算能力",
+    "claim_ref": "CL-632e5137598a0607",
+    "source_refs": [
+      "SA-18a3ddc525e87356"
+    ]
+  },
+  {
+    "relationship_id": "REL-837340d42b3cf443",
+    "event_id": "EV-fb0838335d861b02",
+    "subject": "葡萄牙",
+    "predicate": "model_release",
+    "object": "AMALIA",
+    "claim_ref": "CL-3a8a93c720f79863",
+    "source_refs": [
+      "SA-01e19b4720fd567c"
+    ]
+  },
+  {
+    "relationship_id": "REL-40e47d7dffa0a6ce",
+    "event_id": "EV-fb0838335d861b02",
+    "subject": "葡萄牙",
+    "predicate": "model_release",
+    "object": "AMALIA",
+    "claim_ref": "CL-6d84ff8ba355025a",
+    "source_refs": [
+      "SA-01e19b4720fd567c"
+    ]
+  },
+  {
+    "relationship_id": "REL-2867f9e43bf6714e",
+    "event_id": "EV-fb0838335d861b02",
+    "subject": "葡萄牙",
+    "predicate": "model_release",
+    "object": "AMALIA",
+    "claim_ref": "CL-82840cd1794dbfc4",
+    "source_refs": [
+      "SA-01e19b4720fd567c"
+    ]
+  },
+  {
+    "relationship_id": "REL-11c6b69ed0f141c5",
+    "event_id": "EV-fb0838335d861b02",
+    "subject": "葡萄牙",
+    "predicate": "model_release",
+    "object": "AMALIA",
+    "claim_ref": "CL-4b38c4b6ef858a09",
+    "source_refs": [
+      "SA-01e19b4720fd567c"
+    ]
+  },
+  {
+    "relationship_id": "REL-26526eafc3f8f876",
+    "event_id": "EV-a9810b47e0408a05",
+    "subject": "华为联合上海电信",
+    "predicate": "deployment",
+    "object": "5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+    "claim_ref": "CL-1eb595aacf4e431f",
+    "source_refs": [
+      "SA-eb5cd13e07fcc780"
+    ]
+  },
+  {
+    "relationship_id": "REL-00ee02e92c63807a",
+    "event_id": "EV-a9810b47e0408a05",
+    "subject": "华为联合上海电信",
+    "predicate": "deployment",
+    "object": "5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+    "claim_ref": "CL-8437b86c2754d6b8",
+    "source_refs": [
+      "SA-eb5cd13e07fcc780"
+    ]
+  },
+  {
+    "relationship_id": "REL-e8ae6ded544570b1",
+    "event_id": "EV-a9810b47e0408a05",
+    "subject": "华为联合上海电信",
+    "predicate": "deployment",
+    "object": "5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+    "claim_ref": "CL-c1f2771bd8395ef1",
+    "source_refs": [
+      "SA-eb5cd13e07fcc780"
+    ]
+  },
+  {
+    "relationship_id": "REL-b697f34176ef0f73",
+    "event_id": "EV-a9810b47e0408a05",
+    "subject": "华为联合上海电信",
+    "predicate": "deployment",
+    "object": "5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+    "claim_ref": "CL-7e807497e15bd401",
+    "source_refs": [
+      "SA-eb5cd13e07fcc780"
+    ]
+  },
+  {
+    "relationship_id": "REL-422a98c56dd77b54",
+    "event_id": "EV-a3b006906f6d46a0",
+    "subject": "抖音电商",
+    "predicate": "deployment",
+    "object": "\"肖像保护功能\"，防范\"AI 仿冒带货达人\"侵权行为",
+    "claim_ref": "CL-c0c77c34ac96bc10",
+    "source_refs": [
+      "SA-e9d41a903f0a8b77"
+    ]
+  },
+  {
+    "relationship_id": "REL-a701b28fb88c3dec",
+    "event_id": "EV-a3b006906f6d46a0",
+    "subject": "抖音电商",
+    "predicate": "deployment",
+    "object": "\"肖像保护功能\"，防范\"AI 仿冒带货达人\"侵权行为",
+    "claim_ref": "CL-c5104f4f87c070b0",
+    "source_refs": [
+      "SA-e9d41a903f0a8b77"
+    ]
+  },
+  {
+    "relationship_id": "REL-aa6c05a02d1e7df0",
+    "event_id": "EV-a3b006906f6d46a0",
+    "subject": "抖音电商",
+    "predicate": "deployment",
+    "object": "\"肖像保护功能\"，防范\"AI 仿冒带货达人\"侵权行为",
+    "claim_ref": "CL-e543b272d3c5193e",
+    "source_refs": [
+      "SA-e9d41a903f0a8b77"
+    ]
+  },
+  {
+    "relationship_id": "REL-8b1d5974193fb487",
+    "event_id": "EV-a3b006906f6d46a0",
+    "subject": "抖音电商",
+    "predicate": "deployment",
+    "object": "\"肖像保护功能\"，防范\"AI 仿冒带货达人\"侵权行为",
+    "claim_ref": "CL-0cf97d7f2adea1f9",
+    "source_refs": [
+      "SA-e9d41a903f0a8b77"
+    ]
+  }
+]
