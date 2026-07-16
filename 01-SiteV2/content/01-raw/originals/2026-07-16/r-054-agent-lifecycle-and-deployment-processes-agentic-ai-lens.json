@@ -1,0 +1,275 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-054",
+  "title": "Agent lifecycle and deployment processes - Agentic AI Lens",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentops03.html",
+  "canonical_url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentops03.html",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "marketplace",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "procurement_marketplace",
+  "search_path_label": "采购 / 招投标 / Marketplace 路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-16T02:39:33.758Z",
+  "language": "mixed",
+  "full_text": "Agent lifecycle and deployment processes - Agentic AI Lens\nView a markdown version of this page\nAgent lifecycle and deployment processes - Agentic AI Lens\nDocumentation AWS Well-Architected AWS Well-Architected Framework\nCapability intent Maturity levels Common issues to watch for\nAgent lifecycle and deployment processes\nAgent lifecycle management extends beyond traditional software deployment to include\nbehavioral evolution, capability updates, and operational governance. Agents require\nongoing management as they adapt to changing business requirements, integrate new tools,\nand scale across different environments.\nAGENTOPS03: How do you manage agent lifecycle and deployment\nprocesses?\nCapability intent\nEvery agent has a documented owner, lifecycle state, and set of transition\ncriteria, from initial development through to clean decommissioning.\nAgent changes reach production through automated deployment pipelines with\nagent-specific quality gates, staged rollout, and automatic rollback on\nregression.\nAgent capacity adjusts to workload demand within per-environment\nboundaries, and deployments are kept right-sized through regular capacity\nreviews.\nThe agent portfolio is visible in a single catalog with cross-team\ndependencies tracked, so teams discover existing capabilities before\nbuilding new agents.\nPortfolio-level rationalization (retirement, consolidation, continued\ninvestment) is driven by evidence of utilization, cost, and business value\nrather than team-level preference.\nMaturity levels\nThese levels summarize what each stage of maturity looks like for agent lifecycle\nand deployment processes as a whole.\nLevel\nName\nWhat it looks like\nInitial\nAgent lifecycle is informal. Teams spin up agents on demand,\noften straight to production, with no documented stages, no\nregistry, and no designated owners. Deployments are manual. There is\nno agent-specific CI/CD or behavioral evaluation. Scaling is static\nor per-workload and revisited only when something breaks. No\nportfolio-level visibility exists across teams.\nEmerging\nA lifecycle with defined stages exists on paper and most teams\nfollow it. Agents are tracked in a team-level registry. Basic CI/CD\nruns unit tests, and deployments use infrastructure as code\ntemplates. Per-environment scaling boundaries are set manually.\nTeams can list the agents they own, but there is no cross-team\ncatalog or dependency view.\nDefined\nLifecycle stages are standardized across the organization with\nvalidation gates at each transition. AgentOps pipelines include\nagent-specific evaluation through Amazon Bedrock Evaluations and staged rollout through\nAmazon Bedrock AgentCore Runtime versioning.\nAuto-scaling is driven by agent-specific metrics rather than raw CPU\nor memory. A shared agent catalog is emerging, and the first\nquarterly portfolio reviews are held.\nProactive\nLifecycle transitions are fully automated, including emergency\ntermination switch and decommissioning runbooks. CI/CD behavioral\ngates block release when task accuracy or hallucination thresholds\nregress, with automated rollback from Amazon CloudWatch alarms. Scaling policies, stored\ncentrally, adjust as agents move between lifecycle stages. AWS Agent Registry with semantic capability search\nand Amazon EventBridge dependency notifications is the\ndefault path for new agent creation.\nOptimized\nLifecycle, deployment, scaling, and portfolio management are\npolicy-codified and continuously refined from operational data. A\ndependency graph backs impact analysis before any agent change.\nPortfolio rationalization (consolidation, retirement, reinvestment)\nruns as a regular operating rhythm with business-value measurement.\nGovernance overhead scales sub-linearly with agent count, and the\norganization contributes its patterns back to the industry.\nCommon issues to watch for\nAgents accumulate in production without documented owners or lifecycle\nstates, so retirement and incident response stall because nobody knows who\nis accountable for each agent.\nAgent deployments rely on traditional software CI/CD without\nagent-specific behavioral evaluation, letting prompt or tool regressions\nreach users that unit tests would never catch.\nScaling is configured identically across environments, either wasting cost\nin development or degrading production latency during traffic spikes.\nTeams build redundant agents in parallel because the organization lacks a\nshared catalog and discovery path, inflating cost and operational burden\nwithout adding capability.\nCross-team agent dependencies are undocumented, so deprecating or\nmodifying an upstream agent causes cascading failures in downstream agents\nthat were silently consuming it.\nBest practices AGENTOPS03-BP01 Define an agent lifecycle with clear SME ownership, testing, and governance\nAGENTOPS03-BP02 Implement CI/CD pipelines tailored to agentic system deployment (AgentOps)\nAGENTOPS03-BP03 Implement agent-specific scaling policies and capacity planning\nAGENTOPS03-BP04 Implement organizational agent portfolio management and governance at scale\nDocument Conventions\nAGENTOPS02-BP04 Maintain feedback control loops for continuous\nimprovement\nAGENTOPS03-BP01 Define an agent lifecycle with clear SME\nownership, testing, and\ngovernance\nDid this page help you? - Yes\nThanks for letting us know we're doing a good job!\nIf you've got a moment, please tell us what we did right so we can do more of it.\nDid this page help you? - No\nThanks for letting us know this page needs work. We're sorry we let you down.\nIf you've got a moment, please tell us how we can make the documentation better.",
+  "clean_text": "Agent lifecycle and deployment processes - Agentic AI Lens\nView a markdown version of this page\nAgent lifecycle and deployment processes - Agentic AI Lens\nDocumentation AWS Well-Architected AWS Well-Architected Framework\nCapability intent Maturity levels Common issues to watch for\nAgent lifecycle and deployment processes\nAgent lifecycle management extends beyond traditional software deployment to include\nbehavioral evolution, capability updates, and operational governance. Agents require\nongoing management as they adapt to changing business requirements, integrate new tools,\nand scale across different environments.\nAGENTOPS03: How do you manage agent lifecycle and deployment\nprocesses?\nCapability intent\nEvery agent has a documented owner, lifecycle state, and set of transition\ncriteria, from initial development through to clean decommissioning.\nAgent changes reach production through automated deployment pipelines with\nagent-specific quality gates, staged rollout, and automatic rollback on\nregression.\nAgent capacity adjusts to workload demand within per-environment\nboundaries, and deployments are kept right-sized through regular capacity\nreviews.\nThe agent portfolio is visible in a single catalog with cross-team\ndependencies tracked, so teams discover existing capabilities before\nbuilding new agents.\nPortfolio-level rationalization (retirement, consolidation, continued\ninvestment) is driven by evidence of utilization, cost, and business value\nrather than team-level preference.\nMaturity levels\nThese levels summarize what each stage of maturity looks like for agent lifecycle\nand deployment processes as a whole.\nLevel\nName\nWhat it looks like\nInitial\nAgent lifecycle is informal. Teams spin up agents on demand,\noften straight to production, with no documented stages, no\nregistry, and no designated owners. Deployments are manual. There is\nno agent-specific CI/CD or behavioral evaluation. Scaling is static\nor per-workload and revisited only when something breaks. No\nportfolio-level visibility exists across teams.\nEmerging\nA lifecycle with defined stages exists on paper and most teams\nfollow it. Agents are tracked in a team-level registry. Basic CI/CD\nruns unit tests, and deployments use infrastructure as code\ntemplates. Per-environment scaling boundaries are set manually.\nTeams can list the agents they own, but there is no cross-team\ncatalog or dependency view.\nDefined\nLifecycle stages are standardized across the organization with\nvalidation gates at each transition. AgentOps pipelines include\nagent-specific evaluation through Amazon Bedrock Evaluations and staged rollout through\nAmazon Bedrock AgentCore Runtime versioning.\nAuto-scaling is driven by agent-specific metrics rather than raw CPU\nor memory. A shared agent catalog is emerging, and the first\nquarterly portfolio reviews are held.\nProactive\nLifecycle transitions are fully automated, including emergency\ntermination switch and decommissioning runbooks. CI/CD behavioral\ngates block release when task accuracy or hallucination thresholds\nregress, with automated rollback from Amazon CloudWatch alarms. Scaling policies, stored\ncentrally, adjust as agents move between lifecycle stages. AWS Agent Registry with semantic capability search\nand Amazon EventBridge dependency notifications is the\ndefault path for new agent creation.\nOptimized\nLifecycle, deployment, scaling, and portfolio management are\npolicy-codified and continuously refined from operational data. A\ndependency graph backs impact analysis before any agent change.\nPortfolio rationalization (consolidation, retirement, reinvestment)\nruns as a regular operating rhythm with business-value measurement.\nGovernance overhead scales sub-linearly with agent count, and the\norganization contributes its patterns back to the industry.\nCommon issues to watch for\nAgents accumulate in production without documented owners or lifecycle\nstates, so retirement and incident response stall because nobody knows who\nis accountable for each agent.\nAgent deployments rely on traditional software CI/CD without\nagent-specific behavioral evaluation, letting prompt or tool regressions\nreach users that unit tests would never catch.\nScaling is configured identically across environments, either wasting cost\nin development or degrading production latency during traffic spikes.\nTeams build redundant agents in parallel because the organization lacks a\nshared catalog and discovery path, inflating cost and operational burden\nwithout adding capability.\nCross-team agent dependencies are undocumented, so deprecating or\nmodifying an upstream agent causes cascading failures in downstream agents\nthat were silently consuming it.\nBest practices AGENTOPS03-BP01 Define an agent lifecycle with clear SME ownership, testing, and governance\nAGENTOPS03-BP02 Implement CI/CD pipelines tailored to agentic system deployment (AgentOps)\nAGENTOPS03-BP03 Implement agent-specific scaling policies and capacity planning\nAGENTOPS03-BP04 Implement organizational agent portfolio management and governance at scale\nDocument Conventions\nAGENTOPS02-BP04 Maintain feedback control loops for continuous\nimprovement\nAGENTOPS03-BP01 Define an agent lifecycle with clear SME\nownership, testing, and\ngovernance\nDid this page help you? - Yes\nThanks for letting us know we're doing a good job!\nIf you've got a moment, please tell us what we did right so we can do more of it.\nDid this page help you? - No\nThanks for letting us know this page needs work. We're sorry we let you down.\nIf you've got a moment, please tell us how we can make the documentation better.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-16/r-054-agent-lifecycle-and-deployment-processes-agentic-ai-lens.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-16/r-054-agent-lifecycle-and-deployment-processes-agentic-ai-lens.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 85,
+  "extractor_diagnostics": {
+    "readability_score": 85,
+    "text_length": 5578,
+    "paragraph_count": 87,
+    "sentence_count": 44,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 5578,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "275364f8bf97b3f2",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "45cbf6482ab651c4",
+  "content_hash": "275364f8bf97b3f2",
+  "full_text_hash": "275364f8bf97b3f2",
+  "semantic_hash": "d0d82c40723b7624",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-16T02:39:33.758Z",
+  "last_seen_at": "2026-07-16T02:39:33.758Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "# Agent lifecycle and deployment processes Agent lifecycle management extends beyond traditional software deployment to include behavioral evolution, capability updates, and operational governance. Agents require ongoing management as they adapt to changing business requirements, integrate new tool.... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Agent lifecycle and deployment processes - Agentic AI Lens View a markdown version of this page Agent lifecycle and deployment processes - Agentic AI Lens Documentation AWS Well-Architected AWS Well-Architected Framework Capability intent Maturity levels Common issues to watch for Agent lifecycle and deployment processes Agent lifecycle management extends beyond traditional software deployment to include behavioral evolution, capability updates, and operational governance.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Agents require ongoing management as they adapt to changing business requirements, integrate new tools, and scale across different environments.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "AGENTOPS03: How do you manage agent lifecycle and deployment processes?",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Capability intent Every agent has a documented owner, lifecycle state, and set of transition criteria, from initial development through to clean decommissioning.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Agent changes reach production through automated deployment pipelines with agent-specific quality gates, staged rollout, and automatic rollback on regression.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-16T02:39:33.758Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Amazon",
+      "AWS"
+    ],
+    "products": [
+      "Agent",
+      "Agents",
+      "agent",
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "采购负责人"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "采购 / 招投标",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "采购"
+    ],
+    "numbers": [
+      "03",
+      "01",
+      "02",
+      "04",
+      "04 M"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Agents require ongoing management as they adapt to changing business requirements, integrate new tools, and scale across different environments.",
+      "Capability intent Every agent has a documented owner, lifecycle state, and set of transition criteria, from initial development through to clean decommissioning."
+    ],
+    "case_details": [
+      "# Agent lifecycle and deployment processes Agent lifecycle management extends beyond traditional software deployment to include behavioral evolution, capability updates, and operational governance. Agents require ongoing management as they adapt to changing business requirements, integrate new tool.... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace",
+      "Agent lifecycle and deployment processes - Agentic AI Lens View a markdown version of this page Agent lifecycle and deployment processes - Agentic AI Lens Documentation AWS Well-Architected AWS Well-Architected Framework Capability intent Maturity levels Common issues to watch for Agent lifecycle and deployment processes Agent lifecycle management extends beyond traditional software deployment to include behavioral evolution, capability updates, and operational governance.",
+      "AGENTOPS03: How do you manage agent lifecycle and deployment processes?"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "采购负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Agent lifecycle and deployment processes - Agentic AI Lens\n\n- raw_id: R-054\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentops03.html\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-16T02:39:33.758Z\n\n## clean_text\n\nAgent lifecycle and deployment processes - Agentic AI Lens\nView a markdown version of this page\nAgent lifecycle and deployment processes - Agentic AI Lens\nDocumentation AWS Well-Architected AWS Well-Architected Framework\nCapability intent Maturity levels Common issues to watch for\nAgent lifecycle and deployment processes\nAgent lifecycle management extends beyond traditional software deployment to include\nbehavioral evolution, capability updates, and operational governance. Agents require\nongoing management as they adapt to changing business requirements, integrate new tools,\nand scale across different environments.\nAGENTOPS03: How do you manage agent lifecycle and deployment\nprocesses?\nCapability intent\nEvery agent has a documented owner, lifecycle state, and set of transition\ncriteria, from initial development through to clean decommissioning.\nAgent changes reach production through automated deployment pipelines with\nagent-specific quality gates, staged rollout, and automatic rollback on\nregression.\nAgent capacity adjusts to workload demand within per-environment\nboundaries, and deployments are kept right-sized through regular capacity\nreviews.\nThe agent portfolio is visible in a single catalog with cross-team\ndependencies tracked, so teams discover existing capabilities before\nbuilding new agents.\nPortfolio-level rationalization (retirement, consolidation, continued\ninvestment) is driven by evidence of utilization, cost, and business value\nrather than team-level preference.\nMaturity levels\nThese levels summarize what each stage of maturity looks like for agent lifecycle\nand deployment processes as a whole.\nLevel\nName\nWhat it looks like\nInitial\nAgent lifecycle is informal. Teams spin up agents on demand,\noften straight to production, with no documented stages, no\nregistry, and no designated owners. Deployments are manual. There is\nno agent-specific CI/CD or behavioral evaluation. Scaling is static\nor per-workload and revisited only when something breaks. No\nportfolio-level visibility exists across teams.\nEmerging\nA lifecycle with defined stages exists on paper and most teams\nfollow it. Agents are tracked in a team-level registry. Basic CI/CD\nruns unit tests, and deployments use infrastructure as code\ntemplates. Per-environment scaling boundaries are set manually.\nTeams can list the agents they own, but there is no cross-team\ncatalog or dependency view.\nDefined\nLifecycle stages are standardized across the organization with\nvalidation gates at each transition. AgentOps pipelines include\nagent-specific evaluation through Amazon Bedrock Evaluations and staged rollout through\nAmazon Bedrock AgentCore Runtime versioning.\nAuto-scaling is driven by agent-specific metrics rather than raw CPU\nor memory. A shared agent catalog is emerging, and the first\nquarterly portfolio reviews are held.\nProactive\nLifecycle transitions are fully automated, including emergency\ntermination switch and decommissioning runbooks. CI/CD behavioral\ngates block release when task accuracy or hallucination thresholds\nregress, with automated rollback from Amazon CloudWatch alarms. Scaling policies, stored\ncentrally, adjust as agents move between lifecycle stages. AWS Agent Registry with semantic capability search\nand Amazon EventBridge dependency notifications is the\ndefault path for new agent creation.\nOptimized\nLifecycle, deployment, scaling, and portfolio management are\npolicy-codified and continuously refined from operational data. A\ndependency graph backs impact analysis before any agent change.\nPortfolio rationalization (consolidation, retirement, reinvestment)\nruns as a regular operating rhythm with business-value measurement.\nGovernance overhead scales sub-linearly with agent count, and the\norganization contributes its patterns back to the industry.\nCommon issues to watch for\nAgents accumulate in production without documented owners or lifecycle\nstates, so retirement and incident response stall because nobody knows who\nis accountable for each agent.\nAgent deployments rely on traditional software CI/CD without\nagent-specific behavioral evaluation, letting prompt or tool regressions\nreach users that unit tests would never catch.\nScaling is configured identically across environments, either wasting cost\nin development or degrading production latency during traffic spikes.\nTeams build redundant agents in parallel because the organization lacks a\nshared catalog and discovery path, inflating cost and operational burden\nwithout adding capability.\nCross-team agent dependencies are undocumented, so deprecating or\nmodifying an upstream agent causes cascading failures in downstream agents\nthat were silently consuming it.\nBest practices AGENTOPS03-BP01 Define an agent lifecycle with clear SME ownership, testing, and governance\nAGENTOPS03-BP02 Implement CI/CD pipelines tailored to agentic system deployment (AgentOps)\nAGENTOPS03-BP03 Implement agent-specific scaling policies and capacity planning\nAGENTOPS03-BP04 Implement organizational agent portfolio management and governance at scale\nDocument Conventions\nAGENTOPS02-BP04 Maintain feedback control loops for continuous\nimprovement\nAGENTOPS03-BP01 Define an agent lifecycle with clear SME\nownership, testing, and\ngovernance\nDid this page help you? - Yes\nThanks for letting us know we're doing a good job!\nIf you've got a moment, please tell us what we did right so we can do more of it.\nDid this page help you? - No\nThanks for letting us know this page needs work. We're sorry we let you down.\nIf you've got a moment, please tell us how we can make the documentation better.\n\n## full_text\n\nAgent lifecycle and deployment processes - Agentic AI Lens\nView a markdown version of this page\nAgent lifecycle and deployment processes - Agentic AI Lens\nDocumentation AWS Well-Architected AWS Well-Architected Framework\nCapability intent Maturity levels Common issues to watch for\nAgent lifecycle and deployment processes\nAgent lifecycle management extends beyond traditional software deployment to include\nbehavioral evolution, capability updates, and operational governance. Agents require\nongoing management as they adapt to changing business requirements, integrate new tools,\nand scale across different environments.\nAGENTOPS03: How do you manage agent lifecycle and deployment\nprocesses?\nCapability intent\nEvery agent has a documented owner, lifecycle state, and set of transition\ncriteria, from initial development through to clean decommissioning.\nAgent changes reach production through automated deployment pipelines with\nagent-specific quality gates, staged rollout, and automatic rollback on\nregression.\nAgent capacity adjusts to workload demand within per-environment\nboundaries, and deployments are kept right-sized through regular capacity\nreviews.\nThe agent portfolio is visible in a single catalog with cross-team\ndependencies tracked, so teams discover existing capabilities before\nbuilding new agents.\nPortfolio-level rationalization (retirement, consolidation, continued\ninvestment) is driven by evidence of utilization, cost, and business value\nrather than team-level preference.\nMaturity levels\nThese levels summarize what each stage of maturity looks like for agent lifecycle\nand deployment processes as a whole.\nLevel\nName\nWhat it looks like\nInitial\nAgent lifecycle is informal. Teams spin up agents on demand,\noften straight to production, with no documented stages, no\nregistry, and no designated owners. Deployments are manual. There is\nno agent-specific CI/CD or behavioral evaluation. Scaling is static\nor per-workload and revisited only when something breaks. No\nportfolio-level visibility exists across teams.\nEmerging\nA lifecycle with defined stages exists on paper and most teams\nfollow it. Agents are tracked in a team-level registry. Basic CI/CD\nruns unit tests, and deployments use infrastructure as code\ntemplates. Per-environment scaling boundaries are set manually.\nTeams can list the agents they own, but there is no cross-team\ncatalog or dependency view.\nDefined\nLifecycle stages are standardized across the organization with\nvalidation gates at each transition. AgentOps pipelines include\nagent-specific evaluation through Amazon Bedrock Evaluations and staged rollout through\nAmazon Bedrock AgentCore Runtime versioning.\nAuto-scaling is driven by agent-specific metrics rather than raw CPU\nor memory. A shared agent catalog is emerging, and the first\nquarterly portfolio reviews are held.\nProactive\nLifecycle transitions are fully automated, including emergency\ntermination switch and decommissioning runbooks. CI/CD behavioral\ngates block release when task accuracy or hallucination thresholds\nregress, with automated rollback from Amazon CloudWatch alarms. Scaling policies, stored\ncentrally, adjust as agents move between lifecycle stages. AWS Agent Registry with semantic capability search\nand Amazon EventBridge dependency notifications is the\ndefault path for new agent creation.\nOptimized\nLifecycle, deployment, scaling, and portfolio management are\npolicy-codified and continuously refined from operational data. A\ndependency graph backs impact analysis before any agent change.\nPortfolio rationalization (consolidation, retirement, reinvestment)\nruns as a regular operating rhythm with business-value measurement.\nGovernance overhead scales sub-linearly with agent count, and the\norganization contributes its patterns back to the industry.\nCommon issues to watch for\nAgents accumulate in production without documented owners or lifecycle\nstates, so retirement and incident response stall because nobody knows who\nis accountable for each agent.\nAgent deployments rely on traditional software CI/CD without\nagent-specific behavioral evaluation, letting prompt or tool regressions\nreach users that unit tests would never catch.\nScaling is configured identically across environments, either wasting cost\nin development or degrading production latency during traffic spikes.\nTeams build redundant agents in parallel because the organization lacks a\nshared catalog and discovery path, inflating cost and operational burden\nwithout adding capability.\nCross-team agent dependencies are undocumented, so deprecating or\nmodifying an upstream agent causes cascading failures in downstream agents\nthat were silently consuming it.\nBest practices AGENTOPS03-BP01 Define an agent lifecycle with clear SME ownership, testing, and governance\nAGENTOPS03-BP02 Implement CI/CD pipelines tailored to agentic system deployment (AgentOps)\nAGENTOPS03-BP03 Implement agent-specific scaling policies and capacity planning\nAGENTOPS03-BP04 Implement organizational agent portfolio management and governance at scale\nDocument Conventions\nAGENTOPS02-BP04 Maintain feedback control loops for continuous\nimprovement\nAGENTOPS03-BP01 Define an agent lifecycle with clear SME\nownership, testing, and\ngovernance\nDid this page help you? - Yes\nThanks for letting us know we're doing a good job!\nIf you've got a moment, please tell us what we did right so we can do more of it.\nDid this page help you? - No\nThanks for letting us know this page needs work. We're sorry we let you down.\nIf you've got a moment, please tell us how we can make the documentation better.\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 85\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] # Agent lifecycle and deployment processes Agent lifecycle management extends beyond traditional software deployment to include behavioral evolution, capability updates, and operational governance. Agents require ongoing management as they adapt to changing business requirements, integrate new tool.... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace\n2. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Agent lifecycle and deployment processes - Agentic AI Lens View a markdown version of this page Agent lifecycle and deployment processes - Agentic AI Lens Documentation AWS Well-Architected AWS Well-Architected Framework Capability intent Maturity levels Common issues to watch for Agent lifecycle and deployment processes Agent lifecycle management extends beyond traditional software deployment to include behavioral evolution, capability updates, and operational governance.\n3. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] Agents require ongoing management as they adapt to changing business requirements, integrate new tools, and scale across different environments.\n4. [case_detail / signal_card_candidate, relationship_graph_input, case / high] AGENTOPS03: How do you manage agent lifecycle and deployment processes?\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Capability intent Every agent has a documented owner, lifecycle state, and set of transition criteria, from initial development through to clean decommissioning.\n6. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Agent changes reach production through automated deployment pipelines with agent-specific quality gates, staged rollout, and automatic rollback on regression.\n"
+}

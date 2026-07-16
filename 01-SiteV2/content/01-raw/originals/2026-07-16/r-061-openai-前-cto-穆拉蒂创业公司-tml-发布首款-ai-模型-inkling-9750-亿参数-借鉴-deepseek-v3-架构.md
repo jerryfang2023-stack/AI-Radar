@@ -1,0 +1,219 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-061
+title: "OpenAI 前 CTO 穆拉蒂创业公司 TML 发布首款 AI 模型 Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构"
+title_zh: "OpenAI 前 CTO 穆拉蒂创业公司 TML 发布首款 AI 模型 Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/977/281.htm"
+canonical_url: "https://ithome.com/0/977/281.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-15T23:50:05.000Z"
+collected_at: 2026-07-16T02:39:33.788Z
+language: mixed
+full_text_hash: 004851d930221919
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-16/r-061-openai-前-cto-穆拉蒂创业公司-tml-发布首款-ai-模型-inkling-9750-亿参数-借鉴-deepseek-v3-架构.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-16/r-061-openai-前-cto-穆拉蒂创业公司-tml-发布首款-ai-模型-inkling-9750-亿参数-借鉴-deepseek-v3-架构.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 60
+extractor_diagnostics: {"readability_score":60,"text_length":1073,"paragraph_count":11,"sentence_count":11,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1073
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"004851d930221919","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI 前 CTO 穆拉蒂创业公司 TML 发布首款 AI 模型 Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构","discovery_summary":"Thinking Machines Lab 发布首款 AI 模型 Inkling，拥有 9750 亿参数，其中仅 410 亿为活跃参数，采用开放权重模式。该模型架构借鉴 DeepSeek-V3，后训练阶段使用 Kimi K2.5 生成的数据优化，设计重点在于成本与性能之间的平衡。Inkling 可通过云端微调工具 Tinker 进行定制，安全测试表现良好。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/977/281.htm","discovered_at":"2026-07-16T02:30:38.302Z","rank_on_page":58,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: fcfe32388fde04e5
+content_hash: 004851d930221919
+semantic_hash: bf06c5da5093b795
+duplicate_of: ""
+first_seen_at: "2026-07-15T23:50:05.000Z"
+last_seen_at: 2026-07-16T02:39:33.788Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","OpenAI","Anthropic"],"products":[],"people":[],"industries":["制造 / 工业","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["9750 亿","3","410 亿","2.5","7","16","1 万"],"quotes":["我们将 Inkling 训练成一款覆盖范围广泛、能力均衡的基础模型，在众多领域都具备较强表现，并且拥有足够的灵活性来适应不同任务。无论是在开源模型还是闭源模型中，Inkling 都不是目前整体性能最强的模型。","成本与性能之间取得平衡"]}
+evidence_seed: {"company_actions":["北京时间 7 月 16 日，据《华尔街日报》报道， OpenAI 前首席技术官米拉 · 穆拉蒂 (Mira Murati) 正押注更具可定制性的 AI 模型，希望借此缩小与其前东家 OpenAI 等前沿 AI 实验室之间的技术差距 。","“我们将 Inkling 训练成一款覆盖范围广泛、能力均衡的基础模型，在众多领域都具备较强表现，并且拥有足够的灵活性来适应不同任务。"],"case_details":["穆拉蒂领导的 Thinking Machines Lab 在周三发布了公司的首款 AI 模型，并采用了“开放权重”模式，这意味着其他开发者可以结合自己的数据对模型进行修改。"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"number","text":"Thinking Machines Lab 发布首款 AI 模型 Inkling，拥有 9750 亿参数，其中仅 410 亿为活跃参数，采用开放权重模式。该模型架构借鉴 DeepSeek-V3，后训练阶段使用 Kimi K2.5 生成的数据优化，设计重点在于成本与性能之间的平衡。Inkling 可通过云端微调工具 Tinker 进行定制，安全测试表现良好。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"北京时间 7 月 16 日，据《华尔街日报》报道， OpenAI 前首席技术官米拉 · 穆拉蒂 (Mira Murati) 正押注更具可定制性的 AI 模型，希望借此缩小与其前东家 OpenAI 等前沿 AI 实验室之间的技术差距 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"穆拉蒂领导的 Thinking Machines Lab 在周三发布了公司的首款 AI 模型，并采用了“开放权重”模式，这意味着其他开发者可以结合自己的数据对模型进行修改。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"number","text":"这款名为 Inkling 的模型拥有 9750 亿个参数，规模远小于外界对 OpenAI、Anthropic 等竞争对手最先进闭源模型的预估参数。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"穆拉蒂 Thinking Machines 称，Inkling 基础模型的架构借鉴了中国的 DeepSeek-V3 模型，并在后训练阶段使用了由月之暗面公司 Kimi K2.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"“我们将 Inkling 训练成一款覆盖范围广泛、能力均衡的基础模型，在众多领域都具备较强表现，并且拥有足够的灵活性来适应不同任务。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-16T02:39:33.788Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# OpenAI 前 CTO 穆拉蒂创业公司 TML 发布首款 AI 模型 Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构
+
+## clean_text
+
+北京时间 7 月 16 日，据《华尔街日报》报道， OpenAI 前首席技术官米拉 · 穆拉蒂 (Mira Murati) 正押注更具可定制性的 AI 模型，希望借此缩小与其前东家 OpenAI 等前沿 AI 实验室之间的技术差距 。
+穆拉蒂领导的 Thinking Machines Lab 在周三发布了公司的首款 AI 模型，并采用了“开放权重”模式，这意味着其他开发者可以结合自己的数据对模型进行修改。
+这款名为 Inkling 的模型拥有 9750 亿个参数，规模远小于外界对 OpenAI、Anthropic 等竞争对手最先进闭源模型的预估参数。
+穆拉蒂 Thinking Machines 称，Inkling 基础模型的架构借鉴了中国的 DeepSeek-V3 模型，并在后训练阶段使用了由月之暗面公司 Kimi K2.5 生成的数据进行了优化。
+“我们将 Inkling 训练成一款覆盖范围广泛、能力均衡的基础模型，在众多领域都具备较强表现，并且拥有足够的灵活性来适应不同任务。无论是在开源模型还是闭源模型中，Inkling 都不是目前整体性能最强的模型。”Thinking Machines 表示。
+Thinking Machines 表示，与前沿 AI 实验室专注于提升模型原始性能不同， Inkling 的设计重点是在“成本与性能之间取得平衡” 。
+Inkling 拥有近 1 万亿个参数，但其中只有 410 亿个是“活跃”参数。这意味着，在处理任何一次用户查询时，只有 AI“大脑”的一小部分会被激活，从而使其使用成本更低、速度更快。
+这款模型还可以通过 Thinking Machines 去年推出的首款产品 Tinker 进行定制。Tinker 是一款面向 AI 开发者和研究人员的云端微调工具，其目标是让开发者只需坐在笔记本电脑前，就能对大型工业级 AI 模型进行定制和训练，而无需操心底层超级计算基础设施。
+Thinking Machines 表示，公司已对 Inkling 进行了安全测试，包括评估其是否可能被用于协助制造生物武器或帮助黑客发动网络攻击等风险，测试结果显示模型表现良好。
+不过，该公司也表示，由于 Inkling 采用开放权重模式，仍在研究如何进一步调整和完善模型内置的安全防护措施。这也是部分闭源模型开发商一直对开放权重模型提出的安全担忧之一。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+北京时间 7 月 16 日，据《华尔街日报》报道， OpenAI 前首席技术官米拉 · 穆拉蒂 (Mira Murati) 正押注更具可定制性的 AI 模型，希望借此缩小与其前东家 OpenAI 等前沿 AI 实验室之间的技术差距 。
+穆拉蒂领导的 Thinking Machines Lab 在周三发布了公司的首款 AI 模型，并采用了“开放权重”模式，这意味着其他开发者可以结合自己的数据对模型进行修改。
+这款名为 Inkling 的模型拥有 9750 亿个参数，规模远小于外界对 OpenAI、Anthropic 等竞争对手最先进闭源模型的预估参数。
+穆拉蒂 Thinking Machines 称，Inkling 基础模型的架构借鉴了中国的 DeepSeek-V3 模型，并在后训练阶段使用了由月之暗面公司 Kimi K2.5 生成的数据进行了优化。
+“我们将 Inkling 训练成一款覆盖范围广泛、能力均衡的基础模型，在众多领域都具备较强表现，并且拥有足够的灵活性来适应不同任务。无论是在开源模型还是闭源模型中，Inkling 都不是目前整体性能最强的模型。”Thinking Machines 表示。
+Thinking Machines 表示，与前沿 AI 实验室专注于提升模型原始性能不同， Inkling 的设计重点是在“成本与性能之间取得平衡” 。
+Inkling 拥有近 1 万亿个参数，但其中只有 410 亿个是“活跃”参数。这意味着，在处理任何一次用户查询时，只有 AI“大脑”的一小部分会被激活，从而使其使用成本更低、速度更快。
+这款模型还可以通过 Thinking Machines 去年推出的首款产品 Tinker 进行定制。Tinker 是一款面向 AI 开发者和研究人员的云端微调工具，其目标是让开发者只需坐在笔记本电脑前，就能对大型工业级 AI 模型进行定制和训练，而无需操心底层超级计算基础设施。
+Thinking Machines 表示，公司已对 Inkling 进行了安全测试，包括评估其是否可能被用于协助制造生物武器或帮助黑客发动网络攻击等风险，测试结果显示模型表现良好。
+不过，该公司也表示，由于 Inkling 采用开放权重模式，仍在研究如何进一步调整和完善模型内置的安全防护措施。这也是部分闭源模型开发商一直对开放权重模型提出的安全担忧之一。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 60
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":60,"text_length":1073,"paragraph_count":11,"sentence_count":11,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   Thinking Machines Lab 发布首款 AI 模型 Inkling，拥有 9750 亿参数，其中仅 410 亿为活跃参数，采用开放权重模式。该模型架构借鉴 DeepSeek-V3，后训练阶段使用 Kimi K2.5 生成的数据优化，设计重点在于成本与性能之间的平衡。Inkling 可通过云端微调工具 Tinker 进行定制，安全测试表现良好。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   北京时间 7 月 16 日，据《华尔街日报》报道， OpenAI 前首席技术官米拉 · 穆拉蒂 (Mira Murati) 正押注更具可定制性的 AI 模型，希望借此缩小与其前东家 OpenAI 等前沿 AI 实验室之间的技术差距 。
+
+3. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   穆拉蒂领导的 Thinking Machines Lab 在周三发布了公司的首款 AI 模型，并采用了“开放权重”模式，这意味着其他开发者可以结合自己的数据对模型进行修改。
+
+4. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   这款名为 Inkling 的模型拥有 9750 亿个参数，规模远小于外界对 OpenAI、Anthropic 等竞争对手最先进闭源模型的预估参数。
+
+5. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   穆拉蒂 Thinking Machines 称，Inkling 基础模型的架构借鉴了中国的 DeepSeek-V3 模型，并在后训练阶段使用了由月之暗面公司 Kimi K2.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   “我们将 Inkling 训练成一款覆盖范围广泛、能力均衡的基础模型，在众多领域都具备较强表现，并且拥有足够的灵活性来适应不同任务。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI, Anthropic
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 制造 / 工业, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 9750 亿, 3, 410 亿, 2.5, 7, 16, 1 万
+- quotes: 我们将 Inkling 训练成一款覆盖范围广泛、能力均衡的基础模型，在众多领域都具备较强表现，并且拥有足够的灵活性来适应不同任务。无论是在开源模型还是闭源模型中，Inkling 都不是目前整体性能最强的模型。 / 成本与性能之间取得平衡
+
+## evidence_seed
+
+- company_actions: 北京时间 7 月 16 日，据《华尔街日报》报道， OpenAI 前首席技术官米拉 · 穆拉蒂 (Mira Murati) 正押注更具可定制性的 AI 模型，希望借此缩小与其前东家 OpenAI 等前沿 AI 实验室之间的技术差距 。 / “我们将 Inkling 训练成一款覆盖范围广泛、能力均衡的基础模型，在众多领域都具备较强表现，并且拥有足够的灵活性来适应不同任务。
+- case_details: 穆拉蒂领导的 Thinking Machines Lab 在周三发布了公司的首款 AI 模型，并采用了“开放权重”模式，这意味着其他开发者可以结合自己的数据对模型进行修改。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI 前 CTO 穆拉蒂创业公司 TML 发布首款 AI 模型 Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构","discovery_summary":"Thinking Machines Lab 发布首款 AI 模型 Inkling，拥有 9750 亿参数，其中仅 410 亿为活跃参数，采用开放权重模式。该模型架构借鉴 DeepSeek-V3，后训练阶段使用 Kimi K2.5 生成的数据优化，设计重点在于成本与性能之间的平衡。Inkling 可通过云端微调工具 Tinker 进行定制，安全测试表现良好。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/977/281.htm","discovered_at":"2026-07-16T02:30:38.302Z","rank_on_page":58,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Thinking Machines Lab 发布首款 AI 模型 Inkling，拥有 9750 亿参数，其中仅 410 亿为活跃参数，采用开放权重模式。该模型架构借鉴 DeepSeek-V3，后训练阶段使用 Kimi K2.5 生成的数据优化，设计重点在于成本与性能之间的平衡。Inkling 可通过云端微调工具 Tinker 进行定制，安全测试表现良好。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

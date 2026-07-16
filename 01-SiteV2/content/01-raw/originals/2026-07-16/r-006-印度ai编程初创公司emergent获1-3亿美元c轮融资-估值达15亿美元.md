@@ -1,0 +1,293 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-006
+title: "印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元"
+title_zh: "印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch"
+canonical_url: "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch"
+source_name: "TechCrunch：AI（RSS）"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-15T00:00:00.000Z"
+collected_at: 2026-07-16T02:39:33.401Z
+language: mixed
+full_text_hash: 27b672d0df3a3b27
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-16/r-006-印度ai编程初创公司emergent获1-3亿美元c轮融资-估值达15亿美元.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-16/r-006-印度ai编程初创公司emergent获1-3亿美元c轮融资-估值达15亿美元.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":4769,"paragraph_count":31,"sentence_count":31,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 4769
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"27b672d0df3a3b27","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元","discovery_summary":"Emergent完成1.3亿美元C轮融资，投后估值15亿美元，较六个月前的B轮估值增长五倍。该公司年化经常性收入已达1.2亿美元，拥有超过20万付费客户，其平台面向创业者和中小企业，提供涵盖部署、托管、测试和调试的全流程AI编程服务。本轮融资由Creaegis领投，Khosla Ventures、SoftBank Vision Fund 2等跟投。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch","discovered_at":"2026-07-16T02:30:38.350Z","rank_on_page":239,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 07d25b80d4335f93
+content_hash: 27b672d0df3a3b27
+semantic_hash: 1bf05b9ff8ed45c2
+duplicate_of: "merged 3 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-15T00:00:00.000Z"
+last_seen_at: 2026-07-16T02:39:33.401Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["TechCrunch","AI（RSS）","OpenAI","Anthropic","Meta","Apple","Cursor"],"products":["Cursor","Claude","Codex","agent"],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","部署 / 集成交付"],"business_actions":["部署 / 上线","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["1.3亿","15亿","1.2亿","20万","2","$130M","5","00"],"quotes":["Our thesis has always been to build a production-grade application for serious builders,","So you’re basically getting an engineering team in a box."]}
+evidence_seed: {"company_actions":["Emergent完成1.3亿美元C轮融资，投后估值15亿美元，较六个月前的B轮估值增长五倍。该公司年化经常性收入已达1.2亿美元，拥有超过20万付费客户，其平台面向创业者和中小企业，提供涵盖部署、托管、测试和调试的全流程AI编程服务。本轮融资由Creaegis领投，Khosla Ventures、SoftBank Vision Fund 2等跟投。","Image Credits: Emergent AI Indian AI coding startup Emergent becomes a unicorn with $130M Series C Jagmeet Singh 5:00 AM PDT · July 15, 2026 Indian AI coding startup Emergent has raised $130 million in a Series C funding round at a $1.","The funding round was led by private equity firm Creaegis."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Emergent完成1.3亿美元C轮融资，投后估值15亿美元，较六个月前的B轮估值增长五倍。该公司年化经常性收入已达1.2亿美元，拥有超过20万付费客户，其平台面向创业者和中小企业，提供涵盖部署、托管、测试和调试的全流程AI编程服务。本轮融资由Creaegis领投，Khosla Ventures、SoftBank Vision Fund 2等跟投。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Image Credits: Emergent AI Indian AI coding startup Emergent becomes a unicorn with $130M Series C Jagmeet Singh 5:00 AM PDT · July 15, 2026 Indian AI coding startup Emergent has raised $130 million in a Series C funding round at a $1.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"5 billion post-money valuation, a five-fold jump in six months.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The funding round was led by private equity firm Creaegis.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"New investors MNI Ventures-Claypond, Sentinel Global, and existing backers Khosla Ventures, SoftBank’s Vision Fund 2, Lightspeed, and Y Combinator also participated.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The deal takes Emergent’s total funding to $230 million.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-16T02:39:33.401Z
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# 印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元
+
+## clean_text
+
+Image Credits: Emergent
+AI
+Indian AI coding startup Emergent becomes a unicorn with $130M Series C
+Jagmeet Singh
+5:00 AM PDT · July 15, 2026
+Indian AI coding startup Emergent has raised $130 million in a Series C funding round at a $1.5 billion post-money valuation, a five-fold jump in six months.
+The funding round was led by private equity firm Creaegis. New investors MNI Ventures-Claypond, Sentinel Global, and existing backers Khosla Ventures, SoftBank’s Vision Fund 2, Lightspeed, and Y Combinator also participated. The deal takes Emergent’s total funding to $230 million. The startup had previously raised a $70 million Series B at a $300 million valuation in January.
+AI coding has attracted hordes of investors, with startups such as Lovable , Replit , and Cursor raising billions in funding to develop tools that allow developers to speed up their work. AI labs such as OpenAI and Anthropic have also pushed deeper into coding .
+Emergent is looking to gain a share of this crowded market by targeting entrepreneurs looking to start new businesses and small and medium-sized companies that have traditionally relied on email, spreadsheets, and messaging apps to run their operations.
+“Our thesis has always been to build a production-grade application for serious builders,” Emergent co-founder and chief executive Mukund Jha (pictured above, right) told TechCrunch in an interview. “So you’re basically getting an engineering team in a box.”
+Jha said the startup has reached an annual run-rate revenue of $120 million, up 70% in the last four months, and has more than 200,000 paying customers. Jha started Emergent with his brother Madhav Jha (CTO) in June last year.
+Customers include trucking companies building software to track shipments; factories; construction businesses creating enterprise resource planning systems; and property managers developing internal customer management tools.
+North American customers account for about a third of Emergent’s revenue, Europe makes up another third, and the rest comes from other markets, Jha told TechCrunch. India accounts for about 8% to 9%.
+Emergent’s focus on small businesses and entrepreneurs pits it directly against Replit, which Jha described as the startup’s closest rival. He sought to distinguish Emergent from developer-focused coding tools such as Anthropic’s Claude Code , OpenAI’s Codex , and Cursor, arguing that non-technical users need a platform that handles deployment, hosting, testing, and debugging alongside the work of programming.
+However, Jha acknowledged that design remains a weakness, pointing out that many websites built using AI tools tend to look similar.
+Emergent plans to use the fresh capital to accelerate product development and research, including improving the success rate of applications built on its platform and its core AI agent workflows. The company is working to support more complex AI applications, including those that use local and open source models, Jha said, adding that it will also invest in expanding its go-to-market operations.
+The company is also considering opening an office in Europe, where Jha said Emergent is seeing significant customer traction.
+Emergent has about 200 employees, most of whom work in Bengaluru, with a handful in San Francisco. The startup plans to expand its San Francisco office by 30 to 40 people by the end of the year, Jha said.
+Topics
+AI , Claypond , Creaegis , emergent , India , Sentinel Global , Startups , vibe coding
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Jagmeet Singh
+Reporter
+Jagmeet covers startups, tech policy-related updates, and all other major tech-centric developments from India for TechCrunch. He previously worked as a principal correspondent at NDTV.
+You can contact or verify outreach from Jagmeet by emailing mail@journalistjagmeet.com .
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Anthropic’s newest ad is creeping people out
+Lucas Ropek
+Satya Nadella has issued a shocking warning to companies using AI
+Julie Bort
+The wildest allegations in Apple’s trade secrets lawsuit against OpenAI
+Sarah Perez
+Anthropic starts localizing Claude pricing for India, its biggest market after the US
+Jagmeet Singh
+Meta removes controversial AI feature on Instagram after backlash
+Lucas Ropek
+Apple sues OpenAI over alleged trade secret theft
+Sarah Perez
+Instagram users: Here’s how to stop Meta’s AI from using your photos
+Lauren Forristal
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Emergent
+AI
+Indian AI coding startup Emergent becomes a unicorn with $130M Series C
+Jagmeet Singh
+5:00 AM PDT · July 15, 2026
+Indian AI coding startup Emergent has raised $130 million in a Series C funding round at a $1.5 billion post-money valuation, a five-fold jump in six months.
+The funding round was led by private equity firm Creaegis. New investors MNI Ventures-Claypond, Sentinel Global, and existing backers Khosla Ventures, SoftBank’s Vision Fund 2, Lightspeed, and Y Combinator also participated. The deal takes Emergent’s total funding to $230 million. The startup had previously raised a $70 million Series B at a $300 million valuation in January.
+AI coding has attracted hordes of investors, with startups such as Lovable , Replit , and Cursor raising billions in funding to develop tools that allow developers to speed up their work. AI labs such as OpenAI and Anthropic have also pushed deeper into coding .
+Emergent is looking to gain a share of this crowded market by targeting entrepreneurs looking to start new businesses and small and medium-sized companies that have traditionally relied on email, spreadsheets, and messaging apps to run their operations.
+“Our thesis has always been to build a production-grade application for serious builders,” Emergent co-founder and chief executive Mukund Jha (pictured above, right) told TechCrunch in an interview. “So you’re basically getting an engineering team in a box.”
+Jha said the startup has reached an annual run-rate revenue of $120 million, up 70% in the last four months, and has more than 200,000 paying customers. Jha started Emergent with his brother Madhav Jha (CTO) in June last year.
+Customers include trucking companies building software to track shipments; factories; construction businesses creating enterprise resource planning systems; and property managers developing internal customer management tools.
+North American customers account for about a third of Emergent’s revenue, Europe makes up another third, and the rest comes from other markets, Jha told TechCrunch. India accounts for about 8% to 9%.
+Emergent’s focus on small businesses and entrepreneurs pits it directly against Replit, which Jha described as the startup’s closest rival. He sought to distinguish Emergent from developer-focused coding tools such as Anthropic’s Claude Code , OpenAI’s Codex , and Cursor, arguing that non-technical users need a platform that handles deployment, hosting, testing, and debugging alongside the work of programming.
+However, Jha acknowledged that design remains a weakness, pointing out that many websites built using AI tools tend to look similar.
+Emergent plans to use the fresh capital to accelerate product development and research, including improving the success rate of applications built on its platform and its core AI agent workflows. The company is working to support more complex AI applications, including those that use local and open source models, Jha said, adding that it will also invest in expanding its go-to-market operations.
+The company is also considering opening an office in Europe, where Jha said Emergent is seeing significant customer traction.
+Emergent has about 200 employees, most of whom work in Bengaluru, with a handful in San Francisco. The startup plans to expand its San Francisco office by 30 to 40 people by the end of the year, Jha said.
+Topics
+AI , Claypond , Creaegis , emergent , India , Sentinel Global , Startups , vibe coding
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Jagmeet Singh
+Reporter
+Jagmeet covers startups, tech policy-related updates, and all other major tech-centric developments from India for TechCrunch. He previously worked as a principal correspondent at NDTV.
+You can contact or verify outreach from Jagmeet by emailing mail@journalistjagmeet.com .
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Anthropic’s newest ad is creeping people out
+Lucas Ropek
+Satya Nadella has issued a shocking warning to companies using AI
+Julie Bort
+The wildest allegations in Apple’s trade secrets lawsuit against OpenAI
+Sarah Perez
+Anthropic starts localizing Claude pricing for India, its biggest market after the US
+Jagmeet Singh
+Meta removes controversial AI feature on Instagram after backlash
+Lucas Ropek
+Apple sues OpenAI over alleged trade secret theft
+Sarah Perez
+Instagram users: Here’s how to stop Meta’s AI from using your photos
+Lauren Forristal
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":4769,"paragraph_count":31,"sentence_count":31,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Emergent完成1.3亿美元C轮融资，投后估值15亿美元，较六个月前的B轮估值增长五倍。该公司年化经常性收入已达1.2亿美元，拥有超过20万付费客户，其平台面向创业者和中小企业，提供涵盖部署、托管、测试和调试的全流程AI编程服务。本轮融资由Creaegis领投，Khosla Ventures、SoftBank Vision Fund 2等跟投。
+
+2. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Image Credits: Emergent AI Indian AI coding startup Emergent becomes a unicorn with $130M Series C Jagmeet Singh 5:00 AM PDT · July 15, 2026 Indian AI coding startup Emergent has raised $130 million in a Series C funding round at a $1.
+
+3. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   5 billion post-money valuation, a five-fold jump in six months.
+
+4. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   The funding round was led by private equity firm Creaegis.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   New investors MNI Ventures-Claypond, Sentinel Global, and existing backers Khosla Ventures, SoftBank’s Vision Fund 2, Lightspeed, and Y Combinator also participated.
+
+6. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   The deal takes Emergent’s total funding to $230 million.
+
+## business_elements
+
+- companies: TechCrunch, AI（RSS）, OpenAI, Anthropic, Meta, Apple, Cursor
+- products: Cursor, Claude, Codex, agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 部署 / 上线, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 销售 / 客服
+- numbers: 1.3亿, 15亿, 1.2亿, 20万, 2, $130M, 5, 00
+- quotes: Our thesis has always been to build a production-grade application for serious builders, / So you’re basically getting an engineering team in a box.
+
+## evidence_seed
+
+- company_actions: Emergent完成1.3亿美元C轮融资，投后估值15亿美元，较六个月前的B轮估值增长五倍。该公司年化经常性收入已达1.2亿美元，拥有超过20万付费客户，其平台面向创业者和中小企业，提供涵盖部署、托管、测试和调试的全流程AI编程服务。本轮融资由Creaegis领投，Khosla Ventures、SoftBank Vision Fund 2等跟投。 / Image Credits: Emergent AI Indian AI coding startup Emergent becomes a unicorn with $130M Series C Jagmeet Singh 5:00 AM PDT · July 15, 2026 Indian AI coding startup Emergent has raised $130 million in a Series C funding round at a $1. / The funding round was led by private equity firm Creaegis.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元","discovery_summary":"Emergent完成1.3亿美元C轮融资，投后估值15亿美元，较六个月前的B轮估值增长五倍。该公司年化经常性收入已达1.2亿美元，拥有超过20万付费客户，其平台面向创业者和中小企业，提供涵盖部署、托管、测试和调试的全流程AI编程服务。本轮融资由Creaegis领投，Khosla Ventures、SoftBank Vision Fund 2等跟投。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch","discovered_at":"2026-07-16T02:30:38.350Z","rank_on_page":239,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Emergent完成1.3亿美元C轮融资，投后估值15亿美元，较六个月前的B轮估值增长五倍。该公司年化经常性收入已达1.2亿美元，拥有超过20万付费客户，其平台面向创业者和中小企业，提供涵盖部署、托管、测试和调试的全流程AI编程服务。本轮融资由Creaegis领投，Khosla Ventures、SoftBank Vision Fund 2等跟投。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

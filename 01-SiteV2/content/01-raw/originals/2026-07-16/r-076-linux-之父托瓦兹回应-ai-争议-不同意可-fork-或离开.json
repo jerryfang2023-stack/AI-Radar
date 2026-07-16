@@ -1,0 +1,275 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-076",
+  "title": "Linux 之父托瓦兹回应 AI 争议：不同意可 Fork 或离开",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "original_url": "https://www.ithome.com/0/977/300.htm",
+  "canonical_url": "https://ithome.com/0/977/300.htm",
+  "source_name": "IT之家（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-16T01:03:51.000Z",
+  "collected_at": "2026-07-16T02:39:33.861Z",
+  "language": "mixed",
+  "full_text": "IT之家 7 月 16 日消息，科技媒体 Neowin 昨日（7 月 15 日）发布博文，报道称 Linux 创始人林纳斯 · 托瓦兹（Linus Torvalds）在内核讨论社区发飙， 针对 AI 争议表示“要么 Fork 要么离开”。\nfork（项目分叉）是开源开发中的常见机制，指基于现有项目代码库复制出独立版本，并按新的治理规则继续开发。典型应用场景包括技术路线分歧、社区治理冲突或许可证需求变化。\n林纳斯 · 托瓦兹（Linus Torvalds），图源：WikiMedia IT之家援引博文介绍，本次争议的导火索是补丁审查机器人 Sashiko。Sashiko 是 Linux 基金会旗下的开源项目，由谷歌提供全部 LLM 算力，已经作为守护进程运行在生产环境中，自动监控 LKML 和多个内核邮件列表。\n长期参与 Linux 内核开发的 Laurent Pinchart 认为，Sashiko 生成的代码审查意见不应直接发送给提交代码的开发者。\n针对开发者是否可以选择退出这些自动审查，内核维护者展开了辩论。\nAndrew Morton 支持部署 AI 工具 Sashiko，通过对 Linux-mm 邮件列表的 35 封邮件复盘发现，其中 Sashiko 指出的 22 个问题确实需要修改，他表示：“如果命中率能达到 50%，那就完全值得开发者花时间去核对”。\n而 Lorenzo Stoakes 反对 AI 工具 Sashiko，表示他加班 13 小时重写的补丁，在内核树运行完美，但在 Sashiko 的实验性环境里就是跑不通。\nStoakes 认为虽然 22 封回复确认了有 Bug，但 Sashiko 每次审查会抛出几十条意见，其中充斥着大量“幻觉”和错误，反而增加了维护人员的工作量。\n托瓦兹对此在 Linux 社区表示 Linux 并非反对使用 AI，作为 Linux 的顶级维护者，他将坚决支持在开发中使用 AI，显然能够帮助其发现 bug。\n托瓦兹对比表示，那些批评 AI 缺陷的人应该反省自身，因为人类的自然智能也经常犯一些令人尴尬的错误，而 Linux 并非某种“社会斗士项目”（social warrior project）。\n对于反对在 Linux 内核中使用 AI 的贡献者，托瓦兹建议那些不同意的人可以“做开源的事情，把它 fork 出来”，要么干脆离开。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
+  "clean_text": "IT之家 7 月 16 日消息，科技媒体 Neowin 昨日（7 月 15 日）发布博文，报道称 Linux 创始人林纳斯 · 托瓦兹（Linus Torvalds）在内核讨论社区发飙， 针对 AI 争议表示“要么 Fork 要么离开”。\nfork（项目分叉）是开源开发中的常见机制，指基于现有项目代码库复制出独立版本，并按新的治理规则继续开发。典型应用场景包括技术路线分歧、社区治理冲突或许可证需求变化。\n林纳斯 · 托瓦兹（Linus Torvalds），图源：WikiMedia IT之家援引博文介绍，本次争议的导火索是补丁审查机器人 Sashiko。Sashiko 是 Linux 基金会旗下的开源项目，由谷歌提供全部 LLM 算力，已经作为守护进程运行在生产环境中，自动监控 LKML 和多个内核邮件列表。\n长期参与 Linux 内核开发的 Laurent Pinchart 认为，Sashiko 生成的代码审查意见不应直接发送给提交代码的开发者。\n针对开发者是否可以选择退出这些自动审查，内核维护者展开了辩论。\nAndrew Morton 支持部署 AI 工具 Sashiko，通过对 Linux-mm 邮件列表的 35 封邮件复盘发现，其中 Sashiko 指出的 22 个问题确实需要修改，他表示：“如果命中率能达到 50%，那就完全值得开发者花时间去核对”。\n而 Lorenzo Stoakes 反对 AI 工具 Sashiko，表示他加班 13 小时重写的补丁，在内核树运行完美，但在 Sashiko 的实验性环境里就是跑不通。\nStoakes 认为虽然 22 封回复确认了有 Bug，但 Sashiko 每次审查会抛出几十条意见，其中充斥着大量“幻觉”和错误，反而增加了维护人员的工作量。\n托瓦兹对此在 Linux 社区表示 Linux 并非反对使用 AI，作为 Linux 的顶级维护者，他将坚决支持在开发中使用 AI，显然能够帮助其发现 bug。\n托瓦兹对比表示，那些批评 AI 缺陷的人应该反省自身，因为人类的自然智能也经常犯一些令人尴尬的错误，而 Linux 并非某种“社会斗士项目”（social warrior project）。\n对于反对在 Linux 内核中使用 AI 的贡献者，托瓦兹建议那些不同意的人可以“做开源的事情，把它 fork 出来”，要么干脆离开。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-16/r-076-linux-之父托瓦兹回应-ai-争议-不同意可-fork-或离开.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-16/r-076-linux-之父托瓦兹回应-ai-争议-不同意可-fork-或离开.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "medium",
+  "extraction_method": "content-container",
+  "readability_score": 60,
+  "extractor_diagnostics": {
+    "readability_score": 60,
+    "text_length": 1076,
+    "paragraph_count": 12,
+    "sentence_count": 12,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 1076,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "05b649e31dd80469",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Linux 之父托瓦兹回应 AI 争议：不同意可 Fork 或离开",
+    "discovery_summary": "Linux 创始人 Linus Torvalds 在内核社区发飙，针对 AI 工具 Sashiko 的争议表示\"要么 Fork 要么离开\"。Sashiko 是 Linux 基金会旗下开源项目，由谷歌提供全部 LLM 算力，自动监控内核邮件列表并生成代码审查意见。Torvalds 坚决支持在开发中使用 AI，认为批评者应反省人类自然智能也常犯错。",
+    "source_name": "IT之家（RSS）",
+    "origin_url": "https://www.ithome.com/0/977/300.htm",
+    "discovered_at": "2026-07-16T02:30:38.295Z",
+    "rank_on_page": 34,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "d59dc22df8a46317",
+  "content_hash": "05b649e31dd80469",
+  "full_text_hash": "05b649e31dd80469",
+  "semantic_hash": "30dace6fba035dbf",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-16T01:03:51.000Z",
+  "last_seen_at": "2026-07-16T02:39:33.861Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "funding",
+      "text": "Linux 创始人 Linus Torvalds 在内核社区发飙，针对 AI 工具 Sashiko 的争议表示\"要么 Fork 要么离开\"。Sashiko 是 Linux 基金会旗下开源项目，由谷歌提供全部 LLM 算力，自动监控内核邮件列表并生成代码审查意见。Torvalds 坚决支持在开发中使用 AI，认为批评者应反省人类自然智能也常犯错。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "quote",
+      "text": "IT之家 7 月 16 日消息，科技媒体 Neowin 昨日（7 月 15 日）发布博文，报道称 Linux 创始人林纳斯 · 托瓦兹（Linus Torvalds）在内核讨论社区发飙， 针对 AI 争议表示“要么 Fork 要么离开”。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "fork（项目分叉）是开源开发中的常见机制，指基于现有项目代码库复制出独立版本，并按新的治理规则继续开发。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "典型应用场景包括技术路线分歧、社区治理冲突或许可证需求变化。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "林纳斯 · 托瓦兹（Linus Torvalds），图源：WikiMedia IT之家援引博文介绍，本次争议的导火索是补丁审查机器人 Sashiko。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "funding",
+      "text": "Sashiko 是 Linux 基金会旗下的开源项目，由谷歌提供全部 LLM 算力，已经作为守护进程运行在生产环境中，自动监控 LKML 和多个内核邮件列表。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-16T02:39:33.861Z",
+  "business_elements": {
+    "companies": [
+      "IT之家（RSS）"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "7",
+      "16",
+      "15",
+      "35",
+      "22",
+      "50%",
+      "13"
+    ],
+    "quotes": [
+      "要么 Fork 要么离开",
+      "要么 Fork 要么离开",
+      "如果命中率能达到 50%，那就完全值得开发者花时间去核对",
+      "做开源的事情，把它 fork 出来"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Linux 创始人 Linus Torvalds 在内核社区发飙，针对 AI 工具 Sashiko 的争议表示\"要么 Fork 要么离开\"。Sashiko 是 Linux 基金会旗下开源项目，由谷歌提供全部 LLM 算力，自动监控内核邮件列表并生成代码审查意见。Torvalds 坚决支持在开发中使用 AI，认为批评者应反省人类自然智能也常犯错。",
+      "fork（项目分叉）是开源开发中的常见机制，指基于现有项目代码库复制出独立版本，并按新的治理规则继续开发。",
+      "典型应用场景包括技术路线分歧、社区治理冲突或许可证需求变化。"
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 4,
+    "importance_reason": "new product or service; rubric=4 concrete important change",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Linux 之父托瓦兹回应 AI 争议：不同意可 Fork 或离开\n\n- raw_id: R-076\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://www.ithome.com/0/977/300.htm\n- source_name: IT之家（RSS）\n- collected_at: 2026-07-16T02:39:33.861Z\n\n## clean_text\n\nIT之家 7 月 16 日消息，科技媒体 Neowin 昨日（7 月 15 日）发布博文，报道称 Linux 创始人林纳斯 · 托瓦兹（Linus Torvalds）在内核讨论社区发飙， 针对 AI 争议表示“要么 Fork 要么离开”。\nfork（项目分叉）是开源开发中的常见机制，指基于现有项目代码库复制出独立版本，并按新的治理规则继续开发。典型应用场景包括技术路线分歧、社区治理冲突或许可证需求变化。\n林纳斯 · 托瓦兹（Linus Torvalds），图源：WikiMedia IT之家援引博文介绍，本次争议的导火索是补丁审查机器人 Sashiko。Sashiko 是 Linux 基金会旗下的开源项目，由谷歌提供全部 LLM 算力，已经作为守护进程运行在生产环境中，自动监控 LKML 和多个内核邮件列表。\n长期参与 Linux 内核开发的 Laurent Pinchart 认为，Sashiko 生成的代码审查意见不应直接发送给提交代码的开发者。\n针对开发者是否可以选择退出这些自动审查，内核维护者展开了辩论。\nAndrew Morton 支持部署 AI 工具 Sashiko，通过对 Linux-mm 邮件列表的 35 封邮件复盘发现，其中 Sashiko 指出的 22 个问题确实需要修改，他表示：“如果命中率能达到 50%，那就完全值得开发者花时间去核对”。\n而 Lorenzo Stoakes 反对 AI 工具 Sashiko，表示他加班 13 小时重写的补丁，在内核树运行完美，但在 Sashiko 的实验性环境里就是跑不通。\nStoakes 认为虽然 22 封回复确认了有 Bug，但 Sashiko 每次审查会抛出几十条意见，其中充斥着大量“幻觉”和错误，反而增加了维护人员的工作量。\n托瓦兹对此在 Linux 社区表示 Linux 并非反对使用 AI，作为 Linux 的顶级维护者，他将坚决支持在开发中使用 AI，显然能够帮助其发现 bug。\n托瓦兹对比表示，那些批评 AI 缺陷的人应该反省自身，因为人类的自然智能也经常犯一些令人尴尬的错误，而 Linux 并非某种“社会斗士项目”（social warrior project）。\n对于反对在 Linux 内核中使用 AI 的贡献者，托瓦兹建议那些不同意的人可以“做开源的事情，把它 fork 出来”，要么干脆离开。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n\n## full_text\n\nIT之家 7 月 16 日消息，科技媒体 Neowin 昨日（7 月 15 日）发布博文，报道称 Linux 创始人林纳斯 · 托瓦兹（Linus Torvalds）在内核讨论社区发飙， 针对 AI 争议表示“要么 Fork 要么离开”。\nfork（项目分叉）是开源开发中的常见机制，指基于现有项目代码库复制出独立版本，并按新的治理规则继续开发。典型应用场景包括技术路线分歧、社区治理冲突或许可证需求变化。\n林纳斯 · 托瓦兹（Linus Torvalds），图源：WikiMedia IT之家援引博文介绍，本次争议的导火索是补丁审查机器人 Sashiko。Sashiko 是 Linux 基金会旗下的开源项目，由谷歌提供全部 LLM 算力，已经作为守护进程运行在生产环境中，自动监控 LKML 和多个内核邮件列表。\n长期参与 Linux 内核开发的 Laurent Pinchart 认为，Sashiko 生成的代码审查意见不应直接发送给提交代码的开发者。\n针对开发者是否可以选择退出这些自动审查，内核维护者展开了辩论。\nAndrew Morton 支持部署 AI 工具 Sashiko，通过对 Linux-mm 邮件列表的 35 封邮件复盘发现，其中 Sashiko 指出的 22 个问题确实需要修改，他表示：“如果命中率能达到 50%，那就完全值得开发者花时间去核对”。\n而 Lorenzo Stoakes 反对 AI 工具 Sashiko，表示他加班 13 小时重写的补丁，在内核树运行完美，但在 Sashiko 的实验性环境里就是跑不通。\nStoakes 认为虽然 22 封回复确认了有 Bug，但 Sashiko 每次审查会抛出几十条意见，其中充斥着大量“幻觉”和错误，反而增加了维护人员的工作量。\n托瓦兹对此在 Linux 社区表示 Linux 并非反对使用 AI，作为 Linux 的顶级维护者，他将坚决支持在开发中使用 AI，显然能够帮助其发现 bug。\n托瓦兹对比表示，那些批评 AI 缺陷的人应该反省自身，因为人类的自然智能也经常犯一些令人尴尬的错误，而 Linux 并非某种“社会斗士项目”（social warrior project）。\n对于反对在 Linux 内核中使用 AI 的贡献者，托瓦兹建议那些不同意的人可以“做开源的事情，把它 fork 出来”，要么干脆离开。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 60\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: medium\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] Linux 创始人 Linus Torvalds 在内核社区发飙，针对 AI 工具 Sashiko 的争议表示\"要么 Fork 要么离开\"。Sashiko 是 Linux 基金会旗下开源项目，由谷歌提供全部 LLM 算力，自动监控内核邮件列表并生成代码审查意见。Torvalds 坚决支持在开发中使用 AI，认为批评者应反省人类自然智能也常犯错。\n2. [quote / signal_card_candidate, relationship_graph_input, viewpoint / high] IT之家 7 月 16 日消息，科技媒体 Neowin 昨日（7 月 15 日）发布博文，报道称 Linux 创始人林纳斯 · 托瓦兹（Linus Torvalds）在内核讨论社区发飙， 针对 AI 争议表示“要么 Fork 要么离开”。\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] fork（项目分叉）是开源开发中的常见机制，指基于现有项目代码库复制出独立版本，并按新的治理规则继续开发。\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 典型应用场景包括技术路线分歧、社区治理冲突或许可证需求变化。\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 林纳斯 · 托瓦兹（Linus Torvalds），图源：WikiMedia IT之家援引博文介绍，本次争议的导火索是补丁审查机器人 Sashiko。\n6. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] Sashiko 是 Linux 基金会旗下的开源项目，由谷歌提供全部 LLM 算力，已经作为守护进程运行在生产环境中，自动监控 LKML 和多个内核邮件列表。\n"
+}
