@@ -4,7 +4,7 @@
 - target: SITE-V4.0-data-center
 - branch: codex/v4-data-center-release
 - audit_skill: guanlan-code-rule-auditor
-- status: pre-release gates passed
+- status: release and live hotfix gates passed
 
 ## 1. Audit scope
 
@@ -31,6 +31,7 @@ The release boundary remains:
 | Daily workflow did not run the complete V4 test set | Regressions could reach generated assets | Core, frontstage, taxonomy, syntax, and integrity checks added to CI | fixed |
 | Historical V4 bundles did not cover the available Raw archive | V4 pages and applications could only query recent days | Repeatable dry-run/write backfill runner added with per-day gate and persisted reread verification | fixed |
 | Runtime dependencies contained known vulnerabilities | Release supply-chain risk | Ajv dependencies upgraded; production dependency audit is clean | fixed |
+| Community Intelligence opened on a single category after the first live deployment | Only 4 of the 61 daily snapshot records were visible by default and Feishu resources were hidden behind category switching | Restored an all-items default view while retaining category tabs, search, detail, pagination, original-post links, and Feishu resource links | fixed in v4.0.1 |
 
 ## 3. Validation evidence
 
@@ -52,6 +53,7 @@ The release boundary remains:
 | actionlint | passed |
 | Dependency audit | 0 vulnerabilities |
 | Git whitespace check | passed |
+| Live Community Intelligence hotfix | 61 records, 12 cards on page 1, keyword search passed, Feishu links opened from detail |
 
 ## 4. Historical synchronization result
 

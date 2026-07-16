@@ -42,6 +42,7 @@
   };
   const communityPageSize = 12;
   const communityViewConfig = {
+    all: { label: "全部", rail: "场景索引", empty: "没有匹配的社群情报" },
     industry_case: { label: "行业案例", rail: "商业场景", empty: "没有匹配的行业案例" },
     tool_tip: { label: "工具技巧", rail: "工具与方法", empty: "没有匹配的工具技巧" },
     opportunity: { label: "商业机会", rail: "机会场景", empty: "没有匹配的商业机会" },
@@ -51,7 +52,7 @@
     manifest: [],
     payload: null,
     selectedDate: "",
-    activeView: "industry_case",
+    activeView: "all",
     activeScene: "all",
     page: 1,
     filters: {
@@ -589,7 +590,8 @@
   }
 
   function communityMatchesView(item, targetView = communityState.activeView) {
-    return targetView === "links" ? communityLinks(item).length > 0 : item.insightType === targetView;
+    return targetView === "all"
+      || (targetView === "links" ? communityLinks(item).length > 0 : item.insightType === targetView);
   }
 
   function communityMatchesQuery(item, query) {
