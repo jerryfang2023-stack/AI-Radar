@@ -1,0 +1,95 @@
+{
+  "taxonomy_version": "TAG-V3.0",
+  "status": "current",
+  "assignment_contract": {
+    "source": "accepted_claim_only",
+    "evidence_ref_required": true,
+    "source_span_required": true,
+    "ranking_input": false,
+    "eligibility_input": false,
+    "default_tags": []
+  },
+  "admission_contract": {
+    "automatic_creation": false,
+    "minimum_independent_claims": 3,
+    "manual_approval_allowed": true,
+    "required_fields": ["id", "name", "definition", "parent", "aliases", "includes", "excludes", "status"]
+  },
+  "deprecation_contract": {
+    "new_assertions_blocked": true,
+    "historical_assertions_preserved": true,
+    "replacement_id_required_when_renamed": true
+  },
+  "tags": [
+    {
+      "id": "agentic_execution",
+      "name": "Agentic Execution",
+      "definition": "The accepted claim explicitly describes agentic or autonomous task execution.",
+      "parent": "",
+      "aliases": ["ai_agent", "agentic_ai"],
+      "includes": ["agentic", "AI agent", "AI agents", "智能体", "代理式 AI"],
+      "excludes": ["travel agent", "sales agent as a human role"],
+      "status": "active"
+    },
+    {
+      "id": "tool_use",
+      "name": "Tool Use",
+      "definition": "The accepted claim explicitly describes model or agent tool invocation or function calling.",
+      "parent": "agentic_execution",
+      "aliases": ["function_calling"],
+      "includes": ["tool use", "function calling", "tool calling", "工具调用", "函数调用"],
+      "excludes": ["generic software tool"],
+      "status": "active"
+    },
+    {
+      "id": "multimodal",
+      "name": "Multimodal",
+      "definition": "The accepted claim explicitly combines more than one input or output modality.",
+      "parent": "",
+      "aliases": ["multi_modal"],
+      "includes": ["multimodal", "multi-modal", "多模态"],
+      "excludes": [],
+      "status": "active"
+    },
+    {
+      "id": "open_weights",
+      "name": "Open Weights",
+      "definition": "The accepted claim explicitly states that model weights are released or available.",
+      "parent": "",
+      "aliases": ["open_weight"],
+      "includes": ["open weights", "open-weight", "开放权重", "开源权重"],
+      "excludes": ["open source without weight availability"],
+      "status": "active"
+    },
+    {
+      "id": "on_device",
+      "name": "On Device",
+      "definition": "The accepted claim explicitly states that inference or execution occurs on a device or edge endpoint.",
+      "parent": "",
+      "aliases": ["edge_inference"],
+      "includes": ["on-device", "on device", "edge inference", "端侧", "设备端"],
+      "excludes": [],
+      "status": "active"
+    },
+    {
+      "id": "human_in_loop",
+      "name": "Human in the Loop",
+      "definition": "The accepted claim explicitly requires human review, approval, or intervention in an AI workflow.",
+      "parent": "",
+      "aliases": ["human_in_the_loop"],
+      "includes": ["human in the loop", "human-in-the-loop", "human review", "人工审核", "人在回路"],
+      "excludes": [],
+      "status": "active"
+    },
+    {
+      "id": "retrieval_augmented_generation",
+      "name": "Retrieval-Augmented Generation",
+      "definition": "The accepted claim explicitly describes retrieval-augmented generation.",
+      "parent": "",
+      "aliases": ["rag"],
+      "includes": ["retrieval-augmented generation", "retrieval augmented generation", "RAG", "检索增强生成"],
+      "excludes": [],
+      "status": "active"
+    }
+  ]
+}

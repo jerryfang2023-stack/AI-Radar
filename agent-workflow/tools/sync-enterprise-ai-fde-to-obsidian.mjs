@@ -161,9 +161,9 @@ function repairFdeSyncCopy(text = "") {
   return String(text || "")
     .replace(/^.*Business Signals.*Obsidian.*$/mu, "本页是 Business Signals「企业 AI / FDE」二级镜头的 Obsidian 索引。原文不复制到本页，保留在 Raw 原文快照中；本页负责把前台条目、原文快照、JSON 快照和正式 Signal Card 串起来。")
     .replace(/^.*Business Signals.*Signal Card.*FDE.*Card.*$/mu, "这个目录保存 Business Signals「企业 AI / FDE」二级镜头的 Obsidian 入口。正式 product / funding / case Signal Card 仍保存在 `01-SiteV2/knowledge/01-Signal-Cards/`；FDE 镜头只做实施、部署、客户嵌入和工作流证据的聚合视图，不新增第四类 Card。")
-    .replace(/Raw 鍘熸枃蹇収/gu, "Raw 原文快照")
-    .replace(/缂哄け Raw 鍘熸枃蹇収/gu, "缺失 Raw 原文快照")
-    .replace(/lens-only锛屾湭鐢熸垚姝ｅ紡 Signal Card/gu, "lens-only，未生成正式 Signal Card");
+    .replace(/Raw \u{9358}\u{71b8}\u{6783}\u{8e47}\u{e0a4}\u{53ce}/gu, "Raw 原文快照")
+    .replace(/\u{7f02}\u{54c4}\u{3051} Raw \u{9358}\u{71b8}\u{6783}\u{8e47}\u{e0a4}\u{53ce}/gu, "缺失 Raw 原文快照")
+    .replace(/lens-only\u{951b}\u{5c7e}\u{6e6d}\u{9422}\u{71b8}\u{579a}\u{59dd}\u{ff45}\u{7d21} Signal Card/gu, "lens-only，未生成正式 Signal Card");
 }
 
 const payload = readJson(siteDataFile);

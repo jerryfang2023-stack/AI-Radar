@@ -5,7 +5,7 @@ metadata:
   guanlan:
     version: "0.1.0"
     lane: "Business Signals"
-    status: "current sub-skill"
+    status: "downstream application"
     order: 95
     responsibility: "Write monthly AI business structure and opportunity reports from Signals, weekly reports, Community Intelligence, First-Line Viewpoints, and Reports Center context."
     upstream: "Business Signal Cards, weekly business change radar reports, Community Intelligence demand signals, First-Line Viewpoints expectation shifts, Reports Center context"
@@ -16,6 +16,8 @@ metadata:
 ---
 
 # Guanlan Monthly Business Structure Report
+
+This judgment report is a downstream application and cannot write Data Center V4 canonical facts.
 
 ## Required Reads
 

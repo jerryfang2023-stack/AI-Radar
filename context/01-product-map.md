@@ -1,7 +1,7 @@
 ---
 status: current
 scope: product-map
-last_updated: 2026-07-06
+last_updated: 2026-07-16
 use_when:
   - product planning
   - page or navigation decisions
@@ -9,16 +9,20 @@ use_when:
 priority: current
 ---
 
-# 01 Product Map - SITE-V3.4.5
+# 01 Product Map - SITE-V4.0 Data Center
 
 ## Current Product Structure
 
 | Module | Role | Status |
 |---|---|---|
-| Business Signals | Daily product / service, funding, and case Cards plus separate AI Hardware lens | Active frontstage |
+| Data Center Core | SourceArtifact, RawDocument, Claim, Entity, CanonicalEvent, QA and serving tables | Active product core |
+| Event Database | Normalized factual events with status, evidence, conflicts and revisions | Active data layer |
+| FDE Database | Source-bounded enterprise implementation projections | Active domain projection |
+| AI Hardware Database | Source-bounded hardware product, capacity, supply and deployment projections | Active domain projection |
+| Business Signals | V3 Cards plus separate hardware/FDE lenses | Frozen compatibility frontstage |
 | First-Line Viewpoints | Builders public viewpoints, translated and organized independently | Active frontstage |
-| Relationship Graph | Visual graph built from accepted business-signal Cards | Active analysis layer |
-| Trend Candidates | Potential trend patterns based on multiple same-direction business signals | Active analysis layer |
+| Relationship data | Source-backed event/claim/entity links only | Active factual data layer |
+| Trend / opportunity outputs | Downstream interpretation, excluded from V4 core | Legacy page compatibility |
 | Dashboard | Production-chain, source traceability, data quality, version governance, Skill Store, and release status | Active backend |
 
 ## Current Navigation
@@ -29,30 +33,30 @@ First-Line Viewpoints
 Dashboard
 ```
 
-Business Signals and First-Line Viewpoints must share the same global topbar structure and height. Dashboard links to the existing operations backend and is not redesigned as a public content page.
+Navigation and page information architecture are frozen pending a separate approved page plan.
 
 ## Asset Flow
 
 ```text
 Monitor / Search / Source discovery
--> Raw candidate
--> Pool evidence
--> signal_card
-   - product_service
-   - funding
-   - case
--> knowledge base
--> relationship graph
--> trend candidate
--> SITE-V3.4.5 frontstage / operations data
+-> SourceArtifact
+-> RawDocument
+-> Claim / Entity
+-> CanonicalEvent
+-> FDE / Hardware projection
+-> JSON / JSONL / DuckDB
+-> downstream AIP / insight / decision-support applications
+-> frozen V3 page compatibility outputs
 ```
 
 First-line viewpoints are built by the builders route and displayed in `follow-builders.html`. They are not mixed into the asset flow above.
-AI Hardware lens items are rendered as `aiHardwareSignals` under Business Signals. They are not a fourth Card type and must not bypass product_service / funding / case Card gates.
+Legacy page data remains isolated from the canonical flow. Page JSON cannot be used as a V4 source of truth.
 
 ## Asset Boundaries
 
 - `01-SiteV2/content/01-raw/`: daily Raw candidates and original materials.
+- `01-SiteV2/content/11-databases/data-center-v4/`: daily canonical V4 bundles.
+- `data-lake/tables/`: materialized V4 and legacy JSONL serving tables.
 - `01-SiteV2/content/02-pool/`: screened evidence pool.
 - `01-SiteV2/content/04-business-signals/`: daily business-signal indexes.
 - `01-SiteV2/knowledge/01-Signal-Cards/`: persistent formal Card assets.
@@ -60,7 +64,7 @@ AI Hardware lens items are rendered as `aiHardwareSignals` under Business Signal
 - `01-SiteV2/site/data/follow-builders-daily.json`: first-line viewpoints data.
 - `01-SiteV2/site/data/pipeline-dashboard.json`: operations dashboard data.
 
-## Current Card Types
+## Compatibility Card Types
 
 Business-signal Cards only use three types:
 
@@ -68,7 +72,7 @@ Business-signal Cards only use three types:
 - `funding`: single-company funding events, especially emerging-company and SME funding.
 - `case`: customer adoption, vertical-industry deployment, workflow change, and implementation cases.
 
-Pool type is not Card type. Card type must be judged again from source facts.
+These types remain for frozen pages only. V4 uses the CanonicalEvent enum in `data-center-v4.schema.json`.
 
 ## Frontstage Release Conditions
 
@@ -81,12 +85,11 @@ A Card can enter the frontstage only when it has:
 - no backend-field fallback;
 - no follow-builders or opinion material.
 
-## Relationship And Trend Boundaries
+## Relationship And Interpretation Boundaries
 
-- The relationship graph only shows traceable subjects, scenes, actions, and commercial variables between accepted business-signal Cards.
-- The relationship graph should be visual and compact, not long prose.
-- Trend candidates must come from multiple same-direction Cards, multiple sources, and clear commercial variables.
-- Trend candidates explain what the trend is, where it appears, and what the evidence boundary is. They do not provide advice or direction.
+- Core relationships are factual links with event, claim, and source references.
+- Tag co-occurrence cannot create relationship direction or hypotheses.
+- Trend, opportunity, value, advice, and recommendation logic belongs to downstream applications and legacy page compatibility only.
 
 ## Retired Outputs
 

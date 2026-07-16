@@ -1,7 +1,7 @@
 ---
 status: current
 scope: quality-gates
-last_updated: 2026-06-01
+last_updated: 2026-07-16
 use_when:
   - acceptance
   - closeout review
@@ -45,6 +45,21 @@ priority: current
 - 文案验收以事实准确、来源可追溯、无内部生产语言、无机械改写为准。
 
 ## 数据与每日监测
+
+Data Center V4 的正式放行门禁是：
+
+```powershell
+npm run build:data-center -- --date=YYYY-MM-DD
+npm run assert:data-center -- --date=YYYY-MM-DD
+```
+
+- 正式事件必须 100% 具有可解析的 `source_refs` 和 `claim_refs`。
+- Claim 必须与 `RawDocument.body_clean` 的字符区间一致。
+- TagAssertion 必须 100% 具有 Claim 证据和原文区间。
+- FDE / Hardware 必须来自 CanonicalEvent，禁止 SourceArtifact 直达。
+- 模板、导航、搜索摘要、错配主体和判断字段进入 V4 时必须阻断。
+- 当天没有 FDE 或 Hardware 是可见警告，不得为了数量制造记录。
+- V3 Card / 前台门禁只验证冻结页面兼容性，不能替代 V4 数据完整性门禁。
 
 - 每日监测必须执行 `context/06-execution-harness.md` 的每日监测 Harness。
 - Raw / Pool / Card 资产任务必须执行 `context/06-execution-harness.md` 的资产 Harness。

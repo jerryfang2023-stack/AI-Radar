@@ -21,6 +21,7 @@ const merge = args.get("merge") !== "false";
 const pollSeconds = Number.parseInt(args.get("poll-seconds") || "120", 10);
 const branch = `automation/follow-builders-skill-${date}`;
 const outputFile = path.join(root, "01-SiteV2", "content", "07-points", `${date}-builders-viewpoints.md`);
+const v4DataFile = path.join(root, "01-SiteV2", "site", "data", "first-line-viewpoints-v4.json");
 const reportFile = path.join(reportsDir, `${date}-follow-builders-skill-local-publish.md`);
 
 function shanghaiDate(value = new Date()) {
@@ -131,10 +132,16 @@ function parseFields(text = "") {
 }
 
 function sameDatePublishAlreadyHealthy() {
-  if (!fs.existsSync(reportFile) || !fs.existsSync(outputFile)) return false;
+  if (!fs.existsSync(reportFile) || !fs.existsSync(outputFile) || !fs.existsSync(v4DataFile)) return false;
   const fields = parseFields(readText(reportFile));
   const reportCount = Number(fields.builder_items_count || 0);
   const outputCount = countGeneratedItems(outputFile);
+  let v4Afternoon = {};
+  try {
+    v4Afternoon = JSON.parse(readText(v4DataFile)).meta?.lanes?.afternoon || {};
+  } catch {
+    return false;
+  }
   const obsidianSyncRecorded = [
     fields.obsidian_sync_added,
     fields.obsidian_sync_groups,
@@ -147,6 +154,8 @@ function sameDatePublishAlreadyHealthy() {
     && reportCount > 0
     && outputCount > 0
     && reportCount === outputCount
+    && v4Afternoon.date === date
+    && Number(v4Afternoon.declaredCount) === outputCount
     && obsidianSyncRecorded;
 }
 
@@ -279,6 +288,7 @@ function main() {
 
   run("node", ["--check", "agent-workflow/tools/generate-builders-viewpoints-from-follow-builders-skill.mjs"]);
   run("node", ["agent-workflow/tools/generate-builders-viewpoints-from-follow-builders-skill.mjs", `--date=${date}`]);
+  run("node", ["agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs"]);
 
   if (!fs.existsSync(outputFile)) {
     throw new Error(`Builders viewpoints file was not generated: ${outputFile}`);
@@ -337,6 +347,7 @@ function main() {
     run("git", ["read-tree", "origin/main"], { env: gitEnv });
     stageIfExists(`agent-workflow/reports/${date}-follow-builders-skill-local-publish.md`, gitEnv);
     stageIfExists(`01-SiteV2/content/07-points/${date}-builders-viewpoints.md`, gitEnv);
+    stageIfExists("01-SiteV2/site/data/first-line-viewpoints-v4.json", gitEnv);
     stageIfExists("01-SiteV2/knowledge/02-Opinion-Timelines", gitEnv);
 
     const staged = run("git", ["diff", "--cached", "--name-only"], { env: gitEnv });

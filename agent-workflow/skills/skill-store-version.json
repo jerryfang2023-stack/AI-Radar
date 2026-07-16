@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "name": "Guanlan Skill Store",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "release_date": "2026-07-16",
-  "stage": "Read-only Skill Ops audit and dashboard semantic contract",
-  "scope": "Operations-console Skill Store dashboard, governed current skills, usage overrides, cleanup lifecycle, explicit repair-only mirror synchronization, read-only drift audit, and an independent semantic contract for dashboard version, governed metadata, summary counts, mirror state, duplicate names, cleanup queue, and public path safety.",
+  "stage": "Data Center V4 skill ownership",
+  "scope": "Adds the Data Center supervisor, source ingestion, event normalization, integrity gate, FDE projection, hardware projection, and TAG-V3 taxonomy governance lanes; legacy Business Signals and judgment skills are isolated as compatibility or downstream applications.",
   "upgrade_policy": {
     "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
     "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",

@@ -82,12 +82,10 @@ jobs:
             echo "1. Run the V3 evidence-supply gate."
             echo "2. Confirm Raw / Pool integrity and historical duplicate state without re-blocking diagnostic volume targets."
             echo "3. Mark same-date downstream assets stale if Raw / Pool changed."
-            echo "4. Regenerate qualified business-signal Card assets in the runner workspace only; frontstage publishes the unified Card set."
-            echo "5. Run Pool-to-Card duplicate gate."
-            echo "6. Run Signal Card editorial quality gate."
-            echo "7. Record a trend candidate or explicit no-candidate decision from accepted Cards."
-            echo "8. Build Business Signals frontstage data and run the source-first/regression gate before operations data."
-            echo "9. Sync operations data only after the Business frontstage gate passes, still artifact-only."
+            echo "4. Build and gate the Data Center V4 factual bundle."
+            echo "5. Materialize V4 JSONL serving tables."
+            echo "6. Run frozen V3 Card, trend, and frontstage compatibility stages."
+            echo "7. Sync operations data only after both V4 and compatibility gates pass, still artifact-only."
           } | tee "agent-workflow/reports/${RUN_DATE}-github-daily-production-chain-dry-run.md"
 
       - name: Syntax checks
@@ -96,6 +94,11 @@ jobs:
           node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
           node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
           node --check agent-workflow/tools/assert-daily-production-chain.mjs
+          node --check agent-workflow/tools/build-data-center-v4.mjs
+          node --check agent-workflow/tools/assert-data-center-v4.mjs
+          node --check agent-workflow/tools/assert-tag-taxonomy-v3.mjs
+          node --check agent-workflow/tools/sync-light-data-lake.mjs
+          node --check 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/assert-business-signals-frontstage.mjs
@@ -137,9 +140,45 @@ jobs:
             --stage=post-monitor \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-post-monitor-gate.log"
 
+      - name: Build Data Center V4 factual bundle
+        id: data-center-v4
+        if: steps.monitor.outcome == 'success' && steps.production-chain-post-monitor.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/build-data-center-v4.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-data-center-v4.log"
+
+      - name: Run Data Center V4 integrity gate
+        id: data-center-v4-gate
+        if: steps.data-center-v4.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/assert-data-center-v4.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-data-center-v4-gate.log"
+
+      - name: Materialize Data Center V4 JSONL tables
+        id: data-center-v4-materialize
+        if: steps.data-center-v4-gate.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/sync-light-data-lake.mjs \
+            --v4-only=true \
+            --duckdb=skip \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-data-center-v4-materialize.log"
+          node 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-data-center-v4-frontstage.log"
+
       - name: Regenerate business-signal Card assets
         id: assets
-        if: steps.monitor.outcome == 'success' && steps.production-chain-post-monitor.outcome == 'success'
+        if: steps.data-center-v4-materialize.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -171,7 +210,7 @@ jobs:
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-card-editorial-gate.log"
 
-      - name: Record trend candidate decision
+      - name: Legacy page compatibility - record trend candidate decision
         id: trend-decision
         if: steps.card-editorial-gate.outcome == 'success'
         continue-on-error: true
@@ -183,7 +222,7 @@ jobs:
             --write-no-decision=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-trend-decision.log"
 
-      - name: Build Business Signals frontstage data after gates pass
+      - name: Legacy page compatibility - build Business Signals frontstage data after gates pass
         id: site-sync
         if: steps.trend-decision.outcome == 'success'
         continue-on-error: true
@@ -231,11 +270,30 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.json
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-data-center-v4-integrity-gate.md
+            agent-workflow/reports/${{ steps.run-date.outputs.date }}-data-center-v4-integrity-gate.json
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-trend-candidate-decision*.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-no-trend-candidate-decision.md
             01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
             01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
             01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
+            01-SiteV2/content/11-databases/data-center-v4/${{ steps.run-date.outputs.date }}/**
+            data-lake/tables/source_artifacts.jsonl
+            data-lake/tables/raw_documents.jsonl
+            data-lake/tables/claims.jsonl
+            data-lake/tables/entities.jsonl
+            data-lake/tables/entity_mentions.jsonl
+            data-lake/tables/canonical_events.jsonl
+            data-lake/tables/compatibility_cards.jsonl
+            data-lake/tables/event_sources.jsonl
+            data-lake/tables/event_claims.jsonl
+            data-lake/tables/event_conflicts.jsonl
+            data-lake/tables/relationships.jsonl
+            data-lake/tables/tag_assertions.jsonl
+            data-lake/tables/fde_records.jsonl
+            data-lake/tables/hardware_records.jsonl
+            data-lake/tables/qa_queue.jsonl
+            data-lake/tables/legacy_asset_mappings.jsonl
             01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
             01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
             01-SiteV2/content/06-asset-candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md

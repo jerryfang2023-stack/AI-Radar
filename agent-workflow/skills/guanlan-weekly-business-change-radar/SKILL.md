@@ -5,7 +5,7 @@ metadata:
   guanlan:
     version: "1.0.0"
     lane: "Business Signals"
-    status: "current sub-skill"
+    status: "downstream application"
     order: 90
     responsibility: "从 S×O×C 三方数据生成周度 AI 商业变化判断报告：趋势链五步法、100分机会评分、反共识判断、行业影响热力图。"
     upstream: "Business Signal Cards, First-Line Viewpoints data, Community Intelligence data"
@@ -17,6 +17,8 @@ metadata:
 ---
 
 # Guanlan Weekly Business Change Radar
+
+This judgment report is a downstream application and cannot write Data Center V4 canonical facts.
 
 ## Required Reads
 

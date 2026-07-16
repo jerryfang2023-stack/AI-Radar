@@ -42,34 +42,33 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: SITE-V3.4.5.
+- Current stage: SITE-V4.0-data-center dual-write; SITE-V3.4.5 frontstage is frozen compatibility output.
 - Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/weekly-ai-business-change-radar.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
 - Current First-Line Viewpoints column version: FLV-V1.0.2-supervision-idempotency.
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
-- Current Enterprise AI / FDE lens version: EAI-V1.2.0-raw-card-ingestion-boundary.
+- Current Enterprise AI / FDE data version: FDE-V2.0.
+- Current AI Hardware data version: HARDWARE-V1.0.
 - Current Reports Center / Intelligence Map column version: IMAP-V2.0.0-report-center-opportunity-system.
-- Current Business Signals data contract: V3.3.6.3 business source artifact aggregation.
-- Current tag taxonomy version: TAG-V2.0.0-semantic-boundaries.
-- Current core rule source: `context/07-v3-intelligence-generation-rules.md`.
+- Current Raw contract: RAW-V3.0.
+- Current canonical event contract: EVENT-V1.0.
+- Current tag taxonomy version: TAG-V3.0.
+- Current data-center rule source: `context/12-data-center-v4.md`.
+- `context/07-v3-intelligence-generation-rules.md` governs frozen V3 page compatibility only.
 - V2 website pages and old four-column output rules are retired.
 
 ## Current Product Goal
 
-SITE-V3.4.5 is an AI business intelligence asset system.
+SITE-V4.0 is an AI industry data center and structured factual data foundation for AIP products, industry research, and startup decision-support applications.
 
-Daily production should preserve and display all qualified Raw / Pool AI business signals that can become Cards across:
+Daily core production must preserve source artifacts and build exact-span Claims, Entities, CanonicalEvents, FDE records, hardware records, evidence-backed TagAssertions, and queryable exports.
 
 - product / service;
 - funding;
 - case / vertical deployment.
 
-The system should then use those business-signal Cards to build:
-
-- knowledge-base assets;
-- relationship graph inputs;
-- trend candidates.
+The core does not make decisions, judge value or opportunity, recommend actions, or educate readers. Card, trend, opportunity, and report objects are downstream or frozen-page compatibility outputs and cannot enter V4 canonical tables.
 
 First-line viewpoints are a separate builders column. They are useful for reading public operator / builder viewpoints, but they are not business-signal facts.
 
@@ -112,9 +111,28 @@ If an old rule conflicts with SITE-V3.4.5, delete or rebuild it instead of prese
 | `context/09-v3-3-current-action-index.md` | SITE-V3.4.5 current action registry |
 | `context/10-v3-3-experience-automation.md` | action logging and retrospective automation |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes daily supervision and Codex repair handoff |
+| `context/12-data-center-v4.md` | SITE-V4.0 factual data contract, boundaries, and daily execution |
 | `context/context-index.md` | context router |
 
 ## Current Task Routes
+
+### Data Center V4
+
+Read:
+
+1. `context/12-data-center-v4.md`
+2. `agent-workflow/product/data-center-v4-contract.md`
+3. `agent-workflow/product/data-center-v4.schema.json`
+4. relevant generator, projection, gate, or data bundle
+
+Rules:
+
+- Every Claim quotes an exact RawDocument span.
+- Every formal event resolves to Claim and SourceArtifact references.
+- FDE, hardware, and tags are projections/assertions from accepted evidence only.
+- Missing and conflicting fields remain explicit.
+- Importance, value, opportunity, trend maturity, recommendation, advice, `why_watch`, and `business_meaning` are forbidden in V4 canonical outputs.
+- Do not change frontstage pages until the page plan is separately approved.
 
 ### Raw / Pool / Card Generation
 
@@ -125,7 +143,7 @@ Read:
 3. `context/06-execution-harness.md`
 4. relevant script or data file
 
-Rules:
+Compatibility rules:
 
 - Raw only collects external materials.
 - Pool screens evidence.

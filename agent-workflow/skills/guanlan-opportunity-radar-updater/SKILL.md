@@ -5,7 +5,7 @@ metadata:
   guanlan:
     version: "1.1.0"
     lane: "Reports Center"
-    status: "current sub-skill"
+    status: "downstream application"
     order: 92
     responsibility: "Update the source-backed opportunity maps and their frontstage presentation for AI-native startup judgment: Entry Point Map and Product Pain Map."
     upstream: "Business Signal Cards, original source excerpts, opportunity_signals taxonomy"
@@ -17,6 +17,8 @@ metadata:
 ---
 
 # Guanlan Opportunity Radar Updater
+
+This is a downstream decision-support/page-compatibility skill. Opportunity maps and scores cannot enter Data Center V4.
 
 ## Scope
 

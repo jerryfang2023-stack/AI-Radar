@@ -1,7 +1,7 @@
 ---
 status: current
 scope: context-index
-last_updated: 2026-07-09
+last_updated: 2026-07-16
 use_when:
   - decide what to read
   - dispatch task
@@ -21,16 +21,17 @@ This file is the reading router. Do not use old closeout files as current truth.
 | `context/00-current-state.md` | Current product state and active / paused routes | Large task startup, context recovery |
 | `context/version-ledger.md` | Current version baseline, freeze point, active version | Page change, release check, version confirmation |
 | `context/frontstage-page-contracts.md` | Frontstage page contracts | Page, nav, copy, data sync, regression check |
-| `context/01-product-map.md` | SITE-V3.4.5 product structure and data flow | Product, navigation, data structure changes |
+| `context/01-product-map.md` | SITE-V4.0 data-center product structure and frozen page compatibility | Product and data structure changes |
 | `context/02-vi-style.md` | VI, typography, visual style | UI, layout, brand assets |
 | `context/04-qc-rules.md` | General quality gates | Acceptance, release, closeout |
 | `context/05-daily-monitoring.md` | Daily monitoring minimum context | Raw / Pool / monitoring QC |
 | `context/06-execution-harness.md` | High-risk execution harness | Monitoring, Raw / Pool / Card, page changes |
-| `context/07-v3-intelligence-generation-rules.md` | V3 Raw / Pool / Card / graph / trend rule source | Any generation rule or monitoring-chain change |
-| `context/08-v3-3-automation.md` | SITE-V3.4.5 GitHub / site / local Obsidian automation loop | GitHub Actions, site data sync, local sync |
+| `context/07-v3-intelligence-generation-rules.md` | Frozen V3 Card / graph / trend page-compatibility rules | Legacy page compatibility changes |
+| `context/08-v3-3-automation.md` | SITE-V4.0 dual-write GitHub / site / local Obsidian automation loop | GitHub Actions, data sync, local sync |
 | `context/09-v3-3-current-action-index.md` | SITE-V3.4.5 current action registry | Action dispatch, current automation recovery, replacing historical action lists |
 | `context/10-v3-3-experience-automation.md` | Action logging and retrospective automation | Record meaningful actions, summarize mistakes and lessons |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes daily supervision instructions | Daily monitoring supervision, Codex repair handoff |
+| `context/12-data-center-v4.md` | Current Data Center V4 contract and factual production boundary | Raw / Claim / Event / FDE / hardware / tags / database work |
 
 ## Current Inboxes
 
@@ -42,6 +43,7 @@ This file is the reading router. Do not use old closeout files as current truth.
 
 | Skill | Purpose |
 |---|---|
+| `agent-workflow/skills/guanlan-data-center-supervisor/SKILL.md` | Data Center V4 lane supervision and repair |
 | `agent-workflow/skills/guanlan-daily-monitor/SKILL.md` | Raw monitoring and candidate collection |
 | `agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md` | Monitoring pre-gate |
 | `agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md` | Raw / Pool quality release |

@@ -112,8 +112,10 @@ jobs:
           node --check agent-workflow/tools/fetch-builder-blog-feed.mjs
           node --check agent-workflow/tools/fetch-builder-podcast-feed.mjs
           node --check agent-workflow/tools/assert-follow-builders-data.mjs
+          node --check agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs
           node --check agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs
           node --check 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
+          node --check 01-SiteV2/site/scripts/build-first-line-viewpoints-v4-data.mjs
           gh --version
 
       - name: Fetch builder blog RSS feeds
@@ -158,6 +160,7 @@ jobs:
           node agent-workflow/tools/assert-follow-builders-data.mjs \
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-builders-gate.log"
+          node agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs --require-afternoon=false
 
       - name: Sync first-line viewpoints to Obsidian timelines
         id: obsidian-sync
@@ -214,6 +217,7 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-first-line-viewpoints-manifest.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-follow-builders-data-gate.md
             01-SiteV2/site/data/follow-builders-daily.json
+            01-SiteV2/site/data/first-line-viewpoints-v4.json
             01-SiteV2/knowledge/02-Opinion-Timelines/**
             01-SiteV2/content/11-databases/builder-blog-feed.json
             01-SiteV2/content/11-databases/builder-podcast-feed.json
@@ -239,6 +243,7 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-first-line-viewpoints-manifest.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-follow-builders-data-gate.md"
           stage_if_exists "01-SiteV2/site/data/follow-builders-daily.json"
+          stage_if_exists "01-SiteV2/site/data/first-line-viewpoints-v4.json"
           stage_if_exists "01-SiteV2/knowledge/02-Opinion-Timelines"
           stage_if_exists "01-SiteV2/content/11-databases/builder-blog-feed.json"
           stage_if_exists "01-SiteV2/content/11-databases/builder-podcast-feed.json"

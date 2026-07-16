@@ -1,0 +1,89 @@
+{
+  "ok": true,
+  "status": "waiting",
+  "date": "2026-07-16",
+  "generated_at": "2026-07-16T01:50:13.709Z",
+  "repair_mode": "safe",
+  "github_mode": "auto",
+  "scheduled_task_mode": "auto",
+  "supervision_report": "agent-workflow/reports/2026-07-16-daily-supervision-report.md",
+  "supervision_command": {
+    "label": "daily supervision without Hermes",
+    "command": "C:\\Program Files\\nodejs\\node.exe agent-workflow/tools/write-daily-supervision-report.mjs --date=2026-07-16 --github=auto --scheduled-task=auto --hermes=off",
+    "ok": true,
+    "status": 0,
+    "error": "",
+    "stdout": "{\n  \"ok\": true,\n  \"status\": \"waiting\",\n  \"report\": \"agent-workflow/reports/2026-07-16-daily-supervision-report.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-16-daily-supervision-report.md\",\n  \"hermes_inbox\": []\n}",
+    "stderr": "",
+    "started_at": "2026-07-16T01:50:02.311Z",
+    "finished_at": "2026-07-16T01:50:13.707Z"
+  },
+  "post_repair_supervision_command": null,
+  "issues": [
+    {
+      "lane": "community_intelligence",
+      "lane_label": "Community Intelligence",
+      "severity": "warning",
+      "kind": "warning",
+      "message": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/305",
+      "failed_gate": "",
+      "action": ""
+    },
+    {
+      "lane": "business_signals",
+      "lane_label": "Business Signals / Intelligence Map / Dashboard",
+      "severity": "warning",
+      "kind": "warning",
+      "message": "business-signal activeDate is 2026-07-15, expected 2026-07-16; Business Signals workflow is in_progress",
+      "failed_gate": "",
+      "action": "wait for Business Signals workflow completion before declaring data missing"
+    },
+    {
+      "lane": "business_signals",
+      "lane_label": "Business Signals / Intelligence Map / Dashboard",
+      "severity": "warning",
+      "kind": "warning",
+      "message": "public Card count is 0 for 2026-07-16; Business Signals workflow is in_progress",
+      "failed_gate": "",
+      "action": "wait for Business Signals workflow completion before declaring data missing"
+    },
+    {
+      "lane": "business_signals",
+      "lane_label": "Business Signals / Intelligence Map / Dashboard",
+      "severity": "warning",
+      "kind": "warning",
+      "message": "no same-date signal Card files or frontstage Core Signal Cards; Business Signals workflow is in_progress",
+      "failed_gate": "",
+      "action": "wait for Business Signals workflow completion before declaring data missing"
+    },
+    {
+      "lane": "business_signals",
+      "lane_label": "Business Signals / Intelligence Map / Dashboard",
+      "severity": "warning",
+      "kind": "warning",
+      "message": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-16-persistent-asset-manifest.json",
+      "failed_gate": "",
+      "action": "wait for Business Signals workflow completion before declaring data missing"
+    },
+    {
+      "lane": "business_signals",
+      "lane_label": "Business Signals / Intelligence Map / Dashboard",
+      "severity": "warning",
+      "kind": "warning",
+      "message": "missing quality gate report: agent-workflow/reports/2026-07-16-guanlan-monitor-quality-gate.md",
+      "failed_gate": "",
+      "action": "wait for Business Signals workflow completion before declaring data missing"
+    },
+    {
+      "lane": "business_signals",
+      "lane_label": "Business Signals / Intelligence Map / Dashboard",
+      "severity": "warning",
+      "kind": "warning",
+      "message": "missing readiness report: agent-workflow/reports/2026-07-16-daily-production-chain-readiness.md",
+      "failed_gate": "",
+      "action": "wait for Business Signals workflow completion before declaring data missing"
+    }
+  ],
+  "repair_attempts": [],
+  "codex_repair_tasks": []
+}

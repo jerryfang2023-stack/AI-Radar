@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-automation
-last_updated: 2026-07-06
+last_updated: 2026-07-16
 use_when:
   - github automation
   - daily monitoring
@@ -10,7 +10,9 @@ use_when:
 priority: current
 ---
 
-# SITE-V3.4.5 Automation Loop
+# SITE-V4.0 Data Center Automation Loop
+
+The daily production workflow now dual-writes the Data Center V4 factual bundle after Raw evidence supply and before frozen V3 Card/page compatibility work. V4 build, integrity gate, and JSONL materialization are release-blocking. Legacy trend, opportunity, Card, and page stages remain only to keep the current frontstage operational while page planning is frozen.
 
 SITE-V3.4.5 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists gated Builder viewpoints into Obsidian person / original-date timeline files and verifies sync dry-run idempotency, Business Signals runs on the V3.3.6.3 source-artifact aggregation contract with raw/card title-translation and fact-extraction ingestion fields, unified Signal Cards, separate AI Hardware lens, peer source-artifact selection, V3-only release gate cleanup, Raw / Pool diagnostic targets after healthy Card/frontstage supply, and the Enterprise AI / FDE Lens Pool at `EAI-V1.2.0-raw-card-ingestion-boundary`, Community Intelligence uses local logged-in collection before GitHub publication and separates Waiting publication states from repair Problems, Reports Center publishes monthly / weekly reports, source-backed opportunity maps, and relation paths. Hermes is now a problem monitor only: failed production runs are recorded by Daily Problem Watchdog into reports and inbox items for targeted Codex repair.
 
@@ -45,17 +47,12 @@ Execution order:
 2. Skip only the business-signal chain when the day's Raw / Pool / signal assets already exist on `main`.
 3. Run one Daily Monitor attempt and the executable evidence-supply gate.
 4. Persist Raw / Pool assets.
-5. Generate Signal Card assets from all cardable Raw / Pool business signals, then publish the active-date unified frontstage Card set.
-6. Run Pool-to-Card dedupe and gates.
-7. Build business-signal frontstage data first: `01-SiteV2/site/data/v3-data-observation-desk.json`, and the Hermes Agent intelligence entry: `01-SiteV2/site/data/intelligence-graph-index.json`.
-8. Run the unified Business frontstage gate: `agent-workflow/tools/assert-business-signals-frontstage.mjs --date=<date>`. This wraps source-first and frontstage regression, classifies failures as frontstage Card contract, translation, title/source, source-first, or regression, and must run before dashboard work.
-9. Build operations dashboard data: `pipeline-dashboard.json/js`.
-10. Run the pre-commit freshness gate.
-11. Write the persistent asset manifest.
-12. Push `automation/business-signals-<date>`.
-13. Create or update the PR.
-14. Auto-merge or enable auto-merge after gates pass.
-15. Deploy through GitHub Pages after `main` updates.
+5. Build SourceArtifact / RawDocument / Claim / Entity / CanonicalEvent and FDE / hardware / TAG-V3 projections.
+6. Run the Data Center V4 integrity gate and materialize V4 JSONL tables.
+7. Generate Signal Card and trend assets only for frozen V3 page compatibility, then run their existing gates.
+8. Build and gate the existing business-signal frontstage and operations data.
+9. Run the pre-commit freshness gate and write the persistent asset manifest.
+10. Push the automation branch, create or update the PR, merge after gates pass, and deploy through GitHub Pages.
 
 The four production states are `evidence_supply`, `card_quality`, `frontstage_contract`, and `publication`. A failure must be owned by exactly one state. Publication conflict or an open automation PR is `publication_waiting`; it must not dispatch another monitor run.
 

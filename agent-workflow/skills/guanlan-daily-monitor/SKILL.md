@@ -1,15 +1,15 @@
 ---
 name: guanlan-daily-monitor
-description: Use when running, repairing, or updating the WaveSight AI current SITE-V3.4.5 daily Business Signals source-capture layer. It collects peer source artifacts once, normalizes Raw, preserves Pool audit evidence, writes monitor diagnostics, and hands off to the evidence-supply gate. It does not generate Cards or other columns.
+description: Use when running or repairing the existing daily source-capture implementation that supplies SourceArtifacts and legacy Raw/Pool data to Data Center V4. It does not own Claims, CanonicalEvents, tags, projections, Cards, pages, judgment, or recommendations.
 metadata:
   guanlan:
     version: "1.1.1"
-    lane: "Business Signals"
+    lane: "Data Center Source Ingestion"
     status: "current sub-skill"
     order: 40
-    responsibility: "Run the narrow Business Signals Raw / Pool source-capture stage once per production attempt."
+    responsibility: "Run the existing source-capture stage once and hand immutable evidence to V4 ingestion."
     upstream: "external monitoring sources"
-    downstream: "Raw / Pool outputs and evidence-supply report"
+    downstream: "SourceArtifact snapshots, legacy Raw/Pool compatibility, and evidence-supply report"
     gates: "source capture, evidence integrity, minimum evidence supply"
     recent_learning: "After post-fetch hash dedupe, expand adaptively within the same collected source-artifact candidate pool; do not recollect providers or pad Raw with weak evidence."
     mirrored_in_skill_store: true
@@ -18,14 +18,17 @@ metadata:
 
 # Guanlan Daily Monitor
 
+Implementation boundary: `guanlan-source-ingestion` defines RAW-V3 truth. This skill remains the current source collector and may not promote its legacy scores or routes into V4.
+
 This skill owns only Business Signals source capture and Raw / Pool persistence. The lane owner is `guanlan-business-signals-monitor`.
 
 ## Required Reads
 
 1. `AGENTS.md`
-2. `context/05-daily-monitoring.md`
-3. `context/07-v3-intelligence-generation-rules.md`
-4. `context/08-v3-3-automation.md`
+2. `context/12-data-center-v4.md`
+3. `context/05-daily-monitoring.md` for the current collector implementation
+4. `context/07-v3-intelligence-generation-rules.md` only for legacy Pool compatibility
+5. `context/08-v3-3-automation.md`
 5. `agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md`
 6. `evals/daily-monitor-evals.md` when changing the monitor.
 
@@ -60,7 +63,7 @@ Diagnostic targets remain visible:
 - Core evidence 30;
 - channel, keyword, importance-lane and large-company balance.
 
-They are not independent release blockers. The monitor blocks only when the configured minimum evidence supply or evidence integrity fails: missing Raw/Pool artifacts, too little Pool/routed/Core evidence to attempt Card generation, index/contaminated/blocked evidence in Core, or no usable original evidence.
+They are not V4 fact fields or independent release blockers. The monitor blocks only when configured evidence supply or evidence integrity fails: missing snapshots, too little auditable evidence to attempt the V4 build, contaminated/blocked evidence in the accepted acquisition set, or no usable original evidence.
 
 Provider and channel failures remain diagnostics. They become actionable supply failures only when the combined evidence supply is also below the hard minimum.
 

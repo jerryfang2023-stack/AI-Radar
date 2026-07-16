@@ -1,11 +1,13 @@
 ---
-status: current
+status: compatibility
 scope: v3-daily-monitoring
 last_updated: 2026-06-13
 priority: current
 ---
 
 # V3 Daily Monitoring Context
+
+This document governs V3 source-capture and frozen page-compatibility outputs during dual-write. Current V4 normalization truth is `context/12-data-center-v4.md`.
 
 Daily monitoring follows:
 

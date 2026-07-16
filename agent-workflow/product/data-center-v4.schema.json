@@ -1,0 +1,263 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wavesight.local/schemas/data-center-v4.schema.json",
+  "title": "WaveSight Data Center V4",
+  "type": "object",
+  "required": ["manifest", "source_artifacts", "raw_documents", "claims", "entities", "canonical_events", "compatibility_cards", "relationships", "tag_assertions", "facet_assertions", "fde_records", "hardware_records"],
+  "properties": {
+    "manifest": { "$ref": "#/$defs/manifest" },
+    "source_artifacts": { "type": "array", "items": { "$ref": "#/$defs/sourceArtifact" } },
+    "raw_documents": { "type": "array", "items": { "$ref": "#/$defs/rawDocument" } },
+    "claims": { "type": "array", "items": { "$ref": "#/$defs/claim" } },
+    "entities": { "type": "array", "items": { "$ref": "#/$defs/entity" } },
+    "canonical_events": { "type": "array", "items": { "$ref": "#/$defs/canonicalEvent" } },
+    "compatibility_cards": { "type": "array", "items": { "$ref": "#/$defs/compatibilityCard" } },
+    "relationships": { "type": "array", "items": { "$ref": "#/$defs/relationship" } },
+    "tag_assertions": { "type": "array", "items": { "$ref": "#/$defs/tagAssertion" } },
+    "facet_assertions": { "type": "array", "items": { "$ref": "#/$defs/facetAssertion" } },
+    "fde_records": { "type": "array", "items": { "$ref": "#/$defs/fdeRecord" } },
+    "hardware_records": { "type": "array", "items": { "$ref": "#/$defs/hardwareRecord" } }
+  },
+  "$defs": {
+    "sourceSpan": {
+      "type": "object",
+      "required": ["raw_id", "start", "end"],
+      "properties": {
+        "raw_id": { "type": "string", "minLength": 1 },
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "manifest": {
+      "type": "object",
+      "required": ["product_version", "raw_version", "event_version", "tag_version", "date", "generated_at", "counts"],
+      "properties": {
+        "product_version": { "const": "SITE-V4.0-data-center" },
+        "raw_version": { "const": "RAW-V3.0" },
+        "event_version": { "const": "EVENT-V1.0" },
+        "tag_version": { "const": "TAG-V4.0" },
+        "date": { "type": "string", "format": "date" },
+        "generated_at": { "type": "string" },
+        "counts": { "type": "object" }
+      }
+    },
+    "sourceArtifact": {
+      "type": "object",
+      "required": ["source_artifact_id", "source_url", "captured_at", "snapshot_refs", "content_hash"],
+      "properties": {
+        "source_artifact_id": { "type": "string", "minLength": 1 },
+        "source_url": { "type": "string" },
+        "canonical_url": { "type": "string" },
+        "publisher": { "type": "string" },
+        "capture_method": { "type": "string" },
+        "captured_at": { "type": "string" },
+        "snapshot_refs": { "type": "array", "items": { "type": "string" } },
+        "content_hash": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "rawDocument": {
+      "type": "object",
+      "required": ["schema_version", "raw_id", "source_artifact_id", "source_url", "captured_at", "title_original", "body_original", "body_clean", "content_hash", "extraction_status", "claim_ids", "entity_mention_ids", "event_candidate_ids"],
+      "properties": {
+        "schema_version": { "const": "RAW-V3.0" },
+        "raw_id": { "type": "string", "minLength": 1 },
+        "source_artifact_id": { "type": "string", "minLength": 1 },
+        "source_url": { "type": "string" },
+        "canonical_url": { "type": "string" },
+        "publisher": { "type": "string" },
+        "author": { "type": "string" },
+        "published_at": { "type": "string" },
+        "updated_at": { "type": "string" },
+        "captured_at": { "type": "string" },
+        "language": { "type": "string" },
+        "document_type": { "type": "string" },
+        "title_original": { "type": "string" },
+        "title_zh": { "type": "string" },
+        "body_original": { "type": "string" },
+        "body_clean": { "type": "string" },
+        "content_hash": { "type": "string" },
+        "capture_method": { "type": "string" },
+        "extraction_status": { "enum": ["accepted", "partial", "quarantined"] },
+        "source_update_history": { "type": "array" },
+        "claim_ids": { "type": "array", "items": { "type": "string" } },
+        "entity_mention_ids": { "type": "array", "items": { "type": "string" } },
+        "event_candidate_ids": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "object",
+      "required": ["claim_id", "raw_id", "claim_type", "subject", "predicate", "object", "source_span", "source_quote", "extraction_method", "extraction_confidence", "verification_status"],
+      "properties": {
+        "claim_id": { "type": "string" },
+        "raw_id": { "type": "string" },
+        "claim_type": { "type": "string" },
+        "subject": { "type": "string" },
+        "predicate": { "type": "string" },
+        "object": { "type": "string" },
+        "qualifiers": { "type": "object" },
+        "source_span": { "$ref": "#/$defs/sourceSpan" },
+        "source_quote": { "type": "string", "minLength": 1 },
+        "extraction_method": { "enum": ["deterministic_source_span", "model_source_span", "manual"] },
+        "extraction_confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "verification_status": { "enum": ["accepted", "partial", "disputed", "quarantined"] }
+      },
+      "additionalProperties": false
+    },
+    "entity": {
+      "type": "object",
+      "required": ["entity_id", "canonical_name", "entity_type", "aliases", "verification_status"],
+      "properties": {
+        "entity_id": { "type": "string" },
+        "canonical_name": { "type": "string" },
+        "entity_type": { "enum": ["organization_candidate", "person_candidate", "product_candidate", "location_candidate", "unknown"] },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "verification_status": { "enum": ["candidate", "verified", "merged", "quarantined"] }
+      },
+      "additionalProperties": false
+    },
+    "canonicalEvent": {
+      "type": "object",
+      "required": ["event_id", "event_type", "event_status", "event_time", "disclosed_at", "entities", "action", "object", "metrics", "locations", "claim_refs", "source_refs", "conflicts", "missing_fields", "update_history", "publication_status"],
+      "properties": {
+        "event_id": { "type": "string" },
+        "event_type": { "enum": ["model_release", "product_release", "service_change", "pricing_change", "funding", "acquisition", "partnership", "procurement_contract", "deployment", "organization_people", "policy_regulation", "lawsuit_settlement", "research_result", "hardware_product", "hardware_capacity", "hardware_supply", "hardware_deployment"] },
+        "event_status": { "enum": ["announced", "planned", "in_progress", "completed", "rumored", "disputed", "withdrawn"] },
+        "event_time": { "type": "string" },
+        "disclosed_at": { "type": "string" },
+        "entities": { "type": "array", "items": { "type": "string" } },
+        "action": { "type": "string" },
+        "object": { "type": "string" },
+        "metrics": { "type": "array" },
+        "locations": { "type": "array" },
+        "claim_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "source_refs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "conflicts": { "type": "array" },
+        "missing_fields": { "type": "array", "items": { "type": "string" } },
+        "update_history": { "type": "array" },
+        "publication_status": { "enum": ["verified", "partial", "disputed", "quarantined", "withdrawn"] }
+      },
+      "additionalProperties": false
+    },
+    "tagAssertion": {
+      "type": "object",
+      "required": ["asset_id", "tag_id", "evidence_ref", "source_span", "assignment_method", "confidence", "taxonomy_version", "status"],
+      "properties": {
+        "asset_id": { "type": "string" },
+        "tag_id": { "type": "string" },
+        "evidence_ref": { "type": "string" },
+        "source_span": { "$ref": "#/$defs/sourceSpan" },
+        "assignment_method": { "enum": ["rule", "model", "manual"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "taxonomy_version": { "const": "TAG-V4.0" },
+        "status": { "enum": ["active", "review", "rejected", "deprecated"] }
+      },
+      "additionalProperties": false
+    },
+    "facetAssertion": {
+      "type": "object",
+      "required": ["asset_id", "dimension_id", "value_id", "evidence_ref", "source_span", "assignment_method", "confidence", "taxonomy_version", "status"],
+      "properties": {
+        "asset_id": { "type": "string" },
+        "dimension_id": { "enum": ["product_form", "use_case", "industry", "deployment_model", "target_user"] },
+        "value_id": { "type": "string" },
+        "evidence_ref": { "type": "string" },
+        "source_span": { "$ref": "#/$defs/sourceSpan" },
+        "assignment_method": { "enum": ["rule", "model", "manual"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "taxonomy_version": { "const": "TAG-V4.0" },
+        "status": { "enum": ["active", "review", "rejected", "deprecated"] }
+      },
+      "additionalProperties": false
+    },
+    "compatibilityCard": {
+      "type": "object",
+      "required": ["card_id", "event_id", "card_type", "title", "fact", "event_status", "publication_status", "event_time", "claim_refs", "source_refs", "conflicts", "missing_fields"],
+      "properties": {
+        "card_id": { "type": "string" },
+        "event_id": { "type": "string" },
+        "card_type": { "enum": ["product_service", "funding", "case"] },
+        "title": { "type": "string" },
+        "fact": { "type": "string" },
+        "event_status": { "type": "string" },
+        "publication_status": { "type": "string" },
+        "event_time": { "type": "string" },
+        "claim_refs": { "type": "array", "minItems": 1 },
+        "source_refs": { "type": "array", "minItems": 1 },
+        "conflicts": { "type": "array" },
+        "missing_fields": { "type": "array" }
+      },
+      "additionalProperties": false
+    },
+    "relationship": {
+      "type": "object",
+      "required": ["relationship_id", "event_id", "subject", "predicate", "object", "claim_ref", "source_refs"],
+      "properties": {
+        "relationship_id": { "type": "string" },
+        "event_id": { "type": "string" },
+        "subject": { "type": "string" },
+        "predicate": { "type": "string" },
+        "object": { "type": "string" },
+        "claim_ref": { "type": "string" },
+        "source_refs": { "type": "array", "minItems": 1 }
+      },
+      "additionalProperties": false
+    },
+    "fdeRecord": {
+      "type": "object",
+      "required": ["fde_id", "event_id", "customer", "vendor", "industry", "use_case", "deployment_stage", "reported_need", "reported_delivery_components", "reported_outcomes", "undisclosed_fields", "claim_refs", "source_refs"],
+      "properties": {
+        "fde_id": { "type": "string" },
+        "event_id": { "type": "string" },
+        "customer": { "type": "string" },
+        "vendor": { "type": "string" },
+        "industry": { "type": "string" },
+        "use_case": { "type": "string" },
+        "workflow_before": { "type": "string" },
+        "workflow_after": { "type": "string" },
+        "deployment_stage": { "type": "string" },
+        "delivery_model": { "type": "string" },
+        "team_composition": { "type": "string" },
+        "systems_integrated": { "type": "array" },
+        "data_requirements": { "type": "array" },
+        "governance_controls": { "type": "array" },
+        "timeline": { "type": "string" },
+        "reported_metrics": { "type": "array" },
+        "metric_attribution": { "type": "string" },
+        "reported_need": { "type": "string" },
+        "reported_delivery_components": { "type": "array" },
+        "reported_outcomes": { "type": "array" },
+        "undisclosed_fields": { "type": "array" },
+        "claim_refs": { "type": "array", "minItems": 1 },
+        "source_refs": { "type": "array", "minItems": 1 }
+      },
+      "additionalProperties": false
+    },
+    "hardwareRecord": {
+      "type": "object",
+      "required": ["hardware_record_id", "event_id", "hardware_event_type", "component_type", "compute_layer", "manufacturing_stage", "process_node", "capacity", "capacity_unit", "supplier", "customer", "deployment_site", "region", "contract_value", "shipment_date", "claim_refs", "source_refs"],
+      "properties": {
+        "hardware_record_id": { "type": "string" },
+        "event_id": { "type": "string" },
+        "hardware_event_type": { "type": "string" },
+        "component_type": { "type": "string" },
+        "compute_layer": { "type": "string" },
+        "manufacturing_stage": { "type": "string" },
+        "process_node": { "type": "string" },
+        "capacity": { "type": ["number", "null"] },
+        "capacity_unit": { "type": "string" },
+        "supplier": { "type": "string" },
+        "customer": { "type": "string" },
+        "deployment_site": { "type": "string" },
+        "region": { "type": "string" },
+        "contract_value": { "type": "string" },
+        "shipment_date": { "type": "string" },
+        "claim_refs": { "type": "array", "minItems": 1 },
+        "source_refs": { "type": "array", "minItems": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

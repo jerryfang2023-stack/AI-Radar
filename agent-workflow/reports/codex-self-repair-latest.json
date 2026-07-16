@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "status": "no_action",
+  "date": "2026-07-16",
+  "generated_at": "2026-07-16T01:50:13.726Z",
+  "invoke_mode": "on",
+  "repair_mode": "safe",
+  "github_mode": "auto",
+  "scheduled_task_mode": "auto",
+  "self_check_report": "agent-workflow/reports/2026-07-16-daily-self-check.json",
+  "prompt": "agent-workflow/reports/2026-07-16-codex-self-repair-prompt.md",
+  "tasks": [],
+  "self_check_command": {
+    "label": "daily self-check",
+    "command": "C:\\Program Files\\nodejs\\node.exe agent-workflow/tools/run-daily-self-check.mjs --date=2026-07-16 --repair=safe --github=auto --scheduled-task=auto",
+    "ok": true,
+    "status": 0,
+    "error": "",
+    "stdout": "{\n  \"ok\": true,\n  \"status\": \"waiting\",\n  \"report\": \"agent-workflow/reports/2026-07-16-daily-self-check.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-16-daily-self-check.md\",\n  \"repair_attempts\": 0,\n  \"codex_repair_tasks\": 0\n}",
+    "stderr": "",
+    "started_at": "2026-07-16T01:50:02.252Z",
+    "finished_at": "2026-07-16T01:50:13.724Z"
+  },
+  "codex_command": "codex exec --sandbox danger-full-access --ask-for-approval never --output-last-message agent-workflow/reports/2026-07-16-codex-self-repair-last-message.md --cd . -",
+  "codex_last_message": "agent-workflow/reports/2026-07-16-codex-self-repair-last-message.md",
+  "codex_invocation": null,
+  "block_reason": ""
+}

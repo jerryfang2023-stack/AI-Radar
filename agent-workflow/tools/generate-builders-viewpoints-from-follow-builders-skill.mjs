@@ -21,6 +21,7 @@ const followBuildersSkillScript =
 const contentRoot = path.join(root, "01-SiteV2", "content");
 const pointsDir = path.join(contentRoot, "07-points");
 const outputFile = path.join(pointsDir, `${date}-builders-viewpoints.md`);
+const v4ProjectionScript = path.join(root, "01-SiteV2", "site", "scripts", "build-first-line-viewpoints-v4-data.mjs");
 
 const ensure = (dir) => fs.mkdirSync(dir, { recursive: true });
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
@@ -149,6 +150,10 @@ async function main() {
   });
 
   fs.writeFileSync(outputFile, `${lines.join("\n")}\n`, "utf8");
+  await execFileAsync(process.execPath, [v4ProjectionScript], {
+    cwd: root,
+    maxBuffer: 8 * 1024 * 1024,
+  });
   console.log(`generated: ${rel(outputFile)} (${items.length} items)`);
 }
 

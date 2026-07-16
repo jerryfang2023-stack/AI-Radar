@@ -1,0 +1,50 @@
+{
+  "from_version": "TAG-V3.0",
+  "to_version": "TAG-V4.0",
+  "migration_policy": "Rebuild assertions from accepted Claims. Never copy unsupported legacy labels.",
+  "tag_id_mappings": {
+    "agentic_execution": "agentic_execution",
+    "tool_use": "tool_use",
+    "multimodal": "multimodal",
+    "open_weights": "open_weights",
+    "on_device": "on_device",
+    "human_in_loop": "human_in_loop",
+    "retrieval_augmented_generation": "retrieval_augmented_generation"
+  },
+  "structured_migrations": [
+    {
+      "legacy_concept": "product or service form",
+      "target": "facet_assertions.product_form",
+      "rule": "Re-extract from accepted Claim spans; do not convert event_type directly."
+    },
+    {
+      "legacy_concept": "scenario or workflow",
+      "target": "facet_assertions.use_case",
+      "rule": "Require explicit user task or workflow evidence."
+    },
+    {
+      "legacy_concept": "industry",
+      "target": "facet_assertions.industry",
+      "rule": "Require explicit adopter or event-industry evidence."
+    },
+    {
+      "legacy_concept": "deployment",
+      "target": "facet_assertions.deployment_model",
+      "rule": "Require explicit runtime or delivery-location evidence."
+    },
+    {
+      "legacy_concept": "customer type",
+      "target": "facet_assertions.target_user",
+      "rule": "Require explicit user or buyer evidence."
+    }
+  ],
+  "forbidden_migrations": [
+    "source labels",
+    "company names",
+    "geographies",
+    "event types",
+    "importance or opportunity labels",
+    "trend states",
+    "eligibility or quality-gate states"
+  ]
+}

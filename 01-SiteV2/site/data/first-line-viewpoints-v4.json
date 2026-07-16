@@ -1,0 +1,4314 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-16T17:27:36.329Z",
+    "latestDate": "2026-07-16",
+    "sourcePolicy": "Morning RSS/X data owns the Chinese translation and public-page gate. Afternoon follow-builders Skill intake is independently preserved, deduplicated by original URL, and cannot bypass the Chinese, AI-relevance, tag, or source gates.",
+    "lanes": {
+      "morning": {
+        "id": "morning-rss",
+        "dataFile": "01-SiteV2/site/data/follow-builders-daily.json",
+        "generatedAt": "2026-07-16T16:32:31.161Z",
+        "collected": 49,
+        "published": 30,
+        "builders": 17
+      },
+      "afternoon": {
+        "id": "afternoon-skill",
+        "dataFile": "01-SiteV2/content/07-points/2026-07-16-builders-viewpoints.md",
+        "generatedAt": "2026-07-16T08:11:21.324Z",
+        "date": "2026-07-16",
+        "declaredCount": 42,
+        "intakeCount": 42,
+        "overlapCount": 33,
+        "intakeOnlyCount": 9
+      }
+    }
+  },
+  "stats": {
+    "builders": 17,
+    "remarks": 30,
+    "podcasts": 3,
+    "morningIntake": 49,
+    "morningPublished": 30,
+    "afternoonIntake": 42,
+    "dualCovered": 33,
+    "intakeOnly": 9
+  },
+  "builders": [
+    {
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "count": 4
+    },
+    {
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
+      "count": 3
+    },
+    {
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "count": 3
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "ceo box - your business lives in content. unleash it with AI",
+      "count": 2
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "count": 2
+    },
+    {
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "role": "VP, Google GoogleLabs GeminiApp GoogleAIStudio",
+      "count": 2
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Sr Director, AI at Meta; Prev: Google - Gemini, Veo, Nano Banana.",
+      "count": 2
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai.   prev YC W20, southpkcommons, medialab",
+      "count": 2
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
+      "count": 2
+    },
+    {
+      "name": "Ben's Bites AI Newsletter",
+      "handle": "bensbites.com",
+      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
+      "count": 1
+    },
+    {
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Claude Code anthropicai",
+      "count": 1
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+      "count": 1
+    },
+    {
+      "name": "Interconnects (Nathan Lambert)",
+      "handle": "interconnects.ai",
+      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
+      "count": 1
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "count": 1
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "count": 1
+    },
+    {
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "achieve ambition with intentionality, intensity, integrity & insanity.",
+      "count": 1
+    },
+    {
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "count": 1
+    }
+  ],
+  "remarks": [
+    {
+      "id": "https://www.tigera.io/blog/nvidia-openshell-secures-the-agent-who-governs-the-fleet/",
+      "source": "blog",
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "text": "NVIDIA OpenShell Secures the Agent. Who Governs the Fleet?",
+      "content": "In short: At GTC 2026, NVIDIA released OpenShell, an open source runtime that sandboxes autonomous AI agents with kernel-level policy: what files they can touch, what processes they can spawn, where their traffic can go.... The post NVIDIA OpenShell Secures the Agent. Who Governs the Fleet? appeared",
+      "contentTranslation": "大多数尝试控制AIAgent的工作在模型层（对齐、系统提示）或应用层（护栏库、输出过滤器）。两者都有一个缺陷：被保护的东西也是正在做的事情... NVIDIA OpenShell后保护Agent。谁统治舰队？出现fi",
+      "contentTranslationStatus": "translated",
+      "translation": "NVIDIA OpenShell保护Agent。谁来统治舰队？",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "Wed, 15 Jul 2026 14:41:56 +0000",
+      "date": "2026-07-15",
+      "url": "https://www.tigera.io/blog/nvidia-openshell-secures-the-agent-who-governs-the-fleet/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-07-15",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "DeepSeek IPO plans 📈, Kalshi compute markets ⚡,  Bonsai phone model 📱",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "DeepSeek IPO计划📈、Kalshi计算市场⚡、盆景手机型号 📱",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "Wed, 15 Jul 2026 00:00:00 GMT",
+      "date": "2026-07-15",
+      "url": "https://tldr.tech/ai/2026-07-15",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://www.bensbites.com/p/how-to-use-gpt-56",
+      "source": "blog",
+      "name": "Ben's Bites AI Newsletter",
+      "handle": "bensbites.com",
+      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
+      "text": "How to use GPT-5.6",
+      "content": "new desktop app and hosted sites in ChatGPT",
+      "contentTranslation": "新的桌面应用程序和ChatGPT中的托管网站",
+      "contentTranslationStatus": "translated",
+      "translation": "如何使用GPT-5.6",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Tue, 14 Jul 2026 13:01:24 GMT",
+      "date": "2026-07-14",
+      "url": "https://www.bensbites.com/p/how-to-use-gpt-56",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-07-14",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "xAI uploads codebases 👨‍💻, Prime Intellect verifiers 🧠, Sakana smart bricks 🧱",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "xAI上传代码库👨‍💻、Prime Intellect验证器🧠、Sakana智能积木 🧱",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Tue, 14 Jul 2026 00:00:00 GMT",
+      "date": "2026-07-14",
+      "url": "https://tldr.tech/ai/2026-07-14",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://www.interconnects.ai/p/6-months-to-live-for-open-models",
+      "source": "blog",
+      "name": "Interconnects (Nathan Lambert)",
+      "handle": "interconnects.ai",
+      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
+      "text": "6 months to live for open models",
+      "content": "The most serious test to date of open source AI&#8217;s viability is happening right now.",
+      "contentTranslation": "迄今为止，开源AI的可行性最严峻的考验正在发生。",
+      "contentTranslationStatus": "translated",
+      "translation": "为开放式模特而活6个月",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Sun, 12 Jul 2026 16:47:42 GMT",
+      "date": "2026-07-13",
+      "url": "https://www.interconnects.ai/p/6-months-to-live-for-open-models",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-07-13",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Claude Code browser 🌍, Cursor general agent 🤖, Claude Fable extension ⏳",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "Claude Code浏览器🌍， Cursor总Agent🤖， Claude Fable扩展",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "Mon, 13 Jul 2026 00:00:00 GMT",
+      "date": "2026-07-13",
+      "url": "https://tldr.tech/ai/2026-07-13",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077632589498913087",
+      "source": "x",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
+      "text": "We've had no 5h limit in Codex plus and pro for a few days. Do you think it is better or are you finding it difficult to manage the usage included in the weekly limit effectively?\n\nIf we were to make this different, what should it look like in an ideal world?",
+      "translation": "几天来，我们在CODEX PLUS和PRO中没有5小时的限制。您认为有效管理每周限额中包含的使用量是更好还是更困难？如果我们要让它与众不同，在一个理想的世界里，它应该是什么样子？",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-16T05:53:04.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/thsottiaux/status/2077632589498913087",
+      "likes": 3287,
+      "retweets": 59,
+      "replies": 2279,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-08",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077630111499882637",
+      "source": "x",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
+      "text": "On file deletions. We’ve investigated a handful of reports where GPT-5.6 unexpectedly deleted files. \n\nWhat we have  found is that this most commonly occurs when:\n- Full access mode is enabled and codex is run without sandboxing protections, including without auto review being enabled\n- The model attempts  to override the $HOME env var to define a temporary directory.\n- The model makes an honest mistake and mistakenly deletes $HOME instead.\n\nThis is of course not how we want the system to behave, even when a user operates the model in full-access mode without the safeguards of our sandbox or without using auto review which checks for these kinds of high risk actions and rejects them. \n\nWe are taking steps to mitigate this risk including by updating the developer message, guiding more users towards safer permission modes, and adding additional harness safeguards. Even though this happens extremely rarely, we’ll share a detailed post-mortem in the coming days that goes into more details and what we are doing to minimize risks further.",
+      "translation": "关于文件删除。我们调查了一些报告，其中GPT-5.6意外删除了文件。我们发现，在以下情况下最常发生这种情况： -启用了完全访问模式，并且在没有沙盒保护的情况下运行codex ，包括没有启用自动审核-模型尝试覆盖$ HOME env var以定义临时目录。-模特犯了一个诚实的错误，错误地删除了$ HOME。\n这当然不是我们希望系统的行为方式，即使用户在没有沙箱保护的情况下以完全访问模式操作模型，或者没有使用自动审核来检查此类高风险操作并拒绝它们。我们正在采取措施来降低这种风险，包括更新开发人员消息、引导更多用户转向更安全的权限模式以及添加额外的线束保护措施。\n尽管这种情况极少发生，但我们将在未来几天分享详细的验尸报告，详细介绍我们正在采取哪些措施来进一步降低风险。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-16T05:43:13.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/thsottiaux/status/2077630111499882637",
+      "likes": 2225,
+      "retweets": 99,
+      "replies": 208,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-09",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077627035418239230",
+      "source": "x",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
+      "text": "Now that we merged ChatGPT and Codex, what should we merge next? What's the double or nothing move.",
+      "translation": "现在我们合并了ChatGPT和Codex ，接下来我们应该合并什么？双重或无动于衷的动作是什么。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-16T05:31:00.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/thsottiaux/status/2077627035418239230",
+      "likes": 1594,
+      "retweets": 26,
+      "replies": 1144,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-10",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077626565517590618",
+      "source": "x",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+      "text": "Skill files are portable and free you from frontier model dependency\n\nThis is a good thing https://t.co/oLdkN9rVEO",
+      "translation": "技能文件可移植，使您摆脱前沿模型依赖性这是一件好事",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "2026-07-16T05:29:08.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/garrytan/status/2077626565517590618",
+      "likes": 44,
+      "retweets": 0,
+      "replies": 7,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-26",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077572198655754583",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "ChatGPT Live and Codex are two incredible products that don’t talk to each other.\n\nThis is @OpenAI's biggest missed opportunity imo.\n\nI went on a walk with ChatGPT Live and asked it to pull up my Google Doc. It said it couldn’t.\n\nI then manually triggered the Documents plugin to find my Google Doc, and all of a sudden, ChatGPT Live had the right context.\n\nIt would be amazing to talk to ChatGPT Live and have it be able to use all the plugins, tools, and browser use that Codex has access to. Then I could ask it to reply to emails, schedule meetings, edit docs, ship code, and more all during a live conversation.\n\nI think the first step is to make ChatGPT Live aware of all the plugins that it’s already connected to.\n\nWhy build such a great voice assistant but have it not be able to do anything?",
+      "translation": "ChatGPT Live和Codex是两款令人难以置信的产品，它们不会相互交流。这是@ OpenAI最大的错失机会。我和ChatGPT Live一起散步，并要求它拿出我的Google文档。它说它不能。然后我手动触发了Documents插件来查找我的Google Doc ，突然之间， ChatGPT Live有了正确的上下文。\n与ChatGPT Live交谈并使其能够使用Codex可以访问的所有插件、工具和浏览器使用，这将是一件很棒的事情。然后，我可以要求它在实时对话中回复电子邮件、安排会议、编辑文档、发货代码等。我认为第一步是让ChatGPT Live了解它已经连接的所有插件。为什么要构建如此出色的语音助手，但它却无能为力？",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-07-16T01:53:06.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/petergyang/status/2077572198655754583",
+      "likes": 283,
+      "retweets": 9,
+      "replies": 38,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-13",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077559189015335019",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "Vercel Sandbox:\n◾ Growing DAUs at 100% m/o/m\n◾ 3.5M+ sandboxes created per day\n◾ Best-in-class Active CPU pricing model\n◾ Powering @notion, @airtable, @meta, @zapier, @coderabbitai, @interaction, @conductor_build, @blackboxai… 🐐 farm \n\nMy DMs are open for migration help or if missing anything with: https://t.co/U9bNGNLdMZ",
+      "translation": "Vercel Sandbox ：以100 ％ m/o/m/m的速度◾ ◾增长DAU每天创建350多万个沙盒◾同类最佳的主动CPU定价模型◾为@ concept、@ airtable、@ meta、@ zapier、@ coderabbitai、@ interaction、@ conductor_build、@ blackboxai… 🐐 farm提供支持我的DM可以提供迁移帮助，或者如果缺少以下内容：",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-16T01:01:24.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/rauchg/status/2077559189015335019",
+      "likes": 218,
+      "retweets": 17,
+      "replies": 27,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-20",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077544756390088777",
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "text": "“If I put up a PR for an iOS codebase I don't know and a code reviewer rejects it because it doesn't use the right framework, or if a designer builds a new feature and it gets rejected because it doesn't follow the right architectural patterns, these are failures of automation.” https://t.co/3dIgj0Hzs5",
+      "translation": "“如果我为iOS代码库发布公关，我不知道，代码审查员会因为它没有使用正确的框架而拒绝它，或者如果设计师构建了一个新功能，但因为它没有遵循正确的架构模式而被拒绝，这些都是自动化的失败。”",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-07-16T00:04:03.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/steipete/status/2077544756390088777",
+      "likes": 572,
+      "retweets": 15,
+      "replies": 27,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-33",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077539537992229076",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai.   prev YC W20, southpkcommons, medialab",
+      "text": "ideal prompting technique is:\n- thin prompts\n- thick artifacts + context\n- thin skills",
+      "translation": "理想的提示技巧是： -瘦提示-厚工件+上下文-瘦技能",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T23:43:19.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/trq212/status/2077539537992229076",
+      "likes": 2754,
+      "retweets": 120,
+      "replies": 166,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-17",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077526010753581156",
+      "source": "x",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "ceo box - your business lives in content. unleash it with AI",
+      "text": "Hosted a dinner last night with a group of IT leaders of large enterprises around agent adoption in the enterprise. Some quick notes:\n\n* Change management remains one of the biggest topics for driving workflow transformation. Still most processes need to be upgraded to modern operating models to work with agents, which is a mix of technology, data, and human process change. Lots of emphasis on getting data (structured and unstructured) into a setup that can work with agents properly.\n\n* IT teams are finding increasing success embedding full engineers into the business functions (essentially internal FDE) that go and implement agents into the internal workflows. There’s so much technical work to be done to make agents successful, that they can accelerate months or quarters of failed experiments by having someone technical in the workflow early.\n\n* Consensus that the tech function is becoming more important than ever. It’s clear that the business could only expect automation to affect a minority of the business before (e.g. ERP) but now it can impact all of knowledge work. This means IT is becoming a more central role to the workflows across the company.\n\n* Workflows are cross functional, and getting agents to work cross functionally is a complicated data modeling and permissions issue. Single users don’t have access to this. Which means you need to have agentic systems take on their own roles and have their own privileges, which is non-trivial given agents can’t keep things secure on their own.\n\n* Huge variance in budgets between coding work and the rest of knowledge work. Some companies had a $1,000 a month budget for developers, and others had much higher amounts (like $5,000) that were merely triggers to notify the team vs. block them. Far smaller budgets for non-coding work at the moment.\n\n* More companies are building their own multimodel systems for routing workloads by task to frontier and lower cost models. Lots of energy around open weights models, but still more in experimentation instead of at scale usage (some companies can’t due to perceived Chinese issue). \n\n* Clear sense that all enterprise software must be headless in the future. Relief that they don’t need to train employees on hundreds of different apps. However, clear frustration with the traditional vendors that don’t play extremely nice (technically or cost wise) with agents in a headless fashion. Huge warning for existing software vendors. \n\n* Mythos or mythos level-models are finding more and more sophsiticated security risks. The chaining together of vulnerabilities is what’s novel right now, and companies are coming up with long backlogs of what they need to go patch quickly.\n\nEven more discussed, but just a few of the hottest topics.",
+      "translation": "昨晚与一群大型企业的IT领导围绕企业的Agent采用举办了一场晚宴。简要说明： *变革管理仍然是推动工作流转型的最大主题之一。尽管如此，大多数流程仍需要升级到现代运营模式才能与Agent合作，这是技术、数据和人工流程变革的混合。\n非常重视将数据（结构化和非结构化）放入可以与客服代表正常合作的设置中。* IT团队越来越成功地将完整的工程师嵌入到业务功能（基本上是内部FDE ）中，并将Agent实施到内部工作流中。\n要让客服代表取得成功，需要做很多技术工作，因此他们可以尽早让技术人员参与工作流，从而加速数月或数季的失败实验。*一致认为技术功能比以往任何时候都更加重要。很明显，企业以前只能期望自动化影响少数业务（例如ERP ） ，但现在它可以影响所有知识工作。\n这意味着IT正在成为整个公司工作流中更重要的角色。*工作流是跨职能的，让Agent跨职能工作是一个复杂的数据建模和权限问题。单个用户无权访问此内容。这意味着您需要让Agent系统承担自己的角色并拥有自己的特权，这是非常重要的，因为Agent无法独自保护事物的安全。\n*编码工作和其他知识工作之间的预算差异巨大。一些公司每月为开发人员提供1,000 $的预算，而另一些公司的预算则高得多（如5,000 $ ） ，这只是通知团队而不是阻止他们的触发因素。目前用于非编码工作的预算要少得多。*越来越多的公司正在构建自己的多模型系统，用于将工作负载按任务路由到前沿和更低成本的模型。\n围绕开放式权重模型的大量精力，但更多的是在实验中而不是大规模使用（一些公司由于感知中国问题而无法使用）。*清楚地意识到，未来所有企业软件都必须是无头的。他们不需要在数百个不同的应用程序上培训员工。然而，对传统供应商明显感到沮丧，他们不以无头的方式与Agent商打得非常好（技术上或成本上）。\n对现有软件供应商的巨大警告。*神话或神话级别的模型发现越来越多的复杂安全风险。漏洞的链接是目前的新鲜事物，公司正在积压大量需要快速修补的内容。讨论得更多，但只是几个最热门的话题。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-15T22:49:34.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/levie/status/2077526010753581156",
+      "likes": 488,
+      "retweets": 72,
+      "replies": 44,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-23",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077490092290253259",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai.   prev YC W20, southpkcommons, medialab",
+      "text": "software engineering is the profession of automation https://t.co/5OQXE5VBRH",
+      "translation": "软件工程是自动化的专业，",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-07-15T20:26:50.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/trq212/status/2077490092290253259",
+      "likes": 1619,
+      "retweets": 75,
+      "replies": 47,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-18",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077475285205958771",
+      "source": "x",
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "achieve ambition with intentionality, intensity, integrity & insanity.",
+      "text": "someone just told me about this take* on CUA\n\nthis is one of those gell mann moments for me lol. i've been watching computer use since World of Bits (Shi, fan, karpathy, hernandez & liang 2017). we were the first technical pod to interview @jluan about Adept's work three years ago, we were there in the @AnthropicAI building when they first launched Computer Use 2 years ago, I fanboyed over Claude Cowork in our @felixrieseberg pod 3 months ago, and we ran our first full computer use track at @aidotengineer  ft. @DhruvBatra_ @proceduralia @francedot 3 weeks ago. \n\nGPT 5.6 + Superapp is even better at CUA than everything i just mentioned. excited for our @AriX podcast to discuss the @skybysoftware story and Codex progress.\n\nif you actually use these things as intensely as we do, CUA is progressing so, so incredibly fast. i have asked my nontechnical team to CUA as much as possible, all their knowledge work with signing up for random payment and invoicing portals and speaker and sponsor and attendee and vendor and union data requests. if you found yourself nodding along to this take below, you are so not up to date that you don't know what you don't know, and underestimating capabilities is quite a dangerous category error if you are doing any ai decisionmaking.\n\n*i admire dwarkesh alot; only criticizing one single take, not the message nor the overall enterprise, screenshot only to share",
+      "translation": "有人刚刚告诉我关于CUA的拍摄*这对我来说是盖尔曼的时刻之一，哈哈。自《比特世界》（ SHI ， FAN ， KARPATY ， HERNANDEZ ＆ LIANG 2017 ）以来，我一直在观看电脑的使用。\n三年前，我们是第一个采访@ jluan关于Adept工作的技术舱，两年前，我们在@ AnthropicAI大楼里首次推出计算机使用， 3个月前，我在我们的@ felixrieseberg舱里为Claude Cowork粉丝，我们在@ aidotengineer ft运行了我们的第一个完整的计算机使用轨道。3周前@ DhruvBatra_@ procedureia @ franced。GPT 5.6 + Superapp在CUA比我刚才提到的更好。\n很高兴我们的@ AriX播客讨论@ skybysoftware的故事和Codex的进展。如果你真的像我们一样强烈地使用这些东西， CUA的进展是如此之快，如此令人难以置信。我已经要求我的非技术团队尽可能多地CUA ，他们所有的知识都与注册随机付款和发票门户网站以及演讲者和赞助商、与会者、供应商和工会数据请求有关。\n如果您发现自己在下面的拍摄中点头，那么您并不是最新的，以至于您不知道自己不知道什么，如果您正在做任何AI决策，低估能力是一个相当危险的类别错误。*我非常钦佩dwarkesh ；只批评一次拍摄，而不是信息或整体企业，截图只是为了分享",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-15T19:28:00.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/swyx/status/2077475285205958771",
+      "likes": 77,
+      "retweets": 7,
+      "replies": 24,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-03",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077471148699439152",
+      "source": "x",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "ceo box - your business lives in content. unleash it with AI",
+      "text": "Fantastic to see more open weights innovation happening right now, especially coming from a US Lab. \n\nThe future of AI is going to be a mix of frontier intelligence that you can use as an orchestrator combined with either lower cost or tuned models for your workhorse tasks. https://t.co/pvQ6HgRkO1 https://t.co/zvY9XIgSPE",
+      "translation": "很高兴看到更多的开放式配重创新正在发生，尤其是来自美国实验室的创新。AI的未来将是前沿智能的组合，您可以将其用作编排器，并结合低成本或优化的模型来完成您的工作任务。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T19:11:34.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/levie/status/2077471148699439152",
+      "likes": 223,
+      "retweets": 20,
+      "replies": 9,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-24",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077471111240204457",
+      "source": "x",
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "role": "VP, Google GoogleLabs GeminiApp GoogleAIStudio",
+      "text": "Gemini Spark is headed to more Ultra subscribers around the world* plus 4 new features:\n\n1) Spark can open and edit Google Docs, acting on feedback from last week\n\n2) It can read comments in Google Sheets & Slides, so critical info isn't missed\n\n3) It's >50% faster, you can feel it\n\n4) It can parallel process across multiple sources, so tasks complete faster e2e\n\nPro members, stay tuned for an access update soon :)\n\n*Full list of countries and changelog: https://t.co/oIjY9qQBoz",
+      "translation": "Gemini Spark将吸引更多全球Ultra订阅者*以及4项新功能： 1) Spark可以根据上周的反馈打开和编辑Google文档2)它可以阅读Google表格和幻灯片中的评论，因此不会错过关键信息3)速度快于50% ，您可以感受到4)它可以跨多个来源并行处理，因此任务可以更快地完成e2e Pro会员，敬请期待访问更新:) *国家/地区和更改日志的完整列表：",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T19:11:25.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/joshwoodward/status/2077471111240204457",
+      "likes": 494,
+      "retweets": 35,
+      "replies": 49,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-04",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077460395279692197",
+      "source": "x",
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Claude Code anthropicai",
+      "text": "Something I have been thinking about: in the past, the best engineers I knew spent a lot of time automating their work in various ways. Better vim/emacs automations, writing lint rules to catch repeat code issues, building up a suite of e2e tests so they don't need to smoke test the app manually. These kinds of things were the highest leverage activities an engineer could do, because it multiplied their own output, which in turn meant they could build more things.\n\nI think many of these automations have become even more important now. This is true for a number of reasons.\n\nFirst, infra and DevX automation speeds you up. And if you are running an army of agents, each of those agents will be sped up also. More automation == more output per unit of time.\n\nSecond, moving things to code improves efficiency. Your agent could fix an issue every time it sees that issue happen, but that uses tokens and might miss cases. If Claude instead writes a lint rule, CI step, or routine, that class of issue can be fully automated forever. This is really what people are talking about when they talk about loops -- it's about automating entire types of busywork rather than solving them one off. This isn't a new idea at all. Engineers have been doing this for a long time!\n\nThird and most importantly, automation makes it possible for others to contribute to the codebase more easily. Increasingly what I am seeing is engineers are contributing to codebases on day one because Claude can navigate the codebase for them, and that non-engineers are able to contribute to a codebase as effectively as engineers can. What gets in the way of both of these is domain knowledge that lives in peoples' heads rather than in automation -- the stuff you used to have to learn when ramping up. What has changed thanks to agents is the domain knowledge that can be encoded as infrastructure is no longer limited to what is expressible in lint rules and types and tests; it can now capture nearly all domain knowledge, encoded as code comments and skills and CLAUDE.md rules and memories. If I put up a PR for an iOS codebase I don't know and a code reviewer rejects it because it doesn't use the right framework, or if a designer builds a new feature and it gets rejected because it doesn't follow the right architectural patterns, these are failures of automation.\n\nEvery team should be writing the CLAUDE.md's, REVIEW.md's, skills, and docs that enable agents to productively work in their codebase with zero additional context from the prompter. This sounds crazy, and at the same time is a natural extension of the stuff engineers have always done: automate, and encode domain knowledge as infrastructure. As the model gets smarter and as the harness matures, this task becomes easier. In the meantime, it is on every team to look for ways to convert their domain knowledge to infra so that Claude can write code better, so that code review catches issues automatically, and so the next person working on your codebase can contribute more easily.",
+      "translation": "我一直在思考的事情：在过去，我认识的最好的工程师花了很多时间以各种方式自动化他们的工作。更好的vim/emacs自动化，编写lint规则以捕捉重复代码问题，构建一套e2e测试，以便他们不需要手动对应用程序进行冒烟测试。这类事情是工程师可以做的最高杠杆活动，因为它增加了他们自己的产出，这反过来又意味着他们可以制造更多的东西。\n我认为这些自动化中的许多现在变得更加重要。出于多种原因，情况确实如此。首先， INFRA和DevX自动化可以加快您的速度。如果你正在运营一支特工大军，这些特工中的每一个都将被加速。更多的自动化= =每单位时间更多的输出。其次，将事物转移到代码可以提高效率。您的客服代表每次看到问题发生时都可以解决问题，但这会使用令牌并可能错过个案。\n如果Claude改为编写lint规则、CI步骤或例程，则该类问题可以完全自动化。这正是人们在谈论循环时所谈论的--它是关于自动化整个类型的繁琐工作，而不是一次性解决它们。这根本不是一个新主意。工程师们已经这样做了很长时间！第三，也是最重要的，自动化使得其他人可以更容易地为代码库做出贡献。\n我越来越多地看到，工程师在第一天就开始为代码库做出贡献，因为Claude可以为他们导航代码库，而非工程师能够像工程师一样有效地为代码库做出贡献。阻碍这两者的是存在于人们头脑中的领域知识，而不是自动化--这是你过去在加速发展时必须学习的东西。\n由于Agent的变化，可以编码为基础设施的领域知识不再局限于lint规则、类型和测试中可表达的内容；它现在可以捕获几乎所有领域知识，编码为代码注释和技能以及CLAUDE.md规则和内存。\n如果我为iOS代码库发布PR ，我不知道，并且代码审查员拒绝它，因为它没有使用正确的框架，或者如果设计师构建了一个新功能，并且因为它没有遵循正确的架构模式而被拒绝，这些都是自动化的失败。每个团队都应该编写CLAUDE.md、REVIEW.md、技能和文档，使Agent能够在没有来自提示符的额外上下文的情况下在其代码库中高效地工作。\n这听起来很疯狂，同时也是工程师们一直在做的事情的自然延伸：将领域知识自动化并编码为基础设施。随着模型变得更加智能，随着线束的成熟，这项任务变得更加容易。\n与此同时，每个团队都应该寻找将他们的领域知识转换为infra的方法，以便Claude能够更好地编写代码，从而使代码审查能够自动捕捉问题，从而使下一个处理代码库的人员可以更轻松地做出贡献。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-15T18:28:50.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/bcherny/status/2077460395279692197",
+      "likes": 7226,
+      "retweets": 623,
+      "replies": 278,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-07",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077426190386946539",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "Some really cool usecases of Web Analytics API:\n\n▪️ Ask your agent to correlate visitors, custom events (“purchase”, “checkout”), with the evolution of your deployments and performance \n\n▪️ Build custom frontends, and plot this data alongside e.g.: Stripe’s and Resend’s https://t.co/srTMkm6uhg",
+      "translation": "Web Analytics API的一些非常酷的用例：▪️要求您的Agent将访问者、自定义事件（ “购买”、“结账” ）与您的部署和性能的演变相关联▪️构建自定义前端，并将这些数据与Stripe和重新发送的数据一起绘制",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-15T16:12:55.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/rauchg/status/2077426190386946539",
+      "likes": 199,
+      "retweets": 8,
+      "replies": 27,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-22",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077417579837309040",
+      "source": "x",
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
+      "text": "If you want agents to actually work inside a company, you have to design the company so they can read it\n\nShopify did this with an agent that had no private chat function at all, only public channels. The side effect was peer learning https://t.co/L1jub0HgYw",
+      "translation": "如果您希望Agent实际在公司内部工作，您必须设计公司，以便他们可以阅读Shopify与根本没有私人聊天功能，只有公共频道的Agent一起做到这一点。副作用是同伴学习",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-15T15:38:42.000Z",
+      "date": "2026-07-15",
+      "url": "https://x.com/zarazhangrui/status/2077417579837309040",
+      "likes": 134,
+      "retweets": 4,
+      "replies": 10,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-29",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077414312180932668",
+      "source": "x",
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Sr Director, AI at Meta; Prev: Google - Gemini, Veo, Nano Banana.",
+      "text": "btw, i have used ai to refine ideas and from time to time, some of the standard AI-isms leak into my writing. \n\nhave since moved to consciously using ai mainly during the  brainstorming phase and keeping final writing human.",
+      "translation": "顺便说一句，我用AI来完善想法，不时地，一些标准的AI主义渗透到我的写作中。从那时起，我已经开始有意识地使用AI，主要是在头脑风暴阶段，并保持最终的写作人性化。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T15:25:43.000Z",
+      "date": "2026-07-15",
+      "url": "https://x.com/realmadhuguru/status/2077414312180932668",
+      "likes": 2,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-15",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077413491586253025",
+      "source": "x",
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Sr Director, AI at Meta; Prev: Google - Gemini, Veo, Nano Banana.",
+      "text": "We need a term for that feeling when you’re reading something and realize it’s ai written. it’s this primal feeling though the phenomenon itself is new. first the brain recoils, followed by a combination of disgust and mental nausea. I offer:\n- semantic nausea\n- uncanny prose valley\n- synthetic shudder",
+      "translation": "当你阅读某些东西并意识到它是AI写的时，我们需要一个术语来描述这种感觉。这是一种原始的感觉，尽管这种现象本身是新的。首先，大脑会退缩，然后是厌恶和精神恶心的结合。我提供： -语义恶心-不可思议的散文谷-合成不寒而栗",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T15:22:27.000Z",
+      "date": "2026-07-15",
+      "url": "https://x.com/realmadhuguru/status/2077413491586253025",
+      "likes": 18,
+      "retweets": 0,
+      "replies": 9,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-16",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077411104775406045",
+      "source": "x",
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "role": "VP, Google GoogleLabs GeminiApp GoogleAIStudio",
+      "text": "We just released our first-ever Gemini Southeast Asia Report (below), 3 insights:\n\n1/ Active users more than doubled in the last year\n2/ 70% of prompts are submitted in native languages\n3/ 40% of prompts only use voice, image, or video\n\nGemini's local language + multimodal capabilities + mobile apps are driving growth, and we have more coming soon for the region!\n\n🇮🇩🇲🇾🇵🇭🇸🇬🇹🇭🇻🇳",
+      "translation": "我们刚刚发布了有史以来第一份双子星东南亚报告（下图） ， 3个洞见： 1/去年活跃用户增加了一倍以上2/70%的提示以母语提交3/40%的提示仅使用语音、图像或视频双子星的本地语言+多模式功能+移动应用程序正在推动增长，我们即将在该地区推出更多！ 🇮🇩🇲🇾🇵🇭🇸🇬🇹🇭🇻🇳",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T15:12:58.000Z",
+      "date": "2026-07-15",
+      "url": "https://x.com/joshwoodward/status/2077411104775406045",
+      "likes": 472,
+      "retweets": 49,
+      "replies": 40,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-06",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "How I tricked Claude into leaking your deepest, darkest secrets",
+      "content": "How I tricked Claude into leaking your deepest, darkest secrets I've been impressed by the way the Claude web_fetch tool is de",
+      "contentTranslation": "我如何欺骗克劳德泄露你最深刻，最黑暗的秘密我对克劳德web_fetch工具的方式印象深刻",
+      "contentTranslationStatus": "translated",
+      "translation": "我如何欺骗克劳德泄露你最深刻、最黑暗的秘密",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T14:21:54+00:00",
+      "date": "2026-07-15",
+      "url": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077388091044635010",
+      "source": "x",
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
+      "text": "Because I never learned programming the traditional way, using coding agents has been purely an act of creativity and self-expression\n\nGitHub is basically my Substack https://t.co/eZ6OA62XLZ",
+      "translation": "因为我从来没有学过传统的编程方式，所以使用编码Agent一直纯粹是一种创造性的行为，而自我表达GitHub基本上就是我的Substack",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-15T13:41:31.000Z",
+      "date": "2026-07-15",
+      "url": "https://x.com/zarazhangrui/status/2077388091044635010",
+      "likes": 239,
+      "retweets": 7,
+      "replies": 13,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-30",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "datasette code-frequency chart on GitHub",
+      "content": "datasette code-frequency chart on GitHub Out of curiosity I decided to see if I could find a useful illustration of the impact of coding agents and Opus 4.5 class models on my own output. The best I've fo",
+      "contentTranslation": "datasette code-frequency chart on GitHub出于好奇，我决定看看能否找到一个有用的例子，说明编码Agent和Opus 4.5类模型对我自己的输出的影响。The best I 've fo",
+      "contentTranslationStatus": "translated",
+      "translation": "gitHub上的数据集代码频率图",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-07-13T21:45:27+00:00",
+      "date": "2026-07-14",
+      "url": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Fable gets another bump",
+      "content": "One of the consequences of GPT-5.6 Sol being clearly a Fable/Mythos class model is that Anthropic have, once again, bumped the date that Fable stops being available in their Claude Max plans: We're extending Claud",
+      "contentTranslation": "GPT-5.6 Sol显然是一个寓言/神话类模型的后果之一是， Anthropic再次推迟了寓言在他们的Claude Max计划中不再可用的日期：我们正在扩展Claud",
+      "contentTranslationStatus": "translated",
+      "translation": "寓言获得另一个颠簸",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-12T21:20:07+00:00",
+      "date": "2026-07-13",
+      "url": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "The new GPT-5.6 family: Luna, Terra, Sol",
+      "content": "OpenAI's latest flagship model hit general availability this morning , and comes in three sizes: Luna, Terra, and Sol (from smallest to largest). The new models are priced per 1M input/output tokens as Luna $1/$6, Terra $2.50/$15, Sol $5/$30.",
+      "contentTranslation": "OpenAI的最新旗舰机型今天早上正式上市，有三种尺寸： Luna、Terra和Sol （从最小到最大）。新型号每100万个输入/输出代币的价格为LUNA $ 1/$ 6 ， TERRA $ 2.50/$ 15 ， SOL $ 5/$ 30。",
+      "contentTranslationStatus": "translated",
+      "translation": "全新GPT-5.6系列： Luna、Terra、Sol",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-09T19:46:38+00:00",
+      "date": "2026-07-10",
+      "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    }
+  ],
+  "podcasts": [
+    {
+      "source": "podcast",
+      "name": "Training Data (Sequoia)",
+      "title": "Anthropic's Katelyn Lesse & Angela Jiang: Building an Ecosystem, not a Walled Garden",
+      "url": "https://feeds.megaphone.fm/trainingdata",
+      "publishedAt": "Tue, 14 Jul 2026 09:00:00 -0000",
+      "excerpt": "Katelyn Lesse and Angela Jiang lead the team building Anthropic's developer platform - the layer that both outside builders and Anthropic's own products run on top of. Angela frames the platform as a three-layer stack: knowledge, execution, and coordination. She argues the real leverage is what’s at the top: \"strategies,\" or meta-harnesses that give each token a different job, from advising to executing to reflecting to memory. On the question of open ecosystem vs. walled garden, they say they aren't precious about owning the stack. Katelyn points to Anthropic's self-hosted sandboxes with partners like Modal, Vercel, and Cloudflare. Whether the work runs on Anthropic's infrastructure or someone else's, what really matters to them is that the architecture is sound. The deeper bet is standards: they hand skills and MCP to the whole industry, build connectors on the MCP spec, and help agents (Claude and non-C…"
+    },
+    {
+      "source": "podcast",
+      "name": "Unsupervised Learning (Redpoint)",
+      "title": "Ep 90: AI Pioneer Jürgen Schmidhuber on the State of AI Today",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-90-ai-pioneer-jurgen-schmidhuber-on-the-state-of-ai-today-yero2ugh",
+      "publishedAt": "Thu, 9 Jul 2026 13:00:00 +0000",
+      "excerpt": "Dr. Jürgen Schmidhuber, a renowned scientist and AI researcher widely regarded as one of the pioneers in the field, originated key ideas behind today's transformers, LSTMs, and recursive self-improvement through his lab's work. He argues that true AGI remains bottlenecked by physical hardware, that today's AI data center investments are headed for a correction as open-source keeps pace with closed labs, and that the path to general intelligence runs through artificial curiosity and self-generated experimentation rather than internet data. He closes by reconsidering mainstream AI safety arguments and offers a sweeping vision of self-replicating robot societies eventually colonizing the solar system. (0:00) Intro (1:24) How Close Is Superhuman AI? (2:27) Why ChatGPT Didn't Surprise Him (3:21) The Path to Recursive Self-Improvement (9:01) Will AI Takeoff…"
+    },
+    {
+      "source": "podcast",
+      "name": "Unsupervised Learning (Redpoint)",
+      "title": "Ep 91: Top AI Analyst Unpacks Today&apos;s AI Hype Cycle",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-91-top-ai-analyst-unpacks-todays-ai-hype-cycle-oNqJgjlL",
+      "publishedAt": "Thu, 16 Jul 2026 12:48:06 +0000",
+      "excerpt": "Benedict Evans, one of tech's most widely-read analysts, joins Jacob Effron. The conversation centers on Benedict's core thesis that comparing AI's scale to past platform shifts (the internet, mobile, PCs) is analytically useless, and that the more productive move is studying how those previous technologies actually evolved economically to reason about where AI's value will accrue. He argues the one genuine difference this time is that we don't know AI's physical or scientific limits, unlike past shifts where the boundaries were at least knowable, and that this uncertainty is what fuels both AGI hype and doomerism without resolving anything. Benedict unpacks why capabilities remain jagged, meaning usage is jagged too, why coding became the first real enterprise use case thanks to scalable verification, and why most consumer and enterprise use cases still have to be invented by entrepreneurs rat…"
+    }
+  ],
+  "morningIntake": [
+    {
+      "id": "https://www.tigera.io/blog/nvidia-openshell-secures-the-agent-who-governs-the-fleet/",
+      "source": "blog",
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "text": "NVIDIA OpenShell Secures the Agent. Who Governs the Fleet?",
+      "content": "In short: At GTC 2026, NVIDIA released OpenShell, an open source runtime that sandboxes autonomous AI agents with kernel-level policy: what files they can touch, what processes they can spawn, where their traffic can go.... The post NVIDIA OpenShell Secures the Agent. Who Governs the Fleet? appeared",
+      "contentTranslation": "大多数尝试控制AIAgent的工作在模型层（对齐、系统提示）或应用层（护栏库、输出过滤器）。两者都有一个缺陷：被保护的东西也是正在做的事情... NVIDIA OpenShell后保护Agent。谁统治舰队？出现fi",
+      "contentTranslationStatus": "translated",
+      "translation": "NVIDIA OpenShell保护Agent。谁来统治舰队？",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "Wed, 15 Jul 2026 14:41:56 +0000",
+      "date": "2026-07-15",
+      "url": "https://www.tigera.io/blog/nvidia-openshell-secures-the-agent-who-governs-the-fleet/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-07-15",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "DeepSeek IPO plans 📈, Kalshi compute markets ⚡,  Bonsai phone model 📱",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "DeepSeek IPO计划📈、Kalshi计算市场⚡、盆景手机型号 📱",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "Wed, 15 Jul 2026 00:00:00 GMT",
+      "date": "2026-07-15",
+      "url": "https://tldr.tech/ai/2026-07-15",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://www.bensbites.com/p/how-to-use-gpt-56",
+      "source": "blog",
+      "name": "Ben's Bites AI Newsletter",
+      "handle": "bensbites.com",
+      "role": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
+      "text": "How to use GPT-5.6",
+      "content": "new desktop app and hosted sites in ChatGPT",
+      "contentTranslation": "新的桌面应用程序和ChatGPT中的托管网站",
+      "contentTranslationStatus": "translated",
+      "translation": "如何使用GPT-5.6",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Tue, 14 Jul 2026 13:01:24 GMT",
+      "date": "2026-07-14",
+      "url": "https://www.bensbites.com/p/how-to-use-gpt-56",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-07-14",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "xAI uploads codebases 👨‍💻, Prime Intellect verifiers 🧠, Sakana smart bricks 🧱",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "xAI上传代码库👨‍💻、Prime Intellect验证器🧠、Sakana智能积木 🧱",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Tue, 14 Jul 2026 00:00:00 GMT",
+      "date": "2026-07-14",
+      "url": "https://tldr.tech/ai/2026-07-14",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://www.interconnects.ai/p/6-months-to-live-for-open-models",
+      "source": "blog",
+      "name": "Interconnects (Nathan Lambert)",
+      "handle": "interconnects.ai",
+      "role": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
+      "text": "6 months to live for open models",
+      "content": "The most serious test to date of open source AI&#8217;s viability is happening right now.",
+      "contentTranslation": "迄今为止，开源AI的可行性最严峻的考验正在发生。",
+      "contentTranslationStatus": "translated",
+      "translation": "为开放式模特而活6个月",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Sun, 12 Jul 2026 16:47:42 GMT",
+      "date": "2026-07-13",
+      "url": "https://www.interconnects.ai/p/6-months-to-live-for-open-models",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-07-13",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Claude Code browser 🌍, Cursor general agent 🤖, Claude Fable extension ⏳",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "Claude Code浏览器🌍， Cursor总Agent🤖， Claude Fable扩展",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "Mon, 13 Jul 2026 00:00:00 GMT",
+      "date": "2026-07-13",
+      "url": "https://tldr.tech/ai/2026-07-13",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://www.tigera.io/blog/tiered-network-policy-scaling-kubernetes-security/",
+      "source": "blog",
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "text": "Tiered Network Policy: Scaling Kubernetes Security",
+      "content": "As Kubernetes clusters scale from a few development sandboxes to massive, multi-tenant production environments, platform teams often find themselves facing a configuration management crisis. A small number of microservices suddenly demand hundreds of individual Kubernetes... The post Tiered Network",
+      "contentTranslation": "随着Kubernetes集群从几个开发沙箱扩展到大规模的多租户生产环境，平台团队经常发现自己面临配置管理危机。少数微服务突然需要数百个单独的Kubernetes... POST分层网络",
+      "contentTranslationStatus": "translated",
+      "translation": "分层网络策略：扩展Kubernetes安全性",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Fri, 10 Jul 2026 16:12:22 +0000",
+      "date": "2026-07-11",
+      "url": "https://www.tigera.io/blog/tiered-network-policy-scaling-kubernetes-security/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077639502286250453",
+      "source": "x",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+      "text": "We should just bring back the em dash\n\nReclaim it for our own https://t.co/CTWPmnBfgK",
+      "translation": "我们应该带回em dash回收我们自己的",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-16T06:20:32.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/garrytan/status/2077639502286250453",
+      "likes": 61,
+      "retweets": 1,
+      "replies": 21,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-25",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077632589498913087",
+      "source": "x",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
+      "text": "We've had no 5h limit in Codex plus and pro for a few days. Do you think it is better or are you finding it difficult to manage the usage included in the weekly limit effectively?\n\nIf we were to make this different, what should it look like in an ideal world?",
+      "translation": "几天来，我们在CODEX PLUS和PRO中没有5小时的限制。您认为有效管理每周限额中包含的使用量是更好还是更困难？如果我们要让它与众不同，在一个理想的世界里，它应该是什么样子？",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-16T05:53:04.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/thsottiaux/status/2077632589498913087",
+      "likes": 3287,
+      "retweets": 59,
+      "replies": 2279,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-08",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077630111499882637",
+      "source": "x",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
+      "text": "On file deletions. We’ve investigated a handful of reports where GPT-5.6 unexpectedly deleted files. \n\nWhat we have  found is that this most commonly occurs when:\n- Full access mode is enabled and codex is run without sandboxing protections, including without auto review being enabled\n- The model attempts  to override the $HOME env var to define a temporary directory.\n- The model makes an honest mistake and mistakenly deletes $HOME instead.\n\nThis is of course not how we want the system to behave, even when a user operates the model in full-access mode without the safeguards of our sandbox or without using auto review which checks for these kinds of high risk actions and rejects them. \n\nWe are taking steps to mitigate this risk including by updating the developer message, guiding more users towards safer permission modes, and adding additional harness safeguards. Even though this happens extremely rarely, we’ll share a detailed post-mortem in the coming days that goes into more details and what we are doing to minimize risks further.",
+      "translation": "关于文件删除。我们调查了一些报告，其中GPT-5.6意外删除了文件。我们发现，在以下情况下最常发生这种情况： -启用了完全访问模式，并且在没有沙盒保护的情况下运行codex ，包括没有启用自动审核-模型尝试覆盖$ HOME env var以定义临时目录。-模特犯了一个诚实的错误，错误地删除了$ HOME。\n这当然不是我们希望系统的行为方式，即使用户在没有沙箱保护的情况下以完全访问模式操作模型，或者没有使用自动审核来检查此类高风险操作并拒绝它们。我们正在采取措施来降低这种风险，包括更新开发人员消息、引导更多用户转向更安全的权限模式以及添加额外的线束保护措施。\n尽管这种情况极少发生，但我们将在未来几天分享详细的验尸报告，详细介绍我们正在采取哪些措施来进一步降低风险。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-16T05:43:13.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/thsottiaux/status/2077630111499882637",
+      "likes": 2225,
+      "retweets": 99,
+      "replies": 208,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-09",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077627035418239230",
+      "source": "x",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "role": "Codex & ChatGPT OpenAI",
+      "text": "Now that we merged ChatGPT and Codex, what should we merge next? What's the double or nothing move.",
+      "translation": "现在我们合并了ChatGPT和Codex ，接下来我们应该合并什么？双重或无动于衷的动作是什么。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-16T05:31:00.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/thsottiaux/status/2077627035418239230",
+      "likes": 1594,
+      "retweets": 26,
+      "replies": 1144,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-10",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077626565517590618",
+      "source": "x",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+      "text": "Skill files are portable and free you from frontier model dependency\n\nThis is a good thing https://t.co/oLdkN9rVEO",
+      "translation": "技能文件可移植，使您摆脱前沿模型依赖性这是一件好事",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 基础设施",
+      "columnTags": [
+        {
+          "id": "opinion-model-infra",
+          "name": "模型基础设施观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-infra",
+          "name": "AI 基础设施",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察模型运行、算力、存储、sandbox 或开发平台基础设施的变化；后续事实判断需回到原始公告或技术文档。",
+      "createdAt": "2026-07-16T05:29:08.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/garrytan/status/2077626565517590618",
+      "likes": 44,
+      "retweets": 0,
+      "replies": 7,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-26",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077625223717736781",
+      "source": "x",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "role": "President & CEO ycombinator —Founder garryslist—Creator of GStack & GBrain—designer/engineer who helps founders—SF Dem accelerating the boom loop",
+      "text": "The path to healing SF and every West Coast city is this: real compassion is focusing on recovery and treatment and making it possible for people to really thrive instead of mandating pro-drug environments that make sobriety impossible https://t.co/8dgiWAaAmJ",
+      "translation": "治愈旧金山和每个西海岸城市的道路是这样的：真正的同情心是专注于康复和治疗，使人们能够真正茁壮成长，而不是强制要求戒毒环境使人无法清醒",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-16T05:23:48.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/garrytan/status/2077625223717736781",
+      "likes": 58,
+      "retweets": 5,
+      "replies": 10,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-27",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077614430658191825",
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "text": "Mostly true, 5.6 is relentless. https://t.co/aBiolT4vMF",
+      "translation": "大多数情况下， 5.6是无情的。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-16T04:40:55.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/steipete/status/2077614430658191825",
+      "likes": 201,
+      "retweets": 2,
+      "replies": 25,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-32",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077612850525426102",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "Need one of those foot pedals for pianos except when you step on it it turns on the laptop mic",
+      "translation": "钢琴需要其中一个脚踏板，除非当您踩上它时，它会打开笔记本电脑麦克风",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-16T04:34:38.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/petergyang/status/2077612850525426102",
+      "likes": 15,
+      "retweets": 0,
+      "replies": 7,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-11",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077572198655754583",
+      "source": "x",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "role": "Practical AI tutorials and interviews for busy people",
+      "text": "ChatGPT Live and Codex are two incredible products that don’t talk to each other.\n\nThis is @OpenAI's biggest missed opportunity imo.\n\nI went on a walk with ChatGPT Live and asked it to pull up my Google Doc. It said it couldn’t.\n\nI then manually triggered the Documents plugin to find my Google Doc, and all of a sudden, ChatGPT Live had the right context.\n\nIt would be amazing to talk to ChatGPT Live and have it be able to use all the plugins, tools, and browser use that Codex has access to. Then I could ask it to reply to emails, schedule meetings, edit docs, ship code, and more all during a live conversation.\n\nI think the first step is to make ChatGPT Live aware of all the plugins that it’s already connected to.\n\nWhy build such a great voice assistant but have it not be able to do anything?",
+      "translation": "ChatGPT Live和Codex是两款令人难以置信的产品，它们不会相互交流。这是@ OpenAI最大的错失机会。我和ChatGPT Live一起散步，并要求它拿出我的Google文档。它说它不能。然后我手动触发了Documents插件来查找我的Google Doc ，突然之间， ChatGPT Live有了正确的上下文。\n与ChatGPT Live交谈并使其能够使用Codex可以访问的所有插件、工具和浏览器使用，这将是一件很棒的事情。然后，我可以要求它在实时对话中回复电子邮件、安排会议、编辑文档、发货代码等。我认为第一步是让ChatGPT Live了解它已经连接的所有插件。为什么要构建如此出色的语音助手，但它却无能为力？",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-07-16T01:53:06.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/petergyang/status/2077572198655754583",
+      "likes": 283,
+      "retweets": 9,
+      "replies": 38,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-13",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077563850824790200",
+      "source": "x",
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "achieve ambition with intentionality, intensity, integrity & insanity.",
+      "text": "you can just tweet things into existence https://t.co/4TnqEDoQsg",
+      "translation": "你可以直接在推特上发布内容",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-16T01:19:55.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/swyx/status/2077563850824790200",
+      "likes": 140,
+      "retweets": 2,
+      "replies": 12,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-01",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077562792429891696",
+      "source": "x",
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "achieve ambition with intentionality, intensity, integrity & insanity.",
+      "text": "@jluan follow this track playlist\n\nhttps://t.co/MzPfXCh1jb",
+      "translation": "@ jluan关注此曲目播放列表",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-16T01:15:43.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/swyx/status/2077562792429891696",
+      "likes": 3,
+      "retweets": 0,
+      "replies": 2,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-02",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077559703161213130",
+      "source": "x",
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "role": "head of product linear",
+      "text": "Excuse me, I thought you had to grind until your eyes bled and you forgot how to smile https://t.co/EgBoSczxAK",
+      "translation": "对不起，我以为你必须磨到眼睛流血，忘记如何微笑",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-16T01:03:27.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/thenanyu/status/2077559703161213130",
+      "likes": 16,
+      "retweets": 0,
+      "replies": 1,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-14",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077559189015335019",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "Vercel Sandbox:\n◾ Growing DAUs at 100% m/o/m\n◾ 3.5M+ sandboxes created per day\n◾ Best-in-class Active CPU pricing model\n◾ Powering @notion, @airtable, @meta, @zapier, @coderabbitai, @interaction, @conductor_build, @blackboxai… 🐐 farm \n\nMy DMs are open for migration help or if missing anything with: https://t.co/U9bNGNLdMZ",
+      "translation": "Vercel Sandbox ：以100 ％ m/o/m/m的速度◾ ◾增长DAU每天创建350多万个沙盒◾同类最佳的主动CPU定价模型◾为@ concept、@ airtable、@ meta、@ zapier、@ coderabbitai、@ interaction、@ conductor_build、@ blackboxai… 🐐 farm提供支持我的DM可以提供迁移帮助，或者如果缺少以下内容：",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-16T01:01:24.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/rauchg/status/2077559189015335019",
+      "likes": 218,
+      "retweets": 17,
+      "replies": 27,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-20",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077544756390088777",
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "text": "“If I put up a PR for an iOS codebase I don't know and a code reviewer rejects it because it doesn't use the right framework, or if a designer builds a new feature and it gets rejected because it doesn't follow the right architectural patterns, these are failures of automation.” https://t.co/3dIgj0Hzs5",
+      "translation": "“如果我为iOS代码库发布公关，我不知道，代码审查员会因为它没有使用正确的框架而拒绝它，或者如果设计师构建了一个新功能，但因为它没有遵循正确的架构模式而被拒绝，这些都是自动化的失败。”",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-07-16T00:04:03.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/steipete/status/2077544756390088777",
+      "likes": 572,
+      "retweets": 15,
+      "replies": 27,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-33",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077539537992229076",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai.   prev YC W20, southpkcommons, medialab",
+      "text": "ideal prompting technique is:\n- thin prompts\n- thick artifacts + context\n- thin skills",
+      "translation": "理想的提示技巧是： -瘦提示-厚工件+上下文-瘦技能",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T23:43:19.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/trq212/status/2077539537992229076",
+      "likes": 2754,
+      "retweets": 120,
+      "replies": 166,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-17",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077526010753581156",
+      "source": "x",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "ceo box - your business lives in content. unleash it with AI",
+      "text": "Hosted a dinner last night with a group of IT leaders of large enterprises around agent adoption in the enterprise. Some quick notes:\n\n* Change management remains one of the biggest topics for driving workflow transformation. Still most processes need to be upgraded to modern operating models to work with agents, which is a mix of technology, data, and human process change. Lots of emphasis on getting data (structured and unstructured) into a setup that can work with agents properly.\n\n* IT teams are finding increasing success embedding full engineers into the business functions (essentially internal FDE) that go and implement agents into the internal workflows. There’s so much technical work to be done to make agents successful, that they can accelerate months or quarters of failed experiments by having someone technical in the workflow early.\n\n* Consensus that the tech function is becoming more important than ever. It’s clear that the business could only expect automation to affect a minority of the business before (e.g. ERP) but now it can impact all of knowledge work. This means IT is becoming a more central role to the workflows across the company.\n\n* Workflows are cross functional, and getting agents to work cross functionally is a complicated data modeling and permissions issue. Single users don’t have access to this. Which means you need to have agentic systems take on their own roles and have their own privileges, which is non-trivial given agents can’t keep things secure on their own.\n\n* Huge variance in budgets between coding work and the rest of knowledge work. Some companies had a $1,000 a month budget for developers, and others had much higher amounts (like $5,000) that were merely triggers to notify the team vs. block them. Far smaller budgets for non-coding work at the moment.\n\n* More companies are building their own multimodel systems for routing workloads by task to frontier and lower cost models. Lots of energy around open weights models, but still more in experimentation instead of at scale usage (some companies can’t due to perceived Chinese issue). \n\n* Clear sense that all enterprise software must be headless in the future. Relief that they don’t need to train employees on hundreds of different apps. However, clear frustration with the traditional vendors that don’t play extremely nice (technically or cost wise) with agents in a headless fashion. Huge warning for existing software vendors. \n\n* Mythos or mythos level-models are finding more and more sophsiticated security risks. The chaining together of vulnerabilities is what’s novel right now, and companies are coming up with long backlogs of what they need to go patch quickly.\n\nEven more discussed, but just a few of the hottest topics.",
+      "translation": "昨晚与一群大型企业的IT领导围绕企业的Agent采用举办了一场晚宴。简要说明： *变革管理仍然是推动工作流转型的最大主题之一。尽管如此，大多数流程仍需要升级到现代运营模式才能与Agent合作，这是技术、数据和人工流程变革的混合。\n非常重视将数据（结构化和非结构化）放入可以与客服代表正常合作的设置中。* IT团队越来越成功地将完整的工程师嵌入到业务功能（基本上是内部FDE ）中，并将Agent实施到内部工作流中。\n要让客服代表取得成功，需要做很多技术工作，因此他们可以尽早让技术人员参与工作流，从而加速数月或数季的失败实验。*一致认为技术功能比以往任何时候都更加重要。很明显，企业以前只能期望自动化影响少数业务（例如ERP ） ，但现在它可以影响所有知识工作。\n这意味着IT正在成为整个公司工作流中更重要的角色。*工作流是跨职能的，让Agent跨职能工作是一个复杂的数据建模和权限问题。单个用户无权访问此内容。这意味着您需要让Agent系统承担自己的角色并拥有自己的特权，这是非常重要的，因为Agent无法独自保护事物的安全。\n*编码工作和其他知识工作之间的预算差异巨大。一些公司每月为开发人员提供1,000 $的预算，而另一些公司的预算则高得多（如5,000 $ ） ，这只是通知团队而不是阻止他们的触发因素。目前用于非编码工作的预算要少得多。*越来越多的公司正在构建自己的多模型系统，用于将工作负载按任务路由到前沿和更低成本的模型。\n围绕开放式权重模型的大量精力，但更多的是在实验中而不是大规模使用（一些公司由于感知中国问题而无法使用）。*清楚地意识到，未来所有企业软件都必须是无头的。他们不需要在数百个不同的应用程序上培训员工。然而，对传统供应商明显感到沮丧，他们不以无头的方式与Agent商打得非常好（技术上或成本上）。\n对现有软件供应商的巨大警告。*神话或神话级别的模型发现越来越多的复杂安全风险。漏洞的链接是目前的新鲜事物，公司正在积压大量需要快速修补的内容。讨论得更多，但只是几个最热门的话题。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-15T22:49:34.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/levie/status/2077526010753581156",
+      "likes": 488,
+      "retweets": 72,
+      "replies": 44,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-23",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077499992705470802",
+      "source": "x",
+      "name": "Matt Turck",
+      "handle": "mattturck",
+      "role": "VC at FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape.",
+      "text": "Argentina’s World Cup recipe: \n\n1) trail 10-15 minutes before the end\n2) bring on Lautaro Martinez\n3) win\n4) repeat",
+      "translation": "阿根廷世界杯食谱： 1 ）比赛结束前10-15分钟2 ）带来Lautaro Martinez 3 ）获胜4 ）重复",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T21:06:11.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/mattturck/status/2077499992705470802",
+      "likes": 111,
+      "retweets": 5,
+      "replies": 14,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-28",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077499486130389189",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "Easy money (British pounds)",
+      "translation": "轻松赚钱（英镑）",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T21:04:10.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/rauchg/status/2077499486130389189",
+      "likes": 535,
+      "retweets": 20,
+      "replies": 55,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-21",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077490092290253259",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai.   prev YC W20, southpkcommons, medialab",
+      "text": "software engineering is the profession of automation https://t.co/5OQXE5VBRH",
+      "translation": "软件工程是自动化的专业，",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-07-15T20:26:50.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/trq212/status/2077490092290253259",
+      "likes": 1619,
+      "retweets": 75,
+      "replies": 47,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-18",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077475285205958771",
+      "source": "x",
+      "name": "Swyx",
+      "handle": "swyx",
+      "role": "achieve ambition with intentionality, intensity, integrity & insanity.",
+      "text": "someone just told me about this take* on CUA\n\nthis is one of those gell mann moments for me lol. i've been watching computer use since World of Bits (Shi, fan, karpathy, hernandez & liang 2017). we were the first technical pod to interview @jluan about Adept's work three years ago, we were there in the @AnthropicAI building when they first launched Computer Use 2 years ago, I fanboyed over Claude Cowork in our @felixrieseberg pod 3 months ago, and we ran our first full computer use track at @aidotengineer  ft. @DhruvBatra_ @proceduralia @francedot 3 weeks ago. \n\nGPT 5.6 + Superapp is even better at CUA than everything i just mentioned. excited for our @AriX podcast to discuss the @skybysoftware story and Codex progress.\n\nif you actually use these things as intensely as we do, CUA is progressing so, so incredibly fast. i have asked my nontechnical team to CUA as much as possible, all their knowledge work with signing up for random payment and invoicing portals and speaker and sponsor and attendee and vendor and union data requests. if you found yourself nodding along to this take below, you are so not up to date that you don't know what you don't know, and underestimating capabilities is quite a dangerous category error if you are doing any ai decisionmaking.\n\n*i admire dwarkesh alot; only criticizing one single take, not the message nor the overall enterprise, screenshot only to share",
+      "translation": "有人刚刚告诉我关于CUA的拍摄*这对我来说是盖尔曼的时刻之一，哈哈。自《比特世界》（ SHI ， FAN ， KARPATY ， HERNANDEZ ＆ LIANG 2017 ）以来，我一直在观看电脑的使用。\n三年前，我们是第一个采访@ jluan关于Adept工作的技术舱，两年前，我们在@ AnthropicAI大楼里首次推出计算机使用， 3个月前，我在我们的@ felixrieseberg舱里为Claude Cowork粉丝，我们在@ aidotengineer ft运行了我们的第一个完整的计算机使用轨道。3周前@ DhruvBatra_@ procedureia @ franced。GPT 5.6 + Superapp在CUA比我刚才提到的更好。\n很高兴我们的@ AriX播客讨论@ skybysoftware的故事和Codex的进展。如果你真的像我们一样强烈地使用这些东西， CUA的进展是如此之快，如此令人难以置信。我已经要求我的非技术团队尽可能多地CUA ，他们所有的知识都与注册随机付款和发票门户网站以及演讲者和赞助商、与会者、供应商和工会数据请求有关。\n如果您发现自己在下面的拍摄中点头，那么您并不是最新的，以至于您不知道自己不知道什么，如果您正在做任何AI决策，低估能力是一个相当危险的类别错误。*我非常钦佩dwarkesh ；只批评一次拍摄，而不是信息或整体企业，截图只是为了分享",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-15T19:28:00.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/swyx/status/2077475285205958771",
+      "likes": 77,
+      "retweets": 7,
+      "replies": 24,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-03",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077471148699439152",
+      "source": "x",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "role": "ceo box - your business lives in content. unleash it with AI",
+      "text": "Fantastic to see more open weights innovation happening right now, especially coming from a US Lab. \n\nThe future of AI is going to be a mix of frontier intelligence that you can use as an orchestrator combined with either lower cost or tuned models for your workhorse tasks. https://t.co/pvQ6HgRkO1 https://t.co/zvY9XIgSPE",
+      "translation": "很高兴看到更多的开放式配重创新正在发生，尤其是来自美国实验室的创新。AI的未来将是前沿智能的组合，您可以将其用作编排器，并结合低成本或优化的模型来完成您的工作任务。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T19:11:34.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/levie/status/2077471148699439152",
+      "likes": 223,
+      "retweets": 20,
+      "replies": 9,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-24",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077471111240204457",
+      "source": "x",
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "role": "VP, Google GoogleLabs GeminiApp GoogleAIStudio",
+      "text": "Gemini Spark is headed to more Ultra subscribers around the world* plus 4 new features:\n\n1) Spark can open and edit Google Docs, acting on feedback from last week\n\n2) It can read comments in Google Sheets & Slides, so critical info isn't missed\n\n3) It's >50% faster, you can feel it\n\n4) It can parallel process across multiple sources, so tasks complete faster e2e\n\nPro members, stay tuned for an access update soon :)\n\n*Full list of countries and changelog: https://t.co/oIjY9qQBoz",
+      "translation": "Gemini Spark将吸引更多全球Ultra订阅者*以及4项新功能： 1) Spark可以根据上周的反馈打开和编辑Google文档2)它可以阅读Google表格和幻灯片中的评论，因此不会错过关键信息3)速度快于50% ，您可以感受到4)它可以跨多个来源并行处理，因此任务可以更快地完成e2e Pro会员，敬请期待访问更新:) *国家/地区和更改日志的完整列表：",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T19:11:25.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/joshwoodward/status/2077471111240204457",
+      "likes": 494,
+      "retweets": 35,
+      "replies": 49,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-04",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077460395279692197",
+      "source": "x",
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "role": "Claude Code anthropicai",
+      "text": "Something I have been thinking about: in the past, the best engineers I knew spent a lot of time automating their work in various ways. Better vim/emacs automations, writing lint rules to catch repeat code issues, building up a suite of e2e tests so they don't need to smoke test the app manually. These kinds of things were the highest leverage activities an engineer could do, because it multiplied their own output, which in turn meant they could build more things.\n\nI think many of these automations have become even more important now. This is true for a number of reasons.\n\nFirst, infra and DevX automation speeds you up. And if you are running an army of agents, each of those agents will be sped up also. More automation == more output per unit of time.\n\nSecond, moving things to code improves efficiency. Your agent could fix an issue every time it sees that issue happen, but that uses tokens and might miss cases. If Claude instead writes a lint rule, CI step, or routine, that class of issue can be fully automated forever. This is really what people are talking about when they talk about loops -- it's about automating entire types of busywork rather than solving them one off. This isn't a new idea at all. Engineers have been doing this for a long time!\n\nThird and most importantly, automation makes it possible for others to contribute to the codebase more easily. Increasingly what I am seeing is engineers are contributing to codebases on day one because Claude can navigate the codebase for them, and that non-engineers are able to contribute to a codebase as effectively as engineers can. What gets in the way of both of these is domain knowledge that lives in peoples' heads rather than in automation -- the stuff you used to have to learn when ramping up. What has changed thanks to agents is the domain knowledge that can be encoded as infrastructure is no longer limited to what is expressible in lint rules and types and tests; it can now capture nearly all domain knowledge, encoded as code comments and skills and CLAUDE.md rules and memories. If I put up a PR for an iOS codebase I don't know and a code reviewer rejects it because it doesn't use the right framework, or if a designer builds a new feature and it gets rejected because it doesn't follow the right architectural patterns, these are failures of automation.\n\nEvery team should be writing the CLAUDE.md's, REVIEW.md's, skills, and docs that enable agents to productively work in their codebase with zero additional context from the prompter. This sounds crazy, and at the same time is a natural extension of the stuff engineers have always done: automate, and encode domain knowledge as infrastructure. As the model gets smarter and as the harness matures, this task becomes easier. In the meantime, it is on every team to look for ways to convert their domain knowledge to infra so that Claude can write code better, so that code review catches issues automatically, and so the next person working on your codebase can contribute more easily.",
+      "translation": "我一直在思考的事情：在过去，我认识的最好的工程师花了很多时间以各种方式自动化他们的工作。更好的vim/emacs自动化，编写lint规则以捕捉重复代码问题，构建一套e2e测试，以便他们不需要手动对应用程序进行冒烟测试。这类事情是工程师可以做的最高杠杆活动，因为它增加了他们自己的产出，这反过来又意味着他们可以制造更多的东西。\n我认为这些自动化中的许多现在变得更加重要。出于多种原因，情况确实如此。首先， INFRA和DevX自动化可以加快您的速度。如果你正在运营一支特工大军，这些特工中的每一个都将被加速。更多的自动化= =每单位时间更多的输出。其次，将事物转移到代码可以提高效率。您的客服代表每次看到问题发生时都可以解决问题，但这会使用令牌并可能错过个案。\n如果Claude改为编写lint规则、CI步骤或例程，则该类问题可以完全自动化。这正是人们在谈论循环时所谈论的--它是关于自动化整个类型的繁琐工作，而不是一次性解决它们。这根本不是一个新主意。工程师们已经这样做了很长时间！第三，也是最重要的，自动化使得其他人可以更容易地为代码库做出贡献。\n我越来越多地看到，工程师在第一天就开始为代码库做出贡献，因为Claude可以为他们导航代码库，而非工程师能够像工程师一样有效地为代码库做出贡献。阻碍这两者的是存在于人们头脑中的领域知识，而不是自动化--这是你过去在加速发展时必须学习的东西。\n由于Agent的变化，可以编码为基础设施的领域知识不再局限于lint规则、类型和测试中可表达的内容；它现在可以捕获几乎所有领域知识，编码为代码注释和技能以及CLAUDE.md规则和内存。\n如果我为iOS代码库发布PR ，我不知道，并且代码审查员拒绝它，因为它没有使用正确的框架，或者如果设计师构建了一个新功能，并且因为它没有遵循正确的架构模式而被拒绝，这些都是自动化的失败。每个团队都应该编写CLAUDE.md、REVIEW.md、技能和文档，使Agent能够在没有来自提示符的额外上下文的情况下在其代码库中高效地工作。\n这听起来很疯狂，同时也是工程师们一直在做的事情的自然延伸：将领域知识自动化并编码为基础设施。随着模型变得更加智能，随着线束的成熟，这项任务变得更加容易。\n与此同时，每个团队都应该寻找将他们的领域知识转换为infra的方法，以便Claude能够更好地编写代码，从而使代码审查能够自动捕捉问题，从而使下一个处理代码库的人员可以更轻松地做出贡献。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-15T18:28:50.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/bcherny/status/2077460395279692197",
+      "likes": 7226,
+      "retweets": 623,
+      "replies": 278,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-07",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077457485624229943",
+      "source": "x",
+      "name": "Thariq",
+      "handle": "trq212",
+      "role": "Claude Code anthropicai.   prev YC W20, southpkcommons, medialab",
+      "text": "this was such a fun talk with Cat and Simon, hope you get to check it out if you missed it https://t.co/kK8uOVJLSZ",
+      "translation": "与Cat和Simon的谈话非常有趣，如果你错过了，希望你能去看看",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T18:17:16.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/trq212/status/2077457485624229943",
+      "likes": 179,
+      "retweets": 13,
+      "replies": 10,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-19",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077426853929799759",
+      "source": "x",
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "role": "ceo every",
+      "text": "early bird just ended and DAMN people love the builder pack! \n\nsign up: https://t.co/RcY2X9bUCF https://t.co/9rpYkkNf7F https://t.co/vNer8EdQwJ",
+      "translation": "early Bird刚刚结束，该死的人们喜欢Builder Pack ！注册：",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T16:15:33.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/danshipper/status/2077426853929799759",
+      "likes": 62,
+      "retweets": 3,
+      "replies": 8,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-35",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077426190386946539",
+      "source": "x",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "role": "vercel CEO",
+      "text": "Some really cool usecases of Web Analytics API:\n\n▪️ Ask your agent to correlate visitors, custom events (“purchase”, “checkout”), with the evolution of your deployments and performance \n\n▪️ Build custom frontends, and plot this data alongside e.g.: Stripe’s and Resend’s https://t.co/srTMkm6uhg",
+      "translation": "Web Analytics API的一些非常酷的用例：▪️要求您的Agent将访问者、自定义事件（ “购买”、“结账” ）与您的部署和性能的演变相关联▪️构建自定义前端，并将这些数据与Stripe和重新发送的数据一起绘制",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-15T16:12:55.000Z",
+      "date": "2026-07-16",
+      "url": "https://x.com/rauchg/status/2077426190386946539",
+      "likes": 199,
+      "retweets": 8,
+      "replies": 27,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-22",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077417579837309040",
+      "source": "x",
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
+      "text": "If you want agents to actually work inside a company, you have to design the company so they can read it\n\nShopify did this with an agent that had no private chat function at all, only public channels. The side effect was peer learning https://t.co/L1jub0HgYw",
+      "translation": "如果您希望Agent实际在公司内部工作，您必须设计公司，以便他们可以阅读Shopify与根本没有私人聊天功能，只有公共频道的Agent一起做到这一点。副作用是同伴学习",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-15T15:38:42.000Z",
+      "date": "2026-07-15",
+      "url": "https://x.com/zarazhangrui/status/2077417579837309040",
+      "likes": 134,
+      "retweets": 4,
+      "replies": 10,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-29",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077414312180932668",
+      "source": "x",
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Sr Director, AI at Meta; Prev: Google - Gemini, Veo, Nano Banana.",
+      "text": "btw, i have used ai to refine ideas and from time to time, some of the standard AI-isms leak into my writing. \n\nhave since moved to consciously using ai mainly during the  brainstorming phase and keeping final writing human.",
+      "translation": "顺便说一句，我用AI来完善想法，不时地，一些标准的AI主义渗透到我的写作中。从那时起，我已经开始有意识地使用AI，主要是在头脑风暴阶段，并保持最终的写作人性化。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T15:25:43.000Z",
+      "date": "2026-07-15",
+      "url": "https://x.com/realmadhuguru/status/2077414312180932668",
+      "likes": 2,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-15",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077413491586253025",
+      "source": "x",
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "role": "Sr Director, AI at Meta; Prev: Google - Gemini, Veo, Nano Banana.",
+      "text": "We need a term for that feeling when you’re reading something and realize it’s ai written. it’s this primal feeling though the phenomenon itself is new. first the brain recoils, followed by a combination of disgust and mental nausea. I offer:\n- semantic nausea\n- uncanny prose valley\n- synthetic shudder",
+      "translation": "当你阅读某些东西并意识到它是AI写的时，我们需要一个术语来描述这种感觉。这是一种原始的感觉，尽管这种现象本身是新的。首先，大脑会退缩，然后是厌恶和精神恶心的结合。我提供： -语义恶心-不可思议的散文谷-合成不寒而栗",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T15:22:27.000Z",
+      "date": "2026-07-15",
+      "url": "https://x.com/realmadhuguru/status/2077413491586253025",
+      "likes": 18,
+      "retweets": 0,
+      "replies": 9,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-16",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077411104775406045",
+      "source": "x",
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "role": "VP, Google GoogleLabs GeminiApp GoogleAIStudio",
+      "text": "We just released our first-ever Gemini Southeast Asia Report (below), 3 insights:\n\n1/ Active users more than doubled in the last year\n2/ 70% of prompts are submitted in native languages\n3/ 40% of prompts only use voice, image, or video\n\nGemini's local language + multimodal capabilities + mobile apps are driving growth, and we have more coming soon for the region!\n\n🇮🇩🇲🇾🇵🇭🇸🇬🇹🇭🇻🇳",
+      "translation": "我们刚刚发布了有史以来第一份双子星东南亚报告（下图） ， 3个洞见： 1/去年活跃用户增加了一倍以上2/70%的提示以母语提交3/40%的提示仅使用语音、图像或视频双子星的本地语言+多模式功能+移动应用程序正在推动增长，我们即将在该地区推出更多！ 🇮🇩🇲🇾🇵🇭🇸🇬🇹🇭🇻🇳",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T15:12:58.000Z",
+      "date": "2026-07-15",
+      "url": "https://x.com/joshwoodward/status/2077411104775406045",
+      "likes": 472,
+      "retweets": 49,
+      "replies": 40,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-06",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "How I tricked Claude into leaking your deepest, darkest secrets",
+      "content": "How I tricked Claude into leaking your deepest, darkest secrets I've been impressed by the way the Claude web_fetch tool is de",
+      "contentTranslation": "我如何欺骗克劳德泄露你最深刻，最黑暗的秘密我对克劳德web_fetch工具的方式印象深刻",
+      "contentTranslationStatus": "translated",
+      "translation": "我如何欺骗克劳德泄露你最深刻、最黑暗的秘密",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T14:21:54+00:00",
+      "date": "2026-07-15",
+      "url": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077388091044635010",
+      "source": "x",
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "role": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
+      "text": "Because I never learned programming the traditional way, using coding agents has been purely an act of creativity and self-expression\n\nGitHub is basically my Substack https://t.co/eZ6OA62XLZ",
+      "translation": "因为我从来没有学过传统的编程方式，所以使用编码Agent一直纯粹是一种创造性的行为，而自我表达GitHub基本上就是我的Substack",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "columnTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "Agentic AI",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "2026-07-15T13:41:31.000Z",
+      "date": "2026-07-15",
+      "url": "https://x.com/zarazhangrui/status/2077388091044635010",
+      "likes": 239,
+      "retweets": 7,
+      "replies": 13,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-30",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "2077354857929887997",
+      "source": "x",
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "role": "partner fpvventures - investing in seed/A. previous: early hire meter, opendoor, atlassian & others. love shimoleejhaveri + 👦👧",
+      "text": "Forgive me (travel) Lord for I have sinned..\n\nAfter spending 3 hours in the immigration line in Paris, \n\nI will never complain about SFO and US immigration ever again. \n\nAlso, will be taking a hiatus from tech Twitter for a bit to spend some time touching grass ✌️",
+      "translation": "原谅我（旅行）主，因为我犯了罪。在巴黎的移民线上呆了3个小时后，我再也不会抱怨旧金山旧金山国际机场和美国移民了。此外，还将从科技推特中休息一段时间，花一些时间触摸草地 ✌️",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T11:29:28.000Z",
+      "date": "2026-07-15",
+      "url": "https://x.com/nikunj/status/2077354857929887997",
+      "likes": 93,
+      "retweets": 0,
+      "replies": 12,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-31",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "2077303292225548539",
+      "source": "x",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
+      "text": "This is really clever. https://t.co/s8mRrtX6Rz",
+      "translation": "这真的很聪明。",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "social",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-15T08:04:33.000Z",
+      "date": "2026-07-15",
+      "url": "https://x.com/steipete/status/2077303292225548539",
+      "likes": 1534,
+      "retweets": 157,
+      "replies": 56,
+      "laneCoverage": [
+        "morning-rss",
+        "afternoon-skill"
+      ],
+      "afternoonStableId": "BP-20260716-34",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/14/github-changeling/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Quoting GitHub Changelog",
+      "content": "Dependabot now waits until a new release has been available on its registry for at least three days before opening a version update pull request. This cooldown is now the def",
+      "contentTranslation": "Dependabot现在等待，直到其注册表上的新版本可用至少三天，然后再打开版本更新拉取请求。此冷却时间现在是防御",
+      "contentTranslationStatus": "translated",
+      "translation": "引用GitHub更新日志",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-14T22:43:35+00:00",
+      "date": "2026-07-15",
+      "url": "https://simonwillison.net/2026/Jul/14/github-changeling/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "lobste.rs is now running on SQLite",
+      "content": "lobste.rs is now running on SQLite Community site Lobsters has been planning a migration away from MariaDB <a href=\"https://github.com/lobsters/lobsters/issues/539#issu",
+      "contentTranslation": "lobste.rs现在正在SQLite社区网站上运行Lobsters一直在计划从MariaDB迁移< a href = \"",
+      "contentTranslationStatus": "translated",
+      "translation": "lobste.rs现在在SQLite上运行",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-14T19:44:11+00:00",
+      "date": "2026-07-15",
+      "url": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Quoting Armin Ronacher",
+      "content": "The shared language of a software project is not English or Python but it is the common understanding of what its concepts mean, where the boundaries are, which invariants matter, who owns what, and why the system has t",
+      "contentTranslation": "软件项目的共享语言不是英语或Python ，而是对其概念含义的共同理解，边界在哪里，哪些不变量很重要，谁拥有什么，以及为什么系统有",
+      "contentTranslationStatus": "translated",
+      "translation": "引用Armin Ronacher的话",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-14T18:04:23+00:00",
+      "date": "2026-07-15",
+      "url": "https://simonwillison.net/2026/Jul/14/armin-ronacher/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Using uvx in GitHub Actions in a cache-friendly way",
+      "content": "TIL: Using uvx in GitHub Actions in a cache-friendly way I finally found a cache-friendly recipe for using uvx tool-name in GitHub Actions workflows that I like. <p",
+      "contentTranslation": "TIL ：以缓存友好的方式在GitHub Actions中使用uvx我终于找到了一个在GitHub Actions工作流中使用uvx tool-name的缓存友好配方。< p",
+      "contentTranslationStatus": "translated",
+      "translation": "以缓存友好的方式在GitHub Actions中使用uvx",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-14T00:56:20+00:00",
+      "date": "2026-07-14",
+      "url": "https://simonwillison.net/2026/Jul/14/uvx-github-actions-cache/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "datasette code-frequency chart on GitHub",
+      "content": "datasette code-frequency chart on GitHub Out of curiosity I decided to see if I could find a useful illustration of the impact of coding agents and Opus 4.5 class models on my own output. The best I've fo",
+      "contentTranslation": "datasette code-frequency chart on GitHub出于好奇，我决定看看能否找到一个有用的例子，说明编码Agent和Opus 4.5类模型对我自己的输出的影响。The best I 've fo",
+      "contentTranslationStatus": "translated",
+      "translation": "gitHub上的数据集代码频率图",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "AI 编程",
+      "columnTags": [
+        {
+          "id": "opinion-ai-coding",
+          "name": "AI Coding 观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-coding",
+          "name": "AI Coding",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
+      "createdAt": "2026-07-13T21:45:27+00:00",
+      "date": "2026-07-14",
+      "url": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Directly Responsible Individuals (DRI)",
+      "content": "Directly Responsible Individuals (DRI) I went looking for a definition of \"Directly Responsible Individuals\" and the best I found was in the GitLab handbook. Apparently the term",
+      "contentTranslation": "直接责任人员（ DRI ）我去寻找“直接责任人员”的定义，我发现最好的定义是在GitLab手册中。显然这个术语",
+      "contentTranslationStatus": "translated",
+      "translation": "直接责任人（ DRI ）",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-12T23:57:14+00:00",
+      "date": "2026-07-13",
+      "url": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": false,
+      "publicationStatus": "intake_only_non_ai"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Fable gets another bump",
+      "content": "One of the consequences of GPT-5.6 Sol being clearly a Fable/Mythos class model is that Anthropic have, once again, bumped the date that Fable stops being available in their Claude Max plans: We're extending Claud",
+      "contentTranslation": "GPT-5.6 Sol显然是一个寓言/神话类模型的后果之一是， Anthropic再次推迟了寓言在他们的Claude Max计划中不再可用的日期：我们正在扩展Claud",
+      "contentTranslationStatus": "translated",
+      "translation": "寓言获得另一个颠簸",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-12T21:20:07+00:00",
+      "date": "2026-07-13",
+      "url": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "The new GPT-5.6 family: Luna, Terra, Sol",
+      "content": "OpenAI's latest flagship model hit general availability this morning , and comes in three sizes: Luna, Terra, and Sol (from smallest to largest). The new models are priced per 1M input/output tokens as Luna $1/$6, Terra $2.50/$15, Sol $5/$30.",
+      "contentTranslation": "OpenAI的最新旗舰机型今天早上正式上市，有三种尺寸： Luna、Terra和Sol （从最小到最大）。新型号每100万个输入/输出代币的价格为LUNA $ 1/$ 6 ， TERRA $ 2.50/$ 15 ， SOL $ 5/$ 30。",
+      "contentTranslationStatus": "translated",
+      "translation": "全新GPT-5.6系列： Luna、Terra、Sol",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "columnTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-applications",
+          "name": "AI 应用与平台",
+          "group": "track"
+        }
+      ],
+      "sourceType": "blog",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-07-09T19:46:38+00:00",
+      "date": "2026-07-10",
+      "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "morning-rss"
+      ],
+      "afternoonStableId": "",
+      "aiRelevant": true,
+      "publicationStatus": "published"
+    }
+  ],
+  "intake": [
+    {
+      "id": "BP-20260716-01",
+      "name": "Swyx",
+      "handle": "swyx",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.314Z",
+      "url": "https://x.com/swyx/status/2077563850824790200",
+      "text": "you can just tweet things into existence https://t.co/4TnqEDoQsg achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=140; retweets=2; replies=12",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 140,
+      "retweets": 2,
+      "replies": 12,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-02",
+      "name": "Swyx",
+      "handle": "swyx",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.316Z",
+      "url": "https://x.com/swyx/status/2077562792429891696",
+      "text": "@jluan follow this track playlist https://t.co/MzPfXCh1jb achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=3; retweets=0; replies=2",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 3,
+      "retweets": 0,
+      "replies": 2,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-03",
+      "name": "Swyx",
+      "handle": "swyx",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.316Z",
+      "url": "https://x.com/swyx/status/2077475285205958771",
+      "text": "someone just told me about this take* on CUA this is one of those gell mann moments for me lol. i've been watching computer use since World of Bits (Shi, fan, karpathy, hernandez & liang 2017). we were the first technical pod to interview @jluan about Adept's work three years ago, we were there in the @AnthropicAI building when they first launched Computer Use 2 years ago, I fanboyed over Claude Cowork in our @felixrieseberg pod 3 months ago, and we ran our first full computer use track at @aidotengineer ft. @DhruvBatra_ @proceduralia @francedot 3 weeks ago. GPT 5.6 + Superapp is even better at CUA than everything i just mentioned. excited for our @AriX podcast to discuss the @skybysoftware story and Codex progress. if you actually use these things as intensely as we do, CUA is progressing so, so incredibly fast. i have asked my nontechnical team to CUA as much as possible, all their knowledge work with signing up for random payment and invoicing portals and speaker and sponsor and attendee and vendor and union data requests. if you found yourself nodding along to this take below, you are so not up to date that you don't know what you don't know, and underestimating capabilities is quite a dangerous category error if you are doing any ai decisionmaking. *i admire dwarkesh alot; only criticizing one single take, not the message nor the overall enterprise, screenshot only to share achieve ambition with intentionality, intensity, integrity & insanity. affiliations: - @dxtipshq - @cognition - @temporalio - @aidotengineer - @latentspacepod likes=77; retweets=7; replies=24",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 77,
+      "retweets": 7,
+      "replies": 24,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-04",
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.316Z",
+      "url": "https://x.com/joshwoodward/status/2077471111240204457",
+      "text": "Gemini Spark is headed to more Ultra subscribers around the world* plus 4 new features: 1) Spark can open and edit Google Docs, acting on feedback from last week 2) It can read comments in Google Sheets & Slides, so critical info isn't missed 3) It's >50% faster, you can feel it 4) It can parallel process across multiple sources, so tasks complete faster e2e Pro members, stay tuned for an access update soon :) *Full list of countries and changelog: https://t.co/oIjY9qQBoz VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio likes=494; retweets=35; replies=49",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 494,
+      "retweets": 35,
+      "replies": 49,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-05",
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.316Z",
+      "url": "https://x.com/joshwoodward/status/2077411109326221322",
+      "text": "Full report https://t.co/Of02m7NqKY VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio likes=13; retweets=3; replies=0",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 13,
+      "retweets": 3,
+      "replies": 0,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": false,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-06",
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.316Z",
+      "url": "https://x.com/joshwoodward/status/2077411104775406045",
+      "text": "We just released our first-ever Gemini Southeast Asia Report (below), 3 insights: 1/ Active users more than doubled in the last year 2/ 70% of prompts are submitted in native languages 3/ 40% of prompts only use voice, image, or video Gemini's local language + multimodal capabilities + mobile apps are driving growth, and we have more coming soon for the region! ???????????????????????? VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio likes=472; retweets=49; replies=40",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 472,
+      "retweets": 49,
+      "replies": 40,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-07",
+      "name": "Boris Cherny",
+      "handle": "bcherny",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.316Z",
+      "url": "https://x.com/bcherny/status/2077460395279692197",
+      "text": "Something I have been thinking about: in the past, the best engineers I knew spent a lot of time automating their work in various ways. Better vim/emacs automations, writing lint rules to catch repeat code issues, building up a suite of e2e tests so they don't need to smoke test the app manually. These kinds of things were the highest leverage activities an engineer could do, because it multiplied their own output, which in turn meant they could build more things. I think many of these automations have become even more important now. This is true for a number of reasons. First, infra and DevX automation speeds you up. And if you are running an army of agents, each of those agents will be sped up also. More automation == more output per unit of time. Second, moving things to code improves efficiency. Your agent could fix an issue every time it sees that issue happen, but that uses tokens and might miss cases. If Claude instead writes a lint rule, CI step, or routine, that class of issue can be fully automated forever. This is really what people are talking about when they talk about loops -- it's about automating entire types of busywork rather than solving them one off. This isn't a new idea at all. Engineers have been doing this for a long time! Third and most importantly, automation makes it possible for others to contribute to the codebase more easily. Increasingly what I am seeing is engineers are contributing to codebases on day one because Claude can navigate the codebase for them, and that non-engineers are able to contribute to a codebase as effectively as engineers can. What gets in the way of both of these is domain knowledge that lives in peoples' heads rather than in automation -- the stuff you used to have to learn when ramping up. What has changed thanks to agents is the domain knowledge that can be encoded as infrastructure is no longer limited to what is expressible in lint rules and types and tests; it can now capture nearly all domain knowledge, encoded as code comments and skills and CLAUDE.md rules and memories. If I put up a PR for an iOS codebase I don't know and a code reviewer rejects it because it doesn't use the right framework, or if a",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-08",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.316Z",
+      "url": "https://x.com/thsottiaux/status/2077632589498913087",
+      "text": "We've had no 5h limit in Codex plus and pro for a few days. Do you think it is better or are you finding it difficult to manage the usage included in the weekly limit effectively? If we were to make this different, what should it look like in an ideal world? Codex & ChatGPT @OpenAI likes=3287; retweets=59; replies=2279",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 3287,
+      "retweets": 59,
+      "replies": 2279,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-09",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/thsottiaux/status/2077630111499882637",
+      "text": "On file deletions. We’ve investigated a handful of reports where GPT-5.6 unexpectedly deleted files. What we have found is that this most commonly occurs when: - Full access mode is enabled and codex is run without sandboxing protections, including without auto review being enabled - The model attempts to override the $HOME env var to define a temporary directory. - The model makes an honest mistake and mistakenly deletes $HOME instead. This is of course not how we want the system to behave, even when a user operates the model in full-access mode without the safeguards of our sandbox or without using auto review which checks for these kinds of high risk actions and rejects them. We are taking steps to mitigate this risk including by updating the developer message, guiding more users towards safer permission modes, and adding additional harness safeguards. Even though this happens extremely rarely, we’ll share a detailed post-mortem in the coming days that goes into more details and what we are doing to minimize risks further. Codex & ChatGPT @OpenAI likes=2225; retweets=99; replies=208",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 2225,
+      "retweets": 99,
+      "replies": 208,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-10",
+      "name": "Thibault Sottiaux",
+      "handle": "thsottiaux",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/thsottiaux/status/2077627035418239230",
+      "text": "Now that we merged ChatGPT and Codex, what should we merge next? What's the double or nothing move. Codex & ChatGPT @OpenAI likes=1594; retweets=26; replies=1144",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 1594,
+      "retweets": 26,
+      "replies": 1144,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-11",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/petergyang/status/2077612850525426102",
+      "text": "Need one of those foot pedals for pianos except when you step on it it turns on the laptop mic Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6 likes=15; retweets=0; replies=7",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 15,
+      "retweets": 0,
+      "replies": 7,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-12",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/petergyang/status/2077610395272138913",
+      "text": "Life's good https://t.co/DqZssEUaed https://t.co/LqU79Ygmr2 Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6 likes=104; retweets=1; replies=9",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 104,
+      "retweets": 1,
+      "replies": 9,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": false,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-13",
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/petergyang/status/2077572198655754583",
+      "text": "ChatGPT Live and Codex are two incredible products that don’t talk to each other. This is @OpenAI's biggest missed opportunity imo. I went on a walk with ChatGPT Live and asked it to pull up my Google Doc. It said it couldn’t. I then manually triggered the Documents plugin to find my Google Doc, and all of a sudden, ChatGPT Live had the right context. It would be amazing to talk to ChatGPT Live and have it be able to use all the plugins, tools, and browser use that Codex has access to. Then I could ask it to reply to emails, schedule meetings, edit docs, ship code, and more all during a live conversation. I think the first step is to make ChatGPT Live aware of all the plugins that it’s already connected to. Why build such a great voice assistant but have it not be able to do anything? Practical AI tutorials and interviews for busy people | Get my best AI skills and guides at https://t.co/6VAA6p81x6 likes=283; retweets=9; replies=38",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 283,
+      "retweets": 9,
+      "replies": 38,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-14",
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/thenanyu/status/2077559703161213130",
+      "text": "Excuse me, I thought you had to grind until your eyes bled and you forgot how to smile https://t.co/EgBoSczxAK head of product @linear likes=16; retweets=0; replies=1",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 16,
+      "retweets": 0,
+      "replies": 1,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-15",
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/realmadhuguru/status/2077414312180932668",
+      "text": "btw, i have used ai to refine ideas and from time to time, some of the standard AI-isms leak into my writing. have since moved to consciously using ai mainly during the brainstorming phase and keeping final writing human. Sr Director, AI at Meta; Prev: Google - Gemini, Veo, Nano Banana. likes=2; retweets=0; replies=0",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 2,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-16",
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/realmadhuguru/status/2077413491586253025",
+      "text": "We need a term for that feeling when you’re reading something and realize it’s ai written. it’s this primal feeling though the phenomenon itself is new. first the brain recoils, followed by a combination of disgust and mental nausea. I offer: - semantic nausea - uncanny prose valley - synthetic shudder Sr Director, AI at Meta; Prev: Google - Gemini, Veo, Nano Banana. likes=18; retweets=0; replies=9",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 18,
+      "retweets": 0,
+      "replies": 9,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-17",
+      "name": "Thariq",
+      "handle": "trq212",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/trq212/status/2077539537992229076",
+      "text": "ideal prompting technique is: - thin prompts - thick artifacts + context - thin skills Claude Code @anthropicai. prev YC W20, @southpkcommons, @medialab likes=2754; retweets=120; replies=166",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 2754,
+      "retweets": 120,
+      "replies": 166,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-18",
+      "name": "Thariq",
+      "handle": "trq212",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/trq212/status/2077490092290253259",
+      "text": "software engineering is the profession of automation https://t.co/5OQXE5VBRH Claude Code @anthropicai. prev YC W20, @southpkcommons, @medialab likes=1619; retweets=75; replies=47",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 1619,
+      "retweets": 75,
+      "replies": 47,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-19",
+      "name": "Thariq",
+      "handle": "trq212",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/trq212/status/2077457485624229943",
+      "text": "this was such a fun talk with Cat and Simon, hope you get to check it out if you missed it https://t.co/kK8uOVJLSZ Claude Code @anthropicai. prev YC W20, @southpkcommons, @medialab likes=179; retweets=13; replies=10",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 179,
+      "retweets": 13,
+      "replies": 10,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-20",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/rauchg/status/2077559189015335019",
+      "text": "Vercel Sandbox: ? Growing DAUs at 100% m/o/m ? 3.5M+ sandboxes created per day ? Best-in-class Active CPU pricing model ? Powering @notion, @airtable, @meta, @zapier, @coderabbitai, @interaction, @conductor_build, @blackboxai ?? farm My DMs are open for migration help or if missing anything with: https://t.co/U9bNGNLdMZ @vercel CEO likes=218; retweets=17; replies=27",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 218,
+      "retweets": 17,
+      "replies": 27,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-21",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/rauchg/status/2077499486130389189",
+      "text": "Easy money (British pounds) @vercel CEO likes=535; retweets=20; replies=55",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 535,
+      "retweets": 20,
+      "replies": 55,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-22",
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.317Z",
+      "url": "https://x.com/rauchg/status/2077426190386946539",
+      "text": "Some really cool usecases of Web Analytics API: ?? Ask your agent to correlate visitors, custom events (“purchase”, “checkout”), with the evolution of your deployments and performance ?? Build custom frontends, and plot this data alongside e.g.: Stripe’s and Resend’s https://t.co/srTMkm6uhg @vercel CEO likes=199; retweets=8; replies=27",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 199,
+      "retweets": 8,
+      "replies": 27,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-23",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/levie/status/2077526010753581156",
+      "text": "Hosted a dinner last night with a group of IT leaders of large enterprises around agent adoption in the enterprise. Some quick notes: * Change management remains one of the biggest topics for driving workflow transformation. Still most processes need to be upgraded to modern operating models to work with agents, which is a mix of technology, data, and human process change. Lots of emphasis on getting data (structured and unstructured) into a setup that can work with agents properly. * IT teams are finding increasing success embedding full engineers into the business functions (essentially internal FDE) that go and implement agents into the internal workflows. There’s so much technical work to be done to make agents successful, that they can accelerate months or quarters of failed experiments by having someone technical in the workflow early. * Consensus that the tech function is becoming more important than ever. It’s clear that the business could only expect automation to affect a minority of the business before (e.g. ERP) but now it can impact all of knowledge work. This means IT is becoming a more central role to the workflows across the company. * Workflows are cross functional, and getting agents to work cross functionally is a complicated data modeling and permissions issue. Single users don’t have access to this. Which means you need to have agentic systems take on their own roles and have their own privileges, which is non-trivial given agents can’t keep things secure on their own. * Huge variance in budgets between coding work and the rest of knowledge work. Some companies had a $1,000 a month budget for developers, and others had much higher amounts (like $5,000) that were merely triggers to notify the team vs. block them. Far smaller budgets for non-coding work at the moment. * More companies are building their own multimodel systems for routing workloads by task to frontier and lower cost models. Lots of energy around open weights models, but still more in experimentation instead of at scale usage (some companies can’t due to perceived Chinese issue). * Clear sense that all enterprise software must be headless in the future. Relief that they don’t ne",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-24",
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/levie/status/2077471148699439152",
+      "text": "Fantastic to see more open weights innovation happening right now, especially coming from a US Lab. The future of AI is going to be a mix of frontier intelligence that you can use as an orchestrator combined with either lower cost or tuned models for your workhorse tasks. https://t.co/pvQ6HgRkO1 https://t.co/zvY9XIgSPE ceo @box - your business lives in content. unleash it with AI likes=223; retweets=20; replies=9",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 223,
+      "retweets": 20,
+      "replies": 9,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-25",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/garrytan/status/2077639502286250453",
+      "text": "We should just bring back the em dash Reclaim it for our own https://t.co/CTWPmnBfgK President & CEO @ycombinator · Founder @garryslist’Creator of GStack & GBrain’designer/engineer who helps founders’SF Dem accelerating the boom loop likes=61; retweets=1; replies=21",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 61,
+      "retweets": 1,
+      "replies": 21,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-26",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/garrytan/status/2077626565517590618",
+      "text": "Skill files are portable and free you from frontier model dependency This is a good thing https://t.co/oLdkN9rVEO President & CEO @ycombinator · Founder @garryslist’Creator of GStack & GBrain’designer/engineer who helps founders’SF Dem accelerating the boom loop likes=44; retweets=0; replies=7",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 44,
+      "retweets": 0,
+      "replies": 7,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-27",
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/garrytan/status/2077625223717736781",
+      "text": "The path to healing SF and every West Coast city is this: real compassion is focusing on recovery and treatment and making it possible for people to really thrive instead of mandating pro-drug environments that make sobriety impossible https://t.co/8dgiWAaAmJ President & CEO @ycombinator · Founder @garryslist’Creator of GStack & GBrain’designer/engineer who helps founders’SF Dem accelerating the boom loop likes=58; retweets=5; replies=10",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 58,
+      "retweets": 5,
+      "replies": 10,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-28",
+      "name": "Matt Turck",
+      "handle": "mattturck",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/mattturck/status/2077499992705470802",
+      "text": "Argentina’s World Cup recipe: 1) trail 10-15 minutes before the end 2) bring on Lautaro Martinez 3) win 4) repeat VC at @FirstMarkCap. Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD Landscape. likes=111; retweets=5; replies=14",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 111,
+      "retweets": 5,
+      "replies": 14,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-29",
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/zarazhangrui/status/2077417579837309040",
+      "text": "If you want agents to actually work inside a company, you have to design the company so they can read it Shopify did this with an agent that had no private chat function at all, only public channels. The side effect was peer learning https://t.co/L1jub0HgYw Builder. Dangerously skips permissions. Harvard17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w likes=134; retweets=4; replies=10",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 134,
+      "retweets": 4,
+      "replies": 10,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-30",
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/zarazhangrui/status/2077388091044635010",
+      "text": "Because I never learned programming the traditional way, using coding agents has been purely an act of creativity and self-expression GitHub is basically my Substack https://t.co/eZ6OA62XLZ Builder. Dangerously skips permissions. Harvard17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w likes=239; retweets=7; replies=13",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 239,
+      "retweets": 7,
+      "replies": 13,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-31",
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/nikunj/status/2077354857929887997",
+      "text": "Forgive me (travel) Lord for I have sinned.. After spending 3 hours in the immigration line in Paris, I will never complain about SFO and US immigration ever again. Also, will be taking a hiatus from tech Twitter for a bit to spend some time touching grass ?? partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendoor, @atlassian & others. love @shimoleejhaveri + ???? likes=93; retweets=0; replies=12",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 93,
+      "retweets": 0,
+      "replies": 12,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-32",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/steipete/status/2077614430658191825",
+      "text": "Mostly true, 5.6 is relentless. https://t.co/aBiolT4vMF Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw?? + @OpenAI likes=201; retweets=2; replies=25",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 201,
+      "retweets": 2,
+      "replies": 25,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-33",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-16",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/steipete/status/2077544756390088777",
+      "text": "· If I put up a PR for an iOS codebase I don't know and a code reviewer rejects it because it doesn't use the right framework, or if a designer builds a new feature and it gets rejected because it doesn't follow the right architectural patterns, these are failures of automation. https://t.co/3dIgj0Hzs5 Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw?? + @OpenAI likes=572; retweets=15; replies=27",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 572,
+      "retweets": 15,
+      "replies": 27,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "published_via_morning_gate",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": true
+    },
+    {
+      "id": "BP-20260716-34",
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/steipete/status/2077303292225548539",
+      "text": "This is really clever. https://t.co/s8mRrtX6Rz Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world. @OpenClaw?? + @OpenAI likes=1534; retweets=157; replies=56",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 1534,
+      "retweets": 157,
+      "replies": 56,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-35",
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/danshipper/status/2077426853929799759",
+      "text": "early bird just ended and DAMN people love the builder pack! sign up: https://t.co/RcY2X9bUCF https://t.co/9rpYkkNf7F https://t.co/vNer8EdQwJ ceo @every | the only subscription you need to stay at the edge of AI likes=62; retweets=3; replies=8",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 62,
+      "retweets": 3,
+      "replies": 8,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": true,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-36",
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/danshipper/status/2077410452036891000",
+      "text": "@meetgranola YouTube: https://t.co/kgnBJSLE2c Spotify: https://t.co/rYih140VGq ceo @every | the only subscription you need to stay at the edge of AI likes=2; retweets=1; replies=0",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 2,
+      "retweets": 1,
+      "replies": 0,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": false,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-37",
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/danshipper/status/2077410279474770229",
+      "text": "Even when things are going great, running a $1.5 billion AI startup is a knife fight. @MeetGranola was one of the first AI apps of this generation to achieve near-ubiquitous adoption. But meeting notes are not the company’s be-all and end-all. The real battle is over owning the interface that everyone uses to get their work done in an AI-native world. I had Chris Pedregal (@cjpedregal), cofounder and CEO of Granola, back on @every’s AI & I to talk about the current state of the application layer, AI’s frontier, and the future of work. We get into: - Why meeting notes clones don’t matter. Three big companies cloned Granola’s core feature. To him, meeting notes were never the real prize. “Easy come, easy go” is his view of anyone’s lead, including his own. - How he thinks about building proactive features in AI. Granola pre-generates millions of pre-meeting briefs, which include context on the nature of the meeting and people participating, that most people never open. But when they do, they have a magical experience. - Why Granola is betting on “bring your own agent.” Chris says the API and MCP will get “a lot better” over the next few months, and we talk about their agent-native strategy and why they’ve pushed the product that way. This is a must-watch for anyone building at the application layer. Watch the episode! Timestamps Introduction: 00:00:59 Why running a company is a knife fight even when it’s working: 00:01:57 Granola’s counterintuitive view on competition: 00:04:33 Dan’s “pirate and architect” model for early-stage product teams: 00:10:44 Granola’s “shaping” and “validation” phases for building features: 00:13:09 Why Dan lives almost entirely inside Codex: 00:18:17 The case for “Codex-native apps”: 00:24:40 Granola’s “handrail” philosophy: 00:35:37 Why Granola is going all in on winning meeting-adjacent context: 00:38:12 What a transcript alone can never capture: 00:44:19 ceo @every | the only subscription you need to stay at the edge of AI likes=66; retweets=9; replies=8",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 66,
+      "retweets": 9,
+      "replies": 8,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": false,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-38",
+      "name": "Aditya Agarwal",
+      "handle": "adityaag",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/adityaag/status/2077492237248893312",
+      "text": "The thing that is amazing about innovation...is that you can just do things. Proud to be Day -1 supporters. https://t.co/20MaPAkH5L General Partner @SouthPkCommons, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad likes=75; retweets=0; replies=3",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 75,
+      "retweets": 0,
+      "replies": 3,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": false,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-39",
+      "name": "Aditya Agarwal",
+      "handle": "adityaag",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/adityaag/status/2077450872309879286",
+      "text": "Dude, where's my car???? https://t.co/UfCFQDg3QM General Partner @SouthPkCommons, Co-Founder @Bevel_Health | Ex: Early Eng @facebook, CTO @Dropbox, Board @Flipkart | Optimist, Builder, Dad likes=5; retweets=0; replies=0",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 5,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": false,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-40",
+      "name": "Sam Altman",
+      "handle": "sama",
+      "source": "x",
+      "sourceType": "social",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://x.com/sama/status/2077489177374208000",
+      "text": "amazing to me that some people want the silent version https://t.co/jbdznnBx9Z AI is cool i guess likes=2542; retweets=112; replies=457",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 2542,
+      "retweets": 112,
+      "replies": 457,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": false,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-41",
+      "name": "Claude Blog",
+      "handle": "Claude Blog",
+      "source": "blog",
+      "sourceType": "blog",
+      "date": "unknown",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://claude.com/blog/artifacts-in-claude-code",
+      "text": "本轮未抓到可用文本摘要（可能受限于采集权限或接口）。",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": false,
+      "publishedViaMorningGate": false
+    },
+    {
+      "id": "BP-20260716-42",
+      "name": "AI & I by Every",
+      "handle": "AI & I by Every",
+      "source": "podcast",
+      "sourceType": "podcast",
+      "date": "2026-07-15",
+      "createdAt": "2026-07-16T08:11:21.318Z",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+      "text": "Speaker 1 | 00:00 - 00:07 You are the cofounder and CEO of Granolah. One of the first new AI apps where people were like, holy shit. This actually works. Speaker 2 | 00:07 - 00:24 Meeting notes are not the end all, be all value that everyone's running after. There's something much bigger. I think we are in the very, very early steps of a computing revolution. What has come thus far will pale in comparison to what will come soon. Startups are like knife fights. Speaker 2 | 00:24 - 00:29 And I thought startups were just really hard when they weren't working. Turns out they're really hard even when they're working as well. Speaker 1 | 00:43 - 00:58 Every is the only subscription you need to stay at the edge of AI. If you care about being on top of the latest models and using the latest tools, you have to subscribe to Every. We'll help you separate the signal from the noise. Go to every.to/ subscribe today. And now back to the episode. Speaker 1 | 00:58 - 01:00 Chris, welcome to the show. Speaker 2 | 01:00 - 01:02 Hey, Dan. Great to see you. Speaker 1 | 01:03 - 01:23 Good to see too. It's been a while. So for people who don't know, you are the cofounder and CEO of Granolah, one of my favorite AI apps. One of the apps that I think really kicked off the wave in the in, like, you know, I guess, two two or three years ago. It was the one of the first, like, new AI apps where people were like, holy shit. Speaker 1 | 01:23 - 01:45 This actually works, and it's useful. And since then, you've gone on to I I think the team is about 55. You've you've you've raised at, a $1,500,000,000 valuation. You're just killing it. And we had a really good conversation in December 2024, so almost two and a half years ago about putting soul into your product and making products that are delightful. Speaker 1 | 01:45 - 01:56 And I'm just super curious to hear what's on your mind, how things are going, and to sort of share out both of our journeys over the last couple of years and and think about the future together. Speaker 2 | 01:57 - 02:16 Couldn't be more excited to chat. I I can I've been following all the different things you've been doing, from a distance. I'd to hear the latest from",
+      "translation": "",
+      "translationStatus": "unavailable",
+      "topic": "",
+      "columnTags": [],
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0,
+      "laneCoverage": [
+        "afternoon-skill"
+      ],
+      "publicationStatus": "intake_only",
+      "coveredByMorning": false,
+      "publishedViaMorningGate": false
+    }
+  ]
+}

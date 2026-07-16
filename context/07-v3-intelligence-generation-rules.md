@@ -1,5 +1,5 @@
 ---
-status: current
+status: compatibility
 scope: v3-raw-pool-card-trend-rules
 version: V3.3.6.3-business-source-artifact-aggregation
 last_updated: 2026-06-15
@@ -8,7 +8,7 @@ priority: current
 
 # V3 Raw / Pool / Card / Trend Rules
 
-This is the only active rule source for V3 business-signal production.
+This is the active rule source only for frozen V3 Card, trend, relationship, and page compatibility production. It is not the Data Center V4 truth source. V4 follows `context/12-data-center-v4.md` and the contracts under `agent-workflow/product/`.
 
 Historical site rules, legacy content-output routes, legacy publication templates, legacy copy gates, and broad "Guanlan judgment" rules are not active execution sources for V3.
 

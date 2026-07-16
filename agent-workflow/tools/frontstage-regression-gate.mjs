@@ -147,20 +147,19 @@ function collectRetiredPageIssues() {
 
 function collectUnifiedNavigationIssues() {
   const issues = [];
-  const pageFiles = [
+  const legacyPageFiles = [
     path.join(root, "01-SiteV2/site/v3-data-observation.html"),
-    path.join(root, "01-SiteV2/site/intelligence-map.html"),
     path.join(root, "01-SiteV2/site/follow-builders.html"),
     path.join(root, "01-SiteV2/site/community-intelligence.html"),
   ];
-  const required = [
+  const legacyRequired = [
     "assets/wavesight-nav.css",
     "v3-data-observation.html",
     "intelligence-map.html",
     "follow-builders.html",
     "community-intelligence.html",
     "商业信号",
-    "报告中心",
+    "行业报告",
     "一线观点",
     "社群情报",
   ];
@@ -169,14 +168,39 @@ function collectUnifiedNavigationIssues() {
     "仪表盘",
     "Dashboard",
   ];
-  for (const file of pageFiles) {
+  for (const file of legacyPageFiles) {
     const text = read(file);
-    for (const token of required) {
+    for (const token of legacyRequired) {
       if (!text.includes(token)) issues.push(issue(file, "missing_unified_navigation_token", token));
     }
     for (const token of forbidden) {
       if (text.includes(token)) issues.push(issue(file, "public_navigation_exposes_dashboard", token));
     }
+  }
+
+  const reportsCenterFile = path.join(root, "01-SiteV2/site/intelligence-map.html");
+  const reportsCenterHtml = read(reportsCenterFile);
+  const reportsCenterRequired = [
+    "assets/data-center-v4.css",
+    "dc-sidebar",
+    "data-center.html?view=events",
+    "data-center.html?view=community",
+    "data-center.html?view=viewpoints",
+    "data-center.html?view=index",
+    "应用中心",
+    "行业报告",
+  ];
+  for (const token of reportsCenterRequired) {
+    if (!reportsCenterHtml.includes(token)) issues.push(issue(reportsCenterFile, "missing_v4_sidebar_navigation_token", token));
+  }
+  if (reportsCenterHtml.includes("wavesight-topbar") || reportsCenterHtml.includes("wavesight-nav")) {
+    issues.push(issue(reportsCenterFile, "retired_reports_center_top_navigation_present"));
+  }
+  if (reportsCenterHtml.includes("data-center.html?view=companies") || reportsCenterHtml.includes("data-center.html?view=products")) {
+    issues.push(issue(reportsCenterFile, "retired_company_product_sidebar_entries_present"));
+  }
+  if (/报告中心|Reports Center|关联路径|Relation Paths|data-network-list|renderNetwork/u.test(reportsCenterHtml)) {
+    issues.push(issue(reportsCenterFile, "retired_industry_reports_copy_or_module_present"));
   }
   return issues;
 }

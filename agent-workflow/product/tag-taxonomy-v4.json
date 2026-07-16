@@ -1,0 +1,384 @@
+{
+  "taxonomy_version": "TAG-V4.0",
+  "status": "current",
+  "positioning": "AI data-center classification system. Technical tags describe cross-cutting AI semantics; product, scenario, industry, deployment and audience are structured facets.",
+  "assignment_contract": {
+    "source": "accepted_claim_only",
+    "evidence_ref_required": true,
+    "source_span_required": true,
+    "ranking_input": false,
+    "eligibility_input": false,
+    "default_tags": [],
+    "ui_truncation_is_not_data_rule": true
+  },
+  "admission_contract": {
+    "automatic_creation": false,
+    "minimum_independent_claims": 3,
+    "manual_approval_allowed": true,
+    "manual_approval_ref": "user-approved AI data-center taxonomy rebuild 2026-07-17",
+    "required_fields": ["id", "name", "definition", "parent", "aliases", "includes", "excludes", "status"]
+  },
+  "deprecation_contract": {
+    "new_assertions_blocked": true,
+    "historical_assertions_preserved": true,
+    "replacement_id_required_when_renamed": true
+  },
+  "structured_dimension_policy": {
+    "event_type": "canonical_event_field",
+    "source": "source_artifact_field",
+    "entity": "entity_table",
+    "geography": "canonical_event_field",
+    "product_form": "facet_assertion",
+    "use_case": "facet_assertion",
+    "industry": "facet_assertion",
+    "deployment_model": "facet_assertion",
+    "target_user": "facet_assertion"
+  },
+  "tags": [
+    {
+      "id": "agentic_execution",
+      "name": "智能体执行",
+      "group": "交互与执行",
+      "definition": "明确描述 AI 智能体自主或半自主完成多步骤任务。",
+      "parent": "",
+      "aliases": ["ai_agent", "agentic_ai"],
+      "includes": ["agentic", "AI agent", "AI agents", "智能体", "代理式 AI"],
+      "excludes": ["travel agent", "sales agent as a human role", "human agent"],
+      "status": "active"
+    },
+    {
+      "id": "tool_use",
+      "name": "工具调用",
+      "group": "交互与执行",
+      "definition": "明确描述模型或智能体调用外部工具、函数或 API。",
+      "parent": "agentic_execution",
+      "aliases": ["function_calling", "tool_calling"],
+      "includes": ["tool use", "function calling", "tool calling", "工具调用", "函数调用"],
+      "excludes": ["generic software tool", "普通工具"],
+      "status": "active"
+    },
+    {
+      "id": "computer_use",
+      "name": "计算机操作",
+      "group": "交互与执行",
+      "definition": "明确描述 AI 操作桌面、浏览器、应用界面或计算机环境。",
+      "parent": "agentic_execution",
+      "aliases": ["gui_agent", "browser_use"],
+      "includes": ["computer use", "browser use", "GUI agent", "操作电脑", "操作浏览器", "桌面操作"],
+      "excludes": ["computer hardware", "计算机硬件"],
+      "status": "active"
+    },
+    {
+      "id": "model_context_protocol",
+      "name": "MCP",
+      "group": "交互与执行",
+      "definition": "明确提到 Model Context Protocol 或 MCP 协议。",
+      "parent": "tool_use",
+      "aliases": ["mcp"],
+      "includes": ["Model Context Protocol", "MCP server", "MCP client", "MCP 协议", "MCP服务器"],
+      "excludes": [],
+      "status": "active"
+    },
+    {
+      "id": "reasoning",
+      "name": "推理能力",
+      "group": "模型能力",
+      "definition": "明确描述推理模型、思维链、测试时计算或复杂问题推理能力。",
+      "parent": "",
+      "aliases": ["reasoning_model", "test_time_compute"],
+      "includes": ["reasoning model", "reasoning capability", "chain of thought", "test-time compute", "推理模型", "推理能力", "思维链"],
+      "excludes": ["inference server", "推理服务器"],
+      "status": "active"
+    },
+    {
+      "id": "multimodal",
+      "name": "多模态",
+      "group": "模型能力",
+      "definition": "明确组合两种及以上输入或输出模态。",
+      "parent": "",
+      "aliases": ["multi_modal"],
+      "includes": ["multimodal", "multi-modal", "多模态"],
+      "excludes": [],
+      "status": "active"
+    },
+    {
+      "id": "vision_language",
+      "name": "视觉语言",
+      "group": "模型能力",
+      "definition": "明确描述视觉语言模型、图像理解或视觉问答能力。",
+      "parent": "multimodal",
+      "aliases": ["vlm", "vision_language_model"],
+      "includes": ["vision-language model", "vision language model", "VLM", "视觉语言模型", "图像理解", "视觉问答"],
+      "excludes": ["computer vision company name only"],
+      "status": "active"
+    },
+    {
+      "id": "speech_audio",
+      "name": "语音与音频",
+      "group": "模型能力",
+      "definition": "明确描述语音识别、语音合成、音频理解或音频生成。",
+      "parent": "multimodal",
+      "aliases": ["speech", "audio_ai"],
+      "includes": ["speech recognition", "speech synthesis", "text-to-speech", "audio generation", "audio understanding", "语音识别", "语音合成", "音频生成", "音频理解"],
+      "excludes": ["audio device"],
+      "status": "active"
+    },
+    {
+      "id": "image_generation",
+      "name": "图像生成",
+      "group": "生成能力",
+      "definition": "明确描述文本生成图像、图像编辑或图像生成模型。",
+      "parent": "multimodal",
+      "aliases": ["text_to_image"],
+      "includes": ["image generation", "text-to-image", "AI image generator", "图像生成", "文生图", "AI 绘图"],
+      "excludes": ["image recognition", "图像识别"],
+      "status": "active"
+    },
+    {
+      "id": "video_generation",
+      "name": "视频生成",
+      "group": "生成能力",
+      "definition": "明确描述文本或多模态生成视频、视频编辑或视频生成模型。",
+      "parent": "multimodal",
+      "aliases": ["text_to_video"],
+      "includes": ["video generation", "text-to-video", "AI video generator", "视频生成", "文生视频", "AI 视频"],
+      "excludes": ["video analysis", "视频分析"],
+      "status": "active"
+    },
+    {
+      "id": "code_generation",
+      "name": "代码生成",
+      "group": "生成能力",
+      "definition": "明确描述代码生成、代码补全、编程智能体或 AI 编程能力。",
+      "parent": "",
+      "aliases": ["ai_coding", "coding_agent"],
+      "includes": ["code generation", "code completion", "coding agent", "AI coding", "代码生成", "代码补全", "编程智能体", "AI 编程"],
+      "excludes": ["source code released", "开源代码"],
+      "status": "active"
+    },
+    {
+      "id": "retrieval_augmented_generation",
+      "name": "检索增强生成",
+      "group": "知识与上下文",
+      "definition": "明确描述检索增强生成或在生成前检索外部知识。",
+      "parent": "",
+      "aliases": ["rag"],
+      "includes": ["retrieval-augmented generation", "retrieval augmented generation", "RAG", "检索增强生成"],
+      "excludes": [],
+      "status": "active"
+    },
+    {
+      "id": "long_context",
+      "name": "长上下文",
+      "group": "知识与上下文",
+      "definition": "明确描述长上下文窗口、百万级上下文或上下文长度扩展。",
+      "parent": "",
+      "aliases": ["long_context_window"],
+      "includes": ["long context", "context window", "million-token context", "长上下文", "上下文窗口", "百万 token 上下文"],
+      "excludes": ["business context", "行业背景"],
+      "status": "active"
+    },
+    {
+      "id": "memory_system",
+      "name": "记忆系统",
+      "group": "知识与上下文",
+      "definition": "明确描述模型或智能体的长期、跨会话或持久化记忆。",
+      "parent": "agentic_execution",
+      "aliases": ["agent_memory", "persistent_memory"],
+      "includes": ["agent memory", "persistent memory", "long-term memory", "cross-session memory", "智能体记忆", "长期记忆", "持久化记忆"],
+      "excludes": ["GPU memory", "memory chip", "内存芯片", "显存"],
+      "status": "active"
+    },
+    {
+      "id": "mixture_of_experts",
+      "name": "混合专家模型",
+      "group": "模型架构",
+      "definition": "明确描述 Mixture-of-Experts 或 MoE 架构。",
+      "parent": "",
+      "aliases": ["moe"],
+      "includes": ["Mixture of Experts", "Mixture-of-Experts", "MoE model", "MoE 模型", "混合专家模型"],
+      "excludes": [],
+      "status": "active"
+    },
+    {
+      "id": "open_weights",
+      "name": "开放权重",
+      "group": "模型发布",
+      "definition": "明确说明模型权重已发布或可获得。",
+      "parent": "",
+      "aliases": ["open_weight"],
+      "includes": ["open weights", "open-weight", "开放权重", "开源权重"],
+      "excludes": ["open source without weight availability", "仅开源代码"],
+      "status": "active"
+    },
+    {
+      "id": "fine_tuning",
+      "name": "模型微调",
+      "group": "训练与适配",
+      "definition": "明确描述监督微调、参数高效微调或定制训练。",
+      "parent": "",
+      "aliases": ["sft", "peft"],
+      "includes": ["fine-tuning", "fine tuning", "supervised fine-tuning", "parameter-efficient fine-tuning", "模型微调", "监督微调", "参数高效微调"],
+      "excludes": ["fine tune a business process"],
+      "status": "active"
+    },
+    {
+      "id": "distillation",
+      "name": "模型蒸馏",
+      "group": "训练与适配",
+      "definition": "明确描述知识蒸馏或从教师模型向较小模型迁移能力。",
+      "parent": "",
+      "aliases": ["knowledge_distillation"],
+      "includes": ["knowledge distillation", "model distillation", "distilled model", "知识蒸馏", "模型蒸馏", "蒸馏模型"],
+      "excludes": [],
+      "status": "active"
+    },
+    {
+      "id": "quantization",
+      "name": "模型量化",
+      "group": "推理与优化",
+      "definition": "明确描述低比特量化、权重量化或量化推理。",
+      "parent": "",
+      "aliases": ["low_bit_quantization"],
+      "includes": ["model quantization", "weight quantization", "4-bit", "8-bit quantization", "模型量化", "权重量化", "低比特量化"],
+      "excludes": ["quantitative analysis", "量化分析"],
+      "status": "active"
+    },
+    {
+      "id": "inference_optimization",
+      "name": "推理优化",
+      "group": "推理与优化",
+      "definition": "明确描述推理加速、吞吐优化、延迟降低或推理服务优化。",
+      "parent": "",
+      "aliases": ["inference_acceleration", "serving_optimization"],
+      "includes": ["inference optimization", "inference acceleration", "serving optimization", "推理优化", "推理加速", "推理吞吐", "推理延迟"],
+      "excludes": ["business inference"],
+      "status": "active"
+    },
+    {
+      "id": "on_device",
+      "name": "端侧运行",
+      "group": "部署与运行",
+      "definition": "明确说明推理或执行发生在设备端、边缘终端或本地设备。",
+      "parent": "",
+      "aliases": ["edge_inference"],
+      "includes": ["on-device", "on device", "edge inference", "端侧", "设备端", "边缘推理"],
+      "excludes": [],
+      "status": "active"
+    },
+    {
+      "id": "embodied_ai",
+      "name": "具身智能",
+      "group": "部署与运行",
+      "definition": "明确描述具身智能、视觉语言动作模型或 AI 与物理环境交互。",
+      "parent": "",
+      "aliases": ["physical_ai", "vla"],
+      "includes": ["embodied AI", "physical AI", "vision-language-action", "VLA model", "具身智能", "具身模型", "视觉语言动作模型"],
+      "excludes": ["generic robot without AI capability evidence"],
+      "status": "active"
+    },
+    {
+      "id": "human_in_loop",
+      "name": "人在回路",
+      "group": "治理与控制",
+      "definition": "明确要求人在 AI 工作流中审核、批准或干预。",
+      "parent": "",
+      "aliases": ["human_in_the_loop"],
+      "includes": ["human in the loop", "human-in-the-loop", "human review", "human approval", "人工审核", "人在回路", "人工批准"],
+      "excludes": [],
+      "status": "active"
+    },
+    {
+      "id": "guardrails_safety",
+      "name": "安全护栏",
+      "group": "治理与控制",
+      "definition": "明确描述模型安全护栏、内容安全、越狱防护或策略控制。",
+      "parent": "",
+      "aliases": ["ai_guardrails", "model_safety"],
+      "includes": ["AI guardrails", "model guardrails", "content safety", "jailbreak protection", "安全护栏", "模型安全", "内容安全", "越狱防护"],
+      "excludes": ["physical guardrail", "workplace safety"],
+      "status": "active"
+    }
+  ],
+  "facets": [
+    {
+      "id": "product_form",
+      "name": "产品形态",
+      "definition": "来源明确披露的 AI 产品或服务形态。",
+      "values": [
+        {"id": "model", "name": "模型", "includes": ["AI model", "language model", "foundation model", "大模型", "基础模型", "模型发布"], "excludes": ["business model", "商业模式"], "status": "active"},
+        {"id": "api_service", "name": "API / 模型服务", "includes": ["AI API", "model API", "API service", "模型 API", "模型服务"], "excludes": ["API integration only"], "status": "active"},
+        {"id": "developer_tool", "name": "开发者工具", "includes": ["developer tool", "coding tool", "IDE extension", "CLI tool", "开发者工具", "编程工具", "代码工具"], "excludes": [], "status": "active"},
+        {"id": "ai_application", "name": "AI 应用", "includes": ["AI app", "AI application", "AI assistant", "AI 应用", "AI 助手", "智能助手"], "excludes": ["job application"], "status": "active"},
+        {"id": "enterprise_platform", "name": "企业 AI 平台", "includes": ["enterprise AI platform", "agent platform", "workflow platform", "企业 AI 平台", "智能体平台", "工作流平台"], "excludes": [], "status": "active"},
+        {"id": "data_infrastructure", "name": "数据与模型基础设施", "includes": ["AI infrastructure", "inference platform", "model platform", "vector database", "AI 基础设施", "推理平台", "模型平台", "向量数据库"], "excludes": ["physical infrastructure unrelated to AI"], "status": "active"},
+        {"id": "security_product", "name": "AI 安全产品", "includes": ["AI security product", "AI security platform", "agent security", "AI 安全产品", "AI 安全平台", "智能体安全"], "excludes": ["security policy only"], "status": "active"},
+        {"id": "ai_device", "name": "AI 设备", "includes": ["AI device", "AI hardware product", "AI PC", "AI phone", "AI glasses", "AI 设备", "AI 智能硬件", "AI 手机", "AI 眼镜"], "excludes": ["component only"], "status": "active"},
+        {"id": "robot", "name": "机器人", "includes": ["AI robot", "humanoid robot", "personal robot", "AI 机器人", "人形机器人", "个人机器人"], "excludes": ["software bot"], "status": "active"},
+        {"id": "chip_accelerator", "name": "芯片与加速器", "includes": ["AI chip", "GPU", "NPU", "AI accelerator", "AI 芯片", "人工智能芯片", "AI 加速器"], "excludes": ["potato chips"], "status": "active"},
+        {"id": "compute_system", "name": "计算系统", "includes": ["AI server", "AI computer", "GPU cluster", "AI data center", "AI 服务器", "AI 计算机", "GPU 集群", "AI 数据中心"], "excludes": ["generic computer"], "status": "active"}
+      ]
+    },
+    {
+      "id": "use_case",
+      "name": "应用场景",
+      "definition": "来源明确披露的用户任务、业务流程或专业工作场景。",
+      "values": [
+        {"id": "software_development", "name": "软件开发", "includes": ["software development", "code generation", "coding agent", "developer workflow", "软件开发", "代码生成", "编程智能体", "开发流程"], "excludes": [], "status": "active"},
+        {"id": "customer_service", "name": "客户服务", "includes": ["customer service", "customer support", "contact center", "客服", "客户支持", "呼叫中心"], "excludes": [], "status": "active"},
+        {"id": "sales_marketing", "name": "销售与营销", "includes": ["sales workflow", "sales assistant", "marketing content", "account research", "销售流程", "销售助手", "营销内容", "账户研究"], "excludes": [], "status": "active"},
+        {"id": "content_creation", "name": "内容创作", "includes": ["content creation", "creative workflow", "video creation", "image creation", "内容创作", "创意工作流", "视频创作", "图像创作"], "excludes": [], "status": "active"},
+        {"id": "knowledge_search", "name": "知识与搜索", "includes": ["enterprise search", "knowledge management", "knowledge base", "research assistant", "企业搜索", "知识管理", "知识库", "研究助手"], "excludes": [], "status": "active"},
+        {"id": "data_analysis", "name": "数据分析", "includes": ["data analysis", "analytics assistant", "business intelligence", "数据分析", "分析助手", "商业智能"], "excludes": [], "status": "active"},
+        {"id": "research_science", "name": "科研与发现", "includes": ["scientific discovery", "drug discovery", "research workflow", "科研发现", "药物发现", "研究流程"], "excludes": [], "status": "active"},
+        {"id": "education_learning", "name": "教育与学习", "includes": ["education workflow", "learning assistant", "AI tutor", "teaching assistant", "classroom learning", "教育场景", "学习助手", "AI 导师", "教学助手", "课堂学习"], "excludes": ["company education background"], "status": "active"},
+        {"id": "cybersecurity", "name": "网络安全", "includes": ["cybersecurity", "security operations", "threat detection", "安全运营", "威胁检测", "网络安全"], "excludes": ["physical security"], "status": "active"},
+        {"id": "enterprise_operations", "name": "企业运营自动化", "includes": ["business process automation", "workflow automation", "enterprise operations", "流程自动化", "工作流自动化", "企业运营"], "excludes": ["industrial machine automation"], "status": "active"},
+        {"id": "robotics_automation", "name": "机器人与物理自动化", "includes": ["robotics", "robot control", "warehouse robot", "industrial robot", "机器人", "机器人控制", "仓储机器人", "工业机器人"], "excludes": ["software bot"], "status": "active"}
+      ]
+    },
+    {
+      "id": "industry",
+      "name": "行业",
+      "definition": "来源明确披露的采用方或事件所处行业。",
+      "values": [
+        {"id": "technology", "name": "科技与软件", "includes": ["software company", "technology company", "developer platform", "软件公司", "科技公司", "开发者平台"], "excludes": [], "status": "active"},
+        {"id": "financial_services", "name": "金融服务", "includes": ["banking", "insurance", "financial services", "investment firm", "银行", "保险", "金融服务", "投资机构"], "excludes": ["funding round"], "status": "active"},
+        {"id": "healthcare_life_sciences", "name": "医疗与生命科学", "includes": ["healthcare", "hospital", "pharma", "drug discovery", "医疗", "医院", "制药", "药物发现"], "excludes": [], "status": "active"},
+        {"id": "retail_ecommerce", "name": "零售与电商", "includes": ["retail", "e-commerce", "ecommerce", "merchant", "零售", "电商", "商家"], "excludes": [], "status": "active"},
+        {"id": "manufacturing", "name": "制造业", "includes": ["manufacturing", "factory", "industrial production", "制造业", "工厂", "工业生产"], "excludes": ["chip manufacturing when only product supply is discussed"], "status": "active"},
+        {"id": "media_entertainment", "name": "媒体与娱乐", "includes": ["media company", "entertainment", "gaming", "music industry", "媒体公司", "娱乐", "游戏", "音乐行业"], "excludes": [], "status": "active"},
+        {"id": "education", "name": "教育", "includes": ["school district", "university deployment", "K-12 education", "education sector", "学区", "高校部署", "基础教育", "教育行业"], "excludes": ["university biography", "毕业于大学"], "status": "active"},
+        {"id": "government_public_sector", "name": "政府与公共部门", "includes": ["government agency", "public sector", "municipality", "政府机构", "公共部门", "市政府"], "excludes": ["government policy without adopter"], "status": "active"},
+        {"id": "energy_utilities", "name": "能源与公用事业", "includes": ["energy company", "utility company", "power grid", "oil and gas", "能源公司", "公用事业", "电网", "石油天然气"], "excludes": [], "status": "active"},
+        {"id": "telecommunications", "name": "电信", "includes": ["telecom operator", "telecommunications", "mobile carrier", "电信运营商", "通信行业", "移动运营商"], "excludes": [], "status": "active"},
+        {"id": "automotive_transportation", "name": "汽车与交通", "includes": ["automotive", "vehicle manufacturer", "transportation", "汽车行业", "整车厂", "交通运输"], "excludes": [], "status": "active"},
+        {"id": "professional_services", "name": "专业服务", "includes": ["consulting firm", "law firm", "accounting firm", "咨询公司", "律师事务所", "会计师事务所"], "excludes": [], "status": "active"}
+      ]
+    },
+    {
+      "id": "deployment_model",
+      "name": "部署形态",
+      "definition": "来源明确披露的 AI 系统运行或交付位置。",
+      "values": [
+        {"id": "cloud", "name": "云端", "includes": ["cloud deployment", "cloud service", "hosted API", "云端部署", "云服务", "托管 API"], "excludes": [], "status": "active"},
+        {"id": "on_premise", "name": "本地部署", "includes": ["on-premise", "on premises", "self-hosted", "本地部署", "私有化部署", "自托管"], "excludes": [], "status": "active"},
+        {"id": "hybrid", "name": "混合部署", "includes": ["hybrid deployment", "hybrid cloud", "混合部署", "混合云"], "excludes": [], "status": "active"},
+        {"id": "edge_device", "name": "边缘与端侧", "includes": ["edge deployment", "on-device", "edge inference", "边缘部署", "端侧", "设备端"], "excludes": [], "status": "active"},
+        {"id": "embedded", "name": "嵌入式", "includes": ["embedded AI", "embedded system", "嵌入式 AI", "嵌入式系统"], "excludes": [], "status": "active"}
+      ]
+    },
+    {
+      "id": "target_user",
+      "name": "目标用户",
+      "definition": "来源明确披露的主要使用者或采购者类型。",
+      "values": [
+        {"id": "developer", "name": "开发者", "includes": ["for developers", "developer users", "developer community", "面向开发者", "开发者用户", "开发者社区"], "excludes": [], "status": "active"},
+        {"id": "enterprise", "name": "企业用户", "includes": ["enterprise customers", "business users", "for enterprises", "企业客户", "企业用户", "面向企业"], "excludes": [], "status": "active"},
+        {"id": "consumer", "name": "个人用户", "includes": ["consumers", "personal users", "individual users", "消费者", "个人用户", "普通用户"], "excludes": [], "status": "active"},
+        {"id": "government", "name": "政府用户", "includes": ["government customers", "public-sector users", "政府客户", "公共部门用户"], "excludes": [], "status": "active"},
+        {"id": "researcher_education", "name": "研究与教育用户", "includes": ["for researchers", "for teachers", "for students", "academic users", "面向研究人员", "面向教师", "面向学生", "科研用户", "教育用户"], "excludes": ["company researcher title only"], "status": "active"}
+      ]
+    }
+  ]
+}

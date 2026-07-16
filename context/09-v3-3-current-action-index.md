@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-current-action-index
-last_updated: 2026-07-06
+last_updated: 2026-07-16
 use_when:
   - choose current action
   - recover missing actions
@@ -10,9 +10,9 @@ use_when:
 priority: current
 ---
 
-# SITE-V3.4.5 Current Action Index
+# SITE-V4.0 Data Center Current Action Index
 
-This file is the current action registry for WaveSight AI SITE-V3.4.5.
+This file is the current action registry for WaveSight Data Center V4. Existing SITE-V3.4.5 actions below are frozen page compatibility routes unless explicitly identified as V4 core.
 
 Use it before historical dispatch boards, feature lists, closeouts, or V2 action records. Historical files can explain why a rule exists, but they must not add actions back into the current production system.
 
@@ -23,6 +23,7 @@ Every action, old or new, must be treated as one of these classes:
 | Status | Meaning | Codex Behavior |
 |---|---|---|
 | `current` | Active SITE-V3.4.5 production action. | May be used as a default execution route. |
+| `compatibility/downstream` | Frozen page support or interpretation outside the V4 data core. | May run only for its downstream consumer and must not write V4 canonical tables. |
 | `manual/archive` | Historical or diagnostic action with reference value. | May be read or manually consulted, but must not run by default. |
 | `retired` | Explicitly stopped action or output. | Must not be restored, required, or used as a blocker. |
 
@@ -34,18 +35,19 @@ Only these actions are `current` for SITE-V3.4.5:
 
 | Action | Status | Current Role |
 |---|---|---|
-| Daily business-signal production | `current` | Produce qualified business-signal Card assets and publish the active-date unified frontstage Card set. |
-| AI Hardware lens | `current` | Surface hardware funding, scenario service, and trend innovation signals as separate `aiHardwareSignals`; it does not create a fourth Card type or bypass formal Card gates. |
-| Enterprise AI / FDE lens | `current` | Independent FDE lens skill surfaces consulting-relevant implementation signals, uses the `EAI-V1.2.0-raw-card-ingestion-boundary` for title/fact assets, requires demand / service / result details, syncs `content/09-fde`, and does not create a fourth Card type. |
+| Daily Data Center V4 production | `current` | Build and gate SourceArtifact, RawDocument, Claim, Entity, CanonicalEvent, TAG-V3, FDE-V2 and HARDWARE-V1 data. |
+| Data Center JSONL / DuckDB materialization | `current` | Materialize accepted canonical bundles into queryable serving tables. |
+| AI Hardware data projection | `current` | Project explicit hardware product, capacity, supply and deployment events; no source-artifact bypass. |
+| Enterprise AI / FDE data projection | `current` | Project explicitly disclosed implementation facts and preserve undisclosed fields. |
 | Column monitor skills | `current` | Run and improve independent Business Signals, First-Line Viewpoints, and Community Intelligence monitoring skills. |
 | Hermes feedback loop automation | `current` | Convert daily supervision failures into Codex repair items and close them only after validation and prevention are recorded. |
-| Raw / Pool / Card asset chain | `current` | Separate source capture, evidence screening, and formal Cards. |
+| Source / Raw / Claim / Event chain | `current` | Separate provenance, documents, exact-span Claims, entities and canonical facts. |
 | Source-first check | `current` | Ensure frontstage facts are original-source backed. |
 | Pool-to-Card dedupe | `current` | Prevent duplicate evidence from becoming duplicate Cards. |
-| Relationship graph build | `current` | Build Card-derived nodes, edges, and evidence links. |
-| Reports Center opportunity maps | `current` | Refresh the Entry Point Map and Product Pain Map once per week from source-backed opportunity_signals and keep cell evidence in click-to-open modals. |
-| Reports Center reports | `current` | Publish monthly / weekly report entries and detail pages from accepted report Markdown. |
-| Trend candidate judgment | `current` | Judge repeated same-direction signals as internal candidates, not long-form publication output. |
+| Factual relationship build | `current` | Build event/claim/entity/source links without tag-derived direction or hypotheses. |
+| Reports Center opportunity maps | `compatibility/downstream` | Keep frozen pages working; outputs cannot enter V4 canonical data. |
+| Reports Center reports | `compatibility/downstream` | Keep frozen report pages working as downstream interpretation. |
+| Trend candidate judgment | `compatibility/downstream` | Keep frozen pages working; trend judgment cannot enter V4 canonical data. |
 | First-line viewpoints RSS update | `current` | Update builders viewpoints from the morning RSS / podcast route independently from business signals. |
 | First-line viewpoints skill publish | `current` | Update builders viewpoints from the afternoon local follow-builders skill route independently from business signals. |
 | First-Line Viewpoints Obsidian timeline sync | `current` | Persist Builder viewpoints into person / date Obsidian timelines. |

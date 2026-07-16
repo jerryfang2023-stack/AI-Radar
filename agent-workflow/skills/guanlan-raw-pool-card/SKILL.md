@@ -1,13 +1,13 @@
 ---
 name: guanlan-raw-pool-card
-description: Use when running, repairing, auditing, or changing WaveSight AI raw-to-card Signal Card and frontstage production. Covers daily Raw/Pool audit targets, cardability judgment, Signal Card generation, unified frontstage Card display, and site/Obsidian handoff rules.
+description: Use only for frozen V3 Raw/Pool-to-Card and frontstage compatibility after Data Center V4 build and integrity gate. Do not use Cards, cardability, importance, or value fields as V4 facts.
 metadata:
   guanlan:
     version: "1.0.4"
     lane: "Business Signals"
-    status: "current sub-skill"
+    status: "compatibility sub-skill"
     order: 70
-    responsibility: "Convert eligible Raw / Pool evidence into source-backed Business Signal Cards."
+    responsibility: "Render legacy source-backed Signal Cards for frozen V3 pages without writing V4 truth."
     upstream: "eligible Raw / Pool items"
     downstream: "Signal Cards and card examples"
     gates: "source-backed details, type contract, field discipline"
@@ -17,6 +17,8 @@ metadata:
 ---
 
 # Guanlan Raw Pool Card
+
+Compatibility boundary: CanonicalEvent is the V4 fact layer and Card is only a renderer for frozen pages.
 
 This skill is the production route for WaveSight AI business-signal assets after daily monitoring starts and before public frontstage release.
 

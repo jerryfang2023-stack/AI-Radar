@@ -1,15 +1,15 @@
 ---
 name: guanlan-monitor-quality-gate
-description: Run or repair the current V3 Business Signals evidence-supply pre-gate. It separates diagnostic targets from release blockers, validates minimum Pool/Core evidence integrity after one monitor attempt, and routes failures without starting another full-chain run.
+description: Run or repair the acquisition evidence-supply pre-gate before Data Center V4 build. It validates that source snapshots and legacy Raw/Pool supply are present after one monitor attempt. It does not validate CanonicalEvents, tags, projections, commercial value, or page quality.
 metadata:
   guanlan:
     version: "1.1.0"
-    lane: "Business Signals"
+    lane: "Data Center Source Ingestion"
     status: "current sub-skill"
     order: 50
-    responsibility: "Decide whether Raw / Pool evidence is sufficient to attempt Card generation."
+    responsibility: "Decide whether captured evidence is sufficient to attempt the V4 factual build."
     upstream: "Raw / Pool output"
-    downstream: "evidence-supply decision and diagnostics"
+    downstream: "Data Center V4 build decision and source diagnostics"
     gates: "minimum evidence supply and evidence integrity"
     recent_learning: "Provider, Raw-volume and channel-mix diagnostics do not independently block release or trigger repeated collection."
     mirrored_in_skill_store: true
@@ -18,14 +18,15 @@ metadata:
 
 # Guanlan Monitor Quality Gate
 
-This is the automated evidence-supply gate between monitoring and Card generation. It is not a second monitor and it does not decide Card editorial quality.
+This is the acquisition evidence-supply gate between monitoring and the Data Center V4 build. It is not the V4 integrity gate and does not decide event value, Card quality, or page quality.
 
 ## Required Reads
 
 For changes, read only the relevant source:
 
-- `context/05-daily-monitoring.md`
-- `context/07-v3-intelligence-generation-rules.md`
+- `context/12-data-center-v4.md`
+- `context/05-daily-monitoring.md` for the collector implementation
+- `context/07-v3-intelligence-generation-rules.md` only for legacy Pool thresholds
 - `01-SiteV2/content/11-databases/business-signals-gate-v3.json`
 - `agent-workflow/tools/guanlan-monitor-quality-gate.mjs`
 - `agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs`
@@ -37,11 +38,11 @@ This gate answers:
 
 ```text
 Are Raw / Pool artifacts present and internally consistent?
-Is there enough routed, source-backed evidence to attempt Card generation?
+Is there enough source-backed evidence to attempt the V4 factual build?
 Did index, contaminated, blocked or degraded evidence enter Core?
 ```
 
-It does not answer whether Cards are fresh, valuable, non-duplicated or well written. Those decisions belong to Card generation, dedupe, editorial quality and unified frontstage gates.
+It does not answer whether events are valuable or important, and it does not validate Claims, CanonicalEvents, tags, projections, Cards, or pages. V4 structural truth belongs to `guanlan-data-integrity-gate`; page compatibility has separate legacy gates.
 
 ## Hard Gates
 

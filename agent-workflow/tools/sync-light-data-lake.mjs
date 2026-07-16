@@ -18,6 +18,12 @@ function rel(file) {
   return path.relative(root, file).replace(/\\/g, "/");
 }
 
+function arg(name, fallback = "") {
+  const prefix = `--${name}=`;
+  const hit = process.argv.find((value) => value.startsWith(prefix));
+  return hit ? hit.slice(prefix.length) : fallback;
+}
+
 function exists(file) {
   return fs.existsSync(file);
 }
@@ -278,7 +284,7 @@ function collectFrontstageCards() {
   const file = path.join(root, "01-SiteV2/site/data/v3-data-observation-desk.json");
   if (!exists(file)) return [];
   const data = readJson(file);
-  return (data.cards || data.frontstageCards || []).map((card, index) => ({
+  return (data.frontstageCards || data.cards || []).map((card, index) => ({
     date: safeString(card.date || card.published_at || data.meta?.date || ""),
     id: safeString(card.id || card.card_id || `frontstage-${index + 1}`),
     title: safeString(card.title),
@@ -290,6 +296,23 @@ function collectFrontstageCards() {
     mojibake_score: contaminationScore(card.title, card.company, card.signal_owner, card.summary, card.fact),
     path: rel(file)
   }));
+}
+
+function collectDataCenterRows(fileName, idKey = "") {
+  const dataCenterRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
+  if (!exists(dataCenterRoot)) return [];
+  const rows = [];
+  for (const dateEntry of fs.readdirSync(dataCenterRoot, { withFileTypes: true }).filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/u.test(entry.name)).sort((a, b) => a.name.localeCompare(b.name))) {
+    const file = path.join(dataCenterRoot, dateEntry.name, `${fileName}.json`);
+    if (!exists(file)) continue;
+    const values = readJson(file);
+    if (!Array.isArray(values)) continue;
+    for (const value of values) rows.push({ data_date: dateEntry.name, ...value, bundle_path: rel(file) });
+  }
+  if (!idKey) return rows;
+  const deduped = new Map();
+  for (const row of rows) deduped.set(safeString(row[idKey]) || JSON.stringify(row), row);
+  return [...deduped.values()];
 }
 
 function collectFdeItems() {
@@ -352,7 +375,7 @@ function sqlString(value) {
   return String(value).replace(/'/gu, "''").replace(/\\/gu, "/");
 }
 
-function rebuildDuckDb(tableNames) {
+function rebuildDuckDb(tables) {
   const duckdb = findDuckDb();
   if (!duckdb) {
     return { ok: false, duckdb: "", error: "DuckDB CLI not found. Set DUCKDB_BIN or restart the shell after winget install." };
@@ -362,9 +385,10 @@ function rebuildDuckDb(tableNames) {
     "install json;",
     "load json;"
   ];
-  for (const table of tableNames) {
+  for (const [table, rows] of Object.entries(tables)) {
     const file = path.join(tablesDir, `${table}.jsonl`);
-    statements.push(`create or replace table ${table} as select * from read_json_auto('${sqlString(file)}', format='newline_delimited');`);
+    if (rows.length) statements.push(`create or replace table ${table} as select * from read_json_auto('${sqlString(file)}', format='newline_delimited');`);
+    else statements.push(`create or replace table ${table} as select cast(null as varchar) as _empty where false;`);
   }
   const result = spawnSync(duckdb, [dbPath, "-c", statements.join("\n")], {
     cwd: root,
@@ -378,16 +402,8 @@ function rebuildDuckDb(tableNames) {
   };
 }
 
-function querySummary(duckdb) {
-  const sql = [
-    "select 'raw_items' as table_name, count(*) as rows from raw_items",
-    "union all select 'pool_daily' as table_name, count(*) as rows from pool_daily",
-    "union all select 'signal_cards' as table_name, count(*) as rows from signal_cards",
-    "union all select 'builders_daily' as table_name, count(*) as rows from builders_daily",
-    "union all select 'community_items' as table_name, count(*) as rows from community_items",
-    "union all select 'frontstage_cards' as table_name, count(*) as rows from frontstage_cards",
-    "union all select 'fde_items' as table_name, count(*) as rows from fde_items;"
-  ].join("\n");
+function querySummary(duckdb, tableNames) {
+  const sql = tableNames.map((table, index) => `${index ? "union all " : ""}select '${table}' as table_name, count(*) as rows from ${table}`).join("\n") + ";";
   const result = spawnSync(duckdb, [dbPath, "-json", "-c", sql], { cwd: root, encoding: "utf8", shell: false });
   return result.status === 0 ? result.stdout.trim() : "";
 }
@@ -395,7 +411,7 @@ function querySummary(duckdb) {
 function main() {
   ensureDir(lakeDir);
   ensureDir(tablesDir);
-  const tables = {
+  const legacyTables = {
     raw_items: collectRawItems(),
     pool_daily: collectPoolDaily(),
     signal_cards: collectSignalCards(),
@@ -404,13 +420,41 @@ function main() {
     frontstage_cards: collectFrontstageCards(),
     fde_items: collectFdeItems()
   };
+  const v4Tables = {
+    source_artifacts: collectDataCenterRows("source-artifacts", "source_artifact_id"),
+    raw_documents: collectDataCenterRows("raw-documents", "raw_id"),
+    claims: collectDataCenterRows("claims", "claim_id"),
+    entities: collectDataCenterRows("entities", "entity_id"),
+    entity_mentions: collectDataCenterRows("entity-mentions", "mention_id"),
+    canonical_events: collectDataCenterRows("canonical-events", "event_id"),
+    compatibility_cards: collectDataCenterRows("compatibility-cards", "card_id"),
+    event_sources: collectDataCenterRows("event-sources"),
+    event_claims: collectDataCenterRows("event-claims"),
+    event_conflicts: collectDataCenterRows("event-conflicts", "conflict_id"),
+    relationships: collectDataCenterRows("relationships", "relationship_id"),
+    tag_assertions: collectDataCenterRows("tag-assertions"),
+    facet_assertions: collectDataCenterRows("facet-assertions"),
+    fde_records: collectDataCenterRows("fde-records", "fde_id"),
+    hardware_records: collectDataCenterRows("hardware-records", "hardware_record_id"),
+    qa_queue: collectDataCenterRows("qa-queue", "qa_id"),
+    legacy_asset_mappings: collectDataCenterRows("legacy-asset-mappings")
+  };
+  const tables = arg("v4-only", "false") === "true" ? v4Tables : { ...legacyTables, ...v4Tables };
   for (const [name, rows] of Object.entries(tables)) writeJsonl(name, rows);
-  const build = rebuildDuckDb(Object.keys(tables));
+  if (arg("duckdb", "required") === "skip") {
+    console.log(JSON.stringify({ ok: true, duckdb: "skipped", database: rel(dbPath), generated_tables: Object.fromEntries(Object.entries(tables).map(([k, v]) => [k, v.length])) }, null, 2));
+    return;
+  }
+  const build = rebuildDuckDb(tables);
   if (!build.ok) {
+    if (arg("duckdb", "required") === "optional") {
+      console.log(JSON.stringify({ ok: true, duckdb: "skipped", database: rel(dbPath), generated_tables: Object.fromEntries(Object.entries(tables).map(([k, v]) => [k, v.length])), warning: build.error }, null, 2));
+      return;
+    }
     console.error(JSON.stringify({ ok: false, generated_tables: Object.fromEntries(Object.entries(tables).map(([k, v]) => [k, v.length])), error: build.error }, null, 2));
     process.exit(1);
   }
-  const summary = querySummary(build.duckdb);
+  const summary = querySummary(build.duckdb, Object.keys(tables));
   console.log(JSON.stringify({
     ok: true,
     duckdb: build.duckdb,

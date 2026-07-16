@@ -1,13 +1,13 @@
 ---
 name: guanlan-enterprise-ai-fde-monitor
-description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.5 / EAI-V1.2.0-raw-card-ingestion-boundary Enterprise AI / FDE lane. Covers FDE source discovery, independent Lens Pool selection, demand/service/result analysis, frontstage detail rendering, Obsidian 09-fde sync, and FDE-specific quality gates. Do not use for formal Business Signal Top10 selection, First-Line Viewpoints, Community Intelligence, or retired daily-observation outputs.
+description: Use only for frozen SITE-V3.4.5 Enterprise AI/FDE page rendering and Obsidian compatibility. V4 FDE facts are owned by guanlan-fde-data-projection; this skill must not infer demand, service, result, ROI, or team details into V4.
 metadata:
   guanlan:
     version: "1.2.0"
     lane: "Enterprise AI / FDE"
-    status: "current lane owner"
+    status: "compatibility lane owner"
     order: 15
-    responsibility: "Own the Enterprise AI / FDE lens: source-backed implementation evidence, independent FDE Lens Pool, demand/service/result analysis, public details, and Obsidian 09-fde sync."
+    responsibility: "Keep the frozen V3 FDE lens and Obsidian output compatible with accepted FDE-V2 records."
     upstream: "Business Signals Raw / Pool evidence, FDE source-only discovery, Hermes inbox"
     downstream: "enterprise-ai-fde.json, Business Signals enterpriseAiTransformation lens, content/09-fde Obsidian archive, FDE quality gates"
     gates: "FDE precision, raw/card title-fact ingestion boundary, detail-openability, demand/service/result completeness, Obsidian sync"
@@ -17,6 +17,8 @@ metadata:
 ---
 
 # Guanlan Enterprise AI / FDE Monitor
+
+Compatibility boundary: use `guanlan-fde-data-projection` for FDE-V2 data; this skill only renders or syncs legacy page assets.
 
 This skill owns the Enterprise AI / FDE lens. It keeps implementation evidence separate from the formal Business Signals Top10 while still using source-backed Raw / Pool material.
 

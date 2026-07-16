@@ -19,6 +19,7 @@ const siteRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."
 const skillDir = process.env.FOLLOW_BUILDERS_SKILL_DIR
   || path.join(homedir(), ".skill-store", "follow-builders");
 const outputPath = path.join(siteRoot, "data", "follow-builders-daily.json");
+const v4ProjectionScript = path.join(siteRoot, "scripts", "build-first-line-viewpoints-v4-data.mjs");
 const builderBlogFeedPath = path.join(siteRoot, "..", "content", "11-databases", "builder-blog-feed.json");
 const builderPodcastFeedPath = path.join(siteRoot, "..", "content", "11-databases", "builder-podcast-feed.json");
 const tagIndex = buildTagIndex(readTagTaxonomy(process.cwd()));
@@ -26,6 +27,13 @@ const remoteFeeds = {
   x: "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
 };
 const fallbackTopic = "产品与创业";
+
+async function rebuildV4Projection() {
+  await execFileAsync(process.execPath, [v4ProjectionScript], {
+    cwd: process.cwd(),
+    maxBuffer: 8 * 1024 * 1024,
+  });
+}
 
 function repairEncodingArtifacts(text = "") {
   return String(text || "")
@@ -467,12 +475,14 @@ async function main() {
       sourcePolicy: "follow-builders feed refresh failed; previous generated data was preserved so the independent First-Line Viewpoints page can still build.",
     };
     await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+    await rebuildV4Projection();
     console.log(`Wrote ${path.relative(process.cwd(), outputPath)} with ${payload.stats?.remarks || 0} remarks using previous data fallback.`);
     return;
   }
   const payload = await normalize(feed, trackedSources);
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+  await rebuildV4Projection();
   console.log(`Wrote ${path.relative(process.cwd(), outputPath)} with ${payload.stats.remarks} remarks.`);
 }
 

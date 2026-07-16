@@ -1,22 +1,24 @@
 ---
 name: guanlan-business-signals-monitor
-description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.5 / BSIG-V2.2.0-pipeline-stage-ownership Business Signals lane. Covers daily Raw / Pool audit / unified frontstage Signal Cards / separate AI Hardware lens / Reports Center map inputs / trend-candidate inputs, source-first gates, raw-to-card release behavior, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for First-Line Viewpoints, Community Intelligence, direct deployment, or retired daily observation / brief / trend-report outputs.
+description: Use only for frozen SITE-V3.4.5 Business Signals Card, trend, relationship, FDE/hardware lens, and frontstage compatibility after the Data Center V4 integrity gate passes. Do not use it to define V4 facts, tags, events, projections, importance, opportunity, or recommendations.
 metadata:
   guanlan:
     version: "1.1.1"
     lane: "Business Signals"
-    status: "current lane owner"
+    status: "compatibility lane owner"
     order: 10
-    responsibility: "Own Business Signals daily supervision and repair: Raw, Pool, unified frontstage Signal Cards, separate AI Hardware lens, V3 release gate cleanup, Reports Center map inputs, and trend-candidate inputs."
-    upstream: "external source capture, daily persistent assets workflow, Hermes inbox"
-    downstream: "Signal Cards, graph inputs, trend candidates, PR publication"
+    responsibility: "Keep frozen V3 Business Signals and Reports Center page inputs operational without writing Data Center V4 truth."
+    upstream: "accepted Data Center V4 daily bundle plus legacy Raw / Pool compatibility assets"
+    downstream: "legacy Signal Cards, page graph/trend inputs, and PR publication"
     gates: "V3 evidence supply, six-gate Card entry, Card editorial quality, relationship graph, trend decision, source-first, frontstage Card contract"
-    recent_learning: "The three public blocks form one daily contract: accepted Cards feed the relationship graph, and the trend stage must persist either a multi-Card candidate or an explicit no-candidate decision. Diagnostic Raw / Pool volume targets do not duplicate the V3 release gate."
+    recent_learning: "Card, trend, opportunity, and importance logic is frozen-page compatibility only; V4 factual data is owned by guanlan-data-center-supervisor."
     mirrored_in_skill_store: true
     memory_required: true
 ---
 
 # Guanlan Business Signals Monitor
+
+Compatibility boundary: load `guanlan-data-center-supervisor` first for factual data work. This skill may consume the accepted V4 bundle but cannot write V4 canonical tables.
 
 This skill owns the Business Signals production lane. It coordinates source capture, evidence screening, unified frontstage Signal Cards, relationship / intelligence map inputs, trend-candidate inputs, and lane repair.
 

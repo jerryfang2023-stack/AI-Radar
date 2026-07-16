@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="wavesight-version" content="SITE-V4.0-data-center-frontstage-v1.0">
+  <title>数据中心｜观澜 AI</title>
+  <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/data-center-v4.css?v=20260717-taxonomy-v4">
+</head>
+<body>
+  <header class="dc-header">
+    <a class="dc-brand" href="data-center.html" aria-label="观澜 AI 数据中心">
+      <img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI">
+    </a>
+    <button class="dc-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="dc-sidebar">栏目</button>
+  </header>
+
+  <div class="dc-layout">
+    <aside class="dc-sidebar" id="dc-sidebar" data-sidebar>
+      <nav aria-label="数据中心与应用中心">
+        <section class="dc-nav-group" aria-labelledby="data-center-nav-title">
+          <h2 id="data-center-nav-title">数据中心</h2>
+          <a href="data-center.html?view=events" data-view-link="events">商业事件</a>
+          <a href="data-center.html?view=fde" data-view-link="fde">FDE 实施</a>
+          <a href="data-center.html?view=hardware" data-view-link="hardware">AI 硬件</a>
+          <a href="data-center.html?view=community" data-view-link="community">社群情报</a>
+          <a href="data-center.html?view=viewpoints" data-view-link="viewpoints">一线观点</a>
+          <a href="data-center.html?view=index" data-view-link="index">实体索引</a>
+        </section>
+
+        <section class="dc-nav-group dc-nav-apps" aria-labelledby="app-center-nav-title">
+          <h2 id="app-center-nav-title">应用中心</h2>
+          <a href="intelligence-map.html">行业报告</a>
+        </section>
+      </nav>
+    </aside>
+
+    <main class="dc-main" id="main-content" tabindex="-1">
+      <div class="dc-loading" data-loading aria-live="polite">
+        <span class="dc-loading-line"></span>
+        <span class="dc-loading-line"></span>
+        <span class="dc-loading-line"></span>
+      </div>
+      <div data-page-root></div>
+    </main>
+  </div>
+
+  <dialog class="dc-community-dialog" data-community-dialog>
+    <div class="dc-community-dialog-panel">
+      <button class="dc-community-dialog-close" type="button" data-community-dialog-close aria-label="关闭">×</button>
+      <div data-community-dialog-content></div>
+    </div>
+  </dialog>
+
+  <dialog class="dc-viewpoint-dialog" data-viewpoint-dialog>
+    <div class="dc-viewpoint-dialog-panel">
+      <button class="dc-viewpoint-dialog-close" type="button" data-viewpoint-dialog-close aria-label="关闭">×</button>
+      <div data-viewpoint-dialog-content></div>
+    </div>
+  </dialog>
+
+  <script src="assets/data-center-v4.js?v=20260717-taxonomy-v4" defer></script>
+</body>
+</html>

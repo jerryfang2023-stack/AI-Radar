@@ -3,12 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <meta name="wavesight-version" content="SITE-V3.4.5">
   <meta name="wavesight-column-version" content="IMAP-V2.0.0-report-center-opportunity-system">
   <meta name="weekly-report-source" content="01-SiteV2/content/08-report/">
   <meta name="monthly-report-source" content="01-SiteV2/content/08-report/monthly/">
-  <title>报告中心｜观澜 AI</title>
-  <link rel="stylesheet" href="assets/wavesight-nav.css">
+  <title>行业报告｜观澜 AI</title>
+  <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/data-center-v4.css?v=20260717-nav-hierarchy">
   <style>
     @import url("assets/brand/brand-tokens.css");
     :root {
@@ -41,6 +45,7 @@
       font-size: var(--gl-type-body-size, 16px);
       line-height: var(--gl-type-body-line, 28px);
     }
+    .dc-report-main { width: 100%; padding: 0; }
     a { color: inherit; }
     button { font: inherit; cursor: pointer; }
     .shell { width: min(1320px, calc(100% - 48px)); margin: 0 auto; padding: 24px 0 48px; }
@@ -58,37 +63,15 @@
     h3 { font-weight: var(--gl-weight-title, 600); }
     .cell-modal h3 { font-weight: var(--gl-weight-heading, 400); }
     h1, h2, .map-block-head h3 { font-weight: var(--gl-weight-column-title, var(--gl-weight-title, 600)); }
-    .page-title-head h1 {
-      max-width: 760px;
-      color: var(--ink);
-      font-size: var(--gl-type-page-title-size, 44px);
-      line-height: var(--gl-type-page-title-line, 58px);
-    }
     h2 { font-size: var(--gl-type-module-title-size, 28px); line-height: var(--gl-type-module-title-line, 40px); }
     h3 { font-size: 20px; line-height: 30px; }
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr);
-      gap: 12px;
-      align-items: start;
-      min-height: auto;
+    .report-overview {
       padding-bottom: 22px;
       border-bottom: 1px solid var(--soft-line);
     }
-    .hero-copy { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
-    .page-title-head { margin: 0; }
-    .desk-kicker {
-      margin: 0 0 6px;
-      color: var(--gold);
-      font-family: var(--gl-font-en, var(--mono));
-      font-size: var(--gl-type-label-size, 12px);
-      font-weight: var(--gl-weight-label, 600);
-      line-height: var(--gl-type-label-line, 18px);
-      letter-spacing: var(--gl-letter-label, .08em);
-      text-transform: uppercase;
-    }
+    .dc-report-page-head { margin-bottom: 10px; }
     .metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
-    .metric, .report-card, .weekly-card, .panel, .cell-modal, .network-card {
+    .metric, .report-card, .weekly-card, .panel, .cell-modal {
       border: 1px solid var(--line);
       background: var(--surface);
     }
@@ -107,8 +90,10 @@
     .weekly-card b { display: block; margin-top: 5px; font-family: var(--gl-font-heading-cn, var(--serif)); font-size: 18px; font-weight: var(--gl-weight-news-title, var(--gl-weight-heading, 400)); line-height: 28px; }
     .weekly-card-action { display: inline-flex; align-items: center; align-self: flex-end; min-height: 28px; padding: 0 10px; background: var(--blue); color: var(--paper); font-size: 12px; font-weight: 600; line-height: 28px; }
     .section { padding: 32px 0; border-bottom: 1px solid var(--soft-line); }
-    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 18px; }
+    .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; margin-bottom: 18px; }
     .section-head p { max-width: 620px; margin: 0; color: var(--muted); line-height: 1.75; }
+    .section-title, .map-block-title { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px 14px; }
+    .section-title span, .map-block-title span { color: var(--muted); font-size: 14px; line-height: 24px; }
     .toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 10px; }
     .legend { display: inline-flex; flex-wrap: wrap; gap: 7px; color: var(--muted); font-family: var(--mono); font-size: 11px; font-weight: 600; }
     .legend span, .pill { display: inline-flex; align-items: center; min-height: 24px; padding: 0 8px; border: 1px solid var(--line); background: rgba(255, 253, 248, .76); line-height: 18px; white-space: normal; }
@@ -135,7 +120,6 @@
     .cell strong { display: block; font-family: var(--mono); font-size: 18px; font-weight: 600; line-height: 18px; }
     .cell em { display: block; color: var(--muted); font-style: normal; font-size: 12px; line-height: 18px; }
     .cell small { display: inline-flex; width: max-content; max-width: 100%; min-height: 20px; padding: 0 6px; border: 1px solid currentColor; font-size: 11px; font-weight: 600; line-height: 18px; }
-    .network-card p { margin: 10px 0 0; color: var(--muted); font-size: var(--gl-type-caption-size, 14px); line-height: var(--gl-type-caption-line, 24px); }
     .cell-modal-backdrop {
       position: fixed;
       inset: 0;
@@ -177,91 +161,63 @@
     .top-cell { min-height: 132px; padding: 13px; border: 1px solid var(--line); background: rgba(255, 253, 248, .64); }
     .top-cell b { display: block; font-family: var(--serif); font-size: 17px; font-weight: 600; line-height: 26px; }
     .top-cell span { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 18px; }
-    .network-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: start; }
-    .network-list { display: grid; gap: 12px; min-width: 0; }
-    .network-card {
-      position: relative;
-      padding: 17px 18px 15px 21px;
-      min-width: 0;
-      overflow: hidden;
-      border-color: rgba(7, 24, 39, .13);
-      background:
-        linear-gradient(90deg, rgba(185, 149, 81, .1), rgba(255, 253, 248, .9) 34%, rgba(247, 244, 239, .62)),
-        var(--surface);
-    }
-    .network-card::before {
-      content: "";
-      position: absolute;
-      inset: 0 auto 0 0;
-      width: 3px;
-      background: var(--gold);
-    }
-    .network-card h3 { color: var(--blue); }
-    .network-card .kicker { color: rgba(7, 24, 39, .5); }
-    .network-card .legend span {
-      border-color: rgba(7, 24, 39, .11);
-      background: rgba(247, 244, 239, .72);
-      color: rgba(7, 24, 39, .64);
-    }
-    .network-card details { margin-top: 12px; }
-    .network-card summary {
-      display: inline-flex;
-      align-items: center;
-      min-height: 30px;
-      padding: 0 11px;
-      cursor: pointer;
-      background: var(--blue);
-      color: var(--paper);
-      font-size: 13px;
-      font-weight: 600;
-      line-height: 30px;
-      list-style: none;
-    }
-    .network-card summary::-webkit-details-marker { display: none; }
     @media (max-width: 1120px) {
-      .hero, .map-layout, .network-layout { grid-template-columns: 1fr; min-height: auto; }
+      .map-layout { grid-template-columns: 1fr; min-height: auto; }
       .weekly-strip, .top-cells { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width: 760px) {
       .shell { width: min(100% - 28px, 1320px); padding-top: 22px; }
       body { font-size: 15px; line-height: 26px; }
-      .page-title-head h1 { font-size: 30px; line-height: 42px; }
       h2 { font-size: 22px; line-height: 32px; }
       h3, .map-block-head h3 { font-size: 20px; line-height: 30px; }
       .metrics, .weekly-strip, .top-cells, .report-card { grid-template-columns: 1fr; }
       .report-card h2 { font-size: 22px; line-height: 32px; white-space: normal; }
-      .report-card p, .network-card p { font-size: 13px; line-height: 22px; }
-      .network-card h3 { font-size: 18px; line-height: 28px; }
+      .report-card p { font-size: 13px; line-height: 22px; }
+      .section-title, .map-block-title { display: grid; gap: 2px; }
       .link-button { justify-self: start; }
       .matrix.entry, .matrix.pain { min-width: 760px; }
     }
   </style>
 </head>
-<body>
-  <header class="wavesight-topbar" aria-label="观澜 AI 导航">
-    <a class="wavesight-brand" href="v3-data-observation.html" aria-label="观澜 AI 首页">
-      <img class="wavesight-logo" src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI">
+<body class="dc-report-page">
+  <header class="dc-header">
+    <a class="dc-brand" href="data-center.html" aria-label="观澜 AI 数据中心">
+      <img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI">
     </a>
-    <nav class="wavesight-nav" aria-label="主导航">
-      <a href="v3-data-observation.html">商业信号<span>Business Signals</span></a>
-      <a href="intelligence-map.html" aria-current="page">报告中心<span>Reports Center</span></a>
-      <a href="follow-builders.html">一线观点<span>Builders</span></a>
-      <a href="community-intelligence.html">社群情报<span>Community Intel</span></a>
-    </nav>
+    <button class="dc-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="dc-sidebar">栏目</button>
   </header>
 
-  <main class="shell">
-    <section class="hero" aria-labelledby="page-title">
-      <div class="hero-copy">
-        <div class="page-title-head">
-          <p class="desk-kicker">Reports Center</p>
-          <h1 id="page-title">报告中心</h1>
-        </div>
+  <div class="dc-layout">
+    <aside class="dc-sidebar" id="dc-sidebar" data-sidebar>
+      <nav aria-label="数据中心与应用中心">
+        <section class="dc-nav-group" aria-labelledby="data-center-nav-title">
+          <h2 id="data-center-nav-title">数据中心</h2>
+          <a href="data-center.html?view=events">商业事件</a>
+          <a href="data-center.html?view=fde">FDE 实施</a>
+          <a href="data-center.html?view=hardware">AI 硬件</a>
+          <a href="data-center.html?view=community">社群情报</a>
+          <a href="data-center.html?view=viewpoints">一线观点</a>
+          <a href="data-center.html?view=index">实体索引</a>
+        </section>
+
+        <section class="dc-nav-group dc-nav-apps" aria-labelledby="app-center-nav-title">
+          <h2 id="app-center-nav-title">应用中心</h2>
+          <a href="intelligence-map.html" aria-current="page">行业报告</a>
+        </section>
+      </nav>
+    </aside>
+
+    <main class="dc-main dc-report-main" id="main-content" tabindex="-1">
+      <div class="shell">
+    <section class="report-overview" aria-labelledby="page-title">
+      <div class="dc-page-head dc-report-page-head">
+        <h1 id="page-title">行业报告</h1>
+        <span class="dc-page-description">AI 行业周报、月报与机会地图</span>
       </div>
 
       <div class="report-stack" aria-label="周报和月报">
         <div class="monthly-group" aria-label="月报入口">
-          <p class="kicker">Monthly Report</p>
+          <p class="kicker">月报</p>
           <article class="report-card">
             <div>
               <p class="kicker">2026.06.01 - 06.30</p>
@@ -272,7 +228,7 @@
           </article>
         </div>
         <div class="weekly-group" aria-label="周报入口">
-          <p class="kicker">Weekly Report</p>
+          <p class="kicker">周报</p>
           <div class="weekly-strip">
             <a class="weekly-card" href="weekly-ai-business-change-radar.html"><span><span class="fine">2026.07.06 - 07.12</span><b>Agentic AI 进入流程落地，算力成本与信任边界同步升温</b></span><span class="weekly-card-action">打开周报</span></a>
             <a class="weekly-card" href="weekly-ai-business-change-radar-2026-07-06.html"><span><span class="fine">2026.06.29 - 07.05</span><b>企业 Agent 进入行业流程验证</b></span><span class="weekly-card-action">打开周报</span></a>
@@ -284,9 +240,9 @@
 
     <section class="section" aria-labelledby="maps-title">
       <div class="section-head">
-        <div>
-          <p class="kicker">Opportunity Map</p>
+        <div class="section-title">
           <h2 id="maps-title">机会地图</h2>
+          <span>切入点、产品痛点与当前证据状态</span>
         </div>
         <div class="toolbar">
           <div class="legend" aria-label="变化状态">
@@ -298,9 +254,9 @@
         <div class="panel">
           <article class="map-block" aria-labelledby="entry-map-title">
             <div class="map-block-head">
-              <div>
-                <p class="kicker">Entry Point Map</p>
+              <div class="map-block-title">
                 <h3 id="entry-map-title">切入点地图</h3>
+                <span>买方与任务的交叉索引</span>
               </div>
             </div>
             <div class="matrix-scroll">
@@ -309,9 +265,9 @@
           </article>
           <article class="map-block" aria-labelledby="pain-map-title">
             <div class="map-block-head">
-              <div>
-                <p class="kicker">Product Pain Map</p>
+              <div class="map-block-title">
                 <h3 id="pain-map-title">痛点地图</h3>
+                <span>约束与产品形态的交叉索引</span>
               </div>
             </div>
             <div class="matrix-scroll">
@@ -323,18 +279,9 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="network-title">
-      <div class="section-head">
-        <div>
-          <p class="kicker">Relation Paths</p>
-          <h2 id="network-title">关联路径</h2>
-        </div>
       </div>
-      <div class="network-layout">
-        <div class="network-list" data-network-list></div>
-      </div>
-    </section>
-  </main>
+    </main>
+  </div>
 
   <div class="cell-modal-backdrop" data-cell-modal hidden>
     <div class="cell-modal" role="dialog" aria-modal="true" aria-labelledby="cell-modal-title">
@@ -346,14 +293,21 @@
   </div>
 
   <script>
+    const reportNavToggle = document.querySelector("[data-nav-toggle]");
+    const reportSidebar = document.querySelector("[data-sidebar]");
+    reportNavToggle?.addEventListener("click", () => {
+      const open = reportSidebar.dataset.open !== "true";
+      reportSidebar.dataset.open = String(open);
+      reportNavToggle.setAttribute("aria-expanded", String(open));
+    });
+    reportSidebar?.addEventListener("click", (event) => {
+      if (event.target.closest("a")) {
+        reportSidebar.dataset.open = "false";
+        reportNavToggle?.setAttribute("aria-expanded", "false");
+      }
+    });
+
     const state = { activeMap: "entry", entryCells: [], painCells: [] };
-    const zh = {
-      enterprise_ai_owner:"企业 AI 负责人", it_security_team:"IT / 安全团队", sales_team:"销售团队", customer_support_team:"客服团队", engineering_team:"研发团队", legal_team:"法务团队", finance_team:"财务团队", procurement_team:"采购团队", healthcare_provider:"医疗机构", insurance_team:"保险团队", operations_team:"运营团队", content_team:"内容团队", smb_owner:"中小企业主",
-      sales:"销售团队", customer_support:"客服团队", engineering:"研发团队", legal_compliance:"法务 / 合规", finance:"财务团队", procurement:"采购团队", operations:"运营团队", marketing_content:"营销内容", it_security:"IT / 安全治理", healthcare_operations:"医疗运营", insurance_operations:"保险运营",
-      customer_ticket_triage:"工单分流", sales_lead_research:"账户研究", sales_briefing:"销售简报", contract_review:"合同审查", rfp_response:"RFP 响应", knowledge_base_qa:"知识库问答", code_review:"代码审查", internal_tool_building:"内部工具构建", model_deployment:"模型部署", cost_monitoring:"成本监控", permission_audit:"权限审计", medical_documentation:"医疗文书", insurance_claim_review:"保险理赔", procurement_supplier_screening:"供应商筛选", content_workflow:"内容工作流", data_analysis_query:"数据分析", call_transcription:"通话转写", logistics_coordination:"物流协调",
-      workflow_integration:"工作流集成", api_cost_spike:"成本压力", permission_boundary:"权限边界", audit_log_required:"审计记录", data_silo:"数据孤岛", hallucination_risk:"幻觉风险", human_review_required:"人工复核", latency_sensitive:"延迟 / 稳定性", model_routing_complexity:"模型路由复杂", security_compliance:"安全合规", deployment_failure:"部署失败", context_management:"上下文管理", evaluation_gap:"评测缺口",
-      agent_workbench:"Agent 工作台", copilot:"Copilot", api:"API / SDK", model_gateway:"模型网关", rag_knowledge_base:"RAG 知识库", vertical_saas:"垂直 SaaS", developer_tool:"开发工具", workflow_automation:"流程自动化", fde_service:"FDE 服务", managed_service:"托管服务", evaluation_platform:"评测平台", browser_or_desktop_tool:"桌面 / 浏览器工具", api_usage_based:"API 用量计费", project_based_service:"项目制服务", fde_delivery:"FDE 交付",
-    };
     const entryRows = [
       { label:"企业 AI 负责人", fields:["buyer_or_user","team_or_function"], values:["enterprise_ai_owner","it_security","it_security_team"] },
       { label:"研发团队", fields:["buyer_or_user","team_or_function"], values:["engineering_team","engineering"] },
@@ -386,12 +340,6 @@
       { label:"流程自动化", values:["workflow_automation","vertical_saas"] },
       { label:"FDE / 托管", values:["fde_service","fde_delivery","managed_service","project_based_service"] },
       { label:"评测平台", values:["evaluation_platform","model_gateway"] },
-    ];
-    const relationSpecs = [
-      { title:"企业 AI 负责人 → 工作流治理 → Agent 部署服务", buyerValues:["enterprise_ai_owner","it_security_team","it_security"], taskValues:["permission_audit","model_deployment","knowledge_base_qa","internal_tool_building"], painValues:["workflow_integration","permission_boundary","audit_log_required","security_compliance","deployment_failure"], productValues:["agent_workbench","workflow_automation","fde_service","fde_delivery","managed_service"], judgment:"企业买方不只在试工具，而是在寻找能把 Agent 接进权限、上下文和流程治理的交付层。" },
-      { title:"研发团队 → 内部工具链 → AI Coding / SDK / DevOps", buyerValues:["engineering_team","engineering"], taskValues:["internal_tool_building","code_review","model_deployment"], painValues:["workflow_integration","evaluation_gap","context_management"], productValues:["developer_tool","api","api_usage_based","model_gateway","evaluation_platform"], judgment:"研发仍是最热切入买方，证据集中在开发工具、SDK、模型部署和评测链路。" },
-      { title:"销售团队 → 账户研究 → 自动化工作流", buyerValues:["sales_team","sales"], taskValues:["sales_lead_research","sales_briefing"], painValues:["workflow_integration","data_silo","context_management"], productValues:["workflow_automation","copilot","rag_knowledge_base","vertical_saas"], judgment:"销售侧的账户研究和销售准备正在升温，但客户结果证据仍需继续补强。" },
-      { title:"客服团队 → 工单分流 → Copilot / Agent 工作台", buyerValues:["customer_support_team","customer_support"], taskValues:["customer_ticket_triage","call_transcription","knowledge_base_qa"], painValues:["workflow_integration","human_review_required","hallucination_risk"], productValues:["copilot","agent_workbench","rag_knowledge_base","workflow_automation"], judgment:"客服场景具备明确流程和复盘入口，但当前证据在产品发布与部署结果之间仍不均衡。" },
     ];
     const strongActions = new Set(["customer_deployment","procurement_signal","pricing_change","funding_round","partnership_integration","acquisition"]);
     const launchActions = new Set(["product_launch","open_source_release","research_benchmark"]);
@@ -451,35 +399,8 @@
       $("[data-cell-modal]").hidden = false;
       $("[data-modal-close]").focus();
     }
-    function cardSourceUrl(card) {
-      return card.sourceUrl || card.url || card.source_url || card.originalUrl || card.original_url || card.sourceLinks?.[0] || "";
-    }
-    function renderEvidenceCard(card, linked = false) {
-      const meta = `${card.id} · ${card.categoryLabel || card.category || "Card"} · ${card.date} · ${card.sourceName || ""}`;
-      const body = `<b>${card.title}</b><span>${meta}</span>`;
-      const url = linked ? cardSourceUrl(card) : "";
-      if (!url) return `<article class="evidence">${body}</article>`;
-      return `<a class="evidence" href="${url}" target="_blank" rel="noopener noreferrer">${body}</a>`;
-    }
     function renderTop(cells) {
       $("[data-top-cells]").innerHTML = cells.filter((c) => c.count).sort((a,b) => b.count - a.count).slice(0,4).map((cell) => `<article class="top-cell"><p class="kicker">${statusText(cell.status)}</p><b>${cell.row} × ${cell.col}</b><span>${cell.count} 条 7 日 Cards，代表主体：${cell.stats.subjects.slice(0,3).join(" / ") || "未提取"}</span></article>`).join("");
-    }
-    function relationMatches(card, spec) {
-      const buyer = hasAny(card, ["buyer_or_user","team_or_function"], spec.buyerValues), task = hasVal(card, "specific_task", spec.taskValues), pain = hasVal(card, "pain_or_constraint", spec.painValues), product = hasAny(card, ["product_form","delivery_model"], spec.productValues);
-      return (buyer && (task || pain || product)) || (task && product) || (pain && product);
-    }
-    function buildRelations(cards, activeDate) {
-      const all = windowCards(cards, activeDate, 30);
-      return relationSpecs.map((spec) => {
-        const matched = all.filter((card) => relationMatches(card, spec)), stats = evidenceStats(matched);
-        const products = uniq(matched.flatMap((c) => [...vals(c,"product_form"), ...vals(c,"delivery_model")]).map((x) => zh[x] || x)).slice(0,4);
-        const buyers = uniq(matched.flatMap((c) => [...vals(c,"buyer_or_user"), ...vals(c,"team_or_function")]).map((x) => zh[x] || x)).slice(0,4);
-        return { ...spec, cards: matched, stats, products, buyers, boundary: stats.strong ? `强证据 ${stats.strong} 条；仍需区分部署结果和产品发布热度。` : "证据更多来自发布、技术材料或案例页，客户结果仍偏弱。" };
-      }).filter((x) => x.cards.length).sort((a,b) => b.cards.length - a.cards.length).slice(0,4);
-    }
-    function renderNetwork(directions) {
-      const root = $("[data-network-list]");
-      root.innerHTML = directions.map((d, i) => `<article class="network-card" data-network-card="${i}"><p class="kicker">Direction ${String(i+1).padStart(2,"0")} · ${d.cards.length} Cards</p><h3>${d.title}</h3><p>${d.judgment}</p><div class="legend"><span>代表主体：${d.stats.subjects.slice(0,3).join(" / ") || "未提取"}</span><span>产品形态：${d.products.join(" / ") || "未提取"}</span><span class="${d.stats.strong ? "status-stable" : "status-watch"}">${d.boundary}</span></div><details><summary>关联事件</summary><div class="item-list">${d.cards.slice(0,4).map((card) => renderEvidenceCard(card, true)).join("")}</div></details></article>`).join("");
     }
     function bind() {
       document.addEventListener("click", (event) => {
@@ -512,7 +433,6 @@
       renderMatrix($("[data-map-panel='entry']"), entryRows, entryCols, state.entryCells, "entry");
       renderMatrix($("[data-map-panel='pain']"), painRows, painCols, state.painCells, "pain");
       renderTop([...state.entryCells, ...state.painCells]);
-      renderNetwork(buildRelations(cards, activeDate));
       bind();
     }
     init().catch((error) => { console.error(error); document.body.insertAdjacentHTML("beforeend", `<div style="position:fixed;left:16px;right:16px;bottom:16px;padding:16px;background:#fff;border:1px solid #a85a54">真实数据读取失败：${error.message}</div>`); });

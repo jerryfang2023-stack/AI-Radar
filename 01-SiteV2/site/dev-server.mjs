@@ -16,6 +16,15 @@ const types = {
   ".svg": "image/svg+xml;charset=utf-8",
 };
 
+function responseHeaders(contentType) {
+  return {
+    "Content-Type": contentType,
+    "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
+    "Pragma": "no-cache",
+    "Expires": "0",
+  };
+}
+
 function enhanceSkillStoreDashboard(buffer) {
   const source = buffer.toString("utf8");
   const style = `
@@ -82,7 +91,7 @@ createServer(async (request, response) => {
   if (rawPath === "/local-skill-store" || rawPath === "/local-skill-store/") {
     try {
       const body = await readFile(skillStoreDashboard);
-      response.writeHead(200, { "Content-Type": "text/html;charset=utf-8" });
+      response.writeHead(200, responseHeaders("text/html;charset=utf-8"));
       response.end(enhanceSkillStoreDashboard(body));
     } catch {
       response.writeHead(404);
@@ -105,7 +114,7 @@ createServer(async (request, response) => {
 
   try {
     const body = await readFile(filePath);
-    response.writeHead(200, { "Content-Type": types[path.extname(filePath)] || "text/plain;charset=utf-8" });
+    response.writeHead(200, responseHeaders(types[path.extname(filePath)] || "text/plain;charset=utf-8"));
     response.end(body);
   } catch {
     response.writeHead(404);
