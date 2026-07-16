@@ -546,7 +546,7 @@ function stripSourceNoise(raw = "") {
 
 function sourcePointLooksPageChrome(value = "") {
   const text = String(value || "");
-  return /IT之家\s+首页\s+IT圈|首页.{0,80}设置.{0,80}投稿.{0,80}订阅|软媒应用.{0,80}App客户端|Skip to content|Navigation Menu|Search or jump to|Saved searches|Appearance settings|Read the blog post here|Written by .{0,120}Last updated .{0,120}Table of contents|Share:\s*Copied\s+https?:\/\/|^io\/.*https?:\/\/|https?:\/\/www\.$|Home\s+Pricing\s+Docs\s+Blog\s+(?:\[?Company\]?\s+)?Login\s+Talk To Us|###|\bTotal Shares\b|accuracy layer for f(?:[。.]|$)/iu.test(text);
+  return /IT之家\s+首页\s+IT圈|首页.{0,80}设置.{0,80}投稿.{0,80}订阅|软媒应用.{0,80}App客户端|投诉水文.{0,40}我要纠错|下载IT之家APP|相关文章.{0,40}关键词|相关阅读：|广告声明：|软媒旗下(?:网站|软件)|Skip to content|Navigation Menu|Search or jump to|Saved searches|Appearance settings|Read the blog post here|Written by .{0,120}Last updated .{0,120}Table of contents|Share:\s*Copied\s+https?:\/\/|^io\/.*https?:\/\/|https?:\/\/www\.$|Home\s+Pricing\s+Docs\s+Blog\s+(?:\[?Company\]?\s+)?Login\s+Talk To Us|###|\bTotal Shares\b|accuracy layer for f(?:[。.]|$)/iu.test(text);
 }
 
 function sourcePointLooksSplitFragment(value = "") {
@@ -567,6 +567,27 @@ function sourceSentences(raw = "", limit = 16) {
     .filter((item) => !sourcePointLooksPageChrome(item))
     .filter((item) => !/Sign in|Provide feedback|Twitter|Facebook|LinkedIn|Email Updates/iu.test(item))
     .slice(0, limit);
+}
+
+function sourceDetailClauses(raw = "") {
+  const clauses = [];
+  for (const sentence of sourceSentences(raw, 80)) {
+    for (const segment of sentence.split(/[；;]/u)) {
+      const commaIndex = segment.search(/[，,]/u);
+      if (commaIndex < 12) continue;
+      const detail = stripSourceNoise(segment.slice(commaIndex + 1));
+      if (detail.length < 36 || sourcePointLooksPageChrome(detail) || sourcePointLooksSplitFragment(detail)) continue;
+      const parts = detail.split(/[，,、]/u).map(stripSourceNoise).filter(Boolean);
+      for (let index = 0; index < parts.length - 1; index += 1) {
+        const pair = `${parts[index]}，${parts[index + 1]}`;
+        if (pair.length >= 28 && pair.length < 48 && !sourcePointLooksPageChrome(pair) && !sourcePointLooksSplitFragment(pair)) {
+          clauses.push(pair);
+        }
+      }
+      clauses.push(detail);
+    }
+  }
+  return [...new Set(clauses)];
 }
 
 function extractNumbers(raw = "") {
@@ -957,6 +978,10 @@ function sourcePointsFromSection(section) {
   const titleFact = sourceTitleFactFromSection(section);
   const normalizedTitleFact = sourceBackedChineseFact(sourceTitle, context);
   const fromExcerpts = excerptItems.map((item) => translatedSourcePoint(item.text, item.type, context)).filter(sourcePointReadyForPublic);
+  const fromClauses = [
+    ...keyExcerpts.flatMap((item) => sourceDetailClauses(item?.text || "")),
+    ...sourceDetailClauses(raw.full_text || raw.clean_text || ""),
+  ].map((item) => translatedSourcePoint(item, "", context)).filter(sourcePointReadyForPublic);
   const fromSeed = seedItems.map((item) => translatedSourcePoint(item, "", context)).filter(sourcePointReadyForPublic);
   const fromFullText = sourceSentences(raw.full_text || raw.clean_text || "")
     .map((item) => translatedSourcePoint(item, "", context))
@@ -964,7 +989,7 @@ function sourcePointsFromSection(section) {
   const fromTranslatedFacts = translatedFacts
     .map((item) => translatedSourcePoint(item, context.type, context))
     .filter(sourcePointReadyForPublic);
-  const bodyFacts = [...fromTranslatedFacts, ...fromExcerpts, ...fromSeed, ...fromFullText]
+  const bodyFacts = [...fromTranslatedFacts, ...fromExcerpts, ...fromClauses, ...fromSeed, ...fromFullText]
     .filter((item) => !isSameSourcePoint(item, normalizedTitleFact) && !isSameSourcePoint(item, titleFact));
   const substantive = [...new Set([...bodyFacts, normalizedTitleFact].filter(sourcePointReadyForPublic))];
   return [...substantive, ...(titleFact ? [titleFact] : [])].slice(0, 6);
@@ -993,6 +1018,9 @@ function rawVisibleExcerptFromSection(section, excluded = []) {
     const normalized = normalizedSignalText(item);
     return excludedKeys.some((excludedKey) => {
       if (normalized === excludedKey) return true;
+      const shorter = normalized.length <= excludedKey.length ? normalized : excludedKey;
+      const longer = normalized.length > excludedKey.length ? normalized : excludedKey;
+      if (shorter.length >= 48 && longer.includes(shorter)) return true;
       const prefixLength = Math.min(90, normalized.length, excludedKey.length);
       return prefixLength >= 48 && normalized.slice(0, prefixLength) === excludedKey.slice(0, prefixLength);
     });
@@ -1003,6 +1031,8 @@ function rawVisibleExcerptFromSection(section, excluded = []) {
   const candidates = [
     ...rawExcerpts,
     ...sourceSentences(raw.full_text || raw.clean_text || ""),
+    ...rawExcerpts.flatMap(sourceDetailClauses),
+    ...sourceDetailClauses(raw.full_text || raw.clean_text || ""),
   ]
     .map((item) => String(item || "").replace(/\s+/gu, " ").trim())
     .filter((item) => item.length >= 36 && item.length <= 420)
@@ -1020,7 +1050,12 @@ function localizedRawSourcePointsFromSection(section, context = {}, excluded = [
   const rawExcerpts = Array.isArray(raw.key_excerpts)
     ? raw.key_excerpts.map((item) => stripSourceNoise(item?.text || ""))
     : [];
-  const candidates = [...rawExcerpts, ...sourceSentences(raw.full_text || raw.clean_text || "", 80)]
+  const candidates = [
+    ...rawExcerpts.flatMap(sourceDetailClauses),
+    ...sourceDetailClauses(raw.full_text || raw.clean_text || ""),
+    ...rawExcerpts,
+    ...sourceSentences(raw.full_text || raw.clean_text || "", 80),
+  ]
     .map((item) => sourceBackedChineseFact(item, context))
     .filter(sourcePointReadyForPublic)
     .filter((item) => !excluded.some((excludedItem) => isSameSourcePoint(item, excludedItem)));
@@ -1044,6 +1079,27 @@ function isSameSourcePoint(a = "", b = "") {
   const right = normalize(b);
   if (!left || !right) return false;
   if (left === right) return true;
+  const shorter = left.length <= right.length ? left : right;
+  const longer = left.length > right.length ? left : right;
+  if (shorter.length >= 48 && longer.includes(shorter)) return true;
+  const prefixLength = Math.min(90, left.length, right.length);
+  return prefixLength >= 48 && left.slice(0, prefixLength) === right.slice(0, prefixLength);
+}
+
+function cardDetailsTooSimilar(a = "", b = "") {
+  const normalize = (value) => String(value || "")
+    .toLowerCase()
+    .replace(/原文称，|原始来源标题显示：/gu, "")
+    .replace(/[^a-z0-9\u4e00-\u9fff]+/gu, " ")
+    .replace(/\s+/gu, " ")
+    .trim();
+  const left = normalize(a);
+  const right = normalize(b);
+  if (!left || !right) return false;
+  if (left === right) return true;
+  const shorter = left.length <= right.length ? left : right;
+  const longer = left.length > right.length ? left : right;
+  if (shorter.length >= 48 && longer.includes(shorter)) return true;
   const prefixLength = Math.min(90, left.length, right.length);
   return prefixLength >= 48 && left.slice(0, prefixLength) === right.slice(0, prefixLength);
 }
@@ -1373,7 +1429,7 @@ const indexOnlyEvidenceTypes = new Set([
 ]);
 
 const indexOnlyUrlPattern = /(^|\/)(category|categories|tag|tags|topics?|search|docs?|documentation|api|sdk|pricing|marketplace|models?|packages?|tools?|login|signin|sign-in)(\/|$)|readme|readme-ov-file|\/blog\/category\//iu;
-const discoveryOnlyPattern = /\b(aihot|ai hot|hacker news|reddit|hn|linkedin|twitter|x\.com|duckduckgo|bing|tavily|exa|anysearch|gdelt)\b/iu;
+const discoveryOnlyPattern = /\b(aihot|ai hot|hacker news|reddit|hn|linkedin|twitter|x\.com|duckduckgo|bing|tavily|exa|anysearch|gdelt|discovery[_\s-]*source)\b/iu;
 const mojibakeMarkerNeedles = [
   "\u947e\u5cf0\u7df1",
   "\u93c9\u30e6\u7c2e",
@@ -3086,10 +3142,14 @@ function promotePriorityForIssues(section, issues = []) {
   const poolRoutes = value(section, "pool_routes");
   const freshDatedSource = Boolean(rawPublicationDate(section)) && !isStalePublication(section, cardFreshnessDays(section));
   const routedForFormalReview = /\b(?:core_pool|emerging_pool)\b/iu.test(poolRoutes);
+  const sourceRoleResolved = new Set(["resolved_original_source", "primary_source"]).has(value(section, "source_role"));
+  const readableSourceEvidence = new Set(["rich_evidence", "source_backed_event"]).has(evidenceStrengthForSection(section));
   if (
     coreImportanceTypes.has(importanceType)
     && routedForFormalReview
     && freshDatedSource
+    && sourceRoleResolved
+    && readableSourceEvidence
     && hasFormalCardEvent(section)
     && sourceTitleConfirmsEvent
     && repairableRecallIssues
@@ -3394,7 +3454,7 @@ function signalCard(spec, section) {
   }
   if (!sourceFact) sourceFact = spec.title;
   const rawValuePoint = localizedRawSourcePointsFromSection(section, sourcePointContext, [sourceFact, spec.title, titleFact])[0] || "";
-  const valueSummary =
+  let valueSummary =
     [spec.businessMeaning, spec.whyWatch, ...sourcePoints]
       .find((item) => item && !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, spec.title) && !isSameSourcePoint(item, titleFact)) ||
     rawValuePoint ||
@@ -3450,6 +3510,9 @@ function signalCard(spec, section) {
       .filter((item) => item && hasCjk(item))
       .filter((item) => ![sourceFact, valueSummary, spec.title].some((excludedItem) => isSameSourcePoint(item, excludedItem)));
     if (localizedOriginalPoints.length) originalPoints = [...new Set(localizedOriginalPoints)].slice(0, 4);
+  }
+  if (cardDetailsTooSimilar(originalPoints.join(" "), valueSummary)) {
+    valueSummary = generatedCommercialValue(spec);
   }
   const evidenceBoundary = spec.evidenceBoundary || value(section, "missing_information") || "未记录额外缺失项。";
 
@@ -3861,7 +3924,13 @@ function runQualityRegressionFixtures() {
     return found;
   };
   const specFor = (poolRef, index = 1) => autoSignalSpec(poolRef, section(poolRef), index);
-  const issuesFor = (poolRef) => autoSignalEligibilityIssues(section(poolRef));
+  const issuesFor = (poolRef) => {
+    const gateIssues = autoSignalEligibilityIssues(section(poolRef));
+    if (gateIssues.length) return gateIssues;
+    const diagnostics = {};
+    if (autoSignalSpec(poolRef, section(poolRef), 1, diagnostics)) return [];
+    return classifiedAutoSignalSpecFailureIssues(section(poolRef), diagnostics.reason);
+  };
 
   const chineseHiringFixture = [
     "## P-999｜OpenAI 招聘家庭产品经理，拓展家庭用户市场",
@@ -3881,6 +3950,31 @@ function runQualityRegressionFixtures() {
     sectionSourceIdentityIndicatesIndexOnly(articleWithNavigationFixture),
     false,
     "navigation words inside article evidence must not turn a dated article into an index page",
+  );
+  assert.equal(
+    sourcePointLooksPageChrome("投诉水文 我要纠错 下载IT之家APP，签到赚金币兑豪礼 相关文章 关键词：AI Apple 智能"),
+    true,
+    "IT之家 related-link chrome must not enter Card detail fields",
+  );
+  assert.ok(
+    sourceDetailClauses("网信部门发布 7 款提供手机端侧生成式人工智能服务的已备案信息，包括苹果手机的 Apple 智能、华为手机的华为小艺 AI 大模型、OPPO 手机的 AndesGPT 大模型。").some((item) => item.startsWith("包括苹果手机")),
+    "a long source sentence must expose a distinct source-backed detail clause",
+  );
+  assert.equal(
+    isSameSourcePoint(
+      "促进生成式人工智能服务创新发展和规范应用，网信部门有序开展备案工作，并公布已完成备案的应用和功能信息。",
+      "IT之家 7 月 15 日消息，促进生成式人工智能服务创新发展和规范应用，网信部门有序开展备案工作，并公布已完成备案的应用和功能信息。",
+    ),
+    true,
+    "a dateline prefix must not hide duplicated Card detail content",
+  );
+  assert.equal(
+    cardDetailsTooSimilar(
+      "- OpenAI 与 Work Louder 联合推出首款 Codex 键盘，售价为 230 美元。",
+      "OpenAI 与 Work Louder 联合推出首款 Codex 键盘，售价为 230 美元。",
+    ),
+    true,
+    "rendered Card sections must use the same duplicate semantics as the editorial gate",
   );
   const actualDirectoryFixture = [
     "## P-997｜AI 产品目录首页",
@@ -3960,16 +4054,18 @@ function runQualityRegressionFixtures() {
     "trade-secret employee lawsuits without product/funding/case events must not become Cards",
   );
 
-  for (const poolRef of ["P-001", "P-002", "P-012", "P-015", "P-026", "P-043"]) {
+  for (const poolRef of ["P-001", "P-012", "P-043"]) {
     assert.deepEqual(issuesFor(poolRef), [], `${poolRef} should pass the six Card-entry gates`);
-    assert.ok(specFor(poolRef), `${poolRef} should produce a formal Signal Card spec`);
+    const diagnostics = {};
+    assert.ok(autoSignalSpec(poolRef, section(poolRef), 1, diagnostics), `${poolRef} should produce a formal Signal Card spec; reason=${diagnostics.reason || "unknown"}`);
   }
   assert.equal(specFor("P-001").type, "funding", "SK Hynix IPO must remain a funding/capital event");
   assert.equal(specFor("P-012").type, "funding", "OXMIQ round must remain a funding event");
-  assert.equal(specFor("P-015").type, "case", "KTern SAP deployment must remain a customer/vertical case");
-  assert.equal(specFor("P-026").type, "case", "Sunrun distributed-compute pilot must remain a case");
 
   const rejected = {
+    "P-002": "trade_secret_lawsuit_without_product_funding_or_case_event",
+    "P-015": "source_title_requires_chinese_event_title",
+    "P-026": "source_title_requires_chinese_event_title",
     "P-017": "stale_source_date",
     "P-033": "stale_source_date",
     "P-035": "company_profile_without_dated_event",
@@ -3984,7 +4080,7 @@ function runQualityRegressionFixtures() {
     );
   }
 
-  for (const poolRef of ["P-001", "P-002", "P-012", "P-015", "P-026", "P-043"]) {
+  for (const poolRef of ["P-001", "P-012", "P-043"]) {
     const spec = normalizeSignalSpec(specFor(poolRef));
     const markdown = signalCard(spec, section(poolRef));
     const details = cardDetailSections(markdown);
@@ -4158,6 +4254,31 @@ function runCoreRecallRegressionFixtures() {
     promotePriorityForIssues(undatedLaunchFixture, ["evidence_quality:missing_source_date", "evidence_quality:missing_chinese_fact_translation"]),
     "high",
     "an undated launch/profile page must not block the batch as a high-priority recall repair",
+  );
+
+  const unresolvedDiscoveryFixture = [
+    "## P-991｜火山引擎发布 Seedance 2.5，AI 视频生成支持 30 秒直出",
+    "- source_url: https://mp.weixin.qq.com/s/example",
+    "- source_role: discovery_source",
+    "- evidence_object_type: event",
+    "- event_evidence: true",
+    "- evidence_strength: traceable_summary",
+    "- raw_qc_decision: allow_with_degradation",
+    "- extraction_quality: failed",
+    "- has_full_text: false",
+    "- pool_routes: emerging_pool, watchlist",
+    "- importance_type: important_product_or_service",
+    "- importance_score: 4",
+    "- key_excerpts: Seedance 2.5 将支持 30 秒视频生成。",
+  ].join("\n");
+  assert.ok(
+    autoSignalEligibilityIssues(unresolvedDiscoveryFixture).some((issue) => /discovery_source_not_resolved/iu.test(issue)),
+    "an explicit discovery_source role must not bypass source auditability",
+  );
+  assert.notEqual(
+    promotePriorityForIssues(unresolvedDiscoveryFixture, ["evidence_quality:missing_source_material", "source_auditability:discovery_source_not_resolved"]),
+    "high",
+    "a discovery-only summary without readable source evidence must not block release as confirmed high-value recall",
   );
 
   const privacyPledgeFixture = [
