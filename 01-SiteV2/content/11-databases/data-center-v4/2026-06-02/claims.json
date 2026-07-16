@@ -1,0 +1,1157 @@
+[
+  {
+    "claim_id": "CL-20df2227f2110bfe",
+    "raw_id": "RAW-74278aa84119962d",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.160",
+    "predicate": "product_release",
+    "object": "Added a prompt before writing to shell startup files ( .zshenv , .zlogin , .bash_login ) and ~/.config/git/ , which could otherwise lead to unintended command execution",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-74278aa84119962d",
+      "start": 415,
+      "end": 583
+    },
+    "source_quote": "Added a prompt before writing to shell startup files ( .zshenv , .zlogin , .bash_login ) and ~/.config/git/ , which could otherwise lead to unintended command execution",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-32bb638b8d6ba50a",
+    "raw_id": "RAW-74278aa84119962d",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.160",
+    "predicate": "product_release",
+    "object": "Fixed the auto mode unavailability message on third-party providers (Bedrock/Vertex/Foundry) to point to the CLAUDE_CODE_ENABLE_AUTO_MODE opt-in instead of incorrectly blaming the model",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-74278aa84119962d",
+      "start": 2641,
+      "end": 2826
+    },
+    "source_quote": "Fixed the auto mode unavailability message on third-party providers (Bedrock/Vertex/Foundry) to point to the CLAUDE_CODE_ENABLE_AUTO_MODE opt-in instead of incorrectly blaming the model",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c679e4b54957e7a5",
+    "raw_id": "RAW-74278aa84119962d",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.160",
+    "predicate": "product_release",
+    "object": "Removed CLAUDE_CODE_OPUS_4_6_FAST_MODE_OVERRIDE ; the environment variable is now a no-op",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-74278aa84119962d",
+      "start": 3734,
+      "end": 3823
+    },
+    "source_quote": "Removed CLAUDE_CODE_OPUS_4_6_FAST_MODE_OVERRIDE ; the environment variable is now a no-op",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-63e0ebd7c9e613c1",
+    "raw_id": "RAW-9a3e75db3a4bd51c",
+    "claim_type": "deployment",
+    "subject": "NVIDIA JetPack 7.2支持内存优化的边缘智能体",
+    "predicate": "deployment",
+    "object": "Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.2",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-9a3e75db3a4bd51c",
+      "start": 9,
+      "end": 89
+    },
+    "source_quote": "Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.2",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-68c436264a04f457",
+    "raw_id": "RAW-9a3e75db3a4bd51c",
+    "claim_type": "deployment",
+    "subject": "NVIDIA JetPack 7.2支持内存优化的边缘智能体",
+    "predicate": "deployment",
+    "object": "With JetPack 7.2, Jetson is NemoClaw-ready out of the box. JetPack 7.2 comes preconfigured with the required dependencies and software stack, so you can deploy and run NemoClaw-based workflows on Jetson without manual environment setup. This enables you to easily build agentic physical AI applications across robotics, industrial automation, vision agents, and edge AI systems.",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-9a3e75db3a4bd51c",
+      "start": 2388,
+      "end": 2766
+    },
+    "source_quote": "With JetPack 7.2, Jetson is NemoClaw-ready out of the box. JetPack 7.2 comes preconfigured with the required dependencies and software stack, so you can deploy and run NemoClaw-based workflows on Jetson without manual environment setup. This enables you to easily build agentic physical AI applications across robotics, industrial automation, vision agents, and edge AI systems.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-94e419b766e41018",
+    "raw_id": "RAW-9a3e75db3a4bd51c",
+    "claim_type": "deployment",
+    "subject": "NVIDIA JetPack 7.2支持内存优化的边缘智能体",
+    "predicate": "deployment",
+    "object": "Companies such as Konsulko Group and Peridio offer complete OS solutions like Konsulko Orca OS and Avocado OS , while Balena focuses on container-based fleet management and deployment at scale. Other NVIDIA partners include Neurealm , RidgeRun , and Wind River , who provide extensive engineering and NRE services with deep expertise in embedded Linux, BSP customization, multimedia pipelines, and long-term platform support. Together, this ecosystem enables developers to rapidly deploy, customize, and scale Yocto-based solutions on Jetson.",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-9a3e75db3a4bd51c",
+      "start": 9626,
+      "end": 10168
+    },
+    "source_quote": "Companies such as Konsulko Group and Peridio offer complete OS solutions like Konsulko Orca OS and Avocado OS , while Balena focuses on container-based fleet management and deployment at scale. Other NVIDIA partners include Neurealm , RidgeRun , and Wind River , who provide extensive engineering and NRE services with deep expertise in embedded Linux, BSP customization, multimedia pipelines, and long-term platform support. Together, this ecosystem enables developers to rapidly deploy, customize, and scale Yocto-based solutions on Jetson.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b6f353bc762ece07",
+    "raw_id": "RAW-9a3e75db3a4bd51c",
+    "claim_type": "deployment",
+    "subject": "NVIDIA JetPack 7.2支持内存优化的边缘智能体",
+    "predicate": "deployment",
+    "object": "JetPack 7.2 extends the Ubuntu 24.04, kernel 6.8 and CUDA Toolkit 13.0 -based compute stack (introduced with Jetson Thor) to the Jetson Orin family, bringing both platforms onto a single unified software foundation. With a common stack across Orin and Thor, you can seamlessly deploy the latest AI applications across the entire Jetson portfolio while taking advantage of the newest CUDA capabilities, libraries, and performance optimizations.",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-9a3e75db3a4bd51c",
+      "start": 10947,
+      "end": 11390
+    },
+    "source_quote": "JetPack 7.2 extends the Ubuntu 24.04, kernel 6.8 and CUDA Toolkit 13.0 -based compute stack (introduced with Jetson Thor) to the Jetson Orin family, bringing both platforms onto a single unified software foundation. With a common stack across Orin and Thor, you can seamlessly deploy the latest AI applications across the entire Jetson portfolio while taking advantage of the newest CUDA capabilities, libraries, and performance optimizations.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a58692f950b9bab3",
+    "raw_id": "RAW-1070e9b577a3b72a",
+    "claim_type": "deployment",
+    "subject": "Parloa",
+    "predicate": "deployment",
+    "object": "$350M with SAP, Microsoft, OpenAI partnerships",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1070e9b577a3b72a",
+      "start": 99,
+      "end": 461
+    },
+    "source_quote": "Parloa, the Berlin-founded AI agent management platform, has announced a wave of strategic partnerships with SAP, Microsoft, OpenAI, Five9, and Epic as it deploys the $350 million it raised in its January 2026 Series D round. The company, which builds AI agents for enterprise customer service, has also surpassed $50 million in annual recurring revenue with […]",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-80534931c3eaf159",
+    "raw_id": "RAW-1070e9b577a3b72a",
+    "claim_type": "deployment",
+    "subject": "Parloa",
+    "predicate": "deployment",
+    "object": "$350M with SAP, Microsoft, OpenAI partnerships",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1070e9b577a3b72a",
+      "start": 848,
+      "end": 1266
+    },
+    "source_quote": "Parloa, the Berlin-founded AI agent management platform, has announced a wave of strategic partnerships with SAP, Microsoft, OpenAI, Five9, and Epic as it deploys the $350 million it raised in its January 2026 Series D round. The company, which builds AI agents for enterprise customer service, has also surpassed $50 million in annual recurring revenue with 150% net revenue retention, according to its latest update.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a69a96d180f7f707",
+    "raw_id": "RAW-1070e9b577a3b72a",
+    "claim_type": "deployment",
+    "subject": "Parloa",
+    "predicate": "deployment",
+    "object": "$350M with SAP, Microsoft, OpenAI partnerships",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1070e9b577a3b72a",
+      "start": 3794,
+      "end": 4279
+    },
+    "source_quote": "Parloa’s pitch is that it sits at a different layer. Rather than being a contact centre platform that added AI, or an AI model provider that added customer service, Parloa positions itself as the management layer for deploying, testing, and optimising AI agents across whatever infrastructure an enterprise already runs. Its Agent Management Platform handles the full lifecycle from simulation to production, with what the company calls “build once, deploy anywhere” agent composition.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8fba0f2db9b48b2c",
+    "raw_id": "RAW-1070e9b577a3b72a",
+    "claim_type": "deployment",
+    "subject": "Parloa",
+    "predicate": "deployment",
+    "object": "$350M with SAP, Microsoft, OpenAI partnerships",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1070e9b577a3b72a",
+      "start": 5770,
+      "end": 6132
+    },
+    "source_quote": "Parloa, the Berlin-founded AI agent management platform, has announced a wave of strategic partnerships with SAP, Microsoft, OpenAI, Five9, and Epic as it deploys the $350 million it raised in its January 2026 Series D round. The company, which builds AI agents for enterprise customer service, has also surpassed $50 million in annual recurring revenue with […]",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e006b1aae6d7786b",
+    "raw_id": "RAW-ac120da2d0e15a31",
+    "claim_type": "funding",
+    "subject": "Thoughtly",
+    "predicate": "funding",
+    "object": "$8M+ to build omnichannel agents for revenue teams | Thoughtly",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ac120da2d0e15a31",
+      "start": 2266,
+      "end": 2870
+    },
+    "source_quote": "Nomad, a national rental management platform, booked 650 meetings in 90 days, increased close rates on lower-score leads from 16% to 38%, and saved $400,000 in annual headcount costs — with an agent deployed within one week of signing. Nomad now runs 500–700 outbound calls per week and is expanding Thoughtly to handle its leasing support line, which processes over 13,000 monthly calls. \"Speed-to-lead is the real game changer in sales. With Thoughtly, we're calling leads within 60 seconds of form submission. That's just not possible with a human team,\" said Will O'Neil, Head of IT & People at Nomad",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-43c807ff620e9dee",
+    "raw_id": "RAW-ac120da2d0e15a31",
+    "claim_type": "funding",
+    "subject": "Thoughtly",
+    "predicate": "funding",
+    "object": "$8M+ to build omnichannel agents for revenue teams | Thoughtly",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-ac120da2d0e15a31",
+      "start": 29,
+      "end": 366
+    },
+    "source_quote": "NEW YORK, April 22, 2026 — Thoughtly, the AI engagement platform to give CRMs a voice, today announced a $5.5 million Seed round, bringing total funding to $8+ million. The round was led by Armory Square Ventures, with participation from nvp capital, Converge, K5 Global Tokyo Black , and returning investors Afore Capital and Greycroft.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dcd9552c741e1c7b",
+    "raw_id": "RAW-ac120da2d0e15a31",
+    "claim_type": "funding",
+    "subject": "Thoughtly",
+    "predicate": "funding",
+    "object": "$8M+ to build omnichannel agents for revenue teams | Thoughtly",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-ac120da2d0e15a31",
+      "start": 367,
+      "end": 595
+    },
+    "source_quote": "The announcement coincides with the launch of Thoughtly's omnichannel platform, which expands beyond voice to include SMS and email — allowing revenue teams to reach every lead, on every channel, from a single CRM-native system.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-65a3793a06dc6ef7",
+    "raw_id": "RAW-ac120da2d0e15a31",
+    "claim_type": "funding",
+    "subject": "Thoughtly",
+    "predicate": "funding",
+    "object": "$8M+ to build omnichannel agents for revenue teams | Thoughtly",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-ac120da2d0e15a31",
+      "start": 637,
+      "end": 953
+    },
+    "source_quote": "Most revenue teams can only human-touch a fraction of their pipeline. The rest go cold. Email and SMS drip campaigns underperform. And while teams have automated data workflows and digital channels, phone conversations have remained largely manual — creating coverage gaps, slower response times, and missed revenue.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-420009671116ab97",
+    "raw_id": "RAW-595bc3f6a9f715de",
+    "claim_type": "funding",
+    "subject": "First Concepts",
+    "predicate": "funding",
+    "object": "$1M to develop AI-native OS for creative work - Tech.eu",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-595bc3f6a9f715de",
+      "start": 21,
+      "end": 88
+    },
+    "source_quote": "First Concepts raises $1M to develop AI-native OS for creative work",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-db09aee682aa34e2",
+    "raw_id": "RAW-595bc3f6a9f715de",
+    "claim_type": "funding",
+    "subject": "First Concepts",
+    "predicate": "funding",
+    "object": "$1M to develop AI-native OS for creative work - Tech.eu",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-595bc3f6a9f715de",
+      "start": 394,
+      "end": 467
+    },
+    "source_quote": "has raised $1 million in pre-seed funding less than nine months after its",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1dbd2238205ef70f",
+    "raw_id": "RAW-595bc3f6a9f715de",
+    "claim_type": "funding",
+    "subject": "First Concepts",
+    "predicate": "funding",
+    "object": "$1M to develop AI-native OS for creative work - Tech.eu",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-595bc3f6a9f715de",
+      "start": 2393,
+      "end": 2460
+    },
+    "source_quote": "First Concepts raises $1M to develop AI-native OS for creative work",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c59e43ff54b94ce9",
+    "raw_id": "RAW-595bc3f6a9f715de",
+    "claim_type": "funding",
+    "subject": "First Concepts",
+    "predicate": "funding",
+    "object": "$1M to develop AI-native OS for creative work - Tech.eu",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-595bc3f6a9f715de",
+      "start": 89,
+      "end": 208
+    },
+    "source_quote": "First Concepts builds AI software that helps creative teams develop ideas and manage context across creative workflows.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6f32658cdb30e4e3",
+    "raw_id": "RAW-8463ab28e335c6c3",
+    "claim_type": "funding",
+    "subject": "Ex-DeepMind researchers",
+    "predicate": "funding",
+    "object": "$50M to build AI that figures out which scientific questions are worth asking",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-8463ab28e335c6c3",
+      "start": 0,
+      "end": 108
+    },
+    "source_quote": "Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d020c310852396fc",
+    "raw_id": "RAW-8463ab28e335c6c3",
+    "claim_type": "funding",
+    "subject": "Ex-DeepMind researchers",
+    "predicate": "funding",
+    "object": "$50M to build AI that figures out which scientific questions are worth asking",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-8463ab28e335c6c3",
+      "start": 502,
+      "end": 672
+    },
+    "source_quote": "TL;DRLondon AI lab Inherent raised $50M from Index Ventures and Radical Ventures to build self-improving AI for scientific discovery. Ex-UK AI tsar Matt Clifford advises.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-22375e525a977341",
+    "raw_id": "RAW-8463ab28e335c6c3",
+    "claim_type": "funding",
+    "subject": "Ex-DeepMind researchers",
+    "predicate": "funding",
+    "object": "$50M to build AI that figures out which scientific questions are worth asking",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-8463ab28e335c6c3",
+      "start": 4123,
+      "end": 4231
+    },
+    "source_quote": "Ex-DeepMind researchers raised $50M to build AI that figures out which scientific questions are worth asking",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9cadd0fe6128a83a",
+    "raw_id": "RAW-8463ab28e335c6c3",
+    "claim_type": "funding",
+    "subject": "Ex-DeepMind researchers",
+    "predicate": "funding",
+    "object": "$50M to build AI that figures out which scientific questions are worth asking",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-8463ab28e335c6c3",
+      "start": 1528,
+      "end": 1722
+    },
+    "source_quote": "Inherent is building a platform called Faraday, named after the scientist. Its purpose is not to answer questions faster. It is to figure out which questions are worth asking in the first place.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fe3b274239d09fe4",
+    "raw_id": "RAW-842bbcab2a3fca76",
+    "claim_type": "funding",
+    "subject": "Y Combinator grad and AI insurance brokerage Harper",
+    "predicate": "funding",
+    "object": "$47M",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-842bbcab2a3fca76",
+      "start": 196,
+      "end": 259
+    },
+    "source_quote": "Y Combinator grad and AI insurance brokerage Harper raises $47M",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-186ddc033fccbc4c",
+    "raw_id": "RAW-842bbcab2a3fca76",
+    "claim_type": "funding",
+    "subject": "Y Combinator grad and AI insurance brokerage Harper",
+    "predicate": "funding",
+    "object": "$47M",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-842bbcab2a3fca76",
+      "start": 313,
+      "end": 522
+    },
+    "source_quote": "Dakotah Rice is stepping back into the founder’s seat. On Wednesday, he announced that his new company, the AI-native insurance brokerage Harper, has raised $46.8 million in a combined Series A and seed round.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-02094f9860736dac",
+    "raw_id": "RAW-842bbcab2a3fca76",
+    "claim_type": "funding",
+    "subject": "Y Combinator grad and AI insurance brokerage Harper",
+    "predicate": "funding",
+    "object": "$47M",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-842bbcab2a3fca76",
+      "start": 2387,
+      "end": 2515
+    },
+    "source_quote": "Investors in the company include YC, Lobster Capital, and Peak XV Partners, and its Series A round was led by Emergence Capital.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-347a7343f60a770e",
+    "raw_id": "RAW-842bbcab2a3fca76",
+    "claim_type": "funding",
+    "subject": "Y Combinator grad and AI insurance brokerage Harper",
+    "predicate": "funding",
+    "object": "$47M",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-842bbcab2a3fca76",
+      "start": 844,
+      "end": 1132
+    },
+    "source_quote": "For his next company, he went back to his roots. His family owned an insurance brokerage, and he remembered all the hassles that came when founders like himself walked through the doors, trying to insure their businesses. “I hated insurance,” he continued, “swore I’d never end up in it.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8f976485064aec5d",
+    "raw_id": "RAW-9f2f1ae36c170790",
+    "claim_type": "funding",
+    "subject": "Telli, a YC alum,",
+    "predicate": "funding",
+    "object": "pre-seed funding for its AI voice agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-9f2f1ae36c170790",
+      "start": 199,
+      "end": 264
+    },
+    "source_quote": "Telli, a YC alum, raises pre-seed funding for its AI voice agents",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e5ab6de62e122617",
+    "raw_id": "RAW-9f2f1ae36c170790",
+    "claim_type": "funding",
+    "subject": "Telli, a YC alum,",
+    "predicate": "funding",
+    "object": "pre-seed funding for its AI voice agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-9f2f1ae36c170790",
+      "start": 307,
+      "end": 718
+    },
+    "source_quote": "Former Y Combinator startup Telli is helping companies alleviate the bottleneck that occurs when a high-volume of customers try to, for example, book appointments. Its AI voice agents kick in and handle basic operations while handing off more-complex processes to human operators. The Berlin-based startup has now raised $3.6 million in a pre-seed funding round led by Berlin’s Cherry Ventures and Y Combinator.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-902ff6e4251ed6d0",
+    "raw_id": "RAW-9f2f1ae36c170790",
+    "claim_type": "funding",
+    "subject": "Telli, a YC alum,",
+    "predicate": "funding",
+    "object": "pre-seed funding for its AI voice agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-9f2f1ae36c170790",
+      "start": 719,
+      "end": 834
+    },
+    "source_quote": "Telli says its AI voice agents can perform a number of tasks, including automated callbacks and even closing deals.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-73c987a9a2e06683",
+    "raw_id": "RAW-9f2f1ae36c170790",
+    "claim_type": "funding",
+    "subject": "Telli, a YC alum,",
+    "predicate": "funding",
+    "object": "pre-seed funding for its AI voice agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-9f2f1ae36c170790",
+      "start": 997,
+      "end": 1302
+    },
+    "source_quote": "It’s now claiming to have reached revenue growth of more than 50% month over month and has processed close to a million phone calls (and all with only a six-person team) out of the Berlin office. Customers are spread across Germany, the U.K., Latin America, and the U.S., with plans for further expansion.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-69fb2230915dd1fa",
+    "raw_id": "RAW-f9bfd79ee0fd0b86",
+    "claim_type": "funding",
+    "subject": "Here are the 55 US AI startups that",
+    "predicate": "funding",
+    "object": "$100M or more in 2025",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f9bfd79ee0fd0b86",
+      "start": 190,
+      "end": 254
+    },
+    "source_quote": "Here are the 55 US AI startups that raised $100M or more in 2025",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-82be784272b8d3b3",
+    "raw_id": "RAW-f9bfd79ee0fd0b86",
+    "claim_type": "funding",
+    "subject": "Here are the 55 US AI startups that",
+    "predicate": "funding",
+    "object": "$100M or more in 2025",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f9bfd79ee0fd0b86",
+      "start": 354,
+      "end": 593
+    },
+    "source_quote": "There were 49 startups that raised funding rounds worth $100 million or more in 2024, per our count at TechCrunch; three companies raised more than one “mega-round,” and seven companies raised rounds that were $1 billion in size or larger.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5f3770e4458caa9c",
+    "raw_id": "RAW-f9bfd79ee0fd0b86",
+    "claim_type": "funding",
+    "subject": "Here are the 55 US AI startups that",
+    "predicate": "funding",
+    "object": "$100M or more in 2025",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f9bfd79ee0fd0b86",
+      "start": 594,
+      "end": 821
+    },
+    "source_quote": "The industry didn’t slow down in 2025. While less companies raised rounds larger than $1 billion, four — Anthropic raised two rounds over $1 billion — significantly more companies raised multiple rounds compared to 2024, eight.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-10a400458b364cda",
+    "raw_id": "RAW-f9bfd79ee0fd0b86",
+    "claim_type": "funding",
+    "subject": "Here are the 55 US AI startups that",
+    "predicate": "funding",
+    "object": "$100M or more in 2025",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-f9bfd79ee0fd0b86",
+      "start": 845,
+      "end": 1180
+    },
+    "source_quote": "Elon Musk’s xAI announced a $20 billion Series E round and Sam Altman’s brain computer interface startup Merge Labs raised a $250 million seed round (with OpenAI as the lead investor) in the first few weeks of 2026, so signs point to another strong year. Of course, it’s still early; we’ll be watching to see if the momentum continues.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-083dede3547eb7ab",
+    "raw_id": "RAW-37d4f600ce6105c9",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "a way for enterprises to build and manage AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-37d4f600ce6105c9",
+      "start": 190,
+      "end": 257
+    },
+    "source_quote": "OpenAI launches a way for enterprises to build and manage AI agents",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8c153161cb7e77c9",
+    "raw_id": "RAW-37d4f600ce6105c9",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "a way for enterprises to build and manage AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-37d4f600ce6105c9",
+      "start": 306,
+      "end": 476
+    },
+    "source_quote": "OpenAI has launched a new product to help enterprises navigate the world of AI agents, focusing on agent management as critical infrastructure for enterprise AI adoption.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0ec606d1daf4c861",
+    "raw_id": "RAW-37d4f600ce6105c9",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "a way for enterprises to build and manage AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-37d4f600ce6105c9",
+      "start": 477,
+      "end": 714
+    },
+    "source_quote": "On Thursday, AI giant OpenAI announced the launch of OpenAI Frontier , an end-to-end platform designed for enterprises to build and manage AI agents. It’s an open platform, which means users can manage agents built outside of OpenAI too.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ef67c03336755f7d",
+    "raw_id": "RAW-37d4f600ce6105c9",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "a way for enterprises to build and manage AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-37d4f600ce6105c9",
+      "start": 2293,
+      "end": 2573
+    },
+    "source_quote": "It’s not surprising that OpenAI would release this platform in early 2026, as the company has made it clear that enterprise adoption is one of its main focus areas for this year . The company has also announced two notable enterprise deals this year with ServiceNow and Snowflake.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0385c950c155ac2d",
+    "raw_id": "RAW-5941b1d0c9eba020",
+    "claim_type": "funding",
+    "subject": "Empromptu",
+    "predicate": "funding",
+    "object": "$2M pre-seed to help enterprises build AI apps",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-5941b1d0c9eba020",
+      "start": 196,
+      "end": 259
+    },
+    "source_quote": "Empromptu raises $2M pre-seed to help enterprises build AI apps",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6648bbdefe007f3d",
+    "raw_id": "RAW-5941b1d0c9eba020",
+    "claim_type": "funding",
+    "subject": "Empromptu",
+    "predicate": "funding",
+    "object": "$2M pre-seed to help enterprises build AI apps",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-5941b1d0c9eba020",
+      "start": 716,
+      "end": 1055
+    },
+    "source_quote": "After CodeSee was acquired in 2024, Leven decided that she wanted to build a product that would let business owners, even those without technical backgrounds, build AI applications. She teamed up with AI researcher Sean Robinson, and last October, the two launched Empromptu, an AI service that businesses can use to build AI applications.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7b440ce9071d91ea",
+    "raw_id": "RAW-5941b1d0c9eba020",
+    "claim_type": "funding",
+    "subject": "Empromptu",
+    "predicate": "funding",
+    "object": "$2M pre-seed to help enterprises build AI apps",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-5941b1d0c9eba020",
+      "start": 1056,
+      "end": 1400
+    },
+    "source_quote": "Empromptu claims all a user has to do is tell the platform’s AI chatbot what they want — like a new classification app or a generative recommendation app — and the tool will go ahead and build it. It also provides LLM tools to help users if they want to fine-tune any results and lets companies add AI features to their own existing code bases.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2e188b60d17dc4e4",
+    "raw_id": "RAW-5941b1d0c9eba020",
+    "claim_type": "funding",
+    "subject": "Empromptu",
+    "predicate": "funding",
+    "object": "$2M pre-seed to help enterprises build AI apps",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-5941b1d0c9eba020",
+      "start": 1523,
+      "end": 1896
+    },
+    "source_quote": "“Vibe coding is excellent for quick experiments, but Empromptu is what turns those experiments into real software,” she said. Empromptu, she continued, “turns ideas into production features with built-in evaluation, governance, and self-improvement. You ship to real customers, with real data and complete control. If vibe coding is the brainstorm, Empromptu is the build.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c99d02cb4f23c9e2",
+    "raw_id": "RAW-ac14a92e351864c8",
+    "claim_type": "funding",
+    "subject": "Relevance AI",
+    "predicate": "funding",
+    "object": "$24M to help businesses build AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ac14a92e351864c8",
+      "start": 190,
+      "end": 249
+    },
+    "source_quote": "Relevance AI raises $24M to help businesses build AI agents",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2be9e7977f360a29",
+    "raw_id": "RAW-ac14a92e351864c8",
+    "claim_type": "funding",
+    "subject": "Relevance AI",
+    "predicate": "funding",
+    "object": "$24M to help businesses build AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-ac14a92e351864c8",
+      "start": 835,
+      "end": 1242
+    },
+    "source_quote": "Relevance AI , a San Francisco- and Sydney-based startup developing an AI agent “operating system” to enable businesses to build teams of AI agents, has raised $24 million in Series B funding led by Bessemer Venture Partners. Returning investors King River Capital, Insight Partners, and Peak XV also participated, bringing Relevance’s total raised to $37 million. The company did not provide its valuation.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0336f38ec53b54fe",
+    "raw_id": "RAW-ac14a92e351864c8",
+    "claim_type": "funding",
+    "subject": "Relevance AI",
+    "predicate": "funding",
+    "object": "$24M to help businesses build AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-ac14a92e351864c8",
+      "start": 1243,
+      "end": 1453
+    },
+    "source_quote": "The fundraising comes about a year and a half after the startup closed its Series A . Relevance says that it has experienced rapid growth, with 40,000 AI agents registered on its platform in January 2025 alone.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-42f094f135dd6ffc",
+    "raw_id": "RAW-ac14a92e351864c8",
+    "claim_type": "funding",
+    "subject": "Relevance AI",
+    "predicate": "funding",
+    "object": "$24M to help businesses build AI agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-ac14a92e351864c8",
+      "start": 2652,
+      "end": 3045
+    },
+    "source_quote": "Coinciding with its Series B funding, Relevance is introducing two new features on its platform. “Workforce” is a no-code multi-agent system designed to help non-technical professionals and engineers build specialized teams of agents to collaborate like human employees, completing complex processes from start to finish. “Invent” is a tool that lets users create AI agents using text prompts.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-678da7b8702f574b",
+    "raw_id": "RAW-5e12e0a995c900fd",
+    "claim_type": "funding",
+    "subject": "谷歌母公司 Alphabet 宣布 800 亿美元大额",
+    "predicate": "funding",
+    "object": "，用于 AI 基础设施与算力建设",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-5e12e0a995c900fd",
+      "start": 0,
+      "end": 52
+    },
+    "source_quote": "谷歌母公司 Alphabet 宣布 800 亿美元大额融资，用于 AI 基础设施与算力建设 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8d7cd15d43c821c7",
+    "raw_id": "RAW-5e12e0a995c900fd",
+    "claim_type": "funding",
+    "subject": "谷歌母公司 Alphabet 宣布 800 亿美元大额",
+    "predicate": "funding",
+    "object": "，用于 AI 基础设施与算力建设",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-5e12e0a995c900fd",
+      "start": 218,
+      "end": 263
+    },
+    "source_quote": "谷歌母公司 Alphabet 宣布 800 亿美元大额融资，用于 AI 基础设施与算力建设",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b0fbc7f8f005fb47",
+    "raw_id": "RAW-5e12e0a995c900fd",
+    "claim_type": "funding",
+    "subject": "谷歌母公司 Alphabet 宣布 800 亿美元大额",
+    "predicate": "funding",
+    "object": "，用于 AI 基础设施与算力建设",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-5e12e0a995c900fd",
+      "start": 335,
+      "end": 458
+    },
+    "source_quote": "IT之家 6 月 2 日消息，Google（谷歌）母公司 Alphabet（字母表）美国当地时间昨日宣布进行 共计 800 亿美元（IT之家注：现汇率约合 5418.04 亿元人民币）的大额股权融资 ，所得将用于投资 AI 基础设施与算力等目的。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5f45ad800bcbb895",
+    "raw_id": "RAW-5e12e0a995c900fd",
+    "claim_type": "funding",
+    "subject": "谷歌母公司 Alphabet 宣布 800 亿美元大额",
+    "predicate": "funding",
+    "object": "，用于 AI 基础设施与算力建设",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-5e12e0a995c900fd",
+      "start": 960,
+      "end": 1012
+    },
+    "source_quote": "谷歌母公司 Alphabet 2025 年营收首破 4000 亿美元，2026 年 AI 支出增长近一倍",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dd15cf279436e22b",
+    "raw_id": "RAW-63c27018cc1d4f60",
+    "claim_type": "funding",
+    "subject": "YC alum Adam",
+    "predicate": "funding",
+    "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-63c27018cc1d4f60",
+      "start": 199,
+      "end": 270
+    },
+    "source_quote": "YC alum Adam raises $4.1M to turn viral text-to-3D tool into AI copilot",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e56cac57790f19d4",
+    "raw_id": "RAW-63c27018cc1d4f60",
+    "claim_type": "funding",
+    "subject": "YC alum Adam",
+    "predicate": "funding",
+    "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-63c27018cc1d4f60",
+      "start": 312,
+      "end": 480
+    },
+    "source_quote": "Adam , one of the most viral startups in Y Combinator’s Winter 2025 batch, has raised a $4.1 million seed round to power its next steps, TechCrunch learned exclusively.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e4175189ca6aac93",
+    "raw_id": "RAW-63c27018cc1d4f60",
+    "claim_type": "funding",
+    "subject": "YC alum Adam",
+    "predicate": "funding",
+    "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-63c27018cc1d4f60",
+      "start": 1497,
+      "end": 1832
+    },
+    "source_quote": "Its initial tool lets creators without CAD skills create 3D models from text prompts, but early feedback showed that text wasn’t always the best way to interact with 3D, Dive said. “So for our copilot, we blended in different interaction paradigms; for example, users selecting different parts of the 3D object and conversing with it.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b8853d1e3681ca75",
+    "raw_id": "RAW-63c27018cc1d4f60",
+    "claim_type": "funding",
+    "subject": "YC alum Adam",
+    "predicate": "funding",
+    "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-63c27018cc1d4f60",
+      "start": 1833,
+      "end": 2107
+    },
+    "source_quote": "This will give the startup an element of differentiation compared to other text-to-CAD products , although there is already competition in the “AI copilot for CAD” segment as well. MecAgent , for instance, is already available, but Adam could capitalize on its viral launch.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  }
+]

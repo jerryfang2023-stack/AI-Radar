@@ -4,6 +4,7 @@ import crypto from "crypto";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { buildEventDisplayTitle, isCompletePublicEventTitle } from "./event-public-title.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,9 +25,9 @@ const VERSION = Object.freeze({
 const EVENT_RULES = [
   ["acquisition", /\b(?:acquires?|acquired|acquisition|merges? with|merged with)\b|收购|并购|合并/iu],
   ["lawsuit_settlement", /\b(?:sues?|sued|lawsuit|settles?|settlement|antitrust action|trademark dispute|legal challenge|court ruled)\b|起诉|诉讼|和解|反垄断|商标纠纷|败诉|驳回注册/iu],
-  ["funding", /\b(?:raises?|raised|closes?|closed|funding round|financing round|series [a-z]|launch(?:es|ed)? with [$€£¥]\s?\d)\b|\b(?:secures?|secured)\b(?=.{0,60}\b(?:funding|financing|investment|series|seed|round)\b|.{0,60}[$€£¥]\s?\d)|融资|获投|募资|完成.*轮/iu],
+  ["funding", /\b(?:raises?|raised|closes?|closed)\b(?=.{0,80}(?:[$€£¥]\s?\d|\b(?:funding|financing|investment|series|seed|round)\b))|\b(?:funding round|financing round|series [a-z])\b|\blaunch(?:es|ed)? with [$€£¥]\s?\d|\b(?:secures?|secured)\b(?=.{0,60}\b(?:funding|financing|investment|series|seed|round)\b|.{0,60}[$€£¥]\s?\d)|融资|获投|募资|完成.*轮/iu],
   ["partnership", /\b(?:partners? with|partnership|collaborat(?:es?|ion)|alliance|integrat(?:es?|ion)\s+with)\b|合作|伙伴关系|结盟|接入/iu],
-  ["procurement_contract", /\b(?:procurement|contract(?:ed|s)?|tender|awarded? .*contract|selected .*provider)\b|采购|招标|中标|合同/iu],
+  ["procurement_contract", /\b(?:procurement agreement|signs? .{0,50}contract|enters? (?:into )?.{0,50}contract|tender|awarded? .{0,50}contract|selected .{0,50}provider)\b|采购|招标|中标|签署.{0,30}合同|达成.{0,30}合同/iu],
   ["hardware_capacity", /\b(?:fab capacity|manufacturing capacity|production capacity|wafer capacity)\b|晶圆产能|制造产能|扩产/iu],
   ["hardware_supply", /\b(?:chip supply|gpu supply|semiconductor supply|ships? .*(?:chips?|gpus?|accelerators?)|deliver(?:s|ed) .*(?:chips?|gpus?|accelerators?))\b|芯片供应|GPU供应|出货.*(?:芯片|GPU)|交付.*(?:芯片|GPU)/iu],
   ["hardware_deployment", /\b(?:deploys?|deployed|installs?|installed)\b.{0,80}\b(?:gpu|accelerator|server|cluster|data cent(?:er|re))\b|部署.{0,40}(?:GPU|芯片|服务器|集群|数据中心)/iu],
@@ -63,6 +64,10 @@ const WITHDRAWN = /\b(?:withdrawn|withdraws?|cancelled|canceled)\b|撤回|取消
 const COMPLETED = /\b(?:completed|closed|acquired|merged|raised|secured|launched|released|introduced|unveiled|shipped|deployed|implemented|appointed|joined|left)\b|完成|收购|合并|获得|融资|发布|推出|出货|部署|上线|任命|加入|离职/iu;
 const BOILERPLATE_LINE = /^(?:topics?|most popular|related articles?|view bio|register now|loading the next article|error loading|when you purchase through links|back to top|cookie settings?|스크롤 이동|상태바|기사본문)\b/iu;
 const BOILERPLATE_TEXT = /(?:most popular|loading the next article|error loading the next article|register now|cookie settings|when you purchase through links|스크롤 이동|상태바|기사본문|the body content)/iu;
+const INFORMATIONAL_TITLE = /^(?:how\b|what\b|why\b|when\b|where\b|guide\b|cost\b|the cost\b)|\b(?:essential|complete|ultimate)\s+(?:guide|handbook)\b|\bcost to implement\b/iu;
+const TRUNCATED_OR_NON_EVENT_TITLE = /(?:…|\.\.\.)|^(?:show hn:|ask hn:|launch hn:|open[- ]source\b|github\b|youtube\b|ep\s+\d+\b|hype\b|you need\b|frontier ai labs\b|if you\b)|\b(?:roadmap|playbook|handbook)\b.*\b(?:engineer|engineering|deployment)\b/iu;
+const COMMUNITY_DISCOVERY_URL = /^https?:\/\/(?:www\.)?(?:facebook\.com\/groups\/|reddit\.com\/|news\.ycombinator\.com\/|linkedin\.com\/|youtube\.com\/|youtu\.be\/|podcasters\.spotify\.com\/|x\.com\/)/iu;
+const GENERIC_NON_EVENT_TITLE = /^(?:top\s+\d+|\d+\s+best\b|best\b|hire\b)|\b(?:role explained|job opening|careers page|marketplace listing|case studies index)\b/iu;
 const EXPLICIT_AI_EVIDENCE = /\b(?:ai|artificial intelligence|generative ai|genai|ai[- ](?:native|powered|generated|coding|assistant|assistants|agent|agents|model|models|system|systems|service|services|platform|platforms|tool|tools|chip|chips|hardware|infrastructure|workload|workloads|research|video)|agentic(?:\s+ai)?|large language models?|foundation models?|vision[- ]language(?:[- ]action)? models?|multimodal(?:\s+moe)?|machine learning|deep learning|neural (?:network|networks|processing)|llms?|chatbots?|model inference|model training|open[- ]weight|npus?|edge ai|physical ai|embodied ai|computer vision|natural language processing)\b|人工智能|生成式\s*(?:人工智能|AI)|AI\s*(?:智能体|模型|系统|平台|服务|产品|工具|编程|助手|芯片|硬件|基础设施|应用|研究|视频|办公|手机|短剧|生产力|推理|训练)|智能体|大模型|基础模型|多模态|机器学习|深度学习|神经网络|生成模型|推理模型|世界模型|具身(?:智能|模型)|端侧生成式人工智能|模型服务|模型券|算力(?:集群|基础设施)/iu;
 const NAMED_AI_EVIDENCE = /\b(?:OpenAI|Anthropic|ChatGPT|Claude|Gemini|DeepMind|DeepSeek|Qwen|Grok|xAI|Mistral(?: AI)?|Llama|Hugging Face|OpenRouter|Codex|Bedrock AgentCore|Thinking Machines Lab|FuriosaAI|InstaLILY|C3 AI|MiniMax)\b|豆包|混元|千问|灵犀专业版|WPS Comate/iu;
 const GENERIC_VERTICAL_AI_PUBLICITY = /(?:我国|国内|全球)(?:首个|首款|首套).{0,80}(?:智慧|智能).{0,30}(?:大模型|系统)|(?:水风光|流域|气象|水文).{0,60}(?:智慧运营|大模型)/iu;
@@ -86,6 +91,37 @@ const JUDGMENT_KEYS = new Set([
   "business_meaning", "why_selected", "why_watch", "recommendation", "advice", "usable_for", "pool_routes",
   "emerging_signal_score", "guanlan_relevance", "interview_priority"
 ]);
+
+function eventSourceEligibility(raw, artifact, title) {
+  const rawQcDecision = cleanString(raw.raw_qc_decision).toLocaleLowerCase();
+  const extractionQuality = cleanString(raw.extraction_quality).toLocaleLowerCase();
+  if (rawQcDecision === "block" || extractionQuality === "failed") {
+    return { accepted: false, reason: "raw_source_quality_block" };
+  }
+  if (COMMUNITY_DISCOVERY_URL.test(artifact.source_url)) {
+    return { accepted: false, reason: "community_source_requires_original_event_source" };
+  }
+  try {
+    const url = new URL(artifact.source_url);
+    if (url.hostname === "github.com" && !/\/releases\/tag\//u.test(url.pathname)) {
+      return { accepted: false, reason: "repository_page_requires_release_source" };
+    }
+    if (/ycombinator\.com$/u.test(url.hostname) && /^\/companies\//u.test(url.pathname)) {
+      return { accepted: false, reason: "directory_page_not_event_source" };
+    }
+    if (/\/(?:marketplace|careers?|jobs?)\//iu.test(url.pathname)) {
+      return { accepted: false, reason: "listing_or_career_page_not_event_source" };
+    }
+  } catch {
+    return { accepted: false, reason: "invalid_source_url" };
+  }
+  const genericForwardDeployedPage = /\bforward[- ]deployed\b.{0,80}\b(?:engineer|engineering|role|service)\b/iu.test(title)
+    && !/\b(?:launch(?:es|ed)?|introduc(?:es|ed)?|announc(?:es|ed)?|partner(?:s|ed)?)\b.{0,100}\bforward[- ]deployed\b/iu.test(title);
+  if (TRUNCATED_OR_NON_EVENT_TITLE.test(title) || GENERIC_NON_EVENT_TITLE.test(title) || genericForwardDeployedPage) {
+    return { accepted: false, reason: "non_event_or_index_title" };
+  }
+  return { accepted: true, reason: "" };
+}
 
 const ORGANIZATION_ALIASES = [
   ["Accenture", ["Accenture"]],
@@ -225,8 +261,9 @@ function trimBoilerplate(text) {
 
 function sourceArtifact(raw, file) {
   const sourceUrl = cleanString(raw.original_url || raw.canonical_url || raw.source_url || raw.url || raw.link || raw.discovery_record?.origin_url);
+  const contentHash = cleanString(raw.content_hash || raw.full_text_hash || hash(raw.clean_text || raw.full_text));
   return {
-    source_artifact_id: `SA-${hash(sourceUrl || file)}`,
+    source_artifact_id: `SA-${hash(`${sourceUrl || file}|${contentHash}`)}`,
     source_url: sourceUrl,
     canonical_url: cleanString(raw.canonical_url || sourceUrl),
     publisher: cleanString(raw.source_name),
@@ -234,7 +271,7 @@ function sourceArtifact(raw, file) {
     captured_at: cleanString(raw.collected_at || raw.last_seen_at),
     snapshot_refs: [raw.markdown_snapshot_path, raw.json_snapshot_path, raw.html_snapshot_path, raw.screenshot_path]
       .map(cleanString).filter(Boolean),
-    content_hash: cleanString(raw.content_hash || raw.full_text_hash || hash(raw.clean_text || raw.full_text)),
+    content_hash: contentHash,
     _legacy_path: rel(file)
   };
 }
@@ -246,6 +283,8 @@ function documentType(raw) {
 }
 
 function findEventRule(title, lead = "") {
+  if (INFORMATIONAL_TITLE.test(title)) return null;
+  if (TRUNCATED_OR_NON_EVENT_TITLE.test(title)) return null;
   if (/[；;].*(?:发布|推出|开源|融资|收购|合作|备案|集成|上线)/iu.test(title)) return null;
   if (/(?:代码库|codebase).{0,30}(?:中|里)?.{0,30}(?:发现|came across|discovered)/iu.test(`${title}\n${lead}`)) return null;
   if (!/\b(?:report|research|study)\b|报告|研究/iu.test(title)
@@ -325,13 +364,24 @@ function cleanOrganizationCandidate(value) {
   return candidate;
 }
 
-function organizationMentions(title, parsed, eventType) {
+function organizationMentions(title, parsed, eventType, claimEvidence = "") {
   const hits = [];
   for (const entry of ORGANIZATION_ALIASES) {
     for (const alias of [...entry.aliases].sort((a, b) => b.length - a.length)) {
-      const index = title.toLocaleLowerCase().indexOf(alias.toLocaleLowerCase());
-      if (index < 0) continue;
-      hits.push({ canonicalName: entry.canonicalName, mentionText: title.slice(index, index + alias.length), start: index, verified: true });
+      const normalizedAlias = alias.toLocaleLowerCase();
+      const titleIndex = title.toLocaleLowerCase().indexOf(normalizedAlias);
+      const claimIndex = claimEvidence.toLocaleLowerCase().indexOf(normalizedAlias);
+      if (titleIndex < 0 && claimIndex < 0) continue;
+      const source = titleIndex >= 0 ? "title_original" : "claim_evidence";
+      const sourceText = source === "title_original" ? title : claimEvidence;
+      const index = source === "title_original" ? titleIndex : claimIndex;
+      hits.push({
+        canonicalName: entry.canonicalName,
+        mentionText: sourceText.slice(index, index + alias.length),
+        start: index,
+        source,
+        verified: true
+      });
       break;
     }
   }
@@ -342,7 +392,7 @@ function organizationMentions(title, parsed, eventType) {
   for (const hit of hits) {
     if (canonical.has(hit.canonicalName.toLocaleLowerCase())) continue;
     const end = hit.start + hit.mentionText.length;
-    if (selected.some((item) => hit.start >= item.start && end <= item.start + item.mentionText.length)) continue;
+    if (selected.some((item) => item.source === hit.source && hit.start >= item.start && end <= item.start + item.mentionText.length)) continue;
     selected.push(hit);
     canonical.add(hit.canonicalName.toLocaleLowerCase());
   }
@@ -352,7 +402,7 @@ function organizationMentions(title, parsed, eventType) {
       const candidate = cleanOrganizationCandidate(rawCandidate);
       if (!candidate || canonical.has(candidate.toLocaleLowerCase())) continue;
       const start = Math.max(0, title.indexOf(candidate));
-      selected.push({ canonicalName: candidate, mentionText: candidate, start, verified: false });
+      selected.push({ canonicalName: candidate, mentionText: candidate, start, source: "title_original", verified: false });
       canonical.add(candidate.toLocaleLowerCase());
     }
   }
@@ -695,14 +745,32 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   const matchers = taxonomyMatchers(taxonomy);
   const structuredMatchers = facetMatchers(taxonomy);
 
+  const uniqueEntries = new Map();
   for (const { raw, file } of rawEntries) {
     const artifact = sourceArtifact(raw, file);
+    const existing = uniqueEntries.get(artifact.source_artifact_id);
+    if (!existing) {
+      uniqueEntries.set(artifact.source_artifact_id, { raw, file, artifact });
+      continue;
+    }
+    existing.artifact.snapshot_refs = [...new Set([...existing.artifact.snapshot_refs, ...artifact.snapshot_refs])];
+    if (cleanString(raw.clean_text || raw.full_text).length > cleanString(existing.raw.clean_text || existing.raw.full_text).length) {
+      existing.raw = raw;
+      existing.file = file;
+      existing.artifact.publisher = artifact.publisher;
+      existing.artifact.capture_method = artifact.capture_method;
+      existing.artifact.captured_at = artifact.captured_at;
+    }
+  }
+
+  for (const { raw, file, artifact } of uniqueEntries.values()) {
     const rawId = `RAW-${hash(`${date}|${artifact.source_artifact_id}`)}`;
     const bodyOriginal = cleanString(raw.clean_text || raw.full_text);
     const bodyClean = trimBoilerplate(bodyOriginal);
     const titleOriginal = cleanString(raw.title || raw.title_zh);
     const title = normalizeEventTitle(titleOriginal);
-    const rule = findEventRule(title, bodyClean.slice(0, 1200));
+    const sourceEligibility = eventSourceEligibility(raw, artifact, title);
+    const rule = sourceEligibility.accepted ? findEventRule(title, bodyClean.slice(0, 1200)) : null;
     const opinionOnly = (OPINION_ONLY.test(title) && !rule) || PROPOSAL_ONLY.test(title);
     const extractionStatus = !artifact.source_url || bodyClean.length < 20 || /\ufffd/gu.test(bodyClean) ? "quarantined" : bodyClean.length < 300 ? "partial" : "accepted";
     const doc = {
@@ -736,13 +804,23 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     if (extractionStatus === "quarantined") {
       qaQueue.push({ qa_id: `QA-${hash(rawId)}`, asset_id: rawId, reason: "raw_document_not_auditable", status: "open", source_ref: artifact.source_artifact_id });
     } else if (!rule || opinionOnly) {
-      qaQueue.push({ qa_id: `QA-${hash(`${rawId}|no-event`)}`, asset_id: rawId, reason: opinionOnly ? "opinion_without_source_bounded_event" : "no_source_bounded_event", status: "review_optional", source_ref: artifact.source_artifact_id });
+      const reason = !sourceEligibility.accepted
+        ? sourceEligibility.reason
+        : opinionOnly
+          ? "opinion_without_source_bounded_event"
+          : "no_source_bounded_event";
+      qaQueue.push({ qa_id: `QA-${hash(`${rawId}|no-event`)}`, asset_id: rawId, reason, status: "review_optional", source_ref: artifact.source_artifact_id });
     } else {
       const parsed = actionMatch(title, rule.pattern);
       const status = eventStatus(title, bodyClean.slice(0, 1600), rule.eventType);
       const spans = claimCandidates(bodyClean, title, rule, parsed.subject);
       const eventClaimRows = spans.map((span, index) => buildClaim(rawId, rule.eventType, span, parsed, index, status));
-      const entityNames = organizationMentions(title, parsed, rule.eventType);
+      const entityNames = organizationMentions(
+        title,
+        parsed,
+        rule.eventType,
+        eventClaimRows.map((claim) => claim.source_quote).join("\n")
+      );
       const aiRelevance = eventAiRelevanceEvidence({
         title,
         claims: eventClaimRows,
@@ -792,16 +870,16 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
           entity.aliases = [...new Set([...entity.aliases, entityMatch.mentionText])];
           if (entityMatch.verified) entity.verification_status = "verified";
         }
-        const titleOffset = Math.max(0, entityMatch.start);
-        const mentionId = `EM-${hash(`${rawId}|${entityId}|${titleOffset}`)}`;
+        const mentionOffset = Math.max(0, entityMatch.start);
+        const mentionId = `EM-${hash(`${rawId}|${entityId}|${entityMatch.source}|${mentionOffset}`)}`;
         entityMentions.push({
           mention_id: mentionId,
           entity_id: entityId,
           raw_id: rawId,
           text: entityMatch.mentionText,
-          source: "title_original",
-          start: titleOffset,
-          end: titleOffset + entityMatch.mentionText.length,
+          source: entityMatch.source,
+          start: mentionOffset,
+          end: mentionOffset + entityMatch.mentionText.length,
           verification_status: entityMatch.verified ? "verified" : "candidate"
         });
         doc.entity_mention_ids.push(mentionId);
@@ -836,21 +914,38 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   }
 
   const clustered = clusterEvents(eventCandidates);
-  const candidateToEvent = new Map();
+  const entityRows = [...entities.values()];
+  const claimsById = new Map(claims.map((claim) => [claim.claim_id, claim]));
+  const entitiesById = new Map(entityRows.map((entity) => [entity.entity_id, entity]));
+  const rawBySource = new Map(rawDocuments.map((document) => [document.source_artifact_id, document]));
   for (const event of clustered.canonicalEvents) {
+    const eventClaims = event.claim_refs.map((id) => claimsById.get(id)).filter(Boolean);
+    const eventEntities = event.entities.map((id) => entitiesById.get(id)).filter(Boolean);
+    const rawDocument = event.source_refs.map((id) => rawBySource.get(id)).find(Boolean) || null;
+    event.display_title_zh = buildEventDisplayTitle({ event, claims: eventClaims, entities: eventEntities, rawDocument });
+    if (!isCompletePublicEventTitle(event.display_title_zh)) {
+      qaQueue.push({
+        qa_id: `QA-${hash(`${event.event_id}|display-title`)}`,
+        asset_id: event.event_id,
+        reason: "public_event_title_incomplete",
+        status: "open",
+        source_ref: event.source_refs[0]
+      });
+    }
+  }
+  const canonicalEvents = clustered.canonicalEvents.filter((event) => isCompletePublicEventTitle(event.display_title_zh));
+  const acceptedEventIds = new Set(canonicalEvents.map((event) => event.event_id));
+  const candidateToEvent = new Map();
+  for (const event of canonicalEvents) {
     for (const claimRef of event.claim_refs) candidateToEvent.set(claimRef, event.event_id);
   }
   for (const mapping of legacyMappings) {
     const doc = rawDocuments.find((item) => item.raw_id === mapping.raw_id);
     mapping.event_id = doc?.claim_ids.map((id) => candidateToEvent.get(id)).find(Boolean) || "";
   }
-
-  const entityRows = [...entities.values()];
-  const claimsById = new Map(claims.map((claim) => [claim.claim_id, claim]));
-  const entitiesById = new Map(entityRows.map((entity) => [entity.entity_id, entity]));
   const fdeRecords = [];
   const hardwareRecords = [];
-  for (const event of clustered.canonicalEvents) {
+  for (const event of canonicalEvents) {
     const eventClaims = event.claim_refs.map((id) => claimsById.get(id)).filter(Boolean);
     const eventEntities = event.entities.map((id) => entitiesById.get(id)).filter(Boolean);
     const fde = fdeProjection(event, eventClaims, eventEntities);
@@ -859,9 +954,9 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     if (hardware) hardwareRecords.push(hardware);
   }
 
-  const eventSources = clustered.canonicalEvents.flatMap((event) => event.source_refs.map((sourceRef) => ({ event_id: event.event_id, source_artifact_id: sourceRef })));
-  const eventClaims = clustered.canonicalEvents.flatMap((event) => event.claim_refs.map((claimRef) => ({ event_id: event.event_id, claim_id: claimRef })));
-  const relationships = clustered.canonicalEvents.flatMap((event) => event.claim_refs.map((claimRef) => claimsById.get(claimRef)).filter(Boolean).map((claim) => ({
+  const eventSources = canonicalEvents.flatMap((event) => event.source_refs.map((sourceRef) => ({ event_id: event.event_id, source_artifact_id: sourceRef })));
+  const eventClaims = canonicalEvents.flatMap((event) => event.claim_refs.map((claimRef) => ({ event_id: event.event_id, claim_id: claimRef })));
+  const relationships = canonicalEvents.flatMap((event) => event.claim_refs.map((claimRef) => claimsById.get(claimRef)).filter(Boolean).map((claim) => ({
     relationship_id: `REL-${hash(`${event.event_id}|${claim.claim_id}`)}`,
     event_id: event.event_id,
     subject: claim.subject,
@@ -870,10 +965,9 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     claim_ref: claim.claim_id,
     source_refs: event.source_refs
   })));
-  const rawBySource = new Map(rawDocuments.map((document) => [document.source_artifact_id, document]));
-  const compatibilityCards = clustered.canonicalEvents.flatMap((event) => {
+  const compatibilityCards = canonicalEvents.flatMap((event) => {
     const document = event.source_refs.map((id) => rawBySource.get(id)).find(Boolean);
-    const displayTitle = normalizeEventTitle(document?.title_zh || document?.title_original || `${event.action} ${event.object}`.trim());
+    const displayTitle = event.display_title_zh;
     const eventClaimRows = event.claim_refs.map((id) => claimsById.get(id)).filter(Boolean);
     const firstClaim = eventClaimRows.find((claim) => normalizeEventTitle(claim.source_quote).toLowerCase() !== displayTitle.toLowerCase());
     if (!firstClaim) {
@@ -901,12 +995,12 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     claims,
     entities: entityRows,
     entity_mentions: entityMentions,
-    canonical_events: clustered.canonicalEvents,
+    canonical_events: canonicalEvents,
     compatibility_cards: compatibilityCards,
     event_sources: eventSources,
     event_claims: eventClaims,
     relationships,
-    event_conflicts: clustered.conflicts,
+    event_conflicts: clustered.conflicts.filter((conflict) => acceptedEventIds.has(conflict.event_id)),
     tag_assertions: tagAssertions,
     facet_assertions: facetAssertions,
     fde_records: fdeRecords,

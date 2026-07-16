@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test:data-center && npm run test:data-center-site",
     "record:action": "node agent-workflow/tools/record-action-run.mjs",
     "summarize:actions": "node agent-workflow/tools/write-action-retrospective.mjs",
     "collect:community-intelligence": "node 01-SiteV2/site/scripts/collect-community-intelligence.mjs",
@@ -35,7 +35,9 @@
     "business:source:rss": "node agent-workflow/tools/run-guanlan-daily-monitor.mjs --source-only=rss",
     "business:source:aggregate": "node agent-workflow/tools/run-guanlan-daily-monitor.mjs --use-source-artifacts=true",
     "build:data-center": "node agent-workflow/tools/build-data-center-v4.mjs",
+    "backfill:data-center": "node agent-workflow/tools/backfill-data-center-v4.mjs",
     "build:data-center-site": "node 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs",
+    "build:first-line-v4": "node 01-SiteV2/site/scripts/build-first-line-viewpoints-v4-data.mjs",
     "assert:data-center": "node agent-workflow/tools/assert-data-center-v4.mjs",
     "assert:tag-taxonomy": "node agent-workflow/tools/assert-tag-taxonomy-v4.mjs",
     "audit:tag-taxonomy": "node agent-workflow/tools/audit-tag-taxonomy-v4.mjs",
@@ -80,6 +82,8 @@
   "homepage": "https://github.com/jerryfang2023-stack/AI-Radar#readme",
   "devDependencies": {
     "@playwright/test": "^1.60.0",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
     "playwright": "^1.60.0"
   }
 }

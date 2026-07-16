@@ -33,7 +33,7 @@ First-Line Viewpoints
 Dashboard
 ```
 
-Navigation and page information architecture are frozen pending a separate approved page plan.
+The V4 Data Center and Industry Reports sidebar plan is approved in `context/frontstage-page-contracts.md`. Remaining compatibility-page information architecture stays frozen until separately approved.
 
 ## Asset Flow
 

@@ -72,6 +72,6 @@ The daily GitHub workflow runs these steps after Raw evidence supply passes and 
 - Search, type, and tag filters remain inside the current data batch unless the user explicitly supplies a date range.
 - During V3/V4 dual-write, a current V4 event batch unexpectedly smaller than the same-date factual legacy Card set is a coverage regression that requires Raw-to-Event investigation.
 
-## Page freeze
+## Page contract
 
-The current HTML pages, navigation, visual system, and page information architecture remain frozen until a separate page plan is approved. Existing trend, opportunity, report, and importance-sorted outputs may continue only as legacy page compatibility data. They do not enter V4 tables.
+The V4 Data Center and Industry Reports sidebar plan is approved and governed by `context/frontstage-page-contracts.md`. Other SITE-V3.4.5 compatibility pages remain frozen until separately approved. Existing trend, opportunity, report, and importance-sorted outputs may continue only as legacy page compatibility data. They do not enter V4 tables.

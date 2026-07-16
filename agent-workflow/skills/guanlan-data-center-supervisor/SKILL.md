@@ -1,6 +1,6 @@
 ---
 name: guanlan-data-center-supervisor
-description: Use when supervising, running, repairing, or changing the WaveSight Data Center V4 factual data lane. Covers SourceArtifact, RawDocument, Claim, Entity, CanonicalEvent, TAG-V3 assertions, FDE and hardware projections, database materialization, and integrity gates. Do not use for page design, opportunity judgment, trend judgment, recommendations, or legacy Card editorial work.
+description: Use when supervising, running, repairing, or changing the WaveSight Data Center V4 factual data lane. Covers SourceArtifact, RawDocument, Claim, Entity, CanonicalEvent, TAG-V4 assertions, FDE and hardware projections, database materialization, and integrity gates. Do not use for page design, opportunity judgment, trend judgment, recommendations, or legacy Card editorial work.
 metadata:
   guanlan:
     version: "1.0.0"

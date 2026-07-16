@@ -1,0 +1,563 @@
+[
+  {
+    "relationship_id": "REL-2aa64c5a6aa2d1aa",
+    "event_id": "EV-abaf05e513f88a4f",
+    "subject": "Claude Code v2.1.160",
+    "predicate": "product_release",
+    "object": "Added a prompt before writing to shell startup files ( .zshenv , .zlogin , .bash_login ) and ~/.config/git/ , which could otherwise lead to unintended command execution",
+    "claim_ref": "CL-20df2227f2110bfe",
+    "source_refs": [
+      "SA-ab2962dcc5950a5c"
+    ]
+  },
+  {
+    "relationship_id": "REL-4be559165af5e8ec",
+    "event_id": "EV-abaf05e513f88a4f",
+    "subject": "Claude Code v2.1.160",
+    "predicate": "product_release",
+    "object": "Fixed the auto mode unavailability message on third-party providers (Bedrock/Vertex/Foundry) to point to the CLAUDE_CODE_ENABLE_AUTO_MODE opt-in instead of incorrectly blaming the model",
+    "claim_ref": "CL-32bb638b8d6ba50a",
+    "source_refs": [
+      "SA-ab2962dcc5950a5c"
+    ]
+  },
+  {
+    "relationship_id": "REL-be903ac15a5791c3",
+    "event_id": "EV-abaf05e513f88a4f",
+    "subject": "Claude Code v2.1.160",
+    "predicate": "product_release",
+    "object": "Removed CLAUDE_CODE_OPUS_4_6_FAST_MODE_OVERRIDE ; the environment variable is now a no-op",
+    "claim_ref": "CL-c679e4b54957e7a5",
+    "source_refs": [
+      "SA-ab2962dcc5950a5c"
+    ]
+  },
+  {
+    "relationship_id": "REL-fede7652e118ec75",
+    "event_id": "EV-234ad54940674bf6",
+    "subject": "NVIDIA JetPack 7.2支持内存优化的边缘智能体",
+    "predicate": "deployment",
+    "object": "Deploy Agentic-Ready AI at the Edge with Memory Efficiency in NVIDIA JetPack 7.2",
+    "claim_ref": "CL-63e0ebd7c9e613c1",
+    "source_refs": [
+      "SA-6d4aadb3ddf97280"
+    ]
+  },
+  {
+    "relationship_id": "REL-2c73c22baa7b627e",
+    "event_id": "EV-234ad54940674bf6",
+    "subject": "NVIDIA JetPack 7.2支持内存优化的边缘智能体",
+    "predicate": "deployment",
+    "object": "With JetPack 7.2, Jetson is NemoClaw-ready out of the box. JetPack 7.2 comes preconfigured with the required dependencies and software stack, so you can deploy and run NemoClaw-based workflows on Jetson without manual environment setup. This enables you to easily build agentic physical AI applications across robotics, industrial automation, vision agents, and edge AI systems.",
+    "claim_ref": "CL-68c436264a04f457",
+    "source_refs": [
+      "SA-6d4aadb3ddf97280"
+    ]
+  },
+  {
+    "relationship_id": "REL-3aaa7508fcfccd01",
+    "event_id": "EV-234ad54940674bf6",
+    "subject": "NVIDIA JetPack 7.2支持内存优化的边缘智能体",
+    "predicate": "deployment",
+    "object": "Companies such as Konsulko Group and Peridio offer complete OS solutions like Konsulko Orca OS and Avocado OS , while Balena focuses on container-based fleet management and deployment at scale. Other NVIDIA partners include Neurealm , RidgeRun , and Wind River , who provide extensive engineering and NRE services with deep expertise in embedded Linux, BSP customization, multimedia pipelines, and long-term platform support. Together, this ecosystem enables developers to rapidly deploy, customize, and scale Yocto-based solutions on Jetson.",
+    "claim_ref": "CL-94e419b766e41018",
+    "source_refs": [
+      "SA-6d4aadb3ddf97280"
+    ]
+  },
+  {
+    "relationship_id": "REL-14e1e0774921459f",
+    "event_id": "EV-234ad54940674bf6",
+    "subject": "NVIDIA JetPack 7.2支持内存优化的边缘智能体",
+    "predicate": "deployment",
+    "object": "JetPack 7.2 extends the Ubuntu 24.04, kernel 6.8 and CUDA Toolkit 13.0 -based compute stack (introduced with Jetson Thor) to the Jetson Orin family, bringing both platforms onto a single unified software foundation. With a common stack across Orin and Thor, you can seamlessly deploy the latest AI applications across the entire Jetson portfolio while taking advantage of the newest CUDA capabilities, libraries, and performance optimizations.",
+    "claim_ref": "CL-b6f353bc762ece07",
+    "source_refs": [
+      "SA-6d4aadb3ddf97280"
+    ]
+  },
+  {
+    "relationship_id": "REL-e4fd32beaa7a5131",
+    "event_id": "EV-f8becea58ba65e8b",
+    "subject": "Parloa",
+    "predicate": "deployment",
+    "object": "$350M with SAP, Microsoft, OpenAI partnerships",
+    "claim_ref": "CL-a58692f950b9bab3",
+    "source_refs": [
+      "SA-77e563a58b6d395f"
+    ]
+  },
+  {
+    "relationship_id": "REL-55a46c288bac5a1b",
+    "event_id": "EV-f8becea58ba65e8b",
+    "subject": "Parloa",
+    "predicate": "deployment",
+    "object": "$350M with SAP, Microsoft, OpenAI partnerships",
+    "claim_ref": "CL-80534931c3eaf159",
+    "source_refs": [
+      "SA-77e563a58b6d395f"
+    ]
+  },
+  {
+    "relationship_id": "REL-a0f86f2b247275f5",
+    "event_id": "EV-f8becea58ba65e8b",
+    "subject": "Parloa",
+    "predicate": "deployment",
+    "object": "$350M with SAP, Microsoft, OpenAI partnerships",
+    "claim_ref": "CL-a69a96d180f7f707",
+    "source_refs": [
+      "SA-77e563a58b6d395f"
+    ]
+  },
+  {
+    "relationship_id": "REL-8b52790282aeb613",
+    "event_id": "EV-f8becea58ba65e8b",
+    "subject": "Parloa",
+    "predicate": "deployment",
+    "object": "$350M with SAP, Microsoft, OpenAI partnerships",
+    "claim_ref": "CL-8fba0f2db9b48b2c",
+    "source_refs": [
+      "SA-77e563a58b6d395f"
+    ]
+  },
+  {
+    "relationship_id": "REL-e7e3843c62175c98",
+    "event_id": "EV-b0ed8d5a37784214",
+    "subject": "Thoughtly",
+    "predicate": "funding",
+    "object": "$8M+ to build omnichannel agents for revenue teams | Thoughtly",
+    "claim_ref": "CL-e006b1aae6d7786b",
+    "source_refs": [
+      "SA-7a7eb38fe7ba8e2a"
+    ]
+  },
+  {
+    "relationship_id": "REL-44a57a3fbf0e7559",
+    "event_id": "EV-b0ed8d5a37784214",
+    "subject": "Thoughtly",
+    "predicate": "funding",
+    "object": "$8M+ to build omnichannel agents for revenue teams | Thoughtly",
+    "claim_ref": "CL-43c807ff620e9dee",
+    "source_refs": [
+      "SA-7a7eb38fe7ba8e2a"
+    ]
+  },
+  {
+    "relationship_id": "REL-0f3613be9b57cb92",
+    "event_id": "EV-b0ed8d5a37784214",
+    "subject": "Thoughtly",
+    "predicate": "funding",
+    "object": "$8M+ to build omnichannel agents for revenue teams | Thoughtly",
+    "claim_ref": "CL-dcd9552c741e1c7b",
+    "source_refs": [
+      "SA-7a7eb38fe7ba8e2a"
+    ]
+  },
+  {
+    "relationship_id": "REL-f27b791ac55b536c",
+    "event_id": "EV-b0ed8d5a37784214",
+    "subject": "Thoughtly",
+    "predicate": "funding",
+    "object": "$8M+ to build omnichannel agents for revenue teams | Thoughtly",
+    "claim_ref": "CL-65a3793a06dc6ef7",
+    "source_refs": [
+      "SA-7a7eb38fe7ba8e2a"
+    ]
+  },
+  {
+    "relationship_id": "REL-111714bf3e203d83",
+    "event_id": "EV-affa49966121461c",
+    "subject": "First Concepts",
+    "predicate": "funding",
+    "object": "$1M to develop AI-native OS for creative work - Tech.eu",
+    "claim_ref": "CL-420009671116ab97",
+    "source_refs": [
+      "SA-46a05bd4bae3e9d9"
+    ]
+  },
+  {
+    "relationship_id": "REL-b6089bb1c2b176e7",
+    "event_id": "EV-affa49966121461c",
+    "subject": "First Concepts",
+    "predicate": "funding",
+    "object": "$1M to develop AI-native OS for creative work - Tech.eu",
+    "claim_ref": "CL-db09aee682aa34e2",
+    "source_refs": [
+      "SA-46a05bd4bae3e9d9"
+    ]
+  },
+  {
+    "relationship_id": "REL-8337d952d9a68336",
+    "event_id": "EV-affa49966121461c",
+    "subject": "First Concepts",
+    "predicate": "funding",
+    "object": "$1M to develop AI-native OS for creative work - Tech.eu",
+    "claim_ref": "CL-1dbd2238205ef70f",
+    "source_refs": [
+      "SA-46a05bd4bae3e9d9"
+    ]
+  },
+  {
+    "relationship_id": "REL-621a5bee61a99240",
+    "event_id": "EV-affa49966121461c",
+    "subject": "First Concepts",
+    "predicate": "funding",
+    "object": "$1M to develop AI-native OS for creative work - Tech.eu",
+    "claim_ref": "CL-c59e43ff54b94ce9",
+    "source_refs": [
+      "SA-46a05bd4bae3e9d9"
+    ]
+  },
+  {
+    "relationship_id": "REL-5c59bd7f0a70140e",
+    "event_id": "EV-1ac32035d5e425e1",
+    "subject": "Ex-DeepMind researchers",
+    "predicate": "funding",
+    "object": "$50M to build AI that figures out which scientific questions are worth asking",
+    "claim_ref": "CL-6f32658cdb30e4e3",
+    "source_refs": [
+      "SA-ecaf936f32a5270d"
+    ]
+  },
+  {
+    "relationship_id": "REL-63a5778a2f861c02",
+    "event_id": "EV-1ac32035d5e425e1",
+    "subject": "Ex-DeepMind researchers",
+    "predicate": "funding",
+    "object": "$50M to build AI that figures out which scientific questions are worth asking",
+    "claim_ref": "CL-d020c310852396fc",
+    "source_refs": [
+      "SA-ecaf936f32a5270d"
+    ]
+  },
+  {
+    "relationship_id": "REL-4c32ed34a5176e3e",
+    "event_id": "EV-1ac32035d5e425e1",
+    "subject": "Ex-DeepMind researchers",
+    "predicate": "funding",
+    "object": "$50M to build AI that figures out which scientific questions are worth asking",
+    "claim_ref": "CL-22375e525a977341",
+    "source_refs": [
+      "SA-ecaf936f32a5270d"
+    ]
+  },
+  {
+    "relationship_id": "REL-a6c36c5739da96fb",
+    "event_id": "EV-1ac32035d5e425e1",
+    "subject": "Ex-DeepMind researchers",
+    "predicate": "funding",
+    "object": "$50M to build AI that figures out which scientific questions are worth asking",
+    "claim_ref": "CL-9cadd0fe6128a83a",
+    "source_refs": [
+      "SA-ecaf936f32a5270d"
+    ]
+  },
+  {
+    "relationship_id": "REL-983a6ad9cb8e17f0",
+    "event_id": "EV-e4b3a19529576778",
+    "subject": "Y Combinator grad and AI insurance brokerage Harper",
+    "predicate": "funding",
+    "object": "$47M",
+    "claim_ref": "CL-fe3b274239d09fe4",
+    "source_refs": [
+      "SA-0c8e5acc50150742"
+    ]
+  },
+  {
+    "relationship_id": "REL-78befdc37f9eadbc",
+    "event_id": "EV-e4b3a19529576778",
+    "subject": "Y Combinator grad and AI insurance brokerage Harper",
+    "predicate": "funding",
+    "object": "$47M",
+    "claim_ref": "CL-186ddc033fccbc4c",
+    "source_refs": [
+      "SA-0c8e5acc50150742"
+    ]
+  },
+  {
+    "relationship_id": "REL-e895a32fb9d98c8f",
+    "event_id": "EV-e4b3a19529576778",
+    "subject": "Y Combinator grad and AI insurance brokerage Harper",
+    "predicate": "funding",
+    "object": "$47M",
+    "claim_ref": "CL-02094f9860736dac",
+    "source_refs": [
+      "SA-0c8e5acc50150742"
+    ]
+  },
+  {
+    "relationship_id": "REL-0dd8e556dd69e99d",
+    "event_id": "EV-e4b3a19529576778",
+    "subject": "Y Combinator grad and AI insurance brokerage Harper",
+    "predicate": "funding",
+    "object": "$47M",
+    "claim_ref": "CL-347a7343f60a770e",
+    "source_refs": [
+      "SA-0c8e5acc50150742"
+    ]
+  },
+  {
+    "relationship_id": "REL-898de316e67445d5",
+    "event_id": "EV-9fc8916c19c19f99",
+    "subject": "Telli, a YC alum,",
+    "predicate": "funding",
+    "object": "pre-seed funding for its AI voice agents",
+    "claim_ref": "CL-8f976485064aec5d",
+    "source_refs": [
+      "SA-32457975dc434bf6"
+    ]
+  },
+  {
+    "relationship_id": "REL-1fe9e8379038ef2a",
+    "event_id": "EV-9fc8916c19c19f99",
+    "subject": "Telli, a YC alum,",
+    "predicate": "funding",
+    "object": "pre-seed funding for its AI voice agents",
+    "claim_ref": "CL-e5ab6de62e122617",
+    "source_refs": [
+      "SA-32457975dc434bf6"
+    ]
+  },
+  {
+    "relationship_id": "REL-313e6804fbcce267",
+    "event_id": "EV-9fc8916c19c19f99",
+    "subject": "Telli, a YC alum,",
+    "predicate": "funding",
+    "object": "pre-seed funding for its AI voice agents",
+    "claim_ref": "CL-902ff6e4251ed6d0",
+    "source_refs": [
+      "SA-32457975dc434bf6"
+    ]
+  },
+  {
+    "relationship_id": "REL-1c9a4606a805d76f",
+    "event_id": "EV-9fc8916c19c19f99",
+    "subject": "Telli, a YC alum,",
+    "predicate": "funding",
+    "object": "pre-seed funding for its AI voice agents",
+    "claim_ref": "CL-73c987a9a2e06683",
+    "source_refs": [
+      "SA-32457975dc434bf6"
+    ]
+  },
+  {
+    "relationship_id": "REL-9ecff6341d32ae97",
+    "event_id": "EV-201b25d4f3cf696a",
+    "subject": "Here are the 55 US AI startups that",
+    "predicate": "funding",
+    "object": "$100M or more in 2025",
+    "claim_ref": "CL-69fb2230915dd1fa",
+    "source_refs": [
+      "SA-a3709f58440df90e"
+    ]
+  },
+  {
+    "relationship_id": "REL-fe0f964cba676ca9",
+    "event_id": "EV-201b25d4f3cf696a",
+    "subject": "Here are the 55 US AI startups that",
+    "predicate": "funding",
+    "object": "$100M or more in 2025",
+    "claim_ref": "CL-82be784272b8d3b3",
+    "source_refs": [
+      "SA-a3709f58440df90e"
+    ]
+  },
+  {
+    "relationship_id": "REL-39dbbbcdfb11a7b9",
+    "event_id": "EV-201b25d4f3cf696a",
+    "subject": "Here are the 55 US AI startups that",
+    "predicate": "funding",
+    "object": "$100M or more in 2025",
+    "claim_ref": "CL-5f3770e4458caa9c",
+    "source_refs": [
+      "SA-a3709f58440df90e"
+    ]
+  },
+  {
+    "relationship_id": "REL-55aed9b6a155b2a0",
+    "event_id": "EV-201b25d4f3cf696a",
+    "subject": "Here are the 55 US AI startups that",
+    "predicate": "funding",
+    "object": "$100M or more in 2025",
+    "claim_ref": "CL-10a400458b364cda",
+    "source_refs": [
+      "SA-a3709f58440df90e"
+    ]
+  },
+  {
+    "relationship_id": "REL-b7902f1ec88aa6b9",
+    "event_id": "EV-f8a79104a533422b",
+    "subject": "Empromptu",
+    "predicate": "funding",
+    "object": "$2M pre-seed to help enterprises build AI apps",
+    "claim_ref": "CL-0385c950c155ac2d",
+    "source_refs": [
+      "SA-67dacc2ec4f916eb"
+    ]
+  },
+  {
+    "relationship_id": "REL-8ae66b7e35803dd7",
+    "event_id": "EV-f8a79104a533422b",
+    "subject": "Empromptu",
+    "predicate": "funding",
+    "object": "$2M pre-seed to help enterprises build AI apps",
+    "claim_ref": "CL-6648bbdefe007f3d",
+    "source_refs": [
+      "SA-67dacc2ec4f916eb"
+    ]
+  },
+  {
+    "relationship_id": "REL-66cbabb97dd9aab4",
+    "event_id": "EV-f8a79104a533422b",
+    "subject": "Empromptu",
+    "predicate": "funding",
+    "object": "$2M pre-seed to help enterprises build AI apps",
+    "claim_ref": "CL-7b440ce9071d91ea",
+    "source_refs": [
+      "SA-67dacc2ec4f916eb"
+    ]
+  },
+  {
+    "relationship_id": "REL-87e1e122a6eb5539",
+    "event_id": "EV-f8a79104a533422b",
+    "subject": "Empromptu",
+    "predicate": "funding",
+    "object": "$2M pre-seed to help enterprises build AI apps",
+    "claim_ref": "CL-2e188b60d17dc4e4",
+    "source_refs": [
+      "SA-67dacc2ec4f916eb"
+    ]
+  },
+  {
+    "relationship_id": "REL-7bb421059d5a0311",
+    "event_id": "EV-15bbdd37c516309a",
+    "subject": "Relevance AI",
+    "predicate": "funding",
+    "object": "$24M to help businesses build AI agents",
+    "claim_ref": "CL-c99d02cb4f23c9e2",
+    "source_refs": [
+      "SA-4da61e33279d83a3"
+    ]
+  },
+  {
+    "relationship_id": "REL-1a17fb87a72adcd1",
+    "event_id": "EV-15bbdd37c516309a",
+    "subject": "Relevance AI",
+    "predicate": "funding",
+    "object": "$24M to help businesses build AI agents",
+    "claim_ref": "CL-2be9e7977f360a29",
+    "source_refs": [
+      "SA-4da61e33279d83a3"
+    ]
+  },
+  {
+    "relationship_id": "REL-068bc38a79c2dcd4",
+    "event_id": "EV-15bbdd37c516309a",
+    "subject": "Relevance AI",
+    "predicate": "funding",
+    "object": "$24M to help businesses build AI agents",
+    "claim_ref": "CL-0336f38ec53b54fe",
+    "source_refs": [
+      "SA-4da61e33279d83a3"
+    ]
+  },
+  {
+    "relationship_id": "REL-b8ffe7b600b265d5",
+    "event_id": "EV-15bbdd37c516309a",
+    "subject": "Relevance AI",
+    "predicate": "funding",
+    "object": "$24M to help businesses build AI agents",
+    "claim_ref": "CL-42f094f135dd6ffc",
+    "source_refs": [
+      "SA-4da61e33279d83a3"
+    ]
+  },
+  {
+    "relationship_id": "REL-fa8430b8f4b963fd",
+    "event_id": "EV-4a162c41bb82f325",
+    "subject": "谷歌母公司 Alphabet 宣布 800 亿美元大额",
+    "predicate": "funding",
+    "object": "，用于 AI 基础设施与算力建设",
+    "claim_ref": "CL-678da7b8702f574b",
+    "source_refs": [
+      "SA-0bff9233fcd0cb9e"
+    ]
+  },
+  {
+    "relationship_id": "REL-9d76374cc6ed8fc1",
+    "event_id": "EV-4a162c41bb82f325",
+    "subject": "谷歌母公司 Alphabet 宣布 800 亿美元大额",
+    "predicate": "funding",
+    "object": "，用于 AI 基础设施与算力建设",
+    "claim_ref": "CL-8d7cd15d43c821c7",
+    "source_refs": [
+      "SA-0bff9233fcd0cb9e"
+    ]
+  },
+  {
+    "relationship_id": "REL-3da69c1028b351c7",
+    "event_id": "EV-4a162c41bb82f325",
+    "subject": "谷歌母公司 Alphabet 宣布 800 亿美元大额",
+    "predicate": "funding",
+    "object": "，用于 AI 基础设施与算力建设",
+    "claim_ref": "CL-b0fbc7f8f005fb47",
+    "source_refs": [
+      "SA-0bff9233fcd0cb9e"
+    ]
+  },
+  {
+    "relationship_id": "REL-4beb19c41fd084a6",
+    "event_id": "EV-4a162c41bb82f325",
+    "subject": "谷歌母公司 Alphabet 宣布 800 亿美元大额",
+    "predicate": "funding",
+    "object": "，用于 AI 基础设施与算力建设",
+    "claim_ref": "CL-5f45ad800bcbb895",
+    "source_refs": [
+      "SA-0bff9233fcd0cb9e"
+    ]
+  },
+  {
+    "relationship_id": "REL-ef3d034132094448",
+    "event_id": "EV-e12b17260d19c5ff",
+    "subject": "YC alum Adam",
+    "predicate": "funding",
+    "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
+    "claim_ref": "CL-dd15cf279436e22b",
+    "source_refs": [
+      "SA-72f45efb0345e436"
+    ]
+  },
+  {
+    "relationship_id": "REL-45a618d6e01b6e1b",
+    "event_id": "EV-e12b17260d19c5ff",
+    "subject": "YC alum Adam",
+    "predicate": "funding",
+    "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
+    "claim_ref": "CL-e56cac57790f19d4",
+    "source_refs": [
+      "SA-72f45efb0345e436"
+    ]
+  },
+  {
+    "relationship_id": "REL-c4a025a379bfb80a",
+    "event_id": "EV-e12b17260d19c5ff",
+    "subject": "YC alum Adam",
+    "predicate": "funding",
+    "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
+    "claim_ref": "CL-e4175189ca6aac93",
+    "source_refs": [
+      "SA-72f45efb0345e436"
+    ]
+  },
+  {
+    "relationship_id": "REL-5815d6a89272cd2e",
+    "event_id": "EV-e12b17260d19c5ff",
+    "subject": "YC alum Adam",
+    "predicate": "funding",
+    "object": "$4.1M to turn viral text-to-3D tool into AI copilot",
+    "claim_ref": "CL-b8853d1e3681ca75",
+    "source_refs": [
+      "SA-72f45efb0345e436"
+    ]
+  }
+]

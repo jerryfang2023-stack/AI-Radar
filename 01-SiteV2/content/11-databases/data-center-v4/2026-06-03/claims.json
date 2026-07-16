@@ -1,0 +1,968 @@
+[
+  {
+    "claim_id": "CL-15e9bbbb876c2f8b",
+    "raw_id": "RAW-7755308e208eed88",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.161",
+    "predicate": "product_release",
+    "object": "Fixed claude mcp list/get/add printing secrets to the terminal: ${VAR} references are no longer expanded, and credential headers and URL secrets are redacted",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-7755308e208eed88",
+      "start": 2275,
+      "end": 2432
+    },
+    "source_quote": "Fixed claude mcp list/get/add printing secrets to the terminal: ${VAR} references are no longer expanded, and credential headers and URL secrets are redacted",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c60ea412cb8bf065",
+    "raw_id": "RAW-7755308e208eed88",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.161",
+    "predicate": "product_release",
+    "object": "[VSCode] Added a tip suggesting disabling terminal GPU acceleration (or running /terminal-setup ) to fix garbled glyphs",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-7755308e208eed88",
+      "start": 3184,
+      "end": 3303
+    },
+    "source_quote": "[VSCode] Added a tip suggesting disabling terminal GPU acceleration (or running /terminal-setup ) to fix garbled glyphs",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c0478b3686d82d3a",
+    "raw_id": "RAW-7755308e208eed88",
+    "claim_type": "product_release",
+    "subject": "Claude Code v2.1.161",
+    "predicate": "product_release",
+    "object": "Fixed EADDRINUSE errors from tools that bind Unix sockets under $TMPDIR when CLAUDE_CODE_TMPDIR is set to a deep path",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-7755308e208eed88",
+      "start": 2914,
+      "end": 3031
+    },
+    "source_quote": "Fixed EADDRINUSE errors from tools that bind Unix sockets under $TMPDIR when CLAUDE_CODE_TMPDIR is set to a deep path",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-323f9d8e82a06c9f",
+    "raw_id": "RAW-d52c66d07849c989",
+    "claim_type": "model_release",
+    "subject": "微软",
+    "predicate": "model_release",
+    "object": "More than a single model, we are excited to introduce our Hill-Climbing Machine: a co-designed pipeline built to make every component of model development climbable, so capabilities improve continually and reliably over time. The aim is a repeatable system that can absorb better data, stronger rewards, more capable environments, and more compute.",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-d52c66d07849c989",
+      "start": 881,
+      "end": 1229
+    },
+    "source_quote": "More than a single model, we are excited to introduce our Hill-Climbing Machine: a co-designed pipeline built to make every component of model development climbable, so capabilities improve continually and reliably over time. The aim is a repeatable system that can absorb better data, stronger rewards, more capable environments, and more compute.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1aea9f343691d1ff",
+    "raw_id": "RAW-d52c66d07849c989",
+    "claim_type": "model_release",
+    "subject": "微软",
+    "predicate": "model_release",
+    "object": "Introducing MAI-Thinking-1",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-d52c66d07849c989",
+      "start": 7,
+      "end": 33
+    },
+    "source_quote": "Introducing MAI-Thinking-1",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4f184a6088c1fe4b",
+    "raw_id": "RAW-d52c66d07849c989",
+    "claim_type": "model_release",
+    "subject": "微软",
+    "predicate": "model_release",
+    "object": "Today we are introducing MAI-Thinking-1, Microsoft AI’s reasoning model. It is a medium-sized model that stands among the strongest models in its weight class. It matches leading models on key software engineering benchmarks, demonstrates advanced mathematical reasoning capabilities, and is preferred to Sonnet 4.6 in our blind human side-by-side evaluations. We trained it from the ground up on enterprise grade, clean and commercially licensed data, without distillation from third-party models.",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-d52c66d07849c989",
+      "start": 106,
+      "end": 604
+    },
+    "source_quote": "Today we are introducing MAI-Thinking-1, Microsoft AI’s reasoning model. It is a medium-sized model that stands among the strongest models in its weight class. It matches leading models on key software engineering benchmarks, demonstrates advanced mathematical reasoning capabilities, and is preferred to Sonnet 4.6 in our blind human side-by-side evaluations. We trained it from the ground up on enterprise grade, clean and commercially licensed data, without distillation from third-party models.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a40f054bb4ddede3",
+    "raw_id": "RAW-d52c66d07849c989",
+    "claim_type": "model_release",
+    "subject": "微软",
+    "predicate": "model_release",
+    "object": "MAI-Thinking-1 is a step in our broader work to build towards Humanist Superintelligence: advanced AI capabilities designed to serve people and organizations, not to replace them. The model matters on both axes: what it can do, and how it was built.",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-d52c66d07849c989",
+      "start": 605,
+      "end": 854
+    },
+    "source_quote": "MAI-Thinking-1 is a step in our broader work to build towards Humanist Superintelligence: advanced AI capabilities designed to serve people and organizations, not to replace them. The model matters on both axes: what it can do, and how it was built.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b0e16c8146dc5224",
+    "raw_id": "RAW-c821d7af5bc8faaf",
+    "claim_type": "product_release",
+    "subject": "NVIDIA",
+    "predicate": "product_release",
+    "object": "NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c821d7af5bc8faaf",
+      "start": 934,
+      "end": 1252
+    },
+    "source_quote": "Users can easily deploy NemoClaw from NVIDIA DGX Spark personal AI supercomputers, as well as through enterprise data centers and cloud service providers. NVIDIA OpenShell — the open source runtime at its core — governs how each agent accesses files, networks and tools, enforcing policy-based security at every layer.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8ee78257d6ea9b9f",
+    "raw_id": "RAW-c821d7af5bc8faaf",
+    "claim_type": "product_release",
+    "subject": "NVIDIA",
+    "predicate": "product_release",
+    "object": "NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c821d7af5bc8faaf",
+      "start": 520,
+      "end": 676
+    },
+    "source_quote": "These AI engineers are based on NVIDIA NemoClaw , an open blueprint for building specialized, long-running agents with a secure runtime and frontier models.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bd39c4bfd65eca29",
+    "raw_id": "RAW-c821d7af5bc8faaf",
+    "claim_type": "product_release",
+    "subject": "NVIDIA",
+    "predicate": "product_release",
+    "object": "NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-c821d7af5bc8faaf",
+      "start": 677,
+      "end": 933
+    },
+    "source_quote": "NemoClaw includes a choice of harness — meaning it can be integrated with various orchestration frameworks enterprises use to deploy and coordinate agents, such as OpenClaw and Hermes — as well as a model router and NVIDIA NeMo libraries for customization.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-763c596f78cb7f74",
+    "raw_id": "RAW-c821d7af5bc8faaf",
+    "claim_type": "product_release",
+    "subject": "NVIDIA",
+    "predicate": "product_release",
+    "object": "NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-c821d7af5bc8faaf",
+      "start": 1878,
+      "end": 2120
+    },
+    "source_quote": "Dassault Systèmes is actively productizing the 3DEXPERIENCE Agentic Platform to operate long-running and autonomous agents for design, simulation and manufacturing operations, in a secured environment powered by NVIDIA NemoClaw and OpenShell.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cde2628c535374cf",
+    "raw_id": "RAW-86788bb564ebaac3",
+    "claim_type": "deployment",
+    "subject": "从端侧到云端统一加速：英伟达、微软展示 AI 智能体完整",
+    "predicate": "deployment",
+    "object": "栈，Fairwater 工厂提前上线",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-86788bb564ebaac3",
+      "start": 0,
+      "end": 55
+    },
+    "source_quote": "从端侧到云端统一加速：英伟达、微软展示 AI 智能体完整部署栈，Fairwater 工厂提前上线 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a71265ef6840151d",
+    "raw_id": "RAW-86788bb564ebaac3",
+    "claim_type": "deployment",
+    "subject": "从端侧到云端统一加速：英伟达、微软展示 AI 智能体完整",
+    "predicate": "deployment",
+    "object": "栈，Fairwater 工厂提前上线",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-86788bb564ebaac3",
+      "start": 221,
+      "end": 269
+    },
+    "source_quote": "从端侧到云端统一加速：英伟达、微软展示 AI 智能体完整部署栈，Fairwater 工厂提前上线",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1cad5e4fbb503333",
+    "raw_id": "RAW-86788bb564ebaac3",
+    "claim_type": "deployment",
+    "subject": "从端侧到云端统一加速：英伟达、微软展示 AI 智能体完整",
+    "predicate": "deployment",
+    "object": "栈，Fairwater 工厂提前上线",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-86788bb564ebaac3",
+      "start": 549,
+      "end": 652
+    },
+    "source_quote": "微软、英伟达还宣布达成一系列深度合作，并在 Build 大会上展示了横跨 Windows 设备、Azure 云与本地部署的统一加速计算栈，为开发者构建、运行和扩展 AI 智能体与物理 AI 提供端到端支撑。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8850fd7ed8ec9c1c",
+    "raw_id": "RAW-d6bbdf1212dadff6",
+    "claim_type": "product_release",
+    "subject": "微软 Build 2026：七项最重要的",
+    "predicate": "product_release",
+    "object": "Microsoft Build 2026: The 7 biggest announcements",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-d6bbdf1212dadff6",
+      "start": 0,
+      "end": 49
+    },
+    "source_quote": "Microsoft Build 2026: The 7 biggest announcements",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-62d404644975ef27",
+    "raw_id": "RAW-d6bbdf1212dadff6",
+    "claim_type": "product_release",
+    "subject": "微软 Build 2026：七项最重要的",
+    "predicate": "product_release",
+    "object": "Microsoft just held its Build 2026 opening keynote, where it showed off updates across AI, its Surface devices, and Windows.",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-d6bbdf1212dadff6",
+      "start": 50,
+      "end": 174
+    },
+    "source_quote": "Microsoft just held its Build 2026 opening keynote, where it showed off updates across AI, its Surface devices, and Windows.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5411f4a6abf85791",
+    "raw_id": "RAW-d6bbdf1212dadff6",
+    "claim_type": "product_release",
+    "subject": "微软 Build 2026：七项最重要的",
+    "predicate": "product_release",
+    "object": "Microsoft just kicked off Build 2026 with a keynote from CEO Satya Nadella and other company leaders. As expected, it was filled with announcements, ranging from new Surface hardware to an always-on personal assistant and updates across Microsoft’s in-house AI models.",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-d6bbdf1212dadff6",
+      "start": 175,
+      "end": 443
+    },
+    "source_quote": "Microsoft just kicked off Build 2026 with a keynote from CEO Satya Nadella and other company leaders. As expected, it was filled with announcements, ranging from new Surface hardware to an always-on personal assistant and updates across Microsoft’s in-house AI models.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-039574a2ca247f72",
+    "raw_id": "RAW-d6bbdf1212dadff6",
+    "claim_type": "product_release",
+    "subject": "微软 Build 2026：七项最重要的",
+    "predicate": "product_release",
+    "object": "Microsoft Build 2026: The 7 biggest announcements",
+    "qualifiers": {
+      "event_status": "withdrawn",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-d6bbdf1212dadff6",
+      "start": 5036,
+      "end": 5085
+    },
+    "source_quote": "Microsoft Build 2026: The 7 biggest announcements",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-df810a5e2794b37e",
+    "raw_id": "RAW-942ab91f1597ca61",
+    "claim_type": "partnership",
+    "subject": "NVIDIA 与 Microsoft 深化",
+    "predicate": "partnership",
+    "object": "，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-942ab91f1597ca61",
+      "start": 351,
+      "end": 767
+    },
+    "source_quote": "At Microsoft Build, NVIDIA founder and CEO Jensen Huang joined Microsoft chairman and CEO Satya Nadella’s keynote via livestream from Taipei to discuss the expanded partnership: NVIDIA RTX Spark and DGX Station for Windows , NVIDIA GPU-accelerated Microsoft Fabric, NVIDIA open models on Microsoft Foundry, the NVIDIA OpenShell secure runtime in GitHub Copilot and the next generation of NVIDIA-powered AI factories.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7b006549d63093f4",
+    "raw_id": "RAW-942ab91f1597ca61",
+    "claim_type": "partnership",
+    "subject": "NVIDIA 与 Microsoft 深化",
+    "predicate": "partnership",
+    "object": "，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-942ab91f1597ca61",
+      "start": 4175,
+      "end": 4392
+    },
+    "source_quote": "The enterprise data layer can now keep pace with AI agents that continuously query and reason over data, the result of years of deep engineering collaboration between NVIDIA and Microsoft, from research to production.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a091d5d3c42c7d9f",
+    "raw_id": "RAW-942ab91f1597ca61",
+    "claim_type": "partnership",
+    "subject": "NVIDIA 与 Microsoft 深化",
+    "predicate": "partnership",
+    "object": "，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-942ab91f1597ca61",
+      "start": 8269,
+      "end": 8382
+    },
+    "source_quote": "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows Devices to Cloud to Local",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6186a11cb153b7e5",
+    "raw_id": "RAW-942ab91f1597ca61",
+    "claim_type": "partnership",
+    "subject": "NVIDIA 与 Microsoft 深化",
+    "predicate": "partnership",
+    "object": "，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-942ab91f1597ca61",
+      "start": 16,
+      "end": 350
+    },
+    "source_quote": "The agentic AI moment has arrived, but delivering on its promise requires more than good models. It also takes fast hardware, secure runtimes, a responsive data layer and models tuned for long-running reasoning. NVIDIA and Microsoft are bringing that full stack to developers across Windows devices, Azure cloud and local deployments.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3a17065b54bb8b28",
+    "raw_id": "RAW-05c24c6e68185ae7",
+    "claim_type": "product_release",
+    "subject": "Design partners: The pre-",
+    "predicate": "product_release",
+    "object": "edge most AI founders ignore - Bessemer Venture Partners",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-05c24c6e68185ae7",
+      "start": 12,
+      "end": 55
+    },
+    "source_quote": "The pre-launch edge most AI founders ignore",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e33131a5f8688baf",
+    "raw_id": "RAW-05c24c6e68185ae7",
+    "claim_type": "product_release",
+    "subject": "Design partners: The pre-",
+    "predicate": "product_release",
+    "object": "edge most AI founders ignore - Bessemer Venture Partners",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-05c24c6e68185ae7",
+      "start": 328,
+      "end": 388
+    },
+    "source_quote": "Design partners: The pre-launch edge most AI founders ignore",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1a75e660b1619120",
+    "raw_id": "RAW-05c24c6e68185ae7",
+    "claim_type": "product_release",
+    "subject": "Design partners: The pre-",
+    "predicate": "product_release",
+    "object": "edge most AI founders ignore - Bessemer Venture Partners",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-05c24c6e68185ae7",
+      "start": 4982,
+      "end": 5225
+    },
+    "source_quote": "Each of those 12 partners met with the team biweekly, used early product versions, and gave structured feedback throughout. In exchange, they'd receive a discount at launch. The program ended with a hard conversion deadline: go paid, or don't.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2e8c4be90cea0b95",
+    "raw_id": "RAW-05c24c6e68185ae7",
+    "claim_type": "product_release",
+    "subject": "Design partners: The pre-",
+    "predicate": "product_release",
+    "object": "edge most AI founders ignore - Bessemer Venture Partners",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-05c24c6e68185ae7",
+      "start": 7397,
+      "end": 7905
+    },
+    "source_quote": "A design partner program is a structured, pre-launch arrangement between an early-stage startup and a small cohort of target customers. Design partners co-develop the product before it's built, providing structured feedback in exchange for early access and preferential pricing. Unlike beta testers, who evaluate a finished product, design partners actively shape product direction, pricing architecture, and go-to-market strategy, and are expected to convert to paying customers at the program's conclusion.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a87caee37c7ce3f7",
+    "raw_id": "RAW-3231a51145c3ecb4",
+    "claim_type": "funding",
+    "subject": "Questex Used AI Agents to",
+    "predicate": "funding",
+    "object": "$1 Million in 90 Days - A Media Operator",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3231a51145c3ecb4",
+      "start": 16,
+      "end": 69
+    },
+    "source_quote": "Questex Used AI Agents to Close $1 Million in 90 Days",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2eea1e9875f35458",
+    "raw_id": "RAW-3231a51145c3ecb4",
+    "claim_type": "funding",
+    "subject": "Questex Used AI Agents to",
+    "predicate": "funding",
+    "object": "$1 Million in 90 Days - A Media Operator",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3231a51145c3ecb4",
+      "start": 132,
+      "end": 443
+    },
+    "source_quote": "When a prospective exhibitor submits a form expressing interest in a Questex trade show, an AI sales agent named Julian is on the phone within two minutes. No queue; no waiting for a sales rep to circle back. During a three-month pilot program, that speed translated into more than $1 million in closed revenue.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-224fd72fc45ca64d",
+    "raw_id": "RAW-3231a51145c3ecb4",
+    "claim_type": "funding",
+    "subject": "Questex Used AI Agents to",
+    "predicate": "funding",
+    "object": "$1 Million in 90 Days - A Media Operator",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3231a51145c3ecb4",
+      "start": 444,
+      "end": 800
+    },
+    "source_quote": "For the New York City-based B2B media and events company, “Julian” is one piece of a broader AI deployment that is reshaping how the company handles exhibitor and sponsorship sales and content production across its portfolio. The results so far demonstrate how event operators can use artificial intelligence not to replace human talent, but to amplify it.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3c1576697162d523",
+    "raw_id": "RAW-3231a51145c3ecb4",
+    "claim_type": "funding",
+    "subject": "Questex Used AI Agents to",
+    "predicate": "funding",
+    "object": "$1 Million in 90 Days - A Media Operator",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-3231a51145c3ecb4",
+      "start": 1177,
+      "end": 1602
+    },
+    "source_quote": "SDR, or sales development representative, is the industry term for the front-line sales role responsible for prospecting, qualifying leads and booking meetings for senior account executives to close. At Questex, those reps were stretched thin, handling inbound qualification while also trying to run outbound campaigns that required rebuilding contact lists and messaging from scratch for each new event or industry vertical.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d20f84af9b7a46a4",
+    "raw_id": "RAW-a94b51ae60765d02",
+    "claim_type": "policy_regulation",
+    "subject": "特朗普签署",
+    "predicate": "policy_regulation",
+    "object": "：AI 模型在上线前可提交给政府进行安全评估",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-a94b51ae60765d02",
+      "start": 0,
+      "end": 113
+    },
+    "source_quote": "IT之家 6 月 3 日消息，美国总统唐纳德・特朗普于当地时间周二签署了一项行政令，推出人工智能企业自愿合作机制：AI 公司在前沿大模型正式发布前，可向美国联邦政府提交模型，以此“推动安全创新、强化关键基础设施网络安全防护”。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9b4b0ff100a2e922",
+    "raw_id": "RAW-a94b51ae60765d02",
+    "claim_type": "policy_regulation",
+    "subject": "特朗普签署",
+    "predicate": "policy_regulation",
+    "object": "：AI 模型在上线前可提交给政府进行安全评估",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-a94b51ae60765d02",
+      "start": 114,
+      "end": 191
+    },
+    "source_quote": "该行政令提出，美国人工智能产业能够蓬勃发展，部分原因在于“美方拒绝依靠繁重冗余的监管扼杀技术创新”，但同时新规也承认，新一代人工智能技术伴随各类安全隐患。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7dcb904e8524e72e",
+    "raw_id": "RAW-a94b51ae60765d02",
+    "claim_type": "policy_regulation",
+    "subject": "特朗普签署",
+    "predicate": "policy_regulation",
+    "object": "：AI 模型在上线前可提交给政府进行安全评估",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-a94b51ae60765d02",
+      "start": 191,
+      "end": 245
+    },
+    "source_quote": "据此，行政令要求多家联邦政府机构搭建配套细则，在 AI 模型面向公众上线前，评估模型具备的高阶网络攻防能力。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7ce9737c8a1aee98",
+    "raw_id": "RAW-a94b51ae60765d02",
+    "claim_type": "policy_regulation",
+    "subject": "特朗普签署",
+    "predicate": "policy_regulation",
+    "object": "：AI 模型在上线前可提交给政府进行安全评估",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-a94b51ae60765d02",
+      "start": 331,
+      "end": 383
+    },
+    "source_quote": "IT之家注意到，此前特朗普曾在最后一刻暂缓签署原定版本行政令，原因是他担忧旧版条款拖累美国对华科技竞争。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5687b294e07160c3",
+    "raw_id": "RAW-c958bb7d74f90812",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Codex Sites 功能，可将用户想法转化为交互式网站",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c958bb7d74f90812",
+      "start": 0,
+      "end": 52
+    },
+    "source_quote": "构建应用从未如此简单：OpenAI 推出 Sites，AI 转换用户工作、想法为交互式网站 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8d828dc88a36f1f1",
+    "raw_id": "RAW-c958bb7d74f90812",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Codex Sites 功能，可将用户想法转化为交互式网站",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c958bb7d74f90812",
+      "start": 220,
+      "end": 265
+    },
+    "source_quote": "构建应用从未如此简单：OpenAI 推出 Sites，AI 转换用户工作、想法为交互式网站",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-35d9640d285674fd",
+    "raw_id": "RAW-c958bb7d74f90812",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Codex Sites 功能，可将用户想法转化为交互式网站",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-c958bb7d74f90812",
+      "start": 332,
+      "end": 454
+    },
+    "source_quote": "IT之家 6 月 3 日消息，OpenAI 今天（6 月 3 日）发布博文，宣布为 Codex 推出 Sites 功能，目前以预览版形式，面向 Business 和 Enterprise 订阅用户开放， 可以创建和共享交互式托管网站和应用程序。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bb92e00ba09f2c39",
+    "raw_id": "RAW-c958bb7d74f90812",
+    "claim_type": "product_release",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Codex Sites 功能，可将用户想法转化为交互式网站",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-c958bb7d74f90812",
+      "start": 877,
+      "end": 925
+    },
+    "source_quote": "OpenAI 发布 Daybreak 项目：剑指 Anthropic，把安全检查放进日常代码流程",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1de92b0a01512ccd",
+    "raw_id": "RAW-bb766587d5a4f0ea",
+    "claim_type": "product_release",
+    "subject": "OpenAI Codex 扩展使用场景，",
+    "predicate": "product_release",
+    "object": "6 款岗位插件覆盖 62 个应用",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-bb766587d5a4f0ea",
+      "start": 0,
+      "end": 46
+    },
+    "source_quote": "OpenAI 扩展 Codex 使用场景，新增创意制作、销售等 6 款岗位插件 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-813eaeb274f4ef39",
+    "raw_id": "RAW-bb766587d5a4f0ea",
+    "claim_type": "product_release",
+    "subject": "OpenAI Codex 扩展使用场景，",
+    "predicate": "product_release",
+    "object": "6 款岗位插件覆盖 62 个应用",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-bb766587d5a4f0ea",
+      "start": 214,
+      "end": 253
+    },
+    "source_quote": "OpenAI 扩展 Codex 使用场景，新增创意制作、销售等 6 款岗位插件",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-250f0a59736ec262",
+    "raw_id": "RAW-bb766587d5a4f0ea",
+    "claim_type": "product_release",
+    "subject": "OpenAI Codex 扩展使用场景，",
+    "predicate": "product_release",
+    "object": "6 款岗位插件覆盖 62 个应用",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-bb766587d5a4f0ea",
+      "start": 320,
+      "end": 409
+    },
+    "source_quote": "IT之家 6 月 3 日消息，OpenAI 今天（6 月 3 日）发布公告，宣布进一步拓展 Codex 的使用场景， 新增 6 个岗位插件，覆盖 62 个应用和 110 项技能。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f3b4491e25ca7ec2",
+    "raw_id": "RAW-bb766587d5a4f0ea",
+    "claim_type": "product_release",
+    "subject": "OpenAI Codex 扩展使用场景，",
+    "predicate": "product_release",
+    "object": "6 款岗位插件覆盖 62 个应用",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-bb766587d5a4f0ea",
+      "start": 410,
+      "end": 479
+    },
+    "source_quote": "IT之家注：Codex 是 OpenAI 推出的 AI 智能体助手，最初服务软件开发，目前已蓬勃发展， 周活跃用户数量超过 500 万人。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-566a11f650c20217",
+    "raw_id": "RAW-d6b1f963c49b5b65",
+    "claim_type": "partnership",
+    "subject": "微软与梅奥诊所达成",
+    "predicate": "partnership",
+    "object": "，共同开发部署医疗保健领域前沿AI模型",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-d6b1f963c49b5b65",
+      "start": 0,
+      "end": 34
+    },
+    "source_quote": "共同开发、部署 AI 医疗模型，微软与梅奥诊所达成合作 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e1fdb0764dc43986",
+    "raw_id": "RAW-d6b1f963c49b5b65",
+    "claim_type": "partnership",
+    "subject": "微软与梅奥诊所达成",
+    "predicate": "partnership",
+    "object": "，共同开发部署医疗保健领域前沿AI模型",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-d6b1f963c49b5b65",
+      "start": 202,
+      "end": 229
+    },
+    "source_quote": "共同开发、部署 AI 医疗模型，微软与梅奥诊所达成合作",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ece4035003edc408",
+    "raw_id": "RAW-d6b1f963c49b5b65",
+    "claim_type": "partnership",
+    "subject": "微软与梅奥诊所达成",
+    "predicate": "partnership",
+    "object": "，共同开发部署医疗保健领域前沿AI模型",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-d6b1f963c49b5b65",
+      "start": 278,
+      "end": 373
+    },
+    "source_quote": "IT之家 6 月 3 日消息，微软今天在 Build 2026 大会宣布与梅奥诊所达成战略合作，共同开发部署医疗保健领域的前沿 AI 模型，让更多人在需要时获得梅奥诊所的医疗知识、服务模式。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d1a11404af23e95a",
+    "raw_id": "RAW-d6b1f963c49b5b65",
+    "claim_type": "partnership",
+    "subject": "微软与梅奥诊所达成",
+    "predicate": "partnership",
+    "object": "，共同开发部署医疗保健领域前沿AI模型",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-d6b1f963c49b5b65",
+      "start": 374,
+      "end": 465
+    },
+    "source_quote": "IT之家在此援引官方新闻稿，本次合作将整合梅奥诊所的全球医疗专业能力、去标识化临床健康数据，以及微软的先进 AI、云计算及超级智能能力，为临床推理、医疗应用场景打造前沿 AI 模型。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  }
+]

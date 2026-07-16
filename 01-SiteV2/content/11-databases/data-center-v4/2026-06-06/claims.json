@@ -1,0 +1,1178 @@
+[
+  {
+    "claim_id": "CL-5502d0b0bd0e48c0",
+    "raw_id": "RAW-be9d78247d8d1bb4",
+    "claim_type": "hardware_product",
+    "subject": "Google",
+    "predicate": "hardware_product",
+    "object": "与 TPU 运行 Python 代码",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-be9d78247d8d1bb4",
+      "start": 194,
+      "end": 470
+    },
+    "source_quote": "This week, Google AI team released the Colab CLI . The tool connects your local terminal to remote Colab runtimes. It lets developers and AI agents run code on cloud GPUs and TPUs. You stay in your terminal the entire time. The CLI is open source under the Apache 2.0 license.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8684c16946e448fb",
+    "raw_id": "RAW-be9d78247d8d1bb4",
+    "claim_type": "hardware_product",
+    "subject": "Google",
+    "predicate": "hardware_product",
+    "object": "与 TPU 运行 Python 代码",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-be9d78247d8d1bb4",
+      "start": 471,
+      "end": 495
+    },
+    "source_quote": "What is Google Colab CLI",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0bf0ef2a1b20d905",
+    "raw_id": "RAW-be9d78247d8d1bb4",
+    "claim_type": "hardware_product",
+    "subject": "Google",
+    "predicate": "hardware_product",
+    "object": "与 TPU 运行 Python 代码",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-be9d78247d8d1bb4",
+      "start": 496,
+      "end": 626
+    },
+    "source_quote": "The Colab CLI is a command-line interface for Google Colab. You can create sessions, run code, and manage files from the terminal.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bdc3375536e4a407",
+    "raw_id": "RAW-be9d78247d8d1bb4",
+    "claim_type": "hardware_product",
+    "subject": "Google",
+    "predicate": "hardware_product",
+    "object": "与 TPU 运行 Python 代码",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-be9d78247d8d1bb4",
+      "start": 627,
+      "end": 853
+    },
+    "source_quote": "Any agent with terminal access can call the tool. That includes Claude Code, Codex, and Google’s Antigravity. Google ships a prepackaged skill file named COLAB_SKILL.md . It gives agents built-in context on how to use the CLI.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a371bac8e06e3fe2",
+    "raw_id": "RAW-ec2fd432f7f2558e",
+    "claim_type": "model_release",
+    "subject": "NVIDIA",
+    "predicate": "model_release",
+    "object": "，实时转录 40 种语言-地区",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ec2fd432f7f2558e",
+      "start": 144,
+      "end": 531
+    },
+    "source_quote": "NVIDIA’s Nemotron Speech team has released Nemotron 3.5 ASR . It is a 600M-parameter streaming Automatic Speech Recognition (ASR) model. A single checkpoint transcribes 40 language-locales in real time. Punctuation and capitalization are built in natively. The model ships as open weights on Hugging Face. The license is OpenMDW-1.1. The architecture is a Cache-Aware FastConformer-RNNT.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2a96e0043824460f",
+    "raw_id": "RAW-ec2fd432f7f2558e",
+    "claim_type": "model_release",
+    "subject": "NVIDIA",
+    "predicate": "model_release",
+    "object": "，实时转录 40 种语言-地区",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-ec2fd432f7f2558e",
+      "start": 532,
+      "end": 556
+    },
+    "source_quote": "What is Nemotron 3.5 ASR",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ec4e261537b682f9",
+    "raw_id": "RAW-ec2fd432f7f2558e",
+    "claim_type": "model_release",
+    "subject": "NVIDIA",
+    "predicate": "model_release",
+    "object": "，实时转录 40 种语言-地区",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-ec2fd432f7f2558e",
+      "start": 557,
+      "end": 826
+    },
+    "source_quote": "Nemotron 3.5 ASR extends nvidia/nemotron-speech-streaming-en-0.6b to many languages. It adds prompt-based language-ID conditioning to the base model. That lets one 600M-parameter checkpoint cover 40 language-locales. No per-language model or model-swapping is required.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-37f58442db5e4b66",
+    "raw_id": "RAW-ec2fd432f7f2558e",
+    "claim_type": "model_release",
+    "subject": "NVIDIA",
+    "predicate": "model_release",
+    "object": "，实时转录 40 种语言-地区",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-ec2fd432f7f2558e",
+      "start": 1082,
+      "end": 1157
+    },
+    "source_quote": "Image source: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9ebdfb35e1d2a1c1",
+    "raw_id": "RAW-cabf4aa58b7e7791",
+    "claim_type": "funding",
+    "subject": "Willow",
+    "predicate": "funding",
+    "object": "$7M Seed to Ensure Enterprises Can Fully Oversee and Govern Autonomous Agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-cabf4aa58b7e7791",
+      "start": 0,
+      "end": 243
+    },
+    "source_quote": "Already used by thousands of employees at website building platform Wix , Willow equips enterprises with 360-degree visibility of an AI agent's activity, while securely controlling how agents access internal systems, data, and enterprise tools",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f810c0a90ab447d4",
+    "raw_id": "RAW-cabf4aa58b7e7791",
+    "claim_type": "funding",
+    "subject": "Willow",
+    "predicate": "funding",
+    "object": "$7M Seed to Ensure Enterprises Can Fully Oversee and Govern Autonomous Agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-cabf4aa58b7e7791",
+      "start": 244,
+      "end": 790
+    },
+    "source_quote": "HERZLIYA, Israel , June 4, 2026 /PRNewswire/ -- Willow , a pioneering agentic access platform has emerged from stealth with $7 million in seed funding to enable enterprises to safely adopt AI agents across the workplace without impeding innovation. The round was led by Hetz Ventures , following early angel investment from Wix Co-Founder and CEO Avishai Abrahami and President Nir Zohar , who backed Willow at its earliest stage. The funding will be used to enhance the next phase of Willow's go-to-market while accelerating product development.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-65012d1846add3d3",
+    "raw_id": "RAW-cabf4aa58b7e7791",
+    "claim_type": "funding",
+    "subject": "Willow",
+    "predicate": "funding",
+    "object": "$7M Seed to Ensure Enterprises Can Fully Oversee and Govern Autonomous Agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-cabf4aa58b7e7791",
+      "start": 808,
+      "end": 898
+    },
+    "source_quote": "Willow, the pioneering agentic access platform announces seed round (Credit: Tomer Lesher)",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-db4b4968ef236f26",
+    "raw_id": "RAW-cabf4aa58b7e7791",
+    "claim_type": "funding",
+    "subject": "Willow",
+    "predicate": "funding",
+    "object": "$7M Seed to Ensure Enterprises Can Fully Oversee and Govern Autonomous Agents",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-cabf4aa58b7e7791",
+      "start": 1551,
+      "end": 2061
+    },
+    "source_quote": "Willow is tackling this problem head-on; securing enterprises against the fastest-growing and least governed attack vector in the enterprise. Its governance and access layer grants organizations full visibility and control over how AI agents connect to internal systems and what actions they are allowed to perform, overseeing which AI agents employees are already using, monitoring risky or unauthorized integrations, and applying granular controls around how agents interact with enterprise systems and data.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bb5a81ffbaa497ec",
+    "raw_id": "RAW-f8c9d5337372073b",
+    "claim_type": "product_release",
+    "subject": "Leading Inference Providers Achieve Lowest Token Cost With",
+    "predicate": "product_release",
+    "object": "Models on NVIDIA Blackwell | NVIDIA Blog",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f8c9d5337372073b",
+      "start": 1412,
+      "end": 1760
+    },
+    "source_quote": "These providers host advanced open source models, which have now reached frontier-level intelligence. By combining open source frontier intelligence, the extreme hardware-software codesign of NVIDIA Blackwell and their own optimized inference stacks, these providers are enabling dramatic token cost reductions for businesses across every industry.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-06b8b85919989a53",
+    "raw_id": "RAW-f8c9d5337372073b",
+    "claim_type": "product_release",
+    "subject": "Leading Inference Providers Achieve Lowest Token Cost With",
+    "predicate": "product_release",
+    "object": "Models on NVIDIA Blackwell | NVIDIA Blog",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f8c9d5337372073b",
+      "start": 1761,
+      "end": 1872
+    },
+    "source_quote": "How Did Healthcare Platform Sully.ai Cut Inference Costs by 10x With Baseten, Open Source Models and Blackwell?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-64b046e921ca8c43",
+    "raw_id": "RAW-f8c9d5337372073b",
+    "claim_type": "product_release",
+    "subject": "Leading Inference Providers Achieve Lowest Token Cost With",
+    "predicate": "product_release",
+    "object": "Models on NVIDIA Blackwell | NVIDIA Blog",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f8c9d5337372073b",
+      "start": 2493,
+      "end": 3128
+    },
+    "source_quote": "To overcome these bottlenecks, Sully.ai uses Baseten’s Model API , which deploys open source models such as gpt-oss-120b on NVIDIA Blackwell GPUs. Baseten used the low-precision NVFP4 data format, the NVIDIA TensorRT-LLM library — an open source C++/Python framework for optimizing large language model inference on NVIDIA GPUs that includes tensor parallelism, batching and in-flight attention optimizations — and the NVIDIA Dynamo inference framework to deliver optimized inference. The company chose NVIDIA Blackwell to run its Model API after seeing up to 2.5x better throughput per dollar compared with the NVIDIA Hopper platform.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9be8b057f61f7062",
+    "raw_id": "RAW-f8c9d5337372073b",
+    "claim_type": "product_release",
+    "subject": "Leading Inference Providers Achieve Lowest Token Cost With",
+    "predicate": "product_release",
+    "object": "Models on NVIDIA Blackwell | NVIDIA Blog",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-f8c9d5337372073b",
+      "start": 4271,
+      "end": 4874
+    },
+    "source_quote": "Latitude runs large open source models on DeepInfra’s inference platform, powered by NVIDIA Blackwell GPUs and TensorRT-LLM . For a large-scale mixture-of-experts (MoE) model, DeepInfra reduced the cost per million tokens from 20 cents on the NVIDIA Hopper platform to 10 cents on Blackwell. Moving to Blackwell’s native NVFP4 format, an ultralow precision floating-point data format reducing memory bandwidth and model size while maintaining inference accuracy, further cut that cost to just 5 cents — for a total 4x improvement in cost per token — while maintaining the accuracy that customers expect.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-81660c2e78e6c8a8",
+    "raw_id": "RAW-b39b320df06285f4",
+    "claim_type": "product_release",
+    "subject": "Meta 在其 AI 应用中",
+    "predicate": "product_release",
+    "object": "AI 生成的点击诱饵新闻 feed",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b39b320df06285f4",
+      "start": 485,
+      "end": 937
+    },
+    "source_quote": "The Meta AI app first launched in April 2025 with its focus on a public “Discover” feed that showed AI-generated images and conversations from other users (who frequently seemed unaware that they were being made public). That’s all disappeared. The app now has a standard chatbot interface, plus a For You page that’s been present for at least a few months, displaying a stream of suggested article prompts that, when tapped, generate entire “stories.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-423789fb87d1d4e4",
+    "raw_id": "RAW-b39b320df06285f4",
+    "claim_type": "product_release",
+    "subject": "Meta 在其 AI 应用中",
+    "predicate": "product_release",
+    "object": "AI 生成的点击诱饵新闻 feed",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b39b320df06285f4",
+      "start": 4870,
+      "end": 5328
+    },
+    "source_quote": "It wasn’t clear whether the app should be able to generate AI images of real people in accordance with Meta’s own, rather opaque rules, but it was. The company has previously said it wants “people to know when they see posts that have been made with AI” and that it automatically adds labels to some user-generated content when AI is detected. Despite this, there was no obvious indication or label in the feed or articles that any material was AI-generated.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-46151ed1c93f0b16",
+    "raw_id": "RAW-b39b320df06285f4",
+    "claim_type": "product_release",
+    "subject": "Meta 在其 AI 应用中",
+    "predicate": "product_release",
+    "object": "AI 生成的点击诱饵新闻 feed",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b39b320df06285f4",
+      "start": 6954,
+      "end": 7406
+    },
+    "source_quote": "The Meta AI app first launched in April 2025 with its focus on a public “Discover” feed that showed AI-generated images and conversations from other users (who frequently seemed unaware that they were being made public). That’s all disappeared. The app now has a standard chatbot interface, plus a For You page that’s been present for at least a few months, displaying a stream of suggested article prompts that, when tapped, generate entire “stories.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b2dbece0dae80282",
+    "raw_id": "RAW-b39b320df06285f4",
+    "claim_type": "product_release",
+    "subject": "Meta 在其 AI 应用中",
+    "predicate": "product_release",
+    "object": "AI 生成的点击诱饵新闻 feed",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-b39b320df06285f4",
+      "start": 11339,
+      "end": 11797
+    },
+    "source_quote": "It wasn’t clear whether the app should be able to generate AI images of real people in accordance with Meta’s own, rather opaque rules, but it was. The company has previously said it wants “people to know when they see posts that have been made with AI” and that it automatically adds labels to some user-generated content when AI is detected. Despite this, there was no obvious indication or label in the feed or articles that any material was AI-generated.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-276571466c9e4253",
+    "raw_id": "RAW-19350550b241c6fb",
+    "claim_type": "model_release",
+    "subject": "Audio Interaction：",
+    "predicate": "model_release",
+    "object": "持续监听，每0.4秒决定是否说话或保持沉默",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-19350550b241c6fb",
+      "start": 19,
+      "end": 124
+    },
+    "source_quote": "New open-source voice model listens nonstop and decides every 0.4 seconds whether to speak or stay silent",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c16ffb87eaea5fda",
+    "raw_id": "RAW-19350550b241c6fb",
+    "claim_type": "model_release",
+    "subject": "Audio Interaction：",
+    "predicate": "model_release",
+    "object": "持续监听，每0.4秒决定是否说话或保持沉默",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-19350550b241c6fb",
+      "start": 3759,
+      "end": 4120
+    },
+    "source_quote": "Second, the model fired too often on sounds that didn't matter. The team countered this with large amounts of verified silence and background audio that's explicitly not supposed to trigger a response. On the newly introduced ProactiveSound Bench with 644 human-curated events the model beats Gemini 3 Flash, Kimi-Audio-Instruct, and Step-Audio 2, among others.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f88c29291d632a8e",
+    "raw_id": "RAW-19350550b241c6fb",
+    "claim_type": "model_release",
+    "subject": "Audio Interaction：",
+    "predicate": "model_release",
+    "object": "持续监听，每0.4秒决定是否说话或保持沉默",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-19350550b241c6fb",
+      "start": 249,
+      "end": 420
+    },
+    "source_quote": "The \"Audio Interaction\" AI model processes continuous audio streams and combines tasks such as dialog, translation, transcription and sound recognition in a single system.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-927ec5e720d71a81",
+    "raw_id": "RAW-19350550b241c6fb",
+    "claim_type": "model_release",
+    "subject": "Audio Interaction：",
+    "predicate": "model_release",
+    "object": "持续监听，每0.4秒决定是否说话或保持沉默",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-19350550b241c6fb",
+      "start": 1355,
+      "end": 1732
+    },
+    "source_quote": "Researchers from China, Hong Kong, and Singapore want to combine both approaches with \"audio interaction.\" The model listens to an audio stream continuously, breaks it into 0.4-second chunks, and decides after each chunk whether to stay silent or speak. Translation, transcription, chatting, and reacting to everyday noises all run in a single three-billion-parameter model. Ad",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e56a16b0e30270b8",
+    "raw_id": "RAW-ae16ba85acc30daf",
+    "claim_type": "product_release",
+    "subject": "Moonshot AI",
+    "predicate": "product_release",
+    "object": "Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ae16ba85acc30daf",
+      "start": 206,
+      "end": 506
+    },
+    "source_quote": "Moonshot AI has released Kimi Code CLI, an open-source coding agent that runs in the terminal. The tool reads and edits code, runs shell commands, searches files, and fetches web pages. It then chooses its next step based on the feedback it receives. The project is MIT-licensed and lives on GitHub..",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5ca64f6bf1293cbc",
+    "raw_id": "RAW-ae16ba85acc30daf",
+    "claim_type": "product_release",
+    "subject": "Moonshot AI",
+    "predicate": "product_release",
+    "object": "Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-ae16ba85acc30daf",
+      "start": 2851,
+      "end": 3071
+    },
+    "source_quote": "On first launch, type /login inside the UI. You can choose Kimi Code OAuth or a Moonshot AI Open Platform API key. To run one instruction without the UI, use kimi -p \"your task\" . To resume the previous session, add -C .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-84f481fd3d7791d8",
+    "raw_id": "RAW-ae16ba85acc30daf",
+    "claim_type": "product_release",
+    "subject": "Moonshot AI",
+    "predicate": "product_release",
+    "object": "Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-ae16ba85acc30daf",
+      "start": 5496,
+      "end": 5600
+    },
+    "source_quote": "Moonshot AI’s open-source terminal coding agent that reads code, runs commands, and plans its next step.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3437dc546688e486",
+    "raw_id": "RAW-ae16ba85acc30daf",
+    "claim_type": "product_release",
+    "subject": "Moonshot AI",
+    "predicate": "product_release",
+    "object": "Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-ae16ba85acc30daf",
+      "start": 507,
+      "end": 741
+    },
+    "source_quote": "Kimi Code CLI is the successor to the older kimi-cli. The new agent is written in TypeScript and distributed via npm. It works out of the box with Moonshot AI’s Kimi models. It can also be configured to use other compatible providers.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-91a7708cf76d7c57",
+    "raw_id": "RAW-2de12d7dd2377840",
+    "claim_type": "funding",
+    "subject": "Y Combinator-backed Mandel AI",
+    "predicate": "funding",
+    "object": "$3.9M to automate global supply chains - Tech.eu",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2de12d7dd2377840",
+      "start": 24,
+      "end": 99
+    },
+    "source_quote": "Y Combinator-backed Mandel AI raises $3.9M to automate global supply chains",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bd65f55ae94789d1",
+    "raw_id": "RAW-2de12d7dd2377840",
+    "claim_type": "funding",
+    "subject": "Y Combinator-backed Mandel AI",
+    "predicate": "funding",
+    "object": "$3.9M to automate global supply chains - Tech.eu",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-2de12d7dd2377840",
+      "start": 350,
+      "end": 444
+    },
+    "source_quote": "Mandel AI has raised $3.9 million Seed funding to build coordination for global supply chains.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-67631a417c805da0",
+    "raw_id": "RAW-2de12d7dd2377840",
+    "claim_type": "funding",
+    "subject": "Y Combinator-backed Mandel AI",
+    "predicate": "funding",
+    "object": "$3.9M to automate global supply chains - Tech.eu",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-2de12d7dd2377840",
+      "start": 2650,
+      "end": 2725
+    },
+    "source_quote": "Y Combinator-backed Mandel AI raises $3.9M to automate global supply chains",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-34eec3cf6d7c455a",
+    "raw_id": "RAW-2de12d7dd2377840",
+    "claim_type": "funding",
+    "subject": "Y Combinator-backed Mandel AI",
+    "predicate": "funding",
+    "object": "$3.9M to automate global supply chains - Tech.eu",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-2de12d7dd2377840",
+      "start": 445,
+      "end": 698
+    },
+    "source_quote": "The startup has developed an AI supply chain coordinator that helps manufacturers manage supplier coordination, detect disruptions, and automate procurement, replacing the spreadsheets and email chains that still run most industrial supply chains today.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2a9fa9cd7f183297",
+    "raw_id": "RAW-1826eab3024fea74",
+    "claim_type": "product_release",
+    "subject": "Contrario",
+    "predicate": "product_release",
+    "object": ": The case for pairing AI agents with human recruiters instead of replacing them",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1826eab3024fea74",
+      "start": 0,
+      "end": 98
+    },
+    "source_quote": "Contrario launches: The case for pairing AI agents with human recruiters instead of replacing them",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a07aa12105ce235c",
+    "raw_id": "RAW-1826eab3024fea74",
+    "claim_type": "product_release",
+    "subject": "Contrario",
+    "predicate": "product_release",
+    "object": ": The case for pairing AI agents with human recruiters instead of replacing them",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1826eab3024fea74",
+      "start": 99,
+      "end": 155
+    },
+    "source_quote": "Contrario launches after crossing $6M annualized revenue",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-64454b7a53a18770",
+    "raw_id": "RAW-1826eab3024fea74",
+    "claim_type": "product_release",
+    "subject": "Contrario",
+    "predicate": "product_release",
+    "object": ": The case for pairing AI agents with human recruiters instead of replacing them",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1826eab3024fea74",
+      "start": 156,
+      "end": 212
+    },
+    "source_quote": "Contrario launches after crossing $6M annualized revenue",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3f28219301135e7f",
+    "raw_id": "RAW-1826eab3024fea74",
+    "claim_type": "product_release",
+    "subject": "Contrario",
+    "predicate": "product_release",
+    "object": ": The case for pairing AI agents with human recruiters instead of replacing them",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1826eab3024fea74",
+      "start": 293,
+      "end": 391
+    },
+    "source_quote": "Contrario launches: The case for pairing AI agents with human recruiters instead of replacing them",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b0c0c9748c3995f5",
+    "raw_id": "RAW-1e3a9ef618b2eaaa",
+    "claim_type": "deployment",
+    "subject": "Travelers",
+    "predicate": "deployment",
+    "object": "AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-1e3a9ef618b2eaaa",
+      "start": 38,
+      "end": 591
+    },
+    "source_quote": "Travelers Insurance deployed a fully autonomous voice system powered by OpenAI’s Realtime API across all US states as of June 2, 2026, according to the OpenAI Blog. The AI Claim Assistant guides customers through first notice of loss for auto property damage claims using natural conversation, eliminating wait times and human involvement for routine filings. Between 85–90% of customers now complete their claim submission entirely through the AI system after the nationwide rollout, which occurred within two months of launching in eight pilot states.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-407fe0f490cb22cf",
+    "raw_id": "RAW-1e3a9ef618b2eaaa",
+    "claim_type": "deployment",
+    "subject": "Travelers",
+    "predicate": "deployment",
+    "object": "AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-1e3a9ef618b2eaaa",
+      "start": 592,
+      "end": 1112
+    },
+    "source_quote": "The deployment addresses a critical operational constraint: Travelers processed more than 1.5 million claims and paid over $23 billion in losses last year, with catastrophe events alone capable of generating 100,000+ claims within days. By connecting OpenAI’s frontier models to its internal claims infrastructure and orchestration systems, Travelers enables 24/7 support that does not create bottlenecks during surge events, while claim professionals redirect their effort toward complex cases requiring human judgment.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8e6b124487e848fc",
+    "raw_id": "RAW-1e3a9ef618b2eaaa",
+    "claim_type": "deployment",
+    "subject": "Travelers",
+    "predicate": "deployment",
+    "object": "AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-1e3a9ef618b2eaaa",
+      "start": 1150,
+      "end": 1606
+    },
+    "source_quote": "Travelers SVP of Auto and Property Claims Patrick Gee credited OpenAI’s selection to the model’s ability to “perform in that environment”—a reference to the demanding requirements of low-latency, conversational voice interaction at enterprise scale. The Realtime API’s capacity to maintain natural dialogue while integrating with backend systems, retrieving policy details, and submitting structured claims data differentiated it from competing approaches.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5002cd830501ec69",
+    "raw_id": "RAW-1e3a9ef618b2eaaa",
+    "claim_type": "deployment",
+    "subject": "Travelers",
+    "predicate": "deployment",
+    "object": "AI-powered voice claims assistant nationwide with OpenAI Realtime API | keepingupwith.ai",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-1e3a9ef618b2eaaa",
+      "start": 1881,
+      "end": 2781
+    },
+    "source_quote": "This deployment signals a shift in how large-scale customer-facing enterprises view AI voice automation. Where previous insurance chatbots required escalation to a human agent, Travelers’ autonomous system completes 85–90% of initial claims intake without any handoff, reducing operational cost per claim and improving customer satisfaction during high-stress moments (immediately after an accident). For other financial services and utilities managing similar high-volume, time-sensitive intake workflows—mortgage processing, medical billing, utility outage reporting—the Travelers model demonstrates a playbook for converting API capabilities into measurable unit-economics improvements. The generalization of OpenAI’s Realtime API to other enterprise domains will depend on whether this 85–90% completion rate holds under independent audit and across other claim types beyond auto property damage.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7f289cddccc3287b",
+    "raw_id": "RAW-71ea1a63ae7eb5f6",
+    "claim_type": "product_release",
+    "subject": "12 Fastest Growing",
+    "predicate": "product_release",
+    "object": "Dev Tools Companies and Startups",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-71ea1a63ae7eb5f6",
+      "start": 89,
+      "end": 160
+    },
+    "source_quote": "What's driving the explosive growth in open source dev tools companies?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2ab090caefb30f79",
+    "raw_id": "RAW-71ea1a63ae7eb5f6",
+    "claim_type": "product_release",
+    "subject": "12 Fastest Growing",
+    "predicate": "product_release",
+    "object": "Dev Tools Companies and Startups",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-71ea1a63ae7eb5f6",
+      "start": 601,
+      "end": 961
+    },
+    "source_quote": "GitHub stars have become the critical validation metric for open source success. Top projects like Ollama reached 136K+ stars with 261% growth in 2024, while Zed Industries became the #1 most starred open source project from startups. This community-driven adoption signals genuine developer utility and de-risks investor decisions before major funding rounds.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cdb81630cc541213",
+    "raw_id": "RAW-71ea1a63ae7eb5f6",
+    "claim_type": "product_release",
+    "subject": "12 Fastest Growing",
+    "predicate": "product_release",
+    "object": "Dev Tools Companies and Startups",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-71ea1a63ae7eb5f6",
+      "start": 1415,
+      "end": 2173
+    },
+    "source_quote": "The open source developer tools landscape is experiencing unprecedented transformation. In 2024-2025, these companies raised billions across 1,093+ investment deals, with AI-powered platforms leading a revolution in how software is built. From AI code editors achieving $29B valuations to local LLM platforms growing 261% in GitHub stars, the pace of innovation has never been faster. For go-to-market teams targeting these high-growth dev tool companies, finding the right prospects requires sophisticated audience discovery capabilities. Agentic AI platforms like Landbase now enable teams to identify and qualify these fast-growing startups using natural-language prompts like \"Recently funded open source dev tool companies with 50+ GitHub contributors.\"",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b7c79af83842d0a8",
+    "raw_id": "RAW-71ea1a63ae7eb5f6",
+    "claim_type": "product_release",
+    "subject": "12 Fastest Growing",
+    "predicate": "product_release",
+    "object": "Dev Tools Companies and Startups",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-71ea1a63ae7eb5f6",
+      "start": 7689,
+      "end": 8092
+    },
+    "source_quote": "All Hands AI pioneers the shift from AI co-pilots to autonomous AI engineering agents, with an open source model ensuring transparency and community-driven development. The platform addresses the growing need for AI-powered development automation, and Docker-based deployment makes it accessible to development teams of all sizes. The project achieved #3 most starred new startup project status in 2024.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-7f2a4ae53078b723",
+    "raw_id": "RAW-c4d2d2aca37564d5",
+    "claim_type": "funding",
+    "subject": "Clara",
+    "predicate": "funding",
+    "object": "2M pre-seed round, joins Y Combinator — Clara",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c4d2d2aca37564d5",
+      "start": 27,
+      "end": 86
+    },
+    "source_quote": "Clara launches with $12M pre-seed round, joins Y Combinator",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f444977262e465e5",
+    "raw_id": "RAW-c4d2d2aca37564d5",
+    "claim_type": "funding",
+    "subject": "Clara",
+    "predicate": "funding",
+    "object": "2M pre-seed round, joins Y Combinator — Clara",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c4d2d2aca37564d5",
+      "start": 233,
+      "end": 568
+    },
+    "source_quote": "Clara securely pulls your medical history from 150,000+ hospitals, labs, and pharmacies and reads all of it, every time you interact with us. We draft prescription refills, lab orders, and care plans for a clinician in your state to review and sign off on. Members can upgrade to connect their wearables or bundle longevity lab panels.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bba992d4a0b7d74d",
+    "raw_id": "RAW-c4d2d2aca37564d5",
+    "claim_type": "funding",
+    "subject": "Clara",
+    "predicate": "funding",
+    "object": "2M pre-seed round, joins Y Combinator — Clara",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-c4d2d2aca37564d5",
+      "start": 569,
+      "end": 720
+    },
+    "source_quote": "Clara is building a team with the experience to shepherd in the era of AI primary care, grounded in clinical quality, operations, and regulatory rigor.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-34951c242b03458f",
+    "raw_id": "RAW-c4d2d2aca37564d5",
+    "claim_type": "funding",
+    "subject": "Clara",
+    "predicate": "funding",
+    "object": "2M pre-seed round, joins Y Combinator — Clara",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-c4d2d2aca37564d5",
+      "start": 1082,
+      "end": 1583
+    },
+    "source_quote": "The core team includes Brendan Levy as Chief Medical Officer. Brendan is a pioneer in asynchronous care, having led the medical groups or built the clinical products at Hims & Hers, Lemonaid Health, Wheel, and GoodRx, where he was Chief Medical Officer through the IPO after the acquisition of HeyDoctor, the company he cofounded. Claudia Tucker leads government affairs; she previously led government affairs at Teladoc, where she worked with state governors to expand telehealth access during COVID.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f458ddd8280f974d",
+    "raw_id": "RAW-71d2dea1cb925a3e",
+    "claim_type": "deployment",
+    "subject": "2026 高考今日开考，vivo",
+    "predicate": "deployment",
+    "object": "\"AI 志愿助手\"功能提供一站式全程服务",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-71d2dea1cb925a3e",
+      "start": 0,
+      "end": 46
+    },
+    "source_quote": "2026 高考今日开考，vivo 上线“AI 志愿助手”功能提供一站式全程服务 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ee93482e6fc8b526",
+    "raw_id": "RAW-71d2dea1cb925a3e",
+    "claim_type": "deployment",
+    "subject": "2026 高考今日开考，vivo",
+    "predicate": "deployment",
+    "object": "\"AI 志愿助手\"功能提供一站式全程服务",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-71d2dea1cb925a3e",
+      "start": 212,
+      "end": 251
+    },
+    "source_quote": "2026 高考今日开考，vivo 上线“AI 志愿助手”功能提供一站式全程服务",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-30e781cd79058e3e",
+    "raw_id": "RAW-71d2dea1cb925a3e",
+    "claim_type": "deployment",
+    "subject": "2026 高考今日开考，vivo",
+    "predicate": "deployment",
+    "object": "\"AI 志愿助手\"功能提供一站式全程服务",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-71d2dea1cb925a3e",
+      "start": 297,
+      "end": 384
+    },
+    "source_quote": "IT之家 6 月 7 日消息，2026 年全国高考今日开考，据 vivo 官方微博，vivo 目前已上线高考通“AI 志愿助手”功能，提供从高考日程到志愿填报一站式全程服务。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2881b1b0b1e9eff2",
+    "raw_id": "RAW-71d2dea1cb925a3e",
+    "claim_type": "deployment",
+    "subject": "2026 高考今日开考，vivo",
+    "predicate": "deployment",
+    "object": "\"AI 志愿助手\"功能提供一站式全程服务",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-71d2dea1cb925a3e",
+      "start": 738,
+      "end": 767
+    },
+    "source_quote": "京东上线“助考车队”：随身携带文具等，首次投入智能温控餐箱",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6c9b69596f851abd",
+    "raw_id": "RAW-c4c0fa0fa75fb520",
+    "claim_type": "funding",
+    "subject": "消息称 Meta 拟通过股票发行",
+    "predicate": "funding",
+    "object": "数百亿美元，为 AI 业务扩张提供资金",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-c4c0fa0fa75fb520",
+      "start": 0,
+      "end": 72
+    },
+    "source_quote": "IT之家 6 月 7 日消息，据英国《金融时报》当地时间周五报道，Meta 正考虑通过股票发行募资数百亿美元，为其人工智能业务布局提供资金支持。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e1c031440a191d4d",
+    "raw_id": "RAW-c4c0fa0fa75fb520",
+    "claim_type": "funding",
+    "subject": "消息称 Meta 拟通过股票发行",
+    "predicate": "funding",
+    "object": "数百亿美元，为 AI 业务扩张提供资金",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-c4c0fa0fa75fb520",
+      "start": 172,
+      "end": 230
+    },
+    "source_quote": "《金融时报》援引三位知情人士消息称，随着计划大幅增加人工智能相关开支，Meta 管理层一直在探索各类灵活的募资方式。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0ab6dbb8ff5153a1",
+    "raw_id": "RAW-c4c0fa0fa75fb520",
+    "claim_type": "funding",
+    "subject": "消息称 Meta 拟通过股票发行",
+    "predicate": "funding",
+    "object": "数百亿美元，为 AI 业务扩张提供资金",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-c4c0fa0fa75fb520",
+      "start": 231,
+      "end": 279
+    },
+    "source_quote": "报道还表示，受本周 Alphabet 股权融资顺利落地的影响，Meta 内部相关讨论也愈发密集。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1698b4cb3e9a8f29",
+    "raw_id": "RAW-c4c0fa0fa75fb520",
+    "claim_type": "funding",
+    "subject": "消息称 Meta 拟通过股票发行",
+    "predicate": "funding",
+    "object": "数百亿美元，为 AI 业务扩张提供资金",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-c4c0fa0fa75fb520",
+      "start": 367,
+      "end": 448
+    },
+    "source_quote": "去年 10 月，Meta 推出史上最大规模债券发行计划，募资上限达 300 亿美元，同时还与 Blue Owl Capital 达成了 270 亿美元的融资协议。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  }
+]

@@ -53,7 +53,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current Reports Center / Intelligence Map column version: IMAP-V2.0.0-report-center-opportunity-system.
 - Current Raw contract: RAW-V3.0.
 - Current canonical event contract: EVENT-V1.0.
-- Current tag taxonomy version: TAG-V3.0.
+- Current tag taxonomy version: TAG-V4.0.
 - Current data-center rule source: `context/12-data-center-v4.md`.
 - `context/07-v3-intelligence-generation-rules.md` governs frozen V3 page compatibility only.
 - V2 website pages and old four-column output rules are retired.
@@ -132,7 +132,7 @@ Rules:
 - FDE, hardware, and tags are projections/assertions from accepted evidence only.
 - Missing and conflicting fields remain explicit.
 - Importance, value, opportunity, trend maturity, recommendation, advice, `why_watch`, and `business_meaning` are forbidden in V4 canonical outputs.
-- Do not change frontstage pages until the page plan is separately approved.
+- The V4 sidebar and approved Data Center / Industry Reports page plan may change within `context/frontstage-page-contracts.md`; other compatibility pages remain frozen until separately approved.
 
 ### Raw / Pool / Card Generation
 

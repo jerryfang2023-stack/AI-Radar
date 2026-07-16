@@ -42,11 +42,82 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 2
+
+      - name: Confirm deployment corresponds to main
+        id: deployment-gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          SOURCE_WORKFLOW: ${{ github.event.workflow_run.name }}
+          SOURCE_CREATED_AT: ${{ github.event.workflow_run.created_at }}
+          SOURCE_UPDATED_AT: ${{ github.event.workflow_run.updated_at }}
+          WORKFLOW_PULL_REQUESTS: ${{ toJson(github.event.workflow_run.pull_requests) }}
+          GITHUB_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "$EVENT_NAME" != "workflow_run" ]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          node <<'NODE'
+          (async () => {
+            const fs = require("node:fs");
+            const parsedPulls = JSON.parse(process.env.WORKFLOW_PULL_REQUESTS || "[]");
+            const pulls = Array.isArray(parsedPulls) ? parsedPulls : [];
+            const output = process.env.GITHUB_OUTPUT;
+            const api = async (pathname) => {
+              const response = await fetch(`https://api.github.com/repos/${process.env.REPOSITORY}${pathname}`, {
+                headers: {
+                  authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+                  accept: "application/vnd.github+json",
+                  "x-github-api-version": "2022-11-28"
+                }
+              });
+              if (!response.ok) throw new Error(`GitHub API ${pathname} failed: ${response.status}`);
+              return response.json();
+            };
+            const head = require("node:child_process").execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim();
+            const directPulls = [];
+            for (const pull of pulls) {
+              if (pull?.number) directPulls.push(await api(`/pulls/${pull.number}`));
+            }
+            const candidates = directPulls.length
+              ? directPulls
+              : await api(`/commits/${head}/pulls`);
+            const expectedPrefix = {
+              "WaveSight Business Signals PR": "automation/business-signals-",
+              "WaveSight First-Line Viewpoints PR": "automation/first-line-viewpoints-",
+              "WaveSight Community Intelligence PR": "automation/community-intelligence-"
+            }[process.env.SOURCE_WORKFLOW];
+            const startedAt = Date.parse(process.env.SOURCE_CREATED_AT || "");
+            const completedAt = Date.parse(process.env.SOURCE_UPDATED_AT || "");
+            const deploy = Boolean(expectedPrefix && candidates.some((pull) => {
+              const mergedAt = Date.parse(pull.merged_at || "");
+              return pull.merge_commit_sha === head
+                && pull.head?.ref?.startsWith(expectedPrefix)
+                && Number.isFinite(mergedAt)
+                && Number.isFinite(startedAt)
+                && Number.isFinite(completedAt)
+                && mergedAt >= startedAt - 300000
+                && mergedAt <= completedAt + 900000;
+            }));
+            fs.appendFileSync(output, `deploy=${deploy}\n`);
+          })().catch((error) => {
+            console.error(error);
+            process.exit(1);
+          });
+          NODE
 
       - name: Configure GitHub Pages
+        if: steps.deployment-gate.outputs.deploy == 'true'
         uses: actions/configure-pages@v6
 
       - name: Archive Frontstage artifact
+        if: steps.deployment-gate.outputs.deploy == 'true'
         shell: bash
         run: |
           tar \
@@ -60,6 +131,7 @@ jobs:
             .
 
       - name: Upload Frontstage artifact
+        if: steps.deployment-gate.outputs.deploy == 'true'
         uses: actions/upload-artifact@v6
         with:
           name: github-pages
@@ -68,5 +140,6 @@ jobs:
           if-no-files-found: error
 
       - name: Deploy to GitHub Pages
+        if: steps.deployment-gate.outputs.deploy == 'true'
         id: deployment
         uses: actions/deploy-pages@v5

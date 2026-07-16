@@ -1,0 +1,464 @@
+[
+  {
+    "relationship_id": "REL-d68aa07a3301a756",
+    "event_id": "EV-dbeae330706b53ca",
+    "subject": "Claude Code v2.1.161",
+    "predicate": "product_release",
+    "object": "Fixed claude mcp list/get/add printing secrets to the terminal: ${VAR} references are no longer expanded, and credential headers and URL secrets are redacted",
+    "claim_ref": "CL-15e9bbbb876c2f8b",
+    "source_refs": [
+      "SA-2523d40c4a7fe952"
+    ]
+  },
+  {
+    "relationship_id": "REL-09aaa2ad7ca9a400",
+    "event_id": "EV-dbeae330706b53ca",
+    "subject": "Claude Code v2.1.161",
+    "predicate": "product_release",
+    "object": "[VSCode] Added a tip suggesting disabling terminal GPU acceleration (or running /terminal-setup ) to fix garbled glyphs",
+    "claim_ref": "CL-c60ea412cb8bf065",
+    "source_refs": [
+      "SA-2523d40c4a7fe952"
+    ]
+  },
+  {
+    "relationship_id": "REL-b6e38cc8a246b3cf",
+    "event_id": "EV-dbeae330706b53ca",
+    "subject": "Claude Code v2.1.161",
+    "predicate": "product_release",
+    "object": "Fixed EADDRINUSE errors from tools that bind Unix sockets under $TMPDIR when CLAUDE_CODE_TMPDIR is set to a deep path",
+    "claim_ref": "CL-c0478b3686d82d3a",
+    "source_refs": [
+      "SA-2523d40c4a7fe952"
+    ]
+  },
+  {
+    "relationship_id": "REL-c64e06a75b1d0c43",
+    "event_id": "EV-ae89898e7aa4a4d6",
+    "subject": "微软",
+    "predicate": "model_release",
+    "object": "More than a single model, we are excited to introduce our Hill-Climbing Machine: a co-designed pipeline built to make every component of model development climbable, so capabilities improve continually and reliably over time. The aim is a repeatable system that can absorb better data, stronger rewards, more capable environments, and more compute.",
+    "claim_ref": "CL-323f9d8e82a06c9f",
+    "source_refs": [
+      "SA-dc4724e1bc1e6e3a"
+    ]
+  },
+  {
+    "relationship_id": "REL-0962e90c8c54c299",
+    "event_id": "EV-ae89898e7aa4a4d6",
+    "subject": "微软",
+    "predicate": "model_release",
+    "object": "Introducing MAI-Thinking-1",
+    "claim_ref": "CL-1aea9f343691d1ff",
+    "source_refs": [
+      "SA-dc4724e1bc1e6e3a"
+    ]
+  },
+  {
+    "relationship_id": "REL-ffb147d60a86c4c7",
+    "event_id": "EV-ae89898e7aa4a4d6",
+    "subject": "微软",
+    "predicate": "model_release",
+    "object": "Today we are introducing MAI-Thinking-1, Microsoft AI’s reasoning model. It is a medium-sized model that stands among the strongest models in its weight class. It matches leading models on key software engineering benchmarks, demonstrates advanced mathematical reasoning capabilities, and is preferred to Sonnet 4.6 in our blind human side-by-side evaluations. We trained it from the ground up on enterprise grade, clean and commercially licensed data, without distillation from third-party models.",
+    "claim_ref": "CL-4f184a6088c1fe4b",
+    "source_refs": [
+      "SA-dc4724e1bc1e6e3a"
+    ]
+  },
+  {
+    "relationship_id": "REL-234a782d6661c453",
+    "event_id": "EV-ae89898e7aa4a4d6",
+    "subject": "微软",
+    "predicate": "model_release",
+    "object": "MAI-Thinking-1 is a step in our broader work to build towards Humanist Superintelligence: advanced AI capabilities designed to serve people and organizations, not to replace them. The model matters on both axes: what it can do, and how it was built.",
+    "claim_ref": "CL-a40f054bb4ddede3",
+    "source_refs": [
+      "SA-dc4724e1bc1e6e3a"
+    ]
+  },
+  {
+    "relationship_id": "REL-b9c441b9a2a3130d",
+    "event_id": "EV-309ea4fc27a66485",
+    "subject": "NVIDIA",
+    "predicate": "product_release",
+    "object": "NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
+    "claim_ref": "CL-b0e16c8146dc5224",
+    "source_refs": [
+      "SA-44d71c2b95204eb8"
+    ]
+  },
+  {
+    "relationship_id": "REL-67d1e3af81815b48",
+    "event_id": "EV-309ea4fc27a66485",
+    "subject": "NVIDIA",
+    "predicate": "product_release",
+    "object": "NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
+    "claim_ref": "CL-8ee78257d6ea9b9f",
+    "source_refs": [
+      "SA-44d71c2b95204eb8"
+    ]
+  },
+  {
+    "relationship_id": "REL-92939d2de563a175",
+    "event_id": "EV-309ea4fc27a66485",
+    "subject": "NVIDIA",
+    "predicate": "product_release",
+    "object": "NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
+    "claim_ref": "CL-bd39c4bfd65eca29",
+    "source_refs": [
+      "SA-44d71c2b95204eb8"
+    ]
+  },
+  {
+    "relationship_id": "REL-7563d707a2490b04",
+    "event_id": "EV-309ea4fc27a66485",
+    "subject": "NVIDIA",
+    "predicate": "product_release",
+    "object": "NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师",
+    "claim_ref": "CL-763c596f78cb7f74",
+    "source_refs": [
+      "SA-44d71c2b95204eb8"
+    ]
+  },
+  {
+    "relationship_id": "REL-1dbbee51699997bd",
+    "event_id": "EV-283e88bdd15ed87e",
+    "subject": "从端侧到云端统一加速：英伟达、微软展示 AI 智能体完整",
+    "predicate": "deployment",
+    "object": "栈，Fairwater 工厂提前上线",
+    "claim_ref": "CL-cde2628c535374cf",
+    "source_refs": [
+      "SA-94519cf17748d5ea"
+    ]
+  },
+  {
+    "relationship_id": "REL-c12c0a9140ba10d2",
+    "event_id": "EV-283e88bdd15ed87e",
+    "subject": "从端侧到云端统一加速：英伟达、微软展示 AI 智能体完整",
+    "predicate": "deployment",
+    "object": "栈，Fairwater 工厂提前上线",
+    "claim_ref": "CL-a71265ef6840151d",
+    "source_refs": [
+      "SA-94519cf17748d5ea"
+    ]
+  },
+  {
+    "relationship_id": "REL-f86621e13934e5a3",
+    "event_id": "EV-283e88bdd15ed87e",
+    "subject": "从端侧到云端统一加速：英伟达、微软展示 AI 智能体完整",
+    "predicate": "deployment",
+    "object": "栈，Fairwater 工厂提前上线",
+    "claim_ref": "CL-1cad5e4fbb503333",
+    "source_refs": [
+      "SA-94519cf17748d5ea"
+    ]
+  },
+  {
+    "relationship_id": "REL-927b8aeb360bfeda",
+    "event_id": "EV-4905e6385c8f4c3a",
+    "subject": "微软 Build 2026：七项最重要的",
+    "predicate": "product_release",
+    "object": "Microsoft Build 2026: The 7 biggest announcements",
+    "claim_ref": "CL-8850fd7ed8ec9c1c",
+    "source_refs": [
+      "SA-43db58a659df78b9"
+    ]
+  },
+  {
+    "relationship_id": "REL-5d5e488ec8b25765",
+    "event_id": "EV-4905e6385c8f4c3a",
+    "subject": "微软 Build 2026：七项最重要的",
+    "predicate": "product_release",
+    "object": "Microsoft just held its Build 2026 opening keynote, where it showed off updates across AI, its Surface devices, and Windows.",
+    "claim_ref": "CL-62d404644975ef27",
+    "source_refs": [
+      "SA-43db58a659df78b9"
+    ]
+  },
+  {
+    "relationship_id": "REL-a4582add5dd8ab83",
+    "event_id": "EV-4905e6385c8f4c3a",
+    "subject": "微软 Build 2026：七项最重要的",
+    "predicate": "product_release",
+    "object": "Microsoft just kicked off Build 2026 with a keynote from CEO Satya Nadella and other company leaders. As expected, it was filled with announcements, ranging from new Surface hardware to an always-on personal assistant and updates across Microsoft’s in-house AI models.",
+    "claim_ref": "CL-5411f4a6abf85791",
+    "source_refs": [
+      "SA-43db58a659df78b9"
+    ]
+  },
+  {
+    "relationship_id": "REL-9a5ab88524f7c293",
+    "event_id": "EV-4905e6385c8f4c3a",
+    "subject": "微软 Build 2026：七项最重要的",
+    "predicate": "product_release",
+    "object": "Microsoft Build 2026: The 7 biggest announcements",
+    "claim_ref": "CL-039574a2ca247f72",
+    "source_refs": [
+      "SA-43db58a659df78b9"
+    ]
+  },
+  {
+    "relationship_id": "REL-548f2e27ec23d345",
+    "event_id": "EV-58c1cc3749294649",
+    "subject": "NVIDIA 与 Microsoft 深化",
+    "predicate": "partnership",
+    "object": "，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
+    "claim_ref": "CL-df810a5e2794b37e",
+    "source_refs": [
+      "SA-52df1716b70975b3"
+    ]
+  },
+  {
+    "relationship_id": "REL-ba7187edb7be6e3a",
+    "event_id": "EV-58c1cc3749294649",
+    "subject": "NVIDIA 与 Microsoft 深化",
+    "predicate": "partnership",
+    "object": "，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
+    "claim_ref": "CL-7b006549d63093f4",
+    "source_refs": [
+      "SA-52df1716b70975b3"
+    ]
+  },
+  {
+    "relationship_id": "REL-35fc9b22a3c8b06c",
+    "event_id": "EV-58c1cc3749294649",
+    "subject": "NVIDIA 与 Microsoft 深化",
+    "predicate": "partnership",
+    "object": "，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
+    "claim_ref": "CL-a091d5d3c42c7d9f",
+    "source_refs": [
+      "SA-52df1716b70975b3"
+    ]
+  },
+  {
+    "relationship_id": "REL-b23a7d1a006ae7c0",
+    "event_id": "EV-58c1cc3749294649",
+    "subject": "NVIDIA 与 Microsoft 深化",
+    "predicate": "partnership",
+    "object": "，推出从设备到云的统一加速计算栈以支持 AI 智能体部署",
+    "claim_ref": "CL-6186a11cb153b7e5",
+    "source_refs": [
+      "SA-52df1716b70975b3"
+    ]
+  },
+  {
+    "relationship_id": "REL-97e95e8111321eda",
+    "event_id": "EV-a3d673dfa4de328f",
+    "subject": "Design partners: The pre-",
+    "predicate": "product_release",
+    "object": "edge most AI founders ignore - Bessemer Venture Partners",
+    "claim_ref": "CL-3a17065b54bb8b28",
+    "source_refs": [
+      "SA-9374c24445d71156"
+    ]
+  },
+  {
+    "relationship_id": "REL-35dc854e0e7f2025",
+    "event_id": "EV-a3d673dfa4de328f",
+    "subject": "Design partners: The pre-",
+    "predicate": "product_release",
+    "object": "edge most AI founders ignore - Bessemer Venture Partners",
+    "claim_ref": "CL-e33131a5f8688baf",
+    "source_refs": [
+      "SA-9374c24445d71156"
+    ]
+  },
+  {
+    "relationship_id": "REL-8afd8f2ff68cc984",
+    "event_id": "EV-a3d673dfa4de328f",
+    "subject": "Design partners: The pre-",
+    "predicate": "product_release",
+    "object": "edge most AI founders ignore - Bessemer Venture Partners",
+    "claim_ref": "CL-1a75e660b1619120",
+    "source_refs": [
+      "SA-9374c24445d71156"
+    ]
+  },
+  {
+    "relationship_id": "REL-5a59da599947f460",
+    "event_id": "EV-a3d673dfa4de328f",
+    "subject": "Design partners: The pre-",
+    "predicate": "product_release",
+    "object": "edge most AI founders ignore - Bessemer Venture Partners",
+    "claim_ref": "CL-2e8c4be90cea0b95",
+    "source_refs": [
+      "SA-9374c24445d71156"
+    ]
+  },
+  {
+    "relationship_id": "REL-8638786a14fe528d",
+    "event_id": "EV-86489eda802ffc19",
+    "subject": "Questex Used AI Agents to",
+    "predicate": "funding",
+    "object": "$1 Million in 90 Days - A Media Operator",
+    "claim_ref": "CL-a87caee37c7ce3f7",
+    "source_refs": [
+      "SA-3c1d72fa8646aff7"
+    ]
+  },
+  {
+    "relationship_id": "REL-9784e000cd035656",
+    "event_id": "EV-86489eda802ffc19",
+    "subject": "Questex Used AI Agents to",
+    "predicate": "funding",
+    "object": "$1 Million in 90 Days - A Media Operator",
+    "claim_ref": "CL-2eea1e9875f35458",
+    "source_refs": [
+      "SA-3c1d72fa8646aff7"
+    ]
+  },
+  {
+    "relationship_id": "REL-59a3dc87df028cb3",
+    "event_id": "EV-86489eda802ffc19",
+    "subject": "Questex Used AI Agents to",
+    "predicate": "funding",
+    "object": "$1 Million in 90 Days - A Media Operator",
+    "claim_ref": "CL-224fd72fc45ca64d",
+    "source_refs": [
+      "SA-3c1d72fa8646aff7"
+    ]
+  },
+  {
+    "relationship_id": "REL-b4e9bc7073b6791e",
+    "event_id": "EV-86489eda802ffc19",
+    "subject": "Questex Used AI Agents to",
+    "predicate": "funding",
+    "object": "$1 Million in 90 Days - A Media Operator",
+    "claim_ref": "CL-3c1576697162d523",
+    "source_refs": [
+      "SA-3c1d72fa8646aff7"
+    ]
+  },
+  {
+    "relationship_id": "REL-b63ec553fc3c1e53",
+    "event_id": "EV-4a727d54055d6d0e",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Codex Sites 功能，可将用户想法转化为交互式网站",
+    "claim_ref": "CL-5687b294e07160c3",
+    "source_refs": [
+      "SA-3ee8c1d211822699"
+    ]
+  },
+  {
+    "relationship_id": "REL-267201a6ac7da9e2",
+    "event_id": "EV-4a727d54055d6d0e",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Codex Sites 功能，可将用户想法转化为交互式网站",
+    "claim_ref": "CL-8d828dc88a36f1f1",
+    "source_refs": [
+      "SA-3ee8c1d211822699"
+    ]
+  },
+  {
+    "relationship_id": "REL-bf6a7a7e76beb362",
+    "event_id": "EV-4a727d54055d6d0e",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Codex Sites 功能，可将用户想法转化为交互式网站",
+    "claim_ref": "CL-35d9640d285674fd",
+    "source_refs": [
+      "SA-3ee8c1d211822699"
+    ]
+  },
+  {
+    "relationship_id": "REL-d37d40aaea7e0c84",
+    "event_id": "EV-4a727d54055d6d0e",
+    "subject": "OpenAI",
+    "predicate": "product_release",
+    "object": "Codex Sites 功能，可将用户想法转化为交互式网站",
+    "claim_ref": "CL-bb92e00ba09f2c39",
+    "source_refs": [
+      "SA-3ee8c1d211822699"
+    ]
+  },
+  {
+    "relationship_id": "REL-5e33380d9169fb12",
+    "event_id": "EV-e295f808713644c7",
+    "subject": "OpenAI Codex 扩展使用场景，",
+    "predicate": "product_release",
+    "object": "6 款岗位插件覆盖 62 个应用",
+    "claim_ref": "CL-1de92b0a01512ccd",
+    "source_refs": [
+      "SA-4810f5a1223bc8ad"
+    ]
+  },
+  {
+    "relationship_id": "REL-f5754d8e19e73ae8",
+    "event_id": "EV-e295f808713644c7",
+    "subject": "OpenAI Codex 扩展使用场景，",
+    "predicate": "product_release",
+    "object": "6 款岗位插件覆盖 62 个应用",
+    "claim_ref": "CL-813eaeb274f4ef39",
+    "source_refs": [
+      "SA-4810f5a1223bc8ad"
+    ]
+  },
+  {
+    "relationship_id": "REL-e05f3ed7482466e9",
+    "event_id": "EV-e295f808713644c7",
+    "subject": "OpenAI Codex 扩展使用场景，",
+    "predicate": "product_release",
+    "object": "6 款岗位插件覆盖 62 个应用",
+    "claim_ref": "CL-250f0a59736ec262",
+    "source_refs": [
+      "SA-4810f5a1223bc8ad"
+    ]
+  },
+  {
+    "relationship_id": "REL-db3e9812a59cb438",
+    "event_id": "EV-e295f808713644c7",
+    "subject": "OpenAI Codex 扩展使用场景，",
+    "predicate": "product_release",
+    "object": "6 款岗位插件覆盖 62 个应用",
+    "claim_ref": "CL-f3b4491e25ca7ec2",
+    "source_refs": [
+      "SA-4810f5a1223bc8ad"
+    ]
+  },
+  {
+    "relationship_id": "REL-178cbcddfb8a17d5",
+    "event_id": "EV-4763b46821ab746e",
+    "subject": "微软与梅奥诊所达成",
+    "predicate": "partnership",
+    "object": "，共同开发部署医疗保健领域前沿AI模型",
+    "claim_ref": "CL-566a11f650c20217",
+    "source_refs": [
+      "SA-910c427074705b0d"
+    ]
+  },
+  {
+    "relationship_id": "REL-057e7d1132abad36",
+    "event_id": "EV-4763b46821ab746e",
+    "subject": "微软与梅奥诊所达成",
+    "predicate": "partnership",
+    "object": "，共同开发部署医疗保健领域前沿AI模型",
+    "claim_ref": "CL-e1fdb0764dc43986",
+    "source_refs": [
+      "SA-910c427074705b0d"
+    ]
+  },
+  {
+    "relationship_id": "REL-2544b3607f8ddaee",
+    "event_id": "EV-4763b46821ab746e",
+    "subject": "微软与梅奥诊所达成",
+    "predicate": "partnership",
+    "object": "，共同开发部署医疗保健领域前沿AI模型",
+    "claim_ref": "CL-ece4035003edc408",
+    "source_refs": [
+      "SA-910c427074705b0d"
+    ]
+  },
+  {
+    "relationship_id": "REL-0f7e49ae1d5b9437",
+    "event_id": "EV-4763b46821ab746e",
+    "subject": "微软与梅奥诊所达成",
+    "predicate": "partnership",
+    "object": "，共同开发部署医疗保健领域前沿AI模型",
+    "claim_ref": "CL-d1a11404af23e95a",
+    "source_refs": [
+      "SA-910c427074705b0d"
+    ]
+  }
+]
