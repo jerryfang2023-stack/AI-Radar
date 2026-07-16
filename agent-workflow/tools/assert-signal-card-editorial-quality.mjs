@@ -34,6 +34,9 @@ function tooSimilar(a, b) {
   const right = normalized(b);
   if (!left || !right) return false;
   if (left === right) return true;
+  const shorter = left.length <= right.length ? left : right;
+  const longer = left.length > right.length ? left : right;
+  if (shorter.length >= 48 && longer.includes(shorter)) return true;
   const prefixLength = Math.min(90, left.length, right.length);
   return prefixLength >= 48 && left.slice(0, prefixLength) === right.slice(0, prefixLength);
 }
