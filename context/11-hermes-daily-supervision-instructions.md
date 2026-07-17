@@ -32,8 +32,8 @@ Hermes should do this every Asia/Shanghai production day:
 1. 08:10 run the version state preflight when a version changed: package / ledger / AGENTS / current frontstage page meta / current frontstage data meta / Skill Ops sync / Skill Store dashboard data. This is read-only and must not block lane production by itself. Ignore old versions only when they appear in `context/version-ledger.md` historical rows.
 2. 08:45 check Community Intelligence local output, archive, and gate. If local collector output is missing, record that local Chrome / login repair is required; do not pretend GitHub can collect it.
 3. Daily Problem Watchdog records failed production workflows into dated reports and Hermes inbox items. It must not dispatch recovery or start another full-chain run.
-4. Before 10:00 use Business Signals public Card health as a target checkpoint: same-date active data, `BSIG-V2.2.0-pipeline-stage-ownership` unified public Cards present, AI Hardware lens-only items not counted as formal Cards, no placeholder/source-domain titles, no public Top10/candidate split, and FDE public items respecting `EAI-V1.2.0-raw-card-ingestion-boundary`. Do not lower gates to hit the checkpoint.
-5. 09:58 check PR / merge / GitHub Pages publication for lanes that produced data. For Business Signals, explicitly check merged PR, Pages success, same-date Business data, public Card count, FDE detail openability / source-bounded demand-service-result fields, and whether local sync is blocked. This check must account for the 09:35 Community Intelligence publish fallback window and treat queued / in-progress runs as Waiting.
+4. Before 10:00 use Business Signals compatibility Card health as a target checkpoint: same-date active data, `BSIG-V2.2.0-pipeline-stage-ownership` unified compatibility Cards present, AI Hardware lens-only items not counted as formal Cards, no placeholder/source-domain titles, no Top10/candidate split, and FDE compatibility items respecting `EAI-V1.2.0-raw-card-ingestion-boundary`. Do not lower gates to hit the checkpoint or confuse this count with public V4 events.
+5. 09:58 check PR / merge / GitHub Pages publication for lanes that produced public V4 data. For the Business Signals compatibility lane, check merged PR, same-date compatibility data, Card count, FDE detail/source boundaries, and whether local sync is blocked; its V3 datasets themselves are excluded from Pages. This check must account for the 09:35 Community Intelligence publish fallback window and treat queued / in-progress runs as Waiting.
 6. 16:30 record the follow-builders skill publish: check the local publish report and builders viewpoints output for the afternoon skill lane.
 7. For every failure, write cause, result, report path, and one good / bad example into the Hermes report or inbox. Ask Codex to repair with validation and prevention.
 8. Never lower gates, edit generated data directly, push to `main`, dispatch recovery, or loop blind reruns.
@@ -83,13 +83,13 @@ agent-workflow/inbox/hermes-to-codex/
 
 ## Business Signals Data Reading Contract
 
-When Hermes checks Business Signals card counts, category mix, or funding presence, the canonical current-day source is the active-date public Card set:
+When Hermes checks the internal Business Signals compatibility lane, the canonical current-day source is the active-date compatibility Card set. This is not the public V4 event set:
 
-1. Primary frontstage source: `01-SiteV2/site/data/v3-data-observation-desk.json`.
+1. Primary compatibility source: `01-SiteV2/site/data/v3-data-observation-desk.json`.
 2. Resolve `activeDate` from `meta.activeDate`.
 3. Count only `frontstageCards.filter(card.date === activeDate)`.
 4. If using `01-SiteV2/site/data/intelligence-graph-index.json`, treat `todayFrontstageCards` and `summary.todayFrontstageCards` as internal compatibility analytics, not the public V4 event set.
-5. Do not use `coreSignalCards` as the public count; it is only a relationship-analysis subset.
+5. Do not use `coreSignalCards` as the compatibility Card count; it is only a relationship-analysis subset.
 6. Do not use top-level `cards` as the current-day count unless it is explicitly filtered by `activeDate`; top-level `cards` is a historical archive.
 7. Do not report funding for today from `dailyLens.categoryStats.last7`, `dailyLens.categoryStats.total`, historical `cards`, or previous reports. Funding presence for today is `active-date public cards where category === "funding"`.
 8. Normalize category aliases before analytics: `product-service` and `product_service` are the same product / service category.
@@ -111,7 +111,7 @@ When Hermes checks Business Signals card counts, category mix, or funding presen
 | 09:45 | Business / FDE Recheck | Judge the Business 08:57 primary and 09:27 health dispatch path. Check `BSIG-V2.2.0-pipeline-stage-ownership` unified Cards, separate AI Hardware lens, and `EAI-V1.2.0` FDE boundary separately. If output is unhealthy and no run is active, write a problem report / inbox item; do not dispatch recovery. |
 | 09:55 | Final Problem Check | Wait for active runs, record failures, or mark `manual_required`; avoid duplicate inbox writes and do not start a routine dispatch. |
 | 09:35 | Community Publish Fallback | Let the second Community Intelligence publish window run if first publication did not reach `main`. GitHub Pages follows after merge to `main`. |
-| 09:58 | Site publication | Check lane PR / merge / Pages status when GitHub state is available and after the Community 09:35 fallback window has had a chance to start. For Business Signals also check same-date data, public Card count, FDE detail openability, Reports Center follow-through when report / opportunity data changed, and local sync status. Treat queued / in-progress runs as Waiting. |
+| 09:58 | Site publication | Check lane PR / merge / Pages status when GitHub state is available and after the Community 09:35 fallback window has had a chance to start. For Business compatibility also check same-date data, compatibility Card count, FDE detail boundaries, Industry Reports projection follow-through when report / opportunity data changed, and local sync status. Treat queued / in-progress runs as Waiting. |
 | 16:30 | Hermes Afternoon Record | Check the follow-builders skill publish report, `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, the report's `publish_status` / `publish_error`, and `obsidian_sync_*` counts. If the report, output, publish closure, or Obsidian sync result is missing or failed, write a Codex handoff for `afternoon_skill_runner` or `afternoon_publication_failure`. |
 
 If any lane is still `queued` or `in_progress`, wait for it to finish before reporting that lane's data missing.

@@ -75,7 +75,8 @@ node agent-workflow/tools/run-quality-gates.mjs syntax
 node agent-workflow/tools/run-quality-gates.mjs automation
 node agent-workflow/tools/run-quality-gates.mjs business --date=YYYY-MM-DD
 node agent-workflow/tools/frontstage-regression-gate.mjs
-node --check 01-SiteV2/site/assets/v3-data-observation-desk.js
+node --check 01-SiteV2/site/assets/data-center-v4.js
+node --check 01-SiteV2/site/assets/v4-report-shell.js
 ```
 
 按任务需要再运行：

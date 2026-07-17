@@ -1,9 +1,9 @@
 ---
 name: guanlan-enterprise-ai-fde-monitor
-description: Use only for frozen SITE-V3.4.5 Enterprise AI/FDE page rendering and Obsidian compatibility. V4 FDE facts are owned by guanlan-fde-data-projection; this skill must not infer demand, service, result, ROI, or team details into V4.
+description: Use only for frozen SITE-V3.4.5 Enterprise AI/FDE data and Obsidian compatibility. V4 FDE facts are owned by guanlan-fde-data-projection; this skill must not infer demand, service, result, ROI, or team details into V4.
 metadata:
   guanlan:
-    version: "1.2.0"
+    version: "1.2.1"
     lane: "Enterprise AI / FDE"
     status: "compatibility lane owner"
     order: 15
@@ -11,14 +11,14 @@ metadata:
     upstream: "Business Signals Raw / Pool evidence, FDE source-only discovery, Hermes inbox"
     downstream: "enterprise-ai-fde.json, Business Signals enterpriseAiTransformation lens, content/09-fde Obsidian archive, FDE quality gates"
     gates: "FDE precision, raw/card title-fact ingestion boundary, detail-openability, demand/service/result completeness, Obsidian sync"
-    recent_learning: "FDE is an independent implementation lens, not a fourth Signal Card type. In EAI-V1.2.0, title translation and fact extraction are Raw/Card/FDE asset responsibilities, while the public FDE gate keeps precision, detail openability, and source-bounded demand/service/result analysis."
+    recent_learning: "Retired V3 page JS is not an implementation surface. This skill maintains compatibility data, detail integrity, and Obsidian output only; V4 FDE facts remain owned by the FDE-V2 projection."
     mirrored_in_skill_store: true
     memory_required: true
 ---
 
 # Guanlan Enterprise AI / FDE Monitor
 
-Compatibility boundary: use `guanlan-fde-data-projection` for FDE-V2 data; this skill only renders or syncs legacy page assets.
+Compatibility boundary: use `guanlan-fde-data-projection` for FDE-V2 data; this skill only builds, validates, or syncs legacy compatibility assets.
 
 This skill owns the Enterprise AI / FDE lens. It keeps implementation evidence separate from the formal Business Signals Top10 while still using source-backed Raw / Pool material.
 
@@ -38,7 +38,7 @@ For implementation work, inspect:
 
 - `agent-workflow/tools/run-guanlan-daily-monitor.mjs`
 - `01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs`
-- `01-SiteV2/site/assets/v3-data-observation-desk.js`
+- `01-SiteV2/site/data/enterprise-ai-fde.json`
 - `agent-workflow/tools/sync-enterprise-ai-fde-to-obsidian.mjs`
 - `agent-workflow/tools/frontstage-regression-gate.mjs`
 
@@ -49,14 +49,14 @@ For regression prevention, read `evals/enterprise-ai-fde-monitor-evals.md`. When
 1. Resolve the Asia/Shanghai production date unless the user gives another date.
 2. Check whether `01-SiteV2/site/data/enterprise-ai-fde.json` is same-date and whether `meta.fdePoolCount` and `meta.itemCount` are non-zero when source supply exists.
 3. Confirm the FDE Lens Pool uses source-backed implementation evidence: FDE, forward-deployed work, customer-embedded delivery, technical scoping, procurement, pilot, production deployment, workflow rollout, or vertical customer workflow.
-4. For every public FDE item, require:
+4. For every FDE compatibility item, require:
    - a Chinese-facing title produced or recorded during Raw / Card / FDE Lens Pool generation;
    - a detail target that opens from the frontstage;
    - implementation analysis with `demand`, `services`, and `result`;
    - source-backed text in `sourceBasis` or the linked detail item.
 5. Treat missing title translation or weak fact extraction as an upstream asset-generation repair. Do not use the generic frontstage selector or source-title translation registry as the place to hide an otherwise generated formal Signal Card.
 6. If result evidence is not in the source, state that the final implementation result is not disclosed; do not invent ROI, adoption, deployment success, or production metrics.
-7. Sync valid public items into `01-SiteV2/content/09-fde/` after the frontstage data gate passes.
+7. Sync valid compatibility items into `01-SiteV2/content/09-fde/` after the compatibility data gate passes.
 8. Repair the smallest responsible layer: source discovery, title/fact ingestion, pool precision, analysis generation, frontstage detail rendering, gate, or Obsidian sync.
 9. Rerun the smallest relevant validation before publication.
 

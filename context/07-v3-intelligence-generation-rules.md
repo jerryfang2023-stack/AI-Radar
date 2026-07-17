@@ -1,18 +1,18 @@
 ---
 status: compatibility
-scope: v3-raw-pool-card-trend-rules
+scope: v3-internal-card-trend-rules
 version: V3.3.6.3-business-source-artifact-aggregation
-last_updated: 2026-06-15
+last_updated: 2026-07-17
 priority: current
 ---
 
 # V3 Raw / Pool / Card / Trend Rules
 
-This is the active rule source only for frozen V3 Card, trend, relationship, and page compatibility production. It is not the Data Center V4 truth source. V4 follows `context/12-data-center-v4.md` and the contracts under `agent-workflow/product/`.
+This is the active rule source only for frozen V3 Card, trend, relationship, and downstream compatibility production. It is not a public page contract and is not the Data Center V4 truth source. V4 follows `context/12-data-center-v4.md` and the contracts under `agent-workflow/product/`.
 
 Historical site rules, legacy content-output routes, legacy publication templates, legacy copy gates, and broad "Guanlan judgment" rules are not active execution sources for V3.
 
-V3 now has one core goal: preserve and display high-value AI business evidence as Cards, then use those Cards as knowledge-base material for relationship graph and trend-candidate analysis.
+V3 now has one core goal: preserve source-backed AI business evidence as internal compatibility Cards, then use those Cards as knowledge-base material for relationship graph, trend-candidate analysis, and downstream application projections.
 
 ## 1. Current Outputs
 
@@ -21,7 +21,6 @@ V3 produces and preserves:
 - Raw candidates;
 - Pool evidence;
 - signal cards;
-- optional opinion cards only when a separate opinion-column rule is rebuilt;
 - relationship graph inputs;
 - trend candidates.
 
@@ -111,7 +110,7 @@ Pool quantity and balance:
 - Pool selection must not use a fixed top-N / buffer cap after Raw has been collected. The Pool file should preserve all non-discard screened evidence, including backend `index_only` diagnostics, so high-value repairable items are not hidden by a selection ceiling.
 - required business-signal lanes must cover funding, product/service, customer/case, and vertical deployment; technical trend remains Pool / trend-candidate context and must not fill formal Signal Card quantity;
 - each required importance lane should target at least 5 Pool candidates for coverage review; the target is not an independent release blocker;
-- large-company items may enter Pool as evidence, but the public Card set must not be dominated by repeated large-company product news;
+- large-company items may enter Pool as evidence, but the compatibility Card set must not be dominated by repeated large-company product news;
 - when cardable supply is short, fix source supply with targeted searches for recent concrete actions. Valid refill targets include launches, releases, funding, acquisitions, partnerships, customer deployments, production rollouts, procurement, pricing, regulatory, and vertical workflow cases.
 - Refill must not use marketplace listings, directories, docs indexes, repo roots, package/model pages, generic guides, broad startup/funding lists, funding roundups, generic funding commentary, interviews, old evergreen technical posts, or search snippets as Card evidence just to satisfy counts.
 - `source_level` and `acquisition_source_level` are still traceability-only during refill; they cannot be used as value scores, Card gates, ranking inputs, or automatic downgrade reasons.
@@ -120,8 +119,7 @@ Pool quantity and balance:
 
 Frontstage formal cards are:
 
-- `signal_card`;
-- `opinion_card` only after the opinion column is rebuilt separately.
+- `signal_card`.
 
 Current V3 business-signal `signal_card` types are only:
 
@@ -129,9 +127,9 @@ Current V3 business-signal `signal_card` types are only:
 - `funding`;
 - `case`.
 
-High-value market-structure events are valid Business Signals when they are concrete, dated, source-backed commercial events involving AI markets, vendors, enterprise customers, platforms, or infrastructure. They include acquisitions / mergers, material partnerships, procurement / tenders / contracts, pricing or billing changes, regulatory approvals / antitrust actions, and material lawsuits / settlements. They are backend importance evidence, not a fourth public Card type: normalize them into `case` or `product_service` Cards according to the event.
+High-value market-structure events are valid compatibility Cards when they are concrete, dated, source-backed commercial events involving AI markets, vendors, enterprise customers, platforms, or infrastructure. They include acquisitions / mergers, material partnerships, procurement / tenders / contracts, pricing or billing changes, regulatory approvals / antitrust actions, and material lawsuits / settlements. They are backend importance evidence, not a fourth Card type: normalize them into `case` or `product_service` Cards according to the event.
 
-Enterprise AI transformation / 企业AI化 is a monitoring and frontstage interpretation lens, not a fourth `signal_card` type. It can help identify consulting-relevant evidence about FDE-style implementation, workflow change, governance, procurement, pilots, production rollout, and customer engineering capacity.
+Enterprise AI transformation / 企业AI化 is a compatibility projection lens, not a fourth `signal_card` type. It can identify source-backed evidence about FDE-style implementation, workflow change, governance, procurement, pilots, production rollout, and customer engineering capacity.
 
 Enterprise AI / FDE lens version `EAI-V1.2.0-raw-card-ingestion-boundary` follows the same ingestion boundary as Business Signals: English source-title translation and source-backed fact extraction must be captured or marked in Raw, Signal Card, or FDE Lens Pool assets before frontstage rendering. Missing or weak FDE title/fact fields are repaired in the asset generator; they must not become generic frontstage suppression rules that hide otherwise valid formal Signal Cards.
 
@@ -174,12 +172,12 @@ Signal Card entry gate is expressed as six required gates. Do not re-expand thes
 
 Daily business-signal target:
 
-- frontstage presentation publishes every active-date qualified Raw / Pool business signal that passes raw-to-card cardability and can become a Card;
-- the public page has one Card set, not a Top10 set plus a candidate pool;
-- former candidate-pool items that pass Card display requirements must be normalized into frontstage Cards instead of remaining in a separate public candidate section;
-- Card ordering is importance / impact descending. The page should not display sorting reasons as user-facing copy;
+- the internal compatibility set preserves every active-date qualified Raw / Pool business signal that passes raw-to-card cardability and can become a Card;
+- the compatibility projection has one Card set, not a Top10 set plus a candidate pool;
+- former candidate-pool items that pass Card requirements must be normalized into compatibility Cards instead of remaining in a separate candidate section;
+- Card ordering is importance / impact descending. Sorting reasons remain internal and must not enter V4 canonical or public fields;
 - include vertical-industry cases, emerging-company financing, and concrete AI market-structure events when qualified evidence exists;
-- do not let large-company product news crowd out funding and cases during source repair, but do not use a public Top10 or large-company-cap rule as a release gate.
+- do not let large-company product news crowd out funding and cases during source repair, but do not use a Top10 or large-company-cap rule as a release gate.
 
 Relationship graph and trend-candidate generation use the full eligible Card set.
 
@@ -195,8 +193,8 @@ Card title rules:
 - do not use phrases like "materials show", "worth watching", "points to", or internal production wording.
 - do not use placeholder phrases such as "original AI event", "use case seen in original", "purpose see original", or source-domain subjects such as "linkedin financing" / "github original title";
 - do not fall back from source-title translation to model-generated title, old card title, source-domain subject, or fact-derived headline, except for the confirmed funding-title exception above;
-- active-date public payloads must not expose `modelGeneratedTitle`;
-- if the title cannot name the actual company, product, funding round, customer, or release, the item is not ready for public Card display.
+- active-date compatibility payloads must not expose `modelGeneratedTitle`;
+- if the title cannot name the actual company, product, funding round, customer, or release, the item is not ready for a compatibility Card.
 
 Card detail rules:
 
@@ -218,9 +216,9 @@ Hard stops:
 
 Backend Pool-only rules:
 
-- Raw / Pool entries that fail the formal Card gate must remain backend evidence and must not appear in the public Card set.
-- Public Cards must be event-deduped, not only URL-deduped; multiple pages about the same event should keep the highest-quality source-backed item and treat the rest as supporting evidence.
-- Social/community, repo/catalog, generic list, consumer entertainment, and minor platform-policy sources may remain in backend Pool evidence when useful, but must not fill public Cards as repeated or low-value AI-adjacent items.
+- Raw / Pool entries that fail the formal Card gate must remain backend evidence and must not appear in the compatibility Card set.
+- Compatibility Cards must be event-deduped, not only URL-deduped; multiple pages about the same event should keep the highest-quality source-backed item and treat the rest as supporting evidence.
+- Social/community, repo/catalog, generic list, consumer entertainment, and minor platform-policy sources may remain in backend Pool evidence when useful, but must not fill compatibility Cards as repeated or low-value AI-adjacent items.
 - Generic startup / funding list blockers should inspect source identity fields such as source title, URL, and source name. They must not scan source-backed fact text or captured search-query tails, because phrases such as `startup funding` can appear in a real single-company financing excerpt and cause false rejection.
 
 ## 6. Knowledge Base Rules
@@ -251,7 +249,7 @@ The graph should derive:
 - edges: funds, launches, deploys, adopts, targets, integrates, supports, competes, expands;
 - evidence: linked Card id and source URL.
 
-The frontstage relationship module should present a visual dynamic graph, not long prose blocks.
+The internal relationship projection should remain structured graph data, not long prose blocks.
 
 Opinion content is not part of the current V3 business-signal relationship graph.
 
@@ -273,7 +271,7 @@ A trend candidate needs:
 - a clear commercial variable, such as product adoption, funding concentration, customer workflow, vertical deployment, infrastructure cost, procurement path, or governance requirement;
 - evidence boundary.
 
-The page must explain:
+The trend-candidate object must record:
 
 - what the trend is;
 - where it appears;

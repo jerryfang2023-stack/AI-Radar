@@ -1,17 +1,17 @@
 ---
 name: guanlan-business-signals-monitor
-description: Use only for frozen SITE-V3.4.5 Business Signals Card, trend, relationship, FDE/hardware lens, and frontstage compatibility after the Data Center V4 integrity gate passes. Do not use it to define V4 facts, tags, events, projections, importance, opportunity, or recommendations.
+description: Use only for frozen SITE-V3.4.5 Business Signals Card, trend, relationship, FDE/hardware lens, and downstream compatibility after the Data Center V4 integrity gate passes. Do not use it to define V4 facts, tags, events, projections, importance, opportunity, or recommendations.
 metadata:
   guanlan:
-    version: "1.1.1"
+    version: "1.1.2"
     lane: "Business Signals"
     status: "compatibility lane owner"
     order: 10
-    responsibility: "Keep frozen V3 Business Signals and Reports Center page inputs operational without writing Data Center V4 truth."
+    responsibility: "Keep frozen V3 Business Signals and Industry Reports application inputs operational without writing Data Center V4 truth."
     upstream: "accepted Data Center V4 daily bundle plus legacy Raw / Pool compatibility assets"
-    downstream: "legacy Signal Cards, page graph/trend inputs, and PR publication"
+    downstream: "legacy Signal Cards, internal graph/trend data, Industry Reports projection input, and PR publication"
     gates: "V3 evidence supply, six-gate Card entry, Card editorial quality, relationship graph, trend decision, source-first, frontstage Card contract"
-    recent_learning: "Card, trend, opportunity, and importance logic is frozen-page compatibility only; V4 factual data is owned by guanlan-data-center-supervisor."
+    recent_learning: "Retired V3 pages and page-specific assets are gone. Card, trend, opportunity, and importance logic is internal compatibility / downstream application input only; V4 factual data is owned by guanlan-data-center-supervisor."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -20,11 +20,11 @@ metadata:
 
 Compatibility boundary: load `guanlan-data-center-supervisor` first for factual data work. This skill may consume the accepted V4 bundle but cannot write V4 canonical tables.
 
-This skill owns the Business Signals production lane. It coordinates source capture, evidence screening, unified frontstage Signal Cards, relationship / intelligence map inputs, trend-candidate inputs, and lane repair.
+This skill owns the Business Signals compatibility lane. It coordinates source capture, evidence screening, the unified compatibility Card set, relationship / Industry Reports inputs, trend-candidate inputs, and lane repair.
 
 It is the lane owner. It may call narrower skills such as `guanlan-daily-monitor`, `guanlan-monitor-quality-gate`, `guanlan-daily-monitor-qc`, `guanlan-raw-pool-card`, and `guanlan-trend-candidate-writer`.
 
-Enterprise AI / FDE is now owned by `guanlan-enterprise-ai-fde-monitor`. Business Signals may supply Raw / Pool evidence and keep the public lens embedded on the Business page, but FDE precision, demand/service/result analysis, detail openability, and `content/09-fde` sync route through the FDE skill.
+Enterprise AI / FDE is owned by `guanlan-enterprise-ai-fde-monitor`. Business Signals may supply Raw / Pool evidence and compatibility data, but FDE precision, demand/service/result analysis, detail integrity, and `content/09-fde` sync route through the FDE skill.
 
 ## Current Timing
 
@@ -104,9 +104,9 @@ This is a hard requirement, not a preference.
 - After a targeted repair passes the smallest relevant validation, proceed to PR / merge / Pages publication from the repaired artifacts. Do not dispatch another full-chain run to "be safe".
 - If a full-chain rerun is still necessary, first write the checklist result and the specific missing or corrupt artifact that makes artifact reuse impossible.
 
-## Morning Fast Path
+## Morning Compatibility Fast Path
 
-The lane targets healthy same-date public Cards before 10:00 Asia/Shanghai by failing early and avoiding blind full-chain reruns. Treat 10:00 as a target checkpoint, not as permission to lower gates.
+The lane targets healthy same-date compatibility Cards before 10:00 Asia/Shanghai by failing early and avoiding blind full-chain reruns. Treat 10:00 as a target checkpoint, not as permission to lower gates, and do not report the count as public V4 events.
 
 Use this order:
 
@@ -123,7 +123,7 @@ Use this order:
    - Treat GDELT, keyword search, RSS, and AI HOT as peer source-artifact channels. Do not block release because one peer channel is empty, quota-limited, noisy, or below a keyword-specific floor when the combined peer artifacts already produce healthy Pool audit supply and Card supply.
 5. If Pool audit supply, cardable candidate supply, or Card readiness is thin, repair the missing source lane first. Do not continue into dashboard or publication work.
 6. Generate frontstage Signal Cards from all cardable Raw / Pool business signals. Do not use a fixed Pool selection cap after Raw collection; Pool should preserve all non-discard screened evidence so repairable high-value items remain visible.
-7. Build one public Card set sorted by importance / impact. Do not split public data into Top10 and candidate-pool modes. Do not expose sorting reasons on the page.
+7. Build one compatibility Card set sorted by importance / impact. Do not split it into Top10 and candidate-pool modes. Do not expose sorting reasons through downstream public projections.
 8. Record either a reviewed multi-Card trend candidate or an explicit same-date no-candidate decision.
 9. Build Business frontstage JSON, including the relationship graph derived from accepted Cards.
 10. Run the unified Business frontstage gate immediately; it must validate Cards, graph evidence references, and the trend decision.
@@ -138,7 +138,7 @@ Use this order:
 Weekend monitor quantity floors may be lighter because source volume is lower, but evidence quality and frontstage product promises do not weaken.
 
 - Keep the same source-first and six-gate Card entry rules.
-- Weekend public Cards should include every qualified Raw / Pool business signal that can become a Card.
+- Weekend compatibility Cards should include every qualified Raw / Pool business signal that can become a Card.
 - Do not use community feedback, builders viewpoints, social posts, repo roots, package pages, marketplace listings, or generic lists as direct Business Signal Cards.
 - Do not treat a supervision warning or GitHub lookup timeout as a data failure unless active-date assets are actually stale or unhealthy.
 

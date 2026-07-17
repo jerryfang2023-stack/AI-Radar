@@ -22,7 +22,7 @@ encoding: UTF-8
 
 - 新增页面、栏目页、详情页、会员页、Admin 页面、首页模块。
 - 修改页面标题、栏目标题、卡片标题、CTA、说明文案、会员锁定态、空状态、提示语。
-- 修改今日观察、商业信号、机会判断、商业内参等前台展示文案。
+- 修改 Data Center、Industry Reports、报告详情或 Dashboard 的前台展示文案。
 - 新增或调整页面内任何用户可见的中文、英文标签或按钮。
 
 以下情况可标注“不适用”：
@@ -35,7 +35,7 @@ encoding: UTF-8
 
 页面 / 文案类任务派发单必须包含：
 
-1. Experience & Editorial 已读取 `agent-workflow/product/COPY.md`。
+1. Experience & Editorial 已读取 `context/frontstage-page-contracts.md` 与目标页面对应的数据合同。
 2. Experience & Editorial 已输出 `Copy 文案规范表`。
 3. 表中包含最终可落地文案，而不是“优化文案”“提升高级感”等方向词。
 4. 表中明确哪些文案允许 Build & Release 原样实现，哪些文案仍需用户确认。

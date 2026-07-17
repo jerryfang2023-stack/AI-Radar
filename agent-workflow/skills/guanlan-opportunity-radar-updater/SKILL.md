@@ -1,17 +1,17 @@
 ---
 name: guanlan-opportunity-radar-updater
-description: "Use when updating, rebuilding, auditing, or explaining the Reports Center opportunity maps: Entry Point Map and Product Pain Map. Applies to weekly refreshes of opportunity_signals, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, evidence modal behavior, and repairs when these maps become generic, label-driven, squeezed behind toggles, or disconnected from original articles. Do not use for weekly/monthly report prose, trend candidates, or old formal_tags aggregation."
+description: "Use when updating, rebuilding, auditing, or explaining the Industry Reports opportunity maps: Entry Point Map and Product Pain Map. Applies to weekly refreshes of opportunity_signals, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, evidence modal behavior, and repairs when these maps become generic, label-driven, squeezed behind toggles, or disconnected from original articles. Do not use for weekly/monthly report prose, trend candidates, or old formal_tags aggregation."
 metadata:
   guanlan:
-    version: "1.1.0"
-    lane: "Reports Center"
+    version: "1.1.1"
+    lane: "Industry Reports"
     status: "downstream application"
     order: 92
     responsibility: "Update the source-backed opportunity maps and their frontstage presentation for AI-native startup judgment: Entry Point Map and Product Pain Map."
     upstream: "Business Signal Cards, original source excerpts, opportunity_signals taxonomy"
-    downstream: "Reports Center opportunity maps, source-near opportunity field repairs, evidence modal behavior, weekly opportunity radar notes"
+    downstream: "Industry Reports opportunity maps, source-near opportunity field repairs, evidence modal behavior, weekly opportunity radar notes"
     gates: "weekly cadence, source-backed opportunity_signals, no old formal_tags aggregation, map-specific evidence thresholds, standalone map presentation, evidence modal smoke, frontstage regression"
-    recent_learning: "The maps are useful only when cells come from concrete buyer, task, product-form, pain, and adoption evidence in original materials; on the Reports Center page, the two maps must remain separate full-width decision surfaces with click-to-open evidence instead of a persistent right-side explanation panel."
+    recent_learning: "The maps are useful only when cells come from concrete buyer, task, product-form, pain, and adoption evidence in original materials; on the Industry Reports page, the two maps must remain separate full-width decision surfaces with click-to-open evidence instead of a persistent right-side explanation panel."
     mirrored_in_skill_store: true
     memory_required: false
 ---
@@ -22,12 +22,12 @@ This is a downstream decision-support/page-compatibility skill. Opportunity maps
 
 ## Scope
 
-Use this skill to update the Reports Center's two startup-oriented maps:
+Use this skill to update the Industry Reports page's two startup-oriented maps:
 
 - `Entry Point Map`: buyer or user x specific task.
 - `Product Pain Map`: pain or constraint x product form / delivery model.
 
-Do not write weekly/monthly report prose with this skill. Relation paths may sit near the maps on the Reports Center page, but the map evidence still comes from `opportunity_signals`.
+Do not write weekly/monthly report prose with this skill. The map evidence comes from `opportunity_signals`; retired relation-path modules must not return to the page.
 
 ## Required Reads
 

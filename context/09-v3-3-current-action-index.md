@@ -45,8 +45,8 @@ Only these actions are `current` for SITE-V4.1 and retained compatibility lanes:
 | Source-first check | `current` | Ensure frontstage facts are original-source backed. |
 | Pool-to-Card dedupe | `current` | Prevent duplicate evidence from becoming duplicate Cards. |
 | Factual relationship build | `current` | Build event/claim/entity/source links without tag-derived direction or hypotheses. |
-| Reports Center opportunity maps | `compatibility/downstream` | Keep frozen pages working; outputs cannot enter V4 canonical data. |
-| Reports Center reports | `compatibility/downstream` | Keep frozen report pages working as downstream interpretation. |
+| Industry Reports opportunity maps | `compatibility/downstream` | Feed the V4 Industry Reports application projection; outputs cannot enter V4 canonical data. |
+| Industry Reports reports | `compatibility/downstream` | Keep V4 report pages working as downstream interpretation. |
 | Trend candidate judgment | `compatibility/downstream` | Keep frozen pages working; trend judgment cannot enter V4 canonical data. |
 | First-line viewpoints RSS update | `current` | Update builders viewpoints from the morning RSS / podcast route independently from business signals. |
 | First-line viewpoints skill publish | `current` | Update builders viewpoints from the afternoon local follow-builders skill route independently from business signals. |
@@ -207,11 +207,11 @@ Boundaries:
 - Do not include builders viewpoints or opinion-only materials.
 - Do not replace the graph with long prose cards.
 
-### 5.1 Reports Center Opportunity Maps
+### 5.1 Industry Reports Opportunity Maps
 
 Purpose:
 
-- Refresh the Reports Center's two startup-oriented opportunity maps once per week:
+- Refresh the Industry Reports page's two startup-oriented opportunity maps once per week:
   - Entry Point Map / 切入点图: buyer or user x concrete task.
   - Product Pain Map / 产品痛点图: pain or constraint x product form / delivery model.
 
@@ -234,7 +234,7 @@ Cadence:
 Outputs:
 
 - refreshed `opportunity_signals` when source-near fields need repair.
-- updated Reports Center opportunity map panels.
+- updated Industry Reports opportunity map panels.
 - validation report from frontstage regression when page or data output changes.
 
 Boundaries:
@@ -243,11 +243,11 @@ Boundaries:
 - Do not use First-Line Viewpoints or Community Intelligence as direct map evidence unless separately promoted through Raw / Pool / Card.
 - Do not modify relationship graph tag logic from this route.
 
-### 6. Reports Center Reports
+### 6. Industry Reports
 
 Purpose:
 
-- Publish monthly / weekly AI business reports as Reports Center entries and detail pages.
+- Publish monthly / weekly AI business reports as Industry Reports entries and V4 detail pages.
 
 Primary route:
 
@@ -376,7 +376,7 @@ Outputs:
 Boundaries:
 
 - Business Signals keeps one active-date unified Card set as the primary view.
-- Reports Center maps follow the Business Signals Card chain. Report pages can update through report-center page work.
+- Industry Reports maps follow the internal compatibility Card chain. Report pages update through V4 Industry Reports page work.
 - First-Line Viewpoints keeps the same topbar height and structure.
 - First-Line Viewpoints data must be produced and gated by its independent workflow, not by the Business Signals PR.
 - First-Line Viewpoints Obsidian timelines must be produced from the same gated `follow-builders-daily.json`, not from retired `05-frontier-opinions`.
@@ -495,19 +495,19 @@ Boundaries:
 
 ## Retired Actions
 
-The following action groups are `retired` for current V3.4:
+The following action groups are `retired` for SITE-V4.1:
 
 | Action Group | Status | Reason |
 |---|---|---|
-| legacy content-output routes | `retired` | Current V3.4 is an asset system, not an old content-production lane. |
+| legacy content-output routes | `retired` | SITE-V4.1 is a factual data center, not an old content-production lane. |
 | V2 four-column website page production | `retired` | V2 homepage and four-column public site routes are retired. |
 | legacy copy gates | `retired` | Not current publication blockers. |
 | opinion lane as business-signal evidence | `retired` | First-line viewpoints are independent and cannot feed signal, graph, or trend evidence. |
 | builders / follow-builders mixed into Cards | `retired` | Builders content must remain outside business-signal Cards. |
 | builders / follow-builders mixed into relationship graph | `retired` | Graph evidence must come from accepted business-signal Cards. |
 | builders / follow-builders mixed into trend candidates | `retired` | Trend candidates require multiple business-signal Cards, not viewpoints. |
-| old V2 frontstage modules as current pages | `retired` | Current pages are Business Signals, Reports Center, Monthly / Weekly Reports, First-Line Viewpoints, Community Intelligence, and Dashboard. |
-| temporary-only daily asset generation | `retired` | Current V3.4 automation must persist assets through PR / deploy / sync. |
+| old V2/V3 frontstage modules as current pages | `retired` | Current pages are Data Center, Industry Reports, V4 report details, compatibility redirects, and Dashboard. |
+| temporary-only daily asset generation | `retired` | Current V4 automation must persist assets through PR / deploy / sync. |
 
 If a script or old task requires one of these as a blocker for current production, treat it as historical contamination and update the route.
 

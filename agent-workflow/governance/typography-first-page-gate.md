@@ -21,8 +21,9 @@ encoding: UTF-8
 1. `docs/brand/wavesight-ai-vi/page-typography-position-guidelines.md`
 2. `docs/brand/wavesight-ai-vi/typography-guidelines.md`
 3. `docs/brand/wavesight-ai-vi/brand-tokens.css`
-4. `agent-workflow/product/DESIGN.md`
-5. `C:\Users\86186\.codex\skills\guanlan-typography-qc\SKILL.md`
+4. `context/02-vi-style.md`
+5. `context/frontstage-page-contracts.md`
+6. `agent-workflow/skills/guanlan-typography-qc/SKILL.md`
 
 ## 3. 派发前硬要求
 

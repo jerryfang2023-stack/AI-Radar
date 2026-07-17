@@ -50,20 +50,22 @@ const syntaxCommands = [
   [node, ["--check", "agent-workflow/tools/check-tags.mjs"], "tag quality gate syntax"],
   [node, ["--check", "agent-workflow/tools/assert-follow-builders-data.mjs"], "first-line data gate syntax"],
   [node, ["--check", "agent-workflow/tools/assert-community-intelligence-data.mjs"], "community data gate syntax"],
-  [node, ["--check", "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"], "business frontstage builder syntax"],
+  [node, ["--check", "01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs"], "Data Center V4 builder syntax"],
+  [node, ["--check", "01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs"], "Industry Reports builder syntax"],
+  [node, ["--check", "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"], "V3 internal compatibility builder syntax"],
   [node, ["--check", "01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs"], "operations data sync syntax"],
-  [node, ["--check", "01-SiteV2/site/assets/v3-data-observation-desk.js"], "business frontstage JS syntax"],
-  [node, ["--check", "01-SiteV2/site/assets/follow-builders.js"], "first-line frontstage JS syntax"],
-  [node, ["--check", "01-SiteV2/site/assets/community-intelligence.js"], "community frontstage JS syntax"],
+  [node, ["--check", "01-SiteV2/site/assets/data-center-v4.js"], "Data Center V4 frontstage JS syntax"],
+  [node, ["--check", "01-SiteV2/site/assets/v4-report-shell.js"], "V4 report shell JS syntax"],
 ];
 
 const commandSets = {
   syntax: syntaxCommands,
   site: [
-    [node, ["--check", "01-SiteV2/site/assets/v3-data-observation-desk.js"], "business frontstage JS syntax"],
-    [node, ["--check", "01-SiteV2/site/assets/follow-builders.js"], "first-line frontstage JS syntax"],
-    [node, ["--check", "01-SiteV2/site/assets/community-intelligence.js"], "community frontstage JS syntax"],
-    [node, ["--check", "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"], "business frontstage builder syntax"],
+    [node, ["--check", "01-SiteV2/site/assets/data-center-v4.js"], "Data Center V4 frontstage JS syntax"],
+    [node, ["--check", "01-SiteV2/site/assets/v4-report-shell.js"], "V4 report shell JS syntax"],
+    [node, ["--check", "01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs"], "Data Center V4 builder syntax"],
+    [node, ["--check", "01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs"], "Industry Reports builder syntax"],
+    [node, ["--check", "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"], "V3 internal compatibility builder syntax"],
   ],
   automation: [
     [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor.mjs"], "daily monitor syntax"],
@@ -186,9 +188,9 @@ function writeReport(runs) {
     "",
     "## Current Scope",
     "",
-    "- SITE-V3.4.5 only.",
+    "- SITE-V4.1 public frontstage plus V3 internal compatibility only.",
     "- Retired V1/V2 daily observation, business brief, publiccopy, cardcopy, writer-style, V2 typography, and V2 raw/source gates are not active quality gates.",
-    "- Use Business Signals V3 monitor hard gates plus Card, source-first, frontstage, and freshness gates for the current production lane.",
+    "- Use Data Center V4 integrity/frontstage gates for public output; use V3 Card, source-first, and freshness gates only for the internal compatibility lane.",
     "",
   ].join("\n");
 

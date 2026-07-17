@@ -30,6 +30,4 @@
 
 ## 回填位置
 
-- `agent-workflow/execution/dispatch-board.md`
-- `agent-workflow/feature_list.json`
-- `agent-workflow/progress.md`
+- `context/09-v3-3-current-action-index.md`（仅在当前动作索引确需更新时）

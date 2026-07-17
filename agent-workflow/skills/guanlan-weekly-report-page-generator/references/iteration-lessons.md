@@ -36,7 +36,7 @@
 
 These items were removed through direct user feedback and should not return by default:
 
-- Reports Center weekly report description sentence under `每周周报`.
+- Industry Reports weekly description sentence under `每周周报`.
 - Three boxed count KPI cards; use inline tags instead.
 - Detail page hero deck paragraph under the H1.
 - Detail page right-side `日期 / 范围 / 版本` metadata blocks.

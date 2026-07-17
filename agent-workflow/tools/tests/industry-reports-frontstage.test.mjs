@@ -49,17 +49,24 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   }
 });
 
-test("GitHub Pages excludes retired V3 page assets and datasets", () => {
+test("retired V3 page assets are deleted and internal compatibility datasets stay private", () => {
   const workflow = fs.readFileSync(path.join(root, ".github/workflows/github-pages.yml"), "utf8");
   for (const retired of [
     "assets/wavesight-nav.css",
+    "assets/v3-data-observation-desk.css",
     "assets/v3-data-observation-desk.js",
+    "assets/follow-builders.css",
     "assets/follow-builders.js",
+    "assets/community-intelligence.css",
     "assets/community-intelligence.js",
+  ]) {
+    assert.equal(fs.existsSync(path.join(root, "01-SiteV2/site", retired)), false, `${retired} must stay deleted`);
+  }
+  for (const internal of [
     "data/v3-data-observation-desk.json",
     "data/intelligence-graph-index.json",
     "data/follow-builders-daily.json",
   ]) {
-    assert.ok(workflow.includes(`--exclude="${retired}"`), `${retired} must be excluded from Pages`);
+    assert.ok(workflow.includes(`--exclude="${internal}"`), `${internal} must be excluded from Pages`);
   }
 });

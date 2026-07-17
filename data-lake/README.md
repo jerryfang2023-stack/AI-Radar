@@ -74,7 +74,7 @@ Legacy compatibility tables:
 | `signal_cards` | `01-SiteV2/knowledge/01-Signal-Cards/**/*.md` | Long-term Signal Card inventory and evidence linkage |
 | `builders_daily` | `01-SiteV2/content/07-points/*.md` | First-Line Viewpoints daily sync summary |
 | `community_items` | `01-SiteV2/site/data/community-intelligence.json` | Community Intelligence current item index |
-| `frontstage_cards` | `01-SiteV2/site/data/v3-data-observation-desk.json` | Current frontstage Business Signals cards |
+| `frontstage_cards` | `01-SiteV2/site/data/v3-data-observation-desk.json` | Internal V3 compatibility Cards; not the public V4 event set |
 | `fde_items` | `01-SiteV2/site/data/enterprise-ai-fde.json` and V3 desk data | Enterprise AI / FDE lens item index |
 
 ## Example Queries

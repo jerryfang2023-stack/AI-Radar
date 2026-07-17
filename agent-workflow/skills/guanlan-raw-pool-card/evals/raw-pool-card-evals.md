@@ -2,6 +2,8 @@
 
 Run these pass/fail checks after changing or running the WaveSight AI Raw -> Pool audit -> Card -> frontstage chain.
 
+Compatibility note: `frontstageCards`, `public Card`, and similarly named checks are frozen V3 schema/gate identifiers. They validate the internal compatibility set and must not be interpreted as the public Data Center V4 event set or as permission to restore a V3 page.
+
 Do not use numeric scores. Each check must be `pass` or `fail` with the file or field that proves it.
 
 ## Required Checks

@@ -134,8 +134,8 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 For page, data, or generation-rule changes, run at minimum:
 
 ```powershell
-node --check 01-SiteV2/site/assets/v3-data-observation-desk.js
-node --check 01-SiteV2/site/assets/follow-builders.js
+node --check 01-SiteV2/site/assets/data-center-v4.js
+node --check 01-SiteV2/site/assets/v4-report-shell.js
 node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
 node --check 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
 node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs

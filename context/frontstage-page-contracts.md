@@ -51,7 +51,7 @@ Entity Index is the single list entrance for companies, organizations, models, p
 
 `data-center.html`, `intelligence-map.html`, and every weekly/monthly detail page must use `assets/data-center-v4.css`, the official logo header, and the same sidebar structure. Weekly reports, monthly reports, and opportunity maps remain inside Industry Reports and must not return as separate application-center sidebar entries. Relation Paths has been removed and must not return.
 
-No public content page may load `assets/wavesight-nav.css`, the V3 page scripts, or `data/v3-data-observation-desk.json`. The dashboard remains an operations backend page and is not exposed in frontstage navigation.
+The retired `assets/wavesight-nav.css` and V3 page-specific CSS/JS files have been deleted and must not return. No public content page may load `data/v3-data-observation-desk.json`. The dashboard remains an operations backend page and is not exposed in frontstage navigation.
 
 Commercial Events uses the TAG-V4 classification system. Its primary classification filter combines technical Tags with product form, application scenario, industry, deployment model, and target-user Facets, while the underlying data keeps those namespaces separate. List rows may show a compact subset, but event details must expose the complete evidence-backed classification groups. The page must not relabel event type, company, source, geography, importance, opportunity, or quality-gate state as a technical Tag.
 

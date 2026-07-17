@@ -7,7 +7,7 @@ Avoid these patterns:
 - using raw Markdown tables with dense borders;
 - treating monthly report pages like weekly report pages without adapting the structure;
 - hiding the full body behind only charts or summaries;
-- adding redundant return buttons or report-center buttons after the user removed them;
+- adding redundant return buttons or duplicate Industry Reports buttons after the user removed them;
 - leaving mobile tables horizontally scrollable without a clear reason;
 - updating project skill files without syncing `.skill-store` and rebuilding the registry.
 

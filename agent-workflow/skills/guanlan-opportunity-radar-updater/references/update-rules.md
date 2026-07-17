@@ -110,7 +110,7 @@ An empty cell means "no reliable public evidence yet." It is better than filling
 
 ## Frontstage Presentation Rules
 
-The Reports Center page should present the opportunity maps as decision surfaces, not as a compact dashboard widget.
+The Industry Reports page should present the opportunity maps as decision surfaces, not as a compact dashboard widget.
 
 - The top-level section title should be `机会地图` / `Opportunity Map`.
 - Entry Point Map and Product Pain Map must be separate sections with their own Chinese and English subcolumn names.

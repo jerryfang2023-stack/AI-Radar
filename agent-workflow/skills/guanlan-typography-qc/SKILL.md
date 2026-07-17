@@ -1,9 +1,9 @@
 ---
 name: guanlan-typography-qc
-description: Audit WaveSight AI / Guanlan current V3 frontstage typography against the current VI and position-level rules. Use when reviewing or fixing font size, weight, line-height, title hierarchy, shared navigation typography, Business Signals, Intelligence Map, Weekly Report, First-Line Viewpoints, Community Intelligence, Dashboard, cards, graph/trend modules, sidebars, footer text, CSS clamp/vw risks, or closeout typography evidence.
+description: Audit WaveSight AI / Guanlan current V4 frontstage typography against the current VI and position-level rules. Use when reviewing or fixing font size, weight, line-height, title hierarchy, V4 sidebar/header typography, Data Center, Industry Reports, report details, Dashboard, cards, tables, sidebars, footer text, CSS clamp/vw risks, or closeout typography evidence.
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.0.1"
     lane: "Cross-lane UI"
     status: "supporting skill"
     order: 100
@@ -29,12 +29,13 @@ Read these files before judging a page:
 3. `docs/brand/wavesight-ai-vi/page-typography-position-guidelines.md`
 4. `docs/brand/wavesight-ai-vi/typography-guidelines.md`
 5. `docs/brand/wavesight-ai-vi/brand-tokens.css`
-6. `agent-workflow/product/DESIGN.md`
 
 If reviewing visible pages, also inspect:
 
-- `01-SiteV2/site/assets/styles.css`
-- `01-SiteV2/site/assets/app.js`
+- `01-SiteV2/site/assets/data-center-v4.css`
+- `01-SiteV2/site/assets/data-center-v4.js`
+- `01-SiteV2/site/assets/reports.css`
+- `01-SiteV2/site/assets/v4-report-shell.js`
 - Desktop screenshots or browser-rendered pages
 
 For regression prevention, read `evals/typography-qc-evals.md` when auditing, repairing, or updating this skill. When checking visible regressions, also read `examples/good-typography-check.md` and `examples/bad-vw-clamp.md`.
@@ -96,19 +97,19 @@ Flag these as high risk unless clearly limited to homepage Hero:
 
 ### 3. Page-Specific Checks
 
-Homepage:
+Homepage / shell entry:
 
 - Only Hero H1 may use the largest type.
 - Section titles must not become Hero titles.
-- Business signal, relationship graph, trend candidate, and first-line viewpoint modules must keep their own hierarchy.
+- Data Center and Application Center entries must keep their own hierarchy.
 - Main card may be stronger than list cards, but must remain below page Hero.
 
 Current frontstage pages:
 
-- Business Signals uses `01-SiteV2/site/v3-data-observation.html`.
-- First-Line Viewpoints uses `01-SiteV2/site/follow-builders.html`.
+- Data Center uses `01-SiteV2/site/data-center.html` for events, viewpoints, community, and index views.
+- Industry Reports uses `01-SiteV2/site/intelligence-map.html` and V4 weekly / monthly detail pages.
 - Dashboard uses `01-SiteV2/site/operations-console.html`.
-- Business Signals and First-Line Viewpoints must share the same topbar structure and height.
+- All public Data Center and report pages must share the V4 logo header and Data Center / Application Center sidebar hierarchy.
 - Filters and tags must remain visually secondary.
 - List cards must be scannable and not look like full article pages.
 
