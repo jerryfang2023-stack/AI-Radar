@@ -1,0 +1,63 @@
+{
+  "ok": false,
+  "date": "2026-07-17",
+  "status": "failed",
+  "failure_categories": [
+    "raw_card_ingestion_fields"
+  ],
+  "gates": [
+    {
+      "id": "source_first",
+      "label": "V3 source-first frontstage gate",
+      "script": "agent-workflow/tools/assert-v3-source-first-frontstage.mjs",
+      "status": "failed",
+      "exit_code": 1,
+      "parsed": {
+        "ok": false,
+        "status": "failed",
+        "checked_file": "01-SiteV2/site/data/v3-data-observation-desk.json",
+        "card_count": 586,
+        "frontstage_card_count": 585,
+        "issue_count": 4,
+        "issues": [
+          "01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-17--signal--now-auto-signal-p-044.md has English source_title but no title_zh or exact source-title translation entry",
+          "01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-17--signal--nvidia-and-japan-auto-signal-p-020.md has English source_title but no title_zh or exact source-title translation entry",
+          "frontstage card 2026-07-17 SIG-20260717-A13 public title is not backed by original source title translation: Now 获得 550 万美元融资",
+          "frontstage card 2026-07-17 SIG-20260717-A27 public title is not backed by original source title translation: Nvidia and Japan 发布 AI 服务"
+        ]
+      }
+    },
+    {
+      "id": "three_block_contract",
+      "label": "Business Signals three-block contract",
+      "script": "agent-workflow/tools/assert-business-signals-three-block-contract.mjs",
+      "status": "passed",
+      "exit_code": 0,
+      "parsed": {
+        "ok": true,
+        "date": "2026-07-17",
+        "active_date": "2026-07-17",
+        "active_card_count": 27,
+        "relationship_node_count": 28,
+        "relationship_edge_count": 40,
+        "today_trend_candidate_count": 0,
+        "no_trend_candidate_decision": true,
+        "problems": []
+      }
+    },
+    {
+      "id": "frontstage_regression",
+      "label": "Frontstage regression gate",
+      "script": "agent-workflow/tools/frontstage-regression-gate.mjs",
+      "status": "passed",
+      "exit_code": 0,
+      "parsed": {
+        "ok": true,
+        "status": "passed",
+        "issue_count": 0,
+        "report": "agent-workflow/reports/frontstage-regression-gate-20260717030643.md"
+      }
+    }
+  ],
+  "report": "agent-workflow/reports/2026-07-17-business-signals-frontstage-gate.md"
+}

@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-15T16:00:00.000Z"
-collected_at: 2026-07-17T01:57:08.459Z
+collected_at: 2026-07-17T03:06:12.181Z
 language: mixed
 full_text_hash: 7c405f10281f1431
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-008-在-claude-cowork-中使用-claude-fable-5.md"
@@ -49,7 +49,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: supporting_evidence
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"在 Claude Cowork 中使用 Claude Fable 5","discovery_summary":"Anthropic 发布最强通用模型 Claude Fable 5，专为长时间、多步骤的复杂异步工作设计，可在 Claude Cowork 中自主执行深度研究、尽职调查等任务。该模型需手动选择，默认模型为 Claude Sonnet 5。","source_name":"Claude：Blog（网页）","origin_url":"https://claude.com/blog/working-with-claude-fable-5-in-claude-cowork","discovered_at":"2026-07-17T01:46:58.974Z","rank_on_page":196,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"在 Claude Cowork 中使用 Claude Fable 5","discovery_summary":"Anthropic 发布最强通用模型 Claude Fable 5，专为长时间、多步骤的复杂异步工作设计，可在 Claude Cowork 中自主执行深度研究、尽职调查等任务。该模型需手动选择，默认模型为 Claude Sonnet 5。","source_name":"Claude：Blog（网页）","origin_url":"https://claude.com/blog/working-with-claude-fable-5-in-claude-cowork","discovered_at":"2026-07-17T02:56:35.439Z","rank_on_page":209,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -60,7 +60,7 @@ content_hash: 7c405f10281f1431
 semantic_hash: 883dd994abeb58a8
 duplicate_of: ""
 first_seen_at: "2026-07-15T16:00:00.000Z"
-last_seen_at: 2026-07-17T01:57:08.459Z
+last_seen_at: 2026-07-17T03:06:12.181Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -75,7 +75,7 @@ missing_information: ["证据对象不可用：疑似索引页、目录页、薄
 key_excerpts: [{"type":"product_update","text":"Anthropic 发布最强通用模型 Claude Fable 5，专为长时间、多步骤的复杂异步工作设计，可在 Claude Cowork 中自主执行深度研究、尽职调查等任务。该模型需手动选择，默认模型为 Claude Sonnet 5。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Claude Fable 5 is Anthropic’s most capable generally available model , built for long-running, complex and asynchronous work.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Claude Fable 5 is particularly effective carrying out multi-step workflows (such as conducting deep research that it incorporates in a first-draft memo, performing due diligence before generating board presentations, or going through a folder to redline multiple contracts, to name a few) on its own for extended periods of time, testing and evaluating its results as it goes.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Maximizing the model’s capabilities requires a change in how you work with it.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"As models improve over time, we've refined our recommendations for getting more out of Claude, including prompting best practices , providing context, and building skills that capture repeatable processes like weekly team updates, sales call prep, or customer feedback analysis.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Those practices still matter with Claude Fable 5, in fact, the model performs even better with them in place.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T01:57:08.459Z
+fact_extraction_completed_at: 2026-07-17T03:06:12.181Z
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
@@ -296,7 +296,7 @@ No items found.
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"在 Claude Cowork 中使用 Claude Fable 5","discovery_summary":"Anthropic 发布最强通用模型 Claude Fable 5，专为长时间、多步骤的复杂异步工作设计，可在 Claude Cowork 中自主执行深度研究、尽职调查等任务。该模型需手动选择，默认模型为 Claude Sonnet 5。","source_name":"Claude：Blog（网页）","origin_url":"https://claude.com/blog/working-with-claude-fable-5-in-claude-cowork","discovered_at":"2026-07-17T01:46:58.974Z","rank_on_page":196,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"在 Claude Cowork 中使用 Claude Fable 5","discovery_summary":"Anthropic 发布最强通用模型 Claude Fable 5，专为长时间、多步骤的复杂异步工作设计，可在 Claude Cowork 中自主执行深度研究、尽职调查等任务。该模型需手动选择，默认模型为 Claude Sonnet 5。","source_name":"Claude：Blog（网页）","origin_url":"https://claude.com/blog/working-with-claude-fable-5-in-claude-cowork","discovered_at":"2026-07-17T02:56:35.439Z","rank_on_page":209,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

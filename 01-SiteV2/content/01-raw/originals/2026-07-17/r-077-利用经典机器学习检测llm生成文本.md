@@ -1,0 +1,577 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-077
+title: "利用经典机器学习检测LLM生成文本"
+title_zh: "利用经典机器学习检测LLM生成文本"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://blog.lyc8503.net/en/post/llm-classifier"
+canonical_url: "https://blog.lyc8503.net/en/post/llm-classifier"
+source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+source_type: industry
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-03-01T10:32:04.000Z"
+collected_at: 2026-07-17T03:06:12.557Z
+language: mixed
+full_text_hash: 393406fe6ec52fe5
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-077-利用经典机器学习检测llm生成文本.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-077-利用经典机器学习检测llm生成文本.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":17774,"paragraph_count":139,"sentence_count":144,"boilerplate_hits":0,"symbol_ratio":0.0221,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 17774
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"393406fe6ec52fe5","missing":[]}
+source_volatility: high
+community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: user_feedback_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"利用经典机器学习检测LLM生成文本","discovery_summary":"一项研究探索使用经典机器学习方法（如逻辑回归、随机森林）检测大型语言模型生成的文本，在特定数据集上达到与深度学习模型相当的准确率。该方法计算成本更低，且对短文本和改写文本具有较强鲁棒性。研究还发现，基于字符级n-gram特征的模型在跨领域泛化上表现优于基于词级特征的模型。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://blog.lyc8503.net/en/post/llm-classifier","discovered_at":"2026-07-17T02:56:35.408Z","rank_on_page":98,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 30068d7445a6d923
+content_hash: 393406fe6ec52fe5
+semantic_hash: 2fdccb581436d44b
+duplicate_of: ""
+first_seen_at: "2026-03-01T10:32:04.000Z"
+last_seen_at: 2026-07-17T03:06:12.557Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","Google","GitHub","Perplexity"],"products":["ChatGPT","Gemini","gemini","Claude"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["2026","8503","85%","2023","2010","2022","10","000 m"],"quotes":["AI plagiarism checkers","tutorials","Hey, is this text AI-generated?","Age of Dharma’s decline, , ,","Hello World"]}
+evidence_seed: {"company_actions":["一项研究探索使用经典机器学习方法（如逻辑回归、随机森林）检测大型语言模型生成的文本，在特定数据集上达到与深度学习模型相当的准确率。该方法计算成本更低，且对短文本和改写文本具有较强鲁棒性。研究还发现，基于字符级n-gram特征的模型在跨领域泛化上表现优于基于词级特征的模型。","This article is currently an experimental machine translation and may contain errors.","If anything is unclear, please refer to the original Chinese version."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"一项研究探索使用经典机器学习方法（如逻辑回归、随机森林）检测大型语言模型生成的文本，在特定数据集上达到与深度学习模型相当的准确率。该方法计算成本更低，且对短文本和改写文本具有较强鲁棒性。研究还发现，基于字符级n-gram特征的模型在跨领域泛化上表现优于基于词级特征的模型。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"This article is currently an experimental machine translation and may contain errors.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"If anything is unclear, please refer to the original Chinese version.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I am continuously working to improve the translation.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"TL;DR & Demo As of early 2026, mainstream LLM-generated text exhibits strong statistical patterns that can be effectively distinguished from human-written content using traditional machine learning models.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"I suspect this is how many so-called “AI plagiarism checkers” actually work under the hood.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-17T03:06:12.557Z
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# 利用经典机器学习检测LLM生成文本
+
+## clean_text
+
+This article is currently an experimental machine translation and may contain errors. If anything is unclear, please refer to the original Chinese version. I am continuously working to improve the translation.
+TL;DR & Demo
+As of early 2026, mainstream LLM-generated text exhibits strong statistical patterns that can be effectively distinguished from human-written content using traditional machine learning models. I suspect this is how many so-called “AI plagiarism checkers” actually work under the hood.
+Online Demo: https://lyc8503.github.io/AITextDetector/
+The model used in this demo is not trained on general-purpose data , nor has it undergone rigorous optimization or iteration. Its single-sentence detection accuracy is approximately 85% on the test set. Please read through this article before use to understand potential limitations.
+The core code (drafts) and trained model files are available on GitHub: lyc8503/AITextDetector
+Background (aka Useless Rambling)
+Back when I was still writing my thesis at school half a year ago, rumors were already spreading about checking papers for AIGC (AI-generated content). I tested several platforms—CNKI, Wanfang, and some third-party AIGC detection services—and found they could indeed distinguish between my hand-written text and LLM-generated text with decent accuracy.
+That sparked my curiosity about how AIGC detection actually works (and how to bypass it) .
+But I was juggling too many things at the time—obsessed with radio , Minecraft, Touhou—and after a few failed attempts, I shelved the idea.
+Eventually, I faked my way through the thesis, and life moved on. But recently, while browsing Lofter, I stumbled upon entire tags flooded with low-quality, wildly out-of-character AI-generated fanfics.
+How can I tell they’re AI at a glance? Well, some folks (or gals) don’t even bother cleaning up Markdown formatting or AI-generated section headers before posting—and then they slap half the article behind a paywall 😓
+Most AI-generated texts, however, are harder to spot—they’re buried among diverse writing styles, varied prompts, and not immediately obvious. By the time you realize something feels off, it’s too late. Some texts are borderline impossible to prove as AI, leaving me paranoid. After swallowing a few too many AI-generated turds, I’d finally had enough. Lofter browsing stops here—time to open VS Code!
+Yes, that’s how I ended up reviving my weekend project idea: building an AI-generated text detector…
+Research Attempt – No Luck
+The internet is now almost entirely polluted with ads when searching for AIGC detection. Every result is just another essay-AI-rewriting service. Back then, I dug through the noise and found something called text perplexity .
+The idea is simple: use an existing LLM to estimate the probability of each word appearing in a given sentence. If nearly every word ranks high in the LLM’s predictions (Top-N), the sentence is likely AI-generated. Conversely, if many words are unexpected, it’s more likely human-written.
+Sounds promising, right? I spent some time trying this method, but results were disappointing—plenty of false positives and false negatives, and no reasonable threshold could be set. Plus, there are practical issues: high inference cost, poor cross-model generalization, difficulty deploying large models locally, and closed-weight models being hard to integrate. Overall, this approach isn’t elegant or reliable.
+Failed attempt—got tricked by a bunch of soft-ad "tutorials"
+A (Somewhat) Successful Attempt – scikit-learn SVM
+Since online resources were useless, back to old-school alchemy.
+Scikit-learn, activate! Following its Roadmap , we can directly pick Linear SVC and Naive Bayes as good starting points for our classification task.
+(Whisper: this also matched my gut feeling—LLMs have detectable word-choice patterns; even a Naive Bayes classifier should pick them up. I just didn’t expect the signal to be this strong.)
+Data Generation
+Old-school alchemy traditional classifiers need labeled data—so we need human-written texts and confirmed LLM-generated texts for training.
+My approach: I pulled data I’d scraped in 2023 from a certain Ford-like and River-like platform, filtering for articles published between 2010–2022 (pre-ChatGPT). I only filtered out extremely low-engagement or very short pieces, then randomly sampled nearly 10,000 multi-thousand-character texts as human-written samples.
+Then, I used an LLM to generate chapter summaries of these texts, fed the summaries back into the LLM, and had it regenerate full articles. This gave me a roughly equal number of LLM-generated samples, diverse in genre and closely matching the original human content.
+In theory, at least. But LLM APIs are expensive, and I wasn’t about to spend thousands on a weekend project. So I got creative—and skirted the rules leveraged multiple low-cost or free API channels:
+Gemini : Used CLIProxyAPI to convert Antigravity/Gemini CLI quota into API access—just pay ~$20 for an AI Pro account
+Qwen : qwen-code lets you reverse-engineer the Qwen Plus API—free
+GLM-5 : Lucky timing—OpenRouter was offering free GLM-5 public beta (Pony Alpha)
+Kimi, Deepseek, Doubao, GLM-4.7 : Signed up during a promotional coding plan—$8.9 first month, API access unlocked
+Disclaimer: This is not a recommendation. These actions violate platform ToS and may get you banned. But the platforms are too busy with marketing hype to care, and I wasn’t about to pay full price.
+Many programming-focused LLM APIs strangely charge per call, but we can abuse optimize this by batching tasks into massive inputs, forcing the LLM to generate more content per call. And so…
+What do you mean I used over 300M Gemini tokens worth $2000 at full price?!
+Ultimately, I used gemini-3-flash to generate summaries, and seven different models ( gemini-3-pro , qwen-coder-plus , glm-5 , glm-4.7 , kimi-k2.5 , doubao-seed-code , deepseek-v3.2 ) to generate seven sets of LLM-generated samples.
+The generated files
+Training
+While I was halfway through data generation, I couldn’t wait and started training.
+I asked Claude to write the classifier code, and it naively dumped the entire raw text into the model—achieving a suspicious 99.45% accuracy… Wait, really?
+Claude’s useless. I’ll do it myself. For training, I split all texts into sentences using Chinese punctuation, cleaned non-Chinese/English characters, then applied scikit-learn’s TF-IDF → LinearSVC . After cleaning up some noise, sentence-level classification still hit ~85% accuracy!
+Even this buggy first version hit 88% accuracy (later optimized to 85%)
+Individual sentences carry limited info, but 85% accuracy per sentence means that for a longer article, we can be highly confident in judging whether it’s AI-generated. This performance far exceeded my expectations. Old-school ML still slaps—way better than those dumb online tools that just ask an LLM, “Hey, is this text AI-generated?”
+After finishing all data, I tried training an 8-class model (human + 7 AIs), but the LLMs seem too similar—probably distilled from each other—so classification was messy, with only ~50% accuracy.
+Multi-class results—apparently not separable. Maybe my model sucks, but whatever, not important
+Eventually, I trained seven separate binary classifiers and used majority voting: a sentence is flagged as AI if ≥2 models detect it.
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+loaded 8536 samples
+train chapter size: 6820, test chapter size: 1716
+[gemini] Train: 917,374 Test: 228,051
+[gemini] full TF-IDF + SVC ...
+3,336,446 features -> acc=0.8809 f1=0.8082 [tn=143688 fp=10650 fn=16503 tp=57210]
+[qwen] Train: 1,315,338 Test: 328,636
+[qwen] full TF-IDF + SVC ...
+3,989,603 features -> acc=0.8911 f1=0.8974 [tn=136293 fp=18045 fn=17739 tp=156559]
+[pony] Train: 1,128,044 Test: 278,663
+[pony] full TF-IDF + SVC ...
+3,688,143 features -> acc=0.8493 f1=0.8286 [tn=135085 fp=19253 fn=22755 tp=101570]
+[kimi25] Train: 1,088,007 Test: 269,567
+[kimi25] full TF-IDF + SVC ...
+3,976,027 features -> acc=0.8721 f1=0.8473 [tn=139390 fp=14948 fn=19534 tp=95695]
+[glm47] Train: 1,124,430 Test: 279,109
+[glm47] full TF-IDF + SVC ...
+3,980,772 features -> acc=0.8436 f1=0.8222 [tn=134461 fp=19877 fn=23786 tp=100985]
+[doubao] Train: 1,063,395 Test: 264,121
+[doubao] full TF-IDF + SVC ...
+4,243,728 features -> acc=0.8940 f1=0.8700 [tn=142420 fp=11918 fn=16089 tp=93694]
+[deepseekv32] Train: 1,176,294 Test: 289,042
+[deepseekv32] full TF-IDF + SVC ...
+4,361,691 features -> acc=0.8529 f1=0.8403 [tn=134625 fp=19713 fn=22819 tp=111885]
+=====================================
+SUMMARY
+=====================================
+model s1 acc s1 f1
+gemini 0.8809 0.8082
+qwen 0.8911 0.8974
+pony 0.8493 0.8286
+kimi25 0.8721 0.8473
+glm47 0.8436 0.8222
+doubao 0.8940 0.8700
+deepseekv32 0.8529 0.8403
+All models achieved over 85% accuracy and over 80% F1—pretty solid! I also noticed that AI-generated texts were often flagged by multiple models, so voting made perfect sense.
+I tried MultinomialNB and SGDClassifier , but accuracy dropped slightly. BERT gave a minor boost but required too much GPU time—discarded. Even tested AutoGluon , which somehow managed only 53% binary accuracy. Won’t dive into those.
+JS Implementation for Web Demo
+At this point, I could’ve just published the repo and called it a day. But launching Python every time is way too inconvenient. I could’ve hosted a Python API, but that means server maintenance—violates my strict Serverless philosophy.
+My original plan: export model to ONNX, run inference via ONNX Web Runtime in Wasm. But when I asked my silicon servant Claude to help, I didn’t specify clearly—and it went off-script, trimming and exporting the model as a JSON… then implemented TF-IDF + SVM entirely in JavaScript for browser inference.
+Hmm… actually not a bad idea. I tested it on a 1-million-character text—it took about 10 seconds on my machine, acceptable. For typical few-thousand-character inputs, it’s instant.
+Fine, since this is just a demo, and the JS approach is more transparent, I’ll keep this slightly silly implementation. (Blame Claude, not me.)
+As for accuracy: I tested different feature limits. Ultimately prioritized performance and kept 500k features. Stored as JSON, it’s a bloated 107MB (though gzipped server-side, it’s ~38MB). Smaller versions (50k–80k) only lost 3–4% accuracy, but final AI detection rates varied significantly—especially on human texts, with ±50% relative differences, leading to false positives. So I stuck with 500k.
+Final accuracy drop: ~1%, as shown below:
+10
+11
+12
+13
+14
+============================================================
+SUMMARY top-500,000 C=1.0
+============================================================
+model s1 acc s2 acc Δacc s1 f1 s2 f1 Δf1
+gemini 0.8809 0.8721 -0.0088 0.8082 0.7986 -0.0096
+qwen 0.8911 0.8819 -0.0092 0.8974 0.8886 -0.0088
+pony 0.8493 0.8383 -0.0109 0.8286 0.8173 -0.0113
+kimi25 0.8721 0.8623 -0.0098 0.8473 0.8376 -0.0097
+glm47 0.8436 0.8311 -0.0125 0.8222 0.8097 -0.0125
+doubao 0.8940 0.8869 -0.0071 0.8700 0.8624 -0.0076
+deepseekv32 0.8529 0.8419 -0.0110 0.8403 0.8291 -0.0112
+AVG 0.8592 0.8348
+MIN acc: 0.8311
+============================================================
+Testing Performance
+All tests below use the pruned web version, which should perform similarly to the full joblib models.
+Current logic: split input text into sentences, clean and classify using all 7 binary models. If ≥2 models flag a sentence, it’s marked as suspected AI and highlighted. Final AI score is the proportion of flagged characters. Classification:
+<50%: Human
+50–70%: Maybe Human
+70%: Maybe AI
+First, test detection rate on common models like Doubao and Deepseek—both were in training data. Prompt: write me a 3000-word story . Easily caught:
+Deepseek V3.2: 78.4%
+Doubao Seed Code: 93.0%
+Now test on unseen models—how’s generalization?
+Claude Sonnet 4.6: 71.9%
+GPT 5.2: 73.3%
+I tested several other models not in training (MiMo-V2, Doubao-Seed-2.0, GPT-4o)—all detected at ~70%, some even >90%. Solid.
+Also tested more complex prompts—e.g., feeding 20 chapters of human-written text and asking the LLM to mimic style and continue. Detection rate dipped slightly to 67.8% (but remember, we trained on complex prompts too). Results not shown due to space.
+Then I picked 10 completed web novels (pre-2022) from my subscription list—diverse genres, authors, eras, and likely not in training data.
+Their AI detection rates: 22.7%, 24.2%, 25.0%, 24.5%, 19.0%, 13.7%, 29.1%, 4.9%, 27.3%, 19.2%—all under 30%. I also sampled random Lofter fanfics; since they’re more casual, detection rates were often below 10%. But when I fed in texts I suspected were AI-generated, detection spiked to 83.4%, strongly suggesting LLM use without disclosure.
+[Mar 5, 2026 Update] For more rigorous testing, I randomly sampled 10,000 high-engagement (views >5000), long-form (word count >2000) fanfics from Lofter, all posted before 2022. Their AI detection rate distribution (using 7-model voting, ≥2 votes):
+0-5%:313 | 5-10%:1945 | 10-15%:3016 | 15-20%:2033 | 20-25%:1355 | 25-30%:594 | 30-35%:492 | 35-40%:123 | 40-45%:34 | 45-50%:62 | 50-55%:24 | 55-60%:5 | 60-65%:3 | 65-70%:1
+Using 60% as threshold → false positive rate: 0.04%
+Using 70% → false positive rate: <0.01% (effectively zero)
+The four texts above 60% were all collection indexes, not actual stories—flagged due to excessive links.
+Even at 50% threshold, false positive rate is only 0.33% .
+Then, I scraped all articles from Lofter Android’s top 20 trending tags (weekly榜单), filtered by length, and ran detection:
+0-5%:27 | 5-10%:138 | 10-15%:231 | 15-20%:245 | 20-25%:238 | 25-30%:137 | 30-35%:112 | 35-40%:87 | 40-45%:116 | 45-50%:112 | 50-55%:118 | 55-60%:157 | 60-65%:118 | 65-70%:109 | 70-75%:75 | 75-80%:56 | 80-85%:28 | 85-90%:15 | 90-95%:10
+32.22% of articles scored >50% AI —likely partially or fully AI-generated… Is there any human left?? Moreover, not a single one has proactively declared AI-generated content.
+“Age of Dharma’s decline, , ,” —a friend in the group
+Attack and Defense – Bypassing Detection(?)
+Alright, we’ve built an AIGC detector. Time to build an anti-detector now.
+Nope, kidding. I’m not that bored.
+But let’s test some common anti-AIGC detection tricks:
+Classic Translation Method
+Google Translate roundtrip (CN→EN→CN): 89.9% → 85.0%
+Youdao Translate (CN→EN→CN): 89.9% → 79.2%
+Sogou Translate (CN→EN→CN): 89.9% → 86.0%
+Slight drop, but still clearly flagged.
+LLM Prompt Method
+Use “magic” prompts to make LLM output less “AI-like”—sounds ridiculous from the start!
+Tested one-line prompt: Rewrite the above article to minimize AI flavor : 89.9% → 83.0%
+Also tried more complex prompts : 89.9% → 79.3%
+Slight improvement, but still meaningless in practice.
+This detection method is way too robust! (flag
+If I really wanted to bypass it, my only ideas would be fine-tuning an LLM on massive human text, or building a huge rule-based system to surgically disrupt SVM-matched features. But that’s beyond this article. Not sure if it’d even work. Or maybe there are better ways—left as an exercise for the reader.
+Epilogue
+Now, time for closing rambling.
+I honestly didn’t expect this classification task to be so easy—simple enough that a scikit-learn “Hello World” script, with minimal iteration and some hardcoded rules, could produce a fairly robust and accurate detector. Most of the effort was just waiting for LLMs to generate data…
+Ambitious readers could follow this approach to train detectors for other domains—say, academic paper AIGC detection. Add a flashy frontend, and you’ve got a tool you can sell to desperate college students. If you make money, don’t forget to donate a little.
+Another idea: detect AI-generated images. But with Stable Diffusion and easy LoRA fine-tuning, visual styles are far more diverse than text—this task would be much harder. And after writing this, my three-minute enthusiasm is burned out. Maybe next time.
+Lastly, a few words on AI-generated content: I don’t accept AI-generated entertainment as legitimate creative work. Just like AI coding tools produce bloated, unmaintainable code, AI-generated text, images, and audio may seem decent at first glance, but fall apart on closer inspection—repetitive, shallow, and so predictable that even word frequency stats can catch them. This pattern is fundamentally unsuitable for real creation, and as a reader, I’m deeply unsatisfied. I’m starting to suspect LLMs’ so-called “creative writing” is just a bunch of post-training data being endlessly recombined and regurgitated.
+But then again, “the world should be” has never equaled “the world is.” While LLMs bring innovation and productivity gains, misuse and abuse are spreading relentlessly across every industry. And since LLMs are fine-tuned to exploit human perception, who knows whether they “understand” anything or just memorize patterns? After patching endless bugs like “which is bigger, 3.9 or 3.11” or “should I walk or drive 50m to a car wash,” can we really say the model understands the world?
+Everyone’s stuck in debates: What is LLM? How will it disrupt my industry? Where will AI take humanity? No one has answers.
+At least I’m glad I learned to code before the AI era. Otherwise, I might not realize how stupid today’s vibe-coded software really is. As for the future? Either generative AI smashes human social order to pieces, or the AI bubble bursts and memory becomes free. Either way, sounds fine to me, doesn’t it?
+This article is licensed under the CC BY-NC-SA 4.0 license.
+Author: lyc8503, Article link: https://blog.lyc8503.net/en/post/llm-classifier/
+If this article was helpful or interesting to you, consider buy me a coffee ¬_¬
+Feel free to comment in English below o/
+
+## full_text
+
+This article is currently an experimental machine translation and may contain errors. If anything is unclear, please refer to the original Chinese version. I am continuously working to improve the translation.
+TL;DR & Demo
+As of early 2026, mainstream LLM-generated text exhibits strong statistical patterns that can be effectively distinguished from human-written content using traditional machine learning models. I suspect this is how many so-called “AI plagiarism checkers” actually work under the hood.
+Online Demo: https://lyc8503.github.io/AITextDetector/
+The model used in this demo is not trained on general-purpose data , nor has it undergone rigorous optimization or iteration. Its single-sentence detection accuracy is approximately 85% on the test set. Please read through this article before use to understand potential limitations.
+The core code (drafts) and trained model files are available on GitHub: lyc8503/AITextDetector
+Background (aka Useless Rambling)
+Back when I was still writing my thesis at school half a year ago, rumors were already spreading about checking papers for AIGC (AI-generated content). I tested several platforms—CNKI, Wanfang, and some third-party AIGC detection services—and found they could indeed distinguish between my hand-written text and LLM-generated text with decent accuracy.
+That sparked my curiosity about how AIGC detection actually works (and how to bypass it) .
+But I was juggling too many things at the time—obsessed with radio , Minecraft, Touhou—and after a few failed attempts, I shelved the idea.
+Eventually, I faked my way through the thesis, and life moved on. But recently, while browsing Lofter, I stumbled upon entire tags flooded with low-quality, wildly out-of-character AI-generated fanfics.
+How can I tell they’re AI at a glance? Well, some folks (or gals) don’t even bother cleaning up Markdown formatting or AI-generated section headers before posting—and then they slap half the article behind a paywall 😓
+Most AI-generated texts, however, are harder to spot—they’re buried among diverse writing styles, varied prompts, and not immediately obvious. By the time you realize something feels off, it’s too late. Some texts are borderline impossible to prove as AI, leaving me paranoid. After swallowing a few too many AI-generated turds, I’d finally had enough. Lofter browsing stops here—time to open VS Code!
+Yes, that’s how I ended up reviving my weekend project idea: building an AI-generated text detector…
+Research Attempt – No Luck
+The internet is now almost entirely polluted with ads when searching for AIGC detection. Every result is just another essay-AI-rewriting service. Back then, I dug through the noise and found something called text perplexity .
+The idea is simple: use an existing LLM to estimate the probability of each word appearing in a given sentence. If nearly every word ranks high in the LLM’s predictions (Top-N), the sentence is likely AI-generated. Conversely, if many words are unexpected, it’s more likely human-written.
+Sounds promising, right? I spent some time trying this method, but results were disappointing—plenty of false positives and false negatives, and no reasonable threshold could be set. Plus, there are practical issues: high inference cost, poor cross-model generalization, difficulty deploying large models locally, and closed-weight models being hard to integrate. Overall, this approach isn’t elegant or reliable.
+Failed attempt—got tricked by a bunch of soft-ad "tutorials"
+A (Somewhat) Successful Attempt – scikit-learn SVM
+Since online resources were useless, back to old-school alchemy.
+Scikit-learn, activate! Following its Roadmap , we can directly pick Linear SVC and Naive Bayes as good starting points for our classification task.
+(Whisper: this also matched my gut feeling—LLMs have detectable word-choice patterns; even a Naive Bayes classifier should pick them up. I just didn’t expect the signal to be this strong.)
+Data Generation
+Old-school alchemy traditional classifiers need labeled data—so we need human-written texts and confirmed LLM-generated texts for training.
+My approach: I pulled data I’d scraped in 2023 from a certain Ford-like and River-like platform, filtering for articles published between 2010–2022 (pre-ChatGPT). I only filtered out extremely low-engagement or very short pieces, then randomly sampled nearly 10,000 multi-thousand-character texts as human-written samples.
+Then, I used an LLM to generate chapter summaries of these texts, fed the summaries back into the LLM, and had it regenerate full articles. This gave me a roughly equal number of LLM-generated samples, diverse in genre and closely matching the original human content.
+In theory, at least. But LLM APIs are expensive, and I wasn’t about to spend thousands on a weekend project. So I got creative—and skirted the rules leveraged multiple low-cost or free API channels:
+Gemini : Used CLIProxyAPI to convert Antigravity/Gemini CLI quota into API access—just pay ~$20 for an AI Pro account
+Qwen : qwen-code lets you reverse-engineer the Qwen Plus API—free
+GLM-5 : Lucky timing—OpenRouter was offering free GLM-5 public beta (Pony Alpha)
+Kimi, Deepseek, Doubao, GLM-4.7 : Signed up during a promotional coding plan—$8.9 first month, API access unlocked
+Disclaimer: This is not a recommendation. These actions violate platform ToS and may get you banned. But the platforms are too busy with marketing hype to care, and I wasn’t about to pay full price.
+Many programming-focused LLM APIs strangely charge per call, but we can abuse optimize this by batching tasks into massive inputs, forcing the LLM to generate more content per call. And so…
+What do you mean I used over 300M Gemini tokens worth $2000 at full price?!
+Ultimately, I used gemini-3-flash to generate summaries, and seven different models ( gemini-3-pro , qwen-coder-plus , glm-5 , glm-4.7 , kimi-k2.5 , doubao-seed-code , deepseek-v3.2 ) to generate seven sets of LLM-generated samples.
+The generated files
+Training
+While I was halfway through data generation, I couldn’t wait and started training.
+I asked Claude to write the classifier code, and it naively dumped the entire raw text into the model—achieving a suspicious 99.45% accuracy… Wait, really?
+Claude’s useless. I’ll do it myself. For training, I split all texts into sentences using Chinese punctuation, cleaned non-Chinese/English characters, then applied scikit-learn’s TF-IDF → LinearSVC . After cleaning up some noise, sentence-level classification still hit ~85% accuracy!
+Even this buggy first version hit 88% accuracy (later optimized to 85%)
+Individual sentences carry limited info, but 85% accuracy per sentence means that for a longer article, we can be highly confident in judging whether it’s AI-generated. This performance far exceeded my expectations. Old-school ML still slaps—way better than those dumb online tools that just ask an LLM, “Hey, is this text AI-generated?”
+After finishing all data, I tried training an 8-class model (human + 7 AIs), but the LLMs seem too similar—probably distilled from each other—so classification was messy, with only ~50% accuracy.
+Multi-class results—apparently not separable. Maybe my model sucks, but whatever, not important
+Eventually, I trained seven separate binary classifiers and used majority voting: a sentence is flagged as AI if ≥2 models detect it.
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+loaded 8536 samples
+train chapter size: 6820, test chapter size: 1716
+[gemini] Train: 917,374 Test: 228,051
+[gemini] full TF-IDF + SVC ...
+3,336,446 features -> acc=0.8809 f1=0.8082 [tn=143688 fp=10650 fn=16503 tp=57210]
+[qwen] Train: 1,315,338 Test: 328,636
+[qwen] full TF-IDF + SVC ...
+3,989,603 features -> acc=0.8911 f1=0.8974 [tn=136293 fp=18045 fn=17739 tp=156559]
+[pony] Train: 1,128,044 Test: 278,663
+[pony] full TF-IDF + SVC ...
+3,688,143 features -> acc=0.8493 f1=0.8286 [tn=135085 fp=19253 fn=22755 tp=101570]
+[kimi25] Train: 1,088,007 Test: 269,567
+[kimi25] full TF-IDF + SVC ...
+3,976,027 features -> acc=0.8721 f1=0.8473 [tn=139390 fp=14948 fn=19534 tp=95695]
+[glm47] Train: 1,124,430 Test: 279,109
+[glm47] full TF-IDF + SVC ...
+3,980,772 features -> acc=0.8436 f1=0.8222 [tn=134461 fp=19877 fn=23786 tp=100985]
+[doubao] Train: 1,063,395 Test: 264,121
+[doubao] full TF-IDF + SVC ...
+4,243,728 features -> acc=0.8940 f1=0.8700 [tn=142420 fp=11918 fn=16089 tp=93694]
+[deepseekv32] Train: 1,176,294 Test: 289,042
+[deepseekv32] full TF-IDF + SVC ...
+4,361,691 features -> acc=0.8529 f1=0.8403 [tn=134625 fp=19713 fn=22819 tp=111885]
+=====================================
+SUMMARY
+=====================================
+model s1 acc s1 f1
+gemini 0.8809 0.8082
+qwen 0.8911 0.8974
+pony 0.8493 0.8286
+kimi25 0.8721 0.8473
+glm47 0.8436 0.8222
+doubao 0.8940 0.8700
+deepseekv32 0.8529 0.8403
+All models achieved over 85% accuracy and over 80% F1—pretty solid! I also noticed that AI-generated texts were often flagged by multiple models, so voting made perfect sense.
+I tried MultinomialNB and SGDClassifier , but accuracy dropped slightly. BERT gave a minor boost but required too much GPU time—discarded. Even tested AutoGluon , which somehow managed only 53% binary accuracy. Won’t dive into those.
+JS Implementation for Web Demo
+At this point, I could’ve just published the repo and called it a day. But launching Python every time is way too inconvenient. I could’ve hosted a Python API, but that means server maintenance—violates my strict Serverless philosophy.
+My original plan: export model to ONNX, run inference via ONNX Web Runtime in Wasm. But when I asked my silicon servant Claude to help, I didn’t specify clearly—and it went off-script, trimming and exporting the model as a JSON… then implemented TF-IDF + SVM entirely in JavaScript for browser inference.
+Hmm… actually not a bad idea. I tested it on a 1-million-character text—it took about 10 seconds on my machine, acceptable. For typical few-thousand-character inputs, it’s instant.
+Fine, since this is just a demo, and the JS approach is more transparent, I’ll keep this slightly silly implementation. (Blame Claude, not me.)
+As for accuracy: I tested different feature limits. Ultimately prioritized performance and kept 500k features. Stored as JSON, it’s a bloated 107MB (though gzipped server-side, it’s ~38MB). Smaller versions (50k–80k) only lost 3–4% accuracy, but final AI detection rates varied significantly—especially on human texts, with ±50% relative differences, leading to false positives. So I stuck with 500k.
+Final accuracy drop: ~1%, as shown below:
+10
+11
+12
+13
+14
+============================================================
+SUMMARY top-500,000 C=1.0
+============================================================
+model s1 acc s2 acc Δacc s1 f1 s2 f1 Δf1
+gemini 0.8809 0.8721 -0.0088 0.8082 0.7986 -0.0096
+qwen 0.8911 0.8819 -0.0092 0.8974 0.8886 -0.0088
+pony 0.8493 0.8383 -0.0109 0.8286 0.8173 -0.0113
+kimi25 0.8721 0.8623 -0.0098 0.8473 0.8376 -0.0097
+glm47 0.8436 0.8311 -0.0125 0.8222 0.8097 -0.0125
+doubao 0.8940 0.8869 -0.0071 0.8700 0.8624 -0.0076
+deepseekv32 0.8529 0.8419 -0.0110 0.8403 0.8291 -0.0112
+AVG 0.8592 0.8348
+MIN acc: 0.8311
+============================================================
+Testing Performance
+All tests below use the pruned web version, which should perform similarly to the full joblib models.
+Current logic: split input text into sentences, clean and classify using all 7 binary models. If ≥2 models flag a sentence, it’s marked as suspected AI and highlighted. Final AI score is the proportion of flagged characters. Classification:
+<50%: Human
+50–70%: Maybe Human
+70%: Maybe AI
+First, test detection rate on common models like Doubao and Deepseek—both were in training data. Prompt: write me a 3000-word story . Easily caught:
+Deepseek V3.2: 78.4%
+Doubao Seed Code: 93.0%
+Now test on unseen models—how’s generalization?
+Claude Sonnet 4.6: 71.9%
+GPT 5.2: 73.3%
+I tested several other models not in training (MiMo-V2, Doubao-Seed-2.0, GPT-4o)—all detected at ~70%, some even >90%. Solid.
+Also tested more complex prompts—e.g., feeding 20 chapters of human-written text and asking the LLM to mimic style and continue. Detection rate dipped slightly to 67.8% (but remember, we trained on complex prompts too). Results not shown due to space.
+Then I picked 10 completed web novels (pre-2022) from my subscription list—diverse genres, authors, eras, and likely not in training data.
+Their AI detection rates: 22.7%, 24.2%, 25.0%, 24.5%, 19.0%, 13.7%, 29.1%, 4.9%, 27.3%, 19.2%—all under 30%. I also sampled random Lofter fanfics; since they’re more casual, detection rates were often below 10%. But when I fed in texts I suspected were AI-generated, detection spiked to 83.4%, strongly suggesting LLM use without disclosure.
+[Mar 5, 2026 Update] For more rigorous testing, I randomly sampled 10,000 high-engagement (views >5000), long-form (word count >2000) fanfics from Lofter, all posted before 2022. Their AI detection rate distribution (using 7-model voting, ≥2 votes):
+0-5%:313 | 5-10%:1945 | 10-15%:3016 | 15-20%:2033 | 20-25%:1355 | 25-30%:594 | 30-35%:492 | 35-40%:123 | 40-45%:34 | 45-50%:62 | 50-55%:24 | 55-60%:5 | 60-65%:3 | 65-70%:1
+Using 60% as threshold → false positive rate: 0.04%
+Using 70% → false positive rate: <0.01% (effectively zero)
+The four texts above 60% were all collection indexes, not actual stories—flagged due to excessive links.
+Even at 50% threshold, false positive rate is only 0.33% .
+Then, I scraped all articles from Lofter Android’s top 20 trending tags (weekly榜单), filtered by length, and ran detection:
+0-5%:27 | 5-10%:138 | 10-15%:231 | 15-20%:245 | 20-25%:238 | 25-30%:137 | 30-35%:112 | 35-40%:87 | 40-45%:116 | 45-50%:112 | 50-55%:118 | 55-60%:157 | 60-65%:118 | 65-70%:109 | 70-75%:75 | 75-80%:56 | 80-85%:28 | 85-90%:15 | 90-95%:10
+32.22% of articles scored >50% AI —likely partially or fully AI-generated… Is there any human left?? Moreover, not a single one has proactively declared AI-generated content.
+“Age of Dharma’s decline, , ,” —a friend in the group
+Attack and Defense – Bypassing Detection(?)
+Alright, we’ve built an AIGC detector. Time to build an anti-detector now.
+Nope, kidding. I’m not that bored.
+But let’s test some common anti-AIGC detection tricks:
+Classic Translation Method
+Google Translate roundtrip (CN→EN→CN): 89.9% → 85.0%
+Youdao Translate (CN→EN→CN): 89.9% → 79.2%
+Sogou Translate (CN→EN→CN): 89.9% → 86.0%
+Slight drop, but still clearly flagged.
+LLM Prompt Method
+Use “magic” prompts to make LLM output less “AI-like”—sounds ridiculous from the start!
+Tested one-line prompt: Rewrite the above article to minimize AI flavor : 89.9% → 83.0%
+Also tried more complex prompts : 89.9% → 79.3%
+Slight improvement, but still meaningless in practice.
+This detection method is way too robust! (flag
+If I really wanted to bypass it, my only ideas would be fine-tuning an LLM on massive human text, or building a huge rule-based system to surgically disrupt SVM-matched features. But that’s beyond this article. Not sure if it’d even work. Or maybe there are better ways—left as an exercise for the reader.
+Epilogue
+Now, time for closing rambling.
+I honestly didn’t expect this classification task to be so easy—simple enough that a scikit-learn “Hello World” script, with minimal iteration and some hardcoded rules, could produce a fairly robust and accurate detector. Most of the effort was just waiting for LLMs to generate data…
+Ambitious readers could follow this approach to train detectors for other domains—say, academic paper AIGC detection. Add a flashy frontend, and you’ve got a tool you can sell to desperate college students. If you make money, don’t forget to donate a little.
+Another idea: detect AI-generated images. But with Stable Diffusion and easy LoRA fine-tuning, visual styles are far more diverse than text—this task would be much harder. And after writing this, my three-minute enthusiasm is burned out. Maybe next time.
+Lastly, a few words on AI-generated content: I don’t accept AI-generated entertainment as legitimate creative work. Just like AI coding tools produce bloated, unmaintainable code, AI-generated text, images, and audio may seem decent at first glance, but fall apart on closer inspection—repetitive, shallow, and so predictable that even word frequency stats can catch them. This pattern is fundamentally unsuitable for real creation, and as a reader, I’m deeply unsatisfied. I’m starting to suspect LLMs’ so-called “creative writing” is just a bunch of post-training data being endlessly recombined and regurgitated.
+But then again, “the world should be” has never equaled “the world is.” While LLMs bring innovation and productivity gains, misuse and abuse are spreading relentlessly across every industry. And since LLMs are fine-tuned to exploit human perception, who knows whether they “understand” anything or just memorize patterns? After patching endless bugs like “which is bigger, 3.9 or 3.11” or “should I walk or drive 50m to a car wash,” can we really say the model understands the world?
+Everyone’s stuck in debates: What is LLM? How will it disrupt my industry? Where will AI take humanity? No one has answers.
+At least I’m glad I learned to code before the AI era. Otherwise, I might not realize how stupid today’s vibe-coded software really is. As for the future? Either generative AI smashes human social order to pieces, or the AI bubble bursts and memory becomes free. Either way, sounds fine to me, doesn’t it?
+This article is licensed under the CC BY-NC-SA 4.0 license.
+Author: lyc8503, Article link: https://blog.lyc8503.net/en/post/llm-classifier/
+If this article was helpful or interesting to you, consider buy me a coffee ¬_¬
+Feel free to comment in English below o/
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 97
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":17774,"paragraph_count":139,"sentence_count":144,"boilerplate_hits":0,"symbol_ratio":0.0221,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   一项研究探索使用经典机器学习方法（如逻辑回归、随机森林）检测大型语言模型生成的文本，在特定数据集上达到与深度学习模型相当的准确率。该方法计算成本更低，且对短文本和改写文本具有较强鲁棒性。研究还发现，基于字符级n-gram特征的模型在跨领域泛化上表现优于基于词级特征的模型。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   This article is currently an experimental machine translation and may contain errors.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   If anything is unclear, please refer to the original Chinese version.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   I am continuously working to improve the translation.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   TL;DR & Demo As of early 2026, mainstream LLM-generated text exhibits strong statistical patterns that can be effectively distinguished from human-written content using traditional machine learning models.
+
+6. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   I suspect this is how many so-called “AI plagiarism checkers” actually work under the hood.
+
+## business_elements
+
+- companies: Hacker News 热门（buzzing.cc 中文翻译）, Google, GitHub, Perplexity
+- products: ChatGPT, Gemini, gemini, Claude
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 2026, 8503, 85%, 2023, 2010, 2022, 10, 000 m
+- quotes: AI plagiarism checkers / tutorials / Hey, is this text AI-generated? / Age of Dharma’s decline, , , / Hello World
+
+## evidence_seed
+
+- company_actions: 一项研究探索使用经典机器学习方法（如逻辑回归、随机森林）检测大型语言模型生成的文本，在特定数据集上达到与深度学习模型相当的准确率。该方法计算成本更低，且对短文本和改写文本具有较强鲁棒性。研究还发现，基于字符级n-gram特征的模型在跨领域泛化上表现优于基于词级特征的模型。 / This article is currently an experimental machine translation and may contain errors. / If anything is unclear, please refer to the original Chinese version.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: user_feedback_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"利用经典机器学习检测LLM生成文本","discovery_summary":"一项研究探索使用经典机器学习方法（如逻辑回归、随机森林）检测大型语言模型生成的文本，在特定数据集上达到与深度学习模型相当的准确率。该方法计算成本更低，且对短文本和改写文本具有较强鲁棒性。研究还发现，基于字符级n-gram特征的模型在跨领域泛化上表现优于基于词级特征的模型。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://blog.lyc8503.net/en/post/llm-classifier","discovered_at":"2026-07-17T02:56:35.408Z","rank_on_page":98,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+一项研究探索使用经典机器学习方法（如逻辑回归、随机森林）检测大型语言模型生成的文本，在特定数据集上达到与深度学习模型相当的准确率。该方法计算成本更低，且对短文本和改写文本具有较强鲁棒性。研究还发现，基于字符级n-gram特征的模型在跨领域泛化上表现优于基于词级特征的模型。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

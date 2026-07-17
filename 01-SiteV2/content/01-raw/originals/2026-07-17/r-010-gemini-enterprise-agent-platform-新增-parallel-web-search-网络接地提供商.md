@@ -23,7 +23,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-07-16T00:00:00.000Z"
-collected_at: 2026-07-17T01:57:08.473Z
+collected_at: 2026-07-17T03:06:12.194Z
 language: mixed
 full_text_hash: bcda9beaa85265cb
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-010-gemini-enterprise-agent-platform-新增-parallel-web-search-网络接地提供商.md"
@@ -49,7 +49,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商","discovery_summary":"Google Cloud 与 Parallel Web Systems 合作，将 Parallel 的搜索基础设施作为新的网络接地提供商原生集成到 Gemini Enterprise Agent Platform 中。该集成使开发者能将 AI 智能体锚定在可验证的实时网络结果上，以提升企业工作流的事实准确性。用户还可编程提取、永久缓存并与其他大语言模型一起处理网络数据。","source_name":"Google Developers Blog（RSS）","origin_url":"https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search","discovered_at":"2026-07-17T01:46:58.990Z","rank_on_page":258,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商","discovery_summary":"Google Cloud 与 Parallel Web Systems 合作，将 Parallel 的搜索基础设施作为新的网络接地提供商原生集成到 Gemini Enterprise Agent Platform 中。该集成使开发者能将 AI 智能体锚定在可验证的实时网络结果上，以提升企业工作流的事实准确性。用户还可编程提取、永久缓存并与其他大语言模型一起处理网络数据。","source_name":"Google Developers Blog（RSS）","origin_url":"https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search","discovered_at":"2026-07-17T02:56:35.455Z","rank_on_page":271,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -60,7 +60,7 @@ content_hash: bcda9beaa85265cb
 semantic_hash: 0a4fcc19292f54aa
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-07-16T00:00:00.000Z"
-last_seen_at: 2026-07-17T01:57:08.473Z
+last_seen_at: 2026-07-17T03:06:12.194Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -75,7 +75,7 @@ missing_information: []
 key_excerpts: [{"type":"product_update","text":"Google Cloud 与 Parallel Web Systems 合作，将 Parallel 的搜索基础设施作为新的网络接地提供商原生集成到 Gemini Enterprise Agent Platform 中。该集成使开发者能将 AI 智能体锚定在可验证的实时网络结果上，以提升企业工作流的事实准确性。用户还可编程提取、永久缓存并与其他大语言模型一起处理网络数据。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Expanding Choice in Gemini Enterprise Agent Platform: Introducing Grounding with Parallel Web Search JULY 16, 2026 Guangsha Shi Senior Product Manager Share Facebook Twitter LinkedIn Mail Expanding Grounding Provider Choice: Partnership with Parallel Web Systems As generative AI evolves from simple chat interfaces to agents executing complex tasks like automated Know Your Customer (KYC) checks, catalog data enrichment, real-time news analysis, and corporate due diligence, the need for factual accuracy has never bee","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"product_update","text":"To give developers more flexibility in how they ground Gemini models to verifiable, real-time information, today, we are excited to announce that Parallel Web Systems is now a natively integrated web grounding provider on Gemini Enterprise Agent Platform.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Grounding with Parallel Web Search anchors Gemini models in high-quality, real-time web results.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"By providing exact citations to original sources, it ensures your agents act on information that's accurate and verifiable.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This capability is now available across Agent Platform: callable in the Gemini API , selectable in Agent Studio , and available to subscribe through Google Cloud Marketplace , with usage metered on your existing Google Cloud invoice.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
 fact_extraction_status: extracted_at_raw_ingestion
 fact_extraction_method: structured_key_excerpts_and_business_elements
-fact_extraction_completed_at: 2026-07-17T01:57:08.473Z
+fact_extraction_completed_at: 2026-07-17T03:06:12.194Z
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
@@ -295,7 +295,7 @@ JULY 9, 2026
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商","discovery_summary":"Google Cloud 与 Parallel Web Systems 合作，将 Parallel 的搜索基础设施作为新的网络接地提供商原生集成到 Gemini Enterprise Agent Platform 中。该集成使开发者能将 AI 智能体锚定在可验证的实时网络结果上，以提升企业工作流的事实准确性。用户还可编程提取、永久缓存并与其他大语言模型一起处理网络数据。","source_name":"Google Developers Blog（RSS）","origin_url":"https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search","discovered_at":"2026-07-17T01:46:58.990Z","rank_on_page":258,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商","discovery_summary":"Google Cloud 与 Parallel Web Systems 合作，将 Parallel 的搜索基础设施作为新的网络接地提供商原生集成到 Gemini Enterprise Agent Platform 中。该集成使开发者能将 AI 智能体锚定在可验证的实时网络结果上，以提升企业工作流的事实准确性。用户还可编程提取、永久缓存并与其他大语言模型一起处理网络数据。","source_name":"Google Developers Blog（RSS）","origin_url":"https://developers.googleblog.com/expanding-choice-in-gemini-enterprise-agent-platform-introducing-grounding-with-parallel-web-search","discovered_at":"2026-07-17T02:56:35.455Z","rank_on_page":271,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 
