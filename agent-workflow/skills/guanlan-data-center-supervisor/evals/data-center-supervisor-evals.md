@@ -6,3 +6,5 @@
 4. Pass when a failed integrity gate routes to the earliest source, claim, event, taxonomy, or projection owner without rerunning unrelated stages.
 5. Fail when RELATION-V2 links organizations that only co-occur in body context, uses a candidate endpoint, or lacks an accepted Event, Claim, or SourceArtifact reference.
 6. Pass when a historical reprojection reports its exact event-time and accepted-batch coverage and leaves missing dates explicit instead of inventing records.
+7. Pass when BACKFILL-V1 preserves task attempts across rebuilds and keeps discovery candidates outside canonical tables.
+8. Fail when a funding/deployment gap closes from search metadata, or when the absence of a company/product search result is recorded as a factual absence.

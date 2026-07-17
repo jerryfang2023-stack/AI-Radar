@@ -127,7 +127,7 @@ function safeArray(value) {
   return Array.isArray(value) ? value : [];
 }
 
-function buildEventRecords({ events, claims, rawDocuments, sourceArtifacts, entities, tagAssertions, facetAssertions, tagNames, facetNames }) {
+export function buildEventRecords({ events, claims, rawDocuments, sourceArtifacts, entities, tagAssertions, facetAssertions, tagNames, facetNames }) {
   const claimsById = new Map(claims.map((item) => [item.claim_id, item]));
   const rawById = new Map(rawDocuments.map((item) => [item.raw_id, item]));
   const sourceById = new Map(sourceArtifacts.map((item) => [item.source_artifact_id, item]));
@@ -381,7 +381,7 @@ function buildViewpoints(root, entityProfiles = []) {
   })).sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
 }
 
-function buildEntityCollections(service, eventsById) {
+export function buildEntityCollections(service, eventsById) {
   const nodeById = new Map(service.taxonomyNodes.map((item) => [item.id, item]));
   const nameById = new Map(service.profiles.map((item) => [item.id, item.name]));
   const productOwnerIds = new Map();

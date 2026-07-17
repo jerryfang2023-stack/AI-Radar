@@ -24,6 +24,7 @@ priority: current
 | Business Signals | V3 Raw / Pool / Card / graph / trend-candidate chain | Internal compatibility data only; no public page |
 | First-Line Viewpoints | Builders public viewpoints, translated and organized independently | Active frontstage |
 | Relationship data | RELATION-V2 typed endpoints backed by event, Claim, and source references only | Active factual data layer |
+| Targeted Backfill | BACKFILL-V1 recurring company/product sweeps and explicit funding/deployment fact-gap tasks | Active internal operations layer |
 | Trend / opportunity outputs | Downstream interpretation, excluded from V4 core | Legacy page compatibility |
 | Dashboard | Production-chain, source traceability, data quality, version governance, Skill Store, and release status | Active backend |
 
@@ -43,7 +44,7 @@ The V4 Data Center and Industry Reports sidebar in `context/frontstage-page-cont
 ## Asset Flow
 
 ```text
-Monitor / Search / Source discovery
+Daily monitor / BACKFILL-V1 targeted discovery
 -> SourceArtifact
 -> RawDocument
 -> Claim / Entity
@@ -62,6 +63,7 @@ Legacy page data remains isolated from the canonical flow. Page JSON cannot be u
 
 - `01-SiteV2/content/01-raw/`: daily Raw candidates and original materials.
 - `01-SiteV2/content/11-databases/data-center-v4/`: daily canonical V4 bundles.
+- `01-SiteV2/content/11-databases/targeted-backfill-v1/`: internal backfill queue and immutable discovery-run records; never a factual source.
 - `data-lake/tables/`: materialized V4 and legacy JSONL serving tables.
 - `01-SiteV2/site/data/data-center-v4/`: split frontstage indexes, details, entity profiles, taxonomy nodes, and manifest.
 - `01-SiteV2/content/02-pool/`: screened evidence pool.
