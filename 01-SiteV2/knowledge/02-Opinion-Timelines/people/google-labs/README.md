@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Google Labs"
-opinion_count: 14
-latest_date: 2026-07-01
+opinion_count: 15
+latest_date: 2026-07-16
 ---
 
 # Google Labs 观点时间线
-共 14 条观点，按人物 + 日期文件聚合。
+共 15 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-16](./2026-07-16.md)
 - [2026-07-01](./2026-07-01.md)
 - [2026-06-24](./2026-06-24.md)
 - [2026-06-10](./2026-06-10.md)
