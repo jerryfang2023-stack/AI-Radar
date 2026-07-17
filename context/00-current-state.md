@@ -72,6 +72,8 @@ Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.1.0, 
 - V4 canonical outputs cannot contain importance, value, opportunity, pain, trend maturity, recommendation, advice, or interview-priority fields.
 - Builders viewpoints are independent first-line viewpoints only.
 - Git-tracked daily V4 bundles are the canonical normalized dataset. DuckDB and JSONL are rebuildable serving tables.
+- Current and future V4 bundles persist source-backed `product_candidate` entities; the public Entity Index reads those persisted entities and does not infer products with a frontstage whitelist.
+- Historical bundles without product entities remain unchanged. `npm run backfill:data-center` rebuilds the full canonical bundle and must not be used for a product-only migration; historical product migration requires a dedicated, dry-run-validated projection migrator.
 
 ## Current Automation Goal
 

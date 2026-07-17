@@ -679,6 +679,24 @@ test("integrity gate rejects duplicate stable identifiers", () => {
   assert.ok(result.failures.some((failure) => failure.includes("duplicate raw_id")));
 });
 
+test("daily workflow commits compatibility outputs only after the compatibility gate succeeds", () => {
+  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
+  const compatibilityBlock = workflow.indexOf('if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then');
+
+  assert.ok(compatibilityBlock > 0);
+  for (const asset of [
+    "business-signals-frontstage-gate.md",
+    "business-signals-frontstage-gate.json",
+    "trend-candidate-decision.md",
+    "no-trend-candidate-decision.md",
+    "v3-data-observation-desk.json",
+    "intelligence-graph-index.json"
+  ]) {
+    assert.ok(workflow.indexOf(asset, compatibilityBlock) > compatibilityBlock, `${asset} must be staged inside the compatibility-success block`);
+  }
+  assert.match(workflow, /pre-commit-gate\.outcome \}\}" = "success" \] && \[ "\$\{\{ steps\.business-frontstage-data\.outcome/iu);
+});
+
 test("Chinese related-article tails never enter accepted claims", () => {
   const bundle = buildBundle([
     entry(

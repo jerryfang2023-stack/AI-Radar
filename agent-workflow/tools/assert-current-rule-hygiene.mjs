@@ -91,6 +91,18 @@ const rawToCardForbiddenPatterns = [
   { pattern: /Pool\/Core\/Card/iu, term: "Pool/Core/Card" },
 ];
 
+const v4PublicRuleFiles = [
+  "context/01-product-map.md",
+  "context/version-ledger.md",
+];
+
+const v4PublicForbiddenPatterns = [
+  { pattern: /Frozen compatibility frontstage/iu, term: "Frozen compatibility frontstage" },
+  { pattern: /Its public page presents/iu, term: "Its public page presents" },
+  { pattern: /A Card can enter the frontstage/iu, term: "A Card can enter the frontstage" },
+  { pattern: /TAG-V3 owners/iu, term: "TAG-V3 owners" },
+];
+
 const activeRoots = [
   "AGENTS.md",
   "context",
@@ -230,7 +242,9 @@ function main() {
   const workflowHits = rawToCardRuleScanFiles
     .filter((file) => [".yml", ".yaml"].includes(path.extname(file)))
     .flatMap(workflowRawToCardHits);
-  const issues = [...retiredHits, ...retiredDataHits, ...mojibakeHits, ...rawToCardRuleHits, ...workflowHits];
+  const v4PublicRuleHits = v4PublicRuleFiles.flatMap(filesUnder)
+    .flatMap((file) => scanFilePatterns(file, v4PublicForbiddenPatterns, "v4_public_rule_conflict"));
+  const issues = [...retiredHits, ...retiredDataHits, ...mojibakeHits, ...rawToCardRuleHits, ...workflowHits, ...v4PublicRuleHits];
   const result = {
     ok: issues.length === 0,
     date,

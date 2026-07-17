@@ -52,8 +52,15 @@ Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is th
 - Missing fields remain empty and are listed. Conflicts remain visible.
 - Technical Tags are evidence assertions on accepted Claims and never determine eligibility, ranking, relationships, or truth.
 - Product form, application scenario, industry, deployment model, and target user are evidence-backed structured Facets; they must not be duplicated into the technical Tag namespace.
+- Named products are persisted as source-backed `product_candidate` Entities. Public pages may read persisted product entities only and must not recreate products through page-specific inference or a manual whitelist.
 - FDE and hardware records cannot be created directly from source artifacts or page caches.
 - Importance, opportunity, trend maturity, business meaning, why-watch, recommendations, and advice are forbidden in V4 canonical outputs.
+
+## Historical migration boundary
+
+- Current and future daily builds use the persisted product-entity path.
+- Historical bundles that predate product entities remain immutable until a dedicated product-only migrator passes dry-run parity checks.
+- `npm run backfill:data-center` rebuilds Claims, Entities, events, projections, and related bundle assets. It must not be used to fill only historical product entities.
 
 ## Daily execution
 
