@@ -1,0 +1,194 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-159
+title: "Google 提出模块化提示词转译方案，构建可扩展 AI 智能体"
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: ""
+canonical_url: ""
+source_name: "Google Developers Blog（RSS）"
+source_type: official
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: official_index_or_directory
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: true
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-07-17T04:40:17.506Z
+language: mixed
+full_text_hash: 9d1077075c7e4293
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-159-google-提出模块化提示词转译方案-构建可扩展-ai-智能体.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-159-google-提出模块化提示词转译方案-构建可扩展-ai-智能体.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: no-url-summary-only
+extraction_quality: failed
+extraction_method: "no_url_summary_fallback"
+readability_score: 0
+extractor_diagnostics: {"method":"no_url_summary_fallback"}
+has_full_text: false
+content_length: 138
+fetch_error: ""
+evidence_strength: blocked
+raw_qc_decision: block
+raw_qc_downstream_use: not_allowed
+degradation_reasons: ["index_only_or_directory_page","missing_full_text","missing_snapshot"]
+evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9d1077075c7e4293","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+source_volatility: medium
+community_name: ""
+capture_scope: summary_only
+visible_range: "采集通道提供的标题与摘要"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Google 提出模块化提示词转译方案，构建可扩展 AI 智能体","discovery_summary":"Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。","source_name":"Google Developers Blog（RSS）","origin_url":"","discovered_at":"2026-07-17T04:31:43.237Z","rank_on_page":26,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "summary_only"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e3b0c44298fc1c14
+content_hash: 9d1077075c7e4293
+semantic_hash: c3c7632d05fcd3d0
+duplicate_of: ""
+first_seen_at: "2026-07-17T04:40:17.506Z"
+last_seen_at: 2026-07-17T04:40:17.506Z
+update_detected: false
+raw_status: ignored
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "homepage_or_directory_observation"
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"supporting commercial context only","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":2,"case_richness":2,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["Google Developers Blog（RSS）","Google"],"products":[],"people":[],"industries":[],"roles":[],"workflows":["部署 / 集成交付"],"business_actions":[],"affected_departments":[],"numbers":[],"quotes":[]}
+evidence_seed: {"company_actions":["Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。","Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。","该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","疑似官网首页、产品目录或导航页，只能索引留存","没有具体客户或真实企业案例","没有成本、收入、采用率或市场规模数字","没有可用全文快照"]
+key_excerpts: [{"type":"product_update","text":"Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-17T04:40:17.506Z
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Google 提出模块化提示词转译方案，构建可扩展 AI 智能体
+
+## clean_text
+
+Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。
+
+## full_text
+
+Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。
+
+## extraction_diagnostics
+
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- fetch_status: no-url-summary-only
+- extraction_quality: failed
+- diagnostics: {"method":"no_url_summary_fallback"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=medium
+   Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。
+
+3. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=medium
+   该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。
+
+## business_elements
+
+- companies: Google Developers Blog（RSS）, Google
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 部署 / 集成交付
+- business_actions: 暂无公开信息
+- affected_departments: 暂无公开信息
+- numbers: 暂无公开信息
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。 / Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。 / 该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: supporting commercial context only
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 2
+- case_richness: 2
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 疑似官网首页、产品目录或导航页，只能索引留存
+- 没有具体客户或真实企业案例
+- 没有成本、收入、采用率或市场规模数字
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- visible_range: 采集通道提供的标题与摘要
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- discovery_record: {"discovery_title":"Google 提出模块化提示词转译方案，构建可扩展 AI 智能体","discovery_summary":"Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。","source_name":"Google Developers Blog（RSS）","origin_url":"","discovered_at":"2026-07-17T04:31:43.237Z","rank_on_page":26,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Google 提出将系统提示词模块化为可复用的“技能文件”，通过转译器进行静态验证并在构建时捕获缺失依赖，从而解决单体提示词导致的扩展瓶颈与运行时错误。该方法将提示词生成集成到 CI/CD 流水线中，防止代码漂移，并允许智能体通过标准 pull request 自主更新逻辑。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

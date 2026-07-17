@@ -1,0 +1,252 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-063
+title: "前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab 发布 Inkling 多模态模型，975B 参数开源"
+title_zh: "前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab 发布 Inkling 多模态模型，975B 参数开源"
+title_translation_status: not_required
+title_translation_method: source_title
+original_url: "https://www.ithome.com/0/977/504.htm"
+canonical_url: "https://ithome.com/0/977/504.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-16T06:49:12.000Z"
+collected_at: 2026-07-17T04:40:17.180Z
+language: mixed
+full_text_hash: c9566bfab4dd7508
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-063-前-openai-cto-穆拉蒂创立的-thinking-machines-lab-发布-inkling-多模态模型-975b-参数开源.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-063-前-openai-cto-穆拉蒂创立的-thinking-machines-lab-发布-inkling-多模态模型-975b-参数开源.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 70
+extractor_diagnostics: {"readability_score":70,"text_length":1978,"paragraph_count":20,"sentence_count":17,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1978
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c9566bfab4dd7508","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab 发布 Inkling 多模态模型，975B 参数开源","discovery_summary":"前 OpenAI 首席技术官米拉·穆拉蒂创立的思维机器实验室（Thinking Machines Lab）推出首个从零训练的多模态模型 Inkling，采用 MoE 架构，总参数 975B、激活参数 41B，最长上下文 1M tokens，已在 Hugging Face 和自有 API Thinker 开放权重。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/977/504.htm","discovered_at":"2026-07-17T04:31:45.364Z","rank_on_page":327,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0cde6b9d3e72f67b
+content_hash: c9566bfab4dd7508
+semantic_hash: 0d19f5c000453396
+duplicate_of: ""
+first_seen_at: "2026-07-16T06:49:12.000Z"
+last_seen_at: 2026-07-17T04:40:17.180Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["IT之家（RSS）","OpenAI"],"products":["MCP","Claude","Gemini"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人"],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["975B","41B","1M","7","16","45 万","5.2","62.1%"],"quotes":[]}
+evidence_seed: {"company_actions":["IT之家 7 月 16 日消息，由前 OpenAI 首席技术官米拉 · 穆拉蒂（Mira Murati）创立的思维机器实验室（Thinking Machines Lab）最新推出 Inkling 多模态 AI 模型， 被认为是美国最强的开源模型。","科技媒体 venturebeat 指出，在以中国 AI 主导的开源模型中，Inkling 模型表现虽然不错，但在推理和编程方面依然存在差距： GLM 5."],"case_details":["前 OpenAI 首席技术官米拉·穆拉蒂创立的思维机器实验室（Thinking Machines Lab）推出首个从零训练的多模态模型 Inkling，采用 MoE 架构，总参数 975B、激活参数 41B，最长上下文 1M tokens，已在 Hugging Face 和自有 API Thinker 开放权重。","官方公告称，Inkling 是该公司首个从零训练模型，采用混合专家（MoE）架构，总参数 975B、激活参数 41B，最长上下文 1M tokens。"],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":["IT之家注：思维机器实验室由 OpenAI 前首席技术官 Mira Murati 牵头创立，团队阵容极为豪华，约三分之二的核心成员均来自 OpenAI，曾在该机构领导过前沿的研究、产品与安全工作。"]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"前 OpenAI 首席技术官米拉·穆拉蒂创立的思维机器实验室（Thinking Machines Lab）推出首个从零训练的多模态模型 Inkling，采用 MoE 架构，总参数 975B、激活参数 41B，最长上下文 1M tokens，已在 Hugging Face 和自有 API Thinker 开放权重。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 16 日消息，由前 OpenAI 首席技术官米拉 · 穆拉蒂（Mira Murati）创立的思维机器实验室（Thinking Machines Lab）最新推出 Inkling 多模态 AI 模型， 被认为是美国最强的开源模型。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"IT之家注：思维机器实验室由 OpenAI 前首席技术官 Mira Murati 牵头创立，团队阵容极为豪华，约三分之二的核心成员均来自 OpenAI，曾在该机构领导过前沿的研究、产品与安全工作。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"官方公告称，Inkling 是该公司首个从零训练模型，采用混合专家（MoE）架构，总参数 975B、激活参数 41B，最长上下文 1M tokens。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"number","text":"在预训练环节，该模型覆盖 45 万亿 Tokens，数据类型包括文本、图像、音频和视频，官方目前已经在 Hugging Face 以及该公司自有 API Thinker 上开放权重。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"科技媒体 venturebeat 指出，在以中国 AI 主导的开源模型中，Inkling 模型表现虽然不错，但在推理和编程方面依然存在差距： GLM 5.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-17T04:40:17.180Z
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# 前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab 发布 Inkling 多模态模型，975B 参数开源
+
+## clean_text
+
+IT之家 7 月 16 日消息，由前 OpenAI 首席技术官米拉 · 穆拉蒂（Mira Murati）创立的思维机器实验室（Thinking Machines Lab）最新推出 Inkling 多模态 AI 模型， 被认为是美国最强的开源模型。
+IT之家注：思维机器实验室由 OpenAI 前首席技术官 Mira Murati 牵头创立，团队阵容极为豪华，约三分之二的核心成员均来自 OpenAI，曾在该机构领导过前沿的研究、产品与安全工作。
+官方公告称，Inkling 是该公司首个从零训练模型，采用混合专家（MoE）架构，总参数 975B、激活参数 41B，最长上下文 1M tokens。
+在预训练环节，该模型覆盖 45 万亿 Tokens，数据类型包括文本、图像、音频和视频，官方目前已经在 Hugging Face 以及该公司自有 API Thinker 上开放权重。
+科技媒体 venturebeat 指出，在以中国 AI 主导的开源模型中，Inkling 模型表现虽然不错，但在推理和编程方面依然存在差距：
+GLM 5.2：
+GLM 5.2 在纯编码、智能体推理和复杂推理任务上均优于 Inkling。在 SWEBench Pro（公开）测试中，GLM 5.2 的得分为 62.1%，而 Inkling 为 54.3%；
+在 Terminal Bench 2.1 测试中，GLM 5.2 的得分更是高达 82.7%，远超 Inkling 的 63.8%。
+GLM 5.2 在纯文本推理方面也表现出色，在 HLE（纯文本）测试中得分为 40.1%，而 Inkling 仅为 30.0%。
+DeepSeek V4 Pro
+在多个严格的编码和事实性测试领域，DeepSeek 保持优势，在 SWEBench Verified（80.6% 对 77.6%）和 SimpleQA Verified（57.0% 对 43.9%）测试中均击败了 Inkling。
+然而，在数学问题求解方面，Inkling 成功超越了 DeepSeek V4 Pro，在 AIME 2026 测试中取得了 97.1% 的成绩，而 DeepSeek 的成绩为 96.7%。
+Kimi K2.6：
+该模型在多项技术基准测试中均优于 Inkling，在 GPQA Diamond（91.1% 对 87.9%）、BrowseComp（83.2% 对 77.1%）和带工具的 HLE（54.0% 对 46.0%）测试中得分更高。
+然而，Inkling 在通用聊天指令跟踪方面表现更佳，在 IFBench 测试中得分为 79.8%，而 Kimi K2.6 为 76.0%。
+在与美国本土开源对手的较量中，Inkling 展现出了强大的实力，并且大部分占据优势：
+Nemotron 3 Ultra：
+在推理和编码方面，Inkling 的表现始终更为优秀。Inkling 在 AIME 2026 测试中获得 97.1% 的分数，在 SWEBench Verified 测试中获得 77.6% 的分数，分别高于 Nemotron 的 94.2% 和 70.7%。
+此外，Inkling 在智能体工作流程方面也遥遥领先，在 MCP Atlas 测试中获得 74.1% 的分数，而 Nemotron 仅为 44.7%。
+和闭源模型对比：
+与 Claude Fable 5、GPT 5.6 Sol 和 Gemini 3.1 Pro 等闭源巨头相比，Inkling 在极限推理和软件工程自主性方面落后，但在多模态方面仍然具有很强的竞争力。
+编码与推理：
+封闭模型保持绝对优势。Claude Fable 5（最高等级）在 SWEBench Verified 测试中得分高达 95.0%，在 HLE（仅文本）测试中得分 53.3%，远超 Inkling 的 77.6% 和 30.0%。GPT 5.6 Sol 在 Terminal Bench 2.1 测试中以 89.5 分遥遥领先，轻松超越 Inkling 的 63.8 分。
+原生多模态处理：
+Inkling 的原生视觉和音频处理能力表现出色。在 MMMU Pro（标准 10）视觉基准测试中，Inkling 的得分为 73.3%，具有竞争力，但略逊于 Claude Fable 5 的 84.2% 和 GPT 5.6 Sol 的 83.0%。
+在音频处理方面，Inkling 在 MMAU 测试中取得了令人瞩目的 77.2% 的成绩，与 Gemini 3.1 Pro 的 82.5% 差距不大。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 16 日消息，由前 OpenAI 首席技术官米拉 · 穆拉蒂（Mira Murati）创立的思维机器实验室（Thinking Machines Lab）最新推出 Inkling 多模态 AI 模型， 被认为是美国最强的开源模型。
+IT之家注：思维机器实验室由 OpenAI 前首席技术官 Mira Murati 牵头创立，团队阵容极为豪华，约三分之二的核心成员均来自 OpenAI，曾在该机构领导过前沿的研究、产品与安全工作。
+官方公告称，Inkling 是该公司首个从零训练模型，采用混合专家（MoE）架构，总参数 975B、激活参数 41B，最长上下文 1M tokens。
+在预训练环节，该模型覆盖 45 万亿 Tokens，数据类型包括文本、图像、音频和视频，官方目前已经在 Hugging Face 以及该公司自有 API Thinker 上开放权重。
+科技媒体 venturebeat 指出，在以中国 AI 主导的开源模型中，Inkling 模型表现虽然不错，但在推理和编程方面依然存在差距：
+GLM 5.2：
+GLM 5.2 在纯编码、智能体推理和复杂推理任务上均优于 Inkling。在 SWEBench Pro（公开）测试中，GLM 5.2 的得分为 62.1%，而 Inkling 为 54.3%；
+在 Terminal Bench 2.1 测试中，GLM 5.2 的得分更是高达 82.7%，远超 Inkling 的 63.8%。
+GLM 5.2 在纯文本推理方面也表现出色，在 HLE（纯文本）测试中得分为 40.1%，而 Inkling 仅为 30.0%。
+DeepSeek V4 Pro
+在多个严格的编码和事实性测试领域，DeepSeek 保持优势，在 SWEBench Verified（80.6% 对 77.6%）和 SimpleQA Verified（57.0% 对 43.9%）测试中均击败了 Inkling。
+然而，在数学问题求解方面，Inkling 成功超越了 DeepSeek V4 Pro，在 AIME 2026 测试中取得了 97.1% 的成绩，而 DeepSeek 的成绩为 96.7%。
+Kimi K2.6：
+该模型在多项技术基准测试中均优于 Inkling，在 GPQA Diamond（91.1% 对 87.9%）、BrowseComp（83.2% 对 77.1%）和带工具的 HLE（54.0% 对 46.0%）测试中得分更高。
+然而，Inkling 在通用聊天指令跟踪方面表现更佳，在 IFBench 测试中得分为 79.8%，而 Kimi K2.6 为 76.0%。
+在与美国本土开源对手的较量中，Inkling 展现出了强大的实力，并且大部分占据优势：
+Nemotron 3 Ultra：
+在推理和编码方面，Inkling 的表现始终更为优秀。Inkling 在 AIME 2026 测试中获得 97.1% 的分数，在 SWEBench Verified 测试中获得 77.6% 的分数，分别高于 Nemotron 的 94.2% 和 70.7%。
+此外，Inkling 在智能体工作流程方面也遥遥领先，在 MCP Atlas 测试中获得 74.1% 的分数，而 Nemotron 仅为 44.7%。
+和闭源模型对比：
+与 Claude Fable 5、GPT 5.6 Sol 和 Gemini 3.1 Pro 等闭源巨头相比，Inkling 在极限推理和软件工程自主性方面落后，但在多模态方面仍然具有很强的竞争力。
+编码与推理：
+封闭模型保持绝对优势。Claude Fable 5（最高等级）在 SWEBench Verified 测试中得分高达 95.0%，在 HLE（仅文本）测试中得分 53.3%，远超 Inkling 的 77.6% 和 30.0%。GPT 5.6 Sol 在 Terminal Bench 2.1 测试中以 89.5 分遥遥领先，轻松超越 Inkling 的 63.8 分。
+原生多模态处理：
+Inkling 的原生视觉和音频处理能力表现出色。在 MMMU Pro（标准 10）视觉基准测试中，Inkling 的得分为 73.3%，具有竞争力，但略逊于 Claude Fable 5 的 84.2% 和 GPT 5.6 Sol 的 83.0%。
+在音频处理方面，Inkling 在 MMAU 测试中取得了令人瞩目的 77.2% 的成绩，与 Gemini 3.1 Pro 的 82.5% 差距不大。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 70
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":70,"text_length":1978,"paragraph_count":20,"sentence_count":17,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   前 OpenAI 首席技术官米拉·穆拉蒂创立的思维机器实验室（Thinking Machines Lab）推出首个从零训练的多模态模型 Inkling，采用 MoE 架构，总参数 975B、激活参数 41B，最长上下文 1M tokens，已在 Hugging Face 和自有 API Thinker 开放权重。
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   IT之家 7 月 16 日消息，由前 OpenAI 首席技术官米拉 · 穆拉蒂（Mira Murati）创立的思维机器实验室（Thinking Machines Lab）最新推出 Inkling 多模态 AI 模型， 被认为是美国最强的开源模型。
+
+3. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=medium
+   IT之家注：思维机器实验室由 OpenAI 前首席技术官 Mira Murati 牵头创立，团队阵容极为豪华，约三分之二的核心成员均来自 OpenAI，曾在该机构领导过前沿的研究、产品与安全工作。
+
+4. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   官方公告称，Inkling 是该公司首个从零训练模型，采用混合专家（MoE）架构，总参数 975B、激活参数 41B，最长上下文 1M tokens。
+
+5. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   在预训练环节，该模型覆盖 45 万亿 Tokens，数据类型包括文本、图像、音频和视频，官方目前已经在 Hugging Face 以及该公司自有 API Thinker 上开放权重。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   科技媒体 venturebeat 指出，在以中国 AI 主导的开源模型中，Inkling 模型表现虽然不错，但在推理和编程方面依然存在差距： GLM 5.
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI
+- products: MCP, Claude, Gemini
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 975B, 41B, 1M, 7, 16, 45 万, 5.2, 62.1%
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: IT之家 7 月 16 日消息，由前 OpenAI 首席技术官米拉 · 穆拉蒂（Mira Murati）创立的思维机器实验室（Thinking Machines Lab）最新推出 Inkling 多模态 AI 模型， 被认为是美国最强的开源模型。 / 科技媒体 venturebeat 指出，在以中国 AI 主导的开源模型中，Inkling 模型表现虽然不错，但在推理和编程方面依然存在差距： GLM 5.
+- case_details: 前 OpenAI 首席技术官米拉·穆拉蒂创立的思维机器实验室（Thinking Machines Lab）推出首个从零训练的多模态模型 Inkling，采用 MoE 架构，总参数 975B、激活参数 41B，最长上下文 1M tokens，已在 Hugging Face 和自有 API Thinker 开放权重。 / 官方公告称，Inkling 是该公司首个从零训练模型，采用混合专家（MoE）架构，总参数 975B、激活参数 41B，最长上下文 1M tokens。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: IT之家注：思维机器实验室由 OpenAI 前首席技术官 Mira Murati 牵头创立，团队阵容极为豪华，约三分之二的核心成员均来自 OpenAI，曾在该机构领导过前沿的研究、产品与安全工作。
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"前 OpenAI CTO 穆拉蒂创立的 Thinking Machines Lab 发布 Inkling 多模态模型，975B 参数开源","discovery_summary":"前 OpenAI 首席技术官米拉·穆拉蒂创立的思维机器实验室（Thinking Machines Lab）推出首个从零训练的多模态模型 Inkling，采用 MoE 架构，总参数 975B、激活参数 41B，最长上下文 1M tokens，已在 Hugging Face 和自有 API Thinker 开放权重。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/977/504.htm","discovered_at":"2026-07-17T04:31:45.364Z","rank_on_page":327,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+前 OpenAI 首席技术官米拉·穆拉蒂创立的思维机器实验室（Thinking Machines Lab）推出首个从零训练的多模态模型 Inkling，采用 MoE 架构，总参数 975B、激活参数 41B，最长上下文 1M tokens，已在 Hugging Face 和自有 API Thinker 开放权重。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
