@@ -16,8 +16,9 @@ raw_refs: ["R-106"]
 pool_refs: ["P-063"]
 primary_raw:
   raw_ref: R-106
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-106-英伟达-ace-game-agent-sdk-进入-beta-测试-内置-qwen-3-5-4b-模型并支持-ue5.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-106-英伟达-ace-game-agent-sdk-进入-beta-测试-内置-qwen-3-5-4b-模型并支持-ue5.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.ithome.com/0/965/989.htm"
   full_text_hash: "34ab379f97ba396a"
   source_level: B

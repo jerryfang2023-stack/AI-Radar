@@ -16,8 +16,9 @@ raw_refs: ["R-118"]
 pool_refs: ["P-084"]
 primary_raw:
   raw_ref: R-118
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-118-openai-release-notes-june-2026-latest-updates-releasebot.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-118-openai-release-notes-june-2026-latest-updates-releasebot.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://releasebot.io/updates/openai"
   full_text_hash: "35c23e1ed19749a3"
   source_level: B

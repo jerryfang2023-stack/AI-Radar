@@ -16,8 +16,9 @@ raw_refs: ["R-035"]
 pool_refs: ["P-035"]
 primary_raw:
   raw_ref: R-035
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-035-deploy-small-language-models-on-gpu-cloud-enterprise-slm-guide-for-75-.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-035-deploy-small-language-models-on-gpu-cloud-enterprise-slm-guide-for-75-.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.spheron.network/blog/deploy-small-language-models-gpu-cloud"
   full_text_hash: "46341afdeab0d50d"
   source_level: B

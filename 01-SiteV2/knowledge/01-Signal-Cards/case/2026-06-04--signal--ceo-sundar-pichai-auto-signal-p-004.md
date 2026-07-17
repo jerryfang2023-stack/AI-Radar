@@ -17,8 +17,9 @@ raw_refs: ["R-005"]
 pool_refs: ["P-004"]
 primary_raw:
   raw_ref: R-005
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-005-alphabet-创纪录-850-亿美元融资用于-google-ai-业务-投资者对-ai-兴趣高涨.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-005-alphabet-创纪录-850-亿美元融资用于-google-ai-业务-投资者对-ai-兴趣高涨.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-003-alphabet-创纪录-850-亿美元融资用于-google-ai-业务-投资者对-ai-兴趣高涨.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-003-alphabet-创纪录-850-亿美元融资用于-google-ai-业务-投资者对-ai-兴趣高涨.json"
+  legacy_source_status: local_snapshot
   source_url: "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal"
   full_text_hash: "28d1c62df42d580c"
   source_level: A

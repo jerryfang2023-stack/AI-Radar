@@ -16,8 +16,9 @@ raw_refs: ["R-031"]
 pool_refs: ["P-031"]
 primary_raw:
   raw_ref: R-031
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-031-glm-5-2-为长周期任务而生.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-031-glm-5-2-为长周期任务而生.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-034-glm-5-2-为长周期任务而生.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-034-glm-5-2-为长周期任务而生.json"
+  legacy_source_status: local_snapshot
   source_url: "https://huggingface.co/blog/zai-org/glm-52-blog"
   full_text_hash: "54d1e3e2c3953c00"
   source_level: B

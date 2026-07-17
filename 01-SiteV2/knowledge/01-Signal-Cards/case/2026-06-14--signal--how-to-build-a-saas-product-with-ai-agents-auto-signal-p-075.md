@@ -16,8 +16,9 @@ raw_refs: ["R-125"]
 pool_refs: ["P-075"]
 primary_raw:
   raw_ref: R-125
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-125-how-to-build-a-saas-product-with-ai-agents-lessons-from-a-1m.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-125-how-to-build-a-saas-product-with-ai-agents-lessons-from-a-1m.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.mindstudio.ai/blog/build-saas-with-ai-agents-1m-arr-case-study"
   full_text_hash: "a1a91d9cb1a7dd8f"
   source_level: B

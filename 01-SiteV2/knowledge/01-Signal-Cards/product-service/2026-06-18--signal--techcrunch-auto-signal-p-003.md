@@ -16,8 +16,9 @@ raw_refs: ["R-003"]
 pool_refs: ["P-003"]
 primary_raw:
   raw_ref: R-003
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-003-google发布99美元gemini智能音箱.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-003-google发布99美元gemini智能音箱.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-004-google发布99美元gemini智能音箱.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-004-google发布99美元gemini智能音箱.json"
+  legacy_source_status: local_snapshot
   source_url: "https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker"
   full_text_hash: "11c4452c85a30434"
   source_level: A

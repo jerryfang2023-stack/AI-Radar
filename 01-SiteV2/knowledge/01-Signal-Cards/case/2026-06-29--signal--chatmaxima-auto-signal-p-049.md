@@ -16,8 +16,9 @@ raw_refs: ["R-049"]
 pool_refs: ["P-049"]
 primary_raw:
   raw_ref: R-049
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-049-55-ai-customer-support-statistics-and-trends-for-2026-chatmaxima.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-049-55-ai-customer-support-statistics-and-trends-for-2026-chatmaxima.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://chatmaxima.com/blog/ai-customer-support-statistics-2026"
   full_text_hash: "6c219c6f5d0aeb1c"
   source_level: B

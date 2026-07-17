@@ -16,8 +16,9 @@ raw_refs: ["R-048"]
 pool_refs: ["P-048"]
 primary_raw:
   raw_ref: R-048
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-048-microsoft-build-2026-book-of-news-ai-recap-a-guide-to-cloud-ai.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-048-microsoft-build-2026-book-of-news-ai-recap-a-guide-to-cloud-ai.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.aguidetocloud.com/blog/microsoft-build-2026-recap"
   full_text_hash: "b93144b37dd44a04"
   source_level: B

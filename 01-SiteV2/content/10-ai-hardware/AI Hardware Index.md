@@ -1,39 +1,47 @@
 ---
 type: ai_hardware_index
 status: current
-updated_at: 2026-07-13T08:00:18.001Z
+hardware_version: HARDWARE-V1.0
+updated_at: 2026-07-17T06:47:46.547Z
 ---
 
 # AI Hardware Index
 
-这个目录保存 Business Signals 的 AI 硬件独立观察镜头。正式商业信号仍限于 product / funding / case 三类 Signal Card。
+> Data Center V4 的硬件事实索引。旧 Business Signals 仅为兼容资产，不再作为本目录的数据源。
+
+- [[../11-databases/data-center-v4/Data Center V4 Index|Data Center V4 Index]]
 
 ## Daily Views
 
-- [2026-07-13 AI Hardware](daily/2026-07-13 AI Hardware.md)
-- [2026-07-12 AI Hardware](daily/2026-07-12 AI Hardware.md)
-- [2026-07-11 AI Hardware](daily/2026-07-11 AI Hardware.md)
-- [2026-07-10 AI Hardware](daily/2026-07-10 AI Hardware.md)
-- [2026-07-09 AI Hardware](daily/2026-07-09 AI Hardware.md)
-- [2026-07-08 AI Hardware](daily/2026-07-08 AI Hardware.md)
-- [2026-07-06 AI Hardware](daily/2026-07-06 AI Hardware.md)
-- [2026-07-05 AI Hardware](daily/2026-07-05 AI Hardware.md)
-- [2026-07-03 AI Hardware](daily/2026-07-03 AI Hardware.md)
-- [2026-07-01 AI Hardware](daily/2026-07-01 AI Hardware.md)
-- [2026-06-25 AI Hardware](daily/2026-06-25 AI Hardware.md)
-- [2026-06-24 AI Hardware](daily/2026-06-24 AI Hardware.md)
-- [2026-06-23 AI Hardware](daily/2026-06-23 AI Hardware.md)
-- [2026-06-20 AI Hardware](daily/2026-06-20 AI Hardware.md)
-- [2026-06-18 AI Hardware](daily/2026-06-18 AI Hardware.md)
-- [2026-06-17 AI Hardware](daily/2026-06-17 AI Hardware.md)
-- [2026-06-16 AI Hardware](daily/2026-06-16 AI Hardware.md)
-- [2026-06-15 AI Hardware](daily/2026-06-15 AI Hardware.md)
-- [2026-06-14 AI Hardware](daily/2026-06-14 AI Hardware.md)
-- [2026-06-12 AI Hardware](daily/2026-06-12 AI Hardware.md)
-- [2026-06-11 AI Hardware](daily/2026-06-11 AI Hardware.md)
-- [2026-06-09 AI Hardware](daily/2026-06-09 AI Hardware.md)
-- [2026-06-08 AI Hardware](daily/2026-06-08 AI Hardware.md)
-- [2026-06-07 AI Hardware](daily/2026-06-07 AI Hardware.md)
-- [2026-06-01 AI Hardware](daily/2026-06-01 AI Hardware.md)
-- [2026-05-19 AI Hardware](daily/2026-05-19 AI Hardware.md)
-- [2026-05-18 AI Hardware](daily/2026-05-18 AI Hardware.md)
+- [[daily/2026-07-17 AI Hardware|2026-07-17 AI Hardware]]
+- [[daily/2026-07-16 AI Hardware|2026-07-16 AI Hardware]]
+- [[daily/2026-07-13 AI Hardware|2026-07-13 AI Hardware]]
+- [[daily/2026-07-12 AI Hardware|2026-07-12 AI Hardware]]
+- [[daily/2026-07-11 AI Hardware|2026-07-11 AI Hardware]]
+- [[daily/2026-07-10 AI Hardware|2026-07-10 AI Hardware]]
+- [[daily/2026-07-09 AI Hardware|2026-07-09 AI Hardware]]
+- [[daily/2026-07-08 AI Hardware|2026-07-08 AI Hardware]]
+- [[daily/2026-07-06 AI Hardware|2026-07-06 AI Hardware]]
+- [[daily/2026-07-05 AI Hardware|2026-07-05 AI Hardware]]
+- [[daily/2026-07-03 AI Hardware|2026-07-03 AI Hardware]]
+- [[daily/2026-07-01 AI Hardware|2026-07-01 AI Hardware]]
+- [[daily/2026-06-29 AI Hardware|2026-06-29 AI Hardware]]
+- [[daily/2026-06-25 AI Hardware|2026-06-25 AI Hardware]]
+- [[daily/2026-06-24 AI Hardware|2026-06-24 AI Hardware]]
+- [[daily/2026-06-23 AI Hardware|2026-06-23 AI Hardware]]
+- [[daily/2026-06-20 AI Hardware|2026-06-20 AI Hardware]]
+- [[daily/2026-06-18 AI Hardware|2026-06-18 AI Hardware]]
+- [[daily/2026-06-17 AI Hardware|2026-06-17 AI Hardware]]
+- [[daily/2026-06-16 AI Hardware|2026-06-16 AI Hardware]]
+- [[daily/2026-06-15 AI Hardware|2026-06-15 AI Hardware]]
+- [[daily/2026-06-14 AI Hardware|2026-06-14 AI Hardware]]
+- [[daily/2026-06-12 AI Hardware|2026-06-12 AI Hardware]]
+- [[daily/2026-06-11 AI Hardware|2026-06-11 AI Hardware]]
+- [[daily/2026-06-10 AI Hardware|2026-06-10 AI Hardware]]
+- [[daily/2026-06-09 AI Hardware|2026-06-09 AI Hardware]]
+- [[daily/2026-06-08 AI Hardware|2026-06-08 AI Hardware]]
+- [[daily/2026-06-07 AI Hardware|2026-06-07 AI Hardware]]
+- [[daily/2026-06-06 AI Hardware|2026-06-06 AI Hardware]]
+- [[daily/2026-06-01 AI Hardware|2026-06-01 AI Hardware]]
+- [[daily/2026-05-19 AI Hardware|2026-05-19 AI Hardware]]
+- [[daily/2026-05-18 AI Hardware|2026-05-18 AI Hardware]]

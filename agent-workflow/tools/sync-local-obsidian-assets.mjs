@@ -21,7 +21,9 @@ const date = args.get("date") || new Intl.DateTimeFormat("en-CA", {
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const logFile = path.join(reportsDir, `${date}-local-obsidian-sync.md`);
 const commands = [
-  ["node", ["01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"]],
+  ["node", ["01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs"]],
+  ["node", ["agent-workflow/tools/build-legacy-card-event-mappings.mjs"]],
+  ["node", ["agent-workflow/tools/build-data-center-v4-obsidian-index.mjs"]],
   ["node", ["agent-workflow/tools/sync-business-lenses-to-obsidian.mjs"]],
   ["node", ["01-SiteV2/site/scripts/build-follow-builders-page-data.mjs"]],
   ["node", ["01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs"]],
@@ -33,7 +35,7 @@ function rel(file) {
 
 function writeLog(lines) {
   fs.mkdirSync(path.dirname(logFile), { recursive: true });
-  fs.writeFileSync(logFile, `${lines.join("\n")}\n`, "utf8");
+  fs.writeFileSync(logFile, `${lines.join("\n").trimEnd()}\n`, "utf8");
 }
 
 function main() {
@@ -77,8 +79,9 @@ function main() {
   lines.push(
     "## Synced Assets",
     "",
-    "- `01-SiteV2/site/data/v3-data-observation-desk.json`",
-    "- `01-SiteV2/site/data/intelligence-graph-index.json`",
+    "- `01-SiteV2/site/data/data-center-v4-frontstage.json`",
+    "- `01-SiteV2/content/11-databases/data-center-v4/Data Center V4 Index.md`",
+    "- `01-SiteV2/content/11-databases/data-center-v4/legacy-card-event-mappings.json`",
     "- `01-SiteV2/content/09-fde/`",
     "- `01-SiteV2/content/10-ai-hardware/`",
     "- `01-SiteV2/site/data/follow-builders-daily.json`",
@@ -91,8 +94,9 @@ function main() {
     date,
     report: rel(logFile),
     synced_assets: [
-      "01-SiteV2/site/data/v3-data-observation-desk.json",
-      "01-SiteV2/site/data/intelligence-graph-index.json",
+      "01-SiteV2/site/data/data-center-v4-frontstage.json",
+      "01-SiteV2/content/11-databases/data-center-v4/Data Center V4 Index.md",
+      "01-SiteV2/content/11-databases/data-center-v4/legacy-card-event-mappings.json",
       "01-SiteV2/site/data/follow-builders-daily.json",
     ],
   }, null, 2));

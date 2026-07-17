@@ -16,8 +16,9 @@ raw_refs: ["R-028"]
 pool_refs: ["P-028"]
 primary_raw:
   raw_ref: R-028
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-07-05/r-028-inside-bristol-myers-ai-powered-procurement-overhaul-supply-chain-dive.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-07-05/r-028-inside-bristol-myers-ai-powered-procurement-overhaul-supply-chain-dive.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.supplychaindive.com/news/inside-bristol-myers-ai-powered-procurement-overhaul/822840/"
   full_text_hash: "98cf5a0ebeb21086"
   source_level: B

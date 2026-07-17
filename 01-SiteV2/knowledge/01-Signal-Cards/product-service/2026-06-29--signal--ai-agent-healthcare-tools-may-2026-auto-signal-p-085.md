@@ -16,8 +16,9 @@ raw_refs: ["R-123"]
 pool_refs: ["P-085"]
 primary_raw:
   raw_ref: R-123
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-123-ai-agent-healthcare-tools-may-2026.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-123-ai-agent-healthcare-tools-may-2026.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.getprosper.ai/blog/ai-agent-healthcare-tools"
   full_text_hash: "ccb822372207cd2e"
   source_level: B

@@ -1,48 +1,48 @@
 ---
 type: enterprise_ai_fde_daily
 date: 2026-06-21
-status: synced
-source: "01-SiteV2/site/data/v3-data-observation-desk.json"
+fde_version: FDE-V2.0
+status: current
+source: "01-SiteV2/content/11-databases/data-center-v4/2026-06-21/fde-records.json"
 item_count: 2
 ---
 
 # 2026-06-21 Enterprise AI / FDE
 
-本页是 Business Signals「企业AI化」二级镜头的 Obsidian 索引。原文不复制到本页，保留在 Raw 原文快照中；本页负责把前台条目、原文快照、JSON 快照和正式 Signal Card 串起来。
+> 本页直接投影自 Data Center V4 的 FDERecord。它是企业实施事实视图，不是第四类 Signal Card。
 
-## 1. Salesforce 的 Forward Deployment Engineers 如何帮助企业落地 Agentic AI
+- [当日 V4 CanonicalEvent](../../11-databases/data-center-v4/2026-06-21/canonical-events.json)
 
-- card_id: `SIG-20260621-A16`
-- subject: Diginomica
-- source_title: Salesforce 的 Forward Deployment Engineers 如何帮助企业落地 Agentic AI
-- source_url: https://diginomica.com/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers-are-hand-well-hold
-- source_ref: n/a
-- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-06-21/r-009-as-agentic-ai-hits-a-difficult-age-salesforce-s-forward-deployment-eng.md) / [Raw JSON](../../01-raw/originals/2026-06-21/r-009-as-agentic-ai-hits-a-difficult-age-salesforce-s-forward-deployment-eng.json)
-- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/case/2026-06-21--signal--diginomica-auto-signal-p-009.md)
-- stage: 生产上线
-- scenario: 客户服务与销售
-- workflow: 客服响应、线索跟进与知识检索
-- demand: 发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。
-- services: 提供的服务是面向客服响应、线索跟进与知识检索的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。
-- result: 实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。
-- source_basis: Diginomica 报道 Salesforce 通过 Forward Deployment Engineers 帮助企业把 Agentic AI 从试点推进到实际部署。
-- evidence_boundary: 已确认：Diginomica 报道 Salesforce 通过 Forward Deployment Engineers 帮助企业把 Agentic AI 从试点推进到实际部署。；未确认：内部投入、ROI 与长期运行效果。
+## 1. 微信 AI 助手"小微"灰度上线，可通过文字或语音对话操作原生功能
 
-## 2. Harvey AI 的 Forward Deployed Engineers 如何进入大型律所部署
+- fde_id: `FDE-2ecd6233112fcf0e`
+- event_id: `EV-3acfc96d99c32cf0`
+- event_time: 2026-06-20T08:59:23.000Z
+- stage: completed
+- customer: 微信 AI 助手"小微"灰度
+- vendor: 未披露
+- industry: 未披露
+- use_case: ，可通过文字或语音对话操作原生功能
+- reported_need: 未披露
+- delivery_components: 微信 AI 助手“小微”灰度上线，可通过文字或语音对话操作微信原生功能 - IT之家；微信 AI 助手“小微”灰度上线，可通过文字或语音对话操作微信原生功能
+- reported_outcomes: 未披露
+- metrics: 未披露
+- undisclosed_fields: vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls；reported_outcomes
+- source: [IT之家（RSS）](https://ithome.com/0/966/534.htm)
 
-- card_id: `SIG-20260621-A13`
-- subject: Harvey AI's Forward Deployed Engineers
-- source_title: Harvey AI 的 Forward Deployed Engineers 如何进入大型律所部署
-- source_url: https://getperspective.ai/blog/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026
-- source_ref: n/a
-- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-06-21/r-010-harvey-ai-s-forward-deployed-engineers-how-the-3b-legal-ai-leader-depl.md) / [Raw JSON](../../01-raw/originals/2026-06-21/r-010-harvey-ai-s-forward-deployed-engineers-how-the-3b-legal-ai-leader-depl.json)
-- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/case/2026-06-21--signal--harvey-ai-s-forward-deployed-engineers-auto-signal-p-010.md)
-- stage: 生产上线
-- scenario: 高合规行业
-- workflow: 企业数据接入与决策支持
-- demand: 发现的需求是企业数据、知识库或分析系统需要被 AI 调用，并在业务决策或工作流里形成可执行输出。
-- services: 提供的服务是 FDE / 客户嵌入式工程交付：工程师进入客户环境，完成需求拆解、系统集成、流程验证和上线支持。
-- result: 实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。
-- source_basis: Perspective AI 文章分析 Harvey AI 的 Forward Deployed Engineers 如何嵌入大型律所完成法律 AI 部署。
-- evidence_boundary: 已确认：Perspective AI 文章分析 Harvey AI 的 Forward Deployed Engineers 如何嵌入大型律所完成法律 AI 部署。；未确认：内部投入、ROI 与长期运行效果。
+## 2. LM Studio 与苹果合作，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型
 
+- fde_id: `FDE-5587adb203295543`
+- event_id: `EV-21caef1790021587`
+- event_time: 2026-06-20T09:37:07.000Z
+- stage: announced
+- customer: 未披露
+- vendor: 未披露
+- industry: 未披露
+- use_case: ，成功用四台 Mac Studio 运行万亿参数 Kimi K2.6 大模型
+- reported_need: 未披露
+- delivery_components: LM Studio 作为本地 AI 模型运行平台，此次与苹果的合作进一步展示了在消费级硬件上部署大型开源模型的可能性。
+- reported_outcomes: IT之家此前报道，Kimi K2.6 大模型总参数规模达到 1 万亿，采用 MoE 架构，激活参数为 320 亿，支持长上下文、多模态输入以及智能体任务处理。；据 LM Studio 官方介绍，在此次演示中，四台 Mac Studio 通过苹果的内存共享和互联技术形成集群，总统一内存容量达到约 1.5TB，能够承载这一前沿规模模型的推理需求。
+- metrics: 1 万；320 亿
+- undisclosed_fields: customer；vendor；industry；workflow_before；workflow_after；delivery_model；team_composition；reported_need；systems_integrated；data_requirements；governance_controls
+- source: [IT之家（RSS）](https://ithome.com/0/966/539.htm)

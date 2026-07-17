@@ -16,8 +16,9 @@ raw_refs: ["R-022"]
 pool_refs: ["P-022"]
 primary_raw:
   raw_ref: R-022
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-022-谷歌发布agentic-resource-discovery-ard-开放规范.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-022-谷歌发布agentic-resource-discovery-ard-开放规范.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-023-谷歌发布agentic-resource-discovery-ard-开放规范.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-023-谷歌发布agentic-resource-discovery-ard-开放规范.json"
+  legacy_source_status: local_snapshot
   source_url: "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification"
   full_text_hash: "072513618d6078f0"
   source_level: S

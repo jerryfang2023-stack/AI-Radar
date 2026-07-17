@@ -16,8 +16,9 @@ raw_refs: ["R-043"]
 pool_refs: ["P-043"]
 primary_raw:
   raw_ref: R-043
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-043-enterprise-ai-rollout-failures-causes-and-case-studies.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-043-enterprise-ai-rollout-failures-causes-and-case-studies.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-042-enterprise-ai-rollout-failures-causes-and-case-studies.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-042-enterprise-ai-rollout-failures-causes-and-case-studies.json"
+  legacy_source_status: local_snapshot
   source_url: "https://intuitionlabs.ai/articles/enterprise-ai-rollout-failures"
   full_text_hash: "1a7c146aa0a72a74"
   source_level: B

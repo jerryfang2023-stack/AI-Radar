@@ -16,8 +16,9 @@ raw_refs: ["R-041"]
 pool_refs: ["P-031"]
 primary_raw:
   raw_ref: R-041
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-041-building-the-easy-button-for-generative-ai-may-habib-ceo-writer.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-041-building-the-easy-button-for-generative-ai-may-habib-ceo-writer.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://podcasters.spotify.com/pod/show/firstmark/episodes/Building-the-Easy-Button-for-Generative-AI--May-Habib--CEO--Writer-e2r9qk6"
   full_text_hash: "a0503b8be3fdb663"
   source_level: B

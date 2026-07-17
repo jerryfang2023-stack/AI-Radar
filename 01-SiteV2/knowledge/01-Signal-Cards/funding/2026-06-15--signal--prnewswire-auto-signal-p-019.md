@@ -16,8 +16,9 @@ raw_refs: ["R-019"]
 pool_refs: ["P-019"]
 primary_raw:
   raw_ref: R-019
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-019-dapple-closes-30m-seed-to-scale-the-enterprise-os-cloud.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-019-dapple-closes-30m-seed-to-scale-the-enterprise-os-cloud.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.prnewswire.com/news-releases/dapple-closes-30m-seed-to-scale-the-enterprise-os-cloud-302795947.html"
   full_text_hash: "3dc30089640909d9"
   source_level: B

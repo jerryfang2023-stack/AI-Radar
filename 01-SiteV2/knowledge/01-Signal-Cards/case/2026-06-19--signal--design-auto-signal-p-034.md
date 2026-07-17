@@ -16,8 +16,9 @@ raw_refs: ["R-037"]
 pool_refs: ["P-034"]
 primary_raw:
   raw_ref: R-037
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-037-introducing-claude-design-by-anthropic-labs-anthropic.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-037-introducing-claude-design-by-anthropic-labs-anthropic.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.anthropic.com/news/claude-design-anthropic-labs?gsid=db67ae43-a3c0-4851-9eb9-a22bd251a1a0"
   full_text_hash: "4f588b8cf2894f46"
   source_level: S

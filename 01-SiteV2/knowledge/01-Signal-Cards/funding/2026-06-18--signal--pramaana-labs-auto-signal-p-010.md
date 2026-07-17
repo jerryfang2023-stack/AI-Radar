@@ -16,8 +16,9 @@ raw_refs: ["R-010"]
 pool_refs: ["P-010"]
 primary_raw:
   raw_ref: R-010
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-010-pramaana-labs-获-2700-万美元种子轮融资-用形式化验证提升-ai-可靠性.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-010-pramaana-labs-获-2700-万美元种子轮融资-用形式化验证提升-ai-可靠性.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-012-pramaana-labs-获-2700-万美元种子轮融资-用形式化验证提升-ai-可靠性.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-012-pramaana-labs-获-2700-万美元种子轮融资-用形式化验证提升-ai-可靠性.json"
+  legacy_source_status: local_snapshot
   source_url: "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai"
   full_text_hash: "11033ee8b2799d67"
   source_level: A

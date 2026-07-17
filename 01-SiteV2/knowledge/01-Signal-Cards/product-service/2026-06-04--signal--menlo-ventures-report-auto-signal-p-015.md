@@ -17,8 +17,9 @@ raw_refs: ["R-016"]
 pool_refs: ["P-015"]
 primary_raw:
   raw_ref: R-016
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-016-menlo-ventures-report-3-key-takeaways-for-ai-strategy-and-ops.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-016-menlo-ventures-report-3-key-takeaways-for-ai-strategy-and-ops.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-021-menlo-ventures-report-3-key-takeaways-for-ai-strategy-and-ops.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-021-menlo-ventures-report-3-key-takeaways-for-ai-strategy-and-ops.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.linkedin.com/posts/mariakhmel_genai-aieconomics-inference-activity-7381368148408774657-gwX2"
   full_text_hash: "f4828fae09ac2ea9"
   source_level: B

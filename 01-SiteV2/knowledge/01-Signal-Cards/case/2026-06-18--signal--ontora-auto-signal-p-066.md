@@ -16,8 +16,9 @@ raw_refs: ["R-116"]
 pool_refs: ["P-066"]
 primary_raw:
   raw_ref: R-116
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-116-ontora-ai-agents-that-interviews-every-employee-to-hand-context-to-ai-.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-116-ontora-ai-agents-that-interviews-every-employee-to-hand-context-to-ai-.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-119-ontora-ai-agents-that-interviews-every-employee-to-hand-context-to-ai-.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-119-ontora-ai-agents-that-interviews-every-employee-to-hand-context-to-ai-.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.ycombinator.com/companies/ontora"
   full_text_hash: "7f7a23e4c562faf1"
   source_level: B

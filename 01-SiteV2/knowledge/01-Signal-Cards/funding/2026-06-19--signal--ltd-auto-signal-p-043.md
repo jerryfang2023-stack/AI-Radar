@@ -16,8 +16,9 @@ raw_refs: ["R-046"]
 pool_refs: ["P-043"]
 primary_raw:
   raw_ref: R-046
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-046-ai-agent-authorization-startup-arcade-nabs-60m-investment-siliconangle.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-046-ai-agent-authorization-startup-arcade-nabs-60m-investment-siliconangle.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-062-ai-agent-authorization-startup-arcade-nabs-60m-investment-siliconangle.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-062-ai-agent-authorization-startup-arcade-nabs-60m-investment-siliconangle.json"
+  legacy_source_status: local_snapshot
   source_url: "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/"
   full_text_hash: "025cb3fd28e66b8a"
   source_level: B

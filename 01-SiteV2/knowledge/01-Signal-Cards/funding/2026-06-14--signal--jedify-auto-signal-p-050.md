@@ -16,8 +16,9 @@ raw_refs: ["R-072"]
 pool_refs: ["P-050"]
 primary_raw:
   raw_ref: R-072
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-072-new-york-based-ai-infrastructure-startup-jedify-raised-instagram.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-072-new-york-based-ai-infrastructure-startup-jedify-raised-instagram.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.instagram.com/p/DZaq23zCT9J/"
   full_text_hash: "b45d9c5abf9b3513"
   source_level: B

@@ -17,8 +17,9 @@ raw_refs: ["R-009"]
 pool_refs: ["P-009"]
 primary_raw:
   raw_ref: R-009
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-01/r-009-minimax-m3-100-token.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-01/r-009-minimax-m3-100-token.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.aibase.com/zh/news/18713"
   full_text_hash: "e2f91c1fe7a30576"
   source_level: B

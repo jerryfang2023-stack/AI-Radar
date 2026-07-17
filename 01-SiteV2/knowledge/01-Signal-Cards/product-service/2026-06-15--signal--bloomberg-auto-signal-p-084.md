@@ -16,8 +16,9 @@ raw_refs: ["R-135"]
 pool_refs: ["P-084"]
 primary_raw:
   raw_ref: R-135
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-135-蚂蚁集团拟为支付宝引入ai智能体界面-与微信争夺用户.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-135-蚂蚁集团拟为支付宝引入ai智能体界面-与微信争夺用户.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-190-蚂蚁集团拟为支付宝引入ai智能体界面-与微信争夺用户.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-190-蚂蚁集团拟为支付宝引入ai智能体界面-与微信争夺用户.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.bloomberg.com/news/articles/2026-06-14/jack-ma-backed-ant-set-for-high-stakes-overhaul-of-billion-user-alipay-app"
   full_text_hash: "96484f3f68abea0a"
   source_level: B

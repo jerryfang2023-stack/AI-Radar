@@ -16,8 +16,9 @@ raw_refs: ["R-043"]
 pool_refs: ["P-043"]
 primary_raw:
   raw_ref: R-043
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-043-best-enterprise-rag-platforms-for-2026-a-buyer-s-guide-onyx-ai.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-043-best-enterprise-rag-platforms-for-2026-a-buyer-s-guide-onyx-ai.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://onyx.app/insights/enterprise-rag-platforms-2026"
   full_text_hash: "ccc61c8d53cfad27"
   source_level: B

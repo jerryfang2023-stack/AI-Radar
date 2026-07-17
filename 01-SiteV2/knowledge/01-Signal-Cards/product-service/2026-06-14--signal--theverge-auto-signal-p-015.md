@@ -16,8 +16,9 @@ raw_refs: ["R-015"]
 pool_refs: ["P-015"]
 primary_raw:
   raw_ref: R-015
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-015-本周-installer-斯皮尔伯格新片-anthropic-最新模型-群聊新方式等.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-015-本周-installer-斯皮尔伯格新片-anthropic-最新模型-群聊新方式等.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-016-本周-installer-斯皮尔伯格新片-anthropic-最新模型-群聊新方式等.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-016-本周-installer-斯皮尔伯格新片-anthropic-最新模型-群聊新方式等.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.theverge.com/tech/949465/pool-screenshots-app-disclosure-day-installer"
   full_text_hash: "650b557a21463380"
   source_level: A

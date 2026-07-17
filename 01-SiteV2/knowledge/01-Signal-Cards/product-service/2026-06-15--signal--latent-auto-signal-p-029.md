@@ -26,8 +26,9 @@ merged_updates:
 
 primary_raw:
   raw_ref: R-039
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-039-state-of-rl-reasoning-imo-ioi-gold-openai-o3-gpt-5-and-cursor-composer.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-039-state-of-rl-reasoning-imo-ioi-gold-openai-o3-gpt-5-and-cursor-composer.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-051-why-video-agent-models-are-next-ethan-he-xai-grok-imagine.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-051-why-video-agent-models-are-next-ethan-he-xai-grok-imagine.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.latent.space/p/state-of-rlreasoning-imoioi-gold"
   full_text_hash: "a3d742fb5879a555"
   source_level: B

@@ -16,8 +16,9 @@ raw_refs: ["R-052"]
 pool_refs: ["P-049"]
 primary_raw:
   raw_ref: R-052
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-052-ai-agent-deployment-for-enterprise-from-prototype-to-production.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-052-ai-agent-deployment-for-enterprise-from-prototype-to-production.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://allcloud.io/blog/scalable-ai-agents-architecting-a-production-ready-deployment-platform/"
   full_text_hash: "94af74c040699d52"
   source_level: B

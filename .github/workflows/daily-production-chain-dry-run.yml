@@ -96,6 +96,8 @@ jobs:
           node --check agent-workflow/tools/assert-daily-production-chain.mjs
           node --check agent-workflow/tools/build-data-center-v4.mjs
           node --check agent-workflow/tools/assert-data-center-v4.mjs
+          node --check agent-workflow/tools/build-legacy-card-event-mappings.mjs
+          node --check agent-workflow/tools/build-data-center-v4-obsidian-index.mjs
           node --check agent-workflow/tools/assert-tag-taxonomy-v3.mjs
           node --check agent-workflow/tools/sync-light-data-lake.mjs
           node --check 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs
@@ -210,6 +212,8 @@ jobs:
           node agent-workflow/tools/assert-signal-card-editorial-quality.mjs \
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-card-editorial-gate.log"
+          node agent-workflow/tools/build-legacy-card-event-mappings.mjs
+          node agent-workflow/tools/build-data-center-v4-obsidian-index.mjs
 
       - name: Legacy page compatibility - record trend candidate decision
         id: trend-decision

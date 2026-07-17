@@ -16,8 +16,9 @@ raw_refs: ["R-109"]
 pool_refs: ["P-083"]
 primary_raw:
   raw_ref: R-109
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-109-former-coatue-partner-raises-65m-seed-for-ai-agent-startup-the-tech-bu.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-109-former-coatue-partner-raises-65m-seed-for-ai-agent-startup-the-tech-bu.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://techbuzz.ai/articles/former-coatue-partner-raises-65m-seed-for-ai-agent-startup"
   full_text_hash: "e509c87230350ed2"
   source_level: B

@@ -16,8 +16,9 @@ raw_refs: ["R-036"]
 pool_refs: ["P-036"]
 primary_raw:
   raw_ref: R-036
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-036-ai-infrastructure-best-practices-2026-scalable-secure-enterprise-guide.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-036-ai-infrastructure-best-practices-2026-scalable-secure-enterprise-guide.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://intellectualclouds.com/blog/ai-infrastructure-best-practices"
   full_text_hash: "fc5a0932010be05b"
   source_level: B

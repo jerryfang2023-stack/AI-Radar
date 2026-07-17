@@ -16,8 +16,9 @@ raw_refs: ["R-126"]
 pool_refs: ["P-086"]
 primary_raw:
   raw_ref: R-126
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-126-suno-launches-spark-incubator-program-to-feed-independent-artists-to-i.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-126-suno-launches-spark-incubator-program-to-feed-independent-artists-to-i.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-068-suno-launches-spark-incubator-program-to-feed-independent-artists-to-i.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-068-suno-launches-spark-incubator-program-to-feed-independent-artists-to-i.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine"
   full_text_hash: "32ce927e2362c570"
   source_level: A

@@ -16,8 +16,9 @@ raw_refs: ["R-069"]
 pool_refs: ["P-047"]
 primary_raw:
   raw_ref: R-069
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-069-claude-fable-5-在-frontiermath-最难题目上超越-gpt-5-5-13-个百分点.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-069-claude-fable-5-在-frontiermath-最难题目上超越-gpt-5-5-13-个百分点.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-073-claude-fable-5-在-frontiermath-最难题目上超越-gpt-5-5-13-个百分点.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-073-claude-fable-5-在-frontiermath-最难题目上超越-gpt-5-5-13-个百分点.json"
+  legacy_source_status: local_snapshot
   source_url: "https://the-decoder.com/claude-fable-5-outpaces-gpt-5-5-by-13-points-on-frontiermaths-toughest-problems"
   full_text_hash: "3af89449c6d77bb3"
   source_level: A

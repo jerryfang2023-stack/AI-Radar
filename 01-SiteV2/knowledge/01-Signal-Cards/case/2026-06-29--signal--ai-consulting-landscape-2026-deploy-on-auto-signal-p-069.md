@@ -16,8 +16,9 @@ raw_refs: ["R-070"]
 pool_refs: ["P-069"]
 primary_raw:
   raw_ref: R-070
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-070-ai-consulting-landscape-2026-deploy-on-premises.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-070-ai-consulting-landscape-2026-deploy-on-premises.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://vdf.ai/blog/ai-consulting-landscape-2026-vdf-ai-on-premises"
   full_text_hash: "fac61aba8481ecd1"
   source_level: B

@@ -16,8 +16,9 @@ raw_refs: ["R-025"]
 pool_refs: ["P-025"]
 primary_raw:
   raw_ref: R-025
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-07-05/r-025-visa-and-banks-across-europe-reach-the-next-phase-of-agentic-commerce-.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-07-05/r-025-visa-and-banks-across-europe-reach-the-next-phase-of-agentic-commerce-.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-07-05/r-037-visa-and-banks-across-europe-reach-the-next-phase-of-agentic-commerce-.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-07-05/r-037-visa-and-banks-across-europe-reach-the-next-phase-of-agentic-commerce-.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.visa.co.uk/about-visa/newsroom/press-releases.3457328.html"
   full_text_hash: "340d34cd231d3f2b"
   source_level: B

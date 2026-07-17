@@ -17,8 +17,9 @@ raw_refs: ["R-003"]
 pool_refs: ["P-002"]
 primary_raw:
   raw_ref: R-003
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-003-claude-code-v2-1-162-发布.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-003-claude-code-v2-1-162-发布.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-004-claude-code-v2-1-162-发布.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-004-claude-code-v2-1-162-发布.json"
+  legacy_source_status: local_snapshot
   source_url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.162"
   full_text_hash: "74db033d1f4e7052"
   source_level: S

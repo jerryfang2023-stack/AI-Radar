@@ -16,8 +16,9 @@ raw_refs: ["R-042"]
 pool_refs: ["P-032"]
 primary_raw:
   raw_ref: R-042
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-042-state-of-ai-2024-frontier-models-ai-geopolitics-and-the-robotics-renai.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-042-state-of-ai-2024-frontier-models-ai-geopolitics-and-the-robotics-renai.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://podcasters.spotify.com/pod/show/firstmark/episodes/State-of-AI-2024-Frontier-Models--AI-Geopolitics-and-The-Robotics-Renaissance--Nathan-Benaich--Founder--Air-Street-Capital-e2qvc5i"
   full_text_hash: "560022de1de23088"
   source_level: B

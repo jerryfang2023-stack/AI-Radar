@@ -16,8 +16,9 @@ raw_refs: ["R-105"]
 pool_refs: ["P-063"]
 primary_raw:
   raw_ref: R-105
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-105-amazon-ceo-reportedly-raised-anthropic-model-concerns-before-governmen.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-105-amazon-ceo-reportedly-raised-anthropic-model-concerns-before-governmen.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-102-amazon-ceo-reportedly-raised-anthropic-model-concerns-before-governmen.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-102-amazon-ceo-reportedly-raised-anthropic-model-concerns-before-governmen.json"
+  legacy_source_status: local_snapshot
   source_url: "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown"
   full_text_hash: "1768d22f8b9b050c"
   source_level: A

@@ -16,8 +16,9 @@ raw_refs: ["R-069"]
 pool_refs: ["P-057"]
 primary_raw:
   raw_ref: R-069
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-069-google-如何用-ai-重塑搜索.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-069-google-如何用-ai-重塑搜索.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-076-google-如何用-ai-重塑搜索.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-076-google-如何用-ai-重塑搜索.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.bloomberg.com/news/videos/2026-06-14/how-google-is-reinventing-search-with-ai-video"
   full_text_hash: "ff9ac2f3dad84d0d"
   source_level: B

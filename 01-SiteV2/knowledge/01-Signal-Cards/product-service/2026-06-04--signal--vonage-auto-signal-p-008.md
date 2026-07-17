@@ -23,8 +23,9 @@ merged_updates:
 
 primary_raw:
   raw_ref: R-009
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-04/r-009-vonage-launches-industry-specific-ai-agents-for-healthcare.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-04/r-009-vonage-launches-industry-specific-ai-agents-for-healthcare.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: ambiguous_source
   source_url: "https://markets.ft.com/data/announce/detail?dockey=600-202606030331BIZWIRE_USPRX____20260603_BW735995-1"
   full_text_hash: "b46dbfe9ccc9ea74"
   source_level: A

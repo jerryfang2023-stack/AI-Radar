@@ -16,8 +16,9 @@ raw_refs: ["R-025"]
 pool_refs: ["P-025"]
 primary_raw:
   raw_ref: R-025
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-025-g7领导人担忧美国随时切断ai访问-讨论建立-信任伙伴-计划.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-025-g7领导人担忧美国随时切断ai访问-讨论建立-信任伙伴-计划.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-029-g7领导人担忧美国随时切断ai访问-讨论建立-信任伙伴-计划.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-029-g7领导人担忧美国随时切断ai访问-讨论建立-信任伙伴-计划.json"
+  legacy_source_status: local_snapshot
   source_url: "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off"
   full_text_hash: "8020bbfb22ef5259"
   source_level: A

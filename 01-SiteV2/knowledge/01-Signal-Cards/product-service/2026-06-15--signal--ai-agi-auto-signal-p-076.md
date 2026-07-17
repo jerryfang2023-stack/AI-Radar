@@ -16,8 +16,9 @@ raw_refs: ["R-118"]
 pool_refs: ["P-076"]
 primary_raw:
   raw_ref: R-118
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-118-欢迎进入ai治理的agi时代.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-118-欢迎进入ai治理的agi时代.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-15/r-130-欢迎进入ai治理的agi时代.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-15/r-130-欢迎进入ai治理的agi时代.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance"
   full_text_hash: "66eb12e271a5b77d"
   source_level: B

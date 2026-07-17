@@ -16,8 +16,9 @@ raw_refs: ["R-133"]
 pool_refs: ["P-087"]
 primary_raw:
   raw_ref: R-133
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-133-how-building-ai-agents-has-changed-in-2026-pulumi-blog.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-133-how-building-ai-agents-has-changed-in-2026-pulumi-blog.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.pulumi.com/blog/how-building-ai-agents-has-changed"
   full_text_hash: "a8783f4450575664"
   source_level: B

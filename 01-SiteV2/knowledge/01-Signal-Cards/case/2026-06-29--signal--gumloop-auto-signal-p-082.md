@@ -16,8 +16,9 @@ raw_refs: ["R-107"]
 pool_refs: ["P-082"]
 primary_raw:
   raw_ref: R-107
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-107-22-ai-workflow-automation-examples-you-have-to-try-in-2026.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-107-22-ai-workflow-automation-examples-you-have-to-try-in-2026.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.gumloop.com/blog/ai-workflow-automation-examples"
   full_text_hash: "61d1bad3e927abfc"
   source_level: B

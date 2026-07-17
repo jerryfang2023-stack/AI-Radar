@@ -169,6 +169,8 @@ jobs:
           node --check agent-workflow/tools/build-data-center-v4.mjs
           node --check agent-workflow/tools/backfill-data-center-v4.mjs
           node --check agent-workflow/tools/assert-data-center-v4.mjs
+          node --check agent-workflow/tools/build-legacy-card-event-mappings.mjs
+          node --check agent-workflow/tools/build-data-center-v4-obsidian-index.mjs
           node --check agent-workflow/tools/assert-tag-taxonomy-v4.mjs
           node --check agent-workflow/tools/event-public-title.mjs
           node --check agent-workflow/tools/sync-light-data-lake.mjs
@@ -350,6 +352,8 @@ jobs:
           node agent-workflow/tools/assert-signal-card-editorial-quality.mjs \
             --date="${RUN_DATE}" \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-card-editorial-gate.log"
+          node agent-workflow/tools/build-legacy-card-event-mappings.mjs
+          node agent-workflow/tools/build-data-center-v4-obsidian-index.mjs
 
       - name: Legacy page compatibility - record trend candidate decision
         id: trend-decision
@@ -628,6 +632,9 @@ jobs:
 
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ] && [ "${{ steps.assets.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
+            stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/legacy-card-event-mappings.json"
+            stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/legacy-card-event-mappings.md"
+            stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/Data Center V4 Index.md"
             stage_find "01-SiteV2/knowledge/01-Signal-Cards" "${RUN_DATE}--signal--*.md"
             git add -u -- "01-SiteV2/knowledge/01-Signal-Cards"
             current_card_count="$(find "01-SiteV2/knowledge/01-Signal-Cards" -type f -name "${RUN_DATE}--signal--*.md" | wc -l | tr -d ' ')"

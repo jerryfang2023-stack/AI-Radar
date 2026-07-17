@@ -16,8 +16,9 @@ raw_refs: ["R-048"]
 pool_refs: ["P-045"]
 primary_raw:
   raw_ref: R-048
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-048-ai-agent-governance-in-cx-roi-vs-74-rollback-rate-gspann-com.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-048-ai-agent-governance-in-cx-roi-vs-74-rollback-rate-gspann-com.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-061-ai-agent-governance-in-cx-roi-vs-74-rollback-rate-gspann-com.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-061-ai-agent-governance-in-cx-roi-vs-74-rollback-rate-gspann-com.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.gspann.com/insights/blog/ai-agent-governance-customer-experience"
   full_text_hash: "bc4f65a3e17b8017"
   source_level: B

@@ -22,8 +22,9 @@ raw_refs: ["R-009"]
 pool_refs: ["P-005"]
 primary_raw:
   raw_ref: R-009
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-05-18/r-009-linux-之父-linus-发飙-别用-ai-提交大量重复-bug-报告-直接提修复方案-ok.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-05-18/r-009-linux-之父-linus-发飙-别用-ai-提交大量重复-bug-报告-直接提修复方案-ok.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-05-18/r-007-linux-之父-linus-发飙-别用-ai-提交大量重复-bug-报告-直接提修复方案-ok.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-05-18/r-007-linux-之父-linus-发飙-别用-ai-提交大量重复-bug-报告-直接提修复方案-ok.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.ithome.com/0/951/682.htm"
   full_text_hash: "89b0524bf028ffbf"
   source_level: B

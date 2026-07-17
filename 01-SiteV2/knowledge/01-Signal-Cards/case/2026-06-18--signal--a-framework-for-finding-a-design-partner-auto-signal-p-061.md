@@ -16,8 +16,9 @@ raw_refs: ["R-082"]
 pool_refs: ["P-061"]
 primary_raw:
   raw_ref: R-082
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-082-a-framework-for-finding-a-design-partner-andreessen-horowitz.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-082-a-framework-for-finding-a-design-partner-andreessen-horowitz.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-087-a-framework-for-finding-a-design-partner-andreessen-horowitz.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-087-a-framework-for-finding-a-design-partner-andreessen-horowitz.json"
+  legacy_source_status: local_snapshot
   source_url: "https://a16z.com/a-framework-for-finding-a-design-partner/"
   full_text_hash: "531d4b1f71fb17e5"
   source_level: B

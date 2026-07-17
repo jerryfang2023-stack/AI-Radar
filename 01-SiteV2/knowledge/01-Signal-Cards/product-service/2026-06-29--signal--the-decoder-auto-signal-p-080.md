@@ -16,8 +16,9 @@ raw_refs: ["R-081"]
 pool_refs: ["P-080"]
 primary_raw:
   raw_ref: R-081
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-081-the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-bil.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-081-the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-bil.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-025-the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-bil.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-025-the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-bil.json"
+  legacy_source_status: local_snapshot
   source_url: "https://the-decoder.com/the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-billion-program-to-retrain-you/"
   full_text_hash: "d518b324ba256ead"
   source_level: A

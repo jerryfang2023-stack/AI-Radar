@@ -16,8 +16,9 @@ raw_refs: ["R-078"]
 pool_refs: ["P-077"]
 primary_raw:
   raw_ref: R-078
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-078-microsoft-work-iq-copilot-credits-reset-2027-budgets.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-078-microsoft-work-iq-copilot-credits-reset-2027-budgets.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://beam.ai/agentic-insights/microsoft-work-iq-copilot-credits-enterprise-cfo-2027-budgets"
   full_text_hash: "26f019c7e5b9b02b"
   source_level: B

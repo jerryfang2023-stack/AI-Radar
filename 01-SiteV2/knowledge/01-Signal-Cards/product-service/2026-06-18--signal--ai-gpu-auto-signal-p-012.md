@@ -16,8 +16,9 @@ raw_refs: ["R-012"]
 pool_refs: ["P-012"]
 primary_raw:
   raw_ref: R-012
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-012-ai编码智能体教会机器人安装gpu和剪扎带-nvidia-gear等团队开发enpire框架.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-012-ai编码智能体教会机器人安装gpu和剪扎带-nvidia-gear等团队开发enpire框架.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-014-ai编码智能体教会机器人安装gpu和剪扎带-nvidia-gear等团队开发enpire框架.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-014-ai编码智能体教会机器人安装gpu和剪扎带-nvidia-gear等团队开发enpire框架.json"
+  legacy_source_status: local_snapshot
   source_url: "https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training"
   full_text_hash: "4b97dd548504aba4"
   source_level: A

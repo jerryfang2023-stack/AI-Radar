@@ -16,8 +16,9 @@ raw_refs: ["R-007"]
 pool_refs: ["P-007"]
 primary_raw:
   raw_ref: R-007
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-007-anthropic-加入-frontier-碳去除联盟-成首家-ai-初创成员.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-007-anthropic-加入-frontier-碳去除联盟-成首家-ai-初创成员.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-006-anthropic-加入-frontier-碳去除联盟-成首家-ai-初创成员.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-006-anthropic-加入-frontier-碳去除联盟-成首家-ai-初创成员.json"
+  legacy_source_status: local_snapshot
   source_url: "https://techcrunch.com/2026/06/17/anthropic-becomes-first-ai-startup-to-join-the-frontier-carbon-removal-coalition"
   full_text_hash: "bf7e2f415dce9df1"
   source_level: A

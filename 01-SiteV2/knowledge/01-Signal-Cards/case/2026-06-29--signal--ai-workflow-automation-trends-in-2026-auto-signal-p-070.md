@@ -16,8 +16,9 @@ raw_refs: ["R-071"]
 pool_refs: ["P-070"]
 primary_raw:
   raw_ref: R-071
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-071-ai-workflow-automation-trends-in-2026-10-trends-shaping-the-future-of-.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-071-ai-workflow-automation-trends-in-2026-10-trends-shaping-the-future-of-.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.cflowapps.com/ai-workflow-automation-trends"
   full_text_hash: "663ebcb3e0b82fd6"
   source_level: B

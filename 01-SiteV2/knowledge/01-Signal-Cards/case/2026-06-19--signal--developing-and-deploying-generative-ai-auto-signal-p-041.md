@@ -16,8 +16,9 @@ raw_refs: ["R-044"]
 pool_refs: ["P-041"]
 primary_raw:
   raw_ref: R-044
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-044-developing-and-deploying-generative-ai-altman-solon.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-044-developing-and-deploying-generative-ai-altman-solon.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.altmansolon.com/thought-leadership/generative-ai-deployment-strategies"
   full_text_hash: "b6d30b51b6467744"
   source_level: B

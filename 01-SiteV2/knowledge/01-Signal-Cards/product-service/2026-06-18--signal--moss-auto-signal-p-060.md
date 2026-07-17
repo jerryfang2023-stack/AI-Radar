@@ -16,8 +16,9 @@ raw_refs: ["R-077"]
 pool_refs: ["P-060"]
 primary_raw:
   raw_ref: R-077
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-077-moss-tts-local-transformer-v1-5-在-sglang-omni-上-原生流式-48-khz-语音服务.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-077-moss-tts-local-transformer-v1-5-在-sglang-omni-上-原生流式-48-khz-语音服务.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-082-moss-tts-local-transformer-v1-5-在-sglang-omni-上-原生流式-48-khz-语音服务.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-082-moss-tts-local-transformer-v1-5-在-sglang-omni-上-原生流式-48-khz-语音服务.json"
+  legacy_source_status: local_snapshot
   source_url: "https://www.lmsys.org/blog/2026-06-17-moss-tts-local-v15"
   full_text_hash: "5c29e3ca12a1d9df"
   source_level: B

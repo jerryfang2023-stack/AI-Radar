@@ -16,8 +16,9 @@ raw_refs: ["R-027"]
 pool_refs: ["P-027"]
 primary_raw:
   raw_ref: R-027
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-027-谷歌-home-speaker-开启预售-6-月-25-日开售.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-027-谷歌-home-speaker-开启预售-6-月-25-日开售.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-032-谷歌-home-speaker-开启预售-6-月-25-日开售.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-032-谷歌-home-speaker-开启预售-6-月-25-日开售.json"
+  legacy_source_status: local_snapshot
   source_url: "https://arstechnica.com/google/2026/06/the-gemini-powered-google-home-speaker-arrives-on-june-25-for-100"
   full_text_hash: "6169e24a4819aacf"
   source_level: A

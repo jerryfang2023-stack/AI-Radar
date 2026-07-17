@@ -16,8 +16,9 @@ raw_refs: ["R-052"]
 pool_refs: ["P-037"]
 primary_raw:
   raw_ref: R-052
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-052-月之暗面开源模型kimi-k2-7-code每个token价格比gpt-5-5和claude低12倍.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-052-月之暗面开源模型kimi-k2-7-code每个token价格比gpt-5-5和claude低12倍.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-056-月之暗面开源模型kimi-k2-7-code每个token价格比gpt-5-5和claude低12倍.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-056-月之暗面开源模型kimi-k2-7-code每个token价格比gpt-5-5和claude低12倍.json"
+  legacy_source_status: local_snapshot
   source_url: "https://the-decoder.com/moonshots-open-model-kimi-k2-7-code-undercuts-gpt-5-5-and-claude-by-up-to-12x-on-price-per-token"
   full_text_hash: "0cdc88e37bcaec0d"
   source_level: A

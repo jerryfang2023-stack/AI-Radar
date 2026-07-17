@@ -22,8 +22,9 @@ merged_updates:
 
 primary_raw:
   raw_ref: R-077
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-077-毕马威ai报告被指由ai生成-引文45条仅5条准确-多处案例不实.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-077-毕马威ai报告被指由ai生成-引文45条仅5条准确-多处案例不实.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: ambiguous_source
   source_url: "https://www.ithome.com/0/963/986.htm"
   full_text_hash: "623032e291b6f627"
   source_level: B

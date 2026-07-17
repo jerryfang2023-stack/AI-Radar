@@ -16,8 +16,9 @@ raw_refs: ["R-068"]
 pool_refs: ["P-046"]
 primary_raw:
   raw_ref: R-068
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-068-google-research-的-gemini-sql2-在-text-to-sql-基准测试中以大幅优势领先.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-068-google-research-的-gemini-sql2-在-text-to-sql-基准测试中以大幅优势领先.json"
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-14/r-072-google-research-的-gemini-sql2-在-text-to-sql-基准测试中以大幅优势领先.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-14/r-072-google-research-的-gemini-sql2-在-text-to-sql-基准测试中以大幅优势领先.json"
+  legacy_source_status: local_snapshot
   source_url: "https://the-decoder.com/google-researchs-gemini-sql2-tops-text-to-sql-benchmarks-by-a-wide-margin"
   full_text_hash: "b013d4a9316049e1"
   source_level: A

@@ -16,8 +16,9 @@ raw_refs: ["R-050"]
 pool_refs: ["P-050"]
 primary_raw:
   raw_ref: R-050
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-050-ai-agent-productivity-statistics-2026-100-roi-data-digital-applied.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-050-ai-agent-productivity-statistics-2026-100-roi-data-digital-applied.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.digitalapplied.com/blog/ai-agent-productivity-statistics-2026-roi-data-points"
   full_text_hash: "82f2144dc542193a"
   source_level: B

@@ -16,8 +16,9 @@ raw_refs: ["R-068"]
 pool_refs: ["P-054"]
 primary_raw:
   raw_ref: R-068
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-068-barcelona-based-neuraltrust-raises-17-2-million-to-secure-and-govern-e.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-068-barcelona-based-neuraltrust-raises-17-2-million-to-secure-and-govern-e.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.eu-startups.com/2026/06/barcelona-based-neuraltrust-raises-e17-2-million-to-secure-and-govern-enterprise-ai-agents/"
   full_text_hash: "1fd5ca7a42e589ad"
   source_level: B

@@ -16,8 +16,9 @@ raw_refs: ["R-105"]
 pool_refs: ["P-081"]
 primary_raw:
   raw_ref: R-105
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-105-business-case-story-from-pilot-to-enterprise-rollout-for-ai-support-co.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-105-business-case-story-from-pilot-to-enterprise-rollout-for-ai-support-co.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://cobbai.com/blog/ai-support-business-case"
   full_text_hash: "d2f6f30335d105a8"
   source_level: B

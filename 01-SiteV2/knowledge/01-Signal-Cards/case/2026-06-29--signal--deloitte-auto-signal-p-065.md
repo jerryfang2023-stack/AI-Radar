@@ -16,8 +16,9 @@ raw_refs: ["R-066"]
 pool_refs: ["P-065"]
 primary_raw:
   raw_ref: R-066
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-066-the-state-of-ai-in-the-enterprise-2026-ai-report-deloitte-global.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-066-the-state-of-ai-in-the-enterprise-2026-ai-report-deloitte-global.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.deloitte.com/cz-sk/en/issues/generative-ai/state-of-ai-in-enterprise.html"
   full_text_hash: "74505f24bdd8b058"
   source_level: B

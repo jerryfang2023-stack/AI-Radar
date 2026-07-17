@@ -16,8 +16,9 @@ raw_refs: ["R-052"]
 pool_refs: ["P-052"]
 primary_raw:
   raw_ref: R-052
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-29/r-052-ai-workflow-automation-for-insurance-industry-guide-2026.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-29/r-052-ai-workflow-automation-for-insurance-industry-guide-2026.json"
+  raw_archive: ""
+  raw_json: ""
+  legacy_source_status: external_only
   source_url: "https://www.bizdata360.com/ai-workflow-automation-insurance"
   full_text_hash: "3e4025ec700d7d24"
   source_level: B
