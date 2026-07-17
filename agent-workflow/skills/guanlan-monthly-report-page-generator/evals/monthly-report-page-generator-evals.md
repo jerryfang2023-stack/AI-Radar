@@ -31,6 +31,10 @@
    - Pass when Playwright smoke confirms page load, no console errors, and no mobile overflow.
    - Pass when `node agent-workflow/tools/frontstage-regression-gate.mjs` passes.
 
+8. Content gate prerequisite
+   - Pass when `assert-periodic-report-content.mjs` has accepted the previous calendar month's report before page generation starts.
+   - Pass when a failed content gate leaves monthly frontstage files unchanged.
+
 ## Fail Cases
 
 1. Fail if the monthly detail page is a Markdown dump or summary-only page.
@@ -41,3 +45,4 @@
 6. Fail if Industry Reports actions duplicate each other or fight with the time-window selector.
 7. Fail if the page has horizontal overflow at 390px mobile width.
 8. Fail if a skill update is made but `.skill-store` sync and registry rebuild are skipped.
+9. Fail if page generation runs before the content acceptance gate.

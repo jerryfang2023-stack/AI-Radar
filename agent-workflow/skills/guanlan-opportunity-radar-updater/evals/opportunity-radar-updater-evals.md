@@ -30,3 +30,7 @@
 8. `evidence_modal_presentation`
    - Pass when clicking a hot map cell opens related Card evidence in a modal or equivalent detail layer.
    - Fail when a persistent right-side "Cell Evidence" instruction panel returns or when map evidence is shown as internal diagnostic text.
+
+9. `consolidated_schedule_ownership`
+   - Pass when the opportunity refresh runs inside the Monday 10:30 weekly report controller before report generation.
+   - Fail when a separate opportunity-map scheduled task is introduced or the report reads a pre-refresh projection.

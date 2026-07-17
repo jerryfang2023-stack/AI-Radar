@@ -229,7 +229,7 @@ Reads:
 
 Cadence:
 
-- Update once per week after the weekly Business Signals data is complete.
+- Run inside the consolidated weekly report task every Monday at 10:30 Asia/Shanghai, after the previous Monday-Sunday Business Signals window is complete.
 - Use latest 7 days for current heat, 30 days for baseline, and 90 days only as persistence context.
 
 Outputs:
@@ -243,6 +243,7 @@ Boundaries:
 - Do not use old `formal_tags` aggregation for these maps.
 - Do not use First-Line Viewpoints or Community Intelligence as direct map evidence unless separately promoted through Raw / Pool / Card.
 - Do not modify relationship graph tag logic from this route.
+- Do not create a separate opportunity-map scheduled task; the weekly report controller owns the refresh.
 
 ### 6. Industry Reports
 
@@ -254,11 +255,16 @@ Primary route:
 
 - Weekly report source: `01-SiteV2/content/08-report/`.
 - Frontstage pages: `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/monthly-business-structure-2026-06.html`, and weekly report detail pages; `reports.html` is a redirect only.
+- Weekly generation: Monday 10:30 for the previous complete Monday-Sunday window.
+- Monthly generation: 14:00 on the first Monday-Friday weekday for the previous calendar month, together with monthly maintenance.
+- Controller: `agent-workflow/tools/run-periodic-automation-controller.mjs`.
+- Gate order: report content gate first; weekly/monthly page-generator skill and frontstage regression second.
 
 Boundaries:
 
 - Reports are site publication layers, not the Business Signals Card source of truth.
 - Opinions and Community Intelligence can support interpretation and demand cross-checks, but they must not become business-signal facts, relationship-graph evidence, or trend-candidate evidence.
+- The periodic controller creates a local `codex/automation-*` branch only. Push, merge, and deployment remain explicit follow-up actions.
 
 ### 7. Trend Candidate Judgment
 

@@ -158,6 +158,10 @@ function recovery() {
 }
 
 function closure() {
+  const coverage = run("Data Center projection coverage", process.execPath, [
+    "agent-workflow/tools/assert-data-center-projection-coverage.mjs",
+    `--date=${date}`,
+  ]);
   const selfCheck = run("Daily self-check and safe repair", process.execPath, [
     "agent-workflow/tools/run-daily-self-check.mjs",
     `--date=${date}`,
@@ -171,9 +175,9 @@ function closure() {
     "--codex-command=codex",
   ], 900_000);
   return {
-    ok: selfCheck.ok && codex.ok,
-    status: selfCheck.ok && codex.ok ? "closed" : "repair_required",
-    actions: [selfCheck, codex],
+    ok: coverage.ok && selfCheck.ok && codex.ok,
+    status: coverage.ok && selfCheck.ok && codex.ok ? "closed" : "repair_required",
+    actions: [coverage, selfCheck, codex],
     notes: [],
   };
 }

@@ -34,7 +34,21 @@ Expected:
 - Does not paste weekly sections together.
 - Explains which trend upgraded, stayed in observation, or downgraded.
 
+### Case 4: Scheduled previous-month window
+
+Input: The consolidated controller runs at 14:00 on the first Monday-Friday weekday of a month.
+
+Expected:
+
+- Uses exactly the previous complete calendar month.
+- Produces at least eight numbered sections and the required frontmatter.
+- Passes the content acceptance gate before monthly page generation.
+
 ## Fail Cases
+
+### Fail 6: Partial month or early page generation
+
+Fails if the report includes the new partial month or if the page generator runs before content acceptance.
 
 ### Fail 1: Weekly roundup
 

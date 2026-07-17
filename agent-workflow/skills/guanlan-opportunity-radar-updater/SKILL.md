@@ -3,7 +3,7 @@ name: guanlan-opportunity-radar-updater
 description: "Use when updating, rebuilding, auditing, or explaining the Industry Reports opportunity maps: Entry Point Map and Product Pain Map. Applies to weekly refreshes of opportunity_signals, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, evidence modal behavior, and repairs when these maps become generic, label-driven, squeezed behind toggles, or disconnected from original articles. Do not use for weekly/monthly report prose, trend candidates, or old formal_tags aggregation."
 metadata:
   guanlan:
-    version: "1.1.1"
+    version: "1.1.2"
     lane: "Industry Reports"
     status: "downstream application"
     order: 92
@@ -41,7 +41,7 @@ Do not write weekly/monthly report prose with this skill. The map evidence comes
 
 ## Cadence
 
-Update once per week.
+Run as part of the consolidated weekly report task every Monday at 10:30 Asia/Shanghai. The window is the previous complete Monday through Sunday.
 
 Default window:
 
@@ -50,6 +50,8 @@ Default window:
 - Context check: 90 days only when deciding whether a cell is persistent, newly warming, or a one-off spike.
 
 Do not run a full map rewrite every day. Daily Cards may add `opportunity_signals`, but the map interpretation should be reviewed weekly so it reflects accumulated evidence rather than news noise.
+
+This skill does not own an independent scheduled task. Its refresh completes before weekly report content generation so the report and page read the same opportunity projection.
 
 ## Workflow
 

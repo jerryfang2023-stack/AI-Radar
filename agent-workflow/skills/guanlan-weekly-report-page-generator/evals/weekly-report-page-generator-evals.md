@@ -27,6 +27,10 @@
    - Pass when user-deleted elements are absent unless the current user request explicitly reintroduces them.
    - Pass when time windows are selectors, not static text, on review-facing pages.
 
+7. Content gate prerequisite
+   - Pass when `assert-periodic-report-content.mjs` has accepted the exact previous Monday-Sunday report before page generation starts.
+   - Pass when a failed content gate leaves weekly frontstage files unchanged.
+
 ## Fail Cases
 
 1. Fail if the weekly page is a Markdown dump with dense table borders.
@@ -38,3 +42,4 @@
 7. Fail if `返回周报列表`, `返回情报地图`, or `查看行动结论` is present without explicit user request.
 8. Fail if the detail hero has a long deck paragraph after the user has asked to remove it.
 9. Fail if the Industry Reports weekly entry shows three boxed KPI count cards instead of compact tags.
+10. Fail if page generation runs before the content acceptance gate.

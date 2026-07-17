@@ -436,7 +436,7 @@ Lane-specific rules:
 
 ## Project Health Automation
 
-Project maintenance is split into daily supervision, weekly retrospective, and monthly cleanup review. These commands are read-only report generators. They do not delete files, edit rules, merge PRs, or deploy.
+Project maintenance is split into daily supervision, weekly retrospective, and monthly cleanup review. The health commands below are read-only report generators. They do not delete files, edit rules, merge PRs, or deploy.
 
 Daily health uses the same unified supervision report as Hermes, including the read-only Skill Ops governance check:
 
@@ -465,6 +465,24 @@ Primary outputs:
 - matching `*-latest.*` report aliases.
 
 Weekly and monthly reports should produce a recommended action list. Codex performs any cleanup or code change after review; Hermes may use these reports to decide whether a recurring issue should become a gate, eval, or monitor skill memory update.
+
+### Consolidated Periodic Report Automation
+
+Install the Windows tasks with:
+
+```powershell
+npm run install:periodic-automation-tasks
+```
+
+| Schedule (Asia/Shanghai) | Controller phase | Result |
+|---|---|---|
+| Monday 10:30 | `weekly-report` | Refresh source-backed opportunity signals, rebuild the compatibility projection, generate the weekly report for the previous Monday-Sunday window, pass the content gate, then generate and test the weekly page. |
+| Sunday 18:00 | `weekly-health` | Run `health:weekly`; when repeated failures are present, create a Hermes inbox item requiring a durable gate, eval, or MEMORY prevention artifact. |
+| Daily 14:00 with first-weekday guard | `monthly` | On the first Monday-Friday weekday only, generate the previous calendar month's structure report and monthly maintenance report, pass the content gate, then generate and test the monthly page. |
+
+Weekly and monthly report production runs in an isolated Git worktree and creates a local `codex/automation-*` branch. It does not push, merge, or deploy automatically. Content acceptance and page publication are separate gates; page generation never runs after a failed content gate.
+
+The daily 09:50 closure also runs `assert-data-center-projection-coverage.mjs`. It checks Entity/EntityMention references, accepted-event entity references, Entity Index organization/product projection, and current-batch FDE/hardware projection. A batch with zero FDE or hardware records is warning-only; the gate never invents records to satisfy a quota.
 
 ## No-Hermes Daily Self Check And Safe Repair
 

@@ -3,7 +3,7 @@ name: guanlan-monthly-report-page-generator
 description: Use when creating, updating, or repairing WaveSight AI monthly report frontstage pages from `01-SiteV2/content/08-report/monthly/`. Applies to monthly report detail pages, Industry Reports monthly entries and wiring, Guanlan VI page styling, longform report layout, charts/tables/visual modules, and responsive local validation. Do not use for writing the monthly report judgment itself; use `guanlan-monthly-business-structure-report` first.
 metadata:
   guanlan:
-    version: "1.0.1"
+    version: "1.0.2"
     lane: "Industry Reports"
     status: "current sub-skill"
     order: 96
@@ -21,6 +21,8 @@ metadata:
 ## Purpose
 
 Turn an accepted monthly report Markdown file into a WaveSight frontstage reading experience. This skill handles page structure, Industry Reports wiring, visual modules, table treatment, responsive validation, and iterative skill hygiene. It does not decide the monthly business judgment.
+
+The periodic controller may invoke this skill only after the monthly content acceptance gate passes. Page generation and page regression are the second gate; a failed content gate must leave the frontstage unchanged.
 
 ## Required Reads
 

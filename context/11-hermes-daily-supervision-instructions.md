@@ -105,6 +105,9 @@ When Hermes checks the internal Business Signals compatibility lane, the canonic
 | 09:15 | Consolidated Recovery Controller | Check accepted V4, active runs, First-Line gate, and Community gate. Dispatch at most one missing Business/First-Line fallback; route Community to local repair; never recollect accepted V4 for compatibility-only defects. |
 | 09:50 | Consolidated Closure | Run supervision, safe repair, Dashboard/publication checks, and Codex handoff only for unresolved targeted tasks. |
 | 16:30 | Hermes Afternoon Record | Check the follow-builders skill publish report, `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, the report's `publish_status` / `publish_error`, and `obsidian_sync_*` counts. If the report, output, publish closure, or Obsidian sync result is missing or failed, write a Codex handoff for `afternoon_skill_runner` or `afternoon_publication_failure`. |
+| Monday 10:30 | Weekly Reports | The consolidated periodic controller refreshes the opportunity map, generates the previous Monday-Sunday weekly report with the weekly-report Skill, passes the content gate, then invokes the weekly page-generator Skill. |
+| Sunday 18:00 | Weekly Learning Loop | Run weekly health. Repeated problems must become a Hermes inbox item that requires a gate, eval, or MEMORY prevention artifact before resolution. |
+| First Monday-Friday weekday 14:00 | Monthly Reports | Generate the previous calendar month's structure report and monthly maintenance report, pass the content gate, then invoke the monthly page-generator Skill. |
 
 If any lane is still `queued` or `in_progress`, wait for it to finish before reporting that lane's data missing.
 
@@ -145,7 +148,7 @@ Hard rules:
 
 ## Weekly And Monthly Review
 
-Run weekly and monthly reports as read-only reviews:
+Run weekly and monthly health reports as read-only reviews:
 
 ```powershell
 npm run health:weekly -- --date=<YYYY-MM-DD> --days=7
@@ -153,6 +156,10 @@ npm run health:monthly -- --date=<YYYY-MM-DD> --days=30
 ```
 
 Weekly review should look for repeated failures that need a gate, eval, or monitor skill memory update. Monthly review should look for Git hygiene, stale branches/worktrees, large files, old report cleanup candidates, runtime drift, and deployment-service residue. Hermes reports findings; Codex performs code, rule, or cleanup changes.
+
+The scheduled report-production controller is separate from these read-only commands. Its gate order is content acceptance first and page generation/regression second. It creates local `codex/automation-*` branches only and does not push or deploy.
+
+During daily closure, also read the Data Center projection-coverage result. Entity and EntityMention references, accepted-event entity linkage, Entity Index organization/product projection, and current-batch FDE/hardware projection must remain complete. Zero FDE or hardware records are warning-only when the source batch contains none; do not create an independent FDE, hardware, or Entity scheduled task.
 
 ## Codex Handoff Format
 

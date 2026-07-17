@@ -34,6 +34,14 @@ Run these pass/fail checks after generating a weekly report.
 10. `change_direction`
    - Pass when §2 heatmap includes change direction indicators (↑ → ↓) comparing this week to prior week state.
 
+11. `complete_week_window`
+   - Pass when the Monday automation covers exactly the previous Monday through Sunday and writes both required Markdown outputs.
+   - Fail when it includes the current partial Monday or uses a rolling seven-day window.
+
+12. `content_before_page`
+   - Pass when the report content gate succeeds before any weekly page-generator invocation.
+   - Fail when frontstage files change after a failed or missing content gate.
+
 ## Repair Loop
 
 When a check fails:
