@@ -29,6 +29,9 @@
     "health:monthly": "node agent-workflow/tools/write-monthly-maintenance-report.mjs",
     "problem:daily": "node agent-workflow/tools/dispatch-daily-recovery.mjs",
     "business:health-dispatch": "node agent-workflow/tools/run-business-signals-health-dispatch.mjs",
+    "automation:daily:morning": "node agent-workflow/tools/run-daily-automation-controller.mjs --phase=morning",
+    "automation:daily:recovery": "node agent-workflow/tools/run-daily-automation-controller.mjs --phase=recovery",
+    "automation:daily:closure": "node agent-workflow/tools/run-daily-automation-controller.mjs --phase=closure --invoke-codex=true",
     "business:source:aihot": "node agent-workflow/tools/run-guanlan-daily-monitor.mjs --source-only=aihot",
     "business:source:keyword": "node agent-workflow/tools/run-guanlan-daily-monitor.mjs --source-only=keyword",
     "business:source:gdelt": "node agent-workflow/tools/run-guanlan-daily-monitor.mjs --source-only=gdelt",
@@ -68,6 +71,7 @@
     "install:data-lake-sync-task": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-data-lake-sync-task.ps1",
     "install:self-repair-task": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-daily-self-check-task.ps1",
     "install:codex-self-repair-task": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-codex-self-repair-task.ps1",
+    "install:daily-automation-tasks": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-daily-automation-controller-tasks.ps1",
     "install:agent-review-task": "powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/install-data-observation-agent-review-task.ps1"
   },
   "repository": {

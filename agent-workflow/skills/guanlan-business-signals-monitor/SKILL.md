@@ -28,10 +28,10 @@ Enterprise AI / FDE is owned by `guanlan-enterprise-ai-fde-monitor`. Business Si
 
 ## Current Timing
 
-- GitHub primary production window: 08:57 Asia/Shanghai.
-- Conditional health dispatch: 09:27 Asia/Shanghai. It checks same-date Business Signals data and active/successful runs, then dispatches the primary workflow only when no healthy output and no active/successful same-date run exists.
-- No-Hermes local self-check: 09:40 Asia/Shanghai. It runs after the 09:27 health dispatch has had time to start, applies only safe deterministic repairs, and writes `agent-workflow/reports/<date>-daily-self-check.*`.
-- No-Hermes Codex handoff: 09:50 Asia/Shanghai. It reads `codex_repair_tasks`, writes `agent-workflow/reports/<date>-codex-self-repair.*`, and may invoke `codex exec` only when explicitly enabled.
+- Local consolidated production dispatch: 08:10 Asia/Shanghai. It checks accepted same-date V4 and active/successful runs before dispatching the GitHub production workflow.
+- Consolidated targeted recovery: 09:15 Asia/Shanghai. Accepted V4 prevents another full-chain run when only compatibility assets are unhealthy.
+- Consolidated closure: 09:50 Asia/Shanghai. It runs safe self-check and creates or invokes a Codex handoff only for unresolved targeted tasks.
+- GitHub health dispatch remains a late cloud safety fallback, not the morning SLA clock.
 - Daily Problem Watchdog: records failed production runs to Hermes inbox. It must not dispatch recovery or start a full-chain rerun.
 - Hermes morning recovery and early handoff workflows are retired and must not be recreated or used.
 
@@ -110,8 +110,8 @@ The lane targets healthy same-date compatibility Cards before 10:00 Asia/Shangha
 
 Use this order:
 
-1. Run the scheduled primary production lane at 08:57.
-2. Run the 09:27 health dispatch. If same-date data is healthy, or a same-date run is queued / in progress / successful, wait instead of dispatching another full chain.
+1. Run the local 08:10 consolidated controller. It conditionally dispatches the primary production lane.
+2. Run the 09:15 recovery controller. If same-date V4 is accepted, or a same-date run is queued / in progress / successful, wait or repair the downstream compatibility stage instead of dispatching another full chain.
 3. After Raw / Pool, verify supply before Card/frontstage work:
    - active Raw count;
    - Pool and routed Pool count;
@@ -127,10 +127,10 @@ Use this order:
 8. Record either a reviewed multi-Card trend candidate or an explicit same-date no-candidate decision.
 9. Build Business frontstage JSON, including the relationship graph derived from accepted Cards.
 10. Run the unified Business frontstage gate immediately; it must validate Cards, graph evidence references, and the trend decision.
-11. Only after that gate passes, build operations dashboard, manifest, PR, merge, and Pages.
+11. After the V4 gate passes, build the operations dashboard and manifest for all lane states; publish compatibility assets only after their own gate passes, then continue to PR, merge, and Pages.
 12. After failed production runs, Daily Problem Watchdog should write one categorized inbox item for targeted repair. It must not dispatch another full-chain run.
-13. At 09:40, no-Hermes self-check should verify same-date data / active-run state and run safe repairs only. If the 09:27 health dispatch is queued or in progress, classify the lane as waiting rather than failed.
-14. At 09:50, no-Hermes Codex handoff should turn unresolved `codex_repair_tasks` into a task-specific prompt or explicit `codex exec` run.
+13. At 09:50, consolidated closure verifies same-date data / active-run state and runs safe repairs only. Queued or in-progress production is Waiting.
+14. The same closure turns unresolved `codex_repair_tasks` into a task-specific prompt or explicit `codex exec` run.
 15. Before 10:00, report a human-readable repair status whenever production state is observable. Publication checks after this point should focus on PR, Pages, same-date Business data, public Card count, and local sync blockage.
 
 ## Weekend Policy

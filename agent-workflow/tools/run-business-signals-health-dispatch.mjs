@@ -55,6 +55,44 @@ function readJson(file, fallback = null) {
   }
 }
 
+function readJsonText(text, fallback = null) {
+  try {
+    return JSON.parse(text);
+  } catch {
+    return fallback;
+  }
+}
+
+function readOriginJson(file, fallback = null) {
+  const normalized = String(file).replace(/\\/gu, "/");
+  const result = runOptional("git", ["show", `origin/main:${normalized}`]);
+  return result.ok ? readJsonText(result.stdout, fallback) : fallback;
+}
+
+function v4Assets() {
+  const fetch = runOptional("git", ["fetch", "origin", "main", "--quiet"]);
+  const manifestPath = `01-SiteV2/content/11-databases/data-center-v4/${date}/manifest.json`;
+  const gatePath = `agent-workflow/reports/${date}-data-center-v4-integrity-gate.json`;
+  const frontstagePath = "01-SiteV2/site/data/data-center-v4-frontstage.json";
+  const manifest = readOriginJson(manifestPath, {});
+  const gate = readOriginJson(gatePath, {});
+  const frontstage = readOriginJson(frontstagePath, {});
+  const eventCount = Number(gate?.counts?.canonical_events || manifest?.counts?.canonical_events || 0);
+  return {
+    ready: manifest?.date === date
+      && gate?.date === date
+      && gate?.ok === true
+      && eventCount > 0
+      && frontstage?.meta?.latestDataDate === date,
+    fetch_ok: fetch.ok,
+    manifest_date: manifest?.date || "",
+    gate_date: gate?.date || "",
+    gate_ok: gate?.ok === true,
+    canonical_events: eventCount,
+    frontstage_date: frontstage?.meta?.latestDataDate || "",
+  };
+}
+
 function badBusinessTitle(title = "") {
   return /用处见原文|原文 AI 事件|原文事件标题|原文业务场景|linkedin\s+融资|github\s+original title|purpose see original/iu.test(String(title || ""));
 }
@@ -141,9 +179,17 @@ function publicationState() {
   };
 }
 
-export function decideHealthState({ runsAvailable, runsError = "", assetsReady, activeRun, publication, successfulRun }) {
+export function decideHealthState({ runsAvailable, runsError = "", v4Ready = false, assetsReady, activeRun, publication, successfulRun }) {
   if (!runsAvailable) return { ok: false, action: "failed", reason: `GitHub run inspection failed: ${runsError}`, dispatchRequired: false };
   if (assetsReady) return { ok: true, action: "skipped", reason: "same-date Business Signals assets are already healthy", dispatchRequired: false };
+  if (v4Ready) {
+    return {
+      ok: true,
+      action: "compatibility_repair_required",
+      reason: "same-date Data Center V4 is accepted and published; repair the compatibility stage without rerunning source collection",
+      dispatchRequired: false,
+    };
+  }
   if (activeRun) return { ok: true, action: "waiting", reason: `same-date Business Signals workflow is already ${activeRun.status}`, dispatchRequired: false };
   if (publication?.waiting) {
     return {
@@ -167,8 +213,10 @@ export function decideHealthState({ runsAvailable, runsError = "", assetsReady, 
 }
 
 function runPolicyFixtures() {
-  const base = { runsAvailable: true, runsError: "", assetsReady: false, activeRun: null, publication: { waiting: false }, successfulRun: null };
+  const base = { runsAvailable: true, runsError: "", v4Ready: false, assetsReady: false, activeRun: null, publication: { waiting: false }, successfulRun: null };
   assert.equal(decideHealthState({ ...base, assetsReady: true }).action, "skipped");
+  assert.equal(decideHealthState({ ...base, v4Ready: true }).action, "compatibility_repair_required");
+  assert.equal(decideHealthState({ ...base, v4Ready: true }).dispatchRequired, false);
   assert.equal(decideHealthState({ ...base, activeRun: { status: "in_progress" } }).action, "waiting");
   assert.equal(decideHealthState({ ...base, publication: { waiting: true, branch: "automation/business-signals-fixture", pull_request: { url: "https://example.test/pr/1" } } }).action, "publication_waiting");
   assert.equal(decideHealthState({ ...base, successfulRun: { url: "https://example.test/run/1" } }).action, "publication_waiting");
@@ -211,6 +259,7 @@ function writeReports(payload) {
     `- reason: ${payload.reason}`,
     `- dry_run: ${payload.dry_run}`,
     `- workflow: ${workflowFile}`,
+    `- v4: \`${JSON.stringify(payload.v4)}\``,
     `- assets: \`${JSON.stringify(payload.assets)}\``,
     `- active_run: ${payload.active_run?.url || "none"}`,
     `- successful_run: ${payload.successful_run?.url || "none"}`,
@@ -227,6 +276,7 @@ function writeReports(payload) {
 
 function main() {
   if (!date) throw new Error("Unable to resolve production date.");
+  const v4 = v4Assets();
   const assets = businessAssets();
   const runs = workflowRuns();
   const publication = publicationState();
@@ -235,6 +285,7 @@ function main() {
   const decision = decideHealthState({
     runsAvailable: runs.available,
     runsError: runs.error,
+    v4Ready: v4.ready,
     assetsReady: assets.ready,
     activeRun,
     publication,
@@ -261,6 +312,7 @@ function main() {
     reason,
     workflow: workflowFile,
     pass_score: passScore,
+    v4,
     assets,
     active_run: activeRun,
     successful_run: successfulRun,
