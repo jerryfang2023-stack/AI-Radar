@@ -99,6 +99,7 @@ jobs:
           node --check agent-workflow/tools/assert-tag-taxonomy-v3.mjs
           node --check agent-workflow/tools/sync-light-data-lake.mjs
           node --check 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs
+          node --check 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/assert-business-signals-frontstage.mjs
@@ -222,7 +223,7 @@ jobs:
             --write-no-decision=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-trend-decision.log"
 
-      - name: Legacy page compatibility - build Business Signals frontstage data after gates pass
+      - name: Build legacy compatibility data and V4 Industry Reports projection
         id: site-sync
         if: steps.trend-decision.outcome == 'success'
         continue-on-error: true
@@ -231,6 +232,9 @@ jobs:
           set -o pipefail
           node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-site-sync.log"
+          node 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-industry-reports-frontstage.log"
+          node --test agent-workflow/tools/tests/industry-reports-frontstage.test.mjs
 
       - name: Run unified Business Signals frontstage gate
         id: business-frontstage-gate
@@ -299,6 +303,7 @@ jobs:
             01-SiteV2/content/06-asset-candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md
             01-SiteV2/knowledge/03-Asset-Candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md
             01-SiteV2/site/data/v3-data-observation-desk.json
+            01-SiteV2/site/data/industry-reports-frontstage.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
 

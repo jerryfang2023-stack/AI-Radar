@@ -31,11 +31,11 @@ Read only what the task needs:
 3. `context/02-vi-style.md`
 4. Source report under `01-SiteV2/content/08-report/monthly/`
 5. Target files:
-   - `01-SiteV2/site/reports.html`
    - `01-SiteV2/site/intelligence-map.html`
    - `01-SiteV2/site/monthly-*.html`
    - `01-SiteV2/site/assets/reports.css`
-   - `01-SiteV2/site/assets/v3-data-observation-desk.css`
+   - `01-SiteV2/site/assets/data-center-v4.css`
+   - `01-SiteV2/site/assets/v4-report-shell.js`
 
 For detailed rules, load:
 
@@ -54,11 +54,12 @@ For detailed rules, load:
    - Preserve the report's full argument structure. Do not reduce the page to a summary or landing page.
 
 3. Build or update report-center wiring.
-   - Use `reports.html` as the report center.
-   - In `intelligence-map.html`, show monthly and weekly reports as subcolumns under `Reports / 报告中心`.
+   - Use `intelligence-map.html` as the only Industry Reports entrance; `reports.html` remains a compatibility redirect.
+   - Show monthly and weekly reports as subcolumns in its report-first area.
    - Keep report-center links compact; avoid duplicate standalone buttons when the time selector already occupies the action area.
 
 4. Build the monthly detail page.
+   - Use the same V4 logo header, Data Center / Application Center sidebar, and mobile sidebar behavior as the Data Center and Industry Reports pages.
    - Use Guanlan VI: paper background, serif editorial headings, mono labels, blue/gold accents, restrained borders, and stable reading width.
    - Render the complete report with multiple formats: longform blocks, trend chains, charts, radar/bar visuals, opportunity matrices, designed tables, lists, and appendix.
    - Keep nonessential data-boundary and method notes compressed in the appendix.
@@ -87,6 +88,7 @@ For detailed rules, load:
 - Do not use raw table grids without editorial styling.
 - Do not re-add user-deleted fields, helper copy, report-type subtitles, return buttons, hero stat cards, or unnecessary navigation unless explicitly requested.
 - Do not place report-center navigation above the core intelligence-map function unless the user chooses a report-first redesign.
+- Do not restore `wavesight-nav.css`, `wavesight-topbar`, or links to the retired V3 column pages.
 
 ## Output
 

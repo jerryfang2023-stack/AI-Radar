@@ -23,8 +23,9 @@
    - Pass when data boundary, method boundary, and evidence limitations appear in a compressed final appendix unless explicitly requested in the hero.
 
 6. Report-center wiring
-   - Pass when `reports.html` includes a monthly entry.
-   - Pass when `intelligence-map.html` presents weekly and monthly reports as subcolumns under `Reports / 报告中心`.
+   - Pass when `reports.html` redirects to `intelligence-map.html`.
+   - Pass when `intelligence-map.html` presents weekly and monthly reports as subcolumns in the Industry Reports entry.
+   - Pass when monthly detail pages use the V4 sidebar and do not reference retired V3 column routes or assets.
 
 7. Validation
    - Pass when Playwright smoke confirms page load, no console errors, and no mobile overflow.

@@ -176,6 +176,7 @@ jobs:
           node --check agent-workflow/tools/event-public-title.mjs
           node --check agent-workflow/tools/sync-light-data-lake.mjs
           node --check 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs
+          node --check 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs
           node --check agent-workflow/tools/assert-daily-production-chain.mjs
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
@@ -365,7 +366,7 @@ jobs:
             --write-no-decision=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-trend-decision.log"
 
-      - name: Legacy page compatibility - build Business Signals frontstage data
+      - name: Build legacy compatibility data and V4 Industry Reports projection
         id: business-frontstage-data
         if: steps.trend-decision.outcome == 'success'
         continue-on-error: true
@@ -374,6 +375,9 @@ jobs:
           set -o pipefail
           node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-business-frontstage-data.log"
+          node 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-industry-reports-frontstage.log"
+          node --test agent-workflow/tools/tests/industry-reports-frontstage.test.mjs
 
       - name: Run unified Business Signals frontstage gate
         id: business-frontstage-gate
@@ -444,7 +448,7 @@ jobs:
           signal_card_count="$(find 01-SiteV2/knowledge/01-Signal-Cards -type f -name "${RUN_DATE}--signal--*.md" 2>/dev/null | wc -l | tr -d ' ')"
 
           cat > "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md" <<EOF
-          # ${RUN_DATE} Data Center V4 + Legacy Page Compatibility Asset Manifest
+          # ${RUN_DATE} Data Center V4 + Internal Compatibility Asset Manifest
 
           - generated_at: $(date -Is)
           - workflow_mode: business_signals_pr
@@ -474,6 +478,7 @@ jobs:
           | Business signals | $(state_for "$signal_file") |
           | Signal card files | ${signal_card_count} |
           | V3 data observation desk data | $(state_for "01-SiteV2/site/data/v3-data-observation-desk.json") |
+          | Industry Reports application data | $(state_for "01-SiteV2/site/data/industry-reports-frontstage.json") |
           | Intelligence graph index | $(state_for "01-SiteV2/site/data/intelligence-graph-index.json") |
           | Operations dashboard data | $(state_for "01-SiteV2/site/data/pipeline-dashboard.json") |
 
@@ -482,8 +487,8 @@ jobs:
           The Data Center V4 bundle must be committed only after its integrity gate passes.
           Raw / Pool remain source-capture and compatibility artifacts.
           Card assets must be committed once asset generation runs.
-          Business frontstage data is built and gated before operations dashboard data is generated.
-          Site data must be committed only when dedupe, Card editorial quality, Business frontstage gate, operations data sync and pre-commit gates pass.
+          Internal Business compatibility data is built and gated before operations dashboard data is generated.
+          Accepted V4 facts persist after the V4 integrity/materialization gate; compatibility site data persists only when its own gates pass.
           First-line viewpoints data is produced by the independent first-line workflow.
           EOF
 
@@ -516,6 +521,7 @@ jobs:
               "business_signals": "$(state_for "$signal_file")",
               "signal_card_files": ${signal_card_count},
               "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")",
+              "industry_reports_frontstage": "$(state_for "01-SiteV2/site/data/industry-reports-frontstage.json")",
               "intelligence_graph_index": "$(state_for "01-SiteV2/site/data/intelligence-graph-index.json")",
               "operations_dashboard_data": "$(state_for "01-SiteV2/site/data/pipeline-dashboard.json")"
             }
@@ -571,13 +577,14 @@ jobs:
             01-SiteV2/content/06-asset-candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md
             01-SiteV2/knowledge/03-Asset-Candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md
             01-SiteV2/site/data/v3-data-observation-desk.json
+            01-SiteV2/site/data/industry-reports-frontstage.json
             01-SiteV2/site/data/intelligence-graph-index.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
 
-      - name: Commit business signals to automation branch
+      - name: Commit Data Center V4 and accepted compatibility assets
         id: commit
-        if: always() && steps.pre-commit-gate.outcome == 'success'
+        if: always() && (steps.data-center-v4-materialize.outcome == 'success' || steps.pre-commit-gate.outcome == 'success')
         shell: bash
         run: |
           set -euo pipefail
@@ -619,16 +626,15 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-guanlan-daily-monitor-quality-loop.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-guanlan-monitor-quality-gate.md"
 
-          stage_if_exists "01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
-          stage_if_exists "01-SiteV2/content/01-raw/originals/${RUN_DATE}"
-          stage_if_exists "01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
-
           if [ "${{ steps.data-center-v4-materialize.outcome }}" = "success" ]; then
+            stage_if_exists "01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
+            stage_if_exists "01-SiteV2/content/01-raw/originals/${RUN_DATE}"
+            stage_if_exists "01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
             stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}"
             stage_if_exists "01-SiteV2/site/data/data-center-v4-frontstage.json"
           fi
 
-          if [ "${{ steps.assets.outcome }}" = "success" ]; then
+          if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ] && [ "${{ steps.assets.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
             stage_find "01-SiteV2/knowledge/01-Signal-Cards" "${RUN_DATE}--signal--*.md"
             git add -u -- "01-SiteV2/knowledge/01-Signal-Cards"
@@ -640,7 +646,7 @@ jobs:
             fi
           fi
 
-          if [ "${{ steps.trend-decision.outcome }}" = "success" ]; then
+          if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ] && [ "${{ steps.trend-decision.outcome }}" = "success" ]; then
             stage_find "01-SiteV2/content/06-asset-candidates/trend" "${RUN_DATE}--trend-candidate--*.md"
             stage_find "01-SiteV2/knowledge/03-Asset-Candidates/trend" "${RUN_DATE}--trend-candidate--*.md"
             no_decision_file="agent-workflow/reports/${RUN_DATE}-no-trend-candidate-decision.md"
@@ -656,13 +662,17 @@ jobs:
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.js"
           fi
 
+          if [ "${{ steps.business-frontstage-data.outcome }}" = "success" ]; then
+            stage_if_exists "01-SiteV2/site/data/industry-reports-frontstage.json"
+          fi
+
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          git commit -m "Persist business signals for ${RUN_DATE}"
+          git commit -m "Persist Data Center V4 assets for ${RUN_DATE}"
           git push --force-with-lease origin "$branch"
           echo "branch=$branch" >> "$GITHUB_OUTPUT"
           echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -679,22 +689,22 @@ jobs:
           manual_url="https://github.com/${GITHUB_REPOSITORY}/pull/new/${branch}"
           body_file="$(mktemp)"
           cat > "$body_file" <<BODY
-          Business Signals update for ${RUN_DATE}.
+          Data Center V4 update for ${RUN_DATE}.
 
           What this PR contains:
           - Data Center V4 factual bundle generated, gated, and materialized before page compatibility stages.
           - Raw / Pool generated in GitHub Actions and persisted after monitor gates passed.
           - Signal Cards persisted when asset generation succeeded.
           - A trend candidate or explicit no-candidate decision persisted after Card quality passed.
-          - Business frontstage data included only when dedupe, frontstage source-first/regression, operations sync and pre-commit gates passed.
-          - Intelligence map data generated from the business-signal Card chain.
+          - Internal Business Signals compatibility data included only when dedupe, source-first/regression, operations sync and pre-commit gates passed.
+          - Industry Reports application data generated as a dedicated public projection when compatibility data is available.
           - Operations dashboard data included when the business-signal frontstage sync passes.
           - Persistent asset manifest for local Obsidian recovery.
           - Artifacts uploaded for review.
 
           Guardrails:
           - No direct main push.
-          - Auto-merge is allowed only after the full daily asset and frontstage gate chain passes.
+          - Auto-merge requires the Data Center V4 integrity/materialization chain; failed compatibility gates cannot block accepted V4 facts.
           - No direct deploy from the automation branch; GitHub Pages deploys after main is updated.
           - No stopped content-output lane is executed.
 
@@ -769,14 +779,14 @@ jobs:
 
       - name: Auto-merge PR after gates pass
         id: auto-merge
-        if: always() && steps.pr.outputs.pr_number != '' && steps.pre-commit-gate.outcome == 'success'
+        if: always() && steps.pr.outputs.pr_number != '' && steps.data-center-v4-materialize.outcome == 'success'
         env:
           GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
         shell: bash
         run: |
           set -euo pipefail
           pr_number="${{ steps.pr.outputs.pr_number }}"
-          merge_body="Automated Data Center V4 and legacy page compatibility update after factual integrity and frontstage gates passed."
+          merge_body="Automated Data Center V4 update after factual integrity and materialization gates passed; compatibility assets are included only when their own gates pass."
 
           if gh pr merge "$pr_number" \
             --squash \

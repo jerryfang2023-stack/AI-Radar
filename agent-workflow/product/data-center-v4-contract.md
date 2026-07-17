@@ -59,6 +59,6 @@ Opinion and community material may be stored as source datasets, but it is not p
 
 ## Compatibility
 
-During migration, V3 and V4 are dual-written from the same Raw snapshots. Existing pages keep their current V3 inputs. The legacy pipeline may continue producing trend and opportunity objects for frozen pages, but those objects cannot enter V4 tables. Historical files are not overwritten; mappings connect legacy Raw/Card identifiers to V4 events.
+The public website uses the unified V4 frontstage. The legacy pipeline may continue producing internal Card, trend, graph, and opportunity objects for historical analytics, Obsidian sync, and downstream application adapters, but public pages cannot load V3 navigation, page assets, or the V3 desk JSON. Those compatibility objects cannot enter V4 tables. Historical files are not overwritten; mappings connect legacy Raw/Card identifiers to V4 events.
 
 The daily data-center list uses bundle `data_date` as its grouping and filter date. Canonical `event_time` and `disclosed_at` retain the source-reported time and must not replace the daily batch date in default list selection. During dual-write, legacy factual Cards are a coverage comparison only; they are never promoted as V4 evidence.

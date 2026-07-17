@@ -5,14 +5,14 @@ last_updated: 2026-07-16
 use_when:
   - choose current action
   - recover missing actions
-  - dispatch SITE-V3.4.5 production work
+  - dispatch SITE-V4.1 production and internal compatibility work
   - distinguish current actions from historical tasks
 priority: current
 ---
 
 # SITE-V4.0 Data Center Current Action Index
 
-This file is the current action registry for WaveSight Data Center V4. Existing SITE-V3.4.5 actions below are frozen page compatibility routes unless explicitly identified as V4 core.
+This file is the current action registry for WaveSight Data Center V4. Existing V3 actions below are internal compatibility routes unless explicitly identified as V4 core or downstream application work.
 
 Use it before historical dispatch boards, feature lists, closeouts, or V2 action records. Historical files can explain why a rule exists, but they must not add actions back into the current production system.
 
@@ -22,16 +22,16 @@ Every action, old or new, must be treated as one of these classes:
 
 | Status | Meaning | Codex Behavior |
 |---|---|---|
-| `current` | Active SITE-V3.4.5 production action. | May be used as a default execution route. |
+| `current` | Active SITE-V4.1 or internal compatibility production action. | May be used as a default execution route. |
 | `compatibility/downstream` | Frozen page support or interpretation outside the V4 data core. | May run only for its downstream consumer and must not write V4 canonical tables. |
 | `manual/archive` | Historical or diagnostic action with reference value. | May be read or manually consulted, but must not run by default. |
 | `retired` | Explicitly stopped action or output. | Must not be restored, required, or used as a blocker. |
 
-Do not mark an old action as `current` just because it existed before. Only a SITE-V3.4.5-compatible route that serves the current asset system can be `current`.
+Do not mark an old action as `current` just because it existed before. Only a route that serves the current V4 asset system or an explicitly retained internal adapter can be `current`.
 
 ## Current Actions
 
-Only these actions are `current` for SITE-V3.4.5:
+Only these actions are `current` for SITE-V4.1 and retained compatibility lanes:
 
 | Action | Status | Current Role |
 |---|---|---|
@@ -252,7 +252,7 @@ Purpose:
 Primary route:
 
 - Weekly report source: `01-SiteV2/content/08-report/`.
-- Frontstage pages: `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/reports.html`, `01-SiteV2/site/monthly-business-structure-2026-06.html`, and weekly report detail pages.
+- Frontstage pages: `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/monthly-business-structure-2026-06.html`, and weekly report detail pages; `reports.html` is a redirect only.
 
 Boundaries:
 
@@ -312,7 +312,7 @@ Outputs:
 
 - `01-SiteV2/site/data/follow-builders-daily.json`.
 - `01-SiteV2/knowledge/02-Opinion-Timelines/`.
-- `01-SiteV2/site/follow-builders.html`.
+- `01-SiteV2/site/data-center.html?view=viewpoints`; `follow-builders.html` is a redirect only.
 
 Boundaries:
 

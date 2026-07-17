@@ -1,5 +1,10 @@
 # Monthly Report Page Generator Memory
 
+## 2026-07-17
+
+- Monthly detail pages are part of the unified V4 frontstage and must use the V4 logo header, Data Center / Application Center sidebar, `data-center-v4.css`, and `v4-report-shell.js`.
+- `intelligence-map.html` is the only Industry Reports entrance; `reports.html` is only a compatibility redirect.
+
 ## 2026-06-30
 
 - User preference: monthly detail pages must present the full report content, not a short overview. Use multiple forms such as trend charts, radar/bar charts, matrices, designed tables, longform blocks, and cards.

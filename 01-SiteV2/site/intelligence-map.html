@@ -6,8 +6,8 @@
   <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <meta name="wavesight-version" content="SITE-V3.4.5">
-  <meta name="wavesight-column-version" content="IMAP-V2.0.0-report-center-opportunity-system">
+  <meta name="wavesight-version" content="SITE-V4.1.0-unified-frontstage">
+  <meta name="wavesight-column-version" content="IMAP-V2.1.0-v4-unified-frontstage">
   <meta name="weekly-report-source" content="01-SiteV2/content/08-report/">
   <meta name="monthly-report-source" content="01-SiteV2/content/08-report/monthly/">
   <title>行业报告｜观澜 AI</title>
@@ -425,7 +425,7 @@
       $$("[data-cell-key]").forEach((x) => x.classList.remove("is-active"));
     }
     async function init() {
-      const payload = await fetch("data/v3-data-observation-desk.json", { cache: "no-store" }).then((r) => r.json());
+      const payload = await fetch("data/industry-reports-frontstage.json", { cache: "no-store" }).then((r) => r.json());
       const cards = (payload.cards || []).filter((c) => c.category !== "opinion");
       const activeDate = payload.meta?.activeDate || cards.map((c) => c.date).sort().at(-1);
       state.entryCells = buildCells(cards, activeDate, entryRows, entryCols, "entry");

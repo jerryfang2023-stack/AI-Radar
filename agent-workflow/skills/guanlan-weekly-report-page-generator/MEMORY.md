@@ -1,5 +1,10 @@
 # Weekly Report Page Generator Memory
 
+## 2026-07-17
+
+- Weekly detail pages are part of the unified V4 frontstage. They use `data-center-v4.css`, the shared Data Center / Application Center sidebar, and `v4-report-shell.js`; the retired V3 topbar and column links must not return.
+- `intelligence-map.html` is the only Industry Reports entrance. `reports.html` is a compatibility redirect.
+
 ## 2026-06-16
 
 - User preference: weekly report pages should feel like edited business newsletters, not backend reports or Markdown exports. Use modular editorial layouts, scan-friendly cards, tags, chains, score bars, and concise callouts.

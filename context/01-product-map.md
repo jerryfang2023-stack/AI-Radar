@@ -49,7 +49,7 @@ Monitor / Search / Source discovery
 -> frozen V3 page compatibility outputs
 ```
 
-First-line viewpoints are built by the builders route and displayed in `follow-builders.html`. They are not mixed into the asset flow above.
+First-line viewpoints are built by the independent builders lanes and displayed in `data-center.html?view=viewpoints`. They are not mixed into the factual event flow above.
 Legacy page data remains isolated from the canonical flow. Page JSON cannot be used as a V4 source of truth.
 
 ## Asset Boundaries
@@ -93,4 +93,4 @@ A Card can enter the frontstage only when it has:
 
 ## Retired Outputs
 
-Legacy content-output routes, old four-column V2 website pages, and old opinion sidebar logic are not current SITE-V3.4.5 production goals.
+Legacy content-output routes, V2/V3 column pages, and old opinion sidebar logic are not current SITE-V4.1 public production goals.

@@ -1,18 +1,19 @@
-# WaveSight AI V3.3.2 Site
+# WaveSight AI V4.1 Unified Frontstage
 
 Status: current-site-workbench
-Updated: 2026-06-09
+Updated: 2026-07-17
 
 ## Positioning
 
-This directory is the current WaveSight AI V3.3.2 site and operations entry.
+This directory contains the current WaveSight AI V4.1 public site and operations entry.
 
 Current public frontstage:
 
-- Business Signals: `v3-data-observation.html`
-- Intelligence Map: `intelligence-map.html`
-- First-Line Viewpoints: `follow-builders.html`
-- Community Intelligence: `community-intelligence.html`
+- Data Center: `data-center.html`
+- Industry Reports: `intelligence-map.html`
+- First-Line Viewpoints: `data-center.html?view=viewpoints`
+- Community Intelligence: `data-center.html?view=community`
+- Legacy `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html` are redirects only.
 
 Current backend:
 
