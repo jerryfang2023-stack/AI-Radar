@@ -3,27 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-version" content="SITE-V3.4.5">
-  <meta name="wavesight-column-version" content="IMAP-V2.0.0-report-center-opportunity-system">
+  <meta name="wavesight-version" content="SITE-V4.1.0-unified-frontstage">
+  <meta name="wavesight-column-version" content="IMAP-V2.1.0-v4-unified-frontstage">
   <meta name="weekly-report-source" content="01-SiteV2/content/08-report/2026-07-13--weekly-report--ai-business-change-radar.md">
   <title>每周周报｜观澜 AI</title>
-  <link rel="stylesheet" href="assets/wavesight-nav.css">
-  <link rel="stylesheet" href="assets/weekly-report.css?v=20260713-weekly-radar">
+  <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/data-center-v4.css?v=20260717-unified-frontstage">
+  <link rel="stylesheet" href="assets/weekly-report.css?v=20260717-unified-frontstage">
 </head>
-<body class="weekly-report-page">
-  <header class="wavesight-topbar" aria-label="观澜 AI 导航">
-    <a class="wavesight-brand" href="v3-data-observation.html" aria-label="观澜 AI 首页">
-      <img class="wavesight-logo" src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI">
+<body class="weekly-report-page dc-report-page">
+  <header class="dc-header">
+    <a class="dc-brand" href="data-center.html" aria-label="观澜 AI 数据中心">
+      <img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI">
     </a>
-    <nav class="wavesight-nav" aria-label="主导航">
-      <a href="v3-data-observation.html">商业信号<span>Business Signals</span></a>
-      <a href="intelligence-map.html" aria-current="page">行业报告<span>Industry Reports</span></a>
-      <a href="follow-builders.html">一线观点<span>Builders</span></a>
-      <a href="community-intelligence.html">社群情报<span>Community Intel</span></a>
-    </nav>
+    <button class="dc-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="dc-sidebar">栏目</button>
   </header>
 
-  <main class="weekly-report-shell">
+  <div class="dc-layout">
+    <aside class="dc-sidebar" id="dc-sidebar" data-sidebar>
+      <nav aria-label="数据中心与应用中心">
+        <section class="dc-nav-group" aria-labelledby="data-center-nav-title">
+          <h2 id="data-center-nav-title">数据中心</h2>
+          <a href="data-center.html?view=events">商业事件</a>
+          <a href="data-center.html?view=fde">FDE 实施</a>
+          <a href="data-center.html?view=hardware">AI 硬件</a>
+          <a href="data-center.html?view=community">社群情报</a>
+          <a href="data-center.html?view=viewpoints">一线观点</a>
+          <a href="data-center.html?view=index">实体索引</a>
+        </section>
+        <section class="dc-nav-group dc-nav-apps" aria-labelledby="app-center-nav-title">
+          <h2 id="app-center-nav-title">应用中心</h2>
+          <a href="intelligence-map.html" aria-current="page">行业报告</a>
+        </section>
+      </nav>
+    </aside>
+
+    <main class="weekly-report-shell dc-main dc-report-detail-main" id="main-content" tabindex="-1">
     <section class="weekly-report-hero" aria-labelledby="weekly-report-title">
       <div>
         <p class="weekly-report-kicker">Weekly Business Radar</p>
@@ -184,7 +199,9 @@
         </section>
       </article>
     </div>
-  </main>
+    </main>
+  </div>
+  <script src="assets/v4-report-shell.js?v=20260717-unified-frontstage" defer></script>
   <script>
     (() => {
       const selector = document.querySelector("[data-weekly-report-selector]");

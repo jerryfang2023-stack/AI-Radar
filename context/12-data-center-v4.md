@@ -2,13 +2,13 @@
 status: current
 scope: data-center-v4
 version: SITE-V4.0-data-center
-last_updated: 2026-07-16
+last_updated: 2026-07-17
 priority: current
 ---
 
 # WaveSight Data Center V4
 
-This is the current source of truth for the factual data layer. `context/07-v3-intelligence-generation-rules.md` remains active only for frozen V3 page compatibility during dual-write migration.
+This is the current source of truth for the factual data layer. `context/07-v3-intelligence-generation-rules.md` remains active only for internal compatibility data and downstream application adapters.
 
 ## Positioning
 
@@ -70,8 +70,8 @@ The daily GitHub workflow runs these steps after Raw evidence supply passes and 
 - The event list groups and filters daily records by the bundle `data_date`, because it represents the accepted daily data batch.
 - `event_time` and `disclosed_at` remain separate factual timestamps and are shown only as auxiliary event metadata using the Asia/Shanghai calendar date.
 - Search, type, and tag filters remain inside the current data batch unless the user explicitly supplies a date range.
-- During V3/V4 dual-write, a current V4 event batch unexpectedly smaller than the same-date factual legacy Card set is a coverage regression that requires Raw-to-Event investigation.
+- While the internal V3 compatibility lane remains active, a current V4 event batch unexpectedly smaller than the same-date factual legacy Card set is a coverage diagnostic that requires Raw-to-Event investigation.
 
 ## Page contract
 
-The V4 Data Center and Industry Reports sidebar plan is approved and governed by `context/frontstage-page-contracts.md`. Other SITE-V3.4.5 compatibility pages remain frozen until separately approved. Existing trend, opportunity, report, and importance-sorted outputs may continue only as legacy page compatibility data. They do not enter V4 tables.
+The unified V4 Data Center and Industry Reports page system is governed by `context/frontstage-page-contracts.md`. Legacy V3 column URLs are redirects only. Existing trend, opportunity, report, and importance-sorted outputs may continue only as internal compatibility or downstream application data. They do not enter V4 tables.

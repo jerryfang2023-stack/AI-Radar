@@ -13,10 +13,10 @@
   - `status`
 - `agent-workflow/reports/` may remain an operational archive, but future page generation must not depend on it as the only source.
 
-## Intelligence Map Entry
+## Industry Reports Entry
 
-- Keep weekly reports below the relationship network.
-- Keep the relationship network as the first Intelligence Map value.
+- Keep weekly reports in the report-first area of `intelligence-map.html`.
+- Do not restore the retired relationship network or relation paths.
 - Include a time-window selector, even if only one issue exists.
 - Use count tags such as `Signals 101 张`, `Opinions 44 条`, `Community 约 44 条`.
 - Keep the read button as the card action, vertically centered on desktop and stacked only on narrow screens.
@@ -49,6 +49,7 @@ Use the content shape to choose modules:
 ## Visual Rules
 
 - Follow `context/02-vi-style.md`.
+- Use the V4 logo header and the shared Data Center / Application Center sidebar.
 - Prefer full-width sections and restrained panels over nested cards.
 - Use blue/gold accents sparingly.
 - Avoid large gradient decorations, orbs, marketing hero layouts, and visible “how to use this page” text.
@@ -58,7 +59,6 @@ Use the content shape to choose modules:
 ## Required Validation
 
 - `git diff --check`
-- `node agent-workflow/tools/assert-v3-source-first-frontstage.mjs`
 - `node agent-workflow/tools/frontstage-regression-gate.mjs`
 - Playwright smoke:
   - Intelligence Map desktop
@@ -67,5 +67,6 @@ Use the content shape to choose modules:
 - Page assertions:
   - weekly detail has no `<table>` unless explicitly requested;
   - time-window selector exists;
-  - version/source meta exists after release;
+  - `SITE-V4.1.0-unified-frontstage` and source meta exist after release;
+  - no V3 topbar, V3 stylesheet, or retired column link exists;
   - no Trend Candidates / History blocks on Intelligence Map.

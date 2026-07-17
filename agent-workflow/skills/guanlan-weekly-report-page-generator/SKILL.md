@@ -34,7 +34,8 @@ Read only what the task needs:
    - `01-SiteV2/site/intelligence-map.html`
    - `01-SiteV2/site/weekly-ai-business-change-radar.html` or the new weekly detail page
    - `01-SiteV2/site/assets/weekly-report.css`
-   - `01-SiteV2/site/assets/v3-data-observation-desk.css`
+   - `01-SiteV2/site/assets/data-center-v4.css`
+   - `01-SiteV2/site/assets/v4-report-shell.js`
 
 For detailed rules, load:
 
@@ -54,12 +55,14 @@ For detailed rules, load:
    - Preserve the time window as a selector on both the Intelligence Map entry and detail page.
 
 3. Build the Reports Center entry.
-   - Keep weekly reports in the Reports Center report area.
+   - Keep weekly reports in the Industry Reports area of `intelligence-map.html`.
+   - `reports.html` is a compatibility redirect only and must not become a second report center.
    - Do not push relation paths or decorative graph modules above the report-first entry.
    - Do not restore Trend Candidates or History modules on the Reports Center page.
    - Show report counts as compact tags, not boxed KPI cards.
 
 4. Build the detail page.
+   - Use the same V4 logo header, Data Center / Application Center sidebar, and mobile sidebar behavior as `data-center.html` and `intelligence-map.html`.
    - Use Guanlan VI: restrained paper background, serif editorial headings, mono labels, blue/gold accents, square or low-radius panels.
    - Convert Markdown tables into designed modules: cards, tag groups, chains, score bars, callouts, or lists.
    - Keep section 7 as a stable watchlist structure. Let other sections flex with the issue content.
@@ -67,14 +70,13 @@ For detailed rules, load:
    - Treat user-deleted elements as blocked unless the user explicitly reintroduces them.
 
 5. Update version metadata when releasing.
-   - Main site version lives in `meta[name="wavesight-version"]`.
+   - Main site version lives in `meta[name="wavesight-version"]` and must match `SITE-V4.1.0-unified-frontstage` for the unified-frontstage release.
    - Reports Center column version lives in `meta[name="wavesight-column-version"]`.
    - Weekly source path lives in `meta[name="weekly-report-source"]`.
    - Update `context/version-ledger.md` only for accepted release changes.
 
 6. Validate.
    - Run syntax checks for touched JS if any.
-   - Run `node agent-workflow/tools/assert-v3-source-first-frontstage.mjs`.
    - Run `node agent-workflow/tools/frontstage-regression-gate.mjs`.
    - Use Playwright visual smoke on desktop and mobile for the Reports Center entry and weekly detail page.
    - Check there are no `<table>` elements on the weekly detail page unless the user explicitly asks for a raw data appendix.
@@ -87,6 +89,7 @@ For detailed rules, load:
 - Do not make every week fit the same fixed module template. Keep the rendering flexible except for the watchlist anchor.
 - Do not use table grids as the default rendering for trend heatmaps, opportunity cards, scoring, or watchlists.
 - Do not re-add previously deleted helper copy, return buttons, action-jump buttons, hero deck paragraphs, or static date text without explicit user approval.
+- Do not restore `wavesight-nav.css`, `wavesight-topbar`, or links to the retired V3 column pages.
 
 ## Output
 

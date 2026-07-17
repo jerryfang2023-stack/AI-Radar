@@ -15,13 +15,13 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 
 ## Current Version Context
 
-- Current site version: `SITE-V3.4.5`.
+- Current public site version: `SITE-V4.1.0-unified-frontstage`.
 - Current Hermes supervision contract: `V3.4.3-daily-problem-watchdog`.
 - Current Business Signals column version: `BSIG-V2.2.0-pipeline-stage-ownership`.
 - Current Enterprise AI / FDE lens version: `EAI-V1.2.0-raw-card-ingestion-boundary`.
 - Current Business Signals data contract: `V3.3.6.3-business-source-artifact-aggregation`.
 - Version ledger: `context/version-ledger.md`.
-- SITE-V3.4.5 keeps First-Line Viewpoints person / original-date Obsidian persistence with dry-run idempotency, Business Signals unified Signal Cards, the separate AI Hardware lens, source-artifact aggregation, peer Raw artifact channels, V3-only Business Signals release gates, Raw / Pool diagnostic targets after healthy Card/frontstage supply, the Enterprise AI / FDE Lens Pool at `EAI-V1.2.0-raw-card-ingestion-boundary`, Community Intelligence local-first collection with Waiting-vs-Problem publication separation, the Reports Center route, source-backed opportunity maps, and relation paths. Hermes now observes and records problems only; it does not run early handoff, bounded recovery, or automatic full-chain reruns.
+- SITE-V4.1 keeps independent First-Line Viewpoints and Community Intelligence production, V4 factual events/FDE/hardware, and Industry Reports downstream application data. Business Signals Cards and graph/trend data remain internal compatibility assets only. Hermes observes and records problems; it does not run early handoff, bounded recovery, or automatic full-chain reruns.
 - Hermes must treat old month timeline files such as `YYYY-MM.md` as legacy / cleanup candidates, not as proof that current sync is healthy.
 - Do not judge Codex work by commit author name. In this repository Codex commits may use the configured Git identity.
 
@@ -42,7 +42,7 @@ Hermes should do this every Asia/Shanghai production day:
 
 Use this order every day to avoid duplicate checks and blind reruns:
 
-1. Version preflight: confirm only active files agree on `SITE-V3.4.5`, `BSIG-V2.2.0-pipeline-stage-ownership`, and `EAI-V1.2.0-raw-card-ingestion-boundary`. Treat ledger history as history.
+1. Version preflight: confirm public pages agree on `SITE-V4.1.0-unified-frontstage` and `IMAP-V2.1.0-v4-unified-frontstage`; internal compatibility files may retain `SITE-V3.4.5` and `BSIG-V2.2.0-pipeline-stage-ownership`. Treat ledger history as history.
 2. Lane readiness: check whether each producing lane has same-date output or an active same-date run before declaring missing data.
 3. Data quality: check the lane-specific public contract, not generic volume alone.
    - Business Signals: unified `BSIG-V2.2.0-pipeline-stage-ownership` Cards, separate AI Hardware lens-only items, source-first titles/facts, no Top10/candidate split, no backend-only / low-value items.
@@ -88,7 +88,7 @@ When Hermes checks Business Signals card counts, category mix, or funding presen
 1. Primary frontstage source: `01-SiteV2/site/data/v3-data-observation-desk.json`.
 2. Resolve `activeDate` from `meta.activeDate`.
 3. Count only `frontstageCards.filter(card.date === activeDate)`.
-4. If using `01-SiteV2/site/data/intelligence-graph-index.json`, use `todayFrontstageCards` and `summary.todayFrontstageCards` for the current public set.
+4. If using `01-SiteV2/site/data/intelligence-graph-index.json`, treat `todayFrontstageCards` and `summary.todayFrontstageCards` as internal compatibility analytics, not the public V4 event set.
 5. Do not use `coreSignalCards` as the public count; it is only a relationship-analysis subset.
 6. Do not use top-level `cards` as the current-day count unless it is explicitly filtered by `activeDate`; top-level `cards` is a historical archive.
 7. Do not report funding for today from `dailyLens.categoryStats.last7`, `dailyLens.categoryStats.total`, historical `cards`, or previous reports. Funding presence for today is `active-date public cards where category === "funding"`.

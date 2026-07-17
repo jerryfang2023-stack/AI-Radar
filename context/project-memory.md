@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-memory
-last_updated: 2026-07-09
+last_updated: 2026-07-17
 use_when:
   - project startup
   - agent handoff
@@ -17,11 +17,10 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 ## Stable Identity
 
 - WaveSight AI / Guanlan AI is an AI business intelligence asset system, not a general content site.
-- The public frontstage is organized around Business Signals, Reports Center, First-Line Viewpoints, and Community Intelligence.
+- The public frontstage is organized as a V4 Data Center plus one Application Center entry, Industry Reports.
 - Dashboard / Operations Console is a backend-facing operations surface, not a public content column.
-- Business Signals is the source-backed asset chain for Raw / Pool / Card / relationship graph / trend-candidate work.
-- First-Line Viewpoints is an independent builders / operator viewpoints column.
-- Community Intelligence is an independent logged-in community collection and archive stream.
+- Business Signals is an internal compatibility chain for Raw / Pool / Card / relationship graph / trend-candidate work; it is not a public page.
+- First-Line Viewpoints and Community Intelligence are independent data lanes projected into the V4 Data Center shell.
 - The local DuckDB data lake is an analytical index layer for machine queries; Obsidian remains the human-readable knowledge base.
 
 ## Non-Negotiable Rules
@@ -31,7 +30,8 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - Do not restore legacy copy gates as publication blockers.
 - Builders / First-Line Viewpoints must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 - Community posts are demand signals unless recaptured through source-backed business evidence.
-- If an old rule conflicts with current SITE-V3.4.5 context, rebuild or delete the old route instead of preserving compatibility.
+- If an old rule conflicts with the current SITE-V4.1.0 public contract, rebuild or delete the old route instead of restoring V3 page content.
+- Legacy V3 column URLs remain redirects only; no public page may load V3 navigation, V3 page assets, or the V3 desk JSON.
 
 ## Operating Model
 

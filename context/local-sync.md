@@ -72,7 +72,7 @@ When online monitoring adds or changes source pools, the local sync path still r
 3. The merge lands on `main`.
 4. Local sync pulls the updated files into Obsidian.
 
-For the current SITE-V3.4.5 routes:
+For the current SITE-V4.1 routes:
 
 - commercial signal sources are expected to land in the Raw / Pool / Card chain and then into `01-SiteV2/content/04-business-signals/` and `01-SiteV2/knowledge/01-Signal-Cards/`
 - builders sources are expected to land in the independent follow-builders chain and then into `01-SiteV2/site/data/follow-builders-daily.json` and `01-SiteV2/knowledge/02-Opinion-Timelines/`

@@ -68,8 +68,8 @@ Use tables when the reader needs comparison. Use cards or lists when the reader 
 
 ## Report Center Wiring
 
-- `reports.html` is the report center.
-- `intelligence-map.html` may surface reports below the intelligence-map core modules.
+- `intelligence-map.html` is the only Industry Reports entrance and leads with reports.
+- `reports.html` is a compatibility redirect only.
 - Show monthly and weekly reports as separate subcolumns when both exist.
 - Time-window selectors should sit in the section head when relevant.
 - Do not duplicate a `报告中心` button beside the selector unless there is a clear reader action.
@@ -83,4 +83,5 @@ Use tables when the reader needs comparison. Use cards or lists when the reader 
 - Tables are styled and readable.
 - Appendix contains nonessential method/data boundary information.
 - Report-center links open the correct monthly detail page.
+- The detail page uses the V4 sidebar and contains no V3 topbar, stylesheet, or retired column link.
 - `frontstage-regression-gate` passes.

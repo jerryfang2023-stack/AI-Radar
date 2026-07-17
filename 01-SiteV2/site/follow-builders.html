@@ -1,98 +1,21 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-version" content="SITE-V3.4.5">
-  <meta name="wavesight-column-version" content="FLV-V1.0.2-supervision-idempotency">
+  <meta name="wavesight-version" content="SITE-V4.1.0-unified-frontstage">
+  <meta http-equiv="refresh" content="0; url=data-center.html?view=viewpoints">
   <title>一线观点｜观澜 AI</title>
-  <link rel="stylesheet" href="assets/wavesight-nav.css">
-  <link rel="stylesheet" href="assets/follow-builders.css?v=20260609-page-title">
+  <link rel="canonical" href="data-center.html?view=viewpoints">
 </head>
-<body class="builder-page">
-  <header class="wavesight-topbar" aria-label="观澜 AI 导航">
-    <a class="wavesight-brand" href="v3-data-observation.html" aria-label="观澜 AI 首页">
-      <img class="wavesight-logo" src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI">
-    </a>
-    <nav class="wavesight-nav" aria-label="主导航">
-      <a href="v3-data-observation.html">商业信号<span>Business Signals</span></a>
-      <a href="intelligence-map.html">行业报告<span>Industry Reports</span></a>
-      <a href="follow-builders.html" aria-current="page">一线观点<span>Builders</span></a>
-      <a href="community-intelligence.html">社群情报<span>Community Intel</span></a>
-    </nav>
-  </header>
-
-  <main class="builder-shell">
-    <section class="builder-workbench" aria-labelledby="viewpoint-title">
-      <div class="builder-title-block">
-        <p class="builder-kicker">First-Line Viewpoints</p>
-        <h1 id="viewpoint-title">一线观点 <span class="workbench-summary" data-viewpoint-date>读取中</span></h1>
-      </div>
-      <div class="builder-controls" aria-label="筛选 Builder 言论">
-      <label>
-        <span>关键词</span>
-        <input type="search" data-search placeholder="搜索人物、公司、主题或原文">
-      </label>
-      <label>
-        <span>日期</span>
-        <select data-date-filter></select>
-      </label>
-      <label>
-        <span>主题</span>
-        <select data-topic-filter></select>
-      </label>
-      <label>
-        <span>来源</span>
-        <select data-source-filter>
-          <option value="all">全部来源</option>
-          <option value="x">X / Twitter</option>
-          <option value="podcast">Podcast</option>
-        </select>
-      </label>
-      </div>
-    </section>
-
-    <section class="builder-board" aria-label="Builder 言论列表">
-      <aside class="builder-rail">
-        <div class="section-head">
-          <div>
-            <p class="builder-kicker">Builders</p>
-            <h2>人物</h2>
-          </div>
-        </div>
-        <div class="builder-list" data-builder-list></div>
-
-        <section class="podcast-section" aria-labelledby="podcast-title">
-          <div class="section-head">
-            <div>
-              <p class="builder-kicker">Podcasts</p>
-              <h2 id="podcast-title">长访谈观察</h2>
-            </div>
-          </div>
-          <div class="podcast-grid" data-podcast-grid></div>
-        </section>
-      </aside>
-
-      <section class="remark-stage">
-        <div class="section-head stage-head">
-          <div>
-            <p class="builder-kicker">Daily Remarks</p>
-            <h2>公开言论</h2>
-          </div>
-          <span class="result-count" data-result-count></span>
-        </div>
-        <div class="remark-grid" data-remark-grid></div>
-      </section>
-    </section>
-  </main>
-
-  <dialog class="remark-dialog" data-dialog>
-    <div class="dialog-panel">
-      <button class="dialog-close" type="button" data-dialog-close aria-label="关闭">×</button>
-      <div data-dialog-content></div>
-    </div>
-  </dialog>
-
-  <script src="assets/follow-builders.js?v=20260609-zh-title" defer></script>
+<body>
+  <p>一线观点页面已迁移至 <a href="data-center.html?view=viewpoints">V4 一线观点</a>。</p>
+  <script>
+    const target = new URL("data-center.html?view=viewpoints", window.location.href);
+    const current = new URL(window.location.href);
+    current.searchParams.forEach((value, key) => { if (key !== "view") target.searchParams.set(key, value); });
+    target.hash = current.hash;
+    window.location.replace(target.href);
+  </script>
 </body>
 </html>

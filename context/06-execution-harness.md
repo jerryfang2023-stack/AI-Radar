@@ -73,7 +73,7 @@ Reads builders / follow-builders data only.
 Produces:
 
 - `01-SiteV2/site/data/follow-builders-daily.json`;
-- `01-SiteV2/site/follow-builders.html` frontstage view.
+- `01-SiteV2/site/data-center.html?view=viewpoints` frontstage view; `follow-builders.html` is a redirect only.
 - `agent-workflow/tools/assert-follow-builders-data.mjs` for freshness, source URL, duplicate, tag and fallback checks.
 
 This flow is independent. It must not feed business-signal Card generation, relationship graph, or trend candidates.
