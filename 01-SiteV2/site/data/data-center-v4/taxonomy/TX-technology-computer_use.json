@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "node": {
     "id": "TX-technology-computer_use",
@@ -17,13 +17,10 @@
     "typeLabel": "技术",
     "valueId": "computer_use",
     "eventIds": [
-      "EV-1da2e46e39a57d33",
       "EV-e42e55d1e11a2ba2",
       "EV-a4f052325d0ef230"
     ],
     "entityIds": [
-      "EN-cfd90af8403941bf",
-      "EN-96eebba49dbbf422",
       "EN-ea3bd73e2b506e00",
       "EN-9fbf261b62c1d7c0",
       "EN-7d3194f79e645c42",
@@ -32,94 +29,9 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-07-17"
+    "lastSeen": "2026-07-10"
   },
   "events": [
-    {
-      "id": "EV-1da2e46e39a57d33",
-      "dataDate": "2026-07-17",
-      "date": "2026-07-16",
-      "updatedDate": "2026-07-17",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Sable 完成 4500 万美元融资",
-      "originalTitle": "Sable Raises $45M to Build the First AI Employee that can Click, See, and Explain | Newswire",
-      "subject": "Sable",
-      "action": "Raises",
-      "object": "$45M to Build the First AI Employee that can Click, See, and Explain | Newswire",
-      "metrics": [
-        "$45M",
-        "$45 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "computer_use",
-          "name": "计算机操作"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "computer_use",
-          "name": "计算机操作"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "computer_use",
-          "name": "计算机操作"
-        }
-      ],
-      "entityIds": [
-        "EN-cfd90af8403941bf",
-        "EN-96eebba49dbbf422"
-      ],
-      "entityNames": [
-        "Sable",
-        "Intel"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://newswire.com/news/sable-raises-45m-to-build-the-first-ai-employee-that-can-click-see-and-explain",
-      "publisher": "newswire.com"
-    },
     {
       "id": "EV-e42e55d1e11a2ba2",
       "dataDate": "2026-07-10",
@@ -367,58 +279,6 @@
   ],
   "entities": [
     {
-      "id": "EN-cfd90af8403941bf",
-      "name": "Sable",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-1da2e46e39a57d33"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-computer_use"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-96eebba49dbbf422",
-      "name": "Intel",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-1da2e46e39a57d33",
-        "EV-4eaf3aabecae6016",
-        "EV-59da4e6dc6b61c4a",
-        "EV-36a9e4e908249381",
-        "EV-c2800c1c5a3f568f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation"
-      ],
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
-    },
-    {
       "id": "EN-ea3bd73e2b506e00",
       "name": "Meta",
       "entityType": "organization_candidate",
@@ -430,7 +290,6 @@
       ],
       "eventIds": [
         "EV-02882e6f5e1902c6",
-        "EV-5df885dbd24b6d00",
         "EV-427081ec574b43bb",
         "EV-7f77e6a2d1698307",
         "EV-b39d759a11086d41",
@@ -460,7 +319,6 @@
         "EV-c98d4ee7764d51b2",
         "EV-01e414a25347cfd9",
         "EV-ef823877347ff40f",
-        "EV-04cf95633b564f9a",
         "EV-02b07069713d9a1c",
         "EV-322796d9761a0824",
         "EV-2d56dec8dfeb2b56",
@@ -471,7 +329,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
@@ -482,7 +339,8 @@
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-guardrails_safety",
-        "TX-technology-image_generation"
+        "TX-technology-image_generation",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -512,11 +370,9 @@
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
         "EV-b95539d17772a4ce",
-        "EV-b2e374d54b10b9af",
         "EV-4763b46821ab746e",
         "EV-58c1cc3749294649",
         "EV-3398ae53a199be16",
-        "EV-bd508dbe4205774f",
         "EV-7c899d5decafc42f",
         "EV-9fb217d7e855c8f7",
         "EV-268250d426c1a4a0",
@@ -542,10 +398,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-on_device",
         "TX-use_case-cybersecurity",
         "TX-industry-retail_ecommerce",
@@ -553,14 +407,14 @@
         "TX-technology-speech_audio",
         "TX-technology-open_weights",
         "TX-technology-reasoning",
-        "TX-technology-model_context_protocol"
+        "TX-technology-model_context_protocol",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-8652f6cd9088f1fa",
         "EN-597d8c4afa5fe3d6",
         "EN-8d4321d936320802"
       ],
-      "firstSeen": "2026-04-16",
+      "firstSeen": "2026-05-20",
       "lastSeen": "2026-07-17"
     },
     {
@@ -577,7 +431,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4da1a7c4d527eb69",
         "EV-7f77e6a2d1698307",
         "EV-c9af33ffe65d236b",
         "EV-efca54f3b07072a6",
@@ -611,9 +464,8 @@
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
-        "EV-a3d022fa41708774",
+        "EV-a4a61babc902931a",
+        "EV-1c2723ad61d192bd",
         "EV-cf5b2a0aff3914bd",
         "EV-302018f2e960a8bf",
         "EV-000f2abf549268a6",
@@ -671,7 +523,7 @@
         "EV-4f4274fb5920a8b4",
         "EV-0aa2e53c51b2b8e5",
         "EV-5cd10de5c12916f0",
-        "EV-1a5628259e6ee487",
+        "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
         "EV-14b44a40808340f5",
         "EV-2d56dec8dfeb2b56",
@@ -696,19 +548,18 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
@@ -716,9 +567,12 @@
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-model_context_protocol",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-17"
     },
@@ -754,10 +608,7 @@
         "EV-a9a3b5b56befe593",
         "EV-f7e41493addd1104",
         "EV-3398ae53a199be16",
-        "EV-d53cd33e8f541a65",
-        "EV-810e5c71956fccbc",
         "EV-04efb4eecbb8125f",
-        "EV-0ca3a9830e25f56b",
         "EV-6359c9f6c2609a38",
         "EV-04ee2bc4ac888358",
         "EV-c2d784ef0a5376f8",
@@ -813,10 +664,10 @@
         "EV-c28e0d02272537d8",
         "EV-d31057c6f6ec28ba",
         "EV-342799d4e68e7416",
+        "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
-        "EV-70fd0c4e482a646e",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
         "EV-6266c73d470e8aef",
@@ -827,11 +678,10 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
@@ -846,15 +696,19 @@
         "TX-use_case-knowledge_search",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
-        "TX-technology-open_weights",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422"
+        "EN-96eebba49dbbf422",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-992eafe973f69075",
+        "EN-0e008e2c06144ec8"
       ],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-17"

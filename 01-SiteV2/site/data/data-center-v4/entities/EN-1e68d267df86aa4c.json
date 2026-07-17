@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 727,
+    "quarantinedEventCount": 50
+  },
+  "entity": {
+    "id": "EN-1e68d267df86aa4c",
+    "name": "WPS Comate AI",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-702ed039940800fb"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-knowledge_search"
+    ],
+    "relatedEntityIds": [
+      "EN-3f726694f178ed7a"
+    ],
+    "firstSeen": "2026-07-15",
+    "lastSeen": "2026-07-16",
+    "relationIds": [
+      "REL2-9436eb4ceea7a526"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-702ed039940800fb"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-702ed039940800fb",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "金山办公推出 WPS Comate AI 办公客户端",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "knowledge_search",
+            "dimensionName": "应用场景",
+            "name": "知识与搜索"
+          }
+        ],
+        "entityIds": [
+          "EN-3f726694f178ed7a",
+          "EN-45e0ade11fed1e44",
+          "EN-1e68d267df86aa4c",
+          "EN-9d93b78264eb6acb"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-3f726694f178ed7a",
+      "name": "Kingsoft Office",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "金山办公"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-385dc1ac09a211bd",
+        "EV-702ed039940800fb",
+        "EV-d2c1c077a2102f35",
+        "EV-4e47da5d7d18c1c4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-9d93b78264eb6acb",
+        "EN-1e68d267df86aa4c"
+      ],
+      "firstSeen": "2026-06-20",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-9436eb4ceea7a526",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-3f726694f178ed7a",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1e68d267df86aa4c",
+      "object_type": "entity",
+      "event_id": "EV-702ed039940800fb",
+      "claim_refs": [
+        "CL-c925bbad2b823d08",
+        "CL-5fd685ea5e45fab9",
+        "CL-465a68f25ab3c791",
+        "CL-9331e22d2beb68e3"
+      ],
+      "source_refs": [
+        "SA-c82c09f4581c09fc"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-knowledge_search",
+      "name": "知识与搜索",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "knowledge_search",
+      "eventIds": [
+        "EV-54e23045d3334e65",
+        "EV-702ed039940800fb",
+        "EV-f064e5f05c36c404",
+        "EV-297b647e3787f3d6"
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-3f726694f178ed7a",
+        "EN-45e0ade11fed1e44",
+        "EN-1e68d267df86aa4c",
+        "EN-9d93b78264eb6acb",
+        "EN-2086d0f715be4a4d",
+        "EN-82eaaba81d9dcc54"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-13",
+      "lastSeen": "2026-07-16"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

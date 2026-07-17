@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 727,
+    "quarantinedEventCount": 50
+  },
+  "entity": {
+    "id": "EN-50537dab76505dfc",
+    "name": "苹果",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-f282ab8740ff0096",
+      "EV-5cd10de5c12916f0"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-15",
+    "lastSeen": "2026-07-16",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-f282ab8740ff0096"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-5cd10de5c12916f0"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-f282ab8740ff0096",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "苹果正寻求收购人工智能芯片企业，已准备数十亿美元级别交易",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "compute_system",
+            "dimensionName": "产品形态",
+            "name": "计算系统"
+          }
+        ],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-50537dab76505dfc"
+        ]
+      },
+      {
+        "id": "EV-5cd10de5c12916f0",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-16",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "苹果起诉OpenAI员工窃密案：2封邮件与1次姓名混淆致沟通受阻",
+        "displayTags": [],
+        "entityIds": [
+          "EN-3a7bd3e2360a3d29",
+          "EN-50537dab76505dfc",
+          "EN-7d3194f79e645c42"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

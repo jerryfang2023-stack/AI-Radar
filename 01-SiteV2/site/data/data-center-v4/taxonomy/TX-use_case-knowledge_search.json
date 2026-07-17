@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "node": {
     "id": "TX-use_case-knowledge_search",
@@ -25,6 +25,9 @@
     "entityIds": [
       "EN-bbdefa2950f49882",
       "EN-3f726694f178ed7a",
+      "EN-45e0ade11fed1e44",
+      "EN-1e68d267df86aa4c",
+      "EN-9d93b78264eb6acb",
       "EN-2086d0f715be4a4d",
       "EN-82eaaba81d9dcc54"
     ],
@@ -171,13 +174,34 @@
         }
       ],
       "entityIds": [
-        "EN-3f726694f178ed7a"
+        "EN-3f726694f178ed7a",
+        "EN-45e0ade11fed1e44",
+        "EN-1e68d267df86aa4c",
+        "EN-9d93b78264eb6acb"
       ],
       "entityNames": [
-        "Kingsoft Office"
+        "Kingsoft Office",
+        "金山办公",
+        "WPS Comate AI",
+        "WPS 365"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "WPS Comate AI",
+      "products": [
+        {
+          "name": "WPS Comate AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Kingsoft Office"
+          ]
+        },
+        {
+          "name": "WPS 365",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Kingsoft Office"
+          ]
+        }
+      ],
       "sourceUrl": "https://ithome.com/0/977/105.htm",
       "publisher": "IT之家（RSS）"
     },
@@ -377,10 +401,7 @@
         "EV-a9a3b5b56befe593",
         "EV-f7e41493addd1104",
         "EV-3398ae53a199be16",
-        "EV-d53cd33e8f541a65",
-        "EV-810e5c71956fccbc",
         "EV-04efb4eecbb8125f",
-        "EV-0ca3a9830e25f56b",
         "EV-6359c9f6c2609a38",
         "EV-04ee2bc4ac888358",
         "EV-c2d784ef0a5376f8",
@@ -436,10 +457,10 @@
         "EV-c28e0d02272537d8",
         "EV-d31057c6f6ec28ba",
         "EV-342799d4e68e7416",
+        "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
-        "EV-70fd0c4e482a646e",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
         "EV-6266c73d470e8aef",
@@ -450,11 +471,10 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
@@ -469,15 +489,19 @@
         "TX-use_case-knowledge_search",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
-        "TX-technology-open_weights",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422"
+        "EN-96eebba49dbbf422",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-992eafe973f69075",
+        "EN-0e008e2c06144ec8"
       ],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-17"
@@ -505,9 +529,81 @@
         "TX-technology-agentic_execution",
         "TX-use_case-knowledge_search"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-9d93b78264eb6acb",
+        "EN-1e68d267df86aa4c"
+      ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-45e0ade11fed1e44",
+      "name": "金山办公",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-702ed039940800fb",
+        "EV-d2c1c077a2102f35"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-1e68d267df86aa4c",
+      "name": "WPS Comate AI",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-702ed039940800fb"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-3f726694f178ed7a"
+      ],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-9d93b78264eb6acb",
+      "name": "WPS 365",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-702ed039940800fb"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-3f726694f178ed7a"
+      ],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-2086d0f715be4a4d",

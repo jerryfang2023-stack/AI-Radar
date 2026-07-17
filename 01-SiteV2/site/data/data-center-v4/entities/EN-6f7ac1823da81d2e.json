@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "entity": {
     "id": "EN-6f7ac1823da81d2e",
@@ -23,8 +23,6 @@
     "eventIds": [
       "EV-ed65f3187aa6aa40",
       "EV-d4d7b019ff0015df",
-      "EV-371a54f74b9d332c",
-      "EV-cde5c3e5ef83bd51",
       "EV-fe2b0d74944d6128",
       "EV-57e6392fe3bb69cd",
       "EV-fb0838335d861b02",
@@ -32,11 +30,13 @@
       "EV-a498b12f3fa2197e",
       "EV-43fdb17a23e13f97",
       "EV-9260a223a780b898",
-      "EV-01e414a25347cfd9"
+      "EV-01e414a25347cfd9",
+      "EV-86537be17d50ff20"
     ],
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
+      "TX-technology-long_context",
       "TX-technology-on_device",
       "TX-technology-open_weights"
     ],
@@ -49,12 +49,9 @@
         "EV-ed65f3187aa6aa40",
         "EV-d4d7b019ff0015df"
       ],
-      "deployments": [
-        "EV-371a54f74b9d332c"
-      ],
+      "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-cde5c3e5ef83bd51",
         "EV-fe2b0d74944d6128",
         "EV-57e6392fe3bb69cd",
         "EV-fb0838335d861b02",
@@ -66,57 +63,46 @@
       ],
       "hardware": [],
       "organizationPeople": [],
-      "other": []
+      "other": [
+        "EV-86537be17d50ff20"
+      ]
     },
     "timeline": [
       {
-        "id": "EV-371a54f74b9d332c",
+        "id": "EV-86537be17d50ff20",
         "dataDate": "2026-07-16",
         "date": "2026-07-15",
-        "eventType": "deployment",
-        "eventTypeLabel": "部署",
-        "eventGroup": "部署与案例",
-        "status": "planned",
-        "statusLabel": "计划中",
-        "title": "Apple Intelligence 获准在华上线，将集成阿里巴巴 Qwen 大模型",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "id": "model",
-            "dimensionName": "产品形态",
-            "name": "模型"
-          }
-        ],
-        "entityIds": [
-          "EN-3a7bd3e2360a3d29",
-          "EN-047364b9be67f665",
-          "EN-6f7ac1823da81d2e",
-          "EN-5388bc10736a0eff"
-        ]
-      },
-      {
-        "id": "EV-cde5c3e5ef83bd51",
-        "dataDate": "2026-07-16",
-        "date": "2026-07-16",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "OpenAI 前 CTO 穆拉蒂创业公司 TML 发布首款 AI 模型 Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构",
+        "eventType": "research_result",
+        "eventTypeLabel": "研究结果",
+        "eventGroup": "研究结果",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Mozilla 2026 开源 AI 报告：DeepSeek V4 Flash 月用量 18.4T Tokens 登顶",
         "displayTags": [
           {
             "dimensionId": "technology",
             "dimensionName": "技术",
             "id": "open_weights",
             "name": "开放权重"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文"
           }
         ],
         "entityIds": [
-          "EN-7d3194f79e645c42",
-          "EN-8f71c4871a160172",
           "EN-6f7ac1823da81d2e",
-          "EN-c70eca6b0f88f44d"
+          "EN-c608c4787821de1b",
+          "EN-9c8ae69b84f21a2e",
+          "EN-6ac6ad44bb9995ca"
         ]
       },
       {
@@ -374,8 +360,6 @@
       "valueId": "agentic_execution",
       "eventIds": [
         "EV-02882e6f5e1902c6",
-        "EV-1da2e46e39a57d33",
-        "EV-c64e6836b9cd2b17",
         "EV-38cce1b72977ff2b",
         "EV-427081ec574b43bb",
         "EV-095e1a90f14ccdb9",
@@ -410,7 +394,6 @@
         "EV-f487788f3d44f288",
         "EV-b546801d74dc61b1",
         "EV-c808bd4cb76bda9e",
-        "EV-34255348e97ca5fe",
         "EV-7aaed0a2ae5cf8b6",
         "EV-21c2e81a7c073e04",
         "EV-abe44ba0233e8516",
@@ -462,6 +445,7 @@
         "EV-d76dac938af08f62",
         "EV-283e88bdd15ed87e",
         "EV-234ad54940674bf6",
+        "EV-bbc1042dcf5ad317",
         "EV-36a9e4e908249381",
         "EV-02686922dd82c4aa",
         "EV-2fab4396000198d2",
@@ -472,11 +456,9 @@
         "EV-b95539d17772a4ce",
         "EV-f63462e34ea40699",
         "EV-21caef1790021587",
-        "EV-de6682a190c78625",
         "EV-a2c13c14efec9218",
         "EV-1fbead21a2dd47a0",
         "EV-c01b11eed792b3e8",
-        "EV-b2e374d54b10b9af",
         "EV-58c1cc3749294649",
         "EV-45be473baf6dfa4c",
         "EV-8fcb52bb6ec980af",
@@ -485,13 +467,10 @@
         "EV-a8a8f26c5128d894",
         "EV-653cbce2ccc79f8b",
         "EV-7c899d5decafc42f",
-        "EV-c2800c1c5a3f568f",
-        "EV-1b173bce1d43fb3d",
-        "EV-303b418c63895ba6",
-        "EV-48b20c05c9530810",
+        "EV-26cd4d692404e5c6",
+        "EV-a4a61babc902931a",
         "EV-1de38866b4b92754",
         "EV-347d250e2769de9a",
-        "EV-c66ea834b364c3f5",
         "EV-d2c1c077a2102f35",
         "EV-fe2b0d74944d6128",
         "EV-63b11635dd8d53a2",
@@ -508,7 +487,6 @@
         "EV-f9eebe4e3b9b667c",
         "EV-5e5294fe06002bc1",
         "EV-0a16dac5c414ce8e",
-        "EV-3e55e1cd1d54f6ef",
         "EV-3011ea85c51a3ee0",
         "EV-3a7128e2d7ff149e",
         "EV-40390136762c64d3",
@@ -584,15 +562,13 @@
         "EV-a4f052325d0ef230",
         "EV-0aa2e53c51b2b8e5",
         "EV-70fd0c4e482a646e",
+        "EV-86537be17d50ff20",
         "EV-2ca9d0a3ca53c3bf"
       ],
       "entityIds": [
         "EN-2a920347dfcf07a7",
         "EN-d5edfd3c9768e212",
         "EN-ea3bd73e2b506e00",
-        "EN-cfd90af8403941bf",
-        "EN-96eebba49dbbf422",
-        "EN-95fb1fa9a88b393c",
         "EN-fdcd4ec7d0546e95",
         "EN-9c8ae69b84f21a2e",
         "EN-4d748ebd71af03a7",
@@ -620,7 +596,6 @@
         "EN-85759b57e5dd2ccb",
         "EN-f3d05a0f6248941d",
         "EN-bd573a2c01411003",
-        "EN-37a54e5c414654d8",
         "EN-c70eca6b0f88f44d",
         "EN-bbdefa2950f49882",
         "EN-3ccbd9105a45d8fc",
@@ -655,19 +630,19 @@
         "EN-5388bc10736a0eff",
         "EN-3a7bd3e2360a3d29",
         "EN-9fbf261b62c1d7c0",
+        "EN-916a98f0fa2a39af",
+        "EN-96eebba49dbbf422",
         "EN-d9b1d7819af92e77",
         "EN-88e2cce43eeadb36",
         "EN-4094a2b7125c7564",
         "EN-b5738c169b693bee",
-        "EN-916a98f0fa2a39af",
-        "EN-cbc62794911ff31b",
-        "EN-f48a4090493d2b5e",
         "EN-ce635c4eabff5e4f",
         "EN-f67676350b89f220",
         "EN-cd496aee616b7e9b",
         "EN-f4bec299df3f4f27",
         "EN-373ac021a2c0bb2c",
         "EN-c13e2f4a44bb01ed",
+        "EN-cbc62794911ff31b",
         "EN-3f726694f178ed7a",
         "EN-3a9b395103419892",
         "EN-f3cfedbe8428c9f7",
@@ -676,27 +651,25 @@
         "EN-50ba7ff15827787b",
         "EN-12b0c8b376b8375e",
         "EN-597d8c4afa5fe3d6",
-        "EN-ac123e56b0168ec2",
-        "EN-8395dc051feafc4c",
-        "EN-6fcba5d96a4fadfd",
-        "EN-e78bdebae031095b",
+        "EN-9612b6f6884e062f",
+        "EN-820a72d1d4b51ae7",
+        "EN-74692028630429c7",
         "EN-e93e29634540a290",
-        "EN-4dbe391b8fcf977a",
-        "EN-6f21a653c48f4f19",
+        "EN-dc6c28a2123e8efb",
+        "EN-45e0ade11fed1e44",
         "EN-636fa9664f878a4d",
         "EN-6c87e5496f592f3c",
         "EN-6f7ac1823da81d2e",
         "EN-2c348893efb2316e",
         "EN-43a340bb75b45f02",
         "EN-3db1f560db626918",
-        "EN-210a6aeaed360009",
-        "EN-a33d30b5f34bdff5",
         "EN-754b113d548b4469",
         "EN-e395d03e988d30a9",
         "EN-2086d0f715be4a4d",
         "EN-c31a277efac23f52",
         "EN-4adc2faea521b1f1",
         "EN-2dc010636b9dce91",
+        "EN-ac123e56b0168ec2",
         "EN-46a4eebd20d881ec",
         "EN-716f0a8b380bb7d0",
         "EN-f7bcdd64ca6332b2",
@@ -706,7 +679,11 @@
         "EN-042e9398f2cc8902",
         "EN-11cf7e437e02b626",
         "EN-e956b4e6d9c37fa7",
-        "EN-96045bee6a2d2527"
+        "EN-e78bdebae031095b",
+        "EN-6fcba5d96a4fadfd",
+        "EN-96045bee6a2d2527",
+        "EN-c608c4787821de1b",
+        "EN-6ac6ad44bb9995ca"
       ],
       "fdeIds": [
         "FDE-754c5a5fd41e64c4",
@@ -716,6 +693,7 @@
         "FDE-21fb0ab2e92411f4",
         "FDE-ef57fbc39a8c11f6",
         "FDE-dadf0e9572889d3d",
+        "FDE-de1562b0634b20ed",
         "FDE-602624cf072c079d",
         "FDE-a5d8dfac061bc21b",
         "FDE-779bb70e06a29ed4",
@@ -725,19 +703,70 @@
         "FDE-a1c35f8b9ea1d489",
         "FDE-ef39df7f58226836",
         "FDE-5587adb203295543",
-        "FDE-d35bf5e6fe7cef6b",
-        "FDE-8d7df617732e7c45",
         "FDE-ef9fdaf8134b8c2f",
         "FDE-352f1b6aaa2066b8",
         "FDE-08f12caedc3b2f13",
         "FDE-5e60bdedfcb3a425"
       ],
       "hardwareIds": [
-        "HW-0ebffabe51a60966",
+        "HW-2ce4c2fb193555e3",
         "HW-1565758070e2b0e1",
         "HW-d37c3458323c3093"
       ],
       "firstSeen": "2026-03-13",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "TX-technology-long_context",
+      "name": "长上下文",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "long_context",
+      "eventIds": [
+        "EV-80e54c9a390da293",
+        "EV-21caef1790021587",
+        "EV-0d5a32aca724d30e",
+        "EV-653cbce2ccc79f8b",
+        "EV-70e3f88cb06a856c",
+        "EV-ebe02c213368afae",
+        "EV-c410d77c8d531e5f",
+        "EV-761d76b722321673",
+        "EV-09d3ce5611881ed4",
+        "EV-745adb0e9f7a75a2",
+        "EV-57f083a39393d841",
+        "EV-7fd3102ac547cbda",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-3a7bd3e2360a3d29",
+        "EN-b5251b35f15bedc4",
+        "EN-607964040e4b62e0",
+        "EN-23dcd1053b8a922f",
+        "EN-7d3194f79e645c42",
+        "EN-e4f9c522e1c89280",
+        "EN-76ac3e702b5ccaff",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-8f71c4871a160172",
+        "EN-78624f0a98e78301",
+        "EN-ea3bd73e2b506e00",
+        "EN-bbdefa2950f49882",
+        "EN-ce635c4eabff5e4f",
+        "EN-72e8088a05b38ae3",
+        "EN-6f7ac1823da81d2e",
+        "EN-c608c4787821de1b",
+        "EN-9c8ae69b84f21a2e",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "fdeIds": [
+        "FDE-5587adb203295543"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
       "lastSeen": "2026-07-17"
     },
     {
@@ -752,6 +781,7 @@
         "EV-283e88bdd15ed87e",
         "EV-653cbce2ccc79f8b",
         "EV-04efb4eecbb8125f",
+        "EV-8a9b12665a3e40a0",
         "EV-712bb6241160c4c5",
         "EV-0a5e65aa46b0d194",
         "EV-52508b70ccd2cc0b",
@@ -760,6 +790,7 @@
         "EV-0597e07d7e73051a",
         "EV-02186ed7885f68fe",
         "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
         "EV-f4876d2e1a20d87b"
       ],
       "entityIds": [
@@ -772,13 +803,23 @@
         "EN-7df09a7717ef2feb",
         "EN-c04bd5ebd10ab696",
         "EN-50ba7ff15827787b",
-        "EN-2c348893efb2316e",
+        "EN-992eafe973f69075",
+        "EN-1229af0aa3b0305e",
+        "EN-81e577740888ca6d",
+        "EN-968e2d5b08687bf4",
         "EN-3a7bd3e2360a3d29",
+        "EN-8147e6fed86d42c1",
+        "EN-c608c4787821de1b",
+        "EN-6f21a653c48f4f19",
+        "EN-5388bc10736a0eff",
+        "EN-12a81529bba89666",
+        "EN-2c348893efb2316e",
         "EN-c70eca6b0f88f44d",
         "EN-ce635c4eabff5e4f",
         "EN-c3ce0cc92b48bbd6",
-        "EN-968e2d5b08687bf4",
-        "EN-0899bccb1b028521"
+        "EN-0899bccb1b028521",
+        "EN-3dd90c2e1bf28b32",
+        "EN-5d7b7e77768bfdfc"
       ],
       "fdeIds": [
         "FDE-ef57fbc39a8c11f6"
@@ -797,24 +838,24 @@
       "valueId": "open_weights",
       "eventIds": [
         "EV-06fd0cc175652354",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
         "EV-3028dfadf94c8f4c",
         "EV-6dbf6cfbb35fe77c",
         "EV-a06011da69abcc3d",
         "EV-7fd3102ac547cbda",
-        "EV-2258329f33d413cf"
+        "EV-2258329f33d413cf",
+        "EV-86537be17d50ff20"
       ],
       "entityIds": [
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d",
-        "EN-8f71c4871a160172",
-        "EN-6f7ac1823da81d2e",
-        "EN-bbdefa2950f49882",
         "EN-8d4321d936320802",
         "EN-9fbf261b62c1d7c0",
         "EN-b3e3bce83d29e787",
-        "EN-72e8088a05b38ae3"
+        "EN-72e8088a05b38ae3",
+        "EN-6f7ac1823da81d2e",
+        "EN-c608c4787821de1b",
+        "EN-9c8ae69b84f21a2e",
+        "EN-6ac6ad44bb9995ca"
       ],
       "fdeIds": [],
       "hardwareIds": [],
@@ -822,47 +863,6 @@
       "lastSeen": "2026-07-16"
     }
   ],
-  "fde": [
-    {
-      "id": "FDE-fc8e00f2ee7500e3",
-      "eventId": "EV-371a54f74b9d332c",
-      "dataDate": "2026-07-16",
-      "date": "2026-07-15",
-      "title": "Apple Intelligence 获准在华上线，将集成阿里巴巴 Qwen 大模型",
-      "stage": "planned",
-      "stageLabel": "计划中",
-      "customer": "Apple",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "，将集成阿里巴巴 Qwen 大模型",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "Alibaba confirmed the company’s news to CNBC in a statement, saying that Qwen would be “integrated into Apple Intelligence experiences,” but did not provide a timeframe. It also said the integrations would involve AI capabilities like “text and image understanding and generation.”"
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai",
-      "entityIds": [
-        "EN-3a7bd3e2360a3d29",
-        "EN-047364b9be67f665",
-        "EN-6f7ac1823da81d2e",
-        "EN-5388bc10736a0eff"
-      ]
-    }
-  ],
+  "fde": [],
   "hardware": []
 }

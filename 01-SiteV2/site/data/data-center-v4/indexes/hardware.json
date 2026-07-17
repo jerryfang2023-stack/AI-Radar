@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "hardware": [
     {
@@ -24,12 +24,43 @@
       "supplier": "NVIDIA",
       "customer": "未披露",
       "processNode": "未披露",
+      "capacity": 32,
+      "capacityUnit": "GB",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent",
+      "sourceName": "blogs.nvidia.com",
+      "sourceDate": "2026-07-16",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-cbc62794911ff31b",
+        "EN-a1b0d8a938903dc7",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d"
+      ]
+    },
+    {
+      "id": "HW-2ce4c2fb193555e3",
+      "eventId": "EV-a4a61babc902931a",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-16",
+      "title": "OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体",
+      "hardwareType": "input_device",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
       "capacity": "未披露",
       "capacityUnit": "",
       "site": "未披露",
       "region": "未披露",
       "contractValue": "未披露",
-      "shipmentDate": "2026-07-15",
+      "shipmentDate": "未披露",
       "tags": [
         {
           "dimensionId": "technology",
@@ -38,41 +69,13 @@
           "name": "智能体"
         }
       ],
-      "sourceUrl": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent",
-      "sourceName": "blogs.nvidia.com",
-      "sourceDate": "2026-07-16",
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-cbc62794911ff31b"
-      ]
-    },
-    {
-      "id": "HW-51034436efb8365e",
-      "eventId": "EV-69784fe31cfdfc44",
-      "dataDate": "2026-07-17",
-      "date": "2026-07-16",
-      "title": "NVIDIA 扩展 Jetson Thor 计算机家族，新增 T3000、T2000 模组",
-      "hardwareType": "ai_device",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
-      "supplier": "NVIDIA",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": 865,
-      "capacityUnit": "TFLOPS",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/977/455.htm",
+      "sourceUrl": "https://ithome.com/0/977/267.htm",
       "sourceName": "IT之家（RSS）",
       "sourceDate": "2026-07-16",
       "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-a1b0d8a938903dc7",
-        "EN-7d3c95ebe1221dbb"
+        "EN-820a72d1d4b51ae7",
+        "EN-7d3194f79e645c42",
+        "EN-74692028630429c7"
       ]
     },
     {
@@ -80,7 +83,7 @@
       "eventId": "EV-cafe435ddd007821",
       "dataDate": "2026-07-17",
       "date": "2026-07-16",
-      "title": "日本启动 Noetra 国家级 AI 基础设施，计划采购 2.75 万枚 NVIDIA Rubin 芯片",
+      "title": "NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施",
       "hardwareType": "gpu",
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
@@ -100,12 +103,6 @@
           "dimensionName": "技术",
           "id": "embodied_ai",
           "name": "具身智能"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
         }
       ],
       "sourceUrl": "https://japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots",
@@ -120,42 +117,8 @@
       ]
     },
     {
-      "id": "HW-103be168bfc1bff8",
-      "eventId": "EV-a3d022fa41708774",
-      "dataDate": "2026-07-16",
-      "date": "2026-07-15",
-      "title": "OpenAI 发布 Codex Micro 键盘",
-      "hardwareType": "input_device",
-      "eventType": "hardware_product",
-      "eventTypeLabel": "硬件产品",
-      "computeLayer": "未披露",
-      "supplier": "OpenAI",
-      "customer": "未披露",
-      "processNode": "未披露",
-      "capacity": 230,
-      "capacityUnit": "$",
-      "site": "未披露",
-      "region": "未披露",
-      "contractValue": "$230 ",
-      "shipmentDate": "未披露",
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
-        }
-      ],
-      "sourceUrl": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex",
-      "sourceName": "TechCrunch AI",
-      "sourceDate": "2026-07-15",
-      "entityIds": [
-        "EN-7d3194f79e645c42"
-      ]
-    },
-    {
-      "id": "HW-ee4e70904c107cfc",
-      "eventId": "EV-ba28d2085f87b6f0",
+      "id": "HW-2e209cb3dffbef1b",
+      "eventId": "EV-98dd0db65ab955f7",
       "dataDate": "2026-07-16",
       "date": "2026-07-15",
       "title": "交友应用 Soul 将推出首款便携式 AI 智能硬件，搭载自研大模型 SoulX 亮相 WAIC 2026",
@@ -163,7 +126,7 @@
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
       "computeLayer": "未披露",
-      "supplier": "Soul",
+      "supplier": "未披露",
       "customer": "未披露",
       "processNode": "未披露",
       "capacity": "未披露",
@@ -177,6 +140,7 @@
       "sourceName": "IT之家（RSS）",
       "sourceDate": "2026-07-15",
       "entityIds": [
+        "EN-4e3da39e54ff3137",
         "EN-ae0facccf0a3723a"
       ]
     },

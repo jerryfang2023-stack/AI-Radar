@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "node": {
     "id": "TX-technology-open_weights",
@@ -18,24 +18,24 @@
     "valueId": "open_weights",
     "eventIds": [
       "EV-06fd0cc175652354",
-      "EV-cde5c3e5ef83bd51",
-      "EV-0ca3a9830e25f56b",
       "EV-3028dfadf94c8f4c",
       "EV-6dbf6cfbb35fe77c",
       "EV-a06011da69abcc3d",
       "EV-7fd3102ac547cbda",
-      "EV-2258329f33d413cf"
+      "EV-2258329f33d413cf",
+      "EV-86537be17d50ff20"
     ],
     "entityIds": [
       "EN-7d3194f79e645c42",
       "EN-c70eca6b0f88f44d",
-      "EN-8f71c4871a160172",
-      "EN-6f7ac1823da81d2e",
-      "EN-bbdefa2950f49882",
       "EN-8d4321d936320802",
       "EN-9fbf261b62c1d7c0",
       "EN-b3e3bce83d29e787",
-      "EN-72e8088a05b38ae3"
+      "EN-72e8088a05b38ae3",
+      "EN-6f7ac1823da81d2e",
+      "EN-c608c4787821de1b",
+      "EN-9c8ae69b84f21a2e",
+      "EN-6ac6ad44bb9995ca"
     ],
     "fdeIds": [],
     "hardwareIds": [],
@@ -148,165 +148,6 @@
       "products": [],
       "sourceUrl": "https://techfundingnews.com/featherless-ai-20m-series-a-amd-airbus-open-source-ai-infrastructure",
       "publisher": "techfundingnews.com"
-    },
-    {
-      "id": "EV-cde5c3e5ef83bd51",
-      "dataDate": "2026-07-16",
-      "date": "2026-07-16",
-      "updatedDate": "2026-07-16",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "OpenAI 前 CTO 穆拉蒂创业公司 TML 发布首款 AI 模型 Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构",
-      "originalTitle": "",
-      "subject": "OpenAI 前 CTO 穆拉蒂创业公司 TML",
-      "action": "发布首款 AI 模型",
-      "object": "Inkling：9750 亿参数，借鉴 DeepSeek-V3 架构",
-      "metrics": [
-        "9750 亿"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
-        }
-      ],
-      "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-8f71c4871a160172",
-        "EN-6f7ac1823da81d2e",
-        "EN-c70eca6b0f88f44d"
-      ],
-      "entityNames": [
-        "OpenAI",
-        "Thinking Machines Lab",
-        "DeepSeek",
-        "Anthropic"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://ithome.com/0/977/281.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-0ca3a9830e25f56b",
-      "dataDate": "2026-07-16",
-      "date": "2026-07-15",
-      "updatedDate": "2026-07-16",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Thinking Machines Lab 发布首个自研开源模型 Inkling",
-      "originalTitle": "",
-      "subject": "Thinking Machines Lab",
-      "action": "发布首个自研开源模型",
-      "object": "Inkling",
-      "metrics": [
-        "84.7%"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
-        }
-      ],
-      "facets": {
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "model",
-            "dimensionName": "产品形态",
-            "name": "模型"
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
-        }
-      ],
-      "entityIds": [
-        "EN-8f71c4871a160172",
-        "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d",
-        "EN-bbdefa2950f49882"
-      ],
-      "entityNames": [
-        "Thinking Machines Lab",
-        "OpenAI",
-        "Anthropic",
-        "Google"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling",
-      "publisher": "TechCrunch：AI（RSS）"
     },
     {
       "id": "EV-3028dfadf94c8f4c",
@@ -787,6 +628,122 @@
       "products": [],
       "sourceUrl": "https://marktechpost.com/2026/06/06/nvidia-releases-nemotron-3-5-asr-a-600m-parameter-cache-aware-streaming-model-transcribing-40-language-locales-in-real-time",
       "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-86537be17d50ff20",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Mozilla 2026 开源 AI 报告：DeepSeek V4 Flash 月用量 18.4T Tokens 登顶",
+      "originalTitle": "",
+      "subject": "Mozilla 2026 开源 AI",
+      "action": "报告：DeepSeek V4 Flash 月用量 18.4T Tokens 登顶",
+      "object": "Mozilla 2026 开源 AI 报告：DeepSeek V4 Flash 月用量 18.4T Tokens 登顶",
+      "metrics": [
+        "3.3%"
+      ],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-c608c4787821de1b",
+        "EN-9c8ae69b84f21a2e",
+        "EN-6ac6ad44bb9995ca"
+      ],
+      "entityNames": [
+        "DeepSeek",
+        "Xiaomi",
+        "Tencent",
+        "Mozilla 2026"
+      ],
+      "productName": "Mozilla 2026",
+      "products": [
+        {
+          "name": "Mozilla 2026",
+          "type": "产品/服务",
+          "ownerNames": [
+            "DeepSeek"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/976/962.htm",
+      "publisher": "IT之家（RSS）"
     }
   ],
   "entities": [
@@ -804,7 +761,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4da1a7c4d527eb69",
         "EV-7f77e6a2d1698307",
         "EV-c9af33ffe65d236b",
         "EV-efca54f3b07072a6",
@@ -838,9 +794,8 @@
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
-        "EV-a3d022fa41708774",
+        "EV-a4a61babc902931a",
+        "EV-1c2723ad61d192bd",
         "EV-cf5b2a0aff3914bd",
         "EV-302018f2e960a8bf",
         "EV-000f2abf549268a6",
@@ -898,7 +853,7 @@
         "EV-4f4274fb5920a8b4",
         "EV-0aa2e53c51b2b8e5",
         "EV-5cd10de5c12916f0",
-        "EV-1a5628259e6ee487",
+        "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
         "EV-14b44a40808340f5",
         "EV-2d56dec8dfeb2b56",
@@ -923,19 +878,18 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
@@ -943,9 +897,12 @@
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-model_context_protocol",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-17"
     },
@@ -984,6 +941,7 @@
         "EV-5964027086487940",
         "EV-e1a4bc40db4a9d8f",
         "EV-c81cb21337a9bb98",
+        "EV-94e0afb44c320c99",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
         "EV-ef6464cf7f764835",
@@ -997,10 +955,8 @@
         "EV-a8a8f26c5128d894",
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
-        "EV-c2800c1c5a3f568f",
         "EV-26cd4d692404e5c6",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
+        "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
         "EV-0347414d81e7f02e",
@@ -1011,7 +967,6 @@
         "EV-000f2abf549268a6",
         "EV-ebe02c213368afae",
         "EV-d39b53ca7b84b9ca",
-        "EV-3e55e1cd1d54f6ef",
         "EV-cedeae902fd1263d",
         "EV-3cd088098be5d0d4",
         "EV-c410d77c8d531e5f",
@@ -1109,6 +1064,7 @@
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
@@ -1121,7 +1077,6 @@
         "TX-industry-retail_ecommerce",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
@@ -1130,229 +1085,15 @@
         "TX-technology-tool_use",
         "TX-technology-model_context_protocol",
         "TX-industry-government_public_sector",
-        "TX-industry-education",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-industry-education"
       ],
       "relatedEntityIds": [
-        "EN-3a9b395103419892"
+        "EN-3a9b395103419892",
+        "EN-7d3194f79e645c42",
+        "EN-9612b6f6884e062f"
       ],
       "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-8f71c4871a160172",
-      "name": "Thinking Machines Lab",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "tml"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-0af2872b513631d9",
-        "EV-80d4092a3df97198",
-        "EV-fa930fb25552f666",
-        "EV-70530734d19a478e",
-        "EV-70e3f88cb06a856c",
-        "EV-3aaff91528ca3d37",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
-        "EV-63b11635dd8d53a2",
-        "EV-b148f4df9dc65c3a",
-        "EV-3a888651e6ee5418",
-        "EV-9fac0983ab657689",
-        "EV-c6a50c6abc37378d"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
-        "TX-technology-code_generation",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
-        "TX-technology-open_weights",
-        "TX-technology-fine_tuning"
-      ],
-      "relatedEntityIds": [
-        "EN-78624f0a98e78301"
-      ],
-      "firstSeen": "2026-07-03",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-6f7ac1823da81d2e",
-      "name": "DeepSeek",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-ed65f3187aa6aa40",
-        "EV-d4d7b019ff0015df",
-        "EV-371a54f74b9d332c",
-        "EV-cde5c3e5ef83bd51",
-        "EV-fe2b0d74944d6128",
-        "EV-57e6392fe3bb69cd",
-        "EV-fb0838335d861b02",
-        "EV-8daf217ff024ac4a",
-        "EV-a498b12f3fa2197e",
-        "EV-43fdb17a23e13f97",
-        "EV-9260a223a780b898",
-        "EV-01e414a25347cfd9"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-on_device",
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-27",
-      "lastSeen": "2026-07-16"
-    },
-    {
-      "id": "EN-bbdefa2950f49882",
-      "name": "Google",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-10c70ced68ccb31b",
-        "EV-d4d7b019ff0015df",
-        "EV-21c2e81a7c073e04",
-        "EV-54e23045d3334e65",
-        "EV-43b56d49df9a73a2",
-        "EV-6180de2e02597d9d",
-        "EV-968709fe29b77eba",
-        "EV-dbbe3fd637be213f",
-        "EV-4a162c41bb82f325",
-        "EV-9fc8a84b3d0797d1",
-        "EV-57105df2fcada2e5",
-        "EV-36a9e4e908249381",
-        "EV-ef6464cf7f764835",
-        "EV-b95539d17772a4ce",
-        "EV-df5831ff5762432d",
-        "EV-f949fd95df58d42d",
-        "EV-a9a3b5b56befe593",
-        "EV-f7e41493addd1104",
-        "EV-3398ae53a199be16",
-        "EV-d53cd33e8f541a65",
-        "EV-810e5c71956fccbc",
-        "EV-04efb4eecbb8125f",
-        "EV-0ca3a9830e25f56b",
-        "EV-6359c9f6c2609a38",
-        "EV-04ee2bc4ac888358",
-        "EV-c2d784ef0a5376f8",
-        "EV-302018f2e960a8bf",
-        "EV-aa962ef7ec9a5c50",
-        "EV-db1d74f0bfcc1b04",
-        "EV-f05783f745bc7c2c",
-        "EV-52508b70ccd2cc0b",
-        "EV-f9eebe4e3b9b667c",
-        "EV-c410d77c8d531e5f",
-        "EV-268250d426c1a4a0",
-        "EV-04873bbc8be8e70d",
-        "EV-2059f42c7b2aff44",
-        "EV-9fac0983ab657689",
-        "EV-4c0e7025692ab98c",
-        "EV-b8bba030747fd3b6",
-        "EV-8daf217ff024ac4a",
-        "EV-2298304e18dbf493",
-        "EV-89b644ff05e6b93b",
-        "EV-8fad966ecb9b1d31",
-        "EV-9c4b862020202f6c",
-        "EV-d8c69ed782b73a34",
-        "EV-c0f86afbefa2e0a6",
-        "EV-abf0990dcaceb1ce",
-        "EV-c60208ea9b51f47a",
-        "EV-c6359191a071b538",
-        "EV-b860d46fee913f27",
-        "EV-09d3ce5611881ed4",
-        "EV-c033ae6f9784d674",
-        "EV-28145c97a7237d6d",
-        "EV-e6771f58d7c2a050",
-        "EV-b8b39e635aa7511f",
-        "EV-54c329f4c8e4227b",
-        "EV-7808c274ce0aa0bf",
-        "EV-c3cbf5d7f860c693",
-        "EV-009105cbcf82a638",
-        "EV-b9a009b48d4cbf85",
-        "EV-b3809ff557361cc2",
-        "EV-bc71b0ddefa209a9",
-        "EV-a85fe927f20c2595",
-        "EV-b4f3dcac8cc230d9",
-        "EV-175af8c7b8146340",
-        "EV-d2d1834222ab32d3",
-        "EV-22b8d155ce027905",
-        "EV-d6f638da9e1d3b46",
-        "EV-0ad758b04b9b5313",
-        "EV-3ed6744b43d9b8df",
-        "EV-c08837795f9e16d2",
-        "EV-4a3cb762183581cd",
-        "EV-59933d63c4051085",
-        "EV-588cf9609e44edc9",
-        "EV-7fa23cf0102a8f92",
-        "EV-c28e0d02272537d8",
-        "EV-d31057c6f6ec28ba",
-        "EV-342799d4e68e7416",
-        "EV-a4f052325d0ef230",
-        "EV-ef823877347ff40f",
-        "EV-3e9a0d1be6de5096",
-        "EV-70fd0c4e482a646e",
-        "EV-8cd7665e40729256",
-        "EV-2d56dec8dfeb2b56",
-        "EV-6266c73d470e8aef",
-        "EV-ad269fada2269f35",
-        "EV-bce258f8f915ff5f"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
-        "TX-technology-code_generation",
-        "TX-use_case-enterprise_operations",
-        "TX-use_case-software_development",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-industry-financial_services",
-        "TX-technology-on_device",
-        "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-human_in_loop",
-        "TX-industry-telecommunications",
-        "TX-industry-technology",
-        "TX-technology-multimodal",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-knowledge_search",
-        "TX-technology-embodied_ai",
-        "TX-technology-speech_audio",
-        "TX-technology-open_weights",
-        "TX-industry-media_entertainment",
-        "TX-technology-video_generation",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-fine_tuning"
-      ],
-      "relatedEntityIds": [
-        "EN-96eebba49dbbf422"
-      ],
-      "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-17"
     },
     {
@@ -1366,7 +1107,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4eaf3aabecae6016",
         "EV-ed65f3187aa6aa40",
         "EV-60b2d4d401bf5e97",
         "EV-e41fc65eb014893f",
@@ -1390,11 +1130,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-69784fe31cfdfc44",
-        "EV-c2800c1c5a3f568f",
         "EV-303b418c63895ba6",
-        "EV-bb6d9e43c082fb47",
-        "EV-dfc634f28a70f423",
+        "EV-1ff169120ed385f6",
         "EV-082314251be505e2",
         "EV-0a5e65aa46b0d194",
         "EV-53f881da31630a04",
@@ -1431,8 +1168,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -1440,7 +1178,6 @@
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
         "TX-industry-technology",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
@@ -1451,6 +1188,8 @@
       ],
       "relatedEntityIds": [
         "EN-0f3360879e746531",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d",
         "EN-a1b0d8a938903dc7",
         "EN-8395dc051feafc4c",
         "EN-b5738c169b693bee",
@@ -1483,11 +1222,9 @@
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
         "EV-b95539d17772a4ce",
-        "EV-b2e374d54b10b9af",
         "EV-4763b46821ab746e",
         "EV-58c1cc3749294649",
         "EV-3398ae53a199be16",
-        "EV-bd508dbe4205774f",
         "EV-7c899d5decafc42f",
         "EV-9fb217d7e855c8f7",
         "EV-268250d426c1a4a0",
@@ -1513,10 +1250,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-on_device",
         "TX-use_case-cybersecurity",
         "TX-industry-retail_ecommerce",
@@ -1524,14 +1259,14 @@
         "TX-technology-speech_audio",
         "TX-technology-open_weights",
         "TX-technology-reasoning",
-        "TX-technology-model_context_protocol"
+        "TX-technology-model_context_protocol",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-8652f6cd9088f1fa",
         "EN-597d8c4afa5fe3d6",
         "EN-8d4321d936320802"
       ],
-      "firstSeen": "2026-04-16",
+      "firstSeen": "2026-05-20",
       "lastSeen": "2026-07-17"
     },
     {
@@ -1581,6 +1316,145 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-12"
+    },
+    {
+      "id": "EN-6f7ac1823da81d2e",
+      "name": "DeepSeek",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ed65f3187aa6aa40",
+        "EV-d4d7b019ff0015df",
+        "EV-fe2b0d74944d6128",
+        "EV-57e6392fe3bb69cd",
+        "EV-fb0838335d861b02",
+        "EV-8daf217ff024ac4a",
+        "EV-a498b12f3fa2197e",
+        "EV-43fdb17a23e13f97",
+        "EV-9260a223a780b898",
+        "EV-01e414a25347cfd9",
+        "EV-86537be17d50ff20"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-long_context",
+        "TX-technology-on_device",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-27",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-c608c4787821de1b",
+      "name": "Xiaomi",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "小米"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3353bd96728c99e2",
+        "EV-8a9b12665a3e40a0",
+        "EV-28145c97a7237d6d",
+        "EV-45d7d42ef38e29bf",
+        "EV-f5dd192f6d4e04a3",
+        "EV-c7336cf617a545ce",
+        "EV-86537be17d50ff20",
+        "EV-dd902b603e2e3dbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-technology-multimodal",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [
+        "EN-101a515191c6be9e"
+      ],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-9c8ae69b84f21a2e",
+      "name": "Tencent",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "腾讯"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ed65f3187aa6aa40",
+        "EV-427081ec574b43bb",
+        "EV-e0b0ab8dfcab20a5",
+        "EV-b0d008460e8f75fe",
+        "EV-f89d14f52c223a04",
+        "EV-242b4e0488296c1d",
+        "EV-c01b11eed792b3e8",
+        "EV-de54542fd7e2282c",
+        "EV-6fea710316ebda18",
+        "EV-5e5294fe06002bc1",
+        "EV-760d117b4d82fc97",
+        "EV-57e6392fe3bb69cd",
+        "EV-3526144877bc9400",
+        "EV-a498b12f3fa2197e",
+        "EV-c68a8af069f3ed1d",
+        "EV-6a6ff349579765ad",
+        "EV-86537be17d50ff20",
+        "EV-6b7917bd7edd4bde"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-long_context",
+        "TX-technology-multimodal",
+        "TX-technology-open_weights",
+        "TX-technology-quantization"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-18",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-6ac6ad44bb9995ca",
+      "name": "Mozilla 2026",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-86537be17d50ff20"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-long_context",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
     }
   ],
   "fde": [],

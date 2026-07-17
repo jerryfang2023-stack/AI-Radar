@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 727,
+    "quarantinedEventCount": 50
+  },
+  "entity": {
+    "id": "EN-e4ffb7bd879b89da",
+    "name": "PwC",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-94e0afb44c320c99"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-05-14",
+    "lastSeen": "2026-07-17",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-94e0afb44c320c99"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-94e0afb44c320c99",
+        "dataDate": "2026-07-17",
+        "date": "2026-05-14",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "PwC 部署 Claude，为客户构建技术、执行交易并重塑企业职能",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e4ffb7bd879b89da",
+          "EN-c70eca6b0f88f44d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-a63e80944be39019",
+      "eventId": "EV-94e0afb44c320c99",
+      "dataDate": "2026-07-17",
+      "date": "2026-05-14",
+      "title": "PwC 部署 Claude，为客户构建技术、执行交易并重塑企业职能",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "PwC",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Claude to build technology, execute deals, and reinvent enterprise functions for clients",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \\ Anthropic",
+        "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://anthropic.com/news/pwc-expanded-partnership?939688b5_page=1",
+      "entityIds": [
+        "EN-e4ffb7bd879b89da",
+        "EN-c70eca6b0f88f44d"
+      ]
+    }
+  ],
+  "hardware": []
+}

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "entity": {
     "id": "EN-586937124e151c46",
@@ -20,23 +20,44 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-e857f9d1c1478c70"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-07-16",
+    "lastSeen": "2026-07-16",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
-      "partnerships": [],
+      "partnerships": [
+        "EV-e857f9d1c1478c70"
+      ],
       "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-e857f9d1c1478c70",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-16",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Suno 接入 iMessage：iPhone 用户可在聊天内直接 AI 生成歌曲",
+        "displayTags": [],
+        "entityIds": [
+          "EN-586937124e151c46",
+          "EN-3a7bd3e2360a3d29"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

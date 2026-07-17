@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "node": {
     "id": "TX-use_case-customer_service",
@@ -17,6 +17,7 @@
     "typeLabel": "应用场景",
     "valueId": "customer_service",
     "eventIds": [
+      "EV-64fb6d791e19d10a",
       "EV-f020dd198aa2f952",
       "EV-adafffa563a53d49",
       "EV-76da9e22fccc8dff",
@@ -25,11 +26,12 @@
       "EV-51cdc6a8928bdc56"
     ],
     "entityIds": [
+      "EN-b0532e1af75cc4ab",
+      "EN-dca6ec9510fc0176",
       "EN-3ccbd9105a45d8fc",
       "EN-8d4321d936320802",
       "EN-2b6e51bec93e86c1",
       "EN-80d387ccb3289295",
-      "EN-dca6ec9510fc0176",
       "EN-c70eca6b0f88f44d",
       "EN-7d3194f79e645c42",
       "EN-cbc62794911ff31b"
@@ -39,9 +41,95 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-05-24",
-    "lastSeen": "2026-07-15"
+    "lastSeen": "2026-07-16"
   },
   "events": [
+    {
+      "id": "EV-64fb6d791e19d10a",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI",
+      "originalTitle": "",
+      "subject": "Rime 获 2400 万美元 A 轮",
+      "action": "融资",
+      "object": "，用自建录音棚数据训练企业语音 AI",
+      "metrics": [
+        "$24M",
+        "$24 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "id": "enterprise",
+            "dimensionName": "目标用户",
+            "name": "企业用户"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "enterprise",
+          "dimensionName": "目标用户",
+          "name": "企业用户"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "enterprise",
+          "dimensionName": "目标用户",
+          "name": "企业用户"
+        }
+      ],
+      "entityIds": [
+        "EN-b0532e1af75cc4ab",
+        "EN-dca6ec9510fc0176"
+      ],
+      "entityNames": [
+        "Rime",
+        "Sierra"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
     {
       "id": "EV-f020dd198aa2f952",
       "dataDate": "2026-06-16",
@@ -584,6 +672,84 @@
   ],
   "entities": [
     {
+      "id": "EN-b0532e1af75cc4ab",
+      "name": "Rime",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-64fb6d791e19d10a",
+        "EV-8bbe9b602c09273d",
+        "EV-19d26c4129df1cee",
+        "EV-a1552fec696f1a43",
+        "EV-5a26f343846cb8ad",
+        "EV-9326c7450f6c318d",
+        "EV-c808bd4cb76bda9e",
+        "EV-7aaed0a2ae5cf8b6",
+        "EV-c5abea15a56d035e",
+        "EV-05be25222ebd2bc2",
+        "EV-f8a79104a533422b",
+        "EV-f074a62a26f37ae3",
+        "EV-8a0866a27909f9d9",
+        "EV-b67b71905356837d",
+        "EV-a9f1e8662a1e22cf",
+        "EV-727ba25770d1f897",
+        "EV-000f2abf549268a6",
+        "EV-5babb43f4b4d302f",
+        "EV-14401cfc102c6511",
+        "EV-568d2aeab5234e48",
+        "EV-d6f638da9e1d3b46",
+        "EV-fbc5c65cc697c83b",
+        "EV-0ad758b04b9b5313",
+        "EV-0b3d4c788a892787",
+        "EV-d31057c6f6ec28ba"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
+        "TX-technology-video_generation",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-dca6ec9510fc0176",
+      "name": "Sierra",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-64fb6d791e19d10a",
+        "EV-76da9e22fccc8dff"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-customer_service"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-14",
+      "lastSeen": "2026-07-16"
+    },
+    {
       "id": "EN-3ccbd9105a45d8fc",
       "name": "Salesforce",
       "entityType": "organization_candidate",
@@ -608,9 +774,9 @@
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-use_case-enterprise_operations",
-        "TX-use_case-software_development",
-        "TX-use_case-customer_service"
+        "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-29",
@@ -627,7 +793,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4eaf3aabecae6016",
         "EV-ed65f3187aa6aa40",
         "EV-60b2d4d401bf5e97",
         "EV-e41fc65eb014893f",
@@ -651,11 +816,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-69784fe31cfdfc44",
-        "EV-c2800c1c5a3f568f",
         "EV-303b418c63895ba6",
-        "EV-bb6d9e43c082fb47",
-        "EV-dfc634f28a70f423",
+        "EV-1ff169120ed385f6",
         "EV-082314251be505e2",
         "EV-0a5e65aa46b0d194",
         "EV-53f881da31630a04",
@@ -692,8 +854,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -701,7 +864,6 @@
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
         "TX-industry-technology",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
@@ -712,6 +874,8 @@
       ],
       "relatedEntityIds": [
         "EN-0f3360879e746531",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d",
         "EN-a1b0d8a938903dc7",
         "EN-8395dc051feafc4c",
         "EN-b5738c169b693bee",
@@ -733,7 +897,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6f092cfc7a064d64",
         "EV-1ac32035d5e425e1",
         "EV-adafffa563a53d49",
         "EV-ef7402351b6b37bd",
@@ -748,6 +911,7 @@
         "EV-d6f638da9e1d3b46",
         "EV-f68e00bb9fd49fac",
         "EV-3e9a0d1be6de5096",
+        "EV-e96aba142e46eba1",
         "EV-68edd592c36dccd3",
         "EV-d49da50484ba781f"
       ],
@@ -755,13 +919,12 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-vision_language",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-speech_audio",
         "TX-use_case-research_science",
@@ -769,7 +932,9 @@
         "TX-technology-video_generation",
         "TX-technology-fine_tuning"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-0e008e2c06144ec8"
+      ],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-07-17"
     },
@@ -795,27 +960,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-14",
       "lastSeen": "2026-07-16"
-    },
-    {
-      "id": "EN-dca6ec9510fc0176",
-      "name": "Sierra",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-76da9e22fccc8dff"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-customer_service"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-14",
-      "lastSeen": "2026-07-15"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -852,6 +996,7 @@
         "EV-5964027086487940",
         "EV-e1a4bc40db4a9d8f",
         "EV-c81cb21337a9bb98",
+        "EV-94e0afb44c320c99",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
         "EV-ef6464cf7f764835",
@@ -865,10 +1010,8 @@
         "EV-a8a8f26c5128d894",
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
-        "EV-c2800c1c5a3f568f",
         "EV-26cd4d692404e5c6",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
+        "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
         "EV-0347414d81e7f02e",
@@ -879,7 +1022,6 @@
         "EV-000f2abf549268a6",
         "EV-ebe02c213368afae",
         "EV-d39b53ca7b84b9ca",
-        "EV-3e55e1cd1d54f6ef",
         "EV-cedeae902fd1263d",
         "EV-3cd088098be5d0d4",
         "EV-c410d77c8d531e5f",
@@ -977,6 +1119,7 @@
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
@@ -989,7 +1132,6 @@
         "TX-industry-retail_ecommerce",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
@@ -998,11 +1140,13 @@
         "TX-technology-tool_use",
         "TX-technology-model_context_protocol",
         "TX-industry-government_public_sector",
-        "TX-industry-education",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-industry-education"
       ],
       "relatedEntityIds": [
-        "EN-3a9b395103419892"
+        "EN-3a9b395103419892",
+        "EN-7d3194f79e645c42",
+        "EN-9612b6f6884e062f"
       ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-17"
@@ -1021,7 +1165,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4da1a7c4d527eb69",
         "EV-7f77e6a2d1698307",
         "EV-c9af33ffe65d236b",
         "EV-efca54f3b07072a6",
@@ -1055,9 +1198,8 @@
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
-        "EV-a3d022fa41708774",
+        "EV-a4a61babc902931a",
+        "EV-1c2723ad61d192bd",
         "EV-cf5b2a0aff3914bd",
         "EV-302018f2e960a8bf",
         "EV-000f2abf549268a6",
@@ -1115,7 +1257,7 @@
         "EV-4f4274fb5920a8b4",
         "EV-0aa2e53c51b2b8e5",
         "EV-5cd10de5c12916f0",
-        "EV-1a5628259e6ee487",
+        "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
         "EV-14b44a40808340f5",
         "EV-2d56dec8dfeb2b56",
@@ -1140,19 +1282,18 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
@@ -1160,9 +1301,12 @@
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-model_context_protocol",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-17"
     },
@@ -1184,7 +1328,6 @@
         "EV-968709fe29b77eba",
         "EV-7c646d3fbc3fbbf1",
         "EV-ef6464cf7f764835",
-        "EV-de6682a190c78625",
         "EV-3398ae53a199be16",
         "EV-303b418c63895ba6",
         "EV-918fc324de3117bd",
@@ -1198,11 +1341,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
         "TX-use_case-customer_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
+        "TX-industry-retail_ecommerce",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],

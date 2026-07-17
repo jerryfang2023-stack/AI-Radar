@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "node": {
     "id": "TX-use_case-content_creation",
@@ -54,6 +54,12 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调"
         }
       ],
       "facets": {
@@ -78,6 +84,12 @@
           "name": "智能体"
         },
         {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调"
+        },
+        {
           "dimensionId": "use_case",
           "id": "content_creation",
           "dimensionName": "应用场景",
@@ -96,6 +108,12 @@
           "dimensionName": "技术",
           "id": "agentic_execution",
           "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "fine_tuning",
+          "name": "模型微调"
         }
       ],
       "entityIds": [
@@ -127,6 +145,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-technology-fine_tuning",
         "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [],

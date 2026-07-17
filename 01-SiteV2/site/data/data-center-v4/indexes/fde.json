@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "fde": [
     {
@@ -16,7 +16,7 @@
       "eventId": "EV-36a9e4e908249381",
       "dataDate": "2026-07-17",
       "date": "2026-07-16",
-      "title": "Intel 与 Google Cloud 达成商业合作",
+      "title": "Intel 与 Google Cloud 宣布合作，加速 Intel 的 AI 赋能企业转型",
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Intel",
@@ -63,19 +63,19 @@
       "title": "Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元",
       "stage": "announced",
       "stageLabel": "已公布",
-      "customer": "未披露",
-      "vendor": "未披露",
+      "customer": "Anthropic",
+      "vendor": "OpenAI",
       "industry": "未披露",
       "useCase": "AI 实施公司 Ode，初始资金 15 亿美元",
       "reportedNeed": "未披露",
-      "deliveryComponents": [],
+      "deliveryComponents": [
+        "One of those businesses now has a name: Ode with Anthropic is the $1.5 billion, AI implementation company that the AI lab launched in May as part of a joint venture with Blackstone, Hellman & Friedman, Goldman Sachs, and others. The move follows OpenAI’s own take on this, The Deployment Company, underscoring a growing acknowledgement among frontier AI labs that winning enterprise customers requires far more than shipping better models."
+      ],
       "outcomes": [],
       "metrics": [
         "$1.5 billion"
       ],
       "undisclosedFields": [
-        "customer",
-        "vendor",
         "industry",
         "workflow_before",
         "workflow_after",
@@ -190,46 +190,6 @@
       "entityIds": [
         "EN-88e2cce43eeadb36",
         "EN-8147e6fed86d42c1"
-      ]
-    },
-    {
-      "id": "FDE-fc8e00f2ee7500e3",
-      "eventId": "EV-371a54f74b9d332c",
-      "dataDate": "2026-07-16",
-      "date": "2026-07-15",
-      "title": "Apple Intelligence 获准在华上线，将集成阿里巴巴 Qwen 大模型",
-      "stage": "planned",
-      "stageLabel": "计划中",
-      "customer": "Apple",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "，将集成阿里巴巴 Qwen 大模型",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [
-        "Alibaba confirmed the company’s news to CNBC in a statement, saying that Qwen would be “integrated into Apple Intelligence experiences,” but did not provide a timeframe. It also said the integrations would involve AI capabilities like “text and image understanding and generation.”"
-      ],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai",
-      "entityIds": [
-        "EN-3a7bd3e2360a3d29",
-        "EN-047364b9be67f665",
-        "EN-6f7ac1823da81d2e",
-        "EN-5388bc10736a0eff"
       ]
     },
     {
@@ -1419,39 +1379,6 @@
       ]
     },
     {
-      "id": "FDE-b6cd49fa4df2b3fa",
-      "eventId": "EV-ec711aed6721bb30",
-      "dataDate": "2026-06-22",
-      "date": "2026-06-22",
-      "title": "Rime FDE 实施",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Rime",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": ", and govern production AI faster | ai-data-science",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "",
-      "entityIds": []
-    },
-    {
       "id": "FDE-f24f26db83ef0631",
       "eventId": "EV-f949fd95df58d42d",
       "dataDate": "2026-06-23",
@@ -1663,50 +1590,6 @@
       "sourceUrl": "https://artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership",
       "entityIds": [
         "EN-bbdefa2950f49882"
-      ]
-    },
-    {
-      "id": "FDE-d35bf5e6fe7cef6b",
-      "eventId": "EV-de6682a190c78625",
-      "dataDate": "2026-07-16",
-      "date": "2026-06-17",
-      "title": "Rubrik 与 Amazon 达成商业合作",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "未披露",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "Amazon Bedrock AgentCore to Secure AI Agents – Company Announcement - FT.com",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "customer",
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606171200BIZWIRE_USPRX____20260617_BW107817-1",
-      "entityIds": [
-        "EN-4094a2b7125c7564",
-        "EN-cbc62794911ff31b"
       ]
     },
     {
@@ -2208,51 +2091,6 @@
       "entityIds": []
     },
     {
-      "id": "FDE-8d7df617732e7c45",
-      "eventId": "EV-b2e374d54b10b9af",
-      "dataDate": "2026-07-16",
-      "date": "2026-06-04",
-      "title": "C3 AI 与 Shell 达成商业合作",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "未披露",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": ", Scaling Reliability AI Deployment Across Global Asset Operations – Company Announcement - FT.com",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [],
-      "undisclosedFields": [
-        "customer",
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606040900BIZWIRE_USPRX____20260604_BW461527-1",
-      "entityIds": [
-        "EN-f48a4090493d2b5e",
-        "EN-ce635c4eabff5e4f",
-        "EN-9fbf261b62c1d7c0"
-      ]
-    },
-    {
       "id": "FDE-0aed94e1936b4bc7",
       "eventId": "EV-4763b46821ab746e",
       "dataDate": "2026-06-03",
@@ -2389,47 +2227,6 @@
         "EN-9fbf261b62c1d7c0",
         "EN-ce635c4eabff5e4f"
       ]
-    },
-    {
-      "id": "FDE-d1ffe1003a44a446",
-      "eventId": "EV-f8becea58ba65e8b",
-      "dataDate": "2026-06-02",
-      "date": "2026-06-02",
-      "title": "Microsoft FDE 实施",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Microsoft",
-      "vendor": "未披露",
-      "industry": "未披露",
-      "useCase": "$350M with SAP, Microsoft, OpenAI partnerships",
-      "reportedNeed": "未披露",
-      "deliveryComponents": [],
-      "outcomes": [],
-      "metrics": [
-        "$350 million",
-        "$50 million",
-        "$350 million",
-        "$50 million",
-        "150%",
-        "$350 million",
-        "$50 million"
-      ],
-      "undisclosedFields": [
-        "vendor",
-        "industry",
-        "workflow_before",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "reported_need",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [],
-      "sourceUrl": "",
-      "entityIds": []
     },
     {
       "id": "FDE-dadf0e9572889d3d",
@@ -2626,23 +2423,28 @@
       ]
     },
     {
-      "id": "FDE-eb03aaf41c7835a6",
-      "eventId": "EV-8c2c856bbb86a479",
-      "dataDate": "2026-06-15",
-      "date": "2026-04-12",
-      "title": "Google FDE 实施",
-      "stage": "announced",
-      "stageLabel": "已公布",
-      "customer": "Google",
+      "id": "FDE-de1562b0634b20ed",
+      "eventId": "EV-bbc1042dcf5ad317",
+      "dataDate": "2026-07-17",
+      "date": "2026-05-15",
+      "title": "IBM 发布前线部署单元，将 AI 投入生产",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "IBM",
       "vendor": "未披露",
       "industry": "未披露",
-      "useCase": ": The First Natural Language Agent Discovery Platform | AgentMarketCap",
+      "useCase": "Units to Ship AI in Production - AI Learning Guides",
       "reportedNeed": "未披露",
       "deliveryComponents": [
-        "Google Cloud just made it possible to shop for AI agents the same way you ask a question — in plain English. The new AI Agent Marketplace, integrated directly into Google Cloud Marketplace, lets enterprise teams discover, evaluate, and deploy third-party agents built on the Agent2Agent (A2A) protocol using Gemini-powered natural language search. It is the first major cloud marketplace where the discovery layer itself is agentic."
+        "IBM Consulting launched Forward Deployed Units (FDUs) yesterday, a service-delivery model built around six-person pods that combine domain specialists, architects, and engineers with a “digital workforce” of specialized AI agents handling coding, evaluation, testing, and documentation. IBM Forward Deployed Units claim a 6-person pod can do the work of a 30-person team at materially better economics, with progress measured in working systems rather than slide decks. The first named deployments — Riyadh Air, Nestlé, Heineken, and Pearson — are already moving AI from isolated pilots into production at scale, and IBM says FDU rollout is expanding rapidly across Asia Pacific, Europe, and the US.",
+        "The FDU model is IBM’s answer to the most-discussed problem in enterprise AI deployment in 2026: the gap between AI pilots that look great in demos and AI deployments that actually run in production. The reality across enterprises has been hard. Only 11-14% of enterprise AI agent pilots reached production at scale by mid-2026, with the rest stalling in integration, governance, and operational reliability issues. IBM’s bet is that the consulting-engagement model itself — armies of analysts, layered handoffs, slide-deck deliverables — is part of the problem, and that a smaller AI-augmented pod can ship faster precisely because it has less coordination overhead.",
+        "Define the production-AI gap in your organization. The IBM Forward Deployed Units pitch is strongest when you’ve already attempted AI deployment and stalled. Document specifically what’s stuck, why, and what production looks like.",
+        "IBM Forward Deployed Units"
       ],
       "outcomes": [],
-      "metrics": [],
+      "metrics": [
+        "14%"
+      ],
       "undisclosedFields": [
         "vendor",
         "industry",
@@ -2656,9 +2458,56 @@
         "governance_controls",
         "reported_outcomes"
       ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://ailearningguides.com/ibm-forward-deployed-units-ai-production",
+      "entityIds": [
+        "EN-916a98f0fa2a39af"
+      ]
+    },
+    {
+      "id": "FDE-a63e80944be39019",
+      "eventId": "EV-94e0afb44c320c99",
+      "dataDate": "2026-07-17",
+      "date": "2026-05-14",
+      "title": "PwC 部署 Claude，为客户构建技术、执行交易并重塑企业职能",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "PwC",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Claude to build technology, execute deals, and reinvent enterprise functions for clients",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients \\ Anthropic",
+        "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
       "tags": [],
-      "sourceUrl": "",
-      "entityIds": []
+      "sourceUrl": "https://anthropic.com/news/pwc-expanded-partnership?939688b5_page=1",
+      "entityIds": [
+        "EN-e4ffb7bd879b89da",
+        "EN-c70eca6b0f88f44d"
+      ]
     }
   ]
 }

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "node": {
     "id": "TX-technology-mixture_of_experts",
@@ -18,8 +18,6 @@
     "valueId": "mixture_of_experts",
     "eventIds": [
       "EV-80e54c9a390da293",
-      "EV-3aaff91528ca3d37",
-      "EV-51e3ec25899a2486",
       "EV-53f881da31630a04",
       "EV-7fd3102ac547cbda",
       "EV-568d2aeab5234e48",
@@ -32,8 +30,6 @@
     "entityIds": [
       "EN-8d4321d936320802",
       "EN-c70eca6b0f88f44d",
-      "EN-8f71c4871a160172",
-      "EN-27aaa410b20647e0",
       "EN-72e8088a05b38ae3",
       "EN-2b6e51bec93e86c1",
       "EN-b0532e1af75cc4ab",
@@ -43,7 +39,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-06-06",
-    "lastSeen": "2026-07-16"
+    "lastSeen": "2026-07-14"
   },
   "events": [
     {
@@ -175,173 +171,6 @@
       "products": [],
       "sourceUrl": "https://techtimes.com/articles/319393/20260630/transformer-chip-startup-etched-exits-stealth-800m-raised-1b-contracts.htm",
       "publisher": "techtimes.com"
-    },
-    {
-      "id": "EV-3aaff91528ca3d37",
-      "dataDate": "2026-07-16",
-      "date": "2026-07-16",
-      "updatedDate": "2026-07-16",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Thinking Machines Lab 发布 Inkling：975B 参数开源多模态 MoE 模型",
-      "originalTitle": "",
-      "subject": "Thinking Machines Lab",
-      "action": "发布 Inkling：975B 参数开源多模态 MoE 模型",
-      "object": "Thinking Machines Lab 发布 Inkling：975B 参数开源多模态 MoE 模型",
-      "metrics": [
-        "45 trillion"
-      ],
-      "locations": [],
-      "missingFields": [
-        "object"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "long_context",
-          "name": "长上下文"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "mixture_of_experts",
-          "name": "混合专家模型"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "long_context",
-          "name": "长上下文"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "mixture_of_experts",
-          "name": "混合专家模型"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "long_context",
-          "name": "长上下文"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "mixture_of_experts",
-          "name": "混合专家模型"
-        }
-      ],
-      "entityIds": [
-        "EN-8f71c4871a160172"
-      ],
-      "entityNames": [
-        "Thinking Machines Lab"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://marktechpost.com/2026/07/15/thinking-machines-lab-releases-inkling-a-975b-parameter-open-weights-multimodal-moe-with-41b-active-parameters-and-controllable-thinking-effort",
-      "publisher": "MarkTechPost（RSS）"
-    },
-    {
-      "id": "EV-51e3ec25899a2486",
-      "dataDate": "2026-07-16",
-      "date": "2026-07-16",
-      "updatedDate": "2026-07-16",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Soofi 联盟发布 Soofi S 30B-A3B：面向德语和英语的开源混合 Mamba-Transformer MoE 基础模型",
-      "originalTitle": "",
-      "subject": "Soofi 联盟发布 Soofi S 30B-A3B：面向德语和英语的",
-      "action": "开源混合 Mamba-Transformer MoE 基础模型",
-      "object": "Soofi 联盟发布 Soofi S 30B-A3B：面向德语和英语的开源混合 Mamba-Transformer MoE 基础模型",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "object"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "mixture_of_experts",
-          "name": "混合专家模型"
-        }
-      ],
-      "facets": {
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "model",
-            "dimensionName": "产品形态",
-            "name": "模型"
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "mixture_of_experts",
-          "name": "混合专家模型"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "mixture_of_experts",
-          "name": "混合专家模型"
-        }
-      ],
-      "entityIds": [
-        "EN-27aaa410b20647e0"
-      ],
-      "entityNames": [
-        "Soofi"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://marktechpost.com/2026/07/15/soofi-consortium-releases-soofi-s-30b-a3b-an-open-hybrid-mamba-transformer-moe-foundation-model-for-german-and-english",
-      "publisher": "MarkTechPost（RSS）"
     },
     {
       "id": "EV-53f881da31630a04",
@@ -1202,7 +1031,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4eaf3aabecae6016",
         "EV-ed65f3187aa6aa40",
         "EV-60b2d4d401bf5e97",
         "EV-e41fc65eb014893f",
@@ -1226,11 +1054,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-69784fe31cfdfc44",
-        "EV-c2800c1c5a3f568f",
         "EV-303b418c63895ba6",
-        "EV-bb6d9e43c082fb47",
-        "EV-dfc634f28a70f423",
+        "EV-1ff169120ed385f6",
         "EV-082314251be505e2",
         "EV-0a5e65aa46b0d194",
         "EV-53f881da31630a04",
@@ -1267,8 +1092,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -1276,7 +1102,6 @@
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
         "TX-industry-technology",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
@@ -1287,6 +1112,8 @@
       ],
       "relatedEntityIds": [
         "EN-0f3360879e746531",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d",
         "EN-a1b0d8a938903dc7",
         "EN-8395dc051feafc4c",
         "EN-b5738c169b693bee",
@@ -1330,6 +1157,7 @@
         "EV-5964027086487940",
         "EV-e1a4bc40db4a9d8f",
         "EV-c81cb21337a9bb98",
+        "EV-94e0afb44c320c99",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
         "EV-ef6464cf7f764835",
@@ -1343,10 +1171,8 @@
         "EV-a8a8f26c5128d894",
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
-        "EV-c2800c1c5a3f568f",
         "EV-26cd4d692404e5c6",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
+        "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
         "EV-0347414d81e7f02e",
@@ -1357,7 +1183,6 @@
         "EV-000f2abf549268a6",
         "EV-ebe02c213368afae",
         "EV-d39b53ca7b84b9ca",
-        "EV-3e55e1cd1d54f6ef",
         "EV-cedeae902fd1263d",
         "EV-3cd088098be5d0d4",
         "EV-c410d77c8d531e5f",
@@ -1455,6 +1280,7 @@
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
@@ -1467,7 +1293,6 @@
         "TX-industry-retail_ecommerce",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
@@ -1476,80 +1301,16 @@
         "TX-technology-tool_use",
         "TX-technology-model_context_protocol",
         "TX-industry-government_public_sector",
-        "TX-industry-education",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-industry-education"
       ],
       "relatedEntityIds": [
-        "EN-3a9b395103419892"
+        "EN-3a9b395103419892",
+        "EN-7d3194f79e645c42",
+        "EN-9612b6f6884e062f"
       ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-8f71c4871a160172",
-      "name": "Thinking Machines Lab",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "tml"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-0af2872b513631d9",
-        "EV-80d4092a3df97198",
-        "EV-fa930fb25552f666",
-        "EV-70530734d19a478e",
-        "EV-70e3f88cb06a856c",
-        "EV-3aaff91528ca3d37",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
-        "EV-63b11635dd8d53a2",
-        "EV-b148f4df9dc65c3a",
-        "EV-3a888651e6ee5418",
-        "EV-9fac0983ab657689",
-        "EV-c6a50c6abc37378d"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
-        "TX-technology-code_generation",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
-        "TX-technology-open_weights",
-        "TX-technology-fine_tuning"
-      ],
-      "relatedEntityIds": [
-        "EN-78624f0a98e78301"
-      ],
-      "firstSeen": "2026-07-03",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-27aaa410b20647e0",
-      "name": "Soofi",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-51e3ec25899a2486"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-mixture_of_experts"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-72e8088a05b38ae3",
@@ -1591,7 +1352,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6f092cfc7a064d64",
         "EV-1ac32035d5e425e1",
         "EV-adafffa563a53d49",
         "EV-ef7402351b6b37bd",
@@ -1606,6 +1366,7 @@
         "EV-d6f638da9e1d3b46",
         "EV-f68e00bb9fd49fac",
         "EV-3e9a0d1be6de5096",
+        "EV-e96aba142e46eba1",
         "EV-68edd592c36dccd3",
         "EV-d49da50484ba781f"
       ],
@@ -1613,13 +1374,12 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-vision_language",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-speech_audio",
         "TX-use_case-research_science",
@@ -1627,7 +1387,9 @@
         "TX-technology-video_generation",
         "TX-technology-fine_tuning"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-0e008e2c06144ec8"
+      ],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-07-17"
     },
@@ -1671,9 +1433,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
         "TX-industry-retail_ecommerce",
@@ -1718,10 +1481,7 @@
         "EV-a9a3b5b56befe593",
         "EV-f7e41493addd1104",
         "EV-3398ae53a199be16",
-        "EV-d53cd33e8f541a65",
-        "EV-810e5c71956fccbc",
         "EV-04efb4eecbb8125f",
-        "EV-0ca3a9830e25f56b",
         "EV-6359c9f6c2609a38",
         "EV-04ee2bc4ac888358",
         "EV-c2d784ef0a5376f8",
@@ -1777,10 +1537,10 @@
         "EV-c28e0d02272537d8",
         "EV-d31057c6f6ec28ba",
         "EV-342799d4e68e7416",
+        "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
-        "EV-70fd0c4e482a646e",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
         "EV-6266c73d470e8aef",
@@ -1791,11 +1551,10 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
@@ -1810,15 +1569,19 @@
         "TX-use_case-knowledge_search",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
-        "TX-technology-open_weights",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422"
+        "EN-96eebba49dbbf422",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-992eafe973f69075",
+        "EN-0e008e2c06144ec8"
       ],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-17"
@@ -1828,29 +1591,38 @@
       "name": "Xiaomi",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "小米"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-70530734d19a478e",
-        "EV-71f78f2026b54ba2",
+        "EV-3353bd96728c99e2",
+        "EV-8a9b12665a3e40a0",
         "EV-28145c97a7237d6d",
         "EV-45d7d42ef38e29bf",
         "EV-f5dd192f6d4e04a3",
-        "EV-c7336cf617a545ce"
+        "EV-c7336cf617a545ce",
+        "EV-86537be17d50ff20",
+        "EV-dd902b603e2e3dbc"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-robotics_automation",
+        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
         "TX-technology-multimodal",
-        "TX-technology-embodied_ai"
+        "TX-technology-open_weights"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-101a515191c6be9e"
+      ],
       "firstSeen": "2026-06-09",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-16"
     }
   ],
   "fde": [],

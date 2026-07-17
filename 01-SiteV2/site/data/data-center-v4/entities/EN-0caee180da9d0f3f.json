@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "entity": {
     "id": "EN-0caee180da9d0f3f",
@@ -20,19 +20,15 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [
-      "EV-4eaf3aabecae6016"
-    ],
+    "eventIds": [],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-16",
-    "lastSeen": "2026-07-17",
+    "firstSeen": "",
+    "lastSeen": "",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [
-        "EV-4eaf3aabecae6016"
-      ],
+      "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -40,32 +36,7 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [
-      {
-        "id": "EV-4eaf3aabecae6016",
-        "dataDate": "2026-07-17",
-        "date": "2026-07-16",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Fireworks 完成 15 亿美元 D 轮融资",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
-          }
-        ],
-        "entityIds": [
-          "EN-0caee180da9d0f3f",
-          "EN-96eebba49dbbf422",
-          "EN-8d4321d936320802"
-        ]
-      }
-    ],
+    "timeline": [],
     "viewpoints": []
   },
   "relatedEntities": [],

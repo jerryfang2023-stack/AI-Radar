@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "entity": {
     "id": "EN-dca6ec9510fc0176",
@@ -21,6 +21,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-64fb6d791e19d10a",
       "EV-76da9e22fccc8dff"
     ],
     "viewpointIds": [],
@@ -29,10 +30,12 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-14",
-    "lastSeen": "2026-07-15",
+    "lastSeen": "2026-07-16",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-64fb6d791e19d10a"
+      ],
       "deployments": [],
       "partnerships": [
         "EV-76da9e22fccc8dff"
@@ -43,6 +46,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-64fb6d791e19d10a",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          },
+          {
+            "dimensionId": "target_user",
+            "id": "enterprise",
+            "dimensionName": "目标用户",
+            "name": "企业用户"
+          }
+        ],
+        "entityIds": [
+          "EN-b0532e1af75cc4ab",
+          "EN-dca6ec9510fc0176"
+        ]
+      },
       {
         "id": "EV-76da9e22fccc8dff",
         "dataDate": "2026-07-15",
@@ -79,6 +111,7 @@
       "typeLabel": "应用场景",
       "valueId": "customer_service",
       "eventIds": [
+        "EV-64fb6d791e19d10a",
         "EV-f020dd198aa2f952",
         "EV-adafffa563a53d49",
         "EV-76da9e22fccc8dff",
@@ -87,11 +120,12 @@
         "EV-51cdc6a8928bdc56"
       ],
       "entityIds": [
+        "EN-b0532e1af75cc4ab",
+        "EN-dca6ec9510fc0176",
         "EN-3ccbd9105a45d8fc",
         "EN-8d4321d936320802",
         "EN-2b6e51bec93e86c1",
         "EN-80d387ccb3289295",
-        "EN-dca6ec9510fc0176",
         "EN-c70eca6b0f88f44d",
         "EN-7d3194f79e645c42",
         "EN-cbc62794911ff31b"
@@ -101,7 +135,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-15"
+      "lastSeen": "2026-07-16"
     }
   ],
   "fde": [

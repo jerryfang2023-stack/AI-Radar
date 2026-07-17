@@ -1,0 +1,326 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 727,
+    "quarantinedEventCount": 50
+  },
+  "entity": {
+    "id": "EN-fbe26af59be95e52",
+    "name": "Blog",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-303b418c63895ba6"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-robotics_automation"
+    ],
+    "relatedEntityIds": [
+      "EN-8d4321d936320802"
+    ],
+    "firstSeen": "2026-07-16",
+    "lastSeen": "2026-07-16",
+    "relationIds": [
+      "REL2-1b833d14afd8fbce"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-303b418c63895ba6"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-303b418c63895ba6",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-16",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "NVIDIA 发布新款 Jetson Thor 计算机，推动机器人与边缘 AI 普及",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "entityIds": [
+          "EN-8d4321d936320802",
+          "EN-cbc62794911ff31b",
+          "EN-a1b0d8a938903dc7",
+          "EN-fbe26af59be95e52",
+          "EN-2b119dc14de9478d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-8d4321d936320802",
+      "name": "NVIDIA",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ed65f3187aa6aa40",
+        "EV-60b2d4d401bf5e97",
+        "EV-e41fc65eb014893f",
+        "EV-39894e375aacee77",
+        "EV-efca54f3b07072a6",
+        "EV-80e54c9a390da293",
+        "EV-d16fc5601c04a6a2",
+        "EV-236cbc2d64f0c455",
+        "EV-6180de2e02597d9d",
+        "EV-968709fe29b77eba",
+        "EV-adafffa563a53d49",
+        "EV-1f842e1dff69bb87",
+        "EV-9a7cd217a7a9a51c",
+        "EV-cafe435ddd007821",
+        "EV-283e88bdd15ed87e",
+        "EV-234ad54940674bf6",
+        "EV-5b16886442234f81",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-f63462e34ea40699",
+        "EV-4faa2bcf2e42e60c",
+        "EV-9ee3c0ec243b6129",
+        "EV-58c1cc3749294649",
+        "EV-303b418c63895ba6",
+        "EV-1ff169120ed385f6",
+        "EV-082314251be505e2",
+        "EV-0a5e65aa46b0d194",
+        "EV-53f881da31630a04",
+        "EV-3028dfadf94c8f4c",
+        "EV-412a140df8d75c45",
+        "EV-53564b1f0fd2214b",
+        "EV-09610316ac52221e",
+        "EV-c0f86afbefa2e0a6",
+        "EV-c718a5ff4b0acd66",
+        "EV-722c2a8dd6b70abd",
+        "EV-6eb9a23be3117421",
+        "EV-13f105479652938d",
+        "EV-3456f723929eff1b",
+        "EV-66338f5fb682617e",
+        "EV-568d2aeab5234e48",
+        "EV-305091abd41ad88d",
+        "EV-a24f9cba6b31439e",
+        "EV-b986a633cca27df9",
+        "EV-57597c92f7b183a9",
+        "EV-2258329f33d413cf",
+        "EV-19ea623bb5eabdd5",
+        "EV-309ea4fc27a66485",
+        "EV-4026c95d4c01b96e",
+        "EV-66970d4aea37111f",
+        "EV-aa63303570154a9b",
+        "EV-cbc8b53d4f4478b1",
+        "EV-d2a00623908ca15f",
+        "EV-d2ac9700c86913da",
+        "EV-d43a561da59b2897",
+        "EV-fc2164eb66e27f7e",
+        "EV-0b49d637d7c07ce0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-use_case-customer_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-telecommunications",
+        "TX-industry-technology",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
+        "TX-technology-speech_audio",
+        "TX-technology-open_weights",
+        "TX-industry-media_entertainment",
+        "TX-technology-reasoning",
+        "TX-technology-inference_optimization"
+      ],
+      "relatedEntityIds": [
+        "EN-0f3360879e746531",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d",
+        "EN-a1b0d8a938903dc7",
+        "EN-8395dc051feafc4c",
+        "EN-b5738c169b693bee",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "firstSeen": "2026-05-18",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-1b833d14afd8fbce",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-8d4321d936320802",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-fbe26af59be95e52",
+      "object_type": "entity",
+      "event_id": "EV-303b418c63895ba6",
+      "claim_refs": [
+        "CL-dbbed563be597499",
+        "CL-4b65a9f9d61bb755",
+        "CL-e617ccfe75aad513",
+        "CL-2182dc15ee8cb7e8"
+      ],
+      "source_refs": [
+        "SA-976748d90721f77e"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-robotics_automation",
+      "name": "机器人与物理自动化",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "robotics_automation",
+      "eventIds": [
+        "EV-adf92ecb7cd8714f",
+        "EV-5a26f343846cb8ad",
+        "EV-9fa9822969d3c3fd",
+        "EV-44c9a50b99c76a70",
+        "EV-434dcf1813a84ead",
+        "EV-9f067d8f0d23eb48",
+        "EV-f059fd80d668c6bc",
+        "EV-234ad54940674bf6",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-39848cdd62c00e59",
+        "EV-4faa2bcf2e42e60c",
+        "EV-303b418c63895ba6",
+        "EV-3353bd96728c99e2",
+        "EV-57565fc2e7502c59",
+        "EV-4536910c045ae530",
+        "EV-473f852b374d8b1c",
+        "EV-49751dfc7d2f6d6c",
+        "EV-66338f5fb682617e",
+        "EV-e6771f58d7c2a050",
+        "EV-b88affdec306a75a",
+        "EV-85373b8ec9148127",
+        "EV-52e1ac21c25a0a09",
+        "EV-ed58c2c69290ee4c",
+        "EV-66970d4aea37111f",
+        "EV-cbc8b53d4f4478b1",
+        "EV-4beb890f0879aeaf",
+        "EV-ad64347138da72bb"
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-7d3194f79e645c42",
+        "EN-b0532e1af75cc4ab",
+        "EN-cbc62794911ff31b",
+        "EN-b51b27d89f9ea747",
+        "EN-245f1e177c5169cb",
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-8d4321d936320802",
+        "EN-72138e570e5103e2",
+        "EN-8147e6fed86d42c1",
+        "EN-a1b0d8a938903dc7",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d",
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-101a515191c6be9e",
+        "EN-8afd897b5b887b06",
+        "EN-047364b9be67f665",
+        "EN-30081094f2a8c83d",
+        "EN-bbdefa2950f49882",
+        "EN-7ca2b7da6e0f8654",
+        "EN-3a7bd3e2360a3d29",
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "fdeIds": [
+        "FDE-13cf52a1201f0544",
+        "FDE-45ad6eae0d326429",
+        "FDE-a28fee3a33c46db9",
+        "FDE-dadf0e9572889d3d",
+        "FDE-779bb70e06a29ed4",
+        "FDE-8669dbd3140ecd8e"
+      ],
+      "hardwareIds": [
+        "HW-0ebffabe51a60966",
+        "HW-8f63cf2364e0df35",
+        "HW-dca442211b264bbe"
+      ],
+      "firstSeen": "2026-06-01",
+      "lastSeen": "2026-07-16"
+    }
+  ],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-0ebffabe51a60966",
+      "eventId": "EV-303b418c63895ba6",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-16",
+      "title": "NVIDIA 发布新款 Jetson Thor 计算机，推动机器人与边缘 AI 普及",
+      "hardwareType": "gpu",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "edge",
+      "supplier": "NVIDIA",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 32,
+      "capacityUnit": "GB",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent",
+      "sourceName": "blogs.nvidia.com",
+      "sourceDate": "2026-07-16",
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-cbc62794911ff31b",
+        "EN-a1b0d8a938903dc7",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d"
+      ]
+    }
+  ]
+}

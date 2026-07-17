@@ -281,7 +281,7 @@ export function buildEventRecords({ events, claims, rawDocuments, sourceArtifact
 }
 
 function buildFdeRecords(rows, eventsById) {
-  return rows.map((row) => {
+  return rows.filter((row) => eventsById.has(row.event_id)).map((row) => {
     const event = eventsById.get(row.event_id);
     return {
       id: row.fde_id,
@@ -308,7 +308,7 @@ function buildFdeRecords(rows, eventsById) {
 }
 
 function buildHardwareRecords(rows, eventsById) {
-  return rows.map((row) => {
+  return rows.filter((row) => eventsById.has(row.event_id)).map((row) => {
     const event = eventsById.get(row.event_id);
     return {
       id: row.hardware_record_id,

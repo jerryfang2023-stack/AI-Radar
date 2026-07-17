@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-17T15:01:31.906Z",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
     "latestDataDate": "2026-07-17",
     "currentDate": "2026-07-17",
-    "eventCount": 748,
-    "quarantinedEventCount": 32
+    "eventCount": 727,
+    "quarantinedEventCount": 50
   },
   "node": {
     "id": "TX-technology-multimodal",
@@ -19,13 +19,12 @@
     "eventIds": [
       "EV-44c9a50b99c76a70",
       "EV-968709fe29b77eba",
-      "EV-cafe435ddd007821",
       "EV-9f067d8f0d23eb48",
       "EV-a9810b47e0408a05",
       "EV-f169db2fb75a1371",
       "EV-21caef1790021587",
       "EV-70e3f88cb06a856c",
-      "EV-71f78f2026b54ba2",
+      "EV-3353bd96728c99e2",
       "EV-9496f90f3e808992",
       "EV-0a5e65aa46b0d194",
       "EV-e42e55d1e11a2ba2",
@@ -40,6 +39,7 @@
       "EV-61b97c0ee6ad83b3",
       "EV-f68e00bb9fd49fac",
       "EV-74b965de27bc0515",
+      "EV-dd902b603e2e3dbc",
       "EV-2ca9d0a3ca53c3bf",
       "EV-6b7917bd7edd4bde"
     ],
@@ -51,15 +51,13 @@
       "EN-bbdefa2950f49882",
       "EN-3a7bd3e2360a3d29",
       "EN-8d4321d936320802",
-      "EN-59ae856cd788d0f5",
-      "EN-0f3360879e746531",
-      "EN-e3b1bf3dab957ffe",
-      "EN-9700d41909cf810f",
       "EN-193d220b421d776e",
       "EN-7d3194f79e645c42",
       "EN-8f71c4871a160172",
       "EN-78624f0a98e78301",
+      "EN-522d3edeb64a7ca4",
       "EN-c608c4787821de1b",
+      "EN-101a515191c6be9e",
       "EN-c70eca6b0f88f44d",
       "EN-2b6e51bec93e86c1",
       "EN-b0532e1af75cc4ab",
@@ -68,6 +66,8 @@
       "EN-047364b9be67f665",
       "EN-b5251b35f15bedc4",
       "EN-d831f1170590ddb1",
+      "EN-3dd90c2e1bf28b32",
+      "EN-5d7b7e77768bfdfc",
       "EN-9c8ae69b84f21a2e"
     ],
     "fdeIds": [
@@ -76,7 +76,6 @@
       "FDE-5587adb203295543"
     ],
     "hardwareIds": [
-      "HW-ceb55d9bc637c1d3",
       "HW-de1b3c6ad39cc9bc"
     ],
     "firstSeen": "2026-06-04",
@@ -279,215 +278,6 @@
       "products": [],
       "sourceUrl": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
       "publisher": "thenextweb.com"
-    },
-    {
-      "id": "EV-cafe435ddd007821",
-      "dataDate": "2026-07-17",
-      "date": "2026-07-16",
-      "updatedDate": "2026-07-17",
-      "eventType": "hardware_deployment",
-      "eventTypeLabel": "硬件部署",
-      "eventGroup": "AI 硬件",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "日本启动 Noetra 国家级 AI 基础设施，计划采购 2.75 万枚 NVIDIA Rubin 芯片",
-      "originalTitle": "NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施",
-      "subject": "Japan to",
-      "action": "buy Nvidia Rubin chips",
-      "object": "to build an AI for robots - The Japan Times",
-      "metrics": [
-        "$5 million",
-        "$7 million",
-        "$1.9 billion",
-        "$2.7 billion",
-        "$55,000 ",
-        "$1.5 billion"
-      ],
-      "locations": [
-        "Japan",
-        "日本"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        }
-      ],
-      "facets": {
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "model",
-            "dimensionName": "产品形态",
-            "name": "模型"
-          },
-          {
-            "dimensionId": "product_form",
-            "id": "data_infrastructure",
-            "dimensionName": "产品形态",
-            "name": "数据与模型基础设施"
-          }
-        ],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "robotics_automation",
-            "dimensionName": "应用场景",
-            "name": "机器人与物理自动化"
-          }
-        ],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "manufacturing",
-            "dimensionName": "行业",
-            "name": "制造业"
-          },
-          {
-            "dimensionId": "industry",
-            "id": "healthcare_life_sciences",
-            "dimensionName": "行业",
-            "name": "医疗与生命科学"
-          },
-          {
-            "dimensionId": "industry",
-            "id": "telecommunications",
-            "dimensionName": "行业",
-            "name": "电信"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "healthcare_life_sciences",
-          "dimensionName": "行业",
-          "name": "医疗与生命科学"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "telecommunications",
-          "dimensionName": "行业",
-          "name": "电信"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "model",
-          "dimensionName": "产品形态",
-          "name": "模型"
-        },
-        {
-          "dimensionId": "product_form",
-          "id": "data_infrastructure",
-          "dimensionName": "产品形态",
-          "name": "数据与模型基础设施"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "robotics_automation",
-          "dimensionName": "应用场景",
-          "name": "机器人与物理自动化"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "manufacturing",
-          "dimensionName": "行业",
-          "name": "制造业"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "healthcare_life_sciences",
-          "dimensionName": "行业",
-          "name": "医疗与生命科学"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "telecommunications",
-          "dimensionName": "行业",
-          "name": "电信"
-        }
-      ],
-      "entityIds": [
-        "EN-59ae856cd788d0f5",
-        "EN-8d4321d936320802",
-        "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f"
-      ],
-      "entityNames": [
-        "Japan",
-        "NVIDIA",
-        "Noetra",
-        "Japan Government",
-        "NVIDIA 联手日本政经界"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots",
-      "publisher": "japantimes.co.jp"
     },
     {
       "id": "EV-9f067d8f0d23eb48",
@@ -1022,7 +812,7 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-71f78f2026b54ba2",
+      "id": "EV-3353bd96728c99e2",
       "dataDate": "2026-07-16",
       "date": "2026-07-15",
       "updatedDate": "2026-07-16",
@@ -1115,13 +905,25 @@
         }
       ],
       "entityIds": [
-        "EN-c608c4787821de1b"
+        "EN-522d3edeb64a7ca4",
+        "EN-c608c4787821de1b",
+        "EN-101a515191c6be9e"
       ],
       "entityNames": [
-        "Xiaomi"
+        "小米",
+        "Xiaomi",
+        "Xiaomi-Robotics-U0"
       ],
-      "productName": "",
-      "products": [],
+      "productName": "Xiaomi-Robotics-U0",
+      "products": [
+        {
+          "name": "Xiaomi-Robotics-U0",
+          "type": "模型",
+          "ownerNames": [
+            "Xiaomi"
+          ]
+        }
+      ],
       "sourceUrl": "https://ithome.com/0/977/012.htm",
       "publisher": "IT之家（RSS）"
     },
@@ -2461,8 +2263,8 @@
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Moonshot AI 发布多模态视觉感知基准 PerceptionBench",
-      "originalTitle": "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准",
+      "title": "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准",
+      "originalTitle": "",
       "subject": "Moonshot AI",
       "action": "发布 PerceptionBench：多模态模型视觉感知能力诊断基准",
       "object": "Moonshot AI 发布 PerceptionBench：多模态模型视觉感知能力诊断基准",
@@ -2543,6 +2345,132 @@
       ],
       "sourceUrl": "https://kimi.com/blog/perception-bench",
       "publisher": "Moonshot AI：Kimi Blog"
+    },
+    {
+      "id": "EV-dd902b603e2e3dbc",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-16",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "小米 MiMo 完成大语言、多模态、语音全系列模型矩阵闭环，端侧模型通过国家大模型备案",
+      "originalTitle": "",
+      "subject": "小米 MiMo 完成大语言、多模态、语音全系列模型矩阵闭环，端侧模型通过国家大模型",
+      "action": "备案",
+      "object": "小米 MiMo 完成大语言、多模态、语音全系列模型矩阵闭环，端侧模型通过国家大模型备案",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧"
+        },
+        {
+          "dimensionId": "deployment_model",
+          "id": "edge_device",
+          "dimensionName": "部署形态",
+          "name": "边缘与端侧"
+        }
+      ],
+      "entityIds": [
+        "EN-3dd90c2e1bf28b32",
+        "EN-c608c4787821de1b",
+        "EN-5d7b7e77768bfdfc",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "小米 MiMo 完成大语言",
+        "Xiaomi",
+        "多模态",
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/977/116.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-2ca9d0a3ca53c3bf",
@@ -2755,6 +2683,7 @@
         "EV-4a4869273654c799",
         "EV-d3528ccff1833385",
         "EV-ef6464cf7f764835",
+        "EV-8a9b12665a3e40a0",
         "EV-72d274f7fcd97151",
         "EV-9b29acd28643e9d1",
         "EV-b15c842ee1974890",
@@ -2792,7 +2721,6 @@
         "EV-968709fe29b77eba",
         "EV-7c646d3fbc3fbbf1",
         "EV-ef6464cf7f764835",
-        "EV-de6682a190c78625",
         "EV-3398ae53a199be16",
         "EV-303b418c63895ba6",
         "EV-918fc324de3117bd",
@@ -2806,11 +2734,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-cybersecurity",
-        "TX-industry-retail_ecommerce",
         "TX-use_case-customer_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
+        "TX-industry-retail_ecommerce",
         "TX-technology-multimodal"
       ],
       "relatedEntityIds": [],
@@ -2829,7 +2756,6 @@
       ],
       "eventIds": [
         "EV-02882e6f5e1902c6",
-        "EV-5df885dbd24b6d00",
         "EV-427081ec574b43bb",
         "EV-7f77e6a2d1698307",
         "EV-b39d759a11086d41",
@@ -2859,7 +2785,6 @@
         "EV-c98d4ee7764d51b2",
         "EV-01e414a25347cfd9",
         "EV-ef823877347ff40f",
-        "EV-04cf95633b564f9a",
         "EV-02b07069713d9a1c",
         "EV-322796d9761a0824",
         "EV-2d56dec8dfeb2b56",
@@ -2870,7 +2795,6 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
@@ -2881,7 +2805,8 @@
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-guardrails_safety",
-        "TX-technology-image_generation"
+        "TX-technology-image_generation",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -2919,10 +2844,7 @@
         "EV-a9a3b5b56befe593",
         "EV-f7e41493addd1104",
         "EV-3398ae53a199be16",
-        "EV-d53cd33e8f541a65",
-        "EV-810e5c71956fccbc",
         "EV-04efb4eecbb8125f",
-        "EV-0ca3a9830e25f56b",
         "EV-6359c9f6c2609a38",
         "EV-04ee2bc4ac888358",
         "EV-c2d784ef0a5376f8",
@@ -2978,10 +2900,10 @@
         "EV-c28e0d02272537d8",
         "EV-d31057c6f6ec28ba",
         "EV-342799d4e68e7416",
+        "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
-        "EV-70fd0c4e482a646e",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
         "EV-6266c73d470e8aef",
@@ -2992,11 +2914,10 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
@@ -3011,15 +2932,19 @@
         "TX-use_case-knowledge_search",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
-        "TX-technology-open_weights",
         "TX-industry-media_entertainment",
         "TX-technology-video_generation",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422"
+        "EN-96eebba49dbbf422",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-992eafe973f69075",
+        "EN-0e008e2c06144ec8"
       ],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-17"
@@ -3037,11 +2962,12 @@
       "eventIds": [
         "EV-f282ab8740ff0096",
         "EV-968709fe29b77eba",
-        "EV-371a54f74b9d332c",
         "EV-8a8e894a84768ea5",
         "EV-f5a50f1fed72fec3",
         "EV-d5419a74073b4508",
+        "EV-e857f9d1c1478c70",
         "EV-21caef1790021587",
+        "EV-8a9b12665a3e40a0",
         "EV-302018f2e960a8bf",
         "EV-aa962ef7ec9a5c50",
         "EV-7cd4a5b931f0b667",
@@ -3067,6 +2993,7 @@
         "EV-ef823877347ff40f",
         "EV-5cd10de5c12916f0",
         "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
         "EV-da6678e4e865e00e",
         "EV-8cb2374f76202ecc",
         "EV-b4203b10d6592bf2",
@@ -3103,7 +3030,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4eaf3aabecae6016",
         "EV-ed65f3187aa6aa40",
         "EV-60b2d4d401bf5e97",
         "EV-e41fc65eb014893f",
@@ -3127,11 +3053,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-69784fe31cfdfc44",
-        "EV-c2800c1c5a3f568f",
         "EV-303b418c63895ba6",
-        "EV-bb6d9e43c082fb47",
-        "EV-dfc634f28a70f423",
+        "EV-1ff169120ed385f6",
         "EV-082314251be505e2",
         "EV-0a5e65aa46b0d194",
         "EV-53f881da31630a04",
@@ -3168,8 +3091,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -3177,7 +3101,6 @@
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications",
         "TX-industry-technology",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-speech_audio",
@@ -3188,118 +3111,14 @@
       ],
       "relatedEntityIds": [
         "EN-0f3360879e746531",
+        "EN-fbe26af59be95e52",
+        "EN-2b119dc14de9478d",
         "EN-a1b0d8a938903dc7",
         "EN-8395dc051feafc4c",
         "EN-b5738c169b693bee",
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-59ae856cd788d0f5",
-      "name": "Japan",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-cafe435ddd007821"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-telecommunications",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-0f3360879e746531",
-      "name": "Noetra",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-cafe435ddd007821"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-telecommunications",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [
-        "EN-8d4321d936320802"
-      ],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-e3b1bf3dab957ffe",
-      "name": "Japan Government",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-cafe435ddd007821"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-telecommunications",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-9700d41909cf810f",
-      "name": "NVIDIA 联手日本政经界",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-cafe435ddd007821"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-telecommunications",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-16",
       "lastSeen": "2026-07-17"
     },
     {
@@ -3337,7 +3156,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-4da1a7c4d527eb69",
         "EV-7f77e6a2d1698307",
         "EV-c9af33ffe65d236b",
         "EV-efca54f3b07072a6",
@@ -3371,9 +3189,8 @@
         "EV-0d5a32aca724d30e",
         "EV-70e3f88cb06a856c",
         "EV-7c899d5decafc42f",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
-        "EV-a3d022fa41708774",
+        "EV-a4a61babc902931a",
+        "EV-1c2723ad61d192bd",
         "EV-cf5b2a0aff3914bd",
         "EV-302018f2e960a8bf",
         "EV-000f2abf549268a6",
@@ -3431,7 +3248,7 @@
         "EV-4f4274fb5920a8b4",
         "EV-0aa2e53c51b2b8e5",
         "EV-5cd10de5c12916f0",
-        "EV-1a5628259e6ee487",
+        "EV-067f57f6e6ffa6ce",
         "EV-da6678e4e865e00e",
         "EV-14b44a40808340f5",
         "EV-2d56dec8dfeb2b56",
@@ -3456,19 +3273,18 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-industry-financial_services",
         "TX-use_case-cybersecurity",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
@@ -3476,9 +3292,12 @@
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-model_context_protocol",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-17"
     },
@@ -3487,9 +3306,7 @@
       "name": "Thinking Machines Lab",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "tml"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3498,27 +3315,18 @@
         "EV-0af2872b513631d9",
         "EV-80d4092a3df97198",
         "EV-fa930fb25552f666",
-        "EV-70530734d19a478e",
         "EV-70e3f88cb06a856c",
-        "EV-3aaff91528ca3d37",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
         "EV-63b11635dd8d53a2",
         "EV-b148f4df9dc65c3a",
-        "EV-3a888651e6ee5418",
         "EV-9fac0983ab657689",
         "EV-c6a50c6abc37378d"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
         "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
         "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
-        "TX-technology-open_weights",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [
@@ -3552,33 +3360,88 @@
       "lastSeen": "2026-07-17"
     },
     {
+      "id": "EN-522d3edeb64a7ca4",
+      "name": "小米",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3353bd96728c99e2"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
       "id": "EN-c608c4787821de1b",
       "name": "Xiaomi",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
+      "aliases": [
+        "小米"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3353bd96728c99e2",
+        "EV-8a9b12665a3e40a0",
+        "EV-28145c97a7237d6d",
+        "EV-45d7d42ef38e29bf",
+        "EV-f5dd192f6d4e04a3",
+        "EV-c7336cf617a545ce",
+        "EV-86537be17d50ff20",
+        "EV-dd902b603e2e3dbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-robotics_automation",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-technology-multimodal",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [
+        "EN-101a515191c6be9e"
+      ],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-101a515191c6be9e",
+      "name": "Xiaomi-Robotics-U0",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
       "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-70530734d19a478e",
-        "EV-71f78f2026b54ba2",
-        "EV-28145c97a7237d6d",
-        "EV-45d7d42ef38e29bf",
-        "EV-f5dd192f6d4e04a3",
-        "EV-c7336cf617a545ce"
+        "EV-3353bd96728c99e2"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-robotics_automation",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai"
+        "TX-technology-multimodal"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-09",
-      "lastSeen": "2026-07-17"
+      "relatedEntityIds": [
+        "EN-c608c4787821de1b"
+      ],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -3615,6 +3478,7 @@
         "EV-5964027086487940",
         "EV-e1a4bc40db4a9d8f",
         "EV-c81cb21337a9bb98",
+        "EV-94e0afb44c320c99",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
         "EV-ef6464cf7f764835",
@@ -3628,10 +3492,8 @@
         "EV-a8a8f26c5128d894",
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
-        "EV-c2800c1c5a3f568f",
         "EV-26cd4d692404e5c6",
-        "EV-cde5c3e5ef83bd51",
-        "EV-0ca3a9830e25f56b",
+        "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
         "EV-0347414d81e7f02e",
@@ -3642,7 +3504,6 @@
         "EV-000f2abf549268a6",
         "EV-ebe02c213368afae",
         "EV-d39b53ca7b84b9ca",
-        "EV-3e55e1cd1d54f6ef",
         "EV-cedeae902fd1263d",
         "EV-3cd088098be5d0d4",
         "EV-c410d77c8d531e5f",
@@ -3740,6 +3601,7 @@
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-use_case-software_development",
@@ -3752,7 +3614,6 @@
         "TX-industry-retail_ecommerce",
         "TX-technology-human_in_loop",
         "TX-industry-telecommunications",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
@@ -3761,11 +3622,13 @@
         "TX-technology-tool_use",
         "TX-technology-model_context_protocol",
         "TX-industry-government_public_sector",
-        "TX-industry-education",
-        "TX-technology-fine_tuning"
+        "TX-technology-fine_tuning",
+        "TX-industry-education"
       ],
       "relatedEntityIds": [
-        "EN-3a9b395103419892"
+        "EN-3a9b395103419892",
+        "EN-7d3194f79e645c42",
+        "EN-9612b6f6884e062f"
       ],
       "firstSeen": "2026-03-13",
       "lastSeen": "2026-07-17"
@@ -3783,7 +3646,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-6f092cfc7a064d64",
         "EV-1ac32035d5e425e1",
         "EV-adafffa563a53d49",
         "EV-ef7402351b6b37bd",
@@ -3798,6 +3660,7 @@
         "EV-d6f638da9e1d3b46",
         "EV-f68e00bb9fd49fac",
         "EV-3e9a0d1be6de5096",
+        "EV-e96aba142e46eba1",
         "EV-68edd592c36dccd3",
         "EV-d49da50484ba781f"
       ],
@@ -3805,13 +3668,12 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-technology-vision_language",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
-        "TX-use_case-customer_service",
         "TX-technology-multimodal",
         "TX-technology-speech_audio",
         "TX-use_case-research_science",
@@ -3819,7 +3681,9 @@
         "TX-technology-video_generation",
         "TX-technology-fine_tuning"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-0e008e2c06144ec8"
+      ],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-07-17"
     },
@@ -3863,9 +3727,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
         "TX-technology-mixture_of_experts",
         "TX-industry-financial_services",
         "TX-industry-retail_ecommerce",
@@ -3939,7 +3804,6 @@
       "eventIds": [
         "EV-82020f9eaea90951",
         "EV-9895cb57eb366680",
-        "EV-371a54f74b9d332c",
         "EV-341e9759d2cd90f7",
         "EV-e1a4bc40db4a9d8f",
         "EV-ff8e19a80058c198",
@@ -3962,8 +3826,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-use_case-robotics_automation",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-video_generation",
@@ -3992,9 +3856,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-vision_language",
         "TX-technology-long_context",
-        "TX-technology-multimodal"
+        "TX-technology-multimodal",
+        "TX-technology-vision_language"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-17",
@@ -4015,12 +3879,56 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-vision_language",
-        "TX-technology-multimodal"
+        "TX-technology-multimodal",
+        "TX-technology-vision_language"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-17",
       "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-3dd90c2e1bf28b32",
+      "name": "小米 MiMo 完成大语言",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dd902b603e2e3dbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-5d7b7e77768bfdfc",
+      "name": "多模态",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dd902b603e2e3dbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-on_device",
+        "TX-technology-multimodal"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-9c8ae69b84f21a2e",
@@ -4051,17 +3959,20 @@
         "EV-a498b12f3fa2197e",
         "EV-c68a8af069f3ed1d",
         "EV-6a6ff349579765ad",
+        "EV-86537be17d50ff20",
         "EV-6b7917bd7edd4bde"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-technology-long_context",
         "TX-technology-multimodal",
+        "TX-technology-open_weights",
         "TX-technology-quantization"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-15"
+      "lastSeen": "2026-07-16"
     }
   ],
   "fde": [
@@ -4231,50 +4142,6 @@
     }
   ],
   "hardware": [
-    {
-      "id": "HW-ceb55d9bc637c1d3",
-      "eventId": "EV-cafe435ddd007821",
-      "dataDate": "2026-07-17",
-      "date": "2026-07-16",
-      "title": "日本启动 Noetra 国家级 AI 基础设施，计划采购 2.75 万枚 NVIDIA Rubin 芯片",
-      "hardwareType": "gpu",
-      "eventType": "hardware_deployment",
-      "eventTypeLabel": "硬件部署",
-      "computeLayer": "data_center",
-      "supplier": "NVIDIA",
-      "customer": "Noetra",
-      "processNode": "未披露",
-      "capacity": 27500,
-      "capacityUnit": "chips",
-      "site": "未披露",
-      "region": "Japan",
-      "contractValue": "未披露",
-      "shipmentDate": "未披露",
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "embodied_ai",
-          "name": "具身智能"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "multimodal",
-          "name": "多模态"
-        }
-      ],
-      "sourceUrl": "https://japantimes.co.jp/business/2026/07/16/japan-nvidia-rubin-chips-robots",
-      "sourceName": "japantimes.co.jp",
-      "sourceDate": "2026-07-16",
-      "entityIds": [
-        "EN-59ae856cd788d0f5",
-        "EN-8d4321d936320802",
-        "EN-0f3360879e746531",
-        "EN-e3b1bf3dab957ffe",
-        "EN-9700d41909cf810f"
-      ]
-    },
     {
       "id": "HW-de1b3c6ad39cc9bc",
       "eventId": "EV-0a5e65aa46b0d194",

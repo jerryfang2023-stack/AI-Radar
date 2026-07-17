@@ -1,0 +1,357 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-17T18:20:10.588Z",
+    "latestDataDate": "2026-07-17",
+    "currentDate": "2026-07-17",
+    "eventCount": 727,
+    "quarantinedEventCount": 50
+  },
+  "entity": {
+    "id": "EN-81e577740888ca6d",
+    "name": "SensorFM",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-04efb4eecbb8125f"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-on_device"
+    ],
+    "relatedEntityIds": [
+      "EN-bbdefa2950f49882"
+    ],
+    "firstSeen": "2026-07-15",
+    "lastSeen": "2026-07-16",
+    "relationIds": [
+      "REL2-70d05a81606b3589",
+      "REL2-0f7fce6dceae69bb"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-04efb4eecbb8125f",
+        "EV-f9eebe4e3b9b667c"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-04efb4eecbb8125f",
+        "dataDate": "2026-07-16",
+        "date": "2026-07-15",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google 发布 LiteRT.js：通过 WebGPU 在浏览器中运行 .tflite 模型的 JavaScript 绑定",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "on_device",
+            "name": "端侧"
+          },
+          {
+            "dimensionId": "deployment_model",
+            "id": "edge_device",
+            "dimensionName": "部署形态",
+            "name": "边缘与端侧"
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-992eafe973f69075",
+          "EN-1229af0aa3b0305e",
+          "EN-81e577740888ca6d"
+        ]
+      },
+      {
+        "id": "EV-f9eebe4e3b9b667c",
+        "dataDate": "2026-07-10",
+        "date": "2026-07-10",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google Research 推出 SensorFM：面向可穿戴健康数据的通用基础模型",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-ea3bd73e2b506e00",
+          "EN-2b6e51bec93e86c1"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-bbdefa2950f49882",
+      "name": "Google",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-10c70ced68ccb31b",
+        "EV-d4d7b019ff0015df",
+        "EV-21c2e81a7c073e04",
+        "EV-54e23045d3334e65",
+        "EV-43b56d49df9a73a2",
+        "EV-6180de2e02597d9d",
+        "EV-968709fe29b77eba",
+        "EV-dbbe3fd637be213f",
+        "EV-4a162c41bb82f325",
+        "EV-9fc8a84b3d0797d1",
+        "EV-57105df2fcada2e5",
+        "EV-36a9e4e908249381",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-df5831ff5762432d",
+        "EV-f949fd95df58d42d",
+        "EV-a9a3b5b56befe593",
+        "EV-f7e41493addd1104",
+        "EV-3398ae53a199be16",
+        "EV-04efb4eecbb8125f",
+        "EV-6359c9f6c2609a38",
+        "EV-04ee2bc4ac888358",
+        "EV-c2d784ef0a5376f8",
+        "EV-302018f2e960a8bf",
+        "EV-aa962ef7ec9a5c50",
+        "EV-db1d74f0bfcc1b04",
+        "EV-f05783f745bc7c2c",
+        "EV-52508b70ccd2cc0b",
+        "EV-f9eebe4e3b9b667c",
+        "EV-c410d77c8d531e5f",
+        "EV-268250d426c1a4a0",
+        "EV-04873bbc8be8e70d",
+        "EV-2059f42c7b2aff44",
+        "EV-9fac0983ab657689",
+        "EV-4c0e7025692ab98c",
+        "EV-b8bba030747fd3b6",
+        "EV-8daf217ff024ac4a",
+        "EV-2298304e18dbf493",
+        "EV-89b644ff05e6b93b",
+        "EV-8fad966ecb9b1d31",
+        "EV-9c4b862020202f6c",
+        "EV-d8c69ed782b73a34",
+        "EV-c0f86afbefa2e0a6",
+        "EV-abf0990dcaceb1ce",
+        "EV-c60208ea9b51f47a",
+        "EV-c6359191a071b538",
+        "EV-b860d46fee913f27",
+        "EV-09d3ce5611881ed4",
+        "EV-c033ae6f9784d674",
+        "EV-28145c97a7237d6d",
+        "EV-e6771f58d7c2a050",
+        "EV-b8b39e635aa7511f",
+        "EV-54c329f4c8e4227b",
+        "EV-7808c274ce0aa0bf",
+        "EV-c3cbf5d7f860c693",
+        "EV-009105cbcf82a638",
+        "EV-b9a009b48d4cbf85",
+        "EV-b3809ff557361cc2",
+        "EV-bc71b0ddefa209a9",
+        "EV-a85fe927f20c2595",
+        "EV-b4f3dcac8cc230d9",
+        "EV-175af8c7b8146340",
+        "EV-d2d1834222ab32d3",
+        "EV-22b8d155ce027905",
+        "EV-d6f638da9e1d3b46",
+        "EV-0ad758b04b9b5313",
+        "EV-3ed6744b43d9b8df",
+        "EV-c08837795f9e16d2",
+        "EV-4a3cb762183581cd",
+        "EV-59933d63c4051085",
+        "EV-588cf9609e44edc9",
+        "EV-7fa23cf0102a8f92",
+        "EV-c28e0d02272537d8",
+        "EV-d31057c6f6ec28ba",
+        "EV-342799d4e68e7416",
+        "EV-d53cd33e8f541a65",
+        "EV-a4f052325d0ef230",
+        "EV-ef823877347ff40f",
+        "EV-3e9a0d1be6de5096",
+        "EV-8cd7665e40729256",
+        "EV-2d56dec8dfeb2b56",
+        "EV-6266c73d470e8aef",
+        "EV-ad269fada2269f35",
+        "EV-bce258f8f915ff5f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-software_development",
+        "TX-use_case-robotics_automation",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-industry-financial_services",
+        "TX-technology-on_device",
+        "TX-use_case-cybersecurity",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-human_in_loop",
+        "TX-industry-telecommunications",
+        "TX-industry-technology",
+        "TX-technology-multimodal",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-use_case-knowledge_search",
+        "TX-technology-embodied_ai",
+        "TX-technology-speech_audio",
+        "TX-industry-media_entertainment",
+        "TX-technology-video_generation",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-fine_tuning",
+        "TX-technology-computer_use"
+      ],
+      "relatedEntityIds": [
+        "EN-96eebba49dbbf422",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-992eafe973f69075",
+        "EN-0e008e2c06144ec8"
+      ],
+      "firstSeen": "2026-05-22",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-70d05a81606b3589",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-81e577740888ca6d",
+      "object_type": "entity",
+      "event_id": "EV-04efb4eecbb8125f",
+      "claim_refs": [
+        "CL-1cda26b2793c0711",
+        "CL-f1c1c7bd86022006",
+        "CL-0b9e84b1b5bb3529",
+        "CL-a86ade0b17b2516b"
+      ],
+      "source_refs": [
+        "SA-28a58dc04bcf015f"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-0f7fce6dceae69bb",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-81e577740888ca6d",
+      "object_type": "entity",
+      "event_id": "EV-f9eebe4e3b9b667c",
+      "claim_refs": [
+        "CL-177f5465a8d3ff8d",
+        "CL-61b810231fa78320",
+        "CL-8f4a9e0d14eb567b"
+      ],
+      "source_refs": [
+        "SA-03c48ec9a590bf3d"
+      ],
+      "data_date": "2026-07-10",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-on_device",
+      "name": "端侧",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "on_device",
+      "eventIds": [
+        "EV-d4d7b019ff0015df",
+        "EV-a15da1b52d939967",
+        "EV-283e88bdd15ed87e",
+        "EV-653cbce2ccc79f8b",
+        "EV-04efb4eecbb8125f",
+        "EV-8a9b12665a3e40a0",
+        "EV-712bb6241160c4c5",
+        "EV-0a5e65aa46b0d194",
+        "EV-52508b70ccd2cc0b",
+        "EV-c5b8faec223a4caf",
+        "EV-4026c95d4c01b96e",
+        "EV-0597e07d7e73051a",
+        "EV-02186ed7885f68fe",
+        "EV-5613946bdd578a26",
+        "EV-dd902b603e2e3dbc",
+        "EV-f4876d2e1a20d87b"
+      ],
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-bbdefa2950f49882",
+        "EN-a35b80cf9d171015",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-f3cfedbe8428c9f7",
+        "EN-7df09a7717ef2feb",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-992eafe973f69075",
+        "EN-1229af0aa3b0305e",
+        "EN-81e577740888ca6d",
+        "EN-968e2d5b08687bf4",
+        "EN-3a7bd3e2360a3d29",
+        "EN-8147e6fed86d42c1",
+        "EN-c608c4787821de1b",
+        "EN-6f21a653c48f4f19",
+        "EN-5388bc10736a0eff",
+        "EN-12a81529bba89666",
+        "EN-2c348893efb2316e",
+        "EN-c70eca6b0f88f44d",
+        "EN-ce635c4eabff5e4f",
+        "EN-c3ce0cc92b48bbd6",
+        "EN-0899bccb1b028521",
+        "EN-3dd90c2e1bf28b32",
+        "EN-5d7b7e77768bfdfc"
+      ],
+      "fdeIds": [
+        "FDE-ef57fbc39a8c11f6"
+      ],
+      "hardwareIds": [
+        "HW-de1b3c6ad39cc9bc"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}
