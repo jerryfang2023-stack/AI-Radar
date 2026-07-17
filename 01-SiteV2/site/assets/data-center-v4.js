@@ -157,8 +157,8 @@
     return terms.every((term) => haystack.includes(term));
   }
 
-  function eventCurrentBatchMode() {
-    return view === "events" && !["from", "to"].some((key) => params.get(key));
+  function eventCurrentBatchMode(targetView = view) {
+    return ["events", "fde", "hardware"].includes(targetView) && !["from", "to"].some((key) => params.get(key));
   }
 
   function entityIndexItems(data) {
@@ -243,21 +243,23 @@
         && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
       ));
     } else if (targetView === "fde") {
+      if (eventCurrentBatchMode(targetView)) items = items.filter((item) => item.dataDate === data.meta.currentDate);
       items = items.filter((item) => (
         matchesQuery(item, ["title", "customer", "vendor", "industry", "useCase", "reportedNeed"], query)
         && (!stage || item.stage === stage)
         && (!industry || item.industry === industry)
         && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
-        && (!from || item.date >= from)
-        && (!to || item.date <= to)
+        && (!from || item.dataDate >= from)
+        && (!to || item.dataDate <= to)
       ));
     } else if (targetView === "hardware") {
+      if (eventCurrentBatchMode(targetView)) items = items.filter((item) => item.dataDate === data.meta.currentDate);
       items = items.filter((item) => (
         matchesQuery(item, ["title", "hardwareType", "supplier", "customer", "region"], query)
         && (!type || item.hardwareType === type)
         && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
-        && (!from || item.date >= from)
-        && (!to || item.date <= to)
+        && (!from || item.dataDate >= from)
+        && (!to || item.dataDate <= to)
       ));
     } else if (targetView === "community") {
       items = items.filter((item) => (
@@ -314,7 +316,7 @@
     const to = params.get("to") || "";
     const industry = params.get("industry") || "";
     const industries = targetView === "fde" ? uniqueSorted(data.fde.map((item) => item.industry).filter((value) => value && value !== "未披露")) : [];
-    const dates = collectionForView(data, targetView).map((item) => targetView === "events" ? item.dataDate : item.date).filter(Boolean).sort();
+    const dates = collectionForView(data, targetView).map((item) => ["events", "fde", "hardware"].includes(targetView) ? item.dataDate : item.date).filter(Boolean).sort();
     const minimumDate = dates[0] || "";
     const maximumDate = dates.at(-1) || "";
     const moreActive = Boolean(from || to || industry);
@@ -371,7 +373,7 @@
 
   function pageHead(data, targetView, count) {
     const config = viewConfig[targetView];
-    const auxiliaryDate = targetView === "events" && eventCurrentBatchMode()
+    const auxiliaryDate = eventCurrentBatchMode(targetView)
       ? `<span class="dc-data-date">数据日期 ${escapeHtml(data.meta.currentDate || "未披露")}</span>`
       : "";
     return `

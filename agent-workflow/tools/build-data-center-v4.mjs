@@ -33,16 +33,20 @@ const EVENT_RULES = [
   ["hardware_deployment", /\b(?:deploys?|deployed|installs?|installed)\b.{0,80}\b(?:gpu|accelerator|server|cluster|data cent(?:er|re))\b|部署.{0,40}(?:GPU|芯片|服务器|集群|数据中心)/iu],
   ["pricing_change", /\b(?:price|pricing|subscription|billing)\b.{0,40}\b(?:changes?|changed|increases?|decreases?|cuts?|launches?)\b|调价|定价|计费变化|降价|涨价/iu],
   ["policy_regulation", /\b(?:regulator|regulation|policy|executive order|approved by|banned by)\b|监管|法规|政策|行政令|批准|禁令|(?:网信|监管|政府|有关部门).{0,50}(?:备案|公告|公布)|备案信息/iu],
-  ["deployment", /\b(?:deploys?|deployed|rolls? out|rolled out|implements?|implemented|goes? live|pilots|piloted)\b|部署|上线|落地|试点|实施/iu],
+  ["deployment", /\b(?:deploy(?:s|ed|ing)?|rolls? out|rolled out|implement(?:s|ed|ing)?|goes? live|pilots?|piloted)\b|部署|上线|落地|试点|实施/iu],
   ["research_result", /\b(?:study|research|benchmark|paper|report)\b.{0,70}\b(?:finds?|shows?|reports?|achieves?|usage|gap)\b|(?:研究(?!员)|论文|基准|报告).{0,50}(?:显示|表明|达到|结果|差距|用量|增长|下降|登顶|占比)/iu],
   ["organization_people", /\b(?:appoints?|appointed|hires?|hired|joins?|joined|resigns?|leaves?|depart(?:s|ed)?)\b|任命|加入|离职|辞任|聘任/iu],
   ["model_release", /\b(?:releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|open[- ]sources?)\b.{0,90}\b(?:model|llm|foundation model)\b|发布.{0,40}(?:模型|大模型)|推出.{0,40}(?:模型|大模型)|开源.{0,50}(?:模型|大模型)|(?:模型|大模型).{0,30}开源/iu],
-  ["hardware_product", /\b(?:releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|ships?|shipped|debuts?)\b.{0,90}\b(?:gpus?|chips?|processors?|accelerators?|servers?|computers?|devices?|robots?|glasses|keyboards?|npus?|chiplets?)\b|发布.{0,40}(?:芯片|GPU|服务器|计算机|设备|机器人|眼镜|键盘|NPU|芯粒|工作站)|(?:硬件|键盘|设备|计算机|工作站).{0,40}(?:登场|亮相)/iu],
+  ["hardware_product", /\b(?:releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|ships?|shipped|debuts?|expands?|adds?)\b.{0,90}\b(?:gpus?|chips?|processors?|accelerators?|servers?|computers?|devices?|robots?|glasses|keyboards?|npus?|chiplets?|modules?)\b|(?:发布|推出|扩展|新增).{0,40}(?:芯片|GPU|服务器|计算机|设备|机器人|眼镜|键盘|NPU|芯粒|工作站|模组)|(?:硬件|键盘|设备|计算机|工作站|模组).{0,40}(?:登场|亮相|新增|扩展)/iu],
   ["service_change", /\b(?:discontinues?|discontinued|shuts? down|sunsets?|removes?|removed)\b|停止服务|关闭服务|下线|移除功能/iu],
   ["product_release", /\b(?:releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|adds?|added|open[- ]sources?)\b|发布|推出|上线新|新增|宣布开源|开源.{0,50}(?:工具|框架|软件)/iu]
 ];
 
 const SPECIAL_EVENT_RULES = [
+  ["policy_regulation", /备案|filed? with .{0,40}(?:regulator|authority)/iu],
+  ["organization_people", /\b(?:resigns?|resigned|leaves?|left)\b|辞职|离职/iu],
+  ["product_release", /(?:上线|推出|发布).{0,18}(?:新功能|功能更新)|\brolls? out\b.{0,50}\b(?:feature|capability|update)\b/iu],
+  ["hardware_deployment", /(?:发布|建设|推出|launch(?:es|ed)?|build(?:s|ing)?|construct(?:s|ing)?|unveil(?:s|ed)?).{0,100}(?:(?:国家级|national).{0,30}(?:AI|人工智能).{0,30}(?:infrastructure|factory|基础设施|数据中心)|(?:AI|人工智能).{0,20}(?:factory|data cent(?:er|re)|infrastructure|基础设施|数据中心|智算中心))/iu],
   ["hardware_product", /(?:发布|推出|亮相|launch(?:es|ed)?|release[sd]?).{0,50}(?:AI|人工智能).{0,20}(?:智能)?硬件|(?:AI|人工智能).{0,20}(?:智能)?硬件.{0,40}(?:发布|推出|亮相|launch(?:es|ed)?|release[sd]?)/iu],
   ["funding", /完成.{0,30}(?:融资|募资)|\bcompleted\b.{0,40}\b(?:funding|financing)\b/iu],
   ["partnership", /合资成立|\b(?:forms?|creates?|establishes?)\b.{0,40}\bjoint venture\b|\bjoint venture\b/iu],
@@ -56,6 +60,8 @@ const LEAD_EVENT_RULES = [
 
 const OPINION_ONLY = /\b(?:says?|warns?|predicts?|criticizes?|argues?|believes?|interview)\b|表示|认为|警告|预测|直言|批评|访谈/iu;
 const PROPOSAL_ONLY = /\b(?:predicts?|proposes?|suggests?|calls? for)\b|预言|提议|建议设立|呼吁设立/iu;
+const NEGATED_OR_SPECULATIVE_EVENT = /(?:合作|收购|并购|融资).{0,20}(?:可能性较低|可能性不大|尚无计划|不会|不太可能)|\b(?:unlikely|not expected|no plans?)\b.{0,50}\b(?:partner|acquir|merge|rais)/iu;
+const NON_AI_MERCHANDISE = /\b(?:merch(?:andise)?|basketball|t-?shirts?|hoodies?|apparel|swag)\b|官方周边|篮球|T\s*恤|卫衣/iu;
 const RUMOR = /\b(?:rumou?r|reportedly|leak(?:ed)?)\b|传闻|爆料|泄露|据称/iu;
 const DISPUTE = /\b(?:disputes?|disputed|denies?|denied|not (?:be )?final|could change)\b|否认|有争议|尚未最终确定|可能变化/iu;
 const IN_PROGRESS = /\b(?:in talks|in discussions|negotiating|seeking to)\b|洽谈|讨论中|正在谈判/iu;
@@ -101,6 +107,9 @@ function eventSourceEligibility(raw, artifact, title) {
   if (COMMUNITY_DISCOVERY_URL.test(artifact.source_url)) {
     return { accepted: false, reason: "community_source_requires_original_event_source" };
   }
+  if (NON_AI_MERCHANDISE.test(title)) {
+    return { accepted: false, reason: "non_ai_merchandise_not_industry_event" };
+  }
   try {
     const url = new URL(artifact.source_url);
     if (url.hostname === "github.com" && !/\/releases\/tag\//u.test(url.pathname)) {
@@ -125,6 +134,8 @@ function eventSourceEligibility(raw, artifact, title) {
 
 const ORGANIZATION_ALIASES = [
   ["Accenture", ["Accenture"]],
+  ["Agave", ["Agave"]],
+  ["Aina", ["Aina Apps", "Aina"]],
   ["Adapter", ["Startup Adapter"]],
   ["Alibaba", ["Alibaba", "阿里巴巴", "阿里", "Qwen"]],
   ["Alipay", ["Alipay", "支付宝"]],
@@ -148,6 +159,7 @@ const ORGANIZATION_ALIASES = [
   ["Hadrius", ["Hadrius"]],
   ["Hinge", ["Hinge"]],
   ["IBM", ["IBM"]],
+  ["Intel", ["Intel"]],
   ["InstaLILY", ["InstaLILY", "Instalily AI", "Instalily"]],
   ["Innovation Labs", ["Innovation Labs"]],
   ["JD Cloud", ["京东云", "JD Cloud"]],
@@ -167,6 +179,7 @@ const ORGANIZATION_ALIASES = [
   ["Orthogonal", ["Orthogonal"]],
   ["PixVerse", ["PixVerse"]],
   ["PrismML", ["PrismML"]],
+  ["PwC", ["PwC"]],
   ["Rime", ["Rime"]],
   ["Rubrik", ["Rubrik"]],
   ["Salesforce", ["Salesforce"]],
@@ -181,6 +194,7 @@ const ORGANIZATION_ALIASES = [
   ["Soul", ["Soul"]],
   ["SpaceX", ["SpaceX"]],
   ["Spotify", ["Spotify"]],
+  ["Stellantis", ["Stellantis"]],
   ["StepFun", ["StepFun", "阶跃星辰", "阶跃"]],
   ["Sunrun", ["Sunrun"]],
   ["Tencent", ["Tencent", "腾讯", "腾讯混元"]],
@@ -191,7 +205,7 @@ const ORGANIZATION_ALIASES = [
   ["Volcano Engine", ["Volcano Engine", "火山引擎"]],
   ["Whatnot", ["Whatnot"]],
   ["Work Louder", ["Work Louder"]],
-  ["xAI", ["xAI", "Grok"]],
+  ["xAI", ["SpaceXAI", "xAI", "Grok"]],
   ["Xiaomi", ["Xiaomi", "小米"]],
   ["ZTE", ["ZTE", "中兴"]]
 ].map(([canonicalName, aliases]) => ({ canonicalName, aliases }));
@@ -285,6 +299,7 @@ function documentType(raw) {
 function findEventRule(title, lead = "") {
   if (INFORMATIONAL_TITLE.test(title)) return null;
   if (TRUNCATED_OR_NON_EVENT_TITLE.test(title)) return null;
+  if (NEGATED_OR_SPECULATIVE_EVENT.test(title)) return null;
   if (/[；;].*(?:发布|推出|开源|融资|收购|合作|备案|集成|上线)/iu.test(title)) return null;
   if (/(?:代码库|codebase).{0,30}(?:中|里)?.{0,30}(?:发现|came across|discovered)/iu.test(`${title}\n${lead}`)) return null;
   if (!/\b(?:report|research|study)\b|报告|研究/iu.test(title)
@@ -308,6 +323,9 @@ function eventStatus(title, lead, eventType = "") {
   if (WITHDRAWN.test(text)) return "withdrawn";
   if (RUMOR.test(title)) return "rumored";
   if (DISPUTE.test(title) || (eventType === "funding" && DISPUTE.test(lead))) return "disputed";
+  if (eventType === "funding" && /\b(?:raises?|raised|closes?|closed|secures?|secured)\b|完成.{0,30}(?:融资|募资)|获得.{0,30}(?:融资|投资)/iu.test(title)) return "completed";
+  if (eventType === "acquisition" && /\b(?:acquires?|acquired|merges?|merged)\b|收购|并购|合并/iu.test(title)) return "completed";
+  if (eventType === "lawsuit_settlement" && /\b(?:sues?|sued|filed .{0,30}(?:suit|lawsuit)|settles?|settled)\b|起诉|和解/iu.test(title)) return "completed";
   if (IN_PROGRESS.test(title)) return "in_progress";
   if (PLANNED.test(title)) return "planned";
   if (COMPLETED.test(title)) return "completed";
@@ -328,7 +346,9 @@ function actionMatch(title, pattern) {
     return { subject: leadingSubject, action: "", object: title };
   }
   const start = match.index || 0;
-  let subject = normalizeSpace(title.slice(0, start).replace(/^[\[【(（].*?[\]】)）]\s*/u, "").replace(/\b(?:in talks to|plans? to|expected to|intends? to)\s*$/iu, ""));
+  let subject = normalizeSpace(title.slice(0, start)
+    .replace(/^[\[【(（].*?[\]】)）]\s*/u, "")
+    .replace(/\b(?:in talks to|plans? to|expected to|intends? to|is|are|was|were|has|have)\s*$/iu, ""));
   const action = normalizeSpace(match[0]);
   const object = normalizeSpace(title.slice(start + match[0].length));
   if (!subject) {
@@ -352,6 +372,7 @@ function cleanOrganizationCandidate(value) {
     .replace(/^(?:(?:sovereign|custom)\s+AI\s+[^,]{0,50}?\s+startup|AI\s+[^,]{0,50}?\s+startup|startup)\s+/iu, "")
     .replace(/(?:'s|\u2019s)\s+founder(?:\s+just)?$/iu, "")
     .replace(/\s+(?:in talks to|plans? to|expected to|intends? to|to)$/iu, "")
+    .replace(/\s+(?:announces?|announced)$/iu, "")
     .replace(/(?:研究员|首席执行官|CEO|创始人|员工|高管|团队).*/u, "")
     .replace(/[，,:：].*$/u, "")
     .replace(/(?:将|拟|正寻求|计划|宣布)$/u, "")
@@ -397,7 +418,7 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "") {
     canonical.add(hit.canonicalName.toLocaleLowerCase());
   }
 
-  if (!selected.length && eventType !== "organization_people") {
+  if (eventType !== "organization_people") {
     for (const rawCandidate of splitEntityNames(parsed.subject)) {
       const candidate = cleanOrganizationCandidate(rawCandidate);
       if (!candidate || canonical.has(candidate.toLocaleLowerCase())) continue;
@@ -406,6 +427,7 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "") {
       canonical.add(candidate.toLocaleLowerCase());
     }
   }
+  selected.sort((a, b) => a.start - b.start || b.mentionText.length - a.mentionText.length);
   return selected.slice(0, 6);
 }
 
@@ -425,7 +447,7 @@ function sentenceSpans(body) {
 }
 
 function metricValues(text) {
-  return [...text.matchAll(/(?:[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|m|b|t|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|gpus?|chips?|servers?|accelerators?|万|亿|万元|亿元|台|枚|颗))/giu)]
+  return [...text.matchAll(/(?:[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|m|b|t|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|peta?flops?|万|亿|万元|亿元|台|枚|颗))/giu)]
     .map((match) => match[0]).slice(0, 12);
 }
 
@@ -581,10 +603,24 @@ function componentType(text) {
     ["input_device", /\bkeyboard\b|键盘/iu],
     ["robot", /\brobots?\b|机器人/iu],
     ["smart_glasses", /\b(?:smart|AI) glasses\b|智能眼镜|AI眼镜/iu],
-    ["ai_device", /\bAI (?:device|hardware)\b|AI\s*智能硬件|人工智能硬件/iu],
-    ["data_center", /\bdata cent(?:er|re)\b|数据中心/iu]
+    ["ai_device", /\b(?:AI (?:device|hardware)|computer|module)\b|AI\s*智能硬件|人工智能硬件|计算机|模组/iu],
+    ["data_center", /\b(?:data cent(?:er|re)|AI infrastructure)\b|数据中心|人工智能基础设施|AI\s*基础设施/iu]
   ];
   return entries.find(([, pattern]) => pattern.test(text))?.[0] || "";
+}
+
+function hardwareCapacityMetric(text) {
+  return metricValues(text).find((metric) => /(?:gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|peta?flops?|台|枚|颗)$/iu.test(metric.trim())) || "";
+}
+
+function hardwareSupplier(text, entities) {
+  const names = entities.map((entity) => entity?.canonical_name).filter(Boolean);
+  for (const name of names) {
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+    if (new RegExp(`(?:by|from|made by|manufactured by|supplied by)\\s+${escaped}|${escaped}.{0,24}(?:manufactures?|supplies?|ships?|builds?)`, "iu").test(text)) return name;
+    if (new RegExp(`(?:由|来自)${escaped}.{0,16}(?:制造|生产|供应|交付)|${escaped}.{0,16}(?:制造|生产|供应|交付)`, "iu").test(text)) return name;
+  }
+  return names.length === 1 ? names[0] : "";
 }
 
 function hardwareProjection(event, claims, entities) {
@@ -593,8 +629,10 @@ function hardwareProjection(event, claims, entities) {
   const text = claims.map((claim) => claim.source_quote).join(" ");
   const component = componentType(text);
   if (!component) return null;
-  const metric = metricValues(text)[0] || "";
-  const capacity = metric ? Number(metric.replace(/[^\d.]/gu, "")) : null;
+  const capacityMetric = hardwareCapacityMetric(text);
+  const capacity = capacityMetric ? Number(capacityMetric.replace(/[^\d.]/gu, "")) : null;
+  const contractValue = (metricValues(text).find((metric) => /^[$€£¥]|(?:万元|亿元)$/iu.test(metric.trim())) || "")
+    .replace(/[.,;:!?。；：！？]+$/u, "");
   return {
     hardware_record_id: `HW-${hash(event.event_id)}`,
     event_id: event.event_id,
@@ -604,12 +642,12 @@ function hardwareProjection(event, claims, entities) {
     manufacturing_stage: /fab|wafer|foundry|晶圆|代工/iu.test(text) ? "manufacturing" : "",
     process_node: text.match(/\b\d+(?:\.\d+)?\s?nm\b/iu)?.[0] || "",
     capacity: Number.isFinite(capacity) ? capacity : null,
-    capacity_unit: metric.replace(/[\d.,\s]/gu, ""),
-    supplier: ["hardware_product", "hardware_capacity", "hardware_supply", "product_release"].includes(event.event_type) ? entities[0]?.canonical_name || "" : "",
+    capacity_unit: capacityMetric.replace(/[\d.,\s]/gu, ""),
+    supplier: hardwareSupplier(text, entities),
     customer: "",
     deployment_site: "",
     region: event.locations[0] || "",
-    contract_value: /[$€£¥]|亿元|亿美元/iu.test(metric) ? metric : "",
+    contract_value: contractValue,
     shipment_date: /ship|deliver|出货|交付/iu.test(text) ? event.event_time : "",
     claim_refs: event.claim_refs,
     source_refs: event.source_refs
@@ -620,17 +658,26 @@ function fdeProjection(event, claims, entities) {
   const allowed = new Set(["deployment", "procurement_contract", "partnership"]);
   if (!allowed.has(event.event_type) || !["verified", "partial"].includes(event.publication_status)) return null;
   const text = claims.map((claim) => claim.source_quote).join(" ");
-  if (!/\b(?:deploy|implement|rollout|go live|customer|workflow|integrat)\w*\b|部署|上线|客户|工作流|集成|实施/iu.test(text)) return null;
+  const implementationEvidence = /\b(?:deploy|implement|rollout|go live|workflow|integrat)\w*\b|部署|落地|工作流|集成|实施/iu.test(text);
+  const enterpriseContext = /\b(?:enterprise|compan(?:y|ies)|customer|clients?|employees?|workforce|organization|business|production|hospital|bank|manufacturer|retailer|government|agency|university)\b|企业|公司|客户|员工|组织|业务|生产|医院|银行|制造商|零售商|政府|高校/iu.test(text);
+  if (!implementationEvidence || !enterpriseContext) return null;
   const reportedMetrics = metricValues(text);
   const outcomes = claims.filter((claim) => /\b(?:reduced|increased|improved|saved|achieved)\b|降低|提升|节省|达到/iu.test(claim.source_quote)).map((claim) => claim.source_quote);
-  const delivery = claims.filter((claim) => /\b(?:deployed|implemented|integrated|rolled out)\b|部署|实施|集成|上线/iu.test(claim.source_quote)).map((claim) => claim.source_quote);
+  const delivery = claims.filter((claim) => /\b(?:deploy(?:ed|ing)|implement(?:ed|ing)|integrat(?:ed|ing)|rolled out)\b|部署|实施|集成|上线/iu.test(claim.source_quote)).map((claim) => claim.source_quote);
+  const useCase = normalizeSpace(event.object || "")
+    .replace(/^[,，:：;；\s]+/u, "")
+    .replace(/^to\s+/iu, "")
+    .replace(/\s*[-–—|]\\?\s*(?:[^-–—|]*?(?:Newsroom|Company Announcement|FT\.com|Reuters|Bloomberg)).*$/iu, "")
+    .replace(/\s*(?:[|<]|[-–—]\s*(?:Company Announcement\s*)?[-–—]?)\s*(?:FT\.com|Reuters|Bloomberg).*$/iu, "")
+    .replace(/\s*\\+\s*[A-Z][\w .&-]+$/u, "")
+    .trim();
   const record = {
     fde_id: `FDE-${hash(event.event_id)}`,
     event_id: event.event_id,
     customer: ["deployment", "procurement_contract"].includes(event.event_type) ? entities[0]?.canonical_name || "" : "",
     vendor: "",
     industry: "",
-    use_case: event.object,
+    use_case: useCase,
     workflow_before: "",
     workflow_after: "",
     deployment_stage: event.event_status,
@@ -649,18 +696,32 @@ function fdeProjection(event, claims, entities) {
     claim_refs: event.claim_refs,
     source_refs: event.source_refs
   };
-  for (const field of ["customer", "vendor", "industry", "workflow_before", "workflow_after", "delivery_model", "team_composition", "reported_need"]) {
+  for (const field of ["customer", "vendor", "industry", "use_case", "workflow_before", "workflow_after", "delivery_model", "team_composition", "reported_need"]) {
     if (!record[field]) record.undisclosed_fields.push(field);
   }
   if (!record.systems_integrated.length) record.undisclosed_fields.push("systems_integrated");
   if (!record.data_requirements.length) record.undisclosed_fields.push("data_requirements");
   if (!record.governance_controls.length) record.undisclosed_fields.push("governance_controls");
+  if (!record.reported_delivery_components.length) record.undisclosed_fields.push("reported_delivery_components");
   if (!record.reported_outcomes.length) record.undisclosed_fields.push("reported_outcomes");
   return record;
 }
 
 function cleanForCluster(value) {
   return normalizeSpace(value).toLowerCase().replace(/\b(?:announces?|launches?|releases?|introduces?|the|a|an|new)\b/gu, " ").replace(/[^\p{L}\p{N}]+/gu, " ").trim().split(" ").slice(0, 14).join(" ");
+}
+
+function namedReleaseIdentity(value = "") {
+  const text = normalizeSpace(value);
+  const identities = [
+    ["inkling", /\bInkling\b/iu],
+    ["grok-build", /\bGrok[- ]Build\b/iu],
+    ["ai-ran", /\bAI[- ]RAN\b/iu],
+    ["lm-studio-bionic", /\bLM Studio Bionic\b/iu],
+    ["roblox-build", /\bRoblox\b.{0,60}\bBuild\b|\bBuild\b.{0,60}\bRoblox\b/iu],
+    ["national-ai-infrastructure", /\bnational AI infrastructure\b|国家级(?:人工智能|AI)基础设施/iu]
+  ];
+  return identities.find(([, pattern]) => pattern.test(text))?.[0] || "";
 }
 
 function normalizedFundingMetric(value) {
@@ -682,10 +743,16 @@ function normalizedFundingMetric(value) {
 function clusterEvents(candidates) {
   const clusters = new Map();
   for (const candidate of candidates) {
-    const identity = candidate.event_type === "funding" && candidate.metrics[0]
+    const releaseIdentity = ["model_release", "product_release", "deployment", "hardware_product", "hardware_deployment"].includes(candidate.event_type)
+      ? namedReleaseIdentity(`${candidate.action} ${candidate.object}`)
+      : "";
+    const identity = releaseIdentity || (candidate.event_type === "funding" && candidate.metrics[0]
       ? normalizedFundingMetric(candidate.metrics[0])
-      : cleanForCluster(candidate.object || candidate.action);
-    const key = `${candidate.event_type}|${candidate.entities[0] || "unknown"}|${identity}`;
+      : cleanForCluster(candidate.object || candidate.action));
+    const eventFamily = releaseIdentity ? "named_release" : candidate.event_type;
+    const key = releaseIdentity
+      ? `${eventFamily}|${identity}`
+      : `${eventFamily}|${candidate.entities[0] || "unknown"}|${identity}`;
     if (!clusters.has(key)) clusters.set(key, []);
     clusters.get(key).push(candidate);
   }
@@ -887,13 +954,15 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
 
       if (eventClaimRows.length) {
         const candidateId = `EC-${hash(`${rawId}|${rule.eventType}`)}`;
+        const eventTime = cleanString(raw.published_at);
+        const disclosedAt = cleanString(raw.published_at || raw.collected_at);
         doc.event_candidate_ids.push(candidateId);
         eventCandidates.push({
           event_candidate_id: candidateId,
           event_type: rule.eventType,
           event_status: status,
-          event_time: cleanString(raw.published_at),
-          disclosed_at: cleanString(raw.published_at || raw.collected_at),
+          event_time: eventTime,
+          disclosed_at: disclosedAt,
           entities: entityIds,
           action: parsed.action || rule.eventType,
           object: parsed.object || title,
@@ -902,7 +971,12 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
           claim_refs: eventClaimRows.map((claim) => claim.claim_id),
           source_refs: [artifact.source_artifact_id],
           conflicts: [],
-          missing_fields: [!entityIds.length ? "entities" : "", !parsed.object ? "object" : ""].filter(Boolean),
+          missing_fields: [
+            !entityIds.length ? "entities" : "",
+            !parsed.object ? "object" : "",
+            !eventTime ? "event_time" : "",
+            !disclosedAt ? "disclosed_at" : ""
+          ].filter(Boolean),
           update_history: [],
           publication_status: publicationStatus(status, cleanString(raw.source_role), eventClaimRows.length)
         });
@@ -921,8 +995,10 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   for (const event of clustered.canonicalEvents) {
     const eventClaims = event.claim_refs.map((id) => claimsById.get(id)).filter(Boolean);
     const eventEntities = event.entities.map((id) => entitiesById.get(id)).filter(Boolean);
-    const rawDocument = event.source_refs.map((id) => rawBySource.get(id)).find(Boolean) || null;
-    event.display_title_zh = buildEventDisplayTitle({ event, claims: eventClaims, entities: eventEntities, rawDocument });
+    const rawDocumentsForEvent = event.source_refs.map((id) => rawBySource.get(id)).filter(Boolean);
+    const titleCandidates = (rawDocumentsForEvent.length ? rawDocumentsForEvent : [null])
+      .map((rawDocument) => buildEventDisplayTitle({ event, claims: eventClaims, entities: eventEntities, rawDocument }));
+    event.display_title_zh = titleCandidates.find((title) => isCompletePublicEventTitle(title)) || titleCandidates[0] || "";
     if (!isCompletePublicEventTitle(event.display_title_zh)) {
       qaQueue.push({
         qa_id: `QA-${hash(`${event.event_id}|display-title`)}`,

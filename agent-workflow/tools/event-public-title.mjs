@@ -75,6 +75,14 @@ function productObject(event, evidence = "") {
   return value && !/^undisclosed/iu.test(value) ? value : "";
 }
 
+function deploymentObject(evidence = "") {
+  const named = text(evidence).match(/\b(?:Claude|ChatGPT|Gemini|Copilot|Grok|Qwen|Llama)\b/iu)?.[0];
+  if (named) return named;
+  return /\b(?:AI|artificial intelligence|generative AI|GenAI)\b|人工智能|大模型|智能体/iu.test(evidence)
+    ? "AI 系统"
+    : "";
+}
+
 export function buildEventDisplayTitle({
   event,
   claims = [],
@@ -84,7 +92,7 @@ export function buildEventDisplayTitle({
   const originalTitle = text(rawDocument?.title_original);
   const translatedTitle = text(rawDocument?.title_zh);
   if (translatedTitle && isCompletePublicEventTitle(translatedTitle)) return compact(translatedTitle);
-  if (containsChinese(originalTitle)) return compact(originalTitle);
+  if (containsChinese(originalTitle) && isCompletePublicEventTitle(originalTitle)) return compact(originalTitle);
 
   const subject = subjectFor(event, claims, entities, originalTitle);
   const evidence = [originalTitle, event?.object, ...claims.map((claim) => claim?.source_quote)]
@@ -118,6 +126,11 @@ export function buildEventDisplayTitle({
     if (/xAI sues a man for using Grok to generate CSAM/iu.test(evidence)) {
       return "xAI 起诉利用 Grok 生成违法深度伪造内容的用户";
     }
+  }
+
+  if (event?.event_type === "deployment") {
+    const object = deploymentObject(evidence);
+    return compact(`${subject || "未披露主体"} 部署${object ? ` ${object}` : " AI 系统"}`);
   }
 
   if (["model_release", "product_release", "service_change", "pricing_change", "hardware_product"].includes(event?.event_type)) {
@@ -155,7 +168,10 @@ export function isCompletePublicEventTitle(value = "") {
   return title.length >= 6
     && containsChinese(title)
     && englishConnectorCount(title) < 2
-    && !/(?:…|\.\.\.|&#\d+;)/u.test(title)
+    && !/(?:…|\.\.\.|&(?:#\d+|[a-z]+);)/iu.test(title)
+    && !/[|]|\b(?:Newsroom|Company Announcement)\b/iu.test(title)
+    && !/\bformer\s+hardware\s+VP\b/iu.test(title)
+    && !/(?:\b[A-Za-z][A-Za-z’'-]*\b[\s,:-]*){5,}/u.test(title)
     && !/^(?:exclusive|breaking):/iu.test(title)
     && !/(?:发布\s+(?:for|with|to|that|new|its)\b|：\s*[a-z]{2,}\b)/iu.test(title)
     && !/(?:发生并购|完成融资|发布产品|完成部署|发生事件)$/u.test(title)

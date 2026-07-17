@@ -1,0 +1,301 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-051
+title: "Gumloop lands $50M from Benchmark to turn every ..."
+title_zh: ""
+title_translation_status: needs_ingestion_translation
+title_translation_method: title_translation_generator_failed
+original_url: "https://techcrunch.com/2026/03/12/gumloop-lands-50m-from-benchmark-to-turn-every-employee-into-an-ai-agent-builder/"
+canonical_url: "https://techcrunch.com/2026/03/12/gumloop-lands-50m-from-benchmark-to-turn-every-employee-into-an-ai-agent-builder"
+source_name: "keyword search / Anysearch"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: formal_report
+search_intent: "find_market_trend"
+search_path: "a_media_gdelt"
+search_path_label: "A 级媒体 / GDELT 路径"
+author: ""
+published_at: "2026-03-12T00:00:00.000Z"
+collected_at: 2026-07-17T01:57:08.767Z
+language: mixed
+full_text_hash: ea6a6557699d550e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-051-gumloop-lands-50m-from-benchmark-to-turn-every.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-17/r-051-gumloop-lands-50m-from-benchmark-to-turn-every.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5362,"paragraph_count":35,"sentence_count":39,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 5362
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ea6a6557699d550e","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: bc76e4c01c8025bc
+content_hash: ea6a6557699d550e
+semantic_hash: 846374fdd0e59209
+duplicate_of: ""
+first_seen_at: "2026-03-12T00:00:00.000Z"
+last_seen_at: 2026-07-17T01:57:08.767Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Meta","Apple"],"products":["agent","agents","Claude","Gemini"],"people":[],"industries":["法律 / 法务","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["计费 / 预算管理"],"business_actions":["合作 / 联盟","部署 / 上线","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["$50M","8","30","12","2026","2023","$50 million","10"],"quotes":["They get addicted, they start building more agents, and then all of a sudden, the whole company is AI native,","step on the gas.","no-brainer.","build a 10-person, billion-dollar company,","You can go in and start making agents and workflow automations immediately,"]}
+evidence_seed: {"company_actions":["Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder | TechCrunch Image Credits:Gumloop Startups Copy Share Link # Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder Marina Temkin 8:30 AM PDT · March 12, 2026 Copy Share Link When Ma... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt","At that time, the concept of AI agents was still largely experimental and prone to errors.","As AI technology has matured, so has Gumloop’s offering."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder | TechCrunch Image Credits:Gumloop Startups Copy Share Link # Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder Marina Temkin 8:30 AM PDT · March 12, 2026 Copy Share Link When Ma... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Image Credits: Gumloop Startups Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder Marina Temkin 8:30 AM PDT · March 12, 2026 When Max Brodeur-Urbas co-founded Gumloop in mid-2023, his vision was to help non-technical employees automate repetitive tasks using AI.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"At that time, the concept of AI agents was still largely experimental and prone to errors.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"As AI technology has matured, so has Gumloop’s offering.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The company claims that it now allows teams at organizations like Shopify, Ramp, Gusto, Samsara, Instacart, and Opendoor to deploy reliable AI agents that autonomously handle complex, multistep tasks, all without ever needing an engineer.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Employees can share the agents they build with colleagues, creating a compounding effect that accelerates internal automation.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-17T01:57:08.767Z
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Gumloop lands $50M from Benchmark to turn every ...
+
+## clean_text
+
+Image Credits: Gumloop
+Startups
+Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder
+Marina Temkin
+8:30 AM PDT · March 12, 2026
+When Max Brodeur-Urbas co-founded Gumloop in mid-2023, his vision was to help non-technical employees automate repetitive tasks using AI. At that time, the concept of AI agents was still largely experimental and prone to errors.
+As AI technology has matured, so has Gumloop’s offering.
+The company claims that it now allows teams at organizations like Shopify, Ramp, Gusto, Samsara, Instacart, and Opendoor to deploy reliable AI agents that autonomously handle complex, multistep tasks, all without ever needing an engineer.
+Employees can share the agents they build with colleagues, creating a compounding effect that accelerates internal automation. “They get addicted, they start building more agents, and then all of a sudden, the whole company is AI native,” Brodeur-Urbas told TechCrunch.
+As companies race to adopt AI, Benchmark general partner Everett Randle believes the key to success lies in empowering every worker with AI superpowers, and Gumloop’s intuitive agent builder is an example of the kind of tool that will unlock that potential.
+That’s why Randle, who joined Benchmark last October from Kleiner Perkins, chose to lead a $50 million Series B investment into Gumloop. The deal, which is Randle’s first at his new firm, included participation from Nexus VP, First Round Capital, Y Combinator, BoxGroup, The Cannon Project, and Shopify.
+Though Gumloop wasn’t actively seeking new capital, the startup decided this was the year to “step on the gas.” For Brodeur-Urbas, partnering with Benchmark — the firm behind icons like eBay, Uber, and Dropbox — was a “no-brainer.”
+While Brodeur-Urbas previously planned to “build a 10-person, billion-dollar company,” the surging demand from enterprise clients has compelled him to build a dedicated sales force and scale up his engineering team, he said.
+Gumloop is by no means the only player vying to turn every knowledge worker into an AI agent-builder. The startup faces stiff competition from established automation platforms like Zapier and n8n, as well as specialized agent builders like Dust. Even foundational AI labs are entering the fray. For instance, Anthropic’s Claude Cowork allows users to create autonomous agents without writing a single line of code.
+But Randle believes Gumloop is superior to all its rivals. During his due diligence, he discovered that at least one of the company’s customers had adopted Gumloop somewhat organically.
+When Randle asked a CTO how they chose Gumloop, the response was telling. The company had given employees full access to Gumloop alongside two competitors. Six months later, staff were using Gumloop daily or weekly, while the competing tools sat untouched, Randle told TechCrunch.
+The reason Gumloop gained such momentum, according to Randle, is its minimal learning curve. “You can go in and start making agents and workflow automations immediately,” he said.
+While many AI startups worry that foundational models will replicate the same functionality and render them obsolete, Randle is convinced that Gumloop’s model-agnostic approach is precisely what will keep attracting customers.
+As models continue to evolve, one may perform better than another for a specific task. So, Gumloop provides the flexibility to choose the model best suited for the job at any given moment.
+Another reason why model independence is attractive, according to Randle, is cost. “Plenty of enterprises have OpenAI, Gemini, and Anthropic credits. They want to use all of them,” he said.
+His excitement for the company ultimately comes down to the sheer size of the opportunity.
+“Enterprise automation is a massive pot of gold,” Randle said. “I think it’s the biggest category in enterprise AI.”
+Topics
+AI , AI agents , Benchmark Partners , Exclusive , gumloop , Startups , Venture
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Marina Temkin
+Reporter, Venture
+Marina Temkin is a venture capital and startups reporter at TechCrunch. Prior to joining TechCrunch, she wrote about VC for PitchBook and Venture Capital Journal. Earlier in her career, Marina was a financial analyst and earned a CFA charterholder designation.
+You can contact or verify outreach from Marina by emailing marina.temkin@techcrunch.com or via encrypted message at +1 347-683-3909 on Signal.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Tesla driver in fatal Texas crash pressed accelerator 100%, NTSB confirms
+Sean O'Kane
+Anthropic’s newest ad is creeping people out
+Lucas Ropek
+Satya Nadella has issued a shocking warning to companies using AI
+Julie Bort
+The wildest allegations in Apple’s trade secrets lawsuit against OpenAI
+Sarah Perez
+Anthropic starts localizing Claude pricing for India, its biggest market after the US
+Jagmeet Singh
+Meta removes controversial AI feature on Instagram after backlash
+Lucas Ropek
+Apple sues OpenAI over alleged trade secret theft
+Sarah Perez
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Gumloop
+Startups
+Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder
+Marina Temkin
+8:30 AM PDT · March 12, 2026
+When Max Brodeur-Urbas co-founded Gumloop in mid-2023, his vision was to help non-technical employees automate repetitive tasks using AI. At that time, the concept of AI agents was still largely experimental and prone to errors.
+As AI technology has matured, so has Gumloop’s offering.
+The company claims that it now allows teams at organizations like Shopify, Ramp, Gusto, Samsara, Instacart, and Opendoor to deploy reliable AI agents that autonomously handle complex, multistep tasks, all without ever needing an engineer.
+Employees can share the agents they build with colleagues, creating a compounding effect that accelerates internal automation. “They get addicted, they start building more agents, and then all of a sudden, the whole company is AI native,” Brodeur-Urbas told TechCrunch.
+As companies race to adopt AI, Benchmark general partner Everett Randle believes the key to success lies in empowering every worker with AI superpowers, and Gumloop’s intuitive agent builder is an example of the kind of tool that will unlock that potential.
+That’s why Randle, who joined Benchmark last October from Kleiner Perkins, chose to lead a $50 million Series B investment into Gumloop. The deal, which is Randle’s first at his new firm, included participation from Nexus VP, First Round Capital, Y Combinator, BoxGroup, The Cannon Project, and Shopify.
+Though Gumloop wasn’t actively seeking new capital, the startup decided this was the year to “step on the gas.” For Brodeur-Urbas, partnering with Benchmark — the firm behind icons like eBay, Uber, and Dropbox — was a “no-brainer.”
+While Brodeur-Urbas previously planned to “build a 10-person, billion-dollar company,” the surging demand from enterprise clients has compelled him to build a dedicated sales force and scale up his engineering team, he said.
+Gumloop is by no means the only player vying to turn every knowledge worker into an AI agent-builder. The startup faces stiff competition from established automation platforms like Zapier and n8n, as well as specialized agent builders like Dust. Even foundational AI labs are entering the fray. For instance, Anthropic’s Claude Cowork allows users to create autonomous agents without writing a single line of code.
+But Randle believes Gumloop is superior to all its rivals. During his due diligence, he discovered that at least one of the company’s customers had adopted Gumloop somewhat organically.
+When Randle asked a CTO how they chose Gumloop, the response was telling. The company had given employees full access to Gumloop alongside two competitors. Six months later, staff were using Gumloop daily or weekly, while the competing tools sat untouched, Randle told TechCrunch.
+The reason Gumloop gained such momentum, according to Randle, is its minimal learning curve. “You can go in and start making agents and workflow automations immediately,” he said.
+While many AI startups worry that foundational models will replicate the same functionality and render them obsolete, Randle is convinced that Gumloop’s model-agnostic approach is precisely what will keep attracting customers.
+As models continue to evolve, one may perform better than another for a specific task. So, Gumloop provides the flexibility to choose the model best suited for the job at any given moment.
+Another reason why model independence is attractive, according to Randle, is cost. “Plenty of enterprises have OpenAI, Gemini, and Anthropic credits. They want to use all of them,” he said.
+His excitement for the company ultimately comes down to the sheer size of the opportunity.
+“Enterprise automation is a massive pot of gold,” Randle said. “I think it’s the biggest category in enterprise AI.”
+Topics
+AI , AI agents , Benchmark Partners , Exclusive , gumloop , Startups , Venture
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Marina Temkin
+Reporter, Venture
+Marina Temkin is a venture capital and startups reporter at TechCrunch. Prior to joining TechCrunch, she wrote about VC for PitchBook and Venture Capital Journal. Earlier in her career, Marina was a financial analyst and earned a CFA charterholder designation.
+You can contact or verify outreach from Marina by emailing marina.temkin@techcrunch.com or via encrypted message at +1 347-683-3909 on Signal.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Tesla driver in fatal Texas crash pressed accelerator 100%, NTSB confirms
+Sean O'Kane
+Anthropic’s newest ad is creeping people out
+Lucas Ropek
+Satya Nadella has issued a shocking warning to companies using AI
+Julie Bort
+The wildest allegations in Apple’s trade secrets lawsuit against OpenAI
+Sarah Perez
+Anthropic starts localizing Claude pricing for India, its biggest market after the US
+Jagmeet Singh
+Meta removes controversial AI feature on Instagram after backlash
+Lucas Ropek
+Apple sues OpenAI over alleged trade secret theft
+Sarah Perez
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5362,"paragraph_count":35,"sentence_count":39,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder | TechCrunch Image Credits:Gumloop Startups Copy Share Link # Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder Marina Temkin 8:30 AM PDT · March 12, 2026 Copy Share Link When Ma... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt
+
+2. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Image Credits: Gumloop Startups Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder Marina Temkin 8:30 AM PDT · March 12, 2026 When Max Brodeur-Urbas co-founded Gumloop in mid-2023, his vision was to help non-technical employees automate repetitive tasks using AI.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   At that time, the concept of AI agents was still largely experimental and prone to errors.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   As AI technology has matured, so has Gumloop’s offering.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The company claims that it now allows teams at organizations like Shopify, Ramp, Gusto, Samsara, Instacart, and Opendoor to deploy reliable AI agents that autonomously handle complex, multistep tasks, all without ever needing an engineer.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Employees can share the agents they build with colleagues, creating a compounding effect that accelerates internal automation.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Meta, Apple
+- products: agent, agents, Claude, Gemini
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 计费 / 预算管理
+- business_actions: 合作 / 联盟, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: $50M, 8, 30, 12, 2026, 2023, $50 million, 10
+- quotes: They get addicted, they start building more agents, and then all of a sudden, the whole company is AI native, / step on the gas. / no-brainer. / build a 10-person, billion-dollar company, / You can go in and start making agents and workflow automations immediately,
+
+## evidence_seed
+
+- company_actions: Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder | TechCrunch Image Credits:Gumloop Startups Copy Share Link # Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder Marina Temkin 8:30 AM PDT · March 12, 2026 Copy Share Link When Ma... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt / At that time, the concept of AI agents was still largely experimental and prone to errors. / As AI technology has matured, so has Gumloop’s offering.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder | TechCrunch Image Credits:Gumloop Startups Copy Share Link # Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder Marina Temkin 8:30 AM PDT · March 12, 2026 Copy Share Link When Ma... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
